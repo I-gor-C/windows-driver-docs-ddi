@@ -1,0 +1,153 @@
+---
+UID: NS.portcls._PCMETHOD_REQUEST
+title: PCMETHOD_REQUEST
+author: windows-driver-content
+description: The PCMETHOD_REQUEST structure specifies a method request.
+old-location: audio\pcmethod_request.htm
+old-project: audio
+ms.assetid: aa48330b-93f0-4fb2-bb36-4e9050f19be5
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.keywords: PCMETHOD_REQUEST,
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PCMETHOD_REQUEST
+req.alt-loc: portcls.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+req.iface: 
+---
+
+# PCMETHOD_REQUEST structure
+
+
+
+## -description
+<p>The PCMETHOD_REQUEST structure specifies a method request.</p>
+
+
+## -syntax
+
+````
+typedef struct _PCMETHOD_REQUEST {
+  PUNKNOWN            MajorTarget;
+  PUNKNOWN            MinorTarget;
+  ULONG               Node;
+  const PCMETHOD_ITEM *MethodItem;
+  ULONG               Verb;
+} PCMETHOD_REQUEST, *PPCMETHOD_REQUEST;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field MajorTarget
+
+<dd>
+<p>Pointer to the <a href="com.iunknown">IUnknown</a> interface of a miniport object that supports the method set and method specified by <b>MethodItem</b>.</p>
+</dd>
+
+### -field MinorTarget
+
+<dd>
+<p>Pointer to an <a href="com.iunknown">IUnknown</a> interface of a stream object associated with <b>MajorTarget</b>. If the request does not specify a minor target, set this member to <b>NULL</b>.</p>
+</dd>
+
+### -field Node
+
+<dd>
+<p>Specifies the node ID of the target node for the request. If the target is not a node, this member is set to ULONG(-1).</p>
+</dd>
+
+### -field MethodItem
+
+<dd>
+<p>Pointer to a <a href="audio.pcmethod_item">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.</p>
+</dd>
+
+### -field Verb
+
+<dd>
+<p>Specifies the type of method request. This member can be set to the bitwise OR of one or more of the flag bits in the following table.</p>
+<table>
+<tr>
+<th>Flag bit</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+<p>PCMETHOD_ITEM_FLAG_BASICSUPPORT</p>
+</td>
+<td>
+<p>Returns basic support information about the method specified by <b>MethodItem</b>-&gt;<b>Id</b>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCMETHOD_ITEM_FLAG_SEND</p>
+</td>
+<td>
+<p>Executes the method specified by <b>MethodItem</b>-&gt;<b>Id</b>. The client should conform to the basic-support information for the method.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCMETHOD_ITEM_FLAG_SETSUPPORT</p>
+</td>
+<td>
+<p>Returns information about support for the method set specified by <b>MethodItem</b>-&gt;<b>Set</b>.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+</dd>
+</dl>
+
+## -remarks
+<p>This is the structure that the port driver passes to the miniport driver's method-handler routine. The <a href="audio.pcmethod_item">PCMETHOD_ITEM</a> structure contains a pointer to a method handler that takes a PCMETHOD_REQUEST pointer as its single call parameter.</p>
+
+<p>The WDM audio subsystem does not currently support method requests.</p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Portcls.h (include Portcls.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
+</dt>
+<dt>
+<a href="audio.pcmethod_item">PCMETHOD_ITEM</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCMETHOD_REQUEST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

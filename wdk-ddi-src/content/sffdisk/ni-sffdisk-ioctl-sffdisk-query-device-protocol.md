@@ -1,0 +1,158 @@
+---
+UID: NI.sffdisk.IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
+title: IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
+author: windows-driver-content
+description: User-mode applications use this IOCTL to retrieve a protocol value that identifies the card as either an SD card or an MMC card.
+old-location: sd\ioctl_sffdisk_query_device_protocol.htm
+old-project: SD
+ms.assetid: 47eeb4a9-dece-4500-bbe7-891f64437eef
+ms.author: windowsdriverdev
+ms.date: 11/30/2017
+ms.keywords: SERCX_BUFFER_DESCRIPTOR,
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: sffdisk.h
+req.include-header: Sffdisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
+req.alt-loc: sffdisk.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.iface: 
+req.product: Windows 10 or later.
+---
+
+# IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL IOCTL
+
+
+
+## -description
+<p>User-mode applications use this IOCTL to retrieve a protocol value that identifies the card as either an SD card or an MMC card. For a description of this command, see the <i>Secure Digital I/O (SDIO)</i> specification.</p>
+<p>To perform this operation, call the <a href="base.deviceiocontrol">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) using the following parameters.</p>
+
+
+## -syntax
+
+````
+bRet = DeviceIoControl (
+    (HANDLE)  hDevice, 
+    (DWORD)  dwIoControlCode, 
+    (PUCHAR)  lpInBuffer,
+    (DWORD)  nInBufferSize, 
+    (PUCHAR)  lpOutBuffer,
+    (DWORD)  nOutBufferSize, 
+    (LPDWORD)  lpBytesReturned,
+    (LPOVERLAPPED)  lpOverlapped 
+  );
+````
+
+
+## -ioctlparameters
+
+### -input-buffer
+<p>TBD</p>
+
+### -input-buffer-length
+<p>TBD</p>
+
+<p>TBD</p>
+
+### -output-buffer
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+### -output-buffer-length
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+<p>TBD</p>
+
+### -in-out-buffer
+
+<text></text>
+
+### -inout-buffer-length
+
+<text></text>
+
+### -status-block
+I/O Status block
+<p>If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.</p>
+
+<p>If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.</p>
+
+<p>If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.</p>
+
+<p>If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.</p>
+
+<p>If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.</p>
+
+<p>If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.</p>
+
+<p>If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.</p>
+
+<p>If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.</p>
+
+<p>If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.</p>
+
+<p>If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.</p>
+
+<p>If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.</p>
+
+<p>If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.</p>
+
+<p>If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.</p>
+
+<p>If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.</p>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Sffdisk.h (include Sffdisk.h)</dt>
+</dl>
+</td>
+</tr>
+</table>

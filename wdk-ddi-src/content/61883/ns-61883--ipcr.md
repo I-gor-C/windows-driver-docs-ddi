@@ -1,0 +1,123 @@
+---
+UID: NS.61883._IPCR
+title: IPCR
+author: windows-driver-content
+description: The IPCR structure contains initialization values for an input plug.
+old-location: ieee\ipcr.htm
+old-project: IEEE
+ms.assetid: 81c89fbc-5d58-4983-b591-765a7818b932
+ms.author: windowsdriverdev
+ms.date: 11/29/2017
+ms.keywords: IPCR, IPCR, *PIPCR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IPCR
+req.alt-loc: 61883.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+---
+
+# IPCR structure
+
+
+
+## -description
+<p>The IPCR structure contains initialization values for an input plug. </p>
+
+
+## -syntax
+
+````
+typedef struct _IPCR {
+  ULONG Reserved0  :16;
+  ULONG Channel  :6;
+  ULONG Reserved1  :2;
+  ULONG PPCCounter  :6;
+  ULONG BCCCounter  :1;
+  ULONG OnLine  :1;
+} IPCR, *PIPCR;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field Reserved0
+
+<dd>
+<p>Reserved. </p>
+</dd>
+
+### -field Channel
+
+<dd>
+<p>Indicates the channel number that the input plug shall use to transmit the isochronous data flow, for a suspended input plug. For an active input plug it indicates the actual channel number that the input plug uses to transmit the isochronous data flow. For an unconnected input plug it has no meaning.</p>
+</dd>
+
+### -field Reserved1
+
+<dd>
+<p>Reserved. </p>
+</dd>
+
+### -field PPCCounter
+
+<dd>
+<p>Indicates the number of point-to-point connections to the input plug. </p>
+</dd>
+
+### -field BCCCounter
+
+<dd>
+<p>Indicates, when one, that there is a broadcast-in connection to the input plug. When zero it indicates that there is no connection. </p>
+</dd>
+
+### -field OnLine
+
+<dd>
+<p>Indicates, when one, that the corresponding input plug is on-line. When zero it indicates that the input plug is off-line.</p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>61883.h (include 61883.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20IPCR structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

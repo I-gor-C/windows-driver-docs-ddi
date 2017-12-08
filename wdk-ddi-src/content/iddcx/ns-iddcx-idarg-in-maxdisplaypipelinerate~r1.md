@@ -1,0 +1,89 @@
+---
+UID: NS.iddcx.IDARG_IN_MAXDISPLAYPIPELINERATE~r1
+title: IDARG_IN_MAXDISPLAYPIPELINERATE
+author: windows-driver-content
+description: Gives information about the maximum display pipeline rate.
+old-location: display\idarg_in_maxdisplaypipelinerate.htm
+old-project: display
+ms.assetid: 035c3d04-56e8-48ec-91d4-6d6a1a5037c4
+ms.author: windowsdriverdev
+ms.date: 11/14/2017
+ms.keywords: IDARG_IN_MAXDISPLAYPIPELINERATE,
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IDARG_IN_MAXDISPLAYPIPELINERATE
+req.alt-loc: iddcx.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: _Must_inspect_result_
+req.iface: 
+---
+
+# IDARG_IN_MAXDISPLAYPIPELINERATE structure
+
+
+
+## -description
+<p>
+                 Gives information about the maximum display pipeline rate.</p>
+
+
+## -syntax
+
+````
+typedef struct IDARG_IN_MAXDISPLAYPIPELINERATE {
+  IDDCX_UPDATE_REASON Reason;
+  UINT64              MaxDisplayPipelineRate;
+} IDARG_IN_MAXDISPLAYPIPELINERATE, *IDARG_IN_MAXDISPLAYPIPELINERATE;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field Reason
+
+<dd>
+<p>
+                     Indicates the reason why the driver is updating the rate.</p>
+</dd>
+
+### -field MaxDisplayPipelineRate
+
+<dd>
+<p>
+                     Indicates the maximum display pipeline rate. This is the new value for <b>IDDCX_ADAPTER_CAPS.MaxDisplayPipelineRate</b></p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Iddcx.h</dt>
+</dl>
+</td>
+</tr>
+</table>
