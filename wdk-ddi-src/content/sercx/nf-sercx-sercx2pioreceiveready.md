@@ -1,0 +1,129 @@
+---
+UID: NF.sercx.SerCx2PioReceiveReady
+title: SerCx2PioReceiveReady function
+author: windows-driver-content
+description: The SerCx2PioReceiveReady method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller.
+old-location: serports\sercx2pioreceiveready.htm
+old-project: serports
+ms.assetid: 81DE84F8-7D2D-464F-BA5D-4D92D0EE9149
+ms.author: windowsdriverdev
+ms.date: 10/23/2017
+ms.keywords: SerCx2PioReceiveReady
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: SerCx2PioReceiveReady
+req.alt-loc: 2.0\Sercx.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: <= DISPATCH_LEVEL
+req.product: Windows 10 or later.
+---
+
+# SerCx2PioReceiveReady function
+
+
+
+## -description
+The <b>SerCx2PioReceiveReady</b> method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller.
+
+
+## -syntax
+
+````
+VOID SerCx2PioReceiveReady(
+  [in] SERCX2PIORECEIVE PioReceive
+);
+````
+
+
+## -parameters
+
+### -param PioReceive [in]
+
+A <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
+
+## -returns
+None.
+
+## -remarks
+To initiate a PIO-receive transaction, SerCx2 calls the <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_read_buffer.md">EvtSerCx2PioReceiveReadBuffer</a> event callback function and supplies a read buffer to which to transfer the data from the receive FIFO in the serial controller. If the return value from this function indicates that the read buffer was only partially filled before the receive FIFO became empty, SerCx2 calls the <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_enable_ready_notification.md">EvtSerCx2PioReceiveEnableReadyNotification</a> event callback routine to enable a ready notification to occur when more data is available to be read.
+
+If the ready notification is enabled and more data is available to be read, the serial controller driver must call <b>SerCx2PioReceiveReady</b> to notify SerCx2. In response to this notification, SerCx2 calls the <i>EvtSerCx2PioReceiveReadBuffer</i> function again to transfer more data from the receive FIFO to the read buffer.
+
+The serial controller driver must call <b>SerCx2PioReceiveReady</b> only in response to a call to the <i>EvtSerCx2PioReceiveEnableReadyNotification</i> function.
+
+Additionally, SerCx2 uses these ready notifications to detect interval time-outs during the handling of a read request. For more information about interval time-outs, see <a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>. For more information about ready notifications, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265332">SerCx2 PIO-Receive Transactions</a>.
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+Target platform
+</th>
+<td width="70%">
+<dl>
+<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+Version
+</th>
+<td width="70%">
+Available starting with Windows 8.1.
+</td>
+</tr>
+<tr>
+<th width="30%">
+Header
+</th>
+<td width="70%">
+<dl>
+<dt>2.0\Sercx.h</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+IRQL
+</th>
+<td width="70%">
+&lt;= DISPATCH_LEVEL
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_read_buffer.md">EvtSerCx2PioReceiveReadBuffer</a>
+</dt>
+<dt>
+<a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a>
+</dt>
+<dt>
+<a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a>
+</dt>
+<dt>
+<a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>
+</dt>
+</dl>
+ 
+ 
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SerCx2PioReceiveReady method%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

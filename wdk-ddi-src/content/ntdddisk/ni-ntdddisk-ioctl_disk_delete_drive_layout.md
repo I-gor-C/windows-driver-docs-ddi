@@ -1,0 +1,95 @@
+---
+UID: NI.ntdddisk.IOCTL_DISK_DELETE_DRIVE_LAYOUT
+title: IOCTL_DISK_DELETE_DRIVE_LAYOUT
+author: windows-driver-content
+description: Removes partition information from the disk.
+old-location: storage\ioctl_disk_delete_drive_layout.htm
+old-project: storage
+ms.assetid: 787fa1ce-5305-4159-8710-3c6971133c4c
+ms.author: windowsdriverdev
+ms.date: 11/15/2017
+ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IOCTL_DISK_DELETE_DRIVE_LAYOUT
+req.alt-loc: Ntdddisk.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+---
+
+# IOCTL_DISK_DELETE_DRIVE_LAYOUT IOCTL
+
+
+
+## -description
+
+Removes partition information from the disk. If the partition style of the disk is Master Boot Record (MBR), sector 0 of the disk is wiped clean except for the bootstrap code. All signatures, such as the AA55 boot signature and the NTFT disk signature, will be removed. If the partition style of the disk is GUID Partition Table (GPT), the primary partition table header in sector 1 and the backup partition table in the last sector of the disk are wiped clean. This operation can be used to generate so-called "superfloppies" that contain a file system starting at the first sector of the disk rather than in a partition on the disk.
+
+Removes partition information from the disk. If the partition style of the disk is Master Boot Record (MBR), sector 0 of the disk is wiped clean except for the bootstrap code. All signatures, such as the AA55 boot signature and the NTFT disk signature, will be removed. If the partition style of the disk is GUID Partition Table (GPT), the primary partition table header in sector 1 and the backup partition table in the last sector of the disk are wiped clean. This operation can be used to generate so-called "superfloppies" that contain a file system starting at the first sector of the disk rather than in a partition on the disk.
+
+
+## -ioctlparameters
+
+### -input-buffer
+<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
+NoneNone
+
+
+### -input-buffer-length
+
+<text></text>
+
+### -output-buffer
+<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
+NoneNone
+
+
+### -output-buffer-length
+
+<text></text>
+
+### -in-out-buffer
+
+<text></text>
+
+### -inout-buffer-length
+
+<text></text>
+
+### -status-block
+<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
+The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.The <b>Status</b>Status field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.
+
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+Header
+</th>
+<td width="70%">
+<dl>
+<dt>Ntdddisk.h (include Ntdddisk.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
