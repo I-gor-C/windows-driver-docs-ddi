@@ -7,7 +7,7 @@ old-location: display\d3dkmt_umdfilenameinfo.htm
 old-project: display
 ms.assetid: 456aef5a-f297-4670-8a83-b468569d23ad
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_UMDFILENAMEINFO, D3DKMT_UMDFILENAMEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMT_UMDFILENAMEINFO structure contains the name of an OpenGL ICD that is based on the specified version of the DirectX runtime. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DKMT_UMDFILENAMEINFO {
 ### -field Version
 
 [in] A KMTUMDVERSION-typed value that indicates the version of the DirectX runtime to retrieve the name of an OpenGL ICD for. The following table lists the possible values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -64,33 +66,41 @@ typedef struct _D3DKMT_UMDFILENAMEINFO {
 <tr>
 <td>
 KMTUMDVERSION_DX9 (0)
+
 </td>
 <td>
 DirectX version 9.0
+
 </td>
 </tr>
 <tr>
 <td>
 KMTUMDVERSION_DX10 (1)
+
 </td>
 <td>
 DirectX version 10.0
+
 </td>
 </tr>
 <tr>
 <td>
 KMTUMDVERSION_DX11 (2)
+
 </td>
 <td>
 DirectX version 11.0
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field UmdFileName
 
 [out] A string that contains the name of the OpenGL ICD.
+
 
 ## -remarks
 
@@ -100,14 +110,17 @@ DirectX version 11.0
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

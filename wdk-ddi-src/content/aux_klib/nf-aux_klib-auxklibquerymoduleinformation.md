@@ -7,7 +7,7 @@ old-location: kernel\auxklibquerymoduleinformation.htm
 old-project: kernel
 ms.assetid: 5e267d53-4e92-4c94-8a59-93d3c79574dd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: AuxKlibQueryModuleInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AuxKlibQueryModuleInformation</b> routine retrieves information about the image modules that the operating system has loaded.
 
 
+
 ## -syntax
 
 ````
@@ -58,18 +59,22 @@ NTSTATUS AuxKlibQueryModuleInformation(
 
 A pointer to a location that contains or receives a buffer size, in bytes. If <i>QueryInfo</i> is <b>NULL</b>, the location receives the number of bytes that the driver must allocate for the array that receives the retrieved information. If <i>QueryInfo</i> is not <b>NULL</b>, the location must contain the specified number of bytes. 
 
+
 ### -param ElementSize [in]
 
 The size, in bytes, of each element of the array that <i>QueryInfo</i> points to. This value must be <b>sizeof</b>(<b>AUX_MODULE_BASIC_INFO</b>) or <b>sizeof</b>(<b>AUX_MODULE_EXTENDED_INFO</b>).
+
 
 ### -param QueryInfo [out, optional]
 
 A pointer to an array of <a href="kernel.aux_module_basic_info">AUX_MODULE_BASIC_INFO</a> or <a href="kernel.aux_module_extended_info">AUX_MODULE_EXTENDED_INFO</a> structures that receives information about loaded image modules. If this pointer is <b>NULL</b>, <b>AuxKlibQueryModuleInformation</b> writes the required buffer size to the location that <i>BufferSize</i> points to.
 
+
 ## -returns
 <b>AuxKlibQueryModuleInformation</b> returns STATUS_SUCCESS if the operation succeeds. <b>AuxKlibQueryModuleInformation</b> returns STATUS_BUFFER_TOO_SMALL if the <i>QueryInfo</i> pointer is not <b>NULL</b> and the driver-supplied <i>BufferSize</i> value is too small.
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
+
 
 ## -remarks
 To obtain information about the operating system's loaded image modules, a driver must:
@@ -88,11 +93,13 @@ Drivers must call <a href="kernel.auxklibinitialize">AuxKlibInitialize</a> befor
 
 The following code example illustrates the steps that are listed in the preceding Remarks section.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,14 +110,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +131,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -149,5 +160,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibQueryModuleInformation routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibQueryModuleInformation routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

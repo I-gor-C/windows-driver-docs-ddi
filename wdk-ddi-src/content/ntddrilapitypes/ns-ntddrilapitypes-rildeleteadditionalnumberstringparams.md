@@ -7,7 +7,7 @@ old-location: netvista\rildeleteadditionalnumberstringparams.htm
 old-project: netvista
 ms.assetid: 89ae70b9-56d9-4169-8bbd-0eb2d916a928
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILDELETEADDITIONALNUMBERSTRINGPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

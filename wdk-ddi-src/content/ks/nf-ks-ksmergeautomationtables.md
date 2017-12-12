@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The<b> KsMergeAutomationTables</b> function merges two automation tables.
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ NTSTATUS KsMergeAutomationTables(
 
 A pointer to the location at which a pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> is deposited. This structure is the resulting merged automation table.
 
+
 ### -param AutomationTableA [in, optional]
 
 A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure representing the first of the two automation tables to merge. This table is the dominant table with respect to duplicate entries. If <b>NULL</b>, <i>AutomationTableB</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.
+
 
 ### -param AutomationTableB [in, optional]
 
 A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure representing the second of the two automation tables to merge. If <b>NULL</b>, <i>AutomationTableA</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.
 
+
 ### -param Bag [in, optional]
 
 The newly created automation table is placed in this KSOBJECT_BAG (equivalent to type PVOID) for later clean up. This parameter is optional.
 
+
 ## -returns
 <b>KsMergeAutomationTables</b> returns STATUS_SUCCESS if the merge successfully completes. If unsuccessful, it returns an error code. The most frequent error code is STATUS_INSUFFICIENT_RESOURCES, which indicates that there are insufficient system resources to complete the merge.
+
 
 ## -remarks
 If both <i>AutomationTableA</i> and <i>AutomationTableB</i> are <b>NULL</b>, this routine performs no action and returns STATUS_SUCCESS.
@@ -85,11 +91,13 @@ If the <i>Bag</i> parameter is not <b>NULL</b>, the minidriver should take the m
 
 Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>  and <a href="https://msdn.microsoft.com/1c0dace6-b618-4705-bf5d-65457d14c072">Defining Automation Tables</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,14 +108,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +129,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +140,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -148,5 +162,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsMergeAutomationTables function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

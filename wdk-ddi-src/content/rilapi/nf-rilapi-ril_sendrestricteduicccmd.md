@@ -7,7 +7,7 @@ old-location: netvista\ril_sendrestricteduicccmd.htm
 old-project: netvista
 ms.assetid: f9341659-105b-4ec7-bce7-878698de8c14
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RIL_SendRestrictedUiccCmd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
             
+
 
 
 ## -syntax
@@ -85,6 +86,7 @@ HRESULT  RIL_SendRestrictedUiccCmd(
 ## -returns
 If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
+
 ## -remarks
 
 
@@ -93,22 +95,27 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_km_authorization.htm
 old-project: netvista
 ms.assetid: c15ed590-4a7f-4f21-8e6e-1440a57b5659
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_KM_AUTHORIZATION_, FWPS_FIELDS_KM_AUTHORIZATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The FWPS_FIELDS_KM_AUTHORIZATION enumeration type specifies the data field ident
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
 
 
+
 ## -syntax
 
 ````
@@ -66,13 +67,16 @@ typedef enum FWPS_FIELDS_KM_AUTHORIZATION_ {
 The peer's identifier. This can be the User or Machine Token depending on the type, auth type, and
      mode.
 
+
 ### -field FWPS_FIELD_KM_AUTHORIZATION_AUTHENTICATION_TYPE
 
 The type of authentication used.
 
+
 ### -field FWPS_FIELD_KM_AUTHORIZATION_KM_TYPE
 
 The type of Keying Module (KM) used.
+
 
 ### -field FWPS_FIELD_KM_AUTHORIZATION_DIRECTION
 
@@ -90,18 +94,22 @@ The type of Keying Module (KM) used.
 
 The authorization mode.
 
+
 ### -field FWPS_FIELD_KM_AUTHORIZATION_IPSEC_POLICY_KEY
 
 The associated IPsec policy key.
+
 
 ### -field FWPS_FIELD_KM_AUTHORIZATION_NAP_CONTEXT
 
 The Network Access Protection (NAP) certificate context.
 
+
 ### -field FWPS_FIELD_KM_AUTHORIZATION_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -111,14 +119,17 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

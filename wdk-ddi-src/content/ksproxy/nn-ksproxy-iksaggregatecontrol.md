@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>IKsAggregateControl</b> interface provides methods that add and remove COM servers as aggregate providers on KS objects that support the interface. 
+
 The interface identifier (IID) for this interface is IID_IKsAggregateControl.
+
 
 
 ## -syntax
@@ -80,6 +82,7 @@ Removes a previously added COM server aggregate provider from a KS filter or pin
 
  
 
+
 ## -members
 The <b>IKsAggregateControl</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -93,6 +96,7 @@ The <b>IKsAggregateControl</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Adds a COM server as an aggregate provider to a KS filter or pin.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -101,6 +105,7 @@ Adds a COM server as an aggregate provider to a KS filter or pin.
 </td>
 <td align="left" width="63%">
 Removes a previously added COM server aggregate provider from a KS filter or pin.
+
 </td>
 </tr>
 </table>Adds a COM server as an aggregate provider to a KS filter or pin.
@@ -141,6 +146,7 @@ Also, enter the named value {<i>set guid</i>}, which is the string format of the
 
 For more information about <b>IDistributorNotify</b>, <b>IUnknown</b>, and <b>CoCreateInstance</b>, see the Microsoft Windows SDK documentation.
 
+
 ## -remarks
 All property, method, and event sets that a KS filter or pin supports can be represented on the DirectShow proxy representation of the filter or pin object by zero or more aggregated interfaces, dialogs, and so on. These client aggregated interfaces are set extensions that can then be used to communicate to the underlying KS object in order to represent the functionality of the set. A set extension is a registered COM server, which is loaded through <b>CoCreateInstance</b> by the KS filter or pin at handle creation time.
 
@@ -166,11 +172,13 @@ Also, enter the named value {<i>set guid</i>}, which is the string format of the
 
 For more information about <b>IDistributorNotify</b>, <b>IUnknown</b>, and <b>CoCreateInstance</b>, see the Microsoft Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -196,5 +204,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsAggregateControl interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

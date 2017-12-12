@@ -7,7 +7,7 @@ old-location: wdf\wdfcmresourcelistappenddescriptor.htm
 old-project: wdf
 ms.assetid: 1a0f8ea5-9b1f-4301-b96d-aa37b80b4ce2
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfCmResourceListAppendDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfCmResourceListAppendDescriptor</b> method adds a resource descriptor to the end of a specified resource list.
+
 
 
 ## -syntax
@@ -59,9 +61,11 @@ NTSTATUS WdfCmResourceListAppendDescriptor(
 
 A handle to a framework resource-list object that represents a list of hardware resources for a device.
 
+
 ### -param Descriptor [in]
 
 A pointer to a <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
+
 
 ## -returns
 <b>WdfCmResourceListAppendDescriptor</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
@@ -81,6 +85,7 @@ A system bug check occurs if the driver supplies an invalid object handle.
 
 
 
+
 ## -remarks
 The framework copies the contents of the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure into internal storage, so the driver routine that calls <b>WdfCmResourceListAppendDescriptor</b> can allocate the structure locally. After the driver calls <b>WdfCmResourceListAppendDescriptor</b> it can reuse the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure.
 
@@ -88,11 +93,13 @@ For more information about resource lists, see <a href="wdf.hardware_resources_f
 
 The following code example adds a resource descriptor to the end of the resource list that an <a href="wdf.evtdeviceresourcesquery">EvtDeviceResourcesQuery</a> callback function receives. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,14 +110,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +131,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -131,14 +142,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
@@ -165,5 +179,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfCmResourceListAppendDescriptor method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfCmResourceListAppendDescriptor method%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

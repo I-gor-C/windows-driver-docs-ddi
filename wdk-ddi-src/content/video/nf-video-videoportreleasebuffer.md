@@ -7,7 +7,7 @@ old-location: display\videoportreleasebuffer.htm
 old-project: display
 ms.assetid: 627f43e7-1561-4822-b2b6-a49b54550bf5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortReleaseBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>VideoPortReleaseBuffer</b> function is <b>obsolete</b> in Windows 2000 and later. In its place, video miniport drivers should instead use <a href="display.videoportfreepool">VideoPortFreePool</a>. 
+
 <b>VideoPortReleaseBuffer</b> deallocates a block of paged pool memory.
+
 
 
 ## -syntax
@@ -59,21 +61,26 @@ VOID VideoPortReleaseBuffer(
 
 Pointer to the miniport driver's device extension.
 
+
 ### -param Buffer [in]
 
 Specifies the address of the block of pool memory being deallocated.
 
+
 ## -returns
 None
 
+
 ## -remarks
 This function releases memory allocated by <a href="display.videoportallocatebuffer">VideoPortAllocateBuffer</a>. A miniport driver must not access the memory block to which <i>Buffer</i> points after it has been freed. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,14 +91,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +123,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +134,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -136,5 +150,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortReleaseBuffer function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortReleaseBuffer function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

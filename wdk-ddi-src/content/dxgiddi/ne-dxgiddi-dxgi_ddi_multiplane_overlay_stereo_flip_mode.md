@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_stereo_flip_mode.htm
 old-project: display
 ms.assetid: f44317c5-661c-42f6-847b-b325e4c1321a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE, DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies the overlay plane's stereo flip mode. Only the <b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE</b> value is supported.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
 
 The overplay plane data is not presented in stereo mode.
 
+
 ### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0
 
 Reserved for system use. Do not use in your driver.
 
+
 ### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1
 
 Reserved for system use. Do not use in your driver.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Reserved for system use. Do not use in your driver.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

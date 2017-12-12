@@ -7,8 +7,8 @@ old-location: netvista\rilaccesstechnology_2.htm
 old-project: netvista
 ms.assetid: e0bcbc0c-8783-43b2-a4af-3dad4aaff142
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILACCESSTECHNOLOGY, *LPRILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY
+ms.date: 12/8/2017
+ms.keywords: RILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY, *LPRILACCESSTECHNOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -100,6 +101,7 @@ typedef struct _RILACCESSTECHNOLOGY {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

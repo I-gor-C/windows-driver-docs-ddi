@@ -41,6 +41,7 @@ req.irql:
 This enumeration contains the operating modes of a lamp device.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef enum _LAMP_MODE {
 
 Required. White light only.
 
+
 ### -field LAMP_MODE_COLOR
 
 Optional. Color light.
 
+
 ## -remarks
 This is the I/O parameter type of <a href="..\lamp\ni-lamp-ioctl_lamp_get_mode.md">IOCTL_LAMP_GET_MODE</a> and <a href="..\lamp\ni-lamp-ioctl_lamp_set_mode.md">IOCTL_LAMP_SET_MODE</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

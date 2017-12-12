@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The CapturedMetadataISOGains structure describes the blob format for <b>MF_CAPTURE_METADATA_ISO_GAINS</b>.
 
 
+
 ## -syntax
 
 ````
@@ -62,11 +63,13 @@ typedef struct tagCapturedMetadataISOGains {
 ## -remarks
 The <b>CapturedMetadataISOGains</b> structure only describes the blob format for the <b>MF_CAPTURE_METADATA_ISO_GAINS</b> attribute.  The metadata item structure for ISO gains (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + ISO gains metadata payload) is up to driver and must be 8-byte aligned.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

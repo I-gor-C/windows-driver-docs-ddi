@@ -7,7 +7,7 @@ old-location: netvista\rilcalldisconnectdetailsascode.htm
 old-project: netvista
 ms.assetid: 01b311e9-252e-49eb-bf63-d16e4fa92231
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLDISCONNECTDETAILSASCODE, RILCALLDISCONNECTDETAILSASCODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef enum _RILCALLDISCONNECTDETAILSASCODE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

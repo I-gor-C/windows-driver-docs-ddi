@@ -7,7 +7,7 @@ old-location: display\video_win32k_callbacks_params.htm
 old-project: display
 ms.assetid: d533721f-b4c8-44f9-9c39-f312e1ec9895
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The VIDEO_WIN32K_CALLBACKS_PARAMS structure and the VIDEO_WIN32K_CALLBACKS_PARAMS_TYPE enumeration are reserved for system use.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _VIDEO_WIN32K_CALLBACKS_PARAMS {
 
 Reserved for system use.
 
+
 ### -field PhysDisp
 
 Reserved for system use.
+
 
 ### -field Param
 
 Reserved for system use.
 
+
 ### -field Status
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

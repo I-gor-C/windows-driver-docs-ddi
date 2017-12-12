@@ -7,7 +7,7 @@ old-location: netvista\miniporthaltex.htm
 old-project: netvista
 ms.assetid: b8d452b4-bef3-4991-87cf-fac15bedfde4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ NDIS calls a miniport driver's
    removed, and to stop the hardware. This function puts the miniport into the Halted state, where no other callback can occur (including <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a>). For more information about miniport driver states, see <a href="netvista.miniport_adapter_states_and_operations">Miniport Adapter States and Operations</a>.
 
 
+
 ## -prototype
 
 ````
@@ -64,15 +65,19 @@ A handle to a context area that the miniport driver allocated in its
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
+
 ### -param HaltAction [in]
 
 The reason for halting the miniport adapter. It can be one of the following values:
      
 
 
+
+
 ### -param NdisHaltDeviceDisabled
 
 NDIS is halting the miniport adapter in response to a Plug and Play (PnP) remove message.
+
 
 ### -param NdisHaltDeviceInstanceDeInitialized
 
@@ -80,13 +85,16 @@ NDIS is halting the miniport adapter in response to an intermediate driver calli
        <a href="netvista.ndisimdeinitializedeviceinstance">
        NdisIMDeInitializeDeviceInstance</a> function.
 
+
 ### -param NdisHaltDevicePoweredDown
 
 NDIS is halting the miniport adapter because the system is going to a sleeping state.
 
+
 ### -param NdisHaltDeviceSurpriseRemoved
 
 The miniport adapter has been surprise removed and the hardware is not present.
+
 
 ### -param NdisHaltDeviceFailed
 
@@ -95,19 +103,23 @@ The miniport adapter is being removed because of a hardware failure. Either the 
        <a href="netvista.ndismremoveminiport">NdisMRemoveMiniport</a> function or a
        bus driver did not power up the NIC on resume.
 
+
 ### -param NdisHaltDeviceInitializationFailed
 
 NDIS could not initialize the miniport adapter for an unknown reason after the 
        <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function completed successfully.
 
+
 ### -param NdisHaltDeviceStopped
 
 NDIS is halting the miniport adapter in response to a PnP stop device message.
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 A driver specifies the 
@@ -184,19 +196,23 @@ The <b>MINIPORT_HALT</b> function type is defined in the Ndis.h header file. To 
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -207,14 +223,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_wlanassociation">WlanAssociation</a>, <a href="devtest.ndis_wlanconnectionroaming">WlanConnectionRoaming</a>, <a href="devtest.ndis_wlandisassociation">WlanDisassociation</a>, <a href="devtest.ndis_wlantimedassociation">WlanTimedAssociation</a>, <a href="devtest.ndis_wlantimedconnectionroaming">WlanTimedConnectionRoaming</a>, <a href="devtest.ndis_wlantimedconnectrequest">WlanTimedConnectRequest</a>, <a href="devtest.ndis_wlantimedlinkquality">WlanTimedLinkQuality</a>, <a href="devtest.ndis_wlantimedscan">WlanTimedScan</a>
@@ -276,5 +295,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_HALT callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_HALT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: kernel\appendtaillist.htm
 old-project: kernel
 ms.assetid: A7C7FBE5-9046-48C7-AEE6-85C17CDE83AD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: AppendTailList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>AppendTailList</b> routine appends a doubly linked list of <a href="kernel.list_entry">LIST_ENTRY</a> structures to the tail of another doubly linked list of <b>LIST_ENTRY</b> structures.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ VOID AppendTailList(
 
 A pointer to the head of the list to which the list pointed to by <i>ListToAppend</i> is to be appended. This parameter must be a valid, non-NULL pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that is the head of a list. This list can be empty.
 
+
 ### -param ListToAppend [in, out]
 
 A pointer to the first entry in the list to append to the list pointed to by <i>ListHead</i>. This parameter must be a valid, non-NULL pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that is the first entry in a headless list. For more information, see Remarks.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 This routine constructs a list that contains all the combined entries from the input <i>ListHead</i> and <i>ListToAppend</i> lists. When the routine returns, the <a href="kernel.list_entry">LIST_ENTRY</a> structure pointed to by the <i>ListHead</i> parameter is the head of the resulting combined list. The <b>LIST_ENTRY</b> structure pointed to by the <i>ListToAppend</i> parameter is an entry in the resulting combined list.
@@ -82,11 +86,13 @@ The following code example shows how to write a function named <code>MyAppendTai
 
 The <code>MyAppendTailList</code> function in this code example treats both the <i>ListHead</i> and <i>ListToAppend</i> parameters as pointers to list heads. When this function returns, the list pointed to by <i>ListToAppend</i> is empty; that is, it consists of a list head that has no associated list entries. All of the entries that were initially in this list have been appended to the list pointed to by <i>ListHead</i>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +103,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,9 +124,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (See Remarks section)
+
 </td>
 </tr>
 </table>
@@ -138,5 +149,8 @@ Any level (See Remarks section)
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AppendTailList routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AppendTailList routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\ril3gpptone.htm
 old-project: netvista
 ms.assetid: 3dd7c317-b77f-4cc1-8513-ed305418e76f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RIL3GPPTONE, RIL3GPPTONE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -87,6 +88,7 @@ typedef enum _RIL3GPPTONE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

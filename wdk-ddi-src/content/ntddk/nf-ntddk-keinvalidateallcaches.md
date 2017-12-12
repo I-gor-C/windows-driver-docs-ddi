@@ -7,7 +7,7 @@ old-location: kernel\keinvalidateallcaches.htm
 old-project: kernel
 ms.assetid: a7971cd1-1e9b-4d81-8422-1ee36651973a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeInvalidateAllCaches
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>KeInvalidateAllCaches</b> routine flushes all processor caches. 
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,17 @@ BOOLEAN KeInvalidateAllCaches(void);
 
 <b>KeInvalidateAllCaches</b> returns a value that is reserved for system use. Treat this value as VOID.
 
+
 ## -remarks
 The <b>KeInvalidateAllCaches</b> routine flushes each processor's caches and marks each cache's contents invalid. The processor caches are guaranteed to have completed the flush operation before <b>KeInvalidateAllCaches</b> returns.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -76,14 +80,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Server 2003 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +101,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +112,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -114,9 +123,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

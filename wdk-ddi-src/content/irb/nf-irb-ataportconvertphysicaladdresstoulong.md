@@ -7,7 +7,7 @@ old-location: storage\ataportconvertphysicaladdresstoulong.htm
 old-project: storage
 ms.assetid: cd63cb65-701e-46e2-ba32-971f91f9eb29
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortConvertPhysicalAddressToUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortConvertPhysicalAddressToUlong</b> routine truncates an address of type IDE_PHYSICAL_ADDRESS to a ULONG.
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ ULONG AtaPortConvertPhysicalAddressToUlong(
 
 Specifies a value of type IDE_PHYSICAL_ADDRESS.
 
+
 ## -returns
 <b>AtaPortConvertPhysicalAddressToUlong</b> returns the lower order part of the given IDE_PHYSICAL_ADDRESS value. 
 
+
 ## -remarks
 A miniport driver must not use this routine to truncate a 64-bit physical address. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +111,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortConvertPhysicalAddressToUlong routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortConvertPhysicalAddressToUlong routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

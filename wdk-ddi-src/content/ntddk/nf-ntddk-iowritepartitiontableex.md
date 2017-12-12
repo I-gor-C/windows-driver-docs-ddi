@@ -7,7 +7,7 @@ old-location: storage\iowritepartitiontableex.htm
 old-project: storage
 ms.assetid: b49ea2db-bb1e-4293-bfac-cbb3e62bca91
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: IoWritePartitionTableEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>IoWritePartitionTableEx</b> routine writes partition tables from the entries in the partition list buffer for each partition on the disk represented by the given device object.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS IoWritePartitionTableEx(
 
 Pointer to the device object representing the disk whose partition tables are to be written.
 
+
 ### -param PartitionBuffer [in]
 
 Pointer to the drive layout buffer that contains the partition list entries. For more detailed information see <a href="storage.drive_layout_information_ex">DRIVE_LAYOUT_INFORMATION_EX</a>.
+
 
 ## -returns
 <b>IoWritePartitionTabloEx</b> returns a status code of STATUS_SUCCESS if all writes were completed without error. In case of failure, the error codes returned by <b>IoWritePartitionTableEx</b> might include, but are not limited to, the following list:
@@ -75,6 +78,7 @@ Pointer to the drive layout buffer that contains the partition list entries. For
 
  
 
+
 ## -remarks
 <b>IoWritePartitionTableEx</b> replaces the obsolete routine <a href="storage.iowritepartitiontable">IoWritePartitionTable</a>. Unlike the older routine, it can write to GUID Partition Tables as well as Master Boot Record Partition Tables. 
 
@@ -88,11 +92,13 @@ In order tot create or delete partitions a full description of the system must b
 
 <b>IoWritePartitionTableEx</b> is synchronous. It must be called by the disk driver's Dispatch routine or by a driver thread. Thus, all user and file system threads must be prepared to enter a wait state when issuing the device control request to reset partition types for the device.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +109,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +120,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +131,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -133,14 +142,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -161,5 +173,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IoWritePartitionTableEx routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IoWritePartitionTableEx routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

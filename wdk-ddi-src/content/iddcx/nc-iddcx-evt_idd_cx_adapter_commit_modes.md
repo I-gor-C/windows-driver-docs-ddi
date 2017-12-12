@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_adapter_commit_modes.htm
 old-project: display
 ms.assetid: 30e1d240-8a1e-4bcd-8c04-76894ac61624
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: _requires_same_
 <b>EVT_IDD_CX_ADAPTER_COMMIT_MODES</b> is called by the OS to inform the driver of a mode change for monitors on the adapter.
 
 
+
 ## -prototype
 
 ````
@@ -64,42 +65,51 @@ typedef EVT_IDD_CX_ADAPTER_COMMIT_MODES PFN_IDD_CX_ADAPTER_COMMIT_MODES;
                     
                 A handle provided by the driver used by the OS to reference the adapter in a call to the driver.
 
+
 ### -param pInArgs [in]
 
 
                     
                 Input arguments used by <b>EVT_IDD_CX_ADAPTER_COMMIT_MODES</b>.
 
+
 ## -returns
 
 (NTSTATUS) If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. 
                     
 
+
 ## -remarks
 The OS always provides the IDDCX_PATH for every connected monitor even if it is not active and indicates which paths have changed.  If a path is marked  inactive, then the whole display pipeline for that path will be powered off and no signal will be sent to the monitor.
 <p class="note">When a new path is committed, the driver should program the display pipeline to display a black image until the first frame is ready to be displayed. To achieve this, WDDM visibility should be off until the first frame is ready to be displayed, then the visibility should be turned on.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +120,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _requires_same_
+
 </td>
 </tr>
 </table>

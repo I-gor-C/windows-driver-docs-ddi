@@ -7,7 +7,7 @@ old-location: display\d3dddi_pagingqueue_priority.htm
 old-project: display
 ms.assetid: A5CF6601-C0BF-4534-93DD-5FFA4F167CFC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DDDI_PAGINGQUEUE_PRIORITY, D3DDDI_PAGINGQUEUE_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The <b>D3DDDI_PAGINGQUEUE_PRIORITY</b> enumeration indicates the scheduling prio
   
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum D3DDDI_PAGINGQUEUE_PRIORITY {
 
 Indicates below normal priority.
 
+
 ### -field D3DDDI_PAGINGQUEUE_PRIORITY_NORMAL
 
 Indicates normal priority.
 
+
 ### -field D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL
 
 Indicates above normal priority.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ Indicates above normal priority.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

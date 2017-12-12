@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A camera minidriver's <b>CamProcessRawVideoFrameEx</b> callback function decodes a raw video frame.
 
 
+
 ## -prototype
 
 ````
@@ -70,48 +71,60 @@ NTSTATUS CamProcessRawVideoFrameEx(
 
 Pointer to the camera minidriver's device object created by the USB hub.
 
+
 ### -param DeviceContext 
 
 Pointer to the camera minidriver's device context.
+
 
 ### -param FrameContext 
 
 Pointer to the minidriver's frame context.
 
+
 ### -param FrameBuffer 
 
 Pointer to the buffer that receives the final processed video frame. See the Remarks section for more information about how USBCAMD uses this parameter.
+
 
 ### -param FrameLength 
 
 Specifies the length of the frame buffer (from the original read request) in bytes.
 
+
 ### -param RawFrameBuffer 
 
 Pointer to the buffer containing the received USB packets. See the Remarks section for more information about how USBCAMD uses this parameter.
+
 
 ### -param RawFrameLength 
 
 Specifies the length of <i>RawFrameBuffer</i> in bytes.
 
+
 ### -param NumberOfPackets 
 
 Specifies the number of USB packets received into <i>RawFrameBuffer</i>.
+
 
 ### -param BytesReturned 
 
 Pointer to the number of bytes transferred. The minidriver must set this to zero if it encounters any errors during processing, as described in <a href="https://msdn.microsoft.com/a66f4191-53ce-4ca2-aae7-8fb24a1a9a16">Data Flow Using Isochronous Pipes</a>. See the Remarks section for more information about how USBCAMD uses this parameter.
 
+
 ### -param ActualRawFrameLength 
 
 Contains the length of the actual buffer received from the camera. This value is specified in bytes.
+
 
 ### -param StreamNumber 
 
 Indicates the stream number with which this frame is associated with.
 
+
 ## -returns
 <b>CamProcessRawVideoFrameEx</b> returns STATUS_SUCCESS or an appropriate error code.
+
 
 ## -remarks
 Before USBCAMD calls the minidriver's <b>CamProcessRawVideoFrameEx</b> callback, it sets the first DWORD in the buffer pointed to by the <i>FrameBuffer</i> parameter to the value <i>0xdeadbeef.</i> After calling the minidriver's <b>CamProcessRawVideoFrameEx</b> callback USBCAMD checks the first DWORD in the buffer pointed to by the <i>FrameBuffer</i> parameter for the value <i>0xdeadbeef</i> to determine if <b>CamProcessRawVideoFrameEx</b> successfully copied the video frame from the buffer pointed to by the <i>RawFrameBuffer</i> parameter into the buffer pointed to by the <i>FrameBuffer</i> parameter.
@@ -128,11 +141,13 @@ The original USBCAMD does not call <b>CamProcessRawVideoFrameEx</b>.
 
 This function is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +158,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,9 +169,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

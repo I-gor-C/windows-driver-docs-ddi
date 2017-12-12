@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_auto_stream_caps.htm
 old-project: display
 ms.assetid: 00334dec-b84a-49d4-bd09-440eb7a1b79d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the automatic image processing capabilities of the video processor.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS {
 
 Denoise.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DERINGING
 
 Deringing.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_EDGE_ENHANCEMENT
 
 Edge enhancement.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_COLOR_CORRECTION
 
 Color correction.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_FLESH_TONE_MAPPING
 
 Flesh-tone mapping.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_IMAGE_STABILIZATION
 
 Image stabilization.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_SUPER_RESOLUTION
 
 Enhanced image resolution.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_ANAMORPHIC_SCALING
 
 Anamorphic scaling.
+
 
 ## -remarks
 
@@ -99,22 +108,27 @@ Anamorphic scaling.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

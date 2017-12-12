@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USB_INTERFACE_DESCRIPTOR</b> structure is used by USB client drivers to retrieve a USB-defined interface descriptor.
 
 
+
 ## -syntax
 
 ````
@@ -65,37 +66,46 @@ typedef struct _USB_INTERFACE_DESCRIPTOR {
 
 The length, in bytes, of the descriptor.
 
+
 ### -field bDescriptorType
 
 The descriptor type. <b>bDescriptor</b> must be set to USB_INTERFACE_DESCRIPTOR_TYPE.
+
 
 ### -field bInterfaceNumber
 
 The index number of the interface.
 
+
 ### -field bAlternateSetting
 
 The index number of the alternate setting of the interface.
+
 
 ### -field bNumEndpoints
 
 The number of endpoints that are used by the interface, excluding the default status endpoint.
 
+
 ### -field bInterfaceClass
 
 The class code of the device that the USB specification group assigned.
+
 
 ### -field bInterfaceSubClass
 
 The subclass code of the device that the USB specification group assigned.
 
+
 ### -field bInterfaceProtocol
 
 The protocol code of the device that the USB specification group assigned.
 
+
 ### -field iInterface
 
 The index of a string descriptor that describes the interface. For information about this field, see section 9.6.5 in the "Universal Serial Bus Revision 2.0" specification  at <a href="http://www.usb.org/developers/docs/">USB Technology</a>.
+
 
 ## -remarks
 
@@ -105,6 +115,7 @@ The index of a string descriptor that describes the interface. For information a
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +138,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_INTERFACE_DESCRIPTOR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

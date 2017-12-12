@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltProcessFileLock</b> routine processes and completes a file lock operation.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ FLT_PREOP_CALLBACK_STATUS FltProcessFileLock(
 
 Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a> or <a href="ifsk.fltinitializefilelock">FltInitializeFileLock</a>. 
 
+
 ### -param CallbackData [in]
 
 Pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a> operation. 
 
+
 ### -param Context [in, optional]
 
 Context pointer to be used when completing the operation. This context pointer is passed to the <i>CompleteLockCallbackDataRoutine</i> and <i>UnlockRoutine</i> callback routines that the minifilter driver registered in a previous call to <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>. This parameter is optional and can be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltProcessFileLock</b> returns one of the following. 
@@ -79,6 +83,7 @@ Context pointer to be used when completing the operation. This context pointer i
 </dl>The lock operation has been pended. 
 
  
+
 
 ## -remarks
 <b>FltProcessFileLock</b> processes a file lock (<a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>) operation. The lock operation can be a fast I/O or IRP-based operation. 
@@ -96,11 +101,13 @@ To allocate and initialize a new file lock structure, call <a href="ifsk.fltallo
 To free an initialized<a href="ifsk.file_lock">FILE_LOCK</a> structure, call <a href="ifsk.fltfreefilelock">FltFreeFileLock</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -111,14 +118,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,6 +139,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +150,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -149,9 +161,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -199,5 +213,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltProcessFileLock routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

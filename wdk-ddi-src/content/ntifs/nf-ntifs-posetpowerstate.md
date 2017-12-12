@@ -7,7 +7,7 @@ old-location: kernel\posetpowerstate.htm
 old-project: kernel
 ms.assetid: 9fff319e-0428-4185-a792-d3842ab9feb8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PoSetPowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: See Remarks section.
 The <b>PoSetPowerState</b> routine notifies the system of a change in the <a href="https://msdn.microsoft.com/2229f34c-9b88-4e3e-802e-f7be2c7ef168">device power state</a> for a device.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ POWER_STATE PoSetPowerState(
 
 A pointer to the target <a href="kernel.device_object">DEVICE_OBJECT</a>.
 
+
 ### -param Type [in]
 
 Indicates a <a href="kernel.power_state_type">POWER_STATE_TYPE</a> value. Drivers must specify <b>DevicePowerState</b>.
+
 
 ### -param State [in]
 
 Specifies the power state to be set. Drivers must specify a <a href="kernel.device_power_state">DEVICE_POWER_STATE</a> value.
 
+
 ## -returns
 On Windows 2000 and later versions of the operating system, <b>PoSetPowerState</b> returns the previous power state. On Windows 98/Me, <b>PoSetPowerState</b> returns the state passed in <i>State</i>.
+
 
 ## -remarks
 <b>PoSetPowerState</b> notifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> of the new power state for a device. Each driver in a device stack (filter, function, and bus drivers) must call <b>PoSetPowerState</b> to inform the power manager of a change in the power state of its corresponding device object. For example:
@@ -82,11 +87,13 @@ For more information about powering a device up and down, see <a href="https://m
 
 Callers of <b>PoSetPowerState</b> must be running at IRQL &lt;= APC_LEVEL except when setting state to D0. When setting state to D0, callers can be running at IRQL &lt;= DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +136,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -135,9 +147,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 </table>
@@ -152,5 +166,8 @@ See Remarks section.
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoSetPowerState routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoSetPowerState routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

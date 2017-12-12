@@ -41,6 +41,7 @@ req.irql:
 The <b>KsAddIrpToCancelableQueue</b> function adds an IRP to a queue of cancelable IRPs, thus allowing the IRP to be canceled. If the IRP had been previously set to a canceled state, the <b>KsAddIrpToCancelableQueue </b>function completes the canceling of that IRP. 
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,30 @@ VOID KsAddIrpToCancelableQueue(
 
 Specifies the driver-allocated storage for the head of the queue on which to add the IRP.
 
+
 ### -param SpinLock [in]
 
 Points to driver's spin lock for queue access to the queue specified at <i>QueueHead</i>. A copy of this pointer is kept in the IRP's KSQUEUE_SPINLOCK_IRP_STORAGE(Irp) for use by the cancel routine, if necessary.
+
 
 ### -param Irp [in]
 
 Specifies the IRP to add to the queue specified at <i>QueueHead</i>.
 
+
 ### -param ListLocation [in]
 
 Indicates whether this IRP should be placed at the beginning or end of the queue. This value must be KsListEntryTail or KsListEntryHead.
+
 
 ### -param DriverCancel [in, optional]
 
 Optional parameter that specifies a driver-supplied cancel routine to use. If this is <b>NULL</b>, the standard <a href="stream.kscancelroutine">KsCancelRoutine</a> is used.
 
+
 ## -returns
 None
+
 
 ## -remarks
 If the IRP has been put into a cancel state when this routine is called, <b>KsAddIrpToCancelableQueue</b> will immediately call the cancel routine specified at <i>DriverCancel</i>, or if no routine was specified at <i>DriverCancel </i>the default streaming cancel routine is called.
@@ -86,11 +93,13 @@ The <b>KsAddIrpToCancelableQueue</b> function allows IRPs to be canceled even be
 
 The function does not use the cancel spin lock to add items to the list. Access to the list is synchronized using the provided spin lock and relies on atomic operations on Irp-&gt;CancelRoutine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +121,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

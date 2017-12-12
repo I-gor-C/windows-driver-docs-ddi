@@ -7,7 +7,7 @@ old-location: kernel\mmmapmdl.htm
 old-project: kernel
 ms.assetid: 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: MmMapMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ This function maps physical pages described by a memory descriptor
 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ This function maps physical pages described by a memory descriptor
 
 A pointer to a valid MDL.
 
+
 ### -param Protection [in]
 
 A bitwise of flags that indicates the protection to set for the pages. Possible values are PAGE_Xxx constants defined in Wdm.h.
+
 
 ### -param DriverRoutine [in]
 
  A pointer to a driver-supplied callback routine (<a href="..\wdm\nc-wdm-mm_mdl_routine.md">MM_MDL_ROUTINE</a>) that is invoked after the MDL is mapped.
 
+
 ### -param DriverContext [in]
 
 A pointer to a driver-defined context. The driver's callback function can store any status information  in the driver context and then examine the value, when the callback is invoked. 
+
 
 ## -returns
     If the callback function pointed to by <i>DriverRoutine</i> was invoked, this function returns STATUS_SUCCESS. The function returns an appropriate NTSTATUS value if the MDL could not be mapped or the callback function could not be invoked.
@@ -87,22 +92,27 @@ A pointer to a driver-defined context. The driver's callback function can store 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +134,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +145,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -147,5 +161,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmMapMdl function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmMapMdl function%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

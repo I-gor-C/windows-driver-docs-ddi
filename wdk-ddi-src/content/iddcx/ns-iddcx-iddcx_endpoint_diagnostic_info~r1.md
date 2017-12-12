@@ -7,7 +7,7 @@ old-location: display\iddcx_endpoint_diagnostic_info.htm
 old-project: display
 ms.assetid: 70be09ed-5633-464b-b311-f671efe83a54
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_ENDPOINT_DIAGNOSTIC_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Gives information about the video data endpoint.
 
 
+
 ## -syntax
 
 ````
@@ -65,11 +66,13 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                      
                  Total size of the structure.
 
+
 ### -field TransmissionType
 
 
                      Describes the type of link the video data is being transmitted over.
                  
+
 
 ### -field pEndPointFriendlyName
 
@@ -77,11 +80,13 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                      The friendly name of the endpoint, if one exists. This is applicable if the user can give the device a name and is NULL if a friendly name does not exist.
                  
 
+
 ### -field pEndPointModelName
 
 
                      The model name of the endpoint. Must be a non-empty string.
                  
+
 
 ### -field pEndPointManufacturerName
 
@@ -89,11 +94,13 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                      The manufacture name of the endpoint. Must be a non-empty string.
                  
 
+
 ### -field pHardwareVersion
 
 
                      Pointer to version info for the endpoint hardware.
                  
+
 
 ### -field pFirmwareVersion
 
@@ -101,11 +108,13 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                      Pointer to version info for the endpoint firmware.
                  
 
+
 ### -field GammaSupport
 
 
                      Indicates how gamma is implemented.
                  
+
 
 ## -remarks
 
@@ -115,6 +124,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

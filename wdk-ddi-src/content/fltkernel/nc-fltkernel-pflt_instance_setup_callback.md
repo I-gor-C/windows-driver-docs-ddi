@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver can register a routine of type PFLT_INSTANCE_SETUP_CALLBACK as the minifilter driver's <i>InstanceSetupCallback</i> routine. 
 
 
+
 ## -prototype
 
 ````
@@ -62,9 +63,11 @@ NTSTATUS InstanceSetupCallback(
 
 Pointer to an <a href="ifsk.flt_related_objects">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current operation. 
 
+
 ### -param Flags [in]
 
 Bitmask of flags that indicate why the instance is being attached. One or more of the following: 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -73,56 +76,70 @@ Bitmask of flags that indicate why the instance is being attached. One or more o
 <tr>
 <td>
 FLTFL_INSTANCE_SETUP_AUTOMATIC_ATTACHMENT
+
 </td>
 <td>
 The instance is being attached automatically. Either the minifilter driver was just loaded and is being attached to all existing volumes, or it is being attached to a newly mounted volume. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_INSTANCE_SETUP_MANUAL_ATTACHMENT
+
 </td>
 <td>
 The instance is being attached manually because a user-mode application has called <a href="ifsk.filterattach">FilterAttach</a> or <a href="ifsk.filterattachataltitude">FilterAttachAtAltitude</a> or because a kernel-mode component has called <a href="ifsk.fltattachvolume">FltAttachVolume</a> or <a href="ifsk.fltattachvolumeataltitude">FltAttachVolumeAtAltitude</a>. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_INSTANCE_SETUP_NEWLY_MOUNTED_VOLUME
+
 </td>
 <td>
 The instance is being attached automatically to a newly mounted volume. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_INSTANCE_SETUP_DETACHED_VOLUME
+
 </td>
 <td>
 The instance is being attached to a detached volume. It is possible, on some filesystems (such as FAT and CDFS), to reattach a volume after it has detached. A volume is detached if it has no associated storage stack. A volume in this state is usually a dismounted volume that still has open files.  
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param VolumeDeviceType [in]
 
 Device type of the file system volume. Must be one of the following: 
+
 <dl>
 <dd>
 FILE_DEVICE_CD_ROM_FILE_SYSTEM
+
 </dd>
 <dd>
 FILE_DEVICE_DISK_FILE_SYSTEM
+
 </dd>
 <dd>
 FILE_DEVICE_NETWORK_FILE_SYSTEM
+
 </dd>
 </dl>
 
 ### -param VolumeFilesystemType [in]
 
 File system type of the volume.   The possible values are listed in <a href="ifsk.flt_filesystem_type">FLT_FILESYSTEM_TYPE</a>.
+
 
 ## -returns
 This callback routine returns STATUS_SUCCESS or an NTSTATUS value such as the following: 
@@ -131,6 +148,7 @@ This callback routine returns STATUS_SUCCESS or an NTSTATUS value such as the fo
 </dl>Returning this value prevents the minifilter driver instance from being attached to the given volume. This is an error code. 
 
  
+
 
 ## -remarks
 When a minifilter driver registers itself by calling <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine, it can register a routine of type PFLT_INSTANCE_SETUP_CALLBACK as the minifilter driver's <i>InstanceSetupCallback</i> routine. 
@@ -141,11 +159,13 @@ The filter manager calls this routine on the first operation after a new volume 
 
 The filter manager calls this routine to allow the minifilter driver to respond to an automatic or manual attachment request. If this routine returns an error or warning NTSTATUS code, the minifilter driver instance is not attached to the given volume. Otherwise, the minifilter driver instance is attached to the given volume. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +176,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -166,9 +187,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -204,5 +227,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_INSTANCE_SETUP_CALLBACK routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

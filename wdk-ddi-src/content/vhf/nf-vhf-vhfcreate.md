@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The HID source driver calls this method to create a virtual HID device.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ NTSTATUS VhfCreate(
 
 A pointer to a <a href="hid.vhf_config">VHF_CONFIG</a> structure.
 
+
 ### -param VhfHandle [out]
 
 A handle to the new virtual HID device.
 
+
 ## -returns
 If the <b>VhfCreate</b> call succeeds, the method returns STATUS_SUCCESS. Otherwise an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS </a> value.
+
 
 ## -remarks
  This method returns synchronously after validating the <a href="hid.vhf_config">VHF_CONFIG</a> structure and creating a virtual HID device. The virtual HID device is only reported to PnP. The initialization, installation, and starting of the device may not complete before this method returns.
@@ -72,11 +76,13 @@ A Kernel-Mode Driver Framework (KMDF) driver can call <b>VhfCreate</b> at any po
 
 VHF does not invoke any callback functions that are specified in <a href="hid.vhf_config">VHF_CONFIG</a> until the HID source driver calls <a href="hid.vhfstart">VhfStart</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -97,9 +104,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -111,5 +120,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VhfCreate method%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

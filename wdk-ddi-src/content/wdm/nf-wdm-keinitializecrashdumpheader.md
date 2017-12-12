@@ -7,7 +7,7 @@ old-location: kernel\keinitializecrashdumpheader.htm
 old-project: kernel
 ms.assetid: 6fa0cf86-35f4-4e5d-bced-ebd2ec499b64
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeInitializeCrashDumpHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeInitializeCrashDumpHeader</b> routine supplies the header information the system requires for a crash dump file.
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,30 @@ NTSTATUS KeInitializeCrashDumpHeader(
 
 Specifies the type of dump file. The only valid value is DUMP_TYPE_FULL.
 
+
 ### -param Flags [in]
 
 Specifies flags for the dump file. The only valid value is 0.
+
 
 ### -param Buffer [out]
 
 Pointer to the buffer that receives the header information.
 
+
 ### -param BufferSize [in]
 
 Specifies the size in bytes of the buffer pointed to by <i>Buffer</i>.
+
 
 ### -param BufferNeeded [out, optional]
 
 Optionally, a pointer to a variable that receives the size necessary to hold the complete header information.
 
+
 ## -returns
 <b>KeInitializeCrashDumpHeader</b> returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on failure.   
+
 
 ## -remarks
 Drivers can use this routine to manually create a crash dump file. The file can be created at any time, and used by a debugger to examine the state of the system.
@@ -99,11 +106,13 @@ In earlier versions of Windows, <b>KeInitializeCrashDumpHeader</b> writes the ba
 
 Starting with Windows 8, <b>KeInitializeCrashDumpHeader</b> is declared in the Wdm.h header file in the Windows Driver Kit (WDK). To use this routine with earlier versions of the WDK, include the following function declaration in your driver code:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,14 +123,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Server 2003 with SP1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +144,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +155,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -152,9 +166,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>

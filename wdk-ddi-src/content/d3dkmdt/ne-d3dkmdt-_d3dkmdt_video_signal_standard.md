@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_video_signal_standard.htm
 old-project: display
 ms.assetid: bb129e02-ae01-4bbc-a81f-809f1a27060c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_VIDEO_SIGNAL_STANDARD, D3DKMDT_VIDEO_SIGNAL_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The D3DKMDT_VIDEO_SIGNAL_STANDARD enumeration contains constants that represent video signal standards.
+
 
 
 ## -syntax
@@ -88,152 +89,189 @@ typedef enum _D3DKMDT_VIDEO_SIGNAL_STANDARD {
 
 Indicates that a variable of type D3DKMDT_VIDEO_SIGNAL_STANDARD has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_VSS_VESA_DMT
 
 Represents the Video Electronics Standards Association (VESA) Display Monitor Timing (DMT) standard.
+
 
 ### -field D3DKMDT_VSS_VESA_GTF
 
 Represents the VESA Generalized Timing Formula (GTF) standard.
 
+
 ### -field D3DKMDT_VSS_VESA_CVT
 
 Represents the VESA Coordinated Video Timing (CVT) standard.
+
 
 ### -field D3DKMDT_VSS_IBM
 
 Represents the IBM standard.
 
+
 ### -field D3DKMDT_VSS_APPLE
 
 Represents the Apple standard.
+
 
 ### -field D3DKMDT_VSS_NTSC_M
 
 Represents the National Television Standards Committee (NTSC) standard.
 
+
 ### -field D3DKMDT_VSS_NTSC_J
 
 Represents the NTSC standard.
+
 
 ### -field D3DKMDT_VSS_NTSC_443
 
 Represents the NTSC standard.
 
+
 ### -field D3DKMDT_VSS_PAL_B
 
 Represents the Phase Alteration Line (PAL) standard.
+
 
 ### -field D3DKMDT_VSS_PAL_B1
 
 Represents the PAL standard.
 
+
 ### -field D3DKMDT_VSS_PAL_G
 
 Represents the PAL standard.
+
 
 ### -field D3DKMDT_VSS_PAL_H
 
 Represents the PAL standard.
 
+
 ### -field D3DKMDT_VSS_PAL_I
 
 Represents the PAL standard.
+
 
 ### -field D3DKMDT_VSS_PAL_D
 
 Represents the PAL standard.
 
+
 ### -field D3DKMDT_VSS_PAL_N
 
 Represents the PAL standard.
+
 
 ### -field D3DKMDT_VSS_PAL_NC
 
 Represents the PAL standard.
 
+
 ### -field D3DKMDT_VSS_SECAM_B
 
 Represents the Systeme Electronic Pour Couleur Avec Memoire (SECAM) standard.
+
 
 ### -field D3DKMDT_VSS_SECAM_D
 
 Represents the SECAM standard.
 
+
 ### -field D3DKMDT_VSS_SECAM_G
 
 Represents the SECAM standard.
+
 
 ### -field D3DKMDT_VSS_SECAM_H
 
 Represents the SECAM standard.
 
+
 ### -field D3DKMDT_VSS_SECAM_K
 
 Represents the SECAM standard.
+
 
 ### -field D3DKMDT_VSS_SECAM_K1
 
 Represents the SECAM standard.
 
+
 ### -field D3DKMDT_VSS_SECAM_L
 
 Represents the SECAM standard.
+
 
 ### -field D3DKMDT_VSS_SECAM_L1
 
 Represents the SECAM standard.
 
+
 ### -field D3DKMDT_VSS_EIA_861
 
 Represents the Electronics Industries Association (EIA) standard.
+
 
 ### -field D3DKMDT_VSS_EIA_861A
 
 Represents the EIA standard.
 
+
 ### -field D3DKMDT_VSS_EIA_861B
 
 Represents the EIA standard.
+
 
 ### -field D3DKMDT_VSS_PAL_K
 
 Represents the PAL standard.
 
+
 ### -field D3DKMDT_VSS_PAL_K1
 
 Represents the PAL standard.
+
 
 ### -field D3DKMDT_VSS_PAL_L
 
 Represents the PAL standard.
 
+
 ### -field D3DKMDT_VSS_PAL_M
 
 Represents the PAL standard.
 
+
 ### -field D3DKMDT_VSS_OTHER
 
 Represents any video standard other than those represented by the previous constants in this enumeration.
+
 
 ## -remarks
 The <b>SignalInfo</b> member of the <a href="display.d3dkmdt_vidpn_target_mode">D3DKMDT_VIDPN_TARGET_MODE</a> structure is a <a href="display.d3dkmdt_video_signal_info">D3DKMDT_VIDEO_SIGNAL_MODE</a> structure.
 
 The <b>VideoStandard</b> member of the D3DKMDT_VIDEO_SIGNAL_MODE structure is a D3DKMDT_VIDEO_SIGNAL_STANDARD value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -250,5 +288,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDEO_SIGNAL_STANDARD enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDEO_SIGNAL_STANDARD enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

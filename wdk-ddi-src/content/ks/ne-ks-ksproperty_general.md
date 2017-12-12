@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef enum  {
 
 Specify to access general component information stored in the <b>KSCOMPONENTID</b> structure.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Specify to access general component information stored in the <b>KSCOMPONENTID</
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

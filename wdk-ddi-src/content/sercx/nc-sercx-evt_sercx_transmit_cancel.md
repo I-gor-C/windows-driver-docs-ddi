@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 7922A3BD-8829-42A3-9F94-3C26F1262626
 ms.author: windowsdriverdev
 ms.date: 10/23/2017
-ms.keywords: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: SENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <i>EvtSerCxTransmitCancel</i> event callback function notifies the serial controller driver that the pending transmit request is canceled.
 
 
+
 ## -prototype
 
 ````
@@ -60,8 +61,10 @@ VOID EvtSerCxTransmitCancel(
 
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 The serial framework extension (SerCx) calls this function to inform the serial controller driver that the current transmit request has been canceled.  If the driver has an outstanding transmit operation in progress, the driver should cancel this operation and call the <a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a> method to report the cancellation. In the <b>SerCxProgressTransmit</b> call, set <i>BytesTransmitted</i> to the number of bytes transmitted before the operation was canceled, and set <i>TransmitStatus</i> to <b>SerCxStatusCancelled</b>.
@@ -76,11 +79,13 @@ Then, implement your callback function as follows.
 
 For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Called at IRQL &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

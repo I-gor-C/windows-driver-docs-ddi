@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <i>This function is intended for internal use only.</i>
+
 The <b>KsServiceBusEnumPnpRequest</b> function services IRP_MJ_PNP requests on behalf of the demand-load bus enumerator object that was created with <b>KsCreateBusEnumObject</b>. 
+
 
 
 ## -syntax
@@ -59,12 +61,15 @@ NTSTATUS KsServiceBusEnumPnpRequest(
 
 Pointer to the device object.
 
+
 ### -param Irp [in, out]
 
 Pointer to the IRP associated with the device object.
 
+
 ## -returns
 Returns STATUS_NOT_SUPPORTED if the IRP is not handled by <b>KsServiceBusEnumPnpRequest</b> or STATUS_INVALID_DEVICE_REQUEST if the device object is neither a parent or child of the demand-load bus enumerator object. Otherwise, it returns the status code for the IRP processing.
+
 
 ## -remarks
 <b>KsServiceBusEnumPnpRequest</b> services the following Plug and Play IRPs for an FDO or parent device:
@@ -107,11 +112,13 @@ IRP_MN_WRITE_CONFIG
 
 IRP_MN_QUERY_CAPABILITIES
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +129,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +140,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -154,5 +163,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsServiceBusEnumPnpRequest function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

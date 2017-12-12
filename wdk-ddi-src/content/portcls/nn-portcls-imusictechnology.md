@@ -39,12 +39,16 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IMusicTechnology</code> interface is used to change the music technology GUIDs that are specified in the data range descriptors for the pins belonging to a MIDI or DMus miniport driver. The GUID specifies the type of MIDI synthesizer device that the pin represents. The DMus miniport driver implements the <code>IMusicTechnology</code> interface and exposes this interface to the DMus port driver. To determine whether the miniport driver supports this interface, the port driver calls the miniport driver's <b>IMiniportDMus::QueryInterface</b> method with REFIID <b>IID_IMusicTechnology</b>. <code>IMusicTechnology</code> inherits from the <b>IUnknown</b> interface.
+
 The system-supplied miniport drivers DMusUART and UART both support the <code>IMusicTechnology</code> interface. For information about these drivers, see <a href="audio.pcnewminiport">PcNewMiniport</a>.
+
 For other MIDI and DMus miniport drivers, support for <code>IMusicTechnology</code> is optional. For more information, see <a href="https://msdn.microsoft.com/3b7c2907-e67f-458e-809d-080dcc30be1a">Music Technology GUIDs</a>.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMusicTechnology</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -54,6 +58,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMusicTechnology</b> interfac
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

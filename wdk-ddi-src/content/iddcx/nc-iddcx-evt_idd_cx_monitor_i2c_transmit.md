@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_i2c_transmit.htm
 old-project: display
 ms.assetid: d36d45f5-fae1-430a-a01e-adb70e09573c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: _requires_same_
 <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> is called by the OS to return data received to an I2C device in a monitor.
 
 
+
 ## -prototype
 
 ````
@@ -64,16 +65,19 @@ typedef EVT_IDD_CX_MONITOR_I2C_TRANSMIT PFN_IDD_CX_MONITOR_I2C_TRANSMIT;
                     
                 A handle used by the OS to identify the monitor to return I2C data to.
 
+
 ### -param pInArgs [in]
 
 
                     
                 Input arguments used by <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b>.
 
+
 ## -returns
 
 (NTSTATUS) If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. 
                     
+
 
 ## -remarks
 <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> is responsible for signaling the I2C start condition, sending the I2C address, sending the data in the buffer, checking for acknowledgments from the receiver, and signaling the stop condition. For details about the I2C bus, see the I2C Bus Specification, published by Philips Semiconductors. The specification defines a protocol for initiating I2C communication, reading and writing bytes over the I2C data line, and terminating I2C
@@ -89,27 +93,33 @@ communication.
 If the display adapter supports HDCP, <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> must refuse to send data to an I2C device if the device has an I2C address that is used by HDCP.
 <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> must never transmit data to an I2C device on the display adapter. That is, this function can transmit data to an I2C device in a monitor that is connected to the display adapter, but not to an I2C device that is on the display adapter itself.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,9 +130,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _requires_same_
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: netvista\fwpsclonestreamdata0.htm
 old-project: netvista
 ms.assetid: 66041ccb-e63a-4843-85ec-d93b924bb335
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsCloneStreamData0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a> data stream.
 
 
+
 ## -syntax
 
 ````
@@ -65,12 +66,14 @@ A pointer to the original
      have its 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure cloned.
 
+
 ### -param netBufferListPoolHandle [in, optional]
 
 A 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> pool handle that was
      obtained from a previous call to the 
      <a href="netvista.ndisallocatenetbufferlistpool">NdisAllocateNetBufferListPool</a> function. This parameter is optional and can be <b>NULL</b>.
+
 
 ### -param netBufferPoolHandle [in, optional]
 
@@ -80,16 +83,19 @@ A
      <a href="netvista.ndisallocatenetbufferpool">
      NdisAllocateNetBufferPool</a> function. This parameter is optional and can be <b>NULL</b>.
 
+
 ### -param allocateCloneFlags [in]
 
 There are currently no flags defined for this function. Callout drivers should set this parameter
      to zero.
+
 
 ### -param netBufferListChain [out]
 
 A pointer to a location that receives a pointer to a chain of 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that describe
      all of the cloned stream data.
+
 
 ## -returns
 The 
@@ -104,6 +110,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 This cloned stream data can be injected by a callout driver into the TCP/IP network stack at a later
@@ -129,11 +136,13 @@ A callout should call the
     <a href="netvista.fwpsdiscardclonedstreamdata0">FwpsDiscardClonedStreamData0</a> function if the cloned stream data is to be discarded without being
     reinjected.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -144,14 +153,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +174,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -172,9 +185,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -201,5 +216,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCloneStreamData0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCloneStreamData0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

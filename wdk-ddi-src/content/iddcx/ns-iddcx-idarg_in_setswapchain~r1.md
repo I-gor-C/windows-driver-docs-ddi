@@ -7,7 +7,7 @@ old-location: display\idarg_in_setswapchain.htm
 old-project: display
 ms.assetid: 5b3a4a43-e8d4-4edf-87f3-dd3e6bb7e9dc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_SETSWAPCHAIN,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -61,15 +62,18 @@ typedef struct IDARG_IN_SETSWAPCHAIN {
 
                      [in] Handle to indirect swapchain that will be used to pass the desktop image to the driver for processing, transmission and display.
 
+
 ### -field hNextSurfaceAvailable
 
 
                      [in] Handle to auto reset event that is signaled when the new image to encode is ready.
 
+
 ### -field RenderAdapterLuid
 
 
                      [In] LUID of the adapter where the desktop image was rendered.
+
 
 ## -remarks
 
@@ -79,6 +83,7 @@ typedef struct IDARG_IN_SETSWAPCHAIN {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

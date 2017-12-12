@@ -7,8 +7,8 @@ old-location: netvista\rilgbatoken.htm
 old-project: netvista
 ms.assetid: f842d945-1d1e-4f0b-9cc9-82a8401c170a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILGBATOKEN, *LPRILGBATOKEN, RILGBATOKEN
+ms.date: 12/8/2017
+ms.keywords: RILGBATOKEN, RILGBATOKEN, *LPRILGBATOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef struct _RILGBATOKEN {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\ndis_wwan_get_visible_providers.htm
 old-project: netvista
 ms.assetid: C1AF383A-2D9D-4B2F-A925-D138E1B7AA4F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_WWAN_GET_VISIBLE_PROVIDERS, *PNDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS, *PNDIS_WWAN_GET_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NDIS_WWAN_GET_VISIBLE_PROVIDERS structure is used to request the miniport driver get either all visible providers or only multi-carrier visible providers.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ The header with type, revision, and size information about the NDIS_WWAN_GET_VIS
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -69,35 +71,44 @@ The header with type, revision, and size information about the NDIS_WWAN_GET_VIS
 <tr>
 <td>
 Type
+
 </td>
 <td>
 NDIS_OBJECT_TYPE_DEFAULT
+
 </td>
 </tr>
 <tr>
 <td>
 Revision
+
 </td>
 <td>
 NDIS_WWAN_GET_VISIBLE_PROVIDERS_REVISION_1
+
 </td>
 </tr>
 <tr>
 <td>
 Size
+
 </td>
 <td>
 sizeof(NDIS_WWAN_GET_VISIBLE_PROVIDERS)
+
 </td>
 </tr>
 </table>
  
+
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field VisibleProviders
 
 A formatted WWAN_GET_VISIBLE_PROVIDERS object that provides additional information to the miniport about the type of providers to return.
+
 
 ## -remarks
 
@@ -107,14 +118,17 @@ A formatted WWAN_GET_VISIBLE_PROVIDERS object that provides additional informati
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +145,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_GET_VISIBLE_PROVIDERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_GET_VISIBLE_PROVIDERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

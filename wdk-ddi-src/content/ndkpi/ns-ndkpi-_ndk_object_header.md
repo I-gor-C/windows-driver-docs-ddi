@@ -7,7 +7,7 @@ old-location: netvista\ndk_object_header.htm
 old-project: netvista
 ms.assetid: 12E3ED4A-F078-4489-BC84-69EE735CAEF8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDK_OBJECT_HEADER, NDK_OBJECT_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>NDK_OBJECT_HEADER</b> structure specifies the object version, type, and o
 It is used in the <b>Header</b> member of every NDK object.
 
 
+
 ## -syntax
 
 ````
@@ -60,15 +61,18 @@ typedef struct _NDK_OBJECT_HEADER {
 
 An <a href="netvista.ndk_version">NDK_VERSION</a> structure that contains the revision number of the NDK object.
 
+
 ### -field ObjectType
 
 An <a href="netvista.ndk_object_type">NDK_OBJECT_TYPE</a> enumeration value that specifies the NDK object type. You can use this member to identify an NDK object's type in a memory dump.
 
 This member is required and cannot be zero.
 
+
 ### -field NdkReserved
 
 A reserved block in an <a href="netvista.ndk_object_header_reserved_block">NDK_OBJECT_HEADER_RESERVED_BLOCK</a> structure.
+
 
 ## -remarks
 When an NDK provider creates an NDK object instance, the <b>Header</b> member must be initialized as follows:
@@ -81,35 +85,43 @@ Set the <b>ObjectType</b>  member to an <a href="netvista.ndk_object_type">NDK_O
 
 Set the  <b>NdkReserved</b> member to zero. The NDK provider must not modify this member until the object is closed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -174,5 +186,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OBJECT_HEADER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OBJECT_HEADER structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

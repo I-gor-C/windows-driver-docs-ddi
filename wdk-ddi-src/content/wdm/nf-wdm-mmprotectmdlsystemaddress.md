@@ -7,7 +7,7 @@ old-location: kernel\mmprotectmdlsystemaddress.htm
 old-project: kernel
 ms.assetid: e0ccc6e8-9351-4440-808b-e0b8eef48bc2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: MmProtectMdlSystemAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>MmProtectMdlSystemAddress</b> routine sets the protection type for a memory address range.
 
 
+
 ## -syntax
 
 ````
@@ -58,34 +59,43 @@ NTSTATUS MmProtectMdlSystemAddress(
 
 Specifies the memory address range to set the protection type for. 
 
+
 ### -param NewProtect [in]
 
 Specifies the new protection setting for the memory pages. Drivers should specify one of the following values:
+
+
 
 
 ### -param PAGE_NOACCESS
 
 The underlying memory pages cannot be read or written. 
 
+
 ### -param PAGE_READONLY
 
 The underlying memory pages can only be read, not written. 
+
 
 ### -param PAGE_READWRITE
 
 The underlying memory pages can be read or written. 
 
+
 ### -param PAGE_EXECUTE
 
 The underlying memory pages can be executed, but not read or written.
+
 
 ### -param PAGE_EXECUTE_READ
 
 The underlying memory pages can be executed or read, but not written.
 
+
 ### -param PAGE_EXECUTE_READWRITE
 
 The underlying memory pages can be executed, read, or written.
+
 </dd>
 </dl>
 
@@ -103,14 +113,17 @@ The underlying memory pages can be executed, read, or written.
 
  
 
+
 ## -remarks
 The <b>MmProtectMdlSystemAddress</b> routine can only be called on an MDL that has already been mapped. For example, the routine can be called on an MDL mapped by <a href="kernel.mmmaplockedpagesspecifycache">MmMapLockedPagesSpecifyCache</a>. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,14 +134,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -149,6 +166,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -159,9 +177,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -173,5 +193,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmProtectMdlSystemAddress routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmProtectMdlSystemAddress routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

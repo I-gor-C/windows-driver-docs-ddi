@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: dd9998d0-46e6-4b12-aa96-1e6eede15f47
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSRTAUDIO_HWLATENCY, *PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY
+ms.keywords: PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY, *PKSRTAUDIO_HWLATENCY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSRTAUDIO_HWLATENCY structure describes the latency that the audio hardware adds to a wave stream during playback or recording.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 Specifies the size, in bytes, of the hardware FIFO.
 
+
 ### -field ChipsetDelay
 
 Specifies the delay through the chipset in 100-nanosecond units.
 
+
 ### -field CodecDelay
 
 Specifies the delay through the codec in 100-nanosecond units.
+
 
 ## -remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537378">KSPROPERTY_RTAUDIO_HWLATENCY</a> property request uses the KSRTAUDIO_HWLATENCY structure to pass hardware-latency information from the driver to the client.
@@ -75,19 +79,23 @@ The <b>ChipsetDelay</b> member is the maximum delay that the chipset adds to dat
 
 The <b>CodecDelay</b> member is the delay that the codec adds to an audio stream. The time required for a sample to travel between the audio bus and the input or output jack includes delays through the FIFO, DAC, or ADC, and any intermediate processing stages. The codec delay can vary with the sample rate and is therefore only a best estimate.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +112,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSRTAUDIO_HWLATENCY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

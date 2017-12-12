@@ -7,7 +7,7 @@ old-location: kernel\ioconnectinterrupt.htm
 old-project: kernel
 ms.assetid: a0f9a339-f548-47a2-92ab-ccd341592384
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoConnectInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoConnectInterrupt</b> routine registers a device driver's <a href="kernel.interruptservice">InterruptService</a> routine (ISR), so that it will be called when a device interrupts on any of a specified set of processors.
 
 
+
 ## -syntax
 
 ````
@@ -67,45 +68,56 @@ NTSTATUS IoConnectInterrupt(
 
 Pointer to the address of driver-supplied storage for a pointer to a set of interrupt objects. This pointer must be passed in subsequent calls to <a href="kernel.kesynchronizeexecution">KeSynchronizeExecution</a>.
 
+
 ### -param ServiceRoutine [in]
 
 Pointer to the entry point for the driver-supplied <a href="kernel.interruptservice">InterruptService</a> routine.
+
 
 ### -param ServiceContext [in, optional]
 
 Pointer to the driver-determined context that will be supplied to the <i>InterruptService</i> routine when it is called. The <i>ServiceContext</i> area must be in resident memory: in the device extension of a driver-created device object, in the controller extension of a driver-created controller object, or in nonpaged pool allocated by the device driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff559930">Providing ISR Context Information</a> for details.
 
+
 ### -param SpinLock [in, optional]
 
 Pointer to an initialized spin lock, for which the driver supplies the storage, that will be used to synchronize access to driver-determined data shared by other driver routines. This parameter is required if the ISR handles more than one vector or if the driver has more than one ISR. Otherwise, the driver need not allocate storage for an interrupt spin lock and the input pointer is <b>NULL</b>.
+
 
 ### -param Vector [in]
 
 Specifies the interrupt vector passed in the interrupt resource at the <b>u.Interrupt.Vector</b> member of <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>.
 
+
 ### -param Irql [in]
 
 Specifies the DIRQL passed in the interrupt resource at the <b>u.Interrupt.Level</b> member of <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b>.
+
 
 ### -param SynchronizeIrql [in]
 
 Specifies the DIRQL at which the ISR will run. If the ISR handles more than one interrupt vector or the driver has more than one ISR, this value must be the highest of the <i>Irql</i> values passed at <b>u.Interrupt.Level</b> in each interrupt resource. Otherwise, the <i>Irql</i> and <i>SynchronizeIrql</i> values are identical.
 
+
 ### -param InterruptMode [in]
 
 Specifies whether the device interrupt is <b>LevelSensitive</b> or <b>Latched</b>.
+
 
 ### -param ShareVector [in]
 
 Specifies whether the interrupt vector is sharable. 
 
+
 ### -param ProcessorEnableMask [in]
 
 Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value representing the set of processors on which device interrupts can occur in this platform. This value is passed in the interrupt resource at <b>u.Interrupt.Affinity</b>. 
 
+
 ### -param FloatingSave [in]
 
 Specifies whether to save the floating-point stack when the driver's device interrupts. For x86-based and Itanium-based platforms, this value must be set to <b>FALSE</b>. For more information about saving floating-point and MMX state, see <a href="https://msdn.microsoft.com/73414084-4054-466a-b64c-5c81b224be92">Using Floating Point or MMX in a WDM Driver</a>. 
+
 
 ## -returns
 <b>IoConnectInterrupt</b> can return one of the following NTSTATUS values:
@@ -138,11 +150,13 @@ The <a href="kernel.group_affinity">GROUP_AFFINITY</a> structure contains an aff
 
 Kernel routines that use the KAFFINITY type include <b>IoConnectInterrupt</b>, <a href="kernel.kequeryactiveprocessorcount">KeQueryActiveProcessorCount</a>, and <a href="kernel.kequeryactiveprocessors">KeQueryActiveProcessors</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -153,14 +167,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,6 +188,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -181,6 +199,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -191,14 +210,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqliopassive2">IrqlIoPassive2</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -225,5 +247,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoConnectInterrupt routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoConnectInterrupt routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

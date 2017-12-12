@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 This function sets the enumeration properties of a sensor.
+
  For more information about sensor properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>.
+
 
 
 ## -syntax
@@ -59,9 +61,11 @@ FORCEINLINE NTSTATUS SensorsCxSensorInitialize(
 
 A reference to a sensor object.
 
+
 ### -param pSensorConfig [in]
 
 A list of enumeration properties. For more information, see <a href="sensors.sensor_config">SENSOR_CONFIG</a>.
+
 
 ## -returns
 This function returns NTSTATUS with different values. Some values that may be returned are the following:
@@ -74,6 +78,7 @@ STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smalle
 
 STATUS_NOT_FOUND is returned if there was an error constructing the controller object context from the <b>Sensor</b> object.
 
+
 ## -remarks
 
 
@@ -82,6 +87,7 @@ STATUS_NOT_FOUND is returned if there was an error constructing the controller o
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

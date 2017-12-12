@@ -42,6 +42,7 @@ A profile driver uses the _BRB_L2CA_REGISTER_SERVER structure to register itself
   of receiving L2CAP connections from remote Bluetooth devices.
 
 
+
 ## -syntax
 
 ````
@@ -66,14 +67,17 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field BtAddress
 
 The address of the remote Bluetooth device to receive notifications for. Specify BTH_ADDR_NULL to
      receive notification for any incoming connections.
 
+
 ### -field PSM
 
 The Protocol/Service Multiplexer (PSM) that accepts connection requests.
+
 
 ### -field IndicationFlags
 
@@ -81,6 +85,7 @@ An optional flag or combination of flags that indicates whether the profile driv
      pairing notifications in addition to connection notifications. The following table lists the possible
      flag settings. 
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -89,29 +94,36 @@ An optional flag or combination of flags that indicates whether the profile driv
 <tr>
 <td>
 INDICATION_PAIR_DEVICE
+
 </td>
 <td>
 The profile driver will accept notifications when a device is paired.
+
 </td>
 </tr>
 <tr>
 <td>
 INDICATION_UNPAIR_DEVICE
+
 </td>
 <td>
 The profile driver will accept notifications when a device is unpaired.
+
 </td>
 </tr>
 <tr>
 <td>
 INDICATION_UNPERSONALIZE_DEVICE
+
 </td>
 <td>
 The profile driver will accept notifications when a device is unpersonalized.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field IndicationCallback
 
@@ -120,10 +132,12 @@ A
      implemented by the profile driver, that the Bluetooth driver stack should call to notify the profile
      driver about incoming L2CAP connections.
 
+
 ### -field IndicationCallbackContext
 
 The context to be passed to the callback function that is specified in the 
      <b>IndicationCallback</b> member.
+
 
 ### -field ReferenceObject
 
@@ -139,12 +153,14 @@ A pointer to an object to pass to the
      <a href="bltooth.brb_l2ca_unregister_server">
      BRB_L2CA_UNREGISTER_SERVER</a> request.
 
+
 ### -field ServerHandle
 
 Handle to the L2CAP server, if successfully returned. When the profile driver should no longer
      receive remote connect indications it should pass this handle to 
      <a href="bltooth.brb_l2ca_unregister_server">
      BRB_L2CA_UNREGISTER_SERVER</a>.
+
 
 ## -remarks
 To register itself as a L2CAP server, a profile driver should 
@@ -197,19 +213,23 @@ While this procedure allows a profile driver to accept incoming connection reque
     <a href="https://msdn.microsoft.com/833f2eea-d7e6-4f19-979e-3bb4db47fa43">Communicating with SDP
     Servers</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -241,5 +261,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_REGISTER_SERVER structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

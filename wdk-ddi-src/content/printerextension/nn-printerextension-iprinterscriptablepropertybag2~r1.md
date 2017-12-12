@@ -7,7 +7,7 @@ old-location: print\iprinterscriptablepropertybag2.htm
 old-project: print
 ms.assetid: 97586B8D-D070-4DF1-AECE-50EB4D28414B
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,12 +42,14 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterScriptablePropertyBag2</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IPrinterScriptablePropertyBag2</b> also has these types of members:
 
 The <b>IPrinterScriptablePropertyBag2</b> interface has these methods.
 
  
+
 
 ## -members
 The <b>IPrinterScriptablePropertyBag2</b> interface has these methods.
@@ -62,6 +64,7 @@ The <b>IPrinterScriptablePropertyBag2</b> interface has these methods.
 </tr>
 </table> 
 
+
 ## -remarks
 
 
@@ -70,6 +73,7 @@ The <b>IPrinterScriptablePropertyBag2</b> interface has these methods.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

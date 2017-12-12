@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>USBD_BuildRegisterCompositeDevice</b> routine is called by the driver of a USB  multi-function device (composite driver) to  initialize a <a href="buses.register_composite_driver">REGISTER_COMPOSITE_DEVICE</a> structure with the information required for registering the driver with the USB driver stack. 
+
 The routine is called by a driver that replaces the Microsoft-provided composite driver, Usbccgp.sys.
+
 
 
 ## -syntax
@@ -61,20 +63,25 @@ void  USBD_BuildRegisterCompositeDevice(
 
 A USBD handle that is retrieved in a previous call to the <a href="buses.usbd_register">USBD_CreateHandle</a> routine.
 
+
 ### -param CapabilityFlags [in]
 
 A caller-allocated <a href="buses.composite_driver_capabilities">COMPOSITE_DEVICE_CAPABILITIES</a> structure that indicates the capabilities that are supported by the composite driver. For instance, to   indicate that the composite driver supports function suspend, set the <b>CapabilityFunctionSuspend</b> member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1.
+
 
 ### -param FunctionCount [in]
 
 The number of physical device objects (PDOs) to be created by the parent driver. The <i>FunctionCount</i> value cannot exceed 255.
 
+
 ### -param RegisterCompositeDevice [out]
 
 A pointer to a caller-allocated <a href="buses.register_composite_driver">REGISTER_COMPOSITE_DEVICE</a> structure. Upon completion, the structure is populated with the specified registration  information. To register the composite driver, send the <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O request and pass the populated structure. 
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 
@@ -84,6 +91,7 @@ This routine does not return a value.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,14 +102,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +134,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; = DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -139,5 +153,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_BuildRegisterCompositeDevice routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

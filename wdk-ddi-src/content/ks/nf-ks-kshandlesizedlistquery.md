@@ -41,6 +41,7 @@ req.irql:
 The <b>KsHandleSizedListQuery</b> function, depending on the length of the system buffer, returns either the size of the buffer needed, number of entries in the specified data list, or copies the entries themselves. This assumes the structure of KSMULTIPLE_ITEM to be a Size followed by a Count.
 
 
+
 ## -syntax
 
 ````
@@ -59,29 +60,36 @@ NTSTATUS KsHandleSizedListQuery(
 
 Specifies the IRP with the identifier list request.
 
+
 ### -param DataItemsCount  [in]
 
 Specifies the number of items in the identifier list.
+
 
 ### -param DataItemSize  [in]
 
 Specifies the size of a data item.
 
+
 ### -param DataItems  [in]
 
 Specifies the list of data items.
 
+
 ## -returns
 The <b>KsHandleSizedListQuery</b> function returns STATUS_SUCCESS if the number of entries and the data can be copied. If the buffer is larger than the size to store just the size and the count of entries but too small to contain all the entries, the function returns status STATUS_BUFFER_TOO_SMALL.
 
+
 ## -remarks
 Use the <b>KsHandleSizedListQuery</b> function when implementing properties that are to return information in the multiple item format.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +100,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +111,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

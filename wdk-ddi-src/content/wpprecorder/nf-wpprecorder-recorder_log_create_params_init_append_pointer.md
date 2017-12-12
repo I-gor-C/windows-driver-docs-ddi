@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER</b> method initializes the <a href="devtest.recorder_log_create_params">RECORDER_LOG_CREATE_PARAMS</a> with the pointer to link logs.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ FORCEINLINE void RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER(
 
 A pointer to a <a href="devtest.recorder_log_create_params">RECORDER_LOG_CREATE_PARAMS</a> structure.
 
+
 ### -param LogIdentifier [in, optional]
 
 String identifier for the log.
+
 
 ### -param LogIdentifierAppendPointer [in]
 
 A pointer from each debug message to its IFR’s metadata structure.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

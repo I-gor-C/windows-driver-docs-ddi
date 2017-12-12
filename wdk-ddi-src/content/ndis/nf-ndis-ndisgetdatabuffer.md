@@ -7,7 +7,7 @@ old-location: netvista\ndisgetdatabuffer.htm
 old-project: netvista
 ms.assetid: 784d4c32-a517-4219-8e22-a998e0e66d69
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisGetDataBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Call the
   <a href="netvista.net_buffer">NET_BUFFER</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ PVOID NdisGetDataBuffer(
 
 A pointer to a NET_BUFFER structure.
 
+
 ### -param BytesNeeded [in]
 
 The number of contiguous bytes of data requested.
+
 
 ### -param Storage [in, optional]
 
@@ -74,14 +77,17 @@ A pointer to a buffer, or <b>NULL</b> if no buffer is provided by the caller. Th
      requested data to the area indicated by 
      <i>Storage</i> .
 
+
 ### -param AlignMultiple [in]
 
 The alignment multiple expressed in power of two. For example, 2, 4, 8, 16, and so forth. If 
      <i>AlignMultiple</i> is 1, then there is no alignment requirement.
 
+
 ### -param AlignOffset [in]
 
 The offset, in bytes, from the alignment multiple.
+
 
 ## -returns
 <b>NdisGetDataBuffer</b> returns a pointer to the start of the contiguous data or it returns <b>NULL</b>.
@@ -99,6 +105,7 @@ If the requested data in the buffer is contiguous, the return value is a pointer
 
 The return value can also be <b>NULL</b> due to a low resource condition where a data buffer cannot be mapped. This may occur even if the data is contiguous or the <i>Storage</i> parameter is non-<b>NULL</b>.
 
+
 ## -remarks
 Call this function to get a pointer to a network data header contained in the 
     <a href="netvista.net_buffer">NET_BUFFER</a> structure. You can easily parse the
@@ -110,11 +117,13 @@ The requested alignment requirement is expressed as a power-of-two multiple plus
     <i>AlignOffset</i> is 3 then the data address should be a multiple of 4 plus 3. If necessary, NDIS will
     allocate memory to satisfy the alignment requirement.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -125,14 +134,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -153,14 +166,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -178,5 +194,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetDataBuffer function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetDataBuffer function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

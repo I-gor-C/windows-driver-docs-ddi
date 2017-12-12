@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # D3D9Types.h header
 
+## -description
 
 This header is used by Display. For more information, see
 - [Display](../_display/index.md)
@@ -11,4 +16,10 @@ D3D9Types.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [D3DDEVINFO_VCACHE structure](ns-d3d9types--d3ddevinfo-vcache.md) | DirectX 8.1 and later versions only. The D3DDEVINFO_VCACHE structure describes vertex-cache information of a device. |
+| [_D3DDEVINFO_VCACHE structure](ns-d3d9types-_d3ddevinfo_vcache.md) | DirectX 8.1 and later versions only. The D3DDEVINFO_VCACHE structure describes vertex-cache information of a device. |
+
+## Enumerations
+
+| Title   | Description   |
+| ---- |:---- |
+| [_D3DRENDERSTATETYPE enumeration](ne-d3d9types-_d3drenderstatetype.md) | The D3DRENDERSTATETYPE enumerated type lists a variety of attributes, or render states. |

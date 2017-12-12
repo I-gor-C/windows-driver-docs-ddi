@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputdupl_snapshot.htm
 old-project: display
 ms.assetid: bec6a398-34e8-4c03-ac15-c3f00645eac7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_OUTPUTDUPL_SNAPSHOT, D3DKMT_OUTPUTDUPL_SNAPSHOT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Provides information on the current processes in which output duplication is occurring.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _D3DKMT_OUTPUTDUPL_SNAPSHOT {
 
 [in/out] The size, in bytes, of the entire structure.
 
+
 ### -field SessionProcessCount
 
 [out] The number of processes in this session that are currently duplicating output. The value of <b>NumOutputDuplContexts</b> specifies the maximum possible number of processes.
+
 
 ### -field SessionActiveConnectionsCount
 
 [out] The total number of active contexts in this session. The value may be more than the number of active contexts in the 2-D array, which are per adapter.
 
+
 ### -field NumVidPnSources
 
 [out] The number of video present network (VidPN) sources.
+
 
 ### -field NumOutputDuplContexts
 
 [out] The number of contexts in which output duplication is occurring.
 
+
 ### -field OutputDuplDebugInfos
 
 Reserved for system use. Set to zero.
+
 
 ## -remarks
 
@@ -89,22 +96,27 @@ Reserved for system use. Set to zero.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

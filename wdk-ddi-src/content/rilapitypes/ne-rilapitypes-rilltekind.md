@@ -7,7 +7,7 @@ old-location: netvista\rilltekind_2.htm
 old-project: netvista
 ms.assetid: ab80e0a2-d404-4333-8a3e-f8e74d8c7f20
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILLTEKIND, RILLTEKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -88,6 +89,7 @@ typedef enum _RILLTEKIND {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

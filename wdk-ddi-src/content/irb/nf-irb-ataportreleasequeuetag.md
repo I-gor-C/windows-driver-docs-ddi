@@ -7,7 +7,7 @@ old-location: storage\ataportreleasequeuetag.htm
 old-project: storage
 ms.assetid: 54399050-740f-4af8-ad85-cd3060f14af4
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortReleaseQueueTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortReleaseQueueTag</b> routine releases the specified queue tag.
 
 
+
 ## -syntax
 
 ````
@@ -59,29 +60,36 @@ VOID AtaPortReleaseQueueTag(
 
 A pointer to the channel extension.
 
+
 ### -param TargetId [in]
 
 Specifies the target identifier of the device.
+
 
 ### -param Lun [in]
 
 Specifies the logical unit number of the device.
 
+
 ### -param QueueTag [in]
 
 Specifies the queue tag to be freed.
 
+
 ## -returns
 None 
 
+
 ## -remarks
 The miniport driver should call <b>AtaPortReleaseQueueTag</b> to free allocated queue tags by using <a href="storage.ataportallocatequeuetag">AtaPortAllocateQueueTag</a>. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +100,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +111,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +132,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortReleaseQueueTag routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortReleaseQueueTag routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

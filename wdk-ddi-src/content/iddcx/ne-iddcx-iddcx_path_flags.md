@@ -7,7 +7,7 @@ old-location: display\iddcx_path_flags.htm
 old-project: display
 ms.assetid: f7a9b20a-753c-487d-a2d5-3e1c08317519
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_PATH_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Indicates the state of the path.
                 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,20 @@ typedef enum _IDDCX_PATH_FLAGS {
                         
                     Indicates that the path is not active and has not changed.
 
+
 ### -field IDDCX_PATH_FLAGS_CHANGED
 
 
                         Indicates if this path has changed
                     
 
+
 ### -field IDDCX_PATH_FLAGS_ACTIVE
 
 
                         Indicates if this path is active
                     
+
 
 ## -remarks
 
@@ -82,6 +86,7 @@ typedef enum _IDDCX_PATH_FLAGS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

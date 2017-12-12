@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>KsSetDefaultClockTime</b> function sets the current time of the clock. It modifies the current time returned by the clock. The owner of the default clock is expected to serialize access to this function and to the <a href="stream.kssetdefaultclockstate">KsSetDefaultClockState</a> function.
+
 The function can be called at DISPATCH_LEVEL.
+
 
 
 ## -syntax
@@ -58,12 +60,15 @@ VOID KsSetDefaultClockTime(
 
 Specifies an initialize default clock structure that is shared among instances of the default clock for the parent. 
 
+
 ### -param Time [in]
 
 Specifies the new time to set the clock. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 
@@ -73,6 +78,7 @@ None
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +100,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -109,5 +117,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsSetDefaultClockTime function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: netvista\dot11_wfd_configuration_timeout.htm
 old-project: netvista
 ms.assetid: 5432EB69-933A-4080-919F-4131DC4044D0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT
+ms.date: 12/8/2017
+ms.keywords: _DOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -56,9 +56,11 @@ typedef struct _DOT11_WFD_CONFIGURATION_TIMEOUT {
 
 The time, in milliseconds, allowed to configure as a Group Owner (GO). The miniport must convert this value to the correct units before including it in a Peer-to-Peer Information Element (P2P IE).
 
+
 ### -field ClientTimeout
 
 The time, in milliseconds, allowed to configure as a client. The miniport must convert this value to the correct units before including it in a P2P IE.
+
 
 ## -remarks
 
@@ -68,14 +70,17 @@ The time, in milliseconds, allowed to configure as a client. The miniport must c
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

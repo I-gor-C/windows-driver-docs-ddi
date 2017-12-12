@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfinstaller.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,7 +16,7 @@ Wdfinstaller.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_COINSTALLER_INSTALL_OPTIONS_INIT function](nf-wdfinstaller-wdf-coinstaller-install-options-init.md) | The WDF_COINSTALLER_INSTALL_OPTIONS_INIT function initializes a WDF_COINSTALLER_INSTALL_OPTIONS structure. |
+| [WDF_COINSTALLER_INSTALL_OPTIONS_INIT function](nf-wdfinstaller-wdf_coinstaller_install_options_init.md) | The WDF_COINSTALLER_INSTALL_OPTIONS_INIT function initializes a WDF_COINSTALLER_INSTALL_OPTIONS structure. |
 | [WdfPostDeviceInstall function](nf-wdfinstaller-wdfpostdeviceinstall.md) | The co-installer's WdfPostDeviceInstall function performs any operations that the co-installer might require after a non-Plug and Play (PnP) driver's installer has created the driver's kernel-mode service. |
 | [WdfPostDeviceRemove function](nf-wdfinstaller-wdfpostdeviceremove.md) | The co-installer's WdfPostDeviceRemove function performs any operations that the co-installer might require after a non-Plug and Play (PnP) driver's installer has deleted the driver's kernel-mode service. |
 | [WdfPreDeviceInstall function](nf-wdfinstaller-wdfpredeviceinstall.md) | The co-installer's WdfPreDeviceInstall function performs any operations that the co-installer might require before a non-Plug and Play (PnP) driver's installer creates the driver's kernel-mode service. |
@@ -22,4 +27,4 @@ Wdfinstaller.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_COINSTALLER_INSTALL_OPTIONS structure](ns-wdfinstaller--wdf-coinstaller-install-options.md) | The WDF_COINSTALLER_INSTALL_OPTIONS structure contains installation options that a framework-based driver's installer can specify to the framework's co-installer. |
+| [_WDF_COINSTALLER_INSTALL_OPTIONS structure](ns-wdfinstaller-_wdf_coinstaller_install_options.md) | The WDF_COINSTALLER_INSTALL_OPTIONS structure contains installation options that a framework-based driver's installer can specify to the framework's co-installer. |

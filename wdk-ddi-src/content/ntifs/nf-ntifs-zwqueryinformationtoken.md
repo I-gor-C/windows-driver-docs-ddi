@@ -7,7 +7,7 @@ old-location: kernel\zwqueryinformationtoken.htm
 old-project: kernel
 ms.assetid: 554b541b-943a-413e-9803-7dba17d0c6ce
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwQueryInformationToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>ZwQueryInformationToken</b> routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. 
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ NTSTATUS ZwQueryInformationToken(
 
 Handle for an access token from which information is to be retrieved. If <i>TokenInformationClass</i> is set to <b>TokenSource</b>, the handle must have TOKEN_QUERY_SOURCE access. For all other <i>TokenInformationClass</i> values, the handle must have TOKEN_QUERY access. For more information about access rights for access-token objects, see the Security section of the Windows SDK documentation.
 
+
 ### -param TokenInformationClass [in]
 
 A value from the <a href="ifsk.token_information_class">TOKEN_INFORMATION_CLASS</a> enumerated type identifying the type of information to be retrieved. The possible values for this parameter are listed in the <i>TokenInformationClass</i> Value column of the table shown in the description of the <i>TokenInformation</i> parameter.
 
+
 ### -param TokenInformation [out]
 
 Pointer to a caller-allocated buffer that receives the requested information about the token. The structure put into this buffer depends upon the value of <i>TokenInformationClass</i>, as shown in the following table. All structures must be aligned on a 32-bit boundary.
+
 <table>
 <tr>
 <th><i>TokenInformationClass</i> Value</th>
@@ -75,107 +79,134 @@ Pointer to a caller-allocated buffer that receives the requested information abo
 <tr>
 <td>
 <b>TokenDefaultDacl</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_default_dacl">TOKEN_DEFAULT_DACL</a> structure containing the default <a href="ifsk.acl">DACL</a> for newly created objects. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenGroups</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_groups">TOKEN_GROUPS</a> structure containing the group accounts associated with the token.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenImpersonationLevel</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a> value indicating the impersonation level of the token. If the access token is not an impersonation token, the call to <b>ZwQueryInformationToken</b> fails. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenOwner</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_owner">TOKEN_OWNER</a> structure containing the default owner <a href="ifsk.sid">SID</a> for newly created objects.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenPrimaryGroup</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_primary_group">TOKEN_PRIMARY_GROUP</a> structure containing the default primary group SID for newly created objects. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenPrivileges</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_privileges">TOKEN_PRIVILEGES</a> structure containing the token's privileges.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenSessionId</b>
+
 </td>
 <td>
 The buffer receives a 32-bit value specifying the Terminal Services session identifier associated with the token. If the token is associated with the Terminal Server console session, the session identifier is zero. A nonzero session identifier indicates a Terminal Services client session. In a non-Terminal Services environment, the session identifier is zero.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenSource</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_source">TOKEN_SOURCE</a> structure containing the source of the token. TOKEN_QUERY_SOURCE access is needed to retrieve this information.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenStatistics</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_statistics">TOKEN_STATISTICS</a> structure containing various token statistics.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenType</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_type">TOKEN_TYPE</a> value indicating whether the token is a primary or impersonation token. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>TokenUser</b>
+
 </td>
 <td>
 The buffer receives a <a href="ifsk.token_user">TOKEN_USER</a> structure containing the token's user account. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param TokenInformationLength [in]
 
 Length, in bytes, of the caller-allocated <i>TokenInformation</i> buffer. 
 
+
 ### -param ReturnLength [out]
 
 Pointer to a caller-allocated variable that receives the actual length, in bytes, of the information returned in the <i>TokenInformation</i> buffer. If either of the following conditions is true, no data is returned in the <i>TokenInformation</i> buffer: 
+
 <ul>
 <li>
 The size of the requested token information structure is greater than <i>TokenInformationLength</i>. In this case, <i>ReturnLength</i> receives the actual number of bytes needed to store the requested information. 
+
 </li>
 <li>
 The value of <i>TokenInformationClass</i> is <b>TokenDefaultDacl</b>, and there is no default DACL established for the token. In this case, <i>ReturnLength</i> receives zero. 
+
 </li>
 </ul>
 
@@ -199,6 +230,7 @@ The value of <i>TokenInformationClass</i> is <b>TokenDefaultDacl</b>, and there 
 
  
 
+
 ## -remarks
 The <b>ZwQueryInformationToken</b> routine can be used by a file system or file system filter driver to determine the <a href="ifsk.sid">SID</a> of the caller that initiated the request during <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a> processing. If <b>TokenUser</b> is specified for the <i>TokenInformationClass</i> parameter passed to <b>ZwQueryInformationToken</b>, a <a href="ifsk.token_user">TOKEN_USER</a> structure is returned in the buffer pointed to by the <i>TokenInformation</i> parameter. This returned buffer contains an <a href="ifsk.sid_and_attributes">SID_AND_ATTRIBUTES</a> structure with the user <b>SID</b>.
 
@@ -206,11 +238,13 @@ For more information about security and access control, see the documentation on
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -221,14 +255,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -239,6 +276,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -249,6 +287,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -259,14 +298,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -332,5 +374,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationToken routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationToken routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

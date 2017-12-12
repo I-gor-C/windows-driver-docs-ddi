@@ -7,7 +7,7 @@ old-location: display\ioctl_video_query_supported_brightness.htm
 old-project: display
 ms.assetid: 00d549b1-9aa1-4d3d-8d23-209b0efaf639
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql:
 
 This IOCTL is not handled by video miniport drivers. It is handled entirely by the system-supplied video port driver.
 
+
+
 This IOCTL is not handled by video miniport drivers. It is handled entirely by the system-supplied video port driver.
+
 
 
 ## -ioctlparameters
@@ -84,6 +87,7 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

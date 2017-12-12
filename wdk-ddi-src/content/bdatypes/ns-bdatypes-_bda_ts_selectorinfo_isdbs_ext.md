@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: F56D4984-B159-4068-8081-3E2457E50998
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_TS_SELECTORINFO_ISDBS_EXT, *PBDA_TS_SELECTORINFO_ISDBS_EXT, BDA_TS_SELECTORINFO_ISDBS_EXT
+ms.keywords: _BDA_TS_SELECTORINFO_ISDBS_EXT, BDA_TS_SELECTORINFO_ISDBS_EXT, *PBDA_TS_SELECTORINFO_ISDBS_EXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef struct _BDA_TS_SELECTORINFO_ISDBS_EXT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: wdf\iwdfrequestcompletionparams.htm
 old-project: wdf
 ms.assetid: f297c6e0-927a-4fb3-bab4-00fdd610a684
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IWDFRequestCompletionParams</b> interface exposes methods that drivers can use to obtain completion information about an I/O request. Drivers can call these methods after a synchronous or an asynchronous I/O operation completes.
+
 
 
 ## -inheritance
@@ -56,6 +58,7 @@ The <a href="wdf.iwdfrequestcompletionparams_getinformation">GetInformation</a> 
 
  
 
+
 ## -members
 The <b>IWDFRequestCompletionParams</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -69,6 +72,7 @@ The <b>IWDFRequestCompletionParams</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfrequestcompletionparams_getcompletedrequesttype">GetCompletedRequestType</a> method retrieves the type of operation that the request to be completed contains.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -77,6 +81,7 @@ The <a href="wdf.iwdfrequestcompletionparams_getcompletedrequesttype">GetComplet
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfrequestcompletionparams_getcompletionstatus">GetCompletionStatus</a> method retrieves the completion status of an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -85,6 +90,7 @@ The <a href="wdf.iwdfrequestcompletionparams_getcompletionstatus">GetCompletionS
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfrequestcompletionparams_getinformation">GetInformation</a> method retrieves information that is associated with the completion of an I/O request.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfrequestcompletionparams_getcompletedrequesttype">GetCompletedRequestType</a> method retrieves the type of operation that the request to be completed contains.
@@ -95,6 +101,7 @@ The <a href="wdf.iwdfrequestcompletionparams_getinformation">GetInformation</a> 
 
  
 
+
 ## -remarks
 
 
@@ -103,6 +110,7 @@ The <a href="wdf.iwdfrequestcompletionparams_getinformation">GetInformation</a> 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,22 +121,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +152,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

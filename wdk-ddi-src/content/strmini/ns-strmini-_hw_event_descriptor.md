@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 When the class driver calls one of the minidriver's <a href="stream.strminievent">StrMiniEvent</a> routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. 
 
 
+
 ## -syntax
 
 ````
@@ -70,26 +71,33 @@ typedef struct _HW_EVENT_DESCRIPTOR {
 
 This is set to <b>TRUE</b> for an enabled event, and <b>FALSE</b> for a disabled event.
 
+
 ### -field EventEntry
 
 Points to the <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure that describes this event.
+
 
 ### -field EventData
 
 Points to the <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes this instance of the event.
 
+
 ### -field StreamObject
 
 Points to the <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a> for the stream that owns the event that the class driver is enabling/disabling, or <b>NULL</b> if the event belongs to the driver as a whole.
+
 
 ### -field DeviceExtension
 
 Points to the minidriver's device extension.
 
+
 ### -field EnableEventSetIndex
 
 For stream events, this specifies the index of the event set within the <b>StreamEventsArray</b> member of the stream's <a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a> structure.
+
 For device events, this specifies the index of the event set within the <b>DeviceEventsArray</b> member of the minidriver's <a href="stream.hw_stream_header">HW_STREAM_HEADER</a> structure.
+
 
 ### -field HwInstanceExtension
 
@@ -97,13 +105,16 @@ Pointer to the minidriver's instance extension. The minidriver may use this buff
 
 
 
+
 ### -field Reserved
 
 Reserved for system use. Do not use.
 
+
 ### -field Reserved[2]
 
 Reserved for system use. Do not use.
+
 
 ## -remarks
 
@@ -113,6 +124,7 @@ Reserved for system use. Do not use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

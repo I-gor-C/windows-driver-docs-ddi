@@ -7,7 +7,7 @@ old-location: kernel\zwsetinformationvirtualmemory.htm
 old-project: kernel
 ms.assetid: 1D53D6C6-7546-439F-818C-85E65901B5DC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwSetInformationVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>ZwSetInformationVirtualMemory</b> routine performs an operation on a specified list of address ranges in the user address space of a process. 
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ NTSTATUS ZwSetInformationVirtualMemory(
 
 Specifies an open handle for the process in the context of which the operation is to be performed. This handle cannot be invalid. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556482">NtCurrentProcess</a> macro, defined in Ntddk.h, to specify the current process.
 
+
 ### -param VmInformationClass [in]
 
 Specifies the type of operation to perform. Set to  <b>VmPrefetchInformation</b> defined in the <b>VIRTUAL_MEMORY_INFORMATION_CLASS</b> enumeration, see ntddk.h. 
+
 
 ### -param NumberOfEntries [in]
 
  Number of entries in the array pointed to by the <i>VirtualAddresses</i> parameter. This parameter cannot be 0.
 
+
 ### -param VirtualAddresses [in]
 
  Pointer to an array of MEMORY_RANGE_ENTRY structures in which each entry specifies a virtual address range to be processed. The virtual address ranges may cover any part of the process address space accessible by the target process.
+
 
 ### -param VmInformation [in]
 
@@ -79,15 +84,20 @@ A pointer to a buffer that contains memory information.
                     The format and content of the buffer depend on the
                     specified information class.
 
+
 If <i>VmInformationClass</i> is  <b>VmPrefetchInformation</b>, this parameter cannot be this parameter cannot be NULL and must point to a ULONG variable that is set to 0.
+
 
 ### -param VmInformationLength [in]
 
 The size of the buffer pointed to by  <i>VmInformation</i>. 
+
 If <i>VmInformationClass</i> is <b>VmPrefetchInformation</b>, this must be <code>sizeof (ULONG)</code>. 
+
 
 ## -returns
 <b>ZwSetInformationVirtualMemory</b> returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on failure. 
+
 
 ## -remarks
 The <b>ZwSetInformationVirtualMemory</b> routine is called by drivers that know the set of addresses they will be accessing. If it's likely that these addresses are no longer resident in memory (i.e. they have been paged out to disk), calling this routine on those address ranges before access reduces the overall latency because it efficiently brings in those address ranges from disk using large, concurrent I/O requests where possible.
@@ -105,11 +115,13 @@ Drivers call this routine  purely for performance optimization: prefetching is n
 Because this call is  not necessary for correct operation of the driver, it is treated as a strong hint by the system and is subject to usual physical memory constraints where it can completely or partially fail under low-memory conditions. It can also create memory pressure if called with large address ranges, so applications should only prefetch address ranges they will actually use.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,14 +132,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1511.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,6 +153,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -148,6 +164,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -158,14 +175,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>

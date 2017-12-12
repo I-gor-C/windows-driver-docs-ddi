@@ -7,7 +7,7 @@ old-location: netvista\pd_buffer.htm
 old-project: netvista
 ms.assetid: 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER, PD_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _PD_BUFFER structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
+
 
 
 ## -syntax
@@ -121,21 +122,26 @@ typedef struct _PD_BUFFER {
 
 A pointer to the next <b>PD_BUFFER</b> structure in the queue.
 
+
 ### -field NextPartialPDBuffer
 
 A pointer to the next partial <b>PD_BUFFER</b> structure in the queue.
+
 
 ### -field PDClientReserved
 
 Reserved for system use. Do not use.
 
+
 ### -field PDClientContext
 
 The client and the provider are not allowed to modify this field.      If a client has allocated the <b>PD_BUFFER</b> with a non-zero value for      ClientContextSize, then the PDClientContext refers to a buffer size      of ClientContextSize. Otherwise, this field is NULL.
 
+
 ### -field DataBufferVirtualAddress
 
 This field represents the address that hosts and software can use to access/modify the packet contents. The actual packet data is always at  DataBufferVirtualAddress+DataStart. The provider and the      platform never modify the value of this field after the <b>PD_BUFFER</b>      initialization.
+
 
 ### -field DataBufferDmaLogicalAddress
 
@@ -145,20 +151,24 @@ must use for DMA. The actual packet data is always at
     platform must never modify the value of this field after the <b>PD_BUFFER</b>
     initialization.
 
+
 ### -field DataBufferSize
 
 This is the total size of the allocated data buffer. The provider and the platform must never modify the value of this field
     after the <b>PD_BUFFER</b> initialization. This data type is <b>ULONG</b> instead of
     <b>USHORT</b> because of large send offload.
 
+
 ### -field PDClientContextSize
 
 When this value is non-zero, it is the size of the buffer pointed to by PDClientContext.
     The value of this field must only be modified by the platform. The platform does not change the value of this field after the <b>PD_BUFFER</b> allocation.
 
+
 ### -field Attributes
 
 The attributes must never be modified by the provider. The table below lists attributes that this <b>PD_BUFFER</b> structure can have.
+
 <table>
 <tr>
 <th>Attribute</th>
@@ -173,9 +183,11 @@ or providers.</td>
 </table>
  
 
+
 ### -field Flags
 
 The following table lists flags that this <b>PD_BUFFER</b> structure can have.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -188,6 +200,7 @@ The following table lists flags that this <b>PD_BUFFER</b> structure can have.
 </table>
  
 
+
 ### -field DataStart
 
 This field denotes where the packet starts relative to the original starting address of the allocated data buffer. The provider must never modify this field. The provider adds this value to the
@@ -197,9 +210,11 @@ This field denotes where the packet starts relative to the original starting add
     must be set to DataBufferDmaLogicalAddress+DataStart when a <b>PD_BUFFER</b>
     is posted to a receive/transmit queue.
 
+
 ### -field DataLength
 
 The length of the this packet or partial packet data.
+
 
 ### -field MetaDataV0
 
@@ -211,155 +226,193 @@ The provider sets this to the filter context value obtained
                 queue. Filter context values are specified by the clients
                 when configuring filters.
 
+
 ### -field GftFlowEntryId
 
 If one of the RxGftExceptionPacket or RxGftCopyPacket or RxGftSamplePacket bits are set, the RxFilterContext value is
                 overwritten with a GFT flow entry Id value.
+
 
 ### -field RxHashValue
 
 The hash value computed for the incoming packet
             that is steered to the receive queue using RSS.
 
+
 ### -field RxIPHeaderChecksumSucceeded
 
 A common RX offload field that indicates if the IP header checksum succeeded.
+
 
 ### -field RxTCPChecksumSucceeded
 
 A common RX offload field that indicates if the TCP checksum succeeded.
 
+
 ### -field RxUDPChecksumSucceeded
 
 A common RX offload field that indicates if the UDP checksum succeeded.
+
 
 ### -field RxIPHeaderChecksumFailed
 
 A common RX offload field that indicates if the IP header checksum failed.
 
+
 ### -field RxTCPChecksumFailed
 
 A common RX offload field that indicates if the TCP checksum failed.
+
 
 ### -field RxUDPChecksumFailed
 
 A common RX offload field that indicates if the UDP checksum failed.
 
+
 ### -field RxHashComputed
 
 A common RX offload field that indicates if the hash is computed.
+
 
 ### -field RxHashWithL4PortNumbers
 
 A common RX offload field that indicates the hash is computed with L4 port numbers.
 
+
 ### -field RxGftExceptionPacket
 
 A common RX offload field that indicates this is a GFT exception packet.
+
 
 ### -field RxGftCopyPacket
 
 A common RX offload field that indicates this is a GFT copy packet.
 
+
 ### -field RxGftSamplePacket
 
 A common RX offload field that indicates this is a GFT sample packet.
+
 
 ### -field RxReserved1
 
 Reserved.
 
+
 ### -field RxCoalescedSegCount
 
 A common RX offload field that contains the amount of coalesced segments.
+
 
 ### -field RxRscTcpTimestampDelta
 
 A common RX offload field that contains RSC and TCP timestamp difference.
 
+
 ### -field RxOffloads
 
 RX offloads for this buffer.
+
 
 ### -field TxIsIPv4
 
 A common TX offload field that indicates this packet is IPv4.
 
+
 ### -field TxIsIPv6
 
 A common TX offload field that indicates this packet is IPv6.
+
 
 ### -field TxTransportHeaderOffset
 
 A common TX offload field that contains the packet's header offset.
 
+
 ### -field TxMSS
 
 A common TX offload field that contains the maximum segment size of this packet.
+
 
 ### -field TxComputeIPHeaderChecksum
 
 A common TX offload field that indicates the IP header checksum is computed.
 
+
 ### -field TxComputeTCPChecksum
 
 A common TX offload field that indicates the TCP checksum is computed.
+
 
 ### -field TxComputeUDPChecksum
 
 A common TX offload field that indicates the UDP checksum is computed.
 
+
 ### -field TxIsEncapsulatedPacket
 
 A common TX offload field that indicates the packet is encapsulated.
+
 
 ### -field TxInnerPacketOffsetsValid
 
 A common TX offload field that indicates the inner packet offsets are valid.
 
+
 ### -field TxReserved1
 
 Reserved.
+
 
 ### -field TxInnerFrameOffset
 
 A common TX offload field that contains the inner frame offset.
 
+
 ### -field TxInnerIpHeaderRelativeOffset
 
 A common TX offload field that contains the inner IP header relative offset.
+
 
 ### -field TxInnerIsIPv6
 
 A common TX offload field that indicates the inner packet is IPv6.
 
+
 ### -field TxInnerTcpOptionsPresent
 
 A common TX offload field that indicates the inner TCP options are present.
+
 
 ### -field TxOffloads
 
 TX offloads for this buffer.
 
+
 ### -field VirtualSubnetInfo
 
 The virtual subnet information.
+
 
 ### -field Ieee8021qInfo
 
 The IEEE 802.1Q information.
 
+
 ### -field GftSourceVPortId
 
 The GFT source virtual port ID.
+
 
 ### -field Reserved
 
 Reserved for system use.
 
+
 ### -field ProviderScratch
 
 A scratch field that the PD provider can use for its own purposes while the PD_BUFFER is sitting in the provider queue (in other words, posted by the client but not yet drained back by the client). Once the PD_BUFFER is drained by the client, there is no guarantee that the contents of this field will be preserved.
+
 </dd>
 </dl>
 
@@ -384,27 +437,33 @@ When posting <b>PD_BUFFER</b> structures to receive queues, DataLength is ignore
     of the packet to be sent. When draining completed <b>PD_BUFFER</b> structures from
     transmit queues, the provider leaves the DataLength field unmodified.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

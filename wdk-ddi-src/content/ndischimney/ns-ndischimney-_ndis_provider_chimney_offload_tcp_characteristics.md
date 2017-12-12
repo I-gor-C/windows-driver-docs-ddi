@@ -7,8 +7,8 @@ old-location: netvista\ndis_provider_chimney_offload_tcp_characteristics.htm
 old-project: netvista
 ms.assetid: 3eabbad5-b84b-4034-a0b6-d4d515cbc117
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,8 +39,10 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure specifies an offload target's TCP
   chimney offload-specific entry points.
+
 
 
 ## -syntax
@@ -71,14 +73,17 @@ The header of the NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure. T
      NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure, including the header, in bytes. The 
      <b>Type</b> member of the header is not significant.
 
+
 ### -field Flags
 
 Reserved for system use.
+
 
 ### -field OffloadType
 
 The chimney offload type. The only allowable value is 
      <b>NdisTcpChimneyOffload</b>, which specifies a TCP chimney.
+
 
 ### -field TcpOffloadSendHandler
 
@@ -86,11 +91,13 @@ The entry point of the driver's
      <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_send_handler.md">
      MiniportTcpOffloadSend</a> function.
 
+
 ### -field TcpOffloadReceiveHandler
 
 The entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
      MiniportTcpOffloadReceive</a> function.
+
 
 ### -field TcpOffloadDisconnectHandler
 
@@ -98,17 +105,20 @@ The entry point of the driver's
      <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
      MiniportTcpOffloadDisconnect</a> function.
 
+
 ### -field TcpOffloadForwardHandler
 
 The entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_forward_handler.md">
      MiniportTcpOffloadForward</a> function.
 
+
 ### -field TcpOffloadReceiveReturnHandler
 
 The entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_return_handler.md">
      MiniportTcpOffloadReceiveReturn</a> function.
+
 
 ## -remarks
 To register its TCP chimney offload-specific entry points, an offload target calls the 
@@ -118,11 +128,13 @@ To register its TCP chimney offload-specific entry points, an offload target cal
     <b>NdisSetOptionalHandlers</b> function, the offload target passes a pointer to the
     NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,5 +174,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

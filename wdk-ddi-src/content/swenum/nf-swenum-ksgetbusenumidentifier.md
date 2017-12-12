@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <i>This function is intended for internal use only.</i>
+
 The <b>KsGetBusEnumIdentifier</b> function retrieves the software bus enumerator identifier for the bus device associated with the given IRP. 
+
 
 
 ## -syntax
@@ -58,6 +60,7 @@ NTSTATUS KsGetBusEnumIdentifier(
 
 Pointer to the IRP that specifies the address and size of the user output buffer to receive the requested bus enumerator identifier.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the bus enumerator identifier was retrieved successfully. Otherwise, it returns one of the following values:
 <dl>
@@ -72,6 +75,7 @@ Returns STATUS_SUCCESS if the bus enumerator identifier was retrieved successful
 
  
 
+
 ## -remarks
 
 
@@ -80,6 +84,7 @@ Returns STATUS_SUCCESS if the bus enumerator identifier was retrieved successful
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,6 +95,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +106,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

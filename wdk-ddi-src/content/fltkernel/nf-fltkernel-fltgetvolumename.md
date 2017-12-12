@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetVolumeName</b> routine gets the volume name for a given volume. 
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,18 @@ NTSTATUS FltGetVolumeName(
 
 An opaque pointer for the volume. 
 
+
 ### -param VolumeName [in, out, optional]
 
 A pointer to a caller-allocated <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the volume's non-persistent device object name (for example, "\Device\HarddiskVolume1") when STATUS_SUCCESS is returned.  Be aware that pool for the <b>Buffer</b> member of this structure is caller-allocated also. This parameter is optional and can be <b>NULL</b>. However, <i>VolumeName</i> must be non-<b>NULL</b> if <i>BufferSizeNeeded</i> is <b>NULL</b>.
 
+
 ### -param BufferSizeNeeded [out, optional]
 
 A pointer to a caller-allocated variable that receives the size, in bytes, of the requested volume name.   If <b>FltGetVolumeName</b> returns STATUS_BUFFER_TOO_SMALL, <i>BufferSizeNeeded</i> receives the size of the buffer (pointed to by the <b>Buffer</b> member of the UNICODE_STRING structure) that is required for this routine to succeed.
+
 <i>BufferSizeNeeded</i> is optional and can be <b>NULL</b>. However, <i>BufferSizeNeeded</i> must be non-<b>NULL</b> if <i>VolumeName</i> is <b>NULL</b>.
+
 
 ## -returns
 <b>FltGetVolumeName</b> returns one of the following NTSTATUS values:
@@ -81,6 +86,7 @@ A pointer to a caller-allocated variable that receives the size, in bytes, of th
 
  
 
+
 ## -remarks
 For this routine to succeed, the <b>Buffer</b> member of the UNICODE_STRING structure (pointed to by <i>VolumeName</i>) must be large enough, as indicated by its <b>MaximumLength</b> member, to contain the entire volume name string.  The following pseudocode shows one possible method to successfully acquire a volume name:
 
@@ -94,11 +100,13 @@ To get an opaque volume pointer for a volume with a given name, call <a href="if
 
 For more information about how to name a volume, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -109,6 +117,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -129,6 +139,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -139,9 +150,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -162,5 +175,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

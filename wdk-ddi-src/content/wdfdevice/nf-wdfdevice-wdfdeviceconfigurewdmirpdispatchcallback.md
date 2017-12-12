@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceconfigurewdmirpdispatchcallback.htm
 old-project: wdf
 ms.assetid: 594E0FF1-A965-4CE4-A2EA-C9098685FCED
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDeviceConfigureWdmIrpDispatchCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method registers a driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a> callback function.
+
 
 
 ## -syntax
@@ -62,21 +64,26 @@ NTSTATUS WdfDeviceConfigureWdmIrpDispatchCallback(
 
 A handle to a framework device object.
 
+
 ### -param Driver [in, optional]
 
 A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="wdf.wdfdrivercreate">WdfDriverCreate</a> or <a href="wdf.wdfgetdriver">WdfGetDriver</a>.  This parameter is optional.
+
 
 ### -param MajorFunction [in]
 
 One of the following IRP major function codes: IRP_MJ_DEVICE_CONTROL, IRP_MJ_INTERNAL_DEVICE_CONTROL, IRP_MJ_READ, IRP_MJ_WRITE.
 
+
 ### -param EvtDeviceWdmIrpDispatch [in]
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a> callback function.
 
+
 ### -param DriverContext [in, optional]
 
 An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a> callback function. This parameter is optional and can be NULL.
+
 
 ## -returns
 If the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
@@ -88,6 +95,7 @@ If the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method encounters no erro
 </dl>Insufficient memory was available.
 
  
+
 
 ## -remarks
 A driver calls the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method to register an <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a> callback function. The framework then calls <i>EvtDeviceWdmIrpDispatch</i> whenever it receives an I/O request packet (IRP) containing an IRP major function code that matches the <i>MajorFunction</i> parameter of this method.
@@ -104,11 +112,13 @@ A driver might call the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method f
 
  For more information about specifying queues for IRPs as they arrive, see <a href="wdf.dispatching_irps_to_i_o_queues">Dispatching IRPs to I/O Queues</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,22 +129,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.11
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.17
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +160,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -156,14 +172,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>
@@ -184,5 +203,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceConfigureWdmIrpDispatchCallback method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceConfigureWdmIrpDispatchCallback method%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

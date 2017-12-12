@@ -7,7 +7,7 @@ old-location: netvista\dot11_invitation_response_send_complete_parameters.htm
 old-project: netvista
 ms.assetid: EE537A6E-6722-4829-986A-37D41B149E37
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,6 +59,7 @@ typedef struct _DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS {
 ### -field Header
 
 The type, revision, and size of the <b>DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -79,25 +80,31 @@ The type, revision, and size of the <b>DOT11_INVITATION_RESPONSE_SEND_COMPLETE_P
 </table>
  
 
+
 ### -field ReceiverDeviceAddress
 
 The address of the device that the invitation response was sent to. This must match the <b>ReceiverDeviceAddress</b> member of <a href="netvista.dot11_send_invitation_response_parameters">DOT11_SEND_INVITATION_RESPONSE_PARAMETERS</a> sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451807">OID_DOT11_WFD_SEND_INVITATION_RESPONSE</a> request.
+
 
 ### -field DialogToken
 
 The dialog token from the invitation response packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451807">OID_DOT11_WFD_SEND_INVITATION_RESPONSE</a> request.
 
+
 ### -field Status
 
 The status of the response send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted.
+
 
 ### -field uIEsOffset
 
 The offset, in bytes,  of the array of additional information elements (IEs) that were included in the invitation response packet. This offset is from the start of the buffer that contains this structure.
 
+
 ### -field uIEsLength
 
 The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+
 
 ## -remarks
 
@@ -107,14 +114,17 @@ The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,5 +147,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

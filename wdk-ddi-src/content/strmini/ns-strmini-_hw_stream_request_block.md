@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e2a19bb1-631d-4160-9980-f3cbeb0b085a
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _HW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK
+ms.keywords: _HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks.
+
 
 
 ## -syntax
@@ -92,26 +93,32 @@ typedef struct _HW_STREAM_REQUEST_BLOCK {
 
 Specifies the size, in bytes, of this structure.
 
+
 ### -field Command
 
 
       Specifies the operation to be performed by the minidriver's callback. The class driver passes SRB_XXX command codes to minidriver callbacks.
 
+
 ### -field Status
 
 When the minidriver completes a stream request, it fills this member with the status code of the request. See the documentation for the appropriate <b>StrMini</b><i>Xxx</i><b>Request</b> routine for the status codes minidrivers are expected to use.
+
 
 ### -field StreamObject
 
 For stream oriented requests, the class driver sets this to point to the <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a> structure that specifies the stream the class driver is making a request on.
 
+
 ### -field HwDeviceExtension
 
 Pointer to the minidriver's device extension. The minidriver may use this buffer to record private information. The minidriver sets the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
+
 ### -field SRBExtension
 
 Points to an uninitialized buffer the class driver allocates for the minidriver to use while processing this stream request block. This buffer is deallocated once the minidriver completes its handling of the block (see <a href="stream.streamclassdevicenotification">StreamClassDeviceNotification</a> or <a href="stream.streamclassstreamnotification">StreamClassStreamNotification</a> for details).
+
 
 ### -field CommandData
 
@@ -119,36 +126,46 @@ Points to an uninitialized buffer the class driver allocates for the minidriver 
       
      
 
+
 ### -field DataBufferArray
 
 Pointer to an array of <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structures. The number of entries in this array is specified in <b>NumberOfBuffers</b>. Each KSSTREAM_HEADER describes one block of data.
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a>
 
 or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568220">SRB_WRITE_DATA</a>.
+
 
 ### -field StreamBuffer
 
 Points to the <a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a> structure the minidriver fills in with a description of the kernel streaming semantics it supports.
 
+
 The minidriver specifies the size of this buffer in the <b>StreamDescriptorSize</b> member of its <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structure.
 
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568173">SRB_GET_STREAM_INFO</a>.
+
 
 ### -field StreamState
 
 
        The stream state.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565110">KSPROPERTY_CONNECTION_STATE</a> for details.
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568178">SRB_GET_STREAM_STATE</a>
 
 or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568210">SRB_SET_STREAM_STATE</a>.
+
 
 ### -field TimeReference
 
 A pointer to a STREAM_TIME_REFERENCE structure.
 
+
 ### -field PropertyInfo
 
 Points to the <a href="stream.stream_property_descriptor">STREAM_PROPERTY_DESCRIPTOR</a> structure that specifies the parameters for the property get or set operation.
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568170">SRB_GET_DEVICE_PROPERTY</a>,
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568204">SRB_SET_DEVICE_PROPERTY</a>,
@@ -157,50 +174,68 @@ This member is used when the command code is <a href="https://msdn.microsoft.com
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568207">SRB_SET_STREAM_PROPERTY</a>.
 
+
 ### -field OpenFormat
 
 Pointer to the <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that specifies the format.
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568191">SRB_OPEN_STREAM</a>
 
 or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568196">SRB_PROPOSE_DATA_FORMAT</a>.
 
+
 ### -field ConfigInfo
 
 Pointer to the <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structure used to initialize the device
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568185">SRB_INITIALIZE_DEVICE</a>.
+
 
 ### -field MasterClockHandle
 
 Handle for the clock object that now serves as the master clock.
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568190">SRB_OPEN_MASTER_CLOCK</a>
 
 or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568179">SRB_INDICATE_MASTER_CLOCK</a>.
 
+
 ### -field DeviceState
 
 Specifies the new power state.
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568157">SRB_CHANGE_POWER_STATE</a>.
+
 
 ### -field IntersectInfo
 
 Pointer to a <a href="stream.stream_data_intersect_info">STREAM_DATA_INTERSECT_INFO</a> structure that describes the parameters of this operation.
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a>.
+
 
 ### -field MethodInfo
 
 Pointer to a buffer that the method data will be read from or written to.  
+
 This member is available on Windows XP and later.
+
 
 ### -field FilterTypeIndex
 
 Filter type index for SRB_OPEN_DEVICE_INSTANCE.  
+
 This member is available on Windows XP and later.
+
 
 ### -field Idle
 
 This member is set to <b>TRUE</b> if no open handles to the device remain.  This member is set to <b>FALSE</b>  if the device is no longer idle (a handle to the device has been opened).
+
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568186">SRB_NOTIFY_IDLE_STATE</a>. 
+
   This member is available on Windows XP and later, except for Windows Server 2003.
+
 </dd>
 </dl>
 
@@ -208,25 +243,31 @@ This member is used when the command code is <a href="https://msdn.microsoft.com
 
 If Command is either <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568220">SRB_WRITE_DATA</a>, then this specifies the number of entries in the array of <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structures that begins at the address pointed to by <b>CommandData.DataBufferArray</b>. Otherwise this parameter is unused.
 
+
 ### -field TimeoutCounter
 
 The number of seconds before this request times out. The class driver decrements this once per second. If the class driver decrements <b>TimeoutCounter</b> to zero before the minidriver completes this request, it will call the minidriver's <a href="stream.strminirequesttimeout">StrMiniRequestTimeout</a> routine. If the minidriver sets this to zero, the request does not time out.
+
 
 ### -field TimeoutOriginal
 
 The class driver sets this to the original value of <b>TimeoutCounter</b> upon the creation of the SRB.
 
+
 ### -field NextSRB
 
 Points to another stream request block. The minidriver can use this member to queue stream request blocks.
+
 
 ### -field Irp
 
 Pointer to the IRP for the request. Most minidrivers do not need to use this member.
 
+
 ### -field Flags
 
 Specifies the type of request. The class driver and the minidriver can use this member to determine which callback the class driver passed this stream request block to.
+
 <table>
 <tr>
 <th>Value</th>
@@ -235,52 +276,64 @@ Specifies the type of request. The class driver and the minidriver can use this 
 <tr>
 <td>
 None
+
 </td>
 <td>
 
 <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a>
+
 
 </td>
 </tr>
 <tr>
 <td>
 SRB_HW_FLAGS_STREAM_REQUEST
+
 </td>
 <td>
 
 <a href="stream.strminireceivestreamcontrolpacket">StrMiniReceiveStreamControlPacket</a>
+
 
 </td>
 </tr>
 <tr>
 <td>
 SRB_HW_FLAGS_DATA_TRANSFER | SRB_HW_FLAGS_STREAM_REQUEST
+
 </td>
 <td>
 
 <a href="stream.strminireceivestreamdatapacket">StrMiniReceiveStreamDataPacket</a>
 
+
 </td>
 </tr>
 </table>
  
+
 SRB_HW_FLAGS_STREAM_REQUEST bit is set for stream-specific requests (which are passed to the minidriver's <b>StrMiniReceiveStream</b><i>Xxx</i><b>Packet</b> routines). The SRB_HW_FLAGS_DATA_TRANSFER bit is set for data transfer requests (which are passed to the minidriver's 
+
 
 ### -field HwInstanceExtension
 
 Pointer to the minidriver's instance extension. The minidriver may use this buffer to record private information global to this instance of the minidriver. The minidriver sets the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.
 
+
 ### -field NumberOfBytesToTransfer
 
 For a SRB_READ_DATA or SRB_WRITE_DATA request, the number of bytes to be transferred.
+
 
 ### -field ActualBytesTransferred
 
 For control requests, the number of bytes actually transferred. 
 
+
 ### -field ScatterGatherBuffer
 
 Points to an array of KSSCATTER_GATHER structures, of the form:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -296,17 +349,21 @@ Points to an array of KSSCATTER_GATHER structures, of the form:
 </table></span></div>
 The array describes a scatter/gather list that can be used by the minidriver to do DMA. The memory does not need to be probed, locked, mapped, or flushed -- the stream class driver performs these for the minidriver.
 
+
 ### -field NumberOfPhysicalPages
 
 Specifies the size of the array passed in the <b>ScatterGatherBuffer</b> member.
+
 
 ### -field NumberOfScatterGatherElements
 
 Specifies the number of physical elements pointed to by <b>ScatterGatherBuffer</b>.
 
+
 ### -field Reserved[1]
 
 Reserved for system use. Do not use.
+
 
 ## -remarks
 The stream class driver passes pointers to HW_STREAM_REQUEST_BLOCK structures to the minidriver's <a href="stream.strminireceivestreamdatapacket">StrMiniReceiveStreamDataPacket</a>, <a href="stream.strminireceivestreamcontrolpacket">StrMiniReceiveStreamControlPacket</a>, and <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a> routines.
@@ -315,11 +372,13 @@ The minidriver owns this stream request block until the request times out or it 
 
 If the class driver times out the request, it will call the minidriver's <a href="stream.strminirequesttimeout">StrMiniRequestTimeout</a> routine, which has the responsibility of terminating processing of the request. If the minidriver queues a request for later processing, it should set the <b>TimeoutCounter</b> member to zero, which will prevent the class driver from timing out the request. Once the minidriver is ready to resume processing the request, it should reset the <b>TimeoutCounter</b> member to the value of <b>TimeoutOriginal</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A camera minidriver's <b>CamNewVideoFrameEx</b> callback function initializes a new video frame context structure.
 
 
+
 ## -prototype
 
 ````
@@ -63,20 +64,25 @@ VOID CamNewVideoFrameEx(
 
 Specifies the minidriver device context.
 
+
 ### -param FrameContext 
 
 Specifies the frame context to be initialized.
+
 
 ### -param StreamNumber 
 
 Indicates the stream associated with this new frame.
 
+
 ### -param FrameLength 
 
 Pointer to the raw frame buffer length. The length is expressed in bytes. The camera minidriver may decrease this value if it does not require a buffer transfer on the USB bus of the specified size. The camera minidriver should not increase this value.
 
+
 ## -returns
 <b>CamNewVideoFrameEx</b> does not return a value.
+
 
 ## -remarks
 USBCAMD calls the camera minidriver's <b>CamNewVideoFrameEx</b> callback function at IRQL = DISPATCH_LEVEL.
@@ -85,11 +91,13 @@ The original USBCAMD does not call <b>CamNewVideoFrameEx</b>.
 
 This function is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +108,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +119,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL (See Remarks section)
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: wdf\evtdeviceusagenotificationex.htm
 old-project: wdf
 ms.assetid: A5C3E247-4883-4BFE-B36A-45AA989F36C9
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 A driver's <i>EvtDeviceUsageNotificationEx</i> event callback function determines whether a device can support a special file type.
+
 
 
 ## -prototype
@@ -63,16 +65,20 @@ NTSTATUS EvtDeviceUsageNotificationEx(
 
 A handle to a framework device object.
 
+
 ### -param NotificationType [in]
 
 A <a href="wdf.wdf_special_file_type">WDF_SPECIAL_FILE_TYPE</a>-typed value that identifies the type of special file that the system is storing on the specified device.
+
 
 ### -param IsInNotificationPath [in]
 
 A Boolean value which, if <b>TRUE</b>, indicates that the system has starting using the special file and, if <b>FALSE</b>, indicates that the system has finished using the special file.
 
+
 ## -returns
 If the driver determines that the device can support the special file, the <i>EvtDeviceUsageNotificationEx</i> callback function must return STATUS_SUCCESS or another status value for which <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS</a>(<i>status</i>) equals <b>TRUE</b>. Otherwise it must return a status value for which NT_SUCCESS(<i>status</i>) equals <b>FALSE</b>.
+
 
 ## -remarks
 If your driver must provide driver-specific handling of special files, you must provide either an <i>EvtDeviceUsageNotificationEx</i> or an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification.md">EvtDeviceUsageNotification</a> event callback function. Do not provide both callback functions.
@@ -91,11 +97,13 @@ Then, implement your callback function as follows.
 
 The <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION_EX</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION_EX</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,22 +114,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.11
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,9 +145,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

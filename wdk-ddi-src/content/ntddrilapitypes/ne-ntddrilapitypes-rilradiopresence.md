@@ -7,7 +7,7 @@ old-location: netvista\rilradiopresence.htm
 old-project: netvista
 ms.assetid: de67cf2e-1dd8-4b01-9a60-b8a2a01d326b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILRADIOPRESENCE, RILRADIOPRESENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef enum _RILRADIOPRESENCE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

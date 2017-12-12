@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-crypto-session-transform-decrypt-header-output-ar
 old-project: display
 ms.assetid: 15f4ea26-3a76-4c81-82cc-1abd5f95c63e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_HEADER_OUTPUT_ARGUMENTS_0030, D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_HEADER_OUTPUT_ARGUMENTS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Crypto session transform decrypt header output arguments.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_HEADER_OUTPUT_ARGUMENT
 
 Enable.
 
+
 ### -field pSliceHeaders
 
 Slice headers.
+
 
 ### -field SliceHeadersSize
 
 Slice header size.
 
+
 ### -field pContext
 
 Context.
 
+
 ### -field ContextSize
 
 Context size.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Context size.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

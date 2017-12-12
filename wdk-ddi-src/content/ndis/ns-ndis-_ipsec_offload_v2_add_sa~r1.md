@@ -7,8 +7,8 @@ old-location: netvista\ipsec_offload_v2_add_sa.htm
 old-project: netvista
 ms.assetid: 78c5e765-40e5-47f0-8460-a86124fb43d8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _IPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA, *PIPSEC_OFFLOAD_V2_ADD_SA
+ms.date: 12/8/2017
+ms.keywords: _IPSEC_OFFLOAD_V2_ADD_SA, *PIPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _IPSEC_OFFLOAD_V2_ADD_SA structure
@@ -39,8 +39,10 @@ req.irql: Any level
 
 ## -description
 <p class="CCE_Message">[The IPsec Task Offload feature is deprecated and should not be used.]
+
 The <b>IPSEC_OFFLOAD_V2_ADD_SA</b> structure defines information about a security association (SA) that a
   miniport driver should add to a NIC.
+
 
 
 ## -syntax
@@ -82,15 +84,18 @@ The
      <b>Revision</b> member to NDIS_IPSEC_OFFLOAD_V2_ADD_SA_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_IPSEC_OFFLOAD_V2_ADD_SA_REVISION_1.
 
+
 ### -field Next
 
 A pointer to an IPSEC_OFFLOAD_V2_ADD_SA structure that is the next structure in a linked list. If
      the pointer is <b>NULL</b>, the current structure is the last structure in the list.
 
+
 ### -field NumExtHdrs
 
 The number of IPsec extension headers. This member can be one of the following values.
      
+
 <table>
 <tr>
 <th>Type of security</th>
@@ -99,53 +104,66 @@ The number of IPsec extension headers. This member can be one of the following v
 <tr>
 <td>
 AH authentication only
+
 </td>
 <td>
 1
+
 </td>
 </tr>
 <tr>
 <td>
 ESP authentication only
+
 </td>
 <td>
 1
+
 </td>
 </tr>
 <tr>
 <td>
 ESP encryption only
+
 </td>
 <td>
 1
+
 </td>
 </tr>
 <tr>
 <td>
 ESP authentication plus encryption
+
 </td>
 <td>
 1
+
 </td>
 </tr>
 <tr>
 <td>
 AH plus ESP authentication plus encryption
+
 </td>
 <td>
 2
+
 </td>
 </tr>
 <tr>
 <td>
 UDP ESP
+
 </td>
 <td>
 1
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field Flags
 
@@ -154,16 +172,21 @@ A bitmask that indicates whether the SA that is being added is an inbound or out
      
 
 
+
+
 ### -field IPSEC_OFFLOAD_V2_IPv6
 
 If this flag is set, the addresses are IPv6. Otherwise, the addresses are IPv4
+
 </dd>
 </dl>
+
 
 
 ### -field IPSEC_OFFLOAD_V2_INBOUND
 
 If this flag is set, the SA is inbound. Otherwise, the SA is outbound.
+
 </dd>
 </dl>
 
@@ -171,13 +194,16 @@ If this flag is set, the SA is inbound. Otherwise, the SA is outbound.
 
 The IPv4 endpoint addresses. This structure contains the following members:
 
+
 ### -field SrcAddr
 
 The IPv4 address of the source host (the host that is sending the packets).
 
+
 ### -field DestAddr
 
 The IPv4 address of the destination host (the host that is receiving the packets).
+
 </dd>
 </dl>
 
@@ -185,13 +211,16 @@ The IPv4 address of the destination host (the host that is receiving the packets
 
 The IPv6 endpoint addresses. This structure contains the following members:
 
+
 ### -field SrcAddr
 
 The IPv6 address of the source host (the host that is sending the packets).
 
+
 ### -field DestAddr
 
 The IPv6 address of the destination host (the host that is receiving the packets).
+
 </dd>
 </dl>
 
@@ -210,34 +239,42 @@ The handle to the newly created SA. The miniport driver supplies this handle bef
      <a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
      OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a> request.
 
+
 ### -field UdpEspEncapsulation
 
 The UDP ESP encapsulation type. This member can be one or more of the following flags:
      
 
 
+
+
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE
 
 No UDP encapsulation is used.
 
+
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT
 
 An ESP-encapsulated transport-mode packet is encapsulated by UDP.
+
 
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL
 
 The tunnel-mode portion of a packet is UDP-encapsulated. The transport-mode portion of the
        packet is not UDP-encapsulated and is not ESP-protected.
 
+
 ### -field IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL
 
 The tunnel-mode portion of a packet is UDP-encapsulated. The transport-mode portion of a packet
        is not UDP-encapsulated but is ESP-protected.
 
+
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL
 
 The tunnel-mode portion of a packet is not UDP-encapsulated. The transport-mode portion of a
        packet is UDP-encapsulated and ESP-protected.
+
 </dd>
 </dl>
 
@@ -249,6 +286,7 @@ An array with two elements that contain the information about the IPsec operatio
      <a href="netvista.ipsec_offload_v2_security_association">
      IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, which is described below.
      
+
 The TCP/IP transport specifies one or two IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structures in the
      buffer at 
      <b>SecAssoc</b> . Each IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure indicates the type of
@@ -257,10 +295,12 @@ The TCP/IP transport specifies one or two IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION 
      in which the miniport driver should perform the operations for each SA. Only one combination of
      operations is supported: encryption/decryption (ESP) followed by authentication (AH).
 
+
 ### -field KeyLength
 
 The length, in bytes, of the buffer at 
      <b>KeyData</b> .
+
 
 ### -field KeyData
 
@@ -274,6 +314,7 @@ A variable-length array that contains keys for the SAs that are specified at
      the key are specified by the 
      <b>KeyOffsetBytes</b> and 
      <b>KeyLength</b> members, respectively.
+
 
 ## -remarks
 This structure is obsolete, use <a href="netvista.ipsec_offload_v2_add_sa_ex">IPSEC_OFFLOAD_V2_ADD_SA_EX</a> instead.
@@ -295,19 +336,23 @@ If a member is set to zero, that parameter is not used to filter packets for the
     If all of the filter parameters are set to zero, the specified SAs apply to any source host that is
     sending any type of packet to any destination host.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.1 and 6.20. For NDIS 6.30 and later, use <a href="netvista.ipsec_offload_v2_add_sa_ex">IPSEC_OFFLOAD_V2_ADD_SA_EX</a>.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -351,5 +396,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

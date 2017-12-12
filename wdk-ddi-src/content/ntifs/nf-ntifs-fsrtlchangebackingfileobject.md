@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FsRtlChangeBackingFileObject</b> routine replaces the current file object with a new file object.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS FsRtlChangeBackingFileObject(
 
 The current file object. If this object does not belong to the stream, the operation fails.
 
+
 ### -param NewFileObject [in]
 
 The new file object.
+
 
 ### -param ChangeBackingType [in]
 
 An <a href="ifsk.fsrtl_change_backing_type">FSRTL_CHANGE_BACKING_TYPE</a> enumeration value that indicates which internal memory area the new file object will designate.
 
+
 ### -param Flags [in]
 
 Reserved for future use.
+
 
 ## -returns
 The <b>FsRtlChangeBackingFileObject</b> routine returns STATUS_SUCCESS if the operation succeeds. Otherwise, <b>FsRtlChangeBackingFileObject</b> returns the appropriate error code.The following table contains error codes that <b>FsRtlChangeBackingFileObject</b> might return.
@@ -88,6 +93,7 @@ The <b>FsRtlChangeBackingFileObject</b> routine returns STATUS_SUCCESS if the op
 
  
 
+
 ## -remarks
 The <b>FsRtlChangeBackingFileObject</b> routine changes the file object for one of the following:
 
@@ -103,11 +109,13 @@ However, after <b>FsRtlChangeBackingFileObject</b> runs successfully, the operat
 
 To change the file object for more than one backing type, the caller must call <b>FsRtlChangeBackingFileObject</b> multiple times, one time for each backing type to change.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -118,14 +126,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The FsRtlChangeBackingFileObject routine is available starting with Windows Vista. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +147,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +158,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -156,9 +169,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -170,5 +185,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlChangeBackingFileObject routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

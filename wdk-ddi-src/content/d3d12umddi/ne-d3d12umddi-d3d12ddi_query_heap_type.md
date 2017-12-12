@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_query_heap_type.htm
 old-project: display
 ms.assetid: 8A1A42B5-D978-4019-825B-94DB81C44FEA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_QUERY_HEAP_TYPE, D3D12DDI_QUERY_HEAP_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Type of a query heap, which is an array of query results.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum D3D12DDI_QUERY_HEAP_TYPE {
 
 Occlusion.
 
+
 ### -field D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP
 
 Timestamp.
+
 
 ### -field D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS
 
 Pipeline statistics.
 
+
 ### -field D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS
 
 SO statistics.
+
 
 ### -field D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS
 
 Video decode statistics.
 
+
 ### -field D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP
 
 Copy queue timestamp.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Copy queue timestamp.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

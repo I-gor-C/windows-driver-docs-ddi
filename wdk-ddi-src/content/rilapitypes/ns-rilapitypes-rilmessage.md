@@ -7,8 +7,8 @@ old-location: netvista\rilmessage_2.htm
 old-project: netvista
 ms.assetid: 731ae115-2394-4651-9b79-6d640d07a328
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMESSAGE, RILMESSAGE, *LPRILMESSAGE
+ms.date: 12/8/2017
+ms.keywords: RILMESSAGE, *LPRILMESSAGE, RILMESSAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -180,6 +181,7 @@ typedef struct _RILMESSAGE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

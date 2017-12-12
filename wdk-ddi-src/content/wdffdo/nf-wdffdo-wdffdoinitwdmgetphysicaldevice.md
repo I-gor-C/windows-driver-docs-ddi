@@ -7,7 +7,7 @@ old-location: wdf\wdffdoinitwdmgetphysicaldevice.htm
 old-project: wdf
 ms.assetid: eba64244-50ff-4c59-a30f-46874c683e63
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfFdoInitWdmGetPhysicalDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfFdoInitWdmGetPhysicalDevice</b> method retrieves a device's WDM physical device object (PDO).
+
 
 
 ## -syntax
@@ -58,8 +60,10 @@ PDEVICE_OBJECT WdfFdoInitWdmGetPhysicalDevice(
 
 A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
 
+
 ## -returns
 If the operation succeeds, the method returns a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure. Otherwise the method returns <b>NULL</b>.
+
 
 ## -remarks
 The driver must call <b>WdfFdoInitWdmGetPhysicalDevice</b> before calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="wdf.creating_a_framework_device_object">Creating a Framework Device Object</a>.
@@ -68,11 +72,13 @@ For more information about the <b>WdfFdoInitWdmGetPhysicalDevice</b> method, see
 
 The following code example obtains a pointer to a DEVICE_OBJECT structure that represents a device's WDM PDO.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +89,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -111,14 +121,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_deviceinitapi">DeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_callback_constraint.htm
 old-project: wdf
 ms.assetid: 118a9dcc-8dd4-454a-bab2-1558821781a7
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_CALLBACK_CONSTRAINT, WDF_CALLBACK_CONSTRAINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,30 +57,37 @@ typedef enum _WDF_CALLBACK_CONSTRAINT {
 
 No callback functions into the driver are synchronized.  The driver must handle all synchronization.
 
+
 ### -field WdfDeviceLevel
 
 All callback functions into the driver that are associated with the device are synchronized, including all callback functions that are associated with I/O queues. Only one event handler that is associated with the device can run at any given time.
+
 
 ### -field WdfLevelReserved
 
 Reserved.
 
+
 ## -remarks
 Note that the above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.9
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

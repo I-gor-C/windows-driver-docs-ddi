@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetvirtualstationapproperties.htm
 old-project: netvista
 ms.assetid: 11ba5799-2bb5-475f-bf69-cf1a1c3c128c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,6 +63,7 @@ An optional handle used by the operating system to reference the primary physica
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
+
 ### -param hConnectSession [in, optional]
 
 The handle used by the operating system to reference the current connection session with the basic
@@ -71,10 +72,12 @@ The handle used by the operating system to reference the current connection sess
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
+
 ### -param dwNumProperties [in]
 
 The number of elements in the array of structures pointed to by the 
      <i>pProperties</i> parameter.
+
 
 ### -param pProperties [in]
 
@@ -83,14 +86,17 @@ A pointer to an array of
      DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</a> structures that specify the properties of access points (APs)
      that the virtual 802.11 station is attempting to host in the current connection session.
 
+
 ### -param pvReserved 
 
 This parameter is reserved for use by the operating system and should be <b>NULL</b>.
+
 
 ## -returns
 If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
      defined in 
      Winerror.h.
+
 
 ## -remarks
 If the current IHV profile connection is an access point (AP), and the IHV Extensions DLL can provide
@@ -106,11 +112,13 @@ If the IHV Extensions DLL calls
     completion of the pre-association operation, the operating system makes no assumptions about the nature
     of the IHV profile.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,15 +129,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -154,5 +165,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: storage\msiscsi_eventlog.htm
 old-project: storage
 ms.assetid: a31a8688-6002-4ad7-b135-0a8111e2c849
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MSiSCSI_Eventlog, MSiSCSI_Eventlog, *PMSiSCSI_Eventlog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This MSiSCSI_EventLog method is used to log any messages to the event log.
 
 
+
 ## -syntax
 
 ````
@@ -59,26 +60,32 @@ typedef struct _MSiSCSI_EventLog {
 
 This specifies the EVENTLOG_MESSAGE_QUALIFIERS type of event log message.
 
+
 ### -field LogToEventLog
 
 If this value it set to 1, the message will be logged to the system event log.
+
 
 ### -field Size
 
 This specifies the size of the Additional Data field.
 
+
 ### -field AdditionalData[1]
 
 This provides additional information associated with this event.
 
+
 ## -remarks
 We recommend that you implement this class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

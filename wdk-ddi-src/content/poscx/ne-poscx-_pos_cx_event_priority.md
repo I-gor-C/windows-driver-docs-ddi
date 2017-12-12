@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The POS_CX_EVENT_PRIORITY defines the importance of the event and the order it will be delivered to the client application.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _POS_CX_EVENT_PRIORITY {
 
 Invalid priority. This value should not be used.
 
+
 ### -field POS_CX_EVENT_PRIORITY_DATA
 
 Data level priority delivered in FIFO.
 
+
 ### -field POS_CX_EVENT_PRIORITY_CONTROL
 
 Control level priority delivered in FIFO.
+
 
 ## -remarks
 
@@ -75,14 +79,17 @@ Control level priority delivered in FIFO.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

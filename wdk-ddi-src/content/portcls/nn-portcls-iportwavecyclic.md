@@ -39,11 +39,14 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPortWaveCyclic</code> interface is the WaveCyclic port driver's primary interface. The PortCls system driver implements this interface and exposes it to the adapter driver that implements the <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a> object. The <code>IPortWaveCyclic</code> interface provides a notification method that the miniport driver's interrupt service routine calls. Subordinate and bus-master DMA channels can also be instantiated on this interface. An adapter driver creates an <code>IPortWaveCyclic</code> object by calling <a href="audio.pcnewport">PcNewPort</a> and specifying REFIID <b>IID_IPortWaveCyclic</b>. <code>IPortWaveCyclic</code> inherits from the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface.
+
 An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportWaveCyclic</b> object to an <code>IPortWaveCyclic</code> object. The PortCls system driver registers this pair with the system as a <a href="https://msdn.microsoft.com/9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b">wave filter</a>.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortWaveCyclic</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -53,6 +56,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortWaveCyclic</b> interface
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

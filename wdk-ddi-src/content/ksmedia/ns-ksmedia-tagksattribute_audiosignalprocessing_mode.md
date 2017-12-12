@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure specifies an audio signal processing mode.
+
 This structure is used to by mode aware drivers with  <a href="stream.ksdataformat">KSDATAFORMAT</a> which contain a  <a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a> of <a href="stream.ksattribute">KSATTRIBUTE</a> structures that reference a KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE. The KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE AttributeHeader.Attribute member is set to KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE, and the KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE SignalProcessingMode member is set to AUDIO_SIGNALPROCESSINGMODE_DEFAULT or other processing modes that the driver supports. For more information, see <a href="https://msdn.microsoft.com/44b55a5a-ec58-4c1e-b780-e20829fe3edf">KS Data Formats and Data Ranges</a>.
+
 
 
 ## -syntax
@@ -58,9 +60,11 @@ typedef struct _KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE {
 
 The AttributeHeader member specifies the attribute header using a <a href="stream.ksattribute">KSATTRIBUTE</a> data type.
 
+
 ### -field SignalProcessingMode
 
 The SignalProcessingMode member specifies the unique GUIDs of the SignalProcessingMode. For more information, see <a href="https://msdn.microsoft.com/104275F8-2302-484B-B673-7448CAA1F793">Audio Signal Processing Modes</a>.
+
 
 ## -remarks
 
@@ -70,6 +74,7 @@ The SignalProcessingMode member specifies the unique GUIDs of the SignalProcessi
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

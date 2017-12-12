@@ -7,7 +7,7 @@ old-location: storage\ataportrequestworkerroutine.htm
 old-project: storage
 ms.assetid: 2d9a6886-aeec-4d61-8c9d-056d1409b905
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortRequestWorkerRoutine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortRequestWorkerRoutine</b> routine requests a worker routine.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ BOOLEAN __inline AtaPortRequestWorkerRoutine(
 
 A pointer to the channel extension. 
 
+
 ### -param WorkerRoutine [in]
 
 A pointer of type IDE_HW_DPC to the worker routine to call. 
 
+
 ## -returns
 None 
+
 
 ## -remarks
 The miniport driver can request a worker routine to perform tasks that cannot be done in the interrupt service routine. Transferring operations to a worker routine is an effective way to keep the interrupt service routine as small as possible.
@@ -73,11 +77,13 @@ When the port driver calls the worker routine, the port driver will pass the poi
 
 The <i>WorkerRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_lock2.htm
 old-project: display
 ms.assetid: AFDA9D5F-2590-4034-B2CF-07990F4553C8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_LOCK2, D3DKMT_LOCK2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 <b>D3DKMT_LOCK2</b> describes parameters for locking an allocation.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _D3DKMT_LOCK2 {
 
 The handle to the device.
 
+
 ### -field hAllocation
 
 The handle to the allocation to lock.
+
 
 ### -field Flags
 
 A set of flags to pass to the <a href="display.d3dkmtlock2">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="display.d3dddicb_lock2flags">D3DDDICB_LOCK2FLAGS</a> for details.
 
+
 ### -field pData
 
 A CPU virtual address pointing a valid memory location pointing to the CPU backing store or the GPU frame buffer.
+
 
 ## -remarks
 
@@ -79,22 +84,27 @@ A CPU virtual address pointing a valid memory location pointing to the CPU backi
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

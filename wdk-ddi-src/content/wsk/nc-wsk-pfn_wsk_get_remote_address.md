@@ -7,7 +7,7 @@ old-location: netvista\wskgetremoteaddress.htm
 old-project: netvista
 ms.assetid: a2d65d55-744b-4851-b1fa-7087e0f06452
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   or stream socket.
 
 
+
 ## -prototype
 
 ````
@@ -63,6 +64,7 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being queried.
 
+
 ### -param RemoteAddress [out]
 
 A pointer to a caller-allocated buffer that receives the remote transport address for the socket.
@@ -70,9 +72,11 @@ A pointer to a caller-allocated buffer that receives the remote transport addres
      specific SOCKADDR structure type that corresponds to the address family that the WSK application
      specified when it created the socket.
      
+
 For a connection-oriented socket that the WSK application accepted on a listening socket, the address
      family is the same as the address family that the WSK application specified when it created the
      listening socket.
+
 
 ### -param Irp [in, out]
 
@@ -80,6 +84,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskGetRemoteAddress</b> returns one of the following NTSTATUS codes:
@@ -109,6 +114,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 
  
 
+
 ## -remarks
 A WSK application can call the 
     <b>WskGetRemoteAddress</b> function only on a connection-oriented or stream socket that has been connected to a
@@ -133,11 +139,13 @@ If the
     stack, it cannot return from the function that calls the 
     <b>WskGetRemoteAddress</b> function until after the IRP is completed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -148,15 +156,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,9 +178,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -212,5 +225,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_REMOTE_ADDRESS callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_REMOTE_ADDRESS callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

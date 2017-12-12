@@ -7,8 +7,8 @@ old-location: display\d3dlightingcaps.htm
 old-project: display
 ms.assetid: ea8ba463-e8dd-4952-bcad-6fe565fe3292
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _D3DLIGHTINGCAPS, *LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS
+ms.date: 12/8/2017
+ms.keywords: _D3DLIGHTINGCAPS, D3DLIGHTINGCAPS, *LPD3DLIGHTINGCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,7 +41,9 @@ req.irql:
 
    Obsolete in DirectX 8.0 and later versions; see Remarks.
    
+
 The D3DLIGHTINGCAPS structure describes the lighting capabilities of a device.
+
 
 
 ## -syntax
@@ -62,12 +64,14 @@ typedef struct _D3DLIGHTINGCAPS {
 
 Specifies the size, in bytes, of the D3DLIGHTINGCAPS structure. 
 
+
 ### -field dwCaps
 
  Specifies flags describing the capabilities of the lighting module. The following flags are defined:   
   
   
   
+
 <table>
 <tr>
 <th>Value</th>
@@ -98,9 +102,11 @@ Specifies the size, in bytes, of the D3DLIGHTINGCAPS structure.
 </table>
  
 
+
 ### -field dwLightingModel
 
  Specifies flags indicating whether the lighting model is RGB or monochrome. The following flags are defined: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -119,20 +125,24 @@ Specifies the size, in bytes, of the D3DLIGHTINGCAPS structure.
 </table>
  
 
+
 ### -field dwNumLights
 
 Specifies the number of lights that can be handled.
+
 
 ## -remarks
 This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for DirectX 7.0 and earlier runtime compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.
 
 This structure is a member of the <a href="display.d3ddevicedesc_v1">D3DDEVICEDESC_V1</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,5 +159,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DLIGHTINGCAPS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DLIGHTINGCAPS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

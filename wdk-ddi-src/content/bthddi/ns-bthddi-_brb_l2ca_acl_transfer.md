@@ -42,6 +42,7 @@ The _BRB_L2CA_ACL_TRANSFER structure describes a buffer to read asynchronous dat
   asynchronous data to a L2CAP channel.
 
 
+
 ## -syntax
 
 ````
@@ -67,9 +68,11 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field BtAddress
 
 The address of the remote device.
+
 
 ### -field ChannelHandle
 
@@ -78,11 +81,13 @@ The L2CAP channel handle that was returned by Bluetooth driver stack in response
      <a href="bltooth.brb_l2ca_open_channel_response">
      BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request.
 
+
 ### -field TransferFlags
 
 A combination of flags that specifies the basic behavior of the interface. Multiple flags can be
      set at the same time. Valid flag values are described in the following table:
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -91,62 +96,76 @@ A combination of flags that specifies the basic behavior of the interface. Multi
 <tr>
 <td>
 ACL_SHORT_TRANSFER_OK
+
 </td>
 <td>
 If this bit is set, the read operation can complete before the buffer is full. This can only be
         set in combination with ACL_TRANSFER_DIRECTION_IN.
+
 </td>
 </tr>
 <tr>
 <td>
 ACL_TRANSFER_DIRECTION_IN
+
 </td>
 <td>
 If this bit is set, data will be received from the remote device. This flag cannot be set in
         combination with ACL_TRANSFER_DIRECTION_OUT.
+
 </td>
 </tr>
 <tr>
 <td>
 ACL_TRANSFER_DIRECTION_OUT
+
 </td>
 <td>
 If this bit is set, data is to be sent to the remote device. This flag cannot be set in
         combination with ACL_TRANSFER_DIRECTION_IN.
+
 </td>
 </tr>
 <tr>
 <td>
 ACL_TRANSFER_TIMEOUT
+
 </td>
 <td>
 The read operation should be stopped after the number of milliseconds specified in the 
         <b>Timeout</b> member.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field BufferSize
 
 The size, in bytes, of the buffer.
+
 
 ### -field Buffer
 
 A pointer to the input buffer.
 
+
 ### -field BufferMDL
 
 A pointer to the MDL input buffer.
+
 
 ### -field Timeout
 
 The duration, in milliseconds, before the read action is canceled and any data consumed to this
      point is lost.
 
+
 ### -field RemainingBufferSize
 
 The amount of space, in bytes, left in the buffer after the BRB call.
+
 
 ## -remarks
 To read asynchronous data from, or write asynchronous data to a L2CAP channel, profile drivers should 
@@ -169,19 +188,23 @@ If the ACL_TRANSFER_TIMEOUT flag is set in the
     <b>TransferFlags</b> member and the duration specified in the 
     <b>Timeout</b> member expires, the <b>BRB_L2CA_ACL_TRANSFER</b> request will complete and return an error.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -208,5 +231,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_ACL_TRANSFER structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

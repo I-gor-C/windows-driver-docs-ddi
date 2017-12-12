@@ -41,6 +41,7 @@ req.irql:
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff565109">KSPROPERTY_CONNECTION_STARTAT</a> property is passed a KSRELATIVEEVENT structure.
 
 
+
 ## -syntax
 
 ````
@@ -64,29 +65,36 @@ typedef struct {
 
 Specifies the inclusive size of the structure, including any event specific data appended to the <b>EventData</b> member.
 
+
 ### -field Flags
 
 Specifies what type of object is specified in the <b>ObjectHandle</b> and <b>ObjectPointer</b> union.
+
 
 ### -field ObjectHandle
 
 Specifies the handle of the object supporting the event to be used if the <b>Flags</b> member contains the KSRELATIVEEVENT_FLAG_HANDLE flag.
 
+
 ### -field ObjectPointer
 
 Specifies a pointer to the object supporting the event to be used if the Flags member contains the KSRELATIVEEVENT_FLAG_POINTER flag. This is valid only for kernel-mode clients.
+
 
 ### -field Reserved
 
 Reserved and set to zero.
 
+
 ### -field Event
 
 A <a href="stream.ksevent">KSEVENT</a> structure that contains the event to be used.
 
+
 ### -field EventData
 
 A <a href="stream.kseventdata">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
+
 
 ## -remarks
 
@@ -96,6 +104,7 @@ A <a href="stream.kseventdata">KSEVENTDATA</a> structure that specifies the head
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

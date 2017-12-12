@@ -7,7 +7,7 @@ old-location: display\d3dddicb_destroyhwcontext.htm
 old-project: display
 ms.assetid: 9040AEAF-3F66-4F76-B9CD-36370BC2F5B6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDICB_DESTROYHWCONTEXT, D3DDDICB_DESTROYHWCONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that holds information to destroy a hardware context.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DDDICB_DESTROYHWCONTEXT {
 
 Handle to the context to destroy.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Handle to the context to destroy.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

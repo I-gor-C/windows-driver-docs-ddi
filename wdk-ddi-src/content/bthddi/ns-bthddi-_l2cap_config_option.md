@@ -45,6 +45,7 @@ An array of L2CAP_CONFIG_OPTION structures is used to specify values for the
   <a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a> structures.
 
 
+
 ## -syntax
 
 ````
@@ -65,6 +66,7 @@ A
      <a href="bltooth.co_header">CO_HEADER</a> structure that specifies information
      about vendor-specific configuration options.
 
+
 ### -field DynamicBuffer
 
 A pointer to a buffer that contains additional L2CAP channel parameters that are defined either by
@@ -72,17 +74,20 @@ A pointer to a buffer that contains additional L2CAP channel parameters that are
      <b>Flags</b> member is set to CO_DYNAMIC to indicate that this member contains the extra
      parameters.
 
+
 ### -field FixedBuffer
 
 A buffer that contains additional L2CAP channel parameters that are defined either by the profile
      driver or the remote device if they fit into 4 bytes. The 
      <b>Flags</b> member is set to CO_FIXED to indicate that this member contains the extra parameters.
 
+
 ### -field Flags
 
 A combination of flags that determines which of this structure's buffer members contain
      parameters. Multiple flags can be set at once. Valid flag values are listed in the following table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -91,23 +96,28 @@ A combination of flags that determines which of this structure's buffer members 
 <tr>
 <td>
 CO_DYNAMIC
+
 </td>
 <td>
 If set, the 
         <b>DynamicBuffer</b> member points to the extra parameters.
+
 </td>
 </tr>
 <tr>
 <td>
 CO_FIXED
+
 </td>
 <td>
 If set, the 
         <b>FixedBuffer</b> member contains the extra parameters.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -117,14 +127,17 @@ If set, the
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,5 +160,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_CONFIG_OPTION structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

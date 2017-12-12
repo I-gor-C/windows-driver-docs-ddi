@@ -43,6 +43,7 @@ PosCxRemoteRequestRelease is called whenever a remote device asks for
       the device to release.  This initiates claim negotiation.
 
 
+
 ## -syntax
 
 ````
@@ -59,14 +60,17 @@ NTSTATUS PosCxRemoteRequestRelease(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param deviceInterfaceTag [in]
 
 The device interface that initiated the release request.
+
 
 ## -returns
 Possible return values are:
 
  
+
 
 ## -remarks
 
@@ -76,14 +80,17 @@ Possible return values are:
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

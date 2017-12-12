@@ -7,7 +7,7 @@ old-location: netvista\rilrequestgeolocationdata.htm
 old-project: netvista
 ms.assetid: 814e00c5-7248-4853-a61b-e70be86bca0e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILREQUESTGEOLOCATIONDATA {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

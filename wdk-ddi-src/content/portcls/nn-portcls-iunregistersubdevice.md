@@ -39,14 +39,23 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IUnregisterSubdevice</code> interface implements a method to remove a registered subdevice. The port driver implements this interface. To determine whether a port driver supports the <code>IUnregisterSubdevice</code> interface, a miniport driver calls the port driver object's <b>QueryInterface</b> method with REFIID <b>IID_IUnregisterSubdevice</b>. The miniport driver is responsible for releasing the <code>IUnregisterSubdevice</code> object after it is no longer needed. The <code>IUnregisterSubdevice</code> interface inherits from <b>IUnknown</b>.
+
 The following port drivers support the <code>IUnregisterSubdevice</code> interface:
+
 WaveCyclic
+
 WavePci
+
 Topology
+
 DMus
+
 MIDI
+
 The single method in this interface unregisters a subdevice that was previously registered by a call to the <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a> routine. PortCls supports <b>PcRegisterSubdevice</b>.
+
 The <code>IUnregisterSubdevice</code> object maintains its own internal reference to the subdevice to ensure that the corresponding device object is not deleted until all references to the <code>IUnregisterSubdevice</code> object are released.
+
 
 
 ## -inheritance
@@ -57,6 +66,7 @@ The <b>IUnregisterSubdevice</b> interface has these methods.
 The <b>UnregisterSubdevice</b> method deletes the registration of a subdevice that was previously registered by a call to <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>.
 
  
+
 
 ## -members
 The <b>IUnregisterSubdevice</b> interface has these methods.
@@ -71,11 +81,13 @@ The <b>IUnregisterSubdevice</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <b>UnregisterSubdevice</b> method deletes the registration of a subdevice that was previously registered by a call to <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>.
+
 </td>
 </tr>
 </table>The <b>UnregisterSubdevice</b> method deletes the registration of a subdevice that was previously registered by a call to <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>.
 
  
+
 
 ## -remarks
 
@@ -85,6 +97,7 @@ The <b>UnregisterSubdevice</b> method deletes the registration of a subdevice th
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

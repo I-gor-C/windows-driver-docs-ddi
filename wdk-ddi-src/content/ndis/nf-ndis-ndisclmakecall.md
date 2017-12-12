@@ -7,7 +7,7 @@ old-location: netvista\ndisclmakecall.htm
 old-project: netvista
 ms.assetid: 69775220-71d8-497c-aaf7-9bc3ec90d00f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisClMakeCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 <b>NdisClMakeCall</b> sets up an outgoing call on a client-created VC.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ NDIS_STATUS NdisClMakeCall(
 Specifies the handle returned by a preceding call to 
      <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>.
 
+
 ### -param CallParameters [in, out]
 
 Pointer to a structure of type 
@@ -68,12 +70,14 @@ Pointer to a structure of type
      bandwidth, and quality of service if the network medium and address family supported by the call manager
      permits QoS specifications.
 
+
 ### -param ProtocolPartyContext [in, optional]
 
 Optionally specifies a caller-supplied handle to a resident context area in which the client will
      maintain per-party state for the initial party on its multipoint VC. This parameter is <b>NULL</b> if the given
      VC does not represent a multipoint connection. For a multipoint VC, NDIS passes this handle back to the
      client's ProtocolCl<i>Xxx</i> functions in all subsequent calls that affect this particular party.
+
 
 ### -param NdisPartyHandle [out, optional]
 
@@ -83,6 +87,7 @@ Pointer to a caller-supplied variable, usually in the caller-allocated party con
      <i>ProtocolPartyContext</i> is <b>NULL</b>, this variable, usually in the client's VC context area, also is set
      to <b>NULL</b> on completion of outgoing-call setup.
 
+
 ## -returns
 When 
      <b>NdisClMakeCall</b> returns anything other than NDIS_STATUS_PENDING, the client should make an internal
@@ -90,6 +95,7 @@ When
      <a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">
      ProtocolClMakeCallComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClMakeCallComplete</i> function when this operation is completed.
+
 
 ## -remarks
 <b>NdisClMakeCall</b> sets up the attributes of a client-created VC for a client-initiated outgoing call.
@@ -128,11 +134,13 @@ The client's
     <i>NdisPartyHandle</i> . If the call manager fails the request to set up a call on a multipoint
     connection, the value of this client-supplied variable is invalid.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +151,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -150,11 +159,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisClMakeCall (NDIS 5.1)</b>) in
    Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -165,6 +176,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -175,14 +187,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
@@ -225,5 +240,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClMakeCall function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClMakeCall function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

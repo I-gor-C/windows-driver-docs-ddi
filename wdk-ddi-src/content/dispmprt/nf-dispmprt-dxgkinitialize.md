@@ -7,7 +7,7 @@ old-location: display\dxgkinitialize.htm
 old-project: display
 ms.assetid: 0eda4184-2852-4a31-b4da-1fbb99ed4670
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DxgkInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>DxgkInitialize</b> function loads and initializes the DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>).
 
 
+
 ## -syntax
 
 ````
@@ -58,27 +59,33 @@ NTSTATUS DxgkInitialize(
 
 A pointer to a <a href="kernel.driver_object">DRIVER_OBJECT</a> structure. The display miniport driver previously obtained this pointer in its <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function.
 
+
 ### -param RegistryPath [in]
 
 A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that supplies the path to the driver's service registry key.  The display miniport driver previously obtained this pointer in its <a href="kernel.driver_object">DRIVER_OBJECT</a> function.
+
 
 ### -param DriverInitializationData [in]
 
 A pointer to a <a href="display.driver_initialization_data">DRIVER_INITIALIZATION_DATA</a> structure that supplies the DirectX graphics kernel subsystem with pointers to functions implemented by the display miniport driver.
 
+
 ## -returns
 <b>DxgkInitialize</b>returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in <i>Ntstatus.h</i>.
+
 
 ## -remarks
 The display miniport driver's <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function calls <b>DxgkInitialize</b>.
 
 The following code example shows an implementation of <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> in which <b>DxgkInitialize</b> is called.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -130,5 +142,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DxgkInitialize function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DxgkInitialize function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

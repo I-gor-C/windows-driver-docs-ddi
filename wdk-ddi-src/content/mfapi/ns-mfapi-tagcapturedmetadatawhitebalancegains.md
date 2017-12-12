@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure describes the blob format for the <b>MF_CAPTURE_METADATA_WHITEBALANCE_GAINS</b> attribute.  
 
 
+
 ## -syntax
 
 ````
@@ -58,24 +59,29 @@ typedef struct tagCapturedMetadataWhiteBalanceGains {
 
 The  <b>R</b> value of the blob.
 
+
 ### -field G
 
 The  <b>G</b> value of the blob.
 
+
 ### -field B
 
 The  <b>B</b> value of the blob.
+
 
 ## -remarks
 The <b>MF_CAPTURE_METADATA_WHITEBALANCE_GAINS</b> attribute contains the white balance gains applied to R, G, B by the sensor or ISP when the preview frame was captured. This is a unitless.
 
 The <b>CapturedMetadataWhiteBalanceGains</b> structure only describes the blob format for the <b>MF_CAPTURE_METADATA_WHITEBALANCE_GAINS</b> attribute.  The metadata item structure for white balance gains (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + white balance gains metadata payload) is up to driver and must be 8-byte aligned.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

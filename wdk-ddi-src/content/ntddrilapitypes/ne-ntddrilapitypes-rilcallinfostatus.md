@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfostatus.htm
 old-project: netvista
 ms.assetid: 0f5806e8-a7be-4703-8847-abea2d0cb2e8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLINFOSTATUS, RILCALLINFOSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef enum _RILCALLINFOSTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

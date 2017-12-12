@@ -41,6 +41,7 @@ req.irql:
 The <b>CcDeferWrite</b> routine defers writing to a cached file. The post routine that is supplied, is called by the cache manager when it can accommodate the write operation.
 
 
+
 ## -syntax
 
 ````
@@ -61,10 +62,13 @@ VOID CcDeferWrite(
 
 Pointer to a file object for the cached file to which the data is to be written.
 
+
 ### -param PostRoutine [in]
 
 Address of a routine for the cache manager to call to write to the cached file. Note that it is possible that this routine will be called immediately, even if <a href="ifsk.cccaniwrite">CcCanIWrite</a> has just returned <b>FALSE</b> .
+
 The post routine is defined in ntifs.h as:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -84,20 +88,25 @@ VOID (*PCC_POST_DEFERRED_WRITE) (
 
 First parameter for the post routine at <i>PostRoutine</i>.
 
+
 ### -param Context2 [in]
 
 Second parameter for the post routine at <i>PostRoutine</i>.
+
 
 ### -param BytesToWrite [in]
 
 Number of bytes of data to be written.
 
+
 ### -param Retrying [in]
 
 Set to <b>FALSE</b> if the request is being posted for the first time, <b>TRUE</b> otherwise.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A file system would normally call <b>CcDeferWrite</b> after receiving a return value of <b>FALSE</b> from <a href="ifsk.cccaniwrite">CcCanIWrite</a>.
@@ -106,11 +115,13 @@ To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a
 
 The context parameters passed to <i>PostRoutine</i> are typically the I/O request and related context data.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +132,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,6 +143,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -141,6 +154,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -163,5 +177,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcDeferWrite routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_pnp_state.htm
 old-project: wdf
 ms.assetid: b907a1ca-d9ef-45e9-9e1b-26e58e3e1e07
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
+ms.date: 12/7/2017
+ms.keywords: _WDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The WDF_DEVICE_PNP_STATE enumeration identifies all of the states that the framework's Plug and Play state machine can enter.
+
 
 
 ## -syntax
@@ -296,19 +298,23 @@ typedef enum _WDF_DEVICE_PNP_STATE {
 ## -remarks
 The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="wdf.wdf_device_pnp_notification_data">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="wdf.wdfdevicegetdevicepnpstate">WdfDeviceGetDevicePnpState</a> method.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

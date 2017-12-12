@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsInterfaceHandler</b> interface provides methods that marshal samples into the kernel based on the <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structure specified for the established connection. The IID for this interface is IID_IKsInterfaceHandler.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsInterfaceHandler</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IKsInterfaceHandler</b> also has these types of members:
 
@@ -78,6 +79,7 @@ Informs an interface handler about the pin with which to communicate when passin
 
  
 
+
 ## -members
 The <b>IKsInterfaceHandler</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -91,6 +93,7 @@ The <b>IKsInterfaceHandler</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Cleans up extended headers and releases media samples. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -99,6 +102,7 @@ Cleans up extended headers and releases media samples.
 </td>
 <td align="left" width="63%">
 Queries for the extended header size if a data handler is specified. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -107,6 +111,7 @@ Queries for the extended header size if a data handler is specified.
 </td>
 <td align="left" width="63%">
 Informs an interface handler about the pin with which to communicate when passing data.
+
 </td>
 </tr>
 </table>Cleans up extended headers and releases media samples. 
@@ -116,6 +121,7 @@ Queries for the extended header size if a data handler is specified.
 Informs an interface handler about the pin with which to communicate when passing data.
 
  
+
 
 ## -remarks
 In order to keep the proxy neutral with regard to the interface used to stream data, interface handlers are loaded to translate DirectShow media samples to and from a kernel-level driver. An interface handler implements the methods of the <b>IKsInterfaceHandler</b> interface to perform preprocessing and postprocessing on all media samples and to signal the completion of input and output (I/O).
@@ -128,11 +134,13 @@ On an interface handler create request through <b>CoCreateInstance</b>, the serv
 
 For more information about <b>CoCreateInstance</b>, see the Microsoft Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,5 +160,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsInterfaceHandler interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 Contains the full UNC physical pathname for a file or directory on a remote file share.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _FILE_NETWORK_PHYSICAL_NAME_INFORMATION {
 
 The length, in bytes, of the physical name in <b>FileName</b>.
 
+
 ### -field FileName
 
 The full UNC path of the network file share of the target.
+
 
 ## -remarks
 The <b>FILE_NETWORK_PHYSICAL_NAME_INFORMATION</b> structure is used to retrieve the network physical name information for a file. This operation can be performed in either of the following ways: 
@@ -74,11 +77,13 @@ If the physical name is longer than the length set in <b>FileNameLength</b>, the
 
 The following is an example of querying the network physical name  information of a file target using <a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +106,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_NETWORK_PHYSICAL_NAME_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

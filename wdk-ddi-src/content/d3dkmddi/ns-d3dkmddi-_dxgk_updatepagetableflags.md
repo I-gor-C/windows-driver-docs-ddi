@@ -7,7 +7,7 @@ old-location: display\dxgk_updatepagetableflags.htm
 old-project: display
 ms.assetid: E0E1CDE7-F1BF-44C8-A320-9BD90788679F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_UPDATEPAGETABLEFLAGS, DXGK_UPDATEPAGETABLEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>DXGK_UPDATEPAGETABLEFLAGS</b> is used as part of a page table update operation.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _DXGK_UPDATEPAGETABLEFLAGS {
 
 When set to <b>TRUE</b>, page table entries will point to a single page table entry value that needs to be replicated to all page table entries being updated.
 
+
 ### -field InitialUpdate
 
 Indicates that the page table is initialized very first time after being made resident in memory.
+
 
 ### -field NotifyEviction
 
 Indicates that the page table is about to be evicted. 
 
+
 ### -field Use64KBPages
 
 Indicates that page table entries  point to page tables pointing to 64 KB pages. 
 
+
 ### -field Reserved
 
 This member is reserved and should be set to zero.
+
 
 ## -remarks
 
@@ -84,22 +90,27 @@ This member is reserved and should be set to zero.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

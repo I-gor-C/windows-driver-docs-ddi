@@ -41,6 +41,7 @@ req.irql:
 The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines.
 
 
+
 ## -syntax
 
 ````
@@ -65,52 +66,64 @@ typedef struct {
 
 Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a> IRPs to.
 
+
 ### -field Read
 
 Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> IRPs to.
+
 
 ### -field Write
 
 Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a> IRPs to.
 
+
 ### -field Flush
 
 Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a> IRPs to.
+
 
 ### -field Close
 
 Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> IRPs to.
 
+
 ### -field QuerySecurity
 
 Specifies the minidriver's routine to dispatch <a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a> IRPs to.
+
 
 ### -field SetSecurity
 
 Specifies the minidriver's routine to dispatch <a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a> IRPs to.
 
+
 ### -field FastDeviceIoControl
 
 Specifies the minidriver's routine to dispatch fast device I/O control requests to.
+
 
 ### -field FastRead
 
 Specifies the minidriver's routine to dispatch fast read requests to.
 
+
 ### -field FastWrite
 
 Specifies the minidriver's routine to dispatch fast write requests to.
+
 
 ## -remarks
 A pointer to a dispatch table is contained in the opaque object header that is the first element of data pointed to by the file object's <b>FsContext</b> field.
 
 For more information about minidriver implemented IRP dispatch routines, see <a href="stream.kssetmajorfunctionhandler">KsSetMajorFunctionHandler</a>, and <a href="kernel.driver_object">DRIVER_OBJECT</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDISPATCH_TABLE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

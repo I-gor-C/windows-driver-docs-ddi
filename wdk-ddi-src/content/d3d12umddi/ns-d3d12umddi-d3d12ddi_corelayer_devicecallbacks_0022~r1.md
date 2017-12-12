@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_corelayer_devicecallbacks_0022.htm
 old-project: display
 ms.assetid: E5B7FDB6-3351-489E-B0BB-8B8DD605FCF4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_CORELAYER_DEVICECALLBACKS_0022, D3D12DDI_CORELAYER_DEVICECALLBACKS_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This structure contains runtime callback functions that the user-mode display driver can use.
 
 
+
 ## -syntax
 
 ````
@@ -69,57 +70,71 @@ typedef struct D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 {
 
 A pointer to the pfnSetErrorCb function.
 
+
 ### -field pfnSetCommandListErrorCb
 
 A pointer to the function.
+
 
 ### -field pfnSetCommandListDDITableCb
 
 A pointer to the pfnSetCommandListErrorCb function.
 
+
 ### -field pfnCreateContextCb
 
 A pointer to the pfnCreateContextCb function.
+
 
 ### -field pfnCreateContextVirtualCb
 
 A pointer to the pfnCreateContextVirtualCb function.
 
+
 ### -field pfnDestroyContextCb
 
 A pointer to the pfnDestroyContextCb function.
+
 
 ### -field pfnCreatePagingQueueCb
 
 A pointer to the pfnCreatePagingQueueCb function.
 
+
 ### -field pfnDestroyPagingQueueCb
 
 A pointer to the pfnDestroyPagingQueueCb function.
+
 
 ### -field pfnMakeResidentCb
 
 A pointer to the pfnMakeResidentCb function.
 
+
 ### -field pfnEvictCb
 
 A pointer to the pfnEvictCb function.
+
 
 ### -field pfnReclaimAllocations2Cb
 
 A pointer to the pfnReclaimAllocations2Cb function.
 
+
 ### -field pfnOfferAllocationsCb
 
 A pointer to the pfnOfferAllocationsCb function.
+
 
 ### -field pfnAllocateCb
 
 A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022.md">pfnAllocateCb</a> function.
 
+
 ### -field pfnDeallocateCb
 
 A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022.md">pfnDeallocateCb</a> function.
+
 
 ## -remarks
 
@@ -129,6 +144,7 @@ A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

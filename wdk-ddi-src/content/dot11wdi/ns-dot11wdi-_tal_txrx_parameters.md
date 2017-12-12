@@ -7,8 +7,8 @@ old-location: netvista\tal_txrx_parameters.htm
 old-project: netvista
 ms.assetid: 44f5c907-7368-43ea-b581-3b9ecf25c611
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _TAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The
   TAL_TXRX_PARAMETERS structure defines the TAL TXRX parameters.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _TAL_TXRX_PARAMETERS {
 
 Specifies the maximum number of outstanding  frame transfers to the target. No further frames are transferred until a transfer complete indication is received from the target/TAL.
 
+
 ## -remarks
 
 
@@ -65,22 +67,27 @@ Specifies the maximum number of outstanding  frame transfers to the target. No f
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

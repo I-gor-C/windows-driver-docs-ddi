@@ -42,6 +42,7 @@ This structure contains the fields necessary in order for the Bus driver to carr
 <b>GetMaxSpeedBetweenDevices</b> request.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct _IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES {
 ### -field fulFlags
 
 Specifies the source device. Zero indicates the calling device. USE_LOCAL_NODE indicates the computer itself.
+
 <div class="alert"><b>Note</b>  In Windows 7, the new 1394 bus driver returns only the speed between the local node and the device. The USE_LOCAL_NODE flag must be set in the <b>u.GetMaxSpeedBetweenDevices.fulFlags</b> parameter.</div>
 <div> </div>
 
@@ -66,13 +68,16 @@ Specifies the source device. Zero indicates the calling device. USE_LOCAL_NODE i
 
 Specifies the number of destination devices.
 
+
 ### -field hDestinationDeviceObjects
 
 Points to an array of the device objects of the destination devices.
 
+
 ### -field fulSpeed
 
 Specifies the maximum speed returned.
+
 
 ## -remarks
 
@@ -82,6 +87,7 @@ Specifies the maximum speed returned.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

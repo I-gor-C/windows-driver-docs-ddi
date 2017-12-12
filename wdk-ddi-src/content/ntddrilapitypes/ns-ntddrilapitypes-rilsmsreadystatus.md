@@ -7,8 +7,8 @@ old-location: netvista\rilsmsreadystatus.htm
 old-project: netvista
 ms.assetid: 0f2d6a06-18af-4e7a-9f88-c81d98575f56
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS, RILSMSREADYSTATUS
+ms.date: 12/8/2017
+ms.keywords: RILSMSREADYSTATUS, RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILSMSREADYSTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

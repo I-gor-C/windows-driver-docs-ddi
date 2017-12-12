@@ -7,8 +7,8 @@ old-location: storage\addtarget_in.htm
 old-project: storage
 ms.assetid: 7c6a7ca8-83aa-41fe-92f5-6598464d9803
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _AddTarget_IN, *PAddTarget_IN, AddTarget_IN
+ms.date: 12/8/2017
+ms.keywords: _AddTarget_IN, AddTarget_IN, *PAddTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The AddPort_IN structure is used by a WMI client to deliver the input parameter data of the <a href="storage.addtarget">AddTarget</a> WMI method to the HBA miniport driver.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _AddTarget_IN {
 
 Contains the worldwide name of the local port whose events the WMI client will receive. 
 
+
 ### -field DiscoveredPortWWN
 
 Contains a worldwide name that specifies the discovered target whose events the WMI client will receive.
 
+
 ### -field AllTargets
 
 Indicates the scope of the target events to report. If this member is zero, the WMI client will receive events associated with the port that is indicated by <i>DiscoveredPortWWN</i>. If this member is nonzero, the WMI client will all events associated with all currently discovered targets as well as targets that are discovered in the future. 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Indicates the scope of the target events to report. If this member is zero, the 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,5 +95,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AddTarget_IN structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AddTarget_IN structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\ndismremoveminiport.htm
 old-project: netvista
 ms.assetid: 70745b03-f9a3-4398-b41a-dc75bd16ffe0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMRemoveMiniport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   has determined is unrecoverable from the system.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ NDIS_STATUS NdisMRemoveMiniport(
 The handle to the initialized miniport adapter that the miniport driver has determined is
      unrecoverable.
 
+
 ## -returns
 <b>NdisMRemoveMiniport</b> can return either of the following:
 <dl>
@@ -70,6 +72,7 @@ The handle to the initialized miniport adapter that the miniport driver has dete
 
  
 
+
 ## -remarks
 If a miniport driver has determined that a particular miniport adapter has failed and is
     unrecoverable, the miniport driver can call 
@@ -80,11 +83,13 @@ For example, if a miniport driver detects that a miniport adapter is resetting v
     causing the computer to freeze every few seconds, the driver can request NDIS to remove the miniport
     adapter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,16 +100,19 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see 
    <a href="https://msdn.microsoft.com/1438603b-107f-4173-bbb1-90935ab7811d">NdisMRemoveMiniport (NDIS
    5.1)</a>.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,14 +134,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>

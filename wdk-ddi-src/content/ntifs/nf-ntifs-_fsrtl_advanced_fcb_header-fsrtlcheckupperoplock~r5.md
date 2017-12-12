@@ -41,6 +41,7 @@ req.irql: IRQL <= APC_LEVEL
 The <b>FsRtlCheckUpperOplock</b> routine provides opportunistic lock (oplock) checking  in secondary, or layered, file systems when the oplocks they hold change state. Secondary file systems, such as network redirectors and clustering file services, call <b>FsRtlCheckUpperOplock</b> when an oplock held in a lower file system by the secondary file system, changes state. A state change can occur either by a break or an upgrade. <b>FsRtlCheckUpperOplock</b> will break the oplock of upper file system, if necessary, to confirm the new lower oplock state. The caller can also provide optional callbacks for notifications of break acknowledgment and pending status.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ NTSTATUS FsRtlCheckUpperOplock(
 
 An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="ifsk.fsrtlinitializeoplock">FsRtlInitializeOplock</a>. 
 
+
 ### -param NewLowerOplockState [in]
 
 A value representing the requested oplock held in a lower file system by a secondary file system. This a bitwise OR combination of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -76,6 +79,7 @@ A value representing the requested oplock held in a lower file system by a secon
 </td>
 <td width="60%">
 Indicates an oplock Read (R) type.
+
 </td>
 </tr>
 <tr>
@@ -85,6 +89,7 @@ Indicates an oplock Read (R) type.
 </td>
 <td width="60%">
 Indicates an oplock Write (W) type.
+
 </td>
 </tr>
 <tr>
@@ -94,19 +99,24 @@ Indicates an oplock Write (W) type.
 </td>
 <td width="60%">
 Indicates an oplock Handle (H) type.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param CompletionRoutineContext [in, optional]
 
 A pointer to caller-defined context information to be passed to the callback routines that the <i>CompletionRoutine</i> and <i>PrePendIrpRoutine</i> parameters point to. 
 
+
 ### -param CompletionRoutine [in, optional]
 
 A pointer to a caller-supplied callback routine. If an opportunistic lock break is in progress, this routine is called when the break is completed. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, the caller is put into a wait state until the opportunistic lock break is completed. 
+
 This routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -124,20 +134,26 @@ This routine is declared as follows:
 This routine has the following parameters: 
 
 
+
+
 ### -param Context
 
 A context information pointer that was passed in the <i>CompletionRoutineContext</i> parameter to <b>FsRtlCheckUpperOplock</b>. 
 
+
 ### -param Irp
 
 A optional pointer to the IRP for the I/O operation <b>FsRtlCheckUpperOplock</b> will always set this to NULL. 
+
 </dd>
 </dl>
 
 ### -param PrePendIrpRoutine [in, optional]
 
 A pointer to a caller-supplied callback routine to be called if <b>FsRtlCheckUpperOplock</b> will return STATUS_PENDING. This parameter is optional and can be <b>NULL</b>. 
+
 This routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -154,13 +170,16 @@ This routine is declared as follows:
 </table></span></div>
 
 
+
 ### -param Context
 
 A context information pointer that was passed in the <i>CompletionRoutineContext</i> parameter to <b>FsRtlCheckUpperOplock</b>. 
 
+
 ### -param Irp
 
 A optional pointer to the IRP for the I/O operation. <b>FsRtlCheckUpperOplock</b> will always set this to NULL.
+
 </dd>
 </dl>
 
@@ -169,13 +188,17 @@ A optional pointer to the IRP for the I/O operation. <b>FsRtlCheckUpperOplock</b
 A bitmask for the associated file I/O operation. A file system or filter driver sets bits to specify the behavior of <b>FsRtlCheckUpperOplock</b>. The <i>Flags</i> parameter has the following options:
 
 
+
+
 ### -param OPLOCK_UPPER_FLAG_CHECK_NO_BREAK   (0x00010000)
 
 Return STATUS_CANNOT_BREAK_OPLOCK if the value of <i>NewLowerOplockState</i> results in any oplock break.
 
+
 ### -param OPLOCK_UPPER_FLAG_NOTIFY_REFRESH_READ   (0x00020000)
 
 Break only Read (R) upper oplocks and notify R holders that they may again request R.  All other upper oplock checks it will return STATUS_CANNOT_BREAK_OPLOCK.
+
 </dd>
 </dl>
 
@@ -193,6 +216,7 @@ Break only Read (R) upper oplocks and notify R holders that they may again reque
 
  
 
+
 ## -remarks
 
 
@@ -201,6 +225,7 @@ Break only Read (R) upper oplocks and notify R holders that they may again reque
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -211,14 +236,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -229,6 +257,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -239,6 +268,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -249,9 +279,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 IRQL &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -266,5 +298,8 @@ IRQL &lt;= APC_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCheckUpperOplock routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

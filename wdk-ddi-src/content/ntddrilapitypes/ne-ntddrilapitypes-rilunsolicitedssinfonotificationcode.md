@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfonotificationcode.htm
 old-project: netvista
 ms.assetid: 03dd4659-29fc-4426-8d30-2bbc0b71f899
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUNSOLICITEDSSINFONOTIFICATIONCODE, RILUNSOLICITEDSSINFONOTIFICATIONCODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -131,6 +132,7 @@ typedef enum _RILUNSOLICITEDSSINFONOTIFICATIONCODE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

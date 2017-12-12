@@ -7,13 +7,13 @@ old-location: display\dxgkddienumvidpncofuncmodality.htm
 old-project: display
 ms.assetid: 6dda82bd-1a43-4ffe-b398-a9f8cee6d1c1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
 req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
+req.include-header: 
 req.target-type: Desktop
 req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
 req.target-min-winversvr: 
@@ -41,10 +41,11 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdiEnumVidPnCofuncModality</i> function makes the source and target modes sets of a VidPN cofunctional with the VidPN's topology and the modes that have already been pinned.
 
 
+
 ## -prototype
 
 ````
-PDXGKDDI_ENUMVIDPNCOFUNCMODALITY DxgkDdiEnumVidPnCofuncModality;
+DXGKDDI_ENUMVIDPNCOFUNCMODALITY DxgkDdiEnumVidPnCofuncModality;
 
 NTSTATUS APIENTRY DxgkDdiEnumVidPnCofuncModality(
   _In_ const HANDLE                                hAdapter,
@@ -60,12 +61,15 @@ NTSTATUS APIENTRY DxgkDdiEnumVidPnCofuncModality(
 
 A handle to a context block associated with a display adapter. The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
+
 ### -param pEnumCofuncModalityArg [in]
 
 A pointer to a <a href="display.dxgkarg_enumvidpncofuncmodality">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure that contains function arguments.
 
+
 ## -returns
 <i>DxgkDdiEnumVidPnCofuncModality</i> returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in <i>Ntstatus.h</i>.
+
 
 ## -remarks
 The <b>hConstrainingVidPn</b> member of <i>pEnumCofuncModalityArg</i> is a handle to a VidPN object called the constraining VidPN. Other members of <i>pEnumCofuncModalityArg</i> identify one video present source or target as the pivot of the enumeration (or specify that there is no pivot). 
@@ -80,11 +84,13 @@ Note that if a source or target is identified as the pivot of the enumeration, t
 
 The <i>DxgkDdiEnumVidPnCofuncModality</i> function should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,27 +101,32 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
+<dt>D3dkmddi.h</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

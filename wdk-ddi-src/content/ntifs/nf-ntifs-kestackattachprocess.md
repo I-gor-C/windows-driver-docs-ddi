@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>KeStackAttachProcess</b> routine attaches the current thread to the address space of the target process.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ VOID KeStackAttachProcess(
 
 Pointer to the target process object. This parameter can be a PEPROCESS pointer returned by <a href="kernel.iogetcurrentprocess">IoGetCurrentProcess</a> or <a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a>. 
 
+
 ### -param ApcState [out]
 
 An opaque pointer to a KAPC_STATE structure. The caller must allocate storage for this structure either from nonpaged pool or from the caller's own thread stack. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>KeStackAttachProcess</b> attaches the current thread to the address space of the process pointed to by the <i>Process</i> parameter. If the current thread was already attached to another process, the <i>ApcState</i> parameter receives the current APC state before <b>KeStackAttachProcess</b> attaches to the new process. 
@@ -82,11 +86,13 @@ Every call to <b>KeStackAttachProcess</b> must be matched by a subsequent call t
 
 For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +103,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows 2000 and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +124,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +135,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -135,9 +146,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -170,5 +183,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20KeStackAttachProcess routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

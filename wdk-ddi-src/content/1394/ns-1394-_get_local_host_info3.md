@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 49c24328-dfd9-4d4d-a40f-a375f1384a5c
 ms.author: windowsdriverdev
 ms.date: 11/29/2017
-ms.keywords: _GET_LOCAL_HOST_INFO3, GET_LOCAL_HOST_INFO3, *PGET_LOCAL_HOST_INFO3
+ms.keywords: _GET_LOCAL_HOST_INFO3, *PGET_LOCAL_HOST_INFO3, GET_LOCAL_HOST_INFO3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The GET_LOCAL_HOST_INFO3 structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_POWER_SUPPLIED.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _GET_LOCAL_HOST_INFO3 {
 
 Specifies the wattage supplied, in tenths of a watt.
 
+
 ### -field Voltage
 
 Specifies the voltage, in tenths of a volt.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies the voltage, in tenths of a volt.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -85,5 +89,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_LOCAL_HOST_INFO3 structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

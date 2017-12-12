@@ -7,7 +7,7 @@ old-location: netvista\protocolclregistersapcomplete.htm
 old-project: netvista
 ms.assetid: b0a2a224-3353-4f20-b14f-ed5d633a6ead
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,6 +46,7 @@ A connection-oriented NDIS client that accepts incoming calls must have
   <i>ProtocolClRegisterSapComplete</i> function can simply return control.
 
 
+
 ## -prototype
 
 ````
@@ -70,6 +71,8 @@ Specifies the final status of the client's call to
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The SAP has been registered both with NDIS and the call manager, which will subsequently call 
@@ -79,10 +82,12 @@ The SAP has been registered both with NDIS and the call manager, which will subs
        <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">
        ProtocolClIncomingCall</a> function.
 
+
 ### -param NDIS_STATUS_RESOURCES
 
 NDIS or the call manager could not allocate and/or initialize necessary resources to register
        and maintain the SAP.
+
 
 ### -param NDIS_STATUS_INVALID_DATA
 
@@ -91,10 +96,12 @@ The client supplied an invalid specification at
        <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a> function
        for validation.
 
+
 ### -param NDIS_STATUS_XXX
 
 The call manager encountered an error in attempting to register the given SAP and NDIS
        propagated this CM-determined failure status to the client.
+
 </dd>
 </dl>
 
@@ -106,11 +113,13 @@ Specifies the handle to the client's per-SAP context area, which the client orig
      is successful, NDIS retains this context handle and uses it subsequently in calls to the client's 
      <i>ProtocolClIncomingCall</i> function pertaining to this SAP.
 
+
 ### -param Sap [in]
 
 Pointer to the client-allocated buffer containing the specification for the SAP to be opened. The
      client originally passed this pointer to 
      <b>NdisClRegisterSap</b>.
+
 
 ### -param NdisSapHandle [in]
 
@@ -122,8 +131,10 @@ If
      <i>ProtocolSapContext</i> area, for an eventual call to 
      <a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 NDIS calls 
@@ -174,11 +185,13 @@ The <b>PROTOCOL_CL_REGISTER_SAP_COMPLETE</b> function type is defined in the Ndi
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -186,11 +199,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    ProtocolClRegisterSapComplete (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>
    ProtocolClRegisterSapComplete (NDIS 5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -201,9 +216,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -249,5 +266,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_REGISTER_SAP_COMPLETE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_REGISTER_SAP_COMPLETE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

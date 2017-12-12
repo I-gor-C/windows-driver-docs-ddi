@@ -7,7 +7,7 @@ old-location: kernel\iosetshareaccessex.htm
 old-project: kernel
 ms.assetid: 4DCC4A37-0099-4C6F-B00D-B6CAA7D1EC68
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoSetShareAccessEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoSetShareAccessEx</b> routine sets the access rights for sharing the specified file object.
 
 
+
 ## -syntax
 
 ````
@@ -61,18 +62,23 @@ VOID IoSetShareAccessEx(
 
 Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access requested for the file object. See <a href="kernel.iocreatefile">IoCreateFile</a> for a complete list of system-defined <i>DesiredAccess</i> flags.
 
+
 ### -param DesiredShareAccess [in]
 
 Specifies the type of share access to be set for the file object. This value can be zero, or any combination of the following flags:
+
 <dl>
 <dd>
 FILE_SHARE_READ
+
 </dd>
 <dd>
 FILE_SHARE_WRITE
+
 </dd>
 <dd>
 FILE_SHARE_DELETE
+
 </dd>
 </dl>
 
@@ -80,16 +86,20 @@ FILE_SHARE_DELETE
 
 A pointer to the file object whose share access is being set or reset.
 
+
 ### -param ShareAccess [out]
 
 A pointer to the <b>SHARE_ACCESS</b> structure that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
+
 
 ### -param WritePermission  [in, optional]
 
 A pointer to the value that specifies whether the file object has write permission. This value is <b>TRUE</b> if the share has write permission; otherwise, it is <b>FALSE</b>. If  the value is <b>FALSE</b>  and the caller attempts to take exclusive read access, the write permission is downgraded to FILE_SHARE_READ.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 
@@ -99,6 +109,7 @@ None.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -109,14 +120,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +141,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +161,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetShareAccessEx routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetShareAccessEx routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ The <b>KSAUDIO_PACKETSIZE_CONSTRAINTS</b> structure describes the physical hardw
 The driver sets this property before calling <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a> or otherwise enabling its KS filter interface for its streaming pins.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef struct _KSAUDIO_PACKETSIZE_CONSTRAINTS {
 
 The absolute minimum processing period supported by the driver expressed in hundred-nanosecond (HNS) units. This value can be 0 if the driver has no specific minimum processing period.
 
+
 ### -field PacketSizeFileAlignment
 
 <dl><a id="FILE_BYTE_ALIGNMENT"></a><a id="file_byte_alignment"></a>
@@ -79,13 +81,16 @@ The absolute minimum processing period supported by the driver expressed in hund
 
 Unused.
 
+
 ### -field NumProcessingModeConstraints
 
 The number of additional constraints for specific processing modes. This value can be 0.
 
+
 ### -field ProcessingModeConstraints
 
 An array of 0 or more processing mode constraints. 
+
 
 
 ## -remarks
@@ -94,27 +99,33 @@ The driver sets this variable length data structure as the value of the DEVPKEY_
 
 For WaveRT drivers, this data structure describes the constraints for a WaveRT packet. Several WaveRT packets (typically 2) are concatenated to form the WaveRT buffer.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +145,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_PACKETSIZE_CONSTRAINTS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

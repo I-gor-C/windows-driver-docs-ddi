@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Fltkernel.h header
 
+## -description
 
 This header is used by Installable file system. For more information, see
 - [Installable file system](../_ifsk/index.md)
@@ -12,8 +17,6 @@ Fltkernel.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [FltAcknowledgeEcp function](nf-fltkernel-fltacknowledgeecp.md) | The FltAcknowledgeEcp routine is used to mark an extra create parameter context structure (ECP) as acknowledged. |
-| [FltAcquirePushLockExclusive function](nf-fltkernel-fltacquirepushlockexclusive.md) | The FltAcquirePushLockExclusive routine acquires the given push lock for exclusive access by the calling thread. |
-| [FltAcquirePushLockShared function](nf-fltkernel-fltacquirepushlockshared.md) | The FltAcquirePushLockShared routine acquires the given push lock for shared access by the calling thread. |
 | [FltAddOpenReparseEntry function](nf-fltkernel-fltaddopenreparseentry.md) | This routine adds a caller allocated open reparse structure, OPEN_REPARSE_LIST_ENTRY, into a create operation. |
 | [FltAdjustDeviceStackSizeForIoRedirection function](nf-fltkernel-fltadjustdevicestacksizeforioredirection.md) | The FltAdjustDeviceStackSizeForIoRedirection routine increases the size of the source device stack to allow a minifilter to redirect I/O from a specified source instance to a specified target instance when the target stack is deeper than the source stack. |
 | [FltAllocateCallbackData function](nf-fltkernel-fltallocatecallbackdata.md) | FltAllocateCallbackData allocates a callback data structure that a minifilter driver can use to initiate an I/O request. |
@@ -209,7 +212,6 @@ Fltkernel.h contain these programming interfaces:
 | [FltReleaseContexts function](nf-fltkernel-fltreleasecontexts.md) | FltReleaseContexts releases each context in a given FLT_RELATED_CONTEXTS structure. |
 | [FltReleaseContextsEx function](nf-fltkernel-fltreleasecontextsex.md) | FltReleaseContextsEx releases each context in a given FLT_RELATED_CONTEXTS_EX structure. |
 | [FltReleaseFileNameInformation function](nf-fltkernel-fltreleasefilenameinformation.md) | FltReleaseFileNameInformation releases a file name information structure. |
-| [FltReleasePushLock function](nf-fltkernel-fltreleasepushlock.md) | The FltReleasePushLock routine releases a specified push lock owned by the current thread. |
 | [FltRemoveExtraCreateParameter function](nf-fltkernel-fltremoveextracreateparameter.md) | The FltRemoveExtraCreateParameter routine searches an ECP list for an ECP context structure and, if found, detaches it from the ECP list. |
 | [FltRemoveOpenReparseEntry function](nf-fltkernel-fltremoveopenreparseentry.md) | This routine removes an OPEN_REPARSE_LIST_ENTRY structure (added by FltAddOpenReparseEntry) from a create operation. |
 | [FltRequestOperationStatusCallback function](nf-fltkernel-fltrequestoperationstatuscallback.md) | FltRequestOperationStatusCallback returns status information for the given I/O operation. |
@@ -255,41 +257,41 @@ Fltkernel.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PFLT_COMPLETED_ASYNC_IO_CALLBACK callback](nc-fltkernel-pflt-completed-async-io-callback.md) | A minifilter driver that initiates an asynchronous I/O operation can specify a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK routine to be called when the operation is completed. |
-| [PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE callback](nc-fltkernel-pflt-complete-lock-callback-data-routine.md) | A minifilter driver can register a routine of type PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE as the minifilter driver's CompleteLockCallbackDataRoutine callback routine for a FILE_LOCK structure. |
-| [PFLT_CONTEXT_ALLOCATE_CALLBACK callback](nc-fltkernel-pflt-context-allocate-callback.md) | A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's ContextAllocateCallback routine. |
-| [PFLT_CONTEXT_CLEANUP_CALLBACK callback](nc-fltkernel-pflt-context-cleanup-callback.md) | A minifilter driver can register a routine of type PFLT_CONTEXT_CLEANUP_CALLBACK as the minifilter driver's ContextCleanupCallback routine. |
-| [PFLT_CONTEXT_FREE_CALLBACK callback](nc-fltkernel-pflt-context-free-callback.md) | A minifilter can register a routine of type PFLT_CONTEXT_FREE_CALLBACK as the minifilter driver's ContextFreeCallback routine. |
-| [PFLT_FILTER_UNLOAD_CALLBACK callback](nc-fltkernel-pflt-filter-unload-callback.md) | A minifilter driver can register a routine of type PFLT_FILTER_UNLOAD_CALLBACK as the minifilter driver's FilterUnloadCallback routine. |
-| [PFLT_GENERATE_FILE_NAME callback](nc-fltkernel-pflt-generate-file-name.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_GENERATE_FILE_NAME as the minifilter driver's GenerateFileNameCallback routine. |
-| [PFLT_GET_OPERATION_STATUS_CALLBACK callback](nc-fltkernel-pflt-get-operation-status-callback.md) | A minifilter driver can register a routine of type PFLT_GET_OPERATION_STATUS_CALLBACK as the minifilter driver's OperationStatusCallback routine. |
-| [PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK callback](nc-fltkernel-pflt-instance-query-teardown-callback.md) | A minifilter driver can register a routine of type PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK as the minifilter driver's InstanceQueryTeardownCallback routine. |
-| [PFLT_INSTANCE_SETUP_CALLBACK callback](nc-fltkernel-pflt-instance-setup-callback.md) | A minifilter driver can register a routine of type PFLT_INSTANCE_SETUP_CALLBACK as the minifilter driver's InstanceSetupCallback routine. |
-| [PFLT_INSTANCE_TEARDOWN_CALLBACK callback](nc-fltkernel-pflt-instance-teardown-callback.md) | A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's InstanceTeardownStartCallback and InstanceTeardownCompleteCallback routines. |
-| [PFLT_NORMALIZE_CONTEXT_CLEANUP callback](nc-fltkernel-pflt-normalize-context-cleanup.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_CONTEXT_CLEANUP as the minifilter driver's NormalizeContextCleanupCallback routine. |
-| [PFLT_NORMALIZE_NAME_COMPONENT callback](nc-fltkernel-pflt-normalize-name-component.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT as the minifilter driver's NormalizeNameComponentCallback routine. |
-| [PFLT_NORMALIZE_NAME_COMPONENT_EX callback](nc-fltkernel-pflt-normalize-name-component-ex.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX as the minifilter driver's NormalizeNameComponentExCallback callback routine. |
-| [PFLT_POST_OPERATION_CALLBACK callback](nc-fltkernel-pflt-post-operation-callback.md) | A minifilter driver can register one or more routines of type PFLT_POST_OPERATION_CALLBACK to perform completion processing for I/O operations. |
-| [PFLT_PRE_OPERATION_CALLBACK callback](nc-fltkernel-pflt-pre-operation-callback.md) | A minifilter driver's PFLT_PRE_OPERATION_CALLBACK routine performs pre-operation processing for I/O operations. |
-| [PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK callback](nc-fltkernel-pflt-section-conflict-notification-callback.md) | A minifilter driver can optionally register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's SectionNotificationCallback routine. |
-| [PFLT_TRANSACTION_NOTIFICATION_CALLBACK callback](nc-fltkernel-pflt-transaction-notification-callback.md) | A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as its TransactionNotificationCallback routine. |
+| [PFLT_COMPLETED_ASYNC_IO_CALLBACK callback](nc-fltkernel-pflt_completed_async_io_callback.md) | A minifilter driver that initiates an asynchronous I/O operation can specify a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK routine to be called when the operation is completed. |
+| [PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE callback](nc-fltkernel-pflt_complete_lock_callback_data_routine.md) | A minifilter driver can register a routine of type PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE as the minifilter driver's CompleteLockCallbackDataRoutine callback routine for a FILE_LOCK structure. |
+| [PFLT_CONTEXT_ALLOCATE_CALLBACK callback](nc-fltkernel-pflt_context_allocate_callback.md) | A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's ContextAllocateCallback routine. |
+| [PFLT_CONTEXT_CLEANUP_CALLBACK callback](nc-fltkernel-pflt_context_cleanup_callback.md) | A minifilter driver can register a routine of type PFLT_CONTEXT_CLEANUP_CALLBACK as the minifilter driver's ContextCleanupCallback routine. |
+| [PFLT_CONTEXT_FREE_CALLBACK callback](nc-fltkernel-pflt_context_free_callback.md) | A minifilter can register a routine of type PFLT_CONTEXT_FREE_CALLBACK as the minifilter driver's ContextFreeCallback routine. |
+| [PFLT_FILTER_UNLOAD_CALLBACK callback](nc-fltkernel-pflt_filter_unload_callback.md) | A minifilter driver can register a routine of type PFLT_FILTER_UNLOAD_CALLBACK as the minifilter driver's FilterUnloadCallback routine. |
+| [PFLT_GENERATE_FILE_NAME callback](nc-fltkernel-pflt_generate_file_name.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_GENERATE_FILE_NAME as the minifilter driver's GenerateFileNameCallback routine. |
+| [PFLT_GET_OPERATION_STATUS_CALLBACK callback](nc-fltkernel-pflt_get_operation_status_callback.md) | A minifilter driver can register a routine of type PFLT_GET_OPERATION_STATUS_CALLBACK as the minifilter driver's OperationStatusCallback routine. |
+| [PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK callback](nc-fltkernel-pflt_instance_query_teardown_callback.md) | A minifilter driver can register a routine of type PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK as the minifilter driver's InstanceQueryTeardownCallback routine. |
+| [PFLT_INSTANCE_SETUP_CALLBACK callback](nc-fltkernel-pflt_instance_setup_callback.md) | A minifilter driver can register a routine of type PFLT_INSTANCE_SETUP_CALLBACK as the minifilter driver's InstanceSetupCallback routine. |
+| [PFLT_INSTANCE_TEARDOWN_CALLBACK callback](nc-fltkernel-pflt_instance_teardown_callback.md) | A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's InstanceTeardownStartCallback and InstanceTeardownCompleteCallback routines. |
+| [PFLT_NORMALIZE_CONTEXT_CLEANUP callback](nc-fltkernel-pflt_normalize_context_cleanup.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_CONTEXT_CLEANUP as the minifilter driver's NormalizeContextCleanupCallback routine. |
+| [PFLT_NORMALIZE_NAME_COMPONENT callback](nc-fltkernel-pflt_normalize_name_component.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT as the minifilter driver's NormalizeNameComponentCallback routine. |
+| [PFLT_NORMALIZE_NAME_COMPONENT_EX callback](nc-fltkernel-pflt_normalize_name_component_ex.md) | A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX as the minifilter driver's NormalizeNameComponentExCallback callback routine. |
+| [PFLT_POST_OPERATION_CALLBACK callback](nc-fltkernel-pflt_post_operation_callback.md) | A minifilter driver can register one or more routines of type PFLT_POST_OPERATION_CALLBACK to perform completion processing for I/O operations. |
+| [PFLT_PRE_OPERATION_CALLBACK callback](nc-fltkernel-pflt_pre_operation_callback.md) | A minifilter driver's PFLT_PRE_OPERATION_CALLBACK routine performs pre-operation processing for I/O operations. |
+| [PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK callback](nc-fltkernel-pflt_section_conflict_notification_callback.md) | A minifilter driver can optionally register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's SectionNotificationCallback routine. |
+| [PFLT_TRANSACTION_NOTIFICATION_CALLBACK callback](nc-fltkernel-pflt_transaction_notification_callback.md) | A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as its TransactionNotificationCallback routine. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [FLT_CALLBACK_DATA structure](ns-fltkernel--flt-callback-data.md) | The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations. |
-| [FLT_CONTEXT_REGISTRATION structure](ns-fltkernel--flt-context-registration.md) | The FLT_CONTEXT_REGISTRATION structure is used to register context types. |
-| [FLT_CREATEFILE_TARGET_ECP_CONTEXT structure](ns-fltkernel--flt-createfile-target-ecp-context.md) | The FLT_CREATEFILE_TARGET_ECP_CONTEXT structure is an extra create parameter (ECP) used to return reparse target information back to the caller of FltCreateFileEx2. |
-| [FLT_FILE_NAME_INFORMATION structure](ns-fltkernel--flt-file-name-information.md) | The FLT_FILE_NAME_INFORMATION structure contains file name information. |
-| [FLT_IO_PARAMETER_BLOCK structure](ns-fltkernel--flt-io-parameter-block.md) | The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (FLT_CALLBACK_DATA) structure. |
-| [FLT_NAME_CONTROL structure](ns-fltkernel--flt-name-control.md) | A minifilter that provides file names for the Filter Manager's name cache can use the FLT_NAME_CONTROL structure to manage its name buffers. |
-| [FLT_OPERATION_REGISTRATION structure](ns-fltkernel--flt-operation-registration.md) | The FLT_OPERATION_REGISTRATION structure is used to register operation callback routines. |
-| [FLT_PARAMETERS structure](ns-fltkernel--flt-parameters.md) | The FLT_PARAMETERS union defines the request-type-specific parameters associated with an I/O operation. |
-| [FLT_REGISTRATION structure](ns-fltkernel--flt-registration.md) | The FLT_REGISTRATION structure is passed as a parameter to FltRegisterFilter. |
-| [FLT_RELATED_CONTEXTS structure](ns-fltkernel--flt-related-contexts.md) | The FLT_RELATED_CONTEXTS structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
-| [FLT_RELATED_CONTEXTS_EX structure](ns-fltkernel--flt-related-contexts-ex.md) | The FLT_RELATED_CONTEXTS_EX structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
-| [FLT_RELATED_OBJECTS structure](ns-fltkernel--flt-related-objects.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
-| [FLT_RELATED_OBJECTS structure](ns-fltkernel--flt-related-objects~r1.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
-| [FLT_TAG_DATA_BUFFER structure](ns-fltkernel--flt-tag-data-buffer.md) | The FLT_TAG_DATA_BUFFER structure contains information about a reparse point tag. |
-| [FLT_VOLUME_PROPERTIES structure](ns-fltkernel--flt-volume-properties.md) | The FLT_VOLUME_PROPERTIES structure is passed as a parameter to FltGetVolumeProperties. |
+| [_FLT_CALLBACK_DATA structure](ns-fltkernel-_flt_callback_data.md) | The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations. |
+| [_FLT_CONTEXT_REGISTRATION structure](ns-fltkernel-_flt_context_registration.md) | The FLT_CONTEXT_REGISTRATION structure is used to register context types. |
+| [_FLT_CREATEFILE_TARGET_ECP_CONTEXT structure](ns-fltkernel-_flt_createfile_target_ecp_context.md) | The FLT_CREATEFILE_TARGET_ECP_CONTEXT structure is an extra create parameter (ECP) used to return reparse target information back to the caller of FltCreateFileEx2. |
+| [_FLT_FILE_NAME_INFORMATION structure](ns-fltkernel-_flt_file_name_information.md) | The FLT_FILE_NAME_INFORMATION structure contains file name information. |
+| [_FLT_IO_PARAMETER_BLOCK structure](ns-fltkernel-_flt_io_parameter_block.md) | The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (FLT_CALLBACK_DATA) structure. |
+| [_FLT_NAME_CONTROL structure](ns-fltkernel-_flt_name_control.md) | A minifilter that provides file names for the Filter Manager's name cache can use the FLT_NAME_CONTROL structure to manage its name buffers. |
+| [_FLT_OPERATION_REGISTRATION structure](ns-fltkernel-_flt_operation_registration.md) | The FLT_OPERATION_REGISTRATION structure is used to register operation callback routines. |
+| [_FLT_PARAMETERS structure](ns-fltkernel-_flt_parameters.md) | The FLT_PARAMETERS union defines the request-type-specific parameters associated with an I/O operation. |
+| [_FLT_REGISTRATION structure](ns-fltkernel-_flt_registration.md) | The FLT_REGISTRATION structure is passed as a parameter to FltRegisterFilter. |
+| [_FLT_RELATED_CONTEXTS structure](ns-fltkernel-_flt_related_contexts.md) | The FLT_RELATED_CONTEXTS structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
+| [_FLT_RELATED_CONTEXTS_EX structure](ns-fltkernel-_flt_related_contexts_ex.md) | The FLT_RELATED_CONTEXTS_EX structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
+| [_FLT_RELATED_OBJECTS structure](ns-fltkernel-_flt_related_objects.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
+| [_FLT_RELATED_OBJECTS structure](ns-fltkernel-_flt_related_objects~r1.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
+| [_FLT_TAG_DATA_BUFFER structure](ns-fltkernel-_flt_tag_data_buffer.md) | The FLT_TAG_DATA_BUFFER structure contains information about a reparse point tag. |
+| [_FLT_VOLUME_PROPERTIES structure](ns-fltkernel-_flt_volume_properties.md) | The FLT_VOLUME_PROPERTIES structure is passed as a parameter to FltGetVolumeProperties. |

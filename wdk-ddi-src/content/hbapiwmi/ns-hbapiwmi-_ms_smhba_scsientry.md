@@ -7,7 +7,7 @@ old-location: storage\ms_smhba_scsientry.htm
 old-project: storage
 ms.assetid: 38779458-a561-4048-86d8-905e4e50095f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MS_SMHBA_SCSIENTRY, *PMS_SMHBA_SCSIENTRY, MS_SMHBA_SCSIENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MS_SMHBA_SCSIENTRY structure is used to report target LUN mapping information.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _MS_SMHBA_SCSIENTRY {
 
 An array of MS_SMHBA_PORTLUN entries.
 
+
 ### -field LUID
 
 The logical unit descriptor for the device that the operating system derives from SCSI inquiry data.
 
+
 ### -field ScsiId
 
 A structure of type HBAScsiID that contains information that uniquely identifies a logical unit to the operating system.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A structure of type HBAScsiID that contains information that uniquely identifies
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

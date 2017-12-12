@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary to carry out a ReqIsochListen request.
 
 
+
 ## -syntax
 
 ````
@@ -58,24 +59,29 @@ typedef struct _IRB_REQ_ISOCH_LISTEN {
 
 Specifies the resource handle to use in reading data.
 
+
 ### -field fulFlags
 
 Reserved. Device drivers must set this to zero.
 
+
 ### -field StartTime
 
 Specifies the cycle time to begin reading data. This member is used only if the driver specified the RESOURCE_SYNCH_ON_TIME flag when it allocated the resource handle passed in <b>u.IsochListen.hResource</b>. (The timing resolution is per isochronous cycle, so the <b>CycleOffset</b> member of <b>StartTime</b> is not used.)
+
 
 ## -remarks
 The bus driver completes this request once it has successfully scheduled the isochronous listen operation. It does not wait for the data transfer to finish, or even begin, before it completes the request.
 
 Listening on a channel may begin immediately, or it may be synchronized to an event. If the driver set the RESOURCE_SYNCH_ON_TIME flag on the REQUEST_ISOCH_ALLOCATE_RESOURCES request that returned the resource handle, then the listen begins on the cycle count specified in <b>StartTime</b>. Additional synchronization options may be set for each buffer within that buffer's ISOCH_DESCRIPTOR structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

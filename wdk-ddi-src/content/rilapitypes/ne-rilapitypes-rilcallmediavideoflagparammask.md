@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediavideoflagparammask_2.htm
 old-project: netvista
 ms.assetid: 6f0a8c1f-e3cb-4bcb-a9ec-4d4b7555a314
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLMEDIAVIDEOFLAGPARAMMASK, RILCALLMEDIAVIDEOFLAGPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -76,6 +77,7 @@ typedef enum _RILCALLMEDIAVIDEOFLAGPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: storage\storportsetbusdatabyoffset.htm
 old-project: storage
 ms.assetid: ec1db013-b630-421b-8d22-385a2d9b9510
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortSetBusDataByOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortSetBusDataByOffset</b> routine writes bus-specific configuration information.
 
 
+
 ## -syntax
 
 ````
@@ -63,34 +64,44 @@ STORPORT_API ULONG StorPortSetBusDataByOffset(
 
 Pointer to the miniport driver's per-HBA storage area. 
 
+
 ### -param BusDataType [in]
 
 Contains a value of type <a href="kernel.bus_data_type">BUS_DATA_TYPE</a> that specifies the type of the bus for which configuration information is to be written. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>. 
+
 
 ### -param SystemIoBusNumber [in]
 
 Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains this value from the input <b>PORT_CONFIGURATION_INFORMATION</b><b>SystemIoBusNumber</b> member. 
 
+
 ### -param SlotNumber [in]
 
 Indicates the logical slot number of the HBA.
+
 When <b>PCIConfiguration</b> is specified as the <i>BusDataType</i>, this parameter must be specified as a PCI_SLOT_NUMBER-type value. 
+
 
 ### -param Buffer [in]
 
 Pointer to a caller-supplied storage area with configuration information specific to <i>BusDataType</i>. 
+
 When <b>PCIConfiguration</b> is specified, the buffer contains some or all of the PCI_COMMON_CONFIG information for the given <i>SlotNumber</i>. The specified <i>Offset</i> and <i>Length</i> determine how much information is supplied. 
+
 
 ### -param Offset [in]
 
 Specifies the byte offset within the PCI_COMMON_CONFIG structure at which the caller-supplied configuration values begin. A miniport driver can use PCI_COMMON_HDR_LENGTH to specify the offset of the device-specific area in PCI_COMMON_CONFIG. 
 
+
 ### -param Length [in]
 
 Indicates the length, in bytes, of the maximum amount of data to return. 
 
+
 ## -returns
 <b>StorPortSetBusDataByOffset</b> returns the number of bytes of configuration data written. 
+
 
 ## -remarks
 
@@ -100,6 +111,7 @@ Indicates the length, in bytes, of the maximum amount of data to return.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -110,6 +122,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +133,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -136,5 +150,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortSetBusDataByOffset routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortSetBusDataByOffset routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

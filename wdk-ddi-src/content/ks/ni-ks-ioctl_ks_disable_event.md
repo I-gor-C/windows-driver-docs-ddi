@@ -41,7 +41,10 @@ req.irql:
 
 An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="stream.kssynchronousdevicecontrol">KsSynchronousDeviceControl</a>.
 
+
+
 An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="stream.kssynchronousdevicecontrol">KsSynchronousDeviceControl</a>.
+
 
 
 ## -ioctlparameters
@@ -49,14 +52,18 @@ An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request noti
 ### -input-buffer
 The application places a pointer to a structure of type <a href="stream.kseventdata">KSEVENTDATA</a> in the <b>InBuffer</b> parameter. This is the location of the original KSEVENTDATA structure that the application instantiated at the enabling of the event. To disable all active events, a client specifies a <b>NULL</b> pointer and length of zero in the <b>InBuffer</b> and <b>InLength</b> parameters.
 
+
 ### -input-buffer-length
 Length of <a href="stream.kseventdata">KSEVENTDATA</a>.
+
 
 ### -output-buffer
 None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -70,6 +77,7 @@ None.
 I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
+
 ## -remarks
 
 
@@ -78,6 +86,7 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_DISABLE_EVENT control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

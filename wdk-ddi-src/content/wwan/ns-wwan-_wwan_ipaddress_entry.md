@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipaddress_entry.htm
 old-project: netvista
 ms.assetid: 85615799-5AA0-4D83-9246-73F3C7ABFFF6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_IPADDRESS_ENTRY structure represents either the IPV4 or IPV6 address of a PDP context.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ typedef struct _WWAN_IPADDRESS_ENTRY {
 
 Set if the IP address of the PDP context is an IPV6 address.
 
+
 ### -field IsReported:1
 
 Reserved. Do not use.
+
 
 ### -field ( unnamed union )
 
@@ -88,9 +91,11 @@ union
 
 The IPV4 address of the PDP context, if <b>IsIpv6</b> is not set.
 
+
 ### -field Ipv6
 
 The IPV6 address of the PDP context, if <b>IsIpv6</b> is set.
+
 </dd>
 </dl>
 
@@ -102,14 +107,17 @@ The IPV6 address of the PDP context, if <b>IsIpv6</b> is set.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8.1 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

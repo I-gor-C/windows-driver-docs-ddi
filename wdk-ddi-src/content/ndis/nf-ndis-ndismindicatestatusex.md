@@ -7,7 +7,7 @@ old-location: netvista\ndismindicatestatusex.htm
 old-project: netvista
 ms.assetid: df857349-4ae1-470b-b41a-ff014f40b79b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMIndicateStatusEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NdisMIndicateStatusEx</b> function reports a change in the status of a miniport adapter.
 
 
+
 ## -syntax
 
 ````
@@ -61,14 +62,17 @@ The miniport adapter handle that NDIS passed at the
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param StatusIndication [in]
 
 A pointer to an 
      <a href="netvista.ndis_status_indication">NDIS_STATUS_INDICATION</a> structure
      that contains the status information.
 
+
 ## -returns
 None
+
 
 ## -remarks
 When a miniport driver calls 
@@ -85,11 +89,13 @@ A miniport driver can call
     <b>NdisMIndicateStatusEx</b> after it returns from the 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,14 +106,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +127,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,14 +138,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_statusindication_function">Irql_StatusIndication_Function</a>, <a href="devtest.ndis_ndismindicatestatusex">NdisMIndicateStatusEx</a>, <a href="devtest.ndis_wlanassociation">WlanAssociation</a>, <a href="devtest.ndis_wlanconnectionroaming">WlanConnectionRoaming</a>, <a href="devtest.ndis_wlandisassociation">WlanDisassociation</a>, <a href="devtest.ndis_wlantimedassociation">WlanTimedAssociation</a>, <a href="devtest.ndis_wlantimedconnectionroaming">WlanTimedConnectionRoaming</a>, <a href="devtest.ndis_wlantimedconnectrequest">WlanTimedConnectRequest</a>, <a href="devtest.ndis_wlantimedlinkquality">WlanTimedLinkQuality</a>, <a href="devtest.ndis_wlantimedscan">WlanTimedScan</a>
@@ -159,5 +172,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateStatusEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateStatusEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetLowerInstance</b> routine returns an opaque instance pointer for the next lower minifilter driver instance, if there is one, that is attached below a given minifilter driver instance on the same volume. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS FltGetLowerInstance(
 
 Opaque instance pointer for the minifilter driver instance for which the lower minifilter driver instance is requested. 
 
+
 ### -param LowerInstance [out]
 
 Pointer to a caller-allocated variable that receives an opaque minifilter driver instance pointer for the next lower minifilter driver instance. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltGetLowerInstance</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as the following: 
@@ -68,6 +71,7 @@ Pointer to a caller-allocated variable that receives an opaque minifilter driver
 </dl>No lower minifilter driver instance was found. This is a warning code. 
 
  
+
 
 ## -remarks
 One instance is said to be <i>below</i> another if it is attached at a lower altitude on the same volume. The term "altitude" refers to the position that an instance occupies (or should occupy) in the minifilter driver instance stack for a volume. The higher the altitude, the farther the instance is from the base file system in the stack. Only one instance can be attached at a given altitude on a given volume. 
@@ -78,11 +82,13 @@ The string "03333" represents a higher altitude than "100.123456". (Leading and 
 
 <b>FltGetLowerInstance</b> adds a rundown reference to the opaque instance pointer returned in the <i>LowerInstance</i> parameter. When this pointer is no longer needed, the caller must release it by calling <a href="ifsk.fltobjectdereference">FltObjectDereference</a>. Thus every successful call to <b>FltGetLowerInstance</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +99,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +121,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +132,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -155,5 +166,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetLowerInstance routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

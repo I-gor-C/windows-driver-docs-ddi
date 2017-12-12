@@ -7,7 +7,7 @@ old-location: storage\pdoscsi_addr.htm
 old-project: storage
 ms.assetid: ad31cff9-06bd-4c3a-b1e1-5a82cc6b48a2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _PDOSCSI_ADDR, *PPDOSCSI_ADDR, PDOSCSI_ADDR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The PDOSCSI_ADDR structure is used to represent a SCSI address.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _PDOSCSI_ADDR {
 
 An unsigned 8-bitfield that represents the PortNumber as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
 
+
 ### -field ScsiPathId
 
 An unsigned 8-bitfield that represents the PathId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
+
 
 ### -field TargetId
 
 An unsigned 8-bitfield that represents the TargetId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
 
+
 ### -field Lun
 
 An unsigned 8-bitfield that represents the Lun as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ An unsigned 8-bitfield that represents the Lun as defined by the SCSI_ADDRESS st
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

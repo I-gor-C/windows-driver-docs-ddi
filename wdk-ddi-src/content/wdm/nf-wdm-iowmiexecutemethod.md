@@ -7,7 +7,7 @@ old-location: kernel\iowmiexecutemethod.htm
 old-project: kernel
 ms.assetid: 462165e5-2823-4559-bd3e-18850d442cdb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoWMIExecuteMethod
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoWMIExecuteMethod</b> routine runs a WMI class method on the specified WMI data block instance.
 
 
+
 ## -syntax
 
 ````
@@ -62,25 +63,31 @@ NTSTATUS IoWMIExecuteMethod(
 
 Pointer to a WMI data block object. The caller opens the data block object for the WMI class with <a href="kernel.iowmiopenblock">IoWMIOpenBlock</a>. The object must be opened with the WMIGUID_EXECUTE access right.
 
+
 ### -param InstanceName [in]
 
 Specifies the name of the instance of the data block. This value corresponds to the value of the <b>InstanceName</b> property for the block.
+
 
 ### -param MethodId [in]
 
 Specifies the method item ID for the method to be set. The value of this parameter corresponds to the value declared in the <b>WmiMethodId</b> qualifier for the method.
 
+
 ### -param InBufferSize [in]
 
 Specifies the size, in bytes, of input data for the method. The actual input data is passed in the buffer pointed to by the <i>InOutBuffer</i> parameter.
+
 
 ### -param OutBufferSize [in, out]
 
 Pointer to a ULONG that specifies the expected size, bytes, of the data output by the method. The actual output data is returned in the buffer pointed to by the <i>InOutBuffer</i> parameter. If the routine succeeds, it updates the memory location to specify the number of bytes actually stored in <i>InOutBuffer</i>. If the routine fails with STATUS_BUFFER_TOO_SMALL, it returns the number of bytes required to return the data.
 
+
 ### -param InOutBuffer [in, out]
 
 Pointer to the buffer where the caller passes the WMI method's input data, and receives the WMI method's output data.
+
 
 ## -returns
 The routine returns an NTSTATUS code. Possible return values include:
@@ -105,14 +112,17 @@ The routine returns an NTSTATUS code. Possible return values include:
 
  
 
+
 ## -remarks
 <b>IoWMIExecuteMethod</b> determines which drivers might support the specified WMI class and instance name. It issues an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request to each such driver. The driver that exports the data block instance with matching <b>InstanceName</b> property then runs the specified WMI method.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -123,14 +133,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,6 +154,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -151,6 +165,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -161,9 +176,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -178,5 +195,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIExecuteMethod routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIExecuteMethod routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: netvista\rilpositioninfo_v2_2.htm
 old-project: netvista
 ms.assetid: f91d95bf-715d-484b-b44e-19bd2250d304
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILPOSITIONINFO_V2, RILPOSITIONINFO, RILPOSITIONINFO_V2, *LPRILPOSITIONINFO, *LPRILPOSITIONINFO_V2
+ms.date: 12/8/2017
+ms.keywords: RILPOSITIONINFO_V2, RILPOSITIONINFO_V2, *LPRILPOSITIONINFO, RILPOSITIONINFO, *LPRILPOSITIONINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

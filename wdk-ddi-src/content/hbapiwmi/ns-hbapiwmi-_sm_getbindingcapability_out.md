@@ -7,7 +7,7 @@ old-location: storage\sm_getbindingcapability_out.htm
 old-project: storage
 ms.assetid: 7dfa36be-ab05-478d-b47a-783e599545bf
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SM_GetBindingCapability_OUT, *PSM_GetBindingCapability_OUT, SM_GetBindingCapability_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The SM_GetBindingCapability_OUT structure is used to receive output parameters from the SM_GetBindingCapability method.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _SM_GetBindingCapability_OUT {
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
 
+
 ### -field Flags
 
 The HBA_BIND_CAPABILITY binding capabilities.
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the SM_GetBindingCapability_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

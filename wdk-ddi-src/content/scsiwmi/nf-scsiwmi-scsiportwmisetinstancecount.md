@@ -7,7 +7,7 @@ old-location: storage\scsiportwmisetinstancecount.htm
 old-project: storage
 ms.assetid: 0de2c766-cd3c-46ff-bb78-f1e4c37af2c0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: ScsiPortWmiSetInstanceCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ScsiPortWmiSetInstanceCount</b> specifies the number of instances for which data buffers must be set aside within the <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a> structure in the request context. 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,27 @@ BOOLEAN ScsiPortWmiSetInstanceCount(
 
 Pointer to a structure of type <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. 
 
+
 ### -param InstanceCount [in]
 
 Contains the number of instances for which the minidriver will provide data. 
 
+
 ### -param BufferAvail [out]
 
 Contains, on return, the number of bytes of buffer space available for describing instance names and data. The value that is returned in this member can be passed to routines <a href="storage.scsiportwmisetdata">ScsiPortWmiSetData</a> and <a href="storage.scsiportwmisetinstancename">ScsiPortWmiSetInstanceName</a> in the <i>BufferAvail </i>parameter of those routines. 
+
 The <b>ScsiPortWmiSetInstanceCount</b> routine initializes an array of pointers to data buffers, with one array element for each instance. If there is not enough memory available in the WNODE to initialize an array of size <i>InstanceCount</i>, a zero will be returned in this member. 
+
 
 ### -param SizeNeeded [out]
 
 Indicates, on input, the number of bytes needed to describe the entire WNODE <i>before </i>configuring the internal arrays in the WNODE. On return, this member will contain the size of the entire WNODE, including the newly initialized arrays within the WNODE. 
 
+
 ## -returns
 The <b>ScsiPortWmiSetInstanceCount</b> routine returns <b>TRUE</b> if the operation succeeds and <b>FALSE</b> if the WNODE contained within the request context is not of type <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>.
+
 
 ## -remarks
 The minidriver must call <b>ScsiPortWmiSetInstanceCount</b> before calling either <a href="storage.scsiportwmisetdata">ScsiPortWmiSetData</a> or <a href="storage.scsiportwmisetinstancename">ScsiPortWmiSetInstanceName</a>. The minidriver should only call <b>ScsiPortWmiSetInstanceCount</b> once. 
@@ -85,11 +92,13 @@ The <b>ScsiPortWmiSetInstanceCount</b> routine requires the WNODE structure that
 
 The memory allocated for the request context must remain valid until after the miniport driver calls <b>ScsiPortWmiPostProcess</b>, and <b>ScsiPortWmiPostProcess</b> returns the final SRB status and buffer size. If the SRB can pend, the memory for the request context should be allocated from the SRB extension. If the SRB cannot pend, the memory can be allocated from a stack frame that does not go out of scope.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +109,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +132,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortWmiSetInstanceCount function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortWmiSetInstanceCount function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

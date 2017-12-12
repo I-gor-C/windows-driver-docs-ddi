@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>RtlAddAccessAllowedAce</b> routine adds an access-allowed access control entry (ACE) to an access control list (ACL). The access is granted to the specified security identifier (SID). 
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ NTSTATUS RtlAddAccessAllowedAce(
 
 Pointer to a caller-allocated buffer containing the ACL to be modified. <b>RtlAddAccessAllowedAce</b> adds an access-allowed ACE to the end of this ACL. The ACE is in the form of an ACCESS_ALLOWED_ACE structure.
 
+
 ### -param AceRevision [in]
 
 ACL revision level of the ACE to be added. Windows version requirments are the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -75,6 +78,7 @@ ACL revision level of the ACE to be added. Windows version requirments are the f
 </td>
 <td width="60%">
 The revision level valid on all Windows versions.
+
 </td>
 </tr>
 <tr>
@@ -85,6 +89,7 @@ The revision level valid on all Windows versions.
 </td>
 <td width="60%">
 The revision level valid starting with Windows 2000.
+
 <div class="alert"><b>Note</b>  <i>AceRevision</i> must be ACL_REVISION_DS if the ACL in <i>Acl</i> contains an object-specific ACE.</div>
 <div> </div>
 </td>
@@ -92,13 +97,16 @@ The revision level valid starting with Windows 2000.
 </table>
  
 
+
 ### -param AccessMask [in]
 
 Bitmask of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags specifying the access rights to be granted to the specified SID. For more information, see the description of the <i>DesiredAccess</i> parameter of <b>ZwCreateFile</b>. 
 
+
 ### -param Sid [in]
 
 Pointer to the SID structure representing a user, group, or logon account that is being granted access. 
+
 
 ## -returns
 <b>RtlAddAccessAllowedAce</b> can return one of the following values:
@@ -120,14 +128,17 @@ Pointer to the SID structure representing a user, group, or logon account that i
 
  
 
+
 ## -remarks
 For more information about security and access control, see the documentation on these topics in the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -138,6 +149,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,6 +160,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -158,6 +171,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -168,9 +182,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -221,5 +237,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAddAccessAllowedAce routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

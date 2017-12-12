@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # IEEE 1394 bus
 
+## -description
 Overview of the IEEE 1394 bus technology.
 
 To develop IEEE 1394 bus, you need these headers:

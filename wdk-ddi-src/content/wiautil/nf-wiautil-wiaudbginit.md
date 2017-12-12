@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiauDbgInit</b> function initializes WIA debugging.
 
 
+
 ## -syntax
 
 ````
@@ -57,17 +58,21 @@ void __stdcall wiauDbgInit(
 
 Is the handle to the DLL instance.
 
+
 ## -returns
 None
 
+
 ## -remarks
 If the <b>wiauDbgInit</b> function not called, all DLLs loaded by a process inherit the debug flags of that process. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +83,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

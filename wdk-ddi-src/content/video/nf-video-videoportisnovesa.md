@@ -7,7 +7,7 @@ old-location: display\videoportisnovesa.htm
 old-project: display
 ms.assetid: e3de4e58-c3e7-426f-bc96-b45cad6b5807
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortIsNoVesa
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>VideoPortIsNoVesa</b> function determines whether a video miniport driver that does not support Plug and Play (PnP) is restricted to legacy VGA resources.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ If <b>VideoPortIsNoVesa</b> returns <b>TRUE</b>, then a non-PnP video miniport d
 
 If <b>VideoPortIsNoVesa</b> returns <b>TRUE</b>, then a non-PnP video miniport driver must restrict its hardware access to legacy VGA resources. Otherwise, the video miniport driver is permitted to use non-legacy VGA resources.
 
+
 ## -remarks
 This function is useful only to vga.sys, which is a system-supplied video miniport driver that does not support PnP. This function provides no pertinent information to video miniport drivers that support PnP and therefore is no use to IHVs.
 
@@ -66,11 +68,13 @@ If <b>VideoPortIsNoVesa</b> returns <b>TRUE</b>, then the video miniport driver 
 
 For more information about the Int10 functions, see <a href="display.int10_functions_implemented_by_the_video_port_driver">Int10 Functions Implemented by the Video Port Driver</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,14 +85,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Server 2003 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,6 +106,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -109,6 +117,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -119,9 +128,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

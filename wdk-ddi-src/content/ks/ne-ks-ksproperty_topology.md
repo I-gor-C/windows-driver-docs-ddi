@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 Specify to query for the array of functional categories that a driver supports.
 
+
 ### -field KSPROPERTY_TOPOLOGY_NODES
 
 Specify for a list of the topology nodes and node types GUIDs supported by the filter.
+
 
 ### -field KSPROPERTY_TOPOLOGY_CONNECTIONS
 
 Specify to query all connections between nodes of a KS filter.
 
+
 ### -field KSPROPERTY_TOPOLOGY_NAME
 
 Specify to provide the localized Unicode string name of the node.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Specify to provide the localized Unicode string name of the node.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

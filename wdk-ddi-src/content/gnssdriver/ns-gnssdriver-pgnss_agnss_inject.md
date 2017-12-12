@@ -41,6 +41,7 @@ req.irql:
 This structure defines the parameters for AGNSS injection.
 
 
+
 ## -syntax
 
 ````
@@ -66,42 +67,53 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field InjectionType
 
 Indicates the specific type of AGNSS injection. 
+
 Depending on the type, the driver must access the specific data element of the structure. For example, if the type is GNSS_AGNSS_PositionInjection, use the Position element.
+
 
 ### -field InjectionStatus
 
 Indicates whether any error was encountered in gathering the needed injection data. 
+
 The driver must ignore the injection if this field does not indicate success.
+
 
 ### -field InjectionDataSize
 
 Size of the injection data.
 
+
 ### -field Unused[512]
 
 Padding buffer.
+
 
 ### -field Time
 
 
 <a href="sensors.gnss_agnss_injecttime">GNSS_AGNSS_INJECTTIME</a> contains the format for AGNSS time injection.
 
+
 ### -field Position
 
 
 <a href="sensors.gnss_agnss_injectposition">GNSS_AGNSS_INJECTPOSITION</a> contains  the format for AGNSS position injection.
 
+
 ### -field BlobData
 
 
 <a href="sensors.gnss_agnss_injectblob">GNSS_AGNSS_INJECTBLOB</a>  contains the format for AGNSS extended ephemeris injection.
+
 
 ## -remarks
 
@@ -111,6 +123,7 @@ Padding buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 9D1DA7D6-4200-4B5A-9EA5-0455DF56D6D8
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _PC_EXIT_LATENCY, *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
+ms.keywords: _PC_EXIT_LATENCY, PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 This topic discusses the PC_EXIT_LATENCY enum, and describes its members. The latency times map to specific maximum times in which the device must be able to exit its sleep state and enter the fully functional state (D0).
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _PC_EXIT_LATENCY {
 
 Indicates a 0-millisecond latency. This means "Do not power down" and it  will only be sent when a device is in the D0 state.
 
+
 ### -field PcExitLatencyFast
 
 Indicates a 35-millisecond resume latency.
 
+
 ### -field PcExitLatencyResponsive
 
 Indicates a 300-millisecond resume latency.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Indicates a 300-millisecond resume latency.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

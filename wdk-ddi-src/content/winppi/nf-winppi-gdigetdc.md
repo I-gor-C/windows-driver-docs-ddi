@@ -7,7 +7,7 @@ old-location: print\gdigetdc.htm
 old-project: print
 ms.assetid: f8aacb6d-4e8a-4fdb-902c-3d0efbc40f08
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GdiGetDC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GdiGetDC</b> function returns a handle to a printer's device context.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ HDC GdiGetDC(
 
 Caller-supplied spool file handle, obtained by a previous call to <a href="print.gdigetspoolfilehandle">GdiGetSpoolFileHandle</a>.
 
+
 ## -returns
 If the operation succeeds, the function returns a device context handle. Otherwise the function returns <b>NULL</b>.
+
 
 ## -remarks
 The <b>GdiGetDC</b> function is exported by gdi32.dll for use within a print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> function.
@@ -67,11 +70,13 @@ A print processor can call <b>GdiGetDC</b> to obtain a printer's device context 
 
 For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +109,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ The <b>IOCTL_LAMP_GET_CAPABILITIES_WHITE</b>
    control code queries the capabilities of the lamp when the device is configured to emit white light.
 
 
+
 ## -syntax
 
 ````
@@ -55,14 +56,18 @@ The <b>IOCTL_LAMP_GET_CAPABILITIES_WHITE</b>
 ### -input-buffer
 <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> points to a buffer of type <a href="..\lamp\ns-lamp-lamp_capabilities_white.md">LAMP_CAPABILITIES_WHITE</a>.
 
+
 ### -input-buffer-length
 Length of the buffer.
+
 
 ### -output-buffer
 <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> is filled with all capabilities supported by the lamp hardware.
 
+
 ### -output-buffer-length
 <code>IO_STACK_LOCATION.Parameters.DeviceIoControl.OutputBufferLength</code> is the length of the buffer (in bytes) passed in the <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> field.
+
 
 ### -in-out-buffer
 
@@ -76,6 +81,7 @@ Length of the buffer.
 I/O Status block
 The driver sets <code>Irp-&gt;IoStatus.Status</code> to <b>STATUS_SUCCESS</b> or the appropriate error status. It will set <code>Irp-&gt;IoStatus.Information</code> to the number of bytes required to hold the buffer.
 
+
 ## -remarks
 By requirement, a lamp whose driver supports the <b>GUID_DEVINTERFACE_LAMP</b> interface is required to support emitting white light.
 
@@ -83,11 +89,13 @@ The payload of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_capabilities_white.
 
 The <b>IsLightIntensityAdjustable</b> field indicates whether the luminance level can be programmed. If this field evaluates to <b>FALSE</b>, it means that the underlying device only supports the on/off switch and the light intensity cannot be adjusted.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

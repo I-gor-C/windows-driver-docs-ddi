@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-command-list-funcs-video-process-0030.htm
 old-project: display
 ms.assetid: b45b79bd-90d6-4bc5-b56a-99d2b71e216a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Command list functions for video process.
 
 
+
 ## -syntax
 
 ````
@@ -66,45 +67,56 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030 {
 
 Close command list.
 
+
 ### -field pfnResetCommandList
 
 Reset command list.
+
 
 ### -field pfnDiscardResource
 
 Discard resource.
 
+
 ### -field pfnSetMarker
 
 Set marker.
+
 
 ### -field pfnSetPredication
 
 Set predication.
 
+
 ### -field pfnBeginQuery
 
 Begin query.
+
 
 ### -field pfnEndQuery
 
 End query.
 
+
 ### -field pfnResolveQueryData
 
 Resolve query data.
+
 
 ### -field pfnResourceBarrier
 
 Resource barrier.
 
+
 ### -field pfnProcessFrame
 
 Process frame.
 
+
 ### -field pfnSetProtectedResourceSession
 
 Set protected resource session.
+
 
 ## -remarks
 
@@ -114,6 +126,7 @@ Set protected resource session.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

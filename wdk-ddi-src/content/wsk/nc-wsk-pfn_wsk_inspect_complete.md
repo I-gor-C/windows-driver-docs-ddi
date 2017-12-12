@@ -7,7 +7,7 @@ old-location: netvista\wskinspectcomplete.htm
 old-project: netvista
 ms.assetid: 31846ec9-0a4b-4e1f-9c14-c1b139f39c55
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   request that was received on a listening socket that has conditional accept mode enabled.
 
 
+
 ## -prototype
 
 ````
@@ -65,11 +66,13 @@ A pointer to a
      listening socket on which the WSK application received the incoming connection request that it is
      inspecting.
 
+
 ### -param InspectID [in]
 
 A pointer to a 
      <a href="netvista.wsk_inspect_id">WSK_INSPECT_ID</a> structure. The contents of
      the structure identify the specific connection request that the WSK application is inspecting.
+
 
 ### -param Action [in]
 
@@ -78,12 +81,14 @@ A value that specifies whether the WSK application accepts or rejects the incomi
      <b>WskInspectAccept</b> or 
      <b>WskInspectReject</b> for this parameter.
 
+
 ### -param Irp [in, out]
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the resume operation
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskInspectComplete</b> returns one of the following NTSTATUS codes:
@@ -108,6 +113,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 </dl>An error occurred. The IRP will be completed with failure status.
 
  
+
 
 ## -remarks
 A WSK application calls the 
@@ -164,11 +170,13 @@ If the WSK application calls the
     <b>WskInspectAccept</b> in the 
     <i>Action</i> parameter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -179,15 +187,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -198,9 +209,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -233,5 +246,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_INSPECT_COMPLETE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_INSPECT_COMPLETE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

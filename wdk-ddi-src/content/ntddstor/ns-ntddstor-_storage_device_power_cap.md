@@ -7,8 +7,8 @@ old-location: storage\storage_device_power_cap.htm
 old-project: storage
 ms.assetid: B13D311F-FFC4-4A40-AF0C-6E7115174FD1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP, *PSTORAGE_DEVICE_POWER_CAP
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_DEVICE_POWER_CAP, *PSTORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure is used as an input and output buffer for the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_device_power_cap.md">IOCTL_STORAGE_DEVICE_POWER_CAP</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _STORAGE_DEVICE_POWER_CAP {
 
 The version of this structure. This should be set to STORAGE_DEVICE_POWER_CAP_VERSION_V1.
 
+
 ### -field Size
 
 The size of this structure.
+
 
 ### -field Units
 
 The units of the MaxPower value.
 
+
 ### -field MaxPower
 
 Contains the value of the actual maximum power consumption level of the device. This may be equal to, less than, or greater than the desired threshold, depending on what the device supports.
+
 
 ## -remarks
 
@@ -79,22 +84,27 @@ Contains the value of the actual maximum power consumption level of the device. 
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

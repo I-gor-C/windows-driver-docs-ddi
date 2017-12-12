@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_color_basis.htm
 old-project: display
 ms.assetid: c2a8973d-bdab-44a6-b88b-482355ada1e5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_COLOR_BASIS, D3DKMDT_COLOR_BASIS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The D3DKMDT_COLOR_BASIS enumeration contains constants that indicate the color basis used to encode the content of a video present source or the signal on a video present target.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum _D3DKMDT_COLOR_BASIS {
 
 Indicates that a variable of type D3DKMDT_COLOR_BASIS has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_CB_INTENSITY
 
 Indicates an encoding scheme that relies only on intensity. This basis is used for monochrome images.
+
 
 ### -field D3DKMDT_CB_SRGB
 
 Indicates the SRGB color basis.
 
+
 ### -field D3DKMDT_CB_SCRGB
 
 Indicates the SCRGB color basis.
+
 
 ### -field D3DKMDT_CB_YCBCR
 
 Indicates the YCBCR color basis.
 
+
 ### -field D3DKMDT_CB_YPBPR
 
 Indicates the YPBPR color basis.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ Indicates the YPBPR color basis.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

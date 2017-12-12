@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_port_property_profile.htm
 old-project: netvista
 ms.assetid: DFB7239F-4A6B-4C98-884E-FAC1A0DE2024
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE, *PNDIS_SWITCH_PORT_PROPERTY_PROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure specifies a policy property for a Hyper-V extensible switch port that the extensible switch extension saves in its own policy store instead of in the Hyper-V policy store. In this case, policy definitions are identified by property profiles within the driver's policy store.
 
 
+
 ## -syntax
 
 ````
@@ -70,13 +71,18 @@ typedef struct _NDIS_SWITCH_PORT_PROPERTY_PROFILE {
 ### -field Header
 
 The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:
+
+
 
 
 ### -field NDIS_SWITCH_PORT_PROPERTY_PROFILE_REVISION_1
 
 Original version for NDIS 6.30 and later.
+
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PROPERTY_PROFILE_REVISION_1.
+
 </dd>
 </dl>
 
@@ -84,41 +90,52 @@ Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PROPERTY_PROFILE_REVISION_
 
 A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
 
+
 ### -field ProfileName
 
 An NDIS_SWITCH_PORT_PROPERTY_PROFILE_NAME value that specifies the user-friendly name of the profile property.
+
 
 ### -field ProfileId
 
 A GUID value that uniquely identifies the profile property.
 
+
 ### -field VendorName
 
 An NDIS_VENDOR_NAME value that specifies the user-friendly name of the vendor that defined the port profile.
+
 
 ### -field VendorId
 
 A GUID value that identifies the vendor that defined the port profile.
 
+
 ### -field BindingType
 
 A UINT32 value that contains a proprietary value that is defined by the independent software vendor (ISV).
+
 
 ### -field NetCfgInstanceId
 
 A GUID value that specifies the <b>NetCfgInstanceId</b> registry value of the underlying network adapter connection for which the property is applied.
 
 
+
 The <b>NetCfgInstanceId</b> value is specified for the network adapter connection through an object identifier (OID) set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598263">OID_SWITCH_NIC_CREATE</a>.
+
 
 ### -field PciLocation
 
 A structure that specifies the PCI location of the underlying physical network adapter that is specified by the <b>NetCfgInstanceId</b> member.
+
 For more information, see the Remarks section.
+
 
 ### -field PciSegmentNumber
 
 A value that specifies the group of PCI buses on which the physical network adapter is attached.
+
 
 
 ### -field PciBusNumber
@@ -126,9 +143,11 @@ A value that specifies the group of PCI buses on which the physical network adap
 A value that specifies the current PCI bus number on which the physical network adapter is attached.
 
 
+
 ### -field PciDeviceNumber
 
 A value that specifies the device number for the physical network adapter on the PCI bus.
+
 
 <div class="alert"><b>Note</b>  The PCI device number is also known as the <i>PCI slot number</i>.</div>
 <div> </div>
@@ -136,6 +155,7 @@ A value that specifies the device number for the physical network adapter on the
 ### -field PciFunctionNumber
 
 A value that specifies the function number of a logical device on the physical network adapter.
+
 </dd>
 </dl>
 
@@ -143,9 +163,11 @@ A value that specifies the function number of a logical device on the physical n
 
 A UINT32 value that specifies a unique identifier for the data that is contained in the <b>CdnLabel</b> member.
 
+
 ### -field CdnLabel
 
 An  NDIS_SWITCH_PORT_PROPERTY_PROFILE_CDN_LABEL value that specifies the PCI Express (PCIe) CDN label for the location of the physical network adapter. A CDN label provides consistent device locations across similar hardware locations.
+
 
 ## -remarks
 The <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure is used by the extension to reference a policy property within a private policy store instead of the Hyper-V policy store. This allows the independent software vendor (ISV) to populate and manage this private policy store through private channels and interfaces.  Vendors can distinguish their profiles from other vendors' profiles using the <i>VendorName</i> and <i>VendorId</i> fields. 
@@ -164,19 +186,23 @@ The <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure follows the <a href="netv
 
 The <b>PciLocation</b> and <b>CdnLabel</b> members are only relevant if the property profile specifies a policy for an underlying physical network adapter that is attached to the extensible switch external network adapter. For example, if the external network adapter is bound to an extensible switch team of adapters, these members could specify policies for a single adapter from that team. For more information about the extensible switch team, see <a href="netvista.types_of_physical_network_adapter_configurations">Types of Physical Network Adapter Configurations</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -212,5 +238,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_PROFILE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_PROFILE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

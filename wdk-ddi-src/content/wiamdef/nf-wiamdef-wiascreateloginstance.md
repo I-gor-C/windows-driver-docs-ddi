@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasCreateLogInstance</b> function creates an instance of a logging object.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ HRESULT _stdcall wiasCreateLogInstance(
 
 Pointer to the module handle, which is used to filter output.
 
+
 ### -param ppIWiaLogEx [out]
 
 Pointer to a memory location that receives the address of the logging interface.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).
+
 
 ## -remarks
 
@@ -73,6 +77,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +88,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +120,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

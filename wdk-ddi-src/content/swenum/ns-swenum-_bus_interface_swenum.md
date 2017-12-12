@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 7e667dd9-8ed1-49ef-a6ef-0d079d41db86
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM
+ms.keywords: _BUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The BUS_INTERFACE_SWENUM structure describes the demand-load bus enumerator object's interface.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _BUS_INTERFACE_SWENUM {
 
 Specifies the exported <a href="kernel.interface">INTERFACE</a>.
 
+
 ### -field ReferenceDeviceObject
 
 Pointer to a driver-supplied <a href="stream.ksreferencesoftwarebusobject">KsReferenceSoftwareBusObject</a> routine.
+
 
 ### -field DereferenceDeviceObject
 
 Pointer to a driver-supplied <a href="stream.ksdereferencesoftwarebusobject">KsDereferenceSoftwareBusObject</a> routine.
 
+
 ### -field QueryReferenceString
 
 Pointer to a driver-supplied <a href="stream.ksquerysoftwarebusinterface">KsQuerySoftwareBusInterface</a> routine.
+
 
 ## -remarks
 A driver obtains a BUS_INTERFACE_SWENUM interface by creating and sending an IRP_MJ_PNP request that specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> minor function code. To do this, the driver should:
@@ -85,11 +90,13 @@ Set a completion routine and send the request down the driver stack.
 
 If your request is successful, the system fills in the BUS_INTERFACE_SWENUM structure pointed to by <b>Parameters.QueryInterface.Interface</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

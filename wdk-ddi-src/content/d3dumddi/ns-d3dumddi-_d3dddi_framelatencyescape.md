@@ -7,7 +7,7 @@ old-location: display\d3dddi_framelatencyescape.htm
 old-project: display
 ms.assetid: 19395349-375E-46AF-BCCF-FF5C92B374C4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_FRAMELATENCYESCAPE, D3DDDI_FRAMELATENCYESCAPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies an app's maximum frame latency.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DDDI_FRAMELATENCYESCAPE {
 
 [in] The frame latency requested by the driver, specified as the number of frames that are allowed to be stored in a queue, before submission for rendering.
 
+
 ## -remarks
 
 
@@ -64,22 +66,27 @@ typedef struct _D3DDDI_FRAMELATENCYESCAPE {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

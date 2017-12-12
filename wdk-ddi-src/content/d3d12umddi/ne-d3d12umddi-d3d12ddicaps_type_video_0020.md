@@ -7,7 +7,7 @@ old-location: display\d3d12ddicaps_type_video_0020.htm
 old-project: display
 ms.assetid: 3B95996D-EB7C-4DCF-B00C-BA5AFEFD4110
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDICAPS_TYPE_VIDEO_0020, D3D12DDICAPS_TYPE_VIDEO_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains capability types for video.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 {
 
 Check if a decode profile, bitstream encryption, resolution, and format are supported
 
+
 ### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_PROFILES
 
 Retrieve the list of decode profiles supported by the adapter.  
+
 
 ### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS
 
  Retrieves the supported decode formats. 
 
+
 ### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT
 
 Check whether a colorspace conversion, format conversion, and scale are supported.  
+
 
 ### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES
 
 Retrieve the list of bitstream encryption schemes supported by the adapter. 
 
+
 ### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT
 
 Retrieves the video processor capabilities.  
+
 
 ### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_MAX_INPUT_STREAMS
 
 The maximum number of streams that can be enabled at the same time.
 
+
 ### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_REFERENCE_INFO
 
 Retrieves the number of past and future frames required for a given deinterlace mode, filters, frame rate conversion, and features.  
+
 
 ## -remarks
 
@@ -99,6 +108,7 @@ Retrieves the number of past and future frames required for a given deinterlace 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

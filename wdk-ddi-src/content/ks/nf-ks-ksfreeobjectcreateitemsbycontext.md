@@ -41,6 +41,7 @@ req.irql:
 Frees all create items with a specific context.
 
 
+
 ## -syntax
 
 ````
@@ -57,21 +58,26 @@ NTSTATUS KsFreeObjectCreateItemsByContext(
 
 Points to the device header on which the create items are attached.
 
+
 ### -param Context [in]
 
 Contains the context of the create items to free. All create items with this context value will be freed.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the item was freed, else STATUS_OBJECT_NAME_NOT_FOUND.
 
+
 ## -remarks
 Instead of freeing create items by name as <b>KsFreeObjectCreateItems</b> does, this function will free all create items with a specific context.  For example, all create items associated with a filter factory will have the factory as context and can be freed simultaneously with this call instead of one at a time. Note that this function does not assume that the caller is serializing multiple changes to the create entry list.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -108,5 +116,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFreeObjectCreateItemsByContext function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

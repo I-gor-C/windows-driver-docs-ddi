@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>HidP_GetScaledUsageValue</b> routine returns the signed and scaled result of a HID control value extracted from a HID report.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ NTSTATUS __stdcall HidP_GetScaledUsageValue(
 
 Specifies a <b>HIDP_REPORT_TYPE</b> enumerator value that identifies the type of HID report that contains the <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usage</a> value.
 
+
 ### -param UsagePage [in]
 
 Specifies the usage page of the value to extract.
+
 
 ### -param LinkCollection [in]
 
 Specifies the link collection identifier of the value to extract. A LinkCollection value of zero identifies the top-level collection.
 
+
 ### -param Usage [in]
 
 Specifies the usage of the value to extract.
+
 
 ### -param UsageValue [out]
 
 Pointer to the buffer in which the routine returns the signed and scaled value.
 
+
 ### -param PreparsedData [in]
 
 Pointer to the <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a> of the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> that generated the report located at <i>Report</i>.
+
 
 ### -param Report [in]
 
 Pointer to the report that contains the usage.
 
+
 ### -param ReportLength [in]
 
 Specifies the length, in bytes, of the report located at <i>Report</i>.
+
 
 ## -returns
 <b>HidP_GetScaledUsageValue</b> returns one of the following status values:
@@ -120,6 +129,7 @@ Specifies the length, in bytes, of the report located at <i>Report</i>.
 
  
 
+
 ## -remarks
 The caller-allocated buffers supplied at <i>PreparsedData</i>, <i>UsageValue</i>, and<i> Report </i>must be allocated from nonpaged pool.
 
@@ -129,11 +139,13 @@ If the routine returns status HIDP_STATUS_BAD_LOG_PHY_VALUES, an application or 
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -144,14 +156,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +177,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -172,9 +188,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -192,5 +210,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetScaledUsageValue routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

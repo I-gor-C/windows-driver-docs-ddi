@@ -7,7 +7,7 @@ old-location: display\configureauthenticatedchannel.htm
 old-project: display
 ms.assetid: 95485e96-fa4f-4c88-b88b-97b79f507abd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>ConfigureAuthenticatedChannel</b> function sets state within an authenticated channel. 
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ __checkReturn HRESULT APIENTRY ConfigureAuthenticatedChannel(
 
  A handle to the display device (graphics context).
 
+
 ### -param pData [in, out]
 
  A pointer to a <a href="display.d3dddiarg_configureauthenticatedchannel">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a> structure that describes how to configure an authenticated channel. This structure contains an input buffer that describes how to configure the authenticated channel and an output buffer with configuration information. 
+
 
 ## -returns
 <b>ConfigureAuthenticatedChannel</b> returns one of the following values:
@@ -75,6 +78,7 @@ __checkReturn HRESULT APIENTRY ConfigureAuthenticatedChannel(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a> could not allocate the required memory for it to complete.
 
  
+
 
 ## -remarks
 The input buffer contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) that the driver must authenticate. The input buffer also contains the driver's handle to the authenticated channel, a sequence number, and a GUID that indicates the configuration type.
@@ -115,11 +119,13 @@ This configuration can only be made for channel type D3DDDIAUTHENTICATEDCHANNEL_
 
 The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE structure. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -130,14 +136,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -154,5 +163,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

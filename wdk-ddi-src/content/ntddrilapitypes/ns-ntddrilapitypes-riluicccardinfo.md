@@ -7,7 +7,7 @@ old-location: netvista\riluicccardinfo.htm
 old-project: netvista
 ms.assetid: 761f1ab6-75e6-4c40-b79c-01f2e92df495
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCCARDINFO, *LPRILUICCCARDINFO, RILUICCCARDINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILUICCCARDINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

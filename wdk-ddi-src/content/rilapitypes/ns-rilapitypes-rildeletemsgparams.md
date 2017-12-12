@@ -7,8 +7,8 @@ old-location: netvista\rildeletemsgparams_2.htm
 old-project: netvista
 ms.assetid: 793e9724-fff0-4bdc-a8ed-1e62fa54b4df
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS, RILDELETEMSGPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILDELETEMSGPARAMS, RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILDELETEMSGPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

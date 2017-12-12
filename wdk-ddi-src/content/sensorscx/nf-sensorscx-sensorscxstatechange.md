@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Used to initialize a state change.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ FORCEINLINE VOID SensorsCxStateChange(
 
 Holds information on the sensor being managed by the driver.
 
+
 ### -param State [in]
 
 Holds information on the state of the sensor.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -73,6 +77,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_inbound_icmp_error_v6.htm
 old-project: netvista
 ms.assetid: ffdd1cd9-0a03-4b5c-bc4e-f1067e2f2d7b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_INBOUND_ICMP_ERROR_V6_, FWPS_FIELDS_INBOUND_ICMP_ERROR_V6
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The FWPS_FIELDS_INBOUND_ICMP_ERROR_V6 enumeration type specifies the data field identifiers for the
   FWPS_LAYER_INBOUND_ICMP_ERROR_V6 and FWPS_LAYER_INBOUND_ICMP_ERROR_V6_DISCARD 
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layers</a>.
+
 
 
 ## -syntax
@@ -83,17 +84,21 @@ typedef enum FWPS_FIELDS_INBOUND_ICMP_ERROR_V6_ {
 
 The IP protocol number that is embedded in the ICMP packet, as specified in RFC 1700.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_IP_LOCAL_ADDRESS
 
 The local IP address.
+
 
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_IP_REMOTE_ADDRESS
 
 The remote IP address.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_EMBEDDED_REMOTE_ADDRESS
 
 The remote IP address that is embedded in the ICMP packet.
+
 
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_EMBEDDED_LOCAL_ADDRESS_TYPE
 
@@ -101,40 +106,49 @@ The local IP address type that is embedded in the ICMP packet. The possible cond
      defined by the 
      <a href="netvista.nl_address_type">NL_ADDRESS_TYPE</a> enumeration.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_EMBEDDED_LOCAL_PORT
 
 The local transport protocol port number that is embedded in the ICMP packet.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_EMBEDDED_REMOTE_PORT
 
 The remote transport protocol port number that is embedded in the ICMP packet.
+
 
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_IP_LOCAL_INTERFACE
 
 The locally unique identifier (<a href="netvista.luid">LUID</a>) for the network interface associated with the
      local IP address.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_ICMP_TYPE
 
 The ICMP type field, as specified in RFC 792.
+
 
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_ICMP_CODE
 
 The ICMP code field, as specified in RFC 792.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_INTERFACE_INDEX
 
 The index of the local network interface, as enumerated by the network stack.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_SUB_INTERFACE_INDEX
 
 The LUID for the network interface that is associated with the arrival IP address
+
 
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_INTERFACE_TYPE
 
 The type of the local network interface, as defined by the Internet Assigned Numbers Authority
      (IANA). For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.
+
 
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_TUNNEL_TYPE
 
@@ -144,10 +158,12 @@ The encapsulation method used by a tunnel if the
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
      Windows SDK.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_IP_ARRIVAL_INTERFACE
 
 The LUID for the network interface that is associated with the arrival IP address.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
      Windows.</div>
 <div> </div>
@@ -156,6 +172,7 @@ The LUID for the network interface that is associated with the arrival IP addres
 
 The index of the arrival network interface, as enumerated by the network stack.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
      Windows.</div>
 <div> </div>
@@ -166,6 +183,7 @@ The type of the arrival network interface, as defined by the Internet Assigned N
      (IANA). For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
      Windows.</div>
 <div> </div>
@@ -178,6 +196,7 @@ The encapsulation method used by a tunnel if the
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
      Windows SDK.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
      Windows.</div>
 <div> </div>
@@ -188,11 +207,13 @@ A bitwise OR of a combination of filtering condition flags. For information abou
      flags, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.
 
+
 ### -field FWPS_FIELD_INBOUND_ICMP_ERROR_V6_ARRIVAL_INTERFACE_PROFILE_ID
 
 The profile identifier (network category) of the arrival interface. The possible network category
      values are: public (1), private (2), or domain (3).
      
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
 
@@ -200,6 +221,7 @@ The profile identifier (network category) of the arrival interface. The possible
 
 The time that has passed since the last media state change occurred for the network interface.
      
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
 
@@ -207,6 +229,7 @@ The time that has passed since the last media state change occurred for the netw
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 The following macros in 
@@ -231,19 +254,23 @@ The encapsulation method used by a tunnel if the IfType member of the IP_ADAPTER
        <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
        Windows SDK.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Unless otherwise noted, supported starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -263,5 +290,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_INBOUND_ICMP_ERROR_V6 enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_INBOUND_ICMP_ERROR_V6 enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

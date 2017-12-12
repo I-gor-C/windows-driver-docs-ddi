@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>PIPE_TYPE</b> data type is used as input to the <a href="base.deviceiocontrol">DeviceIoControl</a> function, if the I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_cancel_io.md">IOCTL_CANCEL_IO</a> or <a href="..\usbscan\ni-usbscan-ioctl_reset_pipe.md">IOCTL_RESET_PIPE</a>. An interrupt pipe, a bulk IN pipe, and a bulk OUT pipe are associated with each device handle supplied to <b>DeviceIoControl</b>. The specified PIPE_TYPE value indicates on which of these pipes the operation should be performed, as indicated in the following table. 
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef enum  {
 
 The operation should be performed on the interrupt pipe.
 
+
 ### -field READ_DATA_PIPE
 
 The operation should be performed on the bulk IN pipe.
+
 
 ### -field WRITE_DATA_PIPE
 
 The operation should be performed on the bulk OUT pipe.
 
+
 ### -field ALL_PIPE
 
 The operation should be performed on <i>all</i> transfer pipes (not just the pipes associated with the device handle supplied to <a href="base.deviceiocontrol">DeviceIoControl</a>).
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ The operation should be performed on <i>all</i> transfer pipes (not just the pip
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

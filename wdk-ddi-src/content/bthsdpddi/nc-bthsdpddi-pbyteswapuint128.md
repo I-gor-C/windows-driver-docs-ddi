@@ -42,6 +42,7 @@ The Bluetooth
   <b>SdpByteSwapUint128</b> function is used to reverse the byte order of an unsigned 128-bit integer.
 
 
+
 ## -prototype
 
 ````
@@ -61,12 +62,15 @@ void SdpByteSwapUint128(
 
 A pointer to an unsigned 128-bit integer for which to reverse the byte order.
 
+
 ### -param pOutUint128 
 
 A pointer to a variable that receives the converted 128-bit integer.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The 
@@ -78,11 +82,13 @@ The
 Bluetooth profile drivers can obtain a pointer to this function through the 
     <a href="bltooth.bthddi_sdp_parse_interface">BTHDDI_SDP_PARSE_INTERFACE</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,14 +99,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,9 +120,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -125,5 +136,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PBYTESWAPUINT128 callback function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

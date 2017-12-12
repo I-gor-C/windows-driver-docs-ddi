@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltTagFile</b> sets a reparse tag on a file or directory. 
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ NTSTATUS FltTagFile(
 
 Opaque instance pointer for the minifilter driver instance that initiated this I/O request. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 Pointer to a file object for the file or directory on which to set a reparse point. The file object must be opened for FILE_WRITE_DATA access. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param FileTag [in]
 
 Reparse point tag. If an existing reparse tag is being modified, the tag specified in this parameter must match the tag of the reparse point to be modified. 
 
+
 ### -param Guid [in, optional]
 
 GUID that uniquely identifies the type of reparse point. If <i>FileTag</i> is not a Microsoft tag, this parameter is required and cannot be <b>NULL</b>. If an existing reparse tag is being modified, the GUID specified in this parameter must match the GUID of the reparse point to be modified. 
+
 
 ### -param DataBuffer [in]
 
 Pointer to a buffer that contains user-defined data for the reparse point. 
 
+
 ### -param DataBufferLength [in]
 
 Size, in bytes, of the buffer that <i>DataBuffer </i>points to. 
+
 
 ## -returns
 <b>FltTagFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -101,6 +108,7 @@ Size, in bytes, of the buffer that <i>DataBuffer </i>points to.
 
  
 
+
 ## -remarks
 Minifilter drivers should use <b>FltTagFile</b> instead of <a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a> to set a reparse point. 
 
@@ -110,11 +118,13 @@ To remove an existing reparse point, call <a href="ifsk.fltuntagfile">FltUntagFi
 
 For more information about reparse points, see the Microsoft Windows SDK documentation. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +135,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +146,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +157,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -155,9 +168,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -205,5 +220,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltTagFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistretrievecontext0.htm
 old-project: netvista
 ms.assetid: 482cec75-8a21-4988-b869-639d019f9460
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsNetBufferListRetrieveContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   list that was tagged in another layer.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ NTSTATUS NTAPI FwpsNetBufferListRetrieveContext0(
 A network buffer list that indicates one or more packets of interest to the callout driver. If 
      <i>removeContext</i> is set, the network buffer list returned will have the context removed.
 
+
 ### -param contextTag [in]
 
 A locally unique identifier obtained by calling the 
@@ -70,20 +72,24 @@ A locally unique identifier obtained by calling the
      FwpsNetBufferListGetTagForContext0</a> function. This is the context tag used in the initial call to 
      <a href="netvista.fwpsnetbufferlistassociatecontext0">FwpsNetBufferListAssociateContext0</a>.
 
+
 ### -param removeContext [in]
 
 If set, 
      <b>FwpsNetBufferListRetrieveContext0</b> will remove the context association in addition to retrieving
      the context.
 
+
 ### -param flags [in]
 
 This parameter is reserved for future use and is set to zero.
+
 
 ### -param context [out]
 
 The context assigned to the packet by the callout driver in the initial call to 
      <b>FwpsNetBufferListAssociateContext0</b>.
+
 
 ## -returns
 The 
@@ -97,6 +103,7 @@ The
 
  
 
+
 ## -remarks
 The 
     <b>FwpsNetBufferListRetrieveContext0</b> function retrieves a network buffer list that was tagged in
@@ -105,11 +112,13 @@ The
 You can also use this function to remove the context association by setting the 
     <i>removeContext</i> parameter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,14 +129,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,6 +150,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -148,9 +161,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -174,5 +189,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListRetrieveContext0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListRetrieveContext0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

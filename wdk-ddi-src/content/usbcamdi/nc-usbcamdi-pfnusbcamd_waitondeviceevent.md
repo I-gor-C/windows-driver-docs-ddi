@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_WaitOnDeviceEvent</b> service is used to perform a read from the interrupt pipe if the camera has an interrupt pipe for external event notifications.
 
 
+
 ## -prototype
 
 ````
@@ -66,29 +67,36 @@ NTSTATUS APIENTRY USBCAMD_WaitOnDeviceEvent(
 
 A pointer to device-specific context.
 
+
 ### -param PipeIndex [in]
 
 Specifies the index of the interrupt pipe.
+
 
 ### -param Buffer [in]
 
 A pointer to the read buffer.
 
+
 ### -param BufferLength [in]
 
 Length of the read buffer, in bytes.
+
 
 ### -param EventComplete [in]
 
 Pointer to a camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>, which is called when the interrupt read is completed This value can be <b>NULL</b>.
 
+
 ### -param EventContext [in]
 
 Pointer to a block of memory, that is passed as an argument to the camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>.
 
+
 ### -param LoopBack [in]
 
 Specifies if USBCAMD is to resubmit another read request to the interrupt pipe every time an interrupt read is completed. Set to <b>TRUE</b>
+
 
 ## -returns
 <b>USBCAMD_WaitOnDeviceEvent</b> returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
@@ -117,16 +125,19 @@ The length specified in the BufferLength argument is smaller than the maximum pa
 
  
 
+
 ## -remarks
 The typical usage scenario for this function is a camera with a snapshot button and an interrupt pipe associated with the button. When a user presses the snapshot button, the read request on the interrupt pipe is satisfied and the camera minidriver is called back. If the camera minidriver sets USBCAMD_CamControlFlag_EnableDeviceEvents in the <i>CamControlFlag</i> argument during the <a href="stream.usbcamd_initializenewinterface">USBCAMD_InitializeNewInterface</a> call, the STI monitor also is notified of the snapshot event.
 
 <b>USBCAMD_WaitOnDeviceEvent</b> is not available in USBCAMD version 1.0.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -137,6 +148,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,5 +171,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_WaitOnDeviceEvent routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

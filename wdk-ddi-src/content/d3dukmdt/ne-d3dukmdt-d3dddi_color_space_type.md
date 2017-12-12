@@ -7,7 +7,7 @@ old-location: display\d3dddi_color_space_type.htm
 old-project: display
 ms.assetid: 0A26F0AC-2D00-4847-96ED-3232A067F7CC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DDDI_COLOR_SPACE_TYPE, D3DDDI_COLOR_SPACE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 Defines stream color space information.
+
 
 
 ## -syntax
@@ -101,12 +102,16 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 </tr>
 </table>
  
+
 This is the standard definition for <i>sRGB</i>.
+
 
 Note that this is often implemented with a linear segment, but in that case the exponent is corrected to stay aligned with a gamma 2.2 curve. 
 
 
+
 This is usually used with 8 bit and 10 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709
 
@@ -137,10 +142,13 @@ This is usually used with 8 bit and 10 bit color channels.
 </tr>
 </table>
  
+
 This is the standard definition for <i>scRGB</i>.
 
 
+
 This is usually used with 16 bit integer, 16 bit floating point, and 32 bit floating point channels.
+
 
 
 ### -field D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709
@@ -172,10 +180,13 @@ This is usually used with 16 bit integer, 16 bit floating point, and 32 bit floa
 </tr>
 </table>
  
+
 This is the standard definition for <i>ITU-R Recommendation BT.709</i>.  Note that due to the inclusion of a linear segment, the transfer curve looks similar to a pure exponential gamma of 1.9. 
 
 
+
 This is usually used with 8 bit and 10 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020
 
@@ -206,11 +217,14 @@ This is usually used with 8 bit and 10 bit color channels.
 </tr>
 </table>
  
+
 This is usually used with 10, 12, or 16 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_RESERVED
 
 Reserved for future use.
+
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601
 
@@ -245,10 +259,13 @@ Reserved for future use.
 </tr>
 </table>
  
+
 This definition is commonly used for <i>JPG</i>.
 
 
+
 This is usually used with 8, 10, 12, or 16 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601
 
@@ -279,10 +296,13 @@ This is usually used with 8, 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 This definition is commonly used for <i>MPEG2</i>.
 
 
+
 This is usually used with 8, 10, 12, or 16 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601
 
@@ -313,10 +333,13 @@ This is usually used with 8, 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 This is sometimes used for <i>H.264</i> camera capture.
 
 
+
 This is usually used with 8, 10, 12, or 16 bit color channels.
+
 
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709
@@ -348,10 +371,13 @@ This is usually used with 8, 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 This definition is commonly used for <i>H.264</i> and <i>HEVC</i>.
 
 
+
 This is usually used with 8, 10, 12, or 16 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709
 
@@ -382,10 +408,13 @@ This is usually used with 8, 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 This is sometimes used for <i>H.264</i> camera capture.
 
 
+
 This is usually used with 8, 10, 12, or 16 bit color channels.
+
 
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020
@@ -417,10 +446,13 @@ This is usually used with 8, 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 This definition may be used by <i>HEVC</i>.
 
 
+
 This is usually used with 10, 12, or 16 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020
 
@@ -451,7 +483,9 @@ This is usually used with 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 This is usually used with 10, 12, or 16 bit color channels.
+
 
 ### -field D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020
 
@@ -483,6 +517,7 @@ This is usually used with 10, 12, or 16 bit color channels.
 </table>
  
 
+
 ### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020
 
 <table>
@@ -512,6 +547,7 @@ This is usually used with 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 
 ### -field D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020
 
@@ -543,6 +579,7 @@ This is usually used with 10, 12, or 16 bit color channels.
 </table>
  
 
+
 ### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020
 
 <table>
@@ -572,6 +609,7 @@ This is usually used with 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 
 ### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020
 
@@ -603,6 +641,7 @@ This is usually used with 10, 12, or 16 bit color channels.
 </table>
  
 
+
 ### -field DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020
 
 <table>
@@ -633,6 +672,7 @@ This is usually used with 10, 12, or 16 bit color channels.
 </table>
  
 
+
 ### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020
 
 <table>
@@ -662,7 +702,9 @@ This is usually used with 10, 12, or 16 bit color channels.
 </tr>
 </table>
  
+
 This colorspace can be used as an input to the video processor DDIs, but will never be used to scan out.
+
 
 ### -field DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020
 
@@ -693,15 +735,19 @@ This colorspace can be used as an input to the video processor DDIs, but will ne
 </tr>
 </table>
  
+
 This colorspace can be used as an input to the video processor DDIs, but will never be used to scan out.
+
 
 ### -field D3DDDI_COLOR_SPACE_CUSTOM
 
 A custom color definition is used. 
 
+
 ## -remarks
 
 The following color parameters are defined:
+
 
 
 The following color parameters are defined:
@@ -716,27 +762,33 @@ In most cases, the transfer matrix can be determined from the primaries. For som
 
 Subsampling and the layout of the color channels are inferred from the surface format.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

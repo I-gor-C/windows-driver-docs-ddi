@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_rotation.htm
 old-project: display
 ms.assetid: 4966ba24-35ed-453a-9483-bd3337e31b83
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration is used to indicate the rotation angle applied to content displayed on a VidPN present path.
+
 
 
 ## -syntax
@@ -76,89 +77,120 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION {
 
 Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_ROTATION has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_VPPR_IDENTITY
 
 Indicates that there is no rotation.
+
 
 ### -field D3DKMDT_VPPR_ROTATE90
 
 Indicates that the rotation angle is 90 degrees counter-clockwise.
 
+
 ### -field D3DKMDT_VPPR_ROTATE180
 
 Indicates that the rotation angle is 180 degrees counter-clockwise.
+
 
 ### -field D3DKMDT_VPPR_ROTATE270
 
 Indicates that the rotation angle is 270 degrees counter-clockwise.
 
+
 ### -field D3DKMDT_VPPR_IDENTITY_OFFSET90
 
 Indicates that source content is not modified in any way, and the display miniport driver should rotate this content an extra 90 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE90_OFFSET90
 
 Indicates that source content is rotated 90 degrees counter-clockwise, and the driver should rotate this content an extra 90 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE180_OFFSET90
 
 Indicates that source content is rotated 180 degrees counter-clockwise, and the driver should rotate this content an extra 90 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE270_OFFSET90
 
 Indicates that source content is rotated 270 degrees counter-clockwise, and the driver should rotate this content an extra 90 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_IDENTITY_OFFSET180
 
 Indicates that source content is not modified in any way, and the driver should rotate this content an extra 180 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE90_OFFSET180
 
 Indicates that source content is rotated 90 degrees counter-clockwise, and the driver should rotate this content an extra 180 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE180_OFFSET180
 
 Indicates that source content is rotated 180 degrees counter-clockwise, and the driver should rotate this content an extra 180 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE270_OFFSET180
 
 Indicates that source content is rotated 270 degrees, and the driver should rotate this content an extra 180 degrees. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_IDENTITY_OFFSET270
 
 Indicates that source content is not modified in any way, and the driver should rotate this content an extra 270 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE90_OFFSET270
 
 Indicates that source content is rotated 90 degrees counter-clockwise, and the driver should rotate this content an extra 270 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE180_OFFSET270
 
 Indicates that source content is rotated 180 degrees counter-clockwise, and the driver should rotate this content an extra 270 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_ROTATE270_OFFSET270
 
 Indicates that source content is rotated 270 degrees counter-clockwise, and the driver should rotate this content an extra 270 degrees counter-clockwise. For more info, see Remarks.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field D3DKMDT_VPPR_UNPINNED
 
 Indicates that no rotation angle has been pinned for the VidPN present path.
 
+
 ### -field D3DKMDT_VPPR_NOTSPECIFIED
 
 Indicates that no rotation angle (including identity) has been specified.
+
 
 ## -remarks
 The <b>Rotation</b> member of the <a href="display.d3dkmdt_vidpn_present_path_transformation">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a value from the <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</b> enumeration.
@@ -167,19 +199,23 @@ Starting with Windows 8.1 Update, new constant values (<b>D3DKMDT_VPPR_XXX_OFFS
 
 Here are some examples of how to set the default orientation and offset:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -196,5 +232,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

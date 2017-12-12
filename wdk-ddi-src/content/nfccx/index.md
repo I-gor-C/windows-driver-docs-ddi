@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Nfccx.h header
 
+## -description
 
 This header is used by Near field communications (NFC). For more information, see
 - [Near field communications (NFC)](../_nfpdrivers/index.md)
@@ -11,9 +16,9 @@ Nfccx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [NFC_CX_CLIENT_CONFIG_INIT function](nf-nfccx-nfc-cx-client-config-init.md) | The NFC_CX_CLIENT_CONFIG_INIT function initializes the NFC_CX_CLIENT_CONFIG structure. |
-| [NFC_CX_LLCP_CONFIG_INIT function](nf-nfccx-nfc-cx-llcp-config-init.md) | The NFC_CX_LLCP_CONFIG_INIT function initializes the NFC_CX_LLCP_CONFIG structure. |
-| [NFC_CX_RF_DISCOVERY_CONFIG_INIT function](nf-nfccx-nfc-cx-rf-discovery-config-init.md) | The NFC_CX_RF_DISCOVERY_CONFIG_INIT function initializes the NFC_CX_RF_DISCOVERY_CONFIG structure. |
+| [NFC_CX_CLIENT_CONFIG_INIT function](nf-nfccx-nfc_cx_client_config_init.md) | The NFC_CX_CLIENT_CONFIG_INIT function initializes the NFC_CX_CLIENT_CONFIG structure. |
+| [NFC_CX_LLCP_CONFIG_INIT function](nf-nfccx-nfc_cx_llcp_config_init.md) | The NFC_CX_LLCP_CONFIG_INIT function initializes the NFC_CX_LLCP_CONFIG structure. |
+| [NFC_CX_RF_DISCOVERY_CONFIG_INIT function](nf-nfccx-nfc_cx_rf_discovery_config_init.md) | The NFC_CX_RF_DISCOVERY_CONFIG_INIT function initializes the NFC_CX_RF_DISCOVERY_CONFIG structure. |
 | [NfcCxDeviceDeinitialize function](nf-nfccx-nfccxdevicedeinitialize.md) | Called by the client driver after a WDF device has been created during the AddDevice routine. |
 | [NfcCxDeviceInitConfig function](nf-nfccx-nfccxdeviceinitconfig.md) | Called by the client driver during its AddDevice routine to perform DeviceInit functions. During this process the following I/O callback functions are also exchanged |
 | [NfcCxDeviceInitialize function](nf-nfccx-nfccxdeviceinitialize.md) | Called by the client driver after a WDF device has been created during the AddDevice routine. |
@@ -28,31 +33,31 @@ Nfccx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_NFC_CX_DEVICE_IO_CONTROL callback](nc-nfccx-evt-nfc-cx-device-io-control.md) | Called by the NFC CX to send an unhandled IOCTL to the client driver. |
-| [EVT_NFC_CX_SEQUENCE_HANDLER callback](nc-nfccx-evt-nfc-cx-sequence-handler.md) | Called by the NFC CX to notify the client driver to handle the specific registered sequence. |
-| [EVT_NFC_CX_WRITE_NCI_PACKET callback](nc-nfccx-evt-nfc-cx-write-nci-packet.md) | Called by the NFC CX to send a write packet to the client driver. |
+| [EVT_NFC_CX_DEVICE_IO_CONTROL callback](nc-nfccx-evt_nfc_cx_device_io_control.md) | Called by the NFC CX to send an unhandled IOCTL to the client driver. |
+| [EVT_NFC_CX_SEQUENCE_HANDLER callback](nc-nfccx-evt_nfc_cx_sequence_handler.md) | Called by the NFC CX to notify the client driver to handle the specific registered sequence. |
+| [EVT_NFC_CX_WRITE_NCI_PACKET callback](nc-nfccx-evt_nfc_cx_write_nci_packet.md) | Called by the NFC CX to send a write packet to the client driver. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [NFCCX_DRIVER_GLOBALS structure](ns-nfccx--nfccx-driver-globals.md) | . |
-| [NFC_CX_CLIENT_CONFIG structure](ns-nfccx--nfc-cx-client-config.md) | The NFC_CX_CLIENT_CONFIG structure is an input parameter to NfcCxDeviceInitConfig. |
-| [NFC_CX_HARDWARE_EVENT structure](ns-nfccx--nfc-cx-hardware-event.md) | The NFC_CX_HARDWARE_EVENT structure is an input parameter to NfcCxHardwareEvent. |
-| [NFC_CX_LLCP_CONFIG structure](ns-nfccx--nfc-cx-llcp-config.md) | The NFC_CX_LLCP_CONFIG structure is an input parameter to NfcCxSetLlcpConfig. |
-| [NFC_CX_RF_DISCOVERY_CONFIG structure](ns-nfccx--nfc-cx-rf-discovery-config.md) | The NFC_CX_RF_DISCOVERY_CONFIG structure contains RF discovery configuration settings. Discovery configuration should be completed during initialization after calling NfcDxDeviceInitialize, otherwise an error is returned. |
+| [_NFCCX_DRIVER_GLOBALS structure](ns-nfccx-_nfccx_driver_globals.md) | . |
+| [_NFC_CX_CLIENT_CONFIG structure](ns-nfccx-_nfc_cx_client_config.md) | The NFC_CX_CLIENT_CONFIG structure is an input parameter to NfcCxDeviceInitConfig. |
+| [_NFC_CX_HARDWARE_EVENT structure](ns-nfccx-_nfc_cx_hardware_event.md) | The NFC_CX_HARDWARE_EVENT structure is an input parameter to NfcCxHardwareEvent. |
+| [_NFC_CX_LLCP_CONFIG structure](ns-nfccx-_nfc_cx_llcp_config.md) | The NFC_CX_LLCP_CONFIG structure is an input parameter to NfcCxSetLlcpConfig. |
+| [_NFC_CX_RF_DISCOVERY_CONFIG structure](ns-nfccx-_nfc_cx_rf_discovery_config.md) | The NFC_CX_RF_DISCOVERY_CONFIG structure contains RF discovery configuration settings. Discovery configuration should be completed during initialization after calling NfcDxDeviceInitialize, otherwise an error is returned. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [NFC_CX_CE_MODE_CONFIG enumeration](ne-nfccx--nfc-cx-ce-mode-config.md) | This enumeration specifies CE listening mode flags. |
-| [NFC_CX_DEVICE_MODE enumeration](ne-nfccx--nfc-cx-device-mode.md) | Specifies device mode flags. |
-| [NFC_CX_DRIVER_FLAGS enumeration](ne-nfccx--nfc-cx-driver-flags.md) | Specifies run-time driver flags. |
-| [NFC_CX_HOST_ACTION enumeration](ne-nfccx--nfc-cx-host-action.md) | The NFC_CX_HOST_ACTION enumeration specifies host actions. |
-| [NFC_CX_NFCIP_MODE_CONFIG enumeration](ne-nfccx--nfc-cx-nfcip-mode-config.md) | The NFC_CX_NFCIP_MODE_CONFIG enumeration specifies the NFC-IP initiator mode. |
-| [NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration](ne-nfccx--nfc-cx-nfcip-tgt-mode-config.md) | The NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration specifies NFC-IP target mode. |
-| [NFC_CX_POLL_BAILOUT_CONFIG enumeration](ne-nfccx--nfc-cx-poll-bailout-config.md) | The NFC_CX_POLL_BAILOUT_CONFIG enumeration specifies poll mode bail out. |
-| [NFC_CX_POLL_MODE_CONFIG enumeration](ne-nfccx--nfc-cx-poll-mode-config.md) | The NFC_CX_POLL_MODE_CONFIG enumeration specifies poll mode. |
-| [NFC_CX_SEQUENCE enumeration](ne-nfccx--nfc-cx-sequence.md) | The NFC_CX_SEQUENCE enumeration specifies sequences. |
-| [NFC_CX_TRANSPORT_TYPE enumeration](ne-nfccx--nfc-cx-transport-type.md) | The NFC_CX_TRANSPORT_TYPE enumeration specifies transport types. |
+| [_NFC_CX_CE_MODE_CONFIG enumeration](ne-nfccx-_nfc_cx_ce_mode_config.md) | This enumeration specifies CE listening mode flags. |
+| [_NFC_CX_DEVICE_MODE enumeration](ne-nfccx-_nfc_cx_device_mode.md) | Specifies device mode flags. |
+| [_NFC_CX_DRIVER_FLAGS enumeration](ne-nfccx-_nfc_cx_driver_flags.md) | Specifies run-time driver flags. |
+| [_NFC_CX_HOST_ACTION enumeration](ne-nfccx-_nfc_cx_host_action.md) | The NFC_CX_HOST_ACTION enumeration specifies host actions. |
+| [_NFC_CX_NFCIP_MODE_CONFIG enumeration](ne-nfccx-_nfc_cx_nfcip_mode_config.md) | The NFC_CX_NFCIP_MODE_CONFIG enumeration specifies the NFC-IP initiator mode. |
+| [_NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration](ne-nfccx-_nfc_cx_nfcip_tgt_mode_config.md) | The NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration specifies NFC-IP target mode. |
+| [_NFC_CX_POLL_BAILOUT_CONFIG enumeration](ne-nfccx-_nfc_cx_poll_bailout_config.md) | The NFC_CX_POLL_BAILOUT_CONFIG enumeration specifies poll mode bail out. |
+| [_NFC_CX_POLL_MODE_CONFIG enumeration](ne-nfccx-_nfc_cx_poll_mode_config.md) | The NFC_CX_POLL_MODE_CONFIG enumeration specifies poll mode. |
+| [_NFC_CX_SEQUENCE enumeration](ne-nfccx-_nfc_cx_sequence.md) | The NFC_CX_SEQUENCE enumeration specifies sequences. |
+| [_NFC_CX_TRANSPORT_TYPE enumeration](ne-nfccx-_nfc_cx_transport_type.md) | The NFC_CX_TRANSPORT_TYPE enumeration specifies transport types. |

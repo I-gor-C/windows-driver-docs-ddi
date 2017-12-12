@@ -7,7 +7,7 @@ old-location: netvista\wdi_exemption_packet_type.htm
 old-project: netvista
 ms.assetid: 7F584EBE-9ACB-4AC7-9472-34322F24EF74
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_EXEMPTION_PACKET_TYPE, WDI_EXEMPTION_PACKET_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_EXEMPTION_PACKET_TYPE enumeration defines the types of packet exemptions.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_EXEMPTION_PACKET_TYPE {
 
 Exempt unicast packets only.
 
+
 ### -field WDI_EXEMPT_PACKET_TYPE_MULTICAST
 
 Exempt multicast and broadcast packets only.
 
+
 ### -field WDI_EXEMPT_PACKET_TYPE_BOTH
 
 Exempt all packet types.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ Exempt all packet types.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

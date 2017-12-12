@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterinterruptex.htm
 old-project: netvista
 ms.assetid: db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMRegisterInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ NDIS miniport drivers call the
   <b>NdisMRegisterInterruptEx</b> function to register an interrupt.
 
 
+
 ## -syntax
 
 ````
@@ -62,11 +63,13 @@ The miniport adapter handle that NDIS passed to the
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param MiniportInterruptContext [in]
 
 A pointer to a block of context information. The miniport driver allocates this memory to store
      information about the interrupt. NDIS passes the context information block in subsequent calls to other
      functions that are associated with the interrupt.
+
 
 ### -param MiniportInterruptCharacteristics [in]
 
@@ -76,11 +79,13 @@ A pointer to an
      initializes this structure with handler entry points and configuration parameters that define the
      interrupt characteristics.
 
+
 ### -param NdisInterruptHandle [out]
 
 A pointer to an NDIS handle. NDIS writes the handle for the newly created interrupt object to the
      address that the 
      <i>NdisInterruptHandle</i> pointer specifies.
+
 
 ## -returns
 <b>NdisMRegisterInterruptEx</b> can return one of the following values:
@@ -98,6 +103,7 @@ A pointer to an NDIS handle. NDIS writes the handle for the newly created interr
        preceding list.
 
  
+
 
 ## -remarks
 A miniport driver must call 
@@ -171,11 +177,13 @@ Drivers call the
     NdisMDeregisterInterruptEx</a> function to release resources that were previously allocated with 
     <b>NdisMRegisterInterruptEx</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -186,14 +194,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -204,6 +215,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -214,14 +226,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_init_deregisterinterrupt">Init_DeRegisterInterrupt</a>, <a href="devtest.ndis_init_registerinterrupt">Init_RegisterInterrupt</a>, <a href="devtest.ndis_irql_interrupt_function">Irql_Interrupt_Function</a>, <a href="devtest.ndis_ndismderegisterinterruptex">NdisMDeregisterInterruptEx</a>
@@ -272,5 +287,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterInterruptEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterInterruptEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

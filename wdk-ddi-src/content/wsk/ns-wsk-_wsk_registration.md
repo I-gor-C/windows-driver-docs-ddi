@@ -7,7 +7,7 @@ old-location: netvista\wsk_registration.htm
 old-project: netvista
 ms.assetid: 770c53bb-5e11-4bd4-a175-6ea6ae0bb782
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WSK_REGISTRATION, WSK_REGISTRATION, *PWSK_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The WSK_REGISTRATION structure is used by the WSK subsystem to register or unreg
   application as a WSK client.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef struct _WSK_REGISTRATION {
 
 Reserved for system use. Do not use.
 
+
 ### -field ReservedRegistrationContext
 
 Reserved for system use. Do not use.
 
+
 ### -field ReservedRegistrationLock
 
 Reserved for system use. Do not use.
+
 
 ## -remarks
 This structure is provided by a client application to register or unregister a WSK client instance. Do
@@ -76,20 +80,24 @@ For more information about attaching a WSK application to the WSK subsystem, see
     <a href="netvista.registering_a_winsock_kernel_application">Registering a Winsock Kernel
     Application</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

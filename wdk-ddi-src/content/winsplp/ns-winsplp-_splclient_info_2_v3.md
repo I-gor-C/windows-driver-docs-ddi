@@ -7,7 +7,7 @@ old-location: print\splclient_info_2_longhorn.htm
 old-project: print
 ms.assetid: D058EF0A-014A-4A91-A8B5-6D4ACB1667E0
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _SPLCLIENT_INFO_2_V3, SPLCLIENT_INFO_2_LONGHORN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _SPLCLIENT_INFO_2_V3 {
 
 Specifies the server-side handle to be used for direct calls.
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ Specifies the server-side handle to be used for direct calls.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: print\bidi_request_data.htm
 old-project: print
 ms.assetid: ef5a89e3-f072-48a7-b2d9-d68e0e27ba9e
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _BIDI_REQUEST_DATA, *PBIDI_REQUEST_DATA, *LPBIDI_REQUEST_DATA, BIDI_REQUEST_DATA
+ms.date: 12/9/2017
+ms.keywords: _BIDI_REQUEST_DATA, BIDI_REQUEST_DATA, *LPBIDI_REQUEST_DATA, *PBIDI_REQUEST_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The BIDI_REQUEST_DATA structure holds a single bidi request.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _BIDI_REQUEST_DATA {
 
 Specifies the index of the request, which is used to match a response with a request in a multirequest operation.
 
+
 ### -field pSchema
 
 Pointer to a memory location containing the first byte of the schema string.
 
+
 ### -field data
 
 Specifies a <a href="print.bidi_data">BIDI_DATA</a> structure containing the data associated with the schema.
+
 
 ## -remarks
 
@@ -75,14 +79,17 @@ Specifies a <a href="print.bidi_data">BIDI_DATA</a> structure containing the dat
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available in Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,5 +109,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20BIDI_REQUEST_DATA structure%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20BIDI_REQUEST_DATA structure%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

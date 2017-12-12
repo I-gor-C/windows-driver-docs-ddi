@@ -7,8 +7,8 @@ old-location: netvista\net_buffer.htm
 old-project: netvista
 ms.assetid: 66a725f9-ae72-41b4-8840-63c9ff89ace7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NET_BUFFER, NET_BUFFER, *PNET_BUFFER
+ms.date: 12/8/2017
+ms.keywords: _NET_BUFFER, *PNET_BUFFER, NET_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NET_BUFFER structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 The NET_BUFFER structure specifies data that is transmitted or received over the network.
+
 
 
 ## -syntax
@@ -70,23 +71,28 @@ typedef struct _NET_BUFFER {
 A 
      <a href="netvista.net_buffer_header">NET_BUFFER_HEADER</a> structure.
 
+
 ### -field ChecksumBias
 
 The number of bytes to skip over from the beginning of the data buffer when computing a checksum.
      This member is used by the TCP/IP protocol.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ### -field NdisPoolHandle
 
 A pool handle that identifies the NET_BUFFER pool from which the NET_BUFFER structure was
      allocated.
 
+
 ### -field NdisReserved
 
 Reserved for NDIS.
+
 
 ### -field ProtocolReserved
 
@@ -94,10 +100,12 @@ Reserved for use by protocol drivers. Protocol drivers and NDIS intermediate dri
      area for their own purposes. Intermediate drivers can use this member only if it is not already in
      use.
 
+
 ### -field MiniportReserved
 
 Reserved for use by miniport drivers. Miniport drivers and NDIS intermediate drivers can use this
      area for their own purposes.
+
 
 ### -field DataPhysicalAddress
 
@@ -113,6 +121,7 @@ The physical address of the data portion of a frame. This member should be to ze
       <b>NblFlags</b> member of the 
       <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that is
       associated with the NET_BUFFER.
+
 <div class="alert"><b>Note</b>  A miniport driver can set the 
       <b>DataPhysicalAddress</b> member of the NET_BUFFER structure, even if the structure is not associated
       with a split frame. In this case, 
@@ -125,9 +134,11 @@ A pointer to an
       <a href="netvista.net_buffer_shared_memory">
       NET_BUFFER_SHARED_MEMORY</a> structure.
 
+
 ### -field ScatterGatherList
 
 The SCATTER_GATHER_LIST structure describes a scatter/gather list for DMA.
+
 
 ## -remarks
 NDIS drivers can call the following functions to allocate and initialize a NET_BUFFER structure:
@@ -217,19 +228,23 @@ To access members of the NET_BUFFER structure, use the following macros and func
 For more information on how to use net buffers, see 
     <a href="netvista.net_buffer_architecture">NET_BUFFER Architecture</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -308,5 +323,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

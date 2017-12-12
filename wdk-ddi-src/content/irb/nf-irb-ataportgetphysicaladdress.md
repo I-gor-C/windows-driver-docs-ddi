@@ -7,7 +7,7 @@ old-location: storage\ataportgetphysicaladdress.htm
 old-project: storage
 ms.assetid: f6c595f2-a493-453a-a744-7ce6577ae29e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortGetPhysicalAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortGetPhysicalAddress</b> routine converts the virtual address range to the physical address range. 
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ IDE_PHYSICAL_ADDRESS AtaPortGetPhysicalAddress(
 
 A pointer to the channel extension. 
 
+
 ### -param Irb [in, optional]
 
 A pointer to a structure of type <a href="storage.ide_request_block">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which the address range is converted. 
+
 
 ### -param VirtualAddress [in, optional]
 
 A pointer to the base virtual address to convert. 
 
+
 ### -param Length [out, optional]
 
 Returns the number of mapped bytes starting at the returned physical address. 
 
+
 ## -returns
 <b>AtaPortGetPhysicalAddress </b>returns the corresponding physical address for the virtual address. If the virtual address cannot be converted, it returns <b>NULL</b>. 
+
 
 ## -remarks
 
@@ -82,6 +88,7 @@ Returns the number of mapped bytes starting at the returned physical address.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -119,5 +128,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortGetPhysicalAddress routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortGetPhysicalAddress routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

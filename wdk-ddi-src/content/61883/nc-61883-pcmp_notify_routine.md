@@ -41,6 +41,7 @@ req.irql:
 This routine is called for plug notification.
 
 
+
 ## -prototype
 
 ````
@@ -61,8 +62,10 @@ typedef PCMP_NOTIFY_ROUTINE CmpNotifyRoutine;
 
 Specifies the notification information.
 
+
 ## -returns
 This callback does not return a value.
+
 
 ## -remarks
 
@@ -72,6 +75,7 @@ This callback does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

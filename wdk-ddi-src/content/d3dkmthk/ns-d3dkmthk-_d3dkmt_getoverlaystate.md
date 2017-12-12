@@ -7,7 +7,7 @@ old-location: display\d3dkmt_getoverlaystate.htm
 old-project: display
 ms.assetid: fe3443e7-0dc9-4c91-88ab-b05bac19516d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_GETOVERLAYSTATE, D3DKMT_GETOVERLAYSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMT_GETOVERLAYSTATE structure describes parameters that the <a href="display.d3dkmtgetoverlaystate">D3DKMTGetOverlayState</a> function uses to retrieve status about an overlay. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3DKMT_GETOVERLAYSTATE {
 
 [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
 
+
 ### -field hOverlay
 
 [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to retrieve status about. 
 
+
 ### -field OverlayEnabled
 
 [out] A Boolean variable that receives <b>TRUE</b> if the overlay is enabled and <b>FALSE</b> if the overlay is disabled. 
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ typedef struct _D3DKMT_GETOVERLAYSTATE {
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 D3DKMT_GETOVERLAYSTATE is supported beginning with the Windows 7 operating system. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,5 +105,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_GETOVERLAYSTATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_GETOVERLAYSTATE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

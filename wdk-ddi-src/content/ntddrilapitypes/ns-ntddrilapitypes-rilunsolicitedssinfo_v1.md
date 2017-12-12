@@ -7,8 +7,8 @@ old-location: netvista\rilunsolicitedssinfo_v1.htm
 old-project: netvista
 ms.assetid: c9681207-6cdd-40b6-8878-7ea37f383e4f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1
+ms.date: 12/8/2017
+ms.keywords: RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef struct _RILUNSOLICITEDSSINFO_V1 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: display\dxgk_pre_start_info.htm
 old-project: display
 ms.assetid: 4CCDA951-A583-48C4-98D7-D278183D8893
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DXGK_PRE_START_INFO, *PDXGK_PRE_START_INFO, DXGK_PRE_START_INFO
+ms.date: 12/8/2017
+ms.keywords: _DXGK_PRE_START_INFO, DXGK_PRE_START_INFO, *PDXGK_PRE_START_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Structure to allow very simple data to be exchanged between the OS and driver which may be required prior to start device being called and therefore cannot be queried through normal caps or adapter info DDIs.
 
 
+
 ## -syntax
 
 ````
@@ -69,25 +70,31 @@ typedef struct _DXGK_PRE_START_INFO {
 
 This value is reserved for system use.
 
+
 ### -field Input
 
 The combined UINT value operated on.
+
 
 ### -field SupportPreserveBootDisplay
 
 Flag which indicates support for preserving the timing and content of the firmware display mode across DxgkDdiStartDevice.
 
+
 ### -field IsUEFIFrameBufferCpuAccessibleDuringStartup
 
 Indicates that the driver can maintain same CPU virtual address mapping to the UEFI frame buffer during driver initialization.
+
 
 ### -field ReservedOut
 
 This value is reserved for system use.
 
+
 ### -field Output
 
 The combined UINT value operated on.
+
 
 ## -remarks
 
@@ -97,6 +104,7 @@ The combined UINT value operated on.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

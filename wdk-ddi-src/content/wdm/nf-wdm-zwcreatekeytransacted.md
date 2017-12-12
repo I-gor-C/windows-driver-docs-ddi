@@ -7,7 +7,7 @@ old-location: kernel\zwcreatekeytransacted.htm
 old-project: kernel
 ms.assetid: c0cf38f4-2820-4177-93e6-2e20524d0353
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwCreateKeyTransacted
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ZwCreateKeyTransacted</b> routine creates a new registry key or opens an existing one, and it associates the key with a transaction. 
 
 
+
 ## -syntax
 
 ````
@@ -64,25 +65,31 @@ NTSTATUS ZwCreateKeyTransacted(
 
 A pointer to a HANDLE variable into which the routine writes the handle to the key. 
 
+
 ### -param DesiredAccess [in]
 
 Specifies the type of access to the key that the caller requests. This parameter is an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value. For more information, see the description of the <i>DesiredAccess</i> parameter of the <a href="kernel.zwcreatekey">ZwCreateKey</a> routine. 
+
 
 ### -param ObjectAttributes [in]
 
 A pointer to the object attributes of the key being opened. This parameter points to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that must have been previously initialized by the <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> routine. The caller must specify the name of the registry key as the <i>ObjectName</i> parameter in the call to <b>InitializeObjectAttributes</b>. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. 
 
+
 ### -param TitleIndex 
 
 Device and intermediate drivers set this parameter to zero. 
+
 
 ### -param Class [in, optional]
 
 Device and intermediate drivers set this parameter to <b>NULL</b>. 
 
+
 ### -param CreateOptions [in]
 
 Specifies the options to apply when the routine creates or opens the key. Set this parameter to zero or to the bitwise OR of one or more of the following REG_OPTION_<i>XXX</i> flag bits.
+
 <table>
 <tr>
 <th><i>CreateOptions</i> flag</th>
@@ -91,45 +98,56 @@ Specifies the options to apply when the routine creates or opens the key. Set th
 <tr>
 <td>
 REG_OPTION_VOLATILE
+
 </td>
 <td>
 The key is <u>not</u> preserved after the computer restarts.
+
 </td>
 </tr>
 <tr>
 <td>
 REG_OPTION_NON_VOLATILE
+
 </td>
 <td>
 The key is preserved after the computer restarts.
+
 </td>
 </tr>
 <tr>
 <td>
 REG_OPTION_CREATE_LINK
+
 </td>
 <td>
 The key is a symbolic link. This flag is not used by device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 REG_OPTION_BACKUP_RESTORE
+
 </td>
 <td>
 Open the key with special privileges that enable backup and restore operations. This flag is not used by device and intermediate drivers.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param TransactionHandle [in]
 
 A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a>. To obtain this handle, you can call the <a href="kernel.zwcreatetransaction">ZwCreateTransaction</a> routine. Or, if you have a pointer to a transaction object, you can supply the pointer to the <a href="ifsk.obopenobjectbypointer">ObOpenObjectByPointer</a> routine to obtain the corresponding transaction handle.
 
+
 ### -param Disposition [out, optional]
 
 A pointer to a location into which the routine writes one of the following values to indicate whether the call created a new key or opened an existing one.
+
 <table>
 <tr>
 <th><i>Disposition</i> value</th>
@@ -138,22 +156,28 @@ A pointer to a location into which the routine writes one of the following value
 <tr>
 <td>
 REG_CREATED_NEW_KEY
+
 </td>
 <td>
 A new key was created.
+
 </td>
 </tr>
 <tr>
 <td>
 REG_OPENED_EXISTING_KEY
+
 </td>
 <td>
 An existing key was opened.
+
 </td>
 </tr>
 </table>
  
+
 You can set <i>Disposition</i> = <b>NULL</b> if this information is not needed.
+
 
 ## -returns
 <b>ZwCreateKeyTransacted</b> returns STATUS_SUCCESS if the call successfully creates or opens the key. Possible error return values include the following:
@@ -174,6 +198,7 @@ You can set <i>Disposition</i> = <b>NULL</b> if this information is not needed.
 </dl>A memory allocation operation failed.
 
  
+
 
 ## -remarks
 This routine provides a handle that the caller can access a registry key with. Additionally, this routine associates the key with an active transaction.
@@ -200,11 +225,13 @@ If the kernel-mode caller is not running in a system thread context, it must ens
 
 For more information about how to work with registry keys in kernel mode, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565537">Using the Registry in a Driver</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -215,14 +242,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of Windows. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -233,6 +263,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -243,6 +274,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -253,14 +285,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -305,5 +340,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateKeyTransacted routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateKeyTransacted routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

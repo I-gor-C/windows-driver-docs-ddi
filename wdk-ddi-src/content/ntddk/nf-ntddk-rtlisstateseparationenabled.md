@@ -7,7 +7,7 @@ old-location: kernel\rtlisstateseparationenabled.htm
 old-project: kernel
 ms.assetid: 7c28a82c-e039-4045-94cd-b47a45d15e28
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlIsStateSeparationEnabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -70,6 +71,7 @@ req.irql: PASSIVE_LEVEL
 
     FALSE otherwise.
 
+
 ## -remarks
 
 
@@ -78,22 +80,27 @@ req.irql: PASSIVE_LEVEL
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +111,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +122,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -124,9 +133,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

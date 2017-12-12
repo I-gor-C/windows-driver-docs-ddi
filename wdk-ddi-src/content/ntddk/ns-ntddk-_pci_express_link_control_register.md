@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The PCI_EXPRESS_LINK_CONTROL_REGISTER structure describes a PCI Express (PCIe) link control register of a PCIe capability structure.
 
 
+
 ## -syntax
 
 ````
@@ -68,21 +69,27 @@ typedef union _PCI_EXPRESS_LINK_CONTROL_REGISTER {
 The level of active state power management that is enabled on the PCIe link. Possible values are:
 
 
+
+
 ### -field L0sAndL1EntryDisabled
 
 L0s and L1 are both disabled.
+
 
 ### -field L0sEntryEnabled
 
 L0s is enabled.
 
+
 ### -field L1EntryEnabled
 
 L1 is enabled.
 
+
 ### -field L0sAndL1EntryEnabled
 
 L0s and L1 are both enabled.
+
 </dd>
 </dl>
 
@@ -90,48 +97,59 @@ L0s and L1 are both enabled.
 
 Reserved.
 
+
 ### -field ReadCompletionBoundary
 
 The read completion boundary (RCB) value for the root port or the root port upstream from the endpoint. If the bit is clear, the RCB is 64 byte. If the bit is set, the RCB is 128 byte. This member is not applicable for switch ports.
+
 
 ### -field LinkDisable
 
 A single bit that indicates that the link is disabled. This member is not applicable for endpoint devices, PCIe-to-PCI or PCI-X bridges, and upstream ports of switches.
 
+
 ### -field RetrainLink
 
 A single bit that is used to initiate retraining of the link. Reads of this bit always return zero. This member is not applicable for endpoint devices, PCIe-to-PCI or PCI-X bridges, and upstream ports of switches.
+
 
 ### -field CommonClockConfig
 
 A single bit that indicates that this component and the component at the opposite end of the link are operating with a distributed common reference clock. If this bit is clear, this component and the component at the opposite end of the link are operating with an asynchronous reference clock.
 
+
 ### -field ExtendedSynch
 
 A single bit that indicates that additional ordered sets are transmitted when exiting the L0s state and when in the recovery state.
+
 
 ### -field EnableClockPowerManagement
 
 A single bit that indicates that clock power management is enabled.
 
+
 ### -field Rsvd2
 
 Reserved.
 
+
 ### -field AsUSHORT
 
 A USHORT representation of the contents of the PCI_EXPRESS_LINK_CONTROL_REGISTER structure.
+
 
 ## -remarks
 The PCI_EXPRESS_LINK_CONTROL_REGISTER structure is available in Windows Server 2008 and later versions of Windows.
 
 A PCI_EXPRESS_LINK_CONTROL_REGISTER structure is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,5 +166,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_EXPRESS_LINK_CONTROL_REGISTER union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: storage\storage_device_form_factor.htm
 old-project: storage
 ms.assetid: EE59767B-2504-4E5F-A442-60EEBEE70B59
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_DEVICE_FORM_FACTOR, *PSTORAGE_DEVICE_FORM_FACTOR, STORAGE_DEVICE_FORM_FACTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Indicates the form factor of a storage device.
 
 
+
 ## -syntax
 
 ````
@@ -66,45 +67,56 @@ typedef enum _STORAGE_DEVICE_FORM_FACTOR {
 
 Unknown form factor.
 
+
 ### -field FormFactor3_5
 
 3.5 inch nominal form factor.
+
 
 ### -field FormFactor2_5
 
 2.5 inch nominal form factor.
 
+
 ### -field FormFactor1_8
 
 1.8 inch nominal form factor.
+
 
 ### -field FormFactor1_8Less
 
 Less than 1.8 inch nominal form factor.
 
+
 ### -field FormFactorEmbedded
 
 The storage device is embedded on a board.
+
 
 ### -field FormFactorMemoryCard
 
 A memory card, such as SmartMedia or CompactFlash.
 
+
 ### -field FormFactormSata
 
 Mini-SATA (mSATA) form factor.
+
 
 ### -field FormFactorM_2
 
 M.2 form factor.
 
+
 ### -field FormFactorPCIeBoard
 
 PCI Express (PCIe) card form factor.
 
+
 ### -field FormFactorDimm
 
 Dual in-line memory module (DIMM) slot form factor.
+
 
 ## -remarks
 
@@ -114,6 +126,7 @@ Dual in-line memory module (DIMM) slot form factor.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_rpc_um.htm
 old-project: netvista
 ms.assetid: 7f493a14-174f-4101-8c08-069dbe9ec3e7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_RPC_UM_, FWPS_FIELDS_RPC_UM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The FWPS_FIELDS_RPC_UM enumeration type specifies the data field identifiers for
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
 
 
+
 ## -syntax
 
 ````
@@ -75,25 +76,31 @@ typedef enum FWPS_FIELDS_RPC_UM_ {
 
 The identification of the remote user.
 
+
 ### -field FWPS_FIELD_RPC_UM_IF_UUID
 
 The UUID of the RPC interface.
+
 
 ### -field FWPS_FIELD_RPC_UM_IF_VERSION
 
 The version of the RPC interface.
 
+
 ### -field FWPS_FIELD_RPC_UM_IF_FLAG
 
 Reserved for internal use.
+
 
 ### -field FWPS_FIELD_RPC_UM_DCOM_APP_ID
 
 The identification of the COM application.
 
+
 ### -field FWPS_FIELD_RPC_UM_IMAGE_NAME
 
 The name of the application.
+
 
 ### -field FWPS_FIELD_RPC_UM_PROTOCOL
 
@@ -115,47 +122,58 @@ The name of the application.
 The authentication service type. For more information about authentication service types, see
      Authentication-Service Constants in the RPC section of the Microsoft Windows SDK documentation.
 
+
 ### -field FWPS_FIELD_RPC_UM_AUTH_LEVEL
 
 The authentication service level. For more information about authentication service levels, see
      Authentication-Service Constants in the RPC section of the Windows SDK documentation.
 
+
 ### -field FWPS_FIELD_RPC_UM_SEC_ENCRYPT_ALGORITHM
 
 The certificate-based security service provider interface (SSPI) encryption algorithm.
+
 
 ### -field FWPS_FIELD_RPC_UM_SEC_KEY_SIZE
 
 The certificate-based SSPI encryption key size.
 
+
 ### -field FWPS_FIELD_RPC_UM_LOCAL_ADDR_V4
 
 The local IPv4 address.
+
 
 ### -field FWPS_FIELD_RPC_UM_LOCAL_ADDR_V6
 
 The local IPv6 address.
 
+
 ### -field FWPS_FIELD_RPC_UM_LOCAL_PORT
 
 The local transport protocol port number.
+
 
 ### -field FWPS_FIELD_RPC_UM_PIPE
 
 The name of the remote named pipe.
 
+
 ### -field FWPS_FIELD_RPC_UM_REMOTE_ADDR_V4
 
 The remote IPv4 address.
+
 
 ### -field FWPS_FIELD_RPC_UM_REMOTE_ADDR_V6
 
 The remote IPv6 address. The IPv6 address of the RPC client.
 
+
 ### -field FWPS_FIELD_RPC_UM_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -165,14 +183,17 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

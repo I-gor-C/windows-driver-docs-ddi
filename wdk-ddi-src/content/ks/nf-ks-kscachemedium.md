@@ -41,6 +41,7 @@ req.irql:
 The <b>KsCacheMedium</b> function improves graph building performance of pins that use Mediums to define connectivity.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ NTSTATUS KsCacheMedium(
 
 The symbolic link used to open the device interface.
 
+
 ### -param Medium [in]
 
 Points to the medium to cache.
+
 
 ### -param PinDirection [in]
 
 Contains the direction of the Pin.  1 is output, 0 is input.
 
+
 ## -returns
 <b>KsCacheMedium</b> returns STATUS_SUCCESS if the caching operation is successful, failure if it is not.
+
 
 ## -remarks
 <b>KsCacheMedium</b> improves graph building performance by creating a registry key at: 
@@ -76,11 +81,13 @@ Contains the direction of the Pin.  1 is output, 0 is input.
 
 This enables fast lookup of connected filters in TvTuner and other complex graphs.  Note that the GUID identifies the Medium of the connection, and that the DWORDs denote the device instance.  The value name is the SymbolicLink for the driver, and ActualValue is the pin direction.turning. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +98,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

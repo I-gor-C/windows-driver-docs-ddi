@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltOplockFsctrl</b> routine performs various opportunistic lock (oplock) operations on behalf of a minifilter driver. 
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ FLT_PREOP_CALLBACK_STATUS FltOplockFsctrl(
 
 Opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="ifsk.fltinitializeoplock">FltInitializeOplock</a>. 
 
+
 ### -param CallbackData [in]
 
 Pointer to the callback data structure for the I/O operation (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param OpenCount [in]
 
 Number of user handles for the file, if an exclusive oplock is being requested. Setting a nonzero value for a level 2, R, or RH oplock request indicates that there are byte-range locks on the file. For information about oplock types, see <a href="https://msdn.microsoft.com/e9a45ae0-0ec8-4d6c-8486-ae88bdaa1f8c">Oplock Semantics Overview</a>. 
 
+
 ## -returns
 <b>FltOplockFsctrl</b> returns FLT_PREOP_PENDING for some FSCTL operations. For more information, see the reference pages for the FSCTL codes listed in the following Remarks section. Otherwise, <b>FltOplockFsctrl</b> returns FLT_PREOP_COMPLETE. 
+
 
 ## -remarks
 A minifilter driver calls <b>FltOplockFsctrl</b> to perform various opportunistic lock operations for a create or file system control I/O operation. The FLT_CALLBACK_DATA structure pointed to by the <i>CallbackData</i> parameter must represent an IRP-based <a href="ifsk.irp_mj_file_system_control">IRP_MJ_FILE_SYSTEM_CONTROL</a> or <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a> operation. 
@@ -118,11 +123,13 @@ The value of the <i>DesiredAccess</i> parameter for the IRP_MJ_CREATE request is
 
 The value of the <i>ShareAccess</i> parameter for the IRP_MJ_CREATE operation is FILE_SHARE_READ, FILE_SHARE_WRITE, or FILE_SHARE_DELETE. This parameter is set in the <b>ShareAccess</b> member of the FLT_PARAMETERS structure for the operation. For more information, see <a href="ifsk.flt_parameters_for_irp_mj_create">FLT_PARAMETERS for IRP_MJ_CREATE</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +140,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +151,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -153,6 +162,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -163,9 +173,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -231,5 +243,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockFsctrl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

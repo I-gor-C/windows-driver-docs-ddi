@@ -7,8 +7,8 @@ old-location: storage\feature_profile_type.htm
 old-project: storage
 ms.assetid: 60cce78f-1025-41a7-861d-150ef28376cb
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _FEATURE_PROFILE_TYPE, FEATURE_PROFILE_TYPE, *PFEATURE_PROFILE_TYPE
+ms.date: 12/8/2017
+ms.keywords: _FEATURE_PROFILE_TYPE, *PFEATURE_PROFILE_TYPE, FEATURE_PROFILE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The FEATURE_PROFILE_TYPE enumeration provides a list of the profile names that are defined by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. 
+
 
 
 ## -syntax
@@ -89,57 +90,71 @@ typedef enum _FEATURE_PROFILE_TYPE {
 
 Does not indicate a valid profile. 
 
+
 ### -field ProfileNonRemovableDisk
 
 Indicates the profile named "Nonremovable disk" by the <i>SCSI-3 Multimedia (MMC-3)</i> specification. This profile is used with devices that manage rewritable media and are capable of changing behavior. 
+
 
 ### -field ProfileRemovableDisk
 
 Indicates the profile named "Removable disk" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable, removable media. 
 
+
 ### -field ProfileMOErasable
 
 Indicates the profile named "MO Erasable" by the <i>MMC-3</i> specification. This profile is used with devices that manage magneto-optical media and that have a sector-erase capability. 
+
 
 ### -field ProfileMOWriteOnce
 
 Indicates the profile named "MO Write Once" by the <i>MMC-3</i> specification. This profile is used with devices that manage magneto-optical write-once media.
 
+
 ### -field ProfileAS_MO
 
 Indicates the profile named "AS-MO" by the <i>MMC-3</i> specification. This profile is used with devices that implement Advance Storage technology and manage magneto-optical media. 
+
 
 ### -field ProfileCdrom
 
 Indicates the profile named "CD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that manage read-only compact disc media.
 
+
 ### -field ProfileCdRecordable
 
 Indicates the profile named "CD-R" by the <i>MMC-3</i> specification. This profile is used with devices that manage write-once compact disc media. 
+
 
 ### -field ProfileCdRewritable
 
 Indicates the profile named "CD-RW" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable compact disc media. 
 
+
 ### -field ProfileDvdRom
 
 Indicates the profile named "DVD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that manage read-only DVD media. 
+
 
 ### -field ProfileDvdRecordable
 
 Indicates the profile named "DVD-R" by the <i>MMC-3</i> specification. This profile is used with devices that manage write-once DVD media and operate in sequential recording mode. 
 
+
 ### -field ProfileDvdRam
 
 Indicates the profile named "DVD-RAM or DVD+RW" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable DVD media. 
+
 
 ### -field ProfileDvdRewritable
 
 Indicates the profile named "DVD-RW Restricted Overwrite" by the <i>MMC-3</i> specification. This profile is used with devices that manage rerecordable DVD media and operate in packet-writing mode. 
 
+
 ### -field ProfileDvdRWSequential
 
 Indicates the profile named "DVD-RW Sequential Recording" by the <i>MMC-3</i> specification. This profile is used with devices that implement a series of features associated with sequential recording, such as the features "Incremental Streaming Writable" and "Real-Time Streaming". For a full list of the features supported with this profile, see the <i>MMC-3</i> specification. 
+
 
 ### -field ProfileDvdDashRDualLayer
 
@@ -148,25 +163,31 @@ Indicates the profile named "DVD-RW Sequential Recording" by the <i>MMC-3</i> sp
 
 Reserved 0x0017 - 0x0019
 
+
 ### -field ProfileDvdPlusRW
 
 Indicates the profile named "DVD+RW" by the <i>MMC-3</i> specification. This profile is used with devices that implement a series of features required to manage DVD media that is both readable and writable. For a full list of the features supported with this profile, see the <i>MMC-3</i> specification. 
+
 
 ### -field ProfileDvdPlusR
 
 Reserved 0x001C - 001F
 
+
 ### -field ProfileDDCdrom
 
 Indicates the profile named "DDCD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification. 
+
 
 ### -field ProfileDDCdRecordable
 
 Indicates the profile named "DDCD-R" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD-R specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification. 
 
+
 ### -field ProfileDDCdRewritable
 
 Indicates the profile named "DDCD-RW" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD-RW specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification. 
+
 
 ### -field ProfileDvdPlusRWDualLayer
 
@@ -175,6 +196,7 @@ Indicates the profile named "DDCD-RW" by the <i>MMC-3</i> specification. This pr
 
 Reserved 0x002C - 0x003F
 
+
 ### -field ProfileBDRom
 
 
@@ -182,13 +204,16 @@ Reserved 0x002C - 0x003F
 
 BD-R 'SRM'
 
+
 ### -field ProfileBDRRandomWritable
 
 BD-R 'RRM'
 
+
 ### -field ProfileBDRewritable
 
 Reserved 0x0044 - 0x004F
+
 
 ### -field ProfileHDDVDRom
 
@@ -203,17 +228,21 @@ Reserved 0x0044 - 0x004F
 
 Reserved 0x0054 - 0x0057
 
+
 ### -field ProfileHDDVDRDualLayer
 
 Reserved 0x0059 - 0x0059
+
 
 ### -field ProfileHDDVDRWDualLayer
 
 Reserved 0x005B - 0xfffe
 
+
 ### -field ProfileNonStandard
 
 Indicates that the device does not conform to any profile. 
+
 
 ## -remarks
 
@@ -223,6 +252,7 @@ Indicates that the device does not conform to any profile.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -239,5 +269,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_PROFILE_TYPE enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_PROFILE_TYPE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

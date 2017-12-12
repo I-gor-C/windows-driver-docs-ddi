@@ -7,7 +7,7 @@ old-location: kernel\psterminateserversilo.htm
 old-project: kernel
 ms.assetid: C19190A3-57F9-4482-A550-045805734909
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsTerminateServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine terminates the specified silo.
 
 
+
 ## -syntax
 
 ````
@@ -57,39 +58,48 @@ void PsTerminateServerSilo(
 
 A pointer to the silo being terminated.
 
+
 ### -param ExistStatus [in]
 
 The exit status for the silo.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 This routine can be called within or from outside a silo context.
     Note that this is different from a BugCheck; this routine will return to
     the caller.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

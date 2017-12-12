@@ -7,8 +7,8 @@ old-location: netvista\ndis_wwan_enumerate_device_service_commands.htm
 old-project: netvista
 ms.assetid: 9D30F8BE-C376-48FD-A76C-6069F332BC11
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure represents the commands supported by a device service.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ The header with type, revision, and size information about the NDIS_WWAN_ENUMERA
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -69,35 +71,44 @@ The header with type, revision, and size information about the NDIS_WWAN_ENUMERA
 <tr>
 <td>
 Type
+
 </td>
 <td>
 NDIS_OBJECT_TYPE_DEFAULT
+
 </td>
 </tr>
 <tr>
 <td>
 Revision
+
 </td>
 <td>
 NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS_REVISION_1
+
 </td>
 </tr>
 <tr>
 <td>
 Size
+
 </td>
 <td>
 sizeof(NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS)
+
 </td>
 </tr>
 </table>
  
+
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field DeviceServiceGuid
 
 The GUID of the device service for which commands should be enumerated.
+
 
 ## -remarks
 
@@ -107,14 +118,17 @@ The GUID of the device service for which commands should be enumerated.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

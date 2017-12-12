@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPreFetchOffset</code> interface controls the prefetch offset, which is the number of bytes separating the play and write cursors in a DirectSound output stream. A WavePci miniport driver can use this interface to prevent the prefetch offset from growing too large when the driver allocates a large number of mappings. This interface is supported only in Windows XP and later. To determine whether the WavePci port driver supports the <code>IPreFetchOffset</code> interface, a miniport driver calls the port stream (<a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>) object's <b>QueryInterface</b> method with REFIID <b>IID_IPreFetchOffset</b>. 
+
 For more information about the <code>IPreFetchOffset</code> interface, see <a href="https://msdn.microsoft.com/92a0163f-29b1-4e15-88ab-67e1097d015e">Prefetch Offsets</a>.
+
 
 
 ## -inheritance
@@ -50,6 +52,7 @@ The <b>IPreFetchOffset</b> interface has these methods.
 The <code>SetPreFetchOffset</code> method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream.
 
  
+
 
 ## -members
 The <b>IPreFetchOffset</b> interface has these methods.
@@ -64,11 +67,13 @@ The <b>IPreFetchOffset</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <code>SetPreFetchOffset</code> method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream.
+
 </td>
 </tr>
 </table>The <code>SetPreFetchOffset</code> method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream.
 
  
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ The <code>SetPreFetchOffset</code> method sets the prefetch offset, which is the
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

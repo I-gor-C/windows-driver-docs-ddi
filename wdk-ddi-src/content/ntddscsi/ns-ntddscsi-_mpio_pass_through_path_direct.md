@@ -7,8 +7,8 @@ old-location: storage\mpio_pass_through_path_direct.htm
 old-project: storage
 ms.assetid: b4ddaee3-97af-46a6-982c-16b5f6966a08
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MPIO_PASS_THROUGH_PATH_DIRECT, MPIO_PASS_THROUGH_PATH_DIRECT, *PMPIO_PASS_THROUGH_PATH_DIRECT
+ms.date: 12/8/2017
+ms.keywords: _MPIO_PASS_THROUGH_PATH_DIRECT, *PMPIO_PASS_THROUGH_PATH_DIRECT, MPIO_PASS_THROUGH_PATH_DIRECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>MPIO_PASS_THROUGH_PATH_DIRECT</b> structure is used together with an <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path_direct.md">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</a> request to instruct the port driver to send an embedded SCSI command to the target device. 
 
 
+
 ## -syntax
 
 ````
@@ -61,13 +62,16 @@ typedef struct _MPIO_PASS_THROUGH_PATH_DIRECT {
 
 Contains a <a href="storage.scsi_pass_through_direct">SCSI_PASS_THROUGH_DIRECT</a> structure that is set up in the same way as it is for an <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a> request.
 
+
 ### -field Version
 
 Should be zero.
 
+
 ### -field Length
 
 The size of the <b>MPIO_PASS_THROUGH_PATH_DIRECT</b> structure.
+
 
 ### -field Flags
 
@@ -82,29 +86,37 @@ The size of the <b>MPIO_PASS_THROUGH_PATH_DIRECT</b> structure.
 <tr>
 <td>
 MPIO_IOCTL_FLAG_USE_PATHID
+
 </td>
 <td>
 The real LUN is specified in terms of the supplied <b>MpioPathId</b> member. Either this flag or MPIO_IOCTL_FLAG_USE_SCSIADDRESS must be set, but not both.
+
 </td>
 </tr>
 <tr>
 <td>
 MPIO_IOCTL_FLAG_USE_SCSIADDRESS
+
 </td>
 <td>
 The real LUN is specified in terms of the supplied PortNumber member and the <b>PathId</b> and <b>TargetId</b> members of the embedded SCSI_PASS_THROUGH_DIRECT structure. These values can be obtained by using a WMI request for the PDOSCSI_ADDR that is associated with the real LUN. This flag or MPIO_IOCTL_FLAG_USE_PATHID must be set, but not both.
+
 </td>
 </tr>
 <tr>
 <td>
 MPIO_IOCTL_FLAG_INVOLVE_DSM
+
 </td>
 <td>
 The claiming DSM should choose the real LUN.
+
 </td>
 </tr>
 </table>
  
+
+
 
 
 
@@ -114,18 +126,22 @@ The claiming DSM should choose the real LUN.
 
 The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathId</b> and <b>TargetId</b> values are taken from the embedded <a href="storage.scsi_pass_through_direct">SCSI_PASS_THROUGH_DIRECT</a> structure.
 
+
 ### -field MpioPathId
 
 The <b>PathId</b> for the real LUN. This value can be obtained by using a WMI request for the PDO_INFORMATION that is associated with the real LUN. This value is set only if MPIO_IOCTL_FLAG_USE_PATHID is set.
 
+
 ## -remarks
 The <b>MPIO_PASS_THROUGH_PATH_DIRECT</b> structure is used for a single-buffered device control request. To use double-buffering, callers should use <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path.md">IOCTL_MPIO_PASS_THROUGH_PATH</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,5 +173,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MPIO_PASS_THROUGH_PATH_DIRECT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MPIO_PASS_THROUGH_PATH_DIRECT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

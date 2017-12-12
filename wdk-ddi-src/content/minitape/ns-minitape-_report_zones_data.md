@@ -7,7 +7,7 @@ old-location: storage\report_zones_data.htm
 old-project: storage
 ms.assetid: 67785cb0-388c-4348-b32a-99bcd02b7c04
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _REPORT_ZONES_DATA, *PREPORT_ZONES_DATA, REPORT_ZONES_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -67,29 +68,36 @@ typedef struct _REPORT_ZONES_DATA {
 
 N/A
 
+
 ### -field Same
 
 N/A
+
 
 ### -field Reserved1
 
 N/A
 
+
 ### -field Reserved2
 
 N/A
+
 
 ### -field MaxLBA
 
 N/A
 
+
 ### -field Reserved3
 
 N/A
 
+
 ### -field ZoneDescriptors
 
 N/A
+
 
 ## -remarks
 
@@ -99,6 +107,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

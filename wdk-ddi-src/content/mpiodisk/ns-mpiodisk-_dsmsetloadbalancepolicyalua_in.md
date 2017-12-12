@@ -7,8 +7,8 @@ old-location: storage\dsmsetloadbalancepolicyalua_in.htm
 old-project: storage
 ms.assetid: d46cfba0-a749-436a-99ad-d3606aea9a4d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DsmSetLoadBalancePolicyALUA_IN, *PDsmSetLoadBalancePolicyALUA_IN, DsmSetLoadBalancePolicyALUA_IN
+ms.date: 12/8/2017
+ms.keywords: _DsmSetLoadBalancePolicyALUA_IN, DsmSetLoadBalancePolicyALUA_IN, *PDsmSetLoadBalancePolicyALUA_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The DsmSetLoadBalancePolicyALUA_IN structure provides the input parameter for the DsmSetLoadBalancePolicyALUA method.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DsmSetLoadBalancePolicyALUA_IN {
 
 A structure of type DSM_Load_Balance_Policy_V2.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ A structure of type DSM_Load_Balance_Policy_V2.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

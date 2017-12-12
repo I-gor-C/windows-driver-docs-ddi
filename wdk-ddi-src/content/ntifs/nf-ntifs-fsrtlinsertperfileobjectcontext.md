@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 For a "legacy" file system filter driver, the <b>FsRtlInsertPerFileObjectContext </b>function associates context information with a file object.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS FsRtlInsertPerFileObjectContext(
 
 A pointer to the file object for which to associate context information (given by the <i>Ptr</i> parameter).
 
+
 ### -param Ptr [in]
 
 A pointer to a caller-allocated and initialized FSRTL_PER_FILEOBJECT_CONTEXT structure to be associated with <i>FileObject</i>. The structure can be used as-is or embedded in a driver-defined, per-file-object context information structure. To initialize the structure, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a> macro.
+
 
 ## -returns
 <b>FsRtlInsertPerFileObjectContext </b>returns an appropriate NTSTATUS value, such as one of the following:
@@ -75,6 +78,7 @@ A pointer to a caller-allocated and initialized FSRTL_PER_FILEOBJECT_CONTEXT str
 
  
 
+
 ## -remarks
 A file system filter driver calls <b>FsRtlInsertPerFileObjectContext </b>to associate its own per-file-object context structure with a file object. The context structure contains context information that the filter driver maintains for the file object. The <b>FsRtlInsertPerStreamContext</b> function inserts the <i>Ptr</i> context structure into the context list for <i>FileObject</i>.
 
@@ -82,11 +86,13 @@ All per-file-object context information structures must be or contain an initial
 
 After a FSRTL_PER_FILEOBJECT_CONTEXT structure or filter-defined per-file-object context structure (containing an initialized FSRTL_PER_FILEOBJECT_CONTEXT structure) has been associated with a file object, it can be retrieved by calling <a href="ifsk.fsrtllookupperfileobjectcontext">FsRtlLookupPerFileObjectContext</a> or removed by calling <a href="ifsk.fsrtlremoveperfileobjectcontext">FsRtlRemovePerFileObjectContext</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +103,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +124,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +135,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -135,9 +146,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -158,5 +171,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInsertPerFileObjectContext function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

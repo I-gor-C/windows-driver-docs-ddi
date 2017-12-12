@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 Passes a connection request to a device, creating a pin instance.
+
 Supported starting in Windows 8.
+
 
 
 ## -syntax
@@ -60,20 +62,25 @@ KSDDKAPI HRESULT WINAPI KsCreatePin2(
 
 Specifies the handle of the filter initiating the create request and where the connection will occur. 
 
+
 ### -param Connect [in]
 
 Pointer to a <a href="stream.kspin_connect">KSPIN_CONNECT</a> structure that contains parameters for the requested connection. This should be followed in memory by a <a href="stream.ksdataformat">KSDATAFORMAT</a> data structure, describing the data format requested for the connection.
+
 
 ### -param DesiredAccess [in]
 
 Specifies the access desired to the pin. This is typically <b>GENERIC_READ</b> or <b>GENERIC_WRITE</b>. For data flowing into the pin this value should be set to <b>GENERIC_WRITE</b>, and for data flowing out of the pin this should be set to <b>GENERIC_READ</b> regardless of the communication method.
 
+
 ### -param ConnectionHandle [out]
 
 Specifies the connection handle passed. The routine fills this in with a handle to the file object of the created connection. This value can then be used to disconnect with the <a href="base.closehandle">CloseHandle</a> function.
 
+
 ## -returns
 Returns <b>NOERROR</b> if successful; otherwise, returns an error code.
+
 
 ## -remarks
 This is a new version of the <a href="stream.kscreatepin">KsCreatePin</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="com.coinitialize">CoInitialize</a> function must be called before this function is called.
@@ -82,27 +89,33 @@ The routine sends an <a href="https://msdn.microsoft.com/library/windows/hardwar
 
 If <i>Connect</i>-&gt;<b>PinToHandle</b> is <b>NULL</b>, <b>KsCreatePin2</b> creates a pin that the caller can use to send requests to the streaming driver specified in <i>Connect</i>-&gt;<b>FilterHandle</b>. <i>Connect</i>-&gt;<b>PinId</b> determines the type of pin to be created.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +126,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +137,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -149,5 +165,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreatePin2 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

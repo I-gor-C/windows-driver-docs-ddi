@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_key_direction.htm
 old-project: netvista
 ms.assetid: BE054858-F61A-488B-87A3-615A646C27F0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_CIPHER_KEY_DIRECTION enumeration defines the traffic directions decrypted by a cipher key.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_CIPHER_KEY_DIRECTION {
 
 The cipher key decrypts packets received from a peer.
 
+
 ### -field WDI_CIPHER_KEY_DIRECTION_OUTBOUND
 
 The cipher key decrypts packets transmitted to a peer.
 
+
 ### -field WDI_CIPHER_KEY_DIRECTION_BOTH
 
 The cipher key  decrypts packets received from or transmitted to a peer.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ The cipher key  decrypts packets received from or transmitted to a peer.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

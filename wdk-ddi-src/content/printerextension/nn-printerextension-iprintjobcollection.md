@@ -7,7 +7,7 @@ old-location: print\iprintjobcollection.htm
 old-project: print
 ms.assetid: 757328A6-DD2C-4057-820B-39EB83277194
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 This interfaces provides an enumeration of the jobs in the print queue.
+
 The enumerated list of jobs represents a snapshot of the current job status.
+
 
 
 ## -inheritance
@@ -72,6 +74,7 @@ Gets a pointer to the enumerants of <b>IPrintJobCollection</b> objects.
 
  
 
+
 ## -members
 The <b>IPrintJobCollection</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -85,6 +88,7 @@ The <b>IPrintJobCollection</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a> object.
+
 </td>
 </tr>
 </table>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a> object.
@@ -103,12 +107,15 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintJobCollection</b> inter
 
 <a href="print.iprintjobcollection_count">Count</a>
 
+
 </td>
 <td align="left" width="10%">
 Read-only
+
 </td>
 <td align="left" width="63%">
 Gets the number of jobs in the print queue.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -116,12 +123,15 @@ Gets the number of jobs in the print queue.
 
 <a href="print.iprintjobcollection_newenum">NewEnum</a>
 
+
 </td>
 <td align="left" width="10%">
 Read-only
+
 </td>
 <td align="left" width="63%">
 Gets a pointer to the enumerants of <b>IPrintJobCollection</b> objects.
+
 </td>
 </tr>
 </table>
@@ -142,32 +152,39 @@ Gets a pointer to the enumerants of <b>IPrintJobCollection</b> objects.
 
  
 
+
 ## -remarks
 The order of print jobs in the enumerated list is the same as the order provided by <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162625(v=vs.85).aspx">EnumJobs</a>, which is the actual print queue order.
 
 <b>IPrintJobCollection</b> also helps to make it possible to perform job management from a UWP device app or from a printer extension. For more information, see <a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -185,5 +202,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintJobCollection interface%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintJobCollection interface%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

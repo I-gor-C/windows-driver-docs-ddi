@@ -7,7 +7,7 @@ old-location: debugger\getsetsympath.htm
 old-project: debugger
 ms.assetid: 2c7392c2-49c8-4b27-addc-0200eabbe87e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GetSetSympath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GetSetSympath</b> function can be used to either get or set the symbol search path. 
 
 
+
 ## -syntax
 
 ````
@@ -59,25 +60,31 @@ __inline VOID GetSetSympath(
 
 Specifies the new search path. If this argument is <b>NULL</b> or the string is empty, the search path is not set and the current setting is returned in <i>Result</i>.
 
+
 ### -param Result [out, optional]
 
 Optional. If <i>Arg</i> is <b>NULL</b>, <b>GetSetSympath</b> stores the current search path in the buffer pointed to by <i>Result</i>.
+
 
 ### -param Length [in]
 
 Specifies the size of the buffer for storing the result.
 
+
 ## -returns
 None
 
+
 ## -remarks
 When the symbol path is changed, a call to <b>ReloadSymbols</b> is made implicitly.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +95,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

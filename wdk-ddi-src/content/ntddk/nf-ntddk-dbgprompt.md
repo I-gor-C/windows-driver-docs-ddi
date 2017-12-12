@@ -41,6 +41,7 @@ req.irql: <= DIRQL
 The <b>DbgPrompt</b> routine displays a caller-specified user prompt string on the kernel debugger's display device and obtains a user response string.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ ULONG DbgPrompt(
 
 A pointer to a NULL-terminated constant character string that the debugger will display as a user prompt. The maximum size of this string is 512 characters.
 
+
 ### -param Response [out]
 
 A pointer to a character array buffer that receives the user's response, including a terminating newline character. The maximum size of this buffer is 512 characters.
+
 
 ### -param MaximumResponseLength [in]
 
 The size, in characters, of the buffer that receives the user's response. This size is the maximum number of characters that the routine will return.
 
+
 ## -returns
 <b>DbgPrompt</b> returns the number of characters that the <i>Response</i> buffer received, including the terminating newline character. <b>DbgPrompt</b> returns zero if it receives no characters.
+
 
 ## -remarks
 The <b>DbgPrompt</b> routine displays the specified prompt string on the kernel debugger's display device and then reads a line of user input text. 
@@ -76,11 +81,13 @@ After <b>DbgPrompt</b> returns, the <i>Response</i> buffer contains the user's r
 
 The following code example asks if the user wants to continue and accepts the letter "y" for yes and the letter "n" for no.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +98,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +121,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +133,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DIRQL
+
 </td>
 </tr>
 </table>

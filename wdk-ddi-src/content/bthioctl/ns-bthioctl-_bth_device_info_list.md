@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: ad4888fc-3d90-4920-bf84-aea18841d238
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST
+ms.keywords: _BTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 ---
 
 # _BTH_DEVICE_INFO_LIST structure
@@ -40,6 +40,7 @@ req.irql:
 ## -description
 The BTH_DEVICE_INFO_LIST structure contains output information about all cached, previously
   discovered remote devices.
+
 
 
 ## -syntax
@@ -58,11 +59,13 @@ typedef struct _BTH_DEVICE_INFO_LIST {
 
 The number of devices that have been discovered.
 
+
 ### -field deviceList
 
 An open-ended array of 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a> structures. Each
      structure contains information about a previously discovered remote device.
+
 
 ## -remarks
 The 
@@ -74,19 +77,23 @@ The
     BTH_DEVICE_INFO structures available. If the calling driver passes in a smaller buffer, only a portion of
     the available structures will be returned.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_DEVICE_INFO_LIST structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

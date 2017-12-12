@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_arg_presentsurface.htm
 old-project: display
 ms.assetid: 1A1E2644-7411-4D69-8D45-B19D707221AB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DXGI_DDI_ARG_PRESENTSURFACE, DXGI_DDI_ARG_PRESENTSURFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes a surface to display.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct DXGI_DDI_ARG_PRESENTSURFACE {
 
 [in] A handle to the resource that contains the surface. 
 
+
 ### -field SubResourceIndex
 
 The zero-based index into the resource, which the handle in the <b>hSurface</b> member specifies. The <b>SubResourceIndex</b> index indicates the surface.
+
 
 ## -remarks
 
@@ -69,30 +72,37 @@ The zero-based index into the resource, which the handle in the <b>hSurface</b> 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 WDDM 1.3 and later
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

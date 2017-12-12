@@ -7,7 +7,7 @@ old-location: netvista\rilrttdata.htm
 old-project: netvista
 ms.assetid: 037831c7-d0ef-4cbc-a414-a77010e228a5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILRTTDATA, RILRTTDATA, *LPRILRTTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILRTTDATA {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

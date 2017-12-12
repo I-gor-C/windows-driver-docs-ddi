@@ -7,7 +7,7 @@ old-location: display\d3dkmt_unlock.htm
 old-project: display
 ms.assetid: 397d2ab0-89a0-42a8-a665-ca7e1ed5d8f3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_UNLOCK, D3DKMT_UNLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMT_UNLOCK structure describes allocations to unlock. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3DKMT_UNLOCK {
 
 [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the allocation is associated with.
 
+
 ### -field NumAllocations
 
 [in] The number of allocations in the array that <b>phAllocations</b> specifies. 
 
+
 ### -field phAllocations
 
 [in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations to unlock.
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ typedef struct _D3DKMT_UNLOCK {
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,5 +105,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_UNLOCK structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_UNLOCK structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

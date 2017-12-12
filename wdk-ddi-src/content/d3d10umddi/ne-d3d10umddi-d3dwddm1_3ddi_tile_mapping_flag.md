@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_tile_mapping_flag.htm
 old-project: display
 ms.assetid: 1149547D-9165-42AA-B12A-5C7681A8EAC1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM1_3DDI_TILE_MAPPING_FLAG, D3DWDDM1_3DDI_TILE_MAPPING_FLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Indicates how to update a tile mapping.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ Previously submitted commands to the
 device that may still be executing do not reference any of the tile region being updated.
 This allows the device to avoid having to flush previously submitted work in order to update a tile mapping.
 
+
 ## -remarks
 
 
@@ -67,30 +69,37 @@ This allows the device to avoid having to flush previously submitted work in ord
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 WDDM 1.3
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

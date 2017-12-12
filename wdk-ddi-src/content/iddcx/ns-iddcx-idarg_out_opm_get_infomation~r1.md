@@ -7,7 +7,7 @@ old-location: display\idarg_out_opm_get_infomation.htm
 old-project: display
 ms.assetid: 7c51b228-480d-4e19-aa70-4fcc44ffae16
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_OPM_GET_INFOMATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct IDARG_OUT_OPM_GET_INFOMATION {
                       [out] The OPM information that was requested.
                  
 
+
 ## -remarks
 
 
@@ -68,6 +70,7 @@ typedef struct IDARG_OUT_OPM_GET_INFOMATION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

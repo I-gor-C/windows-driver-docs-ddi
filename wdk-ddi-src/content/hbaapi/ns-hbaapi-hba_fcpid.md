@@ -7,7 +7,7 @@ old-location: storage\hba_fcpid.htm
 old-project: storage
 ms.assetid: fed2c733-5011-4dba-a8ec-3a0742574949
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: HBA_FcpId, *PHBA_FCPID, HBA_FCPID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The HBA_FcpId structure is identical to the <a href="storage.hbafcpid">HBAFCPID</a> structure.
 
 
+
 ## -struct-fields
 
 
@@ -52,6 +53,7 @@ The HBA_FcpId structure is identical to the <a href="storage.hbafcpid">HBAFCPID<
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

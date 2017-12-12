@@ -7,7 +7,7 @@ old-location: storage\changer_exchange_medium.htm
 old-project: storage
 ms.assetid: b0f03d83-61d3-4aa1-ae4e-a8bdc9f13a9f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _CHANGER_EXCHANGE_MEDIUM, CHANGER_EXCHANGE_MEDIUM, *PCHANGER_EXCHANGE_MEDIUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The CHANGER_EXCHANGE_MEDIUM structure is used with the <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_exchange_medium.md">IOCTL_CHANGER_EXCHANGE_MEDIUM</a> request to exchange locations of two pieces of media.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _CHANGER_EXCHANGE_MEDIUM {
 
 Indicates which transport element to use for the exchange operation. This member contains a structure of type <a href="storage.changer_element">CHANGER_ELEMENT</a>. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned a value of <b>ChangerTransport</b>. 
 
+
 ### -field Source
 
 Indicates the element that contains the piece of media to be moved. 
+
 
 ### -field Destination1
 
 Indicates the destination of the piece of media originally at <b>Source</b>. 
 
+
 ### -field Destination2
 
 Indicates the destination of the piece of media originally at <b>Destination1</b>. 
+
 
 ### -field Flip1
 
 Indicates, when <b>TRUE</b>, that the piece of media moved to <b>Destination1</b> should be flipped. This member is valid only if the <b>Features0</b> member of the <a href="storage.get_changer_parameters">GET_CHANGER_PARAMETERS</a> structure is set to CHANGER_MEDIUM_FLIP. When <b>FALSE</b>, this member indicates that the media does not ready to be flipped. 
 
+
 ### -field Flip2
 
 Indicates, when <b>TRUE</b>, that the medium moved to <b>Destination2</b> should be flipped. This member is valid only if the <b>Features0</b> member of the GET_CHANGER_PARAMETERS structure is set to CHANGER_MEDIUM_FLIP. When <b>FALSE</b>, this member indicates that the media does not ready to be flipped.  
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Indicates, when <b>TRUE</b>, that the medium moved to <b>Destination2</b> should
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,5 +119,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_EXCHANGE_MEDIUM structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_EXCHANGE_MEDIUM structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

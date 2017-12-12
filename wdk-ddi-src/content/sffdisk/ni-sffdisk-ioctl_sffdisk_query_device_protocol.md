@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 User-mode applications use this IOCTL to retrieve a protocol value that identifies the card as either an SD card or an MMC card. For a description of this command, see the <i>Secure Digital I/O (SDIO)</i> specification.
+
 To perform this operation, call the <a href="base.deviceiocontrol">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) using the following parameters.
+
 
 
 ## -syntax
@@ -64,11 +66,14 @@ bRet = DeviceIoControl (
 ### -input-buffer
 TBD
 
+
 ### -input-buffer-length
 TBD
 
+
 ### -output-buffer
 TBD
+
 
 ### -output-buffer-length
 TBD
@@ -76,6 +81,7 @@ TBD
 TBD
 
 TBD
+
 
 ### -in-out-buffer
 
@@ -91,6 +97,7 @@ If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> re
 
 If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.
 
+
 ## -remarks
 
 
@@ -99,6 +106,7 @@ If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> retur
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

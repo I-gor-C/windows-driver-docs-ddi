@@ -7,7 +7,7 @@ old-location: kernel\exinitializepagedlookasidelist.htm
 old-project: kernel
 ms.assetid: 7a6b21f1-37e3-4f73-a826-4629624ac5a9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExInitializePagedLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ExInitializePagedLookasideList</b> routine initializes a lookaside list for pageable entries of the specified size.
 
 
+
 ## -syntax
 
 ````
@@ -63,9 +64,11 @@ VOID ExInitializePagedLookasideList(
 
 A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a> structure to initialize. The caller must use <u>nonpaged</u> system space for the structure, even though the entries in this lookaside list will be allocated from pageable memory. On 64-bit platforms, this structure must be 16-byte aligned.
 
+
 ### -param Allocate [in, optional]
 
 A pointer to either a caller-supplied function for allocating an entry when the lookaside list is empty, or to <b>NULL</b>. If non-<b>NULL</b>, the pointer is to a function with the prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -82,9 +85,11 @@ A pointer to either a caller-supplied function for allocating an entry when the 
 </table></span></div>
 If the <i>Allocate</i> parameter is <b>NULL</b>, subsequent calls to <b>ExAllocateFromPagedLookasideList</b> automatically allocate entries whenever the lookaside list is empty.
 
+
 ### -param Free [in, optional]
 
 A pointer to either a caller-supplied function for freeing an entry whenever the lookaside list is full, or to <b>NULL</b>. If non-<b>NULL</b>, the pointer is to a function with the prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -99,9 +104,11 @@ A pointer to either a caller-supplied function for freeing an entry whenever the
 </table></span></div>
 If the <i>Free</i> parameter is <b>NULL</b>, subsequent calls to <b>ExFreeToPagedLookasideList</b> automatically release the given entry back to paged pool whenever the list is full, that is, currently holding the system-determined maximum number of entries.
 
+
 ### -param Flags [in]
 
 Starting in Windows 8, this parameter specifies an optional flag value to modify the default behavior of the <b>ExInitializePagedLookasideList</b> routine. Compatible flag bits include the following.
+
 <table>
 <tr>
 <th>Flag bit</th>
@@ -110,37 +117,47 @@ Starting in Windows 8, this parameter specifies an optional flag value to modif
 <tr>
 <td>
 POOL_NX_ALLOCATION
+
 </td>
 <td>
 Allocate non-executable memory.
+
 </td>
 </tr>
 <tr>
 <td>
 POOL_RAISE_IF_ALLOCATION_FAILURE
+
 </td>
 <td>
 If the allocation fails, raise an exception.
+
 </td>
 </tr>
 </table>
  
+
 Before Windows 8, this parameter is not used and must be zero.
+
 
 ### -param Size [in]
 
 Specifies the size in bytes of each entry in the lookaside list. 
 
+
 ### -param Tag [in]
 
 Specifies the pool tag to use when allocating lookaside list entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>. 
+
 
 ### -param Depth [in]
 
 Reserved. Must be zero. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 After calling <b>ExInitializePagedLookasideList</b>, blocks of the caller-specified <i>Size</i> can be allocated from and freed to the lookaside list with calls to <a href="kernel.exallocatefrompagedlookasidelist">ExAllocateFromPagedLookasideList</a> and <a href="kernel.exfreetopagedlookasidelist">ExFreeToPagedLookasideList</a>, respectively. Such dynamically allocated and freed entries can be any data structure or fixed-size buffer that the caller uses while the system is running, particularly if the caller cannot predetermine how many such entries will be in use at any given moment. The layout and contents of each fixed-size entry are caller-determined.
@@ -171,11 +188,13 @@ If the caller of <b>ExInitializePagedLookasideList</b> supplies an <b><i>Xxx</i>
 
 Starting with Windows Vista, a similar routine, <a href="kernel.exinitializelookasidelistex">ExInitializeLookasideListEx</a>, initializes a lookaside list that is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a> structure. Unlike the <b><i>Xxx</i>Allocate</b> and <b><i>Xxx</i>Free</b> routines for a lookaside list that uses a <b>PAGED_LOOKASIDE_LIST</b> structure, the allocation and deallocation routines for a lookaside list that uses the <b>LOOKASIDE_LIST_EX</b> structure receive a context pointer as an input parameter. These routines can use this context to store private data for the lookaside list. If your driver is intended to run only in Windows Vista and later versions of Windows, consider using <b>ExInitializeLookasideListEx</b> instead of <b>ExInitializePagedLookasideList</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565416">Using Lookaside Lists</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -186,14 +205,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -204,6 +226,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -214,6 +237,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -224,14 +248,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqlexapclte2">IrqlExApcLte2</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -270,5 +297,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInitializePagedLookasideList routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInitializePagedLookasideList routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

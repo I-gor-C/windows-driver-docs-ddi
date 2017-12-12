@@ -7,7 +7,7 @@ old-location: netvista\fwpmengineopen0.htm
 old-project: netvista
 ms.assetid: 4d805ffe-7cf9-4cbc-9077-e191ddc24ecd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>FwpmEngineOpen0</b> function opens a session to the filter engine.
 
 
+
 ## -syntax
 
 ````
@@ -62,11 +63,13 @@ NTSTATUS NTAPI FwpmEngineOpen0(
 A pointer to a NULL-terminated string that specifies the standard DNS name of the system on which
      the session to the filter engine is opened. Callout drivers must specify <b>NULL</b> for this parameter.
 
+
 ### -param authnService [in]
 
 The authentication service to use. For a list of valid choices for this parameter, see
      Authentication-Service Constants in the RPC section in the Microsoft Windows SDK documentation. Callout
      drivers must specify either RPC_C_AUTHN_WINNT or RPC_C_AUTHN_DEFAULT for this parameter.
+
 
 ### -param authIdentity [in, optional]
 
@@ -75,6 +78,7 @@ A pointer to a <b>SEC_WINNT_AUTH_IDENTITY_W</b> structure that contains the auth
      <b>FwpmEngineOpen0</b> function is called from a callout driver. Callout drivers should set this
      parameter to <b>NULL</b>.
 
+
 ### -param session [in, optional]
 
 A pointer to an 
@@ -82,9 +86,11 @@ A pointer to an
      session-specific parameters for the session being opened. This pointer is optional and can be
      <b>NULL</b>.
 
+
 ### -param engineHandle [out]
 
 A pointer to a variable that receives a handle for the open session to the filter engine.
+
 
 ## -returns
 The 
@@ -98,6 +104,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 A callout driver calls the 
@@ -120,11 +127,13 @@ After a callout driver has finished accessing the filter engine, it calls the
     <a href="netvista.fwpmengineclose0">FwpmEngineClose0</a> function to close the
     open session to the filter engine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -135,14 +144,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,6 +165,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -163,9 +176,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -197,5 +212,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmEngineOpen0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmEngineOpen0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

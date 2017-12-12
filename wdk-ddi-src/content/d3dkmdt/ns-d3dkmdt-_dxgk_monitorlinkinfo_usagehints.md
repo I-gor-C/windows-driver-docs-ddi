@@ -7,8 +7,8 @@ old-location: display\dxgk_monitorlinkinfo_usagehints.htm
 old-project: display
 ms.assetid: 4FC2509A-9983-41F8-901F-60DCEDBC163F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DXGK_MONITORLINKINFO_USAGEHINTS, *PDXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS
+ms.date: 12/8/2017
+ms.keywords: _DXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS, *PDXGK_MONITORLINKINFO_USAGEHINTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Hints to the driver on the intended usage of the display device.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef union _DXGK_MONITORLINKINFO_USAGEHINTS {
 
 If TRUE, DxgKrnl will hide this display from Win32 so it cannot be a part of the desktop.
 
+
 ### -field Reserved 
 
 This value is reserved for system use.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ This value is reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

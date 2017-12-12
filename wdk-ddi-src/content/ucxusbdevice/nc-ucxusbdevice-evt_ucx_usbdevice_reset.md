@@ -43,6 +43,7 @@ The client driver's implementation that UCX calls when the port to which the dev
     attached is reset.
 
 
+
 ## -prototype
 
 ````
@@ -64,12 +65,15 @@ typedef EVT_UCX_USBDEVICE_RESET PEVT_UCX_USBDEVICE_RESET;
 
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.
 
+
 ### -param Request [in]
 
 Contains the <a href="buses._usbdevice_reset">USBDEVICE_RESET</a> structure.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.
@@ -79,27 +83,33 @@ To
 
 The client driver returns completion status in <i>Request</i>.  The driver can complete the WDFREQUEST asynchronously.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +120,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -127,5 +139,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20EVT_UCX_USBDEVICE_RESET callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

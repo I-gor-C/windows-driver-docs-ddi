@@ -41,6 +41,7 @@ req.irql:
 The<i> MRxPreparseName</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to give a network mini-redirector the opportunity to preparse a name. 
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ NTSTATUS MRxPreparseName(
 
 A pointer to the RX_CONTEXT structure. This parameter contains the IRP that is requesting the operation. 
 
+
 ### -param Name [in]
 
 A pointer to a Unicode string that contains the name string.
 
+
 ## -returns
 <i>MRxPreparseName</i> returns STATUS_SUCCESS on success. 
+
 
 ## -remarks
 <i>MRxPreparseName</i> is called by RDBSS after parsing a name to give a network mini-redirector a final opportunity to preparse the name. 
@@ -74,11 +78,13 @@ RDBSS tries to convert the name to its canonical form, removing a dot (".") and 
 
 RDBSS ignores the return value from <i>MRxPreparseName</i>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,6 +95,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +130,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxPreparseName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

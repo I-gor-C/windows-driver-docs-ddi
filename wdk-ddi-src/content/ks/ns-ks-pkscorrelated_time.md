@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: d733f50c-01a2-484f-ab5b-72aaa3378c7d
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSCORRELATED_TIME, KSCORRELATED_TIME, *PKSCORRELATED_TIME
+ms.keywords: PKSCORRELATED_TIME, *PKSCORRELATED_TIME, KSCORRELATED_TIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot.
 
 
+
 ## -syntax
 
 ````
@@ -57,20 +58,24 @@ typedef struct {
 
 Specifies the current clock time in 100-nanosecond units.
 
+
 ### -field SystemTime
 
 A 64-bit integer containing the number of clock ticks since system boot.
+
 
 ## -remarks
 Supply this structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a> property request.
 
 The system time is acquired from <a href="kernel.kequeryperformancecounter">KeQueryPerformanceCounter</a>. Note that the performance counter is not suspended when the machine is suspended, so that correlations change when the machine goes through a suspend.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,5 +95,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCORRELATED_TIME structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

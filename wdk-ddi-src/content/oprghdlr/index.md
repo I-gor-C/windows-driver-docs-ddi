@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Oprghdlr.h header
 
+## -description
 
 This header is used by ACPI. For more information, see
 - [ACPI](../_acpi/index.md)
@@ -18,4 +23,4 @@ Oprghdlr.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [ACPI_OP_REGION_HANDLER callback](nc-oprghdlr-acpi-op-region-handler.md) | An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function driver to provide access by the ACPI driver to the device's operation region. |
+| [ACPI_OP_REGION_HANDLER callback](nc-oprghdlr-acpi_op_region_handler.md) | An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function driver to provide access by the ACPI driver to the device's operation region. |

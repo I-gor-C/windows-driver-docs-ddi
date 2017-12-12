@@ -39,11 +39,14 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPortWavePciStream</code> interface is the stream-associated callback interface that provides mapping services to WavePci miniport stream objects. The WavePci port driver implements this interface and exposes it to the miniport driver. The port driver provides a reference to an <code>IPortWavePciStream</code> object to each miniport stream object that it creates. <code>IPortWavePciStream</code> inherits from the <b>IUnknown</b> interface.
+
 The stream is associated with a pin on the WavePci filter, which the adapter driver forms by binding the port and miniport drivers. The port driver calls the <a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a> method to create the miniport stream object; the port driver passes an <code>IPortWavePciStream</code> reference as one of the call parameters.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortWavePciStream</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -53,6 +56,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortWavePciStream</b> interf
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

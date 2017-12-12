@@ -41,7 +41,10 @@ req.irql:
 
 <b>RtlSetThreadPlaceholderCompatibilityMode</b> is a routine which sets the placeholder compatibility mode for the current thread. This allows a thread to explicitly request that placeholder files be either disguised or exposed, overriding the application’s default mode for that thread only.
 
+
+
 <b>RtlSetThreadPlaceholderCompatibilityMode</b> is a routine which sets the placeholder compatibility mode for the current thread. This allows a thread to explicitly request that placeholder files be either disguised or exposed, overriding the application’s default mode for that thread only.
+
 
 
 ## -syntax
@@ -59,10 +62,12 @@ CHAR RtlSetThreadPlaceholderCompatibilityMode(
 
 Specifies the placeholder compatibility mode to set.
 
+
 ## -returns
 Returns the thread's previous placeholder compatibility mode. If there was an error it returns  a negative value. It can be one of the following values:
 
  
+
 
 ## -remarks
 When placeholders are exposed, characteristics such as the presence of a reparse point, the sparse bit, and the offline bit are plainly visible through directory enumeration and other types of file information queries.  When placeholders are disguised, these details are completely hidden, making the file look like a normal file.
@@ -70,19 +75,23 @@ When placeholders are exposed, characteristics such as the presence of a reparse
 Most Windows applications see exposed placeholders by default.  For compatibility reasons, Windows may decide that certain applications see disguised placeholders by default.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlSetThreadPlaceholderCompatibilityMode routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

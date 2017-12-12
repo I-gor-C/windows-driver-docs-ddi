@@ -7,7 +7,7 @@ old-location: netvista\ndis_isolation_name.htm
 old-project: netvista
 ms.assetid: 4712F853-8819-476C-8AD9-426EA5A0802E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_ISOLATION_NAME, NDIS_ISOLATION_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,6 +53,7 @@ typedef NDIS_ISOLATION_NAME NDIS_ROUTING_DOMAIN_NAME, *PNDIS_ROUTING_DOMAIN_NAME
 
 
 
+
 ## -syntax
 
 ````
@@ -68,20 +69,25 @@ typedef NDIS_ISOLATION_NAME NDIS_ROUTING_DOMAIN_NAME, *PNDIS_ROUTING_DOMAIN_NAME
 
 Length, in bytes, of the NDIS isolation name. This member must be less than or equal to <b>NDIS_ISOLATION_NAME_MAX_STRING_SIZE</b>.
 
+
 ### -field        String
 
 A <b>NULL</b>-terminated string that contains the NDIS isolation name. The isolation name can be an isolation ID name or a routing domain name.
+
 
 ## -remarks
 This structure is used in:<ul>
 <li>
 The <b>IsolationIdName</b> member of the <a href="netvista.ndis_routing_domain_isolation_entry">NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY</a> structure.
+
 </li>
 <li>
 The <b>RoutingDomainName</b> member of the <a href="netvista.ndis_routing_domain_entry">NDIS_ROUTING_DOMAIN_ENTRY</a> structure.
+
 </li>
 <li>
 The <b>RoutingDomainName</b> member of the <a href="netvista.ndis_switch_port_property_routing_domain">NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN</a> structure.
+
 </li>
 </ul>
 
@@ -92,19 +98,23 @@ The <b>RoutingDomainName</b> member of the <a href="netvista.ndis_routing_domain
 
 The <b>RoutingDomainName</b> member of the <a href="netvista.ndis_switch_port_property_routing_domain">NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.40 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +140,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ISOLATION_NAME structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ISOLATION_NAME structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

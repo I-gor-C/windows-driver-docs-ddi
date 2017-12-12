@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver that has loaded a supporting minifilter driver by calling <a href="ifsk.fltloadfilter">FltLoadFilter</a> can unload the minifilter driver by calling <b>FltUnloadFilter</b>. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS FltUnloadFilter(
 
 Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure containing the minifilter driver service name that was passed to <a href="ifsk.fltloadfilter">FltLoadFilter</a>. 
 
+
 ## -returns
 <b>FltUnloadFilter</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
@@ -67,6 +69,7 @@ Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure contai
 
  
 
+
 ## -remarks
 A minifilter driver that has a dependency on another minifilter driver can unload that minifilter driver by calling <b>FltUnloadFilter</b>. This routine searches for a registered minifilter driver whose service name matches the given <i>FilterName</i> and calls that minifilter driver's <i>FilterUnloadCallback</i> (<a href="..\fltkernel\nc-fltkernel-pflt_filter_unload_callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine. 
 
@@ -74,11 +77,13 @@ If the supporting minifilter driver did not register a <i>FilterUnloadCallback</
 
 A minifilter driver cannot call <b>FltUnloadFilter</b> to unload itself. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -109,6 +116,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -119,9 +127,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -139,5 +149,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltUnloadFilter function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

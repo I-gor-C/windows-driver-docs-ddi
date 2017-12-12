@@ -41,6 +41,7 @@ req.irql:
 The <b>KsSynchronousIoControlDevice</b> function performs a synchronous device I/O control on the target device object. It waits in a nonalertable state until the I/O completes. This function can only be called at PASSIVE_LEVEL.
 
 
+
 ## -syntax
 
 ````
@@ -63,36 +64,45 @@ NTSTATUS KsSynchronousIoControlDevice(
 
 Indicates the file object to fill in the first stack location with.
 
+
 ### -param RequesorMode [in]
 
 Indicates the processor mode to place in the IRP if one needs to be generated.
+
 
 ### -param IoControl [in]
 
 Specifies the I/O control to send.
 
+
 ### -param InBuffer [in]
 
 Points to the device input buffer.
+
 
 ### -param InSize [in]
 
 Specifies the size in bytes of the device input buffer.
 
+
 ### -param OutBuffer [out]
 
 Points to the device output buffer.
+
 
 ### -param OutSize [in]
 
 Specifies the size in bytes of the device output buffer.
 
+
 ### -param BytesReturned [out]
 
 Points to the place in which to put the number of bytes returned.
 
+
 ## -returns
 <b>KsSynchronousIoControlDevice </b>returns the result of the device I/O control.
+
 
 ## -remarks
 
@@ -102,6 +112,7 @@ Points to the place in which to put the number of bytes returned.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +123,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +134,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

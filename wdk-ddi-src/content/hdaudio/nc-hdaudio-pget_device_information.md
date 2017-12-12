@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>GetDeviceInformation</code> routine retrieves information about the HD Audio controller device.
+
 The function pointer type for a <code>GetDeviceInformation</code> routine is defined as:
+
 
 
 ## -prototype
@@ -61,9 +63,11 @@ NTSTATUS GetDeviceInformation(
 
 Specifies the context value from the <b>Context</b> member of the <a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a> or the <a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
+
 ### -param deviceInformation [in, out]
 
 Retrieves information about the HD Audio controller device. This parameter points to a caller-allocated <a href="audio.hdaudio_device_information">HDAUDIO_DEVICE_INFORMATION</a> structure into which the routine writes the device information.
+
 
 ## -returns
 <code>GetDeviceInformation</code> returns STATUS_SUCCESS if the call succeeds. Otherwise, the routine returns an appropriate error code. The following table shows a possible return status code.
@@ -73,16 +77,19 @@ Retrieves information about the HD Audio controller device. This parameter point
 
  
 
+
 ## -remarks
 This routine retrieves device-dependent information that is static-that is, the information does not change dynamically over time.
 
 The <i>deviceInformation</i> parameter is a pointer to a buffer that contains an HDAUDIO_DEVICE_INFORMATION structure into which the routine writes information about the HD Audio controller. Before calling <code>GetDeviceInformation</code>, the caller allocates the buffer and writes the buffer's size in bytes into the <b>Size</b> member at the beginning of the buffer.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +100,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,9 +111,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -123,5 +133,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PGET_DEVICE_INFORMATION callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

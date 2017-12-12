@@ -41,6 +41,7 @@ req.irql:
 This enumeration contains the focus states.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum  {
 
 The focus state is not initialized.
 
+
 ### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_LOST
 
 The focus state is lost.
+
 
 ### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_SEARCHING
 
 The focus state is searching.
 
+
 ### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED
 
 The focus state is focused.
 
+
 ### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED
 
 The focus state is failed.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ The focus state is failed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

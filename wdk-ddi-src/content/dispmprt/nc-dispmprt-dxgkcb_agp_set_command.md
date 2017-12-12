@@ -7,8 +7,8 @@ old-location: display\agpsetcommand.htm
 old-project: display
 ms.assetid: 4440bc0f-01cb-4108-bfe8-9d5127777f00
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/8/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>AgpSetCommand</b> function sets the AGP rate and specifies whether side band addressing and fast write transactions are enabled.
 
 
+
 ## -prototype
 
 ````
@@ -60,10 +61,13 @@ NTSTATUS APIENTRY AgpSetCommand(
 
 A handle to a context block that is associated with an AGP interface. The display miniport driver previously received this handle in the <b>Context</b> member of the DXGK_AGP_INTERFACE structure that was filled in by <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>.
 
+
 ### -param Command [in]
 
 A set of flags that specify the AGP rate and the types of AGP transactions that will be used.
+
 The caller must set one, and only one, of the following flags.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -72,38 +76,48 @@ The caller must set one, and only one, of the following flags.
 <tr>
 <td>
 DXGK_AGPCOMMAND_AGP1X
+
 </td>
 <td>
 The AGP transfer rate is 1X.
+
 </td>
 </tr>
 <tr>
 <td>
 DXGK_AGPCOMMAND_AGP2X
+
 </td>
 <td>
 The AGP transfer rate is 2X.
+
 </td>
 </tr>
 <tr>
 <td>
 DXGK_AGPCOMMAND_AGP4X
+
 </td>
 <td>
 The AGP transfer rate is 4X.
+
 </td>
 </tr>
 <tr>
 <td>
 DXGK_AGPCOMMAND_AGP8X
+
 </td>
 <td>
 The AGP transfer rate is 8X.
+
 </td>
 </tr>
 </table>
  
+
 The caller might also choose to set or clear the following flags.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -112,33 +126,41 @@ The caller might also choose to set or clear the following flags.
 <tr>
 <td>
 DXGK_AGPCOMMAND_DISABLE_SBA
+
 </td>
 <td>
 If this flag is set, side band addressing is disabled. If this flag is cleared, side band addressing is enabled.
+
 </td>
 </tr>
 <tr>
 <td>
 DXGK_AGPCOMMAND_DISABLE_FW
+
 </td>
 <td>
 If this flag is set, fast write transactions are disabled. If this flag is cleared, fast write transactions are enabled. Note that fast write transactions cannot be used with AGP1X.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>AgpSetCommand</b> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in <i>Ntstatus.h</i>.
 
+
 ## -remarks
 None.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,14 +171,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,9 +192,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -190,5 +217,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_AGP_SET_COMMAND callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_AGP_SET_COMMAND callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

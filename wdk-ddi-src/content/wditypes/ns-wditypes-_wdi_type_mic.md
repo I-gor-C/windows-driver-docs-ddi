@@ -7,7 +7,7 @@ old-location: netvista\wdi_type_mic.htm
 old-project: netvista
 ms.assetid: A21EEC35-98F2-4B68-A851-1C45D7F55194
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_TYPE_MIC, WDI_TYPE_MIC, *PWDI_TYPE_MIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_TYPE_MIC structure defines the MIC (802.11r).
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _WDI_TYPE_MIC {
 
 The MIC.
 
+
 ## -remarks
 
 
@@ -65,22 +67,27 @@ The MIC.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

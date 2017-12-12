@@ -7,8 +7,8 @@ old-location: netvista\rilmsgserviceinfo.htm
 old-project: netvista
 ms.assetid: 21b1c6ef-b8f3-4230-bc3f-7ac19c6cb2d1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO, RILMSGSERVICEINFO
+ms.date: 12/8/2017
+ms.keywords: RILMSGSERVICEINFO, RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef struct _RILMSGSERVICEINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

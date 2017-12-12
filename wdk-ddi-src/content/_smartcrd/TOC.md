@@ -11,6 +11,8 @@
 ### [_T0_DATA structure](../smclib/ns-smclib-_t0_data.md)
 ### [_T1_DATA structure](../smclib/ns-smclib-_t1_data.md)
 ### [_VENDOR_ATTR structure](../smclib/ns-smclib-_vendor_attr.md)
+## [Smcnt.h](../smcnt/index.md)
+### [_OS_DEP_DATA structure](../smcnt/ns-smcnt-_os_dep_data.md)
 ## [Winsmcrd.h](../winsmcrd/index.md)
 ### [IOCTL_SMARTCARD_EJECT IOCTL](../winsmcrd/ni-winsmcrd-ioctl_smartcard_eject.md)
 ### [IOCTL_SMARTCARD_GET_LAST_ERROR IOCTL](../winsmcrd/ni-winsmcrd-ioctl_smartcard_get_last_error.md)

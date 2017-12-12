@@ -7,7 +7,7 @@ old-location: netvista\rilimssubscribetype_2.htm
 old-project: netvista
 ms.assetid: 84b2de56-55f9-471c-8d32-84fe1365dfbf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILIMSSUBSCRIBETYPE, RILIMSSUBSCRIBETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ typedef enum _RILIMSSUBSCRIBETYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

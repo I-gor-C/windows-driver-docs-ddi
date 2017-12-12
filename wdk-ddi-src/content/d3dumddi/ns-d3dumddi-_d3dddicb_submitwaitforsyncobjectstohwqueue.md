@@ -7,7 +7,7 @@ old-location: display\d3dddicb_submitwaitforsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: 9890EB61-2CED-41AB-9A87-76D5020D84A0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that holds information to wait for synchronized objects. 
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ typedef struct _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE {
 Hardware queue to queue the wait on.
 
 
+
 ### -field ObjectCount
 
 Number of objects to wait on.
+
 
 
 ### -field ObjectHandleArray
@@ -70,9 +73,11 @@ Number of objects to wait on.
 Handles to monitored fence synchronization objects to wait on.
 
 
+
 ### -field FenceValueArray
 
 Monitored fence values to be waited on.
+
 
 
 ## -remarks
@@ -83,6 +88,7 @@ Monitored fence values to be waited on.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

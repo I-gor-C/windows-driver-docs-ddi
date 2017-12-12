@@ -7,7 +7,7 @@ old-location: print\mxdcgetpdevadjustment.htm
 old-project: print
 ms.assetid: 4839337b-0328-4919-8f49-d7847743845c
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: MxdcGetPDEVAdjustment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <code>MxdcGetPDEVAdjustment</code> function is exported by a printer interface DLL and supplies printer configuration data for the Microsoft XPS Document Converter (MXDC).
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ HRESULT MxdcGetPDEVAdjustment(
 
 The handle of the currently instantiated printer.
 
+
 ### -param cbDevMode [in]
 
 The size of the <a href="display.devmodew">DEVMODE</a> structure, in bytes, including the driver's private DEVMODE data.
+
 
 ### -param pDevMode [in]
 
 A copy of the DEVMODE structure that the MXDC received. The printer interface DLL uses information from this structure to return the requested data.
 
+
 ### -param cbIn [in]
 
 An input parameter that designates the size of the <i>pvIn</i> parameter, in bytes. This parameter is currently not used and its value is zero.
+
 
 ### -param pvIn [in, optional]
 
 A parameter that consists of data that is sent to the printer interface DLL from the MXDC. This parameter is currently not used and its value is <b>NULL</b>.
 
+
 ### -param cbPrintPropertiesCollection [in]
 
 The size of the <a href="https://msdn.microsoft.com/240e14d1-d8ee-403c-b728-b14941775634">PrintPropertiesCollection</a> data structure, in bytes.
 
+
 ### -param pOut [in, out]
 
 The <b>PrintPropertiesCollection</b> data structure from which the printer interface's DLL gets the requested data. This structure is defined in WinSpool.h. The requested fields might be pre-filled with the MXDC's default data. The printer interface DLL must ignore the fields that it does not understand.
+
 
 ## -returns
 <code>MxdcGetPDEVAdjustment</code> should return one of the following values.
@@ -99,6 +107,7 @@ The <b>PrintPropertiesCollection</b> data structure from which the printer inter
 </dl>For this value or any other failure values, the MXDC returns -1 to the <a href="display.drvenablepdev">DrvEnablePDEV</a> function, catches the internal exception, and sets a flag to fail and end the print job.
 
  
+
 
 ## -remarks
 The <code>MxdcGetPDEVAdjustment</code> function is implemented by the hardware vendor. The MXDC calls this function to obtain printer configuration data in the form of a <a href="wdkgloss.p#wdkgloss.property_bag#wdkgloss.property_bag"><i>property bag</i></a> that includes the following data:
@@ -212,11 +221,13 @@ The default value in the MXDC will be MXDC_LANDSCAPE_ROTATE_COUNTERCLOCKWISE_270
 
 All rotation will be done on the imageable area. If a configuration component (UniDrv/PostScript, XPSDrv Monolithic) does not understand the new property bag values, then it should ignore them as is in the current design.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -227,14 +238,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -257,5 +271,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MxdcGetPDEVAdjustment function%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MxdcGetPDEVAdjustment function%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL.
 The <b>HDAUDIO_STREAM_STATE</b> enumeration defines constants that specify the different stream states supported by HDAudio.
 
 
+
 ## -syntax
 
 ````
@@ -59,26 +60,32 @@ typedef enum _HDAUDIO_STREAM_STATE {
 
 The reset state.
 
+
 ### -field StopState
 
 The stop state.
+
 
 ### -field PauseState
 
 The pause state.
 
+
 ### -field RunState
 
 The run state.
 
+
 ## -remarks
 This enumeration is used by the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">PSET_DMA_ENGINE_STATE</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

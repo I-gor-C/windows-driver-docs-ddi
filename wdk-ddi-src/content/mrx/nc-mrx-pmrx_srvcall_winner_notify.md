@@ -41,6 +41,7 @@ req.irql:
 The<i> MRxSrvCallWinnerNotify</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to notify a network mini-redirector that it was chosen when multiple redirectors could fulfill the request. 
 
 
+
 ## -prototype
 
 ````
@@ -61,16 +62,20 @@ NTSTATUS MRxSrvCallWinnerNotify(
 
 A pointer to the SRV_CALL structure. 
 
+
 ### -param ThisMinirdrIsTheWinner [in]
 
 A Boolean value that indicates that this network mini-redirector was chosen.
+
 
 ### -param pSrvCallContext [in, out]
 
 A pointer to an SRV_CALL structure that is created by the network mini-redirector.
 
+
 ## -returns
 <i>MRxSmbSrvCallWinnerNotify</i> returns STATUS_SUCCESS on success. 
+
 
 ## -remarks
 <i>MRxSrvCallWinnerNotify</i> was originally designed to be called by RDBSS to notify a network mini-redirector that it was chosen when multiple redirectors could fulfill the request. The chosen network mini-redirector is expected to create the SRV_CALL structure and establish a connection with the server.
@@ -81,11 +86,13 @@ Under the current implementation of RDBSS, each network mini-redirector has its 
 
 When multiple redirectors are installed for handling the same UNC namespace, the redirector to service a request is chosen by multiple UNC provider (MUP) based on the order of redirectors specified in the registry. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +103,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +138,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxSrvCallWinnerNotify routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

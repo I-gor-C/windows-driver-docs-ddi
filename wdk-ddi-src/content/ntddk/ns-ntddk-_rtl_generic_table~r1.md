@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree. 
+
 RTL_GENERIC_TABLE is opaque and not directly manipulated. Drivers must use the support routines that are described in the Remarks section to manipulate RTL_GENERIC_TABLE values. 
+
 
 
 ## -syntax
@@ -65,37 +67,46 @@ typedef struct _RTL_GENERIC_TABLE {
 
 Reserved for system use.
 
+
 ### -field InsertOrderList
 
 Reserved for system use.
+
 
 ### -field OrderedPointer
 
 Reserved for system use.
 
+
 ### -field WhichOrderedElement
 
 Reserved for system use.
+
 
 ### -field NumberGenericTableElements
 
 Reserved for system use.
 
+
 ### -field CompareRoutine
 
 Reserved for system use.
+
 
 ### -field AllocateRoutine
 
 Reserved for system use.
 
+
 ### -field FreeRoutine
 
 Reserved for system use.
 
+
 ### -field TableContext
 
 Reserved for system use.
+
 
 ## -remarks
 To initialize a generic table package, you allocate a buffer that is at least <b>sizeof(</b>RTL_GENERIC_TABLE<b>) </b>bytes in size to receive the initialized generic table structure from a call to the <a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTable</a> routine. You can use the following routines to manipulate the table:
@@ -140,19 +151,23 @@ To initialize a generic table package, you allocate a buffer that is at least <b
 <a href="ifsk.rtlnumbergenerictableelements">RtlNumberGenericTableElements</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available on Windows 2000 and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -199,5 +214,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RTL_GENERIC_TABLE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

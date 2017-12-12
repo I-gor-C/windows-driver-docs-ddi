@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StreamClassReadWriteConfig</b> routine reads or writes configuration data for the minidriver's parent bus driver.
 
 
+
 ## -syntax
 
 ````
@@ -61,35 +62,43 @@ BOOLEAN StreamClassReadWriteConfig(
 
 Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
+
 ### -param Read [in]
 
 Specifies whether to read or write the configuration information. A value of <b>TRUE</b> indicates that a read is requested. A value of <b>FALSE</b> indicates that a write should be performed.
+
 
 ### -param Buffer [in, out]
 
 Points to the buffer to use to read/write the configuration information.
 
+
 ### -param Offset [in]
 
 Specifies the offset within the configuration information to begin the read/write operation.
+
 
 ### -param Length [in]
 
 Specifies the length of the data to read or write.
 
+
 ## -returns
 Returns <b>TRUE</b> on success, <b>FALSE</b> on failure.
+
 
 ## -remarks
 This routine reads or writes configuration information for the minidriver's parent bus driver. For example, for a PCI device, <b>StreamClassReadWriteConfig</b> reads or writes PCI configuration information.
 
 This routine can only be called at PASSIVE_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +109,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,6 +120,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

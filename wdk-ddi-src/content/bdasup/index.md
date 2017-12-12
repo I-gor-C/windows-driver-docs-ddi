@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Bdasup.h header
 
+## -description
 
 This header is used by Streaming media devices. For more information, see
 - [Streaming media devices](../_stream/index.md)
@@ -41,7 +46,7 @@ Bdasup.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [BDA_FILTER_TEMPLATE structure](ns-bdasup--bda-filter-template.md) | The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter. |
-| [BDA_PIN_PAIRING structure](ns-bdasup--bda-pin-pairing.md) | The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins. |
-| [KSM_PIN structure](ns-bdasup--ksm-pin.md) | The KSM_PIN structure describes a method request to create or delete a pin factory for a filter. |
-| [KSM_PIN_PAIR structure](ns-bdasup--ksm-pin-pair.md) | The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
+| [_BDA_FILTER_TEMPLATE structure](ns-bdasup-_bda_filter_template.md) | The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter. |
+| [_BDA_PIN_PAIRING structure](ns-bdasup-_bda_pin_pairing.md) | The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins. |
+| [_KSM_PIN structure](ns-bdasup-_ksm_pin.md) | The KSM_PIN structure describes a method request to create or delete a pin factory for a filter. |
+| [_KSM_PIN_PAIR structure](ns-bdasup-_ksm_pin_pair.md) | The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |

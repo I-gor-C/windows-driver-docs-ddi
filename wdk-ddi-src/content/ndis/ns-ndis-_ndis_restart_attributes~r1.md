@@ -7,8 +7,8 @@ old-location: netvista\ndis_restart_attributes.htm
 old-project: netvista
 ms.assetid: 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES
+ms.date: 12/8/2017
+ms.keywords: _NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_RESTART_ATTRIBUTES structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The NDIS_RESTART_ATTRIBUTES structure identifies an attributes entry in a linked list of restart
   attributes.
+
 
 
 ## -syntax
@@ -62,6 +63,7 @@ A pointer to an NDIS_RESTART_ATTRIBUTES structure that you can use to access the
      restart attributes in the linked list of attributes. If there are no additional attributes, this member
      is <b>NULL</b>.
 
+
 ### -field Oid
 
 The NDIS object identifier for the information that is in the 
@@ -73,15 +75,18 @@ The NDIS object identifier for the information that is in the
      <a href="netvista.ndis_restart_general_attributes">
      NDIS_RESTART_GENERAL_ATTRIBUTES</a> structure.
 
+
 ### -field DataLength
 
 The length, in bytes, of the information that is stored in the 
      <b>Data</b> member.
 
+
 ### -field Data
 
 A buffer that contains the information that is associated with the OID that is specified in the 
      <b>Oid</b> member.
+
 
 ## -remarks
 When NDIS restarts a driver stack, NDIS passes a pointer to a linked list of restart attributes to
@@ -128,19 +133,23 @@ If the restart attributes pointer is not <b>NULL</b>, the linked list of NDIS_RE
     NDIS_RESTART_GENERAL_ATTRIBUTES</a> structure. The rest of the entries, if any, contain media-specific
     attributes.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -186,5 +195,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

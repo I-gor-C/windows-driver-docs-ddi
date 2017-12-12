@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferlistpool.htm
 old-project: netvista
 ms.assetid: b117b472-0c26-41a9-b364-3d0cfbd26cc9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisAllocateNetBufferListPool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Call the
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures.
 
 
+
 ## -syntax
 
 ````
@@ -59,15 +60,18 @@ NDIS_HANDLE NdisAllocateNetBufferListPool(
 
 An NDIS handle that was obtained during caller initialization.
 
+
 ### -param Parameters [in]
 
 A pointer to a <a href="netvista.net_buffer_list_pool_parameters">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that defines the parameters for the pool.
+
 
 ## -returns
 <b>NdisAllocateNetBufferListPool</b> returns a handle to the NET_BUFFER_LIST structure pool that NDIS
      allocates. If the allocation was unsuccessful, this handle is <b>NULL</b>. This handle is a required parameter
      in subsequent calls to NDIS functions that allocate and free NET_BUFFER_LIST structures from this
      pool.
+
 
 ## -remarks
 In most cases, a caller that allocates a 
@@ -109,11 +113,13 @@ Call the
     <a href="netvista.ndisfreenetbufferlistpool">
     NdisFreeNetBufferListPool</a> function to free a NET_BUFFER_LIST structure pool.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -124,14 +130,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +151,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -152,6 +162,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -162,14 +173,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -206,5 +220,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferListPool function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferListPool function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

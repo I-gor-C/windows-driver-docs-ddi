@@ -7,7 +7,7 @@ old-location: print\routerregisterforprintasyncnotifications.htm
 old-project: print
 ms.assetid: 87966827-72b2-4be7-859a-628c1accca48
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: RouterRegisterForPrintAsyncNotifications
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <code>RouterRegisterForPrintAsyncNotifications</code> function registers for asynchronous notifications associated with a printer or print server.
 
 
+
 ## -syntax
 
 ````
@@ -62,28 +63,35 @@ HRESULT RouterRegisterForPrintAsyncNotifications(
 
 A pointer to a null-terminated string that specifies the name of the printer or print server.
 
+
 ### -param pNotificationType [in]
 
 A pointer to the GUID that represents the type of notifications of interest to the caller.
+
 
 ### -param eNotifyFilter [in]
 
 The filter for the session or user of interest to the caller when receiving notifications.
 
+
 ### -param eConversationStyle [in]
 
 The type of communication: unidirectional or bidirectional.
+
 
 ### -param pCallback [in]
 
 A pointer to the callback that is used deliver the notifications.
 
+
 ### -param phNotify [out]
 
 A pointer to an opaque handle. The caller can use this handle to discontinue receiving notifications.
 
+
 ## -returns
 This function returns S_OK on success, and a standard COM error code otherwise.
+
 
 ## -remarks
 
@@ -93,6 +101,7 @@ This function returns S_OK on success, and a standard COM error code otherwise.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +112,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +134,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +151,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20RouterRegisterForPrintAsyncNotifications function%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20RouterRegisterForPrintAsyncNotifications function%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

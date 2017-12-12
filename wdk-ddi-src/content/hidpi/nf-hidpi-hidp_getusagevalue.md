@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>HidP_GetUsageValue</b> routine extracts the data associated with a HID control value that matches the selection criteria in a HID report.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ NTSTATUS __stdcall HidP_GetUsageValue(
 
 Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
+
 ### -param UsagePage [in]
 
 Specifies the value's <a href="hid.hid_usages#usage_page#usage_page">usage page</a>.
+
 
 ### -param LinkCollection [in]
 
 Specifies the <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a> that contains the value. If <i>LinkCollection</i> is nonzero, the routine only searches for the usage in this link collection; otherwise, if <i>LinkCollection</i> is zero, the routine searches for the usage in the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with <i>PreparsedData</i>.
 
+
 ### -param Usage [in]
 
 Specifies the usage of the value.
+
 
 ### -param UsageValue [out]
 
 Pointer to a buffer in which the routine returns the value data.
 
+
 ### -param PreparsedData [in]
 
 Pointer to a top-level collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.
+
 
 ### -param Report [in]
 
 Pointer to a report that contains values.
 
+
 ### -param ReportLength [in]
 
 Specifies the length, in bytes, of the report located at <i>Report</i>.
+
 
 ## -returns
 <b>HidP_GetUsageValue</b> returns one of the following status values:
@@ -114,6 +123,7 @@ Specifies the length, in bytes, of the report located at <i>Report</i>.
 
  
 
+
 ## -remarks
 <b>HidP_GetUsageValue</b> does not sign or scale the value. To extract a signed value, use <b>HidP_GetScaledUsageValue</b>. To manually assign the sign bit, the position of the sign bit can be determined from the information in a value's <a href="hid.hidp_value_caps">HIDP_VALUE_CAPS</a> structure.
 
@@ -121,11 +131,13 @@ Specifies the length, in bytes, of the report located at <i>Report</i>.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -136,14 +148,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -154,6 +169,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -164,9 +180,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -202,5 +220,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetUsageValue routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

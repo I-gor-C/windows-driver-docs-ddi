@@ -7,7 +7,7 @@ old-location: display\hwvidquerynamedvaluecallback.htm
 old-project: display
 ms.assetid: 90020700-b9c8-42e6-bafa-908cbc3eb233
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <i>HwVidQueryNamedValueCallback</i> processes the specified data retrieved from the registry.
 
 
+
 ## -prototype
 
 ````
@@ -64,24 +65,30 @@ VP_STATUS HwVidQueryNamedValueCallback(
 
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
+
 ### -param Context 
 
 Pointer to a driver-determined context specified as input to the <a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a> function.
+
 
 ### -param ValueName 
 
 Pointer to a NULL-terminated Unicode string naming the entry.
 
+
 ### -param ValueData 
 
 Pointer to the buffered data associated with <i>ValueName</i>, supplied by <b>VideoPortGetRegistryParameters</b>.
+
 
 ### -param ValueLength 
 
 Specifies the size in bytes of the buffer at <i>ValueData</i>.
 
+
 ## -returns
 <i>HwVidQueryNamedValueCallback</i> returns the status of the operation.
+
 
 ## -remarks
 <i>HwVidQueryNamedValueCallback</i> is an optional miniport driver function passed in a call to <a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a>.
@@ -100,11 +107,13 @@ The returned <i>ValueData</i> is on the stack, so it can be referenced locally. 
 
 <i>HwVidQueryNamedValueCallback</i> should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +124,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +153,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_GET_REGISTRY_ROUTINE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_GET_REGISTRY_ROUTINE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

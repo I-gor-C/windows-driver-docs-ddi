@@ -7,7 +7,7 @@ old-location: display\d3dkmt_vidmmescapetype.htm
 old-project: display
 ms.assetid: 83C903F9-0E5F-454D-B6E9-FCC7C3A9B46C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_VIDMMESCAPETYPE, D3DKMT_VIDMMESCAPETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <b>Do not use the D3DKMT_VIDMMESCAPETYPE enumeration; it is for testing purposes only.</b>
+
 The D3DKMT_VIDMMESCAPETYPE enumeration is used with the <a href="display.d3dkmt_vidmm_escape">D3DKMT_VIDMM_ESCAPE</a> structure.
+
 
 
 ## -syntax
@@ -116,6 +118,7 @@ typedef enum _D3DKMT_VIDMMESCAPETYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

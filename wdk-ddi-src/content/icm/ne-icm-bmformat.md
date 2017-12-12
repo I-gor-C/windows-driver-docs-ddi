@@ -7,7 +7,7 @@ old-location: print\bmformat.htm
 old-project: print
 ms.assetid: 1c29bf1e-e785-48ab-aa2c-3665fd5c0ab0
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: BMFORMAT, BMFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The values of the BMFORMAT enumeration are used by WCS functions to indicate the format that particular bitmaps are in. This data type is extended from BMFORMAT that is available in versions of Windows released before Windows Vista.
+
 
 
 ## -syntax
@@ -96,49 +97,61 @@ typedef enum  {
 
 16 bits per pixel. RGB color space. 5 bits per channel. The most significant bit is ignored.
 
+
 ### -field BM_x555XYZ
 
 16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.
+
 
 ### -field BM_x555Yxy
 
 16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.
 
+
 ### -field BM_x555Lab
 
 BM_x555G3CH
+
 
 ### -field BM_x555G3CH
 
 16 bits per pixel. G3CH color space. 5 bits per channel. The most significant bit is ignored.
 
+
 ### -field BM_RGBTRIPLETS
 
 24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.
+
 
 ### -field BM_BGRTRIPLETS
 
 24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.
 
+
 ### -field BM_XYZTRIPLETS
 
 24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.
+
 
 ### -field BM_YxyTRIPLETS
 
 24 bits per pixel maximum. For three channel, Y, x, and y values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.
 
+
 ### -field BM_LabTRIPLETS
 
 24 bits per pixel maximum. For three channel, L, a, and b values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.
+
 
 ### -field BM_G3CHTRIPLETS
 
 24 bits per pixel maximum. For three channel values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.
 
+
 ### -field BM_5CHANNEL
 
 40 bits per pixel. 8 bits apiece are used for each channel.
+
 
 ### -field BM_6CHANNEL
 
@@ -147,101 +160,126 @@ BM_x555G3CH
 
 56 bits per pixel. 8 bits apiece are used for each channel.
 
+
 ### -field BM_8CHANNEL
 
 64 bits per pixel. 8 bits apiece are used for each channel.
+
 
 ### -field BM_GRAY
 
 32 bits per pixel. Only the 8 bit gray-scale value is used.
 
+
 ### -field BM_xRGBQUADS
 
 32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.
+
 
 ### -field BM_xBGRQUADS
 
 32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.
 
+
 ### -field BM_xG3CHQUADS
 
 32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.
+
 
 ### -field BM_KYMCQUADS
 
 32 bits per pixel. 8 bits are used for each color channel.
 
+
 ### -field BM_CMYKQUADS
 
 32 bits per pixel. 8 bits are used for each color channel.
+
 
 ### -field BM_10b_RGB
 
 32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored. 
 
+
 ### -field BM_10b_XYZ
 
 32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.
+
 
 ### -field BM_10b_Yxy
 
 32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.
 
+
 ### -field BM_10b_Lab
 
 32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.
+
 
 ### -field BM_10b_G3CH
 
 32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.
 
+
 ### -field BM_NAMED_INDEX
 
 32 bits per pixel. Named color indices. Index numbering begins at one. 
+
 
 ### -field BM_16b_RGB
 
 64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.
 
+
 ### -field BM_16b_XYZ
 
 64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.
+
 
 ### -field BM_16b_Yxy
 
 64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.
 
+
 ### -field BM_16b_Lab
 
 64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.
+
 
 ### -field BM_16b_G3CH
 
 64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.
 
+
 ### -field BM_16b_GRAY
 
 64 bits per pixel. 16 bits are used for the gray-scale value. All other bits are ignored.
+
 
 ### -field BM_565RGB
 
 16 bits per pixel. 5 bits are used for red, 6 for green, and 5 for blue.
 
+
 ### -field BM_32b_scRGB
 
 96 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.
+
 
 ### -field BM_32b_scARGB
 
 128 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.
 
+
 ### -field BM_S2DOT13FIXED_scRGB
 
 48 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.
 
+
 ### -field BM_S2DOT13FIXED_scARGB
 
 64 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.
+
 
 ### -field BM_R10G10B10A2
 
@@ -253,24 +291,29 @@ BM_x555G3CH
 
 #endif // NTDDI_VERSION &gt;= NTDDI_WIN7
 
+
 ## -remarks
 The last four values were added to the BMFORMAT enumeration beginning with Windows Vista.
 
 The PBMFORMAT and LPBMFORMAT data types are defined as pointers to this enumeration:
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Included in Windows Vista and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

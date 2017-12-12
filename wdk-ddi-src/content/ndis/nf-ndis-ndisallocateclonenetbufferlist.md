@@ -7,7 +7,7 @@ old-location: netvista\ndisallocateclonenetbufferlist.htm
 old-project: netvista
 ms.assetid: 357605a1-5c57-44ed-97b3-f466f9a7182c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisAllocateCloneNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Call the
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -61,11 +62,13 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
 
 A pointer to an existing <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
 
+
 ### -param NetBufferListPoolHandle [in, optional]
 
 A handle that was obtained from a call to the 
      <a href="netvista.ndisallocatenetbufferlistpool">
      NdisAllocateNetBufferListPool</a> function.
+
 
 ### -param NetBufferPoolHandle [in, optional]
 
@@ -75,15 +78,19 @@ A
      <a href="netvista.ndisallocatenetbufferpool">
      NdisAllocateNetBufferPool</a>.
 
+
 ### -param AllocateCloneFlags [in]
 
 NDIS flags that can be combined with an OR operation. The following flags are defined:
      
 
 
+
+
 ### -param NDIS_CLONE_FLAGS_RESERVED
 
 Reserved for NDIS.
+
 
 ### -param NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS
 
@@ -91,12 +98,14 @@ If this flag is set, NDIS does not allocate new MDLs for the cloned <a href="net
        the cloned <b>NET_BUFFER_LIST</b> uses the same MDL chain as the original <b>NET_BUFFER_LIST</b>. If
        NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS is cleared, NDIS allocates new MDLs to reference the original data
        buffers.
+
 </dd>
 </dl>
 
 ## -returns
 <b>NdisAllocateCloneNetBufferList</b> returns a pointer to the new clone <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. If
      the allocation was unsuccessful, this pointer is <b>NULL</b>.
+
 
 ## -remarks
 Call 
@@ -126,11 +135,13 @@ Call the
     structures and MDL chains that were allocated by calling 
     <b>NdisAllocateCloneNetBufferList</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -141,14 +152,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,6 +173,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -169,14 +184,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -207,5 +225,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneNetBufferList function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneNetBufferList function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\npdbrokeracquirewithtimeout.htm
 old-project: netvista
 ms.assetid: D2067A72-0FF5-4D77-A1F6-0A6984A1735A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NpdBrokerAcquireWithTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS NpdBrokerAcquireWithTimeout(
 
 Reserved.
 
+
 ### -param lTimeoutMS [in]
 
 Reserved.
+
 
 ## -remarks
 
@@ -69,14 +72,17 @@ Reserved.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,9 +93,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

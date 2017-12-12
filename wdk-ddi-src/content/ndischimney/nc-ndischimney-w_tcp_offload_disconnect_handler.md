@@ -7,7 +7,7 @@ old-location: netvista\miniporttcpoffloaddisconnect.htm
 old-project: netvista
 ms.assetid: f8be12a9-c2c0-4a22-8a57-58c8b27ef69e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,11 +39,13 @@ req.irql: Any level
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The 
   <i>MiniportTcpOffloadDisconnect</i> function closes the send half of an offloaded TCP connection. In
   addition, if the disconnect to be performed is a graceful disconnect, NDIS can supply application data to 
   <i>MiniportTcpOffloadDisconnect</i> function that the function must transmit before sending a FIN
   segment.
+
 
 
 ## -prototype
@@ -73,11 +75,13 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param MiniportOffloadContext [in]
 
 A pointer to a memory location that contains a PVOID value. This PVOID value references the
      miniport offload context that contains the state object for the TCP connection to be disconnected. The
      offload target supplied this PVOID value when it offloaded the TCP connection state object.
+
 
 ### -param NetBufferList [in]
 
@@ -86,19 +90,24 @@ A pointer to a single
      <a href="netvista.net_buffer">NET_BUFFER</a> structure is associated with this
      NET_BUFFER_LIST structure.
 
+
 ### -param Flags [in]
 
 As one of the following values, the type of disconnect that the offload target must perform:
      
 
 
+
+
 ### -param TCP_DISCONNECT_ABORTIVE_CLOSE
 
 The offload target must perform an abortive disconnect by sending an RST segment.
 
+
 ### -param TCP_DISCONNECT_GRACEFUL_CLOSE
 
 The offload target must perform a graceful disconnect by sending a FIN segment.
+
 </dd>
 </dl>
 
@@ -108,6 +117,7 @@ The
      completes the disconnect request asynchronously by calling 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
      NdisTcpOffloadDisconnectComplete</a>.
+
 
 ## -remarks
 Depending on the 
@@ -195,11 +205,13 @@ An offload target must not fail a disconnect request unless the specified TCP co
 The offload target must not free resources for the connection on which it has issued either an
     abortive or graceful disconnect until the host stack terminates the offload of the connection.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -210,9 +222,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -253,5 +267,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

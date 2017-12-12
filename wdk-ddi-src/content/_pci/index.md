@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # PCI bus drivers
 
+## -description
 Overview of the PCI bus drivers technology.
 
 To develop PCI bus drivers, you need these headers:

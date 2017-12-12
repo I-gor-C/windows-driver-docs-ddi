@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2texblt.htm
 old-project: display
 ms.assetid: e240fb49-26e6-4d30-b579-03824ac8b67f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DHAL_DP2TEXBLT structure is used for texture blts when <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> responds to the D3DDP2OP_TEXBLT command token.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _D3DHAL_DP2TEXBLT {
 
 Specifies the handle to the destination texture.
 
+
 ### -field dwDDSrcSurface
 
 Specifies the handle to the source texture.
+
 
 ### -field pDest
 
 Specifies the destination point where the blt should be performed, that is, the point in the destination surface (<b>dwDDDestSurface</b>) to begin the blt. These <i>x</i> and <i>y</i> members of the POINT structure are specified in screen coordinates.
 
+
 ### -field rSrc
 
 Specifies the rectangle to be blitted in the source texture, that is, the source rectangle in the source surface (<b>dwDDSrcSurface</b>) to blt from.
 
+
 ### -field dwFlags
 
 Reserved for system use.
+
 
 ## -remarks
 The <a href="display.d3dcreatesurfaceex">D3dCreateSurfaceEx</a> callback creates the small integer handles to the textures that can be used as source and destination textures for texture blts.
@@ -97,11 +103,13 @@ With TexBlt it is not necessary for the driver to perform any synchronization be
 
 The following pseudocode shows how a subrectangle should be computed for consecutive MIP levels, to go to MIP level i + 1 from MIP level i: 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +130,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2TEXBLT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2TEXBLT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>GPIO_CLX_ProcessAddDevicePostDeviceCreate</b> method passes a framework device object to the GPIO framework extension (GpioClx).
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS GPIO_CLX_ProcessAddDevicePostDeviceCreate(
 
 A WDFDRIVER handle to the framework driver object for the GPIO controller driver.
 
+
 ### -param Device [in]
 
 A WDFDEVICE handle to the framework device object that represents the GPIO controller. The caller obtained this handle from the <a href="kmdf.wdfdevicecreate">WdfDeviceCreate</a> call that created the device object.
+
 
 ## -returns
 <b>GPIO_CLX_ProcessAddDevicePostDeviceCreate</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error codes.
@@ -75,16 +78,19 @@ A WDFDEVICE handle to the framework device object that represents the GPIO contr
 
  
 
+
 ## -remarks
 Your GPIO controller driver must call this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function, after the call to the <a href="kmdf.wdfdevicecreate">WdfDeviceCreate</a> method that creates the device object (FDO) that represents the GPIO controller. Otherwise, GpioClx cannot handle I/O requests or process interrupts for the new device object.
 
 For a code example that contains a call to <b>GPIO_CLX_ProcessAddDevicePostDeviceCreate</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439487">GPIO_CLX_ProcessAddDevicePreDeviceCreate</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,14 +101,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +122,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +133,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -143,5 +155,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20GPIO_CLX_ProcessAddDevicePostDeviceCreate method%20 RELEASE:%20(11/3/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

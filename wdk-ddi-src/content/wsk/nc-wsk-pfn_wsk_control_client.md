@@ -7,7 +7,7 @@ old-location: netvista\wskcontrolclient.htm
 old-project: netvista
 ms.assetid: dad13c60-3511-4641-9182-71a1ce032a69
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.product: Windows 10 or later.
 ## -description
 The 
   <b>WskControlClient</b> function performs control operations on a WSK client object.
+
 
 
 ## -prototype
@@ -103,17 +104,20 @@ Release a cached copy of a security descriptor.
 <dd>
 Enable specified event callback functions automatically on all sockets.
 
+
 ### -param WSK_TDI_DEVICENAME_MAPPING
 
 <dd>
 Map combinations of address family, socket type, and protocol to device names of 
        <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transports.
 
+
 ### -param WSK_TDI_BEHAVIOR
 
 <dd>
 Control whether the WSK subsystem will divert network I/O to 
        <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transports.
+
 </dd>
 </dl>
 
@@ -122,6 +126,7 @@ Control whether the WSK subsystem will divert network I/O to
 The number of bytes of data in the buffer that is pointed to by the 
      <i>InputBuffer</i> parameter.
 
+
 ### -param InputBuffer [in, optional]
 
 A caller-allocated buffer that supplies any input data that is required to perform the specified
@@ -129,10 +134,12 @@ A caller-allocated buffer that supplies any input data that is required to perfo
      should set this parameter to <b>NULL</b> and set the 
      <i>InputSize</i> parameter to zero.
 
+
 ### -param OutputSize [in]
 
 The size, in bytes, of the buffer that is pointed to by the 
      <i>OutputBuffer</i> parameter.
+
 
 ### -param OutputBuffer [out, optional]
 
@@ -141,6 +148,7 @@ A caller-allocated buffer that receives any output data that is returned by the 
      set this parameter to <b>NULL</b> and set the 
      <i>OutputSize</i> parameter to zero.
 
+
 ### -param OutputSizeReturned [out, optional]
 
 A pointer to a ULONG-typed variable that receives the number of bytes of data that is returned in
@@ -148,18 +156,22 @@ A pointer to a ULONG-typed variable that receives the number of bytes of data th
      <i>OutputBuffer</i> parameter. A WSK application should set this pointer to <b>NULL</b> except when all of the
      following are true:
      
+
 <ul>
 <li>
 The 
        <i>Irp</i> parameter is <b>NULL</b>.
+
 </li>
 <li>
 The operation that is being performed returns output data in the buffer that is pointed to by the 
        <i>OutputBuffer</i> parameter.
+
 </li>
 <li>
 The number of bytes of output data that is returned by the operation that is being performed is
        unknown.
+
 </li>
 </ul>
 
@@ -170,11 +182,13 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
      
+
 This parameter is required, is optional, or must be <b>NULL</b>, depending on the particular client control
      operation that is being performed. For more information about the requirements for this parameter for
      each of the supported client control operations, see 
      <a href="netvista.wsk_client_control_operations">WSK Client Control
      Operations</a>.
+
 
 ## -returns
 <b>WskControlClient</b> returns one of the following NTSTATUS codes:
@@ -200,6 +214,7 @@ This parameter is required, is optional, or must be <b>NULL</b>, depending on th
 
  
 
+
 ## -remarks
 For more information about how the input and output buffers are used for each client control
     operation, see 
@@ -216,11 +231,13 @@ If the
     stack, it cannot return from the function that calls the 
     <b>WskControlClient</b> function until after the IRP is completed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -231,15 +248,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -250,9 +270,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -279,5 +301,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_CLIENT callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_CLIENT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

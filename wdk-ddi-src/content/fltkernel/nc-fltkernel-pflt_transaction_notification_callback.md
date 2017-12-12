@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as its <i>TransactionNotificationCallback</i> routine. 
 
 
+
 ## -prototype
 
 ````
@@ -61,13 +62,16 @@ NTSTATUS TransactionNotificationCallback(
 
 Pointer to an <a href="ifsk.flt_related_objects">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current operation. 
 
+
 ### -param TransactionContext [in]
 
 Pointer to the minifilter driver's transaction context. 
 
+
 ### -param NotificationMask [in]
 
 Specifies the type of notifications that the filter manager is sending to the minifilter driver, as one of the following values. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -76,45 +80,56 @@ Specifies the type of notifications that the filter manager is sending to the mi
 <tr>
 <td>
 TRANSACTION_NOTIFY_COMMIT
+
 </td>
 <td>
 This notification is sent when the transaction is being committed. 
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_COMMIT_FINALIZE
+
 </td>
 <td>
 For Windows Vista SP1 and later, this notification is sent when the transaction is fully committed (that is, when all of the <a href="http://go.microsoft.com/fwlink/p/?linkid=94490">resource managers</a> associated with the transaction, such as <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">TxF</a>, have committed).
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_PREPARE
+
 </td>
 <td>
 This notification is sent when the transaction enters the prepare for commit phase. 
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_PREPREPARE
+
 </td>
 <td>
 This notification is sent when the transaction enters the pre-prepare for commit phase. 
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_ROLLBACK
+
 </td>
 <td>
 This notification is sent when the transaction is being rolled back or aborted. 
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 The PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine returns one of the following NTSTATUS values: 
@@ -126,6 +141,7 @@ The PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine returns one of the following 
 </dl>Returning this status value indicates that the minifilter driver is not yet finished with the transaction. This is a success code. 
 
  
+
 
 ## -remarks
 When a minifilter driver registers itself by calling <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine, it can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as the minifilter's <i>TransactionNotificationCallback</i> routine. 
@@ -152,11 +168,13 @@ If the minifilter driver returns STATUS_PENDING from this callback routine, it m
 <a href="ifsk.fltrollbackcomplete">FltRollbackComplete</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -167,14 +185,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine is available on Windows Vista and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -185,9 +206,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -217,5 +240,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

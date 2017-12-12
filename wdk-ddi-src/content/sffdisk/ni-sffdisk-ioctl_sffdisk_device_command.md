@@ -40,8 +40,11 @@ req.product: Windows 10 or later.
 
 ## -description
 User-mode applications use this IOCTL to send Secure Digital (SD) card commands to an SD card. For a description of these commands, see the <i>SD Memory Card Part 1 Physical Layer Specification</i>, and the <i>SD Memory Card Part 3 Security</i> specification.
+
 The caller must fill in an <a href="https://msdn.microsoft.com/68205c17-5ff6-45a3-83c7-e106b314f9a5">SFFDISK_DEVICE_COMMAND_DATA</a> structure and pass it as a parameter to the call. 
+
 To perform this operation, call the <a href="base.deviceiocontrol">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) with the following parameters.
+
 
 
 ## -syntax
@@ -92,6 +95,7 @@ If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> re
 
 If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.
 
+
 ## -remarks
 
 
@@ -100,6 +104,7 @@ If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> retur
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

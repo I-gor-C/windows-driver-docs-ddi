@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_native_802_11_attributes.htm
 old-project: netvista
 ms.assetid: f841c7f9-9ad3-4b53-b2d9-0d66d6e64b8b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure
@@ -70,31 +70,40 @@ The type, revision, and size of the NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUT
      member is formatted as an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES.
 
+
 ### -field Revision
 
 For the Windows Vista or Windows Server 2008 operating systems, this member must be set to
         NDIS_MINIPORT_ADAPTER_802_11_ATTRIBUTES_REVISION_1.
+
 For later versions of the Windows operating systems, this member must be set to
         NDIS_MINIPORT_ADAPTER_802_11_ATTRIBUTES_REVISION_2.
+
 
 ### -field Size
 
 For the Windows Vista or Windows Server 2008 operating systems, this member must be set to
         NDIS_SIZEOF_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES_REVISION_1.
+
 For later versions of the Windows operating systems, this member must be set to
         NDIS_SIZEOF_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES_REVISION_2.
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field OpModeCapability
 
@@ -103,25 +112,32 @@ A bitmask of the miniport driver's supported operation modes. This bitmask is de
      
 
 
+
+
 ### -field DOT11_OPERATION_MODE_EXTENSIBLE_AP
 
 Specifies that the miniport driver supports the Extensible Access Point (ExtAP) operation mode.
        
+
 This value is available beginning with Windows 7.
+
 
 ### -field DOT11_OPERATION_MODE_EXTENSIBLE_STATION
 
 Specifies that the miniport driver supports the Extensible Station (ExtSTA) operation
        mode.
 
+
 ### -field DOT11_OPERATION_MODE_NETWORK_MONITOR
 
 Specifies that the miniport driver supports the Network Monitor (NetMon) operation mode.
+
 </dd>
 </dl>
 For more information about operation modes, see 
      <a href="netvista.native_802_11_operation_modes">Native 802.11 Operation
      Modes</a>.
+
 
 ### -field NumOfTXBuffers
 
@@ -129,13 +145,16 @@ The maximum number of media access control (MAC) service data unit (MSDU) packet
      station can hold in its transmit queue. The miniport driver must support a minimum transmit queue depth
      of 64.
      
+
 The value of this member must not include the number of transmit buffers that the 802.11 station uses
      to send packets on its own, such as Beacon packets or 802.11 control packets.
+
 
 ### -field NumOfRXBuffers
 
 The maximum number of MSDU packets that the 802.11 station can buffer in its receive queue. The
      miniport driver must support a minimum receive queue depth of 64.
+
 
 ### -field MultiDomainCapabilityImplemented
 
@@ -143,9 +162,11 @@ A Boolean value that, if <b>TRUE</b>, specifies that the 802.11 station can oper
      regulatory domains. For more information about 802.11 regulatory domains, refer to the IEEE 802.11d-2001
      standard.
 
+
 ### -field NumSupportedPhys
 
 The number of PHYs on the 802.11 station.
+
 
 ### -field SupportedPhyAttributes
 
@@ -157,6 +178,7 @@ A pointer to an array of
      <a href="netvista.oid_dot11_supported_phy_types">
      OID_DOT11_SUPPORTED_PHY_TYPES</a>.
 
+
 ### -field ExtSTAAttributes
 
 A pointer to a 
@@ -166,13 +188,16 @@ A pointer to a
      <a href="netvista.extensible_station_operation_mode">Extensible Station Operation
      Mode</a>.
 
+
 ### -field VWiFiAttributes
 
 A pointer to a 
       <a href="..\windot11\ns-windot11-dot11_vwifi_attributes.md">DOT11_VWIFI_ATTRIBUTES</a> structure
       that specifies the attributes of the miniport driver and 802.11 station when it operates in Virtual
       WiFi mode.
+
 This member is available beginning with Windows 7.
+
 
 ### -field ExtAPAttributes
 
@@ -180,14 +205,18 @@ A pointer to a
       <a href="netvista.dot11_extap_attributes">DOT11_EXTAP_ATTRIBUTES</a> structure
       that specifies the attributes of the miniport driver and 802.11 station when it operates in Extensible
       Access Point (ExtAP) mode.
+
 This member is available beginning with Windows 7.
+
 
 ### -field WFDAttributes
 
 A pointer to a 
       <a href="netvista.dot11_wfd_attributes">DOT11_WFD_ATTRIBUTES</a> structure
       that specifies the attributes of the miniport driver and 802.11 station when it operates in Wi-Fi Direct (WFD) mode.
+
 This member is available beginning with Windows 8.
+
 
 ## -remarks
 When its 
@@ -219,20 +248,24 @@ For more information about the initialization requirements for a Native 802.11 m
     <a href="netvista.native_802_11_miniport_driver_initialization">Native 802.11 Miniport
     Driver Initialization</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -284,5 +317,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

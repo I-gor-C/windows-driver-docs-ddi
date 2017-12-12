@@ -41,6 +41,7 @@ req.irql:
 The <b>FSCTL_OFFLOAD_READ_OUTPUT</b> structure contains the output for the <a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a> control code request.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 
 The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_READ_OUTPUT).
 
+
 ### -field Flags
 
  Result flags. This value is a bitwise <b>OR</b> combination of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -75,6 +78,7 @@ The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_READ_
 </td>
 <td width="60%">
 The file to read from is too small for an offload operation.
+
 </td>
 </tr>
 <tr>
@@ -85,6 +89,7 @@ The file to read from is too small for an offload operation.
 </td>
 <td width="60%">
 The range extending beyond the selected range contains all zeros.
+
 </td>
 </tr>
 <tr>
@@ -95,18 +100,22 @@ The range extending beyond the selected range contains all zeros.
 </td>
 <td width="60%">
 The offload operation cannot complete beyond the selected range. An non-offloaded read method should be used to complete the operation.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field TransferLength
 
 The length, in bytes, of data represented by <b>Token</b>.
 
+
 ### -field Token
 
 A byte array that contains a token structure, <a href="storage.storage_offload_token">STORAGE_OFFLOAD_TOKEN</a>, representing a file data within a range specified in <a href="ifsk.fsctl_offload_read_input">FSCTL_OFFLOAD_READ_INPUT</a>. The contents of <b>Token</b>  must remain unmodified between offload operations.
+
 
 ## -remarks
 If the <a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a> operation is successful, the storage device's copy provider returns, in <b>FSCTL_OFFLOAD_READ_OUTPUT</b>, a unique token value identifying the portion of file data read. 
@@ -117,19 +126,23 @@ The  copy provider retains the data read for the duration in the <b>TokenTimeToL
 
  If less data than requested was transferred, the read operation  may be completed by performing another <a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a> request. The next request uses updated <b>FileOffset</b> member in the <a href="ifsk.fsctl_offload_read_input">FSCTL_OFFLOAD_READ_INPUT</a> structure with the value in <b>TransferLength</b> and an adjusted read length of the previous length minus the value in <b>TransferLength</b>. Also, an incomplete read operation can be completed through a non-offloaded read method, using the <a href="kernel.zwreadfile">ZwReadFile</a> routine, for example.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,5 +165,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSCTL_OFFLOAD_READ_OUTPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

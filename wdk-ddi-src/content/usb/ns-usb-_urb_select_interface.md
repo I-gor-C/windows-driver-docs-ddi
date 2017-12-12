@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>_URB_SELECT_INTERFACE</b> structure is used by USB client drivers to select an alternate setting for an interface or to change the maximum packet size of a pipe in the current configuration on a USB device.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ struct _URB_SELECT_INTERFACE {
 
 Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_INTERFACE, and <b>Hdr.Length</b> must be the size of the entire URB.
 
+
 ### -field ConfigurationHandle
 
 Specifies the handle to the configuration that this interface belongs to. The host controller driver returns this handle when the client selects the configuration with an URB_FUNCTION_SELECT_CONFIGURATION request.
 
+
 ### -field Interface
 
 A variable-length <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structure that specifies the interface and the new alternate setting for that interface, and if required, the new maximum packet sizes for the corresponding pipes. For more information, see Remarks.
+
 
 ## -remarks
 You can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537164">GET_SELECT_INTERFACE_REQUEST_SIZE</a> macro to determine the size of the URB_FUNCTION_SELECT_INTERFACE URB, and the <b>UsbBuildSelectInterfaceRequest</b> routine to format the URB.
@@ -74,11 +78,13 @@ The <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> st
 
  After the bus driver successfully completes processing the URB_FUNCTION_SELECT_INTERFACE URB, it returns an array of handles for each pipe in the  <code>Pipes[i].PipeHandle</code>  member. The client driver can store pipe handles to send I/O requests to specific pipes.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_SELECT_INTERFACE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

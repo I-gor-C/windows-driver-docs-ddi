@@ -7,8 +7,8 @@ old-location: netvista\wwan_registration_state.htm
 old-project: netvista
 ms.assetid: 72a41403-9e22-4212-955a-16e243f7af1d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE
+ms.date: 12/8/2017
+ms.keywords: _WWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_REGISTRATION_STATE structure represents the registration state of the MB device.
 
 
+
 ## -syntax
 
 ````
@@ -66,11 +67,13 @@ A network specific error, in the event of a registration failure. For more infor
      member, see the following 
      "Remarks" section.
 
+
 ### -field RegisterState
 
 The registration state of the device. For a list of defined values, see 
      <a href="netvista.wwan_register_state">WWAN_REGISTER_STATE</a>.
      
+
 The 
      <b>WwanRegisterStatePartner</b> value indicates the device is roaming on a preferred partner network
      provider, whereas 
@@ -78,60 +81,75 @@ The
      characterization of the roaming state is not available, the miniport driver should report 
      <b>WwanRegisterStateRoaming</b>.
 
+
 ### -field RegisterMode
 
 The registration mode of the device. For a list of defined values, see 
      <a href="netvista.wwan_register_mode">WWAN_REGISTER_MODE</a>.
 
+
 ### -field ProviderId
 
 A NULL-terminated numeric (0-9) string that represents the network provider identity.
      
+
 For GSM-based networks, this string is a concatenation of a three-digit Mobile Country Code (MCC) and
      a two or three-digit Mobile Network Code (MNC). GSM-based carriers may have more than one MNC, and hence
      more than one 
      <b>ProviderId</b> .
+
 For CDMA-based networks, this string is a five-digit System ID (SID). Generally, a CDMA-based carrier
      has more than one SID. Typically, a carrier has one SID for each market, which is usually divided
      geographically within a nation by regulations, such as Metropolitan Statistical Areas (MSA) in the
      United States of America. Miniport drivers of CDMA-based devices must specify
      WWAN_CDMA_DEFAULT_PROVIDER_ID if this information is not available.
+
 When processing a 
      <i>query</i> request, and the registration state is in automatic register mode, this member contains the
      provider ID that the device is currently associated with (if applicable). When the registration state is
      in manual register mode, this member contains the provider ID that the device is requested to register
      with (even if the provider is unavailable).
+
 When processing a 
      <i>set</i> request and the registration state is in manual mode, this contains the provider ID selected
      by the MB Service for the device to register with. When the registration state is in automatic register
      mode, this parameter is ignored.
+
 CDMA 1xRTT providers must be set to WWAN_CDMA_DEFAULT_PROVIDER_ID if the provider ID is not
      available.
+
 
 ### -field ProviderName
 
 A NULL-terminated string that represents the network provider's name. This member is limited to,
      at most, WWAN_PROVIDERNAME_LEN characters.
      
+
 For GSM-based networks, if the Preferred Presentation of Country Initials and Mobile Network Name
      (PPCI&amp;N) is longer than twenty characters, the miniport driver should abbreviate the network
      name.
+
 This member is ignored when the MB Service sets the preferred provider list.
+
 Miniport drivers should specify a <b>NULL</b> string for devices that do not have this
      information.
+
 
 ### -field RoamingText
 
 A NULL-terminated string to inform the user that the device is roaming. This member is limited to
      at most WWAN_ROAMTEXT_LEN characters.
      
+
 This text should provide additional information to the user when the registration state is either 
      <b>WwanRegisterStatePartner</b> or 
      <b>WwanRegisterStateRoaming</b>. This member is optional.
 
+
 ### -field WwanRegFlags
 
 Registration flags.
+
 <table>
 <tr>
 <th>Value</th>
@@ -140,33 +158,41 @@ Registration flags.
 <tr>
 <td>
 WWAN_REG_FLAGS_NONE
+
 </td>
 <td>
 No registration flags.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_REG_FLAGS_NO_MANUAL_REG
+
 </td>
 <td>
 No manual attach.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_REG_FLAGS_PS_AUTO_ATTACH
+
 </td>
 <td>
 Iindicates that the MB device manages its own packet context. The MB Service will not send a packet detach to the miniport driver, but may send a packet attach.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field CurrentCellularClass
 
 The current cellular class of the registered network. For networks that only support a single cellular class this member should be set to that cellular class. For multi-mode capable networks the miniport driver sends  NDIS_STATUS_WWAN_REGISTER_STATE notifications to the MB service when the network changes its cellular class.
+
 
 ## -remarks
 <i>Query</i> and 
@@ -217,19 +243,23 @@ Miniport drivers must report the cause code at the earliest possible instance. F
 
 Miniport drivers connected to a multi-mode network should indicate the cellular class change through a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567857">NDIS_STATUS_WWAN_REGISTER_STATE</a> notification.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -252,5 +282,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

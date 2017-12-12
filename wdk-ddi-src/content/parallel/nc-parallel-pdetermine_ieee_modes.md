@@ -41,6 +41,7 @@ req.irql:
 The PDETERMINE_IEEE_MODES-typed callback routine determines which IEEE 1284 protocols a parallel device supports. The system-supplied bus driver for parallel ports supplies this routine.
 
 
+
 ## -prototype
 
 ````
@@ -56,32 +57,41 @@ typedef USHORT ( *PDETERMINE_IEEE_MODES)(
 
 Pointer to a device extension of a parallel device's physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>).
 
+
 ## -returns
 The return value indicates which protocols a parallel device supports. The return value is a bitwise OR of one or more of the following constants that represent the protocols that are supported by the system-supplied bus driver for parallel ports. The protocol constants are listed in order of decreasing data transfer rate.
 <dl>
 <dd>
 BOUNDED_ECP
+
 </dd>
 <dd>
 ECP_HW_NOIRQ
+
 </dd>
 <dd>
 EPP_HW 
+
 </dd>
 <dd>
 EPP_SW
+
 </dd>
 <dd>
 ECP_SW
+
 </dd>
 <dd>
 IEEE_COMPATIBILITY
+
 </dd>
 <dd>
 CENTRONICS
+
 </dd>
 <dd>
 NONE
+
 </dd>
 </dl>BOUNDED_ECP
 
@@ -99,16 +109,19 @@ CENTRONICS
 
 NONE
 
+
 ## -remarks
 To obtain a pointer to the system-supplied PDETERMINE_IEEE_MODES callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl_internal_parclass_connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure. The <b>DetermineIeeeModes</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.
 
 The PDETERMINE_IEEE_MODES callback runs in the caller's thread at the IRQL of the caller.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +132,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,5 +167,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PDETERMINE_IEEE_MODES function pointer%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

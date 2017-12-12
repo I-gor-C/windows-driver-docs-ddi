@@ -7,7 +7,7 @@ old-location: display\dxgk_setvidpnsourceaddress_flags.htm
 old-project: display
 ms.assetid: cdc4aec6-45d4-4a5b-aa52-7830494a12b6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_SETVIDPNSOURCEADDRESS_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,8 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure identifies the specific type of operation to perform in a call to the display miniport driver's <a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a> or <a href="display.dxgkddisetvidpnsourceaddresswithmultiplaneoverlay">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a> functions.
+The DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure identifies the specific type of operation to perform in a call to the display miniport driver's <a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay.md">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a> functions.
+
 
 
 ## -syntax
@@ -69,95 +70,135 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_FLAGS {
 ### -field ModeChange
 
 A UINT value that specifies for the driver to switch the display mode. 
+
 Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).
+
 
 ### -field FlipImmediate
 
 A UINT value that specifies for the driver to perform a flip operation that occurs without vertical sync.
+
 Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).
+
 
 ### -field FlipOnNextVSync
 
 A UINT value that specifies for the driver to perform a flip operation that occurs on the next vertical sync.
+
 Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).
+
 
 ### -field FlipStereo
 
 [in] Supported beginning with Windows 8.
+
 Specifies whether the driver  flips both left and right images of a stereo allocation.
+
 If the <b>FlipOnNextVSync</b> member of the <b>DXGK_SETVIDPNSOURCEADDRESS_FLAGS</b> structure is  set, the driver completes the flip to the left image on the next VSync and then completes the flip to the right image on the following VSync.
+
 If the <b>FlipImmediate</b> member of the <b>DXGK_SETVIDPNSOURCEADDRESS_FLAGS</b> structure is  set, the driver immediately starts to scan out from the new allocation. For example, if the driver was scanning a right image, it  starts the new scan from the same relative offset in the right image of the new allocation.
+
 The <b>FlipStereo</b> and <b>FlipStereoTemporaryMono</b> members cannot both be set at the same time.
+
 For more requirements, see the Remarks section.
+
 Setting this member is equivalent to setting the    fourth bit of the 32-bit <b>Value</b> member (0x00000008).
+
 
 ### -field FlipStereoTemporaryMono
 
 [in] Supported beginning with Windows 8.
+
 Specifies whether the driver uses the left image of a stereo allocation for the right and left portions of a stereo frame. The driver performs the same present operation as with <b>FlipStereo</b>, except that it scans out only from the left image to produce both images of a stereo frame.
+
 This member should  be set only if the driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="display.d3dkmdt_vidpn_source_mode">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN.
+
 The <b>FlipStereo</b> and <b>FlipStereoTemporaryMono</b> members cannot both be set at the same time.
+
 The   <b>FlipStereoTemporaryMono</b> and <b>FlipStereoPreferRight</b> members cannot both be set at the same time.
+
 For more requirements, see the Remarks section.
+
 Setting this member is equivalent to setting the    fifth bit of the 32-bit <b>Value</b> member (0x00000010).
+
 
 ### -field FlipStereoPreferRight
 
 [in] Supported beginning with Windows 8.
+
 Specifies that when the driver clones a stereo primary allocation to a mono monitor, it uses the right image.
+
 The   <b>FlipStereoTemporaryMono</b> and <b>FlipStereoPreferRight</b> members cannot both be set at the same time.
+
 For more requirements, see the Remarks section.
+
 Setting this member is equivalent to setting the    sixth bit of the 32-bit <b>Value</b> member (0x00000020).
+
 
 ### -field SharedPrimaryTransition
 
 [in] Supported beginning with Windows 8.
+
 Specifies that the driver is transitioning to or from a shared managed primary allocation.
+
 This member is set if either of the following transitions occurs:
+
 <ul>
 <li>The current primary allocation is not a shared primary allocation, but the new one is.</li>
 <li>The current primary allocation is a shared primary allocation, but the new one is not.</li>
 </ul>
 When <b>SharedPrimaryTransition</b> is set, the display miniport driver must validate that the hardware can seamlessly switch back and forth between primary and shared primary allocations, and it must perform any hardware programming needed to make the seamless switch occur.
+
 Setting this member is equivalent to setting the    seventh bit of the 32-bit <b>Value</b> member (0x00000040).
+
 
 ### -field IndependentFlipExclusive
 
 [in] Supported beginning with Windows 10.
+
 When <b>IndependentFlipExlusive</b> is set, the flip is done in the independent flip exclusive mode. The front buffer is accessed only by the display hardware (not by the DWM) and the kernel mode driver can apply vertical sync-related optimizations.   
+
 
 
 ### -field MoveFlip
 
 [in] Supported beginning with Windows 10.
+
 When <b>MoveFlip</b> is set, the  driver is notified to use any state that has been saved from the previous flip to configure the new scanout request.
+
 
 ### -field Reserved
 
 [in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 23 bits (0xFFFFFF00) of the 32-bit <b>Value</b> member to zeros.
 
+
 ### -field Value
 
 A member in the union that DXGK_SETVIDPNSOURCEADDRESS_FLAGS contains that can hold a 32-bit value that identifies operation type. 
+
 
 ## -remarks
 If any of the <b>FlipStereo</b>, <b>FlipStereoTemporaryMono</b>, or <b>FlipStereoPreferRight</b>  members are set, these conditions apply:
 
 Beginning with Windows 8, the display miniport driver can fail a call to the <a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a> function, returning STATUS_INVALID_PARAMETER, when the <b>SharedPrimaryTransition</b> member is set in <i>pSetVidPnSourceAddress</i>-&gt;<b>Flags</b>. However, such a failure is not expected unless there is an error in either the user mode driver's implementation of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_checkdirectflipsupport.md">CheckDirectFlipSupport</a> function or in the Desktop Window Manager (DWM). If such a failure occurs, the operating system will not seamlessly fail back to composition mode, and presentation will be incorrect.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,9 +223,12 @@ Header
 <a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a>
 </dt>
 <dt>
-<a href="display.dxgkddisetvidpnsourceaddresswithmultiplaneoverlay">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay.md">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 604be66a-bec7-48db-b038-aaaf78043965
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSTOPOLOGY_CONNECTION, *PKSTOPOLOGY_CONNECTION, KSTOPOLOGY_CONNECTION
+ms.keywords: PKSTOPOLOGY_CONNECTION, KSTOPOLOGY_CONNECTION, *PKSTOPOLOGY_CONNECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct {
 
 Specifies the node ID of the node on the upstream end of the connection. If this end of the connection is an external pin on the filter -- not a logical pin on a node--set this member to the null node-ID value, KSFILTER_NODE.
 
+
 ### -field FromNodePin
 
 Specifies the pin ID for the upstream end of the connection. If <b>FromNode </b>is KSFILTER_NODE, the pin on this end of the connection is an external pin on the filter. If not, the pin on this end is a logical pin on an internal node.
+
 
 ### -field ToNode
 
 Specifies the node ID of the node on the downstream end of the connection. If this end of the connection is an external pin on the filter--not a logical pin on a node -- set this member to the null node-ID value, KSFILTER_NODE.
 
+
 ### -field ToNodePin
 
 Specifies the pin ID for the downstream end of the connection. If <b>ToNode</b> is KSFILTER_NODE, the pin on this end of the connection is an external pin on the filter. If not, the pin on this end is a logical pin on an internal node.
+
 
 ## -remarks
 KSTOPOLOGY_CONNECTION represents a single connection inside a filter, between either external pins, internal nodes, or an external pin and an internal node.
@@ -82,11 +87,13 @@ Otherwise, <b>FromNodePin</b> or <b>ToNodePin</b> represent a logical incoming o
 
 The <a href="audio.pcconnection_descriptor">PCCONNECTION_DESCRIPTOR</a> structure name is an alias for KSTOPOLOGY_CONNECTION.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,5 +122,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSTOPOLOGY_CONNECTION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

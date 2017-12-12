@@ -7,7 +7,7 @@ old-location: netvista\rilterminalcapabilityinfo_2.htm
 old-project: netvista
 ms.assetid: 29d9bf92-ea35-4d74-bc4c-3f386e7fb3fa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO, *LPRILTERMINALCAPABILITYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILTERMINALCAPABILITYINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

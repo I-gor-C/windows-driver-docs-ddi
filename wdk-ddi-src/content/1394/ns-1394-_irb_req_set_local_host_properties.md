@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields required to carry out a SetLocalHostProperties request.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _IRB_REQ_SET_LOCAL_HOST_PROPERTIES {
 ### -field nLevel
 
 Specifies what level of information is desired from this call. The following flags are provided.  
+
 <table>
 <tr>
 <th>Flag</th>
@@ -64,25 +66,31 @@ Specifies what level of information is desired from this call. The following fla
 <tr>
 <td>
 SET_LOCAL_HOST_PROPERTIES_GAP_COUNT 
+
 </td>
 <td>
 Sets a lower bound on the value the bus uses for its gap count. See the <i>IEEE 1394-1995 Specification</i> for a description of the gap count. 
+
 </td>
 </tr>
 <tr>
 <td>
 SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM
+
 </td>
 <td>
 Used to add or remove unit directories. This request cannot be used to modify instance directories or root keys in the configuration ROM. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Information
 
 Points to an information block to be filled in. The information returned depends on the value in <b>u.SetLocalHostProperties.nLevel</b>. Each block has its own particular structure.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -91,21 +99,26 @@ Points to an information block to be filled in. The information returned depends
 <tr>
 <td>
 SET_LOCAL_HOST_PROPERTIES_GAP_COUNT 
+
 </td>
 <td>
 SET_LOCAL_HOST_PROPS2
+
 </td>
 </tr>
 <tr>
 <td>
 SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM
+
 </td>
 <td>
 SET_LOCAL_HOST_PROPS3
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -115,6 +128,7 @@ SET_LOCAL_HOST_PROPS3
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

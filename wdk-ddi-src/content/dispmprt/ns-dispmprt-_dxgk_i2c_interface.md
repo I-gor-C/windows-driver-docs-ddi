@@ -7,8 +7,8 @@ old-location: display\dxgk_i2c_interface.htm
 old-project: display
 ms.assetid: aba0ebc8-2c92-4d27-a35b-9ac25ac6e5ab
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE
+ms.date: 12/8/2017
+ms.keywords: _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGK_I2C_INTERFACE structure contains pointers to functions in the <a href="display.i2c_interface">I2C interface</a>, which is implemented by the display miniport driver.
 
 
+
 ## -syntax
 
 ````
@@ -62,46 +63,57 @@ typedef struct _DXGK_I2C_INTERFACE {
 
 The size, in bytes, of this structure.
 
+
 ### -field Version
 
 The version number of the I2C interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_I2C_INTERFACE_VERSION_1).
+
 
 ### -field Context
 
 A pointer to a private context block.
 
+
 ### -field InterfaceReference
 
 A pointer to an interface reference function that is implemented by the display miniport driver.
+
 
 ### -field InterfaceDereference
 
 A pointer to an interface dereference function that is implemented by the display miniport driver.
 
+
 ### -field DxgkDdiI2CTransmitDataToDisplay
 
 A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_transmit_data_to_display.md">DxgkDdiI2CTransmitDataToDisplay</a> function.
+
 
 ### -field DxgkDdiI2CReceiveDataFromDisplay
 
 A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_receive_data_from_display.md">DxgkDdiI2CReceiveDataFromDisplay</a> function.
 
+
 ## -remarks
-A kernel-mode component that needs to use the I2C interface calls the display miniport driver's <a href="display.dxgkddiqueryinterface">DxgkDdiQueryInterface</a> function.
+A kernel-mode component that needs to use the I2C interface calls the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

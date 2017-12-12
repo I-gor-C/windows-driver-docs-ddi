@@ -7,7 +7,7 @@ old-location: kernel\exuuidcreate.htm
 old-project: kernel
 ms.assetid: e85fe5fa-b11e-41ff-a355-4da0394377d1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExUuidCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>ExUuidCreate</b> routine initializes a UUID (GUID) structure to a newly generated value.
 
 
+
 ## -syntax
 
 ````
@@ -55,6 +56,7 @@ NTSTATUS ExUuidCreate(
 ### -param Uuid [out]
 
 A pointer to a caller-allocated UUID (GUID) structure that is set to a new UUID value. 
+
 
 ## -returns
 
@@ -71,16 +73,19 @@ A pointer to a caller-allocated UUID (GUID) structure that is set to a new UUID 
 
  
 
+
 ## -remarks
 A UUID and a GUID are the same data type.
 
 The caller can iteratively attempt to obtain a new UUID value. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +128,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -129,14 +139,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqlexpassive">IrqlExPassive</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>

@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_video_process_frame_0032.htm
 old-project: display
 ms.assetid: C7923B09-FBA2-43EE-A56B-0B8B6C3403A0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to process a video frame.
 
 
+
 ## -prototype
 
 ````
@@ -60,24 +61,30 @@ VOID APIENTRY* PFND3D12DDI_VIDEO_PROCESS_FRAME_0032(
 
 The command list.
 
+
 ### -param hDrvVideoProcessor 
 
 The video processor.
+
 
 ### -param pOutputParameters 
 
 The output arguments for the video process.
 
+
 ### -param pInputStreamParameters 
 
 The input arguments for the video process.
+
 
 ### -param NumInputStreams 
 
 The number of input streams.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -87,6 +94,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

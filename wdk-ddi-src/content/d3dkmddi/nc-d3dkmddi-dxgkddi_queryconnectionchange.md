@@ -7,7 +7,7 @@ old-location: display\dxgkddi_queryconnectionchange.htm
 old-project: display
 ms.assetid: 8C09B692-3439-4ACD-942D-F7A107E2B4DA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The OS calls this in response to a status change reported through DxgkCbIndicateConnectorChange or when the OutputFlags.ConnectorStatusChanges field indicates that a call to SetTimingsFromVidPn has detected connector status changes.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS APIENTRY DXGKDDI_QUERYCONNECTIONCHANGE(
 
 A handle that identifies the adapter.
 
+
 ### -param pQueryConnectionChange [in]
 
 A pointer to a <a href="display.dxgkarg_queryconnectionchange">DXGKARG_QUERYCONNECTIONCHANGE</a> structure that provides the OS allocated buffer into which the oldest change should be copied by the driver. The oldest change is judged by lowest ConnectionChangeId.
+
 
 ## -returns
 <dl>
@@ -71,14 +74,17 @@ A pointer to a <a href="display.dxgkarg_queryconnectionchange">DXGKARG_QUERYCONN
 
  
 
+
 ## -remarks
 This function is always called at PASSIVE level so the supporting code should be made pageable.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

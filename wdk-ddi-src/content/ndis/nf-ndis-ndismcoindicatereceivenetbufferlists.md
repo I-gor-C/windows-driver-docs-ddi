@@ -7,7 +7,7 @@ old-location: netvista\ndismcoindicatereceivenetbufferlists.htm
 old-project: netvista
 ms.assetid: dabd472f-9877-4434-a534-e07a047e092f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMCoIndicateReceiveNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   the network.
 
 
+
 ## -syntax
 
 ````
@@ -65,16 +66,19 @@ A handle that identifies a virtual connection (VC). The miniport driver obtained
      when a client set up an outgoing call or when the call manager created a VC for a client-registered
      service access point (SAP) to indicate an incoming-call notification on.
 
+
 ### -param NetBufferLists [in]
 
 A linked list of 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that the
      miniport driver allocated.
 
+
 ### -param NumberOfNetBufferLists [in]
 
 The number of NET_BUFFER_LIST structures that are in the linked list of structures that 
      <i>NetBufferLists</i> specifies.
+
 
 ### -param CoReceiveFlags [in]
 
@@ -84,21 +88,26 @@ Flags that define attributes for the send operation. The flags can be combined w
      
 
 
+
+
 ### -param NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL
 
 The current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
        <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.
+
 
 ### -param NDIS_RECEIVE_FLAGS_RESOURCES
 
 The miniport driver reclaims ownership of the NET_BUFFER_LIST structures and any attached
        NET_BUFFER structures immediately after 
        <b>NdisMCoIndicateReceiveNetBufferLists</b> returns.
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 A miniport driver typically calls the 
@@ -147,11 +156,13 @@ The caller of
     <a href="netvista.net_buffer">NET_BUFFER</a> structures, and any attached memory
     descriptor lists (MDLs).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -162,14 +173,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -180,6 +194,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -190,14 +205,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_mco_function">Irql_MCO_Function</a>
@@ -225,5 +243,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoIndicateReceiveNetBufferLists function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoIndicateReceiveNetBufferLists function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

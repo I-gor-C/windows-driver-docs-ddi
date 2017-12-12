@@ -40,7 +40,9 @@ req.irql:
 ## -description
 The <b>IOCTL_HID_ENABLE_WAKE_ON_SX</b> 
    request is  used to indicate the  requirement for a device to be able to wake from system sleep.
+
 User mode clients, including user mode driver framework (UMDF) drivers, use this IOCTL to let a device know about the "<i>wake from sleep</i>" requirement. The user mode clients use this IOCTL because they are not able to send an I/O request packet (IRP) to a device.
+
 
 
 ## -ioctlparameters
@@ -48,14 +50,18 @@ User mode clients, including user mode driver framework (UMDF) drivers, use this
 ### -input-buffer
 The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member specifies the size, in bytes, of a requester-allocated output buffer. 
 
+
 ### -input-buffer-length
 This is a buffer of size Boolean.
+
 
 ### -output-buffer
 The <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> member is a pointer to the requestor-allocated buffer that the HID class driver uses to return the Boolean value.  This Boolean value indicates whether or not the device is configured and ready to wake from system sleep. The pointer is cast as a pointer to Boolean: (PBOOLEAN)(Irp-&gt;AssociatedIrp.SystemBuffer).
 
+
 ### -output-buffer-length
 This is a buffer of size Boolean.
+
 
 ### -in-out-buffer
 
@@ -69,6 +75,7 @@ This is a buffer of size Boolean.
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a <a href="kernel.ntstatus_value">NTSTATUS</a> code.
 
+
 ## -remarks
 
 
@@ -77,6 +84,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

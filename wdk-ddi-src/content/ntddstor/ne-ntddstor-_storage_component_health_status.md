@@ -7,8 +7,8 @@ old-location: storage\storage_component_health_status.htm
 old-project: storage
 ms.assetid: 6768C1D7-A964-44A7-A340-98060130FF24
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_COMPONENT_HEALTH_STATUS, STORAGE_COMPONENT_HEALTH_STATUS, *PSTORAGE_COMPONENT_HEALTH_STATUS
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_COMPONENT_HEALTH_STATUS, *PSTORAGE_COMPONENT_HEALTH_STATUS, STORAGE_COMPONENT_HEALTH_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 Indicates the health status of a storage device.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum _STORAGE_COMPONENT_HEALTH_STATUS {
 
 The storage device health status is unknown.
 
+
 ### -field HealthStatusNormal
 
 The storage device is operating normally.
+
 
 ### -field HealthStatusThrottled
 
 The storage device has been throttled.
 
+
 ### -field HealthStatusWarning
 
 The storage device has issued a warning.
+
 
 ### -field HealthStatusDisabled
 
 The storage device has been disabled.
 
+
 ### -field HealthStatusFailed
 
 The storage device has failed.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ The storage device has failed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\exinitializelookasidelistex.htm
 old-project: kernel
 ms.assetid: 2f6072d2-808b-452f-a789-0c6f63195440
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExInitializeLookasideListEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ExInitializeLookasideListEx</b> routine initializes a lookaside list.
 
 
+
 ## -syntax
 
 ````
@@ -64,21 +65,26 @@ NTSTATUS ExInitializeLookasideListEx(
 
 A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a> structure to initialize. On return, this structure describes an empty lookaside list. The caller must use nonpaged system space for this structure, regardless of whether the entries in the lookaside list are allocated from paged or nonpaged memory. On 64-bit platforms, this structure must be 16-byte aligned.
 
+
 ### -param Allocate [in, optional]
 
 A pointer to a caller-supplied <a href="kernel.lookasidelistallocateex">LookasideListAllocateEx</a> routine that allocates a new lookaside-list entry. The <a href="kernel.exallocatefromlookasidelistex">ExAllocateFromLookasideListEx</a> routine calls this <i>LookasideListAllocateEx</i> routine if the lookaside list is empty (contains no entries). This parameter is optional and can be specified as <b>NULL</b> if a custom allocation routine is not required. If this parameter is <b>NULL</b>, calls to <b>ExAllocateFromPagedLookasideList</b> automatically allocate the paged or nonpaged storage (as determined by the <i>PoolType</i> parameter) for the new entries.
+
 
 ### -param Free [in, optional]
 
 A pointer to a caller-supplied <a href="kernel.lookasidelistfreeex">LookasideListFreeEx</a> routine that frees a previously allocated lookaside-list entry. The <a href="kernel.exfreetopagedlookasidelist">ExFreeToPagedLookasideList</a> routine calls this <i>LookasideListFreeEx</i> routine if the lookaside list is full (that is, the list already contains the maximum number of entries, as determined by the operating system). This parameter is optional and can be specified as <b>NULL</b> if a custom deallocation routine is not required. If this parameter is <b>NULL</b>, calls to <b>ExFreeToPagedLookasideList</b> automatically free the storage for the specified entries.
 
+
 ### -param PoolType [in]
 
 Specifies the pool type of the entries in the lookaside list. Set this parameter to a valid <a href="kernel.pool_type">POOL_TYPE</a> enumeration value.
 
+
 ### -param Flags [in]
 
 Specifies an optional flag value to modify the default behavior of the <i>LookasideListAllocateEx</i> routine. Set this parameter to zero or to one of the following EX_LOOKASIDE_LIST_EX_FLAGS_<i>XXX</i> flag bits.
+
 <table>
 <tr>
 <th>Flag bit</th>
@@ -87,37 +93,49 @@ Specifies an optional flag value to modify the default behavior of the <i>Lookas
 <tr>
 <td>
 EX_LOOKASIDE_LIST_EX_FLAGS_RAISE_ON_FAIL
+
 </td>
 <td>
 If the allocation fails, raise an exception.
+
 </td>
 </tr>
 <tr>
 <td>
 EX_LOOKASIDE_LIST_EX_FLAGS_FAIL_NO_RAISE
+
 </td>
 <td>
 If the allocation fails, return <b>NULL</b> instead of raising an exception. This flag is intended for use with an allocation routine, such as <a href="kernel.exallocatepoolwithquotatag">ExAllocatePoolWithQuotaTag</a>, that charges quotas for pool usage. 
+
 </td>
 </tr>
 </table>
  
+
 These two flag bits are mutually exclusive.
+
 If <i>Allocate</i> is <b>NULL</b>, set <i>Flags</i> to either zero or EX_LOOKASIDE_LIST_EX_FLAGS_RAISE_ON_FAIL, but not to EX_LOOKASIDE_LIST_EX_FLAGS_FAIL_NO_RAISE. Otherwise, the behavior of the default allocation routine is undefined.
+
 If <i>Flags</i> = EX_LOOKASIDE_LIST_EX_FLAGS_RAISE_ON_FAIL, the <i>PoolType</i> parameter value is bitwise ORed with the POOL_RAISE_IF_ALLOCATION_FAILURE flag bit to form the <i>PoolType</i> parameter value that is passed to the <i>LookasideListAllocateEx</i> routine. The <i>LookasideListAllocateEx</i> routine can pass this <i>PoolType</i> value, without modification, to the <b>ExAllocatePoolWithTag</b> routine. For more information about the POOL_RAISE_IF_ALLOCATION_FAILURE flag, see <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>.
+
 If <i>Flags</i> = EX_LOOKASIDE_LIST_EX_FLAGS_FAIL_NO_RAISE, the <i>PoolType</i> parameter value is bitwise ORed with the POOL_QUOTA_FAIL_INSTEAD_OF_RAISE flag bit to form the <i>PoolType</i> parameter value that is passed to the <i>LookasideListAllocateEx</i> routine. The <i>LookasideListAllocateEx</i> routine can pass this <i>PoolType</i> value, without modification, to the <b>ExAllocatePoolWithQuotaTag</b> routine. For more information about the POOL_QUOTA_FAIL_INSTEAD_OF_RAISE flag, see <a href="kernel.exallocatepoolwithquotatag">ExAllocatePoolWithQuotaTag</a>. 
+
 
 ### -param Size [in]
 
 Specifies the size, in bytes, of each entry in the lookaside list.
 
+
 ### -param Tag [in]
 
 Specifies the four-byte pool tag to use to mark the allocated storage for lookaside-list entries. For more information about pool tags, see the description of the <i>Tag</i> parameter in <b>ExAllocatePoolWithTag</b>. 
 
+
 ### -param Depth [in]
 
 Reserved. Always set this parameter to zero.
+
 
 ## -returns
 <b>ExInitializeLookasideListEx</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error code:
@@ -129,6 +147,7 @@ Reserved. Always set this parameter to zero.
 </dl>The <i>Flags</i> parameter value is not valid.
 
  
+
 
 ## -remarks
 A driver must call this routine to initialize a lookaside list before the driver can begin to use the list. A lookaside list is a pool of fixed-size buffers that the driver can manage locally to reduce the number of calls to system allocation routines and, thereby, to improve performance. The buffers are stored as entries in the lookaside list. All entries in the list are of the same, uniform size, which is specified by the <i>Size</i> parameter.
@@ -167,11 +186,13 @@ However, if the sole purpose of the <code>MyContext-&gt;NumberOfAllocations</cod
 
 For more information about thread safety for lookaside lists, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565416">Using Lookaside Lists</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -182,14 +203,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -200,6 +224,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -210,6 +235,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -220,9 +246,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -273,5 +301,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInitializeLookasideListEx routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInitializeLookasideListEx routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

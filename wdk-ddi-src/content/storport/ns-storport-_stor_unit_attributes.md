@@ -7,8 +7,8 @@ old-location: storage\stor_unit_attributes.htm
 old-project: storage
 ms.assetid: 9677C044-354B-4575-B2EC-187D1B4E8C61
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES
+ms.date: 12/8/2017
+ms.keywords: _STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>STOR_UNIT_ATTRIBUTES</b> structure contains bitfields indicating attribute support for a storage device unit.
 
 
+
 ## -syntax
 
 ````
@@ -60,36 +61,44 @@ typedef struct _STOR_UNIT_ATTRIBUTES {
 
 Set to 1 if device attention is supported for the unit. Otherwise, set to 0.
 
+
 ### -field AsyncNotificationSupported
 
 Set to 1 if the device supports asynchronous notifications. Otherwise, set to 0.
+
 
 ### -field D3ColdNotSupported
 
 Set to 1 if the D3 Cold power state is NOT supported. Otherwise, set to 0.
 
+
 ### -field Reserved
 
 Reserved bits. Must be set to 0.
+
 
 ## -remarks
 The unit attributes are registered with Storport  using this structure as a parameter to the <a href="storage.storportsetunitattributes">StorPortSetUnitAttributes</a> routine.
 
 If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="storage.storportasyncnotificationdetected">StorPortAsyncNotificationDetected</a> routine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,5 +118,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_UNIT_ATTRIBUTES structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_UNIT_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

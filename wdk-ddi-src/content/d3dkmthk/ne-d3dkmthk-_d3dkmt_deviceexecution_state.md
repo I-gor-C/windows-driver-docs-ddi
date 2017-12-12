@@ -7,7 +7,7 @@ old-location: display\d3dkmt_deviceexecution_state.htm
 old-project: display
 ms.assetid: 31935433-6fa4-4d1a-9ad4-879353102e71
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_DEVICEEXECUTION_STATE, D3DKMT_DEVICEEXECUTION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3DKMT_DEVICEEXECUTION_STATE</b> enumeration type contains values that indicate the execution status for a device.
 
 
+
 ## -syntax
 
 ````
@@ -65,13 +66,16 @@ typedef enum _D3DKMT_DEVICEEXECUTION_STATE {
 
 The device is actively executing.
 
+
 ### -field D3DKMT_DEVICEEXECUTION_RESET
 
 The device is reset.
 
+
 ### -field D3DKMT_DEVICEEXECUTION_HUNG
 
 The device is hung. The device is unable to continue.
+
 
 ### -field D3DKMT_DEVICEEXECUTION_STOPPED
 
@@ -79,17 +83,21 @@ The device is hung. The device is unable to continue.
       The device is stopped.
      
 
+
 ### -field D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY
 
 Even after the video memory manager split the DMA buffer, the video memory manager could not page-in all of the required allocations into video memory at the same time. The device is unable to continue.
+
 
 ### -field D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT
 
 The display miniport driver reported a fault while processing a DMA buffer for the device. The device is unable to continue.
 
+
 ### -field D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT
 
 The display miniport driver reported a page fault while processing a DMA buffer for the device. The device is unable to continue.
+
 
 ### -field 
 
@@ -102,14 +110,17 @@ The display miniport driver reported a page fault while processing a DMA buffer 
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +137,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_DEVICEEXECUTION_STATE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_DEVICEEXECUTION_STATE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FltFlushBuffers</b> routine is used by the minifilter driver to send a flush request for a given file to the file system. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS FltFlushBuffers(
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 File object pointer for the file. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltFlushBuffers</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -72,14 +75,17 @@ File object pointer for the file. This parameter is required and cannot be <b>NU
 
  
 
+
 ## -remarks
 A minifilter driver can call <b>FltFlushBuffers</b> to issue an <a href="ifsk.irp_mj_flush_buffers">IRP_MJ_FLUSH_BUFFERS</a> request to the file system for a given file. The flush operation is synchronous and is issued to the instance(s) below the specified instance. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,6 +96,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +107,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +118,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -124,5 +134,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFlushBuffers routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

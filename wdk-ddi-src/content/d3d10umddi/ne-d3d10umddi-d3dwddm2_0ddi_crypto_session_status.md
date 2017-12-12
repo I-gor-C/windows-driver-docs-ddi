@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_crypto_session_status.htm
 old-project: display
 ms.assetid: DBAFEAE2-66B6-4F2F-801D-21B7792BCA60
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS, D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Provides status information for an existing <i>CryptoSession</i> object.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS {
 
 The <i>CryptoSession</i> object is in a functional state.
 
+
 ### -field D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_LOST
 
 The underlying hardware key for the specified <i>CryptoSession</i> has become lost. 
 
+
 ### -field D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST
 
 The underlying hardware key for the specified <i>CryptoSession</i> has become lost and protected content has become corrupted. 
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ The underlying hardware key for the specified <i>CryptoSession</i> has become lo
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

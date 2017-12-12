@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_stereo_mode.htm
 old-project: display
 ms.assetid: 7e40ddf4-0098-4ea6-ab93-17515849b6cd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE enumeration indicates the display device's stereo vision mode.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE {
 
 Indicates monoscopic mode (no stereo vision).
 
+
 ### -field DIDDT1_Stereo
 
 Indicates stereo mode.
 
+
 ### -field DIDDT1_Dependent
 
 Indicates that the mode depends upon user action.
+
 
 ## -remarks
 
@@ -75,14 +79,17 @@ Indicates that the mode depends upon user action.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

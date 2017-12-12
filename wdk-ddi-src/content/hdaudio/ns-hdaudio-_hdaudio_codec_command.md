@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL.
 The HDAUDIO_CODEC_COMMAND structure specifies a codec command.
 
 
+
 ## -syntax
 
 ````
@@ -72,21 +73,26 @@ Specifies an 8-bit payload command format. The members in the following table ar
 		   
 		
 
+
 ### -field Data
 
 Specifies an 8-bit data payload value for the 8-bit payload command format.
+
 
 ### -field VerbId
 
 Specifies a 12-bit verb identifier for the 8-bit payload command format.
 
+
 ### -field Node
 
 Specifies an 8-bit node identifier for the 8-bit payload command format.
 
+
 ### -field CodecAddress
 
 Specifies a 4-bit codec address for the 8-bit payload command format.
+
 </dd>
 </dl>
 
@@ -96,21 +102,26 @@ Specifies an 16-bit payload command format. The members in the following table a
 		   
 		
 
+
 ### -field Data
 
 Specifies an 16-bit data payload value for the 16-bit payload command format.
+
 
 ### -field VerbId
 
 Specifies a 4-bit verb identifier for the 16-bit payload command format.
 
+
 ### -field Node
 
 Specifies an 8-bit node identifier for the 16-bit payload command format.
 
+
 ### -field CodecAddress
 
 Specifies a 4-bit codec address for the 16-bit payload command format.
+
 </dd>
 </dl>
 
@@ -118,16 +129,19 @@ Specifies a 4-bit codec address for the 16-bit payload command format.
 
 Specifies a 32-bit codec command that contains payload data, a verb identifier, a node identifier, and a codec address.
 
+
 ## -remarks
 Clients call the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine to pass commands to codecs. The commands are in the <a href="audio.hdaudio_codec_transfer">HDAUDIO_CODEC_TRANSFER</a> structures that clients pass to this routine as call parameters. Before calling <b>TransferCodecVerbs</b>, function drivers can use the HDAUDIO_CODEC_COMMAND structure to encode the codec commands.
 
 The validity of individual members depends on the type of command sent.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,5 +161,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_CODEC_COMMAND structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

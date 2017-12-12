@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct tag_video_configure_parms {
 
 Specifies the return parameter from the configure MSG.
 
+
 ### -field lpData1
 
 Specifies a pointer to data 1.
+
 
 ### -field dwSize1
 
 Specifies the size of data buffer 1.
 
+
 ### -field lpData2
 
 Specifies a pointer to data 2.
 
+
 ### -field dwSize2
 
 Specifies the size of data buffer 2.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Specifies the size of data buffer 2.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Winddiui.h header
 
+## -description
 
 This header is used by print. For more information, see
 - [print](../_print/index.md)
@@ -28,16 +33,16 @@ Winddiui.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [ATTRIBUTE_INFO_1 structure](ns-winddiui--attribute-info-1.md) | The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
-| [ATTRIBUTE_INFO_2 structure](ns-winddiui--attribute-info-2.md) | The ATTRIBUTE_INFO_2 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
-| [ATTRIBUTE_INFO_3 structure](ns-winddiui--attribute-info-3.md) | The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
-| [ATTRIBUTE_INFO_4 structure](ns-winddiui--attribute-info-4.md) | The ATTRIBUTE_INFO_4 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. |
-| [DEVICEPROPERTYHEADER structure](ns-winddiui--devicepropertyheader.md) | The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function. |
-| [DEVQUERYPRINT_INFO structure](ns-winddiui--devqueryprint-info.md) | The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's DevQueryPrintEx function. |
-| [DOCEVENT_CREATEDCPRE structure](ns-winddiui--docevent-createdcpre.md) | The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to DrvDocumentEvent and IPrintOemUI2 |
-| [DOCEVENT_ESCAPE structure](ns-winddiui--docevent-escape.md) | The DOCEVENT_ESCAPE structure is a container for values used as parameters for the ExtEscape function. |
-| [DOCEVENT_FILTER structure](ns-winddiui--docevent-filter.md) | The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See DrvDocumentEvent for a complete list of the document events. |
-| [DOCUMENTPROPERTYHEADER structure](ns-winddiui--documentpropertyheader.md) | The DOCUMENTPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDocumentPropertySheets function. |
-| [DRIVER_UPGRADE_INFO_1 structure](ns-winddiui--driver-upgrade-info-1.md) | The DRIVER_UPGRADE_INFO_1 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
-| [DRIVER_UPGRADE_INFO_2 structure](ns-winddiui--driver-upgrade-info-2.md) | The DRIVER_UPGRADE_INFO_2 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
-| [PRINTER_EVENT_ATTRIBUTES_INFO structure](ns-winddiui--printer-event-attributes-info.md) | The PRINTER_EVENT_ATTRIBUTES_INFO structure contains the former attributes and the new attributes for a printer. |
+| [_ATTRIBUTE_INFO_1 structure](ns-winddiui-_attribute_info_1.md) | The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
+| [_ATTRIBUTE_INFO_2 structure](ns-winddiui-_attribute_info_2.md) | The ATTRIBUTE_INFO_2 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
+| [_ATTRIBUTE_INFO_3 structure](ns-winddiui-_attribute_info_3.md) | The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
+| [_ATTRIBUTE_INFO_4 structure](ns-winddiui-_attribute_info_4.md) | The ATTRIBUTE_INFO_4 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. |
+| [_DEVICEPROPERTYHEADER structure](ns-winddiui-_devicepropertyheader.md) | The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function. |
+| [_DEVQUERYPRINT_INFO structure](ns-winddiui-_devqueryprint_info.md) | The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's DevQueryPrintEx function. |
+| [_DOCEVENT_CREATEDCPRE structure](ns-winddiui-_docevent_createdcpre.md) | The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to DrvDocumentEvent and IPrintOemUI2 |
+| [_DOCEVENT_ESCAPE structure](ns-winddiui-_docevent_escape.md) | The DOCEVENT_ESCAPE structure is a container for values used as parameters for the ExtEscape function. |
+| [_DOCEVENT_FILTER structure](ns-winddiui-_docevent_filter.md) | The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See DrvDocumentEvent for a complete list of the document events. |
+| [_DOCUMENTPROPERTYHEADER structure](ns-winddiui-_documentpropertyheader.md) | The DOCUMENTPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDocumentPropertySheets function. |
+| [_DRIVER_UPGRADE_INFO_1 structure](ns-winddiui-_driver_upgrade_info_1.md) | The DRIVER_UPGRADE_INFO_1 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
+| [_DRIVER_UPGRADE_INFO_2 structure](ns-winddiui-_driver_upgrade_info_2.md) | The DRIVER_UPGRADE_INFO_2 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
+| [_PRINTER_EVENT_ATTRIBUTES_INFO structure](ns-winddiui-_printer_event_attributes_info.md) | The PRINTER_EVENT_ATTRIBUTES_INFO structure contains the former attributes and the new attributes for a printer. |

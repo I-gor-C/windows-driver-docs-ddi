@@ -7,8 +7,8 @@ old-location: netvista\dot11ext_ihv_indication_type.htm
 old-project: netvista
 ms.assetid: c4cba30d-f0ba-424b-aa05-2717fa8fcc4e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE, *PDOT11EXT_IHV_INDICATION_TYPE
+ms.date: 12/8/2017
+ms.keywords: _DOT11EXT_IHV_INDICATION_TYPE, *PDOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -59,21 +59,26 @@ typedef enum _DOT11EXT_IHV_INDICATION_TYPE {
 
 Indicates a NIC-specific notification.
 
+
 ### -field IndicationTypePmkidCandidateList
 
 Indicates a PMKID candidate list.
+
 
 ### -field IndicationTypeTkipMicFailure
 
 Indicates a TKIP MIC failure.
 
+
 ### -field IndicationTypePhyStateChange
 
 Indicates a PHY state change.
 
+
 ### -field IndicationTypeLinkQuality
 
 Indicates link quality.
+
 
 ## -remarks
 
@@ -83,15 +88,18 @@ Indicates link quality.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

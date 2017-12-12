@@ -7,7 +7,7 @@ old-location: netvista\ndis_rw_lock_refcount.htm
 old-project: netvista
 ms.assetid: 1b2c93dd-a80e-4197-bc4f-cad12f6d6c77
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_RW_LOCK_REFCOUNT, NDIS_RW_LOCK_REFCOUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_RW_LOCK_REFCOUNT structure
@@ -41,6 +41,7 @@ req.irql: Any level
 The <b>NDIS_RW_LOCK_REFCOUNT</b> union defines attributes of a read/write lock. This union is opaque to NDIS
    drivers.
    
+
 
 
 ## -syntax
@@ -63,15 +64,18 @@ typedef union _NDIS_RW_LOCK_REFCOUNT {
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Obsolete in NDIS 6.20 and later. Supported for NDIS 6.0 and NDIS 5.1 in
    Windows Vista and Windows 7. Supported for NDIS 5.1 drivers in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\offload_ipsec_delete_sa.htm
 old-project: netvista
 ms.assetid: a8c34bf8-1f3a-4aa3-834b-5824402bd88c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _OFFLOAD_IPSEC_DELETE_SA, *POFFLOAD_IPSEC_DELETE_SA, OFFLOAD_IPSEC_DELETE_SA
+ms.date: 12/8/2017
+ms.keywords: _OFFLOAD_IPSEC_DELETE_SA, OFFLOAD_IPSEC_DELETE_SA, *POFFLOAD_IPSEC_DELETE_SA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The OFFLOAD_IPSEC_DELETE_SA structure contains information for each security ass
   miniport driver deletes from a NIC.
 
 
+
 ## -syntax
 
 ````
@@ -57,16 +58,19 @@ typedef struct _OFFLOAD_IPSEC_DELETE_SA {
 
 The handle for the SA to be deleted.
 
+
 ## -remarks
 The OFFLOAD_IPSEC_DELETE_SA structure is used with the 
     <a href="netvista.oid_tcp_task_ipsec_delete_sa">
     OID_TCP_TASK_IPSEC_DELETE_SA</a> OID.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -83,5 +87,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_IPSEC_DELETE_SA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_IPSEC_DELETE_SA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

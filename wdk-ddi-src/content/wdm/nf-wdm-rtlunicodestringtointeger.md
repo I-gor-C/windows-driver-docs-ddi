@@ -7,7 +7,7 @@ old-location: kernel\rtlunicodestringtointeger.htm
 old-project: kernel
 ms.assetid: d9357864-d49b-44fe-b884-64c6da609789
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlUnicodeStringToInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RtlUnicodeStringToInteger</b> routine converts a Unicode string representation of a number to the equivalent integer value.
 
 
+
 ## -syntax
 
 ````
@@ -59,29 +60,38 @@ NTSTATUS RtlUnicodeStringToInteger(
 
 A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the number representation to convert to the equivalent integer value.
 
+
 ### -param Base [in, optional]
 
 A numeric value that indicates the base (or radix) of the number that the Unicode string represents. This parameter value is optional and can be set to zero.
+
 If <i>Base</i> is zero, <b>RtlUnicodeStringToInteger</b> checks the prefix of the Unicode string to determine the base of the number:
+
 <ul>
 <li>
 If the prefix is "0x", <b>RtlUnicodeStringToInteger</b> interprets the number in the string as a hexadecimal integer.
+
 </li>
 <li>
 If the prefix is "0o", <b>RtlUnicodeStringToInteger</b> interprets the number in the string as an octal integer.
+
 </li>
 <li>
 If the prefix is "0b", <b>RtlUnicodeStringToInteger</b> interprets the number in the string as a binary integer.
+
 </li>
 </ul>
 If the Unicode string does not contain any of these prefixes, <b>RtlUnicodeStringToInteger</b> treats the string as a base-10 integer.
+
 
 ### -param Value [out]
 
 A pointer to a ULONG variable to which <b>RtlUnicodeStringToInteger</b> writes the integer value that results from conversion of the Unicode string.
 
+
 ## -returns
 If the conversion is successful, the <b>RtlUnicodeStringToInteger</b> routine returns STATUS_SUCCESS and sets *<i>Value</i> to the integer value represented by the number in the Unicode string. If the string is not empty, but does not start with a valid number representation, the routine returns STATUS_SUCCESS and sets *<i>Value</i> to zero. If the string is empty, the routine fails and returns STATUS_INVALID_PARAMETER.
+
 
 ## -remarks
 This routine skips any white space at the start of the input string to find the start of the number.
@@ -96,11 +106,13 @@ The following table contains examples of output values that result from various 
 
 A related routine, <a href="kernel.rtlintegertounicodestring">RtlIntegerToUnicodeString</a>, converts an integer value to the equivalent Unicode string representation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -111,14 +123,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,6 +144,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +155,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +167,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -167,5 +186,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUnicodeStringToInteger routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUnicodeStringToInteger routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

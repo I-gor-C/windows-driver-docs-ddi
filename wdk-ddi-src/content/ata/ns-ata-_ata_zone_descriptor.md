@@ -7,8 +7,8 @@ old-location: storage\ata_zone_descriptor.htm
 old-project: storage
 ms.assetid: 2e027ac5-7b5d-43cc-8d37-c0a3e77e68c9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _ATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: _ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure is for internal use only and should not be called from your code.
 
 
+
 ## -syntax
 
 ````
@@ -69,58 +70,73 @@ typedef struct _ATA_ZONE_DESCRIPTOR {
 
 N/A
 
+
 ### -field Reserved0  : 4
 
 N/A
+
 
 ### -field Reset  : 1
 
 N/A
 
+
 ### -field NonSeq : 1
 
 N/A
+
 
 ### -field Reserved1  : 2
 
 N/A
 
+
 ### -field ZoneCondition  : 4
 
 N/A
+
 
 ### -field Reserved2
 
 N/A
 
+
 ### -field ZoneLength  : 48
 
 N/A
 
+
 ### -field Reserved3  : 16
 
 N/A
+
 N/A
+
 
 ### -field ZoneStartLBA  : 48
 
 N/A
 
+
 ### -field Reserved4  : 16
 
 N/A
+
 
 ### -field WritePointerLBA  : 48
 
 N/A
 
+
 ### -field Reserved5  : 16
 
 N/A
 
+
 ### -field Reserved6
 
 N/A
+
 
 ## -remarks
 
@@ -130,6 +146,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

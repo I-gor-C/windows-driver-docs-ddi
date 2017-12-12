@@ -7,7 +7,7 @@ old-location: display\agpcommitphysical.htm
 old-project: display
 ms.assetid: 3c3a6936-7435-4a42-99e6-2c048613af23
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>AgpCommitPhysical</b> function maps system (physical) memory to the specified range of AGP-decodable physical addresses.
 
 
+
 ## -prototype
 
 ````
@@ -63,20 +64,25 @@ BOOLEAN APIENTRY AgpCommitPhysical(
 
 Pointer to the device extension of the miniport driver.
 
+
 ### -param PhysicalReserveContext [in]
 
 Identifies a reserved physical address range. The context handle is obtained from <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>.
+
 
 ### -param Pages [in]
 
 Specifies the number of pages of system memory to commit.
 
+
 ### -param Offset [in]
 
 Specifies the page offset at which to commit the pages. The offset is applied to the reserved physical address range associated with <b>PhysicalReserveContext</b>.
 
+
 ## -returns
 <b>AgpCommitPhysical</b> returns <b>TRUE</b> if the mapping was successful, and <b>FALSE</b> otherwise.
+
 
 ## -remarks
 A video miniport driver must first reserve physical addresses by calling <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> before it calls this function.
@@ -89,11 +95,13 @@ On Windows XP and later, <b>AgpCommitPhysical</b> automatically expands the comm
 
 When a video miniport driver calls <b>AgpCommitPhysical</b>, a portion of the physical address range identified by <b>PhysicalReserveContext</b> is mapped to locked pages of physical memory. The mapped portion begins <b>Offset</b> pages into the range identified by <b>PhysicalReserveContext</b>. The video miniport driver can access committed physical memory as if it were contiguous.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,14 +112,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +133,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -142,5 +155,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PAGP_COMMIT_PHYSICAL callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PAGP_COMMIT_PHYSICAL callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

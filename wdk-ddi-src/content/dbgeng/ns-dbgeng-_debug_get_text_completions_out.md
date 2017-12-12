@@ -7,7 +7,7 @@ old-location: debugger\debug_get_text_completions_out.htm
 old-project: debugger
 ms.assetid: 09F3A720-C039-4C8D-84A4-8AF071E1FFB0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DEBUG_GET_TEXT_COMPLETIONS_OUT, DEBUG_GET_TEXT_COMPLETIONS_OUT, *PDEBUG_GET_TEXT_COMPLETIONS_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines information about text completions to get. 
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_OUT {
 ### -field Flags
 
 Flags. Valid flag values include the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -72,6 +74,7 @@ Flags. Valid flag values include the following:
 </td>
 <td width="60%">
 Is dot command. Dot commands begin with a period (.).
+
 </td>
 </tr>
 <tr>
@@ -82,6 +85,7 @@ Is dot command. Dot commands begin with a period (.).
 </td>
 <td width="60%">
 Is extension command.
+
 </td>
 </tr>
 <tr>
@@ -92,26 +96,32 @@ Is extension command.
 </td>
 <td width="60%">
 Is symbol.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field ReplaceIndex
 
 The index of the replace location.
+
 
 ### -field MatchCount
 
 Count value of matches.
 
+
 ### -field Reserved1
 
 Reserved.
 
+
 ### -field Reserved2
 
 Reserved.
+
 
 ## -remarks
 
@@ -121,6 +131,7 @@ Reserved.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

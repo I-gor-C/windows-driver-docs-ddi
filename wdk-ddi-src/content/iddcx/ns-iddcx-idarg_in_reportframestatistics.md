@@ -7,7 +7,7 @@ old-location: display\idarg_in_reportframestatistics.htm
 old-project: display
 ms.assetid: 3d3e0dca-bb05-4e5c-aa4a-76bb178f60bf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_REPORTFRAMESTATISTICS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about frame statistics.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct IDARG_IN_REPORTFRAMESTATISTICS {
                      [in] Frame statics being reported.
                  
 
+
 ## -remarks
 
 
@@ -67,6 +69,7 @@ typedef struct IDARG_IN_REPORTFRAMESTATISTICS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

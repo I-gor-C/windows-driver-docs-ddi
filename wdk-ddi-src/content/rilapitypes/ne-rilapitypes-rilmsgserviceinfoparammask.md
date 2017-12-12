@@ -7,7 +7,7 @@ old-location: netvista\rilmsgserviceinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 2c5d29da-6577-4428-ac7b-1d3ff647086a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGSERVICEINFOPARAMMASK, RILMSGSERVICEINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

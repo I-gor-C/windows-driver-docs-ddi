@@ -7,8 +7,8 @@ old-location: netvista\wwan_lte_mrl_info.htm
 old-project: netvista
 ms.assetid: 49C3D862-EB78-4C44-A7B7-CE15E79EB021
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_LTE_MRL_INFO, WWAN_LTE_MRL_INFO, *PWWAN_LTE_MRL_INFO
+ms.date: 12/8/2017
+ms.keywords: _WWAN_LTE_MRL_INFO, *PWWAN_LTE_MRL_INFO, WWAN_LTE_MRL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WWAN_LTE_MRL_INFO</b> structure represents information about a neighboring LTE cell.
 
 
+
 ## -syntax
 
 ````
@@ -65,37 +66,46 @@ typedef struct _WWAN_LTE_MRL_INFO {
 
 The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called <i>ProviderId</i> that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no <i>ProviderId</i> information is returned.
 
+
 ### -field ProviderIdSize
 
 The size, in bytes, used for <i>ProviderId</i>.
+
 
 ### -field CellId
 
 The Cell ID (0-268435455). Use 0xFFFFFFFF when this information is not available.
 
+
 ### -field EARFCN
 
 The Radio Frequency Channel Number of the serving cell (0-65535). Use 0xFFFFFFFF when this information is not available.
+
 
 ### -field PhysicalCellId
 
 The Physical Cell ID (0-503). Use 0xFFFFFFFF when this information is not available.
 
+
 ### -field TAC
 
 The Tracking Area Code (0-65535). Use 0xFFFFFFFF when this information is not available.
+
 
 ### -field RSRP
 
 The Average Reference Signal Received Power. The range is -140 to -44, in units of 1dBm. Use 0xFFFFFFFF when this information is not available.
 
+
 ### -field RSRQ
 
 The Average Reference Signal Received Quality. The range is -20 to -3, in units of 1dBm. Use 0xFFFFFFFF when this information is not available.
 
+
 ### -field Data[ANYSIZE_ARRAY]
 
 The data buffer containing <i>ProviderId</i>.
+
 
 ## -remarks
 
@@ -105,14 +115,17 @@ The data buffer containing <i>ProviderId</i>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,5 +151,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_LTE_MRL_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_LTE_MRL_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

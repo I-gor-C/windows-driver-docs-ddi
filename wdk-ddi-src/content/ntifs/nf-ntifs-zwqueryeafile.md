@@ -7,7 +7,7 @@ old-location: kernel\zwqueryeafile.htm
 old-project: kernel
 ms.assetid: c4261a83-3c91-4bc1-93bf-d2d04c324e94
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwQueryEaFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The <b>ZwQueryEaFile</b> routine returns
     information about extended-attribute (EA) values for a file.
 
 
+
 ## -syntax
 
 ````
@@ -65,10 +66,12 @@ NTSTATUS ZwQueryEaFile(
 
 The handle for the file on which the operation is to be performed.
 
+
 ### -param IoStatusBlock [out]
 
 A pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that 
       receives the final completion status and other information about the requested operation.
+
 
 ### -param Buffer [out]
 
@@ -76,15 +79,18 @@ A pointer to a caller-supplied
       <a href="kernel.file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured output 
       buffer, where the extended attribute values are to be returned.
 
+
 ### -param Length [in]
 
 The length, in bytes, of the buffer that the <i>Buffer</i> parameter points to.
+
 
 ### -param ReturnSingleEntry [in]
 
 Set to <b>TRUE</b> if 
       <b>ZwQueryEaFile</b> should return only the first entry that 
       is found.
+
 
 ### -param EaList [in, optional]
 
@@ -93,15 +99,18 @@ A pointer to a caller-supplied
       buffer, which specifies the extended attributes to be queried. This parameter is optional and can be 
       <b>NULL</b>.
 
+
 ### -param EaListLength [in]
 
 The length, in bytes, of the buffer that the <i>EaList</i> parameter points to.
+
 
 ### -param EaIndex [in, optional]
 
 The index of the entry at which scanning the file's extended-attribute list should begin. This parameter is 
       ignored if the <i>EaList</i> parameter points to a nonempty list. This parameter is optional 
       and can be <b>NULL</b>.
+
 
 ### -param RestartScan [in]
 
@@ -110,6 +119,7 @@ Set to <b>TRUE</b> if
       entry in the file's extended-attribute list. If this parameter is set to <b>FALSE</b>, the 
       routine resumes the scan from a previous call to 
       <b>ZwQueryEaFile</b>.
+
 
 ## -returns
 <b>ZwQueryEaFile</b> returns 
@@ -128,6 +138,7 @@ Set to <b>TRUE</b> if
 
  
 
+
 ## -remarks
 
 
@@ -136,6 +147,7 @@ Set to <b>TRUE</b> if
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -146,14 +158,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 2000 and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -164,6 +179,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -174,6 +190,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -184,14 +201,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -212,5 +232,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryEaFile routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryEaFile routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

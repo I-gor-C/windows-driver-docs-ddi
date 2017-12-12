@@ -7,7 +7,7 @@ old-location: netvista\rilcallhandoverstateparammask.htm
 old-project: netvista
 ms.assetid: 2534a05b-9e7f-4081-af61-721cd1fa82fc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLHANDOVERSTATEPARAMMASK, RILCALLHANDOVERSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef enum _RILCALLHANDOVERSTATEPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

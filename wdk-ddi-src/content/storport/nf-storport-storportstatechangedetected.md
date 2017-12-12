@@ -7,7 +7,7 @@ old-location: storage\storportstatechangedetected.htm
 old-project: storage
 ms.assetid: 3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortStateChangeDetected
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Notifies the Storport port driver of a state change for a logical unit number (LUN), host bus adapter (HBA) port, or target device.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ ULONG StorPortStateChangeDetected(
 
 A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="storage.storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
+
 ### -param ChangedEntity [in]
 
 Flags indicating the entities whose state has changed. This is a bitwise <b>OR</b> combination of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -78,6 +81,7 @@ Flags indicating the entities whose state has changed. This is a bitwise <b>OR</
 </td>
 <td width="60%">
 LUN state has changed.
+
 </td>
 </tr>
 <tr>
@@ -88,6 +92,7 @@ LUN state has changed.
 </td>
 <td width="60%">
 Target state has changed.
+
 </td>
 </tr>
 <tr>
@@ -98,18 +103,22 @@ Target state has changed.
 </td>
 <td width="60%">
  Bus or port state has changed.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Address [in]
 
 The address of the entity with the state change. <i>Address</i> value cannot change until the callback at  <i>HwStateChange</i> is invoked. If <i>Address</i> is allocated in memory, the memory should be freed by the callback routine.
 
+
 ### -param Attributes [in]
 
 Attributes associated with the entity. These are a bitwise <b>OR</b> combination of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -122,18 +131,22 @@ Attributes associated with the entity. These are a bitwise <b>OR</b> combination
 </td>
 <td width="60%">
 LUNs are reserved for virtual machine use.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param HwStateChange [in, optional]
 
 A pointer to a callback routine supplied by the miniport. If present, the Storport driver will call this routine when the driver is finished processing this state change notification.
 
+
 ### -param HwStateChangeContext [in, optional]
 
 A miniport-supplied context value that is included when the routine set in <i>HwStateChange</i> is called.
+
 
 ## -returns
 A status value indicating the result of the notification. This can be one of these values:
@@ -149,6 +162,7 @@ A status value indicating the result of the notification. This can be one of the
 
  
 
+
 ## -remarks
 A successful call to<b> StorPortStateChangeDetected</b> results in re-enumeration of the changed entity. 
 
@@ -156,11 +170,13 @@ Only one state change request can be active at any time. If a miniport needs to 
 
 If multiple flags are specified in <i>ChangedEntity</i>, the  flag with greater value will have precedence over lesser ones.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -171,14 +187,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -189,9 +208,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any
+
 </td>
 </tr>
 </table>
@@ -203,5 +224,8 @@ Any
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortStateChangeDetected routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortStateChangeDetected routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

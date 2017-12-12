@@ -7,7 +7,7 @@ old-location: kernel\read_port_uchar.htm
 old-project: kernel
 ms.assetid: a58e55f5-d657-43bf-afef-05af7c6c02cc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: READ_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>READ_PORT_UCHAR</b> routine reads a byte from the specified port address.
 
 
+
 ## -syntax
 
 ````
@@ -57,17 +58,21 @@ UCHAR READ_PORT_UCHAR(
 
 Specifies the port address, which must be a mapped memory range in I/O space. 
 
+
 ## -returns
 <b>READ_PORT_UCHAR</b> returns the byte that is read from the specified port address.
 
+
 ## -remarks
 Callers of <b>READ_PORT_UCHAR</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +83,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,9 +115,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: display\idarg_out_monitorarrival.htm
 old-project: display
 ms.assetid: 0e5c4b23-cb62-4320-9e55-d0da67b62aa1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_MONITORARRIVAL,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Gives information about the monitor that is exposed to the OS.
              
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct IDARG_OUT_MONITORARRIVAL {
 
                      LUID of the adapter where this monitor is exposed to the OS
     . 
+
 <div class="alert"><b>Note</b>  There are no API/DDI calls the driver can make with this information. Its only use is to pass it to companion applications so they can identify the monitor they control.</div>
 <div> </div>
 
@@ -66,6 +68,7 @@ typedef struct IDARG_OUT_MONITORARRIVAL {
 
 
                      DMM VidPn target id of the target this monitor is exposed to the OS. 
+
 <div class="alert"><b>Note</b>  There are no API/DDI calls the driver can make with this information. Its only use is to pass it to companion applications so they can identify the monitor they control.</div>
 <div> </div>
 <div class="alert"><b>Note</b>  Although this value is related to the <a href="..\iddcx\ns-iddcx-iddcx_monitor_info.md">IDDCX_MONITOR_INFO</a> value <b>ConnectorIndex</b> passed by the driver, the OS will perform internal mapping between the two that will change in future release. As such, the driver should not take any dependencies on this mapping and should use <b>OsAdapterLuid</b> &amp; <b>OsTargetId</b> instead.</div>
@@ -79,6 +82,7 @@ typedef struct IDARG_OUT_MONITORARRIVAL {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,5 +99,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20IDARG_OUT_MONITORARRIVAL structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20IDARG_OUT_MONITORARRIVAL structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

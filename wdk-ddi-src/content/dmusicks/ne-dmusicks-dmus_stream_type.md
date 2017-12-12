@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used for a DirectMusic synthesizer device. 
 
 
+
 ## -syntax
 
 ````
@@ -75,6 +76,7 @@ typedef enum  {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

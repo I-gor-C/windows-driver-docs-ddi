@@ -7,7 +7,7 @@ old-location: kernel\kequeryhighestnodenumber.htm
 old-project: kernel
 ms.assetid: e92387db-0c35-40c8-8342-4b1bf498aa1a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeQueryHighestNodeNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeQueryHighestNodeNumber</b> routine returns the highest node number in a multiprocessor system that has a non-uniform memory access (NUMA) architecture. 
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ USHORT KeQueryHighestNodeNumber(void);
 
 <b>KeQueryHighestNodeNumber</b> returns the highest node number.
 
+
 ## -remarks
 In a non-uniform memory access (NUMA) multiprocessor architecture, a node is a collection of processors that share fast access to a region of memory. Memory access is non-uniform because a processor can access the memory in its node faster than it can access the memory in other nodes.
 
@@ -70,11 +72,13 @@ When Windows initializes a NUMA multiprocessor system, it assigns logical proces
 
 After the system has been initialized, the node count remains fixed while the system continues to run. This count might include memory-only nodes, which are nodes that contain memory but no active logical processors.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -85,14 +89,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +121,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +132,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>

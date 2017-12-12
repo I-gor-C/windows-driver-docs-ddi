@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>RtlAllocateHeap</b> routine allocates a block of memory from a heap. 
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ PVOID RtlAllocateHeap(
 
 Handle for a private heap from which the memory will be allocated. This parameter is a handle returned from a successful call to <b>RtlCreateHeap</b>. 
 
+
 ### -param Flags [in, optional]
 
 Specifies several controllable aspects of heap allocation. Specifying any of these values will override the corresponding value specified when the heap was created with <b>RtlCreateHeap</b>. This parameter can be one or more of the following values. 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -69,33 +72,41 @@ Specifies several controllable aspects of heap allocation. Specifying any of the
 <tr>
 <td>
 HEAP_GENERATE_EXCEPTIONS
+
 </td>
 <td>
 Specifies that the system will raise an exception to indicate a function failure, such as an out-of-memory condition, instead of returning <b>NULL</b>. 
+
 </td>
 </tr>
 <tr>
 <td>
 HEAP_NO_SERIALIZE
+
 </td>
 <td>
 Specifies that mutual exclusion will not be used while <b>RtlAllocateHeap</b> is accessing the heap. 
+
 </td>
 </tr>
 <tr>
 <td>
 HEAP_ZERO_MEMORY
+
 </td>
 <td>
 Specifies that the allocated memory will be initialized to zero. Otherwise, the memory is not initialized to zero. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Size [in]
 
 Number of bytes to be allocated. If the heap, specified by the <i>HeapHandle</i> parameter, is a nongrowable heap, <i>Size</i> must be less than or equal to the heap's virtual memory threshold. (For more information, see the <b>VirtualMemoryThreshold</b> member of the <i>Parameters</i> parameter to <a href="ifsk.rtlcreateheap">RtlCreateHeap</a>.) 
+
 
 ## -returns
 If the call to <b>RtlAllocateHeap</b> succeeds, the return value is a pointer to the newly-allocated block. 
@@ -110,6 +121,7 @@ If the call to <b>RtlAllocateHeap</b> succeeds, the return value is a pointer to
 </dl>The allocation attempt failed because of a lack of available memory or heap corruption. 
 
  
+
 
 ## -remarks
 <b>RtlAllocateHeap</b> allocates a block of memory of the specified size from the specified heap. 
@@ -126,11 +138,13 @@ The process has multiple threads, but only one thread calls the heap functions f
 
 The process has multiple threads, and the application provides its own mechanism for mutual exclusion to a specific heap. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -141,14 +155,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows XP and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,6 +176,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -169,6 +187,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -179,9 +198,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -199,5 +220,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAllocateHeap routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

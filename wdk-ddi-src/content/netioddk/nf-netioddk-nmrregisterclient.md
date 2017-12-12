@@ -7,7 +7,7 @@ old-location: netvista\nmrregisterclient.htm
 old-project: netvista
 ms.assetid: 9a8d2bc1-a75a-449d-8cfe-9d1f16a9dbb7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NmrRegisterClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NmrRegisterClient</b> function registers a client module with the NMR.
 
 
+
 ## -syntax
 
 ````
@@ -63,15 +64,17 @@ A pointer to an
      client module must make sure that this structure remains valid and resident in memory as long as the
      client module is registered with the NMR.
 
+
 ### -param ClientContext [in]
 
 A pointer to a caller-supplied context for the registration. The client module uses this context
      to keep track of the state of the client registration. The contents of the client module's registration
      context are opaque to the NMR. The NMR passes this pointer to the client module whenever it calls the
      client module's 
-     <a href="netvista.clientattachprovider">ClientAttachProvider</a> callback
+     <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a> callback
      function. The client module must make sure that its registration context remains valid and resident in
      memory as long as the client module is registered with the NMR.
+
 
 ### -param NmrClientHandle [out]
 
@@ -79,6 +82,7 @@ A pointer to a variable that receives a handle used by the NMR to represent the 
      the client module. The client module must save this handle and pass it as a parameter to the 
      <a href="netvista.nmrderegisterclient">NmrDeregisterClient</a> function when it
      deregisters from the NMR.
+
 
 ## -returns
 The 
@@ -94,6 +98,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 A client module calls the 
@@ -111,11 +116,13 @@ A client module typically calls the
     <a href="netvista.network_programming_interface">NPI</a> for which the client module
     has registered as a client.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -126,15 +133,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -155,9 +166,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -175,5 +188,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrRegisterClient function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrRegisterClient function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

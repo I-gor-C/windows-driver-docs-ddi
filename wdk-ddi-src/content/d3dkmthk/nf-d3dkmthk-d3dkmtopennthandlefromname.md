@@ -7,7 +7,7 @@ old-location: display\d3dkmtopennthandlefromname.htm
 old-project: display
 ms.assetid: bcd33f64-7ad0-4e26-af73-e4f2b1b6e5fb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTOpenNtHandleFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 From a given graphics adapter name, opens an NT handle to the process.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenNtHandleFromName(
 
 A pointer to a <a href="display.d3dkmt_opennthandlefromname">D3DKMT_OPENNTHANDLEFROMNAME</a> structure that describes information required to open an NT handle.
 
+
 ## -returns
 Returns one of the following values:
 <dl>
@@ -70,6 +72,7 @@ Returns one of the following values:
 
 This function might also return other NTSTATUS values.
 
+
 ## -remarks
 
 
@@ -78,22 +81,27 @@ This function might also return other NTSTATUS values.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +112,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +134,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

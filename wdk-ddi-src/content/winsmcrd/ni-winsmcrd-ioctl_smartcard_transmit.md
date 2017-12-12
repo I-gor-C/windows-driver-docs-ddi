@@ -42,10 +42,12 @@ req.product: Windows 10 or later.
 Transmits data from the client to the detected smart card in ISO7816-4 compliant APDU. These APDUs are interpreted with respect to the PC/SC specification (Section 4.3.7 has more detailed requirements on support for different NFC contactless tag formats). Because the NFP feature shares the same driver with the smartcard, the card should be connected right after the discovery, no explicit connect for the ‘Transmit’ is needed.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 Bytes buffer contains a pointer to SCARD_IO_REQUEST structure followed by the data to be transmitted.
+
 
 ### -input-buffer-length
 
@@ -53,6 +55,7 @@ Bytes buffer contains a pointer to SCARD_IO_REQUEST structure followed by the da
 
 ### -output-buffer
 Bytes buffer contains the result of the transmission. The buffer points to the SCARD_IO_REQUEST structure immediately followed by the data received.
+
 
 ### -output-buffer-length
 
@@ -72,6 +75,7 @@ I/O Status block
 
  
 
+
 ## -remarks
 
 
@@ -80,6 +84,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,5 +100,8 @@ Header
 <dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_SMARTCARD_TRANSMIT control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

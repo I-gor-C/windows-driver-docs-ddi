@@ -7,7 +7,7 @@ old-location: storage\storage_zone_descriptor.htm
 old-project: storage
 ms.assetid: 33AE6D40-F54D-427D-B811-2188EA623A26
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_ZONE_DESCRIPTOR, *PSTORAGE_ZONE_DESCRIPTOR, STORAGE_ZONE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -65,29 +66,36 @@ typedef struct _STORAGE_ZONE_DESCRIPTOR {
 
 N/A
 
+
 ### -field ZoneType
 
 N/A
 
-### -field ResetWritePointerRecomend
-
-N/A
 
 ### -field ResetWritePointerRecomend
 
 N/A
+
+
+### -field ResetWritePointerRecomend
+
+N/A
+
 
 ### -field Reserved0
 
 N/A
 
+
 ### -field ZoneSize
 
 N/A
 
+
 ### -field WriterPointerOffset
 
 N/A
+
 
 ## -remarks
 
@@ -97,6 +105,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

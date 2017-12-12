@@ -7,7 +7,7 @@ old-location: netvista\ndisgetrssprocessorinformation.htm
 old-project: netvista
 ms.assetid: 0da022d5-7294-4780-bab8-119ff6385abf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisGetRssProcessorInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   miniport driver must use for receive side scaling (RSS).
 
 
+
 ## -syntax
 
 ````
@@ -61,15 +62,18 @@ NDIS_STATUS NdisGetRssProcessorInformation(
 An NDIS instance handle that was obtained during caller initialization. NDIS drivers can use the
      handles from the following functions:
      
+
 <dl>
 <dd>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+
 
 </dd>
 </dl>
@@ -83,11 +87,13 @@ A pointer to a caller-allocated buffer where NDIS puts the
      contain information about the RSS processor set. The caller provides the length of the buffer in the 
      <i>Size</i> parameter.
 
+
 ### -param Size [in, out]
 
 A pointer to a value that is the size, in bytes, of the buffer that the caller provided. When the
      function returns, this member contains either the amount of data that NDIS put in the buffer or the
      required size of the buffer if the buffer was too short.
+
 
 ## -returns
 <b>NdisGetRssProcessorInformation</b> can return one of the following status values:
@@ -102,6 +108,7 @@ A pointer to a value that is the size, in bytes, of the buffer that the caller p
 
  
 
+
 ## -remarks
 NDIS drivers call the 
     <b>NdisGetRssProcessorInformation</b> function to retrieve information about the receive side scaling
@@ -115,11 +122,13 @@ RSS-capable miniport drivers that support MSI-X call
     <b>RssProcessors</b> member of the 
     <i>RssProcessorInfo</i> parameter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -130,14 +139,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,6 +160,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -158,9 +171,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -185,5 +200,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetRssProcessorInformation function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetRssProcessorInformation function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

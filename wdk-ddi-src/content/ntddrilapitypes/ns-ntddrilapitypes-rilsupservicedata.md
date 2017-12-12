@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedata.htm
 old-project: netvista
 ms.assetid: 1cb4afae-75ad-4c9b-8b21-f9aade2c5fd8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA, RILSUPSERVICEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -95,6 +96,7 @@ typedef struct _RILSUPSERVICEDATA {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

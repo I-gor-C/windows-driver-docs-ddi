@@ -7,7 +7,7 @@ old-location: print\gdigetpagehandle.htm
 old-project: print
 ms.assetid: 7eaed9d2-20fa-4cf1-b924-fbe1443535e9
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GdiGetPageHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GdiGetPageHandle</b> function returns a handle to the specified page within a print job.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ HANDLE GdiGetPageHandle(
 
 Caller-supplied spool file handle, obtained by a previous call to <a href="print.gdigetspoolfilehandle">GdiGetSpoolFileHandle</a>.
 
+
 ### -param Page 
 
 Caller-supplied page number.
 
+
 ### -param pdwPageType 
 
 Caller-supplied pointer to a location that receives the page type. The possible page types are shown in the following table:
+
 <table>
 <tr>
 <th>Page Type</th>
@@ -74,24 +78,30 @@ Caller-supplied pointer to a location that receives the page type. The possible 
 <tr>
 <td>
 EMF_PP_FORM
+
 </td>
 <td>
 The page is a form or has a watermark. (Not currently supported.)
+
 </td>
 </tr>
 <tr>
 <td>
 EMF_PP_NORMAL
+
 </td>
 <td>
 The page is a normal page.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the function returns <b>FALSE</b>, and an error code can be obtained by calling <b>GetLastError</b>.
+
 
 ## -remarks
 The <b>GdiGetPageHandle</b> function is exported by gdi32.dll for use within a print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> function.
@@ -100,11 +110,13 @@ Print processors must obtain a page handle before calling <a href="print.gdiplay
 
 For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +127,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +138,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +149,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

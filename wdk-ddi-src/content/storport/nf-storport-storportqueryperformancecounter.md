@@ -7,7 +7,7 @@ old-location: storage\storportqueryperformancecounter.htm
 old-project: storage
 ms.assetid: 6502E3AE-5841-41C9-BEB7-B00620DBF02D
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortQueryPerformanceCounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The current system performance counter value is queried is returned by the <b>StorPortQueryPerformanceCounter</b> routine.. The performance frequency is also returned as an optional parameter.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ ULONG StorPortQueryPerformanceCounter(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param PerformanceFrequency [out, optional]
 
  A pointer to a large integer to receive the current system performance frequency value. This parameter is optional and can be NULL.
 
+
 ### -param PerformanceCounter [out]
 
 A pointer to a large integer to receive the current system performance counter value.
+
 
 ## -returns
 <b>StorPortQueryPerformanceCounter</b> returns one of the following status codes:
@@ -78,6 +82,7 @@ A pointer to a large integer to receive the current system performance counter v
 
  
 
+
 ## -remarks
 
 
@@ -86,6 +91,7 @@ A pointer to a large integer to receive the current system performance counter v
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,14 +102,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,9 +123,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any
+
 </td>
 </tr>
 </table>
@@ -128,5 +139,8 @@ Any
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortQueryPerformanceCounter routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortQueryPerformanceCounter routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: storage\storportfreehostmemorybuffer.htm
 old-project: storage
 ms.assetid: 686D141E-E6EA-4BB6-8556-0ECAC592E8F0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortFreeHostMemoryBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>StorPortFreeHostMemoryBuffer</b> routine frees the physically contiguous 
     that was allocated to be used for a Host Memory Buffer (HMB) 
 
 
+
 ## -syntax
 
 ````
@@ -60,14 +61,17 @@ ULONG StorPortFreeHostMemoryBuffer(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param PhysicalAddressRanges 
 
 The array of physical address ranges that make up
         the Host Memory Buffer previously allocated by  <b>StorPortAllocateHostMemoryBuffer</b>.
 
+
 ### -param PhysicalAddressRangeCount [in]
 
  The number of entries in <b>PhysicalAddressRanges</b>. 
+
 
 ## -returns
 <b>StorPortFreeHostMemoryBuffer</b> returns one of the following status codes:
@@ -80,6 +84,7 @@ The array of physical address ranges that make up
 
  
 
+
 ## -remarks
 
 
@@ -88,6 +93,7 @@ The array of physical address ranges that make up
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +104,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,8 +115,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>
@@ -122,5 +131,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortFreeHostMemoryBuffer routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortFreeHostMemoryBuffer routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

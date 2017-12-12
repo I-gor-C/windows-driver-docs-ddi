@@ -7,7 +7,7 @@ old-location: display\videoportcreatesecondarydisplay.htm
 old-project: display
 ms.assetid: 49dc9ed8-a506-475e-910f-5dce2ad9b168
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortCreateSecondaryDisplay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>VideoPortCreateSecondaryDisplay</b> function enables dual-view support by creating a secondary device object for the given device.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ VP_STATUS VideoPortCreateSecondaryDisplay(
 
 Pointer to the miniport driver's device extension. This is the hardware extension for the device that wants to create additional display device objects.
 
+
 ### -param SecondaryDeviceExtension [in, out]
 
 Pointer to the location in which to store the hardware device extension for the secondary display device.
 
+
 ### -param ulFlag [in]
 
 Is a set of attributes for the secondary display device. This parameter is restricted to the following value:
+
 <table>
 <tr>
 <th>Value</th>
@@ -74,16 +78,20 @@ Is a set of attributes for the secondary display device. This parameter is restr
 <tr>
 <td>
 VIDEO_DUALVIEW_REMOVABLE
+
 </td>
 <td>
 The secondary view can be removed.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>VideoPortCreateSecondaryDisplay</b> returns NO_ERROR if the secondary display device was successfully created. Otherwise, this function returns an error code. 
+
 
 ## -remarks
 In Windows XP and later, a removable logical device will never become the <a href="wdkgloss.p#wdkgloss.primary_display#wdkgloss.primary_display"><i>primary display</i></a>.
@@ -94,11 +102,13 @@ When the video minport driver calls <b>VideoPortCreateSecondaryDisplay</b>, the 
 
 The flags VIDEO_DUALVIEW_PRIMARY and VIDEO_DUALVIEW_SECONDARY, which are defined in <i>ntddvdeo.h</i>, are for internal use only. The video miniport driver must never set these flags. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -109,14 +119,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +140,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -137,6 +151,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -147,9 +162,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

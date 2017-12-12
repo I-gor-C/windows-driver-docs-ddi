@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>MetadataTimeStamps</b> structure describes the blob format for the <b>MF_CAPTURE_METADATA_FACEROITIMESTAMPS</b> attribute.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct tagMetadataTimeStamps {
 
 Bitwise OR of the <b>MF_METADATATIMESTAMPS_*</b> flags.
 
+
 ### -field Device
 
 QPC time for the sample  the face rectangle is derived from (in 100ns).
 
+
 ### -field Presentation
 
 PTS for the sample  the face rectangle is derived from (in 100ns).
+
 
 ## -remarks
 The <b>MF_CAPTURE_METADATA_FACEROITIMESTAMPS</b> attribute contains the time stamp information for the face ROIs identified in <b>MF_CAPTURE_METADATA_FACEROIS</b>.  For a  device that cannot provide the time stamp for face ROIs, this attribute should be omitted.
@@ -86,11 +90,13 @@ MFT0 must set <b>Flags</b> to <b>MF_METADATATIEMSTAMPS_DEVICE</b> and the approp
 
 The <b>MetadataTimeStamps</b> structure only describes the blob format for the <b>MF_CAPTURE_METADATA_FACEROITIMESTAMPS</b> attribute.  The metadata item structure for timestamp (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + timestamp metadata payload) is up to driver and must be 8-byte aligned.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

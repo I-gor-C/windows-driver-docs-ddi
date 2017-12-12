@@ -41,6 +41,7 @@ req.irql:
 The <b>FSRTL_ADVANCED_FCB_HEADER</b> structure contains context information that a file system maintains about a file. 
 
 
+
 ## -syntax
 
 ````
@@ -64,41 +65,52 @@ typedef struct _FSRTL_ADVANCED_FCB_HEADER {
 
 An unnamed member that contains a structure of type <a href="ifsk.fsrtl_common_fcb_header">FSRTL_COMMON_FCB_HEADER</a>. 
 
+
 ### -field FastMutex
 
 A pointer to an initialized fast mutex that is used to synchronize access to the following members of <b>DUMMYSTRUCTNAME</b>:
+
 <ul>
 <li>
 <b>AllocationSize</b>
+
 </li>
 <li>
 <b>FileSize</b>
+
 </li>
 <li>
 <b>ValidDataLength</b>
+
 </li>
 </ul>
 If present, the <b>PushLock</b> member is used to synchronize access to the <b>FilterContexts</b> member; otherwise, <b>FastMutex</b> is used.
+
 
 ### -field FilterContexts
 
 A pointer to the head of a list of all context structures that are associated with the file. Filter drivers can search this list by calling <a href="ifsk.fsrtllookupperstreamcontext">FsRtlLookupPerStreamContext</a> and modify it by calling <a href="ifsk.fsrtlinsertperstreamcontext">FsRtlInsertPerStreamContext</a> and <a href="ifsk.fsrtlremoveperstreamcontext">FsRtlRemovePerStreamContext</a>. 
 
+
 ### -field PushLock
 
 A push lock used to synchronize access to the <i>FilterContexts</i> list.  This member is only available starting with  Windows Vista (that is, if the <b>Version</b> bit-field of the <a href="ifsk.fsrtl_common_fcb_header">FSRTL_COMMON_FCB_HEADER</a> structure is greater than or equal to <b>FSRTL_FCB_HEADER_V1</b>).
+
 
 ### -field FileContextSupportPointer
 
 A pointer to a pointer field used by the file system runtime library (FSRTL) package to track file contexts.  If not <b>NULL</b>, this member must be a pointer to a PVOID variable inside a per-file structure for the file system that created the structure.  If <b>NULL</b>, file contexts are not supported.  This member is only available starting with Windows Vista (that is, if the <b>Version</b> bit-field of the <a href="ifsk.fsrtl_common_fcb_header">FSRTL_COMMON_FCB_HEADER</a> structure is greater than or equal to <b>FSRTL_FCB_HEADER_V1</b>).
 
+
 ### -field Oplock
 
 The oplock for the file or directory. This member is only available starting with Windows 8 (that is, if the <b>Version</b> bit-field of the <a href="ifsk.fsrtl_common_fcb_header">FSRTL_COMMON_FCB_HEADER</a> structure is greater than or equal to <b>FSRTL_FCB_HEADER_V2</b>).
 
+
 ### -field ReservedForRemote
 
 If the file system is remote, this field is reserved. This member is only available starting with Windows 8 (that is, if the <b>Version</b> bit-field of the <a href="ifsk.fsrtl_common_fcb_header">FSRTL_COMMON_FCB_HEADER</a> structure is greater than or equal to <b>FSRTL_FCB_HEADER_V2</b>).
+
 
 ## -remarks
 The <b>FSRTL_ADVANCED_FCB_HEADER</b> structure is a superset of the <a href="ifsk.fsrtl_common_fcb_header">FSRTL_COMMON_FCB_HEADER</a> structure. File systems (including legacy filter and minifilter drivers, when applicable) must use the <b>FSRTL_ADVANCED_FCB_HEADER</b> structure. 
@@ -129,11 +141,13 @@ If the file is a paging file, the <b>FSRTL_ADVANCED_FCB_HEADER</b> structure mus
 
 All Microsoft file systems disable stream context support for paging files by clearing the <b>FSRTL_FLAG2_SUPPORTS_FILTER_CONTEXTS</b> flag in the <b>Flags2</b> member of <a href="ifsk.fsrtl_common_fcb_header">FSRTL_COMMON_FCB_HEADER</a> after they call <a href="ifsk.fsrtlsetupadvancedheader">FsRtlSetupAdvancedHeader</a>. (See the <b>FatCreateFcb</b> function in <i>Strucsup.c</i> for the FASTFAT WDK sample.) You are strongly encouraged to do the same in your file system or systems so that the operating system will behave in a consistent manner across all file systems.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +185,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_ADVANCED_FCB_HEADER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

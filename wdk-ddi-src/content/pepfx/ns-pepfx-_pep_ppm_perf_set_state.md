@@ -7,8 +7,8 @@ old-location: kernel\pep_ppm_perf_set_state.htm
 old-project: kernel
 ms.assetid: 0d822370-f08b-404d-ad0f-60ea091661d9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE
+ms.date: 12/7/2017
+ms.keywords: _PEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used in the <b>PEP_NOTIFY_PPM_PERF_SET </b>notification at runtime to set the current operating performance of the processor.  
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _PEP_PPM_PERF_SET_STATE {
 
 On input, the new requested minimum performance state. This state is  defined as the absolute minimum instantaneous performance level at which  the processor may run. The operating system may set this value to any performance value in the range [Lowest Performance, Guaranteed Performance], inclusive. Minimum performance must never be set to a value higher than maximum performance. 
 
+
 ### -field MaximumPerformanceState
 
 On input, the new requested maximum performance state. This state is defined as the absolute maximum instantaneous performance level at which the processor may run. The OS may set Maximum performance to any performance value in the range [Lowest Performance, Highest Performance], inclusive.
 
+
 ### -field DesiredPerformanceState
 
 On input, the new requested desired performance state. This state is defined as the performance level power manager is requesting from the processor. Desired performance may be set to any performance value in the range [Minimum Performance, Maximum Performance], inclusive. Desired performance may take one of two meanings, depending on whether the desired performance is above or below the guaranteed performance level. 
+
 
 <ul>
 <li>Below the guaranteed performance level, desired performance expresses the average performance level the platform must provide.  
@@ -74,6 +78,7 @@ On input, the new requested desired performance state. This state is defined as 
 
  
 
+
 ## -remarks
 
 
@@ -82,22 +87,27 @@ On input, the new requested desired performance state. This state is defined as 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_PERF_SET_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_PERF_SET_STATE structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

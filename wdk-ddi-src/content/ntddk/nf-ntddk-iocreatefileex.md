@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>IoCreateFileEx</b> routine either causes a new file or directory to be created, or opens an existing file, device, directory, or volume and gives the caller a handle for the file object.  File system filter drivers (legacy filter drivers) call this routine.
 
 
+
 ## -syntax
 
 ````
@@ -70,9 +71,11 @@ NTSTATUS IoCreateFileEx(
 
 A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="kernel.zwclose">ZwClose</a> as soon as the handle is no longer being used.
 
+
 ### -param DesiredAccess [in]
 
 A bitmask of flags (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>) that specifies the type of access that the caller requires to the file or directory. This set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects.
+
 <table>
 <tr>
 <th><i>DesiredAccess</i> flag</th>
@@ -81,110 +84,138 @@ A bitmask of flags (see <a href="https://msdn.microsoft.com/library/windows/hard
 <tr>
 <td>
 DELETE
+
 </td>
 <td>
 The file can be deleted.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_READ_DATA
+
 </td>
 <td>
 Data can be read from the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_READ_ATTRIBUTES
+
 </td>
 <td>
 <i>FileAttributes</i> flags, described later, can be read.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_READ_EA
+
 </td>
 <td>
 Extended attributes (EA) associated with the file can be read. 
+
 </td>
 </tr>
 <tr>
 <td>
 READ_CONTROL
+
 </td>
 <td>
 The access control list (<a href="ifsk.acl">ACL</a>) and ownership information associated with the file can be read.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_DATA
+
 </td>
 <td>
 Data can be written to the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_ATTRIBUTES
+
 </td>
 <td>
 <i>FileAttributes</i> flags can be written.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_EA 
+
 </td>
 <td>
 Extended attributes associated with the file can be written. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_APPEND_DATA
+
 </td>
 <td>
 Data can be appended to the file.
+
 </td>
 </tr>
 <tr>
 <td>
 WRITE_DAC 
+
 </td>
 <td>
 The discretionary access control list (<a href="ifsk.acl">DACL</a>) associated with the file can be written.
+
 </td>
 </tr>
 <tr>
 <td>
 WRITE_OWNER 
+
 </td>
 <td>
 Ownership information associated with the file can be written.
+
 </td>
 </tr>
 <tr>
 <td>
 SYNCHRONIZE
+
 </td>
 <td>
 The caller can synchronize the completion of an I/O operation by waiting for the returned <i>FileHandle</i> to be set to the Signaled state. This flag must be set if the <i>CreateOptions</i> FILE_SYNCHRONOUS_IO_ALERT or FILE_SYNCHRONOUS_IO_NONALERT flag is set. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_EXECUTE
+
 </td>
 <td>
 Data can be read into memory from the file using system paging I/O. 
+
 </td>
 </tr>
 </table>
  
+
 Callers of <b>IoCreateFileEx</b> can specify one or a combination of the following, possibly combined through a bitwise OR operation with additional compatible flags from the previous <i>DesiredAccess</i> flags list, for any file object that does not represent a directory file.
+
 <table>
 <tr>
 <th>Desired access to file values</th>
@@ -193,31 +224,40 @@ Callers of <b>IoCreateFileEx</b> can specify one or a combination of the followi
 <tr>
 <td>
 GENERIC_READ
+
 </td>
 <td>
 STANDARD_RIGHTS_READ, FILE_READ_DATA, FILE_READ_ATTRIBUTES, FILE_READ_EA, SYNCHRONIZE. 
+
 </td>
 </tr>
 <tr>
 <td>
 GENERIC_WRITE
+
 </td>
 <td>
 STANDARD_RIGHTS_WRITE, FILE_WRITE_DATA, FILE_WRITE_ATTRIBUTES, FILE_WRITE_EA, FILE_APPEND_DATA, SYNCHRONIZE. 
+
 </td>
 </tr>
 <tr>
 <td>
 GENERIC_EXECUTE
+
 </td>
 <td>
 STANDARD_RIGHTS_EXECUTE, SYNCHRONIZE, FILE_READ_ATTRIBUTES, FILE_EXECUTE. 
+
 </td>
 </tr>
 </table>
  
+
 The STANDARD_RIGHTS_<i>XXX</i> are predefined system values that are used to enforce security on system objects.
+
 If the FILE_DIRECTORY_FILE <i>CreateOptions</i> flag is set, callers of <b>IoCreateFileEx</b>can specify one or a combination of the following, possibly combined through a bitwise OR operation with one or more compatible flags from the previous <i>DesiredAccess</i> flags list.
+
 <table>
 <tr>
 <th>Desired access to directory values</th>
@@ -226,28 +266,35 @@ If the FILE_DIRECTORY_FILE <i>CreateOptions</i> flag is set, callers of <b>IoCre
 <tr>
 <td>
 FILE_LIST_DIRECTORY
+
 </td>
 <td>
 Files in the directory can be listed.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_TRAVERSE
+
 </td>
 <td>
 The directory can be traversed, that is, it can be part of the pathname of a file.
+
 </td>
 </tr>
 </table>
  
+
 The FILE_READ_DATA, FILE_WRITE_DATA, FILE_EXECUTE, and FILE_APPEND_DATA <i>DesiredAccess</i> flags are incompatible with creating or opening a directory file.
+
 
 ### -param ObjectAttributes [in]
 
 
       A pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure already initialized by the <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> routine. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object include the following.
       
+
 <table>
 <tr>
 <th>Member</th>
@@ -256,49 +303,61 @@ The FILE_READ_DATA, FILE_WRITE_DATA, FILE_EXECUTE, and FILE_APPEND_DATA <i>Desir
 <tr>
 <td>
 <b>ULONG</b> <b>Length</b>
+
 </td>
 <td>
 The number of bytes of the supplied <i>ObjectAttributes</i> data. This value must be at least <code>sizeof(OBJECT_ATTRIBUTES)</code>.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>PUNICODE_STRING</b> <b>ObjectName</b>
+
 </td>
 <td>
 A pointer to a buffered Unicode string that contains the name of the file to be created or opened. This value must be a fully qualified file specification, unless it is the name of a file relative to the directory specified by <b>RootDirectory</b>. For example, <i>\Device\Floppy1\myfile.dat</i> or <i>\??\B:\myfile.dat</i> could be the fully qualified file specification, as long as the floppy disk drive driver and overlying file system are already loaded.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>HANDLE</b> <b>RootDirectory</b>
+
 </td>
 <td>
 Optional handle to a directory that was obtained by a previous call to <b>IoCreateFileEx</b>. If this value is <b>NULL</b>, the <b>ObjectName</b> member must be a fully qualified file specification that includes the full path to the target file. If this value is non-<b>NULL</b>, the <b>ObjectName</b> member specifies a file name relative to this directory.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>PSECURITY_DESCRIPTOR</b> <b>SecurityDescriptor</b>
+
 </td>
 <td>
 Optional security descriptor to be applied to a file. ACLs specified by such a security descriptor are only applied to the file when it is created. If the value is <b>NULL</b> when a file is created, the ACL placed on the file is file-system-dependent; most file systems propagate some part of such an ACL from the parent directory file combined with the caller's default ACL.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>ULONG</b> <b>Attributes</b>
+
 </td>
 <td>
 A set of flags that controls the file object attributes. If the caller is running in the system process context, this parameter can be zero. Otherwise, the caller must set the <b>OBJ_KERNEL_HANDLE</b> flag. The caller can also optionally set the <b>OBJ_CASE_INSENSITIVE</b> flag, which indicates that name-lookup code should ignore the case of <b>ObjectName</b> instead of performing an exact-match search.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param IoStatusBlock [out]
 
 A pointer to a variable of type <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> that receives the final completion status and information about the requested operation. On return from <b>IoCreateFileEx</b>, the <b>Information</b> member of the variable contains one of the following values:
+
 <ul>
 <li>FILE_CREATED</li>
 <li>FILE_OPENED</li>
@@ -312,9 +371,11 @@ A pointer to a variable of type <a href="kernel.io_status_block">IO_STATUS_BLOCK
 
 Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded.
 
+
 ### -param FileAttributes [in]
 
 Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by any other flag or by a combination (through a bitwise OR operation) of compatible flags. Possible <i>FileAttributes</i> flags include the following.
+
 <table>
 <tr>
 <th><i>FileAttributes</i> flags</th>
@@ -323,57 +384,71 @@ Explicitly specified attributes are applied only when the file is created, super
 <tr>
 <td>
 FILE_ATTRIBUTE_NORMAL
+
 </td>
 <td>
 A file that has standard attributes should be created.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_ATTRIBUTE_READONLY
+
 </td>
 <td>
 A read-only file should be created.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_ATTRIBUTE_HIDDEN
+
 </td>
 <td>
 A hidden file should be created.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_ATTRIBUTE_SYSTEM
+
 </td>
 <td>
 A system file should be created.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_ATTRIBUTE_ARCHIVE
+
 </td>
 <td>
 The file should be marked so that it will be archived.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_ATTRIBUTE_TEMPORARY
+
 </td>
 <td>
 A temporary file should be created.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ShareAccess [in]
 
 Specifies the type of share access to the file that the caller would like, as zero, or one, or a combination of the following flags. To request exclusive access, set this parameter to zero. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Options</i> parameter, the I/O manager ignores the <i>ShareAccess</i> parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when you use the IO_IGNORE_SHARE_ACCESS_CHECK flag. To help you avoid sharing violation errors, specify all the following share access flags.
+
 <table>
 <tr>
 <th><i>ShareAccess</i> flags</th>
@@ -382,34 +457,43 @@ Specifies the type of share access to the file that the caller would like, as ze
 <tr>
 <td>
 FILE_SHARE_READ
+
 </td>
 <td>
 The file can be opened for read access by other threads' calls to <b>IoCreateFileEx</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SHARE_WRITE
+
 </td>
 <td>
 The file can be opened for write access by other threads' calls to <b>IoCreateFileEx</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SHARE_DELETE
+
 </td>
 <td>
 The file can be opened for delete access by other threads' calls to <b>IoCreateFileEx</b>.
+
 </td>
 </tr>
 </table>
  
+
 Device drivers and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.
+
 
 ### -param Disposition [in]
 
 One of the following values can be used to specify how the file should be handled when the file already exists.
+
 <table>
 <tr>
 <th><i>Disposition</i> values</th>
@@ -418,57 +502,71 @@ One of the following values can be used to specify how the file should be handle
 <tr>
 <td>
 FILE_SUPERSEDE
+
 </td>
 <td>
 If the file already exists, replace it with the given file. If it does not, create the given file. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_CREATE 
+
 </td>
 <td>
 If the file already exists, fail the request and do not create or open the given file. If it does not, create the given file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN 
+
 </td>
 <td>
 If the file already exists, open it instead of creating a new file. If it does not, fail the request and do not create a new file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_IF
+
 </td>
 <td>
 If the file already exists, open it. If it does not, create the given file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OVERWRITE
+
 </td>
 <td>
 If the file already exists, open it and overwrite it. If it does not, fail the request.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OVERWRITE_IF
+
 </td>
 <td>
 If the file already exists, open it and overwrite it. If it does not, create the given file.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param CreateOptions [in]
 
 Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags.
+
 <table>
 <tr>
 <th><i>CreateOptions</i> flags</th>
@@ -477,129 +575,161 @@ Specifies the options to be applied when creating or opening the file, as a comp
 <tr>
 <td>
 FILE_DIRECTORY_FILE
+
 </td>
 <td>
 The file being created or opened is a directory file. With this flag, the <i>Disposition</i> parameter must be set to one of FILE_CREATE, FILE_OPEN, or FILE_OPEN_IF. <i>CreateOptions</i> flags that are compatible with this flag are as follows: FILE_SYNCHRONOUS_IO_ALERT, FILE_SYNCHRONOUS_IO_NONALERT, FILE_WRITE_THROUGH, FILE_OPEN_FOR_BACKUP_INTENT, and FILE_OPEN_BY_FILE_ID. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NON_DIRECTORY_FILE
+
 </td>
 <td>
 The file being opened must not be a directory file or this call will fail. The file object being opened can represent a data file, a logical, virtual, a physical device, or a volume. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_THROUGH
+
 </td>
 <td>
 System services, file system drivers (FSDs), and drivers that write data to the file must actually transfer the data into the file before any requested write operation is considered complete. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SEQUENTIAL_ONLY
+
 </td>
 <td>
 All accesses to the file will be sequential.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_RANDOM_ACCESS
+
 </td>
 <td>
 Accesses to the file can be random, so no sequential read-ahead operations should be performed on the file by FSDs or the system.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NO_INTERMEDIATE_BUFFERING
+
 </td>
 <td>
 The file cannot be cached or buffered in a driver's internal buffers. This flag is incompatible with the <i>DesiredAccess</i>FILE_APPEND_DATA flag.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SYNCHRONOUS_IO_ALERT
+
 </td>
 <td>
 All operations on the file are performed synchronously. Any wait on behalf of the caller is subject to premature termination from alerts. This flag also causes the I/O system to maintain the file position context. If this flag is set, the <i>DesiredAccess</i> SYNCHRONIZE flag must also be set. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SYNCHRONOUS_IO_NONALERT
+
 </td>
 <td>
 All operations on the file are performed synchronously. Wait requests in the system to synchronize I/O queuing and completion are not subject to alerts. This flag also causes the I/O system to maintain the file position context. If this flag is set, the <i>DesiredAccess</i> SYNCHRONIZE flag must also be set.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_CREATE_TREE_CONNECTION
+
 </td>
 <td>
 Create a tree connection for this file to open it over the network.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_COMPLETE_IF_OPLOCKED
+
 </td>
 <td>
 Complete this operation immediately with an alternate success code if the target file is oplocked, instead of blocking the caller's thread. If the file is oplocked, another caller already has access to the file over the network. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NO_EA_KNOWLEDGE
+
 </td>
 <td>
 If the extended attributes (EAs) on an existing file being opened indicate that the caller must process EAs to interpret the file, fail this request because the caller cannot correctly process EAs.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_REPARSE_POINT
+
 </td>
 <td>
 Open a file with a reparse point and bypass normal reparse point processing for the file.  For more information, see the following Remarks section.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_DELETE_ON_CLOSE 
+
 </td>
 <td>
 Delete the file when the last handle to it is passed to <a href="kernel.zwclose">ZwClose</a>.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_BY_FILE_ID
+
 </td>
 <td>
 The file name that is specified in the <i>ObjectAttributes</i> parameter includes the 8-byte file reference number for the file.  This number is assigned by the file system and is file-system-specific.  If the file is a reparse point, the file name also includes the name of a device.  Note: The FAT file system does not support FILE_OPEN_BY_FILE_ID.  
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_FOR_BACKUP_INTENT
+
 </td>
 <td>
 The file is being opened for backup. Therefore, the system should check for certain access rights and grant the caller the appropriate accesses to the file before checking the input <i>DesiredAccess</i> against the file's security descriptor.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_REQUIRING_OPLOCK 
+
 </td>
 <td>
 The file is being opened and an opportunistic lock (oplock) on the file is being requested as a single atomic operation. The file system checks for oplocks before it performs the create operation, and the create operation fails with a return code of STATUS_CANNOT_BREAK_OPLOCK if the create would break an existing oplock. 
+
 <div class="alert"><b>Note</b>    The FILE_OPEN_REQUIRING_OPLOCK flag is available in Windows 7, Windows Server 2008 R2 and later Windows operating systems.</div>
 <div> </div>
 </td>
@@ -607,33 +737,41 @@ The file is being opened and an opportunistic lock (oplock) on the file is being
 <tr>
 <td>
 FILE_RESERVE_OPFILTER 
+
 </td>
 <td>
 This flag allows an application to request a filter opportunistic lock (oplock) to prevent other applications from getting share violations.  If there are already open handles, the create request fails with STATUS_OPLOCK_NOT_GRANTED.  For more information, see the following Remarks section.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param EaBuffer [in, optional]
 
 A pointer to a caller-supplied variable of type <a href="kernel.file_full_ea_information">FILE_FULL_EA_INFORMATION</a> that contains extended attribute (EA) information to be applied to the file.  For device and intermediate drivers, this parameter must be <b>NULL</b>.
+
 
 ### -param EaLength [in]
 
 Length, in bytes, of <i>EaBuffer</i>.  For device drivers and intermediate drivers, this parameter must be zero.
 
+
 ### -param CreateFileType [in]
 
 Drivers must set this parameter to CreateFileTypeNone.
+
 
 ### -param InternalParameters [in, optional]
 
 Drivers must set this parameter to <b>NULL</b>.
 
+
 ### -param Options [in]
 
 Specifies options to be used during the generation of the create request. Zero or more of the following bit flag values can be used.
+
 <table>
 <tr>
 <th><i>Options</i> flags</th>
@@ -642,49 +780,61 @@ Specifies options to be used during the generation of the create request. Zero o
 <tr>
 <td>
 IO_NO_PARAMETER_CHECKING
+
 </td>
 <td>
 The parameters for this call should not be validated before attempting to issue the create request. Driver writers should use this flag with caution as certain invalid parameters can cause a system failure. For more information, see Remarks.
+
 </td>
 </tr>
 <tr>
 <td>
 IO_FORCE_ACCESS_CHECK
+
 </td>
 <td>
 The I/O manager must check the create request against the file's security descriptor.
+
 </td>
 </tr>
 <tr>
 <td>
 IO_IGNORE_SHARE_ACCESS_CHECK
+
 </td>
 <td>
 The I/O manager should not perform share-access checks on the file object after it is created. However, the file system might still perform these checks.
+
 </td>
 </tr>
 <tr>
 <td>
 IO_STOP_ON_SYMLINK
+
 </td>
 <td>
 The I/O manager or the file system will return STATUS_STOPPED_ON_SYMLINK if a symbolic link is encountered while  opening or creating the file.
+
 </td>
 </tr>
 <tr>
 <td>
 IO_OPEN_TARGET_DIRECTORY
+
 </td>
 <td>
 Open the file's parent directory.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param DriverContext [in, optional]
 
 An optional pointer to an <a href="ifsk.io_driver_create_context">IO_DRIVER_CREATE_CONTEXT</a> structure that was previously initialized by the <a href="ifsk.ioinitializedrivercreatecontext">IoInitializeDriverCreateContext</a> routine.  The IO_DRIVER_CREATE_CONTEXT structure can be used to pass additional parameters to the <b>IoCreateFileEx</b> and <a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a> routines.  See the following Remarks section for more information.
+
 
 ## -returns
 <b>IoCreateFileEx</b> either returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
@@ -708,6 +858,7 @@ An optional pointer to an <a href="ifsk.io_driver_create_context">IO_DRIVER_CREA
  
 
 If the <b>IoCreateFileEx</b> routine returns an error status, the caller can find additional information about the cause of the failure by checking the <i>IoStatusBlock</i> parameter.
+
 
 
 
@@ -793,11 +944,13 @@ If the I/O request does not go to the top of the driver stack, that is if the <i
 
  If the file name path that is passed to the <b>IoCreateFileEx</b> routine contains a mount point, the mount point must resolve to the same volume where the file or directory resides.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -808,14 +961,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -826,6 +982,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -836,6 +993,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -846,9 +1004,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -920,5 +1080,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateFileEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

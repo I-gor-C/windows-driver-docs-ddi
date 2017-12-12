@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A camera minidriver's <b>CamStartCaptureEx</b> callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream.
 
 
+
 ## -prototype
 
 ````
@@ -62,27 +63,33 @@ NTSTATUS CamStartCaptureEx(
 
 Pointer to the camera minidriver's device object created by the USB hub.
 
+
 ### -param DeviceContext 
 
 Pointer to the camera minidriver's device context.
+
 
 ### -param StreamNumber 
 
 Indicates the stream number.
 
+
 ## -returns
 <b>CamStartCaptureEx</b> returns STATUS_SUCCESS or an appropriate error code. This return value is the completion code for the read IRP.
+
 
 ## -remarks
 The original USBCAMD does not call <b>CamStartCaptureEx</b>.
 
 This function is required.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +100,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

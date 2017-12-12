@@ -41,6 +41,7 @@ req.irql:
 The TOKEN_CONTROL structure contains information that identifies an access token.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _TOKEN_CONTROL {
 
 Specifies a locally unique identifier (LUID) identifying this instance of the token object. 
 
+
 ### -field AuthenticationId
 
 Specifies an LUID assigned to the session this token represents. There can be many tokens representing a single logon session. 
+
 
 ### -field ModifiedId
 
 Specifies an LUID that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used. 
 
+
 ### -field TokenSource
 
 Specifies a <a href="ifsk.token_source">TOKEN_SOURCE</a> structure identifying the source that issued the token. This information is used in audit logging. 
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Specifies a <a href="ifsk.token_source">TOKEN_SOURCE</a> structure identifying t
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +134,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_CONTROL structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

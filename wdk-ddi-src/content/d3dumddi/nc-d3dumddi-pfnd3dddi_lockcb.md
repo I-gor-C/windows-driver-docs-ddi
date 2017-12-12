@@ -7,7 +7,7 @@ old-location: display\pfnlockcb.htm
 old-project: display
 ms.assetid: 69022797-432a-410b-8cbf-e1ef7111e7ea
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <i>pfnLockCb</i> function locks an allocation and obtains a pointer to the allocation from the display miniport driver or video memory manager. 
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnLockCb(
 
 A handle to the display device (graphics context).
 
+
 ### -param pData [in, out]
 
 A pointer to a <a href="display.d3dddicb_lock">D3DDDICB_LOCK</a> structure that describes the allocation to lock.
+
 
 ## -returns
 <i>pfnLockCb</i> returns one of the following values:
@@ -100,6 +103,7 @@ A pointer to a <a href="display.d3dddicb_lock">D3DDDICB_LOCK</a> structure that 
 
 This function might also return other HRESULT values.
 
+
 ## -remarks
 The user-mode display driver can call the Microsoft Direct3D runtime's <i>pfnLockCb</i> function to lock an allocation and obtain a pointer to the allocation from the display miniport driver or video memory manager. The user-mode display driver typically calls <i>pfnLockCb</i> in response to a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function (or other variations of <b>ResourceMap</b> such as <i>DynamicIABufferMapDiscard</i>) to lock a resource or a surface within the resource. Before returning from the <b>Lock</b> or <b>ResourceMap</b> call, the user-mode display driver must first map the resource or surface to the appropriate allocation and then call <i>pfnLockCb</i> to lock the allocation. The allocation must be locked before it can be read from or written to because locking: 
 
@@ -109,9 +113,11 @@ Provides a way to synchronize the read and write operations of the allocation wi
 
 <b>Direct3D Version 9 Note:  </b><p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> functions, respectively, except when the driver handles resources in which the <b>Dynamic</b> bit-field flag was set in the <b>Flags</b> member of the <a href="display.d3dddiarg_createresource">D3DDDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often with the <b>NoOverwrite</b> bit-field flag set in the <b>Flags</b> member of the <a href="display.d3dddiarg_lock">D3DDDIARG_LOCK</a> structure. Because data in such resources should not be modified (as indicated by <b>NoOverwrite</b>), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <b>pSurfData</b> member of D3DDDIARG_LOCK when its <b>Lock</b> function is called with the <b>NoOverwrite</b> bit-field flag set. However, the driver can continue to call <i>pfnLockCb</i> whenever its <b>Lock</b> function is called with either the <b>Discard</b> bit-field flag set or no flags set.
 
+
 <p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> functions, respectively, except when the driver handles resources in which the <b>Dynamic</b> bit-field flag was set in the <b>Flags</b> member of the <a href="display.d3dddiarg_createresource">D3DDDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often with the <b>NoOverwrite</b> bit-field flag set in the <b>Flags</b> member of the <a href="display.d3dddiarg_lock">D3DDDIARG_LOCK</a> structure. Because data in such resources should not be modified (as indicated by <b>NoOverwrite</b>), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <b>pSurfData</b> member of D3DDDIARG_LOCK when its <b>Lock</b> function is called with the <b>NoOverwrite</b> bit-field flag set. However, the driver can continue to call <i>pfnLockCb</i> whenever its <b>Lock</b> function is called with either the <b>Discard</b> bit-field flag set or no flags set.
 
 <b>Direct3D Versions 10 and 11 Note:  </b><p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> and <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> functions (or other variations of these functions). This does not happen when the driver handles resources in which the D3D10_DDI_USAGE_DYNAMIC value was set in the <b>Usage</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a> or <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often by passing the D3D10_DDI_MAP_WRITE_NOOVERWRITE value to the <i>DDIMap</i> parameter in the call to <b>ResourceMap</b>. Because data in such resources should not be modified (as indicated by D3D10_DDI_MAP_WRITE_NOOVERWRITE), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <i>pMappedSubResource</i> parameter when its <i>ResourceMap</i> function is called with D3D10_DDI_MAP_WRITE_NOOVERWRITE. However, the driver can continue to call <i>pfnLockCb</i> whenever its <i>ResourceMap</i> function is called with either the D3D10_DDI_MAP_WRITE_DISCARD value or 0 passed to the <i>DDIMap</i> parameter.
+
 
 <p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> and <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> functions (or other variations of these functions). This does not happen when the driver handles resources in which the D3D10_DDI_USAGE_DYNAMIC value was set in the <b>Usage</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a> or <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often by passing the D3D10_DDI_MAP_WRITE_NOOVERWRITE value to the <i>DDIMap</i> parameter in the call to <b>ResourceMap</b>. Because data in such resources should not be modified (as indicated by D3D10_DDI_MAP_WRITE_NOOVERWRITE), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <i>pMappedSubResource</i> parameter when its <i>ResourceMap</i> function is called with D3D10_DDI_MAP_WRITE_NOOVERWRITE. However, the driver can continue to call <i>pfnLockCb</i> whenever its <i>ResourceMap</i> function is called with either the D3D10_DDI_MAP_WRITE_DISCARD value or 0 passed to the <i>DDIMap</i> parameter.
 
@@ -149,11 +155,13 @@ The user-mode display driver should set the <b>IgnoreSync</b> bit-field flag in 
 
 The following code example shows how the <b>Discard</b> bit-field flag is used in a call to <i>pfnLockCb</i>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -164,14 +172,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -209,5 +220,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_LOCKCB callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_LOCKCB callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

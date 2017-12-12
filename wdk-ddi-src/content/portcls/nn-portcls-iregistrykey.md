@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IRegistryKey</code> interface provides an abstraction of a registry key that a miniport driver can use to access the key and its subkeys. The PortCls system driver implements this interface and exposes it to miniport drivers. A miniport driver obtains a reference to an <code>IRegistryKey</code> object by calling <a href="audio.pcnewregistrykey">PcNewRegistryKey</a> or <a href="audio.iport_newregistrykey">IPort::NewRegistryKey</a>. 
+
 For more information, see <a href="https://msdn.microsoft.com/c666f0cc-5a8a-4df8-9c65-08e3b044a08f">Registry Key Objects</a>.
+
 
 
 ## -inheritance
@@ -65,6 +67,7 @@ The <code>SetValueKey</code> method replaces or creates a value entry under the 
 
  
 
+
 ## -members
 The <b>IRegistryKey</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -78,6 +81,7 @@ The <b>IRegistryKey</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <code>DeleteKey</code> method deletes the registry key.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -86,6 +90,7 @@ The <code>DeleteKey</code> method deletes the registry key.
 </td>
 <td align="left" width="63%">
 The <code>EnumerateKey</code> method returns information about the subkeys of the open key.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -94,6 +99,7 @@ The <code>EnumerateKey</code> method returns information about the subkeys of th
 </td>
 <td align="left" width="63%">
 The <code>EnumerateValueKey</code> method returns information about a registry entry that contains a value key.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -102,6 +108,7 @@ The <code>EnumerateValueKey</code> method returns information about a registry e
 </td>
 <td align="left" width="63%">
 The <code>NewSubKey</code> method either creates a new registry subkey or opens an existing subkey under the key represented by the <b>IRegistryKey</b> object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -110,6 +117,7 @@ The <code>NewSubKey</code> method either creates a new registry subkey or opens 
 </td>
 <td align="left" width="63%">
 The <code>QueryKey</code> method retrieves information about a registry key, including the key name, key class, and the number of subkeys and their sizes.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -118,6 +126,7 @@ The <code>QueryKey</code> method retrieves information about a registry key, inc
 </td>
 <td align="left" width="63%">
 The <code>QueryRegistryValues</code> method allows the caller to query several values from the registry with a single call.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -126,6 +135,7 @@ The <code>QueryRegistryValues</code> method allows the caller to query several v
 </td>
 <td align="left" width="63%">
 The <code>QueryValueKey</code> method retrieves information about a registry key's value entries, including their names, types, data sizes, and values.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -134,6 +144,7 @@ The <code>QueryValueKey</code> method retrieves information about a registry key
 </td>
 <td align="left" width="63%">
 The <code>SetValueKey</code> method replaces or creates a value entry under the open key.
+
 </td>
 </tr>
 </table>The <code>DeleteKey</code> method deletes the registry key.
@@ -154,6 +165,7 @@ The <code>SetValueKey</code> method replaces or creates a value entry under the 
 
  
 
+
 ## -remarks
 
 
@@ -162,6 +174,7 @@ The <code>SetValueKey</code> method replaces or creates a value entry under the 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

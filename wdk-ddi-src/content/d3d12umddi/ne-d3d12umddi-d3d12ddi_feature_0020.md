@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_feature_0020.htm
 old-project: display
 ms.assetid: 93192DAD-D81E-4A2E-A74B-66F7F5BA0B2D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_FEATURE_0020, D3D12DDI_FEATURE_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains available features.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef enum _D3D12DDI_FEATURE_0020 {
 
 A feature. 
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ A feature.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

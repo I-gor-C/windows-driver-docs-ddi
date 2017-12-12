@@ -7,8 +7,8 @@ old-location: storage\storage_zone_condition.htm
 old-project: storage
 ms.assetid: 57FF3890-6B37-45EB-BB02-22B2ADDFAA90
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -44,6 +44,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -66,33 +67,41 @@ typedef enum _STORAGE_ZONE_CONDITION {
 
 N/A
 
+
 ### -field ZoneConditionEmpty
 
 N/A
+
 
 ### -field ZoneConditionImplicitlyOpened
 
 N/A
 
+
 ### -field ZoneConditionExplicitlyOpened
 
 N/A
+
 
 ### -field ZoneConditionClosed
 
 N/A
 
+
 ### -field ZoneConditionReadOnly
 
 N/A
+
 
 ### -field ZoneConditionFull
 
 N/A
 
+
 ### -field ZoneConditionOffline
 
 N/A
+
 
 ## -remarks
 
@@ -102,6 +111,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndissetoptionalhandlers.htm
 old-project: netvista
 ms.assetid: 97649f4f-942a-47fc-a541-6f160c8b4eb4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisSetOptionalHandlers
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ NDIS drivers can call the
   <b>NdisSetOptionalHandlers</b> function to set or change the entry points of driver functions.
 
 
+
 ## -syntax
 
 ````
@@ -58,29 +59,35 @@ NDIS_STATUS NdisSetOptionalHandlers(
 
 An NDIS handle that identifies a driver or driver instance.
      
+
 For a protocol driver, this is the 
      <i>NdisDriverHandle</i> value passed to the 
      <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a> function or the 
      <i>NdisBindingHandle</i> value obtained by calling the 
      <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+
 For a miniport driver, this is the 
      <i>NdisDriverHandle</i> value passed to the 
      <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function
+
 For a filter driver, this is the 
      <i>NdisDriverHandle</i> value passed to the 
      <a href="netvista.filtersetoptions">FilterSetOptions</a> function or the 
      <i>NdisFilterHandle</i> value passed to the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
+
 ### -param OptionalHandlers 
 
 A pointer to one of the following NDIS structures:
      
+
 <dl>
 <dd>
 
 <a href="netvista.ndis_client_chimney_offload_generic_characteristics">
         NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS</a>
+
 
 </dd>
 <dd>
@@ -88,11 +95,13 @@ A pointer to one of the following NDIS structures:
 <a href="netvista.ndis_client_chimney_offload_tcp_characteristics">
         NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_co_call_manager_optional_handlers">
         NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>
+
 
 </dd>
 <dd>
@@ -100,11 +109,13 @@ A pointer to one of the following NDIS structures:
 <a href="netvista.ndis_co_client_optional_handlers">
         NDIS_CO_CLIENT_OPTIONAL_HANDLERS</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_filter_partial_characteristics">
         NDIS_FILTER_PARTIAL_CHARACTERISTICS</a>
+
 
 </dd>
 <dd>
@@ -112,21 +123,25 @@ A pointer to one of the following NDIS structures:
 <a href="netvista.ndis_miniport_co_characteristics">
         NDIS_MINIPORT_CO_CHARACTERISTICS</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_miniport_pnp_characteristics">
         NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_miniport_ss_characteristics">NDIS_MINIPORT_SS_CHARACTERISTICS</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_ndk_provider_characteristics">NDIS_NDK_PROVIDER_CHARACTERISTICS</a>
+
 
 </dd>
 <dd>
@@ -134,11 +149,13 @@ A pointer to one of the following NDIS structures:
 <a href="netvista.ndis_protocol_co_characteristics">
         NDIS_PROTOCOL_CO_CHARACTERISTICS</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_provider_chimney_offload_generic_characteristics">
         NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS</a>
+
 
 </dd>
 <dd>
@@ -146,11 +163,13 @@ A pointer to one of the following NDIS structures:
 <a href="netvista.ndis_provider_chimney_offload_tcp_characteristics">
         NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_shared_memory_provider_characteristics">
         NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a>
+
 
 </dd>
 </dl>
@@ -179,6 +198,7 @@ A pointer to one of the following NDIS structures:
        applies.
 
  
+
 
 ## -remarks
 An NDIS driver can call 
@@ -290,11 +310,13 @@ For more information on the 4 chimney offload structures, see
     <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
     documentation</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -305,14 +327,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -323,6 +348,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -333,14 +359,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -408,5 +437,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetOptionalHandlers function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetOptionalHandlers function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

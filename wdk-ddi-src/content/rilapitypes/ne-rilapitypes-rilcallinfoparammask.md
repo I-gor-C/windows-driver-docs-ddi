@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 8e5935d9-382f-409d-a9ed-9381613b5d9c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLINFOPARAMMASK, RILCALLINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -144,6 +145,7 @@ typedef enum _RILCALLINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

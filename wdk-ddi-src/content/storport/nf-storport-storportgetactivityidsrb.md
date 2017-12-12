@@ -7,7 +7,7 @@ old-location: storage\storportgetactivityidsrb.htm
 old-project: storage
 ms.assetid: 63E956F5-C87C-45AA-BE16-2AD07F3BA050
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortGetActivityIdSrb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Retrieves the Event Tracing for Windows (ETW) activity ID associated with a request block.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ ULONG StorPortGetActivityIdSrb(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param Srb [in]
 
 The request block to retrieve the ETW activity ID for.
 
+
 ### -param ActivityId [out]
 
 A pointer to a caller-supplied GUID to receive the ETW activity ID.
+
 
 ## -returns
 A status value indicating the result of the notification. This can be one of these values:
@@ -81,6 +85,7 @@ A status value indicating the result of the notification. This can be one of the
 
  
 
+
 ## -remarks
 
 
@@ -89,6 +94,7 @@ A status value indicating the result of the notification. This can be one of the
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +105,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +126,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,9 +137,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any
+
 </td>
 </tr>
 </table>

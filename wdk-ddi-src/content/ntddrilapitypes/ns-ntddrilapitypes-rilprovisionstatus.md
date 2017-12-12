@@ -7,8 +7,8 @@ old-location: netvista\rilprovisionstatus.htm
 old-project: netvista
 ms.assetid: 5295f07d-9800-47f0-a827-515fcdad04eb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILPROVISIONSTATUS, RILPROVISIONSTATUS, *LPRILPROVISIONSTATUS
+ms.date: 12/8/2017
+ms.keywords: RILPROVISIONSTATUS, *LPRILPROVISIONSTATUS, RILPROVISIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef struct _RILPROVISIONSTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_GetRegistryKeyValue</b> function retrieves the device-instance-specific registry key value.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS USBCAMD_GetRegistryKeyValue(
 
 Handle to a valid and open device registry key.
 
+
 ### -param KeyNameString [in]
 
 Pointer to the string buffer describing the key type.
+
 
 ### -param KeyNameStringLength [in]
 
 Specifies the length, in characters, of <i>KeyNameString</i>.
 
+
 ### -param Data [in]
 
 Pointer to a caller-specified value or structure.
 
+
 ### -param DataLength [in]
 
 Specifies the length, in bytes, of the value or structure at <i>Data.</i>
+
 
 ## -returns
 <b>USBCAMD_GetRegistryKeyValue </b>returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
@@ -85,6 +91,7 @@ Specifies the length, in bytes, of the value or structure at <i>Data.</i>
 
  
 
+
 ## -remarks
 
 
@@ -93,6 +100,7 @@ Specifies the length, in bytes, of the value or structure at <i>Data.</i>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +111,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +122,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

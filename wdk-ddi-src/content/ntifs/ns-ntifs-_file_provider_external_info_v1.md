@@ -41,6 +41,7 @@ req.irql:
 The <b>FILE_PROVIDER_EXTERNAL_INFO_V1</b> structure defines metadata specific to files provided by WOF_PROVIDER_FILE. This provider gives efficient compression for data which will not be modified, such as executable files.  If the file is opened for write access, the file will be transparently decompressed.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 
 The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.
 
+
 ### -field Algorithm
 
 Specifies the compression algorithm that is used to compress this file. Currently defined algorithms are: 
+
 <ul>
 <li>FILE_PROVIDER_COMPRESSION_XPRESS4K: Indicates that the data for the file should be compressed in 4kb chunks with the XPress algorithm. This algorithm is designed to be computationally lightweight, and provides for rapid access to data.</li>
 <li>FILE_PROVIDER_COMPRESSION_LZX: Indicates that the data for the file should be compressed in 32kb chunks with the LZX algorithm. This algorithm is designed to be highly compact, and provides for small footprint for infrequently accessed data.</li>
@@ -72,6 +75,7 @@ Specifies the compression algorithm that is used to compress this file. Currentl
 
 Specifies flags for the operation. Reserved for future use, should be 0.
 
+
 ## -remarks
 
 
@@ -80,14 +84,17 @@ Specifies flags for the operation. Reserved for future use, should be 0.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_PROVIDER_EXTERNAL_INFO_V1 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

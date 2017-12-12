@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Secure Digital (SD) card
 
+## -description
 Overview of the Secure Digital (SD) card technology.
 
 To develop Secure Digital (SD) card, you need these headers:

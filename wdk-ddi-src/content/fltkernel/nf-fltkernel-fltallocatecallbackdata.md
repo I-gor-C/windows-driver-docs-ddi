@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>FltAllocateCallbackData</b> allocates a callback data structure that a minifilter driver can use to initiate an I/O request. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS FltAllocateCallbackData(
 
 Opaque instance pointer for the minifilter driver instance that is initiating the I/O operation. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in, optional]
 
 File object pointer to be used in the I/O operation. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param RetNewCallbackData [out]
 
 Pointer to a caller-allocated variable that receives the address of the newly allocated callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure. 
+
 
 ## -returns
 <b>FltAllocateCallbackData</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
@@ -74,6 +78,7 @@ Pointer to a caller-allocated variable that receives the address of the newly al
 <a href="ifsk.fltallocatecallbackdata">FltAllocateCallbackData</a> encountered a pool allocation failure when attempting to allocate the callback data structure. This is an error code. 
 
  
+
 
 ## -remarks
 A minifilter driver can call <b>FltAllocateCallbackData</b> to allocate a callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for an I/O operation initiated by the minifilter driver. 
@@ -120,11 +125,13 @@ Minifilter drivers should use <b>FltAllocateCallbackData</b>, <a href="ifsk.fltp
 
 When the callback data structure allocated by <b>FltAllocateCallbackData</b> is no longer needed, the caller is responsible for freeing it by calling <a href="ifsk.fltfreecallbackdata">FltFreeCallbackData</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +142,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +153,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -155,9 +164,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -208,5 +219,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateCallbackData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

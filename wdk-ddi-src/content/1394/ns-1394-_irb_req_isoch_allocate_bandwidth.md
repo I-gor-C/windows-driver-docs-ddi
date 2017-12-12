@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary in order for the Bus driver to carry out an <b>IsochAllocateBandwidth</b> request.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH {
 
 Specifies the bandwidth requested, in bytes per isochronous frame. If the host controller is configured to strip away the packet headers, the device driver does not need to include the packet header size in the number of bytes requested. The driver also does not need to round the value up to the nearest quadlet.
 
+
 ### -field fulSpeed
 
 Specifies the connection speed to use in allocating bandwidth. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
+
 <table>
 <tr>
 <th>Transfer Rate</th>
@@ -72,29 +75,36 @@ Specifies the connection speed to use in allocating bandwidth. The possible spee
 <tr>
 <td>
 SPEED_FLAGS_100
+
 </td>
 <td>
 100 Mb/s
+
 </td>
 </tr>
 <tr>
 <td>
 SPEED_FLAGS_200
+
 </td>
 <td>
 200 Mb/s
+
 </td>
 </tr>
 <tr>
 <td>
 SPEED_FLAGS_400
+
 </td>
 <td>
 400 Mb/s
+
 </td>
 </tr>
 </table>
  
+
 <div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
 <div> </div>
 
@@ -102,19 +112,23 @@ SPEED_FLAGS_400
 
 Specifies the handle to use to refer to the bandwidth resource. The caller can set the IRB_FLAG_ALLOW_REMOTE_FREE flag in <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537350">IRB</a> structure to indicate that the system should free the memory allocated for this handle. If caller does not set this flag, then caller will have to free the bandwidth handle. 
 
+
 ### -field BytesPerFrameAvailable
 
 Specifies the bytes per frame that are available after the allocation attempt. Drivers should not rely on this bandwidth being available, since another device may allocate or deallocate bandwidth at any time. The bus driver fills in this member, even if the request fails.
 
+
 ### -field SpeedSelected
 
 Specifies the actual speed selected in allocating bandwidth. The value is one of SPEED_FLAGS_xxx (see the <b>fulSpeed</b> member description above).
+
 <div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
 <div> </div>
 
 ### -field nBandwidthUnitsRequired
 
 This is a pre-calculated value.
+
 
 ## -remarks
 
@@ -124,6 +138,7 @@ This is a pre-calculated value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

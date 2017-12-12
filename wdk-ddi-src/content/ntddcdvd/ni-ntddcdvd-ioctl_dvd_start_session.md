@@ -7,8 +7,8 @@ old-location: storage\ioctl_dvd_start_session.htm
 old-project: storage
 ms.assetid: a4010756-b230-4e49-85a4-498f5ebcf785
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 12/8/2017
+ms.keywords: DVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,28 +41,29 @@ req.irql:
 
 Returns an authentication grant ID (AGID) as a DVD session ID, which a caller must pass to the device in all subsequent operations in a DVD session.
 
+
+
 Returns an authentication grant ID (AGID) as a DVD session ID, which a caller must pass to the device in all subsequent operations in a DVD session.
+
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
-NoneNone
+None.
 
 
 ### -input-buffer-length
+None.
 
-<text></text>
 
 ### -output-buffer
-<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
-The driver returns an integer authentication grant ID of type DVD_SESSION_ID in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The driver returns an integer authentication grant ID of type DVD_SESSION_ID in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer. 
+The driver returns an integer authentication grant ID of type DVD_SESSION_ID in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
 
 
 ### -output-buffer-length
+Length of a <a href="storage.dvd_session_id">DVD_SESSION_ID</a>.
 
-<text></text>
 
 ### -in-out-buffer
 
@@ -73,8 +74,8 @@ The driver returns an integer authentication grant ID of type DVD_SESSION_ID in 
 <text></text>
 
 ### -status-block
-<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
-The <b>Information</b> field is set to <b>sizeof</b>(DVD_SESSION_ID). The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.The <b>Information</b>Information field is set to <b>sizeof</b>sizeof(DVD_SESSION_ID). The <b>Status</b>Status field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.
+I/O Status block
+The <b>Information</b> field is set to <b>sizeof</b>(DVD_SESSION_ID). The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.
 
 
 ## -remarks
@@ -85,6 +86,7 @@ The <b>Information</b> field is set to <b>sizeof</b>(DVD_SESSION_ID). The <b>Sta
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

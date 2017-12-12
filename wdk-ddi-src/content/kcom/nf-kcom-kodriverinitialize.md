@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <i>This function is intended for internal use only.</i>
+
 The <b>KoDriverInitialize</b> function initializes a driver object to handle the kernel streaming interface. 
+
 
 
 ## -syntax
@@ -59,16 +61,20 @@ NTSTATUS KoDriverInitialize(
 
 Pointer to a driver object to initialize that handles the kernel streaming interface.
 
+
 ### -param RegistryPathName [in]
 
 Pointer to the registry path that is associated with the driver object.
+
 
 ### -param CreateObjectHandler [in]
 
 Pointer to a function used to create new objects.
 
+
 ## -returns
 Returns STATUS_SUCCESS if successful. Otherwise, it returns a memory allocation error.
+
 
 ## -remarks
 
@@ -78,6 +84,7 @@ Returns STATUS_SUCCESS if successful. Otherwise, it returns a memory allocation 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +95,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +106,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

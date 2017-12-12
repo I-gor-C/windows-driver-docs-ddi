@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddress.htm
 old-project: netvista
 ms.assetid: 0a1f9e89-df17-4802-9685-06a2eedbc0e5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSUBADDRESS, RILSUBADDRESS, *LPRILSUBADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILSUBADDRESS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

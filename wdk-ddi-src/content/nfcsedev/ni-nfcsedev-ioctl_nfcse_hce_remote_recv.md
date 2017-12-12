@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 398AFAEF-D0A9-4BBE-8884-1854C95AA878
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
+ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,17 +41,21 @@ req.irql:
 Either returns the next data buffer available, or if there are no more buffered data, the request shall stay pending until an APDU buffer is available for reading. The data buffer shall then be returned to the caller. Note that the caller must allocate an output buffer large enough to hold the largest APDU that has been received + 4 bytes overhead.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 None
+
 
 ### -output-buffer
 
                 A <b>DWORD</b> indicating the size of the <a href="nfpdrivers._secure_element_hce_data_packet">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> structure itself. 
+
 
 ### -output-buffer-length
 
@@ -70,6 +74,7 @@ I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
 
  
+
 
 ## -remarks
 The following are requirements that the driver must adhere to.
@@ -90,11 +95,13 @@ The following are requirements that the driver must adhere to.
 </ul>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

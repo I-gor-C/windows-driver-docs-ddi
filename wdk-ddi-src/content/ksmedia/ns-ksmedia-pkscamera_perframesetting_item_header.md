@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: A550E674-50CA-4956-8422-16875E29D04B
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSCAMERA_PERFRAMESETTING_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_ITEM_HEADER, *PKSCAMERA_PERFRAMESETTING_ITEM_HEADER
+ms.keywords: PKSCAMERA_PERFRAMESETTING_ITEM_HEADER, *PKSCAMERA_PERFRAMESETTING_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_ITEM_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains the header information for a per-frame settings item.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 The size of this header and the item payload that follows.
 
+
 ### -field Type
 
 This contains a <a href="..\ksmedia\ne-ksmedia-kscamera_perframesetting_item_type.md">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a> structure.
 
+
 ### -field Flags
 
 This is any one of the capability flags reported in the <a href="stream.kscamera_perframesetting_cap_item_header">KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER</a> Flags field.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ This is any one of the capability flags reported in the <a href="stream.kscamera
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

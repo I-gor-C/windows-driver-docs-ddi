@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: cd8090b1-47d7-4d82-86b3-757b0642c5fe
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _AVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB
+ms.keywords: _AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The AVC_MULTIFUNC_IRB structure contains other AV/C related structures in a union.
 
 
+
 ## -syntax
 
 ````
@@ -68,54 +69,67 @@ typedef struct _AVC_MULTIFUNC_IRB {
 
  I/O Request Block (IRB) header structure where a function number is stored.
 
+
 ### -field PinCount
 
 Used with AVC_FUNCTION_GET_PIN_COUNT.
+
 
 ### -field PinDescriptor
 
 Used with AVC_FUNCTION_GET_PIN_DESCRIPTOR.
 
+
 ### -field PreConnectInfo
 
 Used with AVC_FUNCTION_GET_CONNECT_INFO.
+
 
 ### -field SetConnectInfo
 
 Used with AVC_FUNCTION_SET_CONNECT_INFO.
 
+
 ### -field PinId
 
 Used with AVC_FUNCTION_ACQUIRE, <b>AVC_FUNCTION_RELEASE</b> and AVC_FUNCTION_CLR_CONNECTINFO.
+
 
 ### -field ExtPlugCounts
 
 Used with AVC_FUNCTION_GET_EXT_PLUG_COUNTS.
 
+
 ### -field UniqueID
 
 Used with AVC_FUNCTION_GET_UNIQUE_ID.
+
 
 ### -field PeerLocator
 
 Used with AVC_FUNCTION_PEER_DO_LOCATOR.
 
+
 ### -field PeerList
 
 Used with AVC_FUNCTION_PEER_DO_LIST.
+
 
 ### -field Subunits
 
 Used with AVC_FUNCTION_GET_SUBUNIT_INFO.
 
+
 ## -remarks
 The AVC_MULTIFUNC_IRB structure used with a variety of AV/C functionality. Depending on the functionality described in the AVC_IRB header, the matching, respective structure in the union is used.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -195,5 +209,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_MULTIFUNC_IRB structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

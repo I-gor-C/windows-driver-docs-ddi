@@ -7,8 +7,8 @@ old-location: storage\stor_pofx_component.htm
 old-project: storage
 ms.assetid: D44FF0C7-D82C-4CDD-A5F9-BBD8257C6771
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STOR_POFX_COMPONENT, *PSTOR_POFX_COMPONENT, STOR_POFX_COMPONENT
+ms.date: 12/8/2017
+ms.keywords: _STOR_POFX_COMPONENT, STOR_POFX_COMPONENT, *PSTOR_POFX_COMPONENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>STOR_POFX_COMPONENT</b> structure describes the power state attributes of a storage device component.
 
 
+
 ## -syntax
 
 ````
@@ -62,25 +63,31 @@ typedef struct _PO_FX_COMPONENT {
 
 The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V1</b>.
 
+
 ### -field Size
 
 The size of this structure. Set this value to <b>STOR_POFX_COMPONENT_SIZE</b>.
+
 
 ### -field FStateCount
 
 The number of elements in the array that is pointed to by the <b>FStates</b> member. Additionally, this member specifies the number of functional power states (F-state) that the component supports. A component must support at least one F-state (F0).
 
+
 ### -field DeepestWakeableIdleState
 
 The index of the deepest F-state from which the component can wake. Specify 0 for F0, 1 for F1, and so on. This index must be less than <b>FStateCount</b>.
+
 
 ### -field Id
 
 A component ID that uniquely identifies this component with respect to the other components in the device. The driver should specify a nonzero value for this member if the power management framework (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. The component IDs supported by Storport are STORPORT_POFX_ADAPTER_GUID and STORPORT_POFX_LUN_GUID.
 
+
 ### -field FStates
 
 A array of  <a href="storage.stor_pofx_component_idle_state">STOR_POFX_COMPONENT_IDLE_STATE</a> structures. The length of this array is specified by the <b>FStateCount</b> member. Each array element specifies the attributes of an F-state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on. When more than one idle state structure is required, the additional structures are allocated at the end of the <b>STOR_ POFX_COMPONENT</b> structure and the <b>FStateCount</b> is set to 1, the value of ANYSIZE_ARRAY, plus the count of the additional structures.
+
 
 ## -remarks
 When a miniport driver registers a device with the Storport power management framework, the miniport driver supplies a <a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a> structure that holds the registration information. This structure contains an array of <b>STOR_ POFX_COMPONENT</b> structures. The elements in this array describe the power attributes of the individual components in the device. The power settings of these components are managed based on the information in this array.
@@ -93,19 +100,23 @@ For a adapter device component, a maximum of one F-state (F0) is permitted. For 
 
 For a unit device component, if an additional F-state is included in the <b>FStates</b> array, the size member remains set to <b>STOR_POFX_COMPONENT_SIZE</b> and does not include the size of the additional <a href="storage.stor_pofx_component_idle_state">STOR_POFX_COMPONENT_IDLE_STATE</a> structure. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +139,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POFX_COMPONENT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POFX_COMPONENT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

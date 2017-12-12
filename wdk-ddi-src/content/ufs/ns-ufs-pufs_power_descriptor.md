@@ -7,8 +7,8 @@ old-location: storage\ufs_power_descriptor.htm
 old-project: storage
 ms.assetid: FCF9DCD1-2C04-47E3-97C5-7ACC28B28C6C
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: PUFS_POWER_DESCRIPTOR, UFS_POWER_DESCRIPTOR, *PUFS_POWER_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: PUFS_POWER_DESCRIPTOR, *PUFS_POWER_DESCRIPTOR, UFS_POWER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>UFS_POWER_DESCRIPTOR </b>contains information about the power capabilities and power states of the device.
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,29 @@ typedef struct _UFS_POWER_DESCRIPTOR {
 
 Specifies the length, in bytes, of this descriptor.
 
+
 ### -field bDescriptorIDN
 
 Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_POWER_IDN</b>.
+
 
 ### -field wActiveICCLevelsVCC
 
 Specifies the maximum VCC current value for
 each UFS_bActiveICCLevel, based on the index value.
 
+
 ### -field wActiveICCLevelsVCCQ
 
 Specifies the maximum VCCQ current value for
 each UFS_bActiveICCLevel, based on the index value.
 
+
 ### -field wActiveICCLevelsVCCQ2
 
 Specifies the maximum VCCQ current value for
 each UFS_bActiveICCLevel, based on the index value.
+
 
 ## -remarks
 
@@ -88,22 +94,27 @@ each UFS_bActiveICCLevel, based on the index value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

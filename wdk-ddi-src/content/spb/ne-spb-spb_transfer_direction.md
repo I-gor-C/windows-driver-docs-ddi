@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SPB_TRANSFER_DIRECTION</b> enumeration describes the direction (read or write) of a single transfer in an <a href="https://msdn.microsoft.com/7415DB28-5E93-4F47-B169-7C652969D4C7">I/O transfer sequence</a>.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef enum  {
 
 The data transfer direction is undefined.
 
+
 ### -field SpbTransferDirectionFromDevice
 
 The data transfer direction is from the device to system memory (read from device).
+
 
 ### -field SpbTransferDirectionToDevice
 
 The data transfer direction is from system memory to the device (write to device).
 
+
 ### -field SpbTransferDirectionMax
 
 Reserved for use by the operating system.
+
 
 ## -remarks
 The values in this enumeration indicate the directions of the individual transfers in an I/O transfer sequence. The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a> structure that specifies a list of transfers for the sequence. Each transfer is described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structure that contains the transfer parameters, which include the transfer direction. The transfer direction is <b>SpbTransferDirectionFromDevice</b> for a read operation, and is <b>SpbTransferDirectionToDevice</b> for a write operation.
@@ -81,19 +86,23 @@ In addition, <b>SpbRequestGetParameters</b> retrieves a position value that indi
 
 A lock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">IOCTL_SPB_LOCK_CONTROLLER</a>) request has no previous direction. Similarly, an I/O control request that is passed to the <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function has no previous direction. For either of these requests, the previous direction value retrieved by <b>SpbRequestGetParameters</b> is <b>SpbTransferDirectionNone</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_DIRECTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: storage\volume_physical_offsets.htm
 old-project: storage
 ms.assetid: 876cb283-ce0d-44ed-b515-d4ee31089b88
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _VOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS, *PVOLUME_PHYSICAL_OFFSETS
+ms.date: 12/8/2017
+ms.keywords: _VOLUME_PHYSICAL_OFFSETS, *PVOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The VOLUME_PHYSICAL_OFFSETS structure contains an array of physical offsets and accompanying physical disk numbers and is used with <a href="..\ntddvol\ni-ntddvol-ioctl_volume_logical_to_physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a> to request a series of pairs of physical offsets and disk numbers that correspond to a single logical offset. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _VOLUME_PHYSICAL_OFFSETS {
 
 Contains the number of physical offsets returned by the call to <a href="..\ntddvol\ni-ntddvol-ioctl_volume_logical_to_physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>. 
 
+
 ### -field PhysicalOffset
 
 Contains an array of structures of type <a href="storage.volume_physical_offset">VOLUME_PHYSICAL_OFFSET</a>. Each element of the array contains a pair consisting of a physical disk number and an accompanying physical offset &lt;disk number, disk offset&gt;. 
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Contains an array of structures of type <a href="storage.volume_physical_offset"
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,5 +95,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20VOLUME_PHYSICAL_OFFSETS structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20VOLUME_PHYSICAL_OFFSETS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: display\d3dkmdt_wire_format_and_preference.htm
 old-project: display
 ms.assetid: 24CC6A10-6462-4681-B340-E887B679F456
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+ms.date: 12/8/2017
+ms.keywords: _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Holds information about the preferred pixel encoding format.
 
 
+
 ## -syntax
 
 ````
@@ -64,29 +65,36 @@ typedef union _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE {
 
 Functions as it has in previous releases, but using only 2 bits.
 
+
 ### -field Rgb
 
 UINT describing supported/requested pixel encoding using RGB sample format.
+
 
 ### -field YCbCr444
 
 UINT describing supported/requested pixel encoding using YcbCr 4:4:4 sample format.
 
+
 ### -field YCbCr422
 
 UINT describing supported/requested pixel encoding using YcbCr 4:2:2 sample format.
+
 
 ### -field YCbCr420
 
 UINT describing supported/requested pixel encoding using YcbCr 4:2:0 sample format.
 
+
 ### -field Intensity
 
 UINT describing supported/requested pixel encoding using intensity only.
 
+
 ### -field Value
 
 UINT used to operate on the combined bit-fields.
+
 
 ## -remarks
 The five standard color sample formats for pixel transmission are exposed separately to allow the driver to report capabilities individually but it is expected that the vast majority of display devices will not support all sample formats as input, in particular support of intensity only signals is likely restricted to monochrome displays which should therefore not support color sample formats.
@@ -96,11 +104,13 @@ During mode enumeration via EnumVidPnCofuncModality, the driver should set value
 When SetTimingsFromVidPn is called, one of these fields will indicate the pixel encoding and sample format to be applied.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

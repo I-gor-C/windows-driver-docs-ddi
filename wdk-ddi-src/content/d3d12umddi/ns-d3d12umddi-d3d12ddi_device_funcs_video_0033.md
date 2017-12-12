@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-device-funcs-video-0033.htm
 old-project: display
 ms.assetid: faaaf6e5-9f4d-4051-a656-92c1394cda24
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_DEVICE_FUNCS_VIDEO_0033, D3D12DDI_DEVICE_FUNCS_VIDEO_0033
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The device functions of video.
+
 
 
 ## -syntax
@@ -66,41 +68,51 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0033 {
 
 Get caps.
 
+
 ### -field pfnCalcPrivateVideoDecoderSize
 
 Calculates the private video decoder size.
+
 
 ### -field pfnCreateVideoDecoder
 
 Creates a video decoder.
 
+
 ### -field pfnDestroyVideoDecoder
 
 Destroys the video decoder.
+
 
 ### -field pfnCalcPrivateVideoDecoderHeapSize
 
 Calculates the private video decoder heap size.
 
+
 ### -field pfnCreateVideoDecoderHeap
 
 Creates the video decoder heap.
+
 
 ### -field pfnDestroyVideoDecoderHeap
 
 Destroys the video decoder heap.
 
+
 ### -field pfnCalcPrivateVideoProcessorSize
 
 Calculates the private video processor size.
+
 
 ### -field pfnCreateVideoProcessor
 
 Creates the video processor.
 
+
 ### -field pfnDestroyVideoProcessor
 
 Destroys the video processor.
+
 
 ## -remarks
 
@@ -110,6 +122,7 @@ Destroys the video processor.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_openresourcefromnthandle.htm
 old-project: display
 ms.assetid: 3f595816-29b5-4efc-a00c-77597dd9fa48
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_OPENRESOURCEFROMNTHANDLE, D3DKMT_OPENRESOURCEFROMNTHANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes information that is required to open a shared resource from an NT handle to the process. The shared resource can be a set of allocations, a keyed mutex, or a synchronization object.
 
 
+
 ## -syntax
 
 ````
@@ -70,64 +71,82 @@ typedef struct _D3DKMT_OPENRESOURCEFROMNTHANDLE {
 
 [in] A D3DKMT_HANDLE data type that represents the device.
 
+
 ### -field hNtHandle
 
 [in] An NT handle to the process.
+
 
 ### -field NumAllocations
 
 [in] The number of allocations associated with the resource.
 
+
 ### -field pOpenAllocationInfo2
 
 [in] This member is reserved and should be set to zero.
+
 
 ### -field PrivateRuntimeDataSize
 
 [in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
 
+
 ### -field pPrivateRuntimeData
 
 [in] A caller-supplied buffer where the runtime private data associated with this resource will be copied to.
+
 
 ### -field ResourcePrivateDriverDataSize
 
 [in] The size, in bytes, of the  buffer pointed to by the <b>pResourcePrivateDriverData</b> member.
 
+
 ### -field pResourcePrivateDriverData
 
 [in] A caller-supplied buffer where the driver private data associated with the resource will be copied to.
 
+
 ### -field TotalPrivateDriverDataBufferSize
 
 [in] The size, in bytes, of the buffer pointed to by the <b>pTotalPrivateDriverDataBuffer</b> member.
+
 [out] The size, in bytes, of  the data written to <b>pTotalPrivateDriverDataBuffer</b>.
+
 
 ### -field pTotalPrivateDriverDataBuffer
 
 [in] A pointer to a caller-supplied buffer where the driver private data will be stored.
 
+
 ### -field hResource
 
 [out] A handle to the resource in this process.
+
 
 ### -field hKeyedMutex
 
 [out] A handle to the keyed mutex in this process.
 
+
 ### -field pKeyedMutexPrivateRuntimeData
 
 [in] A buffer that contains initial private data.
+
 The data in this buffer will be copied only if the keyed mutex does not already have private data.
+
 If this member has a value of <b>NULL</b>, the value of the <b>KeyedMutexPrivateRuntimeDataSize</b> member must be zero.
+
 
 ### -field KeyedMutexPrivateRuntimeDataSize
 
 [in] The size, in bytes, of the buffer pointed to by the <b>pKeyedMutexPrivateRuntimeData</b> member.
 
+
 ### -field hSyncObject
 
 [out] A handle to the synchronization object in this process.
+
 
 ## -remarks
 
@@ -137,22 +156,27 @@ If this member has a value of <b>NULL</b>, the value of the <b>KeyedMutexPrivate
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -165,7 +189,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_openallocationinfo2">D3DDDI_OPENALLOCATIONINFO2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439280">D3DDDI_OPENALLOCATIONINFO2</a>
 </dt>
 <dt>
 <a href="display.d3dkmtopennthandlefromname">D3DKMTOpenNtHandleFromName</a>
@@ -175,5 +199,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_OPENRESOURCEFROMNTHANDLE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_OPENRESOURCEFROMNTHANDLE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

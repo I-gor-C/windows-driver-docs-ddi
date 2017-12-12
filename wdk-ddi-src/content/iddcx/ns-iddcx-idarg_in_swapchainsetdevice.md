@@ -7,7 +7,7 @@ old-location: display\idarg_in_swapchainsetdevice.htm
 old-project: display
 ms.assetid: afd52391-5b18-4b86-9d35-2d9ed3e20256
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_SWAPCHAINSETDEVICE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the device that will process the swap chain.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct IDARG_IN_SWAPCHAINSETDEVICE {
                      The DXGI device used to process swap chain frames.
                  
 
+
 ## -remarks
 
 
@@ -67,6 +69,7 @@ typedef struct IDARG_IN_SWAPCHAINSETDEVICE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

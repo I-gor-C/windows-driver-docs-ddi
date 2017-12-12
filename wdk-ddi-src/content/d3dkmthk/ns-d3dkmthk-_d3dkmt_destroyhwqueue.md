@@ -7,7 +7,7 @@ old-location: display\d3dkmt_destroyhwqueue.htm
 old-project: display
 ms.assetid: 076B47F5-8312-43E3-AE75-D4DDA8C0A181
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_DESTROYHWQUEUE, D3DKMT_DESTROYHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure holding information to destroy a hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _D3DKMT_DESTROYHWQUEUE {
 Handle to the hardware queue to be destroyed.
 
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ Handle to the hardware queue to be destroyed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Ksi.h header
 
+## -description
 
 This header is used by Streaming media devices. For more information, see
 - [Streaming media devices](../_stream/index.md)
@@ -18,4 +23,4 @@ Ksi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [KSPROPERTY_SERVICE enumeration](ne-ksi-ksproperty-service.md) | . |
+| [KSPROPERTY_SERVICE enumeration](ne-ksi-ksproperty_service.md) | . |

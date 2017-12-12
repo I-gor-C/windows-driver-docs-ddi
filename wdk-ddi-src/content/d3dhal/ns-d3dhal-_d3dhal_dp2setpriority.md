@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2setpriority.htm
 old-project: display
 ms.assetid: 5101c150-b294-4bf4-b33c-f0fe0f54d727
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2SETPRIORITY, D3DHAL_DP2SETPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DHAL_DP2SETPRIORITY structure is used to inform the driver of the priority of the texture specified by the handle <b>dwDDDestSurface</b>.
 
 
+
 ## -syntax
 
 ````
@@ -57,20 +58,24 @@ typedef struct _D3DHAL_DP2SETPRIORITY {
 
 Specifies the handle of the texture. 
 
+
 ### -field dwPriority
 
 Specifies the priority of the <b>dwDDDestSurface</b> texture. A texture's priority value can be set anywhere in the range from 0 to 0xFFFFFFFF.
+
 
 ## -remarks
 Drivers are notified of handles at texture creation time. The driver can expect to receive priority notifications only for driver-managed textures.
 
 Priorities determine when managed textures are to be evicted from memory. A texture assigned a low priority is evicted before a texture with a high priority. If two textures have the same priority, the texture that was used more recently is kept in memory; the other texture is evicted. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

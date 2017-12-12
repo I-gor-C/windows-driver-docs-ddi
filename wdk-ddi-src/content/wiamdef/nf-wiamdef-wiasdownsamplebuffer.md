@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasDownSampleBuffer</b> function takes in a buffer of DWORD-aligned pixel data and downsamples it (produces image data of lower resolution) to the specified size and resolution.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ HRESULT _stdcall wiasDownSampleBuffer(
 ### -param lFlags 
 
 Specifies a set of flags that determine the behavior of this function. Currently, only the following flag is defined.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -65,20 +67,25 @@ Specifies a set of flags that determine the behavior of this function. Currently
 <tr>
 <td>
 WIAS_GET_DOWNSAMPLED_SIZE_ONLY
+
 </td>
 <td>
 Do not copy the downsampled data to the destination buffer. Instead, set the following members of the <a href="image.wias_down_sample_info">WIAS_DOWN_SAMPLE_INFO</a> structure: <b>ulDownSampledHeight</b>, <b>ulDownSampleWidth</b>, <b>ulAlignedHeight</b>, <b>ulAlignedWidth</b>.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param pInfo [in, out]
 
 Pointer to the <a href="image.wias_down_sample_info">WIAS_DOWN_SAMPLE_INFO</a> structure that contains all of the information needed for the downsampling operation.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).
+
 
 ## -remarks
 The <b>wiasDownSampleBuffer</b> function can be used in either of the following two ways:
@@ -123,11 +130,13 @@ Because this function is not able to produce partial output lines, the number of
 
 More generally, if the original image has a resolution of R<i>in</i> dpi, and is to be scaled down to an image with a resolution of R<i>out</i> dpi, the scale-down factor is R<i>in</i> / R<i>out</i>, and the number of lines in the input buffer should be a multiple of R<i>in</i> / R<i>out</i>. If the scan head reaches the last band of the original image, and there are too few scan lines in the input buffer to produce an output line, pad the input buffer so that it contains the required number of data lines. Failure to do so causes unpredictable results, and can even result in a driver crash.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -138,14 +147,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +168,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -166,6 +179,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -182,5 +196,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasDownSampleBuffer function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

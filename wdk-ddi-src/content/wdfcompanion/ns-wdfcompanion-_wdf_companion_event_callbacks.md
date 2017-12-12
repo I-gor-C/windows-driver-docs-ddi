@@ -7,7 +7,7 @@ old-location: wdf\wdf_companion_event_callbacks.htm
 old-project: wdf
 ms.assetid: 6a9c5420-1847-4145-aea5-9e9c58d86ea1
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_COMPANION_EVENT_CALLBACKS, *PWDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 For internal use only.
+
 
 
 ## -syntax
@@ -80,14 +81,17 @@ typedef struct _WDF_COMPANION_EVENT_CALLBACKS {
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

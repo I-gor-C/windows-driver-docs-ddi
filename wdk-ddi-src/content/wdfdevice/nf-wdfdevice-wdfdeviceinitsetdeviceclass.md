@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdeviceclass.htm
 old-project: wdf
 ms.assetid: c87a8368-3804-4a07-92c8-65a453d0808f
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDeviceInitSetDeviceClass
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfDeviceInitSetDeviceClass</b> method specifies a GUID that identifies the device's <a href="devinst.device_setup_classes">device setup class</a>. 
+
 
 
 ## -syntax
@@ -59,14 +61,17 @@ VOID WdfDeviceInitSetDeviceClass(
 
 A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
+
 ### -param DeviceClassGuid [in]
 
 Pointer to a GUID that identifies a section of the registry containing possible overrides for the <i>DefaultSDDLString</i>, <i>DeviceType</i>, <i>DeviceCharacteristics</i>, and <i>Exclusive</i> parameters.
+
 <div class="alert"><b>Note</b>    You should always specify a custom class GUID. You should not specify an existing class GUID. If you specify an existing class GUID, other drivers that attempt to specify that existing class GUID might fail to install or might install with incorrect security settings.</div>
 <div> </div>
 
 ## -returns
 None
+
 
 ## -remarks
 The registry can contain values that override the values that a driver specifies when it calls <a href="wdf.wdfdeviceinitassignsddlstring">WdfDeviceInitAssignSDDLString</a>, <a href="wdf.wdfdeviceinitsetdevicetype">WdfDeviceInitSetDeviceType</a>, <a href="wdf.wdfdeviceinitsetcharacteristics">WdfDeviceInitSetCharacteristics</a>, and <a href="wdf.wdfdeviceinitsetexclusive">WdfDeviceInitSetExclusive</a>. The driver can call <b>WdfDeviceInitSetDeviceClass</b> to specify a GUID that identifies the section of the registry that contains the override values.
@@ -81,11 +86,13 @@ For more information about calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate
 
 The following code example sets a device's setup class to the system device class.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,14 +103,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +124,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,14 +135,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_childdeviceinitapi">ChildDeviceInitAPI</a>, <a href="devtest.kmdf_controldeviceinitapi">ControlDeviceInitAPI</a>, <a href="devtest.kmdf_deviceinitapi">DeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_pdodeviceinitapi">PdoDeviceInitAPI</a>

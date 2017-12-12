@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_SetIsoPipeState</b> service permits the camera minidriver to control the streaming state on the isochronous pipe.
 
 
+
 ## -prototype
 
 ````
@@ -61,9 +62,11 @@ NTSTATUS APIENTRY USBCAMD_SetIsoPipeState(
 
 Pointer to device-specific context.
 
+
 ### -param PipeStateFlags [in]
 
 Specifies the isochronous pipe state. This argument should be set to either of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -72,21 +75,26 @@ Specifies the isochronous pipe state. This argument should be set to either of t
 <tr>
 <td>
 USBCAMD_STOP_STREAM
+
 </td>
 <td>
 This flags indicates to stop streaming.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_START_STREAM
+
 </td>
 <td>
 This flags indicates to start streaming.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 <b>USBCAMD_SetIsoPipeState</b> returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
@@ -102,6 +110,7 @@ This flags indicates to start streaming.
 
  
 
+
 ## -remarks
 Note that the streaming state on the isochronous pipe works differently from the streaming state in the stream class and in Microsoft DirectShow. It is possible to stop the isochronous pipe from streaming for a short period while the overall video capture graph is still in a Run state.
 
@@ -111,11 +120,13 @@ Using this function does not enable you to change the alternate setting within t
 
 <b>USBCAMD_SetIsoPipeState</b> is not available in USBCAMD version 1.0.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +137,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,5 +154,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_SetIsoPipeState routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

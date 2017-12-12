@@ -41,6 +41,7 @@ req.irql: Developers should code this function to operate at either IRQL = DISPA
 The ACL_MODE enumeration type is used to list the possible states of an ACL connection.
 
 
+
 ## -syntax
 
 ````
@@ -64,56 +65,69 @@ typedef enum _ACL_MODE {
 
 This value indicates the ACL is in an active state.
 
+
 ### -field ACL_MODE_HOLD
 
 This value indicates the ACL is in a hold state.
+
 
 ### -field ACL_MODE_SNIFF
 
 This value indicates the ACL is in a sniffed state.
 
+
 ### -field ACL_MODE_PARK
 
 This value indicates the ACL is in a parked state.
+
 
 ### -field ACL_MODE_ENTER_ACTIVE
 
 This value indicates the ACL is entering an active state.
 
+
 ### -field ACL_MODE_ENTER_HOLD
 
 This value indicates the ACL is entering a hold state.
+
 
 ### -field ACL_MODE_ENTER_SNIFF
 
 This value indicates the ACL is entering a sniffed state.
 
+
 ### -field ACL_MODE_ENTER_PARK
 
 This value indicates the ACL is entering a parked state.
 
+
 ### -field ACL_DISCONNECTED
 
 This value indicates the ACL is disconnected.
+
 
 ## -remarks
 The 
     <a href="..\bthddi\ns-bthddi-_brb_acl_get_mode.md">_BRB_ACL_GET_MODE</a> structure uses this
     enumeration.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +144,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20ACL_MODE enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

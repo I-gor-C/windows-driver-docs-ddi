@@ -7,8 +7,8 @@ old-location: wdf\iwdfdeviceinitialize.htm
 old-project: wdf
 ms.assetid: a776069c-0cbb-4ae9-bf6b-1d300dbcec34
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IWDFDeviceInitialize</b> interface is a helper interface that the framework supplies as an input parameter to the driver's <a href="wdf.idriverentry_ondeviceadd">IDriverEntry::OnDeviceAdd</a> method.
+
 
 
 ## -inheritance
@@ -66,6 +68,7 @@ The <a href="wdf.iwdfdeviceinitialize_setpowerpolicyownership">SetPowerPolicyOwn
 
  
 
+
 ## -members
 The <b>IWDFDeviceInitialize</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -79,6 +82,7 @@ The <b>IWDFDeviceInitialize</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose">AutoForwardCreateCleanupClose</a> method controls when create, cleanup, and close notifications are forwarded to the next lower driver in the device stack.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -87,6 +91,7 @@ The <a href="wdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose">AutoForward
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdeviceinitialize_getpnpcapability">GetPnpCapability</a> method determines the state of the specified  Plug and Play (PnP) capability.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -95,6 +100,7 @@ The <a href="wdf.iwdfdeviceinitialize_getpnpcapability">GetPnpCapability</a> met
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice_retrievedeviceinstanceid">RetrieveDeviceInstanceId</a> method retrieves the identifier of an instance of a device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -103,6 +109,7 @@ The <a href="wdf.iwdfdevice_retrievedeviceinstanceid">RetrieveDeviceInstanceId</
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyStore</a> method retrieves a device property store that clients can read and write device properties through.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -111,6 +118,7 @@ The <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyS
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdeviceinitialize_setfilter">SetFilter</a> method sets the property that enables a device as a filter device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -119,6 +127,7 @@ The <a href="wdf.iwdfdeviceinitialize_setfilter">SetFilter</a> method sets the p
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdeviceinitialize_setlockingconstraint">SetLockingConstraint</a> method sets the synchronization (or locking) model for callback functions into the driver.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -127,6 +136,7 @@ The <a href="wdf.iwdfdeviceinitialize_setlockingconstraint">SetLockingConstraint
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdeviceinitialize_setpnpcapability">SetPnpCapability</a> method sets the specified Plug and Play (PnP) capability of a device to the specified state.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -135,6 +145,7 @@ The <a href="wdf.iwdfdeviceinitialize_setpnpcapability">SetPnpCapability</a> met
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdeviceinitialize_setpowerpolicyownership">SetPowerPolicyOwnership</a> method sets the ownership of the power policy to a driver or removes ownership from the driver.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose">AutoForwardCreateCleanupClose</a> method controls when create, cleanup, and close notifications are forwarded to the next lower driver in the device stack.
@@ -155,16 +166,19 @@ The <a href="wdf.iwdfdeviceinitialize_setpowerpolicyownership">SetPowerPolicyOwn
 
  
 
+
 ## -remarks
  The driver calls the methods of this interface to set the properties for a new device object and passes this interface as an input to the <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a> method to create the new device object.
 
 Do not use  this interface after calling <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -175,22 +189,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -201,6 +220,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

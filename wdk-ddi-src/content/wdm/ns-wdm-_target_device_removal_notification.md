@@ -7,7 +7,7 @@ old-location: kernel\target_device_removal_notification.htm
 old-project: kernel
 ms.assetid: a14656ca-131a-4722-aae7-041eddc8517a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _TARGET_DEVICE_REMOVAL_NOTIFICATION, TARGET_DEVICE_REMOVAL_NOTIFICATION, *PTARGET_DEVICE_REMOVAL_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>TARGET_DEVICE_REMOVAL_NOTIFICATION</b> structure describes a device-removal event. The PnP manager sends this structure to a driver that registered a callback routine for notification of <b>EventCategoryTargetDeviceChange</b> events.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _TARGET_DEVICE_REMOVAL_NOTIFICATION {
 
 Specifies the version of the data structure, currently set to 1. 
 
+
 ### -field Size
 
 Specifies the size of the structure, in bytes, including the size of the standard first three members plus the event-specific data. 
+
 
 ### -field Event
 
 Specifies a GUID identifying the event: GUID_TARGET_DEVICE_QUERY_REMOVE, GUID_TARGET_DEVICE_REMOVE_COMPLETE, or GUID_TARGET_DEVICE_REMOVE_CANCELLED. These GUIDs are defined in Wdmguid.h.
 
+
 ### -field FileObject
 
 Pointer to a file object for the device. 
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Pointer to a file object for the device.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TARGET_DEVICE_REMOVAL_NOTIFICATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TARGET_DEVICE_REMOVAL_NOTIFICATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: kernel\zwduplicateobject.htm
 old-project: kernel
 ms.assetid: 9a922379-b439-4f94-9eb1-7c229318382c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwDuplicateObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>ZwDuplicateObject</b> routine creates a handle that is a duplicate of the specified source handle.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ NTSTATUS ZwDuplicateObject(
 
 A handle to the source process for the handle being duplicated.
 
+
 ### -param SourceHandle [in]
 
 The handle to duplicate.
+
 
 ### -param TargetProcessHandle [in, optional]
 
 A handle to the target process that is to receive the new handle. This parameter is optional and can be specified as NULL if the <b>DUPLICATE_CLOSE_SOURCE</b> flag is set in <i>Options</i>.
 
+
 ### -param TargetHandle [out, optional]
 
 A pointer to a HANDLE variable into which the routine writes the new duplicated handle. The duplicated handle is valid in the specified target process. This parameter is optional and can be specified as NULL if no duplicate handle is to be created.
+
 
 ### -param DesiredAccess [in]
 
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the desired access for the new handle.
 
+
 ### -param HandleAttributes [in]
 
 A ULONG that specifies the desired attributes for the new handle. For more information about attributes, see the description of the <b>Attributes</b> member in <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a>.
 
+
 ### -param Options [in]
 
 A set of flags to control the behavior of the duplication operation. Set this parameter to zero or to the bitwise OR of one or more of the following flags.
+
 <table>
 <tr>
 <th>Flag name</th>
@@ -105,8 +113,10 @@ A set of flags to control the behavior of the duplication operation. Set this pa
 </table>
  
 
+
 ## -returns
 <b>ZwDuplicateObject</b> returns STATUS_SUCCESS if the call is successful. Otherwise, it returns an appropriate error status code.
+
 
 ## -remarks
 The source handle is evaluated in the context of the specified source process. The calling process must have <b>PROCESS_DUP_HANDLE</b> access to the source process. The duplicate handle is created in the handle table of the specified target process. The calling process must have <b>PROCESS_DUP_HANDLE</b> access to the target process.
@@ -117,11 +127,13 @@ If the call to this function occurs in user mode, you should use the name "<b>Nt
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -132,14 +144,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,6 +165,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -160,9 +176,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -180,5 +198,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwDuplicateObject routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwDuplicateObject routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

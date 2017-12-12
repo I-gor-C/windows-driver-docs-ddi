@@ -39,26 +39,34 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPortClsVersion</code> interface is used by a miniport driver to identify the version of the Windows operating system that the driver is running on. The port driver implements this interface and exposes it to the miniport driver. 
+
 To determine whether a port driver supports the <code>IPortClsVersion</code> interface, the miniport driver calls the port object's <b>QueryInterface</b> method with REFIID <b>IID_IPortClsVersion</b>. The following port types support <code>IPortClsVersion</code>:
 
+
 <a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+
 
 
 <a href="audio.iportwavepci">IPortWavePci</a>
 
 
+
 <a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
 
 
+
 <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
+
 
 
 <a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsVersion</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -68,6 +76,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsVersion</b> interface
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

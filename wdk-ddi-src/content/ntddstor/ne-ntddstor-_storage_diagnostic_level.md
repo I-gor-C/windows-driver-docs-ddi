@@ -7,8 +7,8 @@ old-location: storage\storage_diagnostic_level.htm
 old-project: storage
 ms.assetid: 6D705DA8-7F45-4C7A-813F-5AE4F5A1D8ED
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_DIAGNOSTIC_LEVEL, *PSTORAGE_DIAGNOSTIC_LEVEL, STORAGE_DIAGNOSTIC_LEVEL
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_DIAGNOSTIC_LEVEL, STORAGE_DIAGNOSTIC_LEVEL, *PSTORAGE_DIAGNOSTIC_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 The <b>STORAGE_DIAGNOSTIC_LEVEL</b> enumeration specifies the target type of a storage diagnostic.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _STORAGE_DIAGNOSTIC_LEVEL {
 
 Specifies the default diagnostic level.
 
+
 ### -field StorageDiagnosticLevelMax
 
 Specifies the max diagnostic level.
+
 
 ## -remarks
 
@@ -69,14 +72,17 @@ Specifies the max diagnostic level.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

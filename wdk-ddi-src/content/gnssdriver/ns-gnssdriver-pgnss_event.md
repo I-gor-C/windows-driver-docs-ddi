@@ -41,6 +41,7 @@ req.irql:
 This structure defines the information required for a  GNSS event.
 
 
+
 ## -syntax
 
 ````
@@ -72,63 +73,80 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field EventType
 
 Event type.
+
 Depending on the event type, a specific data element of the union will be filled.
+
 
 ### -field EventDataSize
 
 The size of the event data union contained in this event.
+
 The GNSS driver must fill in appropriate size to avoid excessive data-copy between the layers. The GNSS adapter will access only the initial bytes of the event data, as specified by this element.
+
 
 ### -field Unused[512]
 
 Padding buffer.
 
+
 ### -field FixData
 
 This structure is filled if EventType is GNSS_Fix_Available.
+
 
 ### -field AgnssRequest
 
 This structure is filled if EventType is GNSS_Require_Agnss.
 
+
 ### -field NiRequest
 
 This structure is filled if EventType is GNSS_Event_Ni.
+
 
 ### -field ErrorInformation
 
 This structure is filled if EventType is GNSS_Error.
 
+
 ### -field NmeaData
 
 This structure is filled if EventType is GNSS_Event_NmeaData.
+
 
 ### -field GeofenceAlertData
 
 This structure is filled if EventType is GNSS_Event_GeofenceAlertData.
 
+
 ### -field BreadcrumbAlertData
 
 This structure contains alert information for when the breadcrumb buffer has reached a level where OS read operations should be performed.
+
 
 ### -field GeofencesTrackingStatus
 
 This structure is filled if EventType is GNSS_Event_GeofencesTrackingStatus.
 
+
 ### -field DriverRequestData
 
 This structure is filled if EventType is GNSS_Event_DriverRequest.
 
+
 ### -field CustomData[ANYSIZE_ARRAY]
 
 Custom data field.
+
 
 ## -remarks
 The GNSS driver sends solicited and unsolicited notifications to the GNSS adapter. This is done through a common event protocol between the driver and the GNSS adapter. The adapter registers for one or more types of events and this ensures that one or more I/O requests are always pending for the driver to send the notification up to the adapter. The driver completes the I/O request on the pending IRP and this causes the notification to flow up to the adapter. The adapter creates one or more I/O requests to listen for further notifications.
@@ -141,11 +159,13 @@ Each event type has associate event-specific data that the GNSS adapter uses to 
 
 Events can be of various types. Certain events occur as a result of a previous request initiated by the driver (for example, a start fix request). Certain events are raised for informational purpose. Assistance events are raised when the driver requires the adapter to inject specific assistance data.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

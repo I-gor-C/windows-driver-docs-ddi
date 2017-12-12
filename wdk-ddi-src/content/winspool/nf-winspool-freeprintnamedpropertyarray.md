@@ -7,7 +7,7 @@ old-location: print\freeprintnamedpropertyarray.htm
 old-project: print
 ms.assetid: 18E24562-F57A-492F-9254-722ABA0B2BC4
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: FreePrintNamedPropertyArray
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ void WINAPI FreePrintNamedPropertyArray(
 ## -returns
 This function does not return a value.
 
+
 ## -remarks
 
 
@@ -71,6 +73,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

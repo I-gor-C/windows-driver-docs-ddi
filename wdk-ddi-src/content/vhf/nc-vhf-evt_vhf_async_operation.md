@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports.
 
 
+
 ## -prototype
 
 ````
@@ -63,20 +64,25 @@ void EvtVhfAsyncOperation(
 
 An opaque pointer to a HID source driver-defined buffer that the driver passed in the <a href="hid.vhf_config">VHF_CONFIG</a> structure supplied to <a href="hid.vhfcreate">VhfCreate</a> to create the virtual HID device.
 
+
 ### -param VhfOperationHandle [in]
 
 An opaque handle that uniquely identifies this asynchronous operation. 
+
 
 ### -param VhfOperationContext [in, optional]
 
 Pointer to a buffer that can be used by the HID source driver for servicing the operation. Size of the buffer is specified by the HID source driver in the <a href="hid.vhf_config">VHF_CONFIG</a> structure supplied to <a href="hid.vhfcreate">VhfCreate</a>.
 
+
 ### -param HidTransferPacket [in]
 
 A pointer to a <a href="hid.hid_xfer_packet">HID_XFER_PACKET</a> structure. Contains information about a HID Report and is used by the HID source driver and the HID class/mini driver pair for I/O requests to get or set a report.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 There are four types of asynchronous operations that your HID source driver can support: <b>GetFeature</b>, <b>SetFeature</b>, <b>WriteReport</b>, <b>GetInputReport</b>. 
@@ -89,27 +95,33 @@ When VHF gets a request that sets or queries a HID Report, VHF invokes the previ
 
 When the operation is complete, HID source calls <a href="hid._vhfasyncoperationcomplete">VhfAsyncOperationComplete</a> to report the completion status.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +132,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,9 +143,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -144,5 +159,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20EVT_VHF_ASYNC_OPERATION callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

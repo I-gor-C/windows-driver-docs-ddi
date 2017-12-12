@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlAbsoluteToSelfRelativeSD</b> routine creates a new security descriptor in self-relative format by using a security descriptor in absolute format as a template. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS RtlAbsoluteToSelfRelativeSD(
 
 Pointer to a caller-allocated buffer that contains a <a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a> structure in absolute format. <b>RtlAbsoluteToSelfRelativeSD</b> creates a version of this security descriptor in self-relative format without modifying the original. 
 
+
 ### -param SelfRelativeSecurityDescriptor [out]
 
 Pointer to a caller-allocated buffer that receives a security descriptor in self-relative format. 
 
+
 ### -param BufferLength [in, out]
 
 Pointer to a caller-allocated variable that specifies the size, in bytes, of the buffer pointed to by the <i>SelfRelativeSecurityDescriptor</i> parameter. If the buffer is not large enough to hold the security descriptor, <b>RtlAbsoluteToSelfRelativeSD</b> returns STATUS_BUFFER_TOO_SMALL and sets this variable to the minimum required size. 
+
 
 ## -returns
 <b>RtlAbsoluteToSelfRelativeSD</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
@@ -77,6 +81,7 @@ Pointer to a caller-allocated variable that specifies the size, in bytes, of the
 
  
 
+
 ## -remarks
 A security descriptor in absolute format contains pointers to the information it contains, rather than containing the information itself. A security descriptor in self-relative format contains the information in a contiguous block of memory. In a self-relative security descriptor, a <a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a> structure always starts the information, but the security descriptor's other components can follow the SECURITY_DESCRIPTOR structure in any order. Instead of using memory addresses, the components of the security descriptor are identified by offsets from the beginning of the security descriptor. This format is useful when a security descriptor must be stored on a disk or transmitted by means of a communications protocol. 
 
@@ -84,11 +89,13 @@ To create a new security descriptor in absolute format by using a security descr
 
 For more information about security and access control, see the Microsoft Windows SDK documentation. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +106,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows Server 2003 SP1 and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +127,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +138,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +150,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -170,5 +184,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAbsoluteToSelfRelativeSD routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

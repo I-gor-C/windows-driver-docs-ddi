@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 6827df53-f970-4ceb-961d-b4b95fa56cfe
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSQUERYBUFFER, KSQUERYBUFFER, *PKSQUERYBUFFER
+ms.keywords: PKSQUERYBUFFER, *PKSQUERYBUFFER, KSQUERYBUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSQUERYBUFFER structure is used when querying for outstanding buffers available on an event with KSEVENT_TYPE_QUERYBUFFER<b>.</b>
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 Specifies the description of the original event, with the KSEVENT_TYPE_QUERYBUFFER flag set instead of the KSEVENT_TYPE_ENABLEBUFFERED flag.
 
+
 ### -field EventData
 
 A pointer to a <a href="stream.kseventdata">KSEVENTDATA</a> structure. This is the same pointer supplied to <a href="stream.avstrminiaddevent">AVStrMiniAddEvent</a> at event enable time. This pointer is used as the unique identifier in locating the event, just as it is used when disabling the event.
 
+
 ### -field Reserved
 
 Not used, and set to zero.
+
 
 ## -remarks
 If KSEVENT_TYPE_ENABLEBUFFERED was used to enable an event that also buffers data, then the data produced by the event can be queried using this method. The description of the event being queried is provided as the first parameter, and any buffer is provided as the second parameter to the query.
@@ -93,11 +97,13 @@ STATUS_SUCCESS
 
 life is good.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,5 +123,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSQUERYBUFFER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

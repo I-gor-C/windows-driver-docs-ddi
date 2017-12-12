@@ -7,7 +7,7 @@ old-location: display\d3dkmt_umd_driver_version.htm
 old-project: display
 ms.assetid: 0661a65d-5129-49f6-9400-70b8c8e8245f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_UMD_DRIVER_VERSION, D3DKMT_UMD_DRIVER_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Indicates the version number of the user-mode driver.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DKMT_UMD_DRIVER_VERSION {
 
 The user-mode driver version.
 
+
 ## -remarks
 
 
@@ -64,22 +66,27 @@ The user-mode driver version.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

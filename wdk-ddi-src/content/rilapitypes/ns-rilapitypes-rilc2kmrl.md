@@ -7,8 +7,8 @@ old-location: netvista\rilc2kmrl_2.htm
 old-project: netvista
 ms.assetid: a06d81d1-9ecc-41da-b0ad-fa878fac382b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILC2KMRL, RILC2KMRL, *LPRILC2KMRL
+ms.date: 12/8/2017
+ms.keywords: RILC2KMRL, *LPRILC2KMRL, RILC2KMRL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -100,6 +101,7 @@ typedef struct _RILC2KMRL {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

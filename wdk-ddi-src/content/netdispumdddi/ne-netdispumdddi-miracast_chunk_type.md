@@ -7,7 +7,7 @@ old-location: display\miracast_chunk_type.htm
 old-project: display
 ms.assetid: 39911172-f916-4ca2-8d98-9d53fbc30807
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: MIRACAST_CHUNK_TYPE, MIRACAST_CHUNK_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the types of wireless display (Miracast) chunk info that is to be processed.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef enum  {
 
 An unknown or undefined chunk type.
 
+
 ### -field MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE
 
 Color conversion has completed on the chunk.
+
 
 ### -field MIRACAST_CHUNK_TYPE_ENCODE_COMPLETE
 
 Encoding has completed on the chunk.
 
+
 ### -field MIRACAST_CHUNK_TYPE_FRAME_START
 
 The chunk is at the start of the Wi-Fi frame.
+
 
 ### -field MIRACAST_CHUNK_TYPE_FRAME_DROPPED
 
 The chunk is in a dropped Wi-Fi frame.
 
+
 ### -field MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_1
 
 Encoding is driver-defined, of type 1.
+
 
 ### -field MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_2
 
 Encoding is driver-defined, of type 2.
 
+
 ### -field MIRACAST_CHUNK_TYPE_ENCODE_FORCE_UINT32
 
 Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.
+
 
 ## -remarks
 
@@ -99,22 +108,27 @@ Forces this enumeration to compile to 32 bits in size. Without this value, some 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

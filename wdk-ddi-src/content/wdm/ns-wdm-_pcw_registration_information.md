@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PCW_REGISTRATION_INFORMATION structure supplies details about the provider and the counter set. 
 
 
+
 ## -syntax
 
 ````
@@ -62,42 +63,52 @@ typedef struct _PCW_REGISTRATION_INFORMATION {
 
 The numeric value that specifies the version of Performance Counters for Windows (PCW) that the provider supports.
 
+
 ### -field Name
 
 A pointer to the string that contains the name of the counter set to register.
+
 
 ### -field CounterCount
 
 The number of counters that are exposed by this registration.
 
+
 ### -field Counters
 
 A pointer to the array that describes the counters.
+
 
 ### -field Callback
 
 A pointer to the optional <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a> function that notifies the provider about events related to this counter set.
 
+
 ### -field CallbackContext
 
 A pointer to the callback context.  
 
+
 ## -remarks
 The <a href="devtest.pcwregister">PcwRegister</a> function takes, as a parameter, a pointer to this structure to serve as the registration handle.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +131,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20PCW_REGISTRATION_INFORMATION structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

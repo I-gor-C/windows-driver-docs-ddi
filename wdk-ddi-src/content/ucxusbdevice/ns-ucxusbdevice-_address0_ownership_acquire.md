@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: D2FECBA5-21DF-411C-BBDB-968328E18C12
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _ADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE
+ms.keywords: _ADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains parameters for configuring the device. 
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef struct _ADDRESS0_OWNERSHIP_ACQUIRE {
 
 A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
+
 ## -remarks
 
 
@@ -69,6 +71,7 @@ A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure tha
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The HID source driver calls this method to submit a HID Read (Input) Report to Virtual HID Framework (VHF).
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ NTSTATUS VhfReadReportSubmit(
 
 A handle to a virtual HID device that your HID source driver received in the previous call to <a href="hid.vhfcreate">VhfCreate</a>.
 
+
 ### -param HidTransferPacket [in]
 
 A pointer to a <a href="hid.hid_xfer_packet">HID_XFER_PACKET</a> structure that describes the HID report.
 
+
 ## -returns
 If the <b>VhfReadReportSubmit</b> call succeeds, the method returns STATUS_SUCCESS. Otherwise an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS </a> value.
+
 
 ## -remarks
 The HID source driver can choose to implement its buffering policy or let Virtual HID Framework (VHF) handle buffering. 
@@ -72,11 +76,13 @@ If the driver uses its own buffering policy, then it must implement and register
 
 If the HID source driver does not implement the <a href="..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md">EvtVhfReadyForNextReadReport</a> callback, then there are no restrictions on calling this method. VHF uses the default buffering policy. The driver can reuse the transfer buffer after the call returns.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -97,9 +104,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -111,5 +120,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VhfReadReportSubmit method%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

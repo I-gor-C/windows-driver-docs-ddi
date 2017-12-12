@@ -7,7 +7,7 @@ old-location: netvista\ndis_wmi_set_header.htm
 old-project: netvista
 ms.assetid: ea6f37e0-a46f-41d9-84f2-624f5727863a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER, *PNDIS_WMI_SET_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The NDIS_WMI_SET_HEADER structure provides information about a GUID set request 
   clients.
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ The
      <b>Size</b> member to 
      sizeof(NDIS_WMI_SET_HEADER).
 
+
 ### -field PortNumber
 
 The miniport adapter port, if any. If the GUID is not specific to a port, 
@@ -76,12 +78,14 @@ The miniport adapter port, if any. If the GUID is not specific to a port,
      GUID_NDIS_GEN_ENUMERATE_PORTS</a> GUID to obtain a list of the ports that are associated with a
      miniport adapter.
 
+
 ### -field NetLuid
 
 The NDIS network interface name of the miniport adapter. WMI clients can use the 
      <a href="netvista.guid_ndis_enumerate_adapters_ex">
      GUID_NDIS_ENUMERATE_ADAPTERS_EX</a> GUID to find a device name and the associated 
      <b>NetLuid</b> value.
+
 
 ### -field RequestId
 
@@ -91,24 +95,30 @@ An identifier for the request. If a miniport driver must complete a request imme
      <b>RequestId</b> member of the associated 
      <a href="netvista.ndis_status_indication">NDIS_STATUS_INDICATION</a> structure. 
      
+
 NDIS or overlying drivers can also use the 
      <b>RequestId</b> to cancel a request. When a miniport driver receives a
      cancellation request, the miniport driver cancels any pending requests with a matching 
      <b>RequestId</b>. If 
      <b>RequestId</b> is zero, the miniport driver can ignore this member.
+
 For more information about this member, see 
      <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>.
+
 
 ### -field Timeout
 
 A time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the
       time-out expires before the driver completes the request.
+
 For more information about this member, see 
       <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>.
+
 
 ### -field Padding
 
 This member is reserved
+
 
 ## -remarks
 NDIS translates WMI GUID set requests to NDIS OID requests.
@@ -116,19 +126,23 @@ NDIS translates WMI GUID set requests to NDIS OID requests.
 WMI GUID set requests that are specific to NDIS 6.0 and later versions include an NDIS_WMI_SET_HEADER
     structure that is followed by the GUID-specific data, if any.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,5 +165,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WMI_SET_HEADER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WMI_SET_HEADER structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

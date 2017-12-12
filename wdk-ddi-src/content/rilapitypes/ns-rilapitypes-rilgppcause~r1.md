@@ -7,8 +7,8 @@ old-location: netvista\rilgppcause_2.htm
 old-project: netvista
 ms.assetid: 33e54af8-4ff1-44e2-926f-8f045e15b000
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILGPPCAUSE, RILGPPCAUSE, *LPRILGPPCAUSE
+ms.date: 12/8/2017
+ms.keywords: RILGPPCAUSE, *LPRILGPPCAUSE, RILGPPCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILGPPCAUSE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

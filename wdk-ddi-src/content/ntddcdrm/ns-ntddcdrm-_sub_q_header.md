@@ -7,8 +7,8 @@ old-location: storage\sub_q_header.htm
 old-project: storage
 ms.assetid: 3ee3657d-acdd-4d3f-9cff-eb4a494429b4
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SUB_Q_HEADER, SUB_Q_HEADER, *PSUB_Q_HEADER
+ms.date: 12/8/2017
+ms.keywords: _SUB_Q_HEADER, *PSUB_Q_HEADER, SUB_Q_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The SUB_Q_HEADER structure contains audio status information and the length of the Q subchannel data being returned. This structure is used in conjunction with <a href="storage.sub_q_channel_data">SUB_Q_CHANNEL_DATA</a>.
 
 
+
 ## -syntax
 
 ````
@@ -58,55 +59,70 @@ typedef struct _SUB_Q_HEADER {
 
 Reserved.
 
+
 ### -field AudioStatus
 
 Reports the audio status with one of the following flags:
 
 
+
+
 ### -field AUDIO_STATUS_NOT_SUPPORTED
 
 Audio status byte not supported or not valid.
+
 </dd>
 </dl>
+
 
 
 ### -field AUDIO_STATUS_IN_PROGRESS
 
 Audio play operation is in progress.
+
 </dd>
 </dl>
+
 
 
 ### -field AUDIO_STATUS_PAUSED
 
 Audio play operation is paused.
+
 </dd>
 </dl>
+
 
 
 ### -field AUDIO_STATUS_PLAY_COMPLETE
 
 Audio play operation completed successfully.
+
 </dd>
 </dl>
+
 
 
 ### -field AUDIO_STATUS_PLAY_ERROR
 
 Audio play operation stopped due to error.
+
 </dd>
 </dl>
+
 
 
 ### -field AUDIO_STATUS_NO_STATUS
 
 No current audio status to return.
+
 </dd>
 </dl>
 
 ### -field DataLength
 
 Gives the length of Q subchannel data that follows this header structure. The bytes in this array are arranged in big-endian order. <b>DataLength</b>[0] contains the most significant byte, and <b>DataLength</b>[1] contains the least significant byte. 
+
 
 ## -remarks
 
@@ -116,6 +132,7 @@ Gives the length of Q subchannel data that follows this header structure. The by
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,5 +155,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SUB_Q_HEADER structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SUB_Q_HEADER structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

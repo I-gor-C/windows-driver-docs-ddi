@@ -7,7 +7,7 @@ old-location: netvista\ndisinitializestring.htm
 old-project: netvista
 ms.assetid: c6945d7d-5152-4968-a628-7850b8083a82
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisInitializeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   system-default character set.
 
 
+
 ## -syntax
 
 ````
@@ -63,13 +64,16 @@ A pointer that is <b>NULL</b> when
      the NDIS_STRING type as a 
      <a href="kernel.unicode_string">UNICODE_STRING</a> type.
 
+
 ### -param SourceString [in]
 
 A pointer to a null-terminated string with which to initialize the counted string. 
      <i>SourceString</i> must not be <b>NULL</b>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>NdisInitializeString</b> sets the 
@@ -84,11 +88,13 @@ The buffer allocated by
     <b>NdisInitializeString</b> should be released with the 
     <a href="netvista.ndisfreestring">NdisFreeString</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +105,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="kernel.rtlinitunicodestring">RtlInitUnicodeString</a>  or <a href="kernel.rtl_constant_string">RTL_CONSTANT_STRING</a> or   DECLARE_CONST_UNICODE_STRING (see ntdef.h) instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +126,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,14 +137,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -180,5 +193,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitializeString function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitializeString function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

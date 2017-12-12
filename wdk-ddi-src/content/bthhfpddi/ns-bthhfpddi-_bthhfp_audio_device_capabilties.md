@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 56c2bbb9-8fcd-43d4-9202-c8925575e44d
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BTHHFP_AUDIO_DEVICE_CAPABILTIES, *PBTHHFP_AUDIO_DEVICE_CAPABILTIES, BTHHFP_AUDIO_DEVICE_CAPABILTIES
+ms.keywords: _BTHHFP_AUDIO_DEVICE_CAPABILTIES, BTHHFP_AUDIO_DEVICE_CAPABILTIES, *PBTHHFP_AUDIO_DEVICE_CAPABILTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>BTHHFP_AUDIO_DEVICE_CAPABILTIES</b> data structure describes the capabilities of a Bluetooth HFP device, including the version and whether it supports 16 kHz sampling.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _BTHHFP_AUDIO_DEVICE_CAPABILTIES {
 
 The version of the device.
 
+
 ### -field Supports16kHzSampling
 
 Whether the device supports 16 kHz sampling.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Whether the device supports 16 kHz sampling.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

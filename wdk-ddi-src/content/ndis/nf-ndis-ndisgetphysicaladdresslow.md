@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisGetPhysicalAddressLow
-title: NdisGetPhysicalAddressLow
+title: NdisGetPhysicalAddressLow macro
 author: windows-driver-content
 description: NdisGetPhysicalAddressLow returns the low-order part of a given physical address.
 old-location: netvista\ndisgetphysicaladdresslow.htm
 old-project: netvista
 ms.assetid: a2e9e398-7b47-49eb-b587-7c42a0162f90
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisGetPhysicalAddressLow
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -31,38 +31,32 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
-req.iface: 
 ---
 
-# NdisGetPhysicalAddressLow function
+# NdisGetPhysicalAddressLow macro
 
 
 
 ## -description
-<p><b>NdisGetPhysicalAddressLow</b> returns the low-order part of a given physical address.</p>
+<b>NdisGetPhysicalAddressLow</b> returns the low-order part of a given physical address.
+
 
 
 ## -syntax
 
 ````
 ULONG NdisGetPhysicalAddressLow(
-  _In_ NDIS_PHYSICAL_ADDRESS PhysicalAddress
+  [in] NDIS_PHYSICAL_ADDRESS PhysicalAddress
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param PhysicalAddress [in]
 
-<dd>
-<p>Specifies a physical address of an OS-dependent size.</p>
-</dd>
-</dl>
+Specifies a physical address of an OS-dependent size.
 
-## -returns
-<p><b>NdisGetPhysicalAddressLow</b> returns the value of the low-order part of the physical address.</p>
 
 ## -remarks
 
@@ -71,7 +65,8 @@ ULONG NdisGetPhysicalAddressLow(
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,19 +76,22 @@ ULONG NdisGetPhysicalAddressLow(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/2c24edd3-a40d-4f84-a778-e3d5d0256409">NdisGetPhysicalAddressLow (NDIS
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisGetPhysicalAddressLow (NDIS
-   5.1)</b>) in Windows XP.</p>
+   5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,10 +101,12 @@ ULONG NdisGetPhysicalAddressLow(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>Any level</p>
+Any level
+
 </td>
 </tr>
 </table>
@@ -114,15 +114,18 @@ ULONG NdisGetPhysicalAddressLow(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisgetphysicaladdresshigh.md">NdisGetPhysicalAddressHigh</a>
+<a href="netvista.ndisgetphysicaladdresshigh">NdisGetPhysicalAddressHigh</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557129">NDIS_PHYSICAL_ADDRESS</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndissetphysicaladdresslow.md">NdisSetPhysicalAddressLow</a>
+<a href="netvista.ndissetphysicaladdresslow">NdisSetPhysicalAddressLow</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetPhysicalAddressLow function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetPhysicalAddressLow macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

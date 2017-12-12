@@ -7,7 +7,7 @@ old-location: netvista\ndisminvalidateconfigblock.htm
 old-project: netvista
 ms.assetid: 26D07A41-C431-41F1-9F5E-880B48CC2F0B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMInvalidateConfigBlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 A miniport driver calls the <b>NdisMInvalidateConfigBlock</b> function to notify NDIS that the data for one or more Virtual Function (VF) configuration blocks has been changed.
 
 
+
 ## -syntax
 
 ````
@@ -60,18 +61,22 @@ The network adapter handle that NDIS passed to the
      <i>MiniportAdapterHandle</i> parameter of 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
 
+
 ### -param VFId [in]
 
 The identifier of the VF for which the device location is returned.
+
 
 ### -param BlockMask [in]
 
 A ULONGLONG value that specifies a bitmask for the first 64 VF configuration blocks. Each bit in the bitmask corresponds to a VF configuration block. If the bit is set to one, the data associated with the corresponding VF configuration block has changed.
 
 
+
 ## -returns
 
      None.
+
 
 ## -remarks
 A VF configuration block is used for backchannel communication between the PF and VF miniport drivers. The IHV can define one or more VF configuration blocks for the device. Each VF configuration block has an IHV-defined format, length,  and block ID.
@@ -94,11 +99,13 @@ In the management operating system, the following steps occur:<ol>
 <li>The PF miniport driver calls the <b>NdisMInvalidateConfigBlock</b> function to notify NDIS that VF configuration data has changed and is no longer valid. </li>
 <li>
 NDIS signals the virtualization stack, which runs in the management operating system, about the change to VF configuration block data. The virtualization stack caches the <i>BlockMask</i> parameter data. 
+
 <div class="alert"><b>Note</b>  Each time that the PF miniport driver calls <b>NdisMInvalidateConfigBlock</b>, the virtualization  stack ORs the <i>BlockMask</i> parameter data with the current value in its cache.</div>
 <div> </div>
 </li>
 <li>
 The virtualization stack notifies the virtual PCI (VPCI) driver, which  runs in the guest operating system, about the invalidation of VF configuration data.  The virtualization stack sends the cached <i>BlockMask</i> parameter data to the VPCI driver.
+
 </li>
 </ol>
 
@@ -110,13 +117,17 @@ The virtualization stack notifies the virtual PCI (VPCI) driver, which  runs in 
 In the guest operating system, the following steps occur:<ol>
 <li>
 The VPCI driver saves the cached <i>BlockMask</i> parameter data in the <b>BlockMask</b> member of the <a href="kernel.vpci_invalidate_block_output">VPCI_INVALIDATE_BLOCK_OUTPUT</a> structure that is associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439301">IOCTL_VPCI_INVALIDATE_BLOCK</a> request.
+
 </li>
 <li>
 The VPCI driver successfully completes  the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439301">IOCTL_VPCI_INVALIDATE_BLOCK</a> request. When this happens, NDIS issues an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451903">OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK</a>  to the VF miniport driver. An <a href="netvista.ndis_sriov_vf_invalidate_config_block_info">NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO</a> request is passed along in the OID request. This structure contains the cached <i>BlockMask</i> parameter data.
+
 NDIS also issues another <a href="https://msdn.microsoft.com/library/windows/hardware/hh439301">IOCTL_VPCI_INVALIDATE_BLOCK</a> request to handle successive notifications of changes to VF configuration data.
+
 </li>
 <li>
 When the VF driver handles the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451903">OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK</a> request, it reads data from the specified VF configuration blocks.
+
 </li>
 </ol>
 
@@ -133,27 +144,33 @@ For more information about backchannel communication within the single root I/O 
 
 For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -164,14 +181,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,6 +202,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -192,9 +213,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -216,5 +239,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInvalidateConfigBlock function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInvalidateConfigBlock function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

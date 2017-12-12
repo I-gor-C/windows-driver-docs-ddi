@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX as the minifilter driver's <i>NormalizeNameComponentExCallback</i> callback routine.
 
 
+
 ## -prototype
 
 ````
@@ -67,40 +68,50 @@ NTSTATUS NormalizeNameComponentExCallback(
 
 Opaque instance pointer for the minifilter driver instance that this callback routine is registered for.
 
+
 ### -param FileObject [in]
 
 Pointer to the file object for the file whose name is being requested or the file that is the target of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a> operation if the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is set.  See the <i>Flags</i> parameter below for more information.
+
 
 ### -param ParentDirectory [in]
 
 Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the name of the parent directory for this name component. 
 
+
 ### -param VolumeNameLength [in]
 
 Length, in bytes, of the parent directory name that is stored in the structure that the <i>ParentDirectory</i> parameter points to. 
+
 
 ### -param Component [in]
 
 Pointer to a UNICODE_STRING structure that contains the name component to be expanded. 
 
+
 ### -param ExpandComponentName [out]
 
 Pointer to a <a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a> structure that receives the expanded (normalized) file name information for the name component. 
+
 
 ### -param ExpandComponentNameLength [in]
 
 Length, in bytes, of the buffer that the <i>ExpandComponentName</i> parameter points to. 
 
+
 ### -param Flags [in]
 
 Name normalization flags.  FLTFL_NORMALIZE_NAME_CASE_SENSITIVE specifies that the name to be normalized is case-sensitive.  FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME specifies that the callback routine has been called to service an <a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a> routine call.  If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is set, <i>FileObject</i> represents the file/directory that is the target of the IRP_MJ_SET_INFORMATION operation. If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is not set, <i>FileObject</i> represents the file/directory whose name is being requested.
+
 
 ### -param NormalizationContext [in, out]
 
 Pointer to minifilter driver-provided context information to be passed in any subsequent calls to this callback routine that are made to normalize the remaining components in the same file name path. 
 
+
 ## -returns
 This callback routine returns STATUS_SUCCESS or an appropriate NTSTATUS value. If the name component that the <i>Component</i> parameter specifies does not exist in the parent directory that the <i>ParentDirectory</i> parameter specifies, this callback routine should return STATUS_NO_SUCH_FILE. If this callback routine issues an IRP_MN_QUERY_DIRECTORY (FileNamesInformation) request to the parent directory, the file system returns the correct status code. In this situation, this callback can simply return the status code that the file system returns.
+
 
 ## -remarks
 A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX as the minifilter driver's <i>NormalizeNameComponentExCallback</i> callback routine.  
@@ -113,11 +124,13 @@ The filter manager calls this callback routine to query the minifilter driver fo
 
 If the minifilter driver uses the <i>NormalizationContext</i> parameter, it should also register a normalization context cleanup callback routine. For more information, see the reference entry for <a href="..\fltkernel\nc-fltkernel-pflt_normalize_context_cleanup.md">PFLT_NORMALIZE_CONTEXT_CLEANUP</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +141,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +152,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -182,5 +198,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_NORMALIZE_NAME_COMPONENT_EX routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

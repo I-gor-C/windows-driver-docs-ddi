@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 627DA82C-CD51-4FA0-80C2-03F7FA26C0CF
 ms.author: windowsdriverdev
 ms.date: 12/2/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic describes the  <b>ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX {
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
 
+
 ### -field MethodName[256]
 
 NULL terminated name string.
+
 
 ### -field StringLength
 
 Defines the <b>ULONG</b> member <b>StringLength</b>.
 
+
 ### -field String[ANYSIZE_ARRAY]
 
 Defines the <b>UCHAR</b> member <b>String[ANYSIZE_ARRAY]</b>.
+
 
 ## -remarks
 
@@ -80,14 +85,17 @@ Defines the <b>UCHAR</b> member <b>String[ANYSIZE_ARRAY]</b>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

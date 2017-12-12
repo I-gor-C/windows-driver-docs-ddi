@@ -41,6 +41,7 @@ req.irql:
 The <b>CcRepinBcb</b> routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to <a href="ifsk.ccunpindata">CcUnpinData</a>.
 
 
+
 ## -syntax
 
 ````
@@ -56,19 +57,23 @@ VOID CcRepinBcb(
 
 Buffer control block (BCB) pointer returned by <a href="ifsk.ccpinread">CcPinRead</a> or <a href="ifsk.ccpreparepinwrite">CcPreparePinWrite</a>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 File systems call <b>CcRepinBcb</b> to preserve a BCB for write-through or error recovery. Typically a file system would do this the first time it marks a BCB as dirty while processing a write-through request, or any time that it determines that a buffer will be required for write-through.
 
 Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href="ifsk.ccunpinrepinnedbcb">CcUnpinRepinnedBcb</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -79,6 +84,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -89,6 +95,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -99,6 +106,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -124,5 +132,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcRepinBcb routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

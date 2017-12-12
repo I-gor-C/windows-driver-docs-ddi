@@ -7,7 +7,7 @@ old-location: storage\storportdebugprint.htm
 old-project: storage
 ms.assetid: 46845a10-c44b-4d11-b82e-986bfc066b97
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortDebugPrint</b> routine prints a debug string to the kernel debugger, if the debugger is attached.
 
 
+
 ## -syntax
 
 ````
@@ -58,21 +59,26 @@ VOID StorPortDebugPrint(
 
 Indicates the amount of debug information that will be displayed. 
 
+
 ### -param DebugMessage 
 
 Pointer to the debug message to be printed. 
 
+
 ## -returns
 None 
 
+
 ## -remarks
 To see these debug strings, the driver writer must set nt!Kd_STORMINIPORT_Mask. This follows the new system-wide debug print mechanism.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +100,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\dot11_direction.htm
 old-project: netvista
 ms.assetid: 83a83af9-314a-49c1-b241-a0ef0716f83a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: DOT11_DIRECTION, DOT11_DIRECTION, *PDOT11_DIRECTION
+ms.date: 12/8/2017
+ms.keywords: DOT11_DIRECTION, *PDOT11_DIRECTION, DOT11_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -58,15 +58,18 @@ typedef enum DOT11_DIRECTION {
 The 802.11 station uses the cipher key to decrypt packets received from the access point (AP) or
      peer station.
 
+
 ### -field DOT11_DIR_OUTBOUND
 
 The 802.11 station uses the cipher key to encrypt packets transmitted to the AP or peer
      station.
 
+
 ### -field DOT11_DIR_BOTH
 
 The 802.11 station uses the cipher key for packets received from or transmitted to the AP or peer
      station.
+
 
 ## -remarks
 
@@ -76,15 +79,18 @@ The 802.11 station uses the cipher key for packets received from or transmitted 
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DIRECTION enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DIRECTION enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

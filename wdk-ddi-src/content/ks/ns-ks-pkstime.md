@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e026a539-7aa5-4205-970d-cf452e4471da
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSTIME, KSTIME, *PKSTIME
+ms.keywords: PKSTIME, *PKSTIME, KSTIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSTIME structure specifies a time stamp that can be used to indicate stream position.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct {
 
 Specifies a time value. When using unscaled time, <b>Time</b> is in units of 100-nanoseconds. When using scaled time, <b>Time</b> is in units governed by the scale factor expressed in the <b>Numerator</b> and <b>Denominator</b> members. For more information about scaled and unscaled time, see <b>Remarks</b>.
 
+
 ### -field Numerator
 
 Specifies the numerator of the scaling factor for a scaled time value. For a nonscaled value, this should be one. <b>Numerator</b> must not be zero.
+
 
 ### -field Denominator
 
 Specifies the denominator of the scaling factor for a scaled time value. For a nonscaled value, this should be one. <b>Denominator</b> must not be zero.
 
+
 ## -remarks
 Unscaled time stamps are in 100-nanosecond units. A data stream can use different units by specifying the numerator and denominator of a scale factor.  
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

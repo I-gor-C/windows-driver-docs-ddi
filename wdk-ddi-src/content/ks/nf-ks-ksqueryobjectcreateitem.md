@@ -41,6 +41,7 @@ req.irql:
 The <b>KsQueryObjectCreateItem</b> function returns the create item assigned to the object when created.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ PKSOBJECT_CREATE_ITEM KsQueryObjectCreateItem(
 
 Indicates the header previously allocated.
 
+
 ## -returns
 The <b>KsQueryObjectCreateItem</b> function returns a pointer to a create item.
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ The <b>KsQueryObjectCreateItem</b> function returns a pointer to a create item.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +81,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Reads data from  the configuration space of the specified PCI Express SR-IOV Virtual Function (VF).
 
 
+
 ## -prototype
 
 ````
@@ -64,52 +65,64 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param Data [out]
 
 A pointer to buffer that contains the configuration information to be read from the VF's configuration space.
+
 
 ### -param VfIndex [in]
 
 A zero-based index of the VF to which this read operation applies.
 
+
 ### -param Offset [in]
 
 An offset in bytes to the start of the VF’s configuration space where the read begins.
+
 
 ### -param Length [in]
 
 The length, in bytes, of the data to read from the configuration space.
 
+
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to read from the configuration space of a specific virtual function. 
 
 The PF driver registers its implementation by setting the <b>ReadVfConfig</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,9 +133,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FILTER_REPLY_HEADER structure contains message reply header information. 
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _FILTER_REPLY_HEADER {
 
 Status value to be returned for the original message. 
 
+
 ### -field MessageId
 
 Unique ID received in the <b>MessageId</b> field of the original message. 
 
+
 ## -remarks
 This structure is allocated by a user-mode application. It is a container for a reply that the application sends in response to a message received from a kernel-mode minifilter or minifilter instance. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,5 +93,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILTER_REPLY_HEADER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

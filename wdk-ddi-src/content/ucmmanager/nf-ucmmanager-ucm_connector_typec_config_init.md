@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Initializes the <a href="buses.ucm_connector_type_c_config">UCM_CONNECTOR_TYPEC_CONFIG</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -60,16 +61,20 @@ void UCM_CONNECTOR_TYPE_C_CONFIG_INIT(
 
 Pointer to a caller-allocated <a href="buses.ucm_connector_type_c_config">UCM_CONNECTOR_TYPEC_CONFIG</a> structure to initialize.
 
+
 ### -param SupportedOperatingModes [in]
 
 Indicates the operating mode of the connector. This value is a bitwise OR of <a href="buses.ucm_type_c_operating_mode">UCM_TYPEC_OPERATING_MODE</a>-typed flags.
+
 
 ### -param SupportedPowerSourcingCapabilities [in]
 
 Indicates the power source capabilities of the connector. This value is a bitwise OR of <a href="buses.ucm_type_c_current">UCM_TYPEC_CURRENT</a>-typed flags.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -79,38 +84,47 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

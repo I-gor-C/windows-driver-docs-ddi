@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfusb.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,25 +16,25 @@ Wdfusb.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_USB_CONTINUOUS_READER_CONFIG_INIT function](nf-wdfusb-wdf-usb-continuous-reader-config-init.md) | The WDF_USB_CONTINUOUS_READER_CONFIG_INIT function initializes a WDF_USB_CONTINUOUS_READER_CONFIG structure. |
-| [WDF_USB_CONTROL_SETUP_PACKET_INIT function](nf-wdfusb-wdf-usb-control-setup-packet-init.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a standard USB control transfer. |
-| [WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function](nf-wdfusb-wdf-usb-control-setup-packet-init-class.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a device class-specific USB control transfer. |
-| [WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function](nf-wdfusb-wdf-usb-control-setup-packet-init-feature.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that sets or clears a device feature. |
-| [WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function](nf-wdfusb-wdf-usb-control-setup-packet-init-get-status.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that obtains device status. |
-| [WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function](nf-wdfusb-wdf-usb-control-setup-packet-init-vendor.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a vendor-specific USB control transfer. |
-| [WDF_USB_DEVICE_CREATE_CONFIG_INIT function](nf-wdfusb-wdf-usb-device-create-config-init.md) | The WDF_USB_DEVICE_CREATE_CONFIG_INIT function initializes a WDF_USB_DEVICE_CREATE_CONFIG structure. |
-| [WDF_USB_DEVICE_INFORMATION_INIT function](nf-wdfusb-wdf-usb-device-information-init.md) | The WDF_USB_DEVICE_INFORMATION_INIT function initializes a driver's WDF_USB_DEVICE_INFORMATION structure. |
-| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function](nf-wdfusb-wdf-usb-device-select-config-params-init-deconfig.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can deconfigure a USB device. |
-| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_INTERFACES_DESCRIPTORS function](nf-wdfusb-wdf-usb-device-select-config-params-init-interfaces-descriptors.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_INTERFACES_DESCRIPTORS function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can specify a configuration by using USB descriptors. |
-| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_MULTIPLE_INTERFACES function](nf-wdfusb-wdf-usb-device-select-config-params-init-multiple-interfaces.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_MULTIPLE_INTERFACES function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can configure a device to use multiple interfaces. |
-| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_SINGLE_INTERFACE function](nf-wdfusb-wdf-usb-device-select-config-params-init-single-interface.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_SINGLE_INTERFACE function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can configure a device to use a single, specified interface. |
-| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function](nf-wdfusb-wdf-usb-device-select-config-params-init-urb.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can specify a configuration by using a URB. |
-| [WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_DESCRIPTOR function](nf-wdfusb-wdf-usb-interface-select-setting-params-init-descriptor.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_DESCRIPTOR function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying an interface descriptor. |
-| [WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING function](nf-wdfusb-wdf-usb-interface-select-setting-params-init-setting.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying a handle to an interface object and an alternate setting for the interface. |
-| [WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function](nf-wdfusb-wdf-usb-interface-select-setting-params-init-urb.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying a URB. |
-| [WDF_USB_PIPE_DIRECTION_IN function](nf-wdfusb-wdf-usb-pipe-direction-in.md) | The WDF_USB_PIPE_DIRECTION_IN function determines whether a specified USB endpoint is an input endpoint. |
-| [WDF_USB_PIPE_DIRECTION_OUT function](nf-wdfusb-wdf-usb-pipe-direction-out.md) | The WDF_USB_PIPE_DIRECTION_OUT function determines whether a specified USB endpoint is an output endpoint. |
-| [WDF_USB_PIPE_INFORMATION_INIT function](nf-wdfusb-wdf-usb-pipe-information-init.md) | The WDF_USB_PIPE_INFORMATION_INIT function initializes a WDF_USB_PIPE_INFORMATION structure. |
+| [WDF_USB_CONTINUOUS_READER_CONFIG_INIT function](nf-wdfusb-wdf_usb_continuous_reader_config_init.md) | The WDF_USB_CONTINUOUS_READER_CONFIG_INIT function initializes a WDF_USB_CONTINUOUS_READER_CONFIG structure. |
+| [WDF_USB_CONTROL_SETUP_PACKET_INIT function](nf-wdfusb-wdf_usb_control_setup_packet_init.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a standard USB control transfer. |
+| [WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function](nf-wdfusb-wdf_usb_control_setup_packet_init_class.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a device class-specific USB control transfer. |
+| [WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function](nf-wdfusb-wdf_usb_control_setup_packet_init_feature.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that sets or clears a device feature. |
+| [WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function](nf-wdfusb-wdf_usb_control_setup_packet_init_get_status.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that obtains device status. |
+| [WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function](nf-wdfusb-wdf_usb_control_setup_packet_init_vendor.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a vendor-specific USB control transfer. |
+| [WDF_USB_DEVICE_CREATE_CONFIG_INIT function](nf-wdfusb-wdf_usb_device_create_config_init.md) | The WDF_USB_DEVICE_CREATE_CONFIG_INIT function initializes a WDF_USB_DEVICE_CREATE_CONFIG structure. |
+| [WDF_USB_DEVICE_INFORMATION_INIT function](nf-wdfusb-wdf_usb_device_information_init.md) | The WDF_USB_DEVICE_INFORMATION_INIT function initializes a driver's WDF_USB_DEVICE_INFORMATION structure. |
+| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function](nf-wdfusb-wdf_usb_device_select_config_params_init_deconfig.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can deconfigure a USB device. |
+| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_INTERFACES_DESCRIPTORS function](nf-wdfusb-wdf_usb_device_select_config_params_init_interfaces_descriptors.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_INTERFACES_DESCRIPTORS function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can specify a configuration by using USB descriptors. |
+| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_MULTIPLE_INTERFACES function](nf-wdfusb-wdf_usb_device_select_config_params_init_multiple_interfaces.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_MULTIPLE_INTERFACES function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can configure a device to use multiple interfaces. |
+| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_SINGLE_INTERFACE function](nf-wdfusb-wdf_usb_device_select_config_params_init_single_interface.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_SINGLE_INTERFACE function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can configure a device to use a single, specified interface. |
+| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function](nf-wdfusb-wdf_usb_device_select_config_params_init_urb.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can specify a configuration by using a URB. |
+| [WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_DESCRIPTOR function](nf-wdfusb-wdf_usb_interface_select_setting_params_init_descriptor.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_DESCRIPTOR function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying an interface descriptor. |
+| [WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING function](nf-wdfusb-wdf_usb_interface_select_setting_params_init_setting.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying a handle to an interface object and an alternate setting for the interface. |
+| [WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function](nf-wdfusb-wdf_usb_interface_select_setting_params_init_urb.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying a URB. |
+| [WDF_USB_PIPE_DIRECTION_IN function](nf-wdfusb-wdf_usb_pipe_direction_in.md) | The WDF_USB_PIPE_DIRECTION_IN function determines whether a specified USB endpoint is an input endpoint. |
+| [WDF_USB_PIPE_DIRECTION_OUT function](nf-wdfusb-wdf_usb_pipe_direction_out.md) | The WDF_USB_PIPE_DIRECTION_OUT function determines whether a specified USB endpoint is an output endpoint. |
+| [WDF_USB_PIPE_INFORMATION_INIT function](nf-wdfusb-wdf_usb_pipe_information_init.md) | The WDF_USB_PIPE_INFORMATION_INIT function initializes a WDF_USB_PIPE_INFORMATION structure. |
 | [WdfUsbInterfaceGetConfiguredPipe function](nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md) | The WdfUsbInterfaceGetConfiguredPipe method returns a handle to the framework pipe object that is associated with a specified USB device interface and pipe index. Optionally, the method also returns information about the pipe. |
 | [WdfUsbInterfaceGetConfiguredSettingIndex function](nf-wdfusb-wdfusbinterfacegetconfiguredsettingindex.md) | The WdfUsbInterfaceGetConfiguredSettingIndex method returns the alternate setting index that is currently selected for a specified USB device interface. |
 | [WdfUsbInterfaceGetDescriptor function](nf-wdfusb-wdfusbinterfacegetdescriptor.md) | The WdfUsbInterfaceGetDescriptor method retrieves the USB interface descriptor that is associated with a specified alternate setting of a specified USB interface. |
@@ -87,32 +92,32 @@ Wdfusb.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_USB_READERS_FAILED callback](nc-wdfusb-evt-wdf-usb-readers-failed.md) | A driver's EvtUsbTargetPipeReadersFailed event callback function informs the driver that a continuous reader has reported an error while processing a read request. |
-| [EVT_WDF_USB_READER_COMPLETION_ROUTINE callback](nc-wdfusb-evt-wdf-usb-reader-completion-routine.md) | A driver's EvtUsbTargetPipeReadComplete event callback function informs the driver that a continuous reader has successfully completed a read request. |
+| [EVT_WDF_USB_READERS_FAILED callback](nc-wdfusb-evt_wdf_usb_readers_failed.md) | A driver's EvtUsbTargetPipeReadersFailed event callback function informs the driver that a continuous reader has reported an error while processing a read request. |
+| [EVT_WDF_USB_READER_COMPLETION_ROUTINE callback](nc-wdfusb-evt_wdf_usb_reader_completion_routine.md) | A driver's EvtUsbTargetPipeReadComplete event callback function informs the driver that a continuous reader has successfully completed a read request. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_USB_CONTINUOUS_READER_CONFIG structure](ns-wdfusb--wdf-usb-continuous-reader-config.md) | The WDF_USB_CONTINUOUS_READER_CONFIG structure contains information that the framework uses to configure a continuous reader for a USB pipe. |
-| [WDF_USB_CONTROL_SETUP_PACKET structure](ns-wdfusb--wdf-usb-control-setup-packet.md) | The WDF_USB_CONTROL_SETUP_PACKET structure describes a setup packet for a USB control transfer. |
-| [WDF_USB_DEVICE_CREATE_CONFIG structure](ns-wdfusb--wdf-usb-device-create-config.md) | The WDF_USB_DEVICE_CREATE_CONFIG structure contains information that the framework uses to configure a framework USB device object. |
-| [WDF_USB_DEVICE_INFORMATION structure](ns-wdfusb--wdf-usb-device-information.md) | The WDF_USB_DEVICE_INFORMATION structure contains version and capability information for a USB device. |
-| [WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure](ns-wdfusb--wdf-usb-device-select-config-params.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure specifies USB device configuration parameters. |
-| [WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure](ns-wdfusb--wdf-usb-interface-select-setting-params.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure contains selection information for a USB interface. |
-| [WDF_USB_INTERFACE_SETTING_PAIR structure](ns-wdfusb--wdf-usb-interface-setting-pair.md) | The WDF_USB_INTERFACE_SETTING_PAIR structure specifies an alternate setting for a specified USB interface. |
-| [WDF_USB_PIPE_INFORMATION structure](ns-wdfusb--wdf-usb-pipe-information.md) | The WDF_USB_PIPE_INFORMATION structure contains information about a USB pipe and its endpoint. |
-| [WDF_USB_REQUEST_COMPLETION_PARAMS structure](ns-wdfusb--wdf-usb-request-completion-params.md) | The WDF_USB_REQUEST_COMPLETION_PARAMS structure contains parameters that are associated with the completion of an I/O request for a USB device. |
+| [_WDF_USB_CONTINUOUS_READER_CONFIG structure](ns-wdfusb-_wdf_usb_continuous_reader_config.md) | The WDF_USB_CONTINUOUS_READER_CONFIG structure contains information that the framework uses to configure a continuous reader for a USB pipe. |
+| [_WDF_USB_CONTROL_SETUP_PACKET structure](ns-wdfusb-_wdf_usb_control_setup_packet.md) | The WDF_USB_CONTROL_SETUP_PACKET structure describes a setup packet for a USB control transfer. |
+| [_WDF_USB_DEVICE_CREATE_CONFIG structure](ns-wdfusb-_wdf_usb_device_create_config.md) | The WDF_USB_DEVICE_CREATE_CONFIG structure contains information that the framework uses to configure a framework USB device object. |
+| [_WDF_USB_DEVICE_INFORMATION structure](ns-wdfusb-_wdf_usb_device_information.md) | The WDF_USB_DEVICE_INFORMATION structure contains version and capability information for a USB device. |
+| [_WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure](ns-wdfusb-_wdf_usb_device_select_config_params.md) | The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure specifies USB device configuration parameters. |
+| [_WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure](ns-wdfusb-_wdf_usb_interface_select_setting_params.md) | The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure contains selection information for a USB interface. |
+| [_WDF_USB_INTERFACE_SETTING_PAIR structure](ns-wdfusb-_wdf_usb_interface_setting_pair.md) | The WDF_USB_INTERFACE_SETTING_PAIR structure specifies an alternate setting for a specified USB interface. |
+| [_WDF_USB_PIPE_INFORMATION structure](ns-wdfusb-_wdf_usb_pipe_information.md) | The WDF_USB_PIPE_INFORMATION structure contains information about a USB pipe and its endpoint. |
+| [_WDF_USB_REQUEST_COMPLETION_PARAMS structure](ns-wdfusb-_wdf_usb_request_completion_params.md) | The WDF_USB_REQUEST_COMPLETION_PARAMS structure contains parameters that are associated with the completion of an I/O request for a USB device. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_USB_BMREQUEST_DIRECTION enumeration](ne-wdfusb--wdf-usb-bmrequest-direction.md) | The WDF_USB_BMREQUEST_DIRECTION enumeration identifies the data transfer direction for a USB control transfer. |
-| [WDF_USB_BMREQUEST_RECIPIENT enumeration](ne-wdfusb--wdf-usb-bmrequest-recipient.md) | The WDF_USB_BMREQUEST_RECIPIENT enumeration identifies the data transfer recipient for a USB control transfer. |
-| [WDF_USB_BMREQUEST_TYPE enumeration](ne-wdfusb--wdf-usb-bmrequest-type.md) | The WDF_USB_BMREQUEST_TYPE enumeration identifies the data transfer type for a USB control transfer. |
-| [WDF_USB_DEVICE_TRAITS enumeration](ne-wdfusb--wdf-usb-device-traits.md) | The WDF_USB_DEVICE_TRAITS enumeration identifies USB device traits. |
-| [WDF_USB_PIPE_TYPE enumeration](ne-wdfusb--wdf-usb-pipe-type.md) | The WDF_USB_PIPE_TYPE enumeration identifies the types of USB pipes. |
-| [WDF_USB_REQUEST_TYPE enumeration](ne-wdfusb--wdf-usb-request-type.md) | The WDF_USB_REQUEST_TYPE enumeration identifies the types of USB requests that a framework-based driver can send to a USB I/O target. |
-| [WdfUsbTargetDeviceSelectConfigType enumeration](ne-wdfusb--wdfusbtargetdeviceselectconfigtype.md) | The WdfUsbTargetDeviceSelectConfigType enumeration defines types of configuration operations for USB devices. |
-| [WdfUsbTargetDeviceSelectSettingType enumeration](ne-wdfusb--wdfusbtargetdeviceselectsettingtype.md) | The WdfUsbTargetDeviceSelectSettingType enumeration defines techniques for specifying an alternate setting for a USB interface. |
+| [_WDF_USB_BMREQUEST_DIRECTION enumeration](ne-wdfusb-_wdf_usb_bmrequest_direction.md) | The WDF_USB_BMREQUEST_DIRECTION enumeration identifies the data transfer direction for a USB control transfer. |
+| [_WDF_USB_BMREQUEST_RECIPIENT enumeration](ne-wdfusb-_wdf_usb_bmrequest_recipient.md) | The WDF_USB_BMREQUEST_RECIPIENT enumeration identifies the data transfer recipient for a USB control transfer. |
+| [_WDF_USB_BMREQUEST_TYPE enumeration](ne-wdfusb-_wdf_usb_bmrequest_type.md) | The WDF_USB_BMREQUEST_TYPE enumeration identifies the data transfer type for a USB control transfer. |
+| [_WDF_USB_DEVICE_TRAITS enumeration](ne-wdfusb-_wdf_usb_device_traits.md) | The WDF_USB_DEVICE_TRAITS enumeration identifies USB device traits. |
+| [_WDF_USB_PIPE_TYPE enumeration](ne-wdfusb-_wdf_usb_pipe_type.md) | The WDF_USB_PIPE_TYPE enumeration identifies the types of USB pipes. |
+| [_WDF_USB_REQUEST_TYPE enumeration](ne-wdfusb-_wdf_usb_request_type.md) | The WDF_USB_REQUEST_TYPE enumeration identifies the types of USB requests that a framework-based driver can send to a USB I/O target. |
+| [_WdfUsbTargetDeviceSelectConfigType enumeration](ne-wdfusb-_wdfusbtargetdeviceselectconfigtype.md) | The WdfUsbTargetDeviceSelectConfigType enumeration defines types of configuration operations for USB devices. |
+| [_WdfUsbTargetDeviceSelectSettingType enumeration](ne-wdfusb-_wdfusbtargetdeviceselectsettingtype.md) | The WdfUsbTargetDeviceSelectSettingType enumeration defines techniques for specifying an alternate setting for a USB interface. |

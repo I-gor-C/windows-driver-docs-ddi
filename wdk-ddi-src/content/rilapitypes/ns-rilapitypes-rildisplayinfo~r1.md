@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfo_2.htm
 old-project: netvista
 ms.assetid: f24d8122-ea07-477f-9cf9-4767cc0fbf86
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDISPLAYINFO, *LPRILDISPLAYINFO, RILDISPLAYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -88,6 +89,7 @@ typedef struct _RILDISPLAYINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

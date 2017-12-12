@@ -7,8 +7,8 @@ old-location: storage\dsmsetloadbalancepolicy_out.htm
 old-project: storage
 ms.assetid: d3479656-310f-4e2d-a671-296bc3e2f1ab
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DsmSetLoadBalancePolicy_OUT, DsmSetLoadBalancePolicy_OUT, *PDsmSetLoadBalancePolicy_OUT
+ms.date: 12/8/2017
+ms.keywords: _DsmSetLoadBalancePolicy_OUT, *PDsmSetLoadBalancePolicy_OUT, DsmSetLoadBalancePolicy_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>DsmSetLoadBalancePolicy_OUT</b> structure reports the output parameter of the <a href="storage.dsmsetloadbalancepolicy">DsmSetLoadBalancePolicy</a> method.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DsmSetLoadBalancePolicy_OUT {
 
 The status of the <a href="storage.dsmsetloadbalancepolicy">DsmSetLoadBalancePolicy</a> operation.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The status of the <a href="storage.dsmsetloadbalancepolicy">DsmSetLoadBalancePol
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

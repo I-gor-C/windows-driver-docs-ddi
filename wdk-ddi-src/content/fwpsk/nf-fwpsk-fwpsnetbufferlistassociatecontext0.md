@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistassociatecontext0.htm
 old-project: netvista
 ms.assetid: 31135396-303b-4b94-8616-a4b7be207fa1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsNetBufferListAssociateContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   list and configures notification for network buffer list events.
 
 
+
 ## -syntax
 
 ````
@@ -65,10 +66,12 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext0(
 
 A network buffer list that indicates one or more packets of interest to the callout driver.
 
+
 ### -param layerId [in]
 
 The identifier of the layer in which the context is being associated. When calling this function
      from the NDIS receive path, set this parameter to FWPS_LAYER_NON_WFP.
+
 
 ### -param context [in]
 
@@ -77,19 +80,23 @@ Arbitrary context information set by the callout driver. The filter engine will 
      <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">
      FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>.
 
+
 ### -param contextTag [in]
 
 A locally unique identifier obtained by calling the 
      <a href="netvista.fwpsnetbufferlistgettagforcontext0">
      FwpsNetBufferListGetTagForContext0</a> function.
 
+
 ### -param providerGUID [in]
 
 The provider GUID.
 
+
 ### -param deviceObject [in, out]
 
 A pointer to the callout driver's device object.
+
 
 ### -param notifyFn [in]
 
@@ -98,9 +105,11 @@ A pointer to the callout driver's
      FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a> function. The filter engine will send status notifications to this
      function.
 
+
 ### -param flags [in]
 
 This parameter is reserved for future use and is set to zero.
+
 
 ## -returns
 The 
@@ -114,6 +123,7 @@ The
 
  
 
+
 ## -remarks
 The 
     <b>FwpsNetBufferListAssociateContext0</b> function associates groups of packets with the callout driver.
@@ -122,11 +132,13 @@ The
 Before calling this function, the 
     <a href="netvista.fwpsnetbufferlistgettagforcontext0">FwpsNetBufferListGetTagForContext0</a> function must be called to obtain a context tag.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -137,14 +149,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,6 +170,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -165,9 +181,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -197,5 +215,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

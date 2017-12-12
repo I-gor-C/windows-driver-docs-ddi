@@ -7,8 +7,8 @@ old-location: netvista\ndis_wwan_home_provider2.htm
 old-project: netvista
 ms.assetid: B01039CF-F4AC-4374-BBB8-ACB204BC40E2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_WWAN_HOME_PROVIDER2, NDIS_WWAN_HOME_PROVIDER2, *PNDIS_WWAN_HOME_PROVIDER2
+ms.date: 12/8/2017
+ms.keywords: _NDIS_WWAN_HOME_PROVIDER2, *PNDIS_WWAN_HOME_PROVIDER2, NDIS_WWAN_HOME_PROVIDER2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NDIS_WWAN_HOME_PROVIDER2 structure describes details of a home network provider.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ The header with type, revision, and size information about the NDIS_WWAN_HOME_PR
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -70,39 +72,49 @@ The header with type, revision, and size information about the NDIS_WWAN_HOME_PR
 <tr>
 <td>
 Type
+
 </td>
 <td>
 NDIS_OBJECT_TYPE_DEFAULT
+
 </td>
 </tr>
 <tr>
 <td>
 Revision
+
 </td>
 <td>
 NDIS_WWAN_HOME_PROVIDER_REVISION_2
+
 </td>
 </tr>
 <tr>
 <td>
 Size
+
 </td>
 <td>
 sizeof(NDIS_WWAN_HOME_PROVIDER2)
+
 </td>
 </tr>
 </table>
  
+
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field uStatus
 
 The status of the home provider operation.
 
+
 ### -field Provider
 
 A formatted <a href="netvista.wwan_provider2">WWAN_PROVIDER2</a> object that describes the details of a home network provider.
+
 
 ## -remarks
 
@@ -112,14 +124,17 @@ A formatted <a href="netvista.wwan_provider2">WWAN_PROVIDER2</a> object that des
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,5 +151,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_HOME_PROVIDER2 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_HOME_PROVIDER2 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

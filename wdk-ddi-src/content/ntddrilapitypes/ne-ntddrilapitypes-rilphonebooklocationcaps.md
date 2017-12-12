@@ -7,7 +7,7 @@ old-location: netvista\rilphonebooklocationcaps.htm
 old-project: netvista
 ms.assetid: df2f059c-d1c3-4716-8254-47c71f0b4a7c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILPHONEBOOKLOCATIONCAPS, RILPHONEBOOKLOCATIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef enum _RILPHONEBOOKLOCATIONCAPS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

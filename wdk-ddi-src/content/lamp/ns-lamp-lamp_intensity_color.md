@@ -41,6 +41,7 @@ req.irql:
 This structure is the I/O parameter type of <a href="..\lamp\ni-lamp-ioctl_lamp_get_intensity_color.md">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="..\lamp\ni-lamp-ioctl_lamp_set_intensity_color.md">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct LAMP_INTENSITY_COLOR {
 
 Red light intensity in percentage (0-100).
 
+
 ### -field Green
 
 Green light intensity in percentage (0-100).
 
+
 ### -field Blue
 
 Blue light intensity in percentage (0-100).
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Blue light intensity in percentage (0-100).
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

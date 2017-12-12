@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 The<b> KsPinGetTrailingEdgeStreamPointer</b> function acquires the trailing edge stream pointer for the queue associated with the specified pin.
 
 
+
 ## -syntax
 
 ````
@@ -57,24 +58,31 @@ PKSSTREAM_POINTER KsPinGetTrailingEdgeStreamPointer(
 
 A pointer to the <a href="stream.kspin">KSPIN</a> structure for whose queue to return the trailing edge stream pointer.
 
+
 ### -param State [in]
 
 This parameter specifies the state in which to acquire the trailing edge stream pointer. Can be one of the following:
 
 
+
+
 ### -param KSSTREAM_POINTER_STATE_UNLOCKED
 
 Acquire the leading edge stream pointer regardless of whether it references a data frame or not. 
+
 No attempts can be made to access any data associated with the pointer until the pointer is locked. Also note that frames associated with an unlocked stream pointer can be canceled.
+
 
 ### -param KSSTREAM_POINTER_STATE_LOCKED
 
 Acquire and lock the leading edge stream pointer. If no data frame is associated with the stream pointer, return <b>NULL</b>. If a non<b>null</b> pointer is returned, it is a locked stream pointer and has a data frame associated with it. Frames associated with a locked stream pointer <i>cannot</i> be canceled. 
+
 </dd>
 </dl>
 
 ## -returns
 <b>KsPinGetTrailingEdgeStreamPointer</b> returns either a pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure representing the trailing edge stream pointer or <b>NULL</b>. A return value of <b>NULL</b> can indicate that there is no trailing edge for the queue associated with the pin. In this case, the pin descriptor probably does not specify that the pin should have a distinct trailing edge. Alternatively, <b>NULL</b> can indicate that there is no queue associated with the pin. In this case, the pin in question does not use the standard transport mechanism. A return value of <b>NULL</b> can also indicate that an attempt to lock the trailing edge failed. In other words, there is no data frame currently associated with the leading edge.
+
 
 ## -remarks
 The trailing edge stream pointer is a special pointer into the data stream that exists if and only if the pin descriptor for the pin specifies a distinct trailing edge. If this pointer exists, it points to the oldest data in the queue unless specifically advanced by a <b>KsStreamPointerAdvance</b><i>Xxx</i> or a <a href="stream.ksstreampointerunlock">KsStreamPointerUnlock</a> call. Older data can exist in the queue also if cloned stream pointers exist for frames older than the one pointed to by the trailing edge.
@@ -85,11 +93,13 @@ Data frames that reside in the window between the leading edge stream pointer an
 
 <b>KsPinGetTrailingEdgeStreamPointer</b> will not work unless the pin descriptor for the pin specifies that the queue is to have a distinct trailing edge by setting the KSPIN_FLAG_DISTINCT_TRAILING_EDGE flag.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,14 +110,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +131,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +142,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -160,5 +176,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetTrailingEdgeStreamPointer function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

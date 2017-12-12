@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddiarg_createcryptosession.htm
 old-project: display
 ms.assetid: 9e63a4eb-050b-4f12-ad43-00e62021abd3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the attributes of the cryptographic session to be created by the user-mode driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 ### -field CryptoType
 
 a GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. The GUID can be one of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -69,6 +71,7 @@ a GUID that indicates the encryption type, which the driver uses for the encrypt
 </td>
 <td width="60%">
 A 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher.
+
 </td>
 </tr>
 <tr>
@@ -78,19 +81,23 @@ A 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher.
 </td>
 <td width="60%">
 A proprietary encryption algorithm.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field DecodeProfile
 
 A GUID that specifies the DirectX Video Acceleration (DXVA) decode profile that the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. For a list of possible values, see <b>CreateCryptoSession</b>. If DXVA decoding will not be used, set this parameter to <b>NULL_GUID</b>.
+
 
 ### -field KeyExchangeType
 
 A GUID that specifies the type of key exchange.
 The following GUID is defined.
+
 <table>
 <tr>
 <th>Value</th>
@@ -103,6 +110,7 @@ The following GUID is defined.
 </td>
 <td width="60%">
 The caller will create the session key, encrypt it with RSA Encryption Scheme - Optimal Asymmetric Encryption Padding (RSAES-OAEP) by using the driver's public key, and pass the session key to the driver.
+
 </td>
 </tr>
 <tr>
@@ -114,7 +122,9 @@ The caller will create the session key, encrypt it with RSA Encryption Scheme - 
 The crypto session will be used purely for communication between user mode DRM component and the secure execution environment.
 
 
+
 When this GUID is specified, the following DDIs should not be called for the crypto session:
+
 <ul>
 <li>
 <a href="display.getcertificatesize">GetCertificateSize</a>
@@ -141,10 +151,12 @@ When this GUID is specified, the following DDIs should not be called for the cry
 
 The DRM commands are sent to the user mode driver by calling the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_negotiatecryptosessionkeyeschange.md">NegotiateCryptoSessionKeyExchange</a> function where the data passed is a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_key_exchange_hw_protection_data.md">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_DATA</a> structure.
 
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -154,22 +166,27 @@ The DRM commands are sent to the user mode driver by calling the <a href="..\d3d
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_forwarding_detail_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 6377CC08-A261-465A-AA04-0BE31EEACF01
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO, *PNDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO, NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO structure
@@ -40,10 +40,15 @@ req.irql: Any level
 ## -description
 
 The <b>NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</b> union specifies the information for forwarding a packet to one or more Hyper-V extensible switch ports. 
+
 This information is contained in the out-of-band (OOB) data of the packet's  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
 
+
+
 The <b>NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</b> union specifies the information for forwarding a packet to one or more Hyper-V extensible switch ports. 
+
 This information is contained in the out-of-band (OOB) data of the packet's  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+
 
 
 ## -syntax
@@ -77,33 +82,42 @@ The complete 64-bit <b>NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</b> va
 
 
 
+
 ### -field NumAvailableDestinations
 
 A value that specifies the number of unused extensible switch destination ports elements within an <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. For more information, see the Remarks section.
+
 
 ### -field SourcePortId
 
 The identifier of the source extensible switch port from which the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> originated. 
 
+
 ### -field SourceNicIndex
 
 A UINT32 value that specifies the index of the source network adapter that is connected to the extensible switch port specified by the <b>SourcePortId</b> member.
+
 For more information on this index value, see <a href="netvista.network_adapter_index_values">Network Adapter Index Values</a>.
+
 
 ### -field NativeForwardingRequired
 
 If this member is set to <b>TRUE</b>, packet is an NVGRE packet, and the Hyper-V Network Virtualization (HNV) component of the Hyper-V extensible switch will forward this packet. For more information, see <a href="netvista.hybrid_forwarding">Hybrid Forwarding</a>.
+
 This flag must not be written to by any extension.<div class="alert"><b>Note</b>  This flag is available only in NDIS 6.40 and later.</div>
 <div> </div>
 
 
-### -field Reserved1
-
-This member is reserved for future use by NDIS.
 
 ### -field Reserved1
 
 This member is reserved for future use by NDIS.
+
+
+### -field Reserved1
+
+This member is reserved for future use by NDIS.
+
 
 ### -field IsPacketDataSafe
 
@@ -111,18 +125,22 @@ If this member is set to <b>TRUE</b>, all of the packet data comes from trusted
     host memory. 
 
 
+
 ### -field SafePacketDataSize
 
 A value that specifies the number of consecutive bytes in the packet data that is located in  trusted host memory. This value is in units of bytes from the start of the packet data. The rest of the packet data (if any) after the <b>SafePacketDataSize</b> value is located in untrusted
     shared memory that is accessed by the Hyper-V child and parent partitions.
 
+
 For more information, see the Remarks section.
+
 <div class="alert"><b>Note</b>  This member is valid only if the <b>IsPacketDataSafe</b> member is set to <b>FALSE</b>.</div>
 <div> </div>
 
 ### -field Reserved2
 
 This member is reserved for future use by NDIS.
+
 
 ## -remarks
 Extensible switch extensions can use the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598259">NET_BUFFER_LIST_SWITCH_FORWARDING_DETAIL</a> macro to access the <b>NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</b> union in a <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
@@ -143,19 +161,23 @@ After the original packet has been duplicated, the extension must obtain the <b>
 
 For more information on how to duplicate packets in the extensible switch interface, see <a href="netvista.originating_packet_traffic">Originating Packet Traffic</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -200,5 +222,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO union%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

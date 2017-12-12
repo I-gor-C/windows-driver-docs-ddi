@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumbercategory.htm
 old-project: netvista
 ms.assetid: f1ad9a15-70c8-4331-b350-f681aa216aaf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILEMERGENCYNUMBERCATEGORY, RILEMERGENCYNUMBERCATEGORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -87,6 +88,7 @@ typedef enum _RILEMERGENCYNUMBERCATEGORY {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

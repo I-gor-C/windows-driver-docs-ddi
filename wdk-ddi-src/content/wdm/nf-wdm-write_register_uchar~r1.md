@@ -7,7 +7,7 @@ old-location: kernel\write_register_uchar.htm
 old-project: kernel
 ms.assetid: 2d97d31f-d8c6-45d6-9aee-69397a523bbd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: WRITE_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WRITE_REGISTER_UCHAR</b> routine writes a byte to the specified address.
 
 
+
 ## -syntax
 
 ````
@@ -58,21 +59,26 @@ VOID WRITE_REGISTER_UCHAR(
 
 Pointer to the register, which must be a mapped range in memory space.
 
+
 ### -param Value [in]
 
 Specifies a byte to be written to the register. 
 
+
 ## -returns
 None
 
+
 ## -remarks
 Callers of <b>WRITE_REGISTER_UCHAR</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +89,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +121,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -121,9 +132,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

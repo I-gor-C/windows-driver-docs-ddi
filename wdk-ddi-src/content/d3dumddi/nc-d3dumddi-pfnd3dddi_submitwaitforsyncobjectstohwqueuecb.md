@@ -7,7 +7,7 @@ old-location: display\pfnd3dddi_submitwaitforsyncobjectstohwqueuecb.htm
 old-project: display
 ms.assetid: 4FD92529-0F47-46FC-9567-D8C0A5D76728
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A callback to submit a wait command to the hardware queue.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_SUBMITWAITFORSYNCOBJECTSTOHWQ
 
 A handle to the device.
 
+
 ### -param submitWaitForSyncObjectsToHwQueue [in]
 
 A pointer to the structure holding information on submitting a wait command to the hardware queue.
+
 
 ## -returns
 <dl>
@@ -70,6 +73,7 @@ A pointer to the structure holding information on submitting a wait command to t
 
 This function might also return other HRESULT values.
 
+
 ## -remarks
 
 
@@ -78,6 +82,7 @@ This function might also return other HRESULT values.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

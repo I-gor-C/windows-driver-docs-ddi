@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3EA093AB-1D23-4744-997E-8C7072934628
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _MF_MDL_SHARED_PAYLOAD_KEY, *PMF_MDL_SHARED_PAYLOAD_KEY, MF_MDL_SHARED_PAYLOAD_KEY
+ms.keywords: _MF_MDL_SHARED_PAYLOAD_KEY, MF_MDL_SHARED_PAYLOAD_KEY, *PMF_MDL_SHARED_PAYLOAD_KEY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This union is used internally by the operating system.
 
 
+
 ## -syntax
 
 ````
@@ -61,23 +62,28 @@ typedef union _MF_MDL_SHARED_PAYLOAD_KEY {
 
 This member is used internally by the operating system.
 
+
 ### -field pHandle
 
 This member is used internally by the operating system.
+
 
 ### -field fHandle
 
 This member is used internally by the operating system.
 
+
 ### -field uPayload
 
 This member is used internally by the operating system.
+
 </dd>
 </dl>
 
 ### -field GMDLHandle
 
 This structure is used internally by the operating system.
+
 
 ## -remarks
 
@@ -87,6 +93,7 @@ This structure is used internally by the operating system.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

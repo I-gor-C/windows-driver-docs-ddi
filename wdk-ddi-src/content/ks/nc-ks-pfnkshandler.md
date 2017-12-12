@@ -41,6 +41,7 @@ req.irql:
 The minidriver-provided <i>KStrGetPropertyHandler</i> routine is called when Kernel Streaming receives a get property request.
 
 
+
 ## -prototype
 
 ````
@@ -61,25 +62,31 @@ NTSTATUS KStrGetPropertyHandler(
 
 Pointer to an IRP that contains the get property request.
 
+
 ### -param Request [in]
 
 Pointer to a <a href="stream.ksidentifier">KSIDENTIFIER</a> that identifies the specific request. This is typically a pointer to a <a href="stream.ksproperty">KSPROPERTY</a> structure.
+
 
 ### -param Data [in, out]
 
 Pointer to a caller-supplied buffer that specifies information relevant to the request.
 
+
 ## -returns
 Return STATUS_SUCCESS if the request is handled. Appropriate error values depend on the property being handled. Return STATUS_NOT_SUPPORTED to indicate that the property is not supported or STATUS_BUFFER_TOO_SMALL if the caller-allocated <i>Data</i> buffer is not large enough.
 
+
 ## -remarks
 The minidriver specifies this routine's address in the <b>GetPropertyHandler</b> member of the <a href="stream.ksproperty_item">KSPROPERTY_ITEM</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,6 +97,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,5 +117,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrGetPropertyHandler routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

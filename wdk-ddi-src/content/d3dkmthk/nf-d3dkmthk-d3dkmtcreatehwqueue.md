@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreatehwqueue.htm
 old-project: display
 ms.assetid: FD4E892F-DDC6-449A-B77F-6C7F8240E467
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTCreateHwQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to create a new hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ NTSTATUS D3DKMTCreateHwQueue(
 
 A structure holding the information needed to create a new hardware queue.
 
+
 ## -returns
 Returns STATUS_SUCCESS if called successfully. 
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ Returns STATUS_SUCCESS if called successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

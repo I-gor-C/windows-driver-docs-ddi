@@ -41,6 +41,7 @@ req.irql:
 The <b>KsRemoveSpecificIrpFromCancelableQueue</b> function removes the specified IRP from the specified queue. This is performed on an IRP that was previously acquired using <a href="stream.ksremoveirpfromcancelablequeue">KsRemoveIrpFromCancelableQueue</a>, but that was not actually removed from the queue. 
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ VOID KsRemoveSpecificIrpFromCancelableQueue(
 
 Points to I/O request packet.
 
+
 ## -returns
 None
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ None
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +81,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-crypto-session-policy-0030.htm
 old-project: display
 ms.assetid: b7574112-2cac-4bec-9039-9afeef4d2f51
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_CREATE_CRYPTO_SESSION_POLICY_0030, D3D12DDIARG_CREATE_CRYPTO_SESSION_POLICY_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Creates a crypto session policy.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3D12DDIARG_CREATE_CRYPTO_SESSION_POLICY_0030 {
 
 The key info.
 
+
 ### -field KeyInfoSize
 
 The key info size.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The key info size.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

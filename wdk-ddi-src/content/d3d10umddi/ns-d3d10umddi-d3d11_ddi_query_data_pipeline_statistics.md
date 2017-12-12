@@ -7,7 +7,7 @@ old-location: display\d3d11_ddi_query_data_pipeline_statistics.htm
 old-project: display
 ms.assetid: d82b4e91-6734-4644-811d-fb64cfb9f5c4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS, D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure describes statistics for each stage of the graphics pipeline that is used in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a> function to create a D3D10DDI_QUERY_PIPELINESTATS query type and in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querygetdata.md">QueryGetData</a> function to return information about the query. 
 
 
+
 ## -syntax
 
 ````
@@ -66,62 +67,77 @@ typedef struct D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS {
 
 The number of input assembler (IA) veritces. 
 
+
 ### -field IAPrimitives
 
 The number of IA primitives. 
+
 
 ### -field VSInvocations
 
 The number of vertex shader (VS) invocations. 
 
+
 ### -field GSInvocations
 
 The number of geometry shader (GS) invocations. 
+
 
 ### -field GSPrimitives
 
 The number of GS primitives. 
 
+
 ### -field CInvocations
 
 The number of clipper invocations. 
+
 
 ### -field CPrimitives
 
 The number of clipper primitives. 
 
+
 ### -field PSInvocations
 
 The number of pixel shader (PS) invocations. 
+
 
 ### -field HSInvocations
 
 The number of hull shader (HS) invocations. 
 
+
 ### -field DSInvocations
 
 The number of domain shader (DS) invocations. 
+
 
 ### -field CSInvocations
 
 The number of commute shader (CS) invocations. 
 
+
 ## -remarks
 The driver associates a D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure with the D3D11DDI_QUERY_PIPELINESTATS query type value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a> enumeration.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS is supported beginning with the Windows 7 operating system. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,5 +160,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

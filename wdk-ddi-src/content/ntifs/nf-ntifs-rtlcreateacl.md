@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlCreateAcl</b> routine creates and initializes an access control list (ACL). 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS RtlCreateAcl(
 
 Pointer to a caller-allocated buffer to receive the initialized ACL structure. This buffer must be at least <b>sizeof</b>(ACL),
 
+
 ### -param AclLength [in]
 
 Length, in bytes, of the buffer pointed to by the <i>Acl</i> parameter. This value must be large enough to contain the ACL header and all of the access-control entries (ACE) to be stored in the ACL. See the following Remarks section for information about calculating the size of an ACL. 
 
+
 ### -param AceRevision [in]
 
 ACL revision level of the ACE to be added. Windows version requirments are the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -78,6 +82,7 @@ ACL revision level of the ACE to be added. Windows version requirments are the f
 </td>
 <td width="60%">
 The revision level valid on all Windows versions.
+
 </td>
 </tr>
 <tr>
@@ -94,6 +99,7 @@ The revision level valid on all Windows versions.
 </table>
  
 
+
 ## -returns
 <b>RtlCreateAcl</b> can return one of the following status values:
 <dl>
@@ -108,6 +114,7 @@ The revision level valid on all Windows versions.
 
  
 
+
 ## -remarks
 The ACL that is initialized by <b>RtlCreateAcl</b> contains no access control entries (ACE). This ACL is empty, as opposed to being a nonexistent ACL. If an empty ACL is applied to an object, the ACL implicitly denies all access to that object. To add ACEs to the ACL, use <a href="ifsk.rtladdaccessallowedace">RtlAddAccessAllowedAce</a>.
 
@@ -119,11 +126,13 @@ To calculate the size of an ACL, use the following algorithm, substituting the a
 
 For more information about security and access control, see the documentation on these topics in thePlatform Software Development Kit (SDK).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +143,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,6 +154,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -154,6 +165,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -164,9 +176,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -193,5 +207,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCreateAcl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

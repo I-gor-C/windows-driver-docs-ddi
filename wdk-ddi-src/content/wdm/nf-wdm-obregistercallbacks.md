@@ -7,7 +7,7 @@ old-location: kernel\obregistercallbacks.htm
 old-project: kernel
 ms.assetid: 93593979-fe5f-48de-9c98-92acd43ec750
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ObRegisterCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ObRegisterCallbacks</b> routine registers a list of callback routines for thread, process, and desktop handle operations.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS ObRegisterCallbacks(
 
 A pointer to an <a href="kernel.ob_callback_registration">OB_CALLBACK_REGISTRATION</a> structure that specifies the list of callback routines and other registration information.
 
+
 ### -param RegistrationHandle [out]
 
 A pointer to a variable that receives a value that identifies the set of registered callback routines. The caller passes this value to the <a href="kernel.obunregistercallbacks">ObUnRegisterCallbacks</a> routine to unregister the set of callbacks. 
+
 
 ## -returns
 <b>ObRegisterCallbacks</b> returns an NTSTATUS value. This routine might return one of the following values:
@@ -82,14 +85,17 @@ A pointer to a variable that receives a value that identifies the set of registe
 
  
 
+
 ## -remarks
 A driver must unregister all callback routines before it unloads. You can unregister the callback routine by calling the <b>ObUnRegisterCallbacks</b> routine.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,14 +106,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista with Service Pack 1 (SP1) and Windows Server 2008.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +127,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +138,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +149,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -155,5 +168,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ObRegisterCallbacks routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ObRegisterCallbacks routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

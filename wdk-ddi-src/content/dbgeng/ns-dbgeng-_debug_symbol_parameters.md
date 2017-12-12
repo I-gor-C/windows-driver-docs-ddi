@@ -7,7 +7,7 @@ old-location: debugger\debug_symbol_parameters.htm
 old-project: debugger
 ms.assetid: c73ea2b0-e87a-4fb1-9164-ff14d43f1426
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>DEBUG_SYMBOL_PARAMETERS</b> structure describes a symbol in a symbol group.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _DEBUG_SYMBOL_PARAMETERS {
 
 The location in the target's virtual address space of the base of the module to which the symbol belongs.
 
+
 ### -field TypeId
 
 The type ID of the symbol.
+
 
 ### -field ParentSymbol
 
 The index within the symbol group of the symbol's parent symbol.  If the parent symbol is not known, <b>ParentSymbol</b> is DEBUG_ANY_ID.
 
+
 ### -field SubElements
 
 The number of children of the symbol.  If this symbol has never been expanded within this symbol group, this number will be an estimate that is based on the symbol's type.
+
 
 ### -field Flags
 
 The symbol flags.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541692">DEBUG_SYMBOL_XXX</a> for details.
 
+
 ### -field Reserved
 
 Set to zero.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Set to zero.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\pfnd3dddi_submitcommandtohwqueuecb.htm
 old-project: display
 ms.assetid: 8E8B0FE6-ACE5-4610-A0F7-95D426A4AA97
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A callback to submit a command to the hardware queue.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_SUBMITCOMMANDTOHWQUEUECB(
 
 A handle to the device.
 
+
 ### -param submitCommandToHwQueue [in]
 
 A pointer to the structure holding information on submitting a command to the hardware queue.
+
 
 ## -returns
 <dl>
@@ -70,6 +73,7 @@ A pointer to the structure holding information on submitting a command to the ha
 
 This function might also return other HRESULT values.
 
+
 ## -remarks
 
 
@@ -78,6 +82,7 @@ This function might also return other HRESULT values.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

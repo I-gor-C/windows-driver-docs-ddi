@@ -7,7 +7,7 @@ old-location: wdf\wdf_request_send_options_flags__umdf_.htm
 old-project: wdf
 ms.assetid: 02678466-aa8d-436d-8be3-b8a57218a106
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_REQUEST_SEND_OPTIONS_FLAGS, WDF_REQUEST_SEND_OPTIONS_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,9 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
+
       The <b>WDF_REQUEST_SEND_OPTIONS_FLAGS</b> enumeration type defines flags that a driver can specify when it calls <a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a>.
+
 
 
 ## -syntax
@@ -64,25 +66,31 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
 
 If set, the <i>Timeout</i> parameter of the <a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a> method is valid.
 
+
 ### -field WDF_REQUEST_SEND_OPTION_SYNCHRONOUS
 
 If set, UMDF sends the I/O request synchronously.
+
 
 ### -field WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE
 
 If set, UMDF sends the I/O request to the I/O target, regardless of the I/O target's state. If not set, UMDF queues the request if the target is stopped. Setting this flag allows a driver to send a request, such as a request to reset a USB pipe, to a device after the driver has called <a href="wdf.iwdfiotargetstatemanagement_stop">IWDFIoTargetStateManagement::Stop</a>. 
 
+
 ### -field WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET
 
 If set, the driver is sending the request asynchronously and does not need to be notified when the request is completed or canceled. The driver does not set an <a href="wdf.irequestcallbackrequestcompletion_oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a> callback function or call <a href="wdf.iwdfiorequest_complete">IWDFIoRequest::Complete</a> for the request. For more information about this flag, see the following Remarks section. 
+
 
 ### -field WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT
 
 If set, and if the I/O request type is <a href="wdf.wdf_request_type__umdf_">WdfRequestCreate</a>, the <a href="wdf.iwdfiorequest_send">Send</a> method attempts to pass the client's <a href="wdf.handling_client_impersonation">impersonation</a> level to the driver's I/O target. This value is available in UMDF versions 1.9 and later.
 
+
 ### -field WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE
 
 If set, UMDF ignores impersonation failures. You can use this value only with WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT. This value is available in UMDF versions 1.9 and later.
+
 
 ## -remarks
 A driver that sets the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag typically does not format the I/O request before it calls <a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a> to send the request to an I/O target. In fact, a driver that sets this flag must not call any of the <b>IWdfIoTarget::FormatRequestFor</b><i>Xxx</i> methods before it calls <b>IWDFIoRequest::Send</b>. The driver can use only the <a href="wdf.iwdfiorequest_formatusingcurrenttype">IWDFIoRequest::FormatUsingCurrentType</a> method to format the request.
@@ -95,27 +103,33 @@ For more information about client impersonation, see <a href="wdf.handling_clien
 
 For the KMDF version of this enumeration, see <a href="wdf.wdf_request_send_options_flags">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,5 +146,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

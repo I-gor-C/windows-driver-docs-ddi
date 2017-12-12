@@ -7,8 +7,8 @@ old-location: storage\sm_getrnidmgmtinfo_out.htm
 old-project: storage
 ms.assetid: e12bd494-4d2a-44a9-95dc-0bc78fa73a97
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT
+ms.date: 12/8/2017
+ms.keywords: _SM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The SM_GetRNIDMgmtInfo_OUT structure is used to receive output parameters from the SM_GetRNIDMgmtInfo method.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _SM_GetRNIDMgmtInfo_OUT {
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
 
+
 ### -field MgmtInfo
 
 A structure of type HBAFC3MgmtInfo that holds FC3 management information. The FC3 management information is used to configure the fibre channel adapter.
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the SM_GetRNIDMgmtInfo_OUTstructure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

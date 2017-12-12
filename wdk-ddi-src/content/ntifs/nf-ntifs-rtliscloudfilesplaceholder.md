@@ -42,6 +42,7 @@ The <b>RtlIsCloudFilesPlaceholder</b> routine determines if a file or a director
     based on the <b>FileAttributes</b> and <b>ReparseTag</b> values of the file. These values can be obtained by listing the directory containing the file or by directly querying <b>FileAttributeTagInfo</b> on the file.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ BOOLEAN RtlIsCloudFilesPlaceholder(
 
 Specifies the attributes of a file or directory.
 
+
 ### -param ReparseTag [in]
 
 The ReparseTag or EaSize of a file or directory.
 
+
 ## -returns
 This function returns <b>TRUE</b> if the file or directory is a CloudFiles partial or full placeholder. It  returns <b>FALSE</b> if either the
         file or directory is not a CloudFiles placeholder. 
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ This function returns <b>TRUE</b> if the file or directory is a CloudFiles parti
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -108,5 +116,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlIsCloudFilesPlaceholder routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

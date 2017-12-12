@@ -7,8 +7,8 @@ old-location: display\dxgkddi_settargetadjustedcolorimetry.htm
 old-project: display
 ms.assetid: C37E0DE1-E849-440F-A11A-BB0E3F50BDFA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/8/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql:
 Reports the colorimetry values selected by the OS for a target.
 
 
+
 ## -prototype
 
 ````
@@ -58,19 +59,23 @@ NTSTATUS APIENTRY DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY(
 
 [in] Identifies the adapter.
 
+
 ### -param TargetId [in]
 
 [in] The identifier of a display adapter's video present target.
 
+
 ### -param AdjustedColorimetry [in]
 
 [in] A DXGK_COLORIMETRY structure containing the colorimetry related fields for the monitor attached to this target after the OS has processed the display device descriptor, all overrides and any adjustments.
+
 
 ## -returns
 The driver returns STATUS_SUCCESS if it has updates its colorimetry values based on the supplied data.
 
 
 If the driver fails, the OS will revert to standard SDR values for all parameters, 709 primaries, 2.2 gamma and 8-nit per color component RGB wire format but it will not call the driver as this should never fail. Instead, the driver should also update its internal representation of the display device to be standard SDR. 
+
 
 
 ## -remarks
@@ -87,11 +92,13 @@ The FormatBitDepths and StandardColorimetryFlags in the DXGK_COLORIMETRY are zer
 This function is always called at PASSIVE level so the supporting code should be made pageable where possible.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

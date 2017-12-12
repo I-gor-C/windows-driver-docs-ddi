@@ -41,6 +41,7 @@ req.irql:
 This structure contains the ROI info structure for exposure.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_EXPOSURE {
 
 See the <a href="stream.kscamera_extendedprop_roi_info">KSCAMERA_EXTENDEDPROP_ROI_INFO</a> structure for more information.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

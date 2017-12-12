@@ -41,6 +41,7 @@ req.irql:
 The KSPROPERTY_TVAUDIO_CAPS_S structure describes the capability of a TV audio device, such as stereo versus mono audio support and language capabilities.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef struct {
 
 Specifies an initialized <a href="stream.ksproperty">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
+
 ### -field Capabilities
 
 Specifies the capabilities of the TV audio device. The minidriver returns the capabilities of the TV audio device by setting this member to one or more (logically ORed) values that are defined in <i>ksmedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -70,53 +73,66 @@ Specifies the capabilities of the TV audio device. The minidriver returns the ca
 <tr>
 <td>
 KS_TVAUDIO_MODE_MONO
+
 </td>
 <td>
 Indicates the device supports mono audio.
+
 </td>
 </tr>
 <tr>
 <td>
 KS_TVAUDIO_MODE_STEREO
+
 </td>
 <td>
 Indicates the device supports stereo audio.
+
 </td>
 </tr>
 <tr>
 <td>
 KS_TVAUDIO_MODE_LANG_A
+
 </td>
 <td>
 Indicates the device supports a primary (default) language.
+
 </td>
 </tr>
 <tr>
 <td>
 KS_TVAUDIO_MODE_LANG_B
+
 </td>
 <td>
 Indicates the device supports a second language.
+
 </td>
 </tr>
 <tr>
 <td>
 KS_TVAUDIO_MODE_LANG_C
+
 </td>
 <td>
 Indicates the device supports a third language.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field InputMedium
 
 Reserved for system use.
 
+
 ### -field OutputMedium
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -126,6 +142,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,5 +165,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_TVAUDIO_CAPS_S structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

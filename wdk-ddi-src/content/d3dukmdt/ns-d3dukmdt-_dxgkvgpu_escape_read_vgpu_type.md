@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_read_vgpu_type.htm
 old-project: display
 ms.assetid: 2D3D8927-74E3-438F-94CF-63456C7C7BBC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKVGPU_ESCAPE_READ_VGPU_TYPE, DXGKVGPU_ESCAPE_READ_VGPU_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure used to read the VGPU type of an escape.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DXGKVGPU_ESCAPE_READ_VGPU_TYPE {
 
 The header that is being processed.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The header that is being processed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

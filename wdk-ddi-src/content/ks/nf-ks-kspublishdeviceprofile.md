@@ -41,6 +41,7 @@ req.irql:
 The <b>KsPublishDeviceProfile</b> API is called to publish device profile information.
 
 
+
 ## -syntax
 
 ````
@@ -57,21 +58,26 @@ The <b>KsPublishDeviceProfile</b> API is called to publish device profile inform
 
 This is the same <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> used in the <a href="stream.ksinitializedeviceprofile">KsInitializeDeviceProfile</a> API.
 
+
 ### -param Profile [in]
 
 This is a camera profile of type <a href="stream.ksdevice_profile_info">KSDEVICE_PROFILE_INFO</a>.
 
+
 ## -returns
 Camera profile information will only be associated with the <b>KSCATEGORY_VIDEO_CAMERA</b> interface category.  Any filter factory created without this interface category and attempting to register a camera profile will result in this API returning a <b>STATUS_INVALID_PARAMETER</b>.
 
+
 ## -remarks
 This API will be called repeatedly for each profile the camera driver supports.  Each call may have different set of concurrency and data range information.  The <b>ProfileId</b> field of the <b>KSCAMERA_PROFILE_INFO</b> must be unique.  If the same <b>ProfileId</b> is used and the content of the profile information is different, the subsequent call will overwrite the earlier profile information.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

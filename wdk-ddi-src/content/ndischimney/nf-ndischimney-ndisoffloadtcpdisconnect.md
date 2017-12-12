@@ -7,7 +7,7 @@ old-location: netvista\ndisoffloadtcpdisconnect.htm
 old-project: netvista
 ms.assetid: f8abff30-b641-4581-8532-8292993ca9f6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisOffloadTcpDisconnect
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,11 +39,13 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 A protocol or intermediate driver calls the 
   <b>NdisOffloadTcpDisconnect</b> function to close the send half of an offloaded TCP connection. In addition,
   if the disconnect to be performed is a graceful disconnect, the protocol or intermediate driver can supply
   application data that the underlying offload target must transmit on the offloaded TCP connection before it
   sends a FIN segment.
+
 
 
 ## -syntax
@@ -67,6 +69,7 @@ A pointer to an
      <a href="netvista.referencing_offloaded_state_through_an_intermediate_driver">
      Referencing Offloaded State Through an Intermediate Driver</a>.
 
+
 ### -param NetBufferList [in]
 
 A pointer to a single 
@@ -74,10 +77,13 @@ A pointer to a single
      <a href="netvista.net_buffer">NET_BUFFER</a> structure is associated with this
      NET_BUFFER_LIST structure.
 
+
 ### -param Flags [in]
 
 As one of the following values, the type of disconnect to be performed:
      
+
+
 
 
 ### -param TCP_DISCONNECT_ABORTIVE_CLOSE
@@ -85,9 +91,11 @@ As one of the following values, the type of disconnect to be performed:
 Specifies that the offload target perform an abortive disconnect by sending an RST
        segment.
 
+
 ### -param TCP_DISCONNECT_GRACEFUL_CLOSE
 
 Specifies that the offload target perform a graceful disconnect by sending a FIN segment.
+
 </dd>
 </dl>
 
@@ -95,6 +103,7 @@ Specifies that the offload target perform a graceful disconnect by sending a FIN
 The 
      <b>NdisOffloadTcpDisconnect</b> function always returns NDIS_STATUS_PENDING. The disconnect operation is
      always completed asynchronously.
+
 
 ## -remarks
 In response to a call to its 
@@ -128,11 +137,13 @@ When the underlying driver or offload target subsequently completes the disconne
     <b>NdisTcpOffloadDisconnectComplete</b> function to propagate the completion of the disconnect
     operation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +154,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,6 +165,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -187,5 +200,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpDisconnect function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpDisconnect function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

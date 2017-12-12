@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Describes a Request Data Object (RDO). For information about these members, see the <a href="http://www.usb.org/developers/docs/usb20_docs/#usb20spec">Power Delivery specification</a>.
 
 
+
 ## -syntax
 
 ````
@@ -84,6 +85,7 @@ typedef union _UCM_PD_REQUEST_DATA_OBJECT {
 
 Size of the structure.
 
+
 ### -field Common
 
 
@@ -91,13 +93,16 @@ Size of the structure.
 
 Reserved.
 
+
 ### -field ObjectPosition
 
 Object position.
 
+
 ### -field Reserved2
 
 Reserved.
+
 </dd>
 </dl>
 
@@ -108,13 +113,16 @@ Reserved.
 
 Maximum current in 10 mA units.
 
+
 ### -field OperatingCurrentIn10mA
 
 Operating current in 10mA units.
 
+
 ### -field Reserved1
 
 Reserved.
+
 
 ### -field NoUsbSuspend
 
@@ -122,25 +130,31 @@ Indicates support for USB suspend.
 
 
 
+
 ### -field UsbCommunicationCapable
 
 USB communication capable. 
+
 
 ### -field CapabilityMismatch
 
 Capability Mismatch 
 
+
 ### -field GiveBackFlag
 
 GiveBack Flag.
+
 
 ### -field ObjectPosition
 
 Object Position.
 
+
 ### -field Reserved2
 
 Reserved for future use.
+
 </dd>
 </dl>
 
@@ -151,37 +165,46 @@ Reserved for future use.
 
 Maximum Operating Power in 250mW units. 
 
+
 ### -field OperatingPowerIn250mW
 
 Operating Power in 250mW units.
+
 
 ### -field Reserved1
 
 Reserved for future use.
 
+
 ### -field NoUsbSuspend
 
  USB Suspend. 
+
 
 ### -field UsbCommunicationCapable
 
 USB Communications Capable.
 
+
 ### -field CapabilityMismatch
 
 Capability Mismatch. 
+
 
 ### -field GiveBackFlag
 
 GiveBack Flag. 
 
+
 ### -field ObjectPosition
 
 Object Position.
 
+
 ### -field Reserved2
 
 Reserved.
+
 </dd>
 </dl>
 
@@ -193,38 +216,47 @@ Reserved.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

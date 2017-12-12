@@ -7,7 +7,7 @@ old-location: kernel\exsettimer.htm
 old-project: kernel
 ms.assetid: 0320AB36-CA88-40E7-859E-B940401474DD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExSetTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ExSetTimer</b> routine starts a timer operation and sets the timer to expire at the specified due time.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,27 @@ BOOLEAN ExSetTimer(
 
 A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="kernel.exallocatetimer">ExAllocateTimer</a> routine.
 
+
 ### -param DueTime [in]
 
 The absolute or relative time at which the timer is to expire. If the value of the <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes. An absolute time is expressed as the amount of time passed, in system time units, since the start of the year 1601.
+
 The <i>DueTime</i> parameter for a <a href="https://msdn.microsoft.com/B8F2B28C-A02B-4015-B392-3D30BC0229B8">high-resolution timer</a> must be a relative time (negative value), or the routine bug checks.
+
 
 ### -param Period [in]
 
 An optional period for the timer in system time units (100-nanosecond intervals). Must be less than or equal to MAXLONG. For a timer that is one-shot instead of periodic, set <i>Period</i> to zero.
 
+
 ### -param Parameters [in, optional]
 
 A pointer to an <a href="kernel.ext_set_parameters">EXT_SET_PARAMETERS</a> structure. The calling driver previously called the <a href="kernel.exinitializesettimerparameters">ExInitializeSetTimerParameters</a> routine to initialize this structure.
 
+
 ## -returns
 This routine returns <b>TRUE</b> if it cancels a timer that was pending at the time that the routine was called. Otherwise, the routine returns <b>FALSE</b>. For more information, see Remarks.
+
 
 ## -remarks
 Your driver can call this routine to set a timer to expire at a future time. The driver can then wait for the timer to expire. Or, the driver can implement a callback routine that is called when the timer expires.
@@ -97,11 +104,13 @@ To avoid excessive power consumption, a driver should not set the period of a lo
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265198">ExXxxTimer Routines and EX_TIMER Objects</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,14 +121,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +142,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -140,9 +153,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -172,5 +187,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetTimer routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetTimer routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

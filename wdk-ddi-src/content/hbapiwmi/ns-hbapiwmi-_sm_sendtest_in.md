@@ -7,7 +7,7 @@ old-location: storage\sm_sendtest_in.htm
 old-project: storage
 ms.assetid: 5bb0620e-b271-4af6-b528-b904910b8a6c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SM_SendTEST_IN, SM_SendTEST_IN, *PSM_SendTEST_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The SM_SendTEST_IN structure is used to provide input parameters to the SM_SendTEST method.
 
 
+
 ## -syntax
 
 ````
@@ -60,30 +61,37 @@ typedef struct _SM_SendTEST_IN {
 
 The local HBA port worldwide name (WWN).
 
+
 ### -field DestWWN
 
 The remote HBA port worldwide name (WWN) to which the command will be sent.
+
 
 ### -field DestFCID
 
 The address identifier of the remote port.
 
+
 ### -field ReqBufferSize
 
 The request buffer size.
+
 
 ### -field ReqBuffer
 
 The request buffer data.
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the SM_SendTEST_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\exallocatetimer.htm
 old-project: kernel
 ms.assetid: 4FCFC48A-97BC-48E0-BBA7-F9E8B8A7588A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExAllocateTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ExAllocateTimer</b> routine allocates and initializes a timer object.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ PEX_TIMER ExAllocateTimer(
 
 A pointer to a driver-implemented <a href="kernel.extimercallback">ExTimerCallback</a> callback routine. The operating system calls this routine when the timer expires. This parameter is optional and can be <b>NULL</b> if no callback routine is needed.
 
+
 ### -param CallbackContext [in, optional]
 
 A context value for the callback routine pointed to by the <i>Callback</i> parameter. The operating system passes this value as a parameter to the <i>ExTimerCallback</i> callback routine, if one is specified. This parameter is typically a pointer to a caller-defined structure that contains context information used by the callback routine. This parameter is optional and can be set to <b>NULL</b> if no context information is needed.
 
+
 ### -param Attributes [in]
 
 The timer attributes. Set this parameter to zero or to the bitwise-OR of one or more of the following timer flag bits.
+
 <table>
 <tr>
 <th>Timer flag bit</th>
@@ -85,12 +89,17 @@ The timer attributes. Set this parameter to zero or to the bitwise-OR of one or 
 </tr>
 </table>
  
+
 The EX_TIMER_NOTIFICATION flag bit can be set regardless of what other flag bits are set.
+
 The EX_TIMER_HIGH_RESOLUTION and EX_TIMER_NO_WAKE flag bits are mutually exclusive. If the caller sets both of these flag bits, the routine bug checks.
+
 For more information about timer attributes, see Remarks.
+
 
 ## -returns
 This routine returns a pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure, if the call is successful. This structure is the timer object that the routine has allocated and initialized. If the call fails, the routine returns <b>NULL</b>.
+
 
 ## -remarks
 This routine returns a pointer to the new timer object. To use the timer, the calling driver supplies this pointer in subsequent calls to the <a href="kernel.exsettimer">ExSetTimer</a>, <a href="kernel.excanceltimer">ExCancelTimer</a>, and <a href="kernel.exdeletetimer">ExDeleteTimer</a> routines. If the driver supplies a pointer to an <a href="kernel.extimercallback">ExTimerCallback</a> callback routine as an input parameter to the <b>ExAllocateTimer</b> routine, the operating system passes this timer object as an input parameter to the <i>ExTimerCallback</i> routine.
@@ -107,11 +116,13 @@ The <i>Callback</i> parameter is optional. A driver that does not supply an <i>E
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265198">ExXxxTimer Routines and EX_TIMER Objects</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,14 +133,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,6 +154,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +165,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -176,5 +193,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExAllocateTimer routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExAllocateTimer routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

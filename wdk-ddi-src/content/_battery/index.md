@@ -1,10 +1,17 @@
+---
+UID: NA:
+---
+
 # Battery
 
+## -description
 Overview of the Battery technology.
 
 To develop Battery, you need these headers:
 
  * [charging.h](..\charging\index.md)
+ * [ntpoapi.h](..\ntpoapi\index.md)
+ * [poclass.h](..\poclass\index.md)
  * [upssvc.h](..\upssvc\index.md)
 
 For the programming guide, see [Battery](https://docs.microsoft.com/en-us/windows-hardware/drivers/battery).
@@ -24,28 +31,32 @@ For the programming guide, see [Battery](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
-| [BATTERYPROVISIONINGSTATUS structure](..\charging\ns-charging--batteryprovisioningstatus.md) | This structure is for internal use only. |
-| [CAD_POWER_SOURCE_INFO structure](..\charging\ns-charging--cad-power-source-info.md) | This structure is for internal use only. |
-| [CAD_POWER_SOURCE_INFO_USB structure](..\charging\ns-charging--cad-power-source-info-usb.md) | This structure is for internal use only. |
-| [CHARGINGSTATUSCOMPLETE structure](..\charging\ns-charging--chargingstatuscomplete.md) | This structure is for internal use only. |
-| [CONFIGURABLE_CHARGER_PROPERTY_HEADER structure](..\charging\ns-charging--configurable-charger-property-header.md) | The CONFIGURABLE_CHARGER_PROPERTY_HEADER structure is a header that is used to create your own structure as an input to IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY. |
-| [POWERSOURCESTATUS structure](..\charging\ns-charging--powersourcestatus.md) | This struct is for internal use only. |
-| [POWERSOURCEUPDATE structure](..\charging\ns-charging--powersourceupdate.md) | This structure is for internal use only. |
-| [POWERSOURCEUPDATEEX structure](..\charging\ns-charging--powersourceupdateex.md) | This structure is for internal use only. |
+| [PBATTERY_REPORTING_SCALE structure](..\ntpoapi\ns-ntpoapi-pbattery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
+| [_BATTERYPROVISIONINGSTATUS structure](..\charging\ns-charging-_batteryprovisioningstatus.md) | This structure is for internal use only. |
+| [_BATTERY_INFORMATION structure](..\poclass\ns-poclass-_battery_information.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
+| [_BATTERY_MANUFACTURE_DATE structure](..\poclass\ns-poclass-_battery_manufacture_date.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
+| [_BATTERY_STATUS structure](..\poclass\ns-poclass-_battery_status.md) | The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to BatteryMiniQueryStatus. |
+| [_CAD_POWER_SOURCE_INFO structure](..\charging\ns-charging-_cad_power_source_info.md) | This structure is for internal use only. |
+| [_CAD_POWER_SOURCE_INFO_USB structure](..\charging\ns-charging-_cad_power_source_info_usb.md) | This structure is for internal use only. |
+| [_CHARGINGSTATUSCOMPLETE structure](..\charging\ns-charging-_chargingstatuscomplete.md) | This structure is for internal use only. |
+| [_CONFIGURABLE_CHARGER_PROPERTY_HEADER structure](..\charging\ns-charging-_configurable_charger_property_header.md) | The CONFIGURABLE_CHARGER_PROPERTY_HEADER structure is a header that is used to create your own structure as an input to IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY. |
+| [_POWERSOURCESTATUS structure](..\charging\ns-charging-_powersourcestatus.md) | This struct is for internal use only. |
+| [_POWERSOURCEUPDATE structure](..\charging\ns-charging-_powersourceupdate.md) | This structure is for internal use only. |
+| [_POWERSOURCEUPDATEEX structure](..\charging\ns-charging-_powersourceupdateex.md) | This structure is for internal use only. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [POWERSOURCEID enumeration](..\charging\ne-charging--powersourceid.md) | This enum is for internal use only. |
+| [_POWERSOURCEID enumeration](..\charging\ne-charging-_powersourceid.md) | This enum is for internal use only. |
 
 ## I/O control codes
 
 | Title   | Description   |
 | ---- |:---- |
-| [IOCTL_CAD_DISABLE_CHARGING IOCTL](..\charging\ni-charging-ioctl-cad-disable-charging.md) | This IOCTL is for internal use only. |
-| [IOCTL_CAD_GET_BATTERY_PROVISIONING_STATUS IOCTL](..\charging\ni-charging-ioctl-cad-get-battery-provisioning-status.md) | This IOCTL is for internal use only. |
-| [IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE IOCTL](..\charging\ni-charging-ioctl-cad-get-charging-status-complete.md) | This IOCTL is for internal use only. |
-| [IOCTL_CAD_POWER_SOURCE_UPDATE_EX IOCTL](..\charging\ni-charging-ioctl-cad-power-source-update-ex.md) | This IOCTL is for internal use only. |
-| [IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE IOCTL](..\charging\ni-charging-ioctl-internal-cad-power-source-update.md) | This IOCTL is for internal use only. |
-| [IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY IOCTL](..\charging\ni-charging-ioctl-internal-configure-charger-property.md) | The IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code is sent from a configurable charger to a device that handles configurable chargers. It configures charger properties. |
+| [IOCTL_CAD_DISABLE_CHARGING IOCTL](..\charging\ni-charging-ioctl_cad_disable_charging.md) | This IOCTL is for internal use only. |
+| [IOCTL_CAD_GET_BATTERY_PROVISIONING_STATUS IOCTL](..\charging\ni-charging-ioctl_cad_get_battery_provisioning_status.md) | This IOCTL is for internal use only. |
+| [IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE IOCTL](..\charging\ni-charging-ioctl_cad_get_charging_status_complete.md) | This IOCTL is for internal use only. |
+| [IOCTL_CAD_POWER_SOURCE_UPDATE_EX IOCTL](..\charging\ni-charging-ioctl_cad_power_source_update_ex.md) | This IOCTL is for internal use only. |
+| [IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE IOCTL](..\charging\ni-charging-ioctl_internal_cad_power_source_update.md) | This IOCTL is for internal use only. |
+| [IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY IOCTL](..\charging\ni-charging-ioctl_internal_configure_charger_property.md) | The IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code is sent from a configurable charger to a device that handles configurable chargers. It configures charger properties. |

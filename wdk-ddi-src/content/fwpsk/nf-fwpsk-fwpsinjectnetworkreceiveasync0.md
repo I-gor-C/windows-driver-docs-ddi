@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectnetworkreceiveasync0.htm
 old-project: netvista
 ms.assetid: c34b2be1-fe1c-4a99-ac9c-ddd40b97d8d0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsInjectNetworkReceiveAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>FwpsInjectNetworkReceiveAsync0</b> function injects packet data into the receive data path.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ An injection handle that was previously created by a call to the
      <a href="netvista.fwpsinjectionhandlecreate0">FwpsInjectionHandleCreate0</a> function with the 
      <i>flags</i> parameter set to FWPS_INJECTION_TYPE_NETWORK.
 
+
 ### -param injectionContext [in, optional]
 
 An optional handle to the injection context. If specified, it can be obtained by calling the 
@@ -74,9 +76,11 @@ An optional handle to the injection context. If specified, it can be obtained by
      <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.
 
+
 ### -param flags [in]
 
 Reserved. Callout drivers must set this parameter to zero.
+
 
 ### -param compartmentId [in]
 
@@ -91,6 +95,7 @@ The identifier of the routing compartment into which the packet data is injected
      the 
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.
 
+
 ### -param interfaceIndex [in]
 
 The index of the interface on which the original packet data was received. A callout driver should
@@ -99,6 +104,7 @@ The index of the interface on which the original packet data was received. A cal
      parameter if the packet is to be injected into the same interface where the original packet was
      indicated.
 
+
 ### -param subInterfaceIndex [in]
 
 The index of the subinterface on which the original packet data was received. A callout driver
@@ -106,6 +112,7 @@ The index of the subinterface on which the original packet data was received. A 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function for this
      parameter if the packet is to be injected into the same subinterface where the original packet was
      indicated.
+
 
 ### -param netBufferList [in, out]
 
@@ -119,6 +126,7 @@ A pointer to a
      FwpsAllocateNetBufferAndNetBufferList0</a> function. The NET_BUFFER_LIST structure must begin with an
      IP header.
 
+
 ### -param completionFn [in]
 
 A pointer to a 
@@ -126,11 +134,13 @@ A pointer to a
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferList</i> parameter, has been injected into the network stack.
 
+
 ### -param completionContext [in, optional]
 
 A pointer to a callout driver–provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 The 
@@ -161,6 +171,7 @@ The
 
  
 
+
 ## -remarks
 A callout driver calls the 
     <b>FwpsInjectNetworkReceiveAsync0</b> function to inject packet data or a packet fragment into the receive
@@ -185,11 +196,13 @@ The injected packet can be indicated to the callout driver again. To prevent inf
     <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> set to
     <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b> to pass through unaltered.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -200,14 +213,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -218,6 +234,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -228,9 +245,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -279,5 +298,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkReceiveAsync0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkReceiveAsync0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

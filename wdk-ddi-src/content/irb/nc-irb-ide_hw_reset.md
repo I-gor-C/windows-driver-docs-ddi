@@ -7,7 +7,7 @@ old-location: storage\idehwreset.htm
 old-project: storage
 ms.assetid: 722810c8-ddf2-4910-8cf3-af3511d8c167
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: WdmlibIoGetAffinityInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b><i>IdeHwReset</i></b> miniport driver routine resets the channel.
 
 
+
 ## -prototype
 
 ````
@@ -59,19 +60,23 @@ BOOLEAN IdeHwReset(
 
 A pointer to the channel extension.
 
+
 ## -returns
 <b><i>IdeHwReset</i></b> returns <b>TRUE</b> if the reset operation succeeded.  Otherwise, it returns <b>FALSE</b>. 
+
 
 ## -remarks
 The <b><i>IdeHwReset</i></b> routine should complete all pending requests and reset the indicated channel.
 
 <b><i>IdeHwReset</i></b> can be called even if the miniport driver is not ready for another request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -39,29 +39,38 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IMiniport</code> interface is the generic miniport interface that all miniport objects support. <code>IMiniport</code> inherits from the <b>IUnknown</b> interface.
+
 <code>IMiniport</code> is the base interface for the following miniport interfaces:
 
+
 <a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
+
 
 
 <a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
 
 
+
 <a href="..\portcls\nn-portcls-iminiporttopology.md">IMiniportTopology</a>
+
 
 
 <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a>
 
 
+
 <a href="..\portcls\nn-portcls-iminiportwavepci.md">IMiniportWavePci</a>
+
 
 
 <a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniport</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -71,6 +80,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniport</b> interface inher
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

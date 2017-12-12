@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisInterlockedInsertTailList
-title: NdisInterlockedInsertTailList
+title: NdisInterlockedInsertTailList macro
 author: windows-driver-content
 description: The NdisInterlockedInsertTailList function inserts an entry, usually a packet, at the tail of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
 old-location: netvista\ndisinterlockedinserttaillist.htm
 old-project: netvista
 ms.assetid: cc455bb1-3574-4dfb-9462-f2c67632132b
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisInterlockedInsertTailList
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -31,88 +31,81 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level
-req.iface: 
 ---
 
-# NdisInterlockedInsertTailList function
+# NdisInterlockedInsertTailList macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisInterlockedInsertTailList</b> function inserts an entry, usually a packet, at the tail of a doubly
-  linked list so that access to the list is synchronized in a multiprocessor-safe way.</p>
+  linked list so that access to the list is synchronized in a multiprocessor-safe way.
+
 
 
 ## -syntax
 
 ````
 PLIST_ENTRY NdisInterlockedInsertTailList(
-  _In_ PLIST_ENTRY     ListHead,
-  _In_ PLIST_ENTRY     ListEntry,
-  _In_ PNDIS_SPIN_LOCK SpinLock
+  [in] PLIST_ENTRY     ListHead,
+  [in] PLIST_ENTRY     ListEntry,
+  [in] PNDIS_SPIN_LOCK SpinLock
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param ListHead [in]
 
-<dd>
-<p>A pointer to the head of the doubly linked list into which an entry is to be inserted.</p>
-</dd>
+A pointer to the head of the doubly linked list into which an entry is to be inserted.
+
 
 ### -param ListEntry [in]
 
-<dd>
-<p>A pointer to the entry to be inserted at the end of the list.</p>
-</dd>
+A pointer to the entry to be inserted at the end of the list.
+
 
 ### -param SpinLock [in]
 
-<dd>
-<p>A pointer to a caller-supplied spin lock, used to synchronize access to the list.</p>
-</dd>
-</dl>
+A pointer to a caller-supplied spin lock, used to synchronize access to the list.
 
-## -returns
-<p><b>NdisInterlockedInsertTailList</b> returns a pointer to the entry that was at the tail of the queue
-     before the given entry was inserted. If the queue was empty, it returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>Before calling 
+Before calling 
     <b>NdisInterlockedInsertTailList</b>, a driver must initialize the variable at 
     <i>ListHead</i> with the 
-    <a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a> function and
+    <a href="netvista.ndisinitializelisthead">NdisInitializeListHead</a> function and
     the variable at 
     <i>SpinLock</i> with the 
-    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> function. The
-    driver also must provide resident storage for these variables and for its internal queue.</p>
+    <a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a> function. The
+    driver also must provide resident storage for these variables and for its internal queue.
 
-<p>The caller-supplied spin lock prevents any other function from accessing the driver's internal queue
+The caller-supplied spin lock prevents any other function from accessing the driver's internal queue
     while 
     <b>NdisInterlockedInsertTailList</b> is inserting the given entry, even when the driver is running on a
-    multiprocessor machine.</p>
+    multiprocessor machine.
 
-<p><b>NdisInterlockedInsertTailList</b> raises the IRQL to DISPATCH_LEVEL when it acquires the given spin
+<b>NdisInterlockedInsertTailList</b> raises the IRQL to DISPATCH_LEVEL when it acquires the given spin
     lock and restores the original IRQL before it returns control. Consequently, any driver function that
     calls 
-    <b>NdisInterlockedInsertTailList</b> cannot be pageable code.</p>
+    <b>NdisInterlockedInsertTailList</b> cannot be pageable code.
 
-<p>To convert a returned value back to the address of the inserted entry, a driver can use the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a> macro.</p>
+To convert a returned value back to the address of the inserted entry, a driver can use the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a> macro.
 
-<p>If 
+If 
     <b>NdisInterlockedInsertTailList</b> is called at IRQL &gt;= DISPATCH_LEVEL, the storage for the 
-    <i>ListHead</i> parameter and the list entries must be resident.</p>
+    <i>ListHead</i> parameter and the list entries must be resident.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,19 +115,22 @@ PLIST_ENTRY NdisInterlockedInsertTailList(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/1eda279d-09ae-490d-9ffc-c027d4d421b3">
    NdisInterlockedInsertTailList (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>
-   NdisInterlockedInsertTailList (NDIS 5.1)</b>) in Windows XP.</p>
+   NdisInterlockedInsertTailList (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,7 +140,8 @@ PLIST_ENTRY NdisInterlockedInsertTailList(
 </tr>
 <tr>
 <th width="30%">
-<p>Library</p>
+Library
+
 </th>
 <td width="70%">
 <dl>
@@ -154,10 +151,12 @@ PLIST_ENTRY NdisInterlockedInsertTailList(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>Any level</p>
+Any level
+
 </td>
 </tr>
 </table>
@@ -168,20 +167,23 @@ PLIST_ENTRY NdisInterlockedInsertTailList(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a>
+<a href="netvista.ndisinitializelisthead">NdisInitializeListHead</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinterlockedinsertheadlist.md">
+<a href="netvista.ndisinterlockedinsertheadlist">
    NdisInterlockedInsertHeadList</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinterlockedremoveheadlist.md">
+<a href="netvista.ndisinterlockedremoveheadlist">
    NdisInterlockedRemoveHeadList</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedInsertTailList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedInsertTailList macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

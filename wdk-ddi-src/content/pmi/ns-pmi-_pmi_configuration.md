@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 976b812e-deb2-445f-b69d-e00d10c6e5d8
 ms.author: windowsdriverdev
 ms.date: 11/6/2017
-ms.keywords: _PMI_CONFIGURATION, *PPMI_CONFIGURATION, PMI_CONFIGURATION
+ms.keywords: _PMI_CONFIGURATION, PMI_CONFIGURATION, *PPMI_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The PMI_CONFIGURATION structure contains information about the current power metering and budgeting configuration of a power meter.
 
 
+
 ## -syntax
 
 ````
@@ -63,32 +64,42 @@ typedef struct _PMI_CONFIGURATION {
 
 A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.
 
+
 ### -field Size
 
 A value, in units of bytes, that specifies the size of the structure.
+
 
 ### -field ConfigurationType
 
 A <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a> enumeration value that specifies the data type of the <b>Configuration</b> member.
 
+
 ### -field Configuration
 
 A union of the supported Power Meter Interface (PMI) configuration structures. Based on the value of the <b>ConfigurationType</b> member, one of the following <b>Configuration</b> submembers is used to reference the following PMI configuration structures:
 
+
 ### -field MeasurementConfiguration
 
 A <a href="powermeter.pmi_budgeting_configuration">PMI_BUDGETING_CONFIGURATION</a> structure that contains information about the budgeting configuration of the power meter.
+
 The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiBudgetingConfiguration</b>.
+
 
 ### -field BudgetingConfiguration
 
 A <a href="powermeter.pmi_measurement_configuration">PMI_MEASUREMENT_CONFIGURATION</a> structure that contains information about the measurement configuration of the power meter.
+
 The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiMeasurementConfiguration</b>.
+
 
 ### -field ThresholdConfiguration
 
 A <a href="powermeter.pmi_threshold_configuration">PMI_THRESHOLD_CONFIGURATION</a> structure that contains information about the threshold configuration of the power meter.
+
 The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiThresoldConfiguration</b>.
+
 </dd>
 </dl>
 
@@ -105,19 +116,23 @@ The <b>ConfigurationType</b> member is set to <b>PmiBudgetingConfiguration</b>.
 
 The <b>Configuration</b> member contains data that is  formatted as a <a href="powermeter.pmi_budgeting_configuration">PMI_BUDGETING_CONFIGURATION</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +161,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20PMI_CONFIGURATION structure%20 RELEASE:%20(11/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

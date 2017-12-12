@@ -7,7 +7,7 @@ old-location: storage\tapeclassallocatesrbbuffer.htm
 old-project: storage
 ms.assetid: f6762d9b-5a3d-49a3-b954-48e4e4a9eacb
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: TapeClassAllocateSrbBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>TapeClassAllocateSrbBuffer</b> routine allocates an <b>Srb-&gt;DataBuffer</b>.
 
 
+
 ## -syntax
 
 ````
@@ -57,21 +58,26 @@ BOOLEAN TapeClassAllocateSrbBuffer(
 
 Pointer to the SRB.
 
+
 ### -param SrbBufferSize [in]
 
 Specifies the size, in bytes, of the <b>DataBuffer</b> to be allocated.
 
+
 ## -returns
 <b>TapeClassAllocateSrbBuffer </b>returns <b>TRUE</b> if the <b>DataBuffer</b> was allocated successfully, and <b>FALSE</b> if the buffer was not allocated.
 
+
 ## -remarks
 <b>TapeClassAllocateSrbBuffer </b>allocates an <b>Srb-&gt;DataBuffer</b> from nonpaged memory and initializes the members to zero. If the buffer already exists from an earlier call, it is freed and a new buffer allocated. A tape miniclass driver calls this routine to allocate a <b>DataBuffer</b> in a portable way.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\idarg_in_commitmodes.htm
 old-project: display
 ms.assetid: 242b7573-409a-4fdc-8ebf-596b8e6d41c7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_COMMITMODES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Gives information about the paths that need to be committed.
              
 
 
+
 ## -syntax
 
 ````
@@ -60,11 +61,13 @@ typedef struct IDARG_IN_COMMITMODES {
                      [in] The number of paths in the <b>pPaths</b> array
                  
 
+
 ### -field pPaths
 
 
                      [in] A pointer to the array of paths that need to be committed.
                  
+
 
 ## -remarks
 
@@ -74,6 +77,7 @@ typedef struct IDARG_IN_COMMITMODES {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

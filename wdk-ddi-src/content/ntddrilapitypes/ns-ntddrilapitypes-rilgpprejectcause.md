@@ -7,8 +7,8 @@ old-location: netvista\rilgpprejectcause.htm
 old-project: netvista
 ms.assetid: 3008a69e-25d8-4e54-afb3-317a8ca82d34
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILGPPREJECTCAUSE, RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE
+ms.date: 12/8/2017
+ms.keywords: RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef struct _RILGPPREJECTCAUSE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

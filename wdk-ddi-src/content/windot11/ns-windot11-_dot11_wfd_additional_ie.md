@@ -7,8 +7,8 @@ old-location: netvista\_dot11_wfd_additional_ie.htm
 old-project: netvista
 ms.assetid: F381C8DB-DC69-4820-BDCE-2F1DF3482FDD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE, *PDOT11_WFD_ADDITIONAL_IE
+ms.date: 12/8/2017
+ms.keywords: _DOT11_WFD_ADDITIONAL_IE, *PDOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -60,6 +60,7 @@ typedef struct _DOT11_WFD_ADDITIONAL_IE {
 ### -field Header
 
 Specifies the type, revision and size of the <b>DOT11_WFD_ADDITIONAL_IE</b> structure. The required settings for the members of <b>Header</b> are the following:
+
 <table>
 <tr>
 <th>Member</th>
@@ -80,46 +81,57 @@ Specifies the type, revision and size of the <b>DOT11_WFD_ADDITIONAL_IE</b> stru
 </table>
  
 
+
 ### -field uBeaconIEsOffset
 
 The offset, in bytes, of an array of beacon IEs. This offset is relative to the start of the buffer that contains this structure. The Wi-Fi Direct (WFD) port must add these addition IEs to the beacon packets when it is acting as a Group Owner.
+
 
 ### -field uBeaconIEsLength
 
 The length, in bytes, of the additional IEs at  <b>uBeaconIEsOffset</b>. This member is ignored when the WFD port is operating in device or client mode.
 
+
 ### -field uProbeResponseIEsOffset
 
 The offset, in bytes, of an array of probe response IEs. This offset is relative to the start of the buffer that contains this structure. The Wi-Fi Direct (WFD) port must add these addition IEs to the probe response packets when it is acting as a WFD device or Group Owner.
+
 
 ### -field uProbeResponseIEsLength
 
 The length, in bytes, of the additional IEs at  <b>uProbeResponseIEsOffset</b>. This member is ignored when the WFD port is operating in client mode.
 
+
 ### -field uDefaultRequestIEsOffset
 
 The offset, in bytes, of an array of probe request IEs. This offset is relative to the start of the buffer that contains this structure. The Wi-Fi Direct (WFD) port must add these addition IEs to the probe request packets it transmits.
+
 
 ### -field uDefaultRequestIEsLength
 
 The length, in bytes, of the additional IEs at  <b>uDefaultRequestIEsOffset</b>.
 
+
 ## -remarks
 The additional IEs at  <b>uDefaultRequestIEsOffset</b> are for probe requests originating from the driver only. Explicit device discovery requests from the system are initiated in an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>. The IEs for an explicit discovery request should come from those IEs in the OID_DOT11_WFD_DISCOVER_REQUEST request and not from the IEs at <b>uDefaultRequestIEsOffset</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

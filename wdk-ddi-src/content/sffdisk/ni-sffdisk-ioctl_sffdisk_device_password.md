@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 User-mode applications use this IOCTL to perform basic operations on a Secure Digital (SD) card, such as setting the password on the card, resetting the card, or locking and unlocking the card. For a description of this command, see the <i>Secure Digital I/O (SDIO)</i> specification.
+
 To perform this operation, call the <a href="base.deviceiocontrol">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) using the following parameters.
+
 
 
 ## -syntax
@@ -91,6 +93,7 @@ If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> re
 
 If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.
 
+
 ## -remarks
 
 
@@ -99,6 +102,7 @@ If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> retur
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

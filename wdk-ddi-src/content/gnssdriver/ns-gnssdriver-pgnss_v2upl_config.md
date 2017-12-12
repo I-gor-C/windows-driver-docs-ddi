@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: A1DCC547-8CAA-46B9-A855-5F591C69A3B0
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG
+ms.keywords: PGNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains V2UPL configuration information.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field MPC[MAX_SERVER_URL_NAME]
 
 MPC address and port number.
 
+
 ### -field PDE[MAX_SERVER_URL_NAME]
 
 PDE address and port number.
 
+
 ### -field ApplicationTypeIndicator_MR
 
 Application type indicator for any mobile originated location request to the MPC. It shall be set to the value for Microsoft resident applications based on intelligent platform.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Application type indicator for any mobile originated location request to the MPC
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

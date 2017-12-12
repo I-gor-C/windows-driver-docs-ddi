@@ -7,7 +7,7 @@ old-location: netvista\fwpscalloutunregisterbykey0.htm
 old-project: netvista
 ms.assetid: 24254e56-c7f5-4424-98b5-3b99bf210d5b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsCalloutUnregisterByKey0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>FwpsCalloutUnregisterByKey0</b> function unregisters a callout from the filter engine.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ A pointer to a GUID that uniquely identifies the callout that is being unregiste
      <a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a> or 
      <a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
+
 
 ## -returns
 The 
@@ -91,6 +93,7 @@ The
 
  
 
+
 ## -remarks
 A callout driver calls the 
     <b>FwpsCalloutUnregisterByKey0</b> function to unregister a callout from the filter engine, using the GUID
@@ -103,11 +106,13 @@ A callout driver calls the
 A callout driver cannot be unloaded until all of the callouts that were previously registered with the
     filter engine have been successfully unregistered.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -118,14 +123,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +144,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -146,9 +155,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -172,5 +183,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutUnregisterByKey0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutUnregisterByKey0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

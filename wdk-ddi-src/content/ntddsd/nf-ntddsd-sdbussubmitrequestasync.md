@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 The <b>SdBusSubmitRequestAsync</b> routine sends an asynchronous Secure Digital (SD) request to the bus driver interface.
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,30 @@ NTSTATUS SdBusSubmitRequestAsync(
 
 Contains the context information returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a> routine in the <b>Context</b> member of the <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a> structure.
 
+
 ### -param Packet [in]
 
 Pointer to a caller-supplied structure of type <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a> that describes the request.
+
 
 ### -param Irp [in]
 
 Points to a caller-supplied IRP that the SD library uses to transmit the request packet. The <b>SdBusSubmitRequestAsync</b> routine stores the packet in the next stack location of the IRP, which allows the caller to reuse IRPs created by a driver higher in the stack.
 
+
 ### -param CompletionRoutine [in]
 
 Pointer to a completion routine of type <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> that <b>SdBusSubmitRequestAsync</b> registers for the IRP specified in the <i>Irp </i>parameter.
+
 
 ### -param UserContext [in]
 
 Pointer to context data that the system passes to the completion routine registered for the IRP specified by the <i>Irp </i>parameter.
 
+
 ## -returns
 Returns STATUS_SUCCESS or STATUS_PENDING if the operation succeeds, or the appropriate error message if the operation fails.
+
 
 ## -remarks
 Callers of <b>SdBusSubmitRequestAsync</b> must be running at IRQL &lt;= DISPATCH_LEVEL.
@@ -86,11 +93,13 @@ Callers of <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909
 
 This request is handled asynchronously and might return STATUS_PENDING. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,9 +121,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -131,5 +143,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SdBusSubmitRequestAsync function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

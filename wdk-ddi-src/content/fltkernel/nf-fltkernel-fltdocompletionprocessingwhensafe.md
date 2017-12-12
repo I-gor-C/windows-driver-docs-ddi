@@ -41,6 +41,7 @@ req.irql: Any.
 If it is safe to do so, the <b>FltDoCompletionProcessingWhenSafe</b> function executes a minifilter driver postoperation callback routine.
 
 
+
 ## -syntax
 
 ````
@@ -61,28 +62,35 @@ BOOLEAN FltDoCompletionProcessingWhenSafe(
 
 Pointer to the callback data structure (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) for the I/O operation. Usually this is the same as the <i>Data</i> pointer that was passed to the postoperation callback routine (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) that called <b>FltDoCompletionProcessingWhenSafe</b>. 
 
+
 ### -param FltObjects [in]
 
 Pointer to the related objects structure (<a href="ifsk.flt_related_objects">FLT_RELATED_OBJECTS</a>) for the I/O operation. Usually this is the same as the <i>FltObjects</i> pointer that was passed to the postoperation callback routine that called <b>FltDoCompletionProcessingWhenSafe</b>. 
+
 
 ### -param CompletionContext [in, optional]
 
 Pointer to a caller-supplied context information that will be passed in to the callback function that is specified in the <i>SafePostCallback</i> parameter. 
 
+
 ### -param Flags [in]
 
 Bitmask of flags which specify how completion processing will be performed. Usually this is the same as the <i>Flags</i> value that was passed to the postoperation callback routine that called <b>FltDoCompletionProcessingWhenSafe</b>. For more information, see the following Remarks section. 
+
 
 ### -param SafePostCallback [in]
 
 Pointer to a caller-supplied <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>-typed callback routine that the operating system calls when it is safe to do so. 
 
+
 ### -param RetPostOperationStatus [out]
 
 Caller-allocated variable that receives the final status value for the I/O operation. For more information on how this parameter is set, see the following Remarks section.
 
+
 ## -returns
 <b>FltDoCompletionProcessingWhenSafe</b> returns <b>TRUE</b> if completion processing for the I/O operation can be performed immediately or the I/O operation was successfully posted to a worker thread; otherwise, it returns <b>FALSE</b>. 
+
 
 ## -remarks
 <b>FltDoCompletionProcessingWhenSafe</b> executes the <i>SafePostCallback</i> immediately if the caller is running at IRQL &lt;= APC_LEVEL. Otherwise, if it is safe to post the operation to a worker thread, the <i>SafePostCallback</i> processing is deferred until it can be called in a thread context where IRQL &lt;= APC_LEVEL.
@@ -107,11 +115,13 @@ If a minifilter calls <b>FltDoCompletionProcessingWhenSafe</b> and the <i>SafePo
 
 If the minifilter does return FLT_POSTOP_MORE_PROCESSING_REQUIRED from the <i>SafePostCallback</i>, the minifilter must call <a href="ifsk.fltcompletependedpostoperation">FltCompletePendedPostOperation</a> to resume completion processing.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,14 +132,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,6 +153,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +164,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any.
+
 </td>
 </tr>
 </table>
@@ -179,5 +195,8 @@ Any.
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltDoCompletionProcessingWhenSafe routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

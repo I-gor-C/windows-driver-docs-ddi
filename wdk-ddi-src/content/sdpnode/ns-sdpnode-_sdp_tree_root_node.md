@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: bde75364-387b-4f57-8942-1cf32652c02d
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
+ms.keywords: _SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The SDP_TREE_ROOT_NODE structure is the root element of a tree-based representat
   record.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct _SDP_TREE_ROOT_NODE {
 An 
      <a href="bltooth.sdp_node">SDP_NODE</a> structure that represents the root node of
      a tree-based representation of an SDP record.
+
 
 ## -remarks
 Several SDP functions access or output this structure when they build a tree-based SDP record or
@@ -90,19 +92,23 @@ The
     <a href="bltooth.sdpfindattributeintree">SdpFindAttributeInTree</a> function
     searches a populated SDP_TREE_ROOT_NODE structure for an SDP attribute value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +140,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_TREE_ROOT_NODE structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

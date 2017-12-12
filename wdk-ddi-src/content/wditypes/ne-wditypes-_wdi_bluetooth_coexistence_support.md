@@ -7,7 +7,7 @@ old-location: netvista\wdi_bluetooth_coexistence_support.htm
 old-project: netvista
 ms.assetid: 88642615-D5DD-4C0E-BAAA-308EB6050E77
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_BLUETOOTH_COEXISTENCE_SUPPORT, WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_BLUETOOTH_COEXISTENCE_SUPPORT enumeration defines Bluetooth coexistence support values.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef enum _WDI_BLUETOOTH_COEXISTENCE_SUPPORT {
 
 Unknown.
 
+
 ### -field WDI_BLUETOOTH_COEXISTENCE_PERFORMANCE_MAINTAINED
 
 Wi-Fi and Bluetooth work at the same performance level during coexistence.
+
 
 ### -field WDI_BLUETOOTH_COEXISTENCE_WIFI_DEGRADED_TO_1x1
 
 Wi-Fi centered. On a 2X2 device, Wi-Fi and Bluetooth coexists. Wi-Fi performance is reduced to 1X1 level.
 
+
 ### -field WDI_BLUETOOTH_COEXISTENCE_WIFI_THROUGHPUT_DEGRADED
 
 Bluetooth centered. When coexisting, Bluetooth has priority and restricts Wi-Fi performance.
 
+
 ### -field WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE
 
 Wi-Fi and Bluetooth are mutually exclusive. One of the two stops working.
+
 
 ## -remarks
 
@@ -85,22 +91,27 @@ Wi-Fi and Bluetooth are mutually exclusive. One of the two stops working.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

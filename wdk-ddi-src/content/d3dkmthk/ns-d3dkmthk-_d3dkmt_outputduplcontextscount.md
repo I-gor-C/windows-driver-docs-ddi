@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputduplcontextscount.htm
 old-project: display
 ms.assetid: db63b984-73da-4b66-8a5e-06704dd7c031
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the number of current <a href="direct3ddxgi.desktop_dup_api">Desktop Duplication API</a> (DDA) clients that are attached to a given video present network (VidPN).
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT {
 
 The ID of the video present network (VidPN).
 
+
 ### -field OutputDuplicationCount
 
 The number of current DDA clients that are attached to the VidPN specified by the <b>VidPnSourceId</b> member.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The number of current DDA clients that are attached to the VidPN specified by th
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

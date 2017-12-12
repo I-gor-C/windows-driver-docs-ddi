@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-crypto-session-0030.htm
 old-project: display
 ms.assetid: 71d65f25-ef9c-4a3d-ad1d-1d55e73bc0cb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_CREATE_CRYPTO_SESSION_0030, D3D12DDIARG_CREATE_CRYPTO_SESSION_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Creates a crypto session.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _D3D12DDIARG_CREATE_CRYPTO_SESSION_0030 {
 
 Represents the set of nodes.
 
+
 ### -field DecodeProfile
 
 The decode profile.
+
 
 ### -field ContentProtectionSystem
 
 The content protection system.
 
+
 ### -field BitstreamEncryption
 
 The bitstream encryption.
 
+
 ### -field Flags
 
 The crypto session flags.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ The crypto session flags.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

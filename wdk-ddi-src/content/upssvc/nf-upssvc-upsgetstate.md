@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UPSGetState</b> function returns the operational state of the UPS.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ DWORD UPSGetState(
 ### -param  
 
 None
+
 
 ## -returns
 The <b>UPSGetState</b> function returns one of the following DWORD values:
@@ -74,14 +76,17 @@ The <b>UPSGetState</b> function returns one of the following DWORD values:
 
  
 
+
 ## -remarks
 This is a nonblocking call. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +97,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

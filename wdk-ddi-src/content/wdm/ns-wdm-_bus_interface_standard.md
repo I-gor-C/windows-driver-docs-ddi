@@ -7,7 +7,7 @@ old-location: kernel\bus_interface_standard.htm
 old-project: kernel
 ms.assetid: cebe5b45-2a7a-4e33-aacb-5cc3ee112808
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _BUS_INTERFACE_STANDARD, *PBUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>BUS_INTERFACE_STANDARD</b> interface structure enables device drivers to make direct calls to parent bus driver routines. This structure defines the <a href="kernel.guid_bus_interface_standard">GUID_BUS_INTERFACE_STANDARD</a> interface.
 
 
+
 ## -syntax
 
 ````
@@ -65,37 +66,46 @@ typedef struct _BUS_INTERFACE_STANDARD {
 
 The size, in bytes, of this structure.
 
+
 ### -field Version
 
 The driver-defined interface version.
+
 
 ### -field Context
 
 A pointer to interface-specific context information.
 
+
 ### -field InterfaceReference
 
 A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.
+
 
 ### -field InterfaceDereference
 
 A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.
 
+
 ### -field TranslateBusAddress
 
 A pointer to a <a href="..\wdm\nc-wdm-translate_bus_address.md">TranslateBusAddress</a> routine that translates addresses on the parent bus to logical addresses.
+
 
 ### -field GetDmaAdapter
 
 A pointer to a <a href="kernel.getdmaadapter">GetDmaAdapter</a> routine that returns a DMA adapter structure (<a href="kernel.dma_adapter">DMA_ADAPTER</a>) for the target device.
 
+
 ### -field SetBusData
 
 A pointer to a <a href="..\wdm\nc-wdm-get_set_device_data.md">SetBusData</a> routine that writes data to the device's configuration space.
 
+
 ### -field GetBusData
 
 A pointer to a <a href="..\wdm\nc-wdm-get_set_device_data.md">GetBusData</a> routine that reads data from the device's configuration space.
+
 
 ## -remarks
 The <b>BUS_INTERFACE_STANDARD</b> structure is an extension of the <a href="kernel.interface">INTERFACE</a> structure.
@@ -118,11 +128,13 @@ If the driver is executing at IRQL = PASSIVE_LEVEL, it should obtain a device's 
 
 However, if a driver must obtain an adapter object while running at IRQL &gt;= DISPATCH_LEVEL, it cannot do so with <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>. In this case, the driver must query for the <b>BUS_INTERFACE_STANDARD</b> interface while still at IRQL = PASSIVE_LEVEL by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -178,5 +190,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BUS_INTERFACE_STANDARD structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BUS_INTERFACE_STANDARD structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

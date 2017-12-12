@@ -41,13 +41,16 @@ req.irql:
 The <b>IOCTL_GNSS_EXECUTE_SELFTEST</b> control code is used by the GNSS manufacturing test application to initiate a self test in the GNSS lower stack.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 A pointer to a <b>GNSS_SELFTESTCONFIG</b> structure.
 
+
 ### -input-buffer-length
 Set to sizeof(GNSS_SELFTESTCONFIG).
+
 
 
 
@@ -56,8 +59,10 @@ A pointer to a <b>GNSS_SELFTESTRESULT</b> structure.
 
 
 
+
 ### -output-buffer-length
 Set to sizeof(GNSS_SELFTESTRESULT).
+
 
 
 
@@ -73,6 +78,7 @@ Set to sizeof(GNSS_SELFTESTRESULT).
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 The GNSS test application must wait for a status response from the test, and be resilient to the GNSS driver not responding.
 
@@ -80,11 +86,13 @@ The GNSS driver must fail a new self test session request if there is already a 
 
 Once the GNSS driver accepts the self test session parameters, validates them and starts the test in the GNSS engine. The GNSS driver completes the I/O request after completing the tests and returning the status to the GNSS test application.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +118,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_EXECUTE_SELFTEST control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

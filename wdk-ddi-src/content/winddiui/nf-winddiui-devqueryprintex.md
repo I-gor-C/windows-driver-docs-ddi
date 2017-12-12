@@ -7,7 +7,7 @@ old-location: print\devqueryprintex.htm
 old-project: print
 ms.assetid: f4cd0fe6-acdc-43e6-8dd7-7b547b1ec7cc
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: DevQueryPrintEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A printer interface DLL's <b>DevQueryPrintEx</b> function determines if a specified print job is compatible with the printer's current configuration and can therefore be printed.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ BOOL DevQueryPrintEx(
 
 Caller-supplied pointer to a <a href="print.devqueryprint_info">DEVQUERYPRINT_INFO</a> structure.
 
+
 ## -returns
 If the print job can be printed, the function should return <b>TRUE</b>; otherwise, it should return <b>FALSE</b>.
+
 
 ## -remarks
 Printer interface DLLs must define a <b>DevQueryPrintEx</b> function. The function is called by the print spooler if the <b>Hold Mismatched Documents</b> option is checked on the <b>Advanced</b> page of the printer's property sheet. If the function returns <b>TRUE</b>, the spooler queues the print job for printing. Otherwise, the job is held, under the assumption that the printer will eventually be reconfigured so the job can print.
@@ -69,11 +72,13 @@ If the job can be printed, the function should just return <b>TRUE</b>. If the j
 
 Displayable text strings should be defined as string resources in a resource file.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +100,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +111,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

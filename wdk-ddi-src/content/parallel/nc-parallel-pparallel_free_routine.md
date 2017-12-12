@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 The <i>PPARALLEL_FREE_ROUTINE</i>-typed callback routine frees a parallel port. The system-supplied function driver for parallel ports supplies this routine.
 
 
+
 ## -prototype
 
 ````
@@ -56,8 +57,10 @@ typedef VOID (*PPARALLEL_FREE_ROUTINE)(
 
 Pointer to the device extension of a parallel port's functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>).
 
+
 ## -returns
 None
+
 
 ## -remarks
 To obtain a pointer to the system-supplied <i>PPARALLEL_FREE_ROUTINE</i> callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request, which returns a <a href="parports.parallel_port_information">PARALLEL_PORT_INFORMATION</a> structure. The <b>FreePort</b> member of the PARALLEL_PORT_INFORMATION structure is a pointer to this callback.
@@ -66,11 +69,13 @@ The driver should allocate a parallel port before freeing it. A driver can use <
 
 For more information, see <a href="https://msdn.microsoft.com/ea3a1998-9e31-4047-9193-6b402db222c9">Synchronizing the Use of a ParallelPort</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,6 +86,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,9 +97,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -114,5 +122,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PPARALLEL_FREE_ROUTINE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

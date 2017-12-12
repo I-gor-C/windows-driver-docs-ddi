@@ -7,7 +7,7 @@ old-location: display\d3dddicb_submitcommandtohwqueue.htm
 old-project: display
 ms.assetid: 5B650831-7AD7-4FEA-AC31-82F2B351BAD6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDICB_SUBMITCOMMANDTOHWQUEUE, D3DDDICB_SUBMITCOMMANDTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that holds information to queue hardware flags.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct _D3DDDICB_SUBMITCOMMANDTOHWQUEUE {
 
 This value is reserved for system use.
 
+
 ### -field Value
 
 The combined UINT used to operate over the values.
+
 
 ## -remarks
 
@@ -73,6 +76,7 @@ The combined UINT used to operate over the values.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

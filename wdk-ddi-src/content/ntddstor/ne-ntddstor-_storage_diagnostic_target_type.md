@@ -7,7 +7,7 @@ old-location: storage\storage_diagnostic_target_type.htm
 old-project: storage
 ms.assetid: 8BC338FB-7C76-49D3-96E5-0F20C4A250CE
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_DIAGNOSTIC_TARGET_TYPE, STORAGE_DIAGNOSTIC_TARGET_TYPE, *PSTORAGE_DIAGNOSTIC_TARGET_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>STORAGE_DIAGNOSTIC_TARGET_TYPE</b> enumeration specifies the target type of a storage diagnostic.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum _STORAGE_DIAGNOSTIC_TARGET_TYPE {
 
 Specifies the target type is undefined.
 
+
 ### -field StorageDiagnosticTargetTypePort
 
 Specifies the target type is a port driver.
+
 
 ### -field StorageDiagnosticTargetTypeMiniport
 
 Specifies the target type is a Miniport driver.
 
+
 ### -field StorageDiagnosticTargetTypeHbaFirmware
 
 Specifies the target type is a Hba Firmware driver.
 
+
 ### -field StorageDiagnosticTargetTypeMax
 
 Specifies the target type is a Max driver.
+
 
 ## -remarks
 
@@ -84,14 +90,17 @@ Specifies the target type is a Max driver.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

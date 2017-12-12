@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttaction.htm
 old-project: netvista
 ms.assetid: c080c4da-097d-4ae3-b1ca-96d9b5b6e8c9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLRTTACTION, RILCALLRTTACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef enum _RILCALLRTTACTION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\dot11_phy_type_info.htm
 old-project: netvista
 ms.assetid: 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO, *PDOT11_PHY_TYPE_INFO
+ms.date: 12/8/2017
+ms.keywords: _DOT11_PHY_TYPE_INFO, *PDOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,12 +70,14 @@ The type of PHY that the 802.11 station will use for the scan. The PHY type is d
 <div> </div>
 
 
+
 ### -field uPhyId
 
 The identifier (ID) of the PHY that the 802.11 station will use for the scan. The PHY ID is the
        index within the list of supported PHYs returned by the driver through a query of 
        <a href="netvista.oid_dot11_supported_phy_types">
        OID_DOT11_SUPPORTED_PHY_TYPES</a>.
+
 <div class="alert"><b>Note</b>  The miniport driver must ignore this member if it is operating in ExtSTA
        mode.</div>
 <div> </div>
@@ -85,12 +87,15 @@ The identifier (ID) of the PHY that the 802.11 station will use for the scan. Th
 If this member is <b>TRUE</b>, the 802.11 station uses the other members of this structure to configure
      the PHY for the scan operation.
      
+
 If this member is <b>FALSE</b>, the 802.11 station configures the PHY using its own settings for the scan
      operation.
+
 
 <div class="alert"><b>Note</b>  If the miniport driver is operating in ExtSTA mode, the operating system will
       always set this member to <b>FALSE</b>.</div>
 <div> </div>
+
 
 
 ### -field uProbeDelay
@@ -98,21 +103,26 @@ If this member is <b>FALSE</b>, the 802.11 station configures the PHY using its 
 The amount of time, in microseconds, that the 802.11 station must wait before transmitting an
      802.11 Probe Request frame during active scanning.
 
+
 ### -field uMinChannelTime
 
 The minimum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
      channel when scanning. One TU is 1024 microseconds.
      
+
 This member must be greater than or equal to 
      <b>uProbeDelay</b> .
+
 
 ### -field uMaxChannelTime
 
 The maximum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
      channel when scanning.
      
+
 This member must be greater than or equal to 
      <b>uProbeDelay</b> .
+
 
 ### -field ChDescriptionType
 
@@ -122,16 +132,20 @@ This member specifies the method used to interpret the entries in the
      
 
 
+
+
 ### -field ch_description_type_logical
        
 <dd>
 The channel entry is defined by a logical channel number to conform with the IEEE 802.11
        standard.
 
+
 ### -field ch_description_type_center_frequency
        
 <dd>
 The channel entry is defined, in units of megahertz (MHz), by a channel center frequency.
+
 </dd>
 </dl>
 
@@ -140,10 +154,12 @@ The channel entry is defined, in units of megahertz (MHz), by a channel center f
 The length, in bytes, of the 
      <b>ucChannelListBuffer</b> array. Each entry in this array is formatted as a ULONG data type.
 
+
 ### -field ucChannelListBuffer
 
 An array containing channel descriptions for the PHY type specified in the 
      <b>dot11PhyType</b> member.
+
 
 ## -remarks
 The 
@@ -160,20 +176,24 @@ For more information about the ExtSTA operation mode, see
     <a href="netvista.extensible_station_operation_mode">Extensible Station Operation
     Mode</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -193,5 +213,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

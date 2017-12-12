@@ -7,7 +7,7 @@ old-location: netvista\rilphoneentrystorelocation.htm
 old-project: netvista
 ms.assetid: 2a20e9c8-a8f2-4519-a22b-2444c46ba13a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILPHONEENTRYSTORELOCATION, RILPHONEENTRYSTORELOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef enum _RILPHONEENTRYSTORELOCATION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

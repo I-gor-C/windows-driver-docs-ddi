@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Swenum.h header
 
+## -description
 
 This header is used by Streaming media devices. For more information, see
 - [Streaming media devices](../_stream/index.md)
@@ -28,13 +33,13 @@ Swenum.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [BUS_INTERFACE_SWENUM structure](ns-swenum--bus-interface-swenum.md) | The BUS_INTERFACE_SWENUM structure describes the demand-load bus enumerator object's interface. |
-| [SWENUM_INSTALL_INTERFACE structure](ns-swenum--swenum-install-interface.md) | The SWENUM_INSTALL_INTERFACE structure describes a specific demand-load bus enumerator object interface to install. |
+| [_BUS_INTERFACE_SWENUM structure](ns-swenum-_bus_interface_swenum.md) | The BUS_INTERFACE_SWENUM structure describes the demand-load bus enumerator object's interface. |
+| [_SWENUM_INSTALL_INTERFACE structure](ns-swenum-_swenum_install_interface.md) | The SWENUM_INSTALL_INTERFACE structure describes a specific demand-load bus enumerator object interface to install. |
 
 ## I/O control codes
 
 | Title   | Description   |
 | ---- |:---- |
-| [IOCTL_SWENUM_GET_BUS_ID IOCTL](ni-swenum-ioctl-swenum-get-bus-id.md) | TBD |
-| [IOCTL_SWENUM_INSTALL_INTERFACE IOCTL](ni-swenum-ioctl-swenum-install-interface.md) | TBD |
-| [IOCTL_SWENUM_REMOVE_INTERFACE IOCTL](ni-swenum-ioctl-swenum-remove-interface.md) | TBD |
+| [IOCTL_SWENUM_GET_BUS_ID IOCTL](ni-swenum-ioctl_swenum_get_bus_id.md) | TBD |
+| [IOCTL_SWENUM_INSTALL_INTERFACE IOCTL](ni-swenum-ioctl_swenum_install_interface.md) | TBD |
+| [IOCTL_SWENUM_REMOVE_INTERFACE IOCTL](ni-swenum-ioctl_swenum_remove_interface.md) | TBD |

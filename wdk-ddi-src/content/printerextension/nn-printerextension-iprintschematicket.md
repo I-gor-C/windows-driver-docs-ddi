@@ -7,7 +7,7 @@ old-location: print\iprintschematicket_interface.htm
 old-project: print
 ms.assetid: 190B0B88-6018-4B43-8699-78427421D6FF
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 Provides the primary method to access and validate a PrintTicket.
+
 
 
 ## -inheritance
@@ -81,6 +82,7 @@ Sets the copy count.
 
  
 
+
 ## -members
 The <b>IPrintSchemaTicket</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -94,6 +96,7 @@ The <b>IPrintSchemaTicket</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Gets an  asynchronous PrintTicket commit operation context.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -102,6 +105,7 @@ Gets an  asynchronous PrintTicket commit operation context.
 </td>
 <td align="left" width="63%">
 Gets an <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a> object that represents the printer capabilities based on the current settings of this <b>IPrintSchemaTicket</b> object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -110,6 +114,7 @@ Gets an <a href="..\printerextension\nn-printerextension-iprintschemacapabilitie
 </td>
 <td align="left" width="63%">
 Gets a named feature from the PrintTicket, by name and full namespace URI.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -118,6 +123,7 @@ Gets a named feature from the PrintTicket, by name and full namespace URI.
 </td>
 <td align="left" width="63%">
 Gets a feature from the PrintTicket based on the specified key name.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -126,6 +132,7 @@ Gets a feature from the PrintTicket based on the specified key name.
 </td>
 <td align="left" width="63%">
 Notifies the print system that the XML DOM object has changed.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -134,6 +141,7 @@ Notifies the print system that the XML DOM object has changed.
 </td>
 <td align="left" width="63%">
 Gets an asynchronous PrintTicket validation operation context.
+
 </td>
 </tr>
 </table>Gets an  asynchronous PrintTicket commit operation context.
@@ -162,12 +170,15 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaTicket</b> interf
 
 <a href="print.iprintschematicket_jobcopiesalldocuments">JobCopiesAllDocuments</a>
 
+
 </td>
 <td align="left" width="10%">
 Read-only
+
 </td>
 <td align="left" width="63%">
 Gets the copy count.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -175,12 +186,15 @@ Gets the copy count.
 
 <a href="print.iprintschematicket_put_jobcopiesalldocuments">JobCopiesAllDocuments</a>
 
+
 </td>
 <td align="left" width="10%">
 Write-only
+
 </td>
 <td align="left" width="63%">
 Sets the copy count.
+
 </td>
 </tr>
 </table>
@@ -201,30 +215,37 @@ Sets the copy count.
 
  
 
+
 ## -remarks
 To obtain an IXMLDOMDocument2 object for the PrintTicket object, you must first dereference the <i>ppXmlNode</i> parameter of the <a href="print.iprintschemaelement_xmlnode">XmlNode</a> property (using *ppXmlNode ). This retrieves a pointer to an interface of type <b>IUnknown</b>. Use this pointer to  call the <b>QueryInterface</b> method of the PrintTicket object to access the underlying  IXMLDOMDocument2 object.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -250,5 +271,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaTicket interface%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaTicket interface%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

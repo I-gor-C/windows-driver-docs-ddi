@@ -7,7 +7,7 @@ old-location: print\printpropertiescollection.htm
 old-project: print
 ms.assetid: 824E8A5C-7530-4C7B-B093-386DD3D45A6B
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PrintPropertiesCollection, PrintPropertiesCollection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

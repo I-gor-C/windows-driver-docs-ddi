@@ -39,19 +39,25 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 IPortClsStreamResourceManager2 is used to manage the registration of audio stream resources. 
+
 To help ensure glitch-free operation, audio drivers must register their streaming resources. This allows the OS to manage resources to avoid interference between audio streaming and other subsystems. 
 
 Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. 
 
+
 <a href="audio.iportclsstreamresourcemanager_addstreamresource">IPortClsStreamResourceManager::AddStreamResource</a> expects that the caller is an audio miniport driver. <a href="audio.iportclsstreamresourcemanager2_addstreamresource2">IPortClsStreamResourceManager2::AddStreamResource2</a> does not assume that the caller is an audio miniport driver, and requires an explicit pointer to the Physical Device Object (PDO).
+
 The IPortClsStreamResourceManager2 interface is supported in Windows 10, version 1511 and later versions of Windows. IPortClsStreamResourceManager2 inherits from <a href="..\portcls\nn-portcls-iportclsstreamresourcemanager.md">IPortClsStreamResourceManager</a> and IUnknown.
+
 A WaveRT miniport driver optionally can use this interface instead of hard-linking with the <a href="audio.pcaddstreamresource">PcAddStreamResource</a> and <a href="audio.pcremovestreamresource">PcRemoveStreamResource</a>. This option is very useful when the 
 
 same audio miniport driver must run on previous versions of Windows. The audio miniport driver can query for the IID_IPortClsStreamResourceManager2 interface and register its resources only when PortCls supports the interface.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsStreamResourceManager2</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -61,6 +67,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsStreamResourceManager
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

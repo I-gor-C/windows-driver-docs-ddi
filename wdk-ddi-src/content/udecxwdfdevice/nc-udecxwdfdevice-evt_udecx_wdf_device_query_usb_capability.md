@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The UDE client driver's implementation to determine the capabilities that are supported by the emulated USB host controller.
 
 
+
 ## -prototype
 
 ````
@@ -64,9 +65,11 @@ NTSTATUS EvtUdecxWdfDeviceQueryUsbCapability(
 
 A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.
 
+
 ### -param CapabilityType [in]
 
 Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i>  values are  as follows:
+
 <ul>
 <li>GUID_USB_CAPABILITY_CHAINED_MDLS</li>
 <li>GUID_USB_CAPABILITY_SELECTIVE_SUSPEND</li>
@@ -78,21 +81,26 @@ Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i
 </ul>
    For information about the capabilities, see the Remarks section of <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a>.
 
+
 ### -param OutputBufferLength [in]
 
 The length, in bytes, of the request's output buffer, if an output buffer is available.
+
 
 ### -param OutputBuffer [out, optional]
 
 A pointer to a location that receives the buffer's address. Certain capabilities may need to provide additional information
         to the USB device emulation  class extension (UdeCx)  in this buffer.
 
+
 ### -param ResultLength [out]
 
 A location that, on return, contains the size, in bytes, of the information that the callback function stored in <i>OutputBuffer.</i>
 
+
 ## -returns
 If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. If a capability is not supported, the client driver can return NT_SUCCESS(status) equals FALSE, such as STATUS_UNSUCCESSFUL.
+
 
 ## -remarks
 The class extension invokes this callback function implemented by the client driver when the class extension receives a request to determine the emulated controller's capabilities. The callback is invoked only after <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> has returned, typically in <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>. This callback cannot be invoked after <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> has returned. 
@@ -103,35 +111,43 @@ The class extension reports the GUID_USB_CAPABILITY_SELECTIVE_SUSPEND capability
 
 For other GUIDs, the class extension invokes the client driver's implementation, such as GUID_USB_CAPABILITY_CHAINED_MDLS. The client driver is expected to determine support for I/O requests that use a chained MDL. If this capability is supported then, the <b>TransferBufferMdl</b> member of the <a href="buses.urb">URB</a> contains the request buffer. If chained MDL is not supported, the client driver does not receive <b>TransferBufferMdl</b> values that  point to chained MDLs.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,9 +158,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -159,5 +177,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

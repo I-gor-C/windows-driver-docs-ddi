@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: A1ED9DBD-67FF-4AE7-8E5E-016C2C89A79E
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _URS_ROLE, URS_ROLE, *PURS_ROLE
+ms.keywords: _URS_ROLE, *PURS_ROLE, URS_ROLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Defines values for roles supported by a USB dual-role controller.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _URS_ROLE {
 
 Internal use only. Must be 0.
 
+
 ### -field UrsRoleHost
 
 Indicates the host role of the controller.
 
+
 ### -field UrsRoleFunction
 
 Indicates the function role of the controller.
+
 
 ## -remarks
 
@@ -75,30 +79,37 @@ Indicates the function role of the controller.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

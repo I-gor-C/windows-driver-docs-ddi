@@ -44,6 +44,7 @@ The <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> routine allocates and formats
 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ NTSTATUS USBD_SelectInterfaceUrbAllocateAndBuild(
 
 USBD handle that is retrieved by the client driver in a previous call to  the <a href="buses.usbd_register">USBD_CreateHandle</a> routine.
 
+
 ### -param ConfigurationHandle [in]
 
 Handle returned by the USB driver stack in the  <b>UrbSelectConfiguration.ConfigurationHandle</b> member of the <a href="buses.urb">URB</a> structure, after the driver stack completes a select-configuration  request.
+
 
 ### -param InterfaceList [in]
 
 Pointer to a caller-allocated <a href="buses.usbd_interface_list_entry">USBD_INTERFACE_LIST_ENTRY</a>    structure. For more information, see Remarks.
 
+
 ### -param Urb [out]
 
 Pointer to a  <a href="buses.urb">URB</a> structure that receives the URB allocated by <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>. The client driver must free the URB when the driver has finished using it by calling <a href="buses.usbd_urbfree">USBD_UrbFree</a>.
+
 
 ## -returns
 The routine returns an NTSTATUS code. Possible  values include but are not limited to, the status codes listed in the following table.
@@ -89,6 +94,7 @@ The routine returns an NTSTATUS code. Possible  values include but are not limit
 
  
 
+
 ## -remarks
 The client driver must call the <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> routine after selecting a configuration in the device. After a select-configuration request completes, the client driver receives a configuration handle in the <b>UrbSelectConfiguration.ConfigurationHandle</b> member of the URB. That handle must be specified in the <i>ConfigurationHandle</i> parameter of <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>. 
 
@@ -103,11 +109,13 @@ After the select-interface request is complete, the USB driver stack populates <
 
 The client driver can reuse an URB allocated by <b>USBD_SelectInterfaceUrbAllocateAndBuild</b><i> only</i> for another select-interface request for the same alternate setting.  The client driver <i>must not</i> reuse the URB for any other type of request, or for another select-interface request for a different alternate setting.  Instead of allocating a new URB, reusing an existing URB  is the preferred approach in certain scenarios. Consider a USB audio device that has an interface with two alternate settings, defined for two bandwidth requirements. Setting 0 is defined  for zero bandwidth;  Setting 1 is defined to use a certain amount of bandwidth. The client driver wants to frequently switch between the two settings depending on whether the device is in use. To implement this scenario, the client driver can allocate two URBs for select-interface requests, one per setting. The client driver can use (and reuse) an URB for a select-interface request to select Setting 1 when there are sounds to send to the device. To conserve bandwidth when there are no sounds, the client driver can use (and reuse) the other URB to switch to Setting 0. This implementation prevents the client driver from allocating URBs for each of those select-interface requests, every time the driver needs to change the setting. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -118,14 +126,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +147,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -146,9 +158,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -163,5 +177,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_SelectInterfaceUrbAllocateAndBuild routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

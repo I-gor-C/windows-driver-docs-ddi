@@ -7,7 +7,7 @@ old-location: netvista\wdi_tx_complete_data.htm
 old-project: netvista
 ms.assetid: bf7951de-3368-4faf-9bae-272c6d76d1a0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The WDI_TX_COMPLETE_DATA structure defines TX completion data.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _WDI_TX_COMPLETE_DATA {
 
 The value of the sequence control field from the frame transmission.
 
+
 ### -field PnLength
 
 The MPDU PN length for the transmitted frame.
+
 
 ### -field RetryCount
 
 The number of attempts to transmit the frame.
 
+
 ### -field wPad
 
 This member is reserved.
+
 
 ### -field MpduPN
 
 The MPDU PN.
 
+
 ### -field ReplayIHVReserved0
 
 Reserved for IHV use.
 
+
 ### -field ReplayIHVReserved1
 
 Reserved for IHV use.
+
 
 ## -remarks
 
@@ -94,22 +102,27 @@ Reserved for IHV use.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

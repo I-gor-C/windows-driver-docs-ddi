@@ -7,7 +7,7 @@ old-location: storage\storportinvokeacpimethod.htm
 old-project: storage
 ms.assetid: 2A8EF694-B699-46A0-9B1D-B7D0831F3944
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortInvokeAcpiMethod
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortInvokeAcpiMethod</b> routine executes an ACPI method for a storage device.
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ ULONG StorPortInvokeAcpiMethod(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param Address [in, optional]
 
 The address of the target device. This parameter is optional. If <i>Address</i> is set to <b>NULL</b>, the adapter is the target.
+
 
 ### -param MethodName [in]
 
 A four-byte name for the ACPI method. For example, ((ULONG) 'DDS_') would name the _SDD, or 'Set Device Data',  ACPI method for an AHCI controller.
 
+
 ### -param InputBuffer [in, optional]
 
 A pointer to the input data to the method.
+
 
 ### -param InputBufferLength [in]
 
 The length, in bytes, of the buffer in <i>InputBuffer</i>.
 
+
 ### -param OutputBuffer [in, optional]
 
 A pointer to the output data from the method.
+
 
 ### -param OutputBufferLength [in]
 
 The length, in bytes, of the buffer in <i>OutputBuffer</i>.
 
+
 ### -param BytesReturned [out, optional]
 
 A pointer to the length, in bytes, of the data returned in <i>OutputBuffer</i>.
+
 
 ## -returns
 The <b>StorPortInvokeAcpiMethod</b> routine returns one of these status codes:
@@ -119,14 +128,17 @@ The <b>StorPortInvokeAcpiMethod</b> routine returns one of these status codes:
 
  
 
+
 ## -remarks
 The <b>StorPortInvokeAcpiMethod</b> enables a miniport driver to invoke ACPI methods defined for storage controllers and storage LUNs. The method names are four-byte character strings that occupy a <b>ULONG</b> value in <i>MethodName</i>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -137,14 +149,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,9 +170,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

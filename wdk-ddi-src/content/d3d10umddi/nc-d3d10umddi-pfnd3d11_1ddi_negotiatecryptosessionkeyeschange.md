@@ -7,7 +7,7 @@ old-location: display\negotiatecryptosessionkeyexchange.htm
 old-project: display
 ms.assetid: a48dcbae-3236-4523-bc14-4be694da9a7b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Establishes a session key for a cryptographic session object.
 
 
+
 ## -prototype
 
 ````
@@ -64,9 +65,11 @@ A handle to the display device (graphics context).
 
 
 
+
 ### -param hCryptoSession [in]
 
 A handle to the cryptographic session object that was created through a call to the <a href="display.createcryptosession1">CreateCryptoSession</a> function. 
+
 
 
 
@@ -76,9 +79,11 @@ The size, in bytes, of the data in the <i>pData</i> array.
 
 
 
+
 ### -param pData [in]
 
 A pointer to a byte array that contains the encrypted session key.
+
 
 ## -returns
 <i>NegotiateCryptoSessionKeyExchange</i> returns one of the following values:
@@ -95,6 +100,7 @@ A pointer to a byte array that contains the encrypted session key.
 
  
 
+
 ## -remarks
 The <i>pData</i> parameter references a buffer that contains a session key for the cryptographic session. The key exchange mechanism depends on the type of the encryption algorithm that is used by the cryptographic session.
 
@@ -102,27 +108,33 @@ For sessions that use the RSA Encryption Scheme - Optimal Asymmetric Encryption 
 
 The key exchange for a cryptographic session is identical to the key exchange for the Output Protection Manager (OPM) interface. However,  the OPM key buffer contains additional data besides the session key.  
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +145,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,5 +162,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

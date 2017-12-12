@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlAddAce</b> routine adds one or more access control entries (ACEs) to a specified access control list (ACL).
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS RtlAddAce(
 
 Pointer to the ACL to be modified. <b>RtlAddAce</b> adds the specified ACEs to this ACL. 
 
+
 ### -param AceRevision [in]
 
 ACL revision level of the ACE to be added. Windows version requirments are the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -76,6 +79,7 @@ ACL revision level of the ACE to be added. Windows version requirments are the f
 </td>
 <td width="60%">
 The revision level valid on all Windows versions.
+
 </td>
 </tr>
 <tr>
@@ -86,6 +90,7 @@ The revision level valid on all Windows versions.
 </td>
 <td width="60%">
 The revision level valid starting with Windows 2000.
+
 <div class="alert"><b>Note</b>  <i>AceRevision</i> must be ACL_REVISION_DS if the ACL in <i>Acl</i> contains an object-specific ACE.</div>
 <div> </div>
 </td>
@@ -93,17 +98,21 @@ The revision level valid starting with Windows 2000.
 </table>
  
 
+
 ### -param StartingAceIndex [in]
 
 Specifies the position in the ACL's list of ACEs at which to add new ACEs. A value of zero inserts the ACEs at the beginning of the list. A value of MAXULONG appends the ACEs to the end of the list.
+
 
 ### -param AceList [in]
 
 Pointer to a buffer containing a list of one or more ACEs to be added to the specified ACL. The ACEs in the list must be stored contiguously.
 
+
 ### -param AceListLength [in]
 
 Size, in bytes, of the input buffer pointed to by the <i>AceList</i> parameter. 
+
 
 ## -returns
 <b>RtlAddAce</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
@@ -122,6 +131,7 @@ STATUS_INVALID_PARAMETER is an error code.
 
  
 
+
 ## -remarks
 For information about calculating the size of an ACL, see the Remarks section of the reference entry for <a href="ifsk.rtlcreateacl">RtlCreateAcl</a>. 
 
@@ -133,11 +143,13 @@ To add an access-allowed ACE to an ACL, use <a href="ifsk.rtladdaccessallowedace
 
 For more information about security and access control, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0 documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -148,14 +160,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available starting with Windows Server 2003 with SP1. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -166,6 +181,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -176,6 +192,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -187,9 +204,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -216,5 +235,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAddAce routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3d10ddiarg_openresource.htm
 old-project: display
 ms.assetid: acd1a957-9a1f-48a5-849b-e0cb9f8e05b6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D10DDIARG_OPENRESOURCE, D3D10DDIARG_OPENRESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3D10DDIARG_OPENRESOURCE structure contains information for opening a shared resource.
 
 
+
 ## -syntax
 
 ````
@@ -67,32 +68,42 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 
 [in] The number of elements in the array that the <b>pOpenAllocationInfo</b> member specifies. <b>NumAllocations</b> represents the number of allocations to open.
 
+
 ### -field pOpenAllocationInfo
 
 [in] An array of <a href="display.d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
+
 
 ### -field pOpenAllocationInfo2
 
 This member is reserved and should be set to zero.
+
 This member is available beginning with Windows 7.
+
 
 ### -field pOpenAllocationInfo
 
 [in] An array of <a href="display.d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
 
+
 ### -field hKMResource
 
 [in] A D3D10DDI_HKMRESOURCE data type that represents a kernel-mode handle to the resource that is associated with the allocations. 
+
 This kernel-mode handle represents an existing shared resource that was previously created through a call to the user-mode display driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a> function. 
+
 The user-mode display driver can insert the kernel-mode resource handle in the command stream for subsequent use by the display miniport driver.
+
 
 ### -field pPrivateDriverData
 
 [in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="display.d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structure. 
 
+
 ### -field PrivateDriverDataSize
 
 [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+
 
 ## -remarks
 
@@ -102,14 +113,17 @@ The user-mode display driver can insert the kernel-mode resource handle in the c
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDIARG_OPENRESOURCE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDIARG_OPENRESOURCE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

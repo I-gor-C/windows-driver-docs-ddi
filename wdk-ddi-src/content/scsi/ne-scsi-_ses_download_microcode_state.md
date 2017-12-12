@@ -7,8 +7,8 @@ old-location: storage\ses_download_microcode_state.htm
 old-project: storage
 ms.assetid: 5edff312-8373-4d36-b93c-c35fe8c2996a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE
+ms.date: 12/8/2017
+ms.keywords: _SES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 TBD
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef enum _SES_DOWNLOAD_MICROCODE_STATE {
 
 Specifies no microcode download operation is in progress.
 
+
 ### -field SesDownloadMcStateInProgress
 
 Specifies a microcode download operation is in progress.
+
 
 ### -field SesDownloadMcStateCompletedPendingReset
 
 Specifies a microcode download operations completed and is waiting for a hard reset.
 
+
 ### -field SesDownloadMcStateCompletedPendingPowerOn
 
 Specifies a microcode download operations completed and is waiting for a power on.
 
+
 ### -field SesDownloadMcStateCompletedPendingActivation
 
 Specifies a microcode download operations completed and is waiting for activation.
+
 
 ## -remarks
 
@@ -85,14 +91,17 @@ Specifies a microcode download operations completed and is waiting for activatio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10, version 1709 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The <b>FSCTL_OFFLOAD_WRITE_INPUT</b> structure contains the input for the <a href="ifsk.fsctl_offload_write">FSCTL_OFFLOAD_WRITE</a> control code request.
 
 
+
 ## -syntax
 
 ````
@@ -61,42 +62,52 @@ typedef struct _FSCTL_OFFLOAD_WRITE_INPUT {
 
 The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_WRITE_INPUT).
 
+
 ### -field Flags
 
  This member is not used. Set to 0.
+
 
 ### -field FileOffset
 
  The position in the file to begin writing to. The offset value must be aligned to a logical sector boundary on the volume.
 
+
 ### -field CopyLength
 
  The length, in bytes, of data to write, starting at <b>FileOffset</b>. The length  value must align to a logical sector boundary on the volume, except when the length matches end-of-file.
+
 
 ### -field TransferOffset
 
  The position in the data associated with <b>Token</b> to begin writing from.
 
+
 ### -field Token
 
 A byte array that contains a token structure, <a href="storage.storage_offload_token">STORAGE_OFFLOAD_TOKEN</a>, representing a file data range to be logically written. The contents of <b>Token</b>  must remain unmodified between offload operations.
 
+
 ## -remarks
 <b>CopyLength</b> can be zero. The value of <b>FileOffset</b> + <b>CopyLength</b> is bounded by both <b>MAXULONGLONG</b> and <b>MAXFILESIZE</b>. <a href="ifsk.fsctl_offload_write">FSCTL_OFFLOAD_WRITE</a> will return with <b>STATUS_INVALID_PARAMETER</b> if these conditions are not met.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +133,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSCTL_OFFLOAD_WRITE_INPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

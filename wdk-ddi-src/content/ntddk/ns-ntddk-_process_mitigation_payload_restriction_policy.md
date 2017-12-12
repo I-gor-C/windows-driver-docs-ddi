@@ -7,7 +7,7 @@ old-location: kernel\process_mitigation_payload_restriction_policy.htm
 old-project: kernel
 ms.assetid: f55a47b2-c95c-4b6c-aeff-aed99dd9e43b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 Stores information about process mitigation policy.
+
 
 
 ## -syntax
@@ -76,6 +77,7 @@ typedef struct _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY {
 
 Bitwise of flags in this structure.
 
+
 ### -field DUMMYSTRUCTNAME
 
 
@@ -83,53 +85,66 @@ Bitwise of flags in this structure.
 
 If set this enables the Export Address Filter mitigation in enforcement mode for the process.
 
+
 ### -field AuditExportAddressFilter
 
 If set this enables the Export Address Filter mitigation in audit mode for the process.
+
 
 ### -field EnableExportAddressFilterPlus
 
 If set this enables the Export Address Filter Plus mitigation in enforcement mode for the process.
 
+
 ### -field AuditExportAddressFilterPlus
 
 If set this enables the Export Address Filter mitigation in audit mode for the process.
+
 
 ### -field EnableImportAddressFilter
 
 If set this enables the Import Address Filter mitigation in enforcement mode for the process.
 
+
 ### -field AuditImportAddressFilter
 
 If set this enables the Import Address Filter mitigation in enforcement mode for the process.
+
 
 ### -field EnableRopStackPivot
 
 If set this enables the stack pivot anti-ROP (Return-oriented-programming) mitigation in enforcement mode for the process.
 
+
 ### -field AuditRopStackPivot
 
 If set this enables the stack pivot anti-ROP (Return-oriented-programming) mitigation in audit mode for the process.
+
 
 ### -field EnableRopCallerCheck
 
 If set this enables the caller check anti-ROP (Return-oriented-programming) mitigation in enforcement mode for the process. Applies to 32-bit processes only.
 
+
 ### -field AuditRopCallerCheck
 
 If set this enables the caller check anti-ROP (Return-oriented-programming) mitigation in audit mode for the process. Applies to 32-bit processes only.
+
 
 ### -field EnableRopSimExec
 
 If set this enables the simulated execution anti-ROP (Return-oriented-programming) mitigation in enforcement mode for the process. Applies to 32-bit processes only.
 
+
 ### -field AuditRopSimExec
 
 If set this enables the simulated execution anti-ROP (Return-oriented-programming) mitigation in audit mode for the process. Applies to 32-bit processes only.
 
+
 ### -field ReservedFlags
 
 Reserved.
+
 </dd>
 </dl>
 </dd>
@@ -143,22 +158,27 @@ Reserved.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

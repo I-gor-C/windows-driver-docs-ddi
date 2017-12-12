@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_sharedprimarysurfacedata.htm
 old-project: display
 ms.assetid: edf59add-0155-4619-9c7c-fdb63b954f85
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_SHAREDPRIMARYSURFACEDATA, D3DKMDT_SHAREDPRIMARYSURFACEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMDT_SHAREDPRIMARYSURFACEDATA structure describes a shared primary surface.
 
 
+
 ## -syntax
 
 ````
@@ -60,38 +61,47 @@ typedef struct _D3DKMDT_SHAREDPRIMARYSURFACEDATA {
 
 [in] The width of the surface, in pixels. The driver returns the width value.
 
+
 ### -field Height
 
 [in] The height of the surface, in pixels. The driver returns the height value.
+
 
 ### -field Format
 
 [in] A <a href="display.d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The driver returns the format value.
 
+
 ### -field RefreshRate
 
 [in] A <a href="display.d3dddi_rational">D3DDDI_RATIONAL</a> structure that indicates the refresh rate that the shared primary surface was created with.
+
 
 ### -field VidPnSourceId
 
 [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the surface is located on. 
 
+
 ## -remarks
 Multiple processes can lock a shared primary surface. The video memory manager pins the standard allocation for the shared primary surface in video memory so the digital-to-analog converter (DAC) is guaranteed to always scan-out the appropriate data.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,5 +127,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_SHAREDPRIMARYSURFACEDATA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_SHAREDPRIMARYSURFACEDATA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

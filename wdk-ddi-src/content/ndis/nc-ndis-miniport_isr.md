@@ -7,7 +7,7 @@ old-location: netvista\miniportinterrupt.htm
 old-project: netvista
 ms.assetid: 810503b9-75cd-4b38-ab1f-de240968ded6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ NDIS calls the
    interrupt with the NIC, generates an interrupt.
 
 
+
 ## -prototype
 
 ````
@@ -67,6 +68,7 @@ A handle to a block of interrupt context information. The miniport driver suppli
      <a href="netvista.ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
+
 ### -param QueueDefaultInterruptDpc [out]
 
 A pointer to a BOOLEAN variable that the miniport driver sets before it returns from this call. A
@@ -78,6 +80,7 @@ A pointer to a BOOLEAN variable that the miniport driver sets before it returns 
      return value from 
      <i>MiniportInterrupt</i>.
 
+
 ### -param TargetProcessors [out]
 
 A bitmask that indicates the target processors for which NDIS should schedule a DPC. This bitmask represents the first 32 processors in processor group 0. Each bit in 
@@ -87,6 +90,7 @@ A bitmask that indicates the target processors for which NDIS should schedule a 
      <i>TargetProcessors</i> is set to zero, NDIS will not schedule any DPCs. Otherwise,
      NDIS will schedule DPCs regardless of the return value from 
      <i>MiniportInterrupt</i>.
+
 <div class="alert"><b>Note</b>  NDIS
      6.20 and later drivers should not use this parameter to schedule DPCs. Instead, they should set this parameter to zero and use the 
      <a href="netvista.ndismqueuedpcex">NdisMQueueDpcEx</a> function to schedule DPCs.</div>
@@ -106,6 +110,7 @@ A bitmask that indicates the target processors for which NDIS should schedule a 
        interrupt.
 
  
+
 
 ## -remarks
 Miniport drivers that register an interrupt with the 
@@ -203,19 +208,23 @@ The <b>MINIPORT_ISR</b> function type is defined in the Ndis.h header file. To m
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -226,9 +235,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section
+
 </td>
 </tr>
 </table>
@@ -278,5 +289,8 @@ See Remarks section
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_ISR callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_ISR callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

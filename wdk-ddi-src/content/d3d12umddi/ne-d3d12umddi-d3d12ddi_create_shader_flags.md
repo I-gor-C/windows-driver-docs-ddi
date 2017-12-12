@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_create_shader_flags.htm
 old-project: display
 ms.assetid: 93F27775-3E74-4310-8E09-DCB079436706
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_CREATE_SHADER_FLAGS, D3D12DDI_CREATE_SHADER_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines flags for shader creation.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum D3D12DDI_CREATE_SHADER_FLAGS {
 
 No flag value for shader creation.
 
+
 ### -field D3D12DDI_CREATE_SHADER_FLAG_ENABLE_SHADER_TRACING
 
 The shader is tracing. 
 
+
 ### -field D3D12DDI_CREATE_SHADER_FLAG_DISABLE_OPTIMIZATION
 
 The shader is compiled quickly and less optimally. 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ The shader is compiled quickly and less optimally.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

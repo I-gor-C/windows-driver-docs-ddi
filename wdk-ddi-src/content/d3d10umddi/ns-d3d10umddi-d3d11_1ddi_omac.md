@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_omac.htm
 old-project: display
 ms.assetid: 6807f32a-0e63-4603-abfb-b35d0d0d5f8c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_OMAC, D3D11_1DDI_OMAC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains a Message Authentication Code (MAC).
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct D3D11_1DDI_OMAC {
 
 A byte array that contains the cryptographic MAC value of the message.
 
+
 ## -remarks
 
 
@@ -64,22 +66,27 @@ A byte array that contains the cryptographic MAC value of the message.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

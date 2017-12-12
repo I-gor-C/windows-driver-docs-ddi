@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_ulong.htm
 old-project: wdf
 ms.assetid: 553CA9E0-66C7-436B-AE34-5A6201479D6D
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_WRITE_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to UMDF only]
+
 The <b>WDF_WRITE_PORT_ULONG</b> function writes a ULONG value to the specified port address.
+
 
 
 
@@ -61,17 +63,21 @@ void WDF_WRITE_PORT_ULONG(
 
 A handle to a framework device object.
 
+
 ### -param Port [in]
 
 A pointer to the port, which must be a mapped memory range in I/O space.
+
 
 ### -param Value [in]
 
 Specifies a ULONG value to be written to the port. 
 
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -81,6 +87,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,22 +98,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

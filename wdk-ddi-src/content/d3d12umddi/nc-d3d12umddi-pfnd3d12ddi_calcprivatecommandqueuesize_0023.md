@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calcprivatecommandqueuesize_0023.htm
 old-project: display
 ms.assetid: 70A81285-97CD-4526-8EB0-F00908B2D331
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <i>pfnCalcPrivateCommandQueueSize</i> callback function is used to calculate the size of a private command queue. 
 
 
+
 ## -prototype
 
 ````
@@ -60,21 +61,26 @@ SIZE_T APIENTRY* pfnCalcPrivateCommandQueueSize(
 
 The handle of a device.
 
+
 ### -param CreateCommandQueue [in]
 
 An argument used to create a command queue. 
 
+
 ## -returns
 The size of the queue.
 
+
 ## -remarks
 Access this callback function by using a device functions core structure, such as the <b>D3D12DDI_DEVICE_FUNCS_CORE_0003</b> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

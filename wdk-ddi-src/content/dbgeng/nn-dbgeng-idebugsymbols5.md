@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols5.htm
 old-project: debugger
 ms.assetid: 0D239C0E-96C8-49F9-BDFD-182F3F7C3976
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This interface supports using index values for the current frame. 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbols5</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IDebugSymbols5</b> also has these types of members:
 
@@ -51,6 +52,7 @@ Gets the index of the current frame.
 Sets the current frame by using an index.
 
  
+
 
 ## -members
 The <b>IDebugSymbols5</b> interface has these methods.
@@ -65,6 +67,7 @@ The <b>IDebugSymbols5</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Gets the index of the current frame.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -73,6 +76,7 @@ Gets the index of the current frame.
 </td>
 <td align="left" width="63%">
 Sets the current frame by using an index.
+
 </td>
 </tr>
 </table>Gets the index of the current frame.
@@ -80,6 +84,7 @@ Sets the current frame by using an index.
 Sets the current frame by using an index.
 
  
+
 
 ## -remarks
 
@@ -89,6 +94,7 @@ Sets the current frame by using an index.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

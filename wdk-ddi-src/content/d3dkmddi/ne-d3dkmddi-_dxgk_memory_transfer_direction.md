@@ -7,7 +7,7 @@ old-location: display\dxgk_memory_transfer_direction.htm
 old-project: display
 ms.assetid: A45411DF-AD08-4349-A134-091343E7989E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MEMORY_TRANSFER_DIRECTION, DXGK_MEMORY_TRANSFER_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef enum _DXGK_MEMORY_TRANSFER_DIRECTION {
 
 Transfer from local GPU memory to system memory.
 
+
 ### -field DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL
 
 Transfer from system memory to local GPU memory.
 
+
 ### -field DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL
 
 Transfer from local GPU memory to local GPU memory.
+
 
 ## -remarks
 
@@ -76,22 +80,27 @@ Transfer from local GPU memory to local GPU memory.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\dot11_extsta_recv_context.htm
 old-project: netvista
 ms.assetid: 517be11b-a15d-43ac-aefd-f425fa6f63e7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT
+ms.date: 12/8/2017
+ms.keywords: DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTSTA_RECV_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -66,34 +66,45 @@ The type, revision, and size of the DOT11_EXTSTA_RECV_CONTEXT structure. This me
      as an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
+
 ### -field Revision
 
 This member must be set to DOT11_EXTSTA_RECV_CONTEXT_REVISION_1.
+
 
 ### -field Size
 
 This member must be set to 
        sizeof(DOT11_EXTSTA_RECV_CONTEXT).
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
+
 ### -field uReceiveFlags
 
 The attributes of the received packet data specified through a bitmask. 
      
+
 If the miniport driver is operating in ExtSTA mode, the driver must always set 
      <b>uReceiveFlags</b> to zero.
+
 The following flag values are valid for the miniport driver if is operating in NetMon mode.
+
+
 
 
 ### -field DOT11_RECV_FLAG_RAW_PACKET
@@ -103,10 +114,12 @@ If this bit is set, the packet contains the data as it was originally received b
        <a href="netvista.indicating_raw_802_11_packets">Indicating Raw 802.11
        Packets</a>.
 
+
 ### -field DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE
 
 If this bit is set, the raw packet data was received with frame check sequence (FCS) failures.
        
+
 <div class="alert"><b>Note</b>  The miniport driver must set DOT11_RECV_FLAG_RAW_PACKET when setting
        DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE.</div>
 <div> </div>
@@ -115,6 +128,7 @@ If this bit is set, the raw packet data was received with frame check sequence (
 
 If this bit is set, the NIC sets the timestamp information in the 
        <b>ullTimestamp</b> member.
+
 </dd>
 </dl>
 
@@ -122,10 +136,12 @@ If this bit is set, the NIC sets the timestamp information in the
 
 The identifier (ID) of the PHY on which the 802.11 station received the packet.
 
+
 ### -field uChCenterFrequency
 
 The channel center frequency, in units of megahertz (MHz), of the frequency band on which the
      802.11 station received the packet.
+
 
 ### -field usNumberOfMPDUsReceived
 
@@ -133,10 +149,12 @@ The number of media access control (MAC) protocol data unit (MPDU) fragments rec
      reassembled by the 802.11 station for the packet. The value of 
      <b>usNumberOfMPDUsReceived</b> must be from one through the value of DOT11_MAX_NUM_OF_FRAGMENTS.
 
+
 ### -field lRSSI
 
 The received signal strength indication (RSSI) value for the last received MPDU fragment of the
      802.11 packet. The RSSI value is in units of decibels referenced to 1.0 milliwatts (dBm).
+
 
 ### -field ucDataRate
 
@@ -147,6 +165,7 @@ The data rate at which the 802.11 station received the packet. The value of
      <a href="netvista.oid_dot11_data_rate_mapping_table">
      OID_DOT11_DATA_RATE_MAPPING_TABLE</a>.
 
+
 ### -field uSizeMediaSpecificInfo
 
 The size, in bytes, of the media specific information at the 
@@ -154,6 +173,7 @@ The size, in bytes, of the media specific information at the
      <b>uSizeMediaSpecificInfo</b> supports copying of the media-specific information and passing it to an IHV
      extension.
      
+
 <div class="alert"><b>Note</b>  This member is currently reserved for future use and must contain
      zero.</div>
 <div> </div>
@@ -163,11 +183,13 @@ The size, in bytes, of the media specific information at the
 A pointer to a buffer that contains media-specific infomration. The mininiport driver can set this
      member if the miniport driver passes media-specific OOB data to an IHV-specific 802.3 protocol driver.
      
+
 The native 802.11 framework copies this pointer to the 
      <b>MediaSpecificInformation</b> entry at the 
      <b>NetBufferListInfo</b> member of the 802.3 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in NDIS receive
      indications.
+
 <div class="alert"><b>Note</b>  IHV extensions are currently unable to receive the 
      <b>MediaSpecificInformation</b>.</div>
 <div> </div>
@@ -178,9 +200,11 @@ An 802.11 timing synchronization function (TSF) timer value, in microseconds, th
      time when the packet was received. This member is provided to support 
      <a href="netvista.indicating_raw_802_11_packets">indicating raw 802.11 packets</a>.
      
+
 If a NIC does not support 
      <b>ullTimestamp</b>, it must not set the DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP flag in the 
      <b>uReceiveFlags</b> member.
+
 
 ## -remarks
 When performing a Native 802.11 receive operation, the miniport driver must format each received
@@ -230,20 +254,24 @@ For more information about Native 802.11 receive operations, see
     <a href="netvista.native_802_11_receive_operations">Native 802.11 Receive
     Operations</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -277,5 +305,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_RECV_CONTEXT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_RECV_CONTEXT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

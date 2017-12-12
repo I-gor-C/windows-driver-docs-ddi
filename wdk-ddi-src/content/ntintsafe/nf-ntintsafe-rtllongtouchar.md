@@ -7,7 +7,7 @@ old-location: kernel\rtllongtouchar.htm
 old-project: kernel
 ms.assetid: 22440E1D-8DF5-4391-90F4-6080AAAC65D1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlLongToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Converts a value of type <b>LONG</b> to a value of type <b>UCHAR</b>.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ NTSTATUS RtlLongToUChar(
 
 The value to be converted.
 
+
 ### -param pch [out]
 
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
+
 ## -remarks
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -79,6 +84,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

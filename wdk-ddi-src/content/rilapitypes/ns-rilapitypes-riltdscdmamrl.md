@@ -1,5 +1,5 @@
 ---
-UID: NS.rilapitypes.RILTDSCDMAMRL
+UID: NS.RILAPITYPES.RILTDSCDMAMRL
 title: RILTDSCDMAMRL
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
@@ -7,8 +7,8 @@ old-location: netvista\riltdscdmamrl_2.htm
 old-project: netvista
 ms.assetid: 42cf6592-345c-4e4c-8614-37dc82ed6470
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: RILTDSCDMAMRL, RILTDSCDMAMRL
+ms.date: 12/8/2017
+ms.keywords: RILTDSCDMAMRL, *LPRILTDSCDMAMRL, RILTDSCDMAMRL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,6 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.iface: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +39,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. </p>
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -61,44 +61,33 @@ typedef struct _RILTDSCDMAMRL {
 
 
 ## -struct-fields
-<dl>
 
 ### -field dwParams
 
-<dd></dd>
 
 ### -field dwMobileCountryCode
 
-<dd></dd>
 
 ### -field dwMobileNetworkCode
 
-<dd></dd>
 
 ### -field dwLocationAreaCode
 
-<dd></dd>
 
 ### -field dwCellID
 
-<dd></dd>
 
 ### -field dwUARFCN
 
-<dd></dd>
 
 ### -field dwCellParameterID
 
-<dd></dd>
 
 ### -field dwRSCP
 
-<dd></dd>
 
 ### -field dwPathLoss
 
-<dd></dd>
-</dl>
 
 ## -remarks
 
@@ -107,7 +96,8 @@ typedef struct _RILTDSCDMAMRL {
 <table>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>

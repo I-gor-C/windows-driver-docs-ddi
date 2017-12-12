@@ -7,7 +7,7 @@ old-location: netvista\wskgetlocaladdress.htm
 old-project: netvista
 ms.assetid: 13cd4199-63f8-49f3-a12f-86e1d367b4aa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <b>WskGetLocalAddress</b> function retrieves the local transport address of a socket.
 
 
+
 ## -prototype
 
 ````
@@ -62,6 +63,7 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being queried.
 
+
 ### -param LocalAddress [out]
 
 A pointer to a caller-allocated buffer that receives the local transport address for the socket.
@@ -69,9 +71,11 @@ A pointer to a caller-allocated buffer that receives the local transport address
      specific SOCKADDR structure type that corresponds to the address family that the WSK application
      specified when it created the socket.
      
+
 For a connection-oriented socket that the WSK application accepted on a listening socket, the address
      family is the same as the address family that the WSK application specified when it created the
      listening socket.
+
 
 ### -param Irp [in, out]
 
@@ -79,6 +83,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskGetLocalAddress</b> returns one of the following NTSTATUS codes:
@@ -107,6 +112,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 </dl>An error occurred. The IRP will be completed with failure status.
 
  
+
 
 ## -remarks
 A WSK application can call the 
@@ -145,11 +151,13 @@ If the
     stack, it cannot return from the function that calls the 
     <b>WskGetLocalAddress</b> function until after the IRP is completed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -160,15 +168,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -179,9 +190,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -231,5 +244,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_LOCAL_ADDRESS callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_LOCAL_ADDRESS callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

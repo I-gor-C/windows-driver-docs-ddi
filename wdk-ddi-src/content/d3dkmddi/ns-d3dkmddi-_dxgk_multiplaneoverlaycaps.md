@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplaneoverlaycaps.htm
 old-project: display
 ms.assetid: E3F590EA-2B3B-464B-9D72-708B24CA3052
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MULTIPLANEOVERLAYCAPS, DXGK_MULTIPLANEOVERLAYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 Multiplane overlay capabilities returned by the DxgkDdiGetMultiPlaneOverlayCaps function.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ When TRUE, indicates that the hardware supports rotating the plane 90, 180, or 2
 If TRUE, RotationWithoutIndependentFlip should be FALSE.
 
 
+
 ### -field RotationWithoutIndependentFlip
 
 When TRUE, indicates that the driver can perform plane rotation of 90, 180, or 270 degrees, but IndependentFlip cannot be used when rotating the plane.
@@ -82,39 +84,50 @@ When TRUE, indicates that the driver can perform plane rotation of 90, 180, or 2
 If TRUE, Rotation should be FALSE.
 
 
+
 ### -field VerticalFlip
 
 When TRUE, the hardware supports flipping the plane vertically.
+
 
 ### -field HorizontalFlip
 
 When TRUE, the hardware supports flipping the plane horizontally.
 
+
 ### -field StretchRGB
 
 When TRUE, the hardware supports stretching any plane containing RGB data.
+
 
 ### -field StretchYUV
 
 When TRUE, the hardware supports stretching any plane containing YUV data.
 
+
 ### -field BilinearFilter
 
 When TRUE, the hardware supports bilinear filtering.
+
 
 ### -field HighFilter
 
 When TRUE, the hardware supports better than bilinear filtering.
 
+
 ### -field Shared
 
 When TRUE, the multiplane overlay resources reported by the capabilities are shared across all VidPn sources.
+
 When FALSE, the multiplane overlay resources reported by capabilities are dedicated to the specific VidPn source.
+
 
 ### -field Immediate
 
 When TRUE, the HW supports immediate flips of the MPO plane.
+
 If the flip contains changes that cannot be performed as an immediate flip, the driver can promote the flip to a VSYNC flip using the new HSync completion infrastructure.
+
 
 ### -field Plane0ForVirtualModeOnly
 
@@ -122,9 +135,11 @@ When TRUE, the hardware will always apply the stretch factor of plane 0 to the h
 
 
 
+
 ### -field Reserved
 
 This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 21 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.
+
 
 ### -field Value
 
@@ -137,6 +152,7 @@ This member is reserved and should be set to zero. Setting this member to zero i
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

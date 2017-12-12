@@ -41,6 +41,7 @@ req.irql:
 The <b>KsNullDriverUnload</b> function is a default function a driver can use when it has no other tasks to do in its unload function, but must still allow the device to be unloaded by its presence.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ VOID KsNullDriverUnload(
 
 Specifies the driver object for this device.
 
+
 ## -returns
 None
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ None
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +81,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

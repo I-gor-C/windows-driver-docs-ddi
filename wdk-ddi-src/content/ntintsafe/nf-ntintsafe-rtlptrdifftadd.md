@@ -7,7 +7,7 @@ old-location: kernel\rtlptrdifftadd.htm
 old-project: kernel
 ms.assetid: 3B4C0CF0-8153-446E-A834-C1FE28651718
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlPtrdiffTAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Adds two values of type <b>PTRDIFF_T</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ NTSTATUS RtlPtrdiffTAdd(
 
 The first value in the equation.
 
+
 ### -param Addend [in]
 
 The value to add to <i>Augend</i>.
+
 
 ### -param pResult [out]
 
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
+
 ## -remarks
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

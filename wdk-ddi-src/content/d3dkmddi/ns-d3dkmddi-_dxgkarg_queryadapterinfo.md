@@ -7,7 +7,7 @@ old-location: display\dxgkarg_queryadapterinfo.htm
 old-project: display
 ms.assetid: 5992c846-93de-4f95-839a-81f14db709f7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGKARG_QUERYADAPTERINFO structure contains parameters for a query.
 
 
+
 ## -syntax
 
 ````
@@ -60,19 +61,25 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 
 [in] A <a href="display.dxgk_queryadapterinfotype">DXGK_QUERYADAPTERINFOTYPE</a>-typed value that indicates the type of information to retrieve.
 
+
 ### -field pInputData
 
 [in] A pointer to input information for the query. 
+
 When <b>Type</b> specifies DXGKQAITYPE_UMDRIVERPRIVATE, <b>pInputData</b> points to a proprietary buffer that contains information about the query. When <b>Type</b> specifies DXGKQAITYPE_QUERYSEGMENT, <b>pInputData</b> points to a <a href="display.dxgk_querysegmentin">DXGK_QUERYSEGMENTIN</a> structure. When <b>Type</b> specifies <b>DXGKQAITYPE_POWERCOMPONENTINFO</b>, <b>pInputData</b> points to an input buffer that contains the power component index.
+
 An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVERCAPS value.
+
 
 ### -field InputDataSize
 
 [in] The size, in bytes, of the input data that <b>pInputData</b> points to.
 
+
 ### -field pOutputData
 
 [out] A pointer to an output buffer that the display miniport driver fills with the required information.
+
 <table>
 <tr>
 <th>Value of <b>Type</b></th>
@@ -105,9 +112,11 @@ An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVE
 </table>
  
 
+
 ### -field OutputDataSize
 
 [in] The size, in bytes, of the output data that <b>pOutputData</b> points to.
+
 
 ## -remarks
 
@@ -117,14 +126,17 @@ An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVE
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,7 +152,7 @@ Header
 <a href="display.dxgk_drivercaps">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_power_p_component">DXGK_POWER_P_COMPONENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn268634">DXGK_POWER_P_COMPONENT</a>
 </dt>
 <dt>
 <a href="display.dxgk_power_runtime_component">DXGK_POWER_RUNTIME_COMPONENT</a>
@@ -162,5 +174,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_QUERYADAPTERINFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_QUERYADAPTERINFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

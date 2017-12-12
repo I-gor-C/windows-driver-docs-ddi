@@ -7,7 +7,7 @@ old-location: storage\ufs_string_descriptor.htm
 old-project: storage
 ms.assetid: 1F32DA95-6801-4C48-B3C4-A47C3E1C678B
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _UFS_STRING_DESCRIPTOR, *PUFS_STRING_DESCRIPTOR, UFS_STRING_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UFS_STRING_DESCRIPTOR</b> structure describes either the Manufacturer Name, Product Name, OEM ID, or Serial Number as a string. 
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _UFS_STRING_DESCRIPTOR {
 
 Specifies the length, in bytes, of this descriptor.
 
+
 ### -field bDescriptorIDN
 
 Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_STRING_IDN</b>.
 
+
 ### -field String
 
 Contains either the Manufacturer Name, Product Name, OEM ID, or Serial Number as a string.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ Contains either the Manufacturer Name, Product Name, OEM ID, or Serial Number as
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

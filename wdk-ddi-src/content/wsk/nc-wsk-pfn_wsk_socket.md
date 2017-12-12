@@ -7,7 +7,7 @@ old-location: netvista\wsksocket.htm
 old-project: netvista
 ms.assetid: fddfd724-c3ba-4908-a60f-70c4934efb49
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <b>WskSocket</b> function creates a new socket and returns a pointer to the associated socket object.
 
 
+
 ## -prototype
 
 ````
@@ -73,11 +74,13 @@ A pointer to a
      <a href="netvista.wskcaptureprovidernpi">
      WskCaptureProviderNPI</a> function.
 
+
 ### -param AddressFamily [in]
 
 The address family for the socket that is being created. For more information about supported
      address families, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
+
 
 ### -param SocketType [in]
 
@@ -85,28 +88,35 @@ The type of socket that is being created. The following socket types are support
      
 
 
+
+
 ### -param SOCK_STREAM
 
 Supports reliable connection-oriented byte stream communication.
+
 
 ### -param SOCK_DGRAM
 
 Supports unreliable connectionless datagram communication.
 
+
 ### -param SOCK_RAW
 
 Supports raw access to the transport protocol.
+
 </dd>
 </dl>
 For more information about the socket types that are supported for each supported address family, see
      
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
 
+
 ### -param Protocol [in]
 
 The transport protocol for the socket that is being created. For more information about the
      protocols that are supported for each supported address family, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
+
 
 ### -param Flags [in]
 
@@ -116,32 +126,40 @@ A flag that specifies the WSK
      
 
 
+
+
 ### -param WSK_FLAG_BASIC_SOCKET
 
 A basic socket will be created that can be used only to get and set transport stack socket
        options or to perform socket I/O control operations.
+
 
 ### -param WSK_FLAG_LISTEN_SOCKET
 
 A listening socket will be created that can be used to listen for incoming connections from
        remote transport addresses.
 
+
 ### -param WSK_FLAG_DATAGRAM_SOCKET
 
 A datagram socket will be created that can be used to send and receive datagrams.
+
 
 ### -param WSK_FLAG_CONNECTION_SOCKET
 
 A connection-oriented socket will be created that can be used to send and receive network data
        over a connection.
 
+
 ### -param WSK_FLAG_STREAM_SOCKET
 
 A stream socket will be created that can either be used to listen for incoming connections from remote transport addresses, or send and receive network data over a connection.
+
 </dd>
 </dl>
 If a WSK application does not specify any of the preceding flags, 
      <b>WskSocket</b> creates a basic socket.
+
 
 ### -param SocketContext [in, optional]
 
@@ -151,6 +169,7 @@ A pointer to a caller-supplied context for the socket that is being created. The
      event callback functions on the new socket, it should set this pointer to <b>NULL</b>. For a basic socket, this
      pointer should always be <b>NULL</b>.
 
+
 ### -param Dispatch [in, optional]
 
 A pointer to a constant client dispatch structure. This structure is a dispatch table that
@@ -159,6 +178,7 @@ A pointer to a constant client dispatch structure. This structure is a dispatch 
      (as specified by the 
      <i>Flags</i> parameter), this parameter is a pointer to one of the following structures.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -167,52 +187,62 @@ A pointer to a constant client dispatch structure. This structure is a dispatch 
 <tr>
 <td>
 WSK_FLAG_LISTEN_SOCKET
+
 </td>
 <td>
 
 <a href="netvista.wsk_client_listen_dispatch">WSK_CLIENT_LISTEN_DISPATCH</a>
+
 
 </td>
 </tr>
 <tr>
 <td>
 WSK_FLAG_DATAGRAM_SOCKET
+
 </td>
 <td>
 
 <a href="netvista.wsk_client_datagram_dispatch">
          WSK_CLIENT_DATAGRAM_DISPATCH</a>
 
+
 </td>
 </tr>
 <tr>
 <td>
 WSK_FLAG_CONNECTION_SOCKET
+
 </td>
 <td>
 
 <a href="netvista.wsk_client_connection_dispatch">
          WSK_CLIENT_CONNECTION_DISPATCH</a>
 
+
 </td>
 </tr>
 <tr>
 <td>
 WSK_FLAG_STREAM_SOCKET
+
 </td>
 <td>
 
 <a href="netvista.wsk_client_stream_dispatch">WSK_CLIENT_STREAM_DISPATCH</a>
 
+
 </td>
 </tr>
 </table>
  
+
 If the WSK application will not be enabling all of the event callback functions for the new socket,
      it should set the pointers in the dispatch table to <b>NULL</b> for those event callback functions that it does
      not enable. If the WSK application will not be enabling any event callback functions on the new socket,
      it should set the 
      <i>Dispatch</i> pointer to <b>NULL</b>. For a basic socket, this pointer should always be <b>NULL</b>.
+
 
 ### -param OwningProcess [in, optional]
 
@@ -221,12 +251,14 @@ A pointer to the process from which the WSK subsystem will retrieve the security
      transport address can be shared if that address is already in use. To specify the current process, a WSK
      application sets this pointer to <b>NULL</b>.
 
+
 ### -param OwningThread [in, optional]
 
 A pointer to a specific thread from which the WSK subsystem will retrieve the security context to
      use when it binds the socket. The WSK subsystem uses the security context to determine whether the local
      transport address can be shared if that address is already in use. If a WSK application does not need to
      specify a specific thread, it sets this pointer to <b>NULL</b>.
+
 
 ### -param SecurityDescriptor [in, optional]
 
@@ -240,8 +272,10 @@ A pointer to a SECURITY_DESCRIPTOR structure that specifies the security descrip
      application sets 
      <i>SecurityDescriptor</i> to <b>NULL</b>.
      
+
 For more information about the SECURITY_DESCRIPTOR structure, see the reference page for
      SECURITY_DESCRIPTOR in the Microsoft Windows SDK documentation.
+
 
 ### -param Irp [in, out]
 
@@ -249,6 +283,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      new socket asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskSocket</b> returns one of the following NTSTATUS codes:
@@ -265,6 +300,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 </dl>An error occurred. The IRP will be completed with failure status.
 
  
+
 
 ## -remarks
 If the IRP is completed with success status, the 
@@ -296,11 +332,13 @@ The WSK subsystem allocates the memory for the socket object structure (WSK_SOCK
     on behalf of the WSK application. The WSK subsystem deallocates this memory when the socket is
     closed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -311,15 +349,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -330,9 +371,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -378,5 +421,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SOCKET callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SOCKET callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

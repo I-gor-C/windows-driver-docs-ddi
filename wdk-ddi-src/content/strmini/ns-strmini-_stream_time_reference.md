@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _STREAM_TIME_REFERENCE {
 
 Current value of the adapter clock.
 
+
 ### -field OnboardClockFrequency
 
 Frequency of the adapter clock.
+
 
 ### -field CurrentSystemTime
 
 KeQueryPerformanceCounter time.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

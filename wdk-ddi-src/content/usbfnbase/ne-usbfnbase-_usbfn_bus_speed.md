@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: B97E27A1-0D95-41AA-8FF6-A92F70FBAD28
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBFN_BUS_SPEED, *PUSBFN_BUS_SPEED, USBFN_BUS_SPEED
+ms.keywords: _USBFN_BUS_SPEED, USBFN_BUS_SPEED, *PUSBFN_BUS_SPEED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBFN_BUS_SPEED</b> enumeration defines possible bus speeds.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef enum _USBFN_BUS_SPEED {
 
 A low bandwidth bus speed of 1.5 Mbit per second.
 
+
 ### -field UsbfnBusSpeedFull
 
 A full bandwidth bus speed of 12 MBit per second.
+
 
 ### -field UsbfnBusSpeedHigh
 
 A high bus speed of 480 Mbit per second.
 
+
 ### -field UsbfnBusSpeedSuper
 
 A SuperSpeed mode bus speed of 5 Gbit per second.
 
+
 ### -field UsbfnBusSpeedMaximum
 
 The maximum value of the enumeration.
+
 
 ## -remarks
 
@@ -85,6 +91,7 @@ The maximum value of the enumeration.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_send.htm
 old-project: netvista
 ms.assetid: 6EDF95F1-AE00-4931-9B18-E316D56D57AF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 The <i>NdkSend</i> (<i>NDK_FN_SEND</i>) function posts a send request on an NDK queue pair (QP).
 
 
+
 ## -prototype
 
 ````
@@ -64,23 +65,28 @@ NTSTATUS NdkSend(
 A pointer to an NDK queue pair (QP) object
 (<a href="netvista.ndk_qp">NDK_QP</a>).
 
+
 ### -param RequestContext [in, optional]
 
 A context value to be returned in the <b>RequestContext</b> member of the <a href="netvista.ndk_result">NDK_RESULT</a> structure for this request.
+
 
 
 ### -param pSgl 
 
 An array of SGE structures (<a href="netvista.ndk_sge">NDK_SGE</a>)  that represent the buffers holding the data to send.
 
+
 ### -param nSge [in]
 
 The number of SGE structures in the array  that is specified in the <i>pSgl</i>
 parameter.
 
+
 ### -param Flags [in]
 
 A bitwise OR of flags which specifies the operations that are allowed. The following flags are supported:
+
 <table>
 <tr>
 <th>Value</th>
@@ -94,6 +100,7 @@ A bitwise OR of flags which specifies the operations that are allowed. The follo
 </td>
 <td width="60%">
 Indicates the successful completion of this request does not generate a completion event in the outbound completion queue. However, requests that fail do generate an event in the completion queue.
+
 </td>
 </tr>
 <tr>
@@ -104,6 +111,7 @@ Indicates the successful completion of this request does not generate a completi
 </td>
 <td width="60%">
 Indicates that all prior read requests must be complete before the hardware begins processing this request.
+
 </td>
 </tr>
 <tr>
@@ -114,6 +122,7 @@ Indicates that all prior read requests must be complete before the hardware begi
 </td>
 <td width="60%">
 Indicates that the completion queue for the peer generates a notification. For more information about <b>NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT</b>, see the Remarks section.
+
 </td>
 </tr>
 <tr>
@@ -124,6 +133,7 @@ Indicates that the completion queue for the peer generates a notification. For m
 </td>
 <td width="60%">
 Indicates that the memory referenced by the SGEs should be transferred inline.  Also, the <b>MemoryRegionToken</b> value in the <a href="netvista.ndk_sge">NDK_SGE</a> entries might be invalid. Inline requests do not need to limit the number of entries in the SGE list to the <b>MaxInitiatorRequestSge</b>  value that is specified when the queue pair was created. The amount of memory transferred inline must be within the inline data limits of the queue pair.
+
 </td>
 </tr>
 <tr>
@@ -134,11 +144,14 @@ Indicates that the memory referenced by the SGEs should be transferred inline.  
 </td>
 <td width="60%">
 Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>.
+
 <b>Note</b>  This flag is supported only in NDKPI 1.2 (Windows Server 2012 R2) and later.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 The 
@@ -156,6 +169,7 @@ The
 
  
 
+
 ## -remarks
 <i>NdkSend</i> posts a send request on a queue pair (QP).
 
@@ -163,35 +177,43 @@ You can use the <b>NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT</b> flag if you issue mult
 
 An NDK consumer can use this flag when issuing multiple, related send requests. The NDK consumer sets this flag only on the last, related send request. The peer will receive all the send requests as normal. However, when the peer receives the last send request (the request with the <b>NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT</b> flag set), the completion queue for the peer generates a notification. The notification is generated after the receive request completes. This flag has no meaning to the receiver (peer) unless the receiver has previously called the <i>NdkArmCq</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_arm_cq.md">NDK_FN_ARM_CQ</a>) function with the notification type set to <b>NDK_CQ_NOTIFY_SOLICITED</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -202,9 +224,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -231,5 +255,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_SEND callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_SEND callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

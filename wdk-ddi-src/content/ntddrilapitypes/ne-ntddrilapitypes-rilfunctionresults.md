@@ -7,7 +7,7 @@ old-location: netvista\rilfunctionresults.htm
 old-project: netvista
 ms.assetid: 9a2b3bdd-4955-4293-b4e7-65da20b0d369
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILFUNCTIONRESULTS, RILFUNCTIONRESULTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef enum _RILFUNCTIONRESULTS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

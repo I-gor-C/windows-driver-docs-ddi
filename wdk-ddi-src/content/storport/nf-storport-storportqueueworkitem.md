@@ -7,7 +7,7 @@ old-location: storage\storportqueueworkitem.htm
 old-project: storage
 ms.assetid: 7B5DD97C-2E3D-4FF7-BF04-36F016B0C6B3
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Schedules a Storport work item to execute within the context of  a system worker thread.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ ULONG StorPortQueueWorkItem(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param WorkItemCallback [in]
 
 A pointer to a work item callback routine supplied by the miniport. This routine is called in context of the system thread to process the scheduled <i>WorkItem</i>.
+
 
 ### -param Worker [in]
 
 A pointer to an opaque buffer for the worker returned by <a href="storage.storportinitializeworker">StorPortInitializeWorker</a>.
 
+
 ### -param Context [in, optional]
 
 Optional context for the <i>WorkItem</i> that is processed by the callback routine in <i>WorkItemCallback</i>.
+
 
 ## -returns
 The <b>StorPortQueueWorkItem</b> routine returns one of these status codes:
@@ -89,6 +94,7 @@ The <b>StorPortQueueWorkItem</b> routine returns one of these status codes:
 
  
 
+
 ## -remarks
 
 
@@ -97,6 +103,7 @@ The <b>StorPortQueueWorkItem</b> routine returns one of these status codes:
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,9 +135,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -145,5 +157,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortQueueWorkItem routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortQueueWorkItem routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

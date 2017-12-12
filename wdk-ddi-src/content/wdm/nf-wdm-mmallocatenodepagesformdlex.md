@@ -7,7 +7,7 @@ old-location: kernel\mmallocatenodepagesformdlex.htm
 old-project: kernel
 ms.assetid: 491327A4-87B5-4206-9D47-007CE14E1327
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: MmAllocateNodePagesForMdlEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>MmAllocateNodePagesForMdlEx</b> routine allocates nonpaged physical memory from an ideal node, and allocates an <a href="kernel.mdl">MDL</a> structure to describe this memory.
 
 
+
 ## -syntax
 
 ````
@@ -63,50 +64,64 @@ PMDL MmAllocateNodePagesForMdlEx(
 
 The physical address of the start of the first address range from which the allocated pages can come. If <b>MmAllocateNodePagesForMdlEx</b> cannot allocate the requested number of bytes in the first address range, the routine iterates through additional address ranges to get more pages. At each iteration, <b>MmAllocateNodePagesForMdlEx</b> adds the value of <i>SkipBytes</i> to the previous start address to calculate the start of the next address range.
 
+
 ### -param HighAddress [in]
 
 The physical address of the end of the first address range that the allocated pages can come from.
+
 
 ### -param SkipBytes [in]
 
 The number of bytes to skip from the start of the previous address range that the allocated pages can come from. <i>SkipBytes</i> must be an integer multiple of the virtual memory page size, in bytes.
 
+
 ### -param TotalBytes [in]
 
 The total number of bytes to allocate for the MDL.
+
 
 ### -param CacheType [in]
 
 A <a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a> value, which indicates the type of caching that is allowed for the requested memory.
 
+
 ### -param IdealNode [in]
 
 The ideal node number. If a multiprocessor system contains N nodes, valid node numbers are in the range 0 to N-1. Your driver can call the <a href="kernel.kequeryhighestnodenumber">KeQueryHighestNodeNumber</a> routine to get the highest node number. A single-processor or non-NUMA multiprocessor system has only one node, node 0, from which to allocate memory. For a NUMA multiprocessor system, the allocation is made from the ideal node, if possible. If insufficient memory is available in the ideal node to satisfy the allocation request, and the caller does not set the MM_ALLOCATE_FROM_LOCAL_NODE_ONLY flag, <b>MmAllocateNodePagesForMdlEx</b> will try to allocate memory from other nodes.
 
+
 ### -param Flags [in]
 
 Flags for this operation. Set this parameter to zero or to the bitwise-OR of one or more of the following flag bits:
+
 <ul>
 <li>
 MM_DONT_ZERO_ALLOCATION
+
 </li>
 <li>
 MM_ALLOCATE_FROM_LOCAL_NODE_ONLY
+
 </li>
 <li>
 MM_ALLOCATE_FULLY_REQUIRED
+
 </li>
 <li>
 MM_ALLOCATE_NO_WAIT
+
 </li>
 <li>
 MM_ALLOCATE_PREFER_CONTIGUOUS
+
 </li>
 <li>
 MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS
+
 </li>
 </ul>
 The MM_ALLOCATE_PREFER_CONTIGUOUS and MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS flag bits are mutually exclusive. For more information about these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556396">MM_ALLOCATE_XXX</a>.
+
 
 ## -returns
 <b>MmAllocateNodePagesForMdlEx</b> returns a pointer to an MDL structure if it is successful. Otherwise, if the routine fails to allocate any memory, the routine returns <b>NULL</b>.
@@ -114,6 +129,7 @@ The MM_ALLOCATE_PREFER_CONTIGUOUS and MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS flag
 A return value of <b>NULL</b> indicates that no physical memory pages are available in the specified address ranges, or that there is not enough memory pool available to allocate the MDL structure.
 
 If the routine successfully allocates some, but not all, of the requested memory, the MDL describes as much physical memory as the routine was able to allocate.
+
 
 ## -remarks
 In a non-uniform memory access (NUMA) multiprocessor system, the caller can specify an ideal node from which to allocate the memory. A node is a collection of processors that share fast access to a region of memory. In a non-NUMA multiprocessor or a single-processor system, <b>MmAllocateNodePagesForMdlEx</b> treats all memory as belonging to a single node and allocates memory from this node.
@@ -134,11 +150,13 @@ The maximum amount of memory that <b>MmAllocateNodePagesForMdlEx</b> can allocat
 
 <b>MmAllocateNodePagesForMdlEx</b> runs at IRQL &lt;= APC_LEVEL. If necessary, your driver can call <b>MmAllocateNodePagesForMdlEx</b> at DISPATCH_LEVEL. However, you can improve driver performance by calling at APC_LEVEL or below.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,14 +167,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,6 +188,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -177,6 +199,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -187,9 +210,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (See Remarks section.)
+
 </td>
 </tr>
 </table>
@@ -219,5 +244,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocateNodePagesForMdlEx routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocateNodePagesForMdlEx routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

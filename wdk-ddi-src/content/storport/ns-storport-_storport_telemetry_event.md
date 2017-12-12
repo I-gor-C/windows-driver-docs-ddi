@@ -7,8 +7,8 @@ old-location: storage\storport_telemetry_event.htm
 old-project: storage
 ms.assetid: 50A3EB6D-C485-4C04-8E88-9BD7D7ED0A62
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT
+ms.date: 12/8/2017
+ms.keywords: _STORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>STORPORT_TELEMETRY_EVENT</b> structure describes the miniport telemetry data payload.
+
 
 
 ## -syntax
@@ -81,118 +82,147 @@ typedef struct _STORPORT_TELEMETRY_EVENT {
 
 Miniport driver version.
 
+
 ### -field EventId
 
 A miniport defined identifier for the telemetry event.
+
 
 ### -field EventName
 
 A miniport defined name for the telemetry event, which has the maximum length of <b>EVENT_NAME_MAX_LENGTH</b>.
 
+
 ### -field EventVersion
 
 A miniport defined version for the telemetry event.
+
 
 ### -field Flags
 
 Reserved.
 
+
 ### -field EventBufferLength
 
 The length of <b>EventBuffer</b>, which should be not larger than <b>EVENT_BUFFER_MAX_LENGTH</b> that is 4KB.
+
 
 ### -field EventBuffer
 
 A miniport defined telemetry payload, the length of which is <b>EventBufferLength</b>.
 
+
 ### -field ParameterName0
 
 A description of the of the meaning of ParameterValue0. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue0
 
 The value for parameter 0.
 
+
 ### -field ParameterName1
 
 A description of the of the meaning of ParameterValue1. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue1
 
 The value for parameter 1.
 
+
 ### -field ParameterName2
 
 A description of the of the meaning of ParameterValue2. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue2
 
 The value for parameter 2.
 
+
 ### -field ParameterName3
 
 A description of the of the meaning of ParameterValue3. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue3
 
 The value for parameter 3.
 
+
 ### -field ParameterName4
 
 A description of the of the meaning of ParameterValue4. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue4
 
 The value for parameter 4.
 
+
 ### -field ParameterName5
 
 A description of the of the meaning of ParameterValue5. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue5
 
 The value for parameter 5.
 
+
 ### -field ParameterName6
 
 A description of the of the meaning of ParameterValue6. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue6
 
 The value for parameter 6.
 
+
 ### -field ParameterName7
 
 A description of the of the meaning of ParameterValue7. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 
 ### -field ParameterValue7
 
 The value for parameter 7.
 
+
 ## -remarks
 A <b>STORPORT_TELEMETRY_EVENT</b> structure describes the miniport telemetry data payload. The miniport should fill it when calling StorPortLogTelemetry.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1703
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -209,5 +239,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORPORT_TELEMETRY_EVENT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORPORT_TELEMETRY_EVENT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

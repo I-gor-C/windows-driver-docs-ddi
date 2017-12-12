@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_vsync_info2.htm
 old-project: display
 ms.assetid: CC1371C5-1BAB-458C-BC7F-9844B2BBEA3A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2, DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used by new drivers to report per-plane flip completion after a VSYNC.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2 {
 
 The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.  
 
+
 ### -field PresentId
 
 The 64 bit PresentId specified in the SetVidPnSourceAddressWithMultiPlaneOverlay3() DDI call.
 
+
 ### -field Flags
 
 Flag to indicate whether the scheduler should call DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT for this plane
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Flag to indicate whether the scheduler should call DXGKDDI_POSTMULTIPLANEOVERLAY
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

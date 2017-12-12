@@ -7,7 +7,7 @@ old-location: display\d3dkmt_submitsignalsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: BD192367-4960-4FD9-867F-02263AC93A61
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE, D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure holding information to submit a signal to the hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -63,9 +64,11 @@ Flags that specify signal behavior.
 
 
 
+
 ### -field BroadcastHwQueueCount
 
 Specifies the number of hardware queues to broadcast this signal to.
+
 
 
 ### -field BroadcastHwQueueArray
@@ -73,18 +76,22 @@ Specifies the number of hardware queues to broadcast this signal to.
 Specifies hardware queue handles to broadcast to.
 
 
+
 ### -field ObjectCount
 
 Number of objects to signal.
+
 
 
 ### -field ObjectHandleArray
 
 Handles to monitored fence synchronization objects to signal.
 
+
 ### -field FenceValueArray
 
 Monitored fence values to signal.
+
 
 
 ## -remarks
@@ -95,6 +102,7 @@ Monitored fence values to signal.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

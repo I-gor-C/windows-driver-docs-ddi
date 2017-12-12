@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_queue_dispatch.htm
 old-project: netvista
 ms.assetid: F9738CF9-AAC8-413C-A890-D6FAD7EEFD54
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_PD_QUEUE_DISPATCH, NDIS_PD_QUEUE_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_PD_QUEUE_DISPATCH structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 This structure contains a provider's driver routines for receive or transmit queues.
+
 
 
 ## -syntax
@@ -59,6 +60,7 @@ typedef struct _NDIS_PD_QUEUE_DISPATCH {
 ### -field Header
 
 The <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_QUEUE_DISPATCH</b> structure. Set the members of this structure as follows:
+
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
 <li><b>Revision</b> = <b>NDIS_PD_QUEUE_DISPATCH_REVISION_1</b></li>
@@ -69,17 +71,21 @@ The <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for t
 
 This member is reserved and must be set to 0.
 
+
 ### -field PDPostAndDrainBufferList
 
 A pointer to the provider's <a href="netvista.pdpostanddrainbufferlist">PDPostAndDrainBufferList</a> routine.
+
 
 ### -field PDQueryQueueDepth
 
 A pointer to the provider's <a href="netvista.pdqueryqueuedepth">PDQueryQueueDepth</a> routine.
 
+
 ### -field PDFlushQueue
 
 A pointer to the provider's <a href="netvista.pdflushqueue">PDFlushQueue</a> routine.
+
 
 ## -remarks
 
@@ -89,6 +95,7 @@ A pointer to the provider's <a href="netvista.pdflushqueue">PDFlushQueue</a> rou
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

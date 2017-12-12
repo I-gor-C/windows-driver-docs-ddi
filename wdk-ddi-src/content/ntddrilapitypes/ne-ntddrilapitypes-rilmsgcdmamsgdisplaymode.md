@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgdisplaymode.htm
 old-project: netvista
 ms.assetid: ee75cf74-def7-4705-ae61-c2472bd4446e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGCDMAMSGDISPLAYMODE, RILMSGCDMAMSGDISPLAYMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef enum _RILMSGCDMAMSGDISPLAYMODE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

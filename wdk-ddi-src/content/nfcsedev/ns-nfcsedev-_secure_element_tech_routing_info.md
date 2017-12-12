@@ -41,6 +41,7 @@ req.irql:
 SECURE_ELEMENT_TECH_ROUTING_INFO is  a member of <a href="nfpdrivers._secure_element_routing_table_entry">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _SECURE_ELEMENT_TECH_ROUTING_INFO {
 Secure element unique identifier returned by enumeration DDI.
 
 
+
 ### -field eRfTechType
 
 NFC Forum RF technology type.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ NFC Forum RF technology type.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

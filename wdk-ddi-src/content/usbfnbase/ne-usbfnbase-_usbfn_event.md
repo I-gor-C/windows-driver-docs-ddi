@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 4A1A4E49-6452-4291-8CD4-FA390C1F167E
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBFN_EVENT, USBFN_EVENT, *PUSBFN_EVENT
+ms.keywords: _USBFN_EVENT, *PUSBFN_EVENT, USBFN_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Defines notifications sent to class drivers.
 
 
+
 ## -syntax
 
 ````
@@ -69,13 +70,16 @@ typedef enum _USBFN_EVENT {
 
 The minimum value in this enumeration.
 
+
 ### -field UsbfnEventAttach
 
 VBUS is powered. No action is required.
 
+
 ### -field UsbfnEventReset
 
 USBFN has completed a USB Reset. If previously configured, class drivers should reset their state. Transfer requests will be cancelled.
+
 
 ### -field UsbfnEventDetach
 
@@ -84,15 +88,18 @@ USBFN has completed a USB Reset. If previously configured, class drivers should 
     reset their state. Transfer requests will be cancelled.
     The <b>BusSpeed</b> field of the notification is set appropriately.
 
+
 ### -field UsbfnEventSuspend
 
     There have been no SOF packets on the bus for 3ms.
     If a class driver wants to issue a remote wake up,
      the driver must use <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_signal_remote_wakeup.md">IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP</a> or <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_transfer_in.md">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a>.
 
+
 ### -field UsbfnEventResume
 
 USBFN has resumed from suspend to the previous state.
+
 
 ### -field UsbfnEventSetupPacket
 
@@ -101,6 +108,7 @@ USBFN has resumed from suspend to the previous state.
     <b>bmRequestType.Recipient</b> set to BMREQUEST_TO_INTERFACE.
     USBFN forwarded the setup packet to the class driver
     specified in <b>wIndex.LowByte</b>.
+
  The setup packet is available in the <b>SetupPacket</b> field of the
     event. If the control transfer does not require a data stage,
      class drivers should respond with
@@ -110,11 +118,13 @@ USBFN has resumed from suspend to the previous state.
     <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_control_status_handshake_in.md">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN</a> or <b>IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</b> in the opposite
     direction.
 
+
 ### -field UsbfnEventConfigured
 
     USBFN has received a SET_CONFIGURATION setup packet. Transfer
     requests from class drivers are now permitted.
     The <b>ConfigurationValue</b> of the notification is set to <b>wValue.W</b>.
+
 
 ### -field UsbfnEventUnConfigured
 
@@ -122,13 +132,16 @@ USBFN has resumed from suspend to the previous state.
     <b>wValue.W</b> set to 0. If previously configured, class drivers should
     reset their state. Transfer requests will be cancelled.
 
+
 ### -field UsbfnEventPortType
 
 Deprecated.
 
+
 ### -field UsbfnEventBusTearDown
 
 Deprecated.
+
 
 ### -field UsbfnEventSetInterface
 
@@ -136,9 +149,11 @@ USBFN has received a SET_INTERFACE setup packet.  On receiving this
     notification the class driver should query for the new endpoint set
     for the interface.
 
+
 ### -field UsbfnEventMaximum
 
 The minimum value in this enumeration.
+
 
 ## -remarks
 
@@ -148,6 +163,7 @@ The minimum value in this enumeration.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

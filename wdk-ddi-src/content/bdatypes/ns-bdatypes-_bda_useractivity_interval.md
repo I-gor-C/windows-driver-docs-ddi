@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _BDA_USERACTIVITY_INTERVAL {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

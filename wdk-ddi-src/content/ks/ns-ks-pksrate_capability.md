@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 70866a87-0ebd-4230-9958-ace18116fa23
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSRATE_CAPABILITY, KSRATE_CAPABILITY, *PKSRATE_CAPABILITY
+ms.keywords: PKSRATE_CAPABILITY, *PKSRATE_CAPABILITY, KSRATE_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The client uses the KSRATE_CAPABILITY structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565756">KSPROPERTY_STREAM_RATECAPABILITY</a> property request.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 A structure of type <a href="stream.ksproperty">KSPROPERTY</a> that specifies the property identifier.
 
+
 ### -field Rate
 
 A structure of type <a href="stream.ksrate">KSRATE</a> that specifies the requested rate.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A structure of type <a href="stream.ksrate">KSRATE</a> that specifies the reques
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

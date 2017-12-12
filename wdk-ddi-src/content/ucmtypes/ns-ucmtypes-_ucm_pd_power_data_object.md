@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: C54750A9-EE64-4FE7-9ED6-EC9709A82C43
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
+ms.keywords: _UCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 Describes a Power Data Object. For information about these members, see the <a href="http://www.usb.org/developers/docs/usb20_docs/#usb20spec">Power Delivery specification</a>.
+
 
 
 ## -syntax
@@ -85,6 +86,7 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 
 Size of the structure.
 
+
 ### -field Common
 
 
@@ -92,9 +94,11 @@ Size of the structure.
 
 Reserved.
 
+
 ### -field Type
 
 Type of Power Data Object.
+
 </dd>
 </dl>
 
@@ -102,33 +106,41 @@ Type of Power Data Object.
 
 Describing a Fixed Supply type Power Data Object.
 
+
 ### -field MaximumCurrentIn10mA
 
 Maximum current in multiples of 10 mA.
+
 
 ### -field VoltageIn50mV
 
 Voltage in multiples of 50 mV.
 
+
 ### -field PeakCurrent
 
 Peak current.
+
 
 ### -field Reserved
 
 Reserved for future use.
 
+
 ### -field DataRoleSwap
 
 If set, indicates the Power Data Object can perform a data role swap.
+
 
 ### -field UsbCommunicationCapable
 
 If set, indicates the Power Data Object is USB communication capable. 
 
+
 ### -field ExternallyPowered
 
 If set, indicates the Power Data Object is externally powered.
+
 
 ### -field UsbSuspendSupported
 
@@ -136,13 +148,16 @@ Indicates support for USB suspend.
 
 
 
+
 ### -field DualRolePower
 
 Dual role power
 
+
 ### -field FixedSupply
 
 fixed supply
+
 </dd>
 </dl>
 
@@ -150,21 +165,26 @@ fixed supply
 
 Contains bitfields describing a variable-supply non-battery PD object.
 
+
 ### -field MaximumCurrentIn10mA
 
 Describes the maximum current in multiples of 10 mA.
+
 
 ### -field MinimumVoltageIn50mV
 
 Desribes the minimum voltage in multiples of 50 mV.
 
+
 ### -field MaximumVoltageIn50mV
 
 Describes the maximum voltage in multiples of 50 mV.
 
+
 ### -field VariableSupportNonBattery
 
 Variable Support Non Battery type.
+
 </dd>
 </dl>
 
@@ -172,21 +192,26 @@ Variable Support Non Battery type.
 
 Contains bitfields describing a battery supply PD object.
 
+
 ### -field MaximumAllowablePowerIn250mW
 
 Describes the maximum allowable power in multiples of 250 mW.
+
 
 ### -field MinimumVoltageIn50mV
 
 Describes the minimum voltage in multiples of 50 mV.
 
+
 ### -field MaximumVoltageIn50mV
 
 Describes the maximum voltage in multiples of 50 mV.
 
+
 ### -field Battery
 
 Battery type.
+
 </dd>
 </dl>
 
@@ -198,38 +223,47 @@ Battery type.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

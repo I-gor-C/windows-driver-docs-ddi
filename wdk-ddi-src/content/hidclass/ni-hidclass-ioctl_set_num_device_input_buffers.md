@@ -39,8 +39,11 @@ req.irql:
 
 ## -description
 The IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS request sets the number of buffers for the input report queue of a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. 
+
 Each input report queue is implemented as a ring buffer. If a collection transmits data to the HID class driver faster than the driver can read it, some of the data may be lost. To prevent this type of loss, you can use an IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS request to adjust the number of buffers that the input report queue contains. The HID class driver requires a minimum of two input buffers. On Windows 2000, the maximum number of input buffers that the HID class driver supports is 200, and on Windows XP and later, the maximum number of input buffers that the HID class driver supports is 512. The default number of input buffers is 32.
+
 For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
+
 
 
 ## -ioctlparameters
@@ -50,16 +53,20 @@ For general information about HIDClass devices, see <a href="https://msdn.micros
 
 <b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location of the IRP contains the size, in bytes, of the input bufferat <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. This size must be <b>sizeof</b>(ULONG).
 
+
 ### -input-buffer-length
 The size of a ULONG.
+
 
 ### -output-buffer
 
        None.
 
+
 ### -output-buffer-length
 
        None.
+
 
 ### -in-out-buffer
 
@@ -73,6 +80,7 @@ The size of a ULONG.
 I/O Status block
 If the request succeeds, the HID class driver sets the <b>Status</b> field of <b>Irp-&gt;IoStatus</b> to STATUS_SUCCESS; otherwise, it sets the <b>Status</b> field to an appropriate NTSTATUS error code.
 
+
 ## -remarks
 
 
@@ -81,6 +89,7 @@ If the request succeeds, the HID class driver sets the <b>Status</b> field of <b
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,5 +106,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

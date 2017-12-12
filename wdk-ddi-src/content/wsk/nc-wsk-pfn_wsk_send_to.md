@@ -7,7 +7,7 @@ old-location: netvista\wsksendto.htm
 old-project: netvista
 ms.assetid: 34257ef2-947a-463a-b234-04fbaffa9344
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <b>WskSendTo</b> function sends datagram data to a remote transport address.
 
 
+
 ## -prototype
 
 ````
@@ -66,16 +67,19 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the datagram socket over which to send the datagram.
 
+
 ### -param Buffer [in]
 
 A pointer to an initialized 
      <a href="netvista.wsk_buf">WSK_BUF</a> structure that describes the data buffer
      that contains the datagram that is being sent over the socket.
 
+
 ### -param Flags 
 
 This parameter is reserved for system use. A WSK application must set this parameter to
      zero.
+
 
 ### -param RemoteAddress [in, optional]
 
@@ -83,22 +87,27 @@ A pointer to a structure that specifies the remote transport address to which to
      datagram. This pointer must be a pointer to the specific SOCKADDR structure type that corresponds to the
      address family that the WSK application specified when it created the socket.
      
+
 If the WSK application has set either a fixed remote transport address or a fixed destination
      transport address for the datagram socket, this pointer is optional and may be <b>NULL</b>. If <b>NULL</b>, the
      datagram is sent to the fixed remote transport address or the fixed destination transport address. If
      non-<b>NULL</b>, the datagram is sent to the specified remote transport address.
+
 For more information about setting a fixed remote transport address for a datagram socket, see 
      <a href="netvista.sio_wsk_set_remote_address">
      SIO_WSK_SET_REMOTE_ADDRESS</a>.
+
 For more information about setting a fixed destination transport address for a datagram socket, see 
      <a href="netvista.sio_wsk_set_sendto_address">
      SIO_WSK_SET_SENDTO_ADDRESS</a>.
+
 
 ### -param ControlInfoLength [in]
 
 The number of bytes of data in the buffer that is pointed to by the 
      <i>ControlInfo</i> parameter. If there is no control information associated with the datagram, the 
      <i>ControlInfoLength</i> parameter must be zero.
+
 
 ### -param ControlInfo [in, optional]
 
@@ -108,12 +117,14 @@ A pointer to a buffer that contains control information that is associated with 
      <a href="netvista.cmsghdr">CMSGHDR</a> structure. If there is no control
      information that is associated with the datagram, this parameter should be <b>NULL</b>.
 
+
 ### -param Irp [in, out]
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the send operation
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskSendTo</b> returns one of the following NTSTATUS codes:
@@ -141,6 +152,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 
  
 
+
 ## -remarks
 If the 
     <b>WskSendTo</b> function returns STATUS_PENDING, the MDL chain that is described in the 
@@ -159,11 +171,13 @@ The WSK subsystem does not perform any buffering of data when it sends datagrams
     <b>WskSendTo</b> function will not be completed by the WSK subsystem until all of the data has actually
     been sent.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -174,15 +188,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -193,9 +210,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -232,5 +251,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SEND_TO callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SEND_TO callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

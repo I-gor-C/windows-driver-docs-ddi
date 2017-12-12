@@ -7,8 +7,8 @@ old-location: netvista\rilgetdmprofileconfiginfoparams_2.htm
 old-project: netvista
 ms.assetid: 9f9c4c27-0a32-40c6-a302-98b4013e2664
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILGETDMPROFILECONFIGINFOPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\idarg_out_getmoveregions.htm
 old-project: display
 ms.assetid: b95b2da7-8078-4e71-91db-a1b399bc44a2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_GETMOVEREGIONS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Gives information about move regions that were handled by the OS.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct IDARG_OUT_GETMOVEREGIONS {
 
                      [out] Number of move regions the OS copied into the <b>pMoveRegions</b> array.
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ typedef struct IDARG_OUT_GETMOVEREGIONS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

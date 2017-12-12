@@ -7,8 +7,8 @@ old-location: netvista\riltonesignalinfo_v2.htm
 old-project: netvista
 ms.assetid: e0c40d65-d290-4fae-9fa7-57a9bf047f13
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILTONESIGNALINFO_V2, RILTONESIGNALINFO, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO
+ms.date: 12/8/2017
+ms.keywords: RILTONESIGNALINFO_V2, RILTONESIGNALINFO, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, *LPRILTONESIGNALINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILTONESIGNALINFO_V2 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

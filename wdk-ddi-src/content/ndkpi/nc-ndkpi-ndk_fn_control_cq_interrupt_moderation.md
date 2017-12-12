@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_control_cq_interrupt_moderation.htm
 old-project: netvista
 ms.assetid: 44EB6C92-1ADA-4675-9E19-BAB79097FF5B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql: <=DISPATCH_LEVEL
 
 ## -description
 The <i>NdkControlCqInterruptModeration</i> (<i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i>) function controls interrupt moderation on an NDK completion queue (CQ).
+
 For more information about interrupt moderation, see <a href="netvista.interrupt_moderation">Interrupt Moderation</a>.
+
 
 
 ## -prototype
@@ -63,16 +65,19 @@ NTSTATUS NdkControlCqInterruptModeration(
 A pointer to an NDK completion queue object (<a href="netvista.ndk_cq">NDK_CQ</a>).
 
 
+
 ### -param ModerationInterval [in]
 
 
 The maximum number of microseconds that a provider can defer interrupting the host CPU after a completion placed into the CQ satisfies an arm request. If <i>ModerationInterval</i> is zero, the provider performs no interrupt moderation  on the CQ regardless of the value of the <i>ModerationCount</i> parameter. If <i>ModerationInterval</i> is MAXULONG, the  <i>ModerationCount</i> controls the interrupt moderation on the CQ. If <i>ModerationInterval</i> is larger than the maximum moderation interval that the adapter supports or if the adapter’s timer granularity is larger, the provider can round down the interval value. 
 
 
+
 ### -param ModerationCount [in]
 
 
 The maximum number of completions that a provider can accumulate in the CQ before interrupting the host CPU to satisfy a CQ arm request. If  <i>ModerationInterval</i> is zero  or one,  the provider performs no interrupt moderation on the CQ regardless of the value of the <i>ModerationInterval</i> parameter. If <i>ModerationCount</i> is MAXULONG or larger than the depth of the CQ,   <i>ModerationInterval</i> controls the interrupt moderation on the CQ. 
+
 
 
 ## -returns
@@ -100,6 +105,7 @@ consumer provided a MAXULONG for <i>ModerationInterval</i> and MAXULONG or a val
 
  
 
+
 ## -remarks
 NDK consumers must not call <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> unless the provider sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED  flag in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure's <b>AdapterFlags</b> member. For a provider that sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag, the NDK consumer can call this function at any point after a CQ is created. The default behavior for a CQ is no interrupt moderation. The NDK consumer must not call this function on the same CQ concurrently.
 
@@ -112,35 +118,43 @@ The NDK consumer can call <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> multiple
 Providers that indicate support for interrupt moderation with the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag must normally handle <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> successfully and return STATUS_SUCCESS.  However,  a provider can fail the request due to a resource shortage such as a memory allocation failure. In this case,  the provider must return STATUS_INSUFFICIENT_RESOURCES. Providers cannot return STATUS_PENDING from this function. Providers that do not indicate support for this function with the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag must still implement this function. In this case,  this function  must return STATUS_NOT_SUPPORTED.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,9 +165,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -171,5 +187,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 The <b>KsSetMajorFunctionHandler</b> function sets the handler for a specified major function to use the internal dispatching. It routes through a KSDISPATCH_TABLE contained in the opaque object header to be the first element within a structure pointed to by an <b>FsContext</b> within a file object. The dispatching assumes the table and <b>FsContext</b> structure are initialized by the device using <b>KsAllocateObjectHeader</b>.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS KsSetMajorFunctionHandler(
 
 Specifies the driver object whose major function is to be handled.
 
+
 ### -param MajorFunction [in]
 
 Specifies the major function identifier to be handled. This sets the major function pointer in the driver object to an internal function that then dispatches to the <b>KSDISPATCH_TABLE</b> function. The pointer to this table is assumed to be the first element in a structure pointed to by <b>FsContext</b> in the file object of the specific IRP being dispatched. The valid major function identifiers are as listed.
+
 <table>
 <tr>
 <th>Identifier</th>
@@ -68,91 +71,113 @@ Specifies the major function identifier to be handled. This sets the major funct
 <tr>
 <td>
 IRP_MJ_CREATE 
+
 </td>
 <td>
 Create IRP. In this instance, a create request could be used for either creating a new instance of a filter, or for creating some object such as a pin under a filter or a clock under a pin. This assumes that the first element in the driver object's extent contains a KSDEVICE_HEADER structure that is used to find the type of object to create, based on the name passed. If a parent file object is specified, then that object's KSDISPATCH_TABLE.ChildCreateHandlerTable in the <b>FsContext</b> is looked at to determine what handler to use for the create, or use the device object's table.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MJ_CLOSE 
+
 </td>
 <td>
  Close IRP.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MJ_DEVICE_CONTROL 
+
 </td>
 <td>
  Device control IRP.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MJ_READ 
+
 </td>
 <td>
  Read IRP.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MJ_WRITE 
+
 </td>
 <td>
  Write IRP.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MJ_FLUSH_BUFFERS 
+
 </td>
 <td>
  Flush IRP.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MJ_QUERY_SECURITY 
+
 </td>
 <td>
  Query security information.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MJ_SET_SECURITY 
+
 </td>
 <td>
  Set security information.
+
 </td>
 </tr>
 <tr>
 <td>
 KSDISPATCH_FASTIO 
+
 </td>
 <td>
 This flag may be added to the MajorFunction identifier in order to specify that the entry refers to the fast I/O dispatch table, rather than the typical major function entry. This is valid only with IRP_MJ_READ, IRP_MJ_WRITE or IRP_MJ_DEVICE_CONTROL. The driver is responsible for creating the DriverObject-&gt;FastIoDispatch table. As with normal dispatching, if a handler is set for the driver object, all file objects must handle that fast I/O, even if the entry just points to DispatchFastIoDeviceControlFailure or a similar function.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 Returns STATUS_SUCCESS if the MajorFunction identifier is valid.
+
 
 ## -remarks
 If a major function handler is set for a driver object, all file objects must handle that major function, even if the entry just points to <b>KsDispatchInvalidDeviceRequest</b>.
 
 This flag may be used to specify that the fast I/O entry should be set rather than the IRP-based entry.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -163,6 +188,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,6 +199,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

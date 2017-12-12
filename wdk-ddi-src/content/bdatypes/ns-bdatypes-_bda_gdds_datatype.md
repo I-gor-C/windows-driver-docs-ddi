@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: D2E6A110-EC0F-4753-BAF1-7A9F84ECDD35
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE
+ms.keywords: _BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _BDA_GDDS_DATATYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

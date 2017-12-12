@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisRetrieveUlong
-title: NdisRetrieveUlong
+title: NdisRetrieveUlong macro
 author: windows-driver-content
 description: The NdisRetrieveUlong function retrieves a ULONG value from the source address, avoiding alignment faults.
 old-location: netvista\ndisretrieveulong.htm
 old-project: netvista
 ms.assetid: 41788885-d8a1-4459-82a0-261b39862530
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisRetrieveUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,61 +31,56 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.iface: 
 ---
 
-# NdisRetrieveUlong function
+# NdisRetrieveUlong macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisRetrieveUlong</b> function retrieves a ULONG value from the source address, avoiding alignment
-  faults.</p>
+  faults.
+
 
 
 ## -syntax
 
 ````
 VOID NdisRetrieveUlong(
-  _In_ PULONG DestinationAddress,
-  _In_ PULONG SourceAddress
+  [in] PULONG DestinationAddress,
+  [in] PULONG SourceAddress
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param DestinationAddress [in]
 
-<dd>
-<p>A pointer to a ULONG-aligned memory location in which to store the value.</p>
-</dd>
+A pointer to a ULONG-aligned memory location in which to store the value.
+
 
 ### -param SourceAddress [in]
 
-<dd>
-<p>A pointer to a memory location from which to retrieve the ULONG value.</p>
-</dd>
-</dl>
+A pointer to a memory location from which to retrieve the ULONG value.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>The given 
-    <i>DestinationAddress</i> is assumed to be aligned on a ULONG boundary.</p>
+The given 
+    <i>DestinationAddress</i> is assumed to be aligned on a ULONG boundary.
 
-<p>Callers of 
+Callers of 
     <b>NdisRetrieveUlong</b> can be running at any IRQL if the given addresses are in nonpaged pool.
-    Otherwise, callers must be running at IRQL &lt; DISPATCH_LEVEL.</p>
+    Otherwise, callers must be running at IRQL &lt; DISPATCH_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,15 +90,18 @@ VOID NdisRetrieveUlong(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p> Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562756">RtlRetrieveUlong</a> instead.</p>
+ Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562756">RtlRetrieveUlong</a> instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,10 +111,12 @@ VOID NdisRetrieveUlong(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>See Remarks section</p>
+See Remarks section
+
 </td>
 </tr>
 </table>
@@ -124,9 +124,12 @@ VOID NdisRetrieveUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisstoreulong.md">NdisStoreUlong</a>
+<a href="netvista.ndisstoreulong">NdisStoreUlong</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetrieveUlong function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetrieveUlong macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

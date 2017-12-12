@@ -7,8 +7,8 @@ old-location: storage\pri_reservation_descriptor.htm
 old-project: storage
 ms.assetid: f03506f6-404e-4635-a9ad-f2f36164ff2f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: PPRI_RESERVATION_DESCRIPTOR, *PPRI_RESERVATION_DESCRIPTOR, PRI_RESERVATION_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: PPRI_RESERVATION_DESCRIPTOR, PRI_RESERVATION_DESCRIPTOR, *PPRI_RESERVATION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PRI_RESERVATION_DESCRIPTOR structure is used to construct the <a href="storage.pri_reservation_list">PRI_RESERVATION_LIST</a> structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
 
 
+
 ## -syntax
 
 ````
@@ -62,34 +63,42 @@ typedef struct {
 
 The reservation key under which the persistent reservation is held.
 
+
 ### -field ScopeSpecificAddress
 
 The ScopeSpecificAddress field contains the element address, that has zeros placed in the most significant bits to fit the field.
+
 
 ### -field Reserved
 
 Reserved. Must be zero.
 
+
 ### -field Type
 
 The type of the persistent reservation as present in the Persistent Reserve Out command that created the persistent reservation.
+
 
 ### -field Scope
 
 The scope of the persistent reservation as present in the Persistent Reserve Out command that created the persistent reservation.
 
+
 ### -field Obsolete
 
 Reserved. Must be zero.
 
+
 ## -remarks
 The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,5 +118,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PRI_RESERVATION_DESCRIPTOR structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PRI_RESERVATION_DESCRIPTOR structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

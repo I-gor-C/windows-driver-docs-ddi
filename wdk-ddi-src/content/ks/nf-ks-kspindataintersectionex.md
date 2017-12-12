@@ -41,6 +41,7 @@ req.irql:
 The <b>KsPinDataIntersectionEx</b> function handles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565198">KSPROPERTY_PIN_DATAINTERSECTION</a> through a callback function.
 
 
+
 ## -syntax
 
 ````
@@ -63,36 +64,45 @@ NTSTATUS KsPinDataIntersectionEx(
 
 Specifies the IRP that describes the property request.
 
+
 ### -param Pin [in]
 
 Specifies the specific property that is being queried.
+
 
 ### -param Data [out]
 
 Specifies the pin property-specific data.
 
+
 ### -param DescriptorsCount [in]
 
 Specifies the number of descriptor structures.
+
 
 ### -param Descriptor [in]
 
 Specifies the pointer to the list of pin information structures.
 
+
 ### -param DescriptorSize [in]
 
 Size of the descriptor structures, in bytes.
+
 
 ### -param IntersectHandler [in, optional]
 
 Contains the optional minidriver-defined <a href="stream.kstrintersecthandlerex">KStrIntersectHandlerEx</a> callback function to compare data ranges.
 
+
 ### -param HandlerContext [in, optional]
 
 Optional context that is supplied to the handler.
 
+
 ## -returns
 Returns STATUS_SUCCESS; otherwise, an error specific to the property that is being handled.
+
 
 ## -remarks
 <b>KsPinDataIntersectionEx</b> is very similar to <b>KsPinDataIntersection</b>, except for some of the following slight differences:
@@ -109,11 +119,13 @@ The size of the resultant format is passed back in <i>DataSize</i> instead of <i
 
 These differences excepted, <b>KsPinDataIntersection</b> and <b>KsPinDataIntersectionEx</b> operate similarly.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +136,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,5 +153,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinDataIntersectionEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

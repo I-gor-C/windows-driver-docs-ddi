@@ -7,7 +7,7 @@ old-location: display\hwvidfindadapter.htm
 old-project: display
 ms.assetid: 8c880eff-4b4c-439e-9239-f2343c1fe084
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <i>HwVidFindAdapter</i> performs initialization of data specific to the miniport driver and devices supported by the miniport driver.
 
 
+
 ## -prototype
 
 ````
@@ -64,21 +65,26 @@ VP_STATUS HwVidFindAdapter(
 
 Pointer to the driver's per-device storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
+
 ### -param HwContext 
 
 Is <b>NULL</b> and should be ignored by the miniport driver.
+
 
 ### -param ArgumentString 
 
 Pointer to a null-terminated ASCII string that originates with the user. This pointer can be <b>NULL</b>.
 
+
 ### -param ConfigInfo 
 
 Pointer to a <a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a> structure. The video port driver allocates memory for and initializes this structure with any known configuration information, such as the system IO bus number and values that the miniport driver set in the <a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a> structure.
 
+
 ### -param Again 
 
 Should be ignored by the miniport driver.
+
 
 ## -returns
 <i>HwVidFindAdapter</i> must return one of the following status codes:
@@ -93,6 +99,7 @@ Should be ignored by the miniport driver.
 </dl>Indicates success.
 
  
+
 
 ## -remarks
 Every video miniport driver must have an <i>HwVidFindAdapter</i> function.
@@ -151,11 +158,13 @@ If the driver does not handle interrupts, <i>HwVidFindAdapter</i> should set bot
 
 <i>HwVidFindAdapter</i> should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -166,6 +175,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -221,5 +231,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_FIND_ADAPTER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_FIND_ADAPTER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

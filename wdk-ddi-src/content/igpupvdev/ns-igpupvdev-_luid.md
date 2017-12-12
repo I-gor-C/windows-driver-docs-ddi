@@ -7,7 +7,7 @@ old-location: netvista\luid.htm
 old-project: netvista
 ms.assetid: 9547d3e1-a811-4b89-be71-f7cf81e92b93
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _LUID, LUID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,8 +41,10 @@ req.irql:
 The locally unique identifier (LUID) is a 64-bit value guaranteed to be unique only on the system on
   which it was generated. The uniqueness of an LUID is guaranteed only until the system is restarted. 
   
+
 An LUID is not for direct manipulation. Drivers must use support routines and structures to manipulate
   LUID values.
+
 
 
 ## -syntax
@@ -61,9 +63,11 @@ typedef struct _LUID {
 
 Low order bits.
 
+
 ### -field HighPart
 
 High order bits.
+
 
 ## -remarks
 
@@ -73,14 +77,17 @@ High order bits.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

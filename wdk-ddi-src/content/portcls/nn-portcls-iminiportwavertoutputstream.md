@@ -39,11 +39,14 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IMiniportWaveRTOutputStream</code> interface represents the output wave stream. <code>IMiniportWaveRTOutputStream</code> inherits from the <b>IUnknown</b> interface.
+
 <code>IMiniportWaveRTOutputStream</code> is supported in Windows 10 and later.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveRTOutputStream</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -53,6 +56,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveRTOutputStream</
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

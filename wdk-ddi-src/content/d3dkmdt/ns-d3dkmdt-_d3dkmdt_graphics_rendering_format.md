@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_graphics_rendering_format.htm
 old-project: display
 ms.assetid: 954cc3f6-731f-4c55-bf61-63b5d48248c0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_GRAPHICS_RENDERING_FORMAT, D3DKMDT_GRAPHICS_RENDERING_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMDT_GRAPHICS_RENDERING_FORMAT structure contains information about a primary rendering surface.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _D3DKMDT_GRAPHICS_RENDERING_FORMAT {
 
 A D3DKMDT_2DREGION structure that holds the size (number of pixels, both horizontal and vertical) of the surface.
 
+
 ### -field VisibleRegionSize
 
 A D3DKMDT_2DREGION structure that holds the size of the visible portion of the surface.
+
 
 ### -field Stride
 
 The offset, in bytes, between one scan line and the next scan line in the surface.
 
+
 ### -field PixelFormat
 
 A value from the D3DDDIFORMAT enumeration that indicates the pixel format of the surface.
+
 
 ### -field ColorBasis
 
 A value from the D3DKMDT_COLOR_BASIS enumeration that indicates the color basis used to encode the content of the surface.
 
+
 ### -field PixelValueAccessMode
 
 A value from the D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration that indicates the type of data (for example, direct color values or palette indexes) that are stored in the surface.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ A value from the D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration that indicates the 
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,5 +123,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_GRAPHICS_RENDERING_FORMAT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_GRAPHICS_RENDERING_FORMAT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

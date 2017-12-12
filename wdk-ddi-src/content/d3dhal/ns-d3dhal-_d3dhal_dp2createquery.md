@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2createquery.htm
 old-project: display
 ms.assetid: 9998743d-57d5-4289-91c5-1c810bf4ca65
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2CREATEQUERY, D3DHAL_DP2CREATEQUERY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,9 @@ req.irql:
 
    DirectX 9.0 and later versions only.
    
+
 One or more D3DHAL_DP2CREATEQUERY structures are parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_CREATEQUERY, and are used to create resources for queries.
+
 
 
 ## -syntax
@@ -60,9 +62,11 @@ typedef struct _D3DHAL_DP2CREATEQUERY {
 
 Identifies the query.
 
+
 ### -field QueryType
 
 Specifies a value from the D3DQUERYTYPE enumeration that indicates the query capability for which the driver creates resources.
+
 
 ## -remarks
 The runtime uses D3DHAL_DP2CREATEQUERY to identify each query with a unique identifier and a query type. The driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback must process <b>wPrimitiveCount</b> D3DHAL_DP2CREATEQUERY structures from the command buffer. The value of <b>wPrimitiveCount</b> is specified in the D3DHAL_DP2COMMAND structure. The driver parses these structures and creates resources for the queries that they represent as necessary. 
@@ -76,11 +80,13 @@ DWORD for D3DQUERYTYPE_OCCLUSION. The driver sets this DWORD to the number of pi
 
 <a href="display.d3ddevinfo_vcache">D3DDEVINFO_VCACHE</a> structure for D3DQUERYTYPE_VCACHE.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2CREATEQUERY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2CREATEQUERY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WIA_MICR_INFO</b> structure stores information for one decoded MICR code.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _WIA_MICR_INFO {
 
 The total size of this structure, in bytes.
 
+
 ### -field Page
 
 The page number where the MICR code was detected. A zero-based index referring to the current scan job.
+
 
 ### -field Length
 
 Length of the MICR text, in characters, excluding the length of the NULL terminator.
 
+
 ### -field Text
 
 Placeholder for a NULL terminated character string containing the MICR text.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Placeholder for a NULL terminated character string containing the MICR text.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdevicetype.htm
 old-project: wdf
 ms.assetid: 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDeviceInitSetDeviceType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfDeviceInitSetDeviceType</b> method sets the device type for a specified device.
+
 
 
 ## -syntax
@@ -59,12 +61,15 @@ VOID WdfDeviceInitSetDeviceType(
 
 A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
+
 ### -param DeviceType [in]
 
 A FILE_DEVICE_XXXX value that identifies the device type. For more information about FILE_DEVICE_XXXX values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 If a driver calls <b>WdfDeviceInitSetDeviceType</b>, it must do so before it calls <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>.
@@ -78,11 +83,13 @@ The device type that a driver specifies determines the default priority boost va
 
 The following code example indicates that a device is a serial device.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,14 +100,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +121,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -121,14 +132,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_childdeviceinitapi">ChildDeviceInitAPI</a>, <a href="devtest.kmdf_deviceinitapi">DeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_pdodeviceinitapi">PdoDeviceInitAPI</a>

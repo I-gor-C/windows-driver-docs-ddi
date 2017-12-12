@@ -7,7 +7,7 @@ old-location: netvista\wdi_channel_mapping_entry.htm
 old-project: netvista
 ms.assetid: F05DAD5F-C0A4-46E0-8069-7CEF5B6C5707
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_CHANNEL_MAPPING_ENTRY, *PWDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   WDI_CHANNEL_MAPPING_ENTRY structure defines a channel mapping entry.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef struct _WDI_CHANNEL_MAPPING_ENTRY {
 
 Specifies the logical channel number.
 
+
 ### -field ChannelCenterFrequency
 
 Specifies the center frequency for the channel in MHz.
+
 
 ## -remarks
 
@@ -71,22 +74,27 @@ Specifies the center frequency for the channel in MHz.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Sets the power state of the specified PCI Express SR-IOV Virtual Function (VF).
 
 
+
 ## -prototype
 
 ````
@@ -61,20 +62,25 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param VfIndex [in]
 
 A zero-based index of the VF to which this power state set operation applies.
+
 
 ### -param PowerState [in]
 
 A <a href="kernel.device_power_state">DEVICE_POWER_STATE</a>-type value that indicates the <b>Dx</b> power state to set.
 
+
 ### -param Wake [in]
 
 A boolean value that indicates whether to arm the device for a wake signal (PME for PCI Express devices), as it goes into the low power state. TRUE  indicates the device is armed; FALSE otherwise. This value must be FALSE if <i>PowerState</i> is <b>PowerDeviceD0</b>.
 
+
 ## -returns
 Set to STATUS_SUCCESS if the request is successful. Otherwise, return appropriate a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code to indicate the error condition. 
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. The callback is invoked when the system wants to change the power state of a virtual function. 
@@ -83,27 +89,33 @@ The PF driver registers its implementation by setting the <b>SetVfPowerState</b>
 
 Here is an example implementation of this callback function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,9 +126,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

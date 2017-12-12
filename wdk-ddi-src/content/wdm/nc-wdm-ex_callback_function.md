@@ -7,7 +7,7 @@ old-location: kernel\registrycallback.htm
 old-project: kernel
 ms.assetid: 220ce3b8-2820-4753-9659-5ce7b4f4f32d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A filter driver's <i>RegistryCallback</i> routine can monitor, block, or modify a registry operation.
 
 
+
 ## -prototype
 
 ````
@@ -62,13 +63,16 @@ NTSTATUS RegistryCallback(
 
 The value that the driver passed as the <i>Context</i> parameter to <a href="kernel.cmregistercallback">CmRegisterCallback</a> or <a href="kernel.cmregistercallbackex">CmRegisterCallbackEx</a> when it registered this <i>RegistryCallback</i> routine.
 
+
 ### -param Argument1 [in, optional]
 
 A <a href="kernel.reg_notify_class">REG_NOTIFY_CLASS</a>-typed value that identifies the type of registry operation that is being performed and whether the <i>RegistryCallback</i> routine is being called before or after the registry operation is performed.
 
+
 ### -param Argument2 [in, optional]
 
 A pointer to a structure that contains information that is specific to the type of registry operation. The structure type depends on the REG_NOTIFY_CLASS-typed value for <i>Argument1</i>, as shown in the following table. For information about which REG_NOTIFY_CLASS-typed values are available for which operating system versions, see <a href="kernel.reg_notify_class">REG_NOTIFY_CLASS</a>.
+
 <table>
 <tr>
 <th>REG_NOTIFY_CLASS Value</th>
@@ -436,7 +440,9 @@ A pointer to a structure that contains information that is specific to the type 
 </tr>
 </table>
  
+
 ** Starting with Windows 7, the actual data structure passed in when the notify class is <b>RegNtPreCreateKeyEx</b> or <b>RegNtPreOpenKeyEx</b> is the V1 version of this structure, <a href="kernel.reg_create_key_information_v1">REG_CREATE_KEY_INFORMATION_V1</a> or <a href="kernel.reg_open_key_information_v1">REG_OPEN_KEY_INFORMATION_V1</a>, respectively. Check the <b>Reserved</b> member to determine the version of the structure.
+
 <table>
 <tr>
 <th>Version number</th>
@@ -453,19 +459,25 @@ A pointer to a structure that contains information that is specific to the type 
 </table>
  
 
+
 ## -returns
 
 <dl>
 <dt><a id="_and__"></a><a id="_AND__"></a>Windows XP and Windows Server 2003:</dt>
 <dd>
 If the <i>RegistryCallback</i> routine returns STATUS_SUCCESS, the configuration manager continues processing the registry operation.
+
 If the <i>RegistryCallback</i> routine returns a status value for which <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS</a>(<i>status</i>) equals <b>FALSE</b>, the configuration manager stops processing the registry operation and returns the specified return value to the calling thread.
+
 </dd>
 <dt><a id="_and_later_"></a><a id="_AND_LATER_"></a>Windows Vista and later:</dt>
 <dd>
 If the <i>RegistryCallback</i> routine returns STATUS_SUCCESS, the configuration manager continues processing the registry operation.
+
 If the <i>RegistryCallback</i> routine returns STATUS_CALLBACK_BYPASS, the configuration manager stops processing the registry operation and returns STATUS_SUCCESS to the calling thread.
+
 If the <i>RegistryCallback</i> routine returns a status value for which <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS</a>(<i>status</i>) equals <b>FALSE</b> (except for STATUS_CALLBACK_BYPASS), the configuration manager stops processing the registry operation and returns the specified return value to the calling thread.
+
 </dd>
 </dl>If the <i>RegistryCallback</i> routine returns STATUS_SUCCESS, the configuration manager continues processing the registry operation.
 
@@ -478,6 +490,7 @@ If the <i>RegistryCallback</i> routine returns STATUS_CALLBACK_BYPASS, the confi
 If the <i>RegistryCallback</i> routine returns a status value for which <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS</a>(<i>status</i>) equals <b>FALSE</b> (except for STATUS_CALLBACK_BYPASS), the configuration manager stops processing the registry operation and returns the specified return value to the calling thread.
 
 For more information about when a <i>RegistryCallback</i> routine should return each of these status values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
+
 
 ## -remarks
 To be notified of registry operations, a kernel-mode component (such as the driver component of an antivirus software package) can call <a href="kernel.cmregistercallback">CmRegisterCallback</a> or <a href="kernel.cmregistercallbackex">CmRegisterCallbackEx</a> to register a <i>RegistryCallback</i> routine.
@@ -502,11 +515,13 @@ Then, implement your callback routine as follows:
 
 The EX_CALLBACK_FUNCTION function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EX_CALLBACK_FUNCTION function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -517,14 +532,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows XP (see Return Value section).
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -535,9 +553,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Called at PASSIVE_LEVEL (see Remarks section).
+
 </td>
 </tr>
 </table>
@@ -561,5 +581,8 @@ Called at PASSIVE_LEVEL (see Remarks section).
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RegistryCallback routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RegistryCallback routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

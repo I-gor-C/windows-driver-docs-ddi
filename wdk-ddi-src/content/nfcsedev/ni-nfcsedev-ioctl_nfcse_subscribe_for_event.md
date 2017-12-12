@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 3A184392-A68C-4AFC-AE9F-36247153ADD2
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
+ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -42,11 +42,13 @@ The <b>IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT</b>
    control code is issued by a client to subscribe to a specific event. 
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 
 <a href="nfpdrivers.secure_element_event_subscription_info"> SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO</a> structure.
+
 
 
 ### -input-buffer-length
@@ -55,6 +57,7 @@ The <b>IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT</b>
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -74,6 +77,7 @@ I/O Status block
 
  
 
+
 ## -remarks
 The following are requirements that the driver must adhere to.<ul>
 <li>This IOCTL must be called on a handle with a <b>SEEvents</b> file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE.</li>
@@ -81,11 +85,13 @@ The following are requirements that the driver must adhere to.<ul>
 </ul>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Creates a customized SCSI control descriptor block (CDB) and sends it to the kernel-mode still image driver for SCSI buses.
 
 
+
 ## -syntax
 
 ````
@@ -111,14 +112,18 @@ if (SRB_STATUS_SUCCESS != SRB_STATUS(SrbStatus))
 ### -input-buffer
 Pointer to a <b>SCSISCAN_CMD</b> structure.
 
+
 ### -input-buffer-length
 Size of the input buffer.
+
 
 ### -output-buffer
 Pointer to a data buffer. Depending on the type of I/O operation, this buffer might supply or receive data.
 
+
 ### -output-buffer-length
 Size of the output buffer.
+
 
 ### -in-out-buffer
 
@@ -132,6 +137,7 @@ Size of the output buffer.
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 When the <b>DeviceloControl</b> function is called with the IOCTL_SCSISCAN_CMD I/O control code, the caller must specify the address of a <a href="image.scsiscan_cmd">SCSISCAN_CMD</a> structure as the function's <i>lpInBuffer</i> parameter. This structure specifies the type of operation being requested. The kernel-mode driver constructs a SCSI Request Block (SRB) from the SCSISCAN_CMD structure's contents.
 
@@ -141,11 +147,13 @@ For more information, see <a href="https://msdn.microsoft.com/f9216d3c-4930-4c26
 
 <b>Code example</b>
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +179,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IOCTL_SCSISCAN_CMD control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

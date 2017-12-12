@@ -41,6 +41,7 @@ req.irql:
 The HIDD_ATTRIBUTES structure contains vendor information about a HIDClass device.
 
 
+
 ## -syntax
 
 ````
@@ -59,28 +60,34 @@ typedef struct _HIDD_ATTRIBUTES {
 
 Specifies the size, in bytes, of a HIDD_ATTRIBUTES structure.
 
+
 ### -field VendorID
 
 Specifies a HID device's vendor ID.
+
 
 ### -field ProductID
 
 Specifies a HID device's product ID.
 
+
 ### -field VersionNumber
 
 Specifies the manufacturer's revision number for a HIDClass device.
+
 
 ## -remarks
 A caller of <a href="hid.hidd_getattributes">HidD_GetAttributes</a>, uses this structure to obtain a device's vendor information.
 
 Before using a HIDD_ATTRIBUTES structure with <a href="hid.hidclass_support_routines">HIDClass support routines</a>, the caller must set the <b>Size</b> member.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,5 +104,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDD_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

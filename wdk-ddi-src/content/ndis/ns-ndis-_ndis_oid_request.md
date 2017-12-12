@@ -7,8 +7,8 @@ old-location: netvista\ndis_oid_request.htm
 old-project: netvista
 ms.assetid: 3a5e151d-2a2d-4477-a736-8a5f3d3820a2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_OID_REQUEST, NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
+ms.date: 12/8/2017
+ms.keywords: _NDIS_OID_REQUEST, *PNDIS_OID_REQUEST, NDIS_OID_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_OID_REQUEST structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 To query or set OID information, NDIS submits NDIS_OID_REQUEST structures to filter drivers and
   miniport drivers.
+
 
 
 ## -syntax
@@ -100,21 +101,25 @@ The
      <b>Revision</b> member to NDIS_OID_REQUEST_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_OID_REQUEST_REVISION_1.
 
+
 ### -field RequestType
 
 The request type as one of the 
      <a href="netvista.ndis_request_type">NDIS_REQUEST_TYPE</a> enumeration
      values.
 
+
 ### -field PortNumber
 
 The port to which the request is sent. If the port is unknown or default, this member is
      zero.
 
+
 ### -field Timeout
 
 A time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the
      time-out expires before the driver completes the request.
+
 
 ### -field RequestId
 
@@ -124,12 +129,14 @@ An identifier for the request. If a miniport driver must complete a request imme
      <b>RequestId</b> member of the associated 
      <a href="netvista.ndis_status_indication">NDIS_STATUS_INDICATION</a> structure. 
      
+
 NDIS or overlying drivers can also use the 
      <b>RequestId</b> to cancel a request. When a miniport driver receives a
      cancellation request, the miniport driver cancels any pending requests with a matching 
      <b>RequestId</b>. If 
      <b>RequestId</b> is zero, the miniport driver can ignore this member. For more
      information about status indications, see the following Remarks section.
+
 
 ### -field RequestHandle
 
@@ -140,7 +147,9 @@ A handle that identifies the source that issued the OID request. If a miniport d
       <b>DestinationHandle</b> member of the associated NDIS_STATUS_INDICATION
       structure. In this case, NDIS will send only the subsequent status indication to the source that issued
       the OID request.
+
 For more information about status indications, see the following Remarks section.
+
 
 ### -field DATA
 
@@ -148,10 +157,12 @@ A union that defines the request data. The information in the data varies accord
      request as specified by the 
      <b>RequestType</b> member. The following member structures are specified:
 
+
 ### -field QUERY_INFORMATION
 
 This structure contains the parameters for an <b>NdisRequestQueryInformation</b> or
        <b>NdisRequestQueryStatistics</b> request type. This structure is specified as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -177,16 +188,19 @@ struct _QUERY
 The object identifier of the requested operation. The value is an OID_
        <i>XXX</i> code.
 
+
 ### -field InformationBuffer
 
 A pointer to a buffer into which the underlying driver or NDIS returns the requested information
        for query-information requests.
+
 
 ### -field InformationBufferLength
 
 The size, in bytes, of the buffer at 
        <b>InformationBuffer</b>. The value at 
        <b>Oid</b> determines the value appropriate to this member.
+
 
 ### -field BytesWritten
 
@@ -195,16 +209,19 @@ The number of bytes that the underlying driver or NDIS transfers into the buffer
        <a href="netvista.ndisoidrequest">NdisOidRequest</a> function returns
        NDIS_STATUS_INVALID_LENGTH, the value of this member is meaningless.
 
+
 ### -field BytesNeeded
 
 The number of bytes that are required to return query information requested by the given OID_
         <i>XXX</i> code.
+
 If 
         <b>NdisOidRequest</b> returns NDIS_STATUS_SUCCESS, the value of this member is
         meaningless. If the 
         <b>InformationBufferLength</b> is too small for the given OID_
         <i>XXX</i> on a query request, this member indicates how large a buffer is
         required to satisfy the request.
+
 </dd>
 </dl>
 
@@ -212,6 +229,7 @@ If
 
 This structure contains the parameters for an <b>NdisRequestSetInformation</b> request type. This structure
        is specified as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -237,10 +255,12 @@ struct _SET
 The object identifier of the requested operation. The value is an OID_
        <i>XXX</i> code.
 
+
 ### -field InformationBuffer
 
 A pointer to a buffer from which the underlying driver reads caller-supplied information for
        set-information requests.
+
 
 ### -field InformationBufferLength
 
@@ -248,20 +268,24 @@ The size, in bytes, of the buffer at
        <b>InformationBuffer</b>. The value at 
        <b>Oid</b> determines the value appropriate to this member.
 
+
 ### -field BytesRead
 
 The number of bytes that the underlying driver read from the buffer at 
        <b>InformationBuffer</b> for set-information requests.
 
+
 ### -field BytesNeeded
 
 The number of bytes that are required to carry out the set operation requested by the given OID_
         <i>XXX</i> code.
+
 If 
         <b>NdisOidRequest</b> returns NDIS_STATUS_SUCCESS, the value of this member is
         meaningless. If the buffer at 
         <b>InformationBuffer</b> does not contain sufficient data for the given OID_
         <i>XXX</i> on a set request, this member indicates how much data is required.
+
 </dd>
 </dl>
 
@@ -269,6 +293,7 @@ If
 
 This structure contains the parameters for an <b>NdisRequestMethod</b> request type. This structure is
        specified as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -297,12 +322,14 @@ struct _METHOD
 The object identifier of the requested operation. The value is an OID_
        <i>XXX</i> code.
 
+
 ### -field InformationBuffer
 
 A pointer to a buffer into which the underlying driver or NDIS returns the requested information
         for query operations or from which the underlying driver reads caller-supplied information for set
         operations. These operations are specific to the type of <b>NdisRequestMethod</b> request type that is being
         made.
+
 <div class="alert"><b>Note</b>  This buffer is used for both set-information and query-information requests. As
         a result, data in the buffer for the set-information request would be overwritten by data that is
         returned for the query-information request. The exact usage depends on the requested operation as
@@ -316,10 +343,12 @@ The size, in bytes, of the buffer at
        <b>InformationBuffer</b>. The value at 
        <b>Oid</b> determines the value appropriate to this member.
 
+
 ### -field OutputBufferLength
 
 The number of bytes in the buffer at 
        <b>InformationBuffer</b> that the driver can write.
+
 
 ### -field MethodId
 
@@ -330,29 +359,35 @@ The method to run for a method OID. A method OID request can support multiple op
        Miniport drivers can define custom method OIDs. For more information about custom OIDs, see 
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569641">OID_GEN_SUPPORTED_GUIDS</a>.
 
+
 ### -field BytesWritten
 
 The number of bytes that the underlying driver or NDIS transfers into the buffer at 
         <b>InformationBuffer</b> for query-information requests. If the 
         <a href="netvista.ndisoidrequest">NdisOidRequest</a> function returns
         NDIS_STATUS_INVALID_LENGTH, the value of this member is meaningless.
+
 For method OIDs, 
         <b>BytesWritten</b> should be less than or equal to the value in the 
         <b>OutputBufferLength</b> member.
+
 
 ### -field BytesRead
 
 The number of bytes that the underlying driver read from the buffer at 
         <b>InformationBuffer</b> for set-information requests.
+
 For method OIDs, 
         <b>BytesRead</b> should be less than or equal to the value in the 
         <b>InputBufferLength</b> member.
+
 
 ### -field BytesNeeded
 
 The number of bytes that are required to return query information or to carry out the set
         operation requested by the given OID_
         <i>XXX</i> code.
+
 If 
         <b>NdisOidRequest</b> returns NDIS_STATUS_SUCCESS, the value of this member is
         meaningless. If the 
@@ -361,6 +396,7 @@ If
         satisfy the request. If the buffer at 
         <b>InformationBuffer</b> does not contain sufficient data for the given OID_
         <i>XXX</i> on a set, this member indicates how much data is required.
+
 </dd>
 </dl>
 </dd>
@@ -370,14 +406,17 @@ If
 
 An area that is reserved for NDIS.
 
+
 ### -field MiniportReserved
 
 An area that is reserved for the miniport driver.
+
 
 ### -field SourceReserved
 
 An area that is reserved for the originating driver. Reserved for the allocator of the
      NDIS_OID_REQUEST structure. This is usually an NDIS protocol driver or an NDIS filter driver.
+
 
 ### -field SupportedRevision
 
@@ -390,13 +429,16 @@ The revision of an NDIS structure that was supported by an NDIS 6.0 or later dri
      <a href="netvista.specifying_ndis_version_information">Specifying NDIS Version
      Information</a>.
 
+
 ### -field Reserved1
 
 Reserved for future use.
 
+
 ### -field Reserved2
 
 Reserved for future use.
+
 
 ## -remarks
 A protocol driver or a filter driver should allocate nonpaged memory for the buffer at 
@@ -438,19 +480,23 @@ The
     requests. To implement such a request, a miniport driver assigns an internal variable to one of these
     generic types.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -479,5 +525,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

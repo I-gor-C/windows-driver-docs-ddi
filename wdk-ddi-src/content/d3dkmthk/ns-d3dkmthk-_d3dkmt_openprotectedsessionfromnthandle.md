@@ -7,7 +7,7 @@ old-location: display\d3dkmt-openprotectedsessionfromnthandle.htm
 old-project: display
 ms.assetid: 15937864-c6ef-4c86-b957-87c7afe1cd94
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE, D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to open a protected session from the NT handle.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE {
 
 The protected NT session handle.
 
+
 ### -field hHandle
 
 The protected kernel session handle.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The protected kernel session handle.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

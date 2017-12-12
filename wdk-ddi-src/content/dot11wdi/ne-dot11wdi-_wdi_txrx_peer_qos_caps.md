@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_peer_qos_caps.htm
 old-project: netvista
 ms.assetid: 34d53daa-3501-4532-82e3-e5b0ed452b66
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PEER_QOS_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The WDI_TXRX_PEER_QOS_CAPS enumeration defines the Quality of Service (QoS) capabilities.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _WDI_TXRX_PEER_QOS_CAPS {
 
 Specifies that QoS was not negotiated for this peer during association.
 
+
 ### -field WDI_TXRX_PeerCfgQosCapable
 
 Specifies that QoS was negotiated for this peer during association.
 
+
 ### -field WDI_TXRX_PeerCfgQosUapsdTids
 
 Reserved.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Reserved.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

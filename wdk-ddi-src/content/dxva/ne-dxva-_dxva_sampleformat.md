@@ -7,7 +7,7 @@ old-location: display\dxva_sampleformat.htm
 old-project: display
 ms.assetid: 90cec61b-fe49-4fc7-b666-e74f745a00b1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVA_SampleFormat, DXVA_SampleFormat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXVA_SampleFormat enumeration type describes the format of data that the input sample contains.
 
 
+
 ## -syntax
 
 ````
@@ -65,39 +66,49 @@ typedef enum _DXVA_SampleFormat {
 Specifies the sample format mask. The first 8 (0x000000FF) bits of a DWORD can be used to specify input sample format. 
 
 
+
 ### -field DXVA_SampleUnknown
 
 Specifies that the sample format is unknown. 
+
 
 
 ### -field DXVA_SamplePreviousFrame
 
 Specifies that the sample contains the previous output frame.
 
+
 ### -field DXVA_SampleProgressiveFrame
 
 Specifies that the sample contains a progressive frame.
+
 
 ### -field DXVA_SampleFieldInterleavedEvenFirst
 
 Specifies that the sample contains two interleaved fields; the even field is temporally first.
 
+
 ### -field DXVA_SampleFieldInterleavedOddFirst
 
 Specifies that the sample contains two interleaved fields; the odd field is temporally first.
+
 
 ### -field DXVA_SampleFieldSingleEven
 
 Specifies that the sample contains an even interleaved field.
 
+
 ### -field DXVA_SampleFieldSingleOdd
 
 Specifies that the sample contains an odd interleaved field.
 
+
 ### -field DXVA_SampleSubStream
 
 Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
+
 Specifies that the sample contains a video substream.
+
 
 ## -remarks
 
@@ -107,6 +118,7 @@ Specifies that the sample contains a video substream.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_SampleFormat enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_SampleFormat enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

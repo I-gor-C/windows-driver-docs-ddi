@@ -7,7 +7,7 @@ old-location: storage\clearmpiodiskhealthcounters_in.htm
 old-project: storage
 ms.assetid: 1af28545-f43f-47a2-b6a2-64fd7a408687
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _ClearMpioDiskHealthCounters_IN, ClearMpioDiskHealthCounters_IN, *PClearMpioDiskHealthCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The ClearMpioDiskHealthCounters_IN structure is used to provide an input parameter to the ClearMpioDiskHealthCounters method.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _ClearMpioDiskHealthCounters_IN {
 
 A 32-bitfield that represents the MPIO disk ordinal value.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ A 32-bitfield that represents the MPIO disk ordinal value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

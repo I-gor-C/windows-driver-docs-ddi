@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_prepare_device.htm
 old-project: kernel
 ms.assetid: F8D6680D-EFA7-4DED-B808-0E738A852641
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_ACPI_PREPARE_DEVICE, *PPEP_ACPI_PREPARE_DEVICE, PEP_ACPI_PREPARE_DEVICE
+ms.date: 12/7/2017
+ms.keywords: _PEP_ACPI_PREPARE_DEVICE, PEP_ACPI_PREPARE_DEVICE, *PPEP_ACPI_PREPARE_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_ACPI_PREPARE_DEVICE</b> structure indicates whether a platform extension plug-in (PEP) is prepared to provide ACPI services for the specified device.
 
 
+
 ## -syntax
 
 ````
@@ -59,34 +60,42 @@ typedef struct _PEP_ACPI_PREPARE_DEVICE {
 
 [in] A pointer to an <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. This name specifies the path and name of the device in the ACPI namespace. For more information, see <a href="https://msdn.microsoft.com/fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67">Enumerating Child Devices and Control Methods</a>.
 
+
 ### -field InputFlags
 
 [in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_PREPARE_DEVICE_INPUT_FLAG_NONE (0x0).
+
 
 ### -field DeviceAccepted
 
 [out] Whether the PEP is prepared to provide ACPI services for the device. Set this member to TRUE if the PEP is prepared to be the sole provider of ACPI services for this device, and to FALSE if it is not.
 
+
 ### -field OutputFlags
 
 [out] A set of output flags. No flags are currently defined for this member. Set this member to PEP_ACPI_PREPARE_DEVICE_OUTPUT_FLAG_NONE (0x0).
 
+
 ## -remarks
 This structure is used by the <a href="kernel.pep_notify_acpi_prepare_device">PEP_NOTIFY_ACPI_PREPARE_DEVICE</a> notification. The <b>AcpiDeviceName</b> and <b>InputFlags</b> members of the structure contain input values that are supplied by the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) when this notification is sent to the PEP. The <b>DeviceAccepted</b> and <b>OutputFlags</b> members contain output values that the PEP writes to the structure in response to the notification.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +115,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_PREPARE_DEVICE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_PREPARE_DEVICE structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

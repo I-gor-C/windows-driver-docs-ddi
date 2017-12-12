@@ -41,6 +41,7 @@ req.irql:
 The <b>HidD_GetHidGuid</b> routine returns the <a href="wdkgloss.d#wdkgloss.device_interface#wdkgloss.device_interface"><i>device interface</i></a><a href="wdkgloss.g#wdkgloss.guid#wdkgloss.guid"><i>GUID</i></a> for HIDClass devices.
 
 
+
 ## -syntax
 
 ````
@@ -56,19 +57,23 @@ void __stdcall HidD_GetHidGuid(
 
 Pointer to a caller-allocated GUID buffer that the routine uses to return the device interface GUID for HIDClass devices.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 Only user-mode applications can call <b>HidD_GetHidGuid</b>.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -79,14 +84,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +116,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +133,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidD_GetHidGuid routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

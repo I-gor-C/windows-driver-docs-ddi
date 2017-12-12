@@ -7,7 +7,7 @@ old-location: netvista\fwpsacquirewritablelayerdatapointer0.htm
 old-project: netvista
 ms.assetid: 79816d01-bf27-49d0-b6f1-083b7e87cc4e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsAcquireWritableLayerDataPointer0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   changed.
 
 
+
 ## -syntax
 
 ````
@@ -65,6 +66,7 @@ A handle for the classify request.
      <a href="netvista.fwpsacquireclassifyhandle0">
      FwpsAcquireClassifyHandle0</a>.
 
+
 ### -param filterId [in]
 
 The value of the 
@@ -74,15 +76,18 @@ The value of the
      <b>FilterId</b> member, see 
      <a href="netvista.fwps_filter1">FWPS_FILTER1</a>.
 
+
 ### -param flags [in]
 
 Reserved for future use. Set to zero.
+
 
 ### -param writableLayerData [out]
 
 A data buffer that contains the modifiable data for the layer. The supported data types, which are listed in the following Remarks section, are defined as
      structures. On return, the data can be accessed by casting the void pointer to the appropriate structure
      type.
+
 
 ### -param classifyOut [in, out]
 
@@ -93,6 +98,7 @@ Set to the
      classifyFn is listed as an output parameter in the header, but it contains enough information on
      input to be useful to the engine when passed to 
      <b>FwpsAcquireWritableLayerDataPointer0</b>.
+
 
 ## -returns
 The 
@@ -105,6 +111,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 <b>FwpsAcquireWritableLayerDataPointer0</b> sets the following members of the <a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure:<ul>
@@ -129,11 +136,13 @@ The following structures are defined to contain modifiable layer data. The point
 <a href="netvista.fwps_connect_request0">FWPS_CONNECT_REQUEST0</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -144,14 +153,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +174,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -172,9 +185,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -207,5 +222,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireWritableLayerDataPointer0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireWritableLayerDataPointer0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: kernel\zwwritefile.htm
 old-project: kernel
 ms.assetid: b64ca88f-f67d-4c92-aa0c-46dbe4970834
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwWriteFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ZwWriteFile</b> routine writes data to an open file.
 
 
+
 ## -syntax
 
 ````
@@ -65,53 +66,70 @@ NTSTATUS ZwWriteFile(
 
 Handle to the file object. This handle is created by a successful call to <a href="kernel.zwcreatefile">ZwCreateFile</a> or <a href="kernel.zwopenfile">ZwOpenFile</a>. 
 
+
 ### -param Event [in, optional]
 
 Optionally, a handle to an event object to set to the signaled state after the write operation completes. Device and intermediate drivers should set this parameter to <b>NULL</b>.
+
 
 ### -param ApcRoutine [in, optional]
 
 This parameter is reserved. Device and intermediate drivers should set this pointer to <b>NULL</b>.
 
+
 ### -param ApcContext [in, optional]
 
 This parameter is reserved. Device and intermediate drivers should set this pointer to <b>NULL</b>.
+
 
 ### -param IoStatusBlock [out]
 
 Pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested write operation. The <b>Information</b> member receives the number of bytes actually written to the file.
 
+
 ### -param Buffer [in]
 
 Pointer to a caller-allocated buffer that contains the data to write to the file.
+
 
 ### -param Length [in]
 
 The size, in bytes, of the buffer pointed to by <i>Buffer</i>.
 
+
 ### -param ByteOffset [in, optional]
 
 Pointer to a variable that specifies the starting byte offset in the file for beginning the write operation. If <i>Length</i> and <i>ByteOffset</i> specify a write operation past the current end-of-file mark, <b>ZwWriteFile</b> automatically extends the file and updates the end-of-file mark; any bytes that are not explicitly written between such old and new end-of-file marks are defined to be zero.
+
 If the call to <a href="kernel.zwcreatefile">ZwCreateFile</a> set only the <i>DesiredAccess</i> flag FILE_APPEND_DATA, <i>ByteOffset</i> is ignored. Data in the given <i>Buffer</i>, for <i>Length</i> bytes, is written starting at the current end of file.
+
 If the call to <a href="kernel.zwcreatefile">ZwCreateFile</a> set either of the <i>CreateOptions</i> flags, FILE_SYNCHRONOUS_IO_ALERT or FILE_SYNCHRONOUS_IO_NONALERT, the I/O Manager maintains the current file position. If so, the caller of <b>ZwWriteFile</b> can specify that the current file position offset be used instead of an explicit <i>ByteOffset</i> value. This specification can be made by using one of the following methods:
+
 <ul>
 <li>
 Specify a pointer to a LARGE_INTEGER value with the <b>HighPart</b> member set to -1 and the <b>LowPart</b> member set to the system-defined value FILE_USE_FILE_POINTER_POSITION.
+
 </li>
 <li>
 Pass a <b>NULL</b> pointer for <i>ByteOffset</i>.
+
 </li>
 </ul>
 <b>ZwWriteFile</b> updates the current file position by adding the number of bytes written when it completes the write operation, if it is using the current file position maintained by the I/O Manager.
+
 Even when the I/O Manager is maintaining the current file position, the caller can reset this position by passing an explicit <i>ByteOffset</i> value to <b>ZwWriteFile</b>. Doing this automatically changes the current file position to that <i>ByteOffset</i>value, performs the write operation, and then updates the position according to the number of bytes actually written. This technique gives the caller atomic seek-and-write service.
+
 It is also possible to cause a write operation to start at the current end of file by specifying for <i>ByteOffset</i> a pointer to a LARGE_INTEGER value with <b>HighPart</b> set to -1 and <b>LowPart</b> set to FILE_WRITE_TO_END_OF_FILE. This works regardless of whether the I/O Manager is maintaining the current file position.
+
 
 ### -param Key [in, optional]
 
 Device and intermediate drivers should set this pointer to <b>NULL</b>. 
 
+
 ## -returns
 <b>ZwWriteFile</b> returns STATUS_SUCCESS on success or the appropriate NTSTATUS error code on failure.
+
 
 ## -remarks
 Callers of <b>ZwWriteFile</b> must have already called <a href="kernel.zwcreatefile">ZwCreateFile</a> with the FILE_WRITE_DATA, FILE_APPEND_DATA, or GENERIC_WRITE flag set in the <i>DesiredAccess</i> parameter. Note that having only FILE_APPEND_DATA access to a file does not allow the caller to write anywhere in the file except at the current end-of-file mark, while having FILE_WRITE_DATA access to a file does not preclude the caller from writing to or beyond the end of a file.
@@ -140,11 +158,13 @@ Callers of <b>ZwWriteFile</b> must be running at IRQL = PASSIVE_LEVEL and <a hre
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +175,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,6 +196,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -183,6 +207,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -193,14 +218,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -227,5 +255,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwWriteFile routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwWriteFile routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

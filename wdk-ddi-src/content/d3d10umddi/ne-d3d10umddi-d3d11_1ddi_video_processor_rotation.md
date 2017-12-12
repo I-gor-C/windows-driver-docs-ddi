@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_rotation.htm
 old-project: display
 ms.assetid: 4fe01ddd-723f-4b3c-884a-a18d4f8512e5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_ROTATION, D3D11_1DDI_VIDEO_PROCESSOR_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the clockwise rotation of the input stream of the video processor.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ROTATION {
 
 Indicates that rotation is 0 degrees—landscape mode.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_90
 
 Indicates that rotation is 90 degrees clockwise—portrait mode.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_180
 
 Indicates that rotation is 180 degrees clockwise—inverted landscape mode.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_270
 
 Indicates that rotation is 270 degrees clockwise—inverted portrait mode.
+
 
 ## -remarks
 
@@ -79,22 +84,27 @@ Indicates that rotation is 270 degrees clockwise—inverted portrait mode.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

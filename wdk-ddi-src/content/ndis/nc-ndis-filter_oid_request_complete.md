@@ -7,7 +7,7 @@ old-location: netvista\filteroidrequestcomplete.htm
 old-project: netvista
 ms.assetid: 2dba21d8-512b-4a1a-9cf9-0240c94a69a0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ NDIS calls the
   in an underlying driver.
 
 
+
 ## -prototype
 
 ````
@@ -65,12 +66,14 @@ A handle to the context area for the filter module. The filter driver created an
      context area in the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
+
 ### -param OidRequest [in]
 
 A pointer to the 
      <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that the filter
      driver previously passed to the 
      <a href="netvista.ndisfoidrequest">NdisFOidRequest</a> function.
+
 
 ### -param Status [in]
 
@@ -80,8 +83,10 @@ The final status of the request set by an underlying driver or by NDIS. This par
      <i>OidRequest</i> . For a list of the possible status values, see the return values of 
      <a href="netvista.ndisfoidrequest">NdisFOidRequest</a>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <i>FilterOidRequestComplete</i> is an optional function. If a filter driver does not use OID requests, it
@@ -122,19 +127,23 @@ The <b>FILTER_OID_REQUEST_COMPLETE</b> function type is defined in the Ndis.h he
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,9 +154,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -174,5 +185,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_OID_REQUEST_COMPLETE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_OID_REQUEST_COMPLETE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

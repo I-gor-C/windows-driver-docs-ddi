@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>IoEnumerateDeviceObjectList</b> routine enumerates a driver's device object list. 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS IoEnumerateDeviceObjectList(
 
 A pointer to the driver object for the driver. 
 
+
 ### -param DeviceObjectList [out]
 
 A pointer to a caller-allocated array that receives the device object pointers. This parameter can be <b>NULL</b>. 
+
 
 ### -param DeviceObjectListSize [in]
 
 Size, in bytes, of the <i>DeviceObjectList</i> array. Can be zero. 
 
+
 ### -param ActualNumberDeviceObjects [out]
 
 Actual number of device objects found in the driver object's device object list. Note that if the array at <i>DeviceObjectList</i> is too small, the number of device object pointers that are copied into the array will be less than <i>ActualNumberDeviceObjects</i>. 
+
 
 ## -returns
 <b>IoEnumerateDeviceObjectList</b> can return one of the following: 
@@ -81,6 +86,7 @@ Actual number of device objects found in the driver object's device object list.
 </dl>The array at <i>DeviceObjectList</i> is too small to hold the entire device object list. In this case, <b>IoEnumerateDeviceObjectList</b> copies as many device object pointers into the array as possible. 
 
  
+
 
 ## -remarks
 A file system filter driver calls <b>IoEnumerateDeviceObjectList</b> to enumerate: 
@@ -95,11 +101,13 @@ In the latter case, the filter driver typically calls <b>IoEnumerateDeviceObject
 
 <b>IoEnumerateDeviceObjectList</b> increments the reference count on every device object in the list pointed to by <i>DeviceObjectList</i>. Thus every successful call to <b>IoEnumerateDeviceObjectList</b> must be matched by a subsequent call to <a href="kernel.obdereferenceobject">ObDereferenceObject</a>for each device object in the list. Failure to do so prevents the system from freeing or deleting these device objects because of an outstanding reference count. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -110,14 +118,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +139,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -138,6 +150,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -148,9 +161,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -174,5 +189,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateDeviceObjectList routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

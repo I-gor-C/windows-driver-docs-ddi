@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9E75F65A-6E9C-485F-9437-30CB01A5F317
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _REFS_SMR_VOLUME_GC_STATE, *PREFS_SMR_VOLUME_GC_STATE, REFS_SMR_VOLUME_GC_STATE
+ms.keywords: _REFS_SMR_VOLUME_GC_STATE, REFS_SMR_VOLUME_GC_STATE, *PREFS_SMR_VOLUME_GC_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>REFS_SMR_VOLUME_GC_STATE</b> enum specifies the garbage collection's current state.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _REFS_SMR_VOLUME_GC_STATE {
 
 Specifies the garbage collection is inactive.
 
+
 ### -field SmrGcStatePaused
 
  Specifies the garbage collection has been paused.
+
 
 ### -field SmrGcStateActive
 
 Specifies the garbage collection is running.
 
+
 ### -field SmrGcStateActiveFullSpeed
 
 Specifies the garbage collection is running at full speed.
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ Specifies the garbage collection is running at full speed.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

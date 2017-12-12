@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
    The <b>USBD_ParseDescriptors</b> routine searches a given configuration descriptor and returns a pointer to the first descriptor that matches the search criteria.
 
 
+
 ## -syntax
 
 ````
@@ -61,46 +62,57 @@ PUSB_COMMON_DESCRIPTOR USBD_ParseDescriptors(
 
 Pointer to a configuration descriptor that contains the descriptor for which to search.
 
+
 ### -param TotalLength [in]
 
 Specifies the size, in bytes, of the buffer pointed to by <i>DescriptorBuffer</i>.
 
+
 ### -param StartPosition [in]
 
 Pointer to the address within the configuration descriptor, provided at <i>DescriptorBuffer</i>, to begin searching from. To search from the beginning of the configuration descriptor, the parameters <i>DescriptorBuffer</i> and <i>StartPosition</i> must be the same address.
+
 
 ### -param DescriptorType [in]
 
 Specifies the descriptor type code as assigned by USB. The following values are valid for USB-defined descriptor types:
 
 
+
+
 ### -param USB_STRING_DESCRIPTOR_TYPE
 
 Specifies that the descriptor being searched for is a string descriptor.
+
 
 ### -param USB_INTERFACE_DESCRIPTOR_TYPE
 
 Specifies that the descriptor being searched for is an interface descriptor.
 
+
 ### -param USB_ENDPOINT_DESCRIPTOR_TYPE
 
 Specifies that the descriptor being searched for is an endpoint descriptor.
+
 </dd>
 </dl>
 
 ## -returns
 <b>USBD_ParseDescriptors</b> returns a pointer to a <a href="buses.usb_common_descriptor">USB_COMMON_DESCRIPTOR</a> structure that is the head of the first descriptor that matches the given search criteria, or <b>NULL</b> is returned if no match is found:
 
+
 ## -remarks
 This structure is used to hold a portion of a descriptor, so that the caller of <b>USBD_ParseDescriptors</b> can determine the correct structure to use to access the remaining data in the descriptor. Every descriptor type has these fields at the beginning of the data and callers can use the <b>bLength</b> and <b>bDescriptorType</b> members to correctly identify the type of this descriptor.
 
 When this routine parses the configuration descriptor looking for the descriptor that matches the search criteria, it returns the first match, terminating the search.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +123,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +134,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -131,9 +145,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -143,5 +159,8 @@ IRQL
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_ParseDescriptors routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

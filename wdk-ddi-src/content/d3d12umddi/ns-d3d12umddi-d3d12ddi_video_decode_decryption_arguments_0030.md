@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-decryption-arguments-0030.htm
 old-project: display
 ms.assetid: cdd89f48-1b27-4362-81b3-ed3b89b80b6e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030, D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video decode decryption arguments.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030 {
 
 Crypto session policy.
 
+
 ### -field pIV
 
 Initialization vector.
+
 
 ### -field IVSize
 
 Initialization vector size.
 
+
 ### -field pSubSampleMappingBlock
 
 Sub sample mapping block.
 
+
 ### -field SubSampleMappingCount
 
 Sub sample mapping count.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Sub sample mapping count.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

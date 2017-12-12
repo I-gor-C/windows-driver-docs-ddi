@@ -7,8 +7,8 @@ old-location: netvista\wwan_context_type.htm
 old-project: netvista
 ms.assetid: 73a18050-fc89-41df-82ce-0f29c5716496
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE, *PWWAN_CONTEXT_TYPE
+ms.date: 12/8/2017
+ms.keywords: _WWAN_CONTEXT_TYPE, *PWWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -43,6 +43,7 @@ The WWAN_CONTEXT_TYPE enumeration lists the different types of connection contex
   by the MB device.
 
 
+
 ## -syntax
 
 ````
@@ -65,53 +66,65 @@ typedef enum _WWAN_CONTEXT_TYPE {
 
 The context is not yet provisioned.
 
+
 ### -field WwanContextTypeInternet
 
 The context represents a connection to the Internet.
+
 
 ### -field WwanContextTypeVpn
 
 The context represents a connection to virtual private network (VPN to a corporate
      network).
 
+
 ### -field WwanContextTypeVoice
 
 The context represents a connection to a Voice-over-IP (VOIP) service.
+
 
 ### -field WwanContextTypeVideoShare
 
 The context represents a connection to a video sharing service.
 
+
 ### -field WwanContextTypeCustom
 
 The context represents a connection to a custom service.
+
 
 ### -field WwanContextTypePurchase
 
 Purchase a connection. For example, a walled garden, hot-lining or captive portal.
 
+
 ### -field WwanContextTypeMax
 
 The total number of supported context types.
+
 
 ## -remarks
 This enumeration indicates the usage of the provisioned context. For example, whether the context is
     used to connect to the Internet, or to a VPN into a corporate network. Miniport driver should specify 
     <b>WwanContextTypeNone</b> for empty (unprovisioned) context slots.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_TYPE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_TYPE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

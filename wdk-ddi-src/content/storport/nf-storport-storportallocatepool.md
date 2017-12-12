@@ -7,7 +7,7 @@ old-location: storage\storportallocatepool.htm
 old-project: storage
 ms.assetid: e6823b9c-9717-49ab-8e67-c1d522774826
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortAllocatePool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortAllocatePool</b> routine allocates a block of non-contiguous, non-paged pool memory.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ ULONG StorPortAllocatePool(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param NumberOfBytes [in]
 
 The size, in bytes, of the block of memory being allocated.
+
 
 ### -param Tag [in]
 
 The pool tag for the allocated memory. Drivers specify the pool tag as a string of four characters, delimited by single quotation marks. The string is usually specified in reverse order. The ASCII value of each character in the tag must be between zero and 127.
 
+
 ### -param BufferPointer [out]
 
 A pointer to the address of the allocated memory block or <b>NULL</b> if not successful. 
+
 
 ## -returns
 StorPortAllocatePool returns one of the following status codes:
@@ -92,14 +97,17 @@ StorPortAllocatePool returns one of the following status codes:
 
  
 
+
 ## -remarks
 A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="storage.storportfreepool">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -110,6 +118,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,14 +129,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportallocatepool2">StorPortAllocatePool2</a>, <a href="devtest.storport_storportirql">StorPortIrql</a>

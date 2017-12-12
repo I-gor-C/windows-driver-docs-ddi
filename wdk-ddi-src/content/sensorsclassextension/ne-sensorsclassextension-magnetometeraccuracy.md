@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Specifies the accuracy of the magnetometer.
 
 
+
 ## -syntax
 
 ````
@@ -60,52 +61,64 @@ typedef enum _MagnetometerAccuracy {
 
 The accuracy is currently not available, typically because the driver can't report it.
 
+
 ### -field Unreliable
 
 The reported values have a high degree of inaccuracy. Apps should always ask the user to calibrate the device whenever this value is returned.
+
 
 ### -field Approximate
 
           The actual and reported values differ but may be accurate enough for some applications. Apps that only need a relative value, like a virtual reality app, can continue without additional calibration.
 
+
 ### -field High
 
           The actual and reported values are accurate. No additional calibration is needed.
+
 
 ## -remarks
 Device drivers that support magnetometer accuracy should only report the <b>Unreliable</b>, <b>Approximate</b>, and <b>High</b> values.
 
 Apps that need calibration may periodically ask the user to calibrate the device. We suggest doing this once every 10 minutes.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20MagnetometerAccuracy enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -39,15 +39,20 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IDrmAudioStream</code> interface assigns DRM protection to the digital content in an audio stream. (For information about DRM-protected content, see <a href="https://msdn.microsoft.com/7ce19196-5180-421f-b6be-ac4a235a8c16">Digital Rights Management</a>) This interface is implemented by a WaveCyclic or WavePci miniport driver and is exposed to the WaveCyclic or WavePci port driver. To determine whether a miniport driver supports this interface, the WaveCyclic or WavePci port driver calls the miniport stream object's <b>QueryInterface</b> method with REFIID <b>IID_IDrmAudioStream</b>. <code>IDrmAudioStream</code> inherits from the <b>IUnknown</b> interface.
+
 The port driver uses the <code>IDrmAudioStream</code> interface if it is supported by either of the following stream objects:
+
 A stream object created by <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a>
+
 
 A stream object created by <a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a>
 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDrmAudioStream</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -57,6 +62,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDrmAudioStream</b> interface
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

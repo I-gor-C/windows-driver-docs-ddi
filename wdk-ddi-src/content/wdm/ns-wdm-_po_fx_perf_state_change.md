@@ -7,8 +7,8 @@ old-location: kernel\po_fx_perf_state_change.htm
 old-project: kernel
 ms.assetid: AE7A79DE-0202-4816-A36C-5A15C4539392
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PO_FX_PERF_STATE_CHANGE, *PPO_FX_PERF_STATE_CHANGE, PO_FX_PERF_STATE_CHANGE
+ms.date: 12/7/2017
+ms.keywords: _PO_FX_PERF_STATE_CHANGE, PO_FX_PERF_STATE_CHANGE, *PPO_FX_PERF_STATE_CHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>PO_FX_PERF_STATE_CHANGE</b> structure contains information about a change to a performance state that is being requested by calling the <a href="kernel.pofxissuecomponentperfstatechange">PoFxIssueComponentPerfStateChange</a> or <a href="kernel.pofxissuecomponentperfstatechangemultiple">PoFxIssueComponentPerfStateChangeMultiple</a> routine.
 
 
+
 ## -syntax
 
 ````
@@ -61,30 +62,37 @@ typedef struct _PO_FX_PERF_STATE_CHANGE {
 
 The index of the performance state set that is being changed within the collection of performance state sets for the component.
 
+
 ### -field StateIndex
 
 For sets that represent a discrete number of performance states (that is, where the <b>Type</b> member of the <a href="kernel.po_fx_component_perf_set">PO_FX_COMPONENT_PERF_SET</a> is <b>PoFxPerfStateTypeDiscrete</b>), this member is the index of the performance state to use for the new performance level.
+
 
 ### -field StateValue
 
 For sets that represent a continuous distribution of performance states (that is, where the <b>Type</b> member of the <a href="kernel.po_fx_component_perf_set">PO_FX_COMPONENT_PERF_SET</a> is <b>PoFxPerfStateTypeRange</b>), this member is the value of the performance state to use for the new performance level.
 
+
 ## -remarks
 The <b>PO_FX_PERF_STATE_CHANGE</b> structure is used for the <i>PerfChange</i> parameter of the <a href="kernel.pofxissuecomponentperfstatechange">PoFxIssueComponentPerfStateChange</a> routine and the  <i>PerfChanges</i> parameter of the <a href="kernel.pofxissuecomponentperfstatechangemultiple">PoFxIssueComponentPerfStateChangeMultiple</a> routine. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,5 +115,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PO_FX_PERF_STATE_CHANGE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PO_FX_PERF_STATE_CHANGE structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 78D19A0C-E247-4DDA-A689-494B5A61A673
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_SUPL_NI_INFO, *PGNSS_SUPL_NI_INFO, GNSS_SUPL_NI_INFO
+ms.keywords: PGNSS_SUPL_NI_INFO, GNSS_SUPL_NI_INFO, *PGNSS_SUPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains the requested SUPL NI information.
 
 
+
 ## -syntax
 
 ````
@@ -60,23 +61,30 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field RequestorId[MAX_PATH]
 
 Requestor ID.
+
 This will be displayed on the notification dialog to the user. The GNSS driver must provide a UNICODE string that is decoded per the encoding scheme required by the mobile operator.
+
 
 ### -field ClientName[MAX_PATH]
 
 Name of the client that requests the location of the device.
+
 This will be displayed on the notification dialog to the user. The GNSS driver must provide a UNICODE string that is decoded per the encoding scheme required by the mobile operator.
+
 
 ### -field SuplNiUrl[MAX_SERVER_URL_NAME]
 
 NI URL information.
+
 
 ## -remarks
 
@@ -86,6 +94,7 @@ NI URL information.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

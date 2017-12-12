@@ -7,7 +7,7 @@ old-location: kernel\ioctl_ioctl_sysenv_enum_variables.htm
 old-project: kernel
 ms.assetid: 605CA19C-048A-4FBA-8568-7B1867C99210
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,8 +43,11 @@ Returns information about system environment variables using
     SysEnv device.
 
 
+
+
 Returns information about system environment variables using
     SysEnv device.
+
 
 
 
@@ -53,13 +56,16 @@ Returns information about system environment variables using
 ### -input-buffer
 A boolean value indicating whether values should be included.
 
+
 ### -input-buffer-length
 Size of BOOLEAN.
+
 
 ### -output-buffer
 A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="kernel.xvariable_name_and_value">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="kernel.xvariable_name">XVARIABLE_NAME</a>  structures. 
 
 The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="kernel.xvariable_name_and_value">XVARIABLE_NAME_AND_VALUE</a> and <a href="kernel.xvariable_name">XVARIABLE_NAME</a>.
+
 
 ### -output-buffer-length
 On input, the length in bytes of the output buffer. On output,
@@ -67,6 +73,7 @@ On input, the length in bytes of the output buffer. On output,
         large enough, then this value  indicates the amount of data copied
         into output buffer. If the input buffer is too small, then it
         indicates the required buffer length.
+
 
 
 ### -in-out-buffer
@@ -81,6 +88,7 @@ On input, the length in bytes of the output buffer. On output,
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 
 
@@ -89,6 +97,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +123,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_ENUM_VARIABLES control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_ENUM_VARIABLES control code%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\ioctl_video_restore_hardware_state.htm
 old-project: display
 ms.assetid: 94ea36b6-3390-4e67-982d-ee6c2500c0de
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql:
 
 Restores all values used to set the hardware registers. Miniport drivers for VGA-compatible adapters are required to support this nonmodal request; optional for other miniport drivers.
 
+
+
 Restores all values used to set the hardware registers. Miniport drivers for VGA-compatible adapters are required to support this nonmodal request; optional for other miniport drivers.
+
 
 
 ## -ioctlparameters
@@ -49,12 +52,14 @@ Restores all values used to set the hardware registers. Miniport drivers for VGA
 ### -input-buffer
 The VRP <b>InputBuffer</b> contains the previously-saved VIDEO_HARDWARE_STATE structure.
 
+
 ### -input-buffer-length
 
 <text></text>
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -72,6 +77,7 @@ None
 I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="display.status_block">STATUS_BLOCK</a> structure.
 
+
 ## -remarks
 
 
@@ -80,6 +86,7 @@ The miniport driver does not set the <b>Information</b> member of the <a href="d
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

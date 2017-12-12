@@ -7,7 +7,7 @@ old-location: netvista\rilumtskind.htm
 old-project: netvista
 ms.assetid: aedabb82-73d5-4953-bb7a-4ed526bff5a1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUMTSKIND, RILUMTSKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef enum _RILUMTSKIND {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

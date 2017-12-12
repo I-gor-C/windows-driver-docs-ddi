@@ -7,7 +7,7 @@ old-location: debugger\getinputline.htm
 old-project: debugger
 ms.assetid: 18d4aae5-dd11-4c3a-8088-52121f46d208
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GetInputLine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GetInputLine</b> function requests an input string from the debugger.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ __inline ULONG GetInputLine(
 
 Specifies a prompt to indicate what input is being requested.  The prompt is printed to the debugger's output before the input is gathered.  If <i>Prompt</i> is <b>NULL</b>, no prompt is printed.
 
+
 ### -param Buffer 
 
 Specifies the buffer to receive the input.
+
 
 ### -param BufferSize 
 
 Specifies the size, in characters, of the buffer <i>Buffer</i>.
 
+
 ## -returns
 <b>GetInputLine</b> returns the size, in characters, of the input returned to the <i>Buffer</i> buffer, or zero, if no input was returned.
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ Specifies the size, in characters, of the buffer <i>Buffer</i>.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>SdBusOpenInterface</b> routine obtains an interface from the Secure Digital (SD) bus driver.
 
 
+
 ## -syntax
 
 ````
@@ -59,31 +60,38 @@ NTSTATUS SdBusOpenInterface(
 
 Pointer to the physical device object that the SD bus driver created for the SD device that the device driver manages. The system passes this pointer to the device driver when it calls the driver's <a href="kernel.adddevice">AddDevice</a> routine.
 
+
 ### -param InterfaceStandard [out]
 
 Contains, on input, a pointer to a structure of type <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a> supplied by the caller. On output, this structure holds pointers to the SD bus interface routines. This structure also contains some context information in its <b>Context</b> member that the caller should pass in every time it calls an interface routine.
+
 
 ### -param Size [in]
 
 Contains the size, in bytes, of the structure pointed to by <i>InterfaceStandard</i>.
 
+
 ### -param Version [in]
 
 Must be set to SDBUS_INTERFACE_VERSION.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the operation succeeds, or the appropriate error code if the operation fails. 
+
 
 ## -remarks
 An SD card driver should call this routine from its <a href="kernel.adddevice">AddDevice</a> routine.
 
 SD card drivers must call this routine to establish communication with the bus driver. On successful completion of this call, the <b>Context</b> member of the structure pointed to by <i>InterfaceStandard</i> will contain a handle that the driver must pass in when calling methods that belong to the retrieved interface. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +102,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,9 +113,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -121,5 +132,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SdBusOpenInterface function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

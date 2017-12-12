@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <i>This function is intended for internal use only.</i>
+
 The <b>KoDeviceInitialize</b> function adds a kernel COM create-item entry to the specified device object. 
+
 
 
 ## -syntax
@@ -57,8 +59,10 @@ NTSTATUS KoDeviceInitialize(
 
 Pointer to a device object. The device object is assumed to contain a KSOBJECT_HEADER in its device extension.
 
+
 ## -returns
 Returns STATUS_SUCCESS if successful. Otherwise, it returns a memory allocation error.
+
 
 ## -remarks
 
@@ -68,6 +72,7 @@ Returns STATUS_SUCCESS if successful. Otherwise, it returns a memory allocation 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +83,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +94,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\dot11_provision_discovery_response_send_complete_paramete
 old-project: netvista
 ms.assetid: EAE45375-63BA-4BBB-A36D-1D56E986694A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -59,6 +59,7 @@ typedef struct _DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS {
 ### -field Header
 
 The type, revision, and size of the <b>DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -79,25 +80,31 @@ The type, revision, and size of the <b>DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_C
 </table>
  
 
+
 ### -field ReceiverDeviceAddress
 
 The device address of the Wi-Fi Direct (WFD) device that the provision discovery response was sent to.
+
 
 ### -field DialogToken
 
 The dialog token used for the provision discovery response packet. This token must match the token sent with the <a href="netvista._oid_dot11_wfd_send_provision_discovery_request">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a> request.
 
+
 ### -field Status
 
 The status for the provision discovery response that was sent.
+
 
 ### -field uIEsOffset
 
 The offset, in bytes,  of the array of additional information elements (IEs) that were included in the provision discovery response packet. This offset is from the start of the buffer that contains this structure.
 
+
 ### -field uIEsLength
 
 The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+
 
 ## -remarks
 
@@ -107,14 +114,17 @@ The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +144,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

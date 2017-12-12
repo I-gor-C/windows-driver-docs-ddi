@@ -7,7 +7,7 @@ old-location: display\tiledresourcebarrier.htm
 old-project: display
 ms.assetid: 9A2E9B3F-13E4-48D7-A3F3-E7CDCDD1E0CC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a data access ordering constraint between multiple tiled resources. For more info about this constraint, see Remarks.
 
 
+
 ## -prototype
 
 ````
@@ -63,9 +64,11 @@ VOID APIENTRY* TiledResourceBarrier(
 
 A handle to the display device (graphics context).
 
+
 ### -param TiledResourceAccessBeforeBarrierHandleType 
 
 A handle to the tiled resource.
+
 
 ### -param hTiledResourceAccessBeforeBarrier [in, optional]
 
@@ -73,13 +76,16 @@ A handle to a resource that was created with the <b>D3DWDDM1_3DDI_RESOURCE_MISC_
 
 
 
+
 ### -param TiledResourceAccessAfterBarrierHandleType 
 
 The <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a> handle type of the resources pointed to by the <i>hTiledResourceAccessBeforeBarrier</i> and <i>hTiledResourceAccessAfterBarrier</i> parameters.
 
+
 ### -param hTiledResourceAccessAfterBarrier [in, optional]
 
 A handle to a resource that was created with the <b>D3DWDDM1_3DDI_RESOURCE_MISC_TILED</b> flag. Access operations on this object must begin after the access operations on the object that <i>hTiledResourceAccessBeforeBarrier</i> specifies.
+
 
 ## -returns
 None
@@ -87,6 +93,7 @@ None
 The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a> callback function to set an error code.
 
 The Direct3D runtime performs minimal validation of parameters.
+
 
 ## -remarks
 Apps can use tiled resources to reuse tiles in different resources. But a device and driver might not be able to determine whether some memory in a tile pool that was just rendered to is now being used for reading.
@@ -99,27 +106,33 @@ If no calls are made to <i>TiledResourceBarrier</i>,
                      the driver can assume that accesses to different tiled resources
                      do not conflict with each other.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -130,14 +143,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 WDDM 1.3
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,5 +173,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

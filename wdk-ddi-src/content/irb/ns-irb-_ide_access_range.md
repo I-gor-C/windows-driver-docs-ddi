@@ -7,7 +7,7 @@ old-location: storage\ide_access_range.htm
 old-project: storage
 ms.assetid: e81441a2-0659-4d32-97f4-415abef6c87a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _IDE_ACCESS_RANGE, IDE_ACCESS_RANGE, *PIDE_ACCESS_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The IDE_ACCESS_RANGE structure contains the address ranges allocated for an IDE controller.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _IDE_ACCESS_RANGE {
 
 Contains the logical starting address of the address range.
 
+
 ### -field PhysicalRangeStart
 
 Contains the physical starting address of the address range.
+
 
 ### -field RangeLength
 
 Contains the size, in bytes, of the range.
 
+
 ### -field InMemory
 
 Flag that indicates if this is a memory mapped resource. If cleared, this is an I/O port resource.
 
+
 ### -field Bar
 
 The number of the PCI Base Address Range that this resource was found in.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ The number of the PCI Base Address Range that this resource was found in.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

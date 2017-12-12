@@ -7,8 +7,8 @@ old-location: debugger\debug_read_user_minidump_stream.htm
 old-project: debugger
 ms.assetid: 07005D52-E851-4AE8-95D8-ED8E26C43DC6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Describes a user minidump to read.
 
 
+
 ## -syntax
 
 ````
@@ -61,34 +62,42 @@ typedef struct _DEBUG_READ_USER_MINIDUMP_STREAM {
 
 The type of stream.
 
+
 ### -field Flags
 
 Flags.
+
 
 ### -field Offset
 
 The offset of stream.
 
+
 ### -field Buffer
 
 Specifies the beginning of the buffer to read.
+
 
 ### -field BufferSize
 
 Specifies the length of the buffer to read.
 
+
 ### -field BufferUsed
 
 The buffer used value.
 
+
 ## -remarks
 The DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM <a href="debugger.request">Request</a> operation reads a stream from a user-mode minidump target.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

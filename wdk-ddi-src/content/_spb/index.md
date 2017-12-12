@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Simple Peripheral Bus (SPB)
 
+## -description
 Overview of the Simple Peripheral Bus (SPB) technology.
 
 To develop Simple Peripheral Bus (SPB), you need these headers:

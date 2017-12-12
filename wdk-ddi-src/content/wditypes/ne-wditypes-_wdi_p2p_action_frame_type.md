@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_action_frame_type.htm
 old-project: netvista
 ms.assetid: 3E1C92D2-FFE0-402F-BE14-18AFB03F3FE4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_P2P_ACTION_FRAME_TYPE, WDI_P2P_ACTION_FRAME_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_P2P_ACTION_FRAME_TYPE enumeration defines the Wi-Fi Direct action frame types.
 
 
+
 ## -syntax
 
 ````
@@ -63,29 +64,36 @@ typedef enum _WDI_P2P_ACTION_FRAME_TYPE {
 
 Wi-Fi Direct Group Owner Negotiation Request.
 
+
 ### -field WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_RESPONSE
 
 Wi-Fi Direct Group Owner Negotiation Response.
+
 
 ### -field WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM
 
 Wi-Fi Direct Group Owner Negotiation Confirmation.
 
+
 ### -field WDI_P2P_ACTION_FRAME_INVITATION_REQUEST
 
 Wi-Fi Direct Invitation Request.
+
 
 ### -field WDI_P2P_ACTION_FRAME_INVITATION_RESPONSE
 
 Wi-Fi Direct Invitation Response.
 
+
 ### -field WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_REQUEST
 
 Wi-Fi Direct Provision Discovery Request.
 
+
 ### -field WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_RESPONSE
 
 Wi-Fi Direct Provision Discovery Response.
+
 
 ## -remarks
 
@@ -95,22 +103,27 @@ Wi-Fi Direct Provision Discovery Response.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\miracast_wfd_connection_stats.htm
 old-project: display
 ms.assetid: 3d5dd27f-8d0e-46e8-adbd-139db322cf6e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains bit rate info on the Wi-Fi Direct connection.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 The bit rate, in bits per second, that the operating system recommends that the audio/video encoder uses.
 
+
 ### -field LocalMaxBitRate
 
 The maximum bit rate, in bits per second, that the local Wi-Fi Direct hardware can support.
 
+
 ### -field RemoteMaxBitRate
 
 The maximum bit rate, in bits per second, that the Miracast sink hardware can support.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ The maximum bit rate, in bits per second, that the Miracast sink hardware can su
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

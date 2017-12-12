@@ -7,7 +7,7 @@ old-location: netvista\filterreturnnetbufferlists.htm
 old-project: netvista
 ms.assetid: 8d7e362f-62da-4ce7-9497-1cfaff2b678e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ NDIS calls the
   to a filter driver.
 
 
+
 ## -prototype
 
 ````
@@ -66,6 +67,7 @@ A handle to the context area for the filter module. The filter driver created an
      context area in the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
+
 ### -param NetBufferLists [in]
 
 A linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that the filter driver indicated by calling the 
@@ -74,10 +76,13 @@ A linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structur
      multiple calls to 
      <b>NdisFIndicateReceiveNetBufferLists</b>.
 
+
 ### -param ReturnFlags [in]
 
 NDIS flags that can be combined with an OR operation. To clear all the flags, set this member to
      zero.This function supports the following flags: 
+
+
 
 
 ### -param NDIS_RETURN_FLAGS_DISPATCH_LEVEL
@@ -85,10 +90,13 @@ NDIS flags that can be combined with an OR operation. To clear all the flags, se
 Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
        <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.
 
+
 ### -param NDIS_RETURN_FLAGS_SWITCH_SINGLE_SOURCE
 
 If this flag is set, all packets in a linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.
+
 For more information, see <a href="netvista.hyper_v_extensible_switch_send_and_receive_flags">Hyper-V Extensible Switch Send and Receive Flags</a>.
+
 <div class="alert"><b>Note</b>  If each packet in the linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_RECEIVE_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>ReceiveFlags</i> parameter of <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">FilterReceiveNetBufferLists</a>  when it sends the request.</div>
 <div> </div>
 </dd>
@@ -96,6 +104,7 @@ For more information, see <a href="netvista.hyper_v_extensible_switch_send_and_r
 
 ## -returns
 None
+
 
 ## -remarks
 <i>FilterReturnNetBufferLists</i> is an optional function. If a filter driver does not filter receive indications, it can set the entry point for this function to <b>NULL</b> when it calls the 
@@ -141,19 +150,23 @@ The <b>FILTER_RETURN_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -164,9 +177,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -203,5 +218,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_RETURN_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_RETURN_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

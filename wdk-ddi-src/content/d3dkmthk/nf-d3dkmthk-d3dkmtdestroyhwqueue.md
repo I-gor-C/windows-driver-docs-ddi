@@ -7,7 +7,7 @@ old-location: display\d3dkmtdestroyhwqueue.htm
 old-project: display
 ms.assetid: 30687710-A813-4D3C-8612-9236D34EB9EB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTDestroyHwQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to destroy a hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ NTSTATUS APIENTRY D3DKMTDestroyHwQueue(
 
 A structure holding the information needed to destroy a hardware queue.
 
+
 ## -returns
 Returns STATUS_SUCCESS if called successfully. 
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ Returns STATUS_SUCCESS if called successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +81,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

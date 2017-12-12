@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef struct _BDA_TUNER_TUNERSTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

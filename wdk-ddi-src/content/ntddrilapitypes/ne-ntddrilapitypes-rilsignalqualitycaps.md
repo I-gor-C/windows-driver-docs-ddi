@@ -7,7 +7,7 @@ old-location: netvista\rilsignalqualitycaps.htm
 old-project: netvista
 ms.assetid: 5d42e083-d1a9-455a-8511-9aef37908ab7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSIGNALQUALITYCAPS, RILSIGNALQUALITYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef enum _RILSIGNALQUALITYCAPS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

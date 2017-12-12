@@ -7,7 +7,7 @@ old-location: netvista\ndisclosefile.htm
 old-project: netvista
 ms.assetid: a12f7597-cfe7-466f-a5b5-aafd885d5adf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisCloseFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   allocated to hold the file contents when it was opened.
 
 
+
 ## -syntax
 
 ````
@@ -60,8 +61,10 @@ VOID NdisCloseFile(
 The handle that was returned in a preceding call to the 
      <a href="netvista.ndisopenfile">NdisOpenFile</a> function.
 
+
 ## -returns
 None
+
 
 ## -remarks
 For miniport drivers, calls to this function are valid only during initialization. If the 
@@ -70,11 +73,13 @@ For miniport drivers, calls to this function are valid only during initializatio
     <a href="netvista.ndisopenfile">NdisOpenFile</a> function, it must call 
     <b>NdisCloseFile</b> before it returns control.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -85,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -92,11 +98,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisCloseFile (NDIS 5.1)</b>) in Windows
    XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +115,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -117,14 +126,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -148,5 +160,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCloseFile function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCloseFile function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

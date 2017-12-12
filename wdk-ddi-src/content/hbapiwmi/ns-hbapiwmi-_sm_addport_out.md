@@ -7,8 +7,8 @@ old-location: storage\sm_addport_out.htm
 old-project: storage
 ms.assetid: e8892d6f-eb82-4262-9105-3c77d8295a3a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SM_AddPort_OUT, SM_AddPort_OUT, *PSM_AddPort_OUT
+ms.date: 12/8/2017
+ms.keywords: _SM_AddPort_OUT, *PSM_AddPort_OUT, SM_AddPort_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The SM_AddPort_OUT structure is used to receive output parameters from the SM_RemoveTarget WMI method.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _SM_AddPort_OUT {
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The status of the operation. For a list of allowed values and their descriptions
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

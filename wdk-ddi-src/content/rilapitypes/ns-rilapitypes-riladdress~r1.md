@@ -7,7 +7,7 @@ old-location: netvista\riladdress_2.htm
 old-project: netvista
 ms.assetid: 45888814-28c4-4cbc-ace8-7b4aa682b91b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILADDRESS, *LPRILADDRESS, RILADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices

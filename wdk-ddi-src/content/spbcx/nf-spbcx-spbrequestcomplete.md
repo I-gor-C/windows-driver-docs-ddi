@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SpbRequestComplete</b> method completes an I/O request and supplies a completion status.
 
 
+
 ## -syntax
 
 ````
@@ -58,27 +59,34 @@ VOID SpbRequestComplete(
 
 An <a href="buses.spbrequest_object_handle">SPBREQUEST</a> handle to the I/O request to complete. The SPB controller driver previously received this handle through one of its registered <a href="https://msdn.microsoft.com/1DA1FF41-FB01-45CC-B0C1-EAF2C81D0CDA">event callback functions</a>.
 
+
 ### -param CompletionStatus [in]
 
 An NTSTATUS value that represents the completion status of the request. Valid status values include, but are not limited to, the following:
+
+
 
 
 ### -param STATUS_SUCCESS
 
 The I/O request completed successfully.
 
+
 ### -param STATUS_CANCELLED
 
 The I/O request is canceled.
 
+
 ### -param STATUS_UNSUCCESSFUL
 
 The driver encountered an error while processing the I/O request.
+
 </dd>
 </dl>
 
 ## -returns
 None.
+
 
 ## -remarks
 Your controller driver calls this method to complete an I/O request that it previously received during one of the following callbacks:
@@ -89,11 +97,13 @@ A bug check occurs if the caller supplies an invalid SPBREQUEST handle.
 
 A call to <b>SpbRequestComplete</b> represents the final stage in the processing of an I/O request. When this method returns, the <i>Request</i> handle value is no longer valid.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -132,9 +146,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -161,5 +177,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbRequestComplete method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

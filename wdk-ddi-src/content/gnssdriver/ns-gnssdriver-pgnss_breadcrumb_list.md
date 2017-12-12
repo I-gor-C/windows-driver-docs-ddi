@@ -41,6 +41,7 @@ req.irql:
 This structure contains the response to an <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_pop_breadcrumbs.md">IOCTL_GNSS_POP_BREADCRUMBS</a>.
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field NumCrumbs
 
 The number of breadcrumbs in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.
 
+
 ### -field  v1[50]
 
 An array of individual breadcrumbs returned in the in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.
+
 
 ## -remarks
 
@@ -81,6 +86,7 @@ An array of individual breadcrumbs returned in the in the <b>IOCTL_GNSS_POP_BREA
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

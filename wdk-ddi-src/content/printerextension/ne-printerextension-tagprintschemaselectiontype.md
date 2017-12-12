@@ -7,7 +7,7 @@ old-location: print\printschemaselectiontype.htm
 old-project: print
 ms.assetid: 30BB7A95-512C-418B-B496-47832DD4C0BC
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PrintSchemaSelectionType enumeration identifies how a Feature’s options should be selected. This property appears only in a PrintCapabilities document. 
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef enum tagPrintSchemaSelectionType {
 
 Select one.
 
+
 ### -field PrintSchemaSelectionType_PickMany
 
 Select many.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ Select many.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

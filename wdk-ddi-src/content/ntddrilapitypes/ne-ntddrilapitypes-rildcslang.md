@@ -7,7 +7,7 @@ old-location: netvista\rildcslang.htm
 old-project: netvista
 ms.assetid: bc39cb1a-d08a-40d7-a7c6-0342a90654dc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDCSLANG, RILDCSLANG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -147,6 +148,7 @@ typedef enum _RILDCSLANG {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

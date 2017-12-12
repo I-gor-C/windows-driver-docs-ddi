@@ -7,8 +7,8 @@ old-location: netvista\wdi_mac_address.htm
 old-project: netvista
 ms.assetid: e170b797-f8bb-4d3c-a3ee-5fd1a817a500
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS, WDI_MAC_ADDRESS
+ms.date: 12/8/2017
+ms.keywords: _WDI_MAC_ADDRESS, WDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The
   WDI_MAC_ADDRESS structure defines an IEEE media access control (MAC) address.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _WDI_MAC_ADDRESS {
 
 A Wi-Fi MAC address.
 
+
 ## -remarks
 
 
@@ -65,22 +67,27 @@ A Wi-Fi MAC address.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

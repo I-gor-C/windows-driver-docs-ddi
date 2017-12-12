@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Hpmi.h header
 
+## -description
 
 This header is used by Power metering. For more information, see
 - [Power metering](../_powermeter/index.md)
@@ -11,19 +16,19 @@ Hpmi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [HPMI_BATTERY_UTILIZATION_HINT structure](ns-hpmi--hpmi-battery-utilization-hint.md) | This hint indicates if the OEM Battery Manager should attempt to save as much charge as possible in the non-hot swappable batteries (i.e. |
-| [HPMI_QUERY_CAPABILITIES structure](ns-hpmi--hpmi-query-capabilities.md) | The HPMI_QUERY_CAPABILITIES structure is used to query HPMI capabilities. |
-| [HPMI_QUERY_CAPABILITIES_RESPONSE structure](ns-hpmi--hpmi-query-capabilities-response.md) | HPMI_QUERY_CAPABILITIES_RESPONSE is a structure used to return information about software defined batteries (SDB). |
+| [_HPMI_BATTERY_UTILIZATION_HINT structure](ns-hpmi-_hpmi_battery_utilization_hint.md) | This hint indicates if the OEM Battery Manager should attempt to save as much charge as possible in the non-hot swappable batteries (i.e. |
+| [_HPMI_QUERY_CAPABILITIES structure](ns-hpmi-_hpmi_query_capabilities.md) | The HPMI_QUERY_CAPABILITIES structure is used to query HPMI capabilities. |
+| [_HPMI_QUERY_CAPABILITIES_RESPONSE structure](ns-hpmi-_hpmi_query_capabilities_response.md) | HPMI_QUERY_CAPABILITIES_RESPONSE is a structure used to return information about software defined batteries (SDB). |
 
 ## I/O control codes
 
 | Title   | Description   |
 | ---- |:---- |
-| [IOCTL_HPMI_BATTERY_UTILIZATION_HINT IOCTL](ni-hpmi-ioctl-hpmi-battery-utilization-hint.md) | Set command sent to HPMI to provide battery utilization hints. |
-| [IOCTL_HPMI_QUERY_CAPABILITIES IOCTL](ni-hpmi-ioctl-hpmi-query-capabilities.md) | The IOCTL_HPMI_QUERY_CAPABILITIES command is sent to query features supported by HPMI and Windows services requested by HPMI. Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered. |
+| [IOCTL_HPMI_BATTERY_UTILIZATION_HINT IOCTL](ni-hpmi-ioctl_hpmi_battery_utilization_hint.md) | Set command sent to HPMI to provide battery utilization hints. |
+| [IOCTL_HPMI_QUERY_CAPABILITIES IOCTL](ni-hpmi-ioctl_hpmi_query_capabilities.md) | The IOCTL_HPMI_QUERY_CAPABILITIES command is sent to query features supported by HPMI and Windows services requested by HPMI. Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [HPMI_HINT_BOOL enumeration](ne-hpmi--hpmi-hint-bool.md) | Boolean type value used to track availability of HPMI hint data. |
+| [_HPMI_HINT_BOOL enumeration](ne-hpmi-_hpmi_hint_bool.md) | Boolean type value used to track availability of HPMI hint data. |

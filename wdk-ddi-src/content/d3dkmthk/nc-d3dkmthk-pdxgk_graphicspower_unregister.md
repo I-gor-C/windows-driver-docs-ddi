@@ -7,7 +7,7 @@ old-location: display\pdxgk_graphicspower_unregister.htm
 old-project: display
 ms.assetid: A925D5D3-EF79-4C14-BE1C-188C255DDF8E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A callback to un-register itself with the graphics driver.  
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS PDXGK_GRAPHICSPOWER_UNREGISTER(
 
 A handle to the graphics device.
 
+
 ### -param PrivateHandle 
 
 A handle to the graphics device.
 
+
 ## -returns
 Return STATUS_SUCCESS if the call succeeds.
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ Return STATUS_SUCCESS if the call succeeds.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

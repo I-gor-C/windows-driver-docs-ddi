@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 838D31E8-1835-47C7-8201-93910610F5EC
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
+ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -43,21 +43,26 @@ Returns information regarding the current configuration of listen mode routing t
 
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 None
+
 
 ### -output-buffer
 
 <a href="nfpdrivers._secure_element_routing_table"> SECURE_ELEMENT_ROUTING_TABLE</a> containing all currently configured routing entries.
 
 
+
 ### -output-buffer-length
 sizeof(SECURE_ELEMENT_ROUTING_TABLE)
+
 
 ### -in-out-buffer
 
@@ -73,6 +78,7 @@ I/O Status block
 
  
 
+
 ## -remarks
 
 
@@ -81,6 +87,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

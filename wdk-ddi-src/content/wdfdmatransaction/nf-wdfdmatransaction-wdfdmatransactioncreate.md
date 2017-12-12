@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactioncreate.htm
 old-project: wdf
 ms.assetid: 9470e4a6-eee4-4a73-80b0-3d45f9d79934
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDmaTransactionCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfDmaTransactionCreate</b> method creates a DMA transaction.  
+
 
 
 ## -syntax
@@ -60,13 +62,16 @@ NTSTATUS WdfDmaTransactionCreate(
 
 A handle to a DMA enabler object that the driver obtained from a previous call to <a href="wdf.wdfdmaenablercreate">WdfDmaEnablerCreate</a>.  
 
+
 ### -param Attributes [in, optional]
 
 A pointer to a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new DMA transaction object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
+
 ### -param DmaTransaction [out]
 
 A handle to a DMA transaction object.
+
 
 ## -returns
 <b>WdfDmaTransactionCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
@@ -89,6 +94,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 
+
 ## -remarks
 After your driver calls <b>WdfDmaTransactionCreate</b>, it must call <a href="wdf.wdfdmatransactioninitialize">WdfDmaTransactionInitialize</a> or <a href="wdf.wdfdmatransactioninitializeusingrequest">WdfDmaTransactionInitializeUsingRequest</a> before calling <a href="wdf.wdfdmatransactionexecute">WdfDmaTransactionExecute</a>. 
 
@@ -98,11 +104,13 @@ For more information about DMA transactions, see <a href="wdf.creating_and_initi
 
 For a code example that uses <b>WdfDmaTransactionCreate</b>, see <a href="wdf.wdfdmatransactionexecute">WdfDmaTransactionExecute</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,14 +121,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,6 +142,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -141,14 +153,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
@@ -175,5 +190,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionCreate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionCreate method%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

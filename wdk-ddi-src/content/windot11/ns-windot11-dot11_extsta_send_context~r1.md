@@ -7,8 +7,8 @@ old-location: netvista\dot11_extsta_send_context.htm
 old-project: netvista
 ms.assetid: 0a4af7dc-0210-42b6-b15b-a0f885664da9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: DOT11_EXTSTA_SEND_CONTEXT, *PDOT11_EXTSTA_SEND_CONTEXT, DOT11_EXTAP_SEND_CONTEXT, *PDOT11_EXTAP_SEND_CONTEXT, DOT11_EXTSTA_SEND_CONTEXT
+ms.date: 12/8/2017
+ms.keywords: DOT11_EXTSTA_SEND_CONTEXT, DOT11_EXTSTA_SEND_CONTEXT, *PDOT11_EXTSTA_SEND_CONTEXT, DOT11_EXTAP_SEND_CONTEXT, *PDOT11_EXTAP_SEND_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -62,26 +62,33 @@ The type, revision, and size of the DOT11_EXTSTA_SEND_CONTEXT structure. This me
      as an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
+
 ### -field Revision
 
 This member must be set to DOT11_EXTSTA_SEND_CONTEXT_REVISION_1.
+
 
 ### -field Size
 
 This member must be set to 
        sizeof(DOT11_EXTSTA_SEND_CONTEXT).
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field usExemptionActionType
 
@@ -89,14 +96,18 @@ The type of encryption exemption for the packet. The following exemption types a
      
 
 
+
+
 ### -field DOT11_EXEMPT_NO_EXEMPTION
 
 The packet is not exempt from any cipher operations performed by the 802.11 station.
+
 
 ### -field DOT11_EXEMPT_ALWAYS
 
 The packet is exempt from any cipher operations performed by the 802.11 station. The 802.11
        station must transmit the packet unencrypted.
+
 
 ### -field DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
 
@@ -104,6 +115,7 @@ The packet is exempt from any cipher operations performed by the 802.11 station 
        station does not have a key-mapping key for the packet's destination media access control (MAC)
        address. For more information about key-mapping keys, see 
        <a href="netvista.802_11_cipher_key_types">802.11 Cipher Key Types</a>.
+
 </dd>
 </dl>
 
@@ -112,8 +124,10 @@ The packet is exempt from any cipher operations performed by the 802.11 station 
 The identifier (ID) of a PHY type on the 802.11 station. The 802.11 station must use the specified
      PHY to transmit the packet.
      
+
 The value of 
      <b>uPhyId</b> must be one of the following:
+
 <ul>
 <li>
 The value of an entry in the list of active PHY types defined by the 
@@ -122,11 +136,13 @@ The value of an entry in the list of active PHY types defined by the
        information about the 
        <b>msDot11ActivePhyList</b> MIB object, see 
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569102">OID_DOT11_ACTIVE_PHY_LIST</a>.
+
 </li>
 <li>
 The value of DOT11_PHY_ID_ANY, in which case the 802.11 station can use any PHY from the list of
        active PHYs defined by the 
        <b>msDot11ActivePhyList</b> MIB object.
+
 </li>
 </ul>
 The miniport driver must fail the send request if the PHY specified by 
@@ -138,14 +154,17 @@ The miniport driver must fail the send request if the PHY specified by
      <a href="netvista.ndismsendnetbufferlistscomplete">
      NdisMSendNetBufferListsComplete</a> to complete the send request.
 
+
 ### -field uDelayedSleepValue
 
 The time, in microseconds, before a response to the packet is expected. The 
      <b>uDelayedSleepValue</b> member is only valid when all of the following are true:
      
+
 <ul>
 <li>
 The packet is a media access control (MAC) service data unit (MSDU) packet.
+
 </li>
 <li>
 The 802.11 station is operating in a power save (PS) mode. In this situation, the Extensible
@@ -155,6 +174,7 @@ The 802.11 station is operating in a power save (PS) mode. In this situation, th
        <b>msDot11PowerSavingLevel</b> MIB value, see 
        <a href="netvista.oid_dot11_power_mgmt_request">
        OID_DOT11_POWER_MGMT_REQUEST</a>.
+
 </li>
 </ul>
 The 802.11 station uses the value of 
@@ -164,6 +184,7 @@ The 802.11 station uses the value of
      <b>uDelayedSleepValue</b> is small. By doing so, the network latency will be reduced for receiving the
      response.
 
+
 ### -field pvMediaSpecificInfo
 
 A pointer to a buffer that contains media-specific information. This member should be <b>NULL</b> when
@@ -172,6 +193,7 @@ A pointer to a buffer that contains media-specific information. This member shou
      structure is associated with comes from the native 802.11 framework itself (including any
      NET_BUFFER_LIST structures that come from an IHV extension).
      
+
 Otherwise, 
      <b>pvMediaSpecificInfo</b> points to the out-of-band (OOB) data that is associated with the 
      <b>MediaSpecificInformation</b> entry at the 
@@ -179,10 +201,12 @@ Otherwise,
      <b>pvMediaSpecificInfo</b> allows the miniport driver to access the media-specific information from an
      IHV-specific 802.3 protocol driver.
 
+
 ### -field uSendFlags
 
 A set of flags that define send attributes. Currently, there are no flags defined. This member
      should be zero.
+
 
 ## -remarks
 The miniport driver performs a send operation when its 
@@ -210,20 +234,24 @@ For more information about Native 802.11 send operations, see
     <a href="netvista.native_802_11_send_operations">Native 802.11 Send
     Operations</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -262,5 +290,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_SEND_CONTEXT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_SEND_CONTEXT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

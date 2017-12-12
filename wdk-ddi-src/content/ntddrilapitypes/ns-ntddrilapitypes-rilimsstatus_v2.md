@@ -7,8 +7,8 @@ old-location: netvista\rilimsstatus_v2.htm
 old-project: netvista
 ms.assetid: afc17375-a65d-495d-b68a-b74146cb8f69
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILIMSSTATUS_V2, RILIMSSTATUS_V2, *LPRILIMSSTATUS_V2
+ms.date: 12/8/2017
+ms.keywords: RILIMSSTATUS_V2, *LPRILIMSSTATUS_V2, RILIMSSTATUS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -87,6 +88,7 @@ typedef struct _RILIMSSTATUS_V2 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

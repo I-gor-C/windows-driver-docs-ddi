@@ -41,6 +41,7 @@ req.irql:
 This structure contains SUPL H-SLP configuration information.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field SuplHslp[MAX_SERVER_URL_NAME]
 
 This is the SUPL server address with TCP port. The server address will be a FQDN as indicated in the OMA SUPL specs.
 
+
 ### -field SuplHslpFromImsi[MAX_SERVER_URL_NAME]
 
 This is the SUPL server address as derived from IMSI.
+
 
 ### -field Reserved
 
 Reserved for future use.
 
+
 ### -field Unused[512]
 
 Padding buffer.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Padding buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

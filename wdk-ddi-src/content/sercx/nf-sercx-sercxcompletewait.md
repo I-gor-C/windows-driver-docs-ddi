@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SerCxCompleteWait</b> method notifies the serial framework extension (SerCx) that an event in the current wait mask has occurred.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS SerCxCompleteWait(
 
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
+
 ### -param Event [in]
 
 The type of event that is ending the current wait operation.  This parameter is a wait mask value. Each event type corresponds to a particular bit in the wait mask. This bit is set to indicate that the corresponding event has occurred. For more information about the types of events that can be specified by a wait mask, see <a href="serports.serial_ev_xxx">SERIAL_EV_XXX</a>.
+
 
 ## -returns
 <b>SerCxCompleteWait</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status code.
@@ -70,16 +73,19 @@ The type of event that is ending the current wait operation.  This parameter is 
 
  
 
+
 ## -remarks
 When SerCx receives an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a> request from a client, the request handler in SerCx calls the <a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a> callback function to notify the serial controller driver that the wait mask has changed. The wait mask specifies a set of hardware events for the serial controller to monitor. During this call, the driver discards any old wait mask that might have been specified in a previous <i>EvtSerCxWaitmask</i> call, and then configures the serial controller hardware to detect the events in the new wait mask.
 
 Later, when an event in the new wait mask occurs, the driver calls <b>SerCxCompleteWait</b> to notify SerCx of the event. If a previously sent <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a> request is pending, <b>SerCxCompleteWait</b> completes this request with a status of STATUS_SUCCESS and an output wait mask that indicates which event occurred. Otherwise, <b>SerCxCompleteWait</b> stores the event in its internal event history in anticipation of a future <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -134,5 +145,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SerCxCompleteWait method%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

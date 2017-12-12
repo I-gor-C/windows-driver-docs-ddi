@@ -46,6 +46,7 @@ req.product: Windows 10 or later.
       It first searches the control pending events database, and then the data pending event database.
 
 
+
 ## -syntax
 
 ````
@@ -62,14 +63,17 @@ NTSTATUS PosCxGetPendingEvent(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param request [in]
 
 A handle to a framework request object that represents the read request if <b>PosCxGetPendingEvent</b> is called from the device read callback.
+
 
 ## -returns
 Possible return values are:
 
  
+
 
 ## -remarks
 
@@ -79,14 +83,17 @@ Possible return values are:
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

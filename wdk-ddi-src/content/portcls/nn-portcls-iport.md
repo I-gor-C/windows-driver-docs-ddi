@@ -39,30 +39,40 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPort</code> interface is the generic interface for audio port drivers. All audio port drivers expose <code>IPort</code> as part of their lower edge. The adapter driver calls the initialization method on this interface. <code>IPort</code> inherits from the <b>IUnknown</b> interface.
+
 The <code>IPort</code> interface provides a uniform means for initializing audio port drivers of all types. <code>IPort</code> is the base interface for the following port driver interfaces:
 
+
 <a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
+
 
 
 <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 
 
+
 <a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
+
 
 
 <a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 
 
+
 <a href="audio.iportwavepci">IPortWavePci</a>
+
 
 
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
 
+
 Call <a href="audio.pcnewport">PcNewPort</a> to create a port object with one of these interfaces.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPort</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -72,6 +82,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPort</b> interface inherits 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

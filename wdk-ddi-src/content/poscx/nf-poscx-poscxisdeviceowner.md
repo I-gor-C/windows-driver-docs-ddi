@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 PosCxIsDeviceOwner checks if the caller currently owns the claim on the device.
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,17 @@ BOOLEAN PosCxIsDeviceOwner(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param fileObject [in]
 
       A handle to a framework file object that identifies the caller, usually acquired with <a href="wdf.wdfrequestgetfileobject">WdfRequestGetFileObject</a>. If this parameter is NULL, <b>PosCxIsDeviceOwner</b> returns TRUE if the device is not currently owned.
+
 
 ## -returns
 Returns TRUE if the caller is the device owner, or if <i>fileObject</i> is NULL and the device is not currently owned.
 
 Otherwise, returns FALSE.
+
 
 ## -remarks
 
@@ -75,14 +79,17 @@ Otherwise, returns FALSE.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

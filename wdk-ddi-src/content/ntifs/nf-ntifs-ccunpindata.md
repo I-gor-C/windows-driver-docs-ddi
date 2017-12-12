@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>CcUnpinData</b> routine releases cached file data that was mapped or pinned by an earlier call to <a href="ifsk.ccmapdata">CcMapData</a>, <a href="ifsk.ccpinread">CcPinRead</a>, or <a href="ifsk.ccpreparepinwrite">CcPreparePinWrite</a>.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ VOID CcUnpinData(
 
 Pointer to a buffer control block (BCB) for the data to be released.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>CcUnpinData</b> frees the BCB and performs any other necessary cleanup.
@@ -66,11 +69,13 @@ Every successful call to <a href="ifsk.ccmapdata">CcMapData</a>, <a href="ifsk.c
 
 BCBs that have been modified by <a href="ifsk.ccsetbcbownerpointer">CcSetBcbOwnerPointer</a> cannot be unpinned by calling <b>CcUnpinData</b>. <a href="ifsk.ccunpindataforthread">CcUnpinDataForThread</a> must be called instead.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,6 +86,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +97,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +108,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -111,9 +119,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -137,5 +147,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcUnpinData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SetPixelWindow </b>function sets the image area to be scanned.
 
 
+
 ## -syntax
 
 ````
@@ -61,33 +62,41 @@ WIAMICRO_API HRESULT SetPixelWindow(
 
 Points to a <a href="image.scaninfo">SCANINFO</a> structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.
 
+
 ### -param x 
 
 Specifies the horizontal position value for the left side of the selection rectangle in pixels. 
+
 
 ### -param y 
 
 Specifies the vertical position value for the top of the selection rectangle in pixels.
 
+
 ### -param xExtent 
 
 Specifies the width of the selection rectangle in pixels. 
+
 
 ### -param yExtent 
 
 Specifies the height of the selection rectangle in pixels. 
 
+
 ## -returns
 If the function succeeds, it returns S_OK. If the function fails, it returns a standard COM error code.
 
+
 ## -remarks
 In this function, the microdriver should set up the <b>Window</b> member of the <a href="image.scaninfo">SCANINFO</a> structure, making any device-specific adjustments that are necessary. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,5 +137,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20SetPixelWindow function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

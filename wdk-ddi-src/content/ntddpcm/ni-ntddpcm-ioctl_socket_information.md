@@ -49,14 +49,18 @@ This request retrieves socket information for the socket that is indicated by th
 
 The caller initializes the <b>Socket</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537612">PCMCIA_SOCKET_INFORMATION</a> structure at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
 
+
 ### -input-buffer-length
 <b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the input buffer, which must be greater than or equal to <b>sizeof</b>(PCMCIA_SOCKET_INFORMATION).
+
 
 ### -output-buffer
 The PCMCIA bus driver stores the requested socket data in a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537612">PCMCIA_SOCKET_INFORMATION</a> at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
 
+
 ### -output-buffer-length
 The size of the requested socket data.
+
 
 ### -in-out-buffer
 
@@ -80,6 +84,7 @@ If the bus driver cannot identify a socket that is associated with the socket nu
 
 If there is no card in the indicated socket, the <b>Status</b> field is set to STATUS_UNSUCCESSFUL.
 
+
 ## -remarks
 
 
@@ -88,6 +93,7 @@ If there is no card in the indicated socket, the <b>Status</b> field is set to S
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +110,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCMCIA\buses]:%20IOCTL_SOCKET_INFORMATION control code%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

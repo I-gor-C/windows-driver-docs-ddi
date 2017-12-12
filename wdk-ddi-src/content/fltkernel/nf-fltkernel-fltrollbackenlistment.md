@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltRollbackEnlistment</b> routine rolls back or aborts a transaction on behalf of a minifilter driver. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS FltRollbackEnlistment(
 
 Opaque instance pointer for the caller. 
 
+
 ### -param Transaction [in]
 
 Opaque transaction pointer for the transaction. 
 
+
 ### -param TransactionContext [in, optional]
 
 Pointer to the minifilter driver's transaction context. 
+
 
 ## -returns
 <b>FltRollbackEnlistment</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
@@ -76,6 +80,7 @@ Pointer to the minifilter driver's transaction context.
 </dl>The transaction rollback request is not allowed for this enlistment. This is an error code. 
 
  
+
 
 ## -remarks
 A minifilter driver that is enlisted in a transaction can call <b>FltRollbackEnlistment</b> to roll back or abort the transaction. 
@@ -90,11 +95,13 @@ To delete a transaction context, call <a href="ifsk.fltdeletetransactioncontext"
 
 To set a transaction context, call <a href="ifsk.fltsettransactioncontext">FltSetTransactionContext</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,14 +112,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Windows Vista and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +133,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +144,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -143,9 +155,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -187,5 +201,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRollbackEnlistment routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

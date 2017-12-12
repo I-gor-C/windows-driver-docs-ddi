@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -58,15 +59,18 @@ typedef struct _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD {
 
 Unique identifer for current connection.
 
+
 ### -field eRfTechType
 
 NFC Forum RF technology type.
+
 
 
 ### -field eRfProtocolType
 
 NFC Forum RF protocol
 type.
+
 
 ## -remarks
 
@@ -76,6 +80,7 @@ type.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

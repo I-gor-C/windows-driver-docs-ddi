@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_info_query.htm
 old-project: storage
 ms.assetid: 7B58F050-2AF4-4BD5-95AB-254BCAA865F6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_INFO_QUERY, STORAGE_HW_FIRMWARE_INFO_QUERY, *PSTORAGE_HW_FIRMWARE_INFO_QUERY
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_HW_FIRMWARE_INFO_QUERY, *PSTORAGE_HW_FIRMWARE_INFO_QUERY, STORAGE_HW_FIRMWARE_INFO_QUERY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains information about the device firmware.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO_QUERY {
 
 The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_INFO_QUERY)
 
+
 ### -field Size
 
 The size of this structure as a buffer.
 
+
 ### -field Flags
 
 The flags associated with the query. The following are flags that can be set in this member.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -78,9 +82,11 @@ The flags associated with the query. The following are flags that can be set in 
 </table>
  
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -90,22 +96,27 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

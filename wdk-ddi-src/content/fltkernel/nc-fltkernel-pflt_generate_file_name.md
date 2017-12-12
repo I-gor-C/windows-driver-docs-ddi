@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver that provides file names for the filter manager's name cache can register a routine of type <i>PFLT_GENERATE_FILE_NAME</i> as the minifilter driver's <i>GenerateFileNameCallback</i> routine. 
 
 
+
 ## -prototype
 
 ````
@@ -64,29 +65,36 @@ NTSTATUS GenerateFileNameCallback(
 
 Opaque instance pointer for the minifilter driver instance that this callback routine is registered for. 
 
+
 ### -param FileObject [in]
 
 A pointer to a file object for the file whose name is being requested. 
 
+
 ### -param CallbackData [in, optional]
 
 A pointer to the callback data structure for the operation during which this name is being requested. This parameter is <b>NULL</b> when <a href="ifsk.fltgetfilenameinformationunsafe">FltGetFileNameInformationUnsafe</a> is called to retrieve the name of the file.
+
 
 ### -param NameOptions [in]
 
 
 <a href="ifsk.flt_file_name_options">FLT_FILE_NAME_OPTIONS</a> value that specifies the name format, query method, and flags for this file name information query. 
 
+
 ### -param CacheFileNameInformation [out]
 
 A pointer to a Boolean value specifying whether this name can be cached. Set to <b>TRUE</b> on output if the name can be cached; set to <b>FALSE</b> otherwise. 
+
 
 ### -param FileName [out]
 
 A pointer to a filter manager-allocated <a href="ifsk.flt_name_control">FLT_NAME_CONTROL</a> structure to receive the file name on output. 
 
+
 ## -returns
 This callback routine returns STATUS_SUCCESS or an appropriate NTSTATUS value. 
+
 
 ## -remarks
 A minifilter driver that provides file names for the filter manager's name cache can register a routine of type <i>PFLT_GENERATE_FILE_NAME</i> as the minifilter driver's <i>GenerateFileNameCallback</i> routine. 
@@ -113,11 +121,13 @@ For more information about file name formats, see the reference entries for <a h
 
 After it generates the file name information, the minifilter driver must call <a href="ifsk.fltcheckandgrownamecontrol">FltCheckAndGrowNameControl</a> to check whether the <a href="ifsk.flt_name_control">FLT_NAME_CONTROL</a> structure that the <i>FileName</i> parameter points to contains a name buffer that is large enough to hold the generated file name. If the name buffer is too small, <b>FltCheckAndGrowNameControl</b> replaces it with a larger one. The minifilter driver then stores the file name information into the name buffer and returns. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +138,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +149,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -203,5 +216,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_GENERATE_FILE_NAME routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

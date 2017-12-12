@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-video-decoder-0032.htm
 old-project: display
 ms.assetid: d4d42334-ae09-4900-828b-86da81b446c1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_CREATE_VIDEO_DECODER_0032, D3D12DDIARG_CREATE_VIDEO_DECODER_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Creates a video decoder.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_0032 {
 
 Represents the set of nodes.
 
+
 ### -field Configuration
 
 The video decode configuration.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The video decode configuration.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: kernel\process_mitigation_child_process_policy.htm
 old-project: kernel
 ms.assetid: 8f388c0e-41ee-40e4-b633-687eeff74a0a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PROCESS_MITIGATION_CHILD_PROCESS_POLICY, *PPROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY
+ms.date: 12/7/2017
+ms.keywords: _PROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY, *PPROCESS_MITIGATION_CHILD_PROCESS_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Stores policy information about creating child processes.
 
 
+
 ## -syntax
 
 ````
@@ -69,17 +70,21 @@ typedef struct _PROCESS_MITIGATION_CHILD_PROCESS_POLICY {
 
 If set, the process cannot create child processes.
 
+
 ### -field AuditNoChildProcessCreation
 
 If set, causes audit events to be generated when child processes are created by the process. If both <b>NoChildProcessCreation</b> and <b>AuditNoChildProcessCreation</b> are set, <b>NoChildProcessCreation</b> takes precedence over audit setting.
+
 
 ### -field AllowSecureProcessCreation
 
 Denies creation of child processes unless the child process is a secure process and if creation was previously blocked. It allows a process to spawn a child process on behalf of another process that cannot itself create child processes. See PROCESS_CREATION_CHILD_PROCESS_OVERRIDE in <a href="base.updateprocthreadattribute">UpdateProcThreadAttribute</a>.
 
+
 ### -field ReservedFlags
 
 Reserved.
+
 </dd>
 </dl>
 </dd>
@@ -93,22 +98,27 @@ Reserved.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

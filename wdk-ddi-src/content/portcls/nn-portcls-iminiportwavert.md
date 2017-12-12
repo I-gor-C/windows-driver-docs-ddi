@@ -39,12 +39,16 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IMiniportWaveRT</code> interface is the primary interface that is exposed by the miniport driver for a WaveRT audio device. The adapter driver creates the WaveRT miniport driver object. It then passes the <code>IMiniportWaveRT</code> interface pointer of the object to the <a href="audio.iport_init">IPort::Init </a> method of the WaveRT port driver. <code>IMiniportWaveRT</code> inherits from the <a href="..\portcls\nn-portcls-iminiport.md">IMiniport</a> interface.
+
 An adapter driver forms a miniport-port driver pair by binding an <code>IMiniportWaveRT</code> object to an <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a> object. The PortCls system driver registers this pair with the system as a wave filter.
+
 <code>IMiniportWaveRT</code> is supported in Windows Vista and later Windows operating systems.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveRT</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -54,6 +58,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveRT</b> interface
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

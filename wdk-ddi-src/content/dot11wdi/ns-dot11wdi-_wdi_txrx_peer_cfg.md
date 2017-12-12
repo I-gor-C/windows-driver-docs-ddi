@@ -7,8 +7,8 @@ old-location: netvista\wdi_txrx_peer_cfg.htm
 old-project: netvista
 ms.assetid: 5d2a97a3-3214-4f23-bf9d-d0ed292a46f0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG
+ms.date: 12/8/2017
+ms.keywords: _WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The WDI_TXRX_PEER_CFG structure defines peer configuration.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _WDI_TXRX_PEER_CFG {
 
 The peer's QoS capability as defined in <a href="netvista.wdi_txrx_peer_qos_caps">WDI_TXRX_PEER_QOS_CAPS</a>.
 
+
 ## -remarks
 
 
@@ -64,22 +66,27 @@ The peer's QoS capability as defined in <a href="netvista.wdi_txrx_peer_qos_caps
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

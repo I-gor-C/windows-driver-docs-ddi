@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltCreateSectionForDataScan</b> routine creates a section object for a file. The filter manager can optionally synchronize I/O with the section created.
 
 
+
 ## -syntax
 
 ````
@@ -67,17 +68,21 @@ NTSTATUS FltCreateSectionForDataScan(
 
 The opaque instance pointer for the minifilter driver instance whose context is to be retrieved. 
 
+
 ### -param FileObject [in]
 
 The file object for an open file.  The section object will be backed by the specified file. This parameter is required and cannot be <b>NULL</b>.
+
 
 ### -param SectionContext [in]
 
 A pointer to a previously allocated section context. 
 
+
 ### -param DesiredAccess [in]
 
 The type  of access for the section object as one or more of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags. 
+
 <table>
 <tr>
 <th><i>DesiredAccess</i> flag</th>
@@ -86,49 +91,61 @@ The type  of access for the section object as one or more of the following <a hr
 <tr>
 <td>
 SECTION_MAP_READ
+
 </td>
 <td>
 Read views of the section.
+
 </td>
 </tr>
 <tr>
 <td>
 SECTION_MAP_WRITE
+
 </td>
 <td>
 Write views of the section.
+
 </td>
 </tr>
 <tr>
 <td>
 SECTION_QUERY
+
 </td>
 <td>
 Query the section object for information about the section. Drivers should set this flag.
+
 </td>
 </tr>
 <tr>
 <td>
 SECTION_ALL_ACCESS
+
 </td>
 <td>
 All actions defined by the previous flags as well as that defined by STANDARD_RIGHTS_REQUIRED. (For more information about STANDARD_RIGHTS_REQUIRED, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>.) 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ObjectAttributes [in, optional]
 
 A pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> macro to initialize this structure. Because <b>FltCreateSectionForDataScan</b> inserts this object into the process handle table, the caller must specify the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
+
 
 ### -param MaximumSize [in, optional]
 
 This parameter is reserved for future use.
 
+
 ### -param SectionPageProtection [in]
 
 The protection to place on each page in the section. Specify one of the following values. This parameter is required and cannot be zero. 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -137,25 +154,31 @@ The protection to place on each page in the section. Specify one of the followin
 <tr>
 <td>
 PAGE_READONLY
+
 </td>
 <td>
 Enables read-only access to the committed region of pages. An attempt to write to the committed region results in an access violation. If the system differentiates between read-only access and execute access, an attempt to execute code in the committed region results in an access violation.
+
 </td>
 </tr>
 <tr>
 <td>
 PAGE_READWRITE
+
 </td>
 <td>
 Enables both read and write access to the committed region of pages.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param AllocationAttributes [in]
 
 Bitmasks of the SEC_<i>XXX</i> flags determine the allocation attributes of the section. Specify one or more of the following values. This parameter is required and cannot be zero. 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -164,37 +187,46 @@ Bitmasks of the SEC_<i>XXX</i> flags determine the allocation attributes of the 
 <tr>
 <td>
 SEC_COMMIT
+
 </td>
 <td>
 Allocates physical storage in memory or in the paging file on disk for all pages of a section. This is the default setting. Note that this flag is required and cannot be omitted.
+
 </td>
 </tr>
 <tr>
 <td>
 SEC_FILE
+
 </td>
 <td>
 The file specified by the <i>FileObject</i> parameter is a mapped file.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Flags [in]
 
 This parameter is reserved for future use.
+
 
 ### -param SectionHandle [out]
 
 A pointer to a caller-allocated variable that receives an opaque handle to the section handle. 
 
+
 ### -param SectionObject [out]
 
 A pointer to a caller-allocated variable that receives an opaque pointer to the section object.
 
+
 ### -param SectionFileSize [out, optional]
 
 A pointer to a caller-allocated variable that receives the size, in bytes, of the file at the time the section object was created. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 <b>FltCreateSectionForDataScan</b> returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value, such as one of the following.
@@ -241,6 +273,7 @@ The file specified by the <i>FileObject</i> parameter is a directory.
 
  
 
+
 ## -remarks
 Prior to calling <b>FltCreateSectionForDataScan</b>, a minifilter must  first register its volume for data scanning by calling <a href="ifsk.fltregisterfordatascan">FltRegisterForDataScan</a>. As with other filter context elements, <i>SectionContext</i> is first allocated with <a href="ifsk.fltallocatecontext">FltAllocateContext</a>. 
 
@@ -252,11 +285,13 @@ For overview  information on creating mapped sections and views of memory, see <
 <p class="note">Minifilters must not explicitly delete a section context passed to <b>FltCreateSectionForDataScan</b>. Do not call <a href="ifsk.fltdeletecontext">FltDeleteContext</a> after a section context is passed to  <b>FltCreateSectionForDataScan</b>. A section context is deallocated and removed from a stream  by calling <a href="ifsk.fltclosesectionfordatascan">FltCloseSectionForDataScan</a> in this case.
 <p class="note">In general, sections should be created as read-only. In particular, if a read-only file is in a transaction  and a minifilter does not create a read-only section, a write to the section is discarded and is not included as part of the transaction.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -267,14 +302,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The <b>FltCreateSectionForDataScan</b> routine is available starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -285,6 +323,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -295,9 +334,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -336,5 +377,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateSectionForDataScan routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

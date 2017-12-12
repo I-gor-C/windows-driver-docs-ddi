@@ -41,6 +41,7 @@ req.irql:
 The <b>KsReleaseCachedMdl</b> function is used to release the MDL acquired by the <a href="stream.ksacquirecachedmdl">KsAcquireCachedMdl</a> call.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ void _Must_inspect_result_ _IRQL_requires_max_(PASSIVE_LEVEL) KSDDKAPI NTSTATUS 
 
 The GUID extracted from the <b>MFSampleExtension_MDLCacheCookie</b> attribute item of the <b>IMFSample</b> passed by the pipeline.
 
+
 ### -param MdlAddr [in]
 
 MDL address retrieved in the <a href="stream.ksacquirecachedmdl">KsAcquireCachedMdl</a> call. This should not be touched after the <b>KsReleaseCachedMdl</b> call.
+
 
 ### -param ReleaseContext [in]
 
 The context passed as an output in the <a href="stream.ksacquirecachedmdl">KsAcquireCachedMdl</a> call.
 
+
 ## -returns
 Returns <b>STATUS_SUCCESS</b> for success conditions.
+
 
 ## -remarks
 
@@ -77,6 +82,7 @@ Returns <b>STATUS_SUCCESS</b> for success conditions.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

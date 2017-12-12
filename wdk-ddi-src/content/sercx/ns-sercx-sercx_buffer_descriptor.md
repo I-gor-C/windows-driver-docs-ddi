@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SERCX_BUFFER_DESCRIPTOR</b> structure describes a data buffer for a receive operation or transmit operation.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _SERCX_BUFFER_DESCRIPTOR {
 
 The size, in bytes, of this structure.  The <a href="serports.sercxretrievereceivebuffer">SerCxRetrieveReceiveBuffer</a> and <a href="serports.sercxretrievetransmitbuffer">SerCxRetrieveTransmitBuffer</a> methods use this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
+
 ### -field Buffer
 
 The virtual memory address of the buffer. The memory for the buffer is nonpaged.
 
+
 ### -field Length
 
 The number of bytes available in the buffer. This size determines the maximize number of bytes that can be transferred by the receive or transmit operation.
+
 
 ## -remarks
 The serial  controller driver uses the information in this structure to determine where in memory to read data from during a receive operation, and where in memory to write data during a transmit operation.
@@ -76,19 +80,23 @@ The buffers that are obtained by successive calls to <b>SerCxRetrieveReceiveBuff
 
 The controller driver must call the <a href="serports.sercx_buffer_descriptor_init">SERCX_BUFFER_DESCRIPTOR_INIT</a> function to initialize an <b>SERCX_BUFFER_DESCRIPTOR</b> structure before the structure is passed to the <a href="serports.sercxretrievereceivebuffer">SerCxRetrieveReceiveBuffer</a> or <a href="serports.sercxretrievetransmitbuffer">SerCxRetrieveTransmitBuffer</a> method. After a buffer descriptor is initialized, it can be reused without being initialized again.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,5 +119,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERCX_BUFFER_DESCRIPTOR structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

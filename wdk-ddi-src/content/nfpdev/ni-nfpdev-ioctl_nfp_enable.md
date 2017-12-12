@@ -41,10 +41,12 @@ req.irql:
 The client sends the <b>IOCTL_NFP_ENABLE</b> request to re-enable previously disabled subscriptions, publications, and presence events.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None
+
 
 ### -input-buffer-length
 
@@ -52,6 +54,7 @@ None
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -75,12 +78,15 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 The following are required actions when using this IOCTL:<ul>
 <li>
 	When this IOCTL is received the driver MUST mark the file handle as “Enabled”.
+
 </li>
 <li>
 	If the file handle is already marked “Enabled” the driver MUST complete the IOCTL with STATUS_INVALID_DEVICE_STATE.
+
 </li>
 <li>
 If a device is currently proximate when this IOCTL is successfully completed, then the message data (along with its type) MUST be transmitted (only once) to the proximate device.
+
 </li>
 </ul>
 
@@ -91,19 +97,23 @@ If a device is currently proximate when this IOCTL is successfully completed, th
 
 If a device is currently proximate when this IOCTL is successfully completed, then the message data (along with its type) MUST be transmitted (only once) to the proximate device.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +132,8 @@ Header
 <dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_NFP_ENABLE control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

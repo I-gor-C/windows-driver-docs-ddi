@@ -7,7 +7,7 @@ old-location: netvista\completionfn.htm
 old-project: netvista
 ms.assetid: c03656ec-f0fe-49f5-8a04-2d26ef23c50a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The filter engine calls a callout's
   injected into the network stack.
 
 
+
 ## -prototype
 
 ````
@@ -68,12 +69,14 @@ A pointer to the
      <a href="netvista.packet_injection_functions">packet injection functions</a> called
      by the callout driver.
 
+
 ### -param netBufferList [in, out]
 
 The pointer passed in the 
      <i>netBufferList</i> parameter of one of the 
      <a href="netvista.packet_injection_functions">packet injection functions</a> called
      by the callout driver.
+
 
 ### -param dispatchLevel [in]
 
@@ -83,8 +86,10 @@ A value that indicates the IRQL at which the
      <b>FALSE</b>, the 
      <i>completionFn</i> callout function is being called at an IRQL &lt; DISPATCH_LEVEL.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 The FWPS_INJECT_COMPLETE0 type is defined as a pointer to the 
@@ -113,19 +118,23 @@ If the
 The filter engine calls a callout's 
     <i>completionFn</i> callout function at IRQL &lt;= DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,9 +145,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -174,5 +185,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INJECT_COMPLETE0 callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INJECT_COMPLETE0 callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

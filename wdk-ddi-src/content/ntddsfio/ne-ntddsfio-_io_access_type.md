@@ -7,7 +7,7 @@ old-location: kernel\io_access_type.htm
 old-project: kernel
 ms.assetid: 9ABFF1E8-50B8-4B59-964D-BA79AB63BFCE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _IO_ACCESS_TYPE, IO_ACCESS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines the access rights for Scheduled File I/O (SFIO).
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _IO_ACCESS_TYPE {
 
 Indicates that the input/output will be comprised solely of reads.
 
+
 ### -field WriteAccess
 
 Indicates that the input/output will be comprised solely of writes.
 
+
 ### -field ModifyAccess
 
 Indicates that the input/output will be comprised of reads and writes.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Indicates that the input/output will be comprised of reads and writes.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

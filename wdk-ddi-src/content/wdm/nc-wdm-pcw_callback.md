@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Providers can implement a <i>PCW_CALLBACK</i> function to receive notification when consumers perform certain actions, such as adding or removing counters from a query. The Performance Counter Library (PERFLIB version 2.0) calls the <i>PCW_CALLBACK</i> function before the consumer's request completes.
 
 
+
 ## -prototype
 
 ````
@@ -62,16 +63,20 @@ NTSTATUS PcwCallback(
 
 The callback type. Specifies why the callback is called. Possible values are PcwCallbackAddCounter, PcwCallbackRemoveCounter, PcwCallbackEnumerateInstances, and PcwCallbackCollectData. 
 
+
 ### -param Info [in]
 
 A pointer to a PCW_CALLBACK_INFORMATION union that supplies details about the reason why the provider is being called.
+
 
 ### -param Context [in, optional]
 
 A pointer to the callback context. This value is supplied by the provider when calling <a href="devtest.pcwregister">PcwRegister</a>.
 
+
 ## -returns
 The <i>PCW_CALLBACK</i> callback function must return STATUS_SUCCESS if the callback was successfully executed. Otherwise, this callback function must return STATUS_UNSUCCESSFUL.
+
 
 ## -remarks
 Providers that do not want to, or are unable to, create and destroy instances can register a callback function that is called when data is requested. For example, the following code examples show how the provider can use the <i>PCW_CALLBACK</i> callback function to enumerate and collect data.
@@ -82,11 +87,13 @@ The provider can implement the <i>Callback</i> function to handle the requests. 
 
 In the <i>DriverEntry</i> routine of the KCS example, the <i>KcsGeometricWaveCallback</i> function is specified as the <i>Callback</i> when <i>KcsRegisterGeometricWave</i> registers the counter set. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,9 +125,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -130,5 +142,8 @@ IRQL
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=144623">Performance Counter Library (PERFLIB)</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20PCW_CALLBACK callback function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

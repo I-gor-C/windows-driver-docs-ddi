@@ -7,7 +7,7 @@ old-location: netvista\protocolclmodifycallqoscomplete.htm
 old-project: netvista
 ms.assetid: 0d925862-49af-4579-b877-c9a033e73be0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,6 +48,7 @@ The
   <i>ProtocolClModifyCallQoSComplete</i> function can simply return control.
 
 
+
 ## -prototype
 
 ````
@@ -71,29 +72,36 @@ Specifies the final status of the client's asynchronous request to modify the ca
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The QoS was modified as requested by the client.
+
 
 ### -param NDIS_STATUS_RESOURCES
 
 NDIS or the call manager could not modify the QoS because one of them could not allocate
        sufficient resources dynamically.
 
+
 ### -param NDIS_STATUS_INVALID_DATA
 
 The call parameters that the client supplied to 
        <b>NdisClModifyCallQoS</b> were invalid.
+
 
 ### -param NDIS_STATUS_FAILURE
 
 The call manager could not change the QoS because of a failure on the network or in another
        connection-oriented network component.
 
+
 ### -param NDIS_STATUS_XXX
 
 The call manager failed to change the QoS, and NDIS propagated the CM-determined failure status
        to the client.
+
 </dd>
 </dl>
 
@@ -105,14 +113,17 @@ Specifies the handle to the client's per-VC context area, which the client origi
      outgoing call request or from its 
      <i>ProtocolCoCreateVc</i> function if the client accepted an incoming call on this VC.
 
+
 ### -param CallParameters [in]
 
 Pointer to a buffered CO_CALL_PARAMETERS structure containing the client-specified QoS change it
      requested, or, possibly, the original QoS for this VC established when the connection was activated,
      which the call manager has restored.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A call to 
@@ -142,11 +153,13 @@ The <b>PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE</b> function type is defined in the 
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -154,11 +167,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    ProtocolClModifyCallQoSComplete (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>
    ProtocolClModifyCallQoSComplete (NDIS 5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -169,9 +184,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -201,5 +218,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

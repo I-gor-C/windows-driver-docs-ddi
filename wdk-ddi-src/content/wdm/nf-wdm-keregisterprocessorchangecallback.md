@@ -7,7 +7,7 @@ old-location: kernel\keregisterprocessorchangecallback.htm
 old-project: kernel
 ms.assetid: a10d54a2-39e4-4c90-ac91-28d31b3ebfb8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeRegisterProcessorChangeCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeRegisterProcessorChangeCallback</b> routine registers a callback function with the operating system so that the operating system will notify the driver when a new processor is added to the hardware partition.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ PVOID KeRegisterProcessorChangeCallback(
 ### -param CallbackFunction [in]
 
 A pointer to a driver-supplied processor change callback function that is to be called by the operating system whenever a new processor is added to the hardware partition. A processor change callback function is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -75,38 +77,48 @@ A pointer to a driver-supplied processor change callback function that is to be 
 </table></span></div>
 
 
+
 ### -param CallbackContext
 
 The context that was supplied in the <i>CallbackContext</i> parameter to the <b>KeRegisterProcessorChangeCallback</b> routine when the callback function was registered with the operating system.
+
 
 ### -param ChangeContext
 
 A pointer to a <a href="kernel.ke_processor_change_notify_context">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that describes the processor change notification event.
 
+
 ### -param OperationStatus
 
 A pointer to a variable that contains an NTSTATUS code. A device driver must not change the value of this variable except if an error occurs during the processing of the callback function when the <b>State</b> member of the <a href="kernel.ke_processor_change_notify_context">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that is pointed to by the <i>ChangeContext</i> parameter contains <b>KeProcessorAddStartNotify</b>.
+
 </dd>
 </dl>
 The processor change callback function is called at IRQL = PASSIVE_LEVEL.
 
+
 ### -param CallbackContext [in, optional]
 
 A driver-supplied context that is passed to the callback function. This parameter can be <b>NULL</b>.
+
 
 ### -param Flags [in]
 
 Optional flags that modify the behavior of the <b>KeRegisterProcessorChangeCallback</b> routine. The following is one possible flag:
 
 
+
+
 ### -param KE_PROCESSOR_CHANGE_ADD_EXISTING
 
 If this flag is set, the registered callback function is immediately called for each active processor that currently exists in the hardware partition, in addition to being called whenever a new processor is added to the hardware partition. If this flag is not set, the registered callback function is only called whenever a new processor is added to the system.
+
 </dd>
 </dl>
 
 ## -returns
 <b>KeRegisterProcessorChangeCallback</b> returns a non-<b>NULL</b> callback registration handle if the callback function is successfully registered with the operating system. Otherwise, <b>KeRegisterProcessorChangeCallback</b> returns <b>NULL</b>. For more information about this handle, see the following Remarks section.
+
 
 ## -remarks
 A device driver calls the <b>KeRegisterProcessorChangeCallback</b> routine to register a callback function that is to be called by the operating system whenever a new processor is added to the hardware partition. When a user hot-plugs a new processor into the partition, the operating system calls the registered callback functions to rebalance the system resources that are allocated among the processors in the partition.
@@ -125,11 +137,13 @@ A device driver typically calls the <b>KeRegisterProcessorChangeCallback</b> rou
 
 A callback function that has been registered for notification of processor changes must be unregistered before the device driver is unloaded from the operating system. To unregister the callback function, the device driver calls the <a href="kernel.kederegisterprocessorchangecallback">KeDeregisterProcessorChangeCallback</a> routine, and passes, as an input parameter to this routine, the registration handle that was returned by the call to the <b>KeRegisterProcessorChangeCallback</b> routine. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -140,14 +154,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Server 2008 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -158,6 +175,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -168,6 +186,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -178,9 +197,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -195,5 +216,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeRegisterProcessorChangeCallback routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeRegisterProcessorChangeCallback routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

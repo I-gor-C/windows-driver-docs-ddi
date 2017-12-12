@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_range.htm
 old-project: display
 ms.assetid: B3A8F252-D56D-4F20-A0DE-2A29904BC907
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_RANGE, D3D12DDI_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a range.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct D3D12DDI_RANGE {
 
 The beginning of the range.
 
+
 ### -field End
 
 A value of one more than the end of the range. Therefore, the value of <i>End</i> minus the value of <i>Begin</i> is the size of the range.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A value of one more than the end of the range. Therefore, the value of <i>End</i
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

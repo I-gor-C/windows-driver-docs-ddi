@@ -7,8 +7,8 @@ old-location: netvista\ndiswditxqueryratidstate.htm
 old-project: netvista
 ms.assetid: 76949336-3349-4869-83C7-60D7D8A6BE24
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.date: 12/8/2017
+ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The NdisWdiTxQueryRATIDState callback function is used by the TxEngine to query the state of a RA/TID or Port queue.
+
 This is a callback inside <a href="netvista.ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
+
 
 
 ## -prototype
@@ -65,55 +67,68 @@ VOID NdisWdiTxQueryRATIDState(
 
 The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a>.
 
+
 ### -param PortId [in]
 
 The port ID.
+
 
 ### -param PeerId [in]
 
 The peer ID.
 
+
 ### -param ExTid [in]
 
 The Extended Traffic ID (TID)
+
 
 ### -param pWifiStatus [out]
 
 Indicates the result of the query operation.  See the <i>Remarks</i> section for more information.
 
+
 ### -param pQueueLength [out]
 
 The number of backlogged frames in the specified RA/TID  or Port queue.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 The TxMgr returns a success status if the port and peer are valid. Otherwise, it returns an error status.  In the case of a success status, the <i>QueueLength</i> is set to the number of backlogged frames in the specified RA/TID  or Port queue.
 
 If <b>TargetPriorityQueueing</b> is true, <a href="https://msdn.microsoft.com/library/windows/hardware/mt297658">WDI_PEER_ID</a> must be set to the wildcard peer value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,5 +157,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_QUERY_RA_TID_STATE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_QUERY_RA_TID_STATE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

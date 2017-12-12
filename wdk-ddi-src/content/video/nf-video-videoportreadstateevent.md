@@ -7,7 +7,7 @@ old-location: display\videoportreadstateevent.htm
 old-project: display
 ms.assetid: b09787b3-aede-4e53-9e22-0e81cf2dadb1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortReadStateEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>VideoPortReadStateEvent</b> function returns the current state of a given event object: signaled or nonsignaled.
 
 
+
 ## -syntax
 
 ````
@@ -58,21 +59,26 @@ LONG VideoPortReadStateEvent(
 
 Pointer to the miniport driver's device extension.
 
+
 ### -param pEvent [in]
 
 Pointer to the event object whose state is to be read.
 
+
 ## -returns
 <b>VideoPortReadStateEvent</b> returns a nonzero value if the event object is currently in the signaled state. If the event object is in the nonsignaled state, this function returns zero.
 
+
 ## -remarks
 This function is available in Windows XP and later. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +89,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +121,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -121,9 +132,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: print\userdata.htm
 old-project: print
 ms.assetid: 5d4e5454-f44f-483a-a389-c8973263fbaa
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _USERDATA, *PUSERDATA, USERDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The USERDATA structure is used by <a href="wdkgloss.u#wdkgloss.unidrv#wdkgloss.unidrv"><i>Unidrv</i></a> and <a href="wdkgloss.p#wdkgloss.pscript#wdkgloss.pscript"><i>Pscript</i></a> to specify additional information about printer features. A USERDATA structure pointer is supplied as the <b>UserData</b> member for each <a href="print.optitem">OPTITEM</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _USERDATA {
 
 Size, in bytes, of the USERDATA structure.
 
+
 ### -field dwItemID
 
 Printer feature identifier.
+
 
 ### -field pKeyWordName
 
 Pointer to a nonlocalized text string identifying a printer feature.
 
+
 ### -field dwReserved
 
 Reserved.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Reserved.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: storage\ufs_interconnect_descriptor.htm
 old-project: storage
 ms.assetid: 6C6EAA96-40E9-467F-903B-AE44CE5B77CF
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: PUFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
 6338 UniPro℠ specification version number.
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ typedef struct _UFS_INTERCONNECT_DESCRIPTOR {
 
 Specifies the length, in bytes, of this descriptor.
 
+
 ### -field bDescriptorIDN
 
 Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_INTERCONNECT_IDN</b>.
+
 
 ### -field bcdUniproVersion
 
 Specifies the MIPI UniPro℠ version number in Binary Coded Decimal (BCD) format.
 
+
 ### -field bcdMphyVersion
 
 Specifies the MIPI M-PHY® version number in BCD format.
+
 
 ## -remarks
 
@@ -81,22 +86,27 @@ Specifies the MIPI M-PHY® version number in BCD format.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

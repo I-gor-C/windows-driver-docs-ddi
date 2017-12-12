@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: 5b46253c-c111-4675-898e-78b81ecbddb8
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND
+ms.keywords: _PARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The PARALLEL_1284_COMMAND structure specifies information that a client uses to select and deselect an IEEE 1284.3 daisy-chain device or an IEEE 1284 end-of-chain device.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,28 @@ typedef struct _PARALLEL_1284_COMMAND {
 
 Specifies the IEEE 1284.3 device ID.
 
+
 ### -field Port
 
 Reserved (set to zero).
+
 
 ### -field CommandFlags
 
 Specifies a bitwise OR of zero or more of the following flags:
 
 
+
+
 ### -field PAR_END_OF_CHAIN_DEVICE
 
 Specifies an end-of-chain device.
 
+
 ### -field PAR_HAVE_PORT_KEEP_PORT
 
 Specifies that the client has the parallel port allocated, and makes a request to keep the port allocated.
+
 </dd>
 </dl>
 
@@ -82,11 +89,13 @@ The system-supplied function driver for parallel ports supports the simultaneous
 
 For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71-8740-70c6fbe9a885">Selecting and Deselecting an IEEE 1284 Device Attached to a ParallelPort</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,5 +121,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARALLEL_1284_COMMAND structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

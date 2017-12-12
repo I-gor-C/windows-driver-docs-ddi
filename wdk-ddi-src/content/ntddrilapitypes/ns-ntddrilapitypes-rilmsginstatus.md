@@ -7,7 +7,7 @@ old-location: netvista\rilmsginstatus.htm
 old-project: netvista
 ms.assetid: 383ed544-c8c8-42a0-a7de-57f0f4072611
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGINSTATUS, RILMSGINSTATUS, *LPRILMSGINSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -107,6 +108,7 @@ typedef struct _RILMSGINSTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

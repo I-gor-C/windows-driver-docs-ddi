@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 GNSS_DRIVER_REQUEST enumerates  the GNSS driver data request types. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef enum  {
 
 This is used by the GNSS driver to  request SUPL configuration data.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ This is used by the GNSS driver to  request SUPL configuration data.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

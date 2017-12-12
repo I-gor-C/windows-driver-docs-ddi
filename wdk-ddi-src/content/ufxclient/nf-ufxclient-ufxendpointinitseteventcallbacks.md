@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Initialize a <b>UFXENDPOINT_INIT</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ VOID UfxEndpointInitSetEventCallbacks(
 
 Opaque structure passed by UFX in the call to <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_endpoint_add.md">EVT_UFX_DEVICE_ENDPOINT_ADD</a> or <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_default_endpoint_add.md">EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</a>.
 
+
 ### -param Callbacks [in]
 
 Pointer to a <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure.
 
+
 ## -returns
 This method does not return a value.
+
 
 ## -remarks
 The client driver calls <a href="buses.ufxendpointcreate">UfxEndpointCreate</a> from its <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_endpoint_add.md">EVT_UFX_DEVICE_ENDPOINT_ADD</a> or <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_default_endpoint_add.md">EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</a> event callback function in order to create a new endpoint.
@@ -72,19 +76,23 @@ The client driver calls <a href="buses.ufxendpointcreate">UfxEndpointCreate</a> 
 
 For an code example that shows how to create a UFXENDPOINT object and initialize its context, see the Remarks section of <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,9 +103,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

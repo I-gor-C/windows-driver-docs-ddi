@@ -7,7 +7,7 @@ old-location: netvista\dot11_phy_frequency_adopted_parameters.htm
 old-project: netvista
 ms.assetid: c6f98202-b70e-4ef7-853a-b97bb5e6294e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS, DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS, *PDOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,26 +62,33 @@ The type, revision, and size of the DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS struc
      is formatted as an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
+
 ### -field Revision
 
 This member must be set to DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS_REVISION_1.
+
 
 ### -field Size
 
 This member must be set to 
        <b>sizeof</b>(DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS).
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field ulPhyId
 
@@ -89,12 +96,15 @@ The value of an entry in the list of active PHY types defined by the
      <b>msDot11ActivePhyList</b> MIB object that specifies the current channel or frequency that the NIC has
      adopted to communicate over the BSS network.
      
+
 The miniport driver sets 
      <b>msDot11ActivePhyList</b> object to the list of PHYs that have been activated for use over the current
      BSS network connection. For more information about the 
      <b>msDot11ActivePhyList</b> MIB object, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569102">OID_DOT11_ACTIVE_PHY_LIST</a>.
+
 This member should not be set to DOT11_PHY_ID_ANY.
+
 
 ### -field ulChannel
 
@@ -102,10 +112,12 @@ The channel number of the
       <a href="netvista.dsss__hrdsss__and_erp_phy_configuration">DSSS, HRDSSS, and ERP PHY
       configurations</a> that the NIC has adopted to communicate over the BSS network.
 
+
 ### -field ulFrequency
 
 The orthogonal frequency division multiplexing (OFDM) frequency that the NIC has adopted to
       communicate over the BSS network.
+
 
 ## -remarks
 The Native 802.11 miniport driver includes a DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS structure when the
@@ -113,20 +125,24 @@ The Native 802.11 miniport driver includes a DOT11_PHY_FREQUENCY_ADOPTED_PARAMET
     <a href="netvista.ndis_status_dot11_phy_frequency_adopted">
     NDIS_STATUS_DOT11_PHY_FREQUENCY_ADOPTED</a> status indication.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,5 +166,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

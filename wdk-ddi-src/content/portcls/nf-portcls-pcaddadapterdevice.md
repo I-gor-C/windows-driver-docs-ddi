@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PcAddAdapterDevice</b> function adds an adapter device to the WDM device stack.
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,30 @@ NTSTATUS PcAddAdapterDevice(
 
 Pointer to the driver object. This pointer is passed as a parameter to the adapter's <a href="kernel.adddevice">AddDevice</a> handler. The driver object is a system structure of type <a href="kernel.driver_object">DRIVER_OBJECT</a>.
 
+
 ### -param PhysicalDeviceObject [in]
 
 Pointer to the device's <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_"><i>physical device object (PDO)</i></a>. PortCls passes this pointer as a call parameter to the adapter's <i>AddDevice</i> handler. The PDO is a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+
 
 ### -param StartDevice [in]
 
 Pointer to the function that the operating system calls in order to start the device. For more information, see the following <b>Remarks</b> section.
 
+
 ### -param MaxObjects [in]
 
 Specifies the maximum number of subdevices to be registered by calls to <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>. This count sets the upper limit to the total number of miniport objects that the adapter driver can instantiate.
+
 
 ### -param DeviceExtensionSize [in]
 
 Specifies the device extension size. Use zero for default size. See the following <b>Remarks</b> section for user-supplied extension sizes.
 
+
 ## -returns
 <b>PcAddAdapterDevice</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.
+
 
 ## -remarks
 This function does most of the work that the audio adapter driver's <a href="kernel.adddevice">AddDevice</a> handler needs to perform. <b>PcAddAdapterDevice</b> creates the device object, initializes the device context, and attaches the device object to the device stack.
@@ -98,11 +105,13 @@ The adapter driver can then access the device-specific extension data, as shown 
 
 Variable <i>FunctionalDeviceObject</i> is a pointer to the audio adapter's FDO, and <i>pMyExtensionData</i> is a temporary pointer to the extension data. Avoid confusing the FDO with the PDO, which belongs to the PCI bus driver. The adapter driver must not modify data in the PDO because doing so corrupts memory owned by the PCI bus driver and can cause the system to crash.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,14 +122,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Available starting in Windows 2000. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,6 +143,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -141,9 +154,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -164,5 +179,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcAddAdapterDevice function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

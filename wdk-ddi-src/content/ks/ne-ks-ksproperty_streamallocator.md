@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum  {
 
 Specify to retrieve the function table of the allocator.
 
+
 ### -field KSPROPERTY_STREAMALLOCATOR_STATUS
 
 Specify to retrieve the current status of the specified allocator.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specify to retrieve the current status of the specified allocator.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The stream class driver calls the minidriver's <i>StrMiniRequestTimeout</i> routine to signal to the minidriver that a request has timed out.
 
 
+
 ## -prototype
 
 ````
@@ -60,8 +61,10 @@ VOID StrMiniRequestTimeout(
 
 Pointer to the stream request that has timed out.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The minidriver specifies this routine in the <b>HwRequestTimeoutHandler</b> member of its <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure. The minidriver passes this structure to the class driver when it registers itself by calling <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.
@@ -70,11 +73,13 @@ When the class driver first issues a request, it sets a time-out value (in secon
 
 Minidrivers that rely on the class driver to handle synchronization should, once they have successfully handled the request time-out, signal to the class driver that they are ready for another request by using <a href="stream.streamclassstreamnotification">StreamClassStreamNotification</a> or <a href="stream.streamclassdevicenotification">StreamClassDeviceNotification</a> with the appropriate <b>ReadyForNext</b><i>Xxx</i><b>Request</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -85,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Minidrivers can use the <b>StreamClassGetNextEvent</b> routine to search the event queue of a device or of a particular stream.
 
 
+
 ## -syntax
 
 ````
@@ -61,35 +62,43 @@ PKSEVENT_ENTRY StreamClassGetNextEvent(
 
 Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
+
 ### -param HwStreamObject [in, optional]
 
 Pointer to a <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>. Set to <b>NULL</b> to search the event queue of the device itself. To search the event queue of a particular stream, set to the stream's stream object.
+
 
 ### -param EventGuid [in, optional]
 
 Specifies the event set to match when walking the queue, or <b>NULL</b> to match any event set.
 
+
 ### -param EventItem [in]
 
 Specifies the event ID to match when walking the queue, or -1 to match any event.
+
 
 ### -param CurrentEvent [in, optional]
 
 Pointer to an event in the event queue, or <b>NULL</b>.
 
+
 ## -returns
 If <i>CurrentEvent</i> is not <b>NULL</b>, <b>StreamClassGetNextEvent</b> returns the next matching event after <i>CurrentEvent</i> in the queue (or <b>NULL</b> if there is no such next event). If <i>CurrentEvent</i> is <b>NULL</b>, <b>StreamClassGetNextEvent</b> returns the first matching event in the queue.
+
 
 ## -remarks
 The minidriver can call <b>StreamClassGetNextEvent</b> successively to loop through the event queue, examining one event at a time.
 
 The caller may specify additional search criteria to match events on the event queue.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +109,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,6 +120,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

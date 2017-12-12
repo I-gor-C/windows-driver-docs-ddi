@@ -41,6 +41,7 @@ req.irql:
 The CONFIG_ROM structure is used to contain the first 24 bytes of an IEEE 1394 device's configuration ROM.
 
 
+
 ## -syntax
 
 ````
@@ -60,30 +61,37 @@ typedef struct _CONFIG_ROM {
 
 Specifies the first 4 bytes of the configuration ROM. 
 
+
 ### -field CR_Signiture
 
 Specifies a signature that will be the same for all 1394 devices.
+
 
 ### -field CR_BusInfoBlockCaps
 
 Specifies the bus capabilities of the device.
 
+
 ### -field CR_Node_UniqueID
 
 Specifies the node's 64-bit vendor-assigned unique ID.
+
 
 ### -field CR_Root_Info
 
 Specifies the first 4 bytes of the root directory information.
 
+
 ## -remarks
 See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for more details about the layout of the standard configuration ROM.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

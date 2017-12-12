@@ -7,7 +7,7 @@ old-location: kernel\psgetsilocontext.htm
 old-project: kernel
 ms.assetid: 08C795F2-64F9-4EFE-AA25-3B2FCB31D062
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsGetSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine retrieves the silo context from the specified silo and slot.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS PsGetSiloContext(
 
 The silo where the silo context is to exist. This parameter is required and it cannot be <b>NULL</b>.
 
+
 ### -param ContextSlot [in]
 
 The slot where the silo context is to exist. A slot allocated by the <a href="kernel.psallocsilocontextslot">PsAllocSiloContextSlot</a> routine.
 
+
 ### -param ReturnedSiloContext 
 
 Receives a referenced pointer to the silo context. On failure, the value received will be <b>NULL</b>.
+
 
 ## -returns
 The following NT status codes are returned.
@@ -80,31 +84,38 @@ The following NT status codes are returned.
 
  
 
+
 ## -remarks
 The <b>PsGetSiloContext</b> routine retrieves an object that was inserted in the specified silo. A successful call to this routine increments the reference count on the object that the <i>ReturnedSiloContext</i> parameter points to. The object that the <i>ReturnedSiloContext</i> parameter points to, must be decremented by calling <a href="kernel.psdereferencesilocontext">PsDereferenceSiloContext</a> when it is no longer needed.
 A context slot may go empty if the silo is being terminated by either having no more processes or a specific call to <b>NtTerminateJobObject</b>. The return status in this case is <b>STATUS_NOT_FOUND</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

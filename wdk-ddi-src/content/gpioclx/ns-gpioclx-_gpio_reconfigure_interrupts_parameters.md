@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS</b> structure describes the general-purpose I/O (GPIO) interrupt pin to reconfigure.
 
 
+
 ## -syntax
 
 ````
@@ -60,22 +61,27 @@ typedef struct _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS {
 
 The identifier for the bank of GPIO pins that contains the interrupt pin to reconfigure. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
 
+
 ### -field PinNumber
 
 The bank-relative pin number. If N is the number of pins in this bank, <b>PinNumber</b> is an integer in the range 0 to N–1. GpioClx previously obtained the number of pins in each bank from the <i>CLIENT_QueryControllerBasicInformation</i> event callback function. For more information, see the description of the <b>NumberOfPinsPerBank</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
 
+
 ### -field InterruptMode
 
 Indicates whether to configure the GPIO interrupt pin to be level-sensitive or edge-triggered (latched). This member is set to one of the following values:
+
 <ul>
 <li><b>LevelSensitive</b></li>
 <li><b>Latched</b></li>
 </ul>
 For more information, see <a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>.
 
+
 ### -field Polarity
 
 Indicates the polarity of the reconfigured GPIO interrupt pin. For a level-sensitive interrupt, this member indicates whether the interrupt is active-high or active-low. For an edge-triggered interrupt, this member indicates whether the interrupt is triggered on the rising edge, on the falling edge, or on both edges. This member is set to one of the following values:   
+
 <ul>
 <li><b>InterruptActiveHigh</b></li>
 <li><b>InterruptRisingEdge</b></li>
@@ -85,26 +91,32 @@ Indicates the polarity of the reconfigured GPIO interrupt pin. For a level-sensi
 </ul>
 For more information, see <a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a>.
 
+
 ### -field Flags
 
 A set of flags to control the interrupt-reconfiguration operation. No flags are currently defined for this operation.
 
+
 ## -remarks
 The <i>ReconfigureParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a> event callback function is a pointer to a caller-allocated <b>GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS</b> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,5 +145,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure%20 RELEASE:%20(11/3/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxPostToWorkerThread</b> invokes a routine passed as a parameter in the context of a worker thread. Memory for the WORK_QUEUE_ITEM must be allocated by the caller.
 
 
+
 ## -syntax
 
 ````
@@ -61,22 +62,28 @@ NTSTATUS RxPostToWorkerThread(
 
 A pointer to the device object of the corresponding network mini-redirector driver.
 
+
 ### -param WorkQueueType [in]
 
 The type of the work queue that represents the priority of the task. This parameter can be one of the following values:
+
+
 
 
 ### -param CriticalWorkQueue
 
 Insert WORK_QUEUE_ITEM into the queue from which a system thread with a real-time priority attribute will process the work item.
 
+
 ### -param DelayedWorkQueue
 
 Insert WORK_QUEUE_ITEM into the queue from which a system thread with a variable priority attribute will process the work item.
 
+
 ### -param HyperCriticalWorkQueue
 
 Insert WORK_QUEUE_ITEM into the queue from which a system thread will process the work item so that the routine to invoke is not blocked.
+
 </dd>
 </dl>
 
@@ -84,13 +91,16 @@ Insert WORK_QUEUE_ITEM into the queue from which a system thread will process th
 
 A pointer to WORK_QUEUE_ITEM.
 
+
 ### -param Routine [in]
 
 A pointer to the routine to invoke.
 
+
 ### -param pContext [in]
 
 A pointer to a context parameter associated with the work item to complete that is passed to the driver.
+
 
 ## -returns
 <b>RxDispatchToWorkerThread</b> returns STATUS_SUCCESS on success or one of the following error code on failure: 
@@ -99,6 +109,7 @@ A pointer to a context parameter associated with the work item to complete that 
 </dl>The item could not be dispatched.
 
  
+
 
 ## -remarks
 There are two common cases of dispatching operations to worker threads. The trade-off between the following two dispatching operations is time versus space (memory usage):
@@ -113,11 +124,13 @@ The current implementation of the <b>RxPostToWorkerThread </b>routine queues wor
 
 If the <b>RxPostToWorkerThread </b>routine fails on a debug build, the <a href="ifsk._rxlog">_RxLog</a> routine is called with details of the error. If the <b>RxPostToWorkerThread </b>routine fails and WMI is enabled in the kernel, details of the error will be logged with WMI.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +141,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +152,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -158,5 +174,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPostToWorkerThread routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

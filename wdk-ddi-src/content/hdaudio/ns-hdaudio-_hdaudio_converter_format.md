@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL.
 The HDAUDIO_CONVERTER_FORMAT structure specifies the 16-bit encoded stream format for an input or output converter, as defined in the Intel High Definition Audio Specification (see the <a href="http://go.microsoft.com/fwlink/p/?linkid=42508">Intel HD Audio</a> website).
 
 
+
 ## -syntax
 
 ````
@@ -65,27 +66,33 @@ typedef struct _HDAUDIO_CONVERTER_FORMAT {
 
 Specifies the number of channels in the stream's data format. For more information, see the following Remarks section.
 
+
 ### -field NumberOfChannels
 
 Specifies the number of channels in the stream's data format. For more information, see the following Remarks section.
+
 
 ### -field BitsPerSample
 
 Specifies the number of bits per sample. For more information, see the following Remarks section.
 
+
 ### -field SampleRate
 
 Specifies the stream's sample rate. For more information, see the following Remarks section.
 
+
 ### -field StreamType
 
 Specifies the stream type. If <b>StreamType</b>=0, the stream contains PCM data. If <b>StreamType</b>=1, the stream contains non-PCM data.
+
 </dd>
 </dl>
 
 ### -field ConverterFormat
 
 Specifies the stream's data format as an encoded 16-bit value. For more information, see the following Remarks section.
+
 
 ## -remarks
 For information about the encoding of the individual bitfields in the structure definition, see the discussion of the stream descriptor in the Intel High Definition Audio Specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=42508">Intel HD Audio</a> website.
@@ -96,11 +103,13 @@ The <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCapt
 
 Each valid HDAUDIO_CONVERTER_FORMAT encoding has a one-to-one correspondence to an HDAUDIO_STREAM_FORMAT structure that contains a valid set of parameters.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_CONVERTER_FORMAT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: storage\ataportbuschangedetected.htm
 old-project: storage
 ms.assetid: e5a3d4dc-7446-49c1-985a-9d3a9d43dc15
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortBusChangeDetected
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortBusChangeDetected</b> routine notifies the port driver of changes in the device configuration on the indicated channel.
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ VOID AtaPortBusChangeDetected(
 
 A pointer to the channel extension. 
 
+
 ## -returns
 None 
 
+
 ## -remarks
 The miniport driver uses this routine to report the arrival or removal of any device that is attached to the channel. In response, the port driver will initiate a re-scan to discover and initialize the device. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\dot11_rate_set.htm
 old-project: netvista
 ms.assetid: 943ae1dc-cc42-4d6d-b2fb-9af25505e561
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_RATE_SET, *PDOT11_RATE_SET, DOT11_RATE_SET
+ms.date: 12/8/2017
+ms.keywords: _DOT11_RATE_SET, DOT11_RATE_SET, *PDOT11_RATE_SET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -57,9 +57,11 @@ typedef struct _DOT11_RATE_SET {
 The number of entries in the 
      <b>ucRateSet</b> array.
 
+
 ### -field ucRateSet
 
 The set of data rates.
+
 
 ## -remarks
 The values that are specified in the 
@@ -68,20 +70,24 @@ The values that are specified in the
     <a href="netvista.oid_dot11_data_rate_mapping_table">
     OID_DOT11_DATA_RATE_MAPPING_ENTRY</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_RATE_SET structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_RATE_SET structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_device_caps.htm
 old-project: display
 ms.assetid: ce2bdf90-45c1-4a4b-bc6e-276536460324
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines video processing capabilities for a Microsoft Direct3D 11 video processor.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS {
 
 The video processor can blend video content in linear color space. Most video content is gamma corrected, resulting in nonlinear values. This capability flag means that the video processor converts colors to linear space before blending, which produces better results.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC
 
 The video processor supports the xvYCC color space for YCbCr data.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_RGB_RANGE_CONVERSION
 
 The video processor can perform range conversion when the input and output are both RGB but use different color ranges (0–255 or 16–235, for 8-bit RGB).
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION
 
@@ -74,10 +78,13 @@ The video processor can apply a matrix conversion to YCbCr values when the input
 
 
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE
 
 The video processor can convert between luminance ranges when the input and output use different luminance ranges.
+
 Supported starting with Windows 8.1.
+
 
 ## -remarks
 
@@ -87,22 +94,27 @@ Supported starting with Windows 8.1.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

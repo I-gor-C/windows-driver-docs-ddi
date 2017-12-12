@@ -7,7 +7,7 @@ old-location: netvista\wsklisten.htm
 old-project: netvista
 ms.assetid: 854C2DA1-1763-4354-8B9D-9AE0C60D8F31
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
    The <b>WskListen</b> function enables a stream socket to listen for incoming connections at the socket's bound address.
 
 
+
 ## -prototype
 
 ````
@@ -61,12 +62,14 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the stream socket that is listening for an incoming connection. This socket must have previously been bound to a local transport address by calling <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>.
 
+
 ### -param Irp [in, out]
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the listen operation
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskListen</b> returns one of the following NTSTATUS codes:
@@ -90,14 +93,17 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 
  
 
+
 ## -remarks
 A WSK application can call the <b>WskListen</b> function only on a stream socket that the application previously bound to a local transport address by calling the <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a> function. Once <b>WskListen</b> is successfully called on a stream socket, the socket is committed to a listening socket flow and can no longer call connection-oriented socket functions.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1703
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +135,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -152,5 +163,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_LISTEN callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_LISTEN callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

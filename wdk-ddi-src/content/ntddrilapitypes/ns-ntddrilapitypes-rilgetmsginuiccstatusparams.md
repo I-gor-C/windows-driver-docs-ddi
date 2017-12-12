@@ -7,8 +7,8 @@ old-location: netvista\rilgetmsginuiccstatusparams.htm
 old-project: netvista
 ms.assetid: 8f8ccc6e-ceb5-49df-bf1f-7a804850728a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILGETMSGINUICCSTATUSPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

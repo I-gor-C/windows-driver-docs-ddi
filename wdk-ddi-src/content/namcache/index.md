@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Namcache.h header
 
+## -description
 
 This header is used by Installable file system. For more information, see
 - [Installable file system](../_ifsk/index.md)

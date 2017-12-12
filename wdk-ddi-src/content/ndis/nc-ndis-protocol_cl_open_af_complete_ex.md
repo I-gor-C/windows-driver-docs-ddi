@@ -7,7 +7,7 @@ old-location: netvista\protocolclopenafcompleteex.htm
 old-project: netvista
 ms.assetid: 03ddbbfd-8fe8-44b6-8d3e-12a7bf6f8f6b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a> function.
 
 
+
 ## -prototype
 
 ````
@@ -67,6 +68,7 @@ A client-supplied handle to its context area for an address AF. The client alloc
      <a href="netvista.ndisclopenaddressfamilyex">
      NdisClOpenAddressFamilyEx</a> function.
 
+
 ### -param NdisAfHandle [in]
 
 An NDIS-supplied handle to an AF, if 
@@ -77,11 +79,14 @@ An NDIS-supplied handle to an AF, if
      <b>NdisCl<i>Xxx</i></b> and 
      <b>NdisCo<i>Xxx</i></b> functions.
 
+
 ### -param Status [in]
 
 The final status of the client's call to 
      <b>NdisClOpenAddressFamilyEx</b>, which can be any of the following: 
      
+
+
 
 
 ### -param NDIS_STATUS_SUCCESS
@@ -93,27 +98,33 @@ The AF has been opened, so the client can initialize its state at
        <b>NdisCo<i>Xxx</i></b> functions, such as 
        <a href="netvista.ndiscooidrequest">NdisCoOidRequest</a>.
 
+
 ### -param NDIS_STATUS_RESOURCES
 
 The requested operation failed because NDIS or the call manager could not allocate sufficient
        memory or initialize the state that one of them uses to track the client's open of the AF that 
        <i>ProtocolAfContext</i> specifies.
 
+
 ### -param NDIS_STATUS_FAILURE
 
 NDIS failed the call, possibly for one of the following reasons:
        
+
 <ul>
 <li>
 The given AF does not match any AF that was registered for the underlying miniport driver to
          which the caller is bound.
+
 </li>
 <li>
 The caller's adapter binding is closing.
+
 </li>
 <li>
 The call manager that registered the specified AF is closing its binding to the underlying
          miniport adapter.
+
 </li>
 </ul>
 </dd>
@@ -121,6 +132,7 @@ The call manager that registered the specified AF is closing its binding to the 
 
 ## -returns
 None
+
 
 ## -remarks
 The 
@@ -178,19 +190,23 @@ The <b>PROTOCOL_CL_OPEN_AF_COMPLETE_EX</b> function type is defined in the Ndis.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -201,9 +217,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -230,5 +248,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

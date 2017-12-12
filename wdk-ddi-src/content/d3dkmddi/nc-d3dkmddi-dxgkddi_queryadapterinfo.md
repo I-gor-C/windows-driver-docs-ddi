@@ -7,13 +7,13 @@ old-location: display\dxgkddiqueryadapterinfo.htm
 old-project: display
 ms.assetid: f2f4c54c-7413-48e5-a165-d71f35642b6c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
 req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
+req.include-header: 
 req.target-type: Desktop
 req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
 req.target-min-winversvr: 
@@ -41,10 +41,11 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdiQueryAdapterInfo</i> function retrieves configuration information from the graphics adapter.
 
 
+
 ## -prototype
 
 ````
-PDXGKDDI_QUERYADAPTERINFO DxgkDdiQueryAdapterInfo;
+DXGKDDI_QUERYADAPTERINFO DxgkDdiQueryAdapterInfo;
 
 NTSTATUS APIENTRY DxgkDdiQueryAdapterInfo(
   _In_ const HANDLE                   hAdapter,
@@ -60,9 +61,11 @@ NTSTATUS APIENTRY DxgkDdiQueryAdapterInfo(
 
 [in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
+
 ### -param pQueryAdapterInfo [in]
 
 [in] A pointer to a <a href="display.dxgkarg_queryadapterinfo">DXGKARG_QUERYADAPTERINFO</a> structure that the display miniport driver fills with the configuration information for the graphics adapter.
+
 
 ## -returns
 <i>DxgkDdiQueryAdapterInfo</i> returns one of the following values:
@@ -81,6 +84,7 @@ NTSTATUS APIENTRY DxgkDdiQueryAdapterInfo(
 
  
 
+
 ## -remarks
 When the user-mode display driver calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.md">pfnQueryAdapterInfoCb</a> function, a call to the <i>DxgkDdiQueryAdapterInfo</i> function is initiated. <i>DxgkDdiQueryAdapterInfo</i> receives the DXGKQAITYPE_UMDRIVERPRIVATE value in the <b>Type</b> member of the <a href="display.dxgkarg_queryadapterinfo">DXGKARG_QUERYADAPTERINFO</a> structure that the <i>pQueryAdapterInfo</i> parameter points to. This function also receives a proprietary buffer in the <b>pOutputData</b> member that it fills with the configuration information that is necessary for the user-mode display driver to identify the adapter. 
 
@@ -90,11 +94,13 @@ If the DirectX graphics kernel subsystem supplies the DXGKQAITYPE_QUERYSEGMENT v
 
 <i>DxgkDdiQueryAdapterInfo</i> should be made pageable. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,27 +111,32 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
+<dt>D3dkmddi.h</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -143,5 +154,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDXGKDDI_QUERYADAPTERINFO callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_QUERYADAPTERINFO callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

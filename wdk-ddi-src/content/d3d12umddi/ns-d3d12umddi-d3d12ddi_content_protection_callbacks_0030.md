@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-content-protection-callbacks-0030.htm
 old-project: display
 ms.assetid: a3a9b862-872e-4a1e-bb80-1831db983b28
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030, D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Content protection callbacks.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030 {
 
 Create protected session callback.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Create protected session callback.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

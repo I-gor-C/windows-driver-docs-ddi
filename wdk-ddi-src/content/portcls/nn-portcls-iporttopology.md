@@ -39,12 +39,16 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPortTopology</code> interface provides generic port driver support to a topology miniport driver. The PortCls system driver implements this interface and exposes it to the adapter driver that implements the <a href="..\portcls\nn-portcls-iminiporttopology.md">IMiniportTopology</a> object. An adapter driver creates an <code>IPortTopology</code> object by calling <a href="audio.pcnewport">PcNewPort</a> and specifying REFIID <b>IID_IPortTopology</b>. <code>IPortTopology</code> inherits from the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface.
+
 An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportTopology</b> object to an <code>IPortTopology</code> object. The PortCls system driver registers this pair with the system as a <a href="https://msdn.microsoft.com/1b3d35e9-5858-407c-9cd0-06307d82ce58">topology filter</a>.
+
 The <code>IPortTopology</code> interface supports only the methods that it inherits from the <b>IPort</b> interface.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortTopology</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -54,6 +58,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortTopology</b> interface i
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

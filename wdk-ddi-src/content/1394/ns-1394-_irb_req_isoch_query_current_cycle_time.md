@@ -42,6 +42,7 @@ req.irql:
 <b>IsochQueryCurrentCycleTime</b> request.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _IRB_REQ_ISOCH_QUERY_CURRENT_CYCLE_TIME {
 
 On success, specifies the current isochronous cycle time. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537067">CYCLE_TIME</a> entry for details.
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ On success, specifies the current isochronous cycle time. See the <a href="https
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

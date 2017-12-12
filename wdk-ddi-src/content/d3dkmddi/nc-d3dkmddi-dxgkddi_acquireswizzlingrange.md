@@ -7,13 +7,13 @@ old-location: display\dxgkddiacquireswizzlingrange.htm
 old-project: display
 ms.assetid: f861e055-70db-4e0a-9c62-87e2d41f92ae
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
 req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
+req.include-header: 
 req.target-type: Desktop
 req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
 req.target-min-winversvr: 
@@ -41,10 +41,11 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdiAcquireSwizzlingRange</i> function makes an allocation accessible through the central processing unit (CPU) aperture for the given segment.
 
 
+
 ## -prototype
 
 ````
-PDXGKDDI_ACQUIRESWIZZLINGRANGE DxgkDdiAcquireSwizzlingRange;
+DXGKDDI_ACQUIRESWIZZLINGRANGE DxgkDdiAcquireSwizzlingRange;
 
 NTSTATUS APIENTRY DxgkDdiAcquireSwizzlingRange(
   _In_    const HANDLE                        hAdapter,
@@ -60,9 +61,11 @@ NTSTATUS APIENTRY DxgkDdiAcquireSwizzlingRange(
 
 [in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
+
 ### -param pAcquireSwizzlingRange [in, out]
 
 [in/out] A pointer to a <a href="display.dxgkarg_acquireswizzlingrange">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure that contains information for making an allocation accessible through the CPU aperture.
+
 
 ## -returns
 <i>DxgkDdiAcquireSwizzlingRange</i> returns one of the following values:
@@ -77,6 +80,7 @@ NTSTATUS APIENTRY DxgkDdiAcquireSwizzlingRange(
 </dl><i>DxgkDdiAcquireSwizzlingRange</i> could not program the swizzling range for the allocation because another swizzling range is currently using the graphics processing unit (GPU) resources that are required. The video memory manager attempts to release a range that is currently in use and then attempts to set up the swizzling range again.
 
  
+
 
 ## -remarks
 The <i>DxgkDdiAcquireSwizzlingRange</i> function is called after the user-mode display driver requests a virtual address that references the bits of an allocation (that is, after the user-mode display driver calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function with the <b>AcquireAperture</b> bit-field flag set in the <b>Flags</b> member of the <a href="display.d3dddicb_lock">D3DDDICB_LOCK</a> structure and while the allocation is currently located in a CPU-accessible memory segment). If the <b>AcquireAperture</b> bit-field flag is not set in the call to <b>pfnLockCb</b>, <i>DxgkDdiAcquireSwizzlingRange</i> is not called, and the allocation must be in a format that the user-mode display driver or an application can process. 
@@ -99,11 +103,13 @@ A call to <i>DxgkDdiAcquireSwizzlingRange</i> to acquire a swizzling range might
 
 <i>DxgkDdiAcquireSwizzlingRange</i> should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,27 +120,32 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
+<dt>D3dkmddi.h</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -167,5 +178,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDXGKDDI_ACQUIRESWIZZLINGRANGE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_ACQUIRESWIZZLINGRANGE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

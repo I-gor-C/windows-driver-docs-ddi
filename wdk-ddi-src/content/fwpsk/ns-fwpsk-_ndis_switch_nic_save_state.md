@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_save_state.htm
 old-project: netvista
 ms.assetid: FBC2EE79-9D36-4CA9-A7BC-9C422DE51B13
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql: <= DISPATCH_LEVEL
 
 The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure specifies the run-time state information for a Hyper-V extensible switch port.  The extensible switch extension uses this structure to save or restore run-time port information.
 
+
+
 The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure specifies the run-time state information for a Hyper-V extensible switch port.  The extensible switch extension uses this structure to save or restore run-time port information.
+
 
 
 ## -syntax
@@ -66,13 +69,18 @@ typedef struct _NDIS_SWITCH_NIC_SAVE_STATE {
 ### -field Header
 
 The type, revision, and size of the <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
+
+
 
 
 ### -field NDIS_SWITCH_NIC_SAVE_STATE_REVISION_1
 
 Original version for NDIS 6.30 and later.
+
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_NIC_SAVE_STATE_REVISION_1.
+
 </dd>
 </dl>
 
@@ -82,37 +90,45 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 
 
 
+
 ### -field NicIndex
 
 An NDIS_SWITCH_NIC_INDEX  value that contains the Nic Index for the network adapter. This value will always be 0. For more information, see <a href="netvista.network_adapter_index_values">Network Adapter Index Values</a>.
+
 
 ### -field PortId
 
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port.
 
+
 ### -field ExtensionId
 
 A GUID value that identifies the extensible switch extension.
+
 
 ### -field ExtensionFriendlyName
 
  An NDIS_SWITCH_EXTENSION_FRIENDLYNAME value that specifies the user-friendly description of the extensible switch extension.
 
+
 ### -field FeatureClassId
 
 A GUID value that contains the identifier of the feature class related to the saved data. A feature class identifier is defined by the extension to uniquely identify components of its run-time data.
+
 <div class="alert"><b>Note</b>  This member is optional. The extensible switch extension must set this member to 0 if the saved data has no feature class.</div>
 <div> </div>
 
 ### -field SaveDataSize
 
 A USHORT value that specified the size, in bytes, of the data that is contained in the <b>SaveData</b> member.
+
 <div class="alert"><b>Note</b>  This value must be less than or equal to NDIS_SWITCH_NIC_SAVE_STATE_MAX_DATA_SIZE.</div>
 <div> </div>
 
 ### -field SaveDataOffset
 
 A USHORT value that contains the offset from the start of the structure to the run-time state information being saved or restored.
+
 
 ## -remarks
 The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure is used in the following OID requests: 
@@ -135,19 +151,23 @@ The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure is used in the following OID req
 
 For more information on how to save or restore run-time port information, see <a href="netvista.managing_hyper_v_extensible_switch_run-time_data">Managing Hyper-V Extensible Switch Run-Time Data</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -177,5 +197,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_SAVE_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_SAVE_STATE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

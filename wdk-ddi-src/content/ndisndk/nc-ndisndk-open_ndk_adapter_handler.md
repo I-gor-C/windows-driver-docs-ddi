@@ -7,7 +7,7 @@ old-location: netvista\open_ndk_adapter_handler.htm
 old-project: netvista
 ms.assetid: 85888B9A-669C-478F-9318-EE9821BC3AF3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <i>OpenNDKAdapterHandler</i> (<i>OPEN_NDK_ADAPTER_HANDLER</i>) function opens an NDK adapter instance on an NDK-capable NDIS miniport adapter.
 
 
+
 ## -prototype
 
 ````
@@ -63,21 +64,29 @@ A handle to a context area that the miniport driver allocated in its <a href="..
 
 
 
+
 ### -param Parameters [in]
 
 A pointer to an <a href="netvista.ndis_open_ndk_adapter_parameters">NDIS_OPEN_NDK_ADAPTER_PARAMETERS</a> structure that defines the input parameters to open an <a href="netvista.ndk_adapter">NDK_ADAPTER</a> instance.
+
 The  <a href="netvista.ndis_open_ndk_adapter_parameters">NDIS_OPEN_NDK_ADAPTER_PARAMETERS</a> structure must specify the  NDKPI major version, and the lowest NDKPI minor version that the NDK consumer can support. 
 
+
 If the provider does not support the consumer-specified major version, the provider must fail the request with  NDIS_STATUS_BAD_VERSION. 
+
 If the provider supports the consumer-specified major version and the specified minor version is less than or equal to the highest minor version that the provider supports, the provider must succeed the request and use the highest minor version that     the provider supports.
+
  For example, if the consumer requests version 1.0, and the provider supports 1.1, the provider must report version  1.1  in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure and  NDK object headers. 
+
 <div class="alert"><b>Note</b>  Higher minor versions at the provider are always fully backward-compatible with (that is, a superset of) lower minor versions. </div>
 <div> </div>
 If the provider supports the consumer-specified major version and the specified minor version is greater than the highest minor version that the provider supports, the provider must fail the request with NDIS_STATUS_BAD_VERSION.
 
+
 ### -param ppNdkAdapter 
 
 A pointer to a variable that holds the pointer to an <a href="netvista.ndk_adapter">NDK_ADAPTER</a> structure. On return from  <i>OPEN_NDK_ADAPTER_HANDLER</i>, the <b>NDK_ADAPTER</b> structure referenced by  <i>ppNdkAdapter</i> identifies the newly opened NDK adapter instance. 
+
 
 ## -returns
 <i>OPEN_NDK_ADAPTER_HANDLER</i> can return one of the following values:
@@ -96,40 +105,49 @@ A pointer to a variable that holds the pointer to an <a href="netvista.ndk_adapt
 
  
 
+
 ## -remarks
 <i>OPEN_NDK_ADAPTER_HANDLER</i> opens an <a href="netvista.ndk_adapter">NDK_ADAPTER</a> instance on an NDK-capable NDIS miniport adapter.
 Multiple <b>NDK_ADAPTER</b> instances can be created on the same NDIS miniport adapter. Each <b>NDK_ADAPTER</b> instance contains a pointer to a table of dispatch  functions that implement the NDK application programming interface.
 The miniport driver calls the <a href="..\ndisndk\nc-ndisndk-close_ndk_adapter_handler.md">CLOSE_NDK_ADAPTER_HANDLER</a> function to close the  NDK adapter instance and release the associated resources.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,9 +158,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -169,5 +189,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OPEN_NDK_ADAPTER_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OPEN_NDK_ADAPTER_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

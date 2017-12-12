@@ -7,8 +7,8 @@ old-location: netvista\ndis_status_indication.htm
 old-project: netvista
 ms.assetid: bfab907d-a90d-46a0-bd51-6f2b418e3f39
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION, *PNDIS_STATUS_INDICATION
+ms.date: 12/8/2017
+ms.keywords: _NDIS_STATUS_INDICATION, *PNDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_STATUS_INDICATION structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 NDIS and underlying drivers use the NDIS_STATUS_INDICATION structure to provide status indications to
   overlying protocol drivers.
+
 
 
 ## -syntax
@@ -73,6 +74,7 @@ The
      <b>Revision</b> member to NDIS_STATUS_INDICATION_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_STATUS_INDICATION_REVISION_1.
 
+
 ### -field SourceHandle
 
 The source of the status indication. If the source is a miniport adapter, it should be the handle
@@ -83,10 +85,12 @@ The source of the status indication. If the source is a miniport adapter, it sho
      <i>NdisFilterHandle</i> parameter of the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
+
 ### -field PortNumber
 
 The source port of the status indication. If the status indication is not specific to a port, set 
      <b>PortNumber</b> to zero.
+
 
 ### -field StatusCode
 
@@ -94,10 +98,12 @@ The status code, either provided by NDIS or propagated from the underlying drive
      an NDIS_STATUS_<i>XXX</i> code. For more information about NDIS_STATUS_<i>XXX</i> codes, see 
      <a href="netvista.status_indications">Status Indications</a>.
 
+
 ### -field Flags
 
 The type of information in the status buffer at 
      <b>StatusBuffer</b> . Miniport drivers set this member to zero. This member is reserved for NDIS.
+
 
 ### -field DestinationHandle
 
@@ -106,6 +112,7 @@ A handle that identifies the overlying driver that should receive the status ind
      NDIS indicates the status only to the driver that 
      <b>DestinationHandle</b> identifies. In this case the driver must also set the 
      <b>RequestId</b> member. For more information about OID requests, see the Remarks section.
+
 
 ### -field RequestId
 
@@ -117,13 +124,16 @@ The OID request that is associated with the status indication. If there is no OI
      must also set the 
      <b>DestinationHandle</b> member.
      
+
 For more information about OID requests, see the following Remarks section.
+
 
 ### -field StatusBuffer
 
 A pointer to a buffer that contains medium-specific data that depends on the value at 
      <b>StatusCode</b> . 
      
+
 For example, if 
      <b>StatusCode</b> is 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff567391">NDIS_STATUS_LINK_STATE</a>, this
@@ -131,13 +141,16 @@ For example, if
      <a href="netvista.ndis_link_state">NDIS_LINK_STATE</a> structure and 
      <b>StatusBufferSize</b> is 
      sizeof(NDIS_LINK_STATE).
+
 For some NDIS_STATUS_<i>XXX</i> values, this pointer is <b>NULL</b> and 
      <b>StatusBufferSize</b> is set to zero.
+
 
 ### -field StatusBufferSize
 
 The length, in bytes, of the status information buffer at 
      <b>StatusBuffer</b> .
+
 
 ### -field Guid
 
@@ -145,9 +158,11 @@ A private GUID that NDIS uses to generate a WMI notification. For more informati
      GUIDs, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569641">OID_GEN_SUPPORTED_GUIDS</a>.
 
+
 ### -field NdisReserved
 
 Reserved for NDIS.
+
 
 ## -remarks
 Miniport drivers indicate status by calling the 
@@ -182,19 +197,23 @@ Protocol drivers receive status indications at the
     drivers receive status indications at the 
     <a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -247,5 +266,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_STATUS_INDICATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_STATUS_INDICATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

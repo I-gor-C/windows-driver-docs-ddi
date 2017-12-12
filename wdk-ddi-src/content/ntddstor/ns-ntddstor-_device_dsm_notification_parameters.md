@@ -7,7 +7,7 @@ old-location: storage\device_dsm_notification_parameters.htm
 old-project: storage
 ms.assetid: 57885E58-C7EC-493E-9AB8-B9DABC6CEA2A
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DEVICE_DSM_NOTIFICATION_PARAMETERS, *PDEVICE_DSM_NOTIFICATION_PARAMETERS, DEVICE_DSM_NOTIFICATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>DEVICE_DSM_NOTIFICATION_PARAMETERS</b> structure specifies the parameters for a notification action related to the data-set attributes for a device. 
+
 The notification  action is specified in the <a href="storage.device_manage_data_set_attributes">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> structure that is contained in the system buffer of an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> request.
+
 
 
 ## -syntax
@@ -60,20 +62,25 @@ typedef struct _DEVICE_DSM_NOTIFICATION_PARAMETERS {
 
 Specifies the total size, in bytes, of this structure. The value of this member must include the total size, in bytes, of the <b>FileTypeIDs</b> member.
 
+
 ### -field Flags
 
 A flag that specifies the characteristics of the notification operation. The  <b>Flags</b> member must be set to one of the following values:
 
 
+
+
 ### -field DEVICE_DSM_NOTIFY_FLAG_BEGIN
 
 The Logical Block Address (LBA) range is currently being used by the file types that are specified in the <b>FileTypeIDs</b> member. 
+
 <div class="alert"><b>Note</b>  The LBA range is specified by the data set range of the <a href="storage.device_manage_data_set_attributes">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> structure.</div>
 <div> </div>
 
 ### -field DEVICE_DSM_NOTIFY_FLAG_END
 
 The LBA range is no longer being used by the file types that are specified in the <b>FileTypeIDs</b> member. 
+
 </dd>
 </dl>
 
@@ -81,9 +88,11 @@ The LBA range is no longer being used by the file types that are specified in th
 
 The number of entries in the <b>FileTypeIDs</b> member.
 
+
 ### -field FileTypeIDs
 
 One or more <a href="wdkgloss.g#wdkgloss.guid#wdkgloss.guid"><i>GUID</i></a> values that specify the file type for the notification operation. The following table describes the <b>FileTypeIDs</b> GUID values.
+
 <table>
 <tr>
 <th>GUID value</th>
@@ -104,6 +113,7 @@ One or more <a href="wdkgloss.g#wdkgloss.guid#wdkgloss.guid"><i>GUID</i></a> val
 </table>
  
 
+
 ## -remarks
 Starting with Windows 7, the NTFS file system notifies the storage stack when the LBA data set range changes for  a specified set of files. The file system issues this notification by sending the storage stack an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> request with a system buffer that contains a <a href="storage.device_manage_data_set_attributes">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> structure. For the notification operation, the file system sets the members of the <b>DEVICE_MANAGE_DATA_SET_ATTRIBUTES</b> structure as follows:
 
@@ -115,27 +125,33 @@ If the <b>Flags</b> member is set to zero, the <b>DataSetRangesOffset</b> and <b
 
 If the <b>Flags</b> member is set to <b>DEVICE_DSM_FLAG_ENTIRE_DATA_SET_RANGE</b>, the <b>DataSetRangesOffset</b> and <b>DataSetRangesLength</b> members are set to zero and the notification action includes the entire data set range for the specified files.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 7
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2008 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,5 +171,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_DSM_NOTIFICATION_PARAMETERS structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_DSM_NOTIFICATION_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -40,7 +40,9 @@ req.irql:
 ## -description
 The <b>IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST</b> 
    control code is the IOCTL of the idle notification request IRP that HIDClass sends to HID mini drivers, such as HIDUSB, to inform the bus driver that the device is now idle.
+
 For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
+
 
 
 ## -ioctlparameters
@@ -48,15 +50,19 @@ For general information about HIDClass devices, see <a href="https://msdn.micros
 ### -input-buffer
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a <a href="kernel.ntstatus_value">NTSTATUS</a> code.
 
+
 ### -input-buffer-length
  The size of a status code.
+
 
 ### -output-buffer
 
        None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -70,6 +76,7 @@ None.
 I/O Status block
 The bus or port driver sets Irp-&gt;IoStatus.Status to STATUS_SUCCESS or the appropriate error status.
 
+
 ## -remarks
 
 
@@ -78,6 +85,7 @@ The bus or port driver sets Irp-&gt;IoStatus.Status to STATUS_SUCCESS or the app
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

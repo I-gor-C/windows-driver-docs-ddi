@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfotype.htm
 old-project: netvista
 ms.assetid: 0da424f5-2970-497c-8965-af627fd582ff
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDISPLAYINFOTYPE, RILDISPLAYINFOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef enum _RILDISPLAYINFOTYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

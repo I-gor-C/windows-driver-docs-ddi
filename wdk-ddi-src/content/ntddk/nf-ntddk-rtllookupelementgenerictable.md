@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL (see Remarks section)
 The <b>RtlLookupElementGenericTable</b> routine searches a generic table for an element that matches the specified data. 
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ PVOID RtlLookupElementGenericTable(
 
 Pointer to the generic table (<a href="ifsk.rtl_generic_table">RTL_GENERIC_TABLE</a>). The table must have been initialized by calling <b>RtlInitializeGenericTable</b>.
 
+
 ### -param Buffer [in]
 
 A buffer of search data to pass to the <i>CompareRoutine</i> that was registered when <a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTable</a> initialized the generic table. For more information, see the description of <b>RtlInitializeGenericTable</b>.
 
+
 ## -returns
 <b>RtlLookupElementGenericTable</b> returns a pointer to the caller-supplied data for the desired element in the generic table. It returns <b>NULL</b> if the generic table currently has no elements or if no matching element is found. 
+
 
 ## -remarks
 If a matching element is found, <b>RtlLookupElementGenericTable</b> rebalances the generic table's splay tree.
@@ -81,11 +85,13 @@ The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable.
 
 The caller-supplied <i>CompareRoutine</i> contains pageable code. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +102,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +113,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +124,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +135,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -146,5 +157,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlLookupElementGenericTable routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

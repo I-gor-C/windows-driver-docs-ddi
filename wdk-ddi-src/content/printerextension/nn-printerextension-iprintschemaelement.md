@@ -7,7 +7,7 @@ old-location: print\iprintschemaelement_interface.htm
 old-project: print
 ms.assetid: E6F6F00B-E116-4AEA-AF9A-55209DA20DC6
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Provides access to the underlying XML node and "name" attribute information  for a Print Schema element.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaElement</b> interface inherits from the <a href="ebbff4bc-36b2-4861-9efa-ffa45e013eb5" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IDispatch</b></a> interface. <b>IPrintSchemaElement</b> also has these types of members:
 
@@ -73,6 +74,7 @@ Gets the IXMLDOMNode object associated with this item.
 
  
 
+
 ## -remarks
 
 
@@ -81,22 +83,27 @@ Gets the IXMLDOMNode object associated with this item.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

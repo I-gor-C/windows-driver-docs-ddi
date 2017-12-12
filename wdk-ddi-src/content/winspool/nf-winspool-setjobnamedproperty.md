@@ -7,7 +7,7 @@ old-location: print\setjobnamedproperty.htm
 old-project: print
 ms.assetid: 6A03B009-21D4-4CD2-9BB5-36F402118270
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: SetJobNamedProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ DWORD WINAPI SetJobNamedProperty(
 
 TD
 
+
 ### -param pProperty [in]
 
 
@@ -73,6 +75,7 @@ TD
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

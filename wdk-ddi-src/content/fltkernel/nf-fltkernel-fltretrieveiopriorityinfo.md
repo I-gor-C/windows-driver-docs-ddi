@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>FltRetrieveIoPriorityInfo</b> routine is used by a minifilter driver to retrieve priority information from a thread.
 
 
+
 ## -syntax
 
 ````
@@ -61,20 +62,25 @@ NTSTATUS FltRetrieveIoPriorityInfo(
       An optional pointer to a <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure, which represents an I/O operation.  This parameter can be <b>NULL</b>.
      
 
+
 ### -param FileObject [in, optional]
 
 An optional pointer to the file object associated with the I/O operation.  This parameter can be <b>NULL</b>.
+
 
 ### -param Thread [in, optional]
 
 An optional pointer to the thread in which to retrieve priority information from.  This parameter can be <b>NULL</b>.
 
+
 ### -param PriorityInfo [in, out]
 
 A pointer to an <a href="ifsk.io_priority_info">IO_PRIORITY_INFO</a> structure used to receive the priority information from the given thread.  The IO_PRIORITY_INFO structure must be initialized by an appropriate routine before it can be used by this routine. See the following Remarks section for more information.
 
+
 ## -returns
 The <b>FltRetrieveIoPriorityInfo</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value.
+
 
 ## -remarks
 The <b>FltRetrieveIoPriorityInfo</b> routine retrieves priority information and saves the information in the structure pointed to by the <i>PriorityInfo</i> parameter.
@@ -91,11 +97,13 @@ The following pseudo-code example describes what I/O priority value is retrieved
 <div> </div>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +146,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -144,9 +157,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -194,5 +209,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRetrieveIoPriorityInfo routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

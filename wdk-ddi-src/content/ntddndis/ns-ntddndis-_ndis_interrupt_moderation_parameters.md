@@ -7,8 +7,8 @@ old-location: netvista\ndis_interrupt_moderation_parameters.htm
 old-project: netvista
 ms.assetid: e2270dbc-0bc3-4bef-9e11-26006d8f0d71
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_INTERRUPT_MODERATION_PARAMETERS, *PNDIS_INTERRUPT_MODERATION_PARAMETERS, NDIS_INTERRUPT_MODERATION_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_INTERRUPT_MODERATION_PARAMETERS, NDIS_INTERRUPT_MODERATION_PARAMETERS, *PNDIS_INTERRUPT_MODERATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -44,6 +44,7 @@ The NDIS_INTERRUPT_MODERATION_PARAMETERS structure defines interrupt parameters 
   
 
 
+
 ## -syntax
 
 ````
@@ -67,10 +68,13 @@ The
      <b>Revision</b> member to NDIS_INTERRUPT_MODERATION_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_INTERRUPT_MODERATION_PARAMETERS_REVISION_1.
 
+
 ### -field Flags
 
 A bitwise OR of the following flags:
      
+
+
 
 
 ### -field NDIS_INTERRUPT_MODERATION_CHANGE_NEEDS_RESET
@@ -78,10 +82,12 @@ A bitwise OR of the following flags:
 A network interface card (NIC) must have a hardware reset to enable or disable interrupt
        moderation.
 
+
 ### -field NDIS_INTERRUPT_MODERATION_CHANGE_NEEDS_REINITIALIZE
 
 A miniport driver must complete a halt and reinitialize cycle to enable or disable interrupt
        moderation. If this flag is enabled, there is also a hardware reset.
+
 </dd>
 </dl>
 
@@ -90,7 +96,10 @@ A miniport driver must complete a halt and reinitialize cycle to enable or disab
 An NDIS_INTERRUPT_MODERATION-typed value that indicates or specifies the current interrupt
      moderation status.
      
+
 The following values are supported:
+
+
 
 
 ### -field NdisInterruptModerationUnknown
@@ -98,10 +107,12 @@ The following values are supported:
 In an OID query, this value indicates that the miniport driver cannot determine whether
        interrupt moderation is enabled or disabled on a NIC. This value is invalid for a set request.
 
+
 ### -field NdisInterruptModerationNotSupported
 
 In an OID query, this value indicates that the NIC or its miniport driver does not support
        interrupt moderation. This value is invalid for a set request.
+
 
 ### -field NdisInterruptModerationEnabled
 
@@ -110,12 +121,14 @@ In an OID query, this value indicates that interrupt moderation is enabled on th
        <b>NdisInterruptModerationEnabled</b> indicates that interrupt moderation should be enabled on the
        NIC.
 
+
 ### -field NdisInterruptModerationDisabled
 
 In an OID query, this value indicates that interrupt moderation is disabled on the NIC. In an
        OID set, 
        <b>NdisInterruptModerationDisabled</b> indicates that interrupt moderation should be disabled on the
        NIC.
+
 </dd>
 </dl>
 
@@ -127,11 +140,13 @@ The NDIS_INTERRUPT_MODERATION_PARAMETERS structure defines interrupt parameters 
     <b>NdisInterruptModerationDisabled</b> values for the 
     <b>InterruptModeration</b> member apply to set operations.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,5 +166,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_INTERRUPT_MODERATION_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_INTERRUPT_MODERATION_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

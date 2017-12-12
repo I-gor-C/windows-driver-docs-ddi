@@ -42,19 +42,24 @@ The <b>IOCTL_BTHHFP_DEVICE_GET_CONTAINERID</b>
    IOCTL Gets the PnP Container ID of the Bluetooth device.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None.
 
+
 ### -input-buffer-length
 None.
+
 
 ### -output-buffer
 A GUID that is the Container ID.
 
+
 ### -output-buffer-length
 The size of a GUID.
+
 
 ### -in-out-buffer
 
@@ -68,32 +73,39 @@ The size of a GUID.
 I/O Status block
 N/A
 
+
 ## -remarks
 This request completes immediately.
 
 The audio driver stores this container ID in appropriate context data and returns it in the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265129">KSPROPERTY_JACK_CONTAINERID</a> KS property.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +128,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IOCTL_BTHHFP_DEVICE_GET_CONTAINERID control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

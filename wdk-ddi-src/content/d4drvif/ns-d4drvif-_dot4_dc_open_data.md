@@ -7,8 +7,8 @@ old-location: print\dot4_dc_open_data.htm
 old-project: print
 ms.assetid: 72AE7A78-C02D-4C14-B017-9CEECF34FEDF
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _DOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA
+ms.date: 12/9/2017
+ms.keywords: _DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic describes the <b>DOT4_DC_OPEN_DATA</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _DOT4_DC_OPEN_DATA {
 
 Specifies the host socket created by CREATE_SOCKET.
 
+
 ### -field unsigned char
 
 Specify TRUE to immediately add activity broadcast upon creation.
 
+
 ### -field hChannelHandle
 
 Specifies the handle to the channel returned.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Specifies the handle to the channel returned.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

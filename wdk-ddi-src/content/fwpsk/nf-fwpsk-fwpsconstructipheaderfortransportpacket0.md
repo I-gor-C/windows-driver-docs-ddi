@@ -7,7 +7,7 @@ old-location: netvista\fwpsconstructipheaderfortransportpacket0.htm
 old-project: netvista
 ms.assetid: badb7e91-1d5f-42c3-973b-c7d756d24a01
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsConstructIpHeaderForTransportPacket0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   or to rebuild a preexisting IP packet header for only one net buffer.
 
 
+
 ## -syntax
 
 ````
@@ -75,6 +76,7 @@ A pointer to a
      the transport header. To rebuild a preexisting IP packet header, locate the offset at the beginning of
      the IP header.
 
+
 ### -param headerIncludeHeaderSize [in]
 
 If the NET_BUFFER_LIST structure pointed to by 
@@ -89,19 +91,24 @@ If the NET_BUFFER_LIST structure pointed to by
      extension headers for an existing IPv6 header will be removed when this function is called, although
      IPv4 options will be preserved. For more information, see Remarks.
 
+
 ### -param addressFamily [in]
 
 One of the following address families:
      
 
 
+
+
 ### -param AF_INET
 
 The IPv4 address family.
 
+
 ### -param AF_INET6
 
 The IPv6 address family.
+
 </dd>
 </dl>
 
@@ -111,14 +118,17 @@ A pointer to the source IP address that will be part of the IP header to be cons
      the address is 4 bytes. For IPv6, the address is 16 bytes. The source address bytes are always in
      network byte order.
 
+
 ### -param remoteAddress [in]
 
 A pointer to a buffer that specifies the remote IP address that will be part of the IP header to
      be constructed.
      
+
 The buffer can contain an IPv4 address (4 bytes) or an IPv6 address (16 bytes), and the address must
      be specified in network byte order. The IP version must match the 
      <i>addressFamily</i> parameter.
+
 
 ### -param nextProtocol [in]
 
@@ -126,6 +136,7 @@ Specifies the IPPROTO protocol type of the new IP header to be constructed. For 
      on the IPPROTO enumeration, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a> or 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>.
+
 
 ### -param endpointHandle [in, optional]
 
@@ -136,6 +147,7 @@ An optional handle that indicates the stack transport endpoint in the send data 
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
+
 ### -param controlData [in, optional]
 
 An optional pointer to a buffer that contains socket control data specified by the 
@@ -143,33 +155,40 @@ An optional pointer to a buffer that contains socket control data specified by t
      information about the WSACMSGHDR type, see 
      <a href="netvista.cmsghdr">CMSGHDR</a>.
      
+
 If present, socket control data is provided to a callout with the 
      <b>controlData</b> member of the 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
+
 If socket control data is not <b>NULL</b>, it must be deep-copied in the callout driver's implementation of
      the 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function, and the 
      <b>controlData</b> buffer must be kept valid until the injection completion function is
      called.
 
+
 ### -param controlDataLength [in]
 
 The length, in bytes, of the 
      <i>controlData</i> parameter.
 
+
 ### -param flags [in]
 
 Reserved. Callout drivers must set this parameter to zero.
+
 
 ### -param reserved 
 
 Reserved. Callout drivers must set this parameter to <b>NULL</b>.
 
+
 ### -param interfaceIndex [in, optional]
 
 The index of the interface on which the original packet data was received. A callout driver should use the value of the interface index that is passed as one of the incoming data values to its <a href="netvista.classifyfn">classifyFn</a> callout function for this parameter. This parameter is optional and can be zero.
+
 
 ### -param subInterfaceIndex [in, optional]
 
@@ -178,6 +197,7 @@ The index of the subinterface on which the original packet data was received. A 
      <a href="netvista.classifyfn">classifyFn</a> callout function for this
      parameter if the packet is to be injected into the same subinterface where the original packet was
      indicated. This parameter is optional and can be zero.
+
 
 ## -returns
 The 
@@ -191,6 +211,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 From a net buffer list cloned at a WFP outbound transport layer (FWPS_LAYER_OUTBOUND_TRANSPORT_Xxx), 
@@ -255,11 +276,13 @@ Call
     support for the resulting net buffer list. Full checksums are calculated for upper-level protocols (TCP,
     UDP, and ICMP). The IP checksum is recalculated when the IP header is reconstructed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -270,14 +293,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Server 2008.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -288,6 +314,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -298,9 +325,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -332,5 +361,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsConstructIpHeaderForTransportPacket0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsConstructIpHeaderForTransportPacket0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

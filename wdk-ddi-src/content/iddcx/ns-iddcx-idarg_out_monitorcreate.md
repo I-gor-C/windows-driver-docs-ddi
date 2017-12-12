@@ -7,7 +7,7 @@ old-location: display\idarg_out_monitorcreate.htm
 old-project: display
 ms.assetid: 713cd675-56a8-42d8-ac75-4af227c55dec
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_MONITORCREATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Gives information about the newly created monitor object.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct IDARG_OUT_MONITORCREATE {
                      [out] Handle the driver can use to identify this monitor when calling OS functions.
                  
 
+
 ## -remarks
 
 
@@ -66,6 +68,7 @@ typedef struct IDARG_OUT_MONITORCREATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

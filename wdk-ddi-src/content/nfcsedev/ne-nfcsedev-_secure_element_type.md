@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 118B63D1-713A-4F8C-B97A-53BB6D0B819E
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
+ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 Indicates the type of a secure element.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _SECURE_ELEMENT_TYPE {
 
 Integrated secure element.
 
+
 ### -field External
 
 Separate UICC-based secure element.
 
+
 ### -field DeviceHost
 
 Separate HCE-based secure element.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Separate HCE-based secure element.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

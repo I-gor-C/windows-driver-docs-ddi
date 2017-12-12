@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_begin_end_query_0003.htm
 old-project: display
 ms.assetid: 9EBF7E0C-BF6D-4E99-B289-8C6581A2DEA5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <i>pfnBeginQuery</i> callback function defines the beginning of the portion of a command list to which a query applies.
 
 
+
 ## -prototype
 
 ````
@@ -62,20 +63,25 @@ VOID  APIENTRY* pfnBeginQuery(
 
 The handle of a command list for which to query. 
 
+
 ### -param hQueryHeap 
 
 The handle of a query heap, which represents an array of query results.
+
 
 ### -param QueryType 
 
 The type of query.
 
+
 ### -param StartElement 
 
 The value of the start element.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -85,6 +91,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

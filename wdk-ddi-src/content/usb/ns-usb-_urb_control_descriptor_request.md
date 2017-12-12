@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>_URB_CONTROL_DESCRIPTOR_REQUEST</b> structure is used by USB client drivers to get or set descriptors on a USB device.
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ struct _URB_CONTROL_DESCRIPTOR_REQUEST {
 ### -field Hdr
 
 Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be one of the following:
+
 <dl>
 <dd>URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE</dd>
 <dd>URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT</dd>
@@ -78,45 +80,56 @@ Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure th
 </dl>
 <b>Hdr.Length</b> must equal <code>sizeof(_URB_CONTROL_DESCRIPTOR_REQUEST)</code>.
 
+
 ### -field Reserved
 
 Reserved. Do not use.
+
 
 ### -field Reserved0
 
 Reserved. Do not use.
 
+
 ### -field TransferBufferLength
 
 Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.
+
 
 ### -field TransferBuffer
 
 Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>.
 
+
 ### -field TransferBufferMDL
 
 Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. This MDL must be allocated from nonpaged pool.
+
 
 ### -field UrbLink
 
 Reserved. Do not use.
 
+
 ### -field hca
 
 Reserved. Do not use.
+
 
 ### -field Reserved1
 
 Reserved. Do not use.
 
+
 ### -field Index
 
 Specifies the device-defined index of the descriptor that is being retrieved or set.
 
+
 ### -field DescriptorType
 
 Indicates what type of descriptor is being retrieved or set. One of the following values must be specified:
+
 <dl>
 <dd>USB_DEVICE_DESCRIPTOR_TYPE</dd>
 <dd>USB_CONFIGURATION_DESCRIPTOR_TYPE</dd>
@@ -127,9 +140,11 @@ Indicates what type of descriptor is being retrieved or set. One of the followin
 
 Specifies the language ID of the descriptor to be retrieved when USB_STRING_DESCRIPTOR_TYPE is set in <b>DescriptorType</b>. This member must be set to zero for any other value in <b>DescriptorType</b>.
 
+
 ### -field Reserved2
 
 Reserved. Do not use.
+
 
 ## -remarks
 Drivers can use the <b>UsbBuildGetDescriptorRequest</b> service routine to format this URB. If the caller passes a buffer too small to hold all of the data, the bus driver truncates the data to fit in the buffer without error.
@@ -142,11 +157,13 @@ When the caller requests a string descriptor, the bus driver returns a <a href="
 
 The reserved members of this structure must be treated as opaque and are reserved for system use.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -184,5 +201,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_CONTROL_DESCRIPTOR_REQUEST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

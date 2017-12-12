@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 6867a88d-6bce-46eb-894a-cc034a1c3ece
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SCO_LINK_TYPE, *PSCO_LINK_TYPE, SCO_LINK_TYPE
+ms.keywords: _SCO_LINK_TYPE, SCO_LINK_TYPE, *PSCO_LINK_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ The SCO_LINK_TYPE enumeration type describes the type of link used by the SCO co
   <b>ScoIndicationRemoteConnect</b> indication event is processed.
 
 
+
 ## -syntax
 
 ````
@@ -58,28 +59,34 @@ typedef enum _SCO_LINK_TYPE {
 
 This value indicates that the link used by the connection is a SCO link.
 
+
 ### -field eScoLinkType
 
 This value indicates that the link used by the connection is an eSCO link.
+
 
 ## -remarks
 The 
     <a href="bltooth.sco_indication_parameters">SCO_INDICATION_PARAMETERS</a> structure
     uses this enumeration.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,5 +103,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SCO_LINK_TYPE enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

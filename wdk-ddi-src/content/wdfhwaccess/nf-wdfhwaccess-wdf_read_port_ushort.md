@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_port_ushort.htm
 old-project: wdf
 ms.assetid: F9688E1F-D8A3-432E-8724-2D601946E707
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_READ_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to UMDF only]
+
 The <b>WDF_READ_PORT_USHORT</b>  function reads a USHORT value from the specified port address.
+
 
 
 ## -syntax
@@ -59,12 +61,15 @@ USHORT WDF_READ_PORT_USHORT(
 
 A handle to a framework device object.
 
+
 ### -param Port [in]
 
 Specifies the port address, which must be a mapped memory range in I/O space.
 
+
 ## -returns
 <b>WDF_READ_PORT_USHORT</b> returns the USHORT value that is read from the specified port address.
+
 
 ## -remarks
 
@@ -74,6 +79,7 @@ Specifies the port address, which must be a mapped memory range in I/O space.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,22 +90,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

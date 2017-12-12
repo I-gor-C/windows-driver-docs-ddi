@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 8554a5d1-07ea-4ad5-83a4-f0c15386b3d1
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _pipe_config_descriptor, USBCAMD_Pipe_Config_Descriptor, *PUSBCAMD_Pipe_Config_Descriptor
+ms.keywords: _pipe_config_descriptor, *PUSBCAMD_Pipe_Config_Descriptor, USBCAMD_Pipe_Config_Descriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_Pipe_Config_Descriptor</b> structure describes the association between pipes and streams.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _pipe_config_descriptor {
 ### -field StreamAssociation
 
 Specifies the type of stream. This should be set to one of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -65,33 +67,41 @@ Specifies the type of stream. This should be set to one of the following values:
 <tr>
 <td>
 USBCAMD_VIDEO_STREAM
+
 </td>
 <td>
 Indicates that the stream contains video data.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_STILL_STREAM
+
 </td>
 <td>
 Indicates that the stream contains still data.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_VIDEO_STILL_STREAM
+
 </td>
 <td>
 Indicates that the stream contains both video and still data.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field PipeConfigFlags
 
 Specifies the pipe characteristics. This should be set to one of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -100,37 +110,46 @@ Specifies the pipe characteristics. This should be set to one of the following v
 <tr>
 <td>
 USBCAMD_DATA_PIPE
+
 </td>
 <td>
 Indicates a video or still data pipe.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_MULTIPLEX_PIPE
+
 </td>
 <td>
 Indicates a video and still data pipe.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_SYNC_PIPE
+
 </td>
 <td>
 Indicates an out-of-band signaling pipe.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_DONT_CARE_PIPE
+
 </td>
 <td>
 Indicates a pipe that is not to be used for video or still streaming.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 The camera minidriver indicates pipe stream associations by identifying all streams associated with a particular pipe. If there is more than one stream association, USBCAMD creates a virtual still pin. The still stream pin always follows the video stream pin (that is, the video stream pin is the first stream pin). 
@@ -143,11 +162,13 @@ The USBCAMD library requires that the camera must have a single configuration de
 
 <b>USBCAMD_Pipe_Config_Descriptor</b> is not supported in the original USBCAMD.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -164,5 +185,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_Pipe_Config_Descriptor structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

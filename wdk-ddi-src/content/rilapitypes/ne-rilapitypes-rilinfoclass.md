@@ -7,7 +7,7 @@ old-location: netvista\rilinfoclass_2.htm
 old-project: netvista
 ms.assetid: 19927cd1-8afa-4006-a882-d5222c690724
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILINFOCLASS, RILINFOCLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -96,6 +97,7 @@ typedef enum _RILINFOCLASS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

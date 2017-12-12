@@ -7,7 +7,7 @@ old-location: display\dxgk_querypagetableleveldescin.htm
 old-project: display
 ms.assetid: 1B13BBB1-4184-4166-A61F-CC266D0391BF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_QUERYPAGETABLELEVELDESCIN, DXGK_QUERYPAGETABLELEVELDESCIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>DXGK_QUERYPAGETABLELEVELDESCIN</b> structure is used to request page level descriptors from the <a href="display.dxgkrnl_interface">Dxgkrnl Interface</a>.
 
 
+
 ## -syntax
 
 ````
@@ -57,34 +58,42 @@ typedef struct _DXGK_QUERYPAGETABLELEVELDESCIN {
 
 A zero-based physical adapter index (engine ordinal) for which the data is queried.
 
+
 ### -field PhysicalAdapterIndex
 
 A zero-based page table level index for the information requested.
 
+
 ## -remarks
 To get page table level descriptors Dxgkrnl calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> with the following parameters:
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

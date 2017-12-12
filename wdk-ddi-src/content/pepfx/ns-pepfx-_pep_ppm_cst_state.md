@@ -7,7 +7,7 @@ old-location: kernel\pep_ppm_cst_state.htm
 old-project: kernel
 ms.assetid: AF001441-4031-4E29-B459-1597BFCAEF4C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _PEP_PPM_CST_STATE, PEP_PPM_CST_STATE, *PPEP_PPM_CST_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_PPM_CST_STATE</b> structure specifies the properties of a C state (ACPI processor power state).
 
 
+
 ## -syntax
 
 ````
@@ -63,17 +64,21 @@ typedef struct _PEP_PPM_CST_STATE {
 
 The C-state type (0 = C0, 1 = C1, 2 = C2, and so on).
 
+
 ### -field Latency
 
 The worst-case latency, in microseconds, to enter and exit this C state. There are no restrictions on latency size.
+
 
 ### -field Power
 
 The average power consumption, in milliwatts, of the processor when in this C state.
 
+
 ### -field AddressSpaceId
 
 The register address space ID (_ASI) for this C state. This member specifies the address space in which the register for this C state is located. The following IDs are defined for this member.
+
 <table>
 <tr>
 <th>ID</th>
@@ -110,17 +115,21 @@ The register address space ID (_ASI) for this C state. This member specifies the
 </table>
  
 
+
 ### -field BitWidth
 
 The register bit width (_RBW) for this C state. This member specifies the width, in bits, of the register for this C state.
+
 
 ### -field BitOffset
 
 The register bit offset (_RBO) for this C state. This member specifies the offset, in bits, from the register address specified in the <b>Address</b> member to the start of the register for this C state.
 
+
 ### -field AccessSize
 
 The register access size (_ASZ) code for this C state. This member specifies the number of bytes to read during an access of the register for this C state. Valid access size codes are shown in the following table.
+
 <table>
 <tr>
 <th>Access size code</th>
@@ -149,28 +158,34 @@ The register access size (_ASZ) code for this C state. This member specifies the
 </table>
  
 
+
 ### -field Address
 
 The register address (_ADR) for this C state.
+
 
 ## -remarks
 This structure is used in conjunction with the <a href="kernel.pep_notify_ppm_cst_states">PEP_NOTIFY_PPM_CST_STATES</a> notification. The <b>IdleStates</b> member of the <a href="kernel.pep_ppm_cst_states">PEP_PPM_CST_STATES</a> structure is a pointer to an array of <b>PEP_PPM_CST_STATE</b> structures. The <b>Type</b> member in each element of the array should equal the array index of this member.
 
 The values in the <b>PEP_PPM_CST_STATE</b> structure are obtained from the parameters that are specified for this C state in the _CST object in the ACPI namespace for the processor. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -190,5 +205,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_CST_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_CST_STATE structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

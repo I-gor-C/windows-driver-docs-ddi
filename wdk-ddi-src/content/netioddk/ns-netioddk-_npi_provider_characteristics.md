@@ -7,7 +7,7 @@ old-location: netvista\npi_provider_characteristics.htm
 old-project: netvista
 ms.assetid: a83220e8-496c-4b83-b774-88ab1f017e8d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NPI_PROVIDER_CHARACTERISTICS, NPI_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module.
 
 
+
 ## -syntax
 
 ````
@@ -62,26 +63,30 @@ typedef struct _NPI_PROVIDER_CHARACTERISTICS {
 The version of the NMR with which the provider is registering. A provider module should set this
      member to zero.
 
+
 ### -field Length
 
 The size, in bytes, of the NPI_PROVIDER_CHARACTERISTICS structure.
 
+
 ### -field ProviderAttachClient
 
 A pointer to the provider module's 
-     <a href="netvista.providerattachclient">ProviderAttachClient</a> callback
+     <a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a> callback
      function.
+
 
 ### -field ProviderDetachClient
 
 A pointer to the provider module's 
-     <a href="netvista.providerdetachclient">ProviderDetachClient</a> callback
+     <a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a> callback
      function.
+
 
 ### -field ProviderCleanupBindingContext
 
 A pointer to the provider module's 
-     <a href="netvista.providercleanupbindingcontext">
+     <a href="..\netioddk\nc-netioddk-npi_provider_cleanup_binding_context_fn.md">
      ProviderCleanupBindingContext</a> callback function. If the provider module does not dynamically
      allocate the memory for its binding context and no other cleanup of its binding context is required,
      then the provider module does not need to implement a 
@@ -89,6 +94,7 @@ A pointer to the provider module's
      ProviderCleanupBindingContext</i> callback function. If the provider module does not implement a 
      <i>
      ProviderCleanupBindingContext</i> callback function, then this member must be set to <b>NULL</b>.
+
 
 ### -field ProviderRegistrationInstance
 
@@ -98,6 +104,7 @@ An
      <a href="netvista.network_programming_interface">NPI</a> for which it is
      registering.
 
+
 ## -remarks
 A provider module passes a pointer to an NPI_PROVIDER_CHARACTERISTICS structure to the 
     <a href="netvista.nmrregisterprovider">NmrRegisterProvider</a> function when it
@@ -106,20 +113,24 @@ A provider module passes a pointer to an NPI_PROVIDER_CHARACTERISTICS structure 
 A provider module must make sure that this structure remains valid and resident in memory as long as
     the provider module is registered with the NMR.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,13 +146,13 @@ Header
 <a href="netvista.nmrregisterprovider">NmrRegisterProvider</a>
 </dt>
 <dt>
-<a href="netvista.providerattachclient">ProviderAttachClient</a>
+<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
 </dt>
 <dt>
-<a href="netvista.providerdetachclient">ProviderDetachClient</a>
+<a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a>
 </dt>
 <dt>
-<a href="netvista.providercleanupbindingcontext">
+<a href="..\netioddk\nc-netioddk-npi_provider_cleanup_binding_context_fn.md">
    ProviderCleanupBindingContext</a>
 </dt>
 <dt>
@@ -149,5 +160,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

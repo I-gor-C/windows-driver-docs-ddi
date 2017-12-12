@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Informs UFX that the client driver has completed processing a UFX callback function.
 
 
+
 ## -syntax
 
 ````
@@ -58,31 +59,38 @@ VOID UfxDeviceEventComplete(
 
 A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
 
+
 ### -param Status [in]
 
 Status of the event being completed.
 
+
 ## -returns
 This method does not return a value.
+
 
 ## -remarks
 The client driver calls <b>UfxDeviceEventComplete</b> to signal completion of the following callback functions:
 
 For example, your callback function could use the following code:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -93,9 +101,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

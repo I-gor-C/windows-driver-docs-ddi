@@ -7,7 +7,7 @@ old-location: netvista\evt_vmb_channel_restore_packet.htm
 old-project: netvista
 ms.assetid: 9C89CFCB-4B8A-40D3-B982-2F7836A636A3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortGetAgpServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <i>EvtVmbChannelRestorePacket</i> callback function is invoked when the virtualization service provider (VSP) server
 endpoint must restore the state associated with a packet object.  
+
 
 
 ## -prototype
@@ -68,9 +70,11 @@ typedef EVT_VMB_CHANNEL_RESTORE_PACKET PFN_VMB_CHANNEL_RESTORE_PACKET;
 
 The channel on which the packet arrives.
 
+
 ### -param LibBuf [in]
 
 Pointer to packet object state internal to the Kernel Mode Client Library (KMCL).
+
 
 
 ### -param LibBufSize [in]
@@ -78,9 +82,11 @@ Pointer to packet object state internal to the Kernel Mode Client Library (KMCL)
 Size of the <i>LibBuf</i> parameter, in bytes.
 
 
+
 ### -param SaveBuf [in]
 
 Pointer to transaction state specific to the VSP.
+
 
 
 ### -param SaveBufSize [in]
@@ -88,8 +94,10 @@ Pointer to transaction state specific to the VSP.
 Size of the <i>SaveBuf</i> parameter, in bytes.
 
 
+
 ## -returns
 <i>EvtVmbChannelRestorePacket</i> returns a status code.
+
 
 ## -remarks
 The <a href="netvista.vmbserverchannelinitsetsaverestorepacketcallbacks">VmbServerChannelInitSetSaveRestorePacketCallbacks</a> function sets a callback function for restoring packets for each channel.
@@ -100,11 +108,13 @@ by using the <a href="netvista.vmbpacketallocate">VmbPacketAllocate</a> function
 If the VSP provided any internal state for the transaction in the <i>EvtVmbChannelSavePacket</i>
 callback function, then this is provided in <i>SaveBuf</i>, and restored by the VSP.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,9 +125,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -138,5 +150,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_RESTORE_PACKET callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_RESTORE_PACKET callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

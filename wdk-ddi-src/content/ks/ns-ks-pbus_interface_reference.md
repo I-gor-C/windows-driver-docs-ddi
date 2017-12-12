@@ -41,6 +41,7 @@ req.irql:
 A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct {
 
 Specifies the exported <a href="kernel.interface">INTERFACE</a>.
 
+
 ### -field ReferenceDeviceObject
 
 Pointer to a driver-supplied <a href="stream.kstrreferencedeviceobject">KStrReferenceDeviceObject</a> routine.
+
 
 ### -field DereferenceDeviceObject
 
 Pointer to a driver-supplied <a href="stream.kstrdereferencedeviceobject">KStrDereferenceDeviceObject</a> routine.
 
+
 ### -field QueryReferenceString
 
 Pointer to a driver-supplied <a href="stream.kstrqueryreferencestring">KStrQueryReferenceString</a> routine.
+
 
 ## -remarks
 A driver obtains a BUS_INTERFACE_REFERENCE interface by creating and sending an IRP_MJ_PNP request that specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> minor function code. To do this, the driver should:
@@ -84,11 +89,13 @@ Set a completion routine and send the request down the driver stack.
 
 If your request is successful, the system fills in the BUS_INTERFACE_REFERENCE structure pointed to by <b>Parameters.QueryInterface.Interface</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

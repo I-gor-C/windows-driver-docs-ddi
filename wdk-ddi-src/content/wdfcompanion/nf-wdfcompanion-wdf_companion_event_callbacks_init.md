@@ -7,7 +7,7 @@ old-location: wdf\wdf_companion_event_callbacks_init.htm
 old-project: wdf
 ms.assetid: 83fadb77-90c2-4331-949c-5d8828ce33e2
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_COMPANION_EVENT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
 			For internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ FORCEINLINE VOID WDF_COMPANION_EVENT_CALLBACKS_INIT(
 ## -returns
 This method does not return a value.
 
+
 ## -remarks
 
 
@@ -68,14 +70,17 @@ This method does not return a value.
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

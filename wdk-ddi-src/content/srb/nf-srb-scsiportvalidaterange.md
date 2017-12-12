@@ -7,7 +7,7 @@ old-location: storage\scsiportvalidaterange.htm
 old-project: storage
 ms.assetid: a9ad58c2-16fc-410a-abc7-01c3f2354b88
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: ScsiPortValidateRange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ScsiPortValidateRange</b> routine indicates whether the specified access range values have already been claimed in the registry by another driver.
 
 
+
 ## -syntax
 
 ````
@@ -62,28 +63,35 @@ BOOLEAN ScsiPortValidateRange(
 
 Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="storage.scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. 
 
+
 ### -param BusType [in]
 
 Specifies the value of the <b>AdapterInterfaceType</b> member in the PORT_CONFIGURATION_INFORMATION structure when <i>HwScsiFindAdapter</i> is called.
+
 
 ### -param SystemIoBusNumber [in]
 
 Specifies the value of the <b>SystemIoBusNumber</b> member in the configuration information when <i>HwScsiFindAdapter</i> is called.
 
+
 ### -param IoAddress [in]
 
 Specifies a bus-relative base address for the range of ports or device memory to be validated <i>before</i> the miniport driver's <i>HwScsiFindAdapter</i> routine attempts to map the access range for the adapter at that address.
+
 
 ### -param NumberOfBytes [in]
 
 Specifies the size in bytes or number of elements in the range.
 
+
 ### -param InIoSpace [in]
 
 Indicates when TRUE that the range is in I/O space, rather than in memory. When <b>FALSE</b>, the range is in memory space. 
 
+
 ## -returns
 <b>ScsiPortValidateRange</b> returns <b>TRUE</b> if the HwScsiFindAdapter routine can safely map and use the mapped range to access the adapter. <b>ScsiPortValidateRange</b> returns <b>FALSE</b> if the specified access range values have already been claimed in the registry by another driver.
+
 
 ## -remarks
 <b>ScsiPortValidateRange </b>can be called only from a miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.
@@ -108,11 +116,13 @@ If a miniport driver uses a range successfully passed to <b>ScsiPortValidateRang
 
 The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that SCSI miniport drivers use to represent either a physical addresses or a bus-relative address. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +133,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +144,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -161,5 +173,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortValidateRange routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortValidateRange routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

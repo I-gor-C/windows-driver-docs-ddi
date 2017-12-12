@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgstatustype.htm
 old-project: netvista
 ms.assetid: 60365fd7-3897-4948-a251-098e5a91c959
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGCDMAMSGSTATUSTYPE, RILMSGCDMAMSGSTATUSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef enum _RILMSGCDMAMSGSTATUSTYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

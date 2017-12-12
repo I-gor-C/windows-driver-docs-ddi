@@ -7,7 +7,7 @@ old-location: kernel\allocateadapterchannel.htm
 old-project: kernel
 ms.assetid: d3339754-1a54-48f0-90c8-6c7db59fb7cc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,16 +42,20 @@ req.product: Windows 10 or later.
 The <b>AllocateAdapterChannel</b> routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine to carry out the DMA operation. 
 
 
+
 ## -prototype
 
 ````
+PALLOCATE_ADAPTER_CHANNEL AllocateAdapterChannel;
+
 NTSTATUS AllocateAdapterChannel(
   _In_ PDMA_ADAPTER    DmaAdapter,
   _In_ PDEVICE_OBJECT  DeviceObject,
   _In_ ULONG           NumberOfMapRegisters,
   _In_ PDRIVER_CONTROL ExecutionRoutine,
   _In_ PVOID           Context
-);
+)
+{ ... }
 ````
 
 
@@ -61,21 +65,26 @@ NTSTATUS AllocateAdapterChannel(
 
 Pointer to the <a href="kernel.dma_adapter">DMA_ADAPTER</a> structure returned by <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
+
 ### -param DeviceObject [in]
 
 Pointer to the device object that represents the target device for a requested DMA operation.
+
 
 ### -param NumberOfMapRegisters [in]
 
 Specifies the number of map registers to be used in the transfer. This value is the lesser of the number of map registers needed to satisfy the current transfer request, and the number of available map registers returned by <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>. 
 
+
 ### -param ExecutionRoutine [in]
 
 Pointer to a driver-supplied <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine. The routine is called when the system DMA controller or bus-master adapter becomes available.
 
+
 ### -param Context [in]
 
 Pointer to the driver-determined context to be passed to the <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine. 
+
 
 ## -returns
 This routine can return one of the following NTSTATUS values. 
@@ -87,6 +96,7 @@ This routine can return one of the following NTSTATUS values.
 </dl>The <i>NumberOfMapRegisters</i> is larger than the value returned by <b>IoGetDmaAdapter</b>. The <i>AdapterControl</i> routine will not be called.
 
  
+
 
 ## -remarks
 <b>AllocateAdapterChannel</b>
@@ -106,11 +116,13 @@ Only one DMA request can be queued for a device object at any one time. Therefor
 
 The system passes the value of the <b>CurrentIrp</b> member of <i>DeviceObject</i> as the <i>Irp</i> parameter of <i>AdapterControl</i>. If <b>AllocateAdapterChannel</b> is called from a driver's <a href="kernel.startio">StartIo</a> routine, this is guaranteed to point to the IRP that <i>StartIo</i> was called to process. Otherwise, to use the <i>Irp</i> parameter of <i>AdapterControl</i>, the driver must set <b>CurrentIrp</b> to point to the current IRP before calling <b>AllocateAdapterChannel</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,14 +133,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,14 +154,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqldispatch">IrqlDispatch</a>, <a href="devtest.storport_irqldispatch">IrqlDispatch(storport)</a>
@@ -166,24 +184,27 @@ DDI compliance rules
 <a href="kernel.dma_operations">DMA_OPERATIONS</a>
 </dt>
 <dt>
-<a href="kernel.flushadapterbuffers">FlushAdapterBuffers</a>
+<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
 </dt>
 <dt>
-<a href="kernel.freeadapterchannel">FreeAdapterChannel</a>
+<a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
 </dt>
 <dt>
-<a href="kernel.freemapregisters">FreeMapRegisters</a>
+<a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>
 </dt>
 <dt>
 <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="kernel.maptransfer">MapTransfer</a>
+<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
 </dt>
 <dt>
-<a href="kernel.readdmacounter">ReadDmaCounter</a>
+<a href="..\wdm\nc-wdm-pread_dma_counter.md">ReadDmaCounter</a>
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AllocateAdapterChannel routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PALLOCATE_ADAPTER_CHANNEL callback function%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

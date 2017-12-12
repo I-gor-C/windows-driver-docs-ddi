@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>EtwWrite</b> function is a tracing function for publishing events in your kernel-mode driver code. 
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS EtwWrite(
 
 A pointer to the event provider registration handle, which is returned by the <a href="devtest.etwregister">EtwRegister</a> function if the event provider registration is successful.
 
+
 ### -param EventDescriptor [in]
 
 A pointer to the <a href="https://msdn.microsoft.com/cfe84b3d-fed2-4624-9899-8451e5b39de0">EVENT_DESCRIPTOR</a> structure. 
+
 
 ### -param ActivityId [in, optional]
 
 The identifier that indicates the activity associated with the event. The <i>ActivityID</i> provides a way to group related events and is used in end-to-end tracing. 
 
+
 ### -param UserDataCount [in]
 
 The number of EVENT_DATA_DESCRIPTOR structures in <i>UserData</i>.
 
+
 ### -param UserData [in, optional]
 
 A pointer to the array of EVENT_DATA_DESCRIPTOR structures. 
+
 
 ## -returns
 If the event was successfully published, <b>EtwWrite</b> returns STATUS_SUCCESS.
@@ -100,6 +106,7 @@ Events can be lost for several reasons; for example, if the event rate is too hi
 
 
 
+
 ## -remarks
 The <b>EtwWrite</b> function is the kernel-mode equivalent of the user-mode <b>EventWrite</b> function. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="devtest.etweventenabled">EtwEventEnabled</a> or <a href="devtest.etwproviderenabled">EtwProviderEnabled</a>. 
 
@@ -109,11 +116,13 @@ If you are using the optional <i>UserData</i> parameter in the <b>EtwWrite</b> f
 
 You can call <b>EtwWrite</b> at any IRQL. However, when IRQL is greater than APC_LEVEL, any data passed to the <b>EtwWrite</b>, <a href="devtest.etwwriteex">EtwWriteEx</a>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must not be pageable. That is, any kernel-mode routine that is running at IRQL greater than APC_LEVEL cannot access pageable memory.  Data passed to the <b>EtwWrite</b>, <b>EtwWriteEx</b>, <b>EtwWriteString</b>, and <b>EtwWriteTransfer</b> functions must reside in system-space memory, regardless of what the IRQL is.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -124,14 +133,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +154,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -152,6 +165,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -162,9 +176,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (See Comments section.)
+
 </td>
 </tr>
 </table>
@@ -195,5 +211,8 @@ Any level (See Comments section.)
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwWrite function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

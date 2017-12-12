@@ -7,7 +7,7 @@ old-location: netvista\riluiccserviceservice.htm
 old-project: netvista
 ms.assetid: 1aeb4642-d718-4e39-a6c7-dc33146c9687
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCSERVICESERVICE, RILUICCSERVICESERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef enum _RILUICCSERVICESERVICE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

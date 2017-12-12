@@ -7,8 +7,8 @@ old-location: kernel\resourcemanager_completion_information.htm
 old-project: kernel
 ms.assetid: c3b866c2-5908-418e-8744-9f8f22cdc88a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _RESOURCEMANAGER_COMPLETION_INFORMATION, *PRESOURCEMANAGER_COMPLETION_INFORMATION, RESOURCEMANAGER_COMPLETION_INFORMATION
+ms.date: 12/7/2017
+ms.keywords: _RESOURCEMANAGER_COMPLETION_INFORMATION, RESOURCEMANAGER_COMPLETION_INFORMATION, *PRESOURCEMANAGER_COMPLETION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RESOURCEMANAGER_COMPLETION_INFORMATION</b> structure is not used. 
 
 
+
 ## -struct-fields
 
 
@@ -53,14 +54,17 @@ The <b>RESOURCEMANAGER_COMPLETION_INFORMATION</b> structure is not used.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later operating system versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

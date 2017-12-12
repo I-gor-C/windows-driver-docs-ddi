@@ -7,8 +7,8 @@ old-location: netvista\wsk_provider_stream_dispatch.htm
 old-project: netvista
 ms.assetid: A10B901E-9987-40E9-976B-4CD9455E0AEE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WSK_PROVIDER_STREAM_DISPATCH, *PWSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH
+ms.date: 12/8/2017
+ms.keywords: _WSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH, *PWSK_PROVIDER_STREAM_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -45,6 +45,7 @@ The WSK_PROVIDER_STREAM_DISPATCH structure specifies the WSK subsystem's table o
   
 
 
+
 ## -syntax
 
 ````
@@ -74,35 +75,42 @@ The members of the
      WSK_PROVIDER_BASIC_DISPATCH</a> structure are included as members of the WSK_PROVIDER_STREAM_DISPATCH
      structure.
 
+
 ### -field WskBind
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a> function for the socket.
+
 
 ### -field WskAccept
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a> function for the socket.
 
+
 ### -field WskConnect
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a> function for the socket.
+
 
 ### -field WskListen
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_listen.md">WskListen</a> function for the socket.
 
+
 ### -field WskSend
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a> function for the socket.
 
+
 ### -field WskReceive
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a> function for the socket.
+
 
 ### -field WskDisconnect
 
@@ -110,10 +118,12 @@ A pointer to the WSK subsystem's
      <a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a> function for the
      socket.
 
+
 ### -field WskRelease
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a> function for the socket.
+
 
 ### -field WskGetLocalAddress
 
@@ -121,17 +131,20 @@ A pointer to the WSK subsystem's
      <a href="..\wsk\nc-wsk-pfn_wsk_get_local_address.md">WskGetLocalAddress</a> function for the
      socket.
 
+
 ### -field WskGetRemoteAddress
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_get_remote_address.md">WskGetRemoteAddress</a> function for the
      socket.
 
+
 ### -field WskConnectEx
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_connect_ex.md">WskConnectEx</a> function for the
      socket.
+
 
 ## -remarks
 The member list of the WSK_PROVIDER_STREAM_DISPATCH structure includes an unnamed 
@@ -150,19 +163,23 @@ A WSK application receives a pointer to a WSK_PROVIDER_STREAM_DISPATCH structure
     <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that is received from the
     WSK subsystem.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1703
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -189,5 +206,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_STREAM_DISPATCH structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_STREAM_DISPATCH structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

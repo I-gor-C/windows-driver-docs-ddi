@@ -7,7 +7,7 @@ old-location: display\d3dkmt_opensyncobjectfromnthandle.htm
 old-project: display
 ms.assetid: 163ce4ed-e81b-4b69-b1a7-4ea2b9e8f437
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE, D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes information that is required to map an NT process handle to a graphics processing unit (GPU) synchronization object.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE {
 
 [in] An NT handle to the process.
 
+
 ### -field hSyncObject
 
 [out] A handle of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the kernel-mode synchronization object.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ typedef struct _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

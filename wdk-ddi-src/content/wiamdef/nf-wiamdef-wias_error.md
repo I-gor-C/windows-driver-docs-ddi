@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WIAS_ERROR macro writes a diagnostic message to the <i>Wiatrace.log</i> file.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ WIAS_ERROR( WIAS_ERROR(
 
 Handle to the DLL (driver).
 
+
 ### -param format_string, ... 
 
 Specifies a variable argument list, which starts with an ANSI format string that describes the message and any format identifiers. The ellipsis (...) specifies a variable number of arguments that need to be output. The error text should be prefixed with the full name of the method or function and generate the message in the format of "class::method, error-text".
+
 
 ## -remarks
 This macro is the recommended way to implement error logging on Windows Vista, because unlike <a href="image.wias_ltrace">WIAS_LERROR</a>, WIA_ERROR allows error messages to be written to the log file (<i>Wiatrace.log</i>). The <i>Wiatrace.log</i> file is only available in Windows Vista and later versions of the operating system. The utility used to view the contents of this log file is WiaTrcVw.exe.
@@ -71,11 +74,13 @@ The following is an example of how the macro can be used:
 
 This code snippet was taken from <i>Wiadriver.cpp</i>, which is included with the WDK.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,14 +91,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ERROR macro%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

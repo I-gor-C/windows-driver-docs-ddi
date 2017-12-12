@@ -7,8 +7,8 @@ old-location: storage\msiscsi_hbainformation.htm
 old-project: storage
 ms.assetid: ee2951e0-2632-44b0-870d-33d4d48ac8e8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation, MSiSCSI_HBAInformation
+ms.date: 12/8/2017
+ms.keywords: _MSiSCSI_HBAInformation, MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 The MSiSCSI_HBAInformation structure is used by storage miniport drivers to report information about the host bus adapters (HBAs) that they manage to the iSCSI initiator service.
+
 
 
 ## -syntax
@@ -76,37 +77,46 @@ typedef struct _MSiSCSI_HBAInformation {
 
 A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). 
 
+
 ### -field IntegratedTCPIP
 
 A Boolean value that indicates if the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>TRUE</b>, the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>FALSE</b>, the Windows TCP/IP stack does not manage TCP/IP traffic for the HBA. A miniport driver for an adapter with its own TCP/IP stack should set this member to <b>FALSE</b>.
+
 
 ### -field RequiresBinaryIpAddresses
 
 A Boolean value that indicates whether the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. If this member is <b>TRUE</b>, the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. For the iSCSI initiator service to honor this request, the HBA must be on the same network as the Windows TCP/IP stack. If <b>RequiresBinaryIpAddresses</b> is <b>FALSE</b>, the HBA and its miniport driver have direct access to DNS. 
 
+
 ### -field VersionMin
 
 The earliest version of the iSCSI specification that the HBA and its miniport driver support. 
+
 
 ### -field VersionMax
 
 The most recent version of the iSCSI specification that the HBA and its miniport driver support. 
 
+
 ### -field MultifunctionDevice
 
 A Boolean value that indicates whether the HBA is a multifunction device. If this member is <b>TRUE</b>, the HBA is a multifunction device, and it exposes a netcard interface. If this member <b>FALSE</b>, the HBA is not a multifunction device.
+
 
 ### -field CacheValid
 
 A Boolean value that indicates if the adapter caches are value. If this member is <b>TRUE</b>, the adapter caches are valid. If this member is <b>FALSE</b>, the caches are invalid or the adapter does not cache data. 
 
+
 ### -field NumberOfPorts
 
 The number of ports (or TCP/IP addresses on the adapter).
 
+
 ### -field Status
 
 The current status of HBA. This member can hold any of the following values:
+
 <table>
 <tr>
 <th>Status</th>
@@ -115,41 +125,51 @@ The current status of HBA. This member can hold any of the following values:
 <tr>
 <td>
 ISCSI_HBA_STATUS_WORKING
+
 </td>
 <td>
 The HBA is functioning normally. 
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_STATUS_DEGRADED
+
 </td>
 <td>
 The HBA is functioning in a degraded state of operation.
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_STATUS_CRITICAL
+
 </td>
 <td>
 The HBA is in a critical state and might fail at any moment.
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_STATUS_FAILED
+
 </td>
 <td>
 The HBA is not functioning at all.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field FunctionalitySupported
 
 A bitwise OR of the flags that define the functionality that the HBA supports. The following table describes the possible flags.
+
 <table>
 <tr>
 <th>Flags</th>
@@ -158,106 +178,132 @@ A bitwise OR of the flags that define the functionality that the HBA supports. T
 <tr>
 <td>
 ISCSI_HBA_PRESHARED_KEY_CACHE
+
 </td>
 <td>
 The host bus adapter (HBA) supports an onboard cache for a preshared key.
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_ISCSI_AUTHENTICATION_CACHE
+
 </td>
 <td>
 The HBA supports an onboard cache for CHAP secrets. 
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_IPSEC_TUNNEL_MODE
+
 </td>
 <td>
 The HBA supports IPsec tunnel mode. 
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_CHAP_VIA_RADIUS
+
 </td>
 <td>
 The HBA supports the Remote Authentication Dial-In User Service (RADIUS) attributes of the challenge handshake authentication protocol (CHAP).
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_ISNS_DISCOVERY
+
 </td>
 <td>
 The HBA supports iSNS discovery.
+
 </td>
 </tr>
 <tr>
 <td>
 ISCSI_HBA_SLP_DISCOVERY
+
 </td>
 <td>
 The HBA supports SLP discovery. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field GenerationalGuid
 
 The generational GUID. This GUID is the GUID value that the <a href="storage.setgenerationalguid">SetGenerationalGuid</a> method in the <a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a> last set.
+
 
 ### -field MaxCDBLength
 
 The maximum CDB length, in bytes, that the HBA supports.
 
+
 ### -field BiDiScsiCommands
 
 A Boolean value that indicates if the HBA supports bidirectional SCSI commands. If this member is <b>TRUE</b>, the HBA supports bidirectional SCSI commands. If this member is <b>FALSE</b>, the HBA does not support bidirectional commands.
+
 
 ### -field VendorID
 
 The manufacturer of the HBA.
 
+
 ### -field VendorModel
 
 A string that specifies the model of the HBA. The manufacturer defines this string.
+
 
 ### -field VendorVersion
 
 A string that specifies the version of the HBA. The manufacturer defines this string.
 
+
 ### -field FirmwareVersion
 
 A string that specifies the version of the firmware in the HBA. The manufacturer defines this string.
+
 
 ### -field AsicVersion
 
 A string that specifies the Asic version. The manufacturer defines this string.
 
+
 ### -field OptionRomVersion
 
 A string that specifies the option ROM version of the HBA. The manufacturer defines this string.
+
 
 ### -field SerialNumber
 
 A string that specifies the serial number of the HBA. The manufacturer defines this string.
 
+
 ### -field DriverName
 
 A string that specifies the name of the driver for the HBA.
 
+
 ## -remarks
 You must implement this class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -280,5 +326,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_HBAInformation structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_HBAInformation structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

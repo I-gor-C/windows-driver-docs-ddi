@@ -7,7 +7,7 @@ old-location: netvista\rilregstatusinfoparammask.htm
 old-project: netvista
 ms.assetid: 7857f845-d695-4b0f-9e52-8871c0140a74
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILREGSTATUSINFOPARAMMASK, RILREGSTATUSINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -95,6 +96,7 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

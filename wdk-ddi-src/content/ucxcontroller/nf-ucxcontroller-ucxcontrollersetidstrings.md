@@ -43,6 +43,7 @@ Updates the identifier strings
     of a controller after the controller has been initialized.
 
 
+
 ## -syntax
 
 ````
@@ -61,20 +62,25 @@ NTSTATUS UcxControllerSetIdStrings(
 
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.
 
+
 ### -param ManufacturerNameString [in]
 
 A string that contains the name of controller manufacturer.
+
 
 ### -param ModelNameString [in]
 
 A string that contains the name of device model.
 
+
 ### -param ModelNumberString [in]
 
 A string that contains the revision number of the device model.
 
+
 ## -returns
 The function returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. 
+
 
 ## -remarks
 
@@ -84,38 +90,47 @@ The function returns STATUS_SUCCESS if the operation succeeds. Otherwise, this m
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +141,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

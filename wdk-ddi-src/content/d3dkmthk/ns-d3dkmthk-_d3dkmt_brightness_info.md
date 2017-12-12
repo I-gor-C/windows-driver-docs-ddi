@@ -7,7 +7,7 @@ old-location: display\d3dkmt_brightness_info.htm
 old-project: display
 ms.assetid: a620b0b2-85ce-4373-a50c-299d8ce7a91c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_BRIGHTNESS_INFO, D3DKMT_BRIGHTNESS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains information about the brightness of an integrated display panel.
 
 
+
 ## -syntax
 
 ````
@@ -65,33 +66,41 @@ typedef struct _D3DKMT_BRIGHTNESS_INFO {
 
 A value of type <a href="display.d3dkmt_brightness_info_type">D3DKMT_BRIGHTNESS_INFO_TYPE</a> that  indicates the type of brightness information to retrieve or set.
 
+
 ### -field PossibleLevels
 
 A <a href="display.d3dkmt_brightness_possible_levels">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a> structure that contains information about all possible brightness levels that the integrated display panel supports.
+
 
 ### -field Brightness
 
 The current brightness level.
 
+
 ### -field BrightnessCaps
 
 A <a href="display.dxgk_brightness_caps">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the integrated display panel.
+
 
 ### -field BrightnessState
 
 A <a href="display.dxgk_brightness_state">DXGK_BRIGHTNESS_STATE</a> structure that represents the smooth brightness control capabilities of the integrated display panel.
 
+
 ### -field OptimizationLevel
 
 A <a href="..\d3dkmdt\ne-d3dkmdt-dxgk_backlight_optimization_level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> structure that represents the optimization level of brightness control.
+
 
 ### -field ReductionInfo
 
 A value of type <a href="display.dxgk_backlight_info">DXGK_BACKLIGHT_INFO</a> that provides the current absolute level of backlight reduction.
 
+
 ### -field VerboseLogging
 
 A boolean value that indicates whether Event Tracing for Windows (ETW) logging of brightness information should be verbose.
+
 
 ## -remarks
 
@@ -101,22 +110,27 @@ A boolean value that indicates whether Event Tracing for Windows (ETW) logging o
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,5 +162,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_BRIGHTNESS_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_BRIGHTNESS_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

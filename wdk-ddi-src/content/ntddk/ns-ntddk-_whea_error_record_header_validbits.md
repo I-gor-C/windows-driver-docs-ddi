@@ -7,7 +7,7 @@ old-location: whea\whea_error_record_header_validbits.htm
 old-project: whea
 ms.assetid: b16dd19f-1a67-4066-9dae-b36ff6f44d43
 ms.author: windowsdriverdev
-ms.date: 12/5/2017
+ms.date: 12/8/2017
 ms.keywords: _WHEA_ERROR_RECORD_HEADER_VALIDBITS, *PWHEA_ERROR_RECORD_HEADER_VALIDBITS, WHEA_ERROR_RECORD_HEADER_VALIDBITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a <a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a> structure contain valid data.
 
 
+
 ## -syntax
 
 ````
@@ -62,21 +63,26 @@ typedef union _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
 
 A single bit that indicates that the <b>PlatformId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.
 
+
 ### -field Timestamp
 
 A single bit that indicates that the <b>Timestamp</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.
+
 
 ### -field PartitionId
 
 A single bit that indicates that the <b>PartitionId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.
 
+
 ### -field Reserved
 
 Reserved for system use.
 
+
 ### -field AsULONG
 
 A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_VALIDBITS union.
+
 
 ## -remarks
 A WHEA_ERROR_RECORD_HEADER_VALIDBITS union is contained within the <a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a> structure.
@@ -93,20 +99,24 @@ If this bit is set, it indicates that the <b>Timestamp</b> member of the WHEA_ER
 
 If this bit is set, it indicates that the <b>PartitionId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+
 
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +133,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_RECORD_HEADER_VALIDBITS union%20 RELEASE:%20(12/5/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_RECORD_HEADER_VALIDBITS union%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

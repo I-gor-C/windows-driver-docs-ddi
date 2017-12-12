@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The STI_DEVICE_STATUS structure is used as a parameter to the <a href="image.istidevice_getstatus">IStiDevice::GetStatus</a> and <a href="image.istiusd_getstatus">IStiUSD::GetStatus</a> methods.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ typedef struct _STI_DEVICE_STATUS {
 
 Caller-supplied size, in bytes, of the STI_DEVICE_STATUS structure.
 
+
 ### -field StatusMask
 
 One or more caller-supplied bit flags, indicating the type of status information being requested. The following flags are defined:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -73,122 +76,157 @@ One or more caller-supplied bit flags, indicating the type of status information
 <tr>
 <td>
 STI_DEVSTATUS_EVENTS_STATE
+
 </td>
 <td>
 The driver should fill in the <b>dwEventHandlingState</b> member.
+
 </td>
 </tr>
 <tr>
 <td>
 STI_DEVSTATUS_ONLINE_STATE 
+
 </td>
 <td>
 The driver should fill in the <b>dwOnlineState</b> member.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field dwOnlineState
 
 Bit flags indicating the device's current status. The following flags are defined in <i>Sti.h</i>.
+
 Currently use of STI_ONLINESTATE_OPERATIONAL is required, while use of all other flags is optional. (Currently, STI_ONLINESTATE_OPERATIONAL is the only flag that the still image server checks.)
+
+
 
 
 ### -field STI_ONLINESTATE_BUSY
 
 The device is busy.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_ERROR
 
 The device has reported an error.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_INITIALIZING
 
 The device is being initialized.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_IO_ACTIVE
 
 The device is active but not accepting commands.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_OFFLINE
 
 The device is off-line.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_OPERATIONAL
 
 The device is online and ready. If set, Control Panel indicates the device is ready. Otherwise, it indicates the device is off-line.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_PAPER_JAM
 
 The device has reported a paper jam.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_PAPER_PROBLEM
 
 The device has reported an unspecified paper problem.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_PAUSED
 
 The device is paused.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_PENDING
 
 I/O operations are pending.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_POWER_SAVE
 
 The device is in power save mode.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_TRANSFERRING
 
 The device is transferring data.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_USER_INTERVENTION
 
 The device requires user intervention.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_ONLINESTATE_WARMING_UP
 
 The device is warming up.
+
 </dd>
 </dl>
 
@@ -196,34 +234,43 @@ The device is warming up.
 
 Optional device-specific, vendor-defined value.
 
+
 ### -field dwEventHandlingState
 
 Contains bit flags indicating event status. The following flags are defined in <i>Sti.h</i>.
 
 
+
+
 ### -field STI_EVENTHANDLING_ENABLED
 
 <i>Not used</i>.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_EVENTHANDLING_PENDING
 
 A device event has occurred.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_EVENTHANDLING_POLLING
 
 <i>Not used</i>.
+
 </dd>
 </dl>
 
 ### -field dwPollingInterval
 
 Time value, in milliseconds, indicating how often the device should be polled, if polling is required.
+
 
 ## -remarks
 
@@ -233,6 +280,7 @@ Time value, in milliseconds, indicating how often the device should be polled, i
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxgk_physicaladaptercaps.htm
 old-project: display
 ms.assetid: 8D075473-605F-4B75-BB02-5B182EEB3B5F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PHYSICALADAPTERCAPS, DXGK_PHYSICALADAPTERCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>DXGK_PHYSICALADAPTERCAPS</b> structure is used to report details of a physical adapter.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 
 The number of execution nodes in the physical adapter.
 
+
 ### -field PagingNodeIndex
 
 Index of the paging node for the physical adapter.
 
+
 ### -field DxgkPhysicalAdapterHandle
 
-Handle, which is passed to the kernel mode driver as <b>DXGKRNL_INTERFACE::DeviceHandle</b> in <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>. 
+Handle, which is passed to the kernel mode driver as <b>DXGKRNL_INTERFACE::DeviceHandle</b> in <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>. 
+
 
 ### -field Flags
 
@@ -83,6 +87,7 @@ Handle, which is passed to the kernel mode driver as <b>DXGKRNL_INTERFACE::Devic
 </td>
 <td width="60%">
 The adapter supports <i>IoMmu</i>.
+
 </td>
 </tr>
 <tr>
@@ -93,6 +98,7 @@ The adapter supports <i>IoMmu</i>.
 </td>
 <td width="60%">
 The adapter supports <i>GpuMmu</i>.
+
 </td>
 </tr>
 <tr>
@@ -103,6 +109,7 @@ The adapter supports <i>GpuMmu</i>.
 </td>
 <td width="60%">
 The adapter supports move paging.
+
 </td>
 </tr>
 <tr>
@@ -113,14 +120,17 @@ The adapter supports move paging.
 </td>
 <td width="60%">
 The adapter requires the index of the VPR paging node.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field VPRPagingNode
 
 Index of the node to be used for move paging in  the VPR.
+
 
 ## -remarks
 
@@ -130,22 +140,27 @@ Index of the node to be used for move paging in  the VPR.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 15450f33-cb86-4c1d-87d7-2d77a1d66a81
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _CIP_HDR1, *PCIP_HDR1, CIP_HDR1
+ms.keywords: _CIP_HDR1, CIP_HDR1, *PCIP_HDR1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair).
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _CIP_HDR1 {
 
 Data block counter. This is not used by subunit driver. It must be set to 0.
 
+
 ### -field Rsv00
 
 Reserved bits. Do not use this. It must be 0:0.
+
 
 ### -field SPH
 
 Specifies a source packet header. A value of 1 indicates the presence of a source packet header. A value of 0 indicates no source packet header.
 
+
 ### -field QPC
 
 Quadlet padding count (0..7 quadlets).
+
 
 ### -field FN
 
 Specifies the fractional number.
 
+
 ### -field DBS
 
 Specifies the data block size in quadlets.
+
 
 ### -field SID
 
 Specifies the source node ID (ID of transmitter). Not used by the subunit driver. Must be set to 0.
 
+
 ### -field Bit00
 
 Must be set to 0:0.
+
 
 ## -remarks
 
@@ -99,6 +108,7 @@ Must be set to 0:0.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,5 +131,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CIP_HDR1 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

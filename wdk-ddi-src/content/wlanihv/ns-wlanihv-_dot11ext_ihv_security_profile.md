@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_security_profile.htm
 old-project: netvista
 ms.assetid: cbfeace3-6492-4011-9ca8-c40ba4f47d22
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,10 +56,12 @@ typedef struct _DOT11EXT_IHV_SECURITY_PROFILE {
 
 A pointer to the string that defines the IHV security profile.
 
+
 ### -field bUseMSOnex
 
 A flag that indicates whether the IHV security profile is using the Microsoft 802.1X
      implementation. If <b>TRUE</b>, the profile uses the Microsoft 802.1X implementation.
+
 
 ## -remarks
 
@@ -69,15 +71,18 @@ A flag that indicates whether the IHV security profile is using the Microsoft 80
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

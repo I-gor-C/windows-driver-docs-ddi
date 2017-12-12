@@ -7,7 +7,7 @@ old-location: kernel\reinitialize.htm
 old-project: kernel
 ms.assetid: 5e883b80-a6e6-44b4-9e1c-78402b91edb9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: Called at PASSIVE_LEVEL.
 The <i>Reinitialize</i> routine continues driver and device initialization after the driver's <b>DriverEntry</b> routine returns.
 
 
+
 ## -prototype
 
 ````
@@ -61,16 +62,20 @@ VOID Reinitialize(
 
 Caller-supplied pointer to a <a href="kernel.driver_object">DRIVER_OBJECT</a> structure. This is the driver's driver object.
 
+
 ### -param Context [in, optional]
 
 Caller-supplied pointer to context information, specified in a previous call to <a href="kernel.ioregisterdriverreinitialization">IoRegisterDriverReinitialization</a> or <a href="kernel.ioregisterbootdriverreinitialization">IoRegisterBootDriverReinitialization</a>.
+
 
 ### -param Count [in]
 
 Caller-supplied value representing the number of times the <i>Reinitialize</i> routine has been called, including the current call.
 
+
 ## -returns
 None
+
 
 ## -remarks
 To queue a <i>Reinitialize</i> routine for execution, a driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine must call either <a href="kernel.ioregisterdriverreinitialization">IoRegisterDriverReinitialization</a> or <a href="kernel.ioregisterbootdriverreinitialization">IoRegisterBootDriverReinitialization</a>. The <i>Reinitialize</i> routine can also call <b>IoRegisterDriverReinitialization</b> itself, which causes the routine to be requeued. This requeuing can occur multiple times, and the routine's <i>Count</i> parameter indicates the number of times it has been called. The first call to <b>IoRegisterDriverReinitialization</b> must be made from <b>DriverEntry</b>, and <b>DriverEntry</b> must return STATUS_SUCCESS.
@@ -85,11 +90,13 @@ Then, implement your callback routine as follows:
 
 The DRIVER_REINITIALIZE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the DRIVER_REINITIALIZE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +107,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +118,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Called at PASSIVE_LEVEL.
+
 </td>
 </tr>
 </table>

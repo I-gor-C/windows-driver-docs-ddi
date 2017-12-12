@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxLogEventWithBufferDirect</b> allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
 
 
+
 ## -syntax
 
 ````
@@ -63,32 +64,40 @@ VOID RxLogEventWithBufferDirect(
 
 A pointer to the RDBSS device object.
 
+
 ### -param OriginatorId [in]
 
 The string indicating the caller generating the error.
+
 
 ### -param EventId [in]
 
 The value indicating the I/O error log code which is different than an NTSTATUS value returned by a routine. The legal I/O error log code values are defined in the <i>ntiolog.h</i> header file included with the Microsoft Windows SDK and Visual Studio. 
 
+
 ### -param Status [in]
 
 The value indicating the status code of a routine indicating a failure.
+
 
 ### -param DataBuffer [in]
 
 A pointer to a data buffer to be added to the I/O error log structure.
 
+
 ### -param DataBufferLength [in]
 
 The length of the data buffer to be added to the I/O error log structure.
+
 
 ### -param LineNumber [in]
 
 The line number in the source code file where this failure occurred.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>RxLogEventDirect</b> internally calls the <b>RxLogEventWithAnnotation</b> routine to create and write the log entry passing the <i>Status</i> and <i>LineNumber</i> parameters as the <i>Annotations</i> parameter to <b>RxLogEventWithAnnotation</b>. 
@@ -97,11 +106,13 @@ The I/O error log entry size is limited to a length of 255 characters. So if the
 
 The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to create the I/O error log entry . Consequently, <b>RxLogEventWithBufferDirect</b> can silently fail if the memory allocation fails. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +123,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +134,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -142,5 +156,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLogEventWithBufferDirect function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

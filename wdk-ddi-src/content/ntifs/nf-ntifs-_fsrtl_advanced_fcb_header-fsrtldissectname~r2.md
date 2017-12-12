@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Given a Unicode pathname string, the <b>FsRtlDissectName</b> routine returns two strings, one containing the first file name found in the string, the other containing the remaining unparsed portion of the pathname string.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ VOID FsRtlDissectName(
 
 Pathname string to be parsed.
 
+
 ### -param FirstName [out]
 
 Pointer to the first file name in the pathname string. 
+
 
 ### -param RemainingName [out]
 
 Pointer to the remaining unparsed portion of the pathname string.
 
+
 ## -returns
 None
+
 
 ## -remarks
 In the input string, backslashes are read as name separators. The first name in the string is assumed to consist of all characters from the beginning of the string to the character preceding the first backslash, inclusive. There is just one exception to this rule: if the first character in the input string is a backslash, this character is ignored and does not appear in the output string. The remaining portion of the string consists of all characters following the backslash that follows the first name found in the string.
@@ -98,11 +103,13 @@ Note that upon returning, the <b>Buffer</b> members of the output parameters wil
 
 For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +120,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +131,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +142,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -143,9 +153,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -157,5 +169,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlDissectName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

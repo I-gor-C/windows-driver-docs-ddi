@@ -7,7 +7,7 @@ old-location: netvista\wdi_ds_info.htm
 old-project: netvista
 ms.assetid: 4375FF5C-8772-43AB-844B-4AD5E044AF55
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_DS_INFO, WDI_DS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_DS_INFO enumeration defines values that specify whether the port is connected to the same DS that it was previously associated to.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_DS_INFO {
 
 New DS.
 
+
 ### -field WDI_DS_UNCHANGED
 
 Same DS as previously associated.
 
+
 ### -field WDI_DS_UNKNOWN
 
 Unable to determine if the DS has changed.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ Unable to determine if the DS has changed.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

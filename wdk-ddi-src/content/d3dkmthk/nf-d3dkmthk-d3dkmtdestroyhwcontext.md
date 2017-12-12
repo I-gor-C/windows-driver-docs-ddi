@@ -7,7 +7,7 @@ old-location: display\d3dkmtdestroyhwcontext.htm
 old-project: display
 ms.assetid: 832CA7CA-40B3-4D6D-B640-9838B479EC76
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTDestroyHwContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to destroy a hardware context.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ NTSTATUS APIENTRY D3DKMTDestroyHwContext(
 
 A structure holding the information needed to destroy a hardware context.
 
+
 ## -returns
 Returns STATUS_SUCCESS if called successfully. 
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ Returns STATUS_SUCCESS if called successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +81,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

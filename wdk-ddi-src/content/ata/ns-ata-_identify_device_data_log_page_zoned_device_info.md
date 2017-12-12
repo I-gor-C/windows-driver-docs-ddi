@@ -7,8 +7,8 @@ old-location: storage\identify_device_data_log_page_zoned_device_info.htm
 old-project: storage
 ms.assetid: 2F0B6C1F-54CC-47CF-B0D0-A53FAB80AF91
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
+ms.date: 12/8/2017
+ms.keywords: _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,8 +40,10 @@ req.irql:
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
+
 <div class="alert"><b>Note</b>  This  structure is for internal use only and should not be called from your code.</div>
 <div> </div>
+
 
 
 
@@ -90,6 +92,7 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 
 N/A
 
+
 ### -field ZonedDeviceCapabilities
 
 
@@ -97,13 +100,16 @@ N/A
 
 N/A
 
+
 ### -field Reserved
 
 N/A
 
+
 ### -field Valid
 
 N/A
+
 </dd>
 </dl>
 
@@ -114,9 +120,11 @@ N/A
 
 N/A
 
+
 ### -field Valid
 
 N/A
+
 </dd>
 </dl>
 
@@ -127,13 +135,16 @@ N/A
 
 N/A
 
+
 ### -field Reserved
 
 N/A
 
+
 ### -field Valid
 
 N/A
+
 </dd>
 </dl>
 
@@ -144,13 +155,16 @@ N/A
 
 N/A
 
+
 ### -field Reserved
 
 N/A
 
+
 ### -field Valid
 
 N/A
+
 </dd>
 </dl>
 
@@ -161,13 +175,16 @@ N/A
 
 N/A
 
+
 ### -field Reserved
 
 N/A
 
+
 ### -field Valid
 
 N/A
+
 </dd>
 </dl>
 
@@ -178,19 +195,23 @@ N/A
 
 N/A
 
+
 ### -field Reserved0
 
 N/A
 
+
 ### -field Valid
 
 N/A
+
 </dd>
 </dl>
 
 ### -field Reserved
 
 N/A
+
 
 ## -remarks
 
@@ -200,6 +221,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

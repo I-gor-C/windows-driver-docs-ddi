@@ -7,7 +7,7 @@ old-location: display\videoportgetassociateddeviceextension.htm
 old-project: display
 ms.assetid: 825e2b61-6b51-4553-88e1-0aff2e9e3cce
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortGetAssociatedDeviceExtension
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>VideoPortGetAssociatedDeviceExtension</b> function returns the device extension for the parent of the specified device object.
 
 
+
 ## -syntax
 
 ````
@@ -57,17 +58,21 @@ PVOID VideoPortGetAssociatedDeviceExtension(
 
 Is the device object of a child device.
 
+
 ## -returns
 <b>VideoPortGetAssociatedDeviceExtension</b> returns a pointer to the device extension of <i>DeviceObject</i>'s parent.
 
+
 ## -remarks
 The miniport driver of a child device can call this function to obtain a description of its parent through the parent's device extension.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +83,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +115,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +126,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

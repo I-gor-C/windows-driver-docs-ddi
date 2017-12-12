@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_state.htm
 old-project: wdf
 ms.assetid: 06bb6465-afc6-4b92-b3d7-1c66f6c6c33d
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_DEVICE_POWER_STATE, WDF_DEVICE_POWER_STATE, *PWDF_DEVICE_POWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WDF_DEVICE_POWER_STATE</b> enumeration identifies all of the states that the framework's power state machine can enter.
+
 
 
 ## -syntax
@@ -460,19 +462,23 @@ typedef enum _WDF_DEVICE_POWER_STATE {
 ## -remarks
 The <b>WDF_DEVICE_POWER_STATE</b> enumeration is used as a member type in the <a href="wdf.wdf_device_power_notification_data">WDF_DEVICE_POWER_NOTIFICATION_DATA</a> structure and as the return type for the <a href="wdf.wdfdevicegetdevicepowerstate">WdfDeviceGetDevicePowerState</a> method.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

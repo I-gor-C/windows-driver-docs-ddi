@@ -7,7 +7,7 @@ old-location: netvista\rilcallrtt.htm
 old-project: netvista
 ms.assetid: aa69cc11-66c7-4d23-b596-c37472af484a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLRTT, RILCALLRTT, *LPRILCALLRTT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef struct _RILCALLRTT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

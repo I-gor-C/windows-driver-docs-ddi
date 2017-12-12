@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>KsCreateClock</b> function creates a handle to a clock instance. 
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ NTSTATUS KsCreateClock(
 
 Specifies the handle to the connection on which to create the clock.
 
+
 ### -param ClockCreate [in]
 
 Specifies clock create parameters. This currently consists of a flag that must be set to zero.
+
 
 ### -param ClockHandle [out]
 
 Specifies the new clock handle.
 
+
 ## -returns
 The <b>KsCreateClock</b> function returns STATUS_SUCCESS if successful, or it returns an error on clock creation failure.
+
 
 ## -remarks
 
@@ -77,6 +82,7 @@ The <b>KsCreateClock</b> function returns STATUS_SUCCESS if successful, or it re
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,9 +115,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

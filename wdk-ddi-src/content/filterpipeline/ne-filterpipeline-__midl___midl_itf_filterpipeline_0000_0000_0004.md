@@ -7,7 +7,7 @@ old-location: print\expsfontrestriction.htm
 old-project: print
 ms.assetid: 079BEF8A-514E-42C3-8916-95655C605098
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: __MIDL___MIDL_itf_filterpipeline_0000_0000_0004, EXpsFontRestriction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,6 +38,7 @@ req.irql: <= APC_LEVEL
 
 
 ## -description
+
 
 
 
@@ -75,6 +76,7 @@ typedef enum __MIDL___MIDL_itf_filterpipeline_0000_0000_0004 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

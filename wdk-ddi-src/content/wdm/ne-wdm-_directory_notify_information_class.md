@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 A value that specifies which structure to use to query or set information for a files in a directory.
+
 
 
 ## -syntax
@@ -59,9 +61,11 @@ typedef enum _DIRECTORY_NOTIFY_INFORMATION_CLASS {
 
 A <b>FILE_NOTIFY_INFORMATION </b>structure.
 
+
 ### -field DirectoryNotifyExtendedInformation
 
 A <b>FILE_NOTIFY_EXTENDED_INFORMATION</b> structure.
+
 
 ## -remarks
 
@@ -71,22 +75,27 @@ A <b>FILE_NOTIFY_EXTENDED_INFORMATION</b> structure.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

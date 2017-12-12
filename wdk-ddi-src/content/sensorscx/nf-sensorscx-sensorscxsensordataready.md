@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This function notifies the class extension that the driver has retrieved data.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ FORCEINLINE NTSTATUS SensorsCxSensorDataReady(
 
 A reference to a sensor object.
 
+
 ### -param pSensorData [in]
 
 A list of <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor properties</a>. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
+
 
 ## -returns
 This function returns NTSTATUS with different values. Some values that may be returned are the following:
@@ -70,6 +73,7 @@ STATUS_SUCCESS is returned if the function completes successfully.
 STATUS_UNSUCCESSFUL is returned if the function does not complete successfully.
 
 STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL.
+
 
 ## -remarks
 This function is implemented by the class extension and the driver must call it. Note that when batch latency expires for sensor drivers
@@ -82,6 +86,7 @@ This function is implemented by the class extension and the driver must call it.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +97,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +120,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20SensorsCxSensorDataReady function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

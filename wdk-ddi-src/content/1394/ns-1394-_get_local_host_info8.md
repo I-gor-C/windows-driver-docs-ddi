@@ -41,6 +41,7 @@ req.irql:
 The <b>GET_LOCAL_HOST_INFO8</b> structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request with <b>u.GetLocalHostInformation.nLevel</b> set to GET_HOST_DDI_VERSION.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _GET_LOCAL_HOST_INFO8 {
 
 The major version of the 1394 bus driver interface.
 
+
 ### -field MinorVersion
 
 The minor version of the 1394 bus driver interface.
+
 
 ## -remarks
 A client driver can determine whether the 1394 bus driver
@@ -77,19 +80,23 @@ driver, the request returns a status value of STATUS_SUCCESS. Otherwise, the
 legacy 1394 bus driver returns a status value of
 STATUS_INVALID_PARAMETER.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

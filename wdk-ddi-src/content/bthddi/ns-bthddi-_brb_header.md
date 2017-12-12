@@ -43,6 +43,7 @@ The BRB_HEADER structure contains header information about a Bluetooth request b
   process.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _BRB_HEADER {
 
 A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.
 
+
 ### -field Length
 
 The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
@@ -75,9 +77,11 @@ The size, in bytes, of the BRB, including the BRB_HEADER structure. The
      <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
      member.
 
+
 ### -field Version
 
 For internal use only. Do not use.
+
 
 ### -field Type
 
@@ -87,6 +91,7 @@ The Bluetooth request block type. The
      <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
      member.Possible values include:
      
+
 <ul>
 <li>BRB_HCI_GET_LOCAL_BD_ADDR</li>
 <li>BRB_L2CA_REGISTER_SERVER</li>
@@ -117,15 +122,18 @@ The Bluetooth request block type. The
 
 For internal use only. Do not use.
 
+
 ### -field Status
 
 The NTSTATUS code that is passed when the BRB call completes.
+
 
 ### -field BtStatus
 
 The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that is passed in the 
      <b>Status</b> member. Possible values include:
      
+
 <ul>
 <li>BTH_ERROR_SUCCESS</li>
 <li>BTH_ERROR_ACL_CONNECTION_ALREADY_EXISTS</li>
@@ -175,14 +183,17 @@ The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that 
 
 For internal use only. Do not use.
 
+
 ### -field ClientContext
 
 The client context that is associated with the BRB call. The caller can use this member to store a
      pointer or other information.
 
+
 ### -field Reserved
 
 Reserved for future use. Do not use.
+
 
 ## -remarks
 The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
@@ -193,19 +204,23 @@ The BRB_HEADER structure contains common types of information about the specifie
 Profile drivers should not modify any of the members of the BRB_HEADER structure except 
     <b>ClientContext</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -228,5 +243,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB_HEADER structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

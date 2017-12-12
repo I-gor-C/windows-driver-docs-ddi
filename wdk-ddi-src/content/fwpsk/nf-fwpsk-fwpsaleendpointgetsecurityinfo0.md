@@ -7,7 +7,7 @@ old-location: netvista\fwpsaleendpointgetsecurityinfo0.htm
 old-project: netvista
 ms.assetid: 0c825695-7fef-4eb1-8615-f41c526aa32d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsAleEndpointGetSecurityInfo0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   enforcement (ALE) endpoint enumeration session.
 
 
+
 ## -syntax
 
 ````
@@ -66,31 +67,38 @@ A handle for an open session with the filter engine. This handle is obtained whe
      opened by calling 
      <a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a>.
 
+
 ### -param securityInfo [in]
 
 A set of security information flags. For more information, see the 
      <a href="ifsk.security_information">SECURITY_INFORMATION</a> description in the
      Installable File Systems driver documentation.
 
+
 ### -param sidOwner [out]
 
 The security identifier of the security owner.
+
 
 ### -param sidGroup [out]
 
 The security identifier of the security group.
 
+
 ### -param dacl [out]
 
 The discretionary access control list.
+
 
 ### -param sacl [out]
 
 The system access control list.
 
+
 ### -param securityDescriptor [out]
 
 The security descriptor structure.
+
 
 ## -returns
 The 
@@ -104,6 +112,7 @@ The
 
  
 
+
 ## -remarks
 
 
@@ -112,6 +121,7 @@ The
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,14 +132,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,6 +153,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +164,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -171,5 +187,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointGetSecurityInfo0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointGetSecurityInfo0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

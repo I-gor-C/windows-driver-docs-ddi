@@ -7,8 +7,8 @@ old-location: kernel\pep_component_perf_set.htm
 old-project: kernel
 ms.assetid: E4EB8052-545C-46AE-A879-1F216B7FD20B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_COMPONENT_PERF_SET, PEP_COMPONENT_PERF_SET, *PPEP_COMPONENT_PERF_SET
+ms.date: 12/7/2017
+ms.keywords: _PEP_COMPONENT_PERF_SET, *PPEP_COMPONENT_PERF_SET, PEP_COMPONENT_PERF_SET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_COMPONENT_PERF_SET</b> structure describes the performance states (P-states) in a P-state set.
 
 
+
 ## -syntax
 
 ````
@@ -69,33 +70,41 @@ typedef struct _PEP_COMPONENT_PERF_SET {
 
 An optional string that describes the device property controlled by this P-state set.  For example, this string might be "Clock frequency" or "Memory bandwidth". If no such string is available for this P-state, the <b>Name</b> member is set to NULL. Otherwise, this member contains a pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the string.
 
+
 ### -field Flags
 
 Set to zero. No flag bits are currently defined for this member.
+
 
 ### -field Unit
 
 A <a href="kernel.pep_perf_state_unit">PEP_PERF_STATE_UNIT</a> structure that specifies the units in which the performance values for this P-state set are expressed. Component performance can be expressed in hertz (frequency) or in bits per second (bandwidth).
 
+
 ### -field Type
 
 A <a href="kernel.pep_perf_state_type">PEP_PERF_STATE_TYPE</a> enumeration value that indicates the type of performance information that is specified for this component. This member indicates whether the performance values for this P-state set are specified as a list of discrete values or as a continuous range of values.
+
 
 ### -field ( unnamed union )
 
 A union that contains the performance measurement values for this P-state. This union contains either a list of discrete values (if <b>Type</b> = <b>PepPerfStateTypeDiscrete</b>) or a continuous range of values (if <b>Type</b> = <b>PepPerfStateTypeRange</b>).
 
+
 ### -field Discrete
 
 The list of discrete performance values for this P-state set.
+
 
 ### -field Count
 
 The number of P-states in this P-state set.
 
+
 ### -field States
 
 A pointer to an array of <a href="kernel.pep_perf_state">PEP_PERF_STATE</a> structures, each of which describes a discrete performance value in this P-state set. The <b>Count</b> member specifies the number of elements in this array. A P-state is identified by its array index. If the array contains N elements, P-state indexes range from 0 to N–1.
+
 </dd>
 </dl>
 
@@ -103,13 +112,16 @@ A pointer to an array of <a href="kernel.pep_perf_state">PEP_PERF_STATE</a> stru
 
 The range of discrete performance measurement values for this P-state set.
 
+
 ### -field Minimum
 
 The minimum value in the range. This value is expressed in the units indicated by the <b>Unit</b> member.
 
+
 ### -field Maximum
 
 The maximum value in the range. This value is expressed in the units indicated by the <b>Unit</b> member.
+
 </dd>
 </dl>
 </dd>
@@ -120,19 +132,23 @@ The <b>PerfStateSets</b> member of the <a href="kernel.pep_component_perf_info">
 
 Device drivers use the <a href="kernel.po_fx_component_perf_set">PO_FX_COMPONENT_PERF_SET</a> structure, which is similar to the <b>PEP_COMPONENT_PERF_SET</b> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -164,5 +180,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_COMPONENT_PERF_SET structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_COMPONENT_PERF_SET structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

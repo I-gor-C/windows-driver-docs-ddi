@@ -7,7 +7,7 @@ old-location: netvista\dot11_erp_phy_attributes.htm
 old-project: netvista
 ms.assetid: ce5f2833-7df6-449b-be68-ed58620fbb43
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DOT11_ERP_PHY_ATTRIBUTES, DOT11_ERP_PHY_ATTRIBUTES, *PDOT11_ERP_PHY_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,14 +62,17 @@ Since the ERP PHY type is a superset of the high-rate direct-sequence spread spe
      DOT11_HRDSSS_PHY_ATTRIBUTES</a> structure in order to define the HRDSS-specific attributes of the
      PHY.
 
+
 ### -field bERPPBCCOptionImplemented
 
 A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports enabled packet binary
      convolutional code (PBCC) modulation. 
      
+
 For more information about PBCC modulation, refer to Clause 18.4.6.6 of the IEEE 802.11b-1999
      standard. For more information about the ERP-PBCC option, refer to Clause 19.6 of the IEEE 802.11g-2003
      standard.
+
 
 ### -field bDSSSOFDMOptionImplemented
 
@@ -78,14 +81,17 @@ A Boolean value that, if set to <b>TRUE</b>, specifies the PHY has enabled the u
      direct-sequence spread spectrum (DSSS) preamble and header with the orthogonal frequency division
      multiplexing (OFDM) payload.
      
+
 For more information about DSSS-OFDM modulation, refer to Clause 19.7 of the IEEE 802.11g-2003
      standard.
+
 
 ### -field bShortSlotTimeOptionImplemented
 
 A Boolean value that, if set to <b>TRUE</b>, specifies the PHY supports the 802.11g short slot time
      option. For more information about the short slot time, refer to Clause 7.3.1.4 of the IEEE 802.11g-2003
      standard.
+
 
 ## -remarks
 The miniport driver defines the attributes of a PHY on the 802.11 station through the 
@@ -94,20 +100,24 @@ The miniport driver defines the attributes of a PHY on the 802.11 station throug
     <b>ERPAttributes</b> member as a DOT11_ERP_PHY_ATTRIBUTES structure. The driver must only do this if the
     PHY defined by the DOT11_PHY_ATTRIBUTES structure is an ERP PHY type.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +137,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ERP_PHY_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ERP_PHY_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

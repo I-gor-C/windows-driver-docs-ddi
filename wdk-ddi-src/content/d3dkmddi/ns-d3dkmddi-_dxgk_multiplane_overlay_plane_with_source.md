@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_plane_with_source.htm
 old-project: display
 ms.assetid: 358C060B-23A0-4F02-A5D3-07ADC3435849
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ describes the multi-plane overlay plane attributes, allocation, and video presen
 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE {
 
 A handle to the allocation.
 
+
 ### -field VidPnSourceId
 
 The zero-based video present network source identification number of the input for which the support levels are queried.
+
 
 ### -field LayerIndex
 
 The index of the layer being queried.
 
+
 ### -field PlaneAttributes
 
 A <a href="display.dxgk_multiplane_overlay_attributes2">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> structure that specifies overlay plane attributes.
+
 
 ## -remarks
 
@@ -82,22 +87,27 @@ A <a href="display.dxgk_multiplane_overlay_attributes2">DXGK_MULTIPLANE_OVERLAY_
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

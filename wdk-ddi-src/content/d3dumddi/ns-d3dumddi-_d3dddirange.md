@@ -7,7 +7,7 @@ old-location: display\d3dddirange.htm
 old-project: display
 ms.assetid: 3A64DB04-EDAE-419C-947B-67201ECA8068
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDIRANGE, D3DDDIRANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a range of memory within a buffer.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DDDIRANGE {
 
 An offset, in bytes, from the start of the buffer.
 
+
 ### -field Size
 
 The size, in bytes, of a block of memory that begins at the buffer location specified by the <b>Offset</b> member.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The size, in bytes, of a block of memory that begins at the buffer location spec
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

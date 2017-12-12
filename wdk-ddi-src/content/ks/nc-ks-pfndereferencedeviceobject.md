@@ -41,6 +41,7 @@ req.irql:
 The driver can use this routine to decrement the reference count of the PDO.
 
 
+
 ## -prototype
 
 ````
@@ -59,19 +60,23 @@ VOID KStrDereferenceDeviceObject(
 
 Pointer to a device extension of the device's PDO.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the request is handled. Otherwise returns an appropriate error code.
+
 
 ## -remarks
 Minidrivers access this method through the <b>DereferenceDeviceObject</b> member of the <a href="stream.bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.
 
 When the PDO's reference count is 0, it becomes eligible for removal. Note that this condition does not guarantee removal.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

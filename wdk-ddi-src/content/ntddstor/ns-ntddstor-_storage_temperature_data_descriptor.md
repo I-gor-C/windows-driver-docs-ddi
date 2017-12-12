@@ -7,8 +7,8 @@ old-location: storage\storage_temperature_data_descriptor.htm
 old-project: storage
 ms.assetid: A6041B10-0296-4A96-B65C-C35B8DCB2B5D
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR, *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure is used in conjunction with <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to return temperature data from a storage device or adapter. 
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 
 Contains the size of this structure, in bytes. The value of this member will change as members are added to the structure.
 
+
 ### -field Size
 
 Specifies the total size of the data returned, in bytes. This may include data that follows this structure.
+
 
 ### -field CriticalTemperature
 
 Indicates the minimum temperature in degrees Celsius that may prevent normal operation. Exceeding this temperature may result in possible data loss, automatic device shutdown, extreme performance throttling, or permanent damage.      
 
+
 ### -field WarningTemperature
 
 Indicates the maximum temperature in degrees Celsius at which the device is capable of operating continuously without degrading operation or reliability.    
+
 
 ### -field InfoCount
 
 Specifies the number of <a href="storage.storage_temperature_info">STORAGE_TEMPERATURE_INFO</a> structures reported in <b>TemperatureInfo</b>. More than one set of temperature data may be returned when there are multiple sensors in the drive.
 
+
 ### -field Reserved0
 
 Reserved for future use.
+
 
 ### -field Reserved1
 
 Reserved for future use.
 
+
 ### -field TemperatureInfo[ANYSIZE_ARRAY]
 
 Device temperature data, of type <a href="storage.storage_temperature_info">STORAGE_TEMPERATURE_INFO</a>.
+
 
 ## -remarks
 
@@ -99,22 +108,27 @@ Device temperature data, of type <a href="storage.storage_temperature_info">STOR
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,5 +154,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

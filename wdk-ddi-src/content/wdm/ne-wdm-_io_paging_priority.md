@@ -7,7 +7,7 @@ old-location: kernel\io_paging_priority.htm
 old-project: kernel
 ms.assetid: c96d1c81-429f-46de-b56c-6424734ccd7a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _IO_PAGING_PRIORITY, IO_PAGING_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IO_PAGING_PRIORITY</b> enumeration describes the priority value for a paging I/O IRP.
 
 
+
 ## -syntax
 
 ````
@@ -61,30 +62,37 @@ typedef enum _IO_PAGING_PRIORITY {
 
 The IRP is not a paging I/O IRP.
 
+
 ### -field IoPagingPriorityNormal
 
 The associated IRP has a normal priority level for paging I/O. 
+
 
 ### -field IoPagingPriorityHigh
 
 The associated IRP has a high priority level for paging I/O. 
 
+
 ### -field IoPagingPriorityReserved1
 
 Reserved for system use.
+
 
 ### -field IoPagingPriorityReserved2
 
 Reserved for system use. 
 
+
 ## -remarks
 The <a href="kernel.iogetpagingiopriority">IoGetPagingIoPriority</a> routine returns an <b>IO_PAGING_PRIORITY</b> value to indicate the priority value of a paging I/O IRP. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +109,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_PAGING_PRIORITY enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_PAGING_PRIORITY enumeration%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

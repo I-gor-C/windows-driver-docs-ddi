@@ -41,6 +41,7 @@ req.irql:
 This structure contains an individual breadcrumb. The order and types of the fields are designed  to pack densely.
 
 
+
 ## -syntax
 
 ````
@@ -66,45 +67,56 @@ typedef struct {
 
 Contains the breadcrumb fix timestamp value.
 
+
 ### -field Latitude
 
 Contains the breadcrumb longitude value at the time of the fix.
+
 
 ### -field Longitude
 
 Contains the breadcrumb latitude at the time of the fix.
 
+
 ### -field HorizontalAccuracy
 
 Contains the breadcrumb horizontal altitude value.
+
 
 ### -field Speed
 
 Contains the speed value at the time of the breadcrumb fix.
 
+
 ### -field SpeedAccuracy
 
 Contains the breadcrumb speed accuracy value.
+
 
 ### -field Altitude
 
 Contains the breadcrumb altitude value at the time of the fix.
 
+
 ### -field AltitudeAccuracy
 
 Contains the breadcrumb altitude accuracy value.
+
 
 ### -field Heading
 
 Contains the breadcrumb heading value at the time of the fix.
 
+
 ### -field HeadingAccuracy
 
 Contains the breadcrumb heading accuracy value.
 
+
 ### -field FixSuccess
 
 A Boolean type that contains the fix success value.
+
 
 ## -remarks
 
@@ -114,6 +126,7 @@ A Boolean type that contains the fix success value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

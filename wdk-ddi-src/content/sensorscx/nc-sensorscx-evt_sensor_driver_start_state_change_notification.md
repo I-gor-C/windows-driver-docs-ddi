@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Used to start a state change notification.
 
 
+
 ## -prototype
 
 ````
@@ -57,8 +58,10 @@ NTSTATUS  EVT_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION(
 
 Holds information on the sensors handled by the sensor driver.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -78,9 +82,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _requires_same_
+
 </td>
 </tr>
 </table>

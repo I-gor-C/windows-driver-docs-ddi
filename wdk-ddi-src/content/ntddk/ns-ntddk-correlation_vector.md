@@ -7,7 +7,7 @@ old-location: kernel\correlation_vector.htm
 old-project: kernel
 ms.assetid: 35c1799f-2012-42b0-95e6-6902c818a094
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: CORRELATION_VECTOR, CORRELATION_VECTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Store the correlation vector that is used to reference events and the generated 
     for diagnostic purposes.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _CORRELATION_VECTOR {
 ### -field Version
 
 The version of the correlation vector. Possible values are: 
+
 <ul>
 <li>RTL_CORRELATION_VECTOR_VERSION_1</li>
 <li>RTL_CORRELATION_VECTOR_VERSION_2</li>
@@ -67,6 +69,7 @@ The version of the correlation vector. Possible values are:
 
 An array CHARs that represents the correlation vector.
 
+
 ## -remarks
 
 
@@ -75,22 +78,27 @@ An array CHARs that represents the correlation vector.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

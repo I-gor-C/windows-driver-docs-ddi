@@ -7,7 +7,7 @@ old-location: display\pfnunlock2cb.htm
 old-project: display
 ms.assetid: 642C6A05-DA8C-453A-B1AA-030C59F32DA5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>pfnUnlock2Cb</b> function unlocks an allocation that was locked by a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock2cb.md">pfnLock2Cb</a> function.
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ HRESULT APIENTRY CALLBACK* pfnUnlock2Cb(
 
 A handle to the display device (graphics context).
 
+
 ### -param pData [in]
 
 A pointer to a <a href="display.d3dddicb_unlock2">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.
 
+
 ## -returns
 If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

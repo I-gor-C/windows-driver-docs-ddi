@@ -7,7 +7,7 @@ old-location: kernel\ioreportresourcefordetection.htm
 old-project: kernel
 ms.assetid: 83b8e0b0-112c-4263-91f8-0c2e20dd76a4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoReportResourceForDetection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL (see Remarks section)
 The <b>IoReportResourceForDetection</b> routine claims hardware resources in the configuration registry for a legacy device.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ NTSTATUS IoReportResourceForDetection(
 
 Pointer to the driver object that was input to the driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
 
+
 ### -param DriverList [in, optional]
 
 Optionally points to a caller-supplied buffer that contains the driver's resource list, if the driver claims the same resources for all its devices. If the caller specifies a <i>DeviceList</i>, this parameter is ignored.
+
 
 ### -param DriverListSize [in, optional]
 
 Specifies the size in bytes of an optional <i>DriverList</i>. If <i>DriverList</i> is <b>NULL</b>, this parameter should be zero.
 
+
 ### -param DeviceObject [in, optional]
 
 Optionally points to the device object representing device for which the driver is attempting to claim resources. 
+
 
 ### -param DeviceList [in, optional]
 
 Optionally points to a caller-supplied buffer containing the device's resource list. If the driver claims the same resources for all its devices, the caller can specify a <i>DriverList</i> instead. 
 
+
 ### -param DeviceListSize [in, optional]
 
 Specifies the size in bytes of an optional <i>DeviceList</i>. If <i>DeviceList</i> is <b>NULL</b>, this parameter should be zero. 
 
+
 ### -param ConflictDetected [out]
 
 Pointer to a caller-supplied Boolean value that is set to <b>TRUE</b> on return if the resources are not available. 
+
 
 ## -returns
 <b>IoReportResourceForDetection</b> returns STATUS_SUCCESS if the resources are claimed. Possible error return values include the following.
@@ -96,6 +104,7 @@ Pointer to a caller-supplied Boolean value that is set to <b>TRUE</b> on return 
 </dl>The <i>DeviceList</i> or <i>DriverList</i> is invalid.
 
  
+
 
 ## -remarks
 This routine is for drivers that detect earlier hardware which cannot be enumerated by Plug and Play (PnP).
@@ -126,11 +135,13 @@ A driver can call this routine more than once for a given device. If one set of 
 
 Callers of <b>IoReportResourceForDetection</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -141,14 +152,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,6 +173,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -169,6 +184,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -179,9 +195,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -196,5 +214,8 @@ PASSIVE_LEVEL (see Remarks section)
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportResourceForDetection routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportResourceForDetection routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

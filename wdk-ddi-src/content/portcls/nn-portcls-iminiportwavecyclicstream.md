@@ -39,11 +39,14 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IMiniportWaveCyclicStream</code> interface represents the wave stream that flows through a pin on a WaveCyclic filter. The filter wraps a WaveCyclic rendering or capture device and is implemented by pairing a WaveCyclic port driver with a WaveCyclic miniport driver. The miniport driver implements the <code>IMiniportWaveCyclicStream</code> interface and exposes it to the port driver. The miniport driver creates a stream object with this interface when the port driver calls the miniport driver's <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a> method. <code>IMiniportWaveCyclicStream</code> inherits from the <b>IUnknown</b> interface.
+
 The <code>IMiniportWaveCyclicStream</code> interface provides methods for managing a single stream of incoming or outgoing audio wave data. This is the interface that exposes most of the miniport driver's functionality.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveCyclicStream</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -53,6 +56,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveCyclicStream</b>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

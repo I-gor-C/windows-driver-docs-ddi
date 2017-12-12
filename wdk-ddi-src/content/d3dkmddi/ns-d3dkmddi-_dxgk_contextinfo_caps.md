@@ -7,7 +7,7 @@ old-location: display\dxgk_contextinfo_caps.htm
 old-project: display
 ms.assetid: AC65F790-981F-4B50-BB9E-84F79D8F6C4F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_CONTEXTINFO_CAPS, DXGK_CONTEXTINFO_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>DXGK_CONTEXTINFO_CAPS</b> is used to describe  the capabilities supported by a driver.
 
 
+
 ## -syntax
 
 ````
@@ -64,21 +65,26 @@ typedef struct _DXGK_CONTEXTINFO_CAPS {
 
 Indicates that no memory patching is required.
 
+
 ### -field DriverManagesResidency
 
 Indicates that the driver manages memory residency.
+
 
 ### -field UseIoMmu
 
 Indicates that the driver supports IoMmu. 
 
+
 ### -field Reserved
 
 This field is reserved and should not be used.
 
+
 ### -field Value
 
 The consolidated value of the structure.
+
 
 ## -remarks
 
@@ -88,22 +94,27 @@ The consolidated value of the structure.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

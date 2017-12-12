@@ -7,7 +7,7 @@ old-location: netvista\fwps_callout2.htm
 old-project: netvista
 ms.assetid: 88d5a5ad-b71a-49b3-a1cf-b0dff1a85745
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_CALLOUT2_, FWPS_CALLOUT2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The <b>FWPS_CALLOUT2</b> structure defines the data that is required for a callo
 
 
 
+
 ## -syntax
 
 ````
@@ -63,10 +64,12 @@ typedef struct FWPS_CALLOUT2_ {
 
 A callout driver-defined <b>GUID</b> that uniquely identifies the callout.
 
+
 ### -field flags
 
 Flags that specify callout-specific parameters. Possible flags are:
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -85,6 +88,7 @@ A callout driver can specify this flag when registering a callout that will be a
        is a context associated with the data flow. A callout driver associates a context with a data flow by
        calling the 
        <a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function.
+
 </td>
 </tr>
 <tr>
@@ -99,6 +103,7 @@ A callout driver specifies this flag to indicate that the callout driver's
        by offloading network data processing to offload-capable network interface cards (NICs). If this flag
        is not specified, then offloading of network data processing is disabled for all traffic that is
        processed by any filters that specify the callout for the filter's action.
+
 </td>
 </tr>
 <tr>
@@ -109,6 +114,7 @@ A callout driver specifies this flag to indicate that the callout driver's
 </td>
 <td width="60%">
 A callout driver specifies this flag to indicate that it can receive notifications about objects and filters that are added inside a transaction. The filter engine sends the notification after the transaction is committed.
+
 </td>
 </tr>
 <tr>
@@ -119,6 +125,7 @@ A callout driver specifies this flag to indicate that it can receive notificatio
 </td>
 <td width="60%">
 A callout driver specifies this flag to indicate that it can perform  dynamic stream inspection of data flows at stream level. See <a href="netvista.stream_inspection">Stream Inspection</a>.
+
 </td>
 </tr>
 <tr>
@@ -129,6 +136,7 @@ A callout driver specifies this flag to indicate that it can perform  dynamic st
 </td>
 <td width="60%">
 A callout driver specifies this flag to register itself to be called when an existing socket operation is reclassified.
+
 </td>
 </tr>
 <tr>
@@ -139,6 +147,7 @@ A callout driver specifies this flag to register itself to be called when an exi
 </td>
 <td width="60%">
 Reserved for system use. Callout drivers should ignore this flag.
+
 </td>
 </tr>
 <tr>
@@ -149,6 +158,7 @@ Reserved for system use. Callout drivers should ignore this flag.
 </td>
 <td width="60%">
 A callout driver specifies this flag to indicate that the callout supports receive segment coalescing (RSC) with large packets of up to 64K. If this flag is not specified, and a callout is registered, then RSC is disabled for all traffic that is processed by any filters that specify the callout for the filter's action.
+
 </td>
 </tr>
 <tr>
@@ -159,7 +169,9 @@ A callout driver specifies this flag to indicate that the callout supports recei
 </td>
 <td width="60%">
 A callout driver specifies this flag when registering a callout that will be added at layer 2, to indicate that its <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn2.md">classifyFn2</a> callout function can classify multiple chained <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. For more info, see <a href="netvista.using_layer_2_filtering">Using Layer 2 Filtering</a>.
+
 <div class="alert"><b>Caution</b>  <p class="note">If a callout driver sets this flag, it cannot use the following functions to modify NET_BUFFER_LISTs.
+
 <ul>
 <li>
 <a href="netvista.fwpsreferencenetbufferlist0">FwpsReferenceNetBufferList0</a>
@@ -175,6 +187,7 @@ A callout driver specifies this flag when registering a callout that will be add
 </li>
 </ul>
 <p class="note">With this flag set, <b>FwpsAllocateCloneNetBufferList0</b> will always return an <b>INVALID_PARAMETER</b> error. This may unexpectedly cause a 3rd party callout driver to fail to manage the reference count of NET_BUFFER_LISTs, causing send and receive operations to stop.
+
 </div>
 <div> </div>
 </td>
@@ -182,11 +195,13 @@ A callout driver specifies this flag when registering a callout that will be add
 </table>
  
 
+
 ### -field classifyFn
 
 A pointer to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn2.md">classifyFn2</a> callout function. The filter
      engine calls this function whenever there is network data to be processed by the callout.
+
 
 ### -field notifyFn
 
@@ -194,14 +209,17 @@ A pointer to the callout driver's
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn2.md">notifyFn2</a> function. The filter engine calls
      this function to notify the callout driver about events that are associated with the callout.
 
+
 ### -field flowDeleteFn
 
 A pointer to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a> callout function. The filter
      engine calls this function whenever a data flow that is being processed by the callout is terminated.
      
+
 If a callout driver does not associate a context with the data flows that the callout processes, then
      this member should be set to NULL.
+
 
 ## -remarks
 A callout driver passes a pointer to an initialized <b>FWPS_CALLOUT2</b> structure to the 
@@ -217,19 +235,23 @@ This structure is essentially identical to the previous version,
     <a href="netvista.fwps_callout1">FWPS_CALLOUT1</a>. The only differences are that
     the members of this version store the updated versions of the callout function pointers, and additional flags are available for callout drivers to set.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -264,5 +286,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT2 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT2 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

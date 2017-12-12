@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-writebufferimmediate-parameter-0032.htm
 old-project: display
 ms.assetid: 84b0f28d-2157-492e-bafa-ea97956d66f2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Write buffer immediate parameter.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032 {
 
 Destination.
 
+
 ### -field Value
 
 Value.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\iddcx_cursor_caps.htm
 old-project: display
 ms.assetid: 3bd92999-07f3-43bb-a826-4fea3e19168a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_CURSOR_CAPS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -64,10 +65,12 @@ typedef struct IDDCX_CURSOR_CAPS {
                      Total size of the structure.
                  
 
+
 ### -field ColorXorCursorSupport
 
 
                      Indicates what level of support the driver has for XOR masks in the 32-bit masked color cursor format.
+
 <div class="alert"><b>Note</b>  The OS first converts any monochrome cursor to a color mask cursor.</div>
 <div> </div>
 
@@ -77,17 +80,20 @@ typedef struct IDDCX_CURSOR_CAPS {
                      Indicates if the adapter supports the 32-bit alpha cursor format. Most cursors are alpha format.
                  
 
+
 ### -field MaxX
 
 
                      The maximum width supported for all supported cursor types.
                  
 
+
 ### -field MaxY
 
 
                      The maximum height support for all cursor types.
                  
+
 
 ## -remarks
 
@@ -97,6 +103,7 @@ typedef struct IDDCX_CURSOR_CAPS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

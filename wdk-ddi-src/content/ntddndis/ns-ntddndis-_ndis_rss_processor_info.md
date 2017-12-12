@@ -7,8 +7,8 @@ old-location: netvista\ndis_rss_processor_info.htm
 old-project: netvista
 ms.assetid: 7f40a815-0247-428c-a46f-d3cdbf7e8058
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
+ms.date: 12/8/2017
+ms.keywords: _NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The <b>NDIS_RSS_PROCESSOR_INFO</b> structure specifies information about the CPU
   processor set on the local computer.
 
 
+
 ## -syntax
 
 ````
@@ -73,6 +74,7 @@ The
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_PROCESSOR_INFO</b>. NDIS also sets the 
      <b>Revision</b> and 
      <b>Size</b> members to the values shown in the following table.
+
 <table>
 <tr>
 <th>NDIS version</th>
@@ -83,6 +85,7 @@ The
 <td>
 NDIS 6.20
        
+
 </td>
 <td><b>NDIS_RSS_PROCESSOR_INFO_REVISION_1</b></td>
 <td><b>NDIS_SIZEOF_RSS_PROCESSOR_INFO_REVISION_1</b></td>
@@ -91,6 +94,7 @@ NDIS 6.20
 <td>
 NDIS 6.30
        
+
 </td>
 <td><b>NDIS_RSS_PROCESSOR_INFO_REVISION_2</b></td>
 <td><b>NDIS_SIZEOF_RSS_PROCESSOR_INFO_REVISION_2</b></td>
@@ -98,13 +102,16 @@ NDIS 6.30
 </table>
  
 
+
 ### -field Flags
 
 Reserved. NDIS sets this member to zero.
 
+
 ### -field RssBaseProcessor
 
 The starting processor number that is used for RSS. 
+
 <div class="alert"><b>Note</b>  The RSS base CPU number is the CPU number of the first CPU that RSS can use. RSS cannot use the CPUs that are numbered below the base CPU number.</div>
 <div> </div>
 
@@ -112,9 +119,11 @@ The starting processor number that is used for RSS.
 
 The maximum number of processors that are used for RSS
 
+
 ### -field PreferredNumaNode
 
 The preferred NUMA node, which is the node closest to the NIC
+
 
 ### -field RssProcessorArrayOffset
 
@@ -125,23 +134,28 @@ The offset, in bytes, from the start of the structure to an array of
      <b>RssProcessorEntrySize</b> member contains the size of the <b>NDIS_RSS_PROCESSOR</b> structures in the
      array.
 
+
 ### -field RssProcessorCount
 
 The number of elements in the array of <a href="netvista.ndis_rss_processor">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.
+
 
 ### -field RssProcessorEntrySize
 
 The size, in bytes, of elements in the array of <a href="netvista.ndis_rss_processor">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.
 
+
 ### -field RssMaxProcessor
 
 The maximum processor number that is used for RSS.
 
+
 ### -field RssProfile
 
 Reserved.
+
 
 ## -remarks
 NDIS network drivers use the <b>NDIS_RSS_PROCESSOR_INFO</b> structure in calls to the 
@@ -150,19 +164,23 @@ NDIS network drivers use the <b>NDIS_RSS_PROCESSOR_INFO</b> structure in calls t
     <b>NdisGetRssProcessorInformation</b> returns, this structure contains information about the set of
     processors that will be used for receive side scaling (RSS).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -189,5 +207,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

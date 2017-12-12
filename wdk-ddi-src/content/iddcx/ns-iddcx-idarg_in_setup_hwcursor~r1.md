@@ -7,7 +7,7 @@ old-location: display\idarg_in_setup_hwcursor.htm
 old-project: display
 ms.assetid: 1e2c959c-0ebd-4464-ad47-96f432cb5c6b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_SETUP_HWCURSOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about new cursors associated with a monitor.
 
 
+
 ## -syntax
 
 ````
@@ -60,11 +61,13 @@ typedef struct IDARG_IN_SETUP_HWCURSOR {
                      [in] Cursor information for this path.
                  
 
+
 ### -field hNewCursorDataAvailable
 
 
                      [in] An event handle that will be triggered when new cursor data is available.
                  
+
 
 ## -remarks
 
@@ -74,6 +77,7 @@ typedef struct IDARG_IN_SETUP_HWCURSOR {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

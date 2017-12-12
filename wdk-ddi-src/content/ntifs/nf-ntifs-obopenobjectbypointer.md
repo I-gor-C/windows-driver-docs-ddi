@@ -42,6 +42,7 @@ req.irql: <= APC_LEVEL
    The <b>ObOpenObjectByPointer</b> function opens an object referenced by a pointer and returns a handle to the object. 
 
 
+
 ## -syntax
 
 ````
@@ -63,29 +64,35 @@ NTSTATUS ObOpenObjectByPointer(
 
 Pointer to the object to be opened. 
 
+
 ### -param HandleAttributes [in]
 
 Bitmask of flags specifying the desired attributes for the object handle. If the caller is not running in the system process context, these flags must include OBJ_KERNEL_HANDLE. This parameter is optional and can be zero. Otherwise, it is an ORed combination of one or more of the following: 
+
 
 ### -param OBJ_EXCLUSIVE
 
 <dd>
 The object is to be opened for exclusive access. If this flag is set and the call to <b>ObOpenObjectByPointer</b> succeeds, the object cannot be shared and cannot be opened again until the handle is closed. This flag is incompatible with the OBJ_INHERIT flag. This flag is invalid for file objects. 
 
+
 ### -param OBJ_FORCE_ACCESS_CHECK
 
 <dd>
 All access checks are to be enforced for the object, even if the object is being opened in kernel mode. If this flag is specified, the value of the <i>AccessMode</i> parameter is ignored. 
+
 
 ### -param OBJ_INHERIT
 
 <dd>
 The handle can be inherited by child processes of the current process. This flag is incompatible with the OBJ_EXCLUSIVE flag. 
 
+
 ### -param OBJ_KERNEL_HANDLE
 
 <dd>
 The handle can only be accessed in kernel mode. This flag must be specified if the caller is not running in the system process context. 
+
 </dd>
 </dl>
 
@@ -93,14 +100,17 @@ The handle can only be accessed in kernel mode. This flag must be specified if t
 
 Pointer to an <a href="ifsk.access_state">ACCESS_STATE</a> structure containing the object's subject context, granted access types, and remaining desired access types. This parameter is optional and can be <b>NULL</b>. In a create dispatch routine, this pointer can be found in <i>IrpSp-&gt;Parameters.Create.SecurityContext-&gt;AccessState</i>, where <b>IrpSp</b> is a pointer to the caller's own stack location in the IRP. (For more information, see <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>.) 
 
+
 ### -param DesiredAccess [in]
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value specifying the desired access to the object. This parameter is optional and can be zero. 
 
+
 ### -param ObjectType [in, optional]
 
 Pointer to the object type. If the value of <i>AccessMode</i> is <b>KernelMode</b>, this parameter is optional and can be <b>NULL</b>. Otherwise, it must be either <b>*ExEventObjectType</b>, <b>*ExSemaphoreObjectType</b>, <b>*IoFileObjectType</b>, <b>*PsThreadType </b>, <b>*SeTokenObjectType</b>, or <b>*CmKeyObjectType</b>. 
+
 <div class="alert"><b>Note</b>    The <b>SeTokenObjectType</b> object type is supported staring with Windows XP and  and the <b>CmKeyObjectType</b> object type is supported staring with Windows 7.</div>
 <div> </div>
 
@@ -108,9 +118,11 @@ Pointer to the object type. If the value of <i>AccessMode</i> is <b>KernelMode</
 
 Access mode to be used for the access check. This parameter is required and must be either <b>UserMode</b> or <b>KernelMode</b>. 
 
+
 ### -param Handle [out]
 
 Pointer to a caller-allocated variable that receives a handle to the object. 
+
 
 ## -returns
 <b>ObOpenObjectByPointer</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -138,6 +150,7 @@ Pointer to a caller-allocated variable that receives a handle to the object.
 
  
 
+
 ## -remarks
 If the <i>Object</i> parameter points to a file object (that is, a FILE_OBJECT structure), <b>ObOpenObjectByPointer</b> can only be called after at least one handle has been created for the file object. Callers can check the <b>Flags</b> member of the FILE_OBJECT structure that the <i>Object</i> parameter points to. If the FO_HANDLE_CREATED flag is set, this means that one or more handles have been created for the file object, so it is safe to call <b>ObOpenObjectByPointer</b>. 
 
@@ -147,11 +160,13 @@ Driver routines that run in a process context other than that of the system proc
 
 If the <i>AccessMode</i> parameter is <b>KernelMode</b>, the requested access is always allowed. If <i>AccessMode</i> is <b>UserMode</b>, the requested access is compared to the granted access for the object. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +177,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -172,6 +188,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -182,6 +199,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -192,9 +210,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -224,5 +244,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ObOpenObjectByPointer function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

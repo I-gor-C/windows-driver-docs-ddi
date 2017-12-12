@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-view-instancing-tier.htm
 old-project: display
 ms.assetid: 4d52ddb2-818f-4b46-b19f-d6eea36a07da
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIEW_INSTANCING_TIER, D3D12DDI_VIEW_INSTANCING_TIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines the view instancing tier.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _D3D12DDI_VIEW_INSTANCING_TIER {
 
 The view instancing tier is not supported.
 
+
 ### -field D3D12DDI_VIEW_INSTANCING_TIER_1
 
 The view instancing tier is 1.
+
 
 ### -field D3D12DDI_VIEW_INSTANCING_TIER_2
 
 The view instancing tier is 2.
 
+
 ### -field D3D12DDI_VIEW_INSTANCING_TIER_3
 
 The view instancing teir is 3.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ The view instancing teir is 3.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

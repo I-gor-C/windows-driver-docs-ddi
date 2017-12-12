@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_filter_caps.htm
 old-project: display
 ms.assetid: ac94ffe8-efab-4b30-8106-f6fed9b59615
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies video processor capabilities that the user-mode driver supports.
 
 
+
 ## -syntax
 
 ````
@@ -63,34 +64,43 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS {
 
 Brightness filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS_CONTRAST
 
 Contrast filter.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS_HUE
 
 Hue filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS_SATURATION
 
 Saturation filter.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS_NOISE_REDUCTION
 
 Noise reduction filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS_EDGE_ENHANCEMENT
 
 Edge enhancement filter.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS_ANAMORPHIC_SCALING
 
 Anamorphic scaling filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS_STEREO_ADJUSTMENT
 
 Stereo adjustment filter. When stereo 3-D video is enabled, this filter adjusts the offset between the left and right views, allowing the user to reduce potential eye strain.
+
 The filter value indicates the amount by which the left and right views are adjusted. A positive value shifts the images away from each other: the left image toward the left, and the right image toward the right. A negative value shifts the images in the opposite directions, closer to each other.
+
 
 ## -remarks
 
@@ -100,22 +110,27 @@ The filter value indicates the amount by which the left and right views are adju
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\kesetkernelstackswapenable.htm
 old-project: kernel
 ms.assetid: ec914f67-b2c2-4370-8685-770bca045034
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeSetKernelStackSwapEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>KeSetKernelStackSwapEnable</b> routine enables and disables swapping of the caller's stack to disk. 
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ BOOLEAN KeSetKernelStackSwapEnable(
 
 Specifies whether to enable swapping of the stack that belongs to the calling thread. If <b>TRUE</b>, swapping is enabled and the contents of the stack can be paged in and out of memory. If <b>FALSE</b>, swapping is disabled and the stack is memory-resident. 
 
+
 ## -returns
 <b>KeSetKernelStackSwapEnable</b> returns a BOOLEAN value that indicates whether stack swapping was enabled at the time that the call was initiated. This value is <b>TRUE</b> if stack swapping was previously enabled and is <b>FALSE</b> if it was disabled. 
+
 
 ## -remarks
 A kernel-mode driver can call this routine to control whether its stack is pageable or locked in memory.
@@ -76,11 +79,13 @@ An event object must be memory-resident while it can be set to a signaled or non
 
 Frequently, the use of the <b>KeSetKernelStackSwap</b> routine is unnecessary and can be avoided by allocating only pageable data items on the stack. In the previous example, the driver thread must lock the stack because the event object is allocated on the stack. A better alternative might be to simply allocate the event from nonpaged pool.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +128,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -129,9 +139,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -146,5 +158,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetKernelStackSwapEnable routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetKernelStackSwapEnable routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

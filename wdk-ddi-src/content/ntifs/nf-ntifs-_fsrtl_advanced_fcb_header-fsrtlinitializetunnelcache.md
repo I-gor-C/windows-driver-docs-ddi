@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlInitializeTunnelCache</b> routine initializes a new tunnel cache for a volume.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ VOID FsRtlInitializeTunnelCache(
 
 Pointer to a per-volume TUNNEL structure for which the caller must provide resident storage in nonpaged pool. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>FsRtlInitializeTunnelCache</b> initializes a new tunnel cache. File systems must call <b>FsRtlInitializeTunnelCache</b> before using any other <b>FsRtl...TunnelCache</b> routines on the tunnel cache.
@@ -68,11 +71,13 @@ Entries are added to the tunnel cache by calling <a href="ifsk.fsrtladdtotunnelc
 
 For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +110,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -113,9 +121,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -127,5 +137,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInitializeTunnelCache routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

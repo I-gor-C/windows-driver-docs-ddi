@@ -41,6 +41,7 @@ req.irql:
 This structure is the I/O parameter type of <b>IOCTL_LAMP_{GET|SET}_INTENSITY_WHITE</b>.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct LAMP_CAPABILITIES_WHITE {
 
 If this field evaluates <b>TRUE</b>, a client can get/set light intensity by calling <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a>  and <a href="..\lamp\ni-lamp-ioctl_lamp_set_intensity_white.md">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ If this field evaluates <b>TRUE</b>, a client can get/set light intensity by cal
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

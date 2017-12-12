@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_filter_range.htm
 old-project: display
 ms.assetid: 9dc93d92-ccdc-488b-a5dd-a2efe783cbb3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines the range of supported values for an image filter.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE {
 
 The minimum value of the filter.
 
+
 ### -field Maximum
 
 The maximum value of the filter.
+
 
 ### -field Default
 
 The default value of the filter.
 
+
 ### -field Multiplier
 
 A multiplier. Use the following formula to translate the filter setting into the actual filter value: <i>Actual Value</i> = <i>Set Value</i> Ã— <i>Multiplier</i>.
+
 
 ## -remarks
 The multiplier enables the filter range to have a fractional step value.
@@ -85,27 +90,33 @@ In this case, a filter value of 2 would be interpreted by the device as 0.50 (or
 
 The device should use a multiplier that can be represented exactly as a base-2 fraction.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

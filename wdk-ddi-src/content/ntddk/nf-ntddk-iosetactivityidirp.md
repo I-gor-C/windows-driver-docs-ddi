@@ -7,7 +7,7 @@ old-location: kernel\iosetactivityidirp.htm
 old-project: kernel
 ms.assetid: 81D3BE8C-D6E0-47E2-959C-3834988E4C61
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoSetActivityIdIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: Any level if a GUID is passed in, otherwise PASSIVE_LEVEL.
 The IoSetActivityIdIrp routine associates an activity ID with an IRP.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS IoSetActivityIdIrp(
 
 The IRP to associate the activity ID with.
 
+
 ### -param Guid [in, optional]
 
 A pointer to the GUID that represents the ID to store in the IRP.  If NULL, IoSetActivityIdIrp attempts to retrieve the activity ID from the current thread if it was the thread that originally issued the request.
+
 
 ## -returns
 IoSetActivityIdIrp returns STATUS_SUCCESS if the call is successful. Possible error return values include the following.
@@ -72,14 +75,17 @@ IoSetActivityIdIrp returns STATUS_SUCCESS if the call is successful. Possible er
 
  
 
+
 ## -remarks
 Drivers should use IoSetActivityIdIrp only on IRPs that have been allocated using <a href="kernel.ioallocateirp">IoAllocateIrp</a> (and freed using <a href="kernel.iofreeirp">IoFreeIrp</a>). Otherwise, memory leakage may result.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +128,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +139,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level if a GUID is passed in, otherwise PASSIVE_LEVEL.
+
 </td>
 </tr>
 </table>

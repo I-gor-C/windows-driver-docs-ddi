@@ -7,8 +7,8 @@ old-location: storage\cdrom_toc.htm
 old-project: storage
 ms.assetid: 84312199-5055-41a1-9aa2-4ee91a15d5bf
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _CDROM_TOC, CDROM_TOC, *PCDROM_TOC
+ms.date: 12/8/2017
+ms.keywords: _CDROM_TOC, *PCDROM_TOC, CDROM_TOC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Device control IRPs with a control code of <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_TOC return their output data in this structure followed by a series of <a href="storage.track_data">TRACK_DATA</a> structures.  
 
 
+
 ## -syntax
 
 ````
@@ -59,26 +60,32 @@ typedef struct _CDROM_TOC {
 
 Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself. 
 
+
 ### -field FirstTrack
 
 Indicates the first track number of the table of contents of the first complete session. 
+
 
 ### -field LastTrack
 
 Indicates the last track number of the table of contents of the last complete session.
 
+
 ### -field TrackData
 
 Pointer to an array of structures of type <a href="storage.track_data">TRACK_DATA</a> that contain table of contents information for all the sessions on the disc.
 
+
 ## -remarks
 The output data contains table of contents information for one or more of the specified sessions.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_TOC structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_TOC structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

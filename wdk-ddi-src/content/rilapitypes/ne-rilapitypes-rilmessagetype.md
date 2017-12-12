@@ -7,7 +7,7 @@ old-location: netvista\rilmessagetype_2.htm
 old-project: netvista
 ms.assetid: 5f167bd5-a2b8-48a1-b403-e9ac68122ae4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMESSAGETYPE, RILMESSAGETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -84,6 +85,7 @@ typedef enum _RILMESSAGETYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

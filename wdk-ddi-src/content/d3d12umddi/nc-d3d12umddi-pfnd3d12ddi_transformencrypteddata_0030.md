@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_transformencrypteddata_0030.htm
 old-project: display
 ms.assetid: B738C096-E821-4D7E-A713-47300E4E3779
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to transform encrypted data.
 
 
+
 ## -prototype
 
 ````
@@ -59,20 +60,25 @@ HRESULT APIENTRY* PFND3D12DDI_TRANSFORMENCRYPTEDDATA_0030(
 
 The device being processed.
 
+
 ### -param Operation 
 
 The transform operation being performed.
+
 
 ### -param pOutputArguments [in]
 
 The output arguments for the transform being performed.
 
+
 ### -param pInputArguments [in]
 
 The input arguments for the transform being performed.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -82,6 +88,7 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

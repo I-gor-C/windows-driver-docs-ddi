@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlAllocateExtraCreateParameter</b> routine allocates memory for a user-defined extra create parameter (ECP) context structure and generates a pointer to that structure.
 
 
+
 ## -syntax
 
 ````
@@ -61,34 +62,43 @@ NTSTATUS FsRtlAllocateExtraCreateParameter(
 
 A pointer to a user-defined GUID that indicates the type of the ECP context structure.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> for more information.
 
+
 ### -param SizeOfContext [in]
 
 The size, in bytes, of the user-defined context structure.
 
+
 ### -param Flags [in]
 
 Defines pool allocation options.  The following describes how pool will be allocated when one or more of the listed flag values are combined with the <i>Flags</i> parameter by using a bitwise OR operation:  
+
 <ul>
 <li>
 FSRTL_ALLOCATE_ECP_FLAG_NONPAGED_POOL - Non-paged pool will be allocated.  If this flag value is not used, paged pool will be allocated.
+
 </li>
 <li>
 FSRTL_ALLOCATE_ECPLIST_FLAG_CHARGE_QUOTA - All pool allocated by <b>FsRtlAllocateExtraCreateParameter</b> will be charged against the current process' memory quota.
+
 </li>
 </ul>
 If more than one flag is used, all of the effects associated with the utilized flag values will occur.
+
 
 ### -param CleanupCallback [in, optional]
 
 Optional pointer to a filter-defined cleanup callback routine of type <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>.  The cleanup callback routine is called when the ECP structure (created by the <b>FsRtlAllocateExtraCreateParameter</b> routine) is deleted.  Set this parameter to <b>NULL</b> if a cleanup callback routine is not applicable.
 
+
 ### -param PoolTag [in]
 
 Specifies the pool tag for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>.
 
+
 ### -param EcpContext [out]
 
 Receives a pointer to the allocated ECP context structure.  If the routine failed to allocate sufficient pool, the value pointed to by <i>EcpContext </i>will be <b>NULL</b> and <b>FsRtlAllocateExtraCreateParameter</b> will return status code STATUS_INSUFFICIENT_RESOURCES.
+
 
 ## -returns
 FltAllocateExtraCreateParameter can return one of the following values:
@@ -101,16 +111,19 @@ FltAllocateExtraCreateParameter can return one of the following values:
 
  
 
+
 ## -remarks
 By default, the <b>FsRtlAllocateExtraCreateParameter</b> routine allocates paged memory pool for a user-defined ECP context structure.  If the FSRTL_ALLOCATE_ECP_FLAG_NONPAGED_POOL bitmask is used as described in the <i>Flags</i> parameter, a non-paged memory pool is allocated.  After this pool has been allocated and the ECP context structure has been initialized, the <a href="ifsk.fltinsertextracreateparameter">FltInsertExtraCreateParameter</a> routine is used to insert the ECP context structure (ECP list element) into an ECP list structure (<a href="ifsk.ecp_list">ECP_LIST</a>).
 
 If the caller allocates ECP_LIST and one or more ECPs are used in a call to <a href="ifsk.iocreatefileex">IoCreateFileEx</a>, the previous description is correct. In this case, the system does not free any of the ECPs, so the caller can make multiple calls to <b>IoCreateFileEx</b> with the same ECP set. However, if a file system or file system filter driver attaches an ECP to an existing or newly-created ECP_LIST while processing an IRP_MJ_CREATE request, this ECP is automatically cleaned up when the IRP completes. As a result, a filter driver does not have to clean up ECPs that are added dynamically. This allows a filter driver's ECP to be properly propagated across the reparse points--a process that can require multiple IRP_MJ_CREATE requests to be generated.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,14 +134,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The FsRtlAllocateExtraCreateParameter routine is available starting with Windows Vista. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -149,6 +166,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -159,9 +177,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -206,5 +226,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameter routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

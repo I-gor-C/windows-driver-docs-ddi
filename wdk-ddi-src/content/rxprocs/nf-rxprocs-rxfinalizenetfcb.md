@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxFinalizeNetFCB</b> finalizes the given FCB structure. The caller must have an exclusive lock on the NET_ROOT associated with FCB. 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,27 @@ BOOLEAN RxFinalizeNetFcb(
 
 A pointer to the FCB structure to finalize.
 
+
 ### -param RecursiveFinalize [in]
 
 The value indicating whether the finalization should be done recursively. 
 
+
 ### -param ForceFinalize [in]
 
 The value indicating whether the finalization should be forced, regardless of the reference count. 
+
 If this parameter is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the FCB must be 1 for the FCB to be finalized. 
+
 
 ### -param ReferenceCount [in]
 
 The reference count on the FCB that will still allow forced finalization.
 
+
 ## -returns
 <b>RxFinalizeNetFCB</b> returns <b>TRUE</b> on success or <b>FALSE</b> if the finalization did not occur: 
+
 
 ## -remarks
 The <b>RxFinalizeNetFCB</b> routine is not normally called by network mini-redirector drivers directly. RDBSS calls this routine internally when an I/O request packet is received for IRP_MJ_CLOSE. This IRP is normally received by RDBSS in response to a user-mode application requesting a file close operation. It is also possible for another kernel driver to issue such an IRP. 
@@ -95,11 +102,13 @@ if the reference count equals 1 or the <i>ForceFinalize</i> parameter was <b>TRU
 
 if the reference count goes to zero, the FCB is finalized and the memory used for the FCB is also released.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -110,6 +119,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,9 +130,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -191,5 +203,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeNetFCB function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

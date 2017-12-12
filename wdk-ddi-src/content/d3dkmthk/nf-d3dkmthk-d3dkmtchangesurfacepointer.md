@@ -7,7 +7,7 @@ old-location: display\d3dkmtchangesurfacepointer.htm
 old-project: display
 ms.assetid: 3db4e04b-2707-4eb1-a249-2714304246a8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTChangeSurfacePointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3DKMTChangeSurfacePointer</b> function is for system use only.
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ NTSTATUS APIENTRY D3DKMTChangeSurfacePointer(
 
 For system use only.
 
+
 ## -returns
 An opaque NTSTATUS value.
 
+
 ## -remarks
 This function is for system use only.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,14 +82,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

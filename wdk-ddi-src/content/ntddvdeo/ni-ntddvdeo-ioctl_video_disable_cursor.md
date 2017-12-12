@@ -7,7 +7,7 @@ old-location: display\ioctl_video_disable_cursor.htm
 old-project: display
 ms.assetid: bbc3564d-bed5-45fb-9ee3-ed98073b6eba
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql:
 
 Makes the cursor invisible by disabling the cursor's visibility attribute. Miniport drivers for VGA-compatible adapters are required to support this modal request; optional for other miniport drivers.
 
+
+
 Makes the cursor invisible by disabling the cursor's visibility attribute. Miniport drivers for VGA-compatible adapters are required to support this modal request; optional for other miniport drivers.
+
 
 
 ## -ioctlparameters
@@ -49,12 +52,14 @@ Makes the cursor invisible by disabling the cursor's visibility attribute. Minip
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 
 <text></text>
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -72,6 +77,7 @@ None
 I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="display.status_block">STATUS_BLOCK</a> structure.
 
+
 ## -remarks
 
 
@@ -80,6 +86,7 @@ The miniport driver does not set the <b>Information</b> member of the <a href="d
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

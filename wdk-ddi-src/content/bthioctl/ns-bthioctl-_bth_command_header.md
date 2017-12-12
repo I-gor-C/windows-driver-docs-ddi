@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 2ed2196f-a966-4766-9acd-f0beca20ed26
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BTH_COMMAND_HEADER, *PBTH_COMMAND_HEADER, BTH_COMMAND_HEADER
+ms.keywords: _BTH_COMMAND_HEADER, BTH_COMMAND_HEADER, *PBTH_COMMAND_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 ---
 
 # _BTH_COMMAND_HEADER structure
@@ -40,6 +40,7 @@ req.irql:
 ## -description
 The BTH_COMMAND_HEADER structure specifies header information for a vendor-specific HCI
   command.
+
 
 
 ## -syntax
@@ -58,10 +59,12 @@ typedef struct _BTH_COMMAND_HEADER {
 
 A USHORT value that specifies the operation code for the command.
 
+
 ### -field TotalParameterLength
 
 The size, in bytes, of the command payload, which is the data that follows the BTH_COMMAND_HEADER
      structure.
+
 
 ## -remarks
 The BTH_COMMAND_HEADER structure specifies header information in the 
@@ -72,19 +75,23 @@ The BTH_COMMAND_HEADER structure specifies header information in the
     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_hci_vendor_command.md">
     IOCTL_BTH_HCI_VENDOR_COMMAND</a> IOCTL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Available in Windows Vista, and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_COMMAND_HEADER structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

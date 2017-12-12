@@ -7,8 +7,8 @@ old-location: storage\getversioninparams.htm
 old-project: storage
 ms.assetid: dcbfa8d2-c2ea-43ae-9d77-ce95a430a514
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _GETVERSIONINPARAMS, *PGETVERSIONINPARAMS, GETVERSIONINPARAMS, *LPGETVERSIONINPARAMS
+ms.date: 12/8/2017
+ms.keywords: _GETVERSIONINPARAMS, *PGETVERSIONINPARAMS, *LPGETVERSIONINPARAMS, GETVERSIONINPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The GETVERSIONINPARAMS structure is used in conjunction with the <a href="storage.smart_get_version">SMART_GET_VERSION</a> request to retrieve version information, a capabilities mask, and a bitmask for the indicated device. 
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ typedef struct _GETVERSIONINPARAMS {
 
 Contains an integer that indicates the version number of the binary driver. 
 
+
 ### -field bRevision
 
 Contains an integer that indicates the revision number of the binary driver. 
+
 
 ### -field bReserved
 
 Reserved. 
 
+
 ### -field bIDEDeviceMap
 
 Contains the bitmap. The following table explains the meaning of the bitmap:
+
 <table>
 <tr>
 <th>Bitmap Flags</th>
@@ -80,73 +85,91 @@ Contains the bitmap. The following table explains the meaning of the bitmap:
 <tr>
 <td>
 Bit 0 is set to 1.
+
 </td>
 <td>
 The device is either a SATA drive or an IDE drive. If it is an IDE drive, it is the master device on the primary channel. 
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 1 is set to 1.
+
 </td>
 <td>
 The device is an IDE drive, and it is the subordinate device on the primary channel. 
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 2 is set to 1.
+
 </td>
 <td>
 The device is an IDE drive, and it is the master device on the secondary channel. 
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 3 is set to 1.
+
 </td>
 <td>
 The device is an IDE drive, and it is the subordinate device on the secondary channel. 
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 4 is set to 1.
+
 </td>
 <td>
 The device is an ATAPI drive, and it is the master device on the primary channel. 
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 5 is set to 1.
+
 </td>
 <td>
 The device is an ATAPI drive, and it is the subordinate device on the primary channel. 
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 6 is set to 1.
+
 </td>
 <td>
 The device is an ATAPI drive, and it is the master device on the secondary channel. 
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 7 is set to 1.
+
 </td>
 <td>
 The device is an ATAPI drive, and it is the subordinate device on the secondary channel. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field fCapabilities
 
 Contains the bitmask of driver capabilities. 
+
 <table>
 <tr>
 <th>Bitmask Flags</th>
@@ -155,33 +178,41 @@ Contains the bitmask of driver capabilities.
 <tr>
 <td>
 CAP_ATA_ID_CMD
+
 </td>
 <td>
 The device supports the ATA ID command. 
+
 </td>
 </tr>
 <tr>
 <td>
 CAP_ATAPI_ID_CMD
+
 </td>
 <td>
 The device supports the ATAPI ID command. 
+
 </td>
 </tr>
 <tr>
 <td>
 CAP_SMART_CMD
+
 </td>
 <td>
 The device supports SMART commands.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field dwReserved
 
 Reserved. 
+
 
 ## -remarks
 
@@ -191,6 +222,7 @@ Reserved.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -207,5 +239,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GETVERSIONINPARAMS structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GETVERSIONINPARAMS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

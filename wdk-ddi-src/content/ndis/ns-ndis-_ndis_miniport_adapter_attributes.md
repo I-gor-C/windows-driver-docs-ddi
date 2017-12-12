@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_attributes.htm
 old-project: netvista
 ms.assetid: 41e3c65a-0ab8-4f6f-af49-1aa2edbeda5c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_MINIPORT_ADAPTER_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_MINIPORT_ADAPTER_ATTRIBUTES structure
@@ -41,34 +41,43 @@ req.irql: Any level
 The NDIS_MINIPORT_ADAPTER_ATTRIBUTES structure is a placeholder for the following structures:
   
 
+
 <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+
 
 
 <a href="netvista.ndis_miniport_add_device_registration_attributes">
      NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a>
 
 
+
 <a href="netvista.ndis_miniport_adapter_registration_attributes">
      NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a>
+
 
 
 <a href="netvista.ndis_miniport_adapter_general_attributes">
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 
 
+
 <a href="netvista.ndis_miniport_adapter_offload_attributes">
      NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
+
 
 
 <a href="netvista.ndis_miniport_adapter_native_802_11_attributes">
      NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
 
 
+
 <a href="netvista.ndis_miniport_adapter_hardware_assist_attributes">
      NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
 
 
+
 <a href="netvista.ndis_miniport_adapter_ndk_attributes">NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</a>
+
 
 
 
@@ -98,11 +107,13 @@ typedef union _NDIS_MINIPORT_ADAPTER_ATTRIBUTES {
 
 <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_miniport_add_device_registration_attributes">
      NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a>
+
 
 </dd>
 <dd>
@@ -110,11 +121,13 @@ typedef union _NDIS_MINIPORT_ADAPTER_ATTRIBUTES {
 <a href="netvista.ndis_miniport_adapter_registration_attributes">
      NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_miniport_adapter_general_attributes">
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
+
 
 </dd>
 <dd>
@@ -122,11 +135,13 @@ typedef union _NDIS_MINIPORT_ADAPTER_ATTRIBUTES {
 <a href="netvista.ndis_miniport_adapter_offload_attributes">
      NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_miniport_adapter_native_802_11_attributes">
      NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
+
 
 </dd>
 <dd>
@@ -134,10 +149,12 @@ typedef union _NDIS_MINIPORT_ADAPTER_ATTRIBUTES {
 <a href="netvista.ndis_miniport_adapter_hardware_assist_attributes">
      NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
 
+
 </dd>
 <dd>
 
 <a href="netvista.ndis_miniport_adapter_ndk_attributes">NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</a>
+
 
 </dd>
 </dl>
@@ -148,19 +165,23 @@ Miniport drivers pass these structures to the
     <a href="netvista.ndismsetminiportattributes">
     NdisMSetMiniportAttributes</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -207,5 +228,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_ATTRIBUTES union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_ATTRIBUTES union%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

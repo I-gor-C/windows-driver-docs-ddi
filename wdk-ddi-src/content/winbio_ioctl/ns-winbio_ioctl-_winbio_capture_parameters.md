@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_capture_data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a> IOCTL uses the WINBIO_CAPTURE_PARAMETERS structure as input.
 
 
+
 ## -syntax
 
 ````
@@ -61,10 +62,13 @@ typedef struct _WINBIO_CAPTURE_PARAMETERS {
 
 The total size of the payload.
 
+
 ### -field Purpose
 
 A WINBIO_BIR_PURPOSE purpose, that specifies how captured data is to be used, and as a result, how it should be optimized.  Some sensors will go into a different mode depending on the reason for the data capture.
+
 The following code example shows the possible bitmask values for WINBIO_BIR_PURPOSE:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -86,14 +90,18 @@ The following code example shows the possible bitmask values for WINBIO_BIR_PURP
 
 Specifies the <a href="biometric.winbio_registered_format">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.
 
+
 ### -field VendorFormat
 
 An optional WINBIO_UUID vendor GUID.  This indicates the preferred format of the vendor-specific data in the BIR.
 
+
 ### -field Flags
 
 Specifies the WINBIO_BIR_DATA_FLAGS level of processing and other attributes for the data to be returned.  If format owner and type are the Windows standard, this must be WINBIO_DATA_FLAG_RAW.
+
 The following code example shows the possible bitmask values for WINBIO_BIR_DATA_FLAGS:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -121,14 +129,17 @@ The following code example shows the possible bitmask values for WINBIO_BIR_DATA
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [biometric\biometric]:%20WINBIO_CAPTURE_PARAMETERS structure%20 RELEASE:%20(11/13/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

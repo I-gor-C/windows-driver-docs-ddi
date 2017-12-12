@@ -7,8 +7,8 @@ old-location: netvista\_dot11_go_negotiation_request_send_complete_parameters.ht
 old-project: netvista
 ms.assetid: 2F10078E-CE9F-425D-AB48-7A27906830B0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -59,6 +59,7 @@ typedef struct _DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 ### -field Header
 
 Specifies the type, revision and size of the <b>DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following:
+
 <table>
 <tr>
 <th>Member</th>
@@ -79,25 +80,31 @@ Specifies the type, revision and size of the <b>DOT11_GO_NEGOTIATION_REQUEST_SEN
 </table>
  
 
+
 ### -field PeerDeviceAddress
 
 The device address of the Peer-to-Peer (P2P) Wi-Fi Direct (WFD) device that the GO negotiation request was sent to.
+
 
 ### -field DialogToken
 
 The dialog token from the GO negotiation  request packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451804">OID_DOT11_WFD_SEND_GO_NEGOTIATION_REQUEST</a> request.
 
+
 ### -field Status
 
 The status of the request send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted
+
 
 ### -field uIEsOffset
 
 The offset, in bytes,  of the array of additional information elements (IEs) which were included in the the GO negotiation request packet. This offset is from the start of the buffer that contains this structure.
 
+
 ### -field uIEsLength
 
 The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+
 
 ## -remarks
 
@@ -107,14 +114,17 @@ The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

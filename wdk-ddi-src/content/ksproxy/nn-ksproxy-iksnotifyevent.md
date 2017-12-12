@@ -39,8 +39,11 @@ req.irql:
 
 ## -description
 <b>DirectX 9.0 and later versions only.</b>
+
 The <b>IKsNotifyEvent</b> interface provides a method to cause the KS object that owns a DirectShow event to issue the event with the given parameters.
+
 The IID for this interface is IID_IKsNotifyEvent
+
 
 
 ## -inheritance
@@ -68,6 +71,7 @@ Sets up for notification whenever action related to a DirectShow event occurs.
 
  
 
+
 ## -members
 The <b>IKsNotifyEvent</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -81,11 +85,13 @@ The <b>IKsNotifyEvent</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Sets up for notification whenever action related to a DirectShow event occurs.
+
 </td>
 </tr>
 </table>Sets up for notification whenever action related to a DirectShow event occurs.
 
  
+
 
 ## -remarks
 
@@ -95,6 +101,7 @@ Sets up for notification whenever action related to a DirectShow event occurs.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-crypto-session-transform-input-arguments-0030.htm
 old-project: display
 ms.assetid: 2c7e1218-63d3-4fa5-8b02-7bee5920146c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_CRYPTO_SESSION_TRANSFORM_INPUT_ARGUMENTS_0030, D3D12DDI_CRYPTO_SESSION_TRANSFORM_INPUT_ARGUMENTS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Crypto session transform input arguments.
 
 
+
 ## -syntax
 
 ````
@@ -66,45 +67,56 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_INPUT_ARGUMENTS_0030 {
 
 Crypto session policy.
 
+
 ### -field hDrvBuffer
 
 Resource.
+
 
 ### -field Size
 
 Size.
 
+
 ### -field Offset
 
 Offset.
+
 
 ### -field pIV
 
 Initialization vector.
 
+
 ### -field IVSize
 
 Initialization vector size.
+
 
 ### -field pSubSampleMappingBlock
 
 Sub sample mapping block.
 
+
 ### -field SubSampleMappingCount
 
 Sub sample mapping count.
+
 
 ### -field pContext
 
 Context.
 
+
 ### -field ContextSize
 
 Context size.
 
+
 ### -field EncryptedHeader
 
 Encrypted header.
+
 
 ## -remarks
 
@@ -114,6 +126,7 @@ Encrypted header.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

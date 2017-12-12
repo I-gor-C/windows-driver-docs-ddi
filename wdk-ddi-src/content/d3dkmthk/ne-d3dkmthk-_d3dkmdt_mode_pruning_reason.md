@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_mode_pruning_reason.htm
 old-project: display
 ms.assetid: 41b80b84-3ed6-4ca3-a2ca-63982585d6dc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_MODE_PRUNING_REASON, D3DKMDT_MODE_PRUNING_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMDT_MODE_PRUNING_REASON enumeration type contains values that identify the reason why the monitor either supports a display mode or does not support a display mode. 
 
 
+
 ## -syntax
 
 ````
@@ -66,46 +67,58 @@ typedef enum _D3DKMDT_MODE_PRUNING_REASON {
 
 A variable of type D3DKMDT_MODE_PRUNING_REASON has not yet been assigned a meaningful value. 
 
+
 ### -field D3DKMDT_MPR_ALLCAPS
 
 The monitor does not support the display mode because none of the available monitor capabilites imply support of the display mode. 
+
 
 ### -field D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE
 
 The monitor supports the display mode because of the monitor source mode in the monitor descriptor.
 
+
 ### -field D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE
 
 The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor. 
+
 
 ### -field D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE
 
 The monitor supports the display mode because of the monitor source mode in the monitor descriptor override. 
 
+
 ### -field D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE
 
 The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor override. 
+
 
 ### -field D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE
 
 The monitor supports the display mode because of the monitor source mode in the default monitor profile. 
 
+
 ### -field D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE
 
 The monitor supports the display mode because of the monitor source mode that the display miniport driver recommends. 
+
 
 ### -field D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE
 
 The monitor supports the display mode because of the monitor frequency range override. 
 
+
 ### -field D3DKMDT_MPR_CLONE_PATH_PRUNED
 
 Supported in Windows 7 and later versions.
+
 The display mode is pruned (that is, the monitor does not support the display mode) because other paths in the clone cluster have no mode supported by the monitor. 
+
 
 ### -field D3DKMDT_MPR_MAXVALID
 
 Valid enumeration values were exceeded. 
+
 
 ## -remarks
 The setting of the <b>ValidatedAgainstMonitorCaps</b> member of the <a href="display.d3dkmdt_displaymode_flags">D3DKMDT_DISPLAYMODE_FLAGS</a> structure indicates whether the monitor supports a display mode or not. If the monitor does not support a display mode, the operating system removes the display mode from the list of display modes that are available to the monitor.
@@ -130,19 +143,23 @@ D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE
 
 D3DKMDT_MPR_ALLCAPS
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,5 +176,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_MODE_PRUNING_REASON enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_MODE_PRUNING_REASON enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

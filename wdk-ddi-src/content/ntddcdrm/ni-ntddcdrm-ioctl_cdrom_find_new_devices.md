@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_find_new_devices.htm
 old-project: storage
 ms.assetid: edaf2b57-ca1a-478f-85b9-2a1e86df98ed
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, WRITE_ROTATION
+ms.date: 12/8/2017
+ms.keywords: _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by <a href="..\ntddstor\ni-ntddstor-ioctl_storage_find_new_devices.md">IOCTL_STORAGE_FIND_NEW_DEVICES</a>. The only difference between the two IOCTLs is the base value.
+
 
 
 ## -ioctlparameters
@@ -81,6 +82,7 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

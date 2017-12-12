@@ -7,7 +7,7 @@ old-location: display\iddcx_metadata.htm
 old-project: display
 ms.assetid: 7128e49d-71e9-4014-9f08-591cfaeba363
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_METADATA,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the current provided surface and what is displayed on it.
 
 
+
 ## -syntax
 
 ````
@@ -65,17 +66,20 @@ typedef struct IDDCX_METADATA {
                      Total size of the structure
                  
 
+
 ### -field PresentationFrameNumber
 
 
                      Presentation frame number of this surface. If the frame number is the same as the previous frame, then it indicates that there has not been any image updates from the previous frame. This is an opportunity for the driver to re-encode the desktop image again to increase the visual quality. Once there are no more updates, the OS presents the same frame as many times indicated by the <a href="..\iddcx\ns-iddcx-iddcx_adapter_caps.md">IDDCX_ADAPTER_CAPS</a> value <b>StaticDesktopReencodeFrameCount</b> , then stops presenting until the next update
                  
 
+
 ### -field DirtyRectCount
 
 
                       Number of dirty rects for this frame. Call <a href="display.iddcxswapchaingetdirtyrects">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
                  
+
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
     PresentationFrameNumber is the same as last frame</div>
 <div> </div>
@@ -85,6 +89,7 @@ typedef struct IDDCX_METADATA {
 
                      Number of move regions in this frame, call <a href="display.iddcxswapchaingetmoveregions">IddCxSwapChainGetMoveRegions</a> to get the move regions
                  
+
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
     PresentationFrameNumber is the same as last frame</div>
 <div> </div>
@@ -95,16 +100,19 @@ typedef struct IDDCX_METADATA {
                       Indicates if the provided surface is hardware protected or not
                  
 
+
 ### -field PresentDisplayQPCTime
 
 
                      System QPC time of when this surface should be displayed on the indirect display monitor
                  
 
+
 ### -field pSurface
 
 
                      DX surface that contains the image to encode and transmit. The driver can use this DX surface anytime until <a href="display.iddcxswapchainreleaseandacquirebuffer">IddCxSwapChainReleaseAndAcquire</a> is called again
+
 <div class="alert"><b>Note</b>  This surface is always a A8R8G8B8 formated surface</div>
 <div> </div>
 
@@ -116,6 +124,7 @@ typedef struct IDDCX_METADATA {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

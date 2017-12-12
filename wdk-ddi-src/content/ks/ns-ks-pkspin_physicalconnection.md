@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e11c6e8d-a338-4427-af04-bdb07b9e9a73
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION, *PKSPIN_PHYSICALCONNECTION
+ms.keywords: PKSPIN_PHYSICALCONNECTION, *PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 A structure of type KSPIN_PHYSICALCONNECTION is returned in response to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a> request.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct {
 
 Specifies the size of the structure. Note that the structure contains a dynamic array.
 
+
 ### -field Pin
 
 Specifies the PinId of the connected pin on the other filter. (Pin 2 of Wave is connected to Pin 1 of Topology.)
+
 
 ### -field SymbolicLinkName
 
 Specifies a string containing the symbolic link name of the connected filter 
 
+
 ## -remarks
 This structure is used with port class only.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,5 +96,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_PHYSICALCONNECTION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

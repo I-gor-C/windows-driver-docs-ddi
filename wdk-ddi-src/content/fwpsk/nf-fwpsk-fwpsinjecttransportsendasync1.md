@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjecttransportsendasync1.htm
 old-project: netvista
 ms.assetid: 74d91e43-d58a-4c2c-bfc9-4b0829a5f9f8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsInjectTransportSendAsync1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   (<a href="netvista.fwpsinjecttransportsendasync0">FwpsInjectTransportSendAsync0</a>) in that it takes an updated parameters structure as an argument.
 
 
+
 ## -syntax
 
 ````
@@ -70,12 +71,14 @@ An injection handle that was previously created by a call to the
      <a href="netvista.fwpsinjectionhandlecreate0">
      FwpsInjectionHandleCreate0</a> function.
 
+
 ### -param injectionContext [in, optional]
 
 An optional handle to the injection context. If specified, it can be obtained by calling the 
      <a href="netvista.fwpsquerypacketinjectionstate0">FwpsQueryPacketInjectionState0</a> function when the packet injection state 
      <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.
+
 
 ### -param endpointHandle [in]
 
@@ -89,9 +92,11 @@ A handle that indicates the stack transport endpoint in the send data path into 
      possible, before the socket associated with the stack endpoint is closed and the handle becomes no
      longer valid.
 
+
 ### -param flags [in]
 
 This parameter is reserved. Callout drivers must set this parameter to zero.
+
 
 ### -param sendArgs [in, optional]
 
@@ -101,19 +106,24 @@ A pointer to a
      packet. This parameter can be <b>NULL</b> only if the net buffer list to be injected contains an IP header (for
      example, if the packet is sent through a raw socket).
 
+
 ### -param addressFamily [in]
 
 One of the following address families:
      
 
 
+
+
 ### -param AF_INET
 
 The IPv4 address family.
 
+
 ### -param AF_INET6
 
 The IPv6 address family.
+
 </dd>
 </dl>
 
@@ -130,6 +140,7 @@ The identifier of the routing compartment into which the packet data is injected
      the 
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.
 
+
 ### -param netBufferList [in, out]
 
 A pointer to a 
@@ -141,6 +152,7 @@ A pointer to a
      <a href="netvista.fwpsallocatenetbufferandnetbufferlist0">
      FwpsAllocateNetBufferAndNetBufferList0</a> function.
 
+
 ### -param completionFn [in]
 
 A pointer to a 
@@ -148,11 +160,13 @@ A pointer to a
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferList</i> parameter, has been injected into the network stack.
 
+
 ### -param completionContext [in, optional]
 
 A pointer to a callout driver-provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 The 
@@ -176,6 +190,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 A callout driver calls the 
@@ -215,21 +230,27 @@ The
 <dl>
 <dd>
 FWPS_LAYER_OUTBOUND_TRANSPORT_V4
+
 </dd>
 <dd>
 FWPS_LAYER_OUTBOUND_TRANSPORT_V6
+
 </dd>
 <dd>
 FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)
+
 </dd>
 <dd>
 FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)
+
 </dd>
 <dd>
 FWPS_LAYER_OUTBOUND_ICMP_ERROR_V4
+
 </dd>
 <dd>
 FWPS_LAYER_OUTBOUND_ICMP_ERROR_V6
+
 </dd>
 </dl>
 
@@ -255,11 +276,14 @@ The datagram belongs to a raw socket if both of the following are true: <ul>
 At the following network layers, if the datagram belongs to a raw socket, you'll need to copy the <b>headerIncludeHeader</b> and <b>headerIncludeHeaderLength</b> members of the <a href="netvista.fwps_incoming_metadata_values0">FWPS_INCOMING_METADATA_VALUES0</a> structure into the corresponding member of the <a href="netvista.fwps_transport_send_params1">FWPS_TRANSPORT_SEND_PARAMS1</a> structure that the <i>sendArgs</i> parameter points to:<ul>
 <li>
 FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)
+
 </li>
 <li>
 FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)
+
 </li>
 </ul>
+
 
 
 ## -requirements
@@ -267,6 +291,7 @@ FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIREC
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -277,14 +302,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -295,6 +323,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -305,9 +334,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -362,5 +393,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectTransportSendAsync1 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectTransportSendAsync1 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

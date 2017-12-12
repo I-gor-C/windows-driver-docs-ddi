@@ -41,6 +41,7 @@ req.irql:
 Sets the enabled state of a target device associated with the specified object header.
 
 
+
 ## -syntax
 
 ````
@@ -57,21 +58,26 @@ VOID KsSetTargetState(
 
 Points to a header previously allocated by <a href="stream.ksallocatedeviceheader">KsAllocateDeviceHeader</a>.
 
+
 ### -param TargetState [in]
 
 Contains the new state of the target associated with this object header. This may be either KSTARGET_STATE_DISABLED or KSTARGET_STATE_ENABLED.
 
+
 ## -returns
 None.
 
+
 ## -remarks
 Assumes that such a target has been set with <a href="stream.kssettargetdeviceobject">KsSetTargetDeviceObject</a>. The target is initially disabled, and is ignored when recalculating stack depth. For WDM Streaming devices, this is called on a transition back to a Stop state, after having enabled the target and used <a href="stream.ksrecalculatestackdepth">KsRecalculateStackDepth</a> on a transition to Acquire state. This allows the stack depth to be minimized.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

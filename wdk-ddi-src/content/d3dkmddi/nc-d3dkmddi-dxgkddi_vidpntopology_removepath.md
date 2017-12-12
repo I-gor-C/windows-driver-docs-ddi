@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpntopology_interface_pfnremovepath.htm
 old-project: display
 ms.assetid: 463973e0-c443-417a-86ff-0b78773d40cc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>pfnRemovePath</b> function removes a video present path to a specified VidPN topology object.
 
 
+
 ## -prototype
 
 ````
@@ -61,13 +62,16 @@ NTSTATUS APIENTRY pfnRemovePath(
 
 [in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function of the <a href="display.dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
 
+
 ### -param VidPnSourceId [in]
 
 [in] An integer that identifies a VidPN source path.
 
+
 ### -param VidPnTargetId [in]
 
 [in] An integer that identifies a VidPN target path.
+
 
 ## -returns
 The <b>pfnRemovePath</b> function returns one of the following values.
@@ -89,14 +93,17 @@ The <b>pfnRemovePath</b> function returns one of the following values.
 
  
 
+
 ## -remarks
 The D3DKMDT_HVIDPNTOPOLOGY data type is defined in<i> D3dkmdt.h</i>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,9 +135,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

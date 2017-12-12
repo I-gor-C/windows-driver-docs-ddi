@@ -7,7 +7,7 @@ old-location: print\setresult_info.htm
 old-project: print
 ms.assetid: 54701f88-1145-4a50-bf5a-36be1d88355d
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The SETRESULT_INFO structure is used as an input parameter to an application's <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed callback function. 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _SETRESULT_INFO {
 
 CPSUI-supplied size, in bytes, of the SETRESULT_INFO structure.
 
+
 ### -field wReserved
 
 Reserved.
+
 
 ### -field hSetResult
 
 CPSUI-supplied handle to an added property sheet page, obtained from the application. For more information, see the following Remarks section.
 
+
 ### -field Result
 
 CPSUI-supplied handle to an added property sheet page, obtained from the application. For more information, see the following Remarks section.
+
 
 ## -remarks
 When an application calls CPSUI's <a href="print.compropsheet">ComPropSheet</a> function, specifying a function code of <a href="print.cpsfunc_set_result">CPSFUNC_SET_RESULT</a>, CPSUI calls all registered <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed functions, specifying a reason of PROPSHEETUI_REASON_SET_RESULT. When specifying this reason, CPSUI also supplies a SETRESULT_INFO structure.
@@ -80,11 +85,13 @@ Each of the application's PFNPROPSHEETUI-typed functions is called in order, fro
 
 Typically, an application's PFNPROPSHEETUI-typed function sets the <b>Result</b> member of its PROPSHEETUI_INFO structure to the value received in the SETRESULT_INFO structure's <b>Result</b> member. Then the function returns a value of 1 (or greater), so the next PFNPROPSHEETUI-typed function can also receive it. Each subsequently called function is associated with a page that is the parent of the page associated with the last-called function. A function can modify the contents of SETRESULT_INFO structure's <b>Result</b> member, causing the functions associated with parent pages to receive the new value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

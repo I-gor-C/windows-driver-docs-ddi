@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 456712c9-720c-436c-b1db-a6d53c358e22
 ms.author: windowsdriverdev
 ms.date: 11/29/2017
-ms.keywords: _IRB, IRB, *PIRB
+ms.keywords: _IRB, *PIRB, IRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Drivers use this structure to pass most requests to IEEE 1394 bus driver.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _IRB {
 
 Determines the type of request. Each request type is documented under the value of <b>FunctionNumber</b> in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537211">IEEE 1394 Bus I/O Requests</a>.
 
+
 ### -field Flags
 
 Reserved. Drivers must set this member to zero with one exception. When making a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537647">REQUEST_ISOCH_ALLOCATE_BANDWIDTH</a> request, the caller can set the IRB_FLAG_ALLOW_REMOTE_FREE flag in <b>Flags</b> to indicate that the system should free the bandwidth handle memory pointed to be <b>IsochAllocateBandwidth.hBandwidth</b>. If caller does not set this flag, then caller will have to free the bandwidth handle. 
+
 
 ### -field BusReserved
 
 Reserved. 
 
+
 ### -field PortReserved
 
 Reserved. 
 
+
 ### -field u
 
 Specifies a union of structures, one for each value of <b>FunctionNumber</b>. The applicable submembers of <b>u</b> for each request are described with each request type in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537211">IEEE 1394 Bus I/O Requests</a>.
+
 <table>
 <tr>
 <th>FunctionNumber</th>
@@ -209,14 +215,17 @@ Specifies a union of structures, one for each value of <b>FunctionNumber</b>. Th
 </table>
  
 
+
 ## -remarks
 The <b>Parameters-&gt;Others.Arguments1</b> member of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537232">IOCTL_1394_CLASS</a> IRP points to an IRB structure. The bus driver uses the IRB to determine the type of request made by the device driver, and also to return the results of the operation. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537211">IEEE 1394 Bus I/O Requests</a> for a description of the behavior of each request.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -233,5 +242,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20IRB structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

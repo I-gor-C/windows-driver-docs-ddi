@@ -7,7 +7,7 @@ old-location: display\idarg_in_querytargetmodes.htm
 old-project: display
 ms.assetid: 4eeadee1-ac2a-46f5-88e0-fe8d3db3dcf1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_QUERYTARGETMODES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Gives information about the target modes associated with a monitor.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 
 
                      [in] The monitor description. 
+
 <div class="alert"><b>Note</b>  This may not be the monitor description the driver originally provided in the monitor arrival call, which allows for the monitor description to be updated by the OS.</div>
 <div> </div>
 
@@ -66,11 +68,13 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 
                      [in] The number of target modes the <b>pTargetModes</b> buffer passed to the driver can hold. If the value is zero, then the driver should not copy the target mode list to <b>pTargetModes.</b>
 
+
 ### -field pTargetModes
 
 
                      [out] Pointer to the buffer that the driver should copy the target modes it supports for this monitor
                  to.
+
 
 ## -remarks
 
@@ -80,6 +84,7 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

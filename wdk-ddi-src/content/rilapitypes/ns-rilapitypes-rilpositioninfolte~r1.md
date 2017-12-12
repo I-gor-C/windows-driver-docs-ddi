@@ -7,8 +7,8 @@ old-location: netvista\rilpositioninfolte_2.htm
 old-project: netvista
 ms.assetid: 4910571e-af1d-4bcf-a2d9-0d5383530171
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILPOSITIONINFOLTE, *LPRILPOSITIONINFOLTE, RILPOSITIONINFOLTE
+ms.date: 12/8/2017
+ms.keywords: RILPOSITIONINFOLTE, RILPOSITIONINFOLTE, *LPRILPOSITIONINFOLTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -100,6 +101,7 @@ typedef struct _RILPOSITIONINFOLTE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

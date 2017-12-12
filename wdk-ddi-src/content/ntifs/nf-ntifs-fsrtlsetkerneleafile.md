@@ -44,6 +44,7 @@ The routine <b>FsRtlQueryKernelEaFile</b> is used to set, modify and/or delete e
     this by FileObject instead of a handle.
 
 
+
 ## -syntax
 
 ````
@@ -61,13 +62,16 @@ NTSTATUS FsRtlSetKernelEaFile(
 
 A pointer to a <b>FileObject</b> to send the QueryEA request to.
 
+
 ### -param EaBuffer [in]
 
 A pointer to a caller-supplied, <a href="kernel.file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set
 
+
 ### -param Length [in]
 
 Specifies the length of the EA buffer.
+
 
 ## -returns
 The routine <b>FsRtlSetKernelEaFile</b> receives the status of the operation and returns one of the status codes:
@@ -92,33 +96,40 @@ The routine <b>FsRtlSetKernelEaFile</b> receives the status of the operation and
 
  
 
+
 ## -remarks
  This routine assumes all passed in buffers are from kernel mode.
 
 One or more Kernel EA’s may be set, modified and/or deleted in a single call to <b>FsRtlSetKernelEaFile</b>. Normal EA’s may also be set using the <b>FsRtlSetKernelEaFile</b> function.
 You delete EA’s by specifying an <b>EAName</b> with an <b>EaValueLength</b> of zero.  You can intermix inserting new, modifying existing, or removing EA’s in a single call.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,5 +152,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlSetKernelEaFile routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

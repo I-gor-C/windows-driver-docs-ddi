@@ -43,11 +43,14 @@ req.irql: PASSIVE_LEVEL
  Register this interface with PortCls using 
  <a href="audio.pcregisteradapterpnpmanagement">PcRegisterAdapterPnpManagement</a>. Unregister this interface with PortCls using 
  <a href="audio.pcunregisteradapterpnpmanagement">PcUnregisterAdapterPnpManagement</a>.
+
 IAdapterPnpManagement is available in Windows 10, version 1511 and later versions of Windows. 
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IAdapterPnpManagement</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -57,6 +60,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IAdapterPnpManagement</b> int
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

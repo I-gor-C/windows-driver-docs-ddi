@@ -7,7 +7,7 @@ old-location: kernel\runonceinitialization.htm
 old-project: kernel
 ms.assetid: 7411c10f-76ab-44df-8cab-2266443417aa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: Called at IRQL <= APC_LEVEL.
 The <i>RunOnceInitialization</i> routine performs a one-time initialization operation.
 
 
+
 ## -prototype
 
 ````
@@ -61,17 +62,21 @@ ULONG RunOnceInitialization(
 
 A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a> one-time initialization structure that the driver previously passed as a parameter to the <a href="kernel.rtlrunonceexecuteonce">RtlRunOnceExecuteOnce</a> routine that called this <i>RunOnceInitialization</i> routine.
 
+
 ### -param Parameter [in, out]
 
 The <i>Parameter</i> value that the driver passed to the <b>RtlRunOnceExecuteOnce</b> routine that called this <i>RunOnceInitialization</i> routine.
+
 
 ### -param Context [out]
 
 A pointer to a PVOID variable to which the routine writes the initialization data.
 
+
 ## -returns
 
       The <i>RunOnceInitialization</i> routine returns a nonzero value to indicate success, and returns zero to indicate failure.
+
 
 ## -remarks
 A driver-implemented <i>RunOnceInitialization</i> routine performs driver-specific initialization and then writes the initialization data to the memory location that the <i>Context</i> parameter points to. Drivers use the <b>RtlRunOnceExecuteOnce</b> routine to make a one-time call to a <i>RunOnceInitialization</i> routine. The operating system guarantees that the <i>RunOnceInitialization</i> routine is not called twice for the same value of the <i>RunOnce</i> parameter.
@@ -86,11 +91,13 @@ Then, implement your callback routine as follows:
 
 The RTL_RUN_ONCE_INIT_FN function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the RTL_RUN_ONCE_INIT_FN function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,14 +108,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Drivers can implement the <i>RunOnceInitialization</i> routine only on Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,9 +129,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Called at IRQL &lt;= APC_LEVEL.
+
 </td>
 </tr>
 </table>
@@ -145,5 +157,8 @@ Called at IRQL &lt;= APC_LEVEL.
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RunOnceInitialization routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RunOnceInitialization routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

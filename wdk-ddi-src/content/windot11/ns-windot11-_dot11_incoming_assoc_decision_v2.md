@@ -7,7 +7,7 @@ old-location: netvista\dot11_incoming_assoc_decision_v2.htm
 old-project: netvista
 ms.assetid: E2455BD2-E540-4B81-84D8-E88D740407ED
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_INCOMING_ASSOC_DECISION_V2, DOT11_INCOMING_ASSOC_DECISION_V2, *PDOT11_INCOMING_ASSOC_DECISION_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,6 +60,7 @@ typedef struct _DOT11_INCOMING_ASSOC_DECISION_V2 {
 ### -field Header
 
 The type, revision, and size of the <b>DOT11_INCOMING_ASSOC_DECISION_V2</b> structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -80,29 +81,36 @@ The type, revision, and size of the <b>DOT11_INCOMING_ASSOC_DECISION_V2</b> stru
 </table>
  
 
+
 ### -field PeerMacAddr
 
 The address of the peer station for the 802.11 station connect attempt.
+
 
 ### -field bAccept
 
 The incoming association acceptance. If TRUE, the driver accepts the request. Otherwise, the request is rejected.
 
+
 ### -field usReasonCode
 
 If bAccept == TRUE, the reason code is included in the association response.
+
 
 ### -field uAssocResponseIEsOffset
 
 The offset, in bytes,  of the array of additional information elements (IEs) that the miniport driver must include in the probe response packet. The probe response is sent to the peer station seeking the association. This offset is from the start of the buffer that contains this structure.
 
+
 ### -field uAssocResponseIEsLength
 
 The length, in bytes, of the array of IEs provided at <b>uAssocResponseIEsOffset</b>.
 
+
 ### -field WFDStatus
 
 The status code to include in the Peer-to-Peer (P2P) IE of the association response if <b>bAccept</b> is FALSE.
+
 
 ## -remarks
 
@@ -112,14 +120,17 @@ The status code to include in the Peer-to-Peer (P2P) IE of the association respo
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,5 +147,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_DECISION_V2 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_DECISION_V2 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: storage\st_parameter_data.htm
 old-project: storage
 ms.assetid: C50F45EC-433C-421D-BD02-4C86CB44D5A4
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: PST_PARAMETER_DATA, ST_PARAMETER_DATA, *PST_PARAMETER_DATA
+ms.date: 12/8/2017
+ms.keywords: PST_PARAMETER_DATA, *PST_PARAMETER_DATA, ST_PARAMETER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <= APC_LEVEL
+req.irql: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>ST_PARAMETER_DATA</b> structure contains the parameter list for the set timestamp command. 
+
 
 
 ## -syntax
@@ -60,14 +62,17 @@ typedef struct _ST_PARAMETER_DATA {
 
 Reserved for future use.
 
+
 ### -field Timestamp
 
 Specifies the value to which a device clock shall be initialized. The timestamp
 should be the number of milliseconds that have elapsed since midnight, 1 January 1970 UT.
 
+
 ### -field Reserved2
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -77,14 +82,17 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10, version 1709 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +109,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ST_PARAMETER_DATA structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ST_PARAMETER_DATA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

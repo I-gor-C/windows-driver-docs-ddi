@@ -7,7 +7,7 @@ old-location: print\replyprinterchangenotificationex.htm
 old-project: print
 ms.assetid: A3A906C0-FA96-4008-B904-1DA333B59833
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: ReplyPrinterChangeNotificationEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -80,6 +81,7 @@ req.product: Windows 10 or later.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

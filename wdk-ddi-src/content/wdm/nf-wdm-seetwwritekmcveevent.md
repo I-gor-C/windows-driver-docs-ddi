@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b> 	SeEtwWriteKMCveEvent</b> function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.   
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ __checkReturn HRESULT NTStatus SeEtwWriteKMCveEvent(
 
 A pointer to a string mentioning the CVE-ID associated with the vulnerability for which this event is being raised. Technical guidance for handling the CVE-ID is shared <a href="ttp://go.microsoft.com/fwlink/?LinkId=798519">here</a>
 
+
 ### -param AdditionalDetails [in, optional]
 
 A pointer to a string giving additional details that the event producer may want to provide to the consumer of this event.
+
 
 ## -returns
 <b>SeEtwWriteKMCveEvent</b> returns one of the following values:
@@ -73,6 +76,7 @@ A pointer to a string giving additional details that the event producer may want
 
  
 
+
 ## -remarks
 The <b> 	SeEtwWriteKMCveEvent</b> function publishes a CVE-based event. This function should be called only in scenarios where an attempt to exploit a known, patched vulnerability is detected by the application. Ideally, this function call should be added as part of the fix (update) itself. 
  The default consumer for this event is EventLog-System. To enable another consumer, the provider can be added to the consumer session.
@@ -82,19 +86,23 @@ Provider GUID: 85a62a0d-7e17-485f-9d4f-749a287193a6
 
 Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10 and later versions of Windows
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +113,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +124,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

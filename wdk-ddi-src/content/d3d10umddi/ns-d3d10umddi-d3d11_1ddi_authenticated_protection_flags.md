@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_authenticated_protection_flags.htm
 old-project: display
 ms.assetid: 687eb573-ea7c-4e8a-80df-65339521ec18
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS, D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the protection level for video content.
 
 
+
 ## -syntax
 
 ````
@@ -63,9 +64,11 @@ typedef struct D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS {
 
 If 1, video content protection is enabled.
 
+
 ### -field OverlayOrFullscreenRequired
 
 If 1, the application requires video to be displayed using either a hardware overlay or full-screen exclusive mode.
+
 
 
 
@@ -73,9 +76,11 @@ If 1, the application requires video to be displayed using either a hardware ove
 
 Reserved for system use. Set all bits to zero.
 
+
 ### -field Value
 
 Use this member to access all of the bits in the union.
+
 
 ## -remarks
 
@@ -85,22 +90,27 @@ Use this member to access all of the bits in the union.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

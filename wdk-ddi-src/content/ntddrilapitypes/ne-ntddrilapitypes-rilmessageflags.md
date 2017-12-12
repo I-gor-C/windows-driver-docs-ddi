@@ -7,7 +7,7 @@ old-location: netvista\rilmessageflags.htm
 old-project: netvista
 ms.assetid: 82f36886-20bf-4981-b0f0-3871a87b6c4e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMESSAGEFLAGS, RILMESSAGEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef enum _RILMESSAGEFLAGS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

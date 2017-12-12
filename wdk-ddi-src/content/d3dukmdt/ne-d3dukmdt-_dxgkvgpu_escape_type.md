@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_type.htm
 old-project: display
 ms.assetid: F7081B59-DB24-4BFE-B1BD-3BE228804AB2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKVGPU_ESCAPE_TYPE, DXGKVGPU_ESCAPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 An enum that holds information about the escape type.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _DXGKVGPU_ESCAPE_TYPE {
 
 Indicates the PCI config of the escape type.
 
+
 ### -field DXGKVGPU_ESCAPE_TYPE_GET_VGPU_TYPE
 
 Indicates the VGPU type of the escape.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates the VGPU type of the escape.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

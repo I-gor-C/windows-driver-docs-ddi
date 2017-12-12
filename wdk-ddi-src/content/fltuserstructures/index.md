@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Fltuserstructures.h header
 
+## -description
 
 This header is used by Installable file system. For more information, see
 - [Installable file system](../_ifsk/index.md)
@@ -11,20 +16,19 @@ Fltuserstructures.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [FILTER_AGGREGATE_BASIC_INFORMATION structure](ns-fltuserstructures--filter-aggregate-basic-information.md) | The FILTER_AGGREGATE_BASIC_INFORMATION structure contains basic information for a minifilter or legacy filter driver. |
-| [FILTER_AGGREGATE_STANDARD_INFORMATION structure](ns-fltuserstructures--filter-aggregate-standard-information.md) | The FILTER_AGGREGATE_STANDARD_INFORMATION structure contains information about a minifilter or legacy filter driver. |
-| [FILTER_FULL_INFORMATION structure](ns-fltuserstructures--filter-full-information.md) | The FILTER_FULL_INFORMATION structure contains full information for a minifilter driver. |
-| [FILTER_MESSAGE_HEADER structure](ns-fltuserstructures--filter-message-header.md) | The FILTER_MESSAGE_HEADER structure contains message header information. |
-| [FILTER_REPLY_HEADER structure](ns-fltuserstructures--filter-reply-header.md) | The FILTER_REPLY_HEADER structure contains message reply header information. |
-| [FILTER_VOLUME_BASIC_INFORMATION structure](ns-fltuserstructures--filter-volume-basic-information.md) | The caller-allocated FILTER_VOLUME_BASIC_INFORMATION structure contains basic information for a volume. |
-| [FILTER_VOLUME_STANDARD_INFORMATION structure](ns-fltuserstructures--filter-volume-standard-information.md) | The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume. |
-| [INSTANCE_AGGREGATE_STANDARD_INFORMATION structure](ns-fltuserstructures--instance-aggregate-standard-information.md) | The caller-allocated INSTANCE_AGGREGATE_STANDARD_INFORMATION structure contains information for either a minifilter driver instance or a legacy filter driver. |
-| [INSTANCE_BASIC_INFORMATION structure](ns-fltuserstructures--instance-basic-information.md) | The INSTANCE_BASIC_INFORMATION structure contains basic information for a minifilter instance. |
-| [INSTANCE_FULL_INFORMATION structure](ns-fltuserstructures--instance-full-information.md) | The INSTANCE_FULL_INFORMATION structure contains full information for a minifilter instance. |
-| [INSTANCE_PARTIAL_INFORMATION structure](ns-fltuserstructures--instance-partial-information.md) | The INSTANCE_PARTIAL_INFORMATION structure contains partial information for a minifilter instance. |
+| [_FILTER_AGGREGATE_BASIC_INFORMATION structure](ns-fltuserstructures-_filter_aggregate_basic_information.md) | The FILTER_AGGREGATE_BASIC_INFORMATION structure contains basic information for a minifilter or legacy filter driver. |
+| [_FILTER_AGGREGATE_STANDARD_INFORMATION structure](ns-fltuserstructures-_filter_aggregate_standard_information.md) | The FILTER_AGGREGATE_STANDARD_INFORMATION structure contains information about a minifilter or legacy filter driver. |
+| [_FILTER_FULL_INFORMATION structure](ns-fltuserstructures-_filter_full_information.md) | The FILTER_FULL_INFORMATION structure contains full information for a minifilter driver. |
+| [_FILTER_MESSAGE_HEADER structure](ns-fltuserstructures-_filter_message_header.md) | The FILTER_MESSAGE_HEADER structure contains message header information. |
+| [_FILTER_REPLY_HEADER structure](ns-fltuserstructures-_filter_reply_header.md) | The FILTER_REPLY_HEADER structure contains message reply header information. |
+| [_FILTER_VOLUME_BASIC_INFORMATION structure](ns-fltuserstructures-_filter_volume_basic_information.md) | The caller-allocated FILTER_VOLUME_BASIC_INFORMATION structure contains basic information for a volume. |
+| [_FILTER_VOLUME_STANDARD_INFORMATION structure](ns-fltuserstructures-_filter_volume_standard_information.md) | The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume. |
+| [_INSTANCE_AGGREGATE_STANDARD_INFORMATION structure](ns-fltuserstructures-_instance_aggregate_standard_information.md) | The caller-allocated INSTANCE_AGGREGATE_STANDARD_INFORMATION structure contains information for either a minifilter driver instance or a legacy filter driver. |
+| [_INSTANCE_FULL_INFORMATION structure](ns-fltuserstructures-_instance_full_information.md) | The INSTANCE_FULL_INFORMATION structure contains full information for a minifilter instance. |
+| [_INSTANCE_PARTIAL_INFORMATION structure](ns-fltuserstructures-_instance_partial_information.md) | The INSTANCE_PARTIAL_INFORMATION structure contains partial information for a minifilter instance. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [FLT_FILESYSTEM_TYPE enumeration](ne-fltuserstructures--flt-filesystem-type.md) | The FLT_FILESYSTEM_TYPE enumeration identifies the type of file system being used on a volume. |
+| [_FLT_FILESYSTEM_TYPE enumeration](ne-fltuserstructures-_flt_filesystem_type.md) | The FLT_FILESYSTEM_TYPE enumeration identifies the type of file system being used on a volume. |

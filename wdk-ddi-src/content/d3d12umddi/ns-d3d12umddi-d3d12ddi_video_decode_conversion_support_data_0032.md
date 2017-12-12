@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-conversion-support-data-0032.htm
 old-project: display
 ms.assetid: 1395fe30-9bbf-433c-8696-a0f842bad10e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032, D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video decode conversion support data.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 {
 
 Node index.
 
+
 ### -field Configuration
 
 Configuration.
+
 
 ### -field DecodeSample
 
 Decode sample.
 
+
 ### -field OutputFormat
 
 Output format.
+
 
 ### -field FrameRate
 
 Frame rate.
 
+
 ### -field BitRate
 
 Bitrate.
+
 
 ### -field SupportFlags
 
 Support flags.
 
+
 ### -field ScaleSupport
 
 Scale support.
+
 
 ## -remarks
 
@@ -99,6 +108,7 @@ Scale support.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

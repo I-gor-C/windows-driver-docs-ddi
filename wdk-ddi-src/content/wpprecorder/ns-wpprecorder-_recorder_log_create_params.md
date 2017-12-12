@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RECORDER_LOG_CREATE_PARAMS</b> structure is an input parameter to the <a href="devtest.wpprecorderlogcreate">WppRecorderLogCreate</a> method. 
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ typedef struct _RECORDER_LOG_CREATE_PARAMS {
 
  Size of this structure.
 
+
 ### -field LogTag
 
  Optional tag to associate with the allocated memory of the log.
+
 
 ### -field TotalBufferSize
 
 Size in bytes for the log area.
 
+
 ### -field ErrorPartitionSize
 
  The number of bytes out  of <b>TotalBufferSize</b> used to log error messages. Zero indicates no error partition.
+
 
 ### -field LogIdentifierAppendValue
 
  Number/pointer to append to log identifier.
 
+
 ### -field LogIdentifierAppendValueSet
 
  Specifies whether <b>LogIdentifierAppendValue</b> has been set.
+
 
 ### -field LogIdentifierSize
 
  Size of <b>LogIdentifier</b> field, in bytes (according to client's definition).
 
+
 ### -field LogIdentifier
 
 Identifier to print when debug messages are merged. Lives at end of structure so that, if at some point clients have different definitions of the array size, it remains simple to read the rest of the structure.
+
 
 ## -remarks
 
@@ -100,6 +109,7 @@ Identifier to print when debug messages are merged. Lives at end of structure so
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +126,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20RECORDER_LOG_CREATE_PARAMS structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

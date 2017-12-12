@@ -7,8 +7,8 @@ old-location: netvista\rilsendrestricteduicccmdparams.htm
 old-project: netvista
 ms.assetid: 22c7ae24-c2dc-46d6-b3c2-b908ad6d181c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILSENDRESTRICTEDUICCCMDPARAMS, *LPRILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS, *LPRILSENDRESTRICTEDUICCCMDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -87,6 +88,7 @@ typedef struct _RILSENDRESTRICTEDUICCCMDPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

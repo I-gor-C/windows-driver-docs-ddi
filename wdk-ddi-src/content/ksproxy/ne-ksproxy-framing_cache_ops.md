@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef enum  {
 
 Specifies a request to bypass the cache when reading or writing.
 
+
 ### -field Framing_Cache_ReadLast
 
 
@@ -76,6 +78,7 @@ Specifies a request to bypass the cache when reading or writing.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

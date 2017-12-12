@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_queue_config_init.htm
 old-project: wdf
 ms.assetid: 51c43509-074c-4118-afe5-2e568d733751
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_TASK_QUEUE_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
 			For internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ FORCEINLINE VOID WDF_TASK_QUEUE_CONFIG_INIT(
 ## -returns
 This method does not return a value.
 
+
 ## -remarks
 
 
@@ -76,14 +78,17 @@ This method does not return a value.
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

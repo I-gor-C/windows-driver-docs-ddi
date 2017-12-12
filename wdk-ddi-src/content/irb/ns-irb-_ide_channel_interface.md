@@ -7,8 +7,8 @@ old-location: storage\ide_channel_interface.htm
 old-project: storage
 ms.assetid: 0a742dc2-fa1a-4b93-a136-52f4571bde22
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE
+ms.date: 12/8/2017
+ms.keywords: _IDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.
 
 
+
 ## -syntax
 
 ````
@@ -65,13 +66,16 @@ typedef struct _IDE_CHANNEL_INTERFACE {
 
 The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
 
+
 ### -field ChannelNumber
 
 The port driver sets this field to the number assigned for this channel. For non-native mode controllers, the primary channel will always be assigned 0 and the secondary channel will always be assigned 1.
 
+
 ### -field Reserved
 
 Reserved for future use. The miniport driver must not use this field.
+
 
 ### -field ReservedUlong
 
@@ -106,6 +110,7 @@ Reserved for future use. The miniport driver must not use this field.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,5 +142,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_CHANNEL_INTERFACE structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_CHANNEL_INTERFACE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\dxva_connectmode.htm
 old-project: display
 ms.assetid: 84520745-c99d-4495-a7c4-514d5e6cd27e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVA_ConnectMode, DXVA_ConnectMode, *LPDXVA_ConnectMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXVA_ConnectMode structure is sent by the host decoder to the accelerator to define the restricted profile used within a DirectX VA connection.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DXVA_ConnectMode {
 
 Specifies the GUID associated with the <a href="https://msdn.microsoft.com/043d5867-d761-47eb-99de-5022a9ee6e7f">restricted profile</a> to be used. 
 
+
 ### -field wRestrictedMode
 
 Specifies the numeric identifier of the restricted profile to be used. 
+
 
 ## -remarks
 The following GUIDs placed in the <b>guidMode</b> member of this structure set the <a href="https://msdn.microsoft.com/043d5867-d761-47eb-99de-5022a9ee6e7f">restricted profile</a> to be used. The constants that define the GUIDs used are in <i>dxva.h</i>.
@@ -278,11 +281,13 @@ DXVA_RESTRICTED_MODE_VC1_D
 
 For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1 video codec standards, download <a href="http://go.microsoft.com/fwlink/p/?linkid=141799">DirectX Video Acceleration Specification for H.264/AVC Decoding</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=141800">DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

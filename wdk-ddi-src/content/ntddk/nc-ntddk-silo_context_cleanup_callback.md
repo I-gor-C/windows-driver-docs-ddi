@@ -7,7 +7,7 @@ old-location: kernel\silo_context_cleanup_callback.htm
 old-project: kernel
 ms.assetid: 452E63E8-DFBB-43AF-81F4-0405C3EF74CE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This callback is invoked when the context object reaches a reference count of zero.
 
 
+
 ## -prototype
 
 ````
@@ -59,8 +60,10 @@ void CleanupCallback(
 
 A pointer provided by the user with the call to <a href="kernel.pscreatesilocontext">PsCreateSiloContext</a>.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -70,22 +73,27 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

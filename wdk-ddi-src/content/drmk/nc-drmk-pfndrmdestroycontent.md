@@ -41,6 +41,7 @@ req.irql:
 This callback function is reserved for system use.
 
 
+
 ## -prototype
 
 ````
@@ -61,8 +62,10 @@ typedef PFNDRMDESTROYCONTENT DRMDestroyContent;
 
 This parameter is reserved for system use.
 
+
 ## -returns
 This return value is reserved for system use.
+
 
 ## -remarks
 
@@ -72,6 +75,7 @@ This return value is reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

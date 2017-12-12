@@ -7,7 +7,7 @@ old-location: netvista\npi_registration_instance.htm
 old-project: netvista
 ms.assetid: a368f9d9-a7e0-4b35-ba14-b0919f74029d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The NPI_REGISTRATION_INSTANCE structure defines the data related to the registra
   module with the NMR.
 
 
+
 ## -syntax
 
 ````
@@ -63,9 +64,11 @@ typedef struct _NPI_REGISTRATION_INSTANCE {
 The version of the NMR with which the network module is registering. A network module should set
      this member to zero.
 
+
 ### -field Size
 
 The size, in bytes, of the NPI_REGISTRATION_INSTANCE structure.
+
 
 ### -field NpiId
 
@@ -74,6 +77,7 @@ A pointer to the
      NPI to which the network module
      is registering as either a client or a provider. The NPIID data type is defined as:
      
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -92,6 +96,7 @@ A pointer to an
      <a href="netvista.npi_moduleid">NPI_MODULEID</a> structure that uniquely
      identifies the network module.
 
+
 ### -field Number
 
 The implementation number of the 
@@ -105,6 +110,7 @@ The implementation number of the
      NPI, this member is set to
      zero.
 
+
 ### -field NpiSpecificCharacteristics
 
 A pointer to a structure that specifies characteristics that are unique to the network module. The
@@ -114,6 +120,7 @@ A pointer to a structure that specifies characteristics that are unique to the n
      characteristics structure or if it is registering as a provider of an NPI that does not define a
      provider characteristics structure.
 
+
 ## -remarks
 An NPI_REGISTRATION_INSTANCE structure is a member of the 
     <a href="netvista.npi_client_characteristics">NPI_CLIENT_CHARACTERISTICS</a> and 
@@ -122,10 +129,10 @@ An NPI_REGISTRATION_INSTANCE structure is a member of the
     with the NMR.
 
 When the NMR calls a cleint module's 
-    <a href="netvista.clientattachprovider">ClientAttachProvider</a> callback
+    <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a> callback
     function, it passes a pointer to the NPI_REGISTRATION_INSTANCE structure for the provider module to which
     the client module can attach itself. Likewise, when the NMR calls a provider module's 
-    <a href="netvista.providerattachclient">ProviderAttachClient</a> callback
+    <a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a> callback
     function, it passes a pointer to the NPI_REGISTRATION_INSTANCE structure for the client module to which
     the provider module can attach itself.
 
@@ -138,20 +145,24 @@ A network module must make sure that the memory for the NPIID pointed to by the
     <b>NpiSpecificCharacteristics</b> member remain valid and resident in memory as long as the network module
     is registered with the NMR.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -164,10 +175,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.clientattachprovider">ClientAttachProvider</a>
+<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
 </dt>
 <dt>
-<a href="netvista.providerattachclient">ProviderAttachClient</a>
+<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
 </dt>
 <dt>
 <a href="netvista.npi_client_characteristics">NPI_CLIENT_CHARACTERISTICS</a>
@@ -180,5 +191,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

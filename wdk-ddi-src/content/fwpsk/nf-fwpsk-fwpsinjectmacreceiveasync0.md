@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectmacreceiveasync0.htm
 old-project: netvista
 ms.assetid: 8B03835A-98EE-4157-BD05-C52D01EE5F5E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsInjectMacReceiveAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>FwpsInjectMacReceiveAsync0</b> function can  reinject a previously absorb
 
 
 
+
 ## -syntax
 
 ````
@@ -65,6 +66,7 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
 ### -param injectionHandle [in]
 
 An injection handle that was previously obtained by a call to  the <a href="netvista.fwpsinjectionhandlecreate0">FwpsInjectionHandleCreate0</a> function with the <i>flags</i> parameter set to FWPS_INJECTION_TYPE_L2. 
+
 <div class="alert"><b>Note</b>  Set the <i>addressFamily</i> parameter of the <a href="netvista.fwpsinjectionhandlecreate0">FwpsInjectionHandleCreate0</a> function to AF_UNSPEC.</div>
 <div> </div>
 
@@ -76,21 +78,26 @@ An optional handle to the injection context. If specified, it can be obtained by
      <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.
 
+
 ### -param flags [in]
 
 Reserved. Must be set to zero.
+
 
 ### -param layerId [in]
 
 The run-time identifier for the filtering layer at which the data stream is being processed. 
 
+
 ### -param interfaceIndex [in]
 
 The interface index that is passed to the callout driver's <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> incoming value FWPS_FIELD_<i>Xxx</i>_MAC_FRAME_<i>Xxx</i>_INTERFACE_INDEX.
 
+
 ### -param NdisPortNumber [in]
 
 The NDIS port number  that is passed to the callout driver's <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> incoming value FWPS_FIELD_<i>Xxx</i>_MAC_FRAME_<i>Xxx</i>_NDIS_PORT.
+
 
 ### -param netBufferLists [in, out]
 
@@ -102,6 +109,7 @@ A pointer to a
      <a href="netvista.fwpsallocatenetbufferandnetbufferlist0">FwpsAllocateNetBufferAndNetBufferList0</a> function. The NET_BUFFER_LIST structure must begin with an
      IP header.
 
+
 ### -param completionFn [in]
 
 A pointer to a 
@@ -109,11 +117,13 @@ A pointer to a
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferLists</i> parameter, has been injected into the network stack. This pointer must be specified when injecting cloned or created NET_BUFFER_LIST structures. When injecting original  NET_BUFFER_LIST structures, this parameter can be NULL if the original structures  are not altered.
 
+
 ### -param completionContext [in, optional]
 
 A pointer to a callout driver–provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 The 
@@ -144,6 +154,7 @@ The
 
  
 
+
 ## -remarks
 A callback driver calls the <b>FwpsInjectMacReceiveAsync0</b>  function to reinject a previously absorbed MAC frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or to inject an invented MAC frame.
 
@@ -154,11 +165,13 @@ The <i>netBufferLists</i> parameter can be a <a href="https://msdn.microsoft.com
 Injected frames could get classified again if the packets match the same filter as originally classified. Therefore, as with callouts at IP layers, layer 2 callouts must also protect against infinite packet inspection by calling <a href="netvista.fwpsquerypacketinjectionstate0">FwpsQueryPacketInjectionState0</a>.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -169,14 +182,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -187,6 +203,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -197,9 +214,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -232,5 +251,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectMacReceiveAsync0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectMacReceiveAsync0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

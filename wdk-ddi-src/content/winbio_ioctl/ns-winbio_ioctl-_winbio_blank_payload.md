@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 0bc28853-1c00-42d3-a269-198093d64dd7
 ms.author: windowsdriverdev
 ms.date: 11/13/2017
-ms.keywords: _WINBIO_BLANK_PAYLOAD, *PWINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD
+ms.keywords: _WINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD, *PWINBIO_BLANK_PAYLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_reset.md">IOCTL_BIOMETRIC_RESET</a> and <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_update_firmware.md">IOCTL_BIOMETRIC_UPDATE_FIRMWARE</a> IOCTLs return the WINBIO_BLANK_PAYLOAD structure as output.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WINBIO_BLANK_PAYLOAD {
 
  The total size of the payload.  This includes the fixed length structure and any variable data at the end.
 
+
 ### -field WinBioHresult
 
 The status detail of the I/O operation.  This is where WINBIO error and information codes will be passed. The following table shows possible values.
+
 <table>
 <tr>
 <th>Status value</th>
@@ -69,29 +72,36 @@ The status detail of the I/O operation.  This is where WINBIO error and informat
 <tr>
 <td>
 S_OK
+
 </td>
 <td>
 The operation completed successfully.
+
 </td>
 </tr>
 <tr>
 <td>
 HRESULT_FROM_NT(STATUS_IO_DEVICE_ERROR)
+
 </td>
 <td>
 The driver could not gather the necessary information from the device.
+
 </td>
 </tr>
 <tr>
 <td>
 WINBIO_E_DEVICE_BUSY
+
 </td>
 <td>
 The device is in the middle of a vendor-specific operation.  This should only be returned when the device cannot be reset, and the vendor-specific operation cannot be canceled.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -101,14 +111,17 @@ The device is in the middle of a vendor-specific operation.  This should only be
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

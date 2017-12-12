@@ -7,7 +7,7 @@ old-location: netvista\ril_getalladditionalnumberstrings.htm
 old-project: netvista
 ms.assetid: fc0f5a3b-3ab0-4103-85a2-f7b5ce64ec79
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RIL_GetAllAdditionalNumberStrings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ This topic supports the Windows driver infrastructure and is not intended to be 
             
 
 
+
 ## -syntax
 
 ````
@@ -69,6 +70,7 @@ HRESULT  RIL_GetAllAdditionalNumberStrings(
 ## -returns
 If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
+
 ## -remarks
 
 
@@ -77,22 +79,27 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

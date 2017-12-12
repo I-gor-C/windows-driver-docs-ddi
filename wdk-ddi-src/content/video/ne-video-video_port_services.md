@@ -7,7 +7,7 @@ old-location: display\video_port_services.htm
 old-project: display
 ms.assetid: 3ca53536-e847-4c11-a28d-e046e8a392de
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VIDEO_PORT_SERVICES, VIDEO_PORT_SERVICES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The VIDEO_PORT_SERVICES enumerated type lists the interfaces that the video miniport driver can request from the video port driver by calling <a href="display.videoportqueryservices">VideoPortQueryServices</a>.
 
 
+
 ## -syntax
 
 ````
@@ -62,22 +63,27 @@ typedef enum  {
 
 Represents the AGP interface. 
 
+
 ### -field VideoPortServicesI2C
 
 Represents the I2C interface. 
+
 
 ### -field VideoPortServicesHeadless
 
 Represents the Headless interface. 
 
+
 ### -field VideoPortServicesInt10
 
 Represents the Int10 interface. 
+
 
 ### -field VideoPortServicesDebugReport
 
 Represents the Debug Report interface, which is available in the following operating systems:
  
+
 
 <ul>
 <li>Windows Server 2003 SP1 and subsequent service packs</li>
@@ -88,16 +94,19 @@ Represents the Debug Report interface, which is available in the following opera
 
 Represents the WC Memory Protection interface. 
 
+
 ## -remarks
 Many functions are exported by the video port driver; the video miniport driver can call those functions using ordinary dynamic linking. Other functions implemented by the video port driver are not exported; instead, they are made available to the video miniport driver through function pointers. An interface, in this context, is a set of related function pointers. For example, the AGP interface is a set of pointers to functions (implemented by the video port driver) that provide AGP services to the video miniport driver.
 
 The video miniport driver obtains a set of function pointers by passing a value from the VIDEO_PORT_SERVICES enumerated type to the <i>ServicesType</i> parameter of the <b>VideoPortQueryServices</b> function.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_SERVICES enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_SERVICES enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The RTL_AVL_TABLE structure contains file system-specific data for an Adelson-Velsky/Landis (AVL) tree. An AVL tree ensures a more balanced, shallower tree implementation than a splay tree implementation of a generic table (<a href="ifsk.rtl_generic_table">RTL_GENERIC_TABLE</a>). 
+
 RTL_AVL_TABLE is opaque, so cannot be directly manipulated. Drivers must use the support routines that are described in the Remarks section to manipulate RTL_AVL_TABLE values. 
+
 
 
 ## -syntax
@@ -67,45 +69,56 @@ typedef struct _RTL_AVL_TABLE {
 
 Reserved for system use.
 
+
 ### -field OrderedPointer
 
 Reserved for system use.
+
 
 ### -field WhichOrderedElement
 
 Reserved for system use.
 
+
 ### -field NumberGenericTableElements
 
 Reserved for system use.
+
 
 ### -field DepthOfTree
 
 Reserved for system use.
 
+
 ### -field RestartKey
 
 Reserved for system use.
+
 
 ### -field DeleteCount
 
 Reserved for system use.
 
+
 ### -field CompareRoutine
 
 Reserved for system use.
+
 
 ### -field AllocateRoutine
 
 Reserved for system use.
 
+
 ### -field FreeRoutine
 
 Reserved for system use.
 
+
 ### -field TableContext
 
 Reserved for system use.
+
 
 ## -remarks
 To initialize an AVL table package, you allocate a buffer that is at least <b>sizeof(</b>RTL_AVL_TABLE<b>) </b>bytes in size. You can then use this buffer to receive the initialized AVL table structure from a call to the <a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTableAvl</a> routine. Use the following routines to manipulate the table:
@@ -158,19 +171,23 @@ To initialize an AVL table package, you allocate a buffer that is at least <b>si
 <a href="ifsk.rtlnumbergenerictableelements">RtlNumberGenericTableElementsAvl</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available on Windows XP and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -226,5 +243,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RTL_AVL_TABLE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

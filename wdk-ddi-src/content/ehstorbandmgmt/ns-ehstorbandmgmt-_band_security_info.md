@@ -7,7 +7,7 @@ old-location: storage\band_security_info.htm
 old-project: storage
 ms.assetid: 310F996F-F350-4F25-BC8A-386513908557
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _BAND_SECURITY_INFO, *PBAND_SECURITY_INFO, BAND_SECURITY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>BAND_SECURITY_INFO</b> structure specifies the security information for a band table entry query.
 
 
+
 ## -syntax
 
 ````
@@ -67,29 +68,36 @@ typedef struct _BAND_LOCATION_INFO {
 
 The size of the structure in bytes. Set to <b>sizeof</b>(BAND_SECURITY_INFO).
 
+
 ### -field ReadLock
 
 Whether the band is accessible for reading and how a read lock is affected by a power reset.
+
 
 ### -field WriteLock
 
 Whether the band is accessible for writing and how a write lock is affected by a power reset.
 
+
 ### -field CryptoAlgoIdType
 
 The type of encryption algorithm identifier used. This must be set to <b>AlgoIdTypeOidString</b>.
+
 
 ### -field CryptoAlgoOidString
 
 The encryption algorithm used to protect the data in the band.
 
+
 ### -field Offset
 
 The offset from the beginning of this structure where the encryption algorithm OID string begins.
 
+
 ### -field Length
 
 The length of the OID string identifying the encryption algorithm. This is a byte-length value including a NULL terminator for the OID string.
+
 </dd>
 </dl>
 
@@ -97,9 +105,11 @@ The length of the OID string identifying the encryption algorithm. This is a byt
 
 Reserved.
 
+
 ### -field Metadata
 
 A metadata field available for use by a key manager.
+
 
 ## -remarks
 Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indicate locking state and lock persistence. Their values are one of the following.
@@ -108,19 +118,23 @@ Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indica
 
 When <b>BAND_SECURITY_INFO</b> is used in an input parameter set, <b>CryptoAlgoIdType</b> and <b>CryptoAlgoOidString</b> are not used and must be set to 0.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +160,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20BAND_SECURITY_INFO structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20BAND_SECURITY_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

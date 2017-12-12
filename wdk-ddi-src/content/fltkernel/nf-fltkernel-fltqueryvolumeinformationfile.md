@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltQueryVolumeInformationFile</b> retrieves volume information for a given file, directory, storage device, or volume. 
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS FltQueryVolumeInformationFile(
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 File object pointer for an open file, directory, storage device, or volume. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param FsInformation [out]
 
 Pointer to a caller-allocated buffer that receives information about the file. The <i>FsInformationClass</i> parameter specifies the type of information. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param Length [in]
 
 Size, in bytes, of the <i>FsInformation</i> buffer. 
 
+
 ### -param FsInformationClass [in]
 
 Type of volume information to be returned. One of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -88,6 +94,7 @@ Type of volume information to be returned. One of the following:
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMATION</a> structure that contains attribute information about the file system responsible for the volume. 
+
 </td>
 </tr>
 <tr>
@@ -97,6 +104,7 @@ Return a <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMAT
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION</a> structure that contains file system control information about the volume. 
+
 </td>
 </tr>
 <tr>
@@ -106,6 +114,7 @@ Return a <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION<
 </td>
 <td width="60%">
 Return a <a href="kernel.file_fs_device_information">FILE_FS_DEVICE_INFORMATION</a> structure that contains device information for the volume. 
+
 </td>
 </tr>
 <tr>
@@ -115,6 +124,7 @@ Return a <a href="kernel.file_fs_device_information">FILE_FS_DEVICE_INFORMATION<
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_driver_path_information">FILE_FS_DRIVER_PATH_INFORMATION</a> structure that contains information about whether a specified driver is in the I/O path for the volume. The caller must store the name of the driver into the <b>FILE_FS_DRIVER_PATH_INFORMATION</b> structure before calling <b>FltQueryVolumeInformationFile</b>. 
+
 </td>
 </tr>
 <tr>
@@ -124,6 +134,7 @@ Return a <a href="ifsk.file_fs_driver_path_information">FILE_FS_DRIVER_PATH_INFO
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMATION</a> structure that contains information about the total amount of space available on the volume. 
+
 </td>
 </tr>
 <tr>
@@ -133,6 +144,7 @@ Return a <a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMAT
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATION</a> structure that contains file-system-specific object ID information for the volume. Note that this is not the same as the (GUID-based) unique volume name that is assigned by the operating system. 
+
 </td>
 </tr>
 <tr>
@@ -142,6 +154,7 @@ Return a <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATIO
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user that is associated with the calling thread. 
+
 </td>
 </tr>
 <tr>
@@ -151,6 +164,7 @@ Return a <a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a> st
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_volume_information">FILE_FS_VOLUME_INFORMATION</a> that contains information about the volume such as the volume label, serial number, and creation time. 
+
 </td>
 </tr>
 <tr>
@@ -160,14 +174,17 @@ Return a <a href="ifsk.file_fs_volume_information">FILE_FS_VOLUME_INFORMATION</a
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_driver_path_information">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param LengthReturned [out, optional]
 
 Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the <i>FsInformation</i> buffer. This parameter is optional and can be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltQueryVolumeInformationFile</b> returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value such as the following: 
@@ -177,6 +194,7 @@ Pointer to a caller-allocated variable that receives the size, in bytes, of the 
 
  
 
+
 ## -remarks
 <b>FltQueryVolumeInformationFile</b> retrieves volume information for a given file, directory, storage device, or volume. 
 
@@ -184,11 +202,13 @@ If the <i>FileObject</i> represents a direct device open, only <i>FileFsDeviceIn
 
 <b>FltQueryVolumeInformationFile</b> returns zero in any member of a FILE_FS_<i>XXX</i>_INFORMATION structure that is not supported by a particular file system. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -199,6 +219,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -209,6 +230,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -219,6 +241,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -229,9 +252,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -268,5 +293,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformationFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

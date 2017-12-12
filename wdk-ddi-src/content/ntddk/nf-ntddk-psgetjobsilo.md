@@ -7,7 +7,7 @@ old-location: kernel\psgetjobsilo.htm
 old-project: kernel
 ms.assetid: 1032282B-7CA3-4162-8FC2-1A4A683E9DEF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsGetJobSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.irql:
 ## -description
 This routine returns the first job in the hierarchy that is a <i>Silo</i>.  The returned pointer is valid as long as the supplied <i>Job</i> object remains referenced.
 
+
 <div class="alert"><b>Note</b>  This returns both app silos and server silos, whichever is first.</div>
 <div> </div>
+
 
 
 
@@ -61,9 +63,11 @@ NTSTATUS PsGetJobSilo(
 
 A job object.
 
+
 ### -param Silo [out]
 
  A pointer that receives the silo for the job.
+
 
 ## -returns
 The following NT status codes are returned.
@@ -79,6 +83,7 @@ The following NT status codes are returned.
 
  
 
+
 ## -remarks
 
 
@@ -87,22 +92,27 @@ The following NT status codes are returned.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

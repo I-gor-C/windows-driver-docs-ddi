@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary for the bus driver to carry out a GetConfigRom request.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _IRB_REQ_GET_CONFIG_ROM {
 
 Receives the generation of the bus for which the contents of this configuration ROM was retrieved.
 
+
 ### -field ConfigRom
 
 Receives a pointer to a <b>ConfigRom</b> object.
+
 
 ### -field UnitDirectoryIndex
 
 Receives the index to the node's unit directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
 
+
 ### -field UnitDependentDirectoryIndex
 
 Receives the index to the node's unit dependent directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+
 
 ### -field VendorLeafIndex
 
 Receives the index to the node's vendor textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
 
+
 ### -field ModelLeafIndex
 
 Receives the index to the node's model textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Receives the index to the node's model textual leaf in the configuration ROM. Th
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

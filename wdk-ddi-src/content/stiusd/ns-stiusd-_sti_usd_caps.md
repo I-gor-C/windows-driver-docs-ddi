@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 24dda069-5f93-469d-8ce3-87b488019b88
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _STI_USD_CAPS, *PSTI_USD_CAPS, STI_USD_CAPS
+ms.keywords: _STI_USD_CAPS, STI_USD_CAPS, *PSTI_USD_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The STI_USD_CAPS structure is used as a parameter for the <a href="image.istiusd_getcapabilities">IStiUSD::GetCapabilities</a> method.
 
 
+
 ## -syntax
 
 ````
@@ -58,21 +59,27 @@ typedef struct _STI_USD_CAPS {
 
 STI version number. This value must be STI_VERSION, defined in <i>Sti.h</i>.
 
+
 ### -field dwGenericCaps
 
 Bit flags indicating driver capabilities. The following flags are defined in <i>Stiusd.h</i>.
 
 
+
+
 ### -field STI_USD_GENCAP_NATIVE_PUSHSUPPORT
 
 The driver supports asynchronous device notifications.
+
 </dd>
 </dl>
+
 
 
 ### -field STI_USD_GENCAP_OPEN_DEVICE_FOR_ME
 
 <i>Not used.</i>
+
 </dd>
 </dl>
 
@@ -84,6 +91,7 @@ The driver supports asynchronous device notifications.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: print\pdev_adjust_graphics_resolution.htm
 old-project: print
 ms.assetid: d6cebb0d-87ca-4e40-8a87-9579a1026567
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _PDEV_ADJUST_GRAPHICS_RESOLUTION, *PPDEV_ADJUST_GRAPHICS_RESOLUTION, PDEV_ADJUST_GRAPHICS_RESOLUTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PDEV_ADJUST_GRAPHICS_RESOLUTION structure specifies a graphics resolution value.
 
 
+
 ## -syntax
 
 ````
@@ -57,14 +58,17 @@ typedef struct _PDEV_ADJUST_GRAPHICS_RESOLUTION {
 
 A POINT structure that specifies the resolution of the graphics area, in dots per inch (DPI).
 
+
 ## -remarks
 The PDEV_ADJUST_GRAPHICS_RESOLUTION structure is available in Windows Vista and later operating systems. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

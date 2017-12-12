@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WIAS_ASSERT macro writes a diagnostic message to the <i>Wiatrace.log</i> file.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ VOID WIAS_ASSERT(
 
 Handle to the DLL (driver).
 
+
 ### -param Expression 
 
 Specifies any logical expression.
+
 
 ## -remarks
 The WIAS_ASSERT macro is used to debug WIA drivers. It is used to test that a certain condition is met. If the <i>Expression</i> parameter evaluates to <b>TRUE</b>, this macro does nothing. If <i>Expression</i> evaluates to <b>FALSE</b>, the macro prints an error string to the <i>Wiatrace.log</i> diagnostic log file. This error message will contain the name and path to the calling driver and the line number in the driver source code where the WIAS_ASSERT macro failed.
@@ -69,11 +72,13 @@ The WIAS_ASSERT macro is available in Windows Vista and later versions of the op
 
 To enable asserts in free builds, drivers must define the WIA_DEBUG macro by adding <code>#define WIA_DEBUG</code> to the driver's source code; this must be done before including any of the WIA headers. Asserts are enabled by default in checked and debug builds of the operating system.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +112,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ASSERT macro%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

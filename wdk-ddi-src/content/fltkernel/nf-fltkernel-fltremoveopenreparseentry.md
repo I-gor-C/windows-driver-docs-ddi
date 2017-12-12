@@ -40,8 +40,10 @@ req.irql: _IRQL_requires_max_(APC_LEVEL)
 ## -description
 This routine removes an <a href="ifsk.open_reparse_list_entry_">OPEN_REPARSE_LIST_ENTRY</a> structure (added by <a href="ifsk.fltaddopenreparseentry">FltAddOpenReparseEntry</a>) from a create operation.
 
+
 <div class="alert"><b>Important</b>  <i>OpenReparseEntry</i> must be an entry added by <a href="ifsk.fltaddopenreparseentry">FltAddOpenReparseEntry</a>. All other entries are not valid.</div>
 <div> </div>
+
 
 
 
@@ -62,17 +64,21 @@ void FltAddOpenReparseEntry(
 
 The filter to dereference.
 
+
 ### -param Data [in]
 
 The create operation to remove open reparse information
                        from.
 
+
 ### -param OpenReparseEntry [in]
 
 The open reparse information to remove, of type <a href="ifsk.open_reparse_list_entry_">OPEN_REPARSE_LIST_ENTRY</a>.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 
@@ -82,22 +88,27 @@ This routine does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,9 +119,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _IRQL_requires_max_(APC_LEVEL)
+
 </td>
 </tr>
 </table>

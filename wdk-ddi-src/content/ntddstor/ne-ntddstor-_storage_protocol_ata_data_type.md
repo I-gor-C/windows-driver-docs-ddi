@@ -7,8 +7,8 @@ old-location: storage\storage_protocol_ata_data_type.htm
 old-project: storage
 ms.assetid: 4B42E143-17F5-4841-A9EA-C225B167E242
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_PROTOCOL_ATA_DATA_TYPE, *PSTORAGE_PROTOCOL_ATA_DATA_TYPE, STORAGE_PROTOCOL_ATA_DATA_TYPE
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_PROTOCOL_ATA_DATA_TYPE, STORAGE_PROTOCOL_ATA_DATA_TYPE, *PSTORAGE_PROTOCOL_ATA_DATA_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 The ATA protocol data type.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _STORAGE_PROTOCOL_ATA_DATA_TYPE {
 
 Unknown data type.
 
+
 ### -field AtaDataTypeIdentify
 
 Identify device data type.
 
+
 ### -field AtaDataTypeLogPage
 
 Log page data type.
+
 
 ## -remarks
 When using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve protocol-specific information in the <a href="storage.storage_protocol_data_descriptor">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>, configure the <a href="storage.storage_property_query">STORAGE_PROPERTY_QUERY</a> structure as follows:
@@ -87,27 +91,33 @@ Set the <b>DataType</b>  field to an enumeration value defined by <b>STORAGE_PRO
 </ul>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

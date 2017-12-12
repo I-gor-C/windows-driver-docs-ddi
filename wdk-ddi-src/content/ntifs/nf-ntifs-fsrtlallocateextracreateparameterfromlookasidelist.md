@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure, and generates a pointer to that structure.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ NTSTATUS FsRtlAllocateExtraCreateParameterFromLookasideList(
 
 Pointer to a GUID that indicates the type of ECP for whicha context structure should be allocated. For more information about ECPs, see <a href="ifsk.using_extra_create_parameters_with_an_irp_mj_create_operation">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>.
 
+
 ### -param SizeOfContext [in]
 
 The size, in bytes, of the ECP context structure. 
+
 
 ### -param Flags [in]
 
 Defines pool allocation options. If the value of the <i>SizeOfContext</i> parameter is larger than the size, in bytes, of the lookaside list that the <i>LookasideList</i> parameter points to, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> allocates the ECP context structure from system pool instead of the lookaside list. In this case, if the <i>Flags</i> parameter contains the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag value, system pool allocated by <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> is charged against the current process' memory quota. For more information about bit flag values, see the <i>Flags</i> parameter of <a href="ifsk.fsrtlallocateextracreateparameter">FsRtlAllocateExtraCreateParameter</a>. In the more typical case, when <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> allocates memory for the ECP context structure from the lookaside list, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> ignores the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag. 
 
+
 ### -param CleanupCallback [in, optional]
 
 Optional pointer to a minifilter-defined cleanup callback routine of type <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>. The cleanup callback routine is called when the ECP context structure is deleted. Set this parameter to <b>NULL</b> if a cleanup callback routine is not applicable.
+
 
 ### -param LookasideList [in, out]
 
 Pointer to an initialized lookaside list from which <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> attempts to allocate pool (for the ECP context structure). To initialize the lookaside list, use the <a href="ifsk.fsrtlinitextracreateparameterlookasidelist">FsRtlInitExtraCreateParameterLookasideList</a> routine. 
 
+
 ### -param EcpContext [out]
 
 Pointer to a location that receives a pointer to the allocated ECP context structure. If <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> failed to allocate sufficient pool for the ECP context structure, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> sets <i>EcpContext </i>to <b>NULL</b> and returns status code STATUS_INSUFFICIENT_RESOURCES.
+
 
 ## -returns
 The <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> routine can return one of the following values:
@@ -92,6 +99,7 @@ The <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> routine can return
 
  
 
+
 ## -remarks
 Use the <a href="ifsk.fsrtlinitextracreateparameterlookasidelist">FsRtlInitExtraCreateParameterLookasideList</a> routine to initialize a paged or nonpaged pool lookaside list. Use the <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> routine to allocate an ECP context structure from the lookaside list, and the <a href="ifsk.fsrtlfreeextracreateparameter">FsRtlFreeExtraCreateParameter</a> routine to deallocate the ECP context structure.
 
@@ -101,11 +109,13 @@ Drivers must free all ECP context structures and lookaside lists they create bef
 
 For more information about using lookaside lists with drivers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565416">Using Lookaside Lists</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -116,14 +126,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 FsRtlAllocateExtraCreateParameterFromLookasideList is available starting with Windows Vista. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +147,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -144,6 +158,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -154,9 +169,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -177,5 +194,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameterFromLookasideList routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

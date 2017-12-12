@@ -42,6 +42,7 @@ The CHANNEL_CONFIG_PARAMETERS structure contains configuration parameters for in
   directions of a L2CAP channel.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef struct _CHANNEL_CONFIG_PARAMETERS {
 A flag or combination of flags that specifies which members of this structure contain data. Valid
      flag values are listed in the following table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -71,63 +73,77 @@ A flag or combination of flags that specifies which members of this structure co
 <tr>
 <td>
 CFG_EXTRA
+
 </td>
 <td>
 If set, the 
         <b>ExtraOptions</b> member contains data.
+
 </td>
 </tr>
 <tr>
 <td>
 CFG_FLUSHTO
+
 </td>
 <td>
 If set, the 
         <b>FlushTO</b> member contains data.
+
 </td>
 </tr>
 <tr>
 <td>
 CFG_MTU
+
 </td>
 <td>
 If set, the 
         <b>Mtu</b> member contains data.
+
 </td>
 </tr>
 <tr>
 <td>
 CFG_QOS
+
 </td>
 <td>
 If set, the 
         <b>Flow</b> member contains data.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Mtu
 
 The message transfer units for the specified channel direction.
 
+
 ### -field FlushTO
 
 The flush timeout for the specified channel direction.
+
 
 ### -field NumExtraOptions
 
 The number of items specified in the array that is specified in the 
      <b>ExtraOptions</b> member.
 
+
 ### -field ExtraOptions
 
 The number of items specified in the array that is specified in the 
      <b>ExtraOptions</b> member.
 
+
 ### -field Flow
 
 The QoS settings for the specified channel direction.
+
 
 ## -remarks
 
@@ -137,14 +153,17 @@ The QoS settings for the specified channel direction.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -161,5 +180,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20CHANNEL_CONFIG_PARAMETERS structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

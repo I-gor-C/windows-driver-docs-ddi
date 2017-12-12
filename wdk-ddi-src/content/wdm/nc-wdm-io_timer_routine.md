@@ -7,7 +7,7 @@ old-location: kernel\iotimer.htm
 old-project: kernel
 ms.assetid: c41b7489-afd2-4ddf-b296-6d42e3ff6cbf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <i>IoTimer</i> routine is a DPC that, if registered, is called once per second.
 
 
+
 ## -prototype
 
 ````
@@ -61,12 +62,15 @@ VOID IoTimer(
 
 Caller-supplied pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <a href="kernel.adddevice">AddDevice</a> routine.
 
+
 ### -param Context [in, optional]
 
 Caller-supplied pointer to driver-defined context information, specified in a previous call to <a href="kernel.ioinitializetimer">IoInitializeTimer</a>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A driver's <i>IoTimer</i> routine executes in a DPC context, at IRQL = DISPATCH_LEVEL.
@@ -85,11 +89,13 @@ Then, implement your callback routine as follows:
 
 The IO_TIMER_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the IO_TIMER_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +106,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Called at DISPATCH_LEVEL (see Remarks section).
+
 </td>
 </tr>
 </table>

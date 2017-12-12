@@ -7,8 +7,8 @@ old-location: wdf\iobjectcleanup.htm
 old-project: wdf
 ms.assetid: 5e465c90-3290-4c89-bf47-521280c0fe5c
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 Any driver that stores a reference-counted COM interface to a WDF object must support the <b>IObjectCleanup</b> interface to prevent interface leakage. Note that drivers, in general, are not required to hold references to WDF objects.
+
 
 
 ## -inheritance
@@ -51,6 +53,7 @@ The <b>IObjectCleanup</b> interface has these methods.
 The <a href="wdf.iobjectcleanup_oncleanup">OnCleanup</a> method releases any references to a WDF object to prevent interface leakage.
 
  
+
 
 ## -members
 The <b>IObjectCleanup</b> interface has these methods.
@@ -65,22 +68,26 @@ The <b>IObjectCleanup</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iobjectcleanup_oncleanup">OnCleanup</a> method releases any references to a WDF object to prevent interface leakage.
+
 </td>
 </tr>
 </table>The <a href="wdf.iobjectcleanup_oncleanup">OnCleanup</a> method releases any references to a WDF object to prevent interface leakage.
 
  
 
+
 ## -remarks
 The framework calls the method of the <b>IObjectCleanup</b> interface when the associated framework object is about to be released.
 
 A driver can register the <b>IObjectCleanup</b> interface when the driver calls any method that creates a WDF object. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

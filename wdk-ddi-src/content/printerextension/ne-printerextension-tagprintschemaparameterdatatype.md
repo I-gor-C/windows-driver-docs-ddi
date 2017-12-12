@@ -7,7 +7,7 @@ old-location: print\tagprintschemaparameterdatatype.htm
 old-project: print
 ms.assetid: 3276C273-C950-4DC9-B338-E6E7E30DEB77
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaParameterDataType, PrintSchemaParameterDataType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PrintSchemaParameterDataType enumeration identifies the allowed data types for the Print Schema parameter.
 
 
+
 ## -syntax
 
 ````
@@ -60,15 +61,18 @@ typedef enum tagPrintSchemaParameterDataType {
 Integer data type.
 This maps to the Print Schema’s IntegerParamType parameters.
 
+
 ### -field PrintSchemaParameterDataType_NumericString
 
 String data type with only numeric chars allowed.
 This maps to the Print Schema’s StringParamType parameters, with UnitType = “numeric”.
 
+
 ### -field PrintSchemaParameterDataType_String
 
 String data type with arbitrary chars allowed.
 This maps to the Print Schema’s StringParamType parameters, with UnitType not equal to “numeric”.
+
 
 ## -remarks
 
@@ -78,22 +82,27 @@ This maps to the Print Schema’s StringParamType parameters, with UnitType not 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +119,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PrintSchemaParameterDataType enumeration%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PrintSchemaParameterDataType enumeration%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

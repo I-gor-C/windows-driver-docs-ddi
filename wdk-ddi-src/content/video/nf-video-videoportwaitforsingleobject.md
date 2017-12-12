@@ -7,7 +7,7 @@ old-location: display\videoportwaitforsingleobject.htm
 old-project: display
 ms.assetid: 574aa79e-c8ef-44de-8d0b-a550698a32e0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortWaitForSingleObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>VideoPortWaitForSingleObject</b> function puts the current thread into a wait state until the given dispatch object is set to the signaled state, or (optionally) until the wait times out.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ VP_STATUS VideoPortWaitForSingleObject(
 
 Pointer to the miniport driver's device extension.
 
+
 ### -param Object [in]
 
 Pointer to the event object.
 
+
 ### -param Timeout [in]
 
 (Optional) Pointer to a time-out value that specifies the absolute or relative time at which the wait is to be completed. A negative value specifies a wait interval relative to the current time. The value should be expressed in units of 100 nanoseconds. Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes.
+
 
 ## -returns
 <b>VideoPortWaitForSingleObject</b> returns one of the following values:
@@ -81,16 +85,19 @@ Pointer to the event object.
 
  
 
+
 ## -remarks
 The miniport driver should not attempt to wait for a mapped user event.
 
 Callers of <b>VideoPortWaitForSingleObject</b> must be running at IRQL &lt;= DISPATCH_LEVEL. Usually, the caller will be running at IRQL = PASSIVE_LEVEL and in a nonarbitrary thread context. A call to this function while running at IRQL = DISPATCH_LEVEL is valid if and only if the caller specifies a <i>Timeout</i> value of zero. That is, a miniport driver must not wait for a nonzero interval at IRQL = DISPATCH_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,14 +108,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +129,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -129,6 +140,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -139,9 +151,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>

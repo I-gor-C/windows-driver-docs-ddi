@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxFsdPostRequest</b> queues the I/O request packet (IRP) specified by an RX_CONTEXT structure to the worker queue for processing by the file system process (FSP). 
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ NTSTATUS RxFsdPostRequest(
 
 A pointer to the RX_CONTEXT containing the IRP to be queued to a worker thread.
 
+
 ## -returns
 <b>RxFsdPostRequest</b> returns the following values: 
 <dl>
@@ -64,6 +66,7 @@ A pointer to the RX_CONTEXT containing the IRP to be queued to a worker thread.
 </dl>An asynchornous request was made and has been queued to a worker thread for later processing. The status of the request is pending.
 
  
+
 
 ## -remarks
 <b>RxFsdPostRequest</b> is normally called by RDBSS to process an asynchronous I/O request packet (IRP). These IRPs are normally received by RDBSS in response to a user-mode application requesting operations on a file. It is also possible for another kernel driver to issue such an IRP. 
@@ -86,11 +89,13 @@ If the <b>FileObject</b> member of the IRP is not <b>NULL</b> and the request ca
 
 All calls to <b>RxFsdPostRequest</b> are queued to a worker thread to call the <b>RxFsdDispatch</b> routine passing in the <i>RxContext</i> parameter. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +106,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -125,5 +133,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFsdPostRequest function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

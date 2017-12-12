@@ -7,7 +7,7 @@ old-location: wdf\wdf_query_interface_config.htm
 old-project: wdf
 ms.assetid: 2f7112fc-7f3e-415d-9994-ffd93f456d97
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WDF_QUERY_INTERFACE_CONFIG</b> structure describes a driver-defined interface.
+
 
 
 ## -syntax
@@ -63,26 +65,33 @@ typedef struct _WDF_QUERY_INTERFACE_CONFIG {
 
 The size, in bytes, of this structure.
 
+
 ### -field Interface
 
 A pointer to an <a href="kernel.interface">INTERFACE</a> structure that describes the driver-defined interface. 
+
 
 ### -field InterfaceType
 
 A pointer to the GUID that identifies the interface.
 
+
 ### -field SendQueryToParentStack
 
 If <b>TRUE</b>, and if your driver specifies a device object that represents a physical device object (PDO) when it calls <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>, the framework sends requests for the interface to the top of the parent device's driver stack. If this member is <b>FALSE</b>, or if the device object does not represent a PDO, the framework does not send requests to the parent device's stack. For more information, see the following Remarks section.
+
 
 ### -field EvtDeviceProcessQueryInterfaceRequest
 
 A pointer to your driver's <a href="wdf.evtdeviceprocessqueryinterfacerequest">EvtDeviceProcessQueryInterfaceRequest</a> event callback function, which is called when another driver requests the interface.
 
+
 ### -field ImportInterface
 
 If <b>TRUE</b>, the interface supports two-way communication between your driver and drivers that request the interface. 
+
 If this member is <b>FALSE</b>, the interface supports one-way communication from your driver to drivers that request the interface. 
+
 
 ## -remarks
 The <b>WDF_QUERY_INTERFACE_CONFIG</b> structure is used as input to the <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a> method. 
@@ -113,19 +122,23 @@ Drivers should initialize this structure by calling <a href="wdf.wdf_query_inter
 
 For more information about driver-defined interfaces, see <a href="wdf.using_driver_defined_interfaces">Using Driver-Defined Interfaces</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,5 +173,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_QUERY_INTERFACE_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_QUERY_INTERFACE_CONFIG structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

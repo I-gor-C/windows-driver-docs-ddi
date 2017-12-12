@@ -7,7 +7,7 @@ old-location: kernel\exreleasespinlockexclusive_.htm
 old-project: kernel
 ms.assetid: D10C65A6-96E7-4BE0-BDD5-EFD129DC424C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExReleaseSpinLockExclusive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ExReleaseSpinLockExclusive</b> routine releases a <a href="https://msdn.microsoft.com/a37c0db4-ff9c-4958-a9f4-62b671458d03">spin lock</a> that the caller previously acquired for exclusive access, and restores the IRQL to its original value.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ VOID ExReleaseSpinLockExclusive (
 
  A pointer to the spin lock to release. The caller must own this spin lock for exclusive access.
 
+
 ### -param OldIrql [in]
 
 The interrupt request level (IRQL) to restore. Set this parameter to the KIRQL value that was returned by the <a href="kernel.exacquirespinlockexclusive">ExAcquireSpinLockExclusive</a> call that acquired the spin lock.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 This routine must be called only for a spin lock that is owned by the caller.
@@ -72,11 +76,13 @@ On entry to this routine, the caller must be running at IRQL = DISPATCH_LEVEL. B
 
 The caller should hold the spin lock only briefly before releasing it. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548114">Introduction to Spin Locks</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,14 +93,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista with SP1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,9 +114,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL (See Remarks.)
+
 </td>
 </tr>
 </table>
@@ -119,5 +130,8 @@ DISPATCH_LEVEL (See Remarks.)
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExReleaseSpinLockExclusive  routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExReleaseSpinLockExclusive  routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

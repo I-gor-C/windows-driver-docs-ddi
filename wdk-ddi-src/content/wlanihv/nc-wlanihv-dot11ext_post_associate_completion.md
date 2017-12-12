@@ -7,7 +7,7 @@ old-location: netvista\dot11extpostassociatecompletion.htm
 old-project: netvista
 ms.assetid: 25db270c-3de8-4ced-82f1-2cd778006538
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,11 +62,13 @@ The handle used by the operating system to reference the wireless LAN (WLAN) ada
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
+
 ### -param hSecuritySessionID [in, optional]
 
 The handle of the security session identifier (ID) returned through a previous call to the 
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
      Dot11ExtIhvPerformPostAssociate</a> IHV Handler function.
+
 
 ### -param pPeer [in, optional]
 
@@ -74,6 +76,7 @@ The media access control (MAC) address of the access point (AP) with which the I
      performed a security operation. This parameter is formatted as a 
      <a href="netvista.dot11_mac_address">DOT11_MAC_ADDRESS</a> structure.
      
+
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
      service set (BSS) networks.</div>
 <div> </div>
@@ -85,11 +88,13 @@ A value that provides additional information for the completion status of the po
      <i>dwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in 
      L2cmn.h.
      
+
 The IHV Extensions DLL returns the general completion status of the post-association operation
      through the 
      <i>dwWin32Error</i> parameter. Typically, the IHV Extensions DLL sets 
      <i>dwReasonCode</i> to a value within the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
      L2_REASON_CODE_GROUP_SIZE-1).
+
 
 ### -param dwWin32Error [in]
 
@@ -97,10 +102,12 @@ The completion status of the post-association operation as defined by an error c
      Winerror.h. If the operation completes successfully, the IHV Extensions DLL must set 
      <i>dwWin32Error</i> to ERROR_SUCCESS.
 
+
 ## -returns
 If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
      defined in 
      Winerror.h.
+
 
 ## -remarks
 The IHV Extensions DLL calls the 
@@ -150,11 +157,13 @@ The IHV Extensions DLL must call
       Handler functions are called. In this situation, the DLL must set the 
       <i>dwStatus</i> parameter to ERROR_CANCELLED.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -165,15 +174,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -210,5 +222,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_POST_ASSOCIATE_COMPLETION callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_POST_ASSOCIATE_COMPLETION callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

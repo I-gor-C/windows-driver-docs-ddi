@@ -7,7 +7,7 @@ old-location: display\dxgkarg_createperiodicframenotification.htm
 old-project: display
 ms.assetid: 455C3FBD-2E0D-4CD7-B753-E53ED58A7F6F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_CREATEPERIODICFRAMENOTIFICATION, DXGKARG_CREATEPERIODICFRAMENOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The arguments needed to create a periodic frame notification.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _DXGKARG_CREATEPERIODICFRAMENOTIFICATION {
 
 A handle to the adapter associated with VidPnSourceID.
 
+
 ### -field VidPnTargetID
 
 The output that the compositor wishes to receive notifications for.
+
 
 ### -field Time
 
 Represents an offset before the VSync. The Time value may not be longer than a VSync interval while in VSync mode. In units of 100ns.
 
+
 ### -field NotificationID
 
 Represents an ID for the notification that will be used to track which interrupt has fired from the GPU.
 
+
 ### -field hNotification
 
 A Handle to the notification object, later used to destroy the object.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ A Handle to the notification object, later used to destroy the object.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

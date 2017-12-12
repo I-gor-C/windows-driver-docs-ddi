@@ -7,8 +7,8 @@ old-location: wdf\wdf_fileobject_config.htm
 old-project: wdf
 ms.assetid: 6fefc35f-fbbd-4c5e-bb8f-25ad3b6cdb67
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG
+ms.date: 12/7/2017
+ms.keywords: _WDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WDF_FILEOBJECT_CONFIG</b> structure contains configuration information of a driver's framework file objects. 
+
 
 
 ## -syntax
@@ -63,25 +65,31 @@ typedef struct _WDF_FILEOBJECT_CONFIG {
 
 The size, in bytes, of this structure.
 
+
 ### -field EvtDeviceFileCreate
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_file_create.md">EvtDeviceFileCreate</a> callback function, or <b>NULL</b>.
+
 
 ### -field EvtFileClose
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_close.md">EvtFileClose</a> callback function, or <b>NULL</b>.
 
+
 ### -field EvtFileCleanup
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_cleanup.md">EvtFileCleanup</a> callback function, or <b>NULL</b>.
+
 
 ### -field AutoForwardCleanupClose
 
 A <a href="wdf.wdf_tri_state">WDF_TRI_STATE</a>-typed value. For more information about this member, see the following Comments section.
 
+
 ### -field FileObjectClass
 
 A <a href="wdf.wdf_fileobject_class">WDF_FILEOBJECT_CLASS</a>-typed value that identifies whether the driver requires a framework file object to represent each file that an application or another driver creates or opens. Additionally, this value specifies where the framework can store the object's handle. 
+
 
 ## -remarks
 The <b>WDF_FILEOBJECT_CONFIG</b> structure is used as input to the <a href="wdf.wdfdeviceinitsetfileobjectconfig">WdfDeviceInitSetFileObjectConfig</a> method.
@@ -106,27 +114,33 @@ If your driver sets <b>AutoForwardCleanupClose</b> to <b>WdfFalse</b>, the drive
 
 If your driver sets <b>AutoForwardCleanupClose</b> to <b>WdfDefault</b>, the driver must follow the rule for <b>WdfTrue</b> if it is a filter driver. The driver must follow the rule for <b>WdfFalse</b> if it is a function driver.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

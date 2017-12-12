@@ -8,7 +8,7 @@ old-project: pos
 ms.assetid: 3D8907A2-E53E-40D9-870A-AF0EB062E81F
 ms.author: windowsdriverdev
 ms.date: 11/15/2017
-ms.keywords: *PPCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
+ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -42,8 +42,10 @@ req.product: Windows 10 or later.
 The 
   EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from
 unclaimed to claimed and allows the driver to do additional work. This callback is typically only used with network connected devices that require additional logic for handling ownership transitions.
+
 <i>EVT_POS_CX_DEVICE_REMOTE_CLAIM</i> and <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_release.md">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a> add support for remote devices that handle their own claim
 semantics.
+
 
 
 ## -prototype
@@ -65,9 +67,11 @@ NTSTATUS EvtPosCxDeviceRemoteClaim(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param deviceInterfaceTag [in]
 
 An identifier used to specify which interface is being claimed in a multi-function device.  For a single-interface device, this value should be 0.
+
 
 ## -returns
 If the operation is successful, the callback function must return STATUS_SUCCESS or another status value for which NT_SUCCESS(status) equals TRUE.
@@ -84,6 +88,7 @@ The <b>EVT_POS_CX_DEVICE_REMOTE_CLAIM</b> function type is defined in the poscx.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -remarks
 
 
@@ -92,14 +97,17 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20EVT_POS_CX_DEVICE_REMOTE_CLAIM callback function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: print\monitor2.htm
 old-project: print
 ms.assetid: 0bfb5119-2034-4e63-9fbe-e2ff42a352d6
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _MONITOR2, *PMONITOR2, *LPMONITOR2, MONITOR2
+ms.date: 12/9/2017
+ms.keywords: _MONITOR2, MONITOR2, *LPMONITOR2, *PMONITOR2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The MONITOR2 structure contains pointers to the functions defined by print monitors.
+
 
 
 ## -syntax
@@ -149,92 +150,114 @@ typedef struct _MONITOR2 {
 
 Specifies the size, in bytes, of the MONITOR2 structure.
 
+
 ### -field pfnEnumPorts
 
 Pointer to the print monitor's <a href="print.enumports">EnumPorts</a> function. (Port monitors only.)
+
 
 ### -field pfnOpenPort
 
 Pointer to the print monitor's <a href="print.openport">OpenPort</a> function.
 
+
 ### -field pfnOpenPortEx
 
 Pointer to the print monitor's <a href="print.openportex">OpenPortEx</a> function. (Language monitors only.)
+
 
 ### -field pfnStartDocPort
 
 Pointer to the print monitor's <a href="print.startdocport">StartDocPort</a> function.
 
+
 ### -field pfnWritePort
 
 Pointer to the print monitor's <a href="print.writeport">WritePort</a> function.
+
 
 ### -field pfnReadPort
 
 Pointer to the print monitor's <a href="print.readport">ReadPort</a> function.
 
+
 ### -field pfnEndDocPort
 
 Pointer to the print monitor's <a href="print.enddocport">EndDocPort</a> function.
+
 
 ### -field pfnClosePort
 
 Pointer to the print monitor's <a href="print.closeport">ClosePort</a> function.
 
+
 ### -field pfnAddPort
 
 (Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.addport">AddPort</a> function.
+
 
 ### -field pfnAddPortEx
 
 (Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.addportex">AddPortEx</a> function. (Port monitors only.)
 
+
 ### -field pfnConfigurePort
 
 (Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.configureport">ConfigurePort</a> function.
+
 
 ### -field pfnDeletePort
 
 (Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.deleteport">DeletePort</a> function.
 
+
 ### -field pfnGetPrinterDataFromPort
 
 Pointer to the print monitor's <a href="print.getprinterdatafromport">GetPrinterDataFromPort</a> function.
+
 
 ### -field pfnSetPortTimeOuts
 
 Pointer to the print monitor's <a href="print.setporttimeouts">SetPortTimeOuts</a> function. (Port monitors only.)
 
+
 ### -field pfnXcvOpenPort
 
 Pointer to the print monitor's <a href="print.xcvopenport">XcvOpenPort</a> function. (Port monitors only.)
+
 
 ### -field pfnXcvDataPort
 
 Pointer to the print monitor's <a href="print.xcvdataport">XcvDataPort</a> function. (Port monitors only.)
 
+
 ### -field pfnXcvClosePort
 
 Pointer to the print monitor's <a href="print.xcvcloseport">XcvClosePort</a> function. (Port monitors only.)
+
 
 ### -field pfnShutdown
 
 Pointer to the print monitor's <a href="print.shutdown">Shutdown</a> function.
 
+
 ### -field pfnSendRecvBidiDataFromPort
 
 Pointer to the print monitor's <a href="print.sendrecvbididatafromport">SendRecvBidiDataFromPort</a> function.
+
 
 ## -remarks
 Each language monitor and each port monitor server DLL must provide a MONITOR2 structure. The monitor must supply values for all structure members, and specify the structure's address as the return value for its <a href="print.initializeprintmonitor2">InitializePrintMonitor2</a> function.
 
 If a function is not defined, its pointer must be <b>NULL</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -254,5 +277,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MONITOR2 structure%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MONITOR2 structure%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

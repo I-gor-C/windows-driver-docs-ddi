@@ -7,7 +7,7 @@ old-location: netvista\rilsetslotpowerparams.htm
 old-project: netvista
 ms.assetid: 3e3bd3f1-08a2-4b20-b427-85b1236325b9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSETSLOTPOWERPARAMS, *LPRILSETSLOTPOWERPARAMS, RILSETSLOTPOWERPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILSETSLOTPOWERPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 ---
 
 # _BTH_SDP_CONNECT structure
@@ -42,6 +42,7 @@ The BTH_SDP_CONNECT structure contains input and output information about a conn
   local Bluetooth system and a remote SDP server. This structure is passed as the input buffer and output
   buffer of 
   <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>.
+
 
 
 ## -syntax
@@ -63,11 +64,13 @@ typedef struct _BTH_SDP_CONNECT {
 The address of the remote SDP server that the local system connects to. This address cannot be to
      the local radio.
 
+
 ### -field fSdpConnect
 
 A flag or combination of flags that determines how to handle the connection request. Valid flag
      values are listed in the following table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -76,25 +79,31 @@ A flag or combination of flags that determines how to handle the connection requ
 <tr>
 <td>
 SDP_CONNECT_ALLOW_PIN
+
 </td>
 <td>
 If requested, perform a pin exchange with the remote device.
+
 </td>
 </tr>
 <tr>
 <td>
 SDP_CONNECT_CACHE
+
 </td>
 <td>
 Requests are serviced out of the local cache of the SDP record.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field hConnection
 
 A handle for the SDP connection on the remote server.
+
 
 ### -field requestTimeout
 
@@ -102,6 +111,7 @@ The timeout, in seconds, for requests to the SDP connection handle that is retur
      <b>hConnection</b> member. If the request times out, the SDP connection returned in 
      <b>hConnection</b> must be closed. The values for this field are bound by SDP_REQUEST_TO_MIN and
      SDP_REQUEST_TO_MAX. If SDP_REQUEST_TO_DEFAULT is specified, the timeout is 30 seconds.
+
 
 ## -remarks
 
@@ -111,14 +121,17 @@ The timeout, in seconds, for requests to the SDP connection handle that is retur
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,5 +148,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_SDP_CONNECT structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

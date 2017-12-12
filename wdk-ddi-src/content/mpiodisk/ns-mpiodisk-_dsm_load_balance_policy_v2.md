@@ -7,7 +7,7 @@ old-location: storage\dsm_load_balance_policy_v2.htm
 old-project: storage
 ms.assetid: b1522320-110c-46dc-be50-df7c05d61351
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DSM_Load_Balance_Policy_V2, *PDSM_Load_Balance_Policy_V2, DSM_Load_Balance_Policy_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DSM_Load_Balance_Policy_V2 structure is used to represent a load balance policy that is applied to a LUN. It is similar to the DSM_Load_Balance_Policy structure, except that it uses the MPIO_DSM_Path_V2 structure to capture and expose path information.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _DSM_Load_Balance_Policy_V2 {
 
 The version of WMI class supported. Set to 2.
 
+
 ### -field LoadBalancePolicy
 
 An unsigned 32-bitfield that represents the load balance policy type that is currently being applied to the LUN if the LUN is being queried, or the new policy to apply to the LUN if the LUN is being set.
+
 
 ### -field DSMPathCount
 
 An unsigned 32-bitfield that represents the number of paths that expose the LUN's instances.
 
+
 ### -field Reserved
 
 Should be zero.
 
+
 ### -field DSM_Paths
 
 An array of MPIO_DSM_Path_V2 structures that represent path attributes for each of the LUN's instances.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ An array of MPIO_DSM_Path_V2 structures that represent path attributes for each 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

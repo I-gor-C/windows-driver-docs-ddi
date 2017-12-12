@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Print
 
+## -description
 Overview of the Print technology.
 
 To develop Print, you need these headers:
@@ -12,6 +17,7 @@ To develop Print, you need these headers:
  * [icm.h](..\icm\index.md)
  * [mxdc.h](..\mxdc\index.md)
  * [prcomoem.h](..\prcomoem\index.md)
+ * [prdrvcom.h](..\prdrvcom\index.md)
  * [printerextension.h](..\printerextension\index.md)
  * [printoem.h](..\printoem\index.md)
  * [prnasntp.h](..\prnasntp\index.md)
@@ -76,287 +82,6 @@ To develop Print, you need these headers:
 | [GetJobNamedPropertyValue function](..\winspool\nf-winspool-getjobnamedpropertyvalue.md) | Retrieves the value of the named property for the specified print job on the specified printer. |
 | [GetPrintOutputInfo function](..\winspool\nf-winspool-getprintoutputinfo.md) | . |
 | [GetPrintProcessorCapabilities function](..\winsplp\nf-winsplp-getprintprocessorcapabilities.md) | A print processor's GetPrintProcessorCapabilities function returns capabilities associated with a specified input data type. |
-| [IBidiRequest::GetEnumCount method](..\bidispl\nf-bidispl-ibidirequest-getenumcount.md) | The IBidiRequest |
-| [IBidiRequest::GetOutputData method](..\bidispl\nf-bidispl-ibidirequest-getoutputdata.md) | The IBidiRequest |
-| [IBidiRequest::GetResult method](..\bidispl\nf-bidispl-ibidirequest-getresult.md) | The IBidiRequest |
-| [IBidiRequest::SetInputData method](..\bidispl\nf-bidispl-ibidirequest-setinputdata.md) | The IBidiRequest |
-| [IBidiRequest::SetSchema method](..\bidispl\nf-bidispl-ibidirequest-setschema.md) | The IBidiRequest |
-| [IBidiRequestContainer::AddRequest method](..\bidispl\nf-bidispl-ibidirequestcontainer-addrequest.md) | The IBidiRequestContainer |
-| [IBidiRequestContainer::GetEnumObject method](..\bidispl\nf-bidispl-ibidirequestcontainer-getenumobject.md) | The IBidiRequestContainer |
-| [IBidiRequestContainer::GetRequestCount method](..\bidispl\nf-bidispl-ibidirequestcontainer-getrequestcount.md) | The IBidiRequestContainer |
-| [IBidiSpl2::BindDevice method](..\bidispl\nf-bidispl-ibidispl2-binddevice.md) | The IBidiSpl2 |
-| [IBidiSpl2::SendRecvXMLStream method](..\bidispl\nf-bidispl-ibidispl2-sendrecvxmlstream.md) | The IBidiSpl2 |
-| [IBidiSpl2::SendRecvXMLString method](..\bidispl\nf-bidispl-ibidispl2-sendrecvxmlstring.md) | The IBidiSpl2 |
-| [IBidiSpl2::UnbindDevice method](..\bidispl\nf-bidispl-ibidispl2-unbinddevice.md) | The IBidiSpl2 |
-| [IBidiSpl::BindDevice method](..\bidispl\nf-bidispl-ibidispl-binddevice.md) | The IBidiSpl |
-| [IBidiSpl::MultiSendRecv method](..\bidispl\nf-bidispl-ibidispl-multisendrecv.md) | The IBidiSpl |
-| [IBidiSpl::SendRecv method](..\bidispl\nf-bidispl-ibidispl-sendrecv.md) | The IBidiSpl |
-| [IBidiSpl::UnbindDevice method](..\bidispl\nf-bidispl-ibidispl-unbinddevice.md) | The IBidiSpl |
-| [IFixedDocument::GetPrintTicket method](..\filterpipeline\nf-filterpipeline-ifixeddocument-getprintticket.md) | The GetPrintTicket method gets the print ticket object for the fixed document. |
-| [IFixedDocument::GetUri method](..\filterpipeline\nf-filterpipeline-ifixeddocument-geturi.md) | The GetUri method gets the URI of the fixed document. |
-| [IFixedDocument::SetPrintTicket method](..\filterpipeline\nf-filterpipeline-ifixeddocument-setprintticket.md) | The SetPrintTicket method inserts a print ticket into the fixed document. |
-| [IFixedDocumentSequence::GetPrintTicket method](..\filterpipeline\nf-filterpipeline-ifixeddocumentsequence-getprintticket.md) | The GetPrintTicket method gets the print ticket object for the fixed document sequence. |
-| [IFixedDocumentSequence::GetUri method](..\filterpipeline\nf-filterpipeline-ifixeddocumentsequence-geturi.md) | The GetUri method gets the URI of the fixed document sequence. |
-| [IFixedDocumentSequence::SetPrintTicket method](..\filterpipeline\nf-filterpipeline-ifixeddocumentsequence-setprintticket.md) | The SetPrintTicket method inserts a print ticket into the fixed document sequence. |
-| [IFixedPage::DeleteResource method](..\filterpipeline\nf-filterpipeline-ifixedpage-deleteresource.md) | The DeleteResource method deletes a resource that is associated with the page. |
-| [IFixedPage::GetPagePart method](..\filterpipeline\nf-filterpipeline-ifixedpage-getpagepart.md) | The GetPagePart method gets the images, thumbnails, fonts, and so on in a page by using the URI. |
-| [IFixedPage::GetPrintTicket method](..\filterpipeline\nf-filterpipeline-ifixedpage-getprintticket.md) | The GetPrintTicket method gets the print ticket object for the fixed page. |
-| [IFixedPage::GetWriteStream method](..\filterpipeline\nf-filterpipeline-ifixedpage-getwritestream.md) | The GetWriteStream method retrieves the stream object to write page markup to read . You can use this stream to change page markup. |
-| [IFixedPage::GetXpsPartIterator method](..\filterpipeline\nf-filterpipeline-ifixedpage-getxpspartiterator.md) | The GetXpsPartIterator method gets an iterator to enumerate all of the parts that are associated with the page. |
-| [IFixedPage::SetPagePart method](..\filterpipeline\nf-filterpipeline-ifixedpage-setpagepart.md) | The SetPagePart method associates a new part with the page. |
-| [IFixedPage::SetPrintTicket method](..\filterpipeline\nf-filterpipeline-ifixedpage-setprintticket.md) | The SetPrintTicket method associates a print ticket with the page. |
-| [IInterFilterCommunicator::RequestReader method](..\filterpipeline\nf-filterpipeline-iinterfiltercommunicator-requestreader.md) | The RequestReader method retrieves the reader interface for an IInterFilterCommunicator object. |
-| [IInterFilterCommunicator::RequestWriter method](..\filterpipeline\nf-filterpipeline-iinterfiltercommunicator-requestwriter.md) | The RequestWriter method retrieves the writer interface for an IInterFilterCommunicator object. |
-| [IPartBase::GetPartCompression method](..\filterpipeline\nf-filterpipeline-ipartbase-getpartcompression.md) | The GetPartCompression method gets the compression of the part. |
-| [IPartBase::GetStream method](..\filterpipeline\nf-filterpipeline-ipartbase-getstream.md) | The GetStream method gets the stream object that contains the part data. Each part has part-specific data that is associated with it (for example, a font, image, and page markup). |
-| [IPartBase::GetUri method](..\filterpipeline\nf-filterpipeline-ipartbase-geturi.md) | The GetUri method gets the URI of the part. |
-| [IPartBase::SetPartCompression method](..\filterpipeline\nf-filterpipeline-ipartbase-setpartcompression.md) | The SetPartCompression method sets the compression of the part. |
-| [IPartDiscardControl::GetDiscardProperties method](..\filterpipeline\nf-filterpipeline-ipartdiscardcontrol-getdiscardproperties.md) | The GetDiscardProperties method gets the properties of the discard control. |
-| [IPartFont2::GetFontRestriction method](..\filterpipeline\nf-filterpipeline-ipartfont2-getfontrestriction.md) | . |
-| [IPartFont::GetFontProperties method](..\filterpipeline\nf-filterpipeline-ipartfont-getfontproperties.md) | The GetFontProperties method gets the font properties. |
-| [IPartFont::SetFontContent method](..\filterpipeline\nf-filterpipeline-ipartfont-setfontcontent.md) | The SetFontContent method sets the content of the font. |
-| [IPartFont::SetFontOptions method](..\filterpipeline\nf-filterpipeline-ipartfont-setfontoptions.md) | The SetFontOptions method sets the options for the font. |
-| [IPartImage::GetImageProperties method](..\filterpipeline\nf-filterpipeline-ipartimage-getimageproperties.md) | The GetImageProperties method gets an image property that is based on the content type. |
-| [IPartImage::SetImageContent method](..\filterpipeline\nf-filterpipeline-ipartimage-setimagecontent.md) | The SetImageContent method sets an image property that is based on the content type. |
-| [IPartThumbnail::GetThumbnailProperties method](..\filterpipeline\nf-filterpipeline-ipartthumbnail-getthumbnailproperties.md) | The GetThumbnailProperties method gets the thumbnail properties. |
-| [IPartThumbnail::SetThumbnailContent method](..\filterpipeline\nf-filterpipeline-ipartthumbnail-setthumbnailcontent.md) | The SetThumbnailContent method sets the thumbnail content for the part. |
-| [IPrintClassObjectFactory::GetPrintClassObject method](..\filterpipeline\nf-filterpipeline-iprintclassobjectfactory-getprintclassobject.md) | The GetPrintClassObject method creates a print filter-related object for a specified printer by using the IID of the interface object to create. |
-| [IPrintCoreHelper::CreateInstanceOfMSXMLObject method](..\prcomoem\nf-prcomoem-iprintcorehelper-createinstanceofmsxmlobject.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::EnumConstrainedOptions method](..\prcomoem\nf-prcomoem-iprintcorehelper-enumconstrainedoptions.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::EnumFeatures method](..\prcomoem\nf-prcomoem-iprintcorehelper-enumfeatures.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::EnumOptions method](..\prcomoem\nf-prcomoem-iprintcorehelper-enumoptions.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::GetFontSubstitution method](..\prcomoem\nf-prcomoem-iprintcorehelper-getfontsubstitution.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::GetOption method](..\prcomoem\nf-prcomoem-iprintcorehelper-getoption.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::SetFontSubstitution method](..\prcomoem\nf-prcomoem-iprintcorehelper-setfontsubstitution.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::SetOptions method](..\prcomoem\nf-prcomoem-iprintcorehelper-setoptions.md) | The IPrintCoreHelper |
-| [IPrintCoreHelper::WhyConstrained method](..\prcomoem\nf-prcomoem-iprintcorehelper-whyconstrained.md) | The IPrintCoreHelper |
-| [IPrintCoreHelperPS::CreateInstanceOfMSXMLObject method](..\prcomoem\nf-prcomoem-iprintcorehelperps-createinstanceofmsxmlobject.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::EnumConstrainedOptions method](..\prcomoem\nf-prcomoem-iprintcorehelperps-enumconstrainedoptions.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::EnumFeatures method](..\prcomoem\nf-prcomoem-iprintcorehelperps-enumfeatures.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::EnumOptions method](..\prcomoem\nf-prcomoem-iprintcorehelperps-enumoptions.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::GetFeatureAttribute method](..\prcomoem\nf-prcomoem-iprintcorehelperps-getfeatureattribute.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::GetFontSubstitution method](..\prcomoem\nf-prcomoem-iprintcorehelperps-getfontsubstitution.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::GetGlobalAttribute method](..\prcomoem\nf-prcomoem-iprintcorehelperps-getglobalattribute.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::GetOption method](..\prcomoem\nf-prcomoem-iprintcorehelperps-getoption.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::GetOptionAttribute method](..\prcomoem\nf-prcomoem-iprintcorehelperps-getoptionattribute.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::SetFontSubstitution method](..\prcomoem\nf-prcomoem-iprintcorehelperps-setfontsubstitution.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::SetOptions method](..\prcomoem\nf-prcomoem-iprintcorehelperps-setoptions.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperPS::WhyConstrained method](..\prcomoem\nf-prcomoem-iprintcorehelperps-whyconstrained.md) | The IPrintCoreHelperPS |
-| [IPrintCoreHelperUni2::GetNamedCommand method](..\prcomoem\nf-prcomoem-iprintcorehelperuni2-getnamedcommand.md) | The GetNamedCommand method returns the specified command. |
-| [IPrintCoreHelperUni::CreateDefaultGDLSnapshot method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-createdefaultgdlsnapshot.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::CreateGDLSnapshot method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-creategdlsnapshot.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::CreateInstanceOfMSXMLObject method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-createinstanceofmsxmlobject.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::EnumConstrainedOptions method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-enumconstrainedoptions.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::EnumFeatures method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-enumfeatures.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::EnumOptions method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-enumoptions.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::GetFontSubstitution method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-getfontsubstitution.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::GetOption method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-getoption.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::SetFontSubstitution method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-setfontsubstitution.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::SetOptions method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-setoptions.md) | The IPrintCoreHelperUni |
-| [IPrintCoreHelperUni::WhyConstrained method](..\prcomoem\nf-prcomoem-iprintcorehelperuni-whyconstrained.md) | The IPrintCoreHelperUni |
-| [IPrintCorePS2::DrvWriteSpoolBuf method](..\prcomoem\nf-prcomoem-iprintcoreps2-drvwritespoolbuf.md) | The IPrintCorePS2 |
-| [IPrintCorePS2::EnumFeatures method](..\prcomoem\nf-prcomoem-iprintcoreps2-enumfeatures.md) | The IPrintCorePS2 |
-| [IPrintCorePS2::EnumOptions method](..\prcomoem\nf-prcomoem-iprintcoreps2-enumoptions.md) | The IPrintCorePS2 |
-| [IPrintCorePS2::GetFeatureAttribute method](..\prcomoem\nf-prcomoem-iprintcoreps2-getfeatureattribute.md) | The IPrintCorePS2 |
-| [IPrintCorePS2::GetGlobalAttribute method](..\prcomoem\nf-prcomoem-iprintcoreps2-getglobalattribute.md) | The IPrintCorePS2 |
-| [IPrintCorePS2::GetOptionAttribute method](..\prcomoem\nf-prcomoem-iprintcoreps2-getoptionattribute.md) | The IPrintCorePS2 |
-| [IPrintCorePS2::GetOptions method](..\prcomoem\nf-prcomoem-iprintcoreps2-getoptions.md) | The IPrintCorePS2 |
-| [IPrintCoreUI2::DrvGetDriverSetting method](..\prcomoem\nf-prcomoem-iprintcoreui2-drvgetdriversetting.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::DrvUpdateUISetting method](..\prcomoem\nf-prcomoem-iprintcoreui2-drvupdateuisetting.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::DrvUpgradeRegistrySetting method](..\prcomoem\nf-prcomoem-iprintcoreui2-drvupgraderegistrysetting.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::EnumConstrainedOptions method](..\prcomoem\nf-prcomoem-iprintcoreui2-enumconstrainedoptions.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::EnumFeatures method](..\prcomoem\nf-prcomoem-iprintcoreui2-enumfeatures.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::EnumOptions method](..\prcomoem\nf-prcomoem-iprintcoreui2-enumoptions.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::GetFeatureAttribute method](..\prcomoem\nf-prcomoem-iprintcoreui2-getfeatureattribute.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::GetGlobalAttribute method](..\prcomoem\nf-prcomoem-iprintcoreui2-getglobalattribute.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::GetOptionAttribute method](..\prcomoem\nf-prcomoem-iprintcoreui2-getoptionattribute.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::GetOptions method](..\prcomoem\nf-prcomoem-iprintcoreui2-getoptions.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::QuerySimulationSupport method](..\prcomoem\nf-prcomoem-iprintcoreui2-querysimulationsupport.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::SetOptions method](..\prcomoem\nf-prcomoem-iprintcoreui2-setoptions.md) | The IPrintCoreUI2 |
-| [IPrintCoreUI2::WhyConstrained method](..\prcomoem\nf-prcomoem-iprintcoreui2-whyconstrained.md) | The IPrintCoreUI2 |
-| [IPrintJob::RequestCancel method](..\printerextension\nf-printerextension-iprintjob-requestcancel.md) | Requests the cancellation of a print job. |
-| [IPrintJobCollection::GetAt method](..\printerextension\nf-printerextension-iprintjobcollection-getat.md) | Gets a pointer to an IPrintJob object. |
-| [IPrintOemDriverPS::DrvGetDriverSetting method](..\prcomoem\nf-prcomoem-iprintoemdriverps-drvgetdriversetting.md) | The IPrintOemDriverPS |
-| [IPrintOemDriverPS::DrvWriteSpoolBuf method](..\prcomoem\nf-prcomoem-iprintoemdriverps-drvwritespoolbuf.md) | The IPrintOemDriverPS |
-| [IPrintOemDriverUI::DrvGetDriverSetting method](..\prcomoem\nf-prcomoem-iprintoemdriverui-drvgetdriversetting.md) | The IPrintOemDriverUI |
-| [IPrintOemDriverUI::DrvUpdateUISetting method](..\prcomoem\nf-prcomoem-iprintoemdriverui-drvupdateuisetting.md) | The IPrintOemDriverUI |
-| [IPrintOemDriverUI::DrvUpgradeRegistrySetting method](..\prcomoem\nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting.md) | The IPrintOemDriverUI |
-| [IPrintOemDriverUni::DrvGetDriverSetting method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvgetdriversetting.md) | The IPrintOemDriverUni |
-| [IPrintOemDriverUni::DrvGetGPDData method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvgetgpddata.md) | The IPrintOemDriverUni |
-| [IPrintOemDriverUni::DrvGetStandardVariable method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvgetstandardvariable.md) | The IPrintOemDriverUni |
-| [IPrintOemDriverUni::DrvUniTextOut method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvunitextout.md) | The IPrintOemDriverUni |
-| [IPrintOemDriverUni::DrvWriteAbortBuf method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvwriteabortbuf.md) | The IPrintOemDriverUni |
-| [IPrintOemDriverUni::DrvWriteSpoolBuf method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvwritespoolbuf.md) | The IPrintOemDriverUni |
-| [IPrintOemDriverUni::DrvXMoveTo method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvxmoveto.md) | The IPrintOemDriverUni |
-| [IPrintOemDriverUni::DrvYMoveTo method](..\prcomoem\nf-prcomoem-iprintoemdriveruni-drvymoveto.md) | The IPrintOemDriverUni |
-| [IPrintOemEngine::DisableDriver method](..\prcomoem\nf-prcomoem-iprintoemengine-disabledriver.md) | . |
-| [IPrintOemEngine::DisablePDEV method](..\prcomoem\nf-prcomoem-iprintoemengine-disablepdev.md) | . |
-| [IPrintOemEngine::EnableDriver method](..\prcomoem\nf-prcomoem-iprintoemengine-enabledriver.md) | . |
-| [IPrintOemEngine::EnablePDEV method](..\prcomoem\nf-prcomoem-iprintoemengine-enablepdev.md) | . |
-| [IPrintOemEngine::ResetPDEV method](..\prcomoem\nf-prcomoem-iprintoemengine-resetpdev.md) | . |
-| [IPrintOemPS2::GetPDEVAdjustment method](..\prcomoem\nf-prcomoem-iprintoemps2-getpdevadjustment.md) | The IPrintOemPS2 |
-| [IPrintOemPS2::WritePrinter method](..\prcomoem\nf-prcomoem-iprintoemps2-writeprinter.md) | The IPrintOemPS2 |
-| [IPrintOemPS::Command method](..\prcomoem\nf-prcomoem-iprintoemps-command.md) | The IPrintOemPS |
-| [IPrintOemPS::DevMode method](..\prcomoem\nf-prcomoem-iprintoemps-devmode.md) | The IPrintOemPS |
-| [IPrintOemPS::DisableDriver method](..\prcomoem\nf-prcomoem-iprintoemps-disabledriver.md) | The IPrintOemPS |
-| [IPrintOemPS::DisablePDEV method](..\prcomoem\nf-prcomoem-iprintoemps-disablepdev.md) | The IPrintOemPS |
-| [IPrintOemPS::EnableDriver method](..\prcomoem\nf-prcomoem-iprintoemps-enabledriver.md) | The IPrintOemPS |
-| [IPrintOemPS::EnablePDEV method](..\prcomoem\nf-prcomoem-iprintoemps-enablepdev.md) | The IPrintOemPS |
-| [IPrintOemPS::GetInfo method](..\prcomoem\nf-prcomoem-iprintoemps-getinfo.md) | A rendering plug-in's IPrintOemPS |
-| [IPrintOemPS::PublishDriverInterface method](..\prcomoem\nf-prcomoem-iprintoemps-publishdriverinterface.md) | The IPrintOemPS |
-| [IPrintOemPS::ResetPDEV method](..\prcomoem\nf-prcomoem-iprintoemps-resetpdev.md) | The IPrintOemPS |
-| [IPrintOemPrintTicketProvider::BindPrinter method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-bindprinter.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::CompletePrintCapabilities method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-completeprintcapabilities.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-convertdevmodetoprintticket.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-convertprinttickettodevmode.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::ExpandIntentOptions method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-expandintentoptions.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::GetSupportedVersions method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-getsupportedversions.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::PublishPrintTicketHelperInterface method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-publishprinttickethelperinterface.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-querydevicedefaultnamespace.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemPrintTicketProvider::ValidatePrintTicket method](..\prcomoem\nf-prcomoem-iprintoemprintticketprovider-validateprintticket.md) | The IPrintOemPrintTicketProvider |
-| [IPrintOemUI2::DocumentEvent method](..\prcomoem\nf-prcomoem-iprintoemui2-documentevent.md) | The IPrintOemUI2 |
-| [IPrintOemUI2::HideStandardUI method](..\prcomoem\nf-prcomoem-iprintoemui2-hidestandardui.md) | The IPrintOemUI2 |
-| [IPrintOemUI2::QueryJobAttributes method](..\prcomoem\nf-prcomoem-iprintoemui2-queryjobattributes.md) | The IPrintOemUI2 |
-| [IPrintOemUI::CommonUIProp method](..\prcomoem\nf-prcomoem-iprintoemui-commonuiprop.md) | The IPrintOemUI |
-| [IPrintOemUI::DevMode method](..\prcomoem\nf-prcomoem-iprintoemui-devmode.md) | The IPrintOemUI |
-| [IPrintOemUI::DevQueryPrintEx method](..\prcomoem\nf-prcomoem-iprintoemui-devqueryprintex.md) | The IPrintOemUI |
-| [IPrintOemUI::DeviceCapabilities method](..\prcomoem\nf-prcomoem-iprintoemui-devicecapabilities.md) | The IPrintOemUI |
-| [IPrintOemUI::DevicePropertySheets method](..\prcomoem\nf-prcomoem-iprintoemui-devicepropertysheets.md) | The IPrintOemUI |
-| [IPrintOemUI::DocumentPropertySheets method](..\prcomoem\nf-prcomoem-iprintoemui-documentpropertysheets.md) | The IPrintOemUI |
-| [IPrintOemUI::DriverEvent method](..\prcomoem\nf-prcomoem-iprintoemui-driverevent.md) | The printer driver's DrvDriverEvent function calls a user interface plug-in's IPrintOemUI |
-| [IPrintOemUI::FontInstallerDlgProc method](..\prcomoem\nf-prcomoem-iprintoemui-fontinstallerdlgproc.md) | A user interface plug-in's IPrintOemUI |
-| [IPrintOemUI::GetInfo method](..\prcomoem\nf-prcomoem-iprintoemui-getinfo.md) | A user interface plug-in's IPrintOemUI |
-| [IPrintOemUI::PrinterEvent method](..\prcomoem\nf-prcomoem-iprintoemui-printerevent.md) | The IPrintOemUI |
-| [IPrintOemUI::PublishDriverInterface method](..\prcomoem\nf-prcomoem-iprintoemui-publishdriverinterface.md) | The IPrintOemUI |
-| [IPrintOemUI::QueryColorProfile method](..\prcomoem\nf-prcomoem-iprintoemui-querycolorprofile.md) | The IPrintOemUI |
-| [IPrintOemUI::UpdateExternalFonts method](..\prcomoem\nf-prcomoem-iprintoemui-updateexternalfonts.md) | The IPrintOemUI |
-| [IPrintOemUI::UpgradePrinter method](..\prcomoem\nf-prcomoem-iprintoemui-upgradeprinter.md) | The IPrintOemUI |
-| [IPrintOemUIMXDC::AdjustDPI method](..\prcomoem\nf-prcomoem-iprintoemuimxdc-adjustdpi.md) | The IPrintOemUIMXDC |
-| [IPrintOemUIMXDC::AdjustImageCompression method](..\prcomoem\nf-prcomoem-iprintoemuimxdc-adjustimagecompression.md) | The IPrintOemUIMXDC |
-| [IPrintOemUIMXDC::AdjustImageableArea method](..\prcomoem\nf-prcomoem-iprintoemuimxdc-adjustimageablearea.md) | The IPrintOemUIMXDC |
-| [IPrintOemUni2::GetImplementedMethod method](..\prcomoem\nf-prcomoem-iprintoemuni2-getimplementedmethod.md) | The IPrintOemUni2 |
-| [IPrintOemUni2::WritePrinter method](..\prcomoem\nf-prcomoem-iprintoemuni2-writeprinter.md) | The IPrintOemUni2 |
-| [IPrintOemUni3::DownloadPattern method](..\prcomoem\nf-prcomoem-iprintoemuni3-downloadpattern.md) | The IPrintOemUni3 |
-| [IPrintOemUni3::GetImplementedMethod method](..\prcomoem\nf-prcomoem-iprintoemuni3-getimplementedmethod.md) | The IPrintOemUni3 |
-| [IPrintOemUni3::GetPDEVAdjustment method](..\prcomoem\nf-prcomoem-iprintoemuni3-getpdevadjustment.md) | The IPrintOemUni3 |
-| [IPrintOemUni3::SetBandSize method](..\prcomoem\nf-prcomoem-iprintoemuni3-setbandsize.md) | The IPrintOemUni3 |
-| [IPrintOemUni::CommandCallback method](..\prcomoem\nf-prcomoem-iprintoemuni-commandcallback.md) | The IPrintOemUni |
-| [IPrintOemUni::Compression method](..\prcomoem\nf-prcomoem-iprintoemuni-compression.md) | The IPrintOemUni |
-| [IPrintOemUni::DevMode method](..\prcomoem\nf-prcomoem-iprintoemuni-devmode.md) | The IPrintOemUni |
-| [IPrintOemUni::DisableDriver method](..\prcomoem\nf-prcomoem-iprintoemuni-disabledriver.md) | The IPrintOemuNI |
-| [IPrintOemUni::DisablePDEV method](..\prcomoem\nf-prcomoem-iprintoemuni-disablepdev.md) | The IPrintOemUni |
-| [IPrintOemUni::DownloadCharGlyph method](..\prcomoem\nf-prcomoem-iprintoemuni-downloadcharglyph.md) | The IPrintOemUni |
-| [IPrintOemUni::DownloadFontHeader method](..\prcomoem\nf-prcomoem-iprintoemuni-downloadfontheader.md) | The IPrintOemUni |
-| [IPrintOemUni::DriverDMS method](..\prcomoem\nf-prcomoem-iprintoemuni-driverdms.md) | The IPrintOemUni |
-| [IPrintOemUni::EnableDriver method](..\prcomoem\nf-prcomoem-iprintoemuni-enabledriver.md) | The IPrintOemUni |
-| [IPrintOemUni::EnablePDEV method](..\prcomoem\nf-prcomoem-iprintoemuni-enablepdev.md) | The IPrintOemUni |
-| [IPrintOemUni::FilterGraphics method](..\prcomoem\nf-prcomoem-iprintoemuni-filtergraphics.md) | The IPrintOemUni |
-| [IPrintOemUni::GetImplementedMethod method](..\prcomoem\nf-prcomoem-iprintoemuni-getimplementedmethod.md) | The IPrintOemUni |
-| [IPrintOemUni::GetInfo method](..\prcomoem\nf-prcomoem-iprintoemuni-getinfo.md) | A rendering plug-in's IPrintOemUni |
-| [IPrintOemUni::HalftonePattern method](..\prcomoem\nf-prcomoem-iprintoemuni-halftonepattern.md) | The IPrintOemUni |
-| [IPrintOemUni::ImageProcessing method](..\prcomoem\nf-prcomoem-iprintoemuni-imageprocessing.md) | The IPrintOemUni |
-| [IPrintOemUni::MemoryUsage method](..\prcomoem\nf-prcomoem-iprintoemuni-memoryusage.md) | The IPrintOemUni |
-| [IPrintOemUni::OutputCharStr method](..\prcomoem\nf-prcomoem-iprintoemuni-outputcharstr.md) | The IPrintOemUni |
-| [IPrintOemUni::PublishDriverInterface method](..\prcomoem\nf-prcomoem-iprintoemuni-publishdriverinterface.md) | The IPrintOemUni |
-| [IPrintOemUni::ResetPDEV method](..\prcomoem\nf-prcomoem-iprintoemuni-resetpdev.md) | The IPrintOemUni |
-| [IPrintOemUni::SendFontCmd method](..\prcomoem\nf-prcomoem-iprintoemuni-sendfontcmd.md) | The IPrintOemUni |
-| [IPrintOemUni::TTDownloadMethod method](..\prcomoem\nf-prcomoem-iprintoemuni-ttdownloadmethod.md) | The IPrintOemUni |
-| [IPrintOemUni::TTYGetInfo method](..\prcomoem\nf-prcomoem-iprintoemuni-ttygetinfo.md) | The IPrintOemUni |
-| [IPrintOemUni::TextOutAsBitmap method](..\prcomoem\nf-prcomoem-iprintoemuni-textoutasbitmap.md) | The IPrintOemUni |
-| [IPrintPipelineFilter::InitializeFilter method](..\filterpipeline\nf-filterpipeline-iprintpipelinefilter-initializefilter.md) | The InitializeFilter method initializes a filter. |
-| [IPrintPipelineFilter::ShutdownOperation method](..\filterpipeline\nf-filterpipeline-iprintpipelinefilter-shutdownoperation.md) | The Pipeline Manager uses the ShutdownOperation method to shut down a filter if the print job is canceled or an error occurs. |
-| [IPrintPipelineFilter::StartOperation method](..\filterpipeline\nf-filterpipeline-iprintpipelinefilter-startoperation.md) | The StartOperation method starts the operation of a filter. The filter reads, processes, and writes data in this method. |
-| [IPrintPipelineManagerControl::FilterFinished method](..\filterpipeline\nf-filterpipeline-iprintpipelinemanagercontrol-filterfinished.md) | The FilterFinished method reports that a filter is finished processing. |
-| [IPrintPipelineManagerControl::RequestShutdown method](..\filterpipeline\nf-filterpipeline-iprintpipelinemanagercontrol-requestshutdown.md) | The RequestShutdown method requests that a pipeline be shut down. |
-| [IPrintPipelineProgressReport::ReportProgress method](..\filterpipeline\nf-filterpipeline-iprintpipelineprogressreport-reportprogress.md) | The ReportProgress method reports the progress of the XPS job consumption to the pipeline manager. |
-| [IPrintPipelinePropertyBag::AddProperty method](..\filterpipeline\nf-filterpipeline-iprintpipelinepropertybag-addproperty.md) | The AddProperty method adds a property to a property bag. |
-| [IPrintPipelinePropertyBag::DeleteProperty method](..\filterpipeline\nf-filterpipeline-iprintpipelinepropertybag-deleteproperty.md) | The DeleteProperty method deletes a property from a property bag. |
-| [IPrintPipelinePropertyBag::GetProperty method](..\filterpipeline\nf-filterpipeline-iprintpipelinepropertybag-getproperty.md) | The GetProperty method gets a property from a property bag. |
-| [IPrintReadStream::ReadBytes method](..\filterpipeline\nf-filterpipeline-iprintreadstream-readbytes.md) | The ReadBytes method reads a number of bytes into a buffer. |
-| [IPrintReadStream::Seek method](..\filterpipeline\nf-filterpipeline-iprintreadstream-seek.md) | The Seek method changes the seek pointer to a new location in the stream. |
-| [IPrintReadStreamFactory::GetStream method](..\filterpipeline\nf-filterpipeline-iprintreadstreamfactory-getstream.md) | The GetStream method gets the stream interface. |
-| [IPrintSchemaAsyncOperation::Cancel method](..\printerextension\nf-printerextension-iprintschemaasyncoperation-cancel.md) | Cancels the asynchronous PrintSchema operation. |
-| [IPrintSchemaAsyncOperation::Start method](..\printerextension\nf-printerextension-iprintschemaasyncoperation-start.md) | Starts the asynchronous PrintSchema operation. |
-| [IPrintSchemaAsyncOperationEvent::Completed method](..\printerextension\nf-printerextension-iprintschemaasyncoperationevent-completed.md) | Is called when asynchronous PrintSchema operation that is represented by an IPrintSchemaAsyncOperation context is completed. |
-| [IPrintSchemaCapabilities2::GetParameterDefinition method](..\printerextension\nf-printerextension-iprintschemacapabilities2-getparameterdefinition.md) | The GetParameterDefinition method retrieves the IPrintSchemaParameterDefinition object, and it represents the &lt;psf |
-| [IPrintSchemaCapabilities::GetFeature method](..\printerextension\nf-printerextension-iprintschemacapabilities-getfeature.md) | Gets a named feature from the PrintCapabilities, by name and full namespace URI. |
-| [IPrintSchemaCapabilities::GetFeatureByKeyName method](..\printerextension\nf-printerextension-iprintschemacapabilities-getfeaturebykeyname.md) | Gets a feature from the PrintCapabilities based on a given key name. |
-| [IPrintSchemaCapabilities::GetOptions method](..\printerextension\nf-printerextension-iprintschemacapabilities-getoptions.md) | Gets all the options of a feature. |
-| [IPrintSchemaCapabilities::GetSelectedOptionInPrintTicket method](..\printerextension\nf-printerextension-iprintschemacapabilities-getselectedoptioninprintticket.md) | Gets the selected option for a feature in IPrintSchemaTicket. |
-| [IPrintSchemaFeature::GetOption method](..\printerextension\nf-printerextension-iprintschemafeature-getoption.md) | Gets the option with the given name. |
-| [IPrintSchemaOption::GetPropertyValue method](..\printerextension\nf-printerextension-iprintschemaoption-getpropertyvalue.md) | Gets the XML node for the &#0034;value&#0034; child element of a &#0034;Property&#0034; or a &#0034;ScoredProperty&#0034; element with the given name. |
-| [IPrintSchemaOptionCollection::GetAt method](..\printerextension\nf-printerextension-iprintschemaoptioncollection-getat.md) | Gets a pointer to an IPrintSchemaOption object. |
-| [IPrintSchemaTicket2::GetParameterInitializer method](..\printerextension\nf-printerextension-iprintschematicket2-getparameterinitializer.md) | The GetParameterInitializer method retrieves the IPrintSchemaParameterInitializer object, and it represents the &lt;psf |
-| [IPrintSchemaTicket::CommitAsync method](..\printerextension\nf-printerextension-iprintschematicket-commitasync.md) | Gets an asynchronous PrintTicket commit operation context. |
-| [IPrintSchemaTicket::GetCapabilities method](..\printerextension\nf-printerextension-iprintschematicket-getcapabilities.md) | Gets an IPrintSchemaCapabilities object that represents the printer capabilities based on the current settings of this IPrintSchemaTicket object. |
-| [IPrintSchemaTicket::GetFeature method](..\printerextension\nf-printerextension-iprintschematicket-getfeature.md) | Gets a named feature from the PrintTicket, by name and full namespace URI. |
-| [IPrintSchemaTicket::GetFeatureByKeyName method](..\printerextension\nf-printerextension-iprintschematicket-getfeaturebykeyname.md) | Gets a feature from the PrintTicket based on the specified key name. |
-| [IPrintSchemaTicket::NotifyXmlChanged method](..\printerextension\nf-printerextension-iprintschematicket-notifyxmlchanged.md) | Notifies the print system that the XML DOM object has changed. |
-| [IPrintSchemaTicket::ValidateAsync method](..\printerextension\nf-printerextension-iprintschematicket-validateasync.md) | Gets an asynchronous PrintTicket validation operation context. |
-| [IPrintWriteStream::Close method](..\filterpipeline\nf-filterpipeline-iprintwritestream-close.md) | The Close method closes a stream and ends the writing to that stream. This method is mandatory. You must call this method when the filter is done writing. |
-| [IPrintWriteStream::WriteBytes method](..\filterpipeline\nf-filterpipeline-iprintwritestream-writebytes.md) | The WriteBytes method writes a specified number of bytes to a stream. |
-| [IPrintWriteStreamFlush::FlushData method](..\filterpipeline\nf-filterpipeline-iprintwritestreamflush-flushdata.md) | The FlushData method flushes buffered data to a data stream while leaving the stream open, allowing the caller to write additional data to the stream. |
-| [IPrinterBidiSetRequestCallback::Completed method](..\printerextension\nf-printerextension-iprinterbidisetrequestcallback-completed.md) | Invoked when the Bidi “Set”” operation is completed. |
-| [IPrinterExtensionAsyncOperation::Cancel method](..\printerextension\nf-printerextension-iprinterextensionasyncoperation-cancel.md) | Cancels the asynchronous operation. |
-| [IPrinterExtensionContextCollection::GetAt method](..\printerextension\nf-printerextension-iprinterextensioncontextcollection-getat.md) | Gets a pointer to an IPrinterExtensionContext object. |
-| [IPrinterExtensionEvent::OnDriverEvent method](..\printerextension\nf-printerextension-iprinterextensionevent-ondriverevent.md) | Called when a driver event occurs. |
-| [IPrinterExtensionEvent::OnPrinterQueuesEnumerated method](..\printerextension\nf-printerextension-iprinterextensionevent-onprinterqueuesenumerated.md) | Called when printer queues are enumerated. |
-| [IPrinterExtensionManager::DisableEvents method](..\printerextension\nf-printerextension-iprinterextensionmanager-disableevents.md) | Disallows events to be generated. |
-| [IPrinterExtensionManager::EnableEvents method](..\printerextension\nf-printerextension-iprinterextensionmanager-enableevents.md) | The EnableEvents method allows events to be generated for the specified printer driver until DisableEvents is called. |
-| [IPrinterExtensionRequest::Cancel method](..\printerextension\nf-printerextension-iprinterextensionrequest-cancel.md) | Completes the extension event with a cancellation. |
-| [IPrinterExtensionRequest::Complete method](..\printerextension\nf-printerextension-iprinterextensionrequest-complete.md) | Completes the extension event. |
-| [IPrinterPropertyBag::GetBool method](..\printerextension\nf-printerextension-iprinterpropertybag-getbool.md) | Reads a specified boolean property. |
-| [IPrinterPropertyBag::GetBytes method](..\printerextension\nf-printerextension-iprinterpropertybag-getbytes.md) | Reads a byte array property. |
-| [IPrinterPropertyBag::GetInt32 method](..\printerextension\nf-printerextension-iprinterpropertybag-getint32.md) | Reads an integer property. |
-| [IPrinterPropertyBag::GetReadStream method](..\printerextension\nf-printerextension-iprinterpropertybag-getreadstream.md) | Gets a stream in order to read from a stream property. |
-| [IPrinterPropertyBag::GetString method](..\printerextension\nf-printerextension-iprinterpropertybag-getstring.md) | Reads a string property. |
-| [IPrinterPropertyBag::GetWriteStream method](..\printerextension\nf-printerextension-iprinterpropertybag-getwritestream.md) | Gets a stream in order to write a stream property. |
-| [IPrinterPropertyBag::SetBool method](..\printerextension\nf-printerextension-iprinterpropertybag-setbool.md) | Writes a specified boolean property value. |
-| [IPrinterPropertyBag::SetBytes method](..\printerextension\nf-printerextension-iprinterpropertybag-setbytes.md) | Writes a byte array property. |
-| [IPrinterPropertyBag::SetInt32 method](..\printerextension\nf-printerextension-iprinterpropertybag-setint32.md) | Writes an integer property. |
-| [IPrinterPropertyBag::SetString method](..\printerextension\nf-printerextension-iprinterpropertybag-setstring.md) | Writes a string property. |
-| [IPrinterQueue2::GetPrinterQueueView method](..\printerextension\nf-printerextension-iprinterqueue2-getprinterqueueview.md) | Retrieves an IPrinterQueueView object, and initializes the object with the range of jobs to be monitored. |
-| [IPrinterQueue2::SendBidiSetRequestAsync method](..\printerextension\nf-printerextension-iprinterqueue2-sendbidisetrequestasync.md) | Uses an XML string value to send a Bidi Set request as an asynchronous operation. |
-| [IPrinterQueue::GetProperties method](..\printerextension\nf-printerextension-iprinterqueue-getproperties.md) | Gets the properties in the property bag for the queue. |
-| [IPrinterQueue::SendBidiQuery method](..\printerextension\nf-printerextension-iprinterqueue-sendbidiquery.md) | Performs an asynchronous refresh operation with the specified query, and invokes the IPrinterQueueEvent |
-| [IPrinterQueueEvent::OnBidiResponseReceived method](..\printerextension\nf-printerextension-iprinterqueueevent-onbidiresponsereceived.md) | Called when a bidi response is received. |
-| [IPrinterQueueView::SetViewRange method](..\printerextension\nf-printerextension-iprinterqueueview-setviewrange.md) | Sets the range of print jobs being monitored. |
-| [IPrinterQueueViewEvent::OnChanged method](..\printerextension\nf-printerextension-iprinterqueueviewevent-onchanged.md) | Provides an IPrintJobCollection object that provides a snapshot of a range of print jobs in the queue. |
-| [IPrinterScriptablePropertyBag2::GetReadStreamAsXML method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag2-getreadstreamasxml.md) | . |
-| [IPrinterScriptablePropertyBag::GetBool method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-getbool.md) | Gets a specified boolean property. |
-| [IPrinterScriptablePropertyBag::GetBytes method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-getbytes.md) | Gets a byte array property. |
-| [IPrinterScriptablePropertyBag::GetInt32 method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-getint32.md) | Gets an integer property. |
-| [IPrinterScriptablePropertyBag::GetReadStream method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-getreadstream.md) | Gets a read stream and uses it to read from a property. |
-| [IPrinterScriptablePropertyBag::GetString method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-getstring.md) | Gets a string property. |
-| [IPrinterScriptablePropertyBag::GetWriteStream method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-getwritestream.md) | Gets a stream and uses it to write to a stream property. |
-| [IPrinterScriptablePropertyBag::SetBool method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-setbool.md) | Writes a specified boolean property value. |
-| [IPrinterScriptablePropertyBag::SetBytes method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-setbytes.md) | Writes a byte array property. |
-| [IPrinterScriptablePropertyBag::SetInt32 method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-setint32.md) | Writes an integer property. |
-| [IPrinterScriptablePropertyBag::SetString method](..\printerextension\nf-printerextension-iprinterscriptablepropertybag-setstring.md) | Writes a string property. |
-| [IPrinterScriptableSequentialStream::Read method](..\printerextension\nf-printerextension-iprinterscriptablesequentialstream-read.md) | The Read method reads bytes from the stream and returns them as a JavaScript array. |
-| [IPrinterScriptableSequentialStream::Write method](..\printerextension\nf-printerextension-iprinterscriptablesequentialstream-write.md) | The Write method writes the provided JavaScript array to the stream and returns the number of bytes written. |
-| [IPrinterScriptableStream::Commit method](..\printerextension\nf-printerextension-iprinterscriptablestream-commit.md) | Commits the operation. |
-| [IPrinterScriptableStream::Seek method](..\printerextension\nf-printerextension-iprinterscriptablestream-seek.md) | Sets the seek pointer. |
-| [IPrinterScriptableStream::SetSize method](..\printerextension\nf-printerextension-iprinterscriptablestream-setsize.md) | Sets the size of the scriptable stream, in bytes. |
-| [IXpsDocument::GetThumbnail method](..\filterpipeline\nf-filterpipeline-ixpsdocument-getthumbnail.md) | The GetThumbnail method gets the document thumbnail object. |
-| [IXpsDocument::SetThumbnail method](..\filterpipeline\nf-filterpipeline-ixpsdocument-setthumbnail.md) | The SetThumbnail method removes the current thumbnail object from the document and inserts a new one. |
-| [IXpsDocumentConsumer::CloseSender method](..\filterpipeline\nf-filterpipeline-ixpsdocumentconsumer-closesender.md) | The CloseSender method tells the Pipeline Manager that the filter is done sending XPS parts. |
-| [IXpsDocumentConsumer::GetNewEmptyPart method](..\filterpipeline\nf-filterpipeline-ixpsdocumentconsumer-getnewemptypart.md) | The GetNewEmptyPart method creates a new XPS part. |
-| [IXpsDocumentConsumer::SendFixedDocument method](..\filterpipeline\nf-filterpipeline-ixpsdocumentconsumer-sendfixeddocument.md) | The SendFixedDocument method sends a fixed document object to the pipeline. |
-| [IXpsDocumentConsumer::SendFixedDocumentSequence method](..\filterpipeline\nf-filterpipeline-ixpsdocumentconsumer-sendfixeddocumentsequence.md) | The SendFixedDocumentSequence method sends a fixed document sequence to the pipeline. |
-| [IXpsDocumentConsumer::SendFixedPage method](..\filterpipeline\nf-filterpipeline-ixpsdocumentconsumer-sendfixedpage.md) | The SendFixedPage method sends a fixed page of an XPS document to the pipeline. |
-| [IXpsDocumentConsumer::SendXpsDocument method](..\filterpipeline\nf-filterpipeline-ixpsdocumentconsumer-sendxpsdocument.md) | The SendXpsDocument method sends an XPS document to the pipeline. |
-| [IXpsDocumentConsumer::SendXpsUnknown method](..\filterpipeline\nf-filterpipeline-ixpsdocumentconsumer-sendxpsunknown.md) | The SendXpsUnknown method sends an XPS document part that cannot be identified to the filter pipeline. |
-| [IXpsDocumentProvider::GetXpsPart method](..\filterpipeline\nf-filterpipeline-ixpsdocumentprovider-getxpspart.md) | The GetXpsPart method retrieves several objects that make up an XPS document. |
-| [IXpsPartIterator::Current method](..\filterpipeline\nf-filterpipeline-ixpspartiterator-current.md) | The Current method provides the current URI and part. |
-| [IXpsPartIterator::IsDone method](..\filterpipeline\nf-filterpipeline-ixpspartiterator-isdone.md) | The IsDone method determines whether the iterator has finished the iteration. |
-| [IXpsPartIterator::Next method](..\filterpipeline\nf-filterpipeline-ixpspartiterator-next.md) | The Next method advances the iterator to the next part. |
-| [IXpsPartIterator::Reset method](..\filterpipeline\nf-filterpipeline-ixpspartiterator-reset.md) | The Reset method sets the iterator to the first element. |
-| [IXpsRasterizationFactory2::CreateRasterizer method](..\xpsrassvc\nf-xpsrassvc-ixpsrasterizationfactory2-createrasterizer.md) | The CreateRasterizer method creates an XPS rasterizer object that can convert content from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs. |
-| [IXpsRasterizationFactory::CreateRasterizer method](..\xpsrassvc\nf-xpsrassvc-ixpsrasterizationfactory-createrasterizer.md) | The CreateRasterize method creates an XPS rasterizer object. |
-| [IXpsRasterizer::RasterizeRect method](..\xpsrassvc\nf-xpsrassvc-ixpsrasterizer-rasterizerect.md) | The RasterizeRect method rasterizes an axis-aligned, rectangular region of an XPS fixed page. |
-| [IXpsRasterizer::SetMinimalLineWidth method](..\xpsrassvc\nf-xpsrassvc-ixpsrasterizer-setminimallinewidth.md) | The SetMinimalLineWidth method allows the caller to set the minimum thickness (in pixels) of the lines that the device can render. |
-| [IXpsRasterizerNotificationCallback::Continue method](..\xpsrassvc\nf-xpsrassvc-ixpsrasterizernotificationcallback-continue.md) | The Continue method tells the caller (the XPS rasterization service) whether to continue rasterizing the current XPS fixed page. |
 | [ImpersonatePrinterClient function](..\winsplp\nf-winsplp-impersonateprinterclient.md) | ImpersonatePrinterClient resumes impersonation of the client, completing the operation begun by RevertToPrinterSelf. |
 | [InitializePrintMonitor function](..\winsplp\nf-winsplp-initializeprintmonitor.md) | The InitializePrintMonitor function is obsolete and is supported only for compatibility purposes. |
 | [InitializePrintMonitor2 function](..\winsplp\nf-winsplp-initializeprintmonitor2.md) | A print monitor's InitializePrintMonitor2 function initializes a print monitor for use with clustered print servers. |
@@ -424,166 +149,175 @@ To develop Print, you need these headers:
 | ---- |:---- |
 | [PFNCOMPROPSHEET callback](..\compstui\nc-compstui-pfncompropsheet.md) | The ComPropSheet function is supplied by CPSUI and can be called by CPSUI applications (including printer interface DLLs) to build property sheet pages. |
 | [PFNGETINFO callback](..\printoem\nc-printoem-pfngetinfo.md) | The UNIFONTOBJ_GetInfo callback function is provided by the Unidrv driver so that rendering plug-ins can obtain font or glyph information. |
-| [ROUTER_NOTIFY_CALLBACK callback](..\winsplp\nc-winsplp-router-notify-callback.md) | . |
+| [ROUTER_NOTIFY_CALLBACK callback](..\winsplp\nc-winsplp-router_notify_callback.md) | . |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [ATTRIBUTE_INFO_1 structure](..\winddiui\ns-winddiui--attribute-info-1.md) | The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
-| [ATTRIBUTE_INFO_2 structure](..\winddiui\ns-winddiui--attribute-info-2.md) | The ATTRIBUTE_INFO_2 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
-| [ATTRIBUTE_INFO_3 structure](..\winddiui\ns-winddiui--attribute-info-3.md) | The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
-| [ATTRIBUTE_INFO_4 structure](..\winddiui\ns-winddiui--attribute-info-4.md) | The ATTRIBUTE_INFO_4 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. |
-| [BIDI_DATA structure](..\winspool\ns-winspool--bidi-data.md) | The BIDI_DATA structure is used to store the values of a bidi schema. |
-| [BIDI_REQUEST_CONTAINER structure](..\winspool\ns-winspool--bidi-request-container.md) | The BIDI_REQUEST_CONTAINER structure is a container for a list of bidi requests. |
-| [BIDI_REQUEST_DATA structure](..\winspool\ns-winspool--bidi-request-data.md) | The BIDI_REQUEST_DATA structure holds a single bidi request. |
-| [BIDI_RESPONSE_CONTAINER structure](..\winspool\ns-winspool--bidi-response-container.md) | The BIDI_RESPONSE_CONTAINER structure is a container for a list of bidi responses. |
-| [BIDI_RESPONSE_DATA structure](..\winspool\ns-winspool--bidi-response-data.md) | The BIDI_RESPONSE_DATA structure holds a single bidi response. |
-| [BINARY_CONTAINER structure](..\winspool\ns-winspool--binary-container.md) | The BINARY_CONTAINER structure is a container for binary data. |
-| [COMPROPSHEETUI structure](..\compstui\ns-compstui--compropsheetui.md) | The COMPROPSHEETUI structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_ADD_PCOMPROPSHEETUI. All structure members must be supplied by the caller of ComPropSheet. |
-| [CONFIG_INFO_DATA_1 structure](..\tcpxcv\ns-tcpxcv--config-info-data-1.md) | The XcvData function uses a CONFIG_INFO_DATA_1 structure when it obtains configuration data for a particular port. |
-| [CPSUICBPARAM structure](..\compstui\ns-compstui--cpsuicbparam.md) | The CPSUICBPARAM structure is used as the input parameter to _CPSUICALLBACK-typed callback functions. |
-| [CPSUIDATABLOCK structure](..\compstui\ns-compstui--cpsuidatablock.md) | The CPSUIDATABLOCK structure is used as a parameter for the ComPropSheet function, if the function code is CPSFUNC_SET_DATABLOCK or CPSFUNC_QUERY_DATABLOCK. |
-| [CUSTOMSIZEPARAM structure](..\printoem\ns-printoem--customsizeparam.md) | The CUSTOMSIZEPARAM structure holds information pertaining to a single custom page size parameter for a printer. |
-| [DATA_HEADER structure](..\prntfont\ns-prntfont--data-header.md) | The DATA_HEADER structure is used to specify a data section within a Unidrv font format file (.uff file). |
-| [DELETE_PORT_DATA_1 structure](..\tcpxcv\ns-tcpxcv--delete-port-data-1.md) | The XcvData function uses a DELETE_PORT_DATA_1 structure when it deletes a port. |
-| [DEVICEPROPERTYHEADER structure](..\winddiui\ns-winddiui--devicepropertyheader.md) | The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function. |
-| [DEVOBJ structure](..\printoem\ns-printoem--devobj.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
-| [DEVOBJ structure](..\printoem\ns-printoem--devobj~r1.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
-| [DEVQUERYPRINT_INFO structure](..\winddiui\ns-winddiui--devqueryprint-info.md) | The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's DevQueryPrintEx function. |
-| [DLGPAGE structure](..\compstui\ns-compstui--dlgpage.md) | The DLGPAGE structure is used for specifying a property sheet page to CPSUI's ComPropSheet function. The structure's address is included in a COMPROPSHEETUI structure, and all member values are supplied by the ComPropSheet caller. |
-| [DOCEVENT_CREATEDCPRE structure](..\winddiui\ns-winddiui--docevent-createdcpre.md) | The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to DrvDocumentEvent and IPrintOemUI2 |
-| [DOCEVENT_ESCAPE structure](..\winddiui\ns-winddiui--docevent-escape.md) | The DOCEVENT_ESCAPE structure is a container for values used as parameters for the ExtEscape function. |
-| [DOCEVENT_FILTER structure](..\winddiui\ns-winddiui--docevent-filter.md) | The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See DrvDocumentEvent for a complete list of the document events. |
-| [DOCUMENTPROPERTYHEADER structure](..\winddiui\ns-winddiui--documentpropertyheader.md) | The DOCUMENTPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDocumentPropertySheets function. |
-| [DOT4_ACTIVITY structure](..\d4iface\ns-d4iface--dot4-activity.md) | . |
-| [DOT4_DC_CREATE_DATA structure](..\d4drvif\ns-d4drvif--dot4-dc-create-data.md) | Defines the DOT4_DC_CREATE_DATA construct. |
-| [DOT4_DC_DESTROY_DATA structure](..\d4drvif\ns-d4drvif--dot4-dc-destroy-data.md) | This topic describes the DOT4_DC_DESTROY_DATA structure. |
-| [DOT4_DC_OPEN_DATA structure](..\d4drvif\ns-d4drvif--dot4-dc-open-data.md) | This topic describes the DOT4_DC_OPEN_DATA structure. |
-| [DOT4_DRIVER_CMD structure](..\d4drvif\ns-d4drvif--dot4-driver-cmd.md) | This topic describes the DOT4_DRIVER_CMD structure. |
-| [DRIVER_UPGRADE_INFO_1 structure](..\winddiui\ns-winddiui--driver-upgrade-info-1.md) | The DRIVER_UPGRADE_INFO_1 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
-| [DRIVER_UPGRADE_INFO_2 structure](..\winddiui\ns-winddiui--driver-upgrade-info-2.md) | The DRIVER_UPGRADE_INFO_2 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
-| [DRVPROCS structure](..\printoem\ns-printoem--drvprocs.md) | The DRVPROCS structure is obsolete and is not used with the COM interfaces for Microsoft printer drivers. |
-| [EXTCHKBOX structure](..\compstui\ns-compstui--extchkbox.md) | The EXTCHKBOX structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended check box, which can be added to a property sheet page option. |
-| [EXTPUSH structure](..\compstui\ns-compstui--extpush.md) | The EXTPUSH structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended push button, which can be added to a property sheet page option. When the button is pushed, a new dialog can be displayed. |
-| [EXTTEXTMETRIC structure](..\prntfont\ns-prntfont--exttextmetric.md) | The EXTTEXTMETRIC structure is used to specify font-specific information within Unidrv font metrics files (.ufm files). |
-| [FINVOCATION structure](..\printoem\ns-printoem--finvocation.md) | The FINVOCATION structure is used as input to the IPrintOemUni |
-| [GETINFO_FONTOBJ structure](..\printoem\ns-printoem--getinfo-fontobj.md) | The GETINFO_FONTOBJ structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
-| [GETINFO_GLYPHBITMAP structure](..\printoem\ns-printoem--getinfo-glyphbitmap.md) | The GETINFO_GLYPHBITMAP structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
-| [GETINFO_GLYPHSTRING structure](..\printoem\ns-printoem--getinfo-glyphstring.md) | The GETINFO_GLYPHSTRING structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
-| [GETINFO_GLYPHWIDTH structure](..\printoem\ns-printoem--getinfo-glyphwidth.md) | The GETINFO_GLYPHWIDTH structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
-| [GETINFO_MEMORY structure](..\printoem\ns-printoem--getinfo-memory.md) | The GETINFO_MEMORY structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
-| [GETINFO_STDVAR structure](..\printoem\ns-printoem--getinfo-stdvar.md) | The GETINFO_STDVAR structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
-| [GLYPHRUN structure](..\prntfont\ns-prntfont--glyphrun.md) | The GLYPHRUN structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
-| [INSERTPSUIPAGE_INFO structure](..\compstui\ns-compstui--insertpsuipage-info.md) | The INSERTPSUIPAGE_INFO structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_INSERT_PSUIPAGE. All member values must be supplied by the ComPropSheet caller. |
-| [INVOC structure](..\prntfont\ns-prntfont--invoc.md) | The INVOC structure is used for describing printer command strings in Unidrv font metrics files (.ufm files) and glyph translation table files (.gtt files). |
-| [KERNDATA structure](..\prntfont\ns-prntfont--kerndata.md) | The KERNDATA structure is used for describing printer kerning pairs. |
 | [LPBranchOfficeJobDataContainer structure](..\winsplp\ns-winsplp-lpbranchofficejobdatacontainer.md) | This structure defines a container for one or more BranchOfficeJobData structures to sent to a server. |
-| [MAPTABLE structure](..\prntfont\ns-prntfont--maptable.md) | The MAPTABLE structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
-| [MONITOR structure](..\winsplp\ns-winsplp--monitor.md) | The MONITOR structure is obsolete and is supported only for compatibility reasons. |
-| [MONITOR2 structure](..\winsplp\ns-winsplp--monitor2.md) | The MONITOR2 structure contains pointers to the functions defined by print monitors. |
-| [MONITOREX structure](..\winsplp\ns-winsplp--monitorex.md) | The MONITOREX structure is obsolete and supported for compatibility purposes only. |
-| [MONITORINIT structure](..\winsplp\ns-winsplp--monitorinit.md) | The MONITORINIT structure is used as an input parameter to a print monitor's InitializePrintMonitor2 function. |
-| [MONITORREG structure](..\winsplp\ns-winsplp--monitorreg.md) | The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions. |
-| [MONITORUI structure](..\winsplp\ns-winsplp--monitorui.md) | The MONITORUI structure contains pointers to the functions within a port monitor UI DLL that the print spooler calls. |
-| [NOTIFICATION_CONFIG_1 structure](..\winsplp\ns-winsplp--notification-config-1.md) | . |
-| [OEMCUIPPARAM structure](..\printoem\ns-printoem--oemcuipparam.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
-| [OEMCUIPPARAM structure](..\printoem\ns-printoem--oemcuipparam~r1.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
-| [OEMDMPARAM structure](..\printoem\ns-printoem--oemdmparam.md) | The OEMDMPARAM structure is used as an input parameter to the IPrintOemUI |
-| [OEMFONTINSTPARAM structure](..\prntfont\ns-prntfont--oemfontinstparam.md) | The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
-| [OEMUIOBJ structure](..\printoem\ns-printoem--oemuiobj.md) | The OEMUIOBJ structure is used as an input argument to several of the methods exported by user interface plug-ins. |
-| [OEMUIPROCS structure](..\printoem\ns-printoem--oemuiprocs.md) | The OEMUIPROCS structure is obsolete.The OEMUIPROCS structure contains the address of the DrvGetDriverSetting and DrvUpdateUISetting functions that are exported by Microsoft printer drivers. |
-| [OEMUIPSPARAM structure](..\printoem\ns-printoem--oemuipsparam.md) | The OEMUIPSPARAM structure is passed to a user interface plug-in's IPrintOemUI |
-| [OEM_DMEXTRAHEADER structure](..\printoem\ns-printoem--oem-dmextraheader.md) | The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private DEVMODEW structure members. |
-| [OIEXT structure](..\compstui\ns-compstui--oiext.md) | The OIEXT structure supplies additional, optional information about a property sheet page option that is described by an OPTITEM structure. |
-| [OPTCOMBO structure](..\compstui\ns-compstui--optcombo.md) | . |
-| [OPTITEM structure](..\compstui\ns-compstui--optitem.md) | The OPTITEM structure is used by CPSUI applications (including printer interface DLLs) for describing one property sheet option on a property sheet page, if the page is described by a COMPROPSHEETUI structure. |
-| [OPTPARAM structure](..\compstui\ns-compstui--optparam.md) | An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a property sheet option. The array's address is included in an OPTTYPE structure. |
-| [OPTTYPE structure](..\compstui\ns-compstui--opttype.md) | The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a property sheet option, if the option is specified by an OPTITEM structure. |
 | [PBranchOfficeJobData structure](..\winsplp\ns-winsplp-pbranchofficejobdata.md) | This structure contains the type of event to log (eEventType), the job ID, and the data required by the event. |
 | [PBranchOfficeJobDataError structure](..\winsplp\ns-winsplp-pbranchofficejobdataerror.md) | This structure contains the necessary data for logging a branch office job failure event on a remote server. This is based on standard job-related data available to the spooler. |
 | [PBranchOfficeJobDataPipelineFailed structure](..\winsplp\ns-winsplp-pbranchofficejobdatapipelinefailed.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Failed event on a remote server. This is based on standard job-related data available to the spooler. |
 | [PBranchOfficeJobDataPrinted structure](..\winsplp\ns-winsplp-pbranchofficejobdataprinted.md) | Contains the necessary data for logging a branch office job completed event on a remote server. This is based on standard job-related data available to the spooler. |
 | [PBranchOfficeJobDataRendered structure](..\winsplp\ns-winsplp-pbranchofficejobdatarendered.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Event on a remote server. This is based on job-related data available to the spooler. |
 | [PBranchOfficeLogOfflineFileFull structure](..\winsplp\ns-winsplp-pbranchofficelogofflinefilefull.md) | Contains the necessary data for logging that the offline log archive on the current client overflowed at some point. |
-| [PDEV_ADJUST_GRAPHICS_RESOLUTION structure](..\printoem\ns-printoem--pdev-adjust-graphics-resolution.md) | The PDEV_ADJUST_GRAPHICS_RESOLUTION structure specifies a graphics resolution value. |
-| [PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure](..\printoem\ns-printoem--pdev-adjust-imageable-origin-area.md) | The PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure specifies the imageable origin area. |
-| [PDEV_ADJUST_PAPER_MARGIN structure](..\printoem\ns-printoem--pdev-adjust-paper-margin.md) | The PDEV_ADJUST_PAPER_MARGIN structure specifies the imageable printing area. |
-| [PDEV_ADJUST_PHYSICAL_PAPER_SIZE structure](..\printoem\ns-printoem--pdev-adjust-physical-paper-size.md) | The PDEV_ADJUST_PAPER_PHYSICAL_SIZE structure specifies a paper size value. |
-| [PDEV_HOSTFONT_ENABLED structure](..\printoem\ns-printoem--pdev-hostfont-enabled.md) | The PDEV_HOSTFONT_ENABLED structure indicates whether the Hostfont feature is enabled. |
-| [PDEV_USE_TRUE_COLOR structure](..\printoem\ns-printoem--pdev-use-true-color.md) | The PDEV_USE_TRUE_COLOR structure indicates whether the output color space should be color or grayscale. |
 | [PIPPARAMS structure](..\printoem\ns-printoem-pipparams.md) | The IPPARAMS structure is used as an input parameter to a rendering plug-in's IPrintOemUni |
-| [PMESSAGEBOX_PARAMS structure](..\winsplp\ns-winsplp-pmessagebox-params.md) | The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box. |
+| [PMESSAGEBOX_PARAMS structure](..\winsplp\ns-winsplp-pmessagebox_params.md) | The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box. |
 | [POEMMEMORYUSAGE structure](..\printoem\ns-printoem-poemmemoryusage.md) | The OEMMEMORYUSAGE structure is used as an input parameter to a rendering plug-in's IPrintOemUni |
-| [PORT_DATA_1 structure](..\tcpxcv\ns-tcpxcv--port-data-1.md) | The XcvData function uses a PORT_DATA_1 structure when it adds a port or configures an existing port. |
-| [PRINTER_EVENT_ATTRIBUTES_INFO structure](..\winddiui\ns-winddiui--printer-event-attributes-info.md) | The PRINTER_EVENT_ATTRIBUTES_INFO structure contains the former attributes and the new attributes for a printer. |
-| [PRINTER_NOTIFY_INIT structure](..\winsplp\ns-winsplp--printer-notify-init.md) | . |
-| [PRINTPROCESSOROPENDATA structure](..\winsplp\ns-winsplp--printprocessoropendata.md) | The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's OpenPrintProcessor function. |
-| [PRINTPROVIDOR structure](..\winsplp\ns-winsplp--printprovidor.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
-| [PRINT_FEATURE_OPTION structure](..\prcomoem\ns-prcomoem--print-feature-option.md) | The PRINT_FEATURE_OPTION structure contains information about a feature-option pair, where the option is one option of a particular feature. |
-| [PROPSHEETUI_GETICON_INFO structure](..\compstui\ns-compstui--propsheetui-geticon-info.md) | The PROPSHEETUI_GETICON_INFO structure is used as an input parameter to an application's PFNPROPSHEETUI-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_ICON. |
-| [PROPSHEETUI_INFO structure](..\compstui\ns-compstui--propsheetui-info.md) | The PROPSHEETUI_INFO structure is used as an input parameter to PFNPROPSHEETUI-typed functions. |
-| [PROPSHEETUI_INFO_HEADER structure](..\compstui\ns-compstui--propsheetui-info-header.md) | The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's PFNPROPSHEETUI-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER. |
-| [PSCRIPT5_PRIVATE_DEVMODE structure](..\printoem\ns-printoem--pscript5-private-devmode.md) | The PSCRIPT5_PRIVATE_DEVMODE structure enables Pscript5 plug-ins to determine the size of the private portion of Pscript5's DEVMODEW structure. |
 | [PSHOWUIPARAMS structure](..\winsplp\ns-winsplp-pshowuiparams.md) | The SplPromptUIInUsersSession function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box. |
-| [PSPINFO structure](..\compstui\ns-compstui--pspinfo.md) | The PSPINFO structure is used as an input parameter to a property sheet page's dialog box procedure, when the Windows message is WM_INITDIALOG. The dialog box procedure's address is specified in a DLGPAGE structure. |
-| [PUBLISHERINFO structure](..\printoem\ns-printoem--publisherinfo.md) | The PUBLISHERINFO structure is used as an input parameter to the IPrintOemPS |
 | [PrintNamedProperty structure](..\winspool\ns-winspool-printnamedproperty.md) | . |
 | [PrintPropertiesCollection structure](..\winspool\ns-winspool-printpropertiescollection.md) | . |
 | [PrintPropertyValue structure](..\winspool\ns-winspool-printpropertyvalue.md) | . |
-| [SETRESULT_INFO structure](..\compstui\ns-compstui--setresult-info.md) | The SETRESULT_INFO structure is used as an input parameter to an application's PFNPROPSHEETUI-typed callback function. |
-| [SIMULATE_CAPS_1 structure](..\printoem\ns-printoem--simulate-caps-1.md) | The SIMULATE_CAPS_1 structure contains information about the types of simulations a spooler supports. |
-| [SPLCLIENT_INFO_1 structure](..\winsplp\ns-winsplp--splclient-info-1.md) | The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs. |
-| [SPLCLIENT_INFO_2_V1 structure](..\winsplp\ns-winsplp--splclient-info-2-v1.md) | Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC. |
-| [SPLCLIENT_INFO_2_V2 structure](..\winsplp\ns-winsplp--splclient-info-2-v2.md) | . |
-| [SPLCLIENT_INFO_2_V3 structure](..\winsplp\ns-winsplp--splclient-info-2-v3.md) | . |
-| [SPLCLIENT_INFO_3_VISTA structure](..\winsplp\ns-winsplp--splclient-info-3-vista.md) | Contains a super-set of the information in both a SPLCLIENT_INFO_1 and SPLCLIENT_INFO_2 structure. It also contains additional information needed by the provider. |
-| [TRANSDATA structure](..\prntfont\ns-prntfont--transdata.md) | The TRANSDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
-| [UFF_FILEHEADER structure](..\prntfont\ns-prntfont--uff-fileheader.md) | The UFF_FILEHEADER structure is used to define the contents of Unidrv font format files (.uff files). |
-| [UFF_FONTDIRECTORY structure](..\prntfont\ns-prntfont--uff-fontdirectory.md) | The UFF_FONTDIRECTORY structure is used to specify the directory of font descriptions contained in a Unidrv font format file (.uff file). |
-| [UNIDRVINFO structure](..\prntfont\ns-prntfont--unidrvinfo.md) | The UNIDRVINFO structure is used to specify printer-specific information within Unidrv font metrics files (.ufm files). |
-| [UNIDRV_PRIVATE_DEVMODE structure](..\printoem\ns-printoem--unidrv-private-devmode.md) | The UNIDRV_PRIVATE_DEVMODE structure enables Unidrv plug-ins to determine the size of the private portion of Unidrv's DEVMODEW structure. |
-| [UNIFM_HDR structure](..\prntfont\ns-prntfont--unifm-hdr.md) | The UNIFM_HDR structure is used to define the contents of Unidrv font metrics files (.ufm files). |
-| [UNIFONTOBJ structure](..\printoem\ns-printoem--unifontobj.md) | The UNIFONTOBJ structure is used as an input parameter to font functions in rendering plug-ins. |
-| [UNI_CODEPAGEINFO structure](..\prntfont\ns-prntfont--uni-codepageinfo.md) | The UNI_CODEPAGEINFO structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
-| [UNI_GLYPHSETDATA structure](..\prntfont\ns-prntfont--uni-glyphsetdata.md) | The UNI_GLYPHSEDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
-| [USERDATA structure](..\printoem\ns-printoem--userdata.md) | The USERDATA structure is used by Unidrv and Pscript to specify additional information about printer features. A USERDATA structure pointer is supplied as the UserData member for each OPTITEM structure. |
-| [WIDTHRUN structure](..\prntfont\ns-prntfont--widthrun.md) | The WIDTHRUN structure is used to define the contents of Unidrv font metrics files (.ufm files). |
-| [WIDTHTABLE structure](..\prntfont\ns-prntfont--widthtable.md) | The WIDTHTABLE structure is used to define the contents of Unidrv font metrics files (.ufm files). |
+| [_ATTRIBUTE_INFO_1 structure](..\winddiui\ns-winddiui-_attribute_info_1.md) | The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
+| [_ATTRIBUTE_INFO_2 structure](..\winddiui\ns-winddiui-_attribute_info_2.md) | The ATTRIBUTE_INFO_2 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
+| [_ATTRIBUTE_INFO_3 structure](..\winddiui\ns-winddiui-_attribute_info_3.md) | The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
+| [_ATTRIBUTE_INFO_4 structure](..\winddiui\ns-winddiui-_attribute_info_4.md) | The ATTRIBUTE_INFO_4 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. |
+| [_BIDI_DATA structure](..\winspool\ns-winspool-_bidi_data.md) | The BIDI_DATA structure is used to store the values of a bidi schema. |
+| [_BIDI_REQUEST_CONTAINER structure](..\winspool\ns-winspool-_bidi_request_container.md) | The BIDI_REQUEST_CONTAINER structure is a container for a list of bidi requests. |
+| [_BIDI_REQUEST_DATA structure](..\winspool\ns-winspool-_bidi_request_data.md) | The BIDI_REQUEST_DATA structure holds a single bidi request. |
+| [_BIDI_RESPONSE_CONTAINER structure](..\winspool\ns-winspool-_bidi_response_container.md) | The BIDI_RESPONSE_CONTAINER structure is a container for a list of bidi responses. |
+| [_BIDI_RESPONSE_DATA structure](..\winspool\ns-winspool-_bidi_response_data.md) | The BIDI_RESPONSE_DATA structure holds a single bidi response. |
+| [_BINARY_CONTAINER structure](..\winspool\ns-winspool-_binary_container.md) | The BINARY_CONTAINER structure is a container for binary data. |
+| [_COMPROPSHEETUI structure](..\compstui\ns-compstui-_compropsheetui.md) | The COMPROPSHEETUI structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_ADD_PCOMPROPSHEETUI. All structure members must be supplied by the caller of ComPropSheet. |
+| [_CONFIG_INFO_DATA_1 structure](..\tcpxcv\ns-tcpxcv-_config_info_data_1.md) | The XcvData function uses a CONFIG_INFO_DATA_1 structure when it obtains configuration data for a particular port. |
+| [_CPSUICBPARAM structure](..\compstui\ns-compstui-_cpsuicbparam.md) | The CPSUICBPARAM structure is used as the input parameter to _CPSUICALLBACK-typed callback functions. |
+| [_CPSUIDATABLOCK structure](..\compstui\ns-compstui-_cpsuidatablock.md) | The CPSUIDATABLOCK structure is used as a parameter for the ComPropSheet function, if the function code is CPSFUNC_SET_DATABLOCK or CPSFUNC_QUERY_DATABLOCK. |
+| [_CUSTOMSIZEPARAM structure](..\printoem\ns-printoem-_customsizeparam.md) | The CUSTOMSIZEPARAM structure holds information pertaining to a single custom page size parameter for a printer. |
+| [_DATA_HEADER structure](..\prntfont\ns-prntfont-_data_header.md) | The DATA_HEADER structure is used to specify a data section within a Unidrv font format file (.uff file). |
+| [_DELETE_PORT_DATA_1 structure](..\tcpxcv\ns-tcpxcv-_delete_port_data_1.md) | The XcvData function uses a DELETE_PORT_DATA_1 structure when it deletes a port. |
+| [_DEVICEPROPERTYHEADER structure](..\winddiui\ns-winddiui-_devicepropertyheader.md) | The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function. |
+| [_DEVOBJ structure](..\printoem\ns-printoem-_devobj.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
+| [_DEVOBJ structure](..\printoem\ns-printoem-_devobj~r1.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
+| [_DEVQUERYPRINT_INFO structure](..\winddiui\ns-winddiui-_devqueryprint_info.md) | The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's DevQueryPrintEx function. |
+| [_DLGPAGE structure](..\compstui\ns-compstui-_dlgpage.md) | The DLGPAGE structure is used for specifying a property sheet page to CPSUI's ComPropSheet function. The structure's address is included in a COMPROPSHEETUI structure, and all member values are supplied by the ComPropSheet caller. |
+| [_DOCEVENT_CREATEDCPRE structure](..\winddiui\ns-winddiui-_docevent_createdcpre.md) | The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to DrvDocumentEvent and IPrintOemUI2 |
+| [_DOCEVENT_ESCAPE structure](..\winddiui\ns-winddiui-_docevent_escape.md) | The DOCEVENT_ESCAPE structure is a container for values used as parameters for the ExtEscape function. |
+| [_DOCEVENT_FILTER structure](..\winddiui\ns-winddiui-_docevent_filter.md) | The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See DrvDocumentEvent for a complete list of the document events. |
+| [_DOCUMENTPROPERTYHEADER structure](..\winddiui\ns-winddiui-_documentpropertyheader.md) | The DOCUMENTPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDocumentPropertySheets function. |
+| [_DOT4_ACTIVITY structure](..\d4iface\ns-d4iface-_dot4_activity.md) | . |
+| [_DOT4_DC_CREATE_DATA structure](..\d4drvif\ns-d4drvif-_dot4_dc_create_data.md) | Defines the DOT4_DC_CREATE_DATA construct. |
+| [_DOT4_DC_DESTROY_DATA structure](..\d4drvif\ns-d4drvif-_dot4_dc_destroy_data.md) | This topic describes the DOT4_DC_DESTROY_DATA structure. |
+| [_DOT4_DC_OPEN_DATA structure](..\d4drvif\ns-d4drvif-_dot4_dc_open_data.md) | This topic describes the DOT4_DC_OPEN_DATA structure. |
+| [_DOT4_DRIVER_CMD structure](..\d4drvif\ns-d4drvif-_dot4_driver_cmd.md) | This topic describes the DOT4_DRIVER_CMD structure. |
+| [_DRIVER_UPGRADE_INFO_1 structure](..\winddiui\ns-winddiui-_driver_upgrade_info_1.md) | The DRIVER_UPGRADE_INFO_1 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
+| [_DRIVER_UPGRADE_INFO_2 structure](..\winddiui\ns-winddiui-_driver_upgrade_info_2.md) | The DRIVER_UPGRADE_INFO_2 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
+| [_DRVPROCS structure](..\printoem\ns-printoem-_drvprocs.md) | The DRVPROCS structure is obsolete and is not used with the COM interfaces for Microsoft printer drivers. |
+| [_EXTCHKBOX structure](..\compstui\ns-compstui-_extchkbox.md) | The EXTCHKBOX structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended check box, which can be added to a property sheet page option. |
+| [_EXTPUSH structure](..\compstui\ns-compstui-_extpush.md) | The EXTPUSH structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended push button, which can be added to a property sheet page option. When the button is pushed, a new dialog can be displayed. |
+| [_EXTTEXTMETRIC structure](..\prntfont\ns-prntfont-_exttextmetric.md) | The EXTTEXTMETRIC structure is used to specify font-specific information within Unidrv font metrics files (.ufm files). |
+| [_FINVOCATION structure](..\printoem\ns-printoem-_finvocation.md) | The FINVOCATION structure is used as input to the IPrintOemUni |
+| [_GETINFO_FONTOBJ structure](..\printoem\ns-printoem-_getinfo_fontobj.md) | The GETINFO_FONTOBJ structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
+| [_GETINFO_GLYPHBITMAP structure](..\printoem\ns-printoem-_getinfo_glyphbitmap.md) | The GETINFO_GLYPHBITMAP structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
+| [_GETINFO_GLYPHSTRING structure](..\printoem\ns-printoem-_getinfo_glyphstring.md) | The GETINFO_GLYPHSTRING structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
+| [_GETINFO_GLYPHWIDTH structure](..\printoem\ns-printoem-_getinfo_glyphwidth.md) | The GETINFO_GLYPHWIDTH structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
+| [_GETINFO_MEMORY structure](..\printoem\ns-printoem-_getinfo_memory.md) | The GETINFO_MEMORY structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
+| [_GETINFO_STDVAR structure](..\printoem\ns-printoem-_getinfo_stdvar.md) | The GETINFO_STDVAR structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
+| [_GLYPHRUN structure](..\prntfont\ns-prntfont-_glyphrun.md) | The GLYPHRUN structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
+| [_INSERTPSUIPAGE_INFO structure](..\compstui\ns-compstui-_insertpsuipage_info.md) | The INSERTPSUIPAGE_INFO structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_INSERT_PSUIPAGE. All member values must be supplied by the ComPropSheet caller. |
+| [_INVOC structure](..\prntfont\ns-prntfont-_invoc.md) | The INVOC structure is used for describing printer command strings in Unidrv font metrics files (.ufm files) and glyph translation table files (.gtt files). |
+| [_KERNDATA structure](..\prntfont\ns-prntfont-_kerndata.md) | The KERNDATA structure is used for describing printer kerning pairs. |
+| [_MAPTABLE structure](..\prntfont\ns-prntfont-_maptable.md) | The MAPTABLE structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
+| [_MONITOR structure](..\winsplp\ns-winsplp-_monitor.md) | The MONITOR structure is obsolete and is supported only for compatibility reasons. |
+| [_MONITOR2 structure](..\winsplp\ns-winsplp-_monitor2.md) | The MONITOR2 structure contains pointers to the functions defined by print monitors. |
+| [_MONITOREX structure](..\winsplp\ns-winsplp-_monitorex.md) | The MONITOREX structure is obsolete and supported for compatibility purposes only. |
+| [_MONITORINIT structure](..\winsplp\ns-winsplp-_monitorinit.md) | The MONITORINIT structure is used as an input parameter to a print monitor's InitializePrintMonitor2 function. |
+| [_MONITORREG structure](..\winsplp\ns-winsplp-_monitorreg.md) | The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions. |
+| [_MONITORUI structure](..\winsplp\ns-winsplp-_monitorui.md) | The MONITORUI structure contains pointers to the functions within a port monitor UI DLL that the print spooler calls. |
+| [_NOTIFICATION_CONFIG_1 structure](..\winsplp\ns-winsplp-_notification_config_1.md) | . |
+| [_OEMCUIPPARAM structure](..\printoem\ns-printoem-_oemcuipparam.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
+| [_OEMCUIPPARAM structure](..\printoem\ns-printoem-_oemcuipparam~r1.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
+| [_OEMDMPARAM structure](..\printoem\ns-printoem-_oemdmparam.md) | The OEMDMPARAM structure is used as an input parameter to the IPrintOemUI |
+| [_OEMFONTINSTPARAM structure](..\prntfont\ns-prntfont-_oemfontinstparam.md) | The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
+| [_OEMUIOBJ structure](..\printoem\ns-printoem-_oemuiobj.md) | The OEMUIOBJ structure is used as an input argument to several of the methods exported by user interface plug-ins. |
+| [_OEMUIPROCS structure](..\printoem\ns-printoem-_oemuiprocs.md) | The OEMUIPROCS structure is obsolete.The OEMUIPROCS structure contains the address of the DrvGetDriverSetting and DrvUpdateUISetting functions that are exported by Microsoft printer drivers. |
+| [_OEMUIPSPARAM structure](..\printoem\ns-printoem-_oemuipsparam.md) | The OEMUIPSPARAM structure is passed to a user interface plug-in's IPrintOemUI |
+| [_OEM_DMEXTRAHEADER structure](..\printoem\ns-printoem-_oem_dmextraheader.md) | The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private DEVMODEW structure members. |
+| [_OIEXT structure](..\compstui\ns-compstui-_oiext.md) | The OIEXT structure supplies additional, optional information about a property sheet page option that is described by an OPTITEM structure. |
+| [_OPTCOMBO structure](..\compstui\ns-compstui-_optcombo.md) | . |
+| [_OPTITEM structure](..\compstui\ns-compstui-_optitem.md) | The OPTITEM structure is used by CPSUI applications (including printer interface DLLs) for describing one property sheet option on a property sheet page, if the page is described by a COMPROPSHEETUI structure. |
+| [_OPTPARAM structure](..\compstui\ns-compstui-_optparam.md) | An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a property sheet option. The array's address is included in an OPTTYPE structure. |
+| [_OPTTYPE structure](..\compstui\ns-compstui-_opttype.md) | The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a property sheet option, if the option is specified by an OPTITEM structure. |
+| [_PDEV_ADJUST_GRAPHICS_RESOLUTION structure](..\printoem\ns-printoem-_pdev_adjust_graphics_resolution.md) | The PDEV_ADJUST_GRAPHICS_RESOLUTION structure specifies a graphics resolution value. |
+| [_PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure](..\printoem\ns-printoem-_pdev_adjust_imageable_origin_area.md) | The PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure specifies the imageable origin area. |
+| [_PDEV_ADJUST_PAPER_MARGIN structure](..\printoem\ns-printoem-_pdev_adjust_paper_margin.md) | The PDEV_ADJUST_PAPER_MARGIN structure specifies the imageable printing area. |
+| [_PDEV_HOSTFONT_ENABLED structure](..\printoem\ns-printoem-_pdev_hostfont_enabled.md) | The PDEV_HOSTFONT_ENABLED structure indicates whether the Hostfont feature is enabled. |
+| [_PDEV_USE_TRUE_COLOR structure](..\printoem\ns-printoem-_pdev_use_true_color.md) | The PDEV_USE_TRUE_COLOR structure indicates whether the output color space should be color or grayscale. |
+| [_PORT_DATA_1 structure](..\tcpxcv\ns-tcpxcv-_port_data_1.md) | The XcvData function uses a PORT_DATA_1 structure when it adds a port or configures an existing port. |
+| [_PRINTER_EVENT_ATTRIBUTES_INFO structure](..\winddiui\ns-winddiui-_printer_event_attributes_info.md) | The PRINTER_EVENT_ATTRIBUTES_INFO structure contains the former attributes and the new attributes for a printer. |
+| [_PRINTER_NOTIFY_INIT structure](..\winsplp\ns-winsplp-_printer_notify_init.md) | . |
+| [_PRINTPROCESSOROPENDATA structure](..\winsplp\ns-winsplp-_printprocessoropendata.md) | The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's OpenPrintProcessor function. |
+| [_PRINTPROVIDOR structure](..\winsplp\ns-winsplp-_printprovidor.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
+| [_PRINT_FEATURE_OPTION structure](..\prcomoem\ns-prcomoem-_print_feature_option.md) | The PRINT_FEATURE_OPTION structure contains information about a feature-option pair, where the option is one option of a particular feature. |
+| [_PROPSHEETUI_GETICON_INFO structure](..\compstui\ns-compstui-_propsheetui_geticon_info.md) | The PROPSHEETUI_GETICON_INFO structure is used as an input parameter to an application's PFNPROPSHEETUI-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_ICON. |
+| [_PROPSHEETUI_INFO structure](..\compstui\ns-compstui-_propsheetui_info.md) | The PROPSHEETUI_INFO structure is used as an input parameter to PFNPROPSHEETUI-typed functions. |
+| [_PROPSHEETUI_INFO_HEADER structure](..\compstui\ns-compstui-_propsheetui_info_header.md) | The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's PFNPROPSHEETUI-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER. |
+| [_PSCRIPT5_PRIVATE_DEVMODE structure](..\printoem\ns-printoem-_pscript5_private_devmode.md) | The PSCRIPT5_PRIVATE_DEVMODE structure enables Pscript5 plug-ins to determine the size of the private portion of Pscript5's DEVMODEW structure. |
+| [_PSPINFO structure](..\compstui\ns-compstui-_pspinfo.md) | The PSPINFO structure is used as an input parameter to a property sheet page's dialog box procedure, when the Windows message is WM_INITDIALOG. The dialog box procedure's address is specified in a DLGPAGE structure. |
+| [_PUBLISHERINFO structure](..\printoem\ns-printoem-_publisherinfo.md) | The PUBLISHERINFO structure is used as an input parameter to the IPrintOemPS |
+| [_SETRESULT_INFO structure](..\compstui\ns-compstui-_setresult_info.md) | The SETRESULT_INFO structure is used as an input parameter to an application's PFNPROPSHEETUI-typed callback function. |
+| [_SIMULATE_CAPS_1 structure](..\printoem\ns-printoem-_simulate_caps_1.md) | The SIMULATE_CAPS_1 structure contains information about the types of simulations a spooler supports. |
+| [_SPLCLIENT_INFO_1 structure](..\winsplp\ns-winsplp-_splclient_info_1.md) | The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs. |
+| [_SPLCLIENT_INFO_2_V1 structure](..\winsplp\ns-winsplp-_splclient_info_2_v1.md) | Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC. |
+| [_SPLCLIENT_INFO_2_V2 structure](..\winsplp\ns-winsplp-_splclient_info_2_v2.md) | . |
+| [_SPLCLIENT_INFO_2_V3 structure](..\winsplp\ns-winsplp-_splclient_info_2_v3.md) | . |
+| [_SPLCLIENT_INFO_3_VISTA structure](..\winsplp\ns-winsplp-_splclient_info_3_vista.md) | Contains a super-set of the information in both a SPLCLIENT_INFO_1 and SPLCLIENT_INFO_2 structure. It also contains additional information needed by the provider. |
+| [_TRANSDATA structure](..\prntfont\ns-prntfont-_transdata.md) | The TRANSDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
+| [_UFF_FILEHEADER structure](..\prntfont\ns-prntfont-_uff_fileheader.md) | The UFF_FILEHEADER structure is used to define the contents of Unidrv font format files (.uff files). |
+| [_UFF_FONTDIRECTORY structure](..\prntfont\ns-prntfont-_uff_fontdirectory.md) | The UFF_FONTDIRECTORY structure is used to specify the directory of font descriptions contained in a Unidrv font format file (.uff file). |
+| [_UNIDRVINFO structure](..\prntfont\ns-prntfont-_unidrvinfo.md) | The UNIDRVINFO structure is used to specify printer-specific information within Unidrv font metrics files (.ufm files). |
+| [_UNIDRV_PRIVATE_DEVMODE structure](..\printoem\ns-printoem-_unidrv_private_devmode.md) | The UNIDRV_PRIVATE_DEVMODE structure enables Unidrv plug-ins to determine the size of the private portion of Unidrv's DEVMODEW structure. |
+| [_UNIFM_HDR structure](..\prntfont\ns-prntfont-_unifm_hdr.md) | The UNIFM_HDR structure is used to define the contents of Unidrv font metrics files (.ufm files). |
+| [_UNIFONTOBJ structure](..\printoem\ns-printoem-_unifontobj.md) | The UNIFONTOBJ structure is used as an input parameter to font functions in rendering plug-ins. |
+| [_UNI_CODEPAGEINFO structure](..\prntfont\ns-prntfont-_uni_codepageinfo.md) | The UNI_CODEPAGEINFO structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
+| [_UNI_GLYPHSETDATA structure](..\prntfont\ns-prntfont-_uni_glyphsetdata.md) | The UNI_GLYPHSEDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files). |
+| [_USERDATA structure](..\printoem\ns-printoem-_userdata.md) | The USERDATA structure is used by Unidrv and Pscript to specify additional information about printer features. A USERDATA structure pointer is supplied as the UserData member for each OPTITEM structure. |
+| [_WIDTHRUN structure](..\prntfont\ns-prntfont-_widthrun.md) | The WIDTHRUN structure is used to define the contents of Unidrv font metrics files (.ufm files). |
+| [_WIDTHTABLE structure](..\prntfont\ns-prntfont-_widthtable.md) | The WIDTHTABLE structure is used to define the contents of Unidrv font metrics files (.ufm files). |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [BIDI_TYPE enumeration](..\winspool\ne-winspool-bidi-type.md) | The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation. |
+| [BIDI_TYPE enumeration](..\winspool\ne-winspool-bidi_type.md) | The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation. |
 | [BMFORMAT enumeration](..\icm\ne-icm-bmformat.md) | The values of the BMFORMAT enumeration are used by WCS functions to indicate the format that particular bitmaps are in. This data type is extended from BMFORMAT that is available in versions of Windows released before Windows Vista. |
 | [COLORDATATYPE enumeration](..\icm\ne-icm-colordatatype.md) | The values of the COLORDATATYPE enumeration are used by WCS functions to indicate the data type of vector content. |
 | [COLORPROFILESUBTYPE enumeration](..\icm\ne-icm-colorprofilesubtype.md) | The COLORPROFILESUBTYPE enumeration is used to specify the subtype of color profile. |
 | [COLORPROFILETYPE enumeration](..\icm\ne-icm-colorprofiletype.md) | The COLORPROFILETYPE enumeration is used to specify the type of color profile. |
 | [COLORTYPE enumeration](..\icm\ne-icm-colortype.md) | The values of the COLORTYPE enumeration are used by WCS functions to indicate the format of vector content. Most values have equivalent structures that are contained in the ICM COLOR structure (described in the Microsoft Windows SDK documentation). |
-| [EATTRIBUTE_DATATYPE enumeration](..\printoem\ne-printoem--eattribute-datatype.md) | The EATTRIBUTE_DATATYPE enumerates the possible data types for a global attribute, feature attribute or option attribute. |
-| [NOTIFICATION_CALLBACK_COMMANDS enumeration](..\winsplp\ne-winsplp--notification-callback-commands.md) | . |
-| [NOTIFICATION_CONFIG_FLAGS enumeration](..\winsplp\ne-winsplp--notification-config-flags.md) | . |
-| [STDVARIABLEINDEX enumeration](..\printoem\ne-printoem--stdvariableindex.md) | . |
-| [UI_TYPE enumeration](..\winsplp\ne-winsplp-ui-type.md) | . |
-| [WCS_PROFILE_MANAGEMENT_SCOPE enumeration](..\icm\ne-icm-wcs-profile-management-scope.md) | The WCS_PROFILE_MANAGEMENT_SCOPE enumeration is used to specify the scope of a profile management operation, such as associating a profile with a device. |
+| [UI_TYPE enumeration](..\winsplp\ne-winsplp-ui_type.md) | . |
+| [WCS_PROFILE_MANAGEMENT_SCOPE enumeration](..\icm\ne-icm-wcs_profile_management_scope.md) | The WCS_PROFILE_MANAGEMENT_SCOPE enumeration is used to specify the scope of a profile management operation, such as associating a profile with a device. |
+| [_EATTRIBUTE_DATATYPE enumeration](..\printoem\ne-printoem-_eattribute_datatype.md) | The EATTRIBUTE_DATATYPE enumerates the possible data types for a global attribute, feature attribute or option attribute. |
+| [_NOTIFICATION_CALLBACK_COMMANDS enumeration](..\winsplp\ne-winsplp-_notification_callback_commands.md) | . |
+| [_NOTIFICATION_CONFIG_FLAGS enumeration](..\winsplp\ne-winsplp-_notification_config_flags.md) | . |
+| [_STDVARIABLEINDEX enumeration](..\printoem\ne-printoem-_stdvariableindex.md) | . |
+| [__MIDL___MIDL_itf_filterpipeline_0000_0000_0004 enumeration](..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0004.md) | . |
+| [__MIDL___MIDL_itf_xpsrassvc_0000_0001_0001 enumeration](..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md) | The XPSRAS_RENDERING_MODE enumeration specifies the rendering mode to be used by an XPS rasterizer. |
+| [__MIDL___MIDL_itf_xpsrassvc_0000_0003_0001 enumeration](..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0003_0001.md) | XPSRAS_PIXEL_FORMAT allows a caller to select the pixel format used by the IWICBitmap interface that is returned by the IXpsRasterizer |
+| [__MIDL___MIDL_itf_xpsrassvc_0000_0004_0001 enumeration](..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0004_0001.md) | XPSRAS_BACKGROUND_COLOR specifies the background clear color to be used by an XPS rasterizer |
+| [tagOEMPTOPTS enumeration](..\prcomoem\ne-prcomoem-tagoemptopts.md) | . |
+| [tagPrintJobStatus enumeration](..\printerextension\ne-printerextension-tagprintjobstatus.md) | This enumeration is a one-to-one mapping to the spooler flags suppled in the JOB_INFO_X structures. |
+| [tagPrintSchemaConstrainedSetting enumeration](..\printerextension\ne-printerextension-tagprintschemaconstrainedsetting.md) | The PrintSchemaConstrainedSetting enumeration specifies whether the Option is available based on the current device configuration. The constrained attribute appears only in a PrintCapabilities document. |
+| [tagPrintSchemaParameterDataType enumeration](..\printerextension\ne-printerextension-tagprintschemaparameterdatatype.md) | The PrintSchemaParameterDataType enumeration identifies the allowed data types for the Print Schema parameter. |
+| [tagPrintSchemaSelectionType enumeration](..\printerextension\ne-printerextension-tagprintschemaselectiontype.md) | The PrintSchemaSelectionType enumeration identifies how a Feature’s options should be selected. This property appears only in a PrintCapabilities document. |
+| [tagSHIMOPTS enumeration](..\prdrvcom\ne-prdrvcom-tagshimopts.md) | . |
 
 ## I/O control codes
 
 | Title   | Description   |
 | ---- |:---- |
-| [IOCTL_DOT4_ADD_ACTIVITY_BROADCAST IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-add-activity-broadcast.md) | This topic describes IOCTL_DOT4_ADD_ACTIVITY_BROADCAST. |
-| [IOCTL_DOT4_CLOSE_CHANNEL IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-close-channel.md) | This topic describes IOCTL_DOT4_CLOSE_CHANNEL. |
-| [IOCTL_DOT4_CREATE_SOCKET IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-create-socket.md) | This topic describes IOCTL_DOT4_CREATE_SOCKET. |
-| [IOCTL_DOT4_DESTROY_SOCKET IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-destroy-socket.md) | This topic describes IOCTL_DOT4_DESTROY_SOCKET. |
-| [IOCTL_DOT4_LAST IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-last.md) | This topic describes IOCTL_DOT4_LAST. |
-| [IOCTL_DOT4_OPEN_CHANNEL IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-open-channel.md) | This topic describes IOCTL_DOT4_OPEN_CHANNEL. |
-| [IOCTL_DOT4_READ IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-read.md) | This topic describes IOCTL_DOT4_READ. |
-| [IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-remove-activity-broadcast.md) | This topic describes IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST. |
-| [IOCTL_DOT4_USER_BASE IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-user-base.md) | This topic describes IOCTL_DOT4_USER_BASE. |
-| [IOCTL_DOT4_WAIT_ACTIVITY_BROADCAST IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-wait-activity-broadcast.md) | This topic describes IOCTL_DOT4_WAIT_ACTIVITY_BROADCAST. |
-| [IOCTL_DOT4_WAIT_FOR_CHANNEL IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-wait-for-channel.md) | This topic describes IOCTL_DOT4_WAIT_FOR_CHANNEL. |
-| [IOCTL_DOT4_WRITE IOCTL](..\d4drvif\ni-d4drvif-ioctl-dot4-write.md) | This topic describes IOCTL_DOT4_WRITE. |
+| [IOCTL_DOT4_ADD_ACTIVITY_BROADCAST IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_add_activity_broadcast.md) | This topic describes IOCTL_DOT4_ADD_ACTIVITY_BROADCAST. |
+| [IOCTL_DOT4_CLOSE_CHANNEL IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_close_channel.md) | This topic describes IOCTL_DOT4_CLOSE_CHANNEL. |
+| [IOCTL_DOT4_CREATE_SOCKET IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_create_socket.md) | This topic describes IOCTL_DOT4_CREATE_SOCKET. |
+| [IOCTL_DOT4_DESTROY_SOCKET IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_destroy_socket.md) | This topic describes IOCTL_DOT4_DESTROY_SOCKET. |
+| [IOCTL_DOT4_LAST IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_last.md) | This topic describes IOCTL_DOT4_LAST. |
+| [IOCTL_DOT4_OPEN_CHANNEL IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_open_channel.md) | This topic describes IOCTL_DOT4_OPEN_CHANNEL. |
+| [IOCTL_DOT4_READ IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_read.md) | This topic describes IOCTL_DOT4_READ. |
+| [IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_remove_activity_broadcast.md) | This topic describes IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST. |
+| [IOCTL_DOT4_USER_BASE IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_user_base.md) | This topic describes IOCTL_DOT4_USER_BASE. |
+| [IOCTL_DOT4_WAIT_ACTIVITY_BROADCAST IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_wait_activity_broadcast.md) | This topic describes IOCTL_DOT4_WAIT_ACTIVITY_BROADCAST. |
+| [IOCTL_DOT4_WAIT_FOR_CHANNEL IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_wait_for_channel.md) | This topic describes IOCTL_DOT4_WAIT_FOR_CHANNEL. |
+| [IOCTL_DOT4_WRITE IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_write.md) | This topic describes IOCTL_DOT4_WRITE. |
 
 ## Interfaces
 

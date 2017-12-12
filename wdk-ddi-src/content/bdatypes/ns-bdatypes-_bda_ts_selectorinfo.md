@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _BDA_TS_SELECTORINFO {
 
 Specifies the buffer length including the extension.
 
+
 ### -field bReserved
 
 Reserved for future use.
+
 
 ### -field guidNetworkType
 
 Specifies the current type of tuning.
 
+
 ### -field bTSIDCount
 
 Specifies the number of usTSID.
+
 
 ### -field usTSID
 
@@ -83,6 +88,7 @@ Specifies the number of usTSID.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

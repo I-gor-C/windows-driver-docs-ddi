@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide.htm
 old-project: debugger
 ms.assetid: 717fad3a-91b1-41c8-ac71-e9ea52533efd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,6 +74,7 @@ This method is called by the engine when a module-unload debugging event occurs 
 
  
 
+
 ## -members
 The <b>IDebugEventCallbacksWide</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -87,6 +88,7 @@ The <b>IDebugEventCallbacksWide</b> interface has these methods.
 </td>
 <td align="left" width="63%">
  This method is called by the engine when the target issues a breakpoint exception.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -95,6 +97,7 @@ The <b>IDebugEventCallbacksWide</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 This method is called by the engine when it makes or detects changes to the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -103,6 +106,7 @@ This method is called by the engine when it makes or detects changes to the targ
 </td>
 <td align="left" width="63%">
 This method is called by the engine when its state has changed.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -111,6 +115,7 @@ This method is called by the engine when its state has changed.
 </td>
 <td align="left" width="63%">
 This method is called by the engine when the symbol state changes.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -119,6 +124,7 @@ This method is called by the engine when the symbol state changes.
 </td>
 <td align="left" width="63%">
 This method is called by the engine when a create-process debugging event occurs in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -127,6 +133,7 @@ This method is called by the engine when a create-process debugging event occurs
 </td>
 <td align="left" width="63%">
 This method is called by the engine when a create-thread debugging event occurs in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -135,6 +142,7 @@ This method is called by the engine when a create-thread debugging event occurs 
 </td>
 <td align="left" width="63%">
 This method is called by the engine when an exception debugging event occurs in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -143,6 +151,7 @@ This method is called by the engine when an exception debugging event occurs in 
 </td>
 <td align="left" width="63%">
 This method is called by the engine when an exit-process debugging event occurs in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -151,6 +160,7 @@ This method is called by the engine when an exit-process debugging event occurs 
 </td>
 <td align="left" width="63%">
 This method is called by the engine when an exit-thread debugging event occurs in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -159,6 +169,7 @@ This method is called by the engine when an exit-thread debugging event occurs i
 </td>
 <td align="left" width="63%">
 This method is called to determine which events the <b>IDebugEventCallbacksWide</b> object is interested in.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -167,6 +178,7 @@ This method is called to determine which events the <b>IDebugEventCallbacksWide<
 </td>
 <td align="left" width="63%">
 This method is called by the engine when a module-load debugging event occurs in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -175,6 +187,7 @@ This method is called by the engine when a module-load debugging event occurs in
 </td>
 <td align="left" width="63%">
 This method is called by the engine when a change occurs in the debugger session.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -183,6 +196,7 @@ This method is called by the engine when a change occurs in the debugger session
 </td>
 <td align="left" width="63%">
 This method is called by the engine when a system error occurs in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -191,6 +205,7 @@ This method is called by the engine when a system error occurs in the target.
 </td>
 <td align="left" width="63%">
 This method is called by the engine when a module-unload debugging event occurs in the target.
+
 </td>
 </tr>
 </table> This method is called by the engine when the target issues a breakpoint exception.
@@ -223,6 +238,7 @@ This method is called by the engine when a module-unload debugging event occurs 
 
  
 
+
 ## -remarks
 
 
@@ -231,6 +247,7 @@ This method is called by the engine when a module-unload debugging event occurs 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

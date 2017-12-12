@@ -41,6 +41,7 @@ req.irql:
 Copies (loads) a resource from the given image. 
 
 
+
 ## -syntax
 
 ````
@@ -61,28 +62,35 @@ NTSTATUS KsLoadResource(
 
 Pointer to the image base
 
+
 ### -param PoolType [in]
 
 Pool type to use when copying resource
+
 
 ### -param ResourceName [in]
 
 Resource name.
 
+
 ### -param ResourceType [in]
 
 Resource type
+
 
 ### -param Resource [out]
 
 Pointer to resultant resource memory.
 
+
 ### -param ResourceSize [out, optional]
 
 Pointer to ULONG value to receive the size of the resource.
 
+
 ## -returns
 STATUS_SUCCESS if successful, STATUS_INSUFFICIENT_RESOURCES if memory cannot be allocated, otherwise an appropriate error code.
+
 
 ## -remarks
 
@@ -92,6 +100,7 @@ STATUS_SUCCESS if successful, STATUS_INSUFFICIENT_RESOURCES if memory cannot be 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +111,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +122,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

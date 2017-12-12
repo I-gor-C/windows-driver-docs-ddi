@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 597b081f-d2ff-4e20-b352-2082f1ef4d45
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKS_DATAFORMAT_VBIINFOHEADER, *PKS_DATAFORMAT_VBIINFOHEADER, KS_DATAFORMAT_VBIINFOHEADER
+ms.keywords: tagKS_DATAFORMAT_VBIINFOHEADER, KS_DATAFORMAT_VBIINFOHEADER, *PKS_DATAFORMAT_VBIINFOHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KS_DATAFORMAT_VBIINFOHEADER structure describes a vertical blanking interval (VBI) stream.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct tagKS_DATAFORMAT_VBIINFOHEADER {
 
 Specifies the data format being proposed.
 
+
 ### -field VBIInfoHeader
 
 Describes VBI-specific information about the proposed connection.
 
+
 ## -remarks
 This structure is used when a connection to a VBI pin is being proposed.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,5 +93,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_VBIINFOHEADER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_set_radio_state.htm
 old-project: netvista
 ms.assetid: 4fe42397-1c95-4017-8d7b-14eda11c7b74
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WWAN_SET_RADIO_STATE, NDIS_WWAN_SET_RADIO_STATE, *PNDIS_WWAN_SET_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The NDIS_WWAN_SET_RADIO_STATE structure represents the power action to take on t
   radio.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ The header with type, revision, and size information about the NDIS_WWAN_SET_RAD
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -70,31 +72,39 @@ The header with type, revision, and size information about the NDIS_WWAN_SET_RAD
 <tr>
 <td>
 Type
+
 </td>
 <td>
 NDIS_OBJECT_TYPE_DEFAULT
+
 </td>
 </tr>
 <tr>
 <td>
 Revision
+
 </td>
 <td>
 NDIS_WWAN_SET_RADIO_STATE_REVISION_1
+
 </td>
 </tr>
 <tr>
 <td>
 Size
+
 </td>
 <td>
 sizeof(NDIS_WWAN_SET_RADIO_STATE)
+
 </td>
 </tr>
 </table>
  
+
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field RadioAction
 
@@ -102,6 +112,7 @@ A value from the
      <a href="netvista.wwan_radio">WWAN_RADIO</a> enumeration that represents the power
      action to take on the MB device's radio. The following table shows the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -110,39 +121,48 @@ A value from the
 <tr>
 <td>
 WwanRadioOn
+
 </td>
 <td>
 Turn on radio.
+
 </td>
 </tr>
 <tr>
 <td>
 WwanRadioOff
+
 </td>
 <td>
 Turn off radio.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -remarks
 This parameter allows Windows to turn the radio power on and off. Be aware that this affects only the 
     <b>SwRadioState</b> .
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,5 +182,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SET_RADIO_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SET_RADIO_STATE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

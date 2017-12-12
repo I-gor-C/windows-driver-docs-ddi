@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: fc24cdaf-0695-4e10-82be-a7f7a916f550
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -43,6 +43,7 @@ The
   <i>BthAllocateBrb</i>.
 
 
+
 ## -prototype
 
 ````
@@ -61,8 +62,10 @@ VOID BthFreeBrb(
 
 Pointer to the BRB to free.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 Profile drivers obtain a pointer to the 
@@ -71,11 +74,13 @@ Profile drivers obtain a pointer to the
     <a href="https://msdn.microsoft.com/56db29cd-26ab-4262-9b9f-40d46372ffe9">Querying for Bluetooth
     Interfaces</a> for more information about querying the Bluetooth driver stack.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,14 +91,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,9 +112,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

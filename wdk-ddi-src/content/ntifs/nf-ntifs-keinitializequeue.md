@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>KeInitializeQueue</b> routine initializes a queue object on which threads can wait for entries. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ VOID KeInitializeQueue(
 ### -param Queue [out]
 
 Pointer to a KQUEUE structure for which the caller must provide resident storage in nonpaged pool. This structure is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -80,52 +82,65 @@ Pointer to a KQUEUE structure for which the caller must provide resident storage
 <tr>
 <td>
 <b>Header</b>
+
 </td>
 <td>
 Queue header.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>EntryListHead</b>
+
 </td>
 <td>
 Pointer to the first entry in the queue.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>CurrentCount</b>
+
 </td>
 <td>
 Current number of threads waiting on the queue.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>MaximumCount</b>
+
 </td>
 <td>
 Maximum number of concurrent threads the queue can satisfy waits for.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>ThreadListHead</b>
+
 </td>
 <td>
 Pointer to the first entry in the thread list.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Count [in]
 
 The maximum number of threads for which the waits on the queue object can be satisfied concurrently. If this parameter is not supplied, the number of processors in the machine is used.
 
+
 ## -returns
 None
+
 
 ## -remarks
 Usually the caller of <b>KeInitializeQueue</b> also creates a set of dedicated threads to queue and dequeue its entries. Such a caller can specify an explicit <i>Count</i> to prevent too many of its dedicated threads from waiting concurrently on its queue object. 
@@ -134,11 +149,13 @@ Usually the caller of <b>KeInitializeQueue</b> also creates a set of dedicated t
 
 For more information about using driver-managed internal queues, see <a href="kernel.driver_managed_queues">Driver-Managed Queues</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,6 +166,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,6 +177,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -169,6 +188,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -179,9 +199,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -211,5 +233,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20KeInitializeQueue routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

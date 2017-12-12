@@ -7,7 +7,7 @@ old-location: netvista\miniportcocreatevc.htm
 old-project: netvista
 ms.assetid: 99eaba29-ce17-4e79-878e-5fdf7411e56c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   new VC is being created.
 
 
+
 ## -prototype
 
 ````
@@ -70,15 +71,18 @@ Specifies the handle to a miniport driver-allocated context area in which the mi
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param NdisVcHandle [in]
 
 Specifies a handle, supplied by NDIS, that uniquely identifies the VC being created. This handle
      is opaque to the miniport driver and reserved for NDIS library use.
 
+
 ### -param MiniportVcContext [out]
 
 Specifies, on output, a handle to a miniport driver-supplied context area in which the miniport
      driver maintains state about the VC.
+
 
 ## -returns
 <dl>
@@ -91,6 +95,7 @@ Specifies, on output, a handle to a miniport driver-supplied context area in whi
        it to operate on the new VC.
 
  
+
 
 ## -remarks
 <i>MiniportCoCreateVc</i> must be written as a synchronous function and cannot, under
@@ -120,11 +125,13 @@ The <b>MINIPORT_CO_CREATE_VC</b> function type is defined in the Ndis.h header f
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -132,11 +139,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>MiniportCoCreateVc (NDIS
    5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,9 +156,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -164,5 +175,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_CREATE_VC callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_CREATE_VC callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

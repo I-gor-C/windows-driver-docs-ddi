@@ -7,7 +7,7 @@ old-location: netvista\neighbor_offload_state_cached.htm
 old-project: netvista
 ms.assetid: 5dedffa8-9745-4668-8646-0e896942b9c8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NEIGHBOR_OFFLOAD_STATE_CACHED, NEIGHBOR_OFFLOAD_STATE_CACHED, *PNEIGHBOR_OFFLOAD_STATE_CACHED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,8 +39,10 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The NEIGHBOR_OFFLOAD_STATE_CACHED structure contains the cached variables of a neighbor state
   object.
+
 
 
 ## -syntax
@@ -66,9 +68,11 @@ An
      <b>RecognizedOptions</b> member of 
      <b>Header</b> is reserved.
 
+
 ### -field DlDestinationAddress
 
 Specifies the media access control (MAC) address of the next hop (neighbor).
+
 
 ### -field HostReachabilityDelta
 
@@ -77,6 +81,7 @@ The host stack's current time minus
      forward reachability in RFC 2461). For information about how the offload target uses this variable, see 
      <a href="netvista.ndismoffloadeventindicate">NdisMOffloadEventIndicate</a>. 
      <b>HostReachabilityDelta</b> is measured in units of clock ticks.
+
 
 ## -remarks
 Cached variables are owned and maintained by the host stack. An offload target must not change the
@@ -97,11 +102,13 @@ When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_CACHED structure is a
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the NEIGHBOR_OFFLOAD_STATE_CACHED structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NEIGHBOR_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NEIGHBOR_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

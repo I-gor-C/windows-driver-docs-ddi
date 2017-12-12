@@ -41,6 +41,7 @@ req.irql:
 The <b>CcFlushCache</b> routine flushes all or a portion of a cached file to disk.
 
 
+
 ## -syntax
 
 ````
@@ -59,33 +60,42 @@ VOID CcFlushCache(
 
 Pointer to a <b>SECTION_OBJECT_POINTERS</b> structure containing the file object's section object pointers.
 
+
 ### -param FileOffset [in, optional]
 
 Pointer to a variable that specifies the starting byte offset within the cached file where the data is to be flushed. 
+
 If <i>FileOffset</i> is <b>NULL</b>, the entire file is flushed from the cache.
+
 If <i>FileOffset</i> is not <b>NULL</b>, only the byte range specified by <i>FileOffset</i> and <i>Length</i> is flushed.
+
 
 ### -param Length [in]
 
 Length of the byte range to flush, starting at <i>FileOffset</i>. If <i>FileOffset</i> is <b>NULL</b>, <i>Length</i> is ignored.
 
+
 ### -param IoStatus [out, optional]
 
 Pointer to a structure that receives the final completion status and information about the flush operation. If the data is flushed successfully, <i>IoStatus.Status</i> contains STATUS_SUCCESS. If not all of the data is flushed successfully, <i>IoStatus.Information</i> contains the actual number of bytes that were flushed. Otherwise, <i>IoStatus.Information</i> contains the value  given in <i>Length</i>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>CcFlushCache</b> has no <i>Wait</i> parameter. Thus the caller must be able to enter a wait state until all the data has been flushed.
 
 To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +106,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +128,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -141,5 +154,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFlushCache routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

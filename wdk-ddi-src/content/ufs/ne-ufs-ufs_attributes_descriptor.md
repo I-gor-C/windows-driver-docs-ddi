@@ -7,7 +7,7 @@ old-location: storage\ufs_attributes_descriptor.htm
 old-project: storage
 ms.assetid: 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: UFS_ATTRIBUTES_DESCRIPTOR, UFS_ATTRIBUTES_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <b>UFS_ATTRIBUTES_DESCRIPTOR</b> describes the different types of attributes used by Universal Flash Storage (UFS) descriptors.
+
 
 
 ## -syntax
@@ -79,13 +80,16 @@ typedef enum _UFS_ATTRIBUTES_DESCRIPTOR {
 
 Indicates if the Boot Logical Unit Number(LUN) is enabled.
 
+
 ### -field UFS_Reserved01
 
 Reserved for future use.
 
+
 ### -field UFS_bCurrentPowerMode
 
 Indicates the current power mode. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -126,20 +130,24 @@ Indicates the current power mode. Contains one of the following values:
 </table>
  
 
+
 ### -field UFS_bActiveICCLevel
 
 Specifies the maximum
 current consumption allowed during
 Active Mode. Value ranges from 0x00 to 0x0F.
 
+
 ### -field UFS_bOutOfOrderDataEn
 
 Specifies if out-of-order data transfer is
 enabled
 
+
 ### -field UFS_bBackgroundOpStatus
 
 Specifies if the device has a need for background operations. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -164,9 +172,11 @@ Specifies if the device has a need for background operations. Contains one of th
 </table>
  
 
+
 ### -field UFS_bPurgeStatus
 
 Specifies the current purge operation's status.
+
 
 ### -field UFS_bMaxDataInSize
 
@@ -174,19 +184,23 @@ Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPI
 host only when all logical unit task queues are
 empty.
 
+
 ### -field UFS_bMaxDataOutSize
 
 Specifies the maximum data-out size. This parameter can be written by the
 host only when all logical unit task queues are
 empty.
 
+
 ### -field UFS_dDynCapNeeded
 
 Specifies the dynamic capacity need.
 
+
 ### -field UFS_bRefClkFreq
 
 Specifies the reference clock frequency value.
+
 <table>
 <tr>
 <th>Value</th>
@@ -211,14 +225,17 @@ Specifies the reference clock frequency value.
 </table>
  
 
+
 ### -field UFS_bConfigDescrLock
 
 Specifies if the configuration descriptor is locked.
+
 
 ### -field UFS_bMaxNumOfRTT
 
 Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
 allowed. This value can be set by the host.
+
 
 ### -field UFS_wExceptionEventControl
 
@@ -227,12 +244,14 @@ Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enab
 Information field, which is contained in
 the RESPONSE UPIU.
 
+
 ### -field UFS_wExceptionEventStatus
 
 Specifies a bitmap of each exception event status.A bit will be set only if the
 relevant event has occurred
 (regardless of the
 <b>UFS_wExceptionEventControl</b> status). Contains the following bits:
+
 <table>
 <tr>
 <th>Bit</th>
@@ -257,29 +276,36 @@ relevant event has occurred
 </table>
  
 
+
 ### -field UFS_dSecondsPassed
 
 Specifies the time passed in seconds.
+
 
 ### -field UFS_wContextConf
 
 Specifies the context attribute.
 
+
 ### -field UFS_Obsolete
 
 Obselete
+
 
 ### -field UFS_Reserved02
 
 Reserved for future use.
 
+
 ### -field UFS_Reserved03
 
 Reserved for future use.
 
+
 ### -field UFS_bDeviceFFUStatus
 
 Specifies the Device Field Firmware Update (FFU) status.
+
 <table>
 <tr>
 <th>Value</th>
@@ -316,9 +342,11 @@ Specifies the Device Field Firmware Update (FFU) status.
 </table>
  
 
+
 ### -field UFS_bPSAState
 
 Specifies the current Product State Awareness (PSA) State.
+
 <table>
 <tr>
 <th>Value</th>
@@ -356,11 +384,13 @@ is locked after it is in
 </table>
  
 
+
 ### -field UFS_dPSADataSize
 
 Specifies the amount of data that the host plans
 to load to all logical units with
 <b>bPSASensitive</b> set to 1.
+
 
 ## -remarks
 <b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
@@ -371,27 +401,33 @@ microcode activation event occurs.
 
 <b>UFS_bMaxDataInSize</b> is equal to <b>bMaxInBufferSize</b> when a UFS device is shipped. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -435,5 +471,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_ATTRIBUTES_DESCRIPTOR enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_ATTRIBUTES_DESCRIPTOR enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

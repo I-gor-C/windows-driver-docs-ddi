@@ -7,7 +7,7 @@ old-location: netvista\ndis_net_buffer_list_filtering_info.htm
 old-project: netvista
 ms.assetid: 992a4c77-e22f-4123-81e8-86c8030accfa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_NET_BUFFER_LIST_FILTERING_INFO, NDIS_NET_BUFFER_LIST_FILTERING_INFO, *PNDIS_NET_BUFFER_LIST_FILTERING_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_NET_BUFFER_LIST_FILTERING_INFO structure
@@ -41,6 +41,7 @@ req.irql: Any level
 The <b>NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure defines filtering information that is associated
   with a 
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+
 
 
 ## -syntax
@@ -71,10 +72,12 @@ typedef struct _NDIS_NET_BUFFER_LIST_FILTERING_INFO {
 
 A structure that contains the following members:
 
+
 ### -field FilterId
 
 A USHORT value that contains a receive filter identifier. The receive filter identifier is an
        integer from one to the number of receive filters that the network adapter supports. 
+
 <div class="alert"><b>Note</b>  Starting with NDIS 6.20, this member must be set to zero.</div>
 <div> </div>
 
@@ -82,11 +85,13 @@ A USHORT value that contains a receive filter identifier. The receive filter ide
 
 A union that contains the following members:
 
+
 ### -field QueueId
 
 A USHORT value that contains an identifier for a virtual machine  queue (VMQ) receive queue. The queue identifier is an integer between zero
        and the number of queues that the network adapter supports. A value of NDIS_DEFAULT_RECEIVE_QUEUE_ID specifies
      the default receive queue.
+
 <div class="alert"><b>Note</b>  Starting with Windows Server 2012, the value of this member must always be set to NDIS_DEFAULT_RECEIVE_QUEUE_ID  by miniport drivers that support the SR-IOV interface.</div>
 <div> </div>
 
@@ -95,6 +100,7 @@ A USHORT value that contains an identifier for a virtual machine  queue (VMQ) re
 A USHORT value that contains the identifier for a virtual port (VPort). A value of DEFAULT_VPORT_ID specifies the default VPort on the NIC switch. 
 
 The VPort with the specified VPortId value must have previously been created through a set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>.
+
 <div class="alert"><b>Note</b>  For the VMQ interface, this member must be set to NDIS_DEFAULT_VPORT_ID.</div>
 <div> </div>
 </dd>
@@ -107,6 +113,7 @@ The VPort with the specified VPortId value must have previously been created thr
 A PVOID type value that is in a union with the 
       <b>FilteringInfo</b> member. This member lets a driver access all the information in the
       <b>NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure as one PVOID value.
+
 
 ## -remarks
 Starting with NDIS 6.20, miniport drivers  use the <b>NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure to specify receive
@@ -126,19 +133,23 @@ To access the identifier values directly, use the
     <a href="netvista.net_buffer_list_receive_queue_id">
     NET_BUFFER_LIST_RECEIVE_QUEUE_ID</a> macros.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -172,5 +183,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_FILTERING_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_FILTERING_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

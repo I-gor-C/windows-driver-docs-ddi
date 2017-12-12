@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation.
 
 
+
 ## -syntax
 
 ````
@@ -60,26 +61,32 @@ typedef struct _STREAM_DATA_INTERSECT_INFO {
 
 Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.
 
+
 ### -field DataRange
 
 Pointer to the data ranges to be examined for a match.
+
 
 ### -field DataFormatBuffer
 
 Pointer to the buffer the minidriver fills in with the matching data format.
 
+
 ### -field SizeOfDataFormatBuffer
 
 Specifies the size in bytes of the <b>DataFormatBuffer</b>.
 
+
 ## -remarks
 The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

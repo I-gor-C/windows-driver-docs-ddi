@@ -41,6 +41,7 @@ req.irql:
 The <b>KsValidateAllocatorCreateRequest</b> function validates an IRP_MJ_CREATE request as an allocator request and returns the create structure associated with the request on success.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS KsValidateAllocatorCreateRequest(
 
 Specifies the IRP with the IRP_MJ_CREATE request being validated.
 
+
 ### -param AllocatorFraming [out]
 
 Caller-defined pointer that on successful completion contains an address to the framing structure supplied with the request.
 
+
 ## -returns
 The <b>KsValidateAllocatorCreateRequest</b> function returns STATUS_SUCCESS if successful, or an error if the allocator request is not valid.
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ The <b>KsValidateAllocatorCreateRequest</b> function returns STATUS_SUCCESS if s
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

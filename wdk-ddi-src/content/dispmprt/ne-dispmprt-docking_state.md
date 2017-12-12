@@ -7,7 +7,7 @@ old-location: display\docking_state.htm
 old-project: display
 ms.assetid: 4e051d49-57ae-43c8-a894-a6c2c277dce9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DOCKING_STATE, DOCKING_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DOCKING_STATE enumeration is used to describe the state of a portable computer that can be attached to a docking station.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 Indicates that the portable computer does not support docking.
 
+
 ### -field DockStateUnDocked
 
 Indicates that the portable computer is not docked.
+
 
 ### -field DockStateDocked
 
 Indicates that the portable computer is docked.
 
+
 ### -field DockStateUnknown
 
 Indicates that the docking state of the portable computer is not known.
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ Indicates that the docking state of the portable computer is not known.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

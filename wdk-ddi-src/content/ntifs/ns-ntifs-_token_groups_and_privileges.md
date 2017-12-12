@@ -41,6 +41,7 @@ req.irql:
 TOKEN_GROUPS_AND_PRIVILEGES contains information about the group security identifiers (SIDs) and privileges in an access token.
 
 
+
 ## -syntax
 
 ````
@@ -65,41 +66,51 @@ typedef struct _TOKEN_GROUPS_AND_PRIVILEGES {
 
 Specifies the number of SIDs in the access token. 
 
+
 ### -field SidLength
 
 Specifies the length, in bytes, required to hold all of the user SIDs and the account SID for the group. 
+
 
 ### -field Sids
 
 A pointer to SID_AND_ATTRIBUTES structures that contain a set of SIDs and corresponding attributes. 
 
+
 ### -field RestrictedSidCount
 
 Specifies the number of the restricted SIDs included in the access token. 
+
 
 ### -field RestrictedSidLength
 
 Specifies the length, in bytes, required to hold all of the restricted SIDs. 
 
+
 ### -field RestrictedSids
 
 A pointer to <a href="ifsk.sid_and_attributes">SID_AND_ATTRIBUTES</a> structures that contain a set of restricted SIDs and corresponding attributes. 
+
 
 ### -field PrivilegeCount
 
 Specifies the number of privileges included in the access token. 
 
+
 ### -field PrivilegeLength
 
 Specifies the length, in bytes, needed to hold all of the privileges. 
+
 
 ### -field Privileges
 
 A pointer to <a href="ifsk.luid_and_attributes">LUID_AND_ATTRIBUTES</a> structures that contain a set of privileges. 
 
+
 ### -field AuthenticationId
 
 The locally unique identifier (LUID) of the authenticator of the token. 
+
 
 ## -remarks
 
@@ -109,6 +120,7 @@ The locally unique identifier (LUID) of the authenticator of the token.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -179,5 +191,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_GROUPS_AND_PRIVILEGES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

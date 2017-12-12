@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The POS_CX_ATTRIBUTES structure contains pointers to event callback functions implemented by the client driver.
+
 Use <a href="pos.pos_cx_attributes_init">POS_CX_ATTRIBUTES_INIT</a> to initialize this structure.
+
 
 
 ## -syntax
@@ -61,17 +63,21 @@ typedef struct _POS_CX_ATTRIBUTES {
 
 A pointer to an <a href="..\poscx\nc-poscx-evt_pos_cx_device_ownership_change.md">EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE</a> callback function.
 
+
 ### -field EvtDeviceRemoteClaim
 
 A pointer to an <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_claim.md">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a> callback function.
+
 
 ### -field EvtDeviceRemoteRelease
 
 A pointer to an <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_release.md">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a> callback function.
 
+
 ### -field EvtDeviceRemoteRetain
 
 A pointer to an <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_retain.md">EVT_POS_CX_DEVICE_REMOTE_RETAIN</a> callback function.
+
 
 ## -remarks
 
@@ -81,14 +87,17 @@ A pointer to an <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_retain.md">E
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,5 +117,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20POS_CX_ATTRIBUTES structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

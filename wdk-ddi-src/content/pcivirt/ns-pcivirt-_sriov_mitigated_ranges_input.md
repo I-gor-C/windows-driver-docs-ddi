@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure is the input buffer in the <a href="buses.ioctl_sriov_query_mitigated_ranges">IOCTL_SRIOV_QUERY_MITIGATED_RANGES</a> request to get the specific ranges on which intercepts must be placed.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _SRIOV_MITIGATED_RANGES_INPUT {
 
 Zero-based index of the virtual function from the first virtual function exposed by this physical function.
 
+
 ### -field BarNumber
 
 The number of BAR of the ranges of memory-mapped I/O space.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The number of BAR of the ranges of memory-mapped I/O space.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

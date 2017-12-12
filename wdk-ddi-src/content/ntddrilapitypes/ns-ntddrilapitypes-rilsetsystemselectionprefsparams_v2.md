@@ -7,8 +7,8 @@ old-location: netvista\rilsetsystemselectionprefsparams_v2.htm
 old-project: netvista
 ms.assetid: a480f376-c797-4cb8-99b1-bd7f3a3a2656
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS, RILSETSYSTEMSELECTIONPREFSPARAMS, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILSETSYSTEMSELECTIONPREFSPARAMS_V2 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndiswriteconfiguration.htm
 old-project: netvista
 ms.assetid: 63c94f4d-1c8c-43c2-ae58-993da42a80a4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisWriteConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   registry. This function must be invoked serially with respect to itself and the <a href="netvista.ndisreadconfiguration">NdisReadConfiguration</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -64,25 +65,31 @@ A pointer to a caller-supplied variable in which this function returns the statu
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The supplied value at 
        <i>ParameterValue</i> was written into the registry. If this is a new entry, the name at 
        <i>Keyword</i> also was written into the registry.
 
+
 ### -param NDIS_STATUS_NOT_SUPPORTED
 
 The supplied 
        <b>ParameterType</b> is invalid.
+
 
 ### -param NDIS_STATUS_RESOURCES
 
 NDIS could not allocate resources, usually enough memory, to transfer the requested information
        to the registry.
 
+
 ### -param NDIS_STATUS_FAILURE
 
 The requested information could not be written.
+
 </dd>
 </dl>
 
@@ -95,6 +102,7 @@ The handle to a registry key that was returned by the
      <a href="netvista.ndisopenconfigurationkeybyname">
      NdisOpenConfigurationKeyByName</a> function.
 
+
 ### -param Keyword [in]
 
 A pointer to an NDIS_STRING type describing a caller-supplied counted string, in the
@@ -103,14 +111,17 @@ A pointer to an NDIS_STRING type describing a caller-supplied counted string, in
      2000 and later, NDIS defines the NDIS_STRING type as a 
      <a href="kernel.unicode_string">UNICODE_STRING</a> type.
 
+
 ### -param ParameterValue [in]
 
 Pointer to a caller-supplied 
      <a href="netvista.ndis_configuration_parameter">
      NDIS_CONFIGURATION_PARAMETER</a> structure.
 
+
 ## -returns
 None
+
 
 ## -remarks
 If an entry of the same name as at 
@@ -143,11 +154,13 @@ For more information about setup and installation files for Windows 2000 and lat
     <a href="devinst.overview_of_device_and_driver_installation">Device Installation
     Overview</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -158,6 +171,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -165,11 +179,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisWriteConfiguration (NDIS
    5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -180,6 +196,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -190,14 +207,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -261,5 +281,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteConfiguration function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteConfiguration function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

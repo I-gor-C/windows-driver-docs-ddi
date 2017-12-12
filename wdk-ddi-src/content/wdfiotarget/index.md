@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfiotarget.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,11 +16,11 @@ Wdfiotarget.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function](nf-wdfiotarget-wdf-io-target-open-params-init-create-by-name.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying the name of the device, file, or device interface. |
-| [WDF_IO_TARGET_OPEN_PARAMS_INIT_EXISTING_DEVICE function](nf-wdfiotarget-wdf-io-target-open-params-init-existing-device.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_EXISTING_DEVICE function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so that the driver can open a remote I/O target by specifying a Windows Driver Model (WDM) device object. |
-| [WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function](nf-wdfiotarget-wdf-io-target-open-params-init-open-by-file.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying a filename. |
-| [WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME function](nf-wdfiotarget-wdf-io-target-open-params-init-open-by-name.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying the name of the device, file, or device interface. |
-| [WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function](nf-wdfiotarget-wdf-io-target-open-params-init-reopen.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can reopen a remote I/O target. |
+| [WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function](nf-wdfiotarget-wdf_io_target_open_params_init_create_by_name.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying the name of the device, file, or device interface. |
+| [WDF_IO_TARGET_OPEN_PARAMS_INIT_EXISTING_DEVICE function](nf-wdfiotarget-wdf_io_target_open_params_init_existing_device.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_EXISTING_DEVICE function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so that the driver can open a remote I/O target by specifying a Windows Driver Model (WDM) device object. |
+| [WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function](nf-wdfiotarget-wdf_io_target_open_params_init_open_by_file.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying a filename. |
+| [WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME function](nf-wdfiotarget-wdf_io_target_open_params_init_open_by_name.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying the name of the device, file, or device interface. |
+| [WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function](nf-wdfiotarget-wdf_io_target_open_params_init_reopen.md) | The WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can reopen a remote I/O target. |
 | [WdfIoTargetAllocAndQueryTargetProperty function](nf-wdfiotarget-wdfiotargetallocandquerytargetproperty.md) | The WdfIoTargetAllocAndQueryTargetProperty method allocates a buffer and retrieves a specified device property for a specified I/O target. |
 | [WdfIoTargetClose function](nf-wdfiotarget-wdfiotargetclose.md) | The WdfIoTargetClose method closes a specified remote I/O target. |
 | [WdfIoTargetCloseForQueryRemove function](nf-wdfiotarget-wdfiotargetcloseforqueryremove.md) | The WdfIoTargetCloseForQueryRemove method temporarily closes a specified remote I/O target because the target device might soon be removed. |
@@ -47,21 +52,21 @@ Wdfiotarget.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_IO_TARGET_QUERY_REMOVE callback](nc-wdfiotarget-evt-wdf-io-target-query-remove.md) | A driver's EvtIoTargetQueryRemove event callback function indicates whether the framework can safely remove a specified remote I/O target's device. |
-| [EVT_WDF_IO_TARGET_REMOVE_CANCELED callback](nc-wdfiotarget-evt-wdf-io-target-remove-canceled.md) | A driver's EvtIoTargetRemoveCanceled event callback function performs operations when the removal of a specified remote I/O target is canceled. |
-| [EVT_WDF_IO_TARGET_REMOVE_COMPLETE callback](nc-wdfiotarget-evt-wdf-io-target-remove-complete.md) | A driver's EvtIoTargetRemoveComplete event callback function performs operations when the removal of a specified remote I/O target is complete. |
+| [EVT_WDF_IO_TARGET_QUERY_REMOVE callback](nc-wdfiotarget-evt_wdf_io_target_query_remove.md) | A driver's EvtIoTargetQueryRemove event callback function indicates whether the framework can safely remove a specified remote I/O target's device. |
+| [EVT_WDF_IO_TARGET_REMOVE_CANCELED callback](nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md) | A driver's EvtIoTargetRemoveCanceled event callback function performs operations when the removal of a specified remote I/O target is canceled. |
+| [EVT_WDF_IO_TARGET_REMOVE_COMPLETE callback](nc-wdfiotarget-evt_wdf_io_target_remove_complete.md) | A driver's EvtIoTargetRemoveComplete event callback function performs operations when the removal of a specified remote I/O target is complete. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_IO_TARGET_OPEN_PARAMS structure](ns-wdfiotarget--wdf-io-target-open-params.md) | The WDF_IO_TARGET_OPEN_PARAMS structure contains parameters that the WdfIoTargetOpen method uses. |
+| [_WDF_IO_TARGET_OPEN_PARAMS structure](ns-wdfiotarget-_wdf_io_target_open_params.md) | The WDF_IO_TARGET_OPEN_PARAMS structure contains parameters that the WdfIoTargetOpen method uses. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_IO_TARGET_OPEN_TYPE enumeration](ne-wdfiotarget--wdf-io-target-open-type.md) | The WDF_IO_TARGET_OPEN_TYPE enumeration specifies how a driver identifies a remote I/O target when the driver calls WdfIoTargetOpen. |
-| [WDF_IO_TARGET_PURGE_IO_ACTION enumeration](ne-wdfiotarget--wdf-io-target-purge-io-action.md) | The WDF_IO_TARGET_PURGE_IO_ACTION enumeration identifies the actions that the framework can take when a driver calls WdfIoTargetPurge to purge an I/O target. |
-| [WDF_IO_TARGET_SENT_IO_ACTION enumeration](ne-wdfiotarget--wdf-io-target-sent-io-action.md) | The WDF_IO_TARGET_SENT_IO_ACTION enumeration identifies the actions that the framework can take when a driver calls WdfIoTargetStop to stop an I/O target. |
-| [WDF_IO_TARGET_STATE enumeration](ne-wdfiotarget--wdf-io-target-state.md) | The WDF_IO_TARGET_STATE enumeration specifies the states that an I/O target can be in. |
+| [_WDF_IO_TARGET_OPEN_TYPE enumeration](ne-wdfiotarget-_wdf_io_target_open_type.md) | The WDF_IO_TARGET_OPEN_TYPE enumeration specifies how a driver identifies a remote I/O target when the driver calls WdfIoTargetOpen. |
+| [_WDF_IO_TARGET_PURGE_IO_ACTION enumeration](ne-wdfiotarget-_wdf_io_target_purge_io_action.md) | The WDF_IO_TARGET_PURGE_IO_ACTION enumeration identifies the actions that the framework can take when a driver calls WdfIoTargetPurge to purge an I/O target. |
+| [_WDF_IO_TARGET_SENT_IO_ACTION enumeration](ne-wdfiotarget-_wdf_io_target_sent_io_action.md) | The WDF_IO_TARGET_SENT_IO_ACTION enumeration identifies the actions that the framework can take when a driver calls WdfIoTargetStop to stop an I/O target. |
+| [_WDF_IO_TARGET_STATE enumeration](ne-wdfiotarget-_wdf_io_target_state.md) | The WDF_IO_TARGET_STATE enumeration specifies the states that an I/O target can be in. |

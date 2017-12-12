@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 4223dd79-cac7-41bd-8c94-12baf8e8367a
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SCO_INDICATION_CODE, *PSCO_INDICATION_CODE, SCO_INDICATION_CODE
+ms.keywords: _SCO_INDICATION_CODE, SCO_INDICATION_CODE, *PSCO_INDICATION_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -44,6 +44,7 @@ The SCO_INDICATION_CODE enumeration type describes the type of an incoming SCO c
   <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>.
 
 
+
 ## -syntax
 
 ````
@@ -62,10 +63,12 @@ typedef enum _SCO_INDICATION_CODE {
 
 This value indicates that the profile driver should add one reference to its device object.
 
+
 ### -field ScoIndicationReleaseReference
 
 This value indicates that the profile driver can release one reference to its device
      object.
+
 
 ### -field ScoIndicationRemoteConnect
 
@@ -75,10 +78,12 @@ This value indicates to a profile driver that a remote device is trying to conne
      <a href="bltooth.brb_sco_open_channel_response">
      BRB_SCO_OPEN_CHANNEL_RESPONSE</a> request.
 
+
 ### -field ScoIndicationRemoteDisconnect
 
 This value indicates to a profile driver that a remote device is disconnecting from the local
      radio.
+
 
 ## -remarks
 
@@ -88,14 +93,17 @@ This value indicates to a profile driver that a remote device is disconnecting f
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +126,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SCO_INDICATION_CODE enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

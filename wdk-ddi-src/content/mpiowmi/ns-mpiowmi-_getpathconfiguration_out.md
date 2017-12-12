@@ -7,8 +7,8 @@ old-location: storage\getpathconfiguration_out.htm
 old-project: storage
 ms.assetid: 055db46e-59fc-4eb9-93d7-16d680495220
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _GetPathConfiguration_OUT, GetPathConfiguration_OUT, *PGetPathConfiguration_OUT
+ms.date: 12/8/2017
+ms.keywords: _GetPathConfiguration_OUT, *PGetPathConfiguration_OUT, GetPathConfiguration_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The GetPathConfiguration_OUT structure is used to report the output parameters that are associated with the GetPathConfiguration method.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _GetPathConfiguration_OUT {
 
 A 32-bitfield that indicates the number of entries contained in the array of SCSI addresses.
 
+
 ### -field Address
 
 An array that returns information about the SCSI addresses. The number of elements in the array is given by EntryCount and each element of the array represents an instance of an SCSI_ADDR structure.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ An array that returns information about the SCSI addresses. The number of elemen
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # PCMCIA bus drivers
 
+## -description
 Overview of the PCMCIA bus drivers technology.
 
 To develop PCMCIA bus drivers, you need these headers:

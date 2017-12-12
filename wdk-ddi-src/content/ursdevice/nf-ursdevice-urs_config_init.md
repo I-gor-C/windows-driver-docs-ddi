@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Initializes a <a href="buses.urs_config">URS_CONFIG</a> structure. 
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ FORCEINLINE void URS_CONFIG_INIT(
 
  A pointer to a <a href="buses.urs_config">URS_CONFIG</a> structure to initialize.
 
+
 ### -param HostInterfaceType [in]
 
  A <a href="buses.urs_host_interface_type">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of host controller that the dual-role controller implements.
+
 
 ### -param EvtUrsFilterRemoveResourceRequirements [in]
 
  A  pointer to a <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> callback function that is implemented by the  client driver.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -78,14 +83,17 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20URS_CONFIG_INIT function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

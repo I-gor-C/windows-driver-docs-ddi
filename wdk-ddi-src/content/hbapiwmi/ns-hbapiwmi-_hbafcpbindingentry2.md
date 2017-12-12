@@ -7,7 +7,7 @@ old-location: storage\hbafcpbindingentry2.htm
 old-project: storage
 ms.assetid: 75de51b1-063b-49b2-a390-2bafd44e04b0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _HBAFCPBindingEntry2, *PHBAFCPBindingEntry2, HBAFCPBindingEntry2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The HBAFCPBindingEntry2 structure defines a binding between the information that uniquely identifies a logical unit for the operating system and the fibre channel protocol (FCP) identifier for the logical unit.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct _HBAFCPBindingEntry2 {
 ### -field Type
 
 Indicates the binding type. For a description of the values that this member can have, see the T11 committee's <i>Fibre Channel HBA API</i> specification. 
+
 <table>
 <tr>
 <th>Type Value</th>
@@ -66,58 +68,73 @@ Indicates the binding type. For a description of the values that this member can
 <tr>
 <td>
 HBA_BIND_TO_D_ID
+
 </td>
 <td>
 Indicates that the target is identified by its fibre channel protocol (FCP) ID. The <b>Fcid</b> member of the <a href="storage.hbafcpid">HBAFCPID</a> structure contains this value.
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_BIND_TO_WWPN
+
 </td>
 <td>
 Indicates that the target is identified by its worldwide port name. The <b>PortWWN</b> member of the <a href="storage.hbafcpid">HBAFCPID</a> structure contains this value.
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_BIND_TO_WWNN
+
 </td>
 <td>
 Indicates that the fibre channel target device is identified by its worldwide node name. The <b>NodeWWN</b> member of the <a href="storage.hbafcpid">HBAFCPID</a> structure contains this value.
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_BIND_TO_LUID
+
 </td>
 <td>
 Indicates that the target is identified by its fibre channel logical unit ID. The <b>FcpLun</b> member of the <a href="storage.hbafcpid">HBAFCPID</a> structure contains this value.
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_BIND_TARGETS
+
 </td>
 <td>
 Indicates that the system should automatically generate target mappings from logical unit numbers to fibre channel protocol identifiers. 
+
 </td>
 </tr>
 </table>
  
+
 For information about what needs to be included to use the symbols that represent the binding types, see the Headers section.
+
 
 ### -field FCPId
 
 Contains a structure of type <a href="storage.hbafcpid">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.
 
+
 ### -field Luid[256]
 
 Contains the logical unit descriptor for the device that the operating system derives from SCSI inquiry data. 
 
+
 ### -field ScsiId
 
 Contains a structure of type <a href="storage.hbascsiid">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system.
+
 
 ## -remarks
 This structure is very similar to the <a href="storage.hbafcpbindingentry">HBAFCPBindingEntry</a> structure. The only difference is that HBAFCPBindingEntry2 includes the number that the operating system generates for the logical unit. 
@@ -126,11 +143,13 @@ The WMI tool suite generates a declaration of HBAFCPBindingEntry2 automatically 
 
 For an explanation of the fibre channel protocol (FCP), see the T11 committee's <i>dpANS Fibre Channel Protocol for SCSI</i> specification. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,5 +169,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBAFCPBindingEntry2 structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBAFCPBindingEntry2 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

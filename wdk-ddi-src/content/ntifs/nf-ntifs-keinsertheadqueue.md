@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>KeInsertHeadQueue</b> routine inserts an entry at the head of the given queue if it cannot immediately use the entry to satisfy a thread wait. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ LONG KeInsertHeadQueue(
 ### -param Queue [in, out]
 
 Pointer to an initialized queue object for which the caller provides resident storage in nonpaged pool. This structure is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -80,52 +82,65 @@ Pointer to an initialized queue object for which the caller provides resident st
 <tr>
 <td>
 <b>Header</b>
+
 </td>
 <td>
 Queue header
+
 </td>
 </tr>
 <tr>
 <td>
 <b>EntryListHead</b>
+
 </td>
 <td>
 Pointer to the first entry in the queue
+
 </td>
 </tr>
 <tr>
 <td>
 <b>CurrentCount</b>
+
 </td>
 <td>
 Number of entries in the queue
+
 </td>
 </tr>
 <tr>
 <td>
 <b>MaximumCount</b>
+
 </td>
 <td>
 Maximum number of entries the queue can contain
+
 </td>
 </tr>
 <tr>
 <td>
 <b>ThreadListHead</b>
+
 </td>
 <td>
 Pointer to the first entry in the thread list
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Entry [in, out]
 
 Pointer to the queue entry that is to be inserted. This pointer must be a resident system-space address. 
 
+
 ## -returns
 <b>KeInsertHeadQueue</b> returns the previous signal state of the given queue. If it was set to zero (not signaled) before <b>KeInsertHeadQueue</b> was called, <b>KeInsertHeadQueue</b> returns zero, meaning that no entries were queued. If it was nonzero (signaled), <b>KeInsertHeadQueue</b> returns the number of entries that were queued before <b>KeInsertHeadQueue</b> was called. 
+
 
 ## -remarks
 Entries to be queued by <b>KeInsertHeadQueue</b> must be allocated from nonpaged pool. For example, memory for caller-defined entries can be allocated with <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>. If the caller allocates entries of a fixed size, creating a lookaside list with <a href="kernel.exinitializenpagedlookasidelist">ExInitializeNPagedLookasideList</a> and allocating from it with <a href="kernel.exallocatefromnpagedlookasidelist">ExAllocateFromNPagedLookasideList</a> is more efficient than making frequent calls to <b>ExAllocatePoolWithTag</b>, particularly for entries whose size is not a multiple of PAGE_SIZE. 
@@ -136,11 +151,13 @@ If no threads are currently waiting on the queue object when <b>KeInsertHeadQueu
 
 For more information about using driver-managed internal queues, see <a href="kernel.driver_managed_queues">Driver-Managed Queues</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -151,6 +168,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -161,6 +179,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -171,6 +190,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -181,9 +201,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -210,5 +232,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20KeInsertHeadQueue routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

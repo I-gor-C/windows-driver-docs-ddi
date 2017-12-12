@@ -7,7 +7,7 @@ old-location: netvista\rilrequestgeolocationdataparammask.htm
 old-project: netvista
 ms.assetid: 86b89336-56f9-4665-a0d3-37dc6ec6c377
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILREQUESTGEOLOCATIONDATAPARAMMASK, RILREQUESTGEOLOCATIONDATAPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef enum _RILREQUESTGEOLOCATIONDATAPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

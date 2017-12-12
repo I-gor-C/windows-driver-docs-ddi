@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinfoparammask.htm
 old-project: netvista
 ms.assetid: 70e0f22c-14d4-43e6-bfb6-66523706ba52
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMESSAGEINFOPARAMMASK, RILMESSAGEINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef enum _RILMESSAGEINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

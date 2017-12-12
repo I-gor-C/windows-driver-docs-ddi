@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ typedef struct tag_video_geterrortext_parms {
 
 Specifies the error number to identify.
 
-### -field lpText
-
-Specifies the text buffer to fill.
 
 ### -field lpText
 
 Specifies the text buffer to fill.
+
+
+### -field lpText
+
+Specifies the text buffer to fill.
+
 
 ### -field dwLength
 
 Specifies the size of the text buffer in characters.
+
 
 ## -remarks
 
@@ -82,6 +87,7 @@ Specifies the size of the text buffer in characters.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

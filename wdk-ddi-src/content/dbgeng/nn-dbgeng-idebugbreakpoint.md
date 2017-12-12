@@ -7,7 +7,7 @@ old-location: debugger\idebugbreakpoint.htm
 old-project: debugger
 ms.assetid: ad4bcabb-304e-4427-9b0d-2e22429e8cdd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -98,6 +98,7 @@ Sets the number of times that the target must reach the breakpoint location befo
 
  
 
+
 ## -members
 The <b>IDebugBreakpoint</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -111,6 +112,7 @@ The <b>IDebugBreakpoint</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Adds flags to a breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -119,6 +121,7 @@ Adds flags to a breakpoint.
 </td>
 <td align="left" width="63%">
 Returns the client that owns the breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -128,6 +131,7 @@ Returns the client that owns the breakpoint.
 <td align="left" width="63%">
 Returns the command string that is executed when a breakpoint is triggered.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -136,6 +140,7 @@ Returns the command string that is executed when a breakpoint is triggered.
 </td>
 <td align="left" width="63%">
 Returns the remaining number of times that the target must reach the breakpoint location before the breakpoint is triggered.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -144,6 +149,7 @@ Returns the remaining number of times that the target must reach the breakpoint 
 </td>
 <td align="left" width="63%">
 Returns the parameters for a processor breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -152,6 +158,7 @@ Returns the parameters for a processor breakpoint.
 </td>
 <td align="left" width="63%">
 Returns the flags for a breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -160,6 +167,7 @@ Returns the flags for a breakpoint.
 </td>
 <td align="left" width="63%">
 Returns a breakpoint ID, which is the engine's unique identifier for a breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -169,6 +177,7 @@ Returns a breakpoint ID, which is the engine's unique identifier for a breakpoin
 <td align="left" width="63%">
 Returns the engine thread ID of the thread that can trigger a breakpoint.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -177,6 +186,7 @@ Returns the engine thread ID of the thread that can trigger a breakpoint.
 </td>
 <td align="left" width="63%">
 Returns the location that triggers a breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -186,6 +196,7 @@ Returns the location that triggers a breakpoint.
 <td align="left" width="63%">
 Returns the expression string that evaluates to the location that triggers a breakpoint.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -194,6 +205,7 @@ Returns the expression string that evaluates to the location that triggers a bre
 </td>
 <td align="left" width="63%">
 Returns the parameters for a breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -202,6 +214,7 @@ Returns the parameters for a breakpoint.
 </td>
 <td align="left" width="63%">
 Returns the number of times that the target was originally required to reach the breakpoint location before the breakpoint is triggered.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -210,6 +223,7 @@ Returns the number of times that the target was originally required to reach the
 </td>
 <td align="left" width="63%">
 Returns the type of the breakpoint and the type of the processor that a breakpoint is set for.
+
 
 </td>
 </tr>
@@ -220,6 +234,7 @@ Returns the type of the breakpoint and the type of the processor that a breakpoi
 <td align="left" width="63%">
 Removes flags from a breakpoint.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -229,6 +244,7 @@ Removes flags from a breakpoint.
 <td align="left" width="63%">
 Sets the command that is executed when a breakpoint is triggered.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -237,6 +253,7 @@ Sets the command that is executed when a breakpoint is triggered.
 </td>
 <td align="left" width="63%">
 Sets the parameters for a processor breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -245,6 +262,7 @@ Sets the parameters for a processor breakpoint.
 </td>
 <td align="left" width="63%">
 Sets the flags for a breakpoint.
+
 
 </td>
 </tr>
@@ -255,6 +273,7 @@ Sets the flags for a breakpoint.
 <td align="left" width="63%">
 Sets the engine thread ID of the thread that can trigger a breakpoint.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -263,6 +282,7 @@ Sets the engine thread ID of the thread that can trigger a breakpoint.
 </td>
 <td align="left" width="63%">
 Sets the location that triggers a breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -272,6 +292,7 @@ Sets the location that triggers a breakpoint.
 <td align="left" width="63%">
 Sets an expression string that evaluates to the location that triggers a breakpoint.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -280,6 +301,7 @@ Sets an expression string that evaluates to the location that triggers a breakpo
 </td>
 <td align="left" width="63%">
 Sets the number of times that the target must reach the breakpoint location before the breakpoint is triggered.
+
 
 </td>
 </tr>
@@ -337,14 +359,17 @@ Sets the number of times that the target must reach the breakpoint location befo
 
  
 
+
 ## -remarks
 Although <b>IDebugBreakpoint</b> implements the <b>IUnknown</b> interface, the <b>IUnknown::AddRef</b> and <b>IUnknown::Release</b> methods are not used to control the lifetime of the breakpoint. Instead, an <b>IDebugBreakpoint</b> object is deleted after the method <a href="debugger.removebreakpoint">RemoveBreakpoint</a> is called.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -361,5 +386,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugBreakpoint interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugBreakpoint interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

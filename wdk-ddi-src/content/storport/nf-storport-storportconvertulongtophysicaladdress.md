@@ -7,7 +7,7 @@ old-location: storage\storportconvertulongtophysicaladdress.htm
 old-project: storage
 ms.assetid: 772ca60b-a957-47de-b95d-486497b295ce
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortConvertUlongToPhysicalAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortConvertUlongToPhysicalAddress</b> routine converts an unsigned long address into a physical address.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ STORPORT_API STOR_PHYSICAL_ADDRESS StorPortConvertUlongToPhysicalAddress(
 ### -param UlongAddress [in]
 
 Contains the address to be converted.
+
 
 ## -returns
 The <b>StorPortConvertUlongToPhysicalAddress</b> routine returns the physical address that corresponds to the unsigned long address that the caller passed in.
@@ -76,6 +78,7 @@ StorPortConvertPhysicalAddressToULong64 uses <b>STOR_PHYSICAL_ADDRESS</b> to rep
 
 StorPortConvertPhysicalAddressToULong64 uses <b>STOR_PHYSICAL_ADDRESS</b> to represent physical addresses.
 
+
 ## -remarks
 <b>StorPortConvertUlongToPhysicalAddress</b> uses <b>STOR_PHYSICAL_ADDRESS</b> to represent physical addresses.
 
@@ -93,11 +96,13 @@ Specifies an address value of type STOR_PHYSICAL_ADDRESS.
 
 <a id="Return_value"></a><a id="return_value"></a><a id="RETURN_VALUE"></a>Return value
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +113,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +124,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

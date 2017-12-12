@@ -39,12 +39,16 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IMiniportWavePci</code> interface is the primary interface that is exposed by the miniport driver for a WavePci audio device. The WavePci port driver communicates with the miniport driver through this interface. The adapter driver creates the WavePci miniport object and passes the object's <b>IMiniportPci</b> interface pointer to the WavePci port driver's <a href="audio.iport_init">IPort::Init</a> method (see code example in <a href="https://msdn.microsoft.com/e4ba1209-adc6-48c3-9633-247e9e3849bc">Subdevice Creation</a>). <code>IMiniportWavePci</code> inherits from the <a href="..\portcls\nn-portcls-iminiport.md">IMiniport</a> interface.
+
 An adapter driver forms a miniport/port driver pair by binding an <code>IMiniportWavePci</code> object to an <a href="audio.iportwavepci">IPortWavePci</a> object. The PortCls system driver registers this pair with the system as a <a href="https://msdn.microsoft.com/9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b">wave filter</a>.
+
 The <code>IMiniportWavePci</code> interface provides a method for initializing the miniport object, a method for creating a miniport stream object, and a method for notifying the miniport driver of a service request. The stream object is associated with a pin on the WavePci filter, which the adapter driver forms by binding the miniport object with the port object.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWavePci</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -54,6 +58,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWavePci</b> interfac
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

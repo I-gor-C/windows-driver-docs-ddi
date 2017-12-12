@@ -41,6 +41,7 @@ req.irql:
 The TRANSPORTVIDEOPARMS structure is defined but not presently used. It may be used in the future.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct tagTRANSPORTVIDEOPARMS {
 
 Specifies the video output mode. For example ED_PLAYBACK.
 
+
 ### -field Input
 
 Specifies the video input to use. For example, specify zero to use the first (zeroth) video input.
 
+
 ## -remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

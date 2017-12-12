@@ -40,7 +40,9 @@ req.irql:
 ## -description
 The <b>IOCTL_HID_GET_DRIVER_CONFIG</b> 
    request retrieves the driver configuration.
+
 This IOCTL is reserved for system use.
+
 
 
 ## -ioctlparameters
@@ -83,6 +85,7 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

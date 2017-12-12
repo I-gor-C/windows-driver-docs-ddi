@@ -8,7 +8,7 @@ old-project: SD
 ms.assetid: 7c49c394-d0b3-4594-a623-0a13825bdcec
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR
+ms.keywords: _SDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The SDCMD_DESCRIPTOR structure defines a Secure Digital (SD) card command.
 
 
+
 ## -syntax
 
 ````
@@ -60,10 +61,13 @@ typedef struct _SDCMD_DESCRIPTOR {
 ### -field Cmd
 
 Contains a value of type SD_COMMAND_CODE that specifies the SD command.
+
 <ul>
 <li>SDCMD_IO_RW_DIRECTIndicates a read or write operation of a single byte.
+
 </li>
 <li>SDCMD_IO_RW_EXTENDEDIndicates a read or write operation on a buffer in memory.
+
 </li>
 </ul>
 
@@ -71,19 +75,24 @@ Contains a value of type SD_COMMAND_CODE that specifies the SD command.
 
 Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538003">SD_COMMAND_CLASS</a>
 
+
 that specifies the class of the SD command.
+
 
 ### -field TransferDirection
 
 Contains an enumeration value of type <a href="https://msdn.microsoft.com/1e821ca5-ff65-48a1-be5c-6d776c61f166">SD_TRANSFER_DIRECTION</a> that indicates the direction of the data transfer.
 
+
 ### -field TransferType
 
 Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538045">SD_TRANSFER_TYPE</a> that indicates the type of the data transfer.
 
+
 ### -field ResponseType
 
 Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a> that indicates the type of response that the card sends in response to the command indicated in the <b>Cmd</b> member.
+
 
 ## -remarks
 To send a command to an SD device, a device driver must complete the following steps:
@@ -96,11 +105,13 @@ Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACK
 
 If a driver submits a command request without properly initializing the <b>TransferDirection</b>, <b>TransferType</b>, and <b>ResponseType</b> members of the command descriptor, the request will fail. These members cannot be 0.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,5 +149,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SDCMD_DESCRIPTOR structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

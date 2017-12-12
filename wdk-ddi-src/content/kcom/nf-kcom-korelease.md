@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <i>This function is intended for internal use only.</i>
+
 The <b>KoRelease</b> function decrements the reference count for the calling interface on an object. 
+
 
 
 ## -syntax
@@ -57,8 +59,10 @@ void KoRelease(
 
 The CLSID of the object whose reference count will be decremented.
 
+
 ## -returns
 None
+
 
 ## -remarks
 
@@ -68,6 +72,7 @@ None
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +83,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +94,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

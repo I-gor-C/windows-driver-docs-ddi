@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>KsForwardAndCatchIrp</b> function forwards an IRP to the specified driver after initializing the next stack location, and regains control of the IRP on completion from that driver. The function is used with devices that can be stacked and do not use file objects to communicate.
+
 If a file object is being used, the caller must initialize the current stack location with that file object before calling the <b>KsForwardAndCatchIrp</b> function. The function verifies that there is a new stack location to copy into before attempting to do so. If there is not a new stack location, the function returns STATUS_INVALID_DEVICE_REQUEST. Regardless of whether a new stack location is present, the IRP is not completed.
+
 
 
 ## -syntax
@@ -60,20 +62,25 @@ NTSTATUS KsForwardAndCatchIrp(
 
 Specifies the device to forward the IRP to.
 
+
 ### -param Irp  [in]
 
 Specifies the IRP that is being forwarded to the specified driver.
+
 
 ### -param FileObject  [in]
 
 Specifies a file object value to copy to the next stack location. This can be <b>NULL</b> in order to set no file object, but the value is always copied to the next stack location. If the current file object is to be preserved, it must be passed in this parameter. 
 
+
 ### -param StackUse  [in]
 
 Specifies a value enumerated by KSSTACK_USE. If the value is <i>KsStackCopyToNewLocation</i>, the parameters are copied to the next stack location. If the value is <i>KsStackReuseCurrentLocation</i>, the current stack location is reused when the IRP is forwarded and the stack location is returned to the current location. If the value is <i>KsStackUseNewLocation</i>, the new stack location is used as is.
 
+
 ## -returns
 The <b>KsForwardAndCatchIrp</b> function returns the result of the <b>IoCallDriver</b>, or it returns an invalid status if no more stack depth is available.
+
 
 ## -remarks
 The type KSSTACK_USE enumeration specifies how the IRP stack is used when forwarding the IRP to the next driver.
@@ -90,11 +97,13 @@ KsStackUseNewLocation
 
 Indicates that the next stack location is to be used without modification.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +114,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

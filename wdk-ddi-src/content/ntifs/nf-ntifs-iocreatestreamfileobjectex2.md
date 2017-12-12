@@ -41,6 +41,7 @@ req.irql: PASSIVE
 The <b>IoCreateStreamFileObjectEx2</b> routine creates a new stream file object with create options for a target device object. 
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ PFILE_OBJECT IoCreateStreamFileObjectEx(
 ### -param CreateOptions [in]
 
 Pointer a <b>IO_CREATE_STREAM_FILE_OPTIONS</b> structure containing the create options for the new stream file object.  <b>IO_CREATE_STREAM_FILE_OPTIONS</b> is defined in <i>ntifs.h</i> as the following.
+
 <pre class="syntax" xml:space="preserve"><code>typedef struct _IO_CREATE_STREAM_FILE_OPTIONS {
     USHORT Size;
     USHORT Flags;
@@ -67,13 +69,17 @@ Pointer a <b>IO_CREATE_STREAM_FILE_OPTIONS</b> structure containing the create o
 </code></pre>
 
 
+
 ### -param Size
 
 Size of the stream options structure. Set to <b>sizeof</b>(IO_CREATE_STREAM_FILE_OPTIONS).
 
+
 ### -param Flags
 
 The flags for the stream file create options. This value can be one of the following.
+
+
 
 <table>
 <tr>
@@ -83,28 +89,34 @@ The flags for the stream file create options. This value can be one of the follo
 <tr>
 <td width="40%">
 <a id="IO_CREATE_STREAM_FILE_RAISE_ON_ERROR"></a><a id="io_create_stream_file_raise_on_error"></a>IO_CREATE_STREAM_FILE_RAISE_ON_ERROR
+
 </td>
 <td width="60%">
 On an error condition, <b>IoCreateStreamFileObjectEx2</b> will raise the error
         status as an exception instead of returning it.  This flag is specified to maintain error status behavior of the other stream file object creation routines.
+
 </td>
 </tr>
 <tr>
 <td width="40%">
 <a id="IO_CREATE_STREAM_FILE_LITE"></a><a id="io_create_stream_file_lite"></a>IO_CREATE_STREAM_FILE_LITE
+
 </td>
 <td width="60%">
 A file object is created with out a file handle. No close operation is sent for the file object when it is deleted.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -param TargetDeviceObject
 
 A pointer to the device object to set as the target for operations on the file
         handle.  <b>TargetDeviceObject</b> must be in the same device stack as <i>DeviceObject</i> parameter.  This
         member is optional.
+
 </dd>
 </dl>
 
@@ -112,20 +124,25 @@ A pointer to the device object to set as the target for operations on the file
 
 Pointer to the file object to which the new stream file is related. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param DeviceObject [in, optional]
 
 Pointer to a device object for the device on which the stream file is to be opened. If the caller specifies a non-<b>NULL</b> value for <i>FileObject</i>, the value of <i>DeviceObject</i> is ignored. Otherwise, the caller must specify a non-<b>NULL</b> value for <i>DeviceObject</i>. 
+
 
 ### -param StreamFileObject [out]
 
 Pointer to a device object pointer to receive the stream fille object.
 
+
 ### -param FileHandle [out, optional]
 
 A pointer to a file handle for the stream on output. This parameter is optional and can be <b>NULL</b>. 
 
+
 ## -returns
 <b>IoCreateStreamFileObjectEx2</b> returns a pointer to the newly created stream file object.
+
 
 ## -remarks
 File systems call <b>IoCreateStreamFileObjectEx2</b> to create a new stream file object. A <i>stream file object</i> is identical to an ordinary file object, except that the<b> FO_STREAM_FILE</b> file object flag is set.
@@ -140,11 +157,13 @@ File system filter driver writers should note that <b>IoCreateStreamFileObjectEx
 
 If a pool allocation failure occurs, <b>IoCreateStreamFileObjectEx2</b> raises a <b>STATUS_INSUFFICIENT_RESOURCES</b> exception.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +174,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,6 +195,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -183,6 +206,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -193,9 +217,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE
+
 </td>
 </tr>
 </table>
@@ -225,5 +251,8 @@ PASSIVE
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateStreamFileObjectEx2 routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

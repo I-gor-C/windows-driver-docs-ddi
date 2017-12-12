@@ -7,8 +7,8 @@ old-location: storage\msfc_portevent.htm
 old-project: storage
 ms.assetid: bf9e2d58-9379-4b88-9043-580a97ec7cd9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MSFC_PortEvent, MSFC_PortEvent, *PMSFC_PortEvent
+ms.date: 12/8/2017
+ms.keywords: _MSFC_PortEvent, *PMSFC_PortEvent, MSFC_PortEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 A WMI provider uses the MSFC_PortEvent structure to report port events for the indicated adapter.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _MSFC_PortEvent {
 
 Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="storage.event_types_qualifiers">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.
 
+
 ### -field FabricPortId
 
 Contains the fabric port ID. 
 
+
 ### -field PortWWN
 
 Contains the worldwide name that indicates the port for which the event occurred. 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Contains the worldwide name that indicates the port for which the event occurred
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,5 +95,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSFC_PortEvent structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSFC_PortEvent structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

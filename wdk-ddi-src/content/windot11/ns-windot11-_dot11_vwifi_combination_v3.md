@@ -7,7 +7,7 @@ old-location: netvista\dot11_vwifi_combination_v3.htm
 old-project: netvista
 ms.assetid: 65A397AE-B835-4043-9A81-24055901310B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_VWIFI_COMBINATION_V3, *PDOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,6 +59,7 @@ typedef struct _DOT11_VWIFI_COMBINATION_V3 {
 ### -field Header
 
 The type, revision, and size of the <b>DOT11_VWIFI_COMBINATION_V3</b> structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -79,42 +80,52 @@ The type, revision, and size of the <b>DOT11_VWIFI_COMBINATION_V3</b> structure.
 </table>
  
 
+
 ### -field uNumInfrastructure
 
 The number of 802.11 infrastructure stations supported.
+
 
 ### -field uNumAdhoc
 
 The number of adhoc stations supported.
 
+
 ### -field uNumSoftAP
 
 The number of soft access point stations supported.
+
 
 ### -field uNumVirtualStation
 
 The number of virtual stations supported.
 
+
 ### -field uNumWFDGroup
 
 The number of simultaneous operational Wi-Fi Direct (WFD) groups supported.
 
+
 ## -remarks
 When <b>uNumWFDGroup</b> &gt; 0, the miniport driver is required to support one more 802.11 MAC entity in addition to the number in <b>uNumWFDGroup</b>. This additional entity is used for WFD device functionality and is the only entity configured as <b>DOT11_OPERATION_MODE_WFD_DEVICE</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
  Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

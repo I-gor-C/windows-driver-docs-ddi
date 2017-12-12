@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_mac_info.htm
 old-project: netvista
 ms.assetid: C55DC50B-5A1B-496E-BBB8-8EB94A9CFD2F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WWAN_MAC_INFO, *PNDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NDIS_WWAN_MAC_INFO structure represents NDIS port information for a PDP context.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _NDIS_WWAN_MAC_INFO {
 
 Reserved. Do not use.
 
+
 ### -field uNdisPortNumber
 
 The number of the NDIS port. This value is an NDIS_PORT_NUMBER value, which has a ULONG data type and is valid from zero through 0xffffff, where zero is reserved for the default port.
 
+
 ### -field MacAddr
 
 The NDIS port of the PDP context.
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ The NDIS port of the PDP context.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8.1 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

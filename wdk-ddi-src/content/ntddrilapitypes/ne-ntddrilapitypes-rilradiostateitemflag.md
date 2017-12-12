@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitemflag.htm
 old-project: netvista
 ms.assetid: dcbd0b16-4960-4cc1-b76b-6d971ba6a192
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILRADIOSTATEITEMFLAG, RILRADIOSTATEITEMFLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef enum _RILRADIOSTATEITEMFLAG {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

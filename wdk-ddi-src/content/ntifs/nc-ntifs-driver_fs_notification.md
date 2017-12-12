@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A PDRIVER_FS_NOTIFICATION-typed routine is called by the operating system when a file system registers or unregisters itself by using <a href="ifsk.ioregisterfilesystem">IoRegisterFileSystem</a> or <a href="ifsk.iounregisterfilesystem">IoUnregisterFileSystem</a>.
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ VOID  DriverNotificationRoutine(
 
 A pointer to a file system device object for which the notification was called.
 
+
 ### -param FsActive [in]
 
 A Boolean value that indicates whether the file system has registered (TRUE) or unregistered (FALSE) itself as an active file system.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 You must declare the callback function by using the <i>DRIVER_FS_NOTIFICATION</i> type. For more information, see the following Example section.
@@ -76,11 +80,13 @@ And then implement your callback routine as follows:
 
 Note that the callback type is declared in <i>Ntifs.h</i> as follows:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +97,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 2000 and later versions of the Windows operating system. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,9 +118,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -132,5 +143,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PDRIVER_FS_NOTIFICATION routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

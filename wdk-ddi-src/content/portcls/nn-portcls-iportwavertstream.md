@@ -39,9 +39,13 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPortWaveRTStream</code> interface is supported in Windows Vista and later operating systems, and it is a stream-specific interface that provides helper methods for use by the <a href="https://msdn.microsoft.com/154dc921-424f-4021-8f17-5482ceef99a8">WaveRT miniport driver</a>. The miniport driver calls the methods to perform allocation and mapping of cyclic buffers for audio data. The WaveRT port driver implements this interface. The port driver gives an <code>IPortWaveRTStream</code> object reference to each miniport driver stream object that it creates. <code>IPortWaveRTStream</code> inherits from the <b>IUnknown</b> interface.
+
 An audio stream is associated with each pin instance on a WaveRT filter. The adapter driver forms the filter by binding the WaveRT port and miniport drivers. When the port driver calls the <a href="audio.iminiportwavert_newstream">IMiniportWaveRT::NewStream </a> method to create the miniport driver stream object, the port driver passes an <code>IPortWaveRTStream</code> reference as one of the method's call parameters.
+
 To allocate the memory needed for the cyclic buffer, the miniport driver must call the <a href="audio.iportwavertstream_allocatepagesformdl">AllocatePagesForMdl</a> method or the <a href="audio.iportwavertstream_allocatecontiguouspagesformdl">AllocateContiguousPagesForMdl</a> method of the <code>IPortWaveRTStream</code> interface. The interface provides additional methods that can map the allocated pages, unmap them, and can also free them.
+
 The methods in the <code>IPortWaveRTStream</code> interface are based on, and are similar to, the MmXxx kernel functions that perform allocation and mapping of memory descriptor lists (<a href="kernel.mdl">MDLs</a>). However, the MmXxx functions cannot be used in place of the <code>IPortWaveRTStream</code> methods. 
+
 
 
 ## -inheritance
@@ -65,6 +69,7 @@ The <code>UnmapAllocatedPages</code> method releases a mapping.
 
  
 
+
 ## -members
 The <b>IPortWaveRTStream</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -78,6 +83,7 @@ The <b>IPortWaveRTStream</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <code>AllocateContiguousPagesForMdl</code> method allocates a list of contiguous, nonpaged, physical memory pages and returns a pointer to a memory descriptor list (<a href="kernel.mdl">MDL</a>) that describes them.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -86,6 +92,7 @@ The <code>AllocateContiguousPagesForMdl</code> method allocates a list of contig
 </td>
 <td align="left" width="63%">
 The <code>AllocatePagesForMdl</code> method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (<a href="kernel.mdl">MDL</a>) that describes them.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -94,6 +101,7 @@ The <code>AllocatePagesForMdl</code> method allocates a list of nonpaged physica
 </td>
 <td align="left" width="63%">
 The <code>FreePagesFromMdl</code> method frees a memory descriptor list (<a href="kernel.mdl">MDL</a>).
+
 </td>
 </tr>
 <tr data="declared;">
@@ -102,6 +110,7 @@ The <code>FreePagesFromMdl</code> method frees a memory descriptor list (<a href
 </td>
 <td align="left" width="63%">
 The <code>GetPhysicalPageAddress</code> method returns the physical address for a page within a memory descriptor list (<a href="kernel.mdl">MDL</a>).
+
 </td>
 </tr>
 <tr data="declared;">
@@ -110,6 +119,7 @@ The <code>GetPhysicalPageAddress</code> method returns the physical address for 
 </td>
 <td align="left" width="63%">
 The <code>GetPhysicalPagesCount</code> method returns the count of the physical pages in a memory descriptor list (<a href="kernel.mdl">MDL</a>).
+
 </td>
 </tr>
 <tr data="declared;">
@@ -118,6 +128,7 @@ The <code>GetPhysicalPagesCount</code> method returns the count of the physical 
 </td>
 <td align="left" width="63%">
 The <code>MapAllocatedPages</code> method maps a list of previously allocated physical pages into a contiguous block of virtual memory that is accessible from kernel-mode.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -126,6 +137,7 @@ The <code>MapAllocatedPages</code> method maps a list of previously allocated ph
 </td>
 <td align="left" width="63%">
 The <code>UnmapAllocatedPages</code> method releases a mapping.
+
 </td>
 </tr>
 </table>The <code>AllocateContiguousPagesForMdl</code> method allocates a list of contiguous, nonpaged, physical memory pages and returns a pointer to a memory descriptor list (<a href="kernel.mdl">MDL</a>) that describes them.
@@ -144,6 +156,7 @@ The <code>UnmapAllocatedPages</code> method releases a mapping.
 
  
 
+
 ## -remarks
 
 
@@ -152,6 +165,7 @@ The <code>UnmapAllocatedPages</code> method releases a mapping.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxgk_set_timing_flags.htm
 old-project: display
 ms.assetid: BB10EBD3-2CB6-4854-994D-B10929CB27FC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_SET_TIMING_FLAGS, DXGK_SET_TIMING_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Structure to hold flags used to modify SetTiming behavior.  Currently no flags are defined.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct _DXGK_SET_TIMING_FLAGS {
 
 This value is reserved for system use.
 
+
 ### -field Value
 
 UINT used to operate on the combined bit-fields.
+
 
 ## -remarks
 
@@ -73,6 +76,7 @@ UINT used to operate on the combined bit-fields.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

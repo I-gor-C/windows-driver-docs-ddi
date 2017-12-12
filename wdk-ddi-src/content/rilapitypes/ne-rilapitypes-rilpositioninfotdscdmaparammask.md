@@ -7,8 +7,8 @@ old-location: netvista\rilpositioninfotdscdmaparammask_2.htm
 old-project: netvista
 ms.assetid: c5609649-8e7b-4ec3-8feb-f363536068c6
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: RIL_WritePhonebookEntry
+ms.date: 12/8/2017
+ms.keywords: RILPOSITIONINFOTDSCDMAPARAMMASK, RILPOSITIONINFOTDSCDMAPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,6 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.iface: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. </p>
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
 ## -syntax
@@ -61,44 +60,33 @@ typedef enum _RILPOSITIONINFOTDSCDMAPARAMMASK {
 
 
 ## -enum-fields
-<dl>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_MNC
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_LAC
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_CELLID
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_UARFCN
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_CELLPARAM
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_TA
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_RSCP
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_PATHLOSS
 
-<dd></dd>
 
 ### -field RIL_PARAM_POSITION_TDSCDMA_ALL
 
-<dd></dd>
-</dl>
 
 ## -remarks
 
@@ -107,7 +95,7 @@ typedef enum _RILPOSITIONINFOTDSCDMAPARAMMASK {
 <table>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
 </th>
 <td width="70%">
 <dl>

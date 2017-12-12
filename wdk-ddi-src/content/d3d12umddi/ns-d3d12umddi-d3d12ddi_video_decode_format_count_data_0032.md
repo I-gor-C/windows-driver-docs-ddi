@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-format-count-data-0032.htm
 old-project: display
 ms.assetid: 3d28fe10-1dfc-4017-9ab0-d8b8e2d45448
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_FORMAT_COUNT_DATA_0032, D3D12DDI_VIDEO_DECODE_FORMAT_COUNT_DATA_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video decode format count data.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3D12DDI_VIDEO_DECODE_FORMAT_COUNT_DATA_0032 {
 
 Node index.
 
+
 ### -field Configuration
 
 Configuration.
 
+
 ### -field FormatCount
 
 Format count.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Format count.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

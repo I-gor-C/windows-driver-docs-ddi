@@ -7,7 +7,7 @@ old-location: display\miracast_protocol_event.htm
 old-project: display
 ms.assetid: 7a47acf7-93a9-4bb2-a120-17c32c852ea9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: MIRACAST_PROTOCOL_EVENT, MIRACAST_PROTOCOL_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the types of wireless display (Miracast) protocol event that the user-mode display driver should report.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum  {
 
 The driver received a request for a new IDR type of I-frame from the Miracast sink.
 
+
 ### -field MIRACAST_PROTOCOL_EVENT_MONITOR_ARRIVE
 
 The driver received a monitor connection event from the Miracast sink.
+
 
 ### -field MIRACAST_PROTOCOL_EVENT_MONITOR_DEPART
 
 The driver received a monitor disconnection event from the Miracast sink.
 
+
 ### -field MIRACAST_PROTOCOL_EVENT_SINK_FAILED_PREFERRED_MODE_CHANGE
 
 Reserved for system use. Do not use in your driver.
 
+
 ### -field MIRACAST_PROTOCOL_EVENT_FORCE_UINT32
 
 Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.
+
 
 ## -remarks
 
@@ -84,22 +90,27 @@ Forces this enumeration to compile to 32 bits in size. Without this value, some 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This structure provides a handle  for the Universal Serial Bus (USB) hub or device physically connected to the bus.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _USBDEVICE_MGMT_HEADER {
 
 The size in bytes of this structure.
 
+
 ### -field Hub
 
 The handle to the USB hub that is physically connected to the bus.
 
+
 ### -field UsbDevice
 
 The handle for the USB device that is physically connected to the bus.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ The handle for the USB device that is physically connected to the bus.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WINBIO_VERSION structure describes major and minor version information for a WBDI driver.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WINBIO_VERSION {
 
 Identifies the major version of the driver.
 
+
 ### -field MinorVersion
 
 Identifies the minor version of the driver.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ Identifies the minor version of the driver.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

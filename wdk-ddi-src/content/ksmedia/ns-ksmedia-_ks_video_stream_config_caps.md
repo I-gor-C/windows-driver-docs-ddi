@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: a8089653-a14b-4542-bf20-b1b596b1b4ea
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _KS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS
+ms.keywords: _KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 The KS_VIDEO_STREAM_CONFIG_CAPS structure describes the configuration and capabilities of a video stream, including analog video standard (for example, NTSC, PAL or SECAM), scaling, and cropping capabilities; minimum and maximum frame rates; and minimum and maximum data rates.
+
 
 
 ## -syntax
@@ -75,65 +76,86 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 ### -field guid
 
 GUID that specifies the video format type. Possible values include:
+
 KSDATAFORMAT_SPECIFIER_VIDEOINFO
+
 KSDATAFORMAT_SPECIFIER_VIDEOINFO2
+
 KSDATAFORMAT_SPECIFIER_ANALOGVIDEO
+
 KSDATAFORMAT_SPECIFIER_VBI
+
 KSDATAFORMAT_SPECIFIER_MPEG1_VIDEO
+
 KSDATAFORMAT_SPECIFIER_MPEG2_VIDEO
+
 This GUID is identical to the DirectShow AM_MEDIA_TYPE enumeration. For more information about AM_MEDIA_TYPE, see the DirectX SDK documentation.
+
 
 ### -field VideoStandard
 
 Specifies the analog video standards that are supported by the stream. This member can be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
 
+
 ### -field InputSize
 
 Specifies the size of the incoming signal. <b>InputSize</b> indicates the image rectangle's width and height, in pixels. This is the largest signal that the filter can digitize with each pixel remaining unique. 
+
 
 ### -field MinCroppingSize
 
 Specifies the smallest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a> structure, which is associated with the <b>DataRange</b> member. 
 
+
 ### -field MaxCroppingSize
 
 Specifies the largest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the KS_VIDEOINFOHEADER structure, which is associated with the <b>DataRange</b> member. 
+
 
 ### -field CropGranularityX
 
 Specifies the horizontal granularity of the cropping size. For example, valid widths could be specified as even multiples of four. 
 
+
 ### -field CropGranularityY
 
 Specifies the vertical granularity of the cropping size. For example, valid heights could be specified as even multiples of four. 
+
 
 ### -field CropAlignX
 
 Specifies the horizontal alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four. 
 
+
 ### -field CropAlignY
 
 Specifies the vertical alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four.
+
 
 ### -field MinOutputSize
 
 Specifies the smallest bitmap that this pin can produce.
 
+
 ### -field MaxOutputSize
 
 Specifies the largest bitmap that this pin can produce.
+
 
 ### -field OutputGranularityX
 
 Specifies the granularity of the output bitmap width.
 
+
 ### -field OutputGranularityY
 
 Specifies the granularity of the output bitmap height.
 
+
 ### -field StretchTapsX
 
 Specifies one of the following values to indicate how well the filter can stretch the image's width.
+
 <table>
 <tr>
 <th>Value</th>
@@ -142,41 +164,51 @@ Specifies one of the following values to indicate how well the filter can stretc
 <tr>
 <td>
 0
+
 </td>
 <td>
 The filter cannot stretch.
+
 </td>
 </tr>
 <tr>
 <td>
 1
+
 </td>
 <td>
 The filter uses pixel doubling to achieve stretching.
+
 </td>
 </tr>
 <tr>
 <td>
 2
+
 </td>
 <td>
 The filter uses interpolation (2 taps).
+
 </td>
 </tr>
 <tr>
 <td>
 3
+
 </td>
 <td>
 The filter uses a higher-order (smoother) form of interpolation.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field StretchTapsY
 
 Specifies one of the following values to indicate how well the filter can stretch the image's height.
+
 <table>
 <tr>
 <th>Value</th>
@@ -185,41 +217,51 @@ Specifies one of the following values to indicate how well the filter can stretc
 <tr>
 <td>
 0
+
 </td>
 <td>
 The filter cannot stretch.
+
 </td>
 </tr>
 <tr>
 <td>
 1
+
 </td>
 <td>
 The filter uses pixel doubling to achieve stretching.
+
 </td>
 </tr>
 <tr>
 <td>
 2
+
 </td>
 <td>
 The filter uses interpolation (2 taps).
+
 </td>
 </tr>
 <tr>
 <td>
 3
+
 </td>
 <td>
 The filter uses a higher-order (smoother) form of interpolation.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field ShrinkTapsX
 
 Specifies one of the following values to indicate how well the filter can shrink the image's width.
+
 <table>
 <tr>
 <th>Value</th>
@@ -228,41 +270,51 @@ Specifies one of the following values to indicate how well the filter can shrink
 <tr>
 <td>
 0
+
 </td>
 <td>
 The filter cannot shrink.
+
 </td>
 </tr>
 <tr>
 <td>
 1
+
 </td>
 <td>
 The filter eliminates some rows of pixels to achieve shrinking.
+
 </td>
 </tr>
 <tr>
 <td>
 2
+
 </td>
 <td>
 The filter uses interpolation (2 taps).
+
 </td>
 </tr>
 <tr>
 <td>
 3
+
 </td>
 <td>
 The filter uses a higher-order (smoother) form of interpolation.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field ShrinkTapsY
 
 Specifies one of the following values to indicate how well the filter can shrink the image's height.
+
 <table>
 <tr>
 <th>Value</th>
@@ -271,53 +323,66 @@ Specifies one of the following values to indicate how well the filter can shrink
 <tr>
 <td>
 0
+
 </td>
 <td>
 The filter cannot shrink.
+
 </td>
 </tr>
 <tr>
 <td>
 1
+
 </td>
 <td>
 The filter eliminates some columns of pixels to achieve shrinking.
+
 </td>
 </tr>
 <tr>
 <td>
 2
+
 </td>
 <td>
 The filter uses interpolation (2 taps).
+
 </td>
 </tr>
 <tr>
 <td>
 3
+
 </td>
 <td>
 The filter uses a higher-order (smoother) form of interpolation.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field MinFrameInterval
 
 Specifies the minimum frame rate allowed. This value applies to capture filters only.
 
+
 ### -field MaxFrameInterval
 
 Specifies the maximum frame rate allowed. This value applies to capture filters only.
+
 
 ### -field MinBitsPerSecond
 
 Specifies the minimum data rate, in bits per second, that this pin can produce.
 
+
 ### -field MaxBitsPerSecond
 
 Specifies the maximum data rate, in bits per second, that this pin can produce.
+
 
 ## -remarks
 The KS_VIDEO_STREAM_CONFIG_CAPS structure is identical to the DirectShow VIDEO_STREAM_CONFIG_CAPS structure.
@@ -358,11 +423,13 @@ For a 320 × 240 cropping rectangle and the same cropping alignment values, (2, 
 
 The <b>MinCroppingSize</b>, <b>MaxCroppingSize</b>, <b>CropGranularityX</b>, <b>CropGranularityY</b>, <b>CropAlignX</b>, and <b>CropAlignY</b> members discussed above work together to specify which values of <b>rcSource</b> are valid for the KS_VIDEOINFOHEADER structure that describes the output pin's media type. The remaining structure members (<b>MinOutputSize</b>, <b>MaxOutputSize</b>, <b>OutputGranularityX</b>, and <b>OutputGranularityY</b>) describe the <b>biWidth</b> and <b>biHeight</b> members of the <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure, which is contained in the pin's media type KS_VIDEOINFOHEADER structure. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -385,5 +452,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEO_STREAM_CONFIG_CAPS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

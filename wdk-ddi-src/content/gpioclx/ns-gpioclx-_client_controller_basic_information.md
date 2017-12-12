@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: CE92249C-99B5-411E-B0D7-C1FF4824949E
 ms.author: windowsdriverdev
 ms.date: 11/3/2017
-ms.keywords: _CLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION, *PCLIENT_CONTROLLER_BASIC_INFORMATION
+ms.keywords: _CLIENT_CONTROLLER_BASIC_INFORMATION, *PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>CLIENT_CONTROLLER_BASIC_INFORMATION</b> structure contains general-purpose I/O (GPIO) controller hardware attributes and  configuration information.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _CLIENT_CONTROLLER_BASIC_INFORMATION {
 
 The version number of this structure. Set this member to <b>GPIO_CONTROLLER_BASIC_INFORMATION_VERSION</b>, which is defined in the Gpioclx.h header file.
 
+
 ### -field Size
 
 The size, in bytes, of this structure. Set this member to <b>sizeof</b>(<b>CLIENT_CONTROLLER_BASIC_INFORMATION</b>).
+
 
 ### -field TotalPins
 
 The number of pins on the GPIO controller. If the pins are partitioned into multiple banks, this member specifies the total pin count across all of the banks in the GPIO controller.
 
+
 ### -field NumberOfPinsPerBank
 
 The number of GPIO pins for each bank. The maximum number of pins for each bank is 64. The pins on the GPIO controller are partitioned into one or more banks. Each bank contains the number of pins specified by this parameter, with the possible exception of the last bank. For more information, see Remarks.
+
 
 ### -field DeviceIdleTimeout
 
 The idle time-out interval, in milliseconds, if the GPIO controller supports the D3 power state. The time-out interval is the minimum amount of time that a GPIO controller stays in the D0 state after the controller becomes idle. After the time-out interval expires, the power manager might request that the controller switch to the D3 state.
 
+
 ### -field Flags
 
 A set of flags that specify the hardware attributes of the GPIO controller. This member can be set to all zeros or to any bitwise-OR combination of the following flag bits:
+
 <ul>
 <li><b>MemoryMappedController</b></li>
 <li><b>ActiveInterruptsAutoClearOnRead</b></li>
@@ -91,6 +98,7 @@ A set of flags that specify the hardware attributes of the GPIO controller. This
 </ul>
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439449">CONTROLLER_ATTRIBUTE_FLAGS</a>.
 
+
 ## -remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function uses a <b>CLIENT_CONTROLLER_BASIC_INFORMATION</b> structure to pass device-specific information about a GPIO controller to the GPIO framework extension (GpioClx).
 
@@ -100,19 +108,23 @@ GpioClx determines the total number of banks in the GPIO controller from the val
 
 Typically, a bank in a GPIO controller device can be turned on and off independently of the other banks in the same device. Thus, power can be saved by turning off a bank that is idle.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,5 +144,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20CLIENT_CONTROLLER_BASIC_INFORMATION structure%20 RELEASE:%20(11/3/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

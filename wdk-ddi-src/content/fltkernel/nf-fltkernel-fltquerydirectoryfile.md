@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL (see Remarks section)
 The <b>FltQueryDirectoryFile</b> routine returns various kinds of information about files in the directory specified by a given file object.
 
 
+
 ## -syntax
 
 ````
@@ -64,21 +65,26 @@ NTSTATUS FltQueryDirectoryFile(
 
 Opaque pointer to the minifilter driver instance that initiates the I/O.
 
+
 ### -param FileObject [in]
 
 Pointer to the file object that represents the directory to be scanned.
+
 
 ### -param FileInformation [out]
 
 Pointer to a buffer that receives the desired information about the file. The structure of the information returned in the buffer is defined by the <i>FileInformationClass</i> parameter.
 
+
 ### -param Length [in]
 
 Size, in bytes, of the buffer pointed to by <i>FileInformation</i>. The caller should set this parameter according to the given <i>FileInformationClass</i>.
 
+
 ### -param FileInformationClass [in]
 
 Type of information to be returned about files in the directory. One of the values in the following table can be used.
+
 <table>
 <tr>
 <th>Value</th>
@@ -87,89 +93,112 @@ Type of information to be returned about files in the directory. One of the valu
 <tr>
 <td>
 <b>FileBothDirectoryInformation</b>
+
 </td>
 <td>
 Return a FILE_BOTH_DIR_INFORMATION structure for each file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileDirectoryInformation</b>
+
 </td>
 <td>
 Return a FILE_DIRECTORY_INFORMATION structure for each file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileFullDirectoryInformation</b>
+
 </td>
 <td>
 Return a FILE_FULL_DIR_INFORMATION structure for each file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileIdBothDirectoryInformation</b>
+
 </td>
 <td>
 Return a FILE_ID_BOTH_DIR_INFORMATION structure for each file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileIdFullDirectoryInformation</b>
+
 </td>
 <td>
 Return a FILE_ID_FULL_DIR_INFORMATION structure for each file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileNamesInformation</b>
+
 </td>
 <td>
 Return a FILE_NAMES_INFORMATION structure for each file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileObjectIdInformation</b>
+
 </td>
 <td>
 Return a FILE_OBJECTID_INFORMATION structure for each file. This information class is valid only for NTFS volumes starting with Microsoft Windows 2000.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileReparsePointInformation</b>
+
 </td>
 <td>
 Return a single FILE_REPARSE_POINT_INFORMATION structure for the directory.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ReturnSingleEntry [in]
 
 Set to <b>TRUE</b> if only a single entry should be returned, <b>FALSE</b> otherwise. If this parameter is <b>TRUE</b>, <b>FltQueryDirectoryFile</b> returns only the first entry that is found.
 
+
 ### -param FileName [in, optional]
 
 Pointer to a caller-allocated Unicode string that contains the name of a file (or multiple files, if wildcards are used) within the directory specified by <i>FileObject</i>. This parameter is optional and can be <b>NULL</b>. 
+
 If <i>FileName</i> is not <b>NULL</b>, only files whose names match the <i>FileName</i> string are included in the directory scan. If <i>FileName</i> is <b>NULL</b>, all files are included. If <i>RestartScan</i> is <b>FALSE</b>, the value of <i>FileName</i> is ignored.
+
 
 ### -param RestartScan [in]
 
 Set to <b>TRUE</b> if the scan is to start at the first entry in the directory. Set to <b>FALSE</b> if resuming the scan from a previous call. The caller must set this parameter to <b>TRUE</b> when calling <b>FltQueryDirectoryFile </b>for the first time.
 
+
 ### -param LengthReturned [out, optional]
 
 Receives the number of bytes actually written to the given <i>FileInformation</i> buffer.
 
+
 ## -returns
 <b>FltQueryDirectoryFile </b>returns STATUS_SUCCESS or an appropriate error status. Note that the set of error status values that can be returned is file-system-specific.
+
 
 ## -remarks
 <b>FltQueryDirectoryFile </b>returns information about files that are contained in the directory that is represented by <i>FileObject</i>. 
@@ -203,11 +232,13 @@ For information about other file information query routines, see <a href="kernel
 
 Callers of <b>FltQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and with APCs enabled. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -218,14 +249,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -236,6 +270,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -246,6 +281,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -256,9 +292,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -303,5 +341,8 @@ PASSIVE_LEVEL (see Remarks section)
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryDirectoryFile routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

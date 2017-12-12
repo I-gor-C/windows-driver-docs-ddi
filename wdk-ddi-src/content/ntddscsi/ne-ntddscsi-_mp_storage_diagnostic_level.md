@@ -7,7 +7,7 @@ old-location: storage\mp_storage_diagnostic_level.htm
 old-project: storage
 ms.assetid: BB05D543-7B99-481E-8CDB-AE350CBCCA2A
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>MP_STORAGE_DIAGNOSTIC_LEVEL</b> enumeration allows the caller to control what kinds of data the provider should return.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_LEVEL {
 
 Specifies the default diagnostic level.
 
+
 ### -field StorageDiagnosticLevelMax
 
 Specifies the max diagnostic level.
+
 
 ## -remarks
 
@@ -69,14 +72,17 @@ Specifies the max diagnostic level.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

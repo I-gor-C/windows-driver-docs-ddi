@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL (see Remarks section)
 The <b>RtlLookupFirstMatchingElementGenericTableAvl</b> routine finds the left-most element in the tree that matches the indicated data.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ PVOID RtlLookupFirstMatchingElementGenericTableAvl(
 
 A pointer to the generic Adelson-Velsky/Landis (AVL) table (<a href="ifsk.rtl_avl_table">RTL_AVL_TABLE</a>).
 
+
 ### -param Buffer [in]
 
 A buffer that contains the search data.
+
 
 ### -param RestartKey [out]
 
 On output, contains a search context to use with an enumeration routine, such as <a href="ifsk.rtlenumerategenerictablewithoutsplayingavl">RtlEnumerateGenericTableWithoutSplayingAvl</a>.
 
+
 ## -returns
 The <b>RtlLookupFirstMatchingElementGenericTableAvl</b>routine returns a pointer to the matched data, or <b>NULL</b> if no match was found.
+
 
 ## -remarks
 A tree that implements a generic table might contain several file names that differ only in case. A search algorithm can use this routine to locate the first match, without reference to case, and use an enumeration routine, such as <a href="ifsk.rtlenumerategenerictablewithoutsplayingavl">RtlEnumerateGenericTableWithoutSplayingAvl</a>, to return each subsequent match.
@@ -80,11 +85,13 @@ If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic t
 
 Callers of <b>RtlLookupFirstMatchingElementGenericTableAvl</b> must be running at &lt;= APC_LEVEL if either of the following conditions holds:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,14 +102,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +134,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +145,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -147,5 +161,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlLookupFirstMatchingElementGenericTableAvl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

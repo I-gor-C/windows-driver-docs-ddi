@@ -7,7 +7,7 @@ old-location: netvista\rilcapstype_2.htm
 old-project: netvista
 ms.assetid: 492436da-9d6f-462b-9c4d-4466cb2f78f6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCAPSTYPE, RILCAPSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -104,6 +105,7 @@ typedef enum _RILCAPSTYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

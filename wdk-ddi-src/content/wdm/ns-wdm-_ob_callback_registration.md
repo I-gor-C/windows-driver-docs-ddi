@@ -7,7 +7,7 @@ old-location: kernel\ob_callback_registration.htm
 old-project: kernel
 ms.assetid: e288b050-0875-4c9b-aa72-47845861755a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _OB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION, *POB_CALLBACK_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>OB_CALLBACK_REGISTRATION</b> structure specifies the parameters when the <a href="kernel.obregistercallbacks">ObRegisterCallbacks</a> routine registers <a href="kernel.objectprecallback">ObjectPreCallback</a> and <a href="kernel.objectpostcallback">ObjectPostCallback</a> callback routines.
 
 
+
 ## -syntax
 
 ````
@@ -61,38 +62,47 @@ typedef struct _OB_CALLBACK_REGISTRATION {
 
 The version of object callback registration that is requested. Drivers should specify OB_FLT_REGISTRATION_VERSION.
 
+
 ### -field OperationRegistrationCount
 
 The number of entries in the <b>OperationRegistration</b> array.
+
 
 ### -field Altitude
 
 A Unicode string that specifies the altitude of the driver. For more information about altitude, see <a href="ifsk.load_order_groups_and_altitudes_for_minifilter_drivers">Load Order Groups and Altitudes for Minifilter Drivers</a>.
 
+
 ### -field RegistrationContext
 
 The system passes the <b>RegistrationContext</b> value to the callback routine when the callback routine is run. The meaning of this value is driver-defined.
+
 
 ### -field OperationRegistration
 
 A pointer to an array of <a href="kernel.ob_operation_registration">OB_OPERATION_REGISTRATION</a> structures. Each structure specifies <a href="kernel.objectprecallback">ObjectPreCallback</a> and <a href="kernel.objectpostcallback">ObjectPostCallback</a> callback routines and the types of operations that the routines are called for. 
 
+
 ## -remarks
 This structure is used by the <a href="kernel.obregistercallbacks">ObRegisterCallbacks</a> routine. The <i>CallBackRegistration</i> parameter to this routine is a pointer to a buffer that contains an <b>OB_CALLBACK_REGISTRATION</b> structure that is followed by an array of one or more <a href="kernel.ob_operation_registration">OB_OPERATION_REGISTRATION</a> structures.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Server 2008.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +128,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20OB_CALLBACK_REGISTRATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20OB_CALLBACK_REGISTRATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

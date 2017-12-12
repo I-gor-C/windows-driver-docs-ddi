@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 6936F732-ECAA-4CA7-B2AF-CA22A5C93FC9
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSE_PIN, *PKSE_PIN, KSE_PIN
+ms.keywords: PKSE_PIN, KSE_PIN, *PKSE_PIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -38,6 +38,7 @@ req.irql:
 
 
 ## -description
+
 
 
 
@@ -71,6 +72,7 @@ typedef struct {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

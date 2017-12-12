@@ -7,7 +7,7 @@ old-location: netvista\protocolclmakecallcomplete.htm
 old-project: netvista
 ms.assetid: 6bb69f78-8dab-46a7-84fb-7bc17e894535
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,6 +47,7 @@ The
   <i>ProtocolClMakeCallComplete</i> function can simply return control.
 
 
+
 ## -prototype
 
 ````
@@ -71,6 +72,8 @@ Specifies the final status of the client's original call to
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The client's attempt to set up a virtual connection succeded. Consequently, the client can
@@ -80,15 +83,18 @@ The client's attempt to set up a virtual connection succeded. Consequently, the 
        stored in its per-VC context area at 
        <i>ProtocolVcContext</i> .
 
+
 ### -param NDIS_STATUS_RESOURCES
 
 NDIS, the call manager, or an underlying driver could not allocate sufficient resources to set
        up the connection.
 
+
 ### -param NDIS_STATUS_XXX
 
 The call manager or underlying miniport driver failed to establish an active connection and NDIS
        propagated this driver-determined failure status to the client.
+
 </dd>
 </dl>
 
@@ -98,6 +104,7 @@ Specifies the handle to the client's per-VC context area, which the client origi
      NDIS when it called 
      <b>NdisCoCreateVc</b> to set up the VC for its outgoing call.
 
+
 ### -param NdisPartyHandle [in, optional]
 
 If 
@@ -106,12 +113,14 @@ If
      <a href="netvista.ndisclmakecall">NdisClMakeCall</a>, this is a valid 
      <i>NdisPartyHandle</i> . Otherwise, this parameter is <b>NULL</b>.
      
+
 <i>ProtocolClMakeCallComplete</i> must save any valid input 
      <i>NdisPartyHandle</i>, usually in the client's per-party context area. The client must use this handle
      if (or when) it makes a subsequent call to 
      <a href="netvista.ndiscldropparty">NdisClDropParty</a> or 
      <a href="netvista.ndisclclosecall">NdisClCloseCall</a> that refers to this
      party.
+
 
 ### -param CallParameters [in]
 
@@ -120,8 +129,10 @@ Pointer to a buffered CO_CALL_PARAMETERS structure. The client allocated this bu
      <b>NdisClMakeCall</b>. While processing the client's request, the call manager can modify this data to
      reflect the results of its negotiation with the network or with a signaling peer.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A call to 
@@ -185,11 +196,13 @@ The <b>PROTOCOL_CL_MAKE_CALL_COMPLETE</b> function type is defined in the Ndis.h
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -197,11 +210,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>ProtocolClMakeCallComplete
    (NDIS 5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -212,9 +227,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -260,5 +277,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MAKE_CALL_COMPLETE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MAKE_CALL_COMPLETE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

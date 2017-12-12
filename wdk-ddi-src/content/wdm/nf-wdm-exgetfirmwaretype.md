@@ -7,7 +7,7 @@ old-location: kernel\exgetfirmwaretype.htm
 old-project: kernel
 ms.assetid: b8a420d5-7741-4676-9956-dcf996125c6d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExGetFirmwareType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Returns the system firmware type.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ Returns a <a href="base.firmware_type">FIRMWARE_TYPE</a>-type value that indicat
 
 Returns a <a href="base.firmware_type">FIRMWARE_TYPE</a>-type value that indicates the type of firmware.
 
+
 ## -remarks
 
 
@@ -69,22 +71,27 @@ Returns a <a href="base.firmware_type">FIRMWARE_TYPE</a>-type value that indicat
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +102,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +113,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -115,9 +124,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=APC_LEVEL
+
 </td>
 </tr>
 </table>

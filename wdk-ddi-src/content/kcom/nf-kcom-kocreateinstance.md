@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <i>This function is intended for internal use only.</i>
+
 The <b>KoCreateInstance</b> function creates an object of the class with the specified CLSID. 
+
 
 
 ## -syntax
@@ -61,24 +63,30 @@ NTSTATUS KoCreateInstance(
 
 The CLSID of the object to create an instance of.
 
+
 ### -param UnkOuter [in, optional]
 
 The outer unknown object to pass to the new instance.
+
 
 ### -param ClsContext [in]
 
 The context in which to create the instance. This must be CLSCTX_KERNEL_SERVER.
 
+
 ### -param InterfaceId [in]
 
 Reference to the identifier of the interface that will communicate with the object.
+
 
 ### -param Interface [out]
 
 Address of the pointer variable that receives the new interface pointer specified in <i>InterfaceId</i>.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the instance was successfully created. Otherwise, it returns an error.
+
 
 ## -remarks
 
@@ -88,6 +96,7 @@ Returns STATUS_SUCCESS if the instance was successfully created. Otherwise, it r
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +107,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +118,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

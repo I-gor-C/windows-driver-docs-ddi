@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmtregistermanagedclient.htm
 old-project: kernel
 ms.assetid: 6f450117-9bd2-4021-b8f1-393db5784136
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ClfsMgmtRegisterManagedClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ClfsMgmtRegisterManagedClient</b> routine creates a client that will manage a CLFS log.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ NTSTATUS ClfsMgmtRegisterManagedClient(
 
 A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log stream that the client created by <b>ClfsMgmtRegisterManagedClient</b> will manage.
 
+
 ### -param RegistrationData [in]
 
 An instance of the <a href="kernel.clfs_mgmt_client_registration">CLFS_MGMT_CLIENT_REGISTRATION</a> structure that contains the functions that will be used to manage the log.
 
+
 ### -param Client [out]
 
 A pointer to the client.
+
 
 ## -returns
 The <b>ClfsMgmtRegisterManagedClient</b> routine returns one of the following NTSTATUS values:
@@ -86,6 +90,7 @@ The <b>ClfsMgmtRegisterManagedClient</b> routine returns one of the following NT
 
 This routine might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS Values</a>.
 
+
 ## -remarks
 The <i>Client</i> parameter that  is provided by the <b>ClfsMgmtRegisterManagedClient</b> routine is a required parameter for other CLFS management functions. You should store this value for later use.
 
@@ -93,11 +98,13 @@ A client application must be ready for its callback routine to be called as soon
 
 More than one client can register with a log stream.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,14 +115,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +136,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +147,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -146,9 +158,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -163,5 +177,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtRegisterManagedClient routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtRegisterManagedClient routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

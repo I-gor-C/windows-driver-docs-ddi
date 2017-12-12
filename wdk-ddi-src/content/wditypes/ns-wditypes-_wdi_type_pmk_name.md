@@ -7,7 +7,7 @@ old-location: netvista\wdi_type_pmk_name.htm
 old-project: netvista
 ms.assetid: 71020A3E-0839-4D73-B1B7-8A979BD0F5E0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_TYPE_PMK_NAME structure defines the PMKR0Name or PMKR1Name (802.11r).
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _WDI_TYPE_PMK_NAME {
 
 the PMKR0Name or PMKR1Name.
 
+
 ## -remarks
 
 
@@ -65,22 +67,27 @@ the PMKR0Name or PMKR1Name.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The PUBLIC_OBJECT_BASIC_INFORMATION structure holds a subset of the full information that is available for an object.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _PUBLIC_OBJECT_BASIC_INFORMATION {
 
 Specifies the attributes of the object.
 
+
 ### -field GrantedAccess
 
 Specifies a mask that represents the granted access to the object.
+
 
 ### -field HandleCount
 
 Specifies the number of handles to the object.
 
+
 ### -field PointerCount
 
 Specifies the number of pointers at an object.
 
+
 ### -field Reserved
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -84,14 +90,17 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available starting with Microsoft Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

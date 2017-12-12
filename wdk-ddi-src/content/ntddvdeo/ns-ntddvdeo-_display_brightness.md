@@ -7,8 +7,8 @@ old-location: display\display_brightness.htm
 old-project: display
 ms.assetid: 0e72c1a7-5712-46fc-a65f-20183830cb72
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DISPLAY_BRIGHTNESS, *PDISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS
+ms.date: 12/8/2017
+ms.keywords: _DISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS, *PDISPLAY_BRIGHTNESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The DISPLAY_BRIGHTNESS structure is reserved for system use.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _DISPLAY_BRIGHTNESS {
 
 Reserved for system use.
 
+
 ### -field ucACBrightness
 
 Reserved for system use.
 
+
 ### -field ucDCBrightness
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

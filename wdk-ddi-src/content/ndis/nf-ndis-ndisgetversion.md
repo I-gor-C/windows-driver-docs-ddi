@@ -7,7 +7,7 @@ old-location: netvista\ndisgetversion.htm
 old-project: netvista
 ms.assetid: d3e2c799-f789-499f-9948-f41d7576296e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NdisGetVersion</b> function returns the version number of NDIS.
 
 
+
 ## -syntax
 
 ````
@@ -62,15 +63,18 @@ Returns the major and minor numbers for the NDIS version in the high and low hal
 Returns the major and minor numbers for the NDIS version in the high and low halves of the
      unsigned integer respectively.
 
+
 ## -remarks
 System support for 
     <b>NdisGetVersion</b> is available in Windows XP and later versions.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,6 +85,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -88,11 +93,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisGetVersion (NDIS 5.1)</b>) in
    Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -113,14 +121,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>

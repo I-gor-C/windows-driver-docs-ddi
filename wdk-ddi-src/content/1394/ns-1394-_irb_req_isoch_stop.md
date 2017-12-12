@@ -41,6 +41,7 @@ req.irql:
 This structure contains the field necessary to carry out a IsochStop request.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _IRB_REQ_ISOCH_STOP {
 
 Specifies the resource handle for the channel on which to stop isochronous operations. 
 
+
 ### -field fulFlags
 
 Reserved. Device drivers should set this member to zero.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Reserved. Device drivers should set this member to zero.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

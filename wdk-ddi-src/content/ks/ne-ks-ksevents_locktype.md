@@ -41,6 +41,7 @@ req.irql:
 The KSEVENTS_LOCKTYPE enumeration identifies the type of exclusion lock. The types are used with <i>EventFlags</i> in several event-set helper functions.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef enum  {
 
 No lock.
 
+
 ### -field KSEVENTS_SPINLOCK
 
 Lock is assumed to be a KSPIN_LOCK.
+
 
 ### -field KSEVENTS_MUTEX
 
 Lock is assumed to be a KMUTEX.
 
+
 ### -field KSEVENTS_FMUTEX
 
 Lock is assumed to be a FAST_MUTEX and is acquired by raising IRQL to APC_LEVEL.
+
 
 ### -field KSEVENTS_FMUTEXUNSAFE
 
 Lock is assumed to be a FAST_MUTEX and is acquired without raising IRQL to APC_LEVEL.
 
+
 ### -field KSEVENTS_INTERRUPT
 
 Lock is assumed to be an interrupt synchronization spin lock.
 
+
 ### -field KSEVENTS_ERESOURCE
 
 Lock is assumed to be an ERESOURCE.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ Lock is assumed to be an ERESOURCE.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

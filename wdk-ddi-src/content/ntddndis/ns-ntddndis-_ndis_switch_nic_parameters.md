@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_parameters.htm
 old-project: netvista
 ms.assetid: 52B9DD8B-E96F-464C-9D98-5EF8B6C050C5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_NIC_PARAMETERS, *PNDIS_SWITCH_NIC_PARAMETERS, NDIS_SWITCH_NIC_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql: PASSIVE_LEVEL
 
 The <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure specifies the configuration parameters for a network adapter (NIC) that is connected to a Hyper-V extensible switch port.  
 
+
+
 The <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure specifies the configuration parameters for a network adapter (NIC) that is connected to a Hyper-V extensible switch port.  
+
 
 
 ## -syntax
@@ -74,19 +77,25 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 ### -field Header
 
 The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
+
+
 
 
 ### -field NDIS_SWITCH_NIC_PARAMETERS_REVISION_1
 
 Original version for NDIS 6.30 and later.
+
 Set the <b>Size</b> member to <b>NDIS_SIZEOF_NDIS_SWITCH_NIC_PARAMETERS_REVISION_1</b>.
+
 </dd>
 </dl>
 
 ### -field Flags
 
 A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. The following flag value is defined.
+
 
 
 <table>
@@ -101,48 +110,61 @@ A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. The following f
 </td>
 <td width="60%">
 This flag is set when the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598263">OID_SWITCH_NIC_CREATE</a> OID is issued for the first time in the lifetime of a VM NIC object. If this flag is set:
+
 <ul>
 <li>A Hyper-V Extensible Switch extension can optionally reduce the value of the <b>MTU</b> member in the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure if it needs to reserve headroom for encapsulation before it passes the OID down the stack. The extension will not be able to reserve encapsulation headroom for any other type of NIC.</li>
 <li>The extension should not increase the <b>MTU</b> value.</li>
 </ul>
   This flag will be set only if the <b>NicType</b> member is <b>NdisSwitchNicTypeSynthetic</b>.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field NicName
 
  An NDIS_SWITCH_NIC_NAME value that specifies the unique internal name of the network adapter that is connected to an extensible switch port. 
+
 For more information, see the Remarks section.
+
 
 ### -field NicFriendlyName
 
  An NDIS_SWITCH_NIC_FRIENDLYNAME value that specifies the user-friendly description of the network adapter.
 
+
 ### -field PortId
 
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port to which the network adapter is connected.
 
+
 ### -field NicIndex
 
 An NDIS_SWITCH_NIC_INDEX value that specifies the index of the network adapter that is connected to the  extensible switch port specified by the <b>PortId</b> member.
+
 For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="netvista.network_adapter_index_values">Network Adapter Index Values</a>.
+
 
 ### -field NicType
 
 An <a href="netvista.ndis_switch_nic_type">NDIS_SWITCH_NIC_TYPE</a> value that specifies the type of the network adapter that is connected to an extensible switch port.
 
+
 ### -field NicState
 
 An <a href="netvista.ndis_switch_nic_state">NDIS_SWITCH_NIC_STATE</a> value that specifies the current state of the network adapter.
+
 
 ### -field VmName
 
 An NDIS_VM_NAME value that specifies the unique internal name of the Hyper-V child partition in which the guest operating system that exposes the network adapter is running.
 
 
+
 The Hyper-V child partition is also known as a virtual machine (VM).
+
 <div class="alert"><b>Note</b>  This member is valid only if the <b>NicType</b> member contains a value of <b>NdisSwitchNicSyntheticNic</b> or <b>NdisSwitchNicEmulatedNic.</b></div>
 <div> </div>
 
@@ -152,16 +174,19 @@ An NDIS_VM_FRIENDLYNAME value that specifies the external name of the Hyper-V ch
 
 
 
+
 ### -field NetCfgInstanceId
 
 A GUID value that specifies the <b>NetCfgInstanceId</b> registry value of the
 underlying network adapter.
+
 <div class="alert"><b>Note</b>  This member is valid only if the <b>NicType</b> member is set to <b>NdisSwitchNicTypeExternal</b> or <b>NdisSwitchNicTypeInternal</b>.  <b>NetCfgInstanceId</b> will not be valid until after the virtual network adapter has been initialized.</div>
 <div> </div>
 
 ### -field MTU
 
 A <b>ULONG</b> value that specifies the maximum transmission unit (MTU) size, in bytes, for the network adapter.
+
 <div class="alert"><b>Note</b>  The value of this member can change during the lifetime of a VM NIC. Therefore, extensions should read this member of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure that is passed down with the following OIDs:<ul>
 <li>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598262">OID_SWITCH_NIC_CONNECT</a>
@@ -178,6 +203,7 @@ A <b>ULONG</b> value that specifies the maximum transmission unit (MTU) size, in
 A <b>USHORT</b> value that specifies the identifier for the preferred Non-Uniform Memory Access (NUMA) node of a CPU. On computers that support NUMA architecture, the preferred NUMA node is the CPU that has the smallest distance to the network adapter.
 
 
+
 <div class="alert"><b>Note</b>  This member is valid only if the <b>NicType</b> member is set to <b>NdisSwitchNicTypeSynthetic</b> or <b>NdisSwitchNicTypeEmulated</b>.</div>
 <div> </div>
 
@@ -185,9 +211,11 @@ A <b>USHORT</b> value that specifies the identifier for the preferred Non-Unifor
 
 A <b>UCHAR</b> array that specifies the media access control (MAC) address as configured on the host partition for  the network adapter. This can be different from the MAC address currently in use by the network adapter.
 
+
 ### -field VMMacAddress
 
 A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="netvista.ndis_switch_port_property_security">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i>
+
 
 ### -field CurrentMacAddress
 
@@ -195,10 +223,13 @@ A <b>UCHAR</b> array that specifies the MAC address that is currently being used
 
 
 
+
 ### -field VFAssigned
 
 A <b>BOOLEAN</b> value that, if set to <b>TRUE</b>, specifies that the network adapter is attached to a PCI Express (PCIe) virtual function (VF). A VF is exposed by an underlying physical network adapter that supports the single root I/O virtualization (SR-IOV) interface.
+
 For more information, see the Remarks section.
+
 <div class="alert"><b>Note</b>  The <b>VFAssigned</b> member is valid only if the <b>NicType</b> member contains a value of <b>NdisSwitchNicTypeEmulated</b> or <b>NdisSwitchNicTypeSynthetic</b>. This member must be set to <b>FALSE</b> if the <b>NicType</b> member contains a value of <b>NdisSwitchNicTypeExternal</b> or <b>NdisSwitchNicTypeInternal</b>.</div>
 <div> </div>
 
@@ -250,19 +281,23 @@ The extension can remove a VF assignment by issuing an <a href="https://msdn.mic
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh598206">NDIS_STATUS_SWITCH_PORT_REMOVE_VF</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -319,5 +354,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

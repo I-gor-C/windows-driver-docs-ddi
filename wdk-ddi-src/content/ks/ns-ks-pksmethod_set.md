@@ -41,6 +41,7 @@ req.irql:
 The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set.
 
 
+
 ## -syntax
 
 ````
@@ -60,30 +61,37 @@ typedef struct {
 
 Specifies a GUID the identifies the kernel streaming method set. For more information about method set GUIDs, see <b>Remarks</b>.
 
+
 ### -field MethodsCount
 
 Specifies the number of methods in this method set.
+
 
 ### -field MethodItem
 
 Points to an array of <a href="stream.ksmethod_item">KSMETHOD_ITEM</a> structures. Each structure describes one method of the method set.
 
+
 ### -field FastIoCount
 
 Reserved for system use. Do not use.
+
 
 ### -field FastIoTable
 
 Reserved for system use. Do not use.
 
+
 ## -remarks
 Microsoft provides several system-defined kernel streaming method set GUIDs. Minidrivers specify one of these GUIDs in the <b>Set</b> member. Kernel streaming method sets typically begin with a <i>KSMETHODSETID</i> prefix. Method set GUIDs are defined in <i>ks.h</i>, <i>ksmedia.h</i>, <i>bdamedia.h</i>, and possibly other header files.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSMETHOD_SET structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

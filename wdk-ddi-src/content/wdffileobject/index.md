@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdffileobject.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -22,4 +27,4 @@ Wdffileobject.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_FILE_INFORMATION_CLASS enumeration](ne-wdffileobject--wdf-file-information-class.md) | The WDF_FILE_INFORMATION_CLASS enumeration identifies the types of file information that a driver can obtain or set. |
+| [_WDF_FILE_INFORMATION_CLASS enumeration](ne-wdffileobject-_wdf_file_information_class.md) | The WDF_FILE_INFORMATION_CLASS enumeration identifies the types of file information that a driver can obtain or set. |

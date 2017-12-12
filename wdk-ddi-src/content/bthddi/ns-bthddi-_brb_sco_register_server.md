@@ -42,6 +42,7 @@ A profile driver uses the _BRB_SCO_REGISTER_SERVER structure to register itself 
   of receiving SCO connections from remote Bluetooth devices.
 
 
+
 ## -syntax
 
 ````
@@ -66,46 +67,57 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field BtAddress
 
 The address of the remote Bluetooth device for which to receive notifications.
 
+
 ### -field Reserved
 
 Reserved for future use. Do not use.
+
 
 ### -field IndicationFlags
 
 A flag that indicates when the callback function that is specified in the 
      <b>IndicationCallback</b> member should be called. The following flags are defined.
      
+
 <table>
 <tr>
 <td>
 <b>Flag</b>
+
 </td>
 <td>
 <b>Description</b>
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_INDICATION_SCO_REQUEST
+
 </td>
 <td>
 Notify the profile driver if there are any incoming SCO connections.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_INDICATION_ESCO_REQUEST
+
 </td>
 <td>
 Notify the profile driver if there are any incoming eSCO connections.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field IndicationCallback
 
@@ -114,10 +126,12 @@ A
      by the profile driver, that the Bluetooth driver stack should call to notify the profile driver about
      incoming SCO connections.
 
+
 ### -field IndicationCallbackContext
 
 The context passed to the function that is defined in the 
      <b>IndicationCallback</b> member.
+
 
 ### -field ReferenceObject
 
@@ -133,12 +147,14 @@ A pointer to an object to pass to the
      <a href="bltooth.brb_sco_unregister_server">
      BRB_SCO_UNREGISTER_SERVER</a> request.
 
+
 ### -field ServerHandle
 
 Handle to the SCO server, if successfully returned. When the profile driver should no longer
      receive remote connect indications it should pass this handle to 
      <a href="bltooth.brb_sco_unregister_server">
      BRB_SCO_UNREGISTER_SERVER</a>.
+
 
 ## -remarks
 To register itself as a SCO server, a profile driver should 
@@ -169,19 +185,23 @@ To stop receiving remote connection notifications, a profile driver should
     <a href="bltooth.brb_sco_unregister_server">
     BRB_SCO_UNREGISTER_SERVER</a> request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -213,5 +233,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_REGISTER_SERVER structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

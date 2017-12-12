@@ -7,8 +7,8 @@ old-location: netvista\rilcapslockingpwdlength.htm
 old-project: netvista
 ms.assetid: 99f21862-5cd6-4bf9-abde-d5d24332a147
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH
+ms.date: 12/8/2017
+ms.keywords: RILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILCAPSLOCKINGPWDLENGTH {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

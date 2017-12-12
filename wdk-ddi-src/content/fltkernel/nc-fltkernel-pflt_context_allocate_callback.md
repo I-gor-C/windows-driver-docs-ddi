@@ -41,6 +41,7 @@ req.irql: <=APC_LEVEL
 A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's <i>ContextAllocateCallback</i> routine. 
 
 
+
 ## -prototype
 
 ````
@@ -60,60 +61,76 @@ PVOID ContextAllocateCallback(
 ### -param PoolType [in]
 
 The type of pool to allocate. This parameter is required and must be one of the following: 
+
 <dl>
 <dd>
 <b>NonPagedPool</b>
+
 </dd>
 <dd>
 <b>PagedPool</b>
+
 </dd>
 </dl>
 Must be <b>NonPagedPool</b> if the <i>ContextType</i> parameter is FLT_VOLUME_CONTEXT. 
+
 
 ### -param Size [in]
 
 The size, in bytes, of the entire context, including both the portion defined by the filter manager and the portion defined by the minifilter driver. 
 
+
 ### -param ContextType [in]
 
 The type of context. This parameter is required and must be one of the following values: 
+
 <dl>
 <dd>
 FLT_FILE_CONTEXT (starting with Windows Vista)
+
 </dd>
 <dd>
 FLT_INSTANCE_CONTEXT
+
 </dd>
 <dd>
 FLT_STREAM_CONTEXT
+
 </dd>
 <dd>
 FLT_STREAMHANDLE_CONTEXT
+
 </dd>
 <dd>
 FLT_SECTION_CONTEXT (starting with Windows 8)
+
 </dd>
 <dd>
 FLT_TRANSACTION_CONTEXT (starting with  Windows Vista) 
+
 </dd>
 <dd>
 FLT_VOLUME_CONTEXT
+
 </dd>
 </dl>
 
 ## -returns
 If not enough free pool is available to satisfy the request, this routine returns a <b>NULL</b> pointer. Otherwise, it returns a pointer to the newly allocated context. 
 
+
 ## -remarks
 For the rare cases that a minifilter driver must perform its own context allocation, it can specify a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the <i>ContextAllocateCallback</i> routine for each context type that it registers when it calls <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. To specify this routine, the minifilter driver stores a pointer to the routine in the <i>ContextAllocateCallback</i> member of the FLT_CONTEXT_REGISTRATION structure for the context type. 
 
 For more information about context registration, see the reference entry for <a href="ifsk.flt_context_registration">FLT_CONTEXT_REGISTRATION</a>. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +141,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,9 +152,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -160,5 +180,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_CONTEXT_ALLOCATE_CALLBACK routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

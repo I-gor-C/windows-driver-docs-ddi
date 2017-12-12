@@ -42,6 +42,7 @@ The <b>IOCTL_LAMP_SET_MODE</b>
    control code sets the mode in which the lamp operates.
 
 
+
 ## -syntax
 
 ````
@@ -55,14 +56,18 @@ The <b>IOCTL_LAMP_SET_MODE</b>
 ### -input-buffer
 <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> points to a buffer of type <a href="..\lamp\ne-lamp-lamp_mode.md">LAMP_MODE</a>.
 
+
 ### -input-buffer-length
 Length of a <a href="..\lamp\ne-lamp-lamp_mode.md">LAMP_MODE</a>.
+
 
 ### -output-buffer
 None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -79,6 +84,7 @@ The driver sets <code>Irp-&gt;IoStatus.Status</code> to <b>STATUS_SUCCESS</b> or
 If the device has been acquired by a camera driver, the lamp driver should return a <b>STATUS_RESOURCE_IN_USE</b> error via <code>Irp-&gt;IoStatus.Status</code>.
 
 
+
 ## -remarks
 
 
@@ -87,6 +93,7 @@ If the device has been acquired by a camera driver, the lamp driver should retur
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

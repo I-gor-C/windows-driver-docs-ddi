@@ -7,7 +7,7 @@ old-location: netvista\ndis_client_chimney_offload_tcp_characteristics.htm
 old-project: netvista
 ms.assetid: 1925cfd4-f83f-48a5-b928-2c663ac0dc61
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, *PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,8 +39,10 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure specifies a protocol or intermediate
   driver's TCP chimney offload-specific entry points.
+
 
 
 ## -syntax
@@ -72,14 +74,17 @@ The header of the NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure. The
      NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure, including the header, in bytes. The 
      <b>Type</b> member of the header is not significant.
 
+
 ### -field Flags
 
 Reserved for system use.
+
 
 ### -field OffloadType
 
 The chimney offload type. The only allowable value is 
      <b>NdisTcpChimneyOffload</b>, which specifies a TCP chimney.
+
 
 ### -field TcpOffloadSendCompleteHandler
 
@@ -87,11 +92,13 @@ The entry point of the driver's
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_send_complete_handler.md">
      ProtocolTcpOffloadSendComplete</a> function.
 
+
 ### -field TcpOffloadReceiveCompleteHandler
 
 The entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_recv_complete_handler.md">
      ProtocolTcpOffloadReceiveComplete</a> function.
+
 
 ### -field TcpOffloadDisconnectCompleteHandler
 
@@ -99,11 +106,13 @@ The entry point of the driver's
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_disconnect_complete_handler.md">
      ProtocolTcpOffloadDisconnectComplete</a> function.
 
+
 ### -field TcpOffloadForwardCompleteHandler
 
 The entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_forward_complete_handler.md">
      ProtocolTcpOffloadForwardComplete</a> function.
+
 
 ### -field TcpOffloadEventHandler
 
@@ -111,11 +120,13 @@ The entry point of the driver's
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">
      ProtocolTcpOffloadEvent</a> function.
 
+
 ### -field TcpOffloadReceiveIndicateHandler
 
 The entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_receive_indicate_handler.md">
      ProtocolTcpOffloadReceiveIndicate</a> function.
+
 
 ## -remarks
 To register its TCP chimney offload entry points, a protocol or intermediate driver calls the 
@@ -125,11 +136,13 @@ To register its TCP chimney offload entry points, a protocol or intermediate dri
     <b>NdisSetOptionalHandlers</b> function, the protocol or intermediate driver passes a pointer to the
     NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +184,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

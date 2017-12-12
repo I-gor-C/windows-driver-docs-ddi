@@ -39,11 +39,14 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPortMidi</code> interface is the MIDI port driver's primary interface. The PortCls system driver implements this interface and exposes it to the adapter driver that implements the <a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a> object. An adapter driver creates an <code>IPortMidi</code> object by calling <a href="audio.pcnewport">PcNewPort</a> and specifying REFIID <b>IID_IPortMidi</b>. <code>IPortMidi</code> inherits from the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface.
+
 An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportMidi</b> object to an <code>IPortMidi</code> object. The PortCls system driver registers this pair with the system as a MIDI filter (see <a href="https://msdn.microsoft.com/622aa4ae-c855-4088-bc1a-30dff7a24d23">MIDI and DirectMusic Filters</a>).
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortMidi</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -53,6 +56,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortMidi</b> interface inher
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Provides information about a USB 2.0 root hub port. This structure is passed by UCX in the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function. 
 
 
+
 ## -syntax
 
 ````
@@ -63,29 +64,36 @@ typedef struct _ROOTHUB_20PORT_INFO {
 
 The USB 2.0 root hub port number.
 
+
 ### -field MinorRevision
 
 Minor revision number.
+
 
 ### -field HubDepth
 
 The hub depth limit.
 
+
 ### -field Removable
 
 A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is removable. 
+
 
 ### -field IntegratedHubImplemented
 
 A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is implemented. 
 
+
 ### -field DebugCapable
 
 A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is debug capable. 
 
+
 ### -field ControllerUsb20HardwareLpmFlags
 
 A value that indicates Link Power Management (LPM) flags for the controller.
+
 
 ## -remarks
 
@@ -95,6 +103,7 @@ A value that indicates Link Power Management (LPM) flags for the controller.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

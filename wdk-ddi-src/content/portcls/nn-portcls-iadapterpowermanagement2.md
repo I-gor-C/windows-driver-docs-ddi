@@ -39,11 +39,14 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IAdapterPowerManagement2</code> interface inherits from <b>IUnknown</b> and it is used to manage the power state of an audio adapter. In contrast with the <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a> interface, <code>IAdapterPowerManagement2</code> provides the adapter driver with messages about device and system power states. This enables the driver to make more efficient power management adjustments.
+
 <code>IAdapterPowerManagement2</code> is implemented by the audio adapter driver and the driver must register this interface with Portcls.sys (Portcls) so that it can receive power management messages. To register this interface, the driver must call <a href="audio.pcregisteradapterpowermanagement">PcRegisterAdapterPowerManagement</a>. If you want to fill the <a href="http://go.microsoft.com/fwlink/p/?linkid=143127">caps structure</a> for your device, your adapter driver can call <b>PcRegisterAdapterPowerManagement</b> from within the <a href="kernel.adddevice">AddDevice</a> function or before your driver calls <b>AddDevice</b>.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IAdapterPowerManagement2</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -53,6 +56,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IAdapterPowerManagement2</b> 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

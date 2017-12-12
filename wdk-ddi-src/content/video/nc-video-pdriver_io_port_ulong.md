@@ -7,7 +7,7 @@ old-location: display\svgahwioportulong.htm
 old-project: display
 ms.assetid: e749188f-a255-403a-8ae9-a2c3c9b41c58
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <i>SvgaHwIoPortUlong</i> traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of ULONG-sized data.
 
 
+
 ## -prototype
 
 ````
@@ -63,13 +64,16 @@ VP_STATUS SvgaHwIoPortUlong(
 
 Specifies the miniport driver-determined context value that was set in the <b>EmulatorAccessEntriesContext</b> member of VIDEO_PORT_CONFIG_INFO.
 
+
 ### -param Port 
 
 Specifies the mapped I/O port to be trapped.
 
+
 ### -param AccessMode 
 
 Specifies the type of access allowed, which can be one or a combination (ORed) of the following values:
+
 
 
 ### -param EMULATOR_READ_ACCESS
@@ -77,12 +81,15 @@ Specifies the type of access allowed, which can be one or a combination (ORed) o
 
 
 
+
 ### -param Data 
 
 Pointer to the ULONG data to be transferred.
 
+
 ## -returns
 <i>SvgaHwIoPortUlong</i> returns the final status of the operation.
+
 
 ## -remarks
 Only miniport drivers of VGA-compatible SVGA adapters have <i>SvgaHwIoPortXxx</i> functions. (See <a href="display.svga_functions">SVGA Functions</a>.)
@@ -97,11 +104,13 @@ If one or more application-issued x86 <b>IN</b> or <b>OUT</b> instructions might
 
 <i>SvgaHwIoPortUlong</i> should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +121,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDRIVER_IO_PORT_ULONG callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDRIVER_IO_PORT_ULONG callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

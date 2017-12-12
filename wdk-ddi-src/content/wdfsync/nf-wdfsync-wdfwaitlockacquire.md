@@ -7,7 +7,7 @@ old-location: wdf\wdfwaitlockacquire.htm
 old-project: wdf
 ms.assetid: 6fe7465d-938a-400f-b141-76e8a5ffbe90
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfWaitLockAcquire
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WdfWaitLockAcquire</b> method acquires a specified wait lock.
+
 
 
 ## -syntax
@@ -59,24 +61,33 @@ NTSTATUS WdfWaitLockAcquire(
 
 A handle to a framework wait-lock object, obtained by a previous call to <a href="wdf.wdfwaitlockcreate">WdfWaitLockCreate</a>.
 
+
 ### -param Timeout [in, optional]
 
 An optional pointer to a time-out value. The time-out value is specified in system time units (100-nanosecond intervals).
+
  If the pointer is non-<b>NULL</b>, the framework cancels the attempt to obtain the lock if it is not completed within the specified time-out period. Time-out values can be negative, positive, or zero, as follows:
+
 <ul>
 <li>
 If the time-out value is negative, the expiration time is relative to the current system time.
+
 </li>
 <li>
 If the time-out value is positive, the expiration time is specified as an absolute time (which is actually relative to January 1, 1601). 
+
 </li>
 <li>
 If the time-out value is zero, <b>WdfWaitLockAcquire</b> attempts to acquire the lock and then returns immediately, whether it has acquired the lock or not. 
+
 </li>
 </ul>
 Relative expiration times are not affected by any changes to the system time that might occur within the specified time-out period. Absolute expiration times do reflect system time changes.
+
 The framework provides <a href="wdf.wdf_timer_object_reference">time conversion functions</a> that convert time values into system time units.
+
 If the caller supplies a <b>NULL</b> pointer, the method waits indefinitely until it has acquired the lock.
+
 
 ## -returns
 <b>WdfWaitLockAcquire</b> can return the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>:
@@ -101,6 +112,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 
+
 ## -remarks
 The <b>WdfWaitLockAcquire</b> method does not return until it acquires the wait lock or until the time-out period expires. 
 
@@ -114,11 +126,13 @@ For more information about wait locks, see <a href="wdf.synchronization_techniqu
 
 The following code example acquires a wait lock, adds a device object to an object collection, and releases the wait lock.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -129,22 +143,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,6 +174,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -166,14 +186,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_wdfwaitlock">WdfWaitlock</a>, <a href="devtest.kmdf_wdfwaitlockrelease">WdfWaitlockRelease</a>
@@ -194,5 +217,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWaitLockAcquire method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWaitLockAcquire method%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

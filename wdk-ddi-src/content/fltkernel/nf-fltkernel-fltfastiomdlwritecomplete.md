@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FltFastIoMdlWriteComplete</b> routine frees the resources that <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> allocated.
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ BOOLEAN FsRtlMdlWriteCompleteDev(
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 A pointer to the file object.
+
 
 ### -param FileOffset [in]
 
 A pointer to a value that specifies the starting byte offset within the cache that holds the data.
 
+
 ### -param MdlChain [in]
 
 A pointer to a linked list of memory descriptor lists (MDLs) that <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> allocated.
 
+
 ## -returns
 The <b>FltFastIoMdlWriteComplete</b> routine returns <b>TRUE</b> if the operation succeeds and <b>FALSE</b> if the operation fails or if the FO_WRITE_THROUGH flag is set in the file object.
+
 
 ## -remarks
 The <b>FltFastIoMdlWriteComplete</b> routine frees the memory descriptor lists (MDLs) that <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> allocated and unlocks the cache memory that <b>FltFastIoPrepareMdlWrite</b> locked.
@@ -81,11 +87,13 @@ If the FO_WRITE_THROUGH flag is set on the file object pointed to by the <i>File
 
 Each call to <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> must be followed by a call to <b>FltFastIoMdlWriteComplete</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +136,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -134,9 +147,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -148,5 +163,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFastIoMdlWriteComplete routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: storage\dsm_counters.htm
 old-project: storage
 ms.assetid: 3202aec4-d95e-4162-86a1-17595ed2a5b5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DSM_COUNTERS, DSM_COUNTERS, *PDSM_COUNTERS
+ms.date: 12/8/2017
+ms.keywords: _DSM_COUNTERS, *PDSM_COUNTERS, DSM_COUNTERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The DSM_COUNTERS structure holds the various timer counters that are applicable to all LUNs that are controlled by the DSM.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _DSM_COUNTERS {
 
 An unsigned 32-bitfield that is used as a flag. This field indicates if path verification must be performed by MPIO periodically on all paths that expose devices that are controlled by this particular DSM.
 
+
 ### -field PathVerificationPeriod
 
 An unsigned 32-bitfield that is used to indicate the periodicity (in seconds) with which MPIO has been requested to perform path verification. This field is only honored if <i>PathVerifyEnabled</i> is <b>TRUE</b>.
+
 
 ### -field PDORemovePeriod
 
 An unsigned 32-bitfield that controls the amount of time (in seconds) that the pseudo-LUN will continue to remain in system memory, even after losing all its path information.
 
+
 ### -field RetryCount
 
 An unsigned 32-bitfield that specifies the number of times a failed I/O will be retried.
+
 
 ### -field RetryInterval
 
 An unsigned 32-bitfield that specifies the interval of time (in seconds) after which a failed request is retried.
 
+
 ### -field Reserved32
 
 Should be zero.
 
+
 ### -field Reserved64
 
 Should be zero.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ Should be zero.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

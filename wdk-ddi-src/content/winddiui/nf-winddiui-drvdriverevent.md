@@ -7,7 +7,7 @@ old-location: print\drvdriverevent.htm
 old-project: print
 ms.assetid: 84d1f438-b6ee-4199-89ae-9384601203b3
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: DrvDriverEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The print spooler calls a printer interface DLL's <b>DrvDriverEvent</b> function when the spooler processes driver-specific events that might require action by the printer driver.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ BOOL DrvDriverEvent(
 ### -param dwDriverEvent 
 
 Caller-supplied bit flag indicating the event that has occurred. Valid flags are listed in the following table.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -67,25 +69,31 @@ Caller-supplied bit flag indicating the event that has occurred. Valid flags are
 <tr>
 <td>
 DRIVER_EVENT_DELETE
+
 </td>
 <td>
 The driver is being removed.
+
 </td>
 </tr>
 <tr>
 <td>
 DRIVER_EVENT_INITIALIZE
+
 </td>
 <td>
 The driver has just been installed.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param dwLevel 
 
 Caller-supplied value indicating the type of structure pointed to by the <i>pDriverInfo</i> parameter, as indicated in the following table.
+
 <table>
 <tr>
 <th><i>dwLevel</i> Value</th>
@@ -94,32 +102,40 @@ Caller-supplied value indicating the type of structure pointed to by the <i>pDri
 <tr>
 <td>
 1
+
 </td>
 <td>
 DRIVER_INFO_1
+
 </td>
 </tr>
 <tr>
 <td>
 2
+
 </td>
 <td>
 DRIVER_INFO_2
+
 </td>
 </tr>
 <tr>
 <td>
 3
+
 </td>
 <td>
 DRIVER_INFO_3
+
 </td>
 </tr>
 </table>
  
+
 <dl>
 <dd>
 The DRIVER_INFO_<i>N</i> structures are described in the Microsoft Windows SDK documentation.
+
 </dd>
 </dl>
 
@@ -127,12 +143,15 @@ The DRIVER_INFO_<i>N</i> structures are described in the Microsoft Windows SDK d
 
 Caller-supplied pointer to a structure whose type is identified by the <i>dwLevel</i> parameter. 
 
+
 ### -param lParam 
 
 Caller-supplied flags. See the following Remarks section.
 
+
 ## -returns
 If the operation succeeds, the function should return <b>TRUE</b>. Otherwise, it should return <b>FALSE</b>.
+
 
 ## -remarks
 The optional <b>DrvDriverEvent</b> function is called by the spooler's <b>AddPrinterDriverEx</b> and <b>DeletePrinterDriverEx</b> functions, which are described in the Windows SDK documentation.
@@ -143,11 +162,13 @@ If <i>dwDriverEvent</i> is DRIVER_EVENT_DELETE, the <i>lparam</i> parameter cont
 
 Because the <b>DrvDriverEvent</b> function is called in the context of the print spooler, it cannot display a user interface.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -158,6 +179,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

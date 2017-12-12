@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-size-range-0032.htm
 old-project: display
 ms.assetid: a4781fea-4efc-442d-8503-12be17afa9b1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_SIZE_RANGE_0032, D3D12DDI_VIDEO_SIZE_RANGE_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 Video size range.
+
 
 
 ## -syntax
@@ -60,17 +62,21 @@ typedef struct _D3D12DDI_VIDEO_SIZE_RANGE_0032 {
 
 Maximum width.
 
+
 ### -field MaxHeight
 
 Maximum height.
+
 
 ### -field MinWidth
 
 Minimum width.
 
+
 ### -field MinHeight
 
 Minimum height.
+
 
 ## -remarks
 
@@ -80,6 +86,7 @@ Minimum height.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

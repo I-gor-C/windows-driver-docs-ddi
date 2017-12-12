@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 7404BFC3-8942-4927-9F5B-9FA860F9F95F
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _QUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT
+ms.keywords: _QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>QUERY_FILE_LAYOUT_INPUT</b> structure selects which file layout entries are returned from a <a href="ifsk.fsctl_query_file_layout">FSCTL_QUERY_FILE_LAYOUT</a> request.
 
 
+
 ## -syntax
 
 ````
@@ -63,9 +64,11 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 
 The number of filter ranges present in the <b>Filter</b> array.
 
+
 ### -field Flags
 
 Indicates which file layout entries are included in the query results. <b>Flags</b> is set to a valid combination of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -78,6 +81,7 @@ Indicates which file layout entries are included in the query results. <b>Flags<
 </td>
 <td width="60%">
 Stream extent entries are included in the query results. To use this flag, the <b>QUERY_FILE_LAYOUT_INCLUDE_STREAMS</b> flag must also be set.
+
 </td>
 </tr>
 <tr>
@@ -87,6 +91,7 @@ Stream extent entries are included in the query results. To use this flag, the <
 </td>
 <td width="60%">
 Extra file information name entries are included in the query results.
+
 </td>
 </tr>
 <tr>
@@ -96,6 +101,7 @@ Extra file information name entries are included in the query results.
 </td>
 <td width="60%">
 File name entries are included in the query results.
+
 </td>
 </tr>
 <tr>
@@ -105,6 +111,7 @@ File name entries are included in the query results.
 </td>
 <td width="60%">
 File stream entries are included in the query results.
+
 </td>
 </tr>
 <tr>
@@ -114,6 +121,7 @@ File stream entries are included in the query results.
 </td>
 <td width="60%">
 Reset the file  layout entry iterator to the beginning of the volume.
+
 </td>
 </tr>
 <tr>
@@ -123,14 +131,17 @@ Reset the file  layout entry iterator to the beginning of the volume.
 </td>
 <td width="60%">
 Include entries for resident streams and unallocated attributes. To use this flag, the <b>QUERY_FILE_LAYOUT_INCLUDE_STREAMS</b> flag must also be set.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field FilterType
 
 Specifies a filtering method to restrict returned layout information. May be one of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -143,6 +154,7 @@ Specifies a filtering method to restrict returned layout information. May be one
 </td>
 <td width="60%">
 Perform no filtering and return all information. When using this type, <i>NumberOfPairs</i> must be 0.
+
 </td>
 </tr>
 <tr>
@@ -152,6 +164,7 @@ Perform no filtering and return all information. When using this type, <i>Number
 </td>
 <td width="60%">
 Restrict filter layout information to the ranges in <b>Filter.ClusterRanges</b>.
+
 </td>
 </tr>
 <tr>
@@ -161,23 +174,29 @@ Restrict filter layout information to the ranges in <b>Filter.ClusterRanges</b>.
 </td>
 <td width="60%">
 Restrict filter layout information to the ranges in <b>Filter.FileReferenceRanges</b>.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Reserved
 
 Reserved for system use.
 
+
 ### -field Filter
 
 An array of filter structures used to select specific layout information. These contain either cluster or file reference ranges. The array length is specified by the <b>NumberOfPairs</b> member. Each range must be distinct and cannot overlap with any other range.
+
 This member is ignored if <b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b> is specified in <b>FilterType</b>.
+
 
 ### -field ClusterRanges
 
 Specifies a set of cluster ranges to filter layout information. The range structure has the following format.
+
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -194,9 +213,11 @@ Specifies a set of cluster ranges to filter layout information. The range struct
 </table></span></div>
 
 
+
 ### -field FileReferenceRanges
 
 Specifies a set of file reference ranges to filter layout information. The range structure has the following format.
+
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -212,6 +233,7 @@ Specifies a set of file reference ranges to filter layout information. The range
 </tr>
 </table></span></div>
 
+
 </dd>
 </dl>
 
@@ -224,19 +246,23 @@ The file layout entries are returned in the output buffer following a <a href="i
 
 When <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b>, the <b>ClusterRanges</b> member of the <b>Filter</b> union is used for range filtering. Otherwise, if <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID</b>, the <b>FileReferenceRanges</b> member is used for range filtering.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting in Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -256,5 +282,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

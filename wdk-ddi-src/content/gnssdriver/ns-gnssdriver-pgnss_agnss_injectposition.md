@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 1FB73F94-F8F3-409F-8B34-3CD303512AD0
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_AGNSS_INJECTPOSITION, *PGNSS_AGNSS_INJECTPOSITION, GNSS_AGNSS_INJECTPOSITION
+ms.keywords: PGNSS_AGNSS_INJECTPOSITION, GNSS_AGNSS_INJECTPOSITION, *PGNSS_AGNSS_INJECTPOSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure defines the format for AGNSS position injection.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field Age
 
 Indicates how long the position has been aged in seconds.
 
+
 ### -field BasicData
 
 Position data.
 
+
 ### -field AccuracyData
 
 Position accuracy.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Position accuracy.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

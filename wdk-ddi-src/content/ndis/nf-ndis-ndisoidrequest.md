@@ -7,7 +7,7 @@ old-location: netvista\ndisoidrequest.htm
 old-project: netvista
 ms.assetid: a3ddeec4-0414-48ed-ab3b-5df252682655
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   status of an adapter or set the state of an adapter.
 
 
+
 ## -syntax
 
 ````
@@ -61,11 +62,13 @@ The handle returned by the
      <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function that
      identifies the target adapter on the binding.
 
+
 ### -param OidRequest [in]
 
 A pointer to an 
      <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
      the operation requested with a given OID_<i>XXX</i> code to either query the status of an adapter or to set the state of an adapter.
+
 
 ## -returns
 The underlying driver determines which NDIS_STATUS_<i>XXX</i> code 
@@ -128,6 +131,7 @@ The underlying driver determines which NDIS_STATUS_<i>XXX</i> code
 
  
 
+
 ## -remarks
 A protocol driver must allocate sufficient memory to hold the information buffer that is associated
     with the specified OID. The driver must also allocate and set up the buffer at 
@@ -157,11 +161,13 @@ For more information about the general and media-specific OIDs and their respect
     information buffers, see 
     <a href="netvista.ndis_oids">NDIS OIDs</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -172,14 +178,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -190,6 +199,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -200,14 +210,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>
@@ -231,5 +244,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOidRequest function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOidRequest function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UPSTurnOff</b> function turns off the UPS unit's power outlets, after a specified delay time.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ void UPSTurnOff(
 
 Specifies the minimum amount of time, in seconds, to wait before turning off the UPS unit's power outlets.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The actual delay time should not be less than that specified by <i>aTurnOffDelay</i>, to ensure adequate time for the operating system to shut down. 
@@ -69,11 +72,13 @@ The function must not postpone the request to turn off the power. Doing so could
 
 On the other hand, the function must not turn off power from a UPS system that does not have an internal turnoff delay. Doing so will result in a premature loss of power to the computer, which can cause system corruption.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

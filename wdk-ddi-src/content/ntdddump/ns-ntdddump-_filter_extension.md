@@ -7,7 +7,7 @@ old-location: storage\filter_extension.htm
 old-project: storage
 ms.assetid: 1113e917-3273-4ba7-8702-fe90a22fb024
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _FILTER_EXTENSION, FILTER_EXTENSION, *PFILTER_EXTENSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The crash dump driver passes a pointer to a FILTER_EXTENSION structure when the filter driver callback routines are called.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _FILTER_EXTENSION {
 
 This parameter indicates the type of dump that this instance of the filter driver is loaded on.
 
+
 ### -field DeviceObject
 
 A pointer to the device object of the dump volume. This pointer points to the top of the dump volume stack.
+
 
 ### -field Geometry
 
 The disk geometry of the dump device in <a href="storage.disk_geometry">DISK_GEOMETRY</a> format.
 
+
 ### -field DiskSize
 
 Size of the disk.
+
 
 ### -field PartitionInfo
 
 The partition information in <a href="storage.disk_partition_info">DISK_PARTITION_INFO</a> format.
 
+
 ### -field DumpData
 
 A pointer to the context data that is provided by the filter driver in <a href="storage.filter_initialization_data">FILTER_INITIALIZATION_DATA</a>.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ A pointer to the context data that is provided by the filter driver in <a href="
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista and Windows Server 2008.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,5 +129,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FILTER_EXTENSION structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FILTER_EXTENSION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

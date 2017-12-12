@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 652f64e2-310b-46c9-8b00-c827a7475b07
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _DMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT
+ms.keywords: _DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DMUS_KERNEL_EVENT structure is used to package time-stamped music events.
 
 
+
 ## -syntax
 
 ````
@@ -69,36 +70,45 @@ typedef struct _DMUS_KERNEL_EVENT {
 
       Miniport drivers should not modify this member. Reserved for future use. Do not use.
 
+
 ### -field cbStruct
 
 
       Miniport drivers should not modify this member.
        This member specifies the size of the DMUS_KERNEL_EVENT structure itself and could change in the future.
 
+
 ### -field cbEvent
 
 Specifies the unrounded number of event bytes referred to by <b>uData</b>.
 
+
 ### -field usChannelGroup
 
 Specifies which channel group (set of 16 MIDI channels) receives or originated this event. This is unique only within the target MIDI device (miniport driver).
+
 
 ### -field usFlags
 
 Specifies whether an event is a package and whether this event concludes the message. A package encapsulates a list of events that should be dealt with atomically. This member is a bitfield that can be set to the bitwise OR of one or more of the following flag bits:
 
 
+
+
 ### -field DMUS_KEF_EVENT_COMPLETE (zero)
 
 Specifies messages in which the entire message is contained either in <b>uData.abData</b> or in the buffer pointed to by <b>uData.pbData</b>. The former includes all short messages, and potentially includes very brief SysEx messages (see Microsoft Windows SDK documentation) as well. Keep in mind that <b>sizeof</b>(PBYTE) can be 8 instead of 4 on 64-bit versions of Windows.
+
 
 ### -field DMUS_KEF_EVENT_INCOMPLETE
 
 Specifies that this event is an incomplete package or SysEx message (see Windows SDK documentation). This flag specifies that the message continues beyond this event. During MIDI capture, the miniport driver can send "uncooked" MIDI events (raw MIDI input data) to the capture sink by specifying this flag.
 
+
 ### -field DMUS_KEF_PACKAGE_EVENT
 
 Specifies that this event is a package. The <b>uData.pPackageEvt</b> field contains a pointer to a chain of events which should be dealt with atomically.
+
 </dd>
 </dl>
 
@@ -106,13 +116,16 @@ Specifies that this event is a package. The <b>uData.pPackageEvt</b> field conta
 
 Specifies the presentation time for this event. This 64-bit value is expressed in 100-nanosecond units. The master clock should be used to evaluate this presentation time.
 
+
 ### -field ullBytePosition
 
 8 16
 
+
 ### -field pNextEvt
 
 Pointer to the next event in the list, or <b>NULL</b> if no event follows. This facilitates passing chains of identically time-stamped messages to the miniport driver. Additionally, hardware that does its own mixing can receive or transmit groups of messages at one time.
+
 
 ### -field uData
 
@@ -121,13 +134,16 @@ Pointer to the next event in the list, or <b>NULL</b> if no event follows. This 
 
 A byte array containing <b>cbEvent</b> bytes of event data. The event data are typically MIDI status and data bytes. This member of <b>uData</b> is used if <b>cbEvent</b> is less than or equal to <b>sizeof</b>(PBYTE).
 
+
 ### -field pbData
 
 Pointer to a buffer containing <b>cbEvent</b> bytes of event data. The event data are typically MIDI status and data bytes. This member of <b>uData</b> is used if <b>uFlags</b> is set to DMUS_KEF_EVENT_COMPLETE and <b>cbEvent</b> is greater than <b>sizeof</b>(PBYTE).
 
+
 ### -field pPackageEvt
 
 Pointer to a chain of events, which is in the form of a linked list of DMUS_KERNEL_EVENT structures. The event data typically consist of MIDI status and data bytes. The events in the list are to be handled together. This member of <b>uData</b> is used if <b>uFlags</b> is set to DMUS_KEF_PACKAGE_EVENT.
+
 </dd>
 </dl>
 
@@ -148,11 +164,13 @@ Mapping to the correct DLS instrument is implicit in the triplet of
 
 Presentation time does not advance during the states KSSTATE_PAUSE and KSSTATE_STOP, and is reset during KSSTATE_STOP. For more information, see <a href="https://msdn.microsoft.com/e3ffc7ca-f3cd-4989-af40-78b6a2438f95">KS Clocks</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -172,5 +190,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20DMUS_KERNEL_EVENT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

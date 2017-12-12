@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 1b57413b-e1cf-4ec4-80f4-aedffc015b46
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS
+ms.keywords: _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -47,6 +47,8 @@ req.product: Windows 10 or later.
 
 
 
+
+
 ## -syntax
 
 ````
@@ -62,6 +64,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS {
 
 Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.
 
+
 ## -remarks
 
 
@@ -70,6 +73,7 @@ Handle to the port controller object that the client driver received in the prev
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>KsValidateClockCreateRequest</b> function validates the clock creation request and returns the create structure associated with the request.
+
 This can only be called at PASSIVE_LEVEL.
+
 
 
 ## -syntax
@@ -58,12 +60,15 @@ NTSTATUS KsValidateClockCreateRequest(
 
 Specifies the IRP with the clock create request being handled.
 
+
 ### -param ClockCreate [out]
 
 Specifies the clock create structure pointer passed to the create request.
 
+
 ## -returns
 The <b>KsValidateClockCreateRequest</b> function returns STATUS_SUCCESS if successful, or an error if unsuccessful.
+
 
 ## -remarks
 
@@ -73,6 +78,7 @@ The <b>KsValidateClockCreateRequest</b> function returns STATUS_SUCCESS if succe
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +100,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

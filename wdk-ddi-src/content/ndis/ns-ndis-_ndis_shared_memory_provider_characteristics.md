@@ -7,7 +7,7 @@ old-location: netvista\ndis_shared_memory_provider_characteristics.htm
 old-project: netvista
 ms.assetid: 45001da1-5fe3-4383-8da7-31e3ee115c1f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, *PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure specifies shared memory provider
   characteristics.
+
 
 
 ## -syntax
@@ -67,9 +68,11 @@ The
      <b>Revision</b> member to NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PROVIDER_CHARACTERISTICS_REVISION_1.
 
+
 ### -field Flags
 
 Reserved for NDIS.
+
 
 ### -field ProviderContext
 
@@ -78,16 +81,19 @@ An NDIS_HANDLE to a block of driver-allocated context information that stores in
      <i>NetXxxSharedMemory</i> functions at the 
      <i>ProviderContext</i> parameter.
 
+
 ### -field AllocateSharedMemoryHandler
 
 An entry point for the 
      <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">
      NetAllocateSharedMemory</a> function.
 
+
 ### -field FreeSharedMemoryHandler
 
 An entry point for the 
      <a href="..\ndis\nc-ndis-free_shared_memory_handler.md">NetFreeSharedMemory</a> function.
+
 
 ## -remarks
 To specify entry points for shared memory services, an NDIS driver initializes an
@@ -95,19 +101,23 @@ To specify entry points for shared memory services, an NDIS driver initializes a
     <a href="netvista.ndissetoptionalhandlers">
     NdisSetOptionalHandlers</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

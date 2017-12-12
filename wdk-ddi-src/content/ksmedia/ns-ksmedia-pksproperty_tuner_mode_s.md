@@ -41,6 +41,7 @@ req.irql:
 The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 Specifies an initialized <a href="stream.ksproperty">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
+
 ### -field Mode
 
 Specifies the current tuner mode. If the request is a Get request, the minidriver should return the current tuner mode. If the request is a Set request, the minidriver should switch the current tuner mode to the specified value. This member can be one of the following tuner modes from the KSPROPERTY_TUNER_MODES enumeration that is defined in <i>K</i><i>smedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -68,45 +71,56 @@ Specifies the current tuner mode. If the request is a Get request, the minidrive
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_TV
+
 </td>
 <td>
 Indicates that the tuner is currently tuning (get) or should switch to tuning broadcast or cable television channels (set).
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_FM_RADIO
+
 </td>
 <td>
 Indicates that the tuner is currently tuning (get) or should switch to tuning (set) FM radio channels.
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_AM_RADIO
+
 </td>
 <td>
 Indicates that the tuner is currently tuning (get) or should switch to tuning (set) AM radio channels.
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_DSS
+
 </td>
 <td>
 Indicates that the tuner is currently tuning (get) or should switch to tuning (set) tuning DSS channels.
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_ATSC
+
 </td>
 <td>
 Indicates that the tuner is capable of tuning (get) or should switch to tuning (set) Advanced Television Systems Committee broadcasts (Digital TV for the United States). This setting can also be used by DVB-T and DVB-C systems.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -116,6 +130,7 @@ Indicates that the tuner is capable of tuning (get) or should switch to tuning (
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,5 +153,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_TUNER_MODE_S structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_device_funcs_core_video_0020.htm
 old-project: display
 ms.assetid: E880F758-A872-4B59-BF7D-602C3ACDA490
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_DEVICE_FUNCS_CORE_VIDEO_0020, D3D12DDI_DEVICE_FUNCS_CORE_VIDEO_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This structure contains device functions for core features in  video.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_CORE_VIDEO_0020 {
 
 A pointer for a callback function to get pageable size. 
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ A pointer for a callback function to get pageable size.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

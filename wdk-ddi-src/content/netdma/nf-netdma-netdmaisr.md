@@ -7,7 +7,7 @@ old-location: netvista\netdmaisr.htm
 old-project: netvista
 ms.assetid: 81aa5707-b614-429b-bd8e-0204eec74e0f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NetDmaIsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,9 +59,11 @@ A handle that identifies the DMA channel. The DMA provider driver received this 
      <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
      ProviderAllocateDmaChannel</a> function.
 
+
 ### -param DmaDescriptor [in]
 
 The physical address of the DMA descriptor that is associated with the interrupt.
+
 
 ### -param pCpuNumber [out]
 
@@ -69,8 +71,10 @@ The number of the CPU that is associated with the interrupt DPC. The NetDMA inte
      CPU number at the provided address before 
      <b>NetDmaIsr</b> returns.
 
+
 ## -returns
 None
+
 
 ## -remarks
 DMA provider drivers call the 
@@ -85,11 +89,13 @@ If the NET_DMA_INTERRUPT_ON_COMPLETION flag in the
 A DMA provider driver should do as little work as possible in its ISR handler. The driver should defer
     I/O operations to the interrupt DPC handler.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,14 +106,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NetDMA 1.0 drivers in Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,9 +127,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DEVICE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -135,5 +146,8 @@ DEVICE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaIsr function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaIsr function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

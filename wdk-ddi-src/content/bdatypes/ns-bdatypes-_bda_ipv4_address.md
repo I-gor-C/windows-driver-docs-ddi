@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 5206CEEB-C1EF-4AE0-B4BC-52E8D85AD706
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_IPv4_ADDRESS, *PBDA_IPv4_ADDRESS, BDA_IPv4_ADDRESS
+ms.keywords: _BDA_IPv4_ADDRESS, BDA_IPv4_ADDRESS, *PBDA_IPv4_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef struct _BDA_IPv4_ADDRESS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsObject</b> interface provides a method to retrieve the file handle of a KS object. 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsObject</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IKsObject</b> also has these types of members:
 
@@ -66,6 +67,7 @@ Retrieves the file handle of a KS object.
 
  
 
+
 ## -members
 The <b>IKsObject</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -79,11 +81,13 @@ The <b>IKsObject</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Retrieves the file handle of a KS object.
+
 </td>
 </tr>
 </table>Retrieves the file handle of a KS object.
 
  
+
 
 ## -remarks
 The IID for this interface is IID_IKsObject.
@@ -92,11 +96,13 @@ The IID for this interface is IID_IKsObject.
 
 __STREAMS__ is defined in <i>Stream.h</i>, a header from the DirectX SDK.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

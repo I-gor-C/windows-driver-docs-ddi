@@ -7,8 +7,8 @@ old-location: netvista\riluiccservice_2.htm
 old-project: netvista
 ms.assetid: ffd61de0-652a-4174-a0d2-d53c28180ea5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCSERVICE, *LPRILUICCSERVICE, RILUICCSERVICE
+ms.date: 12/8/2017
+ms.keywords: RILUICCSERVICE, RILUICCSERVICE, *LPRILUICCSERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILUICCSERVICE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

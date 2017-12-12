@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SerCx2CustomReceiveTransactionCreate</b> method creates a custom-receive-transaction object, which version 2 of the serial framework extension (SerCx2) uses to perform custom-receive transactions.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ NTSTATUS SerCx2CustomReceiveTransactionCreate(
 
 A <a href="serports.sercx2customreceive">SERCX2CUSTOMRECEIVE</a> handle to a custom-receive object. The serial controller driver previously called the <a href="serports.sercx2customreceivecreate">SerCx2CustomReceiveCreate</a> method to create this object.
 
+
 ### -param CustomReceiveTransactionConfig [in]
 
 A pointer to a <a href="serports.sercx2_custom_receive_transaction_config">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a> structure. Before calling this method, the caller must call the <a href="serports.sercx2_custom_receive_transaction_config_init">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a> function to initialize the structure. This structure contains pointers to a set of event callback routines that are implemented by the serial controller driver. SerCx2 calls these functions to do an I/O transaction that uses the custom data-transfer mechanism to read data received by the serial controller.
+
 
 ### -param Attributes [in]
 
 A pointer to a <a href="kmdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes to assign to the new custom-receive-transaction object. Before calling this method, the caller must call the <a href="kmdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize the structure. This parameter is optional and can be specified as WDF_NO_OBJECT_ATTRIBUTES if the serial controller driver does not need to assign attributes to the object. For more information, see Remarks.
 
+
 ### -param CustomReceiveTransaction [out]
 
 A pointer to a location to which this method writes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to the newly created custom-receive-transaction object. SerCx2 and the serial controller driver use this handle in subsequent calls to refer to this object.
+
 
 ## -returns
 This method returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status codes.
@@ -89,6 +94,7 @@ This method returns STATUS_SUCCESS if the call is successful. Possible error ret
 
  
 
+
 ## -remarks
 Your serial controller driver can call this method to create a custom-receive-transaction object. SerCx2 uses this object to manage custom-receive transactions, which are I/O transactions that use a custom data-transfer mechanism to read data received by the serial controller.
 
@@ -100,11 +106,13 @@ If the specified combination of implemented callback functions is not valid, the
 
 For more information about creating custom-receive-transaction objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>. For more information about custom-receive transactions, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C-BE91-405A4BA2D5B0">SerCx2 Custom-Receive Transactions</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -115,14 +123,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +144,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -177,5 +190,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SerCx2CustomReceiveTransactionCreate method%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\wdi_power_mode_reason_code.htm
 old-project: netvista
 ms.assetid: F9FAA622-A844-4D9F-A0E6-D919C1FAD3AB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_POWER_MODE_REASON_CODE, WDI_POWER_MODE_REASON_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_POWER_MODE_REASON_CODE enumeration defines the reasons for entering the Power Save state.
 
 
+
 ## -syntax
 
 ````
@@ -62,25 +63,31 @@ typedef enum _WDI_POWER_MODE_REASON_CODE {
 
 Device is initially in this state and has not changed since.
 
+
 ### -field WDI_POWER_MODE_REASON_CODE_NONCOMPLIANT_AP
 
 AP is not compliant. As to be in CAM.
+
 
 ### -field WDI_POWER_MODE_REASON_CODE_LEGACY_P2P_DEVICE
 
 WFD device is legacy.
 
+
 ### -field WDI_POWER_MODE_REASON_CODE_COMPLIANT_AP
 
 AP is compliant.
+
 
 ### -field WDI_POWER_MODE_REASON_CODE_COMPLIANT_P2P_DEVICE
 
 All connected WFD device can do PSM.
 
+
 ### -field WDI_POWER_MODE_REASON_CODE_OTHERS
 
 Other reason.
+
 
 ## -remarks
 
@@ -90,22 +97,27 @@ Other reason.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

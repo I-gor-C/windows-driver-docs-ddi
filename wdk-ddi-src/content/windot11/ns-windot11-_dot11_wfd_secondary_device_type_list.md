@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_secondary_device_type_list.htm
 old-project: netvista
 ms.assetid: ABD61A6C-EE0A-49AF-AE8C-75014C2A09D4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, *PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,6 +57,7 @@ typedef struct _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST {
 ### -field Header
 
 Specifies the type, revision and size of the <b>DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST</b> structure. The required settings for the members of <b>Header</b> are the following:
+
 <table>
 <tr>
 <th>Member</th>
@@ -77,17 +78,21 @@ Specifies the type, revision and size of the <b>DOT11_WFD_SECONDARY_DEVICE_TYPE_
 </table>
  
 
+
 ### -field uNumOfEntries
 
 The number of entries present in <b>SecondaryDeviceTypes</b>.
+
 
 ### -field uTotalNumOfEntries
 
 The maximum number of entries the <b>SecondaryDeviceTypes</b> array can contain.
 
+
 ### -field SecondaryDeviceTypes
 
 An array of secondary device types.
+
 
 ## -remarks
 
@@ -97,14 +102,17 @@ An array of secondary device types.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

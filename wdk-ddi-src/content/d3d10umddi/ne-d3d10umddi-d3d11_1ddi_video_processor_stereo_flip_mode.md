@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_stereo_flip_mode.htm
 old-project: display
 ms.assetid: b385a0fd-6181-45c3-ba6e-e292e0b10e68
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 For stereo 3-D video, specifies whether the data in frame 0 or frame 1 is flipped, either horizontally or vertically.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE {
 
 Neither frame is flipped.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_FRAME0
 
 The data in frame 0 is flipped.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_FRAME1
 
 The data in frame 1 is flipped.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ The data in frame 1 is flipped.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

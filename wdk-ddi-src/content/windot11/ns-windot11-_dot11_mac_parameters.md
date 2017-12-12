@@ -7,7 +7,7 @@ old-location: netvista\dot11_mac_parameters.htm
 old-project: netvista
 ms.assetid: 53114ABE-33F2-4DA2-ABE0-2547547AA6AD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_MAC_PARAMETERS, DOT11_MAC_PARAMETERS, *PDOT11_MAC_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,20 +56,24 @@ typedef struct _DOT11_MAC_PARAMETERS {
 
 The object header identifying the type and revision of this structure. The required member settings of <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> are the following:
 
+
 ### -field Type
 
 <dd>
 Must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>
+
 
 ### -field Revision
 
 <dd>
 Must be set to <b>DOT11_MAC_PARAMETERS_REVISION_1</b>
 
+
 ### -field Size
 
 <dd>
 Must be set to <b>DOT11_SIZEOF_MAC_PARAMETERS_REVISION_1</b>
+
 </dd>
 </dl>
 
@@ -78,17 +82,22 @@ Must be set to <b>DOT11_SIZEOF_MAC_PARAMETERS_REVISION_1</b>
 A bitwise OR value of the operation modes Windows may set for the created port. This bitmask is defined through the following:
 
 
+
+
 ### -field DOT11_OPERATION_MODE_WFD_DEVICE
 
 Specifies that the miniport driver supports the Wi-Fi Direct Device operation mode.
+
 
 ### -field DOT11_OPERATION_MODE_WFD_GROUP_OWNER
 
 Specifies that the miniport driver supports the Wi-Fi Direct Group Owner operation mode.
 
+
 ### -field DOT11_OPERATION_MODE_WFD_CLIENT
 
 Specifies that the miniport driver supports the Wi-Fi Direct Client operation mode.
+
 </dd>
 </dl>
 
@@ -100,14 +109,17 @@ Specifies that the miniport driver supports the Wi-Fi Direct Client operation mo
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +139,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MAC_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MAC_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

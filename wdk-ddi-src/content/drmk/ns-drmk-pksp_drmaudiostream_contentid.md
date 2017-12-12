@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The KSP_DRMAUDIOSTREAM_CONTENTID structure specifies the property, request type, and context for a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>set-property request. It also specifies a list of function pointers to the <a href="audio.drm_functions">DRM functions</a>.
 
 
+
 ## -syntax
 
 ````
@@ -64,46 +65,57 @@ typedef struct {
 
 Specifies the property to get or set. This member is a structure of type <a href="stream.ksproperty">KSPROPERTY</a>.
 
+
 ### -field Context
 
 Pointer to context data. This is the context specified in the <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a> function's <i>DrmForward</i> parameter.
+
 
 ### -field DrmAddContentHandlers
 
 Pointer to <a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a> function.
 
+
 ### -field DrmCreateContentMixed
 
 Pointer to <a href="audio.drmcreatecontentmixed">DrmCreateContentMixed</a> function.
+
 
 ### -field DrmDestroyContent
 
 Pointer to <a href="audio.drmdestroycontent">DrmDestroyContent</a> function.
 
+
 ### -field DrmForwardContentToDeviceObject
 
 Pointer to <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a> function.
+
 
 ### -field DrmForwardContentToFileObject
 
 Pointer to <a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a> function.
 
+
 ### -field DrmForwardContentToInterface
 
 Pointer to <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a> function.
+
 
 ### -field DrmGetContentRights
 
 Pointer to <a href="audio.drmgetcontentrights">DrmGetContentRights</a> function.
 
+
 ## -remarks
 The structure contains function pointers to the DRM library functions in order to provide the driver with convenient access to these functions.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSP_DRMAUDIOSTREAM_CONTENTID structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

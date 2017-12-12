@@ -7,7 +7,7 @@ old-location: display\d3d10ddiarg_signature_entry.htm
 old-project: display
 ms.assetid: 9a7a595e-59b1-4cc2-ab09-ba22aebae9ca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D10DDIARG_SIGNATURE_ENTRY, D3D10DDIARG_SIGNATURE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3D10DDIARG_SIGNATURE_ENTRY structure describes an entry for a signature.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct D3D10DDIARG_SIGNATURE_ENTRY {
 ### -field SystemValue
 
 [in] The D3D10_SB_NAME-typed value that indicates the system name of the signature entry. The D3D10_SB_NAME enumeration is defined in the D3d10tokenizedprogramformat.hpp header file. One of the following values can be set.
+
 <table>
 <tr>
 <th>Value</th>
@@ -65,93 +67,116 @@ typedef struct D3D10DDIARG_SIGNATURE_ENTRY {
 <tr>
 <td>
 D3D10_SB_NAME_UNDEFINED (0)
+
 </td>
 <td>
 The entry does not have a system name.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_POSITION (1)
+
 </td>
 <td>
 Position.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_CLIP_DISTANCE (2)
+
 </td>
 <td>
 Clip distance.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_CULL_DISTANCE (3)
+
 </td>
 <td>
 Cull distance.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_RENDER_TARGET_ARRAY_INDEX (4)
+
 </td>
 <td>
 Render target array index.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_VIEWPORT_ARRAY_INDEX (5)
+
 </td>
 <td>
 Viewport array index.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_VERTEX_ID (6)
+
 </td>
 <td>
 Vertex ID.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_PRIMITIVE_ID (7)
+
 </td>
 <td>
 Primitive ID.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_INSTANCE_ID (8)
+
 </td>
 <td>
 Instance ID.
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_SB_NAME_IS_FRONT_FACE (9)
+
 </td>
 <td>
 Is front face.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Register
 
 [in] The number of the register for the signature entry.
 
+
 ### -field Mask
 
 [in] The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.
+
 
 ## -remarks
 
@@ -161,14 +186,17 @@ Is front face.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -185,5 +213,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDIARG_SIGNATURE_ENTRY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDIARG_SIGNATURE_ENTRY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

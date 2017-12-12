@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WIA_MICR</b> structure stores header information for the MICR metadata report of one scan job (one call to <a href="image.iwiaminidrv_drvacquireitemdata">IWiaMiniDrv::drvAcquireItemData</a>).
 
 
+
 ## -syntax
 
 ````
@@ -62,34 +63,42 @@ typedef struct _WIA_MICR {
 
 Must be the literal 'WMIC', 4 single byte ASCII characters. 
 
+
 ### -field Version
 
 Must be the value 0x00010000 (Version 1.0).
+
 
 ### -field Size
 
 The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="image.wia_micr_info">WIA_MICR_INFO</a> list.
 
+
 ### -field Placeholder
 
 Placeholder for unrecognized characters.
+
 
 ### -field Count
 
 Specifies the number of <a href="image.wia_micr_info">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
 
+
 ### -field Micr
 
 Placeholder for a sequence of <b>Count</b> contiguous <a href="image.wia_micr_info">WIA_MICR_INFO</a> structures.
 
+
 ## -remarks
 The header must be followed by a sequence of MICR information structures, one for each decoded MICR code, in the order the MICR codes were found and decoded.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

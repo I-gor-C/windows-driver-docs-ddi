@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_inbound_mac_frame_native.htm
 old-project: netvista
 ms.assetid: 0EFD49D5-1A5D-4D8F-AA19-7A1562C4B581
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE_, FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE enumeration type specifies the data fie
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
 
 
+
 ## -syntax
 
 ````
@@ -65,34 +66,42 @@ typedef enum  {
 
 The inbound MAC frame native NDIS media type field.
 
+
 ### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_PHYSICAL_MEDIA_TYPE
 
 The inbound MAC frame native NDIS physical media type field.
+
 
 ### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE
 
 The inbound MAC frame native interface field.
 
+
 ### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE
 
 The inbound MAC frame native interface type field.
+
 
 ### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_INDEX
 
 The inbound MAC frame native interface index field.
 
+
 ### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_PORT
 
 The inbound MAC frame native NDIS port field.
+
 
 ### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_FLAGS
 
 The inbound MAC frame native flags field.
 
+
 ### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -102,6 +111,7 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

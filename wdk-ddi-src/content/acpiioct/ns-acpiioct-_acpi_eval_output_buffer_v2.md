@@ -41,6 +41,7 @@ req.irql:
 This topic describes the  <b>ACPI_EVAL_OUTPUT_BUFFER_V2</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _ACPI_EVAL_OUTPUT_BUFFER_V2 {
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
 
+
 ### -field Length
 
 Defines the <b>ULONG</b> member <b>Length</b>.
+
 
 ### -field Count
 
 Defines the <b>ULONG</b> member <b>Count</b>.
 
+
 ### -field Argument[ANYSIZE_ARRAY]
 
 Defines the <b>ACPI_METHOD_ARGUMENT_V2</b> member <b>Argument[ANYSIZE_ARRAY]</b>.
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ Defines the <b>ACPI_METHOD_ARGUMENT_V2</b> member <b>Argument[ANYSIZE_ARRAY]</b>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

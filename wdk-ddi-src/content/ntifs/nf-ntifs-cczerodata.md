@@ -41,6 +41,7 @@ req.irql: <=APC_LEVEL
 The <b>CcZeroData</b> routine zeros the specified range of bytes in a cached or noncached file.
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ BOOLEAN CcZeroData(
 
 A pointer to a file object (<a href="kernel.file_object">FILE_OBJECT</a>) for the file in which a range of bytes is to be zeroed.
 
+
 ### -param StartOffset [in]
 
 A pointer to a variable that specifies the byte offset within the file to the first byte that is to be zeroed.
+
 
 ### -param EndOffset [in]
 
 A pointer to a variable that specifies the byte offset within the file to the last byte that is to be zeroed.
 
+
 ### -param Wait [in]
 
 Set to <b>TRUE</b> if the caller should be put into a wait state until the entire byte range has been zeroed. Otherwise, this parameter is set to <b>FALSE</b>.
 
+
 ## -returns
 <b>CcZeroData</b> returns <b>TRUE</b> if the data is zeroed successfully; otherwise, returns <b>FALSE</b>.
+
 
 ## -remarks
 The file to be zeroed can be cached or noncached. However, if the file is noncached, the values of <i>StartOffset</i> and <i>EndOffset</i> must both be multiples of the volume's sector size. (For information about how to determine sector size, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553208">Kernel-Mode Driver Architecture Design Guide</a> and <a href="kernel.kernel_mode_driver_reference">Kernel-Mode Driver Architecture Reference</a>.)
@@ -93,11 +99,13 @@ If the stream is cached and write_through, <i>StartOffset</i> does not have to b
 
 If <i>EndOffset</i> is not aligned, it will be rounded up to the next sector size.  
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,14 +116,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 2000 and later Windows operating systems.  See Remarks for changes for Vista and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +137,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +148,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -146,9 +159,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -166,5 +181,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcZeroData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

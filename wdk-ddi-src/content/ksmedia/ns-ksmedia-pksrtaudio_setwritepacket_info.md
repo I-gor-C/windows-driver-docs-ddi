@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 641DE2B5-7903-4D25-A280-F2BCCE8B1500
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO
+ms.keywords: PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSRTAUDIO_SETWRITEPACKET_INFO structure describes information associated with an audio packet.
 
 
+
 ## -syntax
 
 ````
@@ -60,18 +61,22 @@ typedef struct _KSRTAUDIO_SETWRITEPACKET_INFO {
 
 
 
+
 ### -field Flags 
 
 Additional attributes related to the packet or stream. 
+
 
 
 <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> - This flag indicates that this packet represents the end of the data stream. 
 
 
 
+
 ### -field EosPacketLength
 
 The length of the EOS packet if <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is specified in Flags. Zero is a valid value. If <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is not specified in Flags, this parameter is ignored. The EosPacketLength is measured in bytes.
+
 
 ## -remarks
 
@@ -81,14 +86,17 @@ The length of the EOS packet if <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is s
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10 and later Windows operating systems. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSRTAUDIO_SETWRITEPACKET_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

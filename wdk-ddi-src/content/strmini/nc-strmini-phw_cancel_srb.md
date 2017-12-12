@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The class driver calls the minidriver's <i>StrMiniCancelPacket</i> routine to signal that a stream request has been canceled.
 
 
+
 ## -prototype
 
 ````
@@ -60,19 +61,23 @@ VOID StrMiniCancelPacket(
 
 Pointer to the stream request that had been canceled.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The minidriver specifies this routine in the <b>HwCancelPacket</b> member of its <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure. The minidriver passes this structure to the class driver when it registers itself by calling <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.
 
 Minidrivers that rely on the class driver to handle synchronization should, once they have successfully canceled a request, signal to the class driver that they are ready for another request by using <a href="stream.streamclassstreamnotification">StreamClassStreamNotification</a> or <a href="stream.streamclassdevicenotification">StreamClassDeviceNotification</a> with the appropriate <b>ReadyForNext</b><i>Xxx</i><b>Request</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

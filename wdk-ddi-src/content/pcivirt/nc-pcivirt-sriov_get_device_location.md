@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Retrieves information about the current location of the PCI device on the bus, such as PCI Segment, Bus, Device and Function number. 
 
 
+
 ## -prototype
 
 ````
@@ -67,51 +68,63 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param VfIndex [in]
 
 A zero-based index of the VF to which this read operation applies.
+
 
 ### -param SegmentNumber [out]
 
 A pointer to a variable that is filled in with the current Segment Number, which describes the group of PCI Buses to which this device is attached.
 
+
 ### -param BusNumber [out]
 
 A pointer to a variable that is filled in with the current Bus Number, which describes which PCI Bus to which this device is attached.
+
 
 ### -param FunctionNumber [out]
 
 A pointer to a variable that is filled in with the FunctionNumber, which further describes where on this bus the device can be found.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to retrieve the device location. 
 
 The PF driver registers its implementation by setting the <b>WriteVfConfigBlock</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +135,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

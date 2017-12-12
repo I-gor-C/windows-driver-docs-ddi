@@ -39,12 +39,16 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IMiniportWaveRTStreamNotification</code> interface is supported in Windows Vista and later Windows operating systems, and it augments the <a href="..\portcls\nn-portcls-iminiportwavertstream.md">IMiniportWaveRTStream</a> interface, providing additional methods to facilitate DMA driver event notifications. 
+
 To access the <code>IMiniportWaveRTStreamNotification</code> interface, the <a href="https://msdn.microsoft.com/d25e37e2-2e29-4bf9-8150-221ebef88c87">WaveRT port driver</a> calls the <a href="audio.iminiportwavert_newstream">IMiniportWaveRT::NewStream</a> method and receives an <a href="..\portcls\nn-portcls-iminiportwavertstream.md">IMiniportWaveRTStream</a> interface. The WaveRT port driver then queries the <b>IMiniportWaveRTStream</b> interface, uisng QueryInterface, and receives the <code>IMiniportWaveRTStreamNotification</code> interface. 
+
 <code>IMiniportWaveRTStreamNotification</code> inherits from the <b>IUnknown</b> interface.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveRTStreamNotification</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -54,6 +58,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportWaveRTStreamNotifica
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WORK_QUEUE_ITEM structure is used to post a work items to a system work queue. <i>Use this structure with extreme caution. (See the following </i><b>Remarks</b><i> section.)</i>
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef struct _WORK_QUEUE_ITEM {
 
 Doubly linked list structure. This structure is used to add the work item to the system work queue. 
 
+
 ### -field WorkerRoutine
 
 Pointer to a callback routine that processes this work item when the work item is dequeued. This callback routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -77,15 +80,18 @@ Pointer to a callback routine that processes this work item when the work item i
 </table></span></div>
 
 
+
 ### -field Parameter
 
 Context information pointer specified in the <b>Parameter</b> member. 
+
 </dd>
 </dl>
 
 ### -field Parameter
 
 Pointer to context information to be passed to the callback routine specified in the <b>WorkerRoutine</b> member. 
+
 
 ## -remarks
 To initialize a WORK_QUEUE_ITEM structure, call <a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a>. 
@@ -94,11 +100,13 @@ To post the initialized work item to a system work queue, call <a href="ifsk.exq
 
 <b>ExInitializeWorkItem</b><i> and </i><b>ExQueueWorkItem</b><i> can only be used in cases where the specified work item is not associated with any device object or device stack. In all other cases, drivers should use </i><a href="kernel.ioallocateworkitem">IoAllocateWorkItem</a><i>, </i><a href="kernel.iofreeworkitem">IoFreeWorkItem</a><i>, and </i><a href="kernel.ioqueueworkitem">IoQueueWorkItem</a><i>, because only these routines ensure that the device object associated with the specified work item remains available until the work item has been processed. </i>
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WORK_QUEUE_ITEM structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

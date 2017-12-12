@@ -7,8 +7,8 @@ old-location: debugger\debug_last_event_info_exit_thread.htm
 old-project: debugger
 ms.assetid: 1C7E79F2-120A-424B-B4E3-EF202FA90C2A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_THREAD, DEBUG_LAST_EVENT_INFO_EXIT_THREAD, *PDEBUG_LAST_EVENT_INFO_EXIT_THREAD
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_THREAD, *PDEBUG_LAST_EVENT_INFO_EXIT_THREAD, DEBUG_LAST_EVENT_INFO_EXIT_THREAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Describes the exit thread of the last event.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DEBUG_LAST_EVENT_INFO_EXIT_THREAD {
 
 The exit code of the thread.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The exit code of the thread.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

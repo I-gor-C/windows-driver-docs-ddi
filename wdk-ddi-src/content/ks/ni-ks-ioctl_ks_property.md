@@ -41,7 +41,10 @@ req.irql:
 
 An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the <a href="stream.kssynchronousdevicecontrol">KsSynchronousDeviceControl</a> function.
 
+
+
 An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the <a href="stream.kssynchronousdevicecontrol">KsSynchronousDeviceControl</a> function.
+
 
 
 ## -ioctlparameters
@@ -49,14 +52,18 @@ An application can use IOCTL_KS_PROPERTY to get or set properties, or to determi
 ### -input-buffer
 The contents of the client-specified <b>InBuffer</b> parameter depend on the property request, and are documented for each property set. For instance, clients requesting properties in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a> property set specify a pointer to a <a href="stream.ksp_pin">KSP_PIN</a> structure. 
 
+
 ### -input-buffer-length
 The application places the size, in bytes, of the input buffer contents in the <b>InLength</b> parameter.
+
 
 ### -output-buffer
 Similarly, the type of output buffer required also depends on the property request. 
 
+
 ### -output-buffer-length
 The application places the size, in bytes, of the output buffer in the <b>OutLength</b> parameter.
+
 
 ### -in-out-buffer
 
@@ -70,6 +77,7 @@ The application places the size, in bytes, of the output buffer in the <b>OutLen
 I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
+
 ## -remarks
 For more information about input and output buffers and their sizes, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.
 
@@ -77,11 +85,13 @@ Filters and pins support property sets using the <b>IOCTL_KS_PROPERTY</b> device
 
 For a list of valid flags and corresponding descriptions, see the reference page for the <a href="stream.ksproperty">KSPROPERTY</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,5 +123,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_PROPERTY control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

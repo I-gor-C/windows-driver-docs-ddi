@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Kcom.h header
 
+## -description
 
 This header is used by Streaming media devices. For more information, see
 - [Streaming media devices](../_stream/index.md)

@@ -41,21 +41,26 @@ req.irql:
 This IOCTL is used by the radio management application or service to query the current radio power state of the proximity device.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 None
+
 
 ### -output-buffer
 
 <a href="nfpdrivers._nfcrm_radio_state_"> NFCRM_RADIO_STATE structure</a>
 
 
+
 ### -output-buffer-length
 sizeof(NFCRM_RADIO_STATE)
+
 
 ### -in-out-buffer
 
@@ -69,14 +74,17 @@ sizeof(NFCRM_RADIO_STATE)
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful.
 
+
 ## -remarks
 The <b>STATUS_INVALID_PARAMETER</b> return code is no longer required. A bug was discovered in Windows 10 build 10240, that Windows would send a non-null input parameter with this IOCTL. This bug was fixed in later versions of Windows. To simplify code, drivers can ignore the input parameters in all versions of Windows 10.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

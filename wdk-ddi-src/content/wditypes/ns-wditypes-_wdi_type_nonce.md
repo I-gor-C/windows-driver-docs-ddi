@@ -7,7 +7,7 @@ old-location: netvista\wdi_type_nonce.htm
 old-project: netvista
 ms.assetid: 62E3A714-BA18-4DD5-ACFC-A9EFA37EABB4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_TYPE_NONCE, *PWDI_TYPE_NONCE, WDI_TYPE_NONCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_TYPE_NONCE structure defines the SNonce or ANonce (802.11r).
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _WDI_TYPE_NONCE {
 
 The SNonce or ANonce.
 
+
 ## -remarks
 
 
@@ -65,22 +67,27 @@ The SNonce or ANonce.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

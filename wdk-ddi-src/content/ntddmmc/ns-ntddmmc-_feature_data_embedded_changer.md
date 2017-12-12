@@ -7,8 +7,8 @@ old-location: storage\feature_data_embedded_changer.htm
 old-project: storage
 ms.assetid: 1335d1fa-af96-4a31-a1cf-266f7a3325ef
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _FEATURE_DATA_EMBEDDED_CHANGER, *PFEATURE_DATA_EMBEDDED_CHANGER, FEATURE_DATA_EMBEDDED_CHANGER
+ms.date: 12/8/2017
+ms.keywords: _FEATURE_DATA_EMBEDDED_CHANGER, FEATURE_DATA_EMBEDDED_CHANGER, *PFEATURE_DATA_EMBEDDED_CHANGER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FEATURE_DATA_EMBEDDED_CHANGER structure holds data for the Embedded Changer feature. 
 
 
+
 ## -syntax
 
 ````
@@ -64,46 +65,57 @@ typedef struct _FEATURE_DATA_EMBEDDED_CHANGER {
 
 Contains a <a href="storage.feature_header">FEATURE_HEADER</a> structure with header information for this feature descriptor. 
 
+
 ### -field Reserved1
 
 Reserved. 
+
 
 ### -field SupportsDiscPresent
 
 Indicates, when set to 1, that the device can report the contents of the slots after a reset or magazine change. When set to zero, this bit indicates that the device can report the contents of the slots after reset or magazine change. 
 
+
 ### -field Reserved2
 
 Reserved. 
+
 
 ### -field SideChangeCapable
 
 Indicates, when set to 1, that the device is capable of selecting both sides of the media. When set to zero, this bit indicates that the device is not capable of selecting both sides of the media. 
 
+
 ### -field Reserved3
 
 Reserved.
+
 
 ### -field Reserved4
 
 Reserved.
 
+
 ### -field HighestSlotNumber
 
 Indicates the number of slots minus 1. 
+
 
 ### -field Reserved
 
 Reserved.
 
+
 ## -remarks
 This structure holds data for the feature named "Embedded Changer" by the <i>SCSI Multimedia - 4 (MMC-4) </i>specification. Devices that support this feature can move media back and forth between a media storage area and the mechanism that actually accesses the media.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_EMBEDDED_CHANGER structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_EMBEDDED_CHANGER structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

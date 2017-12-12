@@ -7,7 +7,7 @@ old-location: display\d3dkmtinvalidateactivevidpn.htm
 old-project: display
 ms.assetid: a7cac46d-b64d-4362-99ab-179aa6525ba2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTInvalidateActiveVidPn
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.irql:
 ## -description
 The <b>D3DKMTInvalidateActiveVidPn</b> function invalidates the active video present network (VidPN) currently in use.
 
+
 <div class="alert"><b>Note</b>    This function is obsolete in Windows 7 and later versions of the Windows operating systems.</div>
 <div> </div>
+
 
 
 
@@ -59,6 +61,7 @@ NTSTATUS D3DKMTInvalidateActiveVidPn(
 ### -param pData [in]
 
 A pointer to a <a href="display.d3dkmt_invalidateactivevidpn">D3DKMT_INVALIDATEACTIVEVIDPN</a> structure that describes parameters that invalidate the active VidPN currently in use.
+
 
 ## -returns
 <b>D3DKMTInvalidateActiveVidPn</b> returns one of the following values:
@@ -88,16 +91,19 @@ This status value will also be returned if this function is called on a computer
 
 This function might also return other NTSTATUS values.
 
+
 ## -remarks
 When the <b>D3DKMTInvalidateActiveVidPn</b> function is called to invalidate the VidPN currently in use, the current VidPN is replaced with a new VidPN that the display miniport driver recommends. Because the display miniport driver must recommend a new VidPN, the display miniport driver must be able to determine the display mode that the OpenGL ICD requires from the buffer pointed to by the <b>pPrivateDriverData</b> member of <a href="display.d3dkmt_invalidateactivevidpn">D3DKMT_INVALIDATEACTIVEVIDPN</a>.
 
 The OpenGL ICD can call <b>D3DKMTInvalidateActiveVidPn</b> for display modes (for example, clone-view mode) that are not supported by using the more general call to the <a href="display.d3dkmtsetdisplaymode">D3DKMTSetDisplayMode</a> function. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems for display miniport drivers with version &lt; DXGKDDI_INTERFACE_VERSION_WIN7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +146,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -155,5 +166,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTInvalidateActiveVidPn function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTInvalidateActiveVidPn function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

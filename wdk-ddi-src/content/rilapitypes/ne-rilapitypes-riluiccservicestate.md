@@ -7,7 +7,7 @@ old-location: netvista\riluiccservicestate_2.htm
 old-project: netvista
 ms.assetid: f817db6b-bda4-45cd-953b-fd3d81bafa8f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCSERVICESTATE, RILUICCSERVICESTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ typedef enum _RILUICCSERVICESTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

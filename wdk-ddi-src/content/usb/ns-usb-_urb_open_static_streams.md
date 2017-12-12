@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>_URB_OPEN_STATIC_STREAMS</b> structure is used by a  USB client driver to open streams in the specified bulk endpoint. 
+
 To format the URB, call the <a href="buses.usbbuildopenbasicstreamsrequest">UsbBuildOpenStaticStreamsRequest</a>  function.
+
 
 
 ## -syntax
@@ -64,30 +66,36 @@ struct _URB_OPEN_STATIC_STREAMS {
 The <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_OPEN_STATIC_STREAMS, and <b>Hdr.Length</b> must be <code>sizeof(_URB_OPEN_STATIC_STREAMS)</code>.
 
 
+
 ### -field PipeHandle
 
 An opaque handle for the pipe associated with the endpoint that supports the streams to open.
 
 The client driver obtains <b>PipeHandle</b> from the    URB_FUNCTION_SELECT_CONFIGURATION or URB_FUNCTION_SELECT_INTERFACE request. 
 
+
 ### -field NumberOfStreams
 
 The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the USB driver stack, the host controller, and the endpoint in the device. For more information, see Remarks.
 
+
 ### -field StreamInfoVersion
 
 Version of the <a href="buses.usbd_stream_information">USBD_STREAM_INFORMATION</a> structure.  Must be set to URB_OPEN_STATIC_STREAMS_VERSION_100; otherwise, the request fails and the URB status is  USBD_STATUS_INVALID_PARAMETER.
+
 
 ### -field StreamInfoSize
 
 Size of the <a href="buses.usbd_stream_information">USBD_STREAM_INFORMATION</a> structure.  <b>StreamInfoSize</b> must be <code>sizeof(USBD_STREAM_INFORMATION)</code>;
 otherwise, the request fails and the URB status is  USBD_STATUS_INFO_LENGTH_MISMATCH.  
 
+
 ### -field Streams
 
 Pointer to a caller-allocated, initialized array of <a href="buses.usbd_stream_information">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.   For more information, see Remarks. 
  
  
+
 
 
 ## -remarks
@@ -99,19 +107,23 @@ For information about formatting the URB for the open-stream request and code ex
 
 When the client driver is finished using the streams, the driver can close all streams associated with a particular endpoint by sending a close-stream request. To send the request, the client driver must specify information about the endpoint in  the <a href="..\usb\ns-usb-_urb_pipe_request.md">_URB_PIPE_REQUEST</a> structure. The <b>Hdr</b> member of <b>_URB_PIPE_REQUEST</b> must be URB_FUNCTION_CLOSE_STATIC_STREAMS; the <b>PipeHandle</b> member must be the handle to the endpoint that contains the  streams in use. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,5 +149,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_OPEN_STATIC_STREAMS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

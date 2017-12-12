@@ -7,8 +7,8 @@ old-location: storage\access_range.htm
 old-project: storage
 ms.assetid: 6009d11b-4f44-4591-bcb8-66e0c42d5689
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _ACCESS_RANGE, ACCESS_RANGE, *PACCESS_RANGE
+ms.date: 12/8/2017
+ms.keywords: _ACCESS_RANGE, *PACCESS_RANGE, ACCESS_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 An ACCESS_RANGE describes a memory or I/O port range used by an HBA.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _ACCESS_RANGE {
 
 Contains an address of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff565350">SCSI_PHYSICAL_ADDRESS</a> that specifies the bus-relative base address of the range. This is an address that can be passed into <a href="storage.scsiportgetdevicebase">ScsiPortGetDeviceBase</a>.
 
+
 ### -field RangeLength
 
 Specifies the size, in bytes, or number of ports in the range. A miniport driver must ensure that this value matches the range actually decoded by the adapter. For example, if the HBA uses seven registers but responds to eight, this member should be set to 8.
 
+
 ### -field RangeInMemory
 
 Indicates the range is in memory when <b>TRUE</b>, rather than in I/O space. When <b>FALSE</b>, the range is in I/O space. 
+
 
 ## -remarks
 Each ACCESS_RANGE is an <b>AccessRanges</b> array element within the PORT_CONFIGURATION_INFORMATION structure that is passed to a miniport driver's HwScsiFindAdapter routine.
@@ -80,11 +84,13 @@ Any access range that a miniport driver fills in for the OS-specific port driver
 
 The corresponding base logical address returned by <b>ScsiPortGetDeviceBase</b> should be stored, usually in the miniport driver's device extension, as the <b>RangeStart</b> address for a mapped range of I/O ports or memory addresses used to call the <b>ScsiPortRead</b><i>Xxx</i> and <b>ScsiPortWrite</b><i>Xxx</i> routines.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +122,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ACCESS_RANGE structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ACCESS_RANGE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

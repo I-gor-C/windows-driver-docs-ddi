@@ -7,7 +7,7 @@ old-location: kernel\keregisterbugcheckreasoncallback.htm
 old-project: kernel
 ms.assetid: 01528aa0-c580-4527-a64d-83f4ed39a471
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeRegisterBugCheckReasonCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeRegisterBugCheckReasonCallback</b> routine registers a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>, or <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a> routine, which executes when the operating system issues a bug check.
 
 
+
 ## -syntax
 
 ````
@@ -60,23 +61,28 @@ BOOLEAN KeRegisterBugCheckReasonCallback(
 
 A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a> structure that was initialized by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a> routine. 
 
+
 ### -param CallbackRoutine [in]
 
 A pointer to the callback routine to register. This parameter points to one of the following types of driver-implemented routine: 
+
 <dl>
 <dd>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
+
 
 </dd>
 <dd>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
 
+
 </dd>
 <dd>
 
 <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
+
 
 </dd>
 </dl>
@@ -84,6 +90,7 @@ A pointer to the callback routine to register. This parameter points to one of t
 ### -param Reason [in]
 
 Specifies the type of callback routine that <i>CallbackRoutine</i> points to. Set <i>Reason</i> to one of the <a href="kernel.kbugcheck_callback_reason">KBUGCHECK_CALLBACK_REASON</a> enumeration values in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -92,36 +99,45 @@ Specifies the type of callback routine that <i>CallbackRoutine</i> points to. Se
 <tr>
 <td>
 <b>KbCallbackDumpIo</b>
+
 </td>
 <td>
 <i>BugCheckDumpIoCallback</i>
+
 </td>
 </tr>
 <tr>
 <td>
 <b>KbCallbackSecondaryDumpData</b>
+
 </td>
 <td>
 <i>BugCheckSecondaryDumpDataCallback</i>
+
 </td>
 </tr>
 <tr>
 <td>
 <b>KbCallbackAddPages</b>
+
 </td>
 <td>
 <i>BugCheckAddPagesCallback</i>
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Component [in]
 
 A pointer to a null-terminated ANSI string that identifies the caller. For example, you can select a string that describes the device driver, or that contains the device name. You can use the <a href="http://go.microsoft.com/fwlink/p/?linkid=165502">!bugdump</a> debugger extension to display the crash dump data that is associated with this string.
 
+
 ## -returns
 <b>KeRegisterBugCheckReasonCallback</b> returns <b>TRUE</b> if the callback routine is successfully registered; otherwise, it returns <b>FALSE</b>.
+
 
 ## -remarks
 Drivers can use <b>KeRegisterBugCheckReasonCallback</b> to register routines that execute during a system bug check.
@@ -139,11 +155,13 @@ Drivers can use the <a href="kernel.kederegisterbugcheckreasoncallback">KeDeregi
 
 To display secondary dump data, you can use the <a href="http://go.microsoft.com/fwlink/p/?linkid=165501">.enumtag</a> command or the <a href="http://go.microsoft.com/fwlink/p/?linkid=165500">IDebugDataSpaces3::ReadTagged</a> method in a debugger extension. Another option is to debug the bug check callback routine itself. For more information about debuggers and debugger extensions, see <a href="https://msdn.microsoft.com/938ef180-84de-442f-9b6c-1138c2fc8d5a">Windows Debugging</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -154,14 +172,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -172,6 +193,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -182,6 +204,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -192,9 +215,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -230,5 +255,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeRegisterBugCheckReasonCallback routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeRegisterBugCheckReasonCallback routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

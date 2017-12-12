@@ -7,7 +7,7 @@ old-location: display\d3dkmt_submitcommandtohwqueue.htm
 old-project: display
 ms.assetid: 3807BD27-FAE4-4E12-A825-A9FAFB7A6ACA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_SUBMITCOMMANDTOHWQUEUE, D3DKMT_SUBMITCOMMANDTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that holds information to submit a command to the hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -64,18 +65,22 @@ typedef struct _D3DKMT_SUBMITCOMMANDTOHWQUEUE {
 Context queue to submit the command to.
 
 
+
 ### -field HwQueueProgressFenceId
 
 Hardware queue progress fence value that will be signaled once the command is finished.
+
 
 ### -field  CommandBuffer
 
 GPU VA of the command buffer to be executed on the GPU.
 
 
+
 ### -field CommandLength
 
 Length in bytes of the command buffer.
+
 
 
 
@@ -85,9 +90,11 @@ Size of private driver data in bytes.
 
 
 
+
 ### -field pPrivateDriverData
 
 Pointer to the private driver data.
+
 
 
 ### -field NumPrimaries
@@ -95,9 +102,11 @@ Pointer to the private driver data.
 The number of primaries written by this command buffer.
 
 
+
 ### -field WrittenPrimaries
 
 The array of primaries written by this command buffer.
+
 
 
 ## -remarks
@@ -108,6 +117,7 @@ The array of primaries written by this command buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

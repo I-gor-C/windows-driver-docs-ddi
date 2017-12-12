@@ -7,7 +7,7 @@ old-location: storage\tapeclasslidiv.htm
 old-project: storage
 ms.assetid: 13c449c6-6e2b-434e-8948-62c8af237173
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: TapeClassLiDiv
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>TapeClassLiDiv</b> routine performs a division of the two indicated integers. 
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ LARGE_INTEGER TapeClassLiDiv(
 
 Contains the dividend.
 
+
 ### -param Divisor [in]
 
 Contains the divisor.
 
+
 ## -returns
 <b>TapeClassLiDiv</b> returns the result of the division. 
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ Contains the divisor.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

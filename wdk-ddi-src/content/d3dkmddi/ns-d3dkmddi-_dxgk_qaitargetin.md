@@ -7,7 +7,7 @@ old-location: display\dxgk_qaitargetin.htm
 old-project: display
 ms.assetid: C6751CB1-1460-4C1A-9E5F-99448C4F9162
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_QAITARGETIN, DXGK_QAITARGETIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used to integrate a target.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DXGK_QAITARGETIN {
 
 The ID of the target.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The ID of the target.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

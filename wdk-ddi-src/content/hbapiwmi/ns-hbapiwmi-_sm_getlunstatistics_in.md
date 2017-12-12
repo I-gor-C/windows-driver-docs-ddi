@@ -7,7 +7,7 @@ old-location: storage\sm_getlunstatistics_in.htm
 old-project: storage
 ms.assetid: c551a376-2148-4fc4-ba4e-9c1ce1eea1d8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SM_GetLUNStatistics_IN, SM_GetLUNStatistics_IN, *PSM_GetLUNStatistics_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The SM_GetLUNStatistics_IN structure is used to provide input parameters to the SM_GetLUNStatistics_IN method.
 
 
+
 ## -syntax
 
 ````
@@ -56,14 +57,17 @@ typedef struct _SM_GetLUNStatistics_IN {
 
 A structure of type <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a> that contains information that is used by the operating system to identify a SCSI logical unit.
 
+
 ## -remarks
 When the WMI tool suite compiles the MS_SM_TargetInformationMethods WMI class, it generates a declaration of the SM_GetLUNStatistics_IN structure in <i>Hbapiwmi.h</i>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

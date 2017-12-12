@@ -7,8 +7,8 @@ old-location: netvista\wwan_ipv6_address.htm
 old-project: netvista
 ms.assetid: 3DAC7E30-B938-429C-B389-59F924216B04
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_IPV6_ADDRESS, WWAN_IPV6_ADDRESS, *PWWAN_IPV6_ADDRESS
+ms.date: 12/8/2017
+ms.keywords: _WWAN_IPV6_ADDRESS, *PWWAN_IPV6_ADDRESS, WWAN_IPV6_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_IPV6_ADDRESS structure represents an IPV6 address of a PDP context.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WWAN_IPV6_ADDRESS {
 
 The length of the prefix or network part of the IP address.
 
+
 ### -field IPV6Address[16]
 
 The IPV6 address of the PDP context.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ The IPV6 address of the PDP context.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8.1 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

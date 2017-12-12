@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PCPROPERTY_REQUEST</b> structure specifies a property request.
 
 
+
 ## -syntax
 
 ````
@@ -66,84 +67,107 @@ typedef struct _PCPROPERTY_REQUEST {
 
 <a href="com.iunknown">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> parameter value that the adapter driver previously passed to the <a href="audio.iport_init">IPort::Init</a> method.
 
+
 ### -field MinorTarget
 
 
 <a href="com.iunknown">IUnknown</a> pointer to a stream object that is associated with the <b>MajorTarget</b> miniport object. If the target for the property request is a pin instance, this member contains the stream-object pointer that the IMiniport <i>Xxx</i>::NewStream method previously output to the port driver (for example, the <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter). Otherwise (if the target for the property request is a filter instance), this member is <b>NULL</b>.
 
+
 ### -field Node
 
 Specifies a node ID. This member identifies the target node for the request. If the target is not a node, this member is set to ULONG(-1).
 
+
 ### -field PropertyItem
 
-Pointer to the property item, which is a structure of type <a href="audio.pcproperty_item">PCPROPERTY_ITEM</a>.
+Pointer to the property item, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>.
+
 
 ### -field Verb
 
 Specifies the type of property request. <b>Verb</b> is set to the bitwise OR of one or more of the following flag bits from header file ks.h:
+
 <ul>
 <li>
 KSPROPERTY_TYPE_GET
+
 </li>
 <li>
 KSPROPERTY_TYPE_SET
+
 </li>
 <li>
 KSPROPERTY_TYPE_SETSUPPORT
+
 </li>
 <li>
 KSPROPERTY_TYPE_BASICSUPPORT
+
 </li>
 <li>
 KSPROPERTY_TYPE_RELATIONS
+
 </li>
 <li>
 KSPROPERTY_TYPE_SERIALIZESET
+
 </li>
 <li>
 KSPROPERTY_TYPE_UNSERIALIZESET
+
 </li>
 <li>
 KSPROPERTY_TYPE_SERIALIZERAW
+
 </li>
 <li>
 KSPROPERTY_TYPE_UNSERIALIZERAW
+
 </li>
 <li>
 KSPROPERTY_TYPE_SERIALIZESIZE
+
 </li>
 <li>
 KSPROPERTY_TYPE_DEFAULTVALUES
+
 </li>
 <li>
 KSPROPERTY_TYPE_TOPOLOGY
+
 </li>
 </ul>
 These flags are described in <a href="stream.ksproperty">KSPROPERTY</a>.
+
 
 ### -field InstanceSize
 
 Specifies the size in bytes of the property-instance buffer.
 
+
 ### -field Instance
 
 Pointer to the property-instance buffer
+
 
 ### -field ValueSize
 
 Specifies the size in bytes of the property-value buffer.
 
+
 ### -field Value
 
 Pointer to the property-value buffer
+
 
 ### -field Irp
 
 Pointer to the <a href="kernel.irp">IRP</a> containing the client's original property request
 
+
 ## -remarks
-This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="audio.pcproperty_item">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
+This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
 In WDM audio, the target of a property request can be either a filter instance or a pin instance. The target can also include a node ID.
 
@@ -159,11 +183,13 @@ The handler can call <a href="com.iunknown_queryinterface">QueryInterface</a> on
 
 For background information about audio properties, see <a href="https://msdn.microsoft.com/ffc5834f-30c8-40b5-b57b-fe784331690c">Audio Endpoints, Properties and Events</a>. For a list of the available audio-specific properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536197">Audio Drivers Property Sets</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -176,7 +202,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcproperty_item">PCPROPERTY_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>
 </dt>
 <dt>
 <a href="stream.ksproperty">KSPROPERTY</a>
@@ -189,5 +215,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCPROPERTY_REQUEST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

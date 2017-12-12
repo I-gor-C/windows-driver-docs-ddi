@@ -7,7 +7,7 @@ old-location: netvista\netallocatesharedmemory.htm
 old-project: netvista
 ms.assetid: d85b4f28-707b-4525-afd8-83e1ceb2674e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   a driver allocates shared memory from a shared memory provider.
 
 
+
 ## -prototype
 
 ````
@@ -67,6 +68,7 @@ An NDIS_HANDLE to a block of driver-allocated context information that identifie
      <a href="netvista.ndis_shared_memory_provider_characteristics">
      NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a> structure.
 
+
 ### -param SharedMemoryParameters [in]
 
 A pointer to an 
@@ -74,10 +76,12 @@ A pointer to an
      NDIS_SHARED_MEMORY_PARAMETERS</a> structure that defines the requested attributes for the shared
      memory.
 
+
 ### -param pSharedMemoryProviderContext [in, out]
 
 A pointer to a handle for a shared memory context area. The shared memory provider provides a
      handle that identifies the shared memory that it allocated.
+
 
 ## -returns
 <i>NetAllocateSharedMemory</i> can return the following status values:
@@ -96,6 +100,7 @@ A pointer to a handle for a shared memory context area. The shared memory provid
 
  
 
+
 ## -remarks
 NDIS calls the 
     <i>NetAllocateSharedMemory</i> function of a shared memory provider when a driver calls the 
@@ -107,11 +112,13 @@ The shared memory provider specified the entry point (ALLOCATE_SHARED_MEMORY_HAN
     <a href="netvista.ndis_shared_memory_provider_characteristics">
     NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,14 +129,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,9 +150,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -161,5 +173,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20ALLOCATE_SHARED_MEMORY_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20ALLOCATE_SHARED_MEMORY_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: print\gdigetpagecount.htm
 old-project: print
 ms.assetid: 0a101b59-c610-4158-97a8-002222a94309
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GdiGetPageCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GdiGetPageCount</b> function returns the number of pages in a print job.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ DWORD GdiGetPageCount(
 
 Caller-supplied spool file handle, obtained by a previous call to <a href="print.gdigetspoolfilehandle">GdiGetSpoolFileHandle</a>.
 
+
 ## -returns
 If the operation succeeds, the function returns the number of pages in the current print job. Otherwise the function returns zero.
+
 
 ## -remarks
 The <b>GdiGetPageCount</b> function is exported by gdi32.dll for use within a print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> function.
@@ -66,11 +69,13 @@ The <b>GdiGetPageCount</b> function is exported by gdi32.dll for use within a pr
 
 For additional information about this set of functions, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,6 +86,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +97,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +108,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

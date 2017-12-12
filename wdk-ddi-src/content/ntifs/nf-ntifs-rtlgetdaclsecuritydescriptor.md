@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlGetDaclSecurityDescriptor</b> routine returns a pointer to the discretionary ACL (DACL) for a security descriptor.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS RtlGetDaclSecurityDescriptor(
 
 Pointer to the <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a> whose DACL is to be returned.
 
+
 ### -param DaclPresent [out]
 
 Pointer to a Boolean variable that indicates the presence of a DACL in the specified security descriptor. If this variable receives <b>TRUE</b>, the security descriptor contains a DACL, and the remaining output parameters receive valid values. If this variable receives <b>FALSE</b>, the security descriptor does not contain a DACL, and the remaining output parameters do not receive valid values.
+
 
 ### -param Dacl [out]
 
 Pointer to a variable that receives the address of the DACL for the security descriptor. If the security descriptor does not have a DACL, this variable does not receive a value. If the security descriptor has a <b>NULL</b> DACL, this variable receives <b>NULL</b>. A <b>NULL</b> DACL implicitly allows all access to an object.
 
+
 ### -param DaclDefaulted [out]
 
 Pointer to a Boolean variable that receives the value of the SE_DACL_DEFAULTED flag in the security descriptor's SECURITY_DESCRIPTOR_CONTROL structure. If this flag is <b>TRUE</b>, the DACL was retrieved by a default mechanism. If it is <b>FALSE</b>, the DACL was explicitly specified by a user. This value is valid only if <i>*Dacl</i> receives a non-<b>NULL</b> value. 
+
 
 ## -returns
 <b>RtlGetDaclSecurityDescriptor</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following:
@@ -79,16 +84,19 @@ Pointer to a Boolean variable that receives the value of the SE_DACL_DEFAULTED f
 
  
 
+
 ## -remarks
 A value of <b>TRUE</b> for <i>*DaclPresent</i> does not mean that <i>*Dacl</i> is non-<b>NULL</b>. That is, <i>*DaclPresent</i> can be <b>TRUE</b> while <i>*Dacl</i> is <b>NULL</b>, meaning that a <b>NULL</b> DACL is in effect. A <b>NULL</b> DACL implicitly allows all access to an object and is not the same as an empty DACL. An empty DACL permits no access to an object. 
 
 For more information about security and access control, see the documentation for these topics in the Microsoft Windows SDK. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows Server 2003 SP1 and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +139,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -137,9 +150,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -166,5 +181,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetDaclSecurityDescriptor routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

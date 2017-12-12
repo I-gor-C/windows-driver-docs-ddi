@@ -7,7 +7,7 @@ old-location: display\iddcx_cursor_shape_type.htm
 old-project: display
 ms.assetid: 8aced7c9-e1be-4ec0-8b59-77cee011a71e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_CURSOR_SHAPE_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _requires_same_
                 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,20 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
                         
                     Indicates that the cursor shape is uninitialized
 
+
 ### -field IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR
 
 
                         Indicates this is a masked-color cursor shape
                     
 
+
 ### -field IDDCX_CURSOR_SHAPE_TYPE_ALPHA
 
 
                         Indicates this is a 32bpp alpha cursor
                     
+
 
 ## -remarks
 
@@ -82,6 +86,7 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

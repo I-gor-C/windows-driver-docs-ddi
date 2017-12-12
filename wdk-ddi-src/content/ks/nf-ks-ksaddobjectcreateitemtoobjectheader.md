@@ -41,6 +41,7 @@ req.irql:
 The <b>KsAddObjectCreateItemToObjectHeader</b> function adds the specified create-item to an empty item in the previously allocated create item list for this object header. An empty item is signified by a <b>NULL</b> create dispatch function in the entry. This function assumes that the caller is serializing multiple changes to the create items list.
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,30 @@ NTSTATUS KsAddObjectCreateItemToObjectHeader(
 
 Points to the object header that contains the previously allocated child- create table.
 
+
 ### -param Create [in]
 
 Specifies the create dispatch function to use.
+
 
 ### -param Context [in]
 
 Specifies the context parameter.
 
+
 ### -param ObjectClass [in]
 
 Specifies a pointer to a <b>NULL</b>-terminated character string that is used for comparison on create requests. This pointer must remain valid while the object is active.
+
 
 ### -param SecurityDescriptor [in, optional]
 
 Specifies the security descriptor. This must remain valid while the object is active.
 
+
 ## -returns
 The <b>KsAddObjectCreateItemToObjectHeader</b> function returns STATUS_SUCCESS if an empty create item slot was found and the item was added. If unsuccessful, it returns STATUS_ALLOTTED_SPACE_EXCEEDED.
+
 
 ## -remarks
 
@@ -87,6 +94,7 @@ The <b>KsAddObjectCreateItemToObjectHeader</b> function returns STATUS_SUCCESS i
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +105,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +116,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

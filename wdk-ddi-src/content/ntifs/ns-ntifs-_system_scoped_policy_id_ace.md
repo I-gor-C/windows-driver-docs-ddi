@@ -41,6 +41,7 @@ req.irql:
 The SYSTEM_SCOPED_POLICY_ID_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying  rights for a scoped policy identifer. This ACE causes an audit message to be logged when an atrempt to gain access to an object  based on a configured policy scope.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _SYSTEM_SCOPED_POLICY_ID_ACE {
 
 Specifies an ACE_HEADER structure. 
 
+
 ### -field Mask
 
 Specifies an ACCESS_MASK structure that specifies access rights for the scoped policy identifier. 
 
+
 ### -field SidStart
 
 Specifies a SID. The SID represents a scoped policy configured to control access to an object or group of objects.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Specifies a SID. The SID represents a scoped policy configured to control access
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,5 +107,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SYSTEM_SCOPED_POLICY_ID_ACE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_shadercachestorevalue_cb_0021.htm
 old-project: display
 ms.assetid: F47C4E6E-4B09-4461-85F6-2E850CE2A2F6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <i>pfnShaderCacheStoreValueCb</i> callback function stores a shader cache value. 
 
 
+
 ## -prototype
 
 ````
@@ -65,41 +66,51 @@ HRESULT APIENTRY CALLBACK * pfnShaderCacheStoreValueCb(
 
 The handle of the device for the driver to use when it calls back into the runtime.
 
+
 ### -param hRTPSO 
 
 The handle of a PSO.
+
 
 ### -param pPrecomputedHash [in]
 
 A hash value.
 
+
 ### -param pKey [in]
 
 A pointer to a key.
+
 
 ### -param KeyLen 
 
 The length of the key.
 
+
 ### -param pValue [in]
 
 A pointer to an output value. 
+
 
 ### -param ValueLen 
 
 The length of the output value.
 
+
 ## -returns
 If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
+
 ## -remarks
 Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

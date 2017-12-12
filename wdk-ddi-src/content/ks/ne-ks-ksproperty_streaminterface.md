@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef enum  {
 
 Specify to query a pin for the size of the stream header that this pin uses.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Specify to query a pin for the size of the stream header that this pin uses.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 92e4e960-fd74-42e1-8448-a07676507427
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION
+ms.keywords: _USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The  <b>USBD_PIPE_INFORMATION</b> structure is used by USB client drivers to hold information about a pipe from a specific interface.
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,23 @@ typedef struct _USBD_PIPE_INFORMATION {
 ### -field MaximumPacketSize
 
 Specifies the maximum packet size, in bytes, that this pipe handles. This value must be less than or equal to the value of <b>wMaxPacketSize</b> in the endpoint descriptor. The USB stack ignores this value if the USBD_PF_CHANGE_MAX_PACKET flag is not set in the <b>PipeFlags</b> member. 
+
 For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them. For more information, see Remarks.
+
 
 ### -field EndpointAddress
 
 Specifies the bus address for this pipe.
 
+
 ### -field Interval
 
 Contains the polling interval, indicated by the <b>bInterval</b> field in the corresponding endpoint descriptor (<a href="buses.usb_endpoint_descriptor">USB_ENDPOINT_DESCRIPTOR</a>). This value is only valid for interrupt and isochronous pipes.  For other types of pipe, this value should be ignored. It reflects the device's configuration in firmware. Drivers cannot change it. 
+
 The polling interval, together with the speed of the device and the type of host controller, determine the frequency with which the driver should initiate a transfer. The value in <b>Interval</b> does not represent a fixed amount of time. It is a relative value, and the actual polling frequency will also depend on whether the device and the USB host controller operate at low, full or high speed. 
+
 If either the host controller or the device operates at low speed, the period of time between transfers (also known as the  "polling period") is measured in units of 1 millisecond frames, and the period is related to the value in <b>Interval</b> as indicated the following table:
+
 <table>
 <tr>
 <th>Interval</th>
@@ -100,7 +107,9 @@ If either the host controller or the device operates at low speed, the period of
 </tr>
 </table>
  
+
 For devices and host controllers that can operate at full speed, the period is measured in units of 1 millisecond frames. For full-speed isochronous transfers,  the <b>Interval</b> value and the  polling period is  always 1. That value indicates that data can be transferred in every frame. For full-speed interrupt transfers, the polling period is derived from the <b>Interval</b> value. The following table indicates the supported values for interrupt and isochronous endpoints.
+
 <table>
 <tr>
 <th>Interval</th>
@@ -146,7 +155,9 @@ For devices and host controllers that can operate at full speed, the period is m
 </tr>
 </table>
  
+
 For devices and host controllers that can operate at high speed, the period is measured in units of microframes. The polling period is derived from the <b>Interval</b> value by using the formula <code>Polling period = 2 ** (Interval - 1)</code>.  The calculated values are indicated in the following table:
+
 <table>
 <tr>
 <th>Interval</th>
@@ -192,28 +203,37 @@ For devices and host controllers that can operate at high speed, the period is m
 </tr>
 </table>
  
+
 The supported polling periods for high-speed isochronous transfers are 1, 2, 4, and 8. If a client driver submits a URB_FUNCTION_ISOCH_TRANSFER request for a high speed isochronous endpoint with polling period greater than 8, the request fails with status USBD_STATUS_INVALID_PARAMETER. For  information about isochronous transfers, see <a href="buses.transfer_data_to_isochronous_endpoints">How to Transfer Data to USB Isochronous Endpoints</a>.
+
 The mappings in the preceding tables between periods and polling intervals are valid in Microsoft Windows 2000 and later versions of the Windows operating system.
+
 
 ### -field PipeType
 
 Specifies what type of transfers this pipe uses. These values are defined in the <a href="buses.usbd_pipe_type">USBD_PIPE_TYPE</a> enumeration.
 
+
 ### -field PipeHandle
 
 Specifies an opaque handle to the bulk or interrupt pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.    
 
+
 ### -field MaximumTransferSize
 
 Specifies the maximum size, in bytes, for a transfer request on this pipe. In Windows Server 2003, Windows XP and later operating systems, this member is not used and does not contain valid data. 
+
 For information about the maximum transfer sizes of each type of USB endpoint in different versions of Windows, see <a href="buses.setting_usb_transfer_and_packet_sizes">USB Transfer and Packet Sizes</a>.
+
 <div class="alert"><b>Note</b>  For WinUSB, do not use <b>MaximumTransferSize</b> to determine the maximum size of a USB transfer. Instead, use the MAXIMUM_TRANSFER_SIZE value retrieved by  <a href="buses.winusb_getpipepolicy">WinUsb_GetPipePolicy</a>.</div>
 <div> </div>
 
 ### -field PipeFlags
 
 Contains a bitwise-OR of pipe flags that the driver can use to specify certain configurable characteristics of the pipe. The driver specifies these pipe characteristics when it selects the configuration of a USB device with a URB request whose function type is URB_FUNCTION_SELECT_CONFIGURATION. 
+
 The following table explains the meaning of each pipe flag: 
+
 <table>
 <tr>
 <th>Flag name</th>
@@ -222,13 +242,16 @@ The following table explains the meaning of each pipe flag:
 <tr>
 <td>
 USBD_PF_CHANGE_MAX_PACKET
+
 </td>
 <td>
 Indicates that the driver is overriding the endpoint maximum packet size with the value specified in <b>MaximumPacketSize</b>. This value must be less than or equal to the default maximum specified in the pipe's endpoint descriptor. 
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 This structure contains information for an endpoint, retrieved from the device's interface descriptor. For an explanation of how to obtain the information in <b>USBD_PIPE_INFORMATION</b> from the interface descriptor, see <a href="buses.how_to_select_a_configuration_for_a_usb_device">How to Select a Configuration for a USB Device</a>. 
@@ -245,11 +268,13 @@ The value received in <b>MaximumPacketSize</b> for an isochronous endpoint (high
 <li><b>Interval</b> is 1.</li>
 </ul>In the preceding example, the value received in <b>MaximumPacketSize</b> is 3,072 bytes  (Total transactions * <b>wMaxPacketSize</b>). Because <b>Interval</b> is 1, the polling period is 1. Thus, the host controller can transfer 3,072 bytes in each microframe of a frame. In a single I/O  request (described in one URB), the host controller can transfer no more than 24,576 bytes.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -269,5 +294,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_PIPE_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

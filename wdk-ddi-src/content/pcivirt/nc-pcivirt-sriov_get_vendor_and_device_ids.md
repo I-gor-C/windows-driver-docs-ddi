@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Supplies the Vendor and Device ID for a PCI Express SR-IOV Virtual Function (VF) to be used for generating a more generic Plug and Play ID for the VF.  These IDs cannot be read directly from the VF’s configuration space.
 
 
+
 ## -prototype
 
 ````
@@ -66,9 +67,11 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param VfIndex [in]
 
 A zero-based index of the VF to which this write operation applies.
+
 
 ### -param VendorId [out]
 
@@ -76,15 +79,18 @@ A zero-based index of the VF to which this write operation applies.
                     
                 A pointer to a USHORT variable that is filled with the vendor ID of the VF.
 
+
 ### -param DeviceId [out]
 
 
                     
                 A pointer to a USHORT variable that is filled with the device ID of the VF.
 
+
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to retrieve the vendor and device identifiers of the specified VF. 
@@ -95,27 +101,33 @@ The PF driver registers its implementation by setting the <b>GetVendorAndDevice<
 
 Here is an example implementation of this callback function. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +138,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

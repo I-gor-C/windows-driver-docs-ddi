@@ -7,7 +7,7 @@ old-location: wdf\wdf_pnp_capability.htm
 old-project: wdf
 ms.assetid: adcc5f64-b49c-47ca-8ef9-276537a0d7c6
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_PNP_CAPABILITY, WDF_PNP_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>WDF_PNP_CAPABILITY</b> enumeration contains values that identify Plug and Play (PnP) capabilities for a device.
+
 
 
 ## -syntax
@@ -65,42 +67,52 @@ typedef enum _WDF_PNP_CAPABILITY {
 
 Indicates whether PnP capabilities of the device are invalid.
 
+
 ### -field WdfPnpCapLockSupported
 
 Indicates whether the device can be locked in its slot to prevent ejection. (Setting this capability disables ejecting a device from its slot and does not disable ejecting media from a device.) 
+
 
 ### -field WdfPnpCapEjectSupported
 
 Indicates whether the device can be ejected from its slot. (Setting this capability enables ejecting a device from its slot and does not enable ejecting media from a device.) 
 
+
 ### -field WdfPnpCapRemovable
 
 Indicates whether the device can be removed while the computer is running. If <b>WdfPnpCapRemovable</b> is set to <b>WdfTrue</b> and <b>WdfPnpCapSurpriseRemovalOk</b> is set to <b>WdfFalse</b>, users should use the system's Unplug or Eject Hardware application. 
+
 
 ### -field WdfPnpCapDockDevice
 
 Indicates whether the device is a docking station. 
 
+
 ### -field WdfPnpCapSurpriseRemovalOk
 
 Indicates whether users can remove the device without using the computer's Unplug or Eject Hardware application.
+
 
 ### -field WdfPnpCapNoDisplayInUI
 
 Indicates whether the device can be hidden (not displayed) in Device Manager.
 
+
 ### -field WdfPnpCapMaximum
 
 Valid enumeration values were exceeded.
 
+
 ## -remarks
 A UMDF driver supplies one of the values of <b>WDF_PNP_CAPABILITY</b> to the <a href="wdf.iwdfdeviceinitialize_getpnpcapability">IWDFDeviceInitialize::GetPnpCapability</a> or <a href="wdf.iwdfdeviceinitialize_setpnpcapability">IWDFDeviceInitialize::SetPnpCapability</a> method to identify the PnP capability to retrieve or set status for.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +132,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_CAPABILITY enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_CAPABILITY enumeration%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

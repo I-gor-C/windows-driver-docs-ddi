@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasGetItemType </b>function indicates the item type.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ HRESULT _stdcall wiasGetItemType(
 
 Pointer to a WIA item context.
 
+
 ### -param plItemType [out]
 
 Pointer to a memory location that receives a value indicating the type of the item. See the Microsoft Windows SDK documentation for a list of the WIA item type flags.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Windows SDK documentation).
+
 
 ## -remarks
 
@@ -73,6 +77,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +88,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +120,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

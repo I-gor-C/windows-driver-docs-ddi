@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumberslist.htm
 old-project: netvista
 ms.assetid: bfeaff04-6dd2-4889-9ab3-f20361dc2f5c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef struct _RILEMERGENCYNUMBERSLIST {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

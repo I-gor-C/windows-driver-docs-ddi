@@ -7,7 +7,7 @@ old-location: print\createprinteric.htm
 old-project: print
 ms.assetid: 87C99B3A-EF77-4D87-9953-BBE9628D2A3D
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: CreatePrinterIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ HANDLE WINAPI CreatePrinterIC(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

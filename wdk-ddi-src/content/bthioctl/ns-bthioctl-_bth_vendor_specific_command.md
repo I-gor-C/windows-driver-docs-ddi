@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 ---
 
 # _BTH_VENDOR_SPECIFIC_COMMAND structure
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 The BTH_VENDOR_SPECIFIC_COMMAND structure specifies a Bluetooth vendor-specific command.
+
 
 
 ## -syntax
@@ -61,12 +62,14 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 The manufacturer identifier of the radio. Radios that have this manufacturer identifier can
      receive the vendor-specific command.
 
+
 ### -field LmpVersion
 
 A UCHAR that contains the link management protocol (LMP) version. If the LMP version of a radio is
      greater than this value, the command is sent to the radio. Otherwise, the radio does not receive the
      command. If 
      <b>LmpVersion</b> is zero, all radios will receive the vendor-specific command.
+
 
 ### -field MatchAnySinglePattern
 
@@ -78,6 +81,7 @@ A BOOLEAN value that specifies if all the patterns in the
      command. If 
      <b>MatchAnySinglePattern</b> is <b>TRUE</b>, matching any pattern associates an event with the command.
 
+
 ### -field HciHeader
 
 A 
@@ -86,11 +90,13 @@ A
      length. The buffer length should only include the size of the data to be sent to the radio. It should
      not include the size of the patterns.
 
+
 ### -field Data
 
 A UCHAR array that contains the data and patterns for the command that is specified in the 
      <b>HciHeader</b> member. Patterns are specified with 
      <a href="bltooth.bth_vendor_pattern">BTH_VENDOR_PATTERN</a> structures.
+
 
 ## -remarks
 This BTH_VENDOR_SPECIFIC_COMMAND structure specifies the input buffer for the 
@@ -114,19 +120,23 @@ If patterns are required, the patterns follow the data to be sent to the radio i
 If such patterns are specified, the 
     <b>TotalParameterLength</b> member should not include the size of the patterns.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Available in Windows Vista, and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,5 +159,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_VENDOR_SPECIFIC_COMMAND structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

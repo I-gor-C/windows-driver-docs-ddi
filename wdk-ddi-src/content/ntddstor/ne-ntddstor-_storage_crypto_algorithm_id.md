@@ -7,8 +7,8 @@ old-location: storage\storage_crypto_algorithm_id.htm
 old-project: storage
 ms.assetid: 5D1CCF3D-D677-47B0-9C7B-7E35C649A7D5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, STORAGE_CRYPTO_ALGORITHM_ID
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_CRYPTO_ALGORITHM_ID, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 The <b>STORAGE_CRYPTO_ALGORITHM_ID</b> enum provides an output buffer for <b>StorageAdapterCryptoProperty</b> and <b>PropertyStandardQuery</b>.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum _STORAGE_CRYPTO_ALGORITHM_ID {
 
 Reserved for system use.
 
+
 ### -field StorageCryptoAlgorithmXTSAES
 
 Reserved for system use.
+
 
 ### -field StorageCryptoAlgorithmBitlockerAESCBC
 
 Reserved for system use.
 
+
 ### -field StorageCryptoAlgorithmAESECB
 
 Reserved for system use.
+
 
 ### -field StorageCryptoAlgorithmESSIVAESCBC
 
 Reserved for system use.
 
+
 ### -field StorageCryptoAlgorithmMax
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

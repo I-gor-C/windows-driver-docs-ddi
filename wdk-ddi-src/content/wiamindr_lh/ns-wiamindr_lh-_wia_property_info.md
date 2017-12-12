@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _WIA_PROPERTY_INFO, WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO
+ms.keywords: _WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type.
+
 
 
 ## -syntax
@@ -99,39 +100,51 @@ typedef struct _WIA_PROPERTY_INFO {
 
 Specifies the access and property attribute flags for a property. See the Microsoft Windows SDK documentation for a list of WIA property attribute flags. 
 
+
 ### -field vt
 
 Specifies the variant data type for the property. This member, which can be one of the following, controls which structure member of the <b>ValidValunion</b> is valid:
+
 <dl>
 <dd>
 VT_UI1
+
 </dd>
 <dd>
 VT_UI2
+
 </dd>
 <dd>
 VT_UI4
+
 </dd>
 <dd>
 VT_I2
+
 </dd>
 <dd>
 VT_I4
+
 </dd>
 <dd>
 VT_R4
+
 </dd>
 <dd>
 VT_R8
+
 </dd>
 <dd>
 VT_CLSID
+
 </dd>
 <dd>
 VT_BSTR
+
 </dd>
 </dl>
 See PROPVARIANT in the Windows SDK documentation for more information.
+
 
 ### -field ValidVal
 
@@ -139,56 +152,86 @@ See PROPVARIANT in the Windows SDK documentation for more information.
 ### -field Range
 
 Is a structure that is filled when the property's valid values are specified by a range of integer values. This structure contains the following members:
+
 <b>Min</b>, which indicates the minimum value of the property.
+
 <b>Max</b>, which indicates the maximum value of the property.
+
 <b>Nom</b>, which indicates the property's nominal value.
+
 <b>Inc</b>, which indicates the increment value that can be used.
+
 
 ### -field RangeFloat
 
 Is a structure that is filled when the property's valid values are specified by a range of floating-point values and the property type is a <b>float</b> or <b>double</b>. This structure contains the following members:
+
 <b>Min</b>, which indicates the minimum value of the property.
+
 <b>Max</b>, which indicates the maximum value of the property.
+
 <b>Nom</b>, which indicates the property's nominal value.
+
 <b>Inc</b>, which indicates the increment value that can be used. 
+
 
 ### -field List
 
 Is a structure that is filled when the property's valid values are specified by a list of integer values. This structure contains the following members:
+
 <b>cNumList</b>, which indicates the number of elements in the array of valid values to which <b>pList</b> points.
+
 <b>Nom</b>, which indicates the nominal value of the property.
+
 <b>pList</b>, which is an array of valid values the property can be set to.
+
 
 ### -field ListFloat
 
 Is a structure that is filled when the property's valid values are specified by a list of floating-point values. This structure contains the following members:
+
 <b>cNumList</b>, which indicates the number of elements in the array of valid values to which <b>pList</b> points.
+
 <b>Nom</b>, which indicates the nominal value of the property.
+
 <b>pList</b>, which is an array of valid values the property can be set to.
+
 
 ### -field ListGuid
 
 Is a structure that is filled when the property's valid values are specified by a list of GUIDs. This structure contains the following members:
+
 <b>cNumList</b>, which indicates the number of elements in the array of valid values to which <b>pList</b> points.
+
 <b>Nom</b>, which indicates the nominal value of the property.
+
 <b>pList</b>, which is an array of valid values the property can be set to. 
+
 
 ### -field ListBStr
 
 Is a structure that is filled when the property's valid values are specified by a list of strings. This structure contains the following members:
+
 <b>cNumList</b>, which indicates the number of elements in the array of valid values to which <b>pList</b> points.
+
 <b>Nom</b>, which indicates the nominal value of the property.
+
 <b>pList</b>, which is an array of valid values the property can be set to.
+
 
 ### -field Flag
 
 Is a structure that is filled when the property's valid values are specified by a bitset of flags. This structure contains the following members:
+
 <b>Nom</b>, which indicates the nominal value of the property.
+
 <b>ValidBits</b>, which is a mask indicating which bit values can be set. This member should be a bitwise OR of all possible user-defined flag values.
+
 
 ### -field None
 
 Is a structure that is filled when the property's valid values are not given in a list, range, or bitset. This structure contains a member named <b>Dummy</b>, which indicates the property is of type NONE. 
+
 </dd>
 </dl>
 
@@ -209,19 +252,23 @@ At run time, changing the value with <b>wiasWriteMultiple</b> might look like th
 
 <b>Note</b>  WIA uses the COM PROPVARIANT type, VARIANT (defined in the Microsoft Windows SDK documentation), so the default is VT_VECTOR, and not VT_ARRAY (which is also supported).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -238,5 +285,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_PROPERTY_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

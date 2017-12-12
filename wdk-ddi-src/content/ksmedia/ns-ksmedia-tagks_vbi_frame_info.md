@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: ae6ba1c3-0729-41bd-9fd5-62969bf4b70c
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKS_VBI_FRAME_INFO, *PKS_VBI_FRAME_INFO, KS_VBI_FRAME_INFO
+ms.keywords: tagKS_VBI_FRAME_INFO, KS_VBI_FRAME_INFO, *PKS_VBI_FRAME_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KS_VBI_FRAME_INFO structure extends the <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structure for vertical blanking interval (VBI) streams.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ typedef struct tagKS_VBI_FRAME_INFO {
 
 Specifies the size of this structure.
 
+
 ### -field dwFrameFlags
 
 Specifies flags indicating additional information about the frame captured. During capture, the minidriver sets this member to one of the following values that are defined in <i>ksmedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -73,81 +76,101 @@ Specifies flags indicating additional information about the frame captured. Duri
 <tr>
 <td>
 KS_VBI_FLAG_FIELD1
+
 </td>
 <td>
 Indicates the first field of a two-field sequence
+
 </td>
 </tr>
 <tr>
 <td>
 KS_VBI_FLAG_FIELD2
+
 </td>
 <td>
 Indicates the second field of a two-field sequence
+
 </td>
 </tr>
 <tr>
 <td>
 KS_VBI_FLAG_MV_PRESENT
+
 </td>
 <td>
 Indicates Macrovision protection scheme
+
 </td>
 </tr>
 <tr>
 <td>
 KS_VBI_FLAG_MV_HARDWARE
+
 </td>
 <td>
 Indicates Macrovision hardware support
+
 </td>
 </tr>
 <tr>
 <td>
 KS_VBI_FLAG_MV_DETECTED
+
 </td>
 <td>
 Indicates Macrovision detected
+
 </td>
 </tr>
 <tr>
 <td>
 KS_VBI_FLAG_TVTUNER_CHANGE
+
 </td>
 <td>
 Indicates that the <b>TvTunerChangeInfo</b> member structure contains valid data
+
 </td>
 </tr>
 <tr>
 <td>
 KS_VBI_FLAG_VBIINFOHEADER_CHANGE
+
 </td>
 <td>
 Indicates that the <b>VBIInfoHeader</b> member structure contains valid data
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field PictureNumber
 
 Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+
 
 ### -field DropCount
 
 Specifies the number of pictures that were not captured. When capturing video, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.
 
+
 ### -field dwSamplingFrequency
 
 Specifies the sampling frequency in hertz (Hz).
+
 
 ### -field TvTunerChangeInfo
 
 Specifies information about the current VBI data source, including country/region code, analog video standard, and channel. This member is only valid if <b>dwFrameFlags</b> specifies the KS_VBI_FLAG_TVTUNER_CHANGE flag. 
 
+
 ### -field VBIInfoHeader
 
 Specifies information about the current VBI data source, including start line, end line, sampling frequency, and video standard. This member is only valid if <b>dwFrameFlags</b> specifies the KS_VBI_FLAG_VBIINFOHEADER_CHANGE flag.
+
 
 ## -remarks
 The KS_VBI_FRAME_INFO structure provides a way to return information about a captured frame, as well as providing tuning information to VBI decoders.
@@ -162,11 +185,13 @@ When calculating the <b>PictureNumber</b> and <b>DropCount</b>, it is important 
 
 The <b>dwSamplingFrequency</b> member is not used by Microsoft VBI codecs, but may be used by other WDM codecs. It must be the same as the <b>VBIInfoHeader</b>.<i>SamplingFrequency</i> member. A minidriver indicates a change in sampling frequency by setting the KS_VBI_FLAG_VBIINFOHEADER_CHANGE bit in the <b>dwFrameFlags</b> member, and filling in all members, including <b>dwSamplingFrequency</b>, in the <b>VBIInfoHeader</b> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -189,5 +214,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VBI_FRAME_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

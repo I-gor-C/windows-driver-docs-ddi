@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-view-instancing-desc.htm
 old-project: display
 ms.assetid: 4d942de6-d829-499c-80cf-3cff8266aee4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIEW_INSTANCING_DESC, D3D12DDI_VIEW_INSTANCING_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 View instancing description.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3D12DDI_VIEW_INSTANCING_DESC {
 
 View instance count.
 
+
 ### -field pViewInstanceLocations
 
 View instance locations.
 
+
 ### -field Flags
 
 Flags.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Flags.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\flowdeletefn.htm
 old-project: netvista
 ms.assetid: 65449a23-da5d-4884-b98e-030461eb019a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The filter engine calls a callout's
   callout is being terminated.
 
 
+
 ## -prototype
 
 ````
@@ -66,6 +67,7 @@ The run-time identifier for the filtering layer at which the data flow is being 
      <a href="netvista.run_time_filtering_layer_identifiers">Run-time Filtering Layer
      Identifiers</a>.
 
+
 ### -param calloutId [in]
 
 The run-time identifier for the callout in the filter engine. This is the same identifier that was
@@ -74,13 +76,16 @@ The run-time identifier for the callout in the filter engine. This is the same i
      <a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
+
 ### -param flowContext [in]
 
 The most recent context that has been associated with the data flow by a call to the 
      <a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 A callout driver registers a callout's callout functions with the filter engine by calling either the 
@@ -113,19 +118,23 @@ The FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 type is defined as a pointer to the
 The filter engine calls a callout's 
     <i>flowDeleteFn</i> callout function at IRQL &lt;= DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,9 +145,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -162,5 +173,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

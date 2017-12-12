@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 2f8ae260-3a4c-44a5-85b7-e3ebcf21522b
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _ENUMERATOR_TYPE, *PENUMERATOR_TYPE, ENUMERATOR_TYPE
+ms.keywords: _ENUMERATOR_TYPE, ENUMERATOR_TYPE, *PENUMERATOR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -43,6 +43,7 @@ The ENUMERATOR_TYPE enumeration type is used to determine whether the enumerated
   not be used by profile drivers.
 
 
+
 ## -syntax
 
 ````
@@ -60,15 +61,18 @@ typedef enum _ENUMERATOR_TYPE {
 
 For internal use only. Do not use.
 
+
 ### -field ENUMERATOR_TYPE_SERVICE
 
 This value should be specified for profile drivers. For more information about how this value is
      used, see 
      <a href="bltooth.bth_enumerator_info">BTH_ENUMERATOR_INFO</a>.
 
+
 ### -field ENUMERATOR_TYPE_MAX
 
 For internal use only. Do not use.
+
 
 ## -remarks
 A value from this enumeration is returned as the 
@@ -77,19 +81,23 @@ A value from this enumeration is returned as the
     <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
     IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a> returns in its output buffer.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +118,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20ENUMERATOR_TYPE enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

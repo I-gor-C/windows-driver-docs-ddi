@@ -7,8 +7,8 @@ old-location: netvista\rilcallinfo_v2.htm
 old-project: netvista
 ms.assetid: 02eaaaa4-fe88-4f07-bfbf-1ba52d0c1362
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILCALLINFO_V2, RILCALLINFO_V2, *LPRILCALLINFO_V2
+ms.date: 12/8/2017
+ms.keywords: RILCALLINFO_V2, *LPRILCALLINFO_V2, RILCALLINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -127,6 +128,7 @@ typedef struct _RILCALLINFO_V2 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

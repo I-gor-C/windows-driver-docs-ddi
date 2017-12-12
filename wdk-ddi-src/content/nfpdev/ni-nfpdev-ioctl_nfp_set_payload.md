@@ -41,10 +41,12 @@ req.irql:
 A client application sends message data and confirms publication with the <b>IOCTL_NFP_SET_PAYLOAD</b> request.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 The input buffer contains the message data to transmit.
+
 
 ### -input-buffer-length
 
@@ -52,6 +54,7 @@ The input buffer contains the message data to transmit.
 
 ### -output-buffer
 None.
+
 
 ### -output-buffer-length
 
@@ -75,24 +78,31 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 The following actions are required when using this IOCTL:<ul>
 <li>
 If this IOCTL is sent on a handle that hasn’t previously been opened on a “Pubs\...” filename, the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.
+
 </li>
 <li>
 The message data is write-once.  If this IOCTL succeeds once, any subsequent IOCTL_NFP_SET_PAYLOAD received on the same handle MUST be completed with STATUS_INVALID_DEVICE_STATE.
+
 </li>
 <li>
 If the IOCTL contains an output buffer, the driver MUST complete the IOCTL with STATUS_INVALID_PARAMETER.
+
 </li>
 <li>
 If the input buffer is larger than the driver’s maximum message size, the driver MUST complete the IOCTL with STATUS_INVALID_BUFFER_SIZE.
+
 </li>
 <li>
 If any device becomes proximate after this IOCTL succeeds, and before the handle is closed, then the message data (along with its type) MUST be transmitted only once to the proximate device.
+
 </li>
 <li>
 If the same (or different) device becomes proximate again before the handle is closed, the message MUST be transmitted once again.
+
 </li>
 <li>
 If a device is currently proximate when this IOCTL is successfully completed, then the message data (along with its type) MUST be transmitted (only once) to the proximate device.  This applies even if the handle is immediately closed.
+
 </li>
 </ul>
 
@@ -111,19 +121,23 @@ If the same (or different) device becomes proximate again before the handle is c
 
 If a device is currently proximate when this IOCTL is successfully completed, then the message data (along with its type) MUST be transmitted (only once) to the proximate device.  This applies even if the handle is immediately closed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +153,8 @@ Header
 <dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_NFP_SET_PAYLOAD control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

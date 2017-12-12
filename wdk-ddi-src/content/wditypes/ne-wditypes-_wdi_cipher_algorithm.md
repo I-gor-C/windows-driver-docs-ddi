@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_algorithm.htm
 old-project: netvista
 ms.assetid: 08413358-DFBC-4AC3-97B3-380D98EFFBF3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_CIPHER_ALGORITHM, WDI_CIPHER_ALGORITHM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_CIPHER_ALGORITHM enumeration defines the cipher algorithm values.
 
 
+
 ## -syntax
 
 ````
@@ -68,34 +69,43 @@ typedef enum _WDI_CIPHER_ALGORITHM {
 
 Specifies that no cipher algorithm is enabled or supported.
 
+
 ### -field WDI_CIPHER_ALGO_WEP40
 
 Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a 40-bit cipher key.
+
 
 ### -field WDI_CIPHER_ALGO_TKIP
 
 Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004 standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery protection.
 
+
 ### -field WDI_CIPHER_ALGO_CCMP
 
 Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610. Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.
+
 
 ### -field WDI_CIPHER_ALGO_WEP104
 
 Specifies a WEP cipher algorithm with a 104-bit cipher key.
 
+
 ### -field WDI_CIPHER_ALGO_BIP
 
 Specifies a BIP cipher algorithm.
 
+
 ### -field WDI_CIPHER_ALGO_GCMP
 
 Added in Windows 10, version 1607, WDI version 1.0.21.
+
 Specifies a GCMP (Galois/Counter Mode Protocol) cipher algorithm. It is the only encryption protocol supported for 802.11ad (DMG) Phy.
+
 
 ### -field WDI_CIPHER_ALGO_WPA_USE_GROUP
 
 Specifies a Wi-Fi Protected Access (WPA) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.
+
 
 
 
@@ -105,9 +115,11 @@ Specifies a Robust Security Network (RSN) Use Group Key cipher suite. For more i
 
 
 
+
 ### -field WDI_CIPHER_ALGO_WEP
 
 Specifies a WEP cipher algorithm with a cipher key of any length. 
+
 
 ### -field WDI_CIPHER_ALGO_IHV_START
 
@@ -115,9 +127,11 @@ Specifies the start of the range that is used to define proprietary cipher algor
 
 
 
+
 ### -field WDI_CIPHER_ALGO_IHV_END
 
 Specifies the end of the range that is used to define proprietary authentication algorithms that are developed by an IHV.  
+
 
 ## -remarks
 
@@ -127,22 +141,27 @@ Specifies the end of the range that is used to define proprietary authentication
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

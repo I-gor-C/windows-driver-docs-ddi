@@ -7,7 +7,7 @@ old-location: storage\storportinitializecryptoengine.htm
 old-project: storage
 ms.assetid: 49F4EEA1-BFA6-4A91-8306-E25569C679A6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortInitializeCryptoEngine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Reserved for system use.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ Reserved for system use.
 
 Reserved for system use.
 
+
 ## -returns
 Reserved for system use.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmt-createstandardallocationflags.htm
 old-project: display
 ms.assetid: a1a4aa0c-2edc-48b9-ad49-c876be930955
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_CREATESTANDARDALLOCATIONFLAGS, D3DKMT_CREATESTANDARDALLOCATIONFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to create standard allocation flags.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct _D3DKMT_CREATESTANDARDALLOCATIONFLAGS {
 
 This value is reserved for use by the operating system.
 
+
 ### -field Value
 
 The value used to operate over the other members.
+
 
 ## -remarks
 
@@ -73,6 +76,7 @@ The value used to operate over the other members.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

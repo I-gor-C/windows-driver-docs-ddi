@@ -41,6 +41,7 @@ req.irql:
 This structure is used internally by the operating system.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 This member is used internally by the operating system.
 
+
 ### -field Buffer
 
 This member  is used internally by the operating system.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ This member  is used internally by the operating system.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxapi.htm
 old-project: display
 ms.assetid: c4b38376-b54f-4fbb-b305-5951a1ea76a1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DxApi
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>DxApi</b> function accepts commands from the hardware decoder's video capture driver to access the <a href="display.dxapi_functions">DxApi interface functions</a> that are implemented in a <a href="https://msdn.microsoft.com/3a540bfe-f340-4f12-acee-323b97683074">video miniport driver</a>.
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,30 @@ DWORD DxApi(
 
 Indicates the behavior of the <b>DxApi</b> function (function identifier). See the Remarks section for the list of function identifiers.
 
+
 ### -param lpvInBuffer 
 
 Points to the input buffer.
+
 
 ### -param cbInBuffer 
 
 Indicates the size in bytes of the input buffer.
 
+
 ### -param lpvOutBuffer 
 
 Points to the output buffer.
+
 
 ### -param cbOutBuffer 
 
 Indicates the size in bytes of the output buffer.
 
+
 ## -returns
 <b>DxApi</b> returns the number of bytes actually written to the output buffer.
+
 
 ## -remarks
 <b>DxApi</b> accepts a function identifier (<i>dwFunctionNum</i>), an input buffer (<i>lpvInBuffer</i>) and its size (<i>cbInBuffer</i>), and an output buffer (<i>lpvOutBuffer</i>) and its size (<i>cbOutBuffer</i>). The behavior of the function and the size and format of the input and output buffers depend on the specified function identifier. The return value is the number of actual bytes written into the output buffer.
@@ -172,11 +179,13 @@ The following function identifiers are defined for the <b>DxApi</b> function in 
 <a href="display.dd_dxapi_unregister_callback">DD_DXAPI_UNREGISTER_CALLBACK</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -187,6 +196,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -197,6 +207,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -276,5 +287,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DxApi function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DxApi function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

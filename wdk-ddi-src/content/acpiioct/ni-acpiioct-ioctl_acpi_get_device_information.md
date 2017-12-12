@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 08C27EC1-0948-4E8F-A391-01FE2C1A34DB
 ms.author: windowsdriverdev
 ms.date: 12/2/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+ms.keywords: _UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,6 +41,7 @@ req.irql:
 A driver for a device can use the IOCTL_ACPI_GET_DEVICE_INFORMATION device control request to obtain fine-grained identification information about its device. This IOCTL is typically used by drivers that support multiple versions or revisions of a device, and need to examine the component parts that make up the device's HW ID string to identify the exact device. The driver should call <a href="kernel.iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
@@ -60,8 +61,10 @@ Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
 
 <i>Event</i> is set to <b>NULL</b>.
 
+
 ### -input-buffer-length
 <i>InputBufferLength</i> is set to the size, in bytes, of the input buffer that is supplied by <i>InputBuffer</i>.
+
 
 ### -output-buffer
 Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:
@@ -70,8 +73,10 @@ Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:
 
 <i>IoStatusBlock</i> is set to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure.
 
+
 ### -output-buffer-length
 <i>OutputBufferLength</i> supplies the size, in bytes, of the output buffer that is supplied by <i>OutputBuffer</i>.
+
 
 ### -in-out-buffer
 
@@ -87,6 +92,7 @@ If the request succeeds, <i>IoStatusBlock</i>-&gt;<b>Status</b> is set to STATUS
 
 If the request succeeds, the <i>IoStatusBlock</i>-&gt;<b>Information</b> member is set to the number of bytes that is returned in the output buffer; otherwise, the <b>Information</b> member is set to zero.
 
+
 ## -remarks
 A driver for a device can use IOCTL_ACPI_GET_DEVICE_INFORMATION to obtain fine-grained identification information about its device. This IOCTL is typically used with drivers that support multiple hardware versions or revisions of a device, and need to examine the component parts that make up the device's HW ID string to identify the exact device. For example, a driver may support different revisions of the same device, in which some aspect of the programing interface or the device's behavior is different. The driver can identify exactly which revision it is running on.
 
@@ -94,19 +100,23 @@ The output arguments from the request are returned in the variable-length <a hre
 
 IOCTL_ACPI_GET_DEVICE_INFORMATION can be used only at IRQL &lt;= DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +133,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20IOCTL_ACPI_GET_DEVICE_INFORMATION control code%20 RELEASE:%20(12/2/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2responsequery.htm
 old-project: display
 ms.assetid: fda36df2-d346-47a5-b391-dd4509446ca1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2RESPONSEQUERY, D3DHAL_DP2RESPONSEQUERY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,9 @@ req.irql:
 
    DirectX 9.0 and later versions only.
    
+
 One or more D3DHAL_DP2RESPONSEQUERY structure are parsed from the response buffer by the runtime after the runtime calls the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback. The driver sets the <a href="display.d3dhal_dp2response">D3DHAL_DP2RESPONSE</a> structure's <b>bCommand</b> member to D3DDP2OP_RESPONSEQUERY to indicate that responses to previously issued queries are available in the response buffer. 
+
 
 
 ## -syntax
@@ -60,9 +62,11 @@ typedef struct _D3DHAL_DP2RESPONSEQUERY {
 
 Identifies the query for which response data is available.
 
+
 ### -field dwSize
 
 Specifies the size, in bytes, of the query information that the driver returns to the runtime.
+
 
 ## -remarks
 The runtime uses the D3DDP2OP_ISSUEQUERY command to request that the driver process queries. The driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback should process <b>wPrimitiveCount </b><a href="display.d3dhal_dp2issuequery">D3DHAL_DP2ISSUEQUERY</a> query structures from the command buffer. The value of <b>wPrimitiveCount </b> is specified in the <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure. The driver parses these query structures and translates them to its hardware specific commands. 
@@ -78,11 +82,13 @@ DWORD for D3DQUERYTYPE_OCCLUSION. The driver sets this DWORD to the number of pi
 
 The runtime parses the returned response buffer and updates its internal data structures.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +122,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2RESPONSEQUERY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2RESPONSEQUERY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

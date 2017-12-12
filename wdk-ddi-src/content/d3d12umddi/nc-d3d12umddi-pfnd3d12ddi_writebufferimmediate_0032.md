@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_writebufferimmediate_0032.htm
 old-project: display
 ms.assetid: 73486EA4-F1D8-4649-81C8-1698E1854DED
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to create a write buffer. 
 
 
+
 ## -prototype
 
 ````
@@ -59,20 +60,25 @@ VOID APIENTRY* PFND3D12DDI_WRITEBUFFERIMMEDIATE_0032(
 
 The command list.
 
+
 ### -param Count 
 
 The count.
+
 
 ### -param pParams [in]
 
 The parameters for the write buffer.
 
+
 ### -param pModes [in]
 
 The modes for the write buffer.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -82,6 +88,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

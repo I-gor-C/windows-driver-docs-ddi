@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_color_ycbcra.htm
 old-project: display
 ms.assetid: d6d8147e-8cc8-4c35-8031-bce2fa3ccd67
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_COLOR_YCbCrA, D3D11_1DDI_VIDEO_COLOR_YCbCrA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a YCbCr color value.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct D3D11_1DDI_VIDEO_COLOR_YCbCrA {
 
 The Y (luma) value.
 
+
 ### -field Cb
 
 The Cb chroma value.
+
 
 ### -field Cr
 
 The Cr chroma value.
 
+
 ### -field A
 
 The alpha value. Values range from 0 (transparent) to 1 (opaque).
+
 
 ## -remarks
 Values have a nominal range of [0...1]. Given a format with  <i>n</i> bits per channel, the value of each color component is calculated as follows:
@@ -78,27 +83,33 @@ Values have a nominal range of [0...1]. Given a format with  <i>n</i> bits per c
 
 For example, for 8-bit YUV formats, <code>val = BYTE(f * 255.0)</code>.  Reference black is (0.0625, 0.5, 0.5), which corresponds to (16, 128, 128) in an 8-bit representation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

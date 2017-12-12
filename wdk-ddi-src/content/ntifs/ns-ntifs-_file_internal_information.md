@@ -41,6 +41,7 @@ req.irql:
 The FILE_INTERNAL_INFORMATION structure is used to query for the file system's 8-byte file reference number for a file. 
 
 
+
 ## -syntax
 
 ````
@@ -55,6 +56,7 @@ typedef struct _FILE_INTERNAL_INFORMATION {
 ### -field IndexNumber
 
 The 8-byte file reference number for the file. This number is assigned by the file system and is file-system-specific. (Note that this is not the same as the 16-byte "file object ID" that was added to NTFS for Microsoft Windows 2000.) 
+
 
 ## -remarks
 This information can be queried in either of the following ways: 
@@ -73,11 +75,13 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to <a href
 
 This structure must be aligned on a LONGLONG (8-byte) boundary. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +110,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_INTERNAL_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

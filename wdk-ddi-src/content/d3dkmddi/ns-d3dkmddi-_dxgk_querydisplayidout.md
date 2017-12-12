@@ -7,7 +7,7 @@ old-location: display\dxgk_querydisplayidout.htm
 old-project: display
 ms.assetid: BF528089-0194-4A3F-B8BA-85F80974C4C2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_QUERYDISPLAYIDOUT, DXGK_QUERYDISPLAYIDOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used to query a display ID.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DXGK_QUERYDISPLAYIDOUT {
 
 The length of the Display ID.
 
+
 ### -field pDescriptor
 
 A pointer to the descriptor of the ID.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A pointer to the descriptor of the ID.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

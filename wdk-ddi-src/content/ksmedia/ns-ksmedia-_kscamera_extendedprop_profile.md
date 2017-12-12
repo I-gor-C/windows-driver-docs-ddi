@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 43529BA7-1F5A-4B9B-9792-2D6050F0480D
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _KSCAMERA_EXTENDEDPROP_PROFILE, KSCAMERA_EXTENDEDPROP_PROFILE, *PKSCAMERA_EXTENDEDPROP_PROFILE
+ms.keywords: _KSCAMERA_EXTENDEDPROP_PROFILE, *PKSCAMERA_EXTENDEDPROP_PROFILE, KSCAMERA_EXTENDEDPROP_PROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The payload of the KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE control contains KSCAMERA_EXTENDEDPROP_HEADER + KSCAMERA_EXTENDEDPROP_PROFILE.
 
 
+
 ## -syntax
 
 ````
@@ -57,15 +58,19 @@ typedef struct _KSCAMERA_EXTENDEDPROP_PROFILE {
 ### -field ProfileId
 
 A GUID representing the selected profile.  If this is KSCAMERAPROFILE_Legacy, no profile was selected, the camera driver must expose the Reduced Set Media Type.
+
 If this field is GUID_NULL, no profile was selected, but the application is profile aware so the camera driver must expose the full range of media types.
+
 
 ### -field Index
 
 An index value associated with the identified profile.
 
+
 ### -field Reserved
 
 Unused.  Must be 0.
+
 
 ## -remarks
 
@@ -75,6 +80,7 @@ Unused.  Must be 0.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

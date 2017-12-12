@@ -7,8 +7,8 @@ old-location: wdf\iqueuecallbackiocanceledonqueue.htm
 old-project: wdf
 ms.assetid: d85b5c70-4e03-4a12-bc0b-e738d4dab6cf
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IQueueCallbackIoCanceledOnQueue</b> interface is optional. Your driver can provide this interface if you want UMDF to notify the driver when an I/O request is canceled while it is in the driver's I/O queue.
+
 
 
 ## -inheritance
@@ -51,6 +53,7 @@ The <b>IQueueCallbackIoCanceledOnQueue</b> interface has these methods.
 A driver's <a href="wdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue">OnIoCanceledOnQueue</a> event callback function informs the driver that an I/O request was canceled while it was in an I/O queue.
 
  
+
 
 ## -members
 The <b>IQueueCallbackIoCanceledOnQueue</b> interface has these methods.
@@ -65,20 +68,24 @@ The <b>IQueueCallbackIoCanceledOnQueue</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 A driver's <a href="wdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue">OnIoCanceledOnQueue</a> event callback function informs the driver that an I/O request was canceled while it was in an I/O queue.
+
 </td>
 </tr>
 </table>A driver's <a href="wdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue">OnIoCanceledOnQueue</a> event callback function informs the driver that an I/O request was canceled while it was in an I/O queue.
 
  
 
+
 ## -remarks
 To register an <b>IQueueCallbackIoCanceledOnQueue</b> interface for an I/O queue, the driver must provide a <b>QueryInterface</b> function for the I/O queue object. The <b>QueryInterface</b> function must return a pointer to the <b>IQueueCallbackIoCanceledOnQueue</b> interface. UMDF calls the <b>QueryInterface</b> method of the <b>IUnknown</b> interface that the driver passes to <a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a>. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

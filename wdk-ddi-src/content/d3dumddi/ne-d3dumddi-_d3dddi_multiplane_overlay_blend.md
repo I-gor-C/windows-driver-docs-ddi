@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_blend.htm
 old-project: display
 ms.assetid: 1ee411f2-1779-41bd-808c-40639bb22662
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_MULTIPLANE_OVERLAY_BLEND, D3DDDI_MULTIPLANE_OVERLAY_BLEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies a blend operation to be performed on an overlay plane.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_BLEND {
 
 The overlay plane should ignore data in the alpha channel and make the blended plane entirely opaque.
 
+
 ### -field D3DDDI_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND
 
 The overlay plane should use the pre-multiplied alpha channel in this plane to blend it with the plane beneath.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The overlay plane should use the pre-multiplied alpha channel in this plane to b
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

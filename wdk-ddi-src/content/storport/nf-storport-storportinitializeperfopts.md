@@ -7,7 +7,7 @@ old-location: storage\storportinitializeperfopts.htm
 old-project: storage
 ms.assetid: fbaf864c-d499-456c-be3b-b486c637877e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortInitializePerfOpts
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortInitializePerfOpts</b> function initializes the performance optimizations that both the miniport driver and the Storport driver support using a <a href="storage.perf_configuration_data">PERF_CONFIGURATION_DATA</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ ULONG StorPortInitializePerfOpts(
 
 A pointer to the hardware device extension for the host bus adapter (HBA). This parameter must not be <b>NULL</b>.
 
+
 ### -param Query [in]
 
 If set to <b>TRUE</b>, Storport will set the flags in <i>PerfConfigData</i> corresponding to the optimizations Storport supports. If set to <b>FALSE</b>, Storport will initialize the optimizations specified by the flags in <i>PerfConfigData</i>.
 
+
 ### -param PerfConfigData [in, out]
 
 A pointer to a PERF_CONFIGURATION_DATA structure that is supplied by the miniport driver. This parameter must not be <b>NULL</b>.
+
 
 ## -returns
 StorPortInitializePerfOpts returns one of the following status values:
@@ -89,6 +93,7 @@ Or if <i>Query</i> is set to <b>TRUE</b>,  the <b>Flags</b> member of the struct
 
  
 
+
 ## -remarks
 
     The miniport driver can call <b>StorPortInitializePerfOpts</b> only during the miniport-supplied   <a href="storage.hwstorinitialize">HwStorInitialize</a> routine or <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a> routine.
@@ -96,11 +101,13 @@ Or if <i>Query</i> is set to <b>TRUE</b>,  the <b>Flags</b> member of the struct
 
 Available performance optimizations depend on the version of <a href="storage.perf_configuration_data">PERF_CONFIGURATION_DATA</a>. Setting the <b>Version</b> member to <b>STOR_PERF_VERSION</b> will allow all supported optimizations to be selected.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +118,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +129,7 @@ Header
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportperfopts">StorPortPerfOpts</a>
@@ -135,5 +144,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortInitializePerfOpts function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortInitializePerfOpts function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

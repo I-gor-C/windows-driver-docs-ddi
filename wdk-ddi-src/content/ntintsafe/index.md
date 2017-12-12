@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Ntintsafe.h header
 
+## -description
 
 This header is used by Windows kernel. For more information, see
 - [Windows kernel](../_kernel/index.md)

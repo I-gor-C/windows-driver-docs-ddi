@@ -7,7 +7,7 @@ old-location: display\idarg_in_opm_get_certificate_size.htm
 old-project: display
 ms.assetid: 42b8bd6c-c5be-45d0-9537-13d687ca5a48
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_OPM_GET_CERTIFICATE_SIZE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Gives information about the OPM certificate size.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE_SIZE {
                      [in] Type of certificate the size request is for.
                  
 
+
 ## -remarks
 
 
@@ -66,6 +68,7 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE_SIZE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

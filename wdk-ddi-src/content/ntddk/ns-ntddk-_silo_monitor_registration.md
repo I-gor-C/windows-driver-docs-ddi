@@ -7,8 +7,8 @@ old-location: kernel\silo_monitor_registration.htm
 old-project: kernel
 ms.assetid: F99F6346-3FEE-4889-A058-C7540A4CBFC8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION
+ms.date: 12/7/2017
+ms.keywords: _SILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure specifies a server silo monitor that can receive notifications about server silo events.
 
 
+
 ## -syntax
 
 ````
@@ -65,29 +66,36 @@ typedef struct _SILO_MONITOR_REGISTRATION {
 
 Set to <b>SERVER_SILO_MONITOR_REGISTRATION_VERSION</b>.
 
+
 ### -field MonitorHost
 
 If <b>true</b>, a create notification will be delivered for the host context.
+
 
 ### -field MonitorExistingSilos
 
 If <b>true</b>, create and terminate notifications will be delivered for any silos that currently exist at the time of registration; otherwise, only notifications for new silos will be delivered.
 
+
 ### -field Reserved
 
 Reserved for system use.
+
 
 ### -field DUMMYUNIONNAME
 
 Unnamed union.
 
+
 ### -field DriverObjectName
 
 A pointer to the unicode name for the driver object registering for notifications.
 
+
 ### -field ComponentName
 
 A pointer to the unicode name for the component registering for notifications.
+
 </dd>
 </dl>
 
@@ -95,9 +103,11 @@ A pointer to the unicode name for the component registering for notifications.
 
 A pointer to a callback that is invoked whenever a new server silo is created on the system.  This value may be <b>NULL</b>.  This gives drivers to opportunity to handle the event and set up per-silo data structures.
 
+
 ### -field TerminateCallback
 
 A pointer to a callback that is invoked whenever a server silo is terminated (about to be destroyed) on the system.  This value may be <b>NULL</b>.  This gives drivers the opportunity to complete work within the silo and begin tearing down their per-silo data structures.
+
 
 ## -remarks
 
@@ -107,22 +117,27 @@ A pointer to a callback that is invoked whenever a server silo is terminated (ab
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

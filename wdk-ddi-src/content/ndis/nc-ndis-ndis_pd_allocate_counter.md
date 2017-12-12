@@ -7,7 +7,7 @@ old-location: netvista\ndispdallocatecounter.htm
 old-project: netvista
 ms.assetid: 86AA537D-952F-4A7A-ACA4-24B8C1AE932A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,21 +42,28 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
    <i>NdisPDAllocateCounter</i> function to allocate a counter object. There are three kinds of counters:<ul>
 <li>
 Receive queue counters are used for tracking receive queue activity.
+
 </li>
 <li>
 Transmit queue counters are used for tracking transmit queue activity.
+
 </li>
 <li>
 Filter counters are used for tracking filter match activity.
+
 </li>
 </ul>
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>NDIS_PD_ALLOCATE_COUNTER</b> type. For more
    information, see the following Examples section.</div>
 <div> </div>
 
+
 Receive queue counters are used for tracking receive queue activity.
+
 Transmit queue counters are used for tracking transmit queue activity.
+
 Filter counters are used for tracking filter match activity.
+
 
 
 ## -prototype
@@ -79,13 +86,16 @@ NTSTATUS NdisPDAllocateCounter(
 
 A provider handle that identifies the PD-capable miniport driver's provider object.
 
+
 ### -param CounterParameters [in]
 
 An <a href="netvista.ndis_pd_counter_parameters">NDIS_PD_COUNTER_PARAMETERS</a> structure that specifies information such as the counter type.
 
+
 ### -param CounterHandle [out]
 
 A pointer to a driver-allocated counter handle variable. If the counter allocation succeeds, the miniport driver returns a handle to the newly allocated counter in this variable.
+
 
 ## -returns
 <i>NdisPDAllocateCounter</i> can return one of the following status values:
@@ -97,6 +107,7 @@ A pointer to a driver-allocated counter handle variable. If the counter allocati
 </dl> The allocation failed due to insufficient resources.
 
  
+
 
 ## -remarks
 The same counter object can be associated with multiple  queue or filter objects of the same  type as the counter. For example, if there are  5 receive queues (RQ1 through RQ5) and 2 receive counters (RC1 and RC2), receive counter RC1 could be associated with receive queues RQ1, RQ2, RQ3, and receive counter RC2 could be associated with receive queues RQ4 and RQ5.
@@ -111,27 +122,33 @@ The <b>NDIS_PD_ALLOCATE_COUNTER</b> function type is defined in the Ntddndis.h h
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,9 +159,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -159,5 +178,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_ALLOCATE_COUNTER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_ALLOCATE_COUNTER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

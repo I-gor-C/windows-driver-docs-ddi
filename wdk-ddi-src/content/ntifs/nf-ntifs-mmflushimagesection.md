@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>MmFlushImageSection</b> routine flushes the image section for a file.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ BOOLEAN MmFlushImageSection(
 
 Pointer to a structure that contains the file object's section object pointers.
 
+
 ### -param FlushType [in]
 
 Specifies the reason for the flush operation. It can be one of the values listed in the following table. 
+
 <table>
 <tr>
 <th>FlushType Value</th>
@@ -68,24 +71,30 @@ Specifies the reason for the flush operation. It can be one of the values listed
 <tr>
 <td>
 <b>MmFlushForDelete</b>
+
 </td>
 <td>
 The file is being deleted. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>MmFlushForWrite</b>
+
 </td>
 <td>
 The file is being opened for write access. 
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>MmFlushImageSection</b> returns <b>TRUE</b> if the flush operation is successful, or if no image section exists for the file; otherwise <b>MmFlushImageSection</b> returns <b>FALSE</b>.
+
 
 ## -remarks
 A file system must call the <b>MmFlushImageSection</b> routine before deleting a file or opening a file for write access. 
@@ -98,11 +107,13 @@ If there are no mapped views of the image section, <b>MmFlushImageSection</b> de
 
 Before using <b>MmFlushImageSection</b>, file system writers are strongly encouraged to study the way this routine is used in the FASTFAT sample. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +124,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +146,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -143,9 +157,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -157,5 +173,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MmFlushImageSection routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 This structure is used to indicate the radio state.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _NFCRM_RADIO_STATE  {
 
 This is a boolean flag that indicates whether the media radio is on.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ This is a boolean flag that indicates whether the media radio is on.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

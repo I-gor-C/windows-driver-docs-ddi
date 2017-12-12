@@ -7,8 +7,8 @@ old-location: netvista\rilrfstate.htm
 old-project: netvista
 ms.assetid: 7eb78864-d20c-4993-8b33-63096bf971fa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILRFSTATE, *LPRILRFSTATE, RILRFSTATE
+ms.date: 12/8/2017
+ms.keywords: RILRFSTATE, RILRFSTATE, *LPRILRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef struct _RILRFSTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

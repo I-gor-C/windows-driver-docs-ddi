@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary to carry out a ReceivePhyPackets request.
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,17 @@ typedef struct _IRB_REQ_RECEIVE_PHY_PACKETS {
 
 Specifies whether a callback should be registered or deactivated. Use REGISTER_PHY_PACKET_NOTIFICATION to register PhyPacketRoutine as the callback. Use DEREGISTER_PHY_PACKET_NOTIFICATION to deactivate any previously registered callbacks.
 
+
 ### -field PhyPacketRoutine
 
 Points to the notification routine for received PHY packets. The following prototype illustrates the notification routine:
+
 <pre class="syntax" xml:space="preserve"><code>void PhyPacketRoutine(
     __in PVOID           Context,
     __in ULONG           GenerationCount,
     __in ULARGE_INTEGER  PhyPacket
 );</code></pre>
+
 
 <table>
 <tr>
@@ -75,33 +79,41 @@ Points to the notification routine for received PHY packets. The following proto
 <tr>
 <td width="40%">
 <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><b>Context</b>
+
 </td>
 <td width="60%">
 The argument that is specified in the <b>u.ReceivePhyPackets.PhyPacketContext</b> parameter when the <a href="https://msdn.microsoft.com/65E0AAFC-FCFD-477F-B2E5-34B5A1498F0F">REQUEST_RECEIVE_PHY_PACKET</a> request is sent.
+
 </td>
 </tr>
 <tr>
 <td width="40%">
 <a id="GenerationCount"></a><a id="generationcount"></a><a id="GENERATIONCOUNT"></a><b>GenerationCount</b>
+
 </td>
 <td width="60%">
 The generation count of the bus for this PHY packet.
+
 </td>
 </tr>
 <tr>
 <td width="40%">
 <a id="PhyPacket"></a><a id="phypacket"></a><a id="PHYPACKET"></a><b>PhyPacket</b>
+
 </td>
 <td width="60%">
 The 64-bit PHY packet that is received from the 1394 bus.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field PhyPacketContext
 
 Specifies the Context argument to be passed to the PhyPacketRoutine.
+
 
 ## -remarks
 
@@ -111,6 +123,7 @@ Specifies the Context argument to be passed to the PhyPacketRoutine.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

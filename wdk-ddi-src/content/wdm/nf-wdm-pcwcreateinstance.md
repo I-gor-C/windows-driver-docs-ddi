@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>PcwCreateInstance</b> function creates a new instance for the specified registered counter set.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS PcwCreateInstance(
 
 A pointer to receive the newly created instance.
 
+
 ### -param Registration [in]
 
 A pointer to the registered provider that owns this instance of the counter set.
+
 
 ### -param Name [in]
 
 A pointer to the Unicode string that contains the name of the instance of the counter set.
 
+
 ### -param Count [in]
 
 The number of data blocks that are associated with this instance.
 
+
 ### -param Data [in]
 
 A pointer to an array of data blocks that contains the counter values of this instance.
+
 
 ## -returns
 This function returns one of the following values:
@@ -94,16 +100,19 @@ This function returns one of the following values:
 
  
 
+
 ## -remarks
 Before the provider uses this function, the provider must call the <a href="devtest.pcwregister">PcwRegister</a> function to create a registration.
 
 Use the <a href="devtest.pcwcloseinstance">PcwCloseInstance</a> function to close this instance.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,14 +123,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +144,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +155,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -152,9 +166,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -169,5 +185,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20PcwCreateInstance function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

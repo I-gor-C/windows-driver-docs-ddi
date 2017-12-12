@@ -7,7 +7,7 @@ old-location: print\waitforprinterchange.htm
 old-project: print
 ms.assetid: BD9DD9C4-D736-42DC-A55F-7F299351FA65
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: WaitForPrinterChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ DWORD WINAPI WaitForPrinterChange(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

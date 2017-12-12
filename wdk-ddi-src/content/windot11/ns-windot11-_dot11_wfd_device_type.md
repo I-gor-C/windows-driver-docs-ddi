@@ -7,8 +7,8 @@ old-location: netvista\dot11_wfd_device_type.htm
 old-project: netvista
 ms.assetid: 4AE7C35B-D2EA-4987-8195-EDD472C39681
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE
+ms.date: 12/8/2017
+ms.keywords: _DOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -57,30 +57,37 @@ typedef struct _DOT11_WFD_DEVICE_TYPE {
 
 The identifier of the main type category.
 
+
 ### -field SubCategoryID
 
 The identifier of the type subcategory.
+
 
 ### -field OUI[4]
 
 The Organizationally Unique Identifier (OUI) assigned to a device.
 
+
 ## -remarks
 The <b>DOT11_WFD_DEVICE_TYPE</b> data is provided in host byte-ordering. The miniport may need to convert the data to an ordering appropriate for inclusion in Peer-to-Peer Information Elements.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

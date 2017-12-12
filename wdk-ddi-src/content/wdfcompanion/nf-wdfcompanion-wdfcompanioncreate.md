@@ -7,7 +7,7 @@ old-location: wdf\wdfcompanioncreate.htm
 old-project: wdf
 ms.assetid: 78b9eccf-34ef-40ae-b7fc-6fa8400f8c2a
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfCompanionCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
 			For internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -73,14 +74,17 @@ NTSTATUS WdfCompanionCreate(
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,9 +95,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

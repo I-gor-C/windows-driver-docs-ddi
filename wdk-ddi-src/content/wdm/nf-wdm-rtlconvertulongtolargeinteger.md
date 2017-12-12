@@ -7,7 +7,7 @@ old-location: kernel\rtlconvertulongtolargeinteger.htm
 old-project: kernel
 ms.assetid: 9e0b8d36-0191-4f78-91dd-874346a69072
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlConvertUlongToLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RtlConvertUlongToLargeInteger</b> routine converts the input unsigned integer to a signed large integer. For Windows XP and later versions of Windows, do not use this routine; use the native support for <b>__int64</b>. 
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ LARGE_INTEGER RtlConvertUlongToLargeInteger(
 
 Specifies a value of type ULONG.
 
+
 ## -returns
 <b>RtlConvertUlongToLargeInteger</b> returns the converted large integer. 
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ Specifies a value of type ULONG.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +82,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +103,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +114,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +125,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>

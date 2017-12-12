@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 90C861C3-26E0-43C0-A4CA-FD5491995DAB
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSPIN_CINSTANCES, *PKSPIN_CINSTANCES, KSPIN_CINSTANCES
+ms.keywords: PKSPIN_CINSTANCES, KSPIN_CINSTANCES, *PKSPIN_CINSTANCES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 Specifies the maximum number of pins the pin factory can instantiate on the filter, or KSINTANCE_INDETERMINATE if there is no maximum.
 
+
 ### -field CurrentCount
 
 Specifies the current number of pins the pin factory has instantiated on the filter.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies the current number of pins the pin factory has instantiated on the fil
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

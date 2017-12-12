@@ -39,7 +39,9 @@ req.irql: See Remarks section.
 
 ## -description
 The <i>TransferCodecVerbs</i> routine transfers one or more commands to a codec or codecs and retrieves the responses to those commands.
+
 The function pointer type for a <i>TransferCodecVerbs</i> routine is defined as:
+
 
 
 ## -prototype
@@ -64,21 +66,26 @@ NTSTATUS TransferCodecVerbs(
 
 Specifies the context value from the <b>Context</b> member of the <a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a><u>,</u> or <a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
+
 ### -param count [in]
 
 Specifies the number of elements in the <i>codecTransfer</i> array.
+
 
 ### -param codecTransfer [in, out]
 
 Pointer to an array of <a href="audio.hdaudio_codec_transfer">HDAUDIO_CODEC_TRANSFER</a> structures. Each array element is a structure that contains storage for both an output command from the caller and the corresponding input response from the codec.
 
+
 ### -param callback [in]
 
 Function pointer to a callback routine. This parameter is a function pointer of type HDAUDIO_TRANSFER_COMPLETE_CALLBACK. The parameter can be specified as <b>NULL</b>. For more information, see the following Remarks section.
 
+
 ### -param callbackContext [in]
 
 A context value for the callback routine. The caller casts the context value to type PVOID. After completing the commands asynchronously, the HD Audio bus driver passes the context value to the callback routine as a call parameter.
+
 
 ## -returns
 <i>TransferCodecVerbs</i> returns STATUS_SUCCESS if the call succeeds. Otherwise, the routine returns an appropriate error code. The following table shows a possible return status code.
@@ -87,6 +94,7 @@ A context value for the callback routine. The caller casts the context value to 
 </dl>Indicates that the request could not be added to the command queue due to a shortage of nonpaged memory.
 
  
+
 
 ## -remarks
 This routine submits one or more codec commands to the HD Audio bus driver. The bus driver issues the commands to the codecs, retrieves the codecs' responses to the commands, and outputs the responses to the caller.
@@ -115,11 +123,13 @@ If the <i>callback</i> parameter is <b>NULL</b>, the caller must be running at I
 
 The caller must allocate the <i>codecTransfer</i> array from the nonpaged pool.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +140,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,9 +151,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 </table>
@@ -163,5 +176,8 @@ See Remarks section.
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PTRANSFER_CODEC_VERBS callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Ursdevice.h header
 
+## -description
 
 This header is used by Universal Serial Bus(USB). For more information, see
 - [Universal Serial Bus(USB)](../_usbref/index.md)
@@ -11,7 +16,7 @@ Ursdevice.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [URS_CONFIG_INIT function](nf-ursdevice-urs-config-init.md) | Initializes a URS_CONFIG structure. |
+| [URS_CONFIG_INIT function](nf-ursdevice-urs_config_init.md) | Initializes a URS_CONFIG structure. |
 | [UrsDeviceInitInitialize function](nf-ursdevice-ursdeviceinitinitialize.md) | Initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device. |
 | [UrsDeviceInitialize function](nf-ursdevice-ursdeviceinitialize.md) | Initializes a framework device object to support operations related to a USB dual-role controller and registers the relevant event callback functions with the USB dual-role controller class extension. |
 | [UrsIoResourceListAppendDescriptor function](nf-ursdevice-ursioresourcelistappenddescriptor.md) | Appends the specified resource descriptor to the specified I/O resource list object that maintains resource descriptors for the host or function role. |
@@ -23,10 +28,10 @@ Ursdevice.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_URS_SET_ROLE callback](nc-ursdevice-evt-urs-set-role.md) | The URS class extension invokes this event callback when it requires the client driver to change the role of the controller. |
+| [EVT_URS_SET_ROLE callback](nc-ursdevice-evt_urs_set_role.md) | The URS class extension invokes this event callback when it requires the client driver to change the role of the controller. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [URS_CONFIG structure](ns-ursdevice--urs-config.md) | Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling URS_CONFIG_INIT. |
+| [_URS_CONFIG structure](ns-ursdevice-_urs_config.md) | Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling URS_CONFIG_INIT. |

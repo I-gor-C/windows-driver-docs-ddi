@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the <a href="biometric.winbio_bir">WINBIO_BIR</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WINBIO_BIR_DATA {
 
 Specifies the size, in bytes, of a block in the BIR.
 
+
 ### -field Offset
 
 Specifies the offset, in bytes, of the block within the BIR.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ Specifies the offset, in bytes, of the block within the BIR.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,5 +106,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [biometric\biometric]:%20WINBIO_BIR_DATA structure%20 RELEASE:%20(11/13/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Notifies UFX about a detected proprietary port/charger type.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ VOID UfxDeviceProprietaryChargerDetectComplete(
 
 A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
 
+
 ### -param DetectedCharger [in]
 
 A  pointer to a <a href="buses.ufx_proprietary_charger">UFX_PROPRIETARY_CHARGER</a> structure.
 
+
 ## -returns
 This method does not return a value.
+
 
 ## -remarks
 The client driver calls <b>UfxDeviceProprietaryChargerDetectComplete</b> after attempting to detect a proprietary charger on the upstream port, typically from within its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
@@ -72,19 +76,23 @@ The client driver calls <b>UfxDeviceProprietaryChargerDetectComplete</b> after a
 
 The following snippet shows how a client driver calls <b>UfxDeviceProprietaryChargerDetectComplete</b>:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,9 +103,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

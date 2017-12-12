@@ -7,7 +7,7 @@ old-location: debugger\idebugregisters2.htm
 old-project: debugger
 ms.assetid: f92a75a9-6578-4bbf-8d80-680493b4d284
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,6 +76,7 @@ Sets the value of several of the target's registers.
 
  
 
+
 ## -members
 The <b>IDebugRegisters2</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -89,6 +90,7 @@ The <b>IDebugRegisters2</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Returns the description of a register.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -97,6 +99,7 @@ Returns the description of a register.
 </td>
 <td align="left" width="63%">
 Returns the location of the stack frame for the current function.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -105,6 +108,7 @@ Returns the location of the stack frame for the current function.
 </td>
 <td align="left" width="63%">
 Returns the index of the named register.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -113,6 +117,7 @@ Returns the index of the named register.
 </td>
 <td align="left" width="63%">
 Returns the location of the current thread's current instruction.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -121,6 +126,7 @@ Returns the location of the current thread's current instruction.
 </td>
 <td align="left" width="63%">
 Returns the number of pseudo-registers that are maintained by the debugger engine.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -129,6 +135,7 @@ Returns the number of pseudo-registers that are maintained by the debugger engin
 </td>
 <td align="left" width="63%">
 Returns a description of a pseudo-register, including its name and type. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -137,6 +144,7 @@ Returns a description of a pseudo-register, including its name and type. (ANSI v
 </td>
 <td align="left" width="63%">
 Returns a description of a pseudo-register, including its name and type. (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -145,6 +153,7 @@ Returns a description of a pseudo-register, including its name and type. (Unicod
 </td>
 <td align="left" width="63%">
 Returns the index of a pseudo-register. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -153,6 +162,7 @@ Returns the index of a pseudo-register. (ANSI version)
 </td>
 <td align="left" width="63%">
 Returns the index of a pseudo-register. (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -161,6 +171,7 @@ Returns the index of a pseudo-register. (Unicode version)
 </td>
 <td align="left" width="63%">
 Returns the values of a number of pseudo-registers.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -169,6 +180,7 @@ Returns the values of a number of pseudo-registers.
 </td>
 <td align="left" width="63%">
 Returns the current thread's current stack location.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -177,6 +189,7 @@ Returns the current thread's current stack location.
 </td>
 <td align="left" width="63%">
 Fetches the value of several of the target's registers.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -185,6 +198,7 @@ Fetches the value of several of the target's registers.
 </td>
 <td align="left" width="63%">
 Formats and outputs the target's registers.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -193,6 +207,7 @@ Formats and outputs the target's registers.
 </td>
 <td align="left" width="63%">
 Sets the value of several pseudo-registers.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -201,6 +216,7 @@ Sets the value of several pseudo-registers.
 </td>
 <td align="left" width="63%">
 Sets the value of several of the target's registers.
+
 </td>
 </tr>
 </table>Returns the description of a register.
@@ -235,6 +251,7 @@ Sets the value of several of the target's registers.
 
  
 
+
 ## -remarks
 
 
@@ -243,6 +260,7 @@ Sets the value of several of the target's registers.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -259,5 +277,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

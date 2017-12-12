@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>KsFilterFactorySetDeviceClassesState</b> function enables or disables the device classes that have been registered by a given filter factory.
 
 
+
 ## -syntax
 
 ````
@@ -57,21 +58,26 @@ NTSTATUS KsFilterFactorySetDeviceClassesState(
 
 A pointer to the <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> for which to change device class status.
 
+
 ### -param NewState [in]
 
 If set to <b>TRUE</b>, the device classes are enabled; if <b>FALSE</b>, they are disabled.
 
+
 ## -returns
 <b>KsFilterFactorySetDeviceClassesState</b> returns STATUS_SUCCESS or an error code.
 
+
 ## -remarks
 This function is available in Windows XP and DirectX 8.0 and later.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,14 +88,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +120,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

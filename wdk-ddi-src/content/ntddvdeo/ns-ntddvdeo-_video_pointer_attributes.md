@@ -7,8 +7,8 @@ old-location: display\video_pointer_attributes.htm
 old-project: display
 ms.assetid: aa897435-443b-4145-b6ca-7bafdb36b9c1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _VIDEO_POINTER_ATTRIBUTES, *PVIDEO_POINTER_ATTRIBUTES, VIDEO_POINTER_ATTRIBUTES
+ms.date: 12/8/2017
+ms.keywords: _VIDEO_POINTER_ATTRIBUTES, VIDEO_POINTER_ATTRIBUTES, *PVIDEO_POINTER_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The VIDEO_POINTER_ATTRIBUTES structure contains attributes of the screen pointer.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 ### -field Flags
 
 A set of flags that specify certain attributes of the pointer. <b>Flags</b> can be a combination of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -74,6 +76,7 @@ A set of flags that specify certain attributes of the pointer. <b>Flags</b> can 
 </td>
 <td width="60%">
 The pointer can be updated asynchronously to drawing operations.
+
 </td>
 </tr>
 <tr>
@@ -83,6 +86,7 @@ The pointer can be updated asynchronously to drawing operations.
 </td>
 <td width="60%">
 A monochrome hardware pointer is supported.
+
 </td>
 </tr>
 <tr>
@@ -92,6 +96,7 @@ A monochrome hardware pointer is supported.
 </td>
 <td width="60%">
 A color hardware pointer is supported.
+
 </td>
 </tr>
 <tr>
@@ -101,6 +106,7 @@ A color hardware pointer is supported.
 </td>
 <td width="60%">
 The current pointer has the same hotspot as the previous pointer.
+
 </td>
 </tr>
 <tr>
@@ -110,38 +116,47 @@ The current pointer has the same hotspot as the previous pointer.
 </td>
 <td width="60%">
 The current pointer has the same hotspot as the previous pointer.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Width
 
 Specifies the width of the pointer in pixels.
+
 
 ### -field Height
 
 Specifies the height of the pointer in pixels.
 
+
 ### -field WidthInBytes
 
 Specifies the width of the pointer in bytes.
+
 
 ### -field Enable
 
 Specifies whether the pointer is visible. A nonzero value specifies that the pointer is visible. A value of zero specifies that the pointer is not visible.
 
+
 ### -field Column
 
 Horizontal coordinate of the pointer's hot spot.
+
 
 ### -field Row
 
 Vertical coordinate of the pointer's hot spot.
 
+
 ### -field Pixels
 
 The pointer data, in device-compatible DIB format. Mask data is always in 1-bpp DIB format.
+
 
 ## -remarks
 
@@ -151,6 +166,7 @@ The pointer data, in device-compatible DIB format. Mask data is always in 1-bpp 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -170,5 +186,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_POINTER_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_POINTER_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

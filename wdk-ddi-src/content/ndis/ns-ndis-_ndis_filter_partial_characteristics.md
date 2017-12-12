@@ -7,8 +7,8 @@ old-location: netvista\ndis_filter_partial_characteristics.htm
 old-project: netvista
 ms.assetid: 4a7f365c-a252-4d8e-bddf-684b3298db5c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_FILTER_PARTIAL_CHARACTERISTICS, NDIS_FILTER_PARTIAL_CHARACTERISTICS, *PNDIS_FILTER_PARTIAL_CHARACTERISTICS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_FILTER_PARTIAL_CHARACTERISTICS, *PNDIS_FILTER_PARTIAL_CHARACTERISTICS, NDIS_FILTER_PARTIAL_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_FILTER_PARTIAL_CHARACTERISTICS structure
@@ -42,6 +42,7 @@ To specify optional entry points for a filter module, a filter driver initialize
   NDIS_FILTER_PARTIAL_CHARACTERISTICS structure and passes it to the 
   <a href="netvista.ndissetoptionalhandlers">
   NdisSetOptionalHandlers</a> function.
+
 
 
 ## -syntax
@@ -71,15 +72,18 @@ The
      <b>Revision</b> member to NDIS_FILTER_PARTIAL_CHARACTERISTICS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_FILTER_PARTIAL_CHARACTERISTICS_REVISION_1.
 
+
 ### -field Flags
 
 Reserved for NDIS.
+
 
 ### -field SendNetBufferListsHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">
      FilterSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+
 
 ### -field SendNetBufferListsCompleteHandler
 
@@ -88,11 +92,13 @@ The entry point of the caller's
      FilterSendNetBufferListsComplete</a> function. To bypass this function, set this member to
      <b>NULL</b>.
 
+
 ### -field CancelSendNetBufferListsHandler
 
 The entry point of the caller's 
      <a href="netvista.filtercancelsendnetbufferlists">
      FilterCancelSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+
 
 ### -field ReceiveNetBufferListsHandler
 
@@ -100,11 +106,13 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">
      FilterReceiveNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
 
+
 ### -field ReturnNetBufferListsHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">
      FilterReturnNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+
 
 ## -remarks
 This structure specifies optional 
@@ -115,19 +123,23 @@ This structure specifies optional
     <a href="netvista.ndisfregisterfilterdriver">
     NdisFRegisterFilterDriver</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +183,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_PARTIAL_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_PARTIAL_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

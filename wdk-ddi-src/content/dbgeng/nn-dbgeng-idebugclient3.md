@@ -7,7 +7,7 @@ old-location: debugger\idebugclient3.htm
 old-project: debugger
 ms.assetid: 316a4d8b-4cf6-4270-8d9b-e1ede53d567d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,6 +56,7 @@ Returns a description of the process that includes the executable image name, th
 
  
 
+
 ## -members
 The <b>IDebugClient3</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -69,6 +70,7 @@ The <b>IDebugClient3</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Creates a process from a specified command line, then attaches to another user-mode process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -77,6 +79,7 @@ Creates a process from a specified command line, then attaches to another user-m
 </td>
 <td align="left" width="63%">
 Creates a process from the specified command line.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -86,6 +89,7 @@ Creates a process from the specified command line.
 <td align="left" width="63%">
 Returns a description of the process that includes the executable image name, the service names, the MTS package names, and the command line.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -94,6 +98,7 @@ Returns a description of the process that includes the executable image name, th
 </td>
 <td align="left" width="63%">
  Searches for a process with a given executable file name and return its process ID.
+
 
 </td>
 </tr>
@@ -109,6 +114,7 @@ Returns a description of the process that includes the executable image name, th
 
  
 
+
 ## -remarks
 
 
@@ -117,6 +123,7 @@ Returns a description of the process that includes the executable image name, th
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +146,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient3 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient3 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

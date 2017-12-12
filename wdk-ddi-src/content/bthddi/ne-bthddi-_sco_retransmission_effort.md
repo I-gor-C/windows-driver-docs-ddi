@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: bf466384-bf13-42cc-a02d-ef880cac4c02
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT
+ms.keywords: _SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ The SCO_RETRANSMISSION_EFFORT enumeration type is used to determine the retransm
   SCO channel.
 
 
+
 ## -syntax
 
 ````
@@ -60,19 +61,23 @@ typedef enum _SCO_RETRANSMISSION_EFFORT {
 
 The profile driver specifies that there should be no retransmissions on the channel.
 
+
 ### -field SCO_RETRANSMISSION_MIN1_POWER
 
 The profile driver specifies that there should be at least one retransmission on the channel. Any
      retransmissions that are performed should be optimized for power consumption.
+
 
 ### -field SCO_RETRANSMISSION_MIN1_QUALITY
 
 The profile driver specifies that there should be at least one retransmission on the channel. Any
      retransmissions that are performed should be optimized for link quality.
 
+
 ### -field SCO_RETRANSMISSION_DONT_CARE
 
 The profile driver specifies that retransmissions can occur, but are not required.
+
 
 ## -remarks
 
@@ -82,14 +87,17 @@ The profile driver specifies that retransmissions can occur, but are not require
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

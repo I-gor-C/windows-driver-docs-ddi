@@ -7,7 +7,7 @@ old-location: display\d3dkmt_pnp_key_type.htm
 old-project: display
 ms.assetid: 48B173D5-56C3-4611-BC55-CB7A25D05352
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_PNP_KEY_TYPE, D3DKMT_PNP_KEY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 An enum that indicates the type of PNP key. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _D3DKMT_PNP_KEY_TYPE {
 
 Indicates that the key is a hardware key..
 
+
 ### -field D3DKMT_PNP_KEY_SOFTWARE
 
 Indicates that the key is a software key.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates that the key is a software key.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

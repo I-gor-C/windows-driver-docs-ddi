@@ -7,7 +7,7 @@ old-location: netvista\riluicclockcredential.htm
 old-project: netvista
 ms.assetid: 4ca8411e-2492-4832-881c-5fdb974485fc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCLOCKCREDENTIAL, RILUICCLOCKCREDENTIAL, *LPRILUICCLOCKCREDENTIAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILUICCLOCKCREDENTIAL {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

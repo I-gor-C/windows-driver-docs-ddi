@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>IoEnumerateRegisteredFiltersList</b> routine enumerates the file system filter drivers that have registered with the system. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS IoEnumerateRegisteredFiltersList(
 
 A pointer to a caller-allocated array that receives the driver object pointers. This parameter is optional and can be <b>NULL</b>. (See the following Remarks section.) 
 
+
 ### -param DriverObjectListSize [in]
 
 Size, in bytes, of the <i>DriverObjectList</i> array. Can be zero. (See the following Remarks section.) 
 
+
 ### -param ActualNumberDriverObjects [out]
 
 Actual number of driver objects found. Note that if the array at <i>DriverObjectList</i> is too small, the number of driver object pointers that are copied into the array will be less than <i>ActualNumberDriverObjects</i>. 
+
 
 ## -returns
 <b>IoEnumerateRegisteredFiltersList</b> can return one of the following: 
@@ -76,6 +80,7 @@ Actual number of driver objects found. Note that if the array at <i>DriverObject
 </dl>The array at <i>DriverObjectList</i> is too small to hold the entire driver object list. In this case, <b>IoEnumerateRegisteredFiltersList</b> copies as many driver object pointers into the array as possible. 
 
  
+
 
 ## -remarks
 A file system filter driver calls <b>IoEnumerateRegisteredFiltersList</b> to obtain an array of pointers to the driver objects for all file system filter drivers that have called <a href="ifsk.ioregisterfsregistrationchange">IoRegisterFsRegistrationChange</a>. 
@@ -90,11 +95,13 @@ The filter driver typically calls <b>IoEnumerateRegisteredFiltersList</b> twice:
 
 Minifilters should call <a href="ifsk.fltenumeratefilterinformation">FltEnumerateFilterInformation</a> or <a href="ifsk.fltenumeratefilters">FltEnumerateFilters</a> instead of <b>IoEnumerateRegisteredFiltersList</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,14 +112,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows Server 2003 Service Pack 1 (SP1) and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +133,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +144,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -143,9 +155,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -166,5 +180,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateRegisteredFiltersList routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

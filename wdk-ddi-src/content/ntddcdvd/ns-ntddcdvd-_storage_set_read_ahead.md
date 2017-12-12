@@ -7,7 +7,7 @@ old-location: storage\storage_set_read_ahead.htm
 old-project: storage
 ms.assetid: 5220230f-5436-4a79-808c-ab840d7009e7
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_SET_READ_AHEAD, *PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The STORAGE_SET_READ_AHEAD structure is used in conjunction with the <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_storage_set_read_ahead.md">IOCTL_STORAGE_SET_READ_AHEAD</a> request to instruct the device to skip to the target address upon reaching the trigger address. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _STORAGE_SET_READ_AHEAD {
 
 Indicates the address at which the device jumps to the target address. 
 
+
 ### -field TargetAddress
 
 Indicates the address to jump to. 
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates the address to jump to.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -85,5 +89,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_SET_READ_AHEAD structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_SET_READ_AHEAD structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_sas_port.htm
 old-project: storage
 ms.assetid: d294d97a-e6b2-4ab3-bebf-e545aa2f862d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port
+ms.date: 12/8/2017
+ms.keywords: _MS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The MS_SMHBA_SAS_Port structure is used to report the SAS port information.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _MS_SMHBA_SAS_Port {
 
 The protocols that are supported by this SAS port.
 
+
 ### -field LocalSASAddress
 
 The Port_Identifier of this SAS port
+
 
 ### -field AttachedSASAddress
 
 The SAS address of the entity that is at the opposite end of the SAS link from this local SAS port.
 
+
 ### -field NumberofDiscoveredPorts
 
 The number of end ports that are visible to the local SAS port. The discovered ports might also include SMP ports that are contained within SAS expander devices.
 
+
 ### -field NumberofPhys
 
 The number of physical ports that are associated with this SAS port. If the value is more than one, this SAS port is considered to be a wide port.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ The number of physical ports that are associated with this SAS port. If the valu
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

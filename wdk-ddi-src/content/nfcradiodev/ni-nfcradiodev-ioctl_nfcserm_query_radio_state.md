@@ -41,21 +41,26 @@ req.irql:
 This IOCTL is used by the SE radio management application or service to query the current radio power state of the proximity device.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 None
+
 
 ### -output-buffer
 
 <a href="nfpdrivers._nfcrm_set_radio_state_"> NFCRM_RADIO_STATE structure</a>
 
 
+
 ### -output-buffer-length
 sizeof(NFCRM_RADIO_STATE)
+
 
 ### -in-out-buffer
 
@@ -71,6 +76,7 @@ I/O Status block
 
  
 
+
 ## -remarks
 
 
@@ -79,6 +85,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

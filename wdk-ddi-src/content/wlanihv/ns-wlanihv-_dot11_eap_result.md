@@ -7,7 +7,7 @@ old-location: netvista\dot11_eap_result.htm
 old-project: netvista
 ms.assetid: 90898f5c-ffc1-4e6c-a8f8-ba839f449082
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_EAP_RESULT, *PDOT11_EAP_RESULT, DOT11_EAP_RESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,11 +57,13 @@ typedef struct _DOT11_EAP_RESULT {
 The reason code returned by the EAP method. The meaning of the code is specific to the EAP
      method.
 
+
 ### -field pAttribArray
 
 A pointer to an EAP_ATTRIBUTES array structure that contains the EAP attributes returned by the
      authentication session. For more information about EAP_ATTRIBUTES, see the Microsoft Windows SDK
      documentation.
+
 
 ## -remarks
 
@@ -71,15 +73,18 @@ A pointer to an EAP_ATTRIBUTES array structure that contains the EAP attributes 
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

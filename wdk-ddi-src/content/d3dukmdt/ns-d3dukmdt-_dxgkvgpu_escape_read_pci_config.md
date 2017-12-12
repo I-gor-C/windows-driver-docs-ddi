@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_read_pci_config.htm
 old-project: display
 ms.assetid: B6F4207F-B55A-4B36-883D-291E351742CA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKVGPU_ESCAPE_READ_PCI_CONFIG, DXGKVGPU_ESCAPE_READ_PCI_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure used to read the PCI config for an escape.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _DXGKVGPU_ESCAPE_READ_PCI_CONFIG {
 
 The escape header being processed.
 
+
 ### -field Offset
 
 Offset in bytes in the PCI config space.
 
+
 ### -field Size
 
 Size in bytes to read.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Size in bytes to read.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

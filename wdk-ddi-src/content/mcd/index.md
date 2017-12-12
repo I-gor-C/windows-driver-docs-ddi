@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Mcd.h header
 
+## -description
 
 This header is used by Storage. For more information, see
 - [Storage](../_storage/index.md)
@@ -37,4 +42,4 @@ Mcd.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [MCD_INIT_DATA structure](ns-mcd--mcd-init-data.md) | The changer miniclass driver fills the MCD_INIT_DATA structure with pointers to its internal command processing routines and passes them to the changer class driver. |
+| [_MCD_INIT_DATA structure](ns-mcd-_mcd_init_data.md) | The changer miniclass driver fills the MCD_INIT_DATA structure with pointers to its internal command processing routines and passes them to the changer class driver. |

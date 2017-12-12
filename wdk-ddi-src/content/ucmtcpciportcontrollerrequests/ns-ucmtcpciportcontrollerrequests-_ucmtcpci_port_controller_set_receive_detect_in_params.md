@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 2a33613b-e3f5-47e0-b05e-0427a0fb3c58
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS
+ms.keywords: _UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -44,6 +44,7 @@ req.product: Windows 10 or later.
                  
 
 
+
 ## -syntax
 
 ````
@@ -60,11 +61,13 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS {
 
 Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.
 
+
 ### -field ReceiveDetect
 
 
                      A 
                  <b>UCMTCPCI_PORT_CONTROLLER_RECEIVE_DETECT</b> structure that describes the RECEIVE_DETECT Register defined as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.
+
 
 ## -remarks
 
@@ -74,6 +77,7 @@ Handle to the port controller object that the client driver received in the prev
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

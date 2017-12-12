@@ -7,8 +7,8 @@ old-location: netvista\rilgetdeviceinfoparams_2.htm
 old-project: netvista
 ms.assetid: f5cbf775-4d6e-462a-9707-11a311a729ef
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILGETDEVICEINFOPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

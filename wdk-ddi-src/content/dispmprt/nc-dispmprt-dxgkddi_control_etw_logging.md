@@ -7,8 +7,8 @@ old-location: display\dxgkddicontroletwlogging.htm
 old-project: display
 ms.assetid: c94a43bb-19d0-4894-80b0-885562fefea5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/8/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,10 +41,11 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdiControlEtwLogging </i>function enables or disables Event Tracing for Windows (ETW) event logging.
 
 
+
 ## -prototype
 
 ````
-PDXGKDDI_CONTROL_ETW_LOGGING DxgkDdiControlEtwLogging;
+DXGKDDI_CONTROL_ETW_LOGGING DxgkDdiControlEtwLogging;
 
 VOID DxgkDdiControlEtwLogging(
   _In_ BOOLEAN Enable,
@@ -61,16 +62,20 @@ VOID DxgkDdiControlEtwLogging(
 
 A Boolean value that indicates whether <i>DxgkDdiControlEtwLogging </i>enables or disables ETW event logging. <b>TRUE</b> indicates that it enables and <b>FALSE</b> indicates that it disables.
 
+
 ### -param Flags [in]
 
 A valid bitwise OR of values. Currently, no flags are defined.
+
 
 ### -param Level [in]
 
 A value that indicates the level of event logging.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

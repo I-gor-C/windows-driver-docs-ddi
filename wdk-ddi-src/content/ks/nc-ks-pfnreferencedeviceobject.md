@@ -41,6 +41,7 @@ req.irql:
 The driver can use this routine to increment the reference count of the PDO.
 
 
+
 ## -prototype
 
 ````
@@ -59,19 +60,23 @@ VOID KStrReferenceDeviceObject(
 
 Pointer to a device extension of the device's PDO.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 The driver can access this method through the <b>ReferenceDeviceObject</b> member of the <a href="stream.bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.
 
 The device object remains active and enumerated until the reference count returns to 0.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

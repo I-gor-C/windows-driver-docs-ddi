@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The client driver's implementation of the <i>EVT_UCM_CONNECTOR_SET_DATA_ROLE</i> event callback function that swaps the data role of the connector to the specified role when attached to a partner connector.  
 
 
+
 ## -prototype
 
 ````
@@ -63,12 +64,15 @@ typedef EVT_UCM_CONNECTOR_SET_DATA_ROLE PFN_UCM_CONNECTOR_SET_DATA_ROLE;
 
 Handle to the connector that the client driver received in a previous call to  the <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> method.
 
+
 ### -param DataRole [in]
 
 A <a href="buses.ucm_type_c_port_state">UCM_TYPEC_PARTNER</a>-typed flag that specifies the role to set.
 
+
 ## -returns
 If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.
+
 
 ## -remarks
 To register an <i>EVT_UCM_CONNECTOR_SET_DATA_ROLE</i> callback function, the client driver must call <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>.  
@@ -81,43 +85,53 @@ If a role-swap operation is pending, UcmCx does not request another role swap. T
 
 After the swap operation completes, if the partner port sends a DR_Swap request, the client driver must reject the request. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +142,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -142,5 +158,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20EVT_UCM_CONNECTOR_SET_DATA_ROLE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

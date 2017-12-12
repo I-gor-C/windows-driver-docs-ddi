@@ -7,7 +7,7 @@ old-location: netvista\riluiccrecordstatus_2.htm
 old-project: netvista
 ms.assetid: 5f6ff5b1-cd13-4bf6-b4ef-e9b6f4fd54e0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCRECORDSTATUS, *LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -84,6 +85,7 @@ typedef struct _RILUICCRECORDSTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccchannelgroup_2.htm
 old-project: netvista
 ms.assetid: cbb5fbb1-7042-45fe-81eb-2fca0f413572
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCCHANNELGROUP, RILUICCCHANNELGROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef enum _RILUICCCHANNELGROUP {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

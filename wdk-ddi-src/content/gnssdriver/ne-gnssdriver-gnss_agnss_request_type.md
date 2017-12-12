@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This enumeration indicates the type of AGNSS injection request represented by the <a href="sensors.gnss_agnss_request_param">GNSS_AGNSS_REQUEST_PARAM</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 Indicates the injection request is for time injection.
 
+
 ### -field GNSS_AGNSS_PositionInjection
 
 Indicates the injection request is for position injection.
 
+
 ### -field GNSS_AGNSS_BlobInjection
 
 Indicates the injection request is for blob injection.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Indicates the injection request is for blob injection.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

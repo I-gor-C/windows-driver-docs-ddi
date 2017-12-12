@@ -42,6 +42,7 @@ The _BRB_PSM structure describes a Protocol/Service Multiplexer (PSM) to registe
   unregister.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field Psm
 
 When the _BRB_PSM structure is passed as input for a 
@@ -68,26 +70,34 @@ When the _BRB_PSM structure is passed as input for a
      dynamically generated. If the profile driver specified zero on <b>BRB_REGISTER_PSM</b> input, on output this
      member contains the PSM that was registered.
      
+
 When the _BRB_PSM structure is passed as input for a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536632">BRB_UNREGISTER_PSM</a> BRB call, this is the
      PSM that the profile driver attempts to unregister. This value must be a PSM that is currently
      registered. For more information about valid PSM values, see the Remarks section.
+
 Some PSMs are reserved for use by Windows:
+
 <dl>
 <dd>
 SDP: 0x01
+
 </dd>
 <dd>
 RFCOMM: 0x03
+
 </dd>
 <dd>
 HID Control: 0x11
+
 </dd>
 <dd>
 HID Data: 0x13
+
 </dd>
 <dd>
 BNEP: 0x0F
+
 </dd>
 </dl>
 
@@ -133,19 +143,23 @@ A <b>BRB_UNREGISTER_PSM</b> request has no effect on SDP records that attempt to
     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_remove_record.md">
     IOCTL_BTH_SDP_REMOVE_RECORD</a> IOCTL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -178,5 +192,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_PSM structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: B367D0F7-5026-4C88-B88A-69068F76B675
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBFN_DEVICE_STATE, *PUSBFN_DEVICE_STATE, USBFN_DEVICE_STATE
+ms.keywords: _USBFN_DEVICE_STATE, USBFN_DEVICE_STATE, *PUSBFN_DEVICE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Defines the Universal Serial Bus (USB) device states for the device/controller.  These states correspond to the USB device states as defined in section 9.1 of the USB 2.0 Specification.
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ typedef enum _USBFN_DEVICE_STATE {
 
 The minimum value of the enumeration.
 
+
 ### -field UsbfnDeviceStateAttached
 
 Device is attached to an upstream port.
+
 
 ### -field UsbfnDeviceStateDefault
 
 Device is attached and connected to an upstream port but has not been reset.
 
+
 ### -field UsbfnDeviceStateDetached
 
 Device is not attached to an upstream port.
+
 
 ### -field UsbfnDeviceStateAddressed
 
 Device has been assigned a non-default USB address by the host.
 
+
 ### -field UsbfnDeviceStateConfigured
 
 Device has been configured by the host.
+
 
 ### -field UsbfnDeviceStateSuspended
 
 Device has been suspended.
 
+
 ### -field UsbfnDeviceStateStateMaximum
 
 The maximum value of the enumeration.
+
 
 ## -remarks
 
@@ -100,6 +109,7 @@ The maximum value of the enumeration.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

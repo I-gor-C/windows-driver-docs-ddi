@@ -7,7 +7,7 @@ old-location: wdf\wdf_retrieve_child_flags.htm
 old-project: wdf
 ms.assetid: 43294943-cc73-45d4-8e0b-e7d29420bb7e
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_RETRIEVE_CHILD_FLAGS, WDF_RETRIEVE_CHILD_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WDF_RETRIEVE_CHILD_FLAGS</b> enumeration defines flags that a driver can set before calling <a href="wdf.wdfchildlistbeginiteration">WdfChildListBeginIteration</a>.
+
 
 
 ## -syntax
@@ -63,42 +65,52 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
 
 Reserved for internal use only.
 
+
 ### -field WdfRetrievePresentChildren
 
 Calls to <a href="wdf.wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices for which a framework device object exists.
+
 
 ### -field WdfRetrieveMissingChildren
 
 Calls to <a href="wdf.wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are marked as missing. 
 
+
 ### -field WdfRetrievePendingChildren
 
 Calls to <a href="wdf.wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that the driver has reported as present, but for which a framework device object has not been created (because the framework has not called the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a> callback function). 
+
 
 ### -field WdfRetrieveAddedChildren
 
 Calls to <a href="wdf.wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present or pending.
 
+
 ### -field WdfRetrieveAllChildren
 
 Calls to <a href="wdf.wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present, pending, or missing.
 
+
 ## -remarks
 Before calling <a href="wdf.wdfchildlistbeginiteration">WdfChildListBeginIteration</a>, your driver must set <b>WDF_RETRIEVE_CHILD_FLAGS</b>-typed flags in a <a href="wdf.wdf_child_list_iterator">WDF_CHILD_LIST_ITERATOR</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,5 +136,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_RETRIEVE_CHILD_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_RETRIEVE_CHILD_FLAGS enumeration%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

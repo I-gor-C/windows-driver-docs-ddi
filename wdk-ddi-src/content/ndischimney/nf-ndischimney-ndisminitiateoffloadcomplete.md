@@ -7,7 +7,7 @@ old-location: netvista\ndisminitiateoffloadcomplete.htm
 old-project: netvista
 ms.assetid: 983b2e04-1563-4f2e-85a7-8fd93ec1cd8c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMInitiateOffloadComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,11 +39,13 @@ req.irql: Any level
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 An offload target calls the 
   <b>NdisMInitiateOffloadComplete</b> function to complete an offload operation that was initiated by a
   previous call to the 
   <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">
   MiniportInitiateOffload</a> function.
+
 
 
 ## -syntax
@@ -64,6 +66,7 @@ The handle that the offload target obtained in a previous call to
      <a href="netvista.ndismregisterminiportdriver">
      NdisMRegisterMiniportDriver</a>.
 
+
 ### -param OffloadBlockList [in]
 
 A pointer to an 
@@ -73,8 +76,10 @@ A pointer to an
      <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">
      MiniportInitiateOffload</a> function.
 
+
 ## -returns
 None
+
 
 ## -remarks
 Before calling 
@@ -117,11 +122,13 @@ For more information, see
     <a href="netvista.returning_completion_status_of_an_initiate_offload_operation">
     Returning Completion Status of an Initiate Offload Operation</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +139,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,9 +150,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -172,5 +182,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInitiateOffloadComplete function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInitiateOffloadComplete function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

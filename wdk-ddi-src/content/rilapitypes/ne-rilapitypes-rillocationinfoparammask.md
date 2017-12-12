@@ -7,7 +7,7 @@ old-location: netvista\rillocationinfoparammask_2.htm
 old-project: netvista
 ms.assetid: a7ce7aaf-fd98-4ba6-8c9e-d15419c658f1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILLOCATIONINFOPARAMMASK, RILLOCATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef enum _RILLOCATIONINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

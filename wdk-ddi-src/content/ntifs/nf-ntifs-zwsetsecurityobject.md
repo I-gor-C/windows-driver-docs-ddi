@@ -7,7 +7,7 @@ old-location: kernel\zwsetsecurityobject.htm
 old-project: kernel
 ms.assetid: fbf6291e-9602-45d7-a620-702491a1d7de
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwSetSecurityObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL (see Remarks section)
 The <b>ZwSetSecurityObject</b> routine sets an object's security state.
 
 
+
 ## -syntax
 
 ````
@@ -58,10 +59,12 @@ NTSTATUS ZwSetSecurityObject(
 
 Handle for the object whose security state is to be set. This handle must have the access specified in the Meaning column of the table shown in the description of the <i>SecurityInformation</i> parameter.
 
+
 ### -param SecurityInformation [in]
 
 
 <a href="ifsk.security_information">SECURITY_INFORMATION</a> value specifying the information to be set. Can be a combination of one or more of the following. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -70,41 +73,51 @@ Handle for the object whose security state is to be set. This handle must have t
 <tr>
 <td>
 DACL_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the discretionary access control list (DACL) of the object is to be set. Requires WRITE_DAC access.
+
 </td>
 </tr>
 <tr>
 <td>
 GROUP_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the primary group identifier of the object is to be set. Requires WRITE_OWNER access.
+
 </td>
 </tr>
 <tr>
 <td>
 OWNER_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the owner identifier of the object is to be set. Requires WRITE_OWNER access.
+
 </td>
 </tr>
 <tr>
 <td>
 SACL_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the system ACL (SACL) of the object is to be set. Requires ACCESS_SYSTEM_SECURITY access.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param SecurityDescriptor [in]
 
 Pointer to the security descriptor to be set for the object.
+
 
 ## -returns
 <b>ZwSetSecurityObject</b> returns STATUS_SUCCESS or an appropriate error status. Possible error status codes include the following:
@@ -138,6 +151,7 @@ Pointer to the security descriptor to be set for the object.
 
  
 
+
 ## -remarks
 A security descriptor can be in absolute or self-relative form. In self-relative form, all members of the structure are located contiguously in memory. In absolute form, the structure only contains pointers to the members. For more information, see "Absolute and Self-Relative Security Descriptors" in the Security section of the Windows SDK documentation.
 
@@ -149,11 +163,13 @@ Callers of <b>ZwSetSecurityObject</b> must be running at IRQL = PASSIVE_LEVEL an
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -164,14 +180,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,6 +201,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -192,6 +212,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -202,14 +223,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -236,5 +260,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetSecurityObject routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetSecurityObject routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

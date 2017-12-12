@@ -41,19 +41,24 @@ req.irql:
 The <b>IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</b> request disconnects an interrupt service routine (and an optional deferred port check service routine) that was connected by using an <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request. Only kernel-mode drivers can connect and disconnect an interrupt routine.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.parallel_interrupt_service_routine">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a> structure that the client allocates for the input of interrupt service information.
 
+
 ### -input-buffer-length
 The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to the size, in bytes, of a PARALLEL_INTERRUPT_SERVICE_ROUTINE structure. 
+
 
 ### -output-buffer
 None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -75,6 +80,7 @@ The value of the <b>Parameters.DeviceIoControl.InputBufferLength</b> member is l
 
 The specified interrupt service routine is not connected.
 
+
 ## -remarks
 
 
@@ -83,6 +89,7 @@ The specified interrupt service routine is not connected.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +112,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

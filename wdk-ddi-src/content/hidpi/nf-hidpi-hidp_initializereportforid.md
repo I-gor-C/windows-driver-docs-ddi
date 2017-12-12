@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>HidP_InitializeReportForID</b> routine initializes a HID report.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS __stdcall HidP_InitializeReportForID(
 
 Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator that indicates the type of HID report located at <i>Report</i>.
 
+
 ### -param ReportID [in]
 
 Specifies a report ID.
+
 
 ### -param PreparsedData [in]
 
 Pointer to the <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a> of the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with the HID report located at <i>Report</i>.
 
+
 ### -param Report [out]
 
 Pointer to the caller-allocated buffer containing the HID report that <b>HidP_InitializeReportForID</b> initializes.
 
+
 ### -param ReportLength [in]
 
 Specifies the size, in bytes, of the HID report located at <i>Report</i>. <i>ReportLength</i> must be equal to the collection's report length for the specified report type, as specified by the <i>Xxx</i><b>ReportByteLength</b> members of a collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+
 
 ## -returns
 <b>HidP_InitializeReportForID</b> returns one of the following status values:
@@ -96,6 +102,7 @@ Specifies the size, in bytes, of the HID report located at <i>Report</i>. <i>Rep
 
  
 
+
 ## -remarks
 Initializing a HID report sets all control data to zero or a control's <i>null value</i>, as defined by the USB HID standard. (Sending or receiving a null value indicates that the current value of a control should not be modified.)
 
@@ -107,11 +114,13 @@ Sets the bitfield of all controls with null values to their corresponding null v
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,14 +131,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,6 +152,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +163,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -173,5 +188,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_InitializeReportForID routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

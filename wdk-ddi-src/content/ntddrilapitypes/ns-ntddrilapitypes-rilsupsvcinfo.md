@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcinfo.htm
 old-project: netvista
 ms.assetid: 1f8f7c8c-f09a-4bf5-a15b-42f210122b54
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSUPSVCINFO, *LPRILSUPSVCINFO, RILSUPSVCINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -135,6 +136,7 @@ typedef struct _RILSUPSVCINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

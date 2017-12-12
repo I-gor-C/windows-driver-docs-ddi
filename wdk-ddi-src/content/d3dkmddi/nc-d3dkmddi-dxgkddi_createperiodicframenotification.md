@@ -7,7 +7,7 @@ old-location: display\dxgkddi_createperiodicframenotification.htm
 old-project: display
 ms.assetid: EE11227A-E576-49C6-AEF1-CBE0AD788275
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: requires_max_(PASSIVE_LEVEL)
 Used to create a periodic frame notification.
 
 
+
 ## -prototype
 
 ````
@@ -55,6 +56,7 @@ NTSTATUS APIENTRY DXGKDDI_CREATEPERIODICFRAMENOTIFICATION(
 ### -param pCreatePeriodicFrameNotification [in]
 
 A structure of type <i>PDXGKARG_CREATEPERIODICFRAMENOTIFICATION</i> containing the arguments needed to create a periodic frame notification.
+
 
 ## -returns
 DXGKDDI_CREATEPERIODICFRAMENOTIFICATION returns one of the following values:
@@ -73,6 +75,7 @@ DXGKDDI_CREATEPERIODICFRAMENOTIFICATION returns one of the following values:
 
  
 
+
 ## -remarks
 
 
@@ -81,6 +84,7 @@ DXGKDDI_CREATEPERIODICFRAMENOTIFICATION returns one of the following values:
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,9 +95,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 requires_max_(PASSIVE_LEVEL)
+
 </td>
 </tr>
 </table>

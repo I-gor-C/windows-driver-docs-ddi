@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_key_type.htm
 old-project: netvista
 ms.assetid: 09874F77-5A9C-4C98-996F-29BB90CAE4B6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_CIPHER_KEY_TYPE, WDI_CIPHER_KEY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_CIPHER_KEY_TYPE enumeration defines the cipher key types.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_CIPHER_KEY_TYPE {
 
 The key is a pairwise key to another station.
 
+
 ### -field WDI_CIPHER_KEY_TYPE_GROUP_KEY
 
 The key is a group key.
 
+
 ### -field WDI_CIPHER_KEY_TYPE_IGTK
 
 The key is an IGTK.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ The key is an IGTK.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

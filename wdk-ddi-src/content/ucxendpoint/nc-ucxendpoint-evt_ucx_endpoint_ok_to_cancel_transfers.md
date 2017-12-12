@@ -43,6 +43,7 @@ The client driver's implementation that UCX calls to notify the controller drive
     endpoint.
 
 
+
 ## -prototype
 
 ````
@@ -63,8 +64,10 @@ typedef EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS PEVT_UCX_ENDPOINT_OK_TO_CANCEL_T
 
 A handle to a UCXENDPOINT object that represents the endpoint.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
@@ -73,27 +76,33 @@ The UCX client driver registers this callback function with the USB host control
 Before completing the URB associated with the transfer, the client driver calls <a href="buses._ucxendpointneedtocanceltransfers">UcxEndpointNeedToCancelTransfers</a>
 and then waits for UCX to call this function. Then the client driver can complete the URB with <b>STATUS_CANCELLED</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,9 +113,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

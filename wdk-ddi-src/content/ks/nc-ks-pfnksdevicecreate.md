@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL (See Remarks section)
 An AVStream minidriver's <i>AVStrMiniDeviceAdd</i> routine notifies the minidriver that AVStream's PnP <i>AddDevice</i> routine has completed.
 
 
+
 ## -prototype
 
 ````
@@ -59,8 +60,10 @@ NTSTATUS AVStrMiniDeviceAdd(
 
 Pointer to a <a href="stream.ksdevice">KSDEVICE</a> structure describing the functional device object (FDO) that has just been created.
 
+
 ## -returns
 Should return STATUS_SUCCESS or the error code that was returned from the attempt to perform the operation. If the minidriver returns failure status, the related <i>AddDevice</i> call will also fail. See the Remarks section below for more details.
+
 
 ## -remarks
 The minidriver specifies this routine's address in the <b>Add</b> member of its <a href="stream.ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
@@ -73,11 +76,13 @@ If this routine returns an unsuccessful status code, AVStream's <i>AddDevice</i>
 
 This routine is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,14 +93,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,9 +114,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (See Remarks section)
+
 </td>
 </tr>
 </table>
@@ -120,5 +130,8 @@ PASSIVE_LEVEL (See Remarks section)
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniDeviceAdd routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

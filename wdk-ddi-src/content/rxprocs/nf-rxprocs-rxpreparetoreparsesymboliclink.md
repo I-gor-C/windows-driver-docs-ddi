@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxPrepareToReparseSymbolicLink</b> sets up the file object name to facilitate a reparse. This routine is used by the network mini-redirectors to traverse symbolic links. 
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS RxPrepareToReparseSymbolicLink(
 
 A pointer to the RX_CONTEXT structure.
 
+
 ### -param SymbolicLinkEmbeddedInOldPath 
 
 A Boolean value that indicates that a symbolic link was encountered. If the value is <b>TRUE</b>, a symbolic link was encountered as part of the traversal of the old path.
+
 
 ### -param NewPath 
 
 A pointer to a Unicode string that contains the new path name to be traversed.
 
+
 ### -param NewPathIsAbsolute 
 
 A Boolean value that indicates if the new path is absolute. If this value is <b>FALSE</b>, \Device\Mup should be prepended to <i>NewPath</i>. If this value is <b>TRUE</b>, the <i>NewPath</i> parameter is the full path to reparse. In this case, the buffer that contains <i>NewPath</i> is used directly, rather than allocating a new buffer.
 
+
 ### -param ReparseRequired 
 
 A pointer to a Boolean value that indicates whether a reparse is required. If this value is <b>TRUE</b>, a reparse is required.
+
 
 ## -returns
 <b>RxPrepareToReparseSymbolicLink</b> returns STATUS_SUCCESS on success or one of the following error values on failure: 
@@ -91,6 +97,7 @@ A pointer to a Boolean value that indicates whether a reparse is required. If th
 
  
 
+
 ## -remarks
 The <b>RxPrepareToReparseSymbolicLink</b> routine would only be used by a network mini-redirector that supports symbolic links and uses reparse points to implement symbolic links. The <b>RxPrepareToReparseSymbolicLink</b> routine would normally be called by a network mini-redirector from its <b>MrxCreate</b> callback routine.
 
@@ -102,11 +109,13 @@ As part of this routine, <i>RxContext</i> is also tagged appropriately. This ens
 
 The value of the <i>ReparseRequired</i> parameter assumes significance only if STATUS_SUCCESS is returned from this routine. If <i>ReparseRequired</i> is <b>FALSE</b>, this implies that no reparse attempt is required and the symbolic link file itself should be manipulated as opposed to the target of the link. If <i>ReparseRequired</i> is <b>TRUE</b>, this implies that a reparse attempt was successfully setup. In such cases, it is imperative that the network mini redirector returns STATUS_REPARSE for the associated <b>MRxCreate</b> call. RDBSS will initiate a check for this condition. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +126,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,9 +137,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -141,5 +153,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPrepareToReparseSymbolicLink routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

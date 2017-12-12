@@ -41,6 +41,7 @@ req.irql:
 The KS_AnalogVideoStandard enumeration defines various analog video standards that are used worldwide.
 
 
+
 ## -syntax
 
 ````
@@ -76,94 +77,117 @@ typedef enum  {
 
 Specifies a digital sensor.
 
+
 ### -field KS_AnalogVideo_NTSC_M
 
 Specifies the National Television Standards Committee (NTSC) "M" standard, at 7.5 IRE for black.
+
 
 ### -field KS_AnalogVideo_NTSC_M_J
 
 Specifies the NTSC "M" standard that is used in Japan, at 0 IRE for black.
 
+
 ### -field KS_AnalogVideo_NTSC_433
 
 Specifies the NTSC 433 standard
+
 
 ### -field KS_AnalogVideo_PAL_B
 
 Specifies the Phase Alteration Line (PAL) "B" standard.
 
+
 ### -field KS_AnalogVideo_PAL_D
 
 Specifies the PAL "D" standard.
+
 
 ### -field KS_AnalogVideo_PAL_G
 
 Specifies the PAL "G" standard.
 
+
 ### -field KS_AnalogVideo_PAL_H
 
 Specifies the PAL "H" standard.
+
 
 ### -field KS_AnalogVideo_PAL_I
 
 Specifies the PAL "I" standard.
 
+
 ### -field KS_AnalogVideo_PAL_M
 
 Specifies the PAL "M" standard.
+
 
 ### -field KS_AnalogVideo_PAL_N
 
 Specifies the PAL "N" standard.
 
+
 ### -field KS_AnalogVideo_PAL_60
 
 Specifies the PAL-60 standard.
+
 
 ### -field KS_AnalogVideo_SECAM_B
 
 Specifies the Systeme Electronic Pour Couleur Avec Memoire (SECAM) "B" standard.
 
+
 ### -field KS_AnalogVideo_SECAM_D
 
 Specifies the SECAM "D" standard.
+
 
 ### -field KS_AnalogVideo_SECAM_G
 
 Specifies the SECAM "G" standard.
 
+
 ### -field KS_AnalogVideo_SECAM_H
 
 Specifies the SECAM "H" standard.
+
 
 ### -field KS_AnalogVideo_SECAM_K
 
 Specifies the SECAM "K" standard.
 
+
 ### -field KS_AnalogVideo_SECAM_K1
 
 Specifies the SECAM "K1" standard.
+
 
 ### -field KS_AnalogVideo_SECAM_L
 
 Specifies the SECAM "L" standard.
 
+
 ### -field KS_AnalogVideo_SECAM_L1
 
 Specifies the SECAM "L1" standard.
+
 
 ### -field KS_AnalogVideo_PAL_N_COMBO
 
 Specifies the combination PAL "N" standard (Argentina).
 
+
 ## -remarks
 You can combine the values in the KS_AnalogVideoStandard enumeration with a bitwise OR  indicate support for multiple analog video standards.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -195,5 +219,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_AnalogVideoStandard enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: storage\dsm_parameters.htm
 old-project: storage
 ms.assetid: 948331f1-1398-4e6e-85cb-27bbbd79630e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DSM_PARAMETERS, *PDSM_PARAMETERS, DSM_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DSM_PARAMETERS structure holds the DSM version and timer counters information.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _DSM_PARAMETERS {
 
 A string field of maximum length 63 characters that returns the friendly name of the DSM.
 
+
 ### -field DsmContext
 
 An unsigned 64-bitfield that represents a unique identifier as used by MPIO to address a particular DSM.
+
 
 ### -field DsmVersion
 
 A field that contains an instance of the DSM_VERSION structure with version information for the DSM.
 
+
 ### -field DsmCounters
 
 A field that contains an instance of the DSM_COUNTERS structure with timer counters information that is specific to the particular DSM.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ A field that contains an instance of the DSM_COUNTERS structure with timer count
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

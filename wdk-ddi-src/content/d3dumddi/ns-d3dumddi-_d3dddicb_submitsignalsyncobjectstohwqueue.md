@@ -7,7 +7,7 @@ old-location: display\d3dddicb_submitsignalsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: 22AA35D4-D287-443B-A49D-87C20BD436AA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that holds information to submit a signal synchronization object to a hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -61,13 +62,16 @@ typedef struct _D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE {
 
 Specifies signal behavior.
 
+
 ### -field BroadcastHwQueueCount
 
 Specifies the number of hardware queues to broadcast this signal to.
 
+
 ### -field BroadcastHwQueueArray
 
 Specifies hardware queue handles to broadcast to.
+
 
 
 ### -field ObjectCount
@@ -75,13 +79,16 @@ Specifies hardware queue handles to broadcast to.
 Number of objects to signal.
 
 
+
 ### -field ObjectHandleArray
 
 Handles to monitored fence synchronization objects to signal.
 
+
 ### -field FenceValueArray
 
 monitored fence values to signal.
+
 
 
 ## -remarks
@@ -92,6 +99,7 @@ monitored fence values to signal.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

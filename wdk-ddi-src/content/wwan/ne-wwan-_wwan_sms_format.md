@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_format.htm
 old-project: netvista
 ms.assetid: fb583ded-8292-4486-8e85-3d3039611d14
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_SMS_FORMAT, *PWWAN_SMS_FORMAT, WWAN_SMS_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_SMS_FORMAT enumeration lists different Short Message Service (SMS) formats.
 
 
+
 ## -syntax
 
 ````
@@ -66,17 +67,21 @@ SMS messages are in PDU format. For GSM-based devices, messages are hexadecimal 
      Point-to-Point Message in 3GPP2 specification C.S0015-A "Short Message Service (SMS) for Wideband Spread
      Spectrum Systems".
 
+
 ### -field WwanSmsFormatReserved0
 
 This value is reserved for future use. Do not use.
+
 
 ### -field WwanSmsFormatReserved1
 
 This value is reserved for future use. Do not use.
 
+
 ### -field WwanSmsFormatReserved2
 
 This value is reserved for future use. Do not use.
+
 
 ### -field WwanSmsFormatCdma
 
@@ -85,28 +90,34 @@ The message is in text format. For more information, see
      <a href="netvista.wwan_sms_send_cdma">WWAN_SMS_SEND_CDMA</a>. This value applies
      only to CDMA-based devices.
 
+
 ### -field WwanSmsFormatMax
 
 This value is reserved. Do not use.
+
 
 ## -remarks
 CDMA-based devices support only 
     <b>WwanSmsFormatCdma</b>. The 
     <b>WwanSmsFormatCdma</b> format is not applicable for GSM-based devices.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,5 +149,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_FORMAT enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_FORMAT enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

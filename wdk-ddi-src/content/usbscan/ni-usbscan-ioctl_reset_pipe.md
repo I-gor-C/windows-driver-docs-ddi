@@ -42,7 +42,10 @@ req.product: Windows 10 or later.
 
 Resets the specified USB transfer pipe that is associated with the specified device handle.
 
+
+
 Resets the specified USB transfer pipe that is associated with the specified device handle.
+
 
 
 ## -ioctlparameters
@@ -50,14 +53,18 @@ Resets the specified USB transfer pipe that is associated with the specified dev
 ### -input-buffer
 Pointer to a location that contains a value of type <a href="..\usbscan\ne-usbscan-pipe_type.md">PIPE_TYPE</a>.
 
+
 ### -input-buffer-length
 Size of the input buffer.
+
 
 ### -output-buffer
 <b>NULL</b>.
 
+
 ### -output-buffer-length
 Zero.
+
 
 ### -in-out-buffer
 
@@ -70,6 +77,7 @@ Zero.
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 
@@ -92,11 +100,13 @@ Optional pointer to an OVERLAPPED structure (described in the Microsoft Windows 
 
 When the <b>DeviceloControl</b> function is called with the IOCTL_RESET_PIPE I/O control code, the caller must specify one of the <a href="..\usbscan\ne-usbscan-pipe_type.md">PIPE_TYPE</a>-typed values as the function's <i>lpInBuffer</i> parameter. This value indicates on which of the transfer pipes (interrupt, bulk IN, bulk OUT) the operation should be performed. For more information, see <a href="https://msdn.microsoft.com/f9216d3c-4930-4c26-8eac-6ee500b038e0">Accessing Kernel-Mode Drivers for Still Image Devices</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

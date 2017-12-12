@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>CcMapData</b> routine maps a specified byte range of a cached file to a buffer in memory.
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ BOOLEAN CcMapData(
 
 Pointer to a file object for the file whose data is to be mapped for read access.
 
+
 ### -param FileOffset [in]
 
 Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.
+
 
 ### -param Length [in]
 
 Length of desired data in bytes.
 
+
 ### -param Flags [in]
 
 Bitmask of flags specifying how the mapping operation is to be performed. This is a bitwise OR combination of one or more of the following values: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -80,28 +85,35 @@ Bitmask of flags specifying how the mapping operation is to be performed. This i
 <tr>
 <td>
 MAP_WAIT
+
 </td>
 <td>
 The caller can be put into a wait state until the data has been mapped. 
+
 </td>
 </tr>
 <tr>
 <td>
 MAP_NO_READ
+
 </td>
 <td>
 Only pages that are already resident in memory are to be mapped. 
+
 </td>
 </tr>
 </table>
  
+
 <div class="alert"><b>Note</b>    In Windows 2000and earlier, this parameter was a BOOLEAN value named <i>Wait</i>: </div>
 <div> </div>
+
 
 
 ### -param Wait
 
 Set to <b>TRUE</b> if the caller can be put into a wait state until the data has been mapped, <b>FALSE</b> otherwise.
+
 </dd>
 </dl>
 
@@ -109,12 +121,15 @@ Set to <b>TRUE</b> if the caller can be put into a wait state until the data has
 
 On the first call this returns a pointer to a buffer control block (BCB) structure. This pointer must be supplied as input on all subsequent calls, for this buffer.
 
+
 ### -param Buffer [out]
 
 Pointer to a buffer containing the mapped data.
 
+
 ## -returns
 <b>CcMapData</b> returns <b>TRUE</b> if the data for the cached file was mapped successfully, <b>FALSE</b> otherwise.
+
 
 ## -remarks
 <b>CcMapData</b> maps data in a cached file for read access. Note that after <b>CcMapData</b> is called, the data is mapped; but it is not pinned. This distinction is important. Data that is mapped but not pinned cannot safely be modified. To pin the data, use <a href="ifsk.ccpinmappeddata">CcPinMappedData</a>, <a href="ifsk.ccpinread">CcPinRead</a>, or <a href="ifsk.ccpreparepinwrite">CcPreparePinWrite</a>.
@@ -133,11 +148,13 @@ If any failure occurs, <b>CcMapData</b> raises a status exception for that parti
 
 To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -148,6 +165,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -158,6 +176,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -168,6 +187,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -178,9 +198,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -204,5 +226,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcMapData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

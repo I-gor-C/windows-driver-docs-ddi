@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>ObQueryNameString</b> routine supplies the name, if there is one, of a given object to which the caller has a pointer.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ NTSTATUS ObQueryNameString(
 
 A pointer to the object for which the name is requested. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param ObjectNameInfo [out, optional]
 
 A pointer to a caller-allocated buffer, of the following type, that receives the object name information: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -76,13 +79,16 @@ A pointer to a caller-allocated buffer, of the following type, that receives the
 </table></span></div>
 This parameter is optional and can be <b>NULL</b>. If <i>ObjectNameInfo</i> is <b>NULL</b>, <i>Length</i> must be zero.
 
+
 ### -param Length [in]
 
 The size, in bytes, of the buffer that is pointed to by <i>ObjectNameInfo</i>. This parameter is optional and can be zero. If <i>Length</i> is zero, <i>ReturnLength</i> receives the size, in bytes, of the buffer that is needed to hold the object name information. A reasonable size for the buffer to accommodate most object names is 1024 bytes. If <i>Length</i> is zero, <i>ObjectNameInfo</i> can be <b>NULL</b>.
 
+
 ### -param ReturnLength [out]
 
 A pointer to a caller-allocated variable that receives the size, in bytes, of the returned object name information. The object name (when present) includes a NULL-terminator and all path separators "\" in the name. If <b>ObQueryNameString</b> returns <b>STATUS_INFO_LENGTH_MISMATCH</b>, it sets this parameter to the required buffer length. 
+
 
 ## -returns
 <b>ObQueryNameString</b> returns STATUS_SUCCESS or an NTSTATUS value such as the following: 
@@ -92,6 +98,7 @@ A pointer to a caller-allocated variable that receives the size, in bytes, of th
 
  
 
+
 ## -remarks
 If the given object is named and the object name was successfully acquired, the returned string is the name of the given object including as much of the object's full path as possible. In this case, <b>ObQueryNameString</b> sets <b>Name.Buffer</b> to the address of the NULL-terminated name of the specified object. The value of <b>Name.MaximumLength</b> is the length of the object name including the <b>NULL</b> termination. The value of <b>Name.Length</b> is length of the only the object name.
 
@@ -99,11 +106,13 @@ If the given object is unnamed, or if the object name was not successfully acqui
 
 The storage for <i>ObjectNameInfo</i> can be allocated from paged or nonpaged pool. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,14 +123,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +144,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +155,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -152,9 +166,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -166,5 +182,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ObQueryNameString routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

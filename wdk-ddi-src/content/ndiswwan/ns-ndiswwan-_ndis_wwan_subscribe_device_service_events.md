@@ -7,8 +7,8 @@ old-location: netvista\ndis_wwan_subscribe_device_service_events.htm
 old-project: netvista
 ms.assetid: 99A772EF-C67C-48B0-A3F9-0B32A14247D6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, *PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, *PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure encapsulates data for OID_WWAN_SUBSCRIBE_DEVICE_SERVICES_EVENTS.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ The header with type, revision, and size information about the NDIS_WWAN_SUBSCRI
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -69,37 +71,48 @@ The header with type, revision, and size information about the NDIS_WWAN_SUBSCRI
 <tr>
 <td>
 Type
+
 </td>
 <td>
 NDIS_OBJECT_TYPE_DEFAULT
+
 </td>
 </tr>
 <tr>
 <td>
 Revision
+
 </td>
 <td>
 NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS_REVISION_1
+
 </td>
 </tr>
 <tr>
 <td>
 Size
+
 </td>
 <td>
 sizeof(NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS)
+
 </td>
 </tr>
 </table>
  
+
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field DeviceServiceListHeader
 
 A formatted WWAN_LIST_HEADER object that represents a list of device services and the number of services  in the list.
+
 This is the list of device service that the MB service has subscribed for NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT notifications.
+
 This member points to the list of the GUIDs (WwanStructDeviceServiceGuid) by using the WWAN_LIST_HEADER structure.
+
 
 ## -remarks
 
@@ -109,14 +122,17 @@ This member points to the list of the GUIDs (WwanStructDeviceServiceGuid) by usi
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,5 +149,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

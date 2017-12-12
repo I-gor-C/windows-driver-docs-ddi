@@ -7,7 +7,7 @@ old-location: kernel\ioregisterbootdriverreinitialization.htm
 old-project: kernel
 ms.assetid: af1c1f4b-7710-4cf7-9596-32d11db98abb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoRegisterBootDriverReinitialization
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>IoRegisterBootDriverReinitialization</b> routine is called by a boot driver to register the driver's reinitialization routine with the I/O manager to be called after all devices have been enumerated and started.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ VOID IoRegisterBootDriverReinitialization(
 
 Pointer to the driver object for the boot driver to be reinitialized.
 
+
 ### -param DriverReinitializationRoutine [in]
 
 Pointer to the driver's <a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a> routine.
+
 
 ### -param Context [in, optional]
 
 Optional context pointer to be passed to the driver's reinitialization routine.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A boot driver normally calls <b>IoRegisterBootDriverReinitialization</b> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine, which is run during boot driver initialization. <b>IoRegisterBootDriverReinitialization</b> registers the driver's reinitialization callback routine to be called by the I/O manager after all devices have been enumerated and started. The <i>DriverReinitializationRoutine</i> is run in a system thread at IRQL = PASSIVE_LEVEL. 
@@ -78,11 +83,13 @@ If the <i>DriverReinitializationRoutine</i> uses the registry, the <i>DriverEntr
 
 The <i>DriverEntry</i> routine can call <b>IoRegisterBootDriverReinitialization</b> only once. If the reinitialization routine needs to be run more than once, the <i>DriverReinitializationRoutine</i> can call <b>IoRegisterBootDriverReinitialization</b> as many additional times as needed, using the <i>Count</i> parameter to keep track of the number of times the <i>DriverReinitializationRoutine</i> has been called. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,14 +100,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +121,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +132,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -131,14 +143,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -159,5 +174,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverReinitialization routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverReinitialization routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

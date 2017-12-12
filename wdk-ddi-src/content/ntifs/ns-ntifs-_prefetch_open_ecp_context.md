@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 199a3003-a7dd-48a3-aa76-550332be26f3
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _PREFETCH_OPEN_ECP_CONTEXT, PREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT
+ms.keywords: _PREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT, PREFETCH_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The PREFETCH_OPEN_ECP_CONTEXT structure communicates whether the prefetcher performs a given open request on a file. 
 
 
+
 ## -syntax
 
 ````
@@ -55,6 +56,7 @@ typedef struct _PREFETCH_OPEN_ECP_CONTEXT {
 ### -field Context
 
 A pointer to an opaque context that is associated with the open request. 
+
 
 ## -remarks
 The prefetcher is a component of the operating system that is tightly integrated with the cache manager and the memory manager to make disk accesses more efficient and therefore improve performance. If other components interfere with the prefetcher, system performance decreases and might deadlock. Therefore, the prefetcher attaches the PREFETCH_OPEN_ECP_CONTEXT structure to a file to communicate that the prefetcher has performed an open request on the file. The prefetcher uses the GUID_ECP_PREFETCH_OPEN GUID in a call to the <a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a> or <a href="ifsk.iocreatefileex">IoCreateFileEx</a> routine to attach the PREFETCH_OPEN_ECP_CONTEXT structure. A file system filter driver can call the <a href="ifsk.fltfindextracreateparameter">FltFindExtraCreateParameter</a> routine to determine whether PREFETCH_OPEN_ECP_CONTEXT is attached to the file and then take appropriate action. The file system filter driver should call the <a href="ifsk.fltisecpfromusermode">FltIsEcpFromUserMode</a> routine to determine whether the PREFETCH_OPEN_ECP_CONTEXT context structure originated from kernel mode. To prevent malicious applications from spoofing the prefetcher, the file system filter driver should not accept PREFETCH_OPEN_ECP_CONTEXT if it originated from user mode.
@@ -91,19 +93,23 @@ For information about how to use ECPs to associate additional information with a
 
 The PREFETCH_OPEN_ECP_CONTEXT structure is read-only. You should use it to retrieve information about a prefetcher open ECP only. For more information about this issue, see <a href="ifsk.system_defined_ecps">System-Defined ECPs</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available starting with Windows Vista. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

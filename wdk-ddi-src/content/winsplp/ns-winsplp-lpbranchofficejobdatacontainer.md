@@ -7,8 +7,8 @@ old-location: print\branchofficejobdatacontainer.htm
 old-project: print
 ms.assetid: 5C6D2FFC-DBFF-4C44-8757-ED87593A584F
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: LPBranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer
+ms.date: 12/9/2017
+ms.keywords: LPBranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This structure defines a container for one or more <a href="RID">BranchOfficeJobData</a> structures to sent to a server.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct {
 
 Describes the <b>DWORD</b> type member <b>cJobDataEntries</b>.
 
+
 ### -field JobData
 
 Describes the <b>BranchOfficeJobData</b> type member <b>JobData</b>.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ Describes the <b>BranchOfficeJobData</b> type member <b>JobData</b>.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

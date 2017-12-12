@@ -7,7 +7,7 @@ old-location: storage\storportsetpowersettingnotificationguids.htm
 old-project: storage
 ms.assetid: FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortSetPowerSettingNotificationGuids
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortSetPowerSettingNotificationGuids</b> routine enables a miniport to receive power setting notifications. The miniport registers an array of GUIDs which identify the power settings to receive power change notifications for.
 
 
+
 ## -syntax
 
 ````
@@ -59,18 +60,22 @@ ULONG StorPortSetPowerSettingNotificationGuids(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param GuidCount [in]
 
 The number of GUIDs in the <i>Guid</i> array.
+
 
 ### -param Guid [in]
 
 An array of power setting GUIDs to register for notification. A typical use for registering these GUIDs is for SATA miniports to receive notifications for AHCI Link Power Management setting changes. The  AHCI Link Power Management settings defined by the Microsoft AHCI StorPort miniport driver are the following.
 
+
 ### -param HIPM/DIPM Setting (0b2d69d7-a2a1-449c-9680-f91c70521c60)
 
 <dd>
 Configures the link power management mode for disk and storage devices that are attached to the system through an AHCI interface.
+
 <table>
 <tr>
 <th>Index</th>
@@ -95,10 +100,12 @@ Configures the link power management mode for disk and storage devices that are 
 </table>
  
 
+
 ### -param Adaptive Setting (dab60367-53fe-4fbc-825e-521d069d2456)
 
 <dd>
 The period of AHCI link idle time before the link is put into a slumber state when HIPM or DIPM is enabled.
+
 <table>
 <tr>
 <th>Value</th>
@@ -118,9 +125,11 @@ The period of AHCI link idle time before the link is put into a slumber state wh
 </tr>
 </table>
  
+
 </dd>
 </dl>
 Other miniports may define and register their own power setting GUIDs.
+
 
 ## -returns
 The <b>StorPortSetPowerSettingNotificationGuids</b> routine returns one of these status codes:
@@ -133,6 +142,7 @@ The <b>StorPortSetPowerSettingNotificationGuids</b> routine returns one of these
 
  
 
+
 ## -remarks
 A miniport calls <b>StorPortSetPowerSettingNotificationGuids</b> in its <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine to register the GUIDs it requests to receive notifications for.
 
@@ -140,11 +150,13 @@ When a power state change occurs for a registered notification, the miniport is 
 
 The AHCI Link Power management settings are part of the Disk Settings subgroup (0012ee47-9041-4b5d-9b77-535fba8b1442) in the power policy configuration. These are managed under the SUB_DISK configuration  alias with <i>powercfg.exe</i>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +167,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,9 +188,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any
+
 </td>
 </tr>
 </table>
@@ -190,5 +207,8 @@ Any
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortSetPowerSettingNotificationGuids routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortSetPowerSettingNotificationGuids routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

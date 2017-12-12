@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_handletype.htm
 old-project: display
 ms.assetid: 807CC73E-C5A5-4D49-AFAF-32A51D832F82
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_HANDLETYPE, D3D12DDI_HANDLETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 Contains driver handle types.
+
 
 
 ## -syntax
@@ -75,81 +76,101 @@ typedef enum D3D12DDI_HANDLETYPE {
 
 A command queue handle type.
 
+
 ### -field D3D12DDI_HT_COMMAND_ALLOCATOR
 
 A command allocator handle type.
+
 
 ### -field D3D12DDI_HT_PIPELINE_STATE
 
 A pipeline state handle type.
 
+
 ### -field D3D12DDI_HT_COMMAND_LIST
 
 A command list handle type.
+
 
 ### -field D3D12DDI_HT_FENCE
 
 A fence handle type.
 
+
 ### -field D3D12DDI_HT_DESCRIPTOR_HEAP
 
 A descriptor heap handle type.
+
 
 ### -field D3D12DDI_HT_HEAP
 
 A heap handle type.
 
+
 ### -field D3D12DDI_HT_QUERY_HEAP
 
 A query heap handle type.
+
 
 ### -field D3D12DDI_HT_COMMAND_SIGNATURE
 
 A command signature handle type.
 
+
 ### -field D3D12DDI_HT_0010_PIPELINE_LIBRARY
 
 A pipeline library handle type.
+
 
 ### -field D3D12DDI_HT_0020_VIDEO_DECODER
 
 A video decoder handle type.
 
+
 ### -field D3D12DDI_HT_0020_VIDEO_DECODE_STREAM
 
 A video decode stream handle type.
+
 
 ### -field D3D12DDI_HT_0020_VIDEO_PROCESSOR
 
 A video processor handle type.
 
+
 ### -field D3D12DDI_HT_0020_VIDEO_PROCESS_STREAM
 
 A video process stream handle type.
+
 
 ### -field D3D12DDI_HT_0012_RESOURCE
 
 A resource handle type.
 
+
 ### -field D3D12DDI_HT_PASS
 
 A pass handle type.
+
 
 ### -field D3D12DDI_HT_0030_CRYPTOSESSION
 
 A crypto session handle type.
 
+
 ### -field D3D12DDI_HT_0030_CRYPTOSESSIONPOLICY
 
 A crypto session policy handle type.
+
 
 ### -field D3D12DDI_HT_0030_PROTECTEDRESOURCESESSION
 
 A protected resource session handle type.
 
+
 ### -field D3D12DDI_HT_0032_VIDEO_DECODER_HEAP
 
 A video decoder heap handle type.
+
 
 ## -remarks
 
@@ -159,6 +180,7 @@ A video decoder heap handle type.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

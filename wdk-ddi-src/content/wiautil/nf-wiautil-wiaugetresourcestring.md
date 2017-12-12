@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiauGetResourceString</b> function gets a resource string, storing it as a <b>BSTR</b>.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ HRESULT _stdcall wiauGetResourceString(
 
 Specifies the handle of the module instance.
 
+
 ### -param lResourceID 
 
 Specifies the resource ID of the target BSTR value.
+
 
 ### -param pbstrStr [out]
 
 Points to the memory location that receives the retrieved string. The caller of this function must free this string by calling <b>SysFreeString</b> (described in the Microsoft Windows SDK documentation).
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error.
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,14 +94,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

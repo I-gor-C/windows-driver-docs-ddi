@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settargetgamma.htm
 old-project: display
 ms.assetid: 94BA40BD-3B56-44EF-BAD4-49556E68C550
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_SETTARGETGAMMA, DXGKARG_SETTARGETGAMMA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used to hold the arguments for <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_settargetgamma.md">DXGKDDI_SETTARGETGAMMA</a>.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DXGKARG_SETTARGETGAMMA {
 
 The identifier of a display adapter's video present target.
 
+
 ### -field GammaRamp
 
 A <a href="display.d3dkmdt_gamma_ramp">D3DKMDT_GAMMA_RAMP</a> struct which describes the type of gamma ramp to set and the buffer containing the ramp data.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A <a href="display.d3dkmdt_gamma_ramp">D3DKMDT_GAMMA_RAMP</a> struct which descr
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

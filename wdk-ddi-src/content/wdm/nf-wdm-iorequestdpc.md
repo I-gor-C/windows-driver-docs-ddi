@@ -7,7 +7,7 @@ old-location: kernel\iorequestdpc.htm
 old-project: kernel
 ms.assetid: 196555c8-74a6-4dae-ac4d-52654015ffeb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoRequestDpc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoRequestDpc</b> routine queues a driver-supplied <a href="kernel.dpcforisr">DpcForIsr</a> routine to complete interrupt-driven I/O processing at a lower IRQL.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ VOID IoRequestDpc(
 
 Pointer to the device object for which the request that caused the interrupt is being processed.
 
+
 ### -param Irp [in]
 
 Pointer to the current IRP for the specified device.
+
 
 ### -param Context [in]
 
 Pointer to a driver-determined context to be passed to the DPC routine.
 
+
 ## -returns
 None
+
 
 ## -remarks
 Callers of <b>IoRequestDpc</b> must be running at DIRQL.
@@ -76,11 +81,13 @@ Callers of <b>IoRequestDpc</b> must be running at DIRQL.
 Drivers call  <b>IoRequestDpc</b> from an <a href="kernel.interruptservice">InterruptService</a> routine. Because of this, <b>IoRequestDpc</b> runs at the DIRQL value that was specified by <i>SynchronizeIrql</i> when the driver called <a href="kernel.ioconnectinterrupt">IoConnectInterrupt</a>. However, it is also possible to queue a DPC at any IRQL &gt;= DISPATCH_LEVEL by using the <b>Ke<i>Xxx</i>Dpc</b> routines. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565664">Which Type of DPC Should You Use?</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +98,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,9 +119,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DIRQL
+
 </td>
 </tr>
 </table>
@@ -129,5 +141,8 @@ DIRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRequestDpc routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRequestDpc routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

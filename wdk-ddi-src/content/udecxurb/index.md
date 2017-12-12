@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Udecxurb.h header
 
+## -description
 
 This header is used by Universal Serial Bus(USB). For more information, see
 - [Universal Serial Bus(USB)](../_usbref/index.md)

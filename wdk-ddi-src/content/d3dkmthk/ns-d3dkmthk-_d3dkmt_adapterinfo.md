@@ -7,7 +7,7 @@ old-location: display\d3dkmt_adapterinfo.htm
 old-project: display
 ms.assetid: 4b780fb7-f6d4-4248-882c-d0cc96106724
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_ADAPTERINFO, D3DKMT_ADAPTERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Supplies configuration information about a graphics adapter.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _D3DKMT_ADAPTERINFO {
 
 A handle to the adapter.
 
+
 ### -field AdapterLuid
 
 A LUID that serves as an identifier for the adapter.
+
 
 ### -field NumOfSources
 
 The number of video present sources supported by the adapter.
 
+
 ### -field bPresentMoveRegionsPreferred
 
 If <b>TRUE</b>, the adapter prefers move regions.
+
 
 ## -remarks
 
@@ -79,22 +84,27 @@ If <b>TRUE</b>, the adapter prefers move regions.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

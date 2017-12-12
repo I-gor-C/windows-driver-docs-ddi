@@ -7,7 +7,7 @@ old-location: storage\vpd_zoned_block_device_characteristics_page.htm
 old-project: storage
 ms.assetid: 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -70,45 +71,56 @@ typedef struct _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE {
 
 N/A
 
+
 ### -field DeviceTypeQualifier
 
 N/A
+
 
 ### -field PageCode
 
 N/A
 
+
 ### -field PageLength
 
 N/A
+
 
 ### -field URSWRZ
 
 N/A
 
+
 ### -field Reserved1
 
 N/A
+
 
 ### -field Reserved2
 
 N/A
 
+
 ### -field OptimalNumberOfOpenSequentialWritePreferredZone
 
 N/A
+
 
 ### -field OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone
 
 N/A
 
+
 ### -field MaxNumberOfOpenSequentialWriteRequiredZone
 
 N/A
 
+
 ### -field Reserved3
 
 N/A
+
 
 ## -remarks
 
@@ -118,6 +130,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

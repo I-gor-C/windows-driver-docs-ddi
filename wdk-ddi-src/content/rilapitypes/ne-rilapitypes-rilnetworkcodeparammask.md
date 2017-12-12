@@ -7,8 +7,8 @@ old-location: netvista\rilnetworkcodeparammask_2.htm
 old-project: netvista
 ms.assetid: 944a4974-cb1d-4c0c-bca6-2741f16d2b3e
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: RIL_WritePhonebookEntry
+ms.date: 12/8/2017
+ms.keywords: RILNETWORKCODEPARAMMASK, RILNETWORKCODEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,6 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.iface: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +39,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. </p>
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -58,32 +58,24 @@ typedef enum _RILNETWORKCODEPARAMMASK {
 
 
 ## -enum-fields
-<dl>
 
 ### -field RIL_PARAM_NETWORKCODE_MCC
 
-<dd></dd>
 
 ### -field RIL_PARAM_NETWORKCODE_MNC
 
-<dd></dd>
 
 ### -field RIL_PARAM_NETWORKCODE_SID
 
-<dd></dd>
 
 ### -field RIL_PARAM_NETWORKCODE_NID
 
-<dd></dd>
 
 ### -field RIL_PARAM_NETWORKCODE_RI
 
-<dd></dd>
 
 ### -field RIL_PARAM_NETWORKCODE_ALL
 
-<dd></dd>
-</dl>
 
 ## -remarks
 
@@ -92,7 +84,8 @@ typedef enum _RILNETWORKCODEPARAMMASK {
 <table>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>

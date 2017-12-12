@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2operation.htm
 old-project: display
 ms.assetid: d6ff2f23-0b51-4bfc-8172-84a5a39f7785
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2OPERATION, D3DHAL_DP2OPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 The D3DHAL_DP2OPERATION enumerated type specifies the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> operation in the <b>bCommand</b> member of the <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure. The enumerators of D3DHAL_DP2OPERATION can specify either primitive-rendering or nonprimitive-rendering operations. The enumerators of D3DHAL_DP2OPERATION can also specify that the driver returned responses to previously issued queries. 
+
 
 
 ## -syntax
@@ -145,133 +146,166 @@ typedef enum _D3DHAL_DP2OPERATION {
 
 Draws a list of indexed or nonindexed points. Each list is specified by one or more <a href="display.d3dhal_dp2points">D3DHAL_DP2POINTS</a> structures.
 
+
 ### -field D3DDP2OP_INDEXEDLINELIST
 
 Draws a list of lines, with each line specified by a pair of vertex indexes. The indexed line list is specified by one or more <a href="display.d3dhal_dp2indexedlinelist">D3DHAL_DP2INDEXEDLINELIST</a> structures.
+
 
 ### -field D3DDP2OP_INDEXEDTRIANGLELIST
 
 Draws a list of triangles. Each triangle is specified by three indexes into the vertex buffer, one index per triangle vertex. The triangle list is specified by one or more <a href="display.d3dhal_dp2indexedtrianglelist">D3DHAL_DP2INDEXEDTRIANGLELIST</a> structures.
 
+
 ### -field D3DDP2OP_RENDERSTATE
 
 Specifies a render state change that requires processing. The rendering state to change is specified by one or more <a href="display.d3dhal_dp2renderstate">D3DHAL_DP2RENDERSTATE</a> structures.
+
 
 ### -field D3DDP2OP_LINELIST
 
 Draws a list of lines. Each line is specified by a pair of vertices. The vertices are processed in sequential order starting at an initial specified vertex index. The line list is specified by a <a href="display.d3dhal_dp2linelist">D3DHAL_DP2LINELIST</a> structure.
 
+
 ### -field D3DDP2OP_LINESTRIP
 
 Draws a connected strip of lines defined by a sequence of vertices starting at an initial specified vertex index. The line strip is specified by a <a href="display.d3dhal_dp2linestrip">D3DHAL_DP2LINESTRIP</a> structure.
+
 
 ### -field D3DDP2OP_INDEXEDLINESTRIP
 
 Draws a connected strip of lines defined by a sequence of vertex indexes. Each line in the connected strip is specified by a <a href="display.d3dhal_dp2indexedlinestrip">D3DHAL_DP2INDEXEDLINESTRIP</a> structure.
 
+
 ### -field D3DDP2OP_TRIANGLELIST
 
 Draws a list of triangles. Each triangle is specified by three vertices that are processed starting at an initial specified vertex index. The triangles are processed in sequential order. The triangle list is specified by a <a href="display.d3dhal_dp2trianglelist">D3DHAL_DP2TRIANGLELIST</a> structure.
+
 
 ### -field D3DDP2OP_TRIANGLESTRIP
 
 Draws a connected strip of triangles. Each triangle is specified by a sequence of vertices starting at an initial specified vertex index. The three most current vertices are used to draw each triangle. The triangle strip is specified by a <a href="display.d3dhal_dp2trianglestrip">D3DHAL_DP2TRIANGLESTRIP</a> structure.
 
+
 ### -field D3DDP2OP_INDEXEDTRIANGLESTRIP
 
 Draws a connected strip of triangles that are specified by a sequence of vertex indexes. The three most current vertex indexes are used to draw each triangle. Each triangle in the connected strip is specified by a <a href="display.d3dhal_dp2indexedtrianglestrip">D3DHAL_DP2INDEXEDTRIANGLESTRIP</a> structure.
+
 
 ### -field D3DDP2OP_TRIANGLEFAN
 
 Draws a triangle fan. The fan is specified by a sequence of vertices that start at an initial specified vertex index. The triangle fan is specified by a <a href="display.d3dhal_dp2trianglefan">D3DHAL_DP2TRIANGLEFAN</a> structure.
 
+
 ### -field D3DDP2OP_INDEXEDTRIANGLEFAN
 
 Draws a triangle fan. The triangle fan is specified by a sequence of vertex indexes. Each triangle in the fan is specified by a <a href="display.d3dhal_dp2indexedtrianglefan">D3DHAL_DP2INDEXEDTRIANGLEFAN</a> structure.
+
 
 ### -field D3DDP2OP_TRIANGLEFAN_IMM
 
 Draws a triangle fan. The fan is specified by a sequence of vertices stored in the command stream (immediate data). The <b>wPrimitiveCount</b> member of the <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure specifies the number of triangles to render. The type and size of the vertices are specified by the <b>dwVertexType</b> member of the <a href="display.d3dhal_drawprimitives2data">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.
 
+
 ### -field D3DDP2OP_LINELIST_IMM
 
 Draws a set of lines. Each line is specified by a pair of vertices stored in the command stream (immediate data). The <b>wPrimitiveCount</b> member of the <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure specifies how many pairs of vertices follow. The type and size of the vertices are determined by the <b>dwVertexType</b> member of the <a href="display.d3dhal_drawprimitives2data">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.
+
 
 ### -field D3DDP2OP_TEXTURESTAGESTATE
 
 Specifies a texture render state change that requires processing. The render state to change is specified by one or more <a href="display.d3dhal_dp2texturestagestate">D3DHAL_DP2TEXTURESTAGESTATE</a> structures. The value in the <b>TSState</b> member specifies the texture state to be updated.
 
+
 ### -field D3DDP2OP_INDEXEDTRIANGLELIST2
 
 Draws a list of triangles. Each triangle is specified by three indexes into the vertex buffer, one index per triangle vertex. The triangle list is specified by one or more <a href="display.d3dhal_dp2indexedtrianglelist2">D3DHAL_DP2INDEXEDTRIANGLELIST2</a> structures.
+
 
 ### -field D3DDP2OP_INDEXEDLINELIST2
 
 Draws a list of lines. Each line is specified by a pair of vertex indexes, with each offset from the beginning of the vertex buffer by a fixed amount. The indexed line list is specified by one or more <a href="display.d3dhal_dp2indexedlinelist">D3DHAL_DP2INDEXEDLINELIST</a> structures.
 
+
 ### -field D3DDP2OP_VIEWPORTINFO
 
 Specifies the clipping rectangle that is used for guard-band clipping by guard-band aware drivers. The clipping rectangle (that is, the viewing rectangle) is specified by the <a href="display.d3dhal_dp2viewportinfo">D3DHAL_DP2VIEWPORTINFO</a> structure.
+
 
 ### -field D3DDP2OP_WINFO
 
 Specifies the w range for w buffering. This range is specified by one or more <a href="display.d3dhal_dp2winfo">D3DHAL_DP2WINFO</a> structures.
 
+
 ### -field D3DDP2OP_SETPALETTE
 
 Specifies that the palette is being set for a texture. See <a href="display.d3dhal_dp2setpalette">D3DHAL_DP2SETPALETTE</a>.
+
 
 ### -field D3DDP2OP_UPDATEPALETTE
 
 Specifies that a texture palette is to be updated. See <a href="display.d3dhal_dp2updatepalette">D3DHAL_DP2UPDATEPALETTE</a>.
 
+
 ### -field D3DDP2OP_ZRANGE
 
 Specifies the range of z values. See <a href="display.d3dhal_dp2zrange">D3DHAL_DP2ZRANGE</a>.
+
 
 ### -field D3DDP2OP_SETMATERIAL
 
 Sets the properties for a material. D3DHAL_DP2SETMATERIAL is a D3DMATERIAL7 structure (described in the DirectX SDK documentation) that is used to set the material properties.
 
+
 ### -field D3DDP2OP_SETLIGHT
 
 Specifies that a light is being set. See <a href="display.d3dhal_dp2setlight">D3DHAL_DP2SETLIGHT</a>.
+
 
 ### -field D3DDP2OP_CREATELIGHT
 
 Creates a light. See <a href="display.d3dhal_dp2createlight">D3DHAL_DP2CREATELIGHT</a>.
 
+
 ### -field D3DDP2OP_SETTRANSFORM
 
 Sets up a transform. See <a href="display.d3dhal_dp2settransform">D3DHAL_DP2SETTRANSFORM</a>.
+
 
 ### -field D3DDP2OP_TEXBLT
 
 Specifies a blt operation from a source texture to a destination texture. It is used as a more efficient alternative to the DirectDraw <a href="display.ddblt">DdBlt</a> DDI. It is specified by one or more <a href="display.d3dhal_dp2texblt">D3DHAL_DP2TEXBLT</a> structures. Because Direct3D drivers maintain all the state necessary to do a blt (for example, texture handles and blending modes), a blt can be accomplished with just the information in the D3DDP2OP_TEXBLT opcode. This new token signals the driver that a texture has to be transferred from system memory into local or nonlocal video memory.
 
+
 ### -field D3DDP2OP_STATESET
 
 Specifies a state-set operation to perform. See <a href="display.d3dhal_dp2stateset">D3DHAL_DP2STATESET</a>.
+
 
 ### -field D3DDP2OP_SETPRIORITY
 
 Sets the priority of a managed texture. See <a href="display.d3dhal_dp2setpriority">D3DHAL_DP2SETPRIORITY</a>.
 
+
 ### -field D3DDP2OP_SETRENDERTARGET
 
 Sets the render target. Direct3D drivers must respond to this opcode exactly the same as with the older <i>SetRenderTarget</i> callback. See <a href="display.d3dhal_dp2setrendertarget">D3DHAL_DP2SETRENDERTARGET</a>.
+
 
 ### -field D3DDP2OP_CLEAR
 
 Specifies a clear operation. Replaces the <i>Clear</i> and <i>Clear2</i> callbacks. See <a href="display.d3dhal_dp2clear">D3DHAL_DP2CLEAR</a>.
 
+
 ### -field D3DDP2OP_SETTEXLOD
 
 Indicates that the level of detail (LOD) for MIP maps is being set. See <a href="display.d3dhal_dp2settexlod">D3DHAL_DP2SETTEXLOD</a>.
 
+
 ### -field D3DDP2OP_SETCLIPPLANE
 
 Specifies that a user-defined clip plane is being used. See <a href="display.d3dhal_dp2setclipplane">D3DHAL_DP2SETCLIPPLANE</a>.
+
 
 ### -field D3DDP2OP_CREATEVERTEXSHADER
 
@@ -395,6 +429,7 @@ Specifies that a user-defined clip plane is being used. See <a href="display.d3d
 
       DirectX 8.0 and later versions only.This token is sent to the driver to draw transformed, clipped triangle fans. This token is a replacement for the DirectX 7.0 tokens that used inline vertices in the command stream. The triangle fans are specified by one or more <a href="display.d3dhal_clippedtrianglefan">D3DHAL_CLIPPEDTRIANGLEFAN</a> structures.
 
+
 ### -field D3DDP2OP_DRAWPRIMITIVE2
 
 
@@ -453,6 +488,7 @@ Specifies that a user-defined clip plane is being used. See <a href="display.d3d
 
 
       DirectX 8.0 and later versions only. Multiplies a current transform. See <a href="display.d3dhal_dp2multiplytransform">D3DHAL_DP2MULTIPLYTRANSFORM</a>.
+
 
 ### -field D3DDP2OP_ADDDIRTYRECT
 
@@ -709,11 +745,13 @@ Specifies that a user-defined clip plane is being used. See <a href="display.d3d
 ## -remarks
 Note that because the D3DNTDP2OP_<i>XXX</i> enumerators are type defined as D3DDP2OP_<i>XXX</i> internally in the <i>Dx95type.h</i> file of the Windows Driver Kit (WDK), the shorter form is used here for clarity. Either form is valid on Windows 2000 and later implementations, but only the shorter form can be used on Windows 98/Me.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

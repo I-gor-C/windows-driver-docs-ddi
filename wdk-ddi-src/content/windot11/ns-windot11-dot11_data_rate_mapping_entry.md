@@ -7,8 +7,8 @@ old-location: netvista\dot11_data_rate_mapping_entry.htm
 old-project: netvista
 ms.assetid: d2772a9e-655a-4e3e-8b48-65d58b0a659d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: DOT11_DATA_RATE_MAPPING_ENTRY, DOT11_DATA_RATE_MAPPING_ENTRY, *PDOT11_DATA_RATE_MAPPING_ENTRY
+ms.date: 12/8/2017
+ms.keywords: DOT11_DATA_RATE_MAPPING_ENTRY, *PDOT11_DATA_RATE_MAPPING_ENTRY, DOT11_DATA_RATE_MAPPING_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -60,7 +60,9 @@ The index value for the data rate contained in the
      <b>ucDataRateIndex</b> member must be unique for each entry in the 
      <b>DataRateMappingEntries</b> array.
      
+
 This value is a bitmask as defined in the following table.
+
 <table>
 <tr>
 <th>Bits</th>
@@ -69,27 +71,34 @@ This value is a bitmask as defined in the following table.
 <tr>
 <td>
 0-6
+
 </td>
 <td>
 The data rate index, containing a value from 2 through127.
+
 </td>
 </tr>
 <tr>
 <td>
 7
+
 </td>
 <td>
 This bit is not used and must be set to zero.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field ucDataRateFlag
 
 The attributes of the data rate entry.
      
+
 This value is a bitmask as defined in the following table.
+
 <table>
 <tr>
 <th>Bits</th>
@@ -99,30 +108,37 @@ This value is a bitmask as defined in the following table.
 <tr>
 <td>
 0
+
 </td>
 <td>
 <b>DOT11_DATA_RATE_NON_STANDARD</b>
+
 </td>
 <td>
 If set, the entry is not a standard data rate defined in IEEE 802.11 standards.
+
 </td>
 </tr>
 <tr>
 <td>
 1-7
+
 </td>
 <td></td>
 <td>
 These bits are not used and must be set to zero.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field usDataRateValue
 
 The data rate, defined in units of 500 kilobits per second (Kbps), with a value from 0x0002 to
      0xFFFF.
+
 
 ## -remarks
 For the IEEE 802.11 standard data rates, the miniport driver must set the 
@@ -202,20 +218,24 @@ The following table shows the IEEE 802.11 standard data rates, in units of megab
 
 0x6C
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -236,5 +256,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DATA_RATE_MAPPING_ENTRY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DATA_RATE_MAPPING_ENTRY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

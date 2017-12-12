@@ -7,7 +7,7 @@ old-location: display\d3dkmt_adaptertype.htm
 old-project: display
 ms.assetid: a92865bc-620f-434d-a185-b837924599fc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_ADAPTERTYPE, D3DKMT_ADAPTERTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the type of display device that the graphics adapter supports.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _D3DKMT_ADAPTERTYPE {
 
 The adapter supports a render device.
 
+
 ### -field DisplaySupported
 
 The adapter supports a display device.
+
 
 ### -field SoftwareDevice
 
 The adapter supports a non-plug and play (PnP) device that is implemented in software.
 
+
 ### -field PostDevice
 
 The adapter supports a power-on self-test (POST) device.
 
+
 ### -field Reserved
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -84,22 +90,27 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

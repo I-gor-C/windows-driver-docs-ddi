@@ -41,6 +41,7 @@ req.irql:
 This function is used by the Avstream miniport driver to register callbacks for thermal notifications with the KS port driver.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ void KSDDKAPI NTSTATUS NTAPI KsDeviceRegisterThermalDispatch(
 
 A KS device object representing the device managed by KS. For more information, see <a href="stream.ksdevice">KSDEVICE</a>.
 
+
 ### -param KsDeviceThermalDispatch [in]
 
 A structure containing the Avstream driver active and passive thermal callback notifications.
 
+
 ## -returns
 Returns NTSTATUS  STATUS_SUCCESS for success conditions or STATUS_INVALID_DEVICE_REQUEST if both the parameters are NULL.
+
 
 ## -remarks
 <b>KsDeviceRegisterThermalDispatch</b> takes two arguments:<ul>
@@ -73,11 +77,13 @@ Returns NTSTATUS  STATUS_SUCCESS for success conditions or STATUS_INVALID_DEVICE
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh698236">Device-Level Thermal Management</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +122,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDeviceRegisterThermalDispatch function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: debugger\gettypesize.htm
 old-project: debugger
 ms.assetid: 5532799d-5c3b-41ba-ab62-dca9c9d9eb56
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GetTypeSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GetTypeSize</b> function returns the size in the target's memory of an instance of the specified type.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ __inline ULONG GetTypeSize(
 
 Specifies the type to return the size of.
 
+
 ## -returns
 This function returns the size of an instance of the specified type.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ This function returns the size of an instance of the specified type.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

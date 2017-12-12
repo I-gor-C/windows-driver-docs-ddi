@@ -41,6 +41,7 @@ req.irql:
 The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct {
 
 Specifies the pitch (byte count between subsequent lines) of the video port surface.
 
+
 ### -field dwXOrigin
 
 Indicates the x-origin of the video port surface.
+
 
 ### -field dwYOrigin
 
 Indicates the y-origin of the video port surface.
 
+
 ## -remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566509">KSPROPERTY_VPCONFIG_SURFACEPARAMS</a> property.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,5 +96,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSVPSURFACEPARAMS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

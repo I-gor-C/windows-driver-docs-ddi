@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 75a0e9ef-0791-4465-b671-36c86dc9116a
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS
+ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -44,6 +44,7 @@ req.product: Windows 10 or later.
          
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef struct _UCMTCPCI_DRIVER_GLOBALS {
                      Reserved.
                  
 
+
 ## -remarks
 
 
@@ -69,6 +71,7 @@ typedef struct _UCMTCPCI_DRIVER_GLOBALS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

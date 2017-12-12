@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Passes non-internal IOCTLs from user-mode to UFX.
 
 
+
 ## -syntax
 
 ````
@@ -61,38 +62,47 @@ BOOLEAN UfxDeviceIoControl(
 
 A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
 
+
 ### -param Request [in]
 
 A handle to a framework request object.
+
 
 ### -param OutputBufferLength [in]
 
 The length, in bytes, of the request's output buffer, if an output buffer is available.
 
+
 ### -param InputBufferLength [in]
 
 The length, in bytes, of the request's input buffer, if an input buffer is available.
+
 
 ### -param IoControlCode [in]
 
 The driver-defined or system-defined IOCTL that is associated with the request.
 
+
 ## -remarks
 The client driver calls <b>UfxDeviceIoControl</b> to forward non-internal IOCTLs that it receives in its <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_device_control.md">EvtIoDeviceControl</a> callback function to UFX.  The following example shows how:
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,9 +113,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

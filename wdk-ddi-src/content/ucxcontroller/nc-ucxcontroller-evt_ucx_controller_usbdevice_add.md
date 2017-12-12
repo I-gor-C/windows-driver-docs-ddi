@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The client driver's implementation that UCX calls when a new USB device is detected.
 
 
+
 ## -prototype
 
 ````
@@ -64,9 +65,11 @@ typedef EVT_UCX_CONTROLLER_USBDEVICE_ADD PEVT_UCX_CONTROLLER_USBDEVICE_ADD;
 
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.
 
+
 ### -param UcxUsbDeviceInfo [in]
 
 Pointer to a <a href="buses._ucxusbdevice_info">UCXUSBDEVICE_INFO</a> structure.
+
 
 ### -param UsbDeviceInit [in]
 
@@ -74,8 +77,10 @@ Pointer to an opaque structure containing initialization
     information.  Callbacks for the device object are associated with this structure.
     This structure is managed by UCX.
 
+
 ## -returns
 If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.
+
 
 ## -remarks
 The UCX client driver registers its <i>EVT_UCX_CONTROLLER_USBDEVICE_ADD</i> implementation with the USB host controller extension (UCX) by calling the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.
@@ -85,27 +90,33 @@ This callback function creates a new USB device object and registers the
     <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>.  The function may need to allocate the common buffer that will be
     used as the device context.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +127,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -130,5 +143,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20EVT_UCX_CONTROLLER_USBDEVICE_ADD callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_slot_info.htm
 old-project: storage
 ms.assetid: D5DF9785-83E0-4137-8E5F-357F94721CAD
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_SLOT_INFO, *PSTORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO, *PSTORAGE_HW_FIRMWARE_SLOT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains information about a slot on a device.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _STORAGE_HW_FIRMWARE_SLOT_INFO {
 
 The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_SLOT_INFO)
 
+
 ### -field Size
 
 The size of this structure.
+
 
 ### -field SlotNumber
 
 The slot number of this slot.
 
+
 ### -field ReadOnly
 
 Indicates whether this slot is read-only or not.
+
 
 ### -field Reserved0
 
 Reserved for future use.
 
+
 ### -field Reserved1
 
 Reserved for future use.
 
+
 ### -field Revision
 
 The revision of the firmware on this slot.
+
 
 ## -remarks
 
@@ -94,22 +102,27 @@ The revision of the firmware on this slot.
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

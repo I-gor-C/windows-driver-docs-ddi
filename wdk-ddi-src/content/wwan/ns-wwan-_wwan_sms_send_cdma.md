@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_send_cdma.htm
 old-project: netvista
 ms.assetid: e05b7391-7852-45c7-aed0-36c95b4e475b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_SMS_SEND_CDMA structure represents a CDMA-based SMS text message to send.
 
 
+
 ## -syntax
 
 ````
@@ -63,23 +64,28 @@ typedef struct _WWAN_SMS_SEND_CDMA {
 The encoding that is used in the CDMA message. 
      <b>EncodedMsg</b> message should be interpreted based on the value of this member.
 
+
 ### -field LanguageId
 
 The language used in CDMA message. This is an indicator of the language used in SMS message and
      may be set to 
      <b>WwanSmsCdmaLangUnknown</b>, if the language is not known.
 
+
 ### -field Address
 
 A NULL-terminated string with a maximum length of 15 digits that represents a mobile number. The
      number can be in any of the following formats:
      
+
 <ul>
 <li>
 "+ &lt;International Country Code&gt; &lt;Mobile Number&gt;\0"
+
 </li>
 <li>
 "&lt;Mobile Number&gt;\0"
+
 </li>
 </ul>
 If 
@@ -91,11 +97,13 @@ If
      <i>WwanMsgStatusNew</i> or 
      <i>WwanMsgStatusOld</i>, miniport drivers should specify the sender's mobile number.
 
+
 ### -field SizeInBytes
 
 The size, in bytes, of 
      <b>EncodedMsg</b> . The encoded message can have a maximum length of WWAN_SMS_CDMA_MAX_BUF_LEN. Miniport
      drivers must specify a value for this member for all encoding types.
+
 
 ### -field SizeInCharacters
 
@@ -106,9 +114,11 @@ Size of
      <i>WwanSmsCdmaEncodingShiftJis</i> or 
      <i>WwanSmsCdmaEncodingKorean</i>.
 
+
 ### -field EncodedMsg
 
 The encoded content that represents the CDMA-based SMS text message.
+
 
 ## -remarks
 
@@ -118,14 +128,17 @@ The encoded content that represents the CDMA-based SMS text message.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,5 +161,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_CDMA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_CDMA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

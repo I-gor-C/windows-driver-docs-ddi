@@ -7,7 +7,7 @@ old-location: netvista\riltdscdmakind.htm
 old-project: netvista
 ms.assetid: 61b5d7f8-bd45-448b-b7a1-3e52909a63cb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILTDSCDMAKIND, RILTDSCDMAKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef enum _RILTDSCDMAKIND {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

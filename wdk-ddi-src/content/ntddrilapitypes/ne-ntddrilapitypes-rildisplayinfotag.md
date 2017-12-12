@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfotag.htm
 old-project: netvista
 ms.assetid: ba47d9e3-4e95-479b-9e6a-10eb723e7d59
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDISPLAYINFOTAG, RILDISPLAYINFOTAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -171,6 +172,7 @@ typedef enum _RILDISPLAYINFOTAG {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

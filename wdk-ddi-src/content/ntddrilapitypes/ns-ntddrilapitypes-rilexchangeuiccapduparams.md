@@ -7,8 +7,8 @@ old-location: netvista\rilexchangeuiccapduparams.htm
 old-project: netvista
 ms.assetid: be77f9e2-acf7-4b59-9a46-abda7c43817b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILEXCHANGEUICCAPDUPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

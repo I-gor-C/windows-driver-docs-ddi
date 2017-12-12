@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 0D4528C0-AEE6-4AD2-A3E6-524A6EB8A0D9
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, *PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL
+ms.keywords: _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, *PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, L2CAP_RETRANSMISSION_AND_FLOW_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: Developers should code this function to operate at either IRQL = DISPA
 The L2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure describes configuration parameters for enhanced retransmission mode and streaming mode.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL {
 
 Requested mode for the enhanced L2CAP channel.
 
+
 ### -field TxWindowSize
 
 Size of the transmission window for enhanced retransmission mode. The value of member is valid only when used with enhanced retransmission mode, and is ignored in streaming mode. Valid values range from 1 to 63.
+
 
 ### -field MaxTransmit
 
 Number of times a single I/S frame will be re-transmitted in case of an error. The value of this member is valid only for enhanced retransmission mode and is ignored in streaming mode. The minimum value is 1.
 
+
 ### -field RetransmissionTO
 
 Retransmission timeout value. Profile drivers should set this value to 0.
+
 
 ### -field MonitorTO
 
 Monitor timeout. Profile drivers should set this value to 0.
 
+
 ### -field MaxPDUSize
 
 Maximum PDU Size.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ Maximum PDU Size.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8 and later versions of Windows
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

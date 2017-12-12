@@ -44,7 +44,9 @@ PosCxClaimDevice is called to claim a device for exclusive use.
 The caller should call <a href="pos.poscxreleasedevice">PosCxReleaseDevice</a> when the device is no longer needed. 
 
       
+
 If the device is already claimed, the caller must wait until access is granted.
+
 
 
 ## -syntax
@@ -63,14 +65,17 @@ NTSTATUS PosCxClaimDevice(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param request [in]
 
 A handle to a framework request object that represents the request. This request must come from a WDF IO queue.
+
 
 ## -returns
 Possible return values are:
 
  
+
 
 ## -remarks
 
@@ -80,14 +85,17 @@ Possible return values are:
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

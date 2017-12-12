@@ -7,7 +7,7 @@ old-location: display\videoportunmapdmamemory.htm
 old-project: display
 ms.assetid: f3d05263-5e6b-4875-afff-1166928778db
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortUnmapDmaMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>VideoPortUnmapDmaMemory</b> function is <b>obsolete</b> in Windows 2000 and later.
+
 <b>VideoPortUnmapDmaMemory</b> unmaps a range of memory previously mapped by <a href="display.videoportmapdmamemory">VideoPortMapDmaMemory</a>.
+
 
 
 ## -syntax
@@ -61,29 +63,36 @@ BOOLEAN VideoPortUnmapDmaMemory(
 
 Pointer to the miniport driver's device extension.
 
+
 ### -param VirtualAddress 
 
 Pointer to a virtual address within the mapped range to be released.
+
 
 ### -param ProcessHandle 
 
 Is the handle to the current process.
 
+
 ### -param BoardMemoryHandle 
 
 Is the handle to adapter's memory.
 
+
 ## -returns
 <b>VideoPortUnmapDmaMemory</b> always <b>FALSE</b>.
 
+
 ## -remarks
 See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,14 +103,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +124,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +135,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

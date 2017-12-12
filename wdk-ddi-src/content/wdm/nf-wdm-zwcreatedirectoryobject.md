@@ -7,7 +7,7 @@ old-location: kernel\zwcreatedirectoryobject.htm
 old-project: kernel
 ms.assetid: 45e4a08d-9615-410a-8f78-a8157802813f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwCreateDirectoryObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ZwCreateDirectoryObject</b> routine creates or opens an object-directory object.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ NTSTATUS ZwCreateDirectoryObject(
 
 Pointer to a HANDLE variable that receives a handle to the object directory.
 
+
 ### -param DesiredAccess [in]
 
 Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. In addition to the access rights that are defined for all types of objects (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>), the caller can specify one or more of the following access rights, which are specific to object directories:
+
 <table>
 <tr>
 <th>ACCESS_MASK flag</th>
@@ -70,49 +73,61 @@ Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff5404
 <tr>
 <td>
 DIRECTORY_QUERY
+
 </td>
 <td>
 Query
+
 </td>
 </tr>
 <tr>
 <td>
 DIRECTORY_TRAVERSE
+
 </td>
 <td>
 Name lookup
+
 </td>
 </tr>
 <tr>
 <td>
 DIRECTORY_CREATE_OBJECT
+
 </td>
 <td>
 Name creation
+
 </td>
 </tr>
 <tr>
 <td>
 DIRECTORY_CREATE_SUBDIRECTORY
+
 </td>
 <td>
 Subdirectory creation
+
 </td>
 </tr>
 <tr>
 <td>
 DIRECTORY_ALL_ACCESS
+
 </td>
 <td>
 All of the preceding types
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ObjectAttributes [in]
 
 Pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that contains the object's attributes, which you must have already initialized by calling <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>. 
+
 
 ## -returns
 <b>ZwCreateDirectoryObject</b> returns an NTSTATUS value. Possible return values include:
@@ -134,11 +149,13 @@ Note that the system does <u>not</u> use object directory objects to represent f
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,14 +166,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,6 +187,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -177,6 +198,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -187,14 +209,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -218,5 +243,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateDirectoryObject routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateDirectoryObject routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

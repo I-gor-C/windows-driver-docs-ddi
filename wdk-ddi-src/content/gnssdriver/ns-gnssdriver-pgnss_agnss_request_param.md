@@ -41,6 +41,7 @@ req.irql:
 This structure defines AGNSS request parameters.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field RequestType
 
 Specifies the type of the request (for example, time injection, blob injection).
 
+
 ### -field BlobFormat
 
 If the RequestType is GNSS_AGNSS_BlobInjection, this contains the required  blob format.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ If the RequestType is GNSS_AGNSS_BlobInjection, this contains the required  blob
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

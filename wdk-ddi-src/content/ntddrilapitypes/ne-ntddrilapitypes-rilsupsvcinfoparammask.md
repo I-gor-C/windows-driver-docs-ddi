@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcinfoparammask.htm
 old-project: netvista
 ms.assetid: d3a4780f-6fd4-40d3-a629-5dad31720506
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSUPSVCINFOPARAMMASK, RILSUPSVCINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -127,6 +128,7 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

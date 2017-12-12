@@ -7,8 +7,8 @@ old-location: netvista\_dot11_wfd_device_capability_config.htm
 old-project: netvista
 ms.assetid: 918307D4-0952-4FF0-8591-522C7E92194A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_WFD_DEVICE_CAPABILITY_CONFIG, *PDOT11_WFD_DEVICE_CAPABILITY_CONFIG, DOT11_WFD_DEVICE_CAPABILITY_CONFIG
+ms.date: 12/8/2017
+ms.keywords: _DOT11_WFD_DEVICE_CAPABILITY_CONFIG, DOT11_WFD_DEVICE_CAPABILITY_CONFIG, *PDOT11_WFD_DEVICE_CAPABILITY_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -61,6 +61,7 @@ typedef struct _DOT11_WFD_DEVICE_CAPABILITY_CONFIG {
 ### -field Header
 
 Specifies the type, revision and size of the <b>DOT11_WFD_DEVICE_CAPABILITY_CONFIG</b> structure. The required settings for the members of <b>Header</b> are the following:
+
 <table>
 <tr>
 <th>Member</th>
@@ -81,36 +82,47 @@ Specifies the type, revision and size of the <b>DOT11_WFD_DEVICE_CAPABILITY_CONF
 </table>
  
 
+
 ### -field bServiceDiscoveryEnabled
 
 When set to TRUE, the miniport must enable Service Discovery support. The miniport must also set the Service Discovery bit in the P2P Device Capability Bitmap. If <b>bServiceDiscoveryEnabled</b> is FALSE, Service Discovery support must be disabled and the miniport must ignore all Service Discovery packets it receives.
+
  The system will set this to TRUE only if the miniport also sets TRUE for the <b>bServiceDiscoverySupported</b> member of <a href="netvista.dot11_wfd_attributes">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE.
+
 
 ### -field bClientDiscoverabilityEnabled
 
 When set to TRUE, the miniport must enable Client Discoverability support. The miniport must also set the Client Discoverability bit in the P2P Device Capability Bitmap. If <b>bClientDiscoveryEnabled</b> is FALSE,  Client Discoverability support must be disabled and the miniport must ignore all Client Discovery packets it receives.
+
 The system will set this to TRUE only if the miniport also sets TRUE for the <b>bClientDiscoverabilitySupported</b> member of <a href="netvista.dot11_wfd_attributes">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE.
+
 
 ### -field bConcurrentOperationSupported
 
 When set to TRUE, the miniport must set the Concurrent Operation bit in the P2P Device Capability Bitmask. Otherwise, the Concurrent Operation bit must be cleared. The default value for this member is TRUE.
 
+
 ### -field bInfrastructureManagementEnabled
 
 When set to TRUE, the miniport must enable P2P Managed Device support. The miniport must also set the P2P Infrastructure Managed bit in the P2P Device Capability Bitmap. Otherwise, the P2P Managed Device support must be disabled.
+
 The system will set this member to TRUE only if the miniport also sets TRUE for the  <b>bInfrastructureManagementSupported</b> member of <a href="netvista.dot11_wfd_attributes">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE
+
 
 ### -field bDeviceLimitReached
 
 When set to TRUE, the miniport must set the Device Limit bit of the P2P Device Capability Bitmask. Otherwise, this bit must be cleared. The default value for this member is FALSE.
 
+
 ### -field bInvitationProcedureEnabled
 
 When set to TRUE, the miniport must set the P2P Invitation Procedure bit of the P2P Device Capability Bitmask. Otherwise, this bit must be cleared and the miniport must ignore all Invitation request/response packets it receives. The default value for this member is TRUE.
 
+
 ### -field WPSVersionsEnabled
 
 The versions of WPS enabled for the Wi-Fi Direct Device
+
 
 ## -remarks
 
@@ -120,14 +132,17 @@ The versions of WPS enabled for the Wi-Fi Direct Device
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

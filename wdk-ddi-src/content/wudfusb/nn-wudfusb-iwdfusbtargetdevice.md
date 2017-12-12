@@ -7,8 +7,8 @@ old-location: wdf\iwdfusbtargetdevice.htm
 old-project: wdf
 ms.assetid: 627a4633-6857-43a5-af2d-36e4e554ca83
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+ms.date: 12/7/2017
+ms.keywords: _WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -41,9 +41,13 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-The <b>IWDFUsbTargetDevice</b> interface exposes a USB device I/O target object.
 
 The <b>IWDFUsbTargetDevice</b> interface exposes a USB device I/O target object.
+
+
+
+The <b>IWDFUsbTargetDevice</b> interface exposes a USB device I/O target object.
+
 
 
 ## -inheritance
@@ -69,6 +73,7 @@ The <a href="wdf.iwdfusbtargetdevice_setpowerpolicy">SetPowerPolicy</a> method s
 
  
 
+
 ## -members
 The <b>IWDFUsbTargetDevice</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -82,6 +87,7 @@ The <b>IWDFUsbTargetDevice</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer">FormatRequestForControlTransfer</a> method formats an I/O request object for a USB control transfer.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -90,6 +96,7 @@ The <a href="wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer">FormatRequ
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_getnuminterfaces">GetNumInterfaces</a> method retrieves the number of USB interfaces for the USB device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -98,6 +105,7 @@ The <a href="wdf.iwdfusbtargetdevice_getnuminterfaces">GetNumInterfaces</a> meth
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_getwinusbhandle">GetWinUsbHandle</a> method retrieves the WinUsb interface handle that is associated with a I/O target device object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -106,6 +114,7 @@ The <a href="wdf.iwdfusbtargetdevice_getwinusbhandle">GetWinUsbHandle</a> method
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_retrievedescriptor">RetrieveDescriptor</a> method retrieves a USB descriptor, which can describe a device, configuration, or string.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -114,6 +123,7 @@ The <a href="wdf.iwdfusbtargetdevice_retrievedescriptor">RetrieveDescriptor</a> 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_retrievedeviceinformation">RetrieveDeviceInformation</a> method retrieves device information of the specified type.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -122,6 +132,7 @@ The <a href="wdf.iwdfusbtargetdevice_retrievedeviceinformation">RetrieveDeviceIn
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_retrievepowerpolicy">RetrievePowerPolicy</a> method retrieves a WinUsb power policy.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -130,6 +141,7 @@ The <a href="wdf.iwdfusbtargetdevice_retrievepowerpolicy">RetrievePowerPolicy</a
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_retrieveusbinterface">RetrieveUsbInterface</a> method retrieves the specified USB interface for a USB device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -138,6 +150,7 @@ The <a href="wdf.iwdfusbtargetdevice_retrieveusbinterface">RetrieveUsbInterface<
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetdevice_setpowerpolicy">SetPowerPolicy</a> method sets the WinUsb power policy.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer">FormatRequestForControlTransfer</a> method formats an I/O request object for a USB control transfer.
@@ -158,6 +171,7 @@ The <a href="wdf.iwdfusbtargetdevice_setpowerpolicy">SetPowerPolicy</a> method s
 
  
 
+
 ## -remarks
 
 
@@ -166,6 +180,7 @@ The <a href="wdf.iwdfusbtargetdevice_setpowerpolicy">SetPowerPolicy</a> method s
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -176,22 +191,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -202,6 +222,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

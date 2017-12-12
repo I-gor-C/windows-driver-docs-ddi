@@ -41,6 +41,7 @@ req.irql:
 The <b>FILE_PIPE_LOCAL_INFORMATION</b> structure contains information about the local end of a named pipe.
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 ### -field NamedPipeType
 
 One of the following named pipe types. 
+
 <table>
 <tr>
 <th>Value </th>
@@ -80,9 +82,11 @@ One of the following named pipe types.
 </table>
  
 
+
 ### -field NamedPipeConfiguration
 
 One of the following named pipe configurations.
+
 
 <table>
 <tr>
@@ -110,10 +114,12 @@ One of the following named pipe configurations.
 </table>
  
 
+
 ### -field MaximumInstances
 
 
 The maximum number of instances that can be created for this pipe. The first instance of the pipe must specify this value.
+
 
 
 ### -field CurrentInstances
@@ -122,10 +128,12 @@ The maximum number of instances that can be created for this pipe. The first ins
 The number of current named pipe instances.
 
 
+
 ### -field InboundQuota
 
  
 The inbound quota, in bytes, for the named pipe.
+
 
 
 ### -field ReadDataAvailable
@@ -133,10 +141,12 @@ The inbound quota, in bytes, for the named pipe.
 
 The amount of data available, in bytes, to be read from the named pipe.
 
+
 ### -field OutboundQuota
 
 
 The outbound quota, in bytes, for the named pipe.
+
 
 
 ### -field WriteQuotaAvailable
@@ -145,9 +155,11 @@ The outbound quota, in bytes, for the named pipe.
 
 The write quota, in bytes, for the named pipe.
 
+
 ### -field NamedPipeState
 
 The connection status for the named pipe. This state has one of the following values.
+
 <table>
 <tr>
 <th>Value </th>
@@ -177,9 +189,11 @@ The connection status for the named pipe. This state has one of the following va
 </table>
  
 
+
 ### -field NamedPipeEnd
 
 The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
+
 <table>
 <tr>
 <th>Value </th>
@@ -198,22 +212,27 @@ The type of the named pipe end, which specifies whether this is the client or th
 </table>
  
 
+
 ## -remarks
 For information about pipes, see <a href="base.pipes">Pipes</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

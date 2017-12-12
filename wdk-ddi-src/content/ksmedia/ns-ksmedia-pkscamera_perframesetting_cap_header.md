@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 7478E83E-0657-4547-993A-84AECBB2562D
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSCAMERA_PERFRAMESETTING_CAP_HEADER, *PKSCAMERA_PERFRAMESETTING_CAP_HEADER, KSCAMERA_PERFRAMESETTING_CAP_HEADER
+ms.keywords: PKSCAMERA_PERFRAMESETTING_CAP_HEADER, KSCAMERA_PERFRAMESETTING_CAP_HEADER, *PKSCAMERA_PERFRAMESETTING_CAP_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains the header information for the per frame settings capabilities.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 The size of the entire capability payload, including this header, all the item headers, and the item payloads that follow.
 
+
 ### -field ItemCount
 
 The number of capability items.
 
+
 ### -field Flags
 
 Not used.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Not used.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

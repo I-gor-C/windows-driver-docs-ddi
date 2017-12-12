@@ -7,7 +7,7 @@ old-location: display\pfnd3dddi_createhwqueuecb.htm
 old-project: display
 ms.assetid: 1BA2E4DD-3E91-4D2E-AA90-9C85D53EE9E3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A callback to create a new hardware queue
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_CREATEHWQUEUECB(
 
 A handle to the device.
 
+
 ### -param createHwQueue [in, out]
 
 A pointer to the structure holding information on creating the hardware queue.
+
 
 ## -returns
 <dl>
@@ -70,6 +73,7 @@ A pointer to the structure holding information on creating the hardware queue.
 
 This function might also return other HRESULT values.
 
+
 ## -remarks
 
 
@@ -78,6 +82,7 @@ This function might also return other HRESULT values.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

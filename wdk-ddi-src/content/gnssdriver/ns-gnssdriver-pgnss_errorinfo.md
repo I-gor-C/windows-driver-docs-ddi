@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 754CD1DD-88E6-4E02-8E24-1939222FE326
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_ERRORINFO, *PGNSS_ERRORINFO, GNSS_ERRORINFO
+ms.keywords: PGNSS_ERRORINFO, GNSS_ERRORINFO, *PGNSS_ERRORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains error information.
 
 
+
 ## -syntax
 
 ````
@@ -61,27 +62,34 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field ErrorCode
 
 Win32 Error Code associated with the event.
+
 The IHV can pick the error that is most similar to what needs to be reported (for example, E_OUTOFMEMORY). The IHV can also use FACILITY_ITF to create custom errors. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=525284">Codes in FACILITY_ITF</a>.
+
 
 
 ### -field IsRecoverable
 
 If FALSE, the GNSS adapter needs to reset it’s state with the GNSS driver.
 
+
 ### -field ErrorDescription[256]
 
 Clear-text description of the error (not-localized) that is used for diagnostic purpose only.
 
+
 ### -field Unused[512]
 
 Padding buffer.
+
 
 ## -remarks
 
@@ -91,6 +99,7 @@ Padding buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

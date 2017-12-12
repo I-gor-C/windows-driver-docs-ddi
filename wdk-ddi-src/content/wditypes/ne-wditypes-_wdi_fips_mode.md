@@ -7,7 +7,7 @@ old-location: netvista\wdi_fips_mode.htm
 old-project: netvista
 ms.assetid: 88EE4C63-C9D8-41D2-800E-9FFD5EF4962A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_FIPS_MODE, WDI_FIPS_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   WDI_FIPS_MODE enumeration defines values that specify if FIPS mode is enabled or not.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef enum _WDI_FIPS_MODE {
 
 FIPS mode is disabled.
 
+
 ### -field WDI_FIPS_MODE_ENABLED
 
 FIPS mode is enabled.
 
+
 ### -field WDI_FIPS_MODE_UNKNOWN
 
 Unknown.
+
 
 ## -remarks
 
@@ -76,22 +80,27 @@ Unknown.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

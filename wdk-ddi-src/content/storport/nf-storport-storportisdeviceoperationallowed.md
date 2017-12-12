@@ -7,7 +7,7 @@ old-location: storage\storportisdeviceoperationallowed.htm
 old-project: storage
 ms.assetid: 2FA71DC1-8068-42E3-A5C0-903858E496FA
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortIsDeviceOperationAllowed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A miniport driver can call the <b>StorPortIsDeviceOperationAllowedminiport</b> routine to determine if operations for a certain device management      class are allowed. A status value is set in the return parameter to indicate whether such operations are allowed or not allowed for the device in its current operating environment.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ ULONG StorPortIsDeviceOperationAllowed(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param Address [in]
 
 The address of a storage device unit.
 
+
 ### -param DeviceOperation [in]
 
 A pointer to a GUID specifying a device management operation class. The following GUID is valid.
+
 <table>
 <tr>
 <th>Value</th>
@@ -79,14 +83,17 @@ A pointer to a GUID specifying a device management operation class. The followin
 </td>
 <td width="60%">
 The device is enabled to receive secured provisioning commands.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param AllowedFlag [out]
 
  TRUE when the operation specified in <i>DeviceOperation</i> is allowed. Otherwise, FALSE.
+
 
 ## -returns
 The <b>StorPortIsDeviceOperationAllowed</b> routine returns one of these status codes:
@@ -113,6 +120,7 @@ The pointer value in <i>AllowedFlag</i> is NULL.
 
  
 
+
 ## -remarks
 
 
@@ -121,6 +129,7 @@ The pointer value in <i>AllowedFlag</i> is NULL.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -131,14 +140,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,9 +161,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 IRQL == PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

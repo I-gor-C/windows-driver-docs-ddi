@@ -7,7 +7,7 @@ old-location: kernel\wmiquerytraceinformation.htm
 old-project: kernel
 ms.assetid: 8a6a930a-4267-47be-be00-ab9c102560c4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: WmiQueryTraceInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WmiQueryTraceInformation</b> routine returns information about a <a href="https://msdn.microsoft.com/72505a9a-830a-4529-ba73-31af0fedfeec">WMI event trace</a>.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS WmiQueryTraceInformation(
 
 Specifies a <a href="kernel.trace_information_class">TRACE_INFORMATION_CLASS</a> enumerator that indicates the type of information to return about an event trace.
 
+
 ### -param TraceInformation [out]
 
 A pointer to a caller-allocated output buffer where the routine returns the event trace information specified by <i>TraceInformationClass</i>.
+
 
 ### -param TraceInformationLength [in]
 
 Specifies the size, in bytes, of the <i>TraceInformation</i> buffer.
 
+
 ### -param RequiredLength [out, optional]
 
 A pointer to the value returned by the routine that specifies the required size, in bytes, of the <i>TraceInformation</i> buffer. The caller should set <i>RequiredLength</i> to <b>NULL</b> if it does not use the required length information.
 
+
 ### -param Buffer [in, optional]
 
 A pointer to the query-specific input information that a caller supplies. If caller-supplied information is not required, the caller should set <i>Buffer</i> to <b>NULL</b>. 
+
 
 ## -returns
 <dl>
@@ -104,6 +110,7 @@ A pointer to the query-specific input information that a caller supplies. If cal
 </dl>A global logger was not found.
 
  
+
 
 ## -remarks
 For each type of event trace information specified by <i>TraceInformationClass</i>, the following table provides:
@@ -176,11 +183,13 @@ If the caller supplies a non-<b>NULL</b> <i>RequiredLength</i> pointer, <b>WmiQu
 
 <b>WmiQueryTraceInformation</b> runs at the IRQL of the caller.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -191,14 +200,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -209,6 +221,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -219,6 +232,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -229,9 +243,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 </table>
@@ -255,5 +271,8 @@ See Remarks section.
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiQueryTraceInformation routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiQueryTraceInformation routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_counter_info.htm
 old-project: display
 ms.assetid: FB2B8FBF-908D-4668-8C5B-263903BA1EF5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DDDIARG_COUNTER_INFO, D3DDDIARG_COUNTER_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes info to manipulate counters.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct D3DDDIARG_COUNTER_INFO {
 
 A value of type <a href="display.d3dddiarg_createquery">D3DDDIQUERYTYPE</a> that identifies the largest device-dependent counter identifier that the device supports. If none are supported, the user-mode display driver must set the value to 0; otherwise, the driver sets the value to greater than or equal to  <b>D3DDDIQUERYTYPE_COUNTER_DEVICE_DEPENDENT</b>.
 
+
 ### -field NumSimultaneousCounters
 
 The number of simultaneously active counters that the driver supports.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The number of simultaneously active counters that the driver supports.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

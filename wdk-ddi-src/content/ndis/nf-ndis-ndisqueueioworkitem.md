@@ -7,7 +7,7 @@ old-location: netvista\ndisqueueioworkitem.htm
 old-project: netvista
 ms.assetid: f5065217-a74e-41b6-bc23-59b39948a450
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisQueueIoWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ NDIS drivers call the
   <b>NdisQueueIoWorkItem</b> function to queue a work item.
 
 
+
 ## -syntax
 
 ````
@@ -61,14 +62,18 @@ A handle to a private <a href="https://msdn.microsoft.com/library/windows/hardwa
      <a href="netvista.ndisallocateioworkitem">
      NdisAllocateIoWorkItem</a> function.
 
+
 ### -param Routine [in]
 
 The entry point to the function that NDIS calls to process the work item. NDIS calls this routine
      in the context of a system thread. 
+
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>NDIS_IO_WORKITEM_FUNCTION</b> type (not <b>NDIS_IO_WORKITEM_ROUTINE</b>). For more
    information, see the following Examples section.</div>
 <div> </div>
 The routine includes the following input parameters:
+
+
 
 
 ### -param WorkItemContext
@@ -77,11 +82,13 @@ A pointer to the context area that the driver passed to the
        <i>WorkItemContext</i> parameter of 
        <b>NdisQueueIoWorkItem</b>.
 
+
 ### -param NdisIoWorkItemHandle
 
 A handle to a private <b>NDIS_IO_WORKITEM</b> structure that was returned by a previous call to the 
        <a href="netvista.ndisallocateioworkitem">
      NdisAllocateIoWorkItem</a> function.
+
 </dd>
 </dl>
 
@@ -91,8 +98,10 @@ A pointer to a caller-supplied context area that NDIS passes through to the call
      <i>WorkItemContext</i> can be any caller-specified data that the driver requires to manage the work
      item.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>NdisQueueIoWorkItem</b> calls 
@@ -117,11 +126,13 @@ The <b>NDIS_IO_WORKITEM_FUNCTION</b> function type is defined in the Ndis.h head
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -132,14 +143,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,6 +164,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -160,14 +175,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -194,5 +212,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueueIoWorkItem function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueueIoWorkItem function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

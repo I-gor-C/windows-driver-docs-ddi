@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary in order for the Bus driver to carry out an <b>IsochFreeBandwidth</b> request.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _IRB_REQ_ISOCH_FREE_BANDWIDTH {
 
 Specifies the bandwidth handle to release. 
 
+
 ## -remarks
 If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous bandwidth is returned to the pool of available bandwidth.
 
@@ -63,11 +65,13 @@ A status of STATUS_INVALID_GENERATION also indicates success.
 
 Do not resend the REQUEST_ISOCH_FREE_BANDWIDTH request in order to release isochronous bandwidth if the request failed with the STATUS_INVALID_GENERATION error code. In that case, it is safe to assume that isochronous bandwidth was released as a result of 1394 bus generation changes.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

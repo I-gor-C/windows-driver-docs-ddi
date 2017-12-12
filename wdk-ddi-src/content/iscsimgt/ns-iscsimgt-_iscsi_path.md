@@ -7,8 +7,8 @@ old-location: storage\iscsi_path.htm
 old-project: storage
 ms.assetid: eebc3e2e-41fe-4087-8916-7c8a71929913
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _ISCSI_Path, *PISCSI_Path, ISCSI_Path
+ms.date: 12/8/2017
+ms.keywords: _ISCSI_Path, ISCSI_Path, *PISCSI_Path
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The ISCSI_Path structure contains information about a connection of the iSCSI portal.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _ISCSI_Path {
 
 This is a unique connection identifier that the initiator uses to identify a connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter.  This value is not to be confused with the connection ID (CID).
 
+
 ### -field EstimatedLinkSpeed
 
 This specifies the connection speed in megabits per second (Mbps).
+
 
 ### -field PathWeight
 
 This specifies the weight assigned to this path. The value can be any 32-bit number, with a higher number that signifies a higher priority. If more than one path is available, this path weight value is compared against each other path weight and will be prioritized accordingly. For example, if a value of 1 is used for path1 and a value of 2 for path2, path2 has higher priority.
 
+
 ### -field PrimaryPath
 
 This specifies the state of the path: primary or secondary. If the value is 1, it means the path is the primary path, and if it is 0, it is a secondary path.
 
+
 ### -field ConnectionStatus
 
 This indicates the status of the connection.
+
 <table>
 <tr>
 <th>Type</th>
@@ -84,42 +90,52 @@ This indicates the status of the connection.
 <tr>
 <td>
 CONNECTION_STATE_CONNECTED (1)
+
 </td>
 <td>
 The path is connected and active.
+
 </td>
 </tr>
 <tr>
 <td>
 CONNECTION_STATE_DISCONNECTED (2)
+
 </td>
 <td>
 The path is disconnected.
+
 </td>
 </tr>
 <tr>
 <td>
 CONNECTION_STATE_RECONNECTING(3)
+
 </td>
 <td>
 The path is reconnecting.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field TCPOffLoadAvailable
 
 This indicates whether the connection supports TCP offload or not.
 
+
 ## -remarks
 The iSCSI headers and MOF are included in the platform SDK and WDK.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +155,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_Path structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_Path structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

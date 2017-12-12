@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltSetVolumeInformation</b> changes various kinds of information about the volume that the given instance is attached to. 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS FltSetVolumeInformation(
 
 Opaque instance pointer for a minifilter driver instance that is attached to the volume. 
 
+
 ### -param Iosb [out]
 
 Pointer to an IO_STATUS_BLOCK structure that receives the final completion status and information about the operation. 
+
 
 ### -param FsInformation [out]
 
 Pointer to a caller-allocated buffer containing the values to be set for the volume. The structure of the information contained in the buffer is defined by the <i>FsInformationClass</i> parameter. 
 
+
 ### -param Length [in]
 
 Size in bytes of the buffer that <i>FsInformation </i>points to. The caller should set this parameter according to the given <i>FsInformationClass</i>. For example, if the value of <i>FsInformationClass</i> is FileFsControlInformation, <i>Length</i> must be at least <b>sizeof(</b>FILE_FS_CONTROL_INFORMATION<b>)</b>. 
 
+
 ### -param FsInformationClass [in]
 
 Type of information to be set for the volume. One of the following. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -83,29 +89,36 @@ Type of information to be set for the volume. One of the following.
 <tr>
 <td>
 <b>FileFsControlInformation</b>
+
 </td>
 <td>
 Set <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION</a> for the volume. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileFsLabelInformation</b>
+
 </td>
 <td>
 Set <a href="ifsk.file_fs_label_information">FILE_FS_LABEL_INFORMATION</a> for the volume. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileFsObjectIdInformation</b>
+
 </td>
 <td>
 Set <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATION</a> for the volume. 
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 <b>FltSetVolumeInformation</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -124,14 +137,17 @@ Set <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATION</a>
 
  
 
+
 ## -remarks
 To query information about a volume, call <a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a>. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +158,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,6 +169,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +180,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -172,9 +191,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -195,5 +216,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetVolumeInformation function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 9d58acda-07b6-4dc2-8f6a-83c6e8bd8e44
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSPROPERTY_TUNER_CAPS_S, KSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S
+ms.keywords: PKSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S, KSPROPERTY_TUNER_CAPS_S
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices.
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ typedef struct {
 
 Specifies an initialized <a href="stream.ksproperty">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
+
 ### -field ModesSupported
 
 Specifies a bitwise OR of the supported tuner modes. This member may be set to one or more of the following values from the KSPROPERTY_TUNER_MODES enumeration that is defined in <i>ksmedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -71,57 +74,71 @@ Specifies a bitwise OR of the supported tuner modes. This member may be set to o
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_TV
+
 </td>
 <td>
 Indicates that the tuner is capable of tuning analog broadcast or cable television channels.
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_FM_RADIO
+
 </td>
 <td>
 Indicates that the tuner is capable of tuning FM radio channels.
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_AM_RADIO
+
 </td>
 <td>
 Indicates that the tuner is capable of tuning AM radio channels.
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_DSS
+
 </td>
 <td>
 Indicates that the tuner is capable of tuning DSS channels.
+
 </td>
 </tr>
 <tr>
 <td>
 KSPROPERTY_TUNER_MODE_ATSC
+
 </td>
 <td>
 Indicates that the tuner is capable of tuning digital television channels. This setting can be used for ATSC, DVB-C, or DVB-T television reception.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field VideoMedium
 
 Specifies a unique GUID representing the hardware connection of the analog video signal. This value enforces connections between filters. Possible values are <b>NULL</b>, indicating that no pin is created; GUID_NULL, indicating that Medium is not used to enforce connections; or a GUID. If a GUID value is used, only crossbar pins with a matching Medium GUID are allowed to connect. 
+
 
 ### -field TVAudioMedium
 
 Specifies a unique GUID representing the hardware connection of the TV audio signal. This value enforces connections between filters. Possible values are <b>NULL</b>, indicating that no pin is created; GUID_NULL, indicating that Medium is not used to enforce connections; or a GUID. If a GUID value is used, only crossbar pins with a matching Medium GUID are allowed to connect. 
 
+
 ### -field RadioAudioMedium
 
 Specifies a unique GUID representing the hardware connection of the analog radio audio signal. This value enforces connections between filters. Possible values are <b>NULL</b>, indicating that no pin is created; GUID_NULL, indicating that Medium is not used to enforce connections; or a GUID. If a GUID value is used, only crossbar pins with a matching Medium GUID are allowed to connect. 
+
 
 ## -remarks
 
@@ -131,6 +148,7 @@ Specifies a unique GUID representing the hardware connection of the analog radio
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,5 +174,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_TUNER_CAPS_S structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

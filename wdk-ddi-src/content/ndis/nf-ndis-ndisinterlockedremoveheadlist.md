@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisInterlockedRemoveHeadList
-title: NdisInterlockedRemoveHeadList
+title: NdisInterlockedRemoveHeadList macro
 author: windows-driver-content
 description: The NdisInterlockedRemoveHeadList function removes an entry, usually a packet, from the head of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
 old-location: netvista\ndisinterlockedremoveheadlist.htm
 old-project: netvista
 ms.assetid: 85cbc158-7132-4666-8161-a78251a62e4d
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisInterlockedRemoveHeadList
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -31,85 +31,79 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level
-req.iface: 
 ---
 
-# NdisInterlockedRemoveHeadList function
+# NdisInterlockedRemoveHeadList macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisInterlockedRemoveHeadList</b> function removes an entry, usually a packet, from the head of a doubly
-  linked list so that access to the list is synchronized in a multiprocessor-safe way.</p>
+  linked list so that access to the list is synchronized in a multiprocessor-safe way.
+
 
 
 ## -syntax
 
 ````
 PLIST_ENTRY NdisInterlockedRemoveHeadList(
-  _In_ PLIST_ENTRY     ListHead,
-  _In_ PNDIS_SPIN_LOCK SpinLock
+  [in] PLIST_ENTRY     ListHead,
+  [in] PNDIS_SPIN_LOCK SpinLock
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param ListHead [in]
 
-<dd>
-<p>A pointer to the head of the doubly linked list from which an entry is to be removed.</p>
-</dd>
+A pointer to the head of the doubly linked list from which an entry is to be removed.
+
 
 ### -param SpinLock [in]
 
-<dd>
-<p>A pointer to a caller-supplied spin lock, used to synchronize access to the list.</p>
-</dd>
-</dl>
+A pointer to a caller-supplied spin lock, used to synchronize access to the list.
 
-## -returns
-<p><b>NdisInterlockedRemoveHeadList</b> returns a pointer to the dequeued entry. If the list was empty, it
-     returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>Before calling any 
+Before calling any 
     <b>NdisInterlocked..List</b> function, a driver must initialize the variable at 
     <i>ListHead</i> with the 
-    <a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a> function and
+    <a href="netvista.ndisinitializelisthead">NdisInitializeListHead</a> function and
     the variable at 
     <i>SpinLock</i> with the 
-    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> function. The
-    driver also must provide resident storage for these variables and for its internal queue.</p>
+    <a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a> function. The
+    driver also must provide resident storage for these variables and for its internal queue.
 
-<p>Before calling 
+Before calling 
     <b>NdisInterlockedRemoveHeadList</b>, entries are queued with one or more calls to the 
-    <b>NdisInterlockedInsert..List</b> functions.</p>
+    <b>NdisInterlockedInsert..List</b> functions.
 
-<p>The caller-supplied spin lock prevents any other function from accessing the driver's internal queue
+The caller-supplied spin lock prevents any other function from accessing the driver's internal queue
     while 
     <b>NdisInterlockedRemoveHeadList</b> is removing an entry, even when the driver is running on a
-    multiprocessor computer.</p>
+    multiprocessor computer.
 
-<p><b>NdisInterlockedRemoveHeadList</b> raises the IRQL to DISPATCH_LEVEL when it acquires the given spin
+<b>NdisInterlockedRemoveHeadList</b> raises the IRQL to DISPATCH_LEVEL when it acquires the given spin
     lock and restores the original IRQL before it returns control. Consequently, any driver function that
     calls 
-    <b>NdisInterlockedRemoveHeadList</b> cannot be pageable code.</p>
+    <b>NdisInterlockedRemoveHeadList</b> cannot be pageable code.
 
-<p>To convert a returned value back to the address of the inserted entry, a driver can use the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a> macro.</p>
+To convert a returned value back to the address of the inserted entry, a driver can use the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a> macro.
 
-<p>If 
+If 
     <b>NdisInterlockedRemoveHeadList</b> is called at IRQL &gt;= DISPATCH_LEVEL, the storage for the 
-    <i>ListHead</i> parameter must be resident.</p>
+    <i>ListHead</i> parameter must be resident.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,19 +113,22 @@ PLIST_ENTRY NdisInterlockedRemoveHeadList(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/c43225c8-b3cd-4b7e-a3ce-0c01638e210c">
    NdisInterlockedRemoveHeadList (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>
-   NdisInterlockedRemoveHeadList (NDIS 5.1)</b>) in Windows XP.</p>
+   NdisInterlockedRemoveHeadList (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,7 +138,8 @@ PLIST_ENTRY NdisInterlockedRemoveHeadList(
 </tr>
 <tr>
 <th width="30%">
-<p>Library</p>
+Library
+
 </th>
 <td width="70%">
 <dl>
@@ -151,10 +149,12 @@ PLIST_ENTRY NdisInterlockedRemoveHeadList(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>Any level</p>
+Any level
+
 </td>
 </tr>
 </table>
@@ -165,20 +165,23 @@ PLIST_ENTRY NdisInterlockedRemoveHeadList(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a>
+<a href="netvista.ndisinitializelisthead">NdisInitializeListHead</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinterlockedinsertheadlist.md">
+<a href="netvista.ndisinterlockedinsertheadlist">
    NdisInterlockedInsertHeadList</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinterlockedinserttaillist.md">
+<a href="netvista.ndisinterlockedinserttaillist">
    NdisInterlockedInsertTailList</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedRemoveHeadList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedRemoveHeadList macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

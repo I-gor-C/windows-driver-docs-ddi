@@ -7,7 +7,7 @@ old-location: storage\storportgetlogicalprocessorrelationship.htm
 old-project: storage
 ms.assetid: 32b92771-7f23-492c-a3b0-b10032c9f80a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortGetLogicalProcessorRelationship
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortGetLogicalProcessorRelationship</b> routine returns relationship information for one or more specified types. These types include groups, physical packages, and nodes in the host system. The information that is returned includes processor affinity masks that are composed of the logical processors in the host system. These logical processors share the specified relationship types.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ ULONG StorPortGetLogicalProcessorRelationship(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param ProcessorNumber [in, optional]
 
 An optional pointer to a processor number for which relationships are to be returned. If this parameter is not provided, information about all processors is returned.
+
 
 ### -param RelationshipType [in]
 
 The type of relationship to be returned.
 
+
 ### -param Information [out]
 
 A pointer to a buffer that receives the specified information.
 
+
 ### -param Length [in, out]
 
 A pointer to the length of the information buffer, in bytes. Upon return, this value receives the number of bytes that are populated with relationship information.
+
 
 ## -returns
 The <b>StorPortGetLogicalProcessorRelationship</b>routine returns one of the following status codes:
@@ -94,6 +100,7 @@ The <b>StorPortGetLogicalProcessorRelationship</b>routine returns one of the fol
 
  
 
+
 ## -remarks
 
 
@@ -102,6 +109,7 @@ The <b>StorPortGetLogicalProcessorRelationship</b>routine returns one of the fol
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,14 +120,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,14 +141,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportirql">StorPortIrql</a>

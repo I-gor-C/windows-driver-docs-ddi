@@ -7,8 +7,8 @@ old-location: wdf\iusbtargetpipecontinuousreadercallbackreadersfailed.htm
 old-project: wdf
 ms.assetid: d0b68976-f7aa-4b0d-b6bb-258ad2c2e506
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+ms.date: 12/7/2017
+ms.keywords: _WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -41,9 +41,13 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-<b>IUsbTargetPipeContinuousReaderCallbackReadersFailed</b> is a driver-supplied interface.
 
 <b>IUsbTargetPipeContinuousReaderCallbackReadersFailed</b> is a driver-supplied interface.
+
+
+
+<b>IUsbTargetPipeContinuousReaderCallbackReadersFailed</b> is a driver-supplied interface.
+
 
 
 ## -inheritance
@@ -54,6 +58,7 @@ The <b>IUsbTargetPipeContinuousReaderCallbackReadersFailed</b> interface has the
 A driver's <a href="wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure">OnReaderFailure</a> event callback function informs the driver that a continuous reader has reported an error while processing a read request.
 
  
+
 
 ## -members
 The <b>IUsbTargetPipeContinuousReaderCallbackReadersFailed</b> interface has these methods.
@@ -68,11 +73,13 @@ The <b>IUsbTargetPipeContinuousReaderCallbackReadersFailed</b> interface has the
 </td>
 <td align="left" width="63%">
 A driver's <a href="wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure">OnReaderFailure</a> event callback function informs the driver that a continuous reader has reported an error while processing a read request.
+
 </td>
 </tr>
 </table>A driver's <a href="wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure">OnReaderFailure</a> event callback function informs the driver that a continuous reader has reported an error while processing a read request.
 
  
+
 
 ## -remarks
 
@@ -82,6 +89,7 @@ A driver's <a href="wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onre
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

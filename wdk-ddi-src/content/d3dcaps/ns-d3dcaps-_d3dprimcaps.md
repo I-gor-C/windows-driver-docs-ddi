@@ -7,7 +7,7 @@ old-location: display\d3dprimcaps.htm
 old-project: display
 ms.assetid: fa725534-ccc3-4e71-a83f-b25fd4c72c14
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DPrimCaps, D3DPRIMCAPS, *LPD3DPRIMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,9 @@ req.irql:
 
    Obsolete in DirectX 8.0 and later versions; see Remarks.
    
+
 The D3DPRIMCAPS structure defines the capabilities for each primitive type.
+
 
 
 ## -syntax
@@ -72,10 +74,12 @@ typedef struct _D3DPrimCaps {
 
 Specifies the size, in bytes, of the D3DPRIMCAPS structure. 
 
+
 ### -field dwMiscCaps
 
 Specifies the general capabilities for this primitive. This member can be one or more of the following:    
   
+
 
 <table>
 <tr>
@@ -107,12 +111,15 @@ Specifies the general capabilities for this primitive. This member can be one or
 The driver can handle values other than 1 in the <b>wRepeatFactor</b> member of the D3DLINEPATTERN structure. (This applies only to line-drawing primitives.)
 
 
+
 Applications can set the line-pattern-repetition number to a maximum value of 65535 (16-bit value). However, hardware only supports a maximum of 255 (8-bit value). Therefore, a display driver must fail a request that attempts to set this number to a value greater than 255 as an invalid request. For more information, see <a href="https://msdn.microsoft.com/090b823a-59d0-40e1-8feb-0b03b7f08fee">Setting the Number of Line Pattern Repetitions</a>.
+
 
 
 D3DPMISCCAPS_LINEPATTERNREP and D3DPRASTERCAPS_PAT must be set consistently (both on or both off).
 
  
+
 
 </td>
 </tr>
@@ -127,9 +134,11 @@ D3DPMISCCAPS_LINEPATTERNREP and D3DPRASTERCAPS_PAT must be set consistently (bot
 </table>
  
 
+
 ### -field dwRasterCaps
 
 Contains information about raster-drawing capabilities. This member can be one or more of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -173,7 +182,9 @@ Contains information about raster-drawing capabilities. This member can be one o
 The driver can perform patterned drawing (lines or fills with D3DRENDERSTATE_LINEPATTERN or one of the D3DRENDERSTATE_STIPPLEPATTERN render states) for the primitive being queried.
 
 
+
 D3DPRASTERCAPS_PAT and D3DPMISCCAPS_LINEPATTERNREP must be set consistently (both on or both off).
+
 </td>
 </tr>
 <tr>
@@ -227,12 +238,14 @@ D3DPRASTERCAPS_PAT and D3DPMISCCAPS_LINEPATTERNREP must be set consistently (bot
 </table>
  
 
+
 ### -field dwZCmpCaps
 
 Specifies Z-buffer comparison functions that the driver can perform through the D3DRENDERSTATE_ZFUNC render state. This member can be one or more of the following:  
   
  
  
+
 
 <table>
 <tr>
@@ -278,10 +291,12 @@ Specifies Z-buffer comparison functions that the driver can perform through the 
 </table>
  
 
+
 ### -field dwSrcBlendCaps
 
 Specifies source blending capabilities supported by the driver through the D3DRENDERSTATE_SRCBLEND render state. This member can be one or more of the following values. (The RGBA values of the source and destination are indicated with the subscripts s and d.)  
   
+
 
 <table>
 <tr>
@@ -350,20 +365,26 @@ Specifies source blending capabilities supported by the driver through the D3DRE
 </table>
  
 
+
 ### -field dwDestBlendCaps
 
 Specifies destination blending capabilities supported by the driver through the D3DRENDERSTATE_DESTBLEND render state. This member can be the same capabilities that are defined for the <b>dwSrcBlendCaps</b> member. 
+
 
 ### -field dwAlphaCmpCaps
 
 Specifies alpha-test comparison functions that the driver can perform. This member uses the same comparison functions as are defined for the <b>dwZCmpCaps</b> member. If the <b>dwAlphaCmpCaps</b> member of the D3DPRIMCAPS structure is 0, the driver does not support alpha test render states D3DRENDERSTATE_ALPHAFUNC, D3DRENDERSTATE_ALPHAREF, and D3DRENDERSTATE_ALPHATESTENABLE. 
 
+
 ### -field dwShadeCaps
 
 Specifies shading operations that the device can perform. It is assumed, in general, that if a device supports a given command (such as D3DOP_TRIANGLE) at all, it supports the D3DSHADE_FLAT mode (as specified in the D3DSHADEMODE enumerated type in the DirectX SDK documentation). This flag specifies whether the driver can also support Gouraud and Phong shading and whether alpha color components are supported for each of the three color-generation modes. When alpha components are not supported in a given mode, the alpha value of colors generated in that mode is implicitly 255. This is the maximum possible alpha (that is, the alpha component is at full intensity).
+
  
 The color, specular highlights, fog, and alpha interpolants of a triangle each have capability flags that an application can use to find out how they are implemented by the device driver. These are modified by the shade mode and color model, and by whether the alpha component of a color is blended or stippled.
+
 This member can be one or more of values listed in the following table. Related flags are grouped together in this table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -422,11 +443,14 @@ D3DPSHADECAPS_SPECULARPHONGRGB</td>
 </tr>
 </table>
  
+
 Most hardware drivers should expose the D3DPSHADECAPS_COLORFLATRGB and D3DPSHADECAPS_COLORGOURAUDRGB capabilities. Hardware that supports intensity (grayscale) lighting (see D3DRENDERSTATE_MONOENABLE for more details) should also expose the D3DPSHADECAPS_COLORFLATMONO and D3DSHADECAPS_COLORGOURAUDMONO capabilities.
+
 
 ### -field dwTextureCaps
 
 Specifies miscellaneous texture-mapping capabilities. This member can be one or more of the following: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -468,6 +492,7 @@ Specifies miscellaneous texture-mapping capabilities. This member can be one or 
 <td>D3DPTEXTURECAPS_NONPOW2CONDITIONAL</td>
 <td>
 Conditionally supports the use of two-dimensional (2D) textures (that is, not volume or cube textures) with dimensions that are not powers of 2. A device that exposes this capability can use such a texture if all of the following requirements are met. 
+
 <ul>
 <li>The texture addressing mode for the texture stage is set to D3DTADDRESS_CLAMP. </li>
 <li>Texture wrapping for the texture stage is disabled (D3DRS_WRAPn set to 0). </li>
@@ -475,7 +500,9 @@ Conditionally supports the use of two-dimensional (2D) textures (that is, not vo
 <li>Texture was not stored in DXT1-5 (compressed texture formats). </li>
 </ul>
 A driver for a device that exposes this capability cannot perform dependent texture reads using such a texture. That is, such a texture cannot be addressed or sampled using texture coordinates that are computed with <a href="display.direct3d_driver_shader_codes">shader code</a>. In other words, such a texture cannot be set at a stage that will be read based on a shader computation such as the bem, beml, or texm3x3 instructions in versions 1.0-1.3 of pixel shaders. For example, these textures can be used to store bump-map data that the driver supplies to texture reads, but not the environment maps that are used in texbem, texbeml, or texm3x3spec.
+
 If this flag is set, the D3DPTEXTURECAPS_POW2 flag must also be set.
+
 </td>
 </tr>
 <tr>
@@ -497,12 +524,14 @@ If this flag is set, the D3DPTEXTURECAPS_POW2 flag must also be set.
 </table>
  
 
+
 ### -field dwTextureFilterCaps
 
 Specifies texture-mapping capabilities. This member can be one or more of the following: 
   
   
  
+
 <table>
 <tr>
 <th>Value</th>
@@ -579,11 +608,13 @@ Specifies that bilinear filtering on the magnify filter is supported.</td>
 </table>
  
 
+
 ### -field dwTextureBlendCaps
 
 Specifies texture-blending capabilities. See the D3DRENDERSTATE_TEXTUREMAPBLEND enumerated type for discussions of the various texture-blending modes. This member can be one or more of the following:   
   
  
+
 <table>
 <tr>
 <th>Value</th>
@@ -627,9 +658,11 @@ Specifies texture-blending capabilities. See the D3DRENDERSTATE_TEXTUREMAPBLEND 
 </table>
  
 
+
 ### -field dwTextureAddressCaps
 
 Specifies the texture-addressing capabilities. This member can be one or more of the following, corresponding to D3DTEXTUREADDRESS texture-addressing modes:
+
 <table>
 <tr>
 <th>Value</th>
@@ -660,6 +693,7 @@ Specifies the texture-addressing capabilities. This member can be one or more of
 </table>
  
 
+
 ### -field dwStippleWidth
 
 
@@ -667,16 +701,19 @@ Specifies the texture-addressing capabilities. This member can be one or more of
 
 Specify the maximum width and height of the supported stipple (up to 32-by-32). 
 
+
 ## -remarks
 This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for DirectX 7.0 and earlier runtime compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.
 
 This structure is used when a device is created and when the capabilities of a device are queried. It defines several members in the <a href="display.d3ddevicedesc_v1">D3DDEVICEDESC_V1</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -693,5 +730,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DPRIMCAPS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DPRIMCAPS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

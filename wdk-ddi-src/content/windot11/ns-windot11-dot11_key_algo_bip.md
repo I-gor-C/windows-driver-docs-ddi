@@ -7,7 +7,7 @@ old-location: netvista\dot11_key_algo_bip.htm
 old-project: netvista
 ms.assetid: 608AD247-19C8-40E8-B2FF-D49818AE4AD7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DOT11_KEY_ALGO_BIP, DOT11_KEY_ALGO_BIP, *PDOT11_KEY_ALGO_BIP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,16 @@ typedef struct _DOT11_KEY_ALGO_BIP {
 
 The initial IGTK packet number (IPN) used for replay protection.
 
+
 ### -field ulBIPKeyLength
 
 The length, in bytes, of the BIP key material in <b>ucBIPKey</b> array.
 
+
 ### -field ucBIPKey[1]
 
 The BIP key material.
+
 
 ## -remarks
 
@@ -73,15 +76,18 @@ The BIP key material.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

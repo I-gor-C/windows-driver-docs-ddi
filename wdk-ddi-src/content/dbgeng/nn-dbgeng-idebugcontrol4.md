@@ -7,7 +7,7 @@ old-location: debugger\idebugcontrol4.htm
 old-project: debugger
 ms.assetid: 693207c2-70d7-45be-ae22-436555225928
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -157,6 +157,7 @@ Sets the value of a user-named alias.
 
  
 
+
 ## -members
 The <b>IDebugControl4</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -170,6 +171,7 @@ The <b>IDebugControl4</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Creates a new breakpoint for the current target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -178,6 +180,7 @@ Creates a new breakpoint for the current target.
 </td>
 <td align="left" width="63%">
 Loads an extension library into the debugger engine.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -186,6 +189,7 @@ Loads an extension library into the debugger engine.
 </td>
 <td align="left" width="63%">
 Assembles a single processor instruction.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -194,6 +198,7 @@ Assembles a single processor instruction.
 </td>
 <td align="left" width="63%">
 Calls a debugger extension.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -202,6 +207,7 @@ Calls a debugger extension.
 </td>
 <td align="left" width="63%">
 Formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -210,6 +216,7 @@ Formats a string and sends the result to output callbacks that were registered w
 </td>
 <td align="left" width="63%">
 Formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -218,6 +225,7 @@ Formats a string and sends the result to output callbacks that were registered w
 </td>
 <td align="left" width="63%">
 Disassembles a processor instruction in the target's memory.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -226,6 +234,7 @@ Disassembles a processor instruction in the target's memory.
 </td>
 <td align="left" width="63%">
 Evaluates an expression, returning the result.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -234,6 +243,7 @@ Evaluates an expression, returning the result.
 </td>
 <td align="left" width="63%">
 Opens the specified file and executes the debugger commands that are contained within.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -242,6 +252,7 @@ Opens the specified file and executes the debugger commands that are contained w
 </td>
 <td align="left" width="63%">
 Executes the specified debugger commands.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -250,6 +261,7 @@ Executes the specified debugger commands.
 </td>
 <td align="left" width="63%">
 Returns the breakpoint with the specified breakpoint ID.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -258,6 +270,7 @@ Returns the breakpoint with the specified breakpoint ID.
 </td>
 <td align="left" width="63%">
 Returns the breakpoint located at the specified index.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -267,6 +280,7 @@ Returns the breakpoint located at the specified index.
 <td align="left" width="63%">
 Returns the frames at the top of the call stack, starting with an arbitrary register context and returning the reconstructed register context for each stack frame.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -275,6 +289,7 @@ Returns the frames at the top of the call stack, starting with an arbitrary regi
 </td>
 <td align="left" width="63%">
 Returns the debugger command that the engine will execute when a specified event occurs.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -283,6 +298,7 @@ Returns the debugger command that the engine will execute when a specified event
 </td>
 <td align="left" width="63%">
 Returns a short description of an event for a specific filter.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -291,6 +307,7 @@ Returns a short description of an event for a specific filter.
 </td>
 <td align="left" width="63%">
 Describes the specified event in a static list of events for the current target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -299,6 +316,7 @@ Describes the specified event in a static list of events for the current target.
 </td>
 <td align="left" width="63%">
 Returns the command that will be executed by the debugger engine upon the second chance of a specified exception.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -307,6 +325,7 @@ Returns the command that will be executed by the debugger engine upon the second
 </td>
 <td align="left" width="63%">
 Returns the full and abbreviated names of an expression syntax.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -315,6 +334,7 @@ Returns the full and abbreviated names of an expression syntax.
 </td>
 <td align="left" width="63%">
 Returns the handle for an already loaded extension library.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -323,6 +343,7 @@ Returns the handle for an already loaded extension library.
 </td>
 <td align="left" width="63%">
 Returns a pointer to an extension function from an extension library.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -331,6 +352,7 @@ Returns a pointer to an extension function from an extension library.
 </td>
 <td align="left" width="63%">
 Returns information about the last event that occurred in a target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -339,6 +361,7 @@ Returns information about the last event that occurred in a target.
 </td>
 <td align="left" width="63%">
 Returns the name of the currently open log file.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -347,6 +370,7 @@ Returns the name of the currently open log file.
 </td>
 <td align="left" width="63%">
 Returns the name of the currently open log file.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -355,17 +379,20 @@ Returns the name of the currently open log file.
 </td>
 <td align="left" width="63%">
 Returns the name of the currently open log file.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetManagedStatus</b></td>
 <td align="left" width="63%">
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetManagedStatusWide</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -375,6 +402,7 @@ Returns the name of the currently open log file.
 </td>
 <td align="left" width="63%">
 Returns the full name and abbreviated name of the specified processor type.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -383,6 +411,7 @@ Returns the full name and abbreviated name of the specified processor type.
 </td>
 <td align="left" width="63%">
  Returns the standard prompt text that will be prepended to the formatted output specified in the <a href="debugger.outputprompt">OutputPrompt</a> and <a href="debugger.outputpromptvalist">OutputPromptVaList</a> methods.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -391,6 +420,7 @@ Returns the full name and abbreviated name of the specified processor type.
 </td>
 <td align="left" width="63%">
 Returns the value of filter argument for the specific filters that have an argument.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -399,6 +429,7 @@ Returns the value of filter argument for the specific filters that have an argum
 </td>
 <td align="left" width="63%">
  Retrieves information about an event of interest available in the current target.
+
 
 </td>
 </tr>
@@ -409,6 +440,7 @@ Returns the value of filter argument for the specific filters that have an argum
 <td align="left" width="63%">
 Returns a string that describes the target's operating system version.
 (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -418,6 +450,7 @@ Returns a string that describes the target's operating system version.
 <td align="left" width="63%">
 Returns a string that describes the target's operating system version.
 (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -426,6 +459,7 @@ Returns a string that describes the target's operating system version.
 </td>
 <td align="left" width="63%">
 Returns version number information for the current target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -434,6 +468,7 @@ Returns version number information for the current target.
 </td>
 <td align="left" width="63%">
 Returns the value of a fixed-name alias.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -442,6 +477,7 @@ Returns the value of a fixed-name alias.
 </td>
 <td align="left" width="63%">
 Returns the value of a user-named alias or an automatic alias.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -450,6 +486,7 @@ Returns the value of a user-named alias or an automatic alias.
 </td>
 <td align="left" width="63%">
 Requests an input string from the debugger engine.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -458,6 +495,7 @@ Requests an input string from the debugger engine.
 </td>
 <td align="left" width="63%">
 Opens a log file that will receive output from the <a href="debugger.client_objects#client_objects#client_objects">client objects</a>.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -466,6 +504,7 @@ Opens a log file that will receive output from the <a href="debugger.client_obje
 </td>
 <td align="left" width="63%">
 Opens a log file that will receive output from the <a href="debugger.client_objects#client_objects#client_objects">client objects</a>.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -474,6 +513,7 @@ Opens a log file that will receive output from the <a href="debugger.client_obje
 </td>
 <td align="left" width="63%">
 Opens a log file that will receive output from the client objects.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -483,6 +523,7 @@ Opens a log file that will receive output from the client objects.
 <td align="left" width="63%">
 Prints the call stack specified by an array of stack frames and corresponding register contexts.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -491,6 +532,7 @@ Prints the call stack specified by an array of stack frames and corresponding re
 </td>
 <td align="left" width="63%">
 Formats and sends a user prompt to the output callback objects.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -499,6 +541,7 @@ Formats and sends a user prompt to the output callback objects.
 </td>
 <td align="left" width="63%">
  Formats and sends a user prompt to the output callback objects.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -507,6 +550,7 @@ Formats and sends a user prompt to the output callback objects.
 </td>
 <td align="left" width="63%">
 Formats a string and sends the result to the output callbacks that are registered with the engine's clients.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -515,6 +559,7 @@ Formats a string and sends the result to the output callbacks that are registere
 </td>
 <td align="left" width="63%">
  Formats a string and send the result to output callbacks that have been registered with the engine's clients.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -523,11 +568,13 @@ Formats a string and sends the result to the output callbacks that are registere
 </td>
 <td align="left" width="63%">
 Removes a breakpoint.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>ResetManagedStatus</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -537,6 +584,7 @@ Removes a breakpoint.
 </td>
 <td align="left" width="63%">
 This method is used by <a href="..\dbgeng\nn-dbgeng-idebuginputcallbacks.md">IDebugInputCallbacks</a> objects to send an input string to the engine following a request for input.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -545,6 +593,7 @@ This method is used by <a href="..\dbgeng\nn-dbgeng-idebuginputcallbacks.md">IDe
 </td>
 <td align="left" width="63%">
 Sets a debugger command for the engine to execute when a specified event occurs.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -553,6 +602,7 @@ Sets a debugger command for the engine to execute when a specified event occurs.
 </td>
 <td align="left" width="63%">
 Sets the command that will be executed by the debugger engine on the second chance of a specified exception.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -561,6 +611,7 @@ Sets the command that will be executed by the debugger engine on the second chan
 </td>
 <td align="left" width="63%">
 Sets the syntax that the engine will use to evaluate expressions.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -569,6 +620,7 @@ Sets the syntax that the engine will use to evaluate expressions.
 </td>
 <td align="left" width="63%">
 Sets the value of filter argument for the specific filters that can have an argument.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -577,6 +629,7 @@ Sets the value of filter argument for the specific filters that can have an argu
 </td>
 <td align="left" width="63%">
 Sets the value of a fixed-name alias.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -585,6 +638,7 @@ Sets the value of a fixed-name alias.
 </td>
 <td align="left" width="63%">
 Sets the value of a user-named alias.
+
 </td>
 </tr>
 </table>Creates a new breakpoint for the current target.
@@ -700,6 +754,7 @@ Sets the value of a user-named alias.
 
  
 
+
 ## -remarks
 
 
@@ -708,6 +763,7 @@ Sets the value of a user-named alias.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -730,5 +786,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

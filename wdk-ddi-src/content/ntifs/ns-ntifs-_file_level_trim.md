@@ -41,6 +41,7 @@ req.irql:
 The <b>FILE_LEVEL_TRIM</b> structure contains an array of byte ranges to trim for a file.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _FILE_LEVEL_TRIM {
 
 The key for the byte range locks. Most callers will set this to 0. Remote file systems use <b>Key</b> for tagging a set of range locks.
 
+
 ### -field NumRanges
 
 Total number of range structures in <b>Ranges</b>.
 
+
 ### -field Ranges
 
 Array of trim ranges for a file.
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ Array of trim ranges for a file.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_LEVEL_TRIM structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

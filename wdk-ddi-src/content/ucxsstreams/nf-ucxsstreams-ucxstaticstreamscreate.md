@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Creates a static streams object.
 
 
+
 ## -syntax
 
 ````
@@ -60,57 +61,70 @@ NTSTATUS UcxStaticStreamsCreate(
 
 A handle to the endpoint object that supports static streams. The client driver retrieved the handle in a previous call to <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>.
 
+
 ### -param SStreamsInit [out]
 
 A pointer to a <b>UCXSSTREAMS_INIT</b> structure that describes various configuration
         operations for creating the stream object. The driver specifies function pointers to its callback functions in this structure.
     This structure is managed by UCX.
 
+
 ### -param Attributes [in, optional]
 
 A pointer to a caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the stream object. 
+
 
 ### -param SStreams [out]
 
 A pointer to a variable that receives a handle to the new stream object.
 
+
 ## -returns
 The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. 
+
 
 ## -remarks
 The client driver for the host controller must call this method after the <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a> call. The parent of the new endpoint object is the endpoint object. 
 
 Typically, the client driver calls this method in its implementation of the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> event callback. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,9 +135,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

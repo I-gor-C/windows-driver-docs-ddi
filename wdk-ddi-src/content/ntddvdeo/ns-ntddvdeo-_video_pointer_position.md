@@ -7,7 +7,7 @@ old-location: display\video_pointer_position.htm
 old-project: display
 ms.assetid: 07586be9-a8bc-4149-8037-7b649a75a818
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The VIDEO_POINTER_POSITION structure contains the location of the screen pointer relative to the top left corner of the screen.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 
 Specifies the column location of the pointer in pixels, starting from the top left corner of the screen.
 
+
 ### -field Row
 
 Specifies the row location of the pointer in pixels, starting from the top left corner of the screen.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies the row location of the pointer in pixels, starting from the top left 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\wwan_packet_service.htm
 old-project: netvista
 ms.assetid: 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
+ms.date: 12/8/2017
+ms.keywords: _WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The WWAN_PACKET_SERVICE structure represents the packet service attachment state
   device.
 
 
+
 ## -syntax
 
 ````
@@ -63,9 +64,11 @@ A network specific error, in the event of a packet-attach or packet-detach failu
      information about this member, see the following 
      "Remarks" section.
 
+
 ### -field PacketServiceState
 
 The packet service state of the device.
+
 
 ### -field AvailableDataClass
 
@@ -74,9 +77,11 @@ A bitmap that represents which data-classes are available to the device in the c
      <b>WwanDataClass</b> member of 
      <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
      
+
 Miniport drivers must set this member to WWAN_DATA_CLASS_NONE when the device is not registered to a
      network, or when there is no data-class, or when the supported data-class is not available. Miniport
      drivers must set this member with a valid value when the device is registered to a network.
+
 
 ### -field CurrentDataClass
 
@@ -85,15 +90,19 @@ A single value from the
      <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a> that represents which
      data-class is currently being used by the device.
      
+
 For all data services, except HSPA, miniport drivers should set this member to a single
      WWAN_DATA_CLASS_XXX value. For HSPA data services, miniport drivers should specify a bit-wise OR of
      WWAN_DATA_CLASS_HSDPA and WWAN_DATA_CLASS_HSUPA.
+
 Miniport drivers must set this member with a valid value and send the appropriate notification when
      the device changes services, for example, from 1xRTT to 1xEV-DO.
+
 Miniport drivers should set this member to WWAN_DATA_CLASS_CUSTOM if the data-class is not one of the
      predefined values in the 
      <b>WwanDataClass</b> member of 
      <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
+
 
 ## -remarks
 The current packet-attach service state is typically reflected in the device's user interface.
@@ -151,19 +160,23 @@ Miniport drivers must report the cause code at the earliest possible instance. F
     device encounters one of these codes when attempting to register the device on with a network provider,
     the miniport driver should report it at that time.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -184,5 +197,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterdmachannel.htm
 old-project: netvista
 ms.assetid: 32e92f77-8f45-408b-a284-c00d3b5bd1b4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMRegisterDmaChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   operations on a subordinate NIC or on an ISA bus-master NIC.
 
 
+
 ## -syntax
 
 ````
@@ -65,26 +66,31 @@ A pointer to a caller-supplied variable in which this function returns a handle 
      driver uses in subsequent calls to the 
      <b>NdisM<i>Xxx</i></b> system DMA functions.
 
+
 ### -param MiniportAdapterHandle [in]
 
 The miniport adapter handle input to the 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param DmaChannel [in]
 
 Ignored. Set the DMA channel, if any, at 
      <i>DmaDescription</i> .
 
+
 ### -param Dma32BitAddresses [in]
 
 A boolean value that is <b>TRUE</b> if the NIC has 32 address lines. Otherwise, it is <b>FALSE</b>.
+
 
 ### -param DmaDescription [in]
 
 A pointer to an NDIS_DMA_DESCRIPTION structure filled in by the caller. This structure is defined
      as follows: 
      
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -106,15 +112,19 @@ A pointer to an NDIS_DMA_DESCRIPTION structure filled in by the caller. This str
 The driver should initialize this structure with zeros before filling in the following members:
 
 
+
+
 ### -param DemandMode
 
 A boolean value that is <b>TRUE</b> if the subordinate NIC uses the system DMA controller's demand
        mode. Otherwise, it is <b>FALSE</b>.
 
+
 ### -param AutoInitialize
 
 A boolean value that is <b>TRUE</b> if the subordinate NIC uses the system DMA controller's
        autoinitialize mode. Otherwise, it is <b>FALSE</b>.
+
 
 ### -param DmaChannelSpecified
 
@@ -122,12 +132,14 @@ A boolean value that is <b>TRUE</b> if
        <b>DmaChannel</b> is set to the bus-relative value of the system DMA controller channel used by the
        NIC. Otherwise, it is <b>FALSE</b>.
 
+
 ### -param DmaWidth
 
 The transfer width for DMA operations, one of 
        <b>Width8Bits</b>, 
        <b>Width16Bits</b>, or 
        <b>Width32Bits</b>.
+
 
 ### -param DmaSpeed
 
@@ -137,14 +149,17 @@ The DMA speed as one of
        <b>TypeB</b>, or 
        <b>TypeC</b>.
 
+
 ### -param DmaPort
 
 This member refers to the MCA bus, which is no longer supported. This member must be
        zero.
 
+
 ### -param DmaChannel
 
 The bus-relative number of the system DMA controller channel used by the NIC.
+
 </dd>
 </dl>
 
@@ -152,6 +167,7 @@ The bus-relative number of the system DMA controller channel used by the NIC.
 
 The maximum number of bytes that the NIC can transfer in a single DMA operation. If the NIC has
      unlimited transfer capacity, set this parameter to -1.
+
 
 ## -returns
 <b>NdisMRegisterDmaChannel</b> can return one of the following status values:
@@ -174,6 +190,7 @@ The maximum number of bytes that the NIC can transfer in a single DMA operation.
        master on an I/O bus other than ISA.
 
  
+
 
 ## -remarks
 A driver of a subordinate-DMA NIC must call 
@@ -202,11 +219,13 @@ If the driver successfully registers the DMA channel, it must later call the
     <a href="netvista.ndismderegisterdmachannel">
     NdisMDeregisterDmaChannel</a> function to deregister the DMA channel.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -217,6 +236,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -224,11 +244,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisMRegisterDmaChannel (NDIS
    5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -239,6 +261,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -249,14 +272,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
@@ -280,5 +306,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterDmaChannel function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterDmaChannel function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

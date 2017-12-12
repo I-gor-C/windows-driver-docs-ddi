@@ -41,6 +41,7 @@ req.irql:
 The <b>KSCAMERA_EXTENDEDPROP_HEADER</b> structure is the payload header for an extend control property.
 
 
+
 ## -syntax
 
 ````
@@ -61,26 +62,33 @@ typedef struct _KSCAMERA_EXTENDEDPROP_HEADER {
 
 The extended property version number. This is set to 1.
 
+
 ### -field PinId
 
 The pin ID that corresponds with the property.  If <b>PinId</b> is set to (ULONG)-1, the control applies to the filter.  Otherwise, the camera driver must route this control to the corresponding pin when that pin is created (or if already available).
+
 
 ### -field Size
 
 The total size, in bytes of the entire payload. This includes the <b>KSCAMERA_EXTENDEDPROP_HEADER</b> structure and the following control specific payload data.
 
+
 ### -field Result
 
 For a set operation, this is 0.  For queries, <b>Result</b> contains any failure code the driver provides for the most recent control operation.
 
+
 ### -field Flags
 
 The settings in <b>Flags</b> may vary depending on the control.
+
 The high order bit of the <b>Flags</b> value is reserved.  This bit serves as the cancel flag and is defined as <b>KSCAMERA_EXTENDEDPROP_FLAG_CANCELOPERATION</b>.  This flag is only meaningful for asynchronous controls.
+
 
 ### -field Capability
 
 This member is read only and indicates the standard capabilities of the control. The following capabilities are defined.
+
 <table>
 <tr>
 <th>Value</th>
@@ -93,6 +101,7 @@ This member is read only and indicates the standard capabilities of the control.
 </td>
 <td width="60%">
 The control supports asynchronous operation.
+
 </td>
 </tr>
 <tr>
@@ -102,10 +111,12 @@ The control supports asynchronous operation.
 </td>
 <td width="60%">
 Applies only to asynchronous controls. This flag marks the control operation as cancellable. If a synchronous control sets this flag, it is be marked as being invalid and is not exposed to higher level applications.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -115,22 +126,27 @@ Applies only to asynchronous controls. This flag marks the control operation as 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,5 +163,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCAMERA_EXTENDEDPROP_HEADER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

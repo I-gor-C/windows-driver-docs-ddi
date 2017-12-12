@@ -7,8 +7,8 @@ old-location: netvista\riluiccslotinfo.htm
 old-project: netvista
 ms.assetid: 4f8ed150-b378-49c3-955c-a1e69ab8c1a9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCSLOTINFO, *LPRILUICCSLOTINFO, RILUICCSLOTINFO
+ms.date: 12/8/2017
+ms.keywords: RILUICCSLOTINFO, RILUICCSLOTINFO, *LPRILUICCSLOTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILUICCSLOTINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

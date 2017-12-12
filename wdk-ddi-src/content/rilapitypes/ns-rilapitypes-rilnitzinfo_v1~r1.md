@@ -7,8 +7,8 @@ old-location: netvista\rilnitzinfo_v1_2.htm
 old-project: netvista
 ms.assetid: ded74c48-b9a8-4ee4-8df9-3dc99892d41d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILNITZINFO_V1, *LPRILNITZINFO_V1, RILNITZINFO_V1
+ms.date: 12/8/2017
+ms.keywords: RILNITZINFO_V1, RILNITZINFO_V1, *LPRILNITZINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -84,6 +85,7 @@ typedef struct _RILNITZINFO_V1 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

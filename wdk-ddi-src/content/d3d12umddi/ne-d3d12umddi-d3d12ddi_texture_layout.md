@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_texture_layout.htm
 old-project: display
 ms.assetid: F039A0D9-D1AE-4940-B67D-30CC6344EC7D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_TEXTURE_LAYOUT, D3D12DDI_TEXTURE_LAYOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a texture layout.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum D3D12DDI_TEXTURE_LAYOUT {
 
 Texture layout undefined. 
 
+
 ### -field D3D12DDI_TL_ROW_MAJOR
 
 Texture layout row major.
+
 
 ### -field D3D12DDI_TL_64KB_TILE_UNDEFINED_SWIZZLE
 
 A 64 KB tile with undefined swizzle.
 
+
 ### -field D3D12DDI_TL_64KB_TILE_STANDARD_SWIZZLE
 
 A 64 KB tile with standard swizzle.
 
+
 ### -field D3D12DDI_TL_DEVICE_DEPENDENT_SWIZZLE_0
 
 A device dependant swizzle.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ A device dependant swizzle.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

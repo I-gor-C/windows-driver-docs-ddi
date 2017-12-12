@@ -7,7 +7,7 @@ old-location: netvista\vmb_channel_state_change_callbacks_init.htm
 old-project: netvista
 ms.assetid: 2255C8A2-85FB-4B96-8AE9-66FAFD73EE73
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</b> function saves callback functions to be used for state changes for a channel. 
+
 
 
 ## -syntax
@@ -58,8 +60,10 @@ VOID WINAPI VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT(
 
 A structure to save callback functions that relate to the state changes for a channel. 
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -69,6 +73,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

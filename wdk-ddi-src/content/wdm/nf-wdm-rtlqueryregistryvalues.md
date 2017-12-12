@@ -7,7 +7,7 @@ old-location: kernel\rtlqueryregistryvalues.htm
 old-project: kernel
 ms.assetid: 6c6d0664-0c00-461b-bcac-13070511430c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlQueryRegistryValues
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RtlQueryRegistryValues</b> routine allows the caller to query several values from the registry subtree with a single call.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ NTSTATUS RtlQueryRegistryValues(
 ### -param RelativeTo [in]
 
 Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined path as one of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -68,81 +70,102 @@ Specifies whether <i>Path</i> is an absolute registry path or is relative to a p
 <tr>
 <td>
 RTL_REGISTRY_ABSOLUTE
+
 </td>
 <td>
 Path is an absolute registry path.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_CONTROL
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\System\CurrentControlSet\Control</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_DEVICEMAP
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\Hardware\DeviceMap</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_SERVICES
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\System\CurrentControlSet\Services</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_USER
+
 </td>
 <td>
 Path is relative to <b>\Registry\User\CurrentUser</b>. (For a system process, this is <b>\User\.Default</b>.)
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_WINDOWS_NT
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion</b>.
+
 </td>
 </tr>
 </table>
  
+
 The <i>RelativeTo</i> value can be modified by bitwise-ORing it with one of the following flags.
+
 <table>
 <tr>
 <td>
 RTL_REGISTRY_OPTIONAL
+
 </td>
 <td>
 Specifies that the key referenced by this parameter and the <i>Path</i> parameter are optional.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_HANDLE
+
 </td>
 <td>
 Specifies that the <i>Path</i> parameter is actually a registry handle to use.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Path [in]
 
 Pointer to either an absolute registry path or a path relative to the known location specified by the <i>RelativeTo</i> parameter. Note that the names of keys in such a path must be known to the caller, including the last key in the path. If the RTL_REGISTRY_HANDLE flag is specified, this parameter is a registry handle for an already opened key to be queried directly.
 
+
 ### -param QueryTable [in, out]
 
 Pointer to a table of one or more value names and subkey names in which the caller is interested. Each table entry contains the address of a caller-supplied <a href="kernel.queryroutine">QueryRoutine</a> function that will be called for each value name that exists in the registry. The table must be terminated with a <b>NULL</b> table entry, which is a table entry with a <b>NULL</b> <b>QueryRoutine</b> member and a <b>NULL</b> <b>Name</b> member. The structure for query table entries is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -164,10 +187,14 @@ Pointer to a table of one or more value names and subkey names in which the call
 If the caller allocates storage for the query table pointed to by the <i>QueryTable</i> parameter, the caller is responsible for releasing this storage after the <b>RtlQueryRegistryValues</b> call returns.
 
 
+
+
 ### -param QueryRoutine
 
 The address of a <i>QueryRoutine</i> function that is called with the name, type, data, and data length of a registry value. If this member and the <b>Name</b> member are both <b>NULL</b>, it marks the end of the table.
+
 A <i>QueryRoutine</i> function is declared as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -188,9 +215,11 @@ QueryRoutine (
 </table></span></div>
 For more information, see <a href="kernel.queryroutine">QueryRoutine</a>.
 
+
 ### -param Flags
 
 Flags to control how the remaining members of the <b>RTL_QUERY_REGISTRY_TABLE</b> structure are to be interpreted. The following flag bits are defined for this member.
+
 <table>
 <tr>
 <th>Value</th>
@@ -199,90 +228,113 @@ Flags to control how the remaining members of the <b>RTL_QUERY_REGISTRY_TABLE</b
 <tr>
 <td>
 RTL_QUERY_REGISTRY_SUBKEY
+
 </td>
 <td>
 The <b>Name</b> of this table entry is another path to a registry key, and all following table entries are for that key rather than the key specified by the <i>Path</i> parameter. This change in focus lasts until the end of the table or until another RTL_REGISTRY_SUBKEY or RTL_QUERY_REGISTRY_TOPKEY entry is seen. Each such entry must specify a path that is relative to the <i>Path</i> specified in the call to <b>RtlQueryRegistryValues</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_QUERY_REGISTRY_TOPKEY
+
 </td>
 <td>
 Resets the current registry key handle to the original one specified by the <i>RelativeTo</i> and <i>Path</i> parameters. This is useful for getting back to the original node after descending into subkeys with the RTL_QUERY_REGISTRY_SUBKEY flag.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_QUERY_REGISTRY_REQUIRED
+
 </td>
 <td>
 Specifies that this registry value must exist if <b>DefaultType</b> = REG_NONE; otherwise, if it is not found, <b>RtlQueryRegistryValues</b> immediately exits with a status code of STATUS_OBJECT_NAME_NOT_FOUND. This exit occurs if the <b>Name</b> member is <b>NULL</b> and the current key has no subkeys, or if <b>Name</b> specifies a nonexistent subkey. (If this flag is not specified, then when no match is found for a non-<b>NULL</b> <b>Name</b>, the routine uses the <b>DefaultValue</b> member as the value. When <b>Name</b>  is <b>NULL</b> and the current key has no subkeys, the routine simply skips that table entry.)
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_QUERY_REGISTRY_NOVALUE
+
 </td>
 <td>
 Specifies that even though there is no <b>Name</b> for this table entry, all the caller wants is a callback: that is, the caller does <u>not</u> want to enumerate all the values under the current key. <i>QueryRoutine</i> is called with <b>NULL</b> for <i>ValueData</i>, REG_NONE for <i>ValueType</i>, and zero for <i>ValueLength</i>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_QUERY_REGISTRY_NOEXPAND
+
 </td>
 <td>
 For a registry value of type REG_EXPAND_SZ or REG_MULTI_SZ, this flag overrides the default behavior, which is to preprocess the registry value before calling the <a href="kernel.queryroutine">QueryRoutine</a> routine. By default, <b>RtlQueryRegistryValues</b> expands environment variable references in REG_EXPAND_SZ values, and enumerates each null-terminated string in a REG_MULTI_SZ value in a separate <i>QueryRoutine</i> call, so that the strings are presented as REG_SZ values that have the same <i>ValueName</i>. If this flag is set, <i>QueryRoutine</i> receives the raw REG_EXPAND_SZ or REG_MULTI_SZ value from the registry. For more information about the data formats for these values, see <a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_QUERY_REGISTRY_DIRECT
+
 </td>
 <td>
 The <b>QueryRoutine</b> member is not used (and must be <b>NULL</b>), and the <i>EntryContext</i> points to the buffer to store the value. If the caller sets this flag, the caller should additionally set the RTL_QUERY_REGISTRY_TYPECHECK flag to guard against buffer overflow. For more information, see the Remarks section.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_QUERY_REGISTRY_TYPECHECK
+
 </td>
 <td>
 Use this flag with the RTL_QUERY_REGISTRY_DIRECT flag to verify that the REG_<i>XXX</i> type of the stored registry value matches the type expected by the caller. If the types do not match, the call fails. For more information, see the Remarks section.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_QUERY_REGISTRY_DELETE
+
 </td>
 <td>
 This flag is used to delete value keys after they have been queried.
+
 </td>
 </tr>
 </table>
  
+
 Starting with Windows 2000, inbox support is provided for all flag bits in the preceding table, with the exception of RTL_QUERY_REGISTRY_TYPECHECK. Inbox support for RTL_QUERY_REGISTRY_TYPECHECK is available starting with Windows 8. For earlier versions of Windows, support for RTL_QUERY_REGISTRY_TYPECHECK is provided through Windows Update. For more information, see Remarks.
+
 
 ### -param Name
 
 This is the name of a Value that the caller queried. If <b>Name</b> is <b>NULL</b>, the <i>QueryRoutine</i> function specified for this table entry is called for all values associated with the current registry key. If the RTL_QUERY_REGISTRY_DIRECT flag is set, a non-<b>NULL</b> value for <b>Name</b> must be provided.
 
+
 ### -param EntryContext
 
 If the RTL_QUERY_REGISTRY_DIRECT flag is set, this is a pointer to the buffer to store the result of the query operation for this key. Otherwise, this value is passed as the <i>EntryContext</i> parameter of <i>QueryRoutine</i>.
+
 
 ### -param DefaultType
 
 The least significant byte of this member specifies the REG_<i>XXX</i> type of the data to be returned, if no matching key is found and the RTL_QUERY_REGISTRY_REQUIRED flag is not specified. Specify REG_NONE for no default type. If the RTL_QUERY_REGISTRY_TYPECHECK flag is set, the most significant byte of this member specifies the REG_<i>XXX</i> type of the stored registry value that the caller expects. Bits 8 to 23 of this member are reserved and should be zero.
 
+
 ### -param DefaultData
 
 A pointer to the default value to be returned if no matching key is found and the RTL_QUERY_REGISTRY_REQUIRED flag is not specified. This member is ignored if <b>DefaultType</b> = REG_NONE. Otherwise, the type of data pointed to by <b>DefaultData</b> should conform to the registry value type specified by the <b>DefaultType</b> member. For more information registry value types, see the definition of the <i>Type</i> parameter in <a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>.
 
+
 ### -param DefaultLength
 
 Specifies the length, in bytes, of the <b>DefaultData</b> member. If <b>DefaultType</b> is REG_SZ, REG_EXPAND_SZ, or REG_MULTI_SZ, callers can optionally specify zero to indicate <b>RtlQueryRegistryValues</b> should compute the length based on the default data value. If <b>DefaultType</b> = REG_NONE, this member is ignored.
+
 </dd>
 </dl>
 
@@ -290,9 +342,11 @@ Specifies the length, in bytes, of the <b>DefaultData</b> member. If <b>DefaultT
 
 Specifies the value passed as the <i>Context</i> parameter of a <i>QueryRoutine</i> function each time it is called.
 
+
 ### -param Environment [in, optional]
 
 Pointer to the environment used when expanding variable values in REG_EXPAND_SZ registry values, or a <b>NULL</b> pointer (optional).
+
 
 ## -returns
 <b>RtlQueryRegistryValues</b> returns an NTSTATUS code. The possible return values include:
@@ -315,6 +369,7 @@ Pointer to the environment used when expanding variable values in REG_EXPAND_SZ 
  
 
 <b>RtlQueryRegistryValues</b> also terminates processing of the table if the <i>QueryRoutine</i> function for a table entry returns an NTSTATUS error code, and returns that error code as its result. (With one exception: If <i>QueryRoutine</i> returns STATUS_BUFFER_TOO_SMALL, the error code is ignored.)
+
 
 ## -remarks
 The caller specifies an initial key path and a table. The table contains one or more entries that describe the key values and subkey names in which the caller is interested. The table is terminated by an entry with a <b>NULL</b> <b>QueryRoutine</b> member and a <b>NULL</b> <b>Name</b> member. The table must be allocated from nonpaged pool.
@@ -357,11 +412,13 @@ If an error occurs at any stage of processing of the query table, <b>RtlQueryReg
 
 See <a href="kernel.zwsetvaluekey">ZwSetValueKey</a> for a description of the possible REG_<i>XXX</i> values.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -372,14 +429,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -390,6 +450,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -400,6 +461,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -410,9 +472,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -439,5 +503,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlQueryRegistryValues routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlQueryRegistryValues routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

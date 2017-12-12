@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfqueryinterface.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,7 +16,7 @@ Wdfqueryinterface.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_QUERY_INTERFACE_CONFIG_INIT function](nf-wdfqueryinterface-wdf-query-interface-config-init.md) | The WDF_QUERY_INTERFACE_CONFIG_INIT function initializes a driver's WDF_QUERY_INTERFACE_CONFIG structure. |
+| [WDF_QUERY_INTERFACE_CONFIG_INIT function](nf-wdfqueryinterface-wdf_query_interface_config_init.md) | The WDF_QUERY_INTERFACE_CONFIG_INIT function initializes a driver's WDF_QUERY_INTERFACE_CONFIG structure. |
 | [WdfDeviceAddQueryInterface function](nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md) | The WdfDeviceAddQueryInterface method creates a driver-defined interface that other drivers can query and use. |
 | [WdfDeviceInterfaceDereferenceNoOp function](nf-wdfqueryinterface-wdfdeviceinterfacedereferencenoop.md) | The WdfDeviceInterfaceDereferenceNoOp method can be used for driver-defined interfaces that do not require reference counts. |
 | [WdfDeviceInterfaceReferenceNoOp function](nf-wdfqueryinterface-wdfdeviceinterfacereferencenoop.md) | The WdfDeviceInterfaceReferenceNoOp method can be used for driver-defined interfaces that do not require reference counts. |
@@ -20,4 +25,4 @@ Wdfqueryinterface.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_QUERY_INTERFACE_CONFIG structure](ns-wdfqueryinterface--wdf-query-interface-config.md) | The WDF_QUERY_INTERFACE_CONFIG structure describes a driver-defined interface. |
+| [_WDF_QUERY_INTERFACE_CONFIG structure](ns-wdfqueryinterface-_wdf_query_interface_config.md) | The WDF_QUERY_INTERFACE_CONFIG structure describes a driver-defined interface. |

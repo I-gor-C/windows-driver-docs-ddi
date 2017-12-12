@@ -7,7 +7,7 @@ old-location: display\dxgk_monitordescriptorset_interface_pfngetnumdescriptors.h
 old-project: display
 ms.assetid: 7bfcef0b-1371-4e3b-b5dc-c4c548625c8f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>pfnGetNumDescriptors</b> function returns the number of descriptors in a monitor descriptor set.
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS APIENTRY pfnGetNumDescriptors(
 
 [in] A handle to a monitor descriptor set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_getmonitordescriptorset.md">pfnGetMonitorDescriptorSet</a> function of the <a href="display.monitor_interface">Monitor interface</a>.
 
+
 ### -param pNumMonitorDescriptors [out]
 
 [out] A SIZE_T-typed variable that receives the number of descriptors in the set.
+
 
 ## -returns
 The <b>pfnGetNumDescriptors</b> function returns one of the following values.
@@ -78,6 +81,7 @@ The <b>pfnGetNumDescriptors</b> function returns one of the following values.
 
  
 
+
 ## -remarks
 
 
@@ -86,6 +90,7 @@ The <b>pfnGetNumDescriptors</b> function returns one of the following values.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,14 +101,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,9 +122,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

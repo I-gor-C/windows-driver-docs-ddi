@@ -41,6 +41,7 @@ req.irql:
 The KS_VIDEOINFOHEADER structure describes the bitmap and color information for a video stream.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct tagKS_VIDEOINFOHEADER {
 
 Specifies a clipping rectangle that selects the portion of the active video signal to use. 
 
+
 ### -field rcTarget
 
 Specifies a rectangle that defines the target destination video window.
+
 
 ### -field dwBitRate
 
 Specifies a value that indicates the video stream's approximate data rate, in bits per second.
 
+
 ### -field dwBitErrorRate
 
 Specifies a value that indicates the video stream's data error rate, in bit errors per second.
+
 
 ### -field AvgTimePerFrame
 
 Specifies the average time per frame, in 100-nanosecond units.
 
+
 ### -field bmiHeader
 
 Describes a <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
+
 
 ## -remarks
 To describe a video stream with bob or weave settings, use <a href="stream.ks_videoinfoheader2">KS_VIDEOINFOHEADER2</a>.
@@ -92,11 +99,13 @@ Ideally, a sink filter checks <b>rcSource</b> and if the sink filter does not su
 
 The <b>rcTarget</b> member specifies the destination rectangle for the video. Most source filters set this member to all zeros. A downstream filter can request that the video be placed in a particular area of the buffers that it supplies. In this case, it calls the Win32 function <b>QueryAccept</b> with a nonempty target.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +125,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFOHEADER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

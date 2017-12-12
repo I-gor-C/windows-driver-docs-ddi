@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistassociatecontext1.htm
 old-project: netvista
 ms.assetid: 86e9662e-d308-4e3a-98c1-4134186f1bad
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsNetBufferListAssociateContext1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The
 
 
 
+
 ## -syntax
 
 ````
@@ -67,10 +68,12 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext1(
 
 A network buffer list that indicates one or more packets of interest to the callout driver.
 
+
 ### -param layerId [in]
 
 The identifier of the layer in which the context is being associated. When calling this function
      from the NDIS receive path, set this parameter to <b>FWPS_LAYER_NON_WFP</b>.
+
 
 ### -param context [in]
 
@@ -79,19 +82,23 @@ Arbitrary context information set by the callout driver. The filter engine will 
      
      <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function.
 
+
 ### -param contextTag [in]
 
 A locally unique identifier obtained by calling the 
      <a href="netvista.fwpsnetbufferlistgettagforcontext0">
      FwpsNetBufferListGetTagForContext0</a> function.
 
+
 ### -param providerGUID [in]
 
 The provider GUID.
 
+
 ### -param deviceObject [in, out]
 
 A pointer to the callout driver's device object.
+
 
 ### -param notifyFn [in]
 
@@ -99,9 +106,11 @@ A pointer to the callout driver's
      <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function. The filter engine will send status notifications to this
      function.
 
+
 ### -param flags [in]
 
 This parameter is reserved for future use and is set to zero.
+
 
 ## -returns
 The 
@@ -114,6 +123,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 The 
@@ -129,11 +139,13 @@ This function is essentially identical to the previous version,
        updated <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function pointed to by the 
        <i>notifyFn</i> parameter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -144,14 +156,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +177,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -172,9 +188,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -207,5 +225,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext1 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext1 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

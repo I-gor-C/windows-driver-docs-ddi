@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-command-list-funcs-video-process-0032.htm
 old-project: display
 ms.assetid: c49f79cc-6ceb-4379-94ac-983b897d198b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The command list functions for video processing.
+
 
 
 ## -syntax
@@ -68,49 +70,61 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032 {
 
 Close command list.
 
+
 ### -field pfnResetCommandList
 
 Reset command list.
+
 
 ### -field pfnDiscardResource
 
 Discard resource.
 
+
 ### -field pfnSetMarker
 
 Set marker.
+
 
 ### -field pfnSetPredication
 
 Set predication.
 
+
 ### -field pfnBeginQuery
 
 Begin query.
+
 
 ### -field pfnEndQuery
 
 End query.
 
+
 ### -field pfnResolveQueryData
 
 Resolve query data.
+
 
 ### -field pfnResourceBarrier
 
 Resource barrier.
 
+
 ### -field pfnProcessFrame
 
 Decode frame.
+
 
 ### -field pfnSetProtectedResourceSession
 
 Set protected resource session.
 
+
 ### -field pfnWriteBufferImmediate
 
 Write buffer immediate.
+
 
 ## -remarks
 
@@ -120,6 +134,7 @@ Write buffer immediate.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

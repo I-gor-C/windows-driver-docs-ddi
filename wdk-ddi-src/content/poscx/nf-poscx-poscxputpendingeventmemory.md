@@ -45,6 +45,7 @@ PosCxPutPendingEventMemory tries to delegate a memory object containing the
       the designated event queue (control or data).
 
 
+
 ## -syntax
 
 ````
@@ -63,24 +64,29 @@ NTSTATUS PosCxPutPendingEventMemory(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param deviceInterfaceTag [in]
 
 The device interface associated with the event.  By default, only
           file objects that have the same tag will receive this event.
+
 
 ### -param eventMemory [in]
 
 The new event data memory object that contains both the point-of-service event header 
           and the data. PosCx will take over ownership of this passed in memory object.
 
+
 ### -param eventAttr [in]
 
 The event attributes.
+
 
 ## -returns
 Possible return values are:
 
  
+
 
 ## -remarks
 
@@ -90,14 +96,17 @@ Possible return values are:
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +123,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20PosCxPutPendingEventMemory function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

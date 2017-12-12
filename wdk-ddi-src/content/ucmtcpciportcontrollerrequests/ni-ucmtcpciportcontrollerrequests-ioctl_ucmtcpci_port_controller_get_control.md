@@ -42,19 +42,24 @@ req.product: Windows 10 or later.
 Gets the values of all control registers defined as per the Universal Serial Bus Type-C Port Controller Interface Specification. 
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 A pointer to a <a href="buses.ucmtcpci_port_controller_get_control_in_params">UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS</a> structure that contains all control register values. To get the structure, call <a href="wdf.wdfrequestretrieveinputbuffer">WdfRequestRetrieveInputBuffer</a> by passing the received framework request object.
 
+
 ### -input-buffer-length
 The size of the <a href="buses.ucmtcpci_port_controller_get_control_in_params">UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS</a> structure.
+
 
 ### -output-buffer
 A pointer to the <a href="buses.ucmtcpci_port_controller_get_control_out_params">UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS</a> structure. To get the structure, call <a href="wdf.wdfrequestretrieveoutputbuffer">WdfRequestRetrieveOutputBuffer</a> by passing the received framework request object.
 
+
 ### -output-buffer-length
 The size of the <a href="buses.ucmtcpci_port_controller_get_control_out_params">UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS</a> structure.
+
 
 ### -in-out-buffer
 
@@ -68,14 +73,17 @@ The size of the <a href="buses.ucmtcpci_port_controller_get_control_out_params">
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 The UcmTcpciCx class extension sends this IOCTL request to retrieve the values of the control registers. The client driver must communicate with the port controller to retrieve the POWER_CONTROL, ROLE_CONTROL, TCPC_CONTROL, and FAULT_CONTROL Register values and populate the received  <a href="buses.ucmtcpci_port_controller_get_control_out_params">UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS</a> structure with those values. To complete the request, the driver must set the populated structure on the framework request object by calling <a href="wdf.wdfrequestsetinformation">WdfRequestSetInformation</a> and then call <a href="wdf.wdfrequestcomplete">WdfRequestComplete</a> to complete the request.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +109,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

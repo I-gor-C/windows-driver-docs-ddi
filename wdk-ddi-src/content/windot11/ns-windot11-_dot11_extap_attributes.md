@@ -7,7 +7,7 @@ old-location: netvista\dot11_extap_attributes.htm
 old-project: netvista
 ms.assetid: 0460357c-7180-45f0-a7ab-83c46c24ba68
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_EXTAP_ATTRIBUTES, DOT11_EXTAP_ATTRIBUTES, *PDOT11_EXTAP_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,53 +70,66 @@ The type, revision, and size of the DOT11_EXTAP_ATTRIBUTES structure. This membe
      an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
+
 ### -field Revision
 
 This member must be set to DOT11_EXTAP_ATTRIBUTES_REVISION_1.
+
 
 ### -field Size
 
 This member must be set to 
        <b>sizeof</b>(DOT11_EXTAP_ATTRIBUTES).
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field uScanSSIDListSize
 
 The maximum number of service set identifiers (SSIDs) supported by the 802.11 station for scan
      operations. The 802.11 station must support an SSID list of at least four entries.
      
+
 The SSID list that the 802.11 station uses for scanning is specified when 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a> is
      set.
+
 
 ### -field uDesiredSSIDListSize
 
 The maximum number of entries in the desired list of basic service set identifiers (BSSIDs)
      supported by the 802.11 station. The 802.11 station must support a BSSID list with at least one entry.
      
+
 For more information about the desired BSSID list, see 
      <a href="netvista.oid_dot11_desired_bssid_list">
      OID_DOT11_DESIRED_BSSID_LIST</a>.
+
 
 ### -field uPrivacyExemptionListSize
 
 The maximum number of entries in the privacy exemption list supported by the 802.11 station. The
      802.11 station must support a privacy exemption list with at least one entry.
      
+
 For more information about the privacy exemption list, see 
      <a href="netvista.oid_dot11_privacy_exemption_list">
      OID_DOT11_PRIVACY_EXEMPTION_LIST</a>.
+
 
 ### -field uAssociationTableSize
 
@@ -124,26 +137,32 @@ The maximum number of associations that the 802.11 station can support simultane
      station must support an association list that has at least one entry. A NIC should typically be able to
      support at least 32 associations simultaneously.
      
+
 If the NIC supports any authentication and cipher algorithms that require 
      <a href="netvista.key_mapping_keys">key-Mapping keys</a>, it must support at least
      the number of entries in its key-mapping key table.
+
 
 ### -field uDefaultKeyTableSize
 
 The maximum number of cipher keys the 802.11 station supports for the default key and per-station
      default key tables.
      
+
 For standard 802.11 cipher algorithms, the 802.11 station must support a table size of at least four
      cipher keys. For cipher algorithms developed by the independent hardware vendor (IHV), the table size
      can be four or greater.
+
 
 ### -field uWEPKeyValueMaxLength
 
 The maximum length, in bytes, of a WEP cipher key supported by the 802.11 station.
      
+
 The following table lists the minimum and maximum key lengths, in bytes, for the various WEP cipher
      values defined through 
      <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>.
+
 <table>
 <tr>
 <th>
@@ -162,46 +181,58 @@ The following table lists the minimum and maximum key lengths, in bytes, for the
 <tr>
 <td>
 <b>DOT11_CIPHER_ALGO_WEP40</b>
+
 </td>
 <td>
 5
+
 </td>
 <td>
 5
+
 </td>
 </tr>
 <tr>
 <td>
 <b>DOT11_CIPHER_ALGO_WEP104</b>
+
 </td>
 <td>
 13
+
 </td>
 <td>
 13
+
 </td>
 </tr>
 <tr>
 <td>
 <b>DOT11_CIPHER_ALGO_WEP</b>
+
 </td>
 <td>
 13
+
 </td>
 <td>
 Any length supported by the 802.11 station
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field bStrictlyOrderedServiceClassImplemented
 
 A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station supports the IEEE 802.11
      StrictlyOrdered service class for media access control (MAC) service data unit (MSDU) packet delivery.
      
+
 For more information about the StrictlyOrdered service class, refer to Clause 5.1.3 of the IEEE
      802.11-2012 standard.
+
 
 ### -field uNumSupportedCountryOrRegionStrings
 
@@ -209,8 +240,10 @@ The number of country or region strings supported by the 802.11 station. If the 
      supports multiple regulatory domains as specified by the IEEE 802.11d-2001 standard, each country or
      region string identifies a regulatory domain supported by the 802.11 station.
      
+
 If the 802.11 station does not support the IEEE 802.11d-2001 standard, the miniport driver must set 
      <b>uNumSupportedCountryOrRegionStrings</b> to zero.
+
 
 ### -field pSupportedCountryOrRegionStrings
 
@@ -218,6 +251,7 @@ A pointer to an array of 802.11d country or region strings that are supported by
      station. Each entry in the array is formatted as a 
      <a href="netvista.dot11_country_or_region_string">
      DOT11_COUNTRY_OR_REGION_STRING</a> structure.
+
 
 ### -field uInfraNumSupportedUcastAlgoPairs
 
@@ -229,6 +263,7 @@ The number of authentication and cipher algorithms supported by the 802.11 stati
      the array referenced by the 
      <b>pInfraSupportedUcastAlgoPairs</b> member.
 
+
 ### -field pInfraSupportedUcastAlgoPairs
 
 A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -236,6 +271,7 @@ A pointer to an array of authentication and cipher algorithms supported by the 8
      formatted as a 
      <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">
      DOT11_AUTH_CIPHER_PAIR</a> structure.
+
 
 ### -field uInfraNumSupportedMcastAlgoPairs
 
@@ -247,6 +283,7 @@ The number of authentication and cipher algorithms supported by the 802.11 stati
      the array referenced by the 
      <b>pInfraSupportedMcastAlgoPairs</b> member.
 
+
 ### -field pInfraSupportedMcastAlgoPairs
 
 A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -254,6 +291,7 @@ A pointer to an array of authentication and cipher algorithms supported by the 8
      the array is formatted as a 
      <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">
      DOT11_AUTH_CIPHER_PAIR</a> structure.
+
 
 ## -remarks
 
@@ -263,15 +301,18 @@ A pointer to an array of authentication and cipher algorithms supported by the 8
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -311,5 +352,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTAP_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTAP_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

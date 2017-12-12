@@ -41,10 +41,12 @@ req.irql:
 A client sends the <b>IOCTL_NFP_DISABLE</b> request to temporarily disable subscriptions, publications, and presence events. This is useful when a client wants to disable the proximity functionality but keep the resources allocated to quickly re-enable them when needed again.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None
+
 
 ### -input-buffer-length
 
@@ -52,6 +54,7 @@ None
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -75,23 +78,29 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 The following are required actions when using this IOCTL:<ul>
 <li>
 	When this IOCTL is received the driver MUST mark the file handle as “Disabled”.
+
 </li>
 <li>
 If a subscription handle is changed to “Disabled, the provider MUST remove all messages from that file handle’s “Received” queue.
+
 </li>
 <li>
 If a subscription handle is “Disabled”:
+
 <ul>
 <li>
 The driver MUST keep that handle’s “Received” queue at zero length by purging (dropping) existing messages in the queue and by dropping new messages from the queue as soon as they are received.
+
 </li>
 <li>
 The driver MUST complete all pended <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_get_next_subscribed_message.md">IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE</a>  requests on that handle with STATUS_CANCELLED.
+
 </li>
 </ul>
 </li>
 <li>
 	If a publication handle is “Disabled”, the provider MUST NOT transmit the publication’s message and it MUST complete all pended <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_get_next_transmitted_message.md">IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE</a> requests on that handle with STATUS_CANCELLED
+
 </li>
 </ul>
 
@@ -108,19 +117,23 @@ The driver MUST complete all pended <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_get_n
 
 	If a publication handle is “Disabled”, the provider MUST NOT transmit the publication’s message and it MUST complete all pended <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_get_next_transmitted_message.md">IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE</a> requests on that handle with STATUS_CANCELLED
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +152,8 @@ Header
 <dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_NFP_DISABLE control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

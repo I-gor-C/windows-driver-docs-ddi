@@ -42,6 +42,7 @@ The routine <b>RtlDrainNonVolatileFlush</b> waits for the flushes initiated by <
     to finish.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ NTSTATUS RtlDrainNonVolatileFlush(
  A pointer to an opaque structure that has
         information about various properties of the non-volatile memory region which <a href="ifsk.rtlgetnonvolatiletoken">RtlGetNonVolatileToken</a> had returned.
 
+
 ## -returns
 The routine <b>RtlDrainNonVolatileFlush</b> returns one of the following:
 <dl>
@@ -69,30 +71,37 @@ The routine <b>RtlDrainNonVolatileFlush</b> returns one of the following:
 
  
 
+
 ## -remarks
  This routine <b>RtlDrainNonVolatileFlush</b> can also add more context to <b>NvToken</b> to help verifiers. This routine is currently not supported for Windows Server until the next major release of Windows Server.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1703
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +131,8 @@ RtlFlushNonVolatileMemory</a>
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDrainNonVolatileFlush routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

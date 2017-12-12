@@ -41,6 +41,7 @@ req.irql:
 An AVStream minidriver's <i>AVStrMiniRemoveEvent</i> routine is called when a client requests to be removed from the notification queue for an event. This routine is optional.
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ VOID AVStrMiniRemoveEvent(
 
 Pointer to the file object for which to remove the event.
 
+
 ### -param EventEntry [in]
 
 Pointer to an AVStream-generated <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure.
 
+
 ## -returns
 <i>AVStrMiniRemoveEvent</i> must return STATUS_SUCCESS.
+
 
 ## -remarks
 The minidriver specifies this routine's address in the <b>RemoveHandler</b> member of a <a href="stream.ksevent_item">KSEVENT_ITEM</a> structure. <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.
@@ -80,11 +84,13 @@ then the minidriver's <i>AVStrMiniRemoveEvent</i> must call <a href="kernel.remo
 
 Otherwise, your <i>AVStrMiniRemoveEvent</i> should reverse the steps taken in the <b>AddHandler</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,14 +101,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +152,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniRemoveEvent routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

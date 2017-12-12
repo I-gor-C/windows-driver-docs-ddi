@@ -7,8 +7,8 @@ old-location: storage\band_table_entry.htm
 old-project: storage
 ms.assetid: 6956327E-5407-4771-9BB9-F59D752A5410
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _BAND_TABLE_ENTRY, *PBAND_TABLE_ENTRY, BAND_TABLE_ENTRY
+ms.date: 12/8/2017
+ms.keywords: _BAND_TABLE_ENTRY, BAND_TABLE_ENTRY, *PBAND_TABLE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Banding information entries in <a href="storage.band_table">BAND_TABLE</a> are represented as <b>BAND_TABLE_ENTRY</b> structures. These entries contain location and security properties for a band configuration.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _BAND_TABLE_ENTRY {
 
 The band identifier for a configured band on a storage device.
 
+
 ### -field LocationInfo
 
 The band location information.
 
+
 ### -field SecurityInfo
 
 The band security information. This includes encryption algorithm information when selected in <a href="storage.enumerate_bands_parameters">ENUMERATE_BANDS_PARAMETERS</a>.
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ The band security information. This includes encryption algorithm information wh
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,5 +114,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20BAND_TABLE_ENTRY structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20BAND_TABLE_ENTRY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

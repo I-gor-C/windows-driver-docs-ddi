@@ -7,8 +7,8 @@ old-location: wdf\iwdfobject.htm
 old-project: wdf
 ms.assetid: d2668856-a25d-4329-b230-f36992f8f9a4
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IWDFObject</b> interface exposes the framework base object that provides the basic functionality common across all framework object types. All framework objects are derived from this root object.
+
 
 
 ## -inheritance
@@ -60,6 +62,7 @@ The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieve
 
  
 
+
 ## -members
 The <b>IWDFObject</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -73,6 +76,7 @@ The <b>IWDFObject</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfobject_acquirelock">AcquireLock</a> method prevents the framework from calling methods of interfaces that a driver registered.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -81,6 +85,7 @@ The <a href="wdf.iwdfobject_acquirelock">AcquireLock</a> method prevents the fra
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfobject_assigncontext">AssignContext</a> method registers a context and a driver-supplied cleanup callback function for the object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -89,6 +94,7 @@ The <a href="wdf.iwdfobject_assigncontext">AssignContext</a> method registers a 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfobject_deletewdfobject">DeleteWdfObject</a> method deletes a previously created Microsoft Windows Driver Frameworks (WDF) object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -97,6 +103,7 @@ The <a href="wdf.iwdfobject_deletewdfobject">DeleteWdfObject</a> method deletes 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the <a href="wdf.iwdfobject_acquirelock">IWDFObject::AcquireLock</a> method.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -105,6 +112,7 @@ The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the frame
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieves a context that was previously registered through the <a href="wdf.iwdfobject_assigncontext">IWDFObject::AssignContext</a> method.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfobject_acquirelock">AcquireLock</a> method prevents the framework from calling methods of interfaces that a driver registered.
@@ -119,6 +127,7 @@ The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieve
 
  
 
+
 ## -remarks
 
 
@@ -127,6 +136,7 @@ The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieve
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -137,22 +147,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -163,6 +178,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

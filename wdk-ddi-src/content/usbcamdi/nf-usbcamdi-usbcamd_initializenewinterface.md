@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_InitializeNewInterface</b> function provides USBCAMD with all the necessary information to configure the camera minidriver to work correctly with the stream class driver and the USB bus driver.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ ULONG USBCAMD_InitializeNewInterface(
 
 Pointer to device-specific context.
 
+
 ### -param DeviceData [in]
 
 Pointer to a <a href="stream.usbcamd_device_data2">USBCAMD_DEVICE_DATA2</a> structure.
+
 
 ### -param Version [in]
 
 Specifies the version information. This value should be set to the value USBCAMD_VERSION_200 for use with USBCAMD version 2.0.
 
+
 ### -param CamControlFlag [in]
 
 Specifies how USBCAMD and the camera minidriver should interact. The camera minidriver should set this value to one or more of the following:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -79,51 +84,63 @@ Specifies how USBCAMD and the camera minidriver should interact. The camera mini
 <tr>
 <td>
 USBCAMD_CamControlFlag_NoVideoRawProcessing
+
 </td>
 <td>
 If the camera minidriver does not need to operate on video, it should set the USBCAMD_CamControlFlag_NoVideoRawProcessing. This eliminates one buffer copy.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_CamControlFlag_NoStillRawProcessing
+
 </td>
 <td>
 If the camera minidriver does not need to operate on the still image raw frame, it should set the USBCAMD_CamControlFlag_NoStillRawProcessing bit to eliminate one buffer copy.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_CamControlFlag_AssociatedFormat
+
 </td>
 <td>
 The USBCAMD_CamControlFlag_AssociatedFormat bit should be set if the camera minidriver uses the same format for video as it does on the virtual still pin. After this flag is set, USBCAMD does not permit the virtual still pin to be opened in a format different from the video pin. The USBCAMD_CamControlFlag_AssociatedFormat bit should be set only when the virtual still pin produces frames of the same format as the video frames.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_CamControlFlag_EnableDeviceEvents
+
 </td>
 <td>
 Setting the USBCAMD_CamControlFlag_EnableDeviceEvents exposes a device event to the stream class driver and Microsoft DirectShow. This enables an STI monitor to launch a still image application if the still button is pressed on the camera. USBCAMD sends a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561912">KSEVENT_VIDCAPTOSTI_EXT_TRIGGER</a> event if this bit is set and the camera's still button is pressed.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>USBCAMD_InitializeNewInterface</b> returns the value USBCAMD_VERSION_200.
+
 
 ## -remarks
 This function is only called by USBCAMD version 2.0.
 
 The <b>USBCAMD_InitializeNewInterface</b> function must be called by the camera minidriver upon receiving an <a href="https://msdn.microsoft.com/library/windows/hardware/ff568185">SRB_INITIALIZE_DEVICE</a> request. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +151,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,6 +162,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -163,5 +182,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_InitializeNewInterface function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

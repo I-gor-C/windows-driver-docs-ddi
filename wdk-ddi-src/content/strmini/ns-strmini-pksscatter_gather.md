@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 10AFDC4B-75E5-4E88-A614-60043848C570
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSSCATTER_GATHER, *PKSSCATTER_GATHER, KSSCATTER_GATHER
+ms.keywords: PKSSCATTER_GATHER, KSSCATTER_GATHER, *PKSSCATTER_GATHER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

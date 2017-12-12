@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_gtfcompliance.htm
 old-project: display
 ms.assetid: f66bee69-206d-4e94-aca8-72f59569ab4a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_GTFCOMPLIANCE, D3DKMDT_GTFCOMPLIANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The D3DKMDT_GTFCOMPLIANCE enumeration is reserved for system use. Do not use it in your driver.
 
 
+
 ## -syntax
 
 ````
@@ -71,14 +72,17 @@ typedef enum _D3DKMDT_GTFCOMPLIANCE {
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

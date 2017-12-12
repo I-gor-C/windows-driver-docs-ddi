@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 7cb25991-4e82-4da2-9d1f-fadc035b25a3
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _PCI_EXPRESS_AER_CAPABILITIES, *PPCI_EXPRESS_AER_CAPABILITIES, PCI_EXPRESS_AER_CAPABILITIES
+ms.keywords: _PCI_EXPRESS_AER_CAPABILITIES, PCI_EXPRESS_AER_CAPABILITIES, *PPCI_EXPRESS_AER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PCI_EXPRESS_AER_CAPABILITIES structure describes a PCI Express (PCIe) advanced error capabilities and control register of a PCIe advanced error reporting capability structure.
 
 
+
 ## -syntax
 
 ````
@@ -65,40 +66,49 @@ typedef union _PCI_EXPRESS_AER_CAPABILITIES {
 
 The bit position of the first error that was reported in the PCIe uncorrectable error status register.
 
+
 ### -field ECRCGenerationCapable
 
 A single bit that indicates that the device is capable of generating end-to-end cyclic redundancy checks (ECRC).
+
 
 ### -field ECRCGenerationEnable
 
 A single bit that indicates that ECRC generation is enabled.
 
+
 ### -field ECRCCheckCapable
 
 A single bit that indicates that the device is capable of checking ECRC.
+
 
 ### -field ECRCCheckEnable
 
 A single bit that indicates that ECRC checking is enabled.
 
+
 ### -field Reserved
 
 Reserved.
 
+
 ### -field AsULONG
 
 A ULONG representation of the contents of the PCI_EXPRESS_AER_CAPABILITIES structure.
+
 
 ## -remarks
 The PCI_EXPRESS_AER_CAPABILITIES structure is available in Windows Server 2008 and later versions of Windows.
 
 A PCI_EXPRESS_AER_CAPABILITIES structure is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537472">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a> structures.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,5 +131,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_EXPRESS_AER_CAPABILITIES union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

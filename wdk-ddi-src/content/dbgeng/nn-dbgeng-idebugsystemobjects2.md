@@ -7,7 +7,7 @@ old-location: debugger\idebugsystemobjects2.htm
 old-project: debugger
 ms.assetid: 9e354357-590b-45cf-bace-5b431f408422
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,6 +57,7 @@ Sets the implicit thread for the current process.
 
  
 
+
 ## -members
 The <b>IDebugSystemObjects2</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -70,6 +71,7 @@ The <b>IDebugSystemObjects2</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Returns the length of time the current process has been running.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -78,6 +80,7 @@ Returns the length of time the current process has been running.
 </td>
 <td align="left" width="63%">
 Returns the implicit process for the current target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -87,6 +90,7 @@ Returns the implicit process for the current target.
 <td align="left" width="63%">
 Returns the implicit thread for the current process.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -95,6 +99,7 @@ Returns the implicit thread for the current process.
 </td>
 <td align="left" width="63%">
 Sets the implicit process for the current target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -103,6 +108,7 @@ Sets the implicit process for the current target.
 </td>
 <td align="left" width="63%">
 Sets the implicit thread for the current process.
+
 </td>
 </tr>
 </table>Returns the length of time the current process has been running.
@@ -118,6 +124,7 @@ Sets the implicit thread for the current process.
 
  
 
+
 ## -remarks
 
 
@@ -126,6 +133,7 @@ Sets the implicit thread for the current process.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSystemObjects2 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSystemObjects2 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

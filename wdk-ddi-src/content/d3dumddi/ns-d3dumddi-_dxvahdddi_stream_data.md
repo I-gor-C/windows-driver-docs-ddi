@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_stream_data.htm
 old-project: display
 ms.assetid: 3b8fc849-8794-4dab-af28-a1c0dfd859d3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVAHDDDI_STREAM_DATA, DXVAHDDDI_STREAM_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed. 
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 
 [in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="display.dxvahdddi_vpdevcaps">DXVAHDDDI_VPDEVCAPS</a> structure.  
 
+
 ### -field OutputIndex
 
 [in] A zero-based cyclic frame index number of the output frames that are composed. 
+
 
 ### -field InputFrameOrField
 
 [in] A zero-based frame number of the input frames or fields that are processed.
 
+
 ### -field PastFrames
 
 [in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="display.dxvahdddi_vpcaps">DXVAHDDDI_VPCAPS</a> structure.  
+
 
 ### -field FutureFrames
 
 [in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="display.dxvahdddi_vpcaps">DXVAHDDDI_VPCAPS</a> structure.  
 
+
 ### -field pPastSurfaces
 
 [in] An array of <a href="display.dxvahdddi_surface">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces. 
+
 
 ### -field InputSurface
 
 [in] A <a href="display.dxvahdddi_surface">DXVAHDDDI_SURFACE</a> structure that describes the input surface. 
 
+
 ### -field pFutureSurfaces
 
 [in] An array of <a href="display.dxvahdddi_surface">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces. 
+
 
 ## -remarks
 The driver must allocate the surfaces that the <b>pPastSurfaces</b>, <b>InputSurface</b>, and <b>pFutureSurfaces</b> members specify in the pool type, which the driver sets in the <b>InputPool</b> member of the <a href="display.dxvahdddi_vpdevcaps">DXVAHDDDI_VPDEVCAPS</a> structure, and with one of the following surface types; otherwise, the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_videoprocessblthd.md">VideoProcessBltHD</a> function returns an error.
@@ -192,19 +201,23 @@ InputSurface = T, T, T+7, T+7, T+15, T+15,...  (note that T+7 frame contains 15t
 
 The following pseudo-code example shows the interaction between the application (APP) and the driver (DRV) while performing Inverse Telecine (IVTC) on 3:2 pull-down, 30 frames (60 fields) per second interlaced content:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 DXVAHDDDI_STREAM_DATA is supported beginning with the Windows 7 operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -239,5 +252,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_DATA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_DATA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

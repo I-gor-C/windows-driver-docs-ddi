@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>__RxSynchronizeBlockingOperations</b> synchronizes blocking I/O requests to the same work queue. 
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ NTSTATUS __RxSynchronizeBlockingOperations(
 
 A pointer to the RX_CONTEXT of the operation being synchronized. 
 
+
 ### -param Fcb [in]
 
 A pointer to the FCB. 
+
 
 ### -param BlockingIoQ [in, out]
 
 A pointer to the LIST_ENTRY for the queue. 
 
+
 ### -param DropFcbLock [in]
 
 A Boolean value that indicates if the FCB resource should be released. If this parameter is <b>TRUE</b>, then the FCB resource will be released. 
+
 
 ## -returns
 <b>__RxSynchronizeBlockingOperations</b> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value such as one of the following: 
@@ -82,6 +87,7 @@ A Boolean value that indicates if the FCB resource should be released. If this p
 </dl>The <i>RxContext</i> was for an asynchronous operation and the <i>RxContext</i> has been added to the queue.
 
  
+
 
 ## -remarks
 The<b> __RxSynchronizeBlockingOperations</b> routine synchronizes blocking I/O requests to the same work queue. RDBSS uses <b>__RxSynchronizeBlockingOperations</b> internally to synchronize named pipe operations. The work queue is the queue referenced by the file object extension (FOBX) associated with the <i>Fcb</i>. 
@@ -100,11 +106,13 @@ The following two macros are defined on Windows Server 2003 or later for calling
 
 <b>RxSynchronizeBlockingOperationsAndDropFcbLock</b> - calls with the <i>DropFcbLock</i> parameter set to <b>TRUE</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -115,14 +123,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The __RxSynchronizeBlockingOperations routine is only available on Windows Server 2003. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,5 +171,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20__RxSynchronizeBlockingOperations function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

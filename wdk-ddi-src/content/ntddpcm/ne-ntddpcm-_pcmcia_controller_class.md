@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL (See Remarks section.)
 The PCMCIA_CONTROLLER_CLASS enumeration lists the different sorts of PC Card and CardBus controllers.
 
 
+
 ## -syntax
 
 ````
@@ -71,65 +72,81 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
 
 Indicates that the controller class is invalid. 
 
+
 ### -field PcmciaIntelCompatible
 
 Indicates an Intel-compatible controller. 
+
 
 ### -field PcmciaCardBusCompatible
 
 Indicates a cardbus-compatible controller. 
 
+
 ### -field PcmciaElcController
 
 Indicates an ELC controller. 
+
 
 ### -field PcmciaDatabook
 
 Indicates a controller from the Databook TCIC family of controllers. 
 
+
 ### -field PcmciaPciPcmciaBridge
 
 Indicates a PCI to PCMCIA bridge. 
+
 
 ### -field PcmciaCirrusLogic
 
 Indicates a CirrusLogic cardbus controller. 
 
+
 ### -field PcmciaTI
 
 Indicates a TI cardbus controller. 
+
 
 ### -field PcmciaTopic
 
 Indicates a Toshiba Topic cardbus controller. 
 
+
 ### -field PcmciaRicoh
 
 Indicates a Ricoh cardbus controller. 
+
 
 ### -field PcmciaDatabookCB
 
 Indicates a Databook cardbus controller. 
 
+
 ### -field PcmciaOpti
 
 Indicates an OPTI cardbus controller. 
+
 
 ### -field PcmciaTrid
 
 Indicates a TRID controller. 
 
+
 ### -field PcmciaO2Micro
 
 Indicates an O2Micro cardbus controller. 
+
 
 ### -field PcmciaNEC
 
 Indicates a Yenta-compliant NEC cardbus controller. 
 
+
 ### -field PcmciaNEC_98
 
 Indicates a NEC cardbus controller.
+
 
 ## -remarks
 
@@ -139,6 +156,7 @@ Indicates a NEC cardbus controller.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,5 +173,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCMCIA\buses]:%20PCMCIA_CONTROLLER_CLASS enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>FltSendMessage</b> sends a message to a waiting user-mode application on behalf of a minifilter driver or a minifilter driver instance. 
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ NTSTATUS FltSendMessage(
 
 Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param ClientPort [in]
 
 A pointer to a variable that contains the opaque client port pointer for the connection port between the user-mode application and the kernel-mode minifilter driver. For more information about the client port pointer, see the description of the <i>ConnectNotifyCallback</i> parameter in the reference entry for <a href="ifsk.fltcreatecommunicationport">FltCreateCommunicationPort</a>. 
+
 
 ### -param SenderBuffer [in]
 
 A pointer to a caller-allocated buffer containing the message to be sent to the user-mode application. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param SenderBufferLength [in]
 
 Size, in bytes, of the buffer that <i>SenderBuffer </i>points to. See Remarks.
+
 
 ### -param ReplyBuffer [out, optional]
 
 A pointer to a caller-allocated buffer that receives the reply (if any) from the application. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param ReplyLength [in, out]
 
 Size, in bytes, of the buffer that <i>ReplyBuffer </i>points to. 
 
+
 ### -param Timeout [in, optional]
 
 A pointer to a timeout value that specifies the total absolute or relative length of time, in units of 100 nanoseconds, for which the caller can be put into a wait state until the message is received by the user-mode application and until it receives a reply (if one is expected). Set to <b>NULL</b> if the caller can be put into a wait state indefinitely. 
+
 
 ## -returns
 <b>FltSendMessage</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -99,6 +107,7 @@ A pointer to a timeout value that specifies the total absolute or relative lengt
 </dl>The <i>Timeout</i> interval expired before the message could be delivered or before a reply was received. This is a success code. 
 
  
+
 
 ## -remarks
 <b>FltSendMessage</b> sends a message to a user-mode application on behalf of a minifilter driver or a minifilter driver instance. 
@@ -123,11 +132,13 @@ If <i>Timeout</i> is zero when the minifilter driver is waiting for the reply, t
 <p class="note">Given this structure, it might seem obvious that the caller of <a href="ifsk.filterreplymessage">FilterReplyMessage</a> would set the <i>dwReplyBufferSize</i> parameter to <b>sizeof(REPLY_STRUCT)</b> and the <i>ReplyLength</i> parameter of <b>FltSendMessage</b> to the same value.  However, because of structure padding idiosyncrasies, <b>sizeof(REPLY_STRUCT)</b> might be larger than <b>sizeof(FILTER_REPLY_HEADER) + sizeof(MY_STRUCT)</b>.  If this is the case, <b>FltSendMessage</b> returns STATUS_BUFFER_OVERFLOW.
 <p class="note">Therefore, we recommend that you call <a href="ifsk.filterreplymessage">FilterReplyMessage</a> and <b>FltSendMessage</b> (leveraging the above example) by setting <i>dwReplyBufferSize</i> and <i>ReplyLength</i> both to s<b>izeof(FILTER_REPLY_HEADER) + sizeof(MY_STRUCT)</b> instead of <b>sizeof(REPLY_STRUCT)</b>. This ensures that any extra padding at the end of the REPLY_STRUCT structure is ignored.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -138,14 +149,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +170,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -166,6 +181,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -176,9 +192,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -199,5 +217,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSendMessage function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\ip_offload_stats.htm
 old-project: netvista
 ms.assetid: f40c5734-2546-40c3-a6fb-58f728c3cc5e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,10 +39,12 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The IP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a
   query of 
   <a href="https://msdn.microsoft.com/library/windows/hardware/ff569758">OID_IP4_OFFLOAD_STATS</a> or 
   <a href="https://msdn.microsoft.com/library/windows/hardware/ff569759">OID_IP6_OFFLOAD_STATS</a>.
+
 
 
 ## -syntax
@@ -71,6 +73,7 @@ The total number of input IP datagrams that have been received from the interfac
      connections, including IP datagrams received in error. See 
      "ipInReceives" in RFC 2011.
 
+
 ### -field InOctets
 
 The total number of octets (bytes) in input IP datagrams that have been received from the
@@ -78,11 +81,13 @@ The total number of octets (bytes) in input IP datagrams that have been received
      <b>InReceives</b> must be counted here. 
      <b>InOctets</b> must include the number of bytes in the IP header and payload.
 
+
 ### -field InDelivers
 
 The number of input IP datagrams that were successfully delivered to offloaded TCP connections.
      See 
      "ipInDelivers" in RFC 2011.
+
 
 ### -field OutRequests
 
@@ -90,12 +95,14 @@ The number of IP datagrams that the offload target supplied to its IP layer in r
      transmission on offloaded TCP connections. See 
      "ipOutRequests" in RFC 2011.
 
+
 ### -field OutOctets
 
 The total number of octets (bytes) in IP datagrams that the offload target supplied to its IP
      layer in requests for transmission on offloaded TCP connections. Octets from datagrams counted in 
      <b>OutRequests</b> must be counted here. 
      <b>OutOctets</b> must include the number of bytes in the IP header and payload.
+
 
 ### -field InHeaderErrors
 
@@ -106,6 +113,7 @@ The number of input IP datagrams received on offloaded TCP connections that were
      errors resulting from invalid destination addresses. See 
      "ipInHdrErrors" in RFC 2011.
 
+
 ### -field InTruncatedPackets
 
 The number of input IP datagrams discarded because the datagram frame didn't carry enough data. 
@@ -114,12 +122,14 @@ The number of input IP datagrams discarded because the datagram frame didn't car
      as 
      <b>InHeaderErrors</b> .
 
+
 ### -field InDiscards
 
 The number of input IP datagrams received on offloaded TCP connections that contained nothing to
      prevent their further processing but that were discarded for run-time reasons, such as a lack of
      available memory or other resources. See 
      "ipInDiscards" in RFC 2011.
+
 
 ### -field OutDiscards
 
@@ -128,12 +138,14 @@ The number of output IP datagrams that the offload target supplied to its IP lay
      as a lack of memory or other resources. See 
      "ipOutDiscards" in RFC 2011.
 
+
 ### -field OutNoRoutes
 
 The number of output IP datagrams that the offload target supplied to its IP layer that were
      discarded because no route (such as an offloaded path state object) could be found to transmit them to
      their destination. See 
      "ipOutNoRoutes" in RFC 2011.
+
 
 ## -remarks
 The statistics in the IP_OFFLOAD_STATS structure pertain only to IP datagrams that the offload target
@@ -172,11 +184,13 @@ Note that the host stack supplies an IP_OFFLOAD_STATS structure when setting OID
 All of the counters that supply the values for the IP_OFFLOAD_STATS structure wrap (restart from zero)
     when incremented beyond their maximum counts.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -203,5 +217,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IP_OFFLOAD_STATS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IP_OFFLOAD_STATS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

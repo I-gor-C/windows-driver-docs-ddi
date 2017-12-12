@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>_URB_OS_FEATURE_DESCRIPTOR_REQUEST</b> structure is used by the USB hub driver to retrieve Microsoft OS Feature Descriptors from a USB device or an interface on a USB device.
 
 
+
 ## -syntax
 
 ````
@@ -67,25 +68,31 @@ Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure th
 <b>Hdr.Length</b> must be <code>sizeof(_URB_OS_FEATURE_DESCRIPTOR_REQUEST)</code>.
 
 
+
 ### -field TransferBufferLength
 
 Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes read in this member.  Current implementation of this function limits the maximum MS OS Feature Descriptor size to 4 Kilobytes.
+
 
 ### -field TransferBuffer
 
 Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. 
 
+
 ### -field TransferBufferMDL
 
 Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. This MDL must be allocated from nonpaged pool.
+
 
 ### -field UrbLink
 
 Reserved. Do not use.
 
+
 ### -field Recipient
 
 Specifies whether the recipient is the USB device or an interface on the USB device.  One of the following values must be specified:
+
 <ul>
 <li>0 indicates that the USB device is the recipient of the request.
 </li>
@@ -99,30 +106,37 @@ Specifies whether the recipient is the USB device or an interface on the USB dev
 
 Indicates the interface number that is the recipient of the request, if the <b>Recipient</b> member value is 1. Must be set to 0 if the USB device is the recipient.
 
+
 ### -field MS_PageIndex
 
 Must be set to 0. Page index of the 64K page of the MS OS Feature Descriptor to be returned.  Current implementation only supports a maximum descriptor size of 4K.
+
 
 ### -field MS_FeatureDescriptorIndex
 
 Index for MS OS Feature Descriptor to be requested.
 
+
 ## -remarks
 The reserved members of this structure must be treated as opaque and are reserved for system use.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_OS_FEATURE_DESCRIPTOR_REQUEST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,10 +42,12 @@ The <b>IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR</b>
    control code obtains the physical descriptor of a HIDClass device.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 A UMDF-based driver obtains the size, in bytes, of the buffer by calling <a href="wdf.iwdfiorequest_getdeviceiocontrolparameters">IWDFRequest::GetDeviceIoControlParameters</a> and providing the  <i>pOutBufferSize</i> parameter.
+
 
 ### -input-buffer-length
 
@@ -53,8 +55,10 @@ A UMDF-based driver obtains the size, in bytes, of the buffer by calling <a href
 ### -output-buffer
 The driver copies the physical descriptor to the user buffer that is retrieved by calling <a href="wdf.iwdfiorequest_getoutputmemory">IWDFIoRequest::GetOutputMemory</a>.
 
+
 ### -output-buffer-length
 The size of the buffer that is retrieved by calling <a href="wdf.iwdfiorequest_getoutputmemory">IWDFIoRequest::GetOutputMemory</a>.
+
 
 ### -in-out-buffer
 
@@ -68,6 +72,7 @@ The size of the buffer that is retrieved by calling <a href="wdf.iwdfiorequest_g
 I/O Status block
 HID minidrivers that carry out the I/O to the device must also:
 
+
 ## -remarks
 
 
@@ -76,14 +81,17 @@ HID minidrivers that carry out the I/O to the device must also:
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.11
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\wdf]:%20IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

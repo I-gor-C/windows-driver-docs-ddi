@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IServiceGroup</code> interface encapsulates a group of objects that all require notification of the same service request. When the service group object receives notification of the request, it forwards the notification to each of the objects in the group. The PortCls system driver implements the <code>IServiceGroup</code> interface and exposes it to miniport drivers. A miniport driver creates an <code>IServiceGroup</code> object by calling <a href="audio.pcnewservicegroup">PcNewServiceGroup</a>. <code>IServiceGroup</code> inherits from the <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> interface.
+
 Port drivers typically use service group objects to demultiplex requests for interrupt service, although the functionality of a service group is general enough to make it potentially useful for other purposes as well. For more information, see <a href="https://msdn.microsoft.com/00e17e01-8889-4fae-a0ff-e110d7a9b21e">Service Sink and Service Group Objects</a>.
+
 
 
 ## -inheritance
@@ -59,6 +61,7 @@ The <code>SupportDelayedService</code> method indicates that the service group s
 
  
 
+
 ## -members
 The <b>IServiceGroup</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -72,6 +75,7 @@ The <b>IServiceGroup</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <code>AddMember</code> method adds a member to the service group.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -80,6 +84,7 @@ The <code>AddMember</code> method adds a member to the service group.
 </td>
 <td align="left" width="63%">
 The <code>CancelDelayedService</code> method cancels the previously requested delayed service.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -88,6 +93,7 @@ The <code>CancelDelayedService</code> method cancels the previously requested de
 </td>
 <td align="left" width="63%">
 The <code>RemoveMember</code> method removes the specified member from the service group.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -96,6 +102,7 @@ The <code>RemoveMember</code> method removes the specified member from the servi
 </td>
 <td align="left" width="63%">
 The <code>RequestDelayedService</code> method requests service after the specified delay.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -104,6 +111,7 @@ The <code>RequestDelayedService</code> method requests service after the specifi
 </td>
 <td align="left" width="63%">
 The <code>SupportDelayedService</code> method indicates that the service group should prepare to support delayed service.
+
 </td>
 </tr>
 </table>The <code>AddMember</code> method adds a member to the service group.
@@ -118,6 +126,7 @@ The <code>SupportDelayedService</code> method indicates that the service group s
 
  
 
+
 ## -remarks
 
 
@@ -126,6 +135,7 @@ The <code>SupportDelayedService</code> method indicates that the service group s
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

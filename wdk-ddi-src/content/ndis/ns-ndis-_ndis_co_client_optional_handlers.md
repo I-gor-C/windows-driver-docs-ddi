@@ -7,8 +7,8 @@ old-location: netvista\ndis_co_client_optional_handlers.htm
 old-project: netvista
 ms.assetid: 1f2285bb-be70-4496-905d-89106bf3712a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_CO_CLIENT_OPTIONAL_HANDLERS, *PNDIS_CO_CLIENT_OPTIONAL_HANDLERS, NDIS_CO_CLIENT_OPTIONAL_HANDLERS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_CO_CLIENT_OPTIONAL_HANDLERS, NDIS_CO_CLIENT_OPTIONAL_HANDLERS, *PNDIS_CO_CLIENT_OPTIONAL_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_CO_CLIENT_OPTIONAL_HANDLERS structure
@@ -42,6 +42,7 @@ The NDIS_CO_CLIENT_OPTIONAL_HANDLERS structure specifies entry points for CoNDIS
   <i>ProtocolXxx</i> functions for the protocol driver that passes this structure to the 
   <a href="netvista.ndissetoptionalhandlers">
   NdisSetOptionalHandlers</a> function.
+
 
 
 ## -syntax
@@ -86,19 +87,23 @@ The
      <b>Revision</b> member to NDIS_CO_CLIENT_OPTIONAL_HANDLERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_CO_CLIENT_OPTIONAL_HANDLERS_REVISION_1.
 
+
 ### -field Reserved
 
 Reserved for NDIS.
+
 
 ### -field ClCreateVcHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
+
 ### -field ClDeleteVcHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function.
+
 
 ### -field ClOidRequestHandler
 
@@ -106,11 +111,13 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
      ProtocolCoOidRequest</a> function.
 
+
 ### -field ClOidRequestCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
      ProtocolCoOidRequestComplete</a> function.
+
 
 ### -field ClOpenAfCompleteHandlerEx
 
@@ -118,11 +125,13 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">
      ProtocolClOpenAfCompleteEx</a> function.
 
+
 ### -field ClCloseAfCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">
      ProtocolClCloseAfComplete</a> function.
+
 
 ### -field ClRegisterSapCompleteHandler
 
@@ -131,11 +140,13 @@ The entry point of the caller's
      ProtocolClRegisterSapComplete</a> function. A client uses this function to accept incoming calls from
      remote machines.
 
+
 ### -field ClDeregisterSapCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_deregister_sap_complete.md">
      ProtocolClDeregisterSapComplete</a> function.
+
 
 ### -field ClMakeCallCompleteHandler
 
@@ -143,6 +154,7 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">
      ProtocolClMakeCallComplete</a> function. A client uses this function to make outgoing calls to remote
      machines.
+
 
 ### -field ClModifyCallQoSCompleteHandler
 
@@ -152,11 +164,13 @@ The entry point of the caller's
      in the quality of service (QoS) on an established virtual connection (VC) or to negotiate with the call
      manager to establish the QoS when the client sets up an incoming call.
 
+
 ### -field ClCloseCallCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">
      ProtocolClCloseCallComplete</a> function.
+
 
 ### -field ClAddPartyCompleteHandler
 
@@ -165,11 +179,13 @@ The entry point of the caller's
      ProtocolClAddPartyComplete</a> function. A client uses this function to establish point-to-multipoint
      VCs for outgoing calls to remote machines.
 
+
 ### -field ClDropPartyCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">
      ProtocolClDropPartyComplete</a> function.
+
 
 ### -field ClIncomingCallHandler
 
@@ -178,6 +194,7 @@ The entry point of the caller's
      ProtocolClIncomingCall</a> function. A client uses this function to accept incoming calls from remote
      machines.
 
+
 ### -field ClIncomingCallQoSChangeHandler
 
 The entry point of the caller's 
@@ -185,17 +202,20 @@ The entry point of the caller's
      ProtocolClIncomingCallQoSChange</a> function. A client uses this function to accept incoming calls
      from remote machines on which the sending client can dynamically change the QoS.
 
+
 ### -field ClIncomingCloseCallHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">
      ProtocolClIncomingCloseCall</a> function.
 
+
 ### -field ClIncomingDropPartyHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">
      ProtocolClIncomingDropParty</a> function.
+
 
 ### -field ClCallConnectedHandler
 
@@ -204,11 +224,13 @@ The entry point of the caller's
      ProtocolClCallConnected</a> function. A client uses this function to accept incoming calls from remote
      machines.
 
+
 ### -field ClNotifyCloseAfHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_notify_close_af.md">
      ProtocolClNotifyCloseAf</a> function.
+
 
 ## -remarks
 To specify entry points as a CoNDIS client, a protocol driver initializes an
@@ -226,19 +248,23 @@ The client calls
     does not support, its placeholder 
     <i>ProtocolXxx</i> functions should return NDIS_STATUS_NOT_SUPPORTED.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -323,5 +349,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CLIENT_OPTIONAL_HANDLERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CLIENT_OPTIONAL_HANDLERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

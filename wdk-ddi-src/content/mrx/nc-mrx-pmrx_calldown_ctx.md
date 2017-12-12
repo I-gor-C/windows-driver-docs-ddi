@@ -41,6 +41,7 @@ req.irql:
 The<i>MRxStart</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to start the network mini-redirector.
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS MRxStart(
 
 A pointer to the RX_CONTEXT structure. This parameter contains the IRP that requested the network mini-redirector to start. 
 
+
 ### -param RxDeviceObject [in, out]
 
 A pointer to the RDBSS_DEVICE_OBJECT structure for this network mini-redirector. 
+
 
 ## -returns
 <i>MRxStart</i> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following: 
@@ -74,6 +77,7 @@ A pointer to the RDBSS_DEVICE_OBJECT structure for this network mini-redirector.
 </dl>The network mini-redirector was unable to start successfully.
 
  
+
 
 ## -remarks
 <i>MRxStart</i> completes the initialization of the network mini-redirector from the RDBSS perspective. Note that this is different from the initialization done in the <b>DriverEntry</b> routine. Any initialization that depends on RDBSS should be done as part of this routine while the initialization that is independent of RDBSS should be done in the <b>DriverEntry</b> routine.
@@ -92,11 +96,13 @@ If <i>MRxStart</i> returns STATUS_SUCCESS, RDBSS sets the state of RDBSS to RDBS
 
 A network mini-redirector would normally maintain an internal variable indicating whether the network mini-redirector is started. For example, a network mini-redirector might track when it is stopped, started, and when a start operation or stop operation is in progress. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +113,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +136,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxStart routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

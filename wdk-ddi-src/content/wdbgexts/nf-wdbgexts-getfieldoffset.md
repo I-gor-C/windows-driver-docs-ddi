@@ -7,7 +7,7 @@ old-location: debugger\getfieldoffset.htm
 old-project: debugger
 ms.assetid: 3e5e782b-1a72-446d-9d15-c0f513f3440c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GetFieldOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GetFieldOffset</b> function returns the offset of a member from the beginning of a structure.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ __inline ULONG GetFieldOffset(
 
 Specifies the name of the type of the structure.  This can be qualified with a module name, for example, <b>mymodule!mystruct</b>.
 
+
 ### -param Field [in]
 
 Specifies the name of the member in the structure.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield".
+
 
 ### -param pOffset [out]
 
 Receives the offset of the member from the beginning of an instance of the structure.
 
+
 ## -returns
 If the function succeeds, the return value is zero. Otherwise, the return value is an <a href="https://msdn.microsoft.com/41d64bbc-cefe-4665-b054-e6bd135ccd20">IG_DUMP_SYMBOL_INFO error code</a>. 
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ If the function succeeds, the return value is zero. Otherwise, the return value 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

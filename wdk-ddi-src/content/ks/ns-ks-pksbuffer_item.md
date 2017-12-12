@@ -41,6 +41,7 @@ req.irql:
 The KSBUFFER_ITEM structure is used to store a list of data buffers copied from the event source, which can be retrieved by the event sink through KSEVENT_TYPE_QUERYBUFFER.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct {
 
 A structure of type <a href="stream.ksdpc_item">KSDPC_ITEM</a>. May be used by internal DPCs; do not use for data buffering.
 
+
 ### -field BufferList
 
 Specifies the head of a list of pool allocated buffers that are created by calls to <a href="stream.ksgeneratedataevent">KsGenerateDataEvent</a> for events that have buffering enabled.
 
+
 ## -remarks
 KSBUFFER_ITEM extends the normal deferred procedure call (DPC) structure, which may be needed for event generation, but does not use the structure itself.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,5 +93,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSBUFFER_ITEM structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

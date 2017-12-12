@@ -43,6 +43,7 @@ Used to locate the WPP log
 for WER reporting.
 
 
+
 ## -syntax
 
 ````
@@ -62,21 +63,26 @@ typedef struct _WPP_TRIAGE_INFO {
 
 Size of WPP_AUTOLOG_HEADER.
 
+
 ### -field WppDriverContextOffset
 
 Offset of DriverContext into WPP_AUTOLOG_HEADER.
+
 
 ### -field WppAutoLogHeaderSizeOffset
 
 Offset of Size field into WPP_AUTOLOG_HEADER.
 
+
 ### -field WppSizeOfAutoLogHeaderSizeField
 
  Size of Header size field.
 
+
 ### -field WppDriverContextSize
 
  Size of WPP_AUTOLOG_CONTEXT.
+
 
 ## -remarks
 
@@ -86,6 +92,7 @@ Offset of Size field into WPP_AUTOLOG_HEADER.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

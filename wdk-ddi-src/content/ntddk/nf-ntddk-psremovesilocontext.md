@@ -7,7 +7,7 @@ old-location: kernel\psremovesilocontext.htm
 old-project: kernel
 ms.assetid: 3323EF1B-9EB3-4D56-A9A5-0A8397F8A235
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsRemoveSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine removes an object that was inserted in the <i>Silo</i>.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS PsRemoveSiloContext(
 
 The silo from which the object is to be removed. This parameter is required and it cannot be <b>NULL</b>.
 
+
 ### -param ContextSlot [in]
 
 A slot allocated by the <a href="kernel.psallocsilocontextslot">PsAllocSiloContextSlot</a> routine.
 
+
 ### -param ReturnedSiloContext 
 
 A pointer to a caller-allocated variable that receives the address of the removed object. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 The following NT status codes are returned.
@@ -80,30 +84,37 @@ The following NT status codes are returned.
 
  
 
+
 ## -remarks
 In a successful call to <b>PsRemoveSiloContext</b> where the <i>RemovedSiloContext</i> parameter is not <b>NULL</b> and does not point to <b>NULL</b>, the caller must decrement the object that the <i>RemovedSiloContext</i> parameter points to, by calling <a href="kernel.psdereferencesilocontext">PsDereferenceSiloContext</a> when it is no longer needed. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

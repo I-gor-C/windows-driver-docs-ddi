@@ -41,6 +41,7 @@ req.irql:
 The <b>AUDIO_CURVE_TYPE</b> enumeration defines constants that specify a curve algorithm to be applied to set a volume level. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _AUDIO_CURVE_TYPE {
 
 Specifies that no curve algorithm will be applied.  When this curve is specified, the duration of the curve specified must be equal to 0.
 
+
 ### -field AUDIO_CURVE_TYPE_WINDOWS_FADE
 
 Specifies that the algorithm that is applied to the volume setting must follow the curve shown in the diagram in the <b>Remarks</b> section.
+
 
 ## -remarks
 The following snippet of pseudocode shows the logic for the algorithm that is applied to the volume setting to reach the target volume level.<pre class="syntax" xml:space="preserve"><code>// POWER IN AMPLITUDE: 1.75
@@ -98,19 +101,23 @@ And the following diagram shows a graphical representation of the preceding pseu
 
 <img alt="Graphical representation of volume level curve" src="images/curve_type.png"/>
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +137,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20AUDIO_CURVE_TYPE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

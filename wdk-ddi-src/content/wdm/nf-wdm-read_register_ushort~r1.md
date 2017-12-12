@@ -7,7 +7,7 @@ old-location: kernel\read_register_ushort.htm
 old-project: kernel
 ms.assetid: d1160b0a-9969-44ba-82e7-14048e1554c2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: READ_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>READ_REGISTER_USHORT</b> routine reads a USHORT value from the specified register address.
 
 
+
 ## -syntax
 
 ````
@@ -57,17 +58,21 @@ USHORT READ_REGISTER_USHORT(
 
 Pointer to the register address, which must be a mapped range in memory space. 
 
+
 ## -returns
 <b>READ_REGISTER_USHORT</b> returns the USHORT value read from the specified register address.
 
+
 ## -remarks
 Callers of <b>READ_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +83,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +115,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +126,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

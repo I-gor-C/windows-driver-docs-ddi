@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver can register a routine of type PFLT_FILTER_UNLOAD_CALLBACK as the minifilter driver's <i>FilterUnloadCallback</i> routine. 
 
 
+
 ## -prototype
 
 ````
@@ -58,6 +59,7 @@ NTSTATUS FilterUnloadCallback(
 ### -param Flags 
 
 Bitmask of flags describing the unload request. This parameter can be <b>NULL</b> or the following: 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -66,13 +68,16 @@ Bitmask of flags describing the unload request. This parameter can be <b>NULL</b
 <tr>
 <td>
 FLTFL_FILTER_UNLOAD_MANDATORY
+
 </td>
 <td>
 The filter manager sets this flag to indicate that the unload operation is mandatory. 
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 This callback routine returns STATUS_SUCCESS or an NTSTATUS value such as the following: 
@@ -81,6 +86,7 @@ This callback routine returns STATUS_SUCCESS or an NTSTATUS value such as the fo
 </dl>If the unload operation is not mandatory, returning this status value prevents the minifilter driver from being unloaded. This is an error code. 
 
  
+
 
 ## -remarks
 When a minifilter driver registers itself by calling <a href="ifsk.fltregisterfilter">FltRegisterFilter</a>, it can register a <i>FilterUnloadCallback</i> routine. To register this callback routine, the minifilter driver stores the address of a routine of type PFLT_FILTER_UNLOAD_CALLBACK in the <b>FilterUnloadCallback</b> field of the <a href="ifsk.flt_registration">FLT_REGISTRATION</a> structure that the minifilter driver passes as a parameter to <b>FltRegisterFilter</b>. 
@@ -93,11 +99,13 @@ If the unload operation is not mandatory, and the <i>FilterUnloadCallback</i> ro
 
 If the FLTFL_FILTER_UNLOAD_MANDATORY flag is set in the <i>Flags</i> parameter, the unload operation is mandatory, and the minifilter driver cannot prevent itself from being unloaded. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +116,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,9 +127,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -135,5 +146,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_FILTER_UNLOAD_CALLBACK routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

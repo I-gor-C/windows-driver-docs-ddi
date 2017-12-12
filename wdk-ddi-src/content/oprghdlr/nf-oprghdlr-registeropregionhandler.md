@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>RegisterOpRegionHandler</b> routine registers an operation region handler with the <a href="https://msdn.microsoft.com/38ca54e0-defe-48b2-ab00-a5f688c2eb01">ACPI driver</a>.
 
 
+
 ## -syntax
 
 ````
@@ -62,13 +63,16 @@ NTSTATUS RegisterOpRegionHandler(
 
 Pointer to the physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>) that represents the ACPI device that defines the operation region.
 
+
 ### -param AccessType [in]
 
 Specifies ACPI_OPREGION_ACCESS_AS_COOKED.
 
+
 ### -param RegionSpace [in]
 
 Specifies one of the following types of region space.
+
 <table>
 <tr>
 <th>Region Space Identifier</th>
@@ -77,85 +81,106 @@ Specifies one of the following types of region space.
 <tr>
 <td>
 ACPI_OPREGION_REGION_SPACE_MEMORY
+
 </td>
 <td>
 System memory
+
 </td>
 </tr>
 <tr>
 <td>
 ACPI_OPREGION_REGION_SPACE_IO
+
 </td>
 <td>
 I/O space
+
 </td>
 </tr>
 <tr>
 <td>
 ACPI_OPREGION_REGION_SPACE_PCI_CONFIG
+
 </td>
 <td>
 PCI configuration
+
 </td>
 </tr>
 <tr>
 <td>
 ACPI_OPREGION_REGION_SPACE_EC
+
 </td>
 <td>
 Embedded controller
+
 </td>
 </tr>
 <tr>
 <td>
 ACPI_OPREGION_REGION_SPACE_SMB
+
 </td>
 <td>
 System Management Bus
+
 </td>
 </tr>
 <tr>
 <td>
 ACPI_OPREGION_REGION_SPACE_CMOS_CONFIG
+
 </td>
 <td>
 CMOS configuration
+
 </td>
 </tr>
 <tr>
 <td>
 ACPI_OPREGION_REGION_SPACE_PCIBARTARGET
+
 </td>
 <td>
 PCI Base Address Register
+
 </td>
 </tr>
 <tr>
 <td>
 Vendor-defined value from 0x80 to 0xFF
+
 </td>
 <td>
 Vendor-defined
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Handler [in]
 
 Pointer to the <a href="..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md">ACPI_OP_REGION_HANDLER</a>-typed operation region handler (supplied by an ACPI device function driver).
+
 
 ### -param Context [in]
 
 Pointer to a device-specific operation region context (supplied by an ACPI device function driver).
 
+
 ### -param Flags [in]
 
 Reserved for internal use.
 
+
 ### -param OperationRegionObject [out]
 
 Pointer to caller-allocated buffer that, on output, contains a pointer to the operation region object that the ACPI driver creates for the operation region.
+
 
 ## -returns
 Returns one of the following status values:
@@ -174,16 +199,19 @@ Returns one of the following status values:
 
  
 
+
 ## -remarks
 The operation region context specified by <i>Context</i> is device-specific and is only used by the function driver. Typically, the context is the device extension for the functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>). The ACPI driver passes this context back to the function driver when it calls the operation region handler. The operation region object is only used by a function driver to uniquely identify the operation region when it deregisters the operation region handler.
 
 For more information about operation regions, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/supporting-an-operation-region">Supporting an Operation Region</a>. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -194,6 +222,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -204,6 +233,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -214,9 +244,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -231,5 +263,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20RegisterOpRegionHandler routine%20 RELEASE:%20(12/2/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

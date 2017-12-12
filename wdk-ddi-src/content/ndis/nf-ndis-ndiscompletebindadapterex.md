@@ -7,7 +7,7 @@ old-location: netvista\ndiscompletebindadapterex.htm
 old-project: netvista
 ms.assetid: e52c7aeb-bbd8-402e-94af-f74df6deb23c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisCompleteBindAdapterEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ A protocol driver calls the
   returned NDIS_STATUS_PENDING.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ The handle that NDIS passed to the
      <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">
      ProtocolBindAdapterEx</a> function.
 
+
 ### -param Status [in]
 
 The final status of the completed bind operation. This parameter can be one of the following
@@ -70,9 +72,12 @@ The final status of the completed bind operation. This parameter can be one of t
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The driver successfully completed the binding to the underlying NIC.
+
 
 ### -param NDIS_STATUS_XXX or NTSTATUS_XXX
 
@@ -80,11 +85,13 @@ The protocol driver's attempt to set up a binding failed or the protocol driver 
        allocate the resources it needed to carry out network I/O operations. Usually, such an error status is
        propagated from an 
        <b>Ndis<i>Xxx</i></b> function or a kernel-mode support routine.
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 If a protocol driver returns NDIS_STATUS_PENDING from its 
@@ -97,11 +104,13 @@ If the open operation was successful, the protocol driver is ready to accept rec
     <b>NdisCompleteBindAdapterEx</b> with an error status, the binding attempt failed and the driver has
     released any resources it allocated to establish the binding.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,14 +121,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +142,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -140,14 +153,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
@@ -165,5 +181,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCompleteBindAdapterEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCompleteBindAdapterEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmtinstallpolicy.htm
 old-project: kernel
 ms.assetid: 0a492a86-e732-4302-b35d-9b2a5eb05445
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ClfsMgmtInstallPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ClfsMgmtInstallPolicy</b> routine adds a <a href="kernel.clfs_mgmt_policy">CLFS_MGMT_POLICY</a> structure to a physical log.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ NTSTATUS ClfsMgmtInstallPolicy(
 
 A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log that this instance of the <b>CLFS_MGMT_POLICY</b> structure will apply to. The policy applies to all streams within the log, even if a single stream within the log was specified. 
 
+
 ### -param Policy [in]
 
 A pointer to a <a href="kernel.clfs_mgmt_policy">CLFS_MGMT_POLICY</a> structure that contains the policy to be installed.
 
+
 ### -param PolicyLength [in]
 
 The length, in bytes, of the structure pointed to by the <i>Policy</i> parameter. 
+
 
 ## -returns
 The <b>ClfsMgmtInstallPolicy</b> routine returns one of the following NTSTATUS values:
@@ -104,6 +108,7 @@ The <i>Policy</i> parameter's <b>PolicyFlags</b> member specifies any flag other
 
 This routine might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS Values</a>.
 
+
 ## -remarks
 Policies are volatile. When all handles to the log are closed, the policies will be lost. You should install policies each time you register the first client.
 
@@ -111,11 +116,13 @@ You should only register a <b>CLFS_MGMT_POLICY</b> structure whose <b>PolicyType
 
 The log policy that is installed applies to the physical log, even if the <i>LogFile</i> parameter specifies a log stream.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -126,14 +133,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,6 +154,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -154,6 +165,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -164,9 +176,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -178,5 +192,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtInstallPolicy routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtInstallPolicy routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: netvista\riluiccapppersocheckstatus_2.htm
 old-project: netvista
 ms.assetid: 8e51ae9a-4670-4de1-bfca-bef8cb0c9cc9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS
+ms.date: 12/8/2017
+ms.keywords: RILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef struct _RILUICCAPPPERSOCHECKSTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

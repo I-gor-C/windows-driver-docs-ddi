@@ -41,6 +41,7 @@ req.irql:
 The NETWORK_OPEN_ECP_CONTEXT_V0 structure is used to interpret network ECP contexts on files. 
 
 
+
 ## -syntax
 
 ````
@@ -67,27 +68,35 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT_V0 {
 
 The size, in bytes, of this structure. 
 
+
 ### -field Reserved
 
 Reserved. Must be set to zero. 
 
+
 ### -field DUMMYSTRUCTNAME
 
 A structure that contains restrictions to apply for opening the file and to apply to the file after it is opened.  
+
 
 ### -field in
 
 A structure in the DUMMYSTRUCTNAME structure that contains restrictions for opening a file.
 
 
+
+
 ### -field Location
 
 A <a href="..\ntifs\ne-ntifs-network_open_location_qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. 
 
+
 ### -field Integrity
 
 This member is currently not implemented and should be ignored. 
+
 A <a href="..\ntifs\ne-ntifs-network_open_integrity_qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. 
+
 </dd>
 </dl>
 
@@ -96,14 +105,19 @@ A <a href="..\ntifs\ne-ntifs-network_open_integrity_qualifier.md">NETWORK_OPEN_I
 A structure in the DUMMYSTRUCTNAME structure that contains information that a file provides after it is opened.
 
 
+
+
 ### -field Location
 
 A <a href="..\ntifs\ne-ntifs-network_open_location_qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. 
 
+
 ### -field Integrity
 
 This member is currently not implemented and should be ignored. 
+
 A <a href="..\ntifs\ne-ntifs-network_open_integrity_qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. 
+
 </dd>
 </dl>
 </dd>
@@ -118,19 +132,23 @@ If a caller must verify that the file system acknowledged the NETWORK_OPEN_ECP_C
 
 In most cases, drivers that run on Windows Vista and later versions of Windows use the <a href="ifsk.network_open_ecp_context">NETWORK_OPEN_ECP_CONTEXT</a> structure to interpret network ECP contexts on files. However, drivers that run on Windows 7 and later versions of Windows and that must interpret network ECP contexts on files that reside on Windows Vista must use the NETWORK_OPEN_ECP_CONTEXT_V0 structure instead. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available starting with Windows 7. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,5 +171,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20NETWORK_OPEN_ECP_CONTEXT_V0 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

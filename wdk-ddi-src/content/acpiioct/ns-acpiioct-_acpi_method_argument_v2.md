@@ -41,6 +41,7 @@ req.irql:
 This topic describes the  <b>ACPI_METHOD_ARGUMENT_V2</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -61,13 +62,16 @@ typedef struct _ACPI_METHOD_ARGUMENT_V2 {
 
 Defines the <b>USHORT</b> member <b>Type</b>.
 
+
 ### -field DataLength
 
 Defines the <b>USHORT</b> member <b>DataLength</b>.
 
+
 ### -field DUMMYUNIONNAME
 
 Defines the members of <b>DUMMYUNIONNAME</b>.
+
 
 ## -remarks
 
@@ -77,14 +81,17 @@ Defines the members of <b>DUMMYUNIONNAME</b>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

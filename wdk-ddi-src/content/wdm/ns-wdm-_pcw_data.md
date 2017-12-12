@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PCW_DATA structure describes the array of data blocks that are associated with an instance.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _PCW_DATA {
 
 A <b>const</b> pointer to a buffer of <b>Size</b> bytes.
 
+
 ### -field Size
 
 A numeric value that specifies the size, in bytes, associated with the instance of the counter set.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ A numeric value that specifies the size, in bytes, associated with the instance 
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 or later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

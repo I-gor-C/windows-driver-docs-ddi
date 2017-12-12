@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 Not supported.
 
+
 ### -field KSPROPERTY_GM_TIMESTAMP_CLOCK
 
 Not supported.
+
 
 ### -field KSPROPERTY_GM_RATEMATCH
 
 Not supported.
 
+
 ### -field KSPROPERTY_GM_RENDER_CLOCK
 
 Not supported.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Not supported.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

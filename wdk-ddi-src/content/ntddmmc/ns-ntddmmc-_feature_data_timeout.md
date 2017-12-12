@@ -7,7 +7,7 @@ old-location: storage\feature_data_timeout.htm
 old-project: storage
 ms.assetid: 0699dcc3-ab43-436e-b7d3-09898e4d823c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _FEATURE_DATA_TIMEOUT, FEATURE_DATA_TIMEOUT, *PFEATURE_DATA_TIMEOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FEATURE_DATA_TIMEOUT structure holds information about the Time-Out feature.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct _FEATURE_DATA_TIMEOUT {
 
 Contains a <a href="storage.feature_header">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
+
 ### -field Group3
 
 
@@ -77,11 +79,13 @@ This structure holds data for the feature named "Time-Out" by the <i>SCSI Multim
 
 When queried, devices supporting this feature must return the information indicated in <a href="storage.feature_header">FEATURE_HEADER</a>. No other feature-specific information is required. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +105,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_TIMEOUT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_TIMEOUT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

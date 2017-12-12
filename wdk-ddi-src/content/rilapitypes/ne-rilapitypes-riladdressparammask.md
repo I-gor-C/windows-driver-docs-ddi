@@ -7,7 +7,7 @@ old-location: netvista\riladdressparammask_2.htm
 old-project: netvista
 ms.assetid: a9eaf2ec-5224-48e3-837b-279c1a44da68
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILADDRESSPARAMMASK, RILADDRESSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

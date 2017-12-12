@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltReuseCallbackData</b> routine reinitializes a callback data structure so that it can be reused. 
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ VOID FltReuseCallbackData(
 
 Pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure to be reused. This structure must have been allocated by a previous call to <a href="ifsk.fltallocatecallbackdata">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ## -returns
 None 
+
 
 ## -remarks
 <b>FltReuseCallbackData</b> reinitializes a callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure so that it can be used in a new I/O operation. <b>FltReuseCallbackData</b> does not change the <b>TargetInstance</b> field or the <b>TargetFileObject</b> field of the callback data structure's I/O parameter block. 
@@ -72,11 +75,13 @@ If the callback data structure was used for asynchronous I/O, the minifilter dri
 
 In particular, a minifilter driver should not use this routine for any callback data structures not allocated by the minifilter driver itself. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +103,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +114,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -117,9 +125,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -146,5 +156,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltReuseCallbackData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

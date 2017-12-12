@@ -7,7 +7,7 @@ old-location: display\ioctl_video_disable_pointer.htm
 old-project: display
 ms.assetid: 0ec5597b-53a4-4711-84f0-d307ad96ef9d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql:
 
 Makes the pointer invisible by disabling the pointer attributes. Support for this modal request is optional.
 
+
+
 Makes the pointer invisible by disabling the pointer attributes. Support for this modal request is optional.
+
 
 
 ## -ioctlparameters
@@ -49,12 +52,14 @@ Makes the pointer invisible by disabling the pointer attributes. Support for thi
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 
 <text></text>
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -72,6 +77,7 @@ None
 I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="display.status_block">STATUS_BLOCK</a> structure.
 
+
 ## -remarks
 
 
@@ -80,6 +86,7 @@ The miniport driver does not set the <b>Information</b> member of the <a href="d
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

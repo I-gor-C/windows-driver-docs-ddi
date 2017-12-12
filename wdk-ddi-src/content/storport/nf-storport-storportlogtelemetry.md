@@ -7,7 +7,7 @@ old-location: storage\storportlogtelemetry.htm
 old-project: storage
 ms.assetid: 3B32F31C-3850-43D4-9C6E-40D35B8AF4D4
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortLogTelemetry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortLogTelemetry</b> routine logs a miniport telemetry event to help diagnose or collect any useful information. The miniport can log eight general purpose name-value pairs and a buffer that has maximum length of 4KB, as well as several event related fields that are defined in structure <a href="storage.storport_telemetry_event">STORPORT_TELEMETRY_EVENT</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ ULONG StorPortLogTelemetry(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param StorAddress [in, optional]
 
 The storage unit device address. This parameter is NULL for adapter devices.
 
+
 ### -param Event [in]
 
 Pointer to the <a href="storage.storport_telemetry_event">STORPORT_TELEMETRY_EVENT</a> structure that contains the telemetry data payload.
+
 
 ## -returns
 <b>StorPortLogTelemetry </b>returns one of the following status codes:
@@ -84,10 +88,12 @@ Pointer to the <a href="storage.storport_telemetry_event">STORPORT_TELEMETRY_EVE
 
  
 
+
 ## -remarks
 If any parameter in Event structure is not named, Event-&gt;ParameterNameX == NULL, the routine will set the corresponding parameter value to 0.
 
 If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event-&gt;EventBufferLength = 0, as well as Event-&gt;EventBuffer = NULL.
+
 
 
 ## -requirements
@@ -95,22 +101,27 @@ If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1703
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,9 +132,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any
+
 </td>
 </tr>
 </table>
@@ -135,5 +148,8 @@ Any
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortLogTelemetry routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortLogTelemetry routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

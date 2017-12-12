@@ -7,7 +7,7 @@ old-location: display\d3dddi_scanlineordering.htm
 old-project: display
 ms.assetid: 6b7b0bbf-79f2-4b0c-a7e6-75dc92bf8a63
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DDDI_SCANLINEORDERING, D3DDDI_SCANLINEORDERING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DDDI_SCANLINEORDERING enumeration type contains values that identify how the scan lines are drawn on a surface. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum D3DDDI_SCANLINEORDERING {
 
 The value indicates that scan-line ordering is unknown. 
 
+
 ### -field D3DDDI_SCANLINEORDERING_PROGRESSIVE
 
 The value indicates that scan-line ordering is progressive. 
 
+
 ### -field D3DDDI_SCANLINEORDERING_INTERLACED
 
 The value indicates that scan-line ordering is interlaced. 
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ The value indicates that scan-line ordering is interlaced.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 D3DDDI_SCANLINEORDERING is supported beginning with the Windows 7 operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

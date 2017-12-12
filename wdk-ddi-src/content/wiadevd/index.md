@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wiadevd.h header
 
+## -description
 
 This header is used by Imaging devices. For more information, see
 - [Imaging devices](../_image/index.md)

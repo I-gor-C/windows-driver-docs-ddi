@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>SecMakeSPNEx</b> creates a service provider name string that can be used when communicating with specific security service providers. 
 
 
+
 ## -syntax
 
 ````
@@ -64,37 +65,46 @@ NTSTATUS SecMakeSPNEx(
 
 A pointer to a Unicode string specifying the service class for the security service provider. 
 
+
 ### -param ServiceName [in]
 
 A pointer to a Unicode string specifying the service name for the security service provider. 
+
 
 ### -param InstanceName [in]
 
 A pointer to an optional Unicode string specifying the instance name for connecting with the security service provider. 
 
+
 ### -param InstancePort [in]
 
 An optional variable specifying the instance port for connecting with the security service provider. 
+
 
 ### -param Referrer [in]
 
 A pointer to an optional Unicode string specifying the referrer name for connecting with the security service provider. 
 
+
 ### -param TargetInfo [in]
 
 A pointer to an optional Unicode string specifying target information for connecting with the security service provider. 
+
 
 ### -param Spn [in, out]
 
 A pointer to a Unicode string for storing the security service provider name string created by this function.
 
+
 ### -param Length [out]
 
 A pointer to an optional variable for storing the length of the security service provider name string created by this function.
 
+
 ### -param Allocate [in]
 
 A Boolean variable indicating if the memory for storing the <i>Spn</i> Unicode string should be allocated by this function. If this parameter is true, memory for <i>Spn</i> will be allocated from paged pool.
+
 
 ## -returns
 <b>SecMakeSPNEx</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
@@ -114,14 +124,17 @@ The maximum length for the <i>Spn</i> Unicode string parameter was too small.
 
  
 
+
 ## -remarks
 <b>SecMakeSPNEx</b> is an enhanced version of <b>SecMakeSPN</b>. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -132,14 +145,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This function is only available on Microsoft Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,6 +166,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -160,9 +177,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -177,5 +196,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SecMakeSPNEx function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

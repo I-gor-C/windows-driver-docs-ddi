@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _KSPROPERTY_GRAPHMANAGER_INTERFACE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_reclaimallocations2.htm
 old-project: display
 ms.assetid: 7980F1FD-D7C2-4C74-8652-89FD38BE4D1F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_RECLAIMALLOCATIONS2, D3DKMT_RECLAIMALLOCATIONS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 <b>D3DKMT_RECLAIMALLOCATIONS2</b> describes video memory resources that are to be reclaimed and that the driver  previously offered  for reuse. Used with the  <a href="display.d3dkmtreclaimallocations2">D3DKMTReclaimAllocations2</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -64,30 +65,38 @@ typedef struct _D3DKMT_RECLAIMALLOCATIONS2 {
 
 [in] A handle to the device that created the allocations.
 
+
 ### -field NumAllocations
 
 [in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
+
 
 ### -field pResources
 
 [in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
 
+
 ### -field HandleList
 
 [in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
+
 If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.
+
 
 ### -field pDiscarded
 
 [out] Optional array of boolean variables  specifying whether each resource or allocation was discarded.
 
+
 ### -field pResults
 
 [in] Required array of values specifying whether the surface is valid, discarded, or list commitment.
 
+
 ### -field PagingFenceValue
 
 The paging fence to synchronize against before submitting work to the GPU which references any of the resources or allocations in the provided arrays.
+
 
 ## -remarks
 
@@ -97,22 +106,27 @@ The paging fence to synchronize against before submitting work to the GPU which 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

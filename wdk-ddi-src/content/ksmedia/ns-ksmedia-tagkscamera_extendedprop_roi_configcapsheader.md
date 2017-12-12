@@ -41,6 +41,7 @@ req.irql:
 This structure contains the header information for ROI capabilities.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER {
 
 The size of this header and all <a href="stream.kscamera_extendedprop_roi_configcaps">KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</a> structures that follow.
 
+
 ### -field ConfigCapCount
 
 Contains the number of <b>KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</b> structures that follow.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

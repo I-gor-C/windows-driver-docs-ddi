@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketsetpointer.htm
 old-project: netvista
 ms.assetid: FFEBEBD0-1FF2-4F27-B028-051B117CA325
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbPacketSetPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbPacketSetPointer</b> function saves an arbitrary pointer in the packet
 context.  
+
 
 
 ## -syntax
@@ -60,53 +62,66 @@ VOID VmbPacketSetPointer(
 
 A handle for a VMBus packet.
 
+
 ### -param Pointer [in, optional]
 
  An arbitrary pointer to save in the context of the packet.
 
+
 ## -returns
 This function does not return a value.
 
+
 ## -remarks
 This function is intended to offer a more efficient way to retrieve the context of a client driver.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +132,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

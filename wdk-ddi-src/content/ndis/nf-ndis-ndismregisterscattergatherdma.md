@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterscattergatherdma.htm
 old-project: netvista
 ms.assetid: 90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMRegisterScatterGatherDma
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ Bus master miniport drivers call the
   scatter/gather DMA channel.
 
 
+
 ## -syntax
 
 ````
@@ -62,11 +63,13 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 The miniport handle that NDIS passed to 
      <i>MiniportInitializeEx</i>.
 
+
 ### -param DmaDescription [in, out]
 
 A pointer to an NDIS_SG_DMA_DESCRIPTION structure. This structure describes the scatter/gather DMA
      properties of the miniport driver. The structure is defined as follows:
      
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -88,6 +91,8 @@ A pointer to an NDIS_SG_DMA_DESCRIPTION structure. This structure describes the 
 This structure includes the following members:
 
 
+
+
 ### -param Header
 
 The 
@@ -98,14 +103,18 @@ The
        <b>Revision</b> member to NDIS_SG_DMA_DESCRIPTION_REVISION_1, and the 
        <b>Size</b> member to NDIS_SIZEOF_SG_DMA_DESCRIPTION_REVISION_1.
 
+
 ### -param Flags
 
 A set of bit flags that define scatter/gather characteristics. Set this member to the bitwise OR
        of all the required flags. 
        
+
 The NDIS_SG_DMA_64_BIT_ADDRESS flag specifies that the NIC can use 64-bit addressing for DMA
        operations. Otherwise, the NIC uses 32-bit addressing.
+
 Set this member to zero if 64-bit addressing is not required.
+
 
 ### -param MaximumPhysicalMapping
 
@@ -113,11 +122,13 @@ The maximum number of bytes that the NIC can transfer in a single DMA operation.
        this value to the hardware abstraction layer (HAL) when allocating a DMA channel, and HAL uses this
        value to determine the maximum number of map registers to reserve for the NIC.
 
+
 ### -param ProcessSGListHandler
 
 The 
        <a href="..\ndis\nc-ndis-miniport_process_sg_list.md">MiniportProcessSGList</a> function
        that NDIS calls when HAL is done building the scatter/gather list.
+
 
 ### -param SharedMemAllocateCompleteHandler
 
@@ -129,12 +140,14 @@ The
        driver does not call 
        <b>NdisMAllocateSharedMemoryAsyncEx</b>.
 
+
 ### -param ScatterGatherListSize
 
 The size, in bytes, of the memory that is required to hold a scatter/gather list. NDIS sets this
        value before it returns from 
        <b>NdisMRegisterScatterGatherDma</b>. Miniport drivers should use this size to preallocate memory for
        each scatter/gather list.
+
 </dd>
 </dl>
 
@@ -143,6 +156,7 @@ The size, in bytes, of the memory that is required to hold a scatter/gather list
 A pointer to a variable that the caller supplies and that NDIS fills with a handle. The handle
      identifies a context area that NDIS uses to manage this DMA resource. The miniport driver passes this
      handle to NDIS in subsequent calls to NDIS that involve this DMA resource.
+
 
 ## -returns
 <b>NdisMRegisterScatterGatherDma</b> returns one of the following:
@@ -171,6 +185,7 @@ A pointer to a variable that the caller supplies and that NDIS fills with a hand
        <i>DmaDescription</i> .
 
  
+
 
 ## -remarks
 An NDIS bus-master miniport driver calls 
@@ -219,11 +234,13 @@ Miniport drivers call the
     NdisMDeregisterScatterGatherDma</a> function to deallocate the DMA resources that 
     <b>NdisMRegisterScatterGatherDma</b> allocated.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -234,14 +251,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -252,6 +272,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -262,14 +283,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_init_registersg">Init_RegisterSG</a>, <a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
@@ -323,5 +347,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterScatterGatherDma function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterScatterGatherDma function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

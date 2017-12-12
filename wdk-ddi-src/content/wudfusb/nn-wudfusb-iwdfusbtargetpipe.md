@@ -7,8 +7,8 @@ old-location: wdf\iwdfusbtargetpipe.htm
 old-project: wdf
 ms.assetid: 16364b13-d902-4ba3-8d0a-c044946afa1e
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+ms.date: 12/7/2017
+ms.keywords: _WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -41,9 +41,13 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-The <b>IWDFUsbTargetPipe</b> interface exposes a USB pipe (endpoint), which is also an I/O target.
 
 The <b>IWDFUsbTargetPipe</b> interface exposes a USB pipe (endpoint), which is also an I/O target.
+
+
+
+The <b>IWDFUsbTargetPipe</b> interface exposes a USB pipe (endpoint), which is also an I/O target.
+
 
 
 ## -inheritance
@@ -71,6 +75,7 @@ The <a href="wdf.iwdfusbtargetpipe_setpipepolicy">SetPipePolicy</a> method sets 
 
  
 
+
 ## -members
 The <b>IWDFUsbTargetPipe</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -84,6 +89,7 @@ The <b>IWDFUsbTargetPipe</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_abort">Abort</a> method aborts all pending transfers on a USB pipe.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -92,6 +98,7 @@ The <a href="wdf.iwdfusbtargetpipe_abort">Abort</a> method aborts all pending tr
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_flush">Flush</a> method discards any data that WinUsb saved when the device returned more data than the client requested.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -100,6 +107,7 @@ The <a href="wdf.iwdfusbtargetpipe_flush">Flush</a> method discards any data tha
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_getinformation">GetInformation</a> method retrieves information about a USB pipe (endpoint).
+
 </td>
 </tr>
 <tr data="declared;">
@@ -108,6 +116,7 @@ The <a href="wdf.iwdfusbtargetpipe_getinformation">GetInformation</a> method ret
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_gettype">GetType</a> method retrieves the type of a USB pipe.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -116,6 +125,7 @@ The <a href="wdf.iwdfusbtargetpipe_gettype">GetType</a> method retrieves the typ
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_isinendpoint">IsInEndPoint</a> method determines whether a USB pipe (endpoint) is an IN pipe.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -124,6 +134,7 @@ The <a href="wdf.iwdfusbtargetpipe_isinendpoint">IsInEndPoint</a> method determi
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_isoutendpoint">IsOutEndPoint</a> method determines whether a USB pipe (endpoint) is an OUT pipe.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -132,6 +143,7 @@ The <a href="wdf.iwdfusbtargetpipe_isoutendpoint">IsOutEndPoint</a> method deter
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_reset">Reset</a> method resets the data toggle and clears the stall condition on a USB pipe.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -140,6 +152,7 @@ The <a href="wdf.iwdfusbtargetpipe_reset">Reset</a> method resets the data toggl
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">RetrievePipePolicy</a> method retrieves a WinUsb pipe policy.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -148,6 +161,7 @@ The <a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">RetrievePipePolicy</a> me
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbtargetpipe_setpipepolicy">SetPipePolicy</a> method sets the WinUsb pipe policy.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfusbtargetpipe_abort">Abort</a> method aborts all pending transfers on a USB pipe.
@@ -170,6 +184,7 @@ The <a href="wdf.iwdfusbtargetpipe_setpipepolicy">SetPipePolicy</a> method sets 
 
  
 
+
 ## -remarks
 
 
@@ -178,6 +193,7 @@ The <a href="wdf.iwdfusbtargetpipe_setpipepolicy">SetPipePolicy</a> method sets 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -188,22 +204,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -214,6 +235,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

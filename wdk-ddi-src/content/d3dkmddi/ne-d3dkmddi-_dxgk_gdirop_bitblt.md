@@ -7,7 +7,7 @@ old-location: display\dxgk_gdirop_bitblt.htm
 old-project: display
 ms.assetid: f5f337dd-ab7a-4a9f-af3c-2d29dbdffe7b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_GDIROP_BITBLT, DXGK_GDIROP_BITBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGK_GDIROP_COLORFILL enumeration indicates the type of GDI raster operation (ROP) to implement in a GDI hardware-accelerated bit-block transfer (bitblt) operation.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum _DXGK_GDIROP_BITBLT {
 
 Indicates that the GDI raster operation is invalid.
 
+
 ### -field DXGK_GDIROP_SRCCOPY
 
 Indicates that the source rectangle is copied to the destination rectangle.
+
 
 ### -field DXGK_GDIROP_SRCINVERT
 
 Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>XOR</b> operator.
 
+
 ### -field DXGK_GDIROP_SRCAND
 
 Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>AND</b> operator.
+
 
 ### -field DXGK_GDIROP_SRCOR
 
 Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>OR</b> operator.
 
+
 ### -field DXGK_GDIROP_ROP3
 
 Indicates that a ternary GDI raster operation (ROP3) will be applied.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ Indicates that a ternary GDI raster operation (ROP3) will be applied.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

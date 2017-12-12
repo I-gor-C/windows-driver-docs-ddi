@@ -7,7 +7,7 @@ old-location: display\d3dkmtqueryprotectedsessioninfofromnthandle.htm
 old-project: display
 ms.assetid: 04eff7e1-1ac3-4622-a837-1ea6aad97329
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTQueryProtectedSessionInfoFromNtHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Used to get information on the protected session.
             
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS  D3DKMTQueryProtectedSessionInfoFromNtHandle(
 
 Holds session information from the NT handle.
 
+
 ## -returns
 
 Returns STATUS_SUCCESS when completed successfully.
+
 
 ## -remarks
 
@@ -70,22 +73,27 @@ Returns STATUS_SUCCESS when completed successfully.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,8 +104,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

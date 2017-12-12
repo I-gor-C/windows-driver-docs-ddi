@@ -7,7 +7,7 @@ old-location: netvista\vmbclientchannelinitsettargetpnp.htm
 old-project: netvista
 ms.assetid: 5525FD48-BE65-48CA-B3D5-C96AFD4ECF56
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbClientChannelInitSetTargetPnp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,9 +40,11 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbClientChannelInitSetTargetPnp</b> function sets a client channel's target by interface type and instance IDs. If this
 function is called, Kernel Mode Client Library (KMCL) uses PnP to find the VMBus Physical Device Object (PDO) that corresponds to the
 provided interface. 
+
 
 
 ## -syntax
@@ -64,11 +66,13 @@ NTSTATUS VmbClientChannelInitSetTargetPnp(
 A pointer to a channel.
 
 
+
 ### -param InterfaceType [in]
 
 A pointer to the interface type GUID.
 This GUID identifies the 
 type of channel and the protocol that is used with the channel.  
+
 
 ### -param InterfaceInstance [in, optional]
 
@@ -77,11 +81,13 @@ specific instance of the service. If not
 provided, any instance with the provided type is accepted.
 
 
+
 ### -param PnpFailureCallback [in, optional]
 
 A pointer to an event callback to call if the
 device asynchronously fails to connect even though the PnP device was
 located.
+
 
 ## -returns
 <b>VmbClientChannelInitSetTargetPnp</b> returns the following values: 
@@ -91,48 +97,59 @@ located.
 
  
 
+
 ## -remarks
 If you 
 have two paravirtual network interfaces, they will have the 
 same <i>InterfaceType</i> but different <i>InterfaceInstance</i> values. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +160,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

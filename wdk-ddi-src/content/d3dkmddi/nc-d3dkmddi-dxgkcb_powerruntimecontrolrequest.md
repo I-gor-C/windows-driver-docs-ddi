@@ -7,7 +7,7 @@ old-location: display\dxgkcbpowerruntimecontrolrequest.htm
 old-project: display
 ms.assetid: 28984c89-a1d9-4720-8c4c-2b2ce34e0899
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 Called by the display miniport driver to exchange information with the Power Engine Plug-in (PEP).
 
 
+
 ## -prototype
 
 ````
@@ -63,73 +64,91 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbPowerRuntimeControlRequest(
 
 ### -param hAdapter [in]
 
-A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface2">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.
+A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface2">DXGKRNL_INTERFACE</a> structure in a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
+
 
 ### -param PowerControlCode [in]
 
 A pointer to a GUID that defines the meaning of the display miniport driver's control request. For more information, see Remarks.
 
+
 ### -param InBuffer [in, optional]
 
 An optional pointer to an input buffer.
+
 
 ### -param InBufferSize [in]
 
 The size, in bytes, of the buffer that <i>InBuffer</i> points to.
 
+
 ### -param OutBuffer [out, optional]
 
 An optional pointer to an output buffer.
+
 
 ### -param OutBufferSize [in]
 
 The size, in bytes, of the buffer that <i>OutBuffer</i> points to.
 
+
 ### -param BytesReturned [out, optional]
 
 An optional pointer to a buffer that contains the number of bytes that are written by the PEP to the output buffer.
 
+
 ## -returns
 Returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h.
 
+
 ## -remarks
 Although the driver can use any GUID in the <i>PowerControlCode</i> parameter, the following GUIDs that are defined in D3dkmddi.h are recommended. By using these GUIDs, the display port driver can issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.
+
 <dl>
 <dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
 <dd>
 Increase the voltage.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_DOWN"></a><a id="guid_dxgkddi_power_voltage_down"></a>GUID_DXGKDDI_POWER_VOLTAGE_DOWN</dt>
 <dd>
 Decrease the voltage.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_VOLTAGE"></a><a id="guid_dxgkddi_power_voltage"></a>GUID_DXGKDDI_POWER_VOLTAGE</dt>
 <dd>
 Change the voltage, but the driver doesn't know if the change is an increase or decrease.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_CLOCK_UP"></a><a id="guid_dxgkddi_power_clock_up"></a>GUID_DXGKDDI_POWER_CLOCK_UP</dt>
 <dd>
 Increase the clock setting.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_CLOCK_DOWN"></a><a id="guid_dxgkddi_power_clock_down"></a>GUID_DXGKDDI_POWER_CLOCK_DOWN</dt>
 <dd>
 Decrease the clock setting.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_CLOCK"></a><a id="guid_dxgkddi_power_clock"></a>GUID_DXGKDDI_POWER_CLOCK</dt>
 <dd>
 Change the clock setting, but the driver doesn't know if the change is an increase or decrease.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_UP"></a><a id="guid_dxgkddi_power_bandwidth_up"></a>GUID_DXGKDDI_POWER_BANDWIDTH_UP</dt>
 <dd>
 Increase the bandwidth.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_DOWN"></a><a id="guid_dxgkddi_power_bandwidth_down"></a>GUID_DXGKDDI_POWER_BANDWIDTH_DOWN</dt>
 <dd>
 Decrease the bandwidth.
+
 </dd>
 <dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH"></a><a id="guid_dxgkddi_power_bandwidth"></a>GUID_DXGKDDI_POWER_BANDWIDTH</dt>
 <dd>
 Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.
+
 </dd>
 </dl>
 
@@ -156,27 +175,33 @@ Change the bandwidth, but the driver doesn't know if the change is an increase o
 
 These GUIDs do not imply that there is any communication protocol between the display miniport driver and the PEP, nor do they imply that there are any restrictions on the values that can be passed between the display miniport driver and the PEP.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -187,6 +212,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -197,9 +223,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -210,12 +238,15 @@ IRQL
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
 </dt>
 <dt>
-<a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
 </dt>
 <dt>
 <a href="display.dxgkrnl_interface2">DXGKRNL_INTERFACE</a>
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_POWERRUNTIMECONTROLREQUEST callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_POWERRUNTIMECONTROLREQUEST callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

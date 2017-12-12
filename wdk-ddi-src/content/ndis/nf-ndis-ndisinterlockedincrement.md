@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisInterlockedIncrement
-title: NdisInterlockedIncrement
+title: NdisInterlockedIncrement macro
 author: windows-driver-content
 description: The NdisInterlockedIncrement function increments a caller-supplied variable as an atomic operation.
 old-location: netvista\ndisinterlockedincrement.htm
 old-project: netvista
 ms.assetid: 246ded7a-4f75-469d-bdba-860ce3cd6b44
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisInterlockedIncrement
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -31,52 +31,48 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level
-req.iface: 
 ---
 
-# NdisInterlockedIncrement function
+# NdisInterlockedIncrement macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisInterlockedIncrement</b> function increments a caller-supplied variable as an atomic
-  operation.</p>
+  operation.
+
 
 
 ## -syntax
 
 ````
 LONG NdisInterlockedIncrement(
-  _In_ PLONG Addend
+  [in] PLONG Addend
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param Addend [in]
 
-<dd>
-<p>A pointer to a variable of type LONG.</p>
-</dd>
-</dl>
+A pointer to a variable of type LONG.
 
-## -returns
-<p><b>NdisInterlockedIncrement</b> returns the incremented value.</p>
 
 ## -remarks
-<p><b>NdisInterlockedIncrement</b> cannot be used on variables in pageable memory.</p>
+<b>NdisInterlockedIncrement</b> cannot be used on variables in pageable memory.
 
-<p><b>NdisInterlockedIncrement</b> is atomic only with respect to other 
-    <b>NdisInterlocked<i>Xxx</i></b> calls.</p>
+<b>NdisInterlockedIncrement</b> is atomic only with respect to other 
+    <b>NdisInterlocked<i>Xxx</i></b> calls.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,19 +82,22 @@ LONG NdisInterlockedIncrement(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/e5a2750a-a31c-4fee-b025-71ac659b0652">NdisInterlockedIncrement (NDIS
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisInterlockedIncrement (NDIS
-   5.1)</b>) in Windows XP.</p>
+   5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,7 +107,8 @@ LONG NdisInterlockedIncrement(
 </tr>
 <tr>
 <th width="30%">
-<p>Library</p>
+Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,10 +118,12 @@ LONG NdisInterlockedIncrement(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>Any level</p>
+Any level
+
 </td>
 </tr>
 </table>
@@ -129,9 +131,12 @@ LONG NdisInterlockedIncrement(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinterlockeddecrement.md">NdisInterlockedDecrement</a>
+<a href="netvista.ndisinterlockeddecrement">NdisInterlockedDecrement</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedIncrement function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedIncrement macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

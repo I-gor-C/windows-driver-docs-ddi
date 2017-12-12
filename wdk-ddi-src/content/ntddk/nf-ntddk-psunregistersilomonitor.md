@@ -7,7 +7,7 @@ old-location: kernel\psunregistersilomonitor.htm
 old-project: kernel
 ms.assetid: B1B85AD5-F626-4177-8218-428B617A97F6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsUnregisterSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine unregisters a server silo monitor.
 
 
+
 ## -syntax
 
 ````
@@ -56,35 +57,43 @@ void PsUnregisterSiloMonitor(
 
 The server silo monitor to unregister.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 The monitor will not receive further notifications after this routine completes.
     
 If the monitor allocated a silo context slot, this routine will not complete until all silo contexts have been removed from slot.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

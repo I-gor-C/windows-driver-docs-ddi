@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Udecxusbendpoint.h header
 
+## -description
 
 This header is used by Universal Serial Bus(USB). For more information, see
 - [Universal Serial Bus(USB)](../_usbref/index.md)
@@ -11,7 +16,7 @@ Udecxusbendpoint.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [UDECX_USB_ENDPOINT_CALLBACKS_INIT function](nf-udecxusbendpoint-udecx-usb-endpoint-callbacks-init.md) | Initializes a UDECX_USB_ENDPOINT_CALLBACKS structure before a UdecxUsbEndpointCreate call. |
+| [UDECX_USB_ENDPOINT_CALLBACKS_INIT function](nf-udecxusbendpoint-udecx_usb_endpoint_callbacks_init.md) | Initializes a UDECX_USB_ENDPOINT_CALLBACKS structure before a UdecxUsbEndpointCreate call. |
 | [UdecxUsbEndpointCreate function](nf-udecxusbendpoint-udecxusbendpointcreate.md) | Creates a UDE endpoint object. |
 | [UdecxUsbEndpointInitFree function](nf-udecxusbendpoint-udecxusbendpointinitfree.md) | Release the resources that were allocated by the UdecxUsbSimpleEndpointInitAllocate call. |
 | [UdecxUsbEndpointInitSetCallbacks function](nf-udecxusbendpoint-udecxusbendpointinitsetcallbacks.md) | Sets pointers to UDE client driver-implemented callback functions in the initialization parameters of the simple endpoint to create. |
@@ -24,12 +29,12 @@ Udecxusbendpoint.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_UDECX_USB_ENDPOINT_PURGE callback](nc-udecxusbendpoint-evt-udecx-usb-endpoint-purge.md) | The USB device emulation class extension (UdeCx) invokes this callback function to stop queuing I/O requests to the endpoint's queue and cancel unprocessed requests. |
-| [EVT_UDECX_USB_ENDPOINT_RESET callback](nc-udecxusbendpoint-evt-udecx-usb-endpoint-reset.md) | The USB device emulation class extension (UdeCx) invokes this callback function to reset an endpoint of the virtual USB device. |
-| [EVT_UDECX_USB_ENDPOINT_START callback](nc-udecxusbendpoint-evt-udecx-usb-endpoint-start.md) | The USB device emulation class extension (UdeCx) invokes this callback function to start processing I/O requests on the specified endpoint of the virtual USB device. |
+| [EVT_UDECX_USB_ENDPOINT_PURGE callback](nc-udecxusbendpoint-evt_udecx_usb_endpoint_purge.md) | The USB device emulation class extension (UdeCx) invokes this callback function to stop queuing I/O requests to the endpoint's queue and cancel unprocessed requests. |
+| [EVT_UDECX_USB_ENDPOINT_RESET callback](nc-udecxusbendpoint-evt_udecx_usb_endpoint_reset.md) | The USB device emulation class extension (UdeCx) invokes this callback function to reset an endpoint of the virtual USB device. |
+| [EVT_UDECX_USB_ENDPOINT_START callback](nc-udecxusbendpoint-evt_udecx_usb_endpoint_start.md) | The USB device emulation class extension (UdeCx) invokes this callback function to start processing I/O requests on the specified endpoint of the virtual USB device. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [UDECX_USB_ENDPOINT_CALLBACKS structure](ns-udecxusbendpoint--udecx-usb-endpoint-callbacks.md) | Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling UDECX_USB_ENDPOINT_CALLBACKS_INIT. |
+| [_UDECX_USB_ENDPOINT_CALLBACKS structure](ns-udecxusbendpoint-_udecx_usb_endpoint_callbacks.md) | Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling UDECX_USB_ENDPOINT_CALLBACKS_INIT. |

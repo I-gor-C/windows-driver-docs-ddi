@@ -7,7 +7,7 @@ old-location: storage\mpio_disk_info.htm
 old-project: storage
 ms.assetid: edefb7f5-f423-48cc-81c9-16153c228d45
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MPIO_DISK_INFO, *PMPIO_DISK_INFO, MPIO_DISK_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_DISK_INFO structure allows applications to query the system for the top level view of its disk topology. The request must be directed to the MPIO control object by using its WMI instance name.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _MPIO_DISK_INFO {
 
 An unsigned 32-bitfield that represents the number of multi-path disks in the system.
 
+
 ### -field DriveInfo
 
 An array that returns the information representing each multi-path LUN (pseudo-LUN) in the system. The number of elements in the array is given by <i>NumberDrives</i> and each element represents an instance of an MPIO_DRIVE_INFO structure.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ An array that returns the information representing each multi-path LUN (pseudo-L
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

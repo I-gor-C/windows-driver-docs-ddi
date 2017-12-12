@@ -7,7 +7,7 @@ old-location: netvista\ndis_ipsec_offload_v2.htm
 old-project: netvista
 ms.assetid: 2319fe88-8f32-415c-bea1-4b7e723f6dbb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_IPSEC_OFFLOAD_V2, NDIS_IPSEC_OFFLOAD_V2, *PNDIS_IPSEC_OFFLOAD_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,9 +39,11 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 <p class="CCE_Message">[The IPsec Task Offload feature is deprecated and should not be used.]
+
 The NDIS_IPSEC_OFFLOAD_V2 structure provides information about Internet protocol security (IPsec)
   version 2 task offload capabilities in the 
   <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure.
+
 
 
 ## -syntax
@@ -75,20 +77,24 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
 The MAC encapsulation types that are supported for IPsec offload. For more information about this
      member, see the following Remarks section.
 
+
 ### -field IPv6Supported
 
 A BOOLEAN value that is set to <b>TRUE</b> if IPsec offload processing on IPv6 traffic is supported.
      Otherwise, this member is <b>FALSE</b>.
+
 
 ### -field IPv4Options
 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec offload of packets with IPv4
      options. Otherwise, this member is <b>FALSE</b>.
 
+
 ### -field IPv6NonIPsecExtensionHeaders
 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec offload processing for packets with
      non-IPsec IPv6 extension headers in addition to IPsec headers. Otherwise, this member is <b>FALSE</b>.
+
 
 ### -field Ah
 
@@ -96,11 +102,13 @@ A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload 
      receive packets that contain an authentication header (AH) security payload. Otherwise, this member is
      <b>FALSE</b>.
 
+
 ### -field Esp
 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload operations on send and
      receive packets that contain an encapsulating security payload (ESP). Otherwise, this member is
      <b>FALSE</b>.
+
 
 ### -field AhEspCombined
 
@@ -108,11 +116,13 @@ A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload 
      receive packets that contain both an AH payload and an ESP payload. Otherwise, this member is
      <b>FALSE</b>.
 
+
 ### -field Transport
 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security payloads for the
      transport-mode portion of send and receive packets. (The transport-mode portion of a packet pertains to
      an end-to-end connection.) Otherwise, this member is <b>FALSE</b>.
+
 
 ### -field Tunnel
 
@@ -120,6 +130,7 @@ A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security paylo
      portion of send and receive packets. (The tunnel-mode portion of a packet pertains to a tunnel
      connection.) Otherwise, this member is <b>FALSE</b>.
      
+
 <div class="alert"><b>Note</b>  When the IPsec layer sends tunnel packets over an IPsec task offload interface,
      the IPsec layer ensures that large send offload (LSO) is not used for those packets.</div>
 <div> </div>
@@ -131,6 +142,7 @@ A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security paylo
      is <b>FALSE</b>. The transport-mode portion of a packet pertains to an end-to-end connection. The tunnel-mode
      portion of a packet pertains to a tunnel connection.
 
+
 ### -field LsoSupported
 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports large send offload (LSO). Otherwise, this
@@ -141,10 +153,12 @@ A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports large send offloa
      <b>LsoSupported</b> flag indicates that the capabilities that are specified in those members are also
      valid if the connection is secured with IPsec.
 
+
 ### -field ExtendedSequenceNumbers
 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec extended sequence numbers.
      Otherwise, this member is <b>FALSE</b>.
+
 
 ### -field UdpEsp
 
@@ -155,32 +169,40 @@ The types of UDP-encapsulated ESP data packets that the NIC can parse. For a des
      
 
 
+
+
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE
 
 IPsec offload processing is not available for any UDP encapsulation type.
+
 
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT
 
 IPsec offload is supported for an ESP-encapsulated transport-mode packet that is encapsulated by
        UDP.
 
+
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL
 
 IPsec offload is supported for the tunnel-mode portion of a packet that is UDP-encapsulated. The
        transport-mode portion of the packet is not UDP-encapsulated and is not ESP-protected.
 
+
 ### -field IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL
 
 IPsec offload is supported for the tunnel-mode portion of a packet that is UDP-encapsulated. The
        transport-mode portion of a packet is not UDP-encapsulated but is ESP-protected.
+
 </dd>
 </dl>
+
 
 
 ### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL
 
 IPsec offload is supported for the tunnel-mode portion of a packet that is not UDP-encapsulated.
        The transport-mode portion of a packet is UDP-encapsulated and ESP-protected.
+
 </dd>
 </dl>
 
@@ -191,35 +213,43 @@ A bit mask that identifies the IPsec authentication algorithms that the NIC supp
      
 
 
+
+
 ### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_MD5
 
 The NIC can use the keyed message digest 5 (MD5) algorithm for computing or validating a
        cryptographic checksum.
+
 
 ### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_1
 
 The NIC can use the secure hash algorithm (SHA) 1 algorithm for computing or validating a
        cryptographic checksum.
 
+
 ### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_256
 
 The NIC can use the SHA 256 algorithm for computing or validating a cryptographic
        checksum.
+
 
 ### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_128
 
 The NIC can use the Advanced Encryption Standard - Galois/Counter Mode (AES-GMAC) 128 algorithm
        for computing or validating a cryptographic checksum.
 
+
 ### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_192
 
 The NIC can use the AES-GMAC 192 algorithm for computing or validating a cryptographic
        checksum.
 
+
 ### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_256
 
 The NIC can use the AES-GMAC 256 algorithm for computing or validating a cryptographic
        checksum.
+
 </dd>
 </dl>
 
@@ -230,18 +260,23 @@ A bit mask that identifies the IPsec encryption algorithms that the NIC supports
      
 
 
+
+
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_NONE
 
 The NIC can use null encryption--that is, the ESP payload without encryption but with
        authentication information.
 
+
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_DES_CBC
 
 The NIC can use the DES algorithm for encrypting and decrypting ESP payloads.
 
+
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_3_DES_CBC
 
 The NIC can use the triple-DES algorithm for encrypting and decrypting ESP payloads.
+
 
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_128
 
@@ -249,11 +284,13 @@ The NIC can use the AES-GCM 128 algorithm for encrypting and computing a cryptog
        or decrypting and validating a cryptographic checksum for an ESP payload. Note that this algorithm is
        a combined mode algorithm.
 
+
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_192
 
 The NIC can use the AES-GCM 192 algorithm for encrypting and computing a cryptographic checksum
        or decrypting and validating a cryptographic checksum for an ESP payload. Note that this algorithm is
        a combined mode algorithm.
+
 
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_256
 
@@ -261,18 +298,22 @@ The NIC can use the AES-GCM 256 algorithm for encrypting and computing a cryptog
        or decrypting and validating a cryptographic checksum for an ESP payload. Note that this algorithm is
        a combined mode algorithm.
 
+
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_128
 
 The NIC can use the Advanced Encryption Standard - cipher-block chaining mode (AES-CBC) 128
        algorithm for encrypting and decrypting ESP payloads.
 
+
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_192
 
 The NIC can use the AES-CBC 192 algorithm for encrypting and decrypting ESP payloads.
 
+
 ### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_256
 
 The NIC can use the AES-CBC 256 algorithm for encrypting and decrypting ESP payloads.
+
 </dd>
 </dl>
 
@@ -281,6 +322,7 @@ The NIC can use the AES-CBC 256 algorithm for encrypting and decrypting ESP payl
 The number of SA bundles, which might include ESP or AH or both, that can be offloaded to the NIC.
      The TCP/IP maintains a count of the number of offloaded SA bundles and should not add more than the
      maximum number of SA bundles that the miniport driver reported.
+
 
 ## -remarks
 In NDIS 6.1 and later versions, the NDIS_IPSEC_OFFLOAD_V2 structure is used in the 
@@ -344,19 +386,23 @@ Specifies that IEEE 802.3p and IEEE 802.3q encapsulation settings are specified 
 Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
       1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.1 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -399,5 +445,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

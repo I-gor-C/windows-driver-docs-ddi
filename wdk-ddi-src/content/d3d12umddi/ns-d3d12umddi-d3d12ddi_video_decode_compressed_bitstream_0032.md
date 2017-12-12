@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-compressed-bitstream-0032.htm
 old-project: display
 ms.assetid: 5ef654ff-9a1e-4e97-9087-34ff21e40e1d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0032, D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video decode compressed bitstream.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0032 {
 
 Buffer.
 
+
 ### -field Offset
 
 Offset.
 
+
 ### -field Size
 
 Size.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Size.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: display\dxgk_integrateddisplayflags.htm
 old-project: display
 ms.assetid: 4671B6C1-358A-4CC2-A6FC-0FBA0F26DB07
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS
+ms.date: 12/8/2017
+ms.keywords: _DXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Flags which describe simple properties of an integrated display.
 
 
+
 ## -syntax
 
 ````
@@ -63,20 +64,25 @@ Orientation of the integrated panel when the system is undocked.
 In most systems, the integrated panel is installed such that the native orientation of the panel matches the default orientation of the system so DXGK_DPO_0 (zero) would be used.  An example where this would be non-zero is if a natively portrait panel is used in a laptop device.
 
 
+
 ### -field DockedOrientation
 
 Orientation of the integrated panel when the system is docked.  If the system does not support docking, this value will not be used.
 
+
 In most systems, the integrated panel is installed such that the native orientation of the panel matches the default orientation of the system so DXGK_DPO_0 (zero) would be used.  An example where this would be non-zero is if a natively portrait panel is used in a small tablet and the dock holds the tablet in a landscape orientation.
+
 
 
 ### -field Reserved
 
 This value is reserved for system use.
 
+
 ### -field Value
 
 UINT used to operate on the combined bit-fields.
+
 
 ## -remarks
 
@@ -86,6 +92,7 @@ UINT used to operate on the combined bit-fields.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

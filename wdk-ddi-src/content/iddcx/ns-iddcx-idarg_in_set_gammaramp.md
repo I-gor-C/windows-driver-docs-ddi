@@ -7,7 +7,7 @@ old-location: display\idarg_in_set_gammaramp.htm
 old-project: display
 ms.assetid: 1e14bcaf-1454-4930-a3b8-afc044c4be3f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_SET_GAMMARAMP,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Gives information about the gamma ramp being set.
              
 
 
+
 ## -syntax
 
 ````
@@ -61,15 +62,18 @@ typedef struct IDARG_IN_SET_GAMMARAMP {
                      [in] The type of gamma ramp being set.
                  
 
+
 ### -field GammaRampSizeInBytes
 
 
                      [in] Size in bytes of the provided gamma ramp data.  Set to zero for <a href="..\iddcx\ne-iddcx-iddcx_gammaramp_type.md">IDDCX_GAMMARAMP_TYPE</a>.
 
+
 ### -field pGammaRampData
 
 
                      [in] Pointer to gamma ramp data to set.  Set to NULL for <a href="..\iddcx\ne-iddcx-iddcx_gammaramp_type.md">IDDCX_GAMMARAMP_TYPE</a>.
+
 
 ## -remarks
 
@@ -79,6 +83,7 @@ typedef struct IDARG_IN_SET_GAMMARAMP {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\iocreatedevice.htm
 old-project: kernel
 ms.assetid: 54ca9dc8-8095-4b62-9ebc-f297abb429ca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoCreateDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoCreateDevice</b> routine creates a device object for use by a driver.
 
 
+
 ## -syntax
 
 ````
@@ -63,14 +64,17 @@ NTSTATUS IoCreateDevice(
 
 Pointer to the driver object for the caller. Each driver receives a pointer to its driver object in a parameter to its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. WDM function and filter drivers also receive a driver object pointer in their <a href="kernel.adddevice">AddDevice</a> routines.
 
+
 ### -param DeviceExtensionSize [in]
 
 Specifies the driver-determined number of bytes to be allocated for the <a href="https://msdn.microsoft.com/9ea59994-1112-4ae5-96a8-fa0670694b53">device extension</a> of the device object. The internal structure of the device extension is driver-defined.
+
 
 ### -param DeviceName [in, optional]
 
 Optionally points to a buffer containing a null-terminated Unicode string that names the device object. The string must be a full path name. WDM filter and function drivers do not name their device objects. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556420">Named Device Objects</a>.
      
+
 <div class="alert"><b>Note</b>  If a device name is not supplied (that is, <i>DeviceName</i> is <b>NULL</b>), the device object created by <b>IoCreateDevice</b> will not (and cannot) have a discretionary access control list (DACL) associated with it. For additional information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563698">Security Descriptors</a>.</div>
 <div> </div>
 
@@ -78,17 +82,21 @@ Optionally points to a buffer containing a null-terminated Unicode string that n
 
 Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants that indicate the type of device (such as FILE_DEVICE_DISK or FILE_DEVICE_KEYBOARD) or a vendor-defined value for a new type of device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.
 
+
 ### -param DeviceCharacteristics [in]
 
 Specifies one or more system-defined constants, ORed together, that provide additional information about the driver's device. For a list of possible device characteristics, see <a href="kernel.device_object">DEVICE_OBJECT</a>. For more information about how to specify device characteristics, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563818">Specifying Device Characteristics</a>. Most drivers specify FILE_DEVICE_SECURE_OPEN for this parameter.
+
 
 ### -param Exclusive [in]
 
 Specifies if the device object represents an <a href="wdkgloss.e#wdkgloss.exclusive_device#wdkgloss.exclusive_device"><i>exclusive device</i></a>. Most drivers set this value to <b>FALSE</b>. For more information about exclusive access, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563827">Specifying Exclusive Access to Device Objects</a>.
 
+
 ### -param DeviceObject [out]
 
 Pointer to a variable that receives a pointer to the newly created <a href="kernel.device_object">DEVICE_OBJECT</a> structure. The <b>DEVICE_OBJECT</b> structure is allocated from nonpaged pool.
+
 
 ## -returns
 <b>IoCreateDevice</b> returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on failure. A partial list of the failure codes returned by this function includes:
@@ -110,11 +118,13 @@ Device objects for disks, tapes, CD-ROMs, and RAM disks are given a Volume Param
 
 If a driver's call to <b>IoCreateDevice</b> returns an error, the driver should release any resources that it allocated for that device.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -125,14 +135,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +156,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -153,6 +167,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -163,14 +178,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_adddevice">AddDevice</a>, <a href="devtest.wdm_checkdeviceobjectflags">CheckDeviceObjectFlags</a>, <a href="devtest.wdm_irqliopassive1">IrqlIoPassive1</a>, <a href="devtest.kmdf_miniportonlywdmdevice">MiniportOnlyWdmDevice</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -203,5 +221,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateDevice routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateDevice routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

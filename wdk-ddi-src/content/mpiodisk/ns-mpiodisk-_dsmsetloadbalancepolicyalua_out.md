@@ -7,7 +7,7 @@ old-location: storage\dsmsetloadbalancepolicyalua_out.htm
 old-project: storage
 ms.assetid: 00c5f766-299e-4c07-a3e0-61077518a37a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DsmSetLoadBalancePolicyALUA_OUT, *PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The<b> DsmSetLoadBalancePolicyALUA_OUT</b> structure reports the output of the <a href="storage.dsmsetloadbalancepolicyalua">DsmSetLoadBalancePolicyALUA</a> method.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DsmSetLoadBalancePolicyALUA_OUT {
 
 The status of the <a href="storage.dsmsetloadbalancepolicyalua">DsmSetLoadBalancePolicyALUA</a> operation.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The status of the <a href="storage.dsmsetloadbalancepolicyalua">DsmSetLoadBalanc
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

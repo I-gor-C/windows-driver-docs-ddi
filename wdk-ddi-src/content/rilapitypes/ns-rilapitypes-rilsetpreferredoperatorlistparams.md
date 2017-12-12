@@ -7,8 +7,8 @@ old-location: netvista\rilsetpreferredoperatorlistparams_2.htm
 old-project: netvista
 ms.assetid: ff498364-f9ea-437f-904b-170ba0df7826
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ typedef struct _RILSETPREFERREDOPERATORLISTPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

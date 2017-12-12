@@ -7,7 +7,7 @@ old-location: display\idarg_out_adapter_init.htm
 old-project: display
 ms.assetid: 55e4c835-88c8-403f-883c-182915aa614d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_ADAPTER_INIT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Gives information about the initialized adapter that can be used by the OS to ca
              
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct IDARG_OUT_ADAPTER_INIT {
                      [out] Handle to the adapter that the driver can use to identify it when calling OS functions.
                  
 
+
 ## -remarks
 
 
@@ -68,6 +70,7 @@ typedef struct IDARG_OUT_ADAPTER_INIT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

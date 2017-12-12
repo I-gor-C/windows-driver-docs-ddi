@@ -7,7 +7,7 @@ old-location: netvista\riladdresstype_2.htm
 old-project: netvista
 ms.assetid: de21f647-9372-4572-bf45-581361032911
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILADDRESSTYPE, RILADDRESSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_allocation_info_flags_0022.htm
 old-project: display
 ms.assetid: DE3C133C-C1A9-4735-B1C4-9F6E791845A1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_ALLOCATION_INFO_FLAGS_0022, D3D12DDI_ALLOCATION_INFO_FLAGS_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains allocation information flags.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum D3D12DDI_ALLOCATION_INFO_FLAGS_0022 {
 
 No allocation information flag.
 
+
 ### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_PRIMARY
 
 A primary value. 
+
 
 ### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_STEREO
 
 A stereo value.
 
+
 ### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY
 
 An override priority. 
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ An override priority.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

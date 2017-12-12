@@ -7,7 +7,7 @@ old-location: netvista\wdi_tx_frame_status.htm
 old-project: netvista
 ms.assetid: 6ea8a7ac-96dc-4337-884f-d30fbee1f760
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_TX_FRAME_STATUS, WDI_TX_FRAME_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The WDI_TX_FRAME_STATUS enumeration defines the TX frame status values.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef enum _WDI_TX_FRAME_STATUS {
 
 Frame transmitted without errors.
 
+
 ### -field WDI_TxFrameStatus_Discard
 
 The frame was discarded to make room for higher priority frames.
+
 
 ### -field WDI_TxFrameStatus_NoAck
 
 Transmission failed after exhausting the maximum number of retries.
 
+
 ### -field WDI_TxFrameStatus_TransferCancelled
 
 TX stop requested.
+
 
 ### -field WDI_TxFrameStatus_SendCancelled
 
 TX stop requested.
 
+
 ### -field WDI_TxFrameStatus_SendPostponed
 
 The frame could not be transmitted at this time (for example, the peer is in PS). The frame should be transferred at a suitable time, when the corresponding TX queue is unpaused. This status is not allowed for targets that have <b>TargetPriorityQueueing</b> set to TRUE.
 
+
 ### -field WDI_TxFrameStatus_TransferFailed
 
 The transfer failed.
+
 
 ## -remarks
 
@@ -94,22 +102,27 @@ The transfer failed.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +139,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_FRAME_STATUS enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_FRAME_STATUS enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

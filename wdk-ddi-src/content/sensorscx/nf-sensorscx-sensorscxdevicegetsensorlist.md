@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This function returns a list of sensor instances associated with a WDFDEVICE.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ FORCEINLINE NTSTATUS Syntax(
 
 A WDFDEVICE handle to the framework device object that represents the sensor.
 
+
 ### -param pSensorList [out]
 
 A list of sensor instances.
 
+
 ### -param pListCount [in, out]
 
 The number of SENSOROBJECTS in pSensorInstanceList.
+
 
 ## -returns
 This function returns NTSTATUS with different values. Some values that may be returned are the following:
@@ -76,6 +80,7 @@ STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL.
 
 STATUS_NOT_FOUND is returned if the controller is not available from the <b>FxDevice</b>.
 
+
 ## -remarks
 
 
@@ -84,6 +89,7 @@ STATUS_NOT_FOUND is returned if the controller is not available from the <b>FxDe
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +100,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\ndis_wdi_data_api.htm
 old-project: netvista
 ms.assetid: 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API
+ms.date: 12/8/2017
+ms.keywords: _NDIS_WDI_DATA_API, NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The 
   NDIS_WDI_DATA_API structure specifies the entry points for WDI data indications.
+
 
 
 ## -syntax
@@ -77,14 +78,18 @@ The
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_WDI_DATA_API.
      
+
 To indicate the version of the NDIS_WDI_DATA_API structure, set the 
      <b>Revision</b> member to the following value:
+
+
 
 
 ### -field NDIS_OBJECT_TYPE_WDI_DATA_API_REVISION_1
 
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_WDI_DATA_API_REVISION_1.
+
 </dd>
 </dl>
 
@@ -92,65 +97,81 @@ Set the
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_dequeue_ind.md">NdisWdiTxDequeueIndication</a> callback function.
 
+
 ### -field TxTransferCompleteIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_transfer_complete_ind.md">NdisWdiTxTransferCompleteIndication</a> callback function.
+
 
 ### -field TxSendCompleteIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_complete_ind.md">NdisWdiTxSendCompleteIndication</a> callback function.
 
+
 ### -field TxQueryRATIDState
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_query_ra_tid_state.md">NdisWdiTxQueryRATIDState</a> callback function.
+
 
 ### -field TxSendPauseIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_pause_ind.md">NdisWdiTxSendPauseIndication</a> callback function.
 
+
 ### -field TxSendRestartIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_restart_ind.md">NdisWdiTxSendRestartIndication</a> callback function.
+
 
 ### -field TxReleaseFrameIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_release_frames_ind.md">NdisWdiTxReleaseFrameIndication</a> callback function.
 
+
 ### -field TxInjectFrameIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_inject_frame_ind.md">NdisWdiTxInjectFrameIndication</a> callback function.
+
 
 ### -field TxAbortConfirm
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_abort_confirm.md">NdisWdiTxAbortConfirm</a> callback function.
 
+
 ### -field RxInorderDataIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_inorder_data_ind.md">NdisWdiRxInorderDataIndication</a> callback function.
+
 
 ### -field RxStopConfirm
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_stop_confirm.md">NdisWdiRxStopConfirm</a> callback function.
 
+
 ### -field RxFlushConfirm
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_flush_confirm.md">NdisWdiRxFlushConfirm</a> callback function.
+
 
 ### -field PeerCreateIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_peer_create_ind.md">NdisWdiPeerCreateIndication</a> callback function.
 
+
 ### -field PeerDeleteIndication
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_peer_delete_ind.md">NdisWdiPeerDeleteIndication</a> callback function.
+
 
 ### -field AllocateWiFiFrameMetaData
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_allocate_wdi_frame_metadata.md">NdisWdiAllocateWiFiFrameMetaData</a> callback function.
 
+
 ### -field FreeWiFiFrameMetaData
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_free_wdi_frame_metadata.md">NdisWdiFreeWiFiFrameMetaData</a> callback function.
+
 
 ## -remarks
 
@@ -160,22 +181,27 @@ The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_free_wdi_frame_
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

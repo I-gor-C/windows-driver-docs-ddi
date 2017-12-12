@@ -7,7 +7,7 @@ old-location: debugger\writecontrolspace.htm
 old-project: debugger
 ms.assetid: 12ea119e-9d56-4a1d-a8c6-3999147dfaac
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: WriteControlSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WriteControlSpace</b> function writes to the processor-specific control space of the current target.
 
 
+
 ## -syntax
 
 ````
@@ -60,29 +61,36 @@ VOID WriteControlSpace(
 
 Specifies the index of the processor whose control space is to be written.
 
+
 ### -param address 
 
 Specifies the address of the control space.
+
 
 ### -param buf 
 
 Specifies the data to be written to the control space.
 
+
 ### -param size 
 
 Specifies the number of bytes to be written.  This is the number of bytes in the <i>buf</i> buffer.
 
+
 ## -returns
 None
 
+
 ## -remarks
 This function can only be called in kernel-mode debugging.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +101,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,5 +121,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WriteControlSpace function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WriteControlSpace function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

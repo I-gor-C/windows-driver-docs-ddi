@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_mode.htm
 old-project: display
 ms.assetid: 95e1778a-4f65-40ee-8ad2-f797ce9e95b0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_MONITOR_MODE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the current monitor mode.
 
 
+
 ## -syntax
 
 ````
@@ -61,16 +62,19 @@ typedef struct IDDCX_MONITOR_MODE {
                      Total size of the structure.
                  
 
+
 ### -field Origin
 
 
                      Where the driver derived this mode from.
                  
 
+
 ### -field MonitorVideoSignalInfo
 
 
                      This is the details of the Monitor mode.
+
 <div class="alert"><b>Note</b>  The<a href="display.displayconfig_video_signal_info">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a><b>AdditionalSignalInfo</b> value vSyncFreqDivider has to have a zero value.</div>
 <div> </div>
 
@@ -82,6 +86,7 @@ typedef struct IDDCX_MONITOR_MODE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

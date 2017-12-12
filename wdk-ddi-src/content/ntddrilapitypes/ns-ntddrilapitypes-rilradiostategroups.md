@@ -7,8 +7,8 @@ old-location: netvista\rilradiostategroups.htm
 old-project: netvista
 ms.assetid: 901fe9e5-4b3c-4f31-9bf0-a4a5bd66bd19
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS, *LPRILRADIOSTATEGROUPS
+ms.date: 12/8/2017
+ms.keywords: RILRADIOSTATEGROUPS, *LPRILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILRADIOSTATEGROUPS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

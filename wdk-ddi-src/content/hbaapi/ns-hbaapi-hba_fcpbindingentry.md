@@ -7,7 +7,7 @@ old-location: storage\hba_fcpbindingentry.htm
 old-project: storage
 ms.assetid: c9c46133-a660-46c6-911b-77c2dd2ed2e0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: HBA_FCPBindingEntry, *PHBA_FCPBINDINGENTRY, HBA_FCPBINDINGENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The HBA_FCPBindingEntry structure is equivalent to <a href="storage.hbafcpbindingentry">HBAFCPBindingEntry</a>. The WMI tool suite generates the HBAFCPBindingEntry when it compiles the <a href="storage.hbafcpbindingentry_wmi_class">HBAFCPBindingEntry WMI Class</a>.  HBA_FCPBindingEntry is used with the fibre channel HBA API library and is declared in <i>hbaapi.h</i>.
 
 
+
 ## -struct-fields
 
 
@@ -52,6 +53,7 @@ The HBA_FCPBindingEntry structure is equivalent to <a href="storage.hbafcpbindin
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

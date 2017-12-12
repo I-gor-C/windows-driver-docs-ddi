@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Imaging devices
 
+## -description
 Overview of the Imaging devices technology.
 
 To develop Imaging devices, you need these headers:
@@ -9,7 +14,6 @@ To develop Imaging devices, you need these headers:
  * [sti.h](..\sti\index.md)
  * [stiusd.h](..\stiusd\index.md)
  * [usbscan.h](..\usbscan\index.md)
- * [wia_lh.h](..\wia_lh\index.md)
  * [wiadef.h](..\wiadef\index.md)
  * [wiadevd.h](..\wiadevd\index.md)
  * [wiamdef.h](..\wiamdef\index.md)
@@ -24,90 +28,6 @@ For the programming guide, see [Imaging devices](https://docs.microsoft.com/en-u
 
 | Title   | Description   |
 | ---- |:---- |
-| [IStiDevice::DeviceReset method](..\sti\nf-sti-istidevice-devicereset.md) | The IStiDevice |
-| [IStiDevice::Diagnostic method](..\sti\nf-sti-istidevice-diagnostic.md) | The IStiDevice |
-| [IStiDevice::Escape method](..\sti\nf-sti-istidevice-escape.md) | The IStiDevice |
-| [IStiDevice::GetCapabilities method](..\sti\nf-sti-istidevice-getcapabilities.md) | The IStiDevice |
-| [IStiDevice::GetLastError method](..\sti\nf-sti-istidevice-getlasterror.md) | The IStiDevice |
-| [IStiDevice::GetLastErrorInfo method](..\sti\nf-sti-istidevice-getlasterrorinfo.md) | The IStiDevice |
-| [IStiDevice::GetLastNotificationData method](..\sti\nf-sti-istidevice-getlastnotificationdata.md) | The IStiDevice |
-| [IStiDevice::GetStatus method](..\sti\nf-sti-istidevice-getstatus.md) | The IStiDevice |
-| [IStiDevice::Initialize method](..\sti\nf-sti-istidevice-initialize.md) | The IStiDevice |
-| [IStiDevice::LockDevice method](..\sti\nf-sti-istidevice-lockdevice.md) | The IStiDevice |
-| [IStiDevice::RawReadCommand method](..\sti\nf-sti-istidevice-rawreadcommand.md) | The IStiDevice |
-| [IStiDevice::RawReadData method](..\sti\nf-sti-istidevice-rawreaddata.md) | The IStiDevice |
-| [IStiDevice::RawWriteCommand method](..\sti\nf-sti-istidevice-rawwritecommand.md) | The IStiDevice |
-| [IStiDevice::RawWriteData method](..\sti\nf-sti-istidevice-rawwritedata.md) | The IStiDevice |
-| [IStiDevice::Release method](..\sti\nf-sti-istidevice-release.md) | The IStiDevice |
-| [IStiDevice::Subscribe method](..\sti\nf-sti-istidevice-subscribe.md) | The IStiDevice |
-| [IStiDevice::UnLockDevice method](..\sti\nf-sti-istidevice-unlockdevice.md) | The IStiDevice |
-| [IStiDevice::UnSubscribe method](..\sti\nf-sti-istidevice-unsubscribe.md) | The IStiDevice |
-| [IStiDeviceControl::AddRef method](..\stiusd\nf-stiusd-istidevicecontrol-addref.md) | The IStiDeviceControl |
-| [IStiDeviceControl::GetMyDeviceHandle method](..\stiusd\nf-stiusd-istidevicecontrol-getmydevicehandle.md) | This topic describes the GetMyDeviceHandle method. |
-| [IStiDeviceControl::GetMyDeviceOpenMode method](..\stiusd\nf-stiusd-istidevicecontrol-getmydeviceopenmode.md) | The IStiDeviceControl |
-| [IStiDeviceControl::GetMyDevicePortName method](..\stiusd\nf-stiusd-istidevicecontrol-getmydeviceportname.md) | The IStiDeviceControl |
-| [IStiDeviceControl::RawDeviceControl method](..\stiusd\nf-stiusd-istidevicecontrol-rawdevicecontrol.md) | This topic describes the RawDeviceControl method. |
-| [IStiDeviceControl::Release method](..\stiusd\nf-stiusd-istidevicecontrol-release.md) | The IStiDeviceControl |
-| [IStiDeviceControl::WriteToErrorLog method](..\stiusd\nf-stiusd-istidevicecontrol-writetoerrorlog.md) | The IStiDeviceControl |
-| [IStiUSD::DeviceReset method](..\stiusd\nf-stiusd-istiusd-devicereset.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::Diagnostic method](..\stiusd\nf-stiusd-istiusd-diagnostic.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::Escape method](..\stiusd\nf-stiusd-istiusd-escape.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetCapabilities method](..\stiusd\nf-stiusd-istiusd-getcapabilities.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetLastError method](..\stiusd\nf-stiusd-istiusd-getlasterror.md) | The IStiUSD |
-| [IStiUSD::GetLastErrorInfo method](..\stiusd\nf-stiusd-istiusd-getlasterrorinfo.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetNotificationData method](..\stiusd\nf-stiusd-istiusd-getnotificationdata.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetStatus method](..\stiusd\nf-stiusd-istiusd-getstatus.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::Initialize method](..\stiusd\nf-stiusd-istiusd-initialize.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::LockDevice method](..\stiusd\nf-stiusd-istiusd-lockdevice.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::RawReadCommand method](..\stiusd\nf-stiusd-istiusd-rawreadcommand.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::RawReadData method](..\stiusd\nf-stiusd-istiusd-rawreaddata.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::RawWriteCommand method](..\stiusd\nf-stiusd-istiusd-rawwritecommand.md) | A still image minidriver's IStiDevice |
-| [IStiUSD::RawWriteData method](..\stiusd\nf-stiusd-istiusd-rawwritedata.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::SetNotificationHandle method](..\stiusd\nf-stiusd-istiusd-setnotificationhandle.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::UnLockDevice method](..\stiusd\nf-stiusd-istiusd-unlockdevice.md) | A still image minidriver's IStiUSD |
-| [IWiaDrvItem::AddItemToFolder method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-additemtofolder.md) | The IWiaDrvItem |
-| [IWiaDrvItem::DumpItemData method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-dumpitemdata.md) | The IWiaDrvItem |
-| [IWiaDrvItem::FindChildItemByName method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-findchilditembyname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::FindItemByName method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-finditembyname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetDeviceSpecContext method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-getdevicespeccontext.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetFirstChildItem method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-getfirstchilditem.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetFullItemName method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-getfullitemname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetItemFlags method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-getitemflags.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetItemName method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-getitemname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetNextSiblingItem method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-getnextsiblingitem.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetParentItem method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-getparentitem.md) | The IWiaDrvItem |
-| [IWiaDrvItem::RemoveItemFromFolder method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-removeitemfromfolder.md) | The IWiaDrvItem |
-| [IWiaDrvItem::UnlinkItemTree method](..\wiamindr_lh\nf-wiamindr-lh-iwiadrvitem-unlinkitemtree.md) | The IWiaDrvItem |
-| [IWiaErrorHandler::GetStatusDescription method](..\wia_lh\nf-wia-lh-iwiaerrorhandler-getstatusdescription.md) | The system UI calls the WiaErrorHandler |
-| [IWiaErrorHandler::ReportStatus method](..\wia_lh\nf-wia-lh-iwiaerrorhandler-reportstatus.md) | The IWiaErrorHandler |
-| [IWiaImageFilter::FilterPreviewImage method](..\wia_lh\nf-wia-lh-iwiaimagefilter-filterpreviewimage.md) | The IWiaImageFilter |
-| [IWiaImageFilter::InitializeFilter method](..\wia_lh\nf-wia-lh-iwiaimagefilter-initializefilter.md) | The IWiaImageFilter |
-| [IWiaLog::InitializeLog method](..\wia_lh\nf-wia-lh-iwialog-initializelog.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.The IWiaLog |
-| [IWiaLog::Log method](..\wia_lh\nf-wia-lh-iwialog-log.md) | The IWiaLog interface is obsolete for Windows XP and later, and is no longer supported. Use the Diagnostic Log Macros instead.The IWiaLog |
-| [IWiaLog::hResult method](..\wia_lh\nf-wia-lh-iwialog-hresult.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. |
-| [IWiaMiniDrv::drvAcquireItemData method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvacquireitemdata.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvAnalyzeItem method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvanalyzeitem.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvDeleteItem method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvdeleteitem.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvDeviceCommand method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvdevicecommand.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvFreeDrvItemContext method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvfreedrvitemcontext.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvGetCapabilities method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvgetcapabilities.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvGetDeviceErrorStr method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvgetdeviceerrorstr.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvGetWiaFormatInfo method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvgetwiaformatinfo.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvInitItemProperties method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvinititemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvInitializeWia method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvinitializewia.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvLockWiaDevice method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvlockwiadevice.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvNotifyPnpEvent method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvnotifypnpevent.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvReadItemProperties method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvreaditemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvUnInitializeWia method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvuninitializewia.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvUnLockWiaDevice method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvunlockwiadevice.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvValidateItemProperties method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvvalidateitemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvWriteItemProperties method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrv-drvwriteitemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrvCallBack::MiniDrvCallback method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrvcallback-minidrvcallback.md) | The IWiaMiniDrvCallBack |
-| [IWiaMiniDrvTransferCallback::GetNextStream method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrvtransfercallback-getnextstream.md) | Called by the WIA mini-driver to obtain a stream for the current data transfer (download or upload). |
-| [IWiaMiniDrvTransferCallback::SendMessage method](..\wiamindr_lh\nf-wiamindr-lh-iwiaminidrvtransfercallback-sendmessage.md) | Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer. |
-| [IWiaSegmentationFilter::DetectRegions method](..\wia_lh\nf-wia-lh-iwiasegmentationfilter-detectregions.md) | The IWiaSegmentationFilter |
-| [IWiaTransferCallback::GetNextStream method](..\wia_lh\nf-wia-lh-iwiatransfercallback-getnextstream.md) | The IWiaTransferCallback |
-| [IWiaTransferCallback::TransferCallback method](..\wia_lh\nf-wia-lh-iwiatransfercallback-transfercallback.md) | The IWiaTransferCallback |
 | [MicroEntry function](..\wiamicro\nf-wiamicro-microentry.md) | The MicroEntry function responds to commands sent by the WIA Flatbed driver. |
 | [Scan function](..\wiamicro\nf-wiamicro-scan.md) | The Scan function reads data from the device and returns the data to the WIA Flatbed driver. |
 | [SetPixelWindow function](..\wiamicro\nf-wiamicro-setpixelwindow.md) | The SetPixelWindow function sets the image area to be scanned. |
@@ -170,10 +90,8 @@ For the programming guide, see [Imaging devices](https://docs.microsoft.com/en-u
 | [wiauDbgErrorHr function](..\wiautil\nf-wiautil-wiaudbgerrorhr.md) | The wiauDbgErrorHr function logs a message containing an HRESULT and its error message string. |
 | [wiauDbgFlags function](..\wiautil\nf-wiautil-wiaudbgflags.md) | The wiauDbgFlags function determines whether a particular debugging flag is set. |
 | [wiauDbgHelper function](..\wiautil\nf-wiautil-wiaudbghelper.md) | The wiauDbgHelper function formats a message and writes it to a log file, or debugger, or both. |
-| [wiauDbgHelper function](..\wiautil\nf-wiautil-wiaudbghelper~r1.md) | The wiauDbgHelper function formats a message and writes it to a log file, or debugger, or both. |
 | [wiauDbgHelper2 function](..\wiautil\nf-wiautil-wiaudbghelper2.md) | The wiauDbgHelper2 function writes a message to a log file, or debugger, or both. |
 | [wiauDbgInit function](..\wiautil\nf-wiautil-wiaudbginit.md) | The wiauDbgInit function initializes WIA debugging. |
-| [wiauDbgInit function](..\wiautil\nf-wiautil-wiaudbginit~r1.md) | The wiauDbgInit function initializes WIA debugging. |
 | [wiauDbgLegacyError function](..\wiautil\nf-wiautil-wiaudbglegacyerror.md) | The wiauDbgLegacyError function logs an error message. |
 | [wiauDbgLegacyError2 function](..\wiautil\nf-wiautil-wiaudbglegacyerror2.md) | The wiauDbgLegacyError2 function logs an error message. |
 | [wiauDbgLegacyHresult2 function](..\wiautil\nf-wiautil-wiaudbglegacyhresult2.md) | The wiauDbgLegacyHresult2 function logs a default message containing an HRESULT. |
@@ -181,7 +99,6 @@ For the programming guide, see [Imaging devices](https://docs.microsoft.com/en-u
 | [wiauDbgLegacyTrace2 function](..\wiautil\nf-wiautil-wiaudbglegacytrace2.md) | The wiauDbgLegacyTrace2 function logs a trace message. |
 | [wiauDbgLegacyWarning function](..\wiautil\nf-wiautil-wiaudbglegacywarning.md) | The wiauDbgLegacyWarning function logs a warning message. |
 | [wiauDbgSetFlags function](..\wiautil\nf-wiautil-wiaudbgsetflags.md) | The wiauDbgSetFlags function sets debugging flags. |
-| [wiauDbgSetFlags function](..\wiautil\nf-wiautil-wiaudbgsetflags~r1.md) | The wiauDbgSetFlags function sets debugging flags. |
 | [wiauDbgTrace function](..\wiautil\nf-wiautil-wiaudbgtrace.md) | The wiauDbgTrace function logs a trace message. |
 | [wiauDbgWarning function](..\wiautil\nf-wiautil-wiaudbgwarning.md) | The wiauDbgWarning function logs a warning message. |
 | [wiauGetDrvItemContext function](..\wiautil\nf-wiautil-wiaugetdrvitemcontext.md) | The wiauGetDrvItemContext function gets the driver item context, and optionally, the driver item. |
@@ -209,53 +126,53 @@ For the programming guide, see [Imaging devices](https://docs.microsoft.com/en-u
 
 | Title   | Description   |
 | ---- |:---- |
-| [BMP_IMAGE_INFO structure](..\wiautil\ns-wiautil--bmp-image-info.md) | The BMP_IMAGE_INFO structure contains information about a BMP image. |
-| [CHANNEL_INFO structure](..\usbscan\ns-usbscan--channel-info.md) | The CHANNEL_INFO structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_CHANNEL_ALIGN_RQST. |
-| [DEVICE_DESCRIPTOR structure](..\usbscan\ns-usbscan--device-descriptor.md) | The DEVICE_DESCRIPTOR structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_DEVICE_DESCRIPTOR. |
-| [DRV_VERSION structure](..\usbscan\ns-usbscan--drv-version.md) | The DRV_VERSION structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_VERSION. |
-| [IO_BLOCK structure](..\usbscan\ns-usbscan--io-block.md) | The IO_BLOCK structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_READ_REGISTERS or IOCTL_WRITE_REGISTERS. |
-| [IO_BLOCK_EX structure](..\usbscan\ns-usbscan--io-block-ex.md) | The IO_BLOCK_EX structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SEND_USB_REQUEST. |
-| [MINIDRV_TRANSFER_CONTEXT structure](..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md) | The MINIDRV_TRANSFER_CONTEXT structure is used to store image and other information needed for a memory-callback data transfer or a file data transfer. |
-| [MINIDRV_TRANSFER_CONTEXT structure](..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context~r1.md) | The MINIDRV_TRANSFER_CONTEXT structure is used to store image and other information needed for a memory-callback data transfer or a file data transfer. |
-| [PTP_VENDOR_DATA_IN structure](..\ptpusd\ns-ptpusd--ptp-vendor-data-in.md) | The PTP_VENDOR_DATA_IN structure contains information about an arbitrary command that an application issues to the device. |
-| [PTP_VENDOR_DATA_OUT structure](..\ptpusd\ns-ptpusd--ptp-vendor-data-out.md) | The PTP_VENDOR_DATA_OUT structure contains information that the device sends to an application, in response to a command the application issued to the device. |
-| [RANGEVALUE structure](..\wiamicro\ns-wiamicro--rangevalue.md) | The RANGEVALUE structure is used by a microdriver to communicate to the WIA Flatbed driver the legal values for a microdriver function parameter. |
-| [SCANINFO structure](..\wiamicro\ns-wiamicro--scaninfo.md) | The SCANINFO structure is used to store and communicate information about a scan acquisition. |
-| [SCANWINDOW structure](..\wiamicro\ns-wiamicro--scanwindow.md) | The SCANWINDOW structure is used by the WIA Flatbed driver to tell the microdriver what image area to scan. |
-| [SCSISCAN_CMD structure](..\scsiscan\ns-scsiscan--scsiscan-cmd.md) | The SCSISCAN_CMD structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SCSISCAN_CMD. |
-| [SCSISCAN_INFO structure](..\scsiscan\ns-scsiscan--scsiscan-info.md) | The SCSISCAN_INFO structure is used as a parameter to DeviceIoControl (described in the Microsoft Windows SDK documentation), when the specified I/O control code is IOCTL_SCSISCAN_GET_INFO. |
-| [STINOTIFY structure](..\sti\ns-sti--stinotify.md) | The STINOTIFY structure is used as a parameter to the IStillImage |
-| [STISUBSCRIBE structure](..\sti\ns-sti--stisubscribe.md) | The STISUBSCRIBE structure is used as a parameter for the IStiDevice |
-| [STI_DEVICE_STATUS structure](..\sti\ns-sti--sti-device-status.md) | The STI_DEVICE_STATUS structure is used as a parameter to the IStiDevice |
-| [STI_DEV_CAPS structure](..\sti\ns-sti--sti-dev-caps.md) | The STI_DEV_CAPS structure is used as a parameter to the IStiDevice |
-| [STI_DIAG structure](..\sti\ns-sti--sti-diag.md) | The STI_DIAG structure is used as a parameter to the IStiDevice |
-| [STI_USD_CAPS structure](..\stiusd\ns-stiusd--sti-usd-caps.md) | The STI_USD_CAPS structure is used as a parameter for the IStiUSD |
-| [TWAIN_CAPABILITY structure](..\wiatwcmp\ns-wiatwcmp--twain-capability.md) | The TWAIN_CAPABILITY structure holds information used when a TWAIN-compatible application communicates with a WIA driver. |
-| [USBSCAN_GET_DESCRIPTOR structure](..\usbscan\ns-usbscan--usbscan-get-descriptor.md) | The USBSCAN_GET_DESCRIPTOR structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_USB_DESCRIPTOR. |
-| [USBSCAN_PIPE_CONFIGURATION structure](..\usbscan\ns-usbscan--usbscan-pipe-configuration.md) | The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_PIPE_CONFIGURATION. |
-| [USBSCAN_PIPE_INFORMATION structure](..\usbscan\ns-usbscan--usbscan-pipe-information.md) | The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a USBSCAN_PIPE_CONFIGURATION structure. |
-| [USBSCAN_TIMEOUT structure](..\usbscan\ns-usbscan--usbscan-timeout.md) | The USBSCAN_TIMEOUT structure stores time-out values for USB bulk IN and bulk OUT operations, and interrupts. |
 | [VAL structure](..\wiamicro\ns-wiamicro-val.md) | The VAL structure is used by the microdriver and WIA Flatbed driver to pass information between each other. |
-| [WIAS_CHANGED_VALUE_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wias-changed-value-info.md) | The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property. |
-| [WIAS_CHANGED_VALUE_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wias-changed-value-info~r1.md) | The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property. |
-| [WIAS_DOWN_SAMPLE_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wias-down-sample-info.md) | The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, wiasDownSampleBuffer. |
-| [WIAS_DOWN_SAMPLE_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wias-down-sample-info~r1.md) | The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, wiasDownSampleBuffer. |
-| [WIAS_ENDORSER_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-info.md) | The WIAS_ENDORSER_INFO structure holds custom endorser token/value pairs. |
-| [WIAS_ENDORSER_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-info~r1.md) | The WIAS_ENDORSER_INFO structure holds custom endorser token/value pairs. |
-| [WIAS_ENDORSER_VALUE structure](..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-value.md) | The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings. |
-| [WIAS_ENDORSER_VALUE structure](..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-value~r1.md) | The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings. |
-| [WIA_BARCODES structure](..\wiadef\ns-wiadef--wia-barcodes.md) | The WIA_BARCODES structure stores header information for the barcode metadata report of one scan job (one call to IWiaMiniDrv |
-| [WIA_BARCODE_INFO structure](..\wiadef\ns-wiadef--wia-barcode-info.md) | The WIA_BARCODE_INFO structure stores information for one decoded barcode. |
-| [WIA_DEV_CAP_DRV structure](..\wiamindr_lh\ns-wiamindr-lh--wia-dev-cap-drv.md) | The WIA_DEV_CAP_DRV structure is used to enumerate device capabilities. A device capability is defined by an event or command that the device supports. |
-| [WIA_DEV_CAP_DRV structure](..\wiamindr_lh\ns-wiamindr-lh--wia-dev-cap-drv~r1.md) | The WIA_DEV_CAP_DRV structure is used to enumerate device capabilities. A device capability is defined by an event or command that the device supports. |
-| [WIA_MICR structure](..\wiadef\ns-wiadef--wia-micr.md) | The WIA_MICR structure stores header information for the MICR metadata report of one scan job (one call to IWiaMiniDrv |
-| [WIA_MICR_INFO structure](..\wiadef\ns-wiadef--wia-micr-info.md) | The WIA_MICR_INFO structure stores information for one decoded MICR code. |
-| [WIA_PATCH_CODES structure](..\wiadef\ns-wiadef--wia-patch-codes.md) | The WIA_PATCH_CODES structure stores header information for the patch code metadata report of one scan job (one call to IWiaMiniDrv |
-| [WIA_PATCH_CODE_INFO structure](..\wiadef\ns-wiadef--wia-patch-code-info.md) | The WIA_PATCH_CODE_INFO structure stores information for one decoded patch code. |
-| [WIA_PROPERTY_CONTEXT structure](..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md) | The WIA_PROPERTY_CONTEXT structure stores property identifiers and their context. |
-| [WIA_PROPERTY_CONTEXT structure](..\wiamindr_lh\ns-wiamindr-lh--wia-property-context~r1.md) | The WIA_PROPERTY_CONTEXT structure stores property identifiers and their context. |
-| [WIA_PROPERTY_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wia-property-info.md) | The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type. |
-| [WIA_PROPERTY_INFO structure](..\wiamindr_lh\ns-wiamindr-lh--wia-property-info~r1.md) | The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type. |
+| [_BMP_IMAGE_INFO structure](..\wiautil\ns-wiautil-_bmp_image_info.md) | The BMP_IMAGE_INFO structure contains information about a BMP image. |
+| [_CHANNEL_INFO structure](..\usbscan\ns-usbscan-_channel_info.md) | The CHANNEL_INFO structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_CHANNEL_ALIGN_RQST. |
+| [_DEVICE_DESCRIPTOR structure](..\usbscan\ns-usbscan-_device_descriptor.md) | The DEVICE_DESCRIPTOR structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_DEVICE_DESCRIPTOR. |
+| [_DRV_VERSION structure](..\usbscan\ns-usbscan-_drv_version.md) | The DRV_VERSION structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_VERSION. |
+| [_IO_BLOCK structure](..\usbscan\ns-usbscan-_io_block.md) | The IO_BLOCK structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_READ_REGISTERS or IOCTL_WRITE_REGISTERS. |
+| [_IO_BLOCK_EX structure](..\usbscan\ns-usbscan-_io_block_ex.md) | The IO_BLOCK_EX structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SEND_USB_REQUEST. |
+| [_MINIDRV_TRANSFER_CONTEXT structure](..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md) | The MINIDRV_TRANSFER_CONTEXT structure is used to store image and other information needed for a memory-callback data transfer or a file data transfer. |
+| [_MINIDRV_TRANSFER_CONTEXT structure](..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context~r1.md) | The MINIDRV_TRANSFER_CONTEXT structure is used to store image and other information needed for a memory-callback data transfer or a file data transfer. |
+| [_PTP_VENDOR_DATA_IN structure](..\ptpusd\ns-ptpusd-_ptp_vendor_data_in.md) | The PTP_VENDOR_DATA_IN structure contains information about an arbitrary command that an application issues to the device. |
+| [_PTP_VENDOR_DATA_OUT structure](..\ptpusd\ns-ptpusd-_ptp_vendor_data_out.md) | The PTP_VENDOR_DATA_OUT structure contains information that the device sends to an application, in response to a command the application issued to the device. |
+| [_RANGEVALUE structure](..\wiamicro\ns-wiamicro-_rangevalue.md) | The RANGEVALUE structure is used by a microdriver to communicate to the WIA Flatbed driver the legal values for a microdriver function parameter. |
+| [_SCANINFO structure](..\wiamicro\ns-wiamicro-_scaninfo.md) | The SCANINFO structure is used to store and communicate information about a scan acquisition. |
+| [_SCANWINDOW structure](..\wiamicro\ns-wiamicro-_scanwindow.md) | The SCANWINDOW structure is used by the WIA Flatbed driver to tell the microdriver what image area to scan. |
+| [_SCSISCAN_CMD structure](..\scsiscan\ns-scsiscan-_scsiscan_cmd.md) | The SCSISCAN_CMD structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SCSISCAN_CMD. |
+| [_SCSISCAN_INFO structure](..\scsiscan\ns-scsiscan-_scsiscan_info.md) | The SCSISCAN_INFO structure is used as a parameter to DeviceIoControl (described in the Microsoft Windows SDK documentation), when the specified I/O control code is IOCTL_SCSISCAN_GET_INFO. |
+| [_STINOTIFY structure](..\sti\ns-sti-_stinotify.md) | The STINOTIFY structure is used as a parameter to the IStillImage |
+| [_STISUBSCRIBE structure](..\sti\ns-sti-_stisubscribe.md) | The STISUBSCRIBE structure is used as a parameter for the IStiDevice |
+| [_STI_DEVICE_STATUS structure](..\sti\ns-sti-_sti_device_status.md) | The STI_DEVICE_STATUS structure is used as a parameter to the IStiDevice |
+| [_STI_DEV_CAPS structure](..\sti\ns-sti-_sti_dev_caps.md) | The STI_DEV_CAPS structure is used as a parameter to the IStiDevice |
+| [_STI_DIAG structure](..\sti\ns-sti-_sti_diag.md) | The STI_DIAG structure is used as a parameter to the IStiDevice |
+| [_STI_USD_CAPS structure](..\stiusd\ns-stiusd-_sti_usd_caps.md) | The STI_USD_CAPS structure is used as a parameter for the IStiUSD |
+| [_TWAIN_CAPABILITY structure](..\wiatwcmp\ns-wiatwcmp-_twain_capability.md) | The TWAIN_CAPABILITY structure holds information used when a TWAIN-compatible application communicates with a WIA driver. |
+| [_USBSCAN_GET_DESCRIPTOR structure](..\usbscan\ns-usbscan-_usbscan_get_descriptor.md) | The USBSCAN_GET_DESCRIPTOR structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_USB_DESCRIPTOR. |
+| [_USBSCAN_PIPE_CONFIGURATION structure](..\usbscan\ns-usbscan-_usbscan_pipe_configuration.md) | The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_PIPE_CONFIGURATION. |
+| [_USBSCAN_PIPE_INFORMATION structure](..\usbscan\ns-usbscan-_usbscan_pipe_information.md) | The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a USBSCAN_PIPE_CONFIGURATION structure. |
+| [_USBSCAN_TIMEOUT structure](..\usbscan\ns-usbscan-_usbscan_timeout.md) | The USBSCAN_TIMEOUT structure stores time-out values for USB bulk IN and bulk OUT operations, and interrupts. |
+| [_WIAS_CHANGED_VALUE_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_changed_value_info.md) | The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property. |
+| [_WIAS_CHANGED_VALUE_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_changed_value_info~r1.md) | The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property. |
+| [_WIAS_DOWN_SAMPLE_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_down_sample_info.md) | The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, wiasDownSampleBuffer. |
+| [_WIAS_DOWN_SAMPLE_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_down_sample_info~r1.md) | The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, wiasDownSampleBuffer. |
+| [_WIAS_ENDORSER_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md) | The WIAS_ENDORSER_INFO structure holds custom endorser token/value pairs. |
+| [_WIAS_ENDORSER_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info~r1.md) | The WIAS_ENDORSER_INFO structure holds custom endorser token/value pairs. |
+| [_WIAS_ENDORSER_VALUE structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_value.md) | The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings. |
+| [_WIAS_ENDORSER_VALUE structure](..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_value~r1.md) | The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings. |
+| [_WIA_BARCODES structure](..\wiadef\ns-wiadef-_wia_barcodes.md) | The WIA_BARCODES structure stores header information for the barcode metadata report of one scan job (one call to IWiaMiniDrv |
+| [_WIA_BARCODE_INFO structure](..\wiadef\ns-wiadef-_wia_barcode_info.md) | The WIA_BARCODE_INFO structure stores information for one decoded barcode. |
+| [_WIA_DEV_CAP_DRV structure](..\wiamindr_lh\ns-wiamindr_lh-_wia_dev_cap_drv.md) | The WIA_DEV_CAP_DRV structure is used to enumerate device capabilities. A device capability is defined by an event or command that the device supports. |
+| [_WIA_DEV_CAP_DRV structure](..\wiamindr_lh\ns-wiamindr_lh-_wia_dev_cap_drv~r1.md) | The WIA_DEV_CAP_DRV structure is used to enumerate device capabilities. A device capability is defined by an event or command that the device supports. |
+| [_WIA_MICR structure](..\wiadef\ns-wiadef-_wia_micr.md) | The WIA_MICR structure stores header information for the MICR metadata report of one scan job (one call to IWiaMiniDrv |
+| [_WIA_MICR_INFO structure](..\wiadef\ns-wiadef-_wia_micr_info.md) | The WIA_MICR_INFO structure stores information for one decoded MICR code. |
+| [_WIA_PATCH_CODES structure](..\wiadef\ns-wiadef-_wia_patch_codes.md) | The WIA_PATCH_CODES structure stores header information for the patch code metadata report of one scan job (one call to IWiaMiniDrv |
+| [_WIA_PATCH_CODE_INFO structure](..\wiadef\ns-wiadef-_wia_patch_code_info.md) | The WIA_PATCH_CODE_INFO structure stores information for one decoded patch code. |
+| [_WIA_PROPERTY_CONTEXT structure](..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md) | The WIA_PROPERTY_CONTEXT structure stores property identifiers and their context. |
+| [_WIA_PROPERTY_CONTEXT structure](..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context~r1.md) | The WIA_PROPERTY_CONTEXT structure stores property identifiers and their context. |
+| [_WIA_PROPERTY_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md) | The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type. |
+| [_WIA_PROPERTY_INFO structure](..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info~r1.md) | The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type. |
 | [tagDEVICEDIALOGDATA structure](..\wiadevd\ns-wiadevd-tagdevicedialogdata.md) | The DEVICEDIALOGDATA structure contains all the data needed to implement a custom device dialog. |
 | [tagDEVICEDIALOGDATA2 structure](..\wiadevd\ns-wiadevd-tagdevicedialogdata2.md) | The DEVICEDIALOGDATA2 structure contains all the data needed to implement a custom device dialog. |
 
@@ -263,21 +180,48 @@ For the programming guide, see [Imaging devices](https://docs.microsoft.com/en-u
 
 | Title   | Description   |
 | ---- |:---- |
-| [PIPE_TYPE enumeration](..\usbscan\ne-usbscan-pipe-type.md) | The PIPE_TYPE data type is used as input to the DeviceIoControl function, if the I/O control code is IOCTL_CANCEL_IO or IOCTL_RESET_PIPE. |
-| [RAW_PIPE_TYPE enumeration](..\usbscan\ne-usbscan--raw-pipe-type.md) | The RAW_PIPE_TYPE data type is used to specify the type of a USB pipe. |
-| [SKIP_AMOUNT enumeration](..\wiautil\ne-wiautil-skip-amount.md) | The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over. |
-| [STI_DEVICE_MJ_TYPE enumeration](..\sti\ne-sti--sti-device-mj-type.md) | The STI_DEVICE_TYPE type identifies the device type of a still image device.The DWORD is divided into a HIWORD containing the major device type, and a LOWORD containing a vendor-defined subtype. |
+| [PIPE_TYPE enumeration](..\usbscan\ne-usbscan-pipe_type.md) | The PIPE_TYPE data type is used as input to the DeviceIoControl function, if the I/O control code is IOCTL_CANCEL_IO or IOCTL_RESET_PIPE. |
+| [SKIP_AMOUNT enumeration](..\wiautil\ne-wiautil-skip_amount.md) | The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over. |
+| [_RAW_PIPE_TYPE enumeration](..\usbscan\ne-usbscan-_raw_pipe_type.md) | The RAW_PIPE_TYPE data type is used to specify the type of a USB pipe. |
 
 ## I/O control codes
 
 | Title   | Description   |
 | ---- |:---- |
-| [IOCTL_SCSISCAN_LOCKDEVICE IOCTL](..\scsiscan\ni-scsiscan-ioctl-scsiscan-lockdevice.md) | Reserved for use by Microsoft. |
-| [IOCTL_SCSISCAN_UNLOCKDEVICE IOCTL](..\scsiscan\ni-scsiscan-ioctl-scsiscan-unlockdevice.md) | Reserved for use by Microsoft. |
+| [IOCTL_CANCEL_IO IOCTL](..\usbscan\ni-usbscan-ioctl_cancel_io.md) | Cancels activity on the specified USB transfer pipe that is associated with the specified device handle. |
+| [IOCTL_GET_CHANNEL_ALIGN_RQST IOCTL](..\usbscan\ni-usbscan-ioctl_get_channel_align_rqst.md) | Returns a USB device's maximum packet size for the read, write, and interrupt transfer pipes associated with the specified device handle. |
+| [IOCTL_GET_DEVICE_DESCRIPTOR IOCTL](..\usbscan\ni-usbscan-ioctl_get_device_descriptor.md) | Returns vendor and device identifiers. |
+| [IOCTL_GET_PIPE_CONFIGURATION IOCTL](..\usbscan\ni-usbscan-ioctl_get_pipe_configuration.md) | Returns a description of every transfer pipe supported for a device. |
+| [IOCTL_GET_USB_DESCRIPTOR IOCTL](..\usbscan\ni-usbscan-ioctl_get_usb_descriptor.md) | Returns a specified USB Descriptor. |
+| [IOCTL_GET_VERSION IOCTL](..\usbscan\ni-usbscan-ioctl_get_version.md) | Returns the version number of the driver. |
+| [IOCTL_READ_REGISTERS IOCTL](..\usbscan\ni-usbscan-ioctl_read_registers.md) | Reads from USB device registers, using the control pipe. |
+| [IOCTL_RESET_PIPE IOCTL](..\usbscan\ni-usbscan-ioctl_reset_pipe.md) | Resets the specified USB transfer pipe that is associated with the specified device handle. |
+| [IOCTL_SCSISCAN_CMD IOCTL](..\scsiscan\ni-scsiscan-ioctl_scsiscan_cmd.md) | Creates a customized SCSI control descriptor block (CDB) and sends it to the kernel-mode still image driver for SCSI buses. |
+| [IOCTL_SCSISCAN_GET_INFO IOCTL](..\scsiscan\ni-scsiscan-ioctl_scsiscan_get_info.md) | The IOCTL_SCSISCAN_GET_INFO I/O control code returns device information. |
+| [IOCTL_SCSISCAN_LOCKDEVICE IOCTL](..\scsiscan\ni-scsiscan-ioctl_scsiscan_lockdevice.md) | Reserved for use by Microsoft. |
+| [IOCTL_SCSISCAN_SET_TIMEOUT IOCTL](..\scsiscan\ni-scsiscan-ioctl_scsiscan_set_timeout.md) | The IOCTL_SCSISCAN_SET_TIMEOUT control code modifies the time-out value used by the kernel-mode still image driver for SCSI buses when it accesses a device. |
+| [IOCTL_SCSISCAN_UNLOCKDEVICE IOCTL](..\scsiscan\ni-scsiscan-ioctl_scsiscan_unlockdevice.md) | Reserved for use by Microsoft. |
+| [IOCTL_SEND_USB_REQUEST IOCTL](..\usbscan\ni-usbscan-ioctl_send_usb_request.md) | Sends a vendor-defined request to a USB device, using the control pipe, and optionally sends or receives additional data. |
+| [IOCTL_SET_TIMEOUT IOCTL](..\usbscan\ni-usbscan-ioctl_set_timeout.md) | Sets the time-out value for USB bulk IN, bulk OUT, or interrupt pipe access. |
+| [IOCTL_WAIT_ON_DEVICE_EVENT IOCTL](..\usbscan\ni-usbscan-ioctl_wait_on_device_event.md) | Returns information about an event occurring on a USB interrupt pipe. |
+| [IOCTL_WRITE_REGISTERS IOCTL](..\usbscan\ni-usbscan-ioctl_write_registers.md) | Writes to USB device registers, using the control pipe. |
 
 ## Interfaces
 
 | Title   | Description   |
 | ---- |:---- |
-| [IWiaMiniDrvTransferCallback interface](..\wiamindr_lh\nn-wiamindr-lh-iwiaminidrvtransfercallback.md) | This is a Callback interface that is called by the WIA mini-driver for stream-based transfers. |
-| [IWiaMiniDrvTransferCallback interface](..\wiamindr_lh\nn-wiamindr-lh-iwiaminidrvtransfercallback~r1.md) | This is a Callback interface that is called by the WIA mini-driver for stream-based transfers. |
+| [IWiaMiniDrvTransferCallback interface](..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrvtransfercallback.md) | This is a Callback interface that is called by the WIA mini-driver for stream-based transfers. |
+| [IWiaMiniDrvTransferCallback interface](..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrvtransfercallback~r1.md) | This is a Callback interface that is called by the WIA mini-driver for stream-based transfers. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [WIAS_ASSERT macro](..\wiamdef\nf-wiamdef-wias_assert.md) | The WIAS_ASSERT macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_ERROR macro](..\wiamdef\nf-wiamdef-wias_error.md) | The WIAS_ERROR macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_HRESULT macro](..\wiamdef\nf-wiamdef-wias_hresult.md) | The WIAS_HRESULT macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_LERROR macro](..\wiamdef\nf-wiamdef-wias_lerror.md) | The WIAS_LERROR macro is obsolete for Windows Vista and later. It is recommended that the WIAS_ERROR macro be used instead.The WIAS_LERROR macro writes a diagnostic WIA_ERROR message to the log file. |
+| [WIAS_LHRESULT macro](..\wiamdef\nf-wiamdef-wias_lhresult.md) | The WIAS_LHRESULT macro is obsolete for Windows Vista and later. It is recommended that the WIAS_HRESULT macro be used instead. The WIAS_LHRESULT macro translates an HRESULT value into a string and writes the string to the diagnostic log file. |
+| [WIAS_LTRACE macro](..\wiamdef\nf-wiamdef-wias_ltrace.md) | The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the WIAS_TRACE macro be used instead.The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file. |
+| [WIAS_LWARNING macro](..\wiamdef\nf-wiamdef-wias_lwarning.md) | The WIAS_LWARNING macro is obsolete for Windows Vista and later.The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file. |
+| [WIAS_TRACE macro](..\wiamdef\nf-wiamdef-wias_trace.md) | The WIAS_TRACE macro writes a diagnostic message to the Wiatrace.log file. |

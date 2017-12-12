@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_rotation.htm
 old-project: display
 ms.assetid: 667f1c5e-c342-40b2-b215-2538669288cc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVAHDDDI_ROTATION, DXVAHDDDI_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the clockwise rotation of the display output surface.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _DXVAHDDDI_ROTATION {
 
 Indicates that rotation is 0 degrees—landscape mode.
 
+
 ### -field DXVAHDDDI_ROTATION_90
 
 Indicates that rotation is 90 degrees clockwise—portrait mode.
+
 
 ### -field DXVAHDDDI_ROTATION_180
 
 Indicates that rotation is 180 degrees clockwise—inverted landscape mode.
 
+
 ### -field DXVAHDDDI_ROTATION_270
 
 Indicates that rotation is 270 degrees clockwise—inverted portrait mode.
+
 
 ## -remarks
 
@@ -79,22 +84,27 @@ Indicates that rotation is 270 degrees clockwise—inverted portrait mode.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

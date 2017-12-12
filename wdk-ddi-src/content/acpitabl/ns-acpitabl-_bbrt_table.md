@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 0FC4D7BA-4292-4D87-8982-D20D267D6FA5
 ms.author: windowsdriverdev
 ms.date: 12/2/2017
-ms.keywords: _BBRT_TABLE, BBRT_TABLE, *PBBRT_TABLE
+ms.keywords: _BBRT_TABLE, *PBBRT_TABLE, BBRT_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Defines a Boot Background Resource Table.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _BBRT_TABLE {
 
 A header.
 
+
 ### -field Background
 
 A background value.
 
+
 ### -field Foreground
 
 A foreground value. 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A foreground value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

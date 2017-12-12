@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2colorfill.htm
 old-project: display
 ms.assetid: 6cec8639-1d5e-4b24-8e02-a7ae62740fea
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2COLORFILL, D3DHAL_DP2COLORFILL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,9 @@ req.irql:
 
    DirectX 9.0 and later versions only.
    
+
 D3DHAL_DP2COLORFILL is used for color-fill operations when <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> responds to the D3DDP2OP_COLORFILL command token.
+
 
 
 ## -syntax
@@ -61,13 +63,16 @@ typedef struct _D3DHAL_DP2COLORFILL {
 
 Specifies the handle to the surface to be filled.
 
+
 ### -field rRect
 
 Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the surface to be filled. 
 
+
 ### -field Color
 
 Specifies a D3DCOLOR for the color type. 
+
 
 ## -remarks
 Because DirectX 9.0 and later drivers are required to support the D3DDP2OP_COLORFILL command token, they are not required to expose a capability bit that indicates such support. 
@@ -78,11 +83,13 @@ When the runtime calls a driver's <b>DdBlt</b> function to perform a color-fill 
 
 For more information about D3DCOLOR, see the DirectX SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,5 +110,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2COLORFILL structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2COLORFILL structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

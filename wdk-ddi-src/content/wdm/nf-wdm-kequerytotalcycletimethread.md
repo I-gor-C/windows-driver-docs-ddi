@@ -7,7 +7,7 @@ old-location: kernel\kequerytotalcycletimethread_.htm
 old-project: kernel
 ms.assetid: EC3A5F02-3D04-466E-8EB4-4BDA9CE47886
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeQueryTotalCycleTimeThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeQueryTotalCycleTimeThread</b> routine returns the accumulated cycle time for the specified thread.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ ULONG64 KeQueryTotalCycleTimeThread (
 
 A pointer to a dispatcher object of type KTHREAD.
 
+
 ### -param CycleTimeStamp [out]
 
 A pointer to the cycle counter value at the time of the query.
 
+
 ## -returns
 The accumulated cycle time for the thread.
+
 
 ## -remarks
 
@@ -73,6 +77,7 @@ The accumulated cycle time for the thread.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +88,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

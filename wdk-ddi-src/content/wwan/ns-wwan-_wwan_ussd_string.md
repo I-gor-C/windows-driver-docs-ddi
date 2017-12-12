@@ -7,7 +7,7 @@ old-location: netvista\wwan_ussd_string.htm
 old-project: netvista
 ms.assetid: 9DE6CE5D-9570-4728-ACED-D6863812A3F4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_USSD_STRING, WWAN_USSD_STRING, *PWWAN_USSD_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_USSD_STRING structure describes an Unstructured Supplementary Service Data (USSD) string.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _WWAN_USSD_STRING {
 
 The data coding scheme that specifies how the <b>String</b> member is encoded, as defined in 3GPP TS 23.038, section 5.
 
+
 ### -field StringLength
 
 The length, in bytes, of USSD string in stored in the <b>String</b> member.
 
+
 ### -field String[WWAN_USSD_STRING_LEN_MAX]
 
 The USSD string encoded according to the <b>DataCodingScheme</b> member.
+
 
 ## -remarks
 <b>StringLength</b> can be from 1 to 160 bytes. Specify 0 bytes to indicate an absent USSD string.
@@ -76,19 +80,23 @@ For USSD requests, the miniport driver or MB device must decode the USSD string 
 
 For USSD notifications, the miniport driver or MB device must encode the USSD string from ASCII to GSM-7 bit and set the <b>DataCodingScheme</b> member to indicate that the GSM-7 bit default alphabet is used.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,5 +116,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_STRING structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_STRING structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltQueryEaFile</b> returns information about extended-attribute (EA) values for a file. 
 
 
+
 ## -syntax
 
 ````
@@ -65,41 +66,51 @@ NTSTATUS FltQueryEaFile(
 
 Opaque instance pointer for the minifilter driver instance that the <i>QueryEa</i> operation is to be sent to. The instance must be attached to the volume where the file resides. 
 
+
 ### -param FileObject [in]
 
 File object pointer for the file. 
+
 
 ### -param ReturnedEaData [out]
 
 Pointer to a caller-supplied <a href="kernel.file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured input buffer where the extended attribute values are to be returned. 
 
+
 ### -param Length [in]
 
 Length, in bytes, of the buffer that the <i>ReturnedEaData</i> parameter points to. 
+
 
 ### -param ReturnSingleEntry [in]
 
 Set to <b>TRUE</b> if <b>FltQueryEaFile</b> should return only the first entry that is found. 
 
+
 ### -param EaList [in, optional]
 
 Pointer to a caller-supplied <a href="ifsk.file_get_ea_information">FILE_GET_EA_INFORMATION</a>-structured input buffer specifying the extended attributes to be queried. This parameter is optional and can be <b>NULL</b>. 
+
 
 ### -param EaListLength [in]
 
 Length, in bytes, of the buffer that the <i>EaList</i> parameter points to. 
 
+
 ### -param EaIndex [in, optional]
 
 Index of the entry at which to begin scanning the file's extended-attribute list. This parameter is ignored if the <i>EaList</i> parameter points to a nonempty list. This parameter is optional and can be <b>NULL</b>. 
+
 
 ### -param RestartScan [in]
 
 Set to <b>TRUE</b> if <b>FltQueryEaFile</b> should begin the scan at the first entry in the file's extended-attribute list. If this parameter is not set to <b>TRUE</b>, the scan is resumed from a previous call to <b>FltQueryEaFile</b>. 
 
+
 ### -param LengthReturned [out, optional]
 
 Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the <i>ReturnedEaData</i> buffer. This parameter is optional and can be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltQueryEaFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
@@ -115,6 +126,7 @@ Pointer to a caller-allocated variable that receives the size, in bytes, of the 
 
  
 
+
 ## -remarks
 
 
@@ -123,6 +135,7 @@ Pointer to a caller-allocated variable that receives the size, in bytes, of the 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -133,14 +146,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,6 +167,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -161,6 +178,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -171,9 +189,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -194,5 +214,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryEaFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

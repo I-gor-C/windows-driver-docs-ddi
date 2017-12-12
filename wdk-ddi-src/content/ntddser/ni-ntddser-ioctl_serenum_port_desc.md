@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>IOCTL_SERENUM_PORT_DESC</b> request returns a description of the RS-232 port associated with a filter DO.
+
 This request is not implemented and is <b>obsolete</b>. The request must not be used in any Microsoft Windows drivers.
+
 
 
 ## -ioctlparameters
@@ -82,6 +84,7 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

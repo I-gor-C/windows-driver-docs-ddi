@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: f49e6d9e-0b62-4742-9868-1717f8482d9a
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _SRIOV_PF_EVENT, SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,10 +41,12 @@ req.irql: PASSIVE_LEVEL
 The  <b>IOCTL_SRIOV_MITIGATED_RANGE_UPDATE</b> request indicates that the virtualization stack wants to update to the mitigation ranges.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 A pointer to a <a href="buses._sriov_mitigated_range_update_input">SRIOV_MITIGATED_RANGE_UPDATE_INPUT</a> structure
+
 
 ### -input-buffer-length
 
@@ -70,6 +72,7 @@ A pointer to a <a href="buses._sriov_mitigated_range_update_input">SRIOV_MITIGAT
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.
 
@@ -82,11 +85,13 @@ maps by sending <a href="buses.ioctl_sriov_query_mitigated_range_count">IOCTL_SR
 <a href="buses.ioctl_sriov_query_mitigated_ranges">IOCTL_SRIOV_QUERY_MITIGATED_RANGES</a> requests.  The stack may additionally  call any
 user mode device simulation for additional ranges to mitigate. The <b>IOCTL_SRIOV_MITIGATED_RANGE_UPDATE</b> request is sent for each active virtual function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,9 +102,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

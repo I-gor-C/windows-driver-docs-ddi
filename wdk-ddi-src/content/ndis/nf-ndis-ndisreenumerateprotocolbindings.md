@@ -7,7 +7,7 @@ old-location: netvista\ndisreenumerateprotocolbindings.htm
 old-project: netvista
 ms.assetid: e47d812b-2fbb-44c4-a441-bd30ae89a5eb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisReEnumerateProtocolBindings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The
   currently bound.
 
 
+
 ## -syntax
 
 ````
@@ -63,8 +64,10 @@ A handle representing the calling protocol driver. The driver obtained this hand
      <a href="netvista.ndisregisterprotocoldriver">
      NdisRegisterProtocolDriver</a> function.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A protocol driver can call the 
@@ -96,11 +99,13 @@ An intermediate driver should call
     <i>ProtocolBindAdapterEx</i> function one time for each miniport adapter for which the driver is
     configured to bind but to which the driver is not currently bound.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +116,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -118,11 +124,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    NdisReEnumerateProtocolBindings (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>
    NdisReEnumerateProtocolBindings (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +141,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -143,14 +152,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>, <a href="devtest.ndis_ndisreenumerateprotocolbindings">NdisReEnumerateProtocolBindings</a>
@@ -177,5 +189,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReEnumerateProtocolBindings function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReEnumerateProtocolBindings function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

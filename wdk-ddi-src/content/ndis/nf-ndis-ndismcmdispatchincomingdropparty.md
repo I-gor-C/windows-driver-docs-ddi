@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisMCmDispatchIncomingDropParty
-title: NdisMCmDispatchIncomingDropParty
+title: NdisMCmDispatchIncomingDropParty macro
 author: windows-driver-content
 description: NdisMCmDispatchIncomingDropParty notifies a client that it should remove a particular party on a multipoint VC.
 old-location: netvista\ndismcmdispatchincomingdropparty.htm
 old-project: netvista
 ms.assetid: 4549b6f4-5138-4724-959c-a36b38c319fd
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMCmDispatchIncomingDropParty
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,102 +31,95 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.iface: 
 ---
 
-# NdisMCmDispatchIncomingDropParty function
+# NdisMCmDispatchIncomingDropParty macro
 
 
 
 ## -description
-<p><b>NdisMCmDispatchIncomingDropParty</b> notifies a client that it should remove a particular party on a
-  multipoint VC.</p>
+<b>NdisMCmDispatchIncomingDropParty</b> notifies a client that it should remove a particular party on a
+  multipoint VC.
+
 
 
 ## -syntax
 
 ````
 VOID NdisMCmDispatchIncomingDropParty(
-  _In_     NDIS_STATUS DropStatus,
-  _In_     NDIS_HANDLE NdisPartyHandle,
-  _In_opt_ PVOID       Buffer,
-  _In_     UINT        Size
+  [in]           NDIS_STATUS DropStatus,
+  [in]           NDIS_HANDLE NdisPartyHandle,
+  [in, optional] PVOID       Buffer,
+  [in]           UINT        Size
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param DropStatus [in]
 
-<dd>
-<p>Indicates the reason this party is being dropped, usually NDIS_STATUS_SUCCESS if the remote party
-     simply requested that its connection be closed.</p>
-</dd>
+Indicates the reason this party is being dropped, usually NDIS_STATUS_SUCCESS if the remote party
+     simply requested that its connection be closed.
+
 
 ### -param NdisPartyHandle [in]
 
-<dd>
-<p>Specifies the handle that identifies the party to be dropped from the multipoint VC, which must
+Specifies the handle that identifies the party to be dropped from the multipoint VC, which must
      have other parties that are still connected. The MCM driver originally obtained this handle as an input
      parameter to its 
-     <a href="..\ndis\nc-ndis-protocol-cm-add-party.md">ProtocolCmAddParty</a> function.</p>
-</dd>
+     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
+
 
 ### -param Buffer [in, optional]
 
-<dd>
-<p>Pointer to a caller-allocated resident buffer containing additional protocol-specific data
+Pointer to a caller-allocated resident buffer containing additional protocol-specific data
      received from the remote party, if any. Depending on the underlying medium, this pointer can be
-     <b>NULL</b>.</p>
-</dd>
+     <b>NULL</b>.
+
 
 ### -param Size [in]
 
-<dd>
-<p>Specifies the size in bytes of the buffer, zero if 
-     <i>Buffer</i> is <b>NULL</b>.</p>
-</dd>
-</dl>
+Specifies the size in bytes of the buffer, zero if 
+     <i>Buffer</i> is <b>NULL</b>.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>In the course of normal network operations, an MCM driver calls 
+In the course of normal network operations, an MCM driver calls 
     <b>NdisMCmDispatchIncomingDropParty</b> with the 
     <i>CloseStatus</i> set to NDIS_STATUS_SUCCESS because a remote client on a multipoint connection has
     called 
-    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.</p>
+    <a href="netvista.ndisclclosecall">NdisClCloseCall</a>.
 
-<p>However, an MCM driver also can call 
+However, an MCM driver also can call 
     <b>NdisMCmDispatchIncomingDropParty</b> with a driver-determined 
     <i>CloseStatus</i> at the behest of the network itself if abnormal network conditions occur, such as the
     failure of a switch on the path between the local client and one or more client(s) on an established
-    multipoint connection.</p>
+    multipoint connection.
 
-<p>A call to 
+A call to 
     <b>NdisMCmDispatchIncomingDropParty</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-incoming-drop-party.md">
-    ProtocolClIncomingDropParty</a> function.</p>
+    <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">
+    ProtocolClIncomingDropParty</a> function.
 
-<p>If the 
+If the 
     <i>NdisPartyHandle</i> identifies the last remaining party on the given VC, the MCM driver calls 
-    <a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
+    <a href="netvista.ndismcmdispatchincomingclosecall">
     NdisMCmDispatchIncomingCloseCall</a>, rather than 
-    <b>NdisMCmDispatchIncomingDropParty</b>.</p>
+    <b>NdisMCmDispatchIncomingDropParty</b>.
 
-<p>Only connection-oriented miniport drivers that provide integrated call-management support can call 
+Only connection-oriented miniport drivers that provide integrated call-management support can call 
     <b>NdisMCmDispatchIncomingDropParty</b>. Stand-alone call managers, which register themselves with NDIS
     as protocol drivers, call 
-    <b>NdisCmDispatchIncomingDropParty</b> instead.</p>
+    <b>NdisCmDispatchIncomingDropParty</b> instead.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -136,19 +129,22 @@ VOID NdisMCmDispatchIncomingDropParty(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/0d445263-b1cb-4e83-8144-54740445e431">
    NdisMCmDispatchIncomingDropParty (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>
-   NdisMCmDispatchIncomingDropParty (NDIS 5.1)</b>) in Windows XP.</p>
+   NdisMCmDispatchIncomingDropParty (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -158,15 +154,18 @@ VOID NdisMCmDispatchIncomingDropParty(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>&lt;= DISPATCH_LEVEL</p>
+&lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>DDI compliance rules</p>
+DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
@@ -177,23 +176,26 @@ VOID NdisMCmDispatchIncomingDropParty(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nc-ndis-miniport-interrupt-dpc.md">MiniportInterruptDPC</a>
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
+<a href="netvista.ndiscldropparty">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingdropparty.md">
+<a href="netvista.ndiscmdispatchincomingdropparty">
    NdisCmDispatchIncomingDropParty</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
+<a href="netvista.ndismcmdispatchincomingclosecall">
    NdisMCmDispatchIncomingCloseCall</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-protocol-cl-incoming-drop-party.md">ProtocolClIncomingDropParty</a>
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingDropParty function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingDropParty macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

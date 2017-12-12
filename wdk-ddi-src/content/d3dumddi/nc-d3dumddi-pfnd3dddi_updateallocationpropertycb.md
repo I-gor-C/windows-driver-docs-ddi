@@ -7,7 +7,7 @@ old-location: display\pfnupdateallocationpropertycb.htm
 old-project: display
 ms.assetid: 49E4189A-2183-4033-BF17-ADFAC1CF1EF2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>pfnUpdateAllocationPropertyCb</b> functions updates the property of an allocation without creating a new allocation.
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ __checkReturn HRESULT APIENTRY pfnUpdateAllocationPropertyCb(
 
 A handle to the display device associated with the allocation
 
+
 ### -param *pUpdateAllocationProperty [in, out]
 
 A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt761856">D3DDDI_UPDATEALLOCPROPERTY</a> structure that describes how to update the allocation with the desired properties.
+
 
 ## -returns
 <b>pfnUpdateAllocationPropertyCb</b> returns one of the following values:
@@ -84,6 +87,7 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt76
 
  
 
+
 ## -remarks
 
 
@@ -92,6 +96,7 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt76
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

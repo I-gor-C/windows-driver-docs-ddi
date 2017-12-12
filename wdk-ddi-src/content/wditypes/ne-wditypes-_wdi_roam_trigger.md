@@ -7,7 +7,7 @@ old-location: netvista\wdi_roam_trigger.htm
 old-project: netvista
 ms.assetid: 7AFA084B-5EFC-429B-B6D1-F4E484B16921
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_ROAM_TRIGGER, WDI_ROAM_TRIGGER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_ROAM_TRIGGER enumeration defines roam triggers.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef enum _WDI_ROAM_TRIGGER {
 
 None.
 
+
 ### -field WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST
 
 This value is for roams due to a BSS Transition Request by the AP with the Disassociation Imminent bit set.
+
 
 ## -remarks
 
@@ -70,22 +73,27 @@ This value is for roams due to a BSS Transition Request by the AP with the Disas
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

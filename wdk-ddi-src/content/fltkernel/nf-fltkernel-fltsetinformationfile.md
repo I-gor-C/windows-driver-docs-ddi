@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltSetInformationFile</b> sets information for a given file. 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS FltSetInformationFile(
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 File object pointer for the file. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param FileInformation [in]
 
 Pointer to a caller-allocated buffer that contains information to be set for the file. The <i>FileInformationClass</i> parameter specifies the type of information. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param Length [in]
 
 Size, in bytes, of the <i>FileInformation</i> buffer. 
 
+
 ### -param FileInformationClass [in]
 
 Specifies the type of information to be set for the file. The following values are defined. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -83,72 +89,90 @@ Specifies the type of information to be set for the file. The following values a
 <tr>
 <td>
 <b>FileAllocationInformation</b>
+
 </td>
 <td>
 Set <a href="ifsk.file_allocation_information">FILE_ALLOCATION_INFORMATION</a> for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileBasicInformation</b>
+
 </td>
 <td>
 Set <a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a> for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileDispositionInformation</b>
+
 </td>
 <td>
 Set <a href="kernel.file_disposition_information">FILE_DISPOSITION_INFORMATION</a> for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileEndOfFileInformation</b>
+
 </td>
 <td>
 Set <a href="kernel.file_end_of_file_information">FILE_END_OF_FILE_INFORMATION</a> for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileLinkInformation</b>
+
 </td>
 <td>
 Set <a href="ifsk.file_link_information">FILE_LINK_INFORMATION</a> for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FilePositionInformation</b>
+
 </td>
 <td>
 Set <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileRenameInformation</b>
+
 </td>
 <td>
 Set <a href="ifsk.file_rename_information">FILE_RENAME_INFORMATION</a> for the file. For more information about file renaming, see the following Remarks section. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileValidDataLengthInformation</b>
+
 </td>
 <td>
 Set <a href="kernel.file_valid_data_length_information">FILE_VALID_DATA_LENGTH_INFORMATION</a> for the file. 
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>FltSetInformationFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value. 
+
 
 ## -remarks
 A minifilter driver calls <b>FltSetInformationFile</b> to set information for a given file. The file must currently be open. 
@@ -157,11 +181,13 @@ A file rename operation imposes the following restriction on the parameter value
 
 Minifilter drivers must use <b>FltSetInformationFile</b> , not <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>, to rename a file. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -172,6 +198,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,6 +209,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -192,6 +220,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -202,9 +231,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -246,5 +277,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetInformationFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

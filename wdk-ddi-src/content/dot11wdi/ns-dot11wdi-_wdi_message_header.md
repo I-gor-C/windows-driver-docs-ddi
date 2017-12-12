@@ -7,8 +7,8 @@ old-location: netvista\wdi_message_header.htm
 old-project: netvista
 ms.assetid: 69c3ebf5-8805-47d0-a507-d2e3e1d1b0df
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER
+ms.date: 12/8/2017
+ms.keywords: _WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The
   WDI_MESSAGE_HEADER structure defines the WDI message header. All WDI  command messages must start with this header.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _WDI_MESSAGE_HEADER {
 
 Specifies the identifier for the Port object that this command is targeted for. For commands on the Adapter object, this is 0xFFFF.
 
+
 ### -field Reserved
 
 This member is reserved.
+
 
 ### -field Status
 
 Specifies the operation completion status for output messages. For input messages, this field is reserved.
 
+
 ### -field TransactionId
 
 Specifies the transaction ID. This value is used to match host-sent messages with function responses.  This value must be unique among all outstanding transactions.  For notifications, the TransactionId must be set to 0 by the function.
 
+
 ### -field IhvSpecificId
 
 Specifies an IHV-specific ID for this message. This can be used by IHVs for debugging purpose.
+
 
 ## -remarks
 
@@ -85,22 +91,27 @@ Specifies an IHV-specific ID for this message. This can be used by IHVs for debu
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

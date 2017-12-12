@@ -7,8 +7,8 @@ old-location: storage\iscsi_digest_types.htm
 old-project: storage
 ms.assetid: 0515dd76-ef1f-4f0f-a7d7-1b3b07e0523d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES, *PISCSI_DIGEST_TYPES
+ms.date: 12/8/2017
+ms.keywords: PISCSI_DIGEST_TYPES, *PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 The ISCSI_DIGEST_TYPES enumeration indicates the digest type.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum  {
 
 There is no usable digest that guarantees data integrity. 
 
+
 ### -field ISCSI_DIGEST_TYPE_CRC32C
 
 The digest that guarantees data integrity uses a 32-bit cyclic redundancy check. 
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The digest that guarantees data integrity uses a 32-bit cyclic redundancy check.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\videoportddcmonitorhelper.htm
 old-project: display
 ms.assetid: 2e4bd9c7-73be-47bc-b4e7-daea7781c46b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortDDCMonitorHelper
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Queries a monitor for <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> information using the DDC protocol.
 
 
+
 ## -syntax
 
 ````
@@ -60,20 +61,25 @@ BOOLEAN VideoPortDDCMonitorHelper(
 
 A pointer to the miniport driver's device extension.
 
+
 ### -param DDCControl [in]
 
 A pointer to a <a href="display.ddc_control">DDC_CONTROL</a> structure.
+
 
 ### -param EdidBuffer [in, out]
 
 A pointer to a buffer in which the video port driver returns the <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> structure. For ACPI devices, the first four bytes are preset by the video port driver to indicate an attempt to read the <i>EDID</i>. 
 
+
 ### -param EdidBufferSize [in]
 
 The size in bytes of the buffer to which <i>EdidBuffer</i> points.
 
+
 ## -returns
 <b>VideoPortDDCMonitorHelper</b> returns <b>TRUE</b> if successful.
+
 
 ## -remarks
 <p class="note">This function existed prior to the Windows XP release, but has been changed.
@@ -91,11 +97,13 @@ One 256-byte EDID (from P&amp;D display)
 No EDID
 <p class="note">The caller should always ask for the full 256 bytes, because it is impossible to read just the second 128-byte block of the segment.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +146,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -144,9 +157,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -173,5 +188,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortDDCMonitorHelper function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortDDCMonitorHelper function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <i>This function is intended for internal use only.</i>
+
 The <b>KsIsBusEnumChildDevice</b> function determines if the given device object is a child device of the demand-load bus enumerator object. 
+
 
 
 ## -syntax
@@ -59,12 +61,15 @@ NTSTATUS KsIsBusEnumChildDevice(
 
 Pointer to a device object.
 
+
 ### -param ChildDevice [out]
 
 Pointer to a BOOLEAN to receive the result. <b>KsIsBusEnumChildDevice</b> sets this to <b>TRUE</b> if the given device object is a child device of the demand-load bus enumerator object, or <b>FALSE</b> otherwise.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the given device object's device extension is valid; otherwise, it returns an error code.
+
 
 ## -remarks
 
@@ -74,6 +79,7 @@ Returns STATUS_SUCCESS if the given device object's device extension is valid; o
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +101,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

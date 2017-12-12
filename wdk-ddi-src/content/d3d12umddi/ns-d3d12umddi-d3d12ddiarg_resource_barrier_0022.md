@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg_resource_barrier_0022.htm
 old-project: display
 ms.assetid: ED597BB0-F9ED-4311-9E2F-06AEA2755B37
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_RESOURCE_BARRIER_0022, D3D12DDIARG_RESOURCE_BARRIER_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes a resource barrier.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ typedef struct D3D12DDIARG_RESOURCE_BARRIER_0022 {
 
 The type of resource barrier as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_resource_barrier_type.md">D3D12DDI_RESOURCE_BARRIER_TYPE</a> value.
 
+
 ### -field Flags
 
 A barrier flag as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_resource_barrier_flags.md">D3D12DDI_RESOURCE_BARRIER_FLAGS</a> value.
+
 
 ### -field     {
         D3D12DDI_RESOURCE_TRANSITION_BARRIER_0003 Transition;
@@ -74,6 +77,7 @@ A barrier flag as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_resource_barri
 <dd>
 A resource barrier.
 
+
 ## -remarks
 
 
@@ -82,6 +86,7 @@ A resource barrier.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

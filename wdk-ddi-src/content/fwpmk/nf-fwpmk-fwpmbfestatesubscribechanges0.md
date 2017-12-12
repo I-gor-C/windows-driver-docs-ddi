@@ -7,7 +7,7 @@ old-location: netvista\fwpmbfestatesubscribechanges0.htm
 old-project: netvista
 ms.assetid: 375af8a1-9e05-4830-9074-6313b4e082d9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmBfeStateSubscribeChanges0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   a change to the state of the filter engine.
 
 
+
 ## -syntax
 
 ````
@@ -63,12 +64,15 @@ A pointer to a device object that was previously created by the callout driver. 
      information about how a callout driver creates a device object, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>.
 
+
 ### -param callback [in]
 
 A pointer to a callout driver-provided service state change callback function. The filter engine
      calls this function whenever there is a change in the state of the filter engine.
      
+
 A service-state-change callback function is declared as follows.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -85,11 +89,13 @@ callback(
 </table></span></div>
 
 
+
 ### -param Context
 
 The pointer that was passed in the 
        <i>Context</i> parameter when the callout driver called the 
        <b>FwpmBfeStateSubscribeChanges0</b> function.
+
 
 ### -param newState
 
@@ -97,21 +103,27 @@ The new state of the filter engine. This parameter contains one of the following
        
 
 
+
+
 ### -param FWPM_SERVICE_STOPPED
 
 The filter engine is not running.
+
 
 ### -param FWPM_SERVICE_START_PENDING
 
 The filter engine is starting.
 
+
 ### -param FWPM_SERVICE_STOP_PENDING
 
 The filter engine is stopping.
 
+
 ### -param FWPM_SERVICE_RUNNING
 
 The filter engine is running.
+
 </dd>
 </dl>
 </dd>
@@ -123,11 +135,13 @@ A pointer to a callout driver-provided context that is passed to the callback fu
      in the 
      <i>Callback</i> parameter.
 
+
 ### -param changeHandle [out]
 
 A pointer to a variable that receives a handle that is associated with the registration of the
      callback function. A callout driver passes this handle to the
      <a href="netvista.fwpmbfestateunsubscribechanges0">FwpmBfeStateUnsubscribeChanges0</a> function to deregister the callback function.
+
 
 ## -returns
 The 
@@ -140,6 +154,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 A callout driver calls the 
@@ -162,11 +177,13 @@ A callout driver must deregister the callback function by calling the
     FwpmBfeStateUnsubscribeChanges0</a> function before the callout driver can be unloaded.
 <p class="note">Do not call <a href="netvista.fwpmbfestateunsubscribechanges0">FwpmBfeStateUnsubscribeChanges0</a> from the callback function that you passed in the <i>callback</i> parameter. Doing so can cause a deadlock.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -177,14 +194,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -195,6 +215,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -205,9 +226,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -226,5 +249,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateSubscribeChanges0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateSubscribeChanges0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

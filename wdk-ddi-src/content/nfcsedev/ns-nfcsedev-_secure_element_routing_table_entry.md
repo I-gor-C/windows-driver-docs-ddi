@@ -41,6 +41,7 @@ req.irql:
 SECURE_ELEMENT_ROUTING_TABLE_ENTRY is a member of <a href="nfpdrivers._secure_element_routing_table">SECURE_ELEMENT_ROUTING_TABLE</a>.
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ typedef struct _SECURE_ELEMENT_ROUTING_TABLE_ENTRY {
 NFC Forum listen mode routing table entry type.
 
 
+
 ### -field TechRoutingInfo
 
 RF technology routing table entry information.
+
 
 ### -field ProtoRoutingInfo
 
 RF protocol routing table entry information.
 
+
 ### -field AidRoutingInfo
 
 AID routing table control information.
+
 
 
 ## -remarks
@@ -83,6 +88,7 @@ AID routing table control information.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

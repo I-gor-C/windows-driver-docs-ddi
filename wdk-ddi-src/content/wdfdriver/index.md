@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfdriver.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,8 +16,8 @@ Wdfdriver.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_DRIVER_CONFIG_INIT function](nf-wdfdriver-wdf-driver-config-init.md) | The WDF_DRIVER_CONFIG_INIT function initializes a driver's WDF_DRIVER_CONFIG structure. |
-| [WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function](nf-wdfdriver-wdf-driver-version-available-params-init.md) | The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function initializes a WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure. |
+| [WDF_DRIVER_CONFIG_INIT function](nf-wdfdriver-wdf_driver_config_init.md) | The WDF_DRIVER_CONFIG_INIT function initializes a driver's WDF_DRIVER_CONFIG structure. |
+| [WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function](nf-wdfdriver-wdf_driver_version_available_params_init.md) | The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function initializes a WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure. |
 | [WdfDriverCreate function](nf-wdfdriver-wdfdrivercreate.md) | The WdfDriverCreate method creates a framework driver object for the calling driver. |
 | [WdfDriverGetRegistryPath function](nf-wdfdriver-wdfdrivergetregistrypath.md) | The WdfDriverGetRegistryPath method retrieves the path to the driver's registry key in the registry's Services tree. |
 | [WdfDriverIsVersionAvailable function](nf-wdfdriver-wdfdriverisversionavailable.md) | The WdfDriverIsVersionAvailable method returns a Boolean value that indicates whether the driver is running with a specified version of the Kernel-Mode Driver Framework library. |
@@ -27,18 +32,18 @@ Wdfdriver.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_DRIVER_DEVICE_ADD callback](nc-wdfdriver-evt-wdf-driver-device-add.md) | A driver's EvtDriverDeviceAdd event callback function performs device initialization operations when the Plug and Play (PnP) manager reports the existence of a device. |
-| [EVT_WDF_DRIVER_UNLOAD callback](nc-wdfdriver-evt-wdf-driver-unload.md) | A driver's EvtDriverUnload event callback function performs operations that must take place before the driver is unloaded. |
+| [EVT_WDF_DRIVER_DEVICE_ADD callback](nc-wdfdriver-evt_wdf_driver_device_add.md) | A driver's EvtDriverDeviceAdd event callback function performs device initialization operations when the Plug and Play (PnP) manager reports the existence of a device. |
+| [EVT_WDF_DRIVER_UNLOAD callback](nc-wdfdriver-evt_wdf_driver_unload.md) | A driver's EvtDriverUnload event callback function performs operations that must take place before the driver is unloaded. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_DRIVER_CONFIG structure](ns-wdfdriver--wdf-driver-config.md) | The WDF_DRIVER_CONFIG structure is an input parameter to WdfDriverCreate. |
-| [WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure](ns-wdfdriver--wdf-driver-version-available-params.md) | The WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure specifies major and minor version numbers for the Kernel-Mode Driver Framework's library. |
+| [_WDF_DRIVER_CONFIG structure](ns-wdfdriver-_wdf_driver_config.md) | The WDF_DRIVER_CONFIG structure is an input parameter to WdfDriverCreate. |
+| [_WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure](ns-wdfdriver-_wdf_driver_version_available_params.md) | The WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure specifies major and minor version numbers for the Kernel-Mode Driver Framework's library. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_DRIVER_INIT_FLAGS enumeration](ne-wdfdriver--wdf-driver-init-flags.md) | The WDF_DRIVER_INIT_FLAGS enumeration specifies driver initialization flags. |
+| [_WDF_DRIVER_INIT_FLAGS enumeration](ne-wdfdriver-_wdf_driver_init_flags.md) | The WDF_DRIVER_INIT_FLAGS enumeration specifies driver initialization flags. |

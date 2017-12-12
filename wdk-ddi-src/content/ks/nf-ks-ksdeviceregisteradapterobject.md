@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The<b> KsDeviceRegisterAdapterObject</b> function registers a DMA adapter object with AVStream for performing scatter/gather DMA on the specified device. All drivers compiled for Win64 should use <a href="stream.iksdevicefunctions_registeradapterobjectex">IKsDeviceFunctions::RegisterAdapterObjectEx</a> instead.
 
 
+
 ## -syntax
 
 ````
@@ -59,21 +60,27 @@ void KsDeviceRegisterAdapterObject(
 
 A pointer to the <a href="stream.ksdevice">KSDEVICE</a> structure representing the AVStream device for which to register an adapter object.
 
+
 ### -param AdapterObject [in]
 
 A pointer to the <a href="kernel.dma_adapter">DMA_ADAPTER</a> structure returned by <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> that represents the DMA controller..
+
 
 ### -param MaxMappingByteCount [in]
 
 This parameter specifies the maximum number of bytes that the device can handle for a single mapping. Allows AVStream to automatically break up large chunks of contiguous physical memory into multiple scatter/gather elements for devices that impose a size limit on individual mappings in DMA transfers. <i>Breaks are not guaranteed to occur on page boundaries.</i>
 
+
 ### -param MappingTableStride [in]
 
 This parameter specifies how many bytes each entry in the mapping table requires. This must be at least <b>sizeof</b> (<a href="stream.ksmapping">KSMAPPING</a>) and can be as large as necessary.
+
 Additional space can be used by the minidriver as context information.
+
 
 ## -returns
 None
+
 
 ## -remarks
 A minidriver that calls <b>KsDeviceRegisterAdapterObject</b> is responsible for previously acquiring the adapter object through <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>. 
@@ -83,11 +90,13 @@ Also note that if the minidriver specifies the KSPIN_FLAG_GENERATE_MAPPINGS flag
 
 Also see <a href="https://msdn.microsoft.com/1173a83f-8d9e-4678-bfb5-f2fb91e827be">Supporting DMA in 64-Bit AVStream Drivers</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +139,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -149,5 +164,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDeviceRegisterAdapterObject function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

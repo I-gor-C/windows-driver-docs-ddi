@@ -41,6 +41,7 @@ req.irql:
 The <b>FILE_MAILSLOT_SET_INFORMATION</b> structure is used to set a value on a   mailslot.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct _FILE_MAILSLOT_SET_INFORMATION {
 The time, in milliseconds, that a read operation can wait for a message to be written to the mailslot before a time-out occurs. A value of –1 requests that the read wait forever for a message without timing out. A value of 0 requests that the read not wait and return immediately whether a pending message is available to be read or not.
 
 
+
 ## -remarks
 For more information, see <a href="base.mailslots">Mailslots</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

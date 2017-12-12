@@ -7,7 +7,7 @@ old-location: netvista\wwan_radio_state.htm
 old-project: netvista
 ms.assetid: 15c02819-bae8-48f5-8782-97823b6907bd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_RADIO_STATE, *PWWAN_RADIO_STATE, WWAN_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The WWAN_RADIO_STATE structure represents the hardware-based and software-based 
   the MB device.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct _WWAN_RADIO_STATE {
 The hardware radio power state of the device. The MB Service cannot set this state because it is
      read-only. The following table shows the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -68,27 +70,33 @@ The hardware radio power state of the device. The MB Service cannot set this sta
 <tr>
 <td>
 WwanRadioOff
+
 </td>
 <td>
 The hardware radio is off.
+
 </td>
 </tr>
 <tr>
 <td>
 WwanRadioOn
+
 </td>
 <td>
 The hardware radio is on, or no switch exists to control power to the hardware radio.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field SwRadioState
 
 The software-based radio power state of the device. The MB Service can get and set this state. The
      following table shows the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -97,21 +105,26 @@ The software-based radio power state of the device. The MB Service can get and s
 <tr>
 <td>
 WwanRadioOff
+
 </td>
 <td>
 The radio is turned off by Windows.
+
 </td>
 </tr>
 <tr>
 <td>
 WwanRadioOn
+
 </td>
 <td>
 The radio is turned on by Windows.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 Miniport drivers should continue the software-based radio power state across system restart or device
@@ -134,19 +147,23 @@ The miniport driver should send all applicable status indications such as
     <b>WwanRadioOff</b> to 
     <b>WwanRadioOn</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -166,5 +183,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_RADIO_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_RADIO_STATE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

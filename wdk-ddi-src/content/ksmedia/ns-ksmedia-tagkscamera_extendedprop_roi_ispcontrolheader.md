@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: F57B0E44-A6A1-4C43-83EE-8DF4A605C0D0
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains the header information for ROI ISP controls.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
 
 The sum of this structure size, all <a href="stream.kscamera_extendedprop_roi_ispcontrol">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow
 
+
 ### -field ControlCount
 
 The number of ISP controls. If this value is 0, the ROI control will remove all ROIs previously configured. This effectively clears up all ROIs configured and resets the driver to the default ROI.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

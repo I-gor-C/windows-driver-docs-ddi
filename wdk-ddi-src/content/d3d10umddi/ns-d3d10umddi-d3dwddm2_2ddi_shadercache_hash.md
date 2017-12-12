@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_2ddi_shadercache_hash.htm
 old-project: display
 ms.assetid: 1024FF58-7758-473A-8B1F-9CE184B9667A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM2_2DDI_SHADERCACHE_HASH, D3DWDDM2_2DDI_SHADERCACHE_HASH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains a hash value for a shader cache.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct D3DWDDM2_2DDI_SHADERCACHE_HASH {
 
 A hash value.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ A hash value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

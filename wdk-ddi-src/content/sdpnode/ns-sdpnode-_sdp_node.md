@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SDP_NODE, *PSDP_NODE, SDP_NODE
+ms.keywords: _SDP_NODE, SDP_NODE, *PSDP_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The SDP_NODE structure holds information about an element in a tree-based repres
   record.
 
 
+
 ## -syntax
 
 ````
@@ -63,19 +64,23 @@ An
      <a href="bltooth.sdp_node_header">SDP_NODE_HEADER</a> structure that contains
      links to peer SDP_NODE structures and the data type of the current node.
 
+
 ### -field DataSize
 
 The size, in bytes, of the 
      <a href="bltooth.sdp_node_data">SDP_NODE_DATA</a> union held in the 
      <b>u</b> member.
 
+
 ### -field u
 
 An SDP_NODE_DATA union that contains the data associated with the SDP record's node.
 
+
 ### -field Reserved
 
 Reserved for future use. Do not use.
+
 
 ## -remarks
 Each SDP_NODE structure in the tree representation of an SDP record contains a SDP_NODE_HEADER
@@ -92,19 +97,23 @@ The header specifies the type of data. Driver developers can access links to pee
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a> memory manager macro to
     extract the address of the containing node record.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +136,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

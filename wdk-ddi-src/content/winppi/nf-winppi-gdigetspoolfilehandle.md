@@ -7,7 +7,7 @@ old-location: print\gdigetspoolfilehandle.htm
 old-project: print
 ms.assetid: c820ee94-29c2-4478-884c-49dd68cd713a
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GdiGetSpoolFileHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GdiGetSpoolFileHandle</b> function returns a handle to a print job's EMF file.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ HANDLE GdiGetSpoolFileHandle(
 
 Caller-supplied pointer to a string representing the name of the target printer. See the following Remarks section.
 
+
 ### -param pDevmode 
 
 Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure. See the following Remarks section.
+
 
 ### -param pwszDocName 
 
 Caller-supplied pointer to the print job's document name. See the following Remarks section.
 
+
 ## -returns
 If the operation succeeds, the function returns a spool file handle. Otherwise the function returns <b>NULL</b>.
+
 
 ## -remarks
 The <b>GdiGetSpoolFileHandle</b> function is exported by gdi32.dll for use within a print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> function.
@@ -91,11 +96,13 @@ A print processor must call the <b>GdiGetSpoolFileHandle</b> function before cal
 
 For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +113,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +124,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +135,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -142,5 +152,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GdiGetSpoolFileHandle function%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GdiGetSpoolFileHandle function%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

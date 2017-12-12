@@ -7,8 +7,8 @@ old-location: netvista\rilunblockuicclockparams_2.htm
 old-project: netvista
 ms.assetid: 7b5245e9-7f25-4697-932a-d7d1416e921c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILUNBLOCKUICCLOCKPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

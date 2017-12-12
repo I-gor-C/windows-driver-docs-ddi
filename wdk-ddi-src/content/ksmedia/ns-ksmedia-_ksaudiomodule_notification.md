@@ -41,6 +41,7 @@ req.irql:
 The <b>KSAUDIOMODULE_NOTIFICATION</b> structure describes the  properties associated with audio  modules change notification.
 
 
+
 ## -syntax
 
 ````
@@ -64,27 +65,33 @@ typedef struct _KSAUDIOMODULE_NOTIFICATION {
 
 A structure that specifies the ProviderId of the audio module notification.
 
+
 ### -field DeviceId
 
 Specifies the DeviceId of the audio module notification. The DeviceId matches the value returned in <a href="https://msdn.microsoft.com/CD9C5FCD-FB2A-4B21-A15E-BA520C3311A7">KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID</a>.
+
 
 ### -field ClassId
 
 The ClassId of the audio module. The ClassId is an identifier that establishes what type of module this is. The value and mapping is established by the ISV and IHV. 
 
+
 ### -field InstanceId
 
 The InstanceId of the audio module.  The InstanceId is a unique identifier that distinguishes this instance of a module from another instance of an module. 
 
+
 ### -field Reserved
 
 This member is reserved.
+
 </dd>
 </dl>
 
 ### -field Alignment
 
 Specifies the value that is used for alignment. 
+
 
 ## -remarks
 The Audio module notification KSNOTIFICATIONID_AudioModule is defined in Ksmedia.h as shown here. 
@@ -93,19 +100,23 @@ The Audio module notification KSNOTIFICATIONID_AudioModule is defined in Ksmedia
 
 For more information about audio modules, see  <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1703
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

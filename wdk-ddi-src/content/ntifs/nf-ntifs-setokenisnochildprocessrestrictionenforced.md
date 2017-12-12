@@ -41,6 +41,7 @@ req.irql:
 The <b>SeTokenIsNoChildProcessRestrictionEnforced</b> routine determines if the token carries the no child process restriction.
 
 
+
 ## -syntax
 
 ````
@@ -57,14 +58,17 @@ BOOLEAN NTKERNELAPI SeTokenIsNoChildProcessRestrictionEnforced(
 
 Specifies a pointer to the access token.
 
+
 ### -param UnlessSecure [out, optional]
 
 Optionally provides a pointer to the value that will
         be set to TRUE when secure process creation is enabled even if
         process creation is restricted.
 
+
 ## -returns
 This routine returns <b>TRUE</b> if <i>Token</i> carries the no child process restriction.
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ This routine returns <b>TRUE</b> if <i>Token</i> carries the no child process re
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

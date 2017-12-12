@@ -7,8 +7,8 @@ old-location: storage\sm_sendrls_out.htm
 old-project: storage
 ms.assetid: 28c08a30-b6c6-4f1b-a3a9-0581da0159b9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SM_SendRLS_OUT, *PSM_SendRLS_OUT, SM_SendRLS_OUT
+ms.date: 12/8/2017
+ms.keywords: _SM_SendRLS_OUT, SM_SendRLS_OUT, *PSM_SendRLS_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The SM_SendRLS_OUT structure is used to receive output parameters from the SM_SendRLS method.
 
 
+
 ## -syntax
 
 ````
@@ -59,26 +60,32 @@ typedef struct _SM_SendRLS_OUT {
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
 
+
 ### -field TotalRespBufferSize
 
 The size, in bytes, of the results common transport (CT) command.
+
 
 ### -field OutRespBufferSize
 
 The size, in bytes, of the data that was actually retrieved.
 
+
 ### -field RespBuffer
 
 The results of the common transport command.
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the SM_SendRNID_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

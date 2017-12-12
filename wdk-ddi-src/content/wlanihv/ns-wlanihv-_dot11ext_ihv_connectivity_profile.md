@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_connectivity_profile.htm
 old-project: netvista
 ms.assetid: 56ef9b59-5dbb-4720-bae1-7af6d9dbc110
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11EXT_IHV_CONNECTIVITY_PROFILE, *PDOT11EXT_IHV_CONNECTIVITY_PROFILE, DOT11EXT_IHV_CONNECTIVITY_PROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,6 +55,7 @@ typedef struct _DOT11EXT_IHV_CONNECTIVITY_PROFILE {
 
 A pointer to the string that defines the IHV connectivity profile.
 
+
 ## -remarks
 
 
@@ -63,15 +64,18 @@ A pointer to the string that defines the IHV connectivity profile.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndisallocategenericobject.htm
 old-project: netvista
 ms.assetid: 166584fb-8a81-4a5b-93c9-3ad5348e15a7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisAllocateGenericObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Components that do not have an NDIS handle use the
   <b>NdisAllocateGenericObject</b> function to allocate a generic NDIS object.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ PNDIS_GENERIC_OBJECT NdisAllocateGenericObject(
 
 A driver object to associate with the generic object. This parameter can be <b>NULL</b>.
 
+
 ### -param Tag 
 
 The kernel memory tag that NDIS should use to allocate memory for the generic object.
+
 
 ### -param Size 
 
@@ -70,9 +73,11 @@ The amount of memory, in bytes, to reserve for the caller. This does not include
      additional memory space for your own purposes. To access the additional memory, use 
      sizeof(NDIS_GENERIC_OBJECT) to skip over the generic object structure.
 
+
 ## -returns
 <b>NdisAllocateGenericObject</b> returns a pointer to the NDIS_GENERIC_OBJECT that it allocated. If NDIS
      failed to create the object, the return value is <b>NULL</b>.
+
 
 ## -remarks
 NDIS uses a generic object to manage resources that are allocated by a component that does not
@@ -84,11 +89,13 @@ NDIS drivers must call the
     free a generic object that was created with 
     <b>NdisAllocateGenericObject</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +106,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +127,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,14 +138,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>, <a href="devtest.ndis_ndisallocategenericobject">NdisAllocateGenericObject</a>
@@ -152,5 +166,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateGenericObject function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateGenericObject function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

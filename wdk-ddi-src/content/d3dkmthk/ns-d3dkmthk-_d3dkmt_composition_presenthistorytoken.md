@@ -7,7 +7,7 @@ old-location: display\d3dkmt_composition_presenthistorytoken.htm
 old-project: display
 ms.assetid: F3F2DE77-9FC5-4AC1-B857-51B51557108E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN, D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies a composition swap chain present-history operation. This type of presentation is used for Extensible Application Markup Language (XAML)-based apps.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN {
 
 A driver-resident private data structure that identifies a composition swap chain present-history operation.
 
+
 ## -remarks
 
 
@@ -64,30 +66,37 @@ A driver-resident private data structure that identifies a composition swap chai
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 WDDM 1.3 and later
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

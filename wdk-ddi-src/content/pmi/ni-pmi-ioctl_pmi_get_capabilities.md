@@ -41,19 +41,24 @@ req.irql:
 The <b>IOCTL_PMI_GET_CAPABILITIES</b> request obtains the capability and asset information about a power meter.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 The <b>AssociatedIrp.SystemBuffer</b> member of the I/O request packet (IRP) points to an initiator-allocated buffer that is used both as the input buffer and the output buffer for the request. On input, this buffer contains a <a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a> structure in which the <b>Version</b> and <b>CapabilityType</b> members are set to valid values. The <b>CapabilitiesType</b> member contains a <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> enumeration value that specifies the type of PMI capability information to be retrieved from the power meter. This value also determines the size of the output buffer required to contain this information.
 
+
 ### -input-buffer-length
 The <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IRP's current I/O stack location (<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>) is set to the size in bytes of the buffer that is pointed to by the <b>AssociatedIrp.SystemBuffer</b> member. This size must be greater than or equal to <b>sizeof</b>(<b>PMI_CAPABILITIES</b>) or the request will fail with an error status of STATUS_INVALID_PARAMETER.
+
 
 ### -output-buffer
 If the request completes successfully, the buffer pointed to by the <b>AssociatedIrp.SystemBuffer</b> member contains the requested PMI capability information. Located at the start of this buffer is a <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES</a> structure that indicates the type and size of the information in the buffer.
 
+
 ### -output-buffer-length
 The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the IRP's current I/O stack location is set to the size in bytes of the buffer that is pointed to by the <b>AssociatedIrp.SystemBuffer</b> member. For the request to succeed, this size must be large enough to contain the PMI capability information specified by the <b>PMI_CAPABILITIES_TYPE</b> input parameter value. Otherwise, the request will fail with error status STATUS_BUFFER_TOO_SMALL.
+
 
 ### -in-out-buffer
 
@@ -77,6 +82,7 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="
 
 The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> value.
 
+
 ## -remarks
 The <b>IOCTL_PMI_GET_CAPABILITIES</b> request queries the PMI capabilities or asset information of the power meter. The input <a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a> enumeration value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.
 
@@ -90,19 +96,23 @@ A <a href="powermeter.pmi_metered_hardware_information">PMI_METERED_HARDWARE_INF
 
 A <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> structure that specifies the types of PMI capabilities the power meter supports.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +144,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20IOCTL_PMI_GET_CAPABILITIES control code%20 RELEASE:%20(11/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorlinkinfo.htm
 old-project: display
 ms.assetid: 4A22CC69-F529-4D0B-BF00-877468E29429
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MONITORLINKINFO, DXGK_MONITORLINKINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure was defined in WDDM 2.1, however the usage hints and capabilities structure definitions were nested within DXGK_MONITORLINKINFO.  In order to allow the same capabilities structure to be reused in DXGK_QUERYINTEGRATEDDISPLAYOUT, the nested definitions have been extracted into their own structures.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DXGK_MONITORLINKINFO {
 
 Hints to the driver on the intended usage of the display device.
 
+
 ### -field Capabilities
 
 Flags which describe the capabilities for driving the monitor.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Flags which describe the capabilities for driving the monitor.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

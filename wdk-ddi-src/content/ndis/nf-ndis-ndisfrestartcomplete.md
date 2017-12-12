@@ -7,7 +7,7 @@ old-location: netvista\ndisfrestartcomplete.htm
 old-project: netvista
 ms.assetid: 84685763-e7d8-4184-afa3-83efb4a0d3d7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisFRestartComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ A filter driver must call the
   <a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -62,19 +63,24 @@ The NDIS handle that identifies this filter module. NDIS passed the handle to th
      a call to the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
+
 ### -param Status [in]
 
 The final status of the restart operation. The following status values are supported:
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The driver successfully restarted the flow of network data.
 
+
 ### -param NDIS_STATUS_RESOURCES
 
 The restart failed because of insufficient resources.
+
 
 ### -param NDIS_STATUS_FAILURE
 
@@ -82,11 +88,13 @@ The driver indicates NDIS_STATUS_FAILURE if none of the preceding values applies
        should call the 
        <a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a> function
        together with parameters that specify the reason for the failure.
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 NDIS calls a filter driver's 
@@ -103,11 +111,13 @@ A filter driver can resume indicating received network data immediately after ND
     <b>NdisFRestartComplete</b>. The driver should be ready to accept send requests after it completes the
     restart operation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -118,14 +128,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +149,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -146,14 +160,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>
@@ -174,5 +191,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFRestartComplete function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFRestartComplete function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

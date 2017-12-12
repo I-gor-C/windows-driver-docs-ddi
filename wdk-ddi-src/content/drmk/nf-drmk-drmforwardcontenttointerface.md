@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <code>DrmForwardContentToInterface</code> function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content. The function authenticates the object and sends the object the content ID and DRM rights that the system has assigned to the protected content.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS DrmForwardContentToInterface(
 
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
+
 ### -param pUnknown [in]
 
 Pointer to a COM interface that directly receives KS audio stream data for a KS audio filter.
 
+
 ### -param NumMethods [in]
 
 Specifies the total number of methods in the COM interface that <i>pUnknown</i> points to, including all the methods in its base interfaces.
+
 
 ## -returns
 <code>DrmForwardContentToInterface</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code. The following table shows some of the possible return status codes.
@@ -73,6 +77,7 @@ Specifies the total number of methods in the COM interface that <i>pUnknown</i> 
 </dl>Indicates that the KS audio stream that is associated with <i>pUnknown</i> does not support the DRM content rights that are assigned to <i>ContentId</i>.
 
  
+
 
 ## -remarks
 Before allowing protected content to flow through a data path, the system verifies that the data path is secure. To do so, the system authenticates each module in the data path beginning at the upstream end of the data path and moving downstream. As each module is authenticated, that module gives the system information about the next module in the data path so that it can also be authenticated. To be successfully authenticated, a module's binary file must be signed as DRM-compliant.
@@ -91,11 +96,13 @@ The <i>pUnknown</i> parameter follows the <a href="https://msdn.microsoft.com/e6
 
 <code>DrmForwardContentToInterface</code> performs the same function as <a href="audio.pcforwardcontenttointerface">PcForwardContentToInterface</a> and <a href="audio.idrmport_forwardcontenttointerface">IDrmPort::ForwardContentToInterface</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +113,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +124,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +135,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -158,5 +169,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20DrmForwardContentToInterface function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

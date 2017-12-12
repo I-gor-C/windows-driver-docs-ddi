@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_getkeybasedata_0030.htm
 old-project: display
 ms.assetid: D4F893E9-6B7B-4E35-A92F-B31FFD55A2C0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to get key base data.
 
 
+
 ## -prototype
 
 ````
@@ -61,28 +62,35 @@ HRESULT APIENTRY* PFND3D12DDI_GETKEYBASEDATA_0030(
 
 The device being processed.
 
+
 ### -param hDrvCryptoSession 
 
 The crypto session.
+
 
 ### -param pKeyInputData [in]
 
 A pointer to key input data.
 
+
 ### -param KeyInputDataSize 
 
 The size of the key input data.
+
 
 ### -param pKeyBaseData [out]
 
 A pointer to key base data.
 
+
 ### -param KeyBaseDataSize 
 
 The size of the key base data.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -92,6 +100,7 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

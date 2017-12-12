@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreateprotectedsession.htm
 old-project: display
 ms.assetid: f6967f07-564b-4730-9950-4703b541165b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTCreateProtectedSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
             Used to create a protected session.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS  D3DKMTCreateProtectedSession(
 
 Holds information to create a protected session.
 
+
 ## -returns
 
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -70,22 +73,27 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,8 +104,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

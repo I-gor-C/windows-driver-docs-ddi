@@ -7,7 +7,7 @@ old-location: display\d3dddi_synchronizationobject_type.htm
 old-project: display
 ms.assetid: afd1aad4-d4cd-420f-bd3f-f171dc818a3e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</b> enumeration indicates the type of synchronization object.
 
 
+
 ## -syntax
 
 ````
@@ -67,32 +68,44 @@ typedef enum _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE {
 ### -field D3DDDI_SYNCHRONIZATION_MUTEX
 
 The synchronization object is a synchronization mutex.
+
 Supported starting with Windows Vista.
+
 
 ### -field D3DDDI_SEMAPHORE
 
 The synchronization object is a semaphore.
+
 Supported starting with Windows Vista.
+
 
 ### -field D3DDDI_FENCE
 
 The synchronization object is a fence. 
+
 Supported starting with Windows 7.
+
 
 ### -field D3DDDI_CPU_NOTIFICATION
 
 The synchronization object is a CPU notification.
+
 Supported starting with Windows 7.
+
 
 ### -field D3DDDI_MONITORED_FENCE
 
 The synchronization object is a monitored fence.
+
 Supported starting with Windows 10.
+
 
 ### -field D3DDDI_MONITORED_FENCE
 
 The synchronization object is a periodic monitored fence.
+
 Supported starting with Windows 10.
+
 
 ### -field 
 
@@ -105,6 +118,7 @@ Supported starting with Windows 10.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

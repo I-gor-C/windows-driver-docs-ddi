@@ -7,7 +7,7 @@ old-location: display\dxgk_integrated_display_child.htm
 old-project: display
 ms.assetid: A3E28664-B286-4E4A-85DD-4EAAC7D257F0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Gives information about the connected integrated display.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DXGK_INTEGRATED_DISPLAY_CHILD {
 ### -field InterfaceTechnology
 
 Provides the type of connection used for the integrated display.  Typically, this would be one of the inherently internal display types:
+
 <ul>
 <li>D3DKMDT_VOT_INTERNAL</li>
 <li>D3DKMDT_VOT_LVDS</li>
@@ -63,6 +65,7 @@ Provides the type of connection used for the integrated display.  Typically, thi
 <li>D3DKMDT_VOT_UDI_EMBEDDED</li>
 </ul>
 However, since it has become common to use external connector types to connect integrated displays in larger form factor systems with a built-in display such as all-in-one systems, the following digital connection types are also allowed:
+
 <ul>
 <li>D3DKMDT_VOT_DVI</li>
 <li>D3DKMDT_VOT_HDMI</li>
@@ -76,6 +79,7 @@ However, since it has become common to use external connector types to connect i
 
 The size in bytes of the descriptor which will be in the Descriptor field of the DXGK_QUERYINTEGRATEDDISPLAYOUT structure.
 
+
 ## -remarks
 
 
@@ -84,6 +88,7 @@ The size in bytes of the descriptor which will be in the Descriptor field of the
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The MEDIUM_INFO structure describes the media loaded into an external device.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct {
 
 Specifies if media is present in the external device. <b>TRUE</b> if media is loaded, <b>FALSE</b> otherwise.
 
+
 ### -field MediaType
 
 Indicates the type of the media loaded in an external device.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -69,42 +72,52 @@ Indicates the type of the media loaded in an external device.
 <tr>
 <td>
 ED_MEDIA_DVC
+
 </td>
 <td>
 Digital video cassette. For example MiniDV
+
 </td>
 </tr>
 <tr>
 <td>
 ED_MEDIA_VHS
+
 </td>
 <td>
 VHS cassette
+
 </td>
 </tr>
 <tr>
 <td>
 ED_MEDIA_HI8
+
 </td>
 <td>
 Hi-8 cassette
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field RecordInhibit
 
 Specifies if recording is inhibited on the media. <b>TRUE</b> if recording onto the media is inhibited, <b>FALSE</b> otherwise.
 
+
 ## -remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

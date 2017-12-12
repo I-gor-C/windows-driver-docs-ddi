@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FaceRectInfoBlobHeader</b> structure describes the size and count information of the blob format for the <b>MF_CAPTURE_METADATA_FACEROIS</b> attribute.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct tagFaceRectInfoBlobHeader {
 
 Size of this header + all following <a href="stream.facerectinfo">FaceRectInfo</a> structures.
 
+
 ### -field Count
 
 Number of <b>FaceRectInfo</b> structures in the blob.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Number of <b>FaceRectInfo</b> structures in the blob.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

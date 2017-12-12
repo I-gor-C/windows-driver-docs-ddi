@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _IRB_REQ_FREE_ADDRESS_RANGE {
 
 Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff536908">ADDRESS_RANGE</a> structures pointed to by <b>IRB.u.FreeAddressRange.p1394AddressRange</b>
 
+
 ### -field p1394AddressRange
 
 Specifies a pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff536908">ADDRESS_RANGE</a> data structures to be released. These address ranges were returned in a prior successful call to <b>AllocateAddressRange</b>.
+
 
 ### -field pAddressRange
 
 Points to the handle that was previously received in <b>IRB.u.AllocateAddressRange.hAddressRange</b> in the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a> request.
 
+
 ### -field DeviceExtension
 
 Points to the device extension associated with the device object. Not setting this member can lead to unexpected behavior when the driver tries to access the allocated address space. 
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Points to the device extension associated with the device object. Not setting th
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

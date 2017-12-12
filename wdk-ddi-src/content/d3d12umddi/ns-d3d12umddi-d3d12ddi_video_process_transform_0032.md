@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-process-transform-0032.htm
 old-project: display
 ms.assetid: 7c2393e6-3e1b-4b4a-b6ea-5848c38440b0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032, D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video process transform.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032 {
 
 Source rectangle.
 
+
 ### -field DestinationRectangle
 
 Destination rectangle.
 
+
 ### -field Orientation
 
 Orientation.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Orientation.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

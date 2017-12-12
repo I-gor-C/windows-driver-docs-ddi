@@ -7,8 +7,8 @@ old-location: netvista\riluiccfiles_2.htm
 old-project: netvista
 ms.assetid: 282cd191-03c5-4599-9a61-e84221ef9143
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCFILES, *LPRILUICCFILES, RILUICCFILES
+ms.date: 12/8/2017
+ms.keywords: RILUICCFILES, RILUICCFILES, *LPRILUICCFILES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ typedef struct _RILUICCFILES {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

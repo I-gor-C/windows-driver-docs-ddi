@@ -7,8 +7,8 @@ old-location: netvista\dot11ext_virtual_station_ap_property.htm
 old-project: netvista
 ms.assetid: b6edad03-63fc-4a27-b999-9014d3735861
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11EXT_VIRTUAL_STATION_AP_PROPERTY, *PDOT11EXT_VIRTUAL_STATION_AP_PROPERTY, DOT11EXT_VIRTUAL_STATION_AP_PROPERTY
+ms.date: 12/8/2017
+ms.keywords: _DOT11EXT_VIRTUAL_STATION_AP_PROPERTY, DOT11EXT_VIRTUAL_STATION_AP_PROPERTY, *PDOT11EXT_VIRTUAL_STATION_AP_PROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -62,11 +62,13 @@ A
      <a href="netvista.dot11_ssid">DOT11_SSID</a> structure that contains the service
      set identifier (SSID) used by the virtual station AP.
 
+
 ### -field dot11AuthAlgo
 
 A 
      <a href="netvista.dot11_auth_algorithm">DOT11_AUTH_ALGORITHM</a> structure that
      contains the authentication algorithm used by the virtual station AP.
+
 
 ### -field dot11CipherAlgo
 
@@ -74,20 +76,24 @@ A
      <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a> structure that
      contains the cipher algorithm used by the virtual station AP.
 
+
 ### -field bIsPassPhrase
 
 A Boolean value that indicates how the operating system should interpret the value of the 
      <b>ucKeyData</b> member. For more information, see the following Remarks section.
+
 
 ### -field dwKeyLength
 
 The length, in bytes, of the useful part of the 
      <b>ucKeyData</b> member. For more information, see the following Remarks section.
 
+
 ### -field ucKeyData
 
 A UCHAR value that specifies the key used by the virtual station AP's Preshared Keys (PSK)
      authentication algorithm. For more information, see the following Remarks section.
+
 
 ## -remarks
 The operating system uses the following logic to interpret the value of the 
@@ -98,20 +104,24 @@ If
       <b>ucKeyData</b> is interpreted as a pass phrase, and the buffer must be NULL terminated. In this case, 
       <b>dwKeyLength</b> should have a value that equals 1 plus the length of the key string.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +144,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_VIRTUAL_STATION_AP_PROPERTY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_VIRTUAL_STATION_AP_PROPERTY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

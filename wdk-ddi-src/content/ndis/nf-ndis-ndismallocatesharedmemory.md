@@ -7,7 +7,7 @@ old-location: netvista\ndismallocatesharedmemory.htm
 old-project: netvista
 ms.assetid: 8eda6100-598f-405d-a9b3-74424c829a58
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMAllocateSharedMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql: PASSIVE_LEVEL
   simultaneously accessible from both the host system and a DMA NIC.
 
 
+
 ## -syntax
 
 ````
@@ -62,13 +63,16 @@ VOID NdisMAllocateSharedMemory(
 Specifies the handle input to 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
 
+
 ### -param Length [in]
 
 Specifies the number of bytes to allocate.
 
+
 ### -param Cached [in]
 
 This parameter is ignored (cached memory is always used on x86 and x64 systems).
+
 
 ### -param VirtualAddress [out]
 
@@ -77,14 +81,17 @@ Pointer to a caller-supplied variable in which this function returns the base vi
      <b>NdisMAllocateSharedMemory</b> cannot satisfy its caller, it returns <b>NULL</b> to indicate that no memory
      was allocated.
 
+
 ### -param PhysicalAddress [out]
 
 Pointer to a caller-supplied variable in which this function returns a physical address, suitable
      for use by the NIC, that corresponds to that returned at 
      <i>VirtualAddress</i>, or it returns <b>NULL</b>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 Microsoft Windows Server 2003, Windows XP Service Pack 1, and later versions of Windows allow both
@@ -196,11 +203,13 @@ If a miniport driver calls
     removed, that is, when its 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function is called.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -211,14 +220,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -229,6 +241,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -239,9 +252,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -289,5 +304,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemory function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemory function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

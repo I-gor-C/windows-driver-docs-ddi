@@ -7,7 +7,7 @@ old-location: debugger\idebugcontrol3.htm
 old-project: debugger
 ms.assetid: 95e714b4-4167-41a1-ab2c-b088dbaf5fe2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,6 +83,7 @@ Sets the next event for the current target by selecting the event from the stati
 
  
 
+
 ## -members
 The <b>IDebugControl3</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -97,6 +98,7 @@ The <b>IDebugControl3</b> interface has these methods.
 <td align="left" width="63%">
 Turns on some of the assembly and disassembly options.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -105,6 +107,7 @@ Turns on some of the assembly and disassembly options.
 </td>
 <td align="left" width="63%">
 Returns the assembly and disassembly options that affect how the debugger engine assembles and disassembles processor instructions for the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -113,6 +116,7 @@ Returns the assembly and disassembly options that affect how the debugger engine
 </td>
 <td align="left" width="63%">
 Returns the index of the current event within the current list of events for the current target, if such a list exists.
+
 
 </td>
 </tr>
@@ -123,6 +127,7 @@ Returns the index of the current event within the current list of events for the
 <td align="left" width="63%">
 Describes the specified event in a static list of events for the current target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -131,6 +136,7 @@ Describes the specified event in a static list of events for the current target.
 </td>
 <td align="left" width="63%">
 Returns the current syntax that the engine is using for evaluating expressions.
+
 
 </td>
 </tr>
@@ -141,6 +147,7 @@ Returns the current syntax that the engine is using for evaluating expressions.
 <td align="left" width="63%">
 Returns the full and abbreviated names of an expression syntax.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -149,6 +156,7 @@ Returns the full and abbreviated names of an expression syntax.
 </td>
 <td align="left" width="63%">
 Returns the number of events for the current target, if the number of events is fixed.
+
 
 </td>
 </tr>
@@ -159,6 +167,7 @@ Returns the number of events for the current target, if the number of events is 
 <td align="left" width="63%">
 Returns the number of expression syntaxes that are supported by the engine.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -167,6 +176,7 @@ Returns the number of expression syntaxes that are supported by the engine.
 </td>
 <td align="left" width="63%">
  Turns off some of the assembly and disassembly options.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -175,6 +185,7 @@ Returns the number of expression syntaxes that are supported by the engine.
 </td>
 <td align="left" width="63%">
 Sets the assembly and disassembly options that affect how the debugger engine assembles and disassembles processor instructions for the target.
+
 
 </td>
 </tr>
@@ -185,6 +196,7 @@ Sets the assembly and disassembly options that affect how the debugger engine as
 <td align="left" width="63%">
 Sets the syntax that the engine will use to evaluate expressions.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -194,6 +206,7 @@ Sets the syntax that the engine will use to evaluate expressions.
 <td align="left" width="63%">
 Sets the syntax that the engine will use to evaluate expressions.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -202,6 +215,7 @@ Sets the syntax that the engine will use to evaluate expressions.
 </td>
 <td align="left" width="63%">
 Sets the next event for the current target by selecting the event from the static list of events for the target, if such a list exists.
+
 
 </td>
 </tr>
@@ -244,6 +258,7 @@ Sets the next event for the current target by selecting the event from the stati
 
  
 
+
 ## -remarks
 
 
@@ -252,6 +267,7 @@ Sets the next event for the current target by selecting the event from the stati
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -274,5 +290,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl3 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl3 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

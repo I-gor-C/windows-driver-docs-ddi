@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-crypto-session-transform-support-data-0030.
 old-project: display
 ms.assetid: fb83a03e-56d9-4daf-93c1-407744ad134a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video crypto session transform support data.
 
 
+
 ## -syntax
 
 ````
@@ -67,49 +68,61 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 {
 
 Node index.
 
+
 ### -field DecodeProfile
 
 Decode profile.
+
 
 ### -field ContentProtectionSystem
 
 Content protection system.
 
+
 ### -field Flags
 
 Flags.
+
 
 ### -field BitstreamEncryption
 
 Bitstream encryption.
 
+
 ### -field Operation
 
 Operation.
+
 
 ### -field ProtectedOutputRequired
 
 Protected output required.
 
+
 ### -field InputAlignment
 
 Input alignment.
+
 
 ### -field InputPreambleSize
 
 Input preamble size.
 
+
 ### -field OutputAlignment
 
 Output alignment.
+
 
 ### -field OutputPreambleSize
 
 Output preamble size.
 
+
 ### -field Support
 
 Support.
+
 
 ## -remarks
 
@@ -119,6 +132,7 @@ Support.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Icm.h header
 
+## -description
 
 This header is used by print. For more information, see
 - [print](../_print/index.md)
@@ -33,4 +38,4 @@ Icm.h contain these programming interfaces:
 | [COLORPROFILESUBTYPE enumeration](ne-icm-colorprofilesubtype.md) | The COLORPROFILESUBTYPE enumeration is used to specify the subtype of color profile. |
 | [COLORPROFILETYPE enumeration](ne-icm-colorprofiletype.md) | The COLORPROFILETYPE enumeration is used to specify the type of color profile. |
 | [COLORTYPE enumeration](ne-icm-colortype.md) | The values of the COLORTYPE enumeration are used by WCS functions to indicate the format of vector content. Most values have equivalent structures that are contained in the ICM COLOR structure (described in the Microsoft Windows SDK documentation). |
-| [WCS_PROFILE_MANAGEMENT_SCOPE enumeration](ne-icm-wcs-profile-management-scope.md) | The WCS_PROFILE_MANAGEMENT_SCOPE enumeration is used to specify the scope of a profile management operation, such as associating a profile with a device. |
+| [WCS_PROFILE_MANAGEMENT_SCOPE enumeration](ne-icm-wcs_profile_management_scope.md) | The WCS_PROFILE_MANAGEMENT_SCOPE enumeration is used to specify the scope of a profile management operation, such as associating a profile with a device. |

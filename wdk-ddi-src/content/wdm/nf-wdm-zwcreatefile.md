@@ -7,7 +7,7 @@ old-location: kernel\zwcreatefile.htm
 old-project: kernel
 ms.assetid: c40b99be-5627-44f3-9853-c3ae31a8035c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwCreateFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ZwCreateFile</b> routine creates a new file or opens an existing file.
 
 
+
 ## -syntax
 
 ````
@@ -67,9 +68,11 @@ NTSTATUS ZwCreateFile(
 
 A pointer to a HANDLE variable that receives a handle to the file.
 
+
 ### -param DesiredAccess [in]
 
 Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. In addition to the access rights that are defined for all types of objects, the caller can specify any of the following access rights, which are specific to files.
+
 <table>
 <tr>
 <th>ACCESS_MASK flag</th>
@@ -78,72 +81,90 @@ Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff5404
 <tr>
 <td>
 FILE_READ_DATA
+
 </td>
 <td>
 Read data from the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_READ_ATTRIBUTES
+
 </td>
 <td>
 Read the attributes of the file. (For more information, see the description of the <i>FileAttributes</i> parameter.)
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_READ_EA
+
 </td>
 <td>
 Read the extended attributes (EAs) of the file. This flag is irrelevant for device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_DATA
+
 </td>
 <td>
 Write data to the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_ATTRIBUTES
+
 </td>
 <td>
 Write the attributes of the file. (For more information, see the description of the <i>FileAttributes</i> parameter.)
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_EA 
+
 </td>
 <td>
 Change the extended attributes (EAs) of the file. This flag is irrelevant for device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_APPEND_DATA
+
 </td>
 <td>
 Append data to the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_EXECUTE
+
 </td>
 <td>
 Use system paging I/O to read data from the file into memory. This flag is irrelevant for device and intermediate drivers.
+
 </td>
 </tr>
 </table>
  
+
 <div class="alert"><b>Note</b>    Do not specify FILE_READ_DATA, FILE_WRITE_DATA, FILE_APPEND_DATA, or FILE_EXECUTE when you create or open a directory.</div>
 <div> </div>
 The caller can only specify a generic access right, GENERIC_<i>XXX</i>, for a file, not a directory. Generic access rights correspond to specific access rights as shown in the following table.
+
 <table>
 <tr>
 <th>Generic access right</th>
@@ -152,39 +173,50 @@ The caller can only specify a generic access right, GENERIC_<i>XXX</i>, for a fi
 <tr>
 <td>
 GENERIC_READ
+
 </td>
 <td>
 STANDARD_RIGHTS_READ, FILE_READ_DATA, FILE_READ_ATTRIBUTES,  FILE_READ_EA, and SYNCHRONIZE.
+
 </td>
 </tr>
 <tr>
 <td>
 GENERIC_WRITE
+
 </td>
 <td>
 STANDARD_RIGHTS_WRITE, FILE_WRITE_DATA, FILE_WRITE_ATTRIBUTES, FILE_WRITE_EA, FILE_APPEND_DATA, and SYNCHRONIZE.
+
 </td>
 </tr>
 <tr>
 <td>
 GENERIC_EXECUTE
+
 </td>
 <td>
 STANDARD_RIGHTS_EXECUTE, FILE_EXECUTE, FILE_READ_ATTRIBUTES, and SYNCHRONIZE. This value is irrelevant for device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 GENERIC_ALL
+
 </td>
 <td>
 FILE_ALL_ACCESS.
+
 </td>
 </tr>
 </table>
  
+
 For example, if you specify GENERIC_READ for a file object, the routine maps this value to the FILE_GENERIC_READ bitmask of specific access rights. In the preceding table, the specific access rights that are listed for GENERIC_READ correspond to the access flags that are contained in the FILE_GENERIC_READ bitmask.
+
 If the file is actually a directory, the caller can also specify the following generic access rights.
+
 <table>
 <tr>
 <th><i>DesiredAccess</i> flag</th>
@@ -193,48 +225,62 @@ If the file is actually a directory, the caller can also specify the following g
 <tr>
 <td>
 FILE_LIST_DIRECTORY
+
 </td>
 <td>
 List the files in the directory.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_TRAVERSE
+
 </td>
 <td>
 Traverse the directory, in other words, include the directory in the path of a file.
+
 </td>
 </tr>
 </table>
  
+
 For more information about access rights, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>.
+
 
 ### -param ObjectAttributes [in]
 
 A pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. 
 
+
 ### -param IoStatusBlock [out]
 
 A pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and other information about the requested operation. In particular, the <b>Information</b> member receives one of the following values:
+
 <ul>
 <li>
 FILE_CREATED
+
 </li>
 <li>
 FILE_OPENED
+
 </li>
 <li>
 FILE_OVERWRITTEN
+
 </li>
 <li>
 FILE_SUPERSEDED
+
 </li>
 <li>
 FILE_EXISTS
+
 </li>
 <li>
 FILE_DOES_NOT_EXIST
+
 </li>
 </ul>
 
@@ -242,13 +288,16 @@ FILE_DOES_NOT_EXIST
 
 A pointer to a LARGE_INTEGER that contains the initial allocation size, in bytes, for a file that is created or overwritten. If <i>AllocationSize</i> is <b>NULL</b>, no allocation size is specified. If no file is created or overwritten, <i>AllocationSize</i> is ignored.
 
+
 ### -param FileAttributes [in]
 
 Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags, which represent the file attributes to set if you create or overwrite a file. The caller usually specifies FILE_ATTRIBUTE_NORMAL, which sets the default attributes. For a list of valid FILE_ATTRIBUTE_<i>XXX</i> flags, see the <a href="fs.createfile">CreateFile</a> routine in the Microsoft Windows SDK documentation. If no file is created or overwritten, <i>FileAttributes</i> is ignored.
 
+
 ### -param ShareAccess [in]
 
 Type of share access, which is specified as zero or any combination of the following flags.
+
 <table>
 <tr>
 <th><i>ShareAccess</i> flag</th>
@@ -257,34 +306,43 @@ Type of share access, which is specified as zero or any combination of the follo
 <tr>
 <td>
 FILE_SHARE_READ
+
 </td>
 <td>
 Read the file
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SHARE_WRITE
+
 </td>
 <td>
 Write the file
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SHARE_DELETE
+
 </td>
 <td>
 Delete the file
+
 </td>
 </tr>
 </table>
  
+
 Device and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.
+
 
 ### -param CreateDisposition [in]
 
 Specifies the action to perform if the file does or does not exist. <i>CreateDisposition</i> can be one of the values in the following table.
+
 <table>
 <tr>
 <th><i>CreateDisposition</i> value</th>
@@ -294,75 +352,95 @@ Specifies the action to perform if the file does or does not exist. <i>CreateDis
 <tr>
 <td>
 FILE_SUPERSEDE
+
 </td>
 <td>
 Replace the file.
+
 </td>
 <td>
 Create the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_CREATE
+
 </td>
 <td>
 Return an error.
+
 </td>
 <td>
 Create the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN
+
 </td>
 <td>
 Open the file.
+
 </td>
 <td>
 Return an error.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_IF
+
 </td>
 <td>
 Open the file.
+
 </td>
 <td>
 Create the file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OVERWRITE
+
 </td>
 <td>
 Open the file, and overwrite it.
+
 </td>
 <td>
 Return an error.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OVERWRITE_IF
+
 </td>
 <td>
 Open the file, and overwrite it.
+
 </td>
 <td>
 Create the file.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param CreateOptions [in]
 
 Specifies the options to apply when the driver creates or opens the file. Use one or more of the flags in the following table.
+
 <table>
 <tr>
 <th><i>CreateOptions</i> flag</th>
@@ -371,129 +449,162 @@ Specifies the options to apply when the driver creates or opens the file. Use on
 <tr>
 <td>
 FILE_DIRECTORY_FILE
+
 </td>
 <td>
 The file is a directory. Compatible <i>CreateOptions</i> flags are FILE_SYNCHRONOUS_IO_ALERT, FILE_SYNCHRONOUS_IO_NONALERT, FILE_WRITE_THROUGH, FILE_OPEN_FOR_BACKUP_INTENT, and FILE_OPEN_BY_FILE_ID. The <i>CreateDisposition</i> parameter must be set to FILE_CREATE, FILE_OPEN, or FILE_OPEN_IF.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NON_DIRECTORY_FILE
+
 </td>
 <td>
 The file is <u>not</u> a directory. The file object to open can represent a data file; a logical, virtual, or physical device; or a volume.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_THROUGH
+
 </td>
 <td>
 System services, file-system drivers, and drivers that write data to the file must actually transfer the data to the file before any requested write operation is considered complete.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SEQUENTIAL_ONLY
+
 </td>
 <td>
 All access to the file will be sequential.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_RANDOM_ACCESS
+
 </td>
 <td>
 Access to the file can be random, so no sequential read-ahead operations should be performed by file-system drivers or by the system.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NO_INTERMEDIATE_BUFFERING
+
 </td>
 <td>
 The file cannot be cached or buffered in a driver's internal buffers. This flag is incompatible with the <i>DesiredAccess</i> parameter's FILE_APPEND_DATA flag.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SYNCHRONOUS_IO_ALERT
+
 </td>
 <td>
 All operations on the file are performed synchronously. Any wait on behalf of the caller is subject to premature termination from alerts. This flag also causes the I/O system to maintain the file-position pointer. If this flag is set, the SYNCHRONIZE flag must be set in the <i>DesiredAccess</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SYNCHRONOUS_IO_NONALERT
+
 </td>
 <td>
 All operations on the file are performed synchronously. Waits in the system that synchronize I/O queuing and completion are not subject to alerts. This flag also causes the I/O system to maintain the file-position context. If this flag is set, the SYNCHRONIZE flag must be set in the <i>DesiredAccess</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_CREATE_TREE_CONNECTION
+
 </td>
 <td>
 Create a tree connection for this file in order to open it over the network. This flag is not used by device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_COMPLETE_IF_OPLOCKED
+
 </td>
 <td>
 Complete this operation immediately with an alternate success code of STATUS_OPLOCK_BREAK_IN_PROGRESS if the target file is oplocked, rather than blocking the caller's thread. If the file is oplocked, another caller already has access to the file. This flag is not used by device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NO_EA_KNOWLEDGE
+
 </td>
 <td>
 If the extended attributes (EAs) for an existing file being opened indicate that the caller must understand EAs to properly interpret the file, <b>ZwCreateFile</b> should return an error. This flag is irrelevant for device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_REPARSE_POINT
+
 </td>
 <td>
 Open a file with a reparse point and bypass normal reparse point processing for the file. For more information, see the following Remarks section.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_DELETE_ON_CLOSE
+
 </td>
 <td>
 The system deletes the file when the last handle to the file is passed to <a href="kernel.zwclose">ZwClose</a>. If this flag is set, the DELETE flag must be set in the <i>DesiredAccess</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_BY_FILE_ID
+
 </td>
 <td>
 The file name that is specified by the <i>ObjectAttributes</i> parameter includes a binary 8-byte or 16-byte file reference number or object ID for the file, depending on the file system as shown below. Optionally, a device name followed by a backslash character may proceed these binary values. For example, a device name will have the following format.
+
 <pre class="syntax">\??\C:\&lt;8 bytes of binary FileID&gt;
 \device\HardDiskVolume1\&lt;16 bytes of binary ObjectID&gt;</pre>
 
 <ul>
 <li>
 On NTFS, this can be a 8-byte or 16-byte reference number or object ID. A 16-byte reference number is the same as an 8-byte number padded with zeros.
+
 </li>
 <li>
 On ReFS, this can be an 8-byte or 16-byte reference number. A 16-byte number is not related to an 8-byte number. Object IDs are not supported.
+
 </li>
 <li>
 The FAT, ExFAT, UDFS, and CDFS file systems do not support this flag.
+
 </li>
 </ul>
 
+
 This number is assigned by and specific to the particular file system.
+
 <div class="alert"><b>Note</b>  Because the filename field will partly contain a binary blob, it is incorrect to assume that this is a valid Unicode string, and more importantly may not be a null terminated string.</div>
 <div> </div>
 </td>
@@ -501,25 +612,31 @@ This number is assigned by and specific to the particular file system.
 <tr>
 <td>
 FILE_OPEN_FOR_BACKUP_INTENT
+
 </td>
 <td>
 The file is being opened for backup intent. Therefore, the system should check for certain access rights and grant the caller the appropriate access to the file—before checking the <i>DesiredAccess</i> parameter against the file's security descriptor. This flag not used by device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_RESERVE_OPFILTER
+
 </td>
 <td>
 This flag allows an application to request a Filter opportunistic lock (oplock) to prevent other applications from getting share violations. If there are already open handles, the create request will fail with STATUS_OPLOCK_NOT_GRANTED. For more information, see the following Remarks section.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_REQUIRING_OPLOCK
+
 </td>
 <td>
 The file is being opened and an opportunistic lock (oplock) on the file is being requested as a single atomic operation. The file system checks for oplocks before it performs the create operation, and will fail the create with a return code of STATUS_CANNOT_BREAK_OPLOCK if the result would be to break an existing oplock.
+
 <div class="alert"><b>Note</b>    The FILE_OPEN_REQUIRING_OPLOCK flag is available in Windows 7, Windows Server 2008 R2 and later Windows operating systems.</div>
 <div> </div>
 </td>
@@ -527,9 +644,11 @@ The file is being opened and an opportunistic lock (oplock) on the file is being
 <tr>
 <td>
 FILE_SESSION_AWARE
+
 </td>
 <td>
 The client opening the file or device is session aware and per session access is validated if necessary.
+
 <div class="alert"><b>Note</b>    The FILE_SESSION_AWARE flag is available starting withWindows 8.</div>
 <div> </div>
 </td>
@@ -537,16 +656,20 @@ The client opening the file or device is session aware and per session access is
 </table>
  
 
+
 ### -param EaBuffer [in, optional]
 
 For device and intermediate drivers, this parameter must be a <b>NULL</b> pointer.
+
 
 ### -param EaLength [in]
 
 For device and intermediate drivers, this parameter must be zero.
 
+
 ## -returns
 <b>ZwCreateFile</b> returns STATUS_SUCCESS on success or an appropriate NTSTATUS error code on failure. In the latter case, the caller can determine the cause of the failure by checking the <i>IoStatusBlock</i> parameter.
+
 
 ## -remarks
 <b>ZwCreateFile</b> supplies a handle that the caller can use to manipulate a file's data, or the file object's state and attributes. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565384">Using Files in a Driver</a>.
@@ -629,11 +752,13 @@ Callers of <b>ZwCreateFile</b> must be running at IRQL = PASSIVE_LEVEL and <a hr
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -644,14 +769,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -662,6 +790,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -672,6 +801,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -682,14 +812,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -734,5 +867,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateFile routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateFile routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

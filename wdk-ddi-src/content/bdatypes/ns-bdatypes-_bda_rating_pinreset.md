@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _BDA_RATING_PINRESET {
 
 Specifies the buffer size including a null termination.
 
+
 ### -field argbNewPin
 
 Specifies null-terminated UTF8. Use an empty string if the pin is disabled.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies null-terminated UTF8. Use an empty string if the pin is disabled.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

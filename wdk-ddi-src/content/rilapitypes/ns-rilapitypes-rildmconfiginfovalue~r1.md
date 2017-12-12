@@ -7,8 +7,8 @@ old-location: netvista\rildmconfiginfovalue_2.htm
 old-project: netvista
 ms.assetid: 6b917b11-a2f2-4b8b-9964-2d7b4a6a1871
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE, *LPRILDMCONFIGINFOVALUE
+ms.date: 12/8/2017
+ms.keywords: RILDMCONFIGINFOVALUE, *LPRILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef struct _RILDMCONFIGINFOVALUE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

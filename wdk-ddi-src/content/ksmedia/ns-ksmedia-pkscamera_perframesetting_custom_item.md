@@ -41,6 +41,7 @@ req.irql:
 This structure contains a custom item.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 The size of this header and custom data that follows.
 
+
 ### -field Reserved
 
 Reserved for future use.
 
+
 ### -field Id
 
 A GUID that identifies the custom item.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A GUID that identifies the custom item.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemimsenablementstate.htm
 old-project: netvista
 ms.assetid: 50fae043-3575-4eff-869a-fae94168a4a1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILRESETMODEMIMSENABLEMENTSTATE, RILRESETMODEMIMSENABLEMENTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef enum _RILRESETMODEMIMSENABLEMENTSTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

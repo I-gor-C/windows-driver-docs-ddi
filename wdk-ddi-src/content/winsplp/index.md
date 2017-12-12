@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Winsplp.h header
 
+## -description
 
 This header is used by print. For more information, see
 - [print](../_print/index.md)
@@ -67,41 +72,41 @@ Winsplp.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [ROUTER_NOTIFY_CALLBACK callback](nc-winsplp-router-notify-callback.md) | . |
+| [ROUTER_NOTIFY_CALLBACK callback](nc-winsplp-router_notify_callback.md) | . |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
 | [LPBranchOfficeJobDataContainer structure](ns-winsplp-lpbranchofficejobdatacontainer.md) | This structure defines a container for one or more BranchOfficeJobData structures to sent to a server. |
-| [MONITOR structure](ns-winsplp--monitor.md) | The MONITOR structure is obsolete and is supported only for compatibility reasons. |
-| [MONITOR2 structure](ns-winsplp--monitor2.md) | The MONITOR2 structure contains pointers to the functions defined by print monitors. |
-| [MONITOREX structure](ns-winsplp--monitorex.md) | The MONITOREX structure is obsolete and supported for compatibility purposes only. |
-| [MONITORINIT structure](ns-winsplp--monitorinit.md) | The MONITORINIT structure is used as an input parameter to a print monitor's InitializePrintMonitor2 function. |
-| [MONITORREG structure](ns-winsplp--monitorreg.md) | The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions. |
-| [MONITORUI structure](ns-winsplp--monitorui.md) | The MONITORUI structure contains pointers to the functions within a port monitor UI DLL that the print spooler calls. |
-| [NOTIFICATION_CONFIG_1 structure](ns-winsplp--notification-config-1.md) | . |
 | [PBranchOfficeJobData structure](ns-winsplp-pbranchofficejobdata.md) | This structure contains the type of event to log (eEventType), the job ID, and the data required by the event. |
 | [PBranchOfficeJobDataError structure](ns-winsplp-pbranchofficejobdataerror.md) | This structure contains the necessary data for logging a branch office job failure event on a remote server. This is based on standard job-related data available to the spooler. |
 | [PBranchOfficeJobDataPipelineFailed structure](ns-winsplp-pbranchofficejobdatapipelinefailed.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Failed event on a remote server. This is based on standard job-related data available to the spooler. |
 | [PBranchOfficeJobDataPrinted structure](ns-winsplp-pbranchofficejobdataprinted.md) | Contains the necessary data for logging a branch office job completed event on a remote server. This is based on standard job-related data available to the spooler. |
 | [PBranchOfficeJobDataRendered structure](ns-winsplp-pbranchofficejobdatarendered.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Event on a remote server. This is based on job-related data available to the spooler. |
 | [PBranchOfficeLogOfflineFileFull structure](ns-winsplp-pbranchofficelogofflinefilefull.md) | Contains the necessary data for logging that the offline log archive on the current client overflowed at some point. |
-| [PMESSAGEBOX_PARAMS structure](ns-winsplp-pmessagebox-params.md) | The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box. |
-| [PRINTER_NOTIFY_INIT structure](ns-winsplp--printer-notify-init.md) | . |
-| [PRINTPROCESSOROPENDATA structure](ns-winsplp--printprocessoropendata.md) | The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's OpenPrintProcessor function. |
-| [PRINTPROVIDOR structure](ns-winsplp--printprovidor.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
+| [PMESSAGEBOX_PARAMS structure](ns-winsplp-pmessagebox_params.md) | The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box. |
 | [PSHOWUIPARAMS structure](ns-winsplp-pshowuiparams.md) | The SplPromptUIInUsersSession function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box. |
-| [SPLCLIENT_INFO_1 structure](ns-winsplp--splclient-info-1.md) | The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs. |
-| [SPLCLIENT_INFO_2_V1 structure](ns-winsplp--splclient-info-2-v1.md) | Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC. |
-| [SPLCLIENT_INFO_2_V2 structure](ns-winsplp--splclient-info-2-v2.md) | . |
-| [SPLCLIENT_INFO_2_V3 structure](ns-winsplp--splclient-info-2-v3.md) | . |
-| [SPLCLIENT_INFO_3_VISTA structure](ns-winsplp--splclient-info-3-vista.md) | Contains a super-set of the information in both a SPLCLIENT_INFO_1 and SPLCLIENT_INFO_2 structure. It also contains additional information needed by the provider. |
+| [_MONITOR structure](ns-winsplp-_monitor.md) | The MONITOR structure is obsolete and is supported only for compatibility reasons. |
+| [_MONITOR2 structure](ns-winsplp-_monitor2.md) | The MONITOR2 structure contains pointers to the functions defined by print monitors. |
+| [_MONITOREX structure](ns-winsplp-_monitorex.md) | The MONITOREX structure is obsolete and supported for compatibility purposes only. |
+| [_MONITORINIT structure](ns-winsplp-_monitorinit.md) | The MONITORINIT structure is used as an input parameter to a print monitor's InitializePrintMonitor2 function. |
+| [_MONITORREG structure](ns-winsplp-_monitorreg.md) | The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions. |
+| [_MONITORUI structure](ns-winsplp-_monitorui.md) | The MONITORUI structure contains pointers to the functions within a port monitor UI DLL that the print spooler calls. |
+| [_NOTIFICATION_CONFIG_1 structure](ns-winsplp-_notification_config_1.md) | . |
+| [_PRINTER_NOTIFY_INIT structure](ns-winsplp-_printer_notify_init.md) | . |
+| [_PRINTPROCESSOROPENDATA structure](ns-winsplp-_printprocessoropendata.md) | The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's OpenPrintProcessor function. |
+| [_PRINTPROVIDOR structure](ns-winsplp-_printprovidor.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
+| [_SPLCLIENT_INFO_1 structure](ns-winsplp-_splclient_info_1.md) | The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs. |
+| [_SPLCLIENT_INFO_2_V1 structure](ns-winsplp-_splclient_info_2_v1.md) | Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC. |
+| [_SPLCLIENT_INFO_2_V2 structure](ns-winsplp-_splclient_info_2_v2.md) | . |
+| [_SPLCLIENT_INFO_2_V3 structure](ns-winsplp-_splclient_info_2_v3.md) | . |
+| [_SPLCLIENT_INFO_3_VISTA structure](ns-winsplp-_splclient_info_3_vista.md) | Contains a super-set of the information in both a SPLCLIENT_INFO_1 and SPLCLIENT_INFO_2 structure. It also contains additional information needed by the provider. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [NOTIFICATION_CALLBACK_COMMANDS enumeration](ne-winsplp--notification-callback-commands.md) | . |
-| [NOTIFICATION_CONFIG_FLAGS enumeration](ne-winsplp--notification-config-flags.md) | . |
-| [UI_TYPE enumeration](ne-winsplp-ui-type.md) | . |
+| [UI_TYPE enumeration](ne-winsplp-ui_type.md) | . |
+| [_NOTIFICATION_CALLBACK_COMMANDS enumeration](ne-winsplp-_notification_callback_commands.md) | . |
+| [_NOTIFICATION_CONFIG_FLAGS enumeration](ne-winsplp-_notification_config_flags.md) | . |

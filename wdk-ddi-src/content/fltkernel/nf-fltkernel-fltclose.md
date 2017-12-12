@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltClose</b> closes a file handle that was opened by <a href="ifsk.fltcreatefile">FltCreateFile</a> or <a href="ifsk.fltcreatefileex">FltCreateFileEx</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS FltClose(
 
 Handle created by a successful call to <a href="ifsk.fltcreatefile">FltCreateFile</a> or <a href="ifsk.fltcreatefileex">FltCreateFileEx</a>. 
 
+
 ## -returns
 <b>FltClose</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
 <dl>
@@ -64,14 +66,17 @@ Handle created by a successful call to <a href="ifsk.fltcreatefile">FltCreateFil
 
  
 
+
 ## -remarks
 <b>FltClose</b> is only for closing file handles opened by <a href="ifsk.fltcreatefile">FltCreateFile</a> or <a href="ifsk.fltcreatefileex">FltCreateFileEx</a>. It should not be used to close arbitrary handles. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +109,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -112,9 +120,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -132,5 +142,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltClose function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

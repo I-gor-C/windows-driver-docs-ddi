@@ -7,7 +7,7 @@ old-location: netvista\ndistcpoffloadreceivehandler.htm
 old-project: netvista
 ms.assetid: a45dede9-6559-4207-a49f-d9627054433a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,9 +39,11 @@ req.irql: DISPATCH_LEVEL
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 An offload target calls the 
   <b>NdisTcpOffloadReceiveHandler</b> function to indicate that received network data is available for
   consumption by a client application.
+
 
 
 ## -prototype
@@ -66,6 +68,7 @@ A handle that identifies the offloaded TCP connection on which the indication is
      <a href="netvista.ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.
 
+
 ### -param NetBufferList [in]
 
 A pointer to a 
@@ -78,6 +81,7 @@ A pointer to a
       <a href="kernel.mdl">memory descriptor lists (MDLs)</a>. The MDLs contain the
       received data. The MDLs are locked so that they remain resident, but they are not mapped into system
       memory.
+
 The 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure
       specified by 
@@ -88,10 +92,13 @@ The
       <a href="netvista.net_buffer">NET_BUFFER</a> in an offload receive
       indication.
 
+
 ### -param Status [in]
 
 The offload target must supply the following status value:
      
+
+
 
 
 ### -param NDIS_STATUS_SUCCESS
@@ -100,6 +107,7 @@ This indicates that the host stack can retain ownership of the NET_BUFFER_LIST s
        associated structures until it returns these structures to the 
        <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_return_handler.md">
        MiniportTcpOffloadReceiveReturn</a> function of the offload target.
+
 </dd>
 </dl>
 
@@ -107,6 +115,7 @@ This indicates that the host stack can retain ownership of the NET_BUFFER_LIST s
 
 A pointer to a ULONG-typed variable that receives the number of bytes that were consumed by the
      client application.
+
 
 ## -returns
 The 
@@ -124,6 +133,7 @@ The
        <i>BytesConsumed</i> parameter.
 
  
+
 
 ## -remarks
 Receive buffers are posted to the 
@@ -220,11 +230,13 @@ In the
     <a href="netvista.using_the_specified_receive_indication_size">Using the Specified
     Receive Indication Size</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -235,6 +247,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -245,9 +258,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -278,5 +293,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

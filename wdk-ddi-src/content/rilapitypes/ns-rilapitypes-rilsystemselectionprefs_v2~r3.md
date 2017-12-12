@@ -7,8 +7,8 @@ old-location: netvista\rilsystemselectionprefs_v2_2.htm
 old-project: netvista
 ms.assetid: d5866096-9df6-4453-96ab-8abd16707afc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILSYSTEMSELECTIONPREFS_V2, RILSYSTEMSELECTIONPREFS, RILSYSTEMSELECTIONPREFS_V2, *LPRILSYSTEMSELECTIONPREFS, *LPRILSYSTEMSELECTIONPREFS_V2
+ms.date: 12/8/2017
+ms.keywords: RILSYSTEMSELECTIONPREFS_V2, *LPRILSYSTEMSELECTIONPREFS_V2, *LPRILSYSTEMSELECTIONPREFS, RILSYSTEMSELECTIONPREFS, RILSYSTEMSELECTIONPREFS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -96,6 +97,7 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V2 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

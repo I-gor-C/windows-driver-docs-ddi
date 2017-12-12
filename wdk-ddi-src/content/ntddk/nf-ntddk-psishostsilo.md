@@ -7,7 +7,7 @@ old-location: kernel\psishostsilo.htm
 old-project: kernel
 ms.assetid: 4C6D85F2-C9B8-425D-A307-5609E1C1465B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsIsHostSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine  will check if the supplied <i>Silo</i> is the host silo.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ BOOLEAN PsIsHostSilo(
 
 The  silo to evaluate.
 
+
 ## -returns
 Returns <b>true</b> if the specified silo is the host silo; otherwise, <b>false</b>.
+
 
 ## -remarks
 
@@ -67,22 +70,27 @@ Returns <b>true</b> if the specified silo is the host silo; otherwise, <b>false<
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

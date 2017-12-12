@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: A3FDE9B0-DD6E-4FF5-AD9A-7DF7BF276EFA
 ms.author: windowsdriverdev
 ms.date: 12/2/2017
-ms.keywords: _SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY
+ms.keywords: _SDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Defines an information entry for a secure ACPI device for use in a secure device table.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _SDEV_SECURE_ACPI_INFO_ENTRY {
 
 A header. 
 
+
 ### -field IdentifierOffset
 
 An identifier offset value.
+
 
 ### -field IdentifierLength
 
 The length of the identifier.
 
+
 ### -field VendorInfoOffset
 
 A vendor information offset value.
 
+
 ### -field VendorInfoLength
 
 The length of the vendor information. 
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ The length of the vendor information.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

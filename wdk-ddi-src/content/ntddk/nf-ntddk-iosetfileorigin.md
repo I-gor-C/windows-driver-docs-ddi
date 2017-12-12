@@ -41,6 +41,7 @@ req.irql: Any level
 The <b>IoSetFileOrigin</b> routine specifies whether a given file object is for a remote create request. 
 
 
+
 ## -syntax
 
 ````
@@ -57,14 +58,17 @@ NTSTATUS IoSetFileOrigin(
 
 Pointer to the file object. 
 
+
 ### -param Remote [in]
 
 Set to <b>TRUE</b> to set the FO_REMOTE_ORIGIN flag on the file object, <b>FALSE</b> to clear it. 
+
 
 ## -returns
 If the FO_REMOTE_ORIGIN flag on the file object is not already set (or cleared) as specified by the <i>Remote</i> parameter, <b>IoSetFileOrigin</b> sets or clears the flag as appropriate and returns STATUS_SUCCESS. 
 
 If the flag is already set (or cleared) as specified, <b>IoSetFileOrigin</b> returns STATUS_INVALID_PARAMETER_MIX and does not set or clear the flag. 
+
 
 ## -remarks
 Network file systems call <b>IoSetFileOrigin</b> to set or clear the FO_REMOTE_ORIGIN flag on the file object pointed to by <i>FileObject</i>. This flag is set to indicate that the file object was created to satisfy a remote create request. 
@@ -73,11 +77,13 @@ Network file systems should call <b>IoSetFileOrigin</b> in their servers for any
 
 File system filter drivers should not call <b>IoSetFileOrigin</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,14 +94,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +115,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +126,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +137,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -140,5 +153,8 @@ Any level
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoSetFileOrigin routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

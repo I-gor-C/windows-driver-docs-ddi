@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsControl</b> interface is a COM-style interface implemented on AVStream filters and pins. It enables clients in kernel mode to access AVStream automation objects (properties, methods, and events). See the <a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a> kernel-streaming proxy COM interface for information about the kernel-mode equivalent of this interface.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ Sets a property or retrieves property information.
 
  
 
+
 ## -members
 The <b>IKsControl</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -84,6 +86,7 @@ The <b>IKsControl</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Enables or disables an event.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -92,6 +95,7 @@ Enables or disables an event.
 </td>
 <td align="left" width="63%">
 Sends a method to a KS object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -100,6 +104,7 @@ Sends a method to a KS object.
 </td>
 <td align="left" width="63%">
 Sets a property or retrieves property information.
+
 </td>
 </tr>
 </table>Enables or disables an event.
@@ -109,6 +114,7 @@ Sends a method to a KS object.
 Sets a property or retrieves property information.
 
  
+
 
 ## -remarks
 Minidrivers typically acquire the <b>IKsControl</b> interface through a call to <a href="stream.kspingetconnectedfilterinterface">KsPinGetConnectedFilterInterface</a> or <a href="stream.kspingetconnectedpininterface">KsPinGetConnectedPinInterface</a>. Because this is a COM-style interface, the function call to obtain this interface calls the <b>QueryInterface</b> method, which in turn calls the <b>AddRef</b> method. Therefore, the minidriver does not have to perform these steps.
@@ -123,11 +129,13 @@ However, a client that is written in C uses this code instead:
 
 For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,5 +158,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsControl interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

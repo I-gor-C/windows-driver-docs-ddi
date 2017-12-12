@@ -41,6 +41,7 @@ req.irql:
 The <b>KSTELEPHONY_CALLCONTROL</b> structure specifies the phone call type and control operation to use for the <a href="https://msdn.microsoft.com/library/windows/hardware/mt169871">KSPROPERTY_TELEPHONY_CALLCONTROL</a> property.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _tagKSTELEPHONY_CALLCONTROL {
 
 Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN packet-switched).
 
+
 ### -field CallControlOp
 
 Specifies the call control operation (enable or disable).
+
 
 ## -remarks
 
@@ -69,30 +72,37 @@ Specifies the call control operation (enable or disable).
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10 Mobile
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: storage\storportgetgroupaffinity.htm
 old-project: storage
 ms.assetid: eec0c985-fb59-4190-afb8-5eb62ac1edea
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortGetGroupAffinity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortGetGroupAffinity</b> routine constructs a mask of the active processors in a requested group.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ ULONG StorPortGetGroupAffinity(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param GroupNumber [in]
 
 The group from which to return the processor mask.
 
+
 ### -param GroupAffinityMask [out]
 
 A pointer to a variable that holds the affinity mask of the given group.
+
 
 ## -returns
 The <b>StorPortGetGroupAffinity</b> routine returns one of the following status codes:
@@ -84,6 +88,7 @@ The <b>StorPortGetGroupAffinity</b> routine returns one of the following status 
 
  
 
+
 ## -remarks
 
 
@@ -92,6 +97,7 @@ The <b>StorPortGetGroupAffinity</b> routine returns one of the following status 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -102,14 +108,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,14 +129,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportirql">StorPortIrql</a>

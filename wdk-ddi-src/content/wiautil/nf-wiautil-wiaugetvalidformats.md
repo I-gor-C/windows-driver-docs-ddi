@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiauGetValidFormats</b> function calls the <a href="image.iwiaminidrv_drvgetwiaformatinfo">IWiaMiniDrv::drvGetWiaFormatInfo</a> method and makes a list of valid formats, using a specified tymed value.
 
 
+
 ## -syntax
 
 ````
@@ -61,33 +62,41 @@ HRESULT _stdcall wiauGetValidFormats(
 
 Points to the WIA minidriver object. This parameter should be set to <b>this</b>.
 
+
 ### -param pWiasContext [in]
 
 Pointer to a WIA item context.
+
 
 ### -param TymedValue 
 
 Specifies the tymed value to search for.
 
+
 ### -param pNumFormats [out]
 
 Pointer to a memory location that receives the number of formats.
+
 
 ### -param ppFormatArray [out]
 
 Pointer to a memory location that receives the address of the array of format GUIDs.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error.
 
+
 ## -remarks
 The caller of this function is responsible for freeing the format array, using the <b>delete[]</b> operator.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

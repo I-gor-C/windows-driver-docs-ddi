@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>MmPrefetchPages</b> routine reads groups of pages from secondary storage in the optimal fashion. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS MmPrefetchPages(
 
 The number of read-lists in the array passed in the <i>ReadLists</i> parameter.
 
+
 ### -param ReadLists [in]
 
 A pointer to an array of read-lists to be prefetched.
+
 
 ## -returns
 <b>MmPrefetchPages</b> returns STATUS_SUCCESS or an appropriate error status representing the final completion status of the operation. Possible error status codes include the following: 
@@ -71,14 +74,17 @@ A pointer to an array of read-lists to be prefetched.
 
 <b>MmPrefetchPages</b> returns STATUS_SUCCESS on success and also if all of the requested pages were already in memory indicating no reads from secondary storage were required. 
 
+
 ## -remarks
 <b>MmPrefetchPages</b> reads pages from secondary storage described in the read-lists in the optimal fashion. The caller builds a list of various file objects and logical block offsets, passing them to the <b>MmPrefetchPages</b> function which examines the internal pages, reading in those that are not already valid or in transition. The pages are read with a single read, using a dummy page to bridge small gaps. If the gap is "large", then separate reads are issued. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,14 +95,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows XP and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +116,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +127,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -127,9 +138,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

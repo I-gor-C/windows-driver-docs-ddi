@@ -7,7 +7,7 @@ old-location: display\dxgk_querygpummucapsin.htm
 old-project: display
 ms.assetid: 8DFD307F-DD4E-4321-AD97-78A5D67687B0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_QUERYGPUMMUCAPSIN, DXGK_QUERYGPUMMUCAPSIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>DXGK_QUERYGPUMMUCAPSIN</b> structure holds the index of the adapter being queried.
 
 
+
 ## -syntax
 
 ````
@@ -56,30 +57,37 @@ typedef struct _DXGK_QUERYGPUMMUCAPSIN {
 
 A zero-based physical adapter index (engine ordinal) for which the data is queried.
 
+
 ## -remarks
 To get GpuMmu caps Dxgkrnl calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> with the following parameters:
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

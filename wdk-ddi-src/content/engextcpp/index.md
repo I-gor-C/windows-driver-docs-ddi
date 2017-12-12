@@ -1,18 +1,16 @@
+---
+UID: NA:
+---
+
 # Engextcpp.h header
 
+## -description
 
 This header is used by Debugger. For more information, see
 - [Debugger](../_debugger/index.md)
 
 Engextcpp.h contain these programming interfaces:
 
-
-## Functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EXT_COMMAND function](nf-engextcpp-ext-command.md) | The EXT_COMMAND macro is used to define an extension command that was declared by using the EXT_COMMAND_METHOD macro.An extension command is defined as follows |
-| [EXT_COMMAND_METHOD function](nf-engextcpp-ext-command-method.md) | The EXT_COMMAND_METHOD macro declares an extension command from inside the definition of the EXT_CLASS class. |
 
 ## Structures
 

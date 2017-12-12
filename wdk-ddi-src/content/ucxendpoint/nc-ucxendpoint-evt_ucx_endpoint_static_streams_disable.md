@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The client driver's implementation that UCX calls to release controller resources for all streams for an endpoint.
 
 
+
 ## -prototype
 
 ````
@@ -64,16 +65,20 @@ typedef EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE PEVT_UCX_ENDPOINT_STATIC_STREAMS
 
 A handle to a UCXENDPOINT object that represents the endpoint.
 
+
 ### -param UcxStaticStreams [in]
 
 A handle to a UCX object that represents the static streams.
+
 
 ### -param Request [in]
 
 Contains the URB for the <b>URB_FUNCTION_CLOSE_STATIC_STREAMS</b>.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
@@ -82,27 +87,33 @@ The UCX client driver registers this callback function with the USB host control
 The client driver returns completion status in <i>Request</i> and in the USBD_STATUS
     in the URB header.  The driver can complete the WDFREQUEST asynchronously.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,9 +124,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

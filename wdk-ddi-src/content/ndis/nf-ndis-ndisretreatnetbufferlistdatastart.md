@@ -7,7 +7,7 @@ old-location: netvista\ndisretreatnetbufferlistdatastart.htm
 old-project: netvista
 ms.assetid: 76a1294f-d098-4751-9b59-923993379c6e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisRetreatNetBufferListDataStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ Call the
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -64,17 +65,20 @@ NDIS_STATUS NdisRetreatNetBufferListDataStart(
 
 A pointer to a previously allocated NET_BUFFER_LIST structure.
 
+
 ### -param DataOffsetDelta [in]
 
 The amount of additional 
      <i>used data space</i> in each NET_BUFFER structure. If there is not enough 
      <i>unused data space</i> to satisfy the request, NDIS allocates more memory.
 
+
 ### -param DataBackFill [in]
 
 If NDIS must allocate memory, this parameter specifies the amount of data space in addition to the
      value of the 
      <i>DataOffsetDelta</i> parameter to allocate.
+
 
 ### -param AllocateMdlHandler [in, optional]
 
@@ -84,6 +88,7 @@ An optional entry point for an
      <i>NetAllocateMdl</i> function, NDIS calls 
      <i>NetAllocateMdl</i> to allocate an MDL and memory.
 
+
 ### -param FreeMdlHandler [in, optional]
 
 An optional entry point for an 
@@ -91,6 +96,7 @@ An optional entry point for an
      specifies an entry point for the 
      <i>NetFreeMdl</i> function, NDIS calls 
      <i>NetFreeMdl</i> to free an MDL and memory.
+
 
 ## -returns
 <b>NdisRetreatNetBufferListDataStart</b> returns one of the following:
@@ -107,6 +113,7 @@ An optional entry point for an
 </dl><b>NdisRetreatNetBufferListDataStart</b> failed for reasons other than insufficient resources.
 
  
+
 
 ## -remarks
 Calling 
@@ -129,11 +136,13 @@ Call the
     structure. Calling 
     <b>NdisAdvanceNetBufferListDataStart</b> is more efficient.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -144,14 +153,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +174,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -172,14 +185,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -215,5 +231,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetreatNetBufferListDataStart function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetreatNetBufferListDataStart function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

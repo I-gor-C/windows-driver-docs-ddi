@@ -7,7 +7,7 @@ old-location: netvista\fwps_connect_request0.htm
 old-project: netvista
 ms.assetid: dee5586d-62fd-4e08-854c-c7d44be60a71
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _FWPS_CONNECT_REQUEST0, FWPS_CONNECT_REQUEST0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>FWPS_CONNECT_REQUEST0</b> structure defines modifiable data for the
   driver uses this data to inspect or modify the connection information.
 
 
+
 ## -syntax
 
 ````
@@ -70,11 +71,13 @@ The local transport address of the connect request. This is an IPV4 or IPV6 addr
      formatted as a 
      <a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a> structure.
 
+
 ### -field remoteAddressAndPort
 
 The remote transport address of the connect request. This is an IPV4 or IPV6 address and TCP/UDP
      port formatted as a 
      <a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a> structure.
+
 
 ### -field portReservationToken
 
@@ -83,6 +86,7 @@ A token used to reserve the appropriate port. The token is obtained when a port 
      <a href="iphlp.createpersistenttcpportreservation">CreatePersistentTcpPortReservation</a> or 
      <a href="iphlp.createpersistentudpportreservation">CreatePersistentUdpPortReservation</a>.
 
+
 ### -field localRedirectTargetPID
 
 The process identifier of the local host process that will be handling traffic to the address
@@ -90,11 +94,13 @@ The process identifier of the local host process that will be handling traffic t
      <b>localAddressAndPort</b>. This value must be set for loopback redirect changes to be accepted by the
      engine.
 
+
 ### -field previousVersion
 
 The previous version of the connect request data. This read-only field records the modification history of the connect request. If the connect
      request data has not been previously modified by another WFP filter, 
      <i>previousVersion</i> will be set to <b>NULL</b>.
+
 
 ### -field modifierFilterId
 
@@ -105,9 +111,11 @@ The value of the
      <b>FilterId</b> member, see 
      <a href="netvista.fwps_filter1">FWPS_FILTER1</a>.
 
+
 ### -field  localRedirectHandle
 
  The    redirect handle that the callout driver created by calling the <a href="netvista.fwpsredirecthandlecreate0">FwpsRedirectHandleCreate0</a> function.
+
 <div class="alert"><b>Note</b>  Starting with Windows 8, the <b>localRedirectHandle</b> must be populated for redirection to work.</div>
 <div> </div>
 
@@ -115,12 +123,14 @@ The value of the
 
 A callout driver context area that the callout driver allocated by calling the 
     <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a> function.
+
 <div class="alert"><b>Note</b>  Starting with Windows 8,  memory allocated for <b>localRedirectContext</b> will have its ownership taken by WFP, and will be freed when the proxied flow is removed.</div>
 <div> </div>
 
 ### -field  localRedirectContextSize
 
 The    size, in bytes, of the callout-supplied context area.
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
 <div> </div>
 
@@ -155,19 +165,23 @@ This structure acts as a linked list that contains a record of all the changes m
     must continue to examine the 
     <b>previousVersion</b> member of each structure in the list until it is set to <b>NULL</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -207,5 +221,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CONNECT_REQUEST0 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CONNECT_REQUEST0 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

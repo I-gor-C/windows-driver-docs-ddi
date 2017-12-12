@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5e3f9a29-660e-46f1-bf25-5bad8b91e32c
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION
+ms.keywords: _FLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FLT_OPERATION_REGISTRATION structure is used to register operation callback routines. 
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ typedef struct _FLT_OPERATION_REGISTRATION {
 
 Major function code specifying the type of I/O operation. This member is required and cannot be <b>NULL</b>. For more information about additional operations, see <a href="ifsk.flt_parameters">FLT_PARAMETERS</a>.
 
+
 ### -field Flags
 
 Bitmask of flags specifying when to call the preoperation (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines for cached I/O or paging I/O operations. This member is optional and can be zero. 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -71,33 +74,41 @@ Bitmask of flags specifying when to call the preoperation (<a href="..\fltkernel
 <tr>
 <td>
 FLTFL_OPERATION_REGISTRATION_SKIP_CACHED_IO
+
 </td>
 <td>
 A minifilter sets this flag for read or write operations to specify that its preoperation and postoperation callback routines should not be called for cached I/O operations. This flag applies to fast I/O as well as IRP-based reads and writes because all fast I/O is cached. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_OPERATION_REGISTRATION_SKIP_PAGING_IO
+
 </td>
 <td>
 A minifilter sets this flag for read or write operations to specify that its preoperation and postoperation callback routines should not be called for paging I/O operations. This flag applies only to IRP-based I/O operations. It is ignored for I/O operations that are not IRP-based. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field PreOperation
 
 Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>-typed routine to be registered as the preoperation callback routine for this type of I/O operation. This member is optional and can be <b>NULL</b>. 
+
 
 ### -field PostOperation
 
 Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>-typed routine to be registered as the postoperation callback routine for this type of I/O operation. This member is optional and can be <b>NULL</b>. 
 
+
 ### -field Reserved1
 
 Reserved for system use. Minifilters must set this member to <b>NULL</b>. 
+
 
 ## -remarks
 When a minifilter calls <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it can register a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine and a postoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine for each type of I/O operation that it must handle. 
@@ -114,11 +125,13 @@ A minifilter cannot register a postoperation callback routine for IRP_MJ_SHUTDOW
 
 A single preoperation or postoperation callback routine can be used to process more than one type of I/O operation. However, the callback routine must be registered separately for each type of I/O operation. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,5 +157,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_OPERATION_REGISTRATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

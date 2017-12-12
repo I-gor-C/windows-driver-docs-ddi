@@ -7,8 +7,8 @@ old-location: netvista\rilopenuicclogicalchannelparams.htm
 old-project: netvista
 ms.assetid: 4bc3a16b-dc9e-4c15-9083-75ac4608def5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILOPENUICCLOGICALCHANNELPARAMS, *LPRILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS, *LPRILOPENUICCLOGICALCHANNELPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef struct _RILOPENUICCLOGICALCHANNELPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

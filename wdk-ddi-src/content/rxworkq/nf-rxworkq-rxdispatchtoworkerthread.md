@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxDispatchToWorkerThread</b> invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by this routine.  
 
 
+
 ## -syntax
 
 ````
@@ -60,22 +61,28 @@ NTSTATUS RxDispatchToWorkerThread(
 
 A pointer to the device object of the corresponding network mini-redirector driver.
 
+
 ### -param WorkQueueType [in]
 
 The type of the work queue representing the priority of the task. The <i>WorkQueueType</i> parameter can be one of can be one of the following enumerations for WORK_QUEUE_TYPE:
+
+
 
 
 ### -param CriticalWorkQueue
 
 Insert the WORK_QUEUE_ITEM into the queue from which a system thread with a real-time priority attribute will process the work item.
 
+
 ### -param DelayedWorkQueue
 
 Insert the WORK_QUEUE_ITEM into the queue from which a system thread with a variable priority attribute will process the work item.
 
+
 ### -param HyperCriticalWorkQueue
 
 Insert the WORK_QUEUE_ITEM into the queue from which a system thread will process the work item so that the routine to be invoked is not blocked.
+
 </dd>
 </dl>
 
@@ -83,9 +90,11 @@ Insert the WORK_QUEUE_ITEM into the queue from which a system thread will proces
 
 A pointer to the routine to be invoked.
 
+
 ### -param pContext [in]
 
 A pointer to a context parameter associated with the work item to complete that is passed to the driver.
+
 
 ## -returns
 <b>RxDispatchToWorkerThread</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
@@ -94,6 +103,7 @@ A pointer to a context parameter associated with the work item to complete that 
 </dl>The item could not be dispatched.
 
  
+
 
 ## -remarks
 There are two common cases of dispatching operations to worker threads:
@@ -110,11 +120,13 @@ The current implementation of the <b>RxDispatchToWorkerThread </b>routine queues
 
 If the <b>RxDispatchToWorkerThread </b>routine fails on a debug build, the <b>_RxLog</b> routine is called with details of the error. If the <b>RxDispatchToWorkerThread </b>routine fails and WMI is enabled in the kernel, details of the error will be logged with WMI.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +137,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,9 +148,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -152,5 +167,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDispatchToWorkerThread routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

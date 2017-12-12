@@ -7,7 +7,7 @@ old-location: storage\ataportcopymemory.htm
 old-project: storage
 ms.assetid: f5e449f8-9ff9-4d3d-9a62-3e985b57bd50
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortCopyMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortCopyMemory</b> routine copies data from one location to another.
 
 
+
 ## -syntax
 
 ````
@@ -58,25 +59,31 @@ VOID AtaPortCopyMemory(
 
 A pointer to the destination buffer.
 
+
 ### -param ReadBuffer [in]
 
 A pointer to the source buffer.
+
 
 ### -param Length [in]
 
 Specifies the number of bytes to transfer from <i>ReadBuffer</i> to <i>WriteBuffer</i>.
 
+
 ## -returns
 None 
 
+
 ## -remarks
 The miniport driver calls the <b>AtaPortCopy</b><b>Memory</b> routine to copy data from one system-allocated area to another.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 This hint indicates if the OEM Battery Manager should attempt to save as
 	much charge as possible in the non-hot swappable batteries (i.e. the
 	batteries are generally referred to as "internal batteries", these
@@ -62,9 +63,11 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 
 Set to HPMI_BATTERY_UTILIZATION_HINT_VERSION_1.
 
+
 ### -field PreserveNonHotSwappableBatteries
 
  Interpretation of values:
+
 
     - HpmiBoolUnavailable:
     Battery utilization hint is unavailable at the moment.
@@ -77,6 +80,7 @@ Set to HPMI_BATTERY_UTILIZATION_HINT_VERSION_1.
     Every attempt should be made to save as much charge as possible in
     the internal batteries.
 
+
 ## -remarks
 
 
@@ -85,14 +89,17 @@ Set to HPMI_BATTERY_UTILIZATION_HINT_VERSION_1.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10, version 1709 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,5 +122,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20HPMI_BATTERY_UTILIZATION_HINT structure%20 RELEASE:%20(11/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

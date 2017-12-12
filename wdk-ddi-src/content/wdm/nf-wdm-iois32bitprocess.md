@@ -7,7 +7,7 @@ old-location: kernel\iois32bitprocess.htm
 old-project: kernel
 ms.assetid: a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoIs32bitProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoIs32bitProcess</b> routine checks whether the originator of the current I/O request is a 32-bit user-mode application.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ BOOLEAN IoIs32bitProcess(
 
 Optional pointer to the IRP containing the current I/O request. Note that this must be the original IRP that was issued by the I/O manager. If the caller is a fast I/O dispatch routine (and thus there is no IRP), the caller should set this parameter to <b>NULL</b>.
 
+
 ## -returns
 <b>IoIs32bitProcess</b> returns <b>TRUE</b> if the originator of the current I/O request is a 32-bit user-mode process. Otherwise, it returns <b>FALSE</b>. 
+
 
 ## -remarks
 Drivers call <b>IoIs32bitProcess</b> to determine whether an I/O request is likely to contain data elements that need to be converted, or "thunked," before they can be used in a 64-bit driver.
@@ -69,11 +72,13 @@ If the <i>Irp</i> parameter is not <b>NULL</b>, it must point to an IRP that was
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559923">Programming Issues for 64-Bit Drivers</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,14 +89,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +121,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +132,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

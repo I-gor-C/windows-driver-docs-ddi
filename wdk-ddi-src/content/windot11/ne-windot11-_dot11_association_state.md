@@ -7,7 +7,7 @@ old-location: netvista\dot11_association_state.htm
 old-project: netvista
 ms.assetid: 90d2457f-4246-464b-8de6-f8fda056eb7b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_ASSOCIATION_STATE, *PDOT11_ASSOCIATION_STATE, DOT11_ASSOCIATION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,17 +58,21 @@ typedef enum _DOT11_ASSOCIATION_STATE {
 
 The association state is undefined.
 
+
 ### -field dot11_assoc_state_unauth_unassoc
 
 The 802.11 station is unauthenticated with the peer and is not associated.
+
 
 ### -field dot11_assoc_state_auth_unassoc
 
 The 802.11 station is authenticated with the peer but is not associated.
 
+
 ### -field dot11_assoc_state_auth_assoc
 
 The 802.11 station is authenticated and associated with the peer.
+
 
 ## -remarks
 
@@ -78,15 +82,18 @@ The 802.11 station is authenticated and associated with the peer.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_port_vlan_mode.htm
 old-project: netvista
 ms.assetid: 87828768-BE97-4549-AC5B-7CB27D0A9720
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_PORT_VLAN_MODE, NDIS_SWITCH_PORT_VLAN_MODE, *PNDIS_SWITCH_PORT_VLAN_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql: PASSIVE_LEVEL
 
 The <b>NDIS_SWITCH_PORT_VLAN_MODE</b> enumeration specifies the operation mode of the virtual local area network (VLAN) policy property of a Hyper-V extensible switch port.
 
+
+
 The <b>NDIS_SWITCH_PORT_VLAN_MODE</b> enumeration specifies the operation mode of the virtual local area network (VLAN) policy property of a Hyper-V extensible switch port.
+
 
 
 ## -syntax
@@ -63,21 +66,26 @@ typedef enum  {
 
 This value specifies an undefined VLAN operation mode.
 
+
 ### -field NdisSwitchPortVlanModeAccess
 
 This value specifies an operation mode in which packets from a single VLAN can be sent or received over the port. These packets can be forwarded from other ports on the extensible switch.
+
 
 ### -field NdisSwitchPortVlanModeTrunk
 
 This value specifies an operation mode where the port acts as a VLAN trunk. In this mode, packets from multiple VLANs as well as non-VLAN packets can be sent or received over the port. These packets can be forwarded from other ports on the extensible switch.
 
+
 ### -field NdisSwitchPortVlanModePrivate
 
 This value specifies an operation mode where packets from a single VLAN can be sent or received over the port. These packets cannot be forwarded from other ports on the extensible switch.
 
+
 ### -field NdisSwitchPortVlanModeMax
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.
+
 
 
 
@@ -90,19 +98,23 @@ For more information about extensible switch port policies, see <a href="netvist
 
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_VLAN_MODE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_VLAN_MODE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

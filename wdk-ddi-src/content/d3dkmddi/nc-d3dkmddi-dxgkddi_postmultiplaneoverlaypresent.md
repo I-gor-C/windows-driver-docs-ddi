@@ -7,7 +7,7 @@ old-location: display\dxgkddi_postmultiplaneoverlaypresent.htm
 old-project: display
 ms.assetid: C420DDE8-73D4-4D43-861C-A7B31B4C7DEC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Called after a new multi-plane overlay configuration has taken effect, allowing the driver to optimize hardware state.  Optional for Windows Display Driver Model (WDDM) 2.0 or later drivers that support multi-plane overlays.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS  DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT(
 
 Identifies the adapter containing the overlay hardware.
 
+
 ### -param pPostMultiPlaneOverlayPresent [in]
 
 A pointer to a DXGKARG_POSTMULTIPLANEOVERLAYPRESENT structure that describes the new overlay configuration recently committed.
+
 
 ## -returns
 DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT returns the following values:
@@ -68,6 +71,7 @@ DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT returns the following values:
 </dl>If the routine has been successfully completed. The driver should always return a success code.  Failures will result in a bugcheck.
 
  
+
 
 ## -remarks
 This function is called from PASSIVE level.
@@ -78,11 +82,13 @@ The driver can use this function to lower voltage levels, clocks, FIFO depths, o
 
 The driver should not spend significant amount of time in this call because the call blocks the main GPU scheduler thread and delay could lead to present glitches. Time intensive actions should be queued as separate work items by driver and handled in background. In this scenario, any conflicts between the queued item and hardware changes demanded by future pre/post calls should be managed by driver. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

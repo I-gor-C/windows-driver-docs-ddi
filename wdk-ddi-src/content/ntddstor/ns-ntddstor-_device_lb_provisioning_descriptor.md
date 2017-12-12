@@ -7,8 +7,8 @@ old-location: storage\device_lb_provisioning_descriptor.htm
 old-project: storage
 ms.assetid: E7287A50-2BB8-4D11-AB9B-6E65EEDD698D
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: _DEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>DEVICE_LB_PROVISIONING_DESCRIPTOR</b> structure is one of the query result structures returned from an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request. This structure contains the thin provisioning capabilities for a storage device.
 
 
+
 ## -syntax
 
 ````
@@ -67,13 +68,16 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 
 The version of this structure.
 
+
 ### -field Size
 
 The size of this structure. This is set to <b>sizeof</b>(DEVICE_LB_PROVISIONING_DESCRIPTOR).
 
+
 ### -field ThinProvisioningEnabled
 
 The thin provisioning–enabled status.
+
 <table>
 <tr>
 <th>Value</th>
@@ -87,6 +91,7 @@ The thin provisioning–enabled status.
 </td>
 <td width="60%">
 Thin provisioning is disabled.
+
 </td>
 </tr>
 <tr>
@@ -97,14 +102,17 @@ Thin provisioning is disabled.
 </td>
 <td width="60%">
 Thin provisioning is enabled.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field ThinProvisioningReadZeros
 
 Reads to unmapped regions return zeros.
+
 <table>
 <tr>
 <th>Value</th>
@@ -118,6 +126,7 @@ Reads to unmapped regions return zeros.
 </td>
 <td width="60%">
 Data read from unmapped regions is undefined.
+
 </td>
 </tr>
 <tr>
@@ -128,14 +137,17 @@ Data read from unmapped regions is undefined.
 </td>
 <td width="60%">
 Reads return zeros.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field AnchorSupported
 
 Support for the anchored LBA mapping state.
+
 <table>
 <tr>
 <th>Value</th>
@@ -149,6 +161,7 @@ Support for the anchored LBA mapping state.
 </td>
 <td width="60%">
 The anchored LBA mapping state is not supported.
+
 </td>
 </tr>
 <tr>
@@ -159,14 +172,17 @@ The anchored LBA mapping state is not supported.
 </td>
 <td width="60%">
 The anchored LBA mapping state is supported.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field UnmapGranularityAlignmentValid
 
 The validity of unmap granularity alignment for the device.
+
 <table>
 <tr>
 <th>Value</th>
@@ -180,6 +196,7 @@ The validity of unmap granularity alignment for the device.
 </td>
 <td width="60%">
 Unmap granularity alignment is not valid.
+
 </td>
 </tr>
 <tr>
@@ -190,34 +207,42 @@ Unmap granularity alignment is not valid.
 </td>
 <td width="60%">
 Unmap granularity alignment is valid.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Reserverd0
 
 Reserved.
+
 
 ### -field Reserverd1
 
 Reserved.
 
+
 ### -field OptimalUnmapGranularity
 
 The optimal number of blocks for unmap granularity for the device.
+
 
 ### -field UnmapGranularityAlignment
 
 The current value, in blocks, set for unmap granularity alignment on the device.   The value <b>UnmapGranularityAlignmentValid</b> indicates the validity of this member.
 
+
 ### -field MaxUnmapLbaCount
 
 Maximum amount of LBAs that can be unmapped in a single UNMAP command, in units of logical blocks. This is valid only in Windows 10 and above.
 
+
 ### -field MaxUnmapBlockDescriptorCount
 
 Maximum number of descriptors allowed in a single UNMAP command. This is valid only in Windows 10 and above.
+
 
 ## -remarks
 This structure is returned in the system buffer from a <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request when the <b>PropertyId</b> member of <a href="storage.storage_property_query">STORAGE_PROPERTY_QUERY</a> is set to <b>StorageDeviceLBProvisioningProperty</b>. 
@@ -228,19 +253,23 @@ If <b>UnmapGranularityAlignmentValid</b> = 0,  then any code using <b>UnmapGranu
 
 If the underlying storage device is a SCSI device, unmapping capability can be queried. If the <b>TrimEnabled</b> member of the <a href="storage.device_trim_descriptor">DEVICE_TRIM_DESCRIPTOR</a> structure is TRUE, UNMAP is supported. The <b>DEVICE_TRIM_DESCRIPTOR</b> structure is returned in the system buffer from a <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request when the <b>PropertyId</b> member of <a href="storage.storage_property_query">STORAGE_PROPERTY_QUERY</a> is set to <b>StorageDeviceTrimProperty</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -260,5 +289,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_LB_PROVISIONING_DESCRIPTOR structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_LB_PROVISIONING_DESCRIPTOR structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

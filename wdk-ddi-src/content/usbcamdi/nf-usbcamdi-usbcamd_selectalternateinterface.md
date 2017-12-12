@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_SelectAlternateInterface</b> function selects an alternate setting within the USB video streaming interface.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS USBCAMD_SelectAlternateInterface(
 
 Pointer to a device-specific context.
 
+
 ### -param RequestInterface [in, out]
 
 Pointer to a <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.
+
 
 ## -returns
 <b>USBCAMD_SelectAlternateInterface </b>returns the status of the SELECT_INTERFACE USB bus driver request. Other possible error codes include:
@@ -73,16 +76,19 @@ Pointer to a <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATI
 
  
 
+
 ## -remarks
 On successful completion, the structure pointed to by the <i>RequestInterface</i> argument is filled in with the information from the SELECT_INTERFACE USB bus driver request.
 
 This function is typically called by a camera minidriver in response to a request to allocate or free bandwidth. This function should not be called when any video streams in the minidriver are open and/or actively streaming data.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +99,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -119,5 +127,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_SelectAlternateInterface function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

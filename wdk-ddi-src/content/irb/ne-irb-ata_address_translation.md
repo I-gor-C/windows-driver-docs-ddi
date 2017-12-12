@@ -7,7 +7,7 @@ old-location: storage\ata_address_translation.htm
 old-project: storage
 ms.assetid: 72fddd86-6e9f-4e75-af6a-e7f3e1064a8b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: ATA_ADDRESS_TRANSLATION, ATA_ADDRESS_TRANSLATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The ATA_ADDRESS_TRANSLATION enumeration type indicates the type of address translation used during data transfers.
 
 
+
 ## -syntax
 
 ````
@@ -62,13 +63,16 @@ typedef enum  {
 
 Indicates that sectors are to be addressed using cylinder/head/sector (CHS) values.
 
+
 ### -field LbaMode
 
 Indicates that sectors are to be addressed using logical block addressing (LBA) values.
 
+
 ### -field Lba48BitMode
 
 Indicates support for 48-bit LBAs.
+
 
 ## -remarks
 
@@ -78,6 +82,7 @@ Indicates support for 48-bit LBAs.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

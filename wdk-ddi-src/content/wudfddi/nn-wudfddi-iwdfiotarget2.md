@@ -7,8 +7,8 @@ old-location: wdf\iwdfiotarget2.htm
 old-project: wdf
 ms.assetid: 52ce1c63-b2cf-4eda-b056-4f1f999110c5
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 To obtain the <b>IWDFIoTarget2</b> interface, drivers call <b>IWDFIoTarget::QueryInterface</b>.
+
 
 
 ## -inheritance
@@ -56,6 +58,7 @@ The <a href="wdf.iwdfiotarget2_formatrequestforsetinformation">FormatRequestForS
 
  
 
+
 ## -members
 The <b>IWDFIoTarget2</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -69,6 +72,7 @@ The <b>IWDFIoTarget2</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiotarget2_formatrequestforflush">FormatRequestForFlush</a> method builds an I/O request for a flush operation but does not send the request to an I/O target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -77,6 +81,7 @@ The <a href="wdf.iwdfiotarget2_formatrequestforflush">FormatRequestForFlush</a> 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiotarget2_formatrequestforqueryinformation">FormatRequestForQueryInformation</a> method formats an I/O request to obtain information about a file, but it does not send the request to an I/O target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -85,6 +90,7 @@ The <a href="wdf.iwdfiotarget2_formatrequestforqueryinformation">FormatRequestFo
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiotarget2_formatrequestforsetinformation">FormatRequestForSetInformation</a> method formats an I/O request to set information about a file, but it does not send the request to an I/O target.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfiotarget2_formatrequestforflush">FormatRequestForFlush</a> method builds an I/O request for a flush operation but does not send the request to an I/O target.
@@ -95,6 +101,7 @@ The <a href="wdf.iwdfiotarget2_formatrequestforsetinformation">FormatRequestForS
 
  
 
+
 ## -remarks
 
 
@@ -103,6 +110,7 @@ The <a href="wdf.iwdfiotarget2_formatrequestforsetinformation">FormatRequestForS
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,22 +121,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.9
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +152,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

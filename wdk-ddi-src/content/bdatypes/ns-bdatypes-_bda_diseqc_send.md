@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: C40EAB5C-61AA-45FB-856E-07AB4D0228A6
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_DISEQC_SEND, *PBDA_DISEQC_SEND, BDA_DISEQC_SEND
+ms.keywords: _BDA_DISEQC_SEND, BDA_DISEQC_SEND, *PBDA_DISEQC_SEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -38,6 +38,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
+
 
 
 
@@ -71,6 +72,7 @@ typedef struct _BDA_DISEQC_SEND {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: C4AA60FF-03AD-444F-B897-654B787B5F86
 ms.author: windowsdriverdev
 ms.date: 11/3/2017
-ms.keywords: _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
+ms.keywords: _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure contains a request for the hardware attributes of the general-purpose I/O (GPIO) controller.
+
 
 
 ## -syntax
@@ -74,17 +75,21 @@ typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT {
 
 The type of attribute information that is being requested. This member is set to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh698240">CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE</a> enumeration value.
 
+
 ### -field Size
 
 Specifies the size, in bytes, of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure.
+
 
 ### -field Flags
 
 A set of flag bits that supply additional information about the type of attribute request indicated by the <b>RequestType</b> member. No flags are currently defined for the <b>Flags</b> member.
 
+
 ### -field ( unnamed union )
 
 A union of members that contain input information for the various types of attribute requests. The <b>RequestType</b> member determines which member of this union is used. The following table shows the union member that corresponds to each valid <b>RequestType</b> value.
+
 <table>
 <tr>
 <th><b>RequestType</b> value</th>
@@ -105,13 +110,16 @@ A union of members that contain input information for the various types of attri
 </table>
  
 
+
 ### -field BankPowerInformation
 
 A structure that contains information about the GPIO bank whose power attributes are being requested.
 
+
 ### -field BankId
 
 The identifier for a bank of GPIO pins. If M is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to M–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
+
 </dd>
 </dl>
 
@@ -119,17 +127,21 @@ The identifier for a bank of GPIO pins. If M is the number of banks in the GPIO 
 
 A structure that contains information about the interrupt resources that are assigned to the GPIO controller.
 
+
 ### -field ResourcesTranslated
 
 A handle to a framework resource-list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.
+
 
 ### -field ResourcesRaw
 
 A handle to a framework resource-list object that identifies the raw hardware resources that the Plug and Play manager has assigned to the device.
 
+
 ### -field TotalBanks
 
 The number of banks in the GPIO controller. This member indicates the expected length of the <b>BankInterruptBinding.ResourceMapping</b> array in the caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a> structure, if the caller supplies a non-NULL pointer to this structure.
+
 </dd>
 </dl>
 
@@ -137,21 +149,26 @@ The number of banks in the GPIO controller. This member indicates the expected l
 
 A structure that contains information about an I/O control request (IOCTL).
 
+
 ### -field InputBuffer
 
 A pointer to the input buffer for the IOCTL.
+
 
 ### -field InputBufferSize
 
 The size, in bytes, of the input buffer for the IOCTL.
 
+
 ### -field OutputBufferSize
 
 The size, in bytes, of the output buffer for the IOCTL.
 
+
 ### -field TotalBanks
 
 The number of banks in the GPIO controller. This member indicates the expected length of the <b>ControllerFunctionBankMapping.Mapping</b> array in the caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a> structure, if the caller supplies a non-NULL pointer to this structure.
+
 </dd>
 </dl>
 </dd>
@@ -160,19 +177,23 @@ The number of banks in the GPIO controller. This member indicates the expected l
 ## -remarks
 The <i>InputBuffer</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698241">CLIENT_QuerySetControllerInformation</a> function is a pointer to a <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -198,5 +219,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure%20 RELEASE:%20(11/3/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

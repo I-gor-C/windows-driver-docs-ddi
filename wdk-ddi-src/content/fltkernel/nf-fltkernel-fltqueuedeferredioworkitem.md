@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>FltQueueDeferredIoWorkItem</b> routine posts an IRP-based I/O operation to a work queue. 
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ NTSTATUS FltQueueDeferredIoWorkItem(
 
 A pointer to the work item to add to the work queue. The work item must have been allocated by calling <a href="ifsk.fltallocatedeferredioworkitem">FltAllocateDeferredIoWorkItem</a>. 
 
+
 ### -param Data [in]
 
 A pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. 
 
+
 ### -param WorkerRoutine [in]
 
 A pointer to a caller-supplied worker routine. This routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -84,23 +88,28 @@ A pointer to a caller-supplied worker routine. This routine is declared as follo
 </table></span></div>
 
 
+
 ### -param FltWorkItem
 
 An opaque pointer to a deferred work item structure. 
+
 
 ### -param CallbackData
 
 A pointer to the callback data structure for the I/O operation. 
 
+
 ### -param Context
 
 An optional context information pointer that was passed as the <i>Context</i> parameter of <b>FltQueueDeferredIoWorkItem</b>. 
+
 </dd>
 </dl>
 
 ### -param QueueType [in]
 
 This parameter specifies the queue into which the work item that <i>FltWorkItem</i> points to is to be inserted. <i>QueueType</i> can be either of the following. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -109,26 +118,33 @@ This parameter specifies the queue into which the work item that <i>FltWorkItem<
 <tr>
 <td>
 <b>CriticalWorkQueue</b>
+
 </td>
 <td>
 Insert the work item into the queue from which a system thread with a real-time priority attribute processes the work item. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>DelayedWorkQueue</b>
+
 </td>
 <td>
 Insert the work item into the queue from which a system thread with a variable priority attribute processes the work item. 
+
 </td>
 </tr>
 </table>
  
+
 The <i>QueueType</i> value <b>HyperCriticalWorkQueue</b> is reserved for system use. 
+
 
 ### -param Context [in]
 
 A pointer to caller-defined context information to be passed as the <i>Context</i> parameter of the callback routine specified in the <i>WorkerRoutine</i> parameter. 
+
 
 ## -returns
 The <b>FltQueueDeferredIoWorkItem</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -146,6 +162,7 @@ The <b>FltQueueDeferredIoWorkItem</b> routine returns STATUS_SUCCESS or an appro
 STATUS_FLT_NOT_SAFE_TO_POST_OPERATION is an error code. 
 
  
+
 
 ## -remarks
 The <b>FltQueueDeferredIoWorkItem</b> routine posts an I/O operation to a system work queue. The specified <i>WorkerRoutine</i> callback routine is called in the context of a system thread, at IRQL PASSIVE_LEVEL. 
@@ -180,11 +197,13 @@ IRP_MJ_WRITE
 
 IRP_MJ_FLUSH_BUFFERS
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -195,14 +214,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available in Microsoft Windows 2000 and later versions of all Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -213,6 +235,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -223,6 +246,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -233,9 +257,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -271,5 +297,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueueDeferredIoWorkItem routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

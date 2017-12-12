@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The SCANWINDOW structure is used by the WIA Flatbed driver to tell the microdriver what image area to scan.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _SCANWINDOW {
 
 Specifies the horizontal position of the left edge of the scan window in pixels.
 
+
 ### -field yPos
 
 Specifies the vertical position of the top edge of the scan window in pixels.
+
 
 ### -field xExtent
 
 Specifies the width of the scan window in pixels.
 
+
 ### -field yExtent
 
 Specifies the height of the scan window in pixels.
+
 
 ## -remarks
 
@@ -80,14 +85,17 @@ Specifies the height of the scan window in pixels.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

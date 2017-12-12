@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The USBCAMD_DEVICE_DATA2 structure specifies the entry points for a camera minidriver's functions that USBCAMD calls.
 
 
+
 ## -syntax
 
 ````
@@ -69,64 +70,79 @@ typedef struct _USBCAMD_DEVICE_DATA2 {
 
 Reserved. Do not use.
 
+
 ### -field CamInitialize
 
 Pointer to the camera minidriver defined <a href="stream.caminitialize">CamInitialize</a> callback function. This entry point is required.
+
 
 ### -field CamUnInitialize
 
 Pointer to the camera minidriver defined <a href="stream.camuninitialize">CamUnInitialize</a> callback function. This entry point is required.
 
+
 ### -field CamProcessUSBPacketEx
 
 Pointer to the camera minidriver defined <a href="stream.camprocessusbpacketex">CamProcessUSBPacketEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
+
 
 ### -field CamNewVideoFrameEx
 
 Pointer to the camera minidriver defined <a href="stream.camnewvideoframeex">CamNewVideoFrameEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
 
+
 ### -field CamProcessRawVideoFrameEx
 
 Pointer to the camera minidriver defined <a href="stream.camprocessrawvideoframeex">CamProcessRawVideoFrameEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
+
 
 ### -field CamStartCaptureEx
 
 Pointer to the camera minidriver defined <a href="stream.camstartcaptureex">CamStartCaptureEx</a> callback function. This entry point is required.
 
+
 ### -field CamStopCaptureEx
 
 Pointer to the camera minidriver defined <a href="stream.camstopcaptureex">CamStopCaptureEx</a> callback function. This entry point is required.
+
 
 ### -field CamConfigureEx
 
 Pointer to the camera minidriver defined <a href="stream.camconfigureex">CamConfigureEx</a> callback function. This entry point is required.
 
+
 ### -field CamSaveState
 
 Pointer to the camera minidriver defined <a href="stream.camsavestate">CamSaveState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
+
 
 ### -field CamRestoreState
 
 Pointer to the camera minidriver defined <a href="stream.camrestorestate">CamRestoreState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
 
+
 ### -field CamAllocateBandwidthEx
 
 Pointer to the camera minidriver defined <a href="stream.camallocatebandwidthex">CamAllocateBandwidthEx</a> callback function. This entry point is required.
 
+
 ### -field CamFreeBandwidthEx
 
 Pointer to the camera minidriver defined <a href="stream.camfreebandwidthex">CamFreeBandwidthEx</a> callback function. This entry point is required.
+
 
 ## -remarks
 A camera minidriver passes a USBCAMD_DEVICE_DATA2 structure to USBCAMD as a parameter to USBCAMD service <a href="stream.usbcamd_initializenewinterface">USBCAMD_InitializeNewInterface</a>.
 
 Camera minidrivers that must be backward compatible with the original USBCAMD library must use the <a href="stream.usbcamd_device_data">USBCAMD_DEVICE_DATA</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -179,5 +195,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_DEVICE_DATA2 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

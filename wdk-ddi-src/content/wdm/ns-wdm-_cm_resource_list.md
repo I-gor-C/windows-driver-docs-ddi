@@ -7,8 +7,8 @@ old-location: kernel\cm_resource_list.htm
 old-project: kernel
 ms.assetid: 01f31255-a4f7-4a16-9238-a7391bb850d1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _CM_RESOURCE_LIST, *PCM_RESOURCE_LIST, CM_RESOURCE_LIST
+ms.date: 12/7/2017
+ms.keywords: _CM_RESOURCE_LIST, CM_RESOURCE_LIST, *PCM_RESOURCE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>CM_RESOURCE_LIST</b> structure specifies all of the system hardware resources assigned to a device.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _CM_RESOURCE_LIST {
 
 The number of full resource descriptors that are specified by this <b>CM_RESOURCE_LIST</b> structure. The <b>List</b> member is the header for the first full resource descriptor. For WDM drivers, <b>Count</b> is always 1.
 
+
 ### -field List
 
 The <a href="kernel.cm_full_resource_descriptor">CM_FULL_RESOURCE_DESCRIPTOR</a> structure that serves as the header for the first full resource descriptor. If the <b>CM_RESOURCE_LIST</b> structure contains more than one full resource descriptor, the second full resource descriptor immediately follows the first in memory, and so on. The size of each full resource descriptor depends on the length of the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> array that it contains. For more information, see the following Remarks section.
+
 
 ## -remarks
 This structure describes the assignment of hardware resources to a device. An <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> IRP uses this structure to specify the resources that the Plug and Play manager assigns to a device. Drivers for legacy devices use this structure to pass their resource requirements to the <a href="kernel.ioreportresourcefordetection">IoReportResourceForDetection</a> routine. For more information about hardware resource allocation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547012">Hardware Resources</a>.
@@ -77,11 +80,13 @@ All PnP drivers must handle <a href="https://msdn.microsoft.com/library/windows/
 
 The GetAssignedResources function returns <b>TRUE</b> if it succeeds. Otherwise, it returns <b>FALSE</b> (probably from the <b>switch</b> statement, although the details are omitted to simplify the code example).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +133,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_RESOURCE_LIST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_RESOURCE_LIST structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

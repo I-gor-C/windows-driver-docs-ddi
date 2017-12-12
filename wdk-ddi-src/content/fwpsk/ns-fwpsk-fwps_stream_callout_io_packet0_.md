@@ -7,7 +7,7 @@ old-location: netvista\fwps_stream_callout_io_packet0.htm
 old-project: netvista
 ms.assetid: 2c0539f0-116e-4344-9584-db7416d258e0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_STREAM_CALLOUT_IO_PACKET0_, FWPS_STREAM_CALLOUT_IO_PACKET0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The <b>FWPS_STREAM_CALLOUT_IO_PACKET0</b> structure describes the data passed by
   data stream.
 
 
+
 ## -syntax
 
 ````
@@ -66,6 +67,7 @@ A pointer to an
      describes the portion of the data stream available to the callout driver's 
      <a href="netvista.classifyfn">classifyFn</a> callout function for processing.
 
+
 ### -field missedBytes
 
 The number of bytes in the data stream that are missing since the last time the callout driver's 
@@ -73,6 +75,7 @@ The number of bytes in the data stream that are missing since the last time the 
      member is nonzero if a higher weight filter in the filter engine prevented the callout driver's 
      classifyFn callout function from processing a
      portion of the data stream.
+
 
 ### -field countBytesRequired
 
@@ -83,10 +86,12 @@ A value set by a callout's
      receives at least this many additional bytes of stream data before calling the callout driver's 
      classifyFn callout function again.
      
+
 If a callout's 
      <a href="netvista.classifyfn">classifyFn</a> callout function sets the 
      <b>streamAction</b> member to a value other than <b>FWPS_STREAM_ACTION_NEED_MORE_DATA</b>, then it should set
      this member to zero.
+
 
 ### -field countBytesEnforced
 
@@ -99,6 +104,7 @@ A value set by a callout's
      the callout driver's 
      classifyFn callout function.
 
+
 ### -field streamAction
 
 An <b>FWPS_STREAM_ACTION_TYPE</b> value set by a callout's 
@@ -110,17 +116,22 @@ An <b>FWPS_STREAM_ACTION_TYPE</b> value set by a callout's
      
 
 
+
+
 ### -field FWPS_STREAM_ACTION_NONE
 
 No stream-specific action is required.
+
 
 ### -field FWPS_STREAM_ACTION_ALLOW_CONNECTION
 
 Indicates that all future data segments belonging to a flow are permitted. In this case, WFP stops classifying any data segments to the callout and attempts to offload the flow to the hardware such that no more inspection overhead is incurred.
 
+
 ### -field FWPS_STREAM_ACTION_NEED_MORE_DATA
 
 More stream data is required by the callout function.
+
 
 ### -field FWPS_STREAM_ACTION_DROP_CONNECTION
 
@@ -137,41 +148,50 @@ The stream connection should be dropped. A callout's
        <b>action.type</b> member of the <b>FWPS_FILTER0</b> structure contains the value
        <b>FWP_ACTION_CALLOUT_INSPECTION</b>, the connection will not be dropped.
 
+
 ### -field FWPS_STREAM_ACTION_DEFER
 
 Processing of the stream data will be deferred until the callout driver calls the 
        <a href="netvista.fwpsstreamcontinue0">FwpsStreamContinue0</a> function. This
        action can only be set for an inbound data stream.
        
+
 Deferring an inbound data stream will cause the network stack to stop acknowledging data received
        from the sender. This will lead to a reduction in the size of the sliding TCP window. A callout driver
        can use this behavior to implement flow control to slow down the incoming data rate.
+
 </dd>
 </dl>
 The <b>FWPS_STREAM_ACTION_TYPE_MAX</b> value is a maximum value for testing purposes.
+
 If a callout's 
      <a href="netvista.classifyfn">classifyFn</a> callout function sets this member
      to a value other than <b>FWPS_STREAM_ACTION_NONE</b>, then the action returned by the callout function is
      ignored by the filter engine.
+
 
 ## -remarks
 The filter engine passes a pointer to an <b>FWPS_STREAM_CALLOUT_IO_PACKET0</b> structure to a callout's 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function as the 
     <i>layerData</i> parameter when filtering a data stream.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -197,5 +217,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

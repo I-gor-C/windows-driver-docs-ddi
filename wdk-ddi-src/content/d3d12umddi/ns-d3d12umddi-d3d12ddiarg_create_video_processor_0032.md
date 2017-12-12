@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-video-processor-0032.htm
 old-project: display
 ms.assetid: 6b945476-c1cf-4bf8-8273-bb3d05b90277
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0032, D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Creates a video processor.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0032 {
 
 Represents the set of nodes.
 
+
 ### -field OutputStream
 
 The output stream.
+
 
 ### -field pInputStreams
 
 The input stream.
 
+
 ### -field NumInputStreams
 
 The number of input streams.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ The number of input streams.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

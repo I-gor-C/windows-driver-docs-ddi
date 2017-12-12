@@ -41,6 +41,7 @@ req.irql:
 This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="kernel.exfreepool">ExFreePool</a>.
 
 
+
 ## -prototype
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS KStrQueryReferenceString(
 
 Pointer to a device extension of the device's PDO.
 
+
 ### -param String [in, out]
 
 Pointer to a string containing the reference string associated with the PDO.
 
+
 ## -returns
 None.
 
+
 ## -remarks
 The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="stream.bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -85,6 +91,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createvideoprocessor.htm
 old-project: display
 ms.assetid: 4F1AA75F-DDC7-490B-8CE2-590691991234
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <i>pfnCreateVideoProcessor</i> callback function creates a video processor.
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ HRESULT  APIENTRY* pfnCreateVideoProcessor(
 
 The handle of a device driver.
 
+
 ### -param hDrvVideoProcessor 
 
 The handle of a video processor.
 
+
 ## -returns
 If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

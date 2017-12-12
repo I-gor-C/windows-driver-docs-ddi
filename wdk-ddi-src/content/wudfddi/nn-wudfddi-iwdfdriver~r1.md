@@ -7,8 +7,8 @@ old-location: wdf\iwdfdriver.htm
 old-project: wdf
 ms.assetid: ada475ae-e697-475c-b461-8e3a36ae9ab1
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IWDFDriver</b> interface exposes the framework driver object that represents the driver image that is loaded in the host process.
+
 
 
 ## -inheritance
@@ -62,6 +64,7 @@ The <a href="wdf.iwdfdriver_retrieveversionstring">RetrieveVersionString</a> met
 
  
 
+
 ## -members
 The <b>IWDFDriver</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -75,6 +78,7 @@ The <b>IWDFDriver</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdriver_createdevice">CreateDevice</a> method configures and creates a new framework device object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -83,6 +87,7 @@ The <a href="wdf.iwdfdriver_createdevice">CreateDevice</a> method configures and
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdriver_createpreallocatedwdfmemory">CreatePreallocatedWdfMemory</a> method creates a <a href="wdf.framework_memory_object">framework memory object</a> for the specified buffer.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -91,6 +96,7 @@ The <a href="wdf.iwdfdriver_createpreallocatedwdfmemory">CreatePreallocatedWdfMe
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdriver_createwdfmemory">CreateWdfMemory</a> method creates a <a href="wdf.framework_memory_object">framework memory object</a> and allocates, for the memory object, a data buffer of the specified nonzero size.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -99,6 +105,7 @@ The <a href="wdf.iwdfdriver_createwdfmemory">CreateWdfMemory</a> method creates 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdriver_createwdfobject">CreateWdfObject</a> method creates a custom (or user) WDF object from a parent WDF object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -107,6 +114,7 @@ The <a href="wdf.iwdfdriver_createwdfobject">CreateWdfObject</a> method creates 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdriver_isversionavailable">IsVersionAvailable</a> method determines whether the specified version of the framework is available.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -115,6 +123,7 @@ The <a href="wdf.iwdfdriver_isversionavailable">IsVersionAvailable</a> method de
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdriver_retrieveversionstring">RetrieveVersionString</a> method retrieves the version of the framework.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfdriver_createdevice">CreateDevice</a> method configures and creates a new framework device object.
@@ -131,6 +140,7 @@ The <a href="wdf.iwdfdriver_retrieveversionstring">RetrieveVersionString</a> met
 
  
 
+
 ## -remarks
 
 
@@ -139,6 +149,7 @@ The <a href="wdf.iwdfdriver_retrieveversionstring">RetrieveVersionString</a> met
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,22 +160,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -175,6 +191,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

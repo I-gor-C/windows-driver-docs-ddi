@@ -41,8 +41,10 @@ req.irql: PASSIVE_LEVEL
 The <code>IPortClsPower</code> interface is supported in Windows Vista and later versions of Windows. <code>IPortClsPower</code> is the power management interface that the port class driver (PortCls) exposes to the adapter.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsPower</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -52,6 +54,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsPower</b> interface i
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

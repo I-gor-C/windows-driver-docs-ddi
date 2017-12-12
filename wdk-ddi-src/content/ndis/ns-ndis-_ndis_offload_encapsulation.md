@@ -7,8 +7,8 @@ old-location: netvista\ndis_offload_encapsulation.htm
 old-project: netvista
 ms.assetid: 19013ffa-6bb5-4a77-b85b-c32fb0bf0530
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_OFFLOAD_ENCAPSULATION, NDIS_OFFLOAD_ENCAPSULATION, *PNDIS_OFFLOAD_ENCAPSULATION
+ms.date: 12/8/2017
+ms.keywords: _NDIS_OFFLOAD_ENCAPSULATION, *PNDIS_OFFLOAD_ENCAPSULATION, NDIS_OFFLOAD_ENCAPSULATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_OFFLOAD_ENCAPSULATION structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The NDIS_OFFLOAD_ENCAPSULATION structure specifies encapsulation settings when it is used with the 
   <a href="https://msdn.microsoft.com/library/windows/hardware/ff569762">OID_OFFLOAD_ENCAPSULATION</a> OID.
+
 
 
 ## -syntax
@@ -73,11 +74,13 @@ The
      <b>Revision</b> member to NDIS_OFFLOAD_ENCAPSULATION_ REVISION _1, and the 
      <b>Size</b> member to NDIS_SIZEOF_OFFLOAD_ENCAPSULATION_REVISION_1.
 
+
 ### -field IPv4
 
 A structure within NDIS_OFFLOAD_ENCAPSULATION that specifies IPv4 encapsulation and that contains
      the following members:
      
+
 
 ### -field Enabled
 
@@ -86,6 +89,7 @@ A ULONG value that enables IPv4 encapsulation. A protocol driver sets
        large send offload version 2 (LSOV2), or checksum offloads. Otherwise, the protocol driver sets 
        <b>Enabled</b> to NDIS_OFFLOAD_SET_NO_CHANGE.
 
+
 ### -field EncapsulationType
 
 The IPv4 encapsulation type. If the 
@@ -93,6 +97,7 @@ The IPv4 encapsulation type. If the
        <b>Enabled</b> member is set to NDIS_OFFLOAD_SET_ON, a protocol driver must set 
        <b>EncapsulationType</b> to one of the following:
        
+
 <table>
 <tr>
 <th>Value</th>
@@ -105,6 +110,7 @@ The IPv4 encapsulation type. If the
 </td>
 <td width="60%">
 Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport driver should also use NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q or NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB encapsulation where applicable. See documentation for <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> for more information.
+
 
 </td>
 </tr>
@@ -116,10 +122,12 @@ Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport dri
 <td width="60%">
 Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
          1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field HeaderSize
 
@@ -127,6 +135,7 @@ The Ethernet header length that is used in IPv4 packets. If the
        <b>Enabled</b> member is not set to NDIS_OFFLOAD_SET_ON, this member is zero. If the 
        <b>Enabled</b> member is set to NDIS_OFFLOAD_SET_ON, a protocol driver must set 
        <b>HeaderSize</b> to the size of the Ethernet header that it uses.
+
 </dd>
 </dl>
 
@@ -136,12 +145,14 @@ A structure within NDIS_OFFLOAD_ENCAPSULATION that specifies IPv6 encapsulation 
      the following members:
      
 
+
 ### -field Enabled
 
 A ULONG value that enables IPv6 encapsulation. A protocol driver sets 
        <b>Enabled</b> to NDIS_OFFLOAD_SET_ON if it is enabling IPv6 LSOV1, LSOV2, or checksum offloads.
        Otherwise, the protocol driver sets 
        <b>Enabled</b> to NDIS_OFFLOAD_SET_NO_CHANGE.
+
 
 ### -field EncapsulationType
 
@@ -151,6 +162,7 @@ The IPv6 encapsulation type. If the
        <b>Enabled</b> member is set to NDIS_OFFLOAD_SET_ON, a protocol driver must set 
        <b>EncapsulationType</b> to one of the following:
        
+
 <table>
 <tr>
 <th>Value</th>
@@ -164,6 +176,7 @@ The IPv6 encapsulation type. If the
 <td width="60%">
 Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport driver should also use NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q or NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB encapsulation where applicable. See documentation for <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> for more information.
 
+
 </td>
 </tr>
 <tr>
@@ -174,10 +187,12 @@ Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport dri
 <td width="60%">
 Specifies LLC encapsulation for routed protocols, as described in RFC 1483. This flag is also
          used to indicate Ethernet LLC/SNAP encapsulation.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field HeaderSize
 
@@ -185,6 +200,7 @@ The Ethernet header length that is used in IPv6 packets. If the
        <b>Enabled</b> member is not set to NDIS_OFFLOAD_SET_ON, this member is zero. If the 
        <b>Enabled</b> member is set to NDIS_OFFLOAD_SET_ON, a protocol driver must set 
        <b>HeaderSize</b> to the size of the Ethernet header that it uses.
+
 </dd>
 </dl>
 
@@ -198,19 +214,23 @@ In a set of
     <b>InformationBuffer</b> member of the 
     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -233,5 +253,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_ENCAPSULATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_ENCAPSULATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

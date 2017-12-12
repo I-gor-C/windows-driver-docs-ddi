@@ -7,7 +7,7 @@ old-location: display\d3dkmtsubmitcommand.htm
 old-project: display
 ms.assetid: E726B4AC-F003-45B3-B467-F123DBE60D87
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTSubmitCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,10 +39,14 @@ req.irql:
 
 ## -description
 <b>D3DKMTSubmitCommand</b> is used to submit command buffers on contexts that support graphics processing unit (GPU) virtual addressing. These contexts generate commands directly from user mode, manage their own command buffer pool and don’t make use of the allocation or patch location list.
-This function replaces the old <a href="display.dxgkddirenderkm">Render</a> function for such contexts and must be used in its place. Contexts that operate in legacy patch mode must continue to use the old <i>Render</i> function.
+
+This function replaces the old <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">Render</a> function for such contexts and must be used in its place. Contexts that operate in legacy patch mode must continue to use the old <i>Render</i> function.
+
 Although the user mode driver doesn’t generate patch locations, it must still generate a list of primaries, which are being written to. The video memory manager uses the allocation list to determine which primary allocations are being referenced for write by each command buffer. This information is used to synchronize rendering to the primaries with <i>flip</i> operations.
+
 Some kernel mode drivers need information from their user mode driver on how to submit a particular direct memory access (DMA) buffer to their GPU. In Windows Display Driver Model (WDDM) 1.0, this information was sent by the user mode driver to the kernel mode driver through the command buffer. Since DMA buffer are built directly by the user mode driver and submitted to the GPU without modification they can’t be used to send information to the kernel driver anymore. To enable the transfer of information between the user mode and kernel mode drivers, an explicit private driver data buffer has been added to be sent along with a submission. <div class="alert"><b>Note</b>  This private driver data is unidirectional and the kernel mode driver can’t return information to the user mode driver through this buffer.</div>
 <div> </div>
+
 
 
 
@@ -61,6 +65,7 @@ NTSTATUS APIENTRY D3DKMTSubmitCommand(
 
 A pointer to a <a href="display.d3dkmt_submitcommand">D3DKMT_SUBMITCOMMAND</a> structure that describes the operation.
 
+
 ## -returns
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -73,6 +78,7 @@ A pointer to a <a href="display.d3dkmt_submitcommand">D3DKMT_SUBMITCOMMAND</a> s
 
 This function might also return other <b>NTSTATUS</b> values.
 
+
 ## -remarks
 
 
@@ -81,22 +87,27 @@ This function might also return other <b>NTSTATUS</b> values.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +118,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +129,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +140,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +157,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSubmitCommand function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSubmitCommand function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

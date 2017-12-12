@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlInitializeLargeMcb</b> routine initializes a map control block (MCB) structure.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ VOID FsRtlInitializeLargeMcb(
 
 Pointer to a caller-allocated MCB structure to initialize.
 
+
 ### -param PoolType [in]
 
 Type of pool to use when allocating additional internal storage for the MCB. One of the following:
+
 
 <ul>
 <li><b>NonPagedPool</b></li>
@@ -68,11 +71,13 @@ Type of pool to use when allocating additional internal storage for the MCB. One
 <li><b>PagedPoolCacheAligned</b></li>
 </ul>
 
+
 <div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div>
 <div> </div>
 
 ## -returns
 None
+
 
 ## -remarks
 <b>FsRtlInitializeLargeMcb</b> initializes a map control block (MCB) structure. File systems use MCB structures to map virtual block numbers (VBN) for a file to the corresponding logical block numbers (LBN) on disk.
@@ -81,11 +86,13 @@ File systems must call <b>FsRtlInitializeLargeMcb</b> before using any other <b>
 
 If a pool allocation failure occurs, <b>FsRtlInitializeLargeMcb</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. To gain control if this pool allocation failure occurs, the driver should wrap the call to <b>FsRtlInitializeLargeMcb</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +103,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +114,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +125,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +136,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -167,5 +179,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInitializeLargeMcb routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

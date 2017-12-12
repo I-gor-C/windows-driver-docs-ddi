@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: EB5AFAF3-D75C-4B91-823C-E1C6784CB13B
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR
+ms.keywords: _USBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 TBD
+
 
 
 ## -syntax
@@ -60,13 +62,16 @@ typedef struct _USBSIDEBANDAUDIO_DEVICE_ERROR {
 
 TBD
 
+
 ### -field Reserved 1
 
 TBD
 
+
 ### -field Reserved 2
 
 TBD
+
 
 ## -remarks
 
@@ -76,6 +81,7 @@ TBD
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

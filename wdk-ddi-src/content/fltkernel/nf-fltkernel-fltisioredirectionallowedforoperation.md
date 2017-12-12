@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 The <b>FltIsIoRedirectionAllowedForOperation</b> routine determines whether I/O can be redirected from the filter instance associated with the specified <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure to the specified filter instance.
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ NTSTATUS FltIsIoRedirectionAllowedForOperation(
 
 An <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure representing the I/O operation.
 
+
 ### -param TargetInstance [in]
 
 A filter instance on the target device stack.
+
 
 ### -param RedirectionAllowedThisIo [out]
 
 A value of <b>TRUE</b> if this I/O can be redirected to the target device stack by changing the filter instance referenced.
 
+
 ### -param RedirectionAllowedAllIo [out, optional]
 
 This optional parameter has a value of <b>TRUE</b> if all I/O to the device stack to which the I/O operation is issued can be redirected to the target device by changing the filter instance referenced,  otherwise <b>FALSE</b>.
 
+
 ## -returns
 An NTSTATUS value of STATUS_SUCCESS for success or STATUS_NOT_SUPPORTED if the redirection is not supported.
+
 
 ## -remarks
 An I/O operation is associated with a <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure. That structure contains a reference to a <b>PFLT_IO_PARAMETER_BLOCK</b> object, which contains a reference to the FLT_INSTANCE of the minifilter associated with the I/O operation.
@@ -81,11 +87,13 @@ If <i>RedirectionAllowed</i> is <b>TRUE</b>, the minifilter can redirect I/O by 
 
 If <i>RedirectionAllowed</i> is <b>FALSE</b>, the minifilter needs to allocate a new callback data object to issue I/O on the target stack or call <a href="ifsk.fltadjustdevicestacksizeforioredirection">FltAdjustDeviceStackSizeForIoRedirection</a> to increase the size of the source device stack.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +136,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -134,9 +147,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -157,5 +172,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltIsIoRedirectionAllowedForOperation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

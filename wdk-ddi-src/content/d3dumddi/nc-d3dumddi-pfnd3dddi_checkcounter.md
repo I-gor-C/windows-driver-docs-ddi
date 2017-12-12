@@ -7,7 +7,7 @@ old-location: display\pfncheckcounter.htm
 old-project: display
 ms.assetid: 3A8B040D-7B48-4CDB-985B-906AE1762E22
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Called by the Microsoft Direct3D runtime to retrieve info that describes a counter. Must be implemented by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
 
 
+
 ## -prototype
 
 ````
@@ -68,13 +69,16 @@ _Check_return_ HRESULT APIENTRY* pfnCheckCounter(
 
  A handle to the display device (graphics context).
 
+
 ### -param Counter [in]
 
  A value of type <a href="display.d3dddiarg_createquery">D3DDDIQUERYTYPE</a> that identifies the counter identifier that info is retrieved for.
 
+
 ### -param pType [out]
 
 A pointer to a variable that receives one of the following values from the <b>D3DDDI_COUNTER_TYPE</b> enumeration that identifies the data type that the counter outputs.
+
 <table>
 <tr>
 <th>Value</th>
@@ -83,51 +87,65 @@ A pointer to a variable that receives one of the following values from the <b>D3
 <tr>
 <td>
 D3DDDI_COUNTER_TYPE_FLOAT32
+
 </td>
 <td>
 Single-precision float
+
 </td>
 </tr>
 <tr>
 <td>
 D3DDDI_COUNTER_TYPE_UINT16
+
 </td>
 <td>
 16-bit value
+
 </td>
 </tr>
 <tr>
 <td>
 D3DDDI_COUNTER_TYPE_UINT32
+
 </td>
 <td>
 32-bit value
+
 </td>
 </tr>
 <tr>
 <td>
 D3DDDI_COUNTER_TYPE_UINT64
+
 </td>
 <td>
 64-bit value
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param pActiveCounters [out]
 
 A pointer to a variable that receives the number of simultaneously active counters that are allocated for the creation of the counter identifier that the <i>Counter</i> parameter identifies.
 
+
 ### -param pszName [out, optional]
 
 An optional pointer that the driver returns a <b>NULL</b>-terminated string to that contains the name of the counter identifier.
+
 Can be <b>NULL</b>, in which case the app doesn't need the name.
+
 
 ### -param pNameLength [in, out, optional]
 
 An optional pointer to a variable that receives the size, in bytes, of the <b>NULL</b>-terminated string that the <i>pszName</i> parameter specifies.
+
 Here are limitations on the values of the <i>pNameLength</i> and  <i>pszName</i> parameters:
+
 <ul>
 <li><i>pNameLength</i> can be <b>NULL</b>, in which case the app doesn't need the name or name length.</li>
 <li> If <i>pszName</i> is <b>NULL</b> and <i>pNameLength</i> is not <b>NULL</b>, the input value of <i>pNameLength</i> is ignored, and the length of the string (including terminating <b>NULL</b> character) must be returned through the <i>pNameLength</i> parameter. </li>
@@ -137,12 +155,16 @@ Here are limitations on the values of the <i>pNameLength</i> and  <i>pszName</i>
 ### -param pszUnits [out, optional]
 
 An optional pointer that the driver returns a <b>NULL</b>-terminated string to that contains the name of the units that the counter identifier measures.
+
 Can be <b>NULL</b>, in which case the app doesn't need the units info. See more info in the explanation of the <i>pUnitsLength</i> parameter.
+
 
 ### -param pUnitsLength [in, out, optional]
 
  An optional pointer to a variable that receives the size, in bytes, of the <b>NULL</b>-terminated string that the <i>pszUnits</i> parameter specifies.
+
 Here are limitations on the values of the <i>pUnitsLength</i> and  <i>pszUnits</i> parameters:
+
 <ul>
 <li><i>pUnitsLength</i> can be <b>NULL</b>, in which case the app doesn't need the unit name or unit name length.</li>
 <li> If <i>pszUnits</i> is <b>NULL</b> and <i>pUnitsLength</i> is not <b>NULL</b>, the input value of <i>pUnitsLength</i> is ignored, and the length of the string (including terminating <b>NULL</b> character) must be returned through the <i>pUnitsLength</i> parameter. </li>
@@ -152,12 +174,16 @@ Here are limitations on the values of the <i>pUnitsLength</i> and  <i>pszUnits</
 ### -param pszDescription [out, optional]
 
 An optional pointer that the driver returns a <b>NULL</b>-terminated string to that contains the description of what the counter identifier measures.
+
 Can be <b>NULL</b>, in which case the app doesn't need the description info. See more info in the explanation of the <i>pDescriptionLength</i> parameter.
+
 
 ### -param pDescriptionLength [in, out, optional]
 
  An optional pointer to a variable that receives the size, in bytes, of the <b>NULL</b>-terminated string that the <i>pszDescription</i> parameter specifies.
+
 Here are limitations on the values of the <i>pDescriptionLength</i> and  <i>pszDescription</i> parameters:
+
 <ul>
 <li><i>pDescriptionLength</i> can be <b>NULL</b>, in which case the app doesn't need the unit name or unit name length.</li>
 <li> If <i>pszDescription</i> is <b>NULL</b> and <i>pDescriptionLength</i> is not <b>NULL</b>, the input value of <i>pDescriptionLength</i> is ignored, and the length of the string (including terminating <b>NULL</b> character) must be returned through the <i>pDescriptionLength</i> parameter. </li>
@@ -174,6 +200,7 @@ Even though all strings used in this function are based on Unicode, they are alw
 
  
 
+
 ## -remarks
 This function should behave similarly to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounter.md">CheckCounter</a> function that supports Microsoft Direct3D 10 and later.
 
@@ -184,27 +211,33 @@ Typically an app can simultaneously monitor only a small number of possible nati
 
 If a counter ID can always be monitored (and it doesn't interfere with monitoring any other counter IDs), the number of simultaneous active counters required by the counter ID can be zero.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -215,6 +248,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -234,5 +268,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_CHECKCOUNTER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_CHECKCOUNTER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

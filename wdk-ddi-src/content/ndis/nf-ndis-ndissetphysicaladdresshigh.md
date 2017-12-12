@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisSetPhysicalAddressHigh
-title: NdisSetPhysicalAddressHigh
+title: NdisSetPhysicalAddressHigh macro
 author: windows-driver-content
 description: NdisSetPhysicalAddressHigh sets the high-order part of a given physical address to a given value.
 old-location: netvista\ndissetphysicaladdresshigh.htm
 old-project: netvista
 ms.assetid: bbe58583-ea65-4920-9056-ab46bd881618
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisSetPhysicalAddressHigh
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -31,46 +31,39 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
-req.iface: 
 ---
 
-# NdisSetPhysicalAddressHigh function
+# NdisSetPhysicalAddressHigh macro
 
 
 
 ## -description
-<p><b>NdisSetPhysicalAddressHigh</b> sets the high-order part of a given physical address to a given
-  value.</p>
+<b>NdisSetPhysicalAddressHigh</b> sets the high-order part of a given physical address to a given
+  value.
+
 
 
 ## -syntax
 
 ````
 VOID NdisSetPhysicalAddressHigh(
-  _In_ NDIS_PHYSICAL_ADDRESS PhysicalAddress,
-  _In_ ULONG                 Value
+  [in] NDIS_PHYSICAL_ADDRESS PhysicalAddress,
+  [in] ULONG                 Value
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param PhysicalAddress [in]
 
-<dd>
-<p>Specifies a physical address of an OS-dependent size.</p>
-</dd>
+Specifies a physical address of an OS-dependent size.
+
 
 ### -param Value [in]
 
-<dd>
-<p>Specifies the value to be written into the high-order part of the address.</p>
-</dd>
-</dl>
+Specifies the value to be written into the high-order part of the address.
 
-## -returns
-<p>None</p>
 
 ## -remarks
 
@@ -79,7 +72,8 @@ VOID NdisSetPhysicalAddressHigh(
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,19 +83,22 @@ VOID NdisSetPhysicalAddressHigh(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/48f640d1-736a-44b0-8e79-e1ed4ec7bbb2">NdisSetPhysicalAddressHigh
    (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisSetPhysicalAddressHigh
-   (NDIS 5.1)</b>) in Windows XP.</p>
+   (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,10 +108,12 @@ VOID NdisSetPhysicalAddressHigh(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>Any level</p>
+Any level
+
 </td>
 </tr>
 </table>
@@ -122,15 +121,18 @@ VOID NdisSetPhysicalAddressHigh(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisgetphysicaladdresshigh.md">NdisGetPhysicalAddressHigh</a>
+<a href="netvista.ndisgetphysicaladdresshigh">NdisGetPhysicalAddressHigh</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557129">NDIS_PHYSICAL_ADDRESS</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndissetphysicaladdresslow.md">NdisSetPhysicalAddressLow</a>
+<a href="netvista.ndissetphysicaladdresslow">NdisSetPhysicalAddressLow</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetPhysicalAddressHigh function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetPhysicalAddressHigh macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

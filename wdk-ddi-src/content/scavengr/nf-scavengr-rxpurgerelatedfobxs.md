@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxPurgeRelatedFobxs</b> purges all of the FOBX structures associated with a NET_ROOT structure.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ NTSTATUS RxPurgeRelatedFobxs(
 
 A pointer to the NET_ROOT structure for which the FOBX structures need to be purged.
 
+
 ### -param RxContext 
 
 A pointer to the RX_CONTEXT structure.
+
 
 ### -param AttemptFinalize 
 
 A Boolean value that indicates whether an attempt to finalize and release the associated FCB structure should occur.
 
+
 ### -param PurgingFcb 
 
 A pointer to the FCB structure for which purging should occur.
+
 
 ## -returns
 <b>RxPurgeRelatedFobxs</b> returns STATUS_SUCCESS on success or one of the following error values on failure: 
@@ -79,6 +84,7 @@ A pointer to the FCB structure for which purging should occur.
 </dl>No related FOBX structures could be purged.
 
  
+
 
 ## -remarks
 At cleanup there are no more user handles associated with the file object. In such cases, the time window between close and cleanup is dictated by the additional references maintained by the memory manager and cache manager. On cleanup, the FOBX is put on a close pending list and removed from the corresponding list when a close operation is received. In the interim, if an open operation is failing with ACCESS_DENIED status, then RDBSS can force a purge of the FOBX structure. This is a synchronous operation.
@@ -91,11 +97,13 @@ If <i>AttemptFinalize</i> is set to <b>TRUE</b>, then <b>RxPurgeRelatedFobxs</b>
 
 If <i>PFCB</i> is not <b>NULL</b>, and this purging FCB strcuture is not the same as the FCB structure associated with the FOBX on the <b>ClosePendingFobxsList</b> member, then <b>RxPurgeRelatedFobxs</b> will call the <a href="ifsk.mrxarefilesaliased">MRxAreFilesAliased</a> callback routine provided by the network mini-redirector if this routine is supported. The call to <b>MRxAreFilesAliased</b> is to determine if the PFCB is an alias for the FCB associated with the FOBX structure. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +114,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +125,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -139,5 +150,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPurgeRelatedFobxs function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

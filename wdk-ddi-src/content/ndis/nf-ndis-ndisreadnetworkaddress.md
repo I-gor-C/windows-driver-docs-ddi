@@ -7,7 +7,7 @@ old-location: netvista\ndisreadnetworkaddress.htm
 old-project: netvista
 ms.assetid: 42519c60-6dc6-4c20-a2e8-954d9610a982
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisReadNetworkAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   the registry for a NIC when it was installed in the machine.
 
 
+
 ## -syntax
 
 ````
@@ -64,15 +65,19 @@ A pointer to a caller-supplied variable in which this function returns the statu
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The caller can use the address returned at 
        <i>NetworkAddress</i> for the NIC.
 
+
 ### -param NDIS_STATUS_FAILURE
 
 There was no NIC address information available in the caller's registry 
        <b>Parameters</b> key or the value stored was not a string.
+
 </dd>
 </dl>
 
@@ -81,11 +86,13 @@ There was no NIC address information available in the caller's registry
 A pointer to a caller-supplied variable in which this function returns a pointer to a buffer that contains the
      network address (typically the MAC address), stored as a sequence of byte integers, if the call is successful.
 
+
 ### -param NetworkAddressLength [out]
 
 A pointer to a caller-supplied variable in which this function returns the number of bytes that
      are returned at 
      <i>NetworkAddress</i>.
+
 
 ### -param ConfigurationHandle [in]
 
@@ -93,8 +100,10 @@ The configuration handle returned by the
      <a href="netvista.ndisopenconfigurationex">
      NdisOpenConfigurationEx</a> function.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>NdisReadNetworkAddress</b> searches the registry 
@@ -106,11 +115,13 @@ None
     <a href="netvista.ndiscloseconfiguration">NdisCloseConfiguration</a> function,
     which frees the memory.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,16 +132,19 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/1d46d7bc-f86b-4119-a549-805d6033f5a7">NdisReadNetworkAddress (NDIS
    5.1)</a>) in Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -151,14 +166,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -176,5 +194,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadNetworkAddress function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadNetworkAddress function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

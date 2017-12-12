@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The BTHX_CAPABILITIES structure describes the capabilities of the Bluetooth Extensible Transport Driver.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _BTHX_CAPABILITIES {
 
 The maximum size, in bytes, of the ACL packets the transport layer can accept.
 
+
 ### -field ScoSupport
 
 The type of SCO supported. This must be set to <b>ScoSupportHCIBypass</b>.
+
 
 ### -field MaxScoChannels
 
 The maximum supported number of SCO channels. This must be set to 1.
 
+
 ### -field IsDeviceIdleCapable
 
 Whether the device supports idle/sleep power state. TRUE if the device can support idle (in low duty cycle state), else FALSE.
 
+
 ### -field IsDeviceWakeCapable
 
 Whether the device supports remote wake. TRUE if the device supports waking the system from sleep, else FALSE.
+
 
 ## -remarks
 
@@ -84,14 +90,17 @@ Whether the device supports remote wake. TRUE if the device supports waking the 
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

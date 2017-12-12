@@ -7,7 +7,7 @@ old-location: netvista\ndisifregisterprovider.htm
 old-project: netvista
 ms.assetid: 1624426b-9e67-4aa2-83d8-f1e6fa484858
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisIfRegisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NdisIfRegisterProvider</b> function registers an NDIS network interface provider.
 
 
+
 ## -syntax
 
 ````
@@ -62,16 +63,19 @@ A pointer to a caller-provided
      NDIS_IF_PROVIDER_CHARACTERISTICS</a> structure. This structure defines the characteristics of the
      provider, including the entry points for its provider callback functions.
 
+
 ### -param IfProviderContext [in]
 
 A handle to a caller-provided context area for this network interface provider. Set this parameter
      to <b>NULL</b> if there is no context area.
+
 
 ### -param pNdisProviderHandle [out]
 
 A pointer to a caller-provided handle variable. If the registration operation succeeds, NDIS
      writes a handle to this variable that identifies the network interface provider. The interface provider
      should retain this handle for use in subsequent calls that require an interface provider handle.
+
 
 ## -returns
 <b>NdisIfRegisterProvider</b> returns one of the following status values:
@@ -94,6 +98,7 @@ A pointer to a caller-provided handle variable. If the registration operation su
        supported.
 
  
+
 
 ## -remarks
 NDIS drivers call the 
@@ -127,11 +132,13 @@ A component that is no longer an interface provider can call the
     allocated when the driver called 
     <b>NdisIfRegisterProvider</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,14 +149,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,6 +170,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -170,14 +181,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
@@ -202,5 +216,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterProvider function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterProvider function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

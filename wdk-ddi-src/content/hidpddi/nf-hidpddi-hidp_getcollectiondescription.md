@@ -44,6 +44,7 @@ Fills a device description
     A HID minidriver generally does not need to call this function. Instead, it returns the report descriptor to Hidclass driver in response to <a href="..\hidport\ni-hidport-ioctl_hid_get_report_descriptor.md">IOCTL_HID_GET_REPORT_DESCRIPTOR</a>.
 
 
+
 ## -syntax
 
 ````
@@ -62,18 +63,22 @@ BOOLEAN __stdcall HidP_GetCollectionDescription(
 
 A pointer to a UCHAR array that contains the raw report descriptor.
 
+
 ### -param DescLength [in]
 
 The length of the report descriptor array.
+
 
 ### -param PoolType [in]
 
 A <a href="kernel.pool_type">POOL_TYPE</a>-value that indicates the pool type from which memory for the linked list is allocated. This includes each <a href="hid.hidp_collection_desc">HIDP_COLLECTION_DESC</a> array element of <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a>, each <a href="hid._hidp_preparsed_data">HIDP_PREPARSED_DATA</a> in each <b>HIDP_COLLECTION_DESC</b>, each <a href="hid.hidp_report_ids">HIDP_REPORT_IDS</a> array element of <b>HIDP_DEVICE_DESC</b>.
 
+
 ### -param DeviceDescription [out]
 
 A pointer to a <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a> structure that is populated with device description block filled in
                          collection descriptors as linked lists. This is a caller-allocated structure. However, its <a href="hid.hidp_collection_desc">HIDP_COLLECTION_DESC</a> array elements and <a href="hid.hidp_report_ids">HIDP_REPORT_IDS</a> array elements are allocated by this function.
+
 
 ## -returns
 <b>HidP_GetCollectionDescription</b> can return one of these values: <b>TRUE</b> if it successfully fills the device description block. Otherwise, it returns <b>FALSE</b>.
@@ -110,6 +115,7 @@ A pointer to a <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a> structure tha
 
  
 
+
 ## -remarks
     For a raw report descriptor that is specified by the <i>ReportDesc</i> parameter, <i>HidP_GetCollectionDescription</i> fills in the <i>DeviceDescription</i>
     block with a caller-allocated linked list of collection descriptors and the corresponding 
@@ -118,11 +124,13 @@ A pointer to a <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a> structure tha
     allocated based on the <i>PoolType</i> value.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -133,14 +141,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,6 +162,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -161,9 +173,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

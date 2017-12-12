@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: E52B252F-0530-4543-A44C-95D4198504CA
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKS_DATARANGE_H264_VIDEO, *PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO
+ms.keywords: tagKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO, *PKS_DATARANGE_H264_VIDEO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KS_DATARANGE_H264_VIDEO structure describes the range of MPEG-2 video formats available for a stream.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _KS_DATARANGE_H264_VIDEO {
 
 Specifies the major identifier for the format.
 
+
 ### -field bFixedSizeSamples
 
 Specifies that all the samples are the same size if set to <b>TRUE</b>.
+
 
 ### -field bTemporalCompression
 
 Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
 
+
 ### -field StreamDescriptionFlags
 
 Unused and should be set to zero.
+
 
 ### -field MemoryAllocationFlags
 
 Unused and should be set to zero.
 
+
 ### -field ConfigCaps
 
 Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
 
+
 ### -field VideoInfoHeader
 
 Specifies the details of the video stream.
+
 
 ## -remarks
 
@@ -94,22 +102,27 @@ Specifies the details of the video stream.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,5 +145,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATARANGE_H264_VIDEO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>HidP_SetUsageValueArray</b> routine sets a HID control <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value array</a> in a specified HID report.
 
 
+
 ## -syntax
 
 ````
@@ -64,37 +65,46 @@ NTSTATUS __stdcall HidP_SetUsageValueArray(
 
 Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.
 
+
 ### -param UsagePage [in]
 
 Specifies the <a href="hid.hid_usages#usage_page#usage_page">usage page</a> of a usage.
+
 
 ### -param LinkCollection [in]
 
 Specifies the <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a> that contains the usage. If <i>LinkCollection</i> is nonzero, the routine only sets the usage, if one exists, in this link collection. If <i>LinkCollection</i> is zero, the routine sets the first usage it finds in the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with <i>PreparsedData</i>.
 
+
 ### -param Usage [in]
 
 Specifies the usage.
+
 
 ### -param UsageValue [in]
 
 Pointer to a caller-allocated buffer that contains the data associated with the usage value array.
 
+
 ### -param UsageValueByteLength [in]
 
 Specifies the length, in bytes, of the <i>UsageValue</i> buffer.
+
 
 ### -param PreparsedData [in]
 
 Pointer to a top-level's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.
 
+
 ### -param Report [in, out]
 
 Pointer to a HID report.
 
+
 ### -param ReportLength [in]
 
 Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="hid.hidp_getcaps">HidP_GetCaps</a> returns in a collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+
 
 ## -returns
 <b>HidP_SetUsageValueArray</b> returns one of the following status values:
@@ -131,6 +141,7 @@ Specifies the size, in bytes, of the HID report located at <i>Report</i>, which 
 
  
 
+
 ## -remarks
 The required size, in bytes, of the <i>UsageValue</i> buffer is determined by multiplying together the <b>BitSize</b> and <b>ReportCount</b> members of the usage value array's <a href="hid.hidp_value_caps">HIDP_VALUE_CAPS</a> structure, and rounding the result up to the nearest byte.
 
@@ -140,11 +151,13 @@ The caller must set the <i>UsageValue</i> buffer exactly as it should occur in t
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +168,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,6 +189,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -183,9 +200,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -203,5 +222,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_SetUsageValueArray routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

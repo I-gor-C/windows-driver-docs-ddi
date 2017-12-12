@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 <b>FltQueueGenericWorkItem</b> posts a work item that is not associated with a specific I/O operation to a work queue. 
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ NTSTATUS FltQueueGenericWorkItem(
 
 Pointer to the work item to be added to the work queue. The work item must have been allocated by calling <a href="ifsk.fltallocategenericworkitem">FltAllocateGenericWorkItem</a>. 
 
+
 ### -param FltObject [in]
 
 Opaque filter (PFLT_FILTER) or instance (PFLT_INSTANCE) pointer for the caller. 
 
+
 ### -param WorkerRoutine [in]
 
 Pointer to a caller-supplied worker routine. This routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -84,23 +88,28 @@ Pointer to a caller-supplied worker routine. This routine is declared as follows
 </table></span></div>
 
 
+
 ### -param FltWorkItem
 
 Opaque pointer to a generic work item structure. 
+
 
 ### -param FltObject
 
 Opaque filter pointer that was passed as the <i>FltObject</i> parameter of <b>FltQueueGenericWorkItem</b>. 
 
+
 ### -param Context
 
 Context information pointer that was passed as the <i>Context</i> parameter of <b>FltQueueGenericWorkItem</b>. This parameter is optional. 
+
 </dd>
 </dl>
 
 ### -param QueueType [in]
 
 Specifies the queue into which the work item that <i>FltWorkItem</i> points to is to be inserted. <i>QueueType</i> can be either of the following: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -109,26 +118,33 @@ Specifies the queue into which the work item that <i>FltWorkItem</i> points to i
 <tr>
 <td>
 <b>CriticalWorkQueue</b>
+
 </td>
 <td>
 Insert the work item into the queue from which a system thread with a real-time priority attribute  processes the work item. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>DelayedWorkQueue</b>
+
 </td>
 <td>
 Insert the work item into the queue from which a system thread with a variable priority attribute processes the work item. 
+
 </td>
 </tr>
 </table>
  
+
 The <i>QueueType</i> value <b>HyperCriticalWorkQueue</b> is reserved for system use. 
+
 
 ### -param Context [in, optional]
 
 Pointer to caller-defined context information to be passed as the <i>Context</i> parameter of the callback routine specified in the <i>WorkerRoutine</i> parameter. This parameter is optional.
+
 
 ## -returns
 <b>FltQueueGenericWorkItem</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -138,6 +154,7 @@ Pointer to caller-defined context information to be passed as the <i>Context</i>
 
  
 
+
 ## -remarks
 <b>FltQueueGenericWorkItem</b> inserts a work item that is not associated with a specific I/O operation into a system work queue. The specified <i>WorkerRoutine</i> callback routine is called in the context of a system thread, at IRQL PASSIVE_LEVEL. 
 
@@ -145,11 +162,13 @@ To allocate a work item, call <a href="ifsk.fltallocategenericworkitem">FltAlloc
 
 To free the work item when it is no longer needed, call <a href="ifsk.fltfreegenericworkitem">FltFreeGenericWorkItem</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -160,6 +179,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -170,6 +190,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -180,6 +201,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -190,9 +212,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -207,5 +231,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueueGenericWorkItem function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

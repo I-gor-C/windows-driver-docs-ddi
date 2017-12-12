@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxCeQueryTransportInformation</b> queries transport information for a given transport.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS RxCeQueryTransportInformation(
 
 A pointer to the transport.
 
+
 ### -param pTransportInformation 
 
 A pointer to the caller-supplied buffer for returning information. 
+
 
 ## -returns
 <b>RxCeQueryTransportInformation</b> returns STATUS_SUCCESS on success or the following error code on failure: 
@@ -70,15 +73,18 @@ A pointer to the caller-supplied buffer for returning information.
 <dl>
 <dd>
 The <i>pTransport</i> parameter passed to this routine was invalid.
+
 </dd>
 <dd>
 The <i>pTransportInformation</i> parameter did not point to allocated memory large enough to hold an <b>RXCE_TRANSPORT_INFORMATION</b> data structure. 
+
 </dd>
 </dl>The <i>pTransport</i> parameter passed to this routine was invalid.
 
 The <i>pTransportInformation</i> parameter did not point to allocated memory large enough to hold an <b>RXCE_TRANSPORT_INFORMATION</b> data structure. 
 
  
+
 
 ## -remarks
 <b>RxCeQueryTransportInformation</b> returns information for a given transport. The <b>RXCE_TRANSPORT_INFORMATION</b> data structure contains two data elements that are filled in by <b>RxCeQueryTransportInformation</b>:
@@ -87,11 +93,13 @@ ConnectionCount
 
 QualityOfService
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,9 +121,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -129,5 +140,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeQueryTransportInformation function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

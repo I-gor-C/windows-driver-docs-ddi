@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PcDispatchIrp</b> function dispatches an IRP to the PortCls system driver's default handler.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ PORTCLASSAPI NTSTATUS NTAPI PcDispatchIrp(
 
 Pointer to the device object. This parameter must point to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
 
+
 ### -param Irp [in]
 
 Pointer to the <a href="kernel.irp">IRP</a> that is to be dispatched
 
+
 ## -returns
 <b>PcDispatchIrp</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.
+
 
 ## -remarks
 As part of its initialization process, the <a href="audio.pcinitializeadapterdriver">PcInitializeAdapterDriver</a> function loads pointers to handlers for several IRPs into the driver object. Following the call to <b>PcInitializeAdapterDriver</b>, an adapter driver can choose to overwrite one or more of the PortCls handler pointers with pointers to its own IRP handlers.
@@ -71,11 +75,13 @@ If, after receiving an IRP, the adapter driver's IRP handler determines that the
 
 For a code example, see the SB16 sample audio driver in the Microsoft Windows Driver Kit (WDK). 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,14 +92,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The PortCls system driver implements the PcDispatchIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +113,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -114,9 +124,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -134,5 +146,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcDispatchIrp function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

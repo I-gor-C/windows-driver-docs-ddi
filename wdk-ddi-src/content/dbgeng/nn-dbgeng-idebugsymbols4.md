@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols4.htm
 old-project: debugger
 ms.assetid: BE2734B5-1E67-4E38-B4DF-0C353BFB1F0B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This interface supports determination of the symbol of an inline frame.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbols4</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IDebugSymbols4</b> also has these types of members:
 
@@ -62,6 +63,7 @@ Sets the scope as an extended frame structure.
 
  
 
+
 ## -members
 The <b>IDebugSymbols4</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -75,6 +77,7 @@ The <b>IDebugSymbols4</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Gets a line by inline context.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -83,6 +86,7 @@ Gets a line by inline context.
 </td>
 <td align="left" width="63%">
 Gets a line by inline context.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -91,6 +95,7 @@ Gets a line by inline context.
 </td>
 <td align="left" width="63%">
 Gets a name by inline context.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -99,6 +104,7 @@ Gets a name by inline context.
 </td>
 <td align="left" width="63%">
 Gets a name by inline context.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -107,6 +113,7 @@ Gets a name by inline context.
 </td>
 <td align="left" width="63%">
 Gets the scope as an extended frame structure. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -115,6 +122,7 @@ Gets the scope as an extended frame structure.
 </td>
 <td align="left" width="63%">
 Specifies an output symbol by using an inline context.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -123,6 +131,7 @@ Specifies an output symbol by using an inline context.
 </td>
 <td align="left" width="63%">
 Sets the scope as an extended frame structure. 
+
 </td>
 </tr>
 </table>Gets a line by inline context.
@@ -141,6 +150,7 @@ Sets the scope as an extended frame structure.
 
  
 
+
 ## -remarks
 
 
@@ -149,6 +159,7 @@ Sets the scope as an extended frame structure.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

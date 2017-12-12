@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: e0e62227-5e84-45bd-9127-f5bbb30ba6f3
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION, *PFILE_PIPE_REMOTE_INFORMATION
+ms.keywords: _FILE_PIPE_REMOTE_INFORMATION, *PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>FILE_PIPE_REMOTE_INFORMATION</b> structure contains information about the remote end of a named pipe.
 
 
+
 ## -syntax
 
 ````
@@ -57,28 +58,34 @@ typedef struct _FILE_PIPE_REMOTE_INFORMATION {
 
 The maximum amount of time, in 100-nanosecond intervals, that elapses before transmission of data from the client machine to the server.
 
+
 ### -field MaximumCollectionCount
 
 The maximum size, in bytes, of data that will be collected on the client machine before transmission to the server.
+
 
 ## -remarks
 Remote information is not available for local pipes or for the server end of a remote pipe.
 
 For information about pipes, see <a href="base.pipes">Pipes</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

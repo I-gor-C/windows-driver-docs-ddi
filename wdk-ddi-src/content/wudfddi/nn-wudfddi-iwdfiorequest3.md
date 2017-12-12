@@ -7,8 +7,8 @@ old-location: wdf\iwdfiorequest3.htm
 old-project: wdf
 ms.assetid: 12F4CDB7-EEA5-49D1-AD41-6F5F0C9ED6C3
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 To obtain the <b>IWDFIoRequest3</b> interface, drivers call <b>IWDFIoRequest::QueryInterface</b>.
+
 
 
 ## -inheritance
@@ -66,6 +68,7 @@ The <a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverI
 
  
 
+
 ## -members
 The <b>IWDFIoRequest3</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -81,6 +84,7 @@ The <b>IWDFIoRequest3</b> interface has these methods.
 
    The 
   <a href="wdf.iwdfiorequest3_getusermodedriverinitiatedio">GetUserModeDriverInitiatedIo</a> method determines whether an I/O request is marked as initiated by a UMDF driver.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -91,6 +95,7 @@ The <b>IWDFIoRequest3</b> interface has these methods.
 
    The 
   <a href="wdf.iwdfiorequest3_retrieveactivityid">RetrieveActivityId</a> method retrieves the current activity identifier associated with an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -101,6 +106,7 @@ The <b>IWDFIoRequest3</b> interface has these methods.
 
    The 
   <a href="wdf.iwdfiorequest3_setactivityid">SetActivityId</a> method associates an activity identifier with an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -111,6 +117,7 @@ The <b>IWDFIoRequest3</b> interface has these methods.
 The <a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverInitiatedIo</a> method 
    
   indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver.
+
 </td>
 </tr>
 </table>
@@ -131,6 +138,7 @@ The <a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverI
 
  
 
+
 ## -remarks
 
 
@@ -139,6 +147,7 @@ The <a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverI
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,22 +158,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.11
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -175,6 +189,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -191,5 +206,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3 interface%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3 interface%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

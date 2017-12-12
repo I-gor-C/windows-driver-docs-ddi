@@ -7,7 +7,7 @@ old-location: display\d3d12ddicaps_type.htm
 old-project: display
 ms.assetid: C74697BF-A191-4371-9F23-7F655EBC53B3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDICAPS_TYPE, D3D12DDICAPS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 Specifies a capability type. 
+
 
 
 ## -syntax
@@ -73,73 +74,91 @@ typedef enum D3D12DDICAPS_TYPE {
 
 Texture layout.
 
+
 ### -field D3D12DDICAPS_TYPE_SWIZZLE_PATTERN
 
 Swizzle pattern.
+
 
 ### -field D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE
 
 Memory architecture.
 
+
 ### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS
 
 Texture layout sets.
+
 
 ### -field D3D12DDICAPS_TYPE_SHADER
 
 Shader.
 
+
 ### -field D3D12DDICAPS_TYPE_ARCHITECTURE_INFO
 
 Architecture information.
+
 
 ### -field D3D12DDICAPS_TYPE_D3D12_OPTIONS
 
 Options for D3D12.
 
+
 ### -field D3D12DDICAPS_TYPE_3DPIPELINESUPPORT
 
 Support for 3D pipeline.
+
 
 ### -field D3D12DDICAPS_TYPE_JPEG_OPTIONS
 
 JPEG options.
 
+
 ### -field D3D12DDICAPS_TYPE_GPUVA_CAPS
 
 GPU video acceleration capabilities.
+
 
 ### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1
 
 Texture layout.
 
+
 ### -field D3D12DDICAPS_TYPE_0011_SHADER_MODELS
 
 Shader models.
+
 
 ### -field D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_SUPPORT
 
 Content protection support.
 
+
 ### -field D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_DRM_SUPPORT
 
 Content protection digital rights management (DRM) support.
+
 
 ### -field D3D12DDICAPS_TYPE_0022_CPU_PAGE_TABLE_FALSE_POSITIVES
 
 CPU page table false positives.
 
+
 ### -field D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT
 
 Texture layout.
+
 
 ### -field D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN
 
 Swizzle pattern.
 
+
 ### -field D3D12DDICAPS_TYPE_0023_UMD_BASED_COMMAND_QUEUE_PRIORITY
 
 UMD-based command queue priority. 
+
 
 ## -remarks
 
@@ -149,6 +168,7 @@ UMD-based command queue priority.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The KS_AMVP_MODE enumeration defines video port display modes.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum  {
 
 Specifies the weave method to display interlaced video. In the weave mode, alternating fields are combined to form a single frame.
 
+
 ### -field KS_AMVP_MODE_BOBINTERLEAVED
 
 Specifies the interleaved bob method to display video. In the interleaved bob mode, each field is displayed individually, and the gaps between fields are filled with interpolated values.
+
 
 ### -field KS_AMVP_MODE_BOBNONINTERLEAVED
 
 Specifies the non-interleaved bob method to display video.
 
+
 ### -field KS_AMVP_MODE_SKIPEVEN
 
 Specifies that even video fields should be skipped when displaying video.
 
+
 ### -field KS_AMVP_MODE_SKIPODD
 
 Specifies that odd video fields should be skipped when displaying video.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Specifies that odd video fields should be skipped when displaying video.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

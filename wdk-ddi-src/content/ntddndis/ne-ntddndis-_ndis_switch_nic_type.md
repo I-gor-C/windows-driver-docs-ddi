@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_type.htm
 old-project: netvista
 ms.assetid: 0ff7a803-9de4-4b2f-ab5f-3eb5107d5b64
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_NIC_TYPE, NDIS_SWITCH_NIC_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>NDIS_SWITCH_NIC_TYPE</b> enumeration specifies the type of the virtual ne
 
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,28 @@ typedef enum _NDIS_SWITCH_NIC_TYPE {
 ### -field NdisSwitchNicTypeExternal
 
 This value specifies a virtual network adapter that is exposed in the management operating system that runs in the Hyper-V parent partition. The external network adapter provides the connection to the  physical network interface that is available on the host. This allows processes that run in either the management or guest operating systems to send or receive packets over the extensible switch.
+
 <div class="alert"><b>Note</b>  An extensible switch supports no more than one external network adapter. The external network adapter can be bound to one or more underlying physical network adapters. For more information, see <a href="netvista.external_network_adapters">External Network Adapters</a>.</div>
 <div> </div>
 
 ### -field NdisSwitchNicTypeSynthetic
 
 This value specifies a synthetic network adapter that is exposed in a guest operating system that runs in a Hyper-V child partition.
+
 <div class="alert"><b>Note</b>  A synthetic network adapter is a type of virtual machine (VM) network adapter. This adapter is exposed in a guest operating system that is Windows Vista or a later version of Windows.</div>
 <div> </div>
 
 ### -field NdisSwitchNicTypeEmulated
 
 This value specifies an emulated network adapter that is exposed in a guest operating system.
+
 <div class="alert"><b>Note</b>  An emulated network adapter is a type of VM network adapter. This adapter is exposed in a guest operating system that is Windows XP, Windows Vista, or a later version of Windows. This adapter is also exposed in a guest operating system that is a non-Windows operating system.</div>
 <div> </div>
 
 ### -field NdisSwitchNicTypeInternal
 
 This value specifies a virtual network adapter that is exposed in the management operating system that runs in the Hyper-V parent partition. The internal network adapter provides access to an extensible switch for processes that run in the management operating system. This allows these processes to send or receive packets over the extensible switch.
+
 <div class="alert"><b>Note</b>  An extensible switch supports no more than one internal network adapter. For more information, see <a href="netvista.internal_network_adapters">Internal Network Adapters</a>.</div>
 <div> </div>
 
@@ -90,19 +95,23 @@ For more information on the types of network adapters that connect to extensible
 
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +129,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_TYPE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_TYPE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 498F8325-C887-4FDE-8BCF-A713639E3B35
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_GEOREGION_CIRCLE, *PGNSS_GEOREGION_CIRCLE, GNSS_GEOREGION_CIRCLE
+ms.keywords: PGNSS_GEOREGION_CIRCLE, GNSS_GEOREGION_CIRCLE, *PGNSS_GEOREGION_CIRCLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure is used for defining a circular geofence.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct {
 
 Latitude of the center of the circle.
 
+
 ### -field Longitude
 
 Longitude of the center of the circle.
+
 
 ### -field RadiusInMeters
 
 Radius of the circle in meters.
 
+
 ## -remarks
 A geographical shape is used to define a geofence.  Windows 10 currently supports only circular geofences.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

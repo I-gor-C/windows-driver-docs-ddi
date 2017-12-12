@@ -7,7 +7,7 @@ old-location: print\spoolerfindnextprinterchangenotification.htm
 old-project: print
 ms.assetid: FE69BD53-F463-480A-820B-4259D6F48BD0
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: SpoolerFindNextPrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -76,6 +77,7 @@ BOOL WINAPI SpoolerFindNextPrinterChangeNotification(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_unlock2.htm
 old-project: display
 ms.assetid: 8651297B-BCF7-42A2-9175-D9D072E052D6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_UNLOCK2, D3DKMT_UNLOCK2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 <b>D3DKMT_UNLOCK2</b> describes an allocation to unlock.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_UNLOCK2 {
 
 The handle to the device.
 
+
 ### -field hAllocation
 
 The handle to the allocation to unlock.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The handle to the allocation to unlock.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

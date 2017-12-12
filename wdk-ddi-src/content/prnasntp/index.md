@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Prnasntp.h header
 
+## -description
 
 This header is used by print. For more information, see
 - [print](../_print/index.md)

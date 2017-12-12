@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 58DABEF8-5886-4575-BFB0-C10709BBACAE
 ms.author: windowsdriverdev
 ms.date: 10/23/2017
-ms.keywords: _SERIAL_TIMEOUTS, *PSERIAL_TIMEOUTS, SERIAL_TIMEOUTS
+ms.keywords: _SERIAL_TIMEOUTS, SERIAL_TIMEOUTS, *PSERIAL_TIMEOUTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>SERIAL_TIMEOUTS</b> structure specifies the time-out parameters for read and write operations by the serial port.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _SERIAL_TIMEOUTS {
 
 The maximum amount of time, in milliseconds, that is allowed between two consecutive bytes in a read operation. A read operation that exceeds this maximum times out. This maximum does not apply to the time interval that precedes the reading of the first byte. A value of zero indicates that interval time-outs are not used. For more information, see Remarks.
 
+
 ### -field ReadTotalTimeoutMultiplier
 
 The maximum amount of time, in milliseconds, that is allowed per byte in a read operation. A read operation that exceeds this maximum times out. For more information, see Remarks.
+
 
 ### -field ReadTotalTimeoutConstant
 
 The maximum amount of additional time, in milliseconds, that is allowed per read operation. A read operation that exceeds this maximum times out. For more information, see Remarks.
 
+
 ### -field WriteTotalTimeoutMultiplier
 
 The maximum total time, in milliseconds, that is allowed per byte in a write operation. A write operation that exceeds this maximum times out. For more information, see Remarks.
 
+
 ### -field WriteTotalTimeoutConstant
 
 The maximum amount of additional time, in milliseconds, that is allowed per write operation. A write operation that exceeds this maximum times out. For more information, see Remarks.
+
 
 ## -remarks
 The <b>SERIAL_TIMEOUTS</b> structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_set_timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_get_timeouts.md">IOCTL_SERIAL_GET_TIMEOUTS</a> I/O control requests. An <b>IOCTL_SERIAL_SET_TIMEOUTS</b> I/O control request uses this structure to specify a set of time-out parameters for the serial port to use for read and write operations. An <b>IOCTL_SERIAL_GET_TIMEOUTS</b> I/O control request uses this structure to retrieve the time-out parameters that were set by the previous <b>IOCTL_SERIAL_SET_TIMEOUTS</b> request.
@@ -123,19 +129,23 @@ The <b>SERIAL_TIMEOUTS</b> structure is similar to the <a href="base.commtimeout
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547486">Setting Read and Write Timeouts for a Serial Device</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -170,5 +180,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERIAL_TIMEOUTS structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

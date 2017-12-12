@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 790A00A5-1107-4686-B690-80D07B69AF62
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _STREAM_PRIORITY, *PSTREAM_PRIORITY, STREAM_PRIORITY
+ms.keywords: _STREAM_PRIORITY, STREAM_PRIORITY, *PSTREAM_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 TD
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ typedef enum _STREAM_PRIORITY {
 
 Highest priority, IRQL equal to the adapter's ISR.
 
+
 ### -field Dispatch
 
 Medium priority, IRQL equal to dispatch level.
+
 
 ### -field Low
 
 Lowest priority, IRQL equal to passive or APC level.
 
+
 ### -field LowToHigh                   
 
 Go from low priority to high priority.
+
 
 ## -remarks
 
@@ -81,6 +86,7 @@ Go from low priority to high priority.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

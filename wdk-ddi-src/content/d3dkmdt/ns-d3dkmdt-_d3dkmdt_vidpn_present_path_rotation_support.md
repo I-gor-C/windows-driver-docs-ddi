@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_rotation_support.htm
 old-project: display
 ms.assetid: f60cd2cf-23b6-4fed-8548-d0483fb17fe1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</b> structure is used to indicate the angles of rotation that are supported by a particular VidPN present path.
 
 
+
 ## -syntax
 
 ````
@@ -65,54 +66,70 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT {
 
 The path is capable of displaying content with no rotation.
 
+
 ### -field Rotate90
 
 The path is capable of displaying content that is rotated 90 degrees.
+
 
 ### -field Rotate180
 
 The path is capable of displaying content that is rotated 180 degrees.
 
+
 ### -field Rotate270
 
 The path is capable of displaying content that is rotated 270 degrees.
 
+
 ### -field Offset0
 
 The path adds no rotational offset. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field Offset90
 
 The path adds a rotational offset of 90 degrees. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field Offset180
 
 The path adds a rotational offset of 180 degrees. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.
+
 Supported starting with Windows 8.1 Update.
+
 
 ### -field Offset270
 
 The path adds a rotational offset of 270 degrees. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.
+
 Supported starting with Windows 8.1 Update.
+
 
 ## -remarks
 The <b>RotationSupport</b> member of the <a href="display.d3dkmdt_vidpn_present_path_transformation">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</b> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

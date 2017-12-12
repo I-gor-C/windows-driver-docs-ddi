@@ -41,6 +41,7 @@ req.irql:
 The <b>TELEPHONY_CALLSTATE</b> enumeration defines constants that specify the state of a phone call.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 Specifies that the phone call is disabled.
 
+
 ### -field TELEPHONY_CALLSTATE_ENABLED
 
 Specifies that the phone call is enabled. This constant is set in a number of situations. For example, it will be set by the audio driver when the provider change operation is <b>TELEPHONY_PROVIDERCHANGEOP_END</b> and when <b>TELEPHONY_CALLCONTROLOP_ENABLE</b> is received.
+
 
 ### -field TELEPHONY_CALLSTATE_HOLD
 
 Specifies that the phone call is on hold.
 
+
 ### -field TELEPHONY_CALLSTATE_PROVIDERTRANSITION
 
 Specifies that the phone call is disabled. This constant is set by the audio driver when the provider change operation is <b>TELEPHONY_PROVIDERCHANGEOP_BEGIN</b>.
+
 
 ## -remarks
 
@@ -79,30 +84,37 @@ Specifies that the phone call is disabled. This constant is set by the audio dri
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10 Mobile
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +134,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20TELEPHONY_CALLSTATE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

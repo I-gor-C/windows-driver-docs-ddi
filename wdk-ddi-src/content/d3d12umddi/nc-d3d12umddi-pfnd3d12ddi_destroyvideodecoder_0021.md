@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_destroyvideodecoder_.htm
 old-project: display
 ms.assetid: 97028FEB-A3C2-4C2F-B64E-07024BC3C382
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Destroys the video decoder.
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ VOID APIENTRY PFND3D12DDI_DESTROYVIDEODECODER_0021(
 
 Holds the HDevice.
 
+
 ### -param D3d12ddi_hvideodecoder 
 
 Holds the HVideoDecoder
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

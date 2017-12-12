@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL (see Remarks section)
 The <b>RtlInitializeGenericTableAvl</b> routine initializes a generic table using Adelson-Velsky/Landis (AVL) trees.
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ VOID RtlInitializeGenericTableAvl(
 
 A pointer to a caller-allocated buffer, which must be at least <b>sizeof</b>(<a href="ifsk.rtl_avl_table">RTL_AVL_TABLE</a>) bytes in size, to contain the initialized generic table structure. 
 
+
 ### -param CompareRoutine [in]
 
 An entry point of a comparison callback routine, declared as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -81,25 +84,33 @@ An entry point of a comparison callback routine, declared as follows:
 The <i>CompareRoutine</i> parameters are as follows:
 
 
+
+
 ### -param Table
 
 A pointer to the generic table.
+
 
 ### -param FirstStruct
 
 A pointer to the first item to be compared.
 
+
 ### -param SecondStruct
 
 A pointer to the second item to be compared.
+
 </dd>
 </dl>
 The <i>CompareRoutine</i> must strictly track the ordering of all elements in the generic table so that it can identify any particular element. The caller-defined structure for element data usually includes a member whose value is unique and can be used as a sorting key. All <i>Rtl...GenericTableAvl</i> routines that call the <i>CompareRoutine</i> take a buffer pointer as a parameter, which is passed in turn to the <i>CompareRoutine</i>. The buffer contains a caller-supplied key value to be matched by the <i>CompareRoutine</i> to the key of the element that is being searched for. 
+
 Given two such key values, the <i>CompareRoutine</i> returns <b>GenericLessThan</b>, <b>GenericGreaterThan</b>, or <b>GenericEqual</b>. 
+
 
 ### -param AllocateRoutine [in]
 
 An entry point of an allocation callback routine, declared as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -117,20 +128,26 @@ An entry point of an allocation callback routine, declared as follows:
 The <i>AllocateRoutine</i> parameters are as follows:
 
 
+
+
 ### -param Table
 
 A pointer to the generic table.
 
+
 ### -param ByteSize
 
 The number of bytes to allocate.
+
 </dd>
 </dl>
 For each new element, the <i>AllocateRoutine</i> is called to allocate memory for caller-supplied data plus some additional memory for use by the <i>Rtl...GenericTableAvl</i> routines. Note that because of this "additional memory," caller-supplied routines must not access the first <b>sizeof</b>(RTL_BALANCED_LINKS) bytes of any element in the generic table. 
 
+
 ### -param FreeRoutine [in]
 
 An entry point of a deallocation callback routine, declared as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -148,23 +165,30 @@ An entry point of a deallocation callback routine, declared as follows:
 The <i>FreeRoutine</i> parameters are as follows:
 
 
+
+
 ### -param Table
 
 A pointer to the generic table.
 
+
 ### -param Buffer
 
 A pointer to the element that is being deleted.
+
 </dd>
 </dl>
 <i>Rtl...GenericTableAvl</i> routines call the <i>FreeRoutine</i> to deallocate memory for elements to be deleted from the generic table. The <i>FreeRoutine</i> is the opposite of the <i>AllocateRoutine</i>. 
+
 
 ### -param TableContext [in, optional]
 
 An optional pointer to a caller-supplied context for the generic table. This parameter can be <b>NULL</b>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 File systems call <b>RtlInitializeGenericTableAvl</b> to initialize a generic table to store file system-specific data, such as name-lookup information for currently open files. The sort order, structure, and contents of the elements are caller-defined. 
@@ -181,11 +205,13 @@ The <b>RtlInitializeGenericTableAvl</b> routine explicitlly allocates a generic 
 
 Callers of <b>RtlInitializeGenericTableAvl</b> must be running at IRQL &lt;= DISPATCH_LEVEL. Note that if <i>Rtl...GenericTableAvl</i> routines are to be used at IRQL DISPATCH_LEVEL, the <i>CompareRoutine</i>, <i>AllocateRoutine</i>, and <i>FreeRoutine</i> must all be nonpageable code, and the <i>AllocateRoutine</i> should allocate memory from nonpaged pool.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -196,14 +222,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -214,6 +243,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -224,6 +254,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -234,9 +265,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -269,5 +302,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeGenericTableAvl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

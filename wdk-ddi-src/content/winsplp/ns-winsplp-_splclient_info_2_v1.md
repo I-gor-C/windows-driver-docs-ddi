@@ -7,7 +7,7 @@ old-location: print\splclient_info_2_w2k.htm
 old-project: print
 ms.assetid: 713246FE-355B-4C01-A8DF-535BDBA0FCB8
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC. The performance improvement is primarily observed in calls to read/write printer made from within the spooler (Gdi32.dll during playback). This structure is used in the private spooler RPC interface (RpcSplOpenPrinter).
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _SPLCLIENT_INFO_2_V1 {
 
 Specifies the server-side handle to be used for direct calls.
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ Specifies the server-side handle to be used for direct calls.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

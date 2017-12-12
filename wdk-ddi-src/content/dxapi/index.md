@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Dxapi.h header
 
+## -description
 
 This header is used by Display. For more information, see
 - [Display](../_display/index.md)

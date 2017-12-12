@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_ikeext_v6.htm
 old-project: netvista
 ms.assetid: 1e355322-23ae-4cc6-af2f-5852515c8056
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_IKEEXT_V6_, FWPS_FIELDS_IKEEXT_V6
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The FWPS_FIELDS_IKEEXT_V6 enumeration type specifies the data field identifiers 
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
 
 
+
 ## -syntax
 
 ````
@@ -64,20 +65,24 @@ typedef enum FWPS_FIELDS_IKEEXT_V6_ {
 
 The local IP address.
 
+
 ### -field FWPS_FIELD_IKEEXT_V6_IP_REMOTE_ADDRESS
 
 The remote IP address.
+
 
 ### -field FWPS_FIELD_IKEEXT_V6_IP_LOCAL_INTERFACE
 
 The locally unique identifier (<a href="netvista.luid">LUID</a>) for the network interface associated with the
      local IP address.
 
+
 ### -field FWPS_FIELD_IKEEXT_V6_PROFILE_ID
 
 The profile identifier (network category) of the network interface. The possible network category
      values are: public (1), private (2), or domain (3).
      
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
 
@@ -85,6 +90,7 @@ The profile identifier (network category) of the network interface. The possible
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -94,14 +100,17 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Unless otherwise noted, supported starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

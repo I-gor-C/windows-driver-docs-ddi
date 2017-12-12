@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_activate.htm
 old-project: storage
 ms.assetid: FCE1DE7B-CDFE-4533-90E7-A400EC236007
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains information about the downloaded firmware to activate.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef struct _STORAGE_HW_FIRMWARE_ACTIVATE {
 
 The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
 
+
 ### -field Size
 
 The size of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
 
+
 ### -field Flags
 
 The flags associated with the activation request. The following are valid flags that can be set in this member.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -83,13 +87,16 @@ The flags associated with the activation request. The following are valid flags 
 </table>
  
 
+
 ### -field Slot
 
 The slot with the firmware image that is to be activated.
 
+
 ### -field Reserved0
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -99,22 +106,27 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

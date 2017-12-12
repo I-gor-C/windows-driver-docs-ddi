@@ -7,8 +7,8 @@ old-location: debugger\debug_get_text_completions_in.htm
 old-project: debugger
 ms.assetid: 1B8B0B7D-346D-41FC-B718-60B04F10702C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_GET_TEXT_COMPLETIONS_IN, DEBUG_GET_TEXT_COMPLETIONS_IN, *PDEBUG_GET_TEXT_COMPLETIONS_IN
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_GET_TEXT_COMPLETIONS_IN, *PDEBUG_GET_TEXT_COMPLETIONS_IN, DEBUG_GET_TEXT_COMPLETIONS_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Defines information about text completions to get. 
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_IN {
 ### -field Flags
 
 Flags. Valid flag values include the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -70,6 +72,7 @@ Flags. Valid flag values include the following:
 </td>
 <td width="60%">
 Do not include dot commands. Dot commands begin with a period (.).
+
 </td>
 </tr>
 <tr>
@@ -80,6 +83,7 @@ Do not include dot commands. Dot commands begin with a period (.).
 </td>
 <td width="60%">
 Do not include extension commands. 
+
 </td>
 </tr>
 <tr>
@@ -90,18 +94,22 @@ Do not include extension commands.
 </td>
 <td width="60%">
 Do not include completions with symbols.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field MatchCountLimit
 
 The limit of matches.
 
+
 ### -field Reserved
 
 Reserved. 
+
 
 ## -remarks
 
@@ -111,6 +119,7 @@ Reserved.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

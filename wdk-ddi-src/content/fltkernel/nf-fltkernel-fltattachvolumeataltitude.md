@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>FltAttachVolumeAtAltitude</b> is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file. 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS FltAttachVolumeAtAltitude(
 
 Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param Volume [in, out]
 
 Opaque volume pointer for the volume that the minifilter driver instance is to be attached to. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param Altitude [in]
 
 Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
 
+
 ### -param InstanceName [in, optional]
 
 Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters. 
 
+
 ### -param RetInstance [out, optional]
 
 Pointer to a caller-allocated variable that receives an opaque instance pointer for the newly created instance. This parameter is optional and can be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltAttachVolumeAtAltitude</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -99,6 +105,7 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 
  
 
+
 ## -remarks
 A minifilter driver should only use <b>FltAttachVolumeAtAltitude</b> for debugging. It should not call this routine in a retail version of the minifilter driver. 
 
@@ -120,11 +127,13 @@ To compare the altitudes of two minifilter driver instances attached to the same
 
 To detach a minifilter driver instance from a volume, call <a href="ifsk.fltdetachvolume">FltDetachVolume</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +144,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -155,9 +166,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -190,5 +203,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolumeAtAltitude routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

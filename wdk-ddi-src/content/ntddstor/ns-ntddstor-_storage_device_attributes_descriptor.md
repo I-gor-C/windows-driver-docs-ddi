@@ -7,8 +7,8 @@ old-location: storage\storage_device_attributes_descriptor.htm
 old-project: storage
 ms.assetid: DA8434EF-6163-4D07-A81D-D1AC2D55BFB4
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, *PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, *PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure is used to retrieve the attributes information for a  device.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 
 Contains the version of the data reported. 
 
+
 ### -field Size
 
 Indicates the quantity of data reported, in bytes. This is the <code>sizeof(STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR)</code>.
+
 
 ### -field Attributes
 
@@ -77,6 +80,7 @@ Indicates the quantity of data reported, in bytes. This is the <code>sizeof(STOR
 </td>
 <td width="60%">
 Attribute that indicates a storage device supports byte addressable IO.
+
 </td>
 </tr>
 <tr>
@@ -87,6 +91,7 @@ Attribute that indicates a storage device supports byte addressable IO.
 </td>
 <td width="60%">
 Attribute that indicates a storage device supports block IO.
+
 </td>
 </tr>
 <tr>
@@ -97,6 +102,7 @@ Attribute that indicates a storage device supports block IO.
 </td>
 <td width="60%">
 Attribute that indicates that persistence of data on storage device may change.
+
 </td>
 </tr>
 <tr>
@@ -107,6 +113,7 @@ Attribute that indicates that persistence of data on storage device may change.
 </td>
 <td width="60%">
 Attribute that indicates a storage device is volatile and does not support persistence of data.
+
 </td>
 </tr>
 <tr>
@@ -117,6 +124,7 @@ Attribute that indicates a storage device is volatile and does not support persi
 </td>
 <td width="60%">
 Reserved
+
 </td>
 </tr>
 <tr>
@@ -127,10 +135,12 @@ Reserved
 </td>
 <td width="60%">
 Attribute that indicates a storage device has IO performance independent of IO sizes.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -140,22 +150,27 @@ Attribute that indicates a storage device has IO performance independent of IO s
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

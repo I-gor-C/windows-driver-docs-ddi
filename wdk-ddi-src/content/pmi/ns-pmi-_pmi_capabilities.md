@@ -41,6 +41,7 @@ req.irql:
 The PMI_CAPABILITIES structure contains information about the power metering and budgeting capabilities of a power meter.
 
 
+
 ## -syntax
 
 ````
@@ -62,26 +63,33 @@ typedef struct _PMI_CAPABILITIES {
 
 A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.
 
+
 ### -field Size
 
 A value, in units of bytes, that specifies the size of the structure.
+
 
 ### -field CapabilityType
 
 A <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> enumeration value that specifies the data type of the <b>Capabilities</b> member.
 
+
 ### -field Capabilities
 
 A union of the supported Power Meter Interface (PMI) capability structures. Based on the value of the <b>CapabilityType</b> member, one of the following <b>Capabilities</b> submembers is used to reference the following PMI capability structures:
 
+
 ### -field ReportedCapabilities
 
 A <a href="powermeter.pmi_metered_hardware_information">PMI_METERED_HARDWARE_INFORMATION</a> structure that specifies one or more hardware devices that are monitored by the power meter. 
+
 The <b>Capabilities</b> member contains this structure if the <b>CapabilityType</b> member is set to <b>PmiMeteredHardware</b>.
+
 
 ### -field MeteredHardwareInformation
 
 A <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> structure that specifies the PMI capabilities of the power meter, such as the following:
+
 <ul>
 <li>Asset information 
 </li>
@@ -91,6 +99,7 @@ A <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> s
 </li>
 </ul>
 The <b>Capabilities</b> member contains this structure if the <b>CapabilityType</b> member is set to <b>PmiReportedCapabilities</b>.
+
 </dd>
 </dl>
 
@@ -107,19 +116,23 @@ The <b>CapabilitiesType</b> member is set to <b>PmiReportedCapabilities</b>.
 
 The <b>Capabilities</b> member contains data that is formatted as a <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,5 +158,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20PMI_CAPABILITIES structure%20 RELEASE:%20(11/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

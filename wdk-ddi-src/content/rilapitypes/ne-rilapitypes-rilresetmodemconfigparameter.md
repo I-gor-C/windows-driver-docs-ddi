@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemconfigparameter_2.htm
 old-project: netvista
 ms.assetid: 6467bd24-bc2f-4d41-ba8a-a6b46fcc9853
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILRESETMODEMCONFIGPARAMETER, RILRESETMODEMCONFIGPARAMETER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ typedef enum _RILRESETMODEMCONFIGPARAMETER {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL (see Remarks section)
 <b>FltQueryInformationFile</b> retrieves information for a given file. 
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS FltQueryInformationFile(
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 File object pointer for the file. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param FileInformation [out]
 
 Pointer to a caller-allocated buffer that receives information about the file. The <i>FileInformationClass</i> parameter specifies the type of information. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param Length [in]
 
 Size, in bytes, of the <i>FileInformation</i> buffer. 
 
+
 ### -param FileInformationClass [in]
 
 Type of file information to be returned. One of the following. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -84,113 +90,141 @@ Type of file information to be returned. One of the following.
 <tr>
 <td>
 <b>FileAllInformation</b>
+
 </td>
 <td>
 Return a FILE_ALL_INFORMATION structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileAttributeTagInformation</b>
+
 </td>
 <td>
 Return a <a href="kernel.file_attribute_tag_information">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileBasicInformation</b>
+
 </td>
 <td>
 Return a <a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileCompressionInformation</b>
+
 </td>
 <td>
 Return a FILE_COMPRESSION_INFORMATION structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileEaInformation</b>
+
 </td>
 <td>
 Return a FILE_EA_INFORMATION structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileInternalInformation</b>
+
 </td>
 <td>
 Return a <a href="ifsk.file_internal_information">FILE_INTERNAL_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileMoveClusterInformation</b>
+
 </td>
 <td>
 Return a FILE_MOVE_CLUSTER_INFORMATION structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileNameInformation</b>
+
 </td>
 <td>
 Return a <a href="kernel.file_name_information">FILE_NAME_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileNetworkOpenInformation</b>
+
 </td>
 <td>
 Return a single <a href="kernel.file_network_open_information">FILE_NETWORK_OPEN_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FilePositionInformation</b>
+
 </td>
 <td>
 Return a single <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileStandardInformation</b>
+
 </td>
 <td>
 Return a single <a href="kernel.file_standard_information">FILE_STANDARD_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileStreamInformation</b>
+
 </td>
 <td>
 Return a single <a href="ifsk.file_stream_information">FILE_STREAM_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileHardLinkInformation</b>
+
 </td>
 <td>
 Return a <a href="ifsk.file_links_information">FILE_LINKS_INFORMATION</a> structure for the file. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param LengthReturned [out, optional]
 
 Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the <i>FileInformation</i> buffer. This parameter is optional and can be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltQueryInformationFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
@@ -200,6 +234,7 @@ Pointer to a caller-allocated variable that receives the size, in bytes, of the 
 
  
 
+
 ## -remarks
 A minifilter driver calls <b>FltQueryInformationFile</b> to retrieve information for a given file. The file must currently be open. 
 
@@ -207,11 +242,13 @@ A minifilter driver calls <b>FltQueryInformationFile</b> to retrieve information
 
 Callers of <b>FltQueryInformationFile</b> must be running at IRQL = PASSIVE_LEVEL and <a href="https://msdn.microsoft.com/0578df31-1467-4bad-ba62-081d61278deb">with APCs enabled</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -222,6 +259,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -232,6 +270,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -242,6 +281,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -252,9 +292,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -302,5 +344,8 @@ PASSIVE_LEVEL (see Remarks section)
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryInformationFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

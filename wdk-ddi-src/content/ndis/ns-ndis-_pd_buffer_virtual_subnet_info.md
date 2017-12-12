@@ -7,7 +7,7 @@ old-location: netvista\pd_buffer_virtual_subnet_info.htm
 old-project: netvista
 ms.assetid: 569424A2-4279-4758-A6F1-402D25F9B04F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _PD_BUFFER_VIRTUAL_SUBNET_INFO structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 This structure contains the virtual subnet information.
+
 
 
 ## -syntax
@@ -57,9 +58,11 @@ typedef struct _PD_BUFFER_VIRTUAL_SUBNET_INFO {
 
 The virtual subnet ID.
 
+
 ### -field Reserved
 
 Reserved.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Reserved.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

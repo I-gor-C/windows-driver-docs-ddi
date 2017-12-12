@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>GPIO_CLIENT_REGISTRATION_PACKET</b> structure contains registration information that the general-purpose I/O (GPIO) controller driver passes to the GPIO framework extension (GpioClx).
 
 
+
 ## -syntax
 
 ````
@@ -88,117 +89,146 @@ typedef struct _GPIO_CLIENT_REGISTRATION_PACKET {
 
 The version number for the GPIO interface that the GPIO controller driver supports. Set this member to the value GPIO_CLIENT_VERSION, which is defined in the Gpioclx.h header file.
 
+
 ### -field Size
 
 The size, in bytes, of this structure. Set this member to <b>sizeof</b>(<b>GPIO_CLIENT_REGISTRATION_PACKET</b>).
+
 
 ### -field Flags
 
 A set of flags that indicate which registration options are selected. No flags are currently defined for registration options. Set this member to zero.
 
+
 ### -field ControllerContextSize
 
 The required device context size, in bytes. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a> method allocates a device context of this size. When GpioClx calls any registered callback function in the <b>GPIO_CLIENT_REGISTRATION_PACKET</b> structure, GpioClx passes this device context to the callback function as a parameter. The callback functions use this context to access and update the driver's information about the state of the GPIO controller device. For more information, see <a href="https://msdn.microsoft.com/4BE99C71-9BA6-44E3-A54F-DE8C3440A474">GPIO Device Contexts</a>.
+
 
 ### -field Reserved
 
 Reserved for future use. Set this member to zero.
 
+
 ### -field CLIENT_PrepareController
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439389">CLIENT_PrepareController</a> event callback function.
+
 
 ### -field CLIENT_ReleaseController
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439411">CLIENT_ReleaseController</a> event callback function.
 
+
 ### -field CLIENT_StartController
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439424">CLIENT_StartController</a> event callback function.
+
 
 ### -field CLIENT_StopController
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439430">CLIENT_StopController</a> event callback function.
 
+
 ### -field CLIENT_QueryControllerBasicInformation
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function.
+
 
 ### -field CLIENT_QuerySetControllerInformation
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh698241">CLIENT_QuerySetControllerInformation</a> event callback function.
 
+
 ### -field CLIENT_EnableInterrupt
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439377">CLIENT_EnableInterrupt</a> event callback function.
+
 
 ### -field CLIENT_DisableInterrupt
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439371">CLIENT_DisableInterrupt</a> event callback function.
 
+
 ### -field CLIENT_UnmaskInterrupt
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439435">CLIENT_UnmaskInterrupt</a> event callback function.
+
 
 ### -field CLIENT_MaskInterrupts
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439380">CLIENT_MaskInterrupts</a> event callback function.
 
+
 ### -field CLIENT_QueryActiveInterrupts
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439395">CLIENT_QueryActiveInterrupts</a> event callback function.
+
 
 ### -field CLIENT_ClearActiveInterrupts
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439341">CLIENT_ClearActiveInterrupts</a> event callback function.
 
+
 ### -field CLIENT_ConnectIoPins
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439347">CLIENT_ConnectIoPins</a> event callback function.
+
 
 ### -field CLIENT_DisconnectIoPins
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439374">CLIENT_DisconnectIoPins</a> event callback function.
 
+
 ### -field CLIENT_ReadGpioPins
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439404">CLIENT_ReadGpioPins</a> event callback function.
+
 
 ### -field CLIENT_ReadGpioPinsUsingMask
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a> event callback function.
 
+
 ### -field CLIENT_WriteGpioPins
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a> event callback function.
+
 
 ### -field CLIENT_WriteGpioPinsUsingMask
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a> event callback function.
 
+
 ### -field CLIENT_SaveBankHardwareContext
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439419">CLIENT_SaveBankHardwareContext</a> event callback function.
+
 
 ### -field CLIENT_RestoreBankHardwareContext
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439414">CLIENT_RestoreBankHardwareContext</a> event callback function.
 
+
 ### -field CLIENT_PreProcessControllerInterrupt
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439392">CLIENT_PreProcessControllerInterrupt</a> event callback function.
+
 
 ### -field CLIENT_ControllerSpecificFunction
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh698237">CLIENT_ControllerSpecificFunction</a> event callback function.
 
+
 ### -field CLIENT_ReconfigureInterrupt
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a> event callback function.
 
+
 ### -field CLIENT_QueryEnabledInterrupts
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn265184">CLIENT_QueryEnabledInterrupts</a> event callback function. This member is supported starting with Windows 8.1.
+
 
 ## -remarks
 The GPIO controller driver passes a pointer to a <b>GPIO_CLIENT_REGISTRATION_PACKET</b> structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a> method. This method registers the driver to use the services provided by GpioClx. Typically, the driver calls this method from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
@@ -213,19 +243,23 @@ If the <i>CLIENT_QueryControllerBasicInformation</i> callback function sets the 
 
 GpioClx requires a GPIO controller driver to implement certain callback functions, but support for other callback functions is optional. For more information, see <a href="https://msdn.microsoft.com/2F126431-13AB-4E3F-9E5E-56DC7D9AF024">Optional and Required GPIO Callback Functions</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -317,5 +351,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20GPIO_CLIENT_REGISTRATION_PACKET structure%20 RELEASE:%20(11/3/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

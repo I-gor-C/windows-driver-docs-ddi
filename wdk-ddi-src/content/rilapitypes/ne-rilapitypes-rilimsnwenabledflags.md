@@ -7,7 +7,7 @@ old-location: netvista\rilimsnwenabledflags_2.htm
 old-project: netvista
 ms.assetid: 3295b0f0-a498-47fb-9744-06ea74626bb5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILIMSNWENABLEDFLAGS, RILIMSNWENABLEDFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef enum _RILIMSNWENABLEDFLAGS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

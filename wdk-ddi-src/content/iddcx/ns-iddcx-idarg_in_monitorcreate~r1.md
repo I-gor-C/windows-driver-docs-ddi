@@ -7,7 +7,7 @@ old-location: display\idarg_in_monitorcreate.htm
 old-project: display
 ms.assetid: 0de9686f-69e6-4aac-8f58-9e61bcfe3827
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_MONITORCREATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct IDARG_IN_MONITORCREATE {
                      
                  Indicates object attributes for the monitor.
 
+
 ### -field pMonitorInfo
 
 [in] Pointer to the information about this monitor.
+
 
 ## -remarks
 
@@ -73,6 +76,7 @@ typedef struct IDARG_IN_MONITORCREATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

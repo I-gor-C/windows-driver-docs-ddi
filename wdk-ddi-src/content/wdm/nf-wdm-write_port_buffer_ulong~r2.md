@@ -7,7 +7,7 @@ old-location: kernel\write_port_buffer_ulong.htm
 old-project: kernel
 ms.assetid: 6f786456-344a-4fc3-bc13-8d4253f4039a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: WRITE_PORT_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WRITE_PORT_BUFFER_ULONG</b> routine writes a number of ULONG values from a buffer to the specified port address.
 
 
+
 ## -syntax
 
 ````
@@ -59,27 +60,33 @@ The <b>WRITE_PORT_BUFFER_ULONG</b> routine writes a number of ULONG values from 
 
 Pointer to the port, which must be a mapped memory range in I/O space.
 
+
 ### -param Buffer [in]
 
 Pointer to a buffer from which an array of ULONG values is to be written.
+
 
 ### -param Count [in]
 
 Specifies the number of ULONG values to be written to the port. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 The size of the buffer must be large enough to contain at least the specified number of ULONG values.
 
 Callers of <b>WRITE_PORT_BUFFER_ULONG</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Port</i> is resident, mapped device memory.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +97,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +118,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,9 +129,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

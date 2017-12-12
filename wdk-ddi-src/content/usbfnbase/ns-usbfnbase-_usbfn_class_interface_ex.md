@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Describes an interface and its endpoints.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _USBFN_CLASS_INTERFACE_EX {
 
 The index number of the interface.
 
+
 ### -field InterfaceCount
 
 The number of USB interfaces contained in  the selected function.
+
 
 ### -field PipeCount
 
 The number of endpoints contained in  the interface.
 
+
 ### -field PipeArr
 
 An array of <a href="buses.usbfn_pipe_information">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ An array of <a href="buses.usbfn_pipe_information">USBFN_PIPE_INFORMATION</a> st
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

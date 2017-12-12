@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Poscx.h header
 
+## -description
 
 This header is used by Point of Service (POS). For more information, see
 - [Point of Service (POS)](../_pos/index.md)
@@ -11,7 +16,7 @@ Poscx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [POS_CX_ATTRIBUTES_INIT function](nf-poscx-pos-cx-attributes-init.md) | POS_CX_ATTRIBUTES_INIT initializes a POS_CX_ATTRIBUTE structure. |
+| [POS_CX_ATTRIBUTES_INIT function](nf-poscx-pos_cx_attributes_init.md) | POS_CX_ATTRIBUTES_INIT initializes a POS_CX_ATTRIBUTE structure. |
 | [PosCxClaimDevice function](nf-poscx-poscxclaimdevice.md) | PosCxClaimDevice is called to claim a device for exclusive use. The caller should call PosCxReleaseDevice when the device is no longer needed. |
 | [PosCxCleanPendingRequests function](nf-poscx-poscxcleanpendingrequests.md) | PosCxCleanPendingRequests is called to cancel all pending requests for a given caller, identified by the open instance. |
 | [PosCxCleanupEvents function](nf-poscx-poscxcleanupevents.md) | PosCxCleanupEvents is called to clean up all pending events for a given caller, identified by the open instance. |
@@ -33,21 +38,21 @@ Poscx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback](nc-poscx-evt-pos-cx-device-ownership-change.md) | The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine. |
-| [EVT_POS_CX_DEVICE_REMOTE_CLAIM callback](nc-poscx-evt-pos-cx-device-remote-claim.md) | The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work. |
-| [EVT_POS_CX_DEVICE_REMOTE_RELEASE callback](nc-poscx-evt-pos-cx-device-remote-release.md) | The EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left with no owner and allows the driver to do additional work. |
-| [EVT_POS_CX_DEVICE_REMOTE_RETAIN callback](nc-poscx-evt-pos-cx-device-remote-retain.md) | The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback](nc-poscx-evt_pos_cx_device_ownership_change.md) | The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine. |
+| [EVT_POS_CX_DEVICE_REMOTE_CLAIM callback](nc-poscx-evt_pos_cx_device_remote_claim.md) | The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_REMOTE_RELEASE callback](nc-poscx-evt_pos_cx_device_remote_release.md) | The EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left with no owner and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_REMOTE_RETAIN callback](nc-poscx-evt_pos_cx_device_remote_retain.md) | The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [POS_CX_ATTRIBUTES structure](ns-poscx--pos-cx-attributes.md) | The POS_CX_ATTRIBUTES structure contains pointers to event callback functions implemented by the client driver. |
+| [_POS_CX_ATTRIBUTES structure](ns-poscx-_pos_cx_attributes.md) | The POS_CX_ATTRIBUTES structure contains pointers to event callback functions implemented by the client driver. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [POS_CX_EVENT_ATTRIBUTES enumeration](ne-poscx--pos-cx-event-attributes.md) | The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in POS_CX_EVENT_DEST and POS_CX_EVENT_PRIORITY. |
-| [POS_CX_EVENT_DEST enumeration](ne-poscx--pos-cx-event-dest.md) | The POS_CX_EVENT_DEST defines which applications receive this event. |
-| [POS_CX_EVENT_PRIORITY enumeration](ne-poscx--pos-cx-event-priority.md) | The POS_CX_EVENT_PRIORITY defines the importance of the event and the order it will be delivered to the client application. |
+| [_POS_CX_EVENT_ATTRIBUTES enumeration](ne-poscx-_pos_cx_event_attributes.md) | The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in POS_CX_EVENT_DEST and POS_CX_EVENT_PRIORITY. |
+| [_POS_CX_EVENT_DEST enumeration](ne-poscx-_pos_cx_event_dest.md) | The POS_CX_EVENT_DEST defines which applications receive this event. |
+| [_POS_CX_EVENT_PRIORITY enumeration](ne-poscx-_pos_cx_event_priority.md) | The POS_CX_EVENT_PRIORITY defines the importance of the event and the order it will be delivered to the client application. |

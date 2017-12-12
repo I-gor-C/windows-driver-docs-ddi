@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: a38e1215-4689-4b75-9a32-4d6570694b77
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _KSM_PIN_PAIR, KSM_PIN_PAIR, *PKSM_PIN_PAIR
+ms.keywords: _KSM_PIN_PAIR, *PKSM_PIN_PAIR, KSM_PIN_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _KSM_PIN_PAIR {
 
 KSMETHOD structure that describes a method and request type of a method request.
 
+
 ### -field InputPinId
 
 Identifier of an input pin of the filter.
+
 
 ### -field OutputPinId
 
 Identifier of an output pin of the filter.
 
+
 ### -field Reserved
 
 Reserved.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Reserved.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,5 +104,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSM_PIN_PAIR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

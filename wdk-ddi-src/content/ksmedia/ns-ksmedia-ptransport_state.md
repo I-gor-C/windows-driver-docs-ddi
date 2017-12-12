@@ -41,6 +41,7 @@ req.irql:
 The TRANSPORT_STATE structure 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 Specifies the mode of the external device transport.
 
+
 ### -field State
 
 Specifies the state of the external device transport mode.
+
 
 ## -remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
@@ -100,11 +103,13 @@ ED_MODE_STOP
 
 ED_MODE_FF
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

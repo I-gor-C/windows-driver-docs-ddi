@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasFormatArgs</b> function formats an argument list into a packaged string for logging.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ BSTR __cdecl wiasFormatArgs(
 
 Specifies a variable argument list, which starts with an ANSI format string containing the message and any format specifiers. The ellipsis (...) specifies a variable number of arguments that follow the format string.
 
+
 ## -returns
 This function returns a BSTR containing the format string, the arguments following the format string, and a format signature.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ This function returns a BSTR containing the format string, the arguments followi
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +82,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +103,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +114,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

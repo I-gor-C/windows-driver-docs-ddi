@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-process-support-data-0032.htm
 old-project: display
 ms.assetid: ea2dabc5-6853-4491-8c1f-f3f5ae516952
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video process support data.
 
 
+
 ## -syntax
 
 ````
@@ -70,61 +71,76 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 {
 
 Node index.
 
+
 ### -field InputSample
 
 Input sample.
+
 
 ### -field InputFieldType
 
 Input field type.
 
+
 ### -field InputStereoFormat
 
 Input stereo format.
+
 
 ### -field InputFrameRate
 
 Input frame rate.
 
+
 ### -field OutputFormat
 
 Output format.
+
 
 ### -field OutputStereoFormat
 
 Output stereo format.
 
+
 ### -field OutputFrameRate
 
 Output frame rate.
+
 
 ### -field SupportFlags
 
 Support flags.
 
+
 ### -field ScaleSupport
 
 Scale support.
+
 
 ### -field FeatureSupport
 
 Feature support.
 
+
 ### -field DeinterlaceSupport
 
 Deinterlace support.
+
 
 ### -field AutoProcessingSupport
 
 Auto processing support.
 
+
 ### -field FilterSupport
 
 Filter support.
 
+
 ### -field FilterRangeSupport
 
 Filter range support.
+
 
 ## -remarks
 
@@ -134,6 +150,7 @@ Filter range support.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

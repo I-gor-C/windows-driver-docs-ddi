@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_pco_status.htm
 old-project: netvista
 ms.assetid: C71187C5-74B6-450A-8461-BB9FDF60DB8D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>NDIS_WWAN_PCO_STATUS</b> structure represents the Protocol Configuration Option (PCO) status of the modem.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ The header with type, revision, and size information about the <b>NDIS_WWAN_PCO_
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -70,37 +72,46 @@ The header with type, revision, and size information about the <b>NDIS_WWAN_PCO_
 <tr>
 <td>
 Type
+
 </td>
 <td>
 NDIS_OBJECT_TYPE_DEFAULT
+
 </td>
 </tr>
 <tr>
 <td>
 Revision
+
 </td>
 <td>
 NDIS_WWAN_PCO_STATUS_REVISION_1
+
 </td>
 </tr>
 <tr>
 <td>
 Size
+
 </td>
 <td>
 sizeof(NDIS_WWAN_PCO_STATUS)
+
 </td>
 </tr>
 </table>
  
+
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field uStatus
 
 The status of system capability. The following table shows the possible values for
      this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -109,89 +120,111 @@ The status of system capability. The following table shows the possible values f
 <tr>
 <td>
 WWAN_STATUS_SUCCESS
+
 </td>
 <td>
 The PCO value operation succeeded.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_CONTEXT_NOT_ACTIVATED
+
 </td>
 <td>
 TThe PCO value is not available because the PDP context is not activated.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_NO_DEVICE_SUPPORT
+
 </td>
 <td>
 The PCO operation is not supported by the modem.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_NOT_REGISTERED
+
 </td>
 <td>
 The PCO value is not available because the modem is not registered.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_PACKET_SVC_DETACHED
+
 </td>
 <td>
 The PCO value is not available because no packet service is attached.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_RADIO_POWER_OFF
+
 </td>
 <td>
 The PCO value not available because the radio is in the OFF state.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_BUSY
+
 </td>
 <td>
 PCO value is not available because the modem is busy.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_NOT_INITIALIZED
+
 </td>
 <td>
 TThe PCO value is not available because the device is initializing. Retry after the ready-state has changed to <b>WwanReadyStateInitialized.</b>
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_NOT_ACTIVATED
+
 </td>
 <td>
 The PCO value is not available because the service is not activated.
+
 </td>
 </tr>
 <tr>
 <td>
 WWAN_STATUS_READ_FAILURE
+
 </td>
 <td>
 The PCO value failed due to a read failure.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field PcoValue
 
 A formatted <a href="netvista.wwan_pco_value">WWAN_PCO_VALUE</a> structure, which contains the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
+
 
 ## -remarks
 
@@ -201,14 +234,17 @@ A formatted <a href="netvista.wwan_pco_value">WWAN_PCO_VALUE</a> structure, whic
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -237,5 +273,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PCO_STATUS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PCO_STATUS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

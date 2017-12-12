@@ -7,7 +7,7 @@ old-location: display\dxgk_colortransformcaps_.htm
 old-project: display
 ms.assetid: 83113D6C-44A1-4022-8101-061DEA9868E1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_COLORTRANSFORMCAPS, DXGK_COLORTRANSFORMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure replaces the DXGK_GAMMARAMPCAPS structure in the DXGK_DRIVERCAPS structure to describe both the gamma and color transform capabilities of the display pipelines.
 
 
+
 ## -syntax
 
 ````
@@ -66,31 +67,38 @@ typedef struct _DXGK_COLORTRANSFORMCAPS  {
 
 Indicates support for a GDI compatible gamma ramp.
 
+
 ### -field Gamma_Dxgi1
 
 Indicates support for a DXGI1 gamma ramp.  These gamma ramps have been defined since WDDM 1.0 but were always required to be supported by any WDDM driver.
 Full WDDM drivers are still required to support DXGI1 gamma so should set this flag but drivers for display-only and indirect display will be able to indicate support through this flag.
 
 
+
 ### -field Transform_3x4Matrix
 
 Indicates support for a 3 by 4 matrix color transform in the display pipeline hardware.
+
 
 ### -field Transform_3x4Matrix_WideColor
 
 Indicates support for a 3 by 4 matrix color transform in the display pipeline hardware when scanning out WideColor data.  Drivers which support this capability must also support Transform_3x4Matrix. The OS will NOT engage WideColorGamut mode unless both this bit and the WideColorSpace cap bits are set.
 
+
 ### -field Transform_3x4Matrix_HighColor
 
 Indicates support for a 3 by 4 matrix color transform in the display pipeline hardware when scanning out HighColor data.  Drivers which support this capability must also support Transform_3x4Matrix_WideColor.
+
 
 ### -field Reserved
 
 This value is reserved for system use.
 
+
 ### -field Value
 
 The combined UINT value.
+
 
 ## -remarks
 
@@ -100,6 +108,7 @@ The combined UINT value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

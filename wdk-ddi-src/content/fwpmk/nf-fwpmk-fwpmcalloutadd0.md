@@ -7,7 +7,7 @@ old-location: netvista\fwpmcalloutadd0.htm
 old-project: netvista
 ms.assetid: f88a31c4-f42c-487d-b6d8-f8f609f2faff
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmCalloutAdd0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>FwpmCalloutAdd0</b> function adds a callout to the filter engine.
 
 
+
 ## -syntax
 
 ````
@@ -62,16 +63,19 @@ A handle for an open session to the filter engine. A callout driver calls the
      <a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a> function to open a
      session to the filter engine.
 
+
 ### -param callout [in]
 
 A pointer to a constant 
      <a href="netvista.fwpm_callout0">FWPM_CALLOUT0</a> structure that contains the
      data that is required to add the callout to the filter engine.
 
+
 ### -param sd [in, optional]
 
 A pointer to a constant <a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor for
      the callout that is being added to the filter engine. This parameter is optional and can be <b>NULL</b>.
+
 
 ### -param id [out, optional]
 
@@ -81,6 +85,7 @@ A pointer to a UINT32-typed variable that receives a run-time identifier that id
      identifier to the 
      <a href="netvista.fwpmcalloutdeletebyid0">FwpmCalloutDeleteById0</a> function
      when removing the callout from the filter engine. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 The 
@@ -101,6 +106,7 @@ The
 
  
 
+
 ## -remarks
 A callout driver calls the 
     <b>FwpmCalloutAdd0</b> function to add a callout to the filter engine.
@@ -114,11 +120,13 @@ A callout and filters that specify the callout for the filter's action can be ad
     <b>FWP_ACTION_BLOCK</b> and filters with an action type of <b>FWP_ACTION_CALLOUT_INSPECTION</b> are ignored until the
     callout is registered with the filter engine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -129,14 +137,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,6 +158,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -157,9 +169,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -183,5 +197,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmCalloutAdd0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmCalloutAdd0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

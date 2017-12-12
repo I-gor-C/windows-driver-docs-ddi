@@ -42,6 +42,7 @@ The L2CAP_DISCONNECT_REASON enumeration type gives the reason an L2CAP channel h
   disconnected.
 
 
+
 ## -syntax
 
 ````
@@ -61,19 +62,23 @@ typedef enum _L2CAP_DISCONNECT_REASON {
 The value specifies for the profile driver that the Bluetooth driver stack has received a
      disconnect notification from the host controller interface (HCI) layer.
 
+
 ### -field L2capDisconnectRequest
 
 This value specifies for the profile driver that a disconnect request has been received from a
      remote device.
 
+
 ### -field RadioPoweredDown
 
 This value specifies for the profile driver that the local radio has been turned off.
+
 
 ### -field HardwareRemoval
 
 This value specifies for the profile driver that the local radio has been physically
      removed.
+
 
 ## -remarks
 A value from this enumeration is used as the 
@@ -89,19 +94,23 @@ Currently,
     <i>L2capDisconnectRequest</i> are the only values the Bluetooth driver stack passes to the 
     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +127,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_DISCONNECT_REASON enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

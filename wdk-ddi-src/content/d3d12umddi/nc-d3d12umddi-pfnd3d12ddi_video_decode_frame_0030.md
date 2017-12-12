@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_video_decode_frame_0030.htm
 old-project: display
 ms.assetid: 6BC35C7C-8E27-45FF-B406-BCE6E486E115
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to decode a video frame.
 
 
+
 ## -prototype
 
 ````
@@ -60,24 +61,30 @@ VOID APIENTRY* PFND3D12DDI_VIDEO_DECODE_FRAME_0030(
 
 The command list.
 
+
 ### -param hDrvDecoder 
 
 The video decoder.
+
 
 ### -param SubmissionID 
 
 The submission ID.
 
+
 ### -param pOutputStreamParameters 
 
 The output arguments for the video decode.
+
 
 ### -param pInputStreamParameters 
 
 The input arguments for the video decode.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -87,6 +94,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

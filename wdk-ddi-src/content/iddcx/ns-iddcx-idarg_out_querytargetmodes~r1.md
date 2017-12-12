@@ -7,7 +7,7 @@ old-location: display\idarg_out_querytargetmodes.htm
 old-project: display
 ms.assetid: 427af891-1fb7-4042-89bc-a40191ec5a31
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_QUERYTARGETMODES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the number of target modes provided by the OS.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct IDARG_OUT_QUERYTARGETMODES {
 
                        [out] If the OS provides the number of target modes, the driver sets this to that value. 
 
+
 ## -remarks
 
 
@@ -66,6 +68,7 @@ typedef struct IDARG_OUT_QUERYTARGETMODES {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

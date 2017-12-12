@@ -7,7 +7,7 @@ old-location: storage\scsi_wmilib_context.htm
 old-project: storage
 ms.assetid: 7886cee8-1142-42e6-8206-84667621ba77
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SCSIWMILIB_CONTEXT, *PSCSI_WMILIB_CONTEXT, SCSI_WMILIB_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A SCSI_WMILIB_CONTEXT structure provides registration information for a miniport driver's data and event blocks and defines entry points for the miniport driver's <b>HwScsiWmi</b><b><i>Xxx</i></b> callback routines. 
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ typedef struct _SCSIWMILIB_CONTEXT {
 
 Specifies the number of structures in the SCSIWMIGUIDREGINFO array at <b>GuidList</b>.
 
+
 ### -field GuidList
 
 Points to an array of <b>GuidCount</b> SCSIWMIGUIDREGINFO structures that contain registration information for each block.
+
 
 ### -field QueryWmiRegInfo
 
 Points to the driver's <a href="storage.hwscsiwmiqueryreginfo">HwScsiWmiQueryReginfo</a> routine, which is a required entry point for miniport drivers that support WMI.
 
+
 ### -field QueryWmiDataBlock
 
 Points to the driver's <a href="storage.hwscsiwmiquerydatablock">HwScsiWmiQueryDataBlock</a> routine, which is a required entry point for miniport drivers that support WMI.
+
 
 ### -field SetWmiDataBlock
 
 Points to the driver's <a href="storage.hwscsiwmisetdatablock">HwScsiWmiSetDataBlock</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>
 
+
 ### -field SetWmiDataItem
 
 Points to the driver's <a href="storage.hwscsiwmisetdataitem">HwScsiWmiSetDataItem</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>.
+
 
 ### -field ExecuteWmiMethod
 
 Points to the driver's <a href="storage.hwscsiwmiexecutemethod">HwScsiWmiExecuteMethod</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>
 
+
 ### -field WmiFunctionControl
 
 Points to the driver's <a href="storage.hwscsiwmifunctioncontrol">HwScsiWmiFunctionControl</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>. 
+
 
 ## -remarks
 A SCSI miniport driver that supports WMI stores an initialized SCSI_WMILIB_CONTEXT structure (or a pointer to such a structure) in its device extension. A miniport driver can use the same SCSI_WMILIB_CONTEXT structure for multiple device objects if each device object supplies the same set of data blocks. 
@@ -99,11 +108,13 @@ When the miniport driver receives an SRB in which the <b>Function</b> member is 
 
 If the miniport driver does not implement an optional HwScsiWmiXxx routine, the port driver returns an appropriate status to the caller.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,5 +152,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_WMILIB_CONTEXT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_WMILIB_CONTEXT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

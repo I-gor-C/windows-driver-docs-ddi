@@ -7,7 +7,7 @@ old-location: display\idarg_in_updatemodes.htm
 old-project: display
 ms.assetid: d18f1da0-0cd0-48bf-bf01-a80887b6b2ac
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_UPDATEMODES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the target modes that will be updated by the driver.
 
 
+
 ## -syntax
 
 ````
@@ -61,16 +62,19 @@ typedef struct IDARG_IN_UPDATEMODES {
                      Indicates the reason why the driver is updating the modes.
                  
 
+
 ### -field TargetModeCount
 
 
                      [in] Number of target modes in the <b>pTargetModes</b> buffer.  This cannot be zero.
+
 
 ### -field pTargetModes
 
 
                      [in] Pointer to the buffer that the driver should copy the target modes it supports for this monitor into.
                  
+
 
 ## -remarks
 
@@ -80,6 +84,7 @@ typedef struct IDARG_IN_UPDATEMODES {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

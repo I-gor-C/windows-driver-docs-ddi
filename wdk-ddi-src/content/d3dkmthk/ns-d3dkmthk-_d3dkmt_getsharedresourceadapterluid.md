@@ -7,7 +7,7 @@ old-location: display\d3dkmt_getsharedresourceadapterluid.htm
 old-project: display
 ms.assetid: b7f9413b-3d57-47c4-a8a4-3288cb03af21
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_GETSHAREDRESOURCEADAPTERLUID, D3DKMT_GETSHAREDRESOURCEADAPTERLUID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Provides information that describes a shared resource and the graphics adapter that the resource was created on.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3DKMT_GETSHAREDRESOURCEADAPTERLUID {
 
 [in] A handle to the shared resource.
 
+
 ### -field hNtHandle
 
 [in] An NT handle to the process.
 
+
 ### -field AdapterLuid
 
 [out] A LUID that serves as an identifier for the device that the resource indicated by <b>hGlobalShare</b> was created on. <b>LUID</b> is defined in Dxgi.h.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ typedef struct _D3DKMT_GETSHAREDRESOURCEADAPTERLUID {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

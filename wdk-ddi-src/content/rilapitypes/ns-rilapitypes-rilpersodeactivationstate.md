@@ -7,8 +7,8 @@ old-location: netvista\rilpersodeactivationstate_2.htm
 old-project: netvista
 ms.assetid: fb8950ef-7e46-45eb-b23f-5431488e1954
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILPERSODEACTIVATIONSTATE, *LPRILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE
+ms.date: 12/8/2017
+ms.keywords: RILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE, *LPRILPERSODEACTIVATIONSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef struct _RILPERSODEACTIVATIONSTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

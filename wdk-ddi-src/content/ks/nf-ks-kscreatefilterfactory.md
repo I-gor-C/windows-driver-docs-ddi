@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The<b> KsCreateFilterFactory</b> function adds a filter factory to a given device.
 
 
+
 ## -syntax
 
 ````
@@ -63,21 +64,26 @@ NTSTATUS KsCreateFilterFactory(
 
 A pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure for which to add a filter factory. 
 
+
 ### -param Descriptor [in]
 
 A pointer to a <a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a> that describes the characteristics of individual filters that this factory can create.
+
 
 ### -param RefString [in, optional]
 
 If this argument is provided, this string is used as the reference string for filters created by this factory. Otherwise, the reference GUID provided in the descriptor is used.
 
+
 ### -param SecurityDescriptor [in, optional]
 
 The security descriptor to use in creation of filters by this filter factory. If <b>NULL</b>, no descriptor is provided.
 
+
 ### -param CreateItemFlags [in]
 
 The following table lists the flags that the minidriver writer uses to specify the characteristics of filters that the new filter factory can create. Set this parameter to the bitwise OR of the flags below.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -86,41 +92,51 @@ The following table lists the flags that the minidriver writer uses to specify t
 <tr>
 <td>
 KSCREATE_ITEM_SECURITY_CHANGED
+
 </td>
 <td>
 Indicates that the security descriptor on this object type has been changed and should be persisted.
+
 </td>
 </tr>
 <tr>
 <td>
 KSCREATE_ITEM_WILDCARD
+
 </td>
 <td>
 Indicates that this create item represents a wildcard that is used for any create requests that do not match any other create items. The ordering of the wildcard entry in the list of create items is irrelevant. Only a single wildcard entry is valid on any list of create items.
+
 </td>
 </tr>
 <tr>
 <td>
 KSCREATE_ITEM_NOPARAMETERS
+
 </td>
 <td>
 Indicates that this create item does not allow any parameters to be passed, and fails if any are found. (Normally, create parameters are passed on to the create handler.) This flag cannot be used with a wildcard flag.
+
 </td>
 </tr>
 <tr>
 <td>
 KSCREATE_ITEM_FREEONSTOP
+
 </td>
 <td>
 Indicates that the create item should be freed when the PnP manager sends <a href="https://msdn.microsoft.com/library/windows/hardware/ff551755">IRP_MN_STOP_DEVICE</a>. Note that AVStream automatically frees such create items when the device receives PnP stop (<i>after</i> the client has received the PnP stop notification).
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param SleepCallback [in, optional]
 
 A pointer to a minidriver-provided routine that receives notifications that the device associated with this filter is going to sleep. Prototype the routine as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -134,9 +150,11 @@ A pointer to a minidriver-provided routine that receives notifications that the 
 </table></span></div>
 If this parameter is <b>NULL</b>, this filter factory is not notified that the device is going to sleep. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543162">Device Power States</a>.
 
+
 ### -param WakeCallback [in, optional]
 
 A pointer to a minidriver-provided routine that receives notifications that the device associated with this filter is waking up. Prototype the routine as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -150,12 +168,15 @@ A pointer to a minidriver-provided routine that receives notifications that the 
 </table></span></div>
 If this parameter is <b>NULL</b>, this filter factory is not notified that the device is waking up. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543162">Device Power States</a>. 
 
+
 ### -param FilterFactory [out, optional]
 
 A pointer to a <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> structure that AVStream sets to point to the newly created filter factory object. If this optional parameter is unspecified, the caller is not informed about the resulting filter factory object.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the filter factory can be created. Otherwise, it returns an appropriate error code.
+
 
 ## -remarks
 If you call <b>KsCreateFilterFactory</b> after <a href="stream.avstrminidevicepoststart">AVStrMiniDevicePostStart</a>), you must then call <a href="stream.ksfilterfactorysetdeviceclassesstate">KsFilterFactorySetDeviceClassesState</a> to enable the device class. (Also call <b>KsFilterFactorySetDeviceClassesState</b> to disable a filter factory.)
@@ -166,11 +187,13 @@ Before calling this function, the minidriver must obtain the device mutex. For i
 
 This function should be used by minidrivers that either initialize themselves without a call to <a href="stream.ksinitializedriver">KsInitializeDriver</a> or that must dynamically add and remove new filter types. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -181,14 +204,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -199,6 +225,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -209,9 +236,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -232,5 +261,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreateFilterFactory function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

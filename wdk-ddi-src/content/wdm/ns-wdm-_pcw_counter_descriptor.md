@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PCW_COUNTER_DESCRIPTOR structure supplies details about the notification to send.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _PCW_COUNTER_DESCRIPTOR {
 
 A numeric value that specifies the <b>Id</b> (identifier) associated with the instance of the counter set.
 
+
 ### -field StructIndex
 
 A numeric value that specifies the index into the array of structures that describe the counter set. 
+
 
 ### -field Offset
 
 A numeric value that indicates the end of the instance list for the counter set. The value is used to ensure that a new instance will always be added to the end of the list. 
 
+
 ### -field Size
 
 A numeric value that specifies the size, in bytes, associated with the instance of the counter set.
+
 
 ## -remarks
 
@@ -80,14 +85,17 @@ A numeric value that specifies the size, in bytes, associated with the instance 
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

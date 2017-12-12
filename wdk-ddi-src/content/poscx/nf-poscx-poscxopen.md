@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 PosCxOpen is called to create an open PosCx library instance. This function initializes all resources it needs to manage a single open instance. It should be called from the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_file_create.md">EVT_WDF_DEVICE_FILE_CREATE</a>   callback.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ NTSTATUS PosCxOpen(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param fileObject [in]
 
 A handle to a framework file object that identifies the caller associated with the open instance.
+
 
 ### -param deviceInterfaceTag [in]
 
 An identifier used to specify the caller's device interface in a multi-function device.  For a single-interface device, this value should be 0.
 
+
 ## -returns
 An appropriate NTSTATUS error code that indicates the open instance completion status.
+
 
 ## -remarks
 
@@ -78,14 +83,17 @@ An appropriate NTSTATUS error code that indicates the open instance completion s
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

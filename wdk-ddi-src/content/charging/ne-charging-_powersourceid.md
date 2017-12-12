@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This enum is for internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ enum  {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

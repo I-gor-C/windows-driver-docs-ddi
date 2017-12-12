@@ -7,7 +7,7 @@ old-location: print\bidi_type.htm
 old-project: print
 ms.assetid: ebb79ad6-91a1-4bdf-a6f6-7e04ed2358d9
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: BIDI_TYPE, BIDI_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation.
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ typedef enum  {
 
 Indicates that there is no data.
 
+
 ### -field BIDI_INT
 
 Indicates that the bidi data is an integer.
+
 
 ### -field BIDI_FLOAT
 
 Indicates that the bidi data is a floating-point number.
 
+
 ### -field BIDI_BOOL
 
 Indicates that the bidi data is either <b>TRUE</b> or <b>FALSE</b>.
+
 
 ### -field BIDI_STRING
 
 Indicates that the bidi data is a Unicode character string.
 
+
 ### -field BIDI_TEXT
 
 Indicates that the bidi data is a nonlocalizable Unicode string.
+
 
 ### -field BIDI_ENUM
 
 Indicates that the bidi data value is a Unicode string.
 
+
 ### -field BIDI_BLOB
 
 Indicates that the bidi data is binary data.
+
 
 ## -remarks
 The following correspondence applies between Simple Network Management Protocol (SNMP) types and bidi types defined in the BIDI_TYPE enumeration.
@@ -133,19 +142,23 @@ BIDI_FLOAT
 
 See the smiValue structure in the Microsoft Windows SDK documentation for descriptions of the WinSNMP data types.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This enumeration is available in Windows XP and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

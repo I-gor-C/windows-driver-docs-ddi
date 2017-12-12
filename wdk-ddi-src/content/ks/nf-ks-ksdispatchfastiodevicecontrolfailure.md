@@ -41,6 +41,7 @@ req.irql:
 The <b>KsDispatchFastIoDeviceControlFailure</b> function is used in a KSDISPATCH_TABLE.FastDeviceIoControl entry that are not handled. The function should always return <b>FALSE</b>. 
 
 
+
 ## -syntax
 
 ````
@@ -64,49 +65,61 @@ BOOLEAN KsDispatchFastIoDeviceControlFailure(
 
 Not used.
 
+
 ### -param Wait [in]
 
 Not used.
+
 
 ### -param InputBuffer [in, optional]
 
 Not used.
 
+
 ### -param InputBufferLength [in]
 
 Not used.
+
 
 ### -param OutputBuffer [out, optional]
 
 Not used.
 
+
 ### -param OutputBufferLength [in]
 
 Not used.
+
 
 ### -param IoControlCode [in]
 
 Not used.
 
+
 ### -param IoStatus [out]
 
 Not used.
+
 
 ### -param DeviceObject [in]
 
 Not used.
 
+
 ## -returns
 The <b>KsDispatchFastIoDeviceControlFailure</b> function returns <b>FALSE</b>.
 
+
 ## -remarks
 The <b>KsDispatchFastIoDeviceControlFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastIoDeviceControlFailure</b> function, that calls a dispatch table entry.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +130,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +141,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

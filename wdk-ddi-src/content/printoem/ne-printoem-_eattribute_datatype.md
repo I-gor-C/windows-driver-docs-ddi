@@ -7,7 +7,7 @@ old-location: print\eattribute_datatype.htm
 old-project: print
 ms.assetid: 51d3e768-11b1-411d-89b1-4fec19306b97
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _EATTRIBUTE_DATATYPE, EATTRIBUTE_DATATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The EATTRIBUTE_DATATYPE enumerates the possible data types for a global attribute, feature attribute or option attribute.
 
 
+
 ## -syntax
 
 ````
@@ -67,45 +68,56 @@ typedef enum _EATTRIBUTE_DATATYPE {
 
 The attribute is of unknown type.
 
+
 ### -field kADT_BOOL
 
 The attribute is of type BOOL.
+
 
 ### -field kADT_INT
 
 The attribute is of type INT.
 
+
 ### -field kADT_LONG
 
 The attribute is of type LONG.
+
 
 ### -field kADT_DWORD
 
 The attribute is of type DWORD.
 
+
 ### -field kADT_ASCII
 
 The attribute is an ASCII string. 
+
 
 ### -field kADT_UNICODE
 
 The attribute is a Unicode string.
 
+
 ### -field kADT_BINARY
 
 The attribute consists of binary data.
+
 
 ### -field kADT_SIZE
 
 The attribute is of type SIZE.
 
+
 ### -field kADT_RECT
 
 The attribute is of type RECT.
 
+
 ### -field kADT_CUSTOMSIZEPARAMS
 
 The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="print.customsizeparam">CUSTOMSIZEPARAM</a> structure.
+
 
 ## -remarks
 
@@ -115,6 +127,7 @@ The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in prin
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +144,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EATTRIBUTE_DATATYPE enumeration%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EATTRIBUTE_DATATYPE enumeration%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

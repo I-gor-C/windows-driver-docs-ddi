@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The POS_CX_EVENT_DEST defines which applications receive this event.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _POS_CX_EVENT_DEST {
 
 Specifies that no devices will receive this event.  This value should not be used.
 
+
 ### -field POS_CX_EVENT_DEST_DEVICE_OWNER
 
 Specifies that only the current claim owner will receive this event.
 
+
 ### -field POS_CX_EVENT_DEST_ALL
 
 Specifies that the event will be broadcast to all client handles.
+
 
 ## -remarks
 
@@ -75,14 +79,17 @@ Specifies that the event will be broadcast to all client handles.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

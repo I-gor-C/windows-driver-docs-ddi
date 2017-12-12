@@ -7,8 +7,8 @@ old-location: print\ibidirequestcontainer.htm
 old-project: print
 ms.assetid: 21dfcbe8-2fc1-4495-af54-5d4c83b8bb79
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+ms.date: 12/9/2017
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>IBidiRequestContainer</b> interface allows an application or other objects to compose and retrieve a list of bidi requests.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IBidiRequestContainer</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IBidiRequestContainer</b> also has these types of members:
 
@@ -53,6 +54,7 @@ Enumerates the number of requests in the list.
 Gets the number of requests in the list.
 
  
+
 
 ## -members
 The <b>IBidiRequestContainer</b> interface has these methods.
@@ -67,6 +69,7 @@ The <b>IBidiRequestContainer</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Adds a request to the request list.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -75,6 +78,7 @@ Adds a request to the request list.
 </td>
 <td align="left" width="63%">
 Enumerates the number of requests in the list.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -83,6 +87,7 @@ Enumerates the number of requests in the list.
 </td>
 <td align="left" width="63%">
 Gets the number of requests in the list.
+
 </td>
 </tr>
 </table>Adds a request to the request list.
@@ -93,6 +98,7 @@ Gets the number of requests in the list.
 
  
 
+
 ## -remarks
 
 
@@ -101,22 +107,27 @@ Gets the number of requests in the list.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows XP
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2003
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +150,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiRequestContainer interface%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiRequestContainer interface%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

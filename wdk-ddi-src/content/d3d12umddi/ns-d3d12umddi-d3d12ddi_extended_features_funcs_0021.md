@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_extended_features_funcs_0021.htm
 old-project: display
 ms.assetid: 9E2D8EF5-18D0-4BC5-ADCA-3D3BE76D3BF1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_EXTENDED_FEATURES_FUNCS_0021, D3D12DDI_EXTENDED_FEATURES_FUNCS_0021
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies callback functions for extended features.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct D3D12DDI_EXTENDED_FEATURES_FUNCS_0021 {
 
 A callback function that gets supported extended features.
 
+
 ### -field pfnGetSupportedExtendedFeatureVersions
 
 A callback function that gets supported versions of extended features.
+
 
 ### -field pfnEnableExtendedFeature
 
 A callback function that enables an extended feature.
 
+
 ### -field pfnSetExtendedFeatureCallbacks
 
 A callback function that sets extended feature callbacks function. 
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ A callback function that sets extended feature callbacks function.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

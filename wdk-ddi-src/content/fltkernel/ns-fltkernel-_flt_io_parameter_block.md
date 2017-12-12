@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: a62f6db3-baca-492a-b485-062fcc69f563
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK
+ms.keywords: _FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure. 
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 ### -field IrpFlags
 
 A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The following table shows flag values. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -70,153 +72,191 @@ A bitmask of flags that specify various aspects of the I/O operation. These flag
 <tr>
 <td>
 IRP_BUFFERED_IO
+
 </td>
 <td>
 The operation is a buffered I/O operation. 
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_CLOSE_OPERATION
+
 </td>
 <td>
 The operation is a cleanup or close operation. 
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_DEALLOCATE_BUFFER
+
 </td>
 <td>
 The I/O Manager will free the buffer during the completion phase for the IRP.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_INPUT_OPERATION
+
 </td>
 <td>
 The operation is an input operation.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_NOCACHE
+
 </td>
 <td>
 The operation is a noncached I/O operation.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_PAGING_IO
+
 </td>
 <td>
 The operation is a paging I/O operation.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_SYNCHRONOUS_API
+
 </td>
 <td>
 The I/O operation is synchronous.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_SYNCHRONOUS_PAGING_IO
+
 </td>
 <td>
 The operation is a synchronous paging I/O operation.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_MOUNT_COMPLETION
+
 </td>
 <td>
 A volume mount  is completed for the operation. 
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_CREATE_OPERATION
+
 </td>
 <td>
 The operation is a create or open operation. 
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_READ_OPERATION
+
 </td>
 <td>
 The I/O operation is for reading.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_WRITE_OPERATION
+
 </td>
 <td>
 The I/O operation is for writing.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_DEFER_IO_COMPLETION
+
 </td>
 <td>
 I/O Completion of the operation is deferred.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_ASSOCIATED_IRP
+
 </td>
 <td>
 The operation is associated with a master IRP.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_OB_QUERY_NAME
+
 </td>
 <td>
 The operation is an asynchronous name query.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_HOLD_DEVICE_QUEUE
+
 </td>
 <td>
 Reserved.
+
 </td>
 </tr>
 <tr>
 <td>
 IRP_UM_DRIVER_INITIATED_IO
+
 </td>
 <td>
 The operation originated from a user mode driver.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field MajorFunction
 
 The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="ifsk.flt_parameters">FLT_PARAMETERS</a>.
+
 
 ### -field MinorFunction
 
 The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="ifsk.flt_parameters">FLT_PARAMETERS</a>. 
 
+
 ### -field OperationFlags
 
 A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="kernel.io_stack_location">IO_STACK_LOCATION</a> structure that is associated with the <a href="kernel.irp">IRP</a>. The following table shows the most commonly used flag values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -225,125 +265,156 @@ A bitmask of flags that specify various aspects of the I/O operation. These flag
 <tr>
 <td>
 SL_CASE_SENSITIVE
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, file name comparisons should be case-sensitive. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_EXCLUSIVE_LOCK
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>. If this flag is set, an exclusive byte-range lock is requested. Otherwise, a shared lock is requested. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_FAIL_IMMEDIATELY
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>. If this flag is set, the lock request should fail if it cannot be granted immediately. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_FORCE_ACCESS_CHECK
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, access checks must be performed even if the value of the IRP's <b>RequestorMode</b> member is <b>KernelMode</b>. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_FORCE_DIRECT_WRITE
+
 </td>
 <td>
 Used for IRP_MJ_WRITE and IOCTL_DISK_COPY_DATA.  If this flag is set, kernel-mode drivers can write to volume areas that they normally cannot write to because of direct write blocking. Direct write blocking was implemented for security reasons in Windows Vista and later operating systems.  This flag is checked both at the file system layer and storage stack layer.  For more information about this flag, see <a href="storage.blocking_direct_write_operations_to_volumes_and_disks">Blocking Direct Write Operations to Volumes and Disks</a>. The SL_FORCE_DIRECT_WRITE flag is available in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <td>
 SL_INDEX_SPECIFIED
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>, and <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should begin at the entry in the list whose index is specified. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_OPEN_PAGING_FILE
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, the file is a paging file. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_OPEN_TARGET_DIRECTORY
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, the file's parent directory should be opened. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_OVERRIDE_VERIFY_VOLUME
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_read">IRP_MJ_READ</a>, and <a href="ifsk.irp_mj_write">IRP_MJ_WRITE</a>. If this flag is set, the I/O operation should be performed even if the DO_VERIFY_VOLUME flag is set on the volume's device object. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_RESTART_SCAN
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>, and <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should begin at the first entry in the directory or list. Otherwise, the scan should be resumed from the previous scan. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_RETURN_SINGLE_ENTRY
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>, and <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should return only the first entry that is found. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_WATCH_TREE
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>. If this flag is set, all subdirectories of this directory should also be watched. Otherwise, only the directory itself is to be watched. 
+
 </td>
 </tr>
 <tr>
 <td>
 SL_WRITE_THROUGH
+
 </td>
 <td>
 Used for <a href="ifsk.irp_mj_write">IRP_MJ_WRITE</a>. If this flag is set, the file data must be written through to persistent storage, not just written to the cache. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Reserved
 
 Reserved for system use. Do not use. 
+
 
 ### -field TargetFileObject
 
 A file object pointer for the file or directory that is the target for this I/O operation. 
 
+
 ### -field TargetInstance
 
 An opaque instance pointer for the minifilter that is the target for this I/O operation. 
 
+
 ### -field Parameters
 
 An <a href="ifsk.flt_parameters">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members. 
+
 
 ## -remarks
 The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure. The callback data structure contains a pointer to the FLT_IO_PARAMETER_BLOCK structure in its  <b>Iopb</b> member. 
@@ -392,11 +463,13 @@ A minifilter can initiate an I/O operation by calling a support routine such as 
 <div> </div>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -524,5 +597,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_IO_PARAMETER_BLOCK structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

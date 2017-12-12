@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Irb.h header
 
+## -description
 
 This header is used by Storage. For more information, see
 - [Storage](../_storage/index.md)
@@ -76,41 +81,40 @@ Irb.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [IDE_ADAPTER_CONTROL callback](nc-irb-ide-adapter-control.md) | The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_CHANNEL_ENABLED callback](nc-irb-ide-channel-enabled.md) | The AtaControllerChannelEnabled miniport driver routine indicates whether the specified channel is enabled.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_CHANNEL_INIT callback](nc-irb-ide-channel-init.md) | The AtaChannelInitRoutine miniport driver routine initializes the miniport driver's channel interface.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_HW_BUILDIO callback](nc-irb-ide-hw-buildio.md) | The IdeHwBuildIo miniport driver routine is called one time for every incoming I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_HW_CONTROL callback](nc-irb-ide-hw-control.md) | The IdeHwControl miniport driver routine notifies the miniport driver about Plug and Play (PnP) and power events.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_HW_INITIALIZE callback](nc-irb-ide-hw-initialize.md) | The IdeHwInitialize miniport driver routine configures the indicated device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_HW_INTERRUPT callback](nc-irb-ide-hw-interrupt.md) | The IdeHwInterrupt miniport driver routine handles interrupts from the host bus adapter (HBA) to which the controller for the miniport driver is connected. |
-| [IDE_HW_RESET callback](nc-irb-ide-hw-reset.md) | The IdeHwReset miniport driver routine resets the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_HW_STARTIO callback](nc-irb-ide-hw-startio.md) | The IdeHwStartIo miniport driver routine processes the synchronized aspects of an I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_TRANSFER_MODE_SELECT callback](nc-irb-ide-transfer-mode-select.md) | The AtaControllerTransferModeSelect miniport driver routine selects the transfer mode for all devices on the indicated ATA channel and programs the controller for the selected transfer mode.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
+| [IDE_ADAPTER_CONTROL callback](nc-irb-ide_adapter_control.md) | The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_CHANNEL_ENABLED callback](nc-irb-ide_channel_enabled.md) | The AtaControllerChannelEnabled miniport driver routine indicates whether the specified channel is enabled.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_CHANNEL_INIT callback](nc-irb-ide_channel_init.md) | The AtaChannelInitRoutine miniport driver routine initializes the miniport driver's channel interface.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_HW_BUILDIO callback](nc-irb-ide_hw_buildio.md) | The IdeHwBuildIo miniport driver routine is called one time for every incoming I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_HW_CONTROL callback](nc-irb-ide_hw_control.md) | The IdeHwControl miniport driver routine notifies the miniport driver about Plug and Play (PnP) and power events.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_HW_INITIALIZE callback](nc-irb-ide_hw_initialize.md) | The IdeHwInitialize miniport driver routine configures the indicated device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_HW_INTERRUPT callback](nc-irb-ide_hw_interrupt.md) | The IdeHwInterrupt miniport driver routine handles interrupts from the host bus adapter (HBA) to which the controller for the miniport driver is connected. |
+| [IDE_HW_RESET callback](nc-irb-ide_hw_reset.md) | The IdeHwReset miniport driver routine resets the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_HW_STARTIO callback](nc-irb-ide_hw_startio.md) | The IdeHwStartIo miniport driver routine processes the synchronized aspects of an I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_TRANSFER_MODE_SELECT callback](nc-irb-ide_transfer_mode_select.md) | The AtaControllerTransferModeSelect miniport driver routine selects the transfer mode for all devices on the indicated ATA channel and programs the controller for the selected transfer mode.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [IDEREGISTERS structure](ns-irb--ideregisters.md) | The IDEREGISTERS structure is used to report the contents of the IDE controller registers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_ACCESS_RANGE structure](ns-irb--ide-access-range.md) | The IDE_ACCESS_RANGE structure contains the address ranges allocated for an IDE controller.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_CHANNEL_CONFIGURATION structure](ns-irb--ide-channel-configuration.md) | The IDE_CHANNEL_CONFIGURATION structure contains configuration information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_CHANNEL_INTERFACE structure](ns-irb--ide-channel-interface.md) | The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_CONTROLLER_CONFIGURATION structure](ns-irb--ide-controller-configuration.md) | The IDE_CONTROLLER_CONFIGURATION structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_CONTROLLER_INTERFACE structure](ns-irb--ide-controller-interface.md) | The IDE_CONTROLLER_INTERFACE structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_DEVICE_PARAMETERS structure](ns-irb--ide-device-parameters.md) | The IDE_DEVICE_PARAMETERS structure contains configuration information that the port driver provides to the miniport driver to configure a device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_LBA_RANGE structure](ns-irb--ide-lba-range.md) | The IDE_LBA_RANGE structure is used by the port driver to provide the miniport driver with a range of logical blocks.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_MINIPORT_RESOURCES structure](ns-irb--ide-miniport-resources.md) | The IDE_MINIPORT_RESOURCES structure is used by the port driver to provide the miniport driver with resources.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_POWER_INFO structure](ns-irb--ide-power-info.md) | The POWER_CHANGE_INFO structure is used in conjunction with the IDE_REQUEST_BLOCK to request a power state change.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_REQUEST_BLOCK structure](ns-irb--ide-request-block.md) | The IDE_REQUEST_BLOCK structure defines an IDE request block.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_TASK_FILE structure](ns-irb--ide-task-file.md) | The IDE_TASK_FILE structure contains the current and previous IDE task file.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_TRANSFER_MODE_PARAMETERS structure](ns-irb--ide-transfer-mode-parameters.md) | The IDE_TRANSFER_MODE_PARAMETERS structure is used in conjunction with the miniport driver's AtaControllerTransferModeSelect routine to set the transfer mode parameters on a channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
+| [_IDEREGISTERS structure](ns-irb-_ideregisters.md) | The IDEREGISTERS structure is used to report the contents of the IDE controller registers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_ACCESS_RANGE structure](ns-irb-_ide_access_range.md) | The IDE_ACCESS_RANGE structure contains the address ranges allocated for an IDE controller.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_CHANNEL_CONFIGURATION structure](ns-irb-_ide_channel_configuration.md) | The IDE_CHANNEL_CONFIGURATION structure contains configuration information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_CHANNEL_INTERFACE structure](ns-irb-_ide_channel_interface.md) | The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_CONTROLLER_CONFIGURATION structure](ns-irb-_ide_controller_configuration.md) | The IDE_CONTROLLER_CONFIGURATION structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_CONTROLLER_INTERFACE structure](ns-irb-_ide_controller_interface.md) | The IDE_CONTROLLER_INTERFACE structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_DEVICE_PARAMETERS structure](ns-irb-_ide_device_parameters.md) | The IDE_DEVICE_PARAMETERS structure contains configuration information that the port driver provides to the miniport driver to configure a device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_LBA_RANGE structure](ns-irb-_ide_lba_range.md) | The IDE_LBA_RANGE structure is used by the port driver to provide the miniport driver with a range of logical blocks.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_MINIPORT_RESOURCES structure](ns-irb-_ide_miniport_resources.md) | The IDE_MINIPORT_RESOURCES structure is used by the port driver to provide the miniport driver with resources.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_REQUEST_BLOCK structure](ns-irb-_ide_request_block.md) | The IDE_REQUEST_BLOCK structure defines an IDE request block.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_TASK_FILE structure](ns-irb-_ide_task_file.md) | The IDE_TASK_FILE structure contains the current and previous IDE task file.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [_IDE_TRANSFER_MODE_PARAMETERS structure](ns-irb-_ide_transfer_mode_parameters.md) | The IDE_TRANSFER_MODE_PARAMETERS structure is used in conjunction with the miniport driver's AtaControllerTransferModeSelect routine to set the transfer mode parameters on a channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [ATA_ADDRESS_TRANSLATION enumeration](ne-irb-ata-address-translation.md) | The ATA_ADDRESS_TRANSLATION enumeration type indicates the type of address translation used during data transfers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [ATA_CHANNEL_STATE enumeration](ne-irb-ata-channel-state.md) | The ATA_CHANNEL_STATE enumeration type indicates the state of the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_CONTROL_ACTION enumeration](ne-irb-ide-control-action.md) | The IDE_CONTROL_ACTION enumeration type indicates the control action to be performed by a IdeHwControl routine.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_DEVICE_TYPE enumeration](ne-irb-ide-device-type.md) | The IDE_DEVICE_TYPE enumeration type indicates the device type.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
-| [IDE_POWER_STATE enumeration](ne-irb-ide-power-state.md) | The IDE_POWER_STATE enumeration type indicates that power state of the device. |
+| [ATA_ADDRESS_TRANSLATION enumeration](ne-irb-ata_address_translation.md) | The ATA_ADDRESS_TRANSLATION enumeration type indicates the type of address translation used during data transfers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [ATA_CHANNEL_STATE enumeration](ne-irb-ata_channel_state.md) | The ATA_CHANNEL_STATE enumeration type indicates the state of the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_CONTROL_ACTION enumeration](ne-irb-ide_control_action.md) | The IDE_CONTROL_ACTION enumeration type indicates the control action to be performed by a IdeHwControl routine.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_DEVICE_TYPE enumeration](ne-irb-ide_device_type.md) | The IDE_DEVICE_TYPE enumeration type indicates the device type.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
+| [IDE_POWER_STATE enumeration](ne-irb-ide_power_state.md) | The IDE_POWER_STATE enumeration type indicates that power state of the device. |

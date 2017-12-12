@@ -7,8 +7,8 @@ old-location: display\video_port_agp_interface.htm
 old-project: display
 ms.assetid: a2be4958-3f11-4b9d-9c0c-c339ebbbce04
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _VIDEO_PORT_AGP_INTERFACE, VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE
+ms.date: 12/8/2017
+ms.keywords: _VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE, VIDEO_PORT_AGP_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The VIDEO_PORT_AGP_INTERFACE structure describes the AGP service routines provided by the video port driver.
 
 
+
 ## -syntax
 
 ````
@@ -70,66 +71,82 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 
 Specifies the size in bytes of this structure.
 
+
 ### -field Version
 
 Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_AGP_INTERFACE_<i>N</i>.
+
 
 ### -field Context
 
 Pointer to a video port driver-defined context for the interface.
 
+
 ### -field InterfaceReference
 
 Pointer to the video port driver-implemented reference routine for this interface.
+
 
 ### -field InterfaceDereference
 
 Pointer to the video port driver-implemented dereference routine for this interface.
 
+
 ### -field AgpReservePhysical
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> routine.
+
 
 ### -field AgpReleasePhysical
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a> routine.
 
+
 ### -field AgpCommitPhysical
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a> routine.
+
 
 ### -field AgpFreePhysical
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a> routine.
 
+
 ### -field AgpReserveVirtual
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a> routine.
+
 
 ### -field AgpReleaseVirtual
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a> routine.
 
+
 ### -field AgpCommitVirtual
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a> routine.
+
 
 ### -field AgpFreeVirtual
 
 Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a> routine.
 
+
 ### -field AgpAllocationLimit
 
 Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.
 
+
 ## -remarks
 PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="display.videoportqueryservices">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,5 +166,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_AGP_INTERFACE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_AGP_INTERFACE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

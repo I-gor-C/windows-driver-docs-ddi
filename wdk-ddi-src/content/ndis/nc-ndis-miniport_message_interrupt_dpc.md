@@ -7,7 +7,7 @@ old-location: netvista\miniportmessageinterruptdpc.htm
 old-project: netvista
 ms.assetid: c1eca20b-eda1-442c-8644-798fa864d5d7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ A miniport driver must provide a
    to register an interrupt.
 
 
+
 ## -prototype
 
 ````
@@ -70,6 +71,7 @@ A handle to a block of interrupt context information. The miniport driver suppli
      <a href="netvista.ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
+
 ### -param MessageId [in]
 
 A message-signaled interrupt (MSI) message identifier. 
@@ -82,6 +84,7 @@ A message-signaled interrupt (MSI) message identifier.
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
      <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a> function.
 
+
 ### -param MiniportDpcContext [in]
 
 A pointer to a context area that the miniport driver supplied when it called the 
@@ -93,6 +96,7 @@ A pointer to a context area that the miniport driver supplied when it called the
      MiniportMessageInterrupt</a> function, then 
      <i>MiniportDpcContext</i> is <b>NULL</b>.
 
+
 ### -param ReceiveThrottleParameters [in]
 
 A pointer to an 
@@ -100,17 +104,20 @@ A pointer to an
      NDIS_RECEIVE_THROTTLE_PARAMETERS</a> structure specifies the maximum number of 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that a miniport
      driver should indicate in a DPC.
+
 <div class="alert"><b>Note</b>  In NDIS 6.1 and earlier, this parameter is named <i>NdisReserved1</i>, its datatype is <b>PULONG</b>, and it is reserved for NDIS.</div>
 <div> </div>
 
 ### -param NdisReserved2 [in]
 
 Reserved for NDIS.
+
 <div class="alert"><b>Note</b>  In NDIS 6.1 and earlier, this parameter's datatype is <b>PULONG</b>.</div>
 <div> </div>
 
 ## -returns
 None
+
 
 ## -remarks
 Miniport drivers that register a message-signaled interrupt with the 
@@ -189,19 +196,23 @@ The <b>MINIPORT_MESSAGE_INTERRUPT_DPC</b> function type is defined in the Ndis.h
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -212,9 +223,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -269,5 +282,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_MESSAGE_INTERRUPT_DPC callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_MESSAGE_INTERRUPT_DPC callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

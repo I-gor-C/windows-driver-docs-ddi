@@ -41,6 +41,7 @@ req.irql:
 The <b>eChannelTargetType</b> enumeration defines constants that specify a type of node (target) in a given channel.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _eChannelTargetType {
 
 Indicates a volume level control node.
 
+
 ### -field eMuteAttribute
 
 Indicates a Mute node.
 
+
 ### -field ePeakMeterAttribute
 
 Indicates a PeakMeter node.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Indicates a PeakMeter node.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

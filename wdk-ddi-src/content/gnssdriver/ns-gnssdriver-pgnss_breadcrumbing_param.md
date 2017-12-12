@@ -41,6 +41,7 @@ req.irql:
 This structure contains the configuration passed into the start of breadcrumbing via <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_start_breadcrumbing.md">IOCTL_GNSS_START_BREADCRUMBING</a>.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field MaximumHorizontalUncertainty
 
 Contains the maximum horizontal uncertainty value. Any fix with an error radius larger than this value shall not be recorded.
 
+
 ### -field MinDistanceBetweenFixes
 
 Contains the minimum distance between fixes. Only record a fix if the center of it is at least as  far apart as this value from center of the last fix, using a Haversine distance calculation.
+
 
 ### -field MaximumErrorTimeoutMs
 
 Contains the maximum error timeout in milliseconds. If the location of the device is unknown for this duration, an error must be recorded in the breadcrumb data. Errors can be recorded earlier if they were already known.
 
+
 ### -field Unused[512]
 
 Padding buffer.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Padding buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

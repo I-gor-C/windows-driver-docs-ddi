@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_status_indication.htm
 old-project: netvista
 ms.assetid: a3841a14-0876-47f4-a4dc-6231b76086ca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_NIC_STATUS_INDICATION, *PNDIS_SWITCH_NIC_STATUS_INDICATION, NDIS_SWITCH_NIC_STATUS_INDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_SWITCH_NIC_STATUS_INDICATION structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 The <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure specifies the information that is required to forward or originate an NDIS status indication from an underlying physical network adapter.
+
 
 
 ## -syntax
@@ -61,13 +62,18 @@ typedef struct _NDIS_SWITCH_NIC_STATUS_INDICATION {
 ### -field Header
 
 The type, revision, and size of the <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
+
+
 
 
 ### -field NDIS_SWITCH_NIC_STATUS_INDICATION_REVISION_1
 
 Original version for NDIS 6.30 and later.
+
 Set the <b>Size</b> member to NDIS_SIZEOF_SWITCH_NIC_STATUS_REVISION_1.
+
 </dd>
 </dl>
 
@@ -77,9 +83,11 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 
 
 
+
 ### -field SourcePortId
 
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the Hyper-V extensible switch port from which the NDIS status indication was originally generated.
+
 
 
 
@@ -89,9 +97,11 @@ An NDIS_SWITCH_NIC_INDEX value that specifies the index of the source network ad
 
 
 
+
 ### -field DestinationPortId
 
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port to which the NDIS status indication is to be forwarded.
+
 
 
 
@@ -101,9 +111,11 @@ An NDIS_SWITCH_NIC_INDEX value that specifies the index of the destination netwo
 
 
 
+
 ### -field StatusIndication
 
 A pointer to an <a href="netvista.ndis_status_indication">NDIS_STATUS_INDICATION</a> structure. This structure contains the data for the NDIS status indication originally issued by the source network adapter as specified by the <b>SourcePortId</b> and <b>SourceNicIndex</b> members.
+
 
 ## -remarks
 The <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure is used in NDIS status indications of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598205">NDIS_STATUS_SWITCH_NIC_STATUS</a>.
@@ -120,19 +132,23 @@ Single root I/O virtualization (SR-IOV).
 
 For guidelines on how to issue NDIS status indications from underlying physical adapters, see <a href="netvista.managing_ndis_status_indications_from_physical_network_adapters">Managing NDIS Status Indications from Physical Network Adapters</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,5 +172,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_STATUS_INDICATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_STATUS_INDICATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

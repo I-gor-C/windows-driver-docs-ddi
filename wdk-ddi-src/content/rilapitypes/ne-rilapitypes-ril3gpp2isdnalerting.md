@@ -7,7 +7,7 @@ old-location: netvista\ril3gpp2isdnalerting_2.htm
 old-project: netvista
 ms.assetid: 9fff629b-ad85-4158-b8c4-f5f6abe8e3f5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RIL3GPP2ISDNALERTING, RIL3GPP2ISDNALERTING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef enum _RIL3GPP2ISDNALERTING {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

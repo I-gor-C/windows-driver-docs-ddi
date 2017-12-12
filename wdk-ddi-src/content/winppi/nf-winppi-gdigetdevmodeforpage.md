@@ -7,7 +7,7 @@ old-location: print\gdigetdevmodeforpage.htm
 old-project: print
 ms.assetid: 3410e8b1-820f-4892-8d26-d803e3f943da
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GdiGetDevmodeForPage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GdiGetDevmodeForPage</b> function returns <a href="display.devmodew">DEVMODEW</a> structures for the specified and previous pages of a print job.
 
 
+
 ## -syntax
 
 ````
@@ -60,20 +61,25 @@ BOOL GdiGetDevmodeForPage(
 
 Caller-supplied spool file handle, obtained by a previous call to <a href="print.gdigetspoolfilehandle">GdiGetSpoolFileHandle</a>.
 
+
 ### -param dwPageNumber 
 
 Caller-supplied number of the page for which <a href="display.devmodew">DEVMODEW</a> contents are to be returned.
+
 
 ### -param pCurrDM 
 
 Caller-supplied location to receive a pointer to a DEVMODE structure for the page specified by <i>dwPageNumber</i>.
 
+
 ### -param pLastDM 
 
 Caller-supplied location to receive a pointer to a DEVMODE structure for the page previous to the one specified by <i>dwPageNumber</i>.
 
+
 ## -returns
 If the operation succeeds, the function returns <b>TRUE</b>. Otherwise it returns <b>FALSE</b>.
+
 
 ## -remarks
 The <b>GdiGetDevmodeForPage</b> function is exported by gdi32.dll for use within a print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> function.
@@ -88,11 +94,13 @@ Call <a href="print.gdistartpageemf">GdiStartPageEMF</a>.
 
 For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +111,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +122,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +133,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

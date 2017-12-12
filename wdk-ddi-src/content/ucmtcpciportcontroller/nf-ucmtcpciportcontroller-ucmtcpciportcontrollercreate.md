@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Creates a port controller object to register with UcmTcpciCx. 
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ NTSTATUS UcmTcpciPortControllerCreate(
 
 A handle to a framework device object that the client driver received in the previous call to <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>. 
 
+
 ### -param Config 
 
 A pointer to the <a href="buses.ucmtcpci_port_controller_config">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> that is initialized by calling <b>UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT</b>. This value cannot be NULL.
+
 
 ### -param Attributes 
 
 A pointer to a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new object. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
 
+
 ### -param PortControllerObject 
 
 A pointer to a location that receives a handle to the new port controller object. 
+
 
 ## -returns
 
@@ -85,6 +90,7 @@ A pointer to a location that receives a handle to the new port controller object
 
  
 
+
 ## -remarks
 
 
@@ -93,22 +99,27 @@ A pointer to a location that receives a handle to the new port controller object
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +130,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -129,9 +141,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -149,5 +163,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UcmTcpciPortControllerCreate method%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\dxgk_monitor_interface_version.htm
 old-project: display
 ms.assetid: 76af0d70-f9bb-4768-9bfd-f2aaeb212db0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MONITOR_INTERFACE_VERSION, DXGK_MONITOR_INTERFACE_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration indicates a particular version of the <a href="display.monitor_interface">Monitor interface</a>.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef enum _DXGK_MONITOR_INTERFACE_VERSION {
 
 Indicates that a variable of type DXGK_MONITOR_INTERFACE_VERSION has not yet been assigned a meaningful value.
 
+
 ### -field DXGK_MONITOR_INTERFACE_VERSION_V1
 
 Indicates version 1, available in Windows Vista and later versions of the Windows operating systems.
+
 
 ### -field DXGK_MONITOR_INTERFACE_VERSION_V2
 
@@ -68,22 +71,27 @@ Indicates version 1, available in Windows Vista and later versions of the Window
       Indicates version 2, available in Windows 7 and later versions of the Windows operating systems.
      
 
+
 ## -remarks
 The <b>Version</b> member of the <a href="display.dxgk_monitor_interface">DXGK_MONITOR_INTERFACE</a> structure is a value from the <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

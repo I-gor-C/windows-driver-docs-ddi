@@ -42,7 +42,10 @@ req.product: Windows 10 or later.
 
 The ISensorDriver interface provides callback methods that the sensor class extension uses to provide requests and notifications to the sensor driver.
 
+
+
 The ISensorDriver interface provides callback methods that the sensor class extension uses to provide requests and notifications to the sensor driver.
+
 
 
 ## -inheritance
@@ -51,6 +54,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">ISensorDriver</b> interface i
 The <b>ISensorDriver</b> interface has these methods.
 
  
+
 
 ## -members
 The <b>ISensorDriver</b> interface has these methods.
@@ -133,6 +137,7 @@ The <b>ISensorDriver</b> interface has these methods.
 </tr>
 </table> 
 
+
 ## -remarks
 
 
@@ -141,6 +146,7 @@ The <b>ISensorDriver</b> interface has these methods.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,6 +157,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

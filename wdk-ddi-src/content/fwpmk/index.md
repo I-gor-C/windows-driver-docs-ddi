@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Fwpmk.h header
 
+## -description
 
 This header is used by Networking drivers for Windows Vista and later. For more information, see
 - [Networking drivers for Windows Vista and later](../_netvista/index.md)

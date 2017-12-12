@@ -7,7 +7,7 @@ old-location: display\d3dddicb_reclaimallocations2.htm
 old-project: display
 ms.assetid: 952935E2-3216-40E5-8A4E-AA5D5E584F12
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDICB_RECLAIMALLOCATIONS2, D3DDDICB_RECLAIMALLOCATIONS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 <b>D3DDDICB_RECLAIMALLOCATIONS2</b> is used with <a href="display.pfnreclaimallocations2cb">pfnReclaimAllocations2Cb</a> to describe video memory resources, previously offered for reuse by the driver,  that are to be reclaimed.
 
 
+
 ## -syntax
 
 ````
@@ -61,26 +62,32 @@ typedef struct _D3DDDICB_RECLAIMALLOCATIONS2 {
 
 [in] The paging queue, supplied by the user-mode driver, to page in the allocation list.
 
+
 ### -field NumAllocations
 
 [in]  The number of items in <b>pDiscarded</b> and whichever of <b>pResources</b> or <b>HandleList</b> is non-NULL.
+
 
 ### -field pResources
 
 [in]  An array of Direct3D runtime resource handles.
 
+
 ### -field HandleList
 
 [in]  An array of allocation handles. If non-NULL, <b>pResources</b> must be NULL.
+
 
 ### -field pDiscarded
 
 [out] Optional array of boolean values specifying whether each resource or allocation was discarded.
 
+
 ### -field PagingFenceValue
 
 [out] The paging fence to synchronize against before submitting work to the GPU which
                                                                            references any of the resources or allocations in the provided arrays
+
 
 ## -remarks
 
@@ -90,22 +97,27 @@ typedef struct _D3DDDICB_RECLAIMALLOCATIONS2 {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

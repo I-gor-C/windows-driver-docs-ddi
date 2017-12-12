@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreateallocation2.htm
 old-project: display
 ms.assetid: 416DE730-44A6-4BA3-BFC2-C11A179AD422
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTCreateAllocation2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Reserved for system use. Do not use in your driver.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ NTSTATUS APIENTRY D3DKMTCreateAllocation2(
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -73,14 +75,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +96,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +107,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

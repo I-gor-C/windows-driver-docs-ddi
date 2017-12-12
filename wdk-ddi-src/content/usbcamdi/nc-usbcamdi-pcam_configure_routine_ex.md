@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A camera minidriver's <b>CamConfigureEx</b> callback function configures the isochronous streaming interface.
 
 
+
 ## -prototype
 
 ````
@@ -66,32 +67,40 @@ NTSTATUS CamConfigureEx(
 
 Pointer to the camera minidriver's device object created by the USB hub.
 
+
 ### -param DeviceContext 
 
 Pointer to the camera minidriver's device context.
+
 
 ### -param Interface 
 
 Pointer to the <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.
 
+
 ### -param ConfigurationDescriptor 
 
 Pointer to the <a href="buses.usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a> for this device.
+
 
 ### -param PipeConfigListSize 
 
 Specifies the number of elements in the <i>PipeConfig</i> array.
 
+
 ### -param PipeConfig 
 
 Pointer to a <a href="stream.usbcamd_pipe_config_descriptor">USBCAMD_Pipe_Config_Descriptor</a> array describing the association between pipes and streams.
+
 
 ### -param DeviceDescriptor 
 
 Pointer to the <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a> for this device.
 
+
 ## -returns
 <b>CamConfigureEx</b> returns STATUS_SUCCESS or an appropriate error code.
+
 
 ## -remarks
 Camera minidrivers use <b>CamConfigureEx</b> to inform USBCAMD about the relationship between discovered pipes and streams.
@@ -104,11 +113,13 @@ The original USBCAMD does not call <b>CamConfigureEx</b>.
 
 This function is required.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +130,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,5 +159,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CamConfigureEx routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

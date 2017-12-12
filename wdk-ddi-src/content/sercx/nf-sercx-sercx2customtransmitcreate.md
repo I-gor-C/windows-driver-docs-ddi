@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SerCx2CustomTransmitCreate</b> method creates a custom-transmit object, which version 2 of the serial framework extension (SerCx2) uses to write transmit data to the serial controller by means of a custom data-transfer mechanism.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ NTSTATUS SerCx2CustomTransmitCreate(
 
 A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a>.
 
+
 ### -param CustomTransmitConfig [in]
 
 A pointer to a <a href="serports.sercx2_custom_transmit_config">SERCX2_CUSTOM_TRANSMIT_CONFIG</a> structure. Before calling this method, the caller must call the <a href="serports.sercx2_custom_transmit_config_init">SERCX2_CUSTOM_TRANSMIT_CONFIG_INIT</a> function to initialize the structure. This structure contains pointers to a set of event callback routines that are implemented by the serial controller driver. SerCx2 calls these functions to perform custom-transmit transactions.
+
 
 ### -param Attributes [in]
 
 A pointer to a <a href="kmdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes to assign to the new custom-transmit object. Before calling this method, the caller must call the <a href="kmdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize the structure. This parameter is optional and can be specified as WDF_NO_OBJECT_ATTRIBUTES if the serial controller driver does not need to assign attributes to the object. For more information, see Remarks.
 
+
 ### -param CustomTransmit [out]
 
 A pointer to a location to which this method writes a <a href="serports.sercx2customtransmit">SERCX2CUSTOMTRANSMIT</a> handle to the newly created custom-transmit object. SerCx2 and the serial controller driver use this handle in subsequent calls to refer to this object.
+
 
 ## -returns
 This method returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status codes.
@@ -89,6 +94,7 @@ This method returns STATUS_SUCCESS if the call is successful. Possible error ret
 
  
 
+
 ## -remarks
 This method is called by the serial controller driver to create a custom-transmit object. SerCx2 uses this object to perform custom-transmit transactions, which are transactions that use a custom data-transfer mechanism to write transmit data to the serial controller.
 
@@ -106,11 +112,13 @@ If the <i>Attributes</i> parameter points to a <a href="kmdf.wdf_object_attribut
 
 For more information about creating custom-transmit objects, see <a href="serports.sercx2customtransmit">SERCX2CUSTOMTRANSMIT</a>. For more information about custom-transmit transactions, see <a href="https://msdn.microsoft.com/E72E68BC-A60A-41BE-8606-92A608648042">SerCx2 Custom-Transmit Transactions</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,14 +129,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,9 +150,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -180,5 +193,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SerCx2CustomTransmitCreate method%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: Any.
 The <b>MapSecurityError</b> function maps a security interface SECURITY_STATUS status code to a corresponding NSTATUS status code.
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ NTSTATUS SEC_ENTRY MapSecurityError(
 
 The security interface SECURITY_STATUS status code to be mapped.
 
+
 ## -returns
 The NTSTATUS status code corresponding to the input Error status code.
 
+
 ## -remarks
 This function maps a security interface status code of type SECURITY_STATUS to a corresponding NSTATUS status code.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,14 +82,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 2000 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +103,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +114,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -115,9 +125,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any.
+
 </td>
 </tr>
 </table>

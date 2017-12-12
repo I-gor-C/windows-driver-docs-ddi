@@ -41,6 +41,7 @@ req.irql:
 The TRANSPORTSTATUS structure describes the current transport status.
 
 
+
 ## -syntax
 
 ````
@@ -68,62 +69,77 @@ typedef struct tagTRANSPORTSTATUS {
 
 Specifies the ED_MODE_Xxx.
 
+
 ### -field LastError
 
 Specifies the last error.
+
 
 ### -field RecordInhibit
 
 Specifies if recording is inhibited. <b>TRUE</b> if recording is prevented, <b>FALSE</b> otherwise.
 
+
 ### -field ServoLock
 
 Indicates the servo lock.
+
 
 ### -field MediaPresent
 
 Specifies if media is present.
 
+
 ### -field MediaLength
 
 Specifies the length of the media.
+
 
 ### -field MediaSize
 
 Specifies the size of the media.
 
+
 ### -field MediaTrackCount
 
 Indicates the media track count.
+
 
 ### -field MediaTrackLength
 
 Specifies the media track length.
 
+
 ### -field MediaTrackSide
 
 Indicates the media track size.
+
 
 ### -field MediaType
 
 Indicates the type of media.
 
+
 ### -field LinkMode
 
 Indicates linked mode. <b>TRUE</b> if linked, <b>FALSE</b> otherwise.
+
 
 ### -field NotifyOn
 
 Specifies event notification. <b>TRUE</b> enables event notification, <b>FALSE</b> disables event notification.
 
+
 ## -remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\vmb_channel_state_change_callbacks.htm
 old-project: netvista
 ms.assetid: 01A9A947-76F0-407C-8480-B2721A9A8A7B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS, VMB_CHANNEL_STATE_CHANGE_CALLBACKS
+ms.date: 12/8/2017
+ms.keywords: _VMB_CHANNEL_STATE_CHANGE_CALLBACKS, VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VMB_CHANNEL_STATE_CHANGE_CALLBACKS</b> structure contains callback functions that relate to the state changes for a channel. 
+
 
 
 ## -syntax
@@ -64,29 +66,36 @@ typedef struct _VMB_CHANNEL_STATE_CHANGE_CALLBACKS {
 
 The version.
 
+
 ### -field Size
 
 Size of callbacks.
+
 
 ### -field EvtChannelOpened
 
 The channel opened callback function.
 
+
 ### -field EvtChannelClosed
 
 The channel closed callback function.
+
 
 ### -field EvtChannelSuspend
 
 The channel suspended callback funciton. 
 
+
 ### -field EvtChannelStarted
 
 The channel started callback function. 
 
+
 ### -field EvtChannelPostStarted
 
 The channel post started callback function.
+
 
 ## -remarks
 
@@ -96,6 +105,7 @@ The channel post started callback function.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

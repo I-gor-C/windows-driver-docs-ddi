@@ -7,7 +7,7 @@ old-location: netvista\riluiccappinfoparammask.htm
 old-project: netvista
 ms.assetid: 0e3bac55-6de7-4572-963f-dead9664cf1d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCAPPINFOPARAMMASK, RILUICCAPPINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

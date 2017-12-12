@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorqueryhardwarecursor.htm
 old-project: display
 ms.assetid: e954b7e7-9e4a-47ae-9b0f-8c7e051cc00e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IddCxMonitorQueryHardwareCursor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _Must_inspect_result_
                  An OS callback function the driver calls when it wants obtain the updated cursor information. The driver normally only calls this when the event that signals cursor update has triggered
 
 
+
 ## -syntax
 
 ````
@@ -60,18 +61,22 @@ NTSTATUS IddCxMonitorQueryHardwareCursor(
 
 This is the OS context handle for this monitor returned by the <a href="display.iddcxmonitorarrival">IddCxMonitorArrival</a> call
 
+
 ### -param pInArgs [in]
 
 Input arguments of the function
+
 
 ### -param pOutArgs [out]
 
 Output arguments of the function
 
+
 ## -returns
 
 (NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
                     
+
 
 ## -remarks
 
@@ -81,22 +86,27 @@ Output arguments of the function
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _Must_inspect_result_
+
 </td>
 </tr>
 </table>

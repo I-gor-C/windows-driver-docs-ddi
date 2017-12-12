@@ -7,7 +7,7 @@ old-location: storage\pdo_caps.htm
 old-project: storage
 ms.assetid: 78b6f3c7-bb42-4e93-8128-28b6f8e11dda
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _PDO_CAPS, PDO_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This enumeration describes the capabilities of Physical Device Objects (PDOs).
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef enum _PDO_CAPS {
 
 Command data block size granularity is undefined.
 
+
 ### -field PDO_CAPABILITY_INC512_SET
 
 Command data block size granularity of 512 bytes is supported.
+
 
 ### -field PDO_CAPABILITY_INC512_CLEAR
 
 Command data block size granularity of 1 byte is supported.
 
+
 ## -remarks
 A silo must support either PDO_CAPABILITY_INC512_SET or PDO_CAPABILITY_INC512_CLEAR. It may also indicate that both values are supported by returning a logical OR of these two bits.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

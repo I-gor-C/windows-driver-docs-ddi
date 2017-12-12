@@ -7,8 +7,8 @@ old-location: print\oemuiprocs.htm
 old-project: print
 ms.assetid: 67dfb4bd-c43c-4da3-833d-34050d49dea3
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _OEMUIPROCS, *POEMUIPROCS, OEMUIPROCS
+ms.date: 12/9/2017
+ms.keywords: _OEMUIPROCS, OEMUIPROCS, *POEMUIPROCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The OEMUIPROCS structure is obsolete.
+
 The OEMUIPROCS structure contains the address of the <a href="print.drvgetdriversetting">DrvGetDriverSetting</a> and <a href="print.drvupdateuisetting">DrvUpdateUISetting</a> functions that are exported by Microsoft printer drivers.
+
 
 
 ## -syntax
@@ -59,9 +61,11 @@ typedef struct _OEMUIPROCS {
 
 Pointer to the printer driver's <b>DrvGetDriverSetting</b> function. (To obtain this function's address in kernel mode, see <a href="print.drvprocs">DRVPROCS</a>.)
 
+
 ### -field DrvUpdateUISetting
 
 Pointer to the printer driver's <b>DrvUpdateUISetting</b> function.
+
 
 ## -remarks
 
@@ -69,11 +73,13 @@ Pointer to the printer driver's <b>DrvUpdateUISetting</b> function.
 
 The OEMUIPROCS structure's address is contained in an <a href="print.oemuiobj">OEMUIOBJ</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

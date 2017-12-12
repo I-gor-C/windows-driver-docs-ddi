@@ -41,6 +41,7 @@ req.irql:
 The KSAUDIO_MICROPHONE_COORDINATES structure specifies the type and the coordinates of a single microphone in the microphone array.
 
 
+
 ## -syntax
 
 ````
@@ -60,94 +61,118 @@ typedef struct {
 ### -field usType
 
 Specifies the type of microphone in use at this coordinate location. The value of this member is one of the <b>KSMICARRAY_MICTYPE</b> enumeration values shown in the following table.
+
 <table>
 <tr>
 <td>
 <b>Value</b>
+
 </td>
 <td>
 <b>Microphone type</b>
+
 </td>
 </tr>
 <tr>
 <td>
 KSMICARRAY_MICTYPE_OMNIDIRECTIONAL
+
 </td>
 <td>
 Omni directional
+
 </td>
 </tr>
 <tr>
 <td>
 KSMICARRAY_MICTYPE_SUBCARDIOID
+
 </td>
 <td>
 Sub cardioid
+
 </td>
 </tr>
 <tr>
 <td>
 KSMICARRAY_MICTYPE_CARDIOID
+
 </td>
 <td>
 Cardioid
+
 </td>
 </tr>
 <tr>
 <td>
 KSMICARRAY_MICTYPE_SUPERCARDIOID
+
 </td>
 <td>
 Super cardioid
+
 </td>
 </tr>
 <tr>
 <td>
 KSMICARRAY_MICTYPE_HYPERCARDIOID
+
 </td>
 <td>
 Hyper cardioid
+
 </td>
 </tr>
 <tr>
 <td>
 KSMICARRAY_MICTYPE_8SHAPED
+
 </td>
 <td>
 8-shaped
+
 </td>
 </tr>
 <tr>
 <td>
 KSMICARRAY_MICTYPE_VENDORDEFINED
+
 </td>
 <td>
 0x0F
+
 </td>
 </tr>
 </table>
  
+
 If the microphone is of type KSMICARRAY_MICTYPE_VENDORDEFINED, the value must be set to 0x0F. Additionally, the most significant bits will further define the type of microphone.
+
 
 ### -field wXCoord
 
 Specifies the signed X-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.
 
+
 ### -field wYCoord
 
 Specifies the signed Y-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.
+
 
 ### -field wZCoord
 
 Specifies the signed Z-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.
 
+
 ### -field wVerticalAngle
 
 Specifies a value between -15708 and +15708.  When divided by 10,000, it gives a radian angle measurement.
 
+
 ### -field wHorizontalAngle
 
 Specifies a value between -31416 and +31416.  When divided by 10,000, it gives a radian angle measurement.
+
 
 ## -remarks
 To better understand the descriptions for <i>wHorizontalAngle</i>  and <i>wVericalAngle</i>, consider the following diagram:
@@ -164,11 +189,13 @@ For more information about how to process a microphone array in Windows, see <a 
 
 <a href="http://go.microsoft.com/fwlink/p/?linkid=120593">How to Build and Use Microphone Arrays for Windows Vista</a>
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

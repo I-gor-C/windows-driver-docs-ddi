@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-protected-resource-session-support-flags-0030.htm
 old-project: display
 ms.assetid: f313ee29-9ff4-415b-9a0e-900bf751bb88
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS_0030, D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The protected resource session support flags.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS_0030 {
 
 There are no  protected resource session support flags.
 
+
 ### -field D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAG_0030_SUPPORTED
 
 The protected resource session support flag is supported.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The protected resource session support flag is supported.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

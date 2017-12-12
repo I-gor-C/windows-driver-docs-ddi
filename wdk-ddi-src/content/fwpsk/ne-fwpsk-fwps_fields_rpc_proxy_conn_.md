@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_rpc_proxy_conn.htm
 old-project: netvista
 ms.assetid: 22d60d8c-dad0-4b2c-9ae7-0e30552f5a81
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_RPC_PROXY_CONN_, FWPS_FIELDS_RPC_PROXY_CONN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The FWPS_FIELDS_RPC_PROXY_CONN enumeration type specifies the data field identif
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
 
 
+
 ## -syntax
 
 ````
@@ -64,31 +65,38 @@ typedef enum FWPS_FIELDS_RPC_PROXY_CONN_ {
 
 The identification of the client when using RpcProxy.
 
+
 ### -field FWPS_FIELD_RPC_PROXY_CONN_SERVER_NAME
 
 The name of the RPC server when using RpcProxy.
 
+
 ### -field FWPS_FIELD_RPC_PROXY_CONN_SERVER_PORT
 
 The port on the RPC server when using RpcProxy.
+
 
 ### -field FWPS_FIELD_RPC_PROXY_CONN_PROXY_AUTH_TYPE
 
 The RPC proxy authentication service type. For more information about authentication service
      types, see Authentication-Service Constants in the RPC section of the Windows SDK.
 
+
 ### -field FWPS_FIELD_RPC_PROXY_CONN_CLIENT_CERT_KEY_LENGTH
 
 The secure socket layer (SSL) key length in the client certificate.
+
 
 ### -field FWPS_FIELD_RPC_PROXY_CONN_CLIENT_CERT_OID
 
 The object identifier (OID) in the client certificate.
 
+
 ### -field FWPS_FIELD_RPC_PROXY_CONN_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -98,14 +106,17 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

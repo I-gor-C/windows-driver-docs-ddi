@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlCheckLockForOplockRequest</b> routine checks for locks within the allocation size of a file. The file lock object is  checked for the presence of  byte range locks that would prevent an oplock request from being granted.
 
 
+
 ## -syntax
 
 ````
@@ -57,23 +58,28 @@ BOOLEAN FsRtlCheckLockForOplockRequest(
 
 The file lock that specifies locked ranges.
 
+
 ### -param AllocationSize [in]
 
 The file allocation size to check for any locked ranges.
 
+
 ## -returns
 <b>FsRtlCheckLockForOplockRequest</b> returns <b>TRUE</b> if the  oplock request can be granted;  <b> FALSE</b> otherwise.
+
 
 ## -remarks
 <b>FsRtlCheckLockForOplockRequest</b> returns <b>TRUE</b> if <i>AllocationSize</i> = 0.
 
 If <i>FileLock</i> has any pending lock requests, the check fails and <b>FsRtlCheckLockForOplockRequest</b> returns <b>FALSE</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,14 +90,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +111,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +122,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +133,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>

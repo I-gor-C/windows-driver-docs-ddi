@@ -7,7 +7,7 @@ old-location: storage\hba_registerforlinkevents.htm
 old-project: storage
 ms.assetid: f0e6834c-b827-4342-83f1-5980f8edce24
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: HBA_RegisterForLinkEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>HBA_RegisterForLinkEvents</b> routine registers with a specified adapter for asynchronous fabric link-level events. 
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
 
 Pointer to a callback routine of type <a href="storage.hba_link_callback">HBA_LINK_CALLBACK</a> to call when the event occurs. 
 
+
 ### -param userData 
 
 Pointer to user input data that is passed to the callback routine when it is called with each occurrence of the event. This data can synchronize the event handling with event registration.
+
 
 ### -param pRLIRBuffer 
 
 Pointer to registered link incident report (RLIR) data that is passed to the callback routine with each occurrence of the event. This data is overwritten by the callback routine each time it is called. 
 
+
 ### -param RLIRBufferSize 
 
 Contains the size, in bytes, of the buffer at <i>pRLIRBuffer</i>.
+
 
 ### -param handle 
 
 Contains a value returned by the routine <a href="storage.hba_openadapter">HBA_OpenAdapter</a> that identifies the HBA for which event callbacks are requested.
 
+
 ### -param callbackHandle 
 
 Pointer to an opaque identifier that may be used to deregister the caller and suspend calls to the callback routine when events occur.
+
 
 ## -returns
 The <b>HBA_RegisterForLinkEvents</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RegisterForLinkEvents</b> returns one of the following values.
@@ -95,14 +102,17 @@ The <b>HBA_RegisterForLinkEvents</b> routine returns a value of type <a href="st
 
  
 
+
 ## -remarks
 Only RLIR events are reported. To stop event delivery, call <a href="storage.hba_removecallback">HBA_RemoveCallback</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +123,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +134,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +145,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -158,5 +171,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_RegisterForLinkEvents routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_RegisterForLinkEvents routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_states.htm
 old-project: display
 ms.assetid: E5DB8AF3-A6ED-4CD7-9723-78ACD57F1723
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_RESOURCE_STATES, D3D12DDI_RESOURCE_STATES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 Contains resource states. 
+
 
 
 ## -syntax
@@ -74,77 +75,96 @@ typedef enum D3D12DDI_RESOURCE_STATES {
 
 Common. 
 
+
 ### -field D3D12DDI_RESOURCE_STATE_VERTEX_AND_CONSTANT_BUFFER
 
 Vertex and constant buffer.
+
 
 ### -field D3D12DDI_RESOURCE_STATE_INDEX_BUFFER
 
 Index buffer.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_RENDER_TARGET
 
 Render target.
+
 
 ### -field D3D12DDI_RESOURCE_STATE_UNORDERED_ACCESS
 
 Unordered access.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_DEPTH_WRITE
 
 Depth write. 
+
 
 ### -field D3D12DDI_RESOURCE_STATE_DEPTH_READ
 
 Depth read.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_NON_PIXEL_SHADER_RESOURCE
 
 Non-pixel shader resource.
+
 
 ### -field D3D12DDI_RESOURCE_STATE_PIXEL_SHADER_RESOURCE
 
 Pixel shader retsource.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_STREAM_OUT
 
 Stream out.
+
 
 ### -field D3D12DDI_RESOURCE_STATE_INDIRECT_ARGUMENT
 
 Indirect argument.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_COPY_DEST
 
 Copy destination.
+
 
 ### -field D3D12DDI_RESOURCE_STATE_COPY_SOURCE
 
 Copy source.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_RESOLVE_DEST
 
 Resolve destination. 
+
 
 ### -field D3D12DDI_RESOURCE_STATE_RESOLVE_SOURCE
 
 Resolve source.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_0020_VIDEO_DECODE_READ
 
 Video decode read.
+
 
 ### -field D3D12DDI_RESOURCE_STATE_0020_VIDEO_DECODE_WRITE
 
 Video decode write.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_0020_VIDEO_PROCESS_READ
 
 Video process read.
 
+
 ### -field D3D12DDI_RESOURCE_STATE_0020_VIDEO_PROCESS_WRITE
 
 Video process write.
+
 
 ## -remarks
 Resource barriers allow transitioning between hardware specific states for a corresponding operation and to synchronize read after write.  
@@ -153,11 +173,13 @@ Resource barriers are an existing concept in D3D12 that is extended to support v
 The write state is used for the decode target.  The write state is also used when decode conversion is enabled for the non-converted reference.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

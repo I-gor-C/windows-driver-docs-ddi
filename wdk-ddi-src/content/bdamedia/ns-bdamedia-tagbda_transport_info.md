@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 995a1d2f-8e2b-426e-a08c-283124ce905e
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO
+ms.keywords: tagBDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The BDA_TRANSPORT_INFO structure describes formatting for a stream connection. 
 
 
+
 ## -syntax
 
 ````
@@ -59,28 +60,34 @@ typedef struct tagBDA_TRANSPORT_INFO {
 
 Size, in bytes, of a physical packet (for example, the size of a satellite link payload). 
 
+
 ### -field ulcbPhyiscalFrame
 
 Size, in bytes, of each physical frame (0 indicates no hardware requirement).
+
 
 ### -field ulcbPhyiscalFrameAlignment
 
 Capture buffer alignment in bytes (0 and 1 indicate no alignment requirements).
 
+
 ### -field AvgTimePerFrame
 
 REFERENCE TIME value that indicates the video frame's average display time, in 100-nanosecond units. 
+
 
 ## -remarks
 A BDA_TRANSPORT_INFO structure in conjunction with a KSDATARANGE structure makes up a KS_DATARANGE_BDA_TRANSPORT data range. A data range describes a range of data formats. 
 
 Pins of filters specify the data ranges they support to enable stream connections to pins of other filters that also support those data ranges.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,5 +110,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_TRANSPORT_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

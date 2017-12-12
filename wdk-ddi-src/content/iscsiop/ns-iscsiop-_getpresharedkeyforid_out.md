@@ -7,8 +7,8 @@ old-location: storage\getpresharedkeyforid_out.htm
 old-project: storage
 ms.assetid: 21d6378e-b93b-4e97-842a-a3157e081f31
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _GetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT, GetPresharedKeyForId_OUT
+ms.date: 12/8/2017
+ms.keywords: _GetPresharedKeyForId_OUT, GetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The GetPresharedKeyForId_OUT structure holds the output data for the <a href="storage.getpresharedkeyforid">GetPresharedKeyForId</a> method.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _GetPresharedKeyForId_OUT {
 
 On output from <b>GetPresharedKeyForId</b>, the status of the <b>GetPresharedKeyForId</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  
 
+
 ### -field SecurityFlags
 
 A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.
 
+
 ## -remarks
 You must initiate this method if the initiator supports IKE.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,5 +102,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GetPresharedKeyForId_OUT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GetPresharedKeyForId_OUT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

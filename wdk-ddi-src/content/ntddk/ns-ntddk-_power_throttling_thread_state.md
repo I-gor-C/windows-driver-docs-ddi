@@ -7,8 +7,8 @@ old-location: kernel\power_throttling_thread_state.htm
 old-project: kernel
 ms.assetid: 85659694-f93a-42dc-9fa4-f6fea6ad71d0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _POWER_THROTTLING_THREAD_STATE, *PPOWER_THROTTLING_THREAD_STATE, POWER_THROTTLING_THREAD_STATE
+ms.date: 12/7/2017
+ms.keywords: _POWER_THROTTLING_THREAD_STATE, POWER_THROTTLING_THREAD_STATE, *PPOWER_THROTTLING_THREAD_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Stores the throttling policies and how to apply them to a target thread when that thread is subject to power management.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _POWER_THROTTLING_THREAD_STATE {
 
 The version of this structure. Set to THREAD_POWER_THROTTLING_CURRENT_VERSION.
 
+
 ### -field ControlMask
 
 Flags that enable the caller to take control of the power throttling mechanism.
+
 <ul>
 <li>THREAD_POWER_THROTTLING_EXECUTION_SPEED: Manages the execution speed of the process.</li>
 </ul>
@@ -68,6 +71,7 @@ Flags that enable the caller to take control of the power throttling mechanism.
 ### -field StateMask
 
 Flags that manage the power throttling mechanism on/off state.
+
 <ul>
 <li>THREAD_POWER_THROTTLING_EXECUTION_SPEED: Manages the execution speed of the process.</li>
 </ul>
@@ -80,22 +84,27 @@ Flags that manage the power throttling mechanism on/off state.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

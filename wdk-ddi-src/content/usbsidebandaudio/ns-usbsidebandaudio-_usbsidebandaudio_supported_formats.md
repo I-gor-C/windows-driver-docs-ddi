@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 69D1C328-309B-41FC-8216-971A3C6D38AF
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS
+ms.keywords: _USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 TBD
+
 
 
 ## -syntax
@@ -60,13 +62,16 @@ typedef struct _USBSIDEBANDAUDIO_SUPPORTED_FORMATS {
 
 TBD
 
+
 ### -field Reserved 1
 
 TBD
 
+
 ### -field Reserved 2
 
 TBD
+
 
 ## -remarks
 
@@ -76,6 +81,7 @@ TBD
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

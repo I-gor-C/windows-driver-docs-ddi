@@ -41,6 +41,7 @@ req.irql: Developers should code this function to operate at either IRQL = DISPA
 The _BRB_L2CA_PING structure describes a request to ping a remote radio.
 
 
+
 ## -syntax
 
 ````
@@ -63,25 +64,31 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field BtAddress
 
 The address of the device that the ping is sent to.
+
 
 ### -field PingRequestLength
 
 The length, in bytes, of the data to send in the ping signal.
 
+
 ### -field PingRequestData
 
 The data to send in the ping signal.
+
 
 ### -field PingResponseLength
 
 The length, in bytes, of the data that the remote device responded to the ping signal with.
 
+
 ### -field PingResponseData
 
 The data that the remote device responded to the ping signal with.
+
 
 ## -remarks
 To ping a remote radio, by transmitting a L2CA_EchoReq message and receiving a L2CAP_EchoRsp message,
@@ -91,19 +98,23 @@ To ping a remote radio, by transmitting a L2CA_EchoReq message and receiving a L
 
 BRB_L2CA_PING is primarily used for debugging.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +134,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_PING structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

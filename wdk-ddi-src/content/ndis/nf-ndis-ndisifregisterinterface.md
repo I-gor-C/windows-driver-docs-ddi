@@ -7,7 +7,7 @@ old-location: netvista\ndisifregisterinterface.htm
 old-project: netvista
 ms.assetid: d0b0ada7-afb1-4cb7-ada6-7c5c7abe7d19
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisIfRegisterInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NdisIfRegisterInterface</b> function registers an NDIS network interface.
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ A handle that identifies the network interface provider that is registering the 
      <a href="netvista.ndisifregisterprovider">
      NdisIfRegisterProvider</a> function.
 
+
 ### -param NetLuid [in]
 
 The caller-supplied 
@@ -74,11 +76,13 @@ The caller-supplied
      the computer restarts and provide the same NET_LUID value each time it registers a particular
      interface.
 
+
 ### -param ProviderIfContext [in]
 
 A handle to a caller-allocated context area that is associated with the interface. NDIS passes
      this handle to the callback functions that the caller registered with 
      <b>NdisIfRegisterProvider</b>.
+
 
 ### -param pIfInfo [in]
 
@@ -86,6 +90,7 @@ A pointer to a caller-allocated
      <a href="netvista.net_if_information">NET_IF_INFORMATION</a> structure that
      provides information about the interface. This structure contains information that remains constant
      while the interface exists.
+
 
 ### -param pIfIndex [out]
 
@@ -95,6 +100,7 @@ A pointer to a caller-supplied interface index variable. If NDIS successfully re
      not return the same interface index every time a provider registers an interface with the same NET_LUID
      value . The interface index value zero is reserved, and NDIS does not assign it to any interface. Do not
      confuse the interface index with a NET_LUID index.
+
 
 ## -returns
 <b>NdisIfRegisterInterface</b> returns one of the following status values:
@@ -114,6 +120,7 @@ A pointer to a caller-supplied interface index variable. If NDIS successfully re
        <i>NetLuid</i> parameter specified.
 
  
+
 
 ## -remarks
 NDIS interface providers call the 
@@ -155,11 +162,13 @@ To indicate that an interface should be removed from the list of known interface
     <a href="netvista.ndisifderegisterinterface">
     NdisIfDeregisterInterface</a> function, for example, because the interface has been uninstalled. .
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -170,14 +179,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -188,6 +200,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -198,14 +211,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
@@ -235,5 +251,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterInterface function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterInterface function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

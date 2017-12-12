@@ -7,7 +7,7 @@ old-location: storage\pdo_state.htm
 old-project: storage
 ms.assetid: 006e2cef-4e49-4819-bfce-d9bf5983643e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _PDO_STATE, PDO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This enumeration describes the states of Physical Device Objects (PDOs).
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _PDO_STATE {
 
 This value indicates that the PDO state is undefined.
 
+
 ### -field PDO_STATE_STARTED
 
 This value indicates that the PDO is started.
 
+
 ### -field PDO_STATE_NOT_STARTED
 
 This value indicates that the PDO is not started.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ This value indicates that the PDO is not started.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

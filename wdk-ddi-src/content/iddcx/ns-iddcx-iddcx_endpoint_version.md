@@ -7,7 +7,7 @@ old-location: display\iddcx_endpoint_version.htm
 old-project: display
 ms.assetid: ad6220e3-9b6a-4a46-978b-31edfb2c8b9b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_ENDPOINT_VERSION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -64,11 +65,13 @@ typedef struct IDDCX_ENDPOINT_VERSION {
                      Total size of the structure.
                  
 
+
 ### -field MajorVer
 
 
                      The major version defined by the driver.
                  
+
 
 ### -field MinorVer
 
@@ -76,17 +79,20 @@ typedef struct IDDCX_ENDPOINT_VERSION {
                      The minor version defined by the driver.
                  
 
+
 ### -field Build
 
 
                      The build number defined by the driver.
                  
 
+
 ### -field SKU
 
 
                      The SKU type defined by the driver.
                  
+
 
 ## -remarks
 
@@ -96,6 +102,7 @@ typedef struct IDDCX_ENDPOINT_VERSION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

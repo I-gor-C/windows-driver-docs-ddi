@@ -41,6 +41,7 @@ req.irql:
 The <b>KsQueryInformationFile</b> function performs an information query against the specified file object. The function attempts to use <b>FastIoDispatch</b> if possible, or it generates an information request against the device object<i>.</i>
 
 
+
 ## -syntax
 
 ````
@@ -59,29 +60,36 @@ NTSTATUS KsQueryInformationFile(
 
 Specifies the file object from which to query the standard information.
 
+
 ### -param FileInformation [out]
 
 Indicates the place in which to put the file information. This is assumed to be a valid or probed address.
+
 
 ### -param Length [in]
 
 Specifies the correct length of the <i>FileInformation</i> buffer.
 
+
 ### -param FileInformationClass [in]
 
 Specifies the class of information being requested.
 
+
 ## -returns
 The <b>KsQueryInformationFile</b> function returns STATUS_SUCCESS if successful, or if unsuccessful it returns a query error. 
 
+
 ## -remarks
 The <b>KsQueryInformationFile</b> function should only be used in cases where the query would result in an actual request to the underlying driver. For example, <b>FilePositionInformation</b> would not generate such a request and should not be used. It assumes the caller is serializing access to the file for operations against a FO_SYNCHRONOUS_IO file object.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +100,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +111,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: storage\scsi_addr.htm
 old-project: storage
 ms.assetid: d53e0b05-8761-4b88-a7d5-081244b3dc93
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SCSI_ADDR, SCSI_ADDR, *PSCSI_ADDR
+ms.date: 12/8/2017
+ms.keywords: _SCSI_ADDR, *PSCSI_ADDR, SCSI_ADDR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The SCSI_ADDR structure represents a SCSI address.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _SCSI_ADDR {
 
 An unsigned 8-bitfield that represents the PortNumber as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
 
+
 ### -field ScsiPathId
 
 An unsigned 8-bitfield that represents the PathId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
+
 
 ### -field TargetId
 
 An unsigned 8-bitfield that represents the TargetId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
 
+
 ### -field Lun
 
 An unsigned 8-bitfield that represents the Lun as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ An unsigned 8-bitfield that represents the Lun as defined by the SCSI_ADDRESS st
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The <b>KEYWORDSELECTOR</b> struct is a triplet of IDs that uniquely select a particular keyword, language, and user combination.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 Identifies a keyword function.
 
+
 ### -field LangId
 
 Identifies a language.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Identifies a language.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +103,7 @@ Header
 <tr>
 <th width="30%">
 IDL
+
 </th>
 <td width="70%">
 <dl>

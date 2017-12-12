@@ -7,7 +7,7 @@ old-location: netvista\dot11_vwifi_combination.htm
 old-project: netvista
 ms.assetid: 05be98a8-dad2-4539-b725-e898db19a789
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_VWIFI_COMBINATION, *PDOT11_VWIFI_COMBINATION, DOT11_VWIFI_COMBINATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,41 +60,51 @@ The type, revision, and size of the DOT11_VWIFI_COMBINATION structure. This memb
      an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
+
 ### -field Revision
 
 This member must be set to DOT11_VWIFI_COMBINATION_REVISION_1.
+
 
 ### -field Size
 
 This member must be set to 
        sizeof(DOT11_VWIFI_COMBINATION).
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field uNumInfrastructure
 
 The number of 802.11 infrastructure stations supported. For more information, see the following
      Remarks section.
 
+
 ### -field uNumAdhoc
 
 The number of Adhoc Stations supported. For more information, see the following Remarks
      section.
 
+
 ### -field uNumSoftAP
 
 The number of Soft AP Stations supported. For more information, see the following Remarks
      section.
+
 
 ## -remarks
 Starting with Windows 7, the 802.11 miniport driver must only report one or more of the following
@@ -106,20 +116,24 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 
 <b>uNumSoftAP</b> = 1
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,5 +150,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_COMBINATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_COMBINATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

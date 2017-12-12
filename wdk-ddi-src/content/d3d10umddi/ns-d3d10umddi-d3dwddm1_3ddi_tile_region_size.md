@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_tile_region_size.htm
 old-project: display
 ms.assetid: 276ED4AC-15D9-4550-AC51-83320DE9D5B2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM1_3DDI_TILE_REGION_SIZE, D3DWDDM1_3DDI_TILE_REGION_SIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a tiled region.
 
 
+
 ## -syntax
 
 ````
@@ -59,27 +60,34 @@ typedef struct D3DWDDM1_3DDI_TILE_REGION_SIZE {
 ### -field NumTiles
 
 The number of tiles within the tiled region.
+
 <div class="alert"><b>Note</b>  <b>NumTiles</b> must equal <b>Width</b> * <b>Height</b> * <b>Depth</b>.</div>
 <div> </div>
 
 ### -field bUseBox
 
 If <b>TRUE</b>, the tiled region is defined by the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members. In this case, one update region cannot span mipmaps, although it can span array slices using the  <b>Depth</b> member.
+
 If <b>FALSE</b>, the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members should be ignored, and the tiled region is defined by the <b>NumTiles</b> member. In this case, tiles are mapped linearly, first across the <i>x</i>-direction, then the <i>y</i>-direction, then (as applicable) across the <i>z</i>-direction, and then spilling over mipmaps and arrays in subresource order. This procedure is useful for mapping an entire resource at one time.
+
 In either case, the starting location for the region within the resource 
                   is specified as a separate parameter outside this structure.
+
 
 ### -field Width
 
 The width (in the <i>x</i>-direction) of the tiled region. Used for buffer, 1-D, 2-D, and 3-D rendering.
 
+
 ### -field Height
 
 The height (in the <i>y</i>-direction) of the tiled region. Used for 2-D and 3-D rendering.
 
+
 ### -field Depth
 
 The depth (in the <i>z</i>-direction) of the tiled region. Used for 3-D rendering or for arrays. In the case of arrays, advancing in depth skips to the next slice of the same mipmap size.
+
 
 ## -remarks
 
@@ -89,30 +97,37 @@ The depth (in the <i>z</i>-direction) of the tiled region. Used for 3-D renderin
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 WDDM 1.3
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -43,6 +43,7 @@ The <b>USBD_UrbFree</b> routine releases the <a href="buses.urb">URB</a> that is
     <a href="buses.usbd_selectinterfaceurballocateandbuild">USBD_SelectInterfaceUrbAllocateAndBuild</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,12 +60,15 @@ void USBD_UrbFree(
 
 USBD handle that is retrieved by the client driver in a previous call to  the <a href="buses.usbd_register">USBD_CreateHandle</a> routine.
 
+
 ### -param Urb [in]
 
 Pointer to the <a href="buses.urb">URB</a> structure to be released.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 You must call <b>USBD_UrbFree</b> to release the URB allocated by <a href="buses.usbd_urballocate">USBD_UrbAllocate</a> after the request is complete. 
@@ -73,11 +77,13 @@ Failure to call <b>USBD_UrbFree</b> can cause a memory leak.
 
 For a code example, see <a href="buses.usbd_urballocate">USBD_UrbAllocate</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,14 +94,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +115,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +126,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -133,5 +145,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_UrbFree routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

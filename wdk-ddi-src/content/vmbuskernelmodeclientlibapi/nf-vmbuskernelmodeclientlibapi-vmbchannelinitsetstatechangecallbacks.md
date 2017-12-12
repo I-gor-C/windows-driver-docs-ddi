@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetstatechangecallbacks.htm
 old-project: netvista
 ms.assetid: 4E6088EA-7081-4B80-8F83-15B39A0F30AB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbChannelInitSetStateChangeCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbChannelInitSetStateChangeCallbacks</b>  function sets optional callback functions for state changes.
+
 
 
 ## -syntax
@@ -59,9 +61,11 @@ NTSTATUS VmbChannelInitSetStateChangeCallbacks(
 
 A handle for a channel.  
 
+
 ### -param StateChangeCallbacks [in]
 
 A structure of state change callbacks to set.
+
 
 ## -returns
 <b>VmbChannelInitSetStateChangeCallbacks</b> returns one of the following status values: 
@@ -77,6 +81,7 @@ A structure of state change callbacks to set.
 
  
 
+
 ## -remarks
 
 
@@ -85,38 +90,47 @@ A structure of state change callbacks to set.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +141,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

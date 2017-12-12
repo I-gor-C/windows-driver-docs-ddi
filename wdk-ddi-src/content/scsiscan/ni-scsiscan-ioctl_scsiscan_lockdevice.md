@@ -42,18 +42,23 @@ req.product: Windows 10 or later.
 Reserved for use by Microsoft.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 
 
+
 ### -input-buffer-length
+
 
 
 ### -output-buffer
 
 
+
 ### -output-buffer-length
+
 
 
 
@@ -72,6 +77,7 @@ Reserved for use by Microsoft.
 I/O Status block
 
 
+
 ## -remarks
 
 
@@ -80,6 +86,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

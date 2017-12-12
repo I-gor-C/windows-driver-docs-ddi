@@ -7,7 +7,7 @@ old-location: netvista\pd_buffer_8021q_info.htm
 old-project: netvista
 ms.assetid: B5B2051E-C62F-4E3D-9C52-DE46145A2C24
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _PD_BUFFER_8021Q_INFO structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 This structure contains the IEEE 802.1Q information.
+
 
 
 ## -syntax
@@ -58,13 +59,16 @@ typedef struct _PD_BUFFER_8021Q_INFO {
 
 The user priority.
 
+
 ### -field CanonicalFormatId
 
 The canonical format ID.
 
+
 ### -field VlanId
 
 The virtual LAN ID.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ The virtual LAN ID.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 This structure defines the parameters for a continuous tracking fix session.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field PreferredInterval
 
 Specifies the preferred interval of receiving fixes for a continuous tracking session. The units for this value is seconds.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Specifies the preferred interval of receiving fixes for a continuous tracking se
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

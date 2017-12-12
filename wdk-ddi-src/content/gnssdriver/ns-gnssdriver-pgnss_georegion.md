@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 70FC3BCE-3869-4263-8870-BB97438CB5F1
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_GEOREGION, *PGNSS_GEOREGION, GNSS_GEOREGION
+ms.keywords: PGNSS_GEOREGION, GNSS_GEOREGION, *PGNSS_GEOREGION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure defines the geographical shape of  a geofence.
 
 
+
 ## -syntax
 
 ````
@@ -62,26 +63,32 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field GeoRegionType
 
 
 <a href="..\gnssdriver\ne-gnssdriver-gnss_georegiontype.md">GNSS_GEOREGIONTYP</a>E enumeration that defines the georegion type of a geofence.
 
+
 ### -field Circle
 
 
 <a href="sensors.gnss_georegion_circle">GNSS_GEOREGION_CIRCLE</a> structure that defines a circular geofence.
 
+
 ### -field Unused[512]
 
 Padding buffer.
 
+
 ## -remarks
 A geographical shape is used to define a geofence.  Windows 10 currently supports only circular geofences.
+
 
 
 
@@ -90,6 +97,7 @@ A geographical shape is used to define a geofence.  Windows 10 currently suppor
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

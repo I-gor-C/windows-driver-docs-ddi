@@ -7,7 +7,7 @@ old-location: display\iddcxswapchainsetdevice.htm
 old-project: display
 ms.assetid: f1e96d8a-910e-4808-b9a3-e8c530158872
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IddCxSwapChainSetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ An OS callback function the driver calls within its SetSwapChain routine to setu
                 
 
 
+
 ## -syntax
 
 ````
@@ -59,14 +60,17 @@ HRESULT IddCxSwapChainSetDevice(
 
 The swap-chain object that will be setup with a particular DXGI device.
 
+
 ### -param pInArgs [in]
 
 Input arguments to the function
+
 
 ## -returns
 
 (NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
                     
+
 
 ## -remarks
 
@@ -76,22 +80,27 @@ Input arguments to the function
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,9 +111,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _Must_inspect_result_
+
 </td>
 </tr>
 </table>

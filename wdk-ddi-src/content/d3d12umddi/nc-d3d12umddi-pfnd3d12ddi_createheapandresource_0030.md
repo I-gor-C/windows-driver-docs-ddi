@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createheapandresource_0030.htm
 old-project: display
 ms.assetid: A6D597AA-C72A-46A5-91E8-22B225B380F2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 Used to simultaneously create a heap and resource.
+
 
 
 ## -prototype
@@ -64,36 +66,45 @@ HRESULT  APIENTRY* PFND3D12DDI_CREATEHEAPANDRESOURCE_0030(
 
 The device being operated on.
 
+
 ### -param d3d12ddiarg_createheap_0001 [in, optional]
 
 Arguments used to create a heap.
+
 
 ### -param d3d12ddi_hheap 
 
 Used to create a heap.
 
+
 ### -param d3d12ddi_hrtresource 
 
 Used to create a resource.
+
 
 ### -param d3d12ddiarg_createresource_0003 [in, optional]
 
 Arguments used to create a resource.
 
+
 ### -param d3d12ddi_clear_values [in, optional]
 
 Used to clear the values of the resource.
+
 
 ### -param d3d12ddi_hprotectedresourcesession_0030 
 
 The protected resource session.
 
+
 ### -param d3d12ddi_hresource 
 
 The hardware resource.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -103,6 +114,7 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

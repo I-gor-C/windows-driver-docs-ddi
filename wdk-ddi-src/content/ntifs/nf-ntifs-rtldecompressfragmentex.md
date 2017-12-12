@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlDecompressFragmentEx</b> function is used to decompress part of a compressed buffer (that is, a buffer "fragment"), using multiple processors where possible.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ NTSTATUS RtlDecompressFragmentEx(
 ### -param CompressionFormat [in]
 
 Bitmask specifying the compression format of the compressed buffer. This parameter must be set to COMPRESSION_FORMAT_LZNT1. The meaning of this and other related compression format values are as follows:
+
 <table>
 <tr>
 <th>Value</th>
@@ -71,61 +73,76 @@ Bitmask specifying the compression format of the compressed buffer. This paramet
 <tr>
 <td>
 COMPRESSION_FORMAT_NONE
+
 </td>
 <td>
 Not supported by this function.
+
 </td>
 </tr>
 <tr>
 <td>
 COMPRESSION_FORMAT_DEFAULT
+
 </td>
 <td>
 Not supported by this function.
+
 </td>
 </tr>
 <tr>
 <td>
 COMPRESSION_FORMAT_LZNT1
+
 </td>
 <td>
 Specifies that compression should be performed. This value is required.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param UncompressedFragment [out]
 
 Pointer to a caller-allocated buffer (allocated from paged or non-paged pool) receiving the decompressed data from <i>CompressedBuffer</i>. This parameter is required and cannot be <b>NULL</b>.
+
 
 ### -param UncompressedFragmentSize [in]
 
 The size, in bytes, of the <i>UncompressedFragment</i> buffer.
 
+
 ### -param CompressedBuffer [in]
 
 A pointer to the buffer containing the data to decompress. This parameter is required and cannot be <b>NULL</b>.
+
 
 ### -param CompressedBufferSize [in]
 
 The size, in bytes, of the <i>CompressedBuffer</i> buffer.
 
+
 ### -param FragmentOffset [in]
 
 The zero-based offset, in bytes, where the uncompressed fragment is being extract from. This offset value is the position within the original uncompressed buffer.
+
 
 ### -param UncompressedChunkSize [in]
 
 The size, in bytes, of each chunk within the compression buffer.  Valid values are 512, 1024, 2048 and 4096.
 
+
 ### -param FinalUncompressedSize [out]
 
 A pointer to a caller-allocated variable which receives the size, in bytes, of the decompressed data stored in <i>UncompressedFragment</i>. This parameter is required and cannot be <b>NULL</b>.
 
+
 ### -param WorkSpace [in]
 
 A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressFragmentEx</b> function during decompression. Use the <a href="ifsk.rtlgetcompressionworkspacesize">RtlGetCompressionWorkSpaceSize</a> function to determine the correct work space buffer size.
+
 
 ## -returns
 
@@ -145,6 +162,7 @@ A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressFr
 
  
 
+
 ## -remarks
 
 
@@ -153,6 +171,7 @@ A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressFr
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -163,14 +182,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting in Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -181,6 +203,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -191,6 +214,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -201,9 +225,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -230,5 +256,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDecompressFragmentEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\rildrvnotification_2.htm
 old-project: netvista
 ms.assetid: 30a05e7f-3761-4f73-8938-fb7a0e3a7f4c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDRVNOTIFICATION, RILDRVNOTIFICATION, *LPRILDRVNOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -84,6 +85,7 @@ typedef struct _RILDRVNOTIFICATION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

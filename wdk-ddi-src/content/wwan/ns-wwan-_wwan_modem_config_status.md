@@ -7,7 +7,7 @@ old-location: netvista\wwan_modem_config_status.htm
 old-project: netvista
 ms.assetid: 3A13CFBC-DBB4-4BB1-ABA4-AB145AED07AA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS, *PWWAN_MODEM_CONFIG_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WWAN_MODEM_CONFIG_STATUS</b> structure represents a modem's configuration (config) status.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _WWAN_MODEM_CONFIG_STATUS {
 
 The modem's config state. For a list of defined values, see <a href="netvista.wwan_modem_config_state">WWAN_MODEM_CONFIG_STATE</a>.
 
+
 ### -field ConfigReason
 
 The reason why the modem's config state change was triggered. For a list of defined values, see <a href="netvista.wwan_modem_config_reason">WWAN_MODEM_CONFIG_REASON</a>.
+
 
 ### -field PreviousConfigID
 
 The previous config file's Config ID.
 
+
 ### -field CurrentConfigID
 
 The current config file's Config ID.
 
+
 ### -field DefaultOrNot
 
 Indicates if the default config file was selected, if available. 
+
 
 ## -remarks
 Modem config files are identified using a Config ID, defined as a UUID whose value is determined by the IHV vendor. The value of each Config ID is unique and can be generated statically or dynamically. A Config ID of zero (00000000-0000-0000-000000000000) is a special case, meaning the Config ID is not available.
@@ -90,19 +96,23 @@ If the modem config selection process is triggered by SIM removal or no SIM, <b>
 
 If the same config file is selected as the currently activated one, the MBB driver is not required to send a notification to the upper layer.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_STATUS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_STATUS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

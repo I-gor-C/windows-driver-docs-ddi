@@ -7,8 +7,8 @@ old-location: netvista\dot11_offload_network_list_info.htm
 old-project: netvista
 ms.assetid: 0FB1D72F-B183-408A-BB84-A9D54B6C276F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO
+ms.date: 12/8/2017
+ms.keywords: _DOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -60,6 +60,7 @@ typedef struct _DOT11_OFFLOAD_NETWORK_LIST_INFO {
 ### -field Header
 
 The type, revision, and size of the DOT11_OFFLOAD_NETWORK_LIST_INFO structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -80,9 +81,11 @@ The type, revision, and size of the DOT11_OFFLOAD_NETWORK_LIST_INFO structure. T
 </table>
  
 
+
 ### -field ulFlags
 
 Bit flags to specify extra attributes of this NLO from the following table:
+
 <table>
 <tr>
 <th>Value</th>
@@ -103,25 +106,31 @@ Bit flags to specify extra attributes of this NLO from the following table:
 </table>
  
 
+
 ### -field FastScanPeriod
 
 Fast scan period, in seconds. When the NIC receives the offload list, it should scan for matches to the list within the <b>FastScanPeriod</b> interval. In the fast scan period, the NIC scans for interesting SSIDs every such period for <b>FastScanIteration</b> then it switches to <b>SlowScanPeriod</b>.
+
 
 ### -field FastScanIterations
 
 Number if iterations to repeat the fast scan. When the number of iterations is reached the  NIC switches to the <b>SlowScanPeriod</b>.
 
+
 ### -field SlowScanPeriod
 
 Slow scan period, in seconds.   After the <b>FastScanPeriod</b> expires, the NIC switch to the <b>SlowScanPeriod</b>.  The NIC should scan for matches to the list within the <b>SlowScanPeriod</b>.  The duration is open ended until Windows issues an updated  offload-list.
+
 
 ### -field uNumOfEntries
 
 Number of networks in the list of those requested to offload.
 
+
 ### -field offloadNetworkList[1]
 
 Array of networks that hardware should automatically search for.
+
 
 ## -remarks
 
@@ -131,14 +140,17 @@ Array of networks that hardware should automatically search for.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

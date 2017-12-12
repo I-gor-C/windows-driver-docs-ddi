@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_shadercache_callbacks_0021.htm
 old-project: display
 ms.assetid: EBA976B0-3B44-4482-B1B0-31A84150C056
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_SHADERCACHE_CALLBACKS_0021, D3D12DDI_SHADERCACHE_CALLBACKS_0021
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies shader cache callback functions. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct D3D12DDI_SHADERCACHE_CALLBACKS_0021 {
 
 A callback function that gets a shader cache value. 
 
+
 ### -field pfnShaderCacheStoreValueCb
 
 A callback function that stores a shader cache value. 
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A callback function that stores a shader cache value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

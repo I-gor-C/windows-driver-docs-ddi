@@ -7,7 +7,7 @@ old-location: kernel\psinsertsilocontext.htm
 old-project: kernel
 ms.assetid: 31C7A629-3B5E-44BA-AE03-3331E3200FC6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsInsertSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine inserts an object in an empty slot in a <i>Silo</i>.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS PsInsertSiloContext(
 
 A pointer to a silo.  This parameter is required and it cannot be <b>NULL</b>.
 
+
 ### -param ContextSlot [in]
 
 A slot allocated by the <a href="kernel.psallocsilocontextslot">PsAllocSiloContextSlot</a> routine. 
 
+
 ### -param SiloContext [in]
 
 A pointer to the object created by the <a href="kernel.pscreatesilocontext">PsCreateSiloContext</a> routine. The object must be created using the same silo pointer as the one specified in this routine. This parameter is required and it cannot be <b>NULL</b>. 
+
 
 ## -returns
 The following NT status codes are returned.
@@ -80,6 +84,7 @@ The following NT status codes are returned.
 
  
 
+
 ## -remarks
 
 
@@ -88,22 +93,27 @@ The following NT status codes are returned.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-profile-count-data-0032.htm
 old-project: display
 ms.assetid: 8398579d-e8cf-4c58-ac74-eeddf2dca23b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_PROFILE_COUNT_DATA_0032, D3D12DDI_VIDEO_DECODE_PROFILE_COUNT_DATA_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video decode profile count data.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3D12DDI_VIDEO_DECODE_PROFILE_COUNT_DATA_0032 {
 
 Node index.
 
+
 ### -field ProfileCount
 
 Profile count.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Profile count.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

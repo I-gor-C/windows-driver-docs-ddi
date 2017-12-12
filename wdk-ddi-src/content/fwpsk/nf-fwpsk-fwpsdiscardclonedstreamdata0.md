@@ -7,7 +7,7 @@ old-location: netvista\fwpsdiscardclonedstreamdata0.htm
 old-project: netvista
 ms.assetid: 11e8338d-4ca3-49a4-8cfe-ac9f15434b4f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsDiscardClonedStreamData0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <a href="netvista.fwpsclonestreamdata0">FwpsCloneStreamData0</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -64,10 +65,12 @@ A pointer to the
      <i>netBufferListChain</i> parameter of the 
      <a href="netvista.fwpsclonestreamdata0">FwpsCloneStreamData0</a> function.
 
+
 ### -param flags [in]
 
 There are currently no flags defined for this function. Callout drivers should set this parameter
      to zero.
+
 
 ### -param dispatchLevel [in]
 
@@ -75,19 +78,23 @@ A value that indicates the current IRQL = DISPATCH_LEVEL. A callout driver shoul
      parameter to <b>TRUE</b> only if it is running at IRQL = DISPATCH_LEVEL. Otherwise, a callout driver should set
      this parameter to <b>FALSE</b>.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 This function can be called when a cloned 
     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> chain is to be discarded
     instead of being reinjected back into the data stream.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,14 +105,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +126,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +137,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -143,5 +156,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsDiscardClonedStreamData0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsDiscardClonedStreamData0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

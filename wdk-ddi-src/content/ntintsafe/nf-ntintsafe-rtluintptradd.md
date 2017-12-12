@@ -7,7 +7,7 @@ old-location: kernel\rtluintptradd.htm
 old-project: kernel
 ms.assetid: 9106CE96-A26F-4358-9668-2C0E331BB793
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlUIntPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Adds two values of type <b>UINT_PTR</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,24 +59,29 @@ NTSTATUS RtlUIntPtrAdd(
 
 The first value in the equation.
 
+
 ### -param uAddend [in]
 
 The value to add to <i>uAugend</i>.
 
+
 ### -param puResult [out]
 
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
+
 
 ## -remarks
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,6 +92,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_video_process_output_stream_desc_0032.htm
 old-project: display
 ms.assetid: 5A995E97-4522-44CD-89C3-521724142D7F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032, D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes output stream properties for the video processor.
 
 
+
 ## -syntax
 
 ````
@@ -62,21 +63,26 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 {
 
 The DXGI format of the output texture.
 
+
 ### -field ColorSpace
 
 A DXGI_COLOR_SPACE_TYPE value that specifies the colorspace for the video processor output surface.
+
 
 ### -field AlphaFillMode
 
 The alpha fill mode for data that the video processor writes to the render target.  See D3D12DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE.
 
+
 ### -field AlphaFillModeSourceStreamIndex
 
 The zero-based index of an input stream. This parameter is used if AlphaFillMode is D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_SOURCE_STREAM. Otherwise, the parameter is ignored.
 
+
 ### -field BackgroundColor[4]
 
 The video processor uses the background color to fill areas of the target rectangle that do not contain a video image. Areas outside the target rectangle are not affected.  The meaning of the values is specified by the ColorSpace parameter.
+
 <table>
 <tr>
 <th></th>
@@ -106,13 +112,16 @@ The video processor uses the background color to fill areas of the target rectan
 </table>
  
 
+
 ### -field FrameRate
 
 The frame rate of the output video stream, specified as a DXGI_RATIONAL structure.
 
+
 ### -field EnableStereo
 
 If TRUE, stereo output is enabled. Otherwise, the video processor produces mono video frames.
+
 
 ## -remarks
 
@@ -122,6 +131,7 @@ If TRUE, stereo output is enabled. Otherwise, the video processor produces mono 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

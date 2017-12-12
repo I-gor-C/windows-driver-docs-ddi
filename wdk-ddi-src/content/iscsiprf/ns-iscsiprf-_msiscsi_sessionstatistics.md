@@ -7,7 +7,7 @@ old-location: storage\msiscsi_sessionstatistics.htm
 old-project: storage
 ms.assetid: 04ceffce-cd5f-4e62-98cb-450e8552a811
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MSiSCSI_SessionStatistics structure is used by iSCSI initiators to report session statistics. 
 
 
+
 ## -syntax
 
 ````
@@ -65,50 +66,62 @@ typedef struct _MSiSCSI_SessionStatistics {
 
 A wide character string that contains the name of an iSCSI target.
 
+
 ### -field USID
 
 The iSCSI session identifier (ID) for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the session. Do not use this ID. Application software should use the session identifier that the <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods return in the <i>UniqueSessionId</i> parameter.
+
 
 ### -field UniqueAdapterId
 
 A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this ID. The initiator reports this value in the <i>UniqueAdapterId</i> member of the <a href="storage.msiscsi_hbainformation">MSiSCSI_HBAInformation</a> structure.
 
+
 ### -field BytesSent
 
 The number of bytes that are sent over this session. 
+
 
 ### -field BytesReceived
 
 The number of bytes that are received over this session. 
 
+
 ### -field PDUCommandsSent
 
 The number of PDUs that are sent over this session. 
+
 
 ### -field PDUResponsesReceived
 
 The number of PDUs that are received over this session. 
 
+
 ### -field DigestErrors
 
 The number of digest errors that have occurred in this session.
+
 
 ### -field ConnectionTimeoutErrors
 
 The number of connection time-out errors that have occurred in this session. 
 
+
 ### -field FormatErrors
 
 The number of format errors that have occurred in this session.
 
+
 ## -remarks
 It is optional that you implement this class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,5 +147,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_SessionStatistics structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_SessionStatistics structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

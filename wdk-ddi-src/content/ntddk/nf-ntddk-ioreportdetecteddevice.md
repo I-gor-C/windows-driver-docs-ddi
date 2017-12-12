@@ -7,7 +7,7 @@ old-location: kernel\ioreportdetecteddevice.htm
 old-project: kernel
 ms.assetid: b7756f69-feab-4a28-88d5-0262f86db54b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoReportDetectedDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL (see Remarks section)
 The <b>IoReportDetectedDevice</b> routine reports a non-PnP device to the PnP manager.
 
 
+
 ## -syntax
 
 ````
@@ -63,41 +64,55 @@ NTSTATUS IoReportDetectedDevice(
 
 Pointer to the driver object of the driver that detected the device.
 
+
 ### -param LegacyBusType [in]
 
 Specifies the type of bus on which the device resides. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
+
 The interface types, such as <b>PCIBus</b>, are defined in Wdm.h. If a driver does not know the <i>LegacyBusType</i> for the device, the driver supplies the value <b>InterfaceTypeUndefined</b> for this parameter.
+
 
 ### -param BusNumber [in]
 
 Specifies the bus number for the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
+
 The bus number distinguishes the bus on which the device resides from other buses of the same type on the computer. The bus-numbering scheme is bus-specific. If a driver does not know the <i>BusNumber</i> for the device, the driver supplies the value -1 for this parameter. 
+
 
 ### -param SlotNumber [in]
 
 Specifies the logical slot number of the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
+
 If a driver does not know the <i>SlotNumber</i> for the device, the driver supplies the value -1 for this parameter.
+
 
 ### -param ResourceList [in, optional]
 
 Pointer to the resource list the driver used to detect the device. Resources in this list are in raw, untranslated form. 
 
+
 ### -param ResourceRequirements [in, optional]
 
 Optionally points to a resource requirements list for the detected device. <b>NULL</b> if the caller does not have this information for the device.
+
 
 ### -param ResourceAssigned [in]
 
 Specifies whether the device's resources have already been reported to the PnP manager. If <i>ResourceAssigned</i> is <b>TRUE</b>, the resources have already been reported, possibly with <a href="kernel.ioreportresourcefordetection">IoReportResourceForDetection</a>, and the PnP manager will not attempt to claim them on behalf of the device. If <b>TRUE</b>, the PnP manager will also not claim resources when the device is root-enumerated on subsequent boots.
 
+
 ### -param DeviceObject [in, out]
 
 Optionally points to a PDO for the detected device. 
+
 <b>NULL</b> if the caller does not have a PDO for the device, which is typically the case. If <i>DeviceObject</i> is <b>NULL</b>, the PnP manager creates a PDO for the device and returns a pointer to the caller.
+
 If the caller supplies a PDO, the PnP manager does not create a new PDO. On a given call to this routine the <i>DeviceObject</i> parameter is either an IN or an OUT parameter, but not both. 
+
 
 ## -returns
 <b>IoReportDetectedDevice</b> returns STATUS_SUCCESS on success, or the appropriate error code on failure.
+
 
 ## -remarks
 Drivers for legacy devices use <b>IoReportDetectedDevice</b> to report their devices to the system. A driver should only call <b>IoReportDetectedDevice</b> to report a legacy, non-PnP device. PnP devices should be reported in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551670">IRP_MN_QUERY_DEVICE_RELATIONS</a> request.
@@ -116,11 +131,13 @@ The system generates two compatible ID strings for the device, of the form DETEC
 
 A driver writer must provide an INF file that matches any of the specified hardware IDs or compatible IDs. The INF file should specify the original driver that called <b>IoReportDetectedDevice</b> as the driver to load for those IDs. The system uses this information to rebuild the driver stack for the device, for example on restart. Callers of <b>IoReportDetectedDevice</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -131,14 +148,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,6 +169,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -159,6 +180,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -169,14 +191,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -194,5 +219,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportDetectedDevice routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportDetectedDevice routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

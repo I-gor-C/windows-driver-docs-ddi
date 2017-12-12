@@ -7,7 +7,7 @@ old-location: debugger\idebugplmclient.htm
 old-project: debugger
 ms.assetid: 2D713354-4C93-4DC1-A3E9-7E6BC991FD08
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This interface supports Process Lifecycle Management (PLM) for the debug client.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugPlmClient</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IDebugPlmClient</b> also has these types of members:
 
@@ -49,6 +50,7 @@ The <b>IDebugPlmClient</b> interface has these methods.
 Launches a suspended Process Lifecycle Management (PLM) application.
 
  
+
 
 ## -members
 The <b>IDebugPlmClient</b> interface has these methods.
@@ -63,11 +65,13 @@ The <b>IDebugPlmClient</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Launches a suspended Process Lifecycle Management (PLM) application.
+
 </td>
 </tr>
 </table>Launches a suspended Process Lifecycle Management (PLM) application.
 
  
+
 
 ## -remarks
 
@@ -77,6 +81,7 @@ Launches a suspended Process Lifecycle Management (PLM) application.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

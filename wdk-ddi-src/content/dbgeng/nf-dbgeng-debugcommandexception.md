@@ -7,7 +7,7 @@ old-location: debugger\debugcommandexception.htm
 old-project: debugger
 ms.assetid: 6DC67840-B985-45D0-8E81-671C3DC1EBC2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCommandException
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a debug command exception.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ void WINAPI DebugCommandException(
 
 A command.
 
+
 ### -param ArgSize 
 
 The size of the argument.
+
 
 ### -param Arg 
 
 A pointer to an argument.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -77,6 +82,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

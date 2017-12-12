@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>RxMakeLateDeviceAvailable</b> modifies the device object to make a "late device" available. A late device is one that is not created in the driver's load routine.
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ VOID RxMakeLateDeviceAvailable(
 
 A pointer to the where the created device object is to be stored.
 
+
 ## -returns
 None
 
+
 ## -remarks
 <b>RxMakeLateDeviceAvailable</b> clears the DO_DEVICE_INITIALIZING bit in the <b>Flags</b> member of the device object. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,9 +93,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>

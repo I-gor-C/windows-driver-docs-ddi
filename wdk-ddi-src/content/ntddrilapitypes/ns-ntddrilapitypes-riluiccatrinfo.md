@@ -7,8 +7,8 @@ old-location: netvista\riluiccatrinfo.htm
 old-project: netvista
 ms.assetid: 84ced2d3-43a9-42ef-b8fb-592dc960b01b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCATRINFO, RILUICCATRINFO, *LPRILUICCATRINFO
+ms.date: 12/8/2017
+ms.keywords: RILUICCATRINFO, *LPRILUICCATRINFO, RILUICCATRINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILUICCATRINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

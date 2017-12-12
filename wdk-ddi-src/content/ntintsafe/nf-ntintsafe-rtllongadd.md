@@ -7,7 +7,7 @@ old-location: kernel\rtllongadd.htm
 old-project: kernel
 ms.assetid: E8CF5E74-2EDA-4B27-A9C0-053930FF741D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlLongAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Adds two values of type <b>LONG</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ NTSTATUS RtlLongAdd(
 
 The first value in the equation.
 
+
 ### -param lAddend [in]
 
 The value to add to <i>lAugend</i>.
+
 
 ### -param plResult [out]
 
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
+
 ## -remarks
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

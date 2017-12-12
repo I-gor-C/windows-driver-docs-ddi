@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_info.htm
 old-project: storage
 ms.assetid: 5A85A7EC-2333-4161-A1E7-55D3420E730C
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_INFO, *PSTORAGE_HW_FIRMWARE_INFO, STORAGE_HW_FIRMWARE_INFO
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_HW_FIRMWARE_INFO, STORAGE_HW_FIRMWARE_INFO, *PSTORAGE_HW_FIRMWARE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains information about the device firmware.
 
 
+
 ## -syntax
 
 ````
@@ -67,21 +68,26 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO {
 
 The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_INFO)
 
+
 ### -field Size
 
 The size of this structure as a buffer including slot.
+
 
 ### -field SupportUpgrade
 
 Indicates that this firmware supports an upgrade.
 
+
 ### -field Reserved0
 
 Reserved for future use.
 
+
 ### -field SlotCount
 
 The number of firmware slots on the device. This is the dimension of the Slot array.
+
 <div class="alert"><b>Note</b>   Some devices can store more than 1 firmware image, if they have more than 1 firmware slot.</div>
 <div> </div>
 
@@ -89,9 +95,11 @@ The number of firmware slots on the device. This is the dimension of the Slot ar
 
 The firmware slot containing the currently active/running firmware image.
 
+
 ### -field PendingActivateSlot
 
 The firmware slot that is pending activation.
+
 
 ### -field FirmwareShared
 
@@ -99,21 +107,26 @@ Indicates that the firmware applies to both the device and controller/adapter, e
 
 
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ### -field ImagePayloadAlignment
 
 The alignment of the image payload, in number of bytes. The maximum is PAGE_SIZE. The transfer size is a mutliple of this size. Some protocols require at least sector size. When this value is set to 0, this means that this value is invalid.
 
+
 ### -field ImagePayloadMaxSize
 
 The image payload maximum size, this is used for a single command.
 
+
 ### -field Slot
 
 Contains the slot information for each slot on the device.
+
 
 ## -remarks
 
@@ -123,22 +136,27 @@ Contains the slot information for each slot on the device.
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

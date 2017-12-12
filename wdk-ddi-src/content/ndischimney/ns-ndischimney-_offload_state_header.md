@@ -7,8 +7,8 @@ old-location: netvista\offload_state_header.htm
 old-project: netvista
 ms.assetid: 9becc611-ede9-4285-b2d7-c53747d098a9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER
+ms.date: 12/8/2017
+ms.keywords: _OFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The OFFLOAD_STATE_HEADER structure serves as a header in an offload state structure.
+
 
 
 ## -syntax
@@ -60,9 +62,11 @@ The total size, in bytes, of the offload state structure that includes the OFFLO
      member. This size includes the size of the OFFLOAD_STATE_HEADER member and the other members of the
      offload state structure.
 
+
 ### -field RecognizedOptions
 
 Reserved.
+
 
 ## -remarks
 The following offload state structures include an OFFLOAD_STATE_HEADER structure:
@@ -107,11 +111,13 @@ The following offload state structures include an OFFLOAD_STATE_HEADER structure
 <a href="netvista.tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

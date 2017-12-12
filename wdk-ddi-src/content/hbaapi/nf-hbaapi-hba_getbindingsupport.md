@@ -7,7 +7,7 @@ old-location: storage\hba_getbindingsupport.htm
 old-project: storage
 ms.assetid: 60542ed9-fbb0-48a3-bc97-ce3db7b4ae10
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: HBA_GetBindingSupport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>HBA_GetBindingSupport</b> routine retrieves the binding capabilities currently enabled for the specified port.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ HBA_STATUS HBA_API HBA_GetBindingSupport(
 
 Contains a value returned by the routine <a href="storage.hba_openadapter">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. 
 
+
 ### -param HbaPortWWN [in]
 
 Contains a 64-bit world-wide name (WWN) that uniquely identifies the local HBA port for which this routine retrieves persistent binding capabilities that are currently enabled. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
+
 ### -param Flags [out]
 
 Contains a bitwise OR of flags associated with the <a href="storage.hba_bind_type">HBA_BIND_TYPE</a> WMI property qualifier that represent the persistent binding capabilities of the port that are currently enabled. 
+
 
 ## -returns
 The <b>HBA_GetBindingSupport</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetBindingCapability</b> returns one of the following qualifiers.
@@ -80,6 +84,7 @@ The <b>HBA_GetBindingSupport</b> routine returns a value of type <a href="storag
 
  
 
+
 ## -remarks
 
 
@@ -88,6 +93,7 @@ The <b>HBA_GetBindingSupport</b> routine returns a value of type <a href="storag
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +104,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +115,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +126,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -140,5 +149,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_GetBindingSupport routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_GetBindingSupport routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

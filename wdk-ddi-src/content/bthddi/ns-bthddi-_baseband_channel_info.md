@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: c9328791-898e-48f2-acfd-30c8a36fcd29
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO
+ms.keywords: _BASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The BASEBAND_CHANNEL_INFO structure describes output information about the baseb
   used by a SCO link after a BRB_GET_CHANNEL_INFO BRB completes.
 
 
+
 ## -syntax
 
 ````
@@ -62,15 +63,18 @@ typedef struct _BASEBAND_CHANNEL_INFO {
 The elapsed time, in slots, between two consecutive SCO instants. This member will return zero for
      SCO links.
 
+
 ### -field Retransmission_Window
 
 The length of time, in slots, that an eSCO channel can use to retransmit a request. This member
      will return zero for SCO links.
 
+
 ### -field AirMode
 
 The air mode data format used by the baseband channel. Possible values include:
      
+
 
 
 ### -field A-LAW LOG
@@ -86,15 +90,18 @@ The air mode data format used by the baseband channel. Possible values include:
 
 
 
+
 ### -field Rx_Packet_Length
 
 The size, in bytes, of the eSCO payload in the receive direction. This member will return zero for
      SCO links.
 
+
 ### -field Tx_Packet_Length
 
 The size, in bytes, of the eSCO payload in the transmit direction. This member will return zero
      for SCO links.
+
 
 ## -remarks
 Profile drivers access the BASEBAND_CHANNEL_INFO structure through the 
@@ -102,19 +109,23 @@ Profile drivers access the BASEBAND_CHANNEL_INFO structure through the
     <a href="..\bthddi\ns-bthddi-_brb_sco_get_channel_info.md">
     _BRB_SCO_GET_CHANNEL_INFO</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +142,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BASEBAND_CHANNEL_INFO structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

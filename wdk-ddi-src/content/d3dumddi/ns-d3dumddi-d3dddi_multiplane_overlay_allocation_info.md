@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_allocation_info.htm
 old-project: display
 ms.assetid: ce3610ab-a927-45e7-8ceb-3f38b5f50f00
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO, D3DDDI_MULTIPLANE_ALLOCATION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies info about a multiplane overlay allocation.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO {
 
 [in] A handle to the multiplane overlay allocation.
 
+
 ### -field SubResourceIndex
 
 [in] The zero-based index into the resource which the handle in the <b>PresentAllocation</b> member specifies. This index indicates the display surface.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,20 +42,25 @@ The <b>IOCTL_HID_GET_MS_GENRE_DESCRIPTOR</b>
    request is used for retrieving the genre descriptor for the device.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 
        The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member specifies the size, in bytes, of a requester-allocated output buffer. 
 
+
 ### -input-buffer-length
+
 
 
 ### -output-buffer
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a <a href="kernel.ntstatus_value">NTSTATUS</a> code.
 
+
 ### -output-buffer-length
 The size of a status code.
+
 
 ### -in-out-buffer
 
@@ -69,6 +74,7 @@ The size of a status code.
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a <a href="kernel.ntstatus_value">NTSTATUS</a> code.
 
+
 ## -remarks
 
 
@@ -77,6 +83,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

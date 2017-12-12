@@ -7,8 +7,8 @@ old-location: wdf\iremoteinterfacecallbackevent.htm
 old-project: wdf
 ms.assetid: 72b68ed0-d14c-44b1-b848-40c427fe6c9a
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IRemoteInterfaceCallbackEvent</b> interface provides a callback function that the framework calls to notify the driver about device events that are associated with a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>.
+
 
 
 ## -inheritance
@@ -51,6 +53,7 @@ The <b>IRemoteInterfaceCallbackEvent</b> interface has these methods.
 A UMDF-based driver's <a href="wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent">OnRemoteInterfaceEvent</a> event callback function handles device events that are associated with a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>.
 
  
+
 
 ## -members
 The <b>IRemoteInterfaceCallbackEvent</b> interface has these methods.
@@ -65,20 +68,24 @@ The <b>IRemoteInterfaceCallbackEvent</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 A UMDF-based driver's <a href="wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent">OnRemoteInterfaceEvent</a> event callback function handles device events that are associated with a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>.
+
 </td>
 </tr>
 </table>A UMDF-based driver's <a href="wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent">OnRemoteInterfaceEvent</a> event callback function handles device events that are associated with a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>.
 
  
 
+
 ## -remarks
 If your driver supports an <b>IRemoteInterfaceCallbackEvent</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="wdf.iwdfdevice2_createremoteinterface">IWDFDevice2::CreateRemoteInterface</a> must return the interface. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

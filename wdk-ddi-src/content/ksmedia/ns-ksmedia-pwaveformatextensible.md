@@ -41,6 +41,7 @@ req.irql:
 The WAVEFORMATEXTENSIBLE structure specifies the format of an audio wave stream.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef struct {
 
 Specifies the stream's wave-data format. This member is a structure of type <a href="audio.waveformatex">WAVEFORMATEX</a>. The <b>wFormat</b> member of WAVEFORMATEX should be set to WAVE_FORMAT_EXTENSIBLE. The <b>wBitsPerSample</b> member of WAVEFORMATEX is defined unambiguously as the size of the container for each sample. Sample containers are always byte-aligned, and <b>wBitsPerSample</b> must be a multiple of eight.
 
+
 ### -field Samples
 
 
@@ -70,13 +72,16 @@ Specifies the stream's wave-data format. This member is a structure of type <a h
 
 Specifies the precision of the sample in bits. The value of this member should be less than or equal to the container size specified in the <b>Format</b>.<b>wBitsPerSample</b> member. For more information, see the following Remarks section.
 
+
 ### -field wSamplesPerBlock
 
 Specifies the number of samples contained in one compressed block. This value is useful for estimating buffer requirements for compressed formats that have a fixed number of samples within each block. Set this member to zero if each block of compressed audio data contains a variable number of samples. In this case, buffer-estimation and buffer-position information must be obtained in other ways.
 
+
 ### -field wReserved
 
 Reserved for internal use by operating system. Initialize to zero.
+
 </dd>
 </dl>
 
@@ -84,9 +89,11 @@ Reserved for internal use by operating system. Initialize to zero.
 
 Specifies the assignment of channels in the multichannel stream to speaker positions. The encoding is the same as that used for the <b>ActiveSpeakerPositions</b> member of the <a href="audio.ksaudio_channel_config">KSAUDIO_CHANNEL_CONFIG</a> structure. For more information, see the following Remarks section.
 
+
 ### -field SubFormat
 
 Specifies the subformat. For more information, see the following Remarks section.
+
 
 ## -remarks
 WAVEFORMATEXTENSIBLE is an extended form of the <a href="audio.waveformatex">WAVEFORMATEX</a> structure. WAVEFORMATEX can unambiguously describe only a subset of the formats that can be described by WAVEFORMATEXTENSIBLE. WAVEFORMATEXTENSIBLE is not subject to the limitations of WAVEFORMATEX, which is unable to unambiguously specify formats with more than two channels or for which the number of valid bits per sample does not equal the sample container size. For more information, see <a href="https://msdn.microsoft.com/85aa74b4-8e33-49f4-82e7-561baa55c265">Audio Data Formats and Data Ranges</a>.
@@ -237,11 +244,13 @@ For more information, see <a href="https://msdn.microsoft.com/299ad5d3-df62-41cf
 
 Because WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX, it can describe additional formats that cannot be described by WAVEFORMATEX alone. Vendors are free to define their own <b>SubFormat</b> GUIDs to identify proprietary formats for which no wave-format tags exist.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -261,5 +270,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20WAVEFORMATEXTENSIBLE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Ntddrilapitypes.h header
 
+## -description
 
 This header is used by Networking drivers for Windows Vista and later. For more information, see
 - [Networking drivers for Windows Vista and later](../_netvista/index.md)
@@ -23,14 +28,14 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILCALLERIDSETTINGS structure](ns-ntddrilapitypes-rilcalleridsettings.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLFORWARDINGSETTINGS structure](ns-ntddrilapitypes-rilcallforwardingsettings.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLHANDOVERSTATE structure](ns-ntddrilapitypes-rilcallhandoverstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLINFO_V1 structure](ns-ntddrilapitypes-rilcallinfo-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLINFO_V2 structure](ns-ntddrilapitypes-rilcallinfo-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLINFO_V3 structure](ns-ntddrilapitypes-rilcallinfo-v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLINFO_V4 structure](ns-ntddrilapitypes-rilcallinfo-v4.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLINFO_V5 structure](ns-ntddrilapitypes-rilcallinfo-v5.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLLIST_V1 structure](ns-ntddrilapitypes-rilcalllist-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLLIST_V2 structure](ns-ntddrilapitypes-rilcalllist-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILCALLLIST_V3 structure](ns-ntddrilapitypes-rilcalllist-v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLINFO_V1 structure](ns-ntddrilapitypes-rilcallinfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLINFO_V2 structure](ns-ntddrilapitypes-rilcallinfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLINFO_V3 structure](ns-ntddrilapitypes-rilcallinfo_v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLINFO_V4 structure](ns-ntddrilapitypes-rilcallinfo_v4.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLINFO_V5 structure](ns-ntddrilapitypes-rilcallinfo_v5.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLLIST_V1 structure](ns-ntddrilapitypes-rilcalllist_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLLIST_V2 structure](ns-ntddrilapitypes-rilcalllist_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILCALLLIST_V3 structure](ns-ntddrilapitypes-rilcalllist_v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLMEDIAID structure](ns-ntddrilapitypes-rilcallmediaid.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLMEDIAOFFERANSWER structure](ns-ntddrilapitypes-rilcallmediaofferanswer.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLMEDIAOFFERANSWERSET structure](ns-ntddrilapitypes-rilcallmediaofferanswerset.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -55,8 +60,8 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILDELETEMSGPARAMS structure](ns-ntddrilapitypes-rildeletemsgparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDELETEPHONEBOOKENTRYPARAMS structure](ns-ntddrilapitypes-rildeletephonebookentryparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDIALEDIDSETTINGS structure](ns-ntddrilapitypes-rildialedidsettings.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILDIALPARAMS_V1 structure](ns-ntddrilapitypes-rildialparams-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILDIALPARAMS_V2 structure](ns-ntddrilapitypes-rildialparams-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILDIALPARAMS_V1 structure](ns-ntddrilapitypes-rildialparams_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILDIALPARAMS_V2 structure](ns-ntddrilapitypes-rildialparams_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDISPLAYINFO structure](ns-ntddrilapitypes-rildisplayinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDMCONFIGINFOVALUE structure](ns-ntddrilapitypes-rildmconfiginfovalue.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDRVNOTIFICATION structure](ns-ntddrilapitypes-rildrvnotification.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -91,20 +96,20 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILIMSFAILURE structure](ns-ntddrilapitypes-rilimsfailure.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSHANDOVERATTEMPT structure](ns-ntddrilapitypes-rilimshandoverattempt.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSIPCAUSE structure](ns-ntddrilapitypes-rilimssipcause.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILIMSSTATUS_V1 structure](ns-ntddrilapitypes-rilimsstatus-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILIMSSTATUS_V2 structure](ns-ntddrilapitypes-rilimsstatus-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILIMSSTATUS_V3 structure](ns-ntddrilapitypes-rilimsstatus-v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILIMSSTATUS_V1 structure](ns-ntddrilapitypes-rilimsstatus_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILIMSSTATUS_V2 structure](ns-ntddrilapitypes-rilimsstatus_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILIMSSTATUS_V3 structure](ns-ntddrilapitypes-rilimsstatus_v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILLINECONTROLINFO structure](ns-ntddrilapitypes-rillinecontrolinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILLOCATIONINFO structure](ns-ntddrilapitypes-rillocationinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILMANAGECALLSPARAMS_V1 structure](ns-ntddrilapitypes-rilmanagecallsparams-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILMANAGECALLSPARAMS_V2 structure](ns-ntddrilapitypes-rilmanagecallsparams-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILMANAGECALLSPARAMS_V3 structure](ns-ntddrilapitypes-rilmanagecallsparams-v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILMANAGECALLSPARAMS_V4 structure](ns-ntddrilapitypes-rilmanagecallsparams-v4.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILMANAGECALLSPARAMS_V1 structure](ns-ntddrilapitypes-rilmanagecallsparams_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILMANAGECALLSPARAMS_V2 structure](ns-ntddrilapitypes-rilmanagecallsparams_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILMANAGECALLSPARAMS_V3 structure](ns-ntddrilapitypes-rilmanagecallsparams_v3.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILMANAGECALLSPARAMS_V4 structure](ns-ntddrilapitypes-rilmanagecallsparams_v4.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMESSAGE structure](ns-ntddrilapitypes-rilmessage.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMESSAGEINFO structure](ns-ntddrilapitypes-rilmessageinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMESSAGEINUICC structure](ns-ntddrilapitypes-rilmessageinuicc.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILMESSAGEIN_V1 structure](ns-ntddrilapitypes-rilmessagein-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILMESSAGEIN_V2 structure](ns-ntddrilapitypes-rilmessagein-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILMESSAGEIN_V1 structure](ns-ntddrilapitypes-rilmessagein_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILMESSAGEIN_V2 structure](ns-ntddrilapitypes-rilmessagein_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMESSAGESTORAGEFULL structure](ns-ntddrilapitypes-rilmessagestoragefull.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGBCGENERAL structure](ns-ntddrilapitypes-rilmsgbcgeneral.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGCDMAINDELIVER structure](ns-ntddrilapitypes-rilmsgcdmaindeliver.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -119,8 +124,8 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILMSGMWISUMMARYLIST structure](ns-ntddrilapitypes-rilmsgmwisummarylist.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGOUTSUBMIT structure](ns-ntddrilapitypes-rilmsgoutsubmit.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGSERVICEINFO structure](ns-ntddrilapitypes-rilmsgserviceinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILNITZINFO_V1 structure](ns-ntddrilapitypes-rilnitzinfo-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILNITZINFO_V2 structure](ns-ntddrilapitypes-rilnitzinfo-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILNITZINFO_V1 structure](ns-ntddrilapitypes-rilnitzinfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILNITZINFO_V2 structure](ns-ntddrilapitypes-rilnitzinfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNOTIFICATIONPARAMS structure](ns-ntddrilapitypes-rilnotificationparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPENUICCLOGICALCHANNELINFO structure](ns-ntddrilapitypes-rilopenuicclogicalchannelinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPENUICCLOGICALCHANNELPARAMS structure](ns-ntddrilapitypes-rilopenuicclogicalchannelparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -159,8 +164,8 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILRTTDATA structure](ns-ntddrilapitypes-rilrttdata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDDTMFPARAMS structure](ns-ntddrilapitypes-rilsenddtmfparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDFLASHPARAMS structure](ns-ntddrilapitypes-rilsendflashparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSENDMSGACKPARAMS_V1 structure](ns-ntddrilapitypes-rilsendmsgackparams-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSENDMSGACKPARAMS_V2 structure](ns-ntddrilapitypes-rilsendmsgackparams-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSENDMSGACKPARAMS_V1 structure](ns-ntddrilapitypes-rilsendmsgackparams_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSENDMSGACKPARAMS_V2 structure](ns-ntddrilapitypes-rilsendmsgackparams_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDMSGPARAMS structure](ns-ntddrilapitypes-rilsendmsgparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDMSGRESPONSE structure](ns-ntddrilapitypes-rilsendmsgresponse.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDRESTRICTEDUICCCMDPARAMS structure](ns-ntddrilapitypes-rilsendrestricteduicccmdparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -183,8 +188,8 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILSETPREFERREDOPERATORLISTPARAMS structure](ns-ntddrilapitypes-rilsetpreferredoperatorlistparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSETSLOTPOWERPARAMS structure](ns-ntddrilapitypes-rilsetslotpowerparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSETSMSCPARAMS structure](ns-ntddrilapitypes-rilsetsmscparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSETSYSTEMSELECTIONPREFSPARAMS_V1 structure](ns-ntddrilapitypes-rilsetsystemselectionprefsparams-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSETSYSTEMSELECTIONPREFSPARAMS_V2 structure](ns-ntddrilapitypes-rilsetsystemselectionprefsparams-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSETSYSTEMSELECTIONPREFSPARAMS_V1 structure](ns-ntddrilapitypes-rilsetsystemselectionprefsparams_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSETSYSTEMSELECTIONPREFSPARAMS_V2 structure](ns-ntddrilapitypes-rilsetsystemselectionprefsparams_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSETUICCLOCKENABLEDPARAMS structure](ns-ntddrilapitypes-rilsetuicclockenabledparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSIGNALQUALITY structure](ns-ntddrilapitypes-rilsignalquality.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSMSMODIFICATIONINFO structure](ns-ntddrilapitypes-rilsmsmodificationinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -193,12 +198,12 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILSUBADDRESS structure](ns-ntddrilapitypes-rilsubaddress.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATA structure](ns-ntddrilapitypes-rilsupservicedata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSVCINFO structure](ns-ntddrilapitypes-rilsupsvcinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSYSTEMSELECTIONPREFS_V1 structure](ns-ntddrilapitypes-rilsystemselectionprefs-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSYSTEMSELECTIONPREFS_V2 structure](ns-ntddrilapitypes-rilsystemselectionprefs-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSYSTEMSELECTIONPREFS_V1 structure](ns-ntddrilapitypes-rilsystemselectionprefs_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSYSTEMSELECTIONPREFS_V2 structure](ns-ntddrilapitypes-rilsystemselectionprefs_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMTIME structure](ns-ntddrilapitypes-rilsystemtime.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTERMINALCAPABILITYINFO structure](ns-ntddrilapitypes-rilterminalcapabilityinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILTONESIGNALINFO_V1 structure](ns-ntddrilapitypes-riltonesignalinfo-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILTONESIGNALINFO_V2 structure](ns-ntddrilapitypes-riltonesignalinfo-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILTONESIGNALINFO_V1 structure](ns-ntddrilapitypes-riltonesignalinfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILTONESIGNALINFO_V2 structure](ns-ntddrilapitypes-riltonesignalinfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCAPPDATACHANGE structure](ns-ntddrilapitypes-riluiccappdatachange.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCAPPINFO structure](ns-ntddrilapitypes-riluiccappinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCAPPPERSOCHECKSTATUS structure](ns-ntddrilapitypes-riluiccapppersocheckstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -216,8 +221,8 @@ Ntddrilapitypes.h contain these programming interfaces:
 | [RILUICCTOOLKITCMD structure](ns-ntddrilapitypes-riluicctoolkitcmd.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCTOOLKITPROFILE structure](ns-ntddrilapitypes-riluicctoolkitprofile.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUNBLOCKUICCLOCKPARAMS structure](ns-ntddrilapitypes-rilunblockuicclockparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUNSOLICITEDSSINFO_V1 structure](ns-ntddrilapitypes-rilunsolicitedssinfo-v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUNSOLICITEDSSINFO_V2 structure](ns-ntddrilapitypes-rilunsolicitedssinfo-v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUNSOLICITEDSSINFO_V1 structure](ns-ntddrilapitypes-rilunsolicitedssinfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUNSOLICITEDSSINFO_V2 structure](ns-ntddrilapitypes-rilunsolicitedssinfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILVERSIONPARAMS structure](ns-ntddrilapitypes-rilversionparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILWRITEADDITIONALNUMBERSTRINGPARAMS structure](ns-ntddrilapitypes-rilwriteadditionalnumberstringparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILWRITEMSGPARAMS structure](ns-ntddrilapitypes-rilwritemsgparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcstype.htm
 old-project: netvista
 ms.assetid: 557fc92e-6550-44ea-ac09-bb0b74e1275f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGDCSTYPE, RILMSGDCSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef enum _RILMSGDCSTYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

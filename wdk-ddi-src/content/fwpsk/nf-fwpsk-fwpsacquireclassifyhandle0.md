@@ -7,7 +7,7 @@ old-location: netvista\fwpsacquireclassifyhandle0.htm
 old-project: netvista
 ms.assetid: 7348d937-6541-47a7-ae70-7d851d41bc1a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsAcquireClassifyHandle0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   asynchronous classification operations and requests for writable layer data.
 
 
+
 ## -syntax
 
 ````
@@ -64,14 +65,17 @@ The
      value to the callout driver's 
      <a href="netvista.classifyfn">classifyFn</a>.
 
+
 ### -param flags [in]
 
 Reserved for future use. Set to 0.
+
 
 ### -param classifyHandle [out]
 
 A pointer to a variable that receives a classification handle. This handle is needed by subsequent
      function calls as noted in Remarks.
+
 
 ## -returns
 The 
@@ -85,6 +89,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 <b>FwpsAcquireClassifyHandle0</b> is a support function for asynchronous classification and data
@@ -117,11 +122,13 @@ For each call to this function, the callout driver must call
     <a href="netvista.fwpsreleaseclassifyhandle0">FwpsReleaseClassifyHandle0</a> to
     free the system resources associated with the handle.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -132,14 +139,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,6 +160,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -160,9 +171,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -186,5 +199,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireClassifyHandle0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireClassifyHandle0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

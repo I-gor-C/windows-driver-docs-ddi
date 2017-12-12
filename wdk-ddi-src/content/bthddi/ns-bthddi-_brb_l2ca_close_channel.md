@@ -41,6 +41,7 @@ req.irql: Developers should code this function to operate at either IRQL = DISPA
 The _BRB_L2CA_CLOSE_CHANNEL structure describes an open L2CAP channel to close.
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field BtAddress
 
 The address of the remote device.
+
 
 ### -field ChannelHandle
 
@@ -70,6 +73,7 @@ The L2CAP channel handle that was returned by Bluetooth driver stack in response
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a> or 
      <a href="bltooth.brb_l2ca_open_channel_response">
      BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request. This is the channel handle to close.
+
 
 ## -remarks
 To close a L2CAP channel, profile drivers should 
@@ -80,19 +84,23 @@ A <b>BRB_L2CA_CLOSE_CHANNEL</b> request can be made for a channel that was initi
     a profile driver has multiple L2CAP channels to a single remote device, it must close each one
     individually.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,5 +127,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_CLOSE_CHANNEL structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

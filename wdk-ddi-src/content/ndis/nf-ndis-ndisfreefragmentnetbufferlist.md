@@ -7,7 +7,7 @@ old-location: netvista\ndisfreefragmentnetbufferlist.htm
 old-project: netvista
 ms.assetid: 2bbf85ee-8541-4d3d-87e5-0633bc35670b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisFreeFragmentNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,6 +47,7 @@ Call the
   NdisAllocateFragmentNetBufferList</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -65,6 +66,7 @@ VOID NdisFreeFragmentNetBufferList(
 A pointer to a NET_BUFFER_LIST structure that was allocated by calling 
      <b>NdisAllocateFragmentNetBufferList</b>.
 
+
 ### -param DataOffsetDelta [in]
 
 The amount, in bytes, to advance (add to the data offset) the fragment NET_BUFFER structures
@@ -72,13 +74,16 @@ The amount, in bytes, to advance (add to the data offset) the fragment NET_BUFFE
      <i>DataOffsetDelta</i> parameter that was passed to 
      <b>NdisAllocateFragmentNetBufferList</b> when the NET_BUFFER_LIST structure was created.
 
+
 ### -param FreeFragmentFlags [in]
 
 NDIS flags that can be combined with an OR operation. Set this parameter to zero. There are
      currently no flags defined for this function.
 
+
 ## -returns
 None
+
 
 ## -remarks
 
@@ -88,6 +93,7 @@ None
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -126,14 +136,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -155,5 +168,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeFragmentNetBufferList function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeFragmentNetBufferList function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

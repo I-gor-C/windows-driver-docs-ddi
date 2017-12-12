@@ -7,7 +7,7 @@ old-location: netvista\ndis_offload_parameters.htm
 old-project: netvista
 ms.assetid: ceb6647a-a43e-4ab1-88d4-49927103ecba
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS, *PNDIS_OFFLOAD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>NDIS_OFFLOAD_PARAMETERS</b> structure specifies the current task offload configuration settings in
   response to an 
   OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569807">OID_TCP_OFFLOAD_PARAMETERS</a>.
+
 
 
 ## -syntax
@@ -90,8 +91,10 @@ The
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
      
+
 To indicate the version of the <b>NDIS_OFFLOAD_PARAMETERS</b> structure, set the 
      <b>Revision</b> member to one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -106,8 +109,10 @@ To indicate the version of the <b>NDIS_OFFLOAD_PARAMETERS</b> structure, set the
 <td width="60%">
 Supports the 
         <b>RscIPv4</b> , <b>RscIPv6</b>, <b>EncapsulatedPacketTaskOffload</b>, and   <b>EncapsulationTypes</b> members for NDIS 6.30.
+
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_OFFLOAD_PARAMETERS_REVISION_3.
+
 </td>
 </tr>
 <tr>
@@ -122,8 +127,10 @@ Supports the
         <b>IPsecV2IPv4</b>, 
         <b>Reserved1</b>, and 
         <b>Reserved2</b> members for NDIS 6.1.
+
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_OFFLOAD_PARAMETERS_REVISION_2.
+
 </td>
 </tr>
 <tr>
@@ -134,43 +141,52 @@ Set the
 </td>
 <td width="60%">
 Original version for NDIS 6.0.
+
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_OFFLOAD_PARAMETERS_REVISION_1.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field IPv4Checksum
 
 The IPv4 checksum setting of the miniport adapter. For more information, see the following Remarks
      section.
 
+
 ### -field TCPIPv4Checksum
 
 The IPv4 checksum setting of the miniport adapter for TCP packets. For more information, see the
      following Remarks section.
+
 
 ### -field UDPIPv4Checksum
 
 The IPv4 checksum setting of the miniport adapter for UDP packets. For more information, see the
      following Remarks section.
 
+
 ### -field TCPIPv6Checksum
 
 The IPv6 checksum setting of the miniport adapter for TCP packets. For more information, see the
      following Remarks section.
+
 
 ### -field UDPIPv6Checksum
 
 The IPv6 checksum setting of the miniport adapter for UDP packets. For more information, see the
      following Remarks section.
 
+
 ### -field LsoV1
 
 The large send offload version 1 (LSOV1) setting of the miniport adapter. This setting should be
      one of the following values:
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -183,6 +199,7 @@ The large send offload version 1 (LSOV1) setting of the miniport adapter. This s
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 <tr>
@@ -192,6 +209,7 @@ The miniport driver should not change the current setting.
 </td>
 <td width="60%">
 LSOV1 is disabled.
+
 </td>
 </tr>
 <tr>
@@ -201,16 +219,19 @@ LSOV1 is disabled.
 </td>
 <td width="60%">
 LSOV1 is enabled.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field IPsecV1
 
 The Internet protocol security (IPsec) offload setting of the miniport adapter. This setting
      should be one of the following values:
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -223,6 +244,7 @@ The Internet protocol security (IPsec) offload setting of the miniport adapter. 
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 <tr>
@@ -232,6 +254,7 @@ The miniport driver should not change the current setting.
 </td>
 <td width="60%">
 IPsec offload is disabled.
+
 </td>
 </tr>
 <tr>
@@ -242,6 +265,7 @@ IPsec offload is disabled.
 <td width="60%">
 The IPsec offload Authentication Header (AH) feature should be enabled for transmit and
        receive.
+
 </td>
 </tr>
 <tr>
@@ -252,6 +276,7 @@ The IPsec offload Authentication Header (AH) feature should be enabled for trans
 <td width="60%">
 The IPsec offload Encapsulating Security Payload (ESP) feature should be enabled for transmit
        and receive.
+
 </td>
 </tr>
 <tr>
@@ -261,16 +286,19 @@ The IPsec offload Encapsulating Security Payload (ESP) feature should be enabled
 </td>
 <td width="60%">
 The IPsec offload AH and ESP features areenabled for transmit and receive.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field LsoV2IPv4
 
 The IPv4 large send offload version 2 (LSOV2) setting of the miniport adapter. This setting should
      be one of the following values:
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -283,6 +311,7 @@ The IPv4 large send offload version 2 (LSOV2) setting of the miniport adapter. T
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 <tr>
@@ -292,6 +321,7 @@ The miniport driver should not change the current setting.
 </td>
 <td width="60%">
 LSOV2 for IPv4 is disabled.
+
 </td>
 </tr>
 <tr>
@@ -301,16 +331,19 @@ LSOV2 for IPv4 is disabled.
 </td>
 <td width="60%">
 LSOV2 for IPv4 is enabled.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field LsoV2IPv6
 
 The IPv6 LSOV2 setting of the miniport adapter. These settings are specified as one of the
      following values:
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -323,6 +356,7 @@ The IPv6 LSOV2 setting of the miniport adapter. These settings are specified as 
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 <tr>
@@ -332,6 +366,7 @@ The miniport driver should not change the current setting.
 </td>
 <td width="60%">
 LSOV2 for IPv6 is disabled.
+
 </td>
 </tr>
 <tr>
@@ -341,16 +376,19 @@ LSOV2 for IPv6 is disabled.
 </td>
 <td width="60%">
 LSOV2 for IPv6 is enabled.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field TcpConnectionIPv4
 
 The IPv4 connection offload setting of the miniport adapter. These settings are specified as one
      of the following values:
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -363,16 +401,19 @@ The IPv4 connection offload setting of the miniport adapter. These settings are 
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field TcpConnectionIPv6
 
 The IPv6 connection offload setting of the miniport adapter. These settings are specified as one
      of the following values:
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -385,21 +426,25 @@ The IPv6 connection offload setting of the miniport adapter. These settings are 
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field Flags
 
 A set of flags that can be combined with a bitwise OR operation. Set this member to zero. There
      are currently no flags defined.
 
+
 ### -field IPsecV2
 
 The Internet protocol security (IPsec) offload version 2 setting of a miniport adapter that supports
       IPv6 and IPv4. This member specifies the setting for both IPv6 and IPv4 support. This setting should be
       one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -412,6 +457,7 @@ The Internet protocol security (IPsec) offload version 2 setting of a miniport a
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 <tr>
@@ -421,6 +467,7 @@ The miniport driver should not change the current setting.
 </td>
 <td width="60%">
 IPsec offload version 2 is disabled.
+
 </td>
 </tr>
 <tr>
@@ -431,6 +478,7 @@ IPsec offload version 2 is disabled.
 <td width="60%">
 The IPsec offload version 2 Authentication Header (AH) feature should be enabled for transmit
         and receive.
+
 </td>
 </tr>
 <tr>
@@ -441,6 +489,7 @@ The IPsec offload version 2 Authentication Header (AH) feature should be enabled
 <td width="60%">
 The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should be enabled for
         transmit and receive.
+
 </td>
 </tr>
 <tr>
@@ -450,10 +499,12 @@ The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should 
 </td>
 <td width="60%">
 The IPsec offload version 2A H and ESP features are enabled for transmit and receive.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field IPsecV2IPv4
 
@@ -461,6 +512,7 @@ The Internet protocol security (IPsec) offload version 2 setting of a miniport a
       IPv4 and does not support IPv6. If the miniport driver supports IPv6, the 
       <b>IPsecV2</b> member specifies the IPv4 setting and this member is not used. This setting should be one
       of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -473,6 +525,7 @@ The Internet protocol security (IPsec) offload version 2 setting of a miniport a
 </td>
 <td width="60%">
 The miniport driver should not change the current setting.
+
 </td>
 </tr>
 <tr>
@@ -482,6 +535,7 @@ The miniport driver should not change the current setting.
 </td>
 <td width="60%">
 IPsec offload version 2 is disabled.
+
 </td>
 </tr>
 <tr>
@@ -492,6 +546,7 @@ IPsec offload version 2 is disabled.
 <td width="60%">
 The IPsec offload version 2 Authentication Header (AH) feature should be enabled for transmit
         and receive.
+
 </td>
 </tr>
 <tr>
@@ -502,6 +557,7 @@ The IPsec offload version 2 Authentication Header (AH) feature should be enabled
 <td width="60%">
 The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should be enabled for
         transmit and receive.
+
 </td>
 </tr>
 <tr>
@@ -511,14 +567,17 @@ The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should 
 </td>
 <td width="60%">
 The IPsec offload version 2A H and ESP features are enabled for transmit and receive.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field RscIPv4
 
 Indicates Receive Segment Coalescing state for IPv4.
+
 <table>
 <tr>
 <th>Value</th>
@@ -531,6 +590,7 @@ Indicates Receive Segment Coalescing state for IPv4.
 </td>
 <td width="60%">
 The RSC state is unchanged.
+
 </td>
 </tr>
 <tr>
@@ -540,6 +600,7 @@ The RSC state is unchanged.
 </td>
 <td width="60%">
 The RSC state is enabled.
+
 </td>
 </tr>
 <tr>
@@ -549,14 +610,17 @@ The RSC state is enabled.
 </td>
 <td width="60%">
 The RSC state is disabled.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field RscIPv6
 
 Indicates Receive Segment Coalescing state for IPv6.
+
 <table>
 <tr>
 <th>Value</th>
@@ -569,6 +633,7 @@ Indicates Receive Segment Coalescing state for IPv6.
 </td>
 <td width="60%">
 The RSC state is unchanged.
+
 </td>
 </tr>
 <tr>
@@ -578,6 +643,7 @@ The RSC state is unchanged.
 </td>
 <td width="60%">
 The RSC state is enabled.
+
 </td>
 </tr>
 <tr>
@@ -587,14 +653,17 @@ The RSC state is enabled.
 </td>
 <td width="60%">
 The RSC state is disabled.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field EncapsulatedPacketTaskOffload
 
 A protocol driver sets <b>EncapsulatedPacketTaskOffload</b> as follows: 
+
 <div class="alert"><b>Note</b>  For receive side offloads such as VMQ and RSS, there are other set OIDs that the protocol driver sends down to enable and configure the offload parameters (for example, queues, hash, and indirection table). The <b>EncapsulatedPacketTaskOffload</b> member is supplemental to those OIDs and instructs the NIC to also do these offloads for encapsulated packets.</div>
 <div> </div>
 <table>
@@ -610,6 +679,7 @@ A protocol driver sets <b>EncapsulatedPacketTaskOffload</b> as follows:
 </td>
 <td width="60%">
 The NVGRE task offload state is unchanged.
+
 </td>
 </tr>
 <tr>
@@ -620,6 +690,7 @@ The NVGRE task offload state is unchanged.
 </td>
 <td width="60%">
 Enables NVGRE task offloads.
+
 </td>
 </tr>
 <tr>
@@ -630,14 +701,17 @@ Enables NVGRE task offloads.
 </td>
 <td width="60%">
 Disables NVGRE task offloads.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field EncapsulationTypes
 
 This field is effective only when the <b>EncapsulatedPacketTaskOffload</b> is set to <b>NDIS_OFFLOAD_SET_ON</b>. If the <b>EncapsulatedPacketTaskOffload</b> member is not set to <b>NDIS_OFFLOAD_SET_ON</b>, this member is zero. A protocol driver must set <b>EncapsulationTypes</b> to the bitwise OR of the flags corresponding to encapsulation types that it requires. It can select flags from the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -651,10 +725,12 @@ This field is effective only when the <b>EncapsulatedPacketTaskOffload</b> is se
 </td>
 <td width="60%">
 Specifies GRE MAC  encapsulation (NVGRE).
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 In response to an 
@@ -693,35 +769,43 @@ The feature that the member specifies is enabled for receive and disabled for tr
 
 The feature that the member specifies is enabled for transmit and receive.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows Vista
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2008
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -745,5 +829,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

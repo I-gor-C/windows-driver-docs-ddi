@@ -7,7 +7,7 @@ old-location: storage\tape_init_data.htm
 old-project: storage
 ms.assetid: 11f5201b-ddd3-43ad-9746-a1a9885c99b1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _TAPE_INIT_DATA, TAPE_INIT_DATA, *PTAPE_INIT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use <a href="storage.tape_init_data_ex">TAPE_INIT_DATA_EX</a> instead. 
+
 
 
 ## -syntax
@@ -74,11 +75,13 @@ typedef struct _TAPE_INIT_DATA {
 ## -remarks
 TAPE_INIT_DATA is defined as follows.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

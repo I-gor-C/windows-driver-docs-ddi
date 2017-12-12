@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceassignmofresourcename.htm
 old-project: wdf
 ms.assetid: b4ab0a7b-9c5a-4295-94fc-35310ca8e05b
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDeviceAssignMofResourceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfDeviceAssignMofResourceName</b> method registers a MOF resource name for a specified device.
+
 
 
 ## -syntax
@@ -59,9 +61,11 @@ NTSTATUS WdfDeviceAssignMofResourceName(
 
 A handle to a framework device object.
 
+
 ### -param MofResourceName [in]
 
 A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that specifies the name of a MOF resource. 
+
 
 ## -returns
 If the operation succeeds, <b>WdfDeviceAssignMofResourceName</b> returns STATUS_SUCCESS. Additional return values include:
@@ -78,6 +82,7 @@ The method might return other <a href="https://msdn.microsoft.com/library/window
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+
 ## -remarks
 A driver that provides a MOF file to support WMI must call <b>WdfDeviceAssignMofResourceName</b>, typically from within its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> or <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> callback function. The MOF resource name is the file name that the driver specifies in a <b>MofResource</b> statement in its resource script (RC) file. For more information about specifying a MOF resource name, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542012">Compiling a Driver's MOF File</a>.
 
@@ -87,11 +92,13 @@ For more information about WMI, see <a href="wdf.supporting_wmi_in_kmdf_drivers"
 
 The following code example declares a Unicode string that represents a MOF resource name and then registers the name.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -102,14 +109,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +130,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -130,14 +141,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>

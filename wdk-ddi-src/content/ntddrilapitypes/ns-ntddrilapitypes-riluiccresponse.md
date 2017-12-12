@@ -7,8 +7,8 @@ old-location: netvista\riluiccresponse.htm
 old-project: netvista
 ms.assetid: c584e508-b0f1-4809-808e-089e9a7fbcf9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCRESPONSE, *LPRILUICCRESPONSE, RILUICCRESPONSE
+ms.date: 12/8/2017
+ms.keywords: RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILUICCRESPONSE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

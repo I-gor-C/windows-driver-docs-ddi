@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>CcPinMappedData</b> routine pins the specified byte range of a cached file.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ BOOLEAN CcPinMappedData(
 
 Pointer to a file object for the cached file in which a range of data is to be pinned.
 
+
 ### -param FileOffset [in]
 
 Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.
+
 
 ### -param Length [in]
 
 Length in bytes of the data to be pinned.
 
+
 ### -param Flags [in]
 
 Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -79,44 +84,55 @@ Bitmask of flags specifying how the pinning operation is to be performed. ORed c
 <tr>
 <td>
 PIN_WAIT
+
 </td>
 <td>
 The caller can be put into a wait state until the data has been pinned.
+
 </td>
 </tr>
 <tr>
 <td>
 PIN_EXCLUSIVE
+
 </td>
 <td>
 The buffer control block (BCB) is to be acquired exclusively. If this flag is set, PIN_WAIT must also be set.
+
 </td>
 </tr>
 <tr>
 <td>
 PIN_NO_READ
+
 </td>
 <td>
 Only pages that are already resident in memory are to be pinned. If this flag is set, PIN_WAIT must also be set.
+
 </td>
 </tr>
 <tr>
 <td>
 PIN_IF_BCB
+
 </td>
 <td>
 The data is to be pinned only if a BCB already exists. Otherwise, the pin fails and <i>Bcb</i> is set to <b>NULL</b>.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Bcb [in, out]
 
 On the first call this returns a pointer to a buffer control block (BCB). This pointer must be supplied as input on all subsequent calls for this buffer. 
 
+
 ## -returns
 <b>CcPinMappedData</b> returns <b>TRUE</b> if the data for the cached file was pinned successfully, <b>FALSE</b> otherwise.
+
 
 ## -remarks
 A successful return from <b>CcPinMappedData</b> guarantees that the data previously mapped in a call to <a href="ifsk.ccmapdata">CcMapData</a> is pinned in the cache and data in the specified range can be safely modified. If the caller subsequently modifies the data pinned by <b>CcPinMappedData</b>, it must also call <a href="ifsk.ccsetdirtypinneddata">CcSetDirtyPinnedData</a> so that the modified data will eventually be written to disk.
@@ -131,11 +147,13 @@ To map data for a cached file, use the <a href="ifsk.ccmapdata">CcMapData</a> ro
 
 It is not necessary to call <a href="ifsk.ccunpindata">CcUnpinData</a> after calling <b>CcPinMappedData</b> since the pin reference is matched to <a href="ifsk.ccmapdata">CcMapData</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +164,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +175,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -166,6 +186,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -176,9 +197,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -205,5 +228,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPinMappedData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

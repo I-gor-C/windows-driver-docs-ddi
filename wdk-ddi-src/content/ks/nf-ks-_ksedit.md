@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>_KsEdit</b> function guarantees that a given item is dynamically allocated and associated with an AVStream object through the object bag.
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,30 @@ NTSTATUS _KsEdit(
 
 The KSOBJECT_BAG (equivalent to type PVOID) to use in the check. If the item is not contained within the object bag, <b>_KsEdit</b> dynamically allocates sufficient memory for the item, copies the old contents, and places the newly allocated memory in this object bag.
 
+
 ### -param PointerToPointerToItem [in, out]
 
 A pointer to a pointer to the item being edited.
+
 
 ### -param NewSize [in]
 
 The number of bytes to allocate for the item.
 
+
 ### -param OldSize [in]
 
 The number of bytes the item currently takes up.
+
 
 ### -param Tag [in]
 
 Contains the pool tag to use for the allocations. Drivers normally specify the pool tag as a string of up to four characters, delimited by single quotation marks. The string is usually specified in reversed order. The ASCII value of each character in the tag must be between 0 and 127.
 
+
 ## -returns
 Returns success or STATUS_INSUFFICIENT_RESOURCES.
+
 
 ## -remarks
 Note that <b>KsEdit</b> and <b>KsEditSized</b> are macros created to make <b>_KsEdit</b> easier to use. While <b>_KsEdit</b> allows you to resize an item, <b>KsEdit</b> does not. The macro <b>KsEdit</b> calls <b>_KsEdit</b>, specifying <b>sizeof</b>(**<i>PointerToPointerToItem</i>) as both sizes.
@@ -90,11 +97,13 @@ The call to <b>KsEdit</b> guarantees that <i>Pin-&gt;Descriptor </i>is dynamic m
 
 Note that when calling <b>_KsEdit</b>, a caller must hold the mutex associated with the bag. For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a> and <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +146,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

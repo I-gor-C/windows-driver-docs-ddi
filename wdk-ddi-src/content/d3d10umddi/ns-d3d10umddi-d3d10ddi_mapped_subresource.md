@@ -7,7 +7,7 @@ old-location: display\d3d10ddi_mapped_subresource.htm
 old-project: display
 ms.assetid: a55f9aee-c6a5-4391-aad1-4003e58692cd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D10DDI_MAPPED_SUBRESOURCE, D3D10DDI_MAPPED_SUBRESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3D10DDI_MAPPED_SUBRESOURCE structure describes a subresource that the driver maps to through a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct D3D10DDI_MAPPED_SUBRESOURCE {
 
 [out] A pointer to a buffer that contains the contents of the subresource.
 
+
 ### -field RowPitch
 
 [out] The row pitch,  width, or physical size (in bytes) of the data.
 
+
 ### -field DepthPitch
 
 [out] The deptch pitch,  width, or physical size (in bytes) of the data.
+
 
 ## -remarks
 The <b>pData</b> member points to row 0 and slice 0.
@@ -77,19 +81,23 @@ It is not advisable to assign a value of zero to the <b>RowPitch</b> and <b>Dept
 
 To avoid zero values for these members, it helps to think of all  resources as being three-dimensional, as in these two examples:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +114,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDI_MAPPED_SUBRESOURCE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDI_MAPPED_SUBRESOURCE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

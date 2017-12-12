@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiauGetDrvItemContext</b> function gets the driver item context, and optionally, the driver item.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ HRESULT _stdcall wiauGetDrvItemContext(
 
 Pointer to a WIA item context.
 
+
 ### -param ppItemCtx [in, out]
 
 Pointer to a memory location that receives a pointer to the driver item context.
+
 
 ### -param ppDrvItem [in, out]
 
 <i>Optional</i>. Pointer to a memory location that receives a pointer to a driver item. The default value of this parameter is <b>NULL</b>, which means that when this function returns, no change is made to this parameter.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error.
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,14 +94,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

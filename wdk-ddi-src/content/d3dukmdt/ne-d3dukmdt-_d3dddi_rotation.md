@@ -7,7 +7,7 @@ old-location: display\d3dddi_rotation.htm
 old-project: display
 ms.assetid: c167b958-bd09-441e-9680-f193da5ad77f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_ROTATION, D3DDDI_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DDDI_ROTATION enumeration type contains values that identify the orientation of a resource.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _D3DDDI_ROTATION {
 
 Indicates that the resource is not rotated. 
 
+
 ### -field D3DDDI_ROTATION_90
 
 Indicates that the resource is rotated 90 degrees. 
+
 
 ### -field D3DDDI_ROTATION_180
 
 Indicates that the resource is rotated 180 degrees. 
 
+
 ### -field D3DDDI_ROTATION_270
 
 Indicates that the resource is rotated 270 degrees. 
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ Indicates that the resource is rotated 270 degrees.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_ROTATION enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_ROTATION enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

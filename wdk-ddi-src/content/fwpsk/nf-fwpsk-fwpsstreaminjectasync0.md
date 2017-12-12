@@ -7,7 +7,7 @@ old-location: netvista\fwpsstreaminjectasync0.htm
 old-project: netvista
 ms.assetid: d72c3067-21df-40ee-a898-100fcdc5eaca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsStreamInjectAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>FwpsStreamInjectAsync0</b> function injects TCP data segments into a TCP data stream.
 
 
+
 ## -syntax
 
 ````
@@ -69,13 +70,16 @@ An injection handle that was previously created by a call to the
      <a href="netvista.fwpsinjectionhandlecreate0">
      FwpsInjectionHandleCreate0</a> function.
 
+
 ### -param injectionContext [in, optional]
 
 An optional handle to the injection context.
 
+
 ### -param flags [in]
 
 Reserved. Callout drivers should set this parameter to zero.
+
 
 ### -param flowId [in]
 
@@ -84,6 +88,7 @@ A run-time identifier that specifies the data flow into which to inject the data
      metadata value that the filter engine provided to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
+
 ### -param calloutId [in]
 
 The run-time identifier for the callout in the filter engine. This identifier was returned when
@@ -91,6 +96,7 @@ The run-time identifier for the callout in the filter engine. This identifier wa
      <a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a> or 
      <a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
+
 
 ### -param layerId [in]
 
@@ -102,12 +108,16 @@ The run-time identifier for the filtering layer at which the data stream is bein
      the filter engine passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
+
 ### -param streamFlags [in]
 
 Flags that specify characteristics of the data stream into which the data is to be injected.
      
+
 When injecting data into an inbound data stream, a callout driver specifies one or more of the
      following flags:
+
+
 
 
 ### -param FWPS_STREAM_FLAG_RECEIVE
@@ -115,10 +125,12 @@ When injecting data into an inbound data stream, a callout driver specifies one 
 Specifies that the data is to be injected into the inbound data stream. This flag is required
        when injecting data into an inbound data stream.
 
+
 ### -param FWPS_STREAM_FLAG_RECEIVE_DISCONNECT
 
 Specifies that the FIN flag is to be set in the TCP header for the data being injected into the
        inbound data stream.
+
 <div class="alert"><b>Note</b>  If this flag is set, the <b>FWPS_STREAM_FLAG_RECEIVE</b> flag must also be set, or else <b>STATUS_FWP_INVALID_PARAMETER</b> will be returned.</div>
 <div> </div>
 
@@ -127,15 +139,19 @@ Specifies that the FIN flag is to be set in the TCP header for the data being in
 Specifies that the data being injected into the inbound data stream is high-priority,
        out-of-band data.
 
+
 ### -param FWPS_STREAM_FLAG_RECEIVE_PUSH
 
 Specifies that the inbound data has arrived with the PUSH flag set in the TCP header, which
        indicates that the sender requests immediate data transfer. Unwanted delays in data transfer can occur
        if this flag is not set. This flag is available starting with Windows Vista with SP1.
+
 </dd>
 </dl>
 When injecting data into an outbound data stream, a callout driver specifies one or more of the
      following flags:
+
+
 
 
 ### -param FWPS_STREAM_FLAG_SEND
@@ -143,21 +159,25 @@ When injecting data into an outbound data stream, a callout driver specifies one
 Specifies that the data is to be injected into the outbound data stream. This flag is required
        when injecting data into an outbound data stream.
 
+
 ### -param FWPS_STREAM_FLAG_SEND_EXPEDITED
 
 Specifies that the data being injected into the outbound data stream is high-priority,
        out-of-band data.
+
 
 ### -param FWPS_STREAM_FLAG_SEND_NODELAY
 
 Specifies that the callout driver requests that there is no buffering of the data being injected
        into the outbound data stream.
 
+
 ### -param FWPS_STREAM_FLAG_SEND_DISCONNECT
 
 Specifies that the stream is to be disconnected after the data being injected into the outbound
        data stream has been sent. The network stack will set the FIN flag in the TCP header of the last
        packet that is sent out.
+
 <div class="alert"><b>Note</b>  If this flag is set, the <b>FWPS_STREAM_FLAG_SEND</b> flag must also be set, or else <b>STATUS_FWP_INVALID_PARAMETER</b> will be returned.</div>
 <div> </div>
 </dd>
@@ -177,9 +197,11 @@ A pointer to a
      <i>streamFlags</i> parameter is <b>FWPS_STREAM_FLAG_RECEIVE_DISCONNECT</b> or <b>FWPS_STREAM_FLAG_SEND_DISCONNECT</b>, 
      <i>netBufferList</i> can be <b>NULL</b>.
 
+
 ### -param dataLength [in]
 
 The number of bytes of data being injected into the data stream.
+
 
 ### -param completionFn [in]
 
@@ -187,19 +209,24 @@ A pointer to a
      <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a> callout function provided by
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferList</i> parameter, has been injected into the network stack. 
+
 If the 
      <i>netBufferList</i> parameter describes a <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> chain, 
      <i>completionFn</i> will be called once for each <b>NET_BUFFER_LIST</b> in the chain.
+
 If the 
      <i>netBufferList</i> parameter is <b>NULL</b>  and the 
      <i>streamFlags</i> parameter has either <b>FWPS_STREAM_FLAG_RECEIVE_DISCONNECT</b> or <b>FWPS_STREAM_FLAG_SEND_DISCONNECT</b> set, the <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a> function will not be called.
+
 This parameter is required and cannot be <b>NULL</b>. If it is <b>NULL</b>, <b>STATUS_FWP_NULL_POINTER</b> will be returned.
+
 
 ### -param completionContext [in, optional]
 
 A pointer to a callout driver–provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 The 
@@ -221,6 +248,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 A callout driver calls the 
@@ -265,11 +293,13 @@ If the return value is not STATUS_SUCCESS, the completion function will not be c
     <a href="netvista.fwpsfreenetbufferlist0">FwpsFreeNetBufferList0</a> or 
     <a href="netvista.fwpsfreeclonenetbufferlist0">FwpsFreeCloneNetBufferList0</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -280,14 +310,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -298,6 +331,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -308,9 +342,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -358,5 +394,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsStreamInjectAsync0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsStreamInjectAsync0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

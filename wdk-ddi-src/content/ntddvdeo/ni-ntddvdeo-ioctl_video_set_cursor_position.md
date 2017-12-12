@@ -7,7 +7,7 @@ old-location: display\ioctl_video_set_cursor_position.htm
 old-project: display
 ms.assetid: 80346b99-49f5-4cbf-b524-1c5f40cf441f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql:
 
 Sets the cursor position (row and column). Miniport drivers for VGA-compatible adapters are required to support this request, which is modal. It is optional for other miniport drivers.
 
+
+
 Sets the cursor position (row and column). Miniport drivers for VGA-compatible adapters are required to support this request, which is modal. It is optional for other miniport drivers.
+
 
 
 ## -ioctlparameters
@@ -49,12 +52,14 @@ Sets the cursor position (row and column). Miniport drivers for VGA-compatible a
 ### -input-buffer
 The VRP <b>InputBuffer</b> contains the VIDEO_CURSOR_POSITION structure to be set.
 
+
 ### -input-buffer-length
 
 <text></text>
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -72,6 +77,7 @@ None
 I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="display.status_block">STATUS_BLOCK</a> structure.
 
+
 ## -remarks
 
 
@@ -80,6 +86,7 @@ The miniport driver does not set the <b>Information</b> member of the <a href="d
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

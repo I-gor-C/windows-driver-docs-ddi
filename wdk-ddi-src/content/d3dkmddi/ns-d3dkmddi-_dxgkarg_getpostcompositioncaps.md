@@ -7,7 +7,7 @@ old-location: display\dxgkarg_getpostcompositioncaps.htm
 old-project: display
 ms.assetid: 0C8A0F83-9D12-46F1-A8B1-3BCF219A3BF7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_GETPOSTCOMPOSITIONCAPS, DXGKARG_GETPOSTCOMPOSITIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Arguments for the DxgkDdiGetPostCompositionCaps function.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _DXGKARG_GETPOSTCOMPOSITIONCAPS {
 
 [in] Indicates the VidPn source for which post composition capabilities are queried.
 
+
 ### -field MaxStretchFactor
 
 [out] Indicates the maximum stretch factor that can be applied.
 
+
 ### -field MaxShrinkFactor
 
 [out] Indicates the maximum shrink factor that can be applied.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ typedef struct _DXGKARG_GETPOSTCOMPOSITIONCAPS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

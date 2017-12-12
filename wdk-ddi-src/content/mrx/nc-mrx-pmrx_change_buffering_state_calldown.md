@@ -41,6 +41,7 @@ req.irql:
 The<i>MRxCompleteBufferingStateChangeRequest</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to notify the network mini-redirector that a buffering state change request has been completed. 
 
 
+
 ## -prototype
 
 ````
@@ -61,13 +62,16 @@ NTSTATUS MRxCompleteBufferingStateChangeRequest(
 
 A pointer to the RX_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
+
 ### -param  SrvOpen [in, out]
 
 A pointer to a context parameter for use by the network mini-redirector callback routine.
 
+
 ### -param  MRxContext [in]
 
 A pointer to the SRV_OPEN structure and the associated FCB structure to be changed.
+
 
 ## -returns
 <i>MRxCompleteBufferingStateChangeRequest</i> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as the following: 
@@ -76,6 +80,7 @@ A pointer to the SRV_OPEN structure and the associated FCB structure to be chang
 </dl>An option in the  buffering request change is not supported. 
 
  
+
 
 ## -remarks
 Before calling <i>MRxCompleteBufferingStateChangeRequest</i>, RDBSS:
@@ -87,12 +92,15 @@ Sets the <b>FcbState</b> member of <b>SrvOpen-&gt;Fcb</b> to FCB_STATE_BUFFERSTA
 Modifies the following members in the RX_CONTEXT structure pointed to by the <i>RxContext</i> parameter:<dl>
 <dd>
 <b>pRelevantSrvOpen</b> is set to the SRV_OPEN structure.
+
 </dd>
 <dd>
 <b>pFcb</b> is set to the FCB structure.
+
 </dd>
 <dd>
 <b>pFobx</b> is set to the FOBX structure.
+
 </dd>
 </dl>
 
@@ -109,11 +117,13 @@ The Server Message Block (SMB) redirector uses <i>MRxCompleteBufferingStateChang
 
 RDBSS ignores the return value from <i>MRxCompleteBufferingStateChangeRequest</i>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +134,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +154,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxCompleteBufferingStateChangeRequest routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

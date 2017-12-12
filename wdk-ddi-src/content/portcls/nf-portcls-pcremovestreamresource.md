@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 PcRemoveStreamResource removes an existing  stream resource. PcRemoveStreamResource can be called by any driver, including non-audio WaveRT miniport drivers, that has interrupts/threads associated with an audio stream. It can also be called by audio WaveRT miniport drivers. 
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ NTSTATUS  PcRemoveStreamResource(
 PCSTREAMRESOURCE– Resource handle returned by PcAddStreamResource.  
 For more information, see <a href="audio.pcaddstreamresource">PcAddStreamResource</a> and <a href="audio.pcstreamresource_descriptor">PCSTREAMRESOURCE_DESCRIPTOR</a>.  
 
+
 ## -returns
 STATUS_SUCCESS – The driver was able to register the resource of the specified PDO. 
 
@@ -67,6 +69,7 @@ STATUS_INVALID_PARAMETER – The driver returns this error if it finds any other
 
 
 Additional standard status codes may be returned.
+
 
 ## -remarks
 To help ensure glitch-free operation, audio drivers must register their streaming resources with portcls. This allows the OS to manage resources to avoid interference between audio streaming and other subsystems. 
@@ -81,27 +84,33 @@ The audio driver must make sure the resource is valid when making this call.
 
 Audio drivers that only run in Windows 10 can use  <a href="audio.pcaddstreamresource">PcAddStreamResource</a> and <b>PcRemoveStreamResource</b>. For Audio waveRT miniport drivers that need to also run under previous versions of Windows, use <a href="audio.iportclsstreamresourcemanager_addstreamresource">AddStreamResource</a> and <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +121,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +132,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -132,9 +143,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -152,5 +165,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcRemoveStreamResource function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

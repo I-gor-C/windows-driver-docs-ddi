@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsTopology</b> interface provides a method that opens topology node objects contained within a filter.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsTopology</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IKsTopology</b> also has these types of members:
 
@@ -58,6 +59,7 @@ Requests a KS filter object to open a topology node object.
 
  
 
+
 ## -members
 The <b>IKsTopology</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -71,22 +73,26 @@ The <b>IKsTopology</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Requests a KS filter object to open a topology node object.
+
 </td>
 </tr>
 </table>Requests a KS filter object to open a topology node object.
 
  
 
+
 ## -remarks
 The IID for this interface is IID_IKsTopology.
 
 The <b>IKsTopology</b> interface is supported by filters. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT as the minifilter driver's <i>NormalizeNameComponentCallback</i> routine. 
 
 
+
 ## -prototype
 
 ````
@@ -66,36 +67,45 @@ NTSTATUS NormalizeNameComponentCallback(
 
 Opaque instance pointer for the minifilter driver instance that this callback routine is registered for. 
 
+
 ### -param ParentDirectory [in]
 
 Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the name of the parent directory for this name component. 
+
 
 ### -param VolumeNameLength [in]
 
 Length, in bytes, of the parent directory name stored in the structure that the <i>ParentDirectory</i> parameter points to. 
 
+
 ### -param Component [in]
 
 Pointer to a UNICODE_STRING structure that contains the name component to be expanded. 
+
 
 ### -param ExpandComponentName [out]
 
 Pointer to a <a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a> structure that receives the expanded (normalized) file name information for the name component. 
 
+
 ### -param ExpandComponentNameLength [in]
 
 Length, in bytes, of the buffer that the <i>ExpandComponentName</i> parameter points to. 
+
 
 ### -param Flags [in]
 
 Name normalization flags.  FLTFL_NORMALIZE_NAME_CASE_SENSITIVE specifies that the name to be normalized is case-sensitive.  FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME specifies that the callback routine has been called to service a <a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a> routine call.
 
+
 ### -param NormalizationContext [in, out]
 
 Pointer to minifilter driver-provided context information to be passed in any subsequent calls to this callback routine that are made to normalize the remaining components in the same file name path. 
 
+
 ## -returns
 This callback routine returns STATUS_SUCCESS or an appropriate NTSTATUS value. If the name component that the <i>Component</i> parameter specifies does not exist in the parent directory that the <i>ParentDirectory</i> parameter specifies, this callback routine should return STATUS_NO_SUCH_FILE. If this callback routine issues an IRP_MN_QUERY_DIRECTORY (FileNamesInformation) request to the parent directory, the file system returns the correct status code. In this situation, this callback can simply return the status code that the file system returns.
+
 
 ## -remarks
 A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT as the minifilter driver's <i>NormalizeNameComponentCallback</i> routine. 
@@ -106,11 +116,13 @@ The filter manager calls this callback routine to query the minifilter driver fo
 
 If the minifilter driver uses the <i>NormalizationContext</i> parameter, it should also register a normalization context cleanup callback routine. For more information, see the reference entry for <a href="..\fltkernel\nc-fltkernel-pflt_normalize_context_cleanup.md">PFLT_NORMALIZE_CONTEXT_CLEANUP</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +133,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,9 +144,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -163,5 +178,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_NORMALIZE_NAME_COMPONENT routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

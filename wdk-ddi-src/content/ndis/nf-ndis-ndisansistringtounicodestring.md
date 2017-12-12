@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisAnsiStringToUnicodeString
-title: NdisAnsiStringToUnicodeString
+title: NdisAnsiStringToUnicodeString macro
 author: windows-driver-content
 description: The NdisAnsiStringToUnicodeString function converts a given counted ANSI string into a counted Unicode string. The translation conforms to the current system locale information.
 old-location: netvista\ndisansistringtounicodestring.htm
 old-project: netvista
 ms.assetid: 8efdcf9f-df8c-4b3b-8b21-11a10a885322
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisAnsiStringToUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -31,62 +31,55 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.iface: 
 ---
 
-# NdisAnsiStringToUnicodeString function
+# NdisAnsiStringToUnicodeString macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisAnsiStringToUnicodeString</b> function converts a given counted ANSI string into a counted Unicode
-  string. The translation conforms to the current system locale information.</p>
+  string. The translation conforms to the current system locale information.
+
 
 
 ## -syntax
 
 ````
 NDIS_STATUS NdisAnsiStringToUnicodeString(
-  _Inout_ PUNICODE_STRING DestinationString,
-  _In_    PANSI_STRING    SourceString
+  [in, out] PUNICODE_STRING DestinationString,
+  [in]      PANSI_STRING    SourceString
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param DestinationString [in, out]
 
-<dd>
-<p>A pointer to a caller-allocated buffer in which this function should return the converted Unicode
-     string.</p>
-</dd>
+A pointer to a caller-allocated buffer in which this function should return the converted Unicode
+     string.
+
 
 ### -param SourceString [in]
 
-<dd>
-<p>A pointer to the ANSI string to be converted.</p>
-</dd>
-</dl>
+A pointer to the ANSI string to be converted.
 
-## -returns
-<p><b>NdisAnsiStringToUnicodeString</b> returns NDIS_STATUS_SUCCESS if the conversion succeeds. Otherwise,
-     the contents of the buffer at 
-     <i>DestinationString</i> are unaffected.</p>
 
 ## -remarks
-<p>The caller must allocate storage for both the source and destination strings and release these buffers
+The caller must allocate storage for both the source and destination strings and release these buffers
     as soon as the strings are no longer needed. The buffer at 
     <i>DestinationString</i> must be at least twice the size of the buffer at 
-    <i>SourceString</i> .</p>
+    <i>SourceString</i> .
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,15 +89,18 @@ NDIS_STATUS NdisAnsiStringToUnicodeString(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a> instead.</p>
+Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="kernel.rtlansistringtounicodestring">RtlAnsiStringToUnicodeString</a> instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,7 +110,8 @@ NDIS_STATUS NdisAnsiStringToUnicodeString(
 </tr>
 <tr>
 <th width="30%">
-<p>Library</p>
+Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,15 +121,18 @@ NDIS_STATUS NdisAnsiStringToUnicodeString(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>PASSIVE_LEVEL</p>
+PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>DDI compliance rules</p>
+DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -150,21 +150,24 @@ NDIS_STATUS NdisAnsiStringToUnicodeString(
    Drivers</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
+<a href="kernel.rtlinitunicodestring">RtlInitUnicodeString</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
+<a href="kernel.rtlunicodestringtoansistring">RtlUnicodeStringToAnsiString</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 </dt>
 <dt>
-<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
+<a href="kernel.unicode_string">UNICODE_STRING</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAnsiStringToUnicodeString function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAnsiStringToUnicodeString macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\fwps_packet_injection_state.htm
 old-project: netvista
 ms.assetid: 0fc60bae-2191-4e19-85c5-ed06f09225f0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_PACKET_INJECTION_STATE_, FWPS_PACKET_INJECTION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The FWPS_PACKET_INJECTION_STATE enumeration type specifies the injection state o
   list.
 
 
+
 ## -syntax
 
 ````
@@ -63,16 +64,19 @@ The packet was not injected by any of the
      <a href="netvista.packet_injection_functions">packet injection functions</a>. A
      packet that originated from the TCP/IP stack will be at this state.
 
+
 ### -field FWPS_PACKET_INJECTED_BY_SELF
 
 The packet was injected using an injection handle passed by a call to one of the 
      <a href="netvista.packet_injection_functions">packet injection functions</a>.
+
 
 ### -field FWPS_PACKET_INJECTED_BY_OTHER
 
 The packet was injected using an injection handle other than one passed by a call
      to one of the 
      <a href="netvista.packet_injection_functions">packet injection functions</a>.
+
 
 ### -field FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF
 
@@ -82,10 +86,12 @@ The packet was injected by using an injection handle passed by a call to one of 
      the packet was later cloned and reinjected by an additional call to a packet injection function,
      possibly using a different injection handle.
 
+
 ### -field FWPS_PACKET_INJECTION_STATE_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -95,14 +101,17 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The TRANSPORTAUDIOPARMS structure is defined but not used.
 
 
+
 ## -syntax
 
 ````
@@ -60,30 +61,37 @@ typedef struct tagTRANSPORTAUDIOPARMS {
 
 Specifies the enable audio output. The default is ED_AUDIO_ALL.
 
+
 ### -field EnableRecord
 
 Specifies the enable audio record. The default is zero.
+
 
 ### -field EnableSelsync
 
 Specifies the selsync.
 
+
 ### -field Input
 
 Specifies the audio input to use. For example, specify zero to use the first (zeroth) audio input.
+
 
 ### -field MonitorSource
 
 Indicates the monitor source. The default is zero.
 
+
 ## -remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

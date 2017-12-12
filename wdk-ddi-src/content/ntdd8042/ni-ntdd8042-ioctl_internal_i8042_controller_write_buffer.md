@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: c4970f78-fa4f-4ce9-a538-332f00e0df28
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _MOUSE_STATE, MOUSE_STATE, *PMOUSE_STATE
+ms.keywords: _MOUSE_STATE, *PMOUSE_STATE, MOUSE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,7 +41,10 @@ req.irql:
 
 The IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER request is not supported.
 
+
+
 The IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER request is not supported.
+
 
 
 ## -ioctlparameters
@@ -49,14 +52,18 @@ The IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER request is not supported.
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 None
+
 
 ### -output-buffer
 None
 
+
 ### -output-buffer-length
 None
+
 
 ### -in-out-buffer
 
@@ -70,6 +77,7 @@ None
 I/O Status block
 The <b>Status</b> member is set to STATUS_NOT_SUPPORTED.
 
+
 ## -remarks
 
 
@@ -78,6 +86,7 @@ The <b>Status</b> member is set to STATUS_NOT_SUPPORTED.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

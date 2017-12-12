@@ -7,7 +7,7 @@ old-location: kernel\kesetimportancedpc.htm
 old-project: kernel
 ms.assetid: 0feb053b-6b58-4b26-8549-a6cf3996a3e6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeSetImportanceDpc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeSetImportanceDpc</b> routine specifies how soon the DPC routine is run. 
 
 
+
 ## -syntax
 
 ````
@@ -58,31 +59,39 @@ VOID KeSetImportanceDpc(
 
 Pointer to the caller's DPC object, which <a href="kernel.keinitializedpc">KeInitializeDpc</a> already initialized. 
 
+
 ### -param Importance [in]
 
 Specifies one of the following system-defined values to determine the behavior of <a href="kernel.keinsertqueuedpc">KeInsertQueueDpc</a> and <a href="kernel.iorequestdpc">IoRequestDpc</a> when either routine is used to queue the DPC.
+
+
 
 
 ### -param LowImportance
 
 Place the DPC at the end of the DPC queue, and do not begin processing of the queue. 
 
+
 ### -param MediumImportance
 
 Place the DPC at the end of the DPC queue. If the DPC is assigned to the current processor's DPC queue, begin processing the queue immediately. <b>MediumImportance</b> is the default value for <i>Importance</i>. 
+
 
 ### -param MediumHighImportance
 
 Place the DPC at the end of the DPC queue, and begin processing the queue immediately. MediumHighImportance is available only on Windows Vista and later versions of Windows.
 
+
 ### -param HighImportance
 
 Place the DPC at the beginning of the DPC queue, and begin processing the queue immediately. 
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 The <b>KeSetImportanceDpc</b> routine influences how soon a DPC is run after it is queued by determining:
@@ -99,11 +108,13 @@ Note that a driver must call <b>KeSetImportanceDpc</b> before it calls <b>KeInse
 
 For more information about how the system processes the DPC queue, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558754">Organization of DPC Queues</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,14 +125,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +146,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +157,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -152,9 +168,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -178,5 +196,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetImportanceDpc routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetImportanceDpc routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

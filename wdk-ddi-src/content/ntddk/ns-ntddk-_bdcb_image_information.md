@@ -7,8 +7,8 @@ old-location: kernel\bdcb_image_information.htm
 old-project: kernel
 ms.assetid: 9D0A4D67-3284-4BCC-AC81-F0BCCC2DB9B7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION, *PBDCB_IMAGE_INFORMATION
+ms.date: 12/7/2017
+ms.keywords: _BDCB_IMAGE_INFORMATION, *PBDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The <b>BDCB_IMAGE_INFORMATION</b> structure describes information about a boot-s
     <a href="kernel.ioregisterbootdrivercallback">BOOT_DRIVER_CALLBACK_FUNCTION</a> routine.
 
 
+
 ## -syntax
 
 ````
@@ -69,10 +70,12 @@ typedef struct _BDCB_IMAGE_INFORMATION {
 
 The classification of the boot start image.
 
+
 ### -field ImageFlags
 
 Bit flags that describe the image. The following values are defined.
       
+
 <table>
 <tr>
 <th>Value</th>
@@ -81,58 +84,72 @@ Bit flags that describe the image. The following values are defined.
 <tr>
 <td>
 Bit 0
+
 </td>
 <td>
 The boot start image is a dependent DLL.
+
 </td>
 </tr>
 <tr>
 <td>
 Bit 1
+
 </td>
 <td>
 The boot start image failed code integrity but load was allowed because of boot policy (code integrity not required on the platform, or code integrity disabled because of boot setting,  debugging, or both).
+
 </td>
 </tr>
 <tr>
 <td>
 Bits 2-31
+
 </td>
 <td>
 Do not use. Reserved.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field ImageName
 
 The name of the boot-start driver's binary image.
+
 
 ### -field RegistryPath
 
 The path in the registry where the boot-start driver is registered.
 
+
 ### -field CertificatePublisher
 
 The publisher of the image's certificate. If the image is not signed, the string is empty ("").
+
 
 ### -field CertificateIssuer
 
 The issuer of the image's certificate. If the image is not signed, the string is empty ("").
 
+
 ### -field ImageHash
 
 The Authenticode hash of the image, which can be calculated by  using SignTool.exe (Sign Tool). 
+
 
 ### -field CertificateThumbprint
 
 The hash of the certificate of the signer to be signed. Run <b>certutil –dump x,cer</b> to view this value as  "Signature Hash".
 
+
 ### -field ImageHashAlgorithm
 
 The algorithm of the image hash. The following values are listed for reference.
       
+
 <table>
 <tr>
 <th>Value</th>
@@ -140,77 +157,93 @@ The algorithm of the image hash. The following values are listed for reference.
 <tr>
 <td>
 ALG_CLASS_HASH
+
 </td>
 </tr>
 <tr>
 <td>
 ALG_CLASS_ANY
+
 </td>
 </tr>
 <tr>
 <td>
 ALG_SID_MD5
+
 </td>
 </tr>
 <tr>
 <td>
 ALG_SID_SHA1
+
 </td>
 </tr>
 <tr>
 <td>
 ALG_SID_SHA_256
+
 </td>
 </tr>
 <tr>
 <td>
 ALG_SID_SHA_384
+
 </td>
 </tr>
 <tr>
 <td>
 ALG_SID_SHA_512
+
 </td>
 </tr>
 <tr>
 <td>
 CALG_MD5
+
 </td>
 </tr>
 <tr>
 <td>
 CALG_SHA1
+
 </td>
 </tr>
 <tr>
 <td>
 CALG_SHA_256
+
 </td>
 </tr>
 <tr>
 <td>
 CALG_SHA_384
+
 </td>
 </tr>
 <tr>
 <td>
 CALG_SHA_512
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field ThumbprintHashAlgorithm
 
 The algorithm of the certificate thumbprint. This member should be ignored if <b>CertificateThumbprint</b> is NULL.
+
 
 ### -field ImageHashLength
 
 The length of data pointed to by the <b>ImageHash</b> member.
 
+
 ### -field CertificateThumbprintLength
 
 The length of data pointed to by the <b>CertificateThumbprint</b> member.
+
 
 ## -remarks
 
@@ -220,14 +253,17 @@ The length of data pointed to by the <b>CertificateThumbprint</b> member.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -247,5 +283,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BDCB_IMAGE_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BDCB_IMAGE_INFORMATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: print\playgdiscriptonprinteric.htm
 old-project: print
 ms.assetid: DB5FCF40-77C2-4741-9E6B-77A9CD98E29A
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PlayGdiScriptOnPrinterIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -84,6 +85,7 @@ BOOL WINAPI PlayGdiScriptOnPrinterIC(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The IO_BLOCK structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_read_registers.md">IOCTL_READ_REGISTERS</a> or <a href="..\usbscan\ni-usbscan-ioctl_write_registers.md">IOCTL_WRITE_REGISTERS</a>. Values contained in structure members are used to create a USB Device Request (described in the <i>Universal Serial Bus Specification</i>).
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _IO_BLOCK {
 
 Used as the <b>Value</b> field of a USB Device Request.
 
+
 ### -field uLength
 
 Length of the buffer to transfer.
+
 
 ### -field pbyData
 
 Pointer to a data buffer with a length of <b>uLength</b>.
 
+
 ### -field uIndex
 
 Used as the <b>Index</b> field of a USB Device Request.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Used as the <b>Index</b> field of a USB Device Request.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

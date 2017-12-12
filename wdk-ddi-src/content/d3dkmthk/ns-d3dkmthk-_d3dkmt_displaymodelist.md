@@ -7,7 +7,7 @@ old-location: display\d3dkmt_displaymodelist.htm
 old-project: display
 ms.assetid: 2eb99f42-3639-4327-a880-47e18d1da71d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_DISPLAYMODELIST, D3DKMT_DISPLAYMODELIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes a list of display modes.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3DKMT_DISPLAYMODELIST {
 
 [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the display modes apply to.
 
+
 ### -field ModeCount
 
 [in/out] The number of display modes in the array that <b>pModeList</b> specifies.
 
+
 ### -field pModeList
 
 [out] An array of <a href="display.d3dkmt_displaymode">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ typedef struct _D3DKMT_DISPLAYMODELIST {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

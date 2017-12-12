@@ -41,6 +41,7 @@ req.irql:
 The <i>MRxFinalizeSrvCall</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request that a network mini-redirector finalize an SRV_CALL structure. 
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ NTSTATUS MRxFinalizeSrvCall(
 
 A pointer to the SRV_CALL structure to finalize. 
 
+
 ### -param Force [in]
 
 A pointer to a Boolean value that indicates if the disconnect is to be enforced immediately, ignoring the reference count on the SRV_CALL structure. The <i>Force</i> parameter is the <i>ForceFinalize</i> parameter passed to the <a href="ifsk.rxfinalizesrvcall">RxFinalizeSrvCall</a> routine. This action triggers a call to <i>MRxFinalizeSrvCall</i>.
 
+
 ## -returns
 <i>MRxFinalizeSrvCall</i> returns STATUS_SUCCESS on success. 
+
 
 ## -remarks
 <i>MRxFinalizeSrvCall</i> is called when RDBSS is tearing down an SRV_CALL structure. The network mini-redirector is expected to close its connection to the server. 
@@ -74,11 +78,13 @@ A pointer to a Boolean value that indicates if the disconnect is to be enforced 
 
 RDBSS ignores the return value from the <i>MRxFinalizeSrvCall</i> call. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,6 +95,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +133,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxFinalizeSrvCall routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

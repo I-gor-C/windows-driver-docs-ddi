@@ -7,8 +7,8 @@ old-location: storage\storage_zones_attributes.htm
 old-project: storage
 ms.assetid: 6C86A931-C87C-4273-9409-A45A3FDB8B4C
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -44,6 +44,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ typedef enum _STORAGE_ZONES_ATTRIBUTES {
 
 N/A
 
+
 ### -field ZonesAttributeTypeSameLengthSame
 
 N/A
+
 
 ### -field ZonesAttributeTypeSameLastZoneLengthDifferent
 
 N/A
 
+
 ### -field ZonesAttributeTypeMayDifferentLengthSame
 
 N/A
+
 
 ## -remarks
 
@@ -82,6 +87,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

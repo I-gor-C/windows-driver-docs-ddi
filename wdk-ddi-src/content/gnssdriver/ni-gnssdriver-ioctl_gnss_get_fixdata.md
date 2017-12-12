@@ -43,10 +43,12 @@ The <b>IOCTL_GNSS_GET_FIXDATA</b>
 
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 Pointer to a DWORD value that represents the fix session ID.
+
 
 
 
@@ -55,11 +57,14 @@ Set to sizeof(DWORD).
 
 
 
+
 ### -output-buffer
 Set to NULL
 
+
 ### -output-buffer-length
 Set to 0.
+
 
 
 
@@ -74,6 +79,7 @@ Set to 0.
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 <b>FixSessionID</b>: Session ID for an active fix.
@@ -92,11 +98,13 @@ Whenever a fix data is ready, the driver fills the buffer and completes the I/O.
 
 Whenever fix data is ready, the driver must fill the buffer and complete the I/O request. It is the driver’s responsibility to ensure that the data is returned for the specified fix session ID. Additionally, when a fix session is stopped by the GNSS adapter issuing an <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_stop_fixsession.md">IOCTL_GNSS_STOP_FIXSESSION</a>, the driver must cancel all pending get fix requests for the given fix session ID.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +130,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_GET_FIXDATA control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: display\video_memory.htm
 old-project: display
 ms.assetid: 3d8b3b45-90d9-4e64-a52d-253c9cb86588
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _VIDEO_MEMORY, VIDEO_MEMORY, *PVIDEO_MEMORY
+ms.date: 12/8/2017
+ms.keywords: _VIDEO_MEMORY, *PVIDEO_MEMORY, VIDEO_MEMORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The VIDEO_MEMORY structure holds the address of a requested block of kernel-mode video memory.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _VIDEO_MEMORY {
 
 Pointer to the requested virtual address for either the video memory, or the base of video memory, depending on whether <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> or <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a> is using this structure.
 
+
 ## -remarks
 VIDEO_MEMORY is used as an input structure to two IOCTLs: <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>, and <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>.
 
@@ -65,11 +67,13 @@ When VIDEO_MEMORY is used with IOCTL_VIDEO_UNMAP_VIDEO_MEMORY, <b>RequestedVirtu
 
 For structures used in mapping into user-mode video memory, see <a href="display.video_share_memory">VIDEO_SHARE_MEMORY</a> AND <a href="display.video_share_memory_information">VIDEO_SHARE_MEMORY_INFORMATION</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,5 +96,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_MEMORY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_MEMORY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

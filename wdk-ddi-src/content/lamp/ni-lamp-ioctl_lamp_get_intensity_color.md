@@ -42,6 +42,7 @@ The <b>IOCTL_LAMP_GET_INTENSITY_COLOR</b>
    control code queries the light intensity when the lamp is configured to emit color light.
 
 
+
 ## -syntax
 
 ````
@@ -55,14 +56,18 @@ The <b>IOCTL_LAMP_GET_INTENSITY_COLOR</b>
 ### -input-buffer
 <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> points to a <a href="..\lamp\ns-lamp-lamp_intensity_color.md">LAMP_INTENSITY_COLOR</a> structure.
 
+
 ### -input-buffer-length
 Length of a <a href="..\lamp\ns-lamp-lamp_intensity_color.md">LAMP_INTENSITY_COLOR</a> structure.
+
 
 ### -output-buffer
 <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> is filled with the light intensity information.
 
+
 ### -output-buffer-length
 <code>IO_STACK_LOCATION.Parameters.DeviceIoControl.OutputBufferLength</code> is the length of the buffer in bytes passed in the <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> field.
+
 
 ### -in-out-buffer
 
@@ -78,14 +83,17 @@ The driver sets <code>Irp-&gt;IoStatus.Status</code> to <b>STATUS_SUCCESS</b> or
 
 If the device has been acquired by a camera driver, the lamp driver should return a error <b>STATUS_RESOURCE_IN_USE</b> via <code>Irp-&gt;IoStatus.Status</code>.
 
+
 ## -remarks
 The payload type of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_intensity_color.md">LAMP_INTENSITY_COLOR</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

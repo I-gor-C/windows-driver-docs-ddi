@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 77BBF6AC-F5FA-4795-8898-6DC02983F573
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,7 +41,10 @@ req.irql: <= DISPATCH_LEVEL
 
 IOCTL_BTHX_WRITE_HCI is used to write Bluetooth ACL Data and Commands to the transport layer.
 
+
+
 IOCTL_BTHX_WRITE_HCI is used to write Bluetooth ACL Data and Commands to the transport layer.
+
 
 
 ## -ioctlparameters
@@ -55,8 +58,10 @@ The buffer describes a <a href="bltooth.bthx_hci_read_write_context">BTHX_HCI_RE
 
 Refer to the WDK Bluetooth samples for more information.
 
+
 ### -input-buffer-length
 The length of the buffer is the size of the <b>BTHX_HCI_READ_WRITE_CONTEXT</b> structure.
+
 
 ### -output-buffer
 Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
@@ -67,8 +72,10 @@ The buffer describes a ULONG of the number of bytes written for the input data s
 
 Refer to the WDK Bluetooth samples for more information.
 
+
 ### -output-buffer-length
 The length of the buffer is the size of a ULONG.
+
 
 ### -in-out-buffer
 
@@ -92,24 +99,29 @@ The IOCTL completed successfully.
 
  
 
+
 ## -remarks
 The Bluetooth stack sends IOCTL_BTHX_WRITE_HCI to write HCI ACL data and HCI command to the controller.
 
 The input buffer points to a BTHX_HCI_READ_WRITE_CONTEXT structure whose <b>DataLen</b> member specifies the number of bytes in the <b>Data</b> member. The <b>Type</b> member is set based on whether the packet is a command packet or an ACL data packet.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,9 +132,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

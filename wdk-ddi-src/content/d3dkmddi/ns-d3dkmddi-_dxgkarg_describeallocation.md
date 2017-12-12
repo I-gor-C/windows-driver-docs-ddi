@@ -7,7 +7,7 @@ old-location: display\dxgkarg_describeallocation.htm
 old-project: display
 ms.assetid: fd01ff3b-83b7-43d5-bbc6-6959485edd15
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_DESCRIBEALLOCATION, DXGKARG_DESCRIBEALLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGKARG_DESCRIBEALLOCATION structure describes an existing allocation.
 
 
+
 ## -syntax
 
 ````
@@ -66,40 +67,52 @@ typedef struct _DXGKARG_DESCRIBEALLOCATION {
 
 [in] A handle to an allocation that information is requested for. The driver previously returned this handle in the <b>hAllocation</b> member of the <a href="display.dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a> structure from a call to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function.
 
+
 ### -field Width
 
 [out] The width of the allocation, in pixels. The driver returns the width value.
+
 
 ### -field Height
 
 [out] The height of the allocation, in pixels. The driver returns the height value.
 
+
 ### -field Format
 
 [out] A <a href="display.d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation. The driver returns the format value.
+
 
 ### -field MultisampleMethod
 
 [out] A <a href="display.d3dddi_multisamplingmethod">D3DDDI_MULTISAMPLINGMETHOD</a> structure that describes the multiple-sampling method that is used for the allocation. The driver returns the description.
 
+
 ### -field RefreshRate
 
 [out] A <a href="display.d3dddi_rational">D3DDDI_RATIONAL</a> structure that indicates the refresh rate that the primary surface was created with, if applicable.
 
+
 ### -field PrivateDriverFormatAttribute
 
 [out] A UINT value that specifies a private format attribute for the allocation. The driver specifies surface format attributes (for example, the pixel layout of a tiled surface) that it otherwise cannot expose to the operating system. 
+
 The operating system uses the information in <b>PrivateDriverFormatAttribute</b> to compare two surfaces. For example, an A8R8B8G8 800x600 surface and an X8R8B8G8 800x600 surface should have the same information in <b>PrivateDriverFormatAttribute</b> if they have the same format attributes, which includes pixel layout. 
+
 
 ### -field Flags
 
 [out] This member is reserved.
+
 Supported starting with Windows 8.
+
 
 ### -field Rotation
 
 [out] This member is reserved.
+
 Supported starting with Windows 8.
+
 
 ## -remarks
 
@@ -109,14 +122,17 @@ Supported starting with Windows 8.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -154,5 +170,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_DESCRIBEALLOCATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_DESCRIBEALLOCATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

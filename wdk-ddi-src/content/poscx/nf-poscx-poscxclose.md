@@ -46,6 +46,7 @@ req.product: Windows 10 or later.
       the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_close.md">EVT_WDF_FILE_CLOSE</a> callback.
 
 
+
 ## -syntax
 
 ````
@@ -62,12 +63,15 @@ NTSTATUS PosCxClose(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param fileObject [in]
 
       A handle to a framework file object that identifies the caller associated with the open instance.
 
+
 ## -returns
 An appropriate NTSTATUS error code that indicates the close instance completion status.
+
 
 ## -remarks
 
@@ -77,14 +81,17 @@ An appropriate NTSTATUS error code that indicates the close instance completion 
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

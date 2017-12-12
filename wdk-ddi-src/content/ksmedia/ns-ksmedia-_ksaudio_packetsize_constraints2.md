@@ -42,6 +42,7 @@ The <b>KSAUDIO_PACKETSIZE_CONSTRAINTS2</b> structure describes the physical hard
 The driver sets this property before calling <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a> or otherwise enabling its KS filter interface for its streaming pins.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct _KSAUDIO_PACKETSIZE_CONSTRAINTS2 {
 ### -field MinPacketPeriodInHns
 
 The absolute minimum processing period supported by the driver expressed in hundred-nanosecond (HNS) units. This value can be 0 if the driver has no specific minimum processing period.
+
 
 ### -field PacketSizeFileAlignment
 
@@ -80,13 +82,16 @@ The absolute minimum processing period supported by the driver expressed in hund
 The absolute maximum packet size supported by the driver in bytes. This can be zero if the driver has no specific maximum packet size. This size should at least be large enough to support 10 ms buffer of any format supported by the pin. This size should also be greater or equal to MinPacketSize constraints. 
 
 
+
 ### -field NumProcessingModeConstraints
 
 The number of additional constraints for specific processing modes. This value can be 0.
 
+
 ### -field ProcessingModeConstraints
 
 An array of 0 or more processing mode constraints. 
+
 
 
 ## -remarks
@@ -97,27 +102,33 @@ For WaveRT drivers, this data structure describes the constraints for a WaveRT p
 
 The <b>KSAUDIO_PACKETSIZE_CONSTRAINTS2</b> struct is available  beginning with Windows 10, version 1607.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestforwardtoparentdeviceioqueue.htm
 old-project: wdf
 ms.assetid: 81511d81-206c-420b-a956-42cf68b57fc4
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfRequestForwardToParentDeviceIoQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfRequestForwardToParentDeviceIoQueue</b> method requeues an I/O request from a child device's I/O queue to a specified I/O queue of the child's parent device.
+
 
 
 ## -syntax
@@ -60,13 +62,16 @@ NTSTATUS WdfRequestForwardToParentDeviceIoQueue(
 
 A handle to a framework request object.
 
+
 ### -param ParentDeviceQueue [in]
 
 A handle to a framework queue object. 
 
+
 ### -param ForwardOptions [in]
 
 A pointer to a caller-allocated <a href="wdf.wdf_request_forward_options">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
+
 
 ## -returns
 <b>WdfRequestForwardToParentDeviceIoQueue</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
@@ -104,6 +109,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 
+
 ## -remarks
 Before a driver can call <b>WdfRequestForwardToParentDeviceIoQueue</b>, it must call <a href="wdf.wdfpdoinitallowforwardingrequesttoparent">WdfPdoInitAllowForwardingRequestToParent</a>.
 
@@ -119,11 +125,13 @@ For more information about <b>WdfRequestForwardToParentDeviceIoQueue</b>, see <a
 
 The following code example first determines the parent device of a device that received an I/O request, and then it requeues the I/O request to the parent device's default I/O queue.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -134,14 +142,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.9
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,6 +163,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -162,14 +174,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>
@@ -184,5 +199,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestForwardToParentDeviceIoQueue method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestForwardToParentDeviceIoQueue method%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

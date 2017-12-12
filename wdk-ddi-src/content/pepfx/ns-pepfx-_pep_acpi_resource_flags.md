@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_resource_flags.htm
 old-project: kernel
 ms.assetid: 1BB4933B-2707-4350-8D9C-E0E25A85F5CB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS
+ms.date: 12/7/2017
+ms.keywords: _PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_ACPI_RESOURCE_FLAGS</b> structure contains flags describing an ACPI resource.
 
 
+
 ## -syntax
 
 ````
@@ -65,37 +66,46 @@ typedef union _PEP_ACPI_RESOURCE_FLAGS {
 
 The consolidated values of the flags in <b>DUMMYSTRUCTNAME</b>.
 
+
 ### -field DUMMYSTRUCTNAME
 
  A structure containing ACPI resource flags.
+
 
 ### -field Shared
 
 When set, indicates that this is a shared device.
 
+
 ### -field Wake
 
 When set, indicates that this device can be woken from a low-power state.
+
 
 ### -field ResourceUsage
 
 When set, indicates that this device is in use.
 
+
 ### -field SlaveMode
 
 When set, indicates that this device is in slave mode.
+
 
 ### -field AddressingMode
 
 When set, indicates that this device is in addressing mode.
 
+
 ### -field SharedMode
 
 When set, indicates that this device is in shared mode.
 
+
 ### -field Reserved
 
 This member is reserved and should be set to zero.
+
 </dd>
 </dl>
 
@@ -107,14 +117,17 @@ This member is reserved and should be set to zero.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

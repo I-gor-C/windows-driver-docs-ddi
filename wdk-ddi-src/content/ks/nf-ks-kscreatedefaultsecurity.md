@@ -41,6 +41,7 @@ req.irql:
 The <b>KsCreateDefaultSecurity </b>function creates a security descriptor with default security, optionally inheriting parameters from a parent security descriptor.
 
 
+
 ## -syntax
 
 ````
@@ -57,21 +58,26 @@ NTSTATUS KsCreateDefaultSecurity(
 
 Points to the parent object's security descriptor, describing inherited security parameters. This argument is optional.
 
+
 ### -param DefaultSecurity [out]
 
 Points to the place in which to put the returned default security descriptor.
 
+
 ## -returns
 <b>KsCreateDefaultSecurity</b> returns STATUS_SUCCESS if the operation is successful, else a resource or assignment error.
 
+
 ## -remarks
 <b>KsCreateDefaultSecurity</b> is used to initialize subobjects that do not have any stored security. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

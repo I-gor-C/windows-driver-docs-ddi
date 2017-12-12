@@ -7,7 +7,7 @@ old-location: display\dxgk_displaypanelorientation.htm
 old-project: display
 ms.assetid: 49758A57-EFCE-4E9C-9BF6-74F6EFD356D9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_DISPLAYPANELORIENTATION, DXGK_DISPLAYPANELORIENTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Enum used to express the orientation of an integrated panel.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _DXGK_DISPLAYPANELORIENTATION {
 
 Indicates a 0 degree rotation.
 
+
 ### -field DXGK_DPO_90
 
 Indicates a 90 degree rotation.
+
 
 ### -field DXGK_DPO_180
 
 Indicates a 180 degree rotation.
 
+
 ### -field DXGK_DPO_270
 
 Indicates a 270 degree rotation.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Indicates a 270 degree rotation.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

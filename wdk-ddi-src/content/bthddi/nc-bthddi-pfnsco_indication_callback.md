@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: abc9fc88-6852-4bfb-8271-7a73a508c397
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -43,6 +43,7 @@ Profile drivers implement a SCO callback function to provide the Bluetooth drive
   changes to the status of a currently open SCO connection.
 
 
+
 ## -prototype
 
 ````
@@ -70,11 +71,13 @@ For incoming remote connection request indications, this is the context specifie
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a> BRB.
 
+
 ### -param Indication [in]
 
 A 
      <a href="bltooth.sco_indication_code">SCO_INDICATION_CODE</a> value that indicates
      the type of SCO event.
+
 
 ### -param Parameters [in]
 
@@ -84,19 +87,23 @@ A
      to the 
      <i>Indication</i> parameter.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The 
     <b>BtAddress</b> member found in the SCO_INDICATION_PARAMETERS structure passed in the 
     <i>Parameters</i> parameter indicates the Bluetooth address of the remote device.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,11 +135,13 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
    function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
    paged memory)
+
 </td>
 </tr>
 </table>
@@ -153,5 +165,8 @@ Developers should code this function to operate at either IRQL = DISPATCH_LEVEL 
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PFNSCO_INDICATION_CALLBACK callback function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

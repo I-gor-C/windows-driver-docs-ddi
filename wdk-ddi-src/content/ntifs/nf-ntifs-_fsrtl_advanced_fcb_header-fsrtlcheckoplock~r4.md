@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlCheckOplock</b> routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state. 
 
 
+
 ## -syntax
 
 ````
@@ -60,18 +61,23 @@ NTSTATUS FsRtlCheckOplock(
 
 An opaque opportunistic lock pointer for the file. This pointer must have been initialized by a previous call to <a href="ifsk.fsrtlinitializeoplock">FsRtlInitializeOplock</a>. 
 
+
 ### -param Irp [in]
 
 A pointer to the IRP for the I/O operation. 
+
 
 ### -param Context [in, optional]
 
 A pointer to caller-defined context information to be passed to the callback routines that the <i>CompletionRoutine</i> and <i>PostIrpRoutine </i>parameters point to. 
 
+
 ### -param CompletionRoutine [in, optional]
 
 A pointer to a caller-supplied callback routine. If an opportunistic lock break is in progress, this routine is called when the break is completed. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, the caller is put into a wait state until the opportunistic lock break is completed. 
+
 This routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -89,20 +95,26 @@ This routine is declared as follows:
 This routine has the following parameters: 
 
 
+
+
 ### -param Context
 
 A context information pointer that was passed in the <i>Context</i> parameter to <b>FsRtlCheckOplock</b>. 
 
+
 ### -param Irp
 
 A pointer to the IRP for the I/O operation. 
+
 </dd>
 </dl>
 
 ### -param PostIrpRoutine [in, optional]
 
 A pointer to a caller-supplied callback routine to be called if the I/O operation is posted to a work queue. This parameter is optional and can be <b>NULL</b>. 
+
 This routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -119,13 +131,16 @@ This routine is declared as follows:
 </table></span></div>
 
 
+
 ### -param Context
 
 A context information pointer that was passed in the <i>Context</i> parameter to <b>FsRtlCheckOplock</b>. 
 
+
 ### -param Irp
 
 A pointer to the IRP for the I/O operation. 
+
 </dd>
 </dl>
 
@@ -145,6 +160,7 @@ The <b>FsRtlCheckOplock</b> routine returns STATUS_SUCCESS or an appropriate NTS
 </dl>An opportunistic lock break has been initiated, and control of the IRP has been passed to the oplock package. If CompletionRoutine is <b>NULL</b>, this routine will block while the oplock break is processed, rather than return STATUS_PENDING. STATUS_PENDING is a success code. 
 
  
+
 
 ## -remarks
 <b>FsRtlCheckOplock</b> synchronizes the IRP for an I/O operation with the current opportunistic lock state of a file according to the following conditions: 
@@ -175,11 +191,13 @@ For detailed information about opportunistic locks, see the Microsoft Windows SD
 
 Minifilters should call <a href="ifsk.fltcheckoplock">FltCheckOplock</a> instead of <b>FsRtlCheckOplock</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -190,14 +208,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available in Microsoft Windows 2000 and later versions of Windows operating systems. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -208,6 +229,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -218,6 +240,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -228,9 +251,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -281,5 +306,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCheckOplock routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

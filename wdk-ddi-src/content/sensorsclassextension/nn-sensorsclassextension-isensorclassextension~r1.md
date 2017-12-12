@@ -42,12 +42,14 @@ req.product: Windows 10 or later.
 The ISensorClassExtension interface provides methods that the sensor driver uses to communicate with the sensor platform (and, therefore, client applications) through the sensor class extension object.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">ISensorClassExtension</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>ISensorClassExtension</b> also has these types of members:
 
 The <b>ISensorClassExtension</b> interface has these methods.
 
  
+
 
 ## -members
 The <b>ISensorClassExtension</b> interface has these methods.
@@ -94,6 +96,7 @@ The <b>ISensorClassExtension</b> interface has these methods.
 </tr>
 </table> 
 
+
 ## -remarks
 
 
@@ -102,6 +105,7 @@ The <b>ISensorClassExtension</b> interface has these methods.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +116,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

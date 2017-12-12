@@ -7,7 +7,7 @@ old-location: netvista\ndispdfreequeue.htm
 old-project: netvista
 ms.assetid: 1DE8582C-AF11-4CBA-8F4C-159266A7F3BA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 
 
+
 ## -prototype
 
 ````
@@ -63,8 +64,10 @@ void NdisPDFreeQueue(
 
 Any empty queue that needs to be freed from memory. For more information, see the <a href="..\ndis\ne-ndis-ndis_pd_queue_type.md">NDIS_PD_QUEUE</a> structure.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 The caller is responsible for ensuring that the PD queue is empty before issuing this call. Caller is also responsible for clearing all filters that target this queue before closing the queue.
@@ -79,27 +82,33 @@ The <b>NDIS_PD_FREE_QUEUE</b> function type is defined in the Ntddndis.h header 
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +119,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

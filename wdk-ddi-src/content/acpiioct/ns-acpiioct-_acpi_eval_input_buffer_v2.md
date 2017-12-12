@@ -41,6 +41,7 @@ req.irql:
 This topic describes the  <b>ACPI_EVAL_INPUT_BUFFER_V2</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_V2 {
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
 
+
 ### -field DUMMYUNIONNAME
 
 Defines the method name member of <b>DUMMYUNIONNAME</b>.
+
 
 ## -remarks
 
@@ -72,14 +75,17 @@ Defines the method name member of <b>DUMMYUNIONNAME</b>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

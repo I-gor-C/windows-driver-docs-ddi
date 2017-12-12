@@ -7,7 +7,7 @@ old-location: netvista\fwps_callout0.htm
 old-project: netvista
 ms.assetid: df6e9980-6c9b-4d01-a1d5-e5242a3ebc66
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_CALLOUT0_, FWPS_CALLOUT0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The <b>FWPS_CALLOUT0</b> structure defines the data that is required for a callo
   callout with the filter engine.
 
 
+
 ## -syntax
 
 ````
@@ -61,10 +62,13 @@ typedef struct FWPS_CALLOUT0_ {
 
 A callout driver-defined <b>GUID</b> that uniquely identifies the callout.
 
+
 ### -field flags
 
 Flags that specify callout-specific parameters. Possible flags are:
      
+
+
 
 
 ### -field FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW
@@ -76,6 +80,7 @@ A callout driver can specify this flag when registering a callout that will be a
        calling the 
        <a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function.
 
+
 ### -field FWP_CALLOUT_FLAG_ALLOW_OFFLOAD
 
 A callout driver specifies this flag to indicate that the callout driver's 
@@ -83,6 +88,7 @@ A callout driver specifies this flag to indicate that the callout driver's
        by offloading network data processing to offload-capable network interface cards (NICs). If this flag
        is not specified, then offloading of network data processing is disabled for all traffic that is
        processed by any filters that specify the callout for the filter's action.
+
 </dd>
 </dl>
 
@@ -92,11 +98,13 @@ A pointer to the callout driver's
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn0</a> callout function. The filter
      engine calls this function whenever there is network data to be processed by the callout.
 
+
 ### -field notifyFn
 
 A pointer to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn0.md">notifyFn0</a> function. The filter engine calls
      this function to notify the callout driver about events that are associated with the callout.
+
 
 ### -field flowDeleteFn
 
@@ -104,8 +112,10 @@ A pointer to the callout driver's
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a> callout function. The filter
      engine calls this function whenever a data flow that is being processed by the callout is terminated.
      
+
 If a callout driver does not associate a context with the data flows that the callout processes, then
      this member should be set to <b>NULL</b>.
+
 
 ## -remarks
 A callout driver passes a pointer to an initialized <b>FWPS_CALLOUT0</b> structure to the 
@@ -117,19 +127,23 @@ A callout can set the <b>FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW</b> flag only for 
     connections. Performance will be improved and the driver will not have to maintain unnecessary state
     data.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -161,5 +175,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT0 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT0 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

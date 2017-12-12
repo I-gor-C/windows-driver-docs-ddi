@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied <i>StrMiniClock</i> function, provided in each stream's <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>.
 
 
+
 ## -prototype
 
 ````
@@ -60,8 +61,10 @@ VOID StrMiniClock(
 
 Pointer to the <a href="stream.hw_time_context">HW_TIME_CONTEXT</a> structure that <i>StrMiniClock</i> must fill out with the requested information.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A stream specifies its <i>StrMiniClock</i> function within the <b>HwClockFunction</b> member of the <a href="stream.hw_clock_object">HW_CLOCK_OBJECT</a> substructure of its <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>. The minidriver fills out the <b>HW_STREAM_OBJECT</b> for a stream within its <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a> routine in response to a SRB_OPEN_STREAM request.
@@ -70,11 +73,13 @@ When the class driver calls <i>StrMiniClock</i>, it fills in the <b>HwDeviceExte
 
 The <i>StrMiniClock</i> routine must handle the functions specified in the <b>ClockSupportFlags</b> of the clock's HW_CLOCK_OBJECT. See <a href="stream.hw_clock_object">HW_CLOCK_OBJECT</a> for details.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -85,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +110,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20StrMiniClock routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A camera minidriver's <b>CamStopCaptureEx</b> callback function performs any processing after the stream is stopped.
 
 
+
 ## -prototype
 
 ````
@@ -62,16 +63,20 @@ NTSTATUS CamStopCaptureEx(
 
 Pointer to the camera minidriver's device object created by the USB hub.
 
+
 ### -param DeviceContext 
 
 Pointer to the camera minidriver's device context.
+
 
 ### -param StreamNumber 
 
 Indicates the stream number.
 
+
 ## -returns
 <b>CamStopCaptureEx</b> returns STATUS_SUCCESS or an appropriate error code. This return value is the completion code for the read IRP.
+
 
 ## -remarks
 USBCAMD calls the minidriver's <b>CamStopCaptureEx</b> callback function immediately after the isochronous video stream is stopped. Typically, a camera minidriver selects an alternate setting within the USB video streaming interface that uses no additional bandwidth.
@@ -80,11 +85,13 @@ The original USBCAMD does not call <b>CamStopCaptureEx</b>.
 
 This function is required.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +102,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

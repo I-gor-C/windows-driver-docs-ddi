@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: fc93ab8a-01d2-4827-8d89-06f09bf10456
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _INDICATION_PARAMETERS, *PINDICATION_PARAMETERS, INDICATION_PARAMETERS
+ms.keywords: _INDICATION_PARAMETERS, INDICATION_PARAMETERS, *PINDICATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: Developers should code this function to operate at either IRQL = DISPA
 The INDICATION_PARAMETERS structure is passed as the 
   <i>Parameters</i> parameter to a profile driver's 
   <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>.
+
 
 
 ## -syntax
@@ -94,9 +95,11 @@ typedef struct _INDICATION_PARAMETERS {
 The L2CAP connection handle to the remote device. This handle is only valid for notifications that
      arrive over an established L2CAP connection.
 
+
 ### -field BtAddress
 
 The Bluetooth address of the remote device.
+
 
 ### -field Parameters
 
@@ -106,15 +109,18 @@ The Bluetooth address of the remote device.
 The structure that contains parameters for the 
       <b>IndicationRemoteConnect</b> callback function.
 
+
 ### -field Request
 
 The structure that contains the parameters for a connection request.
+
 
 ### -field PSM
 
 The Protocol/Service Multiplexer (PSM) that is passed to the calling function when the 
         <b>IndicationRemoteConnectINDICATION_CODE</b> value is specified in the callback function's 
         <i>Indication</i> parameter.
+
 </dd>
 </dl>
 </dd>
@@ -125,6 +131,7 @@ The Protocol/Service Multiplexer (PSM) that is passed to the calling function wh
 The structure that contains parameters for the 
       <b>IndicationRemoteConfigRequestINDICATION_CODE</b> value.
 
+
 ### -field CurrentParams
 
 A 
@@ -134,22 +141,26 @@ A
        This member is used when the callback function specifies the 
        <b>IndicationRemoteConfigRequestINDICATION_CODE</b> value.
 
+
 ### -field RequestedParams
 
 A CHANNEL_CONFIG_PARAMETERS structure that contains the parameters that are passed from the
        remote host for configuration requests. This member is used when the callback function specifies the 
        <b>IndicationRemoteConfigRequestINDICATION_CODE</b> value.
 
+
 ### -field ResponseParams
 
 A CHANNEL_CONFIG_PARAMETERS structure that contains the parameters that the profile driver
        responds to the configuration request with.
+
 
 ### -field Response
 
 A flag that indicates the status of the configuration request. Valid flag values are listed in
        the following table.
        
+
 <table>
 <tr>
 <th>Flag</th>
@@ -158,47 +169,58 @@ A flag that indicates the status of the configuration request. Valid flag values
 <tr>
 <td>
 CONFIG_STATUS_SUCCESS
+
 </td>
 <td>
 The configuration request was successful.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_DISCONNECT
+
 </td>
 <td>
 The configuration request failed because the L2CAP connection was disconnected.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_INVALID_PARAMETER
+
 </td>
 <td>
 The configuration request failed because an invalid parameter was passed to the profile
           driver.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_REJECT
+
 </td>
 <td>
 The profile driver rejected the configuration request.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_UNKNOWN_OPTION
+
 </td>
 <td>
 The configuration request failed because one of the specified configuration options was not
           recognized by the profile driver.
+
 </td>
 </tr>
 </table>
  
+
 </dd>
 </dl>
 
@@ -207,6 +229,7 @@ The configuration request failed because one of the specified configuration opti
 The structure that contains parameters for the 
       <b>IndicationRemoteConfigResponseINDICATION_CODE</b> value.
 
+
 ### -field CurrentParams
 
 A 
@@ -216,36 +239,43 @@ A
        This member is used when the callback function specifies the 
        <b>IndicationRemoteConfigRequestINDICATION_CODE</b> value.
 
+
 ### -field RequestedParams
 
 A CHANNEL_CONFIG_PARAMETERS structure that contains the parameters that are passed from the
        remote host for configuration requests. This member is used when the callback function specifies the 
        <b>IndicationRemoteConfigRequestINDICATION_CODE</b> value.
 
+
 ### -field RejectedParams
 
 A CHANNEL_CONFIG_PARAMETERS structure that contains the configuration parameter settings that
        were rejected by the remote device.
 
+
 ### -field UnknownTypes
 
 An array of types that were not recognized by the responding device.
+
 
 ### -field NumUnknownTypes
 
 The number of unrecognized types in the 
        <b>UnknownTypes</b> member.
 
+
 ### -field NewRequestParams
 
 A CHANNEL_CONFIG_PARAMETERS structure that contains the parameter settings for the callback
        function to resubmit after the response has returned from the remote device.
+
 
 ### -field Response
 
 A flag that indicates the status of the configuration request. Valid flag values are listed in
        the following table.
        
+
 <table>
 <tr>
 <th>Flag</th>
@@ -254,47 +284,58 @@ A flag that indicates the status of the configuration request. Valid flag values
 <tr>
 <td>
 CONFIG_STATUS_SUCCESS
+
 </td>
 <td>
 The configuration request was successful.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_DISCONNECT
+
 </td>
 <td>
 The configuration request failed because the L2CAP connection was disconnected.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_INVALID_PARAMETER
+
 </td>
 <td>
 The configuration request failed because an invalid parameter was passed to the profile
           driver.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_REJECT
+
 </td>
 <td>
 The profile driver rejected the configuration request.
+
 </td>
 </tr>
 <tr>
 <td>
 CONFIG_STATUS_UNKNOWN_OPTION
+
 </td>
 <td>
 The configuration request failed because one of the specified configuration options was not
           recognized by the profile driver.
+
 </td>
 </tr>
 </table>
  
+
 </dd>
 </dl>
 
@@ -303,15 +344,18 @@ The configuration request failed because one of the specified configuration opti
 The structure that contains parameters for the 
       <b>IndicationFreeExtraOptionsINDICATION_CODE</b> value.
 
+
 ### -field NumExtraOptions
 
 The number of extra options contained in the 
        <b>ExtraOptions</b> member.
 
+
 ### -field ExtraOptions
 
 The number of extra options contained in the 
        <b>ExtraOptions</b> member.
+
 </dd>
 </dl>
 
@@ -320,17 +364,20 @@ The number of extra options contained in the
 The structure that contains the parameters for the 
       <b>IndicationRemoteDisconnectINDICATION_CODE</b> value.
 
+
 ### -field Reason
 
 An 
        <a href="bltooth.l2cap_disconnect_reason">L2CAP_DISCONNECT_REASON</a> value that
        indicates why the L2CAP connection to the remote device was terminated.
 
+
 ### -field CloseNow
 
 A Boolean value that a profile driver uses to notify the Bluetooth driver stack to close the
        L2CAP connection. Set this member to <b>TRUE</b> to notify the Bluetooth driver stack to close the
        connection. Otherwise, set it to <b>FALSE</b> to keep the connection open.
+
 </dd>
 </dl>
 
@@ -339,14 +386,17 @@ A Boolean value that a profile driver uses to notify the Bluetooth driver stack 
 The structure that contains the parameters for the 
       <b>IndicationRecvPacketINDICATION_CODE</b> value.
 
+
 ### -field PacketLength
 
 The size, in bytes, of the packet that the callback function sent over the L2CAP
        connection.
 
+
 ### -field TotalQueueLength
 
 The number of packets to be processed over the L2CAP connection.
+
 </dd>
 </dl>
 </dd>
@@ -364,19 +414,23 @@ When the Bluetooth driver stack passes
     <b>Connect</b> member of the 
     <b>Parameters</b> union.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -405,5 +459,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20INDICATION_PARAMETERS structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

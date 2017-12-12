@@ -7,7 +7,7 @@ old-location: netvista\fwpsopentoken0.htm
 old-project: netvista
 ms.assetid: B6C61023-F840-4517-83C1-BC9CBDFC27B0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsOpenToken0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>FwpsOpenToken0</b> function opens an access token.<div class="alert"><b>N
 
 
 
+
 ## -syntax
 
 ````
@@ -63,18 +64,22 @@ A handle for an open session to the filter engine. A callout driver calls the
      <a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a> function to open a
      session to the filter engine.
 
+
 ### -param modifiedId [in]
 
 Specifies an <a href="netvista.luid">LUID</a> that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used.
+
 
 ### -param desiredAccess [in]
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure specifying the requested types of access to the access token. These requested access types are compared with the token's discretionary access-control list (<b>DACL</b>) to determine which accesses are granted or denied.
 
+
 ### -param accessToken [out]
 
 Pointer to a caller-allocated variable that receives a handle to the newly opened access token.
+
 
 ## -returns
 The 
@@ -88,6 +93,7 @@ The
 
  
 
+
 ## -remarks
 
 
@@ -96,6 +102,7 @@ The
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,14 +113,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,9 +134,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -138,5 +150,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsOpenToken0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsOpenToken0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

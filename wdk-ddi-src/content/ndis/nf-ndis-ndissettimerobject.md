@@ -7,7 +7,7 @@ old-location: netvista\ndissettimerobject.htm
 old-project: netvista
 ms.assetid: 75f8fa1b-5b79-4bc2-8b7b-aa1101c9c331
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisSetTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   periodically.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ A handle to a timer object that NDIS provides when a driver calls the
      <a href="netvista.ndisallocatetimerobject">
      NdisAllocateTimerObject</a> function.
 
+
 ### -param DueTime [in]
 
 The absolute or relative time at which the timer is to expire. If the value of the 
@@ -71,12 +73,14 @@ The absolute or relative time at which the timer is to expire. If the value of t
      (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative
      expiration times are not affected by system time changes.
 
+
 ### -param MillisecondsPeriod [in, optional]
 
 The periodic time interval, in milliseconds, that elapses between each time the timer fires and
      the next call to the 
      <i>NetTimerCallback</i> function, unless the timer is canceled. The value of this parameter must be less
      than or equal to MAXLONG.
+
 
 ### -param FunctionContext [in, optional]
 
@@ -86,9 +90,11 @@ A pointer to a caller-supplied context area that NDIS passes to the associated
      <a href="netvista.ndis_timer_characteristics">
      NDIS_TIMER_CHARACTERISTICS</a> structure.
 
+
 ## -returns
 <b>NdisSetTimerObject</b> returns <b>TRUE</b> if the timer object was already in the system timer queue;
      otherwise, it returns <b>FALSE</b>.
+
 
 ## -remarks
 After a driver calls 
@@ -112,11 +118,13 @@ For more information about timer behavior, see
 To cancel a timer, call the 
     <a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -127,14 +135,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +156,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +167,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_timer_function">Irql_Timer_Function</a>, <a href="devtest.ndis_periodictimer">PeriodicTimer</a>
@@ -193,5 +208,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetTimerObject function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetTimerObject function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

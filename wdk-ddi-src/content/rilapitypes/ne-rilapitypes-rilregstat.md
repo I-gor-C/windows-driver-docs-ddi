@@ -7,8 +7,8 @@ old-location: netvista\rilregstat_2.htm
 old-project: netvista
 ms.assetid: 6ab187d9-7995-46ad-a12f-47d5b8fa40f0
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: RIL_WritePhonebookEntry
+ms.date: 12/8/2017
+ms.keywords: RILREGSTAT, RILREGSTAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,6 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.iface: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. </p>
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
 ## -syntax
@@ -59,36 +58,27 @@ typedef enum _RILREGSTAT {
 
 
 ## -enum-fields
-<dl>
 
 ### -field RIL_REGSTAT_UNREGISTERED
 
-<dd></dd>
 
 ### -field RIL_REGSTAT_HOME
 
-<dd></dd>
 
 ### -field RIL_REGSTAT_ATTEMPTING
 
-<dd></dd>
 
 ### -field RIL_REGSTAT_DENIED
 
-<dd></dd>
 
 ### -field RIL_REGSTAT_ROAMING
 
-<dd></dd>
 
 ### -field RIL_REGSTAT_ROAMING_DOMESTIC
 
-<dd></dd>
 
 ### -field RIL_REGSTAT_MAX
 
-<dd></dd>
-</dl>
 
 ## -remarks
 
@@ -97,7 +87,7 @@ typedef enum _RILREGSTAT {
 <table>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Indicates the priority of endpoints.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef enum _UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY {
 
 No characteristics of the endpoint.
 
+
 ### -field UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_VIDEO
 
 Bulk endpoint with video has the priority.
+
 
 ### -field UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_VOICE
 
 Bulk endpoint with voice has the priority.
 
+
 ### -field UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_INTERACTIVE
 
 Bulk endpoint with interactive has the priority.
+
 
 ## -remarks
 
@@ -80,22 +85,27 @@ Bulk endpoint with interactive has the priority.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +120,8 @@ Header
 <dt><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

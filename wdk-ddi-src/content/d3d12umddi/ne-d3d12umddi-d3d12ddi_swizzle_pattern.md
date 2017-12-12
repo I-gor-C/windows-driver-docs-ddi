@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_swizzle_pattern.htm
 old-project: display
 ms.assetid: 2C51BB44-3204-4EE8-9C86-605698BD58C0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_SWIZZLE_PATTERN, D3D12DDI_SWIZZLE_PATTERN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies a swizzle pattern.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum D3D12DDI_SWIZZLE_PATTERN {
 
 A row major swizzle pattern.
 
+
 ### -field D3D12DDI_SP_64KB_STANDARD_SWIZZLE
 
 A 64 KB standard swizzle pattern.
 
+
 ### -field D3D12DDI_SP_DEVICE_DEPENDENT_0
 
 A device dependant swizzle pattern. 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A device dependant swizzle pattern.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

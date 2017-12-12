@@ -7,7 +7,7 @@ old-location: storage\mpio_dsm_path.htm
 old-project: storage
 ms.assetid: 17338526-d682-4d11-89b9-730b1a275870
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MPIO_DSM_Path, *PMPIO_DSM_Path, MPIO_DSM_Path
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_DSM_Path structure is used to represent the DSM's definition of a path.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _MPIO_DSM_Path {
 
 An unsigned 64-bitfield that is used as a unique identifier to distinguish paths that are known to the DSM.
 
+
 ### -field Reserved
 
 Should be zero.
+
 
 ### -field PathWeight
 
 An unsigned 32-bitfield that holds the weight associated with the given path. The assigned value determines the order in which the DSM will pick the paths if the load balance policy is set to Weighted Path. This means that a user can assign weights to each path that is available for a device and if the Load Balance Policy for the device is set as "Weighted Path," MPIO uses this PathWeight value to determine which path to use.
 
+
 ### -field PrimaryPath
 
 An unsigned 32-bitfield that is used as a flag to indicate the path state when accessing a particular LUN.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ An unsigned 32-bitfield that is used as a flag to indicate the path state when a
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

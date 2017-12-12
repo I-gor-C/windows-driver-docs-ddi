@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisMCmCloseAddressFamilyComplete
-title: NdisMCmCloseAddressFamilyComplete
+title: NdisMCmCloseAddressFamilyComplete macro
 author: windows-driver-content
 description: NdisMCmCloseAddressFamilyComplete returns the final status of a client's request, for which the MCM driver returned NDIS_STATUS_PENDING, to close the AF.
 old-location: netvista\ndismcmcloseaddressfamilycomplete.htm
 old-project: netvista
 ms.assetid: be551557-06db-4fc9-bdcb-030e621e205a
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMCmCloseAddressFamilyComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,78 +31,73 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.iface: 
 ---
 
-# NdisMCmCloseAddressFamilyComplete function
+# NdisMCmCloseAddressFamilyComplete macro
 
 
 
 ## -description
-<p><b>NdisMCmCloseAddressFamilyComplete</b> returns the final status of a client's request, for which the MCM
-  driver returned NDIS_STATUS_PENDING, to close the AF.</p>
+<b>NdisMCmCloseAddressFamilyComplete</b> returns the final status of a client's request, for which the MCM
+  driver returned NDIS_STATUS_PENDING, to close the AF.
+
 
 
 ## -syntax
 
 ````
 VOID NdisMCmCloseAddressFamilyComplete(
-  _In_ NDIS_STATUS Status,
-  _In_ NDIS_HANDLE NdisAfHandle
+  [in] NDIS_STATUS Status,
+  [in] NDIS_HANDLE NdisAfHandle
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param Status [in]
 
-<dd>
-<p>The caller sets this to NDIS_STATUS_SUCCESS.</p>
-</dd>
+The caller sets this to NDIS_STATUS_SUCCESS.
+
 
 ### -param NdisAfHandle [in]
 
-<dd>
-<p>Specifies the NDIS-supplied handle passed to the MCM driver's 
-     <a href="..\ndis\nc-ndis-protocol-cm-open-af.md">ProtocolCmOpenAf</a> function when this
-     client originally opened the address family.</p>
-</dd>
-</dl>
+Specifies the NDIS-supplied handle passed to the MCM driver's 
+     <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function when this
+     client originally opened the address family.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>An MCM driver must call 
+An MCM driver must call 
     <b>NdisMCmCloseAddressFamilyComplete</b> if its 
-    <a href="..\ndis\nc-ndis-protocol-cm-close-af.md">ProtocolCmCloseAf</a> function previously
+    <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a> function previously
     returned NDIS_STATUS_PENDING for the given 
     <i>NdisAfHandle</i> . The client, which initiated the pended close-AF operation with a call to 
-    <a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>, cannot
+    <a href="netvista.ndisclcloseaddressfamily">NdisClCloseAddressFamily</a>, cannot
     release the resources it allocated to track communications on the AF until the MCM driver's call to 
-    <b>NdisMCmCloseAddressFamilyComplete</b>.</p>
+    <b>NdisMCmCloseAddressFamilyComplete</b>.
 
-<p>A call to 
+A call to 
     <b>NdisMCmCloseAddressFamilyComplete</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-close-af-complete.md">
-    ProtocolClCloseAfComplete</a> function.</p>
+    <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">
+    ProtocolClCloseAfComplete</a> function.
 
-<p>The MCM driver cannot subsequently use the 
+The MCM driver cannot subsequently use the 
     <i>NdisAfHandle</i>, which is invalid for the MCM driver when 
-    <b>NdisMCmCloseAddressFamilyComplete</b> returns control.</p>
+    <b>NdisMCmCloseAddressFamilyComplete</b> returns control.
 
-<p>Only connection-oriented miniport drivers that provide integrated call-management support can call 
+Only connection-oriented miniport drivers that provide integrated call-management support can call 
     <b>NdisMCmCloseAddressFamilyComplete</b>. Stand-alone call managers, which register themselves with NDIS
     as protocol drivers, call 
-    <b>NdisCmCloseAddressFamilyComplete</b> instead.</p>
+    <b>NdisCmCloseAddressFamilyComplete</b> instead.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,20 +107,23 @@ VOID NdisMCmCloseAddressFamilyComplete(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/0399f140-c2df-4a1b-bb42-df5146df0123">
    NdisMCmCloseAddressFamilyComplete (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see
    
    <b>
-   NdisMCmCloseAddressFamilyComplete (NDIS 5.1)</b>) in Windows XP.</p>
+   NdisMCmCloseAddressFamilyComplete (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,15 +133,18 @@ VOID NdisMCmCloseAddressFamilyComplete(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>&lt;= DISPATCH_LEVEL</p>
+&lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>DDI compliance rules</p>
+DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
@@ -154,22 +155,25 @@ VOID NdisMCmCloseAddressFamilyComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
+<a href="netvista.ndisclcloseaddressfamily">NdisClCloseAddressFamily</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndiscmcloseaddressfamilycomplete.md">
+<a href="netvista.ndiscmcloseaddressfamilycomplete">
    NdisCmCloseAddressFamilyComplete</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-protocol-cl-close-af-complete.md">ProtocolClCloseAfComplete</a>
+<a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">ProtocolClCloseAfComplete</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-protocol-cm-close-af.md">ProtocolCmCloseAf</a>
+<a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-protocol-cm-open-af.md">ProtocolCmOpenAf</a>
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmCloseAddressFamilyComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmCloseAddressFamilyComplete macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\dot11_supported_antenna.htm
 old-project: netvista
 ms.assetid: 55a9c9e0-24e2-436f-9132-77ae1bab7c2c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_SUPPORTED_ANTENNA, *PDOT11_SUPPORTED_ANTENNA, DOT11_SUPPORTED_ANTENNA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,10 +56,12 @@ typedef struct _DOT11_SUPPORTED_ANTENNA {
 
 A value, from 1 through 255, that uniquely identifies the antenna.
 
+
 ### -field bSupportedAntenna
 
 A Boolean value that indicates, if <b>TRUE</b>, that the antenna referenced by the 
      <b>uAntennaListIndex</b> value supports transmit and receive operations.
+
 
 ## -remarks
 The meaning of the 
@@ -69,20 +71,24 @@ The meaning of the
     the antenna referenced by the 
     <b>uAntennaListIndex</b> member is supported for receive operations.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_ANTENNA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_ANTENNA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

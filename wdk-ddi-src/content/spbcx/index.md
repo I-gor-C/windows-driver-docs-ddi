@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Spbcx.h header
 
+## -description
 
 This header is used by SPB. For more information, see
 - [SPB](../_SPB/index.md)
@@ -11,10 +16,10 @@ Spbcx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [SPB_CONNECTION_PARAMETERS_INIT function](nf-spbcx-spb-connection-parameters-init.md) | The SPB_CONNECTION_PARAMETERS_INIT function initializes an SPB_CONNECTION_PARAMETERS structure. |
-| [SPB_CONTROLLER_CONFIG_INIT function](nf-spbcx-spb-controller-config-init.md) | The SPB_CONTROLLER_CONFIG_INIT function initializes an SPB_CONTROLLER_CONFIG structure. |
-| [SPB_REQUEST_PARAMETERS_INIT function](nf-spbcx-spb-request-parameters-init.md) | The SPB_REQUEST_PARAMETERS_INIT function initializes an SPB_REQUEST_PARAMETERS structure. |
-| [SPB_TRANSFER_DESCRIPTOR_INIT function](nf-spbcx-spb-transfer-descriptor-init.md) | The SPB_TRANSFER_DESCRIPTOR_INIT function initializes an SPB_TRANSFER_DESCRIPTOR structure. |
+| [SPB_CONNECTION_PARAMETERS_INIT function](nf-spbcx-spb_connection_parameters_init.md) | The SPB_CONNECTION_PARAMETERS_INIT function initializes an SPB_CONNECTION_PARAMETERS structure. |
+| [SPB_CONTROLLER_CONFIG_INIT function](nf-spbcx-spb_controller_config_init.md) | The SPB_CONTROLLER_CONFIG_INIT function initializes an SPB_CONTROLLER_CONFIG structure. |
+| [SPB_REQUEST_PARAMETERS_INIT function](nf-spbcx-spb_request_parameters_init.md) | The SPB_REQUEST_PARAMETERS_INIT function initializes an SPB_REQUEST_PARAMETERS structure. |
+| [SPB_TRANSFER_DESCRIPTOR_INIT function](nf-spbcx-spb_transfer_descriptor_init.md) | The SPB_TRANSFER_DESCRIPTOR_INIT function initializes an SPB_TRANSFER_DESCRIPTOR structure. |
 | [SpbControllerSetIoOtherCallback function](nf-spbcx-spbcontrollersetioothercallback.md) | The SpbControllerSetIoOtherCallback method registers an SPB controller driver's EvtSpbControllerIoOther callback function. |
 | [SpbControllerSetRequestAttributes function](nf-spbcx-spbcontrollersetrequestattributes.md) | The SpbControllerSetRequestAttributes method sets object attributes that will be used for all SPBREQUEST objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver. |
 | [SpbControllerSetTargetAttributes function](nf-spbcx-spbcontrollersettargetattributes.md) | The SpbControllerSetTargetAttributes method sets object attributes that will be used for all SPBTARGET objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver. |
@@ -33,26 +38,26 @@ Spbcx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_SPB_CONTROLLER_LOCK callback](nc-spbcx-evt-spb-controller-lock.md) | An SPB controller driver's EvtSpbControllerLock event callback function locks the SPB controller for accesses of a single target device on the bus. |
-| [EVT_SPB_CONTROLLER_OTHER callback](nc-spbcx-evt-spb-controller-other.md) | An SPB controller driver's EvtSpbControllerIoOther event callback function handles device I/O control requests that are not handled by other event callback functions or by the SPB framework extension (SpbCx). |
-| [EVT_SPB_CONTROLLER_READ callback](nc-spbcx-evt-spb-controller-read.md) | An SPB controller driver's EvtSpbControllerIoRead event callback function reads data from the specified target device into the buffers that are supplied with the read request. |
-| [EVT_SPB_CONTROLLER_SEQUENCE callback](nc-spbcx-evt-spb-controller-sequence.md) | An SPB controller driver's EvtSpbControllerIoSequence event callback function performs a sequence of data transfers between the specified target device and the buffers that are supplied with the sequence request. |
-| [EVT_SPB_CONTROLLER_UNLOCK callback](nc-spbcx-evt-spb-controller-unlock.md) | An SPB controller driver's EvtSpbControllerUnlock event callback function unlocks the SPB controller, which was locked by a previous call to the EvtSpbControllerLock event callback function. |
-| [EVT_SPB_CONTROLLER_WRITE callback](nc-spbcx-evt-spb-controller-write.md) | An SPB controller driver's EvtSpbControllerIoWrite event callback function writes data to the specified target device from the buffers that are supplied with the write request. |
-| [EVT_SPB_TARGET_CONNECT callback](nc-spbcx-evt-spb-target-connect.md) | An SPB controller driver's EvtSpbTargetConnect event callback function opens a connection to a target device on the bus. |
-| [EVT_SPB_TARGET_DISCONNECT callback](nc-spbcx-evt-spb-target-disconnect.md) | An SPB controller driver's EvtSpbTargetDisconnect event callback function closes a connection to a target device that was previously opened by a call to the driver's EvtSpbTargetConnect event callback function. |
+| [EVT_SPB_CONTROLLER_LOCK callback](nc-spbcx-evt_spb_controller_lock.md) | An SPB controller driver's EvtSpbControllerLock event callback function locks the SPB controller for accesses of a single target device on the bus. |
+| [EVT_SPB_CONTROLLER_OTHER callback](nc-spbcx-evt_spb_controller_other.md) | An SPB controller driver's EvtSpbControllerIoOther event callback function handles device I/O control requests that are not handled by other event callback functions or by the SPB framework extension (SpbCx). |
+| [EVT_SPB_CONTROLLER_READ callback](nc-spbcx-evt_spb_controller_read.md) | An SPB controller driver's EvtSpbControllerIoRead event callback function reads data from the specified target device into the buffers that are supplied with the read request. |
+| [EVT_SPB_CONTROLLER_SEQUENCE callback](nc-spbcx-evt_spb_controller_sequence.md) | An SPB controller driver's EvtSpbControllerIoSequence event callback function performs a sequence of data transfers between the specified target device and the buffers that are supplied with the sequence request. |
+| [EVT_SPB_CONTROLLER_UNLOCK callback](nc-spbcx-evt_spb_controller_unlock.md) | An SPB controller driver's EvtSpbControllerUnlock event callback function unlocks the SPB controller, which was locked by a previous call to the EvtSpbControllerLock event callback function. |
+| [EVT_SPB_CONTROLLER_WRITE callback](nc-spbcx-evt_spb_controller_write.md) | An SPB controller driver's EvtSpbControllerIoWrite event callback function writes data to the specified target device from the buffers that are supplied with the write request. |
+| [EVT_SPB_TARGET_CONNECT callback](nc-spbcx-evt_spb_target_connect.md) | An SPB controller driver's EvtSpbTargetConnect event callback function opens a connection to a target device on the bus. |
+| [EVT_SPB_TARGET_DISCONNECT callback](nc-spbcx-evt_spb_target_disconnect.md) | An SPB controller driver's EvtSpbTargetDisconnect event callback function closes a connection to a target device that was previously opened by a call to the driver's EvtSpbTargetConnect event callback function. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [SPB_CONNECTION_PARAMETERS structure](ns-spbcx--spb-connection-parameters.md) | The SPB_CONNECTION_PARAMETERS structure contains the connection parameters for a target device on a simple peripheral bus. |
-| [SPB_CONTROLLER_CONFIG structure](ns-spbcx--spb-controller-config.md) | The SPB_CONTROLLER_CONFIG structure contains the configuration settings for an SPB controller driver. |
-| [SPB_TRANSFER_DESCRIPTOR structure](ns-spbcx-spb-transfer-descriptor.md) | The SPB_TRANSFER_DESCRIPTOR structure describes a single transfer in an I/O transfer sequence. |
+| [SPB_TRANSFER_DESCRIPTOR structure](ns-spbcx-spb_transfer_descriptor.md) | The SPB_TRANSFER_DESCRIPTOR structure describes a single transfer in an I/O transfer sequence. |
+| [_SPB_CONNECTION_PARAMETERS structure](ns-spbcx-_spb_connection_parameters.md) | The SPB_CONNECTION_PARAMETERS structure contains the connection parameters for a target device on a simple peripheral bus. |
+| [_SPB_CONTROLLER_CONFIG structure](ns-spbcx-_spb_controller_config.md) | The SPB_CONTROLLER_CONFIG structure contains the configuration settings for an SPB controller driver. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [SPB_REQUEST_SEQUENCE_POSITION enumeration](ne-spbcx--spb-request-sequence-position.md) | The SPB_REQUEST_SEQUENCE_POSITION enumeration indicates the position of an I/O request in the list of transfers for an I/O transfer sequence. |
-| [SPB_REQUEST_TYPE enumeration](ne-spbcx--spb-request-type.md) | The SPB_REQUEST_TYPE enumeration specifies the type of SPB operation that a client is requesting. |
+| [_SPB_REQUEST_SEQUENCE_POSITION enumeration](ne-spbcx-_spb_request_sequence_position.md) | The SPB_REQUEST_SEQUENCE_POSITION enumeration indicates the position of an I/O request in the list of transfers for an I/O transfer sequence. |
+| [_SPB_REQUEST_TYPE enumeration](ne-spbcx-_spb_request_type.md) | The SPB_REQUEST_TYPE enumeration specifies the type of SPB operation that a client is requesting. |

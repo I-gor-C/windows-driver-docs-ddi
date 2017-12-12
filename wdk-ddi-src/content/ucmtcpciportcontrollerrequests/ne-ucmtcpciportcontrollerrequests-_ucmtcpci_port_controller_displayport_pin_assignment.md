@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 TBD
 
 
+
 ## -syntax
 
 ````
@@ -68,49 +69,61 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT {
 
 Invalid pin assignment.
 
+
 ### -field UcmTcpciPortControllerDFPDPinAssignmentA
 
 TBD
+
 
 ### -field UcmTcpciPortControllerDFPDPinAssignmentB
 
 TBD
 
+
 ### -field UcmTcpciPortControllerDFPDPinAssignmentC
 
 TBD
+
 
 ### -field UcmTcpciPortControllerDFPDPinAssignmentD
 
 TBD
 
+
 ### -field UcmTcpciPortControllerDFPDPinAssignmentE
 
 TBD
+
 
 ### -field UcmTcpciPortControllerDFPDPinAssignmentF
 
 TBD
 
+
 ### -field UcmTcpciPortControllerUFPDPinAssignmentA
 
 TBD
+
 
 ### -field UcmTcpciPortControllerUFPDPinAssignmentB
 
 TBD
 
+
 ### -field UcmTcpciPortControllerUFPDPinAssignmentC
 
 TBD
+
 
 ### -field UcmTcpciPortControllerUFPDPinAssignmentD
 
 TBD
 
+
 ### -field UcmTcpciPortControllerUFPDPinAssignmentE
 
 TBD
+
 
 ## -remarks
 
@@ -120,6 +133,7 @@ TBD
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

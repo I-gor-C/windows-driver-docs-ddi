@@ -41,6 +41,7 @@ req.irql:
 This structure represents the metadata information for the extended property control.
 
 
+
 ## -syntax
 
 ````
@@ -56,43 +57,56 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_METADATAINFO {
 ### -field BufferAlignment
 
 The required alignment for the metadata buffer.
+
 <i>BufferAlignment</i> can be one of the following values:
+
 <ul>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_16
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_32
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_64
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_128
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_256
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_512
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_1024
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_2048
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_4096
+
 </li>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_8192
+
 </li>
 </ul>
 
 ### -field MaxMetadataBufferSize
 
 The size of the metadata buffer.
+
 
 ## -remarks
 
@@ -102,6 +116,7 @@ The size of the metadata buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxgk-graphicspower-register-input-v-1-1.htm
 old-project: display
 ms.assetid: 5b120f3c-43d2-447a-9959-0788d7decf50
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1, *PDXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1, DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to register the power state of a new input.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1 {
 
 The current version being used.
 
+
 ### -field PrivateHandle
 
 A private handle to the device.
+
 
 ### -field PowerNotificationCb
 
 Issues a power notification.
 
+
 ### -field RemovalNotificationCb
 
 Issues a removal notification.
 
+
 ### -field FStateNotificationCb
 
 Issues a state notification.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Issues a state notification.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

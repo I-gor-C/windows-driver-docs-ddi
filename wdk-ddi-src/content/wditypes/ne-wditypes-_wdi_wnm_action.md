@@ -7,7 +7,7 @@ old-location: netvista\wdi_wnm_action.htm
 old-project: netvista
 ms.assetid: 350D3182-3BEE-4AB7-A9F0-5C5D7D60A617
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_WNM_ACTION, WDI_WNM_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_WNM_ACTION enumeration defines the message type for 802.11v BSS Transition Management action frames.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_WNM_ACTION {
 
 The message is a BSS Transition Management query frame.
 
+
 ### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_REQUEST
 
 The message is a BSS Transition Management request frame. This is sent by the AP to the client.
 
+
 ### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_RESPONSE
 
 The message is a BSS Transition Management response frame. This is a response to the above request frame from the AP.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ The message is a BSS Transition Management response frame. This is a response to
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

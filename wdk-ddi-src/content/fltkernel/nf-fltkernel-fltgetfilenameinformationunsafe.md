@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetFileNameInformationUnsafe</b> routine returns name information for an open file or directory. 
 
 
+
 ## -syntax
 
 ````
@@ -59,15 +60,19 @@ NTSTATUS FltGetFileNameInformationUnsafe(
 
 Pointer to a file object for the file or directory. The file object must be currently open. This parameter is required and cannot be set to <b>NULL</b>. 
 
+
 ### -param Instance [in, optional]
 
 Instance pointer for the caller. This parameter can be set to <b>NULL</b>. 
+
 
 ### -param NameOptions [in]
 
 
 <a href="ifsk.flt_file_name_options">FLT_FILE_NAME_OPTIONS</a> value containing flags that specify the format of the name information to be returned, as well as the query method to be used by the Filter Manager. This parameter is required and cannot be set to <b>NULL</b>. 
+
 The following table describes the name format flag values. Only one of the flags can be specified. For more information about these formats, see <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a>. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -76,30 +81,38 @@ The following table describes the name format flag values. Only one of the flags
 <tr>
 <td>
 FLT_FILE_NAME_NORMALIZED
+
 </td>
 <td>
 The <i>FileNameInformation</i> parameter receives the address of a structure containing the normalized name for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_OPENED
+
 </td>
 <td>
 The <i>FileNameInformation</i> parameter receives the address of a structure containing the name that was used when the file was opened. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_SHORT
+
 </td>
 <td>
 The <i>FileNameInformation</i> parameter receives the address of a structure containing the short (8.3) name for the file. The short name consists of up to 8 characters, followed immediately by a period and up to 3 more characters. The short name for a file does not include the volume name, directory path, or stream name. 
+
 </td>
 </tr>
 </table>
  
+
 The following table describes the query method flag values. Only one of the flags can be specified. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -108,33 +121,41 @@ The following table describes the query method flag values. Only one of the flag
 <tr>
 <td>
 FLT_FILE_NAME_QUERY_DEFAULT
+
 </td>
 <td>
 <b>FltGetFileNameInformationUnsafe</b> queries the Filter Manager's name cache for the file name information. If the name is not found in the cache, <b>FltGetFileNameInformationUnsafe</b> queries the file system and caches the result. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_QUERY_CACHE_ONLY
+
 </td>
 <td>
 <b>FltGetFileNameInformationUnsafe</b> queries the Filter Manager's name cache for the file name information. <b>FltGetFileNameInformationUnsafe</b> does not query the file system. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_QUERY_FILESYSTEM_ONLY
+
 </td>
 <td>
 <b>FltGetFileNameInformationUnsafe</b> queries the file system for the file name information. <b>FltGetFileNameInformationUnsafe</b> does not query the Filter Manager's name cache, and does not cache the result of the file system query. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param FileNameInformation [out]
 
 Pointer to a caller-allocated variable that receives the address of a system-allocated FLT_FILE_NAME_INFORMATION structure. <b>FltGetFileNameInformationUnsafe</b> allocates this structure from paged pool. When this information is no longer needed, the caller must release the structure by calling <a href="ifsk.fltreleasefilenameinformation">FltReleaseFileNameInformation</a>. This parameter is required and cannot be set to <b>NULL</b>. 
+
 
 ## -returns
 <b>FltGetFileNameInformationUnsafe</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -146,6 +167,7 @@ Pointer to a caller-allocated variable that receives the address of a system-all
 </dl>An invalid value was passed for the <i>FileNameInformation</i> parameter. This is an error code. 
 
  
+
 
 ## -remarks
 The <b>FltGetFileNameInformationUnsafe</b> routine is provided so that you can query the name of a file object outside of the context of an I/O operation on that file object. In these cases, you must call <a href="ifsk.fltgetfilenameinformation">FltGetFileNameInformation</a>. 
@@ -166,11 +188,13 @@ In create, hard-link, and rename operations, file name tunneling can invalidate 
 
 For more information about normalized file name information, see <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -181,6 +205,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -191,6 +216,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -201,6 +227,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -211,9 +238,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -255,5 +284,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetFileNameInformationUnsafe routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

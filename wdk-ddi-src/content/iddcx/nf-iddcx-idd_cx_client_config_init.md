@@ -7,7 +7,7 @@ old-location: display\idd_cx_client_config_init.htm
 old-project: display
 ms.assetid: 0b2cf0d6-1d69-4917-9e97-f8f2563e6d3c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDD_CX_CLIENT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
                 
 
 
+
 ## -syntax
 
 ````
@@ -58,8 +59,10 @@ VOID IDD_CX_CLIENT_CONFIG_INIT(
 
 A pointer to the driver-allocated IDD_CX_CLIENT_CONFIG structure.
 
+
 ## -returns
 This method does not return a value.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ This method does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

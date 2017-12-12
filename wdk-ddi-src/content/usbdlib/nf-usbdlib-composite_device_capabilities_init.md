@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>COMPOSITE_DEVICE_CAPABILITIES_INIT</b> macro initializes the <a href="buses.composite_driver_capabilities">COMPOSITE_DEVICE_CAPABILITIES</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -58,8 +59,10 @@ void COMPOSITE_DEVICE_CAPABILITIES_INIT(
  A pointer to a caller-allocated <a href="buses.composite_driver_capabilities">COMPOSITE_DEVICE_CAPABILITIES</a> structure to be initialized. The macro sets the <b>CompositeDriverCapabilityFunctionSuspend</b>
 member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 0.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ This routine does not return a value.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -79,14 +83,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,9 +115,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -127,5 +137,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20COMPOSITE_DEVICE_CAPABILITIES_INIT routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

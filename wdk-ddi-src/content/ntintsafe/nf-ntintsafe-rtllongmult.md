@@ -7,7 +7,7 @@ old-location: kernel\rtllongmult.htm
 old-project: kernel
 ms.assetid: A95A88B6-066F-4489-B5C0-B012E831D7AD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlLongMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Multiplies one value of type <b>LONG</b> by another.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ NTSTATUS RtlLongMult(
 
 The value to be multiplied by <i>lMultiplier</i>.
 
+
 ### -param lMultiplier [in]
 
 The value by which to multiply <i>lMultiplicand</i>.
+
 
 ### -param plResult [out]
 
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
+
 ## -remarks
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

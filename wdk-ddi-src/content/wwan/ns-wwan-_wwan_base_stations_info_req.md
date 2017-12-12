@@ -7,7 +7,7 @@ old-location: netvista\wwan_base_stations_info_req.htm
 old-project: netvista
 ms.assetid: 1948F98B-1F0B-4EB3-A2FF-01DA159B5EEB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_BASE_STATIONS_INFO_REQ, *PWWAN_BASE_STATIONS_INFO_REQ, WWAN_BASE_STATIONS_INFO_REQ
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WWAN_BASE_STATIONS_INFO_REQ</b> structure represents the aspects of cellular base stations information that are requested in a base stations information query.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _WWAN_BASE_STATIONS_INFO_REQ {
 
 The maximum number of entries of GSM neighboring cells returned in the GSM network measurement reports of <a href="netvista.wwan_gsm_nmr">WWAN_GSM_NMR</a>.
 
+
 ### -field MaxUMTSCount
 
 The maximum number of entries of UMTS neighboring cells returned in the UMTS measured results list in <a href="netvista.wwan_umts_mrl">WWAN_UMTS_MRL</a>.
+
 
 ### -field MaxTDSCDMACount
 
 The maximum number of entries of TDSCDMA neighboring cells returned in the TDSCDMA measured results list in <a href="netvista.wwan_tdscdma_mrl">WWAN_TDSCDMA_MRL</a>.
 
+
 ### -field MaxLTECount
 
 The maximum number of entries of LTE neighboring cells returned in the LTE measured results list in <a href="netvista.wwan_lte_mrl">WWAN_LTE_MRL</a>.
 
+
 ### -field MaxCDMACount
 
 The maximum number of entries of CDMA cells returned in the CDMA measured results list in <a href="netvista.wwan_cdma_mrl">WWAN_CDMA_MRL</a>. This list includes both serving and neighboring cells.
+
 
 ## -remarks
 
@@ -85,14 +91,17 @@ The maximum number of entries of CDMA cells returned in the CDMA measured result
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +136,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_BASE_STATIONS_INFO_REQ structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_BASE_STATIONS_INFO_REQ structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

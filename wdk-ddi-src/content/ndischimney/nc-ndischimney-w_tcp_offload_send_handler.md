@@ -7,7 +7,7 @@ old-location: netvista\miniporttcpoffloadsend.htm
 old-project: netvista
 ms.assetid: 7c96412f-a866-4863-a06a-9eb6adb2a33b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,8 +39,10 @@ req.irql: Any level
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 NDIS calls the 
   <i>MiniportTcpOffloadSend</i> function to transmit data on an offloaded TCP connection.
+
 
 
 ## -prototype
@@ -69,12 +71,14 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param MiniportOffloadContext [in]
 
 A pointer to a memory location that contains a PVOID value. This PVOID value references the
      miniport offload context that contains the state object for the TCP connection on which the data is to
      be transmitted. The offload target supplied this PVOID value when it offloaded the TCP connection state
      object.
+
 
 ### -param NetBufferList [in]
 
@@ -87,11 +91,13 @@ A pointer to a
      transmitted. The NET_BUFFER_LIST and associated structures are locked so that they remain resident in
      physical memory. However, they are not mapped into system memory.
 
+
 ## -returns
 NDIS_STATUS_PENDING is the only return value that is allowed. An offload target always completes a
      send request asynchronously by calling 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">
      NdisTcpOffloadSendComplete</a>.
+
 
 ## -remarks
 An offload target must transmit data in first in, first out (FIFO) order. The order of the linked list
@@ -135,11 +141,13 @@ The offload target should (but is not required to) set the PSH bit on each NET_B
 
 The host stack will not request the offload target to send urgent data.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +158,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -173,5 +183,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_SEND_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_SEND_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

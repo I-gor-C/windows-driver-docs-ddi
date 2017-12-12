@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 1d74aec3-dbc5-4494-ba52-135e3f545c1b
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION, *PFILE_MEMORY_PARTITION_INFORMATION
+ms.keywords: _FILE_MEMORY_PARTITION_INFORMATION, *PFILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 Stores information about memory partition. This structure is used by the <b>ZwSetInformationFile</b> function.
+
 
 
 ## -syntax
@@ -65,6 +67,7 @@ typedef struct _FILE_MEMORY_PARTITION_INFORMATION {
 
 Handle to the specified partition.
 
+
 ### -field Flags
 
 
@@ -74,12 +77,14 @@ Handle to the specified partition.
 ### -field NoCrossPartitionAccess
 
 Determines whether cross-partition access is allowed.
+
 </dd>
 </dl>
 
 ### -field AllFlags
 
 Bitwise of all flags. 
+
 </dd>
 </dl>
 
@@ -91,22 +96,27 @@ Bitwise of all flags.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

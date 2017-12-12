@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_extended_features_funcs_0020.htm
 old-project: display
 ms.assetid: 36AAD6F2-3220-4F9A-AA10-BA8D87948D09
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_EXTENDED_FEATURES_FUNCS_0020, D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This structure contains device functions for extended features in  video.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3D12DDI_EXTENDED_FEATURES_FUNCS_0020 {
 
 A pointer for a callback function to get supported extended features.
 
+
 ### -field pfnGetSupportedExtendedFeatureVersions
 
 A pointer for a callback function to get the supported versions of extended features.
 
+
 ### -field pfnEnableExtendedFeature
 
 A pointer for a callback function to enable an extended feature.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A pointer for a callback function to enable an extended feature.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

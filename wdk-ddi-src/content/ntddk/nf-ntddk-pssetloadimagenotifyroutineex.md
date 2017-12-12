@@ -7,7 +7,7 @@ old-location: kernel\pssetloadimagenotifyroutineex.htm
 old-project: kernel
 ms.assetid: 792cdb59-e0c2-4697-9934-b7e45a7a31a8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsSetLoadImageNotifyRoutineEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PsSetLoadImageNotifyRoutineEx</b> routine registers a driver-supplied callback that is subsequently notified whenever an image is loaded (or mapped into memory).
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ The <b>PsSetLoadImageNotifyRoutineEx</b> routine registers a driver-supplied cal
 
 A pointer to the caller-implemented <a href="..\ntddk\nc-ntddk-pload_image_notify_routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a> callback routine for load-image notifications.
 
+
 ### -param Flags [in]
 
 Supplies a bitmask of flags that control the callback function. Here are the possible values:
+
 <ul>
 <li>PS_IMAGE_NOTIFY_CONFLICTING_ARCHITECTURE indicates that the callback routine should be invoked for all potentially executable images, including images that have a different architecture from the native architecture of the operating system.
 
@@ -79,6 +82,7 @@ Supplies a bitmask of flags that control the callback function. Here are the pos
 
  
 
+
 ## -remarks
 
 
@@ -87,22 +91,27 @@ Supplies a bitmask of flags that control the callback function. Here are the pos
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +122,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +133,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +144,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

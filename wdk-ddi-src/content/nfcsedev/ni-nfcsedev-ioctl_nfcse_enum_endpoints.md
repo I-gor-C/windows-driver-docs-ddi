@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: BDE62A2B-423E-4656-91CC-5EBDE50C6BB0
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
+ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,7 +41,10 @@ req.irql:
 
  Returns information regarding the list of all the secure elements attached to the NFC controller. Note that the caller must allocate an output buffer large enough to hold information regarding all the secure elements that were enumerated by the driver i.e. Total number of SEs Enumerated x Size of the SE endpoint info otherwise the driver should return a STATUS_BUFFER_OVERFLOW error code to the client with the NumberOfEndpoints field containing the number of secure elements enumerated. The GUID identifying the secure element which maybe used to refer to a particular secure element.
 
+
+
  Returns information regarding the list of all the secure elements attached to the NFC controller. Note that the caller must allocate an output buffer large enough to hold information regarding all the secure elements that were enumerated by the driver i.e. Total number of SEs Enumerated x Size of the SE endpoint info otherwise the driver should return a STATUS_BUFFER_OVERFLOW error code to the client with the NumberOfEndpoints field containing the number of secure elements enumerated. The GUID identifying the secure element which maybe used to refer to a particular secure element.
+
 
 
 ## -ioctlparameters
@@ -49,11 +52,14 @@ req.irql:
 ### -input-buffer
 None
 
+
 ### -input-buffer-length
 None
 
+
 ### -output-buffer
 An <a href="nfpdrivers._secure_element_endpoint_list"> SECURE_ELEMENT_ENDPOINT_LIST</a> for each device enumerated.
+
 
 ### -output-buffer-length
 
@@ -72,6 +78,7 @@ I/O Status block
 
  
 
+
 ## -remarks
 The following are requirements that the driver must adhere to.
 
@@ -85,11 +92,13 @@ The following are requirements that the driver must adhere to.
 </ul>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

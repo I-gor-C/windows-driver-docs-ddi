@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WINBIO_DATA structure specifies data in IOCTL payloads.
 
 
+
 ## -syntax
 
 ````
@@ -58,26 +59,32 @@ typedef struct _WINBIO_DATA {
 
 Specifies the size, in bytes, of the payload.
 
+
 ### -field Data
 
 Specifies an array that contains the payload. Frequently this member contains a structure of type <a href="biometric.winbio_bir">WINBIO_BIR</a>.
 
+
 ## -remarks
 The WINBIO_DATA structure associates a length, in bytes, with an arbitrary block of contiguous memory.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

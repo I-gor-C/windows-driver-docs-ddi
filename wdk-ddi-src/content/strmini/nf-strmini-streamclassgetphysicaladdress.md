@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StreamClassGetPhysicalAddress</b> routine translates a virtual memory address to a physical memory address and locks the corresponding physical memory for a DMA operation.
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,30 @@ STREAM_PHYSICAL_ADDRESS StreamClassGetPhysicalAddress(
 
 Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
+
 ### -param HwSRB [in, optional]
 
 Specifies a stream request block. This parameter is used only if the <i>Type</i> parameter has the value SRBDataBuffer, otherwise <i>HwSRB</i> should be <b>NULL</b>. This parameter is optional.  
+
 
 ### -param VirtualAddress [in]
 
 Specifies the virtual address to be translated.
 
+
 ### -param Type [in]
 
 Specifies the type of buffer pointed to by <i>VirtualAddress</i>. This value may be PerRequestExtension, DmaBuffer, or SRBDataBuffer.
+
 
 ### -param Length [out]
 
 Specifies the length, in bytes, of the buffer.
 
+
 ## -returns
 <b>StreamClassGetPhysicalAddress</b> returns the translated virtual address as a physical memory address.
+
 
 ## -remarks
 The type of buffer to be used is specified in the <i>Type</i> parameter. The meanings of these values are shown in the following table.
@@ -95,11 +102,13 @@ SRBDataBuffer
 
 Indicates the physical address of the data buffer.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -110,6 +119,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +130,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

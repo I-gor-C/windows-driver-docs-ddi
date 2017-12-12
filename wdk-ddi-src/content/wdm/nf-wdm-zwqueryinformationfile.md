@@ -7,7 +7,7 @@ old-location: kernel\zwqueryinformationfile.htm
 old-project: kernel
 ms.assetid: 007df07e-685b-4224-b9d6-55e87cf0bd5c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwQueryInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ZwQueryInformationFile</b> routine returns various kinds of information about a file object.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ NTSTATUS ZwQueryInformationFile(
 
 Handle to a file object. The handle is created by a successful call to <a href="kernel.zwcreatefile">ZwCreateFile</a> or <a href="kernel.zwopenfile">ZwOpenFile</a>.
 
+
 ### -param IoStatusBlock [out]
 
 Pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. The <b>Information</b> member receives the number of bytes that this routine actually writes to the <i>FileInformation</i> buffer.
+
 
 ### -param FileInformation [out]
 
 Pointer to a caller-allocated buffer into which the routine writes the requested information about the file object. The <i>FileInformationClass</i> parameter specifies the type of information that the caller requests.
 
+
 ### -param Length [in]
 
 The size, in bytes, of the buffer pointed to by <i>FileInformation</i>.
 
+
 ### -param FileInformationClass [in]
 
 Specifies the type of information to be returned about the file, in the buffer that <i>FileInformation</i> points to. Device and intermediate drivers can specify any of the following <a href="ifsk.file_information_class">FILE_INFORMATION_CLASS</a> values.
+
 <table>
 <tr>
 <th>FILE_INFORMATION_CLASS value</th>
@@ -84,121 +90,152 @@ Specifies the type of information to be returned about the file, in the buffer t
 <tr>
 <td>
 <b>FileAccessInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_access_information">FILE_ACCESS_INFORMATION</a> structure. This structure contains an access mask. For more information about access masks, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileAlignmentInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_alignment_information">FILE_ALIGNMENT_INFORMATION</a> structure. The caller can query this information as long as the file is open, without any particular requirements for <i>DesiredAccess</i>. This information is useful if the file was opened with the FILE_NO_INTERMEDIATE_BUFFERING flag specified in the <i>CreateOptions</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileAllInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_all_information">FILE_ALL_INFORMATION</a> structure. By combining several file-information structures into a single structure, <b>FILE_ALL_INFORMATION</b> reduces the number of queries required to obtain information about a file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileAttributeTagInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_attribute_tag_information">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure. The caller must have opened the file with the FILE_READ_ATTRIBUTES flag specified in the <i>DesiredAccess</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileBasicInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a> structure. The caller must have opened the file with the FILE_READ_ATTRIBUTES flag specified in the <i>DesiredAccess</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileEaInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_ea_information">FILE_EA_INFORMATION</a> structure. This structure specifies the size of the extended attributes block that is associated with the file.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileInternalInformation</b>
+
 </td>
 <td>
 A <a href="ifsk.file_internal_information">FILE_INTERNAL_INFORMATION</a> structure. This structure specifies a 64-bit file ID that uniquely identifies a file in NTFS. On other file systems, this file ID is not guaranteed to be unique.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileIoPriorityHintInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_io_priority_hint_information">FILE_IO_PRIORITY_HINT_INFORMATION</a> structure. The caller must have opened the file with the FILE_READ_DATA flag specified in the <i>DesiredAccess</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileModeInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_mode_information">FILE_MODE_INFORMATION</a> structure. This structure contains a set of flags that specify the mode in which the file can be accessed. These flags are a subset of the options that can be specified in the <i>CreateOptions</i> parameter of the <a href="kernel.iocreatefile">IoCreateFile</a> routine.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileNameInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_name_information">FILE_NAME_INFORMATION</a> structure. The structure can contain the file's full path or only a portion of it. The caller can query this information as long as the file is open, without any particular requirements for <i>DesiredAccess</i>.
+
 For more information about the file-name syntax, see the Remarks section later in this topic.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileNetworkOpenInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_network_open_information">FILE_NETWORK_OPEN_INFORMATION</a> structure. The caller must have opened the file with the FILE_READ_ATTRIBUTES flag specified in the <i>DesiredAccess</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FilePositionInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> structure. The caller must have opened the file with the <i>DesiredAccess</i> FILE_READ_DATA or FILE_WRITE_DATA flag specified in the <i>DesiredAccess</i> parameter, and with the FILE_SYNCHRONOUS_IO_ALERT or FILE_SYNCHRONOUS_IO_NONALERT flag specified in the <i>CreateOptions </i>parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileStandardInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_standard_information">FILE_STANDARD_INFORMATION</a> structure. The caller can query this information as long as the file is open, without any particular requirements for <i>DesiredAccess</i>.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileIsRemoteDeviceInformation</b>
+
 </td>
 <td>
 A <a href="kernel.file_is_remote_device_information">FILE_IS_REMOTE_DEVICE_INFORMATION</a> structure. The caller can query this information as  long as the file is open, without any particular requirements for <i>DesiredAccess</i>.                         
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>ZwQueryInformationFile </b>returns STATUS_SUCCESS or an appropriate NTSTATUS error code.
+
 
 ## -remarks
 <b>ZwQueryInformationFile</b> returns information about the specified file object. Note that it returns zero in any member of a <b>FILE_<i>XXX</i>_INFORMATION</b> structure that is not supported by a particular device or file system.
@@ -223,11 +260,13 @@ Callers of <b>ZwQueryInformationFile</b> must be running at IRQL = PASSIVE_LEVEL
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -238,14 +277,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -256,6 +298,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -266,6 +309,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -276,14 +320,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -346,5 +393,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationFile routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationFile routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

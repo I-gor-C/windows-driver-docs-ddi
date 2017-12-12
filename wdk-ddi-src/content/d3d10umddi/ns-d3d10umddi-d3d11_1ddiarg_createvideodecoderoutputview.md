@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddiarg_createvideodecoderoutputview.htm
 old-project: display
 ms.assetid: 6DD555B1-01E8-48DE-B957-2752671B7EBB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW, D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes the video decoder's output-view state.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW {
 
 A handle to the video decoder output resource.
 
+
 ### -field DecodeProfile
 
 The decode profile to be used in conjunction with the encryption.
+
 
 ### -field MipSlice
 
 The identifier of the MIP-map slice.
 
+
 ### -field FirstArraySlice
 
 The identifier of the first array slice.
 
+
 ### -field ArraySize
 
 The number of array slices for the texture.
+
 
 ## -remarks
 
@@ -84,22 +90,27 @@ The number of array slices for the texture.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The WIAS_LERROR macro is obsolete for Windows Vista and later. It is recommended that the <a href="image.wias_error">WIAS_ERROR</a> macro be used instead.
+
 The WIAS_LERROR macro writes a diagnostic WIA_ERROR message to the log file.
+
 
 
 ## -syntax
@@ -60,24 +62,29 @@ WIAS_LERROR( WIAS_LERROR(
 
 Pointer to an <a href="image.iwialog_interface">IWiaLog Interface</a>.
 
+
 ### -param lResId 
 
 Specifies the resource ID. This value should be set to WIALOG_NO_RESOURCE_ID.
 
+
 ### -param format_string, ... 
 
 Specifies a variable argument list, which starts with an ANSI format string that describes the message and any format identifiers. The ellipsis (...) specifies a variable number of arguments that need to be output. The error text should be prefixed with the full name of the method or function and generate the message in the format of "class::method, error-text".
+
 
 ## -remarks
 The following is an example of how the macro can be used:
 
 The WIAS_LERROR macro is not recommended for Windows Vista, because it does not record its output to the <i>Wiatrace.log </i>diagnostic log file. It is recommended that the <a href="image.wias_error">WIAS_ERROR</a> macro be used instead. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,14 +95,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_ERROR instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,5 +131,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_LERROR macro%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

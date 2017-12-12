@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsPinFactory</b> interface provides a method that retrieves the identifier of a pin factory.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsPinFactory</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IKsPinFactory</b> also has these types of members:
 
@@ -58,6 +59,7 @@ Retrieves the identifier of a pin factory.
 
  
 
+
 ## -members
 The <b>IKsPinFactory</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -71,20 +73,24 @@ The <b>IKsPinFactory</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Retrieves the identifier of a pin factory.
+
 </td>
 </tr>
 </table>Retrieves the identifier of a pin factory.
 
  
 
+
 ## -remarks
 The IID for this interface is IID_IKsPinFactory.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +101,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

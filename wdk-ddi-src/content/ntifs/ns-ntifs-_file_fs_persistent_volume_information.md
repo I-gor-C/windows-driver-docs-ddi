@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f1c7785e-e135-4060-8cf7-5c985b37ff83
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FILE_FS_PERSISTENT_VOLUME_INFORMATION, *PFILE_FS_PERSISTENT_VOLUME_INFORMATION, FILE_FS_PERSISTENT_VOLUME_INFORMATION
+ms.keywords: _FILE_FS_PERSISTENT_VOLUME_INFORMATION, FILE_FS_PERSISTENT_VOLUME_INFORMATION, *PFILE_FS_PERSISTENT_VOLUME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>FILE_FS_PERSISTENT_VOLUME_INFORMATION</b> structure is used to control persistent settings for a file system volume. Persistent settings persist on a file system volume between reboots of the computer. 
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 ### -field VolumeFlags
 
 The persistent state settings for a file system volume. This value is a bitwise OR combination of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -71,6 +73,7 @@ The persistent state settings for a file system volume. This value is a bitwise 
 </td>
 <td width="60%">
 A 0 for this bit indicates that the creation of 8.3 short names is enabled, and a 1 indicates that short name creation is disabled. 8.3 short file names have at most eight characters, followed by a period "." and a file name extension of at most three characters.
+
 </td>
 </tr>
 <tr>
@@ -81,7 +84,9 @@ A 0 for this bit indicates that the creation of 8.3 short names is enabled, and 
 </td>
 <td width="60%">
 When set, this flag indicates that the volume scrub is disabled for the volume.
+
 This flag is valid starting with Windows 8.
+
 </td>
 </tr>
 <tr>
@@ -92,7 +97,9 @@ This flag is valid starting with Windows 8.
 </td>
 <td width="60%">
 Global no seek penalty is enabled for a tiered volume.
+
 This flag is valid starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
@@ -103,7 +110,9 @@ This flag is valid starting with Windows 8.1.
 </td>
 <td width="60%">
 Local no seek penalty is enabled for a tiered volume.
+
 This flag is valid starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
@@ -114,7 +123,9 @@ This flag is valid starting with Windows 8.1.
 </td>
 <td width="60%">
 When set, heat gathering is not enabled for the tiered volume.
+
 This flag is valid starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
@@ -125,7 +136,9 @@ This flag is valid starting with Windows 8.1.
 </td>
 <td width="60%">
 Indicates that this volume is backing the system volume with files  from a Windows Image Format (WIM) file.
+
 This flag is valid starting with Windows 8.1 Update.
+
 </td>
 </tr>
 <tr>
@@ -136,23 +149,29 @@ This flag is valid starting with Windows 8.1 Update.
 </td>
 <td width="60%">
 Indicates that this volume is dependent on another volume to provide system critical boot files. The other  volume contains a WIM file that backs the files on this volume. This flag is read only.
+
 This flag is valid starting with Windows 8.1 Update.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field FlagMask
 
 A mask value for the valid flags that can appear in <b>VolumeFlags</b>. This is a bitwise OR combination of the desired flags described for <b>VolumeFlags</b>.
+
 
 ### -field Version
 
 The version number of this structure. Set to 1.
 
+
 ### -field Reserved
 
 Reserved. Set to 0;
+
 
 ## -remarks
 The <b>FILE_FS_PERSISTENT_VOLUME_INFORMATION</b> structure is used with the <a href="ifsk.fsctl_set_persistent_volume_state">FSCTL_SET_PERSISTENT_VOLUME_STATE</a> and <a href="ifsk.fsctl_query_persistent_volume_state">FSCTL_QUERY_PERSISTENT_VOLUME_STATE</a> control codes.
@@ -163,19 +182,23 @@ When setting or clearing the persistent volume state flags, using <a href="ifsk.
 
 The <b>Version</b> member must be set to the current version of 1 for both a query and  a set  request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -195,5 +218,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_PERSISTENT_VOLUME_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

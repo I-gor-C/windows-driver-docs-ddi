@@ -7,7 +7,7 @@ old-location: netvista\ndismcmcreatevc.htm
 old-project: netvista
 ms.assetid: b1d9ce90-9926-4ff8-a5bb-54c1a88d84dc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMCmCreateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql: <= DISPATCH_LEVEL
   offer to a client.
 
 
+
 ## -syntax
 
 ````
@@ -61,11 +62,13 @@ NDIS_STATUS NdisMCmCreateVc(
 Specifies the NDIS-supplied handle originally input to 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
 
+
 ### -param NdisAfHandle [in]
 
 Specifies the handle that identifies the client that is the target of an incoming call. The MCM
      driver obtained this handle as an input parameter to its 
      <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
+
 
 ### -param MiniportVcContext [in]
 
@@ -74,6 +77,7 @@ Specifies the handle to a caller-supplied resident context area in which the MCM
      this VC if the call to 
      <b>NdisMCmCreateVc</b> succeeds.
 
+
 ### -param NdisVcHandle [out]
 
 Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> before 
@@ -81,6 +85,7 @@ Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> be
      NDIS-supplied handle for the newly created VC. The caller must save this handle for subsequent calls to
      connection-oriented 
      <b>Ndis<i>Xxx</i></b> functions concerning this VC.
+
 
 ## -returns
 <b>NdisMCmCreateVc</b> can return one of the following:
@@ -102,6 +107,7 @@ Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> be
        the MCM driver.
 
  
+
 
 ## -remarks
 An MCM driver creates a VC with 
@@ -141,11 +147,13 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
     protocol drivers, call 
     <b>NdisCoCreateVc</b> instead.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +164,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -163,11 +172,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisMCmCreateVc (NDIS 5.1)</b>) in
    Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -178,6 +189,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -188,14 +200,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
@@ -232,5 +247,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmCreateVc function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmCreateVc function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

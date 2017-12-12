@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -42,6 +42,7 @@ Profile drivers implement an enhanced L2CAP callback function to provide the Blu
   mechanism to notify the profile driver about any changes to the status of a currently open L2CAP or eL2CAP connection.
 
 
+
 ## -prototype
 
 ````
@@ -65,11 +66,13 @@ For
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
      <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_enhanced_channel.md">_BRB_L2CA_OPEN_ENHANCED_CHANNEL</a> structure.
 
+
 ### -param Indication [in]
 
 An 
      <a href="bltooth.indication_code">INDICATION_CODE</a> value that indicates the type
      of L2CAP event.
+
 
 ### -param Parameters [in]
 
@@ -77,8 +80,10 @@ An
      <a href="bltooth.indication_parameters_enhanced">INDICATION_PARAMETERS_ENHANCED</a> structure that
      contains event-specific parameters.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A profile driver registers its L2CAP or eL2CAP callback function by specifying the callback function in the 
@@ -99,11 +104,13 @@ The
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS_ENHANCED union member that
     corresponds to the event and contains event-specific parameters.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,14 +121,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

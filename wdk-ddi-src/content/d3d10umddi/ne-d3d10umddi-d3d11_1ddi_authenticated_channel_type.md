@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_authenticated_channel_type.htm
 old-project: display
 ms.assetid: da04ef5d-c3e4-4321-8cc8-e20763c5a7db
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the type of Microsoft Direct3D authenticated channel.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE {
 
 Software driver channel. This channel provides communication with a driver that implements content protection mechanisms in software.
 
+
 ### -field D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE
 
 Hardware driver channel. This channel provides communication with a driver that implements content protection mechanisms in the GPU hardware.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Hardware driver channel. This channel provides communication with a driver that 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

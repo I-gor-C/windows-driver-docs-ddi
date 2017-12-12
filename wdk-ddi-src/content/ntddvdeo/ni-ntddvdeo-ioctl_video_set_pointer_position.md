@@ -7,7 +7,7 @@ old-location: display\ioctl_video_set_pointer_position.htm
 old-project: display
 ms.assetid: de581a49-da6d-410b-82be-28cc1eccfde4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,10 @@ req.irql:
 
 Sets the pointer position. Support for this modal request is optional. A supporting miniport driver should have already processed an enable-pointer request before processing this request.
 
+
+
 Sets the pointer position. Support for this modal request is optional. A supporting miniport driver should have already processed an enable-pointer request before processing this request.
+
 
 
 ## -ioctlparameters
@@ -49,12 +52,14 @@ Sets the pointer position. Support for this modal request is optional. A support
 ### -input-buffer
 The VRP <b>InputBuffer</b> contains the VIDEO_POINTER_POSITION structure to be set.
 
+
 ### -input-buffer-length
 
 <text></text>
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -72,6 +77,7 @@ None
 I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="display.status_block">STATUS_BLOCK</a> structure.
 
+
 ## -remarks
 
 
@@ -80,6 +86,7 @@ The miniport driver does not set the <b>Information</b> member of the <a href="d
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

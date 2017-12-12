@@ -40,10 +40,13 @@ req.irql: PASSIVE_LEVEL
 ## -description
 An interface implemented by ports to provide
  notification helpers to miniports to support audio module communication.
+
 For more information about audio modules, 
  see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>. 
  
+
 The miniport audio driver will call into their port to create and send the notification.  
+
 
 
 ## -inheritance
@@ -59,6 +62,7 @@ Sends a notification to the listening UWP apps, to allow for communications betw
 
  
 
+
 ## -members
 The <b>IPortClsNotifications</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -72,6 +76,7 @@ The <b>IPortClsNotifications</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -80,6 +85,7 @@ Allocates a buffer of the specified size, in the specified memory pool, for use 
 </td>
 <td align="left" width="63%">
 Frees a previously allocated IPortClsNotifications buffer. The buffer is used in sending notifications, to allow for communications between audio modules and UWP apps. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -88,6 +94,7 @@ Frees a previously allocated IPortClsNotifications buffer. The buffer is used in
 </td>
 <td align="left" width="63%">
 Sends a notification to the listening UWP apps, to allow for communications between audio modules and UWP apps. 
+
 </td>
 </tr>
 </table>Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps. 
@@ -98,6 +105,7 @@ Sends a notification to the listening UWP apps, to allow for communications betw
 
  
 
+
 ## -remarks
 
 
@@ -106,14 +114,17 @@ Sends a notification to the listening UWP apps, to allow for communications betw
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10, version 1703 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,13 +7,13 @@ old-location: display\dxgkddipresent.htm
 old-project: display
 ms.assetid: 1a46b129-1e78-44e6-a609-59eab206692b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
 req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
+req.include-header: 
 req.target-type: Desktop
 req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
 req.target-min-winversvr: 
@@ -41,10 +41,11 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdiPresent</i> function copies content from source allocations to a primary surface (and sometimes to off-screen system memory allocations).
 
 
+
 ## -prototype
 
 ````
-PDXGKDDI_PRESENT DxgkDdiPresent;
+DXGKDDI_PRESENT DxgkDdiPresent;
 
 NTSTATUS APIENTRY DxgkDdiPresent(
   _In_    const HANDLE          hContext,
@@ -59,11 +60,14 @@ NTSTATUS APIENTRY DxgkDdiPresent(
 ### -param hContext [in]
 
 [in] A handle to the device context for the copy information. The display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function previously returned this handle in the <b>hContext</b> member of the <a href="display.dxgkarg_createcontext">DXGKARG_CREATECONTEXT</a> structure that the <i>pCreateContext</i> parameter of <i>DxgkDdiCreateContext </i>points to. 
+
 If the driver does not support context creation, the Microsoft DirectX graphics kernel subsystem replaces the handle to the context with a handle to the device. The display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function previously returned the device handle in the <b>hDevice</b> member of the <a href="display.dxgkarg_createdevice">DXGKARG_CREATEDEVICE</a> structure that the <i>pCreateDevice</i> parameter of <i>DxgkDdiCreateDevice </i>points to. 
+
 
 ### -param pPresent [in, out]
 
 [in/out] A pointer to a <a href="display.dxgkarg_present">DXGKARG_PRESENT</a> structure that contains information about the copy operation.
+
 
 ## -returns
 <i>DxgkDdiPresent</i> returns one of the following values:
@@ -94,6 +98,7 @@ If the driver does not support context creation, the Microsoft DirectX graphics 
 
  
 
+
 ## -remarks
 The DirectX graphics kernel subsystem calls the display miniport driver's <i>DxgkDdiPresent</i> function to copy content from source allocations typically to the primary surface. (This function can also copy content to an off-screen system memory allocation.) Because a primary surface is loosely defined, <i>DxgkDdiPresent</i> can be implemented for the following scenarios: 
 
@@ -123,11 +128,13 @@ If the display miniport driver previously indicated, in a call to its <a href=".
 
 <i>DxgkDdiPresent</i> should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -138,27 +145,32 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
+<dt>D3dkmddi.h</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -204,5 +216,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDXGKDDI_PRESENT callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_PRESENT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

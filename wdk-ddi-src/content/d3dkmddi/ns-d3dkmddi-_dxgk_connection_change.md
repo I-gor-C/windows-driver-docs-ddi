@@ -7,8 +7,8 @@ old-location: display\dxgk_connection_change.htm
 old-project: display
 ms.assetid: 0B0D640C-3E4B-4DE0-AA11-C751F210C77A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DXGK_CONNECTION_CHANGE, *PDXGK_CONNECTION_CHANGE, DXGK_CONNECTION_CHANGE
+ms.date: 12/8/2017
+ms.keywords: _DXGK_CONNECTION_CHANGE, DXGK_CONNECTION_CHANGE, *PDXGK_CONNECTION_CHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 Structure to describe the most recently updated status of the link for a target.
+
 
 
 ## -syntax
@@ -72,17 +73,21 @@ typedef struct _DXGK_CONNECTION_CHANGE {
 
 The per target unique id for the transition being reported.  This value must be unique across all targets on the adapter and must be monotonically increasing for each change reported.
 
+
 ### -field TargetId
 
 The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.
+
 
 ### -field ConnectionStatus
 
 The status of the connection.
 
+
 ### -field Reserved
 
 This value is reserved for system use.
+
 
 ### -field MonitorConnect
 
@@ -90,6 +95,7 @@ This value is reserved for system use.
 ### -field MonitorConnect.LinkTargetType
 
 This is the video output technology of the monitor which has been connected.  Internal and Miracast are not allowed so only the following values are allowed:
+
 <dl>
 <dd>D3DKMDT_VOT_OTHER</dd>
 <dd>D3DKMDT_VOT_HD15</dd>
@@ -114,9 +120,11 @@ This is the video output technology of the monitor which has been connected.  In
 
 This is the video output technology of connector of the new target.  As with MonitorConnect.LinkTargetType,  Internal and Miracast are not allowed so the same target types as listed above are allowed.
 
+
 ### -field TargetConnect.NewTargetId
 
 The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.  
+
 </dd>
 </dl>
 
@@ -126,12 +134,14 @@ The target id for which the change is being reported.  This target id must have 
 ### -field TargetJoin.BaseTargetType
 
 This is the video output technology of the connector of the new target.  As with MonitorConnect.LinkTargetType,  Internal and Miracast are not allowed so the same target types as listed above are allowed.  
+
 <div class="alert"><b>Note</b>  The same BaseTargetType must be reported for all targets which are being joined to each other.</div>
 <div> </div>
 
 ### -field TargetJoin.NewTargetId
 
 The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.  
+
 </dd>
 </dl>
 
@@ -143,6 +153,7 @@ The target id for which the change is being reported.  This target id must have 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

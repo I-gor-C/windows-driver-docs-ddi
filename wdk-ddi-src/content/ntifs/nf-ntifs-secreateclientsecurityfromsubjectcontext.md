@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>SeCreateClientSecurityFromSubjectContext</b> routine retrieves the access token for a security subject context and uses the result to initialize a security client context with the information needed to call <b>SeImpersonateClientEx</b>.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS SeCreateClientSecurityFromSubjectContext(
 
 Pointer to the security subject context of the client to be impersonated.
 
+
 ### -param ClientSecurityQos [in]
 
 Pointer to a caller-allocated SECURITY_QUALITY_OF_SERVICE structure indicating what form of impersonation is to be performed.
+
 
 ### -param ServerIsRemote [in]
 
 Set to <b>TRUE</b> if the server of the client's request is remote.
 
+
 ### -param ClientContext [out]
 
 Pointer to a caller-allocated SECURITY_CLIENT_CONTEXT structure to be initialized.
+
 
 ## -returns
 <dl>
@@ -85,6 +90,7 @@ The client's effective token cannot be passed on for use by another server, beca
 
  
 
+
 ## -remarks
 <b>SeCreateClientSecurityFromSubjectContext</b> initializes a client security context block to represent a client's security context.
 
@@ -94,11 +100,13 @@ Each call to <b>SeCreateClientSecurityFromSubjectContext</b> must be matched by 
 
 For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -109,14 +117,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows 2000 and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +138,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -137,6 +149,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -147,9 +160,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -167,5 +182,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeCreateClientSecurityFromSubjectContext routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_registertrimnotification.htm
 old-project: display
 ms.assetid: CA5BC76B-539E-4FFF-8E02-C475D18588F6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_REGISTERTRIMNOTIFICATION, D3DKMT_REGISTERTRIMNOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -62,21 +63,26 @@ typedef struct _D3DKMT_REGISTERTRIMNOTIFICATION {
 
 [in] Luid of the adapter which the device created.
 
+
 ### -field hDevice
 
 [in] Device to trim the residency list for.
+
 
 ### -field Callback
 
 [in] Pointer to the callback function.
 
+
 ### -field Context
 
 [in] Caller-supplied context for callback.
 
+
 ### -field Handle
 
 [out] Handle that will be used to unregister the callback with <a href="display.d3dkmtunregistertrimnotification">D3DKMTUnregisterTrimNotification</a>.
+
 
 ## -remarks
 
@@ -86,22 +92,27 @@ typedef struct _D3DKMT_REGISTERTRIMNOTIFICATION {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,5 +132,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_REGISTERTRIMNOTIFICATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_REGISTERTRIMNOTIFICATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

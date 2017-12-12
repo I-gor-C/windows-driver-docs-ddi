@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Storport.h header
 
+## -description
 
 This header is used by Storage. For more information, see
 - [Storage](../_storage/index.md)
@@ -106,31 +111,17 @@ Storport.h contain these programming interfaces:
 | [StorPortQuerySystemTime function](nf-storport-storportquerysystemtime.md) | The StoriPortQuerySystemTime routine obtains the current system time. |
 | [StorPortQueueWorkItem function](nf-storport-storportqueueworkitem.md) | Schedules a Storport work item to execute within the context of a system worker thread. |
 | [StorPortReadPortBufferUchar function](nf-storport-storportreadportbufferuchar.md) | The StorPortReadPortBufferUchar routine reads a value from a specified port address |
-| [StorPortReadPortBufferUchar function](nf-storport-storportreadportbufferuchar~r1.md) | The StorPortReadPortBufferUchar routine reads a value from a specified port address |
 | [StorPortReadPortBufferUlong function](nf-storport-storportreadportbufferulong.md) | The StorPortReadPortBufferUlong routine reads a value from a specified port address. |
-| [StorPortReadPortBufferUlong function](nf-storport-storportreadportbufferulong~r1.md) | The StorPortReadPortBufferUlong routine reads a value from a specified port address. |
 | [StorPortReadPortBufferUshort function](nf-storport-storportreadportbufferushort.md) | The StorPortReadPortBufferUshort routine reads a value from a specified port address. |
-| [StorPortReadPortBufferUshort function](nf-storport-storportreadportbufferushort~r1.md) | The StorPortReadPortBufferUshort routine reads a value from a specified port address. |
 | [StorPortReadPortUchar function](nf-storport-storportreadportuchar.md) | The StorPortReadPortUchar routine reads a value from a specified port address |
-| [StorPortReadPortUchar function](nf-storport-storportreadportuchar~r1.md) | The StorPortReadPortUchar routine reads a value from a specified port address |
 | [StorPortReadPortUlong function](nf-storport-storportreadportulong.md) | The StorPortReadPortUlong routine reads a value from a specified port address. |
-| [StorPortReadPortUlong function](nf-storport-storportreadportulong~r1.md) | The StorPortReadPortUlong routine reads a value from a specified port address. |
 | [StorPortReadPortUshort function](nf-storport-storportreadportushort.md) | The StorPortReadPortUshort routine reads a value from a specified port address. |
-| [StorPortReadPortUshort function](nf-storport-storportreadportushort~r1.md) | The StorPortReadPortUshort routine reads a value from a specified port address. |
 | [StorPortReadRegisterBufferUchar function](nf-storport-storportreadregisterbufferuchar.md) | The StorPortReadRegisterBufferUchar routine reads a value from a specified register address. |
-| [StorPortReadRegisterBufferUchar function](nf-storport-storportreadregisterbufferuchar~r1.md) | The StorPortReadRegisterBufferUchar routine reads a value from a specified register address. |
 | [StorPortReadRegisterBufferUlong function](nf-storport-storportreadregisterbufferulong.md) | The StorPortReadRegisterBufferUlong routine reads a value from a specified register address. |
-| [StorPortReadRegisterBufferUlong function](nf-storport-storportreadregisterbufferulong~r1.md) | The StorPortReadRegisterBufferUlong routine reads a value from a specified register address. |
-| [StorPortReadRegisterBufferUlong64 function](nf-storport-storportreadregisterbufferulong64.md) | This StorPortReadRegisterBufferUlong64 routine reads a number of ULONG64 values from the specified 64-bit register address into a buffer. |
 | [StorPortReadRegisterBufferUshort function](nf-storport-storportreadregisterbufferushort.md) | The StorPortReadRegisterBufferUshort routine reads a value from a specified register address. |
-| [StorPortReadRegisterBufferUshort function](nf-storport-storportreadregisterbufferushort~r1.md) | The StorPortReadRegisterBufferUshort routine reads a value from a specified register address. |
 | [StorPortReadRegisterUchar function](nf-storport-storportreadregisteruchar.md) | The StorPortReadRegisterUchar routine reads a value from a specified register address. |
-| [StorPortReadRegisterUchar function](nf-storport-storportreadregisteruchar~r1.md) | The StorPortReadRegisterUchar routine reads a value from a specified register address. |
 | [StorPortReadRegisterUlong function](nf-storport-storportreadregisterulong.md) | The StorPortReadRegisterUlong routine reads a value from a specified register address. |
-| [StorPortReadRegisterUlong function](nf-storport-storportreadregisterulong~r1.md) | The StorPortReadRegisterUlong routine reads a value from a specified register address. |
-| [StorPortReadRegisterUlong64 function](nf-storport-storportreadregisterulong64.md) | The StorPortReadRegisterUlong64 routine reads a 64-bit value from a specified 64-bit register address. |
 | [StorPortReadRegisterUshort function](nf-storport-storportreadregisterushort.md) | The StorPortReadRegisterUshort routine reads a value from a specified register address. |
-| [StorPortReadRegisterUshort function](nf-storport-storportreadregisterushort~r1.md) | The StorPortReadRegisterUshort routine reads a value from a specified register address. |
 | [StorPortReady function](nf-storport-storportready.md) | The StorPortReady routine notifies the port driver that the adapter is no longer busy. |
 | [StorPortRegistryRead function](nf-storport-storportregistryread.md) | The StorPortRegistryRead routine reads the registry data for the indicated device and value. |
 | [StorPortRegistryReadAdapterKey function](nf-storport-storportregistryreadadapterkey.md) | The StorPortRegistryReadAdapterKey routine is called by the miniport driver to read the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... |
@@ -152,121 +143,107 @@ Storport.h contain these programming interfaces:
 | [StorPortUpdateAdapterMaxIO function](nf-storport-storportupdateadaptermaxio.md) | This function can be called by a miniport to update the maximum IO's supported by an adapter. This function is valid during HwInitialize/HwPassiveInitRoutine callback and has effect only during adapter initialization. |
 | [StorPortValidateRange function](nf-storport-storportvalidaterange.md) | The StorPortValidateRange routine determines whether a specified range of I/O addresses is in use by another adapter. This routine is obsolete in Windows NT 4.0 and later operating systems. |
 | [StorPortWritePortBufferUchar function](nf-storport-storportwriteportbufferuchar.md) | The StorPortWritePortBufferUchar routine writes a value to a specified register address. |
-| [StorPortWritePortBufferUchar function](nf-storport-storportwriteportbufferuchar~r1.md) | The StorPortWritePortBufferUchar routine writes a value to a specified register address. |
 | [StorPortWritePortBufferUlong function](nf-storport-storportwriteportbufferulong.md) | The StorPortWritePortBufferUlong routine writes a value to a specified register address. |
-| [StorPortWritePortBufferUlong function](nf-storport-storportwriteportbufferulong~r1.md) | The StorPortWritePortBufferUlong routine writes a value to a specified register address. |
 | [StorPortWritePortBufferUshort function](nf-storport-storportwriteportbufferushort.md) | The StorPortWritePortBufferUshort routine writes a value to a specified register address. |
-| [StorPortWritePortBufferUshort function](nf-storport-storportwriteportbufferushort~r1.md) | The StorPortWritePortBufferUshort routine writes a value to a specified register address. |
 | [StorPortWritePortUchar function](nf-storport-storportwriteportuchar.md) | The StorPortWritePortUchar routine writes a value to a specified register address. |
-| [StorPortWritePortUchar function](nf-storport-storportwriteportuchar~r1.md) | The StorPortWritePortUchar routine writes a value to a specified register address. |
 | [StorPortWritePortUlong function](nf-storport-storportwriteportulong.md) | The StorPortWritePortUlong routine writes a value to a specified register address. |
-| [StorPortWritePortUlong function](nf-storport-storportwriteportulong~r1.md) | The StorPortWritePortUlong routine writes a value to a specified register address. |
 | [StorPortWritePortUshort function](nf-storport-storportwriteportushort.md) | The StorPortWritePortUshort routine writes a value to a specified register address. |
-| [StorPortWritePortUshort function](nf-storport-storportwriteportushort~r1.md) | The StorPortWritePortUshort routine writes a value to a specified register address. |
 | [StorPortWriteRegisterBufferUchar function](nf-storport-storportwriteregisterbufferuchar.md) | The StorPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA. |
-| [StorPortWriteRegisterBufferUchar function](nf-storport-storportwriteregisterbufferuchar~r1.md) | The StorPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA. |
 | [StorPortWriteRegisterBufferUlong function](nf-storport-storportwriteregisterbufferulong.md) | The StorPortWriteRegisterBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA. |
-| [StorPortWriteRegisterBufferUlong function](nf-storport-storportwriteregisterbufferulong~r1.md) | The StorPortWriteRegisterBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA. |
-| [StorPortWriteRegisterBufferUlong64 function](nf-storport-storportwriteregisterbufferulong64.md) | This StorPortWriteRegisterBufferUlong64 routine writes a number of ULONG64 values from a the specified 64-bit register address. |
 | [StorPortWriteRegisterBufferUshort function](nf-storport-storportwriteregisterbufferushort.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA. |
-| [StorPortWriteRegisterBufferUshort function](nf-storport-storportwriteregisterbufferushort~r1.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA. |
 | [StorPortWriteRegisterUchar function](nf-storport-storportwriteregisteruchar.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of character values from a buffer to the indicated HBA register address. |
-| [StorPortWriteRegisterUchar function](nf-storport-storportwriteregisteruchar~r1.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of character values from a buffer to the indicated HBA register address. |
 | [StorPortWriteRegisterUlong function](nf-storport-storportwriteregisterulong.md) | The StorPortWriteRegisterUlong routine transfers a ULONG value to the indicated HBA register address. |
-| [StorPortWriteRegisterUlong function](nf-storport-storportwriteregisterulong~r1.md) | The StorPortWriteRegisterUlong routine transfers a ULONG value to the indicated HBA register address. |
-| [StorPortWriteRegisterUlong64 function](nf-storport-storportwriteregisterulong64.md) | This StorPortWriteRegisterUlong64 routine writes a ULONG64 value to the specified register address. |
 | [StorPortWriteRegisterUshort function](nf-storport-storportwriteregisterushort.md) | The StorPortWriteRegisterUshort routine transfers a ULONG value to the indicated HBA register address. |
-| [StorPortWriteRegisterUshort function](nf-storport-storportwriteregisterushort~r1.md) | The StorPortWriteRegisterUshort routine transfers a ULONG value to the indicated HBA register address. |
 
 ## Callback functions
 
 | Title   | Description   |
 | ---- |:---- |
-| [HW_ADAPTER_CONTROL callback](nc-storport-hw-adapter-control.md) | A miniport driver's HwStorAdapterControl routine is called to perform synchronous operations to control the state or behavior of an adapter, such as stopping or restarting the HBA for power management. |
-| [HW_BUILDIO callback](nc-storport-hw-buildio.md) | The HwStorBuildIo routine processes the SRB with unsynchronized access to shared system data structures before passing it to HwStorStartIo. |
-| [HW_CLEANUP_TRACING callback](nc-storport-hw-cleanup-tracing.md) | The HwStorCleanupTracing callback routine allows the Storport virtual miniport driver to stop tracing and to free any related resources. |
-| [HW_COMPLETE_SERVICE_IRP callback](nc-storport-hw-complete-service-irp.md) | The HwStorCompleteServiceIrp routine is called when the virtual adapter is being removed. When this happens, the Storport virtual miniport can complete any reverse-callback IRPs received in HwStorCompleteServiceIrp. |
-| [HW_DPC_ROUTINE callback](nc-storport-hw-dpc-routine.md) | The HwStorDpcRoutine routine is a routine that is deferred for execution at DISPATCH IRQL by means of the deferred procedure call (DPC) mechanism. |
-| [HW_FIND_ADAPTER callback](nc-storport-hw-find-adapter.md) | The HwStorFindAdapter routine uses the supplied configuration to determine whether a specific HBA is supported and, if it is, to return configuration information about that adapter. |
-| [HW_FREE_ADAPTER_RESOURCES callback](nc-storport-hw-free-adapter-resources.md) | The HwStorFreeAdapterResources callback routine allows the Storport virtual miniport driver to free resources when the virtual adapter is being removed. This is the last callback routine for the adapter. |
-| [HW_INITIALIZE callback](nc-storport-hw-initialize.md) | The HwStorInitialize routine initializes the miniport driver after a system reboot or power failure occurs. |
-| [HW_INITIALIZE_TRACING callback](nc-storport-hw-initialize-tracing.md) | The HwStorInitializeTracing callback routine allows the Storport virtual miniport driver to set up tracing and any related resources. |
-| [HW_INTERRUPT callback](nc-storport-hw-interrupt.md) | The Storport driver calls the HwStorInterrupt routine after the HBA generates an interrupt request. |
-| [HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE callback](nc-storport-hw-message-signaled-interrupt-routine.md) | The HwMSInterruptRoutine routine handles a message signaled interrupt (MSI). |
-| [HW_PASSIVE_INITIALIZE_ROUTINE callback](nc-storport-hw-passive-initialize-routine.md) | The HwStorPassiveInitializeRoutine callback routine is called after the HwStorInitialize routine when the current IRQL is at PASSIVE_LEVEL. |
-| [HW_PROCESS_SERVICE_REQUEST callback](nc-storport-hw-process-service-request.md) | The HwStorProcessServiceRequest callback routine receives the device control IRP that contains the IOCTL_MINIPORT_PROCESS_SERVICE_IRP request when a caller, such as a user-mode application or kernel-mode driver, requires a &#0034;reverse callback&#0034; operation. |
-| [HW_RESET_BUS callback](nc-storport-hw-reset-bus.md) | The HwStorResetBus routine is called by the port driver to clear error conditions. |
-| [HW_STARTIO callback](nc-storport-hw-startio.md) | The Storport driver calls the HwStorStartIo routine one time for each incoming I/O request. |
-| [HW_TIMER callback](nc-storport-hw-timer.md) | The HwStorTimer routine is called after the interval that is specified when the miniport driver called StorPortNotification with the RequestTimerCall NotificationType value. |
-| [VIRTUAL_HW_FIND_ADAPTER callback](nc-storport-virtual-hw-find-adapter.md) | The Storport virtual miniport uses configuration information supplied to the VirtualHwStorFindAdapter routine to further initialize itself. |
+| [HW_ADAPTER_CONTROL callback](nc-storport-hw_adapter_control.md) | A miniport driver's HwStorAdapterControl routine is called to perform synchronous operations to control the state or behavior of an adapter, such as stopping or restarting the HBA for power management. |
+| [HW_BUILDIO callback](nc-storport-hw_buildio.md) | The HwStorBuildIo routine processes the SRB with unsynchronized access to shared system data structures before passing it to HwStorStartIo. |
+| [HW_CLEANUP_TRACING callback](nc-storport-hw_cleanup_tracing.md) | The HwStorCleanupTracing callback routine allows the Storport virtual miniport driver to stop tracing and to free any related resources. |
+| [HW_COMPLETE_SERVICE_IRP callback](nc-storport-hw_complete_service_irp.md) | The HwStorCompleteServiceIrp routine is called when the virtual adapter is being removed. When this happens, the Storport virtual miniport can complete any reverse-callback IRPs received in HwStorCompleteServiceIrp. |
+| [HW_DPC_ROUTINE callback](nc-storport-hw_dpc_routine.md) | The HwStorDpcRoutine routine is a routine that is deferred for execution at DISPATCH IRQL by means of the deferred procedure call (DPC) mechanism. |
+| [HW_FIND_ADAPTER callback](nc-storport-hw_find_adapter.md) | The HwStorFindAdapter routine uses the supplied configuration to determine whether a specific HBA is supported and, if it is, to return configuration information about that adapter. |
+| [HW_FREE_ADAPTER_RESOURCES callback](nc-storport-hw_free_adapter_resources.md) | The HwStorFreeAdapterResources callback routine allows the Storport virtual miniport driver to free resources when the virtual adapter is being removed. This is the last callback routine for the adapter. |
+| [HW_INITIALIZE callback](nc-storport-hw_initialize.md) | The HwStorInitialize routine initializes the miniport driver after a system reboot or power failure occurs. |
+| [HW_INITIALIZE_TRACING callback](nc-storport-hw_initialize_tracing.md) | The HwStorInitializeTracing callback routine allows the Storport virtual miniport driver to set up tracing and any related resources. |
+| [HW_INTERRUPT callback](nc-storport-hw_interrupt.md) | The Storport driver calls the HwStorInterrupt routine after the HBA generates an interrupt request. |
+| [HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE callback](nc-storport-hw_message_signaled_interrupt_routine.md) | The HwMSInterruptRoutine routine handles a message signaled interrupt (MSI). |
+| [HW_PASSIVE_INITIALIZE_ROUTINE callback](nc-storport-hw_passive_initialize_routine.md) | The HwStorPassiveInitializeRoutine callback routine is called after the HwStorInitialize routine when the current IRQL is at PASSIVE_LEVEL. |
+| [HW_PROCESS_SERVICE_REQUEST callback](nc-storport-hw_process_service_request.md) | The HwStorProcessServiceRequest callback routine receives the device control IRP that contains the IOCTL_MINIPORT_PROCESS_SERVICE_IRP request when a caller, such as a user-mode application or kernel-mode driver, requires a &#0034;reverse callback&#0034; operation. |
+| [HW_RESET_BUS callback](nc-storport-hw_reset_bus.md) | The HwStorResetBus routine is called by the port driver to clear error conditions. |
+| [HW_STARTIO callback](nc-storport-hw_startio.md) | The Storport driver calls the HwStorStartIo routine one time for each incoming I/O request. |
+| [HW_TIMER callback](nc-storport-hw_timer.md) | The HwStorTimer routine is called after the interval that is specified when the miniport driver called StorPortNotification with the RequestTimerCall NotificationType value. |
+| [VIRTUAL_HW_FIND_ADAPTER callback](nc-storport-virtual_hw_find_adapter.md) | The Storport virtual miniport uses configuration information supplied to the VirtualHwStorFindAdapter routine to further initialize itself. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [MEMORY_REGION structure](ns-storport--memory-region.md) | The MEMORY_REGION structure describes a region of physically contiguous memory. |
-| [MESSAGE_INTERRUPT_INFORMATION structure](ns-storport--message-interrupt-information.md) | The MESSAGE_INTERRUPT_INFORMATION structure describes a message signaled interrupt (MSI). |
-| [MINIPORT_DUMP_POINTERS structure](ns-storport--miniport-dump-pointers.md) | A Storport miniport driver uses this structure to support the SCSI_REQUEST_BLOCK (SRB) function code SRB_FUNCTION_DUMP_POINTERS. |
-| [PERF_CONFIGURATION_DATA structure](ns-storport--perf-configuration-data.md) | The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the StorPortInitializePerfOpts routine. |
-| [PORT_CONFIGURATION_INFORMATION structure](ns-storport--port-configuration-information.md) | The PORT_CONFIGURATION_INFORMATION contains configuration information for a host bus adapter (HBA). |
-| [PPRI_REGISTRATION_LIST structure](ns-storport-ppri-registration-list.md) | The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS. |
-| [PPRI_RESERVATION_DESCRIPTOR structure](ns-storport-ppri-reservation-descriptor.md) | The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
-| [PPRI_RESERVATION_LIST structure](ns-storport-ppri-reservation-list.md) | The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
-| [PPRO_PARAMETER_LIST structure](ns-storport-ppro-parameter-list.md) | The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server. |
-| [PRT_PARAMETER_DATA structure](ns-storport-prt-parameter-data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
-| [PST_PARAMETER_DATA structure](ns-storport-pst-parameter-data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
-| [REPORT_ZONES_DATA structure](ns-storport--report-zones-data.md) | Note  This structure is for internal use only and should not be called from your code. . |
-| [SCSI_PNP_REQUEST_BLOCK structure](ns-storport--scsi-pnp-request-block.md) | TheSCSI_PNP_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for plug and play (PNP) requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
-| [SCSI_POWER_REQUEST_BLOCK structure](ns-storport--scsi-power-request-block.md) | The SCSI_POWER_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for power management requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
-| [SCSI_WMI_REQUEST_BLOCK structure](ns-storport--scsi-wmi-request-block.md) | This structure is a special version of a SCSI_REQUEST_BLOCK for use with WMI commands. |
-| [SES_CONFIGURATION_DIAGNOSTIC_PAGE structure](ns-storport--ses-configuration-diagnostic-page.md) | TBD. |
-| [SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure](ns-storport--ses-download-microcode-control-diagnostic-page.md) | The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process. |
-| [SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure](ns-storport--ses-download-microcode-status-descriptor.md) | The SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure specifies the status and additional status of a download microcode. |
-| [SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE structure](ns-storport--ses-download-microcode-status-diagnostic-page.md) | The Download Microcode Status diagnostic page includes information about the status of one or more download microcode operations. |
-| [SRBEX_DATA structure](ns-storport--srbex-data.md) | The SRBEX_DATA structure is the generalized format for containing extended SRB data. |
-| [SRBEX_DATA_BIDIRECTIONAL structure](ns-storport--srbex-data-bidirectional.md) | The SRBEX_DATA_BIDIRECTIONAL structure contains the extended SRB data for bi-directional transfer commands. |
-| [SRBEX_DATA_IO_INFO structure](ns-storport--srbex-data-io-info.md) | The SRBEX_DATA_IO_INFO structure contains additional information related to a read or write request in an extended SRB. |
-| [SRBEX_DATA_PNP structure](ns-storport--srbex-data-pnp.md) | The SRBEX_DATA_PNP structure contains the request data for an extended plug and play (PNP) SRB. |
-| [SRBEX_DATA_POWER structure](ns-storport--srbex-data-power.md) | The SRBEX_DATA_POWER structure contains the request data for an extended power SRB. |
-| [SRBEX_DATA_SCSI_CDB16 structure](ns-storport--srbex-data-scsi-cdb16.md) | The SRBEX_DATA_SCSI_CDB16 structure contains the extended SRB data for a 16-byte SCSI command data block (CDB). |
-| [SRBEX_DATA_SCSI_CDB32 structure](ns-storport--srbex-data-scsi-cdb32.md) | The SRBEX_DATA_SCSI_CDB32 structure contains the extended SRB data for a 32-byte SCSI command data block (CDB). |
-| [SRBEX_DATA_SCSI_CDB_VAR structure](ns-storport--srbex-data-scsi-cdb-var.md) | The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB). |
-| [SRBEX_DATA_WMI structure](ns-storport--srbex-data-wmi.md) | The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB. |
-| [STARTIO_PERFORMANCE_PARAMETERS structure](ns-storport--startio-performance-parameters.md) | The STARTIO_PERFORMANCE_PARAMETERS structure describes the performance parameters that are returned to the miniport driver by the StorPortGetStartIoPerfParams routine. |
-| [STORAGE_REQUEST_BLOCK structure](ns-storport--storage-request-block.md) | The STORAGE_REQUEST_BLOCK is the extended format SCSI Request Block (SRB) structure. |
-| [STORPORT_TELEMETRY_EVENT structure](ns-storport--storport-telemetry-event.md) | The STORPORT_TELEMETRY_EVENT structure describes the miniport telemetry data payload. |
-| [STOR_ADDRESS structure](ns-storport--stor-address.md) | A general structure for holding a storage device address. |
-| [STOR_ADDR_BTL8 structure](ns-storport--stor-addr-btl8.md) | The STOR_ADDR_BTL8 address structure contains the addressing information for an 8-bit Bus-Target-LUN (BTL8) address. |
-| [STOR_CRYPTO_CAPABILITIES_DATA structure](ns-storport--stor-crypto-capabilities-data.md) | Reserved for system use. |
-| [STOR_CRYPTO_CAPABILITY structure](ns-storport--stor-crypto-capability.md) | Reserved for system use. |
-| [STOR_CRYPTO_KEY_INFO structure](ns-storport--stor-crypto-key-info.md) | Reserved for system use. |
-| [STOR_CRYPTO_OPERATION_INSERT_KEY structure](ns-storport--stor-crypto-operation-insert-key.md) | Reserved for system use. |
-| [STOR_DEVICE_CAPABILITIES structure](ns-storport--stor-device-capabilities.md) | The STOR_DEVICE_CAPABILITIES structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP. |
-| [STOR_DEVICE_CAPABILITIES_EX structure](ns-storport--stor-device-capabilities-ex.md) | The STOR_DEVICE_CAPABILITIES_EX structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP. |
-| [STOR_DPC structure](ns-storport--stor-dpc.md) | The STOR_DPC structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly. |
-| [STOR_LIST_ENTRY structure](ns-storport--stor-list-entry.md) | A STOR_LIST_ENTRY structure describes an entry in a doubly linked list or serves as the header for such a list. |
-| [STOR_LOG_EVENT_DETAILS structure](ns-storport--stor-log-event-details.md) | The STOR_LOG_EVENT_DETAILS structure provides details pertaining to Storport-specific error log events and system log events. |
-| [STOR_POFX_COMPONENT structure](ns-storport--stor-pofx-component.md) | The STOR_POFX_COMPONENT structure describes the power state attributes of a storage device component. |
-| [STOR_POFX_COMPONENT_IDLE_STATE structure](ns-storport--stor-pofx-component-idle-state.md) | The STOR_POFX_COMPONENT_IDLE_STATE structure specifies the attributes of an functional power state (F-state) of a component in a storage device. |
-| [STOR_POFX_COMPONENT_V2 structure](ns-storport--stor-pofx-component-v2.md) | The STOR_POFX_COMPONENT_V2 structure describes the power state attributes of a storage device component. |
-| [STOR_POFX_DEVICE structure](ns-storport--stor-pofx-device.md) | The STOR_POFX_DEVICE structure describes the power attributes of a storage device to the power management framework (PoFx). |
-| [STOR_POFX_DEVICE_V2 structure](ns-storport--stor-pofx-device-v2.md) | The STOR_POFX_DEVICE_V2 structure describes the power attributes of a storage device to the power management framework (PoFx). |
-| [STOR_POFX_DEVICE_V3 structure](ns-storport--stor-pofx-device-v3.md) | The STOR_POFX_DEVICE_V3 structure describes the power attributes of a storage device to the power management framework (PoFx). |
-| [STOR_RICH_DEVICE_DESCRIPTION structure](ns-storport--stor-rich-device-description.md) | The STOR_RICH_DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA (direct memory access) adapter. |
-| [STOR_SCATTER_GATHER_ELEMENT structure](ns-storport--stor-scatter-gather-element.md) | The STOR_SCATTER_GATHER_ELEMENT structure is used with STOR_SCATTER_GATHER_LIST to build a list of scatter/gather elements. |
-| [STOR_SCATTER_GATHER_LIST structure](ns-storport--stor-scatter-gather-list.md) | The STOR_SCATTER_GATHER_LIST structure is used in conjunction with the StorPortGetScatterGatherList routine to retrieve the scatter/gather list for a SCSI request block (SRB). |
-| [STOR_UNIT_ATTRIBUTES structure](ns-storport--stor-unit-attributes.md) | The STOR_UNIT_ATTRIBUTES structure contains bitfields indicating attribute support for a storage device unit. |
-| [VIRTUAL_HW_INITIALIZATION_DATA structure](ns-storport--virtual-hw-initialization-data.md) | The VIRTUAL_HW_INITIALIZATION_DATA structure contains information particular to each virtual miniport driver. |
-| [VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure](ns-storport--vpd-zoned-block-device-characteristics-page.md) | Note  This structure is for internal use only and should not be called from your code. . |
-| [ZONE_DESCRIPTIOR structure](ns-storport--zone-descriptior.md) | Note  This structure is for internal use only and should not be called from your code. . |
+| [PPRI_REGISTRATION_LIST structure](ns-storport-ppri_registration_list.md) | The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS. |
+| [PPRI_RESERVATION_DESCRIPTOR structure](ns-storport-ppri_reservation_descriptor.md) | The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
+| [PPRI_RESERVATION_LIST structure](ns-storport-ppri_reservation_list.md) | The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
+| [PPRO_PARAMETER_LIST structure](ns-storport-ppro_parameter_list.md) | The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server. |
+| [PRT_PARAMETER_DATA structure](ns-storport-prt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
+| [PST_PARAMETER_DATA structure](ns-storport-pst_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
+| [_MEMORY_REGION structure](ns-storport-_memory_region.md) | The MEMORY_REGION structure describes a region of physically contiguous memory. |
+| [_MESSAGE_INTERRUPT_INFORMATION structure](ns-storport-_message_interrupt_information.md) | The MESSAGE_INTERRUPT_INFORMATION structure describes a message signaled interrupt (MSI). |
+| [_MINIPORT_DUMP_POINTERS structure](ns-storport-_miniport_dump_pointers.md) | A Storport miniport driver uses this structure to support the SCSI_REQUEST_BLOCK (SRB) function code SRB_FUNCTION_DUMP_POINTERS. |
+| [_PERF_CONFIGURATION_DATA structure](ns-storport-_perf_configuration_data.md) | The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the StorPortInitializePerfOpts routine. |
+| [_PORT_CONFIGURATION_INFORMATION structure](ns-storport-_port_configuration_information.md) | The PORT_CONFIGURATION_INFORMATION contains configuration information for a host bus adapter (HBA). |
+| [_REPORT_ZONES_DATA structure](ns-storport-_report_zones_data.md) | Note  This structure is for internal use only and should not be called from your code. . |
+| [_SCSI_PNP_REQUEST_BLOCK structure](ns-storport-_scsi_pnp_request_block.md) | TheSCSI_PNP_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for plug and play (PNP) requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [_SCSI_POWER_REQUEST_BLOCK structure](ns-storport-_scsi_power_request_block.md) | The SCSI_POWER_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for power management requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [_SCSI_WMI_REQUEST_BLOCK structure](ns-storport-_scsi_wmi_request_block.md) | This structure is a special version of a SCSI_REQUEST_BLOCK for use with WMI commands. |
+| [_SES_CONFIGURATION_DIAGNOSTIC_PAGE structure](ns-storport-_ses_configuration_diagnostic_page.md) | TBD. |
+| [_SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure](ns-storport-_ses_download_microcode_control_diagnostic_page.md) | The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process. |
+| [_SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure](ns-storport-_ses_download_microcode_status_descriptor.md) | The SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure specifies the status and additional status of a download microcode. |
+| [_SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE structure](ns-storport-_ses_download_microcode_status_diagnostic_page.md) | The Download Microcode Status diagnostic page includes information about the status of one or more download microcode operations. |
+| [_SRBEX_DATA structure](ns-storport-_srbex_data.md) | The SRBEX_DATA structure is the generalized format for containing extended SRB data. |
+| [_SRBEX_DATA_BIDIRECTIONAL structure](ns-storport-_srbex_data_bidirectional.md) | The SRBEX_DATA_BIDIRECTIONAL structure contains the extended SRB data for bi-directional transfer commands. |
+| [_SRBEX_DATA_IO_INFO structure](ns-storport-_srbex_data_io_info.md) | The SRBEX_DATA_IO_INFO structure contains additional information related to a read or write request in an extended SRB. |
+| [_SRBEX_DATA_PNP structure](ns-storport-_srbex_data_pnp.md) | The SRBEX_DATA_PNP structure contains the request data for an extended plug and play (PNP) SRB. |
+| [_SRBEX_DATA_POWER structure](ns-storport-_srbex_data_power.md) | The SRBEX_DATA_POWER structure contains the request data for an extended power SRB. |
+| [_SRBEX_DATA_SCSI_CDB16 structure](ns-storport-_srbex_data_scsi_cdb16.md) | The SRBEX_DATA_SCSI_CDB16 structure contains the extended SRB data for a 16-byte SCSI command data block (CDB). |
+| [_SRBEX_DATA_SCSI_CDB32 structure](ns-storport-_srbex_data_scsi_cdb32.md) | The SRBEX_DATA_SCSI_CDB32 structure contains the extended SRB data for a 32-byte SCSI command data block (CDB). |
+| [_SRBEX_DATA_SCSI_CDB_VAR structure](ns-storport-_srbex_data_scsi_cdb_var.md) | The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB). |
+| [_SRBEX_DATA_WMI structure](ns-storport-_srbex_data_wmi.md) | The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB. |
+| [_STARTIO_PERFORMANCE_PARAMETERS structure](ns-storport-_startio_performance_parameters.md) | The STARTIO_PERFORMANCE_PARAMETERS structure describes the performance parameters that are returned to the miniport driver by the StorPortGetStartIoPerfParams routine. |
+| [_STORAGE_REQUEST_BLOCK structure](ns-storport-_storage_request_block.md) | The STORAGE_REQUEST_BLOCK is the extended format SCSI Request Block (SRB) structure. |
+| [_STORPORT_TELEMETRY_EVENT structure](ns-storport-_storport_telemetry_event.md) | The STORPORT_TELEMETRY_EVENT structure describes the miniport telemetry data payload. |
+| [_STOR_ADDRESS structure](ns-storport-_stor_address.md) | A general structure for holding a storage device address. |
+| [_STOR_ADDR_BTL8 structure](ns-storport-_stor_addr_btl8.md) | The STOR_ADDR_BTL8 address structure contains the addressing information for an 8-bit Bus-Target-LUN (BTL8) address. |
+| [_STOR_CRYPTO_CAPABILITIES_DATA structure](ns-storport-_stor_crypto_capabilities_data.md) | Reserved for system use. |
+| [_STOR_CRYPTO_CAPABILITY structure](ns-storport-_stor_crypto_capability.md) | Reserved for system use. |
+| [_STOR_CRYPTO_KEY_INFO structure](ns-storport-_stor_crypto_key_info.md) | Reserved for system use. |
+| [_STOR_CRYPTO_OPERATION_INSERT_KEY structure](ns-storport-_stor_crypto_operation_insert_key.md) | Reserved for system use. |
+| [_STOR_DEVICE_CAPABILITIES structure](ns-storport-_stor_device_capabilities.md) | The STOR_DEVICE_CAPABILITIES structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP. |
+| [_STOR_DEVICE_CAPABILITIES_EX structure](ns-storport-_stor_device_capabilities_ex.md) | The STOR_DEVICE_CAPABILITIES_EX structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP. |
+| [_STOR_DPC structure](ns-storport-_stor_dpc.md) | The STOR_DPC structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly. |
+| [_STOR_LIST_ENTRY structure](ns-storport-_stor_list_entry.md) | A STOR_LIST_ENTRY structure describes an entry in a doubly linked list or serves as the header for such a list. |
+| [_STOR_LOG_EVENT_DETAILS structure](ns-storport-_stor_log_event_details.md) | The STOR_LOG_EVENT_DETAILS structure provides details pertaining to Storport-specific error log events and system log events. |
+| [_STOR_POFX_COMPONENT structure](ns-storport-_stor_pofx_component.md) | The STOR_POFX_COMPONENT structure describes the power state attributes of a storage device component. |
+| [_STOR_POFX_COMPONENT_IDLE_STATE structure](ns-storport-_stor_pofx_component_idle_state.md) | The STOR_POFX_COMPONENT_IDLE_STATE structure specifies the attributes of an functional power state (F-state) of a component in a storage device. |
+| [_STOR_POFX_COMPONENT_V2 structure](ns-storport-_stor_pofx_component_v2.md) | The STOR_POFX_COMPONENT_V2 structure describes the power state attributes of a storage device component. |
+| [_STOR_POFX_DEVICE structure](ns-storport-_stor_pofx_device.md) | The STOR_POFX_DEVICE structure describes the power attributes of a storage device to the power management framework (PoFx). |
+| [_STOR_POFX_DEVICE_V2 structure](ns-storport-_stor_pofx_device_v2.md) | The STOR_POFX_DEVICE_V2 structure describes the power attributes of a storage device to the power management framework (PoFx). |
+| [_STOR_POFX_DEVICE_V3 structure](ns-storport-_stor_pofx_device_v3.md) | The STOR_POFX_DEVICE_V3 structure describes the power attributes of a storage device to the power management framework (PoFx). |
+| [_STOR_RICH_DEVICE_DESCRIPTION structure](ns-storport-_stor_rich_device_description.md) | The STOR_RICH_DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA (direct memory access) adapter. |
+| [_STOR_SCATTER_GATHER_ELEMENT structure](ns-storport-_stor_scatter_gather_element.md) | The STOR_SCATTER_GATHER_ELEMENT structure is used with STOR_SCATTER_GATHER_LIST to build a list of scatter/gather elements. |
+| [_STOR_SCATTER_GATHER_LIST structure](ns-storport-_stor_scatter_gather_list.md) | The STOR_SCATTER_GATHER_LIST structure is used in conjunction with the StorPortGetScatterGatherList routine to retrieve the scatter/gather list for a SCSI request block (SRB). |
+| [_STOR_UNIT_ATTRIBUTES structure](ns-storport-_stor_unit_attributes.md) | The STOR_UNIT_ATTRIBUTES structure contains bitfields indicating attribute support for a storage device unit. |
+| [_VIRTUAL_HW_INITIALIZATION_DATA structure](ns-storport-_virtual_hw_initialization_data.md) | The VIRTUAL_HW_INITIALIZATION_DATA structure contains information particular to each virtual miniport driver. |
+| [_VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure](ns-storport-_vpd_zoned_block_device_characteristics_page.md) | Note  This structure is for internal use only and should not be called from your code. . |
+| [_ZONE_DESCRIPTIOR structure](ns-storport-_zone_descriptior.md) | Note  This structure is for internal use only and should not be called from your code. . |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [INTERRUPT_SYNCHRONIZATION_MODE enumeration](ne-storport--interrupt-synchronization-mode.md) | The INTERRUPT_SYNCHRONIZATION_MODE enumerator specifies the interrupt synchronization mode. |
-| [PSTOR_POWER_ACTION enumeration](ne-storport-pstor-power-action.md) | The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. |
-| [SES_DOWNLOAD_MICROCODE_STATE enumeration](ne-storport--ses-download-microcode-state.md) | TBD. |
-| [STOR_DEVICE_POWER_STATE enumeration](ne-storport--stor-device-power-state.md) | The STOR_DEVICE_POWER_STATE enumerator specifies a device power state. |
-| [STOR_EVENT_ASSOCIATION_ENUM enumeration](ne-storport--stor-event-association-enum.md) | The STOR_EVENT_ASSOCIATION_ENUM enumerator specifies the type of device that is associated with an event. |
-| [STOR_SPINLOCK enumeration](ne-storport--stor-spinlock.md) | The STOR_SPINLOCK enumeration is used to specify the type of a spinlock. |
+| [PSTOR_POWER_ACTION enumeration](ne-storport-pstor_power_action.md) | The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. |
+| [_INTERRUPT_SYNCHRONIZATION_MODE enumeration](ne-storport-_interrupt_synchronization_mode.md) | The INTERRUPT_SYNCHRONIZATION_MODE enumerator specifies the interrupt synchronization mode. |
+| [_SES_DOWNLOAD_MICROCODE_STATE enumeration](ne-storport-_ses_download_microcode_state.md) | TBD. |
+| [_STOR_DEVICE_POWER_STATE enumeration](ne-storport-_stor_device_power_state.md) | The STOR_DEVICE_POWER_STATE enumerator specifies a device power state. |
+| [_STOR_EVENT_ASSOCIATION_ENUM enumeration](ne-storport-_stor_event_association_enum.md) | The STOR_EVENT_ASSOCIATION_ENUM enumerator specifies the type of device that is associated with an event. |
+| [_STOR_SPINLOCK enumeration](ne-storport-_stor_spinlock.md) | The STOR_SPINLOCK enumeration is used to specify the type of a spinlock. |

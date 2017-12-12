@@ -42,6 +42,7 @@ The BTH_ENUMERATOR_INFO structure contains information about an underlying devic
   that caused the Plug and Play (PnP) manager to load the profile driver.
 
 
+
 ## -syntax
 
 ````
@@ -71,9 +72,11 @@ typedef struct _BTH_ENUMERATOR_INFO {
 
 Reserved for use by the Bluetooth driver stack. Do not use.
 
+
 ### -field Action
 
 Reserved for use by the Bluetooth driver stack. Do not use.
+
 
 ### -field Port
 
@@ -82,9 +85,11 @@ If the enumeration was caused by a connection request, this member contains the 
      identifies the Protocol/Service Multiplexer (PSM) that is being connected to. For an RFCOMM connection
      request, this is an RFCOMM data link connection identifier (DLCI).
 
+
 ### -field Flags
 
 A flag that indicates the direction of the request. Possible values include:
+
 <ul>
 <li>BTH_ENUMERATORFL_INCOMING</li>
 <li>BTH_ENUMERATORFL_OUTGOING</li>
@@ -98,11 +103,13 @@ A flag that indicates the direction of the request. Possible values include:
       that loaded the profile driver.
      
 
+
 ### -field InstanceId
 
 
       The instance ID of the protocol or service if the BTH_ENUMERATORFL_INCOMING flag is set.
      
+
 
 ### -field InstanceIdStr
 
@@ -110,21 +117,26 @@ A flag that indicates the direction of the request. Possible values include:
       The instance ID of the protocol or service if the BTH_ENUMERATORFL_OUTGOING flag is set.
      
 
+
 ### -field Vid
 
 The vendor ID of the remote device, which is obtained from SDP.
+
 
 ### -field Pid
 
 The product ID of the remote device, which is obtained from SDP.
 
+
 ### -field Mfg
 
 The manufacturer ID of the remote device, which is obtained from SDP.
 
+
 ### -field LocalMfg
 
 The local radio manufacturer obtained from the HCI.
+
 
 ### -field VidType
 
@@ -132,17 +144,21 @@ The local radio manufacturer obtained from the HCI.
       The remote device vendor ID type, which is obtained from SDP.
      
 
+
 ### -field ServiceName
 
 The service name that is used for local services.
+
 
 ### -field SdpPriLangServiceName
 
 The identifier used for remote services.
 
+
 ### -field DeviceString
 
 The device string for the remote device.
+
 
 ## -remarks
 The 
@@ -151,19 +167,23 @@ The
     underlying device and the service that caused the Plug and Play (PnP) manager to load the profile
     driver.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -187,5 +207,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_ENUMERATOR_INFO structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

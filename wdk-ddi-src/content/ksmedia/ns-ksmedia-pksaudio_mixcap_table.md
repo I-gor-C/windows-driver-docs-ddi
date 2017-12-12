@@ -41,6 +41,7 @@ req.irql:
 The KSAUDIO_MIXCAP_TABLE structure specifies the mixing capabilities of a supermixer node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>). This structure is used to get or set the data value for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537291">KSPROPERTY_AUDIO_MIX_LEVEL_CAPS</a> property.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 Specifies the number of input channels.
 
+
 ### -field OutputChannels
 
 Specifies the number of output channels.
 
+
 ### -field Capabilities
 
 Contains the first entry in a two-dimensional array of <a href="audio.ksaudio_mix_caps">KSAUDIO_MIX_CAPS</a> structures. Given a supermixer node with <i>m</i> input channels and <i>n</i> output channels, the array contains <i>m</i>*<i></i> elements. Each element describes the mix-level capabilities of the path from a particular input channel to a particular output channel.
+
 
 ## -remarks
 The <b>Capabilities</b> table is stored as a two-dimensional array:
@@ -107,11 +111,13 @@ The size of the table is calculated from the KSAUDIO_MIXCAP_TABLE structure that
 
 If the client sends an initial KSPROPERTY_AUDIO_MIX_LEVEL_CAPS request in which the property size is specified as 2*<b>sizeof</b>(ULONG), the miniport driver should fill in only the first two members of the KSAUDIO_MIXCAP_TABLE structure, <b>InputChannels</b> and <b>OutputChannels</b>. The client can then send a second property request with enough storage allocated to contain the capabilities of all the channels.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_MIXCAP_TABLE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

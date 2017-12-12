@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The IMiniportAudioSignalProcessing interface is implemented by the WaveRT miniport component of any audio driver, if any of its pins support audio signal processing modes.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportAudioSignalProcessing</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IMiniportAudioSignalProcessing</b> also has these types of members:
 
@@ -49,6 +50,7 @@ The <b>IMiniportAudioSignalProcessing</b> interface has these methods.
 The GetModes method, Gets the audio signal processing modes supported by an audio pin.
 
  
+
 
 ## -members
 The <b>IMiniportAudioSignalProcessing</b> interface has these methods.
@@ -63,36 +65,44 @@ The <b>IMiniportAudioSignalProcessing</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The GetModes method, Gets the audio signal processing modes supported by an audio pin.
+
 </td>
 </tr>
 </table>The GetModes method, Gets the audio signal processing modes supported by an audio pin.
 
  
 
+
 ## -remarks
 Any of the Portcls miniport drivers can also implement the <b>GetModes</b> method.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

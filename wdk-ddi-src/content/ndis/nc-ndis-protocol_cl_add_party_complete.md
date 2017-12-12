@@ -7,7 +7,7 @@ old-location: netvista\protocolcladdpartycomplete.htm
 old-project: netvista
 ms.assetid: ea3ebbe9-fd94-44b8-8801-639d099c5158
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,6 +47,7 @@ The
   <i>ProtocolClAddPartyComplete</i> function can simply return control.
 
 
+
 ## -prototype
 
 ````
@@ -71,13 +72,17 @@ Specifies final status of the client-initiated add-party operation, which can be
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The given party was added on the client's active multipoint VC.
 
+
 ### -param NDIS_STATUS_RESOURCES
 
 NDIS could not allocate sufficient resources to track the new party.
+
 
 ### -param NDIS_STATUS_FAILURE
 
@@ -85,11 +90,13 @@ The client passed an invalid
        <i>NdisVcHandle</i> to 
        <b>NdisClAddParty</b>.
 
+
 ### -param NDIS_STATUS_XXX
 
 The call manager's 
        <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function
        returned a CM-determined value to indicate why it could not add the party to the VC.
+
 </dd>
 </dl>
 
@@ -98,12 +105,14 @@ The call manager's
 Specifies the client-supplied handle originally passed to 
      <b>NdisClAddParty</b>.
 
+
 ### -param NdisPartyHandle [in]
 
 If 
      <i>Status</i> is NDIS_STATUS_SUCCESS, this NDIS-supplied handle represents the association between the
      call manager and client regarding this party. Otherwise, the attempt to add a party failed and the
      client should consider this parameter an invalid handle.
+
 
 ### -param CallParameters [in]
 
@@ -112,8 +121,10 @@ Pointer to a structure of type
      the client for its call to 
      <b>NdisClAddParty</b> but possibly modified subsequently by the call manager.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A call to 
@@ -166,11 +177,13 @@ The <b>PROTOCOL_CL_ADD_PARTY_COMPLETE</b> function type is defined in the Ndis.h
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -178,11 +191,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>ProtocolClAddPartyComplete
    (NDIS 5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -193,9 +208,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -228,5 +245,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_ADD_PARTY_COMPLETE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_ADD_PARTY_COMPLETE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

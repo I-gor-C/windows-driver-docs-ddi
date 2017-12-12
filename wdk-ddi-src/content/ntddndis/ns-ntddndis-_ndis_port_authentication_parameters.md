@@ -7,8 +7,8 @@ old-location: netvista\ndis_port_authentication_parameters.htm
 old-project: netvista
 ms.assetid: 7c411d9e-1064-4278-9870-0546891d4743
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_PORT_AUTHENTICATION_PARAMETERS, *PNDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS, *PNDIS_PORT_AUTHENTICATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure specifies the state parameters
   port.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ The
      <b>Revision</b> member to NDIS_PORT_AUTHENTICATION_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_PORT_AUTHENTICATION_PARAMETERS_REVISION_1.
 
+
 ### -field SendControlState
 
 The control state of the port that the miniport adapter should use for send operations. This
@@ -74,19 +76,24 @@ The control state of the port that the miniport adapter should use for send oper
      
 
 
+
+
 ### -field NdisPortControlStateUnknown
 
 The port's control state for send operations is unknown.
+
 
 ### -field NdisPortControlStateControlled
 
 The port is in a controlled state for send operations. That is, the port requires
        authorization.
 
+
 ### -field NdisPortControlStateUncontrolled
 
 The port is in an uncontrolled state for send operations. That is, the port does not require
        authorization.
+
 </dd>
 </dl>
 
@@ -97,19 +104,24 @@ The control state of the port that the miniport adapter should use for receive o
      
 
 
+
+
 ### -field NdisPortControlStateUnknown
 
 The port's control state for receive operations is unknown.
+
 
 ### -field NdisPortControlStateControlled
 
 The port is in a controlled state for receive operations. That is, the port requires
        authorization.
 
+
 ### -field NdisPortControlStateUncontrolled
 
 The port is in an uncontrolled state for receive operations. That is, the port does not require
        authorization.
+
 </dd>
 </dl>
 
@@ -120,24 +132,31 @@ The authorization state of the port that the miniport adapter should use for sen
      <b>SendControlState</b> member is set to 
      <b>NdisPortControlStateUncontrolled</b>.
      
+
 This member must contain one of the following values:
+
+
 
 
 ### -field NdisPortAuthorizationUnknown
 
 The port's authorization state for send operations is unknown.
 
+
 ### -field NdisPortAuthorized
 
 The port is authorized for send operations.
+
 
 ### -field NdisPortUnauthorized
 
 The port is not authorized for send operations.
 
+
 ### -field NdisPortReauthorizing
 
 The port is re-authorizing for send operations.
+
 </dd>
 </dl>
 
@@ -148,24 +167,31 @@ The authorization state of the port that the miniport adapter should use for rec
      <b>RcvControlState</b> member is set to 
      <b>NdisPortControlStateUncontrolled</b>.
      
+
 This member must contain one of the following values:
+
+
 
 
 ### -field NdisPortAuthorizationUnknown
 
 The port's authorization state for receive operations is unknown.
 
+
 ### -field NdisPortAuthorized
 
 The port is authorized for receive operations.
+
 
 ### -field NdisPortUnauthorized
 
 The port is not authorized for receive operations.
 
+
 ### -field NdisPortReauthorizing
 
 The port is re-authorizing for receive operations.
+
 </dd>
 </dl>
 
@@ -175,19 +201,23 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure is used in
     OID_GEN_PORT_AUTHENTICATION_PARAMETERS</a> OID requests to specify the current authentication state of
     an NDIS port.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -208,5 +238,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_AUTHENTICATION_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_AUTHENTICATION_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

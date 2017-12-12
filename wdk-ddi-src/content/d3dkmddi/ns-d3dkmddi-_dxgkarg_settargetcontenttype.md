@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settargetcontenttype.htm
 old-project: display
 ms.assetid: BD849954-97CC-4314-B375-22829B0CEE86
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_SETTARGETCONTENTTYPE, DXGKARG_SETTARGETCONTENTTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Used to hold the arguments for <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_settarge
 
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _DXGKARG_SETTARGETCONTENTTYPE {
 
 The identifier of a display adapter's video present target.
 
+
 ### -field ContentType
 
 A D3DKMDT_VIDPN_PRESENT_PATH_CONTENT value indicating the type of content being presented on the target id for which the driver should optimize.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ A D3DKMDT_VIDPN_PRESENT_PATH_CONTENT value indicating the type of content being 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

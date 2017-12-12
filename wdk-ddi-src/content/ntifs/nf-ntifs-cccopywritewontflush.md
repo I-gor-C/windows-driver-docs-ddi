@@ -41,6 +41,7 @@ req.irql:
 The <b>CcCopyWriteWontFlush</b> macro determines whether the amount of data to be copied in a call to <a href="ifsk.cccopywrite">CcCopyWrite</a> is small enough not to require immediate flushing to disk if <b>CcCopyWrite</b> is called with <i>Wait</i> set to <b>FALSE</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ BOOLEAN CcCopyWriteWontFlush(
 
 Pointer to a file object for the cached file to which the data is to be written.
 
+
 ### -param FileOffset [in]
 
 Pointer to a variable that specifies the starting byte offset within the cached file where the data is to be written.
+
 
 ### -param Length [in]
 
 Length in bytes of the data to be copied.
 
+
 ## -returns
 <b>CcCopyWriteWontFlush</b> returns <b>TRUE</b> if the amount of data to be copied in a call to <a href="ifsk.cccopywrite">CcCopyWrite</a> is small enough not to require immediate flushing to disk, <b>FALSE</b> otherwise.
+
 
 ## -remarks
 
@@ -77,6 +82,7 @@ Length in bytes of the data to be copied.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +115,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +138,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcCopyWriteWontFlush function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: display\dxgk_colorimetry.htm
 old-project: display
 ms.assetid: F3F9B6EC-B978-4C87-8AE0-8F6BC73099D2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DXGK_COLORIMETRY, *PDXGK_COLORIMETRY, DXGK_COLORIMETRY
+ms.date: 12/8/2017
+ms.keywords: _DXGK_COLORIMETRY, DXGK_COLORIMETRY, *PDXGK_COLORIMETRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Describes colorimetry and closely related fields used to describe overrides from the descriptor retrieved from the display device.
 
 
+
 ## -syntax
 
 ````
@@ -65,26 +66,32 @@ typedef struct _DXGK_COLORIMETRY {
 Override for display red point.  Note, each dimension is a 10-bit value stored in the least significant bits.
 Zero indicates no override.
 
+
 ### -field GreenPoint
 
 Override for display green point. Note, each dimension is a 10-bit value stored in the least significant bits.
+
 
 ### -field BluePoint
 
 Override for display blue point. Note, each dimension is a 10-bit value stored in the least significant bits.
 
+
 ### -field WhitePoint
 
 Override for display white point. Note, each dimension is a 10-bit value stored in the least significant bits.
+
 
 ### -field MinLuminance
 
 Override for the minimum luminance value supported by the display measured in one ten thousandth of a nit.  Only valid if MaxLuminance is non-zero.  Zero is a valid value.
 
+
 ### -field MaxLuminance
 
 Override for the maximum luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level is expected to be supported for only a relatively small area in any given frame.  
 Zero indicates no override of MaxLuminance, MaxFullFrameLuminance or MinLuminance.
+
 
 
 ### -field MaxFullFrameLuminance
@@ -93,13 +100,16 @@ Override for the max full frame luminance value supported by the display measure
 Only valid if MaxLuminance is non-zero.  Zero is not a valid override.
 
 
+
 ### -field FormatBitDepths
 
 Overrides the supported bits per color channel in each of the five color encodings specified for wire-formats.  At least one bit must be set, excluding the Preference field which is reserved and must be zero.
 
+
 ### -field StandardColorimetryFlags
 
 Indicates support for specific colorimetry and EOTF capabilities using bit-fields.
+
 
 ## -remarks
 This struct is used both for querying overrides from the driver, and for the OS reporting the final set of values it has selected.  Overrides are supported for integrated displays using this structure which is embedded within the DXGK_QUERYINTEGRATEDDISPLAYOUT struct and for external displays where this stuct is used as the output buffer is for an adapter query type DXGKQAITYPE_QUERYCOLORIMETRYOVERRIDES.  The selected and adjusted overrides are reported back to the driver using DxgkDdiSetTargetAdjustedColorimetry.
@@ -117,11 +127,13 @@ The color points are further validated beyond a simple sanity check (each value 
 When the OS calls DxgkDdiSetTargetAdjustedColorimetry, the FormatBitDepths and StandardColorimetryFlags are zeroed as these are capability fields so only valid in queries.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

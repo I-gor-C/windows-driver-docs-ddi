@@ -7,7 +7,7 @@ old-location: kernel\read_port_buffer_uchar.htm
 old-project: kernel
 ms.assetid: a32a7c6a-16dd-4d12-aa32-6bdb60990568
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: READ_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>READ_PORT_BUFFER_UCHAR</b> routine reads a number of bytes from the specified port address into a buffer.
 
 
+
 ## -syntax
 
 ````
@@ -59,27 +60,33 @@ VOID READ_PORT_BUFFER_UCHAR(
 
 Specifies the port address, which must be a mapped memory range in I/O space.
 
+
 ### -param Buffer [out]
 
 Pointer to a buffer into which an array of UCHAR values is read. 
+
 
 ### -param Count [in]
 
 Specifies the number of bytes to be read into the buffer. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 The size of the buffer must be large enough to contain at least the specified number of bytes.
 
 Callers of <b>READ_PORT_BUFFER_UCHAR</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Port</i> is resident, mapped device memory.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +97,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +118,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,9 +129,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

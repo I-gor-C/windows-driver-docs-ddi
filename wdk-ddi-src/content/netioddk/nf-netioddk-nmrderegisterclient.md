@@ -7,7 +7,7 @@ old-location: netvista\nmrderegisterclient.htm
 old-project: netvista
 ms.assetid: 64fff189-392e-42c3-8d9a-0d6daa07d2f7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NmrDeregisterClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NmrDeregisterClient</b> function deregisters a client module from the NMR.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ A handle used by the NMR to represent the registration of the client module. The
      handle to the client module when the client module calls the 
      <a href="netvista.nmrregisterclient">NmrRegisterClient</a> function.
 
+
 ## -returns
 The 
      <b>NmrDeregisterClient</b> function returns one of the following NTSTATUS codes:
@@ -74,12 +76,13 @@ The
 
  
 
+
 ## -remarks
 When a client module calls the 
     <b>NmrDeregisterClient</b> function, the NMR calls the client module's 
-    <a href="netvista.clientdetachprovider">ClientDetachProvider</a> callback
+    <a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a> callback
     function and the provider module's 
-    <a href="netvista.providerdetachclient">ProviderDetachClient</a> callback
+    <a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a> callback
     function for each of the bindings between the client module and a provider module. The deregistration of
     the client module from the NMR is complete after the client module has successfully detached from all the
     provider modules to which it is attached and all of those provider modules have successfully detached
@@ -107,11 +110,13 @@ A client module typically calls the
 <div> </div>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,15 +127,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,6 +149,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -151,9 +160,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -168,10 +179,10 @@ IRQL
    NmrWaitForClientDeregisterComplete</a>
 </dt>
 <dt>
-<a href="netvista.clientdetachprovider">ClientDetachProvider</a>
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 </dt>
 <dt>
-<a href="netvista.providerdetachclient">ProviderDetachClient</a>
+<a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a>
 </dt>
 <dt>
 <a href="kernel.unload">Unload</a>
@@ -181,5 +192,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrDeregisterClient function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrDeregisterClient function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

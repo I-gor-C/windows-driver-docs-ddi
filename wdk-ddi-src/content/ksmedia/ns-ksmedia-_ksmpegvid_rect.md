@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3fde33d4-a9c8-4647-bd2d-3da66f13ef8a
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _KSMPEGVID_RECT, KSMPEGVID_RECT, *PKSMPEGVID_RECT
+ms.keywords: _KSMPEGVID_RECT, *PKSMPEGVID_RECT, KSMPEGVID_RECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -73,6 +73,7 @@ typedef struct _KSMPEGVID_RECT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

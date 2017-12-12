@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocesshandle.htm
 old-project: debugger
 ms.assetid: b6780f1c-e093-4d91-8909-dabb1ecaefaa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GetCurrentProcessHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GetCurrentProcessHandle</b> function returns the system handle for the current process.
 
 
+
 ## -syntax
 
 ````
@@ -57,17 +58,21 @@ __inline VOID GetCurrentProcessHandle(
 
 Receives the system handle for the current process.
 
+
 ## -returns
 None
 
+
 ## -remarks
 In kernel-mode debugging, the only process in the target is the virtual process created for the kernel. In this case, an artificial handle is created. The artificial handle can only be used with the debugger.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +83,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

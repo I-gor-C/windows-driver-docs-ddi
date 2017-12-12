@@ -41,6 +41,7 @@ req.irql:
 The <b>KsAllocateObjectCreateItem</b> function allocates a slot for the specified create item, optionally allocating space for and copying the create item data as well. This function assumes that the caller is serializing multiple changes to the create entry list.
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ NTSTATUS KsAllocateObjectCreateItem(
 
 Points to the device header on which to attach the create item.
 
+
 ### -param CreateItem [in]
 
 Contains the create item to attach.
+
 
 ### -param AllocateEntry [in]
 
 Indicates whether the create item pointer passed should be attached directly to the header, or if a copy of it should be made instead.
 
+
 ### -param ItemFreeCallback [in, optional]
 
 Optionally contains a pointer to a minidriver-defined <a href="stream.kstritemfreecallback">KStrItemFreeCallback</a> function to be called when the create entry is being destroyed upon freeing the device header. This is only valid when <i>AllocateEntry</i> is <b>TRUE</b>.
 
+
 ## -returns
 Returns STATUS_SUCCESS if a new item was allocated and attached. Otherwise, it returns STATUS_INSUFFICIENT_RESOURCES.
+
 
 ## -remarks
 
@@ -82,6 +88,7 @@ Returns STATUS_SUCCESS if a new item was allocated and attached. Otherwise, it r
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +127,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAllocateObjectCreateItem function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

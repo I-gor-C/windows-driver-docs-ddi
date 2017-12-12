@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Stores the PnP identifiers for a virtual PCI device. For example strings, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/identifiers-for-pci-devices">Identifiers for PCI Devices</a>.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _VPCI_PNP_ID {
 
 PCI SIG-assigned identifier for the vendor of the device.
 
+
 ### -field DeviceID
 
 Vendor-defined identifier for the device.
+
 
 ### -field RevisionID
 
 Vendor-defined revision number.
 
+
 ### -field ProgIf
 
 Programming Interface code.
+
 
 ### -field SubClass
 
 Vendor-defined subclass code.
 
+
 ### -field BaseClass
 
 Vendor-defined base class code from the configuration space.
+
 
 ### -field SubVendorID
 
 PCI SIG-assigned identifier for the vendor of the subsystem.
 
+
 ### -field SubSystemID
 
 Vendor-defined subsystem identifier.
+
 
 ## -remarks
 
@@ -99,6 +108,7 @@ Vendor-defined subsystem identifier.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,5 +123,8 @@ Header
 <dt><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/identifiers-for-pci-devices">Identifiers for PCI Devices</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20VPCI_PNP_ID structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

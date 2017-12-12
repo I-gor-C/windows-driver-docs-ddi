@@ -7,8 +7,8 @@ old-location: netvista\ndis_device_power_state.htm
 old-project: netvista
 ms.assetid: d241b0ee-7b13-453d-ac6a-015b82effb95
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_DEVICE_POWER_STATE, *PNDIS_DEVICE_POWER_STATE, NDIS_DEVICE_POWER_STATE
+ms.date: 12/8/2017
+ms.keywords: _NDIS_DEVICE_POWER_STATE, NDIS_DEVICE_POWER_STATE, *PNDIS_DEVICE_POWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -58,6 +58,7 @@ The <b>NDIS_DEVICE_POWER_STATE</b> enumeration defines device power state values
 
 
 
+
 ## -syntax
 
 ````
@@ -96,11 +97,13 @@ Depending on the capabilities of the network adapter and its miniport driver, th
 
 <b>NDIS_DEVICE_POWER_STATE</b> enumeration values are used in the <a href="netvista.ndis_pm_capabilities">NDIS_PM_CAPABILITIES</a>, <a href="netvista.ndis_sriov_set_vf_power_state_parameters">NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</a>,  and <a href="netvista.net_pnp_event">NET_PNP_EVENT</a> structures, the <a href="netvista.ndismidlenotificationconfirm">NdisMIdleNotificationConfirm</a> function, and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569774">OID_PNP_CAPABILITIES</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff569778">OID_PNP_QUERY_POWER</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff569780">OID_PNP_SET_POWER</a> OID requests.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,5 +138,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_DEVICE_POWER_STATE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_DEVICE_POWER_STATE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

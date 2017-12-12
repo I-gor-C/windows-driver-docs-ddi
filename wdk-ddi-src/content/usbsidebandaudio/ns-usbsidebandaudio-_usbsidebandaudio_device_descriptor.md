@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 66EDD6E5-F6EB-42C9-8B68-3A19DED7DCB8
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
+ms.keywords: _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 TBD
+
 
 
 ## -syntax
@@ -60,22 +62,27 @@ typedef struct _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR {
 
 TBD
 
+
 ### -field Reserved 1
 
 TBD
+
 
 ### -field Reserved 2
 
 TBD
 
+
 ## -remarks
 TBD
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

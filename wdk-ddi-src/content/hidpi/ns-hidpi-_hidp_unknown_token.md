@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 6c9e0477-1698-41bf-9ce6-43e7e8741425
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _HIDP_UNKNOWN_TOKEN, *PHIDP_UNKNOWN_TOKEN, HIDP_UNKNOWN_TOKEN
+ms.keywords: _HIDP_UNKNOWN_TOKEN, HIDP_UNKNOWN_TOKEN, *PHIDP_UNKNOWN_TOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The HIDP_UNKNOWN_TOKEN structure contains information about a global item that the HID parser did not recognize.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct _HIDP_UNKNOWN_TOKEN {
 
 Specifies the one-byte prefix of a global item.
 
+
 ### -field Reserved
 
 Reserved for internal system use.
+
 
 ### -field BitField
 
 Specifies the data part of the global item.
 
+
 ## -remarks
 HIDP_UNKNOWN_TOKEN is designed to be used with the <a href="hid.hidp_extended_attributes">HIDP_EXTENDED_ATTRIBUTES</a> structure. <a href="hid.hidp_getextendedattributes">HidP_GetExtendedAttributes</a> returns a HIDP_EXTENDED_ATTRIBUTES structure, which contains a variable length array of <b>HIDP_UNKNOWN_TOKEN</b> structures.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -93,5 +99,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_UNKNOWN_TOKEN structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasGetChangedValueLong </b>function determines whether a property with a long integer value has been changed by an application.
 
 
+
 ## -syntax
 
 ````
@@ -61,33 +62,41 @@ HRESULT _stdcall wiasGetChangedValueLong(
 
 Pointer to a WIA item context.
 
+
 ### -param pContext [in]
 
 Pointer to a <a href="image.wia_property_context">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
+
 
 ### -param bNoValidation 
 
 Indicates whether the property's current value should be validated against its set of valid values. If this parameter is set to <b>TRUE</b>, the function does not perform validation on the property. If it is <b>FALSE</b>, the function performs data validation. 
 
+
 ### -param propID 
 
 Specifies the property identifier of the property being tested.
+
 
 ### -param pValInfo [out]
 
 Pointer to a <a href="image.wias_changed_value_info">WIAS_CHANGED_VALUE_INFO</a> structure that contains the current and previous values of the property.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).
 
+
 ## -remarks
 The driver should validate the property only after the driver has updated the values of the property. The driver updates the values as a result of property changes requested by the application.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +139,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -154,5 +168,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasGetChangedValueLong function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

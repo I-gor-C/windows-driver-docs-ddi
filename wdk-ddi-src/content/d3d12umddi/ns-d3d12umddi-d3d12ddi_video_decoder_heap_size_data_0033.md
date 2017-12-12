@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decoder-heap-size-data-0033.htm
 old-project: display
 ms.assetid: beec0f3e-f87b-408b-8745-14b556254d77
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA_0033, D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA_0033
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The video decoder heap size data.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA_0033 {
 
 The video decoder heap description.
 
+
 ### -field MemoryPoolL0Size
 
 The memory pool L0 size.
 
+
 ### -field MemoryPoolL1Size
 
 The memory pool L1 size.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ The memory pool L1 size.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

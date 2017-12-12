@@ -7,7 +7,7 @@ old-location: display\dxgkcb_multiplaneoverlaydisabled.htm
 old-project: display
 ms.assetid: EA9FAB26-1EAF-4E67-B240-094BC2B03DEF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: requires_max_(PASSIVE_LEVEL)
 This callback allows the kernel mode driver to indicate that the current multiplane overlay configuration is no longer supported on the specified VidPnSourceId.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ This callback allows the kernel mode driver to indicate that the current multipl
 
 Indicates the adapter on which the current multiplane overlay hardware configuration is no longer supported.
 
+
 ### -param VidPnSourceId [in]
 
 Indicates the VidPnSourceId on which the current multiplane overlay hardware configuration is no longer supported.
+
 
 ## -returns
 DXGKCB_MULTIPLANEOVERLAYDISABLED returns one of the following values:
@@ -68,6 +71,7 @@ DXGKCB_MULTIPLANEOVERLAYDISABLED returns one of the following values:
 </dl>If the call has been successfully completed.
 
  
+
 
 ## -remarks
 This callback will notify the DWM that the current MPO configuration is no longer supported, allowing the DWM to fall back to composition. 
@@ -79,11 +83,13 @@ This callback can be used in the following scenarios:
 
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -94,9 +100,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 requires_max_(PASSIVE_LEVEL)
+
 </td>
 </tr>
 </table>

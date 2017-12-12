@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 STREAM_PROPERTY_DESCRIPTOR specifies the parameters of property get/set requests that the class driver passes to the minidriver.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _STREAM_PROPERTY_DESCRIPTOR {
 
 Specifies the property to be read/written.
 
+
 ### -field PropertySetID
 
 Specifies the index of the property set within either the <a href="stream.hw_stream_header">HW_STREAM_HEADER</a>'s <b>DevicePropertiesArray</b> (for minidriver properties) or the <a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a>'s <b>StreamPropertiesArray</b> (for stream properties).
+
 
 ### -field PropertyInfo
 
 Points to a buffer that the property data will be read from or written to.
 
+
 ### -field PropertyInputSize
 
 Size of the <b>Property</b> buffer.
 
+
 ### -field PropertyOutputSize
 
 Size of the <b>PropertyInfo</b> buffer.
+
 
 ## -remarks
 
@@ -85,6 +91,7 @@ Size of the <b>PropertyInfo</b> buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

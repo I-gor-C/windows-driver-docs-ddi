@@ -41,6 +41,7 @@ req.irql:
 This structure defines specific data elements associated with  carrier wave test results returned from the driver.
 
 
+
 ## -syntax
 
 ````
@@ -61,19 +62,24 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field TestResultStatus
 
 NTSTATUS value indicating whether this fix contains a valid data, or if the GNSS engine or driver encountered any errors in getting the measurements for the carrier wave test.
+
 <ul>
 <li>
 Success - carrier wave test successfully started.
+
 </li>
 <li>
 Failed - with error code: test not implemented, carrier wave test already in progress, fix session in progress, or other failure.
+
 </li>
 </ul>
 
@@ -81,14 +87,18 @@ Failed - with error code: test not implemented, carrier wave test already in pro
 
 Signal to noise ratio in the carrier wave in dB-Hz.
 
+
 ### -field Frequency
 
 Frequency of the carrier wave detected in the measurement band.
+
 This frequency is provided as a difference to GPS frequency (1575.42 MHz) in kHz.
+
 
 ### -field Unused[512]
 
 Padding buffer.
+
 
 ## -remarks
 
@@ -98,6 +108,7 @@ Padding buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

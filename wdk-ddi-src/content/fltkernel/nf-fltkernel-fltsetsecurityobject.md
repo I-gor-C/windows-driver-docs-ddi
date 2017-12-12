@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltSetSecurityObject</b> sets an object's security state. 
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ NTSTATUS FltSetSecurityObject(
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 File object pointer for the object whose security state is to be set. The caller must have the access specified in the Meaning column of the table shown in the description of the <i>SecurityInformation</i> parameter. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param SecurityInformation [in]
 
 Pointer to a <a href="ifsk.security_information">SECURITY_INFORMATION</a> value specifying the information to be set as a combination of one or more of the following. This parameter is required and cannot be <b>NULL</b>. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -74,41 +78,51 @@ Pointer to a <a href="ifsk.security_information">SECURITY_INFORMATION</a> value 
 <tr>
 <td>
 DACL_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the discretionary access control list (DACL) of the object is to be set. Requires WRITE_DAC access. 
+
 </td>
 </tr>
 <tr>
 <td>
 GROUP_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the primary group identifier of the object is to be set. Requires WRITE_OWNER access. 
+
 </td>
 </tr>
 <tr>
 <td>
 OWNER_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the owner identifier of the object is to be set. Requires WRITE_OWNER access. 
+
 </td>
 </tr>
 <tr>
 <td>
 SACL_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the system ACL (SACL) of the object is to be set. Requires ACCESS_SYSTEM_SECURITY access. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param SecurityDescriptor [in]
 
 Pointer to the security descriptor to be set for the object. 
+
 
 ## -returns
 <b>FltSetSecurityObject</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -139,6 +153,7 @@ Pointer to the security descriptor to be set for the object.
 
  
 
+
 ## -remarks
 The <b>FltSetSecurityObject</b> routine is present and supported starting with Windows Vista.  In Windows 2000, Windows XP, and Server 2003 SP1, the routine is present but not supported, and will return STATUS_NOT_IMPLEMENTED if called in any of these environments.
 
@@ -146,11 +161,13 @@ A security descriptor can be in absolute or self-relative form. In self-relative
 
 For more information about security and access control, see the documentation on these topics in the Windows SDK. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -161,6 +178,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,6 +189,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -181,6 +200,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -191,9 +211,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -217,5 +239,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetSecurityObject function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

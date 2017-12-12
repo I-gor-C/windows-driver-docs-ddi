@@ -7,8 +7,8 @@ old-location: storage\scsiwmiguidreginfo.htm
 old-project: storage
 ms.assetid: 7116445e-751b-478a-8e58-8f5c90d06b9b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO
+ms.date: 12/8/2017
+ms.keywords: PSCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver. 
 
 
+
 ## -syntax
 
 ````
@@ -59,26 +60,33 @@ typedef struct {
 
 Points to the GUID that identifies the block. 
 
+
 ### -field InstanceCount
 
 Specifies the number of instances defined for the block.
+
 
 ### -field Flags
 
 Indicates characteristics of the block. The SCSI port driver sets all but the following WMIREG_FLAG_<i>XXX</i> on behalf of the miniport driver. A miniport driver might set one or more of the following flags: 
 
 
+
+
 ### -field WMIREG_FLAG_EVENT_ONLY_GUID
 
 The block can be enabled or disabled as an event only, and cannot be queried or set. If this flag is clear, the block can also be queried or set. 
+
 
 ### -field WMIREG_FLAG_EXPENSIVE
 
 Requests the port driver send an enable-collection SRB the first time a data consumer opens the data block and a disable-collection SRB when the last data consumer closes the data block. This is recommended if collecting such data affects performance. A miniport driver need not collect the data until a data consumer explicitly requests it by opening the block. 
 
+
 ### -field WMIREG_FLAG_REMOVE_GUID
 
 Removes support for a previously registered block when set.
+
 </dd>
 </dl>
 
@@ -89,11 +97,13 @@ A miniport driver's SCSIWMIREGGUID array should include any standard data blocks
 
 For more information about defining blocks, <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +126,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSIWMIGUIDREGINFO structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSIWMIGUIDREGINFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

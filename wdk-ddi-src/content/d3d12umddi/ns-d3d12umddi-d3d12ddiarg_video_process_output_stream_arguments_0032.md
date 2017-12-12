@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-video-process-output-stream-arguments-0032.htm
 old-project: display
 ms.assetid: 3a77f454-3214-42bb-9322-c881ba567317
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0032, D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The video process output stream arguments.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0032 {
 
 An output stream of bytes.
 
+
 ### -field TargetRectangle
 
 The source rectangle to process output video stream.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The source rectangle to process output video stream.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

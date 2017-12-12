@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdffdo.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,7 +16,7 @@ Wdffdo.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_FDO_EVENT_CALLBACKS_INIT function](nf-wdffdo-wdf-fdo-event-callbacks-init.md) | The WDF_FDO_EVENT_CALLBACKS_INIT function initializes a WDF_FDO_EVENT_CALLBACKS structure. |
+| [WDF_FDO_EVENT_CALLBACKS_INIT function](nf-wdffdo-wdf_fdo_event_callbacks_init.md) | The WDF_FDO_EVENT_CALLBACKS_INIT function initializes a WDF_FDO_EVENT_CALLBACKS structure. |
 | [WdfFdoAddStaticChild function](nf-wdffdo-wdffdoaddstaticchild.md) | The WdfFdoAddStaticChild method adds a specified device to a function driver's list of child devices that have been identified by static enumeration. |
 | [WdfFdoGetDefaultChildList function](nf-wdffdo-wdffdogetdefaultchildlist.md) | The WdfFdoGetDefaultChildList method returns a handle to a specified device's default child list. |
 | [WdfFdoInitAllocAndQueryProperty function](nf-wdffdo-wdffdoinitallocandqueryproperty.md) | The WdfFdoInitAllocAndQueryProperty method allocates a buffer and retrieves a specified device property. |
@@ -32,10 +37,10 @@ Wdffdo.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES callback](nc-wdffdo-evt-wdf-device-remove-added-resources.md) | A driver's EvtDeviceRemoveAddedResources event callback function removes hardware resources that the driver's EvtDeviceFilterAddResourceRequirements callback function added. |
+| [EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES callback](nc-wdffdo-evt_wdf_device_remove_added_resources.md) | A driver's EvtDeviceRemoveAddedResources event callback function removes hardware resources that the driver's EvtDeviceFilterAddResourceRequirements callback function added. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_FDO_EVENT_CALLBACKS structure](ns-wdffdo--wdf-fdo-event-callbacks.md) | The WDF_FDO_EVENT_CALLBACKS structure contains pointers to a function driver's PnP event callback functions. |
+| [_WDF_FDO_EVENT_CALLBACKS structure](ns-wdffdo-_wdf_fdo_event_callbacks.md) | The WDF_FDO_EVENT_CALLBACKS structure contains pointers to a function driver's PnP event callback functions. |

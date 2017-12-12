@@ -42,7 +42,10 @@ req.product: Windows 10 or later.
 
 Sends a vendor-defined request to a USB device, using the control pipe, and optionally sends or receives additional data.
 
+
+
 Sends a vendor-defined request to a USB device, using the control pipe, and optionally sends or receives additional data.
+
 
 
 ## -ioctlparameters
@@ -50,14 +53,18 @@ Sends a vendor-defined request to a USB device, using the control pipe, and opti
 ### -input-buffer
 Pointer to an <a href="image.io_block_ex">IO_BLOCK_EX</a> structure.
 
+
 ### -input-buffer-length
 Size of the input buffer.
+
 
 ### -output-buffer
 Pointer to the same buffer the <b>pbyData</b> member of the IO_BLOCK_EX structure identified, or <b>NULL</b> if a data transfer is not being requested.
 
+
 ### -output-buffer-length
 Size of the output buffer, or zero if a data transfer is not being requested.
+
 
 ### -in-out-buffer
 
@@ -70,6 +77,7 @@ Size of the output buffer, or zero if a data transfer is not being requested.
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 
@@ -172,11 +180,13 @@ The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLAS
 
 For more information, see <a href="https://msdn.microsoft.com/f9216d3c-4930-4c26-8eac-6ee500b038e0">Accessing Kernel-Mode Drivers for Still Image Devices</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

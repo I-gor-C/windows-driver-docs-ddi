@@ -7,7 +7,7 @@ old-location: smartcrd\ioctl_smartcard_get_last_error.htm
 old-project: smartcrd
 ms.assetid: eb482764-3a78-498b-985c-1efc77000291
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GdiStartPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,10 @@ req.product: Windows 10 or later.
 
 The IOCTL_SMARTCARD_GET_LAST_ERROR request retrieves the error code of the most previous operation because there is no option to return an error code immediately after an overlapped operation is complete.
 
+
+
 The IOCTL_SMARTCARD_GET_LAST_ERROR request retrieves the error code of the most previous operation because there is no option to return an error code immediately after an overlapped operation is complete.
+
 
 
 ## -ioctlparameters
@@ -51,6 +54,7 @@ The IOCTL_SMARTCARD_GET_LAST_ERROR request retrieves the error code of the most 
 <i>DiocParams-&gt;cbOutBuffer</i>
 
 Contains the size of the output buffer. Must be at least <b>sizeof</b>(ULONG).
+
 
 ### -input-buffer-length
 
@@ -64,6 +68,7 @@ Receives the error code.
 <i>DiocParams-&gt;lpcbBytesReturned</i>
 
 Must be set to <b>sizeof</b>(ULONG).
+
 
 ### -output-buffer-length
 
@@ -83,6 +88,7 @@ I/O Status block
 
 Be aware that when your driver uses the smart card driver library, you should store the result of the most previously overlapped operation in the smart card extension. ion. The library will use your stored value to answer this call automatically.
 
+
 ## -remarks
 
 
@@ -91,6 +97,7 @@ Be aware that when your driver uses the smart card driver library, you should st
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,5 +114,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [smartcrd\smartcrd]:%20IOCTL_SMARTCARD_GET_LAST_ERROR control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [smartcrd\smartcrd]:%20IOCTL_SMARTCARD_GET_LAST_ERROR control code%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 The FILE_COMPRESSION_INFORMATION structure describes the state of a compressed data buffer.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct _FILE_COMPRESSION_INFORMATION {
 
 The size, in bytes, of the compressed file.
 
+
 ### -field CompressionFormat
 
 The compression format. This member must have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -72,46 +75,58 @@ The compression format. This member must have one of the following values:
 <tr>
 <td>
 COMPRESSION_FORMAT_NONE
+
 </td>
 <td>
 No compression format.
+
 </td>
 </tr>
 <tr>
 <td>
 COMPRESSION_FORMAT_DEFAULT
+
 </td>
 <td>
 Default compression format.
+
 </td>
 </tr>
 <tr>
 <td>
 COMPRESSION_FORMAT_LZNT1
+
 </td>
 <td>
 LZNT1 compression format.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field CompressionUnitShift
 
 The log, base 2, of the number of clusters per compression
+
 unit. In the NTFS file system, this value is NTFS_CLUSTERS_PER_COMPRESSION.
+
 
 ### -field ChunkShift
 
 The log, base 2, of the number of bytes in a chunk. In other words, the size in bytes of the chunk is 2 ** <b>ChunkShift</b>, or (1 &lt;&lt; <b>ChunkShift</b>). 
 
+
 ### -field ClusterShift
 
 The log, base 2, of the minimum number of clusters by which compression must reduce the size of the compression unit. If compression does not reduce the size of the compression unit by at least 2 ** <b>ClusterShift</b> clusters (or 1 &lt;&lt; <b>ClusterShift</b> clusters), compression will not occur. Each compression unit must occupy at least one cluster less than the uncompressed data would occupy.
 
+
 ### -field Reserved
 
 Reserved
+
 
 ## -remarks
 
@@ -121,6 +136,7 @@ Reserved
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +159,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_COMPRESSION_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

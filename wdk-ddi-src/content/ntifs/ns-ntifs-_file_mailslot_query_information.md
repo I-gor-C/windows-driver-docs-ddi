@@ -41,6 +41,7 @@ req.irql:
 The <b>FILE_MAILSLOT_QUERY_INFORMATION</b> structure contains information about a  mailslot.
 
 
+
 ## -syntax
 
 ````
@@ -62,15 +63,18 @@ typedef struct _FILE_MAILSLOT_QUERY_INFORMATION {
 The maximum size, in bytes, of a single message that can be written to the mailslot, or 0 for a message of any size.
 
 
+
 ### -field MailslotQuota
 
 
 The size, in bytes, of the in-memory pool that is reserved for writes to this mailslot. 
 
 
+
 ### -field NextMessageSize
 
 The next message size, in bytes.
+
 
 
 ### -field MessagesAvailable
@@ -80,28 +84,34 @@ The next message size, in bytes.
 The total number of messages waiting to be read from the mailslot.
 
 
+
 ### -field ReadTimeout
 
   
 The time, in milliseconds, that a read operation can wait for a message to be written to the mailslot before a time-out occurs. A value of –1 requests that the read wait forever for a message, without timing out. A value of 0 requests that the read not wait and return immediately whether a pending message is available to be read or not.
 
 
+
 ## -remarks
 For more information, see <a href="base.mailslots">Mailslots</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPortWMIRegistration</code> interface is provided in Windows 7 and later versions of Windows. This interface allows the miniport driver to coordinate Event Tracing for Windows (ETW) registration between PortCls and the miniport driver.
+
 ETW provides a mechanism to trace and log events that are raised by user-mode applications and kernel-mode drivers. For more information about ETW, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=154129">Improve Debugging And Performance Tuning With ETW</a>.
+
 
 
 ## -inheritance
@@ -52,6 +54,7 @@ The <code>RegisterWMIProvider</code> method registers the <a href="https://msdn.
 The <code>UnregisterWMIProvider</code> method unregisters the <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a> (ETW) interface that was previously registered with a call to the RegisterWMIProvider method. The unregistration disables the ETW registration with PortCls.
 
  
+
 
 ## -members
 The <b>IPortWMIRegistration</b> interface has these methods.
@@ -66,6 +69,7 @@ The <b>IPortWMIRegistration</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <code>RegisterWMIProvider</code> method registers the <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a> (ETW) capability of the miniport driver with PortCls.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -74,6 +78,7 @@ The <code>RegisterWMIProvider</code> method registers the <a href="https://msdn.
 </td>
 <td align="left" width="63%">
 The <code>UnregisterWMIProvider</code> method unregisters the <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a> (ETW) interface that was previously registered with a call to the RegisterWMIProvider method. The unregistration disables the ETW registration with PortCls.
+
 </td>
 </tr>
 </table>The <code>RegisterWMIProvider</code> method registers the <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a> (ETW) capability of the miniport driver with PortCls.
@@ -81,6 +86,7 @@ The <code>UnregisterWMIProvider</code> method unregisters the <a href="https://m
 The <code>UnregisterWMIProvider</code> method unregisters the <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a> (ETW) interface that was previously registered with a call to the RegisterWMIProvider method. The unregistration disables the ETW registration with PortCls.
 
  
+
 
 ## -remarks
 
@@ -90,6 +96,7 @@ The <code>UnregisterWMIProvider</code> method unregisters the <a href="https://m
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

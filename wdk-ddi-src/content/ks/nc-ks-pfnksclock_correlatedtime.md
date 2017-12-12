@@ -41,6 +41,7 @@ req.irql:
 <i>KStrClockGetCorrelatedPhysicalTime</i> is a system-supplied routine that retrieves both the current system time minus suspended delta and the corresponding clock tick since boot.
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ LONGLONG FASTCALL KStrClockGetCorrelatedPhysicalTime(
 
 A pointer to the <a href="kernel.file_object">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.
 
+
 ### -param SystemTime [out]
 
 A pointer to a 64-bit integer containing the number of clock ticks since system boot.
 
+
 ## -returns
 This routine returns the current system time (minus any suspended delta) as a value of type LONGLONG. This value is specified in 100 nanosecond units.
+
 
 ## -remarks
 You can obtain an entry point for this routine by supplying a driver-allocated <a href="stream.ksclock_functiontable">KSCLOCK_FUNCTIONTABLE</a> structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a> request.
@@ -74,11 +78,13 @@ The system time is acquired from <a href="kernel.kequeryperformancecounter">KeQu
 
 Both time values are specified in 100 nanosecond units.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,6 +95,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +121,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrClockGetCorrelatedPhysicalTime routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

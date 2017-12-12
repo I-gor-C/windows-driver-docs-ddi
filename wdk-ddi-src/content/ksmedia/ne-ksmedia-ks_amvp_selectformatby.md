@@ -41,6 +41,7 @@ req.irql:
 The KS_AMVP_SELECTFORMATBY enumeration specifies the criteria that the Overlay Mixer Filter should use to select the video format.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 The format does not matter.
 
+
 ### -field KS_AMVP_BEST_BANDWIDTH
 
 Use the largest available bandwidth.
 
+
 ### -field KS_AMVP_INPUT_SAME_AS_OUTPUT
 
 Use the same format for output as input.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Use the same format for output as input.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

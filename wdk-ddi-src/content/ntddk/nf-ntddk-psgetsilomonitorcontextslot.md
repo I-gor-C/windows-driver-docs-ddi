@@ -7,7 +7,7 @@ old-location: kernel\psgetsilomonitorcontextslot.htm
 old-project: kernel
 ms.assetid: 0871EA8C-4F59-451E-89FB-8A0D44219456
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsGetSiloMonitorContextSlot
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine returns the silo context slot that was allocated by the monitor during the registration.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ ULONG PsGetSiloMonitorContextSlot(
 
 A pointer to the silo monitor.
 
+
 ## -returns
 A valid silo context slot.
+
 
 ## -remarks
 
@@ -67,22 +70,27 @@ A valid silo context slot.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

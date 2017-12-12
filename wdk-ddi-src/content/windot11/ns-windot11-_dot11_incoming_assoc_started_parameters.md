@@ -7,8 +7,8 @@ old-location: netvista\dot11_incoming_assoc_started_parameters.htm
 old-project: netvista
 ms.assetid: 8bf8d69a-0c47-48c1-83f5-d436a3ab8323
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_INCOMING_ASSOC_STARTED_PARAMETERS, DOT11_INCOMING_ASSOC_STARTED_PARAMETERS, *PDOT11_INCOMING_ASSOC_STARTED_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _DOT11_INCOMING_ASSOC_STARTED_PARAMETERS, *PDOT11_INCOMING_ASSOC_STARTED_PARAMETERS, DOT11_INCOMING_ASSOC_STARTED_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -58,8 +58,11 @@ The type, revision, and size of the DOT11_INCOMING_ASSOC_STARTED_PARAMETERS stru
      is formatted as an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 <table>
 <tr>
@@ -69,37 +72,46 @@ The miniport driver must set the members of
 <tr>
 <td width="40%">
 <a id="Type"></a><a id="type"></a><a id="TYPE"></a>Type
+
 </td>
 <td width="60%">
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
 </td>
 </tr>
 <tr>
 <td width="40%">
 <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a>Revision
+
 </td>
 <td width="60%">
 This member must be set to DOT11_INCOMING_ASSOC_STARTED_PARAMETERS_REVISION_1.
+
 </td>
 </tr>
 <tr>
 <td width="40%">
 <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+
 </td>
 <td width="60%">
 This member must be set to 
        <b>sizeof</b>(DOT11_INCOMING_ASSOC_STARTED_PARAMETERS).
+
 </td>
 </tr>
 </table>
  
+
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field PeerMacAddr
 
 The media access control (MAC) address of the peer station that sent an 802.11 authentication
      request.
+
 
 ## -remarks
 The Native 802.11 miniport driver includes a DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure when
@@ -107,20 +119,24 @@ The Native 802.11 miniport driver includes a DOT11_INCOMING_ASSOC_STARTED_PARAME
     <a href="netvista.ndis_status_dot11_incoming_assoc_started">
     NDIS_STATUS_DOT11_INCOMING_ASSOC_STARTED</a> status indication.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,5 +157,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

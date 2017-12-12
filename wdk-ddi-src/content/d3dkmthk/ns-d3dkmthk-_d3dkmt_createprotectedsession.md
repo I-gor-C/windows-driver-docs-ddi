@@ -7,7 +7,7 @@ old-location: display\d3dkmt-createprotectedsession.htm
 old-project: display
 ms.assetid: 4ec42f5a-df33-4da3-a959-64cb400f3177
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_CREATEPROTECTEDSESSION, D3DKMT_CREATEPROTECTEDSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to create a protected session.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _D3DKMT_CREATEPROTECTEDSESSION {
 
 A handle for the device.
 
+
 ### -field hSyncObject
 
 A monitored fence handle associated with the session.
+
 
 ### -field pPrivateDriverData
 
 Private driver data.
 
+
 ### -field PrivateDriverDataSize
 
 Size of private driver data.
+
 
 ### -field pPrivateRuntimeData
 
 Private runtime data.
 
+
 ### -field PrivateRuntimeDataSize
 
 Size of private runtime data.
 
+
 ### -field hHandle
 
 The protected session handle.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ The protected session handle.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

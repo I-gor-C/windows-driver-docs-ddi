@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlDecompressBufferEx</b> function decompresses an entire compressed buffer.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ NTSTATUS RtlDecompressBufferEx(
 ### -param CompressionFormat [in]
 
 A bitmask that specifies the compression format of the compressed buffer. This parameter must be set to COMPRESSION_FORMAT_LZNT1. The meaning of this and other related compression format values are as follows.
+
 <table>
 <tr>
 <th>Value</th>
@@ -73,6 +75,7 @@ A bitmask that specifies the compression format of the compressed buffer. This p
 </td>
 <td width="60%">
 Not supported by this function.
+
 </td>
 </tr>
 <tr>
@@ -82,6 +85,7 @@ Not supported by this function.
 </td>
 <td width="60%">
 Not supported by this function.
+
 </td>
 </tr>
 <tr>
@@ -91,6 +95,7 @@ Not supported by this function.
 </td>
 <td width="60%">
 The function will perform LZ decompression.
+
 </td>
 </tr>
 <tr>
@@ -100,6 +105,7 @@ The function will perform LZ decompression.
 </td>
 <td width="60%">
 The function will perform Xpress decompression.
+
 </td>
 </tr>
 <tr>
@@ -109,34 +115,42 @@ The function will perform Xpress decompression.
 </td>
 <td width="60%">
 The function will perform Xpress Huffman decompression.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param UncompressedBuffer [out]
 
 A pointer to a caller-allocated buffer (allocated from paged or non-paged pool) that receives the decompressed data from <i>CompressedBuffer</i>. This parameter is required and cannot be <b>NULL</b>.
+
 
 ### -param UncompressedBufferSize [in]
 
 The size, in bytes, of the <i>UncompressedBuffer</i>buffer.
 
+
 ### -param CompressedBuffer [in]
 
 A pointer to the buffer that contains the data to decompress. This parameter is required and cannot be <b>NULL</b>.
+
 
 ### -param CompressedBufferSize [in]
 
 The size, in bytes, of the <i>CompressedBuffer</i> buffer.
 
+
 ### -param FinalUncompressedSize [out]
 
 A pointer to a caller-allocated variable that receives the size, in bytes, of the decompressed data stored in <i>UncompressedBuffer</i>. This parameter is required and cannot be <b>NULL</b>.
 
+
 ### -param WorkSpace [in]
 
 A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressBufferEx</b> function during decompression. Use the <a href="ifsk.rtlgetcompressionworkspacesize">RtlGetCompressionWorkSpaceSize</a> function to determine the correct work space buffer size.
+
 
 ## -returns
 <b>RtlDecompressBufferEx</b> returns an appropriate error status value, such as one of the following.
@@ -165,6 +179,7 @@ A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressBu
 
  
 
+
 ## -remarks
 The <b>RtlDecompressBufferEx</b> function takes as input an entire compressed buffer and produces its decompressed equivalent provided that the uncompressed data fits within the specified destination buffer.
 
@@ -172,11 +187,13 @@ To decompress only a portion of a compressed buffer (that is, a "fragment" of th
 
 To compress an uncompressed buffer, use the <a href="ifsk.rtlcompressbuffer">RtlCompressBuffer</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -187,14 +204,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting in Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -205,6 +225,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -215,6 +236,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -225,9 +247,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -254,5 +278,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDecompressBufferEx function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 The <b>KsTopologyPropertyHandler</b> function performs standard handling of the static members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> Property Set. The function uses the <a href="stream.kstopology">KSTOPOLOGY</a> structure, which describes the set of information that is returned by this property set.
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ NTSTATUS KsTopologyPropertyHandler(
 
 Specifies the IRP handling the property request.
 
+
 ### -param Property [in]
 
 Specifies the specific property being queried.
+
 
 ### -param Data [in, out]
 
 Specifies the topology property-specific data.
 
+
 ### -param Topology [in]
 
 Points to a <a href="stream.kstopology">KSTOPOLOGY</a> structure containing the topology information.
 
+
 ## -returns
 The <b>KsTopologyPropertyHandler</b> function returns STATUS_SUCCESS if successful, or it returns an error specific to the property being handled. The function always fills in the IO_STATUS_BLOCK.Information field of the PIRP.IoStatus element within the IRP. It does not set the IO_STATUS_BLOCK.Status field, nor does it complete the IRP. 
+
 
 ## -remarks
 
@@ -82,6 +88,7 @@ The <b>KsTopologyPropertyHandler</b> function returns STATUS_SUCCESS if successf
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

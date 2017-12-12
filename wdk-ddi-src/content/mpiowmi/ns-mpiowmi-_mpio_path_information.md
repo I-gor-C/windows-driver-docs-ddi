@@ -7,7 +7,7 @@ old-location: storage\mpio_path_information.htm
 old-project: storage
 ms.assetid: 12383ae0-69c8-4546-9560-08aa4a50de8e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MPIO_PATH_INFORMATION, *PMPIO_PATH_INFORMATION, MPIO_PATH_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_PATH_INFORMATION structure represents a top-level view of all the paths that are under MPIO control. To query the path information, the request must be sent to the MPIO control object by using its WMI instance name.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _MPIO_PATH_INFORMATION {
 
 An unsigned 32-bitfield that represents the total number of paths that MPIO is aware of.
 
+
 ### -field Pad
 
 Should be zero.
 
+
 ### -field PathList
 
 An array that returns information about each of the paths. The number of elements in the array is given by <i>NumberPaths</i> and each element of the array represents an instance of an MPIO_ADAPTER_INFORMATION structure.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ An array that returns information about each of the paths. The number of element
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

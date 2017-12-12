@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_filter_counter.htm
 old-project: netvista
 ms.assetid: 74660B47-0219-4724-AD7E-B20A2BB520EB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_PD_FILTER_COUNTER, NDIS_PD_FILTER_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_PD_FILTER_COUNTER structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 This structure is used to hold counter information for a filter.
+
 
 
 ## -syntax
@@ -57,9 +58,11 @@ typedef struct _NDIS_PD_FILTER_COUNTER {
 
 The amount of packets that match.
 
+
 ### -field BytesMatched
 
 The amount of bytes that match.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The amount of bytes that match.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

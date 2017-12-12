@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_queue_config.htm
 old-project: wdf
 ms.assetid: a58dd106-dec8-4444-9783-eb16e969ea42
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_TASK_QUEUE_CONFIG, *PWDF_TASK_QUEUE_CONFIG, WDF_TASK_QUEUE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 For internal use only.
+
 
 
 ## -syntax
@@ -76,14 +77,17 @@ typedef struct _WDF_TASK_QUEUE_CONFIG {
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

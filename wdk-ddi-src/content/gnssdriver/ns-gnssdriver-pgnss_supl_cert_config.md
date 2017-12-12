@@ -41,6 +41,7 @@ req.irql:
 This structure contains SUPL certificate information.
 
 
+
 ## -syntax
 
 ````
@@ -63,63 +64,80 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field CertAction
 
 A <a href="..\gnssdriver\ne-gnssdriver-gnss_supl_cert_action.md">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.
+
 <table></table>
  
+
 <table>
 <tr>
 <td>
 <b>GNSS_SUPL_CERT_INJECT</b>
+
 </td>
 <td>
 Inject the certificate.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>GNSS_SUPL_CERT_DELETE</b>
+
 </td>
 <td>
 Delete the certificate specified by <b>SuplCertName</b>. The values of <b>CertSize</b> and <b>CertData</b> are ignored.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>GNSS_SUPL_CERT_PURGE</b>
+
 </td>
 <td>
 Delete all the certificates injected to the GNSS driver previously. The values of <b>SuplCertName</b> , <b>CertSize</b>, and <b>CertData</b> are ignored.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field SuplCertName[MAX_PATH]
 
 String containing the certificate name.
 
+
 ### -field IsRoot
 
 Specify whether the certificate is a root certificate.
+
 Multiple root certificates can be configured since some mobile operator require this functionality. An IHV supporting SUPL should have support for multiple certificates.
+
 
 ### -field CertSize
 
 The size of the certificate in bytes.
 
+
 ### -field Unused[512]
 
 Padding buffer.
 
+
 ### -field CertData[ANYSIZE_ARRAY]
 
 The binary content of the certificate.  The total size of the bytes is defined by <b>CertSize</b>. The certificate is Base64 encoded.
+
 
 ## -remarks
 
@@ -129,6 +147,7 @@ The binary content of the certificate.  The total size of the bytes is defined b
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

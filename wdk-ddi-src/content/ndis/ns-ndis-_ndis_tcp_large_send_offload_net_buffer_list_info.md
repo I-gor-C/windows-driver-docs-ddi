@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_large_send_offload_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 48827a51-d364-43f6-864b-b63395168429
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO, NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO, *PNDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO structure
@@ -42,6 +42,7 @@ The <b>NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO</b> structure specifies 
   offloading large send offload (LSO) tasks from the TCP/IP transport to a miniport adapter. The
   <b>NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO</b> structure is part of the 
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> information.
+
 
 
 ## -syntax
@@ -90,9 +91,11 @@ A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifi
       information and that contains the following members:
       
 
+
 ### -field Unused
 
 A ULONG value that specifies unused space that is reserved for NDIS.
+
 
 ### -field Type
 
@@ -101,9 +104,11 @@ The offload type that the miniport driver should run. Protocol drivers set this 
         NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE to specify large send offload version 2 (LSOV2)
         operations.
 
+
 ### -field Reserved2
 
 Reserved for NDIS.
+
 </dd>
 </dl>
 
@@ -113,11 +118,13 @@ A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifi
       information and that contains the following members:
       
 
+
 ### -field MSS
 
 The maximum segment size (MSS), in bytes, for each packet after segmentaion. The TCP/IP
         transport writes this value before passing a large TCP packet to a miniport driver for segmentation.
         The size of TCP payload in each transmitted segment must not exceed this value.
+
 
 ### -field TcpHeaderOffset
 
@@ -126,15 +133,18 @@ The offset, in bytes, of the TCP header from the beginning of the packet for TCP
         <b>TcpHeaderOffset</b> to determine the location of the TCP header so that they do not have to parse
         IP headers.
 
+
 ### -field Type
 
 The offload type that the miniport driver should run. Protocol drivers set this member to
         NDIS_TCP_LARGE_SEND_OFFLOAD_V1_TYPE to specify LSOV1 operations or to
         NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE to specify LSOV2 operations.
 
+
 ### -field Reserved2
 
 Reserved for NDIS.
+
 </dd>
 </dl>
 
@@ -144,20 +154,24 @@ A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifi
       complete information and that contains the following members:
       
 
+
 ### -field TcpPayload
 
 The total number of TCP payload bytes in a set of packets that a network interface card (NIC)
         created by segmenting a large packet. A miniport driver writes the TCP payload size before completing
         the send of an LSO packet.
 
+
 ### -field Type
 
 The offload type that the miniport driver performed. The mniport drivers leaves this value the
         same as it was when the overlying driver submitted the packet for transmit.
 
+
 ### -field Reserved2
 
 Reserved for NDIS.
+
 </dd>
 </dl>
 
@@ -167,10 +181,12 @@ A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifi
       information and that contains the following members:
       
 
+
 ### -field MSS
 
 The MSS, in bytes, for each TCP segment. The TCP/IP transport writes this value before passing
         a large TCP packet to a miniport driver for segmentation.
+
 
 ### -field TcpHeaderOffset
 
@@ -179,17 +195,20 @@ The offset, in bytes, of the TCP header from the beginning of the packet for TCP
         <b>TcpHeaderOffset</b> to determine the location of the TCP header so that they do not have to parse
         IP headers.
 
+
 ### -field Type
 
 The offload type that the miniport driver should run. Protocol drivers set this member to
         NDIS_TCP_LARGE_SEND_OFFLOAD_V1_TYPE to specify LSOV1 operations or to
         NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE to specify LSOV2 operations.
 
+
 ### -field IPVersion
 
 The IP version of the packet. For IPv4 packets, 
         <b>IPVersion</b> is set to NDIS_TCP_LARGE_SEND_OFFLOAD_IPv4. For IPv6 packets, 
         <b>IPVersion</b> is set to NDIS_TCP_LARGE_SEND_OFFLOAD_IPv6.
+
 </dd>
 </dl>
 
@@ -199,19 +218,24 @@ A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifi
       complete information and that contains the following members:
       
 
+
 ### -field Reserved
 
 In general, this member is reserved for NDIS.  However, when a send operation is complete, the miniport driver must set this member to zero.
+
 
 ### -field Type
 
 The offload type that the miniport driver performed. The mniport driver leaves this value the
         same as it was when the overlying driver submitted the packet for transmit.
+
  For example, when a send operation is complete, the miniport driver sets this member to <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE</b>.
+
 
 ### -field Reserved2
 
 Reserved for NDIS.
+
 </dd>
 </dl>
 
@@ -219,6 +243,7 @@ Reserved for NDIS.
 
 A PVOID version of the LSO information. Use this member to access the raw information instead of
       the specific fields.
+
 
 ## -remarks
 The <b>NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO</b> structure specifies information for LSOV1 and
@@ -239,19 +264,23 @@ The TCP/IP transport updates the
 For LSOV1, miniport drivers write the TCP payload size in the 
     <b>TcpPayload</b> member before completing a send operation for a segmented packet.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -275,5 +304,8 @@ Header
 <dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/network/offloading-the-segmentation-of-large-tcp-packets">Offloading the Segmentation of Large TCP Packets</a></dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

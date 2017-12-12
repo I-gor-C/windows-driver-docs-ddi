@@ -7,7 +7,7 @@ old-location: display\d3dddicb_createhwcontext.htm
 old-project: display
 ms.assetid: DA1C3976-0261-4FF1-8E49-EDF93D7BED22
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDICB_CREATEHWCONTEXT, D3DDDICB_CREATEHWCONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that gives information for creating a hardware context.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _D3DDDICB_CREATEHWCONTEXT {
 
 Specifies the node ordinal this context is targeted to.
 
+
 ### -field EngineAffinity
 
 Specifies the engine affinity within the node.
+
 
 ### -field Flags
 
 Hardware context creation flags.
 
+
 ### -field PrivateDriverDataSize
 
 Size of private driver data.
+
 
 ### -field pPrivateDriverData
 
 Pointer to private driver data.
 
+
 ### -field hHwContext
 
 Handle to the created context.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Handle to the created context.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

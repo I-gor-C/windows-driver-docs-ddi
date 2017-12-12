@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -64,37 +65,46 @@ typedef struct tag_video_open_parms {
 
 Set to the size of the <b>VIDEO_OPEN_PARMS</b> structure.
 
+
 ### -field fccType
 
 'vcap'
+
 
 ### -field fccComp
 
 This member is not used.
 
+
 ### -field dwVersion
 
 Specifies the version of msvideo.
+
 
 ### -field dwFlags
 
 Specifies the type of channel.
 
+
 ### -field dwError
 
 If open fails, specifies why it failed.
+
 
 ### -field pV1Reserved
 
 Reserved.
 
+
 ### -field pV2Reserved
 
 Reserved.
 
+
 ### -field dnDevNode
 
 Specifies the devnode for PnP devices.
+
 
 ## -remarks
 
@@ -104,6 +114,7 @@ Specifies the devnode for PnP devices.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

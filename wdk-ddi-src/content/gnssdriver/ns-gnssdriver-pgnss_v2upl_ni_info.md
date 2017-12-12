@@ -41,6 +41,7 @@ req.irql:
 This structure contains V2UPL NI information.
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,18 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field RequestorId[MAX_PATH]
 
 Requestor ID.
+
 This will be displayed on the notification dialog to the user. The GNSS driver must provide a UNICODE string that is decoded per the encoding scheme required by the mobile operator.
+
 
 ## -remarks
 
@@ -75,6 +80,7 @@ This will be displayed on the notification dialog to the user. The GNSS driver m
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: storage\stor_event_association_enum.htm
 old-project: storage
 ms.assetid: 2e0672b6-e692-43c8-8a20-7947c854c4c9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STOR_EVENT_ASSOCIATION_ENUM, STOR_EVENT_ASSOCIATION_ENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The STOR_EVENT_ASSOCIATION_ENUM enumerator specifies the type of device that is associated with an event.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef enum _STOR_EVENT_ASSOCIATION_ENUM {
 
 The event is associated with the adapter.
 
+
 ### -field StorEventLunAssociation
 
 The event is associated with the LUN.
+
 
 ### -field StorEventTargetAssociation
 
 The event is associated with the target.
 
+
 ### -field StorEventInvalidAssociation
 
 Marks end of valid enumeration range
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Marks end of valid enumeration range
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

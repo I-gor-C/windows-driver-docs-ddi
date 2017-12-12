@@ -7,7 +7,7 @@ old-location: storage\storportgetdeviceobjects.htm
 old-project: storage
 ms.assetid: e48b5048-5f5f-4efb-b7bf-2dd183074516
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortGetDeviceObjects
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortGetDeviceObjects</b> routine returns the device objects that are associated with the adapter device stack. The device objects that will be returned are the functional and physical device objects of the adapter and the device object to which the functional device object is attached. 
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ ULONG StorPortGetDeviceObjects(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param AdapterDeviceObject [out]
 
 A pointer to receive the functional device object (FDO) of the adapter.
+
 
 ### -param PhysicalDeviceObject [out]
 
 A pointer to receive the physical device object (PDO).
 
+
 ### -param LowerDeviceObject [out]
 
 A pointer to receive the device object of lower device to which the FDO is attached.
+
 
 ## -returns
 <b>StorPortGetDeviceObjects</b> returns one of the following status codes:
@@ -86,6 +91,7 @@ A pointer to receive the device object of lower device to which the FDO is attac
 
  
 
+
 ## -remarks
 
 
@@ -94,6 +100,7 @@ A pointer to receive the device object of lower device to which the FDO is attac
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +111,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

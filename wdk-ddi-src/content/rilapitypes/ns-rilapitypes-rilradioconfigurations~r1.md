@@ -7,8 +7,8 @@ old-location: netvista\rilradioconfigurations_2.htm
 old-project: netvista
 ms.assetid: fdd53162-b884-4360-b80a-14225abc1185
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILRADIOCONFIGURATIONS, *LPRILRADIOCONFIGURATIONS, RILRADIOCONFIGURATIONS
+ms.date: 12/8/2017
+ms.keywords: RILRADIOCONFIGURATIONS, RILRADIOCONFIGURATIONS, *LPRILRADIOCONFIGURATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILRADIOCONFIGURATIONS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

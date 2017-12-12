@@ -41,6 +41,7 @@ req.irql:
 The <b>KEYWORDID</b> enumeration identifies the phrase text/function of a keyword. The value is also be used in the Windows Biometric Service adapters.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 Indicates that the keyword was invalid.
 
+
 ### -field  KwVoiceAssistant
 
 Indicates that the "hey Cortana" keyword was used.
 
+
 ### -field       KwSelection       
 
 Indicates the "select" keyword was used.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Indicates the "select" keyword was used.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 IDL
+
 </th>
 <td width="70%">
 <dl>

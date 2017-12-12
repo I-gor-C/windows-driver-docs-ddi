@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 3f2d67e0-abab-40a1-b4a9-cb65e81884e9
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _SRIOV_PF_EVENT, SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -40,6 +40,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The  request indicates that the virtualization stack wants to be notified when one of the events listed in
 <a href="buses._sriov_pf_event">SRIOV_PF_EVENT</a> occurs.  
+
 
 
 ## -syntax
@@ -87,9 +88,11 @@ The  request indicates that the virtualization stack wants to be notified when o
 ### -output-buffer
 A buffer that contains an <a href="buses._sriov_pf_event">SRIOV_PF_EVENT</a>-type value that is filled by the  physical function (PF) driver when it completes the request.
 
+
 ### -output-buffer-length
 A pointer to the variable, which is assigned the number of
     written bytes to the output buffer when the request is completed.
+
 
 ### -in-out-buffer
 
@@ -102,6 +105,7 @@ A pointer to the variable, which is assigned the number of
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.
@@ -121,11 +125,13 @@ that an event notification has been delivered and must not complete two IOCTL re
 
   It is pended by the PF driver until it is canceled by the sender or until the PF driver experiences one of several PnP events, at which point it is completed. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,9 +142,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

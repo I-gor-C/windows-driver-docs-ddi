@@ -7,8 +7,8 @@ old-location: netvista\wwan_modem_config_info.htm
 old-project: netvista
 ms.assetid: 14FBFA51-F4A5-417A-8905-241CEA543774
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_MODEM_CONFIG_INFO, *PWWAN_MODEM_CONFIG_INFO, WWAN_MODEM_CONFIG_INFO
+ms.date: 12/8/2017
+ms.keywords: _WWAN_MODEM_CONFIG_INFO, WWAN_MODEM_CONFIG_INFO, *PWWAN_MODEM_CONFIG_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WWAN_MODEM_CONFIG_INFO</b> structure represents the modem's configuration information.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WWAN_MODEM_CONFIG_INFO {
 
 A formatted <a href="netvista.wwan_modem_config_status">WWAN_MODEM_CONFIG_STATUS</a> structure containing the modem's configuration (config) status.
 
+
 ### -field ConfigMode
 
 The modem's configuration mode. For a list of defined values, see <a href="netvista.wwan_modem_config_mode">WWAN_MODEM_CONFIG_MODE</a>.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ The modem's configuration mode. For a list of defined values, see <a href="netvi
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +112,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

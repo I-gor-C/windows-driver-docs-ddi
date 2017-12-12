@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 HDAudio codec transfer complete callback function. <b>PHDAUDIO_TRANSFER_COMPLETE_CALLBACK</b> is used by the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">PTRANSFER_CODEC_VERBS</a> callback function. 
 
 
+
 ## -prototype
 
 ````
@@ -62,21 +63,26 @@ typedef PHDAUDIO_TRANSFER_COMPLETE_CALLBACK HDAudioTransferCompleteCallback;
 
 A pointer to the codecTransfer array element that contains the codec command and the response that triggered the callback. 
 
+
 ### -param Context 
 
  This is the same  context value that was specified previously in the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">PTRANSFER_CODEC_VERBS</a> routine's callbackContext parameter.
 
+
 ## -returns
 Void
 
+
 ## -remarks
 For more information, see <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">PTRANSFER_CODEC_VERBS</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,9 +93,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

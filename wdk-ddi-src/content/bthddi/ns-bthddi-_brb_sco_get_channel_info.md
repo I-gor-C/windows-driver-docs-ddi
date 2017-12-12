@@ -42,6 +42,7 @@ The _BRB_SCO_GET_CHANNEL_INFO structure describes the settings and statistics of
   channel.
 
 
+
 ## -syntax
 
 ````
@@ -73,19 +74,23 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field BtAddress
 
 The Bluetooth address of the remote device.
 
+
 ### -field ChannelHandle
 
 The handle to the SCO channel to query.
+
 
 ### -field InfoFlags
 
 A flag that determines if baseband information is available for the SCO channel. The following
      flag is defined:
      
+
 <table>
 <tr>
 <th>
@@ -95,27 +100,33 @@ A flag that determines if baseband information is available for the SCO channel.
 <tr>
 <td>
 SCO_INFO_BASEBAND_AVAILABLE
+
 </td>
 <td>
 If set, baseband settings are available for the SCO channel.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field TransmitBandwidth
 
 The transmission bandwidth of the channel, in bytes per second.
 
+
 ### -field ReceiveBandwidth
 
 The reception bandwidth of the channel, in bytes per second.
+
 
 ### -field MaxLatency
 
 A value that represents the upper limit of the sum of the synchronous interval and the size of the
      SCO window, in milliseconds. Possible values are listed in the following table.
      
+
 <table>
 <tr>
 <th>
@@ -125,30 +136,37 @@ A value that represents the upper limit of the sum of the synchronous interval a
 <tr>
 <td>
 0x0000 to 0x0003
+
 </td>
 <td>
 Reserved for future use.
+
 </td>
 </tr>
 <tr>
 <td>
 0x0004 to 0xFFFE
+
 </td>
 <td>
 The range of latency values for the channel.
+
 </td>
 </tr>
 <tr>
 <td>
 0xFFFF
+
 </td>
 <td>
 The channel doesn't have a preferred 
         <b>MaxLatency</b> setting.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field PacketType
 
@@ -156,6 +174,7 @@ A flag or combination of flags that indicates the type of data packets that the 
      supports. These SCO packet types are defined by the Bluetooth SIG. See the Bluetooth specification for
      more information about these flags. Possible values include:
      
+
 
 
 ### -field SCO_HV1
@@ -177,10 +196,12 @@ A flag or combination of flags that indicates the type of data packets that the 
 
 
 
+
 ### -field ContentFormat
 
 The audio voice setting for the channel. Use the following definitions to decode this member:
      
+
 
 
 ### -field SCO_VS_AIR_CODING_DATA
@@ -241,9 +262,11 @@ The audio voice setting for the channel. Use the following definitions to decode
 
 
 
+
 ### -field Reserved
 
 Reserved for future use. Do not use.
+
 
 ### -field RetransmissionEffort
 
@@ -251,11 +274,13 @@ A
      <a href="bltooth.sco_retransmission_effort">SCO_RETRANSMISSION_EFFORT</a> value that
      determines the channel's retransmission policies.
 
+
 ### -field ChannelFlags
 
 Flags that specify how the channel was opened. Valid flag values are listed in the following
      table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -264,39 +289,48 @@ Flags that specify how the channel was opened. Valid flag values are listed in t
 <tr>
 <td>
 SCO_CF_LINK_AUTHENTICATED
+
 </td>
 <td>
 The link must be authenticated.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CF_LINK_ENCRYPTED
+
 </td>
 <td>
 The link must be encrypted. Setting this flag also sets the SCO_CF_LINK_AUTHENTICATED flag.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CF_LINK_SUPPRESS_PIN
+
 </td>
 <td>
 The profile driver indicates its preference that users not be prompted for a PIN.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field HciConnectionHandle
 
 The host controller interface's connection handle for the SCO connection.
+
 
 ### -field LinkType
 
 The 
      <a href="bltooth.sco_link_type">SCO_LINK_TYPE</a> that is associated with the host
      controller interface.
+
 
 ### -field BasebandInfo
 
@@ -305,25 +339,30 @@ A
      contains information for the SCO connection. This information is only available for links established
      using the 1.2 Bluetooth Synchronous Commands.
 
+
 ## -remarks
 To get the settings and statistics of a SCO channel, profile drivers should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
     <a href="bltooth.brb_sco_get_channel_info">
     BRB_SCO_GET_CHANNEL_INFO</a> request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -352,5 +391,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_GET_CHANNEL_INFO structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

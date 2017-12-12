@@ -41,10 +41,12 @@ req.irql:
 A client interested in receiving notifications that a message has been transmitted will send the <b>IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE</b> request to the proximity driver.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 None
+
 
 ### -input-buffer-length
 
@@ -52,6 +54,7 @@ None
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -79,35 +82,45 @@ The client should send another IOCTL each time the pended one is completed.  The
 The following actions are required when using this IOCTL:<ul>
 <li>
 If this IOCTL is received on a handle that hasn’t previously succeeded an <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_set_payload.md">IOCTL_NFP_SET_PAYLOAD</a>, the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.
+
 </li>
 <li>
 The driver must maintain the equivalent of a “CompleteEventImmediately” counter (<b>ULONG</b> or larger) in the publication file handle.
+
 </li>
 <li>
 	When this IOCTL is received in the driver:
+
 <ul>
 <li>
 If the counter is zero, then the driver MUST pend the IOCTL for later completion.
+
 </li>
 <li>
 	If the counter is greater than zero, then the driver MUST decrement the counter by one and complete the IOCTL with STATUS_SUCCESS immediately.
+
 </li>
 </ul>
 </li>
 <li>
 If the publication is transmitted and no IOCTL is currently pended, the driver MUST increment the “CompleteEventImmediately” counter by one.
+
 </li>
 <li>
 	If the publication is transmitted while there is a pended IOCTL available, the driver MUST complete the pended IRP with STATUS_SUCCESS and NOT increment the “CompleteEventImmediately” counter.
+
 </li>
 <li>
 	If the IOCTL contains an input or output buffer the driver MUST complete the IOCTL with STATUS_INVALID_PARAMETER.
+
 </li>
 <li>
 	If this IOCTL is received while another is currently pended in the publication handle, the second one (or later) MUST be completed with STATUS_INVALID_DEVICE_STATE.
+
 </li>
 <li>
 The driver MUST support CancelIo of the pended IOCTL.
+
 </li>
 </ul>
 
@@ -132,19 +145,23 @@ If the publication is transmitted and no IOCTL is currently pended, the driver M
 
 The driver MUST support CancelIo of the pended IOCTL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,5 +177,8 @@ Header
 <dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This structure that has an array of 2.0 ports supported by the  root hub. This structure is provided by  UCX in a framework request in the  <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _ROOTHUB_20PORTS_INFO {
 
 The size in bytes of this structure.
 
+
 ### -field NumberOfPorts
 
 The number of USB 2.0 ports connected to the root hub. 
+
 
 ### -field PortInfoSize
 
 The size of the <b>ROOTHUB_20PORTS_INFO</b> structure.
 
+
 ### -field PortInfoArray
 
 A pointer to an array of <a href="buses._roothub_20port_info">PROOTHUB_20PORT_INFO</a> structures.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ A pointer to an array of <a href="buses._roothub_20port_info">PROOTHUB_20PORT_IN
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,5 +102,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20ROOTHUB_20PORTS_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This interface allows a miniport driver to use KS properties that access the audio engine via a pin instance handle.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportStreamAudioEngineNode</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IMiniportStreamAudioEngineNode</b> also has these types of members:
 
@@ -74,6 +75,7 @@ Sets the loopback protection status of the audio engine node.
 
  
 
+
 ## -members
 The <b>IMiniportStreamAudioEngineNode</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -87,6 +89,7 @@ The <b>IMiniportStreamAudioEngineNode</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Gets the state of the local effects (LFX) node that is in the path of the audio stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -95,6 +98,7 @@ Gets the state of the local effects (LFX) node that is in the path of the audio 
 </td>
 <td align="left" width="63%">
 Gets the allowed stepping value for the audio stream attribute.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -103,6 +107,7 @@ Gets the allowed stepping value for the audio stream attribute.
 </td>
 <td align="left" width="63%">
 Gets a count of the number of channels available for the stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -111,6 +116,7 @@ Gets a count of the number of channels available for the stream.
 </td>
 <td align="left" width="63%">
 Gets the state of the Mute node in the path of the audio stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -119,6 +125,7 @@ Gets the state of the Mute node in the path of the audio stream.
 </td>
 <td align="left" width="63%">
 Gets the value of the PeakMeter node in the path of the audio stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -127,6 +134,7 @@ Gets the value of the PeakMeter node in the path of the audio stream.
 </td>
 <td align="left" width="63%">
 Gets the current volume level that is applied to the audio stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -135,6 +143,7 @@ Gets the current volume level that is applied to the audio stream.
 </td>
 <td align="left" width="63%">
 	Gets the number of bytes that the DMA has fetched from the audio buffer since the beginning of the stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -143,6 +152,7 @@ Gets the current volume level that is applied to the audio stream.
 </td>
 <td align="left" width="63%">
 Gets the current cursor position in the audio data stream that is being rendered to the endpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -151,6 +161,7 @@ Gets the current cursor position in the audio data stream that is being rendered
 </td>
 <td align="left" width="63%">
 Sets the state of the local effects (LFX) node that is in the path of the audio stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -159,6 +170,7 @@ Sets the state of the local effects (LFX) node that is in the path of the audio 
 </td>
 <td align="left" width="63%">
 Sets the state of the Mute node in the path of the audio stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -167,6 +179,7 @@ Sets the state of the Mute node in the path of the audio stream.
 </td>
 <td align="left" width="63%">
 Sets the volume level to be applied to the audio stream.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -175,6 +188,7 @@ Sets the volume level to be applied to the audio stream.
 </td>
 <td align="left" width="63%">
 Sets the current cursor position in the audio data stream that is being captured from the endpoint.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -183,6 +197,7 @@ Sets the current cursor position in the audio data stream that is being captured
 </td>
 <td align="left" width="63%">
 Sets the loopback protection status of the audio engine node.
+
 </td>
 </tr>
 </table>Gets the state of the local effects (LFX) node that is in the path of the audio stream.
@@ -213,6 +228,7 @@ Sets the loopback protection status of the audio engine node.
 
  
 
+
 ## -remarks
 
 
@@ -221,22 +237,27 @@ Sets the loopback protection status of the audio engine node.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

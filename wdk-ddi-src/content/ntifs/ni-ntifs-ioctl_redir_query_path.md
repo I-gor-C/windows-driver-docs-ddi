@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>IOCTL_REDIR_QUERY_PATH</b> control code is sent by the multiple UNC provider (MUP) to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request. This request is referred to as "prefix resolution."
+
 MUP is a kernel-mode component responsible for channeling all remote file system accesses that use a UNC name to a network redirector (the UNC provider) capable of handling the remote file system requests. MUP is involved when a UNC path is used as illustrated by the following example that could be executed from a command line:
+
 
 
 ## -syntax
@@ -68,6 +70,7 @@ A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&
 
  
 
+
 ### -input-buffer-length
 
 <text></text>
@@ -80,6 +83,7 @@ A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&
 The length, in bytes, of the prefix claimed by the provider from the Unicode string path that is specified in the <b>FilePathName</b> member of the <b>QUERY_PATH_REQUEST</b> structure.
 
  
+
 
 ### -output-buffer-length
 
@@ -113,6 +117,7 @@ If the prefix resolution operation failed due to invalid or incorrect credential
 
 If the network redirector is unable to resolve a prefix, it must return an NTSTATUS code that closely matches the intended semantics from the above list of recommended NTSTATUS codes. A network redirector must not return the actual encountered error (STATUS_CONNECTION_REFUSED, for example) directly to MUP if the NTSTATUS code is not from the above list. 
 
+
 ## -remarks
 Network redirectors should only honor kernel-mode senders of this IOCTL, by verifying that the <b>RequestorMode</b> member of the IRP structure is <b>KernelMode</b>. 
 
@@ -134,11 +139,13 @@ For more information, see the following sections in the Design Guide:
 <a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -161,5 +168,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IOCTL_REDIR_QUERY_PATH control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

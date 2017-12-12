@@ -43,6 +43,7 @@ This structure contains SUPL version information.
 
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef struct {
 
 Major version number.
 
+
 ### -field MinorVersion
 
 Minor version number.
+
 
 ## -remarks
 
@@ -71,6 +74,7 @@ Minor version number.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilpersofeature.htm
 old-project: netvista
 ms.assetid: e212ab20-e9b4-4ccc-b0db-a82ca5b59573
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILPERSOFEATURE, RILPERSOFEATURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -107,6 +108,7 @@ typedef enum _RILPERSOFEATURE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

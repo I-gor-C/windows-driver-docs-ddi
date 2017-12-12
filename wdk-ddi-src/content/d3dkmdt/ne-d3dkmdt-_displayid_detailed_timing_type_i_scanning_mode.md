@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_scanning_mode.htm
 old-project: display
 ms.assetid: 8a5d3fba-ffd5-4fbc-973a-d5bfec6bb6e3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE enumeration indicates the display device's frame scanning mode.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE {
 
 Indicates a progressive scanning mode.
 
+
 ### -field DIDDT1_Interlaced
 
 Indicates an interlaced scanning mode.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ Indicates an interlaced scanning mode.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

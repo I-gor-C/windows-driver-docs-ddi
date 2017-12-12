@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>EtwActivityIdControl</b> function creates, queries, and sets the current activity identifier. 
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ NTSTATUS EtwActivityIdControl(
 ### -param ControlCode [in]
 
 The <i>ControlCode</i> parameter can be one of the following defined values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -69,6 +71,7 @@ The <i>ControlCode</i> parameter can be one of the following defined values.
 </td>
 <td width="60%">
 Returns the current thread's activity identifier in the <i>ActivityId</i> parameter.  
+
 </td>
 </tr>
 <tr>
@@ -82,6 +85,7 @@ Sets the current thread's activity identifier to the value specified in <i>Activ
             You can use any value that fits inside a GUID, including any available
             local value that would serve your need for
             some type of activity identifier.
+
 </td>
 </tr>
 <tr>
@@ -91,6 +95,7 @@ Sets the current thread's activity identifier to the value specified in <i>Activ
 </td>
 <td width="60%">
 Creates a new identifier and sets the <i>ActivityId</i> parameter to the value of the new identifier.  
+
 </td>
 </tr>
 <tr>
@@ -100,6 +105,7 @@ Creates a new identifier and sets the <i>ActivityId</i> parameter to the value o
 </td>
 <td width="60%">
 Sets the current thread's activity identifier to the value specified in <i>ActivityId</i>, and then returns <i>ActivityId</i> with the value of the thread's activity identifier prior to the function call.  
+
 </td>
 </tr>
 <tr>
@@ -109,17 +115,21 @@ Sets the current thread's activity identifier to the value specified in <i>Activ
 </td>
 <td width="60%">
 Copies the current thread's activity identifier. Creates a new identifier and sets the current thread's   activity identifier to the new value. Returns <i>ActivityId</i> with the value of the thread's activity identifier prior to the function call. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ActivityId [in, out]
 
 The identifier that indicates the activity associated with the event. The <i>ActivityId</i> parameter provides a way to group related events and is used in end-to-end tracing.
 
+
 ## -returns
 <b>EtwActivityIdControl</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value.
+
 
 ## -remarks
 Activity identifiers provide a method of linking separate events in a common thread of computation. An <i>activity</i> is a work item performed by an application and or a driver. The concept of activity is a core component in end-to-end tracing.
@@ -128,11 +138,13 @@ Callers of <b>EtwActivityIdControl</b> must be running at IRQL &lt; DISPATCH_LEV
 
 Use the <a href="devtest.etwactivityidcontrolkernel">EtwActivityIdControlKernel</a> function to  query or set  activity identifiers  kernel threads. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -143,14 +155,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -161,6 +176,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -171,6 +187,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -181,9 +198,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Comments section
+
 </td>
 </tr>
 </table>
@@ -195,5 +214,8 @@ See Comments section
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwActivityIdControl function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

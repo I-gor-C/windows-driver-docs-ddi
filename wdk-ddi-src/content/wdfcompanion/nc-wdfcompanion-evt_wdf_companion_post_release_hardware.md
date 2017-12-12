@@ -7,8 +7,8 @@ old-location: wdf\evt_wdf_companion_post_release_hardware.htm
 old-project: wdf
 ms.assetid: ebba5344-dc3a-443f-a080-991dd784eb54
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG
+ms.date: 12/7/2017
+ms.keywords: _WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
 			For internal use only.
 
 
+
 ## -prototype
 
 ````
@@ -72,14 +73,17 @@ NTSTATUS EVT_WDF_COMPANION_POST_RELEASE_HARDWARE(
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,9 +94,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

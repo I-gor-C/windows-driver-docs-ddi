@@ -7,7 +7,7 @@ old-location: netvista\ndisreleasereadwritelock.htm
 old-project: netvista
 ms.assetid: a910ae2d-8a3b-451c-b1f2-a19f7f9f14a2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisReleaseReadWriteLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <a href="netvista.ndisacquirereadwritelock">NdisAcquireReadWriteLock</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ VOID NdisReleaseReadWriteLock(
 
 A pointer to an <a href="netvista.ndis_rw_lock">NDIS_RW_LOCK</a> variable for the acquired lock to be released.
 
+
 ### -param LockState [in]
 
 A pointer to an opaque <a href="netvista.lock_state">LOCK_STATE</a> variable that tracks the state of the lock. This variable exists
      in the interval between the time the caller acquires and releases the lock.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A driver must initialize a lock before calling any other 
@@ -83,11 +87,13 @@ A driver must call the
 <b>NdisReleaseReadWriteLock</b> restores the original IRQL that was used by its caller before the call to 
     <a href="netvista.ndisacquirereadwritelock">NdisAcquireReadWriteLock</a> was made.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +104,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Deprecated for NDIS 6.20 and later drivers, which should use <a href="netvista.ndisreleaserwlock">NdisReleaseRWLock</a> instead of <b>NdisReleaseReadWriteLock</b>. Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -105,11 +112,13 @@ Deprecated for NDIS 6.20 and later drivers, which should use <a href="netvista.n
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisReleaseReadWriteLock (NDIS
    5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +129,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +140,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -140,14 +151,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_synch_function">Irql_Synch_Function</a>
@@ -174,5 +188,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReleaseReadWriteLock function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReleaseReadWriteLock function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: storage\storportinitialize.htm
 old-project: storage
 ms.assetid: b560ce42-3c5c-4766-bb9c-6590b7113ecd
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortInitilize</b> routine initializes the port  driver parameters and extension data. <b>StorPortInitilize</b> also saves the adapter information provided from the miniport driver.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ STORPORT_API ULONG StorPortInitialize(
 
 The first pointer with which the operating system called the miniport's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. 
 
+
 ### -param Argument2 [in]
 
 The second pointer with which the operating system called the miniports's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. 
+
 
 ### -param HwInitializationData [in]
 
 Pointer to the initialization and configuration information set by the miniport driver in it's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. 
 
+
 ### -param HwContext [in, optional]
 
 Is the address of a context value to be passed to the miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine. Only legacy miniport drivers that scan the bus for HBAs rather than receiving configuration information from the port driver can use this parameter to store state between calls to <b>HwStorFindAdapter</b>. 
+
 
 ## -returns
 
@@ -103,6 +108,7 @@ Is the address of a context value to be passed to the miniport driver's <a href=
 
  
 
+
 ## -remarks
 This routine must be called from the miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
 
@@ -110,11 +116,13 @@ Because Storport miniport drivers must support PnP, the Storport driver does not
 
 Every miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine must call <b>StorPortInitilize</b> after the miniport driver has first zeroed and then set the members of <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +133,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +144,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -154,5 +164,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortInitialize routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortInitialize routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

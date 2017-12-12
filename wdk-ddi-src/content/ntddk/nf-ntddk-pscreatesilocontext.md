@@ -7,7 +7,7 @@ old-location: kernel\pscreatesilocontext.htm
 old-project: kernel
 ms.assetid: 54FD0308-7E40-40C7-BA3A-FF1EFFBE0DB6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsCreateSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine  creates an object that will be inserted in a <i>Silo</i>.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS PsCreateSiloContext(
 
 A pointer to a silo.  This parameter is required and it cannot be <b>NULL</b>.
 
+
 ### -param Size [in]
 
 The size, in bytes, of the portion of the object defined by the caller.
+
 
 ### -param PoolType [in]
 
 The type of pool to allocate from. This parameter is required and must be one of the following: <b>NonPagedPoolNx</b> or <b>PagedPool</b>.
 
+
 ### -param ContextCleanupCallback [in, optional]
 
 A pointer to a <a href="..\ntddk\nc-ntddk-silo_context_cleanup_callback.md">SILO_CONTEXT_CLEANUP_CALLBACK</a> callback function. The function will be called when the returned object has zero references to it. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param ReturnedSiloContext 
 
 A pointer to a caller-allocated variable that receives the address of the newly created object. 
+
 
 ## -returns
 The following NT status codes are returned.
@@ -90,6 +96,7 @@ The following NT status codes are returned.
 
  
 
+
 ## -remarks
 
 
@@ -98,22 +105,27 @@ The following NT status codes are returned.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

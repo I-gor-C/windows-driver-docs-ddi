@@ -7,8 +7,8 @@ old-location: netvista\rilregstatusinfo.htm
 old-project: netvista
 ms.assetid: 12471d22-4d5d-411e-bfde-4d13d7a3bcca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILREGSTATUSINFO, *LPRILREGSTATUSINFO, RILREGSTATUSINFO
+ms.date: 12/8/2017
+ms.keywords: RILREGSTATUSINFO, RILREGSTATUSINFO, *LPRILREGSTATUSINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -103,6 +104,7 @@ typedef struct _RILREGSTATUSINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

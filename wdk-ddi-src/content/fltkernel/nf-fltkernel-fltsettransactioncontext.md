@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL.
 The <b>FltSetTransactionContext</b> routine sets a context on a transaction. 
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ NTSTATUS FltSetTransactionContext(
 
 Opaque instance pointer for the caller. 
 
+
 ### -param Transaction [in]
 
 Opaque transaction pointer for the transaction on which the context is being set. 
 
+
 ### -param Operation [in]
 
 Flag that specifies the details of the operation to be performed. This parameter must be one of the following: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -79,6 +83,7 @@ Flag that specifies the details of the operation to be performed. This parameter
 </td>
 <td width="60%">
 If a context is already set for the transaction pointed to by the <i>Transaction</i> parameter, replace the existing context with the context pointed to by the <i>NewContext</i> parameter. Otherwise, set the context pointed to by the <i>NewContext</i> parameter as the context for the transaction pointed to by the <i>Transaction</i> parameter. 
+
 </td>
 </tr>
 <tr>
@@ -88,18 +93,22 @@ If a context is already set for the transaction pointed to by the <i>Transaction
 </td>
 <td width="60%">
 If a context is already set for the transaction pointed to by the <i>Transaction</i> parameter, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, set the context pointed to by the <i>NewContext</i> parameter as the context for transaction pointed to by the <i>Transaction</i> parameter. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param NewContext [in]
 
 Pointer to the new context to be set for the instance. The context must have been allocated by a previous call to <a href="ifsk.fltallocatecontext">FltAllocateContext</a>. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param OldContext [out, optional]
 
 Pointer to a caller-allocated variable that receives the address of the existing transaction context, if one is already set. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
+
 
 ## -returns
 <b>FltSetTransactionContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -122,6 +131,7 @@ STATUS_INVALID_PARAMETER is an error code.
 
  
 
+
 ## -remarks
 A minifilter driver calls <b>FltSetTransactionContext</b> to attach a context to a transaction or to remove or replace an existing transaction context. A minifilter driver can attach only one context to a given transaction. 
 
@@ -139,11 +149,13 @@ To delete a transaction context, call <a href="ifsk.fltdeletetransactioncontext"
 
 For more information about context reference counting, see <a href="ifsk.referencing_contexts">Referencing Contexts</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -154,14 +166,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available and supported in Windows Vista and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -172,6 +187,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -182,6 +198,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -192,9 +209,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL.
+
 </td>
 </tr>
 </table>
@@ -236,5 +255,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetTransactionContext routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetVolumeInstanceFromName</b> routine returns an opaque instance pointer for the given minifilter driver instance on the given volume. 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS FltGetVolumeInstanceFromName(
 
 Opaque filter pointer for the minifilter driver that owns the instance. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param Volume [in]
 
 Opaque pointer for the volume that the instance is attached to. Must be a valid volume handle. This parameter is required and cannot be <b>NULL</b>. (Setting this parameter to an invalid value causes the system to ASSERT on a checked build.) 
+
 
 ### -param InstanceName [in, optional]
 
 Pointer to a caller-allocated <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the instance name for the instance on the volume. (This is the <i>InstanceName</i> value that was passed to <a href="ifsk.fltattachvolume">FltAttachVolume</a> or <a href="ifsk.fltattachvolumeataltitude">FltAttachVolumeAtAltitude</a> when the instance was created.) This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltGetVolumeInstanceFromName</b> returns the highest matching instance that is found. 
 
+
 ### -param RetInstance [out]
 
 Pointer to a caller-allocated variable that receives an opaque instance pointer for the instance that matches the values for <i>Filter</i>, <i>Volume</i>, and <i>InstanceName</i>. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltGetVolumeInstanceFromName</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
@@ -82,6 +87,7 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 
  
 
+
 ## -remarks
 <b>FltGetVolumeInstanceFromName</b> searches the list of minifilter driver instances attached to the volume specified in the <i>Volume</i> parameter in order of decreasing altitude, beginning with the topmost instance. If more than one instance matches the given values for the <i>Filter</i>, <i>Volume</i>, and <i>InstanceName</i> parameters, <b>FltGetVolumeInstanceFromName</b> returns the highest matching instance that is found. 
 
@@ -93,11 +99,13 @@ The string "03333" represents a higher altitude than "100.123456". (Leading and 
 
 <b>FltGetVolumeInstanceFromName</b> adds a rundown reference to the opaque instance pointer returned in the <i>RetInstance</i> parameter. When this pointer is no longer needed, the caller must release it by calling <a href="ifsk.fltobjectdereference">FltObjectDereference</a>. Thus every successful call to <b>FltGetVolumeInstanceFromName</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +116,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +127,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +138,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +149,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -161,5 +174,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeInstanceFromName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

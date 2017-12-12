@@ -7,7 +7,7 @@ old-location: netvista\wdi_data_rate_flags.htm
 old-project: netvista
 ms.assetid: 937D1C48-AC5A-4D55-8722-BDC1192613A9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_DATA_RATE_FLAGS, WDI_DATA_RATE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_DATA_RATE_FLAGS enumeration defines the data rate flags.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_DATA_RATE_FLAGS {
 
 The data rate is not a standard data rate defined in the IEEE 802.11 standards.
 
+
 ### -field WDI_DATA_RATE_RX_RATE
 
 The data rate can be used for RX.
 
+
 ### -field WDI_DATA_RATE_TX_RATE
 
 The data rate can be used for TX.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ The data rate can be used for TX.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

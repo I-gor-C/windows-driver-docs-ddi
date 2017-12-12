@@ -7,7 +7,7 @@ old-location: netvista\ndisdprreleasereadwritelock.htm
 old-project: netvista
 ms.assetid: BD9B13A7-5F5F-437a-BEB7-56DE6D03A29B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisDprReleaseReadWriteLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <a href="netvista.ndisacquirereadwritelock">NdisDprAcquireReadWriteLock</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ VOID NdisDprReleaseReadWriteLock(
 
 A pointer to an <a href="netvista.ndis_rw_lock">NDIS_RW_LOCK</a> variable for the acquired lock to be released.
 
+
 ### -param LockState [in]
 
 A pointer to an opaque <a href="netvista.lock_state">LOCK_STATE</a> variable that tracks the state of the lock. This variable exists
      in the interval between the time the caller acquires and releases the lock.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A driver must initialize a lock before calling any other 
@@ -80,11 +84,13 @@ A driver must call the
     <b>NdisDprAcquireReadWriteLock</b> requires a reciprocal call to 
     <b>NdisDprReleaseReadWriteLock</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,14 +101,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and 6.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +122,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +133,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -143,5 +155,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprReleaseReadWriteLock function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprReleaseReadWriteLock function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

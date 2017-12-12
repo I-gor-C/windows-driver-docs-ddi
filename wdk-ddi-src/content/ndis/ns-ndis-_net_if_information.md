@@ -7,7 +7,7 @@ old-location: netvista\net_if_information.htm
 old-project: netvista
 ms.assetid: 5508650c-473c-4710-869e-053481e83f1b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NET_IF_INFORMATION, *PNET_IF_INFORMATION, NET_IF_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NET_IF_INFORMATION structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The NET_IF_INFORMATION structure provides NDIS with information about a registered network
   interface.
+
 
 
 ## -syntax
@@ -81,6 +82,7 @@ The
      <b>Revision</b> member to NDIS_OBJECT_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_NET_IF_INFORMATION_REVISION_1.
 
+
 ### -field Flags
 
 Flags that provide information about the interface that this structure describes. These flags are
@@ -89,25 +91,32 @@ Flags that provide information about the interface that this structure describes
      
 
 
+
+
 ### -field NIIF_HARDWARE_INTERFACE
 
 Set if the network interface is for hardware.
+
 
 ### -field NIIF_FILTER_INTERFACE
 
 Set if the network interface is for a filter module.
 
+
 ### -field NIIF_NDIS_RESERVED1
 
 Reserved for NDIS.
+
 
 ### -field NIIF_NDIS_RESERVED2
 
 Reserved for NDIS.
 
+
 ### -field NIIF_NDIS_RESERVED3
 
 Reserved for NDIS.
+
 </dd>
 </dl>
 
@@ -117,15 +126,18 @@ The physical location for the hardware that is associated with an interface spec
      <a href="netvista.net_physical_location">
      NET_PHYSICAL_LOCATION</a> structure.
 
+
 ### -field WanTunnelType
 
 The tunnelIfEncapsMethod (from 
      RFC 2667) for WAN devices. If the WAN tunnel type is unknown, set this
      member to NIIF_WAN_TUNNEL_TYPE_UNKNOWN.
 
+
 ### -field PortNumber
 
 The NDIS port number for the interface.
+
 
 ### -field AccessType
 
@@ -133,11 +145,13 @@ A
      <a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a> NDIS network interface
      access type.
 
+
 ### -field DirectionType
 
 A 
      <a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a> NDIS network
      interface direction type.
+
 
 ### -field ConnectionType
 
@@ -145,10 +159,12 @@ A
      <a href="netvista.net_if_connection_type">NET_IF_CONNECTION_TYPE</a> NDIS network
      interface connection type.
 
+
 ### -field ifConnectorPresent
 
 A Boolean value that indicates if a connector is present. Set this value to <b>TRUE</b> if there is a
      physical adapter or <b>FALSE</b> if there is no physical adapter.
+
 
 ### -field PhysAddressLength
 
@@ -156,6 +172,7 @@ The length, in bytes, of the physical address or MAC address. This length is the
      byte arrays that are located at the offsets that the 
      <b>PhysAddressOffset</b> and 
      <b>PermanentPhysAddressOffset</b> members specify.
+
 
 ### -field PhysAddressOffset
 
@@ -165,6 +182,7 @@ The offset of the current physical address, in bytes, from the beginning of this
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a> OID
      returns.
 
+
 ### -field PermanentPhysAddressOffset
 
 The offset of the permanent physical address, in bytes, from the beginning of this structure. The
@@ -173,11 +191,13 @@ The offset of the permanent physical address, in bytes, from the beginning of th
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569074">OID_802_3_PERMANENT_ADDRESS</a> OID
      returns.
 
+
 ### -field FriendlyNameLength
 
 The length, in bytes, of the friendly name for the interface that this structure describes. This
      length is the length of the WCHAR array that is located at the offset in the 
      <b>FriendlyNameOffset</b> member.
+
 
 ### -field FriendlyNameOffset
 
@@ -185,6 +205,7 @@ The offset of the beginning of the friendly name, in bytes, from the beginning o
      This name should include the name of the manufacturer, the product, and the version of the interface
      hardware and software. The name is specified as an array of WCHAR values. The 
      <b>FriendlyNameLength</b> member specifies the length of the array.
+
 
 ### -field InterfaceGuid
 
@@ -196,11 +217,13 @@ The GUID that is associated with the interface. The interface provider generates
      If the provider retains information about the interface in persistent storage, it should save the GUID
      and reuse the GUID when it reregisters the interface after the computer restarts.
 
+
 ### -field NetworkGuid
 
 The GUID that is associated with the network that the interface belongs to. If the interface
      provider cannot provide the network GUID, it can pass a zero GUID. In this case, NDIS will register the
      interface in the default network of the primary compartment.
+
 
 ### -field SupportedStatistics
 
@@ -209,16 +232,19 @@ The statistics that the interface supports. For more information, see the
      <a href="netvista.ndis_miniport_adapter_general_attributes">
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure .
 
+
 ### -field MediaType
 
 The 
      <b>NdisMedium</b><i>Xxx</i> type that the interface supports. For more information, see 
      <a href="netvista.ndis_medium">NDIS_MEDIUM</a>.
 
+
 ### -field PhysicalMediumType
 
 The physical medium type for the interface. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
+
 
 
 ## -remarks
@@ -234,19 +260,23 @@ The interface provider should allocate enough memory for the structure and the a
     <b>FriendlyNameOffset</b> members specify. The provider must provide the values for the arrays after the
     structure and set the offset members to identify the location of the arrays.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -303,5 +333,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

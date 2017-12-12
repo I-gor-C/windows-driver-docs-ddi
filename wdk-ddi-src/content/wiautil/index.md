@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wiautil.h header
 
+## -description
 
 This header is used by Imaging devices. For more information, see
 - [Imaging devices](../_image/index.md)
@@ -16,10 +21,8 @@ Wiautil.h contain these programming interfaces:
 | [wiauDbgErrorHr function](nf-wiautil-wiaudbgerrorhr.md) | The wiauDbgErrorHr function logs a message containing an HRESULT and its error message string. |
 | [wiauDbgFlags function](nf-wiautil-wiaudbgflags.md) | The wiauDbgFlags function determines whether a particular debugging flag is set. |
 | [wiauDbgHelper function](nf-wiautil-wiaudbghelper.md) | The wiauDbgHelper function formats a message and writes it to a log file, or debugger, or both. |
-| [wiauDbgHelper function](nf-wiautil-wiaudbghelper~r1.md) | The wiauDbgHelper function formats a message and writes it to a log file, or debugger, or both. |
 | [wiauDbgHelper2 function](nf-wiautil-wiaudbghelper2.md) | The wiauDbgHelper2 function writes a message to a log file, or debugger, or both. |
 | [wiauDbgInit function](nf-wiautil-wiaudbginit.md) | The wiauDbgInit function initializes WIA debugging. |
-| [wiauDbgInit function](nf-wiautil-wiaudbginit~r1.md) | The wiauDbgInit function initializes WIA debugging. |
 | [wiauDbgLegacyError function](nf-wiautil-wiaudbglegacyerror.md) | The wiauDbgLegacyError function logs an error message. |
 | [wiauDbgLegacyError2 function](nf-wiautil-wiaudbglegacyerror2.md) | The wiauDbgLegacyError2 function logs an error message. |
 | [wiauDbgLegacyHresult2 function](nf-wiautil-wiaudbglegacyhresult2.md) | The wiauDbgLegacyHresult2 function logs a default message containing an HRESULT. |
@@ -27,7 +30,6 @@ Wiautil.h contain these programming interfaces:
 | [wiauDbgLegacyTrace2 function](nf-wiautil-wiaudbglegacytrace2.md) | The wiauDbgLegacyTrace2 function logs a trace message. |
 | [wiauDbgLegacyWarning function](nf-wiautil-wiaudbglegacywarning.md) | The wiauDbgLegacyWarning function logs a warning message. |
 | [wiauDbgSetFlags function](nf-wiautil-wiaudbgsetflags.md) | The wiauDbgSetFlags function sets debugging flags. |
-| [wiauDbgSetFlags function](nf-wiautil-wiaudbgsetflags~r1.md) | The wiauDbgSetFlags function sets debugging flags. |
 | [wiauDbgTrace function](nf-wiautil-wiaudbgtrace.md) | The wiauDbgTrace function logs a trace message. |
 | [wiauDbgWarning function](nf-wiautil-wiaudbgwarning.md) | The wiauDbgWarning function logs a warning message. |
 | [wiauGetDrvItemContext function](nf-wiautil-wiaugetdrvitemcontext.md) | The wiauGetDrvItemContext function gets the driver item context, and optionally, the driver item. |
@@ -55,10 +57,10 @@ Wiautil.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [BMP_IMAGE_INFO structure](ns-wiautil--bmp-image-info.md) | The BMP_IMAGE_INFO structure contains information about a BMP image. |
+| [_BMP_IMAGE_INFO structure](ns-wiautil-_bmp_image_info.md) | The BMP_IMAGE_INFO structure contains information about a BMP image. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [SKIP_AMOUNT enumeration](ne-wiautil-skip-amount.md) | The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over. |
+| [SKIP_AMOUNT enumeration](ne-wiautil-skip_amount.md) | The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over. |

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwipriority.htm
 old-project: netvista
 ms.assetid: a974af39-a4a6-44f2-9010-e612f50c83df
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGMWIPRIORITY, RILMSGMWIPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef enum _RILMSGMWIPRIORITY {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

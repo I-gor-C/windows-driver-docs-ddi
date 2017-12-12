@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FsRtlRegisterUncProviderEx</b> routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP).
 
 
+
 ## -syntax
 
 ````
@@ -59,25 +60,33 @@ NTSTATUS FsRtlRegisterUncProviderEx(
 
 A pointer to a location in which to return a MUP handle to be used when calling <a href="ifsk.fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a> to deregister the network redirector. The returned handle is valid only if <b>FsRtlRegisterUncProviderEx</b> returns STATUS_SUCCESS.
 
+
 ### -param RedirDevName [in]
 
 A pointer to a Unicode string that contains the device name of the network redirector. MUP uses this device name to create a symbolic link in the Object Manager namespace whose target is \Device\Mup.
+
 
 ### -param DeviceObject [in]
 
 A pointer to an unnamed device object that represents the network redirector. 
 
+
 ### -param Flags [in]
 
 A bitmask that indicates features supported by the network redirector. A network redirector sets a bit to indicate that a feature is supported. The <i>Flags</i> parameter has two options: 
+
 <dl>
 <dd>
 FSRTL_UNC_PROVIDER_FLAGS_MAILSLOTS_SUPPORTED
+
 The network redirector supports mailslots. This option is normally reserved for use by the Microsoft SMB redirector.
+
 </dd>
 <dd>
 FSRTL_UNC_PROVIDER_FLAGS_CSC_ENABLED
+
 The network redirector supports offline access using client-side caching.
+
 </dd>
 </dl>
 
@@ -106,6 +115,7 @@ The network redirector supports offline access using client-side caching.
 </dl>An object type mismatch was encountered with the <i>DeviceObject</i> parameter. 
 
  
+
 
 ## -remarks
 A network redirector must register with the multiple UNC provider (MUP) to handle Universal Naming Convention (UNC) names. MUP is a kernel-mode component responsible for channeling all remote file system accesses using a Universal Naming Convention (UNC) name to a network redirector (the UNC provider) that is capable of handling the remote file system requests. MUP is involved when a UNC path is used by an application as illustrated by the following example that could be executed from a command line: 
@@ -140,11 +150,13 @@ For more information, see the following sections in the Design Guide:
 <a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +167,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Windows Vista and later versions. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,6 +188,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -183,6 +199,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -193,9 +210,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -225,5 +244,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlRegisterUncProviderEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

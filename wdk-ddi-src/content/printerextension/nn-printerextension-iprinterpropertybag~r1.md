@@ -7,7 +7,7 @@ old-location: print\iprinterpropertybag_interface.htm
 old-project: print
 ms.assetid: 421397FF-4956-4052-B63D-32F8E79A22D0
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,13 +40,16 @@ req.product: Windows 10 or later.
 
 ## -description
 Provides strongly-typed <b>get</b> and <b>set</b> methods.
+
 Note that the driver property bag uses the following GUID for its property store format ID:
 
 <dl>
 <dd>DEFINE_GUID(FMTID_PrinterPropertyBag, 0x75f9adca, 0x097d, 0x45c3, 0xa6, 0xe4, 0xba, 0xb2, 0x9e, 0x27, 0x6f, 0x3e);</dd>
 </dl>
 
+
 The <b>IPrinterPropertyBag</b> interface is used by all the printer property bags, including driver property bag, user property bag, queue property bag, and DEVMODE property bag.
+
 
 
 ## -inheritance
@@ -76,6 +79,7 @@ Writes a string property.
 
  
 
+
 ## -members
 The <b>IPrinterPropertyBag</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -89,6 +93,7 @@ The <b>IPrinterPropertyBag</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Reads a specified boolean property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -97,6 +102,7 @@ Reads a specified boolean property.
 </td>
 <td align="left" width="63%">
 Reads a byte array property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -105,6 +111,7 @@ Reads a byte array property.
 </td>
 <td align="left" width="63%">
 Reads an integer property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -113,6 +120,7 @@ Reads an integer property.
 </td>
 <td align="left" width="63%">
 Gets a stream in order to read from a stream property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -121,6 +129,7 @@ Gets a stream in order to read from a stream property.
 </td>
 <td align="left" width="63%">
 Reads a string property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -129,6 +138,7 @@ Reads a string property.
 </td>
 <td align="left" width="63%">
 Gets a stream in order to write a stream property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -137,6 +147,7 @@ Gets a stream in order to write a stream property.
 </td>
 <td align="left" width="63%">
 Writes a specified boolean property value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -145,6 +156,7 @@ Writes a specified boolean property value.
 </td>
 <td align="left" width="63%">
 Writes a byte array property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -153,6 +165,7 @@ Writes a byte array property.
 </td>
 <td align="left" width="63%">
 Writes an integer property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -161,6 +174,7 @@ Writes an integer property.
 </td>
 <td align="left" width="63%">
 Writes a string property.
+
 </td>
 </tr>
 </table>Reads a specified boolean property.
@@ -185,6 +199,7 @@ Writes a string property.
 
  
 
+
 ## -remarks
 
 
@@ -193,22 +208,27 @@ Writes a string property.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -240,5 +260,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterPropertyBag interface%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterPropertyBag interface%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

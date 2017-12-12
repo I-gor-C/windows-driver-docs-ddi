@@ -7,7 +7,7 @@ old-location: smartcrd\ioctl_smartcard_eject.htm
 old-project: smartcrd
 ms.assetid: 58bdd794-9061-4aae-a9a6-523db4e2e360
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GdiStartPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,10 @@ req.product: Windows 10 or later.
 
 The IOCTL_SMARTCARD_EJECT request ejects the currently inserted smart card from the smart card reader.
 
+
+
 The IOCTL_SMARTCARD_EJECT request ejects the currently inserted smart card from the smart card reader.
+
 
 
 ## -ioctlparameters
@@ -50,12 +53,14 @@ The IOCTL_SMARTCARD_EJECT request ejects the currently inserted smart card from 
 ### -input-buffer
 None 
 
+
 ### -input-buffer-length
 
 <text></text>
 
 ### -output-buffer
 None 
+
 
 ### -output-buffer-length
 
@@ -75,6 +80,7 @@ I/O Status block
 
  
 
+
 ## -remarks
 
 
@@ -83,6 +89,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 08509C28-DDD4-4060-A16A-857A6BF6F6E1
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK
+ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -38,6 +38,7 @@ req.irql:
 
 
 ## -description
+
 
 
 
@@ -147,6 +148,7 @@ typedef struct {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

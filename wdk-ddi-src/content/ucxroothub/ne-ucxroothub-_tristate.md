@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>TRISTATE</b> enumeration indicates generic state values for true or false.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _TRISTATE {
 
 State is unknown.
 
+
 ### -field TriStateFalse
 
 State is a false boolean value.
 
+
 ### -field TriStateTrue
 
 State is a true boolean value.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ State is a true boolean value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

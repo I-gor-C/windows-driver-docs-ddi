@@ -7,8 +7,8 @@ old-location: wdf\iwdfiorequest.htm
 old-project: wdf
 ms.assetid: 3104284a-4277-4f05-ae3f-3b2bb3c3437d
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IWDFIoRequest</b> interface exposes an I/O request object.
+
 
 
 ## -inheritance
@@ -96,6 +98,7 @@ The <a href="wdf.iwdfiorequest_unmarkcancelable">UnmarkCancelable</a> method dis
 
  
 
+
 ## -members
 The <b>IWDFIoRequest</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -109,6 +112,7 @@ The <b>IWDFIoRequest</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_cancelsentrequest">CancelSentRequest</a> method attempts to cancel the I/O request that the driver previously submitted to an I/O target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -117,6 +121,7 @@ The <a href="wdf.iwdfiorequest_cancelsentrequest">CancelSentRequest</a> method a
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_complete">Complete</a> method completes an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -125,6 +130,7 @@ The <a href="wdf.iwdfiorequest_complete">Complete</a> method completes an I/O re
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_completewithinformation">CompleteWithInformation</a> method completes a request with the supplied information.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -133,6 +139,7 @@ The <a href="wdf.iwdfiorequest_completewithinformation">CompleteWithInformation<
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_formatusingcurrenttype">FormatUsingCurrentType</a> method formats an I/O request so that the driver can forward it, unmodified, to the next-lower driver.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -141,6 +148,7 @@ The <a href="wdf.iwdfiorequest_formatusingcurrenttype">FormatUsingCurrentType</a
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_forwardtoioqueue">ForwardToIoQueue</a> method forwards (that is, requeues) an I/O request to one of the calling driver's I/O queues.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -149,6 +157,7 @@ The <a href="wdf.iwdfiorequest_forwardtoioqueue">ForwardToIoQueue</a> method for
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getcompletionparams">GetCompletionParams</a> method retrieves the parameters object for the completion of an I/O request object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -157,6 +166,7 @@ The <a href="wdf.iwdfiorequest_getcompletionparams">GetCompletionParams</a> meth
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getcreateparameters">GetCreateParameters</a> method retrieves the request parameters for a create-type request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -165,6 +175,7 @@ The <a href="wdf.iwdfiorequest_getcreateparameters">GetCreateParameters</a> meth
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getdeviceiocontrolparameters">GetDeviceIoControlParameters</a> method retrieves the request parameters for a device I/O control-type request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -173,6 +184,7 @@ The <a href="wdf.iwdfiorequest_getdeviceiocontrolparameters">GetDeviceIoControlP
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that is associated with an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -181,6 +193,7 @@ The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getinputmemory">GetInputMemory</a> method retrieves the memory object that represents the input buffer in an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -189,6 +202,7 @@ The <a href="wdf.iwdfiorequest_getinputmemory">GetInputMemory</a> method retriev
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getioqueue">GetIoQueue</a> method retrieves the I/O queue object that is associated with an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -197,6 +211,7 @@ The <a href="wdf.iwdfiorequest_getioqueue">GetIoQueue</a> method retrieves the I
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getoutputmemory">GetOutputMemory</a> method retrieves the memory object that represents the output buffer for an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -205,6 +220,7 @@ The <a href="wdf.iwdfiorequest_getoutputmemory">GetOutputMemory</a> method retri
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getreadparameters">GetReadParameters</a> method retrieves the request parameters for a read-type request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -213,6 +229,7 @@ The <a href="wdf.iwdfiorequest_getreadparameters">GetReadParameters</a> method r
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getrequestorprocessid">GetRequestorProcessId</a> method retrieves the identifier of the process that sent an I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -221,6 +238,7 @@ The <a href="wdf.iwdfiorequest_getrequestorprocessid">GetRequestorProcessId</a> 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_gettype">GetType</a> method retrieves the type of operation that a request contains.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -229,6 +247,7 @@ The <a href="wdf.iwdfiorequest_gettype">GetType</a> method retrieves the type of
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_getwriteparameters">GetWriteParameters</a> method retrieves the request parameters for a write-type request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -237,6 +256,7 @@ The <a href="wdf.iwdfiorequest_getwriteparameters">GetWriteParameters</a> method
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_impersonate">Impersonate</a> method registers the interface for the method that the framework should call for impersonation.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -245,6 +265,7 @@ The <a href="wdf.iwdfiorequest_impersonate">Impersonate</a> method registers the
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_isfrom32bitprocess">IsFrom32BitProcess</a> method determines whether a request originated from a 32-bit process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -253,6 +274,7 @@ The <a href="wdf.iwdfiorequest_isfrom32bitprocess">IsFrom32BitProcess</a> method
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_markcancelable">MarkCancelable</a> method enables the canceling of the I/O request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -261,6 +283,7 @@ The <a href="wdf.iwdfiorequest_markcancelable">MarkCancelable</a> method enables
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_send">Send</a> method sends a request to the specified I/O target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -269,6 +292,7 @@ The <a href="wdf.iwdfiorequest_send">Send</a> method sends a request to the spec
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_setcompletioncallback">SetCompletionCallback</a> method registers the interface for the <a href="wdf.irequestcallbackrequestcompletion_oncompletion">OnCompletion</a> method that the framework should call when an I/O request completes.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -277,6 +301,7 @@ The <a href="wdf.iwdfiorequest_setcompletioncallback">SetCompletionCallback</a> 
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_setinformation">SetInformation</a> method sets the size of information for a request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -285,6 +310,7 @@ The <a href="wdf.iwdfiorequest_setinformation">SetInformation</a> method sets th
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfiorequest_unmarkcancelable">UnmarkCancelable</a> method disables the canceling of an I/O request.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfiorequest_cancelsentrequest">CancelSentRequest</a> method attempts to cancel the I/O request that the driver previously submitted to an I/O target.
@@ -335,6 +361,7 @@ The <a href="wdf.iwdfiorequest_unmarkcancelable">UnmarkCancelable</a> method dis
 
  
 
+
 ## -remarks
 
 
@@ -343,6 +370,7 @@ The <a href="wdf.iwdfiorequest_unmarkcancelable">UnmarkCancelable</a> method dis
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -353,22 +381,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -379,6 +412,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlFindExtraCreateParameter</b> routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS FsRtlFindExtraCreateParameter(
 
 Pointer to the ECP list structure that <b>FsRtlFindExtraCreateParameter</b> uses to search for the ECP context structure, supplied by the <i>EcpType</i> parameter.
 
+
 ### -param EcpType [in]
 
 Pointer to a GUID that uniquely identifies the ECP context structure.  This GUID value is used by the <b>FsRtlFindExtraCreateParamter</b> routine to determine if the ECP context structure exists in the ECP list, supplied by the <i>EcpList</i> parameter.
+
 
 ### -param EcpContext [out, optional]
 
 Optional parameter that receives a pointer to the found ECP context structure.  If the ECP context structure is not found in the ECP list, <i>EcpContext</i> is set to <b>NULL</b>.  If <i>EcpContext</i> is set to <b>NULL</b> by the caller, the return value of <b>FsRtlFindExtraCreateParamter</b> can be used to determine if the ECP context structure is in the ECP list.
 
+
 ### -param EcpContextSize [out, optional]
 
 Optional parameter that receives the size, in bytes, of the found ECP context structure.  If the ECP context structure is not found, <i>EcpContextSize</i> is set to zero.
+
 
 ## -returns
 <b>FsRtlFindExtraCreateParameter</b> returns one of the following NTSTATUS values:
@@ -82,6 +87,7 @@ Optional parameter that receives the size, in bytes, of the found ECP context st
 
  
 
+
 ## -remarks
 
 
@@ -90,6 +96,7 @@ Optional parameter that receives the size, in bytes, of the found ECP context st
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The FsRtlFindExtraCreateParameter routine is available starting with Windows Vista. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +139,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +150,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -177,5 +191,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlFindExtraCreateParameter routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

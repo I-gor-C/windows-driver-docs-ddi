@@ -7,7 +7,7 @@ old-location: kernel\zwcreateenlistment.htm
 old-project: kernel
 ms.assetid: 5ffd8262-10b3-4c40-bd3e-050271338508
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwCreateEnlistment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ZwCreateEnlistment</b> routine creates a new <a href="https://msdn.microsoft.com/80e61475-4bb7-4eaa-b9f1-ff95eac9bc77">enlistment object</a> for a transaction.
 
 
+
 ## -syntax
 
 ````
@@ -64,9 +65,11 @@ NTSTATUS ZwCreateEnlistment(
 
 A pointer to a caller-allocated variable that receives a handle to the new enlistment object if the call to <b>ZwCreateEnlistment</b> succeeds.
 
+
 ### -param DesiredAccess [in]
 
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the caller's requested access to the enlistment object. In addition to the access rights that are defined for all kinds of objects (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>), the caller can specify any of the following access right flags for enlistment objects:
+
 <table>
 <tr>
 <th>ACCESS_MASK flag</th>
@@ -75,46 +78,58 @@ An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS
 <tr>
 <td>
 ENLISTMENT_QUERY_INFORMATION
+
 </td>
 <td>
 Query information about the enlistment (see <a href="kernel.zwqueryinformationenlistment">ZwQueryInformationEnlistment</a>). 
+
 </td>
 </tr>
 <tr>
 <td>
 ENLISTMENT_SET_INFORMATION
+
 </td>
 <td>
 Set information for the enlistment (see <a href="kernel.zwsetinformationenlistment">ZwSetInformationEnlistment</a>). 
+
 </td>
 </tr>
 <tr>
 <td>
 ENLISTMENT_RECOVER
+
 </td>
 <td>
 Recover the enlistment (see <a href="kernel.zwrecoverenlistment">ZwRecoverEnlistment</a>). 
+
 </td>
 </tr>
 <tr>
 <td>
 ENLISTMENT_SUBORDINATE_RIGHTS
+
 </td>
 <td>
 Perform operations that a resource manager that is not superior performs (see <a href="kernel.zwrollbackenlistment">ZwRollbackEnlistment</a>, <a href="kernel.zwprepreparecomplete">ZwPrePrepareComplete</a>, <a href="kernel.zwpreparecomplete">ZwPrepareComplete</a>, <a href="kernel.zwcommitcomplete">ZwCommitComplete</a>, <a href="kernel.zwrollbackcomplete">ZwRollbackComplete</a>, <a href="kernel.zwsinglephasereject">ZwSinglePhaseReject</a>, <a href="kernel.zwreadonlyenlistment">ZwReadOnlyEnlistment</a>). 
+
 </td>
 </tr>
 <tr>
 <td>
 ENLISTMENT_SUPERIOR_RIGHTS
+
 </td>
 <td>
 Perform operations that a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> must perform (see <a href="kernel.zwprepareenlistment">ZwPrepareEnlistment</a>, <a href="kernel.zwpreprepareenlistment">ZwPrePrepareEnlistment</a>, <a href="kernel.zwcommitenlistment">ZwCommitEnlistment</a>). 
+
 </td>
 </tr>
 </table>
  
+
 Alternatively, you can specify one or more of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmaps. These bitmaps combine the flags from the previous table with the STANDARD_RIGHTS_<i>XXX</i> flags that are described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> reference page. You can also combine these bitmaps together with additional flags from the previous table. The following table shows how the bitmaps correspond to specific access rights. 
+
 <table>
 <tr>
 <th>Generic access right</th>
@@ -123,53 +138,66 @@ Alternatively, you can specify one or more of the following <a href="https://msd
 <tr>
 <td>
 ENLISTMENT_GENERIC_READ
+
 </td>
 <td>
 STANDARD_RIGHTS_READ and ENLISTMENT_QUERY_INFORMATION
+
 </td>
 </tr>
 <tr>
 <td>
 ENLISTMENT_GENERIC_WRITE
+
 </td>
 <td>
 STANDARD_RIGHTS_WRITE, ENLISTMENT_SET_INFORMATION, ENLISTMENT_RECOVER, ENLISTMENT_REFERENCE, ENLISTMENT_SUBORDINATE_RIGHTS, and ENLISTMENT_SUPERIOR_RIGHTS
+
 </td>
 </tr>
 <tr>
 <td>
 ENLISTMENT_GENERIC_EXECUTE
+
 </td>
 <td>
 STANDARD_RIGHTS_EXECUTE, ENLISTMENT_RECOVER, ENLISTMENT_SUBORDINATE_RIGHTS, and ENLISTMENT_SUPERIOR_RIGHTS
+
 </td>
 </tr>
 <tr>
 <td>
 ENLISTMENT_ALL_ACCESS
+
 </td>
 <td>
 STANDARD_RIGHTS_REQUIRED, ENLISTMENT_GENERIC_READ, ENLISTMENT_GENERIC_WRITE, and ENLISTMENT_GENERIC_EXECUTE
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ResourceManagerHandle [in]
 
 A handle to the caller's <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="kernel.zwcreateresourcemanager">ZwCreateResourceManager</a> or <a href="kernel.zwopenresourcemanager">ZwOpenResourceManager</a>.
+
 
 ### -param TransactionHandle [in]
 
 A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a> that was obtained by a previous call to <a href="kernel.zwcreatetransaction">ZwCreateTransaction</a> or <a href="kernel.zwopentransaction">ZwOpenTransaction</a>. KTM adds this transaction to the list of transactions that the calling resource manager is handling.
 
+
 ### -param ObjectAttributes [in, optional]
 
 A pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param CreateOptions [in, optional]
 
 Enlistment option flags. The following table contains the only available flag. 
+
 <table>
 <tr>
 <th><i>CreateOptions</i> flag</th>
@@ -178,22 +206,28 @@ Enlistment option flags. The following table contains the only available flag.
 <tr>
 <td>
 ENLISTMENT_SUPERIOR
+
 </td>
 <td>
 The caller is enlisting as a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> for the specified transaction.
+
 </td>
 </tr>
 </table>
  
+
 This parameter is optional and can be zero. 
+
 
 ### -param NotificationMask [in]
 
 A bitwise OR of TRANSACTION_NOTIFY_<i>XXX</i> values that are defined in Ktmtypes.h. This mask specifies the types of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564815">transaction notifications</a> that KTM sends to the caller.
 
+
 ### -param EnlistmentKey [in, optional]
 
 A pointer to caller-defined information that uniquely identifies the enlistment. The resource manager receives this pointer when it calls <a href="kernel.zwgetnotificationresourcemanager">ZwGetNotificationResourceManager</a> or when KTM calls the <a href="kernel.resourcemanagernotification">ResourceManagerNotification</a> callback routine. The resource manager can maintain a reference count for this key by calling <a href="kernel.tmreferenceenlistmentkey">TmReferenceEnlistmentKey</a> and <a href="kernel.tmdereferenceenlistmentkey">TmDereferenceEnlistmentKey</a>. This parameter is optional and can be <b>NULL</b>. 
+
 
 ## -returns
 <b>ZwCreateEnlistment</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
@@ -226,6 +260,7 @@ A pointer to caller-defined information that uniquely identifies the enlistment.
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
+
 ## -remarks
 A resource manager calls <b>ZwCreateEnlistment</b> to enlist in a transaction. 
 
@@ -250,11 +285,13 @@ For more information about <b>ZwCreateEnlistment</b>, see <a href="https://msdn.
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -265,14 +302,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later operating system versions. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -283,6 +323,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -293,6 +334,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -303,14 +345,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -397,5 +442,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateEnlistment routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateEnlistment routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

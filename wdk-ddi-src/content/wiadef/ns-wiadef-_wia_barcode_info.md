@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WIA_BARCODE_INFO</b> structure stores information for one decoded barcode.
 
 
+
 ## -syntax
 
 ````
@@ -65,37 +66,46 @@ typedef struct _WIA_BARCODE_INFO {
 
 The total size of this structure, in bytes.
 
+
 ### -field Type
 
 The barcode type. One of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706268">WIA_IPS_SUPPORTED_BARCODE_TYPES</a> values.
+
 
 ### -field Page
 
 The page number where the barcode was detected. A zero-based index referring to the current scan job.
 
+
 ### -field Confidence
 
 The confidence level. A value in the range from 0 (no confidence) to 10 (maximum confidence).
+
 
 ### -field Xoffset
 
 The horizontal coordinate, in pixels (relative to the scanned image), where the top-left origin of the barcode was detected. This value can be 0 if it is unknown.
 
+
 ### -field Yoffset
 
 The vertical coordinate, in pixels (relative to the scanned image), where the top-left origin of the barcode was detected. This value can be 0 if it is unknown.
+
 
 ### -field Rotation
 
 The rotation of the barcode, in degrees. A value in the rage from 0 to 359. This value can be 0 if it is unknown.
 
+
 ### -field Length
 
 The number of text characters in the character string containing the decoded barcode text, excluding the length of the NULL terminator.
 
+
 ### -field Text
 
 Placeholder for the character string containing the decoded barcode text (double byte characters, NULL terminated).
+
 
 ## -remarks
 
@@ -105,6 +115,7 @@ Placeholder for the character string containing the decoded barcode text (double
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

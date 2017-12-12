@@ -41,6 +41,7 @@ req.irql:
 AVStream calls a minidriver's <i>AVStrMiniDeviceQueryPower</i> routine when it receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a> request.
 
 
+
 ## -prototype
 
 ````
@@ -65,32 +66,40 @@ NTSTATUS AVStrMiniDeviceQueryPower(
 
 Pointer to the <a href="stream.ksdevice">KSDEVICE</a> structure that dispatched the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>.
 
+
 ### -param Irp [in]
 
 Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a> issued by <i>Device</i>.
+
 
 ### -param DeviceTo [in]
 
 The power state requested by the issuer of <i>Irp</i>.
 
+
 ### -param DeviceFrom [in]
 
 The current device power state.
+
 
 ### -param SystemTo [in]
 
 System state to transition to, specified when a system power state transition is being queried. This value is unspecified if the call is due to a device power state change query.
 
+
 ### -param SystemFrom [in]
 
 Current system state, specified when a system power state transition is being queried. This value is unspecified if the call is due to a device power state change query.
+
 
 ### -param Action [in]
 
 Specifies additional information about the requested transition. Possible values are enumerators of the POWER_ACTION type.
 
+
 ## -returns
 Should return STATUS_SUCCESS or the error code that was returned from the attempt to perform the operation. By returning STATUS_SUCCESS, the driver guarantees that it will not start any operation that would change its ability to set the requested power state. The driver should queue any IRP that would require such an operation until it completes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> that returns the device to an acceptable power state.
+
 
 ## -remarks
 The power manager or a device power policy owner sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a> request to determine whether it can change the system or device power state (for example, to go to sleep).
@@ -101,11 +110,13 @@ The minidriver specifies this routine's address in the <b>QueryPower</b> member 
 
 This routine is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -116,14 +127,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +157,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniDeviceQueryPower routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

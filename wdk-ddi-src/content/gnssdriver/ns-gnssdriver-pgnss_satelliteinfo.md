@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 27F537D8-45B2-43D9-A614-3558534C9DBA
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_SATELLITEINFO, GNSS_SATELLITEINFO, *PGNSS_SATELLITEINFO
+ms.keywords: PGNSS_SATELLITEINFO, *PGNSS_SATELLITEINFO, GNSS_SATELLITEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure defines satellite-related information of a fix.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct {
 
 Pseudorandom noise (PRN) code or other identification for the satellite.
 
+
 ### -field UsedInPositiong
 
 Indicates whether this was simply a visible satellite or actually used in the positioning.
+
 
 ### -field Elevation
 
 Elevation value
 
+
 ### -field Azimuth
 
 Azimuth value.
 
+
 ### -field SignalToNoiseRatio
 
 Signal to noise ratio.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Signal to noise ratio.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

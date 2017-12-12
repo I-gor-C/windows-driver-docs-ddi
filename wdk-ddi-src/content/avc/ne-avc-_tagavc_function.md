@@ -41,6 +41,7 @@ req.irql:
 The AVC_FUNCTION enumeration type is used to specify AV/C subunit functions.
 
 
+
 ## -syntax
 
 ````
@@ -69,76 +70,105 @@ typedef enum _tagAVC_FUNCTION {
 ### -field AVC_FUNCTION_COMMAND
 
 This value is a function code used to send an AV/C request and receive a response as one operation. This function code uses the AVC_COMMAND_IRB structure.
+
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_GET_PIN_COUNT
 
 This value is a function code used to obtain the number of pins supported by the underlying subunit device. This function code uses the AVC_PIN_COUNT structure.
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_GET_PIN_DESCRIPTOR
 
 This value is a function code used to obtain the pin descriptor for each pin ID. This function code uses the AVC_PIN_DESCRIPTOR structure.
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_GET_CONNECTINFO
 
 This value is a function code used to obtain the AVCPRECONNECTINFO structure for each pin ID. This function code uses the AVC_PRE_CONNECTINFO structure.
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_SET_CONNECTINFO
 
 This value is a function code used to set the AVCCONNECTINFO structure for each pin ID. This function code uses the AVC_SET_CONNECTINFO structure.
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_ACQUIRE
 
 This value is a function code used to cause <i>avc.sys</i> to establish any connections suggested by cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure.
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_RELEASE
 
 This value is a function code used to cause <i>avc.sys</i> to release any connections suggested by cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure.
 
+
 ### -field AVC_FUNCTION_CLR_CONNECTINFO
 
 This value is a function code used to cause <i>avc.sys</i> to remove any cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure. 
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_GET_EXT_PLUG_COUNTS
 
 This value is a function code used to cause <i>avc.sys</i> to obtain the external input and output plug counts. This function code uses the AVC_EXT_PLUG_COUNTS structure.
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_GET_UNIQUE_ID
 
 This value is a function code used to obtain the unique ID of the AV/C unit. This function code uses the AVC_UNIQUE_ID structure.
+
 This function code is available only to peer instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_GET_REQUEST
 
 This value is a function code used to register to receive AV/C unit and subunit requests. This function code uses the AVC_COMMAND_IRB structure.
+
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_SEND_RESPONSE
 
 This value is a function code used to cause <i>avc.sys</i> to respond to AV/C unit and subunit requests. This function code uses the AVC_COMMAND_IRB structure.
+
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_FIND_PEER_DO
 
 This value is a function code used to locate a nonvirtual <i>avc.sys</i> instance. This function code uses the AVC_PEER_DO_LOCATOR structure.
+
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_PEER_DO_LIST
 
 This value is a function code used to locate all nonvirtual <i>avc.sys</i> instances. This function code uses the AVC_PEER_DO_LIST structure.
+
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.
+
 
 ### -field AVC_FUNCTION_GET_SUBUNIT_INFO
 
 This value is a function code used to obtain the subunit information of the target device. This function code uses the AVC_SUBUNIT_INFO_BLOCK structure.
+
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.
+
 
 ## -remarks
 
@@ -148,6 +178,7 @@ This function code is available to both peer and virtual instances of <i>avc.sys
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -197,5 +228,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_FUNCTION enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

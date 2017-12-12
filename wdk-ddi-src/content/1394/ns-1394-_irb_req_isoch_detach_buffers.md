@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields required to carry out a IsochDetachBuffers request.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _IRB_REQ_ISOCH_DETACH_BUFFERS {
 
 Specifies the resource handle to detach buffers from.
 
+
 ### -field nNumberOfDescriptors
 
 Specifies the number of elements in the <b>pIsochDescriptor</b> array.
 
+
 ### -field pIsochDescriptor
 
 Points to an array of ISOCH_DESCRIPTOR structures that describe the buffers to be detached. The device driver should use the same ISOCH_DESCRIPTOR structure for a buffer that it used to attach the buffer.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Points to an array of ISOCH_DESCRIPTOR structures that describe the buffers to b
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

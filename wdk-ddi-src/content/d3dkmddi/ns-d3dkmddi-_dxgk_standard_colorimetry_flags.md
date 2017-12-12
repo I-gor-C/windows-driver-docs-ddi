@@ -7,7 +7,7 @@ old-location: display\dxgk_standard_colorimetry_flags.htm
 old-project: display
 ms.assetid: 473C5D7B-8FDD-49E2-981A-00ECCA67671A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_STANDARD_COLORIMETRY_FLAGS, *PDXGK_STANDARD_COLORIMETRY_FLAGS, DXGK_STANDARD_COLORIMETRY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Flags describing standard colorimetry and related support.
 
 
+
 ## -syntax
 
 ````
@@ -62,21 +63,26 @@ typedef union _DXGK_STANDARD_COLORIMETRY_FLAGS {
 
 Flag which indicates device support for the color space defined by BT.2020 using a YCC signal format.
 
+
 ### -field BT2020RGB
 
 Flag which indicates device support for the color space defined by BT.2020 using an RGB signal format.
+
 
 ### -field ST2084
 
 Flag which indicates device support for the ST.2084 EOTF.
 
+
 ### -field Reserved
 
 This value is reserved for system use.
 
+
 ### -field Value
 
 The combined value that is operated on.
+
 
 ## -remarks
 
@@ -86,6 +92,7 @@ The combined value that is operated on.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -39,9 +39,13 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IInterruptSync</code> interface represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-ISR routines. The PortCls system driver implements this interface and exposes it to the adapter driver. A miniport driver obtains a reference to an <code>IInterruptSync</code> object by calling the PortCls function <a href="audio.pcnewinterruptsync">PcNewInterruptSync</a>, which creates a new <code>IInterruptSync</code> object that connects to an interrupt resource. <code>IInterruptSync</code> inherits from the <b>IUnknown</b> interface.
+
 The <a href="audio.iinterruptsync_registerserviceroutine">IInterruptSync::RegisterServiceRoutine</a> method associates an ISR with a sync object. More than one ISR can be associated with a single sync object. When the interrupt occurs, the sync object executes the ISRs in the list in a specified order and manner according to the <b>PcNewInterruptSync</b> function's <i>Mode</i> parameter.
+
 Another facet of <code>IInterruptSync</code> is its ability to synchronize execution of ISRs with other routines that are not ISRs. Once a non-ISR routine is passed to <a href="audio.iinterruptsync_callsynchronizedroutine">IInterruptSync::CallSynchronizedRoutine</a> and begins running, execution of any ISRs that are registered with the sync object is guaranteed to be held off until that routine has finished running.
+
 Both the <b>RegisterServiceRoutine</b> and <b>CallSynchronizedRoutine</b> methods accept function pointers of type PINTERRUPTSYNCROUTINE, which is defined as follows:
+
 
 
 ## -syntax
@@ -58,6 +62,7 @@ Both the <b>RegisterServiceRoutine</b> and <b>CallSynchronizedRoutine</b> method
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IInterruptSync</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
 
+
 ## -remarks
 
 
@@ -66,6 +71,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IInterruptSync</b> interface 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

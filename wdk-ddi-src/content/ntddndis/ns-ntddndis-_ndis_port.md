@@ -7,8 +7,8 @@ old-location: netvista\ndis_port.htm
 old-project: netvista
 ms.assetid: aef1b7b2-73d3-49ad-a3f2-c06fa1f34839
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_PORT, *PNDIS_PORT, NDIS_PORT
+ms.date: 12/8/2017
+ms.keywords: _NDIS_PORT, NDIS_PORT, *PNDIS_PORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The NDIS_PORT structure specifies the characteristics of an NDIS port and a poin
   element in a linked list of ports.
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ typedef struct _NDIS_PORT {
 
 A pointer to the next port in the linked list of ports.
 
+
 ### -field NdisReserved
 
 Reserved for NDIS.
+
 
 ### -field MiniportReserved
 
 Reserved for miniport drivers.
 
+
 ### -field ProtocolReserved
 
 Reserved for protocol drivers.
+
 
 ### -field PortCharacteristics
 
@@ -79,23 +84,28 @@ An
      <a href="netvista.ndis_port_characteristics">
      NDIS_PORT_CHARACTERISTICS</a> structure that specifies the characteristics of the port.
 
+
 ## -remarks
 The NDIS_PORT structure is used to create a linked list of ports. Such a linked list is used in port
     activation (<b>NetEventPortActivation</b>) Plug and Play (PnP) events.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,5 +122,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

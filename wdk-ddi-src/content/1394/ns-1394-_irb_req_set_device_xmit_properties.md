@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary to carry out a SetDeviceXmitProperties request.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES {
 ### -field fulSpeed
 
 Specifies the maximum speed for transactions to the device. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
+
 <table>
 <tr>
 <th>Transfer Rate</th>
@@ -64,30 +66,38 @@ Specifies the maximum speed for transactions to the device. The possible speed v
 <tr>
 <td>
 SPEED_FLAGS_100
+
 </td>
 <td>
 100 Mb/s
+
 </td>
 </tr>
 <tr>
 <td>
 SPEED_FLAGS_200
+
 </td>
 <td>
 200 Mb/s
+
 </td>
 </tr>
 <tr>
 <td>
 SPEED_FLAGS_400
+
 </td>
 <td>
 400 Mb/s
+
 </td>
 </tr>
 </table>
  
+
 Reserved.
+
 <div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
 <div> </div>
 
@@ -95,14 +105,17 @@ Reserved.
 
 Specifies the priority.
 
+
 ## -remarks
 By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

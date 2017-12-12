@@ -7,7 +7,7 @@ old-location: storage\hba_openadapter.htm
 old-project: storage
 ms.assetid: 78c37e2c-171b-483c-967d-1b80bde24338
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: HBA_OpenAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>HBA_OpenAdapter</b> routine opens an HBA and returns a handle.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ HBA_HANDLE HBA_API HBA_OpenAdapter(
 
 Indicates the name of the HBA to open. 
 
+
 ## -returns
 The <b>HBA_OpenAdapter</b> routine returns a handle to the open HBA. 
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ The <b>HBA_OpenAdapter</b> routine returns a handle to the open HBA.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +81,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +103,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

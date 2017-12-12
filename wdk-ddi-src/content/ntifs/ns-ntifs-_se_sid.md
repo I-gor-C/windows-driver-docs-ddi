@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 6950B71D-B396-494E-A23C-EE37B439FD05
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _SE_SID, SE_SID, *PSE_SID
+ms.keywords: _SE_SID, *PSE_SID, SE_SID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>SE_SID</b> union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef union _SE_SID {
 
 A security identifier structure used to uniquely identify users or groups.
 
+
 ### -field Buffer
 
 Specifies an array of SECURITY_MAX_SID_SIZE for allocating enough memory for the largest possible SID size.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies an array of SECURITY_MAX_SID_SIZE for allocating enough memory for the
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -85,5 +89,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SE_SID union%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

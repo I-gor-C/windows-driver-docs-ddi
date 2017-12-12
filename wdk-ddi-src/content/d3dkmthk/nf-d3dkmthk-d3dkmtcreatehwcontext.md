@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreatehwcontext.htm
 old-project: display
 ms.assetid: 147F46A9-1182-4480-8886-7C39F940EA7D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTCreateHwContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to create a new hardware context.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ NTSTATUS D3DKMTCreateHwContext(
 
 A structure holding the information needed to create a new hardware context.
 
+
 ## -returns
 Returns STATUS_SUCCESS if called successfully. 
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ Returns STATUS_SUCCESS if called successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlDeleteAce</b> routine deletes an access control entry (ACE) from a specified access control list (ACL).
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS RtlDeleteAce(
 
 Pointer to the ACL to be modified. <b>RtlDeleteAce</b> deletes the specified ACE from this ACL. 
 
+
 ### -param AceIndex [in]
 
 Specifies the ACE to delete. A value of zero corresponds to the first ACE in the ACL, 1 to the second ACE, and so on.
+
 
 ## -returns
 <b>RtlDeleteAce</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
@@ -75,6 +78,7 @@ STATUS_INVALID_PARAMETER is an error code.
 
  
 
+
 ## -remarks
 For information about calculating the size of an ACL, see the Remarks section of the reference entry for <a href="ifsk.rtlcreateacl">RtlCreateAcl</a>. 
 
@@ -84,11 +88,13 @@ To obtain a pointer to an ACE in an ACL, use <a href="ifsk.rtlgetace">RtlGetAce<
 
 For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +105,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows Server 2003 SP1 and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +126,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +137,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -137,9 +148,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -163,5 +176,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDeleteAce routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

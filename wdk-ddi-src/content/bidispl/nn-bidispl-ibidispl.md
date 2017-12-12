@@ -7,8 +7,8 @@ old-location: print\ibidispl.htm
 old-project: print
 ms.assetid: 7e4a30b2-ac3a-475a-b818-455cdb7a91bf
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+ms.date: 12/9/2017
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>IBidiSpl</b> interface allows an application or other objects to send a single bidi request or a list of bidi requests.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IBidiSpl</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IBidiSpl</b> also has these types of members:
 
@@ -56,6 +57,7 @@ Unbinds a printer.
 
  
 
+
 ## -members
 The <b>IBidiSpl</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -69,6 +71,7 @@ The <b>IBidiSpl</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Binds a printer to a bidi request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -77,6 +80,7 @@ Binds a printer to a bidi request.
 </td>
 <td align="left" width="63%">
 Sends a list of bidi requests.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -85,6 +89,7 @@ Sends a list of bidi requests.
 </td>
 <td align="left" width="63%">
 Sends a bidi request.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -93,6 +98,7 @@ Sends a bidi request.
 </td>
 <td align="left" width="63%">
 Unbinds a printer.
+
 </td>
 </tr>
 </table>Binds a printer to a bidi request.
@@ -105,6 +111,7 @@ Unbinds a printer.
 
  
 
+
 ## -remarks
 
 
@@ -113,22 +120,27 @@ Unbinds a printer.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows XP
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2003
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,5 +163,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiSpl interface%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiSpl interface%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

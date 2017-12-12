@@ -7,7 +7,7 @@ old-location: print\routergetprintclassobject.htm
 old-project: print
 ms.assetid: e2df591d-59bd-4aae-ac1b-8fdf01da3ea7
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: RouterGetPrintClassObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <code>RouterGetPrintClassObject</code> function enumerates the list of print providers, searching for the print provider with the specified name and interface ID. 
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ HRESULT RouterGetPrintClassObject(
 
 A pointer to a null-terminated string that contains the name of the printer or print server.
 
+
 ### -param riid [in]
 
 The identifier of the requested COM interface.
+
 
 ### -param ppv [out]
 
 A pointer to a variable that supplies the address of the COM interface requested in the <i>iid</i> parameter.
 
+
 ## -returns
 This function returns S_OK on success, and a standard COM error code otherwise.
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ This function returns S_OK on success, and a standard COM error code otherwise.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +116,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

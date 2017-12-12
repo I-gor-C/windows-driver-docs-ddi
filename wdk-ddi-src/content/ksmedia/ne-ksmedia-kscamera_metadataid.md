@@ -41,6 +41,7 @@ req.irql:
 This enumeration contains identifiers for a metadata item.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 This represent the standard start metadata ID.
 
+
 ### -field MetadataId_PhotoConfirmation
 
 This represents the photo confirmation metadata ID
+
 
 ### -field MetadataId_Standard_End
 
 This represent the standard end  metadata ID.
 
+
 ### -field MetadataId_Custom_Start
 
 This represents the lowest acceptable custom metadata ID.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ This represents the lowest acceptable custom metadata ID.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

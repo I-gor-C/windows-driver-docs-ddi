@@ -39,19 +39,30 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IPinCount</code> interface provides a means for the miniport driver to monitor and manipulate its pin counts dynamically as pins are instantiated and closed. This interface is implemented in the miniport driver. To determine whether a miniport driver supports this interface, the port driver calls the miniport object's <b>QueryInterface</b> method with REFIID <b>IID_IPinCount</b>. <code>IPinCount</code> inherits from the <b>IUnknown</b> interface.
+
 The following port drivers will use a miniport driver's <code>IPinCount</code> interface if the miniport driver implements it: WaveCyclic, WavePci, MIDI, DMus, and Topology.
+
 <code>IPinCount</code> is an optional interface that a miniport driver can support if it needs to do either or both of the following:
+
 Be explicitly notified of changes in kernel streaming pin counts.
+
 Dynamically change its pin counts.
+
 In the case of a wave audio device, for example, streams with different attributes (3D, stereo/mono, and so on) might also have different "weights" in terms of the amount of hardware resources they consume.
+
 When opening a "heavyweight" stream, the miniport driver might need to decrement the available pin count by two instead of by one in order to more accurately indicate the number of pins that can be created with the remaining resources.
+
 The process is reversed when a "heavyweight" stream is closed. The available pin count might increase by more than one in order to reflect the fact that two or more "lightweight" streams can be created from the newly freed resources.
-If a miniport driver does not support the <code>IPinCount</code> interface, the port driver uses the statically initialized pin counts in the filter's <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_7.md">PCPIN_DESCRIPTOR</a> array.
+
+If a miniport driver does not support the <code>IPinCount</code> interface, the port driver uses the statically initialized pin counts in the filter's <a href="audio.pcpin_descriptor">PCPIN_DESCRIPTOR</a> array.
+
 The <code>IPinCount</code> interface provides a single method. The port driver that is bound to the miniport driver calls this method in response to a pin-count query.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPinCount</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -61,6 +72,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPinCount</b> interface inher
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

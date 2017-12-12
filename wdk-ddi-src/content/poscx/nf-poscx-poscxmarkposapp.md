@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 PosCxMarkPosApp marks the open instance as associated or not associated with a point-of-service application.
+
 This optional method provides value if the driver implements multiple device interfaces. It helps to  identify which interface is currently in use.
+
 
 
 ## -syntax
@@ -60,18 +62,22 @@ NTSTATUS PosCxMarkPosApp(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param fileObject [in]
 
 A handle to a framework file object that identifies the caller, usually acquired with <a href="wdf.wdfrequestgetfileobject">WdfRequestGetFileObject</a>.
+
 
 ### -param isPosApp [in]
 
 Specifies if the open instance is associated with a point-of-service application. Set to TRUE if it is associated with a point-of-service application. Otherwise, set to FALSE.
 
+
 ## -returns
 Possible return values are:
 
  
+
 
 ## -remarks
 
@@ -81,14 +87,17 @@ Possible return values are:
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

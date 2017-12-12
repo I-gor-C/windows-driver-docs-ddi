@@ -7,7 +7,7 @@ old-location: netvista\rilgeoscope_2.htm
 old-project: netvista
 ms.assetid: 821f05f8-cc2c-4567-a1a0-aaa7b535d568
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILGEOSCOPE, RILGEOSCOPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef enum _RILGEOSCOPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

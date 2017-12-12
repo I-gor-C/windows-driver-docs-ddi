@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum  {
 
 Specify if the pin supports quality management.
 
+
 ### -field KSPROPERTY_QUALITY_ERROR
 
 Specify if the pin supports quality management.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specify if the pin supports quality management.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

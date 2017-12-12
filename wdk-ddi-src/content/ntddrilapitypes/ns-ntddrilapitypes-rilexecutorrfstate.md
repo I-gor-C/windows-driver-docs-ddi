@@ -7,8 +7,8 @@ old-location: netvista\rilexecutorrfstate.htm
 old-project: netvista
 ms.assetid: b56f71c3-3c24-4f6b-ba50-203e17374c81
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILEXECUTORRFSTATE, *LPRILEXECUTORRFSTATE, RILEXECUTORRFSTATE
+ms.date: 12/8/2017
+ms.keywords: RILEXECUTORRFSTATE, RILEXECUTORRFSTATE, *LPRILEXECUTORRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILEXECUTORRFSTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

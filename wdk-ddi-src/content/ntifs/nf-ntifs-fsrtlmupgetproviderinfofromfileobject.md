@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlMupGetProviderInfoFromFileObject</b> routine gets information about a network redirector that is registered with the multiple UNC provider (MUP) from a file object for a file that is located on a remote file system.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
 
 A pointer to a file object of a file that is located on a remote file system.
 
+
 ### -param Level [in]
 
 The level of information that is returned by the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine. For more information about the possible values for this parameter, see the Remarks section.
+
 
 ### -param pBuffer [out]
 
 A pointer to a buffer that receives the information that is returned by the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine. For more information about the format of the data that is returned in this buffer, see the Remarks section.
 
+
 ### -param pBufferSize [in, out]
 
 A pointer to a ULONG-typed variable that contains the size, in bytes, of the buffer that is pointed to by the <i>pBuffer</i> parameter. If the routine succeeds, this variable receives the size, in bytes, of data that is returned in the buffer.
+
 
 ## -returns
 The <b>FsRtlMupGetProviderInfoFromFileObject</b> routine returns one of the following NTSTATUS values.
@@ -91,6 +96,7 @@ The <b>FsRtlMupGetProviderInfoFromFileObject</b> routine returns one of the foll
 
  
 
+
 ## -remarks
 A file system filter driver can call the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine to get information about a network redirector from a file object for a file that is located on a remote file system. The amount of information that is returned by the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine depends on the value of the <i>Level</i> parameter. If the <i>Level </i>parameter is set to 1, the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine returns a FSRTL_MUP_PROVIDER_INFO_LEVEL_1 structure in the buffer that is pointed to by the <i>pBuffer </i>parameter. The FSRTL_MUP_PROVIDER_INFO_LEVEL_1 structure is defined as follows:
 
@@ -108,11 +114,13 @@ The value of the UNC provider identifier for a particular network redirector rem
 
 To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="ifsk.fsrtlmupgetprovideridfromname">FsRtlMupGetProviderIdFromName</a> routine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -123,14 +131,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The FsRtlMupGetProviderInfoFromFileObject function is available in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,6 +152,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -151,6 +163,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -161,9 +174,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -175,5 +190,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMupGetProviderInfoFromFileObject routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

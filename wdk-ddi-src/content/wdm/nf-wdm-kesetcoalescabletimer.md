@@ -7,7 +7,7 @@ old-location: kernel\kesetcoalescabletimer.htm
 old-project: kernel
 ms.assetid: e053c120-8c43-4714-acf1-0648958eabb8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeSetCoalescableTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeSetCoalescableTimer</b> routine sets the initial expiration time and period of a timer object and specifies how much delay can be tolerated in the expiration times. 
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,30 @@ BOOLEAN KeSetCoalescableTimer(
 
 A pointer to a timer object. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554250">KTIMER</a> structure, which is an opaque, system structure that represents the timer object. This object must have been previously initialized by the <a href="kernel.keinitializetimerex">KeInitializeTimerEx</a> or <a href="kernel.keinitializetimer">KeInitializeTimer</a> routine.
 
+
 ### -param DueTime [in]
 
 Specifies an absolute or relative time at which the timer is to expire. If the value of the <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units, which are 100-nanosecond intervals. Absolute expiration times track any changes that are made to the system clock. Relative expiration times are not affected by system clock changes.
+
 
 ### -param Period [in]
 
 Specifies the interval between periodic timer expirations in milliseconds. The value of this parameter must not exceed MAXLONG. This parameter is optional and can be set to zero to indicate that the timer is nonperiodic.
 
+
 ### -param TolerableDelay [in]
 
 Specifies a tolerance, in milliseconds, for the timer period that <i>Period</i> specifies and for the initial time interval that <i>DueTime</i> specifies. For a periodic timer, the time interval between two successive timer expirations will be in the range from (<i>Period</i> - <i>TolerableDelay</i>) to (<i>Period</i> + <i>TolerableDelay</i>). The initial expiration time will be in the range from <i>DueTime</i> to (<i>DueTime</i> + <i>TolerableDelay</i>). The <i>TolerableDelay</i> value cannot be negative.
+
 
 ### -param Dpc [in, optional]
 
 A pointer to a DPC object. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure, which is an opaque, system structure that represents the DPC object. This object must have been previously initialized by the <a href="kernel.keinitializedpc">KeInitializeDpc</a> routine. This parameter is optional and can be specified as <b>NULL</b> if the caller does not require a DPC.
 
+
 ## -returns
 <b>KeSetCoalescableTimer</b> returns <b>TRUE</b> if the timer object was already in the system timer queue. Otherwise, it returns <b>FALSE</b>. 
+
 
 ## -remarks
 This routine does the following:
@@ -119,11 +126,13 @@ Expiration times are measured relative to the system clock, and the accuracy wit
 
 For more information about timer objects, see <a href="https://msdn.microsoft.com/b58487de-6e9e-45f4-acb8-9233c8718ee2">Timer Objects and DPCs</a>. For more information about timer coalescing, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=116598">Windows Timer Coalescing</a> white paper on the WHDC website. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -134,14 +143,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,6 +164,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +175,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -172,9 +186,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -219,5 +235,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetCoalescableTimer routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetCoalescableTimer routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

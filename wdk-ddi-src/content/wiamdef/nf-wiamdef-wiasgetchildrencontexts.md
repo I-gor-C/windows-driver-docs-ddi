@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasGetChildrenContexts</b> function retrieves an array of item contexts belonging to the current item's children.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ HRESULT _stdcall wiasGetChildrenContexts(
 
 Pointer to the parent item.
 
+
 ### -param pulNumChildren [out]
 
 Pointer to a memory location that receives the number of children contexts.
+
 
 ### -param pppChildren [out]
 
 Pointer to a memory location that points to an array whose elements are addresses of <b>IWiaItem</b> objects (described in the Microsoft Windows SDK documentation). Each <b>IWiaItem</b> object represents one child context.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Windows SDK documentation).
+
 
 ## -remarks
 
@@ -78,6 +83,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -88,14 +94,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +115,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +126,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

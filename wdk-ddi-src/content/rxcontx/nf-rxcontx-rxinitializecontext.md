@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxInitializeContext</b> initializes an existing RX_CONTEXT data structure. 
 
 
+
 ## -syntax
 
 ````
@@ -60,26 +61,33 @@ VOID RxInitializeContext(
 
 A pointer to the IRP to be encapsulated by this RX_CONTEXT structure.
 
+
 ### -param RxDeviceObject [in]
 
 A pointer to the device object to which this RX_CONTEXT and IRP apply.
+
 
 ### -param InitialContextFlags [in]
 
 The set of initial values for <i>Flags</i> member of the RX_CONTEXT data structure to be stored in the RX_CONTEXT structure. These initial values can be any combination of the following enumerations:
 
 
+
+
 ### -param RX_CONTEXT_FLAG_WAIT
 
 When this value is set, the IRP should be not be posted for later execution by the file system process, but should be waited on to complete.
+
 
 ### -param RX_CONTEXT_FLAG_MUST_SUCCEED
 
 When this value is set, the operation must succeed. This value is not currently used by RDBSS, but it may be used by network mini-redirector drivers. 
 
+
 ### -param RX_CONTEXT_FLAG_MUST_SUCCEED_NONBLOCKING
 
 When this value is set, the operation must succeed for non-blocking operations. This value is not currently used by RDBSS, but it may be used by network mini-redirector drivers. 
+
 </dd>
 </dl>
 
@@ -87,8 +95,10 @@ When this value is set, the operation must succeed for non-blocking operations. 
 
 Pointer to the RX_CONTEXT to be initialized.
 
+
 ## -returns
 None 
+
 
 ## -remarks
 <b>RxInitializeContext</b> is called internally by the <b>RxCreateRxContext</b> routine. So the <b>RxInitializeContext</b> routine would normally only be used by network min-redirector drivers that allocate RX_CONTEXT structures directly rather than calling the <b>RxCreateRxContext</b> routine to allocate and initialize an RX_CONTEXT structure. 
@@ -131,11 +141,13 @@ Initializes the list entry of BlockedOperations
 
 Sets the RX_CONTEXT members based on the <i>Irp</i>. These include <b>CurrentIrp</b>, <b>OriginalThread</b>, <b>MajorFunction</b>, <b>MinorFunction</b>, <b>CurrentIrpSp</b>, <b>pFcb</b>, <b>NonPagedFcb</b>, <b>pFobx</b>, <b>pRelevantSrvOpen</b>, and <b>FobxSerialNumber</b> members.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +158,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,9 +169,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -197,5 +212,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxInitializeContext function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: netvista\rilmsgoutsubmit_2.htm
 old-project: netvista
 ms.assetid: 1e310fc1-383c-4dbc-9c72-3eb8aa8db285
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT, RILMSGOUTSUBMIT
+ms.date: 12/8/2017
+ms.keywords: RILMSGOUTSUBMIT, RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -100,6 +101,7 @@ typedef struct _RILMSGOUTSUBMIT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

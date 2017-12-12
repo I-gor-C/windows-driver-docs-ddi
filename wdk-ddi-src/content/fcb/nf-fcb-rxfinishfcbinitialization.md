@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>RxFinishFcbInitialization</b> is used to finish initializing an FCB after the successful completion of a create operation by the network mini-redirector. 
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ VOID RxFinishFcbInitialization(
 
 A pointer to the MRX_FCB structure being initialized.
 
+
 ### -param RdbssStorageType [in]
 
 The value indicating the storage type of entity that the FCB refers to. Possible options for this parameter include the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -73,6 +76,7 @@ The value indicating the storage type of entity that the FCB refers to. Possible
 </td>
 <td width="60%">
 A mail slot.
+
 </td>
 </tr>
 <tr>
@@ -82,6 +86,7 @@ A mail slot.
 </td>
 <td width="60%">
 A printer spool file.
+
 </td>
 </tr>
 <tr>
@@ -91,6 +96,7 @@ A printer spool file.
 </td>
 <td width="60%">
 A directory.
+
 </td>
 </tr>
 <tr>
@@ -100,6 +106,7 @@ A directory.
 </td>
 <td width="60%">
 The storage type is unknown.
+
 </td>
 </tr>
 <tr>
@@ -109,17 +116,21 @@ The storage type is unknown.
 </td>
 <td width="60%">
 A file.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param InitPacket [in, optional]
 
 Pointer to extra data that is required for initialization depending on the storage type of the FCB being initialized. This parameter may be a <b>NULL</b> pointer if no extra data is provided.
 
+
 ## -returns
 None
+
 
 ## -remarks
 When called as a result of an IRP_MJ_CREATE, <a href="ifsk.rxcreatenetfcb">RxCreateNetFCB</a> is called first to create the FCB. If the <b>Type</b> member of the NET_ROOT to be created is not a NET_ROOT_MAILSLOT, then <b>RxFinishFcbInitialization</b> is called to finish the initialization of the FCB structure. 
@@ -128,11 +139,13 @@ If the <b>FcbState</b> member of the MRX_FCB structure pointed to by <i>MrxFcb</
 
 If the storage type is an RDBSS_NTC_MAILSLOT and the FcbState member of the FCB does have the FCB_STATE_TIME_AND_SIZE_ALREADY_SET option set on, then the following members of the FCB structure for the mail slot will be initialized to 0: <b>Attributes</b>, <b>NumberOfLinks</b>,<b> CreationTime.QuadPart</b>,<b> LastAccessTime.QuadPart</b>, <b>LastWriteTime.QuadPart</b>, <b>LastChangeTime</b>.<b>QuadPart</b>, <b>ActualAllocationLength</b>, <b>Header.AllocationSize.QuadPart</b>, <b>Header.FileSize.QuadPart</b>, and <b>Header.ValidDataLength.QuadPart</b>
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +156,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,9 +167,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -221,5 +237,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinishFcbInitialization function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: FDA0CD47-36D9-4E64-9377-F419A7D788A3
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSSTREAM_UVC_METADATATYPE_TIMESTAMP, KSSTREAM_UVC_METADATATYPE_TIMESTAMP, *PKSSTREAM_UVC_METADATATYPE_TIMESTAMP
+ms.keywords: PKSSTREAM_UVC_METADATATYPE_TIMESTAMP, *PKSSTREAM_UVC_METADATATYPE_TIMESTAMP, KSSTREAM_UVC_METADATATYPE_TIMESTAMP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>KSSTREAM_UVC_METADATATYPE_TIMESTAMP</b> structure contains USB video class (UVC) clock and timestamp information.
 
 
+
 ## -syntax
 
 ````
@@ -66,29 +67,36 @@ typedef struct {
 
 Specifies the presentation timestamp.
 
+
 ### -field SourceClockReference
 
 Specifies the source clock reference.
+
 
 ### -field Counter
 
 Specifies the source clock reference counter.
 
+
 ### -field Reserved
 
 Reserved.
+
 
 ### -field SCRToken
 
 Specifies the source clock reference token.
 
+
 ### -field Reserved0
 
 Reserved.
 
+
 ### -field Reserved1
 
 Reserved.
+
 
 ## -remarks
 
@@ -98,6 +106,7 @@ Reserved.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

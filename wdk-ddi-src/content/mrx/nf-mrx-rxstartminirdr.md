@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>RxStartMinirdr</b> is called to start up a network mini-redirector that has previously called to register with RDBSS. As part of <b>RxStartMinirdr</b>, RDBSS will also register the network mini-redirector driver as a universal naming convention (UNC) provider with the Multiple UNC Provider (MUP) if the driver indicates support for UNC names.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS RxStartMinirdr(
 
 A pointer to the RX_CONTEXT structure to use to get the device object and determine if this is a file system process. 
 
+
 ### -param PostToFsp [out]
 
 A pointer to a logical value set to <b>TRUE</b> on return if the request must be posted for later processing by the file system process. 
+
 
 ## -returns
 <b>RxStartMinirdr</b> returns STATUS_SUCCESS if the startup sequence was successful or one of the following error values: 
@@ -80,6 +83,7 @@ A pointer to a logical value set to <b>TRUE</b> on return if the request must be
 </dl>The network mini-redirector was already started. 
 
  
+
 
 ## -remarks
 A network mini-redirector registers with RDBSS whenever the driver is loaded by the kernel and then unregisters with RDBSS when the driver is unloaded. A network mini-redirector informs RDBSS that it has been loaded by calling <b>RxRegisterMinirdr</b>, the registration routine exported from RDBSS. As part of this registration process, the network mini-redirector passes a parameter to <b>RxRegisterMinirdr</b> that is a pointer to a large structure, MINIRDR_DISPATCH, which contains configuration information for the network mini-redirector and a table of pointers to callback routines implemented by the network mini-redirector driver. RDBSS uses the callback routines passed in this structure to communicate with the network mini-redirector.  
@@ -134,11 +138,13 @@ The startup sequence for RDBSS and the network mini-redirector must be completed
 
 On an abnormal termination or other failure, <b>RxStartMinirdr</b> will try to undo these operations, including de-registering the UNC provider with MUP, unregistering the file system, freeing memory allocated for storing the domain name to be used by mailslot broadcasts, and updating internal RDBSS tables. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,6 +155,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,9 +166,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -209,5 +218,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxStartMinirdr function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

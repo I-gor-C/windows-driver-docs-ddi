@@ -7,7 +7,7 @@ old-location: netvista\rilimssipcause.htm
 old-project: netvista
 ms.assetid: 79a57fc5-1526-4f18-b51c-7d045092fcb4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE, RILIMSSIPCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILIMSSIPCAUSE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

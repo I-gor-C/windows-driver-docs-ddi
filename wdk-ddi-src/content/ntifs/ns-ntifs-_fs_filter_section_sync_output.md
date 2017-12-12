@@ -41,6 +41,7 @@ req.irql:
 The  <b>FS_FILTER_SECTION_SYNC_OUTPUT</b> structure contains information describing the attributes of the section that is being created.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _FS_FILTER_SECTION_SYNC_OUTPUT  {
 
 The size of the structure.
 
+
 ### -field SizeReturned
 
 The size of the structure which has been successfully populated with information on completion.
+
 
 ### -field Flags
 
 Reserved for future use.  Should be zero.
 
+
 ### -field DesiredReadAlignment
 
 Specifies the optimal size for efficient reads.  Faults from the section will attempt, but not guarantee, to read in multiples of this size.  This value should be a multiple of PAGE_SIZE.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Specifies the optimal size for efficient reads.  Faults from the section will at
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

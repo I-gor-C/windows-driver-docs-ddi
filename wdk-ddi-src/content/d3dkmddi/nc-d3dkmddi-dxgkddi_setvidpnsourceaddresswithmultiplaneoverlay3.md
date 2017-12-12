@@ -7,7 +7,7 @@ old-location: display\dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay3.htm
 old-project: display
 ms.assetid: B4B6C5F0-AB67-4D30-B6A5-76B7596D22B6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Called to change the overlay configuration being displayed.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS APIENTRY DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3(
 
 Identifies the adapter containing the overlay hardware.
 
+
 ### -param pSetVidPnSourceAddressWithMultiPlaneOverlay [in]
 
 A pointer to a DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 structure that describes the surfaces and display options to present.
+
 
 ## -returns
 DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 returns the following values:
@@ -72,16 +75,19 @@ DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 returns the following values
 
  
 
+
 ## -remarks
 This function is typically called at interrupt level, but if the driver needs to perform hardware configuration that can only be performed at PASSIVE_LEVEL, the driver can request that this function be recalled at PASSIVE level by returning STATUS_RETRY and setting the DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS.PrePresentNeeded flag.
 
 Even when called at PASSIVE_LEVEL, the driver should avoid spending a significant amount of time in this call because the call blocks the main GPU scheduler thread and delay could lead to present glitches. Time intensive actions should be queued as separate work items by driver and handled in background. In this scenario, any conflicts between the queued item and hardware changes demanded by future pre/post calls should be managed by the driver. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\getdeviceinforesponse_2.htm
 old-project: netvista
 ms.assetid: 318927ab-6134-4a01-bf9c-a85619d2bbdf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: GETDEVICEINFORESPONSE, *LPGETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE
+ms.date: 12/8/2017
+ms.keywords: GETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE, *LPGETDEVICEINFORESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ typedef struct _GETDEVICEINFORESPONSE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

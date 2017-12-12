@@ -7,8 +7,8 @@ old-location: netvista\rilmessageinfo.htm
 old-project: netvista
 ms.assetid: 689b4abc-13ee-4d4a-8b2e-bb0be7cc6672
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMESSAGEINFO, *LPRILMESSAGEINFO, RILMESSAGEINFO
+ms.date: 12/8/2017
+ms.keywords: RILMESSAGEINFO, RILMESSAGEINFO, *LPRILMESSAGEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILMESSAGEINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

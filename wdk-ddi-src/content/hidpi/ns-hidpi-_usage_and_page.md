@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 48716117-c539-4436-a81f-4b05c9a8cb7d
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USAGE_AND_PAGE, *PUSAGE_AND_PAGE, USAGE_AND_PAGE
+ms.keywords: _USAGE_AND_PAGE, USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The USAGE_AND_PAGE structure specifies the <a href="hid.hid_usages#usage_page#usage_page">usage page</a> and <a href="hid.hid_usages#usage_id#usage_id">usage ID</a> of a HID control.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _USAGE_AND_PAGE {
 
 Specifies a usage ID within the usage page specified by <b>UsagePage</b>.
 
+
 ### -field UsagePage
 
 Specifies a usage page.
+
 
 ## -remarks
 The<b> HidP_IsSameUsageAndPage</b> macro determines if two <a href="hid.hid_usages#extended_usage#extended_usage">extended usages</a>, represented by <b>USAGE_AND_PAGE</b> structures, are equal.
@@ -98,11 +101,13 @@ As defined by the USB HID standard, an extended usage is a 32-bit unsigned value
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20USAGE_AND_PAGE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

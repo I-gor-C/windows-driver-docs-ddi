@@ -7,7 +7,7 @@ old-location: kernel\silo_monitor_create_callback.htm
 old-project: kernel
 ms.assetid: C26C5162-4BB0-401E-9AF5-AF1D2D8715F9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This is callback is invoked when a new silo is created.
 
 
+
 ## -prototype
 
 ````
@@ -59,8 +60,10 @@ NTSTATUS CreateCallback(
 
 The silo that was created.
 
+
 ## -returns
 The NT code returned by the operation.
+
 
 ## -remarks
 
@@ -70,22 +73,27 @@ The NT code returned by the operation.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

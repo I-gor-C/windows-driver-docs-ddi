@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The<b> KsPinGetConnectedPinInterface</b> function queries the pin to which <i>Pin</i> is connected for a COM style interface.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ NTSTATUS KsPinGetConnectedPinInterface(
 
 A pointer to a <a href="stream.kspin">KSPIN</a> structure. AVStream queries the pin connected to <i>Pin</i> for the requested interface.
 
+
 ### -param InterfaceId [in]
 
 A pointer to the GUID specifying the interface type to be obtained. A <b>QueryInterface</b> call is automatically performed for this interface.
+
 
 ### -param Interface [out]
 
 A pointer to a pointer that AVStream sets to the location of the COM interface.
 
+
 ## -returns
 <b>KsPinGetConnectedPinInterface</b> returns STATUS_SUCCESS or STATUS_NOINTERFACE. See details below.
+
 
 ## -remarks
 <i>Interface</i> has a corresponding reference count and <b>must</b> be released by the caller as in COM.
@@ -86,11 +91,13 @@ The connection is intra-AVStream (<i>Pin</i>'s connected pin is an AVStream pin)
 
 Otherwise, STATUS_UNSUCCESSFUL is returned.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,14 +108,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +129,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -129,9 +140,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -161,5 +174,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetConnectedPinInterface function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

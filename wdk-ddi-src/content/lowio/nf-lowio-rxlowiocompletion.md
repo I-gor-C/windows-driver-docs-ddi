@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>RxLowIoCompletion</b> must be called by the network mini-redirector low I/O routines when they complete, if the low I/O routines have initially returned STATUS_PENDING.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS RxLowIoCompletion(
 
 A pointer to the RX_CONTEXT structure for this IRP.
 
+
 ## -returns
 <b>RxLowIoCompletion</b>
       returns different values depending on whether the <i>RxContext</i> parameter indicates this is synchronous or asynchornous I/O.
@@ -63,6 +65,7 @@ A pointer to the RX_CONTEXT structure for this IRP.
 If the <i>RxContext</i> parameter indicates this is synchronous I/O, then <b>RxLowIoCompletion</b> returns STATUS_MORE_PROCESSING_REQUIRED. 
 
 If the <i>RxContext</i> parameter indicates this is asynchronous I/O, then <b>RxLowIoCompletion</b> will try to call the <b>LowIoContext.CompletionRoutine</b> member of the RX_CONTEXT. The completion routine will only be called if the <b>LowIoContext.Flags</b>member indicates that the completion routine can be called at DPC level and the current IRQL is less than dispatch level. In this case, the return value is the result returned by the completion routine. If these conditions are not met, then <b>RxLowIoCompletion</b> returns STATUS_MORE_PROCESSING_REQUIRED. 
+
 
 ## -remarks
 
@@ -72,6 +75,7 @@ If the <i>RxContext</i> parameter indicates this is asynchronous I/O, then <b>Rx
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +86,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,9 +97,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -115,5 +122,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLowIoCompletion routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

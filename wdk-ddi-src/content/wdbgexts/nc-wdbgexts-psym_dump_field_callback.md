@@ -7,8 +7,8 @@ old-location: debugger\psym_dump_field_callback.htm
 old-project: debugger
 ms.assetid: 3a1d9751-194a-4eb7-86f1-f6e812b52f0c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _VPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
+ms.date: 12/8/2017
+ms.keywords: _VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PSYM_DUMP_FIELD_CALLBACK callback function is called by the debugger engine during the <a href="debugger.ig_dump_symbol_info">IG_DUMP_SYMBOL_INFO</a> Ioctl operation with information about a member in the specified symbol.
 
 
+
 ## -prototype
 
 ````
@@ -58,15 +59,19 @@ typedef ULONG ( WDBGAPI *PSYM_DUMP_FIELD_CALLBACK)(
 
 Specifies the field for which this callback function is being called.  The debugger engine fills in the contents of this parameter before making the call.  See <a href="debugger.field_info">FIELD_INFO</a> for details about the members of this parameter.
 
+
 ### -param UserContext 
 
 Specifies the user context object passed to the <b>Ioctl</b> operation in the <b>Context</b> member of the SYM_DUMP_PARAM structure.
 
+
 ## -returns
 If the function is successful, it should return STATUS_SUCCESS.  Otherwise, it should return an appropriate error code.
 
+
 ## -remarks
 If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing a DbgEng extension that uses this function prototype, include wdbgexts.h before dbgeng.h (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details). STATUS_SUCCESS and other status and error codes are defined in ntstatus.h.
+
 
 
 ## -requirements
@@ -74,6 +79,7 @@ If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20PSYM_DUMP_FIELD_CALLBACK function pointer%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20PSYM_DUMP_FIELD_CALLBACK function pointer%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

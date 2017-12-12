@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-d3d12-options-data-0032.htm
 old-project: display
 ms.assetid: 23b2a512-9828-4d1c-9282-2df6a1a80d85
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_D3D12_OPTIONS_DATA_0032, D3D12DDI_D3D12_OPTIONS_DATA_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Display options data.
 
 
+
 ## -syntax
 
 ````
@@ -66,45 +67,56 @@ typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0032 {
 
 Resource binding tier.
 
+
 ### -field ConservativeRasterizationTier
 
 Conservative rasterization tier.
+
 
 ### -field TiledResourcesTier
 
 Tile resources tier.
 
+
 ### -field CrossNodeSharingTier
 
 Cross node sharing tier.
+
 
 ### -field VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation
 
 VP and RT array index from any shader feeding rasterizer supported without GS emulation.
 
+
 ### -field OutputMergerLogicOp
 
 Output merger logic option.
+
 
 ### -field ResourceHeapTier
 
 Resource heap tier.
 
+
 ### -field DepthBoundsTestSupported
 
 Depth bounds test supported.
+
 
 ### -field ProgrammableSamplePositionsTier
 
 Programmable sample positions tier.
 
+
 ### -field CopyQueueTimestampQueriesSupported
 
 Copy queue timestamp queries supported.
 
+
 ### -field WriteBufferImmediateQueueFlags
 
 Write buffer immediate queue flags.
+
 
 ## -remarks
 
@@ -114,6 +126,7 @@ Write buffer immediate queue flags.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

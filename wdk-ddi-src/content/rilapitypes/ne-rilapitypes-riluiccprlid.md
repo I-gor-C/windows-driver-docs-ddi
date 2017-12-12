@@ -7,7 +7,7 @@ old-location: netvista\riluiccprlid_2.htm
 old-project: netvista
 ms.assetid: d91d48a8-492d-4f23-9c7a-10920c9e4845
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCPRLID, RILUICCPRLID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef enum _RILUICCPRLID {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

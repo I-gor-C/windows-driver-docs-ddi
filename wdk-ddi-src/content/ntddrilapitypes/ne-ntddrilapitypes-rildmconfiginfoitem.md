@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfoitem.htm
 old-project: netvista
 ms.assetid: 31061811-e148-4af2-8a9b-370d1b45ae1f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDMCONFIGINFOITEM, RILDMCONFIGINFOITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -203,6 +204,7 @@ typedef enum _RILDMCONFIGINFOITEM {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

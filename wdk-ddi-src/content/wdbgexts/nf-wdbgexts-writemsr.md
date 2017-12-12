@@ -7,7 +7,7 @@ old-location: debugger\writemsr.htm
 old-project: debugger
 ms.assetid: a88c2c74-ab9a-4d9a-aeb7-d08bfe497da4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: WriteMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WriteMsr</b> function writes to a Model-Specific Register (MSR). 
 
 
+
 ## -syntax
 
 ````
@@ -58,21 +59,26 @@ __inline VOID WriteMsr(
 
 Specifies the ID number of the MSR.
 
+
 ### -param MsrValue [in]
 
 Specifies the new value of the MSR.
 
+
 ## -returns
 None
 
+
 ## -remarks
 For a WdbgExts extension, include wdbgexts.h. For a DbgEng extension, include wdbgexts.h before dbgeng.h. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

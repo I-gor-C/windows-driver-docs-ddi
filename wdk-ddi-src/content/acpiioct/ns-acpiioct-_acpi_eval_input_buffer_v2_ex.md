@@ -41,6 +41,7 @@ req.irql:
 This topic describes the  <b>ACPI_EVAL_INPUT_BUFFER_V2_EX</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_V2_EX {
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
 
+
 ### -field MethodName[256]
 
 NULL terminated name string.
+
 
 ## -remarks
 
@@ -69,14 +72,17 @@ NULL terminated name string.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

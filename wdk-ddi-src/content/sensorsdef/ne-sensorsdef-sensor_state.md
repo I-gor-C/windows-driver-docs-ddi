@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This enumeration represents the valid states of a sensor.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef enum _SENSOR_STATE {
 
 Indicates that the sensor is initializing.
 
+
 ### -field SensorState_Idle
 
 Indicates that the sensor is idle
+
 
 ### -field SensorState_Active
 
 Indicates that the sensor is active.
 
+
 ### -field SensorState_Error
 
 Indicates that the sensor is in an error state.
+
 
 ## -remarks
 
@@ -80,22 +85,27 @@ Indicates that the sensor is in an error state.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

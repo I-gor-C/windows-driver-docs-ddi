@@ -7,7 +7,7 @@ old-location: netvista\ndismcoactivatevccomplete.htm
 old-project: netvista
 ms.assetid: db5ff69f-dcae-4016-a078-c8edb2390c6c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMCoActivateVcComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: <= DISPATCH_LEVEL
   NDIS_STATUS_PENDING.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ VOID NdisMCoActivateVcComplete(
 
 
 
+
 ### -param Specifies the final status of the activate-VC operation, which can be NDIS_STATUS_SUCCESS or
         any NDIS_STATUS_<i>XXX</i><u>except</u> NDIS_STATUS_PENDING.
 <dd></dd>
@@ -73,14 +75,17 @@ Specifies the handle identifying the VC. The caller obtained this handle from it
      <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">
      MiniportCoActivateVc</a> function.
 
+
 ### -param CallParameters [in]
 
 Pointer to a structure of type 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>, supplied by the call
      manager, specifying the call and media parameters for the VC activation.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A connection-oriented miniport driver must call 
@@ -108,11 +113,13 @@ A call to
     ProtocolCmActivateVcComplete</a> function of the call manager that originally requested the VC
     activation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +130,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -130,11 +138,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisMCoActivateVcComplete (NDIS
    5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +166,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_mco_function">Irql_MCO_Function</a>
@@ -190,5 +204,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoActivateVcComplete function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoActivateVcComplete function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

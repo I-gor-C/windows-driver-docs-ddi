@@ -40,7 +40,9 @@ req.irql:
 ## -description
 The <b>IOCTL_HID_DEVICERESET_NOTIFICATION</b> 
    request is sent by the HID client driver to HID class driver to wait for a device-initiated reset event.
+
 Only one device reset notification request is allowed at any one  time.
+
 
 
 ## -ioctlparameters
@@ -49,15 +51,19 @@ Only one device reset notification request is allowed at any one  time.
 
        None.
 
+
 ### -input-buffer-length
 None.
+
 
 ### -output-buffer
 
        None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -71,6 +77,7 @@ None.
 I/O Status block
 I<b>rp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 
 
@@ -79,6 +86,7 @@ I<b>rp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is succes
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

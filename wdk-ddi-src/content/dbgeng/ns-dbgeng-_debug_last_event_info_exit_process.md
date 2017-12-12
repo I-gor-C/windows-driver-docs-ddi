@@ -7,8 +7,8 @@ old-location: debugger\debug_last_event_info_exit_process.htm
 old-project: debugger
 ms.assetid: B4AFCD4C-0415-4EC4-BC10-D98F3AB409C5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, *PDEBUG_LAST_EVENT_INFO_EXIT_PROCESS, DEBUG_LAST_EVENT_INFO_EXIT_PROCESS
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, *PDEBUG_LAST_EVENT_INFO_EXIT_PROCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Describes the exit process of the last event.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DEBUG_LAST_EVENT_INFO_EXIT_PROCESS {
 
 The exit code of the process.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The exit code of the process.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

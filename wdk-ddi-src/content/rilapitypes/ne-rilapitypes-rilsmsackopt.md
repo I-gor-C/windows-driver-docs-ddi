@@ -7,7 +7,7 @@ old-location: netvista\rilsmsackopt_2.htm
 old-project: netvista
 ms.assetid: a8430f5f-000f-4dea-acd9-2f0df2c6e67d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSMSACKOPT, RILSMSACKOPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ typedef enum _RILSMSACKOPT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

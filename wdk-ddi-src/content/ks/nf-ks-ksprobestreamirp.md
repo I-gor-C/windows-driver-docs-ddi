@@ -41,6 +41,7 @@ req.irql:
 The <b>KsProbeStreamIrp</b> function makes the specified modifications to the input and output buffers of the given IRP based on the flags passed, and it then validates the stream header. This is useful when localizing exception handling or performing asynchronous work on an IRP. The resulting IRP is in essentially the METHOD_OUT_DIRECT or METHOD_IN_DIRECT format, with the exception that the access to the data buffer may be <b>IoModifyAccess</b>, depending on the flags passed to this function or the flags in the stream header. 
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ NTSTATUS KsProbeStreamIrp(
 
 Specifies the IRP whose input and output buffers are to be mapped. The requester mode of the IRP is used when probing the buffers.
 
+
 ### -param ProbeFlags [in]
 
 Specifies flags specifying how to probe the streaming IRP; the flags are listed in the following table.
+
 
 ### -param HeaderSize [in, optional]
 
 Specifies the size to validate each header header against passed to this client, or zero if no validation is to be done. If used, it is assumed that the entire buffer passed is a multiple of this header size, unless the buffer instead contains a single format change header.
 
+
 ## -returns
 The <b>KsProbeStreamIrp</b> function returns STATUS_SUCCESS if successful, or it returns a memory or access error.
+
 
 ## -remarks
 If the function is used only to allocate MDL's and not to probe and lock the addresses, the caller must have a completion routine to clean up the MDL's. For instance, a just-in-time locking mechanism can allocate the MDL list but only lock memory as needed. The client must provide cleanup code to remove the partially locked MDL list before the IRP is completed, presumably in a completion routine.
@@ -100,11 +105,13 @@ KSPROBE_ALLOWFORMATCHANGE
 
 For a Stream Write, allows the KSSTREAM_HEADER_OPTIONSF_TYPECHANGED flag to be set in the stream header. This implies that the stream header is not of extended length, even if an extended header size was indicated. Also, there may only be one stream header contained in the IRP in this case. The buffer associated with this header contains the new data format. For system memory data streams, the buffer should not have been acquired from the negotiated allocator, as it is not part of the data stream.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +122,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +133,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

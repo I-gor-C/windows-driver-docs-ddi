@@ -41,6 +41,7 @@ req.irql:
 This structure contains the metadata information that is passed down to the driver.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct {
 
 This value is set by the user mode component and is equal to the MaxMetadataBufferSize supplied by the driver.
 
+
 ### -field UsedSize
 
 The size of the metadata written by the driver in the SystemVa buffer.
+
 
 ### -field Data
 
 The metadata buffer that is passed down by the user mode component. This is mapped to <i>SystemVa</i>.
 
+
 ### -field SystemVa
 
 The buffer that is used by the driver to fill with metadata.
+
 
 ### -field Flags
 
 Set to KSCAMERA_EXTENDEDPROP_METADATA_SYSTEMMEMORY if the metadata buffer is allocated from the system memory.
 
+
 ### -field Reserved
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

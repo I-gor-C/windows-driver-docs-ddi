@@ -7,7 +7,7 @@ old-location: netvista\ndis_nbl_media_specific_information_ex.htm
 old-project: netvista
 ms.assetid: f2c74fc3-45e2-4541-81a1-eb022e24cede
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, *PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure
@@ -41,6 +41,7 @@ req.irql: Any level
 The <b>NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX</b> structure defines media-specific information that is
   associated with a 
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+
 
 
 ## -syntax
@@ -67,6 +68,7 @@ The
      <b>Revision</b> member to NDIS_NBL_MEDIA_SPECIFIC_INFO_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_NBL_MEDIA_SPECIFIC_INFO_REVISION_1.
 
+
 ### -field NextEntry
 
 A pointer to the next NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure in a linked list of
@@ -79,17 +81,21 @@ A pointer to the next NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure in a link
      <a href="netvista.ndis_nbl_remove_media_specific_info_ex">
      NDIS_NBL_REMOVE_MEDIA_SPECIFIC_INFO_EX</a> macros to manipulate this list.
 
+
 ### -field Tag
 
 A unique value (assigned by Microsoft) that identifies the type of media-specific information.
      This member is reserved for system use.
      
+
 New tags can be assigned in future system releases for new media types that require additional OOB
      data specific to a particular media type.
+
 
 ### -field Data
 
 A pointer to a buffer that contains the media-specific information.
+
 
 ## -remarks
 NDIS 6.20 and later drivers should use the NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure to specify
@@ -118,19 +124,23 @@ To add, get, and remove NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structures in the
     <a href="netvista.ndis_nbl_remove_media_specific_info_ex">
     NDIS_NBL_REMOVE_MEDIA_SPECIFIC_INFO_EX</a> macros.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +181,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

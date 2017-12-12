@@ -7,7 +7,7 @@ old-location: kernel\iocreatefile.htm
 old-project: kernel
 ms.assetid: 928f16d4-19cb-4d80-96a6-d25357bfdc30
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoCreateFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoCreateFile</b> routine either causes a new file or directory to be created, or it opens an existing file, device, directory, or volume, giving the caller a handle for the file object.
 
 
+
 ## -syntax
 
 ````
@@ -70,35 +71,45 @@ NTSTATUS IoCreateFile(
 
 A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="kernel.zwclose">ZwClose</a> once the handle is no longer in use.
 
+
 ### -param DesiredAccess [in]
 
 Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access that the caller requires to the file or directory. See <a href="kernel.zwcreatefile">ZwCreateFile</a> for a description of the possible values for this parameter.
+
 
 ### -param ObjectAttributes [in]
 
 A pointer to a structure that specifies the object's attributes, which has already been initialized with <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>. If the caller is not running in the system process context, it must set the OBJ_KERNEL_HANDLE attribute for <i>ObjectAttributes</i>.
 
+
 ### -param IoStatusBlock [out]
 
 A pointer to a variable that receives the final completion status and information about the requested operation. On return from <b>IoCreateFile</b>, the <b>Information</b> member contains one of the following values:
+
 <ul>
 <li>
 FILE_CREATED
+
 </li>
 <li>
 FILE_OPENED
+
 </li>
 <li>
 FILE_OVERWRITTEN
+
 </li>
 <li>
 FILE_SUPERSEDED
+
 </li>
 <li>
 FILE_EXISTS
+
 </li>
 <li>
 FILE_DOES_NOT_EXIST
+
 </li>
 </ul>
 
@@ -106,13 +117,16 @@ FILE_DOES_NOT_EXIST
 
 Optionally specifies the initial allocation size in bytes for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded.
 
+
 ### -param FileAttributes [in]
 
 Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by an ORed combination of one or more FILE_ATTRIBUTE_<i>XXX</i> flags, which are defined in Wdm.h. For a list of flags that can be used with <b>IoCreateFile</b>, see <a href="fs.createfile">CreateFile</a> in the Microsoft Windows SDK documentation.
 
+
 ### -param ShareAccess [in]
 
 Specifies the type of share access that the caller would like to the file, as zero, or as one or a combination of the following:
+
 <table>
 <tr>
 <th>ShareAccess flags</th>
@@ -121,34 +135,43 @@ Specifies the type of share access that the caller would like to the file, as ze
 <tr>
 <td>
 FILE_SHARE_READ
+
 </td>
 <td>
 The file can be opened for read access by other threads' calls to <b>IoCreateFile</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SHARE_WRITE
+
 </td>
 <td>
 The file can be opened for write access by other threads' calls to <b>IoCreateFile</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SHARE_DELETE
+
 </td>
 <td>
 The file can be opened for delete access by other threads' calls to <b>IoCreateFile</b>.
+
 </td>
 </tr>
 </table>
  
+
 Device and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.
+
 
 ### -param Disposition [in]
 
 Specifies what to do, depending on whether the file already exists, as one of the following:
+
 <table>
 <tr>
 <th>Disposition values</th>
@@ -157,57 +180,71 @@ Specifies what to do, depending on whether the file already exists, as one of th
 <tr>
 <td>
 FILE_SUPERSEDE
+
 </td>
 <td>
 If the file already exists, replace it with the given file. If it does not, create the given file. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_CREATE 
+
 </td>
 <td>
 If the file already exists, fail the request and do not create or open the given file. If it does not, create the given file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN 
+
 </td>
 <td>
 If the file already exists, open it instead of creating a new file. If it does not, fail the request and do not create a new file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_IF
+
 </td>
 <td>
 If the file already exists, open it. If it does not, create the given file.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OVERWRITE
+
 </td>
 <td>
 If the file already exists, open it and overwrite it. If it does not, fail the request.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OVERWRITE_IF
+
 </td>
 <td>
 If the file already exists, open it and overwrite it. If it does not, create the given file.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param CreateOptions [in]
 
 Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags:
+
 <table>
 <tr>
 <th>CreateOptions flags</th>
@@ -216,129 +253,161 @@ Specifies the options to be applied when creating or opening the file, as a comp
 <tr>
 <td>
 FILE_DIRECTORY_FILE
+
 </td>
 <td>
 The file being created or opened is a directory file. With this flag, the <i>Disposition</i> parameter must be set to one of FILE_CREATE, FILE_OPEN, or FILE_OPEN_IF. With this flag, other compatible <i>CreateOptions</i> flags include only the following: FILE_SYNCHRONOUS_IO_ALERT, FILE_SYNCHRONOUS_IO_NONALERT, FILE_WRITE_THROUGH, FILE_OPEN_FOR_BACKUP_INTENT, and FILE_OPEN_BY_FILE_ID. 
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NON_DIRECTORY_FILE
+
 </td>
 <td>
 The file being opened must not be a directory file or this call will fail. The file object being opened can represent a data file, a logical, virtual, or physical device, or a volume.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_WRITE_THROUGH
+
 </td>
 <td>
 System services, file system drivers (FSDs), and drivers that write data to the file must actually transfer the data into the file before any requested write operation is considered complete.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SEQUENTIAL_ONLY
+
 </td>
 <td>
 All accesses to the file will be sequential.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_RANDOM_ACCESS
+
 </td>
 <td>
 Accesses to the file can be random, so no sequential read-ahead operations should be performed on the file by FSDs or the system.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NO_INTERMEDIATE_BUFFERING
+
 </td>
 <td>
 The file cannot be cached or buffered in a driver's internal buffers. This flag is incompatible with the <i>DesiredAccess</i> FILE_APPEND_DATA flag.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SYNCHRONOUS_IO_ALERT
+
 </td>
 <td>
 All operations on the file are performed synchronously. Any wait on behalf of the caller is subject to premature termination from alerts. This flag also causes the I/O system to maintain the file position context. If this flag is set, the <i>DesiredAccess</i> SYNCHRONIZE flag also must be set.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_SYNCHRONOUS_IO_NONALERT
+
 </td>
 <td>
 All operations on the file are performed synchronously. Waits in the system to synchronize I/O queuing and completion are not subject to alerts. This flag also causes the I/O system to maintain the file position context. If this flag is set, the <i>DesiredAccess</i> SYNCHRONIZE flag also must be set.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_CREATE_TREE_CONNECTION
+
 </td>
 <td>
 Create a tree connection for this file in order to open it over the network. This flag is irrelevant to device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_COMPLETE_IF_OPLOCKED
+
 </td>
 <td>
 Complete this operation immediately with an alternate success code if the target file is oplocked, rather than blocking the caller's thread. If the file is oplocked, another caller already has access to the file over the network. This flag is irrelevant to device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_NO_EA_KNOWLEDGE
+
 </td>
 <td>
 If the extended attributes on an existing file being opened indicate that the caller must understand EAs to properly interpret the file, fail this request because the caller does not understand how to deal with EAs. Device and intermediate drivers can ignore this flag.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_REPARSE_POINT
+
 </td>
 <td>
 Open a file with a reparse point and bypass normal reparse point processing for the file. For more information, see the following Remarks section.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_DELETE_ON_CLOSE
+
 </td>
 <td>
 Delete the file when the last handle to it is passed to <b>ZwClose</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_BY_FILE_ID
+
 </td>
 <td>
 The file name specified in the <i>ObjectAttributes</i> parameter includes the 8-byte file reference number for the file. This number is assigned by the file system and is file-system-specific. If the file is a reparse point, the file name also includes the name of a device. Note: The FAT file system does not support FILE_OPEN_BY_FILE_ID.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_FOR_BACKUP_INTENT
+
 </td>
 <td>
 The file is being opened for backup intent, hence, the system should check for certain access rights and grant the caller the appropriate accesses to the file before checking the input <i>DesiredAccess</i> against the file's security descriptor. This flag is irrelevant to device and intermediate drivers.
+
 </td>
 </tr>
 <tr>
 <td>
 FILE_OPEN_REQUIRING_OPLOCK 
+
 </td>
 <td>
 The file is being opened and an opportunistic lock (oplock) on the file is being requested as a single atomic operation. The file system checks for oplocks before it performs the create operation, and the create operation will fail with a return code of STATUS_CANNOT_BREAK_OPLOCK if the create operation would break an existing oplock.
+
 <div class="alert"><b>Note</b>    The FILE_OPEN_REQUIRING_OPLOCK flag is available in Windows 7, Windows Server 2008 R2, and later Windows operating systems.</div>
 <div> </div>
 </td>
@@ -346,33 +415,41 @@ The file is being opened and an opportunistic lock (oplock) on the file is being
 <tr>
 <td>
 FILE_RESERVE_OPFILTER
+
 </td>
 <td>
 This flag allows an application to request a filter opportunistic lock (oplock) to prevent other applications from getting share violations. If there are already open handles, the create request will fail with STATUS_OPLOCK_NOT_GRANTED. For more information, see the following Remarks section.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param EaBuffer [in, optional]
 
 For device and intermediate drivers, this parameter must be a <b>NULL</b> pointer.
+
 
 ### -param EaLength [in]
 
 For device and intermediate drivers, this parameter must be zero.
 
+
 ### -param CreateFileType [in]
 
 Drivers must set this parameter to <b>CreateFileTypeNone</b>.
+
 
 ### -param InternalParameters [in, optional]
 
 Drivers must set this parameter to <b>NULL</b>.
 
+
 ### -param Options [in]
 
 Specifies options to be used during the creation of the create request. These options can be from the following list:
+
 <table>
 <tr>
 <th>Options flags</th>
@@ -381,40 +458,50 @@ Specifies options to be used during the creation of the create request. These op
 <tr>
 <td>
 IO_NO_PARAMETER_CHECKING
+
 </td>
 <td>
 Indicates that the parameters for this call should not be validated before attempting to issue the create request. Driver writers should use this flag with caution as certain invalid parameters can cause a system failure. For more information, see Remarks.
+
 </td>
 </tr>
 <tr>
 <td>
 IO_FORCE_ACCESS_CHECK
+
 </td>
 <td>
 Indicates that the I/O manager must check the operation against the file's security descriptor.
+
 </td>
 </tr>
 <tr>
 <td>
 IO_STOP_ON_SYMLINK
+
 </td>
 <td>
 The I/O manager or the file system will return STATUS_STOPPED_ON_SYMLINK if a symbolic link is encountered while opening or creating the file.
+
 </td>
 </tr>
 <tr>
 <td>
 IO_OPEN_TARGET_DIRECTORY
+
 </td>
 <td>
 Open the file's parent directory.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>IoCreateFile</b> either returns STATUS_SUCCESS or an appropriate error status. If it returns an error status, the caller can find additional information about the cause of the failure by checking the <i>IoStatusBlock</i>.
+
 
 ## -remarks
 The handle, obtained by <b>IoCreateFile</b>, can be used by subsequent calls to manipulate data within the file or the file object's state or attributes.
@@ -493,11 +580,13 @@ NTFS is the only Microsoft file system that implements FILE_RESERVE_OPFILTER.
 
 Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE attribute for the <i>ObjectAttributes</i> parameter of <b>IoCreateFile</b>. This restricts the use of the handle returned by <b>IoCreateFile</b> to processes running only in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running. Drivers can call <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> to set the OBJ_KERNEL_HANDLE attribute as follows.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -508,14 +597,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -526,6 +618,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -536,6 +629,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -546,14 +640,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqliopassive4">IrqlIoPassive4</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -571,5 +668,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateFile routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateFile routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

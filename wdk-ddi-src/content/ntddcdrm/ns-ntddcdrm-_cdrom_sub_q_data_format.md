@@ -7,7 +7,7 @@ old-location: storage\cdrom_sub_q_data_format.htm
 old-project: storage
 ms.assetid: 0eac3cc1-9c1c-4438-ab20-51c65018cea0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _CDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT, *PCDROM_SUB_Q_DATA_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The CDROM_SUB_Q_DATA_FORMAT structure is used with device control IRPs of type <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -58,23 +59,30 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 Specifies which subset of the Q data the read operation should return, as follows: 
 
 
+
+
 ### -field IOCTL_CDROM_CURRENT_POSITION 
 
 Indicates that the read operation should return position information such as the track number, the index number, the absolute address, and the track relative address. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="storage.sub_q_current_position">SUB_Q_CURRENT_POSITION</a> member of the <a href="storage.sub_q_channel_data">SUB_Q_CHANNEL_DATA</a> structure.
+
 </dd>
 </dl>
+
 
 
 ### -field IOCTL_CDROM_MEDIA_CATALOG
 
 Indicates that the read operation should return the media catalog number. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="storage.sub_q_media_catalog_number">SUB_Q_MEDIA_CATALOG_NUMBER</a> member of the <a href="storage.sub_q_channel_data">SUB_Q_CHANNEL_DATA</a> structure.
+
 </dd>
 </dl>
+
 
 
 ### -field IOCTL_CDROM_TRACK_ISRC
 
 Indicates that the read operation should return the ISO/IEC 3901 Track International Standard Recording Code (ISRC). This code gives a unique number to an audio track. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="storage.sub_q_track_isrc">SUB_Q_TRACK_ISRC</a> member of the <a href="storage.sub_q_channel_data">SUB_Q_CHANNEL_DATA</a> structure.
+
 </dd>
 </dl>
 
@@ -82,14 +90,17 @@ Indicates that the read operation should return the ISO/IEC 3901 Track Internati
 
 Indicates the track number where the CD-ROM driver must read the Q subchannel data. If <b>Format</b> is set to IOCTL_CDROM_MEDIA_CATALOG, then the <b>Track</b> member must be set to zero.
 
+
 ## -remarks
 The CDROM_SUB_Q_DATA_FORMAT structure indicates the track from which to read the Q part of the subchannel data and the format of the read.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +129,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_SUB_Q_DATA_FORMAT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_SUB_Q_DATA_FORMAT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

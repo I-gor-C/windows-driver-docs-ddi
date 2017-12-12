@@ -43,6 +43,7 @@ are from <a href="kernel.device_power_state">DEVICE_POWER_STATE</a> except Power
 
 
 
+
 ## -syntax
 
 ````
@@ -64,38 +65,47 @@ typedef enum _HDAUDIO_CODEC_POWER_STATE {
 
 An unspecified power state.
 
+
 ### -field PowerCodecD0
 
 Power state D0
+
 
 ### -field PowerCodecD1
 
 Power state D1
 
+
 ### -field PowerCodecD2
 
 Power state D2
+
 
 ### -field PowerCodecD3
 
 Power state D3
 
+
 ### -field PowerCodecD3Cold
 
 Power state D3 Cold
+
 
 ### -field PowerCodecMaximum
 
 Power state Maximum
 
+
 ## -remarks
 For more information about power states, see <a href="kernel.device_power_state">DEVICE_POWER_STATE</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

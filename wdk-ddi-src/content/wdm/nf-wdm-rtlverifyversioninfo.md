@@ -7,7 +7,7 @@ old-location: kernel\rtlverifyversioninfo.htm
 old-project: kernel
 ms.assetid: 7c0ca9a0-dfa4-44ab-8d3a-ab43f72c806f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlVerifyVersionInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RtlVerifyVersionInfo</b> routine compares a specified set of operating system version requirements to the corresponding attributes of the currently running version of the operating system.
 
 
+
 ## -syntax
 
 ````
@@ -59,10 +60,12 @@ NTSTATUS RtlVerifyVersionInfo(
 
 Pointer to an <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a> structure that specifies the operating system version requirements to compare to the corresponding attributes of the currently running version of the operating system. 
 
+
 ### -param TypeMask [in]
 
 Specifies which members of <i>VersionInfo</i> to compare with the corresponding attributes of the currently running version of the operating system. <i>TypeMask</i> is set to a logical OR of one or more of the following values.
                         
+
 <table>
 <tr>
 <th>Value</th>
@@ -71,74 +74,92 @@ Specifies which members of <i>VersionInfo</i> to compare with the corresponding 
 <tr>
 <td>
 VER_BUILDNUMBER
+
 </td>
 <td>
 <b>dwBuildNumber</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_MAJORVERSION
+
 </td>
 <td>
 <b>dwMajorVersion</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_MINORVERSION
+
 </td>
 <td>
 <b>dwMinorVersion</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_PLATFORMID
+
 </td>
 <td>
 <b>dwPlatformId</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_SERVICEPACKMAJOR
+
 </td>
 <td>
 <b>wServicePackMajor</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_SERVICEPACKMINOR
+
 </td>
 <td>
 <b>wServicePackMinor</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_SUITENAME
+
 </td>
 <td>
 <b>wSuiteMask</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_PRODUCT_TYPE
+
 </td>
 <td>
 <b>wProductType</b>
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ConditionMask [in]
 
 Specifies how to compare each <b>VersionInfo</b> member. To set the value of <i>ConditionMask</i>, a caller should use the <b>VER_SET_CONDITION</b> macro:
 						  
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -154,23 +175,29 @@ Specifies how to compare each <b>VersionInfo</b> member. To set the value of <i>
 </tr>
 </table></span></div>
 The value of <i>ConditionMask</i> is created in the following way:
+
 <ul>
 <li>
 Initialize the value of <i>ConditionMask</i> to zero. 
+
 </li>
 <li>
 Call <b>VER_SET_CONDITION</b> once for each <i>VersionInfo</i> member specified by <i>TypeMask</i>.
+
 </li>
 <li>
 Set the <i>TypeBitMask</i> and <i>ComparisonType</i> parameters for each call to <b>VER_SET_CONDITION</b> as follows:
+
 </li>
 </ul>
+
 
 
 ### -param TypeBitMask
 
 Indicates the <i>VersionInfo</i> member for which the comparison type is set. <i>TypeBitMask</i> can be one of the following values.
         
+
 <table>
 <tr>
 <th>Value</th>
@@ -179,75 +206,94 @@ Indicates the <i>VersionInfo</i> member for which the comparison type is set. <i
 <tr>
 <td>
 VER_BUILDNUMBER
+
 </td>
 <td>
 <b>dwBuildNumber</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_MAJORVERSION
+
 </td>
 <td>
 <b>dwMajorVersion</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_MINORVERSION
+
 </td>
 <td>
 <b>dwMinorVersion</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_PLATFORMID
+
 </td>
 <td>
 <b>dwPlatformId</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_SERVICEPACKMAJOR
+
 </td>
 <td>
 <b>wServicePackMajor</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_SERVICEPACKMINOR
+
 </td>
 <td>
 <b>wServicePackMinor</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_SUITENAME
+
 </td>
 <td>
 <b>wSuiteMask</b>
+
 </td>
 </tr>
 <tr>
 <td>
 VER_PRODUCT_TYPE
+
 </td>
 <td>
 <b>wProductType</b>
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ComparisonType
 
 Specifies the comparison type that <b>RtlVerifyVersionInfo</b> uses to compare the <b>VersionInfo</b> member specified by <i>TypeBitMask</i> with the corresponding attribute of the currently running operating system.
         
+
 For all values of <i>TypeBitMask</i> other than VER_SUITENAME, <i>ComparisonType</i> is set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -256,46 +302,58 @@ For all values of <i>TypeBitMask</i> other than VER_SUITENAME, <i>ComparisonType
 <tr>
 <td>
 VER_EQUAL
+
 </td>
 <td>
 The current value must be equal to the specified value.
+
 </td>
 </tr>
 <tr>
 <td>
 VER_GREATER
+
 </td>
 <td>
 The current value must be greater than the specified value.
+
 </td>
 </tr>
 <tr>
 <td>
 VER_GREATER_EQUAL
+
 </td>
 <td>
 The current value must be greater than or equal to the specified value.
+
 </td>
 </tr>
 <tr>
 <td>
 VER_LESS
+
 </td>
 <td>
 The current value must be less than the specified value.
+
 </td>
 </tr>
 <tr>
 <td>
 VER_LESS_EQUAL
+
 </td>
 <td>
 The current value must be less than or equal to the specified value.
+
 </td>
 </tr>
 </table>
  
+
 If <i>TypeBitMask</i> is set to VER_SUITENAME, <i>ComparisonType</i> is set to of one the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -304,21 +362,26 @@ If <i>TypeBitMask</i> is set to VER_SUITENAME, <i>ComparisonType</i> is set to o
 <tr>
 <td>
 VER_AND
+
 </td>
 <td>
 All product suites specified in the <b>wSuiteMask</b> member must be present in the current system.
+
 </td>
 </tr>
 <tr>
 <td>
 VER_OR
+
 </td>
 <td>
 At least one of the specified product suites must be present in the current system.
+
 </td>
 </tr>
 </table>
  
+
 </dd>
 </dl>
 
@@ -336,6 +399,7 @@ At least one of the specified product suites must be present in the current syst
 
  
 
+
 ## -remarks
 <b>RtlVerifyVersionInfo</b> enables a driver to easily verify the presence of a required set of operating system attributes. <b>RtlVerifyVersionInfo</b> is the kernel-mode equivalent of the user-mode <b>VerifyVersionInfo</b> function in the Windows SDK. See the example in the Windows SDK that shows how to verify the system version.
 
@@ -349,11 +413,13 @@ If the major service pack version exceeds the minimum required, then the minor s
 
 To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo</b> twice, once to verify a lower bound on the system version and once to verify an upper bound on the system version.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -364,14 +430,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -382,6 +451,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -392,6 +462,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -403,9 +474,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -423,5 +496,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlVerifyVersionInfo routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlVerifyVersionInfo routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

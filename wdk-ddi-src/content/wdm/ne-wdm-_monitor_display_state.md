@@ -7,7 +7,7 @@ old-location: kernel\monitor_display_state.htm
 old-project: kernel
 ms.assetid: 50F5C1AD-BA51-4376-8093-E8596265FDAF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Indicates the power state of the monitor being displayed on.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _MONITOR_DISPLAY_STATE {
 
 This indicates that the monitor is off.
 
+
 ### -field PowerMonitorOn
 
 This indicates that the monitor is on.
 
+
 ### -field PowerMonitorDim
 
 This indicates that the monitor is dim.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ This indicates that the monitor is dim.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

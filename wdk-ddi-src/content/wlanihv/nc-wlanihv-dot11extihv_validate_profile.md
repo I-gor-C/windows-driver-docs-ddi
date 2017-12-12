@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvvalidateprofile.htm
 old-project: netvista
 ms.assetid: 724a6c17-e020-44e1-9d00-332daa5dbdfb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,12 +65,14 @@ The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) a
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
+
 ### -param pIhvProfileParams [in, optional]
 
 A pointer to a 
      <a href="netvista.dot11ext_ihv_profile_params">
      DOT11EXT_IHV_PROFILE_PARAMS</a> structure. This structure defines the attributes of the basic service
      set (BSS) network to which the profile extensions will be applied.
+
 
 ### -param pIhvConnProfile [in]
 
@@ -79,12 +81,14 @@ A pointer to a
      DOT11EXT_IHV_CONNECTIVITY_PROFILE</a> structure that contains connectivity settings for the IHV
      profile.
 
+
 ### -param pIhvSecProfile [in]
 
 A pointer to a 
      <a href="netvista.dot11ext_ihv_security_profile">
      DOT11EXT_IHV_SECURITY_PROFILE</a> structure that contains security settings for the IHV
      profile.
+
 
 ### -param pdwReasonCode [out]
 
@@ -93,10 +97,12 @@ A pointer to a DWORD value, which provides additional information for the return
      <i>pdwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in 
      L2cmn.h.
 
+
 ## -returns
 If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
      defined in 
      Winerror.h.
+
 
 ## -remarks
 The operating system calls the 
@@ -130,11 +136,13 @@ An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_COD
 For more information about the Native 802.11 XML schema, refer to the Microsoft Windows SDK
     documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -145,15 +153,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -180,5 +191,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_VALIDATE_PROFILE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_VALIDATE_PROFILE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

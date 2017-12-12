@@ -7,7 +7,7 @@ old-location: netvista\protocolindicateoffloadevent.htm
 old-project: netvista
 ms.assetid: 608c1c7c-1eb3-4d86-9471-313fce2df00e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,11 +39,13 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 NDIS calls a protocol driver's or intermediate driver's 
   <i>ProtocolIndicateOffloadEvent</i> function to post an indication that was initiated by an underlying
   driver's or offload target's call to the 
   <a href="netvista.ndismoffloadeventindicate">
   NdisMOffloadEventIndicate</a> function.
+
 
 
 ## -prototype
@@ -69,6 +71,7 @@ A handle to a context area that was allocated by the protocol driver. The driver
      driver called the 
      <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
 
+
 ### -param OffloadBlockList [in]
 
 A pointer to an 
@@ -77,6 +80,7 @@ A pointer to an
      on which the indication is being made. Note that there is only one NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
      structure. There is not a linked list of such structures. 
      
+
 The underlying offload target supplies a valid 
      <i>OffloadBlockList</i> pointer when making a 
      <b>NeighborReachabilityQuery</b> indication. In this case, the offload target supplies a 
@@ -89,10 +93,13 @@ The underlying offload target supplies a valid
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure referenced by the 
      <i>OffloadBlockList</i> pointer.
 
+
 ### -param IndicationCode [in]
 
 The event being indicated as one of the following INDICATE_OFFLOAD_EVENT values:
      
+
+
 
 
 ### -param NeighborReachabilityQuery
@@ -100,23 +107,28 @@ The event being indicated as one of the following INDICATE_OFFLOAD_EVENT values:
 Indicates that a neighbor cache entry (NCE) has become stale. For more information about NCEs,
        see RFC 2461.
 
+
 ### -param NeighborReachabilityInDoubt
 
 Reserved.
+
 </dd>
 </dl>
 
 ## -returns
 None
 
+
 ## -remarks
 The implementation of this function for intermediate drivers is to be determined.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,5 +159,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20INDICATE_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20INDICATE_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

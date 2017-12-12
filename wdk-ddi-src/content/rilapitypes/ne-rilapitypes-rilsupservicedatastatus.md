@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedatastatus_2.htm
 old-project: netvista
 ms.assetid: 9879db5b-25c1-451c-bb50-37e85cf1f5e5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSUPSERVICEDATASTATUS, RILSUPSERVICEDATASTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -76,6 +77,7 @@ typedef enum _RILSUPSERVICEDATASTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

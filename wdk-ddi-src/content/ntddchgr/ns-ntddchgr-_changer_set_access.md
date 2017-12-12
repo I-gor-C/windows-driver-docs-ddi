@@ -7,7 +7,7 @@ old-location: storage\changer_set_access.htm
 old-project: storage
 ms.assetid: 4349d772-89c6-4201-9d9d-2e0590d61424
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _CHANGER_SET_ACCESS, *PCHANGER_SET_ACCESS, CHANGER_SET_ACCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The CHANGER_SET_ACCESS structure is used in conjunction with the<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_access.md">IOCTL_CHANGER_SET_ACCESS</a> request to set the state of the device's import/export port (IEport), door, or keypad. 
 
 
+
 ## -syntax
 
 ````
@@ -56,28 +57,36 @@ typedef struct _CHANGER_SET_ACCESS {
 ### -field Element
 
 Contains a <a href="storage.changer_element">CHANGER_ELEMENT</a> structure that specifies the element type and the zero-based address of the element to set. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned one of the following values:
+
 <b>ChangerIEPortChangerDoorChangerKeypad</b>
+
 
 ### -field Control
 
 Specifies the operation to perform on the element. The <b>Features0</b> member of <a href="storage.get_changer_parameters">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation.
 
 
+
+
 ### -field LOCK_ELEMENT
 
 Lock the door, IEport, or keypad. Valid only if CHANGER_LOCK_UNLOCK is set.
+
 
 ### -field UNLOCK_ELEMENT
 
 Unlock the door, IEport, or keypad. Valid only if CHANGER_LOCK_UNLOCK is set.
 
+
 ### -field EXTEND_IEPORT
 
 Extend the IEport. Valid only if CHANGER_OPEN_IEPORT is set.
 
+
 ### -field RETRACT_IEPORT
 
 Retract the IEport. Valid only if CHANGER_CLOSE_IEPORT is set.
+
 </dd>
 </dl>
 
@@ -89,6 +98,7 @@ Retract the IEport. Valid only if CHANGER_CLOSE_IEPORT is set.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_SET_ACCESS structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_SET_ACCESS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

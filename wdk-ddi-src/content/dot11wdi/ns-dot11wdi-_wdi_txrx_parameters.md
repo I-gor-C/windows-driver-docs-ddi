@@ -7,8 +7,8 @@ old-location: netvista\wdi_txrx_parameters.htm
 old-project: netvista
 ms.assetid: 839a1c3d-ac9f-4723-a0f1-6610b763c32a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WDI_TXRX_PARAMETERS, *PWDI_TXRX_PARAMETERS, WDI_TXRX_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _WDI_TXRX_PARAMETERS, WDI_TXRX_PARAMETERS, *PWDI_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The
   WDI_TXRX_PARAMETERS structure defines the parameters that are passed down to the TXRX component.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _WDI_TXRX_PARAMETERS {
 
 Specifies the TXRX capabilities.
 
+
 ## -remarks
 
 
@@ -65,22 +67,27 @@ Specifies the TXRX capabilities.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

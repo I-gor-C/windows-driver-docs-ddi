@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 572A2C38-A990-4225-A3FC-6E899A248B1C
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT
+ms.keywords: PGNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure defines the specific data elements associated with a carrier wave test results returned from the driver.
 
 
+
 ## -syntax
 
 ````
@@ -63,19 +64,24 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field TestResultStatus
 
 NTSTATUS value indicating:
+
 <ul>
 <li>
 Success (self-test passed).
+
 </li>
 <li>
 Failed (indicating the problem detected or indicating that the is test not implemented).
+
 </li>
 </ul>
 
@@ -83,21 +89,26 @@ Failed (indicating the problem detected or indicating that the is test not imple
 
 The final result of the self-test.
 
+
 ### -field PinFailedBitMask
 
 The bit mask for adapter pins that failed the test.
+
 
 ### -field Unused[512]
 
 Padding buffer.
 
+
 ### -field OutBufLen
 
 The length of the buffer for returning any additional information about the self-test.
 
+
 ### -field OutBuffer[BYTE]
 
 The buffer that will contain the additional information about the self-test.
+
 
 ## -remarks
 
@@ -107,6 +118,7 @@ The buffer that will contain the additional information about the self-test.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The BTHX_HCI_READ_WRITE_CONTEXT structure is used as an input/output structure for  the IOCTL_BTHX_READ_HCI and IOCTL_BTHX_WRITE_HCI IOCTLs.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _BTHX_HCI_READ_WRITE_CONTEXT {
 
 The length, in bytes, of data in <b>Data</b>.
 
+
 ### -field Type
 
 The type of packetized data.
 
+
 ### -field Data[]
 
 Actual data to be read/written.
+
 
 ## -remarks
 The BTHX_HCI_READ_WRITE_CONTEXT structure is an input parameter to the <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_write_hci.md">IOCTL_BTHX_HCI_WRITE IOCTL</a> and specifies the type of packet associated with the write. It also specifies the data to be written in the <b>Data</b> member.
@@ -73,19 +77,23 @@ This structure is also used as an output parameter for the <a href="..\bthxddi\n
 
 This structure is packed to 1-byte boundary.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

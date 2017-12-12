@@ -7,7 +7,7 @@ old-location: kernel\keconvertauxiliarycountertoperformancecounter.htm
 old-project: kernel
 ms.assetid: 90F4CE6D-F51A-4B18-B328-63AF4D71A690
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeConvertAuxiliaryCounterToPerformanceCounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The  <b>KeConvertAuxiliaryCounterToPerformanceCounter</b> routine converts the s
 
 
 
+
 ## -syntax
 
 ````
@@ -62,13 +63,16 @@ NTSTATUS KeConvertAuxiliaryCounterToPerformanceCounter(
 
 The auxiliary counter value to convert.
 
+
 ### -param PerformanceCounterValue [out]
 
 A pointer to the variable that contains the converted performance counter value.
 
+
 ### -param ConversionError [out, optional]
 
 A pointer to a variable that contains the estimated conversion error in units of nanosecond.
+
 
 ## -returns
 <b>KeConvertAuxiliaryCounterToPerformanceCounter</b> can return one of the following:
@@ -87,16 +91,19 @@ A pointer to a variable that contains the estimated conversion error in units of
 
  
 
+
 ## -remarks
 Make sure that the specified auxiliary counter value is within +/- 10s compared to the current value.
 
  
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +146,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -145,9 +157,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -159,5 +173,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeConvertAuxiliaryCounterToPerformanceCounter routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeConvertAuxiliaryCounterToPerformanceCounter routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

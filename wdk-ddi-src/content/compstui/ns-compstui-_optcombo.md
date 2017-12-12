@@ -7,7 +7,7 @@ old-location: print\optcombo.htm
 old-project: print
 ms.assetid: B1F5A79A-8F64-4B7B-ADB4-BDD8EC17F22E
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _OPTCOMBO, *POPTCOMBO, OPTCOMBO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,6 +38,7 @@ req.irql:
 
 
 ## -description
+
 
 
 
@@ -83,6 +84,7 @@ typedef struct _OPTCOMBO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

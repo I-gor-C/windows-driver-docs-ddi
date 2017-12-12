@@ -41,8 +41,10 @@ req.irql: PASSIVE_LEVEL
 In Windows 7 and later operating systems, the <code>IPinName</code> interface is used by miniport drivers to report and update the names of audio endpoints.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPinName</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -52,6 +54,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPinName</b> interface inheri
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

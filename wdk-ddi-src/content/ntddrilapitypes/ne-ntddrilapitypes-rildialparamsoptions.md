@@ -7,7 +7,7 @@ old-location: netvista\rildialparamsoptions.htm
 old-project: netvista
 ms.assetid: 78fef8f7-e6cd-4da6-9c2a-2eaf1da6339b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILDIALPARAMSOPTIONS, RILDIALPARAMSOPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -79,6 +80,7 @@ typedef enum _RILDIALPARAMSOPTIONS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

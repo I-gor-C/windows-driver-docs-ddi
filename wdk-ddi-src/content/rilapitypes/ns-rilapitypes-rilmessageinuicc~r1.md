@@ -7,8 +7,8 @@ old-location: netvista\rilmessageinuicc_2.htm
 old-project: netvista
 ms.assetid: 2a956b25-1cf5-4a51-bc60-c4a7a7f70e2c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMESSAGEINUICC, *LPRILMESSAGEINUICC, RILMESSAGEINUICC
+ms.date: 12/8/2017
+ms.keywords: RILMESSAGEINUICC, RILMESSAGEINUICC, *LPRILMESSAGEINUICC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -76,6 +77,7 @@ typedef struct _RILMESSAGEINUICC {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicemapiospace.htm
 old-project: wdf
 ms.assetid: 13ECF87D-13F7-4154-A17E-D49A2BB0F83A
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDeviceMapIoSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to UMDF only]
+
 The <b>WdfDeviceMapIoSpace</b> function maps the given physical address range to system address space and returns a pseudo base address.
+
 
 
 ## -syntax
@@ -62,17 +64,21 @@ NTSTATUS WdfDeviceMapIoSpace(
 
 A handle to a framework device object.
 
+
 ### -param PhysicalAddress [in]
 
 Specifies the starting 64-bit physical address of the I/O range to be mapped.
+
 
 ### -param NumberOfBytes [in]
 
 Specifies a value greater than zero, indicating the number of bytes to be mapped.
 
+
 ### -param CacheType [in]
 
 Specifies a <a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a> value, which indicates the cache attribute to use to map the physical address range. The MEMORY_CACHING_TYPE enumeration type is defined in Wdfdevice.h.
+
 
 ### -param PseudoBaseAddress [out]
 
@@ -80,10 +86,12 @@ The address of a location that receives a pointer to the pseudo base address.
 
 
 
+
 ## -returns
 If the operation succeeds, the function returns STATUS_SUCCESS. 
 
 The function might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
+
 
 ## -remarks
 This function is the UMDF version 2 equivalent of <a href="wdf.iwdfdevice3_mapiospace">IWDFDevice3::MapIoSpace</a>.
@@ -105,11 +113,13 @@ The PHYSICAL_ADDRESS type is defined in Wudfwdm.h, as follows:<pre class="syntax
 
 For an example that shows how a driver finds and maps memory-mapped register resources, see <a href="wdf.reading_and_writing_to_device_registers">Reading and Writing to Device Registers</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,22 +130,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +161,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +172,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -166,9 +183,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -183,5 +202,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceMapIoSpace function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceMapIoSpace function%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Creates a UFX device object, registers event callback routines, and specifies capabilities specific to the controller.
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ NTSTATUS UfxDeviceCreate(
 
 A handle to a WDF device object.
 
+
 ### -param Callbacks [in]
 
 A structure of type <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> that contains pointers to driver-supplied callback routines to be associated with the UFX device object.
+
 
 ### -param Capabilities [in]
 
 A pointer to a <a href="buses.ufx_device_capabilities">UFX_DEVICE_CAPABILITIES</a> structure.
 
+
 ### -param Attributes [in, optional]
 
 A pointer to a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new object. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
+
 
 ### -param UfxDevice [out]
 
@@ -79,27 +84,33 @@ A pointer to a location that receives a handle to the new UFX device object.
 
 
 
+
 ## -returns
 If the operation is successful, the method returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE.
+
 
 ## -remarks
 The client driver must call <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a> before it calls <b>UfxDeviceCreate</b>. Typically, the client driver calls  <b>UfxDeviceCreate</b> from its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback routine.
 
 The following code snippet shows how to call <b>UfxDeviceCreate</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +121,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

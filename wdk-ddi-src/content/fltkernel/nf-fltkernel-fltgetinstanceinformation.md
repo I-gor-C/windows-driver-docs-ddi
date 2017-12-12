@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetInstanceInformation</b> routine returns information about a minifilter driver instance. 
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS FltGetInstanceInformation(
 
 Opaque instance pointer for the caller. 
 
+
 ### -param InformationClass [in]
 
 Type of information requested. This parameter can have one of the following values. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -71,49 +74,61 @@ Type of information requested. This parameter can have one of the following valu
 <tr>
 <td>
 <b>InstanceBasicInformation</b>
+
 </td>
 <td>
 The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_basic_information">INSTANCE_BASIC_INFORMATION</a> structure for the instance. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>InstanceFullInformation</b>
+
 </td>
 <td>
 The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_full_information">INSTANCE_FULL_INFORMATION</a> structure for the instance. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>InstancePartialInformation</b>
+
 </td>
 <td>
 The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_partial_information">INSTANCE_PARTIAL_INFORMATION</a> structure for the instance. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>InstanceAggregateStandardInformation</b>
+
 </td>
 <td>
 The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_aggregate_standard_information">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a> structure for the instance.  The <b>LegacyFilter</b> portion of the structure is not utilized. This structure is available starting with Windows Vista.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Buffer [out]
 
 Pointer to a caller-allocated buffer that receives the requested information. The type of the information returned in the buffer is defined by the <i>InformationClass</i> parameter. 
+
 
 ### -param BufferSize [in]
 
 Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. The caller should set this parameter according to the given <i>InformationClass</i> value. 
 
+
 ### -param BytesReturned [out]
 
 Pointer to a caller-allocated variable that receives the number of bytes returned in the buffer that <i>Buffer </i>points to. If the input value of <i>BufferSize</i> is too small, <b>FltGetInstanceInformation</b> returns STATUS_BUFFER_TOO_SMALL and sets this variable to the number of bytes required to store the requested information. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltGetInstanceInformation</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following:
@@ -126,14 +141,17 @@ Pointer to a caller-allocated variable that receives the number of bytes returne
 
  
 
+
 ## -remarks
 Given a pointer to a minifilter instance, this routine returns information about the minifilter instance.  The type of instance information returned is determined by the <i>InformationClass</i> parameter. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -144,6 +162,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -154,6 +173,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -164,6 +184,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -174,9 +195,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -209,5 +232,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetInstanceInformation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

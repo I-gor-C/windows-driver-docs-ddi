@@ -7,7 +7,7 @@ old-location: display\dxgkddipresentdisplayonly.htm
 old-project: display
 ms.assetid: b68839e3-ad82-4fcc-8e5a-02dea5db08d9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,10 +41,11 @@ req.irql: PASSIVE_LEVEL
 Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
 
 
+
 ## -prototype
 
 ````
-PDXGKDDI_PRESENTDISPLAYONLY DxgkDdiPresentDisplayOnly;
+DXGKDDI_PRESENTDISPLAYONLY DxgkDdiPresentDisplayOnly;
 
 NTSTATUS APIENTRY DxgkDdiPresentDisplayOnly(
   _In_ const HANDLE                      hAdapter,
@@ -60,9 +61,11 @@ NTSTATUS APIENTRY DxgkDdiPresentDisplayOnly(
 
 A handle to the device context for the display adapter. The KMDOD's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously returned this handle in the <i>MiniportDeviceContext</i> parameter.
 
+
 ### -param pPresentDisplayOnly [in]
 
 A pointer to a <a href="display.dxgkarg_present_displayonly">DXGKARG_PRESENT_DISPLAYONLY</a> structure that contains information about the present operation.
+
 
 ## -returns
 
@@ -84,6 +87,7 @@ In this case, the KMDOD should use an interrupt and deferred procedure call (DPC
 
 The driver can also return any other error status code defined in Ntstatus.h to indicate issues that have occurred with the present operation.
 
+
 ## -remarks
 The KMDOD must complete all screen-to-screen moves before copying dirty rectangles. In addition, the KMDOD must complete each move/copy operation before beginning another move/copy operation.
 
@@ -101,27 +105,33 @@ The operating system guarantees that for each VidPN source there is only one pen
 
 The operating system guarantees that this function follows the  zero level  synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +142,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,9 +153,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -164,7 +177,7 @@ PASSIVE_LEVEL
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
 </dt>
 <dt>
-<a href="display.dxgkcbpresentdisplayonlyprogress">DxgkCbPresentDisplayOnlyProgress</a>
+<a href="https://msdn.microsoft.com/8970246b-b46f-464f-93b2-973cc351ed07">DxgkCbPresentDisplayOnlyProgress</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_queue_dpc.md">DxgkCbQueueDpc</a>
@@ -174,5 +187,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDXGKDDI_PRESENTDISPLAYONLY callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_PRESENTDISPLAYONLY callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\wdi_qos_protocol.htm
 old-project: netvista
 ms.assetid: 39466BF7-0517-4113-9C94-26D8691CCCC1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_QOS_PROTOCOL, WDI_QOS_PROTOCOL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_QOS_PROTOCOL enumeration defines Wi-Fi QOS protocols.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_QOS_PROTOCOL {
 
 None
 
+
 ### -field WDI_QOS_PROTOCOL_WMM
 
 Wi-Fi Multimedia (WMM, formerly known as Wireless Multimedia Extensions)
 
+
 ### -field WDI_QOS_PROTOCOL_11E
 
 802.11E
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ Wi-Fi Multimedia (WMM, formerly known as Wireless Multimedia Extensions)
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

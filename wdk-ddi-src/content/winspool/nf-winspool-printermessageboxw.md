@@ -7,7 +7,7 @@ old-location: print\printermessageboxw.htm
 old-project: print
 ms.assetid: F5E7FB7C-A38F-4DBA-9C98-9554FA80CC07
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PrinterMessageBoxW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -84,6 +85,7 @@ DWORD WINAPI PrinterMessageBoxW(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

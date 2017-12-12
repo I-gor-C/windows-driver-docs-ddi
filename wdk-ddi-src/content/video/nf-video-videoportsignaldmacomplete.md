@@ -7,7 +7,7 @@ old-location: display\videoportsignaldmacomplete.htm
 old-project: display
 ms.assetid: 81730acb-ff15-438d-8225-125283f61db2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortSignalDmaComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>VideoPortSignalDmaComplete</b> function is <b>obsolete</b> in Windows 2000 and later.
+
 <b>VideoPortSignalDmaComplete</b> indicates to the video miniport driver whether the current DMA transfer is complete.
+
 
 
 ## -syntax
@@ -59,21 +61,26 @@ BOOLEAN VideoPortSignalDmaComplete(
 
 Pointer to the miniport driver's device extension.
 
+
 ### -param pDmaHandle [in]
 
 Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="display.videoportlockpages">VideoPortLockPages</a> returns. 
 
+
 ## -returns
 <b>VideoPortSignalDmaComplete</b> always returns <b>FALSE</b>.
 
+
 ## -remarks
 See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,14 +91,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +123,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxgk_render_pipeline_stage.htm
 old-project: display
 ms.assetid: A6E6439A-8151-4953-B78A-3141A9EA59F2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_RENDER_PIPELINE_STAGE, DXGK_RENDER_PIPELINE_STAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>DXGK_RENDER_PIPELINE_STAGE</b> enumeration describes the render pipeline stage during which the GPU error has occurred.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef enum _DXGK_RENDER_PIPELINE_STAGE {
 
 Indicates that the stage where the error occurred is unknown.
 
+
 ### -field DXGK_RENDER_PIPELINE_STAGE_INPUT_ASSEMBLER
 
 Indicates that the error occurred at the input assembler stage.
+
 
 ### -field DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER
 
 Indicates that the error occurred at the vertex shader stage.
 
+
 ### -field DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER
 
 Indicates that the error occurred at the geometry shader stage.
+
 
 ### -field DXGK_RENDER_PIPELINE_STAGE_STREAM_OUTPUT
 
 Indicates that the error occurred at the stream output stage.
 
+
 ### -field DXGK_RENDER_PIPELINE_STAGE_RASTERIZER
 
 Indicates that the error occurred at the rasterizer stage.
+
 
 ### -field DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER
 
 Indicates that the error occurred at the pixel shader stage.
 
+
 ### -field DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER
 
 Indicates that the error occurred at the output merger stage.
+
 
 ## -remarks
 
@@ -99,22 +108,27 @@ Indicates that the error occurred at the output merger stage.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

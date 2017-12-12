@@ -7,7 +7,7 @@ old-location: netvista\filterreceivenetbufferlists.htm
 old-project: netvista
 ms.assetid: 6359c2a7-1208-41ea-bbf9-015c91b6e8f6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ NDIS calls the
   indication.
 
 
+
 ## -prototype
 
 ````
@@ -67,12 +68,14 @@ A handle to the context area for the filter module. The filter driver created an
      context area in the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
+
 ### -param NetBufferLists [in]
 
 A linked list of 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that were
      allocated by underlying drivers. Each <b>NET_BUFFER_LIST</b> structure contains one 
      <a href="netvista.net_buffer">NET_BUFFER</a> structure.
+
 
 ### -param PortNumber [in]
 
@@ -81,10 +84,12 @@ A port number that identifies a miniport adapter port. Miniport adapter port num
      <a href="netvista.ndismallocateport">NdisMAllocatePort</a> function. A zero
      value identifies the default port of a miniport adapter.
 
+
 ### -param NumberOfNetBufferLists [in]
 
 The number of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that are in the linked list of structures at 
      <i>NetBufferLists</i> .
+
 
 ### -param ReceiveFlags [in]
 
@@ -93,10 +98,13 @@ Flags that define attributes for the receive indication. The flags can be combin
      
 
 
+
+
 ### -param NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL
 
 Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
        <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.
+
 
 ### -param NDIS_RECEIVE_FLAGS_RESOURCES
 
@@ -104,21 +112,25 @@ Specifies that NDIS reclaims ownership of the <a href="netvista.net_buffer_list"
        <a href="netvista.net_buffer">NET_BUFFER</a> structures immediately after the call to 
        <i>FilterReceiveNetBufferLists</i> returns.
 
+
 ### -param NDIS_RECEIVE_FLAGS_SINGLE_ETHER_TYPE
 
 Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> have the same protocol type (EtherType).
+
 
 ### -param NDIS_RECEIVE_FLAGS_SINGLE_VLAN
 
 Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> belong to the same VLAN.
 
+
 ### -param NDIS_RECEIVE_FLAGS_PERFECT_FILTERED
 
 Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> include only data that matches the packet filter and multicast address list that are
        assigned to the miniport adapter.
+
 
 ### -param NDIS_RECEIVE_FLAGS_SINGLE_QUEUE
 
@@ -130,6 +142,7 @@ Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> st
        <a href="netvista.ndis_receive_queue_parameters">
        NDIS_RECEIVE_QUEUE_PARAMETERS</a> structure when that queue was allocated.
 
+
 ### -param NDIS_RECEIVE_FLAGS_SHARED_MEMORY_INFO_VALID
 
 Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
@@ -140,21 +153,27 @@ Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> st
        the flag to determine how to free the memory that is associated with a VM queue when a queue is
        deleted.
 
+
 ### -param NDIS_RECEIVE_FLAGS_MORE_NBLS
 
 Reserved.
 
+
 ### -param NDIS_RECEIVE_FLAGS_SWITCH_SINGLE_SOURCE
 
 If this flag is set, all packets in a linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.
+
 For more information, see <a href="netvista.hyper_v_extensible_switch_send_and_receive_flags">Hyper-V Extensible Switch Send and Receive Flags</a>.
+
 <div class="alert"><b>Note</b>  If each packet in the linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_RETURN_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>ReturnFlags</i> parameter of <a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">FilterReturnNetBufferLists</a>  when the receive request completes. The extension must set this flag in the <i>ReturnFlags</i> parameter if it calls <a href="netvista.ndisfreturnnetbufferlists">NdisFReturnNetBufferLists</a> to return packets that it did not originate or clone.</div>
 <div> </div>
 
 ### -param NDIS_RECEIVE_FLAGS_SWITCH_DESTINATION_GROUP
 
 If this flag is set, all packets in a linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures are to be forwarded to the same extensible switch destination port.
+
 For more information, see <a href="netvista.hyper_v_extensible_switch_send_and_receive_flags">Hyper-V Extensible Switch Send and Receive Flags</a>.
+
 <div class="alert"><b>Note</b>  If each packet in the linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures uses the same destination ports, the extension should set the <b>NDIS_RECEIVE_FLAGS_SWITCH_DESTINATION_GROUP</b> flag in the <i>ReturnFlags</i> parameter of <a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">FilterReturnNetBufferLists</a>  when the receive request completes. The extension must set this flag in the <i>ReturnFlags</i> parameter if it calls <a href="netvista.ndisfreturnnetbufferlists">NdisFReturnNetBufferLists</a> to return packets that it did not originate or clone.</div>
 <div> </div>
 </dd>
@@ -162,6 +181,7 @@ For more information, see <a href="netvista.hyper_v_extensible_switch_send_and_r
 
 ## -returns
 None
+
 
 ## -remarks
 <i>FilterReceiveNetBufferLists</i> is an optional function. If a filter driver does not filter receive
@@ -259,19 +279,23 @@ The <b>FILTER_RECEIVE_NET_BUFFER_LISTS</b> function type is defined in the Ndis.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -282,9 +306,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -331,5 +357,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_RECEIVE_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_RECEIVE_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

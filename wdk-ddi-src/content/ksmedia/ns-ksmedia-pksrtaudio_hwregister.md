@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 3d1dc600-f7cb-488e-9f92-678e0a6a58f8
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER
+ms.keywords: PKSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSRTAUDIO_HWREGISTER structure specifies the address and additional information about a hardware register requested by the client.  It is filled in by the driver in response to a register request via <a href="https://msdn.microsoft.com/library/windows/hardware/ff537381">KSPROPERTY_RTAUDIO_POSITIONREGISTER</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537376">KSPROPERTY_RTAUDIO_CLOCKREGISTER</a>.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct {
 
 Pointer to the register. This member specifies the virtual address into which the register is mapped.
 
+
 ### -field Width
 
 Specifies the width, in bits, of the register. The value of this member can be 32 or 64.
+
 
 ### -field Numerator
 
 Specifies the numerator of the frequency at which the clock register increments. See the following Remarks. section.
 
+
 ### -field Denominator
 
 Specifies the denominator of the frequency at which the clock register increments. See the following Remarks. section.
 
+
 ### -field Accuracy
 
 Specifies the accuracy of the clock or position register. See the following Remarks section.
+
 
 ## -remarks
 For hardware position register requests via KSPROPERTY_RTAUDIO_POSITIONREGISTER the driver fills in the <b>Register</b>, <b>Width</b> and <b>Accuracy</b> members, because the other members are specific to clock registers.  For hardware clock register requests via KSPROPERTY_RTAUDIO_CLOCKREGISTER the driver fills in the entire structure.
@@ -91,19 +97,23 @@ The <i>Accuracy</i> parameter specifies the maximum error in a position or clock
 
 For position registers, the <i>Accuracy</i> parameter represents the accuracy of the position register in units of bytes.  For example, the audio frame size for a 2-channel, 16-bit PCM stream is 4 bytes. If the position register increments (by two times the frame size) once every second tick of the sample clock, the accuracy value is 8 bytes. If the position register increments (by four times the frame size) once every fourth tick of the sample clock, the accuracy value is 16 bytes, and so on.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +136,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSRTAUDIO_HWREGISTER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 Client use KSSTREAMALLOCATOR_STATUS_EX to query the status for allocators supporting the extended allocator framing.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct {
 
 Contains the framing specified when the allocator was created.
 
+
 ### -field AllocatedFrames
 
 Contains the current number of allocated frames.
+
 
 ### -field Reserved
 
 Reserved and set to zero.
 
+
 ## -remarks
 KSSTREAMALLOCATOR_STATUS_EX corresponds closely to KSSTREAMALLOCATOR_STATUS except that instead of passing back a KSALLOCATOR_FRAMING, it passes back the extended structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

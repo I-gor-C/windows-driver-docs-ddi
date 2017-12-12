@@ -7,8 +7,8 @@ old-location: smartcrd\t0_data.htm
 old-project: smartcrd
 ms.assetid: CC827018-F6B2-48DF-BF0A-36654F866BD9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _T0_DATA, T0_DATA, *PT0_DATA
+ms.date: 12/8/2017
+ms.keywords: _T0_DATA, *PT0_DATA, T0_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The T0_DATA structure is used by the smart card driver library to process T0 I/O. 
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _T0_DATA {
 
 Number of data bytes in the request.
 
+
 ### -field Le
 
 Number of expected bytes from the card.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ Number of expected bytes from the card.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

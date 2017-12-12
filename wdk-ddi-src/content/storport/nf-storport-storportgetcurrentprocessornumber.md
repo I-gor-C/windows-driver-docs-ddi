@@ -7,7 +7,7 @@ old-location: storage\storportgetcurrentprocessornumber.htm
 old-project: storage
 ms.assetid: 10d77823-fcaa-43c3-b55e-74f2da97ecf0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortGetCurrentProcessorNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortGetCurrentProcessorNumber</b> routine retrieves the current processor number from the kernel.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ ULONG StorPortGetCurrentProcessorNumber(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param ProcNumber [out]
 
 A pointer to a processor number structure that holds the return data.
+
 
 ## -returns
 The <b>StorPortGetCurrentProcessorNumber</b> routine returns one of the following status codes:
@@ -76,6 +79,7 @@ The <b>StorPortGetCurrentProcessorNumber</b> routine returns one of the followin
 
  
 
+
 ## -remarks
 
 
@@ -84,6 +88,7 @@ The <b>StorPortGetCurrentProcessorNumber</b> routine returns one of the followin
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,14 +99,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,14 +120,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportirql">StorPortIrql</a>

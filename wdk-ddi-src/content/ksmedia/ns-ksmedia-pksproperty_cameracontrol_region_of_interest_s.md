@@ -41,6 +41,7 @@ req.irql:
 Describes region of interest (ROI) control properties in the <b>PROPSETID_VIDCAP_CAMERACONTROL_REGION_OF_INTEREST</b> camera control property set. The region of interest is a rectangle in the image that is used to focus the camera. This structure specifies property values that are used in requests to the camera driver.
 
 
+
 ## -syntax
 
 ````
@@ -62,27 +63,37 @@ typedef struct {
 ### -field FocusRect
 
 A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the rectangular region in which the device should set the focus. This structure is available only to Windows apps.
+
 If <b>FocusRect</b> is not a valid value, or if all members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure are zero, the device should focus the center of the image and the remaining members of this structure can be ignored.
+
 The rectangle's coordinates are with respect to the preview video resolution.
+
 
 ### -field AutoFocusLock
 
 If <b>TRUE</b>, the device should lock the focus to the current value.
+
 This member should be ignored if <b>FocusRect</b> is not a valid value.
+
 
 ### -field AutoExposureLock
 
 If <b>TRUE</b>, the device should lock the exposure to the current value.
+
 This member should be ignored if <b>FocusRect</b> is not a valid value.
+
 
 ### -field AutoWhitebalanceLock
 
 If <b>TRUE</b>, the device should lock the white balance setting to the current value.
+
 This member should be ignored if <b>FocusRect</b> is not a valid value.
+
 
 ### -field Capabilities
 
 Indicates whether the device and driver support setting the region of interest automatically or manually. This member a bitwise <b>OR</b> of these possible values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -95,6 +106,7 @@ Indicates whether the device and driver support setting the region of interest a
 </td>
 <td width="60%">
 The device and driver can automatically set the region of interest.
+
 </td>
 </tr>
 <tr>
@@ -104,6 +116,7 @@ The device and driver can automatically set the region of interest.
 </td>
 <td width="60%">
 The user can manually set the region of interest.
+
 </td>
 </tr>
 <tr>
@@ -113,16 +126,21 @@ The user can manually set the region of interest.
 </td>
 <td width="60%">
 ROI control features execute asynchronously.
+
 This capability is available starting with Windows 8.1.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Configuration
 
 Configuration flags for control operations for the region. This is a bitwise OR combination of the following values.
+
 This member is available starting with Windows 8.1.
+
 <table>
 <tr>
 <th>Value</th>
@@ -135,6 +153,7 @@ This member is available starting with Windows 8.1.
 </td>
 <td width="60%">
 Set auto focus for the region.
+
 </td>
 </tr>
 <tr>
@@ -144,6 +163,7 @@ Set auto focus for the region.
 </td>
 <td width="60%">
 Set auto exposure for the region.
+
 </td>
 </tr>
 <tr>
@@ -153,6 +173,7 @@ Set auto exposure for the region.
 </td>
 <td width="60%">
 Set auto white balance for the region.
+
 </td>
 </tr>
 <tr>
@@ -162,10 +183,12 @@ Set auto white balance for the region.
 </td>
 <td width="60%">
 Enable convergence of objects in the region
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 
@@ -175,22 +198,27 @@ Enable convergence of objects in the region
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -210,5 +238,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

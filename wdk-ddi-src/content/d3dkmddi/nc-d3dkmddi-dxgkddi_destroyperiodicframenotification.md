@@ -7,7 +7,7 @@ old-location: display\dxgkddi_destroyperiodicframenotification.htm
 old-project: display
 ms.assetid: 4C6B6FB2-A699-40F5-ACA3-62E8620E99AB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to destroy a periodic frame notification.
 
 
+
 ## -prototype
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS APIENTRY DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION(
 
 A structure of type <i>PDXGKARG_DESTROYPERIODICFRAMENOTIFICATION</i> containing the arguments needed to destroy a periodic frame notification.
 
+
 ## -returns
 DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION returns one of the following values:
 <dl>
@@ -67,6 +69,7 @@ DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION returns one of the following values:
 
  
 
+
 ## -remarks
 
 
@@ -75,6 +78,7 @@ DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION returns one of the following values:
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

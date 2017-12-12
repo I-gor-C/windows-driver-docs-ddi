@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-d3d12-options-data-0031.htm
 old-project: display
 ms.assetid: 3e60f42a-ea95-4876-b370-5c2f0585dc97
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_D3D12_OPTIONS_DATA_0031, D3D12DDI_D3D12_OPTIONS_DATA_0031
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 Display options data.
+
 
 
 ## -syntax
@@ -66,41 +68,51 @@ typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0031 {
 
 Resource binding tier.
 
+
 ### -field ConservativeRasterizationTier
 
 Conservative rasterization tier.
+
 
 ### -field TiledResourcesTier
 
 Tiled resources tier.
 
+
 ### -field CrossNodeSharingTier
 
 Cross node sharing tier.
+
 
 ### -field VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation
 
 VP and RT array index from any shader feeding rasterizer supported without GS emulation.
 
+
 ### -field OutputMergerLogicOp
 
 Output merger logic option.
+
 
 ### -field ResourceHeapTier
 
 Resource heap tier.
 
+
 ### -field DepthBoundsTestSupported
 
 Depth bounds test supported.
+
 
 ### -field ProgrammableSamplePositionsTier
 
 Programmable sample positions tier.
 
+
 ### -field CopyQueueTimestampQueriesSupported
 
 Copy queue timestamp queries supported.
+
 
 ## -remarks
 
@@ -110,6 +122,7 @@ Copy queue timestamp queries supported.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

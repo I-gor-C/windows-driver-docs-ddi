@@ -8,7 +8,7 @@ old-project: pos
 ms.assetid: 9587928C-6C40-4550-820A-B77968E3E16A
 ms.author: windowsdriverdev
 ms.date: 11/15/2017
-ms.keywords: *PPCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
+ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -43,6 +43,7 @@ The
   EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine.
 
 
+
 ## -prototype
 
 ````
@@ -63,13 +64,16 @@ VOID EvtPosCxDeviceOwnershipChange(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param oldOwnerFileObj [in, optional]
 
 The file object of the previous claim owner. This may be NULL if no previous owner.
 
+
 ### -param newOwnerFileObj [in, optional]
 
 The file object of the new claim owner. This may be NULL if the device was released without a pending claim request.
+
 
 ## -returns
 This callback function does not return a value.
@@ -84,6 +88,7 @@ The <b>EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE</b> function type is defined in the po
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -remarks
 
 
@@ -92,14 +97,17 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

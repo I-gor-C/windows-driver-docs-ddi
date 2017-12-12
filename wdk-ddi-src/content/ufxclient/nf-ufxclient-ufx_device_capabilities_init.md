@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UFX_DEVICE_CAPABILITIES_INIT</b> macro the initializes the <a href="buses.ufx_device_capabilities">UFX_DEVICE_CAPABILITIES</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ void UFX_DEVICE_CAPABILITIES_INIT(
 
 Pointer to the <a href="buses.ufx_device_capabilities">UFX_DEVICE_CAPABILITIES</a> structure.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodisconnectinitiator.htm
 old-project: netvista
 ms.assetid: df3c3cb9-583c-4a6e-9477-843067865418
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLINFODISCONNECTINITIATOR, RILCALLINFODISCONNECTINITIATOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef enum _RILCALLINFODISCONNECTINITIATOR {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

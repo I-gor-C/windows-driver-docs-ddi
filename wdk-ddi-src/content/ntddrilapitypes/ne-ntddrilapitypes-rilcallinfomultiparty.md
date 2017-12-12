@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfomultiparty.htm
 old-project: netvista
 ms.assetid: 4a343e55-9150-4411-bf37-f410b94ca0aa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLINFOMULTIPARTY, RILCALLINFOMULTIPARTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef enum _RILCALLINFOMULTIPARTY {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

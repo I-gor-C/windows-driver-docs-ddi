@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0e3beb72-2b00-41be-a7b4-341bcf065e92
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSFRAMETIME, KSFRAMETIME, *PKSFRAMETIME
+ms.keywords: PKSFRAMETIME, *PKSFRAMETIME, KSFRAMETIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next "frame" of data, and flags associated with that frame.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct {
 
 Specifies the duration in presentation time units.
 
+
 ### -field FrameFlags
 
 Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a>.
+
 
 ### -field Reserved
 
 Set to zero.
 
+
 ## -remarks
 Note that this is an optional property, which need only be implemented if the pin instance understands the specifics of the media type it is transporting.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

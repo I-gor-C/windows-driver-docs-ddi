@@ -41,6 +41,7 @@ req.irql:
 The <b>KsReleaseIrpOnCancelableQueue</b> function releases an acquired IRP that is already on a queue that can be canceled. The function sets the cancel function and completes the canceling of the IRP, if necessary. The function can be called at IRQ level DISPATCH_LEVEL or lower.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ VOID KsReleaseIrpOnCancelableQueue(
 
 Specifies the IRP to release.
 
+
 ### -param DriverCancel [in, optional]
 
 Optional parameter that specifies the cancel routine to use. If this is <b>NULL</b>, the standard <b>KsCancelRoutine</b> is used.
 
+
 ## -returns
 None
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ None
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

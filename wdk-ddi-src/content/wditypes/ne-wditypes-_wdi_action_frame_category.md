@@ -7,7 +7,7 @@ old-location: netvista\wdi_action_frame_category.htm
 old-project: netvista
 ms.assetid: F2A3D1F0-E6E7-46DC-875A-7F36E6ACBC6D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_ACTION_FRAME_CATEGORY, WDI_ACTION_FRAME_CATEGORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_ACTION_FRAME_CATEGORY enumeration defines the action frame categories.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef enum _WDI_ACTION_FRAME_CATEGORY {
 ### -field WDI_ACTION_FRAME_CATEGORY_PUBLIC
 
 Specifies a Public Action frame.  It is used in:
+
 <ul>
 <li>Inter-BSS and AP to unassociated-STA communications</li>
 <li>Intra-BSS communication</li>
@@ -69,13 +71,16 @@ Specifies a Public Action frame.  It is used in:
 
 Specifies a Radio Measurement Report frame. It is transmitted by a STA requesting another STA to make one or more measurements on one or more channels.
 
+
 ### -field WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION
 
 Specifies a Fast BSS Transition Action frame.  It is used by a currently-associated AP to enable fast BSS transitions over the DS.  Over the DS transitions are not supported in Windows 10.
 
+
 ### -field WDI_ACTION_FRAME_CATEGORY_WNM
 
 Specifies a Wireless Network Management Action frame.  In Windows 10, it is only used for handling BSS Transition Management requests/responses.
+
 
 ## -remarks
 
@@ -85,22 +90,27 @@ Specifies a Wireless Network Management Action frame.  In Windows 10, it is onl
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

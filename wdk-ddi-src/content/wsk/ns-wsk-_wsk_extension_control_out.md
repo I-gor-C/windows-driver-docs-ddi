@@ -7,8 +7,8 @@ old-location: netvista\wsk_extension_control_out.htm
 old-project: netvista
 ms.assetid: aec44058-13ad-4093-91b1-e5dca6f2e295
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WSK_EXTENSION_CONTROL_OUT, WSK_EXTENSION_CONTROL_OUT, *PWSK_EXTENSION_CONTROL_OUT
+ms.date: 12/8/2017
+ms.keywords: _WSK_EXTENSION_CONTROL_OUT, *PWSK_EXTENSION_CONTROL_OUT, WSK_EXTENSION_CONTROL_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The WSK_EXTENSION_CONTROL_OUT structure specifies the WSK subsystem's implementa
   interface for a socket.
 
 
+
 ## -syntax
 
 ````
@@ -63,10 +64,12 @@ A pointer to a WSK subsystem-supplied context for the registration of the extens
      application. The WSK application passes this pointer to the WSK subsystem whenever it calls any of the
      socket's extension interface functions that require the WSK subsystem's registration context.
 
+
 ### -field ProviderDispatch
 
 A pointer to a structure that contains the WSK subsystem's dispatch table of functions for the
      extension interface. The contents of the structure are specific to the extension interface.
+
 
 ## -remarks
 The WSK subsystem fills in the contents of the WSK_EXTENSION_CONTROL_OUT structure when a WSK
@@ -75,20 +78,24 @@ The WSK subsystem fills in the contents of the WSK_EXTENSION_CONTROL_OUT structu
     <a href="netvista.registering_an_extension_interface">Registering an Extension
     Interface</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,5 +118,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_EXTENSION_CONTROL_OUT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_EXTENSION_CONTROL_OUT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

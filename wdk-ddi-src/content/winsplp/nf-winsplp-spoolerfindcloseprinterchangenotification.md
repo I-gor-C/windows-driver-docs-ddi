@@ -7,7 +7,7 @@ old-location: print\spoolerfindcloseprinterchangenotification.htm
 old-project: print
 ms.assetid: 13C65DAB-04BA-4B19-B810-B484F7C1C4DA
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: SpoolerFindClosePrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ BOOL WINAPI SpoolerFindClosePrinterChangeNotification(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

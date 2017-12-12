@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FsRtlGetFileSize</b> routine is used to get the size of a file. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS FsRtlGetFileSize(
 
 A pointer to the file object to query. 
 
+
 ### -param FileSize [out]
 
 A pointer to a large integer that receives the file size on output.
+
 
 ## -returns
 <b>FsRtlGetFileSize</b> returns STATUS_SUCCESS or an appropriate error status representing the final completion status of the operation. Possible error status codes include the following: 
@@ -72,16 +75,19 @@ A pointer to a large integer that receives the file size on output.
 
  
 
+
 ## -remarks
 The <b>FsRtlGetFileSize</b> routine is used to retrieve the file size for a file. Unlike <a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a>, <b>FsRtlGetFileSize</b> does not acquire the file object lock on synchronous file objects. If you already own file system resources, you should call <b>FsRtlGetFileSize</b> instead of <b>ZwQueryInformationFile</b>, because attempting to acquire the file object lock would violate locking order and lead to deadlocks. The <b>ZwQueryInformationFile</b> function should be only if you do not already own file system resources. 
 
 <b>FsRtlGetFileSize</b> will use fast I/O if it is supported or regular IRP-based query to extract the file size. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +120,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +131,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -139,5 +150,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlGetFileSize routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

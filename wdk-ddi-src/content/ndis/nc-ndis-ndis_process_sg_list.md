@@ -7,7 +7,7 @@ old-location: netvista\netprocesssglist.htm
 old-project: netvista
 ms.assetid: 5b99e0ec-7c82-46d6-b32a-246b368cf4f1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   list.
 
 
+
 ## -prototype
 
 ````
@@ -65,14 +66,17 @@ VOID NetProcessSGList(
 A pointer to a 
      <a href="kernel.device_object">DEVICE_OBJECT</a> structure.
 
+
 ### -param Reserved [in]
 
 Reserved for NDIS.
+
 
 ### -param ScatterGatherListBuffer [in]
 
 A pointer to a 
      <a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a> structure.
+
 
 ### -param Context [in]
 
@@ -82,8 +86,10 @@ A pointer to a block of driver-allocated context information that contains infor
      <a href="netvista.ndis_scatter_gather_list_parameters">
      NDIS_SCATTER_GATHER_LIST_PARAMETERS</a> structure.
 
+
 ## -returns
 None
+
 
 ## -remarks
 NDIS calls the 
@@ -97,11 +103,13 @@ NDIS calls the
 The driver specified the entry point (NDIS_PROCESS_SG_LIST_HANDLER) for 
     <i>NetProcessSGList</i> in the NDIS_SCATTER_GATHER_LIST_PARAMETERS structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,14 +120,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,9 +141,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 = DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -154,5 +167,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROCESS_SG_LIST callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROCESS_SG_LIST callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

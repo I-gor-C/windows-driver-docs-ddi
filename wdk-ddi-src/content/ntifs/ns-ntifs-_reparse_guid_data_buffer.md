@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9acb3b65-46c7-4b29-8d7a-c5d8fcd4563d
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER
+ms.keywords: _REPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point. 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ typedef struct _REPARSE_GUID_DATA_BUFFER {
 
 Reparse point tag that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.) 
 
+
 ### -field ReparseDataLength
 
 Size, in bytes, of the reparse data in the <b>DataBuffer</b> member. 
+
 
 ### -field Reserved
 
 Reserved; do not use. 
 
+
 ### -field ReparseGuid
 
 GUID that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.) 
+
 
 ### -field GenericReparseBuffer
 
@@ -80,6 +85,7 @@ GUID that uniquely identifies the owner of the reparse point. (See the following
 ### -field DataBuffer
 
 User-defined data for the reparse point. The format of this data is defined by the owner of the reparse point. 
+
 </dd>
 </dl>
 
@@ -98,11 +104,13 @@ File systems and filter drivers can retrieve, set, or delete a reparse point by 
 
 For more information about reparse points and reparse point tags, see the Windows SDK documentation.  
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,5 +163,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_GUID_DATA_BUFFER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

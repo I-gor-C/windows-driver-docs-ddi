@@ -7,8 +7,8 @@ old-location: kernel\io_resource_requirements_list.htm
 old-project: kernel
 ms.assetid: e581fd34-4564-4882-b91d-94801e579bde
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _IO_RESOURCE_REQUIREMENTS_LIST, *PIO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST
+ms.date: 12/7/2017
+ms.keywords: _IO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST, *PIO_RESOURCE_REQUIREMENTS_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IO_RESOURCE_REQUIREMENTS_LIST</b> structure describes sets of resource configurations that can be used by a device. Each configuration represents a range of raw resources, of various types, that can be used by a device.
 
 
+
 ## -syntax
 
 ````
@@ -63,30 +64,37 @@ typedef struct _IO_RESOURCE_REQUIREMENTS_LIST {
 
 The total number of bytes that constitute the <b>IO_RESOURCE_REQUIREMENTS_LIST</b> structure, its <a href="kernel.io_resource_list">IO_RESOURCE_LIST</a> array, and the latter's <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> array.
 
+
 ### -field InterfaceType
 
 Specifies an interface type. This must be one of the types defined by <a href="kernel.interface_type">INTERFACE_TYPE</a>, in Wdm.h or Ntddk.h. (Not used by WDM drivers.)
+
 
 ### -field BusNumber
 
 A system-assigned, zero-based bus number. (Not used by WDM drivers.)
 
+
 ### -field SlotNumber
 
 A system slot number. (Not used by WDM drivers.)
+
 
 ### -field Reserved
 
 Not used.
                     
 
+
 ### -field AlternativeLists
 
 The number of alternative lists (or configurations) of hardware resources that are described by this <b>IO_RESOURCE_REQUIREMENTS_LIST</b> structure. The <b>List</b> member is the header for the first alternative list.
 
+
 ### -field List
 
 The <a href="kernel.io_resource_list">IO_RESOURCE_LIST</a> structure that serves as the header for the first alternative list of hardware resources. If the <b>IO_RESOURCE_REQUIREMENTS_LIST</b> structure describes more than one alternative list, the second alternative list immediately follows the first alternative list in memory, and so on. The size of each alternative list depends on the length of the <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> array that it contains. For more information, see the following Remarks section.
+
 
 ## -remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550874">IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff551715">IRP_MN_QUERY_RESOURCE_REQUIREMENTS</a> IRPs to describe one or more alternative configurations of <a href="https://msdn.microsoft.com/library/windows/hardware/ff547012">hardware resources</a>.
@@ -101,11 +109,13 @@ If a driver contains a handler for an <b>IRP_MN_FILTER_RESOURCE_REQUIREMENTS</b>
 
 The FilterResources function returns <b>TRUE</b> (probably from the <b>switch</b> statement, although the details are omitted to simplify the code example) if it finds the resource that it is looking for in the list, or if it makes a change to the list that does not change the size of the list. Otherwise, it returns <b>FALSE</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_REQUIREMENTS_LIST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_REQUIREMENTS_LIST structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

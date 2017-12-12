@@ -7,7 +7,7 @@ old-location: display\video_win32k_callbacks.htm
 old-project: display
 ms.assetid: dec6c610-811c-40cb-a099-1a35b91d2ee8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VIDEO_WIN32K_CALLBACKS, VIDEO_WIN32K_CALLBACKS, *PVIDEO_WIN32K_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The VIDEO_WIN32K_CALLBACKS structure is reserved for system use.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _VIDEO_WIN32K_CALLBACKS {
 
 Reserved for system use.
 
+
 ### -field Callout
 
 Reserved for system use.
+
 
 ### -field bACPI
 
 Reserved for system use.
 
+
 ### -field pPhysDeviceObject
 
 Reserved for system use.
 
+
 ### -field DualviewFlags
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

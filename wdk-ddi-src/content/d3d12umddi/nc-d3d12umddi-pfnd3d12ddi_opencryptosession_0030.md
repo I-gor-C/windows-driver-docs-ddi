@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_opencryptosession_0030.htm
 old-project: display
 ms.assetid: 37A4A739-019E-41E6-B7B8-8F61E915C845
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to open a crypto session.
 
 
+
 ## -prototype
 
 ````
@@ -58,16 +59,20 @@ HRESULT APIENTRY* PFND3D12DDI_OPENCRYPTOSESSION_0030(
 
 The hardware device being processed.
 
+
 ### -param pArgs [in]
 
 The arguments used to open a crypto session.
+
 
 ### -param hDrvCryptoSession 
 
 The crypto session.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -77,22 +82,27 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createdevice_0003.htm
 old-project: display
 ms.assetid: 5F25CFE0-00C5-45CD-8EA1-50F01BA4EA0B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The PFND3D12DDI_CREATEDEVICE_0003 function creates a graphics context that is referenced in subsequent calls.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ HRESULT APIENTRY PFND3D12DDI_CREATEDEVICE_0003(
 
 A handle to the graphics adapter object that was created with the <a href="https://msdn.microsoft.com/library/windows/hardware/mt779071">PFND3D12DDI_OPENADAPTER</a> function.
 
+
 ### -param pCreateData [in]
 
 A pointer to a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddiarg_createdevice_0003.md">D3D12DDIARG_CREATEDEVICE</a> structure.
+
 
 ## -returns
 
@@ -77,6 +80,7 @@ A pointer to a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddiarg_createdevice_000
 
  
 
+
 ## -remarks
 
 
@@ -85,6 +89,7 @@ A pointer to a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddiarg_createdevice_000
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Stores xHCI-specific information that is used by client drivers to transfer data to and from the offloaded endpoints.
 
 
+
 ## -syntax
 
 ````
@@ -76,82 +77,102 @@ typedef struct _USBD_ENDPOINT_OFFLOAD_INFORMATION {
 
 The size of this structure.
 
+
 ### -field EndpointAddress
 
 Specifies the USB-defined endpoint address. 
+
 
 ### -field ResourceId
 
 The resource identifier.
 
+
 ### -field Mode
 
 A <a href="buses.usbd_endpoint_offload_mode">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
+
 
 ### -field RootHubPortNumber
 
 The port number of the root hub.
 
+
 ### -field RouteString
 
 The route string.
+
 
 ### -field Speed
 
 The route string.
 
+
 ### -field UsbDeviceAddress
 
 The USB device address.
+
 
 ### -field SlotId
 
 The slot identifier.
 
+
 ### -field MultiTT
 
 Transaction Translator (TT) hub. 
+
 
 ### -field Reserved0
 
 Reserved.
 
+
 ### -field PHYSICAL_ADDRESS
 
 The logical address of the current segment of the transfer data.
+
 
 ### -field PVOID
 
 The virtual address of the current segment of the transfer data.
 
+
 ### -field size_t
 
 The size of the requested data.
 
+
 ### -field ULONG
 
 The cycle state of the transfer.
+
 
 ### -field ULONG
 
 Reserved message for endpoint offload mode.
 
 
+
 ### -field PHYSICAL_ADDRESS
 
 The logical address of the current segment of the transfer data.
+
 
 ### -field PVOID
 
 The virtual address of the current segment of the transfer data.
 
+
 ### -field size_t
 
 The size of the requested data.
 
+
 ### -field ULONG
 
 The cycle state of the transfer.
+
 
 ## -remarks
 
@@ -161,22 +182,27 @@ The cycle state of the transfer.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

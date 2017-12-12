@@ -7,8 +7,8 @@ old-location: netvista\rilmsgdcs.htm
 old-project: netvista
 ms.assetid: b9d37683-fd3d-42fd-9ec2-128b76325868
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMSGDCS, RILMSGDCS, *LPRILMSGDCS
+ms.date: 12/8/2017
+ms.keywords: RILMSGDCS, *LPRILMSGDCS, RILMSGDCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef struct _RILMSGDCS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

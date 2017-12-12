@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_Debug_LogEntry</b> function is called by the camera minidriver to log debugging information to a file.
 
 
+
 ## -syntax
 
 ````
@@ -60,29 +61,36 @@ VOID USBCAMD_Debug_LogEntry(
 
 Pointer to a <b>NULL</b>-terminated string containing the name of the file to write the log entry to.
 
+
 ### -param Info1 [in]
 
 Specifies the first information value to be written to the log file.
+
 
 ### -param Info2 [in]
 
 Specifies the second information value to be written to the log file.
 
+
 ### -param Info3 [in]
 
 Specifies the third information value to be written to the log file.
 
+
 ## -returns
 <b>USBCAMD_Debug_LogEntry </b>does not return a value.
 
+
 ## -remarks
 The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +101,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

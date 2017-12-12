@@ -7,7 +7,7 @@ old-location: storage\windows_block_device_token_limits_descriptor.htm
 old-project: storage
 ms.assetid: A4DB93FE-96ED-4E6D-B912-31C53AD000FF
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, *PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <= APC_LEVEL
+req.irql: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</b> structure is the third party copy descriptor for Windows systems. This structure serves as the descriptor for the vital product data (VPD) third party copy page.
+
 
 
 ## -syntax
@@ -64,50 +65,62 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 
 The descriptor type identifying this structure. The descriptor type is defined in <i>storport.h</i> as <b>BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR_TYPE_WINDOWS</b>.
 
+
 ### -field DescriptorLength
 
 The length of this structure starting with the <b>VendorSpecific</b> member.
+
 
 ### -field VendorSpecific
 
 Vendor specific bytes included in the descriptor. Windows applications must treat this member as reserved and ignore the reported value.
 
+
 ### -field MaximumRangeDescriptors
 
 The maximum number of range descriptors that may be included along with the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures.
+
 
 ### -field MaximumInactivityTimer
 
 The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> structure.
 
+
 ### -field DefaultInactivityTimer
 
 The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> structure is set to 0.
+
 
 ### -field MaximumTokenTransferSize
 
 The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures.
 
+
 ### -field OptimalTransferCount
 
 The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.
 
+
 ## -remarks
 All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

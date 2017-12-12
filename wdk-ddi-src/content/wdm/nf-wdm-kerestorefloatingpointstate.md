@@ -7,7 +7,7 @@ old-location: kernel\kerestorefloatingpointstate.htm
 old-project: kernel
 ms.assetid: 9a9b3c9f-5371-4d70-b1f3-5038e4cabc83
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeRestoreFloatingPointState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeRestoreFloatingPointState</b> routine restores the nonvolatile floating-point context saved by the preceding call to <a href="kernel.kesavefloatingpointstate">KeSaveFloatingPointState</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ NTSTATUS KeRestoreFloatingPointState(
 
 A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554233">KFLOATING_SAVE</a> structure that was passed in the preceding call to <a href="kernel.kesavefloatingpointstate">KeSaveFloatingPointState</a>.
 
+
 ## -returns
 <b>KeRestoreFloatingPointState</b> returns STATUS_SUCCESS.
+
 
 ## -remarks
 <b>KeRestoreFloatingPointState</b> is the reciprocal of <b>KeSaveFloatingPointState</b>. 
@@ -75,11 +78,13 @@ Typically, the caller-allocated <b>KFLOATING_SAVE</b> structure that contains th
 
 The <b>KeRestoreFloatingPointState</b> call that restores a saved state must be running in the same thread as the <b>KeSaveFloatingPointState</b> call that saved the state. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +95,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +116,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +127,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +138,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -145,5 +157,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeRestoreFloatingPointState routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeRestoreFloatingPointState routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

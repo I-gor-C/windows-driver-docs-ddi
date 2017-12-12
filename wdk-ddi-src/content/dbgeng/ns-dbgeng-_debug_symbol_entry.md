@@ -7,7 +7,7 @@ old-location: debugger\debug_symbol_entry.htm
 old-project: debugger
 ms.assetid: 31ffab25-ec34-42ff-bdde-c98fef003bfc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DEBUG_SYMBOL_ENTRY structure describes a symbol in a symbol group.
 
 
+
 ## -syntax
 
 ````
@@ -67,49 +68,61 @@ typedef struct _DEBUG_SYMBOL_ENTRY {
 
 The base address of the module in the target's virtual address space.
 
+
 ### -field Offset
 
 The location of the symbol in the target's virtual address space.
+
 
 ### -field Id
 
 The symbol ID of the symbol.  If the symbol ID is not known, <b>Id</b> is DEBUG_INVALID_OFFSET.
 
+
 ### -field Arg64
 
 The interpretation of <b>Arg64</b> depends on the type of the symbol.  If the value is not known, <b>Arg64</b> is zero.
+
 
 ### -field Size
 
 The size, in bytes, of the symbol's value.  This might not be known or might not completely represent all of the data for a symbol.  For example, a function's code might be split among multiple regions and the size only describes one region.
 
+
 ### -field Flags
 
 Symbol entry flags.  Currently, no flags are defined.
+
 
 ### -field TypeId
 
 The type ID of the symbol.
 
+
 ### -field NameSize
 
 The size, in characters, of the symbol's name.  If the size is not known, <b>NameSize</b> is zero.
+
 
 ### -field Token
 
 The managed token of the symbol.  If the token value is not known or the symbol does not have a token, <b>Token</b> is zero.
 
+
 ### -field Tag
 
 The symbol tag for the type of the symbol.  This is a value from the <b>SymTagEnum</b> enumeration.
+
 
 ### -field Arg32
 
 The interpretation of <b>Arg32</b> depends on the type of the symbol.  Currently, the value of <b>Arg32</b> is the register that holds the value or a pointer to the value of the symbol. If the symbol is not held in a register, or the register is not known, <b>Arg32</b> is zero.
 
+
 ### -field Reserved
 
 Set to zero.
+
 
 ## -remarks
 
@@ -119,6 +132,7 @@ Set to zero.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,5 +152,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_SYMBOL_ENTRY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_SYMBOL_ENTRY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

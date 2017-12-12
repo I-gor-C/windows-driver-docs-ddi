@@ -7,7 +7,7 @@ old-location: display\dxgkarg_displaydetectcontrol.htm
 old-project: display
 ms.assetid: A0B5798E-FF4D-4133-BFA9-39B37CC387F6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_DISPLAYDETECTCONTROL, DXGKARG_DISPLAYDETECTCONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used to hold the arguments for <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_displaydetectcontrol.md">DXGKDDI_DISPLAYDETECTCONTROL</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef struct _DXGKARG_DISPLAYDETECTCONTROL {
 
 The identifier of a display adapter's video present target.  Ignored if the type is not DXGK_DDCT_POLLONE.
 
+
 ### -field Type
 
 Detection action type requested.
+
 
 ### -field NonDestructiveOnly
 
@@ -70,9 +73,11 @@ If TRUE, the driver should attempt to poll the specified target(s) without causi
 If FALSE, the driver should perform any action necessary to detect the status of the specified target(s) even if it would cause visual artifacts on the target(s) in question or other targets.
 
 
+
 ### -field Reserved
 
 This value is reserved for system use.
+
 
 ## -remarks
 
@@ -82,6 +87,7 @@ This value is reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

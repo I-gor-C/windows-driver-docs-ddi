@@ -7,8 +7,8 @@ old-location: display\d3dcontextcreate.htm
 old-project: display
 ms.assetid: c960c3f4-7565-4163-b8c2-a13643110c8c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS
+ms.date: 12/8/2017
+ms.keywords: _D3DTRANSFORMCAPS, D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3dContextCreate</b> function creates a context.
 
 
+
 ## -prototype
 
 ````
@@ -58,6 +59,7 @@ DWORD APIENTRY D3dContextCreate(
 ### -param pccd [in]
 
 Points to a <a href="display.d3dhal_contextcreatedata">D3DHAL_CONTEXTCREATEDATA</a> structure that contains the information required to create a context and the data that the driver should store in the new context.
+
 
 ## -returns
 <b>D3dContextCreate</b> returns one of the following callback codes:
@@ -89,11 +91,13 @@ The driver must be able to reference all texture handles that are created within
 
 <b>D3dContextCreate</b> can be called with a disabled <a href="wdkgloss.p#wdkgloss.pdev#wdkgloss.pdev"><i>PDEV</i></a>. A PDEV is disabled or enabled by calling the display driver's <a href="display.drvassertmode">DrvAssertMode</a> function. See <a href="https://msdn.microsoft.com/f7badbe8-b24f-438a-8937-95bb98de6310">Managing PDEVs</a> for more information. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +108,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +134,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20LPD3DHAL_CONTEXTCREATECB callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20LPD3DHAL_CONTEXTCREATECB callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

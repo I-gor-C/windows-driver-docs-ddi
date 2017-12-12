@@ -39,12 +39,16 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IDmaChannelSlave</code> interface provides methods for monitoring and controlling a DMA channel for a subordinate device (as described in <a href="https://msdn.microsoft.com/library/windows/hardware/ff547986">Introduction to Adapter Objects</a>). A WaveCyclic port driver implements this interface and exposes it to the WaveCyclic miniport driver. The miniport driver obtains a reference to the port driver's implementation of an <code>IDmaChannelSlave</code> object by calling the port driver's <a href="audio.iportwavecyclic_newslavedmachannel">IPortWaveCyclic::NewSlaveDmaChannel</a> method. A miniport driver also has the option of implementing its own <code>IDmaChannelSlave</code> interface if it requires capabilities that are not in the port driver's default implementation (for more information, see <a href="https://msdn.microsoft.com/9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b">Wave Filters</a>). When the port driver calls the miniport driver's <b>NewStream</b> method (for example, <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a>), the method outputs the miniport driver's <code>IDmaChannelSlave</code> object to the port driver. <code>IDmaChannelSlave</code> inherits from the <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> interface.
+
 For more information, see <a href="https://msdn.microsoft.com/2064bbdf-62b7-454f-8764-b2aa21636c02">DMA Channel Objects</a>.
+
 In addition to the methods that are inherited from <b>IUnknown</b> interface, <code>IDmaChannelSlave</code> also inherits from <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>.
+
 
 
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDmaChannelSlave</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -54,6 +58,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDmaChannelSlave</b> interfac
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

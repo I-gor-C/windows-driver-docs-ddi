@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 6C9F2E99-17B4-49AD-A94F-E3EF9282B649
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSAUDIO_PRESENTATION_POSITION, KSAUDIO_PRESENTATION_POSITION, *PKSAUDIO_PRESENTATION_POSITION
+ms.keywords: PKSAUDIO_PRESENTATION_POSITION, *PKSAUDIO_PRESENTATION_POSITION, KSAUDIO_PRESENTATION_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>KSAUDIO_PRESENTATION_POSITION</b> structure specifies the current cursor position in audio data stream that is being rendered to the endpoint.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _KSAUDIO_PRESENTATION_POSITION {
 
 Specifies the block offset from the start of the stream to the current post-decoded, uncompressed position in the stream. A "block" refers to the group of channels in the same sample. So, for example, in a PCM stream a block is the same as a frame. However, for compressed formats a block is a single sample within a frame. This means that for a typical MP3 stream that has 1152 samples in a frame, there are 1152 blocks. 
 
+
 ### -field u64QPCPosition
 
 Specifies the value of the performance counter at the time that the audio driver reads the presentation position in response to the <b>KSAUDIO_PRESENTATION_POSITION</b> call. A driver writes to this field with the value read from calling <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff553053(v=vs.85).aspx">KeQueryPerformanceCounter</a> when a snapshot is taken of the presentation position.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Specifies the value of the performance counter at the time that the audio driver
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_PRESENTATION_POSITION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

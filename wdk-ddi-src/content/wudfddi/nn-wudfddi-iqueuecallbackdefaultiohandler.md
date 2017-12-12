@@ -7,8 +7,8 @@ old-location: wdf\iqueuecallbackdefaultiohandler.htm
 old-project: wdf
 ms.assetid: 3b2980f9-2f55-4fe3-99ac-1da578688f4b
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IQueueCallbackDefaultIoHandler</b> interface contains a method that handles I/O requests that no other method is registered to handle.
+
 
 
 ## -inheritance
@@ -51,6 +53,7 @@ The <b>IQueueCallbackDefaultIoHandler</b> interface has these methods.
 The <a href="wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler">OnDefaultIoHandler</a> method handles I/O requests that no other method is registered to handle. 
 
  
+
 
 ## -members
 The <b>IQueueCallbackDefaultIoHandler</b> interface has these methods.
@@ -65,20 +68,24 @@ The <b>IQueueCallbackDefaultIoHandler</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler">OnDefaultIoHandler</a> method handles I/O requests that no other method is registered to handle. 
+
 </td>
 </tr>
 </table>The <a href="wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler">OnDefaultIoHandler</a> method handles I/O requests that no other method is registered to handle. 
 
  
 
+
 ## -remarks
 A driver registers the <b>IQueueCallbackDefaultIoHandler</b> interface when the driver calls the <a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

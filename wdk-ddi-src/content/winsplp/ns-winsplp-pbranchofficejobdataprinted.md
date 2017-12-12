@@ -7,8 +7,8 @@ old-location: print\branchofficejobdataprinted.htm
 old-project: print
 ms.assetid: 77737A33-9592-43A3-B12A-5BFDCA0209BE
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: PBranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted, *PBranchOfficeJobDataPrinted
+ms.date: 12/9/2017
+ms.keywords: PBranchOfficeJobDataPrinted, *PBranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains the necessary data for logging a branch office job completed event on a remote server. This is based on standard job-related data available to the spooler.
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ typedef struct {
 
 Specifies the current status, or the failure code for a JOB_ERROR event.
 
+
 ### -field pDocumentName
 
 Specifies the name of the printed document.
+
 
 ### -field pUserName
 
 Specifies the user who submitted the job.
 
+
 ### -field pMachineName
 
 Specifies the name of the client machine printing the job
+
 
 ### -field pPrinterName
 
 Specifies the name of the print connection.
 
+
 ### -field pPortName
 
 Specifies the name of the port the job printed on.
+
 
 ### -field Size
 
 Specifies the 64-bit size of the job.
 
+
 ### -field TotalPages
 
 Specifies the total number of pages in the job.
+
 
 ## -remarks
 
@@ -100,6 +109,7 @@ Specifies the total number of pages in the job.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

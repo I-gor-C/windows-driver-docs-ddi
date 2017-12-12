@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltEnumerateVolumeInformation</b> routine provides information about volumes that are known to the filter manager.
 
 
+
 ## -syntax
 
 ````
@@ -61,13 +62,16 @@ NTSTATUS FltEnumerateVolumeInformation(
 
 Opaque filter pointer for the minifilter driver. This pointer uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded.
 
+
 ### -param Index [in]
 
 Zero-based index of the volume for which the information is requested.
 
+
 ### -param InformationClass [in]
 
 Type of information requested. This parameter can have one of the following values. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -76,33 +80,41 @@ Type of information requested. This parameter can have one of the following valu
 <tr>
 <td>
 <b>FilterVolumeBasicInformation</b>
+
 </td>
 <td>
 The <i>Buffer </i>parameter receives a <a href="ifsk.filter_volume_basic_information">FILTER_VOLUME_BASIC_INFORMATION</a> structure for the volume. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FilterVolumeStandardInformation</b>
+
 </td>
 <td>
 The <i>Buffer</i> parameter receives a <a href="ifsk.filter_volume_standard_information">FILTER_VOLUME_STANDARD_INFORMATION</a> structure for the volume.  This structure is available starting with Windows Vista.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Buffer [out]
 
 Pointer to a caller-allocated buffer that receives the requested information. The type of the information returned in the buffer is defined by the <i>InformationClass</i> parameter.
+
 
 ### -param BufferSize [in]
 
 Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. The caller should set this parameter according to the given <i>InformationClass</i> value.
 
+
 ### -param BytesReturned [out]
 
 Pointer to a caller-allocated variable that receives the number of bytes returned in the buffer that <i>Buffer </i>points to. If the input value of <i>BufferSize</i> is too small, <b>FltEnumerateVolumeInformation</b> returns STATUS_BUFFER_TOO_SMALL and sets this variable to the number of bytes required to store the requested information. This parameter is required and cannot be <b>NULL</b>.
+
 
 ## -returns
 <b>FltEnumerateVolumeInformation</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
@@ -120,6 +132,7 @@ Pointer to a caller-allocated variable that receives the number of bytes returne
 </dl>There are no more entries in the global list of volumes. This is a warning code. 
 
  
+
 
 ## -remarks
 Using the <i>Index</i> parameter is simply a way for the <b>FltEnumerateVolumeInformation</b> routine to select among volumes in the filter manager's global list of volumes. Two calls to <b>FltEnumerateVolumeInformation</b> with the same value of the <i>Index</i> parameter do not necessarily return the same result because volumes can be mounted or dismounted at any time. 
@@ -140,11 +153,13 @@ To enumerate all minifilter driver instances on a given volume, call <a href="if
 
 To enumerate instances of all minifilter drivers on all volumes, call <a href="ifsk.fltenumerateinstances">FltEnumerateInstances</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,6 +170,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -165,6 +181,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -175,9 +192,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -213,5 +232,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateVolumeInformation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

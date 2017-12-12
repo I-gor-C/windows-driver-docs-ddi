@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USB_CONTROLLER_FLAVOR</b> enumeration specifies the type of USB host controller.
 
 
+
 ## -syntax
 
 ````
@@ -82,105 +83,131 @@ typedef enum _USB_CONTROLLER_FLAVOR {
 
 Indicates a generic host controller.
 
+
 ### -field OHCI_Generic
 
 Indicates a generic OHCI host controller.
+
 
 ### -field OHCI_Hydra
 
 Indicates a Hydra host controller.
 
+
 ### -field OHCI_NEC
 
 Indicates a NEC host controller.
+
 
 ### -field UHCI_Generic
 
 Indicates a generic UHCI host controller.
 
+
 ### -field UHCI_Piix4
 
 Indicates an Intel PIIX4 UHCI host controller.
+
 
 ### -field UHCI_Piix3
 
 Indicates an Intel PIIX3 UHCI host controller.
 
+
 ### -field UHCI_Ich2
 
 Indicates an Intel ICH2 UHCI host controller.
+
 
 ### -field UHCI_Ich1
 
 Indicates an Intel 815 ICH1 UHCI host controller.
 
+
 ### -field UHCI_Ich3m
 
 Indicates an Intel ICH3m UHCI host controller.
+
 
 ### -field UHCI_Ich4
 
 Indicates an Intel ICH4m UHCI host controller.
 
+
 ### -field UHCI_Ich5
 
 Indicates an Intel ICH5m UHCI host controller.
+
 
 ### -field UHCI_Ich6
 
 Indicates an Intel ICH6m UHCI host controller.
 
+
 ### -field UHCI_Intel
 
 Indicates a generic Intel UHCI host controller.
+
 
 ### -field UHCI_VIA
 
 Indicates a generic VIA UHCI host controller.
 
+
 ### -field UHCI_VIA_x01
 
 Indicates a Revision 1 VIA UHCI host controller.
+
 
 ### -field UHCI_VIA_x02
 
 Indicates a Revision 2 VIA UHCI host controller.
 
+
 ### -field UHCI_VIA_x03
 
 Indicates a Revision 3 VIA UHCI host controller.
+
 
 ### -field UHCI_VIA_x04
 
 Indicates a Revision 4 VIA UHCI host controller.
 
+
 ### -field UHCI_VIA_x0E_FIFO
 
 Indicates a FIFO Revision VIA UHCI host controller.
+
 
 ### -field EHCI_Generic
 
 Indicates a generic EHCI host controller.
 
+
 ### -field EHCI_NEC
 
 Indicates an NEC EHCI host controller.
+
 
 ### -field EHCI_Lucent
 
 Indicates an EHCI Lucent host controller.
 
+
 ### -field EHCI_NVIDIA_Tegra2
 
 Indicates a Revision 2 NVIDIA Tegra EHCI host controller.
+
 
 ### -field EHCI_NVIDIA_Tegra3
 
 Indicates a Revision 3 NVIDIA Tegra EHCI host controller.
 
+
 ### -field EHCI_Intel_Medfield
 
 Indicates an Intel Medfield host controller.
+
 
 ## -remarks
 
@@ -190,6 +217,7 @@ Indicates an Intel Medfield host controller.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -209,5 +237,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_CONTROLLER_FLAVOR enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsQualityForwarder</b> interface inherits the method of the <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a> interface and extends <b>IKsObject</b> to provide a method that flushes information from a pin. 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsQualityForwarder</b> interface inherits from <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a>. <b>IKsQualityForwarder</b> also has these types of members:
 
@@ -66,6 +67,7 @@ Flushes information from a pin.
 
  
 
+
 ## -members
 The <b>IKsQualityForwarder</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -79,20 +81,24 @@ The <b>IKsQualityForwarder</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Flushes information from a pin. 
+
 </td>
 </tr>
 </table>Flushes information from a pin. 
 
  
 
+
 ## -remarks
 The IID for this interface is IID_IKsQualityForwarder.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

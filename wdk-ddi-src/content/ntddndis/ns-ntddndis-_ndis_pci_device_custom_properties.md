@@ -7,8 +7,8 @@ old-location: netvista\ndis_pci_device_custom_properties.htm
 old-project: netvista
 ms.assetid: fd61184f-0502-492d-9014-6afbfd70c189
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, *PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES, NDIS_PCI_DEVICE_CUSTOM_PROPERTIES
+ms.date: 12/8/2017
+ms.keywords: _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, *PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The NDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure defines the type and speed of the PCI bus that a NIC
   is running on.
+
 
 
 ## -syntax
@@ -78,10 +79,12 @@ The
      <b>Size</b> member to 
      sizeof(NDIS_PCI_DEVICE_CUSTOM_PROPERTIES).
 
+
 ### -field DeviceType
 
 The PCI device type. For example, conventional, PCI-X, PCI-E, and so on. See the definitions for
      DevProp_PciDevice_DeviceType_xxx in pciprop.h.
+
 
 ### -field CurrentSpeedAndMode
 
@@ -90,11 +93,13 @@ The speed and mode of conventional PCI or PCI-X devices. For conventional PCI de
      definitions for DevProp_PciDevice_CurrentSpeedAndMode_Pci_X_xxx. This property is valid only for
      conventional PCI and PCI-X devices.
 
+
 ### -field CurrentPayloadSize
 
 The current payload size in the transaction layer for a PCI Express device. See definitions for
      DevProp_PciExpressDevice_PayloadOrRequestSize_xxx. This property is valid only for PCI Express
      devices.
+
 
 ### -field MaxPayloadSize
 
@@ -102,11 +107,13 @@ The maximum payload size in the transaction layer that is supported by a PCI Exp
      definitions for DevProp_PciExpressDevice_PayloadOrRequestSize_xxx. This property is valid only for PCI
      Express devices.
 
+
 ### -field MaxReadRequestSize
 
 The maximum read request size for a PCI Express device. See definitions for
      DevProp_PciExpressDevice_PayloadOrRequestSize_xxx. This property is valid only for PCI Express
      devices..
+
 
 ### -field CurrentLinkSpeed
 
@@ -114,16 +121,19 @@ The current link speed for the device. This property is applicable to a PCI Expr
      the definitions for DevProp_PciExpressDevice_LinkSpeed_xxx. This property is valid only for PCI Express
      devices.
 
+
 ### -field CurrentLinkWidth
 
 The current link width of the device. This property is applicable to a PCI express device. See the
      definitions for DevProp_PciExpressDevice_LinkWidth_xxx. This property is valid only for PCI Express
      devices.
 
+
 ### -field MaxLinkSpeed
 
 The maximum link speed of an express link for a PCI Express device. See the definitions for
      DevProp_PciExpressDevice_LinkSpeed_xxx. This property is valid only for PCI Express devices..
+
 
 ### -field MaxLinkWidth
 
@@ -131,21 +141,25 @@ The maximum link width that is implemented by an express link for a PCI Express 
      definitions for DevProp_PciExpressDevice_LinkWidth_xxx. This property is valid only for PCI Express
      devices.
 
+
 ### -field PciExpressVersion
 
 The specification version to which an PCI Express device was built. See the definitions for
      DevProp_PciExpressDevice_Spec_Version_xxx. This property is valid only for PCI Express devices.
+
 
 ### -field InterruptType
 
 The hardware support for interrupts on the PCI Express device. See the definitions for
      DevProp_PciDevice_InterruptType_xxx. This property is valid only for PCI Express devices.
 
+
 ### -field MaxInterruptMessages
 
 The number of message interrupts that a PCI Express device supports in hardware. See the
      definition for DevProp_PciDevice_InterruptMessageMaximum. This property is valid only for PCI Express
      devices that support message interrupts.
+
 
 ## -remarks
 Some high performance miniport adapters can adjust the hardware configuration and resource allocation
@@ -161,19 +175,23 @@ Some high performance miniport adapters can adjust the hardware configuration an
     <a href="netvista.guid_ndis_gen_pci_device_custom_properties">
     GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</a> WMI GUID.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -201,5 +219,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

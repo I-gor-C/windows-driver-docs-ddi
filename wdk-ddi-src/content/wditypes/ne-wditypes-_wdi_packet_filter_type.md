@@ -7,7 +7,7 @@ old-location: netvista\wdi_packet_filter_type.htm
 old-project: netvista
 ms.assetid: 252CE7F6-2DA7-45F8-97F0-85B51A0181C2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_PACKET_FILTER_TYPE, WDI_PACKET_FILTER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The WDI_PACKET_FILTER_TYPE enumeration defines the packet filter types.
+
 
 
 ## -syntax
@@ -87,9 +88,11 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 
 None.
 
+
 ### -field WDI_PACKET_FILTER_DIRECTED
 
 Directed packets. Directed packets contain a destination address equal to the station address of the NIC.
+
 
 
 
@@ -99,9 +102,11 @@ Multicast address packets sent to addresses in the multicast address list.
 
 
 
+
 ### -field WDI_PACKET_FILTER_ALL_MULTICAST
 
 All multicast address packets, not just the ones enumerated in the multicast address list.
+
 
 
 
@@ -111,9 +116,11 @@ Broadcast packets.
 
 
 
+
 ### -field WDI_PACKET_FILTER_PROMISCUOUS
 
 Specifies all packets regardless of whether VLAN filtering is enabled or not and whether the VLAN identifier matches or not.
+
 
 
 
@@ -122,10 +129,13 @@ Specifies all packets regardless of whether VLAN filtering is enabled or not and
 An 802.11 media access control (MAC) protocol data unit (MPDU) frame, which contains all of the data in the format received by the 802.11 station. When this filter is set, the driver must indicate every unmodified MPDU fragment before it indicates the MAC service data unit (MSDU) packet reassembled from the MPDU fragments. 
 
 
+
 If an MPDU fragment is encrypted, it must not decrypt the fragment before it is indicated. However, the miniport driver must decrypt each MPDU fragment before reassembling and indicating the MSDU packet.
 
 
+
 If enabled, this filter type only affects other standard packet filters, such as WDI_PACKET_FILTER_DIRECTED or WDI_PACKET_FILTER_BROADCAST.
+
 
 
 
@@ -135,13 +145,16 @@ Directed 802.11 management packets. Directed packets contain a destination addre
 
 
 
+
 ### -field WDI_PACKET_FILTER_802_11_BROADCAST_MGMT
 
 Broadcast 802.11 management packets received by the 802.11 station.
 
+
 ### -field WDI_PACKET_FILTER_802_11_MULTICAST_MGMT
 
 Multicast 802.11 management packets sent to addresses in the multicast address list.
+
 
 ### -field WDI_PACKET_FILTER_802_11_ALL_MULTICAST_MGMT
 
@@ -149,16 +162,20 @@ All multicast 802.11 management packets received by the 802.11 station, regardle
 
 
 
+
 ### -field WDI_PACKET_FILTER_802_11_PROMISCUOUS_MGMT
 
 All 802.11 management packets received by the 802.11 station.
+
 
 ### -field WDI_PACKET_FILTER_802_11_RAW_MGMT
 
 An 802.11 MPDU management frame, which contains all of the data in the format received by the 802.11 station. When this filter is set, the driver must indicate every unmodified MPDU fragment before it indicates the MAC management protocol data unit (MMPDU) packet reassembled from the MPDU fragments. 
 
 
+
 If enabled, this filter type only affects other 802.11 management packet filters, such as WDI_PACKET_FILTER_802_11_DIRECTED_MGMT or WDI_PACKET_FILTER_802_11_MULTICAST_MGMT.
+
 
 
 
@@ -168,9 +185,11 @@ Directed 802.11 control packets. Directed packets contain a destination address 
 
 
 
+
 ### -field WDI_PACKET_FILTER_802_11_BROADCAST_CTRL
 
 Broadcast 802.11 control packets received by the 802.11 station.
+
 
 
 
@@ -180,9 +199,11 @@ All 802.11 control packets received by the 802.11 station.
 
 
 
+
 ### -field WDI_PACKET_FILTER_ALL
 
 All packet types.
+
 
 ## -remarks
 
@@ -192,22 +213,27 @@ All packet types.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

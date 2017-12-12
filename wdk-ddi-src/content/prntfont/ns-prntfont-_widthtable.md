@@ -7,7 +7,7 @@ old-location: print\widthtable.htm
 old-project: print
 ms.assetid: 6c7b35a2-f9fd-41a9-a353-ec8b78259bf0
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _WIDTHTABLE, WIDTHTABLE, *PWIDTHTABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WIDTHTABLE structure is used to define the contents of <a href="print.customized_font_management#ddk_unidrv_font_metrics_files_gg#ddk_unidrv_font_metrics_files_gg">Unidrv font metrics files</a> (.ufm files).
 
 
+
 ## -syntax
 
 ````
@@ -59,22 +60,27 @@ typedef struct _WIDTHTABLE {
 
 Specifies the size, in bytes, of the WIDTHTABLE structure, including the <b>WidthRun</b> array.
 
+
 ### -field dwRunNum
 
 Specifies the number of elements in the <b>WidthRun</b> array.
+
 
 ### -field WidthRun
 
 Is an array of <a href="print.widthrun">WIDTHRUN</a> structures.
 
+
 ## -remarks
 A .ufm file's WIDTHTABLE structure, which describes character widths, is accessed by a pointer in the file's <a href="print.unifm_hdr">UNIFM_HDR</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -94,5 +100,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20WIDTHTABLE structure%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20WIDTHTABLE structure%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

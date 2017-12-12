@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The client driver's implementation that UCX calls when it receives a request for information about changed ports.
 
 
+
 ## -prototype
 
 ````
@@ -63,12 +64,15 @@ typedef EVT_UCX_ROOTHUB_INTERRUPT_TX PEVT_UCX_ROOTHUB_INTERRUPT_TX;
 
 A handle to a UCX object that represents the root hub.
 
+
 ### -param Request [in]
 
 Contains the <a href="buses.urb">URB</a> for the root hub interrupt transfer request.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxroothubcreate">UcxRootHubCreate</a>
@@ -82,27 +86,33 @@ The client driver returns completion status in <i>Request</i>.
 
 This snippet shows how the callback extracts the root hub interrupt transfer request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,9 +123,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

@@ -7,8 +7,8 @@ old-location: kernel\process_readwritevm_logging_information.htm
 old-project: kernel
 ms.assetid: F1C769FD-D05F-4C23-A91E-FAEE8EA029EC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PROCESS_READWRITEVM_LOGGING_INFORMATION, *PPROCESS_READWRITEVM_LOGGING_INFORMATION, PROCESS_READWRITEVM_LOGGING_INFORMATION
+ms.date: 12/7/2017
+ms.keywords: _PROCESS_READWRITEVM_LOGGING_INFORMATION, PROCESS_READWRITEVM_LOGGING_INFORMATION, *PPROCESS_READWRITEVM_LOGGING_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Stores options for read/write access for  telemetry per process. 
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ typedef union _PROCESS_READWRITEVM_LOGGING_INFORMATION {
 
 Reserved.
 
+
 ### -field EnableReadVmLogging
 
 Enables or disables read access. Non-zero values enables telemetry, zero disables it.
+
 
 ### -field EnableWriteVmLogging
 
 Enables or disables write access. Non-zero values enables telemetry, zero disables it.
 
+
 ### -field Unused
 
 Do not use.
+
 
 ## -remarks
 
@@ -81,22 +86,27 @@ Do not use.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

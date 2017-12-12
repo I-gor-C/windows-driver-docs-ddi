@@ -41,6 +41,7 @@ req.irql:
 The AVCSTRM_FUNCTION enumeration defines the AV/C subunit stream formats supported by <i>avcstrm.sys</i>.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef enum _AVCSTRM_FORMAT {
 
 Specifies the 61883-2 specification for SD-DVCR data transmission, Standard Definition NTSC.
 
+
 ### -field AVCSTRM_FORMAT_SDDV_PAL
 
 Specifies the 61883-2 specification for SD-DVCR data transmission, Standard Definition PAL.
+
 
 ### -field AVCSTRM_FORMAT_MPEG2TS
 
 Specifies the 61883-4 specification for MPEG2-TS data transmission.
 
+
 ### -field AVCSTRM_FORMAT_HDDV_NTSC
 
 Specifies the 61883-3 specification for HD-DVCR data transmission, High Definition NTSC. This format is not supported.
+
 
 ### -field AVCSTRM_FORMAT_HDDV_PAL
 
 Specifies the 61883-3 specification for HD-DVCR data transmission, High Definition PAL. This format is not supported.
 
+
 ### -field AVCSTRM_FORMAT_SDLDV_NTSC
 
 Specifies the 61883-5 specification for SDL-DVCR data transmission. NTSC. This format is not supported.
 
+
 ### -field AVCSTRM_FORMAT_SDLDV_PAL
 
 Specifies the 61883-5 specification for SDL-DVCR data transmission. PAL. This format is not supported.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ Specifies the 61883-5 specification for SDL-DVCR data transmission. PAL. This fo
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +119,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVCSTRM_FORMAT enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

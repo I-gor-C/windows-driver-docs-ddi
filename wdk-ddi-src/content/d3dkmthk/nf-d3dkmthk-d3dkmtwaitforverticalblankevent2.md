@@ -7,7 +7,7 @@ old-location: display\d3dkmtwaitforverticalblankevent2.htm
 old-project: display
 ms.assetid: 71a48c1f-1eca-4f3e-a085-99ffc207a7e0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTWaitForVerticalBlankEvent2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Waits for specified wait objects, including a vertical blank event, to occur and then returns. Supported starting with Windows 8.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTWaitForVerticalBlankEvent2(
 
 Specifies parameters for waiting on multiple wait objects, including a vertical blank event.
 
+
 ## -returns
 Returns one of the following values:
 <dl>
@@ -70,6 +72,7 @@ Returns one of the following values:
 
  
 
+
 ## -remarks
 
 
@@ -78,22 +81,27 @@ Returns one of the following values:
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +112,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

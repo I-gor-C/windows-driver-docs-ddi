@@ -7,7 +7,7 @@ old-location: storage\storportpofxactivatecomponent.htm
 old-project: storage
 ms.assetid: 23872334-F9C3-4EB5-9B26-0BDB239D8F4E
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortPoFxActivateComponent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortPoFxActivateComponent</b> routine increments the activation reference count on the specified component of a storage device.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ ULONG StorPortPoFxActivateComponent(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param Address [in, optional]
 
 The address of a storage device unit. This parameter is <b>NULL</b> when activating a storage adapter component.
+
 
 ### -param Srb [in, optional]
 
 The SRB triggering the component activation. This parameter is <b>NULL</b> if the miniport is activating a device component for a request not sent through Storport.
 
+
 ### -param Component [in]
 
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
+
 ### -param Flags [in]
 
 Not used. Set to 0.
+
 
 ## -returns
 The <b>StorPortPoFxActivateComponent</b> routine returns one of these status codes:
@@ -117,16 +123,19 @@ The <i>Flags</i> parameter is nonzero.
 
  
 
+
 ## -remarks
 Currently, both adapter devices and unit devices have maximum component count of 1. The index in <i>Component</i> must always be set to 0.
 
 Each call to <b>StorPortPoFxActivateComponent</b> must be matched with a subsequent call to <a href="storage.storportpofxidlecomponent">StorPortPoFxIdleComponent</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -137,14 +146,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,6 +167,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -165,9 +178,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 IRQL &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -185,5 +200,8 @@ IRQL &lt;= DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortPoFxActivateComponent routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortPoFxActivateComponent routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

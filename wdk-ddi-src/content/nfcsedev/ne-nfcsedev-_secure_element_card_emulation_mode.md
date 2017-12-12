@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: E8A53836-95D1-4CE4-AF55-5AD732211A55
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_CARD_EMULATION_MODE, *PSECURE_ELEMENT_CARD_EMULATION_MODE, SECURE_ELEMENT_CARD_EMULATION_MODE
+ms.keywords: _SECURE_ELEMENT_CARD_EMULATION_MODE, SECURE_ELEMENT_CARD_EMULATION_MODE, *PSECURE_ELEMENT_CARD_EMULATION_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 This enumeration indicates the card emulation mode of a secure element.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _SECURE_ELEMENT_SET_CARD_EMULATION_MODE {
 
 The secure element is not exposed.
 
+
 ### -field EmulationOnPowerIndependent
 
 The eSE secure element is exposed regardless of the power state of the device/battery and is the only secure element exposed. If the battery is removed, the device is powered off or otherwise power is not available. The secure element must remain exposed to the external reader.
 
+
 ### -field EmulationOnPowerDependent
 
 The secure element is exposed only as long as the device is powered on, and is the only secure element exposed. If the battery is removed, the device is powered off, or if power is not available, the secure element must no longer be exposed to the external reader.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ The secure element is exposed only as long as the device is powered on, and is t
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

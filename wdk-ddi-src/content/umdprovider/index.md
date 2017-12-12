@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Umdprovider.h header
 
+## -description
 
 This header is used by Display. For more information, see
 - [Display](../_display/index.md)
@@ -24,10 +29,10 @@ Umdprovider.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [UMDETW_ALLOCATION_USAGE structure](ns-umdprovider--umdetw-allocation-usage.md) | Indicates the reason for mapping from a Microsoft Direct3D memory allocation to a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) allocation. |
+| [_UMDETW_ALLOCATION_USAGE structure](ns-umdprovider-_umdetw_allocation_usage.md) | Indicates the reason for mapping from a Microsoft Direct3D memory allocation to a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) allocation. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [UMDETW_ALLOCATION_SEMANTIC enumeration](ne-umdprovider--umdetw-allocation-semantic.md) | Indicates what a memory allocation is used for if the allocation is internal to the user-mode driver. |
+| [_UMDETW_ALLOCATION_SEMANTIC enumeration](ne-umdprovider-_umdetw_allocation_semantic.md) | Indicates what a memory allocation is used for if the allocation is internal to the user-mode driver. |

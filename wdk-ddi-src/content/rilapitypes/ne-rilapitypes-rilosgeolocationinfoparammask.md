@@ -7,7 +7,7 @@ old-location: netvista\rilosgeolocationinfoparammask_2.htm
 old-project: netvista
 ms.assetid: cee22f5b-e8ae-4d44-90db-d4f5a8e35eec
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILOSGEOLOCATIONINFOPARAMMASK, RILOSGEOLOCATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -124,6 +125,7 @@ typedef enum _RILOSGEOLOCATIONINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>RxFillAndInstallFastIoDispatch</b> fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ VOID __RxFillAndInstallFastIoDispatch(
 
 A pointer to the RDBSS device object for this network redirector.
 
+
 ### -param FastIoDispatch [in, out]
 
 A pointer to the fast I/O dispatch table to fill in and use.
+
 
 ### -param FastIoDispatchSize [in]
 
 The size, in bytes, of the fast I/O dispatch table passed.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The <b>__RxFillAndInstallFastIoDispatch</b> routine is implemented differently for monolithic and non-monolithic drivers network mini-redirector. 
@@ -76,11 +81,13 @@ For non-monolithic network mini-redirector drivers, such as the Microsoft SMB re
 
 For monolithic network mini-redirectors built by developers, the <b>__RxFillAndInstallFastIoDispatch</b> routine does nothing.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +98,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,9 +109,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -124,5 +134,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20__RxFillAndInstallFastIoDispatch function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

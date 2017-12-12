@@ -7,7 +7,7 @@ old-location: print\getprintoutputinfo.htm
 old-project: print
 ms.assetid: 0EC09215-48B1-4B71-9B4C-99A25C35269F
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GetPrintOutputInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ HRESULT WINAPI GetPrintOutputInfo(
 ## -returns
 If this function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
+
 ## -remarks
 
 
@@ -79,6 +81,7 @@ If this function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

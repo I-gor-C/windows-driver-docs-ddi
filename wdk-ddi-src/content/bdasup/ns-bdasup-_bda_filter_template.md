@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _BDA_FILTER_TEMPLATE {
 
 Points to a KSFILTER_DESCRIPTOR structure that describes a template for a filter for the BDA device. 
 
+
 ### -field ulcPinPairs
 
 Number of pairs of pins in the <b>pPinPairs</b> array.
 
+
 ### -field pPinPairs
 
 Array of BDA_PIN_PAIRING structures that describe the topology between a pair of the filter's input and output pins. 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Array of BDA_PIN_PAIRING structures that describe the topology between a pair of
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,5 +104,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_FILTER_TEMPLATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

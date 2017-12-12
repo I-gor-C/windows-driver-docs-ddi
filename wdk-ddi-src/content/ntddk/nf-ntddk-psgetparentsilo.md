@@ -7,7 +7,7 @@ old-location: kernel\psgetparentsilo.htm
 old-project: kernel
 ms.assetid: 57fa5563-3a02-449a-a934-85c75f450500
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsGetParentSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ Retrieves the most immediate parent silo in the hierarchy
             
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ PESILO  PsGetParentSilo(
 
 A pointer to an <b>EJOB</b> structure that represents the job object. 
 
+
 ## -returns
 A pointer to the parent silo of the job. his value may be
     PSP_HOST_SILO, because all silos descend from the host.
+
 
 ## -remarks
 
@@ -71,22 +74,27 @@ A pointer to the parent silo of the job. his value may be
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +116,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -117,9 +127,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

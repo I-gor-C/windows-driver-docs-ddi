@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The BTHHFP_DESCRIPTOR  data structure stores information describing a paired Handsfree profile (HFP) device.
+
 The HFP driver returns this data structure in the output buffer for the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a> request.
+
 
 
 ## -syntax
@@ -62,25 +64,31 @@ typedef struct _BTHHFP_DESCRIPTOR {
 
 KS pin category for the input function of the paired HFP device.
 
+
 ### -field OutputPinCategory
 
 KS pin category for the output function of the paired HFP device.
+
 
 ### -field ContainerId
 
 The PnP container ID for the paired HFP device.
 
+
 ### -field SupportsVolume
 
 Indicates whether the paired HFP device supports remote volume control.
+
 
 ### -field VolumePropertyValuesSize
 
 If remote volume control is supported, this member contains the size of the data returned by the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.
 
+
 ### -field FriendlyName
 
 An indirect string identifying the human readable friendly name of the paired HFP device.
+
 
 ## -remarks
 The HFP driver calculates the <i>InputPinCategory</i> and <i>OutputPinCategory</i> GUIDs based on the 'Bluetooth Class of Device' data that is contained in the SDP information of the paired device. The audio driver sets the <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff563533(v=vs.85).aspx">KSPIN_DESCRIPTOR.Category</a> members for the input and output bridge pins to the calculated GUIDs.
@@ -95,27 +103,33 @@ The audio driver uses the string returned in <i>FriendlyName</i> to set the DEVP
 
 For information about the IOCTLs that work with this structure, see <a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,5 +159,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20BTHHFP_DESCRIPTOR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

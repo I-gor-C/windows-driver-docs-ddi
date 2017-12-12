@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_device_info.htm
 old-project: netvista
 ms.assetid: 6E0E9BC9-9C84-4511-A28E-2BB2D6367F74
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_WFD_DEVICE_INFO, DOT11_WFD_DEVICE_INFO, *PDOT11_WFD_DEVICE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,6 +58,7 @@ typedef struct _DOT11_WFD_DEVICE_INFO {
 ### -field Header
 
 Specifies the type, revision and size of the <b>DOT11_WFD_DEVICE_INFO</b> structure. The required settings for the members of <b>Header</b> are the following:
+
 <table>
 <tr>
 <th>Member</th>
@@ -78,21 +79,26 @@ Specifies the type, revision and size of the <b>DOT11_WFD_DEVICE_INFO</b> struct
 </table>
  
 
+
 ### -field DeviceAddress
 
 The device address to assign to a WFD port. This address is used when constructing P2P Information Elements (IEs).
+
 
 ### -field ConfigMethods
 
 The configuration methods supported by the WFD device.
 
+
 ### -field PrimaryDeviceType
 
 The primary device type for the WFD device.
 
+
 ### -field DeviceName
 
 A friendly name assigned to the WFD device.
+
 
 ## -remarks
 
@@ -102,14 +108,17 @@ A friendly name assigned to the WFD device.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

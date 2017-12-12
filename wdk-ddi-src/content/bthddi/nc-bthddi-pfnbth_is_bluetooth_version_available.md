@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 10662237-18b4-4f37-a704-985b2db0d689
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -43,6 +43,7 @@ The
   operating system.
 
 
+
 ## -prototype
 
 ````
@@ -62,23 +63,28 @@ BOOLEAN IsBluetoothVersionAvailable(
 
 This parameter specifies the major version number of Bluetooth that is requested.
 
+
 ### -param MinorVersion [in]
 
 This parameter specifies the minor version number of Bluetooth that is requested.
+
 
 ## -returns
 <i>IsBluetoothVersionAvailable</i> returns <b>TRUE</b> if the Bluetooth version that the operating system
      provides is greater than or equal to the Bluetooth version number that is being requested.
 
+
 ## -remarks
 Bluetooth profile drivers should call this function before performing any operations that are not
     supported in all Bluetooth versions.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,14 +95,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,9 +116,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

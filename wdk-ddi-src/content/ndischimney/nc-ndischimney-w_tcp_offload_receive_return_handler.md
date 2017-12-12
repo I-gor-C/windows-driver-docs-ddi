@@ -7,7 +7,7 @@ old-location: netvista\miniporttcpoffloadreceivereturn.htm
 old-project: netvista
 ms.assetid: b746f58d-d029-4fcd-a59d-baba037fc38e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,10 +39,12 @@ req.irql: Any level
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 NDIS calls the 
   <i>MiniportTcpOffloadReceiveReturn</i> function to return ownership of 
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> and associated structures to
   an offload target.
+
 
 
 ## -prototype
@@ -70,6 +72,7 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param NetBufferList [in]
 
 A pointer to a 
@@ -79,10 +82,12 @@ A pointer to a
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">
      NdisTcpOffloadReceiveHandler</a> function.
 
+
 ## -returns
 The 
      <i>MiniportTcpOffloadReceiveReturn</i> function should always succeed. Therefore, the 
      <i>MiniportTcpOffloadReceiveReturn</i> function should always return NDIS_STATUS_SUCCESS.
+
 
 ## -remarks
 NDIS calls the 
@@ -102,11 +107,13 @@ The
 Note that the offload target driver should not unload and the offload target adapter must not be
     closed until all indicated receive buffers have been returned.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,9 +124,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -146,5 +155,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

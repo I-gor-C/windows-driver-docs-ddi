@@ -7,7 +7,7 @@ old-location: kernel\rtlulongptradd.htm
 old-project: kernel
 ms.assetid: 26A9A0B6-07A3-4D42-A5A1-C4CDD541A3FA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlULongPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Adds two values of type <b>ULONG_PTR</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS RtlULongPtrAdd(
 
 The first value in the equation.
 
+
 ### -param ulAddend [in]
 
 The value to add to <i>ulAugend</i>.
 
+
 ### -param pulResult [out]
 
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A pointer to the sum. If the operation results in a value that overflows or unde
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +89,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\nmrclientattachprovider.htm
 old-project: netvista
 ms.assetid: dca8f82b-f058-4765-890c-973f8462c2f5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NmrClientAttachProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NmrClientAttachProvider</b> function attaches a client module to a provider module.
 
 
+
 ## -syntax
 
 ````
@@ -61,8 +62,9 @@ NTSTATUS NmrClientAttachProvider(
 
 A handle used by the NMR to represent the binding between the client module and the provider
      module. The NMR passes this handle to the client module when it calls the client module's 
-     <a href="netvista.clientattachprovider">ClientAttachProvider</a> callback
+     <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a> callback
      function.
+
 
 ### -param ClientBindingContext [in]
 
@@ -74,6 +76,7 @@ A pointer to a caller-supplied context for the binding between the client module
      require the client module's binding context. The client module must make sure that this context remains
      valid and resident in memory as long as the provider module is attached to the client module.
 
+
 ### -param ClientDispatch [in]
 
 A pointer to a constant structure that contains the dispatch table of 
@@ -83,6 +86,7 @@ A pointer to a constant structure that contains the dispatch table of
      NPI-specific. If the 
      NPI does not define a client
      dispatch table structure, the client module must set this parameter to <b>NULL</b>.
+
 
 ### -param ProviderBindingContext [out]
 
@@ -94,6 +98,7 @@ A pointer to a variable that receives a pointer to the provider module's context
      <a href="netvista.network_programming_interface">NPI</a> functions that require the
      provider module's binding context.
 
+
 ### -param ProviderDispatch [out]
 
 A pointer to a variable that receives a pointer to a structure that contains the dispatch table of
@@ -101,6 +106,7 @@ A pointer to a variable that receives a pointer to a structure that contains the
      <a href="netvista.network_programming_interface">NPI</a> functions for the provider
      module. The contents of the structure are 
      NPI-specific.
+
 
 ## -returns
 The 
@@ -117,15 +123,16 @@ The
 
  
 
+
 ## -remarks
 A client module calls the 
     <b>NmrClientAttachProvider</b> function from its 
-    <a href="netvista.clientattachprovider">ClientAttachProvider</a> callback
+    <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a> callback
     function to attach itself to a provider module.
 
 When a client module calls the 
     <b>NmrClientAttachProvider</b> function, the NMR calls the provider module's 
-    <a href="netvista.providerattachclient">ProviderAttachClient</a> callback
+    <a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a> callback
     function to complete the attachment process. The 
     <b>NmrClientAttachProvider</b> function returns the status code that is returned by the provider module's 
     <i>ProviderAttachClient</i> callback
@@ -141,7 +148,7 @@ If the
     <b>NmrClientAttachProvider</b> function returns STATUS_SUCCESS and the client module dynamically allocated
     the memory for its binding context, the client module should free that allocated memory when the NMR
     calls the client module's 
-    <a href="netvista.clientcleanupbindingcontext">
+    <a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">
     ClientCleanupBindingContext</a> callback function after the client module and provider module are
     detached from each other.
 
@@ -152,11 +159,13 @@ If the
     <i>ProviderDispatch</i> parameters so that it can call the provider module's 
     <a href="netvista.network_programming_interface">NPI</a> functions.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -167,15 +176,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -186,6 +198,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -196,9 +209,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -206,15 +221,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.clientattachprovider">ClientAttachProvider</a>
+<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
 </dt>
 <dt>
-<a href="netvista.providerattachclient">ProviderAttachClient</a>
+<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
 </dt>
 <dt>
-<a href="netvista.clientcleanupbindingcontext">ClientCleanupBindingContext</a>
+<a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">ClientCleanupBindingContext</a>
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrClientAttachProvider function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrClientAttachProvider function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

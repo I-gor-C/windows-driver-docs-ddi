@@ -7,7 +7,7 @@ old-location: kernel\synchcritsection.htm
 old-project: kernel
 ms.assetid: 2db9b1b4-0149-4477-9f68-588c55fcbdca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <i>SynchCritSection</i> routine is used to access hardware resources or driver data that are shared with a driver's <a href="kernel.interruptservice">InterruptService</a> routine.
 
 
+
 ## -prototype
 
 ````
@@ -60,8 +61,10 @@ BOOLEAN SynchCritSection(
 
 Caller-supplied context information, specified by the driver's call to <a href="kernel.kesynchronizeexecution">KeSynchronizeExecution</a>.
 
+
 ## -returns
 If the routine's operation succeeds, the routine should return <b>TRUE</b>; otherwise, it should return <b>FALSE</b>. (Success and failure of this routine are driver-defined.) The specified return value becomes the return value for <b>KeSynchronizeExecution</b>.
+
 
 ## -remarks
 Drivers must use <i>SynchCritSection</i> routines to access hardware resources or driver data that can also be accessed by an <i>InterruptService</i> routine (ISR).
@@ -78,11 +81,13 @@ Then, implement your callback routine as follows:
 
 The KSYNCHRONIZE_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the KSYNCHRONIZE_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +98,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,9 +109,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Called at DIRQL (see Remarks section).
+
 </td>
 </tr>
 </table>

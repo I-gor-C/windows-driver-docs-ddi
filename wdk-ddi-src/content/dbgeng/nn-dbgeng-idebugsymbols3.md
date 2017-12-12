@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols3.htm
 old-project: debugger
 ms.assetid: 3fce9384-93f3-4d81-b6ae-bda7a94da24a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -182,6 +182,7 @@ Initializes a search for symbols whose names match a given pattern.
 
  
 
+
 ## -members
 The <b>IDebugSymbols3</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -195,6 +196,7 @@ The <b>IDebugSymbols3</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Adds a synthetic module to the module list the debugger maintains for the current process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -203,6 +205,7 @@ Adds a synthetic module to the module list the debugger maintains for the curren
 </td>
 <td align="left" width="63%">
 Adds a synthetic module to the module list the debugger maintains for the current process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -211,6 +214,7 @@ Adds a synthetic module to the module list the debugger maintains for the curren
 </td>
 <td align="left" width="63%">
 Adds a synthetic symbol to a module in the current process. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -220,6 +224,7 @@ Adds a synthetic symbol to a module in the current process. (ANSI version)
 <td align="left" width="63%">
 Adds a synthetic symbol to a module in the current process.
 (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -228,6 +233,7 @@ Adds a synthetic symbol to a module in the current process.
 </td>
 <td align="left" width="63%">
 Appends directories to the executable image path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -236,6 +242,7 @@ Appends directories to the executable image path.
 </td>
 <td align="left" width="63%">
 Appends directories to the source path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -244,6 +251,7 @@ Appends directories to the source path.
 </td>
 <td align="left" width="63%">
 Appends directories to the symbol path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -252,6 +260,7 @@ Appends directories to the symbol path.
 </td>
 <td align="left" width="63%">
 Creates a new symbol group.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -260,6 +269,7 @@ Creates a new symbol group.
 </td>
 <td align="left" width="63%">
 Searches the source path for a specified source file.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -268,6 +278,7 @@ Searches the source path for a specified source file.
 </td>
 <td align="left" width="63%">
 Returns the name of the specified constant.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -276,6 +287,7 @@ Returns the name of the specified constant.
 </td>
 <td align="left" width="63%">
 Returns the index of the current stack frame in the call stack.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -284,6 +296,7 @@ Returns the index of the current stack frame in the call stack.
 </td>
 <td align="left" width="63%">
 Returns the name of a field within a structure.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -292,6 +305,7 @@ Returns the name of a field within a structure.
 </td>
 <td align="left" width="63%">
 Returns the offset of a field from the base address of an instance of a type.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -300,6 +314,7 @@ Returns the offset of a field from the base address of an instance of a type.
 </td>
 <td align="left" width="63%">
 Returns the type of a field and its offset within a container. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -308,6 +323,7 @@ Returns the type of a field and its offset within a container. (ANSI version)
 </td>
 <td align="left" width="63%">
 Returns the type of a field and its offset within a container. (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -316,6 +332,7 @@ Returns the type of a field and its offset within a container. (Unicode version)
 </td>
 <td align="left" width="63%">
 Returns the function entry information for a function.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -324,6 +341,7 @@ Returns the function entry information for a function.
 </td>
 <td align="left" width="63%">
 Returns the executable image path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -332,6 +350,7 @@ Returns the executable image path.
 </td>
 <td align="left" width="63%">
 Returns the source filename and the line number within the source file of an instruction in the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -340,6 +359,7 @@ Returns the source filename and the line number within the source file of an ins
 </td>
 <td align="left" width="63%">
 Searches through the process's modules for one with the specified name.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -348,6 +368,7 @@ Searches through the process's modules for one with the specified name.
 </td>
 <td align="left" width="63%">
 Searches through the process's modules for one with the specified name.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -356,6 +377,7 @@ Searches through the process's modules for one with the specified name.
 </td>
 <td align="left" width="63%">
 Searches through the target's modules for one with the specified name.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -364,6 +386,7 @@ Searches through the target's modules for one with the specified name.
 </td>
 <td align="left" width="63%">
 Searches through the process's modules for one whose memory allocation includes the specified location.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -372,6 +395,7 @@ Searches through the process's modules for one whose memory allocation includes 
 </td>
 <td align="left" width="63%">
 Returns the name of the specified module.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -380,6 +404,7 @@ Returns the name of the specified module.
 </td>
 <td align="left" width="63%">
 Returns version information for the specified module.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -388,6 +413,7 @@ Returns version information for the specified module.
 </td>
 <td align="left" width="63%">
 Returns the name of the symbol at the specified location in the target's virtual address space.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -396,6 +422,7 @@ Returns the name of the symbol at the specified location in the target's virtual
 </td>
 <td align="left" width="63%">
 Returns the name of a symbol that is located near the specified location.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -404,6 +431,7 @@ Returns the name of a symbol that is located near the specified location.
 </td>
 <td align="left" width="63%">
 Returns the next symbol found in a symbol search.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -412,6 +440,7 @@ Returns the next symbol found in a symbol search.
 </td>
 <td align="left" width="63%">
 Returns the location of the instruction that corresponds to a specified line in the source code.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -421,6 +450,7 @@ Returns the location of the instruction that corresponds to a specified line in 
 <td align="left" width="63%">
 Returns the location of a symbol identified by name.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -429,6 +459,7 @@ Returns the location of a symbol identified by name.
 </td>
 <td align="left" width="63%">
 Returns a symbol group containing the symbols in the current target's scope.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -437,6 +468,7 @@ Returns a symbol group containing the symbols in the current target's scope.
 </td>
 <td align="left" width="63%">
 Queries symbol information and returns locations in the target's memory that correspond to lines in a source file. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -445,11 +477,13 @@ Queries symbol information and returns locations in the target's memory that cor
 </td>
 <td align="left" width="63%">
 Queries symbol information and returns locations in the target's memory that correspond to lines in a source file. (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetSourceEntriesByOffset</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -457,11 +491,13 @@ Queries symbol information and returns locations in the target's memory that cor
 <td align="left" width="37%"><b>GetSourceEntryBySourceEntry</b></td>
 <td align="left" width="63%">
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetSourceEntryOffsetRegions</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -469,11 +505,13 @@ Queries symbol information and returns locations in the target's memory that cor
 <td align="left" width="37%"><b>GetSourceEntryString</b></td>
 <td align="left" width="63%">
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetSourceEntryStringWide</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -483,6 +521,7 @@ Queries symbol information and returns locations in the target's memory that cor
 </td>
 <td align="left" width="63%">
 Maps each line in a source file to a location in the target's memory.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -491,6 +530,7 @@ Maps each line in a source file to a location in the target's memory.
 </td>
 <td align="left" width="63%">
 Returns an element from the source path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -499,6 +539,7 @@ Returns an element from the source path.
 </td>
 <td align="left" width="63%">
 Returns the source path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -507,6 +548,7 @@ Returns the source path.
 </td>
 <td align="left" width="63%">
 Returns the symbols whose names match a given pattern. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -516,6 +558,7 @@ Returns the symbols whose names match a given pattern. (ANSI version)
 <td align="left" width="63%">
 Returns the symbols whose names match a given pattern.
 (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -524,17 +567,20 @@ Returns the symbols whose names match a given pattern.
 </td>
 <td align="left" width="63%">
 Returns the symbols which are located at a specified address.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetSymbolEntryBySymbolEntry</b></td>
 <td align="left" width="63%">
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetSymbolEntryByToken</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -544,11 +590,13 @@ Returns the symbols which are located at a specified address.
 </td>
 <td align="left" width="63%">
 Returns the symbol entry information for a symbol.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetSymbolEntryOffsetRegions</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -558,6 +606,7 @@ Returns the symbol entry information for a symbol.
 </td>
 <td align="left" width="63%">
 Returns string information for the specified symbol. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -567,6 +616,7 @@ Returns string information for the specified symbol. (ANSI version)
 <td align="left" width="63%">
 Returns string information for the specified symbol.
 (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -575,6 +625,7 @@ Returns string information for the specified symbol.
 </td>
 <td align="left" width="63%">
 Returns the base address of module which contains the specified symbol.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -583,6 +634,7 @@ Returns the base address of module which contains the specified symbol.
 </td>
 <td align="left" width="63%">
 Returns the symbol path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -591,6 +643,7 @@ Returns the symbol path.
 </td>
 <td align="left" width="63%">
 Returns the type ID and module of the specified symbol.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -599,6 +652,7 @@ Returns the type ID and module of the specified symbol.
 </td>
 <td align="left" width="63%">
 Looks up the specified type and return its type ID.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -607,11 +661,13 @@ Looks up the specified type and return its type ID.
 </td>
 <td align="left" width="63%">
 Returns the name of the type symbol specified by its type ID and module.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>IsManagedModule</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -621,6 +677,7 @@ Returns the name of the type symbol specified by its type ID and module.
 </td>
 <td align="left" width="63%">
 Looks up a symbol by address and prints the symbol name and other symbol information to the debugger console.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -629,6 +686,7 @@ Looks up a symbol by address and prints the symbol name and other symbol informa
 </td>
 <td align="left" width="63%">
 Deletes the engine's symbol information for the specified module and reload these symbols as needed.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -637,6 +695,7 @@ Deletes the engine's symbol information for the specified module and reload thes
 </td>
 <td align="left" width="63%">
 Removes a synthetic module from the module list the debugger maintains for the current process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -645,6 +704,7 @@ Removes a synthetic module from the module list the debugger maintains for the c
 </td>
 <td align="left" width="63%">
 Removes a synthetic symbol from a module in the current process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -653,6 +713,7 @@ Removes a synthetic symbol from a module in the current process.
 </td>
 <td align="left" width="63%">
 Sets the executable image path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -661,11 +722,13 @@ Sets the executable image path.
 </td>
 <td align="left" width="63%">
 Sets the current scope to the scope of one of the frames on the call stack.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>SetScopeFromJitDebugInfo</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -675,6 +738,7 @@ Sets the current scope to the scope of one of the frames on the call stack.
 </td>
 <td align="left" width="63%">
 Sets the current scope to the scope of the stored event.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -683,6 +747,7 @@ Sets the current scope to the scope of the stored event.
 </td>
 <td align="left" width="63%">
 Sets the source path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -691,6 +756,7 @@ Sets the source path.
 </td>
 <td align="left" width="63%">
 Sets the symbol path.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -699,6 +765,7 @@ Sets the symbol path.
 </td>
 <td align="left" width="63%">
 Initializes a search for symbols whose names match a given pattern.
+
 </td>
 </tr>
 </table>Adds a synthetic module to the module list the debugger maintains for the current process.
@@ -839,6 +906,7 @@ Initializes a search for symbols whose names match a given pattern.
 
  
 
+
 ## -remarks
 
 
@@ -847,6 +915,7 @@ Initializes a search for symbols whose names match a given pattern.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -866,5 +935,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

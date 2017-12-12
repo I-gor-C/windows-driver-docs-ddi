@@ -7,7 +7,7 @@ old-location: print\devqueryprint.htm
 old-project: print
 ms.assetid: B3135A43-A328-4103-AB75-A37F02322F70
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: DevQueryPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ BOOL WINAPI DevQueryPrint(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

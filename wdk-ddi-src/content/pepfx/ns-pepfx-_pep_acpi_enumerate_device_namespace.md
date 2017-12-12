@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_enumerate_device_namespace.htm
 old-project: kernel
 ms.assetid: 61315EFB-DEA7-4CF2-97D3-EACD223AFB50
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, *PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE
+ms.date: 12/7/2017
+ms.keywords: _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, *PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure contains an enumeration of the objects in the namespace of the device.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE {
 
 [in] A PEPHANDLE value that identifies the device's registration for ACPI services. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification.
 
+
 ### -field TotalBufferSize
 
 [in, out] On input, the total size, in bytes, of the buffer that the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) allocated for this structure and for any <b>Objects</b> array elements that follow the structure. If the input value of <b>TotalBufferSize</b> is not large enough to contain this structure and all the <b>Objects</b> array elements, the PEP overwrites the input value with the required size and sets the <b>Status</b> member to STATUS_BUFFER_TOO_SMALL. For more information, see Remarks.
+
 
 ### -field RequestFlags
 
 [in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_EDN_FLAG_NONE (0x0).
 
+
 ### -field Status
 
 [out] An NTSTATUS value that indicates the status of the requested device-namespace enumeration. Set this member to STATUS_SUCCESS if the PEP succeeds in enumerating the objects in the device namespace. Set to STATUS_BUFFER_TOO_SMALL if the input value in the <b>TotalBufferSize</b> member indicates that the allocated buffer is not large enough to contain the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure and <b>Objects</b> array.
+
 
 ### -field ObjectCount
 
 [out] The number of elements in the <b>Objects</b> array.
 
+
 ### -field Objects
 
 [out] The first element in an array of <a href="kernel.pep_acpi_object_name_with_type">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a> structures that describe the objects in the ACPI namespace of the device. If this array contains more than one element, the additional array elements follow the end of the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure.
+
 
 ## -remarks
 This structure is used by the <a href="kernel.pep_notify_acpi_enumerate_device_namespace">PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE</a> notification. The <b>RequestFlags</b> and <b>TotalBufferSize</b> members contain input values supplied by PoFx when the notification is sent. The PEP may overwrite the <b>TotalBufferSize</b> input value with an output value if the input value is less than the required output buffer size. The <b>Status</b>, <b>ObjectCount</b>, and <b>Objects</b> members contain output values that the PEP writes to the structure.
@@ -88,19 +95,23 @@ If N is the number of objects listed in the ACPI namespace under this device, th
 
 If the input value specified in the <b>TotalBufferSize</b> member is less than the required size, the PEP overwrites the <b>TotalBufferSize</b> input value with the required size, and sets the <b>Status</b> member to STATUS_BUFFER_TOO_SMALL. In response, PoFx will allocate a buffer of the required size and send a second <a href="kernel.pep_notify_acpi_enumerate_device_namespace">PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE</a> notification to the PEP for this device.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +134,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

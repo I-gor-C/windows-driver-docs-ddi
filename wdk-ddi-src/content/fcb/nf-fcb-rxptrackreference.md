@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>RxpTrackReference</b> tracks requests to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these reference requests can be accessed by the logging system and WMI. 
 
 
+
 ## -syntax
 
 ````
@@ -60,29 +61,37 @@ VOID RxpTrackReference(
 The value that determines which reference request type is tracked. This value can be one of the following macros defined in <i>fcb.h</i>:
 
 
+
+
 ### -param RDBSS_REF_TRACK_SRVCALL
 
 A reference request on a SRV_CALL structure.
+
 
 ### -param RDBSS_REF_TRACK_NETROOT
 
 A reference request on a NET_ROOT structure.
 
+
 ### -param RDBSS_REF_TRACK_VNETROOT
 
 A reference request on a V_NET_ROOT structure.
+
 
 ### -param RDBSS_REF_TRACK_NETFOBX
 
 A reference request on an FOBX structure.
 
+
 ### -param RDBSS_REF_TRACK_NETFCB
 
 A reference request on an FCB structure.
 
+
 ### -param RDBSS_REF_TRACK_SRVOPEN
 
 A reference request on a SRV_OPEN structure.
+
 </dd>
 </dl>
 
@@ -90,16 +99,20 @@ A reference request on a SRV_OPEN structure.
 
 The name of the source file where this routine was called.
 
+
 ### -param Line [in]
 
 The line number in the source file where this routine was called.
+
 
 ### -param pInstance [in]
 
 A pointer to the structure to be referenced.
 
+
 ## -returns
 <b>RxpTrackReference</b> always returns <b>TRUE</b> on checked builds. 
+
 
 ## -remarks
 In checked builds, <b>RxpTrackReference</b> is used to track requests to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures. For retail builds, this function does nothing.
@@ -112,11 +125,13 @@ A number of macros are defined in <i>fcb.h</i> for debugging that are the prefer
 
 For retail builds, this function does nothing. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +142,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,9 +153,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -166,5 +184,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxpTrackReference function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

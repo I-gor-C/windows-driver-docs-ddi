@@ -7,7 +7,7 @@ old-location: storage\storportiscurrentosinstallationupgrade.htm
 old-project: storage
 ms.assetid: 68D944D9-1A52-4FB0-B2D7-9680AB1EDABB
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortIsCurrentOsInstallationUpgrade
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortIsCurrentOsInstallationUpgrade</b>  routine checks if the current installation of Windows is an upgrade from a previous version or not.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ ULONG StorPortIsCurrentOsInstallationUpgrade(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param Upgraded [out]
 
 The value pointed to by <i>Upgraded</i> is set to <b>TRUE</b> if the current operating system installation was upgraded from a previous version. Otherwise, it is set to <b>FALSE</b>.
+
 
 ## -returns
 The <b>StorPortIsCurrentOsInstallationUpgrade</b> routine returns one of these status codes:
@@ -76,6 +79,7 @@ The <b>StorPortIsCurrentOsInstallationUpgrade</b> routine returns one of these s
 
  
 
+
 ## -remarks
 
 
@@ -84,6 +88,7 @@ The <b>StorPortIsCurrentOsInstallationUpgrade</b> routine returns one of these s
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,14 +99,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,9 +120,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 IRQL == PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

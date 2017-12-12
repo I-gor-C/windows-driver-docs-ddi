@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_barrier_type.htm
 old-project: display
 ms.assetid: 3865DB8A-A920-42AC-B802-E5A3FB02014C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_RESOURCE_BARRIER_TYPE, D3D12DDI_RESOURCE_BARRIER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the type of resource barrier.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum D3D12DDI_RESOURCE_BARRIER_TYPE {
 
 A transition barrier that indicates a transition of a set of subresources between different usages. 
 
+
 ### -field D3D12DDI_RESOURCE_BARRIER_TYPE_UAV
 
 An unordered access view (UAV) barrier that indicates all UAV accesses to a resource must complete before any future UAV accesses can begin.
 
+
 ### -field D3D12DDI_RESOURCE_BARRIER_TYPE_0022_RANGED
 
 A ranged resource barrier.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A ranged resource barrier.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

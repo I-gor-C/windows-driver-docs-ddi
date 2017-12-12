@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputduplpresentflags.htm
 old-project: display
 ms.assetid: d80bcf24-4d53-4ec9-897d-d3243c7fda25
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_OUTPUTDUPLPRESENTFLAGS, D3DKMT_OUTPUTDUPLPRESENTFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes options for a <a href="direct3ddxgi.desktop_dup_api">Desktop Duplication API</a> swapchain present operation.
 
 
+
 ## -syntax
 
 ````
@@ -63,19 +64,27 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENTFLAGS {
 ### -field ProtectedContentBlankedOut
 
 Specifies whether the desktop image might contain protected content that was already blanked out (black) in the desktop image.
+
 <b>TRUE</b> if protected content was already blanked out; otherwise, <b>FALSE</b>.
+
 The application can use this information to notify the remote user that some of the desktop content might be protected and therefore not visible.
+
 
 ### -field RemoteSession
 
 Specifies if the present operation is directed to a remote session
+
 <b>TRUE</b> if the present operation is directed to a remote session; otherwise, <b>FALSE</b>.
+
 If <b>TRUE</b>, the present operation will go through a GDI path.
+
 
 ### -field FullScreenPresent
 
 Specifies if the present operation is to the full screen.
+
 <b>TRUE</b> if the present operation is to the full screen; otherwise, <b>FALSE</b>.
+
 
 ### -field Reserved
 
@@ -83,9 +92,11 @@ This member is reserved and should be set to zero. Setting this member to zero i
 
 
 
+
 ### -field Value
 
 A 32-bit value that identifies the DDA present options.
+
 
 ## -remarks
 
@@ -95,22 +106,27 @@ A 32-bit value that identifies the DDA present options.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

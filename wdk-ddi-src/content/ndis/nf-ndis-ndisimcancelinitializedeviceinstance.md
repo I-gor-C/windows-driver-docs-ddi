@@ -7,7 +7,7 @@ old-location: netvista\ndisimcancelinitializedeviceinstance.htm
 old-project: netvista
 ms.assetid: 809ffee1-b087-4bf0-ba8a-1ac0b2d02f2f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisIMCancelInitializeDeviceInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   NdisIMInitializeDeviceInstanceEx</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ The miniport driver handle that the
      NdisMRegisterMiniportDriver</a> function returned at the 
      <i>NdisMiniportDriverHandle</i> parameter.
 
+
 ### -param DeviceInstance [in]
 
 A pointer to an NDIS_STRING type that describes a caller-initialized counted string in the
@@ -72,11 +74,13 @@ A pointer to an NDIS_STRING type that describes a caller-initialized counted str
      later, NDIS defines the NDIS_STRING type as a 
      <a href="kernel.unicode_string">UNICODE_STRING</a> type.
 
+
 ## -returns
 <b>NdisIMCancelInitializeDeviceInstance</b> returns NDIS_STATUS_SUCCESS if it canceled the preceding call
      to 
      <b>NdisIMInitializeDeviceInstanceEx</b>. Otherwise, it returns NDIS_STATUS_FAILURE if there is no way to
      stop the initialization operation for the virtual miniport.
+
 
 ## -remarks
 An intermediate driver calls the 
@@ -90,11 +94,13 @@ An intermediate driver calls the
     driver can cancel the initialization for any virtual miniports that are associated with the removed
     driver.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +111,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -113,11 +120,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    (see 
    <b>
    NdisIMCancelInitializeDeviceInstance (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +137,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -138,14 +148,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_im_function">Irql_IM_Function</a>
@@ -170,5 +183,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMCancelInitializeDeviceInstance function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMCancelInitializeDeviceInstance function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

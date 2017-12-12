@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_description_type.htm
 old-project: display
 ms.assetid: ca50256b-2b37-4d39-ad4c-e2eaaa0adbb1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_MONITOR_DESCRIPTION_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _requires_same_
                 
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,20 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
                         
                     Indicates that an <b>IDDCX_MONITOR_DESCRIPTION_TYPE</b> variable has not yet been assigned a meaningful value.
 
+
 ### -field IDDCX_MONITOR_DESCRIPTION_TYPE_EDID
 
 
                         The monitor description is EdId
                     
 
+
 ### -field IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID
 
 
                         The monitor description is DisplayId
                     
+
 
 ## -remarks
 
@@ -82,6 +86,7 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

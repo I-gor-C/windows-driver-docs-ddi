@@ -41,6 +41,7 @@ req.irql:
 This structure is used to set the radio state. The driver, in the case of airplane mode, has to persist the radio state and restore it when airplane mode is disabled.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _NFCRM_SET_RADIO_STATE  {
 
 The <b>SystemStateUpdate</b>. If true, indicates that IOCTL_NFCRM_SET_RADIO_STATE is triggered by airplane mode.
 
+
 ### -field MediaRadioOn
 
 The <b>MediaRadioOn</b> flag either enables the system trigger (airplane mode if  <b>SystemStateUpdate</b> is true) or disables it.
+
 
 ## -remarks
 Airplane mode status is ON if  <b>SystemStateUpdate</b> is true and <b>MediaRadioOn</b> is false.
@@ -85,11 +88,13 @@ NFC status is ON if <b>SystemStateUpdate</b> is false and <b>MediaRadioOn</b> is
 
 NFC status is OFF if <b>SystemStateUpdate</b> is false and <b>MediaRadioOn</b> is false.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

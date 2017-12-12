@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_2ddi_devicefuncs.htm
 old-project: display
 ms.assetid: 4E082193-70BA-4F36-9001-2A12014F3AC3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM2_2DDI_DEVICEFUNCS, D3DWDDM2_2DDI_DEVICEFUNCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the callback functions that operate on a shader cache. 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct D3DWDDM2_2DDI_DEVICEFUNCS {
 
 A callback function that returns the size of a private shader cache session.
 
+
 ### -field pfnCreateShaderCacheSession
 
 A callback function that creates a shader cache session.
+
 
 ### -field pfnDestroyShaderCacheSession
 
 A callback function that destroys a shader cache session.
 
+
 ### -field pfnSetShaderCacheSession
 
 A callback function that sets a shader cache session.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ A callback function that sets a shader cache session.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

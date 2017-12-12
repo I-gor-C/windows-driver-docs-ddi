@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Notifies UFX about a non-recoverable hardware failure in the controller.
 
 
+
 ## -syntax
 
 ````
@@ -58,29 +59,36 @@ VOID UfxDeviceNotifyHardwareFailure(
 
 A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
 
+
 ### -param HardwareFailureContext [in, optional]
 
 Optional pointer to a client driver-defined <a href="buses.ufx_hardware_failure_context">UFX_HARDWARE_FAILURE_CONTEXT</a> structure containing controller-specific information about the hardware failure.  
 
+
 ## -returns
 This method does not return a value.
 
+
 ## -remarks
 The client driver calls <b>UfxDeviceNotifyHardwareFailure</b> when the controller has entered a non-recoverable hardware failure (such as PHY lockup). UFX can try resetting the controller to see if the controller can be recovered. The following example shows the syntax for the call:
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,9 +99,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

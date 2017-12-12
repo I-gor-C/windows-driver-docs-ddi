@@ -7,8 +7,8 @@ old-location: storage\scsiinquiry_out.htm
 old-project: storage
 ms.assetid: ac3ec079-61a5-42fe-a1c0-b7626e5f32d2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _ScsiInquiry_OUT, *PScsiInquiry_OUT, ScsiInquiry_OUT
+ms.date: 12/8/2017
+ms.keywords: _ScsiInquiry_OUT, ScsiInquiry_OUT, *PScsiInquiry_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The ScsiInquiry_OUT structure holds the output data for the <a href="storage.scsiinquiry">ScsiInquiry</a> method.
 
 
+
 ## -syntax
 
 ````
@@ -60,30 +61,37 @@ typedef struct _ScsiInquiry_OUT {
 
 The status of the <b>ScsiInquiry</b> operation. This member will contain 0 if the INQUIRY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the INQUIRY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.
 
+
 ### -field ResponseBufferSize
 
 The response buffer size, in bytes<i>.</i>
+
 
 ### -field ScsiStatus
 
 The status of the SCSI INQUIRY command.
 
+
 ### -field SenseBuffer
 
 A buffer that holds the SCSI sense data that the SCSI INQUIRY command received.
+
 
 ### -field ResponseBuffer
 
 A buffer that holds the response data that the SCSI INQUIRY command received. 
 
+
 ## -remarks
 You must implement this method.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +114,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiInquiry_OUT structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiInquiry_OUT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

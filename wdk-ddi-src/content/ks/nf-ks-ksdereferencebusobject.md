@@ -41,6 +41,7 @@ req.irql:
 Dereferences the bus Physical Device Object.
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ VOID KsDereferenceBusObject(
 
 Points to a header previously allocated by <b>KsAllocateDeviceHeader</b> that also contains the PnP device stack object.
 
+
 ## -returns
 None.
 
+
 ## -remarks
 This is used by filters that use the device header to keep track of the corresponding PnP object stack. This is normally called when closing a filter, if required by the bus for the given device. As an example, a software device would require such a call. This call matches a previous call to <a href="stream.ksreferencebusobject">KsReferenceBusObject</a> when opening the filter instance. The caller must have previously also called <b>KsSetDevicePnpAndBaseObject</b> in order to set the PnP device stack object. This would have been done in the PnP <b>AddDevice</b> function. The function calls the <b>DereferenceDeviceObject</b> method on the previously retrieved interface. The interface itself is released and freed when the device header is freed.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

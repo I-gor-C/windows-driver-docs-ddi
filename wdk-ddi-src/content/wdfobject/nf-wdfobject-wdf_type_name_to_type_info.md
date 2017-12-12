@@ -7,7 +7,7 @@ old-location: wdf\wdf_type_name_to_type_info.htm
 old-project: wdf
 ms.assetid: e0ebbfee-cf47-4bcc-a828-13d51ba14622
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_TYPE_NAME_TO_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This macro is reserved for internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ void WDF_GET_CONTEXT_TYPE_INFO(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -74,6 +76,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This struct is for internal use only.
 
 
+
 ## -struct-fields
 
 
@@ -52,6 +53,7 @@ This struct is for internal use only.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

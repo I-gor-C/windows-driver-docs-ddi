@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasValidateItemProperties </b>function validates a list of simple item properties against their current valid values.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ HRESULT _stdcall wiasValidateItemProperties(
 
 Pointer to a WIA item context.
 
+
 ### -param nPropSpec 
 
 Specifies the number of properties to validate.
+
 
 ### -param pPropSpec [in]
 
 Pointer to the first element of an array of PROPSPEC structures indicating the properties to validate.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).
+
 
 ## -remarks
 This function validates simple property values of the following types grouped by attribute.
@@ -87,11 +92,13 @@ VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, VT_R4, VT_R8, VT_BSTR
 
 The PROPSPEC structure is defined in the Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -102,14 +109,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +130,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +141,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

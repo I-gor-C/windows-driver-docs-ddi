@@ -42,19 +42,24 @@ req.product: Windows 10 or later.
 Returns a specified USB Descriptor.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 Pointer to a <a href="image.usbscan_get_descriptor">USBSCAN_GET_DESCRIPTOR</a> structure.
 
+
 ### -input-buffer-length
 Size of the input buffer.
+
 
 ### -output-buffer
 Pointer to a <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>, <a href="buses.usb_string_descriptor">USB_STRING_DESCRIPTOR</a>, or <a href="buses.usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a> structure.
 
+
 ### -output-buffer-length
 Size of the output buffer.
+
 
 ### -in-out-buffer
 
@@ -67,6 +72,7 @@ Size of the output buffer.
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 
@@ -95,11 +101,13 @@ For more information, see <a href="https://msdn.microsoft.com/f9216d3c-4930-4c26
 
 For more information about USB descriptors, see the <i>Universal Serial Bus Specification</i>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

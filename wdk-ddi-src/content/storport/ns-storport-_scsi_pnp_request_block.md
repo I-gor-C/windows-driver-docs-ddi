@@ -7,7 +7,7 @@ old-location: storage\scsi_pnp_request_block.htm
 old-project: storage
 ms.assetid: 0627065b-62c2-4df8-973c-b4fb5811296e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SCSI_PNP_REQUEST_BLOCK, *PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The<b>SCSI_PNP_REQUEST_BLOCK</b> structure is a special version of a <a href="storage.scsi_request_block">SCSI_REQUEST_BLOCK</a> that is used for plug and play (PNP) requests.
+
 
 
 ## -syntax
@@ -77,33 +78,41 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 
 The size, in bytes, of the <b>SCSI_PNP_REQUEST_BLOCK</b> structure. 
 
+
 ### -field Function
 
 The operation to perform. For the <b>SCSI_PNP_REQUEST_BLOCK</b> structure, this member is always set to SRB_FUNCTION_PNP. 
+
 
 ### -field SrbStatus
 
 The status of the completed request. The miniport driver should set this value before notifying the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="storage.storportnotification">StorPortNotification</a> routine with a notification type of <b>RequestComplete</b>. For a list of possible status values, see <a href="storage.scsi_request_block">SCSI_REQUEST_BLOCK</a>.  
 
+
 ### -field PnPSubFunction
 
 This member is not currently used. Miniport drivers ignore this member. 
+
 
 ### -field PathId
 
 The SCSI port or bus identifier for the request. This value is zero based. 
 
+
 ### -field TargetId
 
 The target controller or device identifier on the bus. 
+
 
 ### -field Lun
 
 The logical unit number (LUN) of the device. 
 
+
 ### -field PnPAction
 
 The plug and play action to perform. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,6 +126,7 @@ The plug and play action to perform. This member can have one of the following v
 </td>
 <td width="60%">
 Start the device.
+
 </td>
 </tr>
 <tr>
@@ -127,6 +137,7 @@ Start the device.
 </td>
 <td width="60%">
 Remove the device.
+
 </td>
 </tr>
 <tr>
@@ -137,6 +148,7 @@ Remove the device.
 </td>
 <td width="60%">
 Stop the device.
+
 </td>
 </tr>
 <tr>
@@ -147,6 +159,7 @@ Stop the device.
 </td>
 <td width="60%">
 Query the capabilities of the device.
+
 </td>
 </tr>
 <tr>
@@ -157,6 +170,7 @@ Query the capabilities of the device.
 </td>
 <td width="60%">
 Query the resource requirements for the device.
+
 </td>
 </tr>
 <tr>
@@ -167,6 +181,7 @@ Query the resource requirements for the device.
 </td>
 <td width="60%">
 Filter the resource requirements for the device. 
+
 </td>
 </tr>
 <tr>
@@ -177,65 +192,80 @@ Filter the resource requirements for the device.
 </td>
 <td width="60%">
 Surprise Removal of the device. This value was added in Windows 7.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field SrbFlags
 
 Miniport driver should ignore this member. 
+
 
 ### -field DataTransferLength
 
 Miniport driver should ignore this member. 
 
+
 ### -field TimeOutValue
 
 The interval, in seconds, that the request can execute before the Storport driver determines that the request has timed out. 
+
 
 ### -field DataBuffer
 
 Miniport driver should ignore this member. 
 
+
 ### -field SenseInfoBuffer
 
 Miniport driver should ignore this member. 
+
 
 ### -field NextSrb
 
 Miniport driver should ignore this member. 
 
+
 ### -field OriginalRequest
 
 Miniport driver should ignore this member. 
+
 
 ### -field SrbExtension
 
 A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="storage.storportgetphysicaladdress">StorPortGetPhysicalAddress</a> routine. 
 
+
 ### -field SrbPnPFlags
 
 The PNP flags. Currently, the only flag allowed is SRB_PNP_FLAGS_ADAPTER_REQUEST, which indicates that the PNP request is for the adapter, and not for one of the devices on the adapter. If this flag is set, the miniport driver should ignore the values in the <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.
+
 
 ### -field Reserved
 
 Reserved for system use.
 
+
 ### -field Reserved4
 
 Reserved for system use.
+
 
 ## -remarks
 The Storport driver sends <b>SCSI_PNP_REQUEST_BLOCK</b> requests to a miniport driver to notify the miniport driver of Windows plug and play events that affect storage devices that are connected to the adapter.
 
 The Storport driver calls <a href="storage.hwstorbuildio">HwStorBuildIo</a> to pass SRBs to the miniport driver. <b>HwStorBuildIo</b> checks the <b>Function</b> member of the SRB to determine the type of the SRB. If the <b>Function</b> member is set to SRB_FUNCTION_PNP, the SRB is a structure of type <b>SCSI_PNP_REQUEST_BLOCK</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -258,5 +288,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_PNP_REQUEST_BLOCK structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_PNP_REQUEST_BLOCK structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

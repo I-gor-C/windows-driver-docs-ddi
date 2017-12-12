@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL (see Remarks section)
 The <b>RtlInsertElementGenericTableFullAvl</b> routine adds a new entry to a generic table. 
 
 
+
 ## -syntax
 
 ````
@@ -61,38 +62,48 @@ PVOID RtlInsertElementGenericTableFullAvl(
 
 Pointer to a generic Adelson-Velsky/Landis (AVL) table (<a href="ifsk.rtl_avl_table">RTL_AVL_TABLE</a>) that was initialized by a call to <a href="ifsk.rtlinitializegenerictableavl">RtlInitializeGenericTableAvl</a>.
 
+
 ### -param Buffer [in]
 
 A caller-allocated buffer that contains the user data to copy into the new element. For more information, see <a href="ifsk.rtlinitializegenerictableavl">RtlInitializeGenericTableAvl</a>. 
+
 
 ### -param BufferSize [in]
 
 Size in bytes of data in <i>Buffer.</i>
 
+
 ### -param NewElement [out, optional]
 
 On output, a value of <b>TRUE</b> means the insertion of the new element in the generic table was successful. A value of <b>FALSE</b> means the insertion failed.
+
 
 ### -param NodeOrParent [in]
 
 The search result of a previous call to <a href="ifsk.rtllookupelementgenerictablefullavl">RtlLookupElementGenericTableFullAvl</a>. This value indicates to the <b>RtlInsertElementGenericTableFullAvl</b> routine whether the tree is currently empty, or if not empty, whether to insert the new entry to the left or the right of the parent entry. The <i>SearchResult</i> parameter can have any of the following values:
 
 
+
+
 ### -param TableEmptyTree
 
 The tree was empty. The contents of <i>NodeOrParent</i> has <i>not</i> been altered.
+
 
 ### -param TableFoundNode
 
 The <b>RtlInsertElementGenericTableFullAvl</b> routine found a table entry whose key matches the data in <i>Buffer</i>. <i>NodeOrParent</i> contains a pointer to the matched entry.
 
+
 ### -param TableInsertAsLeft
 
 The <b>RtlInsertElementGenericTableFullAvl</b> routine did <i>not</i> find a table entry whose key matches the data in <i>Buffer</i>. If the entry that <b>RtlInsertElementGenericTableFullAvl</b> searched for were in the table, it would be the left child of the entry that <i>NodeOrParent</i> points to.
 
+
 ### -param TableInsertAsRight
 
 The <b>RtlInsertElementGenericTableFullAvl</b> routine did <i>not</i> find a table entry whose key matches the data in <i>Buffer</i>. If the entry that <b>RtlInsertElementGenericTableFullAvl</b> searched for were in the table, it would be the right child of the entry that <i>NodeOrParent</i> points to.
+
 </dd>
 </dl>
 
@@ -100,8 +111,10 @@ The <b>RtlInsertElementGenericTableFullAvl</b> routine did <i>not</i> find a tab
 
 A pointer to a table entry. If the <b>RtlInsertElementGenericTableFullAvl</b> routine matches an entry, <i>NodeOrParent</i> points to the matched entry. If the <b>RtlInsertElementGenericTableFullAvl</b> routine fails to find a match, <i>NodeOrParent</i> points to the entry that would be the parent of the entry that <b>RtlInsertElementGenericTableFullAvl</b> routine was searching for.
 
+
 ## -returns
 <b>RtlInsertElementGenericTableFullAvl</b> returns a pointer to the user data for the newly inserted entry, or the user data for a matching entry that is already in the generic table. If no matching entry is found, but <b>RtlInsertElementGenericTableFullAvl</b> cannot insert the new entry (for example, because the <i>AllocateRoutine</i> fails), <b>RtlInsertElementGenericTableFullAvl</b> returns <b>NULL</b>. 
+
 
 ## -remarks
 To insert an entry, <b>RtlInsertElementGenericTableFullAvl</b> calls the <i>CompareRoutine</i> and <i>AllocateRoutine</i> that were registered when the generic table was initialized by <a href="ifsk.rtlinitializegenerictableavl">RtlInitializeGenericTableAvl</a>. After inserting the new entry, <b>RtlInsertElementGenericTableFullAvl</b> rebalances the AVL link tree.
@@ -128,11 +141,13 @@ The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable.
 
 The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pageable code. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -143,14 +158,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -161,6 +179,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -171,6 +190,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -181,9 +201,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -198,5 +220,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInsertElementGenericTableFullAvl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

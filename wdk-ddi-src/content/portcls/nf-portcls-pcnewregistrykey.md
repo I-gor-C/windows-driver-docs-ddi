@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PcNewRegistryKey</b> function opens or creates a new registry key and creates an <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a> object to represent the key. The caller accesses the key through this object.
 
 
+
 ## -syntax
 
 ````
@@ -64,40 +65,50 @@ NTSTATUS PcNewRegistryKey(
 
 Output pointer to the registry-key object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs the pointer to the <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a> object. The object represents the registry key being opened or created. Specify a valid, non-<b>NULL</b> pointer value for this parameter.
 
+
 ### -param OuterUnknown [in, optional]
 
 Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the <i>OutRegistryKey</i> object. Unless aggregation is required, set this parameter to <b>NULL</b>.
+
 
 ### -param RegistryKeyType [in]
 
 Specifies the type of registry key that the caller wants to create or open. For more information, see the following Remarks section.
 
+
 ### -param DesiredAccess [in]
 
 Specifies an access-control mask. This parameter is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>. It indicates the type of access that the caller is requesting to the registry key that is to be opened or created. For more information, see the following Remarks section.
+
 
 ### -param DeviceObject [in, optional]
 
 Pointer to the adapter driver's device object. This pointer is cast to type PVOID. If <i>RegistryKeyType</i> is any value other than <b>GeneralRegistryKey</b>, this parameter must point to a valid, initialized system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>. If the value of <i>RegistryKeyType</i> is <b>GeneralRegistryKey</b>, the <b>PcNewRegistryKey</b> function does not use this parameter. For more information, see the following Remarks section.
 
+
 ### -param SubDevice [in, optional]
 
 Specifies the aspect of the device that is to be offered to clients. Adapter drivers must assign the value <b>NULL</b> to this parameter.
+
 
 ### -param ObjectAttributes [in, optional]
 
 Pointer to the object attributes of the key being created or opened. If <i>RegistryKeyType</i> has the value <b>GeneralRegistryKey</b>, this parameter must point to a valid, initialized system structure of type <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> with a valid <i>ObjectName</i> string for the key; otherwise, the function does not use this parameter. For more information, see the following Remarks section.
 
+
 ### -param CreateOptions [in, optional]
 
 Specifies the create options. Can be zero if none are desired. If <i>RegistryKeyType</i> is not <b>GeneralRegistryKey</b>, the <b>PcNewRegistryKey</b> function ignores this parameter. For more information, see the following Remarks section.
+
 
 ### -param Disposition [out, optional]
 
 Pointer to a variable that receives a value indicating whether a key was created or an existing key was opened. This parameter is optional and can be specified as <b>NULL</b>. If <i>RegistryKeyType</i> is any value other than <b>GeneralRegistryKey</b>, the <b>PcNewRegistryKey</b> function ignores this parameter. For more information, see the following Remarks section.
 
+
 ## -returns
 <b>PcNewRegistryKey</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.
+
 
 ## -remarks
 If the <i>RegistryKeyType</i> parameter's value is <b>GeneralRegistryKey</b>, then the <b>PcNewRegistryKey</b> function either opens an existing key or creates a new key in the registry, as indicated by the value that the function outputs through the <i>Disposition</i> parameter. If the key is of any type other than <b>GeneralRegistryKey</b>, then the function opens an already existing key that was previously created during Plug and Play device enumeration.
@@ -138,11 +149,13 @@ The <b>PcNewRegistryKey</b> function is similar to the <a href="audio.iport_newr
 
 The <i>OutRegistryKey</i> and <i>OuterUnknown</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -153,14 +166,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The PortCls system driver implements the PcNewRegistryKey function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,6 +187,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -181,9 +198,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -213,5 +232,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcNewRegistryKey function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 13D8152C-FE7E-46EB-9C7F-9CA0135A4B76
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
+ms.keywords: _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -64,17 +65,21 @@ typedef enum _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE {
 
 Indicates that the minidriver is ready for the next stream data request.
 
+
 ### -field ReadyForNextStreamControlRequest
 
 Indicates that the minidriver is ready for the next stream control request.
+
 
 ### -field HardwareStarved
 
 Indicates that the hardware is starved for data.
 
+
 ### -field StreamRequestComplete
 
 Indicates that the specified stream SRB has completed.
+
 
 ### -field SignalMultipleStreamEvents
 
@@ -96,6 +101,7 @@ Indicates that the specified stream SRB has completed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

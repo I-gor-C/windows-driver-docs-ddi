@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 77101494-97bb-4049-8c6c-cdb4ee82f312
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER
+ms.keywords: tagKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KS_BITMAPINFOHEADER structure describes details about the video stream, such as image dimensions and pixel depth. 
 
 
+
 ## -syntax
 
 ````
@@ -66,54 +67,67 @@ typedef struct tagKS_BITMAPINFOHEADER {
 
 Specifies the size of the structure in bytes.
 
+
 ### -field biWidth
 
 Specifies the width of the bitmap in pixels.
+
 
 ### -field biHeight
 
 Specifies the height of the bitmap in pixels.
 
+
 ### -field biPlanes
 
 Specifies the number of planes. This is always set to 1.
+
 
 ### -field biBitCount
 
 Specifies the color bits per pixel. For example, 1, 4, 8, or 24.
 
+
 ### -field biCompression
 
 Specifies the compression scheme.
+
 
 ### -field biSizeImage
 
 Specifies the size of bitmap bits in bytes. (Only required if using compression.)
 
+
 ### -field biXPelsPerMeter
 
 Specifies the horizontal resolution in pixels per meter.
+
 
 ### -field biYPelsPerMeter
 
 Specifies the vertical resolution in pixels per meter.
 
+
 ### -field biClrUsed
 
 Specifies the number of colors used in the image.
+
 
 ### -field biClrImportant
 
 Specifies the number of important colors in the image.
 
+
 ## -remarks
 This is the same structure as the user-mode GDI bitmap header (BITMAPINFOHEADER) structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

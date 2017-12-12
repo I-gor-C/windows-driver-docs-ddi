@@ -7,7 +7,7 @@ old-location: display\iddcx_path.htm
 old-project: display
 ms.assetid: c0126718-6bb0-493c-9fdd-78ae372f8fd4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_PATH,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -63,11 +64,13 @@ typedef struct IDDCX_PATH {
                      Total size of the structure.
                  
 
+
 ### -field MonitorObject
 
 
                      The handle the driver provides to identify the monitor this path is targeted at.
                  
+
 
 ### -field Flags
 
@@ -75,10 +78,12 @@ typedef struct IDDCX_PATH {
                      Contains flags for this path, like the path's active state and whether it changed.
                  
 
+
 ### -field TargetVideoSignalInfo
 
 The details of the target mode signal. 
                  
+
 
 ## -remarks
 The <a href="display.displayconfig_video_signal_info">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a> value <b>vSyncFreq</b> is the Vsync rate between the Indirect Display device and the connected monitor.  <b>vSyncFreqDivider</b> is used to calculate the rate at which the OS will update the desktop image.
@@ -87,11 +92,13 @@ The desktop update rate will be calculated by the formula: <a href="display.disp
 
 The <a href="display.displayconfig_video_signal_info">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a>  value <b>vSyncFreqDivider</b> cannot be zero
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>ExInitializeWorkItem</b> initializes a work-queue item with a caller-supplied context and callback routine to be queued for execution when a system worker thread is given control. 
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ VOID ExInitializeWorkItem(
 
 Pointer to a caller-allocated WORK_QUEUE_ITEM structure to be initialized. This structure must be allocated from nonpaged pool. The callback routine specified in the <i>Routine</i> parameter is responsible for freeing this work item when it is no longer needed by calling <a href="kernel.exfreepool">ExFreePool</a> or <a href="kernel.exfreepoolwithtag">ExFreePoolWithTag</a>. 
 
+
 ### -param Routine [in]
 
 Pointer to a caller-defined routine that will be called to process the work item. This routine will be called in the context of a system thread at IRQL PASSIVE_LEVEL. This routine is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -77,9 +80,11 @@ Pointer to a caller-defined routine that will be called to process the work item
 </table></span></div>
 
 
+
 ### -param Parameter
 
 Context information pointer that was passed in the <i>Context</i> parameter. 
+
 </dd>
 </dl>
 
@@ -87,8 +92,10 @@ Context information pointer that was passed in the <i>Context</i> parameter.
 
 Pointer to caller-supplied context information to be passed to the callback routine specified in the <i>Routine</i> parameter. 
 
+
 ## -returns
 None 
+
 
 ## -remarks
 <b>ExInitializeWorkItem</b> initializes the work item with the specified callback routine and context pointer and <b>NULL</b> list pointers. 
@@ -113,6 +120,7 @@ Work items are a limited resource, and drivers should only allocate them as need
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +131,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +142,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -165,5 +176,8 @@ Any level
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ExInitializeWorkItem routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

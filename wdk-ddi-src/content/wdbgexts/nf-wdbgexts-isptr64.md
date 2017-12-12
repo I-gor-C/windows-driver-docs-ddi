@@ -7,7 +7,7 @@ old-location: debugger\isptr64.htm
 old-project: debugger
 ms.assetid: 0474a8dc-e2e3-4c84-8058-6229bf0e9d62
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IsPtr64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IsPtr64</b> function determines if the target uses 64-bit pointers.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ The function returns <b>TRUE</b> if the target uses 64-bit pointers; <b>FALSE</b
 
 The function returns <b>TRUE</b> if the target uses 64-bit pointers; <b>FALSE</b>, otherwise.
 
+
 ## -remarks
 
 
@@ -67,6 +69,7 @@ The function returns <b>TRUE</b> if the target uses 64-bit pointers; <b>FALSE</b
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +80,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

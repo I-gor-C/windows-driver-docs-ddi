@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_importance.htm
 old-project: display
 ms.assetid: a48eda3c-84cb-4413-a325-79c330be3f18
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE, D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE enumeration indicates the importance of a video present path.
 
 
+
 ## -syntax
 
 ````
@@ -66,45 +67,56 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE {
 
 Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_VPPI_PRIMARY
 
 Indicates importance level 1.
+
 
 ### -field D3DKMDT_VPPI_SECONDARY
 
 Indicates importance level 2.
 
+
 ### -field D3DKMDT_VPPI_TERTIARY
 
 Indicates importance level 3.
+
 
 ### -field D3DKMDT_VPPI_QUATERNARY
 
 Indicates importance level 4.
 
+
 ### -field D3DKMDT_VPPI_QUINARY
 
 Indicates importance level 5.
+
 
 ### -field D3DKMDT_VPPI_SENARY
 
 Indicates importance level 6.
 
+
 ### -field D3DKMDT_VPPI_SEPTENARY
 
 Indicates importance level 7.
+
 
 ### -field D3DKMDT_VPPI_OCTONARY
 
 Indicates importance level 8.
 
+
 ### -field D3DKMDT_VPPI_NONARY
 
 Indicates importance level 9.
 
+
 ### -field D3DKMDT_VPPI_DENARY
 
 Indicates importance level 10.
+
 
 ## -remarks
 As the numeric value of a D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE value increases, the importance decreases. For example, level 3 is less important than level 2.
@@ -115,19 +127,23 @@ It is useful to rank the video present paths in a video present network (VidPN) 
 
 The <b>ImportanceOrdinal</b> member of the <a href="display.d3dkmdt_vidpn_present_path">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE value. Path importance ordinal numbers are unique within a given VidPN topology. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,5 +160,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

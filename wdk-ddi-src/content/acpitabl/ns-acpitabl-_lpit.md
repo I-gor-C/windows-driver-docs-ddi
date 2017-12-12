@@ -41,6 +41,7 @@ req.irql:
 Defines an LPI ACPI table.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _LPIT {
 
 A header.
 
+
 ### -field LpiStates
 
 An array of states.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ An array of states.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

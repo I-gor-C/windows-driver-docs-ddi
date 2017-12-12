@@ -7,7 +7,7 @@ old-location: kernel\adapterlistcontrol.htm
 old-project: kernel
 ms.assetid: 9fb49710-5d8c-4376-9898-7f0ae570ee94
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <i>AdapterListControl</i> routine starts a direct memory access (DMA) scatter/gather operation.
 
 
+
 ## -prototype
 
 ````
@@ -63,23 +64,28 @@ VOID AdapterListControl(
 
 Caller-supplied pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <a href="kernel.adddevice">AddDevice</a> routine.
 
+
 ### -param Irp [in]
 
 Caller-supplied pointer to an <a href="kernel.irp">IRP</a> structure that describes the I/O operation, if the driver has a <a href="kernel.startio">StartIo</a> routine. Otherwise, not used.
+
 
 ### -param ScatterGather [in]
 
 Caller-supplied pointer to a <a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a> structure describing scatter/gather regions.
 
+
 ### -param Context [in]
 
 Caller-supplied pointer to driver-defined context information, specified in a previous call to <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>. 
 
+
 ## -returns
 None
 
+
 ## -remarks
-To register an <i>AdapterListControl</i> routine for a specific device object, a driver must call <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> to obtain an adapter object, then call <a href="kernel.getscattergatherlist">GetScatterGatherList</a> to request use of the adapter and to supply the <i>AdapterListControl</i> routine's address. When the adapter is free, the system calls the <i>AdapterListControl</i> routine.
+To register an <i>AdapterListControl</i> routine for a specific device object, a driver must call <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> to obtain an adapter object, then call <a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a> to request use of the adapter and to supply the <i>AdapterListControl</i> routine's address. When the adapter is free, the system calls the <i>AdapterListControl</i> routine.
 
 To define an <i>AdapterListControl</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
 
@@ -91,11 +97,13 @@ The DRIVER_LIST_CONTROL function type is defined in the Wdm.h header file. To mo
 
 For detailed information about implementing an <i>AdapterListControl</i> routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565510">Using Scatter/Gather DMA</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +114,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +125,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Called at DISPATCH_LEVEL.
+
 </td>
 </tr>
 </table>

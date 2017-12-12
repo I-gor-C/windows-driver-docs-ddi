@@ -7,7 +7,7 @@ old-location: print\iprintschemacapabilities_interface.htm
 old-project: print
 ms.assetid: A148C1B4-99A3-4AF3-B2D6-73684978425F
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 Provides the primary method to access PrintCapabilities.
+
 
 
 ## -inheritance
@@ -85,6 +86,7 @@ Gets the imageable area information of the printer.
 
  
 
+
 ## -members
 The <b>IPrintSchemaCapabilities</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -98,6 +100,7 @@ The <b>IPrintSchemaCapabilities</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Gets a named feature from the PrintCapabilities, by name and full namespace URI.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -106,6 +109,7 @@ Gets a named feature from the PrintCapabilities, by name and full namespace URI.
 </td>
 <td align="left" width="63%">
 Gets a feature from the PrintCapabilities based on a given key name.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -114,6 +118,7 @@ Gets a feature from the PrintCapabilities based on a given key name.
 </td>
 <td align="left" width="63%">
 Gets all the options of a feature.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -122,6 +127,7 @@ Gets all the options of a feature.
 </td>
 <td align="left" width="63%">
 Gets the selected option for a feature in <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>.
+
 </td>
 </tr>
 </table>Gets a named feature from the PrintCapabilities, by name and full namespace URI.
@@ -146,12 +152,15 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaCapabilities</b> 
 
 <a href="print.iprintschemacapabilities_get_jobcopiesalldocumentsmaxvalue">JobCopiesAllDocumentsMaxValue</a>
 
+
 </td>
 <td align="left" width="10%">
 Read-only
+
 </td>
 <td align="left" width="63%">
 Gets the <b>JobCopiesAllDocuments</b> parameter maximum value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -159,12 +168,15 @@ Gets the <b>JobCopiesAllDocuments</b> parameter maximum value.
 
 <a href="print.iprintschemacapabilities_jobcopiesalldocumentsminvalue">JobCopiesAllDocumentsMinValue</a>
 
+
 </td>
 <td align="left" width="10%">
 Read-only
+
 </td>
 <td align="left" width="63%">
 Gets the <b>JobCopiesAllDocuments</b> parameter minimum value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -172,12 +184,15 @@ Gets the <b>JobCopiesAllDocuments</b> parameter minimum value.
 
 <a href="print.iprintschemacapabilities_pageimageablesize">PageImageableSize</a>
 
+
 </td>
 <td align="left" width="10%">
 Read-only
+
 </td>
 <td align="left" width="63%">
 Gets the imageable area information of the printer.
+
 </td>
 </tr>
 </table>
@@ -206,30 +221,37 @@ Gets the imageable area information of the printer.
 
  
 
+
 ## -remarks
 To obtain an IXMLDOMDocument2 object for the PrintCapabilities object, you must first dereference the <i>ppXmlNode</i> parameter of the <a href="print.iprintschemaelement_xmlnode">XmlNode</a> property (using *ppXmlNode ). This retrieves a pointer to an interface of type <b>IUnknown</b>. Use this pointer to  call the <b>QueryInterface</b> method of the PrintCapabilities object to access the underlying  IXMLDOMDocument2 object.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -259,5 +281,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaCapabilities interface%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaCapabilities interface%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

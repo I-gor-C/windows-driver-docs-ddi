@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The PCI_EXPRESS_PME_REQUESTOR_ID structure describes the identifier of the requester of a power management event (PME).
 
 
+
 ## -syntax
 
 ````
@@ -61,28 +62,34 @@ typedef union _PCI_EXPRESS_PME_REQUESTOR_ID {
 
 The function number of the requester.
 
+
 ### -field DeviceNumber
 
 The device number of the requester.
+
 
 ### -field BusNumber
 
 The bus number of the requester.
 
+
 ### -field AsUSHORT
 
 A USHORT representation of the contents of the PCI_EXPRESS_PME_REQUESTOR_ID structure.
+
 
 ## -remarks
 The PCI_EXPRESS_PME_REQUESTOR_ID structure is available in Windows Server 2008 and later versions of Windows.
 
 A PCI_EXPRESS_PME_REQUESTOR_ID structure is contained in the <b>PMERequestorId</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537477">PCI_EXPRESS_ROOT_STATUS_REGISTER</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,5 +106,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_EXPRESS_PME_REQUESTOR_ID union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

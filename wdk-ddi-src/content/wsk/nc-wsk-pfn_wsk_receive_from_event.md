@@ -7,7 +7,7 @@ old-location: netvista\wskreceivefromevent.htm
 old-project: netvista
 ms.assetid: 1cdb8a70-54fe-44a6-a16c-71cbf6a49ef2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   have been received on a datagram socket.
 
 
+
 ## -prototype
 
 ````
@@ -67,10 +68,13 @@ A pointer to the socket context for the datagram socket that has received the da
      <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a> function to create the datagram
      socket.
 
+
 ### -param Flags [in]
 
 A ULONG value that contains a bitwise OR of a combination of the following flags:
      
+
+
 
 
 ### -param MSG_BCAST
@@ -78,10 +82,12 @@ A ULONG value that contains a bitwise OR of a combination of the following flags
 The datagrams were received as a link-layer broadcast or with a destination transport address
        that is a broadcast address.
 
+
 ### -param MSG_MCAST
 
 The datagrams were received with a destination transport address that is a multicast
        address.
+
 
 ### -param WSK_FLAG_AT_DISPATCH_LEVEL
 
@@ -89,6 +95,7 @@ The WSK subsystem called the
        <i>WskReceiveFromEvent</i> event callback function at IRQL = DISPATCH_LEVEL. If this flag is not set,
        the WSK subsystem might have called the 
        <i>WskReceiveFromEvent</i> event callback function at any IRQL &lt;= DISPATCH_LEVEL.
+
 </dd>
 </dl>
 
@@ -100,6 +107,7 @@ A pointer to a linked list of
      the WSK application must call the 
      <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
      socket as soon as possible.
+
 
 ## -returns
 A WSK application's 
@@ -154,6 +162,7 @@ If the WSK application enabled the
 
  
 
+
 ## -remarks
 The WSK subsystem calls a WSK application's 
     <i>WskReceiveFromEvent</i> event callback function when new datagrams are received on a datagram socket
@@ -187,20 +196,24 @@ The WSK subsystem calls a WSK application's
 
 A WSK application's <i>WskReceiveFromEvent</i> event callback function must not wait for completion of other WSK requests in the context of WSK completion or event callback functions. The callback can initiate other WSK requests (assuming that it doesn't spend too much time at DISPATCH_LEVEL), but it must not wait for their completion even when the callback is called at IRQL = PASSIVE_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -211,9 +224,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -246,5 +261,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_FROM_EVENT callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_FROM_EVENT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

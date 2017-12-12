@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Storduid.h header
 
+## -description
 
 This header is used by Storage. For more information, see
 - [Storage](../_storage/index.md)
@@ -18,11 +23,11 @@ Storduid.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [STORAGE_DEVICE_LAYOUT_SIGNATURE structure](ns-storduid--storage-device-layout-signature.md) | The STORAGE_DEVICE_LAYOUT_SIGNATURE structure defines a device layout structure. |
-| [STORAGE_DEVICE_UNIQUE_IDENTIFIER structure](ns-storduid--storage-device-unique-identifier.md) | The STORAGE_DEVICE_UNIQUE_IDENTIFIER structure defines a device unique identifier (DUID). |
+| [_STORAGE_DEVICE_LAYOUT_SIGNATURE structure](ns-storduid-_storage_device_layout_signature.md) | The STORAGE_DEVICE_LAYOUT_SIGNATURE structure defines a device layout structure. |
+| [_STORAGE_DEVICE_UNIQUE_IDENTIFIER structure](ns-storduid-_storage_device_unique_identifier.md) | The STORAGE_DEVICE_UNIQUE_IDENTIFIER structure defines a device unique identifier (DUID). |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [DUID_MATCH_STATUS enumeration](ne-storduid--duid-match-status.md) | The DUID_MATCH_STATUS enumeration lists the status values that the CompareStorageDuids routine returns. |
+| [_DUID_MATCH_STATUS enumeration](ne-storduid-_duid_match_status.md) | The DUID_MATCH_STATUS enumeration lists the status values that the CompareStorageDuids routine returns. |

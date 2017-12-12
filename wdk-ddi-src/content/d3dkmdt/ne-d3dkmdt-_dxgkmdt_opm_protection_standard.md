@@ -7,7 +7,7 @@ old-location: display\dxgkmdt_opm_protection_standard.htm
 old-project: display
 ms.assetid: 9f079edf-312a-4218-8b73-0325ccca5a05
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKMDT_OPM_PROTECTION_STANDARD, DXGKMDT_OPM_PROTECTION_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGKMDT_OPM_PROTECTION_STANDARD enumeration indicates the type of television signal for which a video output supports protection.
 
 
+
 ## -syntax
 
 ````
@@ -72,69 +73,86 @@ typedef enum _DXGKMDT_OPM_PROTECTION_STANDARD {
 
 Indicates a protected television signal type other than those given in the following constants of this enumeration. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_NONE
 
 Indicates that the video output does not support protection for any television signals. 
+
 
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_IEC61880_525I
 
 Indicates that the video output supports the IEC61880_525I standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_IEC61880_2_525I
 
 Indicates that the video output supports the IEC61880_2_525I standard. 
+
 
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_IEC62375_625P
 
 Indicates that the video output supports the IEC62375_625P standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_EIA608B_525
 
 Indicates that the video output supports the EIA608B_525 standard. 
+
 
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_EN300294_625I
 
 Indicates that the video output supports the EN300294_625I standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_525P
 
 Indicates that the video output supports the CEA805A_TYPEA_525P standard. 
+
 
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_750P
 
 Indicates that the video output supports the CEA805A_TYPEA_750P standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_1125I
 
 Indicates that the video output supports the CEA805A_TYPEA_1125I standard. 
+
 
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_525P
 
 Indicates that the video output supports the CEA805A_TYPEB_525P standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_750P
 
 Indicates that the video output supports the CEA805A_TYPEB_750P standard. 
+
 
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_1125I
 
 Indicates that the video output supports the CEA805A_TYPEB_1125I standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_ARIBTRB15_525I
 
 Indicates that the video output supports the ARIBTRB15_525I standard. 
+
 
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_ARIBTRB15_525P
 
 Indicates that the video output supports the ARIBTRB15_525P standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_ARIBTRB15_750P
 
 Indicates that the video output supports the ARIBTRB15_750P standard. 
 
+
 ### -field DXGKMDT_OPM_PROTECTION_STANDARD_ARIBTRB15_1125I
 
 Indicates that the video output supports the ARIBTRB15_1125I standard. 
+
 
 ## -remarks
 
@@ -144,14 +162,17 @@ Indicates that the video output supports the ARIBTRB15_1125I standard.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -180,5 +201,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_PROTECTION_STANDARD enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_PROTECTION_STANDARD enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

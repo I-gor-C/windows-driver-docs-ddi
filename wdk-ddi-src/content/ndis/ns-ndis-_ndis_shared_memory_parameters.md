@@ -7,7 +7,7 @@ old-location: netvista\ndis_shared_memory_parameters.htm
 old-project: netvista
 ms.assetid: 286b08f6-179e-426e-ae65-b108529d049a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_SHARED_MEMORY_PARAMETERS structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The NDIS_SHARED_MEMORY_PARAMETERS structure specifies the shared memory parameters for a shared
   memory allocation request.
+
 
 
 ## -syntax
@@ -68,18 +69,25 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 ### -field Header
 
 The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the NDIS_SHARED_MEMORY_PARAMETERS structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
+
+
 
 
 ### -field NDIS_SHARED_MEMORY_PARAMETERS_REVISION_2
 
 Added <b>VPortId</b> for NDIS 6.30.
+
 Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_2.
+
 
 ### -field NDIS_SHARED_MEMORY_PARAMETERS_REVISION_1
 
 Original version for NDIS 6.20.
+
 Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_1.
+
 </dd>
 </dl>
 
@@ -89,9 +97,12 @@ A UCHAR value that contains a bitwise OR of the following value:
      
 
 
+
+
 ### -field NDIS_SHARED_MEM_PARAMETERS_CONTIGOUS
 
 The shared memory is in a contiguous block of memory.
+
 </dd>
 </dl>
 
@@ -100,6 +111,7 @@ The shared memory is in a contiguous block of memory.
 An NDIS_RECEIVE_QUEUE_ID value that contains a virtual machine queue (VMQ) or single root I/O virtualization (SR-IOV) receive queue identifier. This identifier is an
      integer between zero and the number of queues that the miniport adapter supports. A value of NDIS_DEFAULT_RECEIVE_QUEUE_ID specifies
      the default receive queue.
+
 <div class="alert"><b>Note</b>  Starting with Windows Server 2012, the SR-IOV interface only supports the default receive queue on both default and nondefault virtual ports (VPorts). Miniport drivers that support the SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
 <div> </div>
 
@@ -110,9 +122,11 @@ An NDIS_HANDLE value that identifies a block of shared memory. NDIS provides thi
      <a href="netvista.ndisallocatesharedmemory">
      NdisAllocateSharedMemory</a> function.
 
+
 ### -field PreferredNode
 
 A NODE_REQUIREMENT value that indicates the preferred node to use while allocating memory. If the driver does not have a preference, then the value must be set to MM_ANY_NODE_OK.
+
 
 ### -field Usage
 
@@ -120,9 +134,11 @@ An
      <a href="netvista.ndis_shared_memory_usage">NDIS_SHARED_MEMORY_USAGE</a> enumeration
      value that specifies the purpose of the shared memory.
 
+
 ### -field Length
 
 A ULONG value that contains the length, in bytes, of the shared memory block.
+
 
 ### -field VirtualAddress
 
@@ -130,18 +146,22 @@ A PVOID value that contains the base virtual address of the shared memory. NDIS 
      value before it returns from the 
      <b>NdisAllocateSharedMemory</b> function.
 
+
 ### -field SGListBufferLength
 
 A ULONG value that contains the length, in bytes, of the scatter gather list buffer.
+
 
 ### -field SGListBuffer
 
 A pointer to a 
      <a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a> structure.
 
+
 ### -field VPortId
 
 An NDIS_NIC_SWITCH_VPORT_ID value that specifies a virtual port (VPort) identifier on which the shared memory is to be allocated. This value must be the identifier of a nondefault VPort that is attached to the physical function (PF) of the miniport adapter. 
+
 
 
 <div class="alert"><b>Note</b>  Miniport drivers that support the VMQ interface must set this member to zero. Miniport drivers that support the SR-IOV interface must not set this member to zero (DEFAULT_VPORT_ID).</div>
@@ -157,19 +177,23 @@ NDIS drivers pass this structure to the
     <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a> function
     (ALLOCATE_SHARED_MEMORY_HANDLER entry point).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -198,5 +222,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

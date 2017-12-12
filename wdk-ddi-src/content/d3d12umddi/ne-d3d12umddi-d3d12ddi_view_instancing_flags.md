@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-view-instancing-flags.htm
 old-project: display
 ms.assetid: fa44933f-aa3b-466a-8ee2-2d34d0311562
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIEW_INSTANCING_FLAGS, D3D12DDI_VIEW_INSTANCING_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines the view instancing flags.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _D3D12DDI_VIEW_INSTANCING_FLAGS {
 
 No view instancing flag is defined.
 
+
 ### -field D3D12DDI_VIEW_INSTANCING_FLAG_ENABLE_VIEW_INSTANCE_MASKING
 
 The view instancing flag is enable view instance masking.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The view instancing flag is enable view instance masking.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

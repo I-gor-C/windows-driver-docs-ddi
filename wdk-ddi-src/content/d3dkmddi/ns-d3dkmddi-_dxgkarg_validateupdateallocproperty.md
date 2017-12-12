@@ -7,7 +7,7 @@ old-location: display\dxgkarg_validateupdateallocproperty.htm
 old-project: display
 ms.assetid: EC9654B8-06AA-43C8-A159-F176BDE4E015
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_VALIDATEUPDATEALLOCPROPERTY, DXGKARG_VALIDATEUPDATEALLOCPROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGARG_VALIDATEUPDATEALLOCPROPERTY structure holds the information needed to validate the parameters to update the properties of an allocation.
 
 
+
 ## -syntax
 
 ````
@@ -68,40 +69,52 @@ typedef struct _DXGKARG_VALIDATEUPDATEALLOCPROPERTY {
 
 [in] A Handle to the allocation that will be updated.
 
+
 ### -field SupportedSegmentSet
 
 [in] An index for the new supported segment set. If the current supported segment set is the same, then this will be ignored.
+
 
 ### -field PreferredSegment
 
 [in] An index for the new preferred segment set. If the current preferred segment set is the same, then this will be ignored.
 
+
 ### -field Flags
 
 [in] The flags that will be used to update the allocation.
 
+
 ### -field SetAccessedPhysically 
 
 A UINT value that specifies whether the allocation is accessed by its physical address.
+
 Setting this member is equivalent to setting the first bit of the 32-bit <b>PropertyMaskValue</b> member (0x00000001).
+
 
 ### -field SetSupportedSegmentSet 
 
 A UINT value that specifies whether the supported segment is set to a new value.
+
 Setting this member is equivalent to setting the second bit of the 32-bit <b>PropertyMaskValue</b> member (0x00000010).
+
 
 ### -field SetPreferredSegment 
 
 A UINT value that specifies whether the preferred segment is set to a new value.
+
 Setting this member is equivalent to setting the third bit of the 32-bit <b>PropertyMaskValue</b> member (0x00000100).
+
 
 ### -field Reserved
 
 This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFFE) of the 32-bit <b>PropertyMaskValue</b> member to zeros.
 
+
 ### -field PropertyMaskValue
 
 A member in the union that is contained in D3DDDI_UPDATEALLOCPROPERTY that can hold one 32-bit value that identifies how to update an allocation.
+
 
 ## -remarks
 
@@ -111,14 +124,17 @@ A member in the union that is contained in D3DDDI_UPDATEALLOCPROPERTY that can h
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

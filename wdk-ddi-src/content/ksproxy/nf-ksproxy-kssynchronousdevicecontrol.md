@@ -41,6 +41,7 @@ req.irql:
 The <b>KsSynchronousDeviceControl</b> function issues a synchronous device I/O control operation to the KS object that is specified by a file handle. 
 
 
+
 ## -syntax
 
 ````
@@ -62,32 +63,40 @@ HRESULT KsSynchronousDeviceControl(
 
 Handle to the KS object on which to perform the operation.
 
+
 ### -param IoControl [in]
 
 Control code that identifies a specific type of operation to perform on a KS object. 
+
 
 ### -param InBuffer [in, optional]
 
 Pointer to a buffer that contains data that specifies the operation to perform. 
 
+
 ### -param InLength [in]
 
 Size, in bytes, of the buffer at <i>InBuffer</i>.
+
 
 ### -param OutBuffer [out, optional]
 
 Pointer to a buffer that contains either data for the operation or buffer space that receives data for the operation. 
 
+
 ### -param OutLength [in]
 
 Size, in bytes, of the buffer at <i>OutBuffer</i>.
+
 
 ### -param BytesReturned [in, out]
 
 Pointer to a variable that receives the size, in bytes, of the data that <b>KsSynchronousDeviceControl</b> stores in the buffer at <i>OutBuffer</i>. 
 
+
 ## -returns
 Returns NOERROR if successful; otherwise, returns an error code.
+
 
 ## -remarks
 To retrieve the handle to the KS object, an application should call the <a href="stream.iksobject_ksgetobjecthandle">IKsObject::KsGetObjectHandle</a> method. 
@@ -106,11 +115,13 @@ To retrieve a list of all properties, events, or methods supported by a filter, 
 
 After the call to <b>KsSynchronousDeviceControl</b>, <i>OutBuffer</i> will contain an array of set GUIDs supported by the object specified by <i>Handle</i>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +132,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,6 +143,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +184,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsSynchronousDeviceControl function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

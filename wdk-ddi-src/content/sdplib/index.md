@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Sdplib.h header
 
+## -description
 
 This header is used by Bluetooth. For more information, see
 - [Bluetooth](../_bltooth/index.md)

@@ -41,6 +41,7 @@ req.irql:
 SECURE_ELEMENT_ENDPOINT_INFO is a member of <a href="nfpdrivers._secure_element_endpoint_list">SECURE_ELEMENT_ENDPOINT_LIST</a>.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _SECURE_ELEMENT_ENDPOINT_INFO {
 
 This is a unique identifier for the secure element.
 
+
 ### -field eSecureElementType
 
 Type of secure element endpoint (NFCEE).
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Type of secure element endpoint (NFCEE).
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

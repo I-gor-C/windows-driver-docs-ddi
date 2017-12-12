@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatereassemblednetbufferlist.htm
 old-project: netvista
 ms.assetid: 6a7fcb43-93bf-4351-8198-1d788b1bcc8c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisAllocateReassembledNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Call the
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
 
 A pointer to the NET_BUFFER_LIST structure to reassemble.
 
+
 ### -param NetBufferAndNetBufferListPoolHandle [in, optional]
 
 A NET_BUFFER_LIST structure pool handle that was previously returned from the 
@@ -73,6 +75,7 @@ A NET_BUFFER_LIST structure pool handle that was previously returned from the
      <b>NdisAllocateNetBufferListPool</b> must have been set to <b>TRUE</b>, and the 
      <b>DataSize</b> member set to zero. If this parameter is <b>NULL</b>, NDIS uses an internal pool.
 
+
 ### -param StartOffset [in]
 
 The amount of data to skip at the beginning of each source 
@@ -80,10 +83,12 @@ The amount of data to skip at the beginning of each source
      to the value that is specified in the 
      <b>DataOffset</b> member of the NET_BUFFER structure.
 
+
 ### -param DataOffsetDelta [in]
 
 The number of bytes of 
      <i>used data space</i> to add to in the reassembled NET_BUFFER structure.
+
 
 ### -param DataBackFill [in]
 
@@ -92,15 +97,18 @@ If allocation of
      <i>unused data space</i> in addition to 
      <i>DataOffsetDelta</i> to allocate.
 
+
 ### -param AllocateReassembleFlags [in]
 
 NDIS flags that can be combined with an OR operation. Set this parameter to zero. There are
      currently no flags defined for this function.
 
+
 ## -returns
 If the reassemble operation succeeds, 
      <b>NdisAllocateReassembledNetBufferList</b> returns a reassembled NET_BUFFER_LIST structure. If the
      operation fails, it returns <b>NULL</b>.
+
 
 ## -remarks
 <b>NdisAllocateReassembledNetBufferList</b> allocates, initializes, and returns a new 
@@ -120,11 +128,13 @@ Call the
     NdisFreeReassembledNetBufferList</a> function to free a reassembled NET_BUFFER_LIST structure and all
     of the associated NET_BUFFER structures and MDL chains.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -135,14 +145,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,6 +166,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -163,14 +177,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -202,5 +219,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

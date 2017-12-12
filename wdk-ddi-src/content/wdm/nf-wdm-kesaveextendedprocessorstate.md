@@ -7,7 +7,7 @@ old-location: kernel\kesaveextendedprocessorstate.htm
 old-project: kernel
 ms.assetid: 06be6c3b-cc1a-4e57-8700-03357215d624
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeSaveExtendedProcessorState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeSaveExtendedProcessorState</b> routine saves extended processor state information.
 
 
+
 ## -syntax
 
 ````
@@ -57,7 +58,9 @@ NTSTATUS KeSaveExtendedProcessorState(
 ### -param Mask [in]
 
 A 64-bit feature mask. The bits in this mask identify the extended processor feature states to save. If a mask bit is one, the routine saves the state of the feature that is identified by this bit. If a mask bit is zero, the state for the corresponding feature is not saved. This mask must not identify extended processor features that the operating system has not enabled. To obtain a mask of the enabled features, call the <a href="kernel.rtlgetenabledextendedfeatures">RtlGetEnabledExtendedFeatures</a> routine.
+
 A caller can set this parameter to the bitwise OR of one or more of the following <b>XSTATE_MASK_<i>XXX</i></b> flag bits:
+
 <table>
 <tr>
 <th>Value</th>
@@ -70,6 +73,7 @@ A caller can set this parameter to the bitwise OR of one or more of the followin
 </td>
 <td width="60%">
 The floating-point extension (x87/MMX).
+
 </td>
 </tr>
 <tr>
@@ -79,6 +83,7 @@ The floating-point extension (x87/MMX).
 </td>
 <td width="60%">
 The streaming SIMD extension (SSE).
+
 </td>
 </tr>
 <tr>
@@ -88,6 +93,7 @@ The streaming SIMD extension (SSE).
 </td>
 <td width="60%">
 Both the x87/MMX and SSE extensions.
+
 </td>
 </tr>
 <tr>
@@ -97,14 +103,17 @@ Both the x87/MMX and SSE extensions.
 </td>
 <td width="60%">
 The Intel Sandy Bridge (formerly Gesher) SSE extension.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param XStateSave [out]
 
 A pointer to a caller-allocated buffer into which the routine writes an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a> structure. This structure contains the saved state information for the extended processor features indicated by the <i>Mask</i> parameter. The buffer must be large enough to contain this structure.
+
 
 ## -returns
 <b>KeSaveExtendedProcessorState</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
@@ -113,6 +122,7 @@ A pointer to a caller-allocated buffer into which the routine writes an <a href=
 </dl>A memory allocation operation failed.
 
  
+
 
 ## -remarks
 On x86-based processors that support the XSAVE and XRSTOR instructions, these instructions provide a flexible mechanism to save and restore extended processor state information. <b>KeSaveExtendedProcessorState</b> uses these instructions if they are available.
@@ -127,11 +137,13 @@ Interrupt service routines (ISRs) run under severe time constraints that typical
 
 The <a href="kernel.kesavefloatingpointstate">KeSaveFloatingPointState</a> and <a href="kernel.kerestorefloatingpointstate">KeRestoreFloatingPointState</a> routines save and restore just the floating-point state (the x87/MMX registers) and the SSE state. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,14 +154,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,6 +175,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -170,6 +186,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -180,9 +197,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -206,5 +225,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSaveExtendedProcessorState routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSaveExtendedProcessorState routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

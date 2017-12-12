@@ -7,7 +7,7 @@ old-location: display\d3dddi_rational.htm
 old-project: display
 ms.assetid: b6ae3b68-d9a0-45b3-bf5d-00c09b87709f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_RATIONAL, D3DDDI_RATIONAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DDDI_RATIONAL structure describes a fractional value that represents vertical and horizontal frequencies of a video mode (that is, vertical sync and horizontal sync). 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DDDI_RATIONAL {
 
 [in] The numerator of the frequency fraction.
 
+
 ### -field Denominator
 
 [in] The denominator of the frequency fraction.
+
 
 ## -remarks
 Vertical and horizontal frequencies are stored in Hertz (Hz). 
@@ -73,19 +76,23 @@ Vertical and horizontal frequencies are stored in Hertz (Hz).
 
 For a rational number with a finite fractional sequence, use a denominator of the form 10<sup>(length of fractional sequence)</sup>. For a rational number without a finite fractional sequence, a sequence that exceeds the precision that the dynamic range of the denominator allows, or an irrational number, use an appropriate ratio of integers that best represents the value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

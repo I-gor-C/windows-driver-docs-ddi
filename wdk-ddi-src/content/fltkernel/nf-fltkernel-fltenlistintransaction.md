@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltEnlistInTransaction</b> routine enlists a minifilter driver in a given transaction. 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS FltEnlistInTransaction(
 
 An opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param Transaction [in]
 
 An opaque transaction pointer for the transaction. 
+
 
 ### -param TransactionContext [in]
 
 A pointer to the minifilter driver's transaction context. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param NotificationMask [in]
 
 Specifies the type of notifications that the filter manager is to send to the minifilter driver, as one or more of the values listed in the following table. This parameter is required and cannot be zero. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -78,53 +83,66 @@ Specifies the type of notifications that the filter manager is to send to the mi
 <tr>
 <td>
 TRANSACTION_NOTIFY_COMMIT
+
 </td>
 <td>
 This notification is sent when the transaction is being committed. 
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_COMMIT_FINALIZE
+
 </td>
 <td>
 For Windows Vista SP1 and later, this notification is sent when the transaction is fully committed (that is, when all of the <a href="http://go.microsoft.com/fwlink/p/?linkid=94490">resource managers</a> associated with the transaction, such as <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">TxF</a>, have committed).
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_PREPARE
+
 </td>
 <td>
 This notification is sent when the transaction has entered the prepare for commit phase. 
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_PREPREPARE
+
 </td>
 <td>
 This notification is sent when the transaction has entered the pre-prepare for commit phase. 
+
 </td>
 </tr>
 <tr>
 <td>
 TRANSACTION_NOTIFY_ROLLBACK
+
 </td>
 <td>
 This notification is sent when the transaction is being rolled back or aborted. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_MAX_TRANSACTION_NOTIFICATIONS
+
 </td>
 <td>
 TRANSACTION_NOTIFY_COMMIT | TRANSACTION_NOTIFY_PREPARE | TRANSACTION_NOTIFY_PREPREPARE | TRANSACTION_NOTIFY_ROLLBACK 
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 <b>FltEnlistInTransaction</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -146,6 +164,7 @@ TRANSACTION_NOTIFY_COMMIT | TRANSACTION_NOTIFY_PREPARE | TRANSACTION_NOTIFY_PREP
 
  
 
+
 ## -remarks
 A minifilter driver calls <b>FltEnlistInTransaction</b> to enlist in a transaction. Before calling <b>FltEnlistInTransaction</b>, the minifilter driver must have registered a <i>TransactionNotificationCallback</i> routine. Otherwise, the call to <b>FltEnlistInTransaction</b> will fail. 
 
@@ -161,11 +180,13 @@ To delete a transaction context, call <a href="ifsk.fltdeletetransactioncontext"
 
 To set a transaction context, call <a href="ifsk.fltsettransactioncontext">FltSetTransactionContext</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -176,14 +197,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Windows Vista and later versions of Windows. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -194,6 +218,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -204,6 +229,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -214,9 +240,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -264,5 +292,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnlistInTransaction routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

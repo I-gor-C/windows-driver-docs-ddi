@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Defines values for the various types of USB host controllers.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _URS_HOST_INTERFACE_TYPE {
 
 Indicates an EHCI host controller.
 
+
 ### -field UrsHostInterfaceTypeXhci
 
 Indicates an xHCI host controller.
 
+
 ### -field UrsHostInterfaceTypeOther
 
 Indicates a generic host controller.
+
 
 ## -remarks
 
@@ -75,30 +79,37 @@ Indicates a generic host controller.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

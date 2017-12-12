@@ -41,6 +41,7 @@ req.irql:
 The <b>FSRTL_PER_STREAM_CONTEXT</b> structure contains context information that a file system filter driver maintains about a file stream. 
 
 
+
 ## -syntax
 
 ````
@@ -59,18 +60,23 @@ typedef struct _FSRTL_PER_STREAM_CONTEXT {
 
 Link for this structure in the list of all per-stream context structures associated with the same file stream. <a href="ifsk.fsrtlinsertperstreamcontext">FsRtlInsertPerStreamContext</a> inserts this member into the list of all per-stream context structures for a file stream. To get a pointer to the head of the list from a file object, use the <a href="ifsk.fsrtlgetperstreamcontextpointer">FsRtlGetPerStreamContextPointer</a> macro, and cast the result to a <b>PFSRTL_ADVANCED_FCB_HEADER</b> pointer. The list pointer is the <b>FilterContexts</b> member in the advanced file control block (FCB) header structure for the file stream. 
 
+
 ### -field OwnerId
 
 Pointer to a filter-driver-allocated variable that uniquely identifies the owner of the per-stream context structure. The format of this variable is filter-driver-specific. Filter writers should choose a value that is both meaningful and convenient, such as the address of a driver object or device object. Filter drivers must set this member to a non-<b>NULL</b> value. 
 
+
 ### -field InstanceId
 
 Pointer to a filter-driver-allocated variable that can be used to distinguish among per-stream context structures created by the same filter driver. The format of this variable is filter-driver-specific. Filter writers should choose a value that is both meaningful and convenient, such as the address of the stream context object for the file stream. (To get this address from a file object, use the <a href="ifsk.fsrtlgetperstreamcontextpointer">FsRtlGetPerStreamContextPointer</a> macro.) 
+
 This member is optional and can be <b>NULL</b>. 
+
 
 ### -field FreeCallback
 
 Pointer to a callback routine that frees the per-stream context structure. This routine and its parameters are defined as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -86,9 +92,11 @@ Pointer to a callback routine that frees the per-stream context structure. This 
 </table></span></div>
 
 
+
 ### -field Buffer
 
 Pointer to the <b>FSRTL_PER_STREAM_CONTEXT</b> structure to free. 
+
 </dd>
 </dl>
 
@@ -103,19 +111,23 @@ The <b>FsRtlSupportsPerStreamContexts</b> macro determines whether a file system
 
 Parameters
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available on Microsoft Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,5 +168,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_PER_STREAM_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

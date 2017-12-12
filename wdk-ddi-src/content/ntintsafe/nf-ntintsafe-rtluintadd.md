@@ -7,7 +7,7 @@ old-location: kernel\rtluintadd.htm
 old-project: kernel
 ms.assetid: ABF392BD-7B05-417E-AFD8-4EE7E64F9FC2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlUIntAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Adds two values of type <b>UINT</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,24 +59,29 @@ NTSTATUS RtlUIntAdd(
 
 The first value in the equation.
 
+
 ### -param uAddend [in]
 
 The value to add to <i>uAugend</i>.
 
+
 ### -param puResult [out]
 
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
+
 
 ## -remarks
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,6 +92,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

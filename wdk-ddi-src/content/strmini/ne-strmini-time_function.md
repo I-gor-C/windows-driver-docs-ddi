@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ typedef enum  {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

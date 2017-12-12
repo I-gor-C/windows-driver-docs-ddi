@@ -7,8 +7,8 @@ old-location: netvista\dot11_invitation_request_send_complete_parameters.htm
 old-project: netvista
 ms.assetid: 9E2951DE-083E-43D2-A487-97D0ADD76BE2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -60,6 +60,7 @@ typedef struct _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 ### -field Header
 
 The type, revision, and size of the <b>DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -80,29 +81,36 @@ The type, revision, and size of the <b>DOT11_INVITATION_REQUEST_SEND_COMPLETE_PA
 </table>
  
 
+
 ### -field PeerDeviceAddress
 
 The device address of the Peer-to-Peer (P2P) Wi-Fi Direct (WFD) device that the invitation request was sent to.
+
 
 ### -field ReceiverAddress
 
 The address of the device that received the invitation request.
 
+
 ### -field DialogToken
 
 The dialog token from the invitation request packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451806">OID_DOT11_WFD_SEND_INVITATION_REQUEST</a> request.
+
 
 ### -field Status
 
 The status of the request send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted.
 
+
 ### -field uIEsOffset
 
 The offset, in bytes,  of the array of additional information elements (IEs) that were included in the invitation request packet. This offset is from the start of the buffer that contains this structure.
 
+
 ### -field uIEsLength
 
 The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+
 
 ## -remarks
 
@@ -112,14 +120,17 @@ The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

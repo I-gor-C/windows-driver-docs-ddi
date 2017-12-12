@@ -7,7 +7,7 @@ old-location: netvista\rilmsgprotocolid.htm
 old-project: netvista
 ms.assetid: 96406971-02df-4534-888d-70014f782c60
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGPROTOCOLID, RILMSGPROTOCOLID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -215,6 +216,7 @@ typedef enum _RILMSGPROTOCOLID {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

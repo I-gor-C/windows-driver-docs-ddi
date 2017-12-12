@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY structure describes a PCI Express (PCIe) uncorrectable error severity register of a PCIe advanced error reporting capability structure.
 
 
+
 ## -syntax
 
 ````
@@ -74,76 +75,94 @@ typedef union _PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY {
 
 A single bit that contains an undefined value. In versions of the <i>PCIe Specification</i> prior to version 1.1, this bit indicates that a reported link training error is a fatal error.
 
+
 ### -field Reserved1
 
 Reserved.
+
 
 ### -field DataLinkProtocolError
 
 A single bit that indicates that a reported data link protocol error is a fatal error.
 
+
 ### -field SurpriseDownError
 
 A single bit that indicates that a reported surprise down error is a fatal error.
+
 
 ### -field Reserved2
 
 Reserved.
 
+
 ### -field PoisonedTLP
 
 A single bit that indicates that a reported poisoned transaction layer packet (TLP) is a fatal error.
+
 
 ### -field FlowControlProtocolError
 
 A single bit that indicates that a reported flow control protocol error is a fatal error.
 
+
 ### -field CompletionTimeout
 
 A single bit that indicates that a reported completion timeout is a fatal error.
+
 
 ### -field CompleterAbort
 
 A single bit that indicates that a reported completer abort is a fatal error.
 
+
 ### -field UnexpectedCompletion
 
 A single bit that indicates that a reported unexpected completion is a fatal error.
+
 
 ### -field ReceiverOverflow
 
 A single bit that indicates that a reported receiver overflow is a fatal error.
 
+
 ### -field MalformedTLP
 
 A single bit that indicates that a reported malformed transaction layer packet (TLP) is a fatal error.
+
 
 ### -field ECRCError
 
 A single bit that indicates that a reported end-to-end cyclic redundancy check (ECRC) error is a fatal error.
 
+
 ### -field UnsupportedRequestError
 
 A single bit that indicates that a reported unsupported request error is a fatal error.
+
 
 ### -field Reserved3
 
 Reserved.
 
+
 ### -field AsULONG
 
 A ULONG representation of the contents of the PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY structure.
+
 
 ## -remarks
 The PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY structure is available in Windows Server 2008 and later versions of Windows.
 
 A PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY structure is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537472">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a> structures.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -166,5 +185,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

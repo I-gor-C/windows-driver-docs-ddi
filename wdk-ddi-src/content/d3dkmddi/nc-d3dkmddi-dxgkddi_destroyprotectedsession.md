@@ -7,7 +7,7 @@ old-location: display\dxgkddi_destroyprotectedsession.htm
 old-project: display
 ms.assetid: 42D4064A-1697-4772-8450-6D217C526347
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: requires_(PASSIVE_LEVEL)
 Used to destroy a protected session.
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS APIENTRY DXGKDDI_DESTROYPROTECTEDSESSION(
 
 The handle generated for the adapter.
 
+
 ### -param hProtectedSession [in]
 
 The driver generated handle driver returned at DxgkDdiCreateProtectedSession.
 
+
 ## -returns
 Returns STATUS_SUCCESS when completed successfully.
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ Returns STATUS_SUCCESS when completed successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -82,9 +87,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 requires_(PASSIVE_LEVEL)
+
 </td>
 </tr>
 </table>

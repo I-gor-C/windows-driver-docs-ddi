@@ -7,7 +7,7 @@ old-location: storage\storportallocatemdl.htm
 old-project: storage
 ms.assetid: 45450486-3264-4fc8-8051-f7c48997e3dd
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortAllocateMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortAllocateMdl</b> routine allocates an MDL to describe the given non-paged pool memory.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ ULONG StorPortAllocateMdl(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param BufferPointer [in]
 
 A pointer to the base virtual address of the buffer that the MDL is to describe.
+
 
 ### -param NumberOfBytes [in]
 
 This parameter specifies the length, in bytes, of the buffer that the MDL is to describe.
 
+
 ### -param Mdl [out]
 
 A pointer to receive the allocated MDL.
+
 
 ## -returns
 StorPortAllocateMdl returns one of the following status codes:
@@ -94,14 +99,17 @@ The pointer to the buffer is <b>NULL</b>.
 
  
 
+
 ## -remarks
 A miniport driver calls the <b>StorPortAllocateMdl</b> routine to allocate an MDL to describe a block of memory from the non-paged pool. To free the MDL, the miniport driver calls the <a href="storage.storportfreepool">StorPortFreeMdl</a> routine.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +120,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,14 +131,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportirql">StorPortIrql</a>

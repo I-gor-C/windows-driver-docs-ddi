@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetflags.htm
 old-project: netvista
 ms.assetid: 12525F3C-12D6-477E-8C7D-3DE9AAA044AE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbChannelInitSetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbChannelInitSetFlags</b> function sets flags common to server or client channel endpoints.
+
 
 
 ## -syntax
@@ -60,9 +62,11 @@ NTSTATUS VmbChannelInitSetFlags(
 A handle for the channel.
 
 
+
 ### -param Flags [in]
 
 A collection of bit flags to set.
+
 
 ## -returns
 <b>VmbChannelInitSetFlags</b> can return one of the following status values:
@@ -75,6 +79,7 @@ A collection of bit flags to set.
 
  
 
+
 ## -remarks
 
 
@@ -83,38 +88,47 @@ A collection of bit flags to set.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +139,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

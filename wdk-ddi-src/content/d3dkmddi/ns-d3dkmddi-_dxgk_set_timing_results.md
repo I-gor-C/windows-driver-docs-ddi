@@ -7,7 +7,7 @@ old-location: display\dxgk_set_timing_results.htm
 old-project: display
 ms.assetid: EA5C845B-76FD-40AD-B4E8-78601CA847CE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS, *PDXGK_SET_TIMING_RESULTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Structure to report result flags from the SetTiming call which apply to the complete call rather than individual paths.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef struct _DXGK_SET_TIMING_RESULTS {
 ### -field ConnectionStatusChanges
 
 If set, indicates that one or more connector status changes were detected in the course of this call so the OS needs to call DxgkDdiQueryConnectionStatus to catch up with all changes and to resync with the current state.  
+
 <div class="alert"><b>Note</b>  This flag is intended to indicate to the OS that a change in available displays has occurred so TargetStatus* and MonitorStatus* changes should cause the driver to set the flag whereas LinkConfiguration* changes should be reported but should not cause the flag to be set.  Any update to an active path requires that a LinkConfiguration* change be reported so that the status of the change can be distinguished from previous changes with the same result so including these changes in the flag would not provide useful information.</div>
 <div> </div>
 
@@ -68,9 +70,11 @@ If set, indicates that one or more connector status changes were detected in the
 
 This value is reserved for system use.
 
+
 ### -field Value
 
 UINT used to operate on the combined bit-fields.
+
 
 ## -remarks
 
@@ -80,6 +84,7 @@ UINT used to operate on the combined bit-fields.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndisclgetprotocolvccontextfromtapicallid.htm
 old-project: netvista
 ms.assetid: 5c716207-b093-499a-8fad-344b5ac51e25
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisClGetProtocolVcContextFromTapiCallId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql: DISPATCH_LEVEL
   identified by a TAPI Call ID string.
 
 
+
 ## -syntax
 
 ````
@@ -60,11 +61,13 @@ Unicode string that identifies a particular VC. This string is the Unicode versi
      identifier that was previously returned by the 
      <a href="netvista.ndiscogettapicallid">NdisCoGetTapiCallID</a> function.
 
+
 ### -param ProtocolVcContext [out]
 
 Pointer to a caller-allocated NDIS_HANDLE that receives a handle to the client context for the VC.
      The client supplied this context to NDIS on return from its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> handler.
+
 
 ## -returns
 Returns one of the following status values:
@@ -77,6 +80,7 @@ Returns one of the following status values:
 </dl>The attempt to retrieve the handle to the client VC context failed.
 
  
+
 
 ## -remarks
 Suppose a call manager calls 
@@ -99,11 +103,13 @@ See the
     <a href="kernel.unicode_string">UNICODE_STRING</a> structure for more
     information.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +120,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -122,11 +129,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    drivers (see 
    <b>
    NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,6 +146,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -147,14 +157,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
@@ -175,5 +188,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClGetProtocolVcContextFromTapiCallId function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClGetProtocolVcContextFromTapiCallId function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

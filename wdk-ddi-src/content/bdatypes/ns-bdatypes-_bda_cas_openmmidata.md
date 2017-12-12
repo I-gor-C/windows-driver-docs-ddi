@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: FAF30768-5DE4-4284-8CB5-2E518A2E37E7
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA
+ms.keywords: _BDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -38,6 +38,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
+
 
 
 
@@ -79,6 +80,7 @@ typedef struct _BDA_CAS_OPENMMIDATA {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

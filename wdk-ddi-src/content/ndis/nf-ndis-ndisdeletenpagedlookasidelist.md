@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisDeleteNPagedLookasideList
-title: NdisDeleteNPagedLookasideList
+title: NdisDeleteNPagedLookasideList macro
 author: windows-driver-content
 description: The NdisDeleteNPagedLookasideList function removes a nonpaged lookaside list from the system.
 old-location: netvista\ndisdeletenpagedlookasidelist.htm
 old-project: netvista
 ms.assetid: 0622d3db-8d28-4c15-a3d8-1092487b8096
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisDeleteNPagedLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,56 +31,52 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.iface: 
 ---
 
-# NdisDeleteNPagedLookasideList function
+# NdisDeleteNPagedLookasideList macro
 
 
 
 ## -description
-<p>The 
-  <b>NdisDeleteNPagedLookasideList</b> function removes a nonpaged lookaside list from the system.</p>
+The 
+  <b>NdisDeleteNPagedLookasideList</b> function removes a nonpaged lookaside list from the system.
+
 
 
 ## -syntax
 
 ````
 VOID NdisDeleteNPagedLookasideList(
-  _In_ PNPAGED_LOOKASIDE_LIST Lookaside
+  [in] PNPAGED_LOOKASIDE_LIST Lookaside
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param Lookaside [in]
 
-<dd>
-<p>A pointer to the head of the lookaside list to be deleted.</p>
-</dd>
-</dl>
+A pointer to the head of the lookaside list to be deleted.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>After freeing any remaining entries in the given lookaside list, 
+After freeing any remaining entries in the given lookaside list, 
     <b>NdisDeleteNPagedLookasideList</b> removes the list from the OS-maintained set of nonpaged lookaside
-    lists.</p>
+    lists.
 
-<p>However, 
+However, 
     <b>NdisDeleteNPagedLookasideList</b> does not free the list head, for which the caller originally
     allocated the memory. An NDIS driver is responsible for calling the 
-    <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a> function to release any
-    memory that it allocated.</p>
+    <a href="netvista.ndisfreememory">NdisFreeMemory</a> function to release any
+    memory that it allocated.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,19 +86,22 @@ VOID NdisDeleteNPagedLookasideList(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/ba01cd4b-cc6b-46af-b197-7d399e42e1c9">
    NdisDeleteNPagedLookasideList (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>
-   NdisDeleteNPagedLookasideList (NDIS 5.1)</b>) in Windows XP.</p>
+   NdisDeleteNPagedLookasideList (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,15 +111,18 @@ VOID NdisDeleteNPagedLookasideList(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>&lt;= DISPATCH_LEVEL</p>
+&lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>DDI compliance rules</p>
+DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -131,18 +133,21 @@ VOID NdisDeleteNPagedLookasideList(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+<a href="netvista.ndisallocatefromnpagedlookasidelist">
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
+<a href="netvista.ndisfreetonpagedlookasidelist">
    NdisFreeToNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
+<a href="netvista.ndisinitializenpagedlookasidelist">
    NdisInitializeNPagedLookasideList</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDeleteNPagedLookasideList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDeleteNPagedLookasideList macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

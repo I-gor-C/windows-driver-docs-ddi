@@ -7,7 +7,7 @@ old-location: netvista\ndisregisterdeviceex.htm
 old-project: netvista
 ms.assetid: 8e0d406e-748c-4b37-90fb-c7b9dfc28362
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisRegisterDeviceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   attributes.
 
 
+
 ## -syntax
 
 ````
@@ -65,11 +66,13 @@ A miniport driver handle or filter driver handle that the caller obtained by cal
      <a href="netvista.ndisfregisterfilterdriver">
      NdisFRegisterFilterDriver</a> function respectively.
 
+
 ### -param DeviceObjectAttributes [in]
 
 A pointer to an 
      <a href="netvista.ndis_device_object_attributes">
      NDIS_DEVICE_OBJECT_ATTRIBUTES</a> structure that contains the attributes for the new device.
+
 
 ### -param pDeviceObject [out]
 
@@ -78,12 +81,14 @@ A pointer that points to a pointer to a newly created
      If the call fails, 
      <i>pDeviceObject</i> is set to point to <b>NULL</b>.
 
+
 ### -param NdisDeviceHandle [out]
 
 A pointer to a caller-supplied variable in which this function, if it succeeds, returns a handle
      to the device object. This handle is a required parameter to the 
      <a href="netvista.ndisderegisterdeviceex">NdisDeregisterDeviceEx</a> function
      that the driver calls subsequently.
+
 
 ## -returns
 <b>NdisRegisterDeviceEx</b> returns one of the following status values:
@@ -100,6 +105,7 @@ A pointer to a caller-supplied variable in which this function, if it succeeds, 
        <b>Ndis<i>Xxx</i></b> function or a kernel-mode support routine.
 
  
+
 
 ## -remarks
 Miniport drivers and filter drivers can call 
@@ -121,11 +127,13 @@ The driver must subsequently call the
     <b>NdisRegisterDeviceEx</b> allocated an extension, 
     <b>NdisDeregisterDeviceEx</b> frees the extension.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -136,14 +144,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -154,6 +165,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -164,14 +176,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -202,5 +217,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRegisterDeviceEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRegisterDeviceEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\dxgk_path_update.htm
 old-project: display
 ms.assetid: DCBBFBF7-73B2-4298-BB87-83E1C6D76BD0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PATH_UPDATE, DXGK_PATH_UPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Enum which indicates how this path has been modified since the previous successful call to SetTimingsFromVidPn.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef enum _DXGK_PATH_UPDATE {
 
 Indicates that this path has not been changed since the last call to SetTimingsFromVidPn.  This allows the driver to skip interrogating VidPn for changes.  Existing scan-out should continue, other than any glitching which might be caused due to reassignment of display resources to satisfy other paths.
 
+
 ### -field DXGK_PATH_UPDATE_ADDED
 
 Indicates that this path is new so the driver will have to fully comprehend the description of what is required.  Since there is no allocation from which to scan out, the driver must scan out black until the OS associates one or more planes to be scanned out.
+
 
 ### -field DXGK_PATH_UPDATE_MODIFIED
 
@@ -69,9 +72,11 @@ Indicates that this path has been changed since the last call to SetTimingsFromV
 
 
 
+
 ### -field DXGK_PATH_UPDATE_REMOVED
 
 Indicates that this path was present in the previous VidPn but has been removed. The driver should be able to optimize the removal without interrogating VidPn to see that the path has been removed. 
+
 
 ## -remarks
 
@@ -81,6 +86,7 @@ Indicates that this path was present in the previous VidPn but has been removed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

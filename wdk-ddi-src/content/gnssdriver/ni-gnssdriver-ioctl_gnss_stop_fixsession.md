@@ -41,19 +41,24 @@ req.irql:
 The <b>IOCTL_GNSS_STOP_FIXSESSION</b> control code is used by the GNSS adapter to stop an active fix session.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 A pointer to a <a href="sensors.gnss_stopfixsession_param">GNSS_STOPFIXSESSION_PARAM</a> structure.
 
+
 ### -input-buffer-length
 Set to sizeof(GNSS_STOPFIXSESSION_PARAM).
+
 
 ### -output-buffer
 Set to NULL.
 
+
 ### -output-buffer-length
 Set to 0.
+
 
 ### -in-out-buffer
 
@@ -66,6 +71,7 @@ Set to 0.
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 The driver sets an NTSTATUS value to indicate one of the following results.
@@ -80,11 +86,13 @@ The GNSS driver must cancel/stop all pending fix requests and then complete the 
 
 If no other fix sessions are active, the GNSS driver should keep the GNSS engine in a cold state.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +118,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_STOP_FIXSESSION control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

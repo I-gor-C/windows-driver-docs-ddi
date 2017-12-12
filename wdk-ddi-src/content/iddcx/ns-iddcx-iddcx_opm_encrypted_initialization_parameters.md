@@ -7,7 +7,7 @@ old-location: display\iddcx_opm_encrypted_initialization_parameters.htm
 old-project: display
 ms.assetid: d1df3fc1-2d23-4e90-b663-6322ba4e1eff
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_OPM_ENCRYPTED_INITIALIZATION_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Gives information about the OPM encrypted initialization parameters.
              
 
 
+
 ## -syntax
 
 ````
@@ -60,11 +61,13 @@ typedef struct IDDCX_OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
                      Total size of the structure.
                  
 
+
 ### -field EncryptedParameters
 
 
                      Initialization parameters.
                  
+
 
 ## -remarks
 
@@ -74,6 +77,7 @@ typedef struct IDDCX_OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

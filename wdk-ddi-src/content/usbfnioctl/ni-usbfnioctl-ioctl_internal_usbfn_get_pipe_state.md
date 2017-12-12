@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: CFBFC5E4-852C-4287-A85E-2EF3C89FE474
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, *PUSBFN_USB_STRING
+ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -42,20 +42,25 @@ req.product: Windows 10 or later.
 The class driver sends this request to get the stall state of the specified pipe.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 A pointer to a <b>USBFNPIPEID</b> type that specifies the pipe ID.
 
+
 ### -input-buffer-length
 The size of a <b>USBFNPIPEID</b> type.
+
 
 ### -output-buffer
 A pointer to <b>BOOLEAN</b> value that  is set by USB Function Class Extension (UFX) to indicate whether or not the specified pipe is stalled. TRUE, indicates the pipe is in stall state; FALSE indicates the pipe is in clear state.
 
 
+
 ### -output-buffer-length
 The size of a <b>BOOLEAN</b>.
+
 
 ### -in-out-buffer
 
@@ -69,6 +74,7 @@ The size of a <b>BOOLEAN</b>.
 I/O Status block
 UFX completes the request with <b>STATUS_SUCCESS</b>.
 
+
 ## -remarks
 This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.
 
@@ -76,11 +82,13 @@ When stalled, the pipe sends STALL transaction packets to the host. See the Univ
 
 UFX forwards this IOCTL request to the transfer queue created for the endpoint by <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

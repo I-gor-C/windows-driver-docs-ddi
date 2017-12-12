@@ -7,8 +7,8 @@ old-location: storage\mpiomovedevice_in.htm
 old-project: storage
 ms.assetid: 2652874f-70d0-4eff-a46d-778a68d55cab
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MPIOMoveDevice_IN, MPIOMoveDevice_IN, *PMPIOMoveDevice_IN
+ms.date: 12/8/2017
+ms.keywords: _MPIOMoveDevice_IN, *PMPIOMoveDevice_IN, MPIOMoveDevice_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The MPIOMoveDevice_IN structure is used to set the active path on the device.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _MPIOMoveDevice_IN {
 
 A 32-bitfield that specifies the MPIO disk ordinal value.
 
+
 ### -field Flags
 
 A 32-bitfield that specifies the flags that are associated with the device move operation.
 
+
 ### -field PathID
 
 A 64-bitfield that specifies the path that is associated with the device.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A 64-bitfield that specifies the path that is associated with the device.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

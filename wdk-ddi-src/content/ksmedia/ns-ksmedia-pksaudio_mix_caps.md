@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: d201fdce-ae56-4ba5-a947-e3e0cecc6e17
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS
+ms.keywords: PKSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KSAUDIO_MIX_CAPS structure specifies the mixing capabilities of a particular data path from one input channel of a supermixer node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>) to an output channel of the same node. An array of these structures is used by a <a href="audio.ksaudio_mixcap_table">KSAUDIO_MIXCAP_TABLE</a> structure to specify the mixing capabilities for all such paths through a supermixer node.
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,21 @@ typedef struct {
 
 Specifies whether the data path from the input channel to the output channel is muted (not mixed). A value of <b>TRUE</b> indicates that the data path is muted.
 
+
 ### -field Minimum
 
 Specifies the minimum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.
+
 
 ### -field Maximum
 
 Specifies the maximum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.
 
+
 ### -field Reset
 
 <b>Reset</b> is a misnomer. This member should have been called Resolution instead. It specifies the resolution of the mix level for the data path from the input channel to the output channel. Resolution values use the following scale: a range from 0 to +2147483647, where 0 is no control and any other number is the number of steps between actual hardware settings in the range between <b>Minimum</b> and <b>Maximum</b>.
+
 
 ### -field Resolution
 
@@ -90,11 +95,13 @@ A decibel range represented by integer values -2147483648 to +2147483647, where
 
 This scale has a resolution of 1/65536 decibel.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +127,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_MIX_CAPS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

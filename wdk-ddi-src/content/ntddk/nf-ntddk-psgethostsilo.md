@@ -7,7 +7,7 @@ old-location: kernel\psgethostsilo.htm
 old-project: kernel
 ms.assetid: 0B78562C-25DD-4CF2-9804-6DBEDE8B5F69
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsGetHostSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine returns the host silo.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ The host silo.
 
 The host silo.
 
+
 ## -remarks
 
 
@@ -66,22 +68,27 @@ The host silo.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

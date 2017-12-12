@@ -7,7 +7,7 @@ old-location: kernel\kereleasesemaphore.htm
 old-project: kernel
 ms.assetid: 357a97e6-cb19-43df-9b90-db199c712878
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: KeReleaseSemaphore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KeReleaseSemaphore</b> routine releases the specified semaphore object. 
 
 
+
 ## -syntax
 
 ````
@@ -60,20 +61,25 @@ LONG KeReleaseSemaphore(
 
 A pointer to an initialized semaphore object for which the caller provides the storage.
 
+
 ### -param Increment [in]
 
 Specifies the priority increment to be applied if releasing the semaphore causes a wait to be satisfied.
+
 
 ### -param Adjustment [in]
 
 Specifies a value to be added to the current semaphore count. This value must be positive.
 
+
 ### -param Wait [in]
 
 Specifies whether the call to <b>KeReleaseSemaphore</b> is to be followed <u>immediately</u> by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeReleaseSemaphore</b> call must be followed by a call to <a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>, <a href="kernel.kewaitformutexobject">KeWaitForMutexObject</a>, or <a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>. For more information, see the following Remarks section. 
 
+
 ## -returns
 If the return value is zero, the previous state of the semaphore object is not-signaled. 
+
 
 ## -remarks
 <b>KeReleaseSemaphore</b> supplies a run-time priority boost for waiting threads. If this call sets the semaphore to the signaled state, the semaphore count is augmented by the specified value. The caller can also specify whether it will call one of the <b>KeWait<i>Xxx</i></b> routines as soon as <b>KeReleaseSemaphore</b> returns control.
@@ -92,11 +98,13 @@ For more information about semaphore objects, see <a href="https://msdn.microsof
 
 Callers of <b>KeReleaseSemaphore</b> must be running at IRQL &lt;= DISPATCH_LEVEL provided that <i>Wait</i> is set to <b>FALSE</b>. Otherwise, the caller must be running at IRQL = PASSIVE_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,14 +115,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +136,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +147,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -145,14 +158,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -179,5 +195,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeReleaseSemaphore routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeReleaseSemaphore routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

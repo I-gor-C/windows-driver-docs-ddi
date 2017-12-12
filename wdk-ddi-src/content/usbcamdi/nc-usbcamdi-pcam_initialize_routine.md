@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A camera minidriver's <b>CamInitialize</b> callback function initializes the device.
 
 
+
 ## -prototype
 
 ````
@@ -61,12 +62,15 @@ NTSTATUS CamInitialize(
 
 Pointer to the camera minidriver's device object created by the USB hub.
 
+
 ### -param DeviceContext 
 
 Pointer to the camera minidriver's device context.
 
+
 ## -returns
 <b>CamInitialize</b> returns STATUS_SUCCESS or an appropriate error code. 
+
 
 ## -remarks
 USBCAMD calls the camera minidriver's <b>CamInitialize</b> callback function the first time the device is used.
@@ -75,11 +79,13 @@ USBCAMD calls the camera minidriver's <b>CamInitialize</b> callback function the
 
 This function is required.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,6 +96,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

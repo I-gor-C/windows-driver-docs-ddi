@@ -7,7 +7,7 @@ old-location: netvista\wdi_frame_payload_type.htm
 old-project: netvista
 ms.assetid: 28aef1bd-915a-4f05-a4b0-bec63ddfdfb5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_FRAME_PAYLOAD_TYPE, WDI_FRAME_PAYLOAD_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The WDI_FRAME_PAYLOAD_TYPE enumeration defines the frame payload type.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _WDI_FRAME_PAYLOAD_TYPE {
 
 MAC service data unit (MSDU).
 
+
 ### -field WDI_FRAME_MSDU_FRAGMENT
 
 MAC service data unit (MSDU) fragment.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ MAC service data unit (MSDU) fragment.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

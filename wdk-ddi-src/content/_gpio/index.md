@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # General-purpose I/O (GPIO) controllers
 
+## -description
 Overview of the General-purpose I/O (GPIO) controllers technology.
 
 To develop General-purpose I/O (GPIO) controllers, you need these headers:

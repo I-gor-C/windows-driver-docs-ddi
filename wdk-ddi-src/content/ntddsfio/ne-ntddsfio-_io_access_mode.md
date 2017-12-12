@@ -7,7 +7,7 @@ old-location: kernel\io_access_mode.htm
 old-project: kernel
 ms.assetid: E48BDF14-5B56-45AF-9DD2-F019C8B7D7E5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _IO_ACCESS_MODE, IO_ACCESS_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines the types of access mode for Scheduled File I/O (SFIO).
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _IO_ACCESS_MODE {
 
 Indicates that the input/output will be sent down in a sequential order.
 
+
 ### -field RandomAccess
 
 Indicates that the input/output might not be in a predictable order.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates that the input/output might not be in a predictable order.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

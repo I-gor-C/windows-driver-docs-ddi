@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Reads or writes to mitigated address spaces. 
 
 
+
 ## -prototype
 
 ````
@@ -69,9 +70,11 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param VfIndex [in]
 
 A zero-based index of the VF to which this read/write operation applies.
+
 
 ### -param Read [in]
 
@@ -79,13 +82,16 @@ A zero-based index of the VF to which this read/write operation applies.
                     
                 A boolean that indicates whether to perform a read or a write operation. TRUE indicates read, FALSE otherwise.
 
+
 ### -param BarIndex [in]
 
 The BAR that maps the address space being mitigated.
 
+
 ### -param Offset [in]
 
 The offset in number of bytes into the BAR at which this access begins.
+
 
 ### -param Length [in]
 
@@ -93,40 +99,49 @@ The offset in number of bytes into the BAR at which this access begins.
                     
                 The length in bytes of this read or write operation.
 
+
 ### -param Data [in, out]
 
 A pointer to a buffer that contains the data to read or write.
 
+
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to read or write from a mitigable register. 
 
 The PF driver registers its implementation by setting the <b>ReadWriteMitigatedRegister</b> member of the <a href="buses._mitigable_device_interface">MITIGABLE_DEVICE_INTERFACE</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,9 +152,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

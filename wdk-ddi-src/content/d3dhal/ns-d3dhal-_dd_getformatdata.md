@@ -7,7 +7,7 @@ old-location: display\dd_getformatdata.htm
 old-project: display
 ms.assetid: 881a52d1-8e37-4474-a943-086ef5ceca80
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_GETFORMATDATA, DD_GETFORMATDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <b>DirectX 8.0 and later versions only.</b>
+
 DD_GETFORMATDATA is the data structure pointed to by the <b>lpvData</b> field of <a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a> for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETFORMAT.
+
 
 
 ## -syntax
@@ -59,13 +61,16 @@ typedef struct _DD_GETFORMATDATA {
 
 Specifies a <a href="display.dd_getdriverinfo2data">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.
 
+
 ### -field dwFormatIndex
 
 Specifies the index of the pixel format to return.
 
+
 ### -field format
 
 Receives the actual pixel format in a <a href="display.ddpixelformat">DDPIXELFORMAT</a> structure.
+
 
 ## -remarks
 The runtime identifies the format to be returned with an integer index whose value varies between zero and one less than the number of supported formats reported earlier by the driver. How these indices are mapped to actual formats is left to the driver. However, each index must map uniquely to one supported format. The order in which the formats are reported is not significant. 
@@ -74,11 +79,13 @@ When processing this <b>GetDriverInfo2</b> request the driver should read the <b
 
 <b>DirectX 9.0 and later versions only.</b>On input, the version of the DirectX runtime that is being used by the application is specified in the <b>dwSize</b> member of the DDPIXELFORMAT structure in <b>format</b>. This <b>dwSize</b> member is set to DD_RUNTIME_VERSION, which is 0x00000900 for DirectX 9.0.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DD_GETFORMATDATA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DD_GETFORMATDATA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

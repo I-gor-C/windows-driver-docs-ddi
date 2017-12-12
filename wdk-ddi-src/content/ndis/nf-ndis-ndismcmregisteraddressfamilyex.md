@@ -7,7 +7,7 @@ old-location: netvista\ndismcmregisteraddressfamilyex.htm
 old-project: netvista
 ms.assetid: f58a9c08-d2cf-48d1-98d1-68aecd3b7bd0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMCmRegisterAddressFamilyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   miniport call manager (MCM) and CoNDIS clients.
 
 
+
 ## -syntax
 
 ````
@@ -62,16 +63,19 @@ An NDIS-supplied handle that identifies a miniport adapter. This handle is an in
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param AddressFamily [in]
 
 A pointer to a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff545368">CO_ADDRESS_FAMILY</a> structure that identifies
      the AF that the MCM driver supports. 
      
+
 The pointer becomes an input parameter to the 
      <a href="..\ndis\nc-ndis-protocol_co_af_register_notify.md">
      ProtocolCoAfRegisterNotify</a> functions of all of the CoNDIS clients that are bound to this MCM
      driver.
+
 
 ## -returns
 <b>NdisMCmRegisterAddressFamilyEx</b> can return any of the following:
@@ -97,6 +101,7 @@ The caller was not registered as a connection-oriented miniport driver.
 The caller tried to register a duplicate AF for a given miniport adapter.
 
  
+
 
 ## -remarks
 NDIS MCMs, which register as NDIS miniport drivers by calling the 
@@ -137,11 +142,13 @@ An MCM can support more than one AF for a single NIC that it manages. The MCM dr
     MCM driver can support a particular type of AF for clients that are bound to a given miniport
     adapter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -152,14 +159,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -170,6 +180,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -180,14 +191,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
@@ -234,5 +248,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmRegisterAddressFamilyEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmRegisterAddressFamilyEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

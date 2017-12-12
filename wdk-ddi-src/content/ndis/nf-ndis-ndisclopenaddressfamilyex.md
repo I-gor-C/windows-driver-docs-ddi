@@ -7,7 +7,7 @@ old-location: netvista\ndisclopenaddressfamilyex.htm
 old-project: netvista
 ms.assetid: 54170917-60b4-4d8f-bf92-df7d7dc0faee
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisClOpenAddressFamilyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   manager for a connection-oriented client.
 
 
+
 ## -syntax
 
 ````
@@ -64,16 +65,19 @@ The handle that
      identifies the target network interface card (NIC) or the virtual adapter of the next-lower driver that
      the caller is bound to.
 
+
 ### -param AddressFamily [in]
 
 A pointer to a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff545368">CO_ADDRESS_FAMILY</a> structure that describes
      the call manager and AF to be opened. 
      
+
 This pointer is an input parameter to the client's 
      <a href="..\ndis\nc-ndis-protocol_co_af_register_notify.md">
      ProtocolCoAfRegisterNotify</a> function, which calls 
      <b>NdisClOpenAddressFamilyEx</b>.
+
 
 ### -param ClientAfContext [in]
 
@@ -82,10 +86,12 @@ The handle to a caller-supplied resident context area in which the client mainta
      concerning this AF if the call to 
      <b>NdisClOpenAddressFamilyEx</b> succeeds.
 
+
 ### -param NdisAfHandle [out]
 
 A pointer to a caller-supplied variable in which 
      <b>NdisClOpenAddressFamilyEx</b> returns a handle that represents the newly opened address family.
+
 
 ## -returns
 When 
@@ -94,6 +100,7 @@ When
      <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">
      ProtocolClOpenAfCompleteEx</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClOpenAfCompleteEx</i> function when this operation is completed.
+
 
 ## -remarks
 A CoNDIS client calls 
@@ -134,11 +141,13 @@ NDIS passes the pointer from the
     allocated at 
     <i>ClientAfContext</i> .
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,14 +158,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,6 +179,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -177,14 +190,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
@@ -230,5 +246,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClOpenAddressFamilyEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClOpenAddressFamilyEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

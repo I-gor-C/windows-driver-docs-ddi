@@ -7,7 +7,7 @@ old-location: display\dxgk_querydisplayidin.htm
 old-project: display
 ms.assetid: C7A2CECA-AAE5-4804-92FF-C47984BA38AF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_QUERYDISPLAYIDIN, DXGK_QUERYDISPLAYIDIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used to query a display ID.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DXGK_QUERYDISPLAYIDIN {
 
 The ID being queried.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The ID being queried.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

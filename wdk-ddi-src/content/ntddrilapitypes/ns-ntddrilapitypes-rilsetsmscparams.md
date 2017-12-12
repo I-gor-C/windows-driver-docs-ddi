@@ -7,8 +7,8 @@ old-location: netvista\rilsetsmscparams.htm
 old-project: netvista
 ms.assetid: ebfb768a-fa6b-4781-96e1-787278237d5f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILSETSMSCPARAMS, RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS, RILSETSMSCPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILSETSMSCPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

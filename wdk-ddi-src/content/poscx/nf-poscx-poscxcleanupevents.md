@@ -44,6 +44,7 @@ req.product: Windows 10 or later.
       caller, identified by the open instance.
 
 
+
 ## -syntax
 
 ````
@@ -60,14 +61,17 @@ VOID PosCxCleanupEvents(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param fileObject [in]
 
 A handle to a framework file object for which all pending events should be 
 
           cleaned up.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -77,14 +81,17 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

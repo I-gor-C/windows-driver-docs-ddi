@@ -7,7 +7,7 @@ old-location: storage\ufs_flags_descriptor.htm
 old-project: storage
 ms.assetid: D530355F-5824-4F7C-84C4-57D3D03A7116
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: UFS_FLAGS_DESCRIPTOR, UFS_FLAGS_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>UFS_FLAGS_DESCRIPTOR</b> describes the different types of flags used by Universal Flash Storage (UFS) descriptors.
 
 
+
 ## -syntax
 
 ````
@@ -70,34 +71,42 @@ typedef enum _UFS_FLAGS_DESCRIPTOR {
 
 Reserved for future use.
 
+
 ### -field UFS_fDeviceInit
 
 Indicates the device initialization is in progress.
+
 
 ### -field UFS_fPermanentWPEn
 
 Indicates permanent write protection is enabled.
 
+
 ### -field UFS_fPowerOnWPEn
 
 Indicates power on write protection is enabled.
+
 
 ### -field UFS_fBackgroundOpsEn
 
 Indicates the device is permitted to run
 background operations.
 
+
 ### -field UFS_fDeviceLifeSpanModeEn
 
 Indicates Device Life Span Mode is enabled.
+
 
 ### -field UFS_fPurgeEnable
 
 Indicates Purge Operation is enabled.
 
+
 ### -field UFS_Reserved2
 
 Reserved for future use.
+
 
 ### -field UFS_fPhyResourceRemoval
 
@@ -105,14 +114,17 @@ Indicates
 that the dynamic capacity operation occurs on the device's EndPointReset or
 a hardware reset. The host cannot reset this flag.
 
+
 ### -field UFS_fBusyRTC
 
 Indicates the device is executing internal
 operation related to Real Time Clock.
 
+
 ### -field UFS_Reserved3
 
 Reserved for the Unified Memory Extension standard..
+
 
 ### -field UFS_fPermanentlyDisableFwUpdate
 
@@ -120,13 +132,16 @@ Indicates the UFS device will permanently
 disallow future firmware updates to
 the Universal Flash Storage (UFS) device.
 
+
 ### -field UFS_Reserved4
 
 Reserved for the Unified Memory Extension standard.
 
+
 ### -field UFS_Reserved5
 
 Reserved for the Unified Memory Extension standard.
+
 
 ## -remarks
 
@@ -136,22 +151,27 @@ Reserved for the Unified Memory Extension standard.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

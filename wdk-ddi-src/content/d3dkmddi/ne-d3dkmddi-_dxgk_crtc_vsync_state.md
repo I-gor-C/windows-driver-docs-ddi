@@ -7,7 +7,7 @@ old-location: display\dxgk_crtc_vsync_state.htm
 old-project: display
 ms.assetid: 1A7632BB-1DA6-4D03-8A3A-6468A2E4DF71
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_CRTC_VSYNC_STATE, DXGK_CRTC_VSYNC_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Provides additional information for <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_controlinterrupt2.md">DxgkDdi_ControlInterrupt2 </a>when VSYNC is being utilized.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _DXGK_CRTC_VSYNC_STATE {
 
 Indicates that the VSYNC interrupt is enabled and will call into the interrupt callback whenever a display target enters the VBLANK state.
 
+
 ### -field DXGK_VSYNC_DISABLE_KEEP_PHASE  
 
 Indicates that the VSYNC interrupt is disabled and the display driver will ensure that any request to re-enter the VSYNC enabled state will do so in the phase of interrupts prior to disable.
 
+
 ### -field DXGK_VSYNC_DISABLE_NO_PHASE    
 
 Indicates that the VSYNC interrupt is disabled, but that the display driver will not require re-entering the VSYNC enabled state in phase of prior interrupts.
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ Indicates that the VSYNC interrupt is disabled, but that the display driver will
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

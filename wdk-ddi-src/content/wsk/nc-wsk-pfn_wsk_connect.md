@@ -7,7 +7,7 @@ old-location: netvista\wskconnect.htm
 old-project: netvista
 ms.assetid: 66942ba4-40f9-4fdc-97f3-859309cd870d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <b>WskConnect</b> function connects a connection-oriented or stream socket to a remote transport address.
 
 
+
 ## -prototype
 
 ````
@@ -63,16 +64,19 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being connected to a remote transport address.
 
+
 ### -param RemoteAddress [in]
 
 A pointer to a structure that specifies the remote transport address to which to connect the
      socket. This pointer must be a pointer to the specific SOCKADDR structure type that corresponds to the
      address family that the WSK application specified when it created the socket.
 
+
 ### -param Flags 
 
 This parameter is reserved for system use. A WSK application must set this parameter to
      zero.
+
 
 ### -param Irp [in, out]
 
@@ -80,6 +84,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskConnect</b> returns one of the following NTSTATUS codes:
@@ -105,6 +110,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 
  
 
+
 ## -remarks
 A WSK application can call the 
     <b>WskConnect</b> function only on a connection-oriented or stream socket that the application previously bound to a
@@ -123,11 +129,13 @@ A WSK application can create, bind, and connect a connection-oriented socket in 
     <b>WskSocketConnect</b> function unless the WSK application needs to set a socket option or issue an I/O
     control operation before binding or connecting the socket.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -138,15 +146,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,9 +168,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -200,5 +213,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

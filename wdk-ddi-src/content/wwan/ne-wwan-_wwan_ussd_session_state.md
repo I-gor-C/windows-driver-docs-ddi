@@ -7,8 +7,8 @@ old-location: netvista\wwan_ussd_session_state.htm
 old-project: netvista
 ms.assetid: 5111A10F-F66F-4667-A77E-63691CCD282D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_USSD_SESSION_STATE, WWAN_USSD_SESSION_STATE, *PWWAN_USSD_SESSION_STATE
+ms.date: 12/8/2017
+ms.keywords: _WWAN_USSD_SESSION_STATE, *PWWAN_USSD_SESSION_STATE, WWAN_USSD_SESSION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_USSD_SESSION_STATE enumeration lists the different types of USSD session states.
 
 
+
 ## -syntax
 
 ````
@@ -58,26 +59,32 @@ typedef enum _WWAN_USSD_SESSION_STATE {
 
 The USSD string is the first message of a USSD session.
 
+
 ### -field WwanUssdSessionStateExisting
 
 The USSD string is not the first message of a USSD session.
 
+
 ## -remarks
 Miniport drivers use the WWAN_USSD_SESSION_STATE enumeration to indicate whether a USSD string is the first message of a USSD session. Miniport drivers must use <i>WwanUssdSessionStateNew</i> for the first message of a network-initiated USSD session. Miniport drivers should use <i>WwanUssdSessionStateExisting</i> in all other cases.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

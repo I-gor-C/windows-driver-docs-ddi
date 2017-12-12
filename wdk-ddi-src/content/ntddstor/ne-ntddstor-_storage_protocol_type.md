@@ -7,8 +7,8 @@ old-location: storage\storage_protocol_type.htm
 old-project: storage
 ms.assetid: 3CC4DF0A-26F1-4825-AD89-D56B0D5F4AC6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STORAGE_PROTOCOL_TYPE, *PSTORAGE_PROTOCOL_TYPE, STORAGE_PROTOCOL_TYPE
+ms.date: 12/8/2017
+ms.keywords: _STORAGE_PROTOCOL_TYPE, STORAGE_PROTOCOL_TYPE, *PSTORAGE_PROTOCOL_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql:
 This enumeration is used to define the different storage command protocols that are used between software and hardware.
 
 
+
 ## -syntax
 
 ````
@@ -63,42 +64,52 @@ typedef enum _STORAGE_PROTOCOL_TYPE {
 
 Unknown protocol type.
 
+
 ### -field ProtocolTypeScsi
 
 SCSI protocol type.
+
 
 ### -field ProtocolTypeAta
 
 ATA protocol type.
 
+
 ### -field ProtocolTypeNvme
 
 NVMe protocol type.
+
 
 ### -field ProtocolTypeSd
 
 SD protocol type.
 
+
 ### -field ProtocolTypeUfs
 
 UFS protocol type.
+
 
 ### -field ProtocolTypeProprietary
 
  Vendor-specific protocol type.
 
+
 ### -field ProtocolTypeMaxReserved
 
 Reserved.
 
+
 ## -remarks
 Protocol types that are 128 (0x80) and above in value are reserved for Microsoft use.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

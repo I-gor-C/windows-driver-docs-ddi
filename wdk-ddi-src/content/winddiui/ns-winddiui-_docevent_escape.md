@@ -7,8 +7,8 @@ old-location: print\docevent_escape.htm
 old-project: print
 ms.assetid: 54ac7c45-63a1-4003-8250-524e6f9e8d06
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _DOCEVENT_ESCAPE, DOCEVENT_ESCAPE, *PDOCEVENT_ESCAPE
+ms.date: 12/9/2017
+ms.keywords: _DOCEVENT_ESCAPE, *PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The DOCEVENT_ESCAPE structure is a container for values used as parameters for the <b>ExtEscape</b> function.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _DOCEVENT_ESCAPE {
 
 Specifies the value of the <b>ExtEscape</b> function's <i>nEscape</i> parameter.
 
+
 ### -field cjInput
 
 Specifies the value of the <b>ExtEscape</b> function's <i>cbInput</i> parameter.
 
+
 ### -field pvInData
 
 Specifies the value of the <b>ExtEscape</b> function's <i>lpszInData</i> parameter.
+
 
 ## -remarks
 The DOCEVENT_ESCAPE structure is defined for Windows XP and later.
@@ -74,11 +78,13 @@ This structure is used in conjunction with a call to <a href="print.drvdocumente
 
 Refer to the Microsoft Windows SDK documentation for a description of the <b>ExtEscape</b> function and the three parameters that correspond to the members of this structure. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,5 +104,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DOCEVENT_ESCAPE structure%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DOCEVENT_ESCAPE structure%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

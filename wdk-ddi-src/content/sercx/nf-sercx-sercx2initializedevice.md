@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SerCx2InitializeDevice</b> method finishes initializing the framework device object for the serial controller.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS SerCx2InitializeDevice(
 
 A WDFDEVICE handle to the framework device object that represents the serial controller. For more information, see Remarks.
 
+
 ### -param Config [in]
 
 A pointer to a caller-allocated <a href="serports.sercx2_config">SERCX2_CONFIG</a> structure that contains pointers to a set of event callback functions that are implemented by the serial controller driver. Version 2 of the serial framework controller (SerCx2) calls these functions to configure the serial controller and to perform basic operations that are independent of the I/O transaction types (PIO, system DMA, or custom) that the driver  supports.
+
 
 ## -returns
 <b>SerCx2InitializeDevice</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status codes.
@@ -79,6 +82,7 @@ A pointer to a caller-allocated <a href="serports.sercx2_config">SERCX2_CONFIG</
 
  
 
+
 ## -remarks
 Before calling this method, the serial controller driver must must previously have called the <a href="serports.sercx2initializedeviceinit">SerCx2InitializeDeviceInit</a> method.
 
@@ -90,11 +94,13 @@ If the <b>RequestAttributes</b> member of the <b>SERCX2_CONFIG</b> structure is 
 
 If the driver calls the <a href="kmdf.wdfdeviceinitsetrequestattributes">WdfDeviceInitSetRequestAttributes</a> method to set the attributes to use for request objects, the request attributes specified in this call must match the request attributes that the driver specifies in the call to <b>SerCx2InitializeDevice</b>. For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C-BE91-405A4BA2D5B0">SerCx2 Custom-Receive Transactions</a> and <a href="https://msdn.microsoft.com/E72E68BC-A60A-41BE-8606-92A608648042">SerCx2 Custom-Transmit Transactions</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,14 +111,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +132,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -149,5 +160,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SerCx2InitializeDevice method%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

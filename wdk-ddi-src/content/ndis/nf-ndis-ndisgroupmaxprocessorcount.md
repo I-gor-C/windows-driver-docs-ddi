@@ -7,7 +7,7 @@ old-location: netvista\ndisgroupmaxprocessorcount.htm
 old-project: netvista
 ms.assetid: 545a5014-aa07-49ee-92b7-2ae95f4ce785
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisGroupMaxProcessorCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   processor group.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ ULONG NdisGroupMaxProcessorCount(
 
 A USHORT value that identifies a processor group in the local computer system.
 
+
 ## -returns
 <b>NdisGroupMaxProcessorCount</b> returns a ULONG value for the maximum number of processors that are
       included in the group that is specified in the 
@@ -66,6 +68,7 @@ A USHORT value that identifies a processor group in the local computer system.
 If the 
       <i>Group</i> parameter is ALL_PROCESSOR_GROUPS, 
       <b>NdisGroupMaxProcessorCount</b> returns the maximum number of processors in the local computer.
+
 
 ## -remarks
 An NDIS driver might call the 
@@ -76,11 +79,13 @@ The processor count can change at runtime on SKUs that support hot-add functiona
     <a href="netvista.ndisgroupactiveprocessorcount">
     NdisGroupActiveProcessorCount</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -119,9 +128,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -137,5 +148,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGroupMaxProcessorCount function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGroupMaxProcessorCount function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

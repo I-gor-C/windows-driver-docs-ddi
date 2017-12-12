@@ -7,7 +7,7 @@ old-location: netvista\protocoltcpoffloadreceiveindicate.htm
 old-project: netvista
 ms.assetid: 8a400515-3619-4fe9-8e08-638859442ea3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,10 +39,12 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 NDIS calls a protocol driver's or intermediate driver's 
   <i>
   ProtocolTcpOffloadReceiveIndicate</i> function to deliver received data that is being indicated by an
   underlying driver or offload target.
+
 
 
 ## -prototype
@@ -71,6 +73,7 @@ A pointer to the protocol or intermediate driver's
      <a href="netvista.ndisinitiateoffload">NdisInitiateOffload</a> function when
      offloading the connection.
 
+
 ### -param NetBufferList [in]
 
 A pointer to a 
@@ -83,6 +86,7 @@ A pointer to a
       <a href="kernel.mdl">memory descriptor lists (MDLs)</a>. The MDLs contain the
       received data. The MDLs are locked so that they remain resident, but they are not mapped into system
       memory.
+
 The 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure
       specified by 
@@ -93,16 +97,19 @@ The
       <a href="netvista.net_buffer">NET_BUFFER</a> in an offload receive
       indication.
 
+
 ### -param Status [in]
 
 An intermediate driver should propagate this status when calling 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">
      NdisTcpOffloadReceiveHandler</a>.
 
+
 ### -param BytesConsumed [out]
 
 A pointer to a ULONG-typed variable that receives the number of bytes that were consumed by the
      client application.
+
 
 ## -returns
 The 
@@ -121,6 +128,7 @@ The
        <i>BytesConsumed</i> parameter.
 
  
+
 
 ## -remarks
 To propagate the indication to the overlying driver or host stack, the intermediate driver calls the 
@@ -143,11 +151,13 @@ The
       <i>Status</i> that NDIS passed to the intermediate driver's 
       <i>ProtocolTcpOffloadReceiveIndicate</i> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,5 +192,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

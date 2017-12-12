@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasParseEndorserString</b> function parses an endorser string, replacing WIA service-defined and vendor-defined tokens in the string with values associated with those tokens.
 
 
+
 ## -syntax
 
 ````
@@ -60,20 +61,25 @@ HRESULT _stdcall wiasParseEndorserString(
 
 Pointer to a WIA Item context (the context of the item containing the WIA_DPS_ENDORSER_STRING property (described in the Microsoft Windows SDK documentation)).
 
+
 ### -param lFlags 
 
 Reserved for system use and should be set to 0.
+
 
 ### -param pInfo [out, optional]
 
 Pointer to a <a href="image.wias_endorser_info">WIAS_ENDORSER_INFO</a> structure containing the page count and a list of custom token/value pairs. Can be <b>NULL</b>.
 
+
 ### -param pOutputString [out]
 
 Pointer to a memory location that receives the address of the parsed endorser string. If *<i>pOutputString</i> is non-<b>NULL</b> on entry, then the function assumes that the caller allocated the buffer; otherwise the WIA service will allocate it. Note that the WIA service assumes the <i>maximum</i> resultant endorser string is MAX_PATH (defined in <i>stdlib.h</i>) characters long. If the driver expects the string to be longer, it should allocate the buffer itself. If the caller allocates the buffer, it <i>must</i> initialize the contents of the buffer to zero before using this function.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Windows SDK documentation).
+
 
 ## -remarks
 An application sets the WIA_DPS_ENDORSER_STRING property to a string that can contain the WIA service-defined tokens $DATE$, $TIME$, $PAGE_COUNT$, $DAY$, $MONTH$, and $YEAR$, as well as vendor-defined tokens. After a driver calls <b>wiasParseEndorserString</b>, the string pointed to by <i>pOutputString</i> contains a copy of the string in WIA_DPS_ENDORSER_STRING property, but with any tokens replaced by the values the tokens represent. For example, if the application set the endorser string to "This page was scanned on $DATE$", and the current date was October 1, 2000, the resulting output string would be "This page was scanned on 2000/10/1".
@@ -84,11 +90,13 @@ Drivers can request that <b>wiasParseEndorserString</b> substitute values for ve
 
 Assuming that the WIA_DPS_ENDORSER_STRING property contains "This is $MY_TOKEN$", and that the call to <b>wiasParseEndorserString</b> was successful, <i>bstrResultingEndorser</i> will now contain "This is My value".
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +139,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +159,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasParseEndorserString function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

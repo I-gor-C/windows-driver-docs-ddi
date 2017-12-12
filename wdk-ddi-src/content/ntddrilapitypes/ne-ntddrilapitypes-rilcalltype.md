@@ -7,7 +7,7 @@ old-location: netvista\rilcalltype.htm
 old-project: netvista
 ms.assetid: bd6b9e57-f50b-4743-9c51-066940aad200
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLTYPE, RILCALLTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -95,6 +96,7 @@ typedef enum _RILCALLTYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 <i>KStrFastHandler</i> is a driver-supplied routine that handles a property or method request without the creation of an IRP.
 
 
+
 ## -prototype
 
 ````
@@ -64,37 +65,46 @@ BOOLEAN KStrFastHandler(
 
 Specifies the file object on which the request was made.
 
+
 ### -param Request [in]
 
 Specifies the original property parameter. This will always be on FILE_LONG_ALIGNMENT, but cannot be on FILE_QUAD_ALIGNMENT.
+
 
 ### -param RequestLength [in]
 
 Specifies the length indicated by the caller of the property parameter.
 
+
 ### -param Data [in, out]
 
 Specifies the original unaligned data parameter.
+
 
 ### -param DataLength [in]
 
 Specifies the length indicated by the caller of the data parameter.
 
+
 ### -param IoStatus [out]
 
 Specifies an aligned structure that is used to return error status and information. This information is then copied to the original I/O status structure on completion.
 
+
 ## -returns
 <i>KStrFastHandler</i> returns <b>TRUE</b> if the call was handled. If the call was not handled, it returns <b>FALSE</b> and an IRP is generated to handle the request.
 
+
 ## -remarks
 The minidriver provides an entry point for this routine in <a href="stream.ksfastproperty_item">KSFASTPROPERTY_ITEM</a> or <a href="stream.ksfastmethod_item">KSFASTMETHOD_ITEM</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +115,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

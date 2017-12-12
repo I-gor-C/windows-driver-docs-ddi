@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_create_protected_session_cb_0030.htm
 old-project: display
 ms.assetid: 64E38759-2863-4481-8A89-6E6263CEFE8B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to create a protected session state.
 
 
+
 ## -prototype
 
 ````
@@ -58,16 +59,20 @@ HRESULT APIENTRY CALLBACK* PFND3D12DDI_CREATE_PROTECTED_SESSION_CB_0030(
 
 The hardware device being processed.
 
+
 ### -param hRTProtectedSession 
 
 The protected session.
+
 
 ### -param D3D12DDICB_CREATE_PROTECTED_RESOURCE_SESSION [in]
 
 Used to create a protected resource session
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -77,22 +82,27 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

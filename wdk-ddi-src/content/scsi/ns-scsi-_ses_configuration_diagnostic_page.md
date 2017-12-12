@@ -7,8 +7,8 @@ old-location: storage\ses_configuration_diagnostic_page.htm
 old-project: storage
 ms.assetid: 0FD748D6-F598-44D1-A8D3-E63764CB90C6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE
+ms.date: 12/8/2017
+ms.keywords: _SES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <= APC_LEVEL
+req.irql: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 TBD
+
 
 
 ## -syntax
@@ -62,22 +64,27 @@ typedef struct _SES_CONFIGURATION_DIAGNOSTIC_PAGE {
 
 Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x01.
 
+
 ### -field NumberOfSecondarySubEnclosures
 
 Specifies the number of separate subenclosures included in
 the enclosure descriptor list, not including the primary subenclosure. If this is set to zero, only the primary subenclosure exists.
 
+
 ### -field PageLength
 
 Specifies the length of the diagnostic page, in bytes.
+
 
 ### -field GenerationCode
 
 Specifies the value of the generation code.
 
+
 ### -field Descriptors
 
 Specifies the enclosure descriptors for the primary and secondary enclosures. The primary enclosure is the first index.
+
 
 ## -remarks
 
@@ -87,14 +94,17 @@ Specifies the enclosure descriptors for the primary and secondary enclosures. Th
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10, version 1709 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

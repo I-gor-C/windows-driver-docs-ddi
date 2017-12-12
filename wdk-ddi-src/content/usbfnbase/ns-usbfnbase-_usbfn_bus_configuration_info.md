@@ -43,6 +43,7 @@ Configuration packet that stores information about
 an available USB configuration.
 
 
+
 ## -syntax
 
 ````
@@ -60,14 +61,17 @@ typedef struct _USBFN_BUS_CONFIGURATION_INFO {
 
 A NULL-terminated string that indicates the name of a configuration.
 
+
 ### -field  IsCurrent
 
 Indicates whether this configuration is the 
     current configuration.
 
+
 ### -field  IsActive
 
     Indicates whether the configuration is active. This is a read-only information that is returned by USB function class extension (UFX) and is ignored in requests sent to UFX.
+
 
 
 ## -remarks
@@ -78,6 +82,7 @@ Indicates whether this configuration is the
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

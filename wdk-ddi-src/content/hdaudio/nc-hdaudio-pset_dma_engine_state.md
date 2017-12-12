@@ -39,7 +39,9 @@ req.irql: <=DISPATCH_LEVEL
 
 ## -description
 The <i>SetDmaEngineState</i> routine sets the state of one or more DMA engines to the Running, Stopped, Paused, or Reset state.
+
 The function pointer type for a <i>SetDmaEngineState</i> routine is defined as:
+
 
 
 ## -prototype
@@ -63,32 +65,41 @@ NTSTATUS SetDmaEngineState(
 
 Specifies the context value from the <b>Context</b> member of the <a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
+
 ### -param streamState [in]
 
 Specifies the new stream state. Set this parameter to one of the following HDAUDIO_STREAM_STATE enumeration values:
+
 <ul>
 <li>
 <b>PauseState</b> (paused)
+
 </li>
 <li>
 <b>ResetState</b> (reset)
+
 </li>
 <li>
 <b>RunState</b> (running)
+
 </li>
 <li>
 <b>StopState</b> (stopped)
+
 </li>
 </ul>
 In the current implementation, <b>PauseState</b> and <b>StopState</b> represent the same hardware state.
+
 
 ### -param numberOfHandles [in]
 
 Specifies the number of handles in the <i>handles</i> array. Set this parameter to a nonzero value.
 
+
 ### -param handles [in]
 
 Pointer to an array of handles to DMA engines. Specify a non-<b>NULL</b> value for this parameter.
+
 
 ## -returns
 <i>SetDmaEngineState</i> returns STATUS_SUCCESS if the call succeeds in changing the DMA engines' states. Otherwise, the routine returns an appropriate error code. The following table shows some of the possible return status codes.
@@ -103,6 +114,7 @@ Pointer to an array of handles to DMA engines. Specify a non-<b>NULL</b> value f
 </dl>Indicates that no buffer is currently allocated for one of the DMA engines.
 
  
+
 
 ## -remarks
 This routine changes the state of one or more DMA engines to the state that the <i>streamState</i> parameter specifies. The routine synchronizes the state transitions of all the DMA engines that the handles in the <i>handles</i> array identify. For more information, see <a href="https://msdn.microsoft.com/c25f4ca2-8a9f-43bc-a1bf-b71826b446ff">Synchronizing Two or More Streams</a>.
@@ -123,11 +135,13 @@ From a paused or stopped state, the stream state can change directly to either R
 
 A WDM audio driver calls this routine during a call to its <b>SetState</b> method. For example, see <a href="audio.iminiportwavecyclicstream_setstate">IMiniportWaveCyclicStream::SetState</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -138,6 +152,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,9 +163,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -177,5 +194,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PSET_DMA_ENGINE_STATE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

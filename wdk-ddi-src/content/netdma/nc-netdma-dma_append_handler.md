@@ -7,7 +7,7 @@ old-location: netvista\providerappenddma.htm
 old-project: netvista
 ms.assetid: 51de8ddf-cbfc-4e49-b44a-207307a937e7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _MIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,6 +64,7 @@ A pointer that identifies a DMA channel's context area. The DMA provider returne
      <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
      ProviderAllocateDmaChannel</a> function.
 
+
 ### -param DescriptorVirtualAddress [in]
 
 A pointer to the virtual address of the first 
@@ -71,17 +72,20 @@ A pointer to the virtual address of the first
      list of DMA descriptors. The corresponding physical address is specified at the 
      <i>DescriptorPhysicalAddress</i> parameter.
 
+
 ### -param DescriptorPhysicalAddress [in]
 
 A pointer to the physical address of the first DMA descriptor in a linked list of DMA descriptors.
      The corresponding virtual address is specified at the 
      <i>DescriptorVirtualAddress</i> parameter.
 
+
 ### -param DescriptorCount [in]
 
 The number of DMA descriptors at 
      <i>DescriptorVirtualAddress</i> .
      
+
 <div class="alert"><b>Note</b>  NetDMA provider drivers prior to NetDMA version 2.0 can ignore the 
      <i>DescriptorCount</i> parameter. For NetDMA 2.0 and later versions, this parameter is the count of
      descriptors in the DMA operation.</div>
@@ -97,6 +101,7 @@ The number of DMA descriptors at
 </dl>The operation failed for unspecified reasons.
 
  
+
 
 ## -remarks
 The NetDMA interface calls a DMA provider driver's 
@@ -123,21 +128,25 @@ If the current descriptor in an active transfer is the last descriptor, the DMA 
 NetDMA calls 
     <i>ProviderAppendDma</i> at IRQL &lt;= DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1
    drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows
    Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,9 +157,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -168,5 +179,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_APPEND_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_APPEND_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <i>The minidriver-supplied StrMiniReceiveDevicePacket</i> routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device.
 
 
+
 ## -prototype
 
 ````
@@ -60,8 +61,10 @@ VOID StrMiniReceiveDevicePacket(
 
 Pointer to the stream request block.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The minidriver specifies this routine in the <b>HwReceivePacket</b> member of its <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure. The minidriver passes this structure to the class driver when it registers itself by calling <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.
@@ -74,11 +77,13 @@ See information about relevant SRB codes in <a href="https://msdn.microsoft.com/
 
 When the minidriver finishes its processing of the request, it enters the return status of the operation in <i>pSrb</i>-&gt;<b>Status</b>. The minidriver should enter STATUS_SUCCESS for normal successful processing. If the minidriver does not support that Command value, it should set <i>pSrb</i>-&gt;<b>Status</b> to STATUS_NOT_IMPLEMENTED. If there is a device hardware error that prevents the minidriver from completing the request, it should set <i>pSrb</i>-&gt;<b>Status</b> to STATUS_IO_DEVICE_ERROR. Other error codes the routine uses in specific circumstances are listed above with the specific Command code.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

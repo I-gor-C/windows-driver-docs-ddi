@@ -7,8 +7,8 @@ old-location: storage\drive_layout_information.htm
 old-project: storage
 ms.assetid: 980cd307-9048-4054-be8e-967d15862a14
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION, *PDRIVE_LAYOUT_INFORMATION
+ms.date: 12/8/2017
+ms.keywords: _DRIVE_LAYOUT_INFORMATION, *PDRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The DRIVE_LAYOUT_INFORMATION structure is obsolete and is provided only to support existing drivers. New drivers must use <a href="storage.drive_layout_information_ex">DRIVE_LAYOUT_INFORMATION_EX</a>. 
+
 The DRIVE_LAYOUT_INFORMATION structure is used to report information about a disk drive and its partitions. It is also used to write new drive layout information to the disk. 
+
 
 
 ## -syntax
@@ -59,22 +61,27 @@ typedef struct _DRIVE_LAYOUT_INFORMATION {
 
 Contains the number of partitions on the drive. 
 
+
 ### -field Signature
 
 Contains the disk signature.
+
 
 ### -field PartitionEntry
 
 Contains a variable-length array of <a href="storage.partition_information">PARTITION_INFORMATION</a> structures, one for each partition on the drive. 
 
+
 ## -remarks
 In Windows 2000 and later operating systems, disk drivers should use structures <a href="storage.drive_layout_information_ex">DRIVE_LAYOUT_INFORMATION_EX</a> and <a href="storage.partition_information_ex">PARTITION_INFORMATION_EX</a> along with routines <b>IoReadPartitionTableEx</b> and <a href="storage.iosetpartitioninformationex">IoSetPartitionInformationEx</a> to read and alter partition information on the disk. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,5 +116,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DRIVE_LAYOUT_INFORMATION structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DRIVE_LAYOUT_INFORMATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

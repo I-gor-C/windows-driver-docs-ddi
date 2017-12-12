@@ -41,6 +41,7 @@ req.irql:
 The <b>KsPersistDeviceProfile</b> API commits the profile information to the persistent store.
 
 
+
 ## -syntax
 
 ````
@@ -56,9 +57,11 @@ The <b>KsPersistDeviceProfile</b> API commits the profile information to the per
 
 This is the <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> that was used to initialize the profile store in <a href="stream.ksinitializedeviceprofile">KsInitializeDeviceProfile</a>.
 
+
 ## -returns
 If <b>KsPersistDeviceProfile</b> is called without first initializing the profile store with <b>KsInitializeDeviceProfile</b> the call to <b>KsPersistDeviceProfile</b> will fail with <b>STATUS_INVALID_DEVICE_REQUEST</b>.
 Furthermore, this API may also fail with <b>STATUS_INSUFFICIENT_RESOURCE</b> if the page pool is exhausted when profile information is being persisted.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ Furthermore, this API may also fail with <b>STATUS_INSUFFICIENT_RESOURCE</b> if 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

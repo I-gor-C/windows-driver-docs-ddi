@@ -7,7 +7,7 @@ old-location: netvista\wdi_rx_indication_level.htm
 old-project: netvista
 ms.assetid: 73ad8d04-c245-4a3c-92ff-4729737ede92
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_RX_INDICATION_LEVEL, WDI_RX_INDICATION_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The WDI_RX_INDICATION_LEVEL enumeration defines the RX indication levels.
 
 
+
 ## -syntax
 
 ````
@@ -64,37 +65,46 @@ typedef enum _WDI_RX_INDICATION_LEVEL {
 
 Used for subsequent data indications in a DPC. <b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b> is used for the first data indication of a DPC.
 
+
 ### -field WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC
 
 Used for the first data indication (<a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_inorder_data_ind.md">NdisWdiRxInorderDataIndication</a>) of a DPC.
+
 
 ### -field WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES
 
 Used when making data indications in the context of <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_resume.md">MiniportWdiRxResume</a>.
 
+
 ### -field WDI_RX_INDICATION_PASSIVE
 
 Used when making data indications at passive level.
+
 
 ### -field WDI_RX_INDICATION_FLAG_RESOURCES
 
 Bitwise OR’d with other enum values to cause RxMgr to set <b>NDIS_RECEIVE_FLAG_RESOURCES</b>.
 
+
 ### -field WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES
 
 Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_GENERAL</b>.
+
 
 ### -field WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES
 
 Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b>.
 
+
 ### -field WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES
 
 Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES</b>.
 
+
 ### -field WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES
 
 Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_PASSIVE</b>.
+
 
 ## -remarks
 
@@ -104,22 +114,27 @@ Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_P
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

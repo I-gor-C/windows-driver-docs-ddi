@@ -7,8 +7,8 @@ old-location: netvista\net_buffer_data.htm
 old-project: netvista
 ms.assetid: d1b5e1c7-5ade-4f54-a5f1-200420964f0e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NET_BUFFER_DATA, *PNET_BUFFER_DATA, NET_BUFFER_DATA
+ms.date: 12/8/2017
+ms.keywords: _NET_BUFFER_DATA, NET_BUFFER_DATA, *PNET_BUFFER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NET_BUFFER_DATA structure
@@ -42,6 +42,7 @@ The NET_BUFFER_DATA structure contains information for managing the data buffers
   a NET_BUFFER structure, and it identifies the next 
   <a href="netvista.net_buffer">NET_BUFFER</a> structure in a list of NET_BUFFER
   structures.
+
 
 
 ## -syntax
@@ -65,10 +66,12 @@ typedef struct _NET_BUFFER_DATA {
 A pointer to the next NET_BUFFER structure in a linked list of NET_BUFFER structures. If this
      structure is the last NET_BUFFER structure in the list, this member is <b>NULL</b>.
 
+
 ### -field CurrentMdl
 
 A pointer to the first MDL that the current driver is using. This member provides an optimization
      that improves performance by skipping over any MDLs that the current driver is not using.
+
 
 ### -field CurrentMdlOffset
 
@@ -76,21 +79,25 @@ The offset, in bytes, to the beginning of the
      <i>used data space</i> in the MDL that is specified by the 
      <b>CurrentMdl</b> member.
 
+
 ### -field NbDataLength
 
 The length, in bytes, of the used data space in the MDL chain. The maximum length is 0xFFFFFFFF
      bytes.
+
 
 ### -field MdlChain
 
 A pointer to a linked list of MDLs that map a data buffer. The data buffer stores the network
      data.
 
+
 ### -field DataOffset
 
 The offset, in bytes, from the beginning of the MDL chain to the beginning of the network data in
      the MDL chain. This offset is also the size, in bytes, of the 
      <i>unused data space</i>.
+
 
 ## -remarks
 The 
@@ -128,19 +135,23 @@ The
        NET_BUFFER_CURRENT_MDL_OFFSET</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -186,5 +197,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_DATA structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_DATA structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

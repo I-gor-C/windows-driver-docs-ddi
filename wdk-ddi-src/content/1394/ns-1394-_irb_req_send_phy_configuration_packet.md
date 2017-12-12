@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary to carry out a SendPhyConfigurationPacket request.
 
 
+
 ## -syntax
 
 ````
@@ -56,14 +57,17 @@ typedef struct _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET {
 
 Points to the PHY_CONFIGURATION_PACKET structure.
 
+
 ## -remarks
 The packet is sent to all nodes on the bus. See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for a description of Phy packets.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

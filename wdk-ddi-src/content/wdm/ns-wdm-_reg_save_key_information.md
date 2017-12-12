@@ -7,7 +7,7 @@ old-location: kernel\reg_save_key_information.htm
 old-project: kernel
 ms.assetid: 911e1035-4415-43c1-9e9c-cc8feab2bd97
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _REG_SAVE_KEY_INFORMATION, REG_SAVE_KEY_INFORMATION, *PREG_SAVE_KEY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>REG_SAVE_KEY_INFORMATION</b> structure contains the information for a registry key that is about to be saved.
 
 
+
 ## -syntax
 
 ````
@@ -62,13 +63,16 @@ typedef struct _REG_SAVE_KEY_INFORMATION {
 
 A pointer to a registry key object for the key whose information is about to be saved.
 
+
 ### -field FileHandle
 
 A handle to the file to which the hive information will be saved.
 
+
 ### -field Format
 
 The format in which the key or hive is saved. This member can have one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -89,36 +93,44 @@ The format in which the key or hive is saved. This member can have one of the fo
 </table>
  
 
+
 ### -field CallContext
 
 Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined starting with Windows Vista.
+
 
 ### -field ObjectContext
 
 A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="kernel.cmsetcallbackobjectcontext">CmSetCallbackObjectContext</a>. This member is defined starting with Windows Vista.
 
+
 ### -field Reserved
 
 This member is reserved for future use. This member is defined starting with Windows Vista.
+
 
 ## -remarks
 Note that when a key is saved, only the last component of the path can be changed.
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista SP2.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,5 +150,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20REG_SAVE_KEY_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20REG_SAVE_KEY_INFORMATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

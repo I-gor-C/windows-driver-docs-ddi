@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WINBIO_BIR_HEADER structure contains the Common Biometric Exchange File Format (CBEFF) Patron Format A information that describes the rest of the BIR.
 
 
+
 ## -syntax
 
 ````
@@ -71,10 +72,13 @@ typedef struct _WINBIO_BIR_HEADER {
 
 A Patron Format A bitmask that indicates which CBEFF optional fields are present in the BIR. For more information about all members of WINBIO_BIR_HEADER, follow the link in the Remarks section to the <i>NISTIR 6529-A Specification</i>. 
 
+
 ### -field HeaderVersion
 
 A structure of type WINBIO_BIR_VERSION that specifies the CBEFF header version.
+
 Versions are represented as 8-bit values of the form: 0x<i>NM</i>, where <i>N</i> is the major version and <i>M</i> is the minor version.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -90,27 +94,35 @@ Versions are represented as 8-bit values of the form: 0x<i>NM</i>, where <i>N</i
 
 A structure of type WINBIO_BIR_VERSION that specifies PATRON_HEADER_VERSION.
 
+
 ### -field DataFlags
 
 A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536461">WINBIO_BIR_DATA_FLAGS</a> that specifies the level of processing expected for a data capture.
+
 
 ### -field Type
 
 A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536458">WINBIO_BIOMETRIC_TYPE</a> that specifies the biometric type.
 
+
 ### -field Subtype
 
 A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536457">WINBIO_BIOMETRIC_SENSOR_SUBTYPE</a> that specifies the biometric subtype.
+
 
 ### -field Purpose
 
 A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536463">WINBIO_BIR_PURPOSE</a> that specifies the intended use of the data.
 
+
 ### -field DataQuality
 
 A structure of type WINBIO_BIR_QUALITY that specifies the biometric data quality. Quality measurements are represented as signed integers in the range 0-100, except:
+
 -1  Quality measurements are supported by the BIR creator, but no value is set in the BIR.
+
 -2  Quality measurements are not supported by the BIR creator.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -126,34 +138,42 @@ A structure of type WINBIO_BIR_QUALITY that specifies the biometric data quality
 
 Specifies the creation date and time of this BIR in UTC by using the format YYYYMMDDhhmmss.
 
+
 ### -field ValidityPeriod
 
 Specifies the validity period of this BIR by using the format described in <i>CreationDate</i>.
+
 
 ### -field BiometricDataFormat
 
 A structure of type <a href="biometric.winbio_registered_format">WINBIO_REGISTERED_FORMAT</a> that specifies the data format of the <b>StandardDataBlock</b> for this <a href="biometric.winbio_bir">WINBIO_BIR</a>.
 
+
 ### -field ProductId
 
 A structure of type <a href="biometric.winbio_registered_format">WINBIO_REGISTERED_FORMAT</a> that specifies the product identifier for the component that generated the <b>StandardDataBlock</b> for this WINBIO_BIR.
 
+
 ## -remarks
 You can find more information about the fields of the standard biometric header in the <a href="http://go.microsoft.com/fwlink/p/?linkid=133328">NISTIR 6529-A Specification</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,5 +193,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [biometric\biometric]:%20WINBIO_BIR_HEADER structure%20 RELEASE:%20(11/13/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

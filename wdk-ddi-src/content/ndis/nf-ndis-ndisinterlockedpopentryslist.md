@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisInterlockedPopEntrySList
-title: NdisInterlockedPopEntrySList
+title: NdisInterlockedPopEntrySList macro
 author: windows-driver-content
 description: The NdisInterlockedPopEntrySList function removes the first entry from a sequenced, singly linked list.
 old-location: netvista\ndisinterlockedpopentryslist.htm
 old-project: netvista
 ms.assetid: 22f79bc7-49e1-43ba-8dff-8847b9a9bcca
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisInterlockedPopEntrySList
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,75 +31,69 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
-req.iface: 
 ---
 
-# NdisInterlockedPopEntrySList function
+# NdisInterlockedPopEntrySList macro
 
 
 
 ## -description
-<p>The
+The
   <b>NdisInterlockedPopEntrySList</b> function removes the first entry from a sequenced, singly linked
-  list.</p>
+  list.
+
 
 
 ## -syntax
 
 ````
 PSINGLE_LIST_ENTRY NdisInterlockedPopEntrySList(
-  _In_ PSLIST_HEADER   ListHead,
-  _In_ PNDIS_SPIN_LOCK Lock
+  [in] PSLIST_HEADER   ListHead,
+  [in] PNDIS_SPIN_LOCK Lock
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param ListHead [in]
 
-<dd>
-<p>A pointer to the head of the already initialized sequenced, singly linked list from which the
-     entry is to be returned.</p>
-</dd>
+A pointer to the head of the already initialized sequenced, singly linked list from which the
+     entry is to be returned.
+
 
 ### -param Lock [in]
 
-<dd>
-<p>A pointer to a caller-supplied spin lock, not currently held by the caller.</p>
-</dd>
-</dl>
+A pointer to a caller-supplied spin lock, not currently held by the caller.
 
-## -returns
-<p><b>NdisInterlockedPopEntrySList</b> returns a pointer to the first entry in the list. If the list was
-     empty, this routine returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>A driver 
+A driver 
     <u>must not</u> be holding the given 
     <i>Lock</i> when it calls 
     <b>NdisInterlockedPopEntrySList</b>. If necessary, the driver should call the 
-    <a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a> function before
+    <a href="netvista.ndisreleasespinlock">NdisReleaseSpinLock</a> function before
     making this call. 
     <b>NdisInterlockedPopEntrySList</b> itself must acquire this spin lock to remove the first entry in the
-    S-List, if any, in a multiprocessor-safe way.</p>
+    S-List, if any, in a multiprocessor-safe way.
 
-<p>The caller must provide resident storage for the 
+The caller must provide resident storage for the 
     <i>Lock</i>, which must be initialized with the 
-    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> function before
+    <a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a> function before
     the initial call to any 
-    <b>NdisInterlocked..SList</b> function.</p>
+    <b>NdisInterlocked..SList</b> function.
 
-<p>If 
+If 
     <b>NdisInterlockedPopEntrySList</b> is called at IRQL &gt;= DISPATCH_LEVEL, the storage for the 
-    <i>ListHead</i> parameter must be resident.</p>
+    <i>ListHead</i> parameter must be resident.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -109,19 +103,22 @@ PSINGLE_LIST_ENTRY NdisInterlockedPopEntrySList(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/233bc698-d9d2-43d6-9a6d-20f539e9df37">NdisInterlockedPopEntrySList
    (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisInterlockedPopEntrySList
-   (NDIS 5.1)</b>) in Windows XP.</p>
+   (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,10 +128,12 @@ PSINGLE_LIST_ENTRY NdisInterlockedPopEntrySList(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>Any level</p>
+Any level
+
 </td>
 </tr>
 </table>
@@ -142,25 +141,28 @@ PSINGLE_LIST_ENTRY NdisInterlockedPopEntrySList(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisfreespinlock.md">NdisFreeSpinLock</a>
+<a href="netvista.ndisfreespinlock">NdisFreeSpinLock</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinitializeslisthead.md">NdisInitializeSListHead</a>
+<a href="netvista.ndisinitializeslisthead">NdisInitializeSListHead</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisinterlockedpushentryslist.md">
+<a href="netvista.ndisinterlockedpushentryslist">
    NdisInterlockedPushEntrySList</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
+<a href="netvista.ndisreleasespinlock">NdisReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisquerydepthslist.md">NdisQueryDepthSList</a>
+<a href="netvista.ndisquerydepthslist">NdisQueryDepthSList</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedPopEntrySList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedPopEntrySList macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

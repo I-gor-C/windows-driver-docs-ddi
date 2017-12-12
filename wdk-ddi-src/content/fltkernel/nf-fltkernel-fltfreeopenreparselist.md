@@ -42,6 +42,7 @@ This routine deallocates any information copied into a create operation by
     a previous call to <a href="ifsk.fltcopyopenreparselist">FltCopyOpenReparseList</a>.  
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ void FltAddOpenReparseEntry(
 
 The filter to dereference.
 
+
 ### -param EcpList [in]
 
 The ECP list whose open reparse information should
                        be deallocated.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ This routine does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,9 +109,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _IRQL_requires_max_(APC_LEVEL)
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_ycbcr_flags.htm
 old-project: display
 ms.assetid: fa915ec0-167f-441c-b2de-0ae2b852c432
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS, DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies YUV range and conversion info that describes a multiplane overlay.
 
 
+
 ## -syntax
 
 ````
@@ -58,38 +59,47 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 
 YUV values range from 16 to 235, inclusive, instead of the default range of 0 to 255, inclusive.
 
+
 ### -field DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709
 
 YUV values should be converted using the BT.709 standard, instead of the default BT.601 conversion.
+
 
 ### -field DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC
 
 YUV values contain xvYCC data, instead of conventional YCbCr data.
 
+
 ## -remarks
 For more info on how YUV ranges are defined and converted, see <a href="display.yuv_format_ranges">YUV format ranges in Windows 8.1</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

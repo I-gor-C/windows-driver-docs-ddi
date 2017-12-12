@@ -7,7 +7,7 @@ old-location: netvista\fwpsvswitcheventssubscribe0.htm
 old-project: netvista
 ms.assetid: 479ff048-f57f-42ca-8787-f87ed055fdbf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsvSwitchEventsSubscribe0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>FwpsvSwitchEventsSubscribe0</b> function registers callback entry points 
 
 
 
+
 ## -syntax
 
 ````
@@ -65,25 +66,31 @@ The provider GUID.
 
 
 
+
 ### -param notifyContext 
 
 An optional pointer to a callout driver–supplied context. Event notification functions  pass this parameter back to the driver.
+
 
 ### -param flags 
 
 Reserved. Set to zero.
 
+
 ### -param reserved 
 
 Reserved. Set to zero.
+
 
 ### -param eventDispatchTable 
 
 A pointer to an <a href="netvista.fwps_vswitch_event_dispatch_table0">FWPS_VSWITCH_EVENT_DISPATCH_TABLE</a> structure that defines the callback entry points for virtual switch layer events.
 
+
 ### -param subscriptionId 
 
 A pointer to a variable that contains a unique identifier that WFP assigns to the subscription. The caller must return the subscription identifier to WFP with the  <a href="netvista.fwpsvswitcheventsunsubscribe0">FwpsvSwitchEventsUnsubscribe0</a> function.
+
 
 ## -returns
 The 
@@ -98,6 +105,7 @@ The
 
  
 
+
 ## -remarks
 A callout driver calls the <b>FwpsvSwitchEventsSubscribe0</b> function to register callback entry points for virtual switch  layer events.
 
@@ -107,11 +115,13 @@ The callout driver must later call
     <a href="netvista.fwpsvswitcheventsunsubscribe0">FwpsvSwitchEventsUnsubscribe0</a>  to
     free the system resources.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -122,14 +132,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,6 +153,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +164,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -167,5 +183,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

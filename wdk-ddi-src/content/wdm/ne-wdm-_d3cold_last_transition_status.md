@@ -7,8 +7,8 @@ old-location: kernel\d3cold_last_transition_status.htm
 old-project: kernel
 ms.assetid: 21E89D92-9902-4785-B022-8D17268FE75F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _D3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS, *PD3COLD_LAST_TRANSITION_STATUS
+ms.date: 12/7/2017
+ms.keywords: _D3COLD_LAST_TRANSITION_STATUS, *PD3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>D3COLD_LAST_TRANSITION_STATUS</b> enumeration indicates whether the most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state.
 
 
+
 ## -syntax
 
 ````
@@ -59,22 +60,27 @@ typedef enum _D3COLD_LAST_TRANSITION_STATUS {
 
 Information is not available from the bus driver or platform firmware about whether the most recent transition to D3hot was followed by a transition to D3cold.
 
+
 ### -field LastDStateTransitionD3hot
 
 The most recent transition to the D3hot device power state was not followed by a transition to the D3cold device power state.
+
 
 ### -field LastDStateTransitionD3cold
 
 The most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state.
 
+
 ## -remarks
 The <i>LastTransitionStatus</i> parameter of the <a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a> routine is a pointer to a variable of type <b>D3COLD_LAST_TRANSITION_STATUS</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,5 +97,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20D3COLD_LAST_TRANSITION_STATUS enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20D3COLD_LAST_TRANSITION_STATUS enumeration%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

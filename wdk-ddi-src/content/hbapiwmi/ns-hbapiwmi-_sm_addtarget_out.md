@@ -7,7 +7,7 @@ old-location: storage\sm_addtarget_out.htm
 old-project: storage
 ms.assetid: ed4e58cb-6b32-454b-9538-f9f8aa68df4c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SM_AddTarget_OUT, SM_AddTarget_OUT, *PSM_AddTarget_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The SM_AddTarget_OUT structure is used to receive output parameters from the SM_AddTarget WMI method.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _SM_AddTarget_OUT {
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The status of the operation. For a list of allowed values and their descriptions
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

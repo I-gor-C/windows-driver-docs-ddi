@@ -7,7 +7,7 @@ old-location: kernel\initializeobjectattributes.htm
 old-project: kernel
 ms.assetid: ee89a9af-0bdf-476e-b4e3-eb60662e160d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: InitializeObjectAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>InitializeObjectAttributes</b> macro initializes the opaque <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure, which specifies the properties of an object handle to routines that open handles.
 
 
+
 ## -syntax
 
 ````
@@ -61,42 +62,53 @@ VOID InitializeObjectAttributes(
 
 Specifies the <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure to initialize.
 
+
 ### -param ObjectName [in]
 
 A pointer to a <a href="kernel.unicode_string">Unicode string</a> that contains name of the object for which a handle is to be opened. This must either be a fully qualified object name, or a relative path name to the object directory specified by the <i>RootDirectory</i> parameter.
+
 
 ### -param Attributes [in]
 
 Specifies one or more of the following flags:
 
 
+
+
 ### -param OBJ_INHERIT
 
 This handle can be inherited by child processes of the current process.
+
 
 ### -param OBJ_PERMANENT
 
 This flag only applies to objects that are named within the object manager. By default, such objects are deleted when all open handles to them are closed. If this flag is specified, the object is not deleted when all open handles are closed. Drivers can use <a href="kernel.zwmaketemporaryobject">ZwMakeTemporaryObject</a> to delete permanent objects.
 
+
 ### -param OBJ_EXCLUSIVE
 
 Only a single handle can be open for this object.
+
 
 ### -param OBJ_CASE_INSENSITIVE
 
 If this flag is specified, a case-insensitive comparison is used when matching the <i>ObjectName</i> parameter against the names of existing objects. Otherwise, object names are compared using the default system settings.
 
+
 ### -param OBJ_OPENIF
 
 If this flag is specified to a routine that creates objects, and that object already exists then the routine should open that object. Otherwise, the routine creating the object returns an NTSTATUS code of STATUS_OBJECT_NAME_COLLISION.
+
 
 ### -param OBJ_KERNEL_HANDLE
 
 Specifies that the handle can only be accessed in kernel mode.
 
+
 ### -param OBJ_FORCE_ACCESS_CHECK
 
 The routine opening the handle should enforce all access checks for the object, even if the handle is being opened in kernel mode.
+
 </dd>
 </dl>
 
@@ -104,9 +116,11 @@ The routine opening the handle should enforce all access checks for the object, 
 
 A handle to the root object directory for the path name specified in the <i>ObjectName</i> parameter. If <i>ObjectName</i> is a fully qualified object name, <i>RootDirectory</i> is <b>NULL</b>. Use <a href="kernel.zwcreatedirectoryobject">ZwCreateDirectoryObject</a> to obtain a handle to an object directory.
 
+
 ### -param SecurityDescriptor [in, optional]
 
 Specifies a security descriptor to apply to an object when it is created. This parameter is optional. Drivers can specify <b>NULL</b> to accept the default security for the object. For more information, see the following Remarks section.
+
 
 ## -remarks
 <b>InitializeObjectAttributes</b> initializes an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the properties of an object handle to be opened. The caller can then pass a pointer to this structure to a routine that actually opens the handle. 
@@ -115,11 +129,13 @@ Driver routines that run in a process context other than that of the system proc
 
 Note that <b>InitializeObjectAttributes</b> always sets the <b>SecurityQualityOfService</b> member of <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> to <b>NULL</b>. Drivers that require a non-<b>NULL</b> value can set <b>SecurityQualityOfService</b> directly.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +146,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -185,5 +202,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20InitializeObjectAttributes macro%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20InitializeObjectAttributes macro%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

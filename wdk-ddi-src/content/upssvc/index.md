@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Upssvc.h header
 
+## -description
 
 This header is used by Battery. For more information, see
 - [Battery](../_battery/index.md)

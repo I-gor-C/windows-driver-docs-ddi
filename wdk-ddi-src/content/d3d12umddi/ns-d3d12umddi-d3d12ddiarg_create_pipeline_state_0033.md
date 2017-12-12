@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-pipeline-state-0033.htm
 old-project: display
 ms.assetid: 2a9108ab-5852-4053-9a7a-266ae1b1dced
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_CREATE_PIPELINE_STATE_0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 Creates a pipeline state.
+
 
 
 ## -syntax
@@ -77,85 +79,106 @@ typedef struct _D3D12DDIARG_CREATE_PIPELINE_STATE_0033 {
 
 The compute shader.
 
+
 ### -field hVertexShader
 
 The vertex shader.
+
 
 ### -field hPixelShader
 
 The pixel shader.
 
+
 ### -field hDomainShader
 
 The domain shader.
+
 
 ### -field hHullShader
 
 The hull shader.
 
+
 ### -field hGeometryShader
 
 The geometry shader.
+
 
 ### -field hRootSignature
 
 The root signature.
 
+
 ### -field hBlendState
 
 The blend state.
+
 
 ### -field SampleMask
 
 The sample mask.
 
+
 ### -field hRasterizerState
 
 The rasterizer state.
+
 
 ### -field hDepthStencilState
 
 The depth stencil state.
 
+
 ### -field hElementLayout
 
 The element layout.
+
 
 ### -field IBStripCutValue
 
 The index buffer strip cut value.
 
+
 ### -field PrimitiveTopologyType
 
 The primitive topology type.
+
 
 ### -field NumRenderTargets
 
 The number of render targets.
 
+
 ### -field RTVFormats
 
 The RTV formats.
+
 
 ### -field DSVFormat
 
 The DSV format.
 
+
 ### -field SampleDesc
 
 The sample description.
+
 
 ### -field NodeMask
 
 Represents the set of nodes.
 
+
 ### -field LibraryReference
 
 The library reference.
 
+
 ### -field ViewInstancingDesc
 
 The view instancing description.
+
 
 ## -remarks
 
@@ -165,6 +188,7 @@ The view instancing description.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

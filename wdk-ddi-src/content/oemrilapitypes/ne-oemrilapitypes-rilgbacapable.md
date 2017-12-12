@@ -7,7 +7,7 @@ old-location: netvista\rilgbacapable.htm
 old-project: netvista
 ms.assetid: c1acc574-6e9e-40a1-8892-00572fcc545c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILGBACAPABLE, RILGBACAPABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef enum _RILGBACAPABLE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

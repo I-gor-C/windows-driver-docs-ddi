@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling <a href="buses.udecx_usb_endpoint_callbacks_init">UDECX_USB_ENDPOINT_CALLBACKS_INIT</a>.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _UDECX_USB_ENDPOINT_CALLBACKS {
 
 The size of this structure.
 
+
 ### -field EvtUsbEndpointReset
 
 Required. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_reset.md">EVT_UDECX_USB_ENDPOINT_RESET</a> callback function implemented by a UDE client driver.
+
 
 ### -field EvtUsbEndpointStart
 
 Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_start.md">EVT_UDECX_USB_ENDPOINT_START</a> callback function implemented by a UDE client driver.
 
+
 ### -field EvtUsbEndpointPurge
 
 Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_purge.md">EVT_UDECX_USB_ENDPOINT_PURGE</a> callback function implemented by a UDE client driver.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_u
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,5 +105,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UDECX_USB_ENDPOINT_CALLBACKS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

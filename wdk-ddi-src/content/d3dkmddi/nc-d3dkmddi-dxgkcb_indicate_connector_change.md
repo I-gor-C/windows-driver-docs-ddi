@@ -7,7 +7,7 @@ old-location: display\dxgkcb_indicate_connector_change.htm
 old-project: display
 ms.assetid: D3C76DC0-7A6B-4E1E-8277-F6410D4B474B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: DISPATCH_LEVEL
 DXGKCB_INDICATE_CONNECTOR_CHANGE is called by the KMD to indicate that it has added changes to its change queue which the OS should now query.
 
 
+
 ## -prototype
 
 ````
@@ -56,8 +57,10 @@ NTSTATUS APIENTRY *DXGKCB_INDICATE_CONNECTOR_CHANGE(
 
 A handle that identifies the adapter.
 
+
 ## -returns
 If this routine succeeds, it returns STATUS_SUCCESS. 
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ If this routine succeeds, it returns STATUS_SUCCESS.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -77,9 +81,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

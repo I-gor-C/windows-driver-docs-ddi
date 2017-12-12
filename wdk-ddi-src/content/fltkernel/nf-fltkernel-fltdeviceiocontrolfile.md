@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltDeviceIoControlFile</b> sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified action. 
 
 
+
 ## -syntax
 
 ````
@@ -63,45 +64,56 @@ NTSTATUS FltDeviceIoControlFile(
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 File object pointer for the file or device that is the target of this request. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param IoControlCode [in]
 
 IOCTL_<i>XXX</i> code that indicates which device I/O operation is to be carried out. The value of this parameter determines the formats and required lengths of the <i>InputBuffer</i> and <i>OutputBuffer</i>, and it determines which of the following parameter pairs (<i>InputBuffer</i> and <i>InputBufferLength</i>, or <i>OutputBuffer</i> and <i>OutputBufferLength</i>) is required. 
 
+
 ### -param InputBuffer [in, optional]
 
 Pointer to a caller-allocated input buffer that contains device-specific information to be given to the target driver. If the <i>IoControlCode</i> parameter specifies an operation that does not require input data, this parameter is optional and can be <b>NULL</b>. 
+
 
 ### -param InputBufferLength [in]
 
 Size, in bytes, of the buffer at <i>InputBuffer</i>. This value is ignored if <i>InputBuffer</i> is <b>NULL</b>. 
 
+
 ### -param OutputBuffer [out]
 
 Pointer to a caller-allocated output buffer in which information is returned from the target driver. If the <i>IoControlCode</i> parameter specifies an operation that does not require output data, this parameter is optional and can be <b>NULL</b>. 
+
 
 ### -param OutputBufferLength [in]
 
 Size, in bytes, of the buffer at <i>OutputBuffer</i>. This value is ignored if <i>OutputBuffer</i> is <b>NULL</b>. 
 
+
 ### -param LengthReturned [out, optional]
 
 Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the buffer at <i>OutputBuffer</i>. This parameter is optional and can be <b>NULL</b>. 
 
+
 ## -returns
 <b>FltDeviceIoControlFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value. 
 
+
 ## -remarks
 For more information about the system-defined IOCTL_<i>XXX</i> codes, see the Remarks section of the reference entry for <b>DeviceIoControl</b> in the Microsoft Windows SDK documentation. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +124,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -132,9 +146,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -146,5 +162,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltDeviceIoControlFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

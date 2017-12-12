@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 2D11187E-B21B-4211-BAC0-248B93BAB6D5
 ms.author: windowsdriverdev
 ms.date: 10/23/2017
-ms.keywords: _SERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL, *PSERIAL_LINE_CONTROL
+ms.keywords: _SERIAL_LINE_CONTROL, *PSERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>SERIAL_LINE_CONTROL</b> structure describes the control settings for the serial line.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _SERIAL_LINE_CONTROL {
 ### -field StopBits
 
 The number of stop bits used at the end of each character that is transmitted or received. This member is set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -77,9 +79,11 @@ The number of stop bits used at the end of each character that is transmitted or
 </table>
  
 
+
 ### -field Parity
 
 The type of parity checking used for each character that is transmitted or received. This member is set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -108,18 +112,22 @@ The type of parity checking used for each character that is transmitted or recei
 </table>
  
 
+
 ### -field WordLength
 
 Data bits per character. This member indicates the number of data bits in each character value that is transmitted or received, and does not include parity bits or stop bits. <b>WordLength</b> values in the range 5 to 8 are typically supported.
 
+
 ## -remarks
 This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_set_line_control.md">IOCTL_SERIAL_SET_LINE_CONTROL</a> requests.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +147,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERIAL_LINE_CONTROL structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

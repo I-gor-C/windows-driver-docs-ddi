@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 PosCxRetainDevice is called to extend the ownership of the device.
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,17 @@ NTSTATUS PosCxRetainDevice(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param request [in]
 
 A handle to a framework request object that represents the request. This request must come from a WDF IO queue. The caller must always complete the request.
+
 
 ## -returns
 Possible return values are:
 
  
+
 
 ## -remarks
 
@@ -75,14 +79,17 @@ Possible return values are:
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

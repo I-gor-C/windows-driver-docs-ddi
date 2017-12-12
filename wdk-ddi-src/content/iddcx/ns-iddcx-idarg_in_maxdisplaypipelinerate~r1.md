@@ -7,7 +7,7 @@ old-location: display\idarg_in_maxdisplaypipelinerate.htm
 old-project: display
 ms.assetid: 035c3d04-56e8-48ec-91d4-6d6a1a5037c4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_MAXDISPLAYPIPELINERATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the maximum display pipeline rate.
 
 
+
 ## -syntax
 
 ````
@@ -59,10 +60,12 @@ typedef struct IDARG_IN_MAXDISPLAYPIPELINERATE {
 
                      Indicates the reason why the driver is updating the rate.
 
+
 ### -field MaxDisplayPipelineRate
 
 
                      Indicates the maximum display pipeline rate. This is the new value for <b>IDDCX_ADAPTER_CAPS.MaxDisplayPipelineRate</b>
+
 
 ## -remarks
 
@@ -72,6 +75,7 @@ typedef struct IDARG_IN_MAXDISPLAYPIPELINERATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

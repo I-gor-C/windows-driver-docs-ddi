@@ -7,7 +7,7 @@ old-location: wdf\wdfregistrywdmgethandle.htm
 old-project: wdf
 ms.assetid: 60638048-9009-4943-ba61-b724612852df
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WdfRegistryWdmGetHandle</b> method returns a Windows Driver Model (WDM) handle to the registry key that a specified framework registry-key object represents.
+
 
 
 ## -syntax
@@ -58,10 +60,12 @@ HANDLE WdfRegistryWdmGetHandle(
 
 A handle to a registry-key object that represents an opened registry key.
 
+
 ## -returns
 <b>WdfRegistryWdmGetHandle</b> returns a WDM handle to a registry key. 
 
 A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -76,11 +80,13 @@ For more information about registry-key objects, see <a href="wdf.using_the_regi
 
 The following code example obtains a WDM handle to the registry key that a specified framework registry-key object represents.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,22 +97,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,14 +140,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>

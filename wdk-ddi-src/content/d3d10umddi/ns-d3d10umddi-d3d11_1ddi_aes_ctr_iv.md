@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_aes_ctr_iv.htm
 old-project: display
 ms.assetid: 56228a1d-ca3b-4bd4-850c-af736e91494c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_AES_CTR_IV, D3D11_1DDI_AES_CTR_IV
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains an initialization vector (IV) for 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher encryption.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct D3D11_1DDI_AES_CTR_IV {
 
 The IV, in big-endian format.
 
+
 ### -field Count
 
 The block count, in big-endian format.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The block count, in big-endian format.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

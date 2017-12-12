@@ -7,7 +7,7 @@ old-location: kernel\rtlincrementcorrelationvector.htm
 old-project: kernel
 ms.assetid: bb252dd5-9bf3-41bd-ab46-9524735970c5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlIncrementCorrelationVector
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Increments the specified correlation vector. For
     X.(i+1).
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ Increments the specified correlation vector. For
 
 A pointer to a  <a href="..\ntddk\ns-ntddk-correlation_vector.md">CORRELATION_VECTOR</a> structure that represents the correlation vector to be incremented.
 
+
 ## -returns
 
 Returns an NTSTATUS value that indicates the success of failure of the operation. 
@@ -72,6 +74,7 @@ Returns an NTSTATUS value that indicates the success of failure of the operation
 
  
 
+
 ## -remarks
 
 
@@ -80,22 +83,27 @@ Returns an NTSTATUS value that indicates the success of failure of the operation
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +114,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -116,6 +125,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +136,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

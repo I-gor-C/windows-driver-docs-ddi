@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisZeroMemory
-title: NdisZeroMemory
+title: NdisZeroMemory macro
 author: windows-driver-content
 description: The NdisZeroMemory function fills a block of memory with zeros.
 old-location: netvista\ndiszeromemory.htm
 old-project: netvista
 ms.assetid: 1cb829e1-bd4f-4d6b-a936-0e7cf8024381
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisZeroMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,61 +31,56 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.iface: 
 ---
 
-# NdisZeroMemory function
+# NdisZeroMemory macro
 
 
 
 ## -description
-<p>The 
-  <b>NdisZeroMemory</b> function fills a block of memory with zeros.</p>
+The 
+  <b>NdisZeroMemory</b> function fills a block of memory with zeros.
+
 
 
 ## -syntax
 
 ````
 VOID NdisZeroMemory(
-  _In_ PVOID Destination,
-  _In_ ULONG Length
+  [in] PVOID Destination,
+  [in] ULONG Length
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param Destination [in]
 
-<dd>
-<p>The base virtual address of a block of memory.</p>
-</dd>
+The base virtual address of a block of memory.
+
 
 ### -param Length [in]
 
-<dd>
-<p>The number of bytes to fill with zeros.</p>
-</dd>
-</dl>
+The number of bytes to fill with zeros.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p><b>NdisZeroMemory</b> fills the specified range of memory with zeros. The given 
+<b>NdisZeroMemory</b> fills the specified range of memory with zeros. The given 
     <i>Destination</i> and 
-    <i>Length</i> must be a proper subrange of a caller-accessible memory range.</p>
+    <i>Length</i> must be a proper subrange of a caller-accessible memory range.
 
-<p>As long as the given range was allocated from nonpaged pool, the caller can be running at any IRQL.
+As long as the given range was allocated from nonpaged pool, the caller can be running at any IRQL.
     Otherwise, a caller must be running at IRQL &lt; DISPATCH_LEVEL as, for example, when a caller clears a
-    structure it allocated on the stack.</p>
+    structure it allocated on the stack.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,15 +90,18 @@ VOID NdisZeroMemory(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a> instead.</p>
+Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="kernel.rtlzeromemory">RtlZeroMemory</a> instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,10 +111,12 @@ VOID NdisZeroMemory(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>See Remarks section</p>
+See Remarks section
+
 </td>
 </tr>
 </table>
@@ -124,13 +124,16 @@ VOID NdisZeroMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
+<a href="netvista.ndisallocatememorywithtagpriority">
    NdisAllocateMemoryWithTagPriority</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndiszeromappedmemory.md">NdisZeroMappedMemory</a>
+<a href="netvista.ndiszeromappedmemory">NdisZeroMappedMemory</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisZeroMemory function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisZeroMemory macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

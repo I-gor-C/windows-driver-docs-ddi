@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlAreThereWaitingFileLocks</b> routine checks a file lock queue for any waiting file locks.
 
 
+
 ## -syntax
 
 ````
@@ -56,9 +57,11 @@ BOOLEAN FsRtlAreThereWaitingFileLocks(
 
 The file lock that specifies locked ranges.
 
+
 ## -returns
 
       Returns <b>TRUE</b> if waiting file  locks are present;  <b>FALSE</b> otherwise.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ The file lock that specifies locked ranges.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +104,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -108,9 +115,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>

@@ -41,6 +41,7 @@ req.irql:
 The IPCR structure contains initialization values for an input plug. 
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _IPCR {
 
 Reserved. 
 
+
 ### -field Channel
 
 Indicates the channel number that the input plug shall use to transmit the isochronous data flow, for a suspended input plug. For an active input plug it indicates the actual channel number that the input plug uses to transmit the isochronous data flow. For an unconnected input plug it has no meaning.
+
 
 ### -field Reserved1
 
 Reserved. 
 
+
 ### -field PPCCounter
 
 Indicates the number of point-to-point connections to the input plug. 
+
 
 ### -field BCCCounter
 
 Indicates, when one, that there is a broadcast-in connection to the input plug. When zero it indicates that there is no connection. 
 
+
 ### -field OnLine
 
 Indicates, when one, that the corresponding input plug is on-line. When zero it indicates that the input plug is off-line.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Indicates, when one, that the corresponding input plug is on-line. When zero it 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20IPCR structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

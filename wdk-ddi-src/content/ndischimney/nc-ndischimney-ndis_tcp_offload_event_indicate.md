@@ -7,7 +7,7 @@ old-location: netvista\ndistcpoffloadeventhandler.htm
 old-project: netvista
 ms.assetid: b62e8a07-fe7b-4c52-8795-19e4bb889b6e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,9 +39,11 @@ req.irql: DISPATCH_LEVEL
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 An offload target calls the 
   <b>NdisTcpOffloadEventHandler</b> function to indicate an event that pertains to an offloaded TCP
   connection.
+
 
 
 ## -prototype
@@ -65,10 +67,13 @@ A handle that identifies the offloaded TCP connection on which the indication is
      <a href="netvista.ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.
 
+
 ### -param EventType [in]
 
 The event being indicated as one of the following <b>TCP_OFFLOAD_EVENT_TYPE</b> values:
      
+
+
 
 
 ### -param TcpIndicateDisconnect
@@ -76,19 +81,23 @@ The event being indicated as one of the following <b>TCP_OFFLOAD_EVENT_TYPE</b> 
 Indicates that the remote host has initiated a graceful disconnect by sending a FIN segment on
        the connection.
 
+
 ### -param TcpIndicateRetrieve
 
 Indicates that the offload target is requesting the host stack to terminate the offload of a TCP
        connection.
+
 
 ### -param TcpIndicateAbort
 
 Indicates that the remote host has initiated an abortive disconnect by sending an acceptable RST
        segment on the connection.
 
+
 ### -param TcpIndicateSendBacklogChange
 
 Indicates a change in the preferred send backlog size.
+
 </dd>
 </dl>
 
@@ -98,28 +107,35 @@ Specifies additional information about the event being indicated as follows:
      
 
 
+
+
 ### -param TcpIndicateDisconnect
 
 Not meaningful.
+
 
 ### -param TcpIndicateRetrieve
 
 Indicates the reason for the upload request as a <b>TCP_UPLOAD_REASON</b> value. See the Remarks
        section for more information.
 
+
 ### -param TcpIndicateAbort
 
 Not meaningful.
+
 
 ### -param TcpIndicateSendBacklogChange
 
 Specifies the optimum number of send data bytes that the host stack should have outstanding at
        the offload target.
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 An offload target should indicate a graceful disconnect only when:
@@ -254,11 +270,13 @@ The offload target should implement a throttling mechanism to ensure that, if th
     indicate a 
     <b>SendBacklogSize</b> event. This will prevent a storm of event indications from occurring.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -269,6 +287,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -279,9 +298,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -320,5 +341,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

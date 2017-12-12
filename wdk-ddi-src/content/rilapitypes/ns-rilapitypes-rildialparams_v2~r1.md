@@ -7,8 +7,8 @@ old-location: netvista\rildialparams_v2_2.htm
 old-project: netvista
 ms.assetid: ca42a4c3-1589-4434-8d76-59f877e1e664
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILDIALPARAMS_V2, *LPRILDIALPARAMS_V2, *LPRILDIALPARAMS, RILDIALPARAMS, RILDIALPARAMS_V2
+ms.date: 12/8/2017
+ms.keywords: RILDIALPARAMS_V2, *LPRILDIALPARAMS, RILDIALPARAMS_V2, *LPRILDIALPARAMS_V2, RILDIALPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -84,6 +85,7 @@ typedef struct _RILDIALPARAMS_V2 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

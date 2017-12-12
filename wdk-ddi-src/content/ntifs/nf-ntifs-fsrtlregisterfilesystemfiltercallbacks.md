@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 File system filter drivers and file systems call the <b>FsRtlRegisterFileSystemFilterCallbacks</b> routine to register notification callback routines to be invoked when the underlying file system performs certain operations. 
 
 
+
 ## -syntax
 
 ````
@@ -57,10 +58,13 @@ NTSTATUS FsRtlRegisterFileSystemFilterCallbacks(
 
 A pointer to the driver object for the filter or file system driver. 
 
+
 ### -param Callbacks [in]
 
 A pointer to a structure that contains the entry points of caller-supplied notification callback routines. 
+
 This structure is defined as follows. 
+
 <div class="alert"><b>Note</b>  All of the callback entry points are optional and can be <b>NULL</b>. </div>
 <div> </div>
 <div class="code"><span codelanguage=""><table>
@@ -89,6 +93,7 @@ This structure is defined as follows.
 </tr>
 </table></span></div>
 The filter callback routine and its parameters are defined as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -111,22 +116,28 @@ NTSTATUS (*PFS_FILTER_CALLBACK) (
 <tr>
 <td>
 <i>Data</i>
+
 </td>
 <td>
 Pointer to the callback data structure for this operation.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>CompletionContext</i>
+
 </td>
 <td>
 Context information to be passed to the filter completion callback routine. Set to <b>NULL</b> if no context information is to be passed or if there is no corresponding filter completion callback routine.
+
 </td>
 </tr>
 </table>
  
+
 The filter completion callback routine and its parameters are defined as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -150,30 +161,38 @@ VOID (*PFS_FILTER_COMPLETION_CALLBACK) (
 <tr>
 <td>
 <i>Data</i>
+
 </td>
 <td>
 Pointer to the callback data structure for this operation.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>OperationStatus</i>
+
 </td>
 <td>
 Status of the operation. If the file system successfully performed the operation, this parameter is set to STATUS_SUCCESS. Otherwise, it is set to an appropriate error status value.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>CompletionContext</i>
+
 </td>
 <td>
 Context information that was set in the filter callback routine. This is set to <b>NULL</b> if no information is passed or if there is no corresponding filter callback routine.
+
 </td>
 </tr>
 </table>
  
+
 The callback data structure and its members are defined as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -199,14 +218,17 @@ The callback data structure and its members are defined as follows:
 <tr>
 <td>
 <b>SizeOfFsFilterCallbackData</b>
+
 </td>
 <td>
 Size of the callback data structure.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>Operation</b>
+
 </td>
 <td>
 File system operation for which the callback routine is to be invoked. This operation can be one of the following: 
@@ -219,43 +241,54 @@ File system operation for which the callback routine is to be invoked. This oper
 <li>FS_FILTER_RELEASE_FOR_CC_FLUSH</li>
 </ul>
 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>Reserved</b>
+
 </td>
 <td>
 Reserved for system use.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>DeviceObject</b>
+
 </td>
 <td>
 Device object for this operation.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>FileObject</b>
+
 </td>
 <td>
 File object for this operation.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>Parameters</b>
+
 </td>
 <td>
 Union containing any operation-specific parameters.
+
 </td>
 </tr>
 </table>
  
+
 The filter parameter union is defined as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -293,30 +326,37 @@ The filter parameter union is defined as follows:
 <tr>
 <td>
 <i>EndingOffset</i>
+
 </td>
 <td>
 Offset of the last byte being written plus one.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>ResourceToRelease</i>
+
 </td>
 <td>
 Resource to be released. This parameter must not have a <b>NULL</b> value.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>SyncType</i>
+
 </td>
 <td>
 Type of synchronization requested for the section: SyncTypeCreateSection if a section is being created, SyncTypeOther otherwise.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>PageProtection</i>
+
 </td>
 <td>
 Type of page protection requested for the section. Must be zero if <i>SyncType</i> is SyncTypeOther. Otherwise, one of the following flags, possibly ORed with PAGE_NOCACHE: <ul>
@@ -326,50 +366,62 @@ Type of page protection requested for the section. Must be zero if <i>SyncType</
 <li>PAGE_EXECUTE</li>
 </ul>
 
+
 </td>
 </tr>
 <tr>
 <td>
 <i>Argument1</i>
+
 </td>
 <td>
 Reserved for future use.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>Argument2</i>
+
 </td>
 <td>
 Reserved for future use.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>Argument3</i>
+
 </td>
 <td>
 Reserved for future use.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>Argument4</i>
+
 </td>
 <td>
 Reserved for future use.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>Argument5</i>
+
 </td>
 <td>
 Reserved for future use.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 The <b>FsRtlRegisterFileSystemFilterCallbacks</b> routine can return one of the following status values: 
@@ -384,6 +436,7 @@ The <b>FsRtlRegisterFileSystemFilterCallbacks</b> routine can return one of the 
 </dl>One of the parameters is invalid. 
 
  
+
 
 ## -remarks
 File system and file system filter drivers should call <b>FsRtlRegisterFileSystemFilterCallbacks</b> from the driver's <b>DriverEntry</b> routine.  
@@ -491,11 +544,13 @@ ReleaseFileForNtCreateSection
 
 ReleaseForModWrite
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -506,14 +561,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows XP and later versions of the Windows operating system. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -524,6 +582,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -534,6 +593,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -544,9 +604,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

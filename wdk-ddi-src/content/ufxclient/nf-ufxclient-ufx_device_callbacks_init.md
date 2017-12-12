@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro initializes the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -57,19 +58,23 @@ FORCEINLINE void UFX_DEVICE_CALLBACKS_INIT(
 
 A pointer to the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro will set all fields of the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure to zero and set the <b>Size</b> field appropriately.
 
 The client driver uses the <b>UFX_DEVICE_CALLBACKS_INIT</b> macro the initialize the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure prior to calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

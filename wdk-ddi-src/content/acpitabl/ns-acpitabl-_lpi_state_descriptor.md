@@ -41,6 +41,7 @@ req.irql:
 Defines an LPI state descriptor.
 
 
+
 ## -syntax
 
 ````
@@ -65,41 +66,51 @@ typedef struct _LPI_STATE_DESCRIPTOR {
 
 The type.
 
+
 ### -field Length
 
 The length.
+
 
 ### -field UniqueId
 
 A unique ID.
 
+
 ### -field Reserved
 
 Reserved.
+
 
 ### -field Flags
 
 State flags.
 
+
 ### -field EntryTrigger
 
 An entry trigger.
+
 
 ### -field Residency
 
 A residency value.
 
+
 ### -field Latency
 
 A latency value.
+
 
 ### -field ResidencyCounter
 
 Residency counter.
 
+
 ### -field ResidencyCounterFrequency
 
 Residency counter frequency. 
+
 
 ## -remarks
 
@@ -109,6 +120,7 @@ Residency counter frequency.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

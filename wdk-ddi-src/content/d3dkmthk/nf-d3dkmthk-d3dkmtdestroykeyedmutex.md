@@ -7,7 +7,7 @@ old-location: display\d3dkmtdestroykeyedmutex.htm
 old-project: display
 ms.assetid: 5905035f-25e1-49df-bf59-bef81e724c49
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTDestroyKeyedMutex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3DKMTDestroyKeyedMutex</b> function destroys a keyed mutex object.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS D3DKMTDestroyKeyedMutex(
 
 A pointer to a <a href="display.d3dkmt_destroykeyedmutex">D3DKMT_DESTROYKEYEDMUTEX</a> structure that specifies the keyed mutex object to destroy. 
 
+
 ## -returns
 <b>D3DKMTDestroyKeyedMutex</b> returns one of the following values:
 <dl>
@@ -69,6 +71,7 @@ A pointer to a <a href="display.d3dkmt_destroykeyedmutex">D3DKMT_DESTROYKEYEDMUT
 
 This function might also return other <b>NTSTATUS</b> values.
 
+
 ## -remarks
 
 
@@ -77,6 +80,7 @@ This function might also return other <b>NTSTATUS</b> values.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,14 +91,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 <b>D3DKMTDestroyKeyedMutex</b> is supported beginning with the Windows 7 operating system. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +123,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +140,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTDestroyKeyedMutex function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTDestroyKeyedMutex function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

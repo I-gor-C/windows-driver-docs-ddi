@@ -7,7 +7,7 @@ old-location: display\iddcx_opm_configure_parameters.htm
 old-project: display
 ms.assetid: 88d8171f-8ed4-40af-8c05-7421895dca26
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_OPM_CONFIGURE_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Gives information about the OPM configure parameters.
 
 
+
 ## -syntax
 
 ````
@@ -59,11 +60,13 @@ typedef struct IDDCX_OPM_CONFIGURE_PARAMETERS {
                      Total size of the structure.
                  
 
+
 ### -field ConfigParameters
 
 
                      Configuration parameters.
                  
+
 
 ## -remarks
 
@@ -73,6 +76,7 @@ typedef struct IDDCX_OPM_CONFIGURE_PARAMETERS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxva_deinterlacetech.htm
 old-project: display
 ms.assetid: 06d6b4db-293d-409e-a725-bb86bc6b3d11
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVA_DeinterlaceTech, DXVA_DeinterlaceTech
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXVA_DeinterlaceTech enumeration identifies the underlying technology used to implement a particular deinterlace algorithm.
 
 
+
 ## -syntax
 
 ````
@@ -64,37 +65,46 @@ typedef enum _DXVA_DeinterlaceTech {
 
 Indicates that the algorithm is unknown or proprietary to the hardware manufacturer. 
 
+
 ### -field DXVA_DeinterlaceTech_BOBLineReplicate
 
 Indicates that the algorithm creates the missing lines by repeating the line either above or below it. This method looks jagged and is not recommended. 
+
 
 ### -field DXVA_DeinterlaceTech_BOBVerticalStretch
 
 Specifies an algorithm that creates the missing lines by vertically stretching each video field by a factor of two. Vertical adjustments are made to ensure that the resulting image does not move up and down. 
 
+
 ### -field DXVA_DeinterlaceTech_BOBVerticalStretch4Tap
 
 Creates the missing lines by vertically stretching each video field by a factor of two, using a 4-tap filter.
+
 
 ### -field DXVA_DeinterlaceTech_MedianFiltering
 
 Specifies that the pixels in the missing line are recreated by a median filtering operation. 
 
+
 ### -field DXVA_DeinterlaceTech_EdgeFiltering
 
 Specifies that pixels in the missing line are recreated by an edge filter. In this process, spatial directional filters are applied to determine the orientation of edges in the picture content, and missing pixels are created by filtering along (rather than across) the detected edges. 
+
 
 ### -field DXVA_DeinterlaceTech_FieldAdaptive
 
 Specifies that pixels in the missing line are recreated by switching on a field-by-field basis between either spatial or temporal interpolation, depending on the amount of motion. 
 
+
 ### -field DXVA_DeinterlaceTech_PixelAdaptive
 
 Specifies that pixels in the missing line are recreated by switching on a pixel-by-pixel basis between either spatial or temporal interpolation, depending on the amount of motion. 
 
+
 ### -field DXVA_DeinterlaceTech_MotionVectorSteered
 
 Identifies objects within a sequence of video fields. The missing pixels are recreated after first aligning the movement axis of the individual objects in the scene to make them parallel with the time axis.
+
 
 ## -remarks
 
@@ -104,6 +114,7 @@ Identifies objects within a sequence of video fields. The missing pixels are rec
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +131,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_DeinterlaceTech enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_DeinterlaceTech enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

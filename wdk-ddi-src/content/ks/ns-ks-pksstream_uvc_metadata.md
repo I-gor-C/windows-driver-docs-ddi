@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 99ED5E06-23C7-4B24-BD9B-E6713B1D58D2
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PKSSTREAM_UVC_METADATA, *PKSSTREAM_UVC_METADATA, KSSTREAM_UVC_METADATA
+ms.keywords: PKSSTREAM_UVC_METADATA, KSSTREAM_UVC_METADATA, *PKSSTREAM_UVC_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>KSSTREAM_UVC_METADATA</b> structure contains start and end of frame timestamp information.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 Contains  start of frame timestamp information.
 
+
 ### -field EndOfFrameTimestamp
 
 Contains end of frame timestamp information.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Contains end of frame timestamp information.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

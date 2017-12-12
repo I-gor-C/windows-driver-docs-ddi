@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_descriptor_type.htm
 old-project: display
 ms.assetid: f5ec761f-fc20-4baf-a012-c32356644a6c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_MONITOR_DESCRIPTOR_TYPE, D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The D3DKMDT_MONITOR_DESCRIPTOR_TYPE enumeration is used to indicate a particular type of monitor descriptor.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _D3DKMDT_MONITOR_DESCRIPTOR_TYPE {
 
 Indicates that a variable of type D3DKMDT_MONITOR_DESCRIPTOR_TYPE has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_MDT_VESA_EDID_V1_BASEBLOCK
 
 Indicates that the descriptor is an Extended Display Identification Data (EDID) base block.
+
 
 ### -field D3DKMDT_MDT_VESA_EDID_V1_BLOCKMAP
 
 Indicates that the descriptor is an EDID block map.
 
+
 ### -field D3DKMDT_MDT_OTHER
 
 Indicates that the descriptor has a type other than those indicated by the previous values of this enumeration.
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ Indicates that the descriptor has a type other than those indicated by the previ
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

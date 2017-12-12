@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_receive_queue_counter.htm
 old-project: netvista
 ms.assetid: E42705A4-D018-435E-BA98-3EE5BA5EDE66
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_PD_RECEIVE_QUEUE_COUNTER, NDIS_PD_RECEIVE_QUEUE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_PD_RECEIVE_QUEUE_COUNTER structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 This structure is used to hold counter information for a receive queue.
+
 
 
 ## -syntax
@@ -58,13 +59,16 @@ typedef struct _NDIS_PD_RECEIVE_QUEUE_COUNTER {
 
 The amount of packets received.
 
+
 ### -field BytesReceived
 
 The amount of bytes received.
 
+
 ### -field PacketsDropped
 
 The amount of packets dropped.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ The amount of packets dropped.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

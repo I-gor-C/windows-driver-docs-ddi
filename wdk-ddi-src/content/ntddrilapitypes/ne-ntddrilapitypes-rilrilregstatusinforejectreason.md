@@ -7,7 +7,7 @@ old-location: netvista\rilrilregstatusinforejectreason.htm
 old-project: netvista
 ms.assetid: 17aad504-4223-4764-8a24-536a81807650
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILRILREGSTATUSINFOREJECTREASON, RILRILREGSTATUSINFOREJECTREASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -131,6 +132,7 @@ typedef enum _RILRILREGSTATUSINFOREJECTREASON {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

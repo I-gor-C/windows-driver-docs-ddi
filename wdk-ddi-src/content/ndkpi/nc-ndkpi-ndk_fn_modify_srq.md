@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_modify_srq.htm
 old-project: netvista
 ms.assetid: ABB42AC6-8483-420C-B9A9-063C91E4FB13
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 The <i>NdkModifySrq</i> (<i>NDK_FN_MODIFY_SRQ</i>) function modifies the size and notification threshold of an NDK  shared receive queue (SRQ).
 
 
+
 ## -prototype
 
 ````
@@ -63,23 +64,28 @@ NTSTATUS NdkModifySrq(
 
 A pointer to an NDK shared receive queue (SRQ) object (<a href="netvista.ndk_srq">NDK_SRQ</a>).
 
+
 ### -param SrqDepth [in]
 
 
 The new size of the SRQ. The new size must be less than or equal to the  size that is specified in the <b>MaxSrqDepth</b> member of the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.
 A size of zero means no depth modification is requested. That is,  the existing SRQ depth value must be preserved.
 
+
 ### -param NotifyThreshold [in]
 
 The number of queued receive requests  that will trigger an SRQ notification callback. If this value is greater than zero,  the NDK provider must arm the SRQ notification to trigger  when the number of queued receive requests falls below the specified  value. If the number of queued receive requests is already below the threshold value at the time of this function call, an SRQ notification must be generated. After an SRQ notification is generated, further notifications are disarmed until the NDK consumer invokes this function again with a non-zero threshold value. If a threshold value of zero is specified, the provider must preserve the current SRQ notification threshold and arming status.
+
 
 ### -param RequestCompletion [in]
 
 A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_request_completion.md">NDK_FN_REQUEST_COMPLETION</a>).
 
+
 ### -param RequestContext [in, optional]
 
 A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
+
 
 ## -returns
 The 
@@ -101,38 +107,47 @@ The
 
  
 
+
 ## -remarks
 <i>NdkModifySrq</i> modifies  the size and notification threshold for an NDK shared receive queue (SRQ) object (<a href="netvista.ndk_srq">NDK_SRQ</a>). 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,9 +158,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -166,5 +183,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_MODIFY_SRQ callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_MODIFY_SRQ callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

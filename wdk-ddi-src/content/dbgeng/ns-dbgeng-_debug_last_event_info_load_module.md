@@ -7,8 +7,8 @@ old-location: debugger\debug_last_event_info_load_module.htm
 old-project: debugger
 ms.assetid: 0C2371FE-935A-499B-8E7C-09AA6C03FC90
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE, DEBUG_LAST_EVENT_INFO_LOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_LOAD_MODULE
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_LOAD_MODULE, DEBUG_LAST_EVENT_INFO_LOAD_MODULE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Describes the load module of the last event.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DEBUG_LAST_EVENT_INFO_LOAD_MODULE {
 
 The base of the load module.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The base of the load module.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

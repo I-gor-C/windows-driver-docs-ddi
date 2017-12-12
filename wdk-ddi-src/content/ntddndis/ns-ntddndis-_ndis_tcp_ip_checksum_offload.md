@@ -7,8 +7,8 @@ old-location: netvista\ndis_tcp_ip_checksum_offload.htm
 old-project: netvista
 ms.assetid: bf5369c5-8656-41a4-a23f-79e40a60d111
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_TCP_IP_CHECKSUM_OFFLOAD, NDIS_TCP_IP_CHECKSUM_OFFLOAD, *PNDIS_TCP_IP_CHECKSUM_OFFLOAD
+ms.date: 12/8/2017
+ms.keywords: _NDIS_TCP_IP_CHECKSUM_OFFLOAD, *PNDIS_TCP_IP_CHECKSUM_OFFLOAD, NDIS_TCP_IP_CHECKSUM_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The NDIS_TCP_IP_CHECKSUM_OFFLOAD structure provides checksum task offload information in the 
   <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure.
+
 
 
 ## -syntax
@@ -89,10 +90,12 @@ A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv4 transmit inf
      
       
 
+
 ### -field Encapsulation
 
 Encapsulation settings for IPv4 transmit. For more information about this member, see the
        following Remarks section.
+
 
 ### -field IpOptionsSupported
 
@@ -100,11 +103,13 @@ A ULONG value that a miniport driver sets to indicate that a miniport adapter ca
        IP checksum for an IPv4 send packet that contains IP options or to indicate that this capability is
        enabled or disabled.
 
+
 ### -field TcpOptionsSupported
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
        TCP checksum for an IPv4 send packet that contains TCP options or to indicate that this capability is
        enabled or disabled.
+
 
 ### -field TcpChecksum
 
@@ -112,16 +117,19 @@ A ULONG value that a miniport driver sets to indicate that a miniport adapter ca
        TCP checksum for an IPv4 send packet. The TCP/IP transport sets this value to enable this capability
        or to indicate that this capability is enabled or disabled.
 
+
 ### -field UdpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
        UDP checksum for an IPv4 send packet or to indicate that this capability is enabled or
        disabled.
 
+
 ### -field IpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate an
        IP checksum for an IPv4 send packet or to indicate that this capability is enabled or disabled.
+
 </dd>
 </dl>
 
@@ -131,10 +139,12 @@ A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv4 receive info
      contains the following members:
      
 
+
 ### -field Encapsulation
 
 Encapsulation settings for IPv4 receive. For more information about this member, see the
        following Remarks section.
+
 
 ### -field IpOptionsSupported
 
@@ -142,11 +152,13 @@ A ULONG value that a miniport driver sets to indicate that a miniport adapter ca
        checksum for an IPv4 receive packet that contains IP options or to indicate that this capability is
        enabled or disabled.
 
+
 ### -field TcpOptionsSupported
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
        TCP checksum for an IPv4 receive packet that contains TCP options or to indicate that this capability
        is enabled or disabled.
+
 
 ### -field TcpChecksum
 
@@ -154,15 +166,18 @@ A ULONG value that a miniport driver sets to indicate that a miniport adapter ca
        TCP checksum for an IPv4 receive packet or to indicate that this capability is enabled or
        disabled.
 
+
 ### -field UdpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate an
        IPv4 receive packet's UDP checksum or to indicate that this capability is enabled or disabled.
 
+
 ### -field IpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate an IP
        checksum for an IPv4 receive packet or to indicate that this capability is enabled or disabled.
+
 </dd>
 </dl>
 
@@ -172,15 +187,18 @@ A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv6 transmit inf
      contains the following members:
      
 
+
 ### -field Encapsulation
 
 Encapsulation settings for IPv6 transmit. For more information about this member, see the
        following Remarks section.
 
+
 ### -field IpExtensionHeadersSupported
 
 A ULONG value that a miniport driver sets to indicate that the miniport adapter can calculate
        checksums on IPv6 packets that contain extension headers.
+
 
 ### -field TcpOptionsSupported
 
@@ -188,17 +206,20 @@ A ULONG value that a miniport driver sets to indicate that a miniport adapter ca
        TCP checksum for an IPv6 send packet that contains TCP options or to indicate that this capability is
        enabled or disabled.
 
+
 ### -field TcpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
        TCP checksum for an IPv6 send packet or to indicate that this capability is enabled or
        disabled.
 
+
 ### -field UdpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
        UDP checksum for an IPv6 send packet or to indicate that this capability is enabled or
        disabled.
+
 </dd>
 </dl>
 
@@ -208,15 +229,18 @@ A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv6 receive info
      contains the following members:
      
 
+
 ### -field Encapsulation
 
 Encapsulation settings for IPv6 receive. For more information about this member, see the
        following Remarks section.
 
+
 ### -field IpExtensionHeadersSupported
 
 A ULONG value that a miniport driver sets to indicate that the miniport adapter can validate
        checksums on IPv6 packets that contain extension headers.
+
 
 ### -field TcpOptionsSupported
 
@@ -224,15 +248,18 @@ A ULONG value that a miniport driver sets to indicate that a miniport adapter ca
        checksum for an IPv6 receive packet whose TCP header contains TCP options or to indicate that this
        capability is enabled or disabled.
 
+
 ### -field TcpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate an
        IPv6 receive packet's TCP checksum or to indicate that this capability is enabled or disabled.
 
+
 ### -field UdpChecksum
 
 A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate a UDP
        checksum for an IPv6 receive packet or to indicate that this capability is enabled or disabled.
+
 </dd>
 </dl>
 
@@ -324,19 +351,23 @@ In the
 In the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567424">NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication, this value specifies that the
       feature that the member specifies is enabled.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -376,5 +407,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_OFFLOAD structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_OFFLOAD structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

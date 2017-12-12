@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_content.htm
 old-project: display
 ms.assetid: 29423933-c3cf-4fe4-b79c-f82718163a23
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT, D3DKMDT_VIDPN_PRESENT_PATH_CONTENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration is used to indicate the type of content that is displayed on a VidPN present path.
 
 
+
 ## -syntax
 
 ````
@@ -59,34 +60,42 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT {
 
 Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_CONTENT has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_VPPC_GRAPHICS
 
 Indicates that the path displays graphics content.
+
 
 ### -field D3DKMDT_VPPC_VIDEO
 
 Indicates that the path displays video content.
 
+
 ### -field D3DKMDT_VPPC_NOTSPECIFIED
 
 Indicates that no content type has been specified.
 
+
 ## -remarks
 The <b>Content</b> member of a <a href="display.d3dkmdt_vidpn_present_path">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

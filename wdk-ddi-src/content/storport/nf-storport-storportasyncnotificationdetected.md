@@ -7,7 +7,7 @@ old-location: storage\storportasyncnotificationdetected.htm
 old-project: storage
 ms.assetid: 558F652C-6D1A-4BAF-9C2C-3F4FE24651D2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortAsyncNotificationDetected
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 A storage miniport driver calls <b>StorPortAsyncNotificationDetected</b> to  notify the Storport driver of a storage device status change event.
+
 The notification is queued as a work item for deferred processing at DISPATCH_LEVEL or lower IRQL.
+
 
 
 ## -syntax
@@ -60,15 +62,20 @@ ULONG StorPortAsyncNotificationDetected(
 
 A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="storage.storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
+
 ### -param Address 
 
 The address of the storage device with a status change event.
+
 
 ### -param Flags 
 
 The status notifications to indicate to Storport.
 
+
 The Flags parameter contains a bitwise OR combination of status notifications. All status values can be set with the single <b>RAID_ASYNC_NOTIFY_SUPPORTED_FLAGS</b> value.
+
+
 
 <table>
 <tr>
@@ -82,6 +89,7 @@ The Flags parameter contains a bitwise OR combination of status notifications. A
 </td>
 <td width="60%">
 Notify Storport that a media change occurred.
+
 </td>
 </tr>
 <tr>
@@ -91,6 +99,7 @@ Notify Storport that a media change occurred.
 </td>
 <td width="60%">
 Notify Storport that the functional status of the storage device has changed.
+
 </td>
 </tr>
 <tr>
@@ -100,10 +109,12 @@ Notify Storport that the functional status of the storage device has changed.
 </td>
 <td width="60%">
 Notify Storport that an operational role of the storage device has changed.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 A status value indicating the result of the notification. This can be one of these values:
@@ -134,6 +145,7 @@ The storage device does not support asynchronous notifications.
 
  
 
+
 ## -remarks
 A miniport can detect status events in its <a href="storage.hwstorinterrupt">HwStorInterrupt</a> routine and call <b>StorPortAsyncNotificationDetected</b> to queue and process the status change notification later at a lower IRQL. 
 
@@ -141,11 +153,13 @@ When processed by Storport, the status event notification is forwarded to the st
 
 If the <i>Flags</i> parameter is 0, Storport will indicate all status values in its notification to the storage class driver.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -156,14 +170,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -174,9 +191,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any
+
 </td>
 </tr>
 </table>

@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 37D56DC0-C35B-4651-93E9-28AF76041D5D
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_STOPFIXSESSION_PARAM, *PGNSS_STOPFIXSESSION_PARAM, GNSS_STOPFIXSESSION_PARAM
+ms.keywords: PGNSS_STOPFIXSESSION_PARAM, GNSS_STOPFIXSESSION_PARAM, *PGNSS_STOPFIXSESSION_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure is used to stop an active fix session.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field FixSessionID
 
 ID of an active fix session.
 
+
 ### -field Unused[512]
 
 Padding buffer.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Padding buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

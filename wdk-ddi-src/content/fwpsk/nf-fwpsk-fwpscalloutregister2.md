@@ -7,7 +7,7 @@ old-location: netvista\fwpscalloutregister2.htm
 old-project: netvista
 ms.assetid: 7e60d536-607f-469f-8de4-5f6b77443b3e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsCalloutRegister2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
 
 
 
+
 ## -syntax
 
 ````
@@ -63,11 +64,13 @@ A pointer to a device object that was previously created by the callout driver. 
      information about how a callout driver creates a device object, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>.
 
+
 ### -param callout [in]
 
 A pointer to a constant 
      <a href="netvista.fwps_callout2">FWPS_CALLOUT2</a> structure that contains the
      data that is required to register the callout with the filter engine.
+
 
 ### -param calloutId [out, optional]
 
@@ -83,6 +86,7 @@ A pointer to a UINT32-typed variable that receives a run-time identifier that id
      identifier to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a> callout function. This
      parameter is optional and can be NULL.
+
 
 ## -returns
 The 
@@ -102,6 +106,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 A callout driver calls the 
@@ -127,11 +132,13 @@ This function is essentially identical to the previous version,
        updated <a href="netvista.fwps_callout2">FWPS_CALLOUT2</a> structure pointed to by the 
        <i>callout</i> parameter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,14 +149,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,6 +170,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -170,9 +181,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -217,5 +230,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutRegister2 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutRegister2 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

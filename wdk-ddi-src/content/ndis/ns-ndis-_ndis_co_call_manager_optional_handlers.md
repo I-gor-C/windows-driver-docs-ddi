@@ -7,8 +7,8 @@ old-location: netvista\ndis_co_call_manager_optional_handlers.htm
 old-project: netvista
 ms.assetid: 12d541e1-04dd-4512-827e-d27f16260fe3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure
@@ -42,6 +42,7 @@ The NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure specifies CoNDIS call manag
   <i>ProtocolXxx</i> functions for the driver that passes this structure to the 
   <a href="netvista.ndissetoptionalhandlers">
   NdisSetOptionalHandlers</a> function.
+
 
 
 ## -syntax
@@ -83,29 +84,35 @@ The
      <b>Revision</b> member to NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_CO_CALL_MANAGER_OPTIONAL_HANDLERS_REVISION_1.
 
+
 ### -field Reserved
 
 Reserved for NDIS.
+
 
 ### -field CmCreateVcHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
+
 ### -field CmDeleteVcHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function.
+
 
 ### -field CmOpenAfHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
 
+
 ### -field CmCloseAfHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a> function.
+
 
 ### -field CmRegisterSapHandler
 
@@ -113,16 +120,19 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
      ProtocolCmRegisterSap</a> function.
 
+
 ### -field CmDeregisterSapHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
      ProtocolCmDeregisterSap</a> function.
 
+
 ### -field CmMakeCallHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a> function.
+
 
 ### -field CmCloseCallHandler
 
@@ -130,16 +140,19 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_cm_close_call.md">
      ProtocolCmCloseCall</a> function.
 
+
 ### -field CmIncomingCallCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
      ProtocolCmIncomingCallComplete</a> function.
 
+
 ### -field CmAddPartyHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
+
 
 ### -field CmDropPartyHandler
 
@@ -147,11 +160,13 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">
      ProtocolCmDropParty</a> function.
 
+
 ### -field CmActivateVcCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
      ProtocolCmActivateVcComplete</a> function.
+
 
 ### -field CmDeactivateVcCompleteHandler
 
@@ -159,11 +174,13 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
      ProtocolCmDeactivateVcComplete</a> function.
 
+
 ### -field CmModifyCallQoSHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">
      ProtocolCmModifyCallQoS</a> function.
+
 
 ### -field CmOidRequestHandler
 
@@ -171,17 +188,20 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
      ProtocolCoOidRequest</a> function.
 
+
 ### -field CmOidRequestCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
      ProtocolCoOidRequestComplete</a> function.
 
+
 ### -field CmNotifyCloseAfCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cm_notify_close_af_complete.md">
      ProtocolCmNotifyCloseAfComplete</a> function.
+
 
 ## -remarks
 To specify entry points as a CoNDIS call manager, a protocol driver or miniport call manager (MCM)
@@ -254,19 +274,23 @@ An MCM driver cannot set the
      <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
      ProtocolCoOidRequestComplete</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -354,5 +378,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

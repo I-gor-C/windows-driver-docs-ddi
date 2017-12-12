@@ -41,6 +41,7 @@ req.irql:
 The<b> MRxAreFilesAliased</b> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request the network mini-redirector to determine if two FCB structures represent the same file. 
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS MRxAreFilesAliased(
 
 A pointer to the first FCB structure. 
 
+
 ### -param Fcb2 [in]
 
 A pointer to the second FCB structure.
+
 
 ## -returns
 <b>MRxAreFilesAliased</b> returns STATUS_SUCCESS indicating that the files are not aliased, or an appropriate NTSTATUS value, such as the following: 
@@ -71,6 +74,7 @@ A pointer to the second FCB structure.
 </dl>The <b>IndexNumber.QuadPart</b> members of the two FCB structures are identical. This value indicates that the two files that are being compared are aliases.
 
  
+
 
 ## -remarks
 RDBSS calls this routine when processing two files that appear to be the same but have different names (for example, an MS-DOS short name and a long name).
@@ -83,11 +87,13 @@ The FCB structure that is associated with the FOBX structure on the <b>FobxsToBe
 
 <b>MRxAreFilesAliased</b> is also called by the <a href="ifsk.rxscavengefobxsfornetroot">RxScavengeFobxsForNetRoot</a> routine when purging all the file objects associated with a NET_ROOT structure. This is complicated by the fact that the <i>PurgingFCB</i> parameter passed to <b>RxScavengeFobxsForNetRoot</b> and the FCB structure that is associated with the NET_ROOT structure might actually be the same file because of aliasing. In this case, the <b>MRxAreFilesAliased</b> routine is called to determine if the FCB structure is aliased.  
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,6 +104,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,5 +166,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxAreFilesAliased routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

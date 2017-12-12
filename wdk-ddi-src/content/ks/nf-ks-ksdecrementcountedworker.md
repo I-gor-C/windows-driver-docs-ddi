@@ -41,6 +41,7 @@ req.irql:
 Decrements the current worker count of a worker previous created by <a href="stream.ksregistercountedworker">KsRegisterCountedWorker</a>. This should be called after each task within a worker has been completed. 
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ ULONG KsDecrementCountedWorker(
 
 Contains the previously allocated worker.
 
+
 ## -returns
 Returns the current counter. A count of zero implies that the task list has been completed.
 
+
 ## -remarks
 <b>KsDecrementCountedWorker</b> should be called after each task within a worker has been completed. A corresponding call to <a href="stream.ksincrementcountedworker">KsIncrementCountedWorker</a> would have previously incremented the count. <b>KsDecrementCountedWorker</b> may be called at DISPATCH_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +113,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDecrementCountedWorker function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

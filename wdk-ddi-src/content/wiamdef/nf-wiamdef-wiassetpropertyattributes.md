@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasSetPropertyAttributes </b>function sets the access flags and valid values for a set of properties.
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,30 @@ HRESULT _stdcall wiasSetPropertyAttributes(
 
 Pointer to a WIA item context.
 
+
 ### -param cPropSpec 
 
 Specifies the number of properties.
+
 
 ### -param pPropSpec [in]
 
 Pointer to a PROPSPEC structure indicating the properties for which to set valid values and access flags.
 
+
 ### -param pulAccessFlags [in]
 
 Pointer to an array that contains the access flags to be written.
+
 
 ### -param pPropVar [out]
 
 Pointer to an array of PROPVARIANT structures that contains the valid values to be written.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).
+
 
 ## -remarks
 Minidrivers should use the function <a href="image.wiassetitempropattribs">wiasSetItemPropAttribs</a> to initialize groups of simple properties.
@@ -87,11 +94,13 @@ The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not c
 
 The PROPSPEC and PROPVARIANT structures are defined in the Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -102,14 +111,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +132,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +143,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +160,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasSetPropertyAttributes function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

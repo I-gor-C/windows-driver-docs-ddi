@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmateleservice_2.htm
 old-project: netvista
 ms.assetid: 35d3e419-ad21-403d-8590-f49cf6fd3b25
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGCDMATELESERVICE, RILMSGCDMATELESERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -120,6 +121,7 @@ typedef enum _RILMSGCDMATELESERVICE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationrequestaccuracy.htm
 old-project: netvista
 ms.assetid: e1e6ca44-a027-4800-9932-617f3bb4679d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILGEOLOCATIONREQUESTACCURACY, RILGEOLOCATIONREQUESTACCURACY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef enum _RILGEOLOCATIONREQUESTACCURACY {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

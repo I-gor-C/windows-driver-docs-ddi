@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 73AB73F1-CB9B-46A3-8ECC-19E93210D30E
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_WMDRM_RENEWLICENSE, *PBDA_WMDRM_RENEWLICENSE, BDA_WMDRM_RENEWLICENSE
+ms.keywords: _BDA_WMDRM_RENEWLICENSE, BDA_WMDRM_RENEWLICENSE, *PBDA_WMDRM_RENEWLICENSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _BDA_WMDRM_RENEWLICENSE {
 
 Specifies the license and entitlement token buffer.
 
+
 ## -remarks
 
 
@@ -76,6 +78,7 @@ Specifies the license and entitlement token buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

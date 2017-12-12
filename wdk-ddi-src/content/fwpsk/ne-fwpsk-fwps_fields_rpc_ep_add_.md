@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_rpc_ep_add.htm
 old-project: netvista
 ms.assetid: 9062fe5f-4384-4466-a15f-c62f2f429699
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_RPC_EP_ADD_, FWPS_FIELDS_RPC_EP_ADD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The FWPS_FIELDS_RPC_EP_ADD enumeration type specifies the data field identifiers
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef enum FWPS_FIELDS_RPC_EP_ADD_ {
 ### -field FWPS_FIELD_RPC_EP_ADD_PROCESS_WITH_RPC_IF_UUID
 
 The UUID of the process with the RPC interface.
+
 
 ### -field FWPS_FIELD_RPC_EP_ADD_PROTOCOL
 
@@ -81,14 +83,17 @@ The UUID of the process with the RPC interface.
 
 Reserved for internal use.
 
+
 ### -field FWPS_FIELD_RPC_EP_ADD_EP_FLAGS
 
 Reserved for internal use.
+
 
 ### -field FWPS_FIELD_RPC_EP_ADD_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -98,14 +103,17 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxgk_hdr_metadata.htm
 old-project: display
 ms.assetid: 15AE3B05-1FD4-4ADB-B92F-9098225A920B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_HDR_METADATA, DXGK_HDR_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Contains information about the HDR metadata.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _DXGK_HDR_METADATA {
 
 Indicates the type of the HDR metadata.
 
+
 ### -field Size
 
 Indicates the size of the HDR metadata.
 
+
 ### -field pMetaData
 
 Pointer to the HDR metadata.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Pointer to the HDR metadata.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

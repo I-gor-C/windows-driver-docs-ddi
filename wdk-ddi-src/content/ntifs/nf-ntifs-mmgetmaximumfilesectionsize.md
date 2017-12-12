@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>MmGetMaximumFileSectionSize</b> returns the maximum possible size of a file section for the current version of Windows.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ The maximum file section size supported by the current version of Windows.
 
 The maximum file section size supported by the current version of Windows.
 
+
 ## -remarks
 
 
@@ -66,6 +68,7 @@ The maximum file section size supported by the current version of Windows.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -76,6 +79,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -86,6 +90,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +101,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -106,9 +112,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>

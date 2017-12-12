@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FsRtlBalanceReads</b> routine signals to a fault-tolerant disk driver that it is now safe to start balancing reads from a mirrored drive. 
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ NTSTATUS FsRtlBalanceReads(
 
 A pointer to the device object from which the device starts the balanced read. 
 
+
 ## -returns
 <b>FsRtlBalanceReads</b> returns STATUS_INVALID_DEVICE_REQUEST if the device is not a mirror. 
 
+
 ## -remarks
 <b>FsRtlBalanceReads</b> signals to a fault-tolerant disk driver that it is safe to start balancing reads from a mirrored drive. A file system typically calls <b>FsRtlBalanceReads</b> for a newly mounted volume once it has determined that the volume is clean. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +104,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -107,9 +115,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -121,5 +131,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlBalanceReads routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

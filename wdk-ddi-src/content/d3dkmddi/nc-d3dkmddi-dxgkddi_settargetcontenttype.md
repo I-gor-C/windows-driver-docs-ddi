@@ -7,7 +7,7 @@ old-location: display\dxgkddi_settargetcontenttype.htm
 old-project: display
 ms.assetid: 7639BF7B-6219-4490-953F-80E76CDFBAAA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Passes the content type for which the driver should optimize on the specified ta
 
 
 
+
 ## -prototype
 
 ````
@@ -59,16 +60,20 @@ NTSTATUS APIENTRY DXGKDDI_SETTARGETCONTENTTYPE(
 
 A handle that identifies the adapter.
 
+
 ### -param pSetTargetContentTypeArg [in]
 
 A pointer to a <a href="display.dxgkarg_settargetcontenttype">DXGKARG_SETTARGETCONTENTTYPE</a> structure that provides the target to be modified and the new type of content being displayed on it.
 
+
 ## -returns
 If this routine succeeds, it returns STATUS_SUCCESS. 
+
 
 ## -remarks
 This is an optional DDI, so the function pointer in DRIVER_INITIALIZATION_DATA should be set to null if the DDI is not implemented for every adapter supported by the driver.
 This function is always called at PASSIVE level so the supporting code should be made pageable.
+
 
 
 ## -requirements
@@ -76,6 +81,7 @@ This function is always called at PASSIVE level so the supporting code should be
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_2dregion.htm
 old-project: display
 ms.assetid: 24f703c5-d025-4233-a32d-7cb8bcb5c6b7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_2DREGION, D3DKMDT_2DREGION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMDT_2DREGION structure is used to represent a point or an offset in a two-dimensional space.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMDT_2DREGION {
 
 The horizontal component of the point or offset.
 
+
 ### -field cy
 
 The vertical component of the point or offset.
+
 
 ## -remarks
 
@@ -69,14 +72,17 @@ The vertical component of the point or offset.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

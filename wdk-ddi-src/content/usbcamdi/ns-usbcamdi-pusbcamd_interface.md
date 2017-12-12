@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces.
 
 
+
 ## -syntax
 
 ````
@@ -62,25 +63,31 @@ typedef struct {
 
 Describes the interface that USBCAMD exports for use by other drivers.
 
+
 ### -field USBCAMD_WaitOnDeviceEvent
 
 Pointer to the camera minidriver defined <a href="stream.usbcamd_waitondeviceevent">USBCAMD_WaitOnDeviceEvent</a> service.
+
 
 ### -field USBCAMD_BulkReadWrite
 
 Pointer to the camera minidriver defined <a href="stream.usbcamd_bulkreadwrite">USBCAMD_BulkReadWrite</a> service.
 
+
 ### -field USBCAMD_SetVideoFormat
 
 Pointer to the camera minidriver defined <a href="stream.usbcamd_setvideoformat">USBCAMD_SetVideoFormat</a> service.
+
 
 ### -field USBCAMD_SetIsoPipeState
 
 Pointer to the camera minidriver defined <a href="stream.usbcamd_setisopipestate">USBCAMD_SetIsoPipeState</a> service.
 
+
 ### -field USBCAMD_CancelBulkReadWrite
 
 Pointer to the camera minidriver defined <a href="stream.usbcamd_cancelbulkreadwrite">USBCAMD_CancelBulkReadWrite</a> service.
+
 
 ## -remarks
 The camera minidriver may obtain the USBCAMD_INTERFACE entry points at any point after it has received <a href="https://msdn.microsoft.com/library/windows/hardware/ff568182">SRB_INITIALIZATION_COMPLETE</a>. The IRP for acquiring a USBCAMD_INTERFACE is <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> and must be sent at IRQL = PASSIVE_LEVEL. Typically, a camera minidriver obtains the addresses of the USBCAMD_INTERFACE entry points once toward the end of the initialization of the camera minidriver. The members of the USBCAMD_INTERFACE structure are filled with the minidriver's entry points as described in <a href="https://msdn.microsoft.com/39db38a8-8279-4c61-9010-cc6d4767efc2">Acquiring USBCAMD2 Features</a>
@@ -88,11 +95,13 @@ The camera minidriver may obtain the USBCAMD_INTERFACE entry points at any point
 
 <b>USBCAMD_INTERFACE</b> is not supported in the original USBCAMD.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +139,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_INTERFACE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

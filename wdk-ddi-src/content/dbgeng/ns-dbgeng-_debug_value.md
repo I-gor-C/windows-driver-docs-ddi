@@ -7,7 +7,7 @@ old-location: debugger\debug_value.htm
 old-project: debugger
 ms.assetid: 568469ad-79c4-4437-aefe-a29e77e5143a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DEBUG_VALUE, DEBUG_VALUE, *PDEBUG_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 The DEBUG_VALUE structure holds register and expression values.
+
 
 
 ## -syntax
@@ -86,29 +87,36 @@ typedef struct _DEBUG_VALUE {
 
  
 
+
 ### -field I8
 
 See Remarks.
+
 
 ### -field I16
 
 See Remarks.
 
+
 ### -field I32
 
 See Remarks.
+
 
 ### -field ( unnamed struct )
 
  
 
+
 ### -field I64
 
 See Remarks.
 
+
 ### -field Nat
 
 See Remarks.
+
 </dd>
 </dl>
 
@@ -116,57 +124,71 @@ See Remarks.
 
 See Remarks.
 
+
 ### -field F64
 
 See Remarks.
+
 
 ### -field F80Bytes
 
 See Remarks.
 
+
 ### -field F82Bytes
 
 See Remarks.
+
 
 ### -field F128Bytes
 
 See Remarks.
 
+
 ### -field VI8
 
 See Remarks.
+
 
 ### -field VI16
 
 See Remarks.
 
+
 ### -field VI32
 
 See Remarks.
+
 
 ### -field VI64
 
 See Remarks.
 
+
 ### -field VF32
 
 See Remarks.
+
 
 ### -field VF64
 
 See Remarks.
 
+
 ### -field I64Parts32
 
 See Remarks.
+
 
 ### -field LowPart
 
 See Remarks.
 
+
 ### -field HighPart
 
 See Remarks.
+
 </dd>
 </dl>
 
@@ -174,19 +196,23 @@ See Remarks.
 
 See Remarks.
 
+
 ### -field LowPart
 
 See Remarks.
 
+
 ### -field HighPart
 
 See Remarks.
+
 </dd>
 </dl>
 
 ### -field RawBytes
 
 See Remarks.
+
 </dd>
 </dl>
 
@@ -194,18 +220,22 @@ See Remarks.
 
 See Remarks.
 
+
 ### -field Type
 
 See Remarks.
 
+
 ## -remarks
 The <b>Type</b> field specifies the value type that is being held by the structure. This also specifies which field in the structure is valid. The possible values of the <b>Type</b> field, and the corresponding field specified as valid in the structure, include the following.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

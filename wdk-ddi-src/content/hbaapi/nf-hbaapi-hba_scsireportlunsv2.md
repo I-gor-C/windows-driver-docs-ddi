@@ -7,7 +7,7 @@ old-location: storage\hba_scsireportlunsv2.htm
 old-project: storage
 ms.assetid: 6a4dfb93-4044-4a7a-a993-38c91f84cae2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: HBA_ScsiReportLUNsV2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>HBA_ScsiReportLUNsV2</b> routine sends a SCSI report LUNs command to the indicated remote port. 
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ HBA_STATUS HBA_API HBA_ScsiReportLUNsV2(
 
 Contains a value returned by the routine <a href="storage.hba_openadapter">HBA_OpenAdapter</a> that identifies the HBA through which the SCSI report LUNs command is sent.
 
+
 ### -param HbaPortWWN [in]
 
 Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA port from which the SCSI report LUNs command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. 
+
 
 ### -param discoveredPortWWN [in]
 
 Contains a 64-bit WWN that uniquely identifies the remote HBA port to which the SCSI report LUNs command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. 
 
+
 ### -param pRespBuffer [out]
 
 Pointer to a buffer that receives the output data of the SCSI report LUNs command.
+
 
 ### -param pRespBufferSize [in, out]
 
 Indicates the size, in bytes, of the buffer at <i>pRespBuffer</i>.
 
+
 ### -param pScsiStatus [out]
 
 Pointer to a buffer that receives the SCSI status data. 
+
 
 ### -param pSenseBuffer [out]
 
 Pointer to a buffer that receives the SCSI sense data.
 
+
 ### -param pSenseBufferSize [in, out]
 
 On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On output, this member indicates the number of bytes of sense data returned.
+
 
 ## -returns
 The <b>HBA_ScsiReportLUNsV2</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_ScsiReportLUNsV2</b> returns one of the following values.
@@ -114,6 +123,7 @@ The <b>HBA_ScsiReportLUNsV2</b> routine returns a value of type <a href="storage
 
  
 
+
 ## -remarks
 
 
@@ -122,6 +132,7 @@ The <b>HBA_ScsiReportLUNsV2</b> routine returns a value of type <a href="storage
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +143,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +154,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -152,6 +165,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +185,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_ScsiReportLUNsV2 routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_ScsiReportLUNsV2 routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

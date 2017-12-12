@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_invitation_flags.htm
 old-project: netvista
 ms.assetid: 9743FF37-0E8A-499F-AADB-9CD7BDC381E0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_WFD_INVITATION_FLAGS, DOT11_WFD_INVITATION_FLAGS, *PDOT11_WFD_INVITATION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,6 +55,7 @@ typedef struct _DOT11_WFD_INVITATION_FLAGS {
 ### -field InvitationType:1
 
 The type of group invitation. The invitation types have the following meanings.
+
 <table>
 <tr>
 <th>Value</th>
@@ -68,6 +69,7 @@ The type of group invitation. The invitation types have the following meanings.
 </td>
 <td width="60%">
 An invitiation to join an active group.
+
 </td>
 </tr>
 <tr>
@@ -78,14 +80,17 @@ An invitiation to join an active group.
 </td>
 <td width="60%">
 The invitation is reinvoked.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Reserved:7
 
 Reserved.
+
 
 ## -remarks
 
@@ -95,14 +100,17 @@ Reserved.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

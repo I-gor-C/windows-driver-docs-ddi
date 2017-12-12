@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: FE97B772-CD08-4F76-88DA-05F24881D062
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBSIDEBANDAUDIO_SIDETONE_PARAMS, *PUSBSIDEBANDAUDIO_SIDETONE_PARAMS, USBSIDEBANDAUDIO_SIDETONE_PARAMS
+ms.keywords: _USBSIDEBANDAUDIO_SIDETONE_PARAMS, USBSIDEBANDAUDIO_SIDETONE_PARAMS, *PUSBSIDEBANDAUDIO_SIDETONE_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 TBD
+
 
 
 ## -syntax
@@ -59,9 +61,11 @@ typedef struct _USBSIDEBANDAUDIO_SIDETONE_PARAMS {
 
 TBD
 
+
 ### -field Reserved 1
 
 TBD
+
 
 ## -remarks
 
@@ -71,6 +75,7 @@ TBD
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: print\xcvdataport.htm
 old-project: print
 ms.assetid: 2d0e3509-27d9-439f-9d47-e0e500e8907f
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: XcvDataPort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A port monitor server DLL's <b>XcvDataPort</b> function receives information from, and returns information to, the port monitor's UI DLL.
 
 
+
 ## -syntax
 
 ````
@@ -63,32 +64,40 @@ DWORD XcvDataPort(
 
 Caller-supplied printer handle, obtained by calling <b>OpenPrinter</b> (described in the Microsoft Windows SDK documentation). This handle is created and returned by the <a href="print.xcvopenport">XcvOpenPort</a> function.
 
+
 ### -param pszDataName [in]
 
 Caller-supplied pointer to a string representing the name of the data being requested. For more information, see the following Remarks section.
+
 
 ### -param pInputData [in]
 
 Caller-supplied pointer to a buffer containing input data.
 
+
 ### -param cbInputData 
 
 Caller-supplied size, in bytes, of the buffer pointed to by <i>pInputData</i>.
+
 
 ### -param pOutputData [out]
 
 Caller-supplied pointer to a buffer to receive output data.
 
+
 ### -param cbOutputData 
 
 Caller-supplied size, in bytes, of the buffer pointed to by <i>pOutputData</i>.
+
 
 ### -param pcbOutputNeeded [out]
 
 Caller-supplied pointer to a location to receive the minimum size, in bytes, required for the buffer pointed to by <i>pOutputData</i>.
 
+
 ## -returns
 If the operation succeeds, this function should return ERROR_SUCCESS. Otherwise, it should return an ERROR_-prefixed Win32 error code. The print monitor UI DLL receives this value in the <i>pdwStatus</i> location specified for <a href="print.xcvdata">XcvData</a>.
+
 
 ## -remarks
 Port monitor server DLLs are required to define an <b>XcvDataPort</b> function so they can receive information from, and return information to, a port monitor UI DLL. The function's address must be included in a <a href="print.monitor2">MONITOR2</a> structure.
@@ -133,11 +142,13 @@ Validate the contents of the buffer pointed to by the <i>pInputData</i> paramete
 
 If you are writing a port monitor that will communicate with TCPMON, see <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TCPMON Xcv Interface</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -148,6 +159,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -176,5 +188,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20XcvDataPort function%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20XcvDataPort function%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

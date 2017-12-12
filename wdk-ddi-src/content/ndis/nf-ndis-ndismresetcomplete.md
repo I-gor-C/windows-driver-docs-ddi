@@ -7,7 +7,7 @@ old-location: netvista\ndismresetcomplete.htm
 old-project: netvista
 ms.assetid: 3da12a14-a90a-46a6-b67e-55044fdc3ca1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMResetComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   previously returned NDIS_STATUS_PENDING.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ VOID NdisMResetComplete(
 The miniport adapter handle that NDIS originally passed to the 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
 
+
 ### -param Status [in]
 
 The final status of the reset operation just completed
+
 
 ### -param AddressingReset [in]
 
@@ -73,14 +76,18 @@ A Boolean value that is <b>TRUE</b> if NDIS is responsible for restoring the set
      referenced by 
      <i>MiniportAdapterHandle</i> . 
      
+
 If 
      <i>AddressingReset</i> is <b>FALSE</b>, the miniport driver is responsible for restoring all of the
      configuration settings for the NIC.
+
 For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff546572">Hardware Reset</a>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 If the 
@@ -105,11 +112,13 @@ In NDIS 6.0 and later, callers of
     <b>NdisMResetComplete</b> must run at IRQL &lt;= DISPATCH_LEVEL. Otherwise, callers of 
     <b>NdisMResetComplete</b> must run at IRQL = DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,15 +129,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see 
    <a href="https://msdn.microsoft.com/library/windows/hardware/ff553612">NdisMResetComplete (NDIS 5.1)</a>.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +151,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -149,14 +162,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
@@ -177,5 +193,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMResetComplete function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMResetComplete function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

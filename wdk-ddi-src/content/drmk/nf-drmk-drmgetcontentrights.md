@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <code>DrmGetContentRights</code> function retrieves the DRM content rights assigned to a DRM content ID.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS DrmGetContentRights(
 
 Specifies the DRM content ID. This parameter identifies a KS audio stream.
 
+
 ### -param DrmRights [out]
 
 Specifies the DRM content rights that are assigned to the stream that is identified by <i>ContentId</i>. This parameter is a pointer to a <a href="audio.drmrights">DRMRIGHTS</a> structure.
 
+
 ## -returns
 <code>DrmGetContentRights</code> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.
+
 
 ## -remarks
 Before a KS audio filter begins mixing together several KS audio streams, it first calls <a href="audio.drmcreatecontentmixed">DrmCreateContentMixed</a> to create a content ID for the composite stream. Next, it calls <code>DrmGetContentRights</code> to get the content rights that the system has assigned to the stream.
@@ -71,11 +75,13 @@ A module that lies downstream from the KS filter that creates the content ID typ
 
 <code>DrmGetContentRights</code> performs the same function as <a href="audio.pcgetcontentrights">PcGetContentRights</a> and <a href="audio.idrmport_getcontentrights">IDrmPort::GetContentRights</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,6 +92,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +103,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,9 +114,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -144,5 +154,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20DrmGetContentRights function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

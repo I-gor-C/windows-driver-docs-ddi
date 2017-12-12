@@ -7,7 +7,7 @@ old-location: display\iddcxswapchainfinishedprocessingframe.htm
 old-project: display
 ms.assetid: 46c4a592-b3d4-479d-b5db-06202b5be290
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IddCxSwapChainFinishedProcessingFrame
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _Must_inspect_result_
                 An OS callback function the driver calls report all GPU command for processing this frame have been queue
 
 
+
 ## -syntax
 
 ````
@@ -58,35 +59,43 @@ HRESULT IddCxSwapChainFinishedProcessingFrame(
 
 The swap-chain object whose current frame is being queried.
 
+
 ## -returns
 
 (NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
                     
 
+
 ## -remarks
 If the driver copies the buffer to a staging surface so it can lock and copy the pixel data to the CPU, then the driver should call this callback once the copy from surface to staging surface has been submitted. If the driver does not call this callback the desktop will not update. It is invalid to call <a href="display.iddcxswapchainreleaseandacquirebuffer">IddCxSwapChainReleaseAndAcquireBuffer</a> before calling <b>IddCxSwapChainFinishedProcessingFrame</b>
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,9 +106,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _Must_inspect_result_
+
 </td>
 </tr>
 </table>

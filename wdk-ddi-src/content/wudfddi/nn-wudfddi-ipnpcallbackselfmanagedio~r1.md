@@ -7,8 +7,8 @@ old-location: wdf\ipnpcallbackselfmanagedio.htm
 old-project: wdf
 ms.assetid: 34971df0-4abc-41a1-8d2f-6e36df1daf20
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 The <b>IPnpCallbackSelfManagedIo</b> interface is a Plug and Play (PnP) and power management (PM) interface. 
+
 
 
 ## -inheritance
@@ -62,6 +64,7 @@ The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend">OnSelfManaged
 
  
 
+
 ## -members
 The <b>IPnpCallbackSelfManagedIo</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -75,6 +78,7 @@ The <b>IPnpCallbackSelfManagedIo</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup">OnSelfManagedIoCleanup</a> method releases memory for a device's self-managed I/O operations, after the device is removed.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -83,6 +87,7 @@ The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup">OnSelfManaged
 </td>
 <td align="left" width="63%">
 The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioflush">OnSelfManagedIoFlush</a> method flushes the device for a device's self-managed I/O operations.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -91,6 +96,7 @@ The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioflush">OnSelfManagedIo
 </td>
 <td align="left" width="63%">
 The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit">OnSelfManagedIoInit</a> method initializes a device's self-managed I/O operations.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -99,6 +105,7 @@ The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit">OnSelfManagedIoI
 </td>
 <td align="left" width="63%">
 The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediorestart">OnSelfManagedIoRestart</a> method restarts a device's self-managed I/O operations.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -107,6 +114,7 @@ The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediorestart">OnSelfManaged
 </td>
 <td align="left" width="63%">
 The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediostop">OnSelfManagedIoStop</a> method is not used in the current version of the UMDF.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -115,6 +123,7 @@ The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediostop">OnSelfManagedIoS
 </td>
 <td align="left" width="63%">
 The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend">OnSelfManagedIoSuspend</a> method suspends a device's self-managed I/O operations.
+
 </td>
 </tr>
 </table>The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup">OnSelfManagedIoCleanup</a> method releases memory for a device's self-managed I/O operations, after the device is removed.
@@ -131,14 +140,17 @@ The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend">OnSelfManaged
 
  
 
+
 ## -remarks
 A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a> method to create a device object. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

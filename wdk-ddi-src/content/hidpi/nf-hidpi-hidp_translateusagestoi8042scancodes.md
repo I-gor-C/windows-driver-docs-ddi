@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>HidP_TranslateUsagesToI8042ScanCodes</b> routine maps a list of <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usages</a> on the HID_USAGE_PAGE_KEYBOARD usage page to their respective PS/2 scan codes (Scan Code Set 1).
 
 
+
 ## -syntax
 
 ````
@@ -61,13 +62,16 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 
 Pointer to a list of keyboard (button) usages. The translate usages routine interprets a zero as a delimiter that ends the usage list. 
 
+
 ### -param UsageListLength [in]
 
 Specifies the maximum possible number of usages in the changed usage list. 
 
+
 ### -param KeyAction [in]
 
 Identifies the key direction for the specified change usage list. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -83,19 +87,23 @@ Identifies the key direction for the specified change usage list.
 </table></span></div>
 
 
+
 ### -param HidP_Keyboard_Break
 
 Specifies a <i>break</i> direction (key up). The changed usage list contains the usages set to OFF that were previously set to ON (which corresponds to the keys that were previously down, but are now up).
 
+
 ### -param HidPKeyboard_Make
 
 Specifies a <i>make</i> direction (key down). The changed usage list contains the usages set to ON that were previously set to OFF (which corresponds to the keys that were previously up, but now are down).
+
 </dd>
 </dl>
 
 ### -param ModifierState [in, out]
 
 Pointer to a _HIDP_KEYBOARD_MODIFIER_STATE structure that the caller maintains for use by the translate usages routine. The modifier state structure identifies the state of the keyboard modifier keys. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -124,11 +132,14 @@ Pointer to a _HIDP_KEYBOARD_MODIFIER_STATE structure that the caller maintains f
 </tr>
 </table></span></div>
 Each member of the modifier state structure identifies whether the corresponding usage is set to ON (1) or OFF (zero).
+
 See the Remarks section for more information about how a modifier state structure is used with the translate usage routine.
+
 
 ### -param InsertCodesProcedure [in]
 
 Pointer to a caller-supplied PHIDP_INSERT_SCANCODES-typed callback routine that the translate usage routine uses to return the mapped scan codes to the caller of the translate usage routine.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -145,23 +156,28 @@ Pointer to a caller-supplied PHIDP_INSERT_SCANCODES-typed callback routine that 
 </table></span></div>
 
 
+
 ### -param Context
 
 Pointer to the context of the caller of the translate usage routine. The translate usage routine passes the <i>InsertCodesContext</i> pointer to the <i>InsertCodesProcedure</i> routine.
+
 
 ### -param NewScanCodes
 
 Pointer to the first byte of a scan code that the translate usage routine returns to the caller of the translate usage routine.
 
+
 ### -param Length
 
 Specifies the length, in bytes, of the scan code. A scan code cannot exceed four bytes.
+
 </dd>
 </dl>
 
 ### -param InsertCodesContext [in, optional]
 
 Pointer to a caller-defined context that the translate usage routine passes to the <i>InsertCodesProcedure</i> routine.
+
 
 ## -returns
 <b>HidP_TranslateUsagesToI8042ScanCodes</b> returns one of the following status values:
@@ -173,6 +189,7 @@ Pointer to a caller-defined context that the translate usage routine passes to t
 </dl>A usage in the changed usage list mapped to an invalid keyboard scan code.
 
  
+
 
 ## -remarks
 <b>HidP_TranslateUsagesToI8042ScanCodes</b> sequentially maps the keyboard button usages in the changed usage list in the order in which they occur in the list, beginning with the value at <i>ChangedUsageList.</i> After the translate usage routine successfully maps a usage, it uses the caller's <i>InsertCodesProcedure</i> routine to return the corresponding scan code to the caller. The translate usage routine continues to map the usages in the list until one of the following occurs: a usage value in the list is zero; it maps the number of usages that is specified by <i>UsageListLength</i>; a usage maps to an invalid keyboard scan code.
@@ -203,11 +220,13 @@ Update the previous usage list to the current usage list.
 
 For information about the mapping between HID usages and PS/2 keyboard scan codes, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=242210">key support and scan codes</a> website.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -218,14 +237,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -236,6 +258,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -246,9 +269,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -266,5 +291,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_TranslateUsagesToI8042ScanCodes routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

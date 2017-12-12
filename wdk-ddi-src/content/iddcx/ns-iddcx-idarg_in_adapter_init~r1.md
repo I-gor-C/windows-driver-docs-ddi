@@ -7,7 +7,7 @@ old-location: display\idarg_in_adapter_init.htm
 old-project: display
 ms.assetid: 2db324c8-69b1-4497-b6a7-76047baeca19
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_ADAPTER_INIT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,20 @@ typedef struct IDARG_IN_ADAPTER_INIT {
                      The WDF device that will be hosting this WDDM adapter object.
                  
 
+
 ### -field pCaps
 
 
                      [in] A reference  to the capabilities of the adapter.
                  
 
+
 ### -field ObjectAttributes
 
 
                      [in][optional] Object attributes that are used to initialize the WDF adapter object.
                  
+
 
 ## -remarks
 
@@ -82,6 +86,7 @@ typedef struct IDARG_IN_ADAPTER_INIT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

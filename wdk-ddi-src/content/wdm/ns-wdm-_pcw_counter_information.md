@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The PCW_COUNTER_INFORMATION structure describes attributes that identify a specific instance of a counter set. 
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _PCW_COUNTER_INFORMATION {
 
 A bitmask. If the <i>x</i>-th bit is set, counter <i>x</i>^2 is included in the query. The value assigned to identify the counters exposed in a registration.
 
+
 ### -field InstanceMask
 
 A Unicode string that contains a wildcard specification of the instance. That is, "*" and "?" have the usual meaning of zero-or-more-characters and any-character respectively. The <b>InstanceMask</b> identifies and maps the counter set to a specific instance. 
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ A Unicode string that contains a wildcard specification of the instance. That is
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

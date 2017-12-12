@@ -7,7 +7,7 @@ old-location: display\d3dddi_copy_flags.htm
 old-project: display
 ms.assetid: 6186dac4-4797-48f2-bb32-40a0d501bac7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DDDI_COPY_FLAGS, D3DDDI_COPY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies how to handle the existing contents of a resource during a copy or update operation of a region within that resource.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum D3DDDI_COPY_FLAGS {
 
 The caller guarantees that the portion of the surface that is being written to with new data is not currently being referenced or accessed by any previous render operation. The driver can take advantage of this capability to optimize performance and memory usage.
 
+
 ### -field D3DDDI_COPY_DISCARD
 
 The user-mode display driver can discard previous contents of the entire resource. The driver can take advantage of this capability to optimize performance and memory usage.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The user-mode display driver can discard previous contents of the entire resourc
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

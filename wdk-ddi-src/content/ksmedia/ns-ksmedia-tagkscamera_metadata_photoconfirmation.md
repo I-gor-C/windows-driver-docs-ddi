@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: FA3365DC-B604-468E-AACD-AC006D2B4EAF
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION
+ms.keywords: tagKSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains the photo confirmation metadata information that is filled by the camera driver.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct tagKSCAMERA_METADATA_PHOTOCONFIRMATION {
 
 Contains the header information for the metadata item
 
+
 ### -field PhotoConfirmationIndex
 
 Stores the index of the still confirmation frame. For single photo capture, this is always 0. For multishot, this corresponds to the index of the photo frame captured.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

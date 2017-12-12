@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>IoAttachDeviceToDeviceStackSafe</b> routine attaches the caller's device object to the topmost device object in a driver stack. 
 
 
+
 ## -syntax
 
 ````
@@ -58,16 +59,20 @@ NTSTATUS IoAttachDeviceToDeviceStackSafe(
 
 Pointer to a caller-created device object. 
 
+
 ### -param TargetDevice [in]
 
 Pointer to the device object in the stack to which the <i>SourceDevice</i> object is to be attached. 
+
 
 ### -param AttachedToDeviceObject [out]
 
 On input, this parameter specifies the address of <i>SourceDevice-&gt;DeviceExtension-&gt;AttachedToDeviceObject</i>, which must contain a <b>NULL</b> pointer. On output, this parameter receives a pointer to the device object to which the <i>SourceDevice</i> was attached. 
 
+
 ## -returns
 <b>IoAttachDeviceToDeviceStackSafe</b> returns STATUS_SUCCESS if <i>SourceDevice</i> is successfully attached above the <i>TargetDevice</i>; otherwise it returns STATUS_NO_SUCH_DEVICE. 
+
 
 ## -remarks
 Like <a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>, <b>IoAttachDeviceToDeviceStackSafe</b> establishes layering between drivers so that the same IRPs are sent to each driver in the stack. However, unlike <b>IoAttachDeviceToDeviceStack</b>, <b>IoAttachDeviceToDeviceStackSafe</b> has an additional parameter, <i>AttachedToDeviceObject</i>, which the filter driver uses to pass the address of the <i>SourceDevice</i> object's AttachedToDeviceObject field. <b>IoAttachDeviceToDeviceStackSafe</b> updates this field while holding the I/O system database lock. Because it holds this lock, <b>IoAttachDeviceToDeviceStackSafe</b> avoids a race condition that could otherwise occur if the <i>SourceDevice</i> object received an IRP before its AttachedToDeviceObject field was updated. 
@@ -82,11 +87,13 @@ At the moment immediately after it is attached to the top of the stack, the <i>S
 
 <b>IoAttachDeviceToDeviceStackSafe</b> sets the <b>AlignmentRequirement</b> member of the device object pointed to by <i>SourceDevice</i> to the value of the corresponding in the next-lower device object and sets the <b>StackSize</b> in <i>SourceDevice</i> to the value in the next-lower-object plus one. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +136,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -135,9 +147,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -152,5 +166,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoAttachDeviceToDeviceStackSafe routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

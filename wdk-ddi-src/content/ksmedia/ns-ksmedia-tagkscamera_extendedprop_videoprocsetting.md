@@ -41,6 +41,7 @@ req.irql:
 The <b>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</b> is a property payload structure for video processing settings related to white balance, exposure mode, and focus mode.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 ### -field Mode
 
 The video processing mode type. Currently, this member is used to control white balance. The possible values for <b>Mode</b> are the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -72,6 +74,7 @@ The video processing mode type. Currently, this member is used to control white 
 </td>
 <td width="60%">
 A picture temperature value is used to set white balance in degrees Kelvin.
+
 </td>
 </tr>
 <tr>
@@ -81,30 +84,40 @@ A picture temperature value is used to set white balance in degrees Kelvin.
 </td>
 <td width="60%">
 The white balance setting is a preset value specified in <b>VideoProc</b>.
+
 </td>
 </tr>
 </table>
  
+
 This member is not used for <a href="https://msdn.microsoft.com/library/windows/hardware/dn567573">KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a>. In these cases it must be set to 0.
+
 
 ### -field Min
 
 The minum range value for the setting in <b>VideoProc</b>.
 
+
 ### -field Max
 
 The maximum range value for the setting in <b>VideoProc</b>.
 
+
 ### -field Step
 
 The maximum range value for the setting in <b>VideoProc</b>.
+
 The increment in value, when applicable, for the setting in <b>VideoProc</b> when <b>Mode</b> is set to KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE.
+
 -or-
+
 The increment in value, when applicable, for the setting in <b>VideoProc</b> when setting exposure is set manually with KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL.
+
 
 ### -field VideoProc
 
 Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567588">KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</a> property, when <b>Mode</b> is set to KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET, the <b>VideoProc.Value.ul</b> value is one of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,6 +130,7 @@ Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567588"
 </td>
 <td width="60%">
 White balance preset for cloudy conditions.
+
 </td>
 </tr>
 <tr>
@@ -126,6 +140,7 @@ White balance preset for cloudy conditions.
 </td>
 <td width="60%">
 White balance preset for cloudy daylight.
+
 </td>
 </tr>
 <tr>
@@ -135,6 +150,7 @@ White balance preset for cloudy daylight.
 </td>
 <td width="60%">
 White balance preset to compensate for flash lighting.
+
 </td>
 </tr>
 <tr>
@@ -144,6 +160,7 @@ White balance preset to compensate for flash lighting.
 </td>
 <td width="60%">
 White balance preset to compensate for fluorescent lighting.
+
 </td>
 </tr>
 <tr>
@@ -153,6 +170,7 @@ White balance preset to compensate for fluorescent lighting.
 </td>
 <td width="60%">
 White balance preset to compensate for tungsten emitted lighting.
+
 </td>
 </tr>
 <tr>
@@ -162,17 +180,23 @@ White balance preset to compensate for tungsten emitted lighting.
 </td>
 <td width="60%">
 White balance preset to compensate for candlelight lighting.
+
 </td>
 </tr>
 </table>
  
+
 Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567588">KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</a> property, when <b>Mode</b> is set to KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE, the <b>VideoProc.Value.ul</b> value is a temperature value in degrees Kelvin.
+
 Using the  <a href="https://msdn.microsoft.com/library/windows/hardware/dn567573">KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</a> property, when used for manually setting exposure, KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL, the <b>VideoProc.Value.ul</b> value is a the exposure time in 100 nanosecond units.
+
 Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a> property, this member contains the focal length value for manual focus mode,  KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL.
+
 
 ### -field Reserved
 
 Reserved.
+
 
 ## -remarks
 
@@ -182,14 +206,17 @@ Reserved.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -212,5 +239,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

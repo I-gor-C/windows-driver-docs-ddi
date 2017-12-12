@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Streaming media devices
 
+## -description
 Overview of the Streaming media devices technology.
 
 To develop Streaming media devices, you need these headers:
@@ -54,60 +59,6 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [BdaStartChanges function](..\bdasup\nf-bdasup-bdastartchanges.md) | The BdaStartChanges function initiates the setting of new BDA topology changes. |
 | [BdaUninitFilter function](..\bdasup\nf-bdasup-bdauninitfilter.md) | The BdaUninitFilter function removes the BDA filter context from the associated filter instance. |
 | [BdaValidateNodeProperty function](..\bdasup\nf-bdasup-bdavalidatenodeproperty.md) | The BdaValidateNodeProperty function validates that a node property request is associated with a specific pin. |
-| [IKsAggregateControl::KsAddAggregate method](..\ksproxy\nf-ksproxy-iksaggregatecontrol-ksaddaggregate.md) | The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
-| [IKsAggregateControl::KsRemoveAggregate method](..\ksproxy\nf-ksproxy-iksaggregatecontrol-ksremoveaggregate.md) | The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
-| [IKsClockPropertySet::KsGetCorrelatedPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetcorrelatedphysicaltime.md) | The KsGetCorrelatedPhysicalTime method retrieves the physical time and the correlated system time from the underlying clock. |
-| [IKsClockPropertySet::KsGetCorrelatedTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetcorrelatedtime.md) | The KsGetCorrelatedTime method retrieves the current time and the correlated system time from the underlying clock. |
-| [IKsClockPropertySet::KsGetPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetphysicaltime.md) | The KsGetPhysicalTime method retrieves the physical time from the underlying clock. |
-| [IKsClockPropertySet::KsGetResolution method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetresolution.md) | The KsGetResolution method retrieves the clock resolution from the underlying clock. |
-| [IKsClockPropertySet::KsGetState method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetstate.md) | The KsGetState method retrieves the streaming state of a pin from the underlying clock. |
-| [IKsClockPropertySet::KsGetTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgettime.md) | The KsGetTime method retrieves the time of the underlying clock. |
-| [IKsClockPropertySet::KsSetCorrelatedPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssetcorrelatedphysicaltime.md) | The KsSetCorrelatedPhysicalTime method sets the physical time with the correlated system time on the underlying clock. |
-| [IKsClockPropertySet::KsSetCorrelatedTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssetcorrelatedtime.md) | The KsSetCorrelatedTime method sets the current time with the correlated system time on the underlying clock. |
-| [IKsClockPropertySet::KsSetPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssetphysicaltime.md) | The KsSetPhysicalTime method sets the physical time on the underlying clock. |
-| [IKsClockPropertySet::KsSetTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssettime.md) | The KsSetTime method sets the current time on the underlying clock. |
-| [IKsControl::KsEvent method](..\ks\nf-ks-ikscontrol-ksevent.md) | The IKsControl |
-| [IKsControl::KsEvent method](..\ksproxy\nf-ksproxy-ikscontrol-ksevent.md) | The KsEvent method enables or disables an event, along with any other defined support operations available on an event set. |
-| [IKsControl::KsMethod method](..\ks\nf-ks-ikscontrol-ksmethod.md) | The IKsControl |
-| [IKsControl::KsMethod method](..\ksproxy\nf-ksproxy-ikscontrol-ksmethod.md) | The KsMethod method sends a method to a KS object, along with any other defined support operations available on a method set. |
-| [IKsControl::KsProperty method](..\ks\nf-ks-ikscontrol-ksproperty.md) | The IKsControl |
-| [IKsControl::KsProperty method](..\ksproxy\nf-ksproxy-ikscontrol-ksproperty.md) | The KsProperty method sets a property or retrieves property information, along with any other defined support operations available on a property set. |
-| [IKsDataTypeCompletion::KsCompleteMediaType method](..\ksproxy\nf-ksproxy-iksdatatypecompletion-kscompletemediatype.md) | The KsCompleteMediaType method completes a partially-specified media type that was first presented to the IAMStreamConfig |
-| [IKsDataTypeHandler::KsCompleteIoOperation method](..\ksproxy\nf-ksproxy-iksdatatypehandler-kscompleteiooperation.md) | The KsCompleteIoOperation method cleans up the extended header and completes the input and output (I/O) operation. |
-| [IKsDataTypeHandler::KsIsMediaTypeInRanges method](..\ksproxy\nf-ksproxy-iksdatatypehandler-ksismediatypeinranges.md) | The KsIsMediaTypeInRanges method validates that a media type is within the provided data ranges. |
-| [IKsDataTypeHandler::KsPrepareIoOperation method](..\ksproxy\nf-ksproxy-iksdatatypehandler-ksprepareiooperation.md) | The KsPrepareIoOperation method initializes the extended header and prepares the media sample for an I/O operation. |
-| [IKsDataTypeHandler::KsQueryExtendedSize method](..\ksproxy\nf-ksproxy-iksdatatypehandler-ksqueryextendedsize.md) | The KsQueryExtendedSize method retrieves extended header information required for input and output (I/O) operations. |
-| [IKsDataTypeHandler::KsSetMediaType method](..\ksproxy\nf-ksproxy-iksdatatypehandler-kssetmediatype.md) | The KsSetMediaType method sets the media type for a data type handler. |
-| [IKsDeviceFunctions::RegisterAdapterObjectEx method](..\ks\nf-ks-iksdevicefunctions-registeradapterobjectex.md) | The IKsDeviceFunctions |
-| [IKsInterfaceHandler::KsCompleteIo method](..\ksproxy\nf-ksproxy-iksinterfacehandler-kscompleteio.md) | The KsCompleteIo method cleans up extended headers and releases media samples after input and output (I/O) complete. |
-| [IKsInterfaceHandler::KsProcessMediaSamples method](..\ksproxy\nf-ksproxy-iksinterfacehandler-ksprocessmediasamples.md) | The KsProcessMediaSamples method processes media samples. |
-| [IKsInterfaceHandler::KsSetPin method](..\ksproxy\nf-ksproxy-iksinterfacehandler-kssetpin.md) | The KsSetPin method informs the streaming interface handler about the pin with which to communicate when passing data. |
-| [IKsNotifyEvent::KsNotifyEvent method](..\ksproxy\nf-ksproxy-iksnotifyevent-ksnotifyevent.md) | The KsNotifyEvent method requests that the KS object that owns the given DirectShow event notify the calling application with the given parameters whenever action related to the event occurs. |
-| [IKsObject::KsGetObjectHandle method](..\ksproxy\nf-ksproxy-iksobject-ksgetobjecthandle.md) | The KsGetObjectHandle method retrieves a file handle to a KS object. |
-| [IKsPin::KsCreateSinkPinHandle method](..\ksproxy\nf-ksproxy-ikspin-kscreatesinkpinhandle.md) | The KsCreateSinkPinHandle method creates a pin handle and stores it in the KS pin object. |
-| [IKsPin::KsDecrementPendingIoCount method](..\ksproxy\nf-ksproxy-ikspin-ksdecrementpendingiocount.md) | The KsDecrementPendingIoCount method decrements the number of input/output (I/O) operations that are in progress on a pin. |
-| [IKsPin::KsDeliver method](..\ksproxy\nf-ksproxy-ikspin-ksdeliver.md) | The KsDeliver method delivers a media sample from an output pin to an input pin, continues an I/O operation by retrieving the next buffer from an allocator, and submits the buffer to the associated device. |
-| [IKsPin::KsGetCurrentCommunication method](..\ksproxy\nf-ksproxy-ikspin-ksgetcurrentcommunication.md) | The KsGetCurrentCommunication method retrieves the current communication direction, interface, and medium of a pin. |
-| [IKsPin::KsIncrementPendingIoCount method](..\ksproxy\nf-ksproxy-ikspin-ksincrementpendingiocount.md) | The KsIncrementPendingIoCount method increments the number of input/output (I/O) operations that are in progress on a pin. |
-| [IKsPin::KsMediaSamplesCompleted method](..\ksproxy\nf-ksproxy-ikspin-ksmediasamplescompleted.md) | The KsMediaSamplesCompleted method informs a pin that a stream segment completed. |
-| [IKsPin::KsPeekAllocator method](..\ksproxy\nf-ksproxy-ikspin-kspeekallocator.md) | The KsPeekAllocator method returns a pointer to an IMemAllocator interface for a pin's assigned allocator. |
-| [IKsPin::KsPropagateAcquire method](..\ksproxy\nf-ksproxy-ikspin-kspropagateacquire.md) | The KsPropagateAcquire method directs all the pins on the filter to attain the Acquire state. |
-| [IKsPin::KsQueryInterfaces method](..\ksproxy\nf-ksproxy-ikspin-ksqueryinterfaces.md) | The KsQueryInterfaces method retrieves interfaces that a pin supports. |
-| [IKsPin::KsQueryMediums method](..\ksproxy\nf-ksproxy-ikspin-ksquerymediums.md) | The KsQueryMediums method retrieves mediums that a pin supports. |
-| [IKsPinEx::KsNotifyError method](..\ksproxy\nf-ksproxy-ikspinex-ksnotifyerror.md) | The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt. |
-| [IKsPinFactory::KsPinFactory method](..\ksproxy\nf-ksproxy-ikspinfactory-kspinfactory.md) | The KsPinFactory method retrieves the identifier of a pin factory. |
-| [IKsPropertySet::Get method](..\ksproxy\nf-ksproxy-ikspropertyset-get.md) | The Get method retrieves a property identified by a property-set GUID and a property identifier. |
-| [IKsPropertySet::QuerySupported method](..\ksproxy\nf-ksproxy-ikspropertyset-querysupported.md) | The QuerySupported method determines whether a KS object supports a property set and the type of that support. |
-| [IKsPropertySet::Set method](..\dsound\nf-dsound-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
-| [IKsPropertySet::Set method](..\ksproxy\nf-ksproxy-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
-| [IKsQualityForwarder::KsFlushClient method](..\ksproxy\nf-ksproxy-iksqualityforwarder-ksflushclient.md) | The KsFlushClient method flushes information from a pin. |
-| [IKsReferenceClock::GetCorrelatedPhysicalTime method](..\ks\nf-ks-iksreferenceclock-getcorrelatedphysicaltime.md) | The IKsReferenceClock |
-| [IKsReferenceClock::GetCorrelatedTime method](..\ks\nf-ks-iksreferenceclock-getcorrelatedtime.md) | The IKsReferenceClock |
-| [IKsReferenceClock::GetPhysicalTime method](..\ks\nf-ks-iksreferenceclock-getphysicaltime.md) | The IKsReferenceClock |
-| [IKsReferenceClock::GetResolution method](..\ks\nf-ks-iksreferenceclock-getresolution.md) | The IKsReferenceClock |
-| [IKsReferenceClock::GetState method](..\ks\nf-ks-iksreferenceclock-getstate.md) | The IKsReferenceClock |
-| [IKsReferenceClock::GetTime method](..\ks\nf-ks-iksreferenceclock-gettime.md) | The IKsReferenceClock |
-| [IKsTopology::CreateNodeInstance method](..\ksproxy\nf-ksproxy-ikstopology-createnodeinstance.md) | The CreateNodeInstance method requests a KS filter object to open a topology node object. |
 | [KoCreateInstance function](..\kcom\nf-kcom-kocreateinstance.md) | The KoCreateInstance function creates an object of the class with the specified CLSID. |
 | [KoDeviceInitialize function](..\kcom\nf-kcom-kodeviceinitialize.md) | The KoDeviceInitialize function adds a kernel COM create-item entry to the specified device object. |
 | [KoDriverInitialize function](..\kcom\nf-kcom-kodriverinitialize.md) | The KoDriverInitialize function initializes a driver object to handle the kernel streaming interface. |
@@ -156,7 +107,6 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KsDecrementCountedWorker function](..\ks\nf-ks-ksdecrementcountedworker.md) | Decrements the current worker count of a worker previous created by KsRegisterCountedWorker. This should be called after each task within a worker has been completed. |
 | [KsDefaultAddEventHandler function](..\ks\nf-ks-ksdefaultaddeventhandler.md) | The KsDefaultAddEventHandler function is a default routine to handle event 'add' requests. |
 | [KsDefaultDeviceIoCompletion function](..\ks\nf-ks-ksdefaultdeviceiocompletion.md) | The KsDefaultDeviceIoCompletion function is used to return a default response and to complete any device I/O control. |
-| [KsDeleteFilterFactory function](..\ks\nf-ks-ksdeletefilterfactory.md) | KsDeleteFilterFactory deletes a given filter factory. |
 | [KsDereferenceBusObject function](..\ks\nf-ks-ksdereferencebusobject.md) | Dereferences the bus Physical Device Object. |
 | [KsDereferenceSoftwareBusObject function](..\swenum\nf-swenum-ksdereferencesoftwarebusobject.md) | The KsDereferenceSoftwareBusObject function decrements the reference count of the demand-load bus enumerator object's PDO. |
 | [KsDeviceGetBusData function](..\ks\nf-ks-ksdevicegetbusdata.md) | The KsDeviceGetBusData function reads data from the bus where the given AVStream device resides. |
@@ -167,7 +117,6 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KsDeviceRegisterThermalDispatch function](..\ks\nf-ks-ksdeviceregisterthermaldispatch.md) | This function is used by the Avstream miniport driver to register callbacks for thermal notifications with the KS port driver. |
 | [KsDeviceSetBusData function](..\ks\nf-ks-ksdevicesetbusdata.md) | The KsDeviceSetBusData function writes data to the bus on which the specified AVStream device resides. |
 | [KsDisableEvent function](..\ks\nf-ks-ksdisableevent.md) | The KsDisableEvent function disables events requested through IOCTL_KS_DISABLE_EVENT. |
-| [KsDiscard function](..\ks\nf-ks-ksdiscard.md) | The KsDiscard macro removes a given item from an object bag. |
 | [KsDiscardEvent function](..\ks\nf-ks-ksdiscardevent.md) | The KsDiscardEvent function discards the memory used by an event entry after the objects have been dereferenced. |
 | [KsDispatchFastIoDeviceControlFailure function](..\ks\nf-ks-ksdispatchfastiodevicecontrolfailure.md) | The KsDispatchFastIoDeviceControlFailure function is used in a KSDISPATCH_TABLE.FastDeviceIoControl entry that are not handled. The function should always return FALSE. |
 | [KsDispatchFastReadFailure function](..\ks\nf-ks-ksdispatchfastreadfailure.md) | The KsDispatchFastReadFailure function is used in a KSDISPATCH_TABLE.FastRead entry when fast I/O read is not handled. The function should always return FALSE. |
@@ -177,7 +126,6 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KsDispatchSetSecurity function](..\ks\nf-ks-ksdispatchsetsecurity.md) | The KsDispatchSetSecurity function is used in the KSDISPATCH_TABLE.SetSecurity entry to handle setting the current security descriptor. |
 | [KsDispatchSpecificMethod function](..\ks\nf-ks-ksdispatchspecificmethod.md) | The KsDispatchSpecificMethod function dispatches a method to a specific handler. The function assumes that the caller has previously dispatched the IRP to a handler through the KsMethodHandler function. The function can only be called at PASSIVE_LEVEL. |
 | [KsDispatchSpecificProperty function](..\ks\nf-ks-ksdispatchspecificproperty.md) | The KsDispatchSpecificProperty function dispatches the property to a specific handler. |
-| [KsEdit function](..\ks\nf-ks-ksedit.md) | The _KsEdit function guarantees that a given item is dynamically allocated and associated with an AVStream object through the object bag. |
 | [KsEnableEvent function](..\ks\nf-ks-ksenableevent.md) | The KsEnableEvent function enables events requested through IOCTL_KS_ENABLE_EVENT. It responds to all event identifiers defined by the sets. This function can only be called at PASSIVE_LEVEL. |
 | [KsEnableEventWithAllocator function](..\ks\nf-ks-ksenableeventwithallocator.md) | The KsEnableEventWithAllocator function enables events requested through IOCTL_KS_ENABLE_EVENT but also allows an optional allocator callback to be used to provide a buffer for the parameters. |
 | [KsFastMethodHandler function](..\ks\nf-ks-ksfastmethodhandler.md) | The KsFastMethodHandler function handles fast methods requested through IOCTL_KS_METHOD. It responds to all method identifiers defined by the sets that are also contained in the fast I/O list. This function can only be called at PASSIVE_LEVEL. |
@@ -395,39 +343,39 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [StreamClassRegisterFilterWithNoKSPins function](..\strmini\nf-strmini-streamclassregisterfilterwithnokspins.md) | The StreamClassRegisterFilterWithNoKSPins routine is used to register filter drivers with Microsoft DirectShow that have no kernel streaming pins and, therefore, do not stream in kernel mode. |
 | [StreamClassScheduleTimer function](..\strmini\nf-strmini-streamclassscheduletimer.md) | The minidriver calls the StreamClassScheduleTimer routine to schedule a timer, and to specify a routine that is called when the timer expires. |
 | [StreamClassStreamNotification function](..\strmini\nf-strmini-streamclassstreamnotification.md) | Streams use the StreamClassStreamNotification routine to notify the class driver that it has completed a stream request, or that an event has occurred. |
-| [USBCAMD_AdapterReceivePacket function](..\usbcamdi\nf-usbcamdi-usbcamd-adapterreceivepacket.md) | The USBCAMD_AdapterReceivePacket function allows USBCAMD to process an adapter-based stream request block (SRB). |
-| [USBCAMD_ControlVendorCommand function](..\usbcamdi\nf-usbcamdi-usbcamd-controlvendorcommand.md) | The USBCAMD_ControlVendorCommand function sends vendor-specific commands to the control pipe. |
-| [USBCAMD_Debug_LogEntry function](..\usbcamdi\nf-usbcamdi-usbcamd-debug-logentry.md) | The USBCAMD_Debug_LogEntry function is called by the camera minidriver to log debugging information to a file. |
-| [USBCAMD_DriverEntry function](..\usbcamdi\nf-usbcamdi-usbcamd-driverentry.md) | The USBCAMD_DriverEntry function registers the minidriver with USBCAMD, effectively binding USBCAMD and the minidriver together. |
-| [USBCAMD_GetRegistryKeyValue function](..\usbcamdi\nf-usbcamdi-usbcamd-getregistrykeyvalue.md) | The USBCAMD_GetRegistryKeyValue function retrieves the device-instance-specific registry key value. |
-| [USBCAMD_InitializeNewInterface function](..\usbcamdi\nf-usbcamdi-usbcamd-initializenewinterface.md) | The USBCAMD_InitializeNewInterface function provides USBCAMD with all the necessary information to configure the camera minidriver to work correctly with the stream class driver and the USB bus driver. |
-| [USBCAMD_SelectAlternateInterface function](..\usbcamdi\nf-usbcamdi-usbcamd-selectalternateinterface.md) | The USBCAMD_SelectAlternateInterface function selects an alternate setting within the USB video streaming interface. |
-| [_KsEdit function](..\ks\nf-ks--ksedit.md) | The _KsEdit function guarantees that a given item is dynamically allocated and associated with an AVStream object through the object bag. |
+| [USBCAMD_AdapterReceivePacket function](..\usbcamdi\nf-usbcamdi-usbcamd_adapterreceivepacket.md) | The USBCAMD_AdapterReceivePacket function allows USBCAMD to process an adapter-based stream request block (SRB). |
+| [USBCAMD_ControlVendorCommand function](..\usbcamdi\nf-usbcamdi-usbcamd_controlvendorcommand.md) | The USBCAMD_ControlVendorCommand function sends vendor-specific commands to the control pipe. |
+| [USBCAMD_Debug_LogEntry function](..\usbcamdi\nf-usbcamdi-usbcamd_debug_logentry.md) | The USBCAMD_Debug_LogEntry function is called by the camera minidriver to log debugging information to a file. |
+| [USBCAMD_DriverEntry function](..\usbcamdi\nf-usbcamdi-usbcamd_driverentry.md) | The USBCAMD_DriverEntry function registers the minidriver with USBCAMD, effectively binding USBCAMD and the minidriver together. |
+| [USBCAMD_GetRegistryKeyValue function](..\usbcamdi\nf-usbcamdi-usbcamd_getregistrykeyvalue.md) | The USBCAMD_GetRegistryKeyValue function retrieves the device-instance-specific registry key value. |
+| [USBCAMD_InitializeNewInterface function](..\usbcamdi\nf-usbcamdi-usbcamd_initializenewinterface.md) | The USBCAMD_InitializeNewInterface function provides USBCAMD with all the necessary information to configure the camera minidriver to work correctly with the stream class driver and the USB bus driver. |
+| [USBCAMD_SelectAlternateInterface function](..\usbcamdi\nf-usbcamdi-usbcamd_selectalternateinterface.md) | The USBCAMD_SelectAlternateInterface function selects an alternate setting within the USB video streaming interface. |
+| [_KsEdit function](..\ks\nf-ks-_ksedit.md) | The _KsEdit function guarantees that a given item is dynamically allocated and associated with an AVStream object through the object bag. |
 
 ## Callback functions
 
 | Title   | Description   |
 | ---- |:---- |
-| [PCAM_ALLOCATE_BW_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-allocate-bw-routine-ex.md) | A camera minidriver's CamAllocateBandwidthEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
-| [PCAM_CONFIGURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-configure-routine-ex.md) | A camera minidriver's CamConfigureEx callback function configures the isochronous streaming interface. |
-| [PCAM_FREE_BW_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-free-bw-routine-ex.md) | A camera minidriver's CamFreeBandwidthEx callback function selects an alternate setting within the USB video streaming interface that uses no bandwidth. |
-| [PCAM_INITIALIZE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam-initialize-routine.md) | A camera minidriver's CamInitialize callback function initializes the device. |
-| [PCAM_NEW_FRAME_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-new-frame-routine-ex.md) | A camera minidriver's CamNewVideoFrameEx callback function initializes a new video frame context structure. |
-| [PCAM_PROCESS_PACKET_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-process-packet-routine-ex.md) | A camera minidriver's CamProcessUSBPacketEx callback function processes a USB packet. |
-| [PCAM_PROCESS_RAW_FRAME_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-process-raw-frame-routine-ex.md) | A camera minidriver's CamProcessRawVideoFrameEx callback function decodes a raw video frame. |
-| [PCAM_START_CAPTURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-start-capture-routine-ex.md) | A camera minidriver's CamStartCaptureEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
-| [PCAM_STOP_CAPTURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam-stop-capture-routine-ex.md) | A camera minidriver's CamStopCaptureEx callback function performs any processing after the stream is stopped. |
-| [PCOMMAND_COMPLETE_FUNCTION callback](..\usbcamdi\nc-usbcamdi-pcommand-complete-function.md) | A camera minidriver's CommandCompleteFunction callback function allows the camera minidriver to perform any additional tasks necessary to complete certain USBCAMD services |
-| [PFNALLOCATOR_ALLOCATEFRAME callback](..\ks\nc-ks-pfnallocator-allocateframe.md) | The KStrAllocateFrame routine describes a vendor-supplied frame allocation function. |
-| [PFNALLOCATOR_FREEFRAME callback](..\ks\nc-ks-pfnallocator-freeframe.md) | The KStrFreeFrame routine describes a vendor-supplied frame deallocation function. |
+| [PCAM_ALLOCATE_BW_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_allocate_bw_routine_ex.md) | A camera minidriver's CamAllocateBandwidthEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
+| [PCAM_CONFIGURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md) | A camera minidriver's CamConfigureEx callback function configures the isochronous streaming interface. |
+| [PCAM_FREE_BW_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine_ex.md) | A camera minidriver's CamFreeBandwidthEx callback function selects an alternate setting within the USB video streaming interface that uses no bandwidth. |
+| [PCAM_INITIALIZE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_initialize_routine.md) | A camera minidriver's CamInitialize callback function initializes the device. |
+| [PCAM_NEW_FRAME_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine_ex.md) | A camera minidriver's CamNewVideoFrameEx callback function initializes a new video frame context structure. |
+| [PCAM_PROCESS_PACKET_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_process_packet_routine_ex.md) | A camera minidriver's CamProcessUSBPacketEx callback function processes a USB packet. |
+| [PCAM_PROCESS_RAW_FRAME_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md) | A camera minidriver's CamProcessRawVideoFrameEx callback function decodes a raw video frame. |
+| [PCAM_START_CAPTURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md) | A camera minidriver's CamStartCaptureEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
+| [PCAM_STOP_CAPTURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_stop_capture_routine_ex.md) | A camera minidriver's CamStopCaptureEx callback function performs any processing after the stream is stopped. |
+| [PCOMMAND_COMPLETE_FUNCTION callback](..\usbcamdi\nc-usbcamdi-pcommand_complete_function.md) | A camera minidriver's CommandCompleteFunction callback function allows the camera minidriver to perform any additional tasks necessary to complete certain USBCAMD services |
+| [PFNALLOCATOR_ALLOCATEFRAME callback](..\ks\nc-ks-pfnallocator_allocateframe.md) | The KStrAllocateFrame routine describes a vendor-supplied frame allocation function. |
+| [PFNALLOCATOR_FREEFRAME callback](..\ks\nc-ks-pfnallocator_freeframe.md) | The KStrFreeFrame routine describes a vendor-supplied frame deallocation function. |
 | [PFNAVCINTERSECTHANDLER callback](..\avc\nc-avc-pfnavcintersecthandler.md) | The AV/C intersect handler determines if the data ranges are compatible. |
 | [PFNDEREFERENCEDEVICEOBJECT callback](..\ks\nc-ks-pfndereferencedeviceobject.md) | The driver can use this routine to decrement the reference count of the PDO. |
 | [PFNKSADDEVENT callback](..\ks\nc-ks-pfnksaddevent.md) | An AVStream minidriver's AVStrMiniAddEvent routine is called when a client registers to be notified of an event. This routine is optional. |
 | [PFNKSALLOCATOR callback](..\ks\nc-ks-pfnksallocator.md) | Minidrivers can optionally supply a callback function of type PFNKSALLOCATOR as a parameter in calls to KsEnableEventWithAllocator, KsPropertyHandlerWithAllocator, and KsMethodHandlerWithAllocator. |
 | [PFNKSCANCELTIMER callback](..\ks\nc-ks-pfnkscanceltimer.md) | A streaming minidriver's KStrCancelTimer routine is called to cancel a custom timer object that was previously specified in the SetTimer parameter in a call to KsAllocateDefaultClockEx. |
-| [PFNKSCLOCK_CORRELATEDTIME callback](..\ks\nc-ks-pfnksclock-correlatedtime.md) | KStrClockGetCorrelatedPhysicalTime is a system-supplied routine that retrieves both the current system time minus suspended delta and the corresponding clock tick since boot. |
-| [PFNKSCLOCK_GETTIME callback](..\ks\nc-ks-pfnksclock-gettime.md) | KStrClockGetPhysicalTime is a system-supplied routine that retrieves the current system time minus any suspended delta. |
-| [PFNKSCONTEXT_DISPATCH callback](..\ks\nc-ks-pfnkscontext-dispatch.md) | A streaming minidriver's KStrContextDispatch routine is called to process IRP_MJ_POWER IRPs. |
+| [PFNKSCLOCK_CORRELATEDTIME callback](..\ks\nc-ks-pfnksclock_correlatedtime.md) | KStrClockGetCorrelatedPhysicalTime is a system-supplied routine that retrieves both the current system time minus suspended delta and the corresponding clock tick since boot. |
+| [PFNKSCLOCK_GETTIME callback](..\ks\nc-ks-pfnksclock_gettime.md) | KStrClockGetPhysicalTime is a system-supplied routine that retrieves the current system time minus any suspended delta. |
+| [PFNKSCONTEXT_DISPATCH callback](..\ks\nc-ks-pfnkscontext_dispatch.md) | A streaming minidriver's KStrContextDispatch routine is called to process IRP_MJ_POWER IRPs. |
 | [PFNKSCORRELATEDTIME callback](..\ks\nc-ks-pfnkscorrelatedtime.md) | A streaming minidriver's KStrCorrelatedTime routine is called to retrieve both the presentation time and physical time in a correlated manner. This allows the clock owner to completely determine the current time. |
 | [PFNKSDEFAULTALLOCATE callback](..\ks\nc-ks-pfnksdefaultallocate.md) | An AVStream minidriver's AVStrMiniAllocate routine allocates a frame using the allocator specified in the Context parameter. |
 | [PFNKSDEFAULTFREE callback](..\ks\nc-ks-pfnksdefaultfree.md) | An AVStream minidriver's AVStrMiniAllocatorFreeFrame routine frees the specified frame. |
@@ -464,349 +412,352 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [PFNKSSTREAMPOINTER callback](..\ks\nc-ks-pfnksstreampointer.md) | AVStream calls a minidriver's AVStrMiniCancelCallback routine when the IRP that is associated with a cloned stream pointer is canceled. This routine is optional. |
 | [PFNQUERYREFERENCESTRING callback](..\ks\nc-ks-pfnqueryreferencestring.md) | This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using ExFreePool. |
 | [PFNREFERENCEDEVICEOBJECT callback](..\ks\nc-ks-pfnreferencedeviceobject.md) | The driver can use this routine to increment the reference count of the PDO. |
-| [PFNUSBCAMD_BulkReadWrite callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd-bulkreadwrite.md) | The USBCAMD_BulkReadWrite service performs a read or write operation on the specified bulk pipe. |
-| [PFNUSBCAMD_CancelBulkReadWrite callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd-cancelbulkreadwrite.md) | The USBCAMD_CancelBulkReadWrite service cancels a pending bulk read or write request. |
-| [PFNUSBCAMD_SetIsoPipeState callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd-setisopipestate.md) | The USBCAMD_SetIsoPipeState service permits the camera minidriver to control the streaming state on the isochronous pipe. |
-| [PFNUSBCAMD_SetVideoFormat callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd-setvideoformat.md) | The USBCAMD_SetVideoFormat service is used to notify USBCAMD that the video format has changed. |
-| [PFNUSBCAMD_WaitOnDeviceEvent callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd-waitondeviceevent.md) | The USBCAMD_WaitOnDeviceEvent service is used to perform a read from the interrupt pipe if the camera has an interrupt pipe for external event notifications. |
-| [PHW_CANCEL_SRB callback](..\strmini\nc-strmini-phw-cancel-srb.md) | The class driver calls the minidriver's StrMiniCancelPacket routine to signal that a stream request has been canceled. |
-| [PHW_EVENT_ROUTINE callback](..\strmini\nc-strmini-phw-event-routine.md) | The class driver calls the stream minidriver's StrMiniEvent routine to signal to a minidriver an event should be enabled or disabled. |
-| [PHW_PRIORITY_ROUTINE callback](..\strmini\nc-strmini-phw-priority-routine.md) | StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level. |
-| [PHW_QUERY_CLOCK_ROUTINE callback](..\strmini\nc-strmini-phw-query-clock-routine.md) | Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied StrMiniClock function, provided in each stream's HW_STREAM_OBJECT. |
-| [PHW_RECEIVE_DEVICE_SRB callback](..\strmini\nc-strmini-phw-receive-device-srb.md) | The minidriver-supplied StrMiniReceiveDevicePacket routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device. |
-| [PHW_REQUEST_TIMEOUT_HANDLER callback](..\strmini\nc-strmini-phw-request-timeout-handler.md) | The stream class driver calls the minidriver's StrMiniRequestTimeout routine to signal to the minidriver that a request has timed out. |
+| [PFNUSBCAMD_BulkReadWrite callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd_bulkreadwrite.md) | The USBCAMD_BulkReadWrite service performs a read or write operation on the specified bulk pipe. |
+| [PFNUSBCAMD_CancelBulkReadWrite callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd_cancelbulkreadwrite.md) | The USBCAMD_CancelBulkReadWrite service cancels a pending bulk read or write request. |
+| [PFNUSBCAMD_SetIsoPipeState callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd_setisopipestate.md) | The USBCAMD_SetIsoPipeState service permits the camera minidriver to control the streaming state on the isochronous pipe. |
+| [PFNUSBCAMD_SetVideoFormat callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd_setvideoformat.md) | The USBCAMD_SetVideoFormat service is used to notify USBCAMD that the video format has changed. |
+| [PFNUSBCAMD_WaitOnDeviceEvent callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd_waitondeviceevent.md) | The USBCAMD_WaitOnDeviceEvent service is used to perform a read from the interrupt pipe if the camera has an interrupt pipe for external event notifications. |
+| [PHW_CANCEL_SRB callback](..\strmini\nc-strmini-phw_cancel_srb.md) | The class driver calls the minidriver's StrMiniCancelPacket routine to signal that a stream request has been canceled. |
+| [PHW_EVENT_ROUTINE callback](..\strmini\nc-strmini-phw_event_routine.md) | The class driver calls the stream minidriver's StrMiniEvent routine to signal to a minidriver an event should be enabled or disabled. |
+| [PHW_PRIORITY_ROUTINE callback](..\strmini\nc-strmini-phw_priority_routine.md) | StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level. |
+| [PHW_QUERY_CLOCK_ROUTINE callback](..\strmini\nc-strmini-phw_query_clock_routine.md) | Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied StrMiniClock function, provided in each stream's HW_STREAM_OBJECT. |
+| [PHW_RECEIVE_DEVICE_SRB callback](..\strmini\nc-strmini-phw_receive_device_srb.md) | The minidriver-supplied StrMiniReceiveDevicePacket routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device. |
+| [PHW_REQUEST_TIMEOUT_HANDLER callback](..\strmini\nc-strmini-phw_request_timeout_handler.md) | The stream class driver calls the minidriver's StrMiniRequestTimeout routine to signal to the minidriver that a request has timed out. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [AVCCONNECTINFO structure](..\avc\ns-avc--avcconnectinfo.md) | The AVCCONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
-| [AVCPRECONNECTINFO structure](..\avc\ns-avc--avcpreconnectinfo.md) | The AVCPRECONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
-| [AVCSTRM_BUFFER_STRUCT structure](..\avcstrm\ns-avcstrm--avcstrm-buffer-struct.md) | The AVCSTRM_BUFFER_STRUCT structure describes a buffer to be submitted to avcstrm.sys for read or write operations. |
-| [AVCSTRM_FORMAT_INFO structure](..\avcstrm\ns-avcstrm--avcstrm-format-info.md) | The AVCSTRM_FORMAT_INFO structure is used to describe a data stream. |
-| [AVCSTRM_OPEN_STRUCT structure](..\avcstrm\ns-avcstrm--avcstrm-open-struct.md) | The AVCSTRM_OPEN_STRUCT structure describes a data stream to be opened. |
-| [AVC_COMMAND_IRB structure](..\avc\ns-avc--avc-command-irb.md) | The AVC_COMMAND_IRB structure defines a structure that contains an AV/C command and response pair. |
-| [AVC_EXT_PLUG_COUNTS structure](..\avc\ns-avc--avc-ext-plug-counts.md) | The AVC_EXT_PLUG_COUNTS structure describes the number of external plugs on the subunit. |
-| [AVC_IRB structure](..\avc\ns-avc--avc-irb.md) | The AVC_IRB structure is an I/O Request Block (IRB) header structure where a function number is stored. |
-| [AVC_MULTIFUNC_IRB structure](..\avc\ns-avc--avc-multifunc-irb.md) | The AVC_MULTIFUNC_IRB structure contains other AV/C related structures in a union. |
-| [AVC_PEER_DO_LIST structure](..\avc\ns-avc--avc-peer-do-list.md) | The AVC_PEER_DO_LIST describes all nonvirtual (peer) instances of avc.sys. |
-| [AVC_PEER_DO_LOCATOR structure](..\avc\ns-avc--avc-peer-do-locator.md) | The AVC_PEER_DO_LOCATOR describes nonvirtual (peer) instances of avc.sys. |
-| [AVC_PIN_COUNT structure](..\avc\ns-avc--avc-pin-count.md) | The AVC_PIN_COUNT structure specifies the number of pins on an AV/C subunit device. |
-| [AVC_PIN_DESCRIPTOR structure](..\avc\ns-avc--avc-pin-descriptor.md) | The AVC_PIN_DESCRIPTOR structure describes a pin on an AV/C subunit device. |
-| [AVC_PIN_ID structure](..\avc\ns-avc--avc-pin-id.md) | The AVC_PIN_ID structure describes a pin on a subunit. |
-| [AVC_PRECONNECT_INFO structure](..\avc\ns-avc--avc-preconnect-info.md) | The AVC_PRECONNECT_INFO structure specifies the preconnection information for the specified pin ID (zero-based offset) on an AV/C subunit device. |
-| [AVC_SETCONNECT_INFO structure](..\avc\ns-avc--avc-setconnect-info.md) | The AVC_SETCONNECT_INFO structure is used to initialize a subunit driver and establish pin connections. |
-| [AVC_STREAM_REQUEST_BLOCK structure](..\avcstrm\ns-avcstrm--avc-stream-request-block.md) | The AVC_STREAM_REQUEST_BLOCK structure describes an AV/C streaming request to be processed by avcstrm.sys. |
-| [AVC_SUBUNIT_ADDR_SPEC structure](..\avc\ns-avc--avc-subunit-addr-spec.md) | The AVC_SUBUNIT_ADDR_SPEC structure is used with virtual instances of avc.sys to describe virtual subunit addresses. |
-| [AVC_SUBUNIT_INFO_BLOCK structure](..\avc\ns-avc--avc-subunit-info-block.md) | The AVC_SUBUNIT_INFO_BLOCK structure describes subunit information. |
-| [AVC_UNIQUE_ID structure](..\avc\ns-avc--avc-unique-id.md) | The AVC_UNIQUE_ID describe the unique ID of the AV/C unit. |
-| [BDANODE_DESCRIPTOR structure](..\bdatypes\ns-bdatypes--bdanode-descriptor.md) | The BDANODE_DESCRIPTOR structure describes a BDA node. |
-| [BDA_BUFFER structure](..\bdatypes\ns-bdatypes--bda-buffer.md) | . |
-| [BDA_CAS_CHECK_ENTITLEMENTTOKEN structure](..\bdatypes\ns-bdatypes--bda-cas-check-entitlementtoken.md) | . |
-| [BDA_CAS_CLOSEMMIDATA structure](..\bdatypes\ns-bdatypes--bda-cas-closemmidata.md) | . |
-| [BDA_CAS_CLOSE_MMIDIALOG structure](..\bdatypes\ns-bdatypes--bda-cas-close-mmidialog.md) | . |
-| [BDA_CAS_OPENMMIDATA structure](..\bdatypes\ns-bdatypes--bda-cas-openmmidata.md) | . |
-| [BDA_CAS_REQUESTTUNERDATA structure](..\bdatypes\ns-bdatypes--bda-cas-requesttunerdata.md) | . |
-| [BDA_CA_MODULE_UI structure](..\bdatypes\ns-bdatypes--bda-ca-module-ui.md) | The BDA_CA_MODULE_UI structure describes the user interface (UI) that conditional access (CA) plugins can display. |
-| [BDA_DISEQC_RESPONSE structure](..\bdatypes\ns-bdatypes--bda-diseqc-response.md) | . |
-| [BDA_DISEQC_SEND structure](..\bdatypes\ns-bdatypes--bda-diseqc-send.md) | . |
-| [BDA_DRM_DRMSTATUS structure](..\bdatypes\ns-bdatypes--bda-drm-drmstatus.md) | . |
-| [BDA_DVBT2_L1_SIGNALLING_DATA structure](..\bdatypes\ns-bdatypes--bda-dvbt2-l1-signalling-data.md) | . |
-| [BDA_ETHERNET_ADDRESS structure](..\bdatypes\ns-bdatypes--bda-ethernet-address.md) | . |
-| [BDA_ETHERNET_ADDRESS_LIST structure](..\bdatypes\ns-bdatypes--bda-ethernet-address-list.md) | . |
-| [BDA_FILTER_TEMPLATE structure](..\bdasup\ns-bdasup--bda-filter-template.md) | The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter. |
-| [BDA_GDDS_DATA structure](..\bdatypes\ns-bdatypes--bda-gdds-data.md) | . |
-| [BDA_GDDS_DATATYPE structure](..\bdatypes\ns-bdatypes--bda-gdds-datatype.md) | . |
-| [BDA_IPv4_ADDRESS structure](..\bdatypes\ns-bdatypes--bda-ipv4-address.md) | . |
-| [BDA_IPv4_ADDRESS_LIST structure](..\bdatypes\ns-bdatypes--bda-ipv4-address-list.md) | . |
-| [BDA_IPv6_ADDRESS structure](..\bdatypes\ns-bdatypes--bda-ipv6-address.md) | . |
-| [BDA_IPv6_ADDRESS_LIST structure](..\bdatypes\ns-bdatypes--bda-ipv6-address-list.md) | . |
-| [BDA_ISDBCAS_REQUESTHEADER structure](..\bdatypes\ns-bdatypes--bda-isdbcas-requestheader.md) | . |
-| [BDA_ISDBCAS_RESPONSEDATA structure](..\bdatypes\ns-bdatypes--bda-isdbcas-responsedata.md) | . |
-| [BDA_PID_MAP structure](..\bdatypes\ns-bdatypes--bda-pid-map.md) | The BDA_PID_MAP structure describes a type of data to filter out of the input stream of a packet identifier (PID) filter and then pass to a downstream filter. |
-| [BDA_PID_UNMAP structure](..\bdatypes\ns-bdatypes--bda-pid-unmap.md) | The BDA_PID_UNMAP structure describes packet types to stop filtering from the input stream of a packet identifier (PID) filter. These packet types are identified with PIDs. |
-| [BDA_PIN_PAIRING structure](..\bdasup\ns-bdasup--bda-pin-pairing.md) | The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins. |
-| [BDA_PROGRAM_PID_LIST structure](..\bdatypes\ns-bdatypes--bda-program-pid-list.md) | The BDA_PROGRAM_PID_LIST structure describes data of a specific program to view. This data consists of packets that are identified with packet identifiers (PID). |
-| [BDA_RATING_PINRESET structure](..\bdatypes\ns-bdatypes--bda-rating-pinreset.md) | . |
-| [BDA_SCAN_CAPABILTIES structure](..\bdatypes\ns-bdatypes--bda-scan-capabilties.md) | . |
-| [BDA_SCAN_START structure](..\bdatypes\ns-bdatypes--bda-scan-start.md) | . |
-| [BDA_SCAN_STATE structure](..\bdatypes\ns-bdatypes--bda-scan-state.md) | . |
-| [BDA_SIGNAL_TIMEOUTS structure](..\bdatypes\ns-bdatypes--bda-signal-timeouts.md) | . |
-| [BDA_STRING structure](..\bdatypes\ns-bdatypes--bda-string.md) | . |
-| [BDA_TABLE_SECTION structure](..\bdatypes\ns-bdatypes--bda-table-section.md) | The BDA_TABLE_SECTION structure describes a table section. |
-| [BDA_TEMPLATE_CONNECTION structure](..\bdatypes\ns-bdatypes--bda-template-connection.md) | The BDA_TEMPLATE_CONNECTION structure describes the template for a BDA connection in terms of where it begins and ends. |
-| [BDA_TEMPLATE_PIN_JOINT structure](..\bdatypes\ns-bdatypes--bda-template-pin-joint.md) | The BDA_TEMPLATE_PIN_JOINT structure describes a joint in a template topology. |
-| [BDA_TS_SELECTORINFO structure](..\bdatypes\ns-bdatypes--bda-ts-selectorinfo.md) | . |
-| [BDA_TS_SELECTORINFO_ISDBS_EXT structure](..\bdatypes\ns-bdatypes--bda-ts-selectorinfo-isdbs-ext.md) | . |
-| [BDA_TUNER_DIAGNOSTICS structure](..\bdatypes\ns-bdatypes--bda-tuner-diagnostics.md) | . |
-| [BDA_TUNER_TUNERSTATE structure](..\bdatypes\ns-bdatypes--bda-tuner-tunerstate.md) | . |
-| [BDA_USERACTIVITY_INTERVAL structure](..\bdatypes\ns-bdatypes--bda-useractivity-interval.md) | . |
-| [BDA_WMDRMTUNER_PIDPROTECTION structure](..\bdatypes\ns-bdatypes--bda-wmdrmtuner-pidprotection.md) | . |
-| [BDA_WMDRMTUNER_PURCHASEENTITLEMENT structure](..\bdatypes\ns-bdatypes--bda-wmdrmtuner-purchaseentitlement.md) | . |
-| [BDA_WMDRM_KEYINFOLIST structure](..\bdatypes\ns-bdatypes--bda-wmdrm-keyinfolist.md) | . |
-| [BDA_WMDRM_RENEWLICENSE structure](..\bdatypes\ns-bdatypes--bda-wmdrm-renewlicense.md) | . |
-| [BDA_WMDRM_STATUS structure](..\bdatypes\ns-bdatypes--bda-wmdrm-status.md) | . |
-| [BUS_INTERFACE_SWENUM structure](..\swenum\ns-swenum--bus-interface-swenum.md) | The BUS_INTERFACE_SWENUM structure describes the demand-load bus enumerator object's interface. |
-| [CIP_HDR1 structure](..\avcstrm\ns-avcstrm--cip-hdr1.md) | The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair). |
-| [CIP_HDR2_FDF structure](..\avcstrm\ns-avcstrm--cip-hdr2-fdf.md) | The CIP_HDR2_FDF structure describes the second quadlet of a CIP header pair. |
-| [CIP_HDR2_MPEGTS structure](..\avcstrm\ns-avcstrm--cip-hdr2-mpegts.md) | The CIP_HDR2_MPEGTS structure describes the second quadlet of a CIP header pair for an MPEGTS format stream. |
-| [CIP_HDR2_SYT structure](..\avcstrm\ns-avcstrm--cip-hdr2-syt.md) | The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream. |
-| [DVINFO structure](..\avcstrm\ns-avcstrm--dvinfo.md) | The DVINFO structure describes a DV stream format including its default streaming source information and stream control information. |
-| [HW_CLOCK_OBJECT structure](..\strmini\ns-strmini--hw-clock-object.md) | The HW_CLOCK_OBJECT structure describes the clock associated with a stream. |
-| [HW_EVENT_DESCRIPTOR structure](..\strmini\ns-strmini--hw-event-descriptor.md) | When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. |
-| [HW_INITIALIZATION_DATA structure](..\strmini\ns-strmini--hw-initialization-data.md) | The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. |
-| [HW_STREAM_DESCRIPTOR structure](..\strmini\ns-strmini--hw-stream-descriptor.md) | The minidriver uses the HW_STREAM_DESCRIPTOR structure to return stream information to the stream class driver. |
-| [HW_STREAM_HEADER structure](..\strmini\ns-strmini--hw-stream-header.md) | The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure. |
-| [HW_STREAM_INFORMATION structure](..\strmini\ns-strmini--hw-stream-information.md) | The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an HW_STREAM_DESCRIPTOR structure. |
-| [HW_STREAM_OBJECT structure](..\strmini\ns-strmini--hw-stream-object~r1.md) | HW_STREAM_OBJECT describes an instance of a minidriver stream. |
-| [HW_STREAM_REQUEST_BLOCK structure](..\strmini\ns-strmini--hw-stream-request-block.md) | The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks. |
-| [HW_TIME_CONTEXT structure](..\strmini\ns-strmini--hw-time-context.md) | The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request. |
-| [KSALLOCATOR_DISPATCH structure](..\ks\ns-ks--ksallocator-dispatch.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
-| [KSALLOCATOR_DISPATCH structure](..\ks\ns-ks--ksallocator-dispatch~r1.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
-| [KSCAMERA_EXTENDEDPROP_PROFILE structure](..\ksmedia\ns-ksmedia--kscamera-extendedprop-profile.md) | The payload of the KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE control contains KSCAMERA_EXTENDEDPROP_HEADER + KSCAMERA_EXTENDEDPROP_PROFILE. |
-| [KSCAMERA_PROFILE_CONCURRENCYINFO structure](..\ksmedia\ns-ksmedia--kscamera-profile-concurrencyinfo.md) | An array of KSCAMERA_PROFILE_CONCURRENCYINFO structures form the Camera.Concurrency parameter of the KSDEVICE_PROFILE_INFO structure (whose array size is specified by Camera.CountOfConcurrency parameter) indicating which profiles the profile identified in the KSCAMERA_PROFILE_INFO structure may run simultaneously on different cameras. |
-| [KSCAMERA_PROFILE_INFO structure](..\ksmedia\ns-ksmedia--kscamera-profile-info.md) | The KSCAMERA_PROFILE_INFO structure is used to uniquely identify a given profile. |
-| [KSCAMERA_PROFILE_MEDIAINFO structure](..\ksmedia\ns-ksmedia--kscamera-profile-mediainfo.md) | This structure contains the relevant media type information presented for each camera profile. |
-| [KSCAMERA_PROFILE_PININFO structure](..\ksmedia\ns-ksmedia--kscamera-profile-pininfo.md) | This structure specifies the available list of media types for each of the camera driver pins. |
-| [KSCLOCK_DISPATCH structure](..\ks\ns-ks--ksclock-dispatch.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
-| [KSCLOCK_DISPATCH structure](..\ks\ns-ks--ksclock-dispatch~r1.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
-| [KSDEVICE structure](..\ks\ns-ks--ksdevice.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
-| [KSDEVICE structure](..\ks\ns-ks--ksdevice~r1.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
-| [KSDEVICE_DESCRIPTOR structure](..\ks\ns-ks--ksdevice-descriptor.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
-| [KSDEVICE_DESCRIPTOR structure](..\ks\ns-ks--ksdevice-descriptor~r1.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
-| [KSDEVICE_DISPATCH structure](..\ks\ns-ks--ksdevice-dispatch.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
-| [KSDEVICE_DISPATCH structure](..\ks\ns-ks--ksdevice-dispatch~r1.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
-| [KSDEVICE_PROFILE_INFO structure](..\ksmedia\ns-ksmedia--ksdevice-profile-info.md) | The KSDEVICE_PROFILE_INFO is a generic structure designed to handle profile information for various device types. |
-| [KSDEVICE_THERMAL_DISPATCH structure](..\ks\ns-ks--ksdevice-thermal-dispatch.md) | The KSDEVICE_THERMAL_DISPATCH structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces. |
-| [KSFILTER structure](..\ks\ns-ks--ksfilter.md) | The KSFILTER structure describes an instantiated filter. |
-| [KSFILTER structure](..\ks\ns-ks--ksfilter~r1.md) | The KSFILTER structure describes an instantiated filter. |
-| [KSFILTERFACTORY structure](..\ks\ns-ks--ksfilterfactory.md) | The KSFILTERFACTORY structure represents a filter factory. |
-| [KSFILTERFACTORY structure](..\ks\ns-ks--ksfilterfactory~r1.md) | The KSFILTERFACTORY structure represents a filter factory. |
-| [KSFILTER_DESCRIPTOR structure](..\ks\ns-ks--ksfilter-descriptor.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
-| [KSFILTER_DESCRIPTOR structure](..\ks\ns-ks--ksfilter-descriptor~r1.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
-| [KSFILTER_DISPATCH structure](..\ks\ns-ks--ksfilter-dispatch.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
-| [KSFILTER_DISPATCH structure](..\ks\ns-ks--ksfilter-dispatch~r1.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
-| [KSGATE structure](..\ks\ns-ks--ksgate.md) | The KSGATE structure describes an AVStream gate object. |
-| [KSGATE structure](..\ks\ns-ks--ksgate~r1.md) | The KSGATE structure describes an AVStream gate object. |
-| [KSGRAPHMANAGER_FUNCTIONTABLE structure](..\ks\ns-ks-ksgraphmanager-functiontable.md) | . |
-| [KSMAPPING structure](..\ks\ns-ks--ksmapping.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
-| [KSMAPPING structure](..\ks\ns-ks--ksmapping~r1.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
-| [KSMPEGVID_RECT structure](..\ksmedia\ns-ksmedia--ksmpegvid-rect.md) | KSMPEGVID_RECT structure |
-| [KSM_BDA_PIN structure](..\bdamedia\ns-bdamedia--ksm-bda-pin.md) | The KSM_BDA_PIN structure describes a method request to create or delete a pin factory for a filter. |
-| [KSM_BDA_PIN_PAIR structure](..\bdamedia\ns-bdamedia--ksm-bda-pin-pair.md) | The KSM_BDA_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
-| [KSM_PIN structure](..\bdasup\ns-bdasup--ksm-pin.md) | The KSM_PIN structure describes a method request to create or delete a pin factory for a filter. |
-| [KSM_PIN_PAIR structure](..\bdasup\ns-bdasup--ksm-pin-pair.md) | The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
-| [KSNODE_DESCRIPTOR structure](..\ks\ns-ks--ksnode-descriptor.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
-| [KSNODE_DESCRIPTOR structure](..\ks\ns-ks--ksnode-descriptor~r1.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
-| [KSPIN structure](..\ks\ns-ks--kspin.md) | The KSPIN structure describes an instantiated pin. |
-| [KSPIN structure](..\ks\ns-ks--kspin~r1.md) | The KSPIN structure describes an instantiated pin. |
-| [KSPIN_DESCRIPTOR_EX structure](..\ks\ns-ks--kspin-descriptor-ex.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
-| [KSPIN_DESCRIPTOR_EX structure](..\ks\ns-ks--kspin-descriptor-ex~r1.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
-| [KSPIN_DISPATCH structure](..\ks\ns-ks--kspin-dispatch.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
-| [KSPIN_DISPATCH structure](..\ks\ns-ks--kspin-dispatch~r1.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
-| [KSPROCESSPIN structure](..\ks\ns-ks--ksprocesspin.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
-| [KSPROCESSPIN structure](..\ks\ns-ks--ksprocesspin~r1.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
-| [KSPROCESSPIN_INDEXENTRY structure](..\ks\ns-ks--ksprocesspin-indexentry.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
-| [KSPROCESSPIN_INDEXENTRY structure](..\ks\ns-ks--ksprocesspin-indexentry~r1.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
-| [KSPROPERTY_GRAPHMANAGER_INTERFACE structure](..\ks\ns-ks--ksproperty-graphmanager-interface.md) | . |
-| [KSPROPERTY_SPHLI structure](..\ksmedia\ns-ksmedia--ksproperty-sphli.md) | The KSPROPERTY_SPHLI structure is used to describe a rectangle of subpicture or screen whose color or contrast is to be changed. |
-| [KSPROPERTY_SPPAL structure](..\ksmedia\ns-ksmedia--ksproperty-sppal.md) | The KSPROPERTY_SPPAL structure is used to describe the palette of a subpicture display. |
-| [KSP_BDA_NODE_PIN structure](..\bdamedia\ns-bdamedia--ksp-bda-node-pin.md) | The KSP_BDA_NODE_PIN structure describes a property request to retrieve the controlling pin for a node. |
+| [KSAUTOMATION_TABLE_ structure](..\ks\ns-ks-ksautomation_table_.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
+| [KSAUTOMATION_TABLE_ structure](..\ks\ns-ks-ksautomation_table_~r1.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
+| [KSGRAPHMANAGER_FUNCTIONTABLE structure](..\ks\ns-ks-ksgraphmanager_functiontable.md) | . |
 | [KSRELATIVEEVENT structure](..\ks\ns-ks-ksrelativeevent.md) | The KSPROPERTY_CONNECTION_STARTAT property is passed a KSRELATIVEEVENT structure. |
-| [KSSTREAM_POINTER structure](..\ks\ns-ks--ksstream-pointer.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
-| [KSSTREAM_POINTER structure](..\ks\ns-ks--ksstream-pointer~r1.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
-| [KSSTREAM_POINTER_OFFSET structure](..\ks\ns-ks--ksstream-pointer-offset.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
-| [KSSTREAM_POINTER_OFFSET structure](..\ks\ns-ks--ksstream-pointer-offset~r1.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
-| [KSSTREAM_SEGMENT structure](..\ksproxy\ns-ksproxy--ksstream-segment.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
-| [KSSTREAM_SEGMENT structure](..\ksproxy\ns-ksproxy--ksstream-segment~r1.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
-| [KS_COLCON structure](..\ksmedia\ns-ksmedia--ks-colcon.md) | The KS_COLCON structure is used to describe color and contrast settings. |
-| [KS_COPY_MACROVISION structure](..\ksmedia\ns-ksmedia--ks-copy-macrovision.md) | The KS_COPY_MACROVISION structure specifies the Macrovision level of the data stream. |
-| [KS_DVDCOPY_BUSKEY structure](..\ksmedia\ns-ksmedia--ks-dvdcopy-buskey.md) | The KS_DVDCOPY_BUSKEY structure is used to describe the bus key information for the DVD copyright protection authentication process. |
-| [KS_DVDCOPY_CHLGKEY structure](..\ksmedia\ns-ksmedia--ks-dvdcopy-chlgkey.md) | The KS_DVDCOPY_CHLGKEY structure is used to describe the challenge key information for the DVD copyright protection authentication process. |
-| [KS_DVDCOPY_DISCKEY structure](..\ksmedia\ns-ksmedia--ks-dvdcopy-disckey.md) | The KS_DVDCOPY_DISCKEY structure is used to describe the disc key information for the DVD copyright protection authentication process. |
-| [KS_DVDCOPY_REGION structure](..\ksmedia\ns-ksmedia--ks-dvdcopy-region.md) | The KS_DVDCOPY_REGION structure is used to describe the copy control region according to language restrictions. |
-| [KS_DVDCOPY_SET_COPY_STATE structure](..\ksmedia\ns-ksmedia--ks-dvdcopy-set-copy-state.md) | The KS_DVDCOPY_SET_COPY_STATE structure is used to specify the copyright protection state of the DVD decoder stream. |
-| [KS_DVDCOPY_TITLEKEY structure](..\ksmedia\ns-ksmedia--ks-dvdcopy-titlekey.md) | The KS_DVDCOPY_TITLEKEY structure is used to describe the title key information for the DVD copyright protection authentication process. |
-| [KS_DVD_YCrCb structure](..\ksmedia\ns-ksmedia--ks-dvd-ycrcb.md) | The KS_DVD_YCrCb structure is used to describe a color in the YCrCb colorspace. |
-| [KS_DVD_YUV structure](..\ksmedia\ns-ksmedia--ks-dvd-yuv.md) | The KS_DVD_YUV structure is used to describe a color in the YUV colorspace. |
-| [KS_VIDEO_STREAM_CONFIG_CAPS structure](..\ksmedia\ns-ksmedia--ks-video-stream-config-caps.md) | The KS_VIDEO_STREAM_CONFIG_CAPS structure describes the configuration and capabilities of a video stream, including analog video standard (for example, NTSC, PAL or SECAM), scaling, and cropping capabilities; minimum and maximum frame rates; and minimum and maximum data rates. |
-| [LAMP_CAPABILITIES_COLOR structure](..\lamp\ns-lamp-lamp-capabilities-color.md) | This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_COLOR. |
-| [LAMP_CAPABILITIES_WHITE structure](..\lamp\ns-lamp-lamp-capabilities-white.md) | This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_WHITE. |
-| [LAMP_INTENSITY_COLOR structure](..\lamp\ns-lamp-lamp-intensity-color.md) | This structure is the I/O parameter type of IOCTL_LAMP_GET_INTENSITY_COLOR and IOCTL_LAMP_SET_INTENSITY_COLOR. |
-| [LAMP_INTENSITY_WHITE structure](..\lamp\ns-lamp-lamp-intensity-white.md) | This structure is the I/O parameter type of IOCTL_LAMP_GET_INTENSITY_WHITE and IOCTL_LAMP_SET_INTENSITY_WHITE. |
-| [MF_MDL_SHARED_PAYLOAD_KEY structure](..\ks\ns-ks--mf-mdl-shared-payload-key.md) | This union is used internally by the operating system. |
-| [MPEG2_TRANSPORT_STRIDE structure](..\bdatypes\ns-bdatypes--mpeg2-transport-stride.md) | The MPEG2_TRANSPORT_STRIDE structure describes the format block of the MPEG2 transport stride. |
-| [OPTIMAL_WEIGHT_TOTALS structure](..\ksproxy\ns-ksproxy-optimal-weight-totals.md) | . |
-| [PBUS_INTERFACE_MEDIUMS structure](..\ks\ns-ks-pbus-interface-mediums.md) | . |
-| [PBUS_INTERFACE_REFERENCE structure](..\ks\ns-ks-pbus-interface-reference.md) | A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use. |
-| [PID_MAP structure](..\bdatypes\ns-bdatypes-pid-map.md) | The PID_MAP structure describes a group of packets in the output stream of a packet identifier (PID) filter. This group consists of packets that are identified with an identical PID and contain particular media content. |
-| [PKSALLOCATOR_FRAMING structure](..\ks\ns-ks-pksallocator-framing.md) | The KSALLOCATOR_FRAMING structure is used to query framing requirements and submit allocator creation requests. |
-| [PKSALLOCATOR_FRAMING_EX structure](..\ks\ns-ks-pksallocator-framing-ex.md) | The KSALLOCATOR_FRAMING_EX structure is the AVStream replacement for KSALLOCATOR_FRAMING. KSALLOCATOR_FRAMING_EX defines allocator requirements on a pin in a kernel level filter. |
+| [LAMP_CAPABILITIES_COLOR structure](..\lamp\ns-lamp-lamp_capabilities_color.md) | This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_COLOR. |
+| [LAMP_CAPABILITIES_WHITE structure](..\lamp\ns-lamp-lamp_capabilities_white.md) | This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_WHITE. |
+| [LAMP_INTENSITY_COLOR structure](..\lamp\ns-lamp-lamp_intensity_color.md) | This structure is the I/O parameter type of IOCTL_LAMP_GET_INTENSITY_COLOR and IOCTL_LAMP_SET_INTENSITY_COLOR. |
+| [LAMP_INTENSITY_WHITE structure](..\lamp\ns-lamp-lamp_intensity_white.md) | This structure is the I/O parameter type of IOCTL_LAMP_GET_INTENSITY_WHITE and IOCTL_LAMP_SET_INTENSITY_WHITE. |
+| [OPTIMAL_WEIGHT_TOTALS structure](..\ksproxy\ns-ksproxy-optimal_weight_totals.md) | . |
+| [PBUS_INTERFACE_MEDIUMS structure](..\ks\ns-ks-pbus_interface_mediums.md) | . |
+| [PBUS_INTERFACE_REFERENCE structure](..\ks\ns-ks-pbus_interface_reference.md) | A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use. |
+| [PID_MAP structure](..\bdatypes\ns-bdatypes-pid_map.md) | The PID_MAP structure describes a group of packets in the output stream of a packet identifier (PID) filter. This group consists of packets that are identified with an identical PID and contain particular media content. |
+| [PKSALLOCATOR_FRAMING structure](..\ks\ns-ks-pksallocator_framing.md) | The KSALLOCATOR_FRAMING structure is used to query framing requirements and submit allocator creation requests. |
+| [PKSALLOCATOR_FRAMING_EX structure](..\ks\ns-ks-pksallocator_framing_ex.md) | The KSALLOCATOR_FRAMING_EX structure is the AVStream replacement for KSALLOCATOR_FRAMING. KSALLOCATOR_FRAMING_EX defines allocator requirements on a pin in a kernel level filter. |
 | [PKSATTRIBUTE structure](..\ks\ns-ks-pksattribute.md) | The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers. |
-| [PKSATTRIBUTE_LIST structure](..\ks\ns-ks-pksattribute-list.md) | The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure. |
-| [PKSBUFFER_ITEM structure](..\ks\ns-ks-pksbuffer-item.md) | The KSBUFFER_ITEM structure is used to store a list of data buffers copied from the event source, which can be retrieved by the event sink through KSEVENT_TYPE_QUERYBUFFER. |
-| [PKSCAMERA_PERFRAMESETTING_CAP_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera-perframesetting-cap-header.md) | This structure contains the header information for the per frame settings capabilities. |
-| [PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera-perframesetting-cap-item-header.md) | This structure contains the header information for a per-frame settings item. |
-| [PKSCAMERA_PERFRAMESETTING_CUSTOM_ITEM structure](..\ksmedia\ns-ksmedia-pkscamera-perframesetting-custom-item.md) | This structure contains a custom item. |
-| [PKSCAMERA_PERFRAMESETTING_FRAME_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera-perframesetting-frame-header.md) | This structure contains the header information for a frame in a per-frame settings payload. |
-| [PKSCAMERA_PERFRAMESETTING_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera-perframesetting-header.md) | This structure contains header information for the per-frame settings payload. |
-| [PKSCAMERA_PERFRAMESETTING_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera-perframesetting-item-header.md) | This structure contains the header information for a per-frame settings item. |
+| [PKSATTRIBUTE_LIST structure](..\ks\ns-ks-pksattribute_list.md) | The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure. |
+| [PKSBUFFER_ITEM structure](..\ks\ns-ks-pksbuffer_item.md) | The KSBUFFER_ITEM structure is used to store a list of data buffers copied from the event source, which can be retrieved by the event sink through KSEVENT_TYPE_QUERYBUFFER. |
+| [PKSCAMERA_PERFRAMESETTING_CAP_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_cap_header.md) | This structure contains the header information for the per frame settings capabilities. |
+| [PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_cap_item_header.md) | This structure contains the header information for a per-frame settings item. |
+| [PKSCAMERA_PERFRAMESETTING_CUSTOM_ITEM structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_custom_item.md) | This structure contains a custom item. |
+| [PKSCAMERA_PERFRAMESETTING_FRAME_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_frame_header.md) | This structure contains the header information for a frame in a per-frame settings payload. |
+| [PKSCAMERA_PERFRAMESETTING_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_header.md) | This structure contains header information for the per-frame settings payload. |
+| [PKSCAMERA_PERFRAMESETTING_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_item_header.md) | This structure contains the header information for a per-frame settings item. |
 | [PKSCLOCKINSTANCE structure](..\ksi\ns-ksi-pksclockinstance.md) | . |
-| [PKSCLOCK_CREATE structure](..\ks\ns-ks-pksclock-create.md) | The KSCLOCK_CREATE structure is used in clock create parameters for the KsCreateClock function. |
-| [PKSCLOCK_FUNCTIONTABLE structure](..\ks\ns-ks-pksclock-functiontable.md) | The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock. |
+| [PKSCLOCK_CREATE structure](..\ks\ns-ks-pksclock_create.md) | The KSCLOCK_CREATE structure is used in clock create parameters for the KsCreateClock function. |
+| [PKSCLOCK_FUNCTIONTABLE structure](..\ks\ns-ks-pksclock_functiontable.md) | The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock. |
 | [PKSCOMPONENTID structure](..\ks\ns-ks-pkscomponentid.md) | The KSCOMPONENTID structure contains unique identifiers that describe an individual kernel streaming object. |
-| [PKSCORRELATED_TIME structure](..\ks\ns-ks-pkscorrelated-time.md) | The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot. |
+| [PKSCORRELATED_TIME structure](..\ks\ns-ks-pkscorrelated_time.md) | The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot. |
 | [PKSDATARANGE structure](..\ks\ns-ks-pksdatarange.md) | The KSDATARANGE structure is a variable-length structure that describes a range of data formats. |
 | [PKSDATARANGE structure](..\ks\ns-ks-pksdatarange~r1.md) | The KSDATARANGE structure is a variable-length structure that describes a range of data formats. |
-| [PKSDISPATCH_TABLE structure](..\ks\ns-ks-pksdispatch-table.md) | The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines. |
-| [PKSDPC_ITEM structure](..\ks\ns-ks-pksdpc-item.md) | The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL. |
+| [PKSDISPATCH_TABLE structure](..\ks\ns-ks-pksdispatch_table.md) | The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines. |
+| [PKSDPC_ITEM structure](..\ks\ns-ks-pksdpc_item.md) | The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL. |
 | [PKSERROR structure](..\ks\ns-ks-pkserror.md) | The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers. |
 | [PKSEVENTDATA structure](..\ks\ns-ks-pkseventdata.md) | Kernel streaming clients send the KSEVENTDATA structure to the class driver to specify a notification method. |
-| [PKSEVENT_ITEM structure](..\ks\ns-ks-pksevent-item.md) | The KSEVENT_ITEM structure describe a minidriver's support for a specific event within an event set. |
-| [PKSEVENT_SET structure](..\ks\ns-ks-pksevent-set.md) | The KSEVENT_SET structure describes the events that comprise a kernel streaming event set. |
-| [PKSEVENT_TIME_INTERVAL structure](..\ks\ns-ks-pksevent-time-interval.md) | The KSEVENT_TIME_INTERVAL structure is used in various events within the KSEVENTSETID_Clock event set. |
-| [PKSEVENT_TIME_MARK structure](..\ks\ns-ks-pksevent-time-mark.md) | The KSEVENT_TIME_MARK structure is used in various events within the KSEVENTSETID_Clock event set. |
-| [PKSEVENT_TUNER_INITIATE_SCAN_S structure](..\ksmedia\ns-ksmedia-pksevent-tuner-initiate-scan-s.md) | The KSEVENT_TUNER_INITIATE_SCAN_S structure is used in the KSEVENT_TUNER_INITIATE_SCAN event within the EVENTSETID_TUNER event set. |
-| [PKSE_NODE structure](..\ks\ns-ks-pkse-node.md) | The KSE_NODE structure specifies an event request on a specific node. |
-| [PKSE_PIN structure](..\ks\ns-ks-pkse-pin.md) | . |
-| [PKSFASTMETHOD_ITEM structure](..\ks\ns-ks-pksfastmethod-item.md) | Drivers provide a structure of type KSFASTMETHOD_ITEM to support fast I/O dispatching. |
-| [PKSFASTPROPERTY_ITEM structure](..\ks\ns-ks-pksfastproperty-item.md) | The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching. |
+| [PKSEVENT_ITEM structure](..\ks\ns-ks-pksevent_item.md) | The KSEVENT_ITEM structure describe a minidriver's support for a specific event within an event set. |
+| [PKSEVENT_SET structure](..\ks\ns-ks-pksevent_set.md) | The KSEVENT_SET structure describes the events that comprise a kernel streaming event set. |
+| [PKSEVENT_TIME_INTERVAL structure](..\ks\ns-ks-pksevent_time_interval.md) | The KSEVENT_TIME_INTERVAL structure is used in various events within the KSEVENTSETID_Clock event set. |
+| [PKSEVENT_TIME_MARK structure](..\ks\ns-ks-pksevent_time_mark.md) | The KSEVENT_TIME_MARK structure is used in various events within the KSEVENTSETID_Clock event set. |
+| [PKSEVENT_TUNER_INITIATE_SCAN_S structure](..\ksmedia\ns-ksmedia-pksevent_tuner_initiate_scan_s.md) | The KSEVENT_TUNER_INITIATE_SCAN_S structure is used in the KSEVENT_TUNER_INITIATE_SCAN event within the EVENTSETID_TUNER event set. |
+| [PKSE_NODE structure](..\ks\ns-ks-pkse_node.md) | The KSE_NODE structure specifies an event request on a specific node. |
+| [PKSE_PIN structure](..\ks\ns-ks-pkse_pin.md) | . |
+| [PKSFASTMETHOD_ITEM structure](..\ks\ns-ks-pksfastmethod_item.md) | Drivers provide a structure of type KSFASTMETHOD_ITEM to support fast I/O dispatching. |
+| [PKSFASTPROPERTY_ITEM structure](..\ks\ns-ks-pksfastproperty_item.md) | The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching. |
 | [PKSFRAMETIME structure](..\ks\ns-ks-pksframetime.md) | The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next &#0034;frame&#0034; of data, and flags associated with that frame. |
 | [PKSHANDSHAKE structure](..\ks\ns-ks-pkshandshake.md) | The KSHANDSHAKE structure is used to pass information back and forth while pins are handshaking in an attempt to negotiate a private interface. |
 | [PKSIDEFAULTCLOCK structure](..\ksi\ns-ksi-pksidefaultclock.md) | . |
 | [PKSIDENTIFIER structure](..\ks\ns-ks-pksidentifier.md) | The KSIDENTIFIER structure specifies a GUID that uniquely identifies a related set of GUIDs, and an index value to refer to a specific member within that set. |
 | [PKSINTERVAL structure](..\ks\ns-ks-pksinterval.md) | The KSINTERVAL structure specifies a base time and time interval for recurring events. |
-| [PKSMETHOD_ITEM structure](..\ks\ns-ks-pksmethod-item.md) | The KSMETHOD_ITEM structure describes a single method within a method set. |
-| [PKSMETHOD_SET structure](..\ks\ns-ks-pksmethod-set.md) | The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set. |
-| [PKSMULTIPLE_ITEM structure](..\ks\ns-ks-pksmultiple-item.md) | The KSMULTIPLE_ITEM structure is a generic header for property data that can contain multiple entries. |
-| [PKSM_NODE structure](..\ks\ns-ks-pksm-node.md) | Just as KSP_NODE is used for properties on a node, the KSM_NODE structure is used for methods on a node. |
-| [PKSNODE_CREATE structure](..\ks\ns-ks-pksnode-create.md) | The KSNODE_CREATE structure describes the set of information used to create the node handle. |
-| [PKSOBJECT_CREATE structure](..\ks\ns-ks-pksobject-create.md) | The KSOBJECT_CREATE structure contains an array of create handlers for base object classes supported by this device object. |
-| [PKSOBJECT_CREATE_ITEM structure](..\ks\ns-ks-pksobject-create-item.md) | The KSOBJECT_CREATE_ITEM structure is used to look up the string passed to a create request. |
-| [PKSPIN_CINSTANCES structure](..\ks\ns-ks-pkspin-cinstances.md) | . |
-| [PKSPIN_CONNECT structure](..\ks\ns-ks-pkspin-connect.md) | Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call. |
-| [PKSPIN_DESCRIPTOR structure](..\ks\ns-ks-pkspin-descriptor.md) | The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type. |
-| [PKSPIN_MDL_CACHING_NOTIFICATION structure](..\ks\ns-ks-pkspin-mdl-caching-notification.md) | This structure is used internally by the operating system. |
-| [PKSPIN_MDL_CACHING_NOTIFICATION32 structure](..\ks\ns-ks-pkspin-mdl-caching-notification32.md) | This structure is used internally by the operating system. |
-| [PKSPIN_PHYSICALCONNECTION structure](..\ks\ns-ks-pkspin-physicalconnection.md) | A structure of type KSPIN_PHYSICALCONNECTION is returned in response to a KSPROPERTY_PIN_PHYSICALCONNECTION request. |
+| [PKSMETHOD_ITEM structure](..\ks\ns-ks-pksmethod_item.md) | The KSMETHOD_ITEM structure describes a single method within a method set. |
+| [PKSMETHOD_SET structure](..\ks\ns-ks-pksmethod_set.md) | The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set. |
+| [PKSMULTIPLE_ITEM structure](..\ks\ns-ks-pksmultiple_item.md) | The KSMULTIPLE_ITEM structure is a generic header for property data that can contain multiple entries. |
+| [PKSM_NODE structure](..\ks\ns-ks-pksm_node.md) | Just as KSP_NODE is used for properties on a node, the KSM_NODE structure is used for methods on a node. |
+| [PKSNODE_CREATE structure](..\ks\ns-ks-pksnode_create.md) | The KSNODE_CREATE structure describes the set of information used to create the node handle. |
+| [PKSOBJECT_CREATE structure](..\ks\ns-ks-pksobject_create.md) | The KSOBJECT_CREATE structure contains an array of create handlers for base object classes supported by this device object. |
+| [PKSOBJECT_CREATE_ITEM structure](..\ks\ns-ks-pksobject_create_item.md) | The KSOBJECT_CREATE_ITEM structure is used to look up the string passed to a create request. |
+| [PKSPIN_CINSTANCES structure](..\ks\ns-ks-pkspin_cinstances.md) | . |
+| [PKSPIN_CONNECT structure](..\ks\ns-ks-pkspin_connect.md) | Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call. |
+| [PKSPIN_DESCRIPTOR structure](..\ks\ns-ks-pkspin_descriptor.md) | The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type. |
+| [PKSPIN_MDL_CACHING_NOTIFICATION structure](..\ks\ns-ks-pkspin_mdl_caching_notification.md) | This structure is used internally by the operating system. |
+| [PKSPIN_MDL_CACHING_NOTIFICATION32 structure](..\ks\ns-ks-pkspin_mdl_caching_notification32.md) | This structure is used internally by the operating system. |
+| [PKSPIN_PHYSICALCONNECTION structure](..\ks\ns-ks-pkspin_physicalconnection.md) | A structure of type KSPIN_PHYSICALCONNECTION is returned in response to a KSPROPERTY_PIN_PHYSICALCONNECTION request. |
 | [PKSPRIORITY structure](..\ks\ns-ks-pkspriority.md) | The KSPRIORITY structure is used to specify priority and is used with the KSPROPERTY_CONNECTION_PRIORITY property. |
-| [PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-allocator-control-capture-caps-s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure specifies if interleaved capture is supported. |
-| [PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure](..\ksmedia\ns-ksmedia-pksproperty-allocator-control-capture-interleave-s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure specifies if interleaved capture is possible. |
-| [PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure](..\ksmedia\ns-ksmedia-pksproperty-allocator-control-surface-size-s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure specifies the width and height of an overlay surface. |
-| [PKSPROPERTY_BOUNDS_LONG structure](..\ks\ns-ks-pksproperty-bounds-long.md) | The KSPROPERTY_BOUNDS_LONG structure defines the bounds for a 32-bit property. |
-| [PKSPROPERTY_BOUNDS_LONGLONG structure](..\ks\ns-ks-pksproperty-bounds-longlong.md) | The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit property. |
-| [PKSPROPERTY_CAMERACONTROL_FLASH_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-flash-s.md) | Describes flash control properties in the PROPSETID_VIDCAP_CAMERACONTROL_FLASH camera control property set. This structure specifies property values that are used by applications to configure the camera's flash. |
-| [PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-focal-length-s.md) | The KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure returns filter-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
-| [PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-image-pin-capability-s.md) | Describes image pin control properties in the PROPSETID_VIDCAP_CAMERACONTROL_IMAGE_PIN_CAPABILITY camera control property set. |
-| [PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-node-focal-length-s.md) | The KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure returns node-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
-| [PKSPROPERTY_CAMERACONTROL_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-node-s.md) | The KSPROPERTY_CAMERACONTROL_NODE_S structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. This structure specifies property values in requests to the USB Video Class driver. |
-| [PKSPROPERTY_CAMERACONTROL_NODE_S2 structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-node-s2.md) | The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver. |
-| [PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-region-of-interest-s.md) | Describes region of interest (ROI) control properties in the PROPSETID_VIDCAP_CAMERACONTROL_REGION_OF_INTEREST camera control property set. |
-| [PKSPROPERTY_CAMERACONTROL_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-s.md) | The KSPROPERTY_CAMERACONTROL_S structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. |
-| [PKSPROPERTY_CAMERACONTROL_S2 structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-s2.md) | The KSPROPERTY_CAMERACONTROL_S2 structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. |
-| [PKSPROPERTY_CAMERACONTROL_S_EX structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-s-ex.md) | Specifies a camera control operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization. |
-| [PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-cameracontrol-videostabilization-mode-s.md) | Describes video stabilization control properties in the PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION camera control property set. This structure specifies property values that are used in requests to the camera driver. |
-| [PKSPROPERTY_CROSSBAR_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-crossbar-caps-s.md) | The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device. |
-| [PKSPROPERTY_CROSSBAR_PININFO_S structure](..\ksmedia\ns-ksmedia-pksproperty-crossbar-pininfo-s.md) | The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device. |
-| [PKSPROPERTY_CROSSBAR_ROUTE_S structure](..\ksmedia\ns-ksmedia-pksproperty-crossbar-route-s.md) | The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin. |
-| [PKSPROPERTY_DESCRIPTION structure](..\ks\ns-ks-pksproperty-description.md) | The KSPROPERTY_DESCRIPTION structure specifies the size and type of values contained in a specific property. |
-| [PKSPROPERTY_DROPPEDFRAMES_CURRENT_S structure](..\ksmedia\ns-ksmedia-pksproperty-droppedframes-current-s.md) | The KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure describes the dropped frame information from the minidriver. |
-| [PKSPROPERTY_EXTDEVICE_S structure](..\ksmedia\ns-ksmedia-pksproperty-extdevice-s.md) | The KSPROPERTY_EXTDEVICE_S structure describes an external device and its capabilities. |
-| [PKSPROPERTY_EXTXPORT_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-extxport-node-s.md) | The KSPROPERTY_EXTXPORT_NODE_S structure describes an external transport and its capabilities. |
-| [PKSPROPERTY_EXTXPORT_S structure](..\ksmedia\ns-ksmedia-pksproperty-extxport-s.md) | The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities. |
-| [PKSPROPERTY_ITEM structure](..\ks\ns-ks-pksproperty-item.md) | Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set. |
-| [PKSPROPERTY_MEDIAAVAILABLE structure](..\ks\ns-ks-pksproperty-mediaavailable.md) | The KSPROPERTY_MEDIAAVAILABLE structure specifies the media time span (the time span that a client can seek within) that is currently available on a filter. |
-| [PKSPROPERTY_MEMBERSHEADER structure](..\ks\ns-ks-pksproperty-membersheader.md) | A driver provides a structure of type KSPROPERTY_MEMBERSHEADER to describe the size and type of each element in an array containing property values or ranges. |
-| [PKSPROPERTY_MEMBERSLIST structure](..\ks\ns-ks-pksproperty-memberslist.md) | The KSPROPERTY_MEMBERSLIST structure contains a list of legal values or ranges for a property. |
-| [PKSPROPERTY_POSITIONS structure](..\ks\ns-ks-pksproperty-positions.md) | The KSPROPERTY_POSITIONS structure specifies the current position and stop position, relative to the total duration of the stream. |
-| [PKSPROPERTY_SELECTOR_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-selector-node-s.md) | The KSPROPERTY_SELECTOR_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
-| [PKSPROPERTY_SELECTOR_S structure](..\ksmedia\ns-ksmedia-pksproperty-selector-s.md) | The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
-| [PKSPROPERTY_SERIAL structure](..\ks\ns-ks-pksproperty-serial.md) | The KSPROPERTY_SERIAL structure is a header that is included for each property that follows a KSPROPERTY_SERIALHDR structure. |
-| [PKSPROPERTY_SERIALHDR structure](..\ks\ns-ks-pksproperty-serialhdr.md) | The format of the serialization buffer is a KSPROPERTY_SERIALHDR structure, followed by serialized properties. |
-| [PKSPROPERTY_SET structure](..\ks\ns-ks-pksproperty-set.md) | A kernel streaming driver or pin may use the KSPROPERTY_SET structure to describe how it supports a property set. |
-| [PKSPROPERTY_STEPPING_LONG structure](..\ks\ns-ks-pksproperty-stepping-long.md) | The KSPROPERTY_STEPPING_LONG structure defines the valid range of values for a 32-bit property. |
-| [PKSPROPERTY_STEPPING_LONGLONG structure](..\ks\ns-ks-pksproperty-stepping-longlong.md) | The KSPROPERTY_STEPPING_LONGLONG structure defines the valid range of values for a 64-bit property. |
-| [PKSPROPERTY_TIMECODE_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-timecode-node-s.md) | The KSPROPERTY_TIMECODE_NODE_S structure describes a timecode. |
-| [PKSPROPERTY_TIMECODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-timecode-s.md) | The KSPROPERTY_TIMECODE_S structure describes a timecode. |
-| [PKSPROPERTY_TUNER_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-caps-s.md) | The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices. |
-| [PKSPROPERTY_TUNER_FREQUENCY_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-frequency-s.md) | The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device. |
-| [PKSPROPERTY_TUNER_IF_MEDIUM_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-if-medium-s.md) | The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency. |
-| [PKSPROPERTY_TUNER_INPUT_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-input-s.md) | The KSPROPERTY_TUNER_INPUT_S structure describes the input connection index of a tuner device for devices that support multiple inputs. |
-| [PKSPROPERTY_TUNER_MODE_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-mode-caps-s.md) | The KS_PROPERTY_TUNER_MODE_CAPS_S structure describes the capabilities of TV and radio tuner devices. |
-| [PKSPROPERTY_TUNER_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-mode-s.md) | The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device. |
-| [PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-networktype-scan-caps-s.md) | The KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure describes the scanning capabilities of a broadcast network type that a tuning device supports. |
-| [PKSPROPERTY_TUNER_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-scan-caps-s.md) | The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capabilities of a tuning device. |
-| [PKSPROPERTY_TUNER_SCAN_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-scan-status-s.md) | The KSPROPERTY_TUNER_SCAN_STATUS_S structure describes status for a scanning operation. |
-| [PKSPROPERTY_TUNER_STANDARD_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-standard-mode-s.md) | The KSPROPERTY_TUNER_STANDARD_MODE_S structure describes whether the tuning device can identify the tuner standard from the signal itself. |
-| [PKSPROPERTY_TUNER_STANDARD_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-standard-s.md) | The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner device, such as PAL, NTSC or SECAM. |
-| [PKSPROPERTY_TUNER_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty-tuner-status-s.md) | The KSPROPERTY_TUNER_STATUS_S structure describes the progress of a tuning operation for TV and radio tuner devices, including present tuning frequency. |
-| [PKSPROPERTY_TVAUDIO_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-tvaudio-caps-s.md) | The KSPROPERTY_TVAUDIO_CAPS_S structure describes the capability of a TV audio device, such as stereo versus mono audio support and language capabilities. |
-| [PKSPROPERTY_TVAUDIO_S structure](..\ksmedia\ns-ksmedia-pksproperty-tvaudio-s.md) | The KSPROPERTY_TVAUDIO_S structure describes the current TV audio mode, such as stereo or mono audio and language settings. |
-| [PKSPROPERTY_VALUES structure](..\ks\ns-ks-pksproperty-values.md) | The KSPROPERTY_VALUES structure describes the type and acceptable default values of a property. |
-| [PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure](..\ksmedia\ns-ksmedia-pksproperty-videocompression-getinfo-s.md) | The KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure describes information about the video compression capabilities supported by a device. |
-| [PKSPROPERTY_VIDEOCOMPRESSION_S structure](..\ksmedia\ns-ksmedia-pksproperty-videocompression-s.md) | The KSPROPERTY_VIDEOCOMPRESSION_S structure describes a single KSPROPERTY_VIDEOCOMPRESSION_Xxx property of a specified stream. |
-| [PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure](..\ksmedia\ns-ksmedia-pksproperty-videocontrol-actual-frame-rate-s.md) | The KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure describes actual frame rate information in response to KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE property requests. |
-| [PKSPROPERTY_VIDEOCONTROL_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-videocontrol-caps-s.md) | The KSPROPERTY_VIDEOCONTROL_CAPS_S structure describes the video-control capabilities of a minidriver, such as image flipping or event triggering abilities. |
-| [PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure](..\ksmedia\ns-ksmedia-pksproperty-videocontrol-frame-rates-s.md) | The KSPROPERTY_VIDEOCONTROL_FRAME_RATES structure describes available frame rates in 100-nanosecond units. |
-| [PKSPROPERTY_VIDEOCONTROL_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-videocontrol-mode-s.md) | The KSPROPERTY_VIDEOCONTROL_MODE_S structure describes video-control modes for a stream, such as image flipping or event triggering abilities. |
-| [PKSPROPERTY_VIDEODECODER_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty-videodecoder-caps-s.md) | The KSPROPERTY_VIDEODECODER_CAPS_S structure describes the hardware capabilities of the video decoder device. |
-| [PKSPROPERTY_VIDEODECODER_S structure](..\ksmedia\ns-ksmedia-pksproperty-videodecoder-s.md) | The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set. |
-| [PKSPROPERTY_VIDEODECODER_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty-videodecoder-status-s.md) | The KSPROPERTY_VIDEODECODER_STATUS_S structure describes the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in. |
-| [PKSPROPERTY_VIDEOPROCAMP_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty-videoprocamp-node-s.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
-| [PKSPROPERTY_VIDEOPROCAMP_NODE_S2 structure](..\ksmedia\ns-ksmedia-pksproperty-videoprocamp-node-s2.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set that use two values at the same time. |
-| [PKSPROPERTY_VIDEOPROCAMP_S structure](..\ksmedia\ns-ksmedia-pksproperty-videoprocamp-s.md) | The KSPROPERTY_VIDEOPROCAMP_S structure describes filter-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
-| [PKSP_NODE structure](..\ks\ns-ks-pksp-node.md) | Kernel streaming clients use the KSP_NODE structure to specify the property and node type within a KSPROPERTY_TOPOLOGY_NAME property request. |
-| [PKSP_NODE_ESPID structure](..\bdamedia\ns-bdamedia-pksp-node-espid.md) | The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes. |
-| [PKSP_PIN structure](..\ks\ns-ks-pksp-pin.md) | Kernel streaming clients use the KSP_PIN structure to specify the property and pin type within a KSPROPSETID_Pin property request. |
-| [PKSP_TIMEFORMAT structure](..\ks\ns-ks-pksp-timeformat.md) | The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT. |
+| [PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_allocator_control_capture_caps_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure specifies if interleaved capture is supported. |
+| [PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure](..\ksmedia\ns-ksmedia-pksproperty_allocator_control_capture_interleave_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure specifies if interleaved capture is possible. |
+| [PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure](..\ksmedia\ns-ksmedia-pksproperty_allocator_control_surface_size_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure specifies the width and height of an overlay surface. |
+| [PKSPROPERTY_BOUNDS_LONG structure](..\ks\ns-ks-pksproperty_bounds_long.md) | The KSPROPERTY_BOUNDS_LONG structure defines the bounds for a 32-bit property. |
+| [PKSPROPERTY_BOUNDS_LONGLONG structure](..\ks\ns-ks-pksproperty_bounds_longlong.md) | The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit property. |
+| [PKSPROPERTY_CAMERACONTROL_FLASH_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_flash_s.md) | Describes flash control properties in the PROPSETID_VIDCAP_CAMERACONTROL_FLASH camera control property set. This structure specifies property values that are used by applications to configure the camera's flash. |
+| [PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_focal_length_s.md) | The KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure returns filter-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
+| [PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_image_pin_capability_s.md) | Describes image pin control properties in the PROPSETID_VIDCAP_CAMERACONTROL_IMAGE_PIN_CAPABILITY camera control property set. |
+| [PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_node_focal_length_s.md) | The KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure returns node-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
+| [PKSPROPERTY_CAMERACONTROL_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_node_s.md) | The KSPROPERTY_CAMERACONTROL_NODE_S structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. This structure specifies property values in requests to the USB Video Class driver. |
+| [PKSPROPERTY_CAMERACONTROL_NODE_S2 structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_node_s2.md) | The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver. |
+| [PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_region_of_interest_s.md) | Describes region of interest (ROI) control properties in the PROPSETID_VIDCAP_CAMERACONTROL_REGION_OF_INTEREST camera control property set. |
+| [PKSPROPERTY_CAMERACONTROL_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_s.md) | The KSPROPERTY_CAMERACONTROL_S structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. |
+| [PKSPROPERTY_CAMERACONTROL_S2 structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_s2.md) | The KSPROPERTY_CAMERACONTROL_S2 structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. |
+| [PKSPROPERTY_CAMERACONTROL_S_EX structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_s_ex.md) | Specifies a camera control operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization. |
+| [PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_videostabilization_mode_s.md) | Describes video stabilization control properties in the PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION camera control property set. This structure specifies property values that are used in requests to the camera driver. |
+| [PKSPROPERTY_CROSSBAR_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_crossbar_caps_s.md) | The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device. |
+| [PKSPROPERTY_CROSSBAR_PININFO_S structure](..\ksmedia\ns-ksmedia-pksproperty_crossbar_pininfo_s.md) | The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device. |
+| [PKSPROPERTY_CROSSBAR_ROUTE_S structure](..\ksmedia\ns-ksmedia-pksproperty_crossbar_route_s.md) | The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin. |
+| [PKSPROPERTY_DESCRIPTION structure](..\ks\ns-ks-pksproperty_description.md) | The KSPROPERTY_DESCRIPTION structure specifies the size and type of values contained in a specific property. |
+| [PKSPROPERTY_DROPPEDFRAMES_CURRENT_S structure](..\ksmedia\ns-ksmedia-pksproperty_droppedframes_current_s.md) | The KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure describes the dropped frame information from the minidriver. |
+| [PKSPROPERTY_EXTDEVICE_S structure](..\ksmedia\ns-ksmedia-pksproperty_extdevice_s.md) | The KSPROPERTY_EXTDEVICE_S structure describes an external device and its capabilities. |
+| [PKSPROPERTY_EXTXPORT_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_extxport_node_s.md) | The KSPROPERTY_EXTXPORT_NODE_S structure describes an external transport and its capabilities. |
+| [PKSPROPERTY_EXTXPORT_S structure](..\ksmedia\ns-ksmedia-pksproperty_extxport_s.md) | The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities. |
+| [PKSPROPERTY_ITEM structure](..\ks\ns-ks-pksproperty_item.md) | Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set. |
+| [PKSPROPERTY_MEDIAAVAILABLE structure](..\ks\ns-ks-pksproperty_mediaavailable.md) | The KSPROPERTY_MEDIAAVAILABLE structure specifies the media time span (the time span that a client can seek within) that is currently available on a filter. |
+| [PKSPROPERTY_MEMBERSHEADER structure](..\ks\ns-ks-pksproperty_membersheader.md) | A driver provides a structure of type KSPROPERTY_MEMBERSHEADER to describe the size and type of each element in an array containing property values or ranges. |
+| [PKSPROPERTY_MEMBERSLIST structure](..\ks\ns-ks-pksproperty_memberslist.md) | The KSPROPERTY_MEMBERSLIST structure contains a list of legal values or ranges for a property. |
+| [PKSPROPERTY_POSITIONS structure](..\ks\ns-ks-pksproperty_positions.md) | The KSPROPERTY_POSITIONS structure specifies the current position and stop position, relative to the total duration of the stream. |
+| [PKSPROPERTY_SELECTOR_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_selector_node_s.md) | The KSPROPERTY_SELECTOR_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
+| [PKSPROPERTY_SELECTOR_S structure](..\ksmedia\ns-ksmedia-pksproperty_selector_s.md) | The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
+| [PKSPROPERTY_SERIAL structure](..\ks\ns-ks-pksproperty_serial.md) | The KSPROPERTY_SERIAL structure is a header that is included for each property that follows a KSPROPERTY_SERIALHDR structure. |
+| [PKSPROPERTY_SERIALHDR structure](..\ks\ns-ks-pksproperty_serialhdr.md) | The format of the serialization buffer is a KSPROPERTY_SERIALHDR structure, followed by serialized properties. |
+| [PKSPROPERTY_SET structure](..\ks\ns-ks-pksproperty_set.md) | A kernel streaming driver or pin may use the KSPROPERTY_SET structure to describe how it supports a property set. |
+| [PKSPROPERTY_STEPPING_LONG structure](..\ks\ns-ks-pksproperty_stepping_long.md) | The KSPROPERTY_STEPPING_LONG structure defines the valid range of values for a 32-bit property. |
+| [PKSPROPERTY_STEPPING_LONGLONG structure](..\ks\ns-ks-pksproperty_stepping_longlong.md) | The KSPROPERTY_STEPPING_LONGLONG structure defines the valid range of values for a 64-bit property. |
+| [PKSPROPERTY_TIMECODE_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_timecode_node_s.md) | The KSPROPERTY_TIMECODE_NODE_S structure describes a timecode. |
+| [PKSPROPERTY_TIMECODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_timecode_s.md) | The KSPROPERTY_TIMECODE_S structure describes a timecode. |
+| [PKSPROPERTY_TUNER_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_caps_s.md) | The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices. |
+| [PKSPROPERTY_TUNER_FREQUENCY_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_frequency_s.md) | The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device. |
+| [PKSPROPERTY_TUNER_IF_MEDIUM_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_if_medium_s.md) | The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency. |
+| [PKSPROPERTY_TUNER_INPUT_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_input_s.md) | The KSPROPERTY_TUNER_INPUT_S structure describes the input connection index of a tuner device for devices that support multiple inputs. |
+| [PKSPROPERTY_TUNER_MODE_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_mode_caps_s.md) | The KS_PROPERTY_TUNER_MODE_CAPS_S structure describes the capabilities of TV and radio tuner devices. |
+| [PKSPROPERTY_TUNER_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_mode_s.md) | The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device. |
+| [PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_networktype_scan_caps_s.md) | The KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure describes the scanning capabilities of a broadcast network type that a tuning device supports. |
+| [PKSPROPERTY_TUNER_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_scan_caps_s.md) | The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capabilities of a tuning device. |
+| [PKSPROPERTY_TUNER_SCAN_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_scan_status_s.md) | The KSPROPERTY_TUNER_SCAN_STATUS_S structure describes status for a scanning operation. |
+| [PKSPROPERTY_TUNER_STANDARD_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_standard_mode_s.md) | The KSPROPERTY_TUNER_STANDARD_MODE_S structure describes whether the tuning device can identify the tuner standard from the signal itself. |
+| [PKSPROPERTY_TUNER_STANDARD_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_standard_s.md) | The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner device, such as PAL, NTSC or SECAM. |
+| [PKSPROPERTY_TUNER_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_status_s.md) | The KSPROPERTY_TUNER_STATUS_S structure describes the progress of a tuning operation for TV and radio tuner devices, including present tuning frequency. |
+| [PKSPROPERTY_TVAUDIO_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tvaudio_caps_s.md) | The KSPROPERTY_TVAUDIO_CAPS_S structure describes the capability of a TV audio device, such as stereo versus mono audio support and language capabilities. |
+| [PKSPROPERTY_TVAUDIO_S structure](..\ksmedia\ns-ksmedia-pksproperty_tvaudio_s.md) | The KSPROPERTY_TVAUDIO_S structure describes the current TV audio mode, such as stereo or mono audio and language settings. |
+| [PKSPROPERTY_VALUES structure](..\ks\ns-ks-pksproperty_values.md) | The KSPROPERTY_VALUES structure describes the type and acceptable default values of a property. |
+| [PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocompression_getinfo_s.md) | The KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure describes information about the video compression capabilities supported by a device. |
+| [PKSPROPERTY_VIDEOCOMPRESSION_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocompression_s.md) | The KSPROPERTY_VIDEOCOMPRESSION_S structure describes a single KSPROPERTY_VIDEOCOMPRESSION_Xxx property of a specified stream. |
+| [PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_actual_frame_rate_s.md) | The KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure describes actual frame rate information in response to KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE property requests. |
+| [PKSPROPERTY_VIDEOCONTROL_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_caps_s.md) | The KSPROPERTY_VIDEOCONTROL_CAPS_S structure describes the video-control capabilities of a minidriver, such as image flipping or event triggering abilities. |
+| [PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_frame_rates_s.md) | The KSPROPERTY_VIDEOCONTROL_FRAME_RATES structure describes available frame rates in 100-nanosecond units. |
+| [PKSPROPERTY_VIDEOCONTROL_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_mode_s.md) | The KSPROPERTY_VIDEOCONTROL_MODE_S structure describes video-control modes for a stream, such as image flipping or event triggering abilities. |
+| [PKSPROPERTY_VIDEODECODER_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_videodecoder_caps_s.md) | The KSPROPERTY_VIDEODECODER_CAPS_S structure describes the hardware capabilities of the video decoder device. |
+| [PKSPROPERTY_VIDEODECODER_S structure](..\ksmedia\ns-ksmedia-pksproperty_videodecoder_s.md) | The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set. |
+| [PKSPROPERTY_VIDEODECODER_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty_videodecoder_status_s.md) | The KSPROPERTY_VIDEODECODER_STATUS_S structure describes the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in. |
+| [PKSPROPERTY_VIDEOPROCAMP_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_videoprocamp_node_s.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
+| [PKSPROPERTY_VIDEOPROCAMP_NODE_S2 structure](..\ksmedia\ns-ksmedia-pksproperty_videoprocamp_node_s2.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set that use two values at the same time. |
+| [PKSPROPERTY_VIDEOPROCAMP_S structure](..\ksmedia\ns-ksmedia-pksproperty_videoprocamp_s.md) | The KSPROPERTY_VIDEOPROCAMP_S structure describes filter-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
+| [PKSP_NODE structure](..\ks\ns-ks-pksp_node.md) | Kernel streaming clients use the KSP_NODE structure to specify the property and node type within a KSPROPERTY_TOPOLOGY_NAME property request. |
+| [PKSP_NODE_ESPID structure](..\bdamedia\ns-bdamedia-pksp_node_espid.md) | The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes. |
+| [PKSP_PIN structure](..\ks\ns-ks-pksp_pin.md) | Kernel streaming clients use the KSP_PIN structure to specify the property and pin type within a KSPROPSETID_Pin property request. |
+| [PKSP_TIMEFORMAT structure](..\ks\ns-ks-pksp_timeformat.md) | The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT. |
 | [PKSQUALITY structure](..\ks\ns-ks-pksquality.md) | The KSQUALITY structure is used to report QM problems in both kernel and user mode to their respective quality managers. |
-| [PKSQUALITY_MANAGER structure](..\ks\ns-ks-pksquality-manager.md) | The KSQUALITY_MANAGER structure is used with the KSPROPERTY_STREAM_QUALITY property and contains the handle of the quality manager sink and a context to pass in the quality complaints. |
+| [PKSQUALITY_MANAGER structure](..\ks\ns-ks-pksquality_manager.md) | The KSQUALITY_MANAGER structure is used with the KSPROPERTY_STREAM_QUALITY property and contains the handle of the quality manager sink and a context to pass in the quality complaints. |
 | [PKSQUERYBUFFER structure](..\ks\ns-ks-pksquerybuffer.md) | The KSQUERYBUFFER structure is used when querying for outstanding buffers available on an event with KSEVENT_TYPE_QUERYBUFFER. |
 | [PKSRATE structure](..\ks\ns-ks-pksrate.md) | The query is passed a KSRATE structure appended to the property containing the rate request (known as a KSRATE_CAPABILITY structure), and is returned a KSRATE structure filled in with the capability given the rate request. |
-| [PKSRATE_CAPABILITY structure](..\ks\ns-ks-pksrate-capability.md) | The client uses the KSRATE_CAPABILITY structure in a KSPROPERTY_STREAM_RATECAPABILITY property request. |
+| [PKSRATE_CAPABILITY structure](..\ks\ns-ks-pksrate_capability.md) | The client uses the KSRATE_CAPABILITY structure in a KSPROPERTY_STREAM_RATECAPABILITY property request. |
 | [PKSRESOLUTION structure](..\ks\ns-ks-pksresolution.md) | The KSRESOLUTION structure specifies granularity and error of a kernel streaming clock. |
-| [PKSSCATTER_GATHER structure](..\strmini\ns-strmini-pksscatter-gather.md) | . |
-| [PKSSTREAMALLOCATOR_FUNCTIONTABLE structure](..\ks\ns-ks-pksstreamallocator-functiontable.md) | Clients can request the function table of a given allocator by sending a KSSTREAMALLOCATOR_FUNCTIONTABLE structure in a KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE property request. |
-| [PKSSTREAMALLOCATOR_STATUS structure](..\ks\ns-ks-pksstreamallocator-status.md) | The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator. |
-| [PKSSTREAMALLOCATOR_STATUS_EX structure](..\ks\ns-ks-pksstreamallocator-status-ex.md) | Client use KSSTREAMALLOCATOR_STATUS_EX to query the status for allocators supporting the extended allocator framing. |
-| [PKSSTREAM_HEADER structure](..\ks\ns-ks-pksstream-header.md) | The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin. |
-| [PKSSTREAM_METADATA_INFO structure](..\ks\ns-ks-pksstream-metadata-info.md) | This structure contains the metadata information that is passed down to the driver. |
-| [PKSSTREAM_UVC_METADATA structure](..\ks\ns-ks-pksstream-uvc-metadata.md) | The KSSTREAM_UVC_METADATA structure contains start and end of frame timestamp information. |
-| [PKSSTREAM_UVC_METADATATYPE_TIMESTAMP structure](..\ks\ns-ks-pksstream-uvc-metadatatype-timestamp.md) | The KSSTREAM_UVC_METADATATYPE_TIMESTAMP structure contains USB video class (UVC) clock and timestamp information. |
+| [PKSSCATTER_GATHER structure](..\strmini\ns-strmini-pksscatter_gather.md) | . |
+| [PKSSTREAMALLOCATOR_FUNCTIONTABLE structure](..\ks\ns-ks-pksstreamallocator_functiontable.md) | Clients can request the function table of a given allocator by sending a KSSTREAMALLOCATOR_FUNCTIONTABLE structure in a KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE property request. |
+| [PKSSTREAMALLOCATOR_STATUS structure](..\ks\ns-ks-pksstreamallocator_status.md) | The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator. |
+| [PKSSTREAMALLOCATOR_STATUS_EX structure](..\ks\ns-ks-pksstreamallocator_status_ex.md) | Client use KSSTREAMALLOCATOR_STATUS_EX to query the status for allocators supporting the extended allocator framing. |
+| [PKSSTREAM_HEADER structure](..\ks\ns-ks-pksstream_header.md) | The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin. |
+| [PKSSTREAM_METADATA_INFO structure](..\ks\ns-ks-pksstream_metadata_info.md) | This structure contains the metadata information that is passed down to the driver. |
+| [PKSSTREAM_UVC_METADATA structure](..\ks\ns-ks-pksstream_uvc_metadata.md) | The KSSTREAM_UVC_METADATA structure contains start and end of frame timestamp information. |
+| [PKSSTREAM_UVC_METADATATYPE_TIMESTAMP structure](..\ks\ns-ks-pksstream_uvc_metadatatype_timestamp.md) | The KSSTREAM_UVC_METADATATYPE_TIMESTAMP structure contains USB video class (UVC) clock and timestamp information. |
 | [PKSTIME structure](..\ks\ns-ks-pkstime.md) | The KSTIME structure specifies a time stamp that can be used to indicate stream position. |
 | [PKSTOPOLOGY structure](..\ks\ns-ks-pkstopology.md) | The KSTOPOLOGY structure describes the topology of pins and nodes. |
-| [PKSTOPOLOGY_CONNECTION structure](..\ks\ns-ks-pkstopology-connection.md) | The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter. |
+| [PKSTOPOLOGY_CONNECTION structure](..\ks\ns-ks-pkstopology_connection.md) | The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter. |
 | [PKSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-pksvpmaxpixelrate.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
 | [PKSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-pksvpmaxpixelrate~r1.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
 | [PKSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-pksvpsurfaceparams.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
 | [PKSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-pksvpsurfaceparams~r1.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
-| [PKSWAVE_BUFFER structure](..\ksmedia\ns-ksmedia-pkswave-buffer.md) | The KSWAVE_BUFFER structure is used to describe a sample buffer. |
-| [PKSWAVE_COMPATCAPS structure](..\ksmedia\ns-ksmedia-pkswave-compatcaps.md) | The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device. |
-| [PKSWAVE_INPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-pkswave-input-capabilities.md) | The KSWAVE_INPUT_CAPABILITIES structure is used to describe the input capabilities of a device. |
-| [PKSWAVE_OUTPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-pkswave-output-capabilities.md) | The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device. |
-| [PKSWAVE_VOLUME structure](..\ksmedia\ns-ksmedia-pkswave-volume.md) | The KSWAVE_VOLUME structure is used to describe sample volume. |
-| [PKS_AM_ExactRateChange structure](..\ksmedia\ns-ksmedia-pks-am-exactratechange.md) | The KS_AM_ExactRateChange structure is not yet implemented. |
-| [PKS_AM_SimpleRateChange structure](..\ksmedia\ns-ksmedia-pks-am-simpleratechange.md) | The KS_AM_SimpleRateChange structure is used to describe a simple rate change (fast-forward or rewind) for an MPEG2 stream. |
-| [PKS_COMPRESSION structure](..\ks\ns-ks-pks-compression.md) | The KS_COMPRESSION structure defines the compression of frames on an output pin. |
-| [PKS_FRAMING_ITEM structure](..\ks\ns-ks-pks-framing-item.md) | The KS_FRAMING_ITEM structure is used to declare allocator requirements on a kernel-mode pin. |
-| [PKS_FRAMING_RANGE structure](..\ks\ns-ks-pks-framing-range.md) | The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item. |
-| [PKS_FRAMING_RANGE_WEIGHTED structure](..\ks\ns-ks-pks-framing-range-weighted.md) | Drivers can use the KS_FRAMING_RANGE_WEIGHTED structure to specify a range of weighted frame sizes. |
-| [PMEDIUM_INFO structure](..\ksmedia\ns-ksmedia-pmedium-info.md) | The MEDIUM_INFO structure describes the media loaded into an external device. |
-| [PORT_CONFIGURATION_INFORMATION structure](..\strmini\ns-strmini--port-configuration-information~r1.md) | PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system. |
-| [PTRANSPORT_STATE structure](..\ksmedia\ns-ksmedia-ptransport-state.md) | The TRANSPORT_STATE structure |
-| [PTUNER_ANALOG_CAPS_S structure](..\ksmedia\ns-ksmedia-ptuner-analog-caps-s.md) | The TUNER_ANALOG_CAPS_S structure describes the hardware scanning capabilities of a tuning device that supports an analog broadcast network. |
-| [PUSBCAMD_INTERFACE structure](..\usbcamdi\ns-usbcamdi-pusbcamd-interface.md) | The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces. |
-| [PVRAM_SURFACE_INFO structure](..\ksmedia\ns-ksmedia-pvram-surface-info.md) | The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data. |
-| [PVRAM_SURFACE_INFO_PROPERTY_S structure](..\ksmedia\ns-ksmedia-pvram-surface-info-property-s.md) | The VRAM_SURFACE_INFO_PROPERTY_S structure describes property items in the KSPROPSETID_VramCapture property set. |
-| [STREAM_DATA_INTERSECT_INFO structure](..\strmini\ns-strmini--stream-data-intersect-info.md) | STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation. |
-| [STREAM_METHOD_DESCRIPTOR structure](..\strmini\ns-strmini--stream-method-descriptor.md) | . |
-| [STREAM_PROPERTY_DESCRIPTOR structure](..\strmini\ns-strmini--stream-property-descriptor.md) | STREAM_PROPERTY_DESCRIPTOR specifies the parameters of property get/set requests that the class driver passes to the minidriver. |
-| [STREAM_TIME_REFERENCE structure](..\strmini\ns-strmini--stream-time-reference.md) | . |
-| [SWENUM_INSTALL_INTERFACE structure](..\swenum\ns-swenum--swenum-install-interface.md) | The SWENUM_INSTALL_INTERFACE structure describes a specific demand-load bus enumerator object interface to install. |
-| [USBCAMD_DEVICE_DATA structure](..\usbcamdi\ns-usbcamdi--usbcamd-device-data.md) | This structure is obsolete and is provided to maintain backward compatibility with the original USBCAMD. |
-| [USBCAMD_DEVICE_DATA2 structure](..\usbcamdi\ns-usbcamdi--usbcamd-device-data2.md) | The USBCAMD_DEVICE_DATA2 structure specifies the entry points for a camera minidriver's functions that USBCAMD calls. |
-| [pipe_config_descriptor structure](..\usbcamdi\ns-usbcamdi--pipe-config-descriptor.md) | The USBCAMD_Pipe_Config_Descriptor structure describes the association between pipes and streams. |
-| [tagBDA_TRANSPORT_INFO structure](..\bdamedia\ns-bdamedia-tagbda-transport-info.md) | The BDA_TRANSPORT_INFO structure describes formatting for a stream connection. |
+| [PKSWAVE_BUFFER structure](..\ksmedia\ns-ksmedia-pkswave_buffer.md) | The KSWAVE_BUFFER structure is used to describe a sample buffer. |
+| [PKSWAVE_COMPATCAPS structure](..\ksmedia\ns-ksmedia-pkswave_compatcaps.md) | The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device. |
+| [PKSWAVE_INPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-pkswave_input_capabilities.md) | The KSWAVE_INPUT_CAPABILITIES structure is used to describe the input capabilities of a device. |
+| [PKSWAVE_OUTPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-pkswave_output_capabilities.md) | The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device. |
+| [PKSWAVE_VOLUME structure](..\ksmedia\ns-ksmedia-pkswave_volume.md) | The KSWAVE_VOLUME structure is used to describe sample volume. |
+| [PKS_AM_ExactRateChange structure](..\ksmedia\ns-ksmedia-pks_am_exactratechange.md) | The KS_AM_ExactRateChange structure is not yet implemented. |
+| [PKS_AM_SimpleRateChange structure](..\ksmedia\ns-ksmedia-pks_am_simpleratechange.md) | The KS_AM_SimpleRateChange structure is used to describe a simple rate change (fast-forward or rewind) for an MPEG2 stream. |
+| [PKS_COMPRESSION structure](..\ks\ns-ks-pks_compression.md) | The KS_COMPRESSION structure defines the compression of frames on an output pin. |
+| [PKS_FRAMING_ITEM structure](..\ks\ns-ks-pks_framing_item.md) | The KS_FRAMING_ITEM structure is used to declare allocator requirements on a kernel-mode pin. |
+| [PKS_FRAMING_RANGE structure](..\ks\ns-ks-pks_framing_range.md) | The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item. |
+| [PKS_FRAMING_RANGE_WEIGHTED structure](..\ks\ns-ks-pks_framing_range_weighted.md) | Drivers can use the KS_FRAMING_RANGE_WEIGHTED structure to specify a range of weighted frame sizes. |
+| [PMEDIUM_INFO structure](..\ksmedia\ns-ksmedia-pmedium_info.md) | The MEDIUM_INFO structure describes the media loaded into an external device. |
+| [PTRANSPORT_STATE structure](..\ksmedia\ns-ksmedia-ptransport_state.md) | The TRANSPORT_STATE structure |
+| [PTUNER_ANALOG_CAPS_S structure](..\ksmedia\ns-ksmedia-ptuner_analog_caps_s.md) | The TUNER_ANALOG_CAPS_S structure describes the hardware scanning capabilities of a tuning device that supports an analog broadcast network. |
+| [PUSBCAMD_INTERFACE structure](..\usbcamdi\ns-usbcamdi-pusbcamd_interface.md) | The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces. |
+| [PVRAM_SURFACE_INFO structure](..\ksmedia\ns-ksmedia-pvram_surface_info.md) | The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data. |
+| [PVRAM_SURFACE_INFO_PROPERTY_S structure](..\ksmedia\ns-ksmedia-pvram_surface_info_property_s.md) | The VRAM_SURFACE_INFO_PROPERTY_S structure describes property items in the KSPROPSETID_VramCapture property set. |
+| [_AVCCONNECTINFO structure](..\avc\ns-avc-_avcconnectinfo.md) | The AVCCONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
+| [_AVCPRECONNECTINFO structure](..\avc\ns-avc-_avcpreconnectinfo.md) | The AVCPRECONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
+| [_AVCSTRM_BUFFER_STRUCT structure](..\avcstrm\ns-avcstrm-_avcstrm_buffer_struct.md) | The AVCSTRM_BUFFER_STRUCT structure describes a buffer to be submitted to avcstrm.sys for read or write operations. |
+| [_AVCSTRM_FORMAT_INFO structure](..\avcstrm\ns-avcstrm-_avcstrm_format_info.md) | The AVCSTRM_FORMAT_INFO structure is used to describe a data stream. |
+| [_AVCSTRM_OPEN_STRUCT structure](..\avcstrm\ns-avcstrm-_avcstrm_open_struct.md) | The AVCSTRM_OPEN_STRUCT structure describes a data stream to be opened. |
+| [_AVC_COMMAND_IRB structure](..\avc\ns-avc-_avc_command_irb.md) | The AVC_COMMAND_IRB structure defines a structure that contains an AV/C command and response pair. |
+| [_AVC_EXT_PLUG_COUNTS structure](..\avc\ns-avc-_avc_ext_plug_counts.md) | The AVC_EXT_PLUG_COUNTS structure describes the number of external plugs on the subunit. |
+| [_AVC_IRB structure](..\avc\ns-avc-_avc_irb.md) | The AVC_IRB structure is an I/O Request Block (IRB) header structure where a function number is stored. |
+| [_AVC_MULTIFUNC_IRB structure](..\avc\ns-avc-_avc_multifunc_irb.md) | The AVC_MULTIFUNC_IRB structure contains other AV/C related structures in a union. |
+| [_AVC_PEER_DO_LIST structure](..\avc\ns-avc-_avc_peer_do_list.md) | The AVC_PEER_DO_LIST describes all nonvirtual (peer) instances of avc.sys. |
+| [_AVC_PEER_DO_LOCATOR structure](..\avc\ns-avc-_avc_peer_do_locator.md) | The AVC_PEER_DO_LOCATOR describes nonvirtual (peer) instances of avc.sys. |
+| [_AVC_PIN_COUNT structure](..\avc\ns-avc-_avc_pin_count.md) | The AVC_PIN_COUNT structure specifies the number of pins on an AV/C subunit device. |
+| [_AVC_PIN_DESCRIPTOR structure](..\avc\ns-avc-_avc_pin_descriptor.md) | The AVC_PIN_DESCRIPTOR structure describes a pin on an AV/C subunit device. |
+| [_AVC_PIN_ID structure](..\avc\ns-avc-_avc_pin_id.md) | The AVC_PIN_ID structure describes a pin on a subunit. |
+| [_AVC_PRECONNECT_INFO structure](..\avc\ns-avc-_avc_preconnect_info.md) | The AVC_PRECONNECT_INFO structure specifies the preconnection information for the specified pin ID (zero-based offset) on an AV/C subunit device. |
+| [_AVC_SETCONNECT_INFO structure](..\avc\ns-avc-_avc_setconnect_info.md) | The AVC_SETCONNECT_INFO structure is used to initialize a subunit driver and establish pin connections. |
+| [_AVC_STREAM_REQUEST_BLOCK structure](..\avcstrm\ns-avcstrm-_avc_stream_request_block.md) | The AVC_STREAM_REQUEST_BLOCK structure describes an AV/C streaming request to be processed by avcstrm.sys. |
+| [_AVC_SUBUNIT_ADDR_SPEC structure](..\avc\ns-avc-_avc_subunit_addr_spec.md) | The AVC_SUBUNIT_ADDR_SPEC structure is used with virtual instances of avc.sys to describe virtual subunit addresses. |
+| [_AVC_SUBUNIT_INFO_BLOCK structure](..\avc\ns-avc-_avc_subunit_info_block.md) | The AVC_SUBUNIT_INFO_BLOCK structure describes subunit information. |
+| [_AVC_UNIQUE_ID structure](..\avc\ns-avc-_avc_unique_id.md) | The AVC_UNIQUE_ID describe the unique ID of the AV/C unit. |
+| [_BDANODE_DESCRIPTOR structure](..\bdatypes\ns-bdatypes-_bdanode_descriptor.md) | The BDANODE_DESCRIPTOR structure describes a BDA node. |
+| [_BDA_BUFFER structure](..\bdatypes\ns-bdatypes-_bda_buffer.md) | . |
+| [_BDA_CAS_CHECK_ENTITLEMENTTOKEN structure](..\bdatypes\ns-bdatypes-_bda_cas_check_entitlementtoken.md) | . |
+| [_BDA_CAS_CLOSEMMIDATA structure](..\bdatypes\ns-bdatypes-_bda_cas_closemmidata.md) | . |
+| [_BDA_CAS_CLOSE_MMIDIALOG structure](..\bdatypes\ns-bdatypes-_bda_cas_close_mmidialog.md) | . |
+| [_BDA_CAS_OPENMMIDATA structure](..\bdatypes\ns-bdatypes-_bda_cas_openmmidata.md) | . |
+| [_BDA_CAS_REQUESTTUNERDATA structure](..\bdatypes\ns-bdatypes-_bda_cas_requesttunerdata.md) | . |
+| [_BDA_CA_MODULE_UI structure](..\bdatypes\ns-bdatypes-_bda_ca_module_ui.md) | The BDA_CA_MODULE_UI structure describes the user interface (UI) that conditional access (CA) plugins can display. |
+| [_BDA_DISEQC_RESPONSE structure](..\bdatypes\ns-bdatypes-_bda_diseqc_response.md) | . |
+| [_BDA_DISEQC_SEND structure](..\bdatypes\ns-bdatypes-_bda_diseqc_send.md) | . |
+| [_BDA_DRM_DRMSTATUS structure](..\bdatypes\ns-bdatypes-_bda_drm_drmstatus.md) | . |
+| [_BDA_DVBT2_L1_SIGNALLING_DATA structure](..\bdatypes\ns-bdatypes-_bda_dvbt2_l1_signalling_data.md) | . |
+| [_BDA_ETHERNET_ADDRESS structure](..\bdatypes\ns-bdatypes-_bda_ethernet_address.md) | . |
+| [_BDA_ETHERNET_ADDRESS_LIST structure](..\bdatypes\ns-bdatypes-_bda_ethernet_address_list.md) | . |
+| [_BDA_FILTER_TEMPLATE structure](..\bdasup\ns-bdasup-_bda_filter_template.md) | The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter. |
+| [_BDA_GDDS_DATA structure](..\bdatypes\ns-bdatypes-_bda_gdds_data.md) | . |
+| [_BDA_GDDS_DATATYPE structure](..\bdatypes\ns-bdatypes-_bda_gdds_datatype.md) | . |
+| [_BDA_IPv4_ADDRESS structure](..\bdatypes\ns-bdatypes-_bda_ipv4_address.md) | . |
+| [_BDA_IPv4_ADDRESS_LIST structure](..\bdatypes\ns-bdatypes-_bda_ipv4_address_list.md) | . |
+| [_BDA_IPv6_ADDRESS structure](..\bdatypes\ns-bdatypes-_bda_ipv6_address.md) | . |
+| [_BDA_IPv6_ADDRESS_LIST structure](..\bdatypes\ns-bdatypes-_bda_ipv6_address_list.md) | . |
+| [_BDA_ISDBCAS_REQUESTHEADER structure](..\bdatypes\ns-bdatypes-_bda_isdbcas_requestheader.md) | . |
+| [_BDA_ISDBCAS_RESPONSEDATA structure](..\bdatypes\ns-bdatypes-_bda_isdbcas_responsedata.md) | . |
+| [_BDA_PID_MAP structure](..\bdatypes\ns-bdatypes-_bda_pid_map.md) | The BDA_PID_MAP structure describes a type of data to filter out of the input stream of a packet identifier (PID) filter and then pass to a downstream filter. |
+| [_BDA_PID_UNMAP structure](..\bdatypes\ns-bdatypes-_bda_pid_unmap.md) | The BDA_PID_UNMAP structure describes packet types to stop filtering from the input stream of a packet identifier (PID) filter. These packet types are identified with PIDs. |
+| [_BDA_PIN_PAIRING structure](..\bdasup\ns-bdasup-_bda_pin_pairing.md) | The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins. |
+| [_BDA_PROGRAM_PID_LIST structure](..\bdatypes\ns-bdatypes-_bda_program_pid_list.md) | The BDA_PROGRAM_PID_LIST structure describes data of a specific program to view. This data consists of packets that are identified with packet identifiers (PID). |
+| [_BDA_RATING_PINRESET structure](..\bdatypes\ns-bdatypes-_bda_rating_pinreset.md) | . |
+| [_BDA_SCAN_CAPABILTIES structure](..\bdatypes\ns-bdatypes-_bda_scan_capabilties.md) | . |
+| [_BDA_SCAN_START structure](..\bdatypes\ns-bdatypes-_bda_scan_start.md) | . |
+| [_BDA_SCAN_STATE structure](..\bdatypes\ns-bdatypes-_bda_scan_state.md) | . |
+| [_BDA_SIGNAL_TIMEOUTS structure](..\bdatypes\ns-bdatypes-_bda_signal_timeouts.md) | . |
+| [_BDA_STRING structure](..\bdatypes\ns-bdatypes-_bda_string.md) | . |
+| [_BDA_TABLE_SECTION structure](..\bdatypes\ns-bdatypes-_bda_table_section.md) | The BDA_TABLE_SECTION structure describes a table section. |
+| [_BDA_TEMPLATE_CONNECTION structure](..\bdatypes\ns-bdatypes-_bda_template_connection.md) | The BDA_TEMPLATE_CONNECTION structure describes the template for a BDA connection in terms of where it begins and ends. |
+| [_BDA_TEMPLATE_PIN_JOINT structure](..\bdatypes\ns-bdatypes-_bda_template_pin_joint.md) | The BDA_TEMPLATE_PIN_JOINT structure describes a joint in a template topology. |
+| [_BDA_TS_SELECTORINFO structure](..\bdatypes\ns-bdatypes-_bda_ts_selectorinfo.md) | . |
+| [_BDA_TS_SELECTORINFO_ISDBS_EXT structure](..\bdatypes\ns-bdatypes-_bda_ts_selectorinfo_isdbs_ext.md) | . |
+| [_BDA_TUNER_DIAGNOSTICS structure](..\bdatypes\ns-bdatypes-_bda_tuner_diagnostics.md) | . |
+| [_BDA_TUNER_TUNERSTATE structure](..\bdatypes\ns-bdatypes-_bda_tuner_tunerstate.md) | . |
+| [_BDA_USERACTIVITY_INTERVAL structure](..\bdatypes\ns-bdatypes-_bda_useractivity_interval.md) | . |
+| [_BDA_WMDRMTUNER_PIDPROTECTION structure](..\bdatypes\ns-bdatypes-_bda_wmdrmtuner_pidprotection.md) | . |
+| [_BDA_WMDRMTUNER_PURCHASEENTITLEMENT structure](..\bdatypes\ns-bdatypes-_bda_wmdrmtuner_purchaseentitlement.md) | . |
+| [_BDA_WMDRM_KEYINFOLIST structure](..\bdatypes\ns-bdatypes-_bda_wmdrm_keyinfolist.md) | . |
+| [_BDA_WMDRM_RENEWLICENSE structure](..\bdatypes\ns-bdatypes-_bda_wmdrm_renewlicense.md) | . |
+| [_BDA_WMDRM_STATUS structure](..\bdatypes\ns-bdatypes-_bda_wmdrm_status.md) | . |
+| [_BUS_INTERFACE_SWENUM structure](..\swenum\ns-swenum-_bus_interface_swenum.md) | The BUS_INTERFACE_SWENUM structure describes the demand-load bus enumerator object's interface. |
+| [_CIP_HDR1 structure](..\avcstrm\ns-avcstrm-_cip_hdr1.md) | The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair). |
+| [_CIP_HDR2_FDF structure](..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md) | The CIP_HDR2_FDF structure describes the second quadlet of a CIP header pair. |
+| [_CIP_HDR2_MPEGTS structure](..\avcstrm\ns-avcstrm-_cip_hdr2_mpegts.md) | The CIP_HDR2_MPEGTS structure describes the second quadlet of a CIP header pair for an MPEGTS format stream. |
+| [_CIP_HDR2_SYT structure](..\avcstrm\ns-avcstrm-_cip_hdr2_syt.md) | The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream. |
+| [_DVINFO structure](..\avcstrm\ns-avcstrm-_dvinfo.md) | The DVINFO structure describes a DV stream format including its default streaming source information and stream control information. |
+| [_HW_CLOCK_OBJECT structure](..\strmini\ns-strmini-_hw_clock_object.md) | The HW_CLOCK_OBJECT structure describes the clock associated with a stream. |
+| [_HW_EVENT_DESCRIPTOR structure](..\strmini\ns-strmini-_hw_event_descriptor.md) | When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. |
+| [_HW_INITIALIZATION_DATA structure](..\strmini\ns-strmini-_hw_initialization_data.md) | The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. |
+| [_HW_STREAM_DESCRIPTOR structure](..\strmini\ns-strmini-_hw_stream_descriptor.md) | The minidriver uses the HW_STREAM_DESCRIPTOR structure to return stream information to the stream class driver. |
+| [_HW_STREAM_HEADER structure](..\strmini\ns-strmini-_hw_stream_header.md) | The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure. |
+| [_HW_STREAM_INFORMATION structure](..\strmini\ns-strmini-_hw_stream_information.md) | The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an HW_STREAM_DESCRIPTOR structure. |
+| [_HW_STREAM_OBJECT structure](..\strmini\ns-strmini-_hw_stream_object~r1.md) | HW_STREAM_OBJECT describes an instance of a minidriver stream. |
+| [_HW_STREAM_REQUEST_BLOCK structure](..\strmini\ns-strmini-_hw_stream_request_block.md) | The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks. |
+| [_HW_TIME_CONTEXT structure](..\strmini\ns-strmini-_hw_time_context.md) | The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request. |
+| [_KSALLOCATOR_DISPATCH structure](..\ks\ns-ks-_ksallocator_dispatch.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
+| [_KSALLOCATOR_DISPATCH structure](..\ks\ns-ks-_ksallocator_dispatch~r1.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
+| [_KSCAMERA_EXTENDEDPROP_PROFILE structure](..\ksmedia\ns-ksmedia-_kscamera_extendedprop_profile.md) | The payload of the KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE control contains KSCAMERA_EXTENDEDPROP_HEADER + KSCAMERA_EXTENDEDPROP_PROFILE. |
+| [_KSCAMERA_PROFILE_CONCURRENCYINFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_concurrencyinfo.md) | An array of KSCAMERA_PROFILE_CONCURRENCYINFO structures form the Camera.Concurrency parameter of the KSDEVICE_PROFILE_INFO structure (whose array size is specified by Camera.CountOfConcurrency parameter) indicating which profiles the profile identified in the KSCAMERA_PROFILE_INFO structure may run simultaneously on different cameras. |
+| [_KSCAMERA_PROFILE_INFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_info.md) | The KSCAMERA_PROFILE_INFO structure is used to uniquely identify a given profile. |
+| [_KSCAMERA_PROFILE_MEDIAINFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_mediainfo.md) | This structure contains the relevant media type information presented for each camera profile. |
+| [_KSCAMERA_PROFILE_PININFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_pininfo.md) | This structure specifies the available list of media types for each of the camera driver pins. |
+| [_KSCLOCK_DISPATCH structure](..\ks\ns-ks-_ksclock_dispatch.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
+| [_KSCLOCK_DISPATCH structure](..\ks\ns-ks-_ksclock_dispatch~r1.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
+| [_KSDEVICE structure](..\ks\ns-ks-_ksdevice.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
+| [_KSDEVICE structure](..\ks\ns-ks-_ksdevice~r1.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
+| [_KSDEVICE_DESCRIPTOR structure](..\ks\ns-ks-_ksdevice_descriptor.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
+| [_KSDEVICE_DESCRIPTOR structure](..\ks\ns-ks-_ksdevice_descriptor~r1.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
+| [_KSDEVICE_DISPATCH structure](..\ks\ns-ks-_ksdevice_dispatch.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
+| [_KSDEVICE_DISPATCH structure](..\ks\ns-ks-_ksdevice_dispatch~r1.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
+| [_KSDEVICE_PROFILE_INFO structure](..\ksmedia\ns-ksmedia-_ksdevice_profile_info.md) | The KSDEVICE_PROFILE_INFO is a generic structure designed to handle profile information for various device types. |
+| [_KSDEVICE_THERMAL_DISPATCH structure](..\ks\ns-ks-_ksdevice_thermal_dispatch.md) | The KSDEVICE_THERMAL_DISPATCH structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces. |
+| [_KSFILTER structure](..\ks\ns-ks-_ksfilter.md) | The KSFILTER structure describes an instantiated filter. |
+| [_KSFILTER structure](..\ks\ns-ks-_ksfilter~r1.md) | The KSFILTER structure describes an instantiated filter. |
+| [_KSFILTERFACTORY structure](..\ks\ns-ks-_ksfilterfactory.md) | The KSFILTERFACTORY structure represents a filter factory. |
+| [_KSFILTERFACTORY structure](..\ks\ns-ks-_ksfilterfactory~r1.md) | The KSFILTERFACTORY structure represents a filter factory. |
+| [_KSFILTER_DESCRIPTOR structure](..\ks\ns-ks-_ksfilter_descriptor.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
+| [_KSFILTER_DESCRIPTOR structure](..\ks\ns-ks-_ksfilter_descriptor~r1.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
+| [_KSFILTER_DISPATCH structure](..\ks\ns-ks-_ksfilter_dispatch.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
+| [_KSFILTER_DISPATCH structure](..\ks\ns-ks-_ksfilter_dispatch~r1.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
+| [_KSGATE structure](..\ks\ns-ks-_ksgate.md) | The KSGATE structure describes an AVStream gate object. |
+| [_KSGATE structure](..\ks\ns-ks-_ksgate~r1.md) | The KSGATE structure describes an AVStream gate object. |
+| [_KSMAPPING structure](..\ks\ns-ks-_ksmapping.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
+| [_KSMAPPING structure](..\ks\ns-ks-_ksmapping~r1.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
+| [_KSMPEGVID_RECT structure](..\ksmedia\ns-ksmedia-_ksmpegvid_rect.md) | KSMPEGVID_RECT structure |
+| [_KSM_BDA_PIN structure](..\bdamedia\ns-bdamedia-_ksm_bda_pin.md) | The KSM_BDA_PIN structure describes a method request to create or delete a pin factory for a filter. |
+| [_KSM_BDA_PIN_PAIR structure](..\bdamedia\ns-bdamedia-_ksm_bda_pin_pair.md) | The KSM_BDA_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
+| [_KSM_PIN structure](..\bdasup\ns-bdasup-_ksm_pin.md) | The KSM_PIN structure describes a method request to create or delete a pin factory for a filter. |
+| [_KSM_PIN_PAIR structure](..\bdasup\ns-bdasup-_ksm_pin_pair.md) | The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
+| [_KSNODE_DESCRIPTOR structure](..\ks\ns-ks-_ksnode_descriptor.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
+| [_KSNODE_DESCRIPTOR structure](..\ks\ns-ks-_ksnode_descriptor~r1.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
+| [_KSPIN structure](..\ks\ns-ks-_kspin.md) | The KSPIN structure describes an instantiated pin. |
+| [_KSPIN structure](..\ks\ns-ks-_kspin~r1.md) | The KSPIN structure describes an instantiated pin. |
+| [_KSPIN_DESCRIPTOR_EX structure](..\ks\ns-ks-_kspin_descriptor_ex.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
+| [_KSPIN_DESCRIPTOR_EX structure](..\ks\ns-ks-_kspin_descriptor_ex~r1.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
+| [_KSPIN_DISPATCH structure](..\ks\ns-ks-_kspin_dispatch.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
+| [_KSPIN_DISPATCH structure](..\ks\ns-ks-_kspin_dispatch~r1.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
+| [_KSPROCESSPIN structure](..\ks\ns-ks-_ksprocesspin.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
+| [_KSPROCESSPIN structure](..\ks\ns-ks-_ksprocesspin~r1.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
+| [_KSPROCESSPIN_INDEXENTRY structure](..\ks\ns-ks-_ksprocesspin_indexentry.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
+| [_KSPROCESSPIN_INDEXENTRY structure](..\ks\ns-ks-_ksprocesspin_indexentry~r1.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
+| [_KSPROPERTY_GRAPHMANAGER_INTERFACE structure](..\ks\ns-ks-_ksproperty_graphmanager_interface.md) | . |
+| [_KSPROPERTY_SPHLI structure](..\ksmedia\ns-ksmedia-_ksproperty_sphli.md) | The KSPROPERTY_SPHLI structure is used to describe a rectangle of subpicture or screen whose color or contrast is to be changed. |
+| [_KSPROPERTY_SPPAL structure](..\ksmedia\ns-ksmedia-_ksproperty_sppal.md) | The KSPROPERTY_SPPAL structure is used to describe the palette of a subpicture display. |
+| [_KSP_BDA_NODE_PIN structure](..\bdamedia\ns-bdamedia-_ksp_bda_node_pin.md) | The KSP_BDA_NODE_PIN structure describes a property request to retrieve the controlling pin for a node. |
+| [_KSSTREAM_POINTER structure](..\ks\ns-ks-_ksstream_pointer.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
+| [_KSSTREAM_POINTER structure](..\ks\ns-ks-_ksstream_pointer~r1.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
+| [_KSSTREAM_POINTER_OFFSET structure](..\ks\ns-ks-_ksstream_pointer_offset.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
+| [_KSSTREAM_POINTER_OFFSET structure](..\ks\ns-ks-_ksstream_pointer_offset~r1.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
+| [_KSSTREAM_SEGMENT structure](..\ksproxy\ns-ksproxy-_ksstream_segment.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
+| [_KSSTREAM_SEGMENT structure](..\ksproxy\ns-ksproxy-_ksstream_segment~r1.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
+| [_KS_COLCON structure](..\ksmedia\ns-ksmedia-_ks_colcon.md) | The KS_COLCON structure is used to describe color and contrast settings. |
+| [_KS_COPY_MACROVISION structure](..\ksmedia\ns-ksmedia-_ks_copy_macrovision.md) | The KS_COPY_MACROVISION structure specifies the Macrovision level of the data stream. |
+| [_KS_DVDCOPY_BUSKEY structure](..\ksmedia\ns-ksmedia-_ks_dvdcopy_buskey.md) | The KS_DVDCOPY_BUSKEY structure is used to describe the bus key information for the DVD copyright protection authentication process. |
+| [_KS_DVDCOPY_CHLGKEY structure](..\ksmedia\ns-ksmedia-_ks_dvdcopy_chlgkey.md) | The KS_DVDCOPY_CHLGKEY structure is used to describe the challenge key information for the DVD copyright protection authentication process. |
+| [_KS_DVDCOPY_DISCKEY structure](..\ksmedia\ns-ksmedia-_ks_dvdcopy_disckey.md) | The KS_DVDCOPY_DISCKEY structure is used to describe the disc key information for the DVD copyright protection authentication process. |
+| [_KS_DVDCOPY_REGION structure](..\ksmedia\ns-ksmedia-_ks_dvdcopy_region.md) | The KS_DVDCOPY_REGION structure is used to describe the copy control region according to language restrictions. |
+| [_KS_DVDCOPY_SET_COPY_STATE structure](..\ksmedia\ns-ksmedia-_ks_dvdcopy_set_copy_state.md) | The KS_DVDCOPY_SET_COPY_STATE structure is used to specify the copyright protection state of the DVD decoder stream. |
+| [_KS_DVDCOPY_TITLEKEY structure](..\ksmedia\ns-ksmedia-_ks_dvdcopy_titlekey.md) | The KS_DVDCOPY_TITLEKEY structure is used to describe the title key information for the DVD copyright protection authentication process. |
+| [_KS_DVD_YCrCb structure](..\ksmedia\ns-ksmedia-_ks_dvd_ycrcb.md) | The KS_DVD_YCrCb structure is used to describe a color in the YCrCb colorspace. |
+| [_KS_DVD_YUV structure](..\ksmedia\ns-ksmedia-_ks_dvd_yuv.md) | The KS_DVD_YUV structure is used to describe a color in the YUV colorspace. |
+| [_KS_VIDEO_STREAM_CONFIG_CAPS structure](..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md) | The KS_VIDEO_STREAM_CONFIG_CAPS structure describes the configuration and capabilities of a video stream, including analog video standard (for example, NTSC, PAL or SECAM), scaling, and cropping capabilities; minimum and maximum frame rates; and minimum and maximum data rates. |
+| [_MF_MDL_SHARED_PAYLOAD_KEY structure](..\ks\ns-ks-_mf_mdl_shared_payload_key.md) | This union is used internally by the operating system. |
+| [_MPEG2_TRANSPORT_STRIDE structure](..\bdatypes\ns-bdatypes-_mpeg2_transport_stride.md) | The MPEG2_TRANSPORT_STRIDE structure describes the format block of the MPEG2 transport stride. |
+| [_PORT_CONFIGURATION_INFORMATION structure](..\strmini\ns-strmini-_port_configuration_information~r1.md) | PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system. |
+| [_STREAM_DATA_INTERSECT_INFO structure](..\strmini\ns-strmini-_stream_data_intersect_info.md) | STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation. |
+| [_STREAM_METHOD_DESCRIPTOR structure](..\strmini\ns-strmini-_stream_method_descriptor.md) | . |
+| [_STREAM_PROPERTY_DESCRIPTOR structure](..\strmini\ns-strmini-_stream_property_descriptor.md) | STREAM_PROPERTY_DESCRIPTOR specifies the parameters of property get/set requests that the class driver passes to the minidriver. |
+| [_STREAM_TIME_REFERENCE structure](..\strmini\ns-strmini-_stream_time_reference.md) | . |
+| [_SWENUM_INSTALL_INTERFACE structure](..\swenum\ns-swenum-_swenum_install_interface.md) | The SWENUM_INSTALL_INTERFACE structure describes a specific demand-load bus enumerator object interface to install. |
+| [_USBCAMD_DEVICE_DATA structure](..\usbcamdi\ns-usbcamdi-_usbcamd_device_data.md) | This structure is obsolete and is provided to maintain backward compatibility with the original USBCAMD. |
+| [_USBCAMD_DEVICE_DATA2 structure](..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md) | The USBCAMD_DEVICE_DATA2 structure specifies the entry points for a camera minidriver's functions that USBCAMD calls. |
+| [_pipe_config_descriptor structure](..\usbcamdi\ns-usbcamdi-_pipe_config_descriptor.md) | The USBCAMD_Pipe_Config_Descriptor structure describes the association between pipes and streams. |
+| [_timecode structure](..\ksmedia\ns-ksmedia-_timecode.md) | The TIMECODE union describes a timecode from an external device. This structure is no longer used. |
+| [tagBDA_TRANSPORT_INFO structure](..\bdamedia\ns-bdamedia-tagbda_transport_info.md) | The BDA_TRANSPORT_INFO structure describes formatting for a stream connection. |
 | [tagCapturedMetadataExposureCompensation structure](..\mfapi\ns-mfapi-tagcapturedmetadataexposurecompensation.md) | This structure contains blob information for the EV compensation feedback for the photo captured. |
 | [tagCapturedMetadataISOGains structure](..\mfapi\ns-mfapi-tagcapturedmetadataisogains.md) | The CapturedMetadataISOGains structure describes the blob format for MF_CAPTURE_METADATA_ISO_GAINS. |
 | [tagCapturedMetadataWhiteBalanceGains structure](..\mfapi\ns-mfapi-tagcapturedmetadatawhitebalancegains.md) | This structure describes the blob format for the MF_CAPTURE_METADATA_WHITEBALANCE_GAINS attribute. |
@@ -819,185 +770,207 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [tagHistogramDataHeader structure](..\mfapi\ns-mfapi-taghistogramdataheader.md) | The HistogramDataHeader structure describes the blob format for the MF_CAPTURE_METADATA_HISTOGRAM attribute. |
 | [tagHistogramGrid structure](..\mfapi\ns-mfapi-taghistogramgrid.md) | The HistogramGrid structure describes the blob format for MF_CAPTURE_METADATA_HISTOGRAM. |
 | [tagHistogramHeader structure](..\mfapi\ns-mfapi-taghistogramheader.md) | The HistogramHeader structure describes the blob format for MF_CAPTURE_METADATA_HISTOGRAM. |
-| [tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-cameraoffset.md) | The KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure contains the parameters for the Camera Angle Offset Control property. |
-| [tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-evcompensation.md) | The EV Compensation Control provides for exposure control that is adjusted by increments of EV compensation steps. |
-| [tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-fieldofview.md) | The Field of View Control property describes the current Field of View (FOV) of the camera along with the pitch angle of the camera position. |
-| [tagKSCAMERA_EXTENDEDPROP_HEADER structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-header.md) | The KSCAMERA_EXTENDEDPROP_HEADER structure is the payload header for an extend control property. |
-| [tagKSCAMERA_EXTENDEDPROP_METADATAINFO structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-metadatainfo.md) | This structure represents the metadata information for the extended property control. |
-| [tagKSCAMERA_EXTENDEDPROP_PHOTOMODE structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-photomode.md) | The KSCAMERA_EXTENDEDPROP_PHOTOMODE structure contains the property data for the history frame counts in photo mode. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-configcaps.md) | This structure contains the capabilities for an ROI control. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-configcapsheader.md) | This structure contains the header information for ROI capabilities. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_EXPOSURE structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-exposure.md) | This structure contains the ROI info structure for exposure. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_FOCUS structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-focus.md) | This structure contains the ROI info structure for focus. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_INFO structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-info.md) | This structure contains information about an ROI. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-ispcontrol.md) | This structure contains information for an ROI ISP control. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-ispcontrolheader.md) | This structure contains the header information for ROI ISP controls. |
-| [tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-roi-whitebalance.md) | This structure contains the ROI info structure for white balance. |
-| [tagKSCAMERA_EXTENDEDPROP_VALUE structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-value.md) | The KSCAMERA_EXTENDEDPROP_VALUE structure is a data type union used to express an extended property value. |
-| [tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure](..\ksmedia\ns-ksmedia-tagkscamera-extendedprop-videoprocsetting.md) | The KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING is a property payload structure for video processing settings related to white balance, exposure mode, and focus mode. |
-| [tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure](..\ksmedia\ns-ksmedia-tagkscamera-maxvideofps-forphotores.md) | The KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure contains the property data for maximum frame rate at a particular resolution for a camera supporting preview and capture. |
-| [tagKSCAMERA_METADATA_ITEMHEADER structure](..\ksmedia\ns-ksmedia-tagkscamera-metadata-itemheader.md) | This structure contains the metadata header information that is filled by the camera driver. |
-| [tagKSCAMERA_METADATA_PHOTOCONFIRMATION structure](..\ksmedia\ns-ksmedia-tagkscamera-metadata-photoconfirmation.md) | This structure contains the photo confirmation metadata information that is filled by the camera driver. |
-| [tagKS_AMVPDATAINFO structure](..\ksmedia\ns-ksmedia-tagks-amvpdatainfo.md) | The KS_AMVPDATAINFO structure is used to describe the properties of a video port. |
-| [tagKS_AMVPDIMINFO structure](..\ksmedia\ns-ksmedia-tagks-amvpdiminfo.md) | The KS_AMVPDIMINFO structure is used to describe the dimensions of a video port. |
-| [tagKS_AMVPSIZE structure](..\ksmedia\ns-ksmedia-tagks-amvpsize.md) | The KS_AMVPSIZE structure is used to describe the dimension of a video port (width by height). |
-| [tagKS_AnalogVideoInfo structure](..\ksmedia\ns-ksmedia-tagks-analogvideoinfo.md) | The KS_ANALOGVIDEOINFO structure describes an analog video stream. |
-| [tagKS_BDA_FRAME_INFO structure](..\bdatypes\ns-bdatypes-tagks-bda-frame-info.md) | The KS_BDA_FRAME_INFO structure describes BDA extensions to the KSSTREAM_HEADER structure, which describes a packet of data to be read from or written to a streaming driver pin. |
-| [tagKS_BITMAPINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks-bitmapinfoheader.md) | The KS_BITMAPINFOHEADER structure describes details about the video stream, such as image dimensions and pixel depth. |
-| [tagKS_DATAFORMAT_DV_AVC structure](..\avcstrm\ns-avcstrm-tagks-dataformat-dv-avc.md) | The KS_DATAFORMAT_DV_AVC structure stores the data format for an AV/C digital video connection. |
-| [tagKS_DATAFORMAT_H264VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks-dataformat-h264videoinfo.md) | The KS_DATAFORMAT_H264VIDEOINFO structure describes the data formats range available for a stream. |
-| [tagKS_DATAFORMAT_IMAGEINFO structure](..\ksmedia\ns-ksmedia-tagks-dataformat-imageinfo.md) | Specifies an image data format that is used for an independent image pin (or stream). |
-| [tagKS_DATAFORMAT_MPEG2TS_AVC structure](..\avcstrm\ns-avcstrm-tagks-dataformat-mpeg2ts-avc.md) | The KS_DATAFORMAT_MPEG2TS_AVC structure stores the data format for an AV/C MPEG2 connection. |
-| [tagKS_DATAFORMAT_VBIINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks-dataformat-vbiinfoheader.md) | The KS_DATAFORMAT_VBIINFOHEADER structure describes a vertical blanking interval (VBI) stream. |
-| [tagKS_DATAFORMAT_VIDEOINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks-dataformat-videoinfoheader.md) | The KS_DATAFORMAT_VIDEOINFOHEADER structure describes a video stream that does not include bob or weave settings. |
-| [tagKS_DATAFORMAT_VIDEOINFOHEADER2 structure](..\ksmedia\ns-ksmedia-tagks-dataformat-videoinfoheader2.md) | The KS_DATAFORMAT_VIDEOINFOHEADER2 structure describes a video stream that includes settings for bob or weave. |
-| [tagKS_DATAFORMAT_VIDEOINFO_PALETTE structure](..\ksmedia\ns-ksmedia-tagks-dataformat-videoinfo-palette.md) | The KS_DATAFORMAT_VIDEOINFO_PALETTE structure describes color palette information. |
-| [tagKS_DATARANGE_ANALOGVIDEO structure](..\ksmedia\ns-ksmedia-tagks-datarange-analogvideo.md) | The KS_DATARANGE_ANALOGVIDEO structure describes an analog video stream. |
-| [tagKS_DATARANGE_BDA_ANTENNA structure](..\bdamedia\ns-bdamedia-tagks-datarange-bda-antenna.md) | The KS_DATARANGE_BDA_ANTENNA structure describes a range of data formats for a BDA antenna stream. |
-| [tagKS_DATARANGE_BDA_TRANSPORT structure](..\bdamedia\ns-bdamedia-tagks-datarange-bda-transport.md) | The KS_DATARANGE_BDA_TRANSPORT structure describes a range of data formats for a BDA transport stream. |
-| [tagKS_DATARANGE_DVVIDEO structure](..\avcstrm\ns-avcstrm-tagks-datarange-dvvideo.md) | The KS_DATARANGE_DV_AVC structure stores a range of digital video formats. |
-| [tagKS_DATARANGE_DV_AVC structure](..\avcstrm\ns-avcstrm-tagks-datarange-dv-avc.md) | The KS_DATARANGE_DV_AVC structure stores a range of AV/C digital video formats. |
-| [tagKS_DATARANGE_H264_VIDEO structure](..\ksmedia\ns-ksmedia-tagks-datarange-h264-video.md) | The KS_DATARANGE_H264_VIDEO structure describes the range of MPEG-2 video formats available for a stream. |
-| [tagKS_DATARANGE_IMAGE structure](..\ksmedia\ns-ksmedia-tagks-datarange-image.md) | Specifies an image data range that is used in the KSPIN_DESCRIPTOR structure that describes a pin (or stream). |
-| [tagKS_DATARANGE_MPEG1_VIDEO structure](..\ksmedia\ns-ksmedia-tagks-datarange-mpeg1-video.md) | The KS_DATARANGE_MPEG1_VIDEO structure describes the range of MPEG-1 video formats available for a stream. |
-| [tagKS_DATARANGE_MPEG2TS_AVC structure](..\avcstrm\ns-avcstrm-tagks-datarange-mpeg2ts-avc.md) | The KS_DATARANGE_MPEG2TS_AVC structure stores a range of AV/C MPEG2 formats. |
-| [tagKS_DATARANGE_MPEG2_VIDEO structure](..\ksmedia\ns-ksmedia-tagks-datarange-mpeg2-video.md) | The KS_DATARANGE_MPEG2_VIDEO structure describes the range of MPEG-2 video formats available for a stream. |
-| [tagKS_DATARANGE_VIDEO structure](..\ksmedia\ns-ksmedia-tagks-datarange-video.md) | The KS_DATARANGE_VIDEO structure describes a range of video streams without bob or weave settings. |
-| [tagKS_DATARANGE_VIDEO2 structure](..\ksmedia\ns-ksmedia-tagks-datarange-video2.md) | The KS_DATARANGE_VIDEO2 structure describes a video stream including bob or weave settings. |
-| [tagKS_DATARANGE_VIDEO_PALETTE structure](..\ksmedia\ns-ksmedia-tagks-datarange-video-palette.md) | The KS_DATARANGE_VIDEO_PALETTE structure describes a stream and its color capabilities. |
-| [tagKS_DATARANGE_VIDEO_VBI structure](..\ksmedia\ns-ksmedia-tagks-datarange-video-vbi.md) | The KS_DATARANGE_VIDEO_VBI structure describes a range of data formats containing vertical blanking interval (VBI) data. |
-| [tagKS_FRAME_INFO structure](..\ksmedia\ns-ksmedia-tagks-frame-info.md) | The KS_FRAME_INFO structure extends the KSSTREAM_HEADER structure for video streams. |
-| [tagKS_H264VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks-h264videoinfo.md) | The KS_H264VIDEOINFO describes the device capabilities that apply to the current media type. |
-| [tagKS_MPEAUDIOINFO structure](..\ksmedia\ns-ksmedia-tagks-mpeaudioinfo.md) | The KS_MPEGAUDIOINFO structure describes an MPEG audio stream. |
-| [tagKS_MPEG1VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks-mpeg1videoinfo.md) | The KS_MPEG1VIDEOINFO structure describes an MPEG-1 video stream. |
-| [tagKS_MPEGVIDEOINFO2 structure](..\ksmedia\ns-ksmedia-tagks-mpegvideoinfo2.md) | The KS_MPEGVIDEOINFO2 structure describes an MPEG-2 video stream, including bob or weave settings. |
-| [tagKS_RGBQUAD structure](..\ksmedia\ns-ksmedia-tagks-rgbquad.md) | The KS_RGBQUAD structure describes a color consisting of relative intensities of red, green, and blue, ranging from 0 to 255 (0x0 to 0xff). |
-| [tagKS_TVTUNER_CHANGE_INFO structure](..\ksmedia\ns-ksmedia-tagks-tvtuner-change-info.md) | The KS_TVTUNER_CHANGE_INFO structure provides vertical blanking interval (VBI) codecs with information about the currently tuned channel. |
-| [tagKS_VBIINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks-vbiinfoheader.md) | The KS_VBIINFOHEADER structure describes raw vertical blanking interval (VBI) streams. |
-| [tagKS_VBI_FRAME_INFO structure](..\ksmedia\ns-ksmedia-tagks-vbi-frame-info.md) | The KS_VBI_FRAME_INFO structure extends the KSSTREAM_HEADER structure for vertical blanking interval (VBI) streams. |
-| [tagKS_VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks-videoinfo.md) | The KS_VIDEOINFO structure describes the bitmap and color information for a video stream. |
-| [tagKS_VIDEOINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks-videoinfoheader.md) | The KS_VIDEOINFOHEADER structure describes the bitmap and color information for a video stream. |
-| [tagKS_VIDEOINFOHEADER2 structure](..\ksmedia\ns-ksmedia-tagks-videoinfoheader2.md) | The KS_VIDEOINFOHEADER2 structure describes the details of a video stream, including bob or weave settings, copy protection, and pixel aspect ratio. |
+| [tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_cameraoffset.md) | The KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure contains the parameters for the Camera Angle Offset Control property. |
+| [tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_evcompensation.md) | The EV Compensation Control provides for exposure control that is adjusted by increments of EV compensation steps. |
+| [tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_fieldofview.md) | The Field of View Control property describes the current Field of View (FOV) of the camera along with the pitch angle of the camera position. |
+| [tagKSCAMERA_EXTENDEDPROP_HEADER structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md) | The KSCAMERA_EXTENDEDPROP_HEADER structure is the payload header for an extend control property. |
+| [tagKSCAMERA_EXTENDEDPROP_METADATAINFO structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_metadatainfo.md) | This structure represents the metadata information for the extended property control. |
+| [tagKSCAMERA_EXTENDEDPROP_PHOTOMODE structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_photomode.md) | The KSCAMERA_EXTENDEDPROP_PHOTOMODE structure contains the property data for the history frame counts in photo mode. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_configcaps.md) | This structure contains the capabilities for an ROI control. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_configcapsheader.md) | This structure contains the header information for ROI capabilities. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_EXPOSURE structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_exposure.md) | This structure contains the ROI info structure for exposure. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_FOCUS structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_focus.md) | This structure contains the ROI info structure for focus. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_INFO structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_info.md) | This structure contains information about an ROI. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrol.md) | This structure contains information for an ROI ISP control. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrolheader.md) | This structure contains the header information for ROI ISP controls. |
+| [tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_whitebalance.md) | This structure contains the ROI info structure for white balance. |
+| [tagKSCAMERA_EXTENDEDPROP_VALUE structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_value.md) | The KSCAMERA_EXTENDEDPROP_VALUE structure is a data type union used to express an extended property value. |
+| [tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure](..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_videoprocsetting.md) | The KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING is a property payload structure for video processing settings related to white balance, exposure mode, and focus mode. |
+| [tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure](..\ksmedia\ns-ksmedia-tagkscamera_maxvideofps_forphotores.md) | The KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure contains the property data for maximum frame rate at a particular resolution for a camera supporting preview and capture. |
+| [tagKSCAMERA_METADATA_ITEMHEADER structure](..\ksmedia\ns-ksmedia-tagkscamera_metadata_itemheader.md) | This structure contains the metadata header information that is filled by the camera driver. |
+| [tagKSCAMERA_METADATA_PHOTOCONFIRMATION structure](..\ksmedia\ns-ksmedia-tagkscamera_metadata_photoconfirmation.md) | This structure contains the photo confirmation metadata information that is filled by the camera driver. |
+| [tagKS_AMVPDATAINFO structure](..\ksmedia\ns-ksmedia-tagks_amvpdatainfo.md) | The KS_AMVPDATAINFO structure is used to describe the properties of a video port. |
+| [tagKS_AMVPDIMINFO structure](..\ksmedia\ns-ksmedia-tagks_amvpdiminfo.md) | The KS_AMVPDIMINFO structure is used to describe the dimensions of a video port. |
+| [tagKS_AMVPSIZE structure](..\ksmedia\ns-ksmedia-tagks_amvpsize.md) | The KS_AMVPSIZE structure is used to describe the dimension of a video port (width by height). |
+| [tagKS_AnalogVideoInfo structure](..\ksmedia\ns-ksmedia-tagks_analogvideoinfo.md) | The KS_ANALOGVIDEOINFO structure describes an analog video stream. |
+| [tagKS_BDA_FRAME_INFO structure](..\bdatypes\ns-bdatypes-tagks_bda_frame_info.md) | The KS_BDA_FRAME_INFO structure describes BDA extensions to the KSSTREAM_HEADER structure, which describes a packet of data to be read from or written to a streaming driver pin. |
+| [tagKS_BITMAPINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md) | The KS_BITMAPINFOHEADER structure describes details about the video stream, such as image dimensions and pixel depth. |
+| [tagKS_DATAFORMAT_DV_AVC structure](..\avcstrm\ns-avcstrm-tagks_dataformat_dv_avc.md) | The KS_DATAFORMAT_DV_AVC structure stores the data format for an AV/C digital video connection. |
+| [tagKS_DATAFORMAT_H264VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks_dataformat_h264videoinfo.md) | The KS_DATAFORMAT_H264VIDEOINFO structure describes the data formats range available for a stream. |
+| [tagKS_DATAFORMAT_IMAGEINFO structure](..\ksmedia\ns-ksmedia-tagks_dataformat_imageinfo.md) | Specifies an image data format that is used for an independent image pin (or stream). |
+| [tagKS_DATAFORMAT_MPEG2TS_AVC structure](..\avcstrm\ns-avcstrm-tagks_dataformat_mpeg2ts_avc.md) | The KS_DATAFORMAT_MPEG2TS_AVC structure stores the data format for an AV/C MPEG2 connection. |
+| [tagKS_DATAFORMAT_VBIINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks_dataformat_vbiinfoheader.md) | The KS_DATAFORMAT_VBIINFOHEADER structure describes a vertical blanking interval (VBI) stream. |
+| [tagKS_DATAFORMAT_VIDEOINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks_dataformat_videoinfoheader.md) | The KS_DATAFORMAT_VIDEOINFOHEADER structure describes a video stream that does not include bob or weave settings. |
+| [tagKS_DATAFORMAT_VIDEOINFOHEADER2 structure](..\ksmedia\ns-ksmedia-tagks_dataformat_videoinfoheader2.md) | The KS_DATAFORMAT_VIDEOINFOHEADER2 structure describes a video stream that includes settings for bob or weave. |
+| [tagKS_DATAFORMAT_VIDEOINFO_PALETTE structure](..\ksmedia\ns-ksmedia-tagks_dataformat_videoinfo_palette.md) | The KS_DATAFORMAT_VIDEOINFO_PALETTE structure describes color palette information. |
+| [tagKS_DATARANGE_ANALOGVIDEO structure](..\ksmedia\ns-ksmedia-tagks_datarange_analogvideo.md) | The KS_DATARANGE_ANALOGVIDEO structure describes an analog video stream. |
+| [tagKS_DATARANGE_BDA_ANTENNA structure](..\bdamedia\ns-bdamedia-tagks_datarange_bda_antenna.md) | The KS_DATARANGE_BDA_ANTENNA structure describes a range of data formats for a BDA antenna stream. |
+| [tagKS_DATARANGE_BDA_TRANSPORT structure](..\bdamedia\ns-bdamedia-tagks_datarange_bda_transport.md) | The KS_DATARANGE_BDA_TRANSPORT structure describes a range of data formats for a BDA transport stream. |
+| [tagKS_DATARANGE_DVVIDEO structure](..\avcstrm\ns-avcstrm-tagks_datarange_dvvideo.md) | The KS_DATARANGE_DV_AVC structure stores a range of digital video formats. |
+| [tagKS_DATARANGE_DV_AVC structure](..\avcstrm\ns-avcstrm-tagks_datarange_dv_avc.md) | The KS_DATARANGE_DV_AVC structure stores a range of AV/C digital video formats. |
+| [tagKS_DATARANGE_H264_VIDEO structure](..\ksmedia\ns-ksmedia-tagks_datarange_h264_video.md) | The KS_DATARANGE_H264_VIDEO structure describes the range of MPEG-2 video formats available for a stream. |
+| [tagKS_DATARANGE_IMAGE structure](..\ksmedia\ns-ksmedia-tagks_datarange_image.md) | Specifies an image data range that is used in the KSPIN_DESCRIPTOR structure that describes a pin (or stream). |
+| [tagKS_DATARANGE_MPEG1_VIDEO structure](..\ksmedia\ns-ksmedia-tagks_datarange_mpeg1_video.md) | The KS_DATARANGE_MPEG1_VIDEO structure describes the range of MPEG-1 video formats available for a stream. |
+| [tagKS_DATARANGE_MPEG2TS_AVC structure](..\avcstrm\ns-avcstrm-tagks_datarange_mpeg2ts_avc.md) | The KS_DATARANGE_MPEG2TS_AVC structure stores a range of AV/C MPEG2 formats. |
+| [tagKS_DATARANGE_MPEG2_VIDEO structure](..\ksmedia\ns-ksmedia-tagks_datarange_mpeg2_video.md) | The KS_DATARANGE_MPEG2_VIDEO structure describes the range of MPEG-2 video formats available for a stream. |
+| [tagKS_DATARANGE_VIDEO structure](..\ksmedia\ns-ksmedia-tagks_datarange_video.md) | The KS_DATARANGE_VIDEO structure describes a range of video streams without bob or weave settings. |
+| [tagKS_DATARANGE_VIDEO2 structure](..\ksmedia\ns-ksmedia-tagks_datarange_video2.md) | The KS_DATARANGE_VIDEO2 structure describes a video stream including bob or weave settings. |
+| [tagKS_DATARANGE_VIDEO_PALETTE structure](..\ksmedia\ns-ksmedia-tagks_datarange_video_palette.md) | The KS_DATARANGE_VIDEO_PALETTE structure describes a stream and its color capabilities. |
+| [tagKS_DATARANGE_VIDEO_VBI structure](..\ksmedia\ns-ksmedia-tagks_datarange_video_vbi.md) | The KS_DATARANGE_VIDEO_VBI structure describes a range of data formats containing vertical blanking interval (VBI) data. |
+| [tagKS_FRAME_INFO structure](..\ksmedia\ns-ksmedia-tagks_frame_info.md) | The KS_FRAME_INFO structure extends the KSSTREAM_HEADER structure for video streams. |
+| [tagKS_H264VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks_h264videoinfo.md) | The KS_H264VIDEOINFO describes the device capabilities that apply to the current media type. |
+| [tagKS_MPEAUDIOINFO structure](..\ksmedia\ns-ksmedia-tagks_mpeaudioinfo.md) | The KS_MPEGAUDIOINFO structure describes an MPEG audio stream. |
+| [tagKS_MPEG1VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks_mpeg1videoinfo.md) | The KS_MPEG1VIDEOINFO structure describes an MPEG-1 video stream. |
+| [tagKS_MPEGVIDEOINFO2 structure](..\ksmedia\ns-ksmedia-tagks_mpegvideoinfo2.md) | The KS_MPEGVIDEOINFO2 structure describes an MPEG-2 video stream, including bob or weave settings. |
+| [tagKS_RGBQUAD structure](..\ksmedia\ns-ksmedia-tagks_rgbquad.md) | The KS_RGBQUAD structure describes a color consisting of relative intensities of red, green, and blue, ranging from 0 to 255 (0x0 to 0xff). |
+| [tagKS_TVTUNER_CHANGE_INFO structure](..\ksmedia\ns-ksmedia-tagks_tvtuner_change_info.md) | The KS_TVTUNER_CHANGE_INFO structure provides vertical blanking interval (VBI) codecs with information about the currently tuned channel. |
+| [tagKS_VBIINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks_vbiinfoheader.md) | The KS_VBIINFOHEADER structure describes raw vertical blanking interval (VBI) streams. |
+| [tagKS_VBI_FRAME_INFO structure](..\ksmedia\ns-ksmedia-tagks_vbi_frame_info.md) | The KS_VBI_FRAME_INFO structure extends the KSSTREAM_HEADER structure for vertical blanking interval (VBI) streams. |
+| [tagKS_VIDEOINFO structure](..\ksmedia\ns-ksmedia-tagks_videoinfo.md) | The KS_VIDEOINFO structure describes the bitmap and color information for a video stream. |
+| [tagKS_VIDEOINFOHEADER structure](..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md) | The KS_VIDEOINFOHEADER structure describes the bitmap and color information for a video stream. |
+| [tagKS_VIDEOINFOHEADER2 structure](..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md) | The KS_VIDEOINFOHEADER2 structure describes the details of a video stream, including bob or weave settings, copy protection, and pixel aspect ratio. |
 | [tagMetadataTimeStamps structure](..\mfapi\ns-mfapi-tagmetadatatimestamps.md) | The MetadataTimeStamps structure describes the blob format for the MF_CAPTURE_METADATA_FACEROITIMESTAMPS attribute. |
-| [tagTIMECODE_SAMPLE structure](..\ksmedia\ns-ksmedia-tagtimecode-sample.md) | The TIMECODE_SAMPLE structure describes a complete timecode. |
+| [tagTIMECODE_SAMPLE structure](..\ksmedia\ns-ksmedia-tagtimecode_sample.md) | The TIMECODE_SAMPLE structure describes a complete timecode. |
 | [tagTRANSPORTAUDIOPARMS structure](..\ksmedia\ns-ksmedia-tagtransportaudioparms.md) | The TRANSPORTAUDIOPARMS structure is defined but not used. |
 | [tagTRANSPORTBASICPARMS structure](..\ksmedia\ns-ksmedia-tagtransportbasicparms.md) | The TRANSPORTBASICPARMS structure is defined but not used. |
 | [tagTRANSPORTSTATUS structure](..\ksmedia\ns-ksmedia-tagtransportstatus.md) | The TRANSPORTSTATUS structure describes the current transport status. |
 | [tagTRANSPORTVIDEOPARMS structure](..\ksmedia\ns-ksmedia-tagtransportvideoparms.md) | The TRANSPORTVIDEOPARMS structure is defined but not presently used. It may be used in the future. |
-| [tag_KS_TRUECOLORINFO structure](..\ksmedia\ns-ksmedia-tag-ks-truecolorinfo.md) | The KS_TRUECOLORINFO structure describes color palette and bitmask information for video images that also contain a palette. |
-| [tag_video_configure_parms structure](..\msviddrv\ns-msviddrv-tag-video-configure-parms.md) | . |
-| [tag_video_geterrortext_parms structure](..\msviddrv\ns-msviddrv-tag-video-geterrortext-parms.md) | . |
-| [tag_video_open_parms structure](..\msviddrv\ns-msviddrv-tag-video-open-parms.md) | . |
-| [tag_video_stream_init_parms structure](..\msviddrv\ns-msviddrv-tag-video-stream-init-parms.md) | . |
-| [timecode structure](..\ksmedia\ns-ksmedia--timecode.md) | The TIMECODE union describes a timecode from an external device. This structure is no longer used. |
+| [tag_KS_TRUECOLORINFO structure](..\ksmedia\ns-ksmedia-tag_ks_truecolorinfo.md) | The KS_TRUECOLORINFO structure describes color palette and bitmask information for video images that also contain a palette. |
+| [tag_video_configure_parms structure](..\msviddrv\ns-msviddrv-tag_video_configure_parms.md) | . |
+| [tag_video_geterrortext_parms structure](..\msviddrv\ns-msviddrv-tag_video_geterrortext_parms.md) | . |
+| [tag_video_open_parms structure](..\msviddrv\ns-msviddrv-tag_video_open_parms.md) | . |
+| [tag_video_stream_init_parms structure](..\msviddrv\ns-msviddrv-tag_video_stream_init_parms.md) | . |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [AVCSTRM_FORMAT enumeration](..\avcstrm\ne-avcstrm--avcstrm-format.md) | The AVCSTRM_FUNCTION enumeration defines the AV/C subunit stream formats supported by avcstrm.sys. |
-| [AVCSTRM_FUNCTION enumeration](..\avcstrm\ne-avcstrm--avcstrm-function.md) | The AVCSTRM_FUNCTION enumeration defines the functionality exposed by the avcstrm.sys driver. |
-| [FRAMING_CACHE_OPS enumeration](..\ksproxy\ne-ksproxy-framing-cache-ops.md) | . |
-| [FRAMING_PROP enumeration](..\ksproxy\ne-ksproxy-framing-prop.md) | . |
+| [FRAMING_CACHE_OPS enumeration](..\ksproxy\ne-ksproxy-framing_cache_ops.md) | . |
+| [FRAMING_PROP enumeration](..\ksproxy\ne-ksproxy-framing_prop.md) | . |
 | [KSALLOCATORMODE enumeration](..\ksproxy\ne-ksproxy-ksallocatormode.md) | . |
-| [KSCAMERA_EXTENDEDPROP_FOCUSSTATE enumeration](..\ksmedia\ne-ksmedia-kscamera-extendedprop-focusstate.md) | This enumeration contains the focus states. |
-| [KSCAMERA_EXTENDEDPROP_MetadataAlignment enumeration](..\ksmedia\ne-ksmedia-kscamera-extendedprop-metadataalignment.md) | This enumeration contains identifiers for the metadata alignment. |
-| [KSCAMERA_EXTENDEDPROP_ROITYPE enumeration](..\ksmedia\ne-ksmedia-kscamera-extendedprop-roitype.md) | This enumeration contains the ROI types. |
-| [KSCAMERA_MetadataId enumeration](..\ksmedia\ne-ksmedia-kscamera-metadataid.md) | This enumeration contains identifiers for a metadata item. |
-| [KSCAMERA_PERFRAMESETTING_ITEM_TYPE enumeration](..\ksmedia\ne-ksmedia-kscamera-perframesetting-item-type.md) | This enumeration contains the different item types for the per-frame settings DDI. |
-| [KSCOMPLETION_INVOCATION enumeration](..\ks\ne-ks-kscompletion-invocation.md) | . |
-| [KSDEGRADE_STANDARD enumeration](..\ks\ne-ks-ksdegrade-standard.md) | The KSDEGRADE_STANDARD enumeration lists different types of degradation. |
-| [KSDEVICE_THERMAL_STATE enumeration](..\ks\ne-ks-ksdevice-thermal-state.md) | A KS-defined enumeration for thermal state changes. |
-| [KSEVENTS_LOCKTYPE enumeration](..\ks\ne-ks-ksevents-locktype.md) | The KSEVENTS_LOCKTYPE enumeration identifies the type of exclusion lock. The types are used with EventFlags in several event-set helper functions. |
-| [KSEVENT_CAMERACONTROL enumeration](..\ksmedia\ne-ksmedia-ksevent-cameracontrol.md) | Specifies camera control event notifications that the driver generates to indicate that an operation has been completed or canceled. |
-| [KSEVENT_CAMERAEVENT enumeration](..\ksmedia\ne-ksmedia-ksevent-cameraevent.md) | KSEVENT_CAMERAEVENT enumerates a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver. |
-| [KSEVENT_CLOCK_POSITION enumeration](..\ks\ne-ks-ksevent-clock-position.md) | . |
-| [KSEVENT_CONNECTION enumeration](..\ks\ne-ks-ksevent-connection.md) | . |
-| [KSEVENT_DEVICE enumeration](..\ks\ne-ks-ksevent-device.md) | Specifies event notifications that the driver generates to indicate that a device has been lost or preempted. |
-| [KSEVENT_PINCAPS_CHANGENOTIFICATIONS enumeration](..\ks\ne-ks-ksevent-pincaps-changenotifications.md) | . |
-| [KSEVENT_STREAMALLOCATOR enumeration](..\ks\ne-ks-ksevent-streamallocator.md) | . |
-| [KSEVENT_VOLUMELIMIT enumeration](..\ks\ne-ks-ksevent-volumelimit.md) | . |
-| [KSINTERFACE_FILEIO enumeration](..\ks\ne-ks-ksinterface-fileio.md) | . |
-| [KSINTERFACE_STANDARD enumeration](..\ks\ne-ks-ksinterface-standard.md) | . |
+| [KSCAMERA_EXTENDEDPROP_FOCUSSTATE enumeration](..\ksmedia\ne-ksmedia-kscamera_extendedprop_focusstate.md) | This enumeration contains the focus states. |
+| [KSCAMERA_EXTENDEDPROP_MetadataAlignment enumeration](..\ksmedia\ne-ksmedia-kscamera_extendedprop_metadataalignment.md) | This enumeration contains identifiers for the metadata alignment. |
+| [KSCAMERA_EXTENDEDPROP_ROITYPE enumeration](..\ksmedia\ne-ksmedia-kscamera_extendedprop_roitype.md) | This enumeration contains the ROI types. |
+| [KSCAMERA_MetadataId enumeration](..\ksmedia\ne-ksmedia-kscamera_metadataid.md) | This enumeration contains identifiers for a metadata item. |
+| [KSCAMERA_PERFRAMESETTING_ITEM_TYPE enumeration](..\ksmedia\ne-ksmedia-kscamera_perframesetting_item_type.md) | This enumeration contains the different item types for the per-frame settings DDI. |
+| [KSCOMPLETION_INVOCATION enumeration](..\ks\ne-ks-kscompletion_invocation.md) | . |
+| [KSDEGRADE_STANDARD enumeration](..\ks\ne-ks-ksdegrade_standard.md) | The KSDEGRADE_STANDARD enumeration lists different types of degradation. |
+| [KSDEVICE_THERMAL_STATE enumeration](..\ks\ne-ks-ksdevice_thermal_state.md) | A KS-defined enumeration for thermal state changes. |
+| [KSEVENTS_LOCKTYPE enumeration](..\ks\ne-ks-ksevents_locktype.md) | The KSEVENTS_LOCKTYPE enumeration identifies the type of exclusion lock. The types are used with EventFlags in several event-set helper functions. |
+| [KSEVENT_CAMERACONTROL enumeration](..\ksmedia\ne-ksmedia-ksevent_cameracontrol.md) | Specifies camera control event notifications that the driver generates to indicate that an operation has been completed or canceled. |
+| [KSEVENT_CAMERAEVENT enumeration](..\ksmedia\ne-ksmedia-ksevent_cameraevent.md) | KSEVENT_CAMERAEVENT enumerates a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver. |
+| [KSEVENT_CLOCK_POSITION enumeration](..\ks\ne-ks-ksevent_clock_position.md) | . |
+| [KSEVENT_CONNECTION enumeration](..\ks\ne-ks-ksevent_connection.md) | . |
+| [KSEVENT_DEVICE enumeration](..\ks\ne-ks-ksevent_device.md) | Specifies event notifications that the driver generates to indicate that a device has been lost or preempted. |
+| [KSEVENT_PINCAPS_CHANGENOTIFICATIONS enumeration](..\ks\ne-ks-ksevent_pincaps_changenotifications.md) | . |
+| [KSEVENT_STREAMALLOCATOR enumeration](..\ks\ne-ks-ksevent_streamallocator.md) | . |
+| [KSEVENT_VOLUMELIMIT enumeration](..\ks\ne-ks-ksevent_volumelimit.md) | . |
+| [KSINTERFACE_FILEIO enumeration](..\ks\ne-ks-ksinterface_fileio.md) | . |
+| [KSINTERFACE_STANDARD enumeration](..\ks\ne-ks-ksinterface_standard.md) | . |
 | [KSIOOPERATION enumeration](..\ksproxy\ne-ksproxy-ksiooperation.md) | . |
-| [KSIRP_REMOVAL_OPERATION enumeration](..\ks\ne-ks-ksirp-removal-operation.md) | . |
-| [KSLIST_ENTRY_LOCATION enumeration](..\ks\ne-ks-kslist-entry-location.md) | . |
-| [KSMETHOD_STREAMALLOCATOR enumeration](..\ks\ne-ks-ksmethod-streamallocator.md) | . |
-| [KSMETHOD_STREAMIO enumeration](..\ks\ne-ks-ksmethod-streamio.md) | . |
+| [KSIRP_REMOVAL_OPERATION enumeration](..\ks\ne-ks-ksirp_removal_operation.md) | . |
+| [KSLIST_ENTRY_LOCATION enumeration](..\ks\ne-ks-kslist_entry_location.md) | . |
+| [KSMETHOD_STREAMALLOCATOR enumeration](..\ks\ne-ks-ksmethod_streamallocator.md) | . |
+| [KSMETHOD_STREAMIO enumeration](..\ks\ne-ks-ksmethod_streamio.md) | . |
 | [KSOBJECTTYPE enumeration](..\ks\ne-ks-ksobjecttype.md) | The KSOBJECTTYPE enumeration lists different types of kernel streaming objects. |
 | [KSPEEKOPERATION enumeration](..\ksproxy\ne-ksproxy-kspeekoperation.md) | . |
-| [KSPIN_FLAG_AVC enumeration](..\avc\ne-avc--kspin-flag-avc.md) | The KSPIN_FLAG_AVC enumeration type is used for connection management and in the AVC_FUNCTION_GET_CONNECTINFO function code. |
-| [KSPIN_MDL_CACHING_EVENT enumeration](..\ks\ne-ks-kspin-mdl-caching-event.md) | This enumeration is used internally by the operating system. |
-| [KSPPROPERTY_ALLOCATOR_MDLCACHING enumeration](..\ks\ne-ks-kspproperty-allocator-mdlcaching.md) | This enumeration is used internally by the operating system. |
-| [KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY enumeration](..\ksmedia\ne-ksmedia-ksproperty-cameracontrol-extended-property.md) | This enumeration contains extended camera controls. |
-| [KSPROPERTY_CAMERACONTROL_FLASH enumeration](..\ksmedia\ne-ksmedia-ksproperty-cameracontrol-flash.md) | Used to specify camera flash control. |
-| [KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY enumeration](..\ksmedia\ne-ksmedia-ksproperty-cameracontrol-image-pin-capability.md) | Used to identify whether the camera's image pin and record pin are mutually exclusive. If they are mutually exclusive, then when the record pin is active, the image pin cannot be active, and vice-versa. |
-| [KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY enumeration](..\ksmedia\ne-ksmedia-ksproperty-cameracontrol-perframesetting-property.md) | This enumeration contains the property IDs defined for the per-frame property set. |
-| [KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST enumeration](..\ksmedia\ne-ksmedia-ksproperty-cameracontrol-region-of-interest.md) | Used to specify a camera region of interest. |
-| [KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE enumeration](..\ksmedia\ne-ksmedia-ksproperty-cameracontrol-video-stabilization-mode.md) | Used to specify camera video stabilization. |
-| [KSPROPERTY_CLOCK enumeration](..\ks\ne-ks-ksproperty-clock.md) | . |
-| [KSPROPERTY_CONNECTION enumeration](..\ks\ne-ks-ksproperty-connection.md) | . |
-| [KSPROPERTY_GENERAL enumeration](..\ks\ne-ks-ksproperty-general.md) | . |
-| [KSPROPERTY_GM enumeration](..\ks\ne-ks-ksproperty-gm.md) | . |
-| [KSPROPERTY_MEDIASEEKING enumeration](..\ks\ne-ks-ksproperty-mediaseeking.md) | . |
-| [KSPROPERTY_PIN enumeration](..\ks\ne-ks-ksproperty-pin.md) | . |
-| [KSPROPERTY_QUALITY enumeration](..\ks\ne-ks-ksproperty-quality.md) | . |
-| [KSPROPERTY_SERVICE enumeration](..\ksi\ne-ksi-ksproperty-service.md) | . |
-| [KSPROPERTY_STREAM enumeration](..\ks\ne-ks-ksproperty-stream.md) | . |
-| [KSPROPERTY_STREAMALLOCATOR enumeration](..\ks\ne-ks-ksproperty-streamallocator.md) | . |
-| [KSPROPERTY_STREAMINTERFACE enumeration](..\ks\ne-ks-ksproperty-streaminterface.md) | . |
-| [KSPROPERTY_TOPOLOGY enumeration](..\ks\ne-ks-ksproperty-topology.md) | . |
+| [KSPIN_MDL_CACHING_EVENT enumeration](..\ks\ne-ks-kspin_mdl_caching_event.md) | This enumeration is used internally by the operating system. |
+| [KSPPROPERTY_ALLOCATOR_MDLCACHING enumeration](..\ks\ne-ks-kspproperty_allocator_mdlcaching.md) | This enumeration is used internally by the operating system. |
+| [KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY enumeration](..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_extended_property.md) | This enumeration contains extended camera controls. |
+| [KSPROPERTY_CAMERACONTROL_FLASH enumeration](..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_flash.md) | Used to specify camera flash control. |
+| [KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY enumeration](..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_image_pin_capability.md) | Used to identify whether the camera's image pin and record pin are mutually exclusive. If they are mutually exclusive, then when the record pin is active, the image pin cannot be active, and vice-versa. |
+| [KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY enumeration](..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_perframesetting_property.md) | This enumeration contains the property IDs defined for the per-frame property set. |
+| [KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST enumeration](..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_region_of_interest.md) | Used to specify a camera region of interest. |
+| [KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE enumeration](..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_video_stabilization_mode.md) | Used to specify camera video stabilization. |
+| [KSPROPERTY_CLOCK enumeration](..\ks\ne-ks-ksproperty_clock.md) | . |
+| [KSPROPERTY_CONNECTION enumeration](..\ks\ne-ks-ksproperty_connection.md) | . |
+| [KSPROPERTY_GENERAL enumeration](..\ks\ne-ks-ksproperty_general.md) | . |
+| [KSPROPERTY_GM enumeration](..\ks\ne-ks-ksproperty_gm.md) | . |
+| [KSPROPERTY_MEDIASEEKING enumeration](..\ks\ne-ks-ksproperty_mediaseeking.md) | . |
+| [KSPROPERTY_PIN enumeration](..\ks\ne-ks-ksproperty_pin.md) | . |
+| [KSPROPERTY_QUALITY enumeration](..\ks\ne-ks-ksproperty_quality.md) | . |
+| [KSPROPERTY_SERVICE enumeration](..\ksi\ne-ksi-ksproperty_service.md) | . |
+| [KSPROPERTY_STREAM enumeration](..\ks\ne-ks-ksproperty_stream.md) | . |
+| [KSPROPERTY_STREAMALLOCATOR enumeration](..\ks\ne-ks-ksproperty_streamallocator.md) | . |
+| [KSPROPERTY_STREAMINTERFACE enumeration](..\ks\ne-ks-ksproperty_streaminterface.md) | . |
+| [KSPROPERTY_TOPOLOGY enumeration](..\ks\ne-ks-ksproperty_topology.md) | . |
 | [KSRESET enumeration](..\ks\ne-ks-ksreset.md) | . |
-| [KSSTACK_USE enumeration](..\ks\ne-ks-ksstack-use.md) | . |
-| [KSSTREAM_POINTER_STATE enumeration](..\ks\ne-ks-ksstream-pointer-state.md) | . |
-| [KSTARGET_STATE enumeration](..\ks\ne-ks-kstarget-state.md) | . |
-| [KS_AMPixAspectRatio enumeration](..\ksmedia\ne-ksmedia-ks-ampixaspectratio.md) | The KS_AMPixAspectRatio enumeration defines the pixel aspect ratio that corresponds to a 720 480 NTSC video signal or a 720 × 576 PAL video signal. |
-| [KS_AMVP_MODE enumeration](..\ksmedia\ne-ksmedia-ks-amvp-mode.md) | The KS_AMVP_MODE enumeration defines video port display modes. |
-| [KS_AMVP_SELECTFORMATBY enumeration](..\ksmedia\ne-ksmedia-ks-amvp-selectformatby.md) | The KS_AMVP_SELECTFORMATBY enumeration specifies the criteria that the Overlay Mixer Filter should use to select the video format. |
-| [KS_AnalogVideoStandard enumeration](..\ksmedia\ne-ksmedia-ks-analogvideostandard.md) | The KS_AnalogVideoStandard enumeration defines various analog video standards that are used worldwide. |
-| [KS_CameraControlAsyncOperation enumeration](..\ksmedia\ne-ksmedia-ks-cameracontrolasyncoperation.md) | Defines notifications that the driver uses to start and stop an asynchronous camera operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization. |
-| [KS_CompressionCaps enumeration](..\ksmedia\ne-ksmedia-ks-compressioncaps.md) | The KS_CompressionCaps enumeration defines compression capabilities of a device. |
-| [KS_DVDCOPYSTATE enumeration](..\ksmedia\ne-ksmedia-ks-dvdcopystate.md) | The KS_DVDCOPYSTATE enumeration describes the progress of the DVD copyright protection initialization, authentication and key negotiation sequence. |
-| [KS_LogicalMemoryType enumeration](..\ksproxy\ne-ksproxy-ks-logicalmemorytype.md) | . |
-| [KS_MPEG2Level enumeration](..\ksmedia\ne-ksmedia-ks-mpeg2level.md) | The KS_MPEG2Level enumeration describes MPEG-2 levels. |
-| [KS_MPEG2Profile enumeration](..\ksmedia\ne-ksmedia-ks-mpeg2profile.md) | The KS_MPEG2Profile enumeration describes MPEG-2 profiles. |
-| [KS_SEEKING_CAPABILITIES enumeration](..\ks\ne-ks-ks-seeking-capabilities.md) | . |
-| [KS_SEEKING_FLAGS enumeration](..\ks\ne-ks-ks-seeking-flags.md) | The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the KSPROPERTY_POSITIONS structure. |
-| [KS_TUNER_STRATEGY enumeration](..\ksmedia\ne-ksmedia-ks-tuner-strategy.md) | The KS_TUNER_STRATEGY enumeration defines tuning method strategies. |
-| [KS_TUNER_TUNING_FLAGS enumeration](..\ksmedia\ne-ksmedia-ks-tuner-tuning-flags.md) | The KS_TUNER_TUNING_FLAGS enumeration defines tuning flags that describe the granularity of a tuning operation. |
-| [KS_VIDEODECODER_FLAGS enumeration](..\ksmedia\ne-ksmedia-ks-videodecoder-flags.md) | The KS_VIDEODECODER_FLAGS enumeration defines video decoder capabilities. |
-| [KS_VideoControlFlags enumeration](..\ksmedia\ne-ksmedia-ks-videocontrolflags.md) | The KS_VideoControlFlags enumeration defines video control capabilities for a specific stream. |
-| [KS_VideoStreamingHints enumeration](..\ksmedia\ne-ksmedia-ks-videostreaminghints.md) | The KS_VideoStreamingHints enumeration defines video compression hints. |
-| [LAMP_MODE enumeration](..\lamp\ne-lamp-lamp-mode.md) | This enumeration contains the operating modes of a lamp device. |
-| [MF_MEDIASOURCE_STATUS_INFO enumeration](..\mfidl\ne-mfidl-mf-mediasource-status-info.md) | . |
-| [MF_TRANSFER_VIDEO_FRAME_FLAGS enumeration](..\mfidl\ne-mfidl-mf-transfer-video-frame-flags.md) | . |
-| [PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration](..\ksmedia\ne-ksmedia-pcapture-memory-allocation-flags.md) | The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data. |
-| [PIPE_ALLOCATOR_PLACE enumeration](..\ksproxy\ne-ksproxy-pipe-allocator-place.md) | . |
-| [PIPE_STATE enumeration](..\ksproxy\ne-ksproxy-pipe-state.md) | . |
-| [PKSPIN_COMMUNICATION enumeration](..\ks\ne-ks-pkspin-communication.md) | . |
-| [PKSPIN_DATAFLOW enumeration](..\ks\ne-ks-pkspin-dataflow.md) | An instance of the KSPIN_DATAFLOW enumeration is returned by KSPROPERTY_PIN_DATAFLOW. |
+| [KSSTACK_USE enumeration](..\ks\ne-ks-ksstack_use.md) | . |
+| [KSSTREAM_POINTER_STATE enumeration](..\ks\ne-ks-ksstream_pointer_state.md) | . |
+| [KSTARGET_STATE enumeration](..\ks\ne-ks-kstarget_state.md) | . |
+| [KS_AMPixAspectRatio enumeration](..\ksmedia\ne-ksmedia-ks_ampixaspectratio.md) | The KS_AMPixAspectRatio enumeration defines the pixel aspect ratio that corresponds to a 720 480 NTSC video signal or a 720 × 576 PAL video signal. |
+| [KS_AMVP_MODE enumeration](..\ksmedia\ne-ksmedia-ks_amvp_mode.md) | The KS_AMVP_MODE enumeration defines video port display modes. |
+| [KS_AMVP_SELECTFORMATBY enumeration](..\ksmedia\ne-ksmedia-ks_amvp_selectformatby.md) | The KS_AMVP_SELECTFORMATBY enumeration specifies the criteria that the Overlay Mixer Filter should use to select the video format. |
+| [KS_AnalogVideoStandard enumeration](..\ksmedia\ne-ksmedia-ks_analogvideostandard.md) | The KS_AnalogVideoStandard enumeration defines various analog video standards that are used worldwide. |
+| [KS_CameraControlAsyncOperation enumeration](..\ksmedia\ne-ksmedia-ks_cameracontrolasyncoperation.md) | Defines notifications that the driver uses to start and stop an asynchronous camera operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization. |
+| [KS_CompressionCaps enumeration](..\ksmedia\ne-ksmedia-ks_compressioncaps.md) | The KS_CompressionCaps enumeration defines compression capabilities of a device. |
+| [KS_DVDCOPYSTATE enumeration](..\ksmedia\ne-ksmedia-ks_dvdcopystate.md) | The KS_DVDCOPYSTATE enumeration describes the progress of the DVD copyright protection initialization, authentication and key negotiation sequence. |
+| [KS_LogicalMemoryType enumeration](..\ksproxy\ne-ksproxy-ks_logicalmemorytype.md) | . |
+| [KS_MPEG2Level enumeration](..\ksmedia\ne-ksmedia-ks_mpeg2level.md) | The KS_MPEG2Level enumeration describes MPEG-2 levels. |
+| [KS_MPEG2Profile enumeration](..\ksmedia\ne-ksmedia-ks_mpeg2profile.md) | The KS_MPEG2Profile enumeration describes MPEG-2 profiles. |
+| [KS_SEEKING_CAPABILITIES enumeration](..\ks\ne-ks-ks_seeking_capabilities.md) | . |
+| [KS_SEEKING_FLAGS enumeration](..\ks\ne-ks-ks_seeking_flags.md) | The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the KSPROPERTY_POSITIONS structure. |
+| [KS_TUNER_STRATEGY enumeration](..\ksmedia\ne-ksmedia-ks_tuner_strategy.md) | The KS_TUNER_STRATEGY enumeration defines tuning method strategies. |
+| [KS_TUNER_TUNING_FLAGS enumeration](..\ksmedia\ne-ksmedia-ks_tuner_tuning_flags.md) | The KS_TUNER_TUNING_FLAGS enumeration defines tuning flags that describe the granularity of a tuning operation. |
+| [KS_VIDEODECODER_FLAGS enumeration](..\ksmedia\ne-ksmedia-ks_videodecoder_flags.md) | The KS_VIDEODECODER_FLAGS enumeration defines video decoder capabilities. |
+| [KS_VideoControlFlags enumeration](..\ksmedia\ne-ksmedia-ks_videocontrolflags.md) | The KS_VideoControlFlags enumeration defines video control capabilities for a specific stream. |
+| [KS_VideoStreamingHints enumeration](..\ksmedia\ne-ksmedia-ks_videostreaminghints.md) | The KS_VideoStreamingHints enumeration defines video compression hints. |
+| [LAMP_MODE enumeration](..\lamp\ne-lamp-lamp_mode.md) | This enumeration contains the operating modes of a lamp device. |
+| [MF_MEDIASOURCE_STATUS_INFO enumeration](..\mfidl\ne-mfidl-mf_mediasource_status_info.md) | . |
+| [MF_TRANSFER_VIDEO_FRAME_FLAGS enumeration](..\mfidl\ne-mfidl-mf_transfer_video_frame_flags.md) | . |
+| [PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration](..\ksmedia\ne-ksmedia-pcapture_memory_allocation_flags.md) | The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data. |
+| [PIPE_ALLOCATOR_PLACE enumeration](..\ksproxy\ne-ksproxy-pipe_allocator_place.md) | . |
+| [PIPE_STATE enumeration](..\ksproxy\ne-ksproxy-pipe_state.md) | . |
+| [PKSPIN_COMMUNICATION enumeration](..\ks\ne-ks-pkspin_communication.md) | . |
+| [PKSPIN_DATAFLOW enumeration](..\ks\ne-ks-pkspin_dataflow.md) | An instance of the KSPIN_DATAFLOW enumeration is returned by KSPROPERTY_PIN_DATAFLOW. |
 | [PKSSTATE enumeration](..\ks\ne-ks-pksstate.md) | The KSSTATE enumeration lists possible states of a kernel streaming object. |
-| [SRB_COMMAND enumeration](..\strmini\ne-strmini--srb-command.md) | . |
-| [STREAM_BUFFER_TYPE enumeration](..\strmini\ne-strmini-stream-buffer-type.md) | This enumeration defines the buffer types for StreamClassGetPhysicalAddress. |
-| [STREAM_DEBUG_LEVEL enumeration](..\strmini\ne-strmini-stream-debug-level.md) | The STREAM_DEBUG_LEVEL enumeration lists incrementally increasing levels of debugger output. |
-| [STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE enumeration](..\strmini\ne-strmini--stream-minidriver-device-notification-type.md) | . |
-| [STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration](..\strmini\ne-strmini--stream-minidriver-stream-notification-type.md) | . |
-| [STREAM_PRIORITY enumeration](..\strmini\ne-strmini--stream-priority.md) | TD. |
-| [TIME_FUNCTION enumeration](..\strmini\ne-strmini-time-function.md) | . |
+| [STREAM_BUFFER_TYPE enumeration](..\strmini\ne-strmini-stream_buffer_type.md) | This enumeration defines the buffer types for StreamClassGetPhysicalAddress. |
+| [STREAM_DEBUG_LEVEL enumeration](..\strmini\ne-strmini-stream_debug_level.md) | The STREAM_DEBUG_LEVEL enumeration lists incrementally increasing levels of debugger output. |
+| [TIME_FUNCTION enumeration](..\strmini\ne-strmini-time_function.md) | . |
 | [VARENUM enumeration](..\ks\ne-ks-varenum.md) | . |
-| [VIDEOENCODER_BITRATE_MODE enumeration](..\ksmedia\ne-ksmedia-videoencoder-bitrate-mode.md) | The VIDEOENCODER_BITRATE_MODE enumeration describes the bit rate encoding modes supported by the device. |
+| [VIDEOENCODER_BITRATE_MODE enumeration](..\ksmedia\ne-ksmedia-videoencoder_bitrate_mode.md) | The VIDEOENCODER_BITRATE_MODE enumeration describes the bit rate encoding modes supported by the device. |
+| [_AVCSTRM_FORMAT enumeration](..\avcstrm\ne-avcstrm-_avcstrm_format.md) | The AVCSTRM_FUNCTION enumeration defines the AV/C subunit stream formats supported by avcstrm.sys. |
+| [_AVCSTRM_FUNCTION enumeration](..\avcstrm\ne-avcstrm-_avcstrm_function.md) | The AVCSTRM_FUNCTION enumeration defines the functionality exposed by the avcstrm.sys driver. |
+| [_BdaLockType enumeration](..\bdamedia\ne-bdamedia-_bdalocktype.md) | The BDA_LockType enumerated type contains values that specify lock types for a signal. |
+| [_KSPIN_FLAG_AVC enumeration](..\avc\ne-avc-_kspin_flag_avc.md) | The KSPIN_FLAG_AVC enumeration type is used for connection management and in the AVC_FUNCTION_GET_CONNECTINFO function code. |
+| [_SRB_COMMAND enumeration](..\strmini\ne-strmini-_srb_command.md) | . |
+| [_STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE enumeration](..\strmini\ne-strmini-_stream_minidriver_device_notification_type.md) | . |
+| [_STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration](..\strmini\ne-strmini-_stream_minidriver_stream_notification_type.md) | . |
+| [_STREAM_PRIORITY enumeration](..\strmini\ne-strmini-_stream_priority.md) | TD. |
+| [_tagAVC_FUNCTION enumeration](..\avc\ne-avc-_tagavc_function.md) | The AVC_FUNCTION enumeration type is used to specify AV/C subunit functions. |
+| [_tagAvcCommandType enumeration](..\avc\ne-avc-_tagavccommandtype.md) | The AvcCommandType enumeration type is used to indicate the type of command issued by a subunit driver to its AV/C subunit through AVC_FUNCTION_COMMAND or AVC_FUNCTION_GET_REQUEST function codes. |
+| [_tagAvcResponseCode enumeration](..\avc\ne-avc-_tagavcresponsecode.md) | The AvcResponseCode enumeration type is used to indicate the type of response received by a subunit driver from its AV/C subunit through AVC_FUNCTION_COMMAND or AVC_FUNCTION_SEND_RESPONSE function codes. |
+| [_tagAvcSubunitType enumeration](..\avc\ne-avc-_tagavcsubunittype.md) | The AvcSubunitType enumeration type is used to indicate the type of AV/C subunit. |
 
 ## I/O control codes
 
 | Title   | Description   |
 | ---- |:---- |
-| [IOCTL_AVC_BUS_RESET IOCTL](..\avc\ni-avc-ioctl-avc-bus-reset.md) | The IOCTL_AVC_BUS_RESET I/O control code allows the caller to complete any previous IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO and IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control requests that did not use the AVC_SUBUNIT_ADDR_TRIGGERBUSRESET flag. |
-| [IOCTL_AVC_CLASS IOCTL](..\avc\ni-avc-ioctl-avc-class.md) | The IOCTL_AVC_CLASS I/O control code is supported only from kernel mode, using the IRP_MJ_INTERNAL_DEVICE_CONTROL dispatch.Avc.sys supports two device interfaces, depending upon the type of instance (peer or virtual). |
-| [IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO IOCTL](..\avc\ni-avc-ioctl-avc-remove-virtual-subunit-info.md) | The IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits. |
-| [IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO IOCTL](..\avc\ni-avc-ioctl-avc-update-virtual-subunit-info.md) | The IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits. |
-| [IOCTL_SWENUM_GET_BUS_ID IOCTL](..\swenum\ni-swenum-ioctl-swenum-get-bus-id.md) | TBD |
-| [IOCTL_SWENUM_INSTALL_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl-swenum-install-interface.md) | TBD |
-| [IOCTL_SWENUM_REMOVE_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl-swenum-remove-interface.md) | TBD |
+| [IOCTL_AVCSTRM_CLASS IOCTL](..\avcstrm\ni-avcstrm-ioctl_avcstrm_class.md) | An AV/C subunit driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP, with the IoControlCode member set to IOCTL_AVCSTRM_CLASS, to communicate with avcstrm.sys. |
+| [IOCTL_AVC_BUS_RESET IOCTL](..\avc\ni-avc-ioctl_avc_bus_reset.md) | The IOCTL_AVC_BUS_RESET I/O control code allows the caller to complete any previous IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO and IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control requests that did not use the AVC_SUBUNIT_ADDR_TRIGGERBUSRESET flag. |
+| [IOCTL_AVC_CLASS IOCTL](..\avc\ni-avc-ioctl_avc_class.md) | The IOCTL_AVC_CLASS I/O control code is supported only from kernel mode, using the IRP_MJ_INTERNAL_DEVICE_CONTROL dispatch.Avc.sys supports two device interfaces, depending upon the type of instance (peer or virtual). |
+| [IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO IOCTL](..\avc\ni-avc-ioctl_avc_remove_virtual_subunit_info.md) | The IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits. |
+| [IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO IOCTL](..\avc\ni-avc-ioctl_avc_update_virtual_subunit_info.md) | The IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits. |
+| [IOCTL_KS_DISABLE_EVENT IOCTL](..\ks\ni-ks-ioctl_ks_disable_event.md) | An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the IoControl parameter of a call to KsSynchronousDeviceControl. |
+| [IOCTL_KS_ENABLE_EVENT IOCTL](..\ks\ni-ks-ioctl_ks_enable_event.md) | An application can use IOCTL_KS_ENABLE_EVENT to request notification of a KS event type, or to determine the events supported by a KS object. |
+| [IOCTL_KS_HANDSHAKE IOCTL](..\ks\ni-ks-ioctl_ks_handshake.md) | A kernel-mode client can use IOCTL_KS_HANDSHAKE to negotiate an interface between unconnected AVStream pins. |
+| [IOCTL_KS_METHOD IOCTL](..\ks\ni-ks-ioctl_ks_method.md) | An application can use IOCTL_KS_METHOD to execute a method on a KS object. The application passes IOCTL_KS_METHOD with the parameters described below to the KsSynchronousDeviceControl function. |
+| [IOCTL_KS_PROPERTY IOCTL](..\ks\ni-ks-ioctl_ks_property.md) | An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the KsSynchronousDeviceControl function. |
+| [IOCTL_KS_READ_STREAM IOCTL](..\ks\ni-ks-ioctl_ks_read_stream.md) | An application can use IOCTL_KS_READ_STREAM to read data from a pin. The application passes IOCTL_KS_READ_STREAM with the parameters described below to the KsSynchronousDeviceControl function. |
+| [IOCTL_KS_RESET_STATE IOCTL](..\ks\ni-ks-ioctl_ks_reset_state.md) | An application can use IOCTL_KS_RESET_STATE to return a pin to the state it was in at Acquire-time. The application passes IOCTL_KS_RESET_STATE with the parameters described below to the KsSynchronousDeviceControl function. |
+| [IOCTL_KS_WRITE_STREAM IOCTL](..\ks\ni-ks-ioctl_ks_write_stream.md) | An application can use IOCTL_KS_WRITE_STREAM to write data to a pin. The application passes IOCTL_KS_WRITE_STREAM with the parameters described below to the KsSynchronousDeviceControl function. |
+| [IOCTL_LAMP_GET_CAPABILITIES_COLOR IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_capabilities_color.md) | The IOCTL_LAMP_GET_CAPABILITIES_COLOR control code queries the capabilities of the lamp when the device is configured to emit color light. |
+| [IOCTL_LAMP_GET_CAPABILITIES_WHITE IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_capabilities_white.md) | The IOCTL_LAMP_GET_CAPABILITIES_WHITE control code queries the capabilities of the lamp when the device is configured to emit white light. |
+| [IOCTL_LAMP_GET_EMITTING_LIGHT IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_emitting_light.md) | The IOCTL_LAMP_GET_EMITTING_LIGHT control code queries if the lamp is turned on. |
+| [IOCTL_LAMP_GET_INTENSITY_COLOR IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_intensity_color.md) | The IOCTL_LAMP_GET_INTENSITY_COLOR control code queries the light intensity when the lamp is configured to emit color light. |
+| [IOCTL_LAMP_GET_MODE IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_mode.md) | The IOCTL_LAMP_GET_MODE control code queries the mode with which the lamp is currently configured. |
+| [IOCTL_LAMP_SET_EMITTING_LIGHT IOCTL](..\lamp\ni-lamp-ioctl_lamp_set_emitting_light.md) | The IOCTL_LAMP_SET_EMITTING_LIGHT control code turns the lamp on or off. |
+| [IOCTL_LAMP_SET_INTENSITY_COLOR IOCTL](..\lamp\ni-lamp-ioctl_lamp_set_intensity_color.md) | The IOCTL_LAMP_SET_INTENSITY_COLOR control code sets the lamp to the specified light intensity. |
+| [IOCTL_LAMP_SET_INTENSITY_WHITE IOCTL](..\lamp\ni-lamp-ioctl_lamp_set_intensity_white.md) | The IOCTL_LAMP_SET_INTENSITY_WHITE control code sets the lamp to the specified light intensity. |
+| [IOCTL_LAMP_SET_MODE IOCTL](..\lamp\ni-lamp-ioctl_lamp_set_mode.md) | The IOCTL_LAMP_SET_MODE control code sets the mode in which the lamp operates. |
+| [IOCTL_SWENUM_GET_BUS_ID IOCTL](..\swenum\ni-swenum-ioctl_swenum_get_bus_id.md) | TBD |
+| [IOCTL_SWENUM_INSTALL_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl_swenum_install_interface.md) | TBD |
+| [IOCTL_SWENUM_REMOVE_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl_swenum_remove_interface.md) | TBD |
 
 ## Interfaces
 
@@ -1020,3 +993,12 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [IKsQualityForwarder interface](..\ksproxy\nn-ksproxy-iksqualityforwarder.md) | The IKsQualityForwarder interface inherits the method of the IKsObject interface and extends IKsObject to provide a method that flushes information from a pin. |
 | [IKsReferenceClock interface](..\ks\nn-ks-iksreferenceclock.md) | The IKsReferenceClock interface is a COM-style interface that is provided by AVStream on all pins. The pin passes the request onto the master clock. |
 | [IKsTopology interface](..\ksproxy\nn-ksproxy-ikstopology.md) | The IKsTopology interface provides a method that opens topology node objects contained within a filter. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [INIT_AVCSTRM_HEADER macro](..\avcstrm\nf-avcstrm-init_avcstrm_header.md) | The INIT_AVCSTRM_HEADER macro initializes the SizeOfThisBlock, Version and Function members of the AVC_STREAM_REQUEST_BLOCK structure. |
+| [KSMETHOD_ITEM_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_item_irp_storage.md) | This macro accesses a pointer to the relevant KSMETHOD_ITEM. Note that this pointer is only set when using KsMethodHandlerWithAllocator. |
+| [KSMETHOD_SET_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_set_irp_storage.md) | This macro returns a pointer to the KSMETHOD_SET in which the method is located. |
+| [KSMETHOD_TYPE_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_type_irp_storage.md) | This macro accesses the type of method as described in the KSMETHOD_ITEM. If the method will be processed asynchronously using KsDispatchSpecificMethod, this storage must be maintained intact. |

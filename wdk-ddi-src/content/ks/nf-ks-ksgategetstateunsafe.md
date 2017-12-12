@@ -41,6 +41,7 @@ req.irql: Any level
 The<b> KsGateGetStateUnsafe</b> function returns the state of the given gate (open or closed)  in an unsafe manner, that is <i>without regard to synchronization</i>.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ BOOLEAN __inline KsGateGetStateUnsafe(
 
 A pointer to a <a href="stream.ksgate">KSGATE</a> structure representing the gate for which to return the state.
 
+
 ## -returns
 This call returns <b>TRUE</b> if the gate is open and <b>FALSE</b> if the gate is closed.
+
 
 ## -remarks
 Because <b>KsGateGetStateUnsafe</b> does not handle synchronization, it is possible to get a result that is not consistent with the state of the gate if the gate is in mid-transition from one state to another at the time of the call.
@@ -66,11 +69,13 @@ Consider a situation in which the output of gate A is connected as an input to g
 
 <b>KsGateGetStateUnsafe</b> returns whether <i>Gate-&gt;Count</i> is greater than zero. The function does not use any interlocked functions to do this. Thus, the call is performed without regard to synchronization.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,14 +86,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,9 +107,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>

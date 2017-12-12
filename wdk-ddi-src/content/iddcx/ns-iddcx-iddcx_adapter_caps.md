@@ -7,7 +7,7 @@ old-location: display\iddcx_adapter_caps.htm
 old-project: display
 ms.assetid: 3a8610e4-22d5-4732-b4be-846449acb5b1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_ADAPTER_CAPS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Gives information about the capabilities of the adapter.
              
 
 
+
 ## -syntax
 
 ````
@@ -64,10 +65,12 @@ typedef struct IDDCX_ADAPTER_CAPS {
                      Total size of the structure
                  
 
+
 ### -field Flags
 
 
                      Adapter flags utilized by the driver.
+
 
 ### -field MaxDisplayPipelineRate
 
@@ -76,20 +79,24 @@ typedef struct IDDCX_ADAPTER_CAPS {
                  
                  
 
+
 ### -field MaxMonitorsSupported
 
 
                      Indicates the maximum number of monitors that can be connected at the same time.
 
+
 ### -field EndPointDiagnostics
 
 Endpoint diagnostics information. None of this is used for runtime OS decision, but it is used for telemetry.
+
 
 ### -field StaticDesktopReencodeFrameCount
 
 
                      The number of frames to request after the desktop goes idle if the driver's encoder requires multiple frames to continue improving quality.
                  
+
 
 ## -remarks
 
@@ -99,6 +106,7 @@ Endpoint diagnostics information. None of this is used for runtime OS decision, 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_devicepresent_queue_state.htm
 old-project: display
 ms.assetid: 0DB9F0ED-D0A9-4A8A-8E27-BC50DEDB0BD5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_DEVICEPRESENT_QUEUE_STATE, D3DKMT_DEVICEPRESENT_QUEUE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that holds information on the queue state of a hardware device.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_DEVICEPRESENT_QUEUE_STATE {
 
 Indicates the present source id.
 
+
 ### -field bQueuedPresentLimitReached
 
 Indicates whether the queued present limit has been reached.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates whether the queued present limit has been reached.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: debugger\readphysical.htm
 old-project: debugger
 ms.assetid: 02ca3358-7740-4eda-ab7c-f4b8a88389c2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: ReadPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ReadPhysical</b> function reads from physical memory.
 
 
+
 ## -syntax
 
 ````
@@ -60,23 +61,29 @@ __inline VOID ReadPhysical(
 
 Specifies the physical address to read.
 
+
 ### -param buf 
 
 Specifies the address of an array of bytes to hold the data that is read.
+
 
 ### -param size 
 
 Specifies the number of bytes to read. 
 
+
 ### -param sizer 
 
 Receives the number of bytes actually read.
 
+
 ## -returns
 None
 
+
 ## -remarks
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
+
 
 
 ## -requirements
@@ -84,6 +91,7 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +102,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

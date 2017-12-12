@@ -7,8 +7,8 @@ old-location: netvista\wsk_tdi_map.htm
 old-project: netvista
 ms.assetid: 4c1407e9-2e4d-41cc-8d50-017c8c2bf20f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WSK_TDI_MAP, WSK_TDI_MAP, *PWSK_TDI_MAP
+ms.date: 12/8/2017
+ms.keywords: _WSK_TDI_MAP, *PWSK_TDI_MAP, WSK_TDI_MAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -44,6 +44,7 @@ The WSK_TDI_MAP structure specifies a mapping between a particular address famil
   <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transport.
 
 
+
 ## -syntax
 
 ````
@@ -63,14 +64,17 @@ typedef struct _WSK_TDI_MAP {
 The socket type. This member can contain any of the SOCK_<i>XXX</i> values that are defined in the 
      Ws2def.h header file.
 
+
 ### -field AddressFamily
 
 The address family. This member can contain any of the AF_<i>XXX</i> values that are defined in the 
      Ws2def.h header file.
 
+
 ### -field Protocol
 
 The transport protocol.
+
 
 ### -field TdiDeviceName
 
@@ -80,6 +84,7 @@ A pointer to a null-terminated wide character string that contains the device na
      <b>AddressFamily</b>, 
      <b>SocketType</b>, and 
      <b>Protocol</b> members.
+
 
 ## -remarks
 The 
@@ -92,20 +97,24 @@ The
 For more information about using TDI transports, see 
     <a href="netvista.using_tdi_transports">Using TDI Transports</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +131,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_TDI_MAP structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_TDI_MAP structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

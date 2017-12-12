@@ -7,7 +7,7 @@ old-location: kernel\read_register_buffer_ushort.htm
 old-project: kernel
 ms.assetid: 30c3fc44-e94a-47ca-a25b-33857b485817
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: READ_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>READ_REGISTER_BUFFER_USHORT</b> routine reads a number of USHORT values from the specified register address into a buffer. 
 
 
+
 ## -syntax
 
 ````
@@ -59,27 +60,33 @@ VOID READ_REGISTER_BUFFER_USHORT(
 
 Pointer to the register, which must be a mapped range in memory space.
 
+
 ### -param Buffer [out]
 
 Pointer to a buffer into which an array of USHORT values is read.
+
 
 ### -param Count [in]
 
 Specifies the number of USHORT values to be read into the buffer. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 The size of the buffer must be large enough to contain at least the specified number of USHORT values.
 
 Callers of <b>READ_REGISTER_BUFFER_USHORT</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Register</i> is resident, mapped device memory.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +97,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +118,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +129,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +140,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

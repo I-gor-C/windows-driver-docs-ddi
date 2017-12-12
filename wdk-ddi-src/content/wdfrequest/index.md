@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfrequest.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,13 +16,13 @@ Wdfrequest.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_REQUEST_COMPLETION_PARAMS_INIT function](nf-wdfrequest-wdf-request-completion-params-init.md) | The WDF_REQUEST_COMPLETION_PARAMS_INIT function initializes a WDF_REQUEST_COMPLETION_PARAMS structure. |
-| [WDF_REQUEST_FORWARD_OPTIONS_INIT function](nf-wdfrequest-wdf-request-forward-options-init.md) | The WDF_REQUEST_FORWARD_OPTIONS_INIT function initializes a WDF_REQUEST_FORWARD_OPTIONS structure. |
-| [WDF_REQUEST_PARAMETERS_INIT function](nf-wdfrequest-wdf-request-parameters-init.md) | The WDF_REQUEST_PARAMETERS_INIT function initializes a WDF_REQUEST_PARAMETERS structure. |
-| [WDF_REQUEST_REUSE_PARAMS_INIT function](nf-wdfrequest-wdf-request-reuse-params-init.md) | The WDF_REQUEST_REUSE_PARAMS_INIT function initializes a driver's WDF_REQUEST_REUSE_PARAMS structure. |
-| [WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function](nf-wdfrequest-wdf-request-reuse-params-set-new-irp.md) | The WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function sets a new IRP in a driver's WDF_REQUEST_REUSE_PARAMS structure. |
-| [WDF_REQUEST_SEND_OPTIONS_INIT function](nf-wdfrequest-wdf-request-send-options-init.md) | The WDF_REQUEST_SEND_OPTIONS_INIT function initializes a driver's WDF_REQUEST_SEND_OPTIONS structure. |
-| [WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT function](nf-wdfrequest-wdf-request-send-options-set-timeout.md) | The WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT function sets a time-out value in a driver's WDF_REQUEST_SEND_OPTIONS structure. |
+| [WDF_REQUEST_COMPLETION_PARAMS_INIT function](nf-wdfrequest-wdf_request_completion_params_init.md) | The WDF_REQUEST_COMPLETION_PARAMS_INIT function initializes a WDF_REQUEST_COMPLETION_PARAMS structure. |
+| [WDF_REQUEST_FORWARD_OPTIONS_INIT function](nf-wdfrequest-wdf_request_forward_options_init.md) | The WDF_REQUEST_FORWARD_OPTIONS_INIT function initializes a WDF_REQUEST_FORWARD_OPTIONS structure. |
+| [WDF_REQUEST_PARAMETERS_INIT function](nf-wdfrequest-wdf_request_parameters_init.md) | The WDF_REQUEST_PARAMETERS_INIT function initializes a WDF_REQUEST_PARAMETERS structure. |
+| [WDF_REQUEST_REUSE_PARAMS_INIT function](nf-wdfrequest-wdf_request_reuse_params_init.md) | The WDF_REQUEST_REUSE_PARAMS_INIT function initializes a driver's WDF_REQUEST_REUSE_PARAMS structure. |
+| [WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function](nf-wdfrequest-wdf_request_reuse_params_set_new_irp.md) | The WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function sets a new IRP in a driver's WDF_REQUEST_REUSE_PARAMS structure. |
+| [WDF_REQUEST_SEND_OPTIONS_INIT function](nf-wdfrequest-wdf_request_send_options_init.md) | The WDF_REQUEST_SEND_OPTIONS_INIT function initializes a driver's WDF_REQUEST_SEND_OPTIONS structure. |
+| [WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT function](nf-wdfrequest-wdf_request_send_options_set_timeout.md) | The WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT function sets a time-out value in a driver's WDF_REQUEST_SEND_OPTIONS structure. |
 | [WdfRequestAllocateTimer function](nf-wdfrequest-wdfrequestallocatetimer.md) | The WdfRequestAllocateTimer method allocates a timer for a specified I/O request. |
 | [WdfRequestCancelSentRequest function](nf-wdfrequest-wdfrequestcancelsentrequest.md) | The WdfRequestCancelSentRequest method attempts to cancel an I/O request that the caller previously submitted to an I/O target. |
 | [WdfRequestChangeTarget function](nf-wdfrequest-wdfrequestchangetarget.md) | The WdfRequestChangeTarget method verifies that a specified I/O request can be sent to a specified I/O target. |
@@ -73,26 +78,26 @@ Wdfrequest.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_REQUEST_CANCEL callback](nc-wdfrequest-evt-wdf-request-cancel.md) | A driver's EvtRequestCancel event callback function handles operations that must be performed when an I/O request is canceled. |
-| [EVT_WDF_REQUEST_COMPLETION_ROUTINE callback](nc-wdfrequest-evt-wdf-request-completion-routine.md) | A driver's CompletionRoutine event callback function executes when another driver completes a specified I/O request. |
-| [EVT_WDF_REQUEST_IMPERSONATE callback](nc-wdfrequest-evt-wdf-request-impersonate.md) | A driver's EvtRequestImpersonate event callback function performs tasks at the requested impersonation level, such as opening a protected file. |
+| [EVT_WDF_REQUEST_CANCEL callback](nc-wdfrequest-evt_wdf_request_cancel.md) | A driver's EvtRequestCancel event callback function handles operations that must be performed when an I/O request is canceled. |
+| [EVT_WDF_REQUEST_COMPLETION_ROUTINE callback](nc-wdfrequest-evt_wdf_request_completion_routine.md) | A driver's CompletionRoutine event callback function executes when another driver completes a specified I/O request. |
+| [EVT_WDF_REQUEST_IMPERSONATE callback](nc-wdfrequest-evt_wdf_request_impersonate.md) | A driver's EvtRequestImpersonate event callback function performs tasks at the requested impersonation level, such as opening a protected file. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_REQUEST_COMPLETION_PARAMS structure](ns-wdfrequest--wdf-request-completion-params.md) | The WDF_REQUEST_COMPLETION_PARAMS structure contains parameters that are associated with the completion of an I/O request. |
-| [WDF_REQUEST_FORWARD_OPTIONS structure](ns-wdfrequest--wdf-request-forward-options.md) | The WDF_REQUEST_FORWARD_OPTIONS structure contains options for requeuing an I/O request from a child device's I/O queue to the parent device's I/O queue. |
-| [WDF_REQUEST_PARAMETERS structure](ns-wdfrequest--wdf-request-parameters.md) | The WDF_REQUEST_PARAMETERS structure receives parameters that are associated with an I/O request. |
-| [WDF_REQUEST_REUSE_PARAMS structure](ns-wdfrequest--wdf-request-reuse-params.md) | The WDF_REQUEST_REUSE_PARAMS structure specifies information that is associated with a reused I/O request. |
-| [WDF_REQUEST_SEND_OPTIONS structure](ns-wdfrequest--wdf-request-send-options.md) | The WDF_REQUEST_SEND_OPTIONS structure specifies options that are associated with sending an I/O request to an I/O target. |
+| [_WDF_REQUEST_COMPLETION_PARAMS structure](ns-wdfrequest-_wdf_request_completion_params.md) | The WDF_REQUEST_COMPLETION_PARAMS structure contains parameters that are associated with the completion of an I/O request. |
+| [_WDF_REQUEST_FORWARD_OPTIONS structure](ns-wdfrequest-_wdf_request_forward_options.md) | The WDF_REQUEST_FORWARD_OPTIONS structure contains options for requeuing an I/O request from a child device's I/O queue to the parent device's I/O queue. |
+| [_WDF_REQUEST_PARAMETERS structure](ns-wdfrequest-_wdf_request_parameters.md) | The WDF_REQUEST_PARAMETERS structure receives parameters that are associated with an I/O request. |
+| [_WDF_REQUEST_REUSE_PARAMS structure](ns-wdfrequest-_wdf_request_reuse_params.md) | The WDF_REQUEST_REUSE_PARAMS structure specifies information that is associated with a reused I/O request. |
+| [_WDF_REQUEST_SEND_OPTIONS structure](ns-wdfrequest-_wdf_request_send_options.md) | The WDF_REQUEST_SEND_OPTIONS structure specifies options that are associated with sending an I/O request to an I/O target. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration](ne-wdfrequest--wdf-request-forward-options-flags.md) | The WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_FORWARD_OPTIONS structure. |
-| [WDF_REQUEST_REUSE_FLAGS enumeration](ne-wdfrequest--wdf-request-reuse-flags.md) | The WDF_REQUEST_REUSE_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_REUSE_PARAMS structure. |
-| [WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration](ne-wdfrequest--wdf-request-send-options-flags.md) | The WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_SEND_OPTIONS structure. |
-| [WDF_REQUEST_STOP_ACTION_FLAGS enumeration](ne-wdfrequest--wdf-request-stop-action-flags.md) | The WDF_REQUEST_STOP_ACTION_FLAGS enumeration type defines flags that the framework passes to a driver's EvtIoStop callback function. |
-| [WDF_REQUEST_TYPE enumeration](ne-wdfrequest--wdf-request-type.md) | The WDF_REQUEST_TYPE enumeration type identifies types of requests that a framework request object might contain. |
+| [_WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration](ne-wdfrequest-_wdf_request_forward_options_flags.md) | The WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_FORWARD_OPTIONS structure. |
+| [_WDF_REQUEST_REUSE_FLAGS enumeration](ne-wdfrequest-_wdf_request_reuse_flags.md) | The WDF_REQUEST_REUSE_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_REUSE_PARAMS structure. |
+| [_WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration](ne-wdfrequest-_wdf_request_send_options_flags.md) | The WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_SEND_OPTIONS structure. |
+| [_WDF_REQUEST_STOP_ACTION_FLAGS enumeration](ne-wdfrequest-_wdf_request_stop_action_flags.md) | The WDF_REQUEST_STOP_ACTION_FLAGS enumeration type defines flags that the framework passes to a driver's EvtIoStop callback function. |
+| [_WDF_REQUEST_TYPE enumeration](ne-wdfrequest-_wdf_request_type.md) | The WDF_REQUEST_TYPE enumeration type identifies types of requests that a framework request object might contain. |

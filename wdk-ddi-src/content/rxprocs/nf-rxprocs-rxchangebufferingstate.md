@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxChangeBufferingState</b> is called to process a buffering state change request.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ NTSTATUS RxChangeBufferingState(
 
 A pointer to the SRV_OPEN data structure to be changed.
 
+
 ### -param Context 
 
 A pointer to the context parameter for use by the network mini-redirector callback. 
+
 
 ### -param ComputeNewState 
 
 The value that indicates if the new buffering state is to be computed. When this value is set to <b>TRUE</b>, the new buffering state is determined by calling the network mini-redirector to compute the new buffering state. When this value is <b>FALSE</b>, the new buffering state is determined by the <i>BufferingFlags</i> member of the passed in <i>SrvOpen</i> structure.
 
+
 ## -returns
 <b>RxChangeBufferingState</b> always returns STATUS_SUCCESS whether this routine was successful or if an error occurs. If an error occurs, the buffering state is changed so that no buffering is enabled.
+
 
 ## -remarks
 If local buffering is disabled for this FCB (FCB_STATE_DISABLE_LOCAL_BUFFERING is set in the FcbState structure member of the FCB), this will disable local buffering independent of the open mode on the FCB and any default buffering options. When FCB_STATE_DISABLE_LOCAL_BUFFERING is set, the new buffering state set by <b>RxChangeBufferingState</b> will be to disable all buffering.
@@ -109,11 +114,13 @@ If the FCB_STATE_WRITECACHING_ENABLED buffering state is changed to off, any FCB
 
 On exit from <b>RxChangeBufferingState</b>, there is no change in resource ownership. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +131,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -134,9 +142,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -154,5 +164,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxChangeBufferingState function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

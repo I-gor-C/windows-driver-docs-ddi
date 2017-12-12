@@ -7,7 +7,7 @@ old-location: storage\mpio_devinstance_health_info.htm
 old-project: storage
 ms.assetid: 7f254389-58cf-43da-8611-a1598cc2eb66
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MPIO_DEVINSTANCE_HEALTH_INFO, *PMPIO_DEVINSTANCE_HEALTH_INFO, MPIO_DEVINSTANCE_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_DEVINSTANCE_HEALTH_INFO structure is used to query the available health information for every instance of a multi-path disk on each of the paths through which it is exposed.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _MPIO_DEVINSTANCE_HEALTH_INFO {
 
 An unsigned 32-bitfield that returns the number of health packets that are available and that correspond to the number of available path instances associated with all multi-path disks.
 
+
 ### -field Reserved
 
 Should be zero.
 
+
 ### -field DevInstanceHealthPackets
 
 A field that returns an array with health information about all the available instances of multi-path disks. The number of elements of the array is given by <i>NbrDevInfoPkts</i> and each element of the array is an instance of the MPIO_DEVINSTANCE_HEALTH_CLASS structure.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A field that returns an array with health information about all the available in
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

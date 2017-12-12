@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>SeSetSecurityDescriptorInfoEx</b> routine modifies an object's security descriptor and specifies whether the object supports automatic inheritance of access control entries (ACE).
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ NTSTATUS SeSetSecurityDescriptorInfoEx(
 
 Pointer to the object whose security descriptor is to be modified. This is used to update security quota information.
 
+
 ### -param SecurityInformation [in]
 
 Pointer to a value specifying which security information is to be set. Can be a combination of one or more of the following. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -73,49 +76,61 @@ Pointer to a value specifying which security information is to be set. Can be a 
 <tr>
 <td>
 DACL_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the discretionary access control list (DACL) of the object is being set. Requires WRITE_DAC access. 
+
 </td>
 </tr>
 <tr>
 <td>
 GROUP_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the primary group identifier of the object is being set. Requires WRITE_OWNER access. 
+
 </td>
 </tr>
 <tr>
 <td>
 OWNER_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the owner identifier of the object is being set. Requires WRITE_OWNER access. 
+
 </td>
 </tr>
 <tr>
 <td>
 SACL_SECURITY_INFORMATION
+
 </td>
 <td>
 Indicates the system ACL (SACL) of the object is being set. Requires ACCESS_SYSTEM_SECURITY access. 
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param SecurityDescriptor [in]
 
 The input security descriptor to be applied to the object. The caller of this routine is expected to probe and capture the passed security descriptor before calling, and to release it after calling.
+
 
 ### -param ObjectsSecurityDescriptor [in, out]
 
 Pointer to a pointer to the object's security descriptor. The security descriptor must be in self-relative format. This structure must be deallocated by the caller.
 
+
 ### -param AutoInheritFlags [in]
 
 Bitmask that controls automatic inheritance of ACEs. Set to the logical OR of one or more of the following bit flags: 
+
 <table>
 <tr>
 <th>Security Information Flags</th>
@@ -124,25 +139,31 @@ Bitmask that controls automatic inheritance of ACEs. Set to the logical OR of on
 <tr>
 <td>
 SEF_DACL_AUTO_INHERIT
+
 </td>
 <td>
 If this flag is set, the DACL is treated as an auto-inherit DACL and is processed as described in the following Remarks section. This bit is ignored if DACL_SECURITY_INFORMATION is not set in the <i>SecurityInformation</i> parameter.
+
 </td>
 </tr>
 <tr>
 <td>
 SEF_SACL_AUTO_INHERIT
+
 </td>
 <td>
 If this flag is set, the SACL is treated as an auto-inherit SACL and is processed as described in the following Remarks section. This bit is ignored if SACL_SECURITY_INFORMATION is not set in the <i>SecurityInformation</i> parameter.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param PoolType [in]
 
 Specifies the pool type to use when allocating a new security descriptor, which can be one of the following: 
+
 <ul>
 <li><b>NonPagedPool</b></li>
 <li><b>PagedPool</b></li>
@@ -150,11 +171,14 @@ Specifies the pool type to use when allocating a new security descriptor, which 
 <li><b>PagedPoolCacheAligned</b></li>
 </ul>
 Usually, a caller specifies <b>PagedPool</b>, or else <b>NonPagedPool</b> if the buffer will be accessed at IRQL &gt;= DISPATCH_LEVEL or in an arbitrary thread context. 
+
 <b>Note</b>: The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. 
+
 
 ### -param GenericMapping [in]
 
 Pointer to a GENERIC_MAPPING structure that specifies the mapping of generic to specific and standard access types for the object being accessed. This mapping structure is expected to be safe to access (that is, captured if necessary) prior to be passed to this routine.
+
 
 ## -returns
 <dl>
@@ -168,6 +192,7 @@ Pointer to a GENERIC_MAPPING structure that specifies the mapping of generic to 
 </dl>The object does not have a security descriptor.
 
  
+
 
 ## -remarks
 If the <i>AutoInheritFlags</i> parameter is zero, the effect of calling <b>SeSetSecurityDescriptorInfoEx</b> is the same as that of calling <b>SeSetSecurityDescriptorInfo</b>.
@@ -186,11 +211,13 @@ If <i>AutoInheritFlags</i> specifies the SEF_SACL_AUTO_INHERIT bit, <b>SeSetSecu
 
 For more information about access control and ACE inheritance, see the Security section of the Microsoft Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -201,14 +228,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows 2000 and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -219,6 +249,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -229,6 +260,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -239,9 +271,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -289,5 +323,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeSetSecurityDescriptorInfoEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

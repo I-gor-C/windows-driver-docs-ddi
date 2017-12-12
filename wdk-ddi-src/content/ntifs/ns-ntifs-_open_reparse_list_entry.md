@@ -42,6 +42,7 @@ This structure supports callers opening specific reparse points without
 inhibiting reparse behavior for all classes of reparse points.
 
 
+
 ## -syntax
 
 ````
@@ -62,14 +63,17 @@ typedef struct _OPEN_REPARSE_LIST_ENTRY  {
 
 The entry in the open reparse list.
 
+
 ### -field ReparseTag
 
 The reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>. 
+
 
 ### -field Flags
 
 Flags that control behavior when a reparse point is encountered on a directory that may be non-empty (one whose reparse tag is  recognized by <b>FsRtlIsNonEmptyDirectoryReparsePointAllowed</b>)
 .
+
 <table>
 <tr>
 <th>Value</th>
@@ -83,6 +87,7 @@ Flags that control behavior when a reparse point is encountered on a directory t
 </td>
 <td width="60%">
 Indicates that the object that was opened matched the given criteria.
+
 </td>
 </tr>
 <tr>
@@ -94,6 +99,7 @@ Indicates that the object that was opened matched the given criteria.
 <td width="60%">
 Reparse on the directory if the reparse point is on a directory that is not the final path
     component, and the next path component exists.
+
 </td>
 </tr>
 <tr>
@@ -105,6 +111,7 @@ Reparse on the directory if the reparse point is on a directory that is not the 
 <td width="60%">
 Reparse on the directory if the reparse point is on a directory that is not the final path
     component, and the next path component does not exist.
+
 </td>
 </tr>
 <tr>
@@ -117,6 +124,7 @@ Reparse on the directory if the reparse point is on a directory that is not the 
 Reparse on the directory if the reparse point is on a directory that is the final path
 component
 and <b>FILE_OPEN_REPARSE_POINT</b> has not been specified.
+
 </td>
 </tr>
 <tr>
@@ -127,10 +135,12 @@ and <b>FILE_OPEN_REPARSE_POINT</b> has not been specified.
 </td>
 <td width="60%">
 Indicates that the fields of this structure are valid.
+
 </td>
 </tr>
 </table>
  
+
 <div class="alert"><b>Note</b>  When the <b>OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS</b>,  <b>OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS</b>, and <b>OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT</b> flags are used together at the same time, it indicates that the system is to reparse on any directory reparse point.</div>
 <div> </div>
 
@@ -138,14 +148,17 @@ Indicates that the fields of this structure are valid.
 
 The GUID of the reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>.
 
+
 ### -field Size
 
 The size of this structure.
+
 
 ### -field RemainingLength
 
 The unprocessed path length when the reparse point was
     encountered.
+
 
 ## -remarks
 This structure lets callers open specific reparse points without
@@ -156,27 +169,33 @@ structures specifying the tag and possibly GUID that should be
 If a match is found, the corresponding <b>OPEN_REPARSE_LIST_ENTRY</b>  structure will have the <b>OPEN_REPARSE_POINT_TAG_ENCOUNTERED</b> flag set to indicate that the object that was opened matched the given criteria. If a match is found for a directory that is not the final path  component and <b>STATUS_REPARSE</b> is returned, the unprocessed path
   length will be set in the <b>RemainingLength</b> field.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

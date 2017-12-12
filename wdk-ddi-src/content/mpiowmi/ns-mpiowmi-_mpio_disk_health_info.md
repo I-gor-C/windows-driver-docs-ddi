@@ -7,7 +7,7 @@ old-location: storage\mpio_disk_health_info.htm
 old-project: storage
 ms.assetid: 20813e29-907f-42b0-9229-a9ef78f46e1d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MPIO_DISK_HEALTH_INFO, MPIO_DISK_HEALTH_INFO, *PMPIO_DISK_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_DISK_HEALTH_INFO structure is used to query the available health information for every multi-path disk in the system.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _MPIO_DISK_HEALTH_INFO {
 
 An unsigned 32-bitfield that returns the number of available health packets that correspond to the number of multi-path disks under MPIO control.
 
+
 ### -field Reserved
 
 Should be zero.
 
+
 ### -field DiskHealthPackets
 
 An array of health information packets for all the available multi-path disks under MPIO control. The number of elements in the array is given by NumberDiskPackets, and each element of the array is an instance of an MPIO_DISK_HEALTH_CLASS structure.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ An array of health information packets for all the available multi-path disks un
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

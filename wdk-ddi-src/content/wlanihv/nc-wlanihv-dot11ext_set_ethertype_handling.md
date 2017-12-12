@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetethertypehandling.htm
 old-project: netvista
 ms.assetid: 0681519e-022a-487c-ae5e-39a293b060ec
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,6 +63,7 @@ The handle used by the operating system to reference the WLAN adapter. This hand
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
+
 ### -param uMaxBackLog [in]
 
 The maximum number of received packets that the operating system queues if the IHV Extensions DLL
@@ -71,16 +72,19 @@ The maximum number of received packets that the operating system queues if the I
      Handler function. When 
      <i>uMaxBackLog</i> is reached, the operating system discards the oldest packet in the queue.
 
+
 ### -param uNumOfExemption [in]
 
 The number of entries within the privacy exemptions array referenced by the 
      <i>pExemption</i> parameter. A value of zero disables privacy exemptions on the WLAN adapter.
+
 
 ### -param pExemption [in, optional]
 
 A pointer to an array of privacy exemptions. Each entry in the array is formatted as a 
      <a href="..\windot11\ns-windot11-dot11_privacy_exemption.md">
      DOT11_PRIVACY_EXEMPTION</a> structure.
+
 
 ### -param uNumOfRegistration [in]
 
@@ -90,15 +94,18 @@ Number of entries within the IEEE EtherType registrations array referenced by th
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a> IHV
      Handler function.
 
+
 ### -param pusRegistration [in, optional]
 
 A pointer to an array of IEEE EtherType registrations. Each entry has the EtherType value in
      big-endian format.
 
+
 ## -returns
 If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
      defined in 
      Winerror.h.
+
 
 ## -remarks
 When calling the 
@@ -122,11 +129,13 @@ The operating system defaults to an empty list of privacy exemptions and EtherTy
     <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
     Handler function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -137,15 +146,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -180,5 +192,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_ETHERTYPE_HANDLING callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_ETHERTYPE_HANDLING callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

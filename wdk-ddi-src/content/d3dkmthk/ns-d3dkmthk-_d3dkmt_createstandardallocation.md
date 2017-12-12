@@ -7,7 +7,7 @@ old-location: display\d3dkmt-createstandardallocation.htm
 old-project: display
 ms.assetid: 7698ab93-68af-479d-97a4-c45ac84b0710
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_CREATESTANDARDALLOCATION, D3DKMT_CREATESTANDARDALLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to create a standard allocation.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef struct _D3DKMT_CREATESTANDARDALLOCATION {
 
 The type of the standard allocation.
 
+
 ### -field ExistingHeapData
 
 Holds information on the existing heap.
 
+
 ### -field Flags
 
 Holds the flags needed to create a standard allocation.
+
 
 ## -remarks
 
@@ -76,6 +80,7 @@ Holds the flags needed to create a standard allocation.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

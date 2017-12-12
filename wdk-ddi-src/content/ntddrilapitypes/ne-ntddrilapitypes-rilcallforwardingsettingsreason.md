@@ -7,7 +7,7 @@ old-location: netvista\rilcallforwardingsettingsreason.htm
 old-project: netvista
 ms.assetid: d1c39f60-15fb-450d-b879-fb5d236fcf45
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLFORWARDINGSETTINGSREASON, RILCALLFORWARDINGSETTINGSREASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef enum _RILCALLFORWARDINGSETTINGSREASON {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

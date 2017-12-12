@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The client driver's implementation that UCX calls to create static streams.
 
 
+
 ## -prototype
 
 ````
@@ -64,17 +65,21 @@ typedef EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD PEVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
 
 A handle to a UCXENDPOINT object that represents the endpoint.
 
+
 ### -param NumberOfStreams [in]
 
 The number of non-default streams to create.
+
 
 ### -param UcxStaticStreamsInit [in]
 
 A pointer to an opaque structure containing
         initialization information.  This structure is managed by UCX.
 
+
 ## -returns
 If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.
+
 
 ## -remarks
 The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
@@ -87,27 +92,33 @@ This callback function creates a UCX static streams object by calling the <a hre
 A static streams object is not enabled
     until UCX calls the client driver's <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,9 +129,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

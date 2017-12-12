@@ -7,7 +7,7 @@ old-location: debugger\translatevirtualtophysical.htm
 old-project: debugger
 ms.assetid: 803f766a-e02f-4b9c-bfe0-6197e0f2855c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: TranslateVirtualToPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>TranslateVirtualToPhysical</b> function translates a virtual memory address into a physical memory address.
 
 
+
 ## -syntax
 
 ````
@@ -58,23 +59,28 @@ __inline BOOL TranslateVirtualToPhysical(
 
 Specifies the virtual memory address to translate.
 
+
 ### -param Physical 
 
 Receives the physical memory address.
 
+
 ## -returns
 If the function succeeds, the return value is <b>TRUE</b>; otherwise, it is <b>FALSE</b>.
+
 
 ## -remarks
 This function is only available in kernel-mode debugging.
 
 If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing a DbgEng extension that calls this function, include wdbgexts.h before dbgeng.h (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.)
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -85,6 +91,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

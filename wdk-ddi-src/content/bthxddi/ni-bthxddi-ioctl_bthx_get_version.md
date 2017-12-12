@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: F4FD760B-551C-4738-A13D-444E08215D59
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,7 +41,10 @@ req.irql: <= PASSIVE_LEVEL
 
 Profile drivers use IOCTL_BTHX_GET_VERSION to get the version supported by the transport driver.
 
+
+
 Profile drivers use IOCTL_BTHX_GET_VERSION to get the version supported by the transport driver.
+
 
 
 ## -ioctlparameters
@@ -49,8 +52,10 @@ Profile drivers use IOCTL_BTHX_GET_VERSION to get the version supported by the t
 ### -input-buffer
 None.
 
+
 ### -input-buffer-length
 None.
+
 
 ### -output-buffer
 Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:
@@ -61,8 +66,10 @@ The buffer describes a <a href="bltooth.bthx_version">BTHX_VERSION</a> structure
 
 Refer to the WDK Bluetooth samples for more information.
 
+
 ### -output-buffer-length
 The length of the buffer is the size of the <b>BTHX_VERSION</b> structure.
+
 
 ### -in-out-buffer
 
@@ -88,24 +95,29 @@ The IOCTL completed successfully.
 
 Any unsuccessful NT status code prevents the driver from loading.
 
+
 ## -remarks
 IOCTL_BTHX_GET_VERSION is a synchronous operation.
 
 A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +128,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

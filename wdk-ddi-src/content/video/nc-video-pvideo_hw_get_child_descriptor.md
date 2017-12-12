@@ -7,7 +7,7 @@ old-location: display\hwvidgetvideochilddescriptor.htm
 old-project: display
 ms.assetid: 175030c1-95d9-4a3b-976c-16e04852cb91
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <i>HwVidGetVideoChildDescriptor</i> returns a descriptor, a type, and an identification number for a particular child device of the display adapter.
 
 
+
 ## -prototype
 
 ````
@@ -65,13 +66,16 @@ VP_STATUS HwVidGetVideoChildDescriptor(
 
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
+
 ### -param ChildEnumInfo [in]
 
 Is a <a href="display.video_child_enum_info">VIDEO_CHILD_ENUM_INFO</a> structure that describes the device being enumerated.
 
+
 ### -param VideoChildType [out]
 
 Pointer to a location in which the miniport driver returns the type of child being enumerated. This member can be one of the following from the VIDEO_CHILD_TYPE enumeration:
+
 <table>
 <tr>
 <th>Value</th>
@@ -80,53 +84,69 @@ Pointer to a location in which the miniport driver returns the type of child bei
 <tr>
 <td>
 <b>Monitor</b>
+
 </td>
 <td>
 The child device is a monitor.
+
 If the miniport driver detects that the monitor has a DDC2-compliant <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> structure associated with it, the miniport driver should extract the EDID information from the monitor and return it in the buffer to which <i>pChildDescriptor</i> points. The miniport driver can more easily obtain the EDID from the monitor by calling <a href="display.videoportddcmonitorhelper">VideoPortDDCMonitorHelper</a>.
+
 If the detected monitor is not DDC2-compliant, the miniport driver should not return anything in <i>pChildDescriptor</i>.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>NonPrimaryChip</b>
+
 </td>
 <td>
 Is reserved for system use.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>VideoChip</b>
+
 </td>
 <td>
 The child device is the graphics chip.
+
 The miniport driver should return this type when <i>ChildEnumInfo</i>.<b>ChildIndex</b> is DISPLAY_ADAPTER_HW_ID. The miniport driver should not return anything in <i>pChildDescriptor</i>.
+
 </td>
 </tr>
 <tr>
 <td>
 <b>Other</b>
+
 </td>
 <td>
 The child device has a separate device driver associated with it.
+
 The miniport driver should return the device's PnP hardware identifier as a Unicode string in the buffer to which <i>pChildDescriptor</i> points. This string must match the <a href="wdkgloss.d#wdkgloss.device_id#wdkgloss.device_id"><i>device ID</i></a> specified in the driver's INF file. It will be used by the operating system as the hardware ID for this device.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param pChildDescriptor [out]
 
 Pointer to a buffer in which the miniport driver can return data that identifies the device. The information returned depends on the child type specified in <i>VideoChildType</i>. The size of this buffer is specified by the video port driver in the <b>ChildDescriptorSize</b> member of <a href="display.video_child_enum_info">VIDEO_CHILD_ENUM_INFO</a>.
+
 
 ### -param UId [out]
 
 Pointer to the location in which the miniport driver returns a unique 32-bit <a href="wdkgloss.d#wdkgloss.device_id#wdkgloss.device_id"><i>device ID</i></a> for this device. The miniport driver should set <i>UId</i> to be DISPLAY_ADAPTER_HW_ID when the device is the actual display adapter.
 
+
 ### -param pUnused [out]
 
 Is unused and must be set to zero.
+
 
 ## -returns
 <i>HwVidGetVideoChildDescriptor</i> returns one of the following values:
@@ -142,6 +162,7 @@ Is unused and must be set to zero.
 
  
 
+
 ## -remarks
 By default, <i>HwVidGetVideoChildDescriptor</i> is not called until after the device is started by <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>. To allow the enumeration of a device's children before the device is started, set the <b>AllowEarlyEnumeration</b> member of <a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a>. When <b>AllowEarlyEnumeration</b> is set, <i>HwVidGetVideoChildDescriptor</i> can be called at any time.
 
@@ -155,11 +176,13 @@ Write a 32-bit value in <i>UId</i> that uniquely identifies the child device bei
 
 <i>HwVidGetVideoChildDescriptor</i> should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -170,6 +193,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -198,5 +222,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_GET_CHILD_DESCRIPTOR callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_GET_CHILD_DESCRIPTOR callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

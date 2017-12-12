@@ -7,8 +7,8 @@ old-location: netvista\ndis_miniport_init_parameters.htm
 old-project: netvista
 ms.assetid: 945d921b-3024-4c4f-a50d-e996c6183db7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_MINIPORT_INIT_PARAMETERS, NDIS_MINIPORT_INIT_PARAMETERS, *PNDIS_MINIPORT_INIT_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_MINIPORT_INIT_PARAMETERS, *PNDIS_MINIPORT_INIT_PARAMETERS, NDIS_MINIPORT_INIT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_MINIPORT_INIT_PARAMETERS structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The <b>NDIS_MINIPORT_INIT_PARAMETERS</b> structure defines the initialization parameters for a miniport
   adapter.
+
 
 
 ## -syntax
@@ -71,9 +72,11 @@ The
      <b>Revision</b> member to NDIS_MINIPORT_INIT_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_INIT_PARAMETER_REVISION_1.
 
+
 ### -field Flags
 
 Reserved for NDIS.
+
 
 ### -field AllocatedResources
 
@@ -82,6 +85,7 @@ A pointer to an NDIS_RESOURCE_LIST-type structure that lists the hardware resour
      equivalent to the 
      <a href="kernel.cm_partial_resource_list">CM_PARTIAL_RESOURCE_LIST</a> on Windows
      2000 and later platforms.
+
 
 ### -field IMDeviceInstanceContext
 
@@ -92,21 +96,25 @@ A pointer to the context area for a virtual device that an intermediate driver s
      <i>DeviceContext</i> parameter. If the miniport driver is not an intermediate driver, 
      <b>IMDeviceInstanceContext</b> is <b>NULL</b>.
 
+
 ### -field MiniportAddDeviceContext
 
 A handle for a driver-allocated context area, or <b>NULL</b>. The miniport driver specifies this handle,
      if any, in the 
      <a href="..\ndis\nc-ndis-miniport_add_device.md">MiniportAddDevice</a> function.
 
+
 ### -field IfIndex
 
 The network interface index that is associated with the miniport adapter.
+
 
 ### -field NetLuid
 
 The 
      <a href="netvista.net_luid">NET_LUID</a> value that is associated with the
      miniport adapter.
+
 
 ### -field DefaultPortAuthStates
 
@@ -117,6 +125,7 @@ A pointer to an
      <a href="netvista.oid_gen_port_authentication_parameters">
      OID_GEN_PORT_AUTHENTICATION_PARAMETERS</a>.
 
+
 ### -field PciDeviceCustomProperties
 
 A pointer to an 
@@ -124,24 +133,29 @@ A pointer to an
      NDIS_PCI_DEVICE_CUSTOM_PROPERTIES</a> structure that defines the PCI custom properties for the
      miniport adapter.
 
+
 ## -remarks
 NDIS passes a pointer to an initialized <b>NDIS_MINIPORT_INIT_PARAMETERS</b> structure in the 
     <i>MiniportInitParameters</i> parameter of the 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -186,5 +200,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INIT_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INIT_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

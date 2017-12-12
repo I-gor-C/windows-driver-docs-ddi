@@ -7,7 +7,7 @@ old-location: kernel\key_value_full_information.htm
 old-project: kernel
 ms.assetid: 0340cfa7-957d-4404-8dbd-d3178436de0f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _KEY_VALUE_FULL_INFORMATION, KEY_VALUE_FULL_INFORMATION, *PKEY_VALUE_FULL_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KEY_VALUE_FULL_INFORMATION</b> structure defines information available for a value entry of a registry key.
 
 
+
 ## -syntax
 
 ````
@@ -62,25 +63,31 @@ typedef struct _KEY_VALUE_FULL_INFORMATION {
 
 Device and intermediate drivers should ignore this member. 
 
+
 ### -field Type
 
 Specifies the system-defined type for the registry value(s) following the <b>Name</b> member. For a summary of these types, see <a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>.
+
 
 ### -field DataOffset
 
 Specifies the offset from the start of this structure to the data immediately following the <b>Name</b> string.
 
+
 ### -field DataLength
 
 Specifies the number of bytes of registry information for the value entry identified by <b>Name</b>.
+
 
 ### -field NameLength
 
 Specifies the size in bytes of the following value entry name. 
 
+
 ### -field Name
 
 A string of Unicode characters naming a value entry of the key. 
+
 
 ## -remarks
 
@@ -90,6 +97,7 @@ A string of Unicode characters naming a value entry of the key.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +126,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_FULL_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_FULL_INFORMATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

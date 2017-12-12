@@ -7,7 +7,7 @@ old-location: netvista\fwpsallocatenetbufferandnetbufferlist0.htm
 old-project: netvista
 ms.assetid: d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsAllocateNetBufferAndNetBufferList0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -67,12 +68,14 @@ A
      obtained from a previous call to the 
      <a href="netvista.ndisallocatenetbufferlistpool">NdisAllocateNetBufferListPool</a> function.
 
+
 ### -param contextSize [in]
 
 The size, in bytes, of used data space in the 
      <a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a> structure
      to reserve for the callout driver. The value of this parameter must be a multiple of the value defined
      by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.
+
 
 ### -param contextBackFill [in]
 
@@ -82,10 +85,12 @@ The size, in bytes, of
      <i>ContextSize</i> parameter and allocates additional space. The value of this parameter must be a
      multiple of the value defined by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.
 
+
 ### -param mdlChain [in, optional]
 
 A pointer to an MDL chain that is used to initialize the preallocated NET_BUFFER structure. This
      parameter is optional and can be <b>NULL</b>.
+
 
 ### -param dataOffset [in]
 
@@ -94,15 +99,18 @@ The initial offset, in bytes, from the start of the buffer to the start of the
      unused data space. Therefore, this value also represents the initial amount of available backfill
      space in the MDL chain.
 
+
 ### -param dataLength [in]
 
 The length, in bytes, of the 
      used data space in the MDL chain.
 
+
 ### -param netBufferList [out]
 
 A pointer to a variable that receives a pointer to the new 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+
 
 ## -returns
 The 
@@ -119,6 +127,7 @@ The
 
  
 
+
 ## -remarks
 A callout driver calls the 
     <b>FwpsAllocateNetBufferAndNetBufferList0</b> function to allocate a new 
@@ -134,11 +143,13 @@ After the data described by the new <a href="netvista.net_buffer_list">NET_BUFFE
     <a href="netvista.fwpsfreenetbufferlist0">
     FwpsFreeNetBufferList0</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -149,14 +160,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,6 +181,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -177,9 +192,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -208,5 +225,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

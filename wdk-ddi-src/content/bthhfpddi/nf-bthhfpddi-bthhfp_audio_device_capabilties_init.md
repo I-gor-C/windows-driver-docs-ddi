@@ -43,6 +43,7 @@ The
             <b>BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT</b> method returns a pointer to an initialized <a href="audio._bthhfp_audio_device_capabilties">BTHHFP_AUDIO_DEVICE_CAPABILTIES</a> data structure. 
 
 
+
 ## -syntax
 
 ````
@@ -58,8 +59,10 @@ FORCEINLINE VOID  BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT(
 
 A pointer to an initialized <a href="audio._bthhfp_audio_device_capabilties">BTHHFP_AUDIO_DEVICE_CAPABILTIES</a> data structure.
 
+
 ## -returns
 This method does not return a value.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ This method does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,9 +103,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

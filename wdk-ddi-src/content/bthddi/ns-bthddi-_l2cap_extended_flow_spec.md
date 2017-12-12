@@ -41,6 +41,7 @@ req.irql: Developers should code this function to operate at either IRQL = DISPA
 The L2CAP_EXTENDED_FLOW_SPEC is reserved for future use.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _L2CAP_EXTENDED_FLOW_SPEC {
 
 Reserved. Do not use.
 
+
 ### -field ServiceType
 
 Reserved. Do not use.
+
 
 ### -field MaxSDUSize
 
 Reserved. Do not use.
 
+
 ### -field SDUInterArrivalTime
 
 Reserved. Do not use.
+
 
 ### -field AccessLatency
 
 Reserved. Do not use.
 
+
 ### -field FlushTimeout
 
 Reserved. Do not use.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ Reserved. Do not use.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8 and later versions of Windows
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

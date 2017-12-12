@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Provides extended USB 3.0 port information about  speed.
 
 
+
 ## -syntax
 
 ````
@@ -64,17 +65,21 @@ typedef struct _ROOTHUB_30PORT_INFO_EX {
 
 A <a href="buses._roothub_30port_info">ROOTHUB_30PORT_INFO</a> structure.
 
+
 ### -field MaxSpeedsCount
 
 Maximum number of speeds.
+
 
 ### -field SpeedsCount
 
 The count of bus speeds supported.
 
+
 ### -field Speeds
 
 A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h
+
 
 ## -remarks
 
@@ -84,6 +89,7 @@ A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

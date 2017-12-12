@@ -7,7 +7,7 @@ old-location: display\d3dkmt-queryprotectedsessionstatus.htm
 old-project: display
 ms.assetid: c49b1c12-8757-4d15-807d-fdb963746810
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_QUERYPROTECTEDSESSIONSTATUS, D3DKMT_QUERYPROTECTEDSESSIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to query the status of the protected session.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_QUERYPROTECTEDSESSIONSTATUS {
 
 The handle of the protected session.
 
+
 ### -field Status
 
 The status of the protected session.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The status of the protected session.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

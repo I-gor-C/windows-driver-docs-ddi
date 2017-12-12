@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlAddAccessAllowedAceEx</b> routine adds an access-allowed access control entry (<a href="ifsk.ace">ACE</a>) with inheritance ACE flags to an access control list (<a href="ifsk.acl">ACL</a>). The access is granted to the specified security identifier (<a href="ifsk.sid">SID</a>). 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS RtlAddAccessAllowedAceEx(
 
 A pointer to a caller-allocated buffer that contains the ACL to be modified. <b>RtlAddAccessAllowedAceEx</b> adds an access-allowed ACE to the end of this ACL. The ACE is in the form of an <a href="ifsk.access_allowed_ace">ACCESS_ALLOWED_ACE</a> structure.
 
+
 ### -param AceRevision [in]
 
 ACL revision level of the ACE to be added. This value can be ACL_REVISION or ACL_REVISION_DS. It must be ACL_REVISION_DS if the ACL contains an object-specific ACE. 
+
 
 ### -param AceFlags [in]
 
 Bitmask specifying the inherit flags of the ACE to be added. 
 
+
 ### -param AccessMask [in]
 
 A bitmask of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags that specify the access rights to be granted to the specified SID. For more information, see the description of the <i>DesiredAccess</i> parameter of <a href="kernel.zwcreatefile">ZwCreateFile</a>. 
 
+
 ### -param Sid [in]
 
 A pointer to the SID structure that represents a user, group, or logon account that is being granted access. 
+
 
 ## -returns
 <b>RtlAddAccessAllowedAceEx</b> can return one of the following values:
@@ -99,6 +105,7 @@ A pointer to the SID structure that represents a user, group, or logon account t
 
  
 
+
 ## -remarks
 Unlike <a href="ifsk.rtladdaccessallowedace">RtlAddAccessAllowedAce</a>, this routine sets the inheritance ACE flags.  
 
@@ -110,11 +117,13 @@ For more information about security and access control, see the documentation ab
 
 <a href="http://go.microsoft.com/fwlink/p/?linkid=140860">Getting Information from an ACL</a>
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -125,14 +134,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available in Microsoft Windows 2000 and later Windows operating systems. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +155,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -153,6 +166,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -163,9 +177,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -216,5 +232,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAddAccessAllowedAceEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

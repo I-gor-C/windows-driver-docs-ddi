@@ -7,7 +7,7 @@ old-location: print\generatecopyfilepaths.htm
 old-project: print
 ms.assetid: 61274493-1ec4-483b-85fa-f6087cf0631e
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GenerateCopyFilePaths
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A Point and Print DLL's <b>GenerateCopyFilePaths</b> function is used for modifying the source and destination paths used by print spoolers when they copy print queue-associated files to a print client.
 
 
+
 ## -syntax
 
 ````
@@ -65,61 +66,78 @@ DWORD GenerateCopyFilePaths(
 
 Caller-supplied pointer to a string representing the name of the print queue.
 
+
 ### -param pszDirectory [in]
 
 Caller-supplied pointer to a string representing the value supplied for the server's <b>Directory</b> entry in the registry. For more information, see <a href="https://msdn.microsoft.com/70e65c7b-bba2-4da1-ac80-9719f8005c50">Supporting Point and Print During Printer Installations</a>.
+
 
 ### -param pSplClientInfo [in]
 
 Caller-supplied pointer to an <a href="print.splclient_info_1">SPLCLIENT_INFO_1</a> structure.
 
+
 ### -param dwLevel [in]
 
 Caller-supplied value indicating the level number of the structure pointed to by <i>pSplClientInfo</i>. Must be 1.
 
+
 ### -param pszSourceDir [in, out]
 
 For input, receives a caller-supplied pointer to a string representing the complete server directory path (including server name) from which files are to be copied.
+
 For output, the function can modify this string.
+
 
 ### -param pcchSourceDirSize [in, out]
 
 Caller-supplied address containing the length of the buffer pointed to by <i>pszSourceDir</i>. (Note that this is the buffer length, not the string length.)
 
+
 ### -param pszTargetDir [in, out]
 
 For input, receives a caller-supplied pointer to a string representing the client directory path to which files are to be copied. The following rules apply:
+
 <ul>
 <li>
 When the function is called on the server, this path is relative to PRINT$.
+
 </li>
 <li>
 When the function is called on the client, the string contains a complete path.
+
 </li>
 </ul>
 For output, the function can modify this string.
 
+
 ### -param pcchTargetDirSize [in, out]
 
 Caller-supplied address containing the length of the buffer pointed to by <i>pszTargetDir</i>. (Note that this is the buffer length, not the string length.)
+
 
 ### -param dwFlags [in]
 
 Caller-supplied flag. Can be one of the following:
 
 
+
+
 ### -param COPYFILE_FLAG_CLIENT_SPOOLER
 
 Indicates the function is being called by the client's spooler.
 
+
 ### -param COPYFILE_FLAG_SERVER_SPOOLER
 
 Indicates the function is being called by the server's spooler.
+
 </dd>
 </dl>
 
 ## -returns
 If the operation succeeds, the function should return <b>ERROR_SUCCESS</b>. Otherwise, it should return an error code defined in winerror.h.
+
 
 ## -remarks
 All <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a> must export a <b>GenerateCopyFilePaths</b> function, which is called by the print spooler. Its purpose is to allow a Point and Print DLL to modify the source or destination directory path, or both, before the print spooler copies print queue-associated files from a server to a client. (The files are copied when a client connects to a print server. For a complete description of the steps involved in creating a Point and Print connection, see <a href="https://msdn.microsoft.com/a41bed5e-a006-4b9e-aa71-d2bcd154fae2">Supporting Point and Print</a>.)
@@ -132,11 +150,13 @@ Arguments for the <i>pszSourceDir</i> and <i>pszTargetDir</i> parameters point t
 
 If no modifications to the source or destination directories are needed, the function should just return <b>ERROR_SUCCESS</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -147,6 +167,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,6 +178,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -167,6 +189,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -183,5 +206,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GenerateCopyFilePaths function%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GenerateCopyFilePaths function%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

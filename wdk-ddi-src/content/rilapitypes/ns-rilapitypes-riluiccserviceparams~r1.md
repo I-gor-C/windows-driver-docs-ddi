@@ -7,8 +7,8 @@ old-location: netvista\riluiccserviceparams_2.htm
 old-project: netvista
 ms.assetid: 56fba38d-6c5f-4b75-98b6-213a42f47bbb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -76,6 +77,7 @@ typedef struct _RILUICCSERVICEPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

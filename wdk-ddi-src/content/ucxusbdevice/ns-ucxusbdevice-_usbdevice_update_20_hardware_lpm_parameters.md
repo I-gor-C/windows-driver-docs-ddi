@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the  <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.
 
 
+
 ## -syntax
 
 ````
@@ -63,29 +64,36 @@ typedef struct _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS {
 
 If set, indicates are request to enable hardware LPM.
 
+
 ### -field RemoteWakeEnable
 
 If set, indicates are request to enable remote wake signal.
+
 
 ### -field HostInitiatedResumeDurationMode
 
 The requested resume period.
 
+
 ### -field BestEffortServiceLatency
 
 The requested best effort service latency.
+
 
 ### -field BestEffortServiceLatencyDeep
 
 The requested best effort service latency deep.
 
+
 ### -field L1Timeout
 
 The requested L1 timeout.
 
+
 ### -field Reserved
 
 Do not use.
+
 
 ## -remarks
 
@@ -95,6 +103,7 @@ Do not use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +129,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

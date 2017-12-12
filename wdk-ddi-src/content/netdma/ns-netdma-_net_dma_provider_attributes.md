@@ -7,8 +7,8 @@ old-location: netvista\net_dma_provider_attributes.htm
 old-project: netvista
 ms.assetid: 7b5a7e9e-b10b-4c94-80b1-172cd9f0c9ca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NET_DMA_PROVIDER_ATTRIBUTES, *PNET_DMA_PROVIDER_ATTRIBUTES, NET_DMA_PROVIDER_ATTRIBUTES
+ms.date: 12/8/2017
+ms.keywords: _NET_DMA_PROVIDER_ATTRIBUTES, NET_DMA_PROVIDER_ATTRIBUTES, *PNET_DMA_PROVIDER_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -61,18 +61,22 @@ typedef struct _NET_DMA_PROVIDER_ATTRIBUTES {
 
 The major version number of the DMA provider hardware.
 
+
 ### -field MinorHwVersion
 
 The minor version number of the DMA provider hardware.
+
 
 ### -field Size
 
 The size, in bytes, of this NET_DMA_PROVIDER_ATTRIBUTES structure. Set this member to 
      sizeof(NET_DMA_PROVIDER_ATTRIBUTES).
 
+
 ### -field Flags
 
 Reserved for DMA provider attributes flags. Set this member to zero.
+
 
 ### -field VendorId
 
@@ -82,6 +86,7 @@ A vendor identifier (ID) that uniquely identifies the vendor that created the DM
      <a href="devinst.identifiers_for_pci_devices">Identifiers for PCI
      Devices</a>.
 
+
 ### -field DmaChannelCount
 
 The number of DMA channels that the DMA provider supports. This number can differ from the 
@@ -90,14 +95,17 @@ The number of DMA channels that the DMA provider supports. This number can diffe
      NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that defines the maximum number of DMA channels that
      this type of DMA provider can support.
 
+
 ### -field MaximumTransferSize
 
 The maximum DMA transfer size, in bytes, that the DMA provider can support. This value can must be
      4 KB or greater.
 
+
 ### -field MaximumAddressSpace
 
 The largest physical address that the DMA engine can support.
+
 
 ## -remarks
 To start a DMA provider, the DMA provider driver supplies a NET_DMA_PROVIDER_ATTRIBUTES structure at
@@ -108,21 +116,25 @@ To start a DMA provider, the DMA provider driver supplies a NET_DMA_PROVIDER_ATT
 A DMA provider driver initializes a DMA engine and starts a DMA provider while handling the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> IRP.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1
    drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows
    Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,5 +161,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

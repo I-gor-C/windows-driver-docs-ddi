@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Ntifs.h header
 
+## -description
 
 This header is used by Installable file system, Windows kernel, Networking drivers for Windows Vista and later. For more information, see
 - [Installable file system](../_ifsk/index.md)
@@ -20,7 +25,6 @@ Ntifs.h contain these programming interfaces:
 | [CcCopyWrite function](nf-ntifs-cccopywrite.md) | The CcCopyWrite routine copies data from a user buffer to a cached file. |
 | [CcCopyWriteEx function](nf-ntifs-cccopywriteex.md) | The CcCopyWriteEx routine copies data from a user buffer to a cached file. The I/O byte count for the operation is charged to the issuing thread. |
 | [CcCopyWriteWontFlush function](nf-ntifs-cccopywritewontflush.md) | The CcCopyWriteWontFlush macro determines whether the amount of data to be copied in a call to CcCopyWrite is small enough not to require immediate flushing to disk if CcCopyWrite is called with Wait set to FALSE. |
-| [CcCopyWriteWontFlush function](nf-ntifs-cccopywritewontflush~r1.md) | The CcCopyWriteWontFlush macro determines whether the amount of data to be copied in a call to CcCopyWrite is small enough not to require immediate flushing to disk if CcCopyWrite is called with Wait set to FALSE. |
 | [CcDeferWrite function](nf-ntifs-ccdeferwrite.md) | The CcDeferWrite routine defers writing to a cached file. |
 | [CcFastCopyRead function](nf-ntifs-ccfastcopyread.md) | The CcFastCopyRead routine performs a fast copy read from a cached file to a buffer in memory. |
 | [CcFastCopyWrite function](nf-ntifs-ccfastcopywrite.md) | The CcFastCopyWrite routine performs a fast copy write from a buffer in memory to a cached file. |
@@ -63,27 +67,55 @@ Ntifs.h contain these programming interfaces:
 | [CcWaitForCurrentLazyWriterActivity function](nf-ntifs-ccwaitforcurrentlazywriteractivity.md) | The CcWaitForCurrentLazyWriterActivity routine puts the caller into a wait state until the current batch of lazy writer activity is completed. |
 | [CcZeroData function](nf-ntifs-cczerodata.md) | The CcZeroData routine zeros the specified range of bytes in a cached or noncached file. |
 | [FsRtlAcknowledgeEcp function](nf-ntifs-fsrtlacknowledgeecp.md) | The FsRtlAcknowledgeEcp routine marks an extra create parameter (ECP) context structure as acknowledged. |
+| [FsRtlAddLargeMcbEntry function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtladdlargemcbentry~r3.md) | The FsRtlAddLargeMcbEntry routine adds a new mapping to an existing map control block (MCB). |
+| [FsRtlAddToTunnelCache function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtladdtotunnelcache~r6.md) | The FsRtlAddToTunnelCache routine caches a file name that is removed from a directory when a file is renamed or deleted. |
 | [FsRtlAllocateExtraCreateParameter function](nf-ntifs-fsrtlallocateextracreateparameter.md) | The FsRtlAllocateExtraCreateParameter routine allocates memory for a user-defined extra create parameter (ECP) context structure and generates a pointer to that structure. |
 | [FsRtlAllocateExtraCreateParameterFromLookasideList function](nf-ntifs-fsrtlallocateextracreateparameterfromlookasidelist.md) | The FsRtlAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure, and generates a pointer to that structure. |
 | [FsRtlAllocateExtraCreateParameterList function](nf-ntifs-fsrtlallocateextracreateparameterlist.md) | The FsRtlAllocateExtraCreateParameterList routine allocates paged pool memory for an ECP_LIST structure and generates a pointer to that structure. |
-| [FsRtlAllocatePoolWithQuotaTag function](nf-ntifs-fsrtlallocatepoolwithquotatag.md) | The FsRtlAllocatePoolWithQuotaTag routine allocates pool memory, charging quota against the current process. |
-| [FsRtlAllocatePoolWithTag function](nf-ntifs-fsrtlallocatepoolwithtag.md) | The FsRtlAllocatePoolWithTag routine allocates pool memory. |
-| [FsRtlAreThereCurrentFileLocks function](nf-ntifs-fsrtlaretherecurrentfilelocks.md) | The FsRtlAreThereCurrentFileLocks macro checks whether any byte range locks exist for the specified file. |
+| [FsRtlAllocateFileLock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md) | The FsRtlAllocateFileLock routine allocates and initializes a new FILE_LOCK structure. |
+| [FsRtlAreNamesEqual function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlarenamesequal~r3.md) | The FsRtlAreNamesEqual routine determines whether two Unicode strings are equal. |
+| [FsRtlAreThereCurrentOrInProgressFileLocks function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlaretherecurrentorinprogressfilelocks.md) | TheFsRtlAreThereCurrentOrInProgressFileLocks routine determines if there are byte range locks assigned to a file or any lock operations in progress for that file. |
+| [FsRtlAreThereWaitingFileLocks function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlaretherewaitingfilelocks.md) | The FsRtlAreThereWaitingFileLocks routine checks a file lock queue for any waiting file locks. |
 | [FsRtlAreVolumeStartupApplicationsComplete function](nf-ntifs-fsrtlarevolumestartupapplicationscomplete.md) | The FsRtlAreVolumeStartupApplicationsComplete function determines whether volume startup applications have completed processing. |
+| [FsRtlBalanceReads function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlbalancereads.md) | The FsRtlBalanceReads routine signals to a fault-tolerant disk driver that it is now safe to start balancing reads from a mirrored drive. |
 | [FsRtlCancellableWaitForMultipleObjects function](nf-ntifs-fsrtlcancellablewaitformultipleobjects.md) | The FsRtlCancellableWaitForMultipleObjects routine executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects. |
 | [FsRtlCancellableWaitForSingleObject function](nf-ntifs-fsrtlcancellablewaitforsingleobject.md) | The FsRtlCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object. |
 | [FsRtlChangeBackingFileObject function](nf-ntifs-fsrtlchangebackingfileobject.md) | The FsRtlChangeBackingFileObject routine replaces the current file object with a new file object. |
-| [FsRtlCompleteRequest function](nf-ntifs-fsrtlcompleterequest.md) | The FsRtlCompleteRequest macro completes an IRP with the specified status. |
+| [FsRtlCheckLockForOplockRequest function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforoplockrequest~r1.md) | The FsRtlCheckLockForOplockRequest routine checks for locks within the allocation size of a file. The file lock object is checked for the presence of byte range locks that would prevent an oplock request from being granted. |
+| [FsRtlCheckLockForReadAccess function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforreadaccess~r1.md) | The FsRtlCheckLockForReadAccess routine determines whether the process associated with a given IRP has read access to a locked region of a file. |
+| [FsRtlCheckLockForWriteAccess function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforwriteaccess~r1.md) | The FsRtlCheckLockForWriteAccess routine determines whether the process associated with a given IRP has write access to a locked region of a file. |
+| [FsRtlCheckOplock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcheckoplock~r4.md) | The FsRtlCheckOplock routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state. |
+| [FsRtlCheckOplockEx function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcheckoplockex~r5.md) | The FsRtlCheckOplockEx routine synchronizes the IRP for a file I/O operation with the current opportunistic lock (oplock) state of the file. |
+| [FsRtlCheckUpperOplock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcheckupperoplock~r5.md) | The FsRtlCheckUpperOplock routine provides opportunistic lock (oplock) checking in secondary, or layered, file systems when the oplocks they hold change state. |
+| [FsRtlCopyRead function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md) | The FsRtlCopyRead routine copies data from a cached file to a user buffer. |
+| [FsRtlCopyWrite function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md) | The FsRtlCopyWrite routine copies data from a user buffer to a cached file. |
 | [FsRtlCreateSectionForDataScan function](nf-ntifs-fsrtlcreatesectionfordatascan.md) | The FsRtlCreateSectionForDataScan routine creates a section object. |
+| [FsRtlCurrentBatchOplock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentbatchoplock.md) | A file system or filter driver calls FsRtlCurrentBatchOplock to determine whether there are any batch or filter opportunistic locks (oplocks) on a file. |
+| [FsRtlCurrentOplock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentoplock.md) | A file system or filter driver calls FsRtlCurrentOplock to determine whether there are any opportunistic locks (oplocks) on a file. |
+| [FsRtlCurrentOplockH function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentoplockh.md) | A file system or filter driver calls FsRtlCurrentOplockH to determine whether there are any CACHE_HANDLE_LEVEL opportunistic locks (oplocks) on a file. |
 | [FsRtlDeleteExtraCreateParameterLookasideList function](nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md) | The FsRtlDeleteExtraCreateParameterLookasideList routine frees an extra create parameter (ECP) lookaside list. |
+| [FsRtlDeleteKeyFromTunnelCache function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldeletekeyfromtunnelcache~r1.md) | The FsRtlDeleteKeyFromTunnelCache routine deletes any tunnel cache entries for files in a directory that is being deleted. |
+| [FsRtlDeleteTunnelCache function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldeletetunnelcache.md) | The FsRtlDeleteTunnelCache routine deletes a tunnel cache. |
 | [FsRtlDeregisterUncProvider function](nf-ntifs-fsrtlderegisteruncprovider.md) | The FsRtlDeregisterUncProvider routine deregisters a redirector that was registered as a Universal Naming Convention (UNC) provider with the multiple UNC provider (MUP). |
-| [FsRtlFastLock function](nf-ntifs-fsrtlfastlock.md) | The FsRtlFastLock macro is used by file systems and filter drivers to request a byte-range lock for a file stream. |
+| [FsRtlDissectDbcs function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldissectdbcs~r2.md) | Given an ANSI or double-byte character set (DBCS) pathname string, the FsRtlDissectDbcs routine returns two strings |
+| [FsRtlDissectName function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldissectname~r2.md) | Given a Unicode pathname string, the FsRtlDissectName routine returns two strings, one containing the first file name found in the string, the other containing the remaining unparsed portion of the pathname string. |
+| [FsRtlDoesDbcsContainWildCards function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldoesdbcscontainwildcards.md) | The FsRtlDoesDbcsContainWildCards routine determines whether an ANSI or double-byte character set (DBCS) string contains wildcard characters. |
+| [FsRtlDoesNameContainWildCards function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldoesnamecontainwildcards.md) | The FsRtlDoesNameContainWildCards routine determines whether a Unicode string contains wildcard characters. |
+| [FsRtlFastCheckLockForRead function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforread~r5.md) | The FsRtlFastCheckLockForRead routine determines whether the specified process has read access to a locked byte range of a file. |
+| [FsRtlFastCheckLockForWrite function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforwrite~r5.md) | The FsRtlFastCheckLockForWrite routine determines whether the specified process has write access to a locked byte range of a file. |
+| [FsRtlFastUnlockAll function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastunlockall~r3.md) | The FsRtlFastUnlockAll routine releases all byte-range locks that were acquired by the specified process for a file. |
+| [FsRtlFastUnlockAllByKey function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastunlockallbykey~r4.md) | The FsRtlFastUnlockAllByKey routine releases all byte-range locks that were acquired by the specified process, with the specified key value, for a file. |
+| [FsRtlFastUnlockSingle function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastunlocksingle~r7.md) | The FsRtlFastUnlockSingle routine releases a byte-range lock that was acquired by the specified process, with the specified key value, file offset, and length, for a file. |
 | [FsRtlFindExtraCreateParameter function](nf-ntifs-fsrtlfindextracreateparameter.md) | The FsRtlFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found. |
+| [FsRtlFindInTunnelCache function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfindintunnelcache~r6.md) | The FsRtlFindInTunnelCache routine searches for a matching entry in the tunnel cache that matches the specified name. |
 | [FsRtlFreeExtraCreateParameter function](nf-ntifs-fsrtlfreeextracreateparameter.md) | The FsRtlFreeExtraCreateParameter routine frees the memory for an ECP context structure. |
 | [FsRtlFreeExtraCreateParameterList function](nf-ntifs-fsrtlfreeextracreateparameterlist.md) | The FsRtlFreeExtraCreateParameterList routine frees an extra create parameter (ECP) list structure. |
+| [FsRtlFreeFileLock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfreefilelock.md) | The FsRtlFreeFileLock routine uninitializes and frees a file lock structure. |
 | [FsRtlGetEcpListFromIrp function](nf-ntifs-fsrtlgetecplistfromirp.md) | The FsRtlGetEcpListFromIrp routine returns a pointer to an extra create parameter (ECP) context structure list that is associated with a given IRP_MJ_CREATE operation. |
+| [FsRtlGetFileSize function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetfilesize~r1.md) | The FsRtlGetFileSize routine is used to get the size of a file. |
 | [FsRtlGetNextExtraCreateParameter function](nf-ntifs-fsrtlgetnextextracreateparameter.md) | The FsRtlGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter (ECP) context structure in a given ECP list. |
-| [FsRtlGetPerStreamContextPointer function](nf-ntifs-fsrtlgetperstreamcontextpointer.md) | The FsRtlGetPerStreamContextPointer macro returns the file system's stream context for a file stream. |
+| [FsRtlGetNextFileLock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextfilelock~r1.md) | The FsRtlGetNextFileLock routine is used to enumerate the byte-range locks that currently exist for a specified file. |
+| [FsRtlGetNextLargeMcbEntry function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextlargemcbentry~r4.md) | The FsRtlGetNextLargeMcbEntry routine retrieves a mapping run from a map control block (MCB). |
 | [FsRtlGetSectorSizeInformation function](nf-ntifs-fsrtlgetsectorsizeinformation.md) | The FsRtlGetSectorSizeInformation routine retrieves the physical and logical sector size information for a storage volume. |
 | [FsRtlGetSupportedFeatures function](nf-ntifs-fsrtlgetsupportedfeatures.md) | The FsRtlGetSupportedFeatures routine returns the supported features of a volume attached to the specified device object. |
 | [FsRtlIncrementCcFastMdlReadWait function](nf-ntifs-fsrtlincrementccfastmdlreadwait.md) | The FsRtlIncrementCcFastMdlReadWait routine increments the cache manager's CcFastMdlReadWait performance counter member in a processor control block (PRCB) object. |
@@ -92,50 +124,87 @@ Ntifs.h contain these programming interfaces:
 | [FsRtlIncrementCcFastReadResourceMiss function](nf-ntifs-fsrtlincrementccfastreadresourcemiss.md) | The FsRtlIncrementCcFastReadResourceMiss routine increments the CcFastReadNotPossible performance counter in a per processor control block of cache manager system counters. |
 | [FsRtlIncrementCcFastReadWait function](nf-ntifs-fsrtlincrementccfastreadwait.md) | The FsRtlIncrementCcFastReadWait routine increments the CcFastReadWait performance counter in a per processor control block of cache manager system counters. |
 | [FsRtlInitExtraCreateParameterLookasideList function](nf-ntifs-fsrtlinitextracreateparameterlookasidelist.md) | The FsRtlInitExtraCreateParameterLookasideList routine initializes a paged or nonpaged pool lookaside list used for the allocation of one or more extra create parameter context structures (ECPs) of fixed size. |
-| [FsRtlInitPerStreamContext function](nf-ntifs-fsrtlinitperstreamcontext.md) | The FsRtlInitPerStreamContext macro initializes a filter driver context structure. |
 | [FsRtlInitializeExtraCreateParameter function](nf-ntifs-fsrtlinitializeextracreateparameter.md) | The FsRtlInitializeExtraCreateParameter routine initializes an extra create parameter (ECP) context structure. |
 | [FsRtlInitializeExtraCreateParameterList function](nf-ntifs-fsrtlinitializeextracreateparameterlist.md) | The FsRtlInitializeExtraCreateParameterList routine initializes an extra create parameter (ECP) context structure list. |
+| [FsRtlInitializeFileLock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md) | The FsRtlInitializeFileLock routine initializes a FILE_LOCK structure. |
+| [FsRtlInitializeLargeMcb function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializelargemcb~r1.md) | The FsRtlInitializeLargeMcb routine initializes a map control block (MCB) structure. |
+| [FsRtlInitializeOplock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md) | FsRtlInitializeOplock initializes an opportunistic lock (oplock) pointer. |
+| [FsRtlInitializeTunnelCache function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializetunnelcache.md) | The FsRtlInitializeTunnelCache routine initializes a new tunnel cache for a volume. |
 | [FsRtlInsertExtraCreateParameter function](nf-ntifs-fsrtlinsertextracreateparameter.md) | The FsRtlInsertExtraCreateParameter routine inserts an extra create parameter (ECP) context structure into an ECP list. |
 | [FsRtlInsertPerFileContext function](nf-ntifs-fsrtlinsertperfilecontext.md) | The FsRtlInsertPerFileContext routine associates a FSRTL_PER_FILE_CONTEXT object with a driver-specified context object for a file. |
 | [FsRtlInsertPerFileObjectContext function](nf-ntifs-fsrtlinsertperfileobjectcontext.md) | For a &#0034;legacy&#0034; file system filter driver, the FsRtlInsertPerFileObjectContext function associates context information with a file object. |
 | [FsRtlInsertPerStreamContext function](nf-ntifs-fsrtlinsertperstreamcontext.md) | The FsRtlInsertPerStreamContext routine associates a file system filter driver's per-stream context structure with a file stream. |
-| [FsRtlIsAnsiCharacterLegal function](nf-ntifs-fsrtlisansicharacterlegal.md) | The FsRtlIsAnsiCharacterLegal macro determines whether a character is a legal ANSI character. |
-| [FsRtlIsAnsiCharacterLegalFat function](nf-ntifs-fsrtlisansicharacterlegalfat.md) | The FsRtlIsAnsiCharacterLegalFat macro determines whether an ANSI character is legal for FAT file names. |
-| [FsRtlIsAnsiCharacterLegalHpfs function](nf-ntifs-fsrtlisansicharacterlegalhpfs.md) | The FsRtlIsAnsiCharacterLegalHpfs macro determines whether an ANSI character is legal for HPFS file names. |
-| [FsRtlIsAnsiCharacterLegalNtfs function](nf-ntifs-fsrtlisansicharacterlegalntfs.md) | The FsRtlIsAnsiCharacterLegalNtfs macro determines whether an ANSI character is legal for NTFS file names. |
-| [FsRtlIsAnsiCharacterLegalNtfsStream function](nf-ntifs-fsrtlisansicharacterlegalntfsstream.md) | The FsRtlIsAnsiCharacterLegalNtfsStream macro determines whether an ANSI character is legal for NTFS stream names. |
-| [FsRtlIsAnsiCharacterWild function](nf-ntifs-fsrtlisansicharacterwild.md) | The FsRtlIsAnsiCharacterWild macro determines whether an ANSI character is a wildcard character. |
 | [FsRtlIsDaxVolume function](nf-ntifs-fsrtlisdaxvolume.md) | This routine queries if the specified file is on a direct access (DAX) volume. |
+| [FsRtlIsDbcsInExpression function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlisdbcsinexpression~r1.md) | The FsRtlIsDbcsInExpression routine determines whether an ANSI or double-byte character set (DBCS) string matches the specified pattern. |
 | [FsRtlIsEcpAcknowledged function](nf-ntifs-fsrtlisecpacknowledged.md) | The FsRtlIsEcpAcknowledged routine is used to determine if a given extra create parameter (ECP) context structure has been marked as acknowledged. |
 | [FsRtlIsEcpFromUserMode function](nf-ntifs-fsrtlisecpfromusermode.md) | The FsRtlIsEcpFromUserMode routine determines whether an extra create parameter (ECP) context structure originated from user mode. |
-| [FsRtlIsLeadDbcsCharacter function](nf-ntifs-fsrtlisleaddbcscharacter.md) | The FsRtlIsLeadDbcsCharacter macro determines whether a character is a lead byte (the first byte of a character) in a double-byte character set (DBCS). |
+| [FsRtlIsFatDbcsLegal function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlisfatdbcslegal~r3.md) | The FsRtlIsFatDbcsLegal routine determines whether the specified ANSI or double-byte character set (DBCS) string is a legal FAT file name. |
+| [FsRtlIsHpfsDbcsLegal function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlishpfsdbcslegal~r3.md) | The FsRtlIsHpfsDbcsLegal routine determines whether the specified ANSI or double-byte character set (DBCS) string is a legal HPFS file name. |
+| [FsRtlIsNameInExpression function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlisnameinexpression~r3.md) | The FsRtlIsNameInExpression routine determines whether a Unicode string matches the specified pattern. |
+| [FsRtlIsNtstatusExpected function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlisntstatusexpected.md) | The FsRtlIsNtstatusExpected routine determines whether the specified exception is handled by the exception filter. |
 | [FsRtlIsPagingFile function](nf-ntifs-fsrtlispagingfile.md) | The FsRtlIsPagingFile routine determines whether a given file is a paging file. |
 | [FsRtlIsSystemPagingFile function](nf-ntifs-fsrtlissystempagingfile.md) | The FsRtlIsSystemPagingFile routine determines whether a given file is currently a system paging file. |
-| [FsRtlIsUnicodeCharacterWild function](nf-ntifs-fsrtlisunicodecharacterwild.md) | The FsRtlIsUnicodeCharacterWild macro determines whether a Unicode character is a wildcard character. |
 | [FsRtlIssueDeviceIoControl function](nf-ntifs-fsrtlissuedeviceiocontrol.md) | The FsRtlIssueDeviceIoControl routine sends a synchronous device I/O control request to a target device object. |
 | [FsRtlLogCcFlushError function](nf-ntifs-fsrtllogccflusherror.md) | The FsRtlLogCcFlushError routine logs a lost delayed-write error and displays a dialog box to the user. |
+| [FsRtlLookupLargeMcbEntry function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookuplargemcbentry~r6.md) | Given a virtual block number (VBN) and a map control block (MCB), the FsRtlLookupLargeMcbEntry routine searches the MCB for mapping information corresponding to the specified VBN. |
+| [FsRtlLookupLastLargeMcbEntry function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookuplastlargemcbentry~r2.md) | The FsRtlLookupLastLargeMcbEntry routine retrieves the last mapping entry stored in the map control block (MCB). |
+| [FsRtlLookupLastLargeMcbEntryAndIndex function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookuplastlargemcbentryandindex~r3.md) | The FsRtlLookupLastLargeMcbEntryAndIndex routine retrieves the last mapping entry stored in a given map control block (MCB). |
 | [FsRtlLookupPerFileContext function](nf-ntifs-fsrtllookupperfilecontext.md) | The FsRtlLookupPerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a specified file. |
 | [FsRtlLookupPerFileObjectContext function](nf-ntifs-fsrtllookupperfileobjectcontext.md) | For a &#0034;legacy&#0034; file system filter driver, the FsRtlLookupPerFileObjectContext function retrieves context information previously associated with a file object. |
-| [FsRtlLookupPerStreamContext function](nf-ntifs-fsrtllookupperstreamcontext.md) | The FsRtlLookupPerStreamContext macro retrieves a per-stream context structure for a file stream. |
+| [FsRtlMdlReadCompleteDev function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreadcompletedev~r2.md) | The FsRtlMdlReadCompleteDev routine completes the read operation that the FsRtlMdlReadDev routine initiated. |
+| [FsRtlMdlReadDev function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreaddev~r6.md) | The FsRtlMdlReadDev routine returns a memory descriptor list (MDL) that points directly to the specified byte range in the file cache. |
+| [FsRtlMdlReadEx function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreadex~r5.md) | The FsRtlMdlReadEx routine performs a fast cached MDL read. If the requested data is not cached, the routine reverts to an IRP based MDL read operation. |
+| [FsRtlMdlWriteCompleteDev function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlwritecompletedev~r3.md) | The FsRtlMdlWriteCompleteDev routine frees the resources that FsRtlPrepareMdlWriteDev allocated. |
 | [FsRtlMupGetProviderIdFromName function](nf-ntifs-fsrtlmupgetprovideridfromname.md) | The FsRtlMupGetProviderIdFromName routine gets the provider identifier of a network redirector that is registered with the multiple UNC provider (MUP) from the device name of the network redirector. |
 | [FsRtlMupGetProviderInfoFromFileObject function](nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md) | The FsRtlMupGetProviderInfoFromFileObject routine gets information about a network redirector that is registered with the multiple UNC provider (MUP) from a file object for a file that is located on a remote file system. |
+| [FsRtlNormalizeNtstatus function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnormalizentstatus~r1.md) | The FsRtlNormalizeNtstatus routine translates an arbitrary exception into a status value that is handled by the exception filter. |
+| [FsRtlNotifyCleanup function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifycleanup~r2.md) | When the last handle to a file object is released, the FsRtlNotifyCleanup routine removes the file object's notify structure, if present, from the specified notify list. |
+| [FsRtlNotifyCleanupAll function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifycleanupall~r1.md) | The FsRtlNotifyCleanupAll routine removes all members of the specified notification list. |
+| [FsRtlNotifyFilterChangeDirectory function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterchangedirectory~r10.md) | The FsRtlNotifyFilterChangeDirectory routine creates a notify structure for an IRP_MN_NOTIFY_CHANGE_DIRECTORY request and adds it to the specified notify list. |
+| [FsRtlNotifyFilterReportChange function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange~r9.md) | FsRtlNotifyFilterReportChange completes IRP_MN_NOTIFY_CHANGE_DIRECTORY requests that are pending in the specified notify list. |
+| [FsRtlNotifyFullChangeDirectory function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory~r9.md) | The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list. |
+| [FsRtlNotifyFullReportChange function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange~r8.md) | The FsRtlNotifyFullReportChange routine completes pending notify change IRPs. |
+| [FsRtlNotifyInitializeSync function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyinitializesync.md) | The FsRtlNotifyInitializeSync routine allocates and initializes a synchronization object for a notify list. |
+| [FsRtlNotifyUninitializeSync function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyuninitializesync.md) | The FsRtlNotifyUninitializeSync routine deallocates the synchronization object for a notify list. |
+| [FsRtlNotifyVolumeEvent function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyvolumeevent~r1.md) | The FsRtlNotifyVolumeEvent routine notifies any registered applications that a volume event is occurring. |
+| [FsRtlNotifyVolumeEventEx function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyvolumeeventex~r2.md) | The FsRtlNotifyVolumeEventEx routine notifies any registered applications that a volume event is occurring. Volume events include the volume being locked, unlocked, mounted, or made read-only. |
+| [FsRtlNumberOfRunsInLargeMcb function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnumberofrunsinlargemcb.md) | The FsRtlNumberOfRunsInLargeMcb routine returns the number of runs in a map control block (MCB). |
+| [FsRtlOplockBreakH function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreakh~r5.md) | The FsRtlOplockBreakH routine breaks CACHE_HANDLE_LEVEL opportunistic locks (oplocks). |
+| [FsRtlOplockBreakToNoneEx function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreaktononeex~r5.md) | The FsRtlOplockBreakToNoneEx routine breaks all opportunistic locks (oplocks) immediately without regard for any oplock key. |
+| [FsRtlOplockFsctrl function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl~r2.md) | FsRtlOplockFsctrl performs various opportunistic lock (oplock) operations on behalf of a file system or filter driver. |
+| [FsRtlOplockFsctrlEx function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex~r3.md) | The FsRtlOplockFsctrlEx routine performs various opportunistic lock (oplock) operations on behalf of a file system or filter driver. |
+| [FsRtlOplockIsFastIoPossible function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockisfastiopossible.md) | FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file. |
+| [FsRtlOplockIsSharedRequest function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockissharedrequest.md) | The FsRtlOplockIsSharedRequest routine determines if a request for an opportunistic lock (oplock) wants a shared oplock. |
+| [FsRtlOplockKeysEqual function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockkeysequal~r1.md) | The FsRtlOplockKeysEqual routine compares the opportunistic lock (oplock) keys that are stored in the file object extensions of two file objects. |
+| [FsRtlPostPagingFileStackOverflow function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpostpagingfilestackoverflow~r2.md) | The FsRtlPostPagingFileStackOverflow routine posts a paging file stack overflow item to the stack overflow thread. |
+| [FsRtlPostStackOverflow function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpoststackoverflow~r2.md) | The FsRtlPostStackOverflow routine posts a stack overflow item to the stack overflow thread. |
+| [FsRtlPrepareMdlWriteDev function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpreparemdlwritedev~r6.md) | The FsRtlPrepareMdlWriteDev routine returns a linked list of memory descriptor lists (MDLs) that point to the specified range of cached file data to write data directly to the cache. |
+| [FsRtlPrepareMdlWriteEx function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpreparemdlwriteex~r5.md) | The FsRtlPrepareMdlWriteEx routine returns a linked list of memory descriptor lists (MDLs) that point to the specified range of cached file data to write data directly to the cache. |
 | [FsRtlPrepareToReuseEcp function](nf-ntifs-fsrtlpreparetoreuseecp.md) | The FsRtlPrepareToReuseEcp routine resets an extra create parameter (ECP) context structure, which prepares it for reuse. |
+| [FsRtlProcessFileLock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock~r2.md) | The FsRtlProcessFileLock routine processes and completes an IRP for a file lock operation. |
 | [FsRtlQueryCachedVdl function](nf-ntifs-fsrtlquerycachedvdl.md) | The current valid data length (VDL) for a cached file is retrieved with the FsRtlQueryCachedVdl routine. |
 | [FsRtlQueryKernelEaFile function](nf-ntifs-fsrtlquerykerneleafile.md) | The routine FsRtlQueryKernelEaFile is used to build an explicit QueryEA request and synchronously wait for it to complete, returning the result. This allows the caller to do this by FileObject instead of a handle. |
 | [FsRtlRegisterFileSystemFilterCallbacks function](nf-ntifs-fsrtlregisterfilesystemfiltercallbacks.md) | File system filter drivers and file systems call the FsRtlRegisterFileSystemFilterCallbacks routine to register notification callback routines to be invoked when the underlying file system performs certain operations. |
+| [FsRtlRegisterUncProvider function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md) | The FsRtlRegisterUncProvider routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP). |
+| [FsRtlRegisterUncProviderEx function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex~r3.md) | The FsRtlRegisterUncProviderEx routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP). |
 | [FsRtlRemoveDotsFromPath function](nf-ntifs-fsrtlremovedotsfrompath.md) | The FsRtlRemoveDotsFromPath routine removes unnecessary occurrences of '.' and '..' from the specified path. |
 | [FsRtlRemoveExtraCreateParameter function](nf-ntifs-fsrtlremoveextracreateparameter.md) | The FsRtlRemoveExtraCreateParameter routine searches an ECP list for an ECP context structure and, if found, detaches it from the ECP list. |
+| [FsRtlRemoveLargeMcbEntry function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlremovelargemcbentry~r2.md) | The FsRtlRemoveLargeMcbEntry routine removes one or more mappings from a map control block (MCB). |
 | [FsRtlRemovePerFileContext function](nf-ntifs-fsrtlremoveperfilecontext.md) | The FsRtlRemovePerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a file. |
 | [FsRtlRemovePerFileObjectContext function](nf-ntifs-fsrtlremoveperfileobjectcontext.md) | For a &#0034;legacy&#0034; file system filter driver, the FsRtlRemovePerFileObjectContext function unlinks a per-file-object context information structure from the list of per-file-object contexts previously associated with a file object. |
 | [FsRtlRemovePerStreamContext function](nf-ntifs-fsrtlremoveperstreamcontext.md) | FsRtlRemovePerStreamContext removes a per-stream context structure from the list of per-stream contexts associated with a file stream. |
+| [FsRtlResetLargeMcb function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlresetlargemcb~r1.md) | The FsRtlResetLargeMcb routine truncates a map control block (MCB) structure to contain zero mapping pairs. It does not shrink the mapping pairs array. |
 | [FsRtlSetEcpListIntoIrp function](nf-ntifs-fsrtlsetecplistintoirp.md) | The FsRtlSetEcpListIntoIrp routine attaches an extra create parameter (ECP) context structure list to an IRP_MJ_CREATE operation. |
 | [FsRtlSetKernelEaFile function](nf-ntifs-fsrtlsetkerneleafile.md) | The routine FsRtlQueryKernelEaFile is used to set, modify and/or delete extended attribute (EA) values for a file and synchronously wait for it to complete, returning a result. |
 | [FsRtlSetupAdvancedHeader function](nf-ntifs-fsrtlsetupadvancedheader.md) | The FsRtlSetupAdvancedHeader macro is used by file systems to initialize an FSRTL_ADVANCED_FCB_HEADER structure for use with filter contexts. |
-| [FsRtlSetupAdvancedHeaderEx function](nf-ntifs-fsrtlsetupadvancedheaderex.md) | The FsRtlSetupAdvancedHeaderEx macro is used by file systems to initialize an FSRTL_ADVANCED_FCB_HEADER structure for use with both stream and file contexts. |
-| [FsRtlSupportsPerFileContexts function](nf-ntifs-fsrtlsupportsperfilecontexts.md) | The FsRtlSupportsPerFileContexts macro checks if per file context information is supported by the file system that is associated with a specified FILE_OBJECT. |
+| [FsRtlSplitLargeMcb function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlsplitlargemcb~r2.md) | The FsRtlSplitLargeMcb routine inserts a hole into the mappings in a map control block (MCB). |
 | [FsRtlTeardownPerFileContexts function](nf-ntifs-fsrtlteardownperfilecontexts.md) | File systems call theFsRtlTeardownPerFileContexts routine to free FSRTL_PER_FILE_CONTEXT objects that are associated with a file control block (FCB) structure. |
 | [FsRtlTeardownPerStreamContexts function](nf-ntifs-fsrtlteardownperstreamcontexts.md) | The FsRtlTeardownPerStreamContexts routine frees all per-stream context structures associated with a given FSRTL_ADVANCED_FCB_HEADER structure. |
-| [FsRtlTestAnsiCharacter function](nf-ntifs-fsrtltestansicharacter.md) | The FsRtlTestAnsiCharacter macro determines whether an ANSI or double-byte character set (DBCS) character meets the specified criteria. |
+| [FsRtlTruncateLargeMcb function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtltruncatelargemcb~r1.md) | The FsRtlTruncateLargeMcb routine truncates a large map control block (MCB). |
+| [FsRtlUninitializeFileLock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializefilelock.md) | The FsRtlUninitializeFileLock routine uninitializes a FILE_LOCK structure. |
+| [FsRtlUninitializeLargeMcb function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializelargemcb.md) | The FsRtlUninitializeLargeMcb routine uninitializes a large map-control block (MCB). |
+| [FsRtlUninitializeOplock function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializeoplock.md) | FsRtlUninitializeOplock uninitializes an opportunistic lock (oplock) pointer. |
+| [FsRtlUpperOplockFsctrl function](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlupperoplockfsctrl~r4.md) | The FsRtlUpperOplockFsctrl routine processes opportunistic lock (oplock) requests and acknowledgments for secondary, or layered, file systems. |
 | [FsRtlValidateReparsePointBuffer function](nf-ntifs-fsrtlvalidatereparsepointbuffer.md) | The FsRtlValidateReparsePointBuffer routine verifies that the specified reparse point buffer is valid. |
 | [GetSecurityUserInfo function](nf-ntifs-getsecurityuserinfo.md) | The GetSecurityUserInfo function retrieves information about a logon session. |
 | [IoAcquireVpbSpinLock function](nf-ntifs-ioacquirevpbspinlock.md) | The IoAcquireVpbSpinLock routine acquires the Volume Parameter Block (VPB) spin lock. |
@@ -170,7 +239,6 @@ Ntifs.h contain these programming interfaces:
 | [IoSetDeviceToVerify function](nf-ntifs-iosetdevicetoverify.md) | The IoSetDeviceToVerify routine specifies a device object to be verified. The specified device object represents a removable media device. |
 | [IoSetStartIoAttributes function](nf-ntifs-iosetstartioattributes.md) | The IoSetStartIoAttributes routine sets attributes for the driver's StartIo routine. |
 | [IoSetTopLevelIrp function](nf-ntifs-iosettoplevelirp.md) | The IoSetTopLevelIrp routine sets the value of the TopLevelIrp field of the current thread. |
-| [IoSizeOfIrp function](nf-ntifs-iosizeofirp.md) | The IoSizeOfIrp routine determines the size in bytes for an IRP, given the number of stack locations in the IRP. |
 | [IoStartNextPacket function](nf-ntifs-iostartnextpacket.md) | The IoStartNextPacket routine dequeues the next IRP, if any, from the given device object's associated device queue and calls the driver's StartIo routine. |
 | [IoStartNextPacketByKey function](nf-ntifs-iostartnextpacketbykey.md) | The IoStartNextPacketByKey routine dequeues the next I/O request packet from the specified device object's associated device queue according to a specified sort-key value and calls the driver's StartIo routine with that IRP. |
 | [IoStartPacket function](nf-ntifs-iostartpacket.md) | The IoStartPacket routine calls the driver's StartIo routine with the given IRP or inserts the IRP into the device queue associated with the given device object if the device is already busy. |
@@ -181,8 +249,6 @@ Ntifs.h contain these programming interfaces:
 | [IoUnregisterFsRegistrationChange function](nf-ntifs-iounregisterfsregistrationchange.md) | The IoUnregisterFsRegistrationChange routine unregisters file system filter driver's file system registration change notification routine. |
 | [IoVerifyVolume function](nf-ntifs-ioverifyvolume.md) | The IoVerifyVolume routine sends a volume verify request to the given removable-media device. |
 | [IoWriteErrorLogEntry function](nf-ntifs-iowriteerrorlogentry.md) | The IoWriteErrorLogEntry routine queues a given error log packet to the system error logging thread. |
-| [IsReparseTagMicrosoft function](nf-ntifs-isreparsetagmicrosoft.md) | The IsReparseTagMicrosoft macro determines whether a reparse point tag indicates a Microsoft reparse point. |
-| [IsReparseTagNameSurrogate function](nf-ntifs-isreparsetagnamesurrogate.md) | The IsReparseTagNameSurrogate macro determines whether a tag's associated reparse point is a surrogate for another named entity, such as a volume mount point. |
 | [KeGetProcessorIndexFromNumber function](nf-ntifs-kegetprocessorindexfromnumber.md) | The KeGetProcessorIndexFromNumber routine converts a group number and a group-relative processor number to a systemwide processor index. |
 | [KeInitializeQueue function](nf-ntifs-keinitializequeue.md) | The KeInitializeQueue routine initializes a queue object on which threads can wait for entries. |
 | [KeInsertHeadQueue function](nf-ntifs-keinsertheadqueue.md) | The KeInsertHeadQueue routine inserts an entry at the head of the given queue if it cannot immediately use the entry to satisfy a thread wait. |
@@ -203,34 +269,6 @@ Ntifs.h contain these programming interfaces:
 | [MmIsRecursiveIoFault function](nf-ntifs-mmisrecursiveiofault.md) | The MmIsRecursiveIoFault routine determines whether the current page fault is occurring during an I/O operation. |
 | [MmPrefetchPages function](nf-ntifs-mmprefetchpages.md) | The MmPrefetchPages routine reads groups of pages from secondary storage in the optimal fashion. |
 | [MmSetAddressRangeModified function](nf-ntifs-mmsetaddressrangemodified.md) | The MmSetAddressRangeModified routine marks currently valid pages in the specified range of the system cache as modified. |
-| [NtAllocateVirtualMemory function](nf-ntifs-ntallocatevirtualmemory.md) | The ZwAllocateVirtualMemory routine reserves, commits, or both, a region of pages within the user-mode virtual address space of a specified process. |
-| [NtClose function](nf-ntifs-ntclose.md) | The ZwClose routine closes an object handle. |
-| [NtCreateFile function](nf-ntifs-ntcreatefile.md) | The ZwCreateFile routine creates a new file or opens an existing file. |
-| [NtDeviceIoControlFile function](nf-ntifs-ntdeviceiocontrolfile.md) | The ZwDeviceIoControlFile routine sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified operation. |
-| [NtDuplicateToken function](nf-ntifs-ntduplicatetoken.md) | The ZwDuplicateToken function creates a handle to a new access token that duplicates an existing token. This function can create either a primary token or an impersonation token. |
-| [NtFlushBuffersFileEx function](nf-ntifs-ntflushbuffersfileex.md) | The ZwFlushBuffersFileEx routine is called by a file system filter driver to send a flush request for a given file to the file system. An optional flush operation flag can be set to control how file data is written to storage. |
-| [NtFreeVirtualMemory function](nf-ntifs-ntfreevirtualmemory.md) | The ZwFreeVirtualMemory routine releases, decommits, or both, a region of pages within the virtual address space of a specified process. |
-| [NtFsControlFile function](nf-ntifs-ntfscontrolfile.md) | The ZwFsControlFile routine sends a control code directly to a specified file system or file system filter driver, causing the corresponding driver to perform the specified action. |
-| [NtLockFile function](nf-ntifs-ntlockfile.md) | The ZwLockFile routine requests a byte-range lock for the specified file. |
-| [NtOpenFile function](nf-ntifs-ntopenfile.md) | The ZwOpenFile routine opens an existing file, directory, device, or volume. |
-| [NtOpenProcessTokenEx function](nf-ntifs-ntopenprocesstokenex.md) | The ZwOpenProcessTokenEx routine opens the access token associated with a process. |
-| [NtOpenThreadTokenEx function](nf-ntifs-ntopenthreadtokenex.md) | The ZwOpenThreadTokenEx routine opens the access token associated with a thread. |
-| [NtQueryDirectoryFile function](nf-ntifs-ntquerydirectoryfile.md) | The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle. |
-| [NtQueryDirectoryFileEx function](nf-ntifs-ntquerydirectoryfileex.md) | The ZwQueryDirectoryFileEx routine returns information about files in the directory specified by the FileHandle parameter. |
-| [NtQueryInformationFile function](nf-ntifs-ntqueryinformationfile.md) | The ZwQueryInformationFile routine returns various kinds of information about a file object. |
-| [NtQueryInformationToken function](nf-ntifs-ntqueryinformationtoken.md) | The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. |
-| [NtQueryObject function](nf-ntifs-ntqueryobject.md) | The ZwQueryObject routine provides information about a supplied object. |
-| [NtQueryQuotaInformationFile function](nf-ntifs-ntqueryquotainformationfile.md) | The ZwQueryQuotaInformationFile routine retrieves quota entries associated with the volume specified by the FileHandle parameter. |
-| [NtQuerySecurityObject function](nf-ntifs-ntquerysecurityobject.md) | The ZwQuerySecurityObject routine retrieves a copy of an object's security descriptor. |
-| [NtQueryVirtualMemory function](nf-ntifs-ntqueryvirtualmemory.md) | The ZwQueryVirtualMemory routine determines the state, protection, and type of a region of pages within the virtual address space of the subject process. |
-| [NtQueryVolumeInformationFile function](nf-ntifs-ntqueryvolumeinformationfile.md) | The ZwQueryVolumeInformationFile routine retrieves information about the volume associated with a given file, directory, storage device, or volume. |
-| [NtReadFile function](nf-ntifs-ntreadfile.md) | The ZwReadFile routine reads data from an open file. |
-| [NtSetInformationFile function](nf-ntifs-ntsetinformationfile.md) | The ZwSetInformationFile routine changes various kinds of information about a file object. |
-| [NtSetInformationToken function](nf-ntifs-ntsetinformationtoken.md) | The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information. |
-| [NtSetQuotaInformationFile function](nf-ntifs-ntsetquotainformationfile.md) | The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume. |
-| [NtSetSecurityObject function](nf-ntifs-ntsetsecurityobject.md) | The ZwSetSecurityObject routine sets an object's security state. |
-| [NtUnlockFile function](nf-ntifs-ntunlockfile.md) | The ZwUnlockFile routine unlocks a byte-range lock in a file. |
-| [NtWriteFile function](nf-ntifs-ntwritefile.md) | The ZwWriteFile routine writes data to an open file. |
 | [ObIsKernelHandle function](nf-ntifs-obiskernelhandle.md) | The ObIsKernelHandle routine determines whether the specified handle is a kernel handle. |
 | [ObOpenObjectByPointer function](nf-ntifs-obopenobjectbypointer.md) | The ObOpenObjectByPointer function opens an object referenced by a pointer and returns a handle to the object. |
 | [ObQueryNameString function](nf-ntifs-obquerynamestring.md) | The ObQueryNameString routine supplies the name, if there is one, of a given object to which the caller has a pointer. |
@@ -297,7 +335,6 @@ Ntifs.h contain these programming interfaces:
 | [RtlFillMemoryUlong function](nf-ntifs-rtlfillmemoryulong.md) | The RtlFillMemoryUlong routine fills the specified range of memory with one or more repetitions of a ULONG value. |
 | [RtlFillMemoryUlong function](nf-ntifs-rtlfillmemoryulong~r1.md) | The RtlFillMemoryUlong routine fills the specified range of memory with one or more repetitions of a ULONG value. |
 | [RtlFillMemoryUlonglong function](nf-ntifs-rtlfillmemoryulonglong.md) | The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value. |
-| [RtlFillMemoryUlonglong function](nf-ntifs-rtlfillmemoryulonglong~r1.md) | The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value. |
 | [RtlFindUnicodePrefix function](nf-ntifs-rtlfindunicodeprefix.md) | The RtlFindUnicodePrefix routine searches for the best match for a given Unicode file name in a prefix table. |
 | [RtlFreeHeap function](nf-ntifs-rtlfreeheap.md) | The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap. |
 | [RtlFreeHeap function](nf-ntifs-rtlfreeheap~r1.md) | The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap. |
@@ -328,9 +365,7 @@ Ntifs.h contain these programming interfaces:
 | [RtlNextUnicodePrefix function](nf-ntifs-rtlnextunicodeprefix.md) | The RtlNextUnicodePrefix routine is used to enumerate the elements in a Unicode prefix table. |
 | [RtlNtStatusToDosError function](nf-ntifs-rtlntstatustodoserror.md) | The RtlNtStatusToDosError routine converts the specified NTSTATUS code to its equivalent system error code. |
 | [RtlNtStatusToDosErrorNoTeb function](nf-ntifs-rtlntstatustodoserrornoteb.md) | Reserved for system use. |
-| [RtlOemStringToCountedUnicodeSize function](nf-ntifs-rtloemstringtocountedunicodesize.md) | The RtlOemStringToCountedUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a counted Unicode string. |
 | [RtlOemStringToCountedUnicodeString function](nf-ntifs-rtloemstringtocountedunicodestring.md) | The RtlOemStringToCountedUnicodeString routine translates the specified source string into a Unicode string using the current system OEM code page. |
-| [RtlOemStringToUnicodeSize function](nf-ntifs-rtloemstringtounicodesize.md) | The RtlOemStringToUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a null-terminated Unicode string. |
 | [RtlOemStringToUnicodeString function](nf-ntifs-rtloemstringtounicodestring.md) | The RtlOemStringToUnicodeString routine translates a given source string into a null-terminated Unicode string using the current system OEM code page. |
 | [RtlOemToUnicodeN function](nf-ntifs-rtloemtounicoden.md) | The RtlOemToUnicodeN routine translates the specified source string into a Unicode string, using the current system OEM code page. |
 | [RtlQueryThreadPlaceholderCompatibilityMode function](nf-ntifs-rtlquerythreadplaceholdercompatibilitymode.md) | RtlQueryThreadPlaceholderCompatibilityMode is a routine which returns the placeholder compatibility mode for the current thread. |
@@ -348,7 +383,6 @@ Ntifs.h contain these programming interfaces:
 | [RtlTimeToSecondsSince1980 function](nf-ntifs-rtltimetosecondssince1980.md) | The RtlTimeToSecondsSince1980 routine converts a given absolute system time value to the elapsed time, in seconds, since the beginning of 1980. |
 | [RtlUTF8ToUnicodeN function](nf-ntifs-rtlutf8tounicoden.md) | The RtlUTF8ToUnicodeN routine converts a UTF-8 string to a Unicode string. |
 | [RtlUnicodeStringToCountedOemString function](nf-ntifs-rtlunicodestringtocountedoemstring.md) | The RtlUnicodeStringToCountedOemString routine translates the specified Unicode source string into a counted OEM string using the current system OEM code page. |
-| [RtlUnicodeStringToOemSize function](nf-ntifs-rtlunicodestringtooemsize.md) | The RtlUnicodeStringToOemSize routine determines the size, in bytes, that a given Unicode string will be after it is translated into an OEM string. |
 | [RtlUnicodeStringToOemString function](nf-ntifs-rtlunicodestringtooemstring.md) | The RtlUnicodeStringToOemString routine translates a given Unicode source string into an OEM string using the current system OEM code page. |
 | [RtlUnicodeToMultiByteN function](nf-ntifs-rtlunicodetomultibyten.md) | The RtlUnicodeToMultiByteN routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set. |
 | [RtlUnicodeToMultiByteSize function](nf-ntifs-rtlunicodetomultibytesize.md) | The RtlUnicodeToMultiByteSize routine determines the number of bytes that are required to store the multibyte translation for the specified Unicode string. The translation is assumed to use the current system ANSI code page (ACP). |
@@ -365,7 +399,6 @@ Ntifs.h contain these programming interfaces:
 | [SeCaptureSubjectContext function](nf-ntifs-secapturesubjectcontext.md) | The SeCaptureSubjectContext routine captures the security context of the calling thread for access validation and auditing. |
 | [SeCreateClientSecurity function](nf-ntifs-secreateclientsecurity.md) | The SeCreateClientSecurity routine initializes a security client context structure with the information needed to call SeImpersonateClientEx. |
 | [SeCreateClientSecurityFromSubjectContext function](nf-ntifs-secreateclientsecurityfromsubjectcontext.md) | The SeCreateClientSecurityFromSubjectContext routine retrieves the access token for a security subject context and uses the result to initialize a security client context with the information needed to call SeImpersonateClientEx. |
-| [SeDeleteClientSecurity function](nf-ntifs-sedeleteclientsecurity.md) | The SeDeleteClientSecurity routine deletes a client security context. |
 | [SeDeleteObjectAuditAlarm function](nf-ntifs-sedeleteobjectauditalarm.md) | The SeDeleteObjectAuditAlarm routine generates audit and alarm messages for an object that is marked for deletion. |
 | [SeFilterToken function](nf-ntifs-sefiltertoken.md) | The SeFilterToken routine creates a new access token that is a restricted version of an existing access token. |
 | [SeFreePrivileges function](nf-ntifs-sefreeprivileges.md) | The SeFreePrivileges routine frees a privilege set returned by SeAccessCheck. |
@@ -378,7 +411,6 @@ Ntifs.h contain these programming interfaces:
 | [SeQueryAuthenticationIdToken function](nf-ntifs-sequeryauthenticationidtoken.md) | The SeQueryAuthenticationIdToken routine retrieves the authentication ID of an access token. |
 | [SeQueryInformationToken function](nf-ntifs-sequeryinformationtoken.md) | The SeQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. |
 | [SeQuerySecurityDescriptorInfo function](nf-ntifs-sequerysecuritydescriptorinfo.md) | The SeQuerySecurityDescriptorInfo routine retrieves a copy of an object's security descriptor. |
-| [SeQuerySubjectContextToken function](nf-ntifs-sequerysubjectcontexttoken.md) | The SeQuerySubjectContextToken macro retrieves the access token for a security subject context. |
 | [SeRegisterLogonSessionTerminatedRoutine function](nf-ntifs-seregisterlogonsessionterminatedroutine.md) | The SeRegisterLogonSessionTerminatedRoutine routine registers a callback routine to be called when a logon session terminates. A logon session terminates when the last token referencing the logon session is deleted. |
 | [SeReleaseSubjectContext function](nf-ntifs-sereleasesubjectcontext.md) | The SeReleaseSubjectContext routine releases a subject security context captured by an earlier call to SeCaptureSubjectContext. |
 | [SeSetAccessStateGenericMapping function](nf-ntifs-sesetaccessstategenericmapping.md) | The SeSetAccessStateGenericMapping routine sets the generic mapping field of an ACCESS_STATE structure. |
@@ -436,149 +468,146 @@ Ntifs.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [DRIVER_FS_NOTIFICATION callback](nc-ntifs-driver-fs-notification.md) | A PDRIVER_FS_NOTIFICATION-typed routine is called by the operating system when a file system registers or unregisters itself by using IoRegisterFileSystem or IoUnregisterFileSystem. |
-| [PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK callback](nc-ntifs-pfsrtl-extra-create-parameter-cleanup-callback.md) | A file system filter driver (legacy filter) or a minifilter driver can register a PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK-typed routine as the filter driver's CleanupCallback callback routine for an extra create parameter (ECP) context structure. |
+| [DRIVER_FS_NOTIFICATION callback](nc-ntifs-driver_fs_notification.md) | A PDRIVER_FS_NOTIFICATION-typed routine is called by the operating system when a file system registers or unregisters itself by using IoRegisterFileSystem or IoUnregisterFileSystem. |
+| [PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK callback](nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md) | A file system filter driver (legacy filter) or a minifilter driver can register a PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK-typed routine as the filter driver's CleanupCallback callback routine for an extra create parameter (ECP) context structure. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [ACCESS_ALLOWED_ACE structure](ns-ntifs--access-allowed-ace.md) | The ACCESS_ALLOWED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) that controls access to an object. |
-| [ACCESS_DENIED_ACE structure](ns-ntifs--access-denied-ace.md) | The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object. |
-| [ACE_HEADER structure](ns-ntifs--ace-header.md) | The ACE_HEADER structure describes the type and size of an access-control entry (ACE). |
-| [ACL structure](ns-ntifs--acl.md) | The ACL structure is the header of an access-control list (ACL). A complete ACL consists of an ACL structure followed by an ordered list of zero or more access-control entries (ACE). |
-| [ATOMIC_CREATE_ECP_CONTEXT structure](ns-ntifs--atomic-create-ecp-context.md) | This structure allows supplemental operations to be performed on a file atomically during create. |
-| [BOOT_AREA_INFO structure](ns-ntifs--boot-area-info.md) | The BOOT_AREA_INFO structure contains the output for the FSCTL_GET_BOOT_AREA_INFO control code. |
-| [ECP_OPEN_PARAMETERS structure](ns-ntifs--ecp-open-parameters.md) | The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file. |
-| [FILE_ACCESS_INFORMATION structure](ns-ntifs--file-access-information.md) | The FILE_ACCESS_INFORMATION structure is used to query for or set the access rights of a file. |
-| [FILE_ALLOCATION_INFORMATION structure](ns-ntifs--file-allocation-information.md) | The FILE_ALLOCATION_INFORMATION structure is used to set the allocation size for a file. |
-| [FILE_ALL_INFORMATION structure](ns-ntifs--file-all-information.md) | The FILE_ALL_INFORMATION structure is a container for several FILE_XXX_INFORMATION structures. |
-| [FILE_BOTH_DIR_INFORMATION structure](ns-ntifs--file-both-dir-information.md) | The FILE_BOTH_DIR_INFORMATION structure is used to query detailed information for the files in a directory. |
-| [FILE_COMPLETION_INFORMATION structure](ns-ntifs--file-completion-information.md) | The FILE_COMPLETION_INFORMATION structure contains the port handle and key for an I/O completion port created for a file handle. |
-| [FILE_COMPRESSION_INFORMATION structure](ns-ntifs--file-compression-information.md) | The FILE_COMPRESSION_INFORMATION structure describes the state of a compressed data buffer. |
-| [FILE_DIRECTORY_INFORMATION structure](ns-ntifs--file-directory-information.md) | The FILE_DIRECTORY_INFORMATION structure is used to query detailed information for the files in a directory. |
-| [FILE_EA_INFORMATION structure](ns-ntifs--file-ea-information.md) | The FILE_EA_INFORMATION structure is used to query for the size of the extended attributes (EA) for a file. |
-| [FILE_FS_ATTRIBUTE_INFORMATION structure](ns-ntifs--file-fs-attribute-information.md) | The FILE_FS_ATTRIBUTE_INFORMATION structure is used to query attribute information for a file system. |
-| [FILE_FS_CONTROL_INFORMATION structure](ns-ntifs--file-fs-control-information.md) | The FILE_FS_CONTROL_INFORMATION structure is used to query or set control information for the files in a directory. |
-| [FILE_FS_DRIVER_PATH_INFORMATION structure](ns-ntifs--file-fs-driver-path-information.md) | The FILE_FS_DRIVER_PATH_INFORMATION structure is used to query whether a given driver is in the I/O path for a file system volume. |
-| [FILE_FS_PERSISTENT_VOLUME_INFORMATION structure](ns-ntifs--file-fs-persistent-volume-information.md) | The FILE_FS_PERSISTENT_VOLUME_INFORMATION structure is used to control persistent settings for a file system volume. Persistent settings persist on a file system volume between reboots of the computer. |
-| [FILE_FULL_DIR_INFORMATION structure](ns-ntifs--file-full-dir-information.md) | The FILE_FULL_DIR_INFORMATION structure is used to query detailed information for the files in a directory. |
-| [FILE_GET_EA_INFORMATION structure](ns-ntifs--file-get-ea-information.md) | The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (EA) information. |
-| [FILE_GET_QUOTA_INFORMATION structure](ns-ntifs--file-get-quota-information.md) | The FILE_GET_QUOTA_INFORMATION structure is used to query for quota information. |
-| [FILE_ID_BOTH_DIR_INFORMATION structure](ns-ntifs--file-id-both-dir-information.md) | The FILE_ID_BOTH_DIR_INFORMATION structure is used to query file reference number information for the files in a directory. |
-| [FILE_ID_EXTD_BOTH_DIR_INFORMATION structure](ns-ntifs--file-id-extd-both-dir-information.md) | The FILE_ID_EXTD_BOTH_DIR_INFORMATION structure is used to query file reference number information for the files in a directory. |
-| [FILE_ID_FULL_DIR_INFORMATION structure](ns-ntifs--file-id-full-dir-information.md) | The FILE_ID_FULL_DIR_INFORMATION structure is used to query detailed information for the files in a directory. |
-| [FILE_ID_GLOBAL_TX_DIR_INFORMATION structure](ns-ntifs--file-id-global-tx-dir-information.md) | The FILE_ID_GLOBAL_TX_DIR_INFORMATION structure contains information about transactional visibility for the files in a directory. |
-| [FILE_INTERNAL_INFORMATION structure](ns-ntifs--file-internal-information.md) | The FILE_INTERNAL_INFORMATION structure is used to query for the file system's 8-byte file reference number for a file. |
-| [FILE_LEVEL_TRIM structure](ns-ntifs--file-level-trim.md) | The FILE_LEVEL_TRIM structure contains an array of byte ranges to trim for a file. |
-| [FILE_LEVEL_TRIM_OUTPUT structure](ns-ntifs--file-level-trim-output.md) | The FILE_LEVEL_TRIM_OUTPUT structure contains the results of a trim operation performed by an FSCTL_FILE_LEVEL_TRIM request. |
-| [FILE_LEVEL_TRIM_RANGE structure](ns-ntifs--file-level-trim-range.md) | Contains the offset and length of a trim range for a file. |
-| [FILE_LINKS_INFORMATION structure](ns-ntifs--file-links-information.md) | The FILE_LINKS_INFORMATION structure is used to query NTFS hard links to an existing file. |
-| [FILE_LINK_ENTRY_INFORMATION structure](ns-ntifs--file-link-entry-information.md) | The FILE_LINK_ENTRY_INFORMATION structure describes a single NTFS hard link to an existing file. |
-| [FILE_LINK_INFORMATION structure](ns-ntifs--file-link-information.md) | The FILE_LINK_INFORMATION structure is used to create an NTFS hard link to an existing file. |
-| [FILE_MAILSLOT_QUERY_INFORMATION structure](ns-ntifs--file-mailslot-query-information.md) | The FILE_MAILSLOT_QUERY_INFORMATION structure contains information about a mailslot. |
-| [FILE_MAILSLOT_SET_INFORMATION structure](ns-ntifs--file-mailslot-set-information.md) | The FILE_MAILSLOT_SET_INFORMATION structure is used to set a value on a mailslot. |
-| [FILE_MODE_INFORMATION structure](ns-ntifs--file-mode-information.md) | The FILE_MODE_INFORMATION structure is used to query or set the access mode of a file. |
-| [FILE_NAMES_INFORMATION structure](ns-ntifs--file-names-information.md) | A FILE_NAMES_INFORMATION structure used to query detailed information about the names of files in a directory. |
-| [FILE_NETWORK_PHYSICAL_NAME_INFORMATION structure](ns-ntifs--file-network-physical-name-information.md) | Contains the full UNC physical pathname for a file or directory on a remote file share. |
-| [FILE_OBJECTID_INFORMATION structure](ns-ntifs--file-objectid-information.md) | The FILE_OBJECTID_INFORMATION structure is used to query for object ID information for the files in a directory on an NTFS volume. |
-| [FILE_PIPE_INFORMATION structure](ns-ntifs--file-pipe-information.md) | The FILE_PIPE_INFORMATION structure contains information about a named pipe that is not specific to the local or the remote end of the pipe. |
-| [FILE_PIPE_LOCAL_INFORMATION structure](ns-ntifs--file-pipe-local-information.md) | The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe. |
-| [FILE_PIPE_REMOTE_INFORMATION structure](ns-ntifs--file-pipe-remote-information.md) | The FILE_PIPE_REMOTE_INFORMATION structure contains information about the remote end of a named pipe. |
-| [FILE_PROVIDER_EXTERNAL_INFO_V0 structure](ns-ntifs--file-provider-external-info-v0.md) | This structure may be altered or unavailable. Instead, use FILE_PROVIDER_EXTERNAL_INFO_V1. |
-| [FILE_PROVIDER_EXTERNAL_INFO_V1 structure](ns-ntifs--file-provider-external-info-v1.md) | The FILE_PROVIDER_EXTERNAL_INFO_V1 structure defines metadata specific to files provided by WOF_PROVIDER_FILE. |
-| [FILE_QUOTA_INFORMATION structure](ns-ntifs--file-quota-information.md) | The FILE_QUOTA_INFORMATION structure is used to query or set per-user quota information for each of the files in a directory. |
-| [FILE_RENAME_INFORMATION structure](ns-ntifs--file-rename-information.md) | The FILE_RENAME_INFORMATION structure is used to rename a file. |
-| [FILE_REPARSE_POINT_INFORMATION structure](ns-ntifs--file-reparse-point-information.md) | The FILE_REPARSE_POINT_INFORMATION structure is used to query for information about a reparse point. |
-| [FILE_STREAM_INFORMATION structure](ns-ntifs--file-stream-information.md) | The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file. |
-| [FILE_TIMESTAMPS structure](ns-ntifs--file-timestamps.md) | The FILE_TIMESTAMPS structure specifies the last recorded instance of specific actions on a file. |
-| [FILE_ZERO_DATA_INFORMATION structure](ns-ntifs--file-zero-data-information.md) | Contains a range of a file to set to zeros. |
-| [FILE_ZERO_DATA_INFORMATION_EX structure](ns-ntifs--file-zero-data-information-ex.md) | Contains a range of a file to set to zeros. |
-| [FSCTL_OFFLOAD_READ_INPUT structure](ns-ntifs--fsctl-offload-read-input.md) | The FSCTL_OFFLOAD_READ_INPUT structure contains the input for the FSCTL_OFFLOAD_READ control code request. |
-| [FSCTL_OFFLOAD_READ_OUTPUT structure](ns-ntifs--fsctl-offload-read-output.md) | The FSCTL_OFFLOAD_READ_OUTPUT structure contains the output for the FSCTL_OFFLOAD_READ control code request. |
-| [FSCTL_OFFLOAD_WRITE_INPUT structure](ns-ntifs--fsctl-offload-write-input.md) | The FSCTL_OFFLOAD_WRITE_INPUT structure contains the input for the FSCTL_OFFLOAD_WRITE control code request. |
-| [FSCTL_OFFLOAD_WRITE_OUTPUT structure](ns-ntifs--fsctl-offload-write-output.md) | The FSCTL_OFFLOAD_WRITE_OUTPUT structure contains the output for the FSCTL_OFFLOAD_WRITE control code request. |
-| [FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT structure](ns-ntifs--fsctl-query-volume-numa-info-output.md) | The FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT structure specifies the Non-Uniform Memory Architecture (NUMA) node the volume resides on. |
-| [FSRTL_ADVANCED_FCB_HEADER structure](ns-ntifs--fsrtl-advanced-fcb-header.md) | The FSRTL_ADVANCED_FCB_HEADER structure contains context information that a file system maintains about a file. |
-| [FSRTL_COMMON_FCB_HEADER structure](ns-ntifs--fsrtl-common-fcb-header.md) | Do not use the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure. |
-| [FSRTL_PER_FILEOBJECT_CONTEXT structure](ns-ntifs--fsrtl-per-fileobject-context.md) | The opaque FSRTL_PER_FILEOBJECT_CONTEXT structure is used by the operating system to track file system filter-driver-defined context information structures for a file object. |
-| [FSRTL_PER_FILE_CONTEXT structure](ns-ntifs--fsrtl-per-file-context.md) | A legacy file system filter driver can use a FSRTL_PER_FILE_CONTEXT structure to associate driver-specific context information to an open file. |
-| [FSRTL_PER_STREAM_CONTEXT structure](ns-ntifs--fsrtl-per-stream-context.md) | The FSRTL_PER_STREAM_CONTEXT structure contains context information that a file system filter driver maintains about a file stream. |
-| [FS_FILTER_SECTION_SYNC_OUTPUT structure](ns-ntifs--fs-filter-section-sync-output.md) | The FS_FILTER_SECTION_SYNC_OUTPUT structure contains information describing the attributes of the section that is being created. |
-| [IO_PRIORITY_INFO structure](ns-ntifs--io-priority-info.md) | The IO_PRIORITY_INFO structure is used to hold thread priority information. |
-| [IRP structure](ns-ntifs--irp.md) | The IRP structure is a partially opaque structure that represents an I/O request packet. Drivers can use the following members of the IRP structure. |
-| [MEMORY_BASIC_INFORMATION structure](ns-ntifs--memory-basic-information.md) | Contains information about a range of pages in the virtual address space of a process. |
-| [NETWORK_APP_INSTANCE_ECP_CONTEXT structure](ns-ntifs--network-app-instance-ecp-context.md) | The NETWORK_APP_INSTANCE_ECP_CONTEXT structure is an Extra Create Parameter (ECP) and contains an application instance identifier to associate with a file. |
-| [NETWORK_OPEN_ECP_CONTEXT structure](ns-ntifs--network-open-ecp-context.md) | The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files. |
-| [NETWORK_OPEN_ECP_CONTEXT structure](ns-ntifs--network-open-ecp-context~r1.md) | The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files. |
-| [NETWORK_OPEN_ECP_CONTEXT_V0 structure](ns-ntifs--network-open-ecp-context-v0.md) | The NETWORK_OPEN_ECP_CONTEXT_V0 structure is used to interpret network ECP contexts on files. |
-| [NFS_OPEN_ECP_CONTEXT structure](ns-ntifs--nfs-open-ecp-context.md) | The NFS_OPEN_ECP_CONTEXT structure is used by the Network File System (NFS) server to open files in response to client requests. |
-| [OPEN_REPARSE_LIST structure](ns-ntifs--open-reparse-list.md) | Points to a list of OPEN_REPARSE_LIST_ENTRY structures that specify the tag and possibly GUID that should be opened directly without returning STATUS_REPARSE. |
-| [OPEN_REPARSE_LIST_ENTRY structure](ns-ntifs--open-reparse-list-entry.md) | This structure supports callers opening specific reparse points without inhibiting reparse behavior for all classes of reparse points. |
-| [PMARK_HANDLE_INFO32 structure](ns-ntifs-pmark-handle-info32.md) | Contains information that is used to mark a specified file or directory, and its update sequence number (USN) change journal record with data about changes. |
-| [PREFETCH_OPEN_ECP_CONTEXT structure](ns-ntifs--prefetch-open-ecp-context.md) | The PREFETCH_OPEN_ECP_CONTEXT structure communicates whether the prefetcher performs a given open request on a file. |
-| [PUBLIC_OBJECT_BASIC_INFORMATION structure](ns-ntifs--public-object-basic-information.md) | The PUBLIC_OBJECT_BASIC_INFORMATION structure holds a subset of the full information that is available for an object. |
-| [PUBLIC_OBJECT_TYPE_INFORMATION structure](ns-ntifs---public-object-type-information.md) | The PUBLIC_OBJECT_TYPE_INFORMATION structure holds the type name of the object. |
-| [QUERY_FILE_LAYOUT_INPUT structure](ns-ntifs--query-file-layout-input.md) | The QUERY_FILE_LAYOUT_INPUT structure selects which file layout entries are returned from a FSCTL_QUERY_FILE_LAYOUT request. |
-| [QUERY_FILE_LAYOUT_OUTPUT structure](ns-ntifs--query-file-layout-output.md) | The QUERY_FILE_LAYOUT_OUTPUT structure serves as a header for the file layout entries that are returned from a FSCTL_QUERY_FILE_LAYOUT request. |
-| [REFS_SMR_VOLUME_GC_PARAMETERS structure](ns-ntifs--refs-smr-volume-gc-parameters.md) | The REFS_SMR_VOLUME_GC_PARAMETERS structure. |
-| [REFS_SMR_VOLUME_INFO_OUTPUT structure](ns-ntifs--refs-smr-volume-info-output.md) | The REFS_SMR_VOLUME_INFO_OUTPUT structure describes a Shingled Magnetic Recording (SMR) volume's current state on space and garbage collection activities. |
-| [REPARSE_DATA_BUFFER structure](ns-ntifs--reparse-data-buffer.md) | The REPARSE_DATA_BUFFER structure contains reparse point data for a Microsoft reparse point. |
-| [REPARSE_GUID_DATA_BUFFER structure](ns-ntifs--reparse-guid-data-buffer.md) | The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point. |
-| [SECURITY_DESCRIPTOR structure](ns-ntifs--security-descriptor.md) | The SECURITY_DESCRIPTOR structure specifies the security information that is associated with an object. For more information, see the reference page for SECURITY_DESCRIPTOR in the Installable File System documentation. |
-| [SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT structure](ns-ntifs--set-dax-alloc-alignment-hint-input.md) | This structure is for internal use only and should not be called from your code. |
-| [SE_EXPORTS structure](ns-ntifs--se-exports.md) | The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers. |
-| [SE_SID structure](ns-ntifs--se-sid.md) | The SE_SID union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation. |
-| [SE_TOKEN_USER structure](ns-ntifs--se-token-user.md) | The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation. |
-| [SID_AND_ATTRIBUTES structure](ns-ntifs--sid-and-attributes.md) | The SID_AND_ATTRIBUTES structure represents a security identifier (SID) and its attributes. SIDs are used to uniquely identify users or groups. |
-| [SID_IDENTIFIER_AUTHORITY structure](ns-ntifs--sid-identifier-authority.md) | The SID_IDENTIFIER_AUTHORITY structure represents the top-level authority of a security identifier (SID). |
-| [SRV_OPEN_ECP_CONTEXT structure](ns-ntifs--srv-open-ecp-context.md) | The SRV_OPEN_ECP_CONTEXT structure is used by a server to conditionally open files in response to client requests. |
-| [SYSTEM_AUDIT_ACE structure](ns-ntifs--system-audit-ace.md) | The SYSTEM_AUDIT_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what types of access cause system-level notifications. |
-| [SYSTEM_PROCESS_TRUST_LABEL_ACE structure](ns-ntifs--system-process-trust-label-ace.md) | Reserved. |
-| [SYSTEM_RESOURCE_ATTRIBUTE_ACE structure](ns-ntifs--system-resource-attribute-ace.md) | The SYSTEM_RESOURCE_ATTRIBUTE_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what rights a particular claim has to a resource. |
-| [SYSTEM_SCOPED_POLICY_ID_ACE structure](ns-ntifs--system-scoped-policy-id-ace.md) | The SYSTEM_SCOPED_POLICY_ID_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying rights for a scoped policy identifer. |
-| [TOKEN_CONTROL structure](ns-ntifs--token-control.md) | The TOKEN_CONTROL structure contains information that identifies an access token. |
-| [TOKEN_DEFAULT_DACL structure](ns-ntifs--token-default-dacl.md) | The TOKEN_DEFAULT_DACL structure specifies a discretionary access-control list (DACL). |
-| [TOKEN_GROUPS structure](ns-ntifs--token-groups.md) | TOKEN_GROUPS contains information about the group security identifiers (SID) in an access token. |
-| [TOKEN_GROUPS_AND_PRIVILEGES structure](ns-ntifs--token-groups-and-privileges.md) | TOKEN_GROUPS_AND_PRIVILEGES contains information about the group security identifiers (SIDs) and privileges in an access token. |
-| [TOKEN_ORIGIN structure](ns-ntifs--token-origin.md) | The TOKEN_ORIGIN structure contains information about the origin of the logon session. |
-| [TOKEN_OWNER structure](ns-ntifs--token-owner.md) | TOKEN_OWNER contains the default owner security identifier (SID) that will be applied to newly created objects. |
-| [TOKEN_PRIMARY_GROUP structure](ns-ntifs--token-primary-group.md) | TOKEN_PRIMARY_GROUP specifies a group security identifier (SID) for an access token. |
-| [TOKEN_PRIVILEGES structure](ns-ntifs--token-privileges.md) | TOKEN_PRIVILEGES contains information about a set of privileges for an access token. |
-| [TOKEN_SOURCE structure](ns-ntifs--token-source.md) | TOKEN_SOURCE identifies the source of an access token. |
-| [TOKEN_STATISTICS structure](ns-ntifs--token-statistics.md) | TOKEN_STATISTICS contains information about an access token. A driver can retrieve this information by calling SeQueryInformationToken or ZwQueryInformationToken. |
-| [TOKEN_USER structure](ns-ntifs--token-user.md) | TOKEN_USER identifies the user associated with an access token. |
-| [WIM_PROVIDER_ADD_OVERLAY_INPUT structure](ns-ntifs--wim-provider-add-overlay-input.md) | A new Windows Image File (WIM) data source is added to the WIM provider with the WIM_PROVIDER_ADD_OVERLAY_INPUT structure. |
-| [WIM_PROVIDER_EXTERNAL_INFO structure](ns-ntifs--wim-provider-external-info.md) | The WIM_PROVIDER_EXTERNAL_INFO structure holds the identifier and status information for the Windows Image File (WIM) external backing provider. |
-| [WIM_PROVIDER_OVERLAY_ENTRY structure](ns-ntifs--wim-provider-overlay-entry.md) | Contains the a Windows Image Format (WIM) file configuration information for a data source entry. It is used to identify specific WIM file names and indices that supply data to externally backed files on a volume. |
-| [WIM_PROVIDER_REMOVE_OVERLAY_INPUT structure](ns-ntifs--wim-provider-remove-overlay-input.md) | A Windows Image File (WIM) data source to remove from the WIM provider is specified in the WIM_PROVIDER_REMOVE_OVERLAY_INPUT structure. |
-| [WIM_PROVIDER_SUSPEND_OVERLAY_INPUT structure](ns-ntifs--wim-provider-suspend-overlay-input.md) | A Windows Image File (WIM) data source to suspend from the WIM provider is specified in the WIM_PROVIDER_SUSPEND_OVERLAY_INPUT structure. |
-| [WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure](ns-ntifs--wim-provider-update-overlay-input.md) | A current Windows Image File (WIM) data source is updated with a new WIM file using the FSCTL_UPDATE_OVERLAY control request with a WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure. |
-| [WOF_EXTERNAL_FILE_ID structure](ns-ntifs--wof-external-file-id.md) | The WOF_EXTERNAL_FILE_ID structure contains a file ID that is used to open a handle to a mini-filter or driver. |
-| [WOF_EXTERNAL_INFO structure](ns-ntifs--wof-external-info.md) | The WOF_EXTERNAL_INFO structure identifies a file backing provider and the overlay service version it supports. |
-| [WOF_VERSION_INFO structure](ns-ntifs--wof-version-info.md) | The WOF_VERSION_INFO structure contains the version corresponding to the driver supporting a given provider. |
-| [sockaddr_storage structure](ns-ntifs-sockaddr-storage.md) | The SOCKADDR_STORAGE structure is a generic structure that specifies a transport address. |
+| [PMARK_HANDLE_INFO32 structure](ns-ntifs-pmark_handle_info32.md) | Contains information that is used to mark a specified file or directory, and its update sequence number (USN) change journal record with data about changes. |
+| [_ACCESS_ALLOWED_ACE structure](ns-ntifs-_access_allowed_ace.md) | The ACCESS_ALLOWED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) that controls access to an object. |
+| [_ACCESS_DENIED_ACE structure](ns-ntifs-_access_denied_ace.md) | The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object. |
+| [_ACE_HEADER structure](ns-ntifs-_ace_header.md) | The ACE_HEADER structure describes the type and size of an access-control entry (ACE). |
+| [_ATOMIC_CREATE_ECP_CONTEXT structure](ns-ntifs-_atomic_create_ecp_context.md) | This structure allows supplemental operations to be performed on a file atomically during create. |
+| [_BOOT_AREA_INFO structure](ns-ntifs-_boot_area_info.md) | The BOOT_AREA_INFO structure contains the output for the FSCTL_GET_BOOT_AREA_INFO control code. |
+| [_ECP_OPEN_PARAMETERS structure](ns-ntifs-_ecp_open_parameters.md) | The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file. |
+| [_FILE_ACCESS_INFORMATION structure](ns-ntifs-_file_access_information.md) | The FILE_ACCESS_INFORMATION structure is used to query for or set the access rights of a file. |
+| [_FILE_ALLOCATION_INFORMATION structure](ns-ntifs-_file_allocation_information.md) | The FILE_ALLOCATION_INFORMATION structure is used to set the allocation size for a file. |
+| [_FILE_ALL_INFORMATION structure](ns-ntifs-_file_all_information.md) | The FILE_ALL_INFORMATION structure is a container for several FILE_XXX_INFORMATION structures. |
+| [_FILE_BOTH_DIR_INFORMATION structure](ns-ntifs-_file_both_dir_information.md) | The FILE_BOTH_DIR_INFORMATION structure is used to query detailed information for the files in a directory. |
+| [_FILE_COMPLETION_INFORMATION structure](ns-ntifs-_file_completion_information.md) | The FILE_COMPLETION_INFORMATION structure contains the port handle and key for an I/O completion port created for a file handle. |
+| [_FILE_COMPRESSION_INFORMATION structure](ns-ntifs-_file_compression_information.md) | The FILE_COMPRESSION_INFORMATION structure describes the state of a compressed data buffer. |
+| [_FILE_DIRECTORY_INFORMATION structure](ns-ntifs-_file_directory_information.md) | The FILE_DIRECTORY_INFORMATION structure is used to query detailed information for the files in a directory. |
+| [_FILE_EA_INFORMATION structure](ns-ntifs-_file_ea_information.md) | The FILE_EA_INFORMATION structure is used to query for the size of the extended attributes (EA) for a file. |
+| [_FILE_FS_ATTRIBUTE_INFORMATION structure](ns-ntifs-_file_fs_attribute_information.md) | The FILE_FS_ATTRIBUTE_INFORMATION structure is used to query attribute information for a file system. |
+| [_FILE_FS_CONTROL_INFORMATION structure](ns-ntifs-_file_fs_control_information.md) | The FILE_FS_CONTROL_INFORMATION structure is used to query or set control information for the files in a directory. |
+| [_FILE_FS_DRIVER_PATH_INFORMATION structure](ns-ntifs-_file_fs_driver_path_information.md) | The FILE_FS_DRIVER_PATH_INFORMATION structure is used to query whether a given driver is in the I/O path for a file system volume. |
+| [_FILE_FS_PERSISTENT_VOLUME_INFORMATION structure](ns-ntifs-_file_fs_persistent_volume_information.md) | The FILE_FS_PERSISTENT_VOLUME_INFORMATION structure is used to control persistent settings for a file system volume. Persistent settings persist on a file system volume between reboots of the computer. |
+| [_FILE_FULL_DIR_INFORMATION structure](ns-ntifs-_file_full_dir_information.md) | The FILE_FULL_DIR_INFORMATION structure is used to query detailed information for the files in a directory. |
+| [_FILE_GET_EA_INFORMATION structure](ns-ntifs-_file_get_ea_information.md) | The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (EA) information. |
+| [_FILE_GET_QUOTA_INFORMATION structure](ns-ntifs-_file_get_quota_information.md) | The FILE_GET_QUOTA_INFORMATION structure is used to query for quota information. |
+| [_FILE_ID_BOTH_DIR_INFORMATION structure](ns-ntifs-_file_id_both_dir_information.md) | The FILE_ID_BOTH_DIR_INFORMATION structure is used to query file reference number information for the files in a directory. |
+| [_FILE_ID_EXTD_BOTH_DIR_INFORMATION structure](ns-ntifs-_file_id_extd_both_dir_information.md) | The FILE_ID_EXTD_BOTH_DIR_INFORMATION structure is used to query file reference number information for the files in a directory. |
+| [_FILE_ID_FULL_DIR_INFORMATION structure](ns-ntifs-_file_id_full_dir_information.md) | The FILE_ID_FULL_DIR_INFORMATION structure is used to query detailed information for the files in a directory. |
+| [_FILE_ID_GLOBAL_TX_DIR_INFORMATION structure](ns-ntifs-_file_id_global_tx_dir_information.md) | The FILE_ID_GLOBAL_TX_DIR_INFORMATION structure contains information about transactional visibility for the files in a directory. |
+| [_FILE_INTERNAL_INFORMATION structure](ns-ntifs-_file_internal_information.md) | The FILE_INTERNAL_INFORMATION structure is used to query for the file system's 8-byte file reference number for a file. |
+| [_FILE_LEVEL_TRIM structure](ns-ntifs-_file_level_trim.md) | The FILE_LEVEL_TRIM structure contains an array of byte ranges to trim for a file. |
+| [_FILE_LEVEL_TRIM_OUTPUT structure](ns-ntifs-_file_level_trim_output.md) | The FILE_LEVEL_TRIM_OUTPUT structure contains the results of a trim operation performed by an FSCTL_FILE_LEVEL_TRIM request. |
+| [_FILE_LEVEL_TRIM_RANGE structure](ns-ntifs-_file_level_trim_range.md) | Contains the offset and length of a trim range for a file. |
+| [_FILE_LINKS_INFORMATION structure](ns-ntifs-_file_links_information.md) | The FILE_LINKS_INFORMATION structure is used to query NTFS hard links to an existing file. |
+| [_FILE_LINK_ENTRY_INFORMATION structure](ns-ntifs-_file_link_entry_information.md) | The FILE_LINK_ENTRY_INFORMATION structure describes a single NTFS hard link to an existing file. |
+| [_FILE_LINK_INFORMATION structure](ns-ntifs-_file_link_information.md) | The FILE_LINK_INFORMATION structure is used to create an NTFS hard link to an existing file. |
+| [_FILE_MAILSLOT_QUERY_INFORMATION structure](ns-ntifs-_file_mailslot_query_information.md) | The FILE_MAILSLOT_QUERY_INFORMATION structure contains information about a mailslot. |
+| [_FILE_MAILSLOT_SET_INFORMATION structure](ns-ntifs-_file_mailslot_set_information.md) | The FILE_MAILSLOT_SET_INFORMATION structure is used to set a value on a mailslot. |
+| [_FILE_MODE_INFORMATION structure](ns-ntifs-_file_mode_information.md) | The FILE_MODE_INFORMATION structure is used to query or set the access mode of a file. |
+| [_FILE_NAMES_INFORMATION structure](ns-ntifs-_file_names_information.md) | A FILE_NAMES_INFORMATION structure used to query detailed information about the names of files in a directory. |
+| [_FILE_NETWORK_PHYSICAL_NAME_INFORMATION structure](ns-ntifs-_file_network_physical_name_information.md) | Contains the full UNC physical pathname for a file or directory on a remote file share. |
+| [_FILE_OBJECTID_INFORMATION structure](ns-ntifs-_file_objectid_information.md) | The FILE_OBJECTID_INFORMATION structure is used to query for object ID information for the files in a directory on an NTFS volume. |
+| [_FILE_PIPE_INFORMATION structure](ns-ntifs-_file_pipe_information.md) | The FILE_PIPE_INFORMATION structure contains information about a named pipe that is not specific to the local or the remote end of the pipe. |
+| [_FILE_PIPE_LOCAL_INFORMATION structure](ns-ntifs-_file_pipe_local_information.md) | The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe. |
+| [_FILE_PIPE_REMOTE_INFORMATION structure](ns-ntifs-_file_pipe_remote_information.md) | The FILE_PIPE_REMOTE_INFORMATION structure contains information about the remote end of a named pipe. |
+| [_FILE_PROVIDER_EXTERNAL_INFO_V0 structure](ns-ntifs-_file_provider_external_info_v0.md) | This structure may be altered or unavailable. Instead, use FILE_PROVIDER_EXTERNAL_INFO_V1. |
+| [_FILE_PROVIDER_EXTERNAL_INFO_V1 structure](ns-ntifs-_file_provider_external_info_v1.md) | The FILE_PROVIDER_EXTERNAL_INFO_V1 structure defines metadata specific to files provided by WOF_PROVIDER_FILE. |
+| [_FILE_QUOTA_INFORMATION structure](ns-ntifs-_file_quota_information.md) | The FILE_QUOTA_INFORMATION structure is used to query or set per-user quota information for each of the files in a directory. |
+| [_FILE_RENAME_INFORMATION structure](ns-ntifs-_file_rename_information.md) | The FILE_RENAME_INFORMATION structure is used to rename a file. |
+| [_FILE_REPARSE_POINT_INFORMATION structure](ns-ntifs-_file_reparse_point_information.md) | The FILE_REPARSE_POINT_INFORMATION structure is used to query for information about a reparse point. |
+| [_FILE_STREAM_INFORMATION structure](ns-ntifs-_file_stream_information.md) | The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file. |
+| [_FILE_TIMESTAMPS structure](ns-ntifs-_file_timestamps.md) | The FILE_TIMESTAMPS structure specifies the last recorded instance of specific actions on a file. |
+| [_FILE_ZERO_DATA_INFORMATION structure](ns-ntifs-_file_zero_data_information.md) | Contains a range of a file to set to zeros. |
+| [_FILE_ZERO_DATA_INFORMATION_EX structure](ns-ntifs-_file_zero_data_information_ex.md) | Contains a range of a file to set to zeros. |
+| [_FSCTL_OFFLOAD_READ_INPUT structure](ns-ntifs-_fsctl_offload_read_input.md) | The FSCTL_OFFLOAD_READ_INPUT structure contains the input for the FSCTL_OFFLOAD_READ control code request. |
+| [_FSCTL_OFFLOAD_READ_OUTPUT structure](ns-ntifs-_fsctl_offload_read_output.md) | The FSCTL_OFFLOAD_READ_OUTPUT structure contains the output for the FSCTL_OFFLOAD_READ control code request. |
+| [_FSCTL_OFFLOAD_WRITE_INPUT structure](ns-ntifs-_fsctl_offload_write_input.md) | The FSCTL_OFFLOAD_WRITE_INPUT structure contains the input for the FSCTL_OFFLOAD_WRITE control code request. |
+| [_FSCTL_OFFLOAD_WRITE_OUTPUT structure](ns-ntifs-_fsctl_offload_write_output.md) | The FSCTL_OFFLOAD_WRITE_OUTPUT structure contains the output for the FSCTL_OFFLOAD_WRITE control code request. |
+| [_FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT structure](ns-ntifs-_fsctl_query_volume_numa_info_output.md) | The FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT structure specifies the Non-Uniform Memory Architecture (NUMA) node the volume resides on. |
+| [_FSRTL_ADVANCED_FCB_HEADER structure](ns-ntifs-_fsrtl_advanced_fcb_header.md) | The FSRTL_ADVANCED_FCB_HEADER structure contains context information that a file system maintains about a file. |
+| [_FSRTL_COMMON_FCB_HEADER structure](ns-ntifs-_fsrtl_common_fcb_header.md) | Do not use the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure. |
+| [_FSRTL_PER_FILEOBJECT_CONTEXT structure](ns-ntifs-_fsrtl_per_fileobject_context.md) | The opaque FSRTL_PER_FILEOBJECT_CONTEXT structure is used by the operating system to track file system filter-driver-defined context information structures for a file object. |
+| [_FSRTL_PER_FILE_CONTEXT structure](ns-ntifs-_fsrtl_per_file_context.md) | A legacy file system filter driver can use a FSRTL_PER_FILE_CONTEXT structure to associate driver-specific context information to an open file. |
+| [_FSRTL_PER_STREAM_CONTEXT structure](ns-ntifs-_fsrtl_per_stream_context.md) | The FSRTL_PER_STREAM_CONTEXT structure contains context information that a file system filter driver maintains about a file stream. |
+| [_FS_FILTER_SECTION_SYNC_OUTPUT structure](ns-ntifs-_fs_filter_section_sync_output.md) | The FS_FILTER_SECTION_SYNC_OUTPUT structure contains information describing the attributes of the section that is being created. |
+| [_IO_PRIORITY_INFO structure](ns-ntifs-_io_priority_info.md) | The IO_PRIORITY_INFO structure is used to hold thread priority information. |
+| [_MEMORY_BASIC_INFORMATION structure](ns-ntifs-_memory_basic_information.md) | Contains information about a range of pages in the virtual address space of a process. |
+| [_NETWORK_APP_INSTANCE_ECP_CONTEXT structure](ns-ntifs-_network_app_instance_ecp_context.md) | The NETWORK_APP_INSTANCE_ECP_CONTEXT structure is an Extra Create Parameter (ECP) and contains an application instance identifier to associate with a file. |
+| [_NETWORK_OPEN_ECP_CONTEXT structure](ns-ntifs-_network_open_ecp_context.md) | The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files. |
+| [_NETWORK_OPEN_ECP_CONTEXT structure](ns-ntifs-_network_open_ecp_context~r1.md) | The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files. |
+| [_NETWORK_OPEN_ECP_CONTEXT_V0 structure](ns-ntifs-_network_open_ecp_context_v0.md) | The NETWORK_OPEN_ECP_CONTEXT_V0 structure is used to interpret network ECP contexts on files. |
+| [_NFS_OPEN_ECP_CONTEXT structure](ns-ntifs-_nfs_open_ecp_context.md) | The NFS_OPEN_ECP_CONTEXT structure is used by the Network File System (NFS) server to open files in response to client requests. |
+| [_OPEN_REPARSE_LIST structure](ns-ntifs-_open_reparse_list.md) | Points to a list of OPEN_REPARSE_LIST_ENTRY structures that specify the tag and possibly GUID that should be opened directly without returning STATUS_REPARSE. |
+| [_OPEN_REPARSE_LIST_ENTRY structure](ns-ntifs-_open_reparse_list_entry.md) | This structure supports callers opening specific reparse points without inhibiting reparse behavior for all classes of reparse points. |
+| [_PREFETCH_OPEN_ECP_CONTEXT structure](ns-ntifs-_prefetch_open_ecp_context.md) | The PREFETCH_OPEN_ECP_CONTEXT structure communicates whether the prefetcher performs a given open request on a file. |
+| [_PUBLIC_OBJECT_BASIC_INFORMATION structure](ns-ntifs-_public_object_basic_information.md) | The PUBLIC_OBJECT_BASIC_INFORMATION structure holds a subset of the full information that is available for an object. |
+| [_QUERY_FILE_LAYOUT_INPUT structure](ns-ntifs-_query_file_layout_input.md) | The QUERY_FILE_LAYOUT_INPUT structure selects which file layout entries are returned from a FSCTL_QUERY_FILE_LAYOUT request. |
+| [_QUERY_FILE_LAYOUT_OUTPUT structure](ns-ntifs-_query_file_layout_output.md) | The QUERY_FILE_LAYOUT_OUTPUT structure serves as a header for the file layout entries that are returned from a FSCTL_QUERY_FILE_LAYOUT request. |
+| [_REFS_SMR_VOLUME_GC_PARAMETERS structure](ns-ntifs-_refs_smr_volume_gc_parameters.md) | The REFS_SMR_VOLUME_GC_PARAMETERS structure. |
+| [_REFS_SMR_VOLUME_INFO_OUTPUT structure](ns-ntifs-_refs_smr_volume_info_output.md) | The REFS_SMR_VOLUME_INFO_OUTPUT structure describes a Shingled Magnetic Recording (SMR) volume's current state on space and garbage collection activities. |
+| [_REPARSE_DATA_BUFFER structure](ns-ntifs-_reparse_data_buffer.md) | The REPARSE_DATA_BUFFER structure contains reparse point data for a Microsoft reparse point. |
+| [_REPARSE_GUID_DATA_BUFFER structure](ns-ntifs-_reparse_guid_data_buffer.md) | The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point. |
+| [_SECURITY_DESCRIPTOR structure](ns-ntifs-_security_descriptor.md) | The SECURITY_DESCRIPTOR structure specifies the security information that is associated with an object. For more information, see the reference page for SECURITY_DESCRIPTOR in the Installable File System documentation. |
+| [_SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT structure](ns-ntifs-_set_dax_alloc_alignment_hint_input.md) | This structure is for internal use only and should not be called from your code. |
+| [_SE_SID structure](ns-ntifs-_se_sid.md) | The SE_SID union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation. |
+| [_SE_TOKEN_USER structure](ns-ntifs-_se_token_user.md) | The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation. |
+| [_SID_AND_ATTRIBUTES structure](ns-ntifs-_sid_and_attributes.md) | The SID_AND_ATTRIBUTES structure represents a security identifier (SID) and its attributes. SIDs are used to uniquely identify users or groups. |
+| [_SID_IDENTIFIER_AUTHORITY structure](ns-ntifs-_sid_identifier_authority.md) | The SID_IDENTIFIER_AUTHORITY structure represents the top-level authority of a security identifier (SID). |
+| [_SRV_OPEN_ECP_CONTEXT structure](ns-ntifs-_srv_open_ecp_context.md) | The SRV_OPEN_ECP_CONTEXT structure is used by a server to conditionally open files in response to client requests. |
+| [_SYSTEM_AUDIT_ACE structure](ns-ntifs-_system_audit_ace.md) | The SYSTEM_AUDIT_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what types of access cause system-level notifications. |
+| [_SYSTEM_PROCESS_TRUST_LABEL_ACE structure](ns-ntifs-_system_process_trust_label_ace.md) | Reserved. |
+| [_SYSTEM_RESOURCE_ATTRIBUTE_ACE structure](ns-ntifs-_system_resource_attribute_ace.md) | The SYSTEM_RESOURCE_ATTRIBUTE_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what rights a particular claim has to a resource. |
+| [_SYSTEM_SCOPED_POLICY_ID_ACE structure](ns-ntifs-_system_scoped_policy_id_ace.md) | The SYSTEM_SCOPED_POLICY_ID_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying rights for a scoped policy identifer. |
+| [_TOKEN_CONTROL structure](ns-ntifs-_token_control.md) | The TOKEN_CONTROL structure contains information that identifies an access token. |
+| [_TOKEN_DEFAULT_DACL structure](ns-ntifs-_token_default_dacl.md) | The TOKEN_DEFAULT_DACL structure specifies a discretionary access-control list (DACL). |
+| [_TOKEN_GROUPS structure](ns-ntifs-_token_groups.md) | TOKEN_GROUPS contains information about the group security identifiers (SID) in an access token. |
+| [_TOKEN_GROUPS_AND_PRIVILEGES structure](ns-ntifs-_token_groups_and_privileges.md) | TOKEN_GROUPS_AND_PRIVILEGES contains information about the group security identifiers (SIDs) and privileges in an access token. |
+| [_TOKEN_ORIGIN structure](ns-ntifs-_token_origin.md) | The TOKEN_ORIGIN structure contains information about the origin of the logon session. |
+| [_TOKEN_OWNER structure](ns-ntifs-_token_owner.md) | TOKEN_OWNER contains the default owner security identifier (SID) that will be applied to newly created objects. |
+| [_TOKEN_PRIMARY_GROUP structure](ns-ntifs-_token_primary_group.md) | TOKEN_PRIMARY_GROUP specifies a group security identifier (SID) for an access token. |
+| [_TOKEN_PRIVILEGES structure](ns-ntifs-_token_privileges.md) | TOKEN_PRIVILEGES contains information about a set of privileges for an access token. |
+| [_TOKEN_SOURCE structure](ns-ntifs-_token_source.md) | TOKEN_SOURCE identifies the source of an access token. |
+| [_TOKEN_STATISTICS structure](ns-ntifs-_token_statistics.md) | TOKEN_STATISTICS contains information about an access token. A driver can retrieve this information by calling SeQueryInformationToken or ZwQueryInformationToken. |
+| [_TOKEN_USER structure](ns-ntifs-_token_user.md) | TOKEN_USER identifies the user associated with an access token. |
+| [_WIM_PROVIDER_ADD_OVERLAY_INPUT structure](ns-ntifs-_wim_provider_add_overlay_input.md) | A new Windows Image File (WIM) data source is added to the WIM provider with the WIM_PROVIDER_ADD_OVERLAY_INPUT structure. |
+| [_WIM_PROVIDER_EXTERNAL_INFO structure](ns-ntifs-_wim_provider_external_info.md) | The WIM_PROVIDER_EXTERNAL_INFO structure holds the identifier and status information for the Windows Image File (WIM) external backing provider. |
+| [_WIM_PROVIDER_OVERLAY_ENTRY structure](ns-ntifs-_wim_provider_overlay_entry.md) | Contains the a Windows Image Format (WIM) file configuration information for a data source entry. It is used to identify specific WIM file names and indices that supply data to externally backed files on a volume. |
+| [_WIM_PROVIDER_REMOVE_OVERLAY_INPUT structure](ns-ntifs-_wim_provider_remove_overlay_input.md) | A Windows Image File (WIM) data source to remove from the WIM provider is specified in the WIM_PROVIDER_REMOVE_OVERLAY_INPUT structure. |
+| [_WIM_PROVIDER_SUSPEND_OVERLAY_INPUT structure](ns-ntifs-_wim_provider_suspend_overlay_input.md) | A Windows Image File (WIM) data source to suspend from the WIM provider is specified in the WIM_PROVIDER_SUSPEND_OVERLAY_INPUT structure. |
+| [_WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure](ns-ntifs-_wim_provider_update_overlay_input.md) | A current Windows Image File (WIM) data source is updated with a new WIM file using the FSCTL_UPDATE_OVERLAY control request with a WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure. |
+| [_WOF_EXTERNAL_FILE_ID structure](ns-ntifs-_wof_external_file_id.md) | The WOF_EXTERNAL_FILE_ID structure contains a file ID that is used to open a handle to a mini-filter or driver. |
+| [_WOF_EXTERNAL_INFO structure](ns-ntifs-_wof_external_info.md) | The WOF_EXTERNAL_INFO structure identifies a file backing provider and the overlay service version it supports. |
+| [_WOF_VERSION_INFO structure](ns-ntifs-_wof_version_info.md) | The WOF_VERSION_INFO structure contains the version corresponding to the driver supporting a given provider. |
+| [__PUBLIC_OBJECT_TYPE_INFORMATION structure](ns-ntifs-__public_object_type_information.md) | The PUBLIC_OBJECT_TYPE_INFORMATION structure holds the type name of the object. |
+| [sockaddr_storage structure](ns-ntifs-sockaddr_storage.md) | The SOCKADDR_STORAGE structure is a generic structure that specifies a transport address. |
 
 ## I/O control codes
 
 | Title   | Description   |
 | ---- |:---- |
-| [IOCTL_REDIR_QUERY_PATH IOCTL](ni-ntifs-ioctl-redir-query-path.md) | The IOCTL_REDIR_QUERY_PATH control code is sent by the multiple UNC provider (MUP) to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request. |
-| [IOCTL_REDIR_QUERY_PATH_EX IOCTL](ni-ntifs-ioctl-redir-query-path-ex.md) | The IOCTL_REDIR_QUERY_PATH_EX control code is sent by the multiple UNC provider (MUP) on Windows Vista or later to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request. |
-| [IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES IOCTL](ni-ntifs-ioctl-volsnap-flush-and-hold-writes.md) | The IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code is sent to force a flush of a file system before a volume shadow copy occurs. |
+| [IOCTL_REDIR_QUERY_PATH IOCTL](ni-ntifs-ioctl_redir_query_path.md) | The IOCTL_REDIR_QUERY_PATH control code is sent by the multiple UNC provider (MUP) to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request. |
+| [IOCTL_REDIR_QUERY_PATH_EX IOCTL](ni-ntifs-ioctl_redir_query_path_ex.md) | The IOCTL_REDIR_QUERY_PATH_EX control code is sent by the multiple UNC provider (MUP) on Windows Vista or later to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request. |
+| [IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES IOCTL](ni-ntifs-ioctl_volsnap_flush_and_hold_writes.md) | The IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code is sent to force a flush of a file system before a volume shadow copy occurs. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [FSRTL_CHANGE_BACKING_TYPE enumeration](ne-ntifs--fsrtl-change-backing-type.md) | The FSRTL_CHANGE_BACKING_TYPE enumeration specifies the type of cache or control area that a file object designates. |
-| [MEMORY_INFORMATION_CLASS enumeration](ne-ntifs--memory-information-class.md) | Defines classes of memory information that can be retrieved by using the ZwQueryVirtualMemory function. |
-| [NETWORK_OPEN_INTEGRITY_QUALIFIER enumeration](ne-ntifs-network-open-integrity-qualifier.md) | The NETWORK_OPEN_INTEGRITY_QUALIFIER enumeration type contains values that identify the kind of integrity restriction to attach to a file. |
-| [NETWORK_OPEN_LOCATION_QUALIFIER enumeration](ne-ntifs-network-open-location-qualifier.md) | The NETWORK_OPEN_LOCATION_QUALIFIER enumeration type contains values that identify the kind of location restriction to attach to a file. |
-| [OBJECT_INFORMATION_CLASS enumeration](ne-ntifs--object-information-class.md) | The OBJECT_INFORMATION_CLASS enumeration type represents the type of information to supply about an object. |
-| [REFS_SMR_VOLUME_GC_ACTION enumeration](ne-ntifs--refs-smr-volume-gc-action.md) | The REFS_SMR_VOLUME_GC_ACTION enum contains the available garbage collection commands for FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS. |
-| [REFS_SMR_VOLUME_GC_METHOD enumeration](ne-ntifs--refs-smr-volume-gc-method.md) | The REFS_SMR_VOLUME_GC_METHOD enum specifies the garbage collection method or strategy for FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS. |
-| [REFS_SMR_VOLUME_GC_STATE enumeration](ne-ntifs--refs-smr-volume-gc-state.md) | The REFS_SMR_VOLUME_GC_STATE enum specifies the garbage collection's current state. |
-| [SID_NAME_USE enumeration](ne-ntifs--sid-name-use.md) | The SID_NAME_USE enumeration type contains values that specify the type of a security identifier (SID). |
-| [TOKEN_INFORMATION_CLASS enumeration](ne-ntifs--token-information-class.md) | The TOKEN_INFORMATION_CLASS enumeration type contains values that specify the type of information being assigned to or retrieved from an access token. |
-| [TOKEN_TYPE enumeration](ne-ntifs--token-type.md) | The TOKEN_TYPE enumeration type contains values that differentiate between a primary token and an impersonation token. |
+| [NETWORK_OPEN_INTEGRITY_QUALIFIER enumeration](ne-ntifs-network_open_integrity_qualifier.md) | The NETWORK_OPEN_INTEGRITY_QUALIFIER enumeration type contains values that identify the kind of integrity restriction to attach to a file. |
+| [NETWORK_OPEN_LOCATION_QUALIFIER enumeration](ne-ntifs-network_open_location_qualifier.md) | The NETWORK_OPEN_LOCATION_QUALIFIER enumeration type contains values that identify the kind of location restriction to attach to a file. |
+| [_FSRTL_CHANGE_BACKING_TYPE enumeration](ne-ntifs-_fsrtl_change_backing_type.md) | The FSRTL_CHANGE_BACKING_TYPE enumeration specifies the type of cache or control area that a file object designates. |
+| [_MEMORY_INFORMATION_CLASS enumeration](ne-ntifs-_memory_information_class.md) | Defines classes of memory information that can be retrieved by using the ZwQueryVirtualMemory function. |
+| [_OBJECT_INFORMATION_CLASS enumeration](ne-ntifs-_object_information_class.md) | The OBJECT_INFORMATION_CLASS enumeration type represents the type of information to supply about an object. |
+| [_REFS_SMR_VOLUME_GC_ACTION enumeration](ne-ntifs-_refs_smr_volume_gc_action.md) | The REFS_SMR_VOLUME_GC_ACTION enum contains the available garbage collection commands for FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS. |
+| [_REFS_SMR_VOLUME_GC_METHOD enumeration](ne-ntifs-_refs_smr_volume_gc_method.md) | The REFS_SMR_VOLUME_GC_METHOD enum specifies the garbage collection method or strategy for FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS. |
+| [_REFS_SMR_VOLUME_GC_STATE enumeration](ne-ntifs-_refs_smr_volume_gc_state.md) | The REFS_SMR_VOLUME_GC_STATE enum specifies the garbage collection's current state. |
+| [_SID_NAME_USE enumeration](ne-ntifs-_sid_name_use.md) | The SID_NAME_USE enumeration type contains values that specify the type of a security identifier (SID). |
+| [_TOKEN_INFORMATION_CLASS enumeration](ne-ntifs-_token_information_class.md) | The TOKEN_INFORMATION_CLASS enumeration type contains values that specify the type of information being assigned to or retrieved from an access token. |
+| [_TOKEN_TYPE enumeration](ne-ntifs-_token_type.md) | The TOKEN_TYPE enumeration type contains values that differentiate between a primary token and an impersonation token. |

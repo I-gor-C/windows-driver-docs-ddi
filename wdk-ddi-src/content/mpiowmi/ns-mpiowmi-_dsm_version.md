@@ -7,7 +7,7 @@ old-location: storage\dsm_version.htm
 old-project: storage
 ms.assetid: 1aa264fa-b552-41a0-bd43-a62f8f2b533b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DSM_VERSION, *PDSM_VERSION, DSM_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DSM_VERSION structure represents version information that is associated with a DSM binary or package. While this assumes that a DSM's version will be of the type MajorVersion.MinorVersion.ProductBuild.QfeNumber, it is not mandatory for the DSM to follow this convention. The DSM must, however, fill in zeros for the fields its does not support.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _DSM_VERSION {
 
 An unsigned 32-bitfield that represents the major version portion of the version.
 
+
 ### -field MinorVersion
 
 An unsigned 32-bitfield that represents the minor version portion of the version.
+
 
 ### -field ProductBuild
 
 An unsigned 32-bitfield that represents the product build portion of the version.
 
+
 ### -field QfeNumber
 
 An unsigned 32-bitfield that represents the QFE number portion of the version.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ An unsigned 32-bitfield that represents the QFE number portion of the version.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

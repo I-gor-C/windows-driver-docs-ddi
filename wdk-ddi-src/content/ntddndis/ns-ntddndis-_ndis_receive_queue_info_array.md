@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_queue_info_array.htm
 old-project: netvista
 ms.assetid: 6a026c2b-e2ed-41bf-9482-0fdc64b175f2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_RECEIVE_QUEUE_INFO_ARRAY, *PNDIS_RECEIVE_QUEUE_INFO_ARRAY, NDIS_RECEIVE_QUEUE_INFO_ARRAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure specifies a list of receive queues on a network adapter.
 
 
+
 ## -syntax
 
 ````
@@ -65,10 +66,12 @@ The
      <b>Revision</b> member to <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY_REVISION_1</b>, and the 
      <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_INFO_ARRAY_REVISION_1</b>.
 
+
 ### -field FirstElementOffset
 
 A ULONG value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="netvista.ndis_receive_queue_info">
      NDIS_RECEIVE_QUEUE_INFO</a> structure.
+
 
 
 <div class="alert"><b>Note</b>  If <b>NumElements</b> is set to zero, this member is ignored.  </div>
@@ -79,9 +82,11 @@ A ULONG value that specifies the offset, in bytes, to the first element in an ar
 A <b>ULONG</b> value that represents the number of elements in the list of elements that follow the
      <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure.
 
+
 ### -field ElementSize
 
 A <b>ULONG</b> value that specifies the size, in bytes, of each element in the array.
+
 
 ## -remarks
 The <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure is used in the 
@@ -91,19 +96,23 @@ The <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure is used in the
     <a href="netvista.ndis_receive_queue_info">
     NDIS_RECEIVE_QUEUE_INFO</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_INFO_ARRAY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_INFO_ARRAY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

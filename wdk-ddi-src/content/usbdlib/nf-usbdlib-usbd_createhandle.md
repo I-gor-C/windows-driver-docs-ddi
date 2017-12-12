@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The  <b>USBD_CreateHandle</b> routine is called by a WDM USB client driver to obtain a USBD handle. The routine registers the client driver with the underlying USB driver stack.
+
 <b>Note for Windows Driver Framework (WDF) Drivers:  </b>If your client driver is a WDF-based driver, then you do not need the USBD handle. The client driver is registered in its call to the the <a href="kmdf.wdfusbtargetdevicecreatewithconfig">WdfUsbTargetDeviceCreateWithParameters</a> method.
+
 
 
 ## -syntax
@@ -62,21 +64,26 @@ NTSTATUS USBD_CreateHandle(
 
 Pointer to the device object for the client driver.
 
+
 ### -param TargetDeviceObject [in]
 
 Pointer to the next lower device object in the device stack. The client driver receives a pointer to that device object in a previous call to <a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>.
+
 
 ### -param USBDClientContractVersion [in]
 
 The contract version that the client driver supports. <i>USBDClientContractVersion</i> must be  USBD_CLIENT_CONTRACT_VERSION_602. For more information, see Remarks.
 
+
 ### -param PoolTag [in]
 
 The pool tag used for memory allocations.
 
+
 ### -param USBDHandle [out]
 
 Opaque handle that indicates that the client driver was registered with the USB driver stack. For more information, see Remarks.
+
 
 ## -returns
 The routine returns an NTSTATUS code. Possible  values include but are not limited to, these values in the following table.
@@ -91,6 +98,7 @@ The routine returns an NTSTATUS code. Possible  values include but are not limit
 </dl>The caller passed one of the following invalid parameter values:
 
  
+
 
 ## -remarks
 Windows 8 includes a new USB driver stack to support USB 3.0 devices. The new USB driver stack provides several new capabilities, such as stream support, chained MDLs, and so on. 
@@ -112,11 +120,13 @@ After the client driver is finished using the USBD handle, the driver must close
 
 The following example code shows how to register a client driver by calling <b>USBD_CreateHandle</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -127,14 +137,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +158,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -156,9 +170,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -176,5 +192,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_CreateHandle routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 The <b>KsAcquireResetValue </b>function retrieves the current reset state from an IOCTL_KS_RESET_STATE IRP.
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS KsAcquireResetValue(
 
 Points to the IRP from which to retrieve the reset state.
 
+
 ### -param ResetValue [out]
 
 Points to a caller-allocated buffer, that on successful completion contains the reset value (KSRESET_BEGIN, KSRESET_END) associated with the IRP.
 
+
 ## -returns
 The <b>KsAcquireResetValue </b>function returns STATUS_SUCCESS if the reset value was obtained.
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ The <b>KsAcquireResetValue </b>function returns STATUS_SUCCESS if the reset valu
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

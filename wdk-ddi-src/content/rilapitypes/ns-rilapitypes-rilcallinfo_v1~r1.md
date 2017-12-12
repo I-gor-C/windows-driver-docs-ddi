@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfo_v1_2.htm
 old-project: netvista
 ms.assetid: f630afff-d3ca-4ada-aa8c-5062893f2de5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLINFO_V1, RILCALLINFO_V1, *LPRILCALLINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -128,6 +129,7 @@ typedef struct _RILCALLINFO_V1 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

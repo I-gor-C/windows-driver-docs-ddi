@@ -7,7 +7,7 @@ old-location: display\idarg_in_getdirtyrects.htm
 old-project: display
 ms.assetid: 78a216c7-b208-49fb-bb8e-6758b3cb13ad
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_GETDIRTYRECTS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
          Gives information about the parts of the surface that have changed since the last present.
 
 
+
 ## -syntax
 
 ````
@@ -61,11 +62,13 @@ typedef struct IDARG_IN_GETDIRTYRECTS {
                      [in] Number of dirty rects in the <b>pDirtyRects</b> array
                  
 
+
 ### -field pDirtyRects
 
 
                      [out] Pointer to the buffer where the OS can copy the dirty rects that indicate which parts of the surface have been changed since the last present.
                  
+
 
 ## -remarks
 
@@ -75,6 +78,7 @@ typedef struct IDARG_IN_GETDIRTYRECTS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

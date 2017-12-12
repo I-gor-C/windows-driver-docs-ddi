@@ -7,8 +7,8 @@ old-location: netvista\rilphonebookinfo.htm
 old-project: netvista
 ms.assetid: 626bfc9b-6d84-4b8c-89eb-c635d0cb61f0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILPHONEBOOKINFO, RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
+ms.date: 12/8/2017
+ms.keywords: RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO, RILPHONEBOOKINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -131,6 +132,7 @@ typedef struct _RILPHONEBOOKINFO {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

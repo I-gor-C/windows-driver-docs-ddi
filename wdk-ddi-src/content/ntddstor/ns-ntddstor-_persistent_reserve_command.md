@@ -7,7 +7,7 @@ old-location: storage\persistent_reserve_command.htm
 old-project: storage
 ms.assetid: c7debd93-0fcd-43c5-a950-8154b62175bf
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _PERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The PERSISTENT_RESERVE_COMMAND structure is used together with the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> and <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> requests to obtain and control information about persistent reservations and reservation keys that are active within a device server.
 
 
+
 ## -syntax
 
 ````
@@ -71,9 +72,11 @@ typedef struct _PERSISTENT_RESERVE_COMMAND {
 
 The version of this structure.
 
+
 ### -field Size
 
 The size of this structure.
+
 
 ### -field PR_IN
 
@@ -85,13 +88,16 @@ RESERVATION_ACTION_READ_KEYS
 RESERVATION_ACTION_READ_RESERVATIONS
 
 
+
 ### -field Reserved1
 
 Reserved. Must be zero.
 
+
 ### -field AllocationLength
 
 The number of bytes allocated for the returned parameter list.
+
 </dd>
 </dl>
 
@@ -110,9 +116,11 @@ RESERVATION_ACTION_PREEMPT_ABORT
 RESERVATION_ACTION_REGISTER_IGNORE_EXISTING
 
 
+
 ### -field Reserved1
 
 Reserved. Must be zero.
+
 
 ### -field Type
 
@@ -123,6 +131,7 @@ RESERVATION_TYPE_WRITE_EXCLUSIVE_REGISTRANTS
 RESERVATION_TYPE_EXCLUSIVE_REGISTRANTS
 
 
+
 ### -field Scope
 
 A value that specifies whether the persistent reservation applies to the entire logical unit or a specific element of the logical unit. PR_OUT.Scope can be one of the following values:
@@ -130,20 +139,24 @@ RESERVATION_SCOPE_LU
 RESERVATION_SCOPE_ELEMENT
 
 
+
 ### -field ParameterList
 
 The space for additional SCSI Persistent Reserve Out command parameters.
+
 </dd>
 </dl>
 
 ## -remarks
 The behavior of the storage device when a SCSI Persistent Reserve In command or a SCSI Persistent Reserve Out command is received is described in the <a href="http://go.microsoft.com/fwlink/p/?linkid=153142">SCSI Primary Commands - 2 (SPC-2)</a> specification.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -163,5 +176,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PERSISTENT_RESERVE_COMMAND structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PERSISTENT_RESERVE_COMMAND structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

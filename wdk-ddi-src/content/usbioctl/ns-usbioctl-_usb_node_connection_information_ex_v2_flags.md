@@ -40,8 +40,11 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</b> union is used to indicate the speed at which a USB 3.0  device is currently operating and whether it can operate at higher speed, when attached to a particular port. 
+
 Device speed information is obtained in the <a href="buses._usb_node_connection_information_ex_v2">USB_NODE_CONNECTION_INFORMATION_EX_V2</a> structure by the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> I/O control request.
+
 Or: the speed in which a device attached to a port is currently operating and at what speeds it is capable of operating.
+
 
 
 ## -syntax
@@ -64,17 +67,21 @@ typedef union _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS {
 
 A bitmask that indicates the USB speed of the device that is attached to the port.
 
+
 ### -field DeviceIsOperatingAtSuperSpeedOrHigher
 
 If <b>TRUE</b>, the attached device is currently operating at SuperSpeed or a higher speed that is defined by the official USB specification. 
+
 
 ### -field DeviceIsSuperSpeedCapableOrHigher
 
 If <b>TRUE</b>, the attached device is a USB 3.0 device and is capable of operating at SuperSpeed or a higher speed that is defined by the official USB specification.
 
+
 ### -field ReservedMBZ
 
 Reserved. Do not use.
+
 
 ## -remarks
 
@@ -84,22 +91,27 @@ Reserved. Do not use.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -119,5 +131,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: storage\storage_crypto_key_size.htm
 old-project: storage
 ms.assetid: C3E5CEC6-34A2-48DF-B963-677C69A97E0B
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_CRYPTO_KEY_SIZE, STORAGE_CRYPTO_KEY_SIZE, *PSTORAGE_CRYPTO_KEY_SIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>STORAGE_CRYPTO_KEY_SIZE</b> enum returns the Size of the key in bits.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum _STORAGE_CRYPTO_KEY_SIZE {
 
 Reserved for system use.
 
+
 ### -field StorageCryptoKeySize128Bits
 
 Reserved for system use.
+
 
 ### -field StorageCryptoKeySize192Bits
 
 Reserved for system use.
 
+
 ### -field StorageCryptoKeySize256Bits
 
 Reserved for system use.
 
+
 ### -field StorageCryptoKeySize512Bits
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

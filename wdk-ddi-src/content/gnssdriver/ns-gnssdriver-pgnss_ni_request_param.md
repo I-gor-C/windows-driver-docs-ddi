@@ -41,6 +41,7 @@ req.irql:
 This structure contains the NI request parameters.
 
 
+
 ## -syntax
 
 ````
@@ -68,45 +69,56 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field RequestId
 
 The ID that uniquely identifies the NI request. It is used later by the NI response to identify the request to respond to.
 
+
 ### -field RequestType
 
 A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.
+
 
 ### -field NotificationType
 
 A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.
 
+
 ### -field RequestPlaneType
 
 A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.
+
 
 ### -field SuplNiInfo
 
 The <a href="sensors.gnss_supl_ni_info">GNSS_SUPL_NI_INFO</a> structure that contains the SUPL NI information.
 
+
 ### -field CpNiInfo
 
 The <a href="sensors.gnss_cp_ni_info">GNSS_CP_NI_INFO</a> structure that contains CP NI information.
+
 
 ### -field V2UplNiInfo
 
 V2Upl NI request information.
 
+
 ### -field ResponseTimeInSec
 
 The required response time, in seconds.
 
+
 ### -field EmergencyLocation
 
 Indicates an emergency request, so an existing NI dialog will be dismissed and the new request will be processed immediately.
+
 
 ## -remarks
 
@@ -116,6 +128,7 @@ Indicates an emergency request, so an existing NI dialog will be dismissed and t
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

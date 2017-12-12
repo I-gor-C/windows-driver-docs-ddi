@@ -7,7 +7,7 @@ old-location: display\iddcx_moveregion.htm
 old-project: display
 ms.assetid: 28974c00-9225-4458-a198-beb4538e3a45
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_MOVEREGION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the current move region.
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef struct IDDCX_MOVEREGION {
                      Total size of the structure.
                  
 
+
 ### -field SourcePoint
 
 
@@ -68,11 +70,13 @@ typedef struct IDDCX_MOVEREGION {
     destination rect size.
                  
 
+
 ### -field DestRect
 
 
                      Defines the destination rect of the move.
                  
+
 
 ## -remarks
 
@@ -82,6 +86,7 @@ typedef struct IDDCX_MOVEREGION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

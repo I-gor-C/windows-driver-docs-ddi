@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0A2D1D8F-8C82-4335-9FBF-4515A8DC20C1
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: PBUS_INTERFACE_MEDIUMS, *PBUS_INTERFACE_MEDIUMS, BUS_INTERFACE_MEDIUMS
+ms.keywords: PBUS_INTERFACE_MEDIUMS, BUS_INTERFACE_MEDIUMS, *PBUS_INTERFACE_MEDIUMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct {
 
 Specifies the standard interface header.
 
+
 ### -field QueryMediumsList
 
 Specifies the interface definition.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies the interface definition.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

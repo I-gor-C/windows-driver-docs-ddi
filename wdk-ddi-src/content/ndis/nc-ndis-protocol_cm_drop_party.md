@@ -7,7 +7,7 @@ old-location: netvista\protocolcmdropparty.htm
 old-project: netvista
 ms.assetid: be0fce3e-7308-42fa-b63a-4d5cfec7ea6c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   call.
 
 
+
 ## -prototype
 
 ````
@@ -66,17 +67,20 @@ Specifies the handle to a call manager-allocated context area in which the call 
      its per-party state. This handle was provided to NDIS in the call managers 
      <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
 
+
 ### -param CloseData [in, optional]
 
 Pointer to a buffer containing connection-oriented client-specific data that should be sent across
      the connection before the party is dropped. This parameter is <b>NULL</b> if the underlying network medium does
      not support transfers of data when closing a connection.
 
+
 ### -param Size [in, optional]
 
 Specifies the length, in bytes, of the buffer at 
      <i>CloseData</i>, zero if 
      <i>CloseData</i> is <b>NULL</b>.
+
 
 ## -returns
 <i>ProtocolCmDropParty</i> returns the status of its operation(s) as one of the following values:
@@ -98,6 +102,7 @@ Specifies the length, in bytes, of the buffer at
        concurrent with connection termination.
 
  
+
 
 ## -remarks
 <i>ProtocolCmDropParty</i> communicates with network control devices or other media-specific agents, as
@@ -128,11 +133,13 @@ The <b>PROTOCOL_CM_DROP_PARTY</b> function type is defined in the Ndis.h header 
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -140,11 +147,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>ProtocolCmDropParty (NDIS
    5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,9 +164,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -172,5 +183,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_DROP_PARTY callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_DROP_PARTY callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

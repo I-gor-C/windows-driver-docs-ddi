@@ -7,7 +7,7 @@ old-location: storage\ataportinitializequeuetag.htm
 old-project: storage
 ms.assetid: f6d40f3e-4bc9-4b30-97ac-600a33280305
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortInitializeQueueTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortInitializeQueueTag</b> routine initializes the queue tag list for the specified device.
 
 
+
 ## -syntax
 
 ````
@@ -59,31 +60,38 @@ BOOLEAN AtaPortInitializeQueueTag(
 
 A pointer to the channel extension.
 
+
 ### -param TargetId [in]
 
 Specifies the target identifier of the device.
+
 
 ### -param Lun [in]
 
 Specifies the logical unit number (LUN) of the device.
 
+
 ### -param MaxQueueTag [in]
 
 Specifies the maximum allowed value for the queue tag.
 
+
 ## -returns
 <b>AtaPortInitializeQueueTag</b> returns <b>TRUE</b> if the operation succeeds. Otherwise, it returns <b>FALSE</b>. 
+
 
 ## -remarks
 The miniport driver should call <b>AtaPortInitializeQueueTag</b> before it uses <a href="storage.ataportallocatequeuetag">AtaPortAllocateQueueTag</a> and <a href="storage.ataportreleasequeuetag">AtaPortReleaseQueueTag</a> to allocate and release queue tags respectively. 
 
 The values in the <i>TargetId</i> and <i>Lun</i> parameters specify the device to which the queue tag belongs. To generate channel specific queue tags, the miniport driver should set the <i>TargetId</i> and <i>Lun</i> parameters to IDE_UNTAGGED. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +102,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +113,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,5 +134,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortInitializeQueueTag routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortInitializeQueueTag routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

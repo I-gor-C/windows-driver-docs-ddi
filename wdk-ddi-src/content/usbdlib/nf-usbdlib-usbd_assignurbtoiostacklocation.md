@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBD_AssignUrbToIoStackLocation</b> routine is called by a client driver to associate an <a href="buses.urb">URB</a> with the IRP's next stack location.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ void USBD_AssignUrbToIoStackLocation(
 
 A USBD handle that is retrieved in a previous call to the <a href="buses.usbd_register">USBD_CreateHandle</a> routine.
 
+
 ### -param StackLocation [in]
 
 Pointer to the IRP's next stack location (<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>). The client driver received a pointer to the stack location in a previous call to <a href="kernel.iogetnextirpstacklocation">IoGetNextIrpStackLocation</a>.
+
 
 ### -param Urb [in]
 
 Pointer to the <a href="buses.urb">URB</a> structure that is allocated by <a href="buses.usbd_urballocate">USBD_UrbAllocate</a>, <a href="buses.usbd_isochurballocate">USBD_IsochUrbAllocate</a>, <a href="buses.usbd_selectconfigurballocateandbuild">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
     <a href="buses.usbd_selectinterfaceurballocateandbuild">USBD_SelectInterfaceUrbAllocateAndBuild</a>.
 
+
 ## -returns
 This routine does not return a value.
+
 
 ## -remarks
 If the client driver allocated an URB by calling <a href="buses.usbd_urballocate">USBD_UrbAllocate</a>, <a href="buses.usbd_isochurballocate">USBD_IsochUrbAllocate</a>, <a href="buses.usbd_selectconfigurballocateandbuild">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
@@ -82,11 +87,13 @@ The client driver must call <b>USBD_AssignUrbToIoStackLocation</b> before callin
 
 For a code example, see <a href="buses.send_requests_to_the_usb_driver_stack">How to Submit an URB</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,9 +136,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -151,5 +164,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_AssignUrbToIoStackLocation routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

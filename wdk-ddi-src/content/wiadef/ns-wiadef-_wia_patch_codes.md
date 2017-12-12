@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WIA_PATCH_CODES</b> structure stores header information for the patch code metadata report of one scan job (one call to <a href="image.iwiaminidrv_drvacquireitemdata">IWiaMiniDrv::drvAcquireItemData</a>).
 
 
+
 ## -syntax
 
 ````
@@ -61,30 +62,37 @@ typedef struct _WIA_PATCH_CODES {
 
 Must be the literal 'WBAT', 4 single byte ASCII characters. 
 
+
 ### -field Version
 
 Must be the value 0x00010000 (Version 1.0).
+
 
 ### -field Size
 
 The complete size of this <b>WIA_PATCH_CODES</b> header structure, in bytes, including the complete size of the <a href="image.wia_patch_code_info">WIA_PATCH_CODES_INFO</a> list.
 
+
 ### -field Count
 
 Specifies the number of <a href="image.wia_patch_code_info">WIA_PATCH_CODES_INFO</a> elements in the PatchCodes sequence.
+
 
 ### -field PatchCodes
 
 Placeholder for a sequence of <b>Count</b> contiguous <a href="image.wia_patch_code_info">WIA_PATCH_CODES_INFO</a> structures.
 
+
 ## -remarks
 The header must be followed by a sequence of patch code information structures, one for each detected patch code, in the order the patch codes were found and decoded.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

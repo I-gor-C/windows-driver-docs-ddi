@@ -7,7 +7,7 @@ old-location: netvista\vmbclientchannelinitsetringbufferpagecount.htm
 old-project: netvista
 ms.assetid: 560A7CD9-5D9D-434B-ACEE-5852CC9A2CC3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbClientChannelInitSetRingBufferPageCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbClientChannelInitSetRingBufferPageCount</b> function sets the number of pages of memory the client allocates for incoming and outgoing ring
 buffers.  
+
 
 
 ## -syntax
@@ -62,9 +64,11 @@ NTSTATUS
 
 A handle for a channel.  
 
+
 ### -param IncomingPageCount [in]
 
 Number of pages to allocate for the incoming ring     buffer.
+
 
 
 ### -param OutgoingPageCount [in]
@@ -72,47 +76,58 @@ Number of pages to allocate for the incoming ring     buffer.
 Number of pages to allocate for the outgoing ring
 buffer.
 
+
 ## -remarks
 Because the client virtual machine donates the pages for both the incoming and the outgoing ring
 buffers, this function can only be invoked on the client endpoint.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +138,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpacketcomplete.htm
 old-project: netvista
 ms.assetid: 1DC215DF-1F53-4910-84D5-17E13BE6202A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbChannelPacketComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,9 +40,11 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbChannelPacketComplete</b>  function cleans up any
 outstanding memory mappings, releases any buffers in use, and, if the opposite endpoint requested a completion packet, sends a
 completion packet. 
+
 
 
 ## -syntax
@@ -63,60 +65,74 @@ VOID VmbChannelPacketComplete(
 A  handle that identifies the incoming packet and is used to refer to the packet
 once processing is finished.  
 
+
 ### -param PacketCompletionBuffer [in]
 
 A buffer of completion data to be sent back to the originating endpoint.  Although this usually contains just a status value, the contents are up to the client driver.
+
 
 
 ### -param BufSize [in]
 
 The size, in bytes, of the completion buffer.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 This function is called when the client driver is finished
 processing a packet.  This function may be called directly from the packet parsing function
 or it may be called later.  
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +143,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

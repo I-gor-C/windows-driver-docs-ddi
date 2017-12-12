@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisStoreUlong
-title: NdisStoreUlong
+title: NdisStoreUlong macro
 author: windows-driver-content
 description: The NdisStoreUlong function stores a ULONG value at a particular address, avoiding alignment faults.
 old-location: netvista\ndisstoreulong.htm
 old-project: netvista
 ms.assetid: 4fb0b803-1fe2-409b-8543-dddc5df67fe4
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisStoreUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,59 +31,54 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.iface: 
 ---
 
-# NdisStoreUlong function
+# NdisStoreUlong macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisStoreUlong</b> function stores a ULONG value at a particular address, avoiding alignment
-  faults.</p>
+  faults.
+
 
 
 ## -syntax
 
 ````
 VOID NdisStoreUlong(
-  _In_ PULONG DestinationAddress,
-  _In_ ULONG  Value
+  [in] PULONG DestinationAddress,
+  [in] ULONG  Value
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param DestinationAddress [in]
 
-<dd>
-<p>A pointer to a location in which to store a given ULONG value.</p>
-</dd>
+A pointer to a location in which to store a given ULONG value.
+
 
 ### -param Value [in]
 
-<dd>
-<p>The value to be stored.</p>
-</dd>
-</dl>
+The value to be stored.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>Callers of 
+Callers of 
     <b>NdisStoreUlong</b> can be running at any IRQL if 
     <i>DestinationAddress</i> points to nonpaged pool. Otherwise, the caller must be running at IRQL &lt;
-    DISPATCH_LEVEL.</p>
+    DISPATCH_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,15 +88,18 @@ VOID NdisStoreUlong(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562783">RtlStoreUlong</a> instead.</p>
+Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562783">RtlStoreUlong</a> instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,10 +109,12 @@ VOID NdisStoreUlong(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>See Remarks section</p>
+See Remarks section
+
 </td>
 </tr>
 </table>
@@ -122,9 +122,12 @@ VOID NdisStoreUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisretrieveulong.md">NdisRetrieveUlong</a>
+<a href="netvista.ndisretrieveulong">NdisRetrieveUlong</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisStoreUlong function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisStoreUlong macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

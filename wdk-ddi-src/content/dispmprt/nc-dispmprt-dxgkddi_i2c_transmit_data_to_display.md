@@ -7,8 +7,8 @@ old-location: display\dxgkddii2ctransmitdatatodisplay.htm
 old-project: display
 ms.assetid: 67a08982-5d2f-4cd8-be14-76977fde0aac
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/8/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdiI2CTransmitDataToDisplay</i> function transmits data to an I2C device in a monitor.
 
 
+
 ## -prototype
 
 ````
@@ -63,21 +64,26 @@ NTSTATUS DxgkDdiI2CTransmitDataToDisplay(
 
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
+
 ### -param VidPnTargetId [in]
 
 An integer that identifies one of the video present targets on the display adapter.
+
 
 ### -param SevenBitI2CAddress [in]
 
 The address of the I2C device to which data will be transmitted.
 
+
 ### -param DataLength [in]
 
 The length, in bytes, of the data to be transmitted. This parameter must be between 1 and 64, inclusive.
 
+
 ### -param Data [in]
 
 A pointer to a buffer that holds the data to be transmitted.
+
 
 ## -returns
 <i>DxgkDdiI2CTransmitDataToDisplay</i> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h. The following list gives some of the possible error codes that can be returned.
@@ -96,6 +102,7 @@ A pointer to a buffer that holds the data to be transmitted.
 
  
 
+
 ## -remarks
 The video present target identified by <i>VidPnTargetId</i> is associated with one of the video outputs on the display adapter. The data is transmitted to an I2C device in the monitor that is connected to that video output. 
 
@@ -111,11 +118,13 @@ If the display adapter supports HDCP, the <i>DxgkDdiI2CTransmitDataToDisplay</i>
 
 <i>DxgkDdiI2CTransmitDataToDisplay</i> should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -126,14 +135,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,9 +156,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -158,5 +172,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

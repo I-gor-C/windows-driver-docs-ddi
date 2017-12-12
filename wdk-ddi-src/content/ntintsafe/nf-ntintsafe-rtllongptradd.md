@@ -7,7 +7,7 @@ old-location: kernel\rtllongptradd.htm
 old-project: kernel
 ms.assetid: D0036070-A23D-4525-AE80-E10B20330F97
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlLongPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Adds two values of type <b>LONG_PTR</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ NTSTATUS RtlLongPtrAdd(
 
 The first value in the equation.
 
+
 ### -param u8Addend [in]
 
 The value to add to <i>u8Augend</i>.
+
 
 ### -param pu8Result [out]
 
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
+
 ## -remarks
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: storage\storportbuildmdlfornonpagedpool.htm
 old-project: storage
 ms.assetid: f22dbf1e-4b40-4294-bca5-3011f0a97644
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortBuildMdlForNonPagedPool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortBuildMdlForNonPagedPool</b> routine updates the MDL to describe the associated non-paged memory.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ ULONG StorPortBuildMdlForNonPagedPool(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param Mdl [in, out]
 
 A pointer to the MDL that specifies the memory buffer.
+
 
 ## -returns
 StorPortBuildMdlForNonPagedPool returns one of the following status codes:
@@ -79,6 +82,7 @@ StorPortBuildMdlForNonPagedPool returns one of the following status codes:
 
  
 
+
 ## -remarks
 
 
@@ -87,6 +91,7 @@ StorPortBuildMdlForNonPagedPool returns one of the following status codes:
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +102,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,14 +113,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportirql">StorPortIrql</a>

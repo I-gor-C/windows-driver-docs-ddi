@@ -7,7 +7,7 @@ old-location: display\dxgkddicontrolinterrupt2.htm
 old-project: display
 ms.assetid: 0C09CAB1-3DFC-4340-8FF2-99CAF7F13156
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdi_ControlInterrupt2</i> function enables or disables the given interrupt type on the graphics hardware.
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 
 [in] A handle to the adapter object for the graphics processing unit (GPU). The driver returned this handle in the <i>MiniportDeviceContext</i> parameter from a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
+
 ### -param InterruptControl [in]
 
 [in] A <a href="display.dxgkarg_controlinterrupt2">DXGKARG_CONTROLINTERRUPT2</a>-type value that supplies the interrupt type, as well as the VSYNC state.
+
 
 ## -returns
 <i>DxgkDdi_ControlInterrupt2</i> returns one of the following values:
@@ -76,6 +79,7 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 
  
 
+
 ## -remarks
 
 
@@ -84,6 +88,7 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,14 +99,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,9 +120,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

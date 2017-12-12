@@ -7,8 +7,8 @@ old-location: storage\stor_crypto_capabilities_data.htm
 old-project: storage
 ms.assetid: D570B312-91C7-43F7-81B8-D9A1E74E9D19
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _STOR_CRYPTO_CAPABILITIES_DATA, STOR_CRYPTO_CAPABILITIES_DATA, *PSTOR_CRYPTO_CAPABILITIES_DATA
+ms.date: 12/8/2017
+ms.keywords: _STOR_CRYPTO_CAPABILITIES_DATA, *PSTOR_CRYPTO_CAPABILITIES_DATA, STOR_CRYPTO_CAPABILITIES_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Reserved for system use.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ typedef struct _STOR_CRYPTO_CAPABILITIES_DATA {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

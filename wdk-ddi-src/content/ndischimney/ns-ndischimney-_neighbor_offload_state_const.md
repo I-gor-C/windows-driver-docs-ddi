@@ -7,7 +7,7 @@ old-location: netvista\neighbor_offload_state_const.htm
 old-project: netvista
 ms.assetid: 1c79a3d6-c365-4740-a2e0-94333b70d8cc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NEIGHBOR_OFFLOAD_STATE_CONST, *PNEIGHBOR_OFFLOAD_STATE_CONST, NEIGHBOR_OFFLOAD_STATE_CONST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,8 +39,10 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The NEIGHBOR_OFFLOAD_STATE_CONST structure contains the constant variables of a neighbor state
   object.
+
 
 
 ## -syntax
@@ -66,6 +68,7 @@ An
      <b>RecognizedOptions</b> member of 
      <b>Header</b> is reserved.
 
+
 ### -field DlSourceAddress
 
 When non-<b>NULL</b>, a 32-byte source MAC address. The offload target must support software-configurable
@@ -73,13 +76,16 @@ When non-<b>NULL</b>, a 32-byte source MAC address. The offload target must supp
      connection to 
      <b>DlSourceAddress</b> . 
      
+
 When <b>NULL</b>, the offload target ignores this parameter and sets the source MAC address to the value
      that was configured for the network interface.
+
 If the network interface has one or more multicast addresses enabled, the offloaded connection must
      allow receive traffic to arrive on either the configured MAC address or the multicast addresses. The
      configured MAC address is either 
      <b>DlSourceAddress</b> or, if 
      <b>DlSourceAddress</b> is zero, the MAC address for the network interface.
+
 
 ### -field VlanId
 
@@ -87,10 +93,12 @@ An unsigned 12-bit binary number that identifies the virtual LAN (VLAN) to which
      The 
      <b>VlanId</b> ID pertains only to packets that are sent or received using the neighbor state object.
      
+
 When <b>NULL</b>, the offload target should use any VLAN IDs that have been configured for its network
      interface. The offload target's 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
      reads such VLAN IDs from the registry.
+
 
 ## -remarks
 For a description of how an offload target uses the 
@@ -98,11 +106,13 @@ For a description of how an offload target uses the
     <a href="netvista.802_1q_and_802_1p_processing_on_an_offloaded_tcp_connection">802.1Q
     and 802.1p Processing on an Offloaded TCP Connection</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +139,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NEIGHBOR_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NEIGHBOR_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

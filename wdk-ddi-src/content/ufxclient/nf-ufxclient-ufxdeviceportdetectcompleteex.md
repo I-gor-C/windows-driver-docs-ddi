@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Notifies UFX about the port type that was detected, and optionally requests an action.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ VOID UfxDevicePortDetectCompleteEx(
 
 A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
 
+
 ### -param PortType [in]
 
 Contains an enumeration value of type <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a>.
+
 
 ### -param Action [in]
 
 Contains an enumeration value of type <a href="buses.usbfn_action">USBFN_ACTION</a>.
 
+
 ## -returns
 This method does not return a value.
+
 
 ## -remarks
 The client driver calls <b>UfxDevicePortDetectCompleteEx</b> after port detection is complete, typically from its <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_port_detect.md">EVT_UFX_DEVICE_PORT_DETECT</a> callback function. On some platforms, UFX may use the reported port type to notify the battery manager of the maximum current it can draw from the USB port.
@@ -82,19 +87,23 @@ If the <i>Action</i> parameter is set to <b>UsbfnActionDetectProprietaryCharger<
 
 The following snippet shows how a client driver calls <b>UfxDevicePortDetectCompleteEx</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,9 +114,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

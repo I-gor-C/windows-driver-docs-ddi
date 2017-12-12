@@ -7,7 +7,7 @@ old-location: display\d3dkmt-standardallocation-existingheap.htm
 old-project: display
 ms.assetid: 7e97fb29-64a7-4fb5-b07e-a9810499cf1b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_STANDARDALLOCATION_EXISTINGHEAP, D3DKMT_STANDARDALLOCATION_EXISTINGHEAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Holds information about the existing heap.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DKMT_STANDARDALLOCATION_EXISTINGHEAP {
 
 Size in bytes of the existing heap.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Size in bytes of the existing heap.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

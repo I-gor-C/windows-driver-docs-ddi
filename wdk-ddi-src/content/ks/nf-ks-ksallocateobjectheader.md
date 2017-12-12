@@ -42,6 +42,7 @@ The <b>KsAllocateObjectHeader</b> function initializes the required file context
    header.
 
 
+
 ## -syntax
 
 ````
@@ -62,11 +63,13 @@ NTSTATUS KsAllocateObjectHeader(
 Points to the caller-allocated location in which to return a pointer to the initialized 
       <b>KSOBJECT_HEADER</b> if successful. 
 
+
 ### -param ItemsCount [in]
 
 Specifies the number of object create items in the <i>ItemsList</i> to be added to the 
       object header once the header is allocated. This value should be zero if <i>ItemsList</i> is 
       <b>NULL</b>.
+
 
 ### -param ItemsList [in, optional]
 
@@ -74,20 +77,24 @@ Optionally specifies a pointer to a caller-allocated buffer containing a series 
       <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> structures to be added to 
       the object header. Must be set to <b>NULL</b> if there are no object create items.
 
+
 ### -param Irp [in]
 
 Points to the IRP, of major function <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>, 
       that contains the necessary information to complete the creation of the object header.
 
+
 ### -param Table [in]
 
 Points to an initialized dispatch table for this file object.
+
 
 ## -returns
 The <b>KsAllocateObjectHeader</b> function returns 
       <b>STATUS_SUCCESS</b> if successful or 
       <b>STATUS_INSUFFICIENT_RESOURCES</b> if not enough resources are available to fulfill the 
       request.
+
 
 ## -remarks
 Before calling this routine the driver must allocate system-resident storage for a 
@@ -110,11 +117,13 @@ Drivers must not free the memory allocated for the subobject
      <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> list until after calling 
      <b>KsFreeDeviceHeader</b>. Failure to do so can result in a bug check condition.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +134,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +145,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -145,9 +156,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -165,5 +178,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAllocateObjectHeader function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

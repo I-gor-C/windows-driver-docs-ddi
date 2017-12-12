@@ -7,8 +7,8 @@ old-location: storage\dsm_querysupportedlbpolicies.htm
 old-project: storage
 ms.assetid: c9c04601-783a-454d-a80e-be8aa5df519a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies
+ms.date: 12/8/2017
+ms.keywords: _DSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The DSM_QuerySupportedLBPolicies structure is used to query the list of load balance policies that are supported on the LUN.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _DSM_QuerySupportedLBPolicies {
 
 An unsigned 32-bitfield that returns the number of policies that are supported for the LUN by the controlling DSM.
 
+
 ### -field Reserved
 
 Should be zero.
 
+
 ### -field Supported_LB_Policies
 
 An array of DSM_Load_Balance_Policy structures, one for each of the supported load balance policies. The number of array elements will be the same as <i>SupportedLBPoliciesCount</i>. Each element of the array lists only the supported load balance policy type.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ An array of DSM_Load_Balance_Policy structures, one for each of the supported lo
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

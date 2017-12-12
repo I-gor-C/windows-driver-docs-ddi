@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary in order for the 1394 bus driver to carry out an IsochAllocateChannel request.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_CHANNEL {
 
 Specifies the particular channel to allocate, or ISOCH_ANY_CHANNEL for an arbitrary channel. 
 
+
 ### -field Channel
 
 Specifies the channel allocated, if the request succeeds.
 
+
 ### -field ChannelsAvailable
 
 A bitmap specifying the available channels. The highest order bit (bit 63) specifies channel 0, the next bit (bit 62) specifies channel 1, and so on.
+
 <div class="alert"><b>Note</b>  Drivers should not rely on this information  because another device may allocate or deallocate channels at any time. The bus driver fills in this member, even if the request fails.</div>
 <div> </div>
 
@@ -76,6 +80,7 @@ A bitmap specifying the available channels. The highest order bit (bit 63) speci
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

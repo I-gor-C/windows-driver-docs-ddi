@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelrestorefrombuffer.htm
 old-project: netvista
 ms.assetid: 5A063585-AC45-44DF-BE21-FA1BB6283E6F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbChannelRestoreFromBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbChannelRestoreFromBuffer</b>  function restores the client state from previously saved state.
 The driver must check the return value of the function.
+
 
 
 ## -syntax
@@ -61,14 +63,17 @@ NTSTATUS VmbChannelRestoreFromBuffer(
 
  A handle for a channel.  
 
+
 ### -param Buffer [in]
 
 A pointer to a buffer that contains previously saved state.
 
 
+
 ### -param BufferSize [in]
 
 The size, in bytes, of the buffer.
+
 
 ## -returns
 <b>VmbChannelRestoreFromBuffer</b> returns one of the following status values: 
@@ -84,47 +89,58 @@ The size, in bytes, of the buffer.
 
  
 
+
 ## -remarks
 The caller is expected to call this function with buffers that contain whole
 "chunks" of stored data.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

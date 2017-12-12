@@ -7,7 +7,7 @@ old-location: netvista\ndiscopyfromnetbuffertonetbuffer.htm
 old-project: netvista
 ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisCopyFromNetBufferToNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ Call the
   structure.
 
 
+
 ## -syntax
 
 ````
@@ -64,19 +65,23 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 
 A pointer to a previously allocated destination NET_BUFFER structure.
 
+
 ### -param DestinationOffset [in]
 
 The byte offset within the destination NET_BUFFER structure at which to begin writing the copied
      data. For more information about 
      <i>DestinationOffset</i>, see the following Remarks section.
 
+
 ### -param BytesToCopy [in]
 
 The number of bytes to copy.
 
+
 ### -param Source [in]
 
 A pointer to a previously allocated source NET_BUFFER structure.
+
 
 ### -param SourceOffset [in]
 
@@ -84,11 +89,13 @@ The byte offset within the source NET_BUFFER structure at which to begin copying
      more information about 
      <i>SourceOffset</i>, see the following Remarks section.
 
+
 ### -param BytesCopied [out]
 
 A pointer to the caller-supplied variable in which this function returns the number of bytes
      actually copied. This number can be less than the value of 
      <i>BytesToCopy</i> if the source runs out of data or the destination runs out of space.
+
 
 ## -returns
 <b>NdisCopyFromNetBufferToNetBuffer</b> returns one of the following status values:
@@ -100,6 +107,7 @@ A pointer to the caller-supplied variable in which this function returns the num
 </dl>The copy operation failed because of insufficient resources.
 
  
+
 
 ## -remarks
 The caller of 
@@ -137,11 +145,13 @@ NDIS uses the offsets in the
     <b>CurrentMdlOffset</b> in the source NET_BUFFER and the 
     <i>SourceOffset</i> value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -152,14 +162,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -170,6 +183,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -180,14 +194,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -202,5 +219,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

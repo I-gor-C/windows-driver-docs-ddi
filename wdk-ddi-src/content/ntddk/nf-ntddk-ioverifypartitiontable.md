@@ -7,7 +7,7 @@ old-location: kernel\ioverifypartitiontable.htm
 old-project: kernel
 ms.assetid: dc7b543b-1fb5-477c-a612-c8e7381e637e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoVerifyPartitionTable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The <b>IoVerifyPartitionTable</b> routine checks the validity of the partition t
    for a disk.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS IoVerifyPartitionTable(
 
 Specifies the device object of the disk to verify.
 
+
 ### -param FixErrors [in]
 
 Specifies if the routine should correct any correctable errors in the partition table.
+
 
 ## -returns
 The routine returns STATUS_SUCCESS if the partition table is error-free.
@@ -72,14 +75,17 @@ If the caller specifies <b>FALSE</b> for the <i>FixErrors</i> parameter
 
 The routine might also return other NT status error codes.
 
+
 ## -remarks
 <b>IoVerifyPartitionTable</b> must be used only by disk drivers.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +128,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +139,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>

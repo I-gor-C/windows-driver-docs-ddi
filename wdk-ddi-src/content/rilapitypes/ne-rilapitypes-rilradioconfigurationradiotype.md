@@ -7,7 +7,7 @@ old-location: netvista\rilradioconfigurationradiotype_2.htm
 old-project: netvista
 ms.assetid: 5ac7d462-53bb-4540-8889-f2f6c71d4823
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILRADIOCONFIGURATIONRADIOTYPE, RILRADIOCONFIGURATIONRADIOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -104,6 +105,7 @@ typedef enum _RILRADIOCONFIGURATIONRADIOTYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

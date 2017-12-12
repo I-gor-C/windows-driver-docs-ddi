@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlGetSupportedFeatures</b> routine returns the supported features of a volume attached to the specified device object.
 
 
+
 ## -syntax
 
 ````
@@ -57,11 +58,15 @@ NTSTATUS FsRtlGetSupportedFeatures(
 
 The target device object attached to a volume.
 
+
 ### -param SupportedFeatures [out]
 
 A pointer to a caller supplied <b>ULONG</b> value. On return, this value contains the supported feature flags for the attached volume.
 
+
 The supported features are a bitwise OR combination of the following flags.
+
+
 
 <table>
 <tr>
@@ -76,6 +81,7 @@ The supported features are a bitwise OR combination of the following flags.
 </td>
 <td width="60%">
 The volume supports offloaded read operations.
+
 </td>
 </tr>
 <tr>
@@ -86,10 +92,12 @@ The volume supports offloaded read operations.
 </td>
 <td width="60%">
 The volume supports offloaded write operations.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 <b>FsRtlGetSupportedFeatures</b> returns <b>STATUS_SUCCESS</b> if the supported features for the volume attached to <i>DeviceObject</i> are returned successfully. Otherwise, one of the following <b>NTSTATUS</b> values is returned.
@@ -102,6 +110,7 @@ The volume supports offloaded write operations.
 
  
 
+
 ## -remarks
 
 
@@ -110,6 +119,7 @@ The volume supports offloaded write operations.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,14 +130,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -138,6 +151,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -148,6 +162,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -158,9 +173,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: netvista\protocolcmopenaf.htm
 old-project: netvista
 ms.assetid: 7422c205-bc41-4121-b430-ff9e6b49dc2e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   to interact with a connection-oriented NDIS client that is opening the address family.
 
 
+
 ## -prototype
 
 ````
@@ -65,7 +66,9 @@ NDIS_STATUS ProtocolCmOpenAf(
 For a non-integrated call manager, <i>CallMgrBindingContext</i> specifies the handle to a call manager-allocated context area in which the call managers maintains
      its per-binding state information. The call manager supplied this handle when it called 
      <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>.
+
 For an integrated call manager (MCM), <i>CallMgrBindingContext</i> specifies the handle to a miniport-allocated context area in which the miniport maintains its per-adapter state information.  The miniport supplied this handle in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff553623">NdisMSetAttributesEx</a> call (for 5.x drivers) or its <a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a> call (for 6.x drivers).
+
 
 ### -param AddressFamily [in]
 
@@ -74,15 +77,18 @@ Specifies the address family that a client is opening. This address family was r
      <a href="netvista.ndiscmregisteraddressfamilyex">
      NdisCmRegisterAddressFamilyEx</a>.
 
+
 ### -param NdisAfHandle [in]
 
 Specifies a handle, supplied by NDIS, that uniquely identifies this address family instance. This
      handle is opaque to the call manager and reserved for system use.
 
+
 ### -param CallMgrAfContext [out]
 
 Specifies the handle to a call manager-supplied context area in which the call manager maintains
      state about this open of an address family it provides.
+
 
 ## -returns
 <i>ProtocolCmOpenAf</i> returns the status of its operation(s) as one of the following:
@@ -108,6 +114,7 @@ Specifies the handle to a call manager-supplied context area in which the call m
        another NDIS library function or any error status determined appropriate by the driver writer.
 
  
+
 
 ## -remarks
 <i>ProtocolCmOpenAf</i> performs any required allocations of dynamic resources and structures that the
@@ -142,11 +149,13 @@ The <b>PROTOCOL_CM_OPEN_AF</b> function type is defined in the Ndis.h header fil
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -154,11 +163,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>ProtocolCmOpenAf (NDIS 5.1)</i>)
    in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -169,9 +180,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -194,5 +207,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_OPEN_AF callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_OPEN_AF callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

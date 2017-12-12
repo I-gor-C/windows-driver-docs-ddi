@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltCommitFinalizeComplete</b> routine acknowledges a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS FltCommitFinalizeComplete(
 
 Opaque pointer to an instance of a minifilter driver. This parameter is required and cannot be <b>NULL</b>.
 
+
 ### -param Transaction [in]
 
 Opaque pointer to the transaction the minifilter driver is currently enlisted in. This parameter is required and cannot be <b>NULL</b>.
 
+
 ### -param TransactionContext [in, optional]
 
 Pointer to the minifilter driver's context for the transaction. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 <b>FltCommitFinalizeComplete</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as the following:
@@ -73,6 +77,7 @@ Pointer to the minifilter driver's context for the transaction. This parameter i
 </dl>The minifilter driver did not set a context on the transaction. This is an error code. 
 
  
+
 
 ## -remarks
 A minifilter driver that is enlisted in a transaction can receive a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification when the transaction is fully committed (that is, when all of the <a href="http://go.microsoft.com/fwlink/p/?linkid=94490">resource managers</a> associated with the transaction, such as <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">TxF</a>, have committed). For an antivirus minifilter driver that performs scans outside of transactions, you can use this notification value to determine when the driver should begin scanning files.
@@ -97,11 +102,13 @@ To set a transaction context, call <a href="ifsk.fltsettransactioncontext">FltSe
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564815">Transaction Notifications</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,14 +119,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista Service Pack 1 (SP1) and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +140,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -140,9 +151,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -196,5 +209,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCommitFinalizeComplete routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

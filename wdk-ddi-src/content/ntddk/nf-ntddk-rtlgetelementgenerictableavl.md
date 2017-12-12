@@ -41,6 +41,7 @@ req.irql: Any level (See Remarks)
 The <b>RtlGetElementGenericTableAvl</b> routine returns a pointer to the caller-supplied data for a particular generic Adelson-Velsky/Landis (AVL) table element. 
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ PVOID RtlGetElementGenericTableAvl(
 
 Pointer to the generic AVL table (<a href="ifsk.rtl_avl_table">RTL_AVL_TABLE</a>) from which the <i>I</i>th element is to be retrieved. The table must have been initialized by calling <a href="ifsk.rtlinitializegenerictableavl">RtlInitializeGenericTableAvl</a>.
 
+
 ### -param I [in]
 
 Index of the element selected. This value is zero-based, so the index of the last-inserted element currently in <i>Table</i> is always one less than the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/hh406522">RtlNumberGenericTableElementsAvl</a>. 
 
+
 ## -returns
 <b>RtlGetElementGenericTableAvl</b> returns a pointer to the caller-supplied data for the <i>I</i>th element in the generic AVL table. It returns <b>NULL</b> if the given <i>I</i> is too large or if the generic AVL table currently has no elements. 
+
 
 ## -remarks
 <b>RtlGetElementGenericTableAvl</b> returns the <i>I</i>th element inserted in the generic AVL table. To retrieve the first element, set <i>I</i> to zero. To retrieve the last element, set <i>I</i> to (<a href="ifsk.rtlnumbergenerictableelementsavl">RtlNumberGenericTableElementsAvl</a>(<i>Table</i>)-1). Note that if an element is deleted from the generic table, the indexes of all elements inserted after the deleted element are decremented. Thus an element's index might change over time. 
@@ -79,11 +83,13 @@ If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic t
 
 Callers of <b>RtlGetElementGenericTableAvl</b> must be running at IRQL &lt; DISPATCH_LEVEL if the caller-allocated memory for the generic table is pageable. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,14 +100,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available with Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +121,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +132,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -132,9 +143,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (See Remarks)
+
 </td>
 </tr>
 </table>
@@ -161,5 +174,8 @@ Any level (See Remarks)
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetElementGenericTableAvl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: debugger\debug_register_description.htm
 old-project: debugger
 ms.assetid: 92e7800d-4de6-498c-87f8-8690d7e8fc51
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>DEBUG_REGISTER_DESCRIPTION</b> structure is returned by <a href="debugger.getdescription">GetDescription</a> to describe a processor's register.
 
 
+
 ## -syntax
 
 ````
@@ -62,40 +63,49 @@ typedef struct _DEBUG_REGISTER_DESCRIPTION {
 
 The type of value that this register holds.  The possible values are the same as for the <b>Type</b> field in the <a href="debugger.debug_value">DEBUG_VALUE</a> structure.
 
+
 ### -field Flags
 
 A bit field of flags for the register.  Currently, the only bit that can be set is DEBUG_REGISTER_SUB_REGISTER, which indicates that this register is a subregister.
+
 
 ### -field SubregMaster
 
 The index of the register of which this register is a sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.
 
+
 ### -field SubregLength
 
 The size, in bits, of this sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.
+
 
 ### -field SubregMask
 
 The bit mask that converts the register specified in <b>SubregMaster</b> into this sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.
 
+
 ### -field SubregShift
 
 The bit shift that converts the register specified in <b>SubregMaster</b> into this sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.
 
+
 ### -field Reserved0
 
 Reserved for system use.
+
 
 ## -remarks
 If this register is a subregister, the value of the full register can be turned into the value of the sub-register by first shifting <b>SubregShift</b> bits to the right and then combining the result with <b>SubregMask</b> using the bitwise-AND operator.  The size of the sub-register (<b>SubregLength</b>) is the number of bits set in <b>SubregMask</b>.
 
 For general information about registers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

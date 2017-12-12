@@ -7,7 +7,7 @@ old-location: netvista\ndismgetdeviceproperty.htm
 old-project: netvista
 ms.assetid: caef96b6-1b94-475d-9f78-66ae6d6ac979
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMGetDeviceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   miniport driver through a bus driver.
 
 
+
 ## -syntax
 
 ````
@@ -65,11 +66,13 @@ The NDIS handle that identifies the miniport adapter. This handle was originally
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param PhysicalDeviceObject [out, optional]
 
 A pointer to a caller-allocated buffer. The buffer receives a pointer to a 
      <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the
      physical device for the miniport adapter. This pointer is optional.
+
 
 ### -param FunctionalDeviceObject [out, optional]
 
@@ -77,6 +80,7 @@ A pointer to a caller-allocated buffer. The buffer receives a pointer to a
      <a href="kernel.device_object">DEVICE_OBJECT</a> structure. 
      <b>DEVICE_OBJECT</b> represents the functional device object that NDIS creates for the physical device.
      This pointer is optional.
+
 
 ### -param NextDeviceObject [out, optional]
 
@@ -86,6 +90,7 @@ A pointer to a caller-allocated buffer. The buffer receives a pointer to a
      this functional device object for the physical device. For example, the next device object could be the
      object that is associated with a bus driver or HAL This pointer is optional.
 
+
 ### -param AllocatedResources [out, optional]
 
 A pointer to a caller-allocated buffer that receives a pointer to a 
@@ -93,6 +98,7 @@ A pointer to a caller-allocated buffer that receives a pointer to a
      CM_RESOURCE_LIST describes a list of hardware resources that the PnP manager assigns to the
      physical device. This list contains the resources in raw form, that is, not translated by HAL. This
      pointer is optional.
+
 
 ### -param AllocatedResourcesTranslated [out, optional]
 
@@ -102,8 +108,10 @@ A pointer to a caller-allocated buffer that receives a pointer to a
      physical device. This list contains the resources in translated form, that is, translated by HAL. This
      pointer is optional.
 
+
 ## -returns
 None
+
 
 ## -remarks
 Miniport drivers must retrieve specific information to set up their communications. Miniport drivers
@@ -127,11 +135,13 @@ Miniport drivers can call
     translated resources, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff562374">Plug and Play</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,16 +152,19 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see 
    <a href="https://msdn.microsoft.com/65f3f766-8b04-466b-9e92-1bd8f1c4fbcc">NdisMGetDeviceProperty (NDIS
    5.1)</a>.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +175,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -172,14 +186,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
@@ -197,5 +214,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: netvista\rilsendmsgackparams_v2_2.htm
 old-project: netvista
 ms.assetid: 10bd2f88-ad1e-4d48-a338-e49c82a66d7a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2
+ms.date: 12/8/2017
+ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -88,6 +89,7 @@ typedef struct _RILSENDMSGACKPARAMS_V2 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

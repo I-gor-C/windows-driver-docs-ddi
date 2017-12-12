@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtoulonglong.htm
 old-project: kernel
 ms.assetid: AE273E51-FEB5-4470-AB19-0F55A2F8EFFD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlLongLongToULongLong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Converts a value of type <b>LONGLONG</b> to a value of type <b>LONGLONG</b>.
 
 
+
 ## -syntax
 
 ````
@@ -57,20 +58,24 @@ NTSTATUS RtlLongLongToULongLong(
 
 The value to be converted.
 
+
 ### -param pullResult [out]
 
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
+
 
 ## -remarks
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,6 +86,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

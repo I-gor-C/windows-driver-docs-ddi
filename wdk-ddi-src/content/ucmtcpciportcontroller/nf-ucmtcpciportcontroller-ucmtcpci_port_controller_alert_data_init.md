@@ -46,6 +46,7 @@ req.product: Windows 10 or later.
         Call this function before calling <a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a>.
 
 
+
 ## -syntax
 
 ````
@@ -61,8 +62,10 @@ VOID UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT(
 
 A pointer to the driver-allocated <b>UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</b> structure.
 
+
 ## -returns
 This method does not return a value.
+
 
 ## -remarks
 
@@ -72,22 +75,27 @@ This method does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,9 +106,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: netvista\ndisfsynchronousoidrequest.htm
 old-project: netvista
 ms.assetid: 01B625EB-AB6D-496F-95F2-22845460324A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisFSynchronousOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,9 +55,11 @@ NDIS_STATUS NdisFSynchronousOidRequest(
 
 Reserved.
 
+
 ### -param OidRequest [in]
 
 Reserved.
+
 
 ## -remarks
 
@@ -67,6 +69,7 @@ Reserved.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,14 +80,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +101,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -105,9 +112,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

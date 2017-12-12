@@ -7,7 +7,7 @@ old-location: print\branchofficejobdatapipelinefailed.htm
 old-project: print
 ms.assetid: 3F5DB2F5-40B6-4A8D-983C-065D17E62AE6
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PBranchOfficeJobDataPipelineFailed, BranchOfficeJobDataPipelineFailed, *PBranchOfficeJobDataPipelineFailed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains the necessary data for logging a branch office job Pipeline Rendering Failed event on a remote server. This is based on standard job-related data available to the spooler.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct {
 
 Specifies the name of the print document.
 
+
 ### -field pPrinterName
 
 Specifies the print connection.
 
+
 ### -field pExtraErrorInfo
 
 Specifies the name of the client machine printing the job.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ Specifies the name of the client machine printing the job.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_corelayer_devicecallbacks.htm
 old-project: display
 ms.assetid: A8E60BF8-2DFE-479A-9DA9-C3D9B012EBE9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This structure contains the function table for the core layer device callback functions.
+
 
 
 ## -syntax
@@ -97,169 +98,211 @@ typedef struct D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS {
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a> function.
 
+
 ### -field pfnStateVsConstBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_vs_constbuf_cb.md">pfnStateVsConstBufCb</a> function.
+
 
 ### -field pfnStatePsSrvCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ps_srv_cb.md">pfnStatePsSrvCb</a> function.
 
+
 ### -field pfnStatePsShaderCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ps_shader_cb.md">pfnStatePsShaderCb</a> function.
+
 
 ### -field pfnStatePsSamplerCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ps_sampler_cb.md">pfnStatePsSamplerCb</a> function.
 
+
 ### -field pfnStateVsShaderCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_vs_shader_cb.md">pfnStateVsShaderCb</a> function.
+
 
 ### -field pfnStatePsConstBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ps_constbuf_cb.md">pfnStatePsConstBufCb</a> function.
 
+
 ### -field pfnStateIaInputLayoutCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ia_inputlayout_cb.md">pfnStateIaInputLayoutCb</a> function.
+
 
 ### -field pfnStateIaVertexBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ia_vertexbuf_cb.md">pfnStateIaVertexBufCb</a> function.
 
+
 ### -field pfnStateIaIndexBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ia_indexbuf_cb.md">pfnStateIaIndexBufCb</a> function.
+
 
 ### -field pfnStateGsConstBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_gs_constbuf_cb.md">pfnStateGsConstBufCb</a> function.
 
+
 ### -field pfnStateGsShaderCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_gs_shader_cb.md">pfnStateGsShaderCb</a> function.
+
 
 ### -field pfnStateIaPrimitiveTopologyCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_ia_primitive_topology_cb.md">pfnStateIaPrimitiveTopologyCb</a> function.
 
+
 ### -field pfnStateVsSrvCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_vs_srv_cb.md">pfnStateVsSrvCb</a> function.
+
 
 ### -field pfnStateVsSamplerCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_vs_sampler_cb.md">pfnStateVsSamplerCb</a> function.
 
+
 ### -field pfnStateGsSrvCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_gs_srv_cb.md">pfnStateGsSrvCb</a> function.
+
 
 ### -field pfnStateGsSamplerCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_gs_sampler_cb.md">pfnStateGsSamplerCb</a> function.
 
+
 ### -field pfnStateOmRenderTargetsCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_om_rendertargets_cb.md">pfnStateOmRenderTargetsCb</a> function.
+
 
 ### -field pfnStateOmBlendStateCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_om_blendstate_cb.md">pfnStateOmBlendStateCb</a> function.
 
+
 ### -field pfnStateOmDepthStateCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_om_depthstate_cb.md">pfnStateOmDepthStateCb</a> function.
+
 
 ### -field pfnStateRsRastStateCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_rs_raststate_cb.md">pfnStateRsRastStateCb</a> function.
 
+
 ### -field pfnStateSoTargetsCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_so_targets_cb.md">pfnStateSoTargetsCb</a> function.
+
 
 ### -field pfnStateRsViewportsCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_rs_viewports_cb.md">pfnStateRsViewportsCb</a> function.
 
+
 ### -field pfnStateRsScissorCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_rs_scissor_cb.md">pfnStateRsScissorCb</a> function.
+
 
 ### -field pfnDisableDeferredStagingResourceDestruction
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_disable_deferred_staging_resource_destruction_cb.md">pfnDisableDeferredStagingResourceDestruction</a> function.
 
+
 ### -field pfnStateTextFilterSizeCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_textfiltersize_cb.md">pfnStateTextFilterSizeCb</a> function.
+
 
 ### -field pfnStateHsSrvCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_hs_srv_cb.md">pfnStateHsSrvCb</a> function.
 
+
 ### -field pfnStateHsShaderCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_hs_shader_cb.md">pfnStateHsShaderCb</a> function.
+
 
 ### -field pfnStateHsSamplerCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_hs_sampler_cb.md">pfnStateHsSamplerCb</a> function.
 
+
 ### -field pfnStateHsConstBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_hs_constbuf_cb.md">pfnStateHsConstBufCb</a> function.
+
 
 ### -field pfnStateDsSrvCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_ds_srv_cb.md">pfnStateDsSrvCb</a> function.
 
+
 ### -field pfnStateDsShaderCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_ds_shader_cb.md">pfnStateDsShaderCb</a> function.
+
 
 ### -field pfnStateDsSamplerCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_ds_sampler_cb.md">pfnStateDsSamplerCb</a> function.
 
+
 ### -field pfnStateDsConstBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_ds_constbuf_cb.md">pfnStateDsConstBufCb</a> function.
+
 
 ### -field pfnPerformAmortizedProcessingCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_perform_amortized_processing_cb.md">pfnPerformAmortizedProcessingCb</a> function.
 
+
 ### -field pfnStateCsSrvCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_cs_srv_cb.md">pfnStateCsSrvCb</a> function.
+
 
 ### -field pfnStateCsUavCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_cs_uav_cb.md">pfnStateCsUavCb</a> function.
 
+
 ### -field pfnStateCsShaderCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_cs_shader_cb.md">pfnStateCsShaderCb</a> function.
+
 
 ### -field pfnStateCsSamplerCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_cs_sampler_cb.md">pfnStateCsSamplerCb</a> function.
 
+
 ### -field pfnStateCsConstBufCb
 
 A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_state_cs_constbuf_cb.md">pfnStateCsConstBufCb</a> function.
+
 
 ### -field pfnCreateContextCb
 
 A pointer to the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.
 
+
 ### -field pfnCreateContextVirtualCb
 
 A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function.
+
 
 ## -remarks
 
@@ -269,22 +312,27 @@ A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtual
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

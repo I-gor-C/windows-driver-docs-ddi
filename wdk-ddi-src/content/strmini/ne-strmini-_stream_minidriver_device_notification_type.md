@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -65,9 +66,11 @@ typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE {
 
 Indicates that the minidriver is ready for the next device request.
 
+
 ### -field DeviceRequestComplete
 
 Indicates that the specified device SRB has completed.
+
 
 ### -field SignalMultipleDeviceEvents
 
@@ -92,6 +95,7 @@ Indicates that the specified device SRB has completed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

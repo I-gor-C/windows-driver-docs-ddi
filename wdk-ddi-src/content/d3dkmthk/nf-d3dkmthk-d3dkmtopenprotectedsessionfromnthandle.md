@@ -7,7 +7,7 @@ old-location: display\d3dkmtopenprotectedsessionfromnthandle.htm
 old-project: display
 ms.assetid: 3ebdf120-ecdd-474b-961d-958179cf30e0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTOpenProtectedSessionFromNtHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Used to open a protected session from the NT handle.
             
 
 
+
 ## -syntax
 
 ````
@@ -58,8 +59,10 @@ NTSTATUS  D3DKMTOpenProtectedSessionFromNtHandle(
 
 Holds information to open the protected session.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,8 +103,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

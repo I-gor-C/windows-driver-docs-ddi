@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Creates a connector object.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ NTSTATUS UcmConnectorCreate(
 
 A handle to a framework device object that the client driver received in the previous call to <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>.
 
+
 ### -param Config [in]
 
 A pointer to a caller-supplied <a href="buses.ucm_connector_config">UCM_CONNECTOR_CONFIG</a> structure that is initialized by calling <a href="buses.ucm_connector_config_init">UCM_CONNECTOR_CONFIG_INIT</a>.
 
+
 ### -param Attributes [in]
 
 A pointer to a caller-supplied <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new connector object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+
 
 
 
@@ -76,8 +80,10 @@ A pointer to a location that receives a handle to the new connector object.
 
 
 
+
 ## -returns
 <b>UcmConnectorCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> value. 
+
 
 ## -remarks
 If the client driver specifies a connector identifier that is already in use, the method fails with STATUS_INVALID_PARAMETER error code.
@@ -90,43 +96,53 @@ An appropriate place for a UCM client driver to call <b>UcmConnectorCreate</b> i
 
 This example code shows how to create a Type-C connector that is PD-capable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.15
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,6 +153,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -147,9 +164,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -164,5 +183,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UcmConnectorCreate method%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

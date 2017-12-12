@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_listen_state.htm
 old-project: netvista
 ms.assetid: 68798F3D-B708-4DCD-AB3F-D8DE4A8A0CF2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_P2P_LISTEN_STATE, WDI_P2P_LISTEN_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_P2P_LISTEN_STATE enumeration defines the Wi-Fi Direct listen states.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef enum _WDI_P2P_LISTEN_STATE {
 ### -field WDI_P2P_LISTEN_STATE_OFF
 
 When this listen state is set:
+
 <ul>
 <li>The port shall not schedule any time to explicitly listen on social channels for incoming Wi-Fi Direct action frames.</li>
 <li>The port shall not respond to probe requests as a Wi-Fi Direct Adapter.</li>
@@ -67,6 +69,7 @@ When this listen state is set:
 ### -field WDI_P2P_LISTEN_STATE_PASSIVE_AVAILABILITY
 
 When this listen state is set:
+
 <ul>
 <li>The port must enter into listen state periodically as specified by the ListenDuration parameters.</li>
 <li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the specified channel.</li>
@@ -75,6 +78,7 @@ When this listen state is set:
 ### -field WDI_P2P_LISTEN_STATE_AUTOMATIC_AVAILABILITY
 
 When this listen state is set:
+
 <ul>
 <li>The port must schedule time to explicitly listen on a social channel for incoming Wi-Fi Direct action frames.</li>
 <li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the configured social channel.</li>
@@ -85,6 +89,7 @@ When this listen state is set:
 ### -field WDI_P2P_LISTEN_STATE_HIGH_AVAILABILITY
 
 When this listen state is set:
+
 <ul>
 <li>The port must schedule time to explicitly listen on a social channel for incoming Wi-Fi Direct action frames.</li>
 <li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the configured social channel.</li>
@@ -100,22 +105,27 @@ When this listen state is set:
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

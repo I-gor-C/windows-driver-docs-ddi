@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary to carry out a SendPhyPacket request.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct _IRB_REQ_SEND_PHY_PACKET {
 
 Specifies any nondefault settings for this operation. Set to ASYNC_FLAGS_NO_STATUS to always return success from the send PHY packet operation, regardless of whether the send PHY packet succeeds or fails.
 
+
 ### -field GenerationCount
 
 Specifies the bus reset generation as known by the device driver that submits this request. If the specified generation count does not match the actual generation of the bus, this request is returned with a status of STATUS_INVALID_GENERATION.
+
 
 ### -field PhyPacket
 
 Specifies the 64-bit PHY packet that is sent to the 1394 bus.
 
+
 ## -remarks
 If successful, the new 1394 bus driver (1394ohci.sys) sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS. If <b>u.SendPhyPacket.GenerationCount</b> does not match the current bus generation count, the new 1394 bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_INVALID_GENERATION
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

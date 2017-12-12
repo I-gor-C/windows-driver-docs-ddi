@@ -7,7 +7,7 @@ old-location: netvista\ndisfdirectoidrequestcomplete.htm
 old-project: netvista
 ms.assetid: b6b4d4f4-63d5-496c-9082-f2e8d1a174ec
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisFDirectOidRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ Filter drivers call the
   returned NDIS_STATUS_PENDING.
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ The NDIS handle that identifies this filter module NDIS passed the handle to the
      a call to the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
+
 ### -param OidRequest [in]
 
 A pointer to a buffer that is formatted as an 
@@ -72,13 +74,16 @@ A pointer to a buffer that is formatted as an
      <a href="..\ndis\nc-ndis-filter_direct_oid_request.md">
      FilterDirectOidRequest</a> function.
 
+
 ### -param Status [in]
 
 The final status of the request operation: NDIS_STATUS_SUCCESS or any driver-determined
      NDIS_STATUS_<i>Xxx</i> value except NDIS_STATUS_PENDING.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A filter driver that returns NDIS_STATUS_PENDING from its 
@@ -93,11 +98,13 @@ If an overlying driver originated the direct OID request, NDIS calls the request
     <a href="..\ndis\nc-ndis-filter_direct_oid_request_complete.md">
     FilterDirectOidRequestComplete</a>) of the overlying driver that originated the request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,14 +115,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.1 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,6 +136,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -136,9 +147,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -164,5 +177,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFDirectOidRequestComplete function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFDirectOidRequestComplete function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

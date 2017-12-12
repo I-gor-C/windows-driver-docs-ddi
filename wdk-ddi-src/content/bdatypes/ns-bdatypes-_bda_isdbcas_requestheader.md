@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: E83111C1-5A46-4AB4-B54C-F8330943070D
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_ISDBCAS_REQUESTHEADER, BDA_ISDBCAS_REQUESTHEADER, *PBDA_ISDBCAS_REQUESTHEADER
+ms.keywords: _BDA_ISDBCAS_REQUESTHEADER, *PBDA_ISDBCAS_REQUESTHEADER, BDA_ISDBCAS_REQUESTHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _BDA_ISDBCAS_REQUESTHEADER {
 
 EMD/EMG
 
+
 ### -field bReserved
 
 Reserved for future use.
 
+
 ### -field ulDataLength
 
 Specifies the size in bytes of the <b>argbIsdbCommand</b> member.
+
 
 ### -field argbIsdbCommand
 
@@ -78,6 +82,7 @@ Specifies the size in bytes of the <b>argbIsdbCommand</b> member.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

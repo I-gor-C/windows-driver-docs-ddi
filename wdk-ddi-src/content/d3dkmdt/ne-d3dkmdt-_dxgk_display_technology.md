@@ -7,8 +7,8 @@ old-location: display\dxgk_display_technology.htm
 old-project: display
 ms.assetid: 4612213A-E79F-4C3B-95B4-8C83C0B5FB32
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DXGK_DISPLAY_TECHNOLOGY, *PDXGK_DISPLAY_TECHNOLOGY, DXGK_DISPLAY_TECHNOLOGY
+ms.date: 12/8/2017
+ms.keywords: _DXGK_DISPLAY_TECHNOLOGY, DXGK_DISPLAY_TECHNOLOGY, *PDXGK_DISPLAY_TECHNOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Enum used to specify the display technology being used.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _DXGK_DISPLAY_TECHNOLOGY {
 
 Invalid type.
 
+
 ### -field DXGK_DT_OTHER
 
 A display technology which does not match one of the defined, valid types.
+
 
 ### -field DXGK_DT_LCD
 
 A display using an LCD panel.
 
+
 ### -field DXGK_DT_OLED
 
 A display using an OLED panel.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ A display using an OLED panel.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

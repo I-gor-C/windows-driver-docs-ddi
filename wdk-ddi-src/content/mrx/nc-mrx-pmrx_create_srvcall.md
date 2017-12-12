@@ -41,6 +41,7 @@ req.irql:
 The<i> MRxCreateSrvCall</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request that the network mini-redirector create an SRV_CALL structure and establish connection with a server.
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS MRxCreateSrvCall(
 
 A pointer to the SRV_CALL structure to be created. 
 
+
 ### -param pCallbackContext [in, out]
 
 A pointer to the callback context used by the network mini-redirector to notify RDBSS when the <i>MRxCreateSrvCall</i> request is finally completed. The <i>pCallbackContext</i> parameter points to an MRX_SRVCALLDOWN_STRUCTURE structure that contains the RX_CONTEXT structure for this request, as well as the <b>Callback</b> routine that the mini-redirector calls when the <i>MRxCreateSrvCall</i> request is finally completed. 
+
 
 ## -returns
 RDBSS expects <i>MRxCreateSrvCall</i> to return STATUS_PENDING on success or failure. This behavior results because RDBSS expects this call to be completed asynchronously. A network mini-redirector should map STATUS_SUCCESS to STATUS_PENDING as a return value for <i>MRxCreateSrvCall</i>.
@@ -80,6 +83,7 @@ The <b>pCallbackContext-&gt;Status</b> member contains STATUS_SUCCESS on success
 </dl>The network was unreachable.
 
  
+
 
 ## -remarks
 The two important abstractions used in the interface between RDBSS and a network mini-redirector are the SRV_CALL structure and the NET_ROOT structure. An SRV_CALL structure corresponds to the context associated with a server once a connection is established. A NET_ROOT structure corresponds to a share on a server (this could also be viewed as a portion of the namespace that has been claimed by a network mini-redirector).
@@ -102,11 +106,13 @@ When this call completes, the <i>pSrvCall</i> parameter should be modified with 
 
 A network mini-redirector that indicates support as a UNC provider will receive a prefix claim from the Multiple UNC Provider (MUP) as a call to <i>MRxCreateSrvCall</i>. For more information about UNC Naming and MUP, see <a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +123,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,5 +167,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxCreateSrvCall routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

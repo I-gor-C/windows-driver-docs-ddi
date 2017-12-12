@@ -7,7 +7,7 @@ old-location: netvista\dot11_statistics.htm
 old-project: netvista
 ms.assetid: 714ad442-596b-4e67-82ce-a50e1808a3af
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DOT11_STATISTICS, DOT11_STATISTICS, *PDOT11_STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,47 +62,59 @@ typedef struct DOT11_STATISTICS {
 The type, revision, and size of the DOT11_STATISTICS structure. This member is formatted as an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
+
 ### -field Revision
 
 This member must be set to DOT11_STATISTICS_REVISION_1.
+
 
 ### -field Size
 
 This member must be set to 
        sizeof(DOT11_STATISTICS).
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+
 
 ### -field ullFourWayHandshakeFailures
 
 The number of four-way handshake failures that the 802.11 station encountered during Wi-Fi
      Protected Access (WPA) or Robust Security Network Association (RSNA) authentication.
      
+
 If the 802.11 station is not performing the WPA or RSNA authentication, it should set this member to
      DOT11_STATISTICS_UNKNOWN.
+
 
 ### -field ullTKIPCounterMeasuresInvoked
 
 The number of times that the 802.11 station invoked countermeasures following a message integrity
      code (MIC) failure.
      
+
 If the 802.11 station is not performing TKIP countermeasures, it should set this member to
      DOT11_STATISTICS_UNKNOWN.
+
 
 ### -field ullReserved
 
 This member is reserved for use by the operating system. The miniport driver must not write to
      this member.
+
 
 ### -field MacUcastCounters
 
@@ -111,9 +123,11 @@ The MAC layer counters based on unicast packets sent or received by the 802.11 s
      <a href="..\windot11\ns-windot11-dot11_mac_frame_statistics.md">
      DOT11_MAC_FRAME_STATISTICS</a> structure.
      
+
 <div class="alert"><b>Note</b>  <p class="note"> Counters for received unicast packets must only be incremented for those packets with a
      destination MAC address in the 802.11 MAC header that matches the 802.11 station's MAC
      address.
+
 </div>
 <div> </div>
 
@@ -124,10 +138,12 @@ The MAC layer counters based on multicast or broadcast packets sent or received 
      <a href="..\windot11\ns-windot11-dot11_mac_frame_statistics.md">
      DOT11_MAC_FRAME_STATISTICS</a> structure.
      
+
 <div class="alert"><b>Note</b>  <p class="note"> Counters for received multicast or broadcast packets must only be incremented for those
      packets with a destination MAC address in the 802.11 MAC header that matches an entry in the multicast
      address list of the 802.11 station. For more information about the multicast address list, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569388">OID_DOT11_MULTICAST_LIST</a>.
+
 </div>
 <div> </div>
 
@@ -137,14 +153,17 @@ An array of PHY layer counters. Each entry in this array is formatted as a
      <a href="..\windot11\ns-windot11-dot11_phy_frame_statistics.md">
      DOT11_PHY_FRAME_STATISTICS</a> structure.
      
+
 The miniport driver must maintain an entry within the 
      <b>PhyCounters</b> array for each supported PHY. If the 802.11 station supports multiple PHYs of the same
      type, the miniport driver must create separate entries for each.
+
 Entries within the 
      <b>PhyCounters</b> array must be in the same order as the list of supported PHYs that the driver returns
      when queried by 
      <a href="netvista.oid_dot11_supported_phy_types">
      OID_DOT11_SUPPORTED_PHY_TYPES</a>.
+
 
 ## -remarks
 The miniport driver must unconditionally set all of the counters in the DOT11_STATISTICS structure to
@@ -162,20 +181,24 @@ The driver's
 For more information about the statistics gathered by a Native 802.11 miniport driver, see 
     <a href="netvista.native_802_11_statistics">Native 802.11 Statistics</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -192,5 +215,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_STATISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_STATISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 The AvcCommandType enumeration type is used to indicate the type of command issued by a subunit driver to its AV/C subunit through <b>AVC_FUNCTION_COMMAND</b> or <b>AVC_FUNCTION_GET_REQUEST</b> function codes.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum _tagAvcCommandType {
 
 Specifies a control type of command.
 
+
 ### -field AVC_CTYPE_STATUS
 
 Specifies a status type of command.
+
 
 ### -field AVC_CTYPE_SPEC_INQ
 
 Specifies a specific-inquiry type of command. This permits a controller to inform targets that a specific set of operands must by furnished along with the opcode when issuing a command.
 
+
 ### -field AVC_CTYPE_NOTIFY
 
 Specifies a notify type of command.
 
+
 ### -field AVC_CTYPE_GEN_INQ
 
 Specifies a general inquiry command type. This permits a controller to query a target to find out if it supports a specific opcode without needing to pass any specific operands.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Specifies a general inquiry command type. This permits a controller to query a t
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AvcCommandType enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

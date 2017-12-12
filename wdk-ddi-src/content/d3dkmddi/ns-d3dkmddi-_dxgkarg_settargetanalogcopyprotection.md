@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settargetanalogcopyprotection.htm
 old-project: display
 ms.assetid: F5A853B2-4A8C-4929-AAEC-28844DEF0B29
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Holds information to set analog copy protection on a display adapter's video present target.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _DXGKARG_SETTARGETANALOGCOPYPROTECTION {
 
 [in] The identifier of a display adapter's video present target.
 
+
 ### -field CopyProtectionType
 
 [in] A value from the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enum indicating the type of analog copy protection being requested.
+
 
 ### -field APSTriggerBits
 
 [in] A value that describes copy protection for an OEM device. A value of 0 indicates no copy protection, and values of 1, 2, and 3 indicate low, medium, and high levels of copy protection, respectively. Values greater than 3 are not allowed.
 
+
 ### -field CopyProtectionSupport
 
 [in] A D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure containing flags indicating the analog copy protection support being requested.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ typedef struct _DXGKARG_SETTARGETANALOGCOPYPROTECTION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

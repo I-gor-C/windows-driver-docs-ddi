@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 When the minidriver calls the <b>StreamClassQueryMasterClock</b> routine, the class driver queries the appropriate time value of the master clock asynchronously, and passes the result to the routine passed in the <i>ClockCallbackRoutine</i> parameter.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ VOID StreamClassQueryMasterClock(
 
 Pointer to a <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a> indicating the stream that is querying its master clock. The stream may only have one query pending at a time. The class driver passes this value to the callback in the <b>HwStreamObject</b> member of the callback's <i>TimeContext</i> parameter.
 
+
 ### -param MasterClockHandle [in]
 
 Specifies the handle for the master clock that is being queried. The class driver passes this in the SRB_INDICATE_MASTER_CLOCK request to the minidriver's <a href="stream.strminireceivestreamcontrolpacket">StrMiniReceiveStreamControlPacket</a> routine.
+
 
 ### -param TimeFunction [in]
 
 Specifies what time function to query the master clock for. See <a href="stream.hw_time_context">HW_TIME_CONTEXT</a> for the possible values. The class driver passes this value to the callback in the <b>Function</b> member of the <i>TimeContext</i> parameter.
 
+
 ### -param ClockCallbackRoutine [in]
 
 Specifies the routine to which the class driver passes the results. The function prototype must be:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -85,6 +90,7 @@ Specifies the routine to which the class driver passes the results. The function
 ## -returns
 None
 
+
 ## -remarks
 The class driver queries the master clock and passes the results in the <i>TimeContext</i> parameter (of type <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>) of the callback. In particular, it sets the <b>Time</b> member of this structure to the time value requested in the <i>TimeFunction</i> parameter, the current system time in the <b>SystemTime</b> member of the same structure, and the minidriver's device extension in the <b>HwDeviceExtension</b> member of that structure.
 
@@ -92,11 +98,13 @@ The class driver deallocates the HW_TIME_CONTEXT structure after the clock callb
 
 On rare occasions, the graph manager switches the master clock. The class driver exposes a race condition in handling the new master clock. If the minidriver calls a stream class master clock routine immediately after it receives a new clock from the class driver, the class driver may produce unexpected results.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +115,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +126,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +149,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20StreamClassQueryMasterClock routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

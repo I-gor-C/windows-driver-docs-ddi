@@ -7,7 +7,7 @@ old-location: display\d3dddicaps_shader_min_precision.htm
 old-project: display
 ms.assetid: 98856726-b426-42e4-9560-f6b56164824a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DDDICAPS_SHADER_MIN_PRECISION, D3DDDICAPS_SHADER_MIN_PRECISION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies minimum precision levels that the user-mode driver supports in shaders.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum D3DDDICAPS_SHADER_MIN_PRECISION {
 
 The minimum precision level is 10-bit.
 
+
 ### -field D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT
 
 The minimum precision level is 16-bit.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The minimum precision level is 16-bit.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

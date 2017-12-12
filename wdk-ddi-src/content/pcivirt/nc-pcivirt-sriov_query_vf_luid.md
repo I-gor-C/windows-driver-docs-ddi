@@ -41,6 +41,7 @@ req.irql:
 Gets the local unique identifier of the PCI Express SR-IOV Virtual Function (VF).
 
 
+
 ## -prototype
 
 ````
@@ -65,18 +66,22 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param VfIndex [in]
 
 A zero-based index of the VF that is being queried.
+
 
 ### -param Luid [out]
 
 A pointer to the local unique
 identifier of the SR_IOV device implementing the interface.
 
+
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to get the identifier of a specific virtual function. 
@@ -85,27 +90,33 @@ The PF driver registers its implementation by setting the <b>QueryLuid</b> membe
 
 Here is an example implementation of this callback function. The PF driver generates a unique identifier by calling <a href="kernel.zwallocatelocallyuniqueid">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,8 +127,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

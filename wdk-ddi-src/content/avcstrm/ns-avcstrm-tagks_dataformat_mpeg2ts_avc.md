@@ -41,6 +41,7 @@ req.irql:
 The KS_DATAFORMAT_MPEG2TS_AVC structure stores the data format for an AV/C MPEG2 connection.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct tagKS_DATAFORMAT_MPEG2TS_AVC {
 
 Specifies the data format of the MPEG2 connection.
 
+
 ### -field ConnectInfo
 
 Specifies the AV/C connection information.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies the AV/C connection information.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,5 +92,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_MPEG2TS_AVC structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

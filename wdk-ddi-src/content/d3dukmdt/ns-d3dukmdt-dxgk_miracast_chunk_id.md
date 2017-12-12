@@ -7,7 +7,7 @@ old-location: display\dxgk_miracast_chunk_id.htm
 old-project: display
 ms.assetid: 4D350666-B103-4421-A25A-22A7BF41558E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DXGK_MIRACAST_CHUNK_ID, DXGK_MIRACAST_CHUNK_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Stores info that identifies a wireless display (Miracast) encode chunk.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef union {
 
 The number of the encoded Wi-Fi frame.
 
+
 ### -field PartNumber
 
 The frame part number.
 
+
 ### -field Value
 
 Holds a 64-bit value that identifies the encode chunk.
+
 
 ## -remarks
 
@@ -76,22 +80,27 @@ Holds a 64-bit value that identifies the encode chunk.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

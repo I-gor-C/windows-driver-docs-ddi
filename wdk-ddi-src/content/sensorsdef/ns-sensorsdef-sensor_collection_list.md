@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: B842C707-C6E0-4C56-986E-35BFD32F265D
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: SENSOR_COLLECTION_LIST, *PSENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST
+ms.keywords: SENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST, *PSENSOR_COLLECTION_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This structure contains a list of all <a href="..\sensorsdef\ns-sensorsdef-sensor_value_pair.md">SENSOR_VALUE_PAIR</a> structures for each sensor. This structure is returned by calling ReadFile.
 
 
+
 ## -syntax
 
 ````
@@ -59,38 +60,47 @@ typedef struct _SENSOR_COLLECTION_LIST {
 
 Represents the number of elements allocated in List.
 
+
 ### -field Count
 
 Represents the number of used entries in List.
+
 
 ### -field List
 
 A list of <a href="..\sensorsdef\ns-sensorsdef-sensor_value_pair.md">SENSOR_VALUE_PAIR</a> structures.
 
+
 ## -remarks
 The SENSOR_COLLECTION_LIST structure works with the following helper functions:
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

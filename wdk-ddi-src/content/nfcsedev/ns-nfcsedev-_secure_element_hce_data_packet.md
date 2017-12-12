@@ -41,6 +41,7 @@ req.irql:
 <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> is an input buffer to <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_hce_remote_send.md">IOCTL_NFCSE_HCE_REMOTE_SEND</a> and output buffer for <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_hce_remote_recv.md">IOCTL_NFCSE_HCE_REMOTE_RECV</a>.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _SECURE_ELEMENT_HCE_DATA_PACKET {
 
 The ID of the connection established between the device and the smart card reader, on which to send and receive the HCE packet. This ID is also received from <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_get_next_event.md">IOCTL_NFCSE_GET_NEXT_EVENT</a> when the event type (<a href="nfpdrivers._secure_element_event_type">SECURE_ELEMENT_EVENT_TYPE</a>) is <b>HceActivated</b> or <b>HceDeactivated</b>. Then the <b>pbEventData</b> field of the returned <a href="nfpdrivers.secure_element_event_info">SECURE_ELEMENT_EVENT_INFO</a> structure is a <a href="nfpdrivers.secure_element_hce_activation_payload">SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD</a> structure, which contains a <b>bConnectionId</b> member.
 
+
 ### -field cbPayload
 
 Length of ISO 7816-4 APDU buffer.
 
+
 ### -field pbPayload[ANYSIZE_ARRAY]
 
 Buffer holding ISO 7816-4 APDU.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Buffer holding ISO 7816-4 APDU.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

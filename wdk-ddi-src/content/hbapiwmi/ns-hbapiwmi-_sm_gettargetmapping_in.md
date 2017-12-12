@@ -7,7 +7,7 @@ old-location: storage\sm_gettargetmapping_in.htm
 old-project: storage
 ms.assetid: d6f73582-5eaf-452f-ad5a-cdf5ab99d809
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN, SM_GetTargetMapping_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The SM_GetTargetMapping_IN structure is used to provide input parameters to the SM_GetTargetMapping method.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct _SM_GetTargetMapping_IN {
 
 The worldwide name (WWN) of the local port whose events the WMI client will receive.
 
+
 ### -field DomainPortWWN
 
 A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
+
 
 ### -field InEntryCount
 
 The number of persistent bindings that are associated with the HBA.
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the SM_GetTargetMapping_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

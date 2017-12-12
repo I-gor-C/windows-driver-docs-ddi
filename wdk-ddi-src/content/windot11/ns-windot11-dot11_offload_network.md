@@ -7,7 +7,7 @@ old-location: netvista\dot11_offload_network.htm
 old-project: netvista
 ms.assetid: 75DC558F-801B-42ED-9282-127E86E78923
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DOT11_OFFLOAD_NETWORK, *PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,17 +58,21 @@ typedef struct _DOT11_OFFLOAD_NETWORK {
 
 SSID interface.
 
+
 ### -field UnicastCipher
 
 Cipher algorithm for data encryption and decryption.
+
 
 ### -field AuthAlgo
 
 Wireless LAN authentication algorithm.
 
+
 ### -field Dot11ChannelHints[DOT11_MAX_CHANNEL_HINTS]
 
 Array of hints listing 802.11 PHY and media types and channels.
+
 
 ## -remarks
 
@@ -78,14 +82,17 @@ Array of hints listing 802.11 PHY and media types and channels.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

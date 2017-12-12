@@ -7,7 +7,7 @@ old-location: display\dxgk_glitch_duration.htm
 old-project: display
 ms.assetid: 8B6597A7-D652-4143-9320-7FB8E98FE8EC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_GLITCH_DURATION, DXGK_GLITCH_DURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Enumeration that describes the duration of a user visible effect of a glitch during a SetTimingsFromVidPn call.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum _DXGK_GLITCH_DURATION {
 
 Indicates that a glitch is unresolved.
 
+
 ### -field DXGK_GLITCH_DURATION_MULTI_FRAME
 
 Indicates that a glitch lasted for multiple frames.
+
 
 ### -field DXGK_GLITCH_DURATION_SINGLE_FRAME
 
 Indicates that a glitch lasted for no more than one frame.
 
+
 ### -field DXGK_GLITCH_DURATION_MULTI_LINE
 
 Indicates that a glitch lasted for multiple lines within a frame.
+
 
 ### -field DXGK_GLITCH_DURATION_SINGLE_LINE
 
 Indicates that a glitch lasted for no more than one line.
 
+
 ### -field DXGK_GLITCH_DURATION_NONE
 
 Indicates that there was no user visible glitch.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Indicates that there was no user visible glitch.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

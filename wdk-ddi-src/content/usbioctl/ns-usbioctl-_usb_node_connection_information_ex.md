@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is used in conjunction with the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request to obtain information about the connection associated with the indicated USB port.
 
 
+
 ## -syntax
 
 ````
@@ -65,37 +66,46 @@ typedef struct _USB_NODE_CONNECTION_INFORMATION_EX {
 
 Contains a value greater than or equal to 1 that specifies the number of the port.
 
+
 ### -field DeviceDescriptor
 
 Contains a structure of type <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a> that reports the USB device descriptor returned by the attached device during enumeration.
+
 
 ### -field CurrentConfigurationValue
 
 Contains the ID used with the SetConfiguration request to specify that current configuration of the device connected to the indicated port. For an explanation of this value, see the Universal Serial Bus Specification.
 
+
 ### -field Speed
 
 Contains a value of type <a href="buses.usb_device_speed">USB_DEVICE_SPEED</a> that indicates the speed of the device. 
+
 
 ### -field DeviceIsHub
 
 Indicates, when <b>TRUE</b>, that the device attached to the port is a hub.
 
+
 ### -field DeviceAddress
 
 Contains the USB-assigned, bus-relative address of the device that is attached to the port.
+
 
 ### -field NumberOfOpenPipes
 
 Indicates the number of open USB pipes associated with the port.
 
+
 ### -field ConnectionStatus
 
 Contains an enumerator of type <a href="buses.usb_connection_status">USB_CONNECTION_STATUS</a> that indicates the connection status.
 
+
 ### -field PipeList
 
 Contains an array of structures of type <a href="buses.usb_pipe_info">USB_PIPE_INFO</a> that describes the open pipes associated with the port. Pipe descriptions include the schedule offset of the pipe and the associated endpoint descriptor. This information can be used to calculate bandwidth usage.
+
 
 ## -remarks
 If there is no device connected, <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> just returns information about the port. If a device is connected to the port <b>IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</b> returns information about both the port and the connected device.
@@ -104,11 +114,13 @@ The <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is an extended version o
 
 The <b>Speed</b> member of the <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is a UCHAR and it can specify any of the values of the <a href="buses.usb_device_speed">USB_DEVICE_SPEED</a> enumerator.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_NODE_CONNECTION_INFORMATION_EX structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

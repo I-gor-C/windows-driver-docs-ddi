@@ -7,7 +7,7 @@ old-location: display\dxgk_display_descriptor_type.htm
 old-project: display
 ms.assetid: 2AC0B5CF-67FB-462F-9118-E30FEDE9A019
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_DISPLAY_DESCRIPTOR_TYPE, *PDXGK_DISPLAY_DESCRIPTOR_TYPE, DXGK_DISPLAY_DESCRIPTOR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Enum used to express the display descriptor type.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _DXGK_DISPLAY_DESCRIPTOR_TYPE {
 
 Invalid type.
 
+
 ### -field DXGK_DDT_EDID
 
 A VESA EDID descriptor.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A VESA EDID descriptor.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

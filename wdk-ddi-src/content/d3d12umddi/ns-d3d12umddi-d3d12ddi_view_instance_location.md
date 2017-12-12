@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-view-instance-location.htm
 old-project: display
 ms.assetid: 1b31ac34-233b-4246-a1c3-d0aac0f35db6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIEW_INSTANCE_LOCATION, D3D12DDI_VIEW_INSTANCE_LOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 View instance location.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3D12DDI_VIEW_INSTANCE_LOCATION {
 
 Viewport array index.
 
+
 ### -field RenderTargetArrayIndex
 
 Render target array index.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Render target array index.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

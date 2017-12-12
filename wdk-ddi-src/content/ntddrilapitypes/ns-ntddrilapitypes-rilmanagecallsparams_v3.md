@@ -7,7 +7,7 @@ old-location: netvista\rilmanagecallsparams_v3.htm
 old-project: netvista
 ms.assetid: a398086b-827e-4684-a79c-db849926b3c3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMANAGECALLSPARAMS_V3, RILMANAGECALLSPARAMS_V3, *LPRILMANAGECALLSPARAMS_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILMANAGECALLSPARAMS_V3 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

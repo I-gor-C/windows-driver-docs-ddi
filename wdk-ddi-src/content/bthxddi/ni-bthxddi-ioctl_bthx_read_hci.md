@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 02CC3534-D319-40C1-A73C-DEFC1F5709F7
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,6 +41,7 @@ req.irql: <= PASSIVE_LEVEL
 IOCTL_BTHX_READ_HCI is used to read Bluetooth ACL Data and Events from the transport layer.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
@@ -50,8 +51,10 @@ Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveinputmem
 
 For more information, see the WDK Bluetooth samples.
 
+
 ### -input-buffer-length
 The buffer describes a UCHAR that represents the type of read. The length of the buffer is the size of the UCHAR.
+
 
 ### -output-buffer
 Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
@@ -60,6 +63,7 @@ Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveoutputme
 
 For more information, see the WDK Bluetooth samples.
 
+
 ### -output-buffer-length
 The 
        <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="bltooth.bthx_hci_read_write_context">BTHX_HCI_READ_WRITE_CONTEXT</a> structure and additional data associated with the read. The  buffer must be large enough to hold the largest event or ACL Data packet, depending on its packet type.
@@ -67,6 +71,7 @@ The
 For an event packet, it is FIELD_OFFSET(BTHX_HCI_READ_WRITE_CONTEXT, Data) +257 where 257 is the sum of a 2-byte event header and 255-byte event data.
 
 For an ACL Data packet, it is FIELD_OFFSET(BTHX_HCI_READ_WRITE_CONTEXT, Data) + MaxAclTransferInSize where MaxAclTransferInSize is the value in BTHX_CAPABILITIES that is returned from the transport driver with IOCTL_BTHX_QUERY_CAPABILITIES.
+
 
 ### -in-out-buffer
 
@@ -94,6 +99,7 @@ The IOCTL has been canceled.
 
  
 
+
 ## -remarks
 The input buffer points to the type of packet that is being read.
 
@@ -105,19 +111,23 @@ The maximum size of the <b>Data</b> member for an ACL read is determined by <b>M
 
 This IOCTL should return STATUS_SUCCESS only under normal operation. Transport-specific errors should not be returned.  The IOCTL should return STATUS_CANCELLED only if this IOCTL has been canceled.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +138,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

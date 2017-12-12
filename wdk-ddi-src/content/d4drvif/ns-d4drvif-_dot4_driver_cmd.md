@@ -7,7 +7,7 @@ old-location: print\dot4_driver_cmd.htm
 old-project: print
 ms.assetid: 7F099F7E-6E1F-499A-AF09-80B20429B892
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _DOT4_DRIVER_CMD, *PDOT4_DRIVER_CMD, DOT4_DRIVER_CMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic describes the <b>DOT4_DRIVER_CMD</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _DOT4_DRIVER_CMD {
 
 Specifies the handle to the channel.
 
+
 ### -field ulSize
 
 Specifies the length of the request.
+
 
 ### -field ulOffset
 
 Specifies the offset into the  buffer.
 
+
 ### -field ulTimeout
 
 Specifies the timeout of the operation. Can be INFINITE.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Specifies the timeout of the operation. Can be INFINITE.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

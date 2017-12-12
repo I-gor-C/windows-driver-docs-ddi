@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2setclipplane.htm
 old-project: display
 ms.assetid: 84459f39-42cb-4877-b569-17c51ee2d6e4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2SETCLIPPLANE, D3DHAL_DP2SETCLIPPLANE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DHAL_SETCLIPPLANE structure allows user defined clip planes to be used in world space.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _D3DHAL_DP2SETCLIPPLANE {
 
 Specifies the index of the clipping plane for which the plane equation coefficients will be set.
 
+
 ### -field plane
 
 Specifies a four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane. 
 
+
 ## -remarks
 The general plane equation in standard form is A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i>  = 0. A point with homogeneous coordinates (<i>x</i>, <i>y</i>, <i>z</i>, <i>w</i>) is visible in the half-space of this plane if A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i>  &gt;= 0. Points that exist on or behind the clipping plane are clipped from the scene. That is, points for which Ax + By + Cz + Dw &lt;= 0 are clipped.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\write_port_uchar.htm
 old-project: kernel
 ms.assetid: 951b688f-21fa-4555-b877-e140e46a1700
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: WRITE_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WRITE_PORT_UCHAR</b> routine writes a byte to the specified port address.
 
 
+
 ## -syntax
 
 ````
@@ -58,21 +59,26 @@ The <b>WRITE_PORT_UCHAR</b> routine writes a byte to the specified port address.
 
 Pointer to the port, which must be a mapped memory range in I/O space.
 
+
 ### -param Value [in]
 
 Specifies a byte to be written to the port. 
 
+
 ## -returns
 None
 
+
 ## -remarks
 Callers of <b>WRITE_PORT_UCHAR</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +89,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -111,9 +121,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The CHANNEL_INFO structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_channel_align_rqst.md">IOCTL_GET_CHANNEL_ALIGN_RQST</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _CHANNEL_INFO {
 
 Maximum packet size for the interrupt transfer pipe.
 
+
 ### -field uReadDataAlignment
 
 Maximum packet size for the bulk IN transfer pipe.
 
+
 ### -field uWriteDataAlignment
 
 Maximum packet size for the bulk OUT transfer pipe.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ Maximum packet size for the bulk OUT transfer pipe.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

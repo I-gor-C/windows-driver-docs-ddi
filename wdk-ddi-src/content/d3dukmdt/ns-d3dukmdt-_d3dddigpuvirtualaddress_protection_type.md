@@ -7,7 +7,7 @@ old-location: display\d3dddigpuvirtualaddress_protection_type.htm
 old-project: display
 ms.assetid: CA46EEC4-5F3D-4E4C-8C83-6D91BE301C68
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE, D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 <b>D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</b> specifies the protection on the graphics processing unit (GPU) virtual address that is mapped.
 
 
+
 ## -syntax
 
 ````
@@ -66,29 +67,36 @@ typedef struct _D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE {
 
 The pages will be allowed read-write access.
 
+
 ### -field Execute
 
 The pages will be allowed execute access.
+
 
 ### -field Zero
 
 The pages will be put to the <i>zero</i> state.
 
+
 ### -field NoAccess
 
 The pages will be put to the <i>invalid</i> state.
+
 
 ### -field SystemUseOnly
 
 This member is for system use only and should not be set by the user mode driver.
 
+
 ### -field Reserved
 
 This member is reserved and should be set to zero.
 
+
 ### -field Value
 
 The consolidated value of the structure's members.
+
 
 ## -remarks
 
@@ -98,22 +106,27 @@ The consolidated value of the structure's members.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

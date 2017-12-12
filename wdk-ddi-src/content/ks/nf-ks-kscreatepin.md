@@ -41,6 +41,7 @@ req.irql:
 The <b>KsCreatePin</b> function passes a connection request to a device, creating a pin instance. This function can only be called at <b>PASSIVE_LEVEL</b> for kernel-mode clients.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ NTSTATUS KsCreatePin(
 
 Specifies the handle of the filter initiating the create request and where the connection will occur. 
 
+
 ### -param Connect [in]
 
 Pointer to a <a href="stream.kspin_connect">KSPIN_CONNECT</a> structure that contains parameters for the requested connection. This should be followed in memory by a <a href="stream.ksdataformat">KSDATAFORMAT</a> data structure, describing the data format requested for the connection.
+
 
 ### -param DesiredAccess [in]
 
 Specifies the access desired to the pin. This is typically <b>GENERIC_READ</b> or <b>GENERIC_WRITE</b>. For data flowing into the pin this value should be set to <b>GENERIC_WRITE</b>, and for data flowing out of the pin this should be set to <b>GENERIC_READ</b> regardless of the communication method.
 
+
 ### -param ConnectionHandle [out]
 
 Specifies the connection handle passed. The routine fills this in with a handle to the file object of the created connection. This value can then be used to disconnect with the <a href="base.closehandle">CloseHandle</a> function.
+
 
 ## -returns
 The <b>KsCreatePin</b> function returns <b>STATUS_SUCCESS</b> if the connection was successful, or it returns an error if the connection failed. Additionally, this Win32 error code (from Winerror.h) can be returned:
@@ -77,7 +82,9 @@ The <b>KsCreatePin</b> function returns <b>STATUS_SUCCESS</b> if the connection 
 <dt><b>ERROR_NO_MATCH</b></dt>
 <dd>
 1169L (0x491)
+
 The connection failed because the interface, medium, or data format were not found.
+
 <div class="alert"><b>Note</b>  Do not rely on using the <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS</a>  macro to check return codes from this function: the  macro could evaluate to <b>TRUE</b> even though the function returns the <b>ERROR_NO_MATCH</b> error code.</div>
 <div> </div>
 </dd>
@@ -85,16 +92,19 @@ The connection failed because the interface, medium, or data format were not fou
 
 The connection failed because the interface, medium, or data format were not found.
 
+
 ## -remarks
 The routine sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request to the driver. The driver accepts the request only if the interface, medium, and data format are compatible.
 
 If <i>Connect</i>-&gt;<b>PinToHandle</b> is <b>NULL</b>, <b>KsCreatePin</b> creates a pin the caller can use to send requests to the streaming driver specified in <i>Connect</i>-&gt;<b>FilterHandle</b>. <i>Connect</i>-&gt;<b>PinId</b> determines the pin type of the pin to be created.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +115,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +126,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -137,5 +149,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreatePin function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

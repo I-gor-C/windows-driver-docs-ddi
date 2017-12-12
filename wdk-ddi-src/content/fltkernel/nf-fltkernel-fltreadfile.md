@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>FltReadFile</b> reads data from an open file, stream, or device.
 
 
+
 ## -syntax
 
 ````
@@ -64,28 +65,37 @@ NTSTATUS FltReadFile(
 
 Opaque instance pointer for the minifilter driver instance that is initiating the read request. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 Pointer to a file object for the file that the data is to be read from. This file object must be currently open. Calling <b>FltReadFile</b> when the file object is not yet open or is no longer open (for example, in a pre-create or post-cleanup callback routine) causes the system to ASSERT on a checked build. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param ByteOffset [in, optional]
 
 Pointer to a caller-allocated variable that specifies the starting byte offset within the file where the read operation is to begin. 
+
 If this offset is supplied, or if the FLTFL_IO_OPERATION_DO_NOT_UPDATE_BYTE_OFFSET flag is specified in the <i>Flags</i> parameter, <b>FltReadFile</b> does not update the file object's <b>CurrentByteOffset</b> field. 
+
 If the file object that <i>FileObject</i> points to was opened for synchronous I/O, the caller of <b>FltReadFile</b> can specify that the current file position offset be used instead of an explicit <i>ByteOffset</i> value by setting this parameter to <b>NULL</b>. If the current file position is used, <b>FltReadFile</b> updates the file object's <b>CurrentByteOffset</b> field by adding the number of bytes read when it completes the read operation. 
+
 If the file object that <i>FileObject</i> points to was opened for asynchronous I/O, this parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param Length [in]
 
 Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. 
 
+
 ### -param Buffer [out]
 
 Pointer to a caller-allocated buffer that receives the data that is read from the file. 
 
+
 ### -param Flags [in]
 
 Bitmask of flags specifying the type of read operation to be performed. 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -94,54 +104,68 @@ Bitmask of flags specifying the type of read operation to be performed.
 <tr>
 <td>
 FLTFL_IO_OPERATION_DO_NOT_UPDATE_BYTE_OFFSET
+
 </td>
 <td>
 Minifilter drivers can set this flag to specify that <b>FltReadFile</b> should not update the file object's <b>CurrentByteOffset</b> field. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_IO_OPERATION_NON_CACHED
+
 </td>
 <td>
 Minifilter drivers can set this flag to specify a noncached read, even if the file object was not opened with FILE_NO_INTERMEDIATE_BUFFERING. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_IO_OPERATION_PAGING
+
 </td>
 <td>
 Minifilter drivers can set this flag to specify a paging read. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_IO_OPERATION_SYNCHRONOUS_PAGING
+
 </td>
 <td>
 Minifilter drivers can set this flag to specify a synchronous paging I/O read. Minifilter drivers that set this flag must also set the FLTFL_IO_OPERATION_PAGING flag.
+
 This flag is available for Windows Vista and later versions of the Windows operating system.
+
 
 </td>
 </tr>
 </table>
  
 
+
 ### -param BytesRead [out, optional]
 
 Pointer to a caller-allocated variable that receives the number of bytes read from the file. If <i>CallbackRoutine</i> is not <b>NULL</b>, this parameter is ignored. Otherwise, this parameter is optional and can be <b>NULL</b>. 
+
 
 ### -param CallbackRoutine [in, optional]
 
 Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>-typed callback routine to call when the read operation is complete. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param CallbackContext [in, optional]
 
 Context pointer to be passed to the <i>CallbackRoutine</i> if one is present. This parameter is optional and can be <b>NULL</b>. If <i>CallbackRoutine</i> is <b>NULL</b>, this parameter is ignored. 
 
+
 ## -returns
 <b>FltReadFile</b> returns the NTSTATUS value that was returned by the file system. 
+
 
 ## -remarks
 A minifilter driver calls <b>FltReadFile</b> to read data from an open file. 
@@ -170,11 +194,13 @@ If the value of the <i>CallbackRoutine</i> parameter is <b>NULL</b>, the read op
 
 If multiple threads call <b>FltReadFile</b> for the same file object, and the file object was opened for synchronous I/O, the Filter Manager does not attempt to serialize I/O on the file. In this respect, <b>FltReadFile</b> differs from <a href="kernel.zwreadfile">ZwReadFile</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -185,6 +211,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -195,6 +222,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -205,6 +233,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -215,9 +244,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -253,5 +284,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltReadFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

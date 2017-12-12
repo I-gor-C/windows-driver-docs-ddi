@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterminiportdriver.htm
 old-project: netvista
 ms.assetid: bed68aa8-499d-41fd-997b-a46316913cc8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMRegisterMiniportDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ A miniport driver calls the
   <i>MiniportXxx</i> entry points with NDIS as the first step in initialization.
 
 
+
 ## -syntax
 
 ````
@@ -66,16 +67,19 @@ A pointer to an opaque driver object that the miniport driver received in its
      <a href="netvista.driverentry_of_ndis_miniport_drivers">DriverEntry of NDIS
      Miniport Drivers</a>).
 
+
 ### -param RegistryPath [in]
 
 A pointer to an opaque registry path that the miniport driver received in its 
      <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine at the 
      <i>Argument2</i> parameter.
 
+
 ### -param MiniportDriverContext [in, optional]
 
 A handle to a driver-allocated context area where the driver maintains state and configuration
      information.
+
 
 ### -param MiniportDriverCharacteristics [in]
 
@@ -83,11 +87,13 @@ A pointer to an
      <a href="netvista.ndis_miniport_driver_characteristics">
      NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure that the caller initialized.
 
+
 ### -param NdisMiniportDriverHandle [out]
 
 A pointer to a caller-supplied handle variable. NDIS writes a handle to this variable that
      uniquely identifies this driver. The driver must save this handle for use in subsequent 
      <b>Ndis<i>Xxx</i></b> function calls.
+
 
 ## -returns
 <b>NdisMRegisterMiniportDriver</b> returns one of the following status values:
@@ -115,6 +121,7 @@ A pointer to a caller-supplied handle variable. NDIS writes a handle to this var
        registration to fail.
 
  
+
 
 ## -remarks
 An NDIS driver calls 
@@ -163,11 +170,13 @@ If an error occurs in
     <b>NdisMDeregisterMiniportDriver</b> from its 
     <a href="..\ndis\nc-ndis-miniport_unload.md">MiniportDriverUnload</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -178,14 +187,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -196,6 +208,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -206,14 +219,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
@@ -245,5 +261,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterMiniportDriver function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterMiniportDriver function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

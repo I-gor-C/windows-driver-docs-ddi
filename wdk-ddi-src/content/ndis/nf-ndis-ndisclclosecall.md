@@ -7,7 +7,7 @@ old-location: netvista\ndisclclosecall.htm
 old-project: netvista
 ms.assetid: 4d1a7451-8c0f-4df8-85c5-14aaaa9afd94
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisClCloseCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 <b>NdisClCloseCall</b> requests that a call on the specified VC be torn down.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ Handle to the VC of the call being closed or disconnected. This handle was suppl
      preparation for making an outgoing call or by the call manager in preparation for dispatching an
      incoming call to the client.
 
+
 ### -param NdisPartyHandle [in, optional]
 
 Handle to the last party to be dropped on a multipoint VC or <b>NULL</b>. If this is a multipoint VC, the
@@ -70,17 +72,20 @@ Handle to the last party to be dropped on a multipoint VC or <b>NULL</b>. If thi
      <a href="netvista.ndisclmakecall">NdisClMakeCall</a> or 
      <a href="netvista.ndiscladdparty">NdisClAddParty</a>.
 
+
 ### -param Buffer [in, optional]
 
 Pointer to a caller-allocated buffer containing any data to be transmitted to the party on the
      remote node when the connection is closed. Depending on the underlying medium, this pointer can be
      <b>NULL</b>.
 
+
 ### -param Size [in]
 
 Specifies the size, in bytes, at 
      <i>Buffer</i>, zero if 
      <i>Buffer</i> is <b>NULL</b>.
+
 
 ## -returns
 When 
@@ -89,6 +94,7 @@ When
      <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">
      ProtocolClCloseCallComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClCloseCallComplete</i> function when this operation is completed.
+
 
 ## -remarks
 Clients usually call 
@@ -187,11 +193,13 @@ After the client releases an
     <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function is
     called.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -202,6 +210,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -209,11 +218,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisClCloseCall (NDIS 5.1)</b>) in
    Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -224,6 +235,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -234,14 +246,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
@@ -295,5 +310,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClCloseCall function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClCloseCall function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

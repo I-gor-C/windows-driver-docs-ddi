@@ -41,6 +41,7 @@ req.irql:
 The HID_DEVICE_EXTENSION structure is used by a HID minidriver as its layout for the device extension of a HIDClass device's functional device object.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _HID_DEVICE_EXTENSION {
 
 Pointer to HID device's physical device object.
 
+
 ### -field NextDeviceObject
 
 Pointer to the device object immediately below the functional device object in the HID device's device stack.
 
+
 ### -field MiniDeviceExtension
 
 Pointer to the minidriver-specific portion of the device extension.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Pointer to the minidriver-specific portion of the device extension.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,5 +95,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HID_DEVICE_EXTENSION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

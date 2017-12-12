@@ -7,7 +7,7 @@ old-location: display\miracast_status.htm
 old-project: display
 ms.assetid: 26949ef9-ddcd-496d-b7e2-7c971bfaf3fb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: MIRACAST_STATUS, MIRACAST_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies status types  that the user-mode display driver uses to report Miracast connection status.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum  {
 
 An unspecified error occurred, and the Miracast connected session cannot continue.
 
+
 ### -field MIRACAST_STATUS_MISSING_KEEPALIVE
 
 The Miracast sink failed to respond to the protocol keep-alive message.
+
 
 ### -field MIRACAST_STATUS_SINK_DISOCNNECT_REQUEST
 
 The Miracast sink requested that it be disconnected.
 
+
 ### -field MIRACAST_STATUS_INSUFFICIENT_BANDWIDTH
 
 The bandwidth of the wireless connection has changed such that the current mode cannot be sustained.
+
 
 ### -field MIRACAST_STATUS_SINK_FAILED_STANDARD_MODE_CHANGE
 
 The Miracast sink failed to set a standard Video Electronics Standards Association (VESA) setting, Consumer Electronics Association (CEA) standard setting, or a hand-held mode change.
 
+
 ### -field MIRACAST_STATUS_FORCE_UINT32
 
 Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.
+
 
 ## -remarks
 
@@ -89,22 +96,27 @@ Forces this enumeration to compile to 32 bits in size. Without this value, some 
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

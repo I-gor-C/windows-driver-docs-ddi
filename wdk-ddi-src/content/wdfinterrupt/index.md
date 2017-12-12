@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfinterrupt.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,9 +16,9 @@ Wdfinterrupt.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_INTERRUPT_CONFIG_INIT function](nf-wdfinterrupt-wdf-interrupt-config-init.md) | The WDF_INTERRUPT_CONFIG_INIT function initializes a WDF_INTERRUPT_CONFIG structure. |
-| [WDF_INTERRUPT_EXTENDED_POLICY_INIT function](nf-wdfinterrupt-wdf-interrupt-extended-policy-init.md) | The WDF_INTERRUPT_EXTENDED_POLICY_INIT function initializes a WDF_INTERRUPT_EXTENDED_POLICY structure. |
-| [WDF_INTERRUPT_INFO_INIT function](nf-wdfinterrupt-wdf-interrupt-info-init.md) | The WDF_INTERRUPT_INFO_INIT function initializes a WDF_INTERRUPT_INFO structure. |
+| [WDF_INTERRUPT_CONFIG_INIT function](nf-wdfinterrupt-wdf_interrupt_config_init.md) | The WDF_INTERRUPT_CONFIG_INIT function initializes a WDF_INTERRUPT_CONFIG structure. |
+| [WDF_INTERRUPT_EXTENDED_POLICY_INIT function](nf-wdfinterrupt-wdf_interrupt_extended_policy_init.md) | The WDF_INTERRUPT_EXTENDED_POLICY_INIT function initializes a WDF_INTERRUPT_EXTENDED_POLICY structure. |
+| [WDF_INTERRUPT_INFO_INIT function](nf-wdfinterrupt-wdf_interrupt_info_init.md) | The WDF_INTERRUPT_INFO_INIT function initializes a WDF_INTERRUPT_INFO structure. |
 | [WdfInterruptCreate function](nf-wdfinterrupt-wdfinterruptcreate.md) | The WdfInterruptCreate method creates a framework interrupt object. |
 | [WdfInterruptDisable function](nf-wdfinterrupt-wdfinterruptdisable.md) | The WdfInterruptDisable method disables a specified device interrupt by calling the driver's EvtInterruptDisable callback function. |
 | [WdfInterruptEnable function](nf-wdfinterrupt-wdfinterruptenable.md) | The WdfInterruptEnable method enables a specified device interrupt by calling the driver's EvtInterruptEnable callback function. |
@@ -33,25 +38,25 @@ Wdfinterrupt.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_INTERRUPT_DISABLE callback](nc-wdfinterrupt-evt-wdf-interrupt-disable.md) | A driver's EvtInterruptDisable event callback function disables a specified hardware interrupt. |
-| [EVT_WDF_INTERRUPT_DPC callback](nc-wdfinterrupt-evt-wdf-interrupt-dpc.md) | A driver's EvtInterruptDpc event callback function processes interrupt information that the driver's EvtInterruptIsr callback function has stored. |
-| [EVT_WDF_INTERRUPT_ENABLE callback](nc-wdfinterrupt-evt-wdf-interrupt-enable.md) | A driver's EvtInterruptEnable event callback function enables a specified hardware interrupt. |
-| [EVT_WDF_INTERRUPT_ISR callback](nc-wdfinterrupt-evt-wdf-interrupt-isr.md) | A driver's EvtInterruptIsr event callback function services a hardware interrupt. |
-| [EVT_WDF_INTERRUPT_SYNCHRONIZE callback](nc-wdfinterrupt-evt-wdf-interrupt-synchronize.md) | A driver's EvtInterruptSynchronize event callback function performs operations that must be synchronized with an EvtInterruptIsr callback function. |
-| [EVT_WDF_INTERRUPT_WORKITEM callback](nc-wdfinterrupt-evt-wdf-interrupt-workitem.md) | A driver's EvtInterruptWorkItem event callback function processes interrupt information that the driver's EvtInterruptIsr callback function has stored. |
+| [EVT_WDF_INTERRUPT_DISABLE callback](nc-wdfinterrupt-evt_wdf_interrupt_disable.md) | A driver's EvtInterruptDisable event callback function disables a specified hardware interrupt. |
+| [EVT_WDF_INTERRUPT_DPC callback](nc-wdfinterrupt-evt_wdf_interrupt_dpc.md) | A driver's EvtInterruptDpc event callback function processes interrupt information that the driver's EvtInterruptIsr callback function has stored. |
+| [EVT_WDF_INTERRUPT_ENABLE callback](nc-wdfinterrupt-evt_wdf_interrupt_enable.md) | A driver's EvtInterruptEnable event callback function enables a specified hardware interrupt. |
+| [EVT_WDF_INTERRUPT_ISR callback](nc-wdfinterrupt-evt_wdf_interrupt_isr.md) | A driver's EvtInterruptIsr event callback function services a hardware interrupt. |
+| [EVT_WDF_INTERRUPT_SYNCHRONIZE callback](nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md) | A driver's EvtInterruptSynchronize event callback function performs operations that must be synchronized with an EvtInterruptIsr callback function. |
+| [EVT_WDF_INTERRUPT_WORKITEM callback](nc-wdfinterrupt-evt_wdf_interrupt_workitem.md) | A driver's EvtInterruptWorkItem event callback function processes interrupt information that the driver's EvtInterruptIsr callback function has stored. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_INTERRUPT_CONFIG structure](ns-wdfinterrupt--wdf-interrupt-config.md) | The WDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt. |
-| [WDF_INTERRUPT_EXTENDED_POLICY structure](ns-wdfinterrupt--wdf-interrupt-extended-policy.md) | The WDF_INTERRUPT_EXTENDED_POLICY structure contains information about an interrupt's policy, priority, affinity, and group. |
-| [WDF_INTERRUPT_INFO structure](ns-wdfinterrupt--wdf-interrupt-info.md) | The WDF_INTERRUPT_INFO structure contains information about a device's interrupt resource. |
+| [_WDF_INTERRUPT_CONFIG structure](ns-wdfinterrupt-_wdf_interrupt_config.md) | The WDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt. |
+| [_WDF_INTERRUPT_EXTENDED_POLICY structure](ns-wdfinterrupt-_wdf_interrupt_extended_policy.md) | The WDF_INTERRUPT_EXTENDED_POLICY structure contains information about an interrupt's policy, priority, affinity, and group. |
+| [_WDF_INTERRUPT_INFO structure](ns-wdfinterrupt-_wdf_interrupt_info.md) | The WDF_INTERRUPT_INFO structure contains information about a device's interrupt resource. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_INTERRUPT_POLARITY enumeration](ne-wdfinterrupt--wdf-interrupt-polarity.md) | The WDF_INTERRUPT_POLARITY enumeration type is used to specify an interrupt signal's polarity. |
-| [WDF_INTERRUPT_POLICY enumeration](ne-wdfinterrupt--wdf-interrupt-policy.md) | The WDF_INTERRUPT_POLICY enumeration type identifies the affinity policies that the PnP manager can use when it assigns a device's interrupts to the processors of a multiprocessor system. |
-| [WDF_INTERRUPT_PRIORITY enumeration](ne-wdfinterrupt--wdf-interrupt-priority.md) | The WDF_INTERRUPT_PRIORITY enumeration type identifies relative priorities for device interrupts. |
+| [_WDF_INTERRUPT_POLARITY enumeration](ne-wdfinterrupt-_wdf_interrupt_polarity.md) | The WDF_INTERRUPT_POLARITY enumeration type is used to specify an interrupt signal's polarity. |
+| [_WDF_INTERRUPT_POLICY enumeration](ne-wdfinterrupt-_wdf_interrupt_policy.md) | The WDF_INTERRUPT_POLICY enumeration type identifies the affinity policies that the PnP manager can use when it assigns a device's interrupts to the processors of a multiprocessor system. |
+| [_WDF_INTERRUPT_PRIORITY enumeration](ne-wdfinterrupt-_wdf_interrupt_priority.md) | The WDF_INTERRUPT_PRIORITY enumeration type identifies relative priorities for device interrupts. |

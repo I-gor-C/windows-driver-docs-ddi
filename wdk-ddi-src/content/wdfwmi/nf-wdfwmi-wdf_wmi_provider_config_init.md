@@ -7,7 +7,7 @@ old-location: wdf\wdf_wmi_provider_config_init.htm
 old-project: wdf
 ms.assetid: a63079ab-45ec-44b2-8769-f5b30f378972
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_WMI_PROVIDER_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WDF_WMI_PROVIDER_CONFIG_INIT</b> function initializes a <a href="wdf.wdf_wmi_provider_config">WDF_WMI_PROVIDER_CONFIG</a> structure.
+
 
 
 ## -syntax
@@ -59,23 +61,28 @@ VOID WDF_WMI_PROVIDER_CONFIG_INIT(
 
 A pointer to a <a href="wdf.wdf_wmi_provider_config">WDF_WMI_PROVIDER_CONFIG</a> structure.
 
+
 ### -param Guid [in]
 
 A pointer to a GUID that identifies a WMI data provider's data block. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 The <b>WDF_WMI_PROVIDER_CONFIG_INIT</b> function zeros the specified <a href="wdf.wdf_wmi_provider_config">WDF_WMI_PROVIDER_CONFIG</a> structure and sets its <b>Size</b> member. This function also copies the specified GUID into the structure's <b>Guid</b> member.
 
 For a code example that uses <b>WDF_WMI_PROVIDER_CONFIG_INIT</b>, see <a href="wdf.wdfwmiprovidercreate">WdfWmiProviderCreate</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,14 +93,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +120,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_PROVIDER_CONFIG_INIT function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_PROVIDER_CONFIG_INIT function%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql:
 The <b>KsOpenDefaultDevice</b> function opens a handle to the first device that is listed in the specified Plug and Play (PnP) category. 
 
 
+
 ## -syntax
 
 ````
@@ -58,25 +59,31 @@ HRESULT KsOpenDefaultDevice(
 
 Identifier of the PnP category to enumerate.
 
+
 ### -param Access [in]
 
 An ACCESS_MASK bitmask specifying how to access the default device.
+
 
 ### -param DeviceHandle [out]
 
 Pointer to a variable that receives the handle to the default device that is opened.
 
+
 ## -returns
 Returns NOERROR if successful; otherwise, returns an error code.
 
+
 ## -remarks
 The <b>KsOpenDefaultDevice</b> function passes a pointer to <i>Category</i> in a call to the <b>SetupDiGetClassDevs</b> function to obtain a handle to the list of PnP devices. For more information about the ACCESS_MASK bitmask and <b>SetupDiGetClassDevs</b>, see the Microsoft Windows SDK documentation.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

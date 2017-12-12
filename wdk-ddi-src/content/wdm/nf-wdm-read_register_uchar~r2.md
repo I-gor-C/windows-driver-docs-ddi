@@ -7,7 +7,7 @@ old-location: kernel\read_register_uchar.htm
 old-project: kernel
 ms.assetid: 49f9d7d7-c774-4ba5-a9f3-6d605a3de674
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: READ_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>READ_REGISTER_UCHAR</b> routine reads a byte from the specified register address.
 
 
+
 ## -syntax
 
 ````
@@ -57,17 +58,21 @@ UCHAR READ_REGISTER_UCHAR(
 
 Pointer to the register address, which must be a mapped range in memory space. 
 
+
 ## -returns
 <b>READ_REGISTER_UCHAR</b> returns the byte read from the specified register address.
 
+
 ## -remarks
 Callers of <b>READ_REGISTER_UCHAR</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +83,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +115,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +126,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (see Remarks section)
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: display\pdxgk_power_notification.htm
 old-project: display
 ms.assetid: 11549B4E-7929-4957-9775-BF8AAF501D45
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A callback providing notification that the graphics device will be undergoing a device power state transition.
 
 
+
 ## -prototype
 
 ````
@@ -58,16 +59,20 @@ VOID *PDXGK_POWER_NOTIFICATION(
 
 A handle to the graphics device.
 
+
 ### -param NewGrfxPowerState 
 
 Indicates the new graphics power state.
+
 
 ### -param PreNotification 
 
 Indicates that a notification should be provided.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -77,6 +82,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorfrequencyrangeset_interface.htm
 old-project: display
 ms.assetid: 4a973ecd-341f-4766-9fed-f56e55f8deae
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DXGK_MONITORFREQUENCYRANGESET_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure contains pointers to functions that belong to the <a href="display.monitor_frequency_range_set_interface">Monitor Frequency Range Set interface</a>, which is implemented by the video present network (VidPN) manager.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _DXGK_MONITORFREQUENCYRANGESET_INTERFACE {
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_getnumfrequencyranges.md">pfnGetNumFrequencyRanges</a> function.
 
+
 ### -field pfnAcquireFirstFrequencyRangeInfo
 
 A pointer to the <a href="display.dxgk_monitorfrequencyrangeset_interface_pfnacquirefirstfrequencyrangei">pfnAcquireFirstFrequencyRangeInfo</a> function.
+
 
 ### -field pfnAcquireNextFrequencyRangeInfo
 
 A pointer to the <a href="display.dxgk_monitorfrequencyrangeset_interface_pfnacquirenextfrequencyrangein">pfnAcquireNextFrequencyRangeInfo</a> function.
 
+
 ### -field pfnReleaseFrequencyRangeInfo
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_releasefrequencyrangeinfo.md">pfnReleaseFrequencyRangeInfo</a> function.
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyranges
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

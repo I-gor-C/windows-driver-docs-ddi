@@ -7,8 +7,8 @@ old-location: netvista\dot11_power_mgmt_mode_status_info.htm
 old-project: netvista
 ms.assetid: A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO
+ms.date: 12/8/2017
+ms.keywords: _DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -57,6 +57,7 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 ### -field Header
 
 The type, revision, and size of the DOT11_POWER_MGMT_MODE_STATUS_INFO structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -77,13 +78,16 @@ The type, revision, and size of the DOT11_POWER_MGMT_MODE_STATUS_INFO structure.
 </table>
  
 
+
 ### -field PowerSaveMode
 
 The current power mode of the hardware. The mode may be <b>dot11_power_mode_active</b> or <b>dot11_power_mode_powersave</b>, but should not be <b>dot11_power_mode_unknown</b>.
 
+
 ### -field uPowerSaveLevel
 
 One of the following values describing power saving levels:
+
 <table>
 <tr>
 <th>Value</th>
@@ -108,26 +112,32 @@ One of the following values describing power saving levels:
 </table>
  
 
+
 ### -field Reason
 
 Reason that the device changed into the current power mode.
 
+
 ## -remarks
 At each transition of the mode change, a device should remember the reason it made the last change.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

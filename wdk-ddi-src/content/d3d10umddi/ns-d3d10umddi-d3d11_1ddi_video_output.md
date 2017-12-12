@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_output.htm
 old-project: display
 ms.assetid: e82ab7bf-9585-4c8b-9e1f-2082e2c530b1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_OUTPUT, D3D11_1DDI_VIDEO_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Reserved for system use. Do not use in your driver.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct D3D11_1DDI_VIDEO_OUTPUT {
 
 Reserved for system use. Do not use in your driver.
 
+
 ## -remarks
 
 
@@ -64,22 +66,27 @@ Reserved for system use. Do not use in your driver.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

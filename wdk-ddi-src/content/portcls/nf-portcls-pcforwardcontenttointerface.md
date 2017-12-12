@@ -41,6 +41,7 @@ req.irql:
 The <b>PcForwardContentToInterface</b> function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content. Note that this function call is identical in operation to the <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a> function, and its parameter definitions and return value are also identical.
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,17 @@ See return value definition in <a href="audio.drmforwardcontenttointerface">DrmF
 
 See return value definition in <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>.
 
+
 ## -remarks
 For more information, see the comments in <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -76,14 +80,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The PortCls system driver implements the <b>PcForwardContentToInterface</b> function in Microsoft Windows XP and later operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +101,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -110,5 +118,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcForwardContentToInterface function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

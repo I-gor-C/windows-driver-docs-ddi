@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_is_clustered.htm
 old-project: storage
 ms.assetid: 46b72c16-2656-4ceb-a786-5fb24818b2a7
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,30 +39,26 @@ req.irql:
 
 ## -description
 Allows a driver or application to determine if a disk is clustered.
-None
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a Boolean value, with <b>TRUE</b> indicating that the disk is clustered.
-The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_TOO_SMALL, STATUS_INVALID_PARAMETER, or STATUS_UNSUCCESSFUL.
+
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
-NoneNone
+None.
 
 
 ### -input-buffer-length
+None.
 
-<text></text>
 
 ### -output-buffer
-<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a Boolean value, with <b>TRUE</b> indicating that the disk is clustered.The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer contains a Boolean value, with <b>TRUE</b>TRUE indicating that the disk is clustered.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a Boolean value, with <b>TRUE</b> indicating that the disk is clustered.
 
 
 ### -output-buffer-length
+Length of a Boolean.
 
-<text></text>
 
 ### -in-out-buffer
 
@@ -73,8 +69,8 @@ The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a Boolean value
 <text></text>
 
 ### -status-block
-<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
-The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_TOO_SMALL, STATUS_INVALID_PARAMETER, or STATUS_UNSUCCESSFUL.The <b>Status</b>Status field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_TOO_SMALL, STATUS_INVALID_PARAMETER, or STATUS_UNSUCCESSFUL.
+I/O Status block
+<b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
 
 ## -remarks
@@ -85,6 +81,7 @@ The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_T
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

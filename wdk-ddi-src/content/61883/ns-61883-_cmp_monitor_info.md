@@ -41,6 +41,7 @@ req.irql:
 The CMP_MONITOR_INFO structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a> request to allow a driver to monitor access to local oPCR and iPCR plugs.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _CMP_MONITOR_INFO {
 
 The current state of the plug.
 
+
 ### -field PlugNum
 
 The number of the plug that was accessed.
+
 
 ### -field PlugType
 
 The type of plug, either CMP_PlugOut or CMP_PlugIn.
 
+
 ### -field Pcr
 
 The current contents of the plug.
 
+
 ### -field Context
 
 Points to a caller-defined context that was registered with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Points to a caller-defined context that was registered with <a href="https://msd
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,5 +107,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_MONITOR_INFO structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

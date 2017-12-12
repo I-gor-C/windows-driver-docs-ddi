@@ -7,7 +7,7 @@ old-location: print\spoolerrefreshprinterchangenotification.htm
 old-project: print
 ms.assetid: 86D8D605-3620-4F43-B4A5-6AF568265E92
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: SpoolerRefreshPrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -76,6 +77,7 @@ BOOL WINAPI SpoolerRefreshPrinterChangeNotification(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

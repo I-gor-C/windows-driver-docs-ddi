@@ -41,6 +41,7 @@ req.irql:
 Defines LPI state flags, either as a structure or as an integer. 
 
 
+
 ## -syntax
 
 ````
@@ -65,9 +66,11 @@ typedef union _LPI_STATE_FLAGS {
 <dd>
 An LPI state as a structure.
 
+
 ### -field AsUlong
 
 An LPI state as an integer. 
+
 
 ## -remarks
 
@@ -77,6 +80,7 @@ An LPI state as an integer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

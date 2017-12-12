@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_createdevice.htm
 old-project: display
 ms.assetid: 18be278c-2d69-472b-9baf-7c35f8abe879
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDIARG_CREATEDEVICE, D3DDDIARG_CREATEDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DDDIARG_CREATEDEVICE structure contains information that describes the display device to create.
 
 
+
 ## -syntax
 
 ````
@@ -69,43 +70,54 @@ typedef struct _D3DDDIARG_CREATEDEVICE {
 ### -field hDevice
 
 [in/out] A handle to the display device (graphics context). On input to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function, <b>hDevice</b> specifies the handle that the driver should use when it calls back into the Microsoft Direct3D runtime. 
+
 The driver generates a unique handle and passes it back to the Direct3D runtime. On output from the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function, <b>hDevice</b> specifies the handle that the Direct3D runtime uses in subsequent driver calls to identify the display device.
+
 
 ### -field Interface
 
 [in] The Direct3D/DirectDraw interface version (for example, 7, 8, or 9) that creates the device. 
 
+
 ### -field Version
 
 [in] A number that the driver can use to identify when the Direct3D/DirectDraw runtime was built. For example, the driver can use the version number to differentiate between a runtime that is released with Windows Vista and a runtime that is released with a subsequent service pack, which might contain a fix that the driver requires. 
+
 
 ### -field pCallbacks
 
 [in] A pointer to a <a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use.
 
+
 ### -field pCommandBuffer
 
 [in] Obsolete. To receive a pointer to the first buffer that the user-mode display driver can use to batch commands, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.
+
 
 ### -field CommandBufferSize
 
 [in] Obsolete.
 
+
 ### -field pAllocationList
 
 [in] Obsolete. To receive an array of <a href="display.d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a> structures for the starting allocation list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.
+
 
 ### -field AllocationListSize
 
 [in] Obsolete.
 
+
 ### -field pPatchLocationList
 
 [in] Obsolete. To receive an array of <a href="display.d3dddi_patchlocationlist">D3DDDI_PATCHLOCATIONLIST</a> structures for the starting patch-location list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.
 
+
 ### -field PatchLocationListSize
 
 [in] Obsolete.
+
 
 ### -field pDeviceFuncs
 
@@ -113,14 +125,18 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
       [out] A pointer to a <a href="display.d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.
      
 
+
 ### -field Flags
 
 [in] A <a href="display.d3dddi_createdeviceflags">D3DDDI_CREATEDEVICEFLAGS</a> structure that identifies how to create the device. 
 
+
 ### -field CommandBuffer
 
 This member is reserved and should be set to zero.
+
 This member is available beginning with Windows 7.
+
 
 ## -remarks
 
@@ -130,14 +146,17 @@ This member is available beginning with Windows 7.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -166,5 +185,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEDEVICE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEDEVICE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

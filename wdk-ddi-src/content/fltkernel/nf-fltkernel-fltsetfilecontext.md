@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltSetFileContext</b> routine sets a context for a file. 
 
 
+
 ## -syntax
 
 ````
@@ -60,22 +61,28 @@ NTSTATUS FltSetFileContext(
 
 An opaque pointer to a minifilter driver instance for the caller. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileObject [in]
 
 A file object pointer for the file. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ### -param Operation [in]
 
 A flag that specifies the type of operation for <b>FltSetFileContext </b>to perform. This parameter must be one of the following flags:  
 
 
+
+
 ### -param FLT_SET_CONTEXT_REPLACE_IF_EXISTS
 
 If a context is already set for the instance that the <i>Instance </i>parameter points to, <b>FltSetFileContext</b> will replace that context with the context specified in <i>NewContext</i>. Otherwise, the routine will insert the context specified in <i>NewContext</i> into the list of contexts for the file. 
 
+
 ### -param FLT_SET_CONTEXT_KEEP_IF_EXISTS
 
 If a context is already set for the instance that the <i>Instance</i> parameter points to, <b>FltSetFileContext</b> will return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, the routine will insert the context specified in <i>NewContext</i> into the list of contexts for the file. 
+
 </dd>
 </dl>
 
@@ -83,9 +90,11 @@ If a context is already set for the instance that the <i>Instance</i> parameter 
 
 A pointer to the new context to be set for the file. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param OldContext [out]
 
 A pointer to a caller-allocated variable that receives the address of the existing file context for the instance pointed to by the <i>Instance </i>parameter. This parameter is optional and can be <b>NULL</b>. For more information about this parameter, see the following Remarks section. 
+
 
 ## -returns
 The <b>FltSetFileContext</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
@@ -111,6 +120,7 @@ An invalid value was specified for the <i>Operation</i> parameter.
 
  
 
+
 ## -remarks
 The <b>FltSetFileContext</b> routine is available on Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. This routine is available and supported starting with Windows Vista (file contexts are only supported starting with Windows Vista). If <b>FltSetFileContext</b> is called on an operating system where this routine is available but file contexts are not supported, it returns STATUS_NOT_SUPPORTED.  This routine is not available on Windows 2000 SP4 and earlier operating systems.
 
@@ -132,11 +142,13 @@ To determine whether file contexts are supported for a given file, call <a href=
 
 For more information about context reference counting, see <a href="ifsk.referencing_contexts">Referencing Contexts</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -147,14 +159,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available and supported starting with Windows Vista. For more information, see the Remarks section.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -165,6 +180,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -175,6 +191,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -185,9 +202,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -220,5 +239,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetFileContext routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

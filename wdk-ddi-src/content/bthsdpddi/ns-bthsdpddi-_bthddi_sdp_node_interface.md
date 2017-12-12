@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: c9aeaaed-f017-4b23-b867-d704c4f8afb6
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BTHDDI_SDP_NODE_INTERFACE, *PBTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE
+ms.keywords: _BTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE, *PBTHDDI_SDP_NODE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.irql: <= PASSIVE_LEVEL
 ## -description
 The BTHDDI_SDP_NODE_INTERFACE structure provides functions for manipulating SDP records, including
   converting them to and from a tree representation that profile drivers can more easily parse.
+
 
 
 ## -syntax
@@ -83,10 +84,12 @@ A structure that describes the
      structure, see 
      <a href="kernel.interface">INTERFACE</a>.
 
+
 ### -field SdpCreateNodeTree
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodetree">SdpCreateNodeTree</a> function.
+
 
 ### -field SdpFreeTree
 
@@ -94,90 +97,108 @@ A pointer to the
      <a href="bltooth.sdpfreetree">SdpFreeTree</a> function
      <i>.</i>
 
+
 ### -field SdpCreateNodeNil
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodenil">SdpCreateNodeNil</a> function.
+
 
 ### -field SdpCreateNodeBoolean
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeboolean">SdpCreateNodeBoolean</a> function.
 
+
 ### -field SdpCreateNodeUint8
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuint8">SdpCreateNodeUInt8</a> function.
+
 
 ### -field SdpCreateNodeUint16
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuint16">SdpCreateNodeUInt16</a> function.
 
+
 ### -field SdpCreateNodeUint32
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuint32">SdpCreateNodeUInt32</a> function.
+
 
 ### -field SdpCreateNodeUint64
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuint64">SdpCreateNodeUInt64</a> function.
 
+
 ### -field SdpCreateNodeUint128
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuint128">SdpCreateNodeUInt128</a> function.
+
 
 ### -field SdpCreateNodeInt8
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuint128">SdpCreateNodeInt8</a> function.
 
+
 ### -field SdpCreateNodeInt16
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeint16">SdpCreateNodeInt16</a> function.
+
 
 ### -field SdpCreateNodeInt32
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeint32">SdpCreateNodeInt32</a> function.
 
+
 ### -field SdpCreateNodeInt64
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeint64">SdpCreateNodeInt64</a> function.
+
 
 ### -field SdpCreateNodeInt128
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeint128">SdpCreateNodeInt128</a> function.
 
+
 ### -field SdpCreateNodeUuid16
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuuid16">SdpCreateNodeUUID16</a> function.
+
 
 ### -field SdpCreateNodeUuid32
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuuid32">SdpCreateNodeUUID32</a> function.
 
+
 ### -field SdpCreateNodeUuid128
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeuuid128">SdpCreateNodeUUID128</a> function.
+
 
 ### -field SdpCreateNodeString
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodestring">SdpCreateNodeString</a> function.
 
+
 ### -field SdpCreateNodeUrl
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodeurl">SdpCreateNodeUrl</a> function.
+
 
 ### -field SdpCreateNodeAlternative
 
@@ -185,11 +206,13 @@ A pointer to the
      <a href="bltooth.sdpcreatenodealternative">
      SdpCreateNodeAlternative</a> function.
 
+
 ### -field SdpCreateNodeSequence
 
 A pointer to the 
      <a href="bltooth.sdpcreatenodesequence">
      SdpCreateNodeSequence</a> function.
+
 
 ### -field SdpAddAttributeToTree
 
@@ -197,11 +220,13 @@ A pointer to the
      <a href="bltooth.sdpaddattributetotree">
      SdpAddAttributeToTree</a> function.
 
+
 ### -field SdpAppendNodeToContainerNode
 
 A pointer to the 
      <a href="bltooth.sdpappendnodetocontainernode">
      SdpAppendNodeToContainerNode</a> function.
+
 
 ## -remarks
 Profile drivers should specify the 
@@ -211,19 +236,23 @@ Profile drivers should specify the
 All the members of this structure, other than the 
     <b>Interface</b> member, are function pointers.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -307,5 +336,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTHDDI_SDP_NODE_INTERFACE structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

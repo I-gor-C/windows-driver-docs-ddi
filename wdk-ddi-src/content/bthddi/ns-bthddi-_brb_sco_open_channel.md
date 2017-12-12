@@ -43,6 +43,7 @@ The _BRB_SCO_OPEN_CHANNEL structure describes a SCO channel to open to a remote 
   remote device.
 
 
+
 ## -syntax
 
 ````
@@ -75,61 +76,75 @@ A
      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
+
 ### -field BtAddress
 
 The Bluetooth address of the remote device to open a SCO channel to.
+
 
 ### -field TransmitBandwidth
 
 The transmission bandwidth, in bytes per second, to be assigned to the SCO channel.
 
+
 ### -field ReceiveBandwidth
 
 The reception bandwidth, in bytes per second, to be assigned to the SCO channel.
+
 
 ### -field MaxLatency
 
 A value that represents, in milliseconds, the upper limit of the sum of the synchronous interval
      and the size of the (e)SCO window. Possible values are listed in the following table.
      
+
 <table>
 <tr>
 <td>
 <b>
          Values</b>
+
 </td>
 <td>
 <b>Description</b>
+
 </td>
 </tr>
 <tr>
 <td>
 0x0000 to 0x0003
+
 </td>
 <td>
 Reserved for future use.
+
 </td>
 </tr>
 <tr>
 <td>
 0x0004 to 0xFFFE
+
 </td>
 <td>
 The range of possible 
         <b>MaxLatency</b> values for the channel.
+
 </td>
 </tr>
 <tr>
 <td>
 0xFFFF
+
 </td>
 <td>
 The channel doesn't have a preferred 
         <b>MaxLatency</b> setting.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field PacketType
 
@@ -137,6 +152,7 @@ A flag or combination of flags that indicate the type of data packets that the S
      supports. These SCO packet types are defined by the Bluetooth SIG. See the Bluetooth specification for
      more information about these flags. Possible values include:
      
+
 
 ### -field SCO_HV1
 ### -field SCO_HV2
@@ -150,6 +166,7 @@ A flag or combination of flags that indicate the type of data packets that the S
 
 The audio voice settings for the channel. Use the following definitions to encode this member:
      
+
 
 
 ### -field SCO_VS_AIR_CODING_DATA
@@ -210,9 +227,11 @@ The audio voice settings for the channel. Use the following definitions to encod
 
 
 
+
 ### -field Reserved
 
 Reserved for future use. Do not use.
+
 
 ### -field RetransmissionEffort
 
@@ -221,71 +240,88 @@ A
      SCO_RETRANSMISSION_EFFORT</a> enumeration value that determines the retransmission policies for the
      channel.
 
+
 ### -field ChannelFlags
 
 Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
      the following table:
      
+
 <table>
 <tr>
 <td>
 <b>Flag</b>
+
 </td>
 <td>
 <b>Description</b>
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CF_LINK_AUTHENTICATED
+
 </td>
 <td>
 The link must be authenticated.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CF_LINK_ENCRYPTED
+
 </td>
 <td>
 The link must be encrypted. Setting this flag also sets the SCO_CF_LINK_AUTHENTICATED flag.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CF_LINK_SUPPRESS_PIN
+
 </td>
 <td>
 The profile driver indicates its preference that users not be prompted for a PIN.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field CallbackFlags
 
 A flag that specifies when the function assigned to the 
      <b>Callback</b> member should be sent to the client. Currently, there is only one valid flag:
      
+
 <table>
 <tr>
 <td>
 <b>Flag</b>
+
 </td>
 <td>
 <b>Description</b>
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CALLBACK_DISCONNECT
+
 </td>
 <td>
 The profile driver should be notified when the remote device is disconnected.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field Callback
 
@@ -294,10 +330,12 @@ The
      the profile driver, that the Bluetooth driver stack should call to notify the profile driver about any
      changes to the SCO connection.
 
+
 ### -field CallbackContext
 
 The context to pass to the callback function specified in the 
      <b>Callback</b> member. The profile driver defines this value.
+
 
 ### -field ReferenceObject
 
@@ -306,9 +344,11 @@ A pointer to an object to pass to
      <a href="kernel.obdereferenceobject">ObDereferenceObject</a> for which to
      maintain a reference count of.
 
+
 ### -field ChannelHandle
 
 A handle to identify the SCO channel, if the open channel request completes successfully.
+
 
 ### -field Response
 
@@ -316,6 +356,7 @@ A flag that indicates whether the local server will accept or reject an incoming
      This member is used only when building and sending a <b>BRB_SCO_OPEN_CHANNEL_RESPONSE</b> request. Valid flag
      values are listed in the following table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -324,39 +365,48 @@ A flag that indicates whether the local server will accept or reject an incoming
 <tr>
 <td>
 SCO_CONNECT_RSP_RESPONSE_SUCCESS
+
 </td>
 <td>
 The local server accepts the SCO connection request.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CONNECT_RSP_RESPONSE_NO_RESOURCES
+
 </td>
 <td>
 The local server rejects the SCO connection request due to a lack of resources.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CONNECT_RSP_RESPONSE_SECURITY_BLOCK
+
 </td>
 <td>
 The local server rejects the SCO connection request because the request does not meet security
         requirements.
+
 </td>
 </tr>
 <tr>
 <td>
 SCO_CONNECT_RSP_RESPONSE_BAD_BD_ADDR
+
 </td>
 <td>
 The local server rejects the SCO connection request because it does not accept connections from
         the specified Bluetooth device address.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 To open a SCO channel, profile drivers should 
@@ -382,19 +432,23 @@ The profile driver specifies whether the connection should be accepted by storin
     in the 
     <b>Response</b> member of this structure. In this context, the local system is the server.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -429,5 +483,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_OPEN_CHANNEL structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

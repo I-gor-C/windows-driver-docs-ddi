@@ -7,7 +7,7 @@ old-location: display\dxgk_win32k_param_data.htm
 old-project: display
 ms.assetid: a6bb2127-64f7-402d-906e-199d5ec1b313
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_WIN32K_PARAM_DATA, *PDXGK_WIN32K_PARAM_DATA, DXGK_WIN32K_PARAM_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXGK_WIN32K_PARAM_DATA structure is reserved for system use.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _DXGK_WIN32K_PARAM_DATA {
 
 Reserved for system use.
 
+
 ### -field ModesArray
 
 Reserved for system use.
+
 
 ### -field NumPathArrayElements
 
 Reserved for system use.
 
+
 ### -field NumModeArrayElements
 
 Reserved for system use.
 
+
 ### -field SDCFlags
 
 Reserved for system use.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

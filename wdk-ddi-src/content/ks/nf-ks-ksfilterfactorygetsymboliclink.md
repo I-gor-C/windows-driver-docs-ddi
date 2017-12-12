@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The<b> KsFilterFactoryGetSymbolicLink</b> function returns the symbolic link associated with a given filter factory.
 
 
+
 ## -syntax
 
 ````
@@ -56,17 +57,21 @@ PUNICODE_STRING KsFilterFactoryGetSymbolicLink(
 
 A pointer to a <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.
 
+
 ## -returns
 <b>KsFilterFactoryGetSymbolicLink</b> returns a pointer to a Unicode string containing the <a href="wdkgloss.s#wdkgloss.symbolic_link#wdkgloss.symbolic_link"><i>symbolic link</i></a> for the filter factory if the call is successful, and <b>NULL</b> if unsuccessful. <b>NULL</b> indicates that no device interfaces have been registered for <i>FilterFactory</i>.
 
+
 ## -remarks
 If <i>FilterFactory</i> has no registered device interfaces, <b>KsFilterFactoryGetSymbolicLink</b> returns <b>NULL</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,14 +82,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +103,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -105,9 +114,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

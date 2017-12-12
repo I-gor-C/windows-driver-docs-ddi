@@ -7,7 +7,7 @@ old-location: display\video_mode.htm
 old-project: display
 ms.assetid: 01fad141-d023-4a3a-80ae-cb07985db8d1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _VIDEO_MODE, VIDEO_MODE, *PVIDEO_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The VIDEO_MODE structure contains the requested VGA mode that an adapter should set. This structure is used in conjunction with <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_set_current_mode.md">IOCTL_VIDEO_SET_CURRENT_MODE</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -57,13 +58,17 @@ typedef struct _VIDEO_MODE {
 Is the mode that the miniport driver should set if possible. In addition, the two high-order bits can be set to request special behavior from the miniport driver as follows:
 
 
+
+
 ### -field VIDEO_MODE_ZERO_MEMORY
 
 Indicates that the miniport driver should zero the video memory in conjunction with the mode set.
 
+
 ### -field VIDEO_MODE_MAP_MEM_LINEAR
 
 Indicates that the miniport driver should map the video memory in a linear fashion if the adapter supports such an operation.
+
 </dd>
 </dl>
 
@@ -75,6 +80,7 @@ Indicates that the miniport driver should map the video memory in a linear fashi
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WIAS_ENDORSER_INFO structure holds custom endorser token/value pairs.
 
 
+
 ## -syntax
 
 ````
@@ -59,30 +60,37 @@ typedef struct _WIAS_ENDORSER_INFO {
 
 Specifies the value that will replace the $PAGE_COUNT$ token, provided that the endorser string contains that token.
 
+
 ### -field ulNumEndorserValues
 
 Specifies the number of token/value pairs. This member will be 0 if there are no custom token/value pairs.
+
 
 ### -field pEndorserValues
 
 Points to an array of <a href="image.wias_endorser_value">WIAS_ENDORSER_VALUE</a> structures, holding custom token/value pairs. If the value of the <b>ulNumEndorserValues</b> member is 0, this member should be <b>NULL</b>.
 
+
 ## -remarks
 Currently, <a href="image.wiasparseendorserstring">wiasParseEndorserString</a> recognizes three endorser tokens: $DATE$, $TIME$, $PAGE_COUNT$, $DAY$, $MONTH$, and $YEAR$. (See <i>wiamdef.h</i>.) Any other tokens and their values must be specified in the <b>pEndorserValues</b> member of this structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,5 +110,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ENDORSER_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

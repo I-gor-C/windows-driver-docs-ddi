@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 4f508af6-942b-4d48-8874-4b6d9918f01f
 ms.author: windowsdriverdev
 ms.date: 11/29/2017
-ms.keywords: _ISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR
+ms.keywords: _ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537651">REQUEST_ISOCH_DETACH_BUFFERS</a> requests.
 
 
+
 ## -syntax
 
 ````
@@ -68,8 +69,11 @@ typedef struct _ISOCH_DESCRIPTOR {
 ### -field fulFlags
 
 Specifies various flags for this isochronous descriptor. Each attached buffer on the channel has an associated isoch descriptor. 
+
 Before using a particular buffer for an I/O operation, the host controller examines the flags in the buffer's isoch descriptor for instructions on how to handle the data. In some cases, the host controller will continue to observe the behavior specified by these flags during I/O operations with subsequent buffers. For instance, if the isoch descriptor flags indicate that the host controller should filter out packets that do not have a certain Sy value recorded in <b>ulSynch</b>, the host controller will continue this filtering operation with the data in the buffers that follow, even if the isoch descriptors associated with these buffers do not have the same flags set. 
+
 The following table describes the flags that can be assigned to this member.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -79,110 +83,139 @@ The following table describes the flags that can be assigned to this member.
 <tr>
 <td>
 DESCRIPTOR_SYNCH_ON_SY 
+
 </td>
 <td>
 Listen
+
 </td>
 <td>
 Starting with the data in current buffer, the host controller ignores all packets not containing a particular Sy value that is embedded in the isochronous packet. The Sy value is specified in <b>ulSynch</b>. If the DESCRIPTOR_USE_SY_TAG_IN_FIRST flag is set, the host controller resumes reading all packets after encountering the first packet with the Sy value specified in <b>ulSynch</b>. If the DESCRIPTOR_USE_SY_TAG_IN_FIRST flag is not set, the host controller continues filtering, reading packets with the indicated Sy value and ignoring all others. 
+
 </td>
 </tr>
 <tr>
 <td>
 DESCRIPTOR_SYNCH_ON_TAG 
+
 </td>
 <td>
 Listen
+
 </td>
 <td>
 Starting with the data in current buffer, the host controller ignores all packets not containing a particular tag value that is embedded in the isochronous packet. The tag value is specified in <b>ulTag</b>. If the DESCRIPTOR_USE_SY_TAG_IN_FIRST flag is set, the host controller resumes reading all packets after encountering the first packet with the tag value specified in <b>ulTag</b>. If the DESCRIPTOR_USE_SY_TAG_IN_FIRST flag is not set, the host controller continues filtering, reading packets with the indicated tag value and ignoring all others. 
+
 </td>
 </tr>
 <tr>
 <td>
 DESCRIPTOR_SYNCH_ON_TIME
+
 </td>
 <td>
 Listen, Talk
+
 </td>
 <td>
 The host controller waits for a particular isochronous cycle time before continuing the operation. The cycle time is specified in the <b>CycleTime</b> member. Starting with the data in the current buffer, the host controller ignores all packets not containing a cycle time of <b>CycleTime</b>. After finding a packet with the indicated cycle time, the host controller resumes processing all packets. 
+
 </td>
 </tr>
 <tr>
 <td>
 DESCRIPTOR_USE_SY_TAG_IN_FIRST
+
 </td>
 <td>
 Listen
+
 </td>
 <td>
 Filtering on the <b>Sy</b> or <b>Tag</b> members occurs only until the first matching packet is received. This flag is used in conjunction with the flags DESCRIPTOR_SYNCH_ON_SY and DESCRIPTOR_SYNCH_ON_TAG. These two flags initiate a filtering operation based on the values in <b>Sy</b> or <b>Tag</b>, unless DESCRIPTOR_USE_SY_TAG_IN_FIRST is also set, in which case these flags initiate a synchronization rather than a filtering operation. In this synchronization operation the host controller ignores all packets until discovering a packet with the right <b>Sy</b> or <b>Tag</b> value. After discovering a packet with the indicated <b>Sy</b> or <b>Tag</b> value, the host controller resumes processing all packets. 
+
 </td>
 </tr>
 <tr>
 <td>
 DESCRIPTOR_TIME_STAMP_ON_COMPLETION
+
 </td>
 <td>
 Listen, Talk
+
 </td>
 <td>
 Once the host controller completes its DMA to or from this buffer, store the cycle time in the <b>CycleTime</b> member of the ISOCH_DESCRIPTOR.
+
 </td>
 </tr>
 <tr>
 <td>
 DESCRIPTOR_PRIORITY_TIME_DELIVERY
+
 </td>
 <td>
 Talk
+
 </td>
 <td>
 If the local host controller is not ready for a write, do not retry the write later. (The default behavior is to retry until the host controller is ready.)
+
 </td>
 </tr>
 <tr>
 <td>
 DESCRIPTOR_HEADER_SCATTER_GATHER
+
 </td>
 <td>
 Talk
+
 </td>
 <td>
 The host controller treats the data in this buffer as a sequence of headers. The host controller prepends a header from this buffer to each packet it assembles from the data in the next buffer attached.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Mdl
 
 Specifies the MDL representing a buffer in which the data is, or will be, contained. 
+
 
 ### -field ulLength
 
 Specifies the length of the <b>Mdl</b>.
 
+
 ### -field nMaxBytesPerFrame
 
 Specifies the maximum bytes contained in each isochronous frame. On writes, the data in the buffer is split into isochronous packets of this size.
+
 
 ### -field ulSynch
 
 For IsochTalk requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the Sy field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the value the host controller will match against the Sy field in isochronous packet headers.
 
+
 ### -field ulTag
 
 For IsochTalk requests, this member specifies the Tag field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_TAG flag is set, this member specifies the value the host controller will match against the Tag field in isochronous packet headers.
+
 
 ### -field CycleTime
 
 If the DESCRIPTOR_SYNCH_ON_TIME flag is set, this member specifies the isochronous cycle time to synchronize on. (The timing resolution is per isochronous cycle. The <b>CycleOffset</b> member of the cycle time is not used.) If the DESCRIPTOR_TIME_STAMP_ON_COMPLETION flag is set, the bus driver fills this member with the isochronous cycle time on completion of the operation that used this buffer.
 
+
 ### -field Callback
 
 Pointer to a callback routine. If non-NULL, the bus driver calls this routine to indicate that the associated attached buffers are ready to be detached. The callback executes at IRQL DISPATCH_LEVEL. The callback is of the following type:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -198,13 +231,16 @@ Pointer to a callback routine. If non-NULL, the bus driver calls this routine to
 
 Specifies the first parameter when the bus driver calls the routine passed in <b>Callback</b>.
 
+
 ### -field Context2
 
 Specifies the second parameter when the bus driver calls the routine passed in <b>Callback</b>.
 
+
 ### -field status
 
 For <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> requests, this member specifies the status of the attach operation on this buffer.   If an error occurs during the processing of the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request, the bus driver fills in the <b>status</b> member with an appropriate error code.
+
 
 <div class="alert"><b>Note</b>  The <b>status</b> member must be initialized to STATUS_SUCCESS before the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request is made.</div>
 <div> </div>
@@ -213,13 +249,16 @@ For <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUE
 
 Reserved.
 
+
 ### -field BusReserved
 
 Reserved.
 
+
 ### -field PortReserved
 
 Reserved.
+
 
 ## -remarks
 Not all DESCRIPTOR_XXX flags are supported on all hardware. The device driver can use the REQUEST_GET_LOCAL_HOST_INFO request, with <b>nLevel</b> = GET_HOST_CAPABILITIES, to determine which DESCRIPTOR_XXX flags are supported. The bus driver returns a pointer to a GET_LOCAL_HOST_INFO2 structure, whose <b>HostCapabilities</b> member contains flags that determine which flags the host controller supports. The following table lists which DESCRIPTOR_XXX flags require hardware support, and the corresponding <b>HostCapabilities</b> flag the driver should check.
@@ -236,11 +275,13 @@ If the driver sets the DESCRIPTOR_HEADER_SCATTER_GATHER flag, the host controlle
 
 The DESCRIPTOR_HEADER_SCATTER_GATHER flag is not supported on Windows 98/Me. It is supported on Windows 2000 and later operating systems.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -272,5 +313,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20ISOCH_DESCRIPTOR structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

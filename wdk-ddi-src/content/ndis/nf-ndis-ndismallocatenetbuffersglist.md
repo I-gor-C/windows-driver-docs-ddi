@@ -7,7 +7,7 @@ old-location: netvista\ndismallocatenetbuffersglist.htm
 old-project: netvista
 ms.assetid: 3fd8d121-a249-433a-a93d-4027a4bfcb61
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMAllocateNetBufferSGList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ Bus-master miniport drivers call the
   <a href="netvista.net_buffer">NET_BUFFER</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ A handle to a context area that NDIS uses to manage a DMA resource. The caller o
      <a href="netvista.ndismregisterscattergatherdma">
      NdisMRegisterScatterGatherDma</a> function.
 
+
 ### -param NetBuffer [in]
 
 A pointer to a NET_BUFFER structure. 
@@ -76,11 +78,13 @@ A pointer to a NET_BUFFER structure.
      <b>CurrentMdl</b> member of the associated 
      <a href="netvista.net_buffer_data">NET_BUFFER_DATA</a> structure.
 
+
 ### -param Context [in]
 
 A pointer to a context area that the caller created. HAL passes this pointer to 
      <a href="..\ndis\nc-ndis-miniport_process_sg_list.md">MiniportProcessSGList</a> after HAL
      creates the scatter/gather list. The caller can use this context area for its own purposes.
+
 
 ### -param Flags [in]
 
@@ -92,11 +96,13 @@ NDIS flags that can be combined with an OR operation. To clear all the flags, se
      from the device to a pre-allocated NET_BUFFER, for example chimney offload capable NICs during receive
      operations, should clear this flag.
 
+
 ### -param ScatterGatherListBuffer [in, optional]
 
 If not <b>NULL</b>, 
      <i>ScatterGatherListBuffer</i> specifies a pointer to storage that the caller allocates to hold the
      scatter/gather list. If <b>NULL</b>, NDIS allocates storage for the scatter/gather list.
+
 
 ### -param ScatterGatherListBufferSize [in]
 
@@ -105,6 +111,7 @@ If the
      <i>ScatterGatherListBufferSize</i> specifies the size of the buffer that contains the scatter/gather
      list. If this size is too small, NDIS allocates storage for the scatter/gather list. If the 
      <i>ScatterGatherListBuffer</i> parameter is <b>NULL</b>, this parameter is not used.
+
 
 ## -returns
 <b>NdisMAllocateNetBufferSGList</b> returns one of the following:
@@ -117,6 +124,7 @@ If the
 </dl><b>NdisMAllocateNetBufferSGList</b> failed due to insufficient resources.
 
  
+
 
 ## -remarks
 An NDIS bus-master miniport driver calls 
@@ -167,11 +175,13 @@ Miniport drivers must call the
     <a href="netvista.ndismfreenetbuffersglist">NdisMFreeNetBufferSGList</a> function
     to free a scatter/gather list.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -182,14 +192,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -200,6 +213,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -210,14 +224,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
@@ -260,5 +277,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateNetBufferSGList function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateNetBufferSGList function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

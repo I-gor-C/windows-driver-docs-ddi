@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Scsiwmi.h header
 
+## -description
 
 This header is used by Storage. For more information, see
 - [Storage](../_storage/index.md)
@@ -24,11 +29,19 @@ Scsiwmi.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [PSCSIWMIGUIDREGINFO structure](ns-scsiwmi-pscsiwmiguidreginfo.md) | The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver. |
-| [PSCSIWMI_REQUEST_CONTEXT structure](ns-scsiwmi-pscsiwmi-request-context.md) | A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB. |
-| [SCSIWMILIB_CONTEXT structure](ns-scsiwmi--scsiwmilib-context.md) | A SCSI_WMILIB_CONTEXT structure provides registration information for a miniport driver's data and event blocks and defines entry points for the miniport driver's HwScsiWmiXxx callback routines. |
+| [PSCSIWMI_REQUEST_CONTEXT structure](ns-scsiwmi-pscsiwmi_request_context.md) | A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB. |
+| [_SCSIWMILIB_CONTEXT structure](ns-scsiwmi-_scsiwmilib_context.md) | A SCSI_WMILIB_CONTEXT structure provides registration information for a miniport driver's data and event blocks and defines entry points for the miniport driver's HwScsiWmiXxx callback routines. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [SCSIWMI_ENABLE_DISABLE_CONTROL enumeration](ne-scsiwmi-scsiwmi-enable-disable-control.md) | The SCSIWMI_ENABLE_DISABLE_CONTROL enumerator is used to specify what to enable or disable. |
+| [SCSIWMI_ENABLE_DISABLE_CONTROL enumeration](ne-scsiwmi-scsiwmi_enable_disable_control.md) | The SCSIWMI_ENABLE_DISABLE_CONTROL enumerator is used to specify what to enable or disable. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [ScsiPortWmiFireAdapterEvent macro](nf-scsiwmi-scsiportwmifireadapterevent.md) | The ScsiPortWmiFireAdapterEvent routine sends an event associated with an adapter unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
+| [ScsiPortWmiGetReturnSize macro](nf-scsiwmi-scsiportwmigetreturnsize.md) | The ScsiPortWmiGetReturnSize routine indicates the number of bytes of data to be returned by a miniport driver for a WMI SRB.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWmiGetReturnStatus macro](nf-scsiwmi-scsiportwmigetreturnstatus.md) | The ScsiPortWmiGetReturnStatus routine returns the status of a WMI SRB. |

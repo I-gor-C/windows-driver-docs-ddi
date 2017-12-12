@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>CcCopyReadEx</b> routine copies data from a cached file to a user buffer. The I/O byte count for the operation is charged to the issuing thread.
 
 
+
 ## -syntax
 
 ````
@@ -62,32 +63,40 @@ BOOLEAN CcCopyReadEx(
 
 A pointer to a file object for the cached file from which the data is to be read.
 
+
 ### -param FileOffset [in]
 
 A pointer to a variable that specifies the starting byte offset within the cached file.
+
 
 ### -param Length [in]
 
 The length in bytes of the data to be read.
 
+
 ### -param Wait [in]
 
 Set to <b>TRUE</b> if the caller can be put into a wait state until all the data has been copied, <b>FALSE</b> otherwise.
+
 
 ### -param Buffer [out]
 
 A pointer to a buffer into which the data is to be copied. 
 
+
 ### -param IoStatus [out]
 
 A pointer to a caller-allocated structure that receives the final completion status and information about the operation. If not all of the data is copied successfully, <i>IoStatus.Information</i> contains the actual number of bytes that were copied.
+
 
 ### -param IoIssuerThread [in]
 
 The thread issuing the read request. For a file system with disk I/O accounting enabled, this is the thread the I/O is charged to. If <i>IoIssuerThread</i> is NULL, the I/O is charged to the current thread.
 
+
 ## -returns
 The <b>CcCopyReadEx</b> routine returns <b>TRUE</b> if the data was copied successfully, <b>FALSE</b> otherwise.
+
 
 ## -remarks
 If <i>Wait</i> is <b>TRUE</b>, <b>CcCopyReadEx</b> is guaranteed to complete the copy request and return <b>TRUE</b>. If the required pages of the cached file are already resident in memory, the data will be copied immediately and no blocking will occur. If any needed pages are not resident, the caller will be put in a wait state until all required pages have been made resident and the data can be copied.
@@ -100,11 +109,13 @@ If any failure occurs, <b>CcCopyReadEx</b> raises a status exception for that pa
 
 To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -115,14 +126,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +147,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +158,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -153,9 +169,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -182,5 +200,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcCopyReadEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

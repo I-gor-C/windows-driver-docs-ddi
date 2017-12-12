@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Netioddk.h header
 
+## -description
 
 This header is used by Networking drivers for Windows Vista and later. For more information, see
 - [Networking drivers for Windows Vista and later](../_netvista/index.md)
@@ -21,13 +26,24 @@ Netioddk.h contain these programming interfaces:
 | [NmrWaitForClientDeregisterComplete function](nf-netioddk-nmrwaitforclientderegistercomplete.md) | The NmrWaitForClientDeregisterComplete function waits for the deregistration of a client module to complete. |
 | [NmrWaitForProviderDeregisterComplete function](nf-netioddk-nmrwaitforproviderderegistercomplete.md) | The NmrWaitForProviderDeregisterComplete function waits for the deregistration of a provider module to complete. |
 
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [NPI_CLIENT_ATTACH_PROVIDER_FN callback](nc-netioddk-npi_client_attach_provider_fn.md) | A client module's ClientAttachProvider callback function attaches the client module to a provider module. |
+| [NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN callback](nc-netioddk-npi_client_cleanup_binding_context_fn.md) | A client module's ClientCleanupBindingContext callback function performs any necessary cleanup and deallocation of the client module's binding context after the client module and a provider module have detached from one another. |
+| [NPI_CLIENT_DETACH_PROVIDER_FN callback](nc-netioddk-npi_client_detach_provider_fn.md) | A client module's ClientDetachProvider callback function detaches the client module from a provider module. |
+| [NPI_PROVIDER_ATTACH_CLIENT_FN callback](nc-netioddk-npi_provider_attach_client_fn.md) | A provider module's ProviderAttachClient callback function attaches the provider module to a client module. |
+| [NPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN callback](nc-netioddk-npi_provider_cleanup_binding_context_fn.md) | A provider module's ProviderCleanupBindingContext callback function performs any necessary cleanup and deallocation of the provider module's binding context after the provider module and a client module have detached from one another. |
+| [NPI_PROVIDER_DETACH_CLIENT_FN callback](nc-netioddk-npi_provider_detach_client_fn.md) | A provider module's ProviderDetachClient callback function detaches the provider module from a client module. |
+
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [NPI_CLIENT_CHARACTERISTICS structure](ns-netioddk--npi-client-characteristics.md) | The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module. |
-| [NPI_CLIENT_CHARACTERISTICS structure](ns-netioddk--npi-client-characteristics~r1.md) | The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module. |
-| [NPI_PROVIDER_CHARACTERISTICS structure](ns-netioddk--npi-provider-characteristics.md) | The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module. |
-| [NPI_PROVIDER_CHARACTERISTICS structure](ns-netioddk--npi-provider-characteristics~r1.md) | The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module. |
-| [NPI_REGISTRATION_INSTANCE structure](ns-netioddk--npi-registration-instance.md) | The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR. |
-| [NPI_REGISTRATION_INSTANCE structure](ns-netioddk--npi-registration-instance~r1.md) | The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR. |
+| [_NPI_CLIENT_CHARACTERISTICS structure](ns-netioddk-_npi_client_characteristics.md) | The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module. |
+| [_NPI_CLIENT_CHARACTERISTICS structure](ns-netioddk-_npi_client_characteristics~r1.md) | The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module. |
+| [_NPI_PROVIDER_CHARACTERISTICS structure](ns-netioddk-_npi_provider_characteristics.md) | The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module. |
+| [_NPI_PROVIDER_CHARACTERISTICS structure](ns-netioddk-_npi_provider_characteristics~r1.md) | The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module. |
+| [_NPI_REGISTRATION_INSTANCE structure](ns-netioddk-_npi_registration_instance.md) | The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR. |
+| [_NPI_REGISTRATION_INSTANCE structure](ns-netioddk-_npi_registration_instance~r1.md) | The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR. |

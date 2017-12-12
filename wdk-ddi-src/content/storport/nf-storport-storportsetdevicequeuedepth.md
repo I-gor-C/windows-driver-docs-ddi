@@ -7,7 +7,7 @@ old-location: storage\storportsetdevicequeuedepth.htm
 old-project: storage
 ms.assetid: e79b4294-5ba4-4fcc-97e2-69613b65f574
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortSetDeviceQueueDepth
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortSetDeviceQueueDepth</b> routine sets the maximum depth of the device queue for the indicated device. 
 
 
+
 ## -syntax
 
 ````
@@ -61,35 +62,43 @@ STORPORT_API BOOLEAN StorPortSetDeviceQueueDepth(
 
 A pointer to the miniport driver's per-HBA storage area. 
 
+
 ### -param PathId [in]
 
 Contains the path ID of the target device. 
+
 
 ### -param TargetId [in]
 
 Contains the device number of the target device. 
 
+
 ### -param Lun [in]
 
 Contains the logical unit number of the target device. 
+
 
 ### -param Depth [in]
 
 Supplies the depth to which the queue is to be set. This value is always &gt; 0.
 
+
 ## -returns
 <b>StorPortSetDeviceQueueDepth</b> returns <b>TRUE</b> if the queue depth was successfully set, or <b>FALSE</b> if the operation failed. 
+
 
 ## -remarks
 Before the first call to <b>StorPortSetDeviceQueueDepth</b>, the device queue depth is set to the default value. The following conditional description determines the default queue depth.
 
 The <b>StorPortSetDeviceQueueDepth</b> routine should be called when the miniport driver receives the first SCSI Inquiry command for the specified LUN, or at any time thereafter (but not before), as long as the LUN is valid.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +109,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,6 +120,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

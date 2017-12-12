@@ -7,7 +7,7 @@ old-location: netvista\wsk_socket.htm
 old-project: netvista
 ms.assetid: dce4a087-a14b-400b-bdc1-944c1d4d492a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WSK_SOCKET, WSK_SOCKET, *PWSK_SOCKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WSK_SOCKET structure defines a socket object for a socket.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ A pointer to a constant provider dispatch structure. This structure is a dispatc
      <a href="netvista.winsock_kernel_socket_categories">socket category</a> of the
      socket, this pointer is a pointer to one of the following structures:
      
+
 <table>
 <tr>
 <th>Socket category</th>
@@ -68,60 +70,71 @@ A pointer to a constant provider dispatch structure. This structure is a dispatc
 <tr>
 <td>
 Basic socket
+
 </td>
 <td>
 
 <a href="netvista.wsk_provider_basic_dispatch">
          WSK_PROVIDER_BASIC_DISPATCH</a>
 
+
 </td>
 </tr>
 <tr>
 <td>
 Listening socket
+
 </td>
 <td>
 
 <a href="netvista.wsk_provider_listen_dispatch">
          WSK_PROVIDER_LISTEN_DISPATCH</a>
 
+
 </td>
 </tr>
 <tr>
 <td>
 Datagram socket
+
 </td>
 <td>
 
 <a href="netvista.wsk_provider_datagram_dispatch">
          WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 
+
 </td>
 </tr>
 <tr>
 <td>
 Connection-oriented socket
+
 </td>
 <td>
 
 <a href="netvista.wsk_provider_connection_dispatch">
          WSK_PROVIDER_CONNECTION_DISPATCH</a>
 
+
 </td>
 </tr>
 <tr>
 <td>
 Stream socket
+
 </td>
 <td>
 
 <a href="netvista.wsk_provider_stream_dispatch">
          WSK_PROVIDER_STREAM_DISPATCH</a>
 
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 The WSK subsystem allocates and fills in a WSK_SOCKET structure whenever a new socket is created. A
@@ -151,20 +164,24 @@ The WSK subsystem frees the memory for the WSK_SOCKET structure when the WSK app
     <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
     socket.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -210,5 +227,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_SOCKET structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_SOCKET structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

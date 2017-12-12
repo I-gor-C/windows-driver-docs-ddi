@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>IoCreateStreamFileObject</b> routine creates a new stream file object. 
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ PFILE_OBJECT IoCreateStreamFileObject(
 
 Pointer to the file object to which the new stream file is related. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param DeviceObject [in, optional]
 
 Pointer to a device object for the device on which the stream file is to be opened. If the caller specifies a non-<b>NULL</b> value for <i>FileObject</i>, the value of <i>DeviceObject</i> is ignored. Otherwise, the caller must specify a non-<b>NULL</b> value for <i>DeviceObject</i>. 
 
+
 ## -returns
 <b>IoCreateStreamFileObject</b> returns a pointer to the newly created stream file object.
+
 
 ## -remarks
 File systems call <b>IoCreateStreamFileObject</b> to create a new stream file object. A <i>stream file object</i> is identical to an ordinary file object, except that the FO_STREAM_FILE file object flag is set. 
@@ -77,11 +81,13 @@ File system filter driver writers should note that <b>IoCreateStreamFileObject</
 
 If a pool allocation failure occurs, <b>IoCreateStreamFileObject</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +109,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +120,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +131,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -151,5 +162,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateStreamFileObject routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FaceCharacterizationBlobHeader</b> structure  describes the size and count information of the blob format for the <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct tagFaceCharacterizationBlobHeader {
 
 Size of this header + all following <a href="stream.facecharacterization">FaceCharacterization</a> structures.
 
+
 ### -field Count
 
 Number of <b>FaceCharacterization</b> structures in the blob. Must match the number of <a href="stream.facerectinfo">FaceRectInfo</a> structures in <a href="stream.facerectinfoblobheader">FaceRectInfoBlobHeader</a>.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Number of <b>FaceCharacterization</b> structures in the blob. Must match the num
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

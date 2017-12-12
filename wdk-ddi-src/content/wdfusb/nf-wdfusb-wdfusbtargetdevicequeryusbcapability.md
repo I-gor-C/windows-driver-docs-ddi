@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdevicequeryusbcapability.htm
 old-project: wdf
 ms.assetid: B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfUsbTargetDeviceQueryUsbCapability
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,9 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
+
    The <b>WdfUsbTargetDeviceQueryUsbCapability</b> method determines whether the host controller and USB driver stack support a specific capability.
+
 
 
 ## -syntax
@@ -63,9 +65,11 @@ NTSTATUS WdfUsbTargetDeviceQueryUsbCapability(
 
 A handle to a USB device object.
 
+
 ### -param CapabilityType [in]
 
 A pointer to a GUID that represents the capability about which the client driver wants to retrieve information. The possible  <i>PGUID</i>  values are  as follows:
+
 <ul>
 <li>GUID_USB_CAPABILITY_CHAINED_MDLS</li>
 <li>GUID_USB_CAPABILITY_STATIC_STREAMS</li>
@@ -78,18 +82,22 @@ A pointer to a GUID that represents the capability about which the client driver
 </ul>
 See more information in Remarks.
 
+
 ### -param CapabilityBufferLength [in]
 
 Length, in bytes, of the buffer pointed to by <i>CapabilityBuffer</i>.
+
 
 ### -param CapabilityBuffer [out, optional]
 
 A pointer to a caller-allocated buffer to receive the requested USB capability. This parameter is optional. If 
                        <i>CapabilityBufferLength</i> is zero, this parameter must be NULL. Similarly, if <i>CapabilityBufferLength</i> is nonzero, this parameter must be supplied. This parameter corresponds to the <i>OutputBuffer</i> parameter of the <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a> routine.
 
+
 ### -param ResultLength [out, optional]
 
 A pointer to a location containing the size, in bytes, of the returned capability. This parameter is optional.
+
 
 ## -returns
 <b>WdfUsbTargetDeviceQueryUsbCapability</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
@@ -112,6 +120,7 @@ A pointer to a location containing the size, in bytes, of the returned capabilit
  
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
+
 
 ## -remarks
 Before calling <b>WdfUsbTargetDeviceQueryUsbCapability</b>, the driver must call  <a href="wdf.wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a> to register with the underlying USB driver stack.
@@ -143,11 +152,13 @@ This GUID applies to KMDF and UMDF drivers.
 
 Determines whether the bus is operating at SuperSpeed or higher.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -158,30 +169,37 @@ Target platform
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows Vista
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.11
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -192,6 +210,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -203,14 +222,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>
@@ -228,5 +250,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceQueryUsbCapability method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceQueryUsbCapability method%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

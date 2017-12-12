@@ -41,6 +41,7 @@ req.irql: See Remarks section.
 The <b>FltCancellableWaitForMultipleObjects</b> executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects.
 
 
+
 ## -syntax
 
 ````
@@ -61,29 +62,39 @@ NTSTATUS   FltCancellableWaitForMultipleObjects(
 
 The number of objects to be waited on.
 
+
 ### -param ObjectArray [in]
 
 A pointer to an array of pointers to dispatcher objects (events, mutexes, semaphores, threads, and timers) for which the caller supplies the storage.
+
 
 ### -param WaitType [in]
 
 An enumumeration with the value of either <b>WaitAll</b>, which indicates that all of the specified objects must attain a signaled state before the wait is satisfied; or <b>WaitAny</b>, which indicates that any one of the objects must attain a signaled state before the wait is satisfied. 
 
+
 ### -param Timeout [in, optional]
 
 A pointer to an optional time-out value. This parameter specifies the absolute or relative time in 100 nanosecond units at which the wait is to be completed.
+
 If Timeout points to a zero value (that is, *Timeout == 0), the routine returns without waiting. If the caller supplies a <b>NULL</b> pointer (that is, Timeout == <b>NULL</b>), the routine waits indefinitely until any or all of the dispatcher objects are set to the signaled state.
+
 A positive value specifies an absolute time, relative to January 1, 1601. A negative value specifies an interval relative to the current time. Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes. 
+
 If Timeout is specified, the wait is automatically satisfied if none of the specified wait conditions are met when the given interval expires.
+
 A time-out value of zero (that is, *Timeout == 0) allows you to test a set of wait conditions, and to conditionally perform any additional actions if the wait can be immediately satisfied, as in the acquisition of a mutex. 
+
 
 ### -param WaitBlockArray [in, optional]
 
 If Count &lt;= THREAD_WAIT_OBJECTS, WaitBlockArray can be <b>NULL</b>. Otherwise, this parameter must point to a memory buffer of <code>sizeof(KWAIT_BLOCK) * Count</code> bytes. The routine uses this buffer for record-keeping while performing the wait operation. 
 
+
 ### -param CallbackData [in]
 
 A pointer to the <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure that represents the I/O operation that was issued by the user and that can be canceled by the user. The caller must ensure that the I/O operation will remain valid for the duration of this routine and that the I/O must not have a cancel routine set (for example, <a href="ifsk.fltsetcancelcompletion">FltSetCancelCompletion</a> function must not have been called on the I/O operation). Note that the <i>CallbackData</i> must be held by the caller as it cannot be passed to a lower-level driver. 
+
 
 ## -returns
 <b>FltCancellableWaitForMultipleObjects</b> can return one of the following values:
@@ -112,6 +123,7 @@ The return value only indicates the status of the wait.
 
 Note that the NT_SUCCESS macro returns <b>FALSE</b> ("failure") for the STATUS_CANCELLED and STATUS_THREAD_IS_TERMINATING status values and <b>TRUE</b> ("success") for all other status values.
 
+
 ## -remarks
 The <b>FltCancellableWaitForMultipleObjects</b> executes a cancelable wait operation on dispatcher objects. If the user or the application terminates the thread, or if an I/O operation associated with the thread was canceled by a routine such as <a href="ifsk.fltcancelio">FltCancelIo</a>, the wait is canceled.
 
@@ -133,11 +145,13 @@ The <b>FltCancellableWaitForMultipleObjects</b> routine must be called at IRQL P
 
 <b>FltCancellableWaitForMultipleObjects</b> will assert on debug builds if the <i>CallbackData</i> represents a Filter Manager IRP operation, but the IRP in the <i>CallbackData</i> structure is <b>NULL</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -148,14 +162,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Vista and later versions of Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -166,6 +183,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -176,9 +194,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 </table>
@@ -221,5 +241,8 @@ See Remarks section.
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCancellableWaitForMultipleObjects function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

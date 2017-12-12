@@ -7,8 +7,8 @@ old-location: wdf\iwdfdevice3.htm
 old-project: wdf
 ms.assetid: C4AEC0DA-EB93-481D-A94C-7BB7BF15EFBC
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 To obtain the <b>IWDFDevice3</b> interface, drivers call <b>IWDFDevice::QueryInterface</b>.
+
 
 
 ## -inheritance
@@ -68,6 +70,7 @@ The <a href="wdf.iwdfdevice3_writetohardware">WriteToHardware</a> method is used
 
  
 
+
 ## -members
 The <b>IWDFDevice3</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -82,6 +85,7 @@ The <b>IWDFDevice3</b> interface has these methods.
 <td align="left" width="63%">
 The 
   <a href="wdf.iwdfdevice3_assigns0idlesettingsex">AssignS0IdleSettingsEx</a> method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -91,6 +95,7 @@ The
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice3_createinterrupt">CreateInterrupt</a> method creates a framework interrupt object.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -99,6 +104,7 @@ The <a href="wdf.iwdfdevice3_createinterrupt">CreateInterrupt</a> method creates
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice3_createworkitem">CreateWorkItem</a> method creates a framework work-item object, which can subsequently be added to the framework’s work-item queue.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -107,6 +113,7 @@ The <a href="wdf.iwdfdevice3_createworkitem">CreateWorkItem</a> method creates a
 </td>
 <td align="left" width="63%">
 A driver calls <a href="wdf.iwdfdevice3_gethardwareregistermappedaddress">GetHardwareRegisterMappedAddress</a> to get the user-mode mapped address of the memory resource it earlier mapped using <a href="wdf.iwdfdevice3_mapiospace">MapIoSpace</a>.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -115,6 +122,7 @@ A driver calls <a href="wdf.iwdfdevice3_gethardwareregistermappedaddress">GetHar
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice3_mapiospace">MapIoSpace</a> method maps the given physical address range to system address space and returns a pseudo base address. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -123,6 +131,7 @@ The <a href="wdf.iwdfdevice3_mapiospace">MapIoSpace</a> method maps the given ph
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice3_readfromhardware">ReadFromHardware</a> method is used internally by the framework. Do not use.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -131,6 +140,7 @@ The <a href="wdf.iwdfdevice3_readfromhardware">ReadFromHardware</a> method is us
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice3_unmapiospace">UnmapIoSpace</a> method unmaps a specified range of physical addresses previously mapped by <a href="wdf.iwdfdevice3_mapiospace">MapIoSpace</a> method.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -139,6 +149,7 @@ The <a href="wdf.iwdfdevice3_unmapiospace">UnmapIoSpace</a> method unmaps a spec
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfdevice3_writetohardware">WriteToHardware</a> method is used internally by the framework. Do not use.
+
 </td>
 </tr>
 </table>The 
@@ -161,6 +172,7 @@ The <a href="wdf.iwdfdevice3_writetohardware">WriteToHardware</a> method is used
 
  
 
+
 ## -remarks
 
 
@@ -169,6 +181,7 @@ The <a href="wdf.iwdfdevice3_writetohardware">WriteToHardware</a> method is used
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -179,22 +192,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.11
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -205,6 +223,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -221,5 +240,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3 interface%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3 interface%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

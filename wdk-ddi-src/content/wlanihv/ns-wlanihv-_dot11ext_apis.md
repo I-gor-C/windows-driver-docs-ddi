@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_apis.htm
 old-project: netvista
 ms.assetid: d533acbb-eb3b-4c49-a057-9a99faaacfc1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11EXT_APIS, DOT11EXT_APIS, *PDOT11EXT_APIS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,12 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">
      Dot11ExtAllocateBuffer</a> function.
 
+
 ### -field Dot11ExtFreeBuffer
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a> function.
+
 
 ### -field Dot11ExtSetProfileCustomUserData
 
@@ -89,11 +91,13 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_profile_custom_user_data.md">
      Dot11ExtSetProfileCustomUserData</a> function.
 
+
 ### -field Dot11ExtGetProfileCustomUserData
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_get_profile_custom_user_data.md">
      Dot11ExtGetProfileCustomUserData</a> function.
+
 
 ### -field Dot11ExtSetCurrentProfile
 
@@ -101,11 +105,13 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_current_profile.md">
      Dot11ExtSetCurrentProfile</a> function.
 
+
 ### -field Dot11ExtSendUIRequest
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">
      Dot11ExtSendUIRequest</a> function.
+
 
 ### -field Dot11ExtPreAssociateCompletion
 
@@ -113,11 +119,13 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_pre_associate_completion.md">
      Dot11ExtPreAssociateCompletion</a> function.
 
+
 ### -field Dot11ExtPostAssociateCompletion
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_post_associate_completion.md">
      Dot11ExtPostAssociateCompletion</a> function.
+
 
 ### -field Dot11ExtSendNotification
 
@@ -125,10 +133,12 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_send_notification.md">
      Dot11ExtSendNotification</a> function.
 
+
 ### -field Dot11ExtSendPacket
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_send_packet.md">Dot11ExtSendPacket</a> function.
+
 
 ### -field Dot11ExtSetEtherTypeHandling
 
@@ -136,11 +146,13 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">
      Dot11ExtSetEtherTypeHandling</a> function.
 
+
 ### -field Dot11ExtSetAuthAlgorithm
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_auth_algorithm.md">
      Dot11ExtSetAuthAlgorithm</a> function.
+
 
 ### -field Dot11ExtSetUnicastCipherAlgorithm
 
@@ -148,11 +160,13 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_unicast_cipher_algorithm.md">
      Dot11ExtSetUnicastCipherAlgorithm</a> function.
 
+
 ### -field Dot11ExtSetMulticastCipherAlgorithm
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_multicast_cipher_algorithm.md">
      Dot11ExtSetMulticastCipherAlgorithm</a> function.
+
 
 ### -field Dot11ExtSetDefaultKey
 
@@ -160,11 +174,13 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key.md">
      Dot11ExtSetDefaultKey</a> function.
 
+
 ### -field Dot11ExtSetKeyMappingKey
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_key_mapping_key.md">
      Dot11ExtSetKeyMappingKey</a> function.
+
 
 ### -field Dot11ExtSetDefaultKeyId
 
@@ -172,11 +188,13 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key_id.md">
      Dot11ExtSetDefaultKeyId</a> function.
 
+
 ### -field Dot11ExtNicSpecificExtension
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_nic_specific_extension.md">
      Dot11ExtNicSpecificExtension</a> function.
+
 
 ### -field Dot11ExtSetExcludeUnencrypted
 
@@ -184,21 +202,25 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_exclude_unencrypted.md">
      Dot11ExtSetExcludeUnencrypted</a> function.
 
+
 ### -field Dot11ExtStartOneX
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a> function.
+
 
 ### -field Dot11ExtStopOneX
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_stop.md">Dot11ExtStopOneX</a> function.
 
+
 ### -field Dot11ExtProcessOneXPacket
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_process_onex_packet.md">
      Dot11ExtProcessOneXPacket</a> function.
+
 
 ## -remarks
 The IHV Extensibility functions are not statically or dynamically linked to the IHV Extensions DLL.
@@ -209,20 +231,24 @@ The IHV Extensibility functions are not statically or dynamically linked to the 
 
 All of the function pointers are required and will not be set to <b>NULL</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -319,5 +345,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_APIS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_APIS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: print\propsheetui_info_header.htm
 old-project: print
 ms.assetid: 148c463c-a18b-4f24-b3dc-af74c3de97b7
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _PROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER
+ms.date: 12/9/2017
+ms.keywords: _PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.
 
 
+
 ## -syntax
 
 ````
@@ -64,9 +65,11 @@ typedef struct _PROPSHEETUI_INFO_HEADER {
 
 CPSUI-supplied size, in bytes, of the PROPSHEETUI_INFO_HEADER structure.
 
+
 ### -field Flags
 
 Optional, application-specified bit flags that modify the property sheet page's appearance. The flags listed in the following table can be used in any combination.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -75,57 +78,71 @@ Optional, application-specified bit flags that modify the property sheet page's 
 <tr>
 <td>
 PSUIHDRF_DEFTITLE
+
 </td>
 <td>
 If set, CPSUI should include "Default" in the title bar string. CPSUI adds "Default" after the <b>pTitle</b> string and, if PSUIHDRF_PROPTITLE is set, before "Properties".
+
 </td>
 </tr>
 <tr>
 <td>
 PSUIHDRF_EXACT_PTITLE
+
 </td>
 <td>
 If set, CPSUI uses the text specified by <b>pTitle</b> without modification. This flag overrides PSUIHDRF_DEFTITLE and PSUIHDRF_PROPTITLE.
+
 </td>
 </tr>
 <tr>
 <td>
 PSUIHDRF_NOAPPLYNOW
+
 </td>
 <td>
 If set, CPSUI should not include an <b>Apply Now</b> button.
+
 </td>
 </tr>
 <tr>
 <td>
 PSUIHDRF_PROPTITLE
+
 </td>
 <td>
 If set, CPSUI should append "Properties" to the title bar string. (By default, CPSUI sets this flag before calling the application.)
+
 </td>
 </tr>
 <tr>
 <td>
 PSUIHDRF_USEHICON
+
 </td>
 <td>
 If set, the <b>hIcon</b>/<b>IconID</b> union contains an icon handle. If not set, the union contains an icon resource identifier.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field pTitle
 
 String identifier, representing text to be displayed in the property sheet's title bar. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. For printer interface DLLs, the string typically contains the printer's name.
+
 
 ### -field hWndParent
 
 Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="print.commonpropertysheetui">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.
 
+
 ### -field hInst
 
 Application-supplied instance handle, which CPSUI uses when loading application resources.
+
 
 ### -field hIcon
 
@@ -133,6 +150,7 @@ Application-supplied instance handle, which CPSUI uses when loading application 
 ### -field IconID
 
 This union identifies the icon to be displayed in the property sheet's title bar. The union member is selected by PSUIHDRF_USEICON in <b>Flags</b>.
+
 
 ## -remarks
 
@@ -142,6 +160,7 @@ This union identifies the icon to be displayed in the property sheet's title bar
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

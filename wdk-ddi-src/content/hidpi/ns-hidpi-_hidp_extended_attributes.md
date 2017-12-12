@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The HIDP_EXTENDED_ATTRIBUTES structure contains information about the global items specified for a HID control that the HID parser did not recognize.
 
 
+
 ## -syntax
 
 ````
@@ -59,26 +60,32 @@ typedef struct _HIDP_EXTENDED_ATTRIBUTES {
 
 Specifies the number of <a href="hid.hidp_unknown_token">HIDP_UNKNOWN_TOKEN</a> structures in the list specified by <b>Data</b>.
 
+
 ### -field Reserved
 
 Reserved for internal system use only.
+
 
 ### -field GlobalUnknowns
 
 Reserved for internal system use only.
 
+
 ### -field Data
 
 Specifies the memory location where <a href="hid.hidp_getextendedattributes">HidP_GetExtendedAttributes</a> returns a variable length array of <a href="hid.hidp_unknown_token">HIDP_UNKNOWN_TOKEN</a> structures.
 
+
 ## -remarks
 The HIDP_EXTENDED_ATTRIBUTES structure is designed to be used with <b>HidP_GetExtendedAttributes</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -98,5 +105,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_EXTENDED_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

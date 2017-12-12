@@ -41,6 +41,7 @@ req.irql:
 The <b>KsDefaultDeviceIoCompletion</b> function is used to return a default response and to complete any device I/O control. It can be used in the KSDISPATCH_TABLE and as the default response to unknown Ioctl's. It is important to use this function so that queries such as property requests return the correct value rather than just STATUS_INVALID_DEVICE_REQUEST when properties are not support for instance.
 
 
+
 ## -syntax
 
 ````
@@ -57,21 +58,26 @@ NTSTATUS KsDefaultDeviceIoCompletion(
 
 Specifies the device object dispatched to.
 
+
 ### -param Irp [in]
 
 Specifies the IRP to return a default response to.
 
+
 ## -returns
 The <b>KsDefaultDeviceIoCompletion</b> function returns the default response to the possible IOCTLs.
 
+
 ## -remarks
 Note that this routine will complete the IRP.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +88,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

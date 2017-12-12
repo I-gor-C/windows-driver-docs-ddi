@@ -7,7 +7,7 @@ old-location: display\miracast_session_info.htm
 old-project: display
 ms.assetid: 48F3CB86-5181-4E1E-9E7F-88FB2CD3640A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: MIRACAST_SESSION_INFO, MIRACAST_SESSION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains info on a wireless display (Miracast) connected session.
 
 
+
 ## -syntax
 
 ````
@@ -61,17 +62,21 @@ typedef union {
 
 If set, the monitor (the source) is connected to a Miracast sink.
 
+
 ### -field ReducedModeListDueToBandwidth
 
 If set, the user-mode driver has reduced the modes exposed to the operating system based on the current suggested encode rate.
+
 
 ### -field Reserved
 
 Reserved for system use and should be set to zero.
 
+
 ### -field Value
 
 Holds a 32-bit value that identifies the Miracast connected session.
+
 
 ## -remarks
 
@@ -81,22 +86,27 @@ Holds a 32-bit value that identifies the Miracast connected session.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

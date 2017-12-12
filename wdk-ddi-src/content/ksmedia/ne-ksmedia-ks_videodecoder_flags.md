@@ -41,6 +41,7 @@ req.irql:
 The KS_VIDEODECODER_FLAGS enumeration defines video decoder capabilities.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 The decoder can translate its output lines. Video decoders that use a video port use this flag.
 
+
 ### -field KS_VIDEODECODER_FLAGS_CAN_USE_VCR_LOCKING
 
 The video decoder can alter its phase locked loop (PLL) timings to lock on to noisy signals. This flag typically is used when the video source is a VCR that introduces variability in the vertical and horizontal sync timing.
 
+
 ### -field KS_VIDEODECODER_FLAGS_CAN_INDICATE_LOCKED
 
 The video decoder can distinguish whether it has locked to an incoming analog video signal.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ The video decoder can distinguish whether it has locked to an incoming analog vi
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,5 +95,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEODECODER_FLAGS enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

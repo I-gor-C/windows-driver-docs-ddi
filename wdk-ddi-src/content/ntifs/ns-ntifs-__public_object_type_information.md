@@ -41,6 +41,7 @@ req.irql:
 The PUBLIC_OBJECT_TYPE_INFORMATION structure holds the type name of the object.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct __PUBLIC_OBJECT_TYPE_INFORMATION {
 
 Specifies the type name of the object.
 
+
 ### -field Reserved
 
 Reserved for system use. 
+
 
 ## -remarks
 
@@ -69,14 +72,17 @@ Reserved for system use.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This structure is available starting with Microsoft Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

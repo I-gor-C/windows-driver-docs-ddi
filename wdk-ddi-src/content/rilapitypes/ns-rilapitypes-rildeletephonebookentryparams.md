@@ -7,8 +7,8 @@ old-location: netvista\rildeletephonebookentryparams_2.htm
 old-project: netvista
 ms.assetid: 33e64f4f-a632-47d0-a133-f64d6f4b1cda
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -80,6 +81,7 @@ typedef struct _RILDELETEPHONEBOOKENTRYPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

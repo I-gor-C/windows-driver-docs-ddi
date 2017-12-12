@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetRequestorSessionId</b> routine returns the session ID of the process that originally requested the specified I/O operation.
 
 
+
 ## -syntax
 
 ````
@@ -57,23 +58,28 @@ NTSTATUS FltGetRequestorSessionId(
 
 A pointer to the <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure specifying the I/O operation.
 
+
 ### -param SessionId [out]
 
 A pointer to the session ID for the requesting operation.
 
+
 ## -returns
 The <b>FltGetRequestorSessionId</b> routine returns STATUS_SUCCESS on success or STATUS_UNSUCCESSFUL on failure.
+
 
 ## -remarks
 If a process has no session ID, the SessionId parameter refers to -1 and the <b>FltGetRequestorSessionId</b> routine returns STATUS_SUCCESS.
 
 If the <b>FltGetRequestorSessionId</b> routine returns STATUS_UNSUCCESSFUL, <i>SessionId</i> is not valid.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,14 +90,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows 7 and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +111,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +122,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +133,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>

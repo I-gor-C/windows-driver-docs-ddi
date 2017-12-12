@@ -7,7 +7,7 @@ old-location: netvista\riluicccardinfoparammask.htm
 old-project: netvista
 ms.assetid: e206ed8b-89c3-4503-a4c7-57d29c9c00ff
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCCARDINFOPARAMMASK, RILUICCCARDINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef enum _RILUICCCARDINFOPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

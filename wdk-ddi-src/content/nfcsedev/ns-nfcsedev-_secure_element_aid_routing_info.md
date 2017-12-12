@@ -41,6 +41,7 @@ req.irql:
 SECURE_ELEMENT_AID_ROUTING_INFO is a member of <a href="nfpdrivers._secure_element_routing_table_entry">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ Secure element unique identifier returned by enumeration DDI.
 
 
 
+
 ### -field cbAid
 
 Length of applet ID buffer.
 
+
 ### -field pbAid[16]
 
 Buffer holding ISO 7816 AID.
+
 
 ## -remarks
 
@@ -76,6 +80,7 @@ Buffer holding ISO 7816 AID.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_phy_type.htm
 old-project: netvista
 ms.assetid: BDA90056-6DAA-4FC8-82EC-3062087E02C4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_PHY_TYPE, WDI_PHY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_PHY_TYPE enumeration defines the PHY types.
 
 
+
 ## -syntax
 
 ````
@@ -69,33 +70,41 @@ typedef enum _WDI_PHY_TYPE {
 
 Specifies an unknown or uninitialized PHY type.
 
+
 ### -field WDI_PHY_TYPE_ANY
 
 Specifies an unknown or uninitialized PHY type.
+
 
 ### -field WDI_PHY_TYPE_FHSS
 
 Specifies a frequency-hopping spread-spectrum (FHSS) PHY.
 
+
 ### -field WDI_PHY_TYPE_DSSS
 
 Specifies a direct sequence spread spectrum (DSSS) PHY.
+
 
 ### -field WDI_PHY_TYPE_IRBASEBAND
 
 Specifies an infrared (IR) baseband PHY.
 
+
 ### -field WDI_PHY_TYPE_OFDM
 
 Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.
+
 
 ### -field WDI_PHY_TYPE_HRDSSS
 
 Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.
 
+
 ### -field WDI_PHY_TYPE_ERP
 
 Specifies an extended-rate 802.11g PHY (ERP).
+
 
 ### -field WDI_PHY_TYPE_HT
 
@@ -103,14 +112,18 @@ Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-ban
 
 
 
+
 ### -field WDI_PHY_TYPE_VHT
 
 Specifies a very high-throughput (VHT) 802.11ac PHY.
 
+
 ### -field WDI_PHY_TYPE_DMG
 
 Added in Windows 10, version 1607, WDI version 1.0.21.
+
 Specifies an 802.11ad PHY.
+
 
 ### -field WDI_PHY_TYPE_IHV_START
 
@@ -118,9 +131,11 @@ Specifies the start of the range that is used to define proprietary PHY types th
 
 
 
+
 ### -field WDI_PHY_TYPE_IHV_END
 
 Specifies the end of the range that is used to define proprietary PHY types that are developed by an IHV. 
+
 
 
 
@@ -132,22 +147,27 @@ Specifies the end of the range that is used to define proprietary PHY types that
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

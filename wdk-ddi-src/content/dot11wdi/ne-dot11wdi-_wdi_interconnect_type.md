@@ -7,7 +7,7 @@ old-location: netvista\wdi_interconnect_type.htm
 old-project: netvista
 ms.assetid: 58cb1ead-94a1-4587-bb2a-7b8e23f42eeb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_INTERCONNECT_TYPE, WDI_INTERCONNECT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The WDI_INTERCONNECT_TYPE enumeration defines the interconnect types.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _WDI_INTERCONNECT_TYPE {
 
 Target can access system memory (for example, PCI-based interconnect).
 
+
 ### -field WDI_INTERCONNECT_MESSAGE_BASED
 
 Message based interconnect (for example, USB or SDIO).
 
+
 ### -field WDI_INTERCONNECT_UNKNOWN
 
 Unspecified interconnect type.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Unspecified interconnect type.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

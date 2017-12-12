@@ -7,8 +7,8 @@ old-location: display\miracast_callbacks.htm
 old-project: display
 ms.assetid: 2168a4d8-a33d-4534-b4e8-126a41e528f5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _MIRACAST_CALLBACKS, *PMIRACAST_CALLBACKS, MIRACAST_CALLBACKS
+ms.date: 12/8/2017
+ms.keywords: _MIRACAST_CALLBACKS, MIRACAST_CALLBACKS, *PMIRACAST_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Contains pointers to wireless display (Miracast) runtime callback functions that the Miracast user-mode driver can call.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _MIRACAST_CALLBACKS {
 
 A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_report_session_status.md">ReportSessionStatus</a>   function.
 
+
 ### -field MiracastIoControl
 
 A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_miracast_io_control.md">MiracastIoControl</a>   function.
+
 
 ### -field ReportStatistic
 
 A pointer to the    <a href="..\netdispumdddi\nc-netdispumdddi-pfn_report_statistic.md">ReportStatistic</a> function.
 
+
 ### -field GetNextChunkData
 
 A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_get_next_chunk_data.md">GetNextChunkData</a>    function.
 
+
 ### -field RegisterForDataRateNotifications
 
 A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_register_datarate_notifications.md">RegisterForDataRateNotifications</a>    function.
+
 
 ## -remarks
 
@@ -84,22 +90,27 @@ A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_register_datarat
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

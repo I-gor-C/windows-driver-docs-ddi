@@ -40,7 +40,9 @@ req.irql:
 ## -description
 The <b>IOCTL_HID_SET_S0_IDLE_TIMEOUT</b> 
    request is used by a client to inform the HID class driver about the client's preferred idle timeout value.
+
 When the client sets this value to zero (0), it informs the HID class driver that the preferred idle timeout value is no longer valid. In this case, the HID class driver will start to use the default idle timeout value.
+
 
 
 ## -ioctlparameters
@@ -49,13 +51,17 @@ When the client sets this value to zero (0), it informs the HID class driver tha
 
        The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member specifies the size, in bytes, of a requester-allocated output buffer. 
 
+
 ### -input-buffer-length
 This is a buffer of size ULONG.
+
 
 ### -output-buffer
 The <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> member is a pointer to the requestor-allocated buffer that the client uses to return the idle timeout value.
 
+
 ### -output-buffer-length
+
 
 
 ### -in-out-buffer
@@ -70,6 +76,7 @@ The <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> member is a pointer to the request
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a <a href="kernel.ntstatus_value">NTSTATUS</a> code.
 
+
 ## -remarks
 
 
@@ -78,6 +85,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>CcCoherencyFlushAndPurgeCache</b> routine flushes and/or purges the cache to ensure cache coherency. Use <b>CcCoherencyFlushAndPurgeCache</b> when possible instead of an explicit flush and purge call sequence as it will invalidate user mapped views to prevent data corruption.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ VOID CcCoherencyFlushAndPurgeCache(
 
 A pointer to a structure that contains the section object pointers of the file object.
 
+
 ### -param FileOffset [in, optional]
 
 A pointer to a variable that specifies the starting byte offset to flush, purge, or both.
+
 
 ### -param Length [in]
 
 The length, in bytes of the data to flush and/or purge starting at <i>FileOffset</i>. This parameter is ignored if a <b>NULL</b> pointer is passed to <i>FileOffset</i>.
 
+
 ### -param IoStatus [out]
 
 A pointer to a caller-allocated structure that receives the final completion status and information about the operation.
 
+
 ### -param Flags [in, optional]
 
 A bitmask of flags that specify how the operation is to be performed. The one flag is defined in the following table. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -83,16 +89,20 @@ A bitmask of flags that specify how the operation is to be performed. The one fl
 <tr>
 <td>
 CC_FLUSH_AND_PURGE_NO_PURGE
+
 </td>
 <td>
 Flush, but do not purge the cache. This is useful for read coherency flushes.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 None
+
 
 ## -remarks
 The file must be acquired exclusively before you call <b>CcCoherencyFlushAndPurgeCache</b>.
@@ -103,11 +113,13 @@ A call to <b>CcCoherencyFlushAndPurgeCache</b> is a synchronous (blocking) opera
 
 An <i>IoStatus</i>-&gt;<i>Status </i>value of STATUS_CACHE_PAGE_LOCKED indicates that page invalidation failed. Be aware that page invalidation can fail even if you pass CC_FLUSH_AND_PURGE_NO_PURGE in the <i>Flags</i> parameter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -118,14 +130,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +151,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +162,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -156,9 +173,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -173,5 +192,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcCoherencyFlushAndPurgeCache routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: EC7C59D0-96AE-400D-9502-D6DBFD9918DC
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _IO_FOEXT_SILO_PARAMETERS, *PIO_FOEXT_SILO_PARAMETERS, IO_FOEXT_SILO_PARAMETERS
+ms.keywords: _IO_FOEXT_SILO_PARAMETERS, IO_FOEXT_SILO_PARAMETERS, *PIO_FOEXT_SILO_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure describes the Container context that's identified by the <a href="ifsk.iogetsiloparameters">IoGetSiloParameters</a> routine.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _IO_FOEXT_SILO_PARAMETERS {
 
 The length of the structure. This also serves as the structure version.
 
+
 ### -field SiloContext
 
 The container context.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The container context.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

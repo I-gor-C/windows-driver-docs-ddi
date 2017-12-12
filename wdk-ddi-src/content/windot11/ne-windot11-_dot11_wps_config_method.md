@@ -7,8 +7,8 @@ old-location: netvista\dot11_wps_config_method.htm
 old-project: netvista
 ms.assetid: FFA5B3FF-57AF-4701-97FB-E1182CDE8F7A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_WPS_CONFIG_METHOD, *PDOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD
+ms.date: 12/8/2017
+ms.keywords: _DOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD, *PDOT11_WPS_CONFIG_METHOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -58,17 +58,21 @@ typedef enum _DOT11_WPS_CONFIG_METHOD {
 
 No setup method is configured.
 
+
 ### -field DOT11_WPS_CONFIG_METHOD_DISPLAY
 
 Setup is configured by a software user interface.
+
 
 ### -field DOT11_WPS_CONFIG_METHOD_PUSHBUTTON
 
 Setup is configured by push button enablement.
 
+
 ### -field DOT11_WPS_CONFIG_METHOD_KEYPAD
 
 Setup is configured by a keypad action.
+
 
 ## -remarks
 
@@ -78,14 +82,17 @@ Setup is configured by a keypad action.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

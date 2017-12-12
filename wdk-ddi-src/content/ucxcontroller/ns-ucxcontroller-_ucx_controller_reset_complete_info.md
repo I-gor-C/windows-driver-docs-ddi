@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 72935645-0567-4FC9-962C-3E823C08D001
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO
+ms.keywords: _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains information about the operation to reset the controller. This is used by the client driver in its <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_reset.md">EVT_UCX_CONTROLLER_RESET</a> callback function.
 
 
+
 ## -syntax
 
 ````
@@ -59,22 +60,27 @@ typedef struct _UCX_CONTROLLER_RESET_COMPLETE_INFO {
 
 The size in bytes of this structure.
 
+
 ### -field UcxControllerState
 
 The UCX controller state after reset. 
+
 
 ### -field UcxCoordinated
 
 Indicates if the reset was coordinated with UCX (TRUE) or not (FALSE).
 
+
 ## -remarks
 This structure is populated by a call to <a href="buses._ucxcontrollerresetcomplete">UcxControllerResetComplete</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

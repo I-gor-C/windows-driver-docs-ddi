@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 Invokes the completion routine on success.
 
+
 ### -field KsInvokeOnError
 
 Invokes the completion routine on error.
 
+
 ### -field KsInvokeOnCancel
 
 Invokes the completion routine on cancellation.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Invokes the completion routine on cancellation.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WIA_BARCODES</b> structure stores header information for the barcode metadata report of one scan job (one call to <a href="image.iwiaminidrv_drvacquireitemdata">IWiaMiniDrv::drvAcquireItemData</a>).
 
 
+
 ## -syntax
 
 ````
@@ -61,30 +62,37 @@ typedef struct _WIA_BARCODES {
 
 Must be the literal 'WBAR', 4 single byte ASCII characters. 
 
+
 ### -field Version
 
 Must be the value 0x00010000 (Version 1.0).
+
 
 ### -field Size
 
 The complete size of this <b>WIA_BARCODES</b> header structure, in bytes, including the complete size of the <a href="image.wia_barcode_info">WIA_BARCODE_INFO</a> list.
 
+
 ### -field Count
 
 Specifies the number of <a href="image.wia_barcode_info">WIA_BARCODE_INFO</a> elements in the Barcodes sequence.
+
 
 ### -field Barcodes
 
 Placeholder for  a sequence of <b>Count</b> contiguous <a href="image.wia_barcode_info">WIA_BARCODE_INFO</a> structures.
 
+
 ## -remarks
 The header must be followed by a sequence of barcode information structures, one for each decoded barcode, in the order the barcodes were found and decoded.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

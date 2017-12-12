@@ -7,8 +7,8 @@ old-location: debugger\debug_last_event_info_system_error.htm
 old-project: debugger
 ms.assetid: A66C26AB-3AED-4F44-9F7F-DE5A92BB611A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_SYSTEM_ERROR, *PDEBUG_LAST_EVENT_INFO_SYSTEM_ERROR, DEBUG_LAST_EVENT_INFO_SYSTEM_ERROR
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_SYSTEM_ERROR, DEBUG_LAST_EVENT_INFO_SYSTEM_ERROR, *PDEBUG_LAST_EVENT_INFO_SYSTEM_ERROR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Describes the system error of the last event.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DEBUG_LAST_EVENT_INFO_SYSTEM_ERROR {
 
 The error code for the event.
 
+
 ### -field Level
 
 The error level for the event.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The error level for the event.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

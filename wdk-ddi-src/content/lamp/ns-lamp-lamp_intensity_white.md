@@ -41,6 +41,7 @@ req.irql:
 This structure is the I/O parameter type of <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a> and <a href="..\lamp\ni-lamp-ioctl_lamp_set_intensity_white.md">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct LAMP_INTENSITY_WHITE {
 
 White light intensity in percentage (0-100).
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ White light intensity in percentage (0-100).
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\rilcallmodificationcausecode.htm
 old-project: netvista
 ms.assetid: d2785ee2-6e5d-474e-9d0f-57da956b6ec7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE
+ms.date: 12/8/2017
+ms.keywords: RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef enum _RILCALLMODIFICATIONCAUSECODE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

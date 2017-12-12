@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetTunneledName</b> routine retrieves the tunneled name for a file, given the normalized name returned for the file by a previous call to <a href="ifsk.fltgetfilenameinformation">FltGetFileNameInformation</a>, <a href="ifsk.fltgetfilenameinformationunsafe">FltGetFileNameInformationUnsafe</a>, or <a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS FltGetTunneledName(
 
 Pointer to the callback data structure for the I/O operation (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param FileNameInformation [in]
 
 Pointer to an <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a> structure containing normalized name information returned by a previous call to  <a href="ifsk.fltgetfilenameinformation">FltGetFileNameInformation</a>, <a href="ifsk.fltgetfilenameinformationunsafe">FltGetFileNameInformationUnsafe</a>, or <a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a> for the file. 
 
+
 ### -param RetTunneledFileNameInformation [out]
 
 Pointer to a caller-allocated variable that receives the address of a newly allocated structure containing the tunneled file name. If no tunneled name is found, this variable receives <b>NULL</b>. This parameter is required and cannot be <b>NULL</b> on input. 
+
 
 ## -returns
 <b>FltGetTunneledName</b> returns STATUS_SUCCESS if the tunneled name is found or if there is no tunneled name for the file. Otherwise, it returns an NTSTATUS value, such as the following: 
@@ -73,6 +77,7 @@ Pointer to a caller-allocated variable that receives the address of a newly allo
 </dl><b>FltGetTunneledName</b> encountered a pool allocation failure. This is an error code. 
 
  
+
 
 ## -remarks
 File systems, such as NTFS and FAT, use a per-volume tunnel cache to briefly preserve file names and other metadata for files that are being renamed, linked to, or deleted. File name tunneling can cause the final component in normalized file name information returned by a preoperation call to <a href="ifsk.fltgetfilenameinformation">FltGetFileNameInformation</a>, <a href="ifsk.fltgetfilenameinformationunsafe">FltGetFileNameInformationUnsafe</a>, or <a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a> to be invalidated. If a minifilter driver retrieves normalized file name information in the preoperation callback routine (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) for a create, hard-link, or rename operation, it must call <b>FltGetTunneledName</b> from its postoperation callback routine (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) to retrieve the correct file name information for the file. 
@@ -105,11 +110,13 @@ The caller must not modify the contents of the structure returned in the <i>RetT
 
 For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,6 +127,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +138,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -140,6 +149,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -150,9 +160,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -191,5 +203,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetTunneledName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

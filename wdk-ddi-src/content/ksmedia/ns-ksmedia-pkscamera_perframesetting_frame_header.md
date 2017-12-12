@@ -41,6 +41,7 @@ req.irql:
 This structure contains the header information for a frame in a per-frame settings payload.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct {
 
 The size of this header, all the item headers, value payloads, custom items, and custom data for this frame.
 
+
 ### -field Id
 
 The frame ID in the range of 0 and KSCAMERA_PERFRAMESETTING_HEADER.FrameCount - 1.
+
 
 ### -field ItemCount
 
 The number of item settings for this frame. The value 0 indicates using global settings for this frame.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

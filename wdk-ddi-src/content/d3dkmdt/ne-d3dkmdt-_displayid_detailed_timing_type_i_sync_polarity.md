@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_sync_polarity.htm
 old-project: display
 ms.assetid: 6563d4f7-3750-49c1-80f5-14a839e70cb7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY enumeration indicates the display device's sync polarity (whether the sync signal is positive or negative).
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY {
 
 Indicates that the sync polarity is positive.
 
+
 ### -field DIDDT1_Sync_Negative
 
 Indicates that the sync polarity is negative.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ Indicates that the sync polarity is negative.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

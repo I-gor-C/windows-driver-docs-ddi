@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Notifies UFX when the client driver receives a setup packet from the host.
 
 
+
 ## -syntax
 
 ````
@@ -58,29 +59,36 @@ VOID UfxEndpointNotifySetup(
 
 A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
 
+
 ### -param SetupInfo [in]
 
 A pointer to a USB setup packet described in a <b>USB_DEFAULT_PIPE_SETUP_PACKET</b> structure (defined in Usbspec.h).
 
+
 ## -returns
 This method does not return a value.
 
+
 ## -remarks
 The following example shows how to handle setup packet completion.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,9 +99,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

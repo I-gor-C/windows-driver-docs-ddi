@@ -44,6 +44,7 @@ req.product: Windows 10 or later.
                 Defines generic alert values that are used to indicate the type of hardware alert received on the port controller.
 
 
+
 ## -syntax
 
 ````
@@ -73,11 +74,13 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                         
                     The alert is invalid.
 
+
 ### -field UcmTcpciPortControllerAlertCCStatus
 
 Indicates a
                         
                     CC status change alert.
+
 
 ### -field UcmTcpciPortControllerAlertPowerStatus
 
@@ -87,11 +90,13 @@ Indicates a
                         
                     
 
+
 ### -field UcmTcpciPortControllerAlertReceiveSOPMessageStatus
 
 
                         
                     Indicates an SOP message alert.
+
 
 ### -field UcmTcpciPortControllerAlertReceivedHardReset
 
@@ -99,11 +104,13 @@ Indicates a
                         
                     Indicates a hard Reset alert.
 
+
 ### -field UcmTcpciPortControllerAlertTransmitSOPMessageFailed
 
 
                         
                     Indicates that the SOP message transmission was not successful.
+
 
 ### -field UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded
 
@@ -111,11 +118,13 @@ Indicates that the
                         
                     SOP message transmission was not sent due to an incoming receive message. 
 
+
 ### -field UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful
 
 
                         
                     Indicates that the SOP message transmission was successful.
+
 
 ### -field UcmTcpciPortControllerAlertVbusVoltageAlarmHi
 
@@ -123,11 +132,13 @@ Indicates that the
                         
                     Indicates a high-voltage alarm.
 
+
 ### -field UcmTcpciPortControllerAlertVbusVoltageAlarmLo
 
 
                         
                     Indicates a low-voltage alarm.
+
 
 ### -field UcmTcpciPortControllerAlertFault
 
@@ -135,17 +146,20 @@ Indicates that the
                         
                     Indicates that a Fault has occurred. 
 
+
 ### -field UcmTcpciPortControllerAlertRxBufferOverflow
 
 Indicates that the
                         
                      TCPC Rx buffer has overflowed.
 
+
 ### -field UcmTcpciPortControllerAlertVbusSinkDisconnectDetected
 
 
                         
                     Indicates that a VBUS Sink Disconnect Threshold crossing has been detected 
+
 
 ## -remarks
 
@@ -155,6 +169,7 @@ Indicates that the
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,5 +186,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

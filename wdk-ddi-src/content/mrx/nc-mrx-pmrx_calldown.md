@@ -41,6 +41,7 @@ req.irql:
 The <i>MRxCleanupFobx</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request the network mini-redirector to close a file system object extension. RDBSS issues this call in response to receiving an <a href="ifsk.irp_mj_cleanup">IRP_MJ_CLEANUP</a> request on a file object.
 
 
+
 ## -prototype
 
 ````
@@ -59,6 +60,7 @@ NTSTATUS MRxCleanupFobx(
 
 A pointer to the RX_CONTEXT structure. This parameter contains the IRP that is requesting the operation. 
 
+
 ## -returns
 <i>MRxCleanupFobx</i> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as the following: 
 <dl>
@@ -67,16 +69,19 @@ A pointer to the RX_CONTEXT structure. This parameter contains the IRP that is r
 
  
 
+
 ## -remarks
 <i>MRxCleanupFobx</i> is called by RDBSS as part of cleanup and close operations on a file object. 
 
 <i>MRxCleanupFobx</i> cannot return a value of STATUS_RETRY indicating that the call should be retried. If a retry loop is necessary, it must be handled internally in the <i>MRxCleanupFobx</i> routine by the network mini-redirector.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -142,5 +148,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxCleanupFobx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

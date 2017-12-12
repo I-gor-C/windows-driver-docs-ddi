@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>FltRequestOperationStatusCallback</b> returns status information for the given I/O operation. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS FltRequestOperationStatusCallback(
 
 A pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param CallbackRoutine [in]
 
 A pointer to a callback routine that the Filter Manager calls after <a href="kernel.iocalldriver">IoCallDriver</a> returns. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param RequesterContext [in, optional]
 
 A context pointer to be passed to the <i>CallbackRoutine</i>. This parameter is optional and can be <b>NULL</b>. 
+
 
 ## -returns
 <b>FltRequestOperationStatusCallback</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
@@ -79,6 +83,7 @@ A context pointer to be passed to the <i>CallbackRoutine</i>. This parameter is 
 </dl><b>FltRequestOperationStatusCallback</b> was called from a routine that was not a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine, or the I/O operation was an IRP_MJ_CLOSE request. This is an error code. 
 
  
+
 
 ## -remarks
 A minifilter driver can call <b>FltRequestOperationStatusCallback</b> for an IRP-based I/O operation to obtain the status value that <a href="kernel.iocalldriver">IoCallDriver</a> returned for the operation. 
@@ -99,11 +104,13 @@ In the example, the read buffer is changed after the call to <b>FltRequestOperat
 
 The Filter Manager calls the given <i>CallbackRoutine</i> in the context of the originating thread at IRQL &lt;= APC_LEVEL. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +121,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +132,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +143,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -144,9 +154,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -176,5 +188,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRequestOperationStatusCallback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

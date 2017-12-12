@@ -7,7 +7,7 @@ old-location: display\dxgkddi_updatehwcontextstate.htm
 old-project: display
 ms.assetid: 1187A302-CD7D-418E-B48F-74D1FF29C991
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: requires_(PASSIVE_LEVEL)
 Used to update the hardware context state.
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS APIENTRY DXGKDDI_UPDATEHWCONTEXTSTATE(
 
 A handle to the generated adapter.
 
+
 ### -param pUpdateHwContextState [in]
 
 A pointer used by the function to update the hardware context state.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -82,9 +87,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 requires_(PASSIVE_LEVEL)
+
 </td>
 </tr>
 </table>

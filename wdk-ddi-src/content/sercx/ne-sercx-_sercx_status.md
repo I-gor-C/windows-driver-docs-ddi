@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 7EF129C7-25C3-49D2-8FC5-FFA1C4E77935
 ms.author: windowsdriverdev
 ms.date: 10/23/2017
-ms.keywords: _SERCX_STATUS, SERCX_STATUS, *PSERCX_STATUS
+ms.keywords: _SERCX_STATUS, *PSERCX_STATUS, SERCX_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SERCX_STATUS</b> enumeration indicates the status of a serial receive or transmit operation.
 
 
+
 ## -syntax
 
 ````
@@ -59,30 +60,37 @@ typedef enum _SERCX_STATUS {
 
 The operation is proceeding successfully.
 
+
 ### -field SerCxStatusCancelled
 
 The operation was canceled.
+
 
 ### -field SerCxStatusTimeout
 
 The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>.
 
+
 ## -remarks
 The <a href="serports.sercxprogressreceive">SerCxProgressReceive</a> and <a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERCX_STATUS enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\iddcx_transmission_type.htm
 old-project: display
 ms.assetid: fc0a6c04-a348-470d-b8eb-9564f2ff7ef9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_TRANSMISSION_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Enum used to indicate the link type for transmission of the video data
                 
 
 
+
 ## -syntax
 
 ````
@@ -69,11 +70,13 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                         
                     Indicates that an <b>IDDCX_TRANSMISSION_TYPE</b> variable has not yet been assigned a meaningful value.
 
+
 ### -field IDDCX_TRANSMISSION_TYPE_WIRED_USB
 
 
                         Video data is being transmitted over wired USB
                     
+
 
 ### -field IDDCX_TRANSMISSION_TYPE_WIRED_MIRACAST
 
@@ -81,11 +84,13 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                         Video data is being transmitted over wired Miracast link
                     
 
+
 ### -field IDDCX_TRANSMISSION_TYPE_WIRED_OTHER
 
 
                         Video data is being transmitted over a wired connect not already described
                     
+
 
 ### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_MAUSB
 
@@ -93,11 +98,13 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                         Video data is being transmitted over wireless MA-USB
                     
 
+
 ### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_USB_OTHER
 
 
                         Video data is being transmitted over wireless network not using MA-USB but the device is enumerated on the USB bus
                     
+
 
 ### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_WIFI_OTHER
 
@@ -105,11 +112,13 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                         Video data is being transmitted over a WiFi wireless network
                     
 
+
 ### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_MIRACAST
 
 
                         Video data is being transmitted over wireless Miracast link
                     
+
 
 ### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_OTHER
 
@@ -117,11 +126,13 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                         Video data is being transmitted over a non-WiFi wireless network not described above
                     
 
+
 ### -field IDDCX_TRANSMISSION_TYPE_OTHER
 
 
                         Video data is being transmitted over a link type that is not covered by the above defines
                     
+
 
 ## -remarks
 
@@ -131,6 +142,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

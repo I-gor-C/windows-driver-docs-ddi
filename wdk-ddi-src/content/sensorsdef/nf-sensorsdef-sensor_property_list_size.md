@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This function returns the size of the property list.
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ FORCEINLINE ULONG SENSOR_PROPERTY_LIST_SIZE(
 
 The number of PROPERTYKEY elements.
 
+
 ## -returns
 The <b>SENSOR_PROPERTY_LIST_SIZE</b> function returns a ULONG value that represents the size of the property list.
+
 
 ## -remarks
 
@@ -68,6 +71,7 @@ The <b>SENSOR_PROPERTY_LIST_SIZE</b> function returns a ULONG value that represe
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,6 +82,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: smartcrd\ioctl_smartcard_swallow.htm
 old-project: smartcrd
 ms.assetid: c229769d-8798-436e-bd26-9dfd507fba9c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: GdiStartPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,10 @@ req.product: Windows 10 or later.
 
 The IOCTL_SMARTCARD_SWALLOW request causes the smart card reader to swallow the card.
 
+
+
 The IOCTL_SMARTCARD_SWALLOW request causes the smart card reader to swallow the card.
+
 
 
 ## -ioctlparameters
@@ -50,12 +53,14 @@ The IOCTL_SMARTCARD_SWALLOW request causes the smart card reader to swallow the 
 ### -input-buffer
 None 
 
+
 ### -input-buffer-length
 
 <text></text>
 
 ### -output-buffer
 None 
+
 
 ### -output-buffer-length
 
@@ -91,16 +96,19 @@ The reader does not support swallowing.
 
  
 
+
 ## -remarks
 The <b>Information</b> member must be set to zero.
 
 The <b>Status</b> member is set to one of the values in the status block table.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

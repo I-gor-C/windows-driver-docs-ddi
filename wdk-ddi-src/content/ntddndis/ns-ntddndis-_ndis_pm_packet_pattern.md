@@ -7,8 +7,8 @@ old-location: netvista\ndis_pm_packet_pattern.htm
 old-project: netvista
 ms.assetid: dfda0b5f-06fc-4e94-b14c-6bd32c2c138a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN
+ms.date: 12/8/2017
+ms.keywords: _NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The NDIS_PM_PACKET_PATTERN structure specifies a wake-up pattern, which, when de
   has pattern-match enabled, causes the network adapter to signal a power-management wake-up event.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ typedef struct _NDIS_PM_PACKET_PATTERN {
 
 This member is reserved.
 
+
 ### -field Reserved
 
 This member is reserved.
+
 
 ### -field MaskSize
 
@@ -72,18 +75,22 @@ Specifies the size in bytes of the pattern mask that immediately follows the
      NDIS_PM_PACKET_PATTERN structure in the 
      <i>InformationBuffer</i>.
 
+
 ### -field PatternOffset
 
 Specifies in bytes the offset from the beginning of the 
      <i>InformationBuffer</i> to the start of the wake-up pattern.
 
+
 ### -field PatternSize
 
 Specifies in bytes the size of the wake-up pattern.
 
+
 ### -field PatternFlags
 
 These flags are reserved.
+
 
 ## -remarks
 NDIS_PM_PACKET_PATTERN is supplied in the 
@@ -115,11 +122,13 @@ A protocol uses this OID to request a list of the wake-up patterns currently set
       driver's network adapter. Each wake-up pattern, along with its mask, is described by an NDIS_PM_PACKET_PATTERN
       structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -127,11 +136,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NDIS_PM_PACKET_PATTERN (NDIS
    5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,5 +168,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PACKET_PATTERN structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PACKET_PATTERN structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

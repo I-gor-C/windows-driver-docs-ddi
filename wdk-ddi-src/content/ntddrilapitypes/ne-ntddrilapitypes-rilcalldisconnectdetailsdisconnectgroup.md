@@ -7,7 +7,7 @@ old-location: netvista\rilcalldisconnectdetailsdisconnectgroup.htm
 old-project: netvista
 ms.assetid: d546e936-f8c6-45ad-8027-a8495b4633dc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCALLDISCONNECTDETAILSDISCONNECTGROUP, RILCALLDISCONNECTDETAILSDISCONNECTGROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -87,6 +88,7 @@ typedef enum _RILCALLDISCONNECTDETAILSDISCONNECTGROUP {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

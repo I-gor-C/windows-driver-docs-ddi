@@ -7,7 +7,7 @@ old-location: print\gdiresetdcemf.htm
 old-project: print
 ms.assetid: ea97cc22-6057-427d-90c1-4f23ced932aa
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: GdiResetDCEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>GdiResetDCEMF</b> function resets a printer's device context during playback of a spooled EMF print job.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ BOOL GdiResetDCEMF(
 
 Caller-supplied spool file handle, obtained by a previous call to <a href="print.gdigetspoolfilehandle">GdiGetSpoolFileHandle</a>.
 
+
 ### -param pCurrDM 
 
 Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure, obtained by a previous call to <a href="print.gdigetdevmodeforpage">GdiGetDevmodeForPage</a>.
 
+
 ## -returns
 If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the function returns <b>FALSE</b>.
+
 
 ## -remarks
 The <b>GdiResetDCEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> function.
@@ -72,11 +76,13 @@ Print processors must call <b>GdiResetDCEMF</b> whenever it is necessary to rese
 
 For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +93,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +115,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

@@ -41,19 +41,24 @@ req.irql:
 The <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request registers the IOCTL initiator to be notified about a power meter event. When the event occurs, the Power Meter Interface (PMI) completes the IOCTL request and returns information about the event.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 The <b>AssociatedIrp.SystemBuffer</b> member of the I/O request packet (IRP) points to an initiator-allocated input buffer that contains a <a href="powermeter.pmi_event">PMI_EVENT</a> structure.
 
+
 ### -input-buffer-length
 The <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IRP's current I/O stack location (<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>) is set to the size in bytes of the input buffer that is pointed to by the <b>AssociatedIrp.SystemBuffer</b> member. This size must be greater than or equal to <b>sizeof</b>(<b>PMI_EVENT</b>) or the request will fail with an error status of STATUS_BUFFER_TOO_SMALL.
+
 
 ### -output-buffer
 None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -77,6 +82,7 @@ The WDM driver that supports the PMI interface has put the IOCTL request in a qu
 
 The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="kernel.irp">IRP</a> is less than the size, in bytes, of a <a href="powermeter.pmi_event">PMI_EVENT</a> structure. 
 
+
 ## -remarks
 PMI creates an event notification queue for each initiator that opens the device instance for a power meter by using the <a href="fs.createfile">CreateFile</a> function. A separate queue is created for each caller's connection to a device instance. The following points apply to the event notification queue:
 
@@ -90,19 +96,23 @@ When PMI sends a power meter event to the caller, it completes the <b>IOCTL_PMI_
 
 For more information about the <a href="fs.createfile">CreateFile</a> and <b>CloseFile</b> functions, refer to the Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +138,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20IOCTL_PMI_REGISTER_EVENT_NOTIFY control code%20 RELEASE:%20(11/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

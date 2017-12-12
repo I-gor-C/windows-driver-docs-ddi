@@ -7,7 +7,7 @@ old-location: storage\srbex_data_pnp.htm
 old-project: storage
 ms.assetid: CB64AF68-C40D-44F0-8F52-6BF05E23E5E1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SRBEX_DATA_PNP, *PSRBEX_DATA_PNP, SRBEX_DATA_PNP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SRBEX_DATA_PNP</b> structure contains the request data for an extended plug and play (PNP) SRB.
 
 
+
 ## -syntax
 
 ````
@@ -63,21 +64,26 @@ typedef struct _SRBEX_DATA_PNP {
 
 Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypePnp</b>.
 
+
 ### -field Length
 
 Length of the data in this structure starting with the <b>PnPSubFunction</b> member. Set to SRBEX_DATA_PNP_LENGTH.
+
 
 ### -field PnPSubFunction
 
 This member is not currently used. Set to 0.
 
+
 ### -field Reserved
 
 This member is reserved. Set to 0.
 
+
 ### -field PnPAction
 
 The plug and play action to perform. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -91,6 +97,7 @@ The plug and play action to perform. This member can have one of the following v
 </td>
 <td width="60%">
 Start the device.
+
 </td>
 </tr>
 <tr>
@@ -101,6 +108,7 @@ Start the device.
 </td>
 <td width="60%">
 Remove the device.
+
 </td>
 </tr>
 <tr>
@@ -111,6 +119,7 @@ Remove the device.
 </td>
 <td width="60%">
 Stop the device.
+
 </td>
 </tr>
 <tr>
@@ -121,6 +130,7 @@ Stop the device.
 </td>
 <td width="60%">
 Query the capabilities of the device.
+
 </td>
 </tr>
 <tr>
@@ -131,6 +141,7 @@ Query the capabilities of the device.
 </td>
 <td width="60%">
 Query the resource requirements for the device.
+
 </td>
 </tr>
 <tr>
@@ -141,6 +152,7 @@ Query the resource requirements for the device.
 </td>
 <td width="60%">
 Filter the resource requirements for the device. 
+
 </td>
 </tr>
 <tr>
@@ -151,18 +163,22 @@ Filter the resource requirements for the device.
 </td>
 <td width="60%">
 Surprise Removal of the device. This value is available starting with Windows 7.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field SrbPnPFlags
 
 Indicates that the PNP request is for the adapter if SRB_PNP_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>SrbPnPFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="storage.storage_request_block">STORAGE_REQUEST_BLOCK</a> structure.
 
+
 ### -field Reserved1
 
 This member is reserved. Set to 0.
+
 
 ## -remarks
 
@@ -172,14 +188,17 @@ This member is reserved. Set to 0.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -196,5 +215,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA_PNP structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA_PNP structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ The <b>IOCTL_LAMP_GET_CAPABILITIES_COLOR</b>
    control code queries the capabilities of the lamp when the device is configured to emit color light.
 
 
+
 ## -syntax
 
 ````
@@ -55,15 +56,19 @@ The <b>IOCTL_LAMP_GET_CAPABILITIES_COLOR</b>
 ### -input-buffer
 <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> points to a buffer of type <a href="..\lamp\ns-lamp-lamp_capabilities_color.md">LAMP_CAPABILITIES_COLOR</a>.
 
+
 ### -input-buffer-length
 Length of the buffer.
+
 
 ### -output-buffer
 <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> is filled with all capabilities supported by the lamp hardware.
 
 
+
 ### -output-buffer-length
 <code>IO_STACK_LOCATION.Parameters.DeviceIoControl.OutputBufferLength</code> is the length of the buffer (in bytes) passed in the <code>Irp-&gt;AssociatedIrp.SystemBuffer</code> field.
+
 
 
 ### -in-out-buffer
@@ -78,6 +83,7 @@ Length of the buffer.
 I/O Status block
 The driver sets <code>Irp-&gt;IoStatus.Status</code> to <b>STATUS_SUCCESS</b> or the appropriate error status. It will set <code>Irp-&gt;IoStatus.Information</code> to the number of bytes required to hold the buffer.
 
+
 ## -remarks
 The payload of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_capabilities_color.md">LAMP_CAPABILITIES_COLOR</a> structure.
 
@@ -85,11 +91,13 @@ The <b>IsSupported</b> field indicates whether the lamp can emit color light. If
 
 The <b>IsLightIntensityAdjustable</b> field indicates whether the luminance level can be programmed. If the lamp does not support color light (<b>IsSupported</b> evaluates to <b>FALSE</b>), a client should discard the value of <b>IsLightIntensityAdjustable</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: wdf\completionroutine.htm
 old-project: wdf
 ms.assetid: 7d3eb4d6-9fc7-4924-9b95-f5824713049b
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 A driver's <i>CompletionRoutine</i> event callback function executes when another driver completes a specified I/O request.
+
 
 
 ## -prototype
@@ -64,20 +66,25 @@ void CompletionRoutine(
 
 A handle to a framework request object that represents the completed I/O request.
 
+
 ### -param Target [in]
 
 A handle to an I/O target object that represents the I/O target that completed the request.
+
 
 ### -param Params [in]
 
 A pointer to a <a href="wdf.wdf_request_completion_params">WDF_REQUEST_COMPLETION_PARAMS</a> structure that contains information about the completed request.
 
+
 ### -param Context [in]
 
 Driver-supplied context information, which the driver specified in a previous call to <a href="wdf.wdfrequestsetcompletionroutine">WdfRequestSetCompletionRoutine</a>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 To register a <i>CompletionRoutine</i> callback function for an I/O request, a driver must call <a href="wdf.wdfrequestsetcompletionroutine">WdfRequestSetCompletionRoutine</a>. For more information about this callback function, see <a href="wdf.completing_i_o_requests">Completing I/O Requests</a>.
@@ -92,11 +99,13 @@ To define a <i>CompletionRoutine</i> callback function that is named <b>MyComple
 
 Then, implement your callback function as follows:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,22 +116,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +147,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -150,5 +166,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_REQUEST_COMPLETION_ROUTINE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_REQUEST_COMPLETION_ROUTINE callback function%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

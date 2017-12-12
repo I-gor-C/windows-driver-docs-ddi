@@ -7,7 +7,7 @@ old-location: wdf\wdfcompaniontargetwdmgetcompanionprocess.htm
 old-project: wdf
 ms.assetid: 589c5076-e283-4cf4-bd9f-52a465794b06
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfCompanionTargetWdmGetCompanionProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
 			For internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -65,14 +66,17 @@ PEPROCESS WdfCompanionTargetWdmGetCompanionProcess(
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -83,9 +87,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

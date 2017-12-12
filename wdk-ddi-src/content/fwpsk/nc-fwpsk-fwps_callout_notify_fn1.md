@@ -7,7 +7,7 @@ old-location: netvista\notifyfn1.htm
 old-project: netvista
 ms.assetid: 3f377049-cc5f-427d-9b09-5e49e4b305c5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The filter engine calls a callout's
   callout.
 
 
+
 ## -prototype
 
 ````
@@ -66,19 +67,24 @@ A value that indicates the type of notification that the filter engine is sendin
      
 
 
+
+
 ### -param FWPS_CALLOUT_NOTIFY_ADD_FILTER
 
 A filter is being added to the filter engine that specifies the callout for the filter's
        action.
+
 
 ### -param FWPS_CALLOUT_NOTIFY_DELETE_FILTER
 
 A filter is being deleted from the filter engine that specifies the callout for the filter's
        action.
 
+
 ### -param FWPS_CALLOUT_NOTIFY_TYPE_MAX
 
 A maximum value for testing purposes.
+
 </dd>
 </dl>
 
@@ -88,12 +94,14 @@ A pointer to the management identifier for the filter, as specified by the appli
      that is adding or deleting the filter. Must be <b>NULL</b> if the 
      <i>notifyType</i> parameter is set to FWPS_CALLOUT_NOTIFY_DELETE_FILTER. For more information, see Remarks.
 
+
 ### -param filter [in]
 
 A pointer to an 
      <a href="netvista.fwps_filter1">FWPS_FILTER1</a> structure. This structure
      describes the filter that is being added to or deleted from the filter engine.
      
+
 A callout driver's 
      <i>notifyFn1</i> function can set the 
      <b>Context</b> member of this structure to point to a callout driver-supplied context structure when the
@@ -103,9 +111,11 @@ A callout driver's
      any driver-specific data or state information between calls by the filter engine to the callout driver's
      
      <i>classifyFn1</i> callout function.
+
 A callout driver's 
      <i>notifyFn1</i> function can clean up any context associated with the filter when the filter is deleted
      from the filter engine.
+
 
 ## -returns
 A callout's 
@@ -122,6 +132,7 @@ A callout's
        the filter engine.
 
  
+
 
 ## -remarks
 A callout driver registers a callout's callout functions with the filter engine by calling the 
@@ -156,19 +167,23 @@ When a filter that specifies a callout for the filter's action is deleted from t
     <i>filterKey</i> parameter. For more information, see 
     <a href="netvista.processing_notify_callouts">Processing Notify Callouts</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -179,9 +194,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -211,5 +228,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN1 callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN1 callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

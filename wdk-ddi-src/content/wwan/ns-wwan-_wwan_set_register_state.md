@@ -7,8 +7,8 @@ old-location: netvista\wwan_set_register_state.htm
 old-project: netvista
 ms.assetid: 617e80c2-2823-4393-81eb-b2cbd2b21be8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE, WWAN_SET_REGISTER_STATE
+ms.date: 12/8/2017
+ms.keywords: _WWAN_SET_REGISTER_STATE, WWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The WWAN_SET_REGISTER_STATE structure represents the command to set the MB devic
   and the network provider it should register with.
 
 
+
 ## -syntax
 
 ````
@@ -60,15 +61,18 @@ typedef struct _WWAN_SET_REGISTER_STATE {
 
 A NULL-terminated numeric (0-9) string that represents the network provider identity.
      
+
 For GSM-based networks, this string is a concatenation of a three-digit Mobile Country Code (MCC) and
      a two or three-digit Mobile Network Code (MNC). GSM-based carriers may have more than one MNC, and hence
      more than one 
      <b>ProviderId</b> .
+
 For CDMA-based networks, this string is a five-digit System ID (SID). Generally, a CDMA-based carrier
      has more than one SID. Typically, the carrier has one SID for each market, which is usually divided
      geographically within a nation by regulations, such as Metropolitan Statistical Areas (MSA) in the
      United States of America. Miniport drivers of CDMA-based devices must specify
      WWAN_CDMA_DEFAULT_PROVIDER_ID if this information is not available.
+
 
 ### -field RegisterAction
 
@@ -77,6 +81,7 @@ The registration action that the miniport driver is requested to perform. If thi
      <b>WwanRegisterActionAutomatic</b>, the 
      <b>ProviderId</b> member should be ignored.
 
+
 ### -field WwanDataClass
 
 A bitmap that represents the data access technologies that are preferred for a connection. For a
@@ -84,10 +89,12 @@ A bitmap that represents the data access technologies that are preferred for a c
      <b>WwanDataClass</b> member of 
      <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
      
+
 When multiple data-classes are set as preferred, miniport drivers are expected register to the
      highest available data-class technology that is currently visible. Miniport drivers should attempt to
      register the best available data-class as requested. If the device cannot register the data-class
      specified in this member, it should register the best available data-class.
+
 
 ## -remarks
 
@@ -97,14 +104,17 @@ When multiple data-classes are set as preferred, miniport drivers are expected r
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,5 +134,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SET_REGISTER_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SET_REGISTER_STATE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

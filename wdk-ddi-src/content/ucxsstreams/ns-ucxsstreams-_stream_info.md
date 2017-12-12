@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This structure stores information about a stream associated with a bulk endpoint.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _STREAM_INFO {
 
 The size in bytes of this structure.
 
+
 ### -field WdfQueue
 
 A handle to the framework queue object that contains streams.
 
+
 ### -field StreamId
 
 The stream identifier. The open-static streams request obtains stream identifiers that are assigned by the USB driver stack.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ The stream identifier. The open-static streams request obtains stream identifier
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

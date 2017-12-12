@@ -41,6 +41,7 @@ req.irql:
 The <b>KSCAMERA_MAXVIDEOFPS_FORPHOTORES</b> structure contains the property data for maximum frame rate at a particular resolution for a camera supporting preview and capture. This structure is used when setting or retrieving the data for the <b>KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES</b> extended control property.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
 
 The photo resolution width in pixels.
 
+
 ### -field PhotoResHeight
 
 The photo resolution height in pixels.
+
 
 ### -field PreviewFPSNum
 
 The numerator value of the preview frame rate.
 
+
 ### -field PreviewFPSDenom
 
 The denominator value of the preview frame rate.
+
 
 ### -field CaptureFPSNum
 
 The numerator value of the capture frame rate.
 
+
 ### -field CaptureFPSDenom
 
 The denominator value of the capture frame rate.
+
 
 ## -remarks
 When setting the property, using a KSPROPERTY_TYPE_SET  request, the <b>PhotoResWidth</b> and <b>PhotoResHeight</b> members are  supplied by the application based on the available photo media types.  The camera driver must retain this resolution information internally.  The preview and capture frame rate members must be ignored by the driver on KSPROPERTY_TYPE_SET requests.
@@ -92,27 +99,33 @@ If preview or capture are not supported, such as the case when the camera is a d
 
 If <b>KSCAMERA_EXTENDEDPROP_PHOTOMODE_SEQUENCE</b> is supported on the <i>Photo Mode Control</i> by the camera driver, this control is mandatory.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

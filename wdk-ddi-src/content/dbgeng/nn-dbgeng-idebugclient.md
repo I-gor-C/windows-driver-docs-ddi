@@ -7,7 +7,7 @@ old-location: debugger\idebugclient.htm
 old-project: debugger
 ms.assetid: 2e47f7ae-2017-4f05-9a06-6c09bb401e21
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -158,6 +158,7 @@ Creates a user-mode or kernel-mode crash dump file.
 
  
 
+
 ## -members
 The <b>IDebugClient</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -172,6 +173,7 @@ The <b>IDebugClient</b> interface has these methods.
 <td align="left" width="63%">
 Adds the process options to those options that affect the current process.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -181,6 +183,7 @@ Adds the process options to those options that affect the current process.
 <td align="left" width="63%">
 Connects the debugger engine to a kernel target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -189,6 +192,7 @@ Connects the debugger engine to a kernel target.
 </td>
 <td align="left" width="63%">
 Connects the debugger engine to a user-mode process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -197,6 +201,7 @@ Connects the debugger engine to a user-mode process.
 </td>
 <td align="left" width="63%">
 Connects to a process server.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -205,6 +210,7 @@ Connects to a process server.
 </td>
 <td align="left" width="63%">
 Joins the client to an existing debugger session.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -213,6 +219,7 @@ Joins the client to an existing debugger session.
 </td>
 <td align="left" width="63%">
 Creates a new client object for the current thread.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -222,6 +229,7 @@ Creates a new client object for the current thread.
 <td align="left" width="63%">
 Creates a process from the specified command line.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -230,6 +238,7 @@ Creates a process from the specified command line.
 </td>
 <td align="left" width="63%">
  Create a process from a specified command line, then attaches to another user-mode process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -239,6 +248,7 @@ Creates a process from the specified command line.
 <td align="left" width="63%">
 Detaches the debugger engine from all processes in all targets, resuming all their threads.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -247,6 +257,7 @@ Detaches the debugger engine from all processes in all targets, resuming all the
 </td>
 <td align="left" width="63%">
 Disconnects the debugger engine from a process server.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -256,6 +267,7 @@ Disconnects the debugger engine from a process server.
 <td align="left" width="63%">
 Enables the debugger engine to use the current thread for callbacks.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -264,6 +276,7 @@ Enables the debugger engine to use the current thread for callbacks.
 </td>
 <td align="left" width="63%">
 Ends the current debugger session.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -272,6 +285,7 @@ Ends the current debugger session.
 </td>
 <td align="left" width="63%">
 Causes the <a href="debugger.dispatchcallbacks">DispatchCallbacks</a> method to return.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -280,6 +294,7 @@ Causes the <a href="debugger.dispatchcallbacks">DispatchCallbacks</a> method to 
 </td>
 <td align="left" width="63%">
  Forces any remaining buffered output to be delivered to the <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a> object registered with this client.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -288,6 +303,7 @@ Causes the <a href="debugger.dispatchcallbacks">DispatchCallbacks</a> method to 
 </td>
 <td align="left" width="63%">
 Returns the event callbacks object registered with this client.
+
 
 </td>
 </tr>
@@ -298,6 +314,7 @@ Returns the event callbacks object registered with this client.
 <td align="left" width="63%">
 Returns the exit code of the current process if that process has already run through to completion.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -307,6 +324,7 @@ Returns the exit code of the current process if that process has already run thr
 <td align="left" width="63%">
 Returns a string describing the computer and user this client represents.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -315,6 +333,7 @@ Returns a string describing the computer and user this client represents.
 </td>
 <td align="left" width="63%">
 Returns the input callbacks object registered with this client.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -323,6 +342,7 @@ Returns the input callbacks object registered with this client.
 </td>
 <td align="left" width="63%">
 Returns the connection options for the current kernel target.
+
 
 </td>
 </tr>
@@ -333,6 +353,7 @@ Returns the connection options for the current kernel target.
 <td align="left" width="63%">
 Returns the output mask for another client.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -342,11 +363,13 @@ Returns the output mask for another client.
 <td align="left" width="63%">
 Returns the output callbacks object registered with the client.
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetOutputLinePrefix</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -356,11 +379,13 @@ Returns the output callbacks object registered with the client.
 </td>
 <td align="left" width="63%">
 Returns the output mask currently set for the client.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetOutputWidth</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -371,6 +396,7 @@ Returns the output mask currently set for the client.
 <td align="left" width="63%">
 Retrieves the process options affecting the current process.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -379,6 +405,7 @@ Retrieves the process options affecting the current process.
 </td>
 <td align="left" width="63%">
 Returns a description of the process that includes the executable image name, the service names, the MTS package names, and the command line.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -388,6 +415,7 @@ Returns a description of the process that includes the executable image name, th
 <td align="left" width="63%">
  Searches for a process with a given executable file name and return its process ID.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -396,6 +424,7 @@ Returns a description of the process that includes the executable image name, th
 </td>
 <td align="left" width="63%">
  Returns the process IDs for each running process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -404,6 +433,7 @@ Returns a description of the process that includes the executable image name, th
 </td>
 <td align="left" width="63%">
 Opens a dump file as a debugger target.
+
 
 </td>
 </tr>
@@ -414,6 +444,7 @@ Opens a dump file as a debugger target.
 <td align="left" width="63%">
  Formats and outputs a string describing the computer and user this client represents.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -422,6 +453,7 @@ Opens a dump file as a debugger target.
 </td>
 <td align="left" width="63%">
 Lists the servers running on a given computer.
+
 
 </td>
 </tr>
@@ -432,6 +464,7 @@ Lists the servers running on a given computer.
 <td align="left" width="63%">
 Removes process options from those options that affect the current process.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -441,6 +474,7 @@ Removes process options from those options that affect the current process.
 <td align="left" width="63%">
 Registers an event callbacks object with this client.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -449,6 +483,7 @@ Registers an event callbacks object with this client.
 </td>
 <td align="left" width="63%">
 Registers an input callbacks object with the client.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -457,6 +492,7 @@ Registers an input callbacks object with the client.
 </td>
 <td align="left" width="63%">
 Updates some of the connection options for a live kernel target.
+
 
 </td>
 </tr>
@@ -467,6 +503,7 @@ Updates some of the connection options for a live kernel target.
 <td align="left" width="63%">
 Sets the output mask for another client.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -475,11 +512,13 @@ Sets the output mask for another client.
 </td>
 <td align="left" width="63%">
 Registers an output callbacks object with this client.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>SetOutputLinePrefix</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -489,11 +528,13 @@ Registers an output callbacks object with this client.
 </td>
 <td align="left" width="63%">
 Sets the output mask for the client.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>SetOutputWidth</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -503,6 +544,7 @@ Sets the output mask for the client.
 </td>
 <td align="left" width="63%">
 Sets the process options affecting the current process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -511,6 +553,7 @@ Sets the process options affecting the current process.
 </td>
 <td align="left" width="63%">
 Starts a process server.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -520,6 +563,7 @@ Starts a process server.
 <td align="left" width="63%">
  Starts a debugging server.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -528,6 +572,7 @@ Starts a process server.
 </td>
 <td align="left" width="63%">
 Attempts to terminate all processes in all targets.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -536,6 +581,7 @@ Attempts to terminate all processes in all targets.
 </td>
 <td align="left" width="63%">
 Creates a user-mode or kernel-mode crash dump file.
+
 
 </td>
 </tr>
@@ -653,6 +699,7 @@ Creates a user-mode or kernel-mode crash dump file.
 
  
 
+
 ## -remarks
 
 
@@ -661,6 +708,7 @@ Creates a user-mode or kernel-mode crash dump file.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -686,5 +734,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

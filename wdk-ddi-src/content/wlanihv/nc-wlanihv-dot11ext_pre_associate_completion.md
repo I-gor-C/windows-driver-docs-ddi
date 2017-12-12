@@ -7,7 +7,7 @@ old-location: netvista\dot11extpreassociatecompletion.htm
 old-project: netvista
 ms.assetid: e617c0ac-0f02-4e15-ba11-81de6331b83d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,12 +61,14 @@ The handle used by the operating system to reference the wireless LAN (WLAN) ada
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
+
 ### -param hConnectSession [in, optional]
 
 The handle used by the operating system to reference the connection session with the basic service
      set (BSS) network. This handle value was specified through a previous call to the 
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
+
 
 ### -param dwReasonCode [in]
 
@@ -75,11 +77,13 @@ A value that provides additional information for the completion status of the pr
      <i>dwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in 
      L2cmn.h.
      
+
 The IHV Extensions DLL returns the general completion status of the pre-association operation through
      the 
      <i>dwWin32Error</i> parameter. Typically, the IHV Extensions DLL sets 
      <i>dwReasonCode</i> to a value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
      L2_REASON_CODE_GROUP_SIZE-1).
+
 
 ### -param dwWin32Error [in]
 
@@ -87,10 +91,12 @@ The completion status of the pre-association operation as defined by an error co
      Winerror.h. If the operation completes successfully, the IHV Extensions DLL must set 
      <i>dwWin32Error</i> to ERROR_SUCCESS.
 
+
 ## -returns
 If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
      defined in 
      Winerror.h.
+
 
 ## -remarks
 The IHV Extensions DLL must follow these guidelines when calling the 
@@ -126,11 +132,13 @@ The IHV Extensions DLL must call
       Handler functions are called. In this situation, the DLL must set the 
       <i>dwWin32Error</i> parameter to ERROR_CANCELLED.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -141,15 +149,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -180,5 +191,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_PRE_ASSOCIATE_COMPLETION callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_PRE_ASSOCIATE_COMPLETION callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\videoportgetdevicebase.htm
 old-project: display
 ms.assetid: 53665c1d-8c0b-45c7-8d23-13c0964eda39
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortGetDeviceBase
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>VideoPortGetDeviceBase</b> function maps a range of bus-relative device memory or I/O addresses into system space.
 
 
+
 ## -syntax
 
 ````
@@ -60,18 +61,23 @@ PVOID VideoPortGetDeviceBase(
 
 Pointer to the miniport driver's device extension.
 
+
 ### -param IoAddress 
 
 The base physical address of the range to map. You get this bus-relative value by calling <a href="display.videoportgetdevicedata">VideoPortGetDeviceData</a>, <a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a>, or <a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a>. Otherwise, this value is a driver-supplied, default base address for the device memory or I/O ports.
+
 You must have successfully claimed the range described by <i>IoAddress</i> and <i>NumberOfUchars</i> in the registry through a preceding call to <a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a> or <b>VideoPortGetAccessRanges</b>.
+
 
 ### -param NumberOfUchars 
 
 The number of bytes, starting at <i>IoAddress</i>, to map.
 
+
 ### -param InIoSpace 
 
 The location of the <i>IoAddress</i> range. This parameter can be one of the following flags or an ORed, compatible combination of these flags.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -80,41 +86,52 @@ The location of the <i>IoAddress</i> range. This parameter can be one of the fol
 <tr>
 <td>
 VIDEO_MEMORY_SPACE_DENSE
+
 </td>
 <td>
 Obsolete.
+
 </td>
 </tr>
 <tr>
 <td>
 VIDEO_MEMORY_SPACE_IO
+
 </td>
 <td>
 The address range is in I/O space, not in memory space.
+
 </td>
 </tr>
 <tr>
 <td>
 VIDEO_MEMORY_SPACE_MEMORY
+
 </td>
 <td>
 The address range is in memory space, not in I/O space.
+
 </td>
 </tr>
 <tr>
 <td>
 VIDEO_MEMORY_SPACE_P6CACHE
+
 </td>
 <td>
 The processor aggregates a sequence of write operations, sends them to a cache line, and later flushes the cache. This flag is meaningful only when VIDEO_MEMORY_SPACE_IO is not set.
+
 Designates the video memory as write-combined (WC). For information about WC caching, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=204787">Write-Combining Memory in Video Miniport Drivers</a> website article.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 If successful, <b>VideoPortGetDeviceBase</b> returns the base virtual address of the mapping. If the specified bus-relative range cannot be mapped, <b>VideoPortGetDeviceBase</b> returns <b>NULL</b>.
+
 
 ## -remarks
 You can pass the mapped virtual addresses to the <b>VideoPortRead</b><i>Xxx</i>, <b>VideoPortWrite</b><i>Xxx</i>, and <b>VideoPort</b><i>Xxx</i><b>Memory</b> functions, except for <a href="display.videoportmapmemory">VideoPortMapMemory</a> and <a href="display.videoportunmapmemory">VideoPortUnmapMemory</a>.
@@ -137,11 +154,13 @@ Every universal memory architecture (UMA) display device uses a frame buffer tha
 
 If a miniport driver does not support an adapter that it has mapped a logical range for, it must perform two steps before it returns control to the <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a> function: call <a href="display.videoportfreedevicebase">VideoPortFreeDeviceBase</a> to unmap the previously mapped range from system space, and call <a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a> or <a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a> to release its claims on the range in the registry. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -152,14 +171,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -170,6 +192,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -180,6 +203,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -190,9 +214,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -237,5 +263,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortGetDeviceBase function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortGetDeviceBase function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

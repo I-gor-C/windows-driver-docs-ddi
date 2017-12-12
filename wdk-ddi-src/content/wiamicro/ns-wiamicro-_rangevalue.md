@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 18322d1f-9fc9-43f0-925e-616731845792
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _RANGEVALUE, RANGEVALUE, *PRANGEVALUE
+ms.keywords: _RANGEVALUE, *PRANGEVALUE, RANGEVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The RANGEVALUE structure is used by a microdriver to communicate to the WIA Flatbed driver the legal values for a microdriver function parameter.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _RANGEVALUE {
 
 Specifies the minimum value for a parameter.
 
+
 ### -field lMax
 
 Specifies the maximum value for a parameter.
 
+
 ### -field lStep
 
 Specifies the step value for a parameter.
+
 
 ## -remarks
 
@@ -75,14 +79,17 @@ Specifies the step value for a parameter.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

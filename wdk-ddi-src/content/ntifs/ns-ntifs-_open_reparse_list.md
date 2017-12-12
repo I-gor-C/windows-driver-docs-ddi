@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 2477F904-A470-4FB0-83D8-0264A4838C12
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _OPEN_REPARSE_LIST, OPEN_REPARSE_LIST, *POPEN_REPARSE_LIST
+ms.keywords: _OPEN_REPARSE_LIST, *POPEN_REPARSE_LIST, OPEN_REPARSE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.irql:
   structures that specify the tag and possibly GUID that should be  opened directly without returning <b>STATUS_REPARSE</b>.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct _OPEN_REPARSE_LIST {
  A pointer to a list of <b>OPEN_REPARSE_LIST_ENTRY</b>
   structures that specify the tag and possibly GUID that should be  opened directly without returning <b>STATUS_REPARSE</b>.
 
+
 ## -remarks
 
 
@@ -66,22 +68,27 @@ typedef struct _OPEN_REPARSE_LIST {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

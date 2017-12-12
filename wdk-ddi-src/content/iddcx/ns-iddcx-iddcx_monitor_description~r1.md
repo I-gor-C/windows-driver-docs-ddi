@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_description.htm
 old-project: display
 ms.assetid: 3ef7ffca-9192-4578-8397-c7fbb2ea2239
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_MONITOR_DESCRIPTION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Gives information about the current monitor description.
 
 
+
 ## -syntax
 
 ````
@@ -61,11 +62,13 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
                      Total size of the structure.
                  
 
+
 ### -field Type
 
 
                      Type of this monitor description.
                  
+
 
 ### -field DataSize
 
@@ -73,11 +76,13 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
                      The size of the monitor description data.
                  
 
+
 ### -field pData
 
 
                      Pointer to the monitor description data.
                  
+
 
 ## -remarks
 
@@ -87,6 +92,7 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

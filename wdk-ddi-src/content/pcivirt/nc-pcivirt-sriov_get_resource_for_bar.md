@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Gets the translated resource for a specific Base Address Register (BAR)
 
 
+
 ## -prototype
 
 ````
@@ -66,13 +67,16 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param VfIndex [in]
 
 A zero-based index of the VF that is being queried. 
 
+
 ### -param BarIndex [in]
 
 The index of the BAR (between 0 and 5).
+
 
 ### -param Resource [out]
 
@@ -80,9 +84,11 @@ The index of the BAR (between 0 and 5).
                     
                 A pointer to a <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that is filled with the translated hardware resources for the specified BAR.
 
+
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to access  the translated hardware resources of a particular BAR of a virtual function.
@@ -91,27 +97,33 @@ The PF driver registers its implementation by setting the <b>GetResourceForBar</
 
 Here is an example implementation of this callback function. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,9 +134,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@ old-location: display\dxgk_transfervirtualflags.htm
 old-project: display
 ms.assetid: E5323A30-5BBE-4084-9F99-91FBDD680C12
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>DXGK_TRANSFERVIRTUALFLAGS</b> is used as part of an allocation transfer operation.
 
 
+
 ## -syntax
 
 ````
@@ -63,17 +64,21 @@ typedef struct _DXGK_TRANSFERVIRTUALFLAGS {
 
 When set, the source page tables are mapped to  64KB pages.
 
+
 ### -field Dst64KBPages
 
 When set, the destination page tables are mapped to  64KB pages.
+
 
 ### -field Reserved
 
 This member is reserved and should be set to zero.
 
+
 ### -field Flags
 
 The consolidated value of the structure flags.
+
 
 ## -remarks
 
@@ -83,22 +88,27 @@ The consolidated value of the structure flags.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 50AEF454-8E36-4348-9340-330094D2FDF8
 ms.author: windowsdriverdev
 ms.date: 12/2/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic describes the <b>ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX {
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
 
+
 ### -field MethodName[256]
 
 NULL terminated name string.
+
 
 ### -field Size
 
 Defines the <b>ULONG</b> member <b>Size</b>.
 
+
 ### -field ArgumentCount
 
 Defines the <b>ULONG</b> member <b>ArgumentCount</b>.
 
+
 ### -field Argument[ANYSIZE_ARRAY]
 
 Defines the <b>ACPI_METHOD_ARGUMENT_V2</b> member <b>Argument[ANYSIZE_ARRAY]</b>.
+
 
 ## -remarks
 
@@ -84,14 +90,17 @@ Defines the <b>ACPI_METHOD_ARGUMENT_V2</b> member <b>Argument[ANYSIZE_ARRAY]</b>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

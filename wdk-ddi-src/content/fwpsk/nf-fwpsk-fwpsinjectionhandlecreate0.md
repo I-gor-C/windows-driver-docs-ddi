@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectionhandlecreate0.htm
 old-project: netvista
 ms.assetid: 61cee8ef-1070-46d4-a541-94a9f09b593b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpsInjectionHandleCreate0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The
   <a href="netvista.fwpsquerypacketinjectionstate0">FwpsQueryPacketInjectionState0</a> function to query the packet injection state.
 
 
+
 ## -syntax
 
 ````
@@ -65,22 +66,28 @@ The address family for which the injection handle is being created. This can be 
      
 
 
+
+
 ### -param AF_UNSPEC
 
 The address family is unspecified.
+
 
 ### -param AF_INET
 
 The IPv4 address family.
 
+
 ### -param AF_INET6
 
 The IPv6 address family.
+
 </dd>
 </dl>
 For transport, stream, and forward injections, this parameter is optional and can be set to
      AF_UNSPEC, which indicates an unspecified address family. This value is defined in 
      Ws2def.h.
+
 
 ### -param flags [in]
 
@@ -89,11 +96,14 @@ A flag value set by a callout driver to indicate the type of data to be injected
      
 
 
+
+
 ### -param FWPS_INJECTION_TYPE_FORWARD
 
 Packet data will be injected by calling the 
        <a href="netvista.fwpsinjectforwardasync0">
        FwpsInjectForwardAsync0</a> function.
+
 
 ### -param FWPS_INJECTION_TYPE_NETWORK
 
@@ -103,11 +113,13 @@ Network data will be injected by calling either the
        <a href="netvista.fwpsinjectnetworksendasync0">
        FwpsInjectNetworkSendAsync0</a> function.
 
+
 ### -param FWPS_INJECTION_TYPE_STREAM
 
 Stream data will be injected by calling the 
        <a href="netvista.fwpsstreaminjectasync0">
        FwpsStreamInjectAsync0</a> function.
+
 
 ### -param FWPS_INJECTION_TYPE_TRANSPORT
 
@@ -116,15 +128,18 @@ Transport data will be injected by calling either the
        FwpsInjectTransportReceiveAsync0</a> function or the 
        <a href="netvista.fwpsinjecttransportsendasync0">
        FwpsInjectTransportSendAsync0</a> function.
+
 </dd>
 </dl>
  To create an injection handle to be used by multiple injection functions, combine the
      injection type bits with bitwise OR operations. If the flag value is set to zero, the resulting
      injection handle can be used for transport, stream, and forward injections.
 
+
 ### -param injectionHandle [out]
 
 A pointer to a variable that receives the handle.
+
 
 ## -returns
 The 
@@ -141,6 +156,7 @@ The
 </dl>An error occurred.
 
  
+
 
 ## -remarks
 A callout driver calls the 
@@ -162,11 +178,13 @@ When injections are being made to the network layer and both IPv4 and IPv6 addre
     <i>addressFamily</i> set to AF_INET, and a second call with 
     <i>addressFamily</i> set to AF_INET6.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -177,14 +195,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -195,6 +216,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -205,9 +227,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -226,5 +250,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleCreate0 function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleCreate0 function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

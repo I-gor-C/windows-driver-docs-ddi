@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>FsRtlOplockFsctrl</b> performs various opportunistic lock (oplock) operations on behalf of a file system or filter driver. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS FsRtlOplockFsctrl(
 
 Opaque opportunistic lock pointer for the file. This pointer must have been initialized by a previous call to <a href="ifsk.fsrtlinitializeoplock">FsRtlInitializeOplock</a>. 
 
+
 ### -param Irp [in]
 
 Pointer to the IRP for the I/O operation. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param OpenCount [in]
 
 Number of user handles for the file, if an exclusive opportunistic lock is being requested. Setting a nonzero value for a level 2, R, or RH oplock request indicates that there are byte-range locks on the file. For information about oplock types, see <a href="https://msdn.microsoft.com/e9a45ae0-0ec8-4d6c-8486-ae88bdaa1f8c">Oplock Semantics Overview</a>. 
+
 
 ## -returns
 <b>FsRtlOplockFsctrl</b> returns one of the following NTSTATUS values: 
@@ -88,6 +92,7 @@ Number of user handles for the file, if an exclusive opportunistic lock is being
 </dl>A new opportunistic lock (oplock) could not be granted. The IRP is an IRP_MJ_CREATE request and FILE_OPEN_REQUIRING_OPLOCK was specified in the create options parameter for the operation. STATUS_CANNOT_BREAK_OPLOCK is a success code. 
 
  
+
 
 ## -remarks
 File systems and filter drivers call <b>FsRtlOplockFsctrl</b> to perform various opportunistic lock operations for a create or file system control I/O operation. The IRP pointed to by the <i>Irp</i> parameter must be a valid IRP for an <a href="ifsk.irp_mj_file_system_control">IRP_MJ_FILE_SYSTEM_CONTROL</a> or <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a> operation. 
@@ -140,11 +145,13 @@ If the request for a pending filter opportunistic lock is granted, <b>FsRtlOploc
 
 Minifilters should call <a href="ifsk.fltoplockfsctrl">FltOplockFsctrl</a> instead of <b>FsRtlOplockFsctrl</b>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,6 +162,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -165,6 +173,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -175,6 +184,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -185,9 +195,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -244,5 +256,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlOplockFsctrl function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

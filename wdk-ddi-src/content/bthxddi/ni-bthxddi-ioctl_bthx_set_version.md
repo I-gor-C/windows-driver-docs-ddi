@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: FE572606-8F47-4C40-BF74-24D5F667D2EC
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,7 +41,10 @@ req.irql: <= PASSIVE_LEVEL
 
 IOCTL_BTHX_SET_VERSION is used to inform the transport driver of the version of the extensibility interface being used.
 
+
+
 IOCTL_BTHX_SET_VERSION is used to inform the transport driver of the version of the extensibility interface being used.
+
 
 
 ## -ioctlparameters
@@ -55,14 +58,18 @@ The buffer describes a <a href="bltooth.bthx_version">BTHX_VERSION</a> structure
 
 Refer to the WDK Bluetooth samples for more information.
 
+
 ### -input-buffer-length
 The length of the buffer is the size of the <b>BTHX_VERSION</b> structure.
+
 
 ### -output-buffer
 None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -89,24 +96,29 @@ The IOCTL completed successfully.
 
 Any unsuccessful NT status code prevents the driver from loading.
 
+
 ## -remarks
 IOCTL_BTHX_SET_VERSION is a synchronous operation.
 
 Only one version will be selected and set.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,9 +129,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

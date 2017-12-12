@@ -41,6 +41,7 @@ req.irql:
 Given a pointer to the section object pointers for a cached file, the <b>CcGetFileObjectFromSectionPtrs</b> routine returns a pointer to the file object that the cache manager is using for the file.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ PFILE_OBJECT CcGetFileObjectFromSectionPtrs(
 
 Pointer to a structure containing the file object's section object pointers.
 
+
 ## -returns
 A pointer to the file object, or <b>NULL</b> if the file is not cached or is no longer cached.
+
 
 ## -remarks
 The file system is responsible for ensuring that the file object remains valid while in use. It is impossible for the cache manager to guarantee this. 
@@ -66,11 +69,13 @@ By using <b>CcGetFileObjectFromSectionPtrs</b>, you lose some caching functional
 
 For more information about creating mapped sections and views of memory, see <a href="kernel.sections_and_views">Sections and Views</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,6 +86,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +97,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +108,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +128,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcGetFileObjectFromSectionPtrs routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

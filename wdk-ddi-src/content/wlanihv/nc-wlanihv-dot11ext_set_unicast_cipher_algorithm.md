@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetunicastcipheralgorithm.htm
 old-project: netvista
 ms.assetid: 3e8c16ae-8e47-48fe-9df3-d4e582fe5fbb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,18 +59,22 @@ The handle used by the operating system to reference the WLAN adapter. This hand
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
+
 ### -param dwUnicastCipherAlgo [in]
 
 A 
      <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a> enumerator
      value that identifies the unicast cipher algorithm. 
      
+
 If the value is within the range of <b>DOT11_CIPHER_ALGO_IHV_START</b> through DOT11_CIPHER_ALGO_IHV_END,
      the IHV Extensions DLL enables a proprietary cipher algorithm supported by the WLAN adapter.
+
 Otherwise, the DLL is responsible for processing a standard cipher algorithm supported by the
      operating system. In this situation, the operating system is not involved with any aspect of the cipher
      algorithm, including key management and replay protection, over a basic service set (BSS) network
      connection through the WLAN adapter.
+
 
 <div class="alert"><b>Note</b>  The value of 
       <i>dwUnicastCipherAlgo</i> must match the value of a cipher algorithm returned by the Native 802.11
@@ -80,10 +84,12 @@ Otherwise, the DLL is responsible for processing a standard cipher algorithm sup
 <div> </div>
 
 
+
 ## -returns
 If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
      defined in 
      Winerror.h.
+
 
 ## -remarks
 
@@ -93,6 +99,7 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,15 +110,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +149,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_UNICAST_CIPHER_ALGORITHM callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_UNICAST_CIPHER_ALGORITHM callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

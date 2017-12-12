@@ -7,8 +7,8 @@ old-location: netvista\rilphonebookreadystate.htm
 old-project: netvista
 ms.assetid: cd71234b-4b46-4b7b-953b-32e6f014af03
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE
+ms.date: 12/8/2017
+ms.keywords: RILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef struct _RILPHONEBOOKREADYSTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: storage\silo_command.htm
 old-project: storage
 ms.assetid: 4d40ac4b-9aca-4be6-8d4f-db94c3daf4e8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: tagSILO_COMMAND, SILO_COMMAND, *PSILO_COMMAND
+ms.date: 12/8/2017
+ms.keywords: tagSILO_COMMAND, *PSILO_COMMAND, SILO_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure describes a storage silo driver command.
 
 
+
 ## -syntax
 
 ````
@@ -62,9 +63,11 @@ typedef struct tagSILO_COMMAND {
 
 This member contains the 1667 command value.
 
+
 ### -field cbCommandBuffer
 
 This member contains the size of the 1667 command buffer.
+
 
 ### -field rgbCommandBuffer
 
@@ -72,11 +75,13 @@ This member contains the size of the 1667 command buffer.
 ## -remarks
 Together, <b>cbCommandBufferSize</b> and <b>rgbCommandBuffer</b> members indicate the raw data payload for the silo command, and are sent as-is to the device. The structure of the data in this buffer is silo-dependent. The structure is assumed to be shared knowledge between the client issuing this IOCTL and the device firmware implementation of this particular silo.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

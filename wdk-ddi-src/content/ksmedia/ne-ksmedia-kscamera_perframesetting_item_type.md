@@ -41,6 +41,7 @@ req.irql:
 This enumeration contains the different item types for the per-frame settings DDI.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef enum  {
 
 This is an exposure item type.
 
+
 ### -field KSCAMERA_PERFRAMESETTING_ITEM_FLASH
 
 This is a flash item type.
+
 
 ### -field KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_COMPENSATION
 
 This is an exposure compensation type.
 
+
 ### -field KSCAMERA_PERFRAMESETTING_ITEM_ISO
 
 This is an ISO item type.
+
 
 ### -field KSCAMERA_PERFRAMESETTING_ITEM_FOCUS
 
 This is a focus item type.
 
+
 ### -field KSCAMERA_PERFRAMESETTING_ITEM_PHOTOCONFIRMATION
 
 This is a photo confirmation item type.
 
+
 ### -field KSCAMERA_PERFRAMESETTING_ITEM_CUSTOM
 
 This is a custom item type.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ This is a custom item type.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

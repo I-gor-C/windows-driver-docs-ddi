@@ -7,8 +7,8 @@ old-location: wdf\wdf_tri_state.htm
 old-project: wdf
 ms.assetid: 8ea6e373-225d-4fcd-abcf-c19b07f9f5d8
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_TRI_STATE, WDF_TRI_STATE, *PWDF_TRI_STATE
+ms.date: 12/7/2017
+ms.keywords: _WDF_TRI_STATE, *PWDF_TRI_STATE, WDF_TRI_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The WDF_TRI_STATE enumeration type defines three values that the framework uses for some structure members and function parameters.
+
 
 
 ## -syntax
@@ -60,38 +62,47 @@ typedef enum _WDF_TRI_STATE {
 
 The meaning of this enumerator is specific to its use as a structure member or function parameter.
 
+
 ### -field WdfTrue
 
 The meaning of this enumerator is specific to its use as a structure member or function parameter.
+
 
 ### -field WdfUseDefault
 
 The meaning of this enumerator is specific to its use as a structure member or function parameter.
 
+
 ## -remarks
 The WDF_TRI_STATE enumeration type is available in version 1.0 and later versions of KMDF.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.11
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

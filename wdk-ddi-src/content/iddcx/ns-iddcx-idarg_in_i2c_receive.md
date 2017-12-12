@@ -7,7 +7,7 @@ old-location: display\idarg_in_i2c_receive.htm
 old-project: display
 ms.assetid: a44a45bf-4c21-4507-a89b-4130622bdd06
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_I2C_RECEIVE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about I2C data being received by the OS.
 
 
+
 ## -syntax
 
 ````
@@ -62,11 +63,13 @@ typedef struct IDARG_IN_I2C_RECEIVE {
                      [in] The address of the I2C device from which data will be received.
                  
 
+
 ### -field Flags
 
 
                      [in] Flags for the receive operation.
                  
+
 
 ### -field DataSizeInBytes
 
@@ -74,11 +77,13 @@ typedef struct IDARG_IN_I2C_RECEIVE {
                      [in] The size, in bytes, of the buffer pointed to by <b>pData</b>.
                  
 
+
 ### -field pData
 
 
                      [out] A pointer to a buffer that receives the data.
                  
+
 
 ## -remarks
 
@@ -88,6 +93,7 @@ typedef struct IDARG_IN_I2C_RECEIVE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

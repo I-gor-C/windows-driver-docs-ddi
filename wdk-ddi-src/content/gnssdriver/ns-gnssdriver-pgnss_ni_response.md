@@ -41,6 +41,7 @@ req.irql:
 This structure contains NI request response information.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field RequestId
 
 The ID to uniquely identify the NI request.
 
+
 ### -field UserResponse
 
 The user response to the NI request.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ The user response to the NI request.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_post_composition_flags.htm
 old-project: display
 ms.assetid: F7791AB9-6D20-4560-A478-E30F08C6AC3A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A structure containing the flags describing the transformations applied to an image.
 
 
+
 ## -syntax
 
 ````
@@ -63,13 +64,16 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS {
 
 Indicates that the image should be flipped vertically.
 
+
 ### -field HorizontalFlip
 
 Indicates that the image should be flipped horizontally.
 
+
 ### -field Reserved
 
 This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.
+
 
 ### -field Value
 
@@ -77,11 +81,13 @@ This member is reserved and should be set to zero. Setting this member to zero i
 ## -remarks
 Applying VerticalFlip and HorizontalFlip simultaneously results in 180 degree rotation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -40,12 +40,19 @@ req.irql:
 ## -description
 
 The IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits. It is available to user mode as well as kernel-mode components through the IRP_MJ_DEVICE_CONTROL dispatch. For driver-to-driver communication, it is a METHOD_BUFFERED IOCTL, so set the IRP fields accordingly (IrpStack-&gt;Parameters.DeviceIoControl.InputBufferLength and Irp-&gt;AssociatedIrp.SystemBuffer).
+
 IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO is used to remove all subunit IDs of a single type. The ID part of the subunit address is ignored.
+
 This IOCTL uses the AVC_SUBUNIT_ADDR_SPEC structure.
 
+
+
 The IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits. It is available to user mode as well as kernel-mode components through the IRP_MJ_DEVICE_CONTROL dispatch. For driver-to-driver communication, it is a METHOD_BUFFERED IOCTL, so set the IRP fields accordingly (IrpStack-&gt;Parameters.DeviceIoControl.InputBufferLength and Irp-&gt;AssociatedIrp.SystemBuffer).
+
 IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO is used to remove all subunit IDs of a single type. The ID part of the subunit address is ignored.
+
 This IOCTL uses the AVC_SUBUNIT_ADDR_SPEC structure.
+
 
 
 ## -ioctlparameters
@@ -98,14 +105,17 @@ The current user has insufficient registry access privileges to make the update 
 
  
 
+
 ## -remarks
 Must be called at IRQL = PASSIVE_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

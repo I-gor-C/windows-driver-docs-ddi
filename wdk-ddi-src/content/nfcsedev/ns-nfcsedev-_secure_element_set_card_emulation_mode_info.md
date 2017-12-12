@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 64EE1896-DD19-42AD-92D7-3B3498A83E75
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, *PSECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO
+ms.keywords: _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, *PSECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO is the input parameter for  <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_set_card_emulation_mode.md">IOCTL_NFCSE_SET_CARD_EMULATION_MODE</a>.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO {
 
 This is a unique identifier for the secure element.
 
+
 ### -field eMode
 
 Card emulation mode: off, power dependent, or power-independent.
+
 
 
 ## -remarks
@@ -70,6 +73,7 @@ Card emulation mode: off, power dependent, or power-independent.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

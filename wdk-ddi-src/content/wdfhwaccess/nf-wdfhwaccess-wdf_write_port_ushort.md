@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_ushort.htm
 old-project: wdf
 ms.assetid: 310C55F8-E62C-4ABE-997E-E551CA6C4BB2
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_WRITE_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to UMDF only]
+
 The <b>WDF_WRITE_PORT_USHORT</b> function writes a USHORT value to the specified port address.
+
 
 
 
@@ -61,16 +63,20 @@ void WDF_WRITE_PORT_USHORT(
 
 A handle to a framework device object.
 
+
 ### -param Port [in]
 
 A pointer to the port, which must be a mapped memory range in I/O space.
+
 
 ### -param Value [in]
 
 Specifies a USHORT value to be written to the port.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -80,6 +86,7 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,22 +97,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum support
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

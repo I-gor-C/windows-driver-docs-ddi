@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfdmatransaction.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -41,6 +46,6 @@ Wdfdmatransaction.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL callback](nc-wdfdmatransaction-evt-wdf-dma-transaction-configure-dma-channel.md) | A driver's EvtDmaTransactionConfigureDmaChannel event callback function configures the DMA adapter for a system-mode DMA enabler. |
-| [EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE callback](nc-wdfdmatransaction-evt-wdf-dma-transaction-dma-transfer-complete.md) | A driver's EvtDmaTransactionDmaTransferComplete event callback function is called when the system-mode controller has completed the current DMA transfer. |
-| [EVT_WDF_RESERVE_DMA callback](nc-wdfdmatransaction-evt-wdf-reserve-dma.md) | The EvtReserveDma event callback function is called when the framework has reserved resources to execute and release a transaction. Reserved resources include map registers and the WDM DMA adapter's lock. |
+| [EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL callback](nc-wdfdmatransaction-evt_wdf_dma_transaction_configure_dma_channel.md) | A driver's EvtDmaTransactionConfigureDmaChannel event callback function configures the DMA adapter for a system-mode DMA enabler. |
+| [EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE callback](nc-wdfdmatransaction-evt_wdf_dma_transaction_dma_transfer_complete.md) | A driver's EvtDmaTransactionDmaTransferComplete event callback function is called when the system-mode controller has completed the current DMA transfer. |
+| [EVT_WDF_RESERVE_DMA callback](nc-wdfdmatransaction-evt_wdf_reserve_dma.md) | The EvtReserveDma event callback function is called when the framework has reserved resources to execute and release a transaction. Reserved resources include map registers and the WDM DMA adapter's lock. |

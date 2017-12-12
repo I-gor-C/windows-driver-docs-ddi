@@ -7,7 +7,7 @@ old-location: netvista\miniporttcpoffloadforward.htm
 old-project: netvista
 ms.assetid: e5702476-60a3-4bfc-b959-198e98f0f9ba
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,9 +39,11 @@ req.irql: Any level
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 NDIS calls the 
   <i>MiniportTcpOffloadForward</i> function to forward unacknowledged received TCP segments to an offload
   target.
+
 
 
 ## -prototype
@@ -70,12 +72,14 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param MiniportOffloadContext [in]
 
 A pointer to a memory location that contains a PVOID value. This PVOID value references the
      miniport offload context that contains the state object for the TCP connection for which the TCP
      segments are being forwarded. The offload target supplied this PVOID value when it offloaded the TCP
      connection state object.
+
 
 ### -param NetBufferList [in]
 
@@ -90,11 +94,13 @@ A pointer to a
      locked so that they remain resident in physical memory. However, they are not mapped into system
      memory.
 
+
 ## -returns
 NDIS_STATUS_PENDING is the only allowable return value. An offload target always completes a
      forward request asynchronously by calling the 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_forward_complete.md">
      NdisTcpOffloadForwardComplete</a> function.
+
 
 ## -remarks
 The host stack forwards one or more TCP segments that it has received but not acknowledged in the
@@ -137,11 +143,13 @@ The host stack allocates the NET_BUFFER_LIST and associated structures that NDIS
     NdisTcpOffloadForwardComplete</a> function. While it owns these resources, the offload target is free
     to queue them for processing.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,9 +160,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -176,5 +186,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_FORWARD_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_FORWARD_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

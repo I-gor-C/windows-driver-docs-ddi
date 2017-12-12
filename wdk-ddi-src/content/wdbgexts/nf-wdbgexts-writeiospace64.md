@@ -7,7 +7,7 @@ old-location: debugger\writeiospace64.htm
 old-project: debugger
 ms.assetid: c750d3de-8481-42d5-a290-00e49d5fe82b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: WriteIoSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WriteIoSpace64</b> function writes to the system I/O locations. 
 
 
+
 ## -syntax
 
 ````
@@ -59,27 +60,33 @@ VOID  WriteIoSpace64(
 
 Specifies the I/O address to write to.
 
+
 ### -param data 
 
 Specifies the address of a variable that holds the data to write. This must be at least the number of bytes contained in <i>size</i>.
+
 
 ### -param size 
 
 Specifies the address of a variable that contains the number of bytes to write. <i>Size</i> must be 1, 2, or 4. After the data is written, <i>size</i> will contain the number of bytes actually written.
 
+
 ## -returns
 None
+
 
 ## -remarks
 If you are writing 32-bit code, you should use <a href="debugger.writeiospace">WriteIoSpace</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 For a WdbgExts extension, include wdbgexts.h. For a DbgEng extension, include wdbgexts.h before dbgeng.h. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,6 +97,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

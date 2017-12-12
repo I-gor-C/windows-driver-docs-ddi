@@ -7,7 +7,7 @@ old-location: display\d3ddevicedesc_v3.htm
 old-project: display
 ms.assetid: 36a7b29a-f744-42c8-9e60-9b5dbba3a32f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDeviceDesc_V3, D3DDEVICEDESC_V3, *LPD3DDEVICEDESC_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <b>The D3DDEVICEDESC_V3 structure is obsolete; only D3DDEVICEDESC_V1 should be used.</b>
+
 The D3DDEVICEDESC_V3 structure contains fields that are already reported in the <a href="display.d3dhal_d3dextendedcaps">D3DHAL_D3DEXTENDEDCAPS</a> structure when responding to the GUID_D3DExtendedCaps GUID in <a href="display.ddgetdriverinfo">DdGetDriverInfo</a>.
+
 
 <pre class="syntax" xml:space="preserve"><code>typedef struct _D3DDeviceDesc_V3 {
     DWORD             dwSize;
@@ -81,6 +83,7 @@ The D3DDEVICEDESC_V3 structure contains fields that are already reported in the 
 
 
 
+
 ## -struct-fields
 
 
@@ -92,6 +95,7 @@ The D3DDEVICEDESC_V3 structure contains fields that are already reported in the 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

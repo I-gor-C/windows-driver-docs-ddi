@@ -7,7 +7,7 @@ old-location: netvista\ril3gpp2tone_2.htm
 old-project: netvista
 ms.assetid: 306efd49-27ca-43d1-8f56-2f93c31be9a1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RIL3GPP2TONE, RIL3GPP2TONE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -108,6 +109,7 @@ typedef enum _RIL3GPP2TONE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

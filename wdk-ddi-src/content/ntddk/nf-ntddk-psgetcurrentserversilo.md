@@ -7,7 +7,7 @@ old-location: kernel\psgetcurrentserversilo.htm
 old-project: kernel
 ms.assetid: 4E30CD53-C078-40D7-BEF8-A39F57D71D42
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsGetCurrentServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: _IRQL_requires_max_(DISPATCH_LEVEL)
 This routine returns the effective server silo for the thread.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ A pointer to the current server silo.  This pointer is valid for the current thr
 
 A pointer to the current server silo.  This pointer is valid for the current thread, but must be referenced before transferring to another thread (for example, via a workitem).
 
+
 ## -remarks
 
 
@@ -66,22 +68,27 @@ A pointer to the current server silo.  This pointer is valid for the current thr
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,9 +99,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _IRQL_requires_max_(DISPATCH_LEVEL)
+
 </td>
 </tr>
 </table>

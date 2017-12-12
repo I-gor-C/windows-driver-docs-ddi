@@ -7,7 +7,7 @@ old-location: display\d3dkmtsetdevicelostsupport.htm
 old-project: display
 ms.assetid: 9b7469cb-d489-4428-8167-91b26e1fa348
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTSetDeviceLostSupport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
             Used to indicate that the device has lost support.
 
 
+
 ## -syntax
 
 ````
@@ -58,8 +59,10 @@ NTSTATUS  D3DKMTSetDeviceLostSupport(
 
 Indicates that the device has lost support.
 
+
 ## -returns
 Returns STATUS_SUCCESS if completed successfully. 
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,8 +103,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

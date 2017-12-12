@@ -7,7 +7,7 @@ old-location: netvista\rilimssipcausecode.htm
 old-project: netvista
 ms.assetid: b76ea0fb-8139-4272-b9a0-2daa5b660c7d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILIMSSIPCAUSECODE, RILIMSSIPCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -211,6 +212,7 @@ typedef enum _RILIMSSIPCAUSECODE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

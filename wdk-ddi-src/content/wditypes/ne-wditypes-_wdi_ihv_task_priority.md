@@ -7,7 +7,7 @@ old-location: netvista\wdi_ihv_task_priority.htm
 old-project: netvista
 ms.assetid: 606CF45C-5398-4157-92A7-382B6162D806
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_IHV_TASK_PRIORITY, WDI_IHV_TASK_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_IHV_TASK_PRIORITY enumeration defines IHV task priorities.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _WDI_IHV_TASK_PRIORITY {
 
 High priority.
 
+
 ### -field WDI_IHV_TASK_PRIORITY_MEDIUM
 
 Medium priority.
 
+
 ### -field WDI_IHV_TASK_PRIORITY_LOW
 
 Low priority.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ Low priority.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\pdxgk_removal_notification.htm
 old-project: display
 ms.assetid: F9AA5859-8E8A-491D-B149-F42E418A64DC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A callback indicating that the graphics device is being removed.
 
 
+
 ## -prototype
 
 ````
@@ -56,8 +57,10 @@ VOID *PDXGK_REMOVAL_NOTIFICATION(
 
 A handle to the graphics device.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

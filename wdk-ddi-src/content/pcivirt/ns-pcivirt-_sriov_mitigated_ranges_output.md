@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure is the output buffer received by the <a href="buses.ioctl_sriov_query_mitigated_ranges">IOCTL_SRIOV_QUERY_MITIGATED_RANGES</a> request to get the specific ranges on which intercepts must be placed.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _SRIOV_MITIGATED_RANGES_OUTPUT {
 
 The base address of the allocated region of pages.
 
+
 ### -field PageCount
 
 Total number of pages.
+
 
 ### -field InterceptReads
 
 A boolean that indicates the reads intercept bit.
 
+
 ### -field InterceptWrites
 
 A boolean that indicates the write intercept bit.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ A boolean that indicates the write intercept bit.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

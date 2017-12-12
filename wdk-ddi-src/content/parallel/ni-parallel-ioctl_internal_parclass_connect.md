@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>IOCTL_INTERNAL_PARCLASS_CONNECT</b> request returns information about a parallel port and the callback routines that the system-supplied bus driver for parallel ports provides to operate the parallel port.
+
 For more information, see <a href="https://msdn.microsoft.com/c05a1a1e-308a-4b9f-af43-761c4c14d6af">Connecting to a Parallel Device</a>.
+
 
 
 ## -ioctlparameters
@@ -47,14 +49,18 @@ For more information, see <a href="https://msdn.microsoft.com/c05a1a1e-308a-4b9f
 ### -input-buffer
 A <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure. 
 
+
 ### -input-buffer-length
 The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure. 
+
 
 ### -output-buffer
 The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure that the client allocates to output information.
 
+
 ### -output-buffer-length
 The size of a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure.
+
 
 ### -in-out-buffer
 
@@ -74,6 +80,7 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is less than the size, in bytes, of a PARCLASS_INFORMATION structure.
 
+
 ## -remarks
 
 
@@ -82,6 +89,7 @@ The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +109,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20IOCTL_INTERNAL_PARCLASS_CONNECT control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

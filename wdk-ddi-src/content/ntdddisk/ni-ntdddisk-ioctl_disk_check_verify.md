@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_check_verify.htm
 old-project: storage
 ms.assetid: bf2604fe-e7d3-43af-916e-b03979ee71aa
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>. The only difference between the two IOCTLs is the base value.
+
 
 
 ## -ioctlparameters
@@ -81,6 +82,7 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

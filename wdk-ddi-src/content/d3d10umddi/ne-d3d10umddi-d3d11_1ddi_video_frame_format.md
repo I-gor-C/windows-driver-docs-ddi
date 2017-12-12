@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_frame_format.htm
 old-project: display
 ms.assetid: 36af5af2-dfb1-4827-8898-93e52f4c8312
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_FRAME_FORMAT, D3D11_1DDI_VIDEO_FRAME_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes how a video stream is interlaced.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum D3D11_1DDI_VIDEO_FRAME_FORMAT {
 
 Frames are progressive.
 
+
 ### -field D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST
 
 Frames are interlaced. The top field of each frame is displayed first.
 
+
 ### -field D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST
 
 Frame are interlaced. The bottom field of each frame is displayed first.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Frame are interlaced. The bottom field of each frame is displayed first.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

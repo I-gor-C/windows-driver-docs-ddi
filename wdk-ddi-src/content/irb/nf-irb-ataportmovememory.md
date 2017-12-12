@@ -7,7 +7,7 @@ old-location: storage\ataportmovememory.htm
 old-project: storage
 ms.assetid: c9d724bb-cc65-428c-ad48-21b227f3c8b1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: AtaPortMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>AtaPortMoveMemory</b> routine copies data from one location to another.
 
 
+
 ## -syntax
 
 ````
@@ -58,27 +59,33 @@ VOID AtaPortMoveMemory(
 
 A pointer to the destination buffer.
 
+
 ### -param ReadBuffer [in]
 
 A pointer to the source buffer.
+
 
 ### -param Length [in]
 
 Specifies the number of bytes to transfer from <i>ReadBuffer</i> to <i>WriteBuffer</i>.
 
+
 ## -returns
 None 
+
 
 ## -remarks
 The miniport driver calls the <b>AtaPortMoveMemory</b> routine to copy data from one system-allocated area to another. 
 
 The location pointed to by <i>ReadBuffer</i> and <i>Length</i> can overlap the range of addresses between <i>WriteBuffer</i> and <i>Length</i>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,6 +96,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,6 +107,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

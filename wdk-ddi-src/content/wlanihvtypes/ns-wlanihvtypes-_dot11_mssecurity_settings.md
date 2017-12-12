@@ -7,7 +7,7 @@ old-location: netvista\dot11_mssecurity_settings.htm
 old-project: netvista
 ms.assetid: b80a06f0-7774-4bf1-9101-a466999246d6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_MSSECURITY_SETTINGS, *PDOT11_MSSECURITY_SETTINGS, DOT11_MSSECURITY_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,30 +62,36 @@ A
      <a href="netvista.dot11_auth_algorithm">DOT11_AUTH_ALGORITHM</a> type that specifies
      the authentication algorithm.
 
+
 ### -field dot11CipherAlgorithm
 
 A 
      <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a> type that
      specifies the cipher algorithm for data encryption and decryption.
 
+
 ### -field fOneXEnabled
 
 A Boolean value that indicates whether the Microsoft 802.1X implementation is enabled. If <b>TRUE</b>,
      Microsoft 802.1X is enabled; otherwise, Microsoft 802.1X is disabled.
+
 
 ### -field eapMethodType
 
 An EAP_METHOD_TYPE type that specifies the extensible authentication protocol (EAP) method. For
      information about EAP_METHOD_TYPE, see the Microsoft Windows SDK.
 
+
 ### -field dwEapConnectionDataLen
 
 The size, in bytes, of the EAP connection data buffer pointed to by the 
      <b>pEapConnectionData</b> member.
 
+
 ### -field pEapConnectionData
 
 A pointer to the EAP connection data buffer.
+
 
 ## -remarks
 
@@ -95,15 +101,18 @@ A pointer to the EAP connection data buffer.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +132,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSSECURITY_SETTINGS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSSECURITY_SETTINGS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

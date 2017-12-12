@@ -7,7 +7,7 @@ old-location: netvista\ndis_protocol_driver_characteristics.htm
 old-project: netvista
 ms.assetid: db64c160-9db6-4b23-af14-e64acdb9ef57
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, *PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, NDIS_PROTOCOL_DRIVER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 To specify its driver characteristics, a protocol driver initializes an
   <b>NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</b> structure and passes it to NDIS.
+
 
 
 ## -syntax
@@ -81,24 +82,31 @@ The
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_PROTOCOL_DRIVER_CHARACTERISTICS.
      
+
 To indicate the version of the <b>NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</b> structure, set the 
      <b>Revision</b> member to one of the following values:
+
+
 
 
 ### -field NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2
 
 Added the 
         <b>DirectOidRequestCompleteHandler</b> member for NDIS 6.1.
+
 Set the 
         <b>Size</b> member to
         NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2.
 
+
 ### -field NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1
 
 Original version for NDIS 6.0.
+
 Set the 
         <b>Size</b> member to
         NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1.
+
 </dd>
 </dl>
 
@@ -107,9 +115,11 @@ Set the
 The major version of the NDIS library the protocol driver is using. The current value is
      0x06.
 
+
 ### -field MinorNdisVersion
 
 The minor NDIS version. The following are the available minor version value settings.
+
 <table>
 <tr>
 <th>Value</th>
@@ -123,6 +133,7 @@ The minor NDIS version. The following are the available minor version value sett
 </td>
 <td width="60%">
 NDIS 6
+
 </td>
 </tr>
 <tr>
@@ -133,6 +144,7 @@ NDIS 6
 </td>
 <td width="60%">
 NDIS 6.20
+
 </td>
 </tr>
 <tr>
@@ -143,6 +155,7 @@ NDIS 6.20
 </td>
 <td width="60%">
 NDIS 6.30
+
 </td>
 </tr>
 <tr>
@@ -153,6 +166,7 @@ NDIS 6.30
 </td>
 <td width="60%">
 NDIS 6.40
+
 </td>
 </tr>
 <tr>
@@ -163,6 +177,7 @@ NDIS 6.40
 </td>
 <td width="60%">
 NDIS 6.50
+
 </td>
 </tr>
 <tr>
@@ -173,6 +188,7 @@ NDIS 6.50
 </td>
 <td width="60%">
 NDIS 6.51
+
 </td>
 </tr>
 <tr>
@@ -183,6 +199,7 @@ NDIS 6.51
 </td>
 <td width="60%">
 NDIS 6.60
+
 </td>
 </tr>
 <tr>
@@ -193,6 +210,7 @@ NDIS 6.60
 </td>
 <td width="60%">
 NDIS 6.70
+
 </td>
 </tr>
 <tr>
@@ -203,33 +221,40 @@ NDIS 6.70
 </td>
 <td width="60%">
 NDIS 6.80
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field MajorDriverVersion
 
 Reserved for the major version number of the protocol driver. Protocol drivers can specify any
      value that they require.
 
+
 ### -field MinorDriverVersion
 
 Reserved for the minor version number of the protocol driver. Protocol drivers can specify any
      value that they require.
 
+
 ### -field Flags
 
 Reserved for NDIS. Protocol drivers should set this member to zero.
+
 
 ### -field Name
 
 A Unicode string that is the service name of the protocol driver.
 
+
 ### -field SetOptionsHandler
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a> function.
+
 
 ### -field BindAdapterHandlerEx
 
@@ -237,11 +262,13 @@ The entry point for the
      <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">
      ProtocolBindAdapterEx</a> function.
 
+
 ### -field UnbindAdapterHandlerEx
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
      ProtocolUnbindAdapterEx</a> function.
+
 
 ### -field OpenAdapterCompleteHandlerEx
 
@@ -249,16 +276,19 @@ The entry point for the
      <a href="..\ndis\nc-ndis-protocol_open_adapter_complete_ex.md">
      ProtocolOpenAdapterCompleteEx</a> function.
 
+
 ### -field CloseAdapterCompleteHandlerEx
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
      ProtocolCloseAdapterCompleteEx</a> function.
 
+
 ### -field NetPnPEventHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function.
+
 
 ### -field UninstallHandler
 
@@ -266,11 +296,13 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_uninstall.md">ProtocolUninstall</a> function, if any,
      or <b>NULL</b>.
 
+
 ### -field OidRequestCompleteHandler
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">
      ProtocolOidRequestComplete</a> function.
+
 
 ### -field StatusHandlerEx
 
@@ -278,11 +310,13 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a> function, if any, or
      <b>NULL</b>.
 
+
 ### -field ReceiveNetBufferListsHandler
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
      ProtocolReceiveNetBufferLists</a> function.
+
 
 ### -field SendNetBufferListsCompleteHandler
 
@@ -290,12 +324,14 @@ The entry point for the
      <a href="..\ndis\nc-ndis-protocol_send_net_buffer_lists_complete.md">
      ProtocolSendNetBufferListsComplete</a> function.
 
+
 ### -field DirectOidRequestCompleteHandler
 
 The entry point of the caller's 
       <a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
       ProtocolDirectOidRequestComplete</a> function. This is an optional function. Set this entry point to
       <b>NULL</b> if the protocol driver does not support the direct OID request interface.
+
 
 ## -remarks
 A protocol driver calls the 
@@ -306,19 +342,23 @@ A protocol driver calls the
     <i>ProtocolCharacteristics</i> parameter of 
     <b>NdisRegisterProtocolDriver</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -376,5 +416,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

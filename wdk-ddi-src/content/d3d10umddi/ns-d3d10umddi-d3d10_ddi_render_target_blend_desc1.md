@@ -7,7 +7,7 @@ old-location: display\d3d10_ddi_render_target_blend_desc1.htm
 old-project: display
 ms.assetid: 4cbc3072-46f1-40c3-ba3f-4d99f19b280e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D10_DDI_RENDER_TARGET_BLEND_DESC1, D3D10_DDI_RENDER_TARGET_BLEND_DESC1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3D10_DDI_RENDER_TARGET_BLEND_DESC1 structure describes a blend state for a render target.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct D3D10_DDI_RENDER_TARGET_BLEND_DESC1 {
 
 [in] A Boolean value that specifies whether blending is enabled for the associated render target. <b>TRUE</b> indicates blending is enabled; <b>FALSE</b> indicates blending is disabled. 
 
+
 ### -field SrcBlend
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the source for the enabled render target. 
+
 
 ### -field DestBlend
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the destination for the enabled render target. 
 
+
 ### -field BlendOp
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend_op.md">D3D10_DDI_BLEND_OP</a>-typed value that indicates the blending operation for the enabled render target. 
+
 
 ### -field SrcBlendAlpha
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the source for the enabled render target. 
 
+
 ### -field DestBlendAlpha
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the destination for the enabled render target. 
+
 
 ### -field BlendOpAlpha
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend_op.md">D3D10_DDI_BLEND_OP</a>-typed value that indicates the transparency blending operation for the enabled render target. 
 
+
 ### -field RenderTargetWriteMask
 
 [in] An 8-bit bitwise value that indicates the write properties for the enabled render target. Each bit must be set to one of the following values from the D3D10_DDI_COLOR_WRITE_ENABLE enumeration.
+
 <table>
 <tr>
 <th>Value</th>
@@ -98,62 +107,77 @@ typedef struct D3D10_DDI_RENDER_TARGET_BLEND_DESC1 {
 <tr>
 <td>
 D3D10_DDI_COLOR_WRITE_ENABLE_RED (1)
+
 </td>
 <td>
 Writes red
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_DDI_COLOR_WRITE_ENABLE_GREEN (2)
+
 </td>
 <td>
 Writes green
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_DDI_COLOR_WRITE_ENABLE_BLUE (4)
+
 </td>
 <td>
 Writes blue
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_DDI_COLOR_WRITE_ENABLE_ALPHA (8)
+
 </td>
 <td>
 Writes a transparency level
+
 </td>
 </tr>
 <tr>
 <td>
 D3D10_DDI_COLOR_WRITE_ENABLE_ALL (1 | 2 | 4 | 8)
+
 </td>
 <td>
 Writes red, green, blue, and a transparency level
+
 </td>
 </tr>
 </table>
  
 
+
 ## -remarks
 An array of D3D10_DDI_RENDER_TARGET_BLEND_DESC1 structures are specified in the <b>RenderTarget</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_1_ddi_blend_desc.md">D3D10_1_DDI_BLEND_DESC</a> structure to describe a blend state. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 D3D10_DDI_RENDER_TARGET_BLEND_DESC1 is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,5 +206,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_RENDER_TARGET_BLEND_DESC1 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_RENDER_TARGET_BLEND_DESC1 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

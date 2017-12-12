@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>ExQueueWorkItem</b> inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to <a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ VOID ExQueueWorkItem(
 
 Pointer to the work item. This work item must have been initialized by a preceding call to <a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a>. 
 
+
 ### -param QueueType [in]
 
 Specifies the queue into which the work item pointed to by <i>WorkItem</i> is to be inserted. <i>QueueType</i> can be either of the following: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -69,25 +72,32 @@ Specifies the queue into which the work item pointed to by <i>WorkItem</i> is to
 <tr>
 <td>
 <b>CriticalWorkQueue</b>
+
 </td>
 <td>
 Insert the <i>WorkItem</i> into the queue from which a system thread with a real-time priority attribute will process the work item. 
+
 </td>
 </tr>
 <tr>
 <td>
 <b>DelayedWorkQueue</b>
+
 </td>
 <td>
 Insert the <i>WorkItem</i> into the queue from which a system thread with a variable priority attribute will process the work item. 
+
 </td>
 </tr>
 </table>
  
+
 The <i>QueueType</i> value <b>HyperCriticalWorkQueue</b> is reserved for system use. 
+
 
 ## -returns
 None 
+
 
 ## -remarks
 The callback routine that was specified in the <i>Routine</i> parameter to <a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a> is called in a system context at IRQL PASSIVE_LEVEL. This caller-supplied routine is responsible for freeing the work item when it is no longer needed by calling <a href="kernel.exfreepool">ExFreePool</a> or <a href="kernel.exfreepoolwithtag">ExFreePoolWithTag</a>.
@@ -104,11 +114,13 @@ If the callback runs in the system thread with a variable priority attribute, th
 
 Threads at either priority remain interruptible. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +131,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,6 +142,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +153,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -149,9 +164,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -181,5 +198,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ExQueueWorkItem routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

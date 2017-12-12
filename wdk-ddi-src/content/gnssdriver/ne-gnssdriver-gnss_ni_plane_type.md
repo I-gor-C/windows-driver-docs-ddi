@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This enumeration indicates the plane type of a network initiated (NI) request represented by the <a href="sensors.gnss_ni_request_param">GNSS_NI_REQUEST_PARAM</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 Indicates the plane type of the request is SUPL.
 
+
 ### -field GNSS_NI_CP
 
 Indicates the plane type of the request is CP.
 
+
 ### -field GNSS_NI_V2UPL
 
 Indicates plane type of the request is V2UPL.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Indicates plane type of the request is V2UPL.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

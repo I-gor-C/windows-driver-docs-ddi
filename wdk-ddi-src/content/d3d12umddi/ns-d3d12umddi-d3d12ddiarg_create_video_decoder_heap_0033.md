@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-video-decoder-heap-0033.htm
 old-project: display
 ms.assetid: 158411ee-6cc1-466d-b772-fe380b55baef
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033, D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 Create a video decoder heap.
+
 
 
 ## -syntax
@@ -64,33 +66,41 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 {
 
 The set of nodes.
 
+
 ### -field Configuration
 
 The video decode configuration.
+
 
 ### -field DecodeWidth
 
 Decode width.
 
+
 ### -field DecodeHeight
 
 Decode height.
+
 
 ### -field Format
 
 The resource data format.
 
+
 ### -field FrameRate
 
 A rational number that specifies the frame rate.
+
 
 ### -field BitRate
 
 The number of bits per second.
 
+
 ### -field MaxDecodePictureBufferCount
 
 Maximum decode picture buffer count.
+
 
 ## -remarks
 
@@ -100,6 +110,7 @@ Maximum decode picture buffer count.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

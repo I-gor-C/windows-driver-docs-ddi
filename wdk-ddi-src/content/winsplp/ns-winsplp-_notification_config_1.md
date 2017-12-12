@@ -7,8 +7,8 @@ old-location: print\notification_config_1.htm
 old-project: print
 ms.assetid: 4A33F3EB-9A2E-40F4-B5BC-EDEA5085301E
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _NOTIFICATION_CONFIG_1, NOTIFICATION_CONFIG_1, *PNOTIFICATION_CONFIG_1
+ms.date: 12/9/2017
+ms.keywords: _NOTIFICATION_CONFIG_1, *PNOTIFICATION_CONFIG_1, NOTIFICATION_CONFIG_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -76,6 +77,7 @@ typedef struct _NOTIFICATION_CONFIG_1 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

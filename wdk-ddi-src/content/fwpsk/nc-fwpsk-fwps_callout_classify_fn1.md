@@ -7,7 +7,7 @@ old-location: netvista\classifyfn1.htm
 old-project: netvista
 ms.assetid: 128fd929-6e83-46a0-9475-e459ede58f30
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The filter engine calls a callout's
   <i>classifyFn1</i> callout function whenever there is data to be processed by the callout.
 
 
+
 ## -prototype
 
 ````
@@ -68,12 +69,14 @@ A pointer to an
      <a href="netvista.fwps_incoming_values0">FWPS_INCOMING_VALUES0</a> structure. This
      structure contains the values for each of the data fields in the layer being filtered.
 
+
 ### -param inMetaValues [in]
 
 A pointer to an 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure. This structure contains the values for each of the
      metadata fields in the layer being filtered.
+
 
 ### -param layerData [in, out]
 
@@ -85,15 +88,18 @@ A pointer to a structure that describes the raw data in the layer being filtered
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure if it is not
      <b>NULL</b>.
 
+
 ### -param classifyContext [in, optional]
 
 A pointer to context data associated with the callout driver by the filter engine.
+
 
 ### -param filter [in]
 
 A pointer to an 
      <a href="netvista.fwps_filter1">FWPS_FILTER1</a> structure. This structure
      describes the filter that specifies the callout for the filter's action.
+
 
 ### -param flowContext [in]
 
@@ -102,6 +108,7 @@ A UINT64-typed variable that contains the context associated with the data flow.
      at a filtering layer that does not support data flows, the 
      <i>classifyFn1</i> callout function should ignore this parameter.
 
+
 ### -param classifyOut [in, out]
 
 A pointer to an 
@@ -109,8 +116,10 @@ A pointer to an
      receives any data that the 
      <i>classifyFn1</i> callout function returns to the caller.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 A callout driver registers a callout's callout functions with the filter engine by calling the 
@@ -145,19 +154,23 @@ When a callout has indicated that it intends to modify the clone net buffer list
       <a href="netvista.fwpsreferencenetbufferlist0">
       FwpsReferenceNetBufferList0</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -168,9 +181,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -235,5 +250,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_CLASSIFY_FN1 callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_CLASSIFY_FN1 callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

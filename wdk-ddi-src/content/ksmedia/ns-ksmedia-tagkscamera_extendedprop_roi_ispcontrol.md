@@ -41,6 +41,7 @@ req.irql:
 This structure contains information for an ROI ISP control.
 
 
+
 ## -syntax
 
 ````
@@ -58,15 +59,19 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL {
 ### -field ControlId
 
 The ISP control ID. The following are valid values for this field. These values are defined in ksmedia.h.
+
 <ul>
 <li>
 KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE
+
 </li>
 <li>
 KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE
+
 </li>
 <li>
 KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
+
 </li>
 </ul>
 
@@ -74,13 +79,16 @@ KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
 
 The number of ROIs associated with this ISP control.
 
+
 ### -field Result
 
 The error results of the last SET operation for this ISP control.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -90,6 +98,7 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

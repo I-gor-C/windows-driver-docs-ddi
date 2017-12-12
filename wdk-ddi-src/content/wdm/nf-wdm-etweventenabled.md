@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>EtwEventEnabled</b> function verifies whether an event is enabled.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ BOOLEAN EtwEventEnabled(
 A pointer to the event provider registration handle, which is returned by the 
       <b>EtwRegister</b> function if the event provider registration is successful.
 
+
 ### -param EventDescriptor [in]
 
 A pointer to a constant EVENT_DESCRIPTOR. 
 
+
 ## -returns
 The <b>EtwEventEnabled</b> function returns <b>TRUE</b> if the 
       event is enabled and <b>FALSE</b> if the event is not enabled.
+
 
 ## -remarks
 If logging an event requires additional computing, the <b>EtwEventEnabled</b> 
@@ -75,11 +79,13 @@ If logging an event requires additional computing, the <b>EtwEventEnabled</b>
 If the event descriptor is not available, use the 
      <a href="devtest.etwproviderenabled">EtwProviderEnabled</a> function instead.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -108,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +128,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -128,9 +139,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -142,5 +155,8 @@ Any level
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwEventEnabled function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

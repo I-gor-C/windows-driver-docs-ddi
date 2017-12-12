@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 5756bb06-8fd3-4124-b3c8-35d5ed0bd57b
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The MPEG2_TRANSPORT_STRIDE structure describes the format block of the MPEG2 transport stride. 
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct _MPEG2_TRANSPORT_STRIDE {
 
 Offset in bytes into a packet.
 
+
 ### -field dwPacketLength
 
 Size in bytes of a packet.
+
 
 ### -field dwStride
 
 Stride of data in a packet. 
 
+
 ## -remarks
 The MPEG2 transport stride format block is associated with the MEDIATYPE_Stream/MEDIASUBTYPE_MPEG2_TRANSPORT_STRIDE media type. Format blocks that are associated with this media type must start with the MPEG2_TRANSPORT_STRIDE structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

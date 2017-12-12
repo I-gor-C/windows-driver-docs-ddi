@@ -41,6 +41,7 @@ req.irql: Called at PASSIVE_LEVEL.
 The <b>BarcodeSymbologyDecodeLengthType</b>   enum describes values for the decode length which can be set to support a range, two discrete values, or be set to any length.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _BarcodeSymbologyDecodeLengthType {
 
 Decode length can be any length.
 
+
 ### -field DecodeLengthType_Discrete
 
 Decode length is two discrete values
 
+
 ### -field DecodeLengthType_Range
 
 Decode length is is a range of values.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Decode length is is a range of values.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\rilavoidcdmasystemparams_2.htm
 old-project: netvista
 ms.assetid: bd938bd9-479a-434c-91d6-93ec76ebe5d6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILAVOIDCDMASYSTEMPARAMS, *LPRILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS, *LPRILAVOIDCDMASYSTEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILAVOIDCDMASYSTEMPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

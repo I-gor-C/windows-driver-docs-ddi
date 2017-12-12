@@ -7,7 +7,7 @@ old-location: storage\iscsi_auth_types.htm
 old-project: storage
 ms.assetid: b1d38829-53bc-42a5-acaf-c1ad89b8b563
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: PISCSI_AUTH_TYPES, ISCSI_AUTH_TYPES, *PISCSI_AUTH_TYPES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The ISCSI_AUTH_TYPES enumeration indicates the type of authentication method that is used to establish a logon connection. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 No authentication type was specified. 
 
+
 ### -field ISCSI_CHAP_AUTH_TYPE
 
 Challenge handshake authentication protocol (CHAP).
 
+
 ### -field ISCSI_MUTUAL_CHAP_AUTH_TYPE
 
 Mutual (2-way) CHAP authentication.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Mutual (2-way) CHAP authentication.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_input.htm
 old-project: display
 ms.assetid: 371f494c-abd2-43c8-ab06-749144762b01
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_INPUT, D3D11_1DDI_VIDEO_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Reserved for system use. Do not use in your driver.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct D3D11_1DDI_VIDEO_INPUT {
 
 Reserved for system use. Do not use in your driver.
 
+
 ### -field p11VideoDeviceFuncs
 
 Reserved for system use. Do not use in your driver.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Reserved for system use. Do not use in your driver.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

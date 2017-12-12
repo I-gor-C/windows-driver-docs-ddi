@@ -7,7 +7,7 @@ old-location: debugger\idebugclient2.htm
 old-project: debugger
 ms.assetid: 0ea32baa-b318-44ec-8696-a5b42fe73ed1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,6 +65,7 @@ Creates a user-mode or kernel-mode crash dump file.
 
  
 
+
 ## -members
 The <b>IDebugClient2</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -78,6 +79,7 @@ The <b>IDebugClient2</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Removes the current process from the debugger engine's process list without detaching or terminating the process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -86,6 +88,7 @@ Removes the current process from the debugger engine's process list without deta
 </td>
 <td align="left" width="63%">
 Registers additional files containing supporting information that will be used when opening a dump file.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -95,6 +98,7 @@ Registers additional files containing supporting information that will be used w
 <td align="left" width="63%">
 Detaches the debugger engine from the current process, resuming all its threads.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -103,6 +107,7 @@ Detaches the debugger engine from the current process, resuming all its threads.
 </td>
 <td align="left" width="63%">
 Requests that a process server be shut down.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -112,6 +117,7 @@ Requests that a process server be shut down.
 <td align="left" width="63%">
 Checks whether kernel debugging is enabled for the local kernel.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -120,6 +126,7 @@ Checks whether kernel debugging is enabled for the local kernel.
 </td>
 <td align="left" width="63%">
  Attempts to terminate the current process.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -129,6 +136,7 @@ Checks whether kernel debugging is enabled for the local kernel.
 <td align="left" width="63%">
 Waits for a local process server to exit.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -137,6 +145,7 @@ Waits for a local process server to exit.
 </td>
 <td align="left" width="63%">
 Creates a user-mode or kernel-mode crash dump file.
+
 </td>
 </tr>
 </table>Removes the current process from the debugger engine's process list without detaching or terminating the process.
@@ -160,6 +169,7 @@ Creates a user-mode or kernel-mode crash dump file.
 
  
 
+
 ## -remarks
 
 
@@ -168,6 +178,7 @@ Creates a user-mode or kernel-mode crash dump file.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -193,5 +204,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient2 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient2 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

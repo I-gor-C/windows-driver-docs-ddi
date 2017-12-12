@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vppr_get_content_rotation.htm
 old-project: display
 ms.assetid: 61C1EB2F-E4CF-4B18-AD7B-6B24EF14E71F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMDT_VPPR_GET_CONTENT_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A helper function that extracts the combined rotation that the user sees from the default display orientation from a given value of the <a href="display.d3dkmdt_vidpn_present_path_rotation">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration. This value is effectively the sum of the offset angle and the angle that the Desktop Window Manager (DWM) has already rotated the primary clone path content. Only drivers that support path-independent rotation (DXGKDDI_INTERFACE_VERSION &gt;= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION) should call this function.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,11 @@ D3DKMDT_VIDPN_PRESENT_PATH_ROTATION D3DKMDT_VPPR_GET_CONTENT_ROTATION(
 ### -param Rotation 
 
 On input, a value from  the <a href="display.d3dkmdt_vidpn_present_path_rotation">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration.
+
 On output, a value between 1 and 4, inclusive, that corresponds to the <b>OFFSET</b> portion of the <a href="display.d3dkmdt_vidpn_present_path_rotation">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> constant values. An output value of 1 (identity) represents 0 degrees of total rotation, 2 represents 90 degrees, and so on. An output value of 0 indicates that the VidPN path is not initialized.
+
 The output value of <i>Rotation</i> is the sum of the output values from the <a href="display.d3dkmdt_vppr_get_content_rotation_part">D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART</a> and <a href="display.d3dkmdt_vppr_get_offset_rotation">D3DKMDT_VPPR_GET_OFFSET_ROTATION</a> functions minus 1.
+
 
 ## -returns
 The returned value corresponds to the rotation and offset angles as follows:<table>
@@ -173,7 +177,9 @@ The returned value corresponds to the rotation and offset angles as follows:<tab
  
 
 
+
  
+
 
 ## -remarks
 This function is declared inline in D3dkmdt.h as:
@@ -182,27 +188,33 @@ If the content being presented has to be rotated by the driver, the output of th
 
 Here's an example of how this function can provide your driver with the info it needs to properly rotate content. When a portrait-first device is connected in clone mode to a landscape-first monitor and  the user changes the <b>Orientation</b> in the <b>Display</b> control panel to <b>Portrait</b>, this represents the default orientation of the portrait-first device. Therefore the driver should set a value of <a href="display.d3dkmdt_vidpn_present_path_rotation">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>.<b>D3DKMDT_VPPR_ROTATE90_OFFSET270</b> on the path. This function will then return a <i>Rotation</i> value of 1 (identity) to indicate that the content displayed on the clone path is not to be rotated.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -213,14 +225,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 DXGKDDI_INTERFACE_VERSION &gt;= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -249,5 +264,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VPPR_GET_CONTENT_ROTATION function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VPPR_GET_CONTENT_ROTATION function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: print\devicepropertyheader.htm
 old-project: print
 ms.assetid: f1b9cd2f-fa5b-4f34-a237-06d00badf1d1
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _DEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER, *PDEVICEPROPERTYHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's <a href="print.drvdevicepropertysheets">DrvDevicePropertySheets</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ typedef struct _DEVICEPROPERTYHEADER {
 
 Size, in bytes, of the DEVICEPROPERTYHEADER structure.
 
+
 ### -field Flags
 
 Is a set of flags that can be set to the following value: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -71,21 +74,26 @@ Is a set of flags that can be set to the following value:
 <tr>
 <td>
 DPS_NOPERMISSION
+
 </td>
 <td>
 If set, the user is not permitted to update device settings.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field hPrinter
 
 Printer handle.
 
+
 ### -field pszPrinterName
 
 Pointer to a NULL-terminated string representing a printer name.
+
 
 ## -remarks
 
@@ -95,6 +103,7 @@ Pointer to a NULL-terminated string representing a printer name.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

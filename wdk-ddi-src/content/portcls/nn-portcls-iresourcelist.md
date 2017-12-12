@@ -39,8 +39,11 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>IResourceList</code> interface provides an abstraction of a configuration resource list, which is a list of the system hardware resources that the Plug and Play manager assigns to a device at startup time. The resources in the list can include interrupt vectors, DMA channels, I/O port addresses, and blocks of bus-relative memory addresses. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563856">Starting a Device in a Function Driver</a>.
+
 The PortCls system driver implements the <code>IResourceList</code> interface and exposes it to adapter drivers. When PortCls calls an adapter driver's device-startup routine (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563849">Starting a Device</a>), it passes an <code>IResourceList</code> object as one of the call parameters. 
+
 The header file portcls.h defines set of macros to simplify the handling of resource list objects. For each type of resource, the following four macros are defined:
+
 
 
 ## -syntax
@@ -72,6 +75,7 @@ NTSTATUS
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IResourceList</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
 
+
 ## -remarks
 
 
@@ -80,6 +84,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IResourceList</b> interface i
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\pep_coordinated_idle_state.htm
 old-project: kernel
 ms.assetid: 0B3B53F8-2D1E-430B-9C51-E35465899811
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _PEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE, *PPEP_COORDINATED_IDLE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_COORIDNATED_IDLE_STATE</b> structure describes a coordinated idle state to the OS.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _PEP_COORDINATED_IDLE_STATE {
 
 The latency of waking from this idle state, in 100ns units.
 
+
 ### -field BreakEvenDuration
 
 Supplies the minimum time the state must be entered to amortize the cost of entering/exiting the state. Idle durations longer than this period should save power when compared to entering a lighter state for the same period.
+
 
 ### -field DependencyCount
 
 Supplies the number of dependencies this coordinated state has on other coordinated states or on processors.
 
+
 ### -field MaximumDependencySize
 
 Supplies the maximum size of a single dependency.
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ Supplies the maximum size of a single dependency.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -106,5 +114,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_COORDINATED_IDLE_STATE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_COORDINATED_IDLE_STATE structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

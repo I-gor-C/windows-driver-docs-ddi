@@ -39,8 +39,11 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 <code>IPortClsPnp</code> is the PnP management interface that the port class driver (PortCls) exposes to the adapter.
+
 For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.
+
 The <code>IPortClsPnp</code> interface is available in Windows 10, version 1511 and later versions of Windows. 
+
 
 
 ## -inheritance
@@ -53,6 +56,7 @@ The <code>RegisterAdapterPowerManagement</code> method registers the PnP managem
 The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.
 
  
+
 
 ## -members
 The <b>IPortClsPnp</b> interface has these methods.
@@ -67,6 +71,7 @@ The <b>IPortClsPnp</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <code>RegisterAdapterPowerManagement</code> method registers the PnP management interface of the adapter with PortCls.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -75,6 +80,7 @@ The <code>RegisterAdapterPowerManagement</code> method registers the PnP managem
 </td>
 <td align="left" width="63%">
 The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.
+
 </td>
 </tr>
 </table>The <code>RegisterAdapterPowerManagement</code> method registers the PnP management interface of the adapter with PortCls.
@@ -82,6 +88,7 @@ The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP man
 The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.
 
  
+
 
 ## -remarks
 
@@ -91,6 +98,7 @@ The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP man
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

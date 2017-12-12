@@ -7,7 +7,7 @@ old-location: storage\sm_addport_in.htm
 old-project: storage
 ms.assetid: 29b05fa7-0393-47df-a77e-63745c0cd1e1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SM_AddPort_IN, SM_AddPort_IN, *PSM_AddPort_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The SM_AddPort_IN structure is used to provide input parameters to the SM_AddPort WMI method.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _SM_AddPort_IN {
 
 A worldwide name (WWN) that indicates the port whose events are to be reported.
 
+
 ### -field EventType
 
 An event type value.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ An event type value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 6259CC70-A54B-4A44-B38B-D24C296C8EA0
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT
+ms.keywords: _HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Describes information about a hub from its parent device. 
 
 
+
 ## -syntax
 
 ````
@@ -71,63 +72,78 @@ typedef struct _HUB_INFO_FROM_PARENT {
 
 A pointer to the WDM device object of the parent that represents the I/O target.
 
+
 ### -field DeviceDescriptor
 
 A <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
+
 
 ### -field U1ExitLatency
 
 The time to transition from the U1 state. 
 
+
 ### -field U2ExitLatency
 
 The time to transition from the U2 state. 
 
+
 ### -field ExitLatencyOfSlowestLinkForU1
 
 The exit latency for the slowest link for U1 transition.
+
 
 ### -field DepthOfSlowestLinkForU1
 
 The depth of the hub based on which the latency
         for the slowest link is calculated for a U1 transition.
 
+
 ### -field ExitLatencyOfSlowestLinkForU2
 
 The exit latency for the slowest link for U2 transition.
+
 
 ### -field DepthOfSlowestLinkForU2
 
 The depth of the hub based on which the latency
         for the slowest link is calculated for a U2 transition.
 
+
 ### -field HostInitiatedU1ExitLatency
 
 Host-initiated exit latency to transition from the U1 state. 
+
 
 ### -field HostInitiatedU2ExitLatency
 
 Host-initiated exit latency to transition from the U2 state. 
 
+
 ### -field TotalHubDepth
 
 Total hub depth.
+
 
 ### -field TotalTPPropogationDelay
 
 The total TP propagation delay.
 
+
 ### -field HubFlags
 
 A bitwise-OR of <a href="buses._parent_hub_flags">PARENT_HUB_FLAGS</a> flags.
+
 
 ### -field SublinkSpeedAttr
 
 A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h
 
+
 ### -field SublinkSpeedAttrCount
 
 The count of sublink speed attributes.
+
 
 ## -remarks
 
@@ -137,6 +153,7 @@ The count of sublink speed attributes.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

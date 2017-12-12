@@ -7,7 +7,7 @@ old-location: kernel\iocreatesystemthread.htm
 old-project: kernel
 ms.assetid: B2879353-3917-46AA-89CC-A20F0BB78BC4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoCreateSystemThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoCreateSystemThread</b> routine creates a system thread that executes in kernel mode, and supplies a handle for the thread.
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ NTSTATUS IoCreateSystemThread(
 
 A pointer to the <a href="kernel.device_object">DEVICE_OBJECT</a> or <a href="kernel.driver_object">DRIVER_OBJECT</a> to associate with          the created thread. <b>IoCreateSystemThread</b> takes a counted reference to this object. The I/O manager later releases this reference when the thread exits. For more information, see Remarks.
 
+
 ### -param ThreadHandle [out]
 
 A pointer to a variable to which the routine writes the kernel handle for the created thread. When the handle is no longer needed, the driver must close the handle by calling the <a href="kernel.zwclose">ZwClose</a> routine.
+
 
 ### -param DesiredAccess [in]
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the types of access the caller requests to the created thread.
 
+
 ### -param ObjectAttributes [in, optional]
 
 A pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the thread object's attributes. The OBJ_PERMANENT, OBJ_EXCLUSIVE, and OBJ_OPENIF attributes are not valid attributes for a thread object. If the caller is not running in the system process context, it must set the OBJ_KERNEL_HANDLE attribute in the <b>OBJECT_ATTRIBUTES</b> structure.
+
 
 ### -param ProcessHandle [in, optional]
 
 An open handle for the process in whose address space the created thread is to run. The caller's thread must have PROCESS_CREATE_THREAD access to this process. If this parameter is <b>NULL</b>, the thread will be created in the initial system process. This parameter should be <b>NULL</b> for a driver-created thread. Use the <b>NtCurrentProcess</b> macro, defined in the Wdm.h header file, to specify the current process.
 
+
 ### -param ClientId [out, optional]
 
 A pointer to a structure to which the routine writes the client identifier for the created thread. This parameter should be <b>NULL</b> for a driver-created thread.
+
 
 ### -param StartRoutine [in]
 
 A pointer to a <a href="kernel.threadstart">ThreadStart</a> routine that is the entry point for the created thread.
 
+
 ### -param StartContext [in, optional]
 
 A context pointer that is passed as the <i>StartContext</i> parameter to the <a href="kernel.threadstart">ThreadStart</a> routine when the created thread starts to run.
+
 
 ## -returns
 <b>IoCreateSystemThread</b> returns STATUS_SUCCESS if the new thread was successfully created. Possible return values include the following error status codes.
@@ -106,6 +115,7 @@ A context pointer that is passed as the <i>StartContext</i> parameter to the <a 
 
  
 
+
 ## -remarks
 Starting with Windows 8, a driver can call <b>IoCreateSystemThread</b> to create a device-dedicated thread.
      This routine creates a new system thread that has no thread environment block (TEB) or user-mode context, and runs only in kernel mode.
@@ -120,11 +130,13 @@ Driver routines that run in a process context other than that of the system proc
 
 In contrast to a system thread that is created by the <a href="kernel.pscreatesystemthread">PsCreateSystemThread</a> routine, a thread created by <b>IoCreateSystemThread</b> does not call the <a href="kernel.psterminatesystemthread">PsTerminateSystemThread</a> routine to terminate itself. Instead, the I/O manager calls <b>PsTerminateSystemThread</b> on behalf of the created thread when the thread exits.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -135,14 +147,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -153,6 +168,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -163,6 +179,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -173,9 +190,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -211,5 +230,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateSystemThread routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateSystemThread routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

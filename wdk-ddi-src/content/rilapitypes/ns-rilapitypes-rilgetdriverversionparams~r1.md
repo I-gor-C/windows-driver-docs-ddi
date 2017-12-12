@@ -7,8 +7,8 @@ old-location: netvista\rilgetdriverversionparams_2.htm
 old-project: netvista
 ms.assetid: b396b12e-f8c4-4e5e-b3c4-9822bcd996a4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct _RILGETDRIVERVERSIONPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

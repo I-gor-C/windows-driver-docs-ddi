@@ -7,8 +7,8 @@ old-location: display\d3ddrawprimitives2.htm
 old-project: display
 ms.assetid: 6128ff7a-0d2c-48df-8b5e-cab33c5a74f5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS
+ms.date: 12/8/2017
+ms.keywords: _D3DTRANSFORMCAPS, D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3dDrawPrimitives2</b> function renders primitives and returns the updated render state.
 
 
+
 ## -prototype
 
 ````
@@ -58,6 +59,7 @@ DWORD APIENTRY D3dDrawPrimitives2(
 ### -param pdp [in]
 
 Points to a <a href="display.d3dhal_drawprimitives2data">D3DHAL_DRAWPRIMITIVES2DATA</a> structure that contains the information required for the driver to render one or more primitives.
+
 
 ## -returns
 <b>D3dDrawPrimitives2</b> returns one of the following callback codes:
@@ -104,11 +106,13 @@ The following example shows when <b>D3dDrawPrimitives2</b> should stall on an ex
 
 The following example shows when <b>D3dDrawPrimitives2</b> should not stall on an explicit current vertex buffer:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +123,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -168,5 +173,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20LPD3DHAL_DRAWPRIMITIVES2CB callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20LPD3DHAL_DRAWPRIMITIVES2CB callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_initialize.htm
 old-project: display
 ms.assetid: 697F4A4C-349E-46E5-B891-215C4AFFC4B6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKVGPU_ESCAPE_INITIALIZE, DXGKVGPU_ESCAPE_INITIALIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to initialize an escape.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DXGKVGPU_ESCAPE_INITIALIZE {
 
 The header that is being operated over.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The header that is being operated over.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\iogetdeviceobjectpointer.htm
 old-project: kernel
 ms.assetid: aeb088f3-92c3-4619-9c3b-756bd70307e7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoGetDeviceObjectPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoGetDeviceObjectPointer</b> routine returns a pointer to the top object in the named device object's stack and a pointer to the corresponding file object, if the requested access to the objects can be granted.
 
 
+
 ## -syntax
 
 ````
@@ -60,35 +61,44 @@ NTSTATUS IoGetDeviceObjectPointer(
 
 Pointer to a buffer that contains a Unicode string that is the name of the device object.
 
+
 ### -param DesiredAccess [in]
 
 Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the desired access. Usually <i>DesiredAccess</i> is FILE_READ_DATA. Infrequently, the FILE_WRITE_DATA, or FILE_ALL_ACCESS access rights are specified.
+
 
 ### -param FileObject [out]
 
 Pointer to the file object that represents the corresponding device object to user-mode code if the call is successful.
 
+
 ### -param DeviceObject [out]
 
 Pointer to the device object that represents the named logical, virtual, or physical device if the call is successful.
+
 
 ## -returns
 <b>IoGetDeviceObjectPointer</b> returns STATUS_SUCCESS if it is successful. Possible error return values include the following status codes:
 <dl>
 <dd>
 STATUS_OBJECT_TYPE_MISMATCH
+
 </dd>
 <dd>
 STATUS_INVALID_PARAMETER
+
 </dd>
 <dd>
 STATUS_PRIVILEGE_NOT_HELD
+
 </dd>
 <dd>
 STATUS_INSUFFICIENT_RESOURCES
+
 </dd>
 <dd>
 STATUS_OBJECT_NAME_INVALID
+
 </dd>
 </dl>STATUS_OBJECT_TYPE_MISMATCH
 
@@ -99,6 +109,7 @@ STATUS_PRIVILEGE_NOT_HELD
 STATUS_INSUFFICIENT_RESOURCES
 
 STATUS_OBJECT_NAME_INVALID
+
 
 ## -remarks
 <b>IoGetDeviceObjectPointer</b> establishes a "connection" between the caller and the next-lower-level driver. A successful caller can use the returned device object pointer to initialize its own device objects. It can also be used as an argument to <a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>, <a href="kernel.iocalldriver">IoCallDriver</a>, and any routine that creates IRPs for lower drivers. The returned pointer is a required argument to <b>IoCallDriver</b>.
@@ -111,11 +122,13 @@ After any higher-level driver has chained itself over another driver by successf
 
 Callers of <b>IoGetDeviceObjectPointer</b> must be running at IRQL = PASSIVE_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -126,14 +139,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,6 +160,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -154,6 +171,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -164,14 +182,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqliopassive5">IrqlIoPassive5</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -207,5 +228,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceObjectPointer routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceObjectPointer routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

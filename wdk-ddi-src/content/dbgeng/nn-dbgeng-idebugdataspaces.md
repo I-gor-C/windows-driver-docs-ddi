@@ -7,7 +7,7 @@ old-location: debugger\idebugdataspaces.htm
 old-project: debugger
 ms.assetid: 9477821c-4f4f-4ea2-9968-d43f87c496b2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,6 +87,7 @@ Writes data to the target's virtual address space.
 
  
 
+
 ## -members
 The <b>IDebugDataSpaces</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -100,6 +101,7 @@ The <b>IDebugDataSpaces</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Checks for memory corruption in the low 4 GB of memory.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -108,6 +110,7 @@ Checks for memory corruption in the low 4 GB of memory.
 </td>
 <td align="left" width="63%">
 Reads data from a system bus.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -116,6 +119,7 @@ Reads data from a system bus.
 </td>
 <td align="left" width="63%">
 Reads implementation-specific system data.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -124,6 +128,7 @@ Reads implementation-specific system data.
 </td>
 <td align="left" width="63%">
 Returns information about the target that the debugger engine has queried or determined during the current session.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -132,6 +137,7 @@ Returns information about the target that the debugger engine has queried or det
 </td>
 <td align="left" width="63%">
 Reads from the system and bus I/O memory.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -140,6 +146,7 @@ Reads from the system and bus I/O memory.
 </td>
 <td align="left" width="63%">
 Reads a specified Model-Specific Register (MSR).
+
 </td>
 </tr>
 <tr data="declared;">
@@ -148,6 +155,7 @@ Reads a specified Model-Specific Register (MSR).
 </td>
 <td align="left" width="63%">
 Reads the target's memory from the specified physical address.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -157,6 +165,7 @@ Reads the target's memory from the specified physical address.
 <td align="left" width="63%">
  Reads pointers from the target's virtual address space.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -165,6 +174,7 @@ Reads the target's memory from the specified physical address.
 </td>
 <td align="left" width="63%">
 Returns data about the specified processor.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -173,6 +183,7 @@ Returns data about the specified processor.
 </td>
 <td align="left" width="63%">
 Reads memory from the target's virtual address space.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -181,6 +192,7 @@ Reads memory from the target's virtual address space.
 </td>
 <td align="left" width="63%">
 Reads memory from the target's virtual address space.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -189,6 +201,7 @@ Reads memory from the target's virtual address space.
 </td>
 <td align="left" width="63%">
 Searches the target's virtual memory for a specified pattern of bytes.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -197,6 +210,7 @@ Searches the target's virtual memory for a specified pattern of bytes.
 </td>
 <td align="left" width="63%">
 Writes data to a system bus.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -205,6 +219,7 @@ Writes data to a system bus.
 </td>
 <td align="left" width="63%">
 Writes implementation-specific system data.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -213,6 +228,7 @@ Writes implementation-specific system data.
 </td>
 <td align="left" width="63%">
 Writes to the system and bus I/O memory.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -221,6 +237,7 @@ Writes to the system and bus I/O memory.
 </td>
 <td align="left" width="63%">
 Writes a value to the specified Model-Specific Register (MSR).
+
 </td>
 </tr>
 <tr data="declared;">
@@ -229,6 +246,7 @@ Writes a value to the specified Model-Specific Register (MSR).
 </td>
 <td align="left" width="63%">
 Writes data to the specified physical address in the target's memory.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -237,6 +255,7 @@ Writes data to the specified physical address in the target's memory.
 </td>
 <td align="left" width="63%">
 Writes pointers to the target's virtual address space.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -245,6 +264,7 @@ Writes pointers to the target's virtual address space.
 </td>
 <td align="left" width="63%">
 Writes data to the target's virtual address space.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -253,6 +273,7 @@ Writes data to the target's virtual address space.
 </td>
 <td align="left" width="63%">
 Writes data to the target's virtual address space.
+
 </td>
 </tr>
 </table>Checks for memory corruption in the low 4 GB of memory.
@@ -298,6 +319,7 @@ Writes data to the target's virtual address space.
 
  
 
+
 ## -remarks
 
 
@@ -306,6 +328,7 @@ Writes data to the target's virtual address space.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -328,5 +351,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

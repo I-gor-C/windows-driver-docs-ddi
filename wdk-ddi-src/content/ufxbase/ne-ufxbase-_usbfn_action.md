@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 9E9AB3E0-EBDC-4EC3-BFBF-C78EE56BD699
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBFN_ACTION, *PUSBFN_ACTION, USBFN_ACTION
+ms.keywords: _USBFN_ACTION, USBFN_ACTION, *PUSBFN_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Defines special actions UFX should take when the client driver calls the <a href="buses.ufxdeviceportdetectcompleteex">UfxDevicePortDetectCompleteEx</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _USBFN_ACTION {
 
 No special action should be taken.
 
+
 ### -field UsbfnActionNoCad
 
 UFX should not notify the battery manager about the detected port type or the maximum current that can be drawn from the upstream port.
 
+
 ### -field UsbfnActionDetectProprietaryCharger
 
 UFX should initiate proprietary charger detection by calling the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback function.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ UFX should initiate proprietary charger detection by calling the client driver�
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

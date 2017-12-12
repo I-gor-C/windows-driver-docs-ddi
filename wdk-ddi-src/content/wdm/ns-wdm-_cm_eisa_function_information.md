@@ -7,8 +7,8 @@ old-location: kernel\cm_eisa_function_information.htm
 old-project: kernel
 ms.assetid: 06034776-4faf-4918-b9ec-bc095455cf14
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _CM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION
+ms.date: 12/7/2017
+ms.keywords: _CM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>CM_EISA_FUNCTION_INFORMATION</b> structure defines detailed EISA configuration information returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a> for the input <i>BusDataType </i><b>EisaConfiguration</b>, or by <b>HalGetBusDataByOffset</b> for the input <i>BusDataType </i><b>EisaConfiguration</b> and the <i>Offset</i> zero, assuming the caller-allocated <i>Buffer</i> is of sufficient <i>Length</i>.
 
 
+
 ## -syntax
 
 ````
@@ -69,74 +70,96 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 
 The EISA compressed identification of the device at this slot. The value is identical to the <b>CompressedId</b> member of the <a href="kernel.cm_eisa_slot_information">CM_EISA_SLOT_INFORMATION</a> structure.
 
+
 ### -field IdSlotFlags1
 
 The EISA slot identification flags.
+
 
 ### -field IdSlotFlags2
 
 The EISA slot identification flags.
 
+
 ### -field MinorRevision
 
 Information supplied by the manufacturer. 
+
 
 ### -field MajorRevision
 
 Information supplied by the manufacturer. 
 
+
 ### -field Selections
 
 The EISA selections for the device.
 
+
 ### -field FunctionFlags
 
 Indicates which of the members has available information. Callers can use the following system-defined masks to determine whether a particular type of configuration information can be or has been returned by <b>HalGetBusData</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>:
+
 <dl>
 <dd>
 EISA_FUNCTION_ENABLED
+
 </dd>
 <dd>
 EISA_FREE_FORM_DATA
+
 </dd>
 <dd>
 EISA_HAS_PORT_INIT_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_PORT_RANGE
+
 </dd>
 <dd>
 EISA_HAS_DMA_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_IRQ_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_MEMORY_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_TYPE_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_INFORMATION
+
 </dd>
 </dl>
 The EISA_HAS_INFORMATION mask is a combination of the following:
+
 <dl>
 <dd>
 EISA_HAS_PORT_RANGE
+
 </dd>
 <dd>
 EISA_HAS_DMA_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_IRQ_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_MEMORY_ENTRY
+
 </dd>
 <dd>
 EISA_HAS_TYPE_ENTRY
+
 </dd>
 </dl>
 
@@ -144,9 +167,11 @@ EISA_HAS_TYPE_ENTRY
 
 Specifies the type of device.
 
+
 ### -field EisaMemory
 
 Describes the EISA device memory configuration information, defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -167,6 +192,7 @@ Describes the EISA device memory configuration information, defined as follows:
 ### -field EisaIrq
 
 Describes the EISA interrupt configuration information, defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -184,6 +210,7 @@ Describes the EISA interrupt configuration information, defined as follows:
 ### -field EisaDma
 
 Describes the EISA DMA configuration information, defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -201,6 +228,7 @@ Describes the EISA DMA configuration information, defined as follows:
 ### -field EisaPort
 
 Describes the EISA device port configuration information, defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -219,14 +247,17 @@ Describes the EISA device port configuration information, defined as follows:
 
 Vendor-supplied, device-specific initialization data, if any. 
 
+
 ## -remarks
 The information returned by <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> in <b>CM_EISA_FUNCTION_INFORMATION</b> and/or in the <a href="kernel.cm_eisa_slot_information">CM_EISA_SLOT_INFORMATION</a> header immediately preceding it is read-only.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -249,5 +280,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_EISA_FUNCTION_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_EISA_FUNCTION_INFORMATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

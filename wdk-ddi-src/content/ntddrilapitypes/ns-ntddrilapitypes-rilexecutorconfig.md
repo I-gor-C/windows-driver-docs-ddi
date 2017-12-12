@@ -7,8 +7,8 @@ old-location: netvista\rilexecutorconfig.htm
 old-project: netvista
 ms.assetid: d53c3df2-fd75-4008-a740-0afa293e36eb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG, RILEXECUTORCONFIG
+ms.date: 12/8/2017
+ms.keywords: RILEXECUTORCONFIG, RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILEXECUTORCONFIG {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

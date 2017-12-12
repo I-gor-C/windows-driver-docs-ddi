@@ -7,7 +7,7 @@ old-location: display\d3d11_ddi_shader_min_precision_support_data.htm
 old-project: display
 ms.assetid: e93649d1-4ad0-4873-99c7-b2f3ed48aac6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes precision support options for shaders in the user-mode display driver.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA {
 
 A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_shader_min_precision.md">D3D11_DDI_SHADER_MIN_PRECISION</a> that are combined by using a bitwise <b>OR</b> operation. The resulting value specifies minimum precision levels that the driver supports for the pixel shader. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.
 
+
 ### -field AllOtherStagesMinPrecision
 
 A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_shader_min_precision.md">D3D11_DDI_SHADER_MIN_PRECISION</a> that are combined by using a bitwise <b>OR</b> operation. The resulting value specifies minimum precision levels that the driver supports for all other stages in the video processing pipeline that are not pixel shaders. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_s
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

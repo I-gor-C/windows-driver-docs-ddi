@@ -7,7 +7,7 @@ old-location: display\idarg_in_getdefaultdescriptionmodes.htm
 old-project: display
 ms.assetid: 4d0a1f81-efc0-40aa-9dde-b9cac64afb8b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_GETDEFAULTDESCRIPTIONMODES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
          
 
 
+
 ## -syntax
 
 ````
@@ -60,10 +61,12 @@ typedef struct IDARG_IN_GETDEFAULTDESCRIPTIONMODES {
 [in] The number of monitor modes the <b>pDefaultsMonitorModes</b> buffer being passed into the driver can hold. A value of zero indicates that the driver should not copy the monitor mode list into the provided buffer, but should set the output buffer size to the size required.
                  
 
+
 ### -field pDefaultMonitorModes
 
 [out]
                      Pointer to the buffer that the driver should copy the monitor modes to if the value is non-NULL. If value is NULL, then driver should not copy any data and should just set <b>DefaultMonitorModeBufferOutputCount</b> to indicate the size of buffer required to store the modes.
+
 
 ## -remarks
 
@@ -73,6 +76,7 @@ typedef struct IDARG_IN_GETDEFAULTDESCRIPTIONMODES {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

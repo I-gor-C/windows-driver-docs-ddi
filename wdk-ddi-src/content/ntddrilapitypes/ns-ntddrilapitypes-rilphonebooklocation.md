@@ -7,7 +7,7 @@ old-location: netvista\rilphonebooklocation.htm
 old-project: netvista
 ms.assetid: a4d47312-87e2-4147-94f6-ff9c9d452211
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION, *LPRILPHONEBOOKLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -75,6 +76,7 @@ typedef struct _RILPHONEBOOKLOCATION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

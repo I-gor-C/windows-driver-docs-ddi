@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: e7be6cb6-a59d-4244-ba36-e7d5b36b1416
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES
+ms.keywords: _FLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FLT_VOLUME_PROPERTIES structure is passed as a parameter to <a href="ifsk.fltgetvolumeproperties">FltGetVolumeProperties</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -63,47 +64,60 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 ### -field DeviceType
 
 Receives the device type of the volume. Must be a valid storage device type, such as one of the following values defined in ntifs.h: 
+
 <dl>
 <dd>
 FILE_DEVICE_CD_ROM
+
 </dd>
 <dd>
 FILE_DEVICE_DISK
+
 </dd>
 <dd>
 FILE_DEVICE_DVD
+
 </dd>
 <dd>
 FILE_DEVICE_MASS_STORAGE
+
 </dd>
 <dd>
 FILE_DEVICE_NETWORK
+
 </dd>
 <dd>
 FILE_DEVICE_VIRTUAL_DISK
+
 </dd>
 </dl>
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>. 
+
 
 ### -field DeviceCharacteristics
 
 Receives the device characteristics of the volume. For more information, see the reference entry for <a href="kernel.iocreatedevice">IoCreateDevice</a>. 
 
+
 ### -field DeviceObjectFlags
 
 Receives the device object flags for the volume. For more information about these flags, see the reference entries for <a href="ifsk.ioregisterfilesystem">IoRegisterFileSystem</a> and <a href="kernel.device_object">DEVICE_OBJECT</a>. 
+
 
 ### -field AlignmentRequirement
 
 Receives the buffer alignment required by the underlying device. The value must be one of the FILE_<i>xxxx</i>_ALIGNMENT values defined in ntifs.h. For more information, see <a href="kernel.device_object">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. 
 
+
 ### -field SectorSize
 
 Receives the volume sector size, in bytes. 
 
+
 ### -field Flags
 
 Provides additional description of the volume. This member can be zero or one of the following flags. In versions prior to Windows 10, version 1607, this member was named <b>Reserved0</b> and reserved for system use.
+
 <table>
 <tr>
 <th>Value</th>
@@ -116,23 +130,28 @@ Provides additional description of the volume. This member can be zero or one of
 </td>
 <td width="60%">
 This flag indicates that the volume is a direct access (DAX) volume.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field FileSystemDriverName
 
 
 <a href="kernel.unicode_string">UNICODE_STRING</a> structure that receives the service name of the file system that is mounted on this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="ifsk.fltgetvolumeproperties">FltGetVolumeProperties</a>. 
 
+
 ### -field FileSystemDeviceName
 
 UNICODE_STRING structure that receives the name of the file system device object associated with this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="ifsk.fltgetvolumeproperties">FltGetVolumeProperties</a>. 
 
+
 ### -field RealDeviceName
 
 UNICODE_STRING structure that receives the name of the storage device object associated with this volume. This structure is empty for network file systems. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="ifsk.fltgetvolumeproperties">FltGetVolumeProperties</a>. 
+
 
 ## -remarks
 Storage for the FLT_VOLUME_PROPERTIES structure is typically allocated from paged pool. 
@@ -141,11 +160,13 @@ To get the volume name for a given volume, call <a href="ifsk.fltgetvolumename">
 
 To get the volume globally unique identifier (GUID) name for a given volume, call <a href="ifsk.fltgetvolumeguidname">FltGetVolumeGuidName</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -178,5 +199,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_VOLUME_PROPERTIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

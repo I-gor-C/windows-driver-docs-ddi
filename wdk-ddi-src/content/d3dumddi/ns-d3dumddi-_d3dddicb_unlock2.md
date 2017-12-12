@@ -7,7 +7,7 @@ old-location: display\d3dddicb_unlock2.htm
 old-project: display
 ms.assetid: 3ACE32ED-75C5-440D-BAA1-470C4E043299
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDICB_UNLOCK2, D3DDDICB_UNLOCK2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 <b>D3DDDICB_UNLOCK2</b> describes an allocation to unlock.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DDDICB_UNLOCK2 {
 
 [in] A driver specified <b>D3DKMT_HANDLE</b> to the allocation to unlock.
 
+
 ## -remarks
 
 
@@ -64,22 +66,27 @@ typedef struct _D3DDDICB_UNLOCK2 {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

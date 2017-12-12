@@ -7,7 +7,7 @@ old-location: display\idarg_in_opm_get_certificate.htm
 old-project: display
 ms.assetid: 0f6ce53f-f755-44f7-b579-ce3526e44c41
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_OPM_GET_CERTIFICATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              OPM certificate.
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,20 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE {
                      [in] Type of certificate the information request is for.
                  
 
+
 ### -field CertificateBufferSizeInBytes
 
 
                      [in] Size of the buffer provided for the driver to copy the certificate to.
                  
 
+
 ### -field pCertificate
 
 
                      [out] A pointer to a buffer that the driver copies the certificate to.
                  
+
 
 ## -remarks
 
@@ -82,6 +86,7 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\miniportinterruptdpc.htm
 old-project: netvista
 ms.assetid: 345715fb-878c-44d8-bf78-f3add10dd02b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ A miniport driver must provide a
    to register an interrupt.
 
 
+
 ## -prototype
 
 ````
@@ -69,6 +70,7 @@ A handle to a block of interrupt context information. The miniport driver suppli
      <a href="netvista.ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
+
 ### -param MiniportDpcContext [in]
 
 A pointer to a context area that the miniport driver supplied when it called the 
@@ -79,6 +81,7 @@ A pointer to a context area that the miniport driver supplied when it called the
      <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function, 
      <i>MiniportDpcContext</i> is <b>NULL</b>.
 
+
 ### -param ReceiveThrottleParameters [in]
 
 A pointer to an 
@@ -87,12 +90,15 @@ A pointer to an
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that a miniport
      driver should indicate in a DPC.
 
+
 ### -param NdisReserved2 [in]
 
 Reserved for NDIS.
 
+
 ## -returns
 None
+
 
 ## -remarks
 Miniport drivers that register an interrupt with the 
@@ -171,19 +177,23 @@ The <b>MINIPORT_INTERRUPT_DPC</b> function type is defined in the Ndis.h header 
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -194,9 +204,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -244,5 +256,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_INTERRUPT_DPC callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_INTERRUPT_DPC callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

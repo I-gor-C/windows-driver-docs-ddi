@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USB_DEVICE_QUALIFIER_DESCRIPTOR</b> structure is used by USB client drivers to retrieve a USB-defined device qualifier descriptor.
 
 
+
 ## -syntax
 
 ````
@@ -65,46 +66,57 @@ typedef struct _USB_DEVICE_QUALIFIER_DESCRIPTOR {
 
 Specifies the length, in bytes, of this descriptor.
 
+
 ### -field bDescriptorType
 
 Specifies the descriptor type. Must be set to <b>USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE</b>.
+
 
 ### -field bcdUSB
 
 Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
 
+
 ### -field bDeviceClass
 
 Specifies the class code of the device as assigned by the USB specification group.
+
 
 ### -field bDeviceSubClass
 
 Specifies the subclass code of the device as assigned by the USB specification group.
 
+
 ### -field bDeviceProtocol
 
 Specifies the protocol code of the device as assigned by the USB specification group.
+
 
 ### -field bMaxPacketSize0
 
 Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.
 
+
 ### -field bNumConfigurations
 
 Specifies the total number of possible configurations for the device.
+
 
 ### -field bReserved
 
 Reserved.
 
+
 ## -remarks
 This structure is similar to <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>, but it contains only those members that can change when the device switches from full-speed operation to high-speed operation or vice versa. If the device is operating at full speed, querying for this descriptor will contain information about how the device would operate at high-speed. If, on the other hand, the device is operating at high-speed, this descriptor will contain information about how the device would operate at full-speed.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +139,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_DEVICE_QUALIFIER_DESCRIPTOR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

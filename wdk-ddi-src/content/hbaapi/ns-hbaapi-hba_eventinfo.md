@@ -7,8 +7,8 @@ old-location: storage\hba_eventinfo.htm
 old-project: storage
 ms.assetid: fc6b73ac-f86c-4978-9d71-9bd8398c116b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: HBA_EventInfo, *PHBA_EVENTINFO, HBA_EVENTINFO
+ms.date: 12/8/2017
+ms.keywords: HBA_EventInfo, HBA_EVENTINFO, *PHBA_EVENTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The HBA_EventInfo structure contains information about an event of the indicated type.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct HBA_EventInfo {
 ### -field EventCode
 
 Contains a code indicating the type of event. The following table lists the values that this member can have:
+
 <table>
 <tr>
 <th>Value</th>
@@ -68,53 +70,66 @@ Contains a code indicating the type of event. The following table lists the valu
 <tr>
 <td>
 HBA_EVENT_LIP_OCCURRED
+
 </td>
 <td>
 A loop initialization primitive event occurred.
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_EVENT_LINK_UP
+
 </td>
 <td>
 A link up event occurred. 
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_EVENT_LINK_DOWN
+
 </td>
 <td>
 A link down event occurred. 
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_EVENT_LIP_RESET_OCCURRED
+
 </td>
 <td>
 A loop initialization primitive resest event occurred.
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_EVENT_RSCN
+
 </td>
 <td>
 An RSCN event occurred.
+
 </td>
 </tr>
 <tr>
 <td>
 HBA_EVENT_PROPRIETARY
+
 </td>
 <td>
 A proprietary event occurred. 
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field Event
 
@@ -123,13 +138,16 @@ A proprietary event occurred.
 
 Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_link_eventinfo.md">HBA_Link_EventInfo</a> that holds information associated with a link event. 
 
+
 ### -field RSCN_EventInfo
 
 Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_rscn_eventinfo.md">HBA_RSCN_EventInfo</a> that holds information associated with a link event.
 
+
 ### -field Pty_EventInfo
 
 Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a> that holds information associated with a link event.
+
 </dd>
 </dl>
 
@@ -141,6 +159,7 @@ Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -163,5 +182,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_EventInfo structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_EventInfo structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

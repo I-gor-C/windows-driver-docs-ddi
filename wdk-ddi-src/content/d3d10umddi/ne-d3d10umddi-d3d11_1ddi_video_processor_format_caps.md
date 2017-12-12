@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_format_caps.htm
 old-project: display
 ms.assetid: b0f36d4c-cf95-4d85-a2c8-267df618e0aa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines capabilities related to input formats for a Microsoft Direct3D 11 video processor.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS {
 
 The video processor can deinterlace an input stream that contains interlaced RGB video.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_PROCAMP
 
 The video processor can perform color adjustment on RGB video.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_LUMA_KEY
 
 The video processor can perform luma keying on RGB video.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED
 
 The video processor can deinterlace input streams with palettized color formats.
+
 
 ## -remarks
 These flags define video processing capabilities that usually are not needed, and that video devices are therefore not required to support.
@@ -78,27 +83,33 @@ The first three flags relate to RGB support for functions that are normally appl
 
 Similarly, a device that supports deinterlacing is not required to support deinterlacing of palettized formats. This capability is indicated by the <b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED</b>  enumeration value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

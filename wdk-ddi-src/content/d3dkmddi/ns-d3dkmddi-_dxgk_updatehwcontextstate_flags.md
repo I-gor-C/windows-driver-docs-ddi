@@ -7,7 +7,7 @@ old-location: display\dxgk_updatehwcontextstate_flags.htm
 old-project: display
 ms.assetid: 23F0679A-05BB-4988-AF83-B6CC91C4CB79
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_UPDATEHWCONTEXTSTATE_FLAGS, DXGK_UPDATEHWCONTEXTSTATE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used to update the HW context state flags.
 
 
+
 ## -syntax
 
 ````
@@ -63,17 +64,21 @@ typedef struct _DXGK_UPDATEHWCONTEXTSTATE_FLAGS {
 
 Used to suspend the context. Otherwise, the context is runnable.
 
+
 ### -field InterruptOnSwitchCompletion
 
 Used when the context state update is effective on the GPU.
+
 
 ### -field Reserved
 
 This value is reserved for system use.
 
+
 ### -field Value
 
 Used to operate over the rest of values.
+
 
 ## -remarks
 
@@ -83,6 +88,7 @@ Used to operate over the rest of values.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

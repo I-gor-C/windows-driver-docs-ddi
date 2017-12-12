@@ -7,7 +7,7 @@ old-location: netvista\rilgsmkind.htm
 old-project: netvista
 ms.assetid: ad88382b-bfb0-46c4-9db7-9adb1ee074a4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILGSMKIND, RILGSMKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef enum _RILGSMKIND {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

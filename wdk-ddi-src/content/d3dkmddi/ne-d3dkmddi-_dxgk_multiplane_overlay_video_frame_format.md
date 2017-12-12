@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_video_frame_format.htm
 old-project: display
 ms.assetid: 072543cd-d11c-4418-884f-a7823c033a17
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT, DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Identifies the overlay plane's video frame format. Only the <b>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</b> value is supported.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT {
 
 Progressive scan format.
 
+
 ### -field DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST
 
 Reserved for system use. Do not use in your driver.
 
+
 ### -field DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST
 
 Reserved for system use. Do not use in your driver.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ Reserved for system use. Do not use in your driver.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

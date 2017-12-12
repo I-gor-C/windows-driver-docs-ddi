@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 GNSS_NI_NOTIFICATION_TYPE enumerates network-initialized (NI) notification types.
 
 
+
 ## -syntax
 
 ````
@@ -60,22 +61,28 @@ typedef enum  {
 
 No notification and no verification.
 
+
 ### -field GNSS_NI_NotifyOnly
 
 Notification only.
+
 
 ### -field GNSS_NI_NotifyVerifyDefaultAllow
 
 Notification and verification allowed on no answer.
 
+
 ### -field GNSS_NI_NotifyVerifyDefaultNotAllow
 
 Notification and verification denied on no answer.
 
+
 ### -field GNSS_NI_PrivacyOverride
 
 Privacy override.
+
 This is used for preventing notification and verification without leaving any traces of a performed position fix or position fix attempt.
+
 
 ## -remarks
 
@@ -85,6 +92,7 @@ This is used for preventing notification and verification without leaving any tr
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

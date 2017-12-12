@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This enumeration indicates the network initiated (NI) request type represented by the <a href="sensors.gnss_ni_request_param">GNSS_NI_REQUEST_PARAM</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum  {
 
 Indicates the request type is single shot.
 
+
 ### -field GNSS_NI_Request_AreaTrigger
 
 Indicates the request type is tracking.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates the request type is tracking.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

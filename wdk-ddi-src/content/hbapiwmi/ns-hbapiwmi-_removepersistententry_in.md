@@ -7,8 +7,8 @@ old-location: storage\removepersistententry_in.htm
 old-project: storage
 ms.assetid: 7019ee37-2080-4ba3-ba39-977e575ec04e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _RemovePersistentEntry_IN, *PRemovePersistentEntry_IN, RemovePersistentEntry_IN
+ms.date: 12/8/2017
+ms.keywords: _RemovePersistentEntry_IN, RemovePersistentEntry_IN, *PRemovePersistentEntry_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The RemovePersistentEntry_IN structure is used by a WMI client to deliver input parameter data to the <a href="storage.removepersistententry">RemovePersistentEntry</a> WMI method.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _RemovePersistentEntry_IN {
 
 Contains a worldwide name that indicates the port for which a persistent binding will be removed. 
 
+
 ### -field Binding
 
 Contains a structure of type <a href="storage.hbafcpbindingentry2">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings. 
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the RemovePersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -85,5 +90,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RemovePersistentEntry_IN structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RemovePersistentEntry_IN structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

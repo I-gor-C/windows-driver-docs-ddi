@@ -7,7 +7,7 @@ old-location: display\dxgkarg_destroyperiodicframenotification.htm
 old-project: display
 ms.assetid: 94797515-3440-46A9-ACBD-09D005A33CE3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION, DXGKARG_DESTROYPERIODICFRAMENOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The arguments used to destroy a periodic frame notification.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION {
 
 A handle to the notification object created by the KMD.
 
+
 ### -field hAdapter
 
 A handle to the adapter that the notification object was created for.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A handle to the adapter that the notification object was created for.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

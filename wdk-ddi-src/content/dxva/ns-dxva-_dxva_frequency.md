@@ -7,7 +7,7 @@ old-location: display\dxva_frequency.htm
 old-project: display
 ms.assetid: 4e7d9746-7dae-4f53-9bf8-e0acc807306a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVA_Frequency, DXVA_Frequency
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXVA_Frequency structure is sent by the host decoder to the driver to specify the video frame rate, in Hz. For example, NTSC TV is 60000 over 1001.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DXVA_Frequency {
 
 Specifies the numerator of the frequency fraction.
 
+
 ### -field Denominator
 
 Specifies the denominator of the frequency fraction.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Specifies the denominator of the frequency fraction.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

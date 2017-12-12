@@ -7,7 +7,7 @@ old-location: display\iddcxdeviceinitconfig.htm
 old-project: display
 ms.assetid: 4789e848-bb95-43e1-9768-8f94a475f9c8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IddCxDeviceInitConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _Must_inspect_result_
                 Creates a WDFDEVICE initialization structure to allow indirect displays to be used.
 
 
+
 ## -syntax
 
 ````
@@ -59,14 +60,17 @@ NTSTATUS IddCxDeviceInitConfig(
 
 The information about the device that is being initialized. 
 
+
 ### -param Config 
 
 The information required about the configuration of the client.
+
 
 ## -returns
 
 (NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
                     
+
 
 ## -remarks
 
@@ -76,22 +80,27 @@ The information required about the configuration of the client.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,9 +111,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _Must_inspect_result_
+
 </td>
 </tr>
 </table>

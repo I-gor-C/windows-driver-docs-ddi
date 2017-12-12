@@ -41,6 +41,7 @@ req.irql:
 The NFC_CX_CLIENT_CONFIG structure is an input parameter to <a href="nfpdrivers._nfccxdeviceinitconfig_">NfcCxDeviceInitConfig</a>.
 
 
+
 ## -syntax
 
 ````
@@ -66,13 +67,16 @@ Size of this structure in bytes.
 
 
 
+
 ### -field IsPowerPolicyOwner
 
  A <a href="wdf.wdf_tri_state">WDF_TRI_STATE</a>-typed enumerator. 
 
+
 ### -field PowerIdleTimeout
 
 IdleTimeout value, in milliseconds. Default is 1 second.
+
 
 
 
@@ -82,9 +86,11 @@ A <a href="wdf.wdf_power_policy_idle_timeout_type">WDF_POWER_POLICY_IDLE_TIMEOUT
 
 
 
+
 ### -field BusType
 
  An <a href="nfpdrivers.nfc_cx_transport_type">NFC_CX_TRANSPORT_TYPE</a>-typed enumerator.
+
 
 
 
@@ -94,9 +100,11 @@ A <a href="wdf.wdf_power_policy_idle_timeout_type">WDF_POWER_POLICY_IDLE_TIMEOUT
 
 
 
+
 ### -field DeviceMode
 
  Device mode.
+
 
 
 
@@ -104,9 +112,11 @@ A <a href="wdf.wdf_power_policy_idle_timeout_type">WDF_POWER_POLICY_IDLE_TIMEOUT
 
 Pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_write_nci_packet.md">EvtNfcCxWriteNciPacket</a> callback.
 
+
 ### -field EvtNfcCxDeviceIoControl
 
 Pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_device_io_control.md">EvtNfcCxDeviceIoControl</a> callback.
+
 
 ## -remarks
 
@@ -116,22 +126,27 @@ Pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_device_io_control.md">EvtNfc
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -147,5 +162,8 @@ Header
 <dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_CLIENT_CONFIG structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>USBCAMD_AdapterReceivePacket</b> function allows USBCAMD to process an adapter-based stream request block (SRB).
 
 
+
 ## -syntax
 
 ````
@@ -60,31 +61,38 @@ PVOID USBCAMD_AdapterReceivePacket(
 
 Pointer to the SRB passed to the camera minidriver's <a href="stream.adapterreceivepacket">AdapterReceivePacket</a> callback function.
 
+
 ### -param DeviceData [in]
 
 Pointer to the <a href="stream.usbcamd_device_data">USBCAMD_DEVICE_DATA</a> structure that contains entry points to the camera minidriver's callback functions.
+
 
 ### -param DeviceObject [in]
 
 Pointer to the device's physical device object (PDO).
 
+
 ### -param NeedsCompletion [in]
 
 Specifies if USBCAMD is to process and complete the SRB request. Specify <b>TRUE</b> if USBCAMD is to complete the SRB request Specify <b>FALSE</b> to make USBCAMD ignore the SRB request and return the device context pointer.
 
+
 ## -returns
 <b>USBCAMD_AdapterReceivePacket</b> returns a pointer to the device-specific context for this instance of the camera.
+
 
 ## -remarks
 Typically, this function is called by the camera minidriver from its <a href="stream.adapterreceivepacket">AdapterReceivePacket</a> routine. 
 
 This function can also be used by the minidriver to retrieve the device context by setting the <i>NeedsCompletion</i> parameter to <b>FALSE</b>. In this case, the <i>DeviceData</i> and <i>DeviceObject</i> parameters are ignored.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,6 +103,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +114,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,5 +134,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_AdapterReceivePacket function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

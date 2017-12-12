@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A minifilter driver can register a routine of type <i>PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</i> as the minifilter driver's <i>InstanceQueryTeardownCallback</i> routine. 
 
 
+
 ## -prototype
 
 ````
@@ -60,9 +61,11 @@ NTSTATUS InstanceQueryTeardownCallback(
 
 Pointer to an <a href="ifsk.flt_related_objects">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current operation. 
 
+
 ### -param Flags [in]
 
 Bitmask of flags that describe why the given instance query teardown callback routine was called. No flags are currently defined. 
+
 
 ## -returns
 This callback routine returns <b>STATUS_SUCCESS</b> or an <b>NTSTATUS</b> value such as one of the following: 
@@ -71,6 +74,7 @@ This callback routine returns <b>STATUS_SUCCESS</b> or an <b>NTSTATUS</b> value 
 </dl>Returning this status value prevents the minifilter driver instance from being detached. This is an error code. 
 
  
+
 
 ## -remarks
 When a minifilter driver registers itself by calling <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine, it can register a routine of type <i>PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</i> as the minifilter driver's <i>InstanceQueryTeardownCallback</i> routine. 
@@ -85,11 +89,13 @@ If this routine returns an error or warning <b>NTSTATUS</b> code, such as <b>STA
 
 If a minifilter driver does not define an <i>InstanceQueryTeardownCallback</i> routine, its instances cannot be detached manually by calling <a href="ifsk.filterdetach">FilterDetach</a> or <a href="ifsk.fltdetachvolume">FltDetachVolume</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,6 +106,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +117,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -142,5 +151,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: debugger\readcontrolspace64.htm
 old-project: debugger
 ms.assetid: 4fa3d51a-d2f5-4b5f-abc0-515bf7211b87
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: ReadControlSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ReadControlSpace64</b> function reads the processor-specific control space into the array pointed to by <i>buf</i>.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ __inline VOID ReadControlSpace64(
 
 Specifies the number of the processor whose control space is to be read.
 
+
 ### -param address 
 
 Specifies the address of the control space.
+
 
 ### -param buf 
 
 Specifies the address of an array of bytes to hold the control space data.
 
+
 ### -param size 
 
 Specifies the number of bytes in the array pointed to by <i>buf</i>.
+
 
 ## -returns
 None
@@ -85,19 +90,27 @@ The <b>ReadTypedControlSpace64</b> macro is a thin wrapper around the <b>ReadCon
 <dl>
 <dd>
 <i>_Proc</i>
+
 Specifies the number of the processor whose control space is to be read.
+
 </dd>
 <dd>
 <i>_Addr</i>
+
 Specifies the address of the control space.
+
 </dd>
 <dd>
 <i>_Buf</i>
+
 Specifies the object into which the control space data is read.
+
 </dd>
 <dd>
 <b>Return value</b>
+
 This macro does not return a value.
+
 
 
 </dd>
@@ -131,19 +144,27 @@ The <b>ReadTypedControlSpace64</b> macro is a thin wrapper around the <b>ReadCon
 <dl>
 <dd>
 <i>_Proc</i>
+
 Specifies the number of the processor whose control space is to be read.
+
 </dd>
 <dd>
 <i>_Addr</i>
+
 Specifies the address of the control space.
+
 </dd>
 <dd>
 <i>_Buf</i>
+
 Specifies the object into which the control space data is read.
+
 </dd>
 <dd>
 <b>Return value</b>
+
 This macro does not return a value.
+
 
 
 </dd>
@@ -166,6 +187,7 @@ This macro does not return a value.
 
 
 The parameters provided to this macro are the same as those provided to the <b>ReadControlSpace64</b> function except that instead of providing a pointer to a structure and its size, the structure can be provided directly.
+
 
 ## -remarks
 If you are writing 32-bit code, you should use <a href="debugger.readcontrolspace">ReadControlSpace</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
@@ -189,11 +211,13 @@ Specifies the object into which the control space data is read.
 
 <b>Return value</b>
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -204,6 +228,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

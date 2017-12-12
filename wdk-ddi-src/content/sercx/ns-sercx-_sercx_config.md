@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SERCX_CONFIG</b> structure contains configuration information for the serial framework extension (SerCx).
 
 
+
 ## -syntax
 
 ````
@@ -69,70 +70,87 @@ typedef struct _SERCX_CONFIG {
 
 The size, in bytes, of this structure. The <a href="serports.sercxinitialize">SerCxInitialize</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
+
 ### -field PowerManaged
 
 Whether the controller queue should be power-managed. If set to <b>WdfTrue</b>, the controller queue should be power-managed.  If set to <b>WdfFalse</b>, the controller queue not be power-managed. If set to <b>WdfDefault</b>, the controller queue should be power-managed unless the driver calls the <a href="kmdf.wdffdoinitsetfilter">WdfFdoInitSetFilter</a> method. For more information, see the description of the <b>PowerManaged</b> member in <a href="kmdf.wdf_io_queue_config">WDF_IO_QUEUE_CONFIG</a>.
+
 
 ### -field EvtSerCxFileOpen
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_fileopen.md">EvtSerCxFileOpen</a> callback function. This member is optional and can be set to NULL.
 
+
 ### -field EvtSerCxFileClose
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_fileclose.md">EvtSerCxFileClose</a> callback function. This member is optional and can be set to NULL.
+
 
 ### -field EvtSerCxFileCleanup
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_filecleanup.md">EvtSerCxFileCleanup</a> callback function. This member is optional and can be set to NULL.
 
+
 ### -field EvtSerCxTransmit
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_transmit.md">EvtSerCxTransmit</a> callback function. This member is required to point to a valid callback function.
+
 
 ### -field EvtSerCxReceive
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_receive.md">EvtSerCxReceive</a> callback function. This member is required to point to a valid callback function.
 
+
 ### -field EvtSerCxWaitmask
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a> callback function. This member is required to point to a valid callback function.
+
 
 ### -field EvtSerCxPurge
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_purge.md">EvtSerCxPurge</a> callback function. This member is optional and can be set to NULL.
 
+
 ### -field EvtSerCxControl
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_control.md">EvtSerCxControl</a> callback function. This member is required to point to a valid callback function.
+
 
 ### -field EvtSerCxApplyConfig
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_apply_config.md">EvtSerCxApplyConfig</a> callback function. This member is required to point to a valid callback function.
 
+
 ### -field EvtSerCxTransmitCancel
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_transmit_cancel.md">EvtSerCxTransmitCancel</a> callback function. This member is optional and can be set to NULL.
+
 
 ### -field EvtSerCxReceiveCancel
 
 A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_receive_cancel.md">EvtSerCxReceiveCancel</a> callback function. This member is optional and can be set to NULL.
 
+
 ## -remarks
 Before this structure is passed to the <a href="serports.sercxinitialize">SerCxInitialize</a> method, it must be initialized by the <a href="serports.sercx_config_init">SERCX_CONFIG_INIT</a> function, and then modified by the controller driver to set the callback function pointers and the <b>PowerManaged</b> member.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -191,5 +209,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERCX_CONFIG structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsaveend.htm
 old-project: netvista
 ms.assetid: 0E61AF98-DC71-4234-B337-71B2AF65D858
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbChannelSaveEnd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbChannelSaveEnd</b> function cleans up any resources that were allocated for saving state of a channel.
+
 
 
 ## -syntax
@@ -60,8 +62,10 @@ VOID VmbChannelSaveEnd(
 <dd>
 A handle of the channel that was saved. 
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -71,38 +75,47 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

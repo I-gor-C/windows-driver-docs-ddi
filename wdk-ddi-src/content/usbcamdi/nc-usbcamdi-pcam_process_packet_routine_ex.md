@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 A camera minidriver's <b>CamProcessUSBPacketEx</b> callback function processes a USB packet.
 
 
+
 ## -prototype
 
 ````
@@ -69,37 +70,46 @@ ULONG CamProcessUSBPacketEx(
 
 Pointer to the camera minidriver's device object created by the USB hub.
 
+
 ### -param DeviceContext 
 
 Pointer to the camera minidriver's device context.
+
 
 ### -param CurrentFrameContext 
 
 Pointer to the camera minidriver's frame context.
 
+
 ### -param SyncPacket 
 
 Pointer to a <a href="buses.usbd_iso_packet_descriptor">USBD_ISO_PACKET_DESCRIPTOR</a> structure from the sync pipe. This value is <b>NULL</b> if the interface has only one pipe.
+
 
 ### -param SyncBuffer 
 
 Pointer to the data for the <i>SyncPacket</i>.
 
+
 ### -param DataPacket 
 
 Specifies the isochronous packet descriptor from data pipe.
+
 
 ### -param DataBuffer 
 
 Pointer to <i>DataPacket.</i>
 
+
 ### -param FrameComplete 
 
 Pointer to a BOOLEAN value that the camera minidriver sets to indicate whether this is the first data packet for a new video frame.
 
+
 ### -param PacketFlag 
 
 Pointer to a value that the minidriver sets to indicate the contents of the current frame. It should be set to one of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -108,36 +118,45 @@ Pointer to a value that the minidriver sets to indicate the contents of the curr
 <tr>
 <td>
 USBCAMD_PROCESSPACKETEX_DropFrame
+
 </td>
 <td>
 The current frame is unsalvageable. The read IRP should be recycled.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_PROCESSPACKETEX_NextFrameIsStill
+
 </td>
 <td>
 The frame is a still image.
+
 </td>
 </tr>
 <tr>
 <td>
 USBCAMD_PROCESSPACKETEX_CurrentFrameIsStill
+
 </td>
 <td>
 The current frame is for the still pin.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ValidDataOffset 
 
 Pointer to a ULONG value that indicates an offset from the beginning of the packet. USBCAMD should start the copy from this offset. This eliminates the extra buffer copy in the case of an in-band signal. If the camera is not using in-band signaling, <i>ValidDataOffset</i> should be set to zero.
 
+
 ## -returns
 This function returns the number of bytes that should be copied.
+
 
 ## -remarks
 The minidriver should complete its <b>CamProcessUSBPacketEx</b> function as quickly as possible. Image processing should be deferred to the <a href="stream.camprocessrawvideoframeex">CamProcessRawVideoFrameEx</a> function.
@@ -148,11 +167,13 @@ The original USBCAMD does not call <b>CamProcessUSBPacketEx</b>.
 
 This function is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -163,6 +184,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,9 +195,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -190,5 +214,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CamProcessUSBPacketEx routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

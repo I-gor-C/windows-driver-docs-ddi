@@ -7,7 +7,7 @@ old-location: netvista\dot11_bss_list.htm
 old-project: netvista
 ms.assetid: e5c31c4d-8c46-4af1-90de-0311cc90c6c0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_BSS_LIST, DOT11_BSS_LIST, *PDOT11_BSS_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,18 @@ typedef struct _DOT11_BSS_LIST {
 The length, in bytes, of the data within the buffer referenced by the 
      <b>pucBuffer</b> member.
 
+
 ### -field pucBuffer
 
 A pointer to a buffer that contains a list of 
      <a href="..\windot11\ns-windot11-dot11_bss_entry.md">DOT11_BSS_ENTRY</a> structures. Each
      DOT11_BSS_ENTRY structure specifies a single 802.11 Beacon and Probe Response frame.
      
+
 The DOT11_BSS_ENTRY structure has a variable length. However, each entry within the list of
      DOT11_BSS_ENTRY structures does not contain padding for the alignment of the next entry in the
      list.
+
 
 ## -remarks
 The 802.11 Beacon and Probe Response frames within the 
@@ -74,20 +77,24 @@ The 802.11 Beacon and Probe Response frames within the
     <a href="netvista.native_802_11_scan_operations">Native 802.11 Scan
     Operations</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +127,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_LIST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_LIST structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

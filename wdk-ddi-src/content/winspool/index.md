@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Winspool.h header
 
+## -description
 
 This header is used by print. For more information, see
 - [print](../_print/index.md)
@@ -28,18 +33,18 @@ Winspool.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [BIDI_DATA structure](ns-winspool--bidi-data.md) | The BIDI_DATA structure is used to store the values of a bidi schema. |
-| [BIDI_REQUEST_CONTAINER structure](ns-winspool--bidi-request-container.md) | The BIDI_REQUEST_CONTAINER structure is a container for a list of bidi requests. |
-| [BIDI_REQUEST_DATA structure](ns-winspool--bidi-request-data.md) | The BIDI_REQUEST_DATA structure holds a single bidi request. |
-| [BIDI_RESPONSE_CONTAINER structure](ns-winspool--bidi-response-container.md) | The BIDI_RESPONSE_CONTAINER structure is a container for a list of bidi responses. |
-| [BIDI_RESPONSE_DATA structure](ns-winspool--bidi-response-data.md) | The BIDI_RESPONSE_DATA structure holds a single bidi response. |
-| [BINARY_CONTAINER structure](ns-winspool--binary-container.md) | The BINARY_CONTAINER structure is a container for binary data. |
 | [PrintNamedProperty structure](ns-winspool-printnamedproperty.md) | . |
 | [PrintPropertiesCollection structure](ns-winspool-printpropertiescollection.md) | . |
 | [PrintPropertyValue structure](ns-winspool-printpropertyvalue.md) | . |
+| [_BIDI_DATA structure](ns-winspool-_bidi_data.md) | The BIDI_DATA structure is used to store the values of a bidi schema. |
+| [_BIDI_REQUEST_CONTAINER structure](ns-winspool-_bidi_request_container.md) | The BIDI_REQUEST_CONTAINER structure is a container for a list of bidi requests. |
+| [_BIDI_REQUEST_DATA structure](ns-winspool-_bidi_request_data.md) | The BIDI_REQUEST_DATA structure holds a single bidi request. |
+| [_BIDI_RESPONSE_CONTAINER structure](ns-winspool-_bidi_response_container.md) | The BIDI_RESPONSE_CONTAINER structure is a container for a list of bidi responses. |
+| [_BIDI_RESPONSE_DATA structure](ns-winspool-_bidi_response_data.md) | The BIDI_RESPONSE_DATA structure holds a single bidi response. |
+| [_BINARY_CONTAINER structure](ns-winspool-_binary_container.md) | The BINARY_CONTAINER structure is a container for binary data. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [BIDI_TYPE enumeration](ne-winspool-bidi-type.md) | The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation. |
+| [BIDI_TYPE enumeration](ne-winspool-bidi_type.md) | The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation. |

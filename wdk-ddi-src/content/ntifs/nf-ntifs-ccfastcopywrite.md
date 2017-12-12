@@ -41,6 +41,7 @@ req.irql:
 The <b>CcFastCopyWrite</b> routine performs a fast copy write from a buffer in memory to a cached file.
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ VOID CcFastCopyWrite(
 
 Pointer to a file object for the cached file to which the data is to be written.
 
+
 ### -param FileOffset [in]
 
 Pointer to a variable that specifies the starting byte offset within the cached file.
+
 
 ### -param Length [in]
 
 Length in bytes of the data to be written.
 
+
 ### -param Buffer [in]
 
 Pointer to the buffer from which the data is to be copied.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>CcFastCopyWrite</b> is a faster version of <a href="ifsk.cccopywrite">CcCopyWrite</a>. It differs from <b>CcCopyWrite</b> in the following respects:
@@ -89,11 +95,13 @@ If any failure occurs, <b>CcFastCopyWrite</b> raises a status exception for that
 
 To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +112,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +134,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +154,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFastCopyWrite routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

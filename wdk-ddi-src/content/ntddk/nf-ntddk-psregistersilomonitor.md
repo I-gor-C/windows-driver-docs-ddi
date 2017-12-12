@@ -7,7 +7,7 @@ old-location: kernel\psregistersilomonitor.htm
 old-project: kernel
 ms.assetid: C04F29FF-972C-44CC-8557-28C23827ADF0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsRegisterSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.irql:
 ## -description
 This routine registers a server silo monitor that can receive notifications about server silo events.
 
+
 <div class="alert"><b>Note</b>  To start receiving notifications, call the <a href="kernel.psstartsilomonitor">PsStartSiloMonitor</a> routine.</div>
 <div> </div>
+
 
 
 
@@ -61,9 +63,11 @@ NTSTATUS PsRegisterSiloMonitor(
 
 Specifies the server silo monitor to be registered, of type <a href="kernel.silo_monitor_registration">SILO_MONITOR_REGISTRATION</a>. 
 
+
 ### -param ReturnedMonitor [out]
 
 Receives a pointer to the monitor. This pointer is used to make further monitor-related calls.
+
 
 ## -returns
 The following NT status codes are returned.
@@ -82,6 +86,7 @@ The following NT status codes are returned.
 
  
 
+
 ## -remarks
 
 
@@ -90,22 +95,27 @@ The following NT status codes are returned.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

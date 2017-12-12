@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 <b>FltParseFileName</b> parses the extension, stream, and final component from a file name string. 
 
 
+
 ## -syntax
 
 ````
@@ -59,20 +60,25 @@ NTSTATUS FltParseFileName(
 
 Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the string to parse as a file name. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param Extension [in, out]
 
 Pointer to a UNICODE_STRING structure that receives the extension parsed from the <i>FileName</i> string. If no extension is found, <b>FltParseFileName</b> sets <i>Extension.Buffer</i> to <b>NULL</b> and <i>Extension.Length</i> to zero. Otherwise, <i>Extension.Buffer</i> receives a pointer to the beginning of the extension in <i>FileName.Buffer</i>, and <i>Extension.Length</i> receives the length, in bytes, of the extension. This parameter is optional and can be <b>NULL</b>. 
+
 
 ### -param Stream [in, out]
 
 Pointer to a UNICODE_STRING structure that receives the stream name parsed from the <i>FileName</i> string. If no stream name is found, <b>FltParseFileName</b> sets <i>Stream.Buffer</i> to <b>NULL</b> and <i>Stream.Length</i> to zero. Otherwise, <i>Stream.Buffer</i> receives a pointer to the beginning of the stream name in <i>FileName.Buffer</i>, and <i>Stream.Length</i> receives the length, in bytes, of the stream name. This parameter is optional and can be <b>NULL</b>. 
 
+
 ### -param FinalComponent [in, out]
 
 Pointer to a UNICODE_STRING structure that receives the final name component parsed from the <i>FileName</i> string. If no final component is found, <b>FltParseFileName</b> sets <i>FinalComponent.Buffer</i> to <b>NULL</b> and <i>FinalComponent.Length</i> to zero. Otherwise, <i>FinalComponent.Buffer</i> receives a pointer to the beginning of the final component in <i>FileName.Buffer</i>, and <i>FinalComponent.Length</i> receives the length, in bytes, of the final component. This parameter is optional and can be <b>NULL</b>. 
 
+
 ## -returns
 <b>FltParseFileName</b> returns STATUS_SUCCESS or an appropriate NTSTATUS error code. 
+
 
 ## -remarks
 <b>FltParseFileName</b> parses the extension, stream name, and final component from a file name string. The file name is not required to be normalized or a full path name. If the file name is a short file name, <b>FltParseFileName</b> parses only the extension. 
@@ -99,11 +105,13 @@ For more information about file name normalization and file name parsing, see <a
 
 To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="ifsk.fltparsefilenameinformation">FltParseFileNameInformation</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,14 +122,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP with Service Pack 2 (SP2) and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +143,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +154,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -152,9 +165,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -172,5 +187,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltParseFileName function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

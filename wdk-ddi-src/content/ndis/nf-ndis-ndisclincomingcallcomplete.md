@@ -7,7 +7,7 @@ old-location: netvista\ndisclincomingcallcomplete.htm
 old-project: netvista
 ms.assetid: b3931dd7-319e-4ef8-9812-6dc3f2e41b2c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisClIncomingCallComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ req.irql: <= DISPATCH_LEVEL
   previously returned NDIS_STATUS_PENDING.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ Is set to NDIS_STATUS_SUCCESS if the client accepts the offered call. Otherwise,
      can be set to any NDIS_STATUS_<i>XXX</i> except NDIS_STATUS_PENDING to indicate the client-determined reason for rejecting the
      call.
 
+
 ### -param NdisVcHandle [in]
 
 Specifies the handle to the VC that was created by the call manager to represent the incoming
@@ -71,14 +73,17 @@ Specifies the handle to the VC that was created by the call manager to represent
      <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">
      ProtocolClIncomingCall</a> function.
 
+
 ### -param CallParameters [in]
 
 Pointer to a structure of type 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>, specifying the call
      parameters for the incoming call.
 
+
 ## -returns
 None
+
 
 ## -remarks
 If a client's 
@@ -121,11 +126,13 @@ If a client rejects an offered call by setting
     <i>CallParameters</i> pointer invalid as soon as its call to 
     <b>NdisClIncomingCallComplete</b> occurs.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +143,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -143,11 +151,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisClIncomingCallComplete
    (NDIS 5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -158,6 +168,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -168,14 +179,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
@@ -212,5 +226,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClIncomingCallComplete function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClIncomingCallComplete function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

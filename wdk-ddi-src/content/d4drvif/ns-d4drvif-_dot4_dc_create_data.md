@@ -7,7 +7,7 @@ old-location: print\dot4_dc_create_data.htm
 old-project: print
 ms.assetid: 9C21732B-0AB1-4F3E-8F3D-F0B12007920A
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _DOT4_DC_CREATE_DATA, DOT4_DC_CREATE_DATA, *PDOT4_DC_CREATE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Defines the <b>DOT4_DC_CREATE_DATA</b> construct.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _DOT4_DC_CREATE_DATA {
 
 Specifies this or the service name sent.
 
+
 ### -field pServiceName
 
 Describes the <b>CHAR</b>  member <b>pServiceName</b>.
+
 
 ### -field bType
 
 Specifies the type, stream or packet, of channels on the socket.
 
+
 ### -field ulBufferSize
 
 Specifies the size of the read buffer for channels on socket.
+
 
 ### -field usMaxHtoPPacketSize
 
 Describes the <b>USHORT</b> member <b>usMaxHtoPPacketSize</b>.
 
+
 ### -field usMaxPtoHPacketSize
 
 Describes the <b>USHORT</b> member <b>usMaxPtoHPacketSize</b>.
 
+
 ### -field bHsid
 
 Specifies the host socket ID returned.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ Specifies the host socket ID returned.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

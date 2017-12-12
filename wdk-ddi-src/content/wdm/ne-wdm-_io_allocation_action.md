@@ -7,8 +7,8 @@ old-location: kernel\io_allocation_action.htm
 old-project: kernel
 ms.assetid: 245d35a1-e877-4446-a0da-e50ece3656b1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _IO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION
+ms.date: 12/7/2017
+ms.keywords: _IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IO_ALLOCATION_ACTION</b> enumerated type is used to specify return values for <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">ControllerControl</a> routines.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum _IO_ALLOCATION_ACTION {
 
 Indicates that you want the driver to retain ownership of the adapter or controller object.
 
+
 ### -field DeallocateObject
 
 Indicates that you do not want the driver to retain ownership of the adapter or controller object.
 
+
 ### -field DeallocateObjectKeepRegisters
 
 <u>For adapter objects only.</u> Indicates that you do not want the driver to retain ownership of the adapter object, but you do want the driver to retain ownership of the allocated map registers. 
+
 
 ## -remarks
 If an <i>AdapterControl</i> or <i>ControllerControl</i> routine completes an IRP, or if it can set up an operation (such as a disk seek) for a target device object that could be overlapped with an operation for another device object, it should return <b>DeallocateObject</b>.
@@ -74,11 +78,13 @@ If a driver uses packet-based bus-master DMA, its <i>AdapterControl</i> routine 
 
 Otherwise, the driver should return <b>KeepObject</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

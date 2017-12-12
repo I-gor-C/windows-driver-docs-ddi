@@ -41,6 +41,7 @@ req.irql:
 An AVStream minidriver's <i>AVStrMiniAddEvent</i> routine is called when a client registers to be notified of an event. This routine is optional.
 
 
+
 ## -prototype
 
 ````
@@ -61,16 +62,20 @@ NTSTATUS AVStrMiniAddEvent(
 
 Specifies the IRP describing the event add request.
 
+
 ### -param EventData [in]
 
 Pointer to a <a href="stream.kseventdata">KSEVENTDATA</a> structure describing the notification method for this event.
+
 
 ### -param EventEntry [in]
 
 Pointer to an AVStream-generated <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure describing how the event is triggered.
 
+
 ## -returns
 <i>AVStrMiniAddEvent</i> should return STATUS_SUCCESS or an error specific to the event being enabled.  
+
 
 ## -remarks
 If you do not provide an add event handler, AVStream adds the event to the object list. See <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a>.
@@ -81,11 +86,13 @@ The minidriver specifies this routine's address in the <b>AddHandler</b> member 
 
 If an AVStream minidriver specifies <b>AddHandler</b> as non-NULL, AVStream does not add the item to the object's event list. If minidriver specifies an <b>AddHandler</b> and does not add the event to the object's event list through <b>KsDefaultAddEventHandler()</b> or a <b>Ks*AddEvent </b>call, the minidriver is responsible for cleaning up the event.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,14 +103,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,5 +154,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniAddEvent routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

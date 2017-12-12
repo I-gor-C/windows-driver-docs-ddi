@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _TXN_PARAMETER_BLOCK {
 
 The size, in bytes, of the TXN_PARAMETER_BLOCK structure. 
 
+
 ### -field TxFsContext
 
 The miniversion ID for the file. 
 
+
 ### -field TransactionObject
 
 An opaque pointer to the transaction object for the transaction. 
+
 
 ## -remarks
 A <i>miniversion</i> is a version of a file that a transacted writer creates during a transaction. (A <i>transacted writer</i> is a transacted file handle opened with any permission that is not part of generic read access, but is part of generic write access.) 
@@ -79,19 +83,23 @@ All miniversions created in a transaction go away when the transaction ends.  Af
 
 The <a href="ifsk.iogettransactionparameterblock">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The TXN_PARAMETER_BLOCK structure is available on Windows Vista and later Windows operating systems. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -112,5 +120,8 @@ Header
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=139790">FSCTL_TXFS_CREATE_MINIVERSION</a></dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TXN_PARAMETER_BLOCK structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

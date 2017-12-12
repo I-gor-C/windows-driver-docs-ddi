@@ -7,7 +7,7 @@ old-location: netvista\miniportcosendnetbufferlists.htm
 old-project: netvista
 ms.assetid: 4a717842-6d71-488e-a56a-57c6e6e0c5d7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures.
 
 
+
 ## -prototype
 
 ````
@@ -66,6 +67,7 @@ A handle to a miniport driver-allocated context area in which the miniport drive
      per-virtual connection (VC) state. The miniport driver supplied this handle to NDIS from its 
      <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a> function.
 
+
 ### -param NetBufferLists [in]
 
 A pointer to the first 
@@ -75,6 +77,7 @@ A pointer to the first
      in the list maps to a chain of memory descriptor lists (MDLs). The MDLs contain the network data that 
      <i>MiniportCoSendNetBufferLists</i> transmits.
 
+
 ### -param SendFlags [in]
 
 Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
@@ -83,10 +86,13 @@ Flags that define attributes for the send operation. The flags can be combined w
      
 
 
+
+
 ### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
 
 The caller can optionally set this flag if the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
        <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.
+
 
 ### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
 
@@ -96,11 +102,13 @@ NDIS should check for loopback. By default, NDIS does not loop back data to the 
        structures that contain data that matches the receive criteria for the binding. NDIS indicates
        <b>NET_BUFFER</b> structures that match the criteria to the overlying driver. This flag does not affect
        checking for loopback, or looping back, on other bindings.
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 The 
@@ -161,19 +169,23 @@ The <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> function type is defined in the Ndi
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -184,9 +196,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -211,5 +225,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

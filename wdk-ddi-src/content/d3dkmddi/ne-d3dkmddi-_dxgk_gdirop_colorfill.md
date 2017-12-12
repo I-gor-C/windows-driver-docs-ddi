@@ -7,7 +7,7 @@ old-location: display\dxgk_gdirop_colorfill.htm
 old-project: display
 ms.assetid: 1ef99bb0-855a-46d1-9702-5fc3eba5e68e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_GDIROP_COLORFILL, DXGK_GDIROP_COLORFILL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGK_GDIROP_COLORFILL enumeration indicates the type of GDI raster operation (ROP) to implement in a GDI hardware-accelerated color fill operation.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef enum _DXGK_GDIROP_COLORFILL {
 
 Indicates that the GDI raster operation is invalid.
 
+
 ### -field DXGK_GDIROPCF_PATCOPY
 
 Indicates that the specified color is copied into all pixels of the destination rectangle.
+
 
 ### -field DXGK_GDIROPCF_PATINVERT
 
 Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>XOR</b> operator.
 
+
 ### -field DXGK_GDIROPCF_PDXN
 
 Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>NOT(XOR)</b> operator.
+
 
 ### -field DXGK_GDIROPCF_DSTINVERT
 
 Indicates that the destination rectangle is inverted.
 
+
 ### -field DXGK_GDIROPCF_PATAND
 
 Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>AND</b> operator.
+
 
 ### -field DXGK_GDIROPCF_PATOR
 
 Indicates that the colors of the specified pattern are combined with the colors of the destination rectangle by using the Boolean <b>OR</b> operator.
 
+
 ### -field DXGK_GDIROPCF_ROP3
 
 Indicates that a ternary GDI raster operation (ROP3) will be applied.
+
 
 ## -remarks
 
@@ -99,14 +108,17 @@ Indicates that a ternary GDI raster operation (ROP3) will be applied.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: print\unifm_hdr.htm
 old-project: print
 ms.assetid: 9490d090-2156-4653-9e56-a233d23c2fb3
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _UNIFM_HDR, UNIFM_HDR, *PUNIFM_HDR
+ms.date: 12/9/2017
+ms.keywords: _UNIFM_HDR, *PUNIFM_HDR, UNIFM_HDR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The UNIFM_HDR structure is used to define the contents of <a href="print.customized_font_management#ddk_unidrv_font_metrics_files_gg#ddk_unidrv_font_metrics_files_gg">Unidrv font metrics files</a> (.ufm files).
 
 
+
 ## -syntax
 
 ````
@@ -66,41 +67,51 @@ typedef struct _UNIFM_HDR {
 
 Specifies the total size, in bytes, of the .ufm file. Note that this is the total size of all structures used to define the file. This value is not the size of the UNIFM_HDR structure.
 
+
 ### -field dwVersion
 
 Specifies the file version number, as defined in prntfont.h by a constant with a name format of UNIFM_VERSION_<i>x</i>_<i>x</i>.
+
 
 ### -field ulDefaultCodepage
 
 Specifies the code page identifier for the font's default code page. For more information, see the following Remarks section.
 
+
 ### -field lGlyphSetDataRCID
 
 Specifies an RC_GTT resource identifier that identifies a .gtt (Glyph Translation Table) file, or one of the CC_-prefixed code conversion identifiers defined in prntfont.h. For more information, see the following Remarks section.
+
 
 ### -field loUnidrvInfo
 
 Specifies the byte offset from the beginning of the .ufm (Unidrv Font Metrics) file to the location of the file's <a href="print.unidrvinfo">UNIDRVINFO</a> structure.
 
+
 ### -field loIFIMetrics
 
 Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="display.printifi32">PRINTIFI32</a> structure.
+
 
 ### -field loExtTextMetric
 
 Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="print.exttextmetric">EXTTEXTMETRIC</a> structure.
 
+
 ### -field loWidthTable
 
 Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="print.widthtable">WIDTHTABLE</a> structure.
+
 
 ### -field loKernPair
 
 Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="print.kerndata">KERNDATA</a> structure.
 
+
 ### -field dwReserved
 
 Not used.
+
 
 ## -remarks
 A UNIFM_HDR structure must be the first structure contained in a .ufm file.
@@ -115,11 +126,13 @@ The character conversion codes predefined by the system, listed in Prntfont.h, a
 
 If <b>lGlyphSetDataRCID</b> is CC_DEFAULT, there are no restrictions on the value specified for <b>ulDefaultCodepage</b>, but a default code page must be specified.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -151,5 +164,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20UNIFM_HDR structure%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20UNIFM_HDR structure%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

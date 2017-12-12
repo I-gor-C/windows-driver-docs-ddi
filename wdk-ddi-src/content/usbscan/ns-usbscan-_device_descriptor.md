@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 15ad337a-0b33-48ba-98cf-6aff2698e2ba
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR
+ms.keywords: _DEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The DEVICE_DESCRIPTOR structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_device_descriptor.md">IOCTL_GET_DEVICE_DESCRIPTOR</a>.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _DEVICE_DESCRIPTOR {
 
 Vendor identifier.
 
+
 ### -field usProductId
 
 Device product identifier.
+
 
 ### -field usBcdDevice
 
 BCD-encoded device version number.
 
+
 ### -field usLanguageId
 
 <i>Not used</i>.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ BCD-encoded device version number.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

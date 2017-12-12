@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0cb2041a-844d-4ddb-9dab-e1c77c28835a
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _HW_STREAM_OBJECT, HW_STREAM_OBJECT, *PHW_STREAM_OBJECT
+ms.keywords: _HW_STREAM_OBJECT, *PHW_STREAM_OBJECT, HW_STREAM_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 HW_STREAM_OBJECT describes an instance of a minidriver stream.
 
 
+
 ## -syntax
 
 ````
@@ -70,68 +71,84 @@ typedef struct _HW_STREAM_OBJECT {
 
 Specifies the size, in bytes, of this structure.
 
+
 ### -field StreamNumber
 
 Specifies the offset of the stream within the minidriver's <a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a> structure.
+
 
 ### -field HwStreamExtension
 
 Points to the stream extension, a buffer allocated by the class driver for the minidriver to use to hold private information about this stream. The minidriver sets the size of the buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself with the stream class driver.
 
+
 ### -field ReceiveDataPacket
 
 Pointer to the stream's <a href="stream.strminireceivestreamdatapacket">StrMiniReceiveStreamDataPacket</a> routine.
+
 
 ### -field ReceiveControlPacket
 
 Pointer to the stream's <a href="stream.strminireceivestreamcontrolpacket">StrMiniReceiveStreamControlPacket</a> routine.
 
+
 ### -field HwClockObject
 
 Contains the stream's clock object. See <a href="stream.hw_clock_object">HW_CLOCK_OBJECT</a> for details.
+
 
 ### -field Dma
 
 If <b>TRUE</b>, the device uses DMA to transfer data for this stream.
 
+
 ### -field Pio
 
 If <b>TRUE</b>, the device uses programmed I/O to transfer data for this stream. Note that both the <b>Pio</b> and <b>Dma</b> members may be <b>TRUE</b>.
+
 
 ### -field HwDeviceExtension
 
 Pointer to the minidriver's device extension. The minidriver may use this buffer to record private information. The minidriver sets the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
+
 ### -field StreamHeaderMediaSpecific
 
 Specifies the size in bytes of the media-specific, per-stream header extension.
+
 
 ### -field StreamHeaderWorkspace
 
 Specifies the size of the per-stream-header workspace.
 
+
 ### -field Allocator
 
 Specifies <b>TRUE</b> if the driver uses allocators. Most minidrivers set this value to <b>FALSE</b>. 
+
 
 ### -field HwEventRoutine
 
 Pointer to the stream's <a href="stream.strminievent">StrMiniEvent</a> routine
 
+
 ### -field Reserved
 
 Reserved for system use. Do not use.
+
 
 ## -remarks
 This structure is created by the class driver to hold information about a particular stream in the minidriver. For each stream-specific request, the class driver passes the HW_STREAM_OBJECT for the stream in the <b>StreamObject</b> member of the stream request block (See <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>). 
 
 When the class driver opens the stream and issues the SRB_OPEN_STREAM request to the minidriver's <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a> routine, the minidriver initializes the stream object.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,5 +165,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20HW_STREAM_OBJECT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetFileNameInformation</b> routine returns name information for a file or directory. 
 
 
+
 ## -syntax
 
 ````
@@ -58,11 +59,14 @@ NTSTATUS FltGetFileNameInformation(
 
 A pointer to the callback data structure for the I/O operation (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param NameOptions [in]
 
 
 <a href="ifsk.flt_file_name_options">FLT_FILE_NAME_OPTIONS</a> value containing flags that specify the format of the name information to be returned, as well as the query method that the Filter Manager is to use. (Additional flags can be used by name provider minifilter drivers to specify name query options. For more information, see <b>FLT_FILE_NAME_OPTIONS</b>.) This parameter is required and cannot be <b>NULL</b>. 
+
 Following are the name format flag values. Only one of the following flags can be specified. (For an explanation of these formats, see <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a>.) 
+
 <table>
 <tr>
 <th>Value</th>
@@ -71,31 +75,40 @@ Following are the name format flag values. Only one of the following flags can b
 <tr>
 <td>
 FLT_FILE_NAME_NORMALIZED
+
 </td>
 <td>
 The <i>FileNameInformation</i> parameter receives the address of a structure containing the normalized name for the file. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_OPENED
+
 </td>
 <td>
 The <i>FileNameInformation</i> parameter receives the address of a structure containing the name that was used when the file was opened. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_SHORT
+
 </td>
 <td>
 The <i>FileNameInformation</i> parameter receives the address of a structure containing the short (8.3) name for the file. The short name consists of up to 8 characters, followed immediately by a period and up to 3 more characters. The short name for a file does not include the volume name, directory path, or stream name. 
+
 Not valid in the pre-create path. 
+
 </td>
 </tr>
 </table>
  
+
 Following are the query method flag values. Only one of the following flags can be specified. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -104,38 +117,48 @@ Following are the query method flag values. Only one of the following flags can 
 <tr>
 <td>
 FLT_FILE_NAME_QUERY_DEFAULT
+
 </td>
 <td>
 If it is not currently safe to query the file system for the file name, <b>FltGetFileNameInformation</b> does nothing. Otherwise, <b>FltGetFileNameInformation</b> queries the Filter Manager's name cache for the file name information. If the name is not found in the cache, <b>FltGetFileNameInformation</b> queries the file system and caches the result. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_QUERY_CACHE_ONLY
+
 </td>
 <td>
 FltGetFileNameInformation queries the Filter Manager's name cache for the file name information. <b>FltGetFileNameInformation</b> does not query the file system. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_QUERY_FILESYSTEM_ONLY
+
 </td>
 <td>
 <b>FltGetFileNameInformation</b> queries the file system for the file name information. <b>FltGetFileNameInformation</b> does not query the Filter Manager's name cache, and does not cache the result of the file system query. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_QUERY_ALWAYS_ALLOW_CACHE_LOOKUP
+
 </td>
 <td>
 <b>FltGetFileNameInformation</b> queries the Filter Manager's name cache for the file name information. If the name is not found in the cache, and it is currently safe to do so, <b>FltGetFileNameInformation</b> queries the file system for the file name information and caches the result. 
+
 </td>
 </tr>
 </table>
  
+
 Name provider minifilters use the following flags to specify the properties of file name operations. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -144,34 +167,43 @@ Name provider minifilters use the following flags to specify the properties of f
 <tr>
 <td>
 FLT_FILE_NAME_REQUEST_FROM_CURRENT_PROVIDER
+
 </td>
 <td>
 A name provider minifilter can use this flag to specify that a name query request should be redirected to itself (the name provider minifilter) rather than being satisfied by the name providers lower in the stack. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_DO_NOT_CACHE
+
 </td>
 <td>
 This flag denotes that the name retrieved from this query should not be cached. Name provider minifilters use this flag as they perform intermediate queries to generate a name. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLT_FILE_NAME_ALLOW_QUERY_ON_REPARSE
+
 </td>
 <td>
 A name provider minifilter can use this flag to specify that it is safe to query the name in the post-create path even if STATUS_REPARSE was returned. It is the caller's responsibility to ensure that the <b>FileObject-&gt;FileName</b> field was not changed. Do not use this flag with mount points or symbolic link reparse points. 
+
 This flag is available on Microsoft Windows Server 2003 SP1 and later. This flag is also available on Windows 2000 SP4 with Update Rollup 1 and later.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param FileNameInformation [out]
 
 A pointer to a caller-allocated variable that receives the address of a system-allocated <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>. 
+
 
 ## -returns
 If the name information is successfully returned, <b>FltGetFileNameInformation</b> returns STATUS_SUCCESS. Otherwise, it returns an appropriate NTSTATUS value such as one of the following: 
@@ -221,6 +253,7 @@ The file is a system file with all access denied.
 
  
 
+
 ## -remarks
 <b>FltGetFileNameInformation</b> returns the requested name information for the file or directory that is represented by the file object that is the target of the I/O operation. 
 
@@ -254,11 +287,13 @@ rename(<i>name</i>, <i>newname</i>)/rename(<i>source</i>, <i>name</i>)
 
 For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -269,6 +304,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -279,6 +315,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -289,6 +326,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -299,9 +337,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -346,5 +386,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetFileNameInformation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

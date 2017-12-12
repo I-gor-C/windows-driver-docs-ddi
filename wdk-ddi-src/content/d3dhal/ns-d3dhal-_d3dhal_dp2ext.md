@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2ext.htm
 old-project: display
 ms.assetid: d7cec277-d1d3-4c0f-91ec-fd5e962b6e1c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DHAL_DP2EXT, D3DHAL_DP2EXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DHAL_DP2EXT structure's use has yet to be defined.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _D3DHAL_DP2EXT {
 
 Specifies the extension token.
 
+
 ### -field dwSize
 
 Specifies the size, in bytes of this structure.  
 
+
 ## -remarks
 This structure is used with hardware transform and lighting. Contact the DirectX team at Microsoft for further implementation details.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

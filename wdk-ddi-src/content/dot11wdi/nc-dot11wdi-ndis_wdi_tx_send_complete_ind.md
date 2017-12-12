@@ -7,8 +7,8 @@ old-location: netvista\ndiswditxsendcompleteindication.htm
 old-project: netvista
 ms.assetid: A38BA15D-FDD8-41D1-87ED-2CABC1926962
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.date: 12/8/2017
+ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -39,8 +39,11 @@ req.irql:
 
 ## -description
 The NdisWdiTxSendCompleteIndication callback function specifies an array of frame IDs associated with the target's sent frames.
+
 This is a callback inside <a href="netvista.ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
+
 Frames with different TX status values are completed in separate indications.
+
 
 
 ## -prototype
@@ -65,24 +68,30 @@ VOID NdisWdiTxSendCompleteIndication(
 
 The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a>.
 
+
 ### -param WifiTxFrameStatus [in]
 
 The TX status, specified as a <a href="netvista.wdi_tx_frame_status">WDI_TX_FRAME_STATUS</a> value.
+
 
 ### -param NumCompletedSends [in]
 
 The number of completed sends.
 
+
 ### -param WifiTxFrameIdList [in]
 
 An array of frame IDs. The size of the array is the value of <i>NumCompletedSends</i>.
+
 
 ### -param WifiTxCompleteList [in, optional]
 
 An array of TX completion data. The size of the array is the value of <i>NumCompletedSends</i>.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -90,27 +99,33 @@ This callback function does not return a value.
 
 A TX completion with a frame with <b>WDI_TxFrameStatus_SendPostponed</b> is identical to an <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_pause_ind.md">NdisWdiTxSendPauseIndication</a> with <b>WDI_TX_PAUSE_REASON_PS</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +154,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_SEND_COMPLETE_IND callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_SEND_COMPLETE_IND callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

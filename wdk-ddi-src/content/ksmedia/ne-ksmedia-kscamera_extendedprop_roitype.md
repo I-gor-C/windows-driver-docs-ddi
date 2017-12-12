@@ -41,6 +41,7 @@ req.irql:
 This enumeration contains the ROI types.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum  {
 
 The ROI type is unknown.
 
+
 ### -field KSCAMERA_EXTENDEDPROP_ROITYPE_FACE
 
 The ROI type is face.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The ROI type is face.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

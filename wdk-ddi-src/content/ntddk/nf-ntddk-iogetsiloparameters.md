@@ -41,6 +41,7 @@ req.irql:
 This routine indicates if a file is within a Container context.
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ PIO_FOEXT_SILO_PARAMETERS IoGetSiloParameters(
 
 The file in question.
 
+
 ## -returns
 If <b>null</b>, the file is not in a container context. Otherwise, a non-null value of type <a href="ifsk.io_foext_silo_parameters">IO_FOEXT_SILO_PARAMETERS</a> indicates that the file is within a Container context.
+
 
 ## -remarks
 
@@ -67,22 +70,27 @@ If <b>null</b>, the file is not in a container context. Otherwise, a non-null va
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +101,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +112,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

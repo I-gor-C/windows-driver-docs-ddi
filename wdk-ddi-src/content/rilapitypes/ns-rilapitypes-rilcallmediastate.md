@@ -7,8 +7,8 @@ old-location: netvista\rilcallmediastate_2.htm
 old-project: netvista
 ms.assetid: d3b89502-667c-45dd-af1c-05b7c8613d6c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILCALLMEDIASTATE, RILCALLMEDIASTATE, *LPRILCALLMEDIASTATE
+ms.date: 12/8/2017
+ms.keywords: RILCALLMEDIASTATE, *LPRILCALLMEDIASTATE, RILCALLMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -132,6 +133,7 @@ typedef struct _RILCALLMEDIASTATE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

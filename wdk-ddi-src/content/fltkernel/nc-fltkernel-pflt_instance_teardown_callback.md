@@ -41,6 +41,7 @@ req.irql: See Remarks section.
 A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines. 
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 
 Pointer to an <a href="ifsk.flt_related_objects">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O operation. 
 
+
 ### -param Reason [in]
 
 Flag that indicates why the minifilter driver instance is being torn down. One of the following: 
+
 <table>
 <tr>
 <th>Flag</th>
@@ -68,48 +71,60 @@ Flag that indicates why the minifilter driver instance is being torn down. One o
 <tr>
 <td>
 FLTFL_INSTANCE_TEARDOWN_FILTER_UNLOAD
+
 </td>
 <td>
 The minifilter driver is being unloaded. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_INSTANCE_TEARDOWN_INTERNAL_ERROR
+
 </td>
 <td>
 An error, such as a memory allocation failure, occurred during instance setup. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_INSTANCE_TEARDOWN_MANDATORY_FILTER_UNLOAD
+
 </td>
 <td>
 The minifilter driver is being unloaded. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_INSTANCE_TEARDOWN_MANUAL
+
 </td>
 <td>
 The instance is being detached because a user-mode application has called <a href="ifsk.filterdetach">FilterDetach</a> or a kernel-mode component has called <a href="ifsk.fltdetachvolume">FltDetachVolume</a>. 
+
 </td>
 </tr>
 <tr>
 <td>
 FLTFL_INSTANCE_TEARDOWN_VOLUME_DISMOUNT
+
 </td>
 <td>
 If set, the volume is being dismounted. (Or the volume has already been dismounted. Or the volume mount operation failed. Or the minifilter driver instance or the volume is being torn down. Or the file system unregistered itself as an active file system.) 
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 None 
+
 
 ## -remarks
 When a minifilter driver registers itself by calling <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine, it can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines. 
@@ -158,11 +173,13 @@ Note that referencing the instance (by calling <a href="ifsk.fltobjectreference"
 
 The filter manager calls the <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines at IRQL PASSIVE_LEVEL. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -173,6 +190,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -183,9 +201,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 </table>
@@ -227,5 +247,8 @@ See Remarks section.
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_INSTANCE_TEARDOWN_CALLBACK function pointer%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

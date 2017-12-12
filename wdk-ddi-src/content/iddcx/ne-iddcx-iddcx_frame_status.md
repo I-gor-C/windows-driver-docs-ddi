@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_status.htm
 old-project: display
 ms.assetid: 437050ae-d1b7-48ce-9955-98f1d1b2e15a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_FRAME_STATUS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _requires_same_
                 
 
 
+
 ## -syntax
 
 ````
@@ -63,11 +64,13 @@ typedef enum _IDDCX_FRAME_STATUS {
                         
                     Indicates that an <b>IDDCX_FRAME_STATUS</b> variable has not yet been assigned a meaningful value.
 
+
 ### -field IDDCX_FRAME_STATUS_COMPLETED
 
 
                         Indicates that the frame was processed completely and sent to the device
                     
+
 
 ### -field IDDCX_FRAME_STATUS_DROPPED
 
@@ -75,11 +78,13 @@ typedef enum _IDDCX_FRAME_STATUS {
                         Indicates that the driver stopped processing this frame to start on a newer frame. This normally happens if it is taking a long time to process/transmit the frame
                     
 
+
 ### -field IDDCX_FRAME_STATUS_ERROR
 
 
                         Indicates that the driver stopped processing this frame because the driver hit an internal error
                     
+
 
 ## -remarks
 
@@ -89,6 +94,7 @@ typedef enum _IDDCX_FRAME_STATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

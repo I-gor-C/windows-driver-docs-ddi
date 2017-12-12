@@ -7,7 +7,7 @@ old-location: storage\storportgetnodeaffinity.htm
 old-project: storage
 ms.assetid: 183940c9-f8d9-411f-a593-e283f72e05f8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortGetNodeAffinity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortGetNodeAffinity</b> routine constructs a mask of the active processors in a requested non-uniform memory access (NUMA) node.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ ULONG StorPortGetNodeAffinity(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param NodeNumber [in]
 
 The NUMA node from which to return the processor mask.
 
+
 ### -param NodeAffinityMask [out]
 
 A pointer to a variable that holds the affinity mask of the given node.
+
 
 ## -returns
 The <b>StorPortGetNodeAffinity</b>routine returns one of the following status codes:
@@ -81,6 +85,7 @@ The <b>StorPortGetNodeAffinity</b>routine returns one of the following status co
 
  
 
+
 ## -remarks
 
 
@@ -89,6 +94,7 @@ The <b>StorPortGetNodeAffinity</b>routine returns one of the following status co
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +105,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,14 +126,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportirql">StorPortIrql</a>

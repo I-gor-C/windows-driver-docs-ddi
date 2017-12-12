@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The BTHX_VERSION structure describes the version or versions that the transport driver supports.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ struct _BTHX_VERSION {
 
 Bitmask of supported versions. Currently, BTHX_DDI_VERSION_1   is the only supported version.
 
+
 ## -remarks
 
 
@@ -64,14 +66,17 @@ Bitmask of supported versions. Currently, BTHX_DDI_VERSION_1   is the only suppo
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

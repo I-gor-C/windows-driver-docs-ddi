@@ -7,7 +7,7 @@ old-location: netvista\ndis_wdi_init_parameters.htm
 old-project: netvista
 ms.assetid: 871D266C-55DF-4113-9714-92AB129303E5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NDIS_WDI_INIT_PARAMETERS structure specifies the WDI functions provided by the operating system and called by the IHV WDI driver.
 
 
+
 ## -syntax
 
 ````
@@ -65,14 +66,18 @@ The
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS.
      
+
 To indicate the version of the NDIS_WDI_INIT_PARAMETERS structure, set the 
      <b>Revision</b> member to the following value:
+
+
 
 
 ### -field NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS_REVISION_1
 
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_WDI_INIT_PARAMETERS_REVISION_1.
+
 </dd>
 </dl>
 
@@ -81,9 +86,12 @@ Set the
 The version of WDI used by the driver. Set this member to one of the following values:
 
 
+
+
 ### -field WDI_VERSION_1_0
 
 WDI version 1.0
+
 </dd>
 </dl>
 
@@ -91,17 +99,21 @@ WDI version 1.0
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_open_adapter_complete.md">NdisWdiOpenAdapterComplete</a> callback function.
 
+
 ### -field CloseAdapterCompleteHandler
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_close_adapter_complete.md">NdisWdiCloseAdapterComplete</a> callback function.
+
 
 ### -field UeIdleNotificationConfirm
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_confirm.md">NdisWdiIdleNotificationConfirm</a> callback function.
 
+
 ### -field UeIdleNotificationComplete
 
 The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_complete.md">NdisWdiIdleNotificationComplete</a> callback function.
+
 
 ## -remarks
 
@@ -111,22 +123,27 @@ The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notificati
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

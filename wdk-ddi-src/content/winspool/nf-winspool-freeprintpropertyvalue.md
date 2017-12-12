@@ -7,7 +7,7 @@ old-location: print\freeprintpropertyvalue.htm
 old-project: print
 ms.assetid: 38B760D9-CB6E-45AD-A83F-3C26D1B31A30
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: FreePrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Frees the value that is retrieved using <a href="print.getjobnamedpropertyvalue"
 
 
 
+
 ## -syntax
 
 ````
@@ -59,8 +60,10 @@ DWORD WINAPI FreePrintPropertyValue(
 Pointer to <b>PrintPropertyValue</b> structure that is returned from <a href="print.getjobnamedpropertyvalue">GetJobNamedPropertyValue</a>. 
 
 
+
 ## -returns
 If the operation succeeds, the function returns <b>ERROR_SUCCESS</b>.  
+
 
 
 ## -remarks
@@ -71,6 +74,7 @@ If the operation succeeds, the function returns <b>ERROR_SUCCESS</b>.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,6 +85,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -91,6 +96,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +107,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

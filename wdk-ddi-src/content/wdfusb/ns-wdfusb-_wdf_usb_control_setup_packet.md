@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_control_setup_packet.htm
 old-project: wdf
 ms.assetid: f50ee559-3df7-4e15-b5a6-d6b85277c461
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: _WDF_USB_CONTROL_SETUP_PACKET, WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure describes a setup packet for a USB control transfer.
+
 
 
 ## -syntax
@@ -96,29 +98,35 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 
 A bit field that is specified by a <a href="wdf.wdf_usb_bmrequest_recipient">WDF_USB_BMREQUEST_RECIPIENT</a>-typed value.
 
+
 ### -field Reserved
 
 A reserved bit field. Do not use this member.
+
 
 ### -field Type
 
 A bit field that is specified by a <a href="wdf.wdf_usb_bmrequest_type">WDF_USB_BMREQUEST_TYPE</a>-typed value.
 
+
 ### -field Dir
 
 A bit field that is specified by a <a href="wdf.wdf_usb_bmrequest_direction">WDF_USB_BMREQUEST_DIRECTION</a>-typed value.
+
 </dd>
 </dl>
 
 ### -field Byte
 
 A byte-sized bitmap that contains the <b>Request.Recipient</b>, <b>Request.Reserved</b>, <b>Request.Type</b>, and <b>Request.Dir</b> bit fields. Use this member as an alternative to specifying the individual bit fields.
+
 </dd>
 </dl>
 
 ### -field bRequest
 
 A request type. Request type constants are defined in <i>Usb100.h</i>. For more information about request types, see the USB specification.
+
 
 ### -field wValue
 
@@ -130,15 +138,18 @@ A request type. Request type constants are defined in <i>Usb100.h</i>. For more 
 
 The low byte of a 2-byte, request-specific value. For more information about specifying <b>wValue</b>, see the USB specification.
 
+
 ### -field HiByte
 
 The high byte of a 2-byte, request-specific value. 
+
 </dd>
 </dl>
 
 ### -field Value
 
 A 2-byte value that contains the <b>Bytes.LowByte</b> and <b>Bytes.HiByte</b> values. Use this member as an alternative to specifying individual low-byte and high-byte values.
+
 </dd>
 </dl>
 
@@ -152,21 +163,25 @@ A 2-byte value that contains the <b>Bytes.LowByte</b> and <b>Bytes.HiByte</b> va
 
 The low byte of a 2-byte, request-specific value. For more information about specifying <b>wValue</b>, see the USB specification.
 
+
 ### -field HiByte
 
 The high byte of a 2-byte, request-specific value. 
+
 </dd>
 </dl>
 
 ### -field Value
 
 A 2-byte value that contains the <b>Bytes.LowByte</b> and <b>Bytes.HiByte</b> values. Use this member as an alternative to specifying individual low-byte and high-byte values.
+
 </dd>
 </dl>
 
 ### -field wLength
 
 The number of bytes to transfer, if applicable. For more information about this value, see the USB specification. The framework sets this value.
+
 </dd>
 </dl>
 
@@ -176,6 +191,7 @@ The number of bytes to transfer, if applicable. For more information about this 
 ### -field Bytes
 
 An 8-byte value that represents the entire setup packet. You can use this member as an alternative to specifying individual structure members.
+
 </dd>
 </dl>
 
@@ -204,27 +220,33 @@ To initialize a <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure, the driver should
 <a href="wdf.wdf_usb_control_setup_packet_init_vendor">WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</a>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -253,5 +275,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>RtlFindUnicodePrefix</b> routine searches for the best match for a given Unicode file name in a prefix table. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ PUNICODE_PREFIX_TABLE_ENTRY RtlFindUnicodePrefix(
 
 Pointer to the prefix table. The table must have been initialized by calling <a href="ifsk.rtlinitializeunicodeprefix">RtlInitializeUnicodePrefix</a>.
 
+
 ### -param FullName [in]
 
 Pointer to a Unicode string containing the full pathname for a file. 
 
+
 ### -param CaseInsensitiveIndex [in]
 
 Position in the file name and prefix strings at which the comparison is to become case-insensitive. The string comparison is case-sensitive for the first <i>CaseInsensitiveIndex</i> characters in each string, case-insensitive for the remainder of the string.
+
 <table>
 <tr>
 <th>Value</th>
@@ -73,32 +77,40 @@ Position in the file name and prefix strings at which the comparison is to becom
 <tr>
 <td>
 0
+
 </td>
 <td>
 String comparison is case-insensitive.
+
 </td>
 </tr>
 <tr>
 <td>
 1..<i>FullName.Length</i>-1
+
 </td>
 <td>
 String comparison is case-sensitive for characters at positions 0 through <i>CaseInsensitiveIndex</i>-1, case-insensitive for characters from position <i>CaseInsensitiveIndex</i> to the end of the string.
+
 </td>
 </tr>
 <tr>
 <td>
 <i>FullName.Length</i>
+
 </td>
 <td>
 String comparison is case-sensitive.
+
 </td>
 </tr>
 </table>
  
 
+
 ## -returns
 <b>RtlFindUnicodePrefix</b> returns a pointer to the longest proper prefix found for the given string at <i>FullName</i>. If no matching prefix is found, <b>RtlFindUnicodePrefix</b> returns <b>NULL</b>. 
+
 
 ## -remarks
 Each prefix entry in the table is a pathname relative to the root directory of a file system volume. To be well-formed, the prefix must begin with a single backslash (\). 
@@ -111,27 +123,33 @@ Callers of the <b>Rtl..UnicodePrefix</b> routines are responsible for synchroniz
 
 For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows XP
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2003
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +160,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,6 +171,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +182,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -172,9 +193,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -198,5 +221,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFindUnicodePrefix routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This structure provides failure flags to indicate errors, if any, that might have occurred during a request to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef struct _ENDPOINTS_CONFIGURE_FAILURE_FLAGS {
 
 Insufficient bandwidth to configure the specified endpoints.
 
+
 ### -field InsufficientHardwareResourcesForEndpoints
 
 Insufficient hardware resources to configure the specified endpoints.
+
 
 ### -field MaxExitLatencyTooLarge
 
 The maximum exit latency is too large to configure the specified endpoints.
 
+
 ### -field Reserved
 
 Do not use.
+
 
 ## -remarks
 
@@ -80,6 +85,7 @@ Do not use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,5 +102,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20ENDPOINTS_CONFIGURE_FAILURE_FLAGS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: debugger\idebugclient7.htm
 old-project: debugger
 ms.assetid: 16FBD831-D7AE-4B10-B76E-6CA42C9CABEB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>IDebugClient7</b> interface is reserved for internal use.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugClient7</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IDebugClient7</b> also has these types of members:
 
@@ -49,6 +50,7 @@ The <b>IDebugClient7</b> interface has these methods.
 The <a href="debugger.idebugclient7_setclientcontext">SetClientContext</a> method is reserved for internal use.
 
  
+
 
 ## -members
 The <b>IDebugClient7</b> interface has these methods.
@@ -63,11 +65,13 @@ The <b>IDebugClient7</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugclient7_setclientcontext">SetClientContext</a> method is reserved for internal use.
+
 </td>
 </tr>
 </table>The <a href="debugger.idebugclient7_setclientcontext">SetClientContext</a> method is reserved for internal use.
 
  
+
 
 ## -remarks
 
@@ -77,6 +81,7 @@ The <a href="debugger.idebugclient7_setclientcontext">SetClientContext</a> metho
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

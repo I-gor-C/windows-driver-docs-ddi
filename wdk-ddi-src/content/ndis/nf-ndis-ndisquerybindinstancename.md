@@ -7,7 +7,7 @@ old-location: netvista\ndisquerybindinstancename.htm
 old-project: netvista
 ms.assetid: bbba8be8-aa7e-455f-a591-e9d915f137f4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisQueryBindInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   that the calling protocol driver will bind to.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ A pointer to a caller-supplied NDIS_STRING type that receives a counted Unicode 
      defines the NDIS_STRING type as a 
      <a href="kernel.unicode_string">UNICODE_STRING</a> type.
 
+
 ### -param BindingContext [in]
 
 A handle that identifies the NDIS context area for the bind operation. NDIS passed this handle to
@@ -71,10 +73,12 @@ A handle that identifies the NDIS context area for the bind operation. NDIS pass
      <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">
      ProtocolBindAdapterEx</a> function.
 
+
 ## -returns
 <b>NdisQueryBindInstanceName</b> returns NDIS_STATUS_SUCCESS if memory for the string at 
      <i>pAdapterInstanceName</i> was successfully allocated; otherwise, it returns
      NDIS_STATUS_RESOURCES.
+
 
 ## -remarks
 A protocol driver uses 
@@ -96,11 +100,13 @@ Friendly names are intended to help the user quickly and accurately identify a p
     adapter--for example, "PCI Ethernet Adapter" and "Virtual Private Networking Adapter" are considered
     friendly names.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +117,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -118,11 +125,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisQueryBindInstanceName (NDIS
    5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +142,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -143,14 +153,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_ndisquerybindinstancename">NdisQueryBindInstanceName</a>
@@ -171,5 +184,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueryBindInstanceName function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueryBindInstanceName function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

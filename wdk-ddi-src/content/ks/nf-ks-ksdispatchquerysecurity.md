@@ -41,6 +41,7 @@ req.irql:
 The <b>KsDispatchQuerySecurity</b> function is used in the KSDISPATCH_TABLE.QuerySecurity entry to handle querying about the current security descriptor. The assumption is that the KSOBJECT_HEADER structure is being used in the <b>FsContext</b> data structure and that the <b>CreateItem</b> points to a valid item that optionally contains a security descriptor. 
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS KsDispatchQuerySecurity(
 
 Specifies the device object associated with the IRP.
 
+
 ### -param Irp [in]
 
 Specifies the IRP that is being handled.
 
+
 ## -returns
 The <b>KsDispatchQuerySecurity</b> function returns the security query status and completes the IRP if a security descriptor is present. If no security descriptor is present, it returns STATUS_NO_SECURITY_ON_OBJECT.
+
 
 ## -remarks
 
@@ -72,6 +76,7 @@ The <b>KsDispatchQuerySecurity</b> function returns the security query status an
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +98,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

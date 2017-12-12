@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: ae4936ac-9794-4854-81ec-2139b3ce4c3c
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _SRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT, *PSRIOV_MITIGATED_RANGE_UPDATE_INPUT
+ms.keywords: _SRIOV_MITIGATED_RANGE_UPDATE_INPUT, *PSRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure is used as an input buffer to the <a href="buses.ioctl_sriov_mitigated_range_update">IOCTL_SRIOV_MITIGATED_RANGE_UPDATE</a> request to indicate the virtual function (VF) whose memory-mapped I/O space that must be mitigated. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _SRIOV_MITIGATED_RANGE_UPDATE_INPUT {
 
 Zero-based index of the virtual function from the first virtual function exposed by this physical function.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Zero-based index of the virtual function from the first virtual function exposed
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

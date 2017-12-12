@@ -7,8 +7,8 @@ old-location: storage\sm_getbindingcapability_in.htm
 old-project: storage
 ms.assetid: 9b2d471a-649e-4289-a27a-b78893d8477b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SM_GetBindingCapability_IN, SM_GetBindingCapability_IN, *PSM_GetBindingCapability_IN
+ms.date: 12/8/2017
+ms.keywords: _SM_GetBindingCapability_IN, *PSM_GetBindingCapability_IN, SM_GetBindingCapability_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The SM_GetBindingCapability_IN structure is used to provide input parameters to the SM_GetBindingCapability method.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct _SM_GetBindingCapability_IN {
 
 The worldwide name (WWN) of the local port whose events the WMI client will receive.
 
+
 ### -field DomainPortWWN
 
 A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the SM_GetBindingCapability_IN structure in <i>Hbapiwmi.h</i> when it compiles the SM_TargetInformationMethod WMI class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

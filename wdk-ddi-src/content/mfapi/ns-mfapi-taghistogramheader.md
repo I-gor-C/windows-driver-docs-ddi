@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>HistogramHeader</b>  structure describes the blob format for <b>MF_CAPTURE_METADATA_HISTOGRAM</b>.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct tagHistogramHeader {
 
 Size of this header + (<a href="stream.histogramdataheader">HistogramDataHeader</a> + histogram data following) * number of channels available.
 
+
 ### -field Bins
 
 Number of bins in the histogram.
+
 
 ### -field FourCC
 
 Color space that the histogram is collected from
 
+
 ### -field ChannelMasks
 
 Masks of the color channels that the histogram is collected for.
 
+
 ### -field Grid
 
 Grid that the histogram is collected from.
+
 
 ## -remarks
 The <b>MF_CAPTURE_METADATA_HISTOGRAM</b> attribute contains a  histogram when a preview frame is captured.
@@ -90,11 +96,13 @@ Histogram data is an array of <b>ULONG</b> with each entry representing the numb
 For Windows 10, if <a href="https://msdn.microsoft.com/library/windows/hardware/dn917945">KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM</a> is supported, at minimum a full frame histogram with Y channel must be provided which should be the first histogram in the histogram blob.
 Note that <a href="stream.histogramblobheader">HistogramBlobHeader</a>, <b>HistogramHeader</b>, <a href="stream.histogramdataheader">HistogramDataHeader</a> and Histogram data only describe the blob format for the <b>MF_CAPTURE_METADATA_HISTOGRAM</b> attribute.  The metadata item structure for the histogram (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + all histogram metadata payload) is up to driver and must be 8-byte aligned.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,5 +125,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20HistogramHeader structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

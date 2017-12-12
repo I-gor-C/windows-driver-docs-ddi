@@ -7,7 +7,7 @@ old-location: netvista\wwan_pin_action.htm
 old-project: netvista
 ms.assetid: 4edd0bc1-cd50-460b-92e1-7b2440ae3861
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_PIN_ACTION, WWAN_PIN_ACTION, *PWWAN_PIN_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The WWAN_PIN_ACTION structure represents actions to perform with a Personal Iden
   (PIN).
 
 
+
 ## -syntax
 
 ````
@@ -61,15 +62,18 @@ typedef struct _WWAN_PIN_ACTION {
 
 The type of the PIN on which to perform the action.
 
+
 ### -field PinOperation
 
 The action to perform with the PIN.
+
 
 ### -field Pin
 
 A NULL-terminated string that represents the PIN value to perform the action with, or the PIN
      value required to enable/disable PIN settings. This member is a numeric value and applies for all values of 
      <b>PinOperation</b> .
+
 
 ### -field NewPin
 
@@ -79,6 +83,7 @@ A NULL-terminated string that represents the new PIN value to set when
      <b>WwanPinOperationEnter</b>, for 
      <b>PinType</b><b>WwanPinTypePuk1</b> or 
      <b>WwanPinTypePuk2</b>. This member is a numeric value.
+
 
 ## -remarks
 When 
@@ -93,19 +98,23 @@ When
     <b>WwanPinTypePuk2, WwanPinOperationEnter</b> is the only supported value for 
     <b>PinOperation</b> .
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +137,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_ACTION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_ACTION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

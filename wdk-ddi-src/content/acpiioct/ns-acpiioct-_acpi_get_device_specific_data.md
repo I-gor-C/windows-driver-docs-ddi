@@ -41,6 +41,7 @@ req.irql:
 The ACPI_GET_DEVICE_SPECIFIC_DATA structure contains input arguments for the IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA control method.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _ACPI_GET_DEVICE_SPECIFIC_DATA {
 
 A unique identifier for the IOCTL.
 
+
 ### -field Section
 
 A GUID specified by the caller.
+
 
 ### -field PropertyNameLength
 
 The length of the property name.
 
+
 ### -field PropertyName
 
 Specifies the property name. If not specified, the <b>PropertyNameLength</b> and the <b>PropertyName</b> are returned. If a <b>PropertyName</b> is specified, only the value of that <b>PropertyName</b> is returned.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Specifies the property name. If not specified, the <b>PropertyNameLength</b> and
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

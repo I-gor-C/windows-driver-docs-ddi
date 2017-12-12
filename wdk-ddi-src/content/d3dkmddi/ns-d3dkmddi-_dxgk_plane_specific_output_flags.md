@@ -7,7 +7,7 @@ old-location: display\dxgk_plane_specific_output_flags.htm
 old-project: display
 ms.assetid: 95D9C564-92F3-4165-8063-49D928F30475
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 A structure containing the flags that apply to a plane set by the driver. 
 
 
+
 ## -syntax
 
 ````
@@ -64,17 +65,21 @@ typedef struct _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS {
 
 Indicates that the flip was converted to an immediate flip rather than a VSYNC flip. The driver sets FlipConvertedToImmediate when the current line is less than DXGK_MULTIPLANE_OVERLAY_PLANE3.MaxImmediateFlipLine.
 
+
 ### -field  PostPresentNeeded
 
   Indicates that scheduler must call DXGDDI_POSTMULTIPLANEOVERLAYPRESENT for this specific plane. The driver must only set this flag for immediate flips.
+
 
 ### -field HsyncInterruptCompletion
 
 Indicates that the scheduler should not assume that the immediate flip for this plane is completed upon the return from DdiSetVidPnSourceAddressWithMultiPlaneOverlay3 DDI. . Instead, the OS will only assume the immediate flip is completed when it receives a CrtcVsyncWithMultiPlaneOverlay2 interrupt notification with the PresentId greater or equal to pending immediate flip request. CrtcVsyncWithMultiPlaneOverlay2 interrupt notification for this flip may be an HsyncFlipCompletion, or it may be a regular VSync notification. The driver must only set this flag for immediate flips.  
 
+
 ### -field Reserved
 
 This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 27 bits (0xFFFFFFE0) of the 32-bit <b>Value</b> member to zeros.
+
 
 ### -field Value
 
@@ -87,6 +92,7 @@ This member is reserved and should be set to zero. Setting this member to zero i
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 5C39C0EB-AC7F-44E5-95EB-9F067DBE0801
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _ROOTHUB_30PORT_INFO, ROOTHUB_30PORT_INFO, *PROOTHUB_30PORT_INFO
+ms.keywords: _ROOTHUB_30PORT_INFO, *PROOTHUB_30PORT_INFO, ROOTHUB_30PORT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Provides information about a USB 3.0 root hub port. This structure is passed by UCX in the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _ROOTHUB_30PORT_INFO {
 
 The USB 3.0 port number connected to the root hub.
 
+
 ### -field MinorRevision
 
 Revision number.
+
 
 ### -field HubDepth
 
 The hub depth limit.
 
+
 ### -field Removable
 
 A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is removable. 
 
+
 ### -field DebugCapable
 
 A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is debug capable. 
+
 
 ## -remarks
 
@@ -85,6 +91,7 @@ A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is debu
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

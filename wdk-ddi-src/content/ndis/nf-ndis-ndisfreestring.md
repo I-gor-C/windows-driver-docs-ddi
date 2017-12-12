@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisFreeString
-title: NdisFreeString
+title: NdisFreeString macro
 author: windows-driver-content
 description: The NdisFreeString function releases storage that was allocated by NdisInitializeString for a buffered string.
 old-location: netvista\ndisfreestring.htm
 old-project: netvista
 ms.assetid: 62b4318a-b883-44fc-a2a5-86a7a884f039
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisFreeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,62 +31,58 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.iface: 
 ---
 
-# NdisFreeString function
+# NdisFreeString macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisFreeString</b> function releases storage that was allocated by 
-  <a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a> for a buffered
-  string.</p>
+  <a href="netvista.ndisinitializestring">NdisInitializeString</a> for a buffered
+  string.
+
 
 
 ## -syntax
 
 ````
 VOID NdisFreeString(
-  _In_ NDIS_STRING String
+  [in] NDIS_STRING String
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param String [in]
 
-<dd>
-<p>An NDIS_STRING type value that describes the string to free. For Windows 2000 and later, NDIS
+An NDIS_STRING type value that describes the string to free. For Windows 2000 and later, NDIS
      defines the NDIS_STRING type as a 
-     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
-</dd>
-</dl>
+     <a href="kernel.unicode_string">UNICODE_STRING</a> type.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>An NDIS driver typically calls the 
-    <a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a> function during
+An NDIS driver typically calls the 
+    <a href="netvista.ndisinitializestring">NdisInitializeString</a> function during
     initialization--for example, to set up names passed to the 
     <b>Ndis<i>Xxx</i>Configuration</b> functions. For each call that the driver makes to 
     <b>NdisInitializeString</b>, the driver must make a corresponding call to 
     <b>NdisFreeString</b>. When releasing string buffers that were allocated during initialization, a driver
     must call 
-    <b>NdisFreeString</b> before the driver's initialization function returns control.</p>
+    <b>NdisFreeString</b> before the driver's initialization function returns control.
 
-<p><b>NdisFreeString</b> must be used only for freeing buffers that were allocated with 
-    <b>NdisInitializeString</b>.</p>
+<b>NdisFreeString</b> must be used only for freeing buffers that were allocated with 
+    <b>NdisInitializeString</b>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,15 +92,18 @@ VOID NdisFreeString(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="..\wdm\nf-wdm-rtlfreeansistring.md">RtlFreeAnsiString</a> or <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>  instead.</p>
+Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="kernel.rtlfreeansistring">RtlFreeAnsiString</a> or <a href="kernel.rtlfreeunicodestring">RtlFreeUnicodeString</a>  instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,15 +113,18 @@ VOID NdisFreeString(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>PASSIVE_LEVEL</p>
+PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>DDI compliance rules</p>
+DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -140,30 +142,33 @@ VOID NdisFreeString(
    Drivers</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
+<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-rtlinitstring.md">RtlInitString</a>
+<a href="kernel.rtlinitstring">RtlInitString</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
+<a href="kernel.rtlinitunicodestring">RtlInitUnicodeString</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
+<a href="kernel.rtlunicodestringtoansistring">RtlUnicodeStringToAnsiString</a>
 </dt>
 <dt>
-<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
+<a href="kernel.unicode_string">UNICODE_STRING</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeString function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeString macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

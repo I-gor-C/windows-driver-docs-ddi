@@ -7,7 +7,7 @@ old-location: netvista\vmbserverchannelinitsetmmiomegabytes.htm
 old-project: netvista
 ms.assetid: 9E19BCC0-5529-470C-BF69-521FEFA3303E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbServerChannelInitSetMmioMegabytes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,10 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbServerChannelInitSetMmioMegabytes</b> function specifies the amount, in
 megabytes, of guest memory-mapped I/O (MMIO) space to reserve for the device. 
+
 
 
 ## -syntax
@@ -61,15 +63,18 @@ NTSTATUS VmbServerChannelInitSetMmioMegabytes(
 
 A handle for a channel.
 
+
 ### -param MmioMegabytes [in]
 
 The amount of MMIO space, in megabytes, to reserve.
+
 
 
 ### -param MmioMegabytesOptional [in]
 
 The amount of extra optional MMIO
 space, in megabytes, to reserve.
+
 
 ## -returns
 <b>VmbServerChannelInitSetMmioMegabytes</b> returns the following status values: 
@@ -82,6 +87,7 @@ space, in megabytes, to reserve.
 
  
 
+
 ## -remarks
 This function exists as a convenience for driver creators.
 Everything it does could be done by interacting the with the guest plug-and-play
@@ -90,43 +96,53 @@ a common requirement that the Windows and Linux VMBus drivers have
 the capacity to reserve MMIO space on behalf of the client.  This function allows the
 server endpoint to suggest the right amount of MMIO space to reserve.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

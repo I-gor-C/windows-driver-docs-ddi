@@ -7,7 +7,7 @@ old-location: display\d3dkmt_destroyhwcontext.htm
 old-project: display
 ms.assetid: DFFFE90A-C505-466A-B415-AA6C6352421B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_DESTROYHWCONTEXT, D3DKMT_DESTROYHWCONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure holding information to destroy a hardware context.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _D3DKMT_DESTROYHWCONTEXT {
 A handle that identifies the context being destroyed.
 
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ A handle that identifies the context being destroyed.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

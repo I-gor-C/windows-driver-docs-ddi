@@ -41,6 +41,7 @@ req.irql:
 The <b>KsDispatchFastReadFailure</b> function is used in a KSDISPATCH_TABLE.FastRead entry when fast I/O read is not handled. The function should always return <b>FALSE</b>.
 
 
+
 ## -syntax
 
 ````
@@ -63,45 +64,56 @@ BOOLEAN KsDispatchFastReadFailure(
 
 Not used.
 
+
 ### -param FileOffset [in]
 
 Not used.
+
 
 ### -param Length [in]
 
 Not used.
 
+
 ### -param Wait [in]
 
 Not used.
+
 
 ### -param LockKey [in]
 
 Not used.
 
+
 ### -param Buffer [out]
 
 Not used.
+
 
 ### -param IoStatus [out]
 
 Not used.
 
+
 ### -param DeviceObject [in]
 
 Not used.
 
+
 ## -returns
 The <b>KsDispatchFastReadFailure</b> function returns <b>FALSE</b>.
 
+
 ## -remarks
 The <b>KsDispatchFastReadFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastReadFailure</b> function, that calls a dispatch table entry.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -112,6 +124,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

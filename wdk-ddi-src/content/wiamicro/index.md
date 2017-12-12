@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wiamicro.h header
 
+## -description
 
 This header is used by Imaging devices. For more information, see
 - [Imaging devices](../_image/index.md)
@@ -19,7 +24,7 @@ Wiamicro.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [RANGEVALUE structure](ns-wiamicro--rangevalue.md) | The RANGEVALUE structure is used by a microdriver to communicate to the WIA Flatbed driver the legal values for a microdriver function parameter. |
-| [SCANINFO structure](ns-wiamicro--scaninfo.md) | The SCANINFO structure is used to store and communicate information about a scan acquisition. |
-| [SCANWINDOW structure](ns-wiamicro--scanwindow.md) | The SCANWINDOW structure is used by the WIA Flatbed driver to tell the microdriver what image area to scan. |
 | [VAL structure](ns-wiamicro-val.md) | The VAL structure is used by the microdriver and WIA Flatbed driver to pass information between each other. |
+| [_RANGEVALUE structure](ns-wiamicro-_rangevalue.md) | The RANGEVALUE structure is used by a microdriver to communicate to the WIA Flatbed driver the legal values for a microdriver function parameter. |
+| [_SCANINFO structure](ns-wiamicro-_scaninfo.md) | The SCANINFO structure is used to store and communicate information about a scan acquisition. |
+| [_SCANWINDOW structure](ns-wiamicro-_scanwindow.md) | The SCANWINDOW structure is used by the WIA Flatbed driver to tell the microdriver what image area to scan. |

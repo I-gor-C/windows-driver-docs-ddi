@@ -7,7 +7,7 @@ old-location: wdf\wdfdevstatenormalize.htm
 old-project: wdf
 ms.assetid: 0243de8b-0f47-4f0a-af25-beb6365386dd
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDevStateNormalize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WdfDevStateNormalize</b> method removes extra bits from a specified framework state machine value so that the driver can use the value as an index into an array of machine states.
+
 
 
 ## -syntax
@@ -58,10 +60,12 @@ ULONG WdfDevStateNormalize(
 
 A state machine value that is returned from <a href="wdf.wdfdevicegetdevicepnpstate">WdfDeviceGetDevicePnpState</a>, <a href="wdf.wdfdevicegetdevicepowerstate">WdfDeviceGetDevicePowerState</a>, or <a href="wdf.wdfdevicegetdevicepowerpolicystate">WdfDeviceGetDevicePowerPolicyState</a>.
 
+
 ## -returns
 <b>WdfDevStateNormalize</b> returns the specified <i>State</i> value with extra bits removed.
 
 The following code example obtains the current state of the framework's Plug and Play state machine and then removes extra bits from the state value.
+
 
 ## -remarks
 
@@ -71,6 +75,7 @@ The following code example obtains the current state of the framework's Plug and
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,22 +86,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +117,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -118,9 +129,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>

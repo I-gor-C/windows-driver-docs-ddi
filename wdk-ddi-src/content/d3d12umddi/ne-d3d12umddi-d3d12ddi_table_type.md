@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_table_type.htm
 old-project: display
 ms.assetid: 93562C36-7ADE-4CC6-B33D-D6E955E3D42C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_TABLE_TYPE, D3D12DDI_TABLE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Command list and queue types to allow drivers to point to different implementations for video.
 
 
+
 ## -syntax
 
 ````
@@ -71,65 +72,81 @@ typedef enum D3D12DDI_TABLE_TYPE {
 
 Device core.
 
+
 ### -field D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D
 
 List 3D.
+
 
 ### -field D3D12DDI_TABLE_TYPE_COMMAND_QUEUE_3D
 
 Queue 3D.
 
+
 ### -field D3D12DDI_TABLE_TYPE_DXGI
 
 DXGI.
+
 
 ### -field D3D12DDI_TABLE_TYPE_0020_DEVICE_VIDEO
 
 Device video.
 
+
 ### -field D3D12DDI_TABLE_TYPE_0020_DEVICE_CORE_VIDEO
 
 Queue video.
+
 
 ### -field D3D12DDI_TABLE_TYPE_0020_EXTENDED_FEATURES
 
 Extended features.
 
+
 ### -field D3D12DDI_TABLE_TYPE_0020_PASS_EXPERIMENT
 
 Pass experiment.
+
 
 ### -field D3D12DDI_TABLE_TYPE_0021_SHADERCACHE_CALLBACKS
 
 Shader cache callbacks.
 
+
 ### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_DECODE
 
 Queue video decode.
+
 
 ### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_DECODE
 
 List video decode.
 
+
 ### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_PROCESS
 
 Queue video process.
+
 
 ### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_PROCESS
 
 List video process.
 
+
 ### -field D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_RESOURCES
 
 Device content protection resources.
+
 
 ### -field D3D12DDI_TABLE_TYPE_0030_CONTENT_PROTECTION_CALLBACKS
 
 Content protection callbacks.
 
+
 ### -field D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_STREAMING
 
 Device content protection streaming.
+
 
 ## -remarks
 
@@ -139,6 +156,7 @@ Device content protection streaming.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

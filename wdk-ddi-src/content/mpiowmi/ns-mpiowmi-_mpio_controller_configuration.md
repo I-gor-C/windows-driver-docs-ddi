@@ -7,7 +7,7 @@ old-location: storage\mpio_controller_configuration.htm
 old-project: storage
 ms.assetid: af608197-fa2b-474f-aa87-eb933a57b8cc
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_CONTROLLER_CONFIGURATION structure provides a top-level view of the storage controllers and the targets that are connected to them in the system.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _MPIO_CONTROLLER_CONFIGURATION {
 
 An unsigned 32-bitfield that represents the total number of controllers on the system that are known to MPIO.
 
+
 ### -field ControllerInfo
 
 An array with information about all the controllers and all targets in the system. The number of elements of the array is given by <i>NumberControllers</i> and each element of the array is an instance of an MPIO_CONTROLLER_INFO structure.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ An array with information about all the controllers and all targets in the syste
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

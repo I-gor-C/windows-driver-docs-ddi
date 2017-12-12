@@ -7,7 +7,7 @@ old-location: kernel\processorhalt.htm
 old-project: kernel
 ms.assetid: DEBE74B2-DFBD-43D7-8B14-86B4DA7D4C98
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _VPCI_PNP_ID, *PVPCI_PNP_ID, VPCI_PNP_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,10 +41,11 @@ req.irql: <= HIGH_LEVEL
 The <b>ProcessorHalt</b> routine prepares the processor to be halted.
 
 
+
 ## -prototype
 
 ````
-PPOFXCALLBACKPROCESSORHALT ProcessorHalt;
+POFXCALLBACKPROCESSORHALT ProcessorHalt;
 
 NTSTATUS ProcessorHalt(
   _In_        ULONG                   Flags,
@@ -60,6 +61,7 @@ NTSTATUS ProcessorHalt(
 ### -param Flags [in]
 
 Flags that indicate the properties of the idle state that the processor will enter. The <i>Flags</i> parameter is set to zero or to the bitwise-OR of one or more of the following flag bits.
+
 <table>
 <tr>
 <th>Flag name</th>
@@ -94,13 +96,16 @@ Flags that indicate the properties of the idle state that the processor will ent
 </table>
  
 
+
 ### -param Context [in, out, optional]
 
 A pointer to a PEP-defined processor-halt context. This pointer is passed as a parameter to the <i>Halt</i> callback routine. This context is opaque to the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx).
 
+
 ### -param Halt [in]
 
 A pointer to a PEP-implemented <i>Halt</i> callback routine. PoFx calls this routine after preparations to halt the processor have been completed. During this callback, the PEP is expected to transition the processor to the <i>halted</i> state.
+
 
 ## -returns
 <b>ProcessorHalt</b> returns STATUS_SUCCESS if the processor is successfully prepared to be halted. Possible error return values include the following status code.
@@ -112,6 +117,7 @@ A pointer to a PEP-implemented <i>Halt</i> callback routine. PoFx calls this rou
 </dl>The PEP's <i>Halt</i> callback routine unexpectedly returned from an idle state in which the processor's hardware context was not preserved.
 
  
+
 
 ## -remarks
 This routine is implemented by the power management framework (PoFx) and is called by the platform extension plug-in (PEP). The <b>ProcessorHalt</b> member of the <a href="kernel.pep_kernel_information_struct_v3">PEP_KERNEL_INFORMATION_STRUCT_V3</a> structure is a pointer to a <b>ProcessorHalt</b> routine.
@@ -142,19 +148,23 @@ If the <i>Flags</i> parameter contains an illegal combination of flag bits, <b>P
 
 The PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -165,9 +175,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= HIGH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -182,5 +194,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PPOFXCALLBACKPROCESSORHALT routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20POFXCALLBACKPROCESSORHALT routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

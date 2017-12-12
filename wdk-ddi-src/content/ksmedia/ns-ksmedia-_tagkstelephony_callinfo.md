@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: B5B89AAC-169B-42B0-8FC8-AB436EFC3579
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _tagKSTELEPHONY_CALLINFO, *PKSTELEPHONY_CALLINFO, KSTELEPHONY_CALLINFO
+ms.keywords: _tagKSTELEPHONY_CALLINFO, KSTELEPHONY_CALLINFO, *PKSTELEPHONY_CALLINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The <b>KSTELEPHONY_CALLINFO</b> structure specifies the type and state of a phone call for the <a href="https://msdn.microsoft.com/library/windows/hardware/mt169873">KSPROPERTY_TELEPHONY_CALLINFO</a> property.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _tagKSTELEPHONY_CALLINFO {
 
 Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN packet-switched).
 
+
 ### -field CallState
 
 Specifies the state of the phone call.
+
 
 ## -remarks
 
@@ -69,30 +72,37 @@ Specifies the state of the phone call.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10 Mobile
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

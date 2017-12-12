@@ -41,6 +41,7 @@ req.irql:
 This structure defines the format for AGNSS time injection.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field UtcTime
 
 UTC time.
 
+
 ### -field TimeUncertainty
 
 Uncertainty in milliseconds.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Uncertainty in milliseconds.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

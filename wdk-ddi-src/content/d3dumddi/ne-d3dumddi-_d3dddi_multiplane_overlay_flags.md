@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_flags.htm
 old-project: display
 ms.assetid: b91d87e8-3f63-45ac-919f-3597957ea497
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_MULTIPLANE_OVERLAY_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies a flip operation to be performed on an overlay plane.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FLAGS {
 
 The overlay plane should flip the data vertically, making it appear upside-down.
 
+
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP
 
 The overlay plane should flip the data horizontally, making it appear as a right-to-left mirror image.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The overlay plane should flip the data horizontally, making it appear as a right
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

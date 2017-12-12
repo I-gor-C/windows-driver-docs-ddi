@@ -7,7 +7,7 @@ old-location: netvista\dot11_vwifi_attributes.htm
 old-project: netvista
 ms.assetid: 46eee6ea-8259-4036-b1c4-f0eef6587879
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DOT11_VWIFI_ATTRIBUTES, *PDOT11_VWIFI_ATTRIBUTES, DOT11_VWIFI_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,39 @@ The type, revision, and size of the DOT11_VWIFI_ATTRIBUTES structure. This membe
      an 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
      
+
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
+
+
 
 
 ### -field Type
 
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
+
 ### -field Revision
 
 This member must be set to DOT11_VWIFI_ATTRIBUTES_REVISION_1.
+
 
 ### -field Size
 
 This member must be set to 
        sizeof(DOT11_VWIFI_ATTRIBUTES).
+
 </dd>
 </dl>
 For more information about these members, see 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
+
 ### -field uTotalNumOfEntries
 
 The maximum number of entries that the 
      <b>Combinations</b> array can contain.
+
 
 ### -field Combinations
 
@@ -91,6 +99,7 @@ The list of supported combinations of 802.11 MAC entities that an 802.11 minipor
      simultaneously support when it is virtualized. Each entry in this list is specified through an array of 
      <a href="netvista.dot11_vwifi_combination">DOT11_VWIFI_COMBINATION</a>,  <a href="netvista.dot11_vwifi_combination_v2">
      DOT11_VWIFI_COMBINATION_V2</a>, or <a href="netvista.dot11_vwifi_combination_v3">DOT11_VWIFI_COMBINATION_V3</a> structures.
+
 
 ## -remarks
 
@@ -100,15 +109,18 @@ The list of supported combinations of 802.11 MAC entities that an 802.11 minipor
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating
    system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -131,5 +143,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

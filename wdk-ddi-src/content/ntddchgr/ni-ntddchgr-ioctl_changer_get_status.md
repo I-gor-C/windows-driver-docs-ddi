@@ -7,8 +7,8 @@ old-location: storage\ioctl_changer_get_status.htm
 old-project: storage
 ms.assetid: 88f1a248-0beb-4c7c-b68d-6ce145bf5ca7
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _ELEMENT_TYPE, *PELEMENT_TYPE, ELEMENT_TYPE
+ms.date: 12/8/2017
+ms.keywords: _ELEMENT_TYPE, ELEMENT_TYPE, *PELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -38,31 +38,27 @@ req.irql:
 
 
 ## -description
-
 Returns the current status of the device.
 
-Returns the current status of the device.
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
-NoneNone
+None.
 
 
 ### -input-buffer-length
+None.
 
-<text></text>
 
 ### -output-buffer
-<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
-NoneNone
+None.
 
 
 ### -output-buffer-length
+None.
 
-<text></text>
 
 ### -in-out-buffer
 
@@ -73,8 +69,8 @@ NoneNone
 <text></text>
 
 ### -status-block
-<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
-The <b>Information</b> field is set to zero. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES. The <b>Information</b>Information field is set to zero. The <b>Status</b>Status field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES. 
+I/O Status block
+The <b>Information</b> field is set to zero. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES. 
 
 
 ## -remarks
@@ -85,6 +81,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

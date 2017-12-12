@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The<b> KsAddDevice </b>function is the default <i>AddDevice</i> handler installed by <a href="stream.ksinitializedriver">KsInitializeDriver</a>. 
 
 
+
 ## -syntax
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS KsAddDevice(
 
 A pointer to the WDM driver object for the minidriver.
 
+
 ### -param PhysicalDeviceObject [in]
 
 A pointer to the WDM physical device object.
 
+
 ## -returns
 Returns STATUS_SUCCESS indicating the device was successfully created or an error status from <a href="kernel.iocreatedevice">IoCreateDevice</a> or <a href="stream.ksinitializedevice">KsInitializeDevice</a>.
+
 
 ## -remarks
 Normally, an AVStream minidriver does not call this function directly.
@@ -71,11 +75,13 @@ For more information, see <a href="stream.adddevice_routine_for_avstream_minidri
 
 <b>KsAddDevice</b> extracts the device descriptor stored in the device extension allocated from a call to <a href="stream.ksinitializedriver">KsInitializeDriver</a> and creates the device described by it. If <b>KsInitializeDriver</b> is not used to initialize the driver, this function creates a device with the default characteristics and no filter factories. The minidriver always has the option of calling <a href="stream.kscreatedevice">KsCreateDevice</a> directly, in which case the driver extension is not used by AVStream. Because <b>KsAddDevice</b> calls <b>KsCreateDevice</b>, drivers that call <b>KsAddDevice</b> should not call <b>KsCreateDevice</b> separately.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -86,14 +92,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +113,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -114,9 +124,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -146,5 +158,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAddDevice function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

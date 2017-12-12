@@ -7,7 +7,7 @@ old-location: storage\ufs_unit_config_descriptor.htm
 old-project: storage
 ms.assetid: 09CBAD0A-CBDC-464E-908C-BF142D515969
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: PUFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UFS_UNIT_CONFIG_DESCRIPTOR</b> structure describes the user configurable parameters within the <a href="storage.ufs_config_descriptor">UFS_CONFIG_DESCRIPTOR</a>.
 
 
+
 ## -syntax
 
 ````
@@ -66,17 +67,21 @@ typedef struct _UFS_UNIT_CONFIG_DESCRIPTOR {
 
 Specifies if the logical unit is enabled.
 
+
 ### -field bBootLunID
 
 Specifies if the logical unit is a bootable logical unit.
+
 
 ### -field bLUWriteProtect
 
 Specifies if the Logical Unit is write protected.
 
+
 ### -field bMemoryType
 
 Specifies the Memory type of the device.
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,15 +122,18 @@ Specifies the Memory type of the device.
 </table>
  
 
+
 ### -field dNumAllocUnits
 
 Specifies the number of allocation units assigned to the logical unit.
+
 
 ### -field bDataReliability
 
 <b>bDataReliability</b> defines the device behavior
 when a power failure occurs during a write
 operation to the logical unit:
+
 <table>
 <tr>
 <th>Value</th>
@@ -150,13 +158,16 @@ data is protected against power failure.</td>
 </table>
  
 
+
 ### -field bLogicalBlockSize
 
 Specifies the logical block size.
 
+
 ### -field bProvisioningType
 
 Specifies the provisioning type.
+
 <table>
 <tr>
 <th>Value</th>
@@ -183,13 +194,16 @@ Specifies the provisioning type.
 </table>
  
 
+
 ### -field wContextCapabilities
 
 Specifies the Context Capabilities.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -199,22 +213,27 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

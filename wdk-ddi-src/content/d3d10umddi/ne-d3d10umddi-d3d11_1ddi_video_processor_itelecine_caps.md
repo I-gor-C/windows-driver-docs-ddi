@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_itelecine_caps.htm
 old-project: display
 ms.assetid: 866203d9-9621-4458-b146-be90e67c1c7c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies the inverse telecine (IVTC) capabilities of a video processor.
 
 
+
 ## -syntax
 
 ````
@@ -65,41 +66,51 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS {
 
 The video processor can reverse 3:2 pulldown.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22
 
 The video processor can reverse 2:2 pulldown.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2224
 
 The video processor can reverse 2:2:2:4 pulldown.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2332
 
 The video processor can reverse 2:3:3:2 pulldown.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32322
 
 The video processor can reverse 3:2:3:2:2 pulldown.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_55
 
 The video processor can reverse 5:5 pulldown.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_64
 
 The video processor can reverse 6:4 pulldown.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_87
 
 The video processor can reverse 8:7 pulldown.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223
 
 The video processor can reverse 2:2:2:2:2:2:2:2:2:2:2:3 pulldown.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_OTHER
 
 The video processor can reverse other telecine modes not listed here.
+
 
 ## -remarks
 
@@ -109,22 +120,27 @@ The video processor can reverse other telecine modes not listed here.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

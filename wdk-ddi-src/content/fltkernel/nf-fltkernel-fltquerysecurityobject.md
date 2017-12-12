@@ -42,6 +42,7 @@ req.irql: PASSIVE_LEVEL
    descriptor.
 
 
+
 ## -syntax
 
 ````
@@ -63,16 +64,19 @@ NTSTATUS FltQuerySecurityObject(
 Opaque instance pointer for the caller. This parameter is required and cannot be 
       <b>NULL</b>.
 
+
 ### -param FileObject [in]
 
 File object pointer for the object whose security descriptor is being queried. This parameter is required 
       and cannot be <b>NULL</b>.
+
 
 ### -param SecurityInformation [in]
 
 
 <a href="ifsk.security_information">SECURITY_INFORMATION</a> value. This parameter is 
        required and must be one of the following:
+
 <table>
 <tr>
 <th>SecurityInformation Value</th>
@@ -81,41 +85,50 @@ File object pointer for the object whose security descriptor is being queried. T
 <tr>
 <td>
 OWNER_SECURITY_INFORMATION
+
 </td>
 <td>
 The owner identifier of the object is being queried. Requires <b>READ_CONTROL</b> 
           access.
+
 </td>
 </tr>
 <tr>
 <td>
 GROUP_SECURITY_INFORMATION
+
 </td>
 <td>
 The primary group identifier of the object is being queried. Requires 
           <b>READ_CONTROL</b> access.
+
 </td>
 </tr>
 <tr>
 <td>
 DACL_SECURITY_INFORMATION
+
 </td>
 <td>
 The discretionary access control list (DACL) of the object is being queried. Requires 
           <b>READ_CONTROL</b> access.
+
 </td>
 </tr>
 <tr>
 <td>
 SACL_SECURITY_INFORMATION
+
 </td>
 <td>
 The system ACL (SACL) of the object is being queried. Requires 
           <b>ACCESS_SYSTEM_SECURITY</b> access.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -param SecurityDescriptor [in, out]
 
@@ -124,15 +137,18 @@ Pointer to a caller-supplied output buffer that receives a copy of the security 
       structure is returned in self-relative format. This parameter is optional and can be 
       <b>NULL</b>.
 
+
 ### -param Length [in]
 
 Size, in bytes, of the <i>SecurityDescriptor</i> buffer.
+
 
 ### -param LengthNeeded [out, optional]
 
 Pointer to a caller-allocated variable that receives the number of bytes required to store the copied 
       security descriptor returned in the buffer pointed to by the <i>SecurityDescriptor</i> 
       parameter. This parameter is optional and can be <b>NULL</b>.
+
 
 ## -returns
 <b>FltQuerySecurityObject</b> returns STATUS_SUCCESS or an appropriate 
@@ -146,6 +162,7 @@ Pointer to a caller-allocated variable that receives the number of bytes require
         to the buffer. This is an error code.
 
  
+
 
 ## -remarks
 A security descriptor can be in absolute or self-relative form. In self-relative form, all members of the 
@@ -163,11 +180,13 @@ The object that the <i>FileObject</i> parameter points to can represent a named 
 
 For more information about security and access control, see the Microsoft Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -178,6 +197,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -188,6 +208,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -198,6 +219,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -208,9 +230,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -228,5 +252,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQuerySecurityObject function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\protocolcmaddparty.htm
 old-project: netvista
 ms.assetid: 06aa5ff6-974c-43dd-8395-bc1a1a8421d5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   call, stores state data for the new party, and causes the party to be added to the call.
 
 
+
 ## -prototype
 
 ````
@@ -67,6 +68,7 @@ Specifies the handle to a call manager-allocated context area in which the call 
      its per-VC state. The call manager supplied this handle to NDIS from its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
+
 ### -param CallParameters [in, out]
 
 Pointer to a 
@@ -74,16 +76,19 @@ Pointer to a
      the parameters, specified by a connection-oriented client, for the party that is being added to an
      existing call.
 
+
 ### -param NdisPartyHandle [in]
 
 Specifies a handle, supplied by NDIS, that uniquely identifies a multipoint party that is to be
      added to an existing virtual connection. This handle is opaque to the call manager and reserved for NDIS
      library use.
 
+
 ### -param CallMgrPartyContext [out]
 
 Specifies, on return, a handle to a call manager-supplied context area in which the call manager
      maintains state about this party for the multipoint call.
+
 
 ## -returns
 <i>ProtocolCmAddParty</i> returns the status of its operation(s) as one of the following:
@@ -109,6 +114,7 @@ Specifies, on return, a handle to a call manager-supplied context area in which 
        multipoint calls.
 
  
+
 
 ## -remarks
 <i>ProtocolCmAddParty</i> performs any necessary allocations of dynamic resources and structures that the
@@ -138,11 +144,13 @@ The <b>PROTOCOL_CM_ADD_PARTY</b> function type is defined in the Ndis.h header f
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -150,11 +158,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>ProtocolCmAddParty (NDIS
    5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -165,9 +175,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -182,5 +194,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_ADD_PARTY callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_ADD_PARTY callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

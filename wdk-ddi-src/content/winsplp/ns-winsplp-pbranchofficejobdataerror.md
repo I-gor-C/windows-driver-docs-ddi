@@ -7,7 +7,7 @@ old-location: print\branchofficejobdataerror.htm
 old-project: print
 ms.assetid: 947C508E-2EB9-451D-AA8D-DCDDE27DEBE6
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PBranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This structure contains the necessary data for logging a branch office job failure event on a remote server. This is based on standard job-related data available to the spooler.
 
 
+
 ## -syntax
 
 ````
@@ -68,49 +69,61 @@ typedef struct {
 
 Specifies the LastError at the time the event was logged.
 
+
 ### -field pDocumentName
 
 Specifies the name of the printed document.
+
 
 ### -field pUserName
 
 Specifies the user who submitted the job.
 
+
 ### -field pPrinterName
 
 Specifies the name of the print connection.
+
 
 ### -field pDataType
 
 Specifies the data type of the job.
 
+
 ### -field TotalSize
 
 Specifies the 64-bit size of the job.
+
 
 ### -field PrintedSize
 
 Specifies the 64-bit size of the job.
 
+
 ### -field TotalPages
 
 Specifies the total number of pages in the job.
+
 
 ### -field PrintedPages
 
 Specifies the number of pages currently printed.
 
+
 ### -field pMachineName
 
 Specifies the name of the client machine printing the job.
+
 
 ### -field pJobError
 
 Specifies the failure code for a JOB_ERROR event.
 
+
 ### -field pErrorDescription
 
 Specifies the text description of the error, if available.
+
 
 ## -remarks
 
@@ -120,6 +133,7 @@ Specifies the text description of the error, if available.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

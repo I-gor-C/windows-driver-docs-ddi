@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SensorState</b> enumeration type specifies the current operational state of a sensor.
 
 
+
 ## -syntax
 
 ````
@@ -65,66 +66,82 @@ enum SensorState {
 
 Reserved.
 
+
 ### -field SENSOR_STATE_READY
 
 Indicates that the sensor is ready.
+
 
 ### -field SENSOR_STATE_NOT_AVAILABLE
 
 Indicates that the sensor is not currently available for use.
 
+
 ### -field SENSOR_STATE_NO_DATA
 
 Indicates that no data available.
+
 
 ### -field SENSOR_STATE_INITIALIZING
 
 Indicates that the sensor is not yet ready for use. Try again.
 
+
 ### -field SENSOR_STATE_ACCESS_DENIED
 
 Reserved. Do not use in driver code.
+
 
 ### -field SENSOR_STATE_ERROR
 
 Indicates that an unspecified error occurred.
 
+
 ### -field SENSOR_STATE_MAX
 
 Reserved.
 
+
 ## -remarks
 This enumeration also defines values used for the <a href="https://msdn.microsoft.com/a9f88dad-a81d-45dc-b607-e7b4c5036774">SENSOR_PROPERTY_STATE</a> property.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 7
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,5 +161,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20SensorState enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

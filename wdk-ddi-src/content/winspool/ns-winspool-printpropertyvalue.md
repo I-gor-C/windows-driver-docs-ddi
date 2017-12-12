@@ -7,7 +7,7 @@ old-location: print\printpropertyvalue.htm
 old-project: print
 ms.assetid: B442AE8E-A4CE-481A-A69C-496CBF3E4722
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -75,6 +76,7 @@ typedef struct {
 ### -field pBuf
 
 TD
+
 </dd>
 </dl>
 </dd>
@@ -88,6 +90,7 @@ TD
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

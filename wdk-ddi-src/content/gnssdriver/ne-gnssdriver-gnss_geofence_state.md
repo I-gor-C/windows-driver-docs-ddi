@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 GNSS_GEOFENCE_STATE enumerates the various states of a single geofence.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 The state of the geofence is unknown.
 
+
 ### -field GNSS_GeofenceState_Entered
 
 The geofence has been entered.
 
+
 ### -field GNSS_GeofenceState_Exited
 
 The geofence has been exited.
+
 
 ## -remarks
 The following bitmasks are used by the HLOS to request state-change alerts for geofences:
@@ -97,11 +101,13 @@ When GNSS engine is able to track geofences again, it communicates so by setting
 
 The GNSS adapter will issue GNSS_ResetGeofenceTracking commands and re-add currently active geofences with current entry/exit criteria of each geofence. This needs to be done in case the set of geofences to be tracked has changed or in the state for any geofence has changed. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

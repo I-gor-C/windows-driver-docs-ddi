@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>HidP_SetData</b> routine sets a specified set of HID control button and value usages in a HID report.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ NTSTATUS __stdcall HidP_SetData(
 
 Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.
 
+
 ### -param DataList [in, out]
 
 Pointer to a caller-allocated array of <a href="hid.hidp_data">HIDP_DATA</a> structures that specify which buttons and usage values to set.
+
 
 ### -param DataLength [in, out]
 
 Specifies, on input, the number of members in the <i>DataList</i> array. For information about the output value, see the Remarks section.
 
+
 ### -param PreparsedData [in]
 
 Pointer to a top-level's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.
+
 
 ### -param Report [in]
 
 Pointer to a HID report.
 
+
 ### -param ReportLength [in]
 
 Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="hid.hidp_getcaps">HidP_GetCaps</a> returns in a collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+
 
 ## -returns
 <b>HidP_SetData</b> returns HIDP_STATUS_SUCCESS if it successfully sets all the control data specified by <i>DataList</i>.
@@ -122,6 +129,7 @@ HidP_SetData returns one of the following error values if one of the specified b
 
  
 
+
 ## -remarks
 Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="hid.hidp_setusagevaluearray">HidP_SetUsageValueArray</a>.
 
@@ -135,11 +143,13 @@ Set to the index of the <i>DataList</i> member that caused the error.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -150,14 +160,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -168,6 +181,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -178,9 +192,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -213,5 +229,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_SetData routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

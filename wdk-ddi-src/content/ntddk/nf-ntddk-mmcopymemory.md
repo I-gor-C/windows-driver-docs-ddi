@@ -7,7 +7,7 @@ old-location: kernel\mmcopymemory.htm
 old-project: kernel
 ms.assetid: 2B5492CD-B24D-44B5-BDAE-0B43A1AF1FCA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: MmCopyMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>MmCopyMemory</b> routine copies the specified range of virtual or physical memory into the caller-supplied buffer.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ NTSTATUS MmCopyMemory(
 
 A pointer to a caller-supplied buffer. This buffer must be in nonpageable  memory.
 
+
 ### -param SourceAddress [in]
 
 An <a href="kernel.mm_copy_address">MM_COPY_ADDRESS</a> structure, passed by value, that contains either the virtual address or the physical address of the data to be copied to the buffer pointed to by <i>TargetAddress</i>.
+
 
 ### -param NumberOfBytes [in]
 
 The number of bytes to copy from <i>SourceAddress</i> to <i>TargetAddress</i>.
 
+
 ### -param Flags [in]
 
 Flags that indicate whether <i>SourceAddress</i> is a virtual address or a physical address. The following flag bits are defined for this parameter.
+
 <table>
 <tr>
 <th>Flag bit</th>
@@ -86,14 +91,18 @@ Flags that indicate whether <i>SourceAddress</i> is a virtual address or a physi
 </tr>
 </table>
  
+
 These two flag bits are mutually exclusive. The caller must set one or the other, but not both.
+
 
 ### -param NumberOfBytesTransferred [out]
 
 A pointer to a location to which the routine writes the number of bytes successfully copied from the <i>SourceAddress</i> location to the buffer at <i>TargetAddress</i>.
 
+
 ## -returns
 <b>MmCopyMemory</b> returns STATUS_SUCCESS if the entire range has been copied successfully. Otherwise, an error status is returned and the caller must inspect the output value pointed to by the <i>NumberOfBytesTransferred</i> parameter to determine how many bytes were actually copied.
+
 
 ## -remarks
 Kernel-mode drivers can call this routine to safely access arbitrary physical or virtual addresses.
@@ -104,11 +113,13 @@ If the MM_COPY_MEMORY_VIRTUAL flag is set, <i>SourceAddress</i> can point to eit
 
 If memory at the virtual address specified by <i>SourceAddress</i> is not resident, <b>MmCopyMemory</b> will try to make it resident.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,14 +130,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -137,6 +151,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -147,9 +162,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -164,5 +181,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmCopyMemory routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmCopyMemory routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

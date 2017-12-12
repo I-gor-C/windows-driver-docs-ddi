@@ -7,7 +7,7 @@ old-location: display\videoportgetvgastatus.htm
 old-project: display
 ms.assetid: 5a2bb69c-b10a-41bb-a92a-de7add3ca2c5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VideoPortGetVgaStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>VideoPortGetVgaStatus</b> function detects whether the calling device is decoding a VGA I/O address.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ VP_STATUS VideoPortGetVgaStatus(
 
 Pointer to the miniport driver's device extension.
 
+
 ### -param VgaStatus [out]
 
 Pointer to the resulting VGA status. A value of zero (0) indicates that VGA is not enabled; a value of one (1) indicates that VGA is enabled.
+
 
 ## -returns
 <b>VideoPortGetVgaStatus</b> returns one of the following values:
@@ -73,14 +76,17 @@ Pointer to the resulting VGA status. A value of zero (0) indicates that VGA is n
 
  
 
+
 ## -remarks
 The <b>VideoPortGetVgaStatus</b> function is mainly used to determine whether a device is the sole VGA-enabled device in a <a href="https://msdn.microsoft.com/ba15af67-94c0-4c37-8b3d-b1472e731d88">multiple monitor</a> system. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +97,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,6 +118,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +129,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -129,9 +140,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

@@ -7,8 +7,8 @@ old-location: kernel\pep_low_power_epoch.htm
 old-project: kernel
 ms.assetid: 730312DE-5F11-46C8-8298-55AA5756C995
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_LOW_POWER_EPOCH, PEP_LOW_POWER_EPOCH, *PPEP_LOW_POWER_EPOCH
+ms.date: 12/7/2017
+ms.keywords: _PEP_LOW_POWER_EPOCH, *PPEP_LOW_POWER_EPOCH, PEP_LOW_POWER_EPOCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_LOW_POWER_EPOCH</b> structure is used to provide data for a <a href="kernel.pep_dpm_low_power_epoch">PEP_DPM_LOW_POWER_EPOCH</a> notification (deprecated).
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _PEP_LOW_POWER_EPOCH {
 
 When <b>TRUE</b>, indicates that the low power epoch is on. 
 
+
 ## -remarks
 
 
@@ -64,14 +66,17 @@ When <b>TRUE</b>, indicates that the low power epoch is on.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -88,5 +93,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_LOW_POWER_EPOCH structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_LOW_POWER_EPOCH structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

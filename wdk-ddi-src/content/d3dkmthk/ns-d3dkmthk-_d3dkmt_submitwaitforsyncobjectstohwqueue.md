@@ -7,7 +7,7 @@ old-location: display\d3dkmt_submitwaitforsyncobjectstohwqueue_.htm
 old-project: display
 ms.assetid: 365253FC-9FC0-4FFF-9D84-503754095327
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that contains information to submit a wait on the hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ typedef struct _D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE  {
 Context queue to submit the command to.
 
 
+
 ### -field ObjectCount
 
 Number of objects to wait on.
+
 
 
 ### -field ObjectHandleArray
@@ -70,9 +73,11 @@ Number of objects to wait on.
 Handles to monitored fence synchronization objects to wait on.
 
 
+
 ### -field FenceValueArray
 
 Monitored fence values to be waited.
+
 
 
 ## -remarks
@@ -83,6 +88,7 @@ Monitored fence values to be waited.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

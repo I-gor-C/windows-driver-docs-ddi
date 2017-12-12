@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>GPIO_CLX_UnregisterClient</b> method removes a general-purpose I/O (GPIO) controller driver's registration with the GPIO framework extension (GpioClx).
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS GPIO_CLX_UnregisterClient(
 
 A WDFDRIVER handle to the framework driver object for the GPIO controller driver.
 
+
 ## -returns
 <b>GPIO_CLX_UnregisterClient</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error code.
 <dl>
@@ -64,16 +66,19 @@ A WDFDRIVER handle to the framework driver object for the GPIO controller driver
 
  
 
+
 ## -remarks
 A GPIO controller driver calls this method to cancel its registration. The driver registered in a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a> method.
 
 Typically, the GPIO controller driver calls this method from its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a> event callback function, which runs shortly before the driver unloads.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,14 +89,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,9 +121,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -129,5 +140,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20GPIO_CLX_UnregisterClient method%20 RELEASE:%20(11/3/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

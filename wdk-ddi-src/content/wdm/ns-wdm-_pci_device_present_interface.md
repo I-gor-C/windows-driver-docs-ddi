@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>PCI_DEVICE_PRESENT_INTERFACE</b> structure is reserved for system use.
 
 
+
 ## -struct-fields
 
 
@@ -53,6 +54,7 @@ The <b>PCI_DEVICE_PRESENT_INTERFACE</b> structure is reserved for system use.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

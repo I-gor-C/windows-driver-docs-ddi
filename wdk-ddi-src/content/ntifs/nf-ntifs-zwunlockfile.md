@@ -7,7 +7,7 @@ old-location: kernel\zwunlockfile.htm
 old-project: kernel
 ms.assetid: dca3023b-99d5-471a-a5a2-8453c367ce9b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwUnlockFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL (see Remarks section)
 The <b>ZwUnlockFile</b> routine unlocks a byte-range lock in a file.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS ZwUnlockFile(
 
 A handle for the file object that represents the file whose byte range is to be unlocked.
 
+
 ### -param IoStatusBlock [out]
 
 A pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that contains the final status.
+
 
 ### -param ByteOffset [in]
 
 A pointer to a variable that specifies the starting byte offset for the byte range to be unlocked.
 
+
 ### -param Length [in]
 
 A pointer to a variable that specifies the length, in bytes, of the byte range to unlock.
 
+
 ### -param Key [in]
 
 The caller-assigned value used to describe groups of related locks. This value should be set to zero.
+
 
 ## -returns
 The <b>ZwUnlockFile</b> routine returns STATUS_SUCCESS on success or an appropriate NTSTATUS value. Possible NTSTATUS values include:
@@ -84,6 +90,7 @@ The <b>ZwUnlockFile</b> routine returns STATUS_SUCCESS on success or an appropri
 
  
 
+
 ## -remarks
 The <b>ZwUnlockFile</b> routine takes a range of bytes as specified by the <i>ByteOffset</i> and <i>Length</i> arguments. This range must be identical to a range of bytes in the file that was previously locked with a single call to the <b>ZwUnlockFile</b> routine. It is not possible to unlock two previously locked adjacent ranges with a single call to <b>ZwUnlockFile</b>. It is also not possible to unlock part of a range that was previously locked with a single call to the <b>ZwUnlockFile</b> routine.
 
@@ -91,11 +98,13 @@ Callers of <b>ZwUnlockFile</b> must be running at IRQL = PASSIVE_LEVEL and <a hr
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,14 +115,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +136,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +147,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -144,14 +158,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -169,5 +186,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwUnlockFile routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwUnlockFile routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

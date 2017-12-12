@@ -7,8 +7,8 @@ old-location: kernel\pep_ppm_query_domain_info.htm
 old-project: kernel
 ms.assetid: c608dac0-bb2a-4d89-a2f8-1017254c8a6c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_PPM_QUERY_DOMAIN_INFO, *PPEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO
+ms.date: 12/7/2017
+ms.keywords: _PEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO, *PPEP_PPM_QUERY_DOMAIN_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used in the <b>PEP_NOTIFY_PPM_QUERY_DOMAIN_INFO</b> notification that queries for information about a performance domain. 
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct _PEP_PPM_QUERY_DOMAIN_INFO {
 
 On input, the domain ID of the domain being queried.
 
+
 ### -field CoordinationType
 
 On output, indicates the coordination type of the performance domain. The possible values are:
+
 <ul>
 <li>PROCESSOR_DOMAIN_COORDIANTION_SW_ALL (0x00)</li>
 <li>PROCESSOR_DOMAIN_COORDIANTION_SW_ANY (0x01)</li>
@@ -71,22 +74,27 @@ On output, indicates the coordination type of the performance domain. The possib
 </ul>
 If this notification is not supported, PROCESSOR_DOMAIN_COORDIANTION_SW_ALL coordination is used. 
 
+
 ### -field IdleProcessorsDiscounted
 
 On output, and if HW-ALL coordination is used, this value is  TRUE if the platform automatically ignores requests from idle processors as it determines the resolved performance level of the domain, FALSE if requests from idle processors continue to be honored.  
 If PROCESSOR_DOMAIN_COORDIANTION_HW_ALL coordination is not used: this field is ignored. 
 
+
 ### -field SchedulerDirectedTransitionsSupported
 
 On output, this value is TRUE if the PEP supports the requirements of scheduler directed performance transitions for this domain, FALSE otherwise. 
+
 
 ### -field WorstCaseTransitionLatency
 
 On output, this value indicates the worst case latency for the processor to transition to a new performance state, measured from the time the OS issues the notification to the PEP to transition to a new performance level, to the time the processor is running at the new performance level, in 100ns units. 
 
+
 ### -field WorstCaseTransitionOverhead
 
 On output, this value indicates the worst case overhead (PEP code execution time plus time the processor is not executing instructions) measured from the time the OS issues the notification to the PEP to transition to a new performance level, to the time the processor is running at the new performance level, in 100ns units. 
+
 
 ## -remarks
 
@@ -96,22 +104,27 @@ On output, this value indicates the worst case overhead (PEP code execution time
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_DOMAIN_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_DOMAIN_INFO structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: kernel\psstartsilomonitor.htm
 old-project: kernel
 ms.assetid: 65828926-FDA7-4F65-AD55-B7E03639FA27
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PsStartSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This routine tries to start the server silo monitor.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS PsStartSiloMonitor(
 
 A pointer to the silo monitor.
 
+
 ## -returns
 The following NT status codes are returned.
 <dl>
@@ -70,6 +72,7 @@ The following NT status codes are returned.
 
  
 
+
 ## -remarks
 
 
@@ -78,22 +81,27 @@ The following NT status codes are returned.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1607
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

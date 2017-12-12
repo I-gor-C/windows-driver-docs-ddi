@@ -7,7 +7,7 @@ old-location: display\d3dkmtreleaseprocessvidpnsourceowners.htm
 old-project: display
 ms.assetid: 65fa0654-25b5-4ead-ac9e-0eb0f404259a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTReleaseProcessVidPnSourceOwners
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3DKMTReleaseProcessVidPnSourceOwners</b> function releases the video present network source owners for a process.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ NTSTATUS APIENTRY D3DKMTReleaseProcessVidPnSourceOwners(
 
 A handle to the process that video present network source owners are released from.
 
+
 ## -returns
 <b>D3DKMTReleaseProcessVidPnSourceOwners</b> returns one of the following values:
 <dl>
@@ -69,6 +71,7 @@ A handle to the process that video present network source owners are released fr
 
 This function might also return other <b>NTSTATUS</b> values.
 
+
 ## -remarks
 
 
@@ -77,6 +80,7 @@ This function might also return other <b>NTSTATUS</b> values.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,14 +91,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +123,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

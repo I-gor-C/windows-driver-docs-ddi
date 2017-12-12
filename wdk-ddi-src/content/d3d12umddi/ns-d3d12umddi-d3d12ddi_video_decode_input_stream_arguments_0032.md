@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-input-stream-arguments-0032.htm
 old-project: display
 ms.assetid: ca647cd3-357b-4cd6-aa1c-6a03d5a77f10
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0032, D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Video decode input stream arguments.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0032 {
 
 Frame arguments.
 
+
 ### -field NumFrameArguments
 
 The number of frame arguments.
+
 
 ### -field ReferenceFrames
 
 Reference frames.
 
+
 ### -field CompressedBitstream
 
 Compressed bitstream.
+
 
 ### -field DecryptionParameters
 
 Decryption parameters.
 
+
 ### -field hDrvVideoDecoderHeap
 
 Video decoder heap.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Video decoder heap.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

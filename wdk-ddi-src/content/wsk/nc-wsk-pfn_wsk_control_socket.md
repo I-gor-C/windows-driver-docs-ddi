@@ -7,7 +7,7 @@ old-location: netvista\wskcontrolsocket.htm
 old-project: netvista
 ms.assetid: d65fd2ab-ffca-4e13-b0f1-42d6a89f4b4a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <b>WskControlSocket</b> function performs control operations on a socket.
 
 
+
 ## -prototype
 
 ````
@@ -69,6 +70,7 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket on which the control operation is being performed.
 
+
 ### -param RequestType [in]
 
 A value that specifies the type of control operation that is being performed. A WSK application
@@ -76,17 +78,22 @@ A value that specifies the type of control operation that is being performed. A 
      
 
 
+
+
 ### -param WskSetOption
 
 Set the state or value for a socket option.
+
 
 ### -param WskGetOption
 
 Get the state or value of a socket option.
 
+
 ### -param WskIoctl
 
 Perform an I/O control operation.
+
 </dd>
 </dl>
 
@@ -101,6 +108,7 @@ If the
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571186">WSK Socket Options</a>. The underlying
      network protocol might support additional socket options.
      
+
 If the 
      <i>RequestType</i> parameter is set to 
      <b>WskIoctl</b>, the 
@@ -109,6 +117,7 @@ If the
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571183">WSK Socket IOCTL Operations</a>. The
      underlying network protocol might support additional socket I/O control operations.
 
+
 ### -param Level [in]
 
 The level in the network stack at which the value for a socket option is being either set or
@@ -116,15 +125,18 @@ The level in the network stack at which the value for a socket option is being e
      SOL_SOCKET. For transport protocol or network protocol level socket options, the WSK application should
      set this parameter to the appropriate level for the underlying transport.
      
+
 If the 
      <i>RequestType</i> parameter is set to 
      <b>WskIoctl</b>, the 
      <i>Level</i> parameter is ignored.
 
+
 ### -param InputSize [in]
 
 The number of bytes of data in the buffer that is pointed to by the 
      <i>InputBuffer</i> parameter.
+
 
 ### -param InputBuffer [in, optional]
 
@@ -133,10 +145,12 @@ A caller-allocated buffer that supplies any input data that is required to perfo
      should set this parameter to <b>NULL</b> and set the 
      <i>InputSize</i> parameter to zero.
 
+
 ### -param OutputSize [in]
 
 The size of the buffer that is pointed to by the 
      <i>OutputBuffer</i> parameter.
+
 
 ### -param OutputBuffer [out, optional]
 
@@ -145,6 +159,7 @@ A caller-allocated buffer that receives any output data that is returned by the 
      set this parameter to <b>NULL</b> and set the 
      <i>OutputSize</i> parameter to zero.
 
+
 ### -param OutputSizeReturned [out, optional]
 
 A pointer to a ULONG-typed variable that receives the number of bytes of data that is returned in
@@ -152,18 +167,22 @@ A pointer to a ULONG-typed variable that receives the number of bytes of data th
      <i>OutputBuffer</i> parameter. A WSK application should set the 
      <i>OutputSizeReturned</i> parameter to <b>NULL</b> except when all of the following are true:
      
+
 <ul>
 <li>
 The 
        <i>Irp</i> parameter is set to <b>NULL</b>.
+
 </li>
 <li>
 The operation that is being performed returns output data in the buffer that is pointed to by the 
        <i>OutputBuffer</i> parameter.
+
 </li>
 <li>
 The number of bytes of output data that is returned by the operation that is being performed is
        unknown.
+
 </li>
 </ul>
 
@@ -174,6 +193,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
      
+
 If the 
      <i>RequestType</i> parameter is set to either 
      <b>WskSetOption</b> or 
@@ -182,6 +202,7 @@ If the
      that is being set or retrieved. For more information about the requirements for the 
      <i>Irp</i> parameter for each of the supported socket options, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571186">WSK Socket Options</a>.
+
 If the 
      <i>RequestType</i> parameter is set to 
      <b>WskIoctl</b>, the 
@@ -190,6 +211,7 @@ If the
      <i>Irp</i> parameter for each of the supported I/O control operations, see 
      <a href="netvista.wsk_socket_ioctl_operations">WSK Socket IOCTL
      Operations</a>.
+
 
 ## -returns
 <b>WskControlSocket</b> returns one of the following NTSTATUS codes:
@@ -229,6 +251,7 @@ If the
 
  
 
+
 ## -remarks
 If a WSK application specifies 
     <b>WskSetOption</b> or 
@@ -261,11 +284,13 @@ Callers of the
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570814">SIO_ADDRESS_LIST_CHANGE</a>, or <a href="winsock.using_sio_address_list_sort">SIO_ADDRESS_LIST_SORT</a>. In this
     situation, callers must be running at IRQL = PASSIVE_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -276,15 +301,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -295,9 +323,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -332,5 +362,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_SOCKET callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_SOCKET callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

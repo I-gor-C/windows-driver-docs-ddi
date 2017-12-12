@@ -7,8 +7,8 @@ old-location: netvista\rilversionparams.htm
 old-project: netvista
 ms.assetid: c6931cee-2b86-4bf8-9e9d-b04e2df9eb12
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILVERSIONPARAMS, RILVERSIONPARAMS, *LPRILVERSIONPARAMS
+ms.date: 12/8/2017
+ms.keywords: RILVERSIONPARAMS, *LPRILVERSIONPARAMS, RILVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILVERSIONPARAMS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

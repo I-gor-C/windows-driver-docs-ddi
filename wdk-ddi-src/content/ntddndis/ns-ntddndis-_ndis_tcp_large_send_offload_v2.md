@@ -7,8 +7,8 @@ old-location: netvista\ndis_tcp_large_send_offload_v2.htm
 old-project: netvista
 ms.assetid: e53e5771-a3ca-4867-a0ac-65adb66e574c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_TCP_LARGE_SEND_OFFLOAD_V2, NDIS_TCP_LARGE_SEND_OFFLOAD_V2, *PNDIS_TCP_LARGE_SEND_OFFLOAD_V2
+ms.date: 12/8/2017
+ms.keywords: _NDIS_TCP_LARGE_SEND_OFFLOAD_V2, *PNDIS_TCP_LARGE_SEND_OFFLOAD_V2, NDIS_TCP_LARGE_SEND_OFFLOAD_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V2</b> structure provides large send offload 
   <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -71,10 +72,12 @@ A structure within <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V2</b> that specifies IPv4 inf
      contains the following members:
      
 
+
 ### -field Encapsulation
 
 Encapsulation settings for IPv4. For more information about this member, see the following
        Remarks section.
+
 
 ### -field MaxOffLoadSize
 
@@ -83,6 +86,7 @@ The maximum bytes of user data that the transport can pass to the miniport drive
        than 
        <b>MaxOffLoadSize</b> specifies. If such a packet must be transmitted, the transport itself segments
        the packet into smaller packets.
+
 
 ### -field MinSegmentCount
 
@@ -92,6 +96,7 @@ The minimum number of segments that a large TCP packet must be divisible by befo
        <b>MinSegmentCount</b> specifies from the packet. If a large TCP packet does not meet the
        minimum-segment requirement, the TCP/IP transport itself segments the packet into smaller
        packets.
+
 </dd>
 </dl>
 
@@ -101,10 +106,12 @@ A structure within <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V2</b> that specifies IPv6 inf
      contains the following members:
      
 
+
 ### -field Encapsulation
 
 Encapsulation settings for IPv6. For more information about this member, see the following
        Remarks section.
+
 
 ### -field MaxOffLoadSize
 
@@ -113,6 +120,7 @@ The maximum bytes of user data that the transport can pass to the miniport drive
        than 
        <b>MaxOffLoadSize</b> specifies. If such a packet must be transmitted, the transport itself segments
        the packet into smaller packets.
+
 
 ### -field MinSegmentCount
 
@@ -123,16 +131,19 @@ The minimum number of segments that a large TCP packet must be divisible by befo
        minimum-segment requirement, the TCP/IP transport itself segments the packet into smaller
        packets.
 
+
 ### -field IpExtensionHeadersSupported
 
 A ULONG value that a miniport driver sets to indicate that the miniport adapter can segment a
        large TCP packet whose IP header contains IPv6 extension headers.
+
 
 ### -field TcpOptionsSupported
 
 A ULONG value that a miniport driver sets to indicate that the miniport driver can segment a
        large TCP packet whose TCP header contains TCP options or to indicate that this capability is enabled
        or disabled.
+
 </dd>
 </dl>
 
@@ -202,19 +213,23 @@ Specifies that IEEE 802.3p and IEEE 802.3q encapsulation settings are specified 
 Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
       1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -258,5 +273,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_V2 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_V2 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

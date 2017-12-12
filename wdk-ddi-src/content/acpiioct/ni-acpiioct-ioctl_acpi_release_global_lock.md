@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: dcc74af4-500b-4fea-ba2b-9d1ea3a05ef6
 ms.author: windowsdriverdev
 ms.date: 12/2/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+ms.keywords: _UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 The IOCTL_ACPI_RELEASE_GLOBAL_LOCK device control request is reserved for internal use only.
+
 
 
 ## -ioctlparameters
@@ -81,14 +82,17 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

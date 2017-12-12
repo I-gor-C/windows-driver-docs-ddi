@@ -7,7 +7,7 @@ old-location: kernel\ioregisterdeviceinterface.htm
 old-project: kernel
 ms.assetid: 4d0782c7-0516-4326-9994-7820446f2af6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoRegisterDeviceInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoRegisterDeviceInterface</b> routine registers a <a href="https://msdn.microsoft.com/C989D2D3-E8DE-4D64-86EE-3D3B3906390D">device interface class</a>, if it has not been previously registered, and creates a new instance of the interface class, which a driver can subsequently enable for use by applications or other system components.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,29 @@ NTSTATUS IoRegisterDeviceInterface(
 
 A pointer to the PDO for the device.
 
+
 ### -param InterfaceClassGuid [in]
 
 A pointer to the class GUID that identifies the functionality (the device interface class) being registered.
 
+
 ### -param ReferenceString [in, optional]
 
 Optionally points to a <a href="kernel.unicode_string">UNICODE_STRING</a>. The string must not contain any path separator characters ("/" or "\"). Function drivers typically specify <b>NULL</b> for this parameter. Filter drivers must specify <b>NULL</b>.
+
 Reference strings are only used by a few bus drivers, such as <i>swenum</i>, which is a bus driver that uses device interface instances as placeholders for software devices created on demand. When an instance of an interface is opened, the I/O manager passes the instance's reference string to the driver. The string becomes part of the interface instance's name (as an appended path component). The driver can then use the reference string to differentiate between two interface instances of the same class for a single device.
+
 On Microsoft Windows 98/Me systems, the <i>ReferenceString</i> value can be no longer than MAX_PATH characters. There is no length limit on Windows 2000 and later versions of Windows.
+
 
 ### -param SymbolicLinkName [out]
 
 A pointer to a Unicode string structure allocated by the caller. If this routine is successful, it initializes the Unicode string and allocates the string buffer containing the kernel-mode path to the symbolic link for an instance of the specified device interface class. 
+
 The caller must treat <i>SymbolicLinkName</i> as opaque and must not disassemble it.
+
 The caller is responsible for freeing <i>SymbolicLinkName</i> with <a href="kernel.rtlfreeunicodestring">RtlFreeUnicodeString</a> when it is no longer needed.
+
 
 ## -returns
 <b>IoRegisterDeviceInterface</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following.
@@ -83,6 +92,7 @@ The caller is responsible for freeing <i>SymbolicLinkName</i> with <a href="kern
 </dl>The parameters are invalid. Possibilities include that <i>PhysicalDeviceObject</i> does not point to a valid PDO, or that the <i>ReferenceString</i> string contains an invalid character. 
 
  
+
 
 ## -remarks
 <b>IoRegisterDeviceInterface</b> registers a device interface class, if it has not been previously registered, and creates a new instance of the interface class. A driver can call this routine several times for a given device to register several interface classes and create instances of the classes. A function or filter driver typically registers device interfaces in its <a href="kernel.adddevice">AddDevice</a> routine. For example, a fault-tolerant volume driver might register an instance of a fault-tolerant-volume interface and an instance of a volume interface for a particular volume.
@@ -99,11 +109,13 @@ Callers of this routine are not required to remove the registration for a device
 
 Callers of <b>IoRegisterDeviceInterface</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -114,14 +126,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +147,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +158,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -152,14 +169,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL (see Remarks section)
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqliopassive3">IrqlIoPassive3</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -183,5 +203,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterDeviceInterface routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterDeviceInterface routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

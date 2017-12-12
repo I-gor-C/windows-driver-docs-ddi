@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY
+ms.keywords: PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure defines the accuracy details of a fix.
 
 
+
 ## -syntax
 
 ````
@@ -71,66 +72,83 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field HorizontalAccuracy
 
 Accuracy reported with 95% confidence.
 
+
 ### -field HorizontalErrorMajorAxis
 
 Horizontal uncertainty ellipse semi-major axis with  95% confidence accuracy.
+
 
 ### -field HorizontalErrorMinorAxis
 
 Horizontal uncertainty ellipse semi-minor axis with  95% confidence accuracy.
 
+
 ### -field HorizontalErrorAngle
 
 Horizontal uncertainty ellipse orientation angle with  95% confidence accuracy.
+
 
 ### -field HeadingAccuracy
 
 Reserved, do not use.
 
+
 ### -field AltitudeAccuracy
 
 Reserved, do not use.
+
 
 ### -field SpeedAccuracy
 
 Reserved, do not use.
 
+
 ### -field HorizontalConfidence
 
 Reserved, do not use.
+
 
 ### -field HeadingConfidence
 
 Reserved, do not use.
 
+
 ### -field AltitudeConfidence
 
 Reserved, do not use.
+
 
 ### -field SpeedConfidence
 
 Reserved, do not use.
 
+
 ### -field PositionDilutionOfPrecision
 
 Position dilution of precision (PDOP).
+
 Satellite-based positions with a dilution of precision (DOP) value of 0 or a DOP value higher than 10 may be filtered by the GNSS adapter.
+
 
 ### -field HorizontalDilutionOfPrecision
 
 Horizontal dilution of precision (HDOP).
 
+
 ### -field VerticalDilutionOfPrecision
 
 Vertical dilution of precision (VDOP).
+
 
 ## -remarks
 
@@ -140,6 +158,7 @@ Vertical dilution of precision (VDOP).
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>RtlCaptureStackBackTrace</b> routine captures a stack back trace by walking up the stack and recording the information for each frame.
 
 
+
 ## -syntax
 
 ````
@@ -59,21 +60,27 @@ USHORT RtlCaptureStackBackTrace(
 
 The number of frames to skip from the start of the back trace.
 
+
 ### -param FramesToCapture [in]
 
 The number of frames to be captured. 
+
 
 ### -param BackTrace [out]
 
 An array of pointers captured from the current stack trace.
 
+
 ### -param BackTraceHash [out, optional]
 
 An optional value that can be used to organize hash tables. If this parameter is <b>NULL</b>, no hash value is computed.
+
 This value is calculated based on the values of the pointers returned in the <i>BackTrace</i> array. Two identical stack traces will generate identical hash values.
+
 
 ## -returns
 The number of captured frames.
+
 
 ## -remarks
 
@@ -83,6 +90,7 @@ The number of captured frames.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,14 +101,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in starting with Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +122,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +134,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +146,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>

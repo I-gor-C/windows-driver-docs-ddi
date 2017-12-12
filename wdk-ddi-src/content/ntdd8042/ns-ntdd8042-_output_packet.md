@@ -41,6 +41,7 @@ req.irql:
 OUTPUT_PACKET contains information about the data that is being written to a keyboard or mouse device by I8042prt.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _OUTPUT_PACKET {
 
 Pointer to an array of bytes being written to an i8042 port device.
 
+
 ### -field CurrentByte
 
 Specifies the index of the next byte to write.
+
 
 ### -field ByteCount
 
 Specifies the number of bytes in the array of bytes located at <b>Bytes</b>.
 
+
 ### -field State
 
 Specifies one of the following write states:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -85,24 +90,29 @@ Specifies one of the following write states:
 </table></span></div>
 
 
+
 ### -field Idle
 
 Identifies that a write is not in progress.
 
+
 ### -field SendingBytes
 
 Identifies that a write is in progress.
+
 </dd>
 </dl>
 
 ## -remarks
 This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a> callback routine and a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback routine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -128,5 +138,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20OUTPUT_PACKET structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

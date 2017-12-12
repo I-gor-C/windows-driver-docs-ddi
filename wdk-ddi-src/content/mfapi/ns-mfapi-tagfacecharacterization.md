@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FaceCharacterization</b> structure describes the blob format for the <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct tagFaceCharacterization {
 
 0 indicates no blink for the left eye, 100 indicates definite blink for the left eye (0 - 100).
 
+
 ### -field BlinkScoreRight
 
 0 indicates no blink for the right eye, 100 indicates definite blink for the right eye (0 - 100).
+
 
 ### -field FacialExpression
 
 A  defined facial expression value.
 
+
 ### -field FacialExpressionScore
 
 0 indicates no such facial expression as identified, 100 indicates definite such facial expression as defined (0 - 100).
+
 
 ## -remarks
 The <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute contains the blink and facial expression state for the face ROIs identified in <b>MF_CAPTURE_METADATA_FACEROIS</b>.  For a  device that does not support blink or facial expression detection, this attribute should be omitted.
@@ -78,11 +83,13 @@ The facial expressions that can be detected are defined as follows:
 
 The <a href="stream.facecharacterizationblobheader">FaceCharacterizationBlobHeader</a> and <b>FaceCharacterization</b> structures only describe the blob format for the <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute.  The metadata item structure for the face characterizations (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + face characterizations metadata payload) is up to driver and must be 8-byte aligned. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

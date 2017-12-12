@@ -7,7 +7,7 @@ old-location: kernel\zwsetinformationthread.htm
 old-project: kernel
 ms.assetid: ec67c643-bc91-4784-b5f4-09a20e8406c3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ZwSetInformationThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>ZwSetInformationThread</b> routine sets the priority of a thread.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,24 @@ NTSTATUS ZwSetInformationThread(
 
 Handle to the thread object. To create a new thread and get a handle to it, call <a href="kernel.pscreatesystemthread">PsCreateSystemThread</a>. To specify the current thread, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566434">ZwCurrentThread</a> macro.
 
+
 ### -param ThreadInformationClass [in]
 
 One of the system-defined values in the THREADINFOCLASS enumeration (see ntddk.h), <b>ThreadPriority</b>,   <b>ThreadBasePriority</b>,  <b>ThreadPagePriority</b>, or <b>ThreadPowerThrottlingState</b>.
 
+
 ### -param ThreadInformation [in]
 
 Pointer to a variable that specifies the information to set. 
+
 If <b>ThreadInformationClass</b> is <b>ThreadPriority</b>, this value must be &gt; LOW_PRIORITY and &lt;= HIGH_PRIORITY. 
+
 If <b>ThreadInformationClass</b> is <b>ThreadBasePriority</b>, this value must fall within the system's valid base-priority range and the original priority class for the given thread. That is, if a thread's priority class is variable, that thread's base priority cannot be reset to a real-time priority value, and vice versa.
+
 If <b>ThreadInformationClass</b> is <b>ThreadPagePriority</b>, this value is a pointer to a <b>PAGE_PRIORITY_INFORMATION</b> structure, see ntddk.h. The <b>PagePriority</b> member value must be one of these values. 
+
 If <b>ThreadInformationClass</b> is <b>ThreadPowerThrottlingState</b>, this value is a pointer to a <a href="kernel._power_throttling_thread_state">POWER_THROTTLING_THREAD_STATE</a> structure, see ntddk.h. The <b>PagePriority</b> member value must be one of these values. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -83,6 +91,7 @@ If <b>ThreadInformationClass</b> is <b>ThreadPowerThrottlingState</b>, this valu
 </td>
 <td width="60%">
 Very low memory priority.
+
 </td>
 </tr>
 <tr>
@@ -93,6 +102,7 @@ Very low memory priority.
 </td>
 <td width="60%">
 Low memory priority.
+
 </td>
 </tr>
 <tr>
@@ -103,6 +113,7 @@ Low memory priority.
 </td>
 <td width="60%">
 Medium memory priority.
+
 </td>
 </tr>
 <tr>
@@ -113,6 +124,7 @@ Medium memory priority.
 </td>
 <td width="60%">
 Below normal memory priority.
+
 </td>
 </tr>
 <tr>
@@ -123,17 +135,21 @@ Below normal memory priority.
 </td>
 <td width="60%">
 Normal memory priority. This is the default priority for all threads and processes on the system.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param ThreadInformationLength [in]
 
 The size, in bytes, of <b>ThreadInformation</b>. 
 
+
 ## -returns
 <b>ZwSetInformationThread</b> returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on failure. Possible error codes include STATUS_INFO_LENGTH_MISMATCH or STATUS_INVALID_PARAMETER.
+
 
 ## -remarks
 <b>ZwSetInformationThread</b> can be called by higher-level drivers to set the priority of a thread for which they have a handle.
@@ -150,11 +166,13 @@ To determine the page priority for a thread, call <a href="kernel.zwqueryinforma
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -165,14 +183,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -183,6 +204,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -193,6 +215,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -203,14 +226,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -234,5 +260,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationThread routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationThread routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

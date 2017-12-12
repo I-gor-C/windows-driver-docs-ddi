@@ -7,8 +7,8 @@ old-location: wdf\iwdfremoteinterfaceinitialize.htm
 old-project: wdf
 ms.assetid: 54954874-d67a-4e8b-b791-105e8018f8ca
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/7/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
+
 UMDF-based drivers receive the <b>IWDFRemoteInterfaceInitialize</b> interface as input to an <a href="wdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function.
+
 
 
 ## -inheritance
@@ -53,6 +55,7 @@ The <a href="wdf.iwdfremoteinterfaceinitialize_getinterfaceguid">GetInterfaceGui
 The <a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">RetrieveSymbolicLink</a> method retrieves the symbolic link name that the operating system assigned to a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>. 
 
  
+
 
 ## -members
 The <b>IWDFRemoteInterfaceInitialize</b> interface has these methods.
@@ -67,6 +70,7 @@ The <b>IWDFRemoteInterfaceInitialize</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfremoteinterfaceinitialize_getinterfaceguid">GetInterfaceGuid</a> method retrieves the GUID that identifies a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -75,6 +79,7 @@ The <a href="wdf.iwdfremoteinterfaceinitialize_getinterfaceguid">GetInterfaceGui
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">RetrieveSymbolicLink</a> method retrieves the symbolic link name that the operating system assigned to a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>. 
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfremoteinterfaceinitialize_getinterfaceguid">GetInterfaceGuid</a> method retrieves the GUID that identifies a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>. 
@@ -82,6 +87,7 @@ The <a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">RetrieveSym
 The <a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">RetrieveSymbolicLink</a> method retrieves the symbolic link name that the operating system assigned to a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>. 
 
  
+
 
 ## -remarks
 
@@ -91,6 +97,7 @@ The <a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">RetrieveSym
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,22 +108,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.9
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +139,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

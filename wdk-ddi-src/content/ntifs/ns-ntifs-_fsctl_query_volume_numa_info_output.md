@@ -41,6 +41,7 @@ req.irql:
 The <b>FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT</b> structure specifies the Non-Uniform Memory Architecture (NUMA) node the volume resides on.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT  {
 
 Specifies the number of the NUMA node the volume resides on.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Specifies the number of the NUMA node the volume resides on.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

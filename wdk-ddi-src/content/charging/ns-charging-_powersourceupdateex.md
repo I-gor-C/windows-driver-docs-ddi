@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: FAA39A82-E27E-41BD-9830-03EAE7CFF64F
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX
+ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This structure is for internal use only.
 
 
+
 ## -struct-fields
 
 
@@ -52,6 +53,7 @@ This structure is for internal use only.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: storage\sm_removetarget_in.htm
 old-project: storage
 ms.assetid: a32e2442-a6a8-4c1a-ab70-40fdb525bafb
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _SM_RemoveTarget_IN, SM_RemoveTarget_IN, *PSM_RemoveTarget_IN
+ms.date: 12/8/2017
+ms.keywords: _SM_RemoveTarget_IN, *PSM_RemoveTarget_IN, SM_RemoveTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The SM_RemoveTarget_IN structure is used to provide input parameters to the SM_RemoveTarget WMI method.
 
 
+
 ## -syntax
 
 ````
@@ -59,26 +60,32 @@ typedef struct _SM_RemoveTarget_IN {
 
 A worldwide name (WWN) that indicates the local port that should be removed from the list of ports whose events are reported to the WMI client.
 
+
 ### -field DiscoveredPortWWN
 
 A worldwide name (WWN) that indicates the port that was discovered remotely. Remove this port from the list of ports whose events are reported to the WMI client.
+
 
 ### -field DomainPortWWN
 
 A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
 
+
 ### -field AllTargets
 
 The scope of the target events that stop reporting. If this member is zero, the WMI provider client stops reporting events that are associated with the port that is indicated by DiscoveredPortWWN. If this member is nonzero, the WMI provider stops reporting events that are associated with any target.
 
+
 ## -remarks
 The WMI tool suite generates a declaration of the SM_RemoveTarget_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: storage\mpio_path_health_info.htm
 old-project: storage
 ms.assetid: efb49852-3c0a-4dab-9d50-c103ba4a136b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO
+ms.date: 12/8/2017
+ms.keywords: _MPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_PATH_HEALTH_INFO structure is used to query the available health information for every path that is exposed to the system.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _MPIO_PATH_HEALTH_INFO {
 
 An unsigned 32-bitfield that returns the number of health packets available that correspond to the number of available paths under MPIO control.
 
+
 ### -field Reserved
 
 Should be zero.
 
+
 ### -field PathHealthPackets
 
 A field that contains an array with health information about all the available paths under MPIO control. The number of elements of the array is given by NumberPathPackets and each element of the array is an instance of the MPIO_PATH_HEALTH_CLASS structure.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ A field that contains an array with health information about all the available p
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

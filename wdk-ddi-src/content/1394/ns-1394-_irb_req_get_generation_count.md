@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary for the 1394 bus driver to carry out a GetGenerationCount request. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _IRB_REQ_GET_GENERATION_COUNT {
 
 Specifies the current generation count.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Specifies the current generation count.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

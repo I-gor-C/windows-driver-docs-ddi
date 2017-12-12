@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfcontrol.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -19,4 +24,4 @@ Wdfcontrol.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_DEVICE_SHUTDOWN_FLAGS enumeration](ne-wdfcontrol--wdf-device-shutdown-flags.md) | The WDF_DEVICE_SHUTDOWN_FLAGS enumeration defines flags that identify types of shutdown notifications that a driver can receive. |
+| [_WDF_DEVICE_SHUTDOWN_FLAGS enumeration](ne-wdfcontrol-_wdf_device_shutdown_flags.md) | The WDF_DEVICE_SHUTDOWN_FLAGS enumeration defines flags that identify types of shutdown notifications that a driver can receive. |

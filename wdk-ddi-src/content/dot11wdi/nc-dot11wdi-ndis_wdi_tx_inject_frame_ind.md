@@ -7,8 +7,8 @@ old-location: netvista\ndiswditxinjectframeindication.htm
 old-project: netvista
 ms.assetid: C384FAFF-E22D-4FA2-8B11-F6C046003C70
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.date: 12/8/2017
+ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The NdisWdiTxInjectFrameIndication callback function allows the LE to inject frames through the regular datapath (for example, authentication/association requests/responses, Wi-Fi Direct action frames).
+
 This is a callback inside <a href="netvista.ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
+
 
 
 ## -prototype
@@ -68,40 +70,50 @@ VOID NdisWdiTxInjectFrameIndication(
 
 The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a>.
 
+
 ### -param PortId [in]
 
 The port ID. 
+
 
 ### -param PeerId [in]
 
 The peer ID. When <b>TargetPriorityQueueing</b> is true, this must be set to the wildcard value.
 
+
 ### -param ExTid [in]
 
 The extended TID.
+
 
 ### -param pNBL [in]
 
 Pointer to a <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> chain.
 
+
 ### -param bIsUnicast [in]
 
 Specifies if the frames are to a unicast receiver address.
+
 
 ### -param bUseLegacyRates [in]
 
 Specifies if legacy rates should be used to send the frames.
 
+
 ### -param Ethertype [in]
 
 Specifies the Ethertype of the frames.
+
 
 ### -param ExemptionAction [in]
 
 Specifies the ExemptionAction of the frames.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -111,22 +123,27 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -158,5 +175,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_INJECT_FRAME_IND callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_INJECT_FRAME_IND callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

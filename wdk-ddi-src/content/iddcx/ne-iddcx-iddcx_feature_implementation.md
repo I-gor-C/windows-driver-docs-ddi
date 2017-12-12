@@ -7,7 +7,7 @@ old-location: display\iddcx_feature_implementation.htm
 old-project: display
 ms.assetid: 7bed6940-3f69-4cc0-b746-98cd7441f4b8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_FEATURE_IMPLEMENTATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _requires_same_
                 
 
 
+
 ## -syntax
 
 ````
@@ -63,11 +64,13 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
                         
                     Indicates that an <b>IDDCX_FEATURE_IMPLEMENTATION</b> variable has not yet been assigned a meaningful value.
 
+
 ### -field IDDCX_FEATURE_IMPLEMENTATION_NONE
 
 
                         The feature is not implemented
                     
+
 
 ### -field IDDCX_FEATURE_IMPLEMENTATION_HARDWARE
 
@@ -75,11 +78,13 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
                         The feature is implemented and hardware is used in the implementation. For example, the adapter/ display pipeline blends the hardware cursor image into the signal sent to the monitor.
                     
 
+
 ### -field IDDCX_FEATURE_IMPLEMENTATION_SOFTWARE
 
 
                         The feature is implemented and software is used in the implementation. For example, the driver/ support hardware cursor by blending the cursor image into the display pixels as part of the processing.
                     
+
 
 ## -remarks
 
@@ -89,6 +94,7 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

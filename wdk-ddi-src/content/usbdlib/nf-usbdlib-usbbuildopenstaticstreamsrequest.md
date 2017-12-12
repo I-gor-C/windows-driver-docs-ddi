@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UsbBuildOpenStaticStreamsRequest</b> inline function formats an <a href="buses.urb">URB</a> structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
 
 
+
 ## -syntax
 
 ````
@@ -62,33 +63,42 @@ Pointer to the <a href="buses.urb">URB</a> structure to be formatted for the ope
 
 
 
+
 ### -param PipeHandle [in]
 
 An opaque handle for the pipe associated with the endpoint that contains the streams to open.
 
 The client driver obtains <b>PipeHandle</b> from a previous select-configuration request (URB_FUNCTION_SELECT_CONFIGURATION) or a select-interface request (URB_FUNCTION_SELECT_INTERFACE). 
 
+
 ### -param NumberOfStreams [in]
 
 The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the host controller hardware. To get the maximum number of supported streams, call <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a>. 
+
 The number streams must also be less than or equal to the maximum number of streams supported by the USB device. To get that number, inspect the endpoint companion descriptor. 
+
 In the <b>NumberOfStreams</b> value, specify lesser of two values supported by the host controller and the USB device.
+
 
 ### -param StreamInfoArray [in]
 
 Pointer to a caller-allocated, initialized array of <a href="buses.usbd_stream_information">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.
 
+
 ## -returns
 This function does not return a value.
 
+
 ## -remarks
 For a code example that shows the URB format required for an open-streams request, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,14 +109,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,5 +139,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UsbBuildOpenStaticStreamsRequest function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

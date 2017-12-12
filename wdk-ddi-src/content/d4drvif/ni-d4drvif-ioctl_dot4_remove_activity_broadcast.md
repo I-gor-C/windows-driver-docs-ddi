@@ -7,7 +7,7 @@ old-location: print\ioctl_ioctl_dot4_remove_activity_broadcast.htm
 old-project: print
 ms.assetid: F2CD1373-CDBD-4D14-8C63-7A08A5EBCED6
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,18 +41,23 @@ req.irql:
 This topic describes IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 
 
+
 ### -input-buffer-length
+
 
 
 ### -output-buffer
 
 
+
 ### -output-buffer-length
+
 
 
 
@@ -71,6 +76,7 @@ This topic describes IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST.
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 
 
@@ -79,6 +85,7 @@ I/O Status block
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST control code%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST control code%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

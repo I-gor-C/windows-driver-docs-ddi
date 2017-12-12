@@ -7,7 +7,7 @@ old-location: netvista\ndisfreememory.htm
 old-project: netvista
 ms.assetid: 0096fef7-2a5a-45cd-8e54-dc1ec0e84237
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisFreeMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   <a href="netvista.ndisallocatememorywithtagpriority">NdisAllocateMemoryWithTagPriority</a> function.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ VOID NdisFreeMemory(
 A pointer to the base virtual address of the allocated memory. This address was returned by the 
      <a href="netvista.ndisallocatememorywithtagpriority">NdisAllocateMemoryWithTagPriority</a> function.
 
+
 ### -param Length [in]
 
 The size, in bytes, of the memory block to be released. If the memory was allocated with <a href="netvista.ndisallocatememorywithtagpriority">NdisAllocateMemoryWithTagPriority</a> or the <i>MemoryFlags</i> parameter is zero, this parameter is ignored. 
+
 
 ### -param MemoryFlags [in]
 
@@ -72,8 +75,10 @@ A set of flags that specify the type of memory to free. This value must be zero 
       <a href="netvista.ndisallocatememorywithtagpriority">NdisAllocateMemoryWithTagPriority</a>. With NDIS 6.0 and later versions, the 
       <b>NdisAllocateMemoryWithTagPriority</b> is always used to allocate memory.
 
+
 ## -returns
 None
+
 
 ## -remarks
 Because noncached memory and contiguous memory are seldom released until the allocating miniport
@@ -90,11 +95,13 @@ When releasing noncached memory, a caller of
 When releasing memory that is neither contiguous nor noncached, a caller of 
       <b>NdisFreeMemory</b> must be running at IRQL &lt;= DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +112,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -112,11 +120,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisFreeMemory (NDIS 5.1)</b>) in
    Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,6 +137,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -137,14 +148,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>, <a href="devtest.ndis_ndisquerybindinstancename">NdisQueryBindInstanceName</a>
@@ -163,5 +177,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeMemory function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeMemory function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

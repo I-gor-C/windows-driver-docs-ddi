@@ -7,7 +7,7 @@ old-location: netvista\netdmaregisterprovider.htm
 old-project: netvista
 ms.assetid: 35d70d0b-c1b9-433f-941d-6cb61ddf0b62
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NetDmaRegisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,6 +58,7 @@ A pointer to a block of driver-allocated context information that stores informa
      provider. NetDMA passes the context information in subsequent calls to 
      <i>Provider</i>Xxx functions that required a DMA provider context.
 
+
 ### -param pNetDmaProviderHandle [in]
 
 A pointer to a value that is a handle that 
@@ -65,12 +66,14 @@ A pointer to a value that is a handle that
      handle to 
      <b>NetDma<i>Xxx</i></b> functions that require a provider handle.
 
+
 ### -param ProviderCharacteristics [in]
 
 A pointer to a 
      <a href="netvista.net_dma_provider_characteristics">
      NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that defines the characteristics of the DMA
      provider.
+
 
 ## -returns
 <b>NetDmaRegisterProvider</b> can return one of the following values:
@@ -85,6 +88,7 @@ A pointer to a
 </dl>The operation failed for unspecified reasons.
 
  
+
 
 ## -remarks
 DMA provider drivers call the 
@@ -138,11 +142,13 @@ To deregister a DMA provider, a DMA provider driver calls the
     <a href="netvista.netdmaderegisterprovider">
     NetDmaDeregisterProvider</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -153,14 +159,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NetDMA 1.0 drivers in Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -171,9 +180,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -203,5 +214,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaRegisterProvider function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaRegisterProvider function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

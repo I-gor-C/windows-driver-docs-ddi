@@ -41,19 +41,24 @@ req.irql:
 The <b>IOCTL_GNSS_SEND_DRIVERCOMMAND</b> control code is used by the GNSS adapter to execute well-defined commands on the driver and also to set driver configuration parameters. Each call specifies a certain command type, and the associated data for the command (if one is applicable) through the <a href="sensors.gnss_drivercommand_param">GNSS_DRIVERCOMMAND_PARAM</a> structure.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 A pointer to a <a href="sensors.gnss_drivercommand_param">GNSS_DRIVERCOMMAND_PARAM</a> structure.
 
+
 ### -input-buffer-length
 Set to sizeof(GNSS_DRIVERCOMMAND_PARAM).
+
 
 ### -output-buffer
 Set to NULL.
 
+
 ### -output-buffer-length
 Set to 0.
+
 
 ### -in-out-buffer
 
@@ -66,6 +71,7 @@ Set to 0.
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 The driver sets one of the following NTSTATUS values to indicate the result.
@@ -86,11 +92,13 @@ With the exception of a few commands, the GNSS adapter generally ignores any fai
 
 If the GNSS driver does not support a specific command, it indicates so. Drivers are not required to support all commands defined in this protocol. The driver should complete the I/O only after finishing executing of the command.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +124,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_SEND_DRIVERCOMMAND control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

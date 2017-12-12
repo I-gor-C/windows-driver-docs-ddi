@@ -41,6 +41,7 @@ req.irql:
 The <b>KsForwardIrp</b> function forwards an IRP to the specified driver after initializing the next stack location and setting the file object. 
 
 
+
 ## -syntax
 
 ````
@@ -58,25 +59,31 @@ NTSTATUS KsForwardIrp(
 
 Specifies the IRP that is being forwarded to the specified driver.
 
+
 ### -param FileObject [in]
 
 Specifies the file object to initialize the next stack with.
+
 
 ### -param ReuseStackLocation [in]
 
 Specifies the new stack location.
 
+
 ## -returns
 The <b>KsForwardIrp</b> function returns the result of the <b>IoCallDriver</b>, or it returns an invalid status if no more stack depth is available.
 
+
 ## -remarks
 Use the <b>KsForwardIrp</b> function when only the <i>FileObject</i> parameter of the forwarded IRP changes when the current stack parameters are copied to the next stack location. The function verifies that there is a new stack location to copy into before attempting to copy. If there is no new stack location, the IRP is completed with STATUS_INVALID_DEVICE_REQUEST.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +94,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

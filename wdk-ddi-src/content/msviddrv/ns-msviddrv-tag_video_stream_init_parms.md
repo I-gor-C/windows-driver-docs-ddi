@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -79,6 +80,7 @@ typedef struct tag_video_stream_init_parms {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

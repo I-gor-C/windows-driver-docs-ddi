@@ -7,7 +7,7 @@ old-location: kernel\gpio_pin_config_type.htm
 old-project: kernel
 ms.assetid: 76509992-E5A7-4C2F-84D3-B3FD06ACEFE1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _GPIO_PIN_CONFIG_TYPE, GPIO_PIN_CONFIG_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: See Remarks.
 The <b>GPIO_PIN_CONFIG_TYPE</b> enumeration describes a connection IO resource.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _GPIO_PIN_CONFIG_TYPE {
 
 Indicates that no configuration is applied to this pin.
 
+
 ### -field PullUp
 
 Indicates that this pin is configured to use a pull-up resistor.
+
 
 ### -field PullDown
 
 Indicates that this pin is configured to use a pull-down resistor.
 
+
 ### -field PullNone
 
 Indicates that this pin is not configured to use a pull-up or pull-down resistor.
+
 
 ## -remarks
 
@@ -79,14 +84,17 @@ Indicates that this pin is not configured to use a pull-up or pull-down resistor
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

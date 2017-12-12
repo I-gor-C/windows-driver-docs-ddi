@@ -7,8 +7,8 @@ old-location: debugger\debug_cached_symbol_info.htm
 old-project: debugger
 ms.assetid: CC7914B6-DCE1-45D1-84D3-5FF1449AD565
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Defines information about cached symbols.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _DEBUG_CACHED_SYMBOL_INFO {
 
 A module base.
 
+
 ### -field Arg1
 
 An argument value.
+
 
 ### -field Arg2
 
 An argument value.
 
+
 ### -field Id
 
 An ID.
 
+
 ### -field Arg3
 
 An argument value.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ An argument value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

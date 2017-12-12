@@ -7,7 +7,7 @@ old-location: print\branchofficelogofflinefilefull.htm
 old-project: print
 ms.assetid: 41190CE8-8779-477C-BFB0-6410DF096EFD
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PBranchOfficeLogOfflineFileFull, BranchOfficeLogOfflineFileFull, *PBranchOfficeLogOfflineFileFull
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Contains the necessary data for logging that the offline log archive on the current client overflowed at some point.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct {
 
 Specifies the name of the print client.
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ Specifies the name of the print client.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

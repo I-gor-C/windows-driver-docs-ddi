@@ -7,7 +7,7 @@ old-location: netvista\protocolnetpnpevent.htm
 old-project: netvista
 ms.assetid: 3f50bcba-c7d2-4d81-bd8b-6080e08fbe74
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ NDIS calls the
   PnP event, or a power management event to a protocol driver.
 
 
+
 ## -prototype
 
 ````
@@ -69,12 +70,14 @@ The handle to a protocol-driver-allocated context area in which this driver main
      <b>NetEventReconfigure</b> can be indicated with a specified 
      <i>ProtocolBindingContext</i> or with a <b>NULL</b><i>ProtocolBindingContext</i>.
 
+
 ### -param NetPnPEvent [in]
 
 A pointer to a 
      <a href="netvista.net_pnp_event_notification">
      NET_PNP_EVENT_NOTIFICATION</a> structure which describes the Plug and Play event or Power Management
      event that NDIS is indicating to the protocol driver.
+
 
 ## -returns
 <i>ProtocolNetPnPEvent</i> can return any of the following:
@@ -94,37 +97,45 @@ A pointer to a
 <dd>
 The protocol driver has performed any driver-specific actions that are required to prepare for
          the device's transition to the requested device power state.
+
 </dd>
 <dt><a id="NetEventQueryPower"></a><a id="neteventquerypower"></a><a id="NETEVENTQUERYPOWER"></a><b>NetEventQueryPower</b></dt>
 <dd>
 The underlying adapter can transition to the requested device power state.
+
 </dd>
 <dt><a id="NetEventQueryRemoveDevice"></a><a id="neteventqueryremovedevice"></a><a id="NETEVENTQUERYREMOVEDEVICE"></a><b>NetEventQueryRemoveDevice</b></dt>
 <dd>
 The underlying adapter can be removed.
+
 </dd>
 <dt><a id="NetEventCancelRemoveDevice"></a><a id="neteventcancelremovedevice"></a><a id="NETEVENTCANCELREMOVEDEVICE"></a><b>NetEventCancelRemoveDevice</b></dt>
 <dd>
 The protocol driver has performed any driver-specific actions that are required to prepare for
          the canceled removal of the underlying adapter.
+
 </dd>
 <dt><a id="NetEventReconfigure"></a><a id="neteventreconfigure"></a><a id="NETEVENTRECONFIGURE"></a><b>NetEventReconfigure</b></dt>
 <dd>
 The protocol driver has accepted the changed configuration.
+
 </dd>
 <dt><a id="NetEventBindList"></a><a id="neteventbindlist"></a><a id="NETEVENTBINDLIST"></a><b>NetEventBindList</b></dt>
 <dd>
 The protocol driver has the new bind list and has performed related processing.
+
 </dd>
 <dt><a id="NetEventBindsComplete"></a><a id="neteventbindscomplete"></a><a id="NETEVENTBINDSCOMPLETE"></a><b>NetEventBindsComplete</b></dt>
 <dd>
 The protocol driver has acknowledged the indication from NDIS that the protocol driver is
          bound to all available underlying adapters.
+
 </dd>
 <dt><a id="NetEventPnPCapabilities"></a><a id="neteventpnpcapabilities"></a><a id="NETEVENTPNPCAPABILITIES"></a><b>NetEventPnPCapabilities</b></dt>
 <dd>
 The protocol driver has acknowledged that it has received the current wake-up capabilities of
          the underlying adapter that is associated with the specified binding.
+
 </dd>
 <dt><a id="NetEventPause"></a><a id="neteventpause"></a><a id="NETEVENTPAUSE"></a><b>NetEventPause</b></dt>
 <dd>
@@ -133,6 +144,7 @@ The specified protocol binding has entered the
          <i>Paused</i> state after NDIS has completed all of the outstanding send requests
          for the binding. For more information about pause operations, see 
          <a href="netvista.pausing_a_binding">Pausing a Binding</a>.
+
 </dd>
 <dt><a id="NetEventRestart"></a><a id="neteventrestart"></a><a id="NETEVENTRESTART"></a><b>NetEventRestart</b></dt>
 <dd>
@@ -140,17 +152,20 @@ The specified protocol binding has entered the
          <i>Restarting</i> state. After the protocol driver is ready to resume send and
          receive operations for the binding, the binding enters the 
          <i>Running</i> state.
+
 </dd>
 <dt><a id="NetEventPortActivation"></a><a id="neteventportactivation"></a><a id="NETEVENTPORTACTIVATION"></a><b>NetEventPortActivation</b></dt>
 <dd>
 The protocol driver has acknowledged the activation of a port that is associated with the
          specified binding. For more information about port activation, see 
          <a href="netvista.activating_an_ndis_port">Activating an NDIS Port</a>.
+
 </dd>
 <dt><a id="NetEventPortDeactivation"></a><a id="neteventportdeactivation"></a><a id="NETEVENTPORTDEACTIVATION"></a><b>NetEventPortDeactivation</b></dt>
 <dd>
 The protocol driver has acknowledged the activation of a port that is associated with the
          specified binding.
+
 </dd>
 </dl>The protocol driver has performed any driver-specific actions that are required to prepare for
          the device's transition to the requested device power state.
@@ -230,6 +245,7 @@ A protocol driver should always succeed the
       <b>NetEventPause</b>, <b>NetEventPortDeactivation</b>, and 
       <b>NetEventPnPCapabilities</b> events by returning NDIS_STATUS_SUCCESS.
 
+
 ## -remarks
 The 
     <i>ProtocolNetPnPEvent</i> function is required in protocol drivers to support Plug
@@ -307,19 +323,23 @@ The <b>PROTOCOL_NET_PNP_EVENT</b> function type is defined in the Ndis.h header 
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -330,9 +350,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -356,5 +378,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_NET_PNP_EVENT callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_NET_PNP_EVENT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

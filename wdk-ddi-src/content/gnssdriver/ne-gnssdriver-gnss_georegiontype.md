@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This enumeration is used for defining a geographical shape. A shape is used to define a geofence. Windows 10 currently only supports circular geofences.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef enum  {
 
 Defines a circular geofence.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Defines a circular geofence.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

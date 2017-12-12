@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsClockPropertySet</b> interface provides methods that let the proxy accurately reflect time.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsClockPropertySet</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IKsClockPropertySet</b> also has these types of members:
 
@@ -120,6 +121,7 @@ Sets the current presentation time on the underlying clock.
 
  
 
+
 ## -members
 The <b>IKsClockPropertySet</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -133,6 +135,7 @@ The <b>IKsClockPropertySet</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Retrieves the physical time and the correlated system time from the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -141,6 +144,7 @@ Retrieves the physical time and the correlated system time from the underlying c
 </td>
 <td align="left" width="63%">
 Retrieves the presentation time and the correlated system time from the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -149,6 +153,7 @@ Retrieves the presentation time and the correlated system time from the underlyi
 </td>
 <td align="left" width="63%">
 Retrieves the current physical time from the underlying clock. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -157,6 +162,7 @@ Retrieves the current physical time from the underlying clock.
 </td>
 <td align="left" width="63%">
 Retrieves the clock resolution from the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -165,6 +171,7 @@ Retrieves the clock resolution from the underlying clock.
 </td>
 <td align="left" width="63%">
 Retrieves the streaming state of a pin from the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -173,6 +180,7 @@ Retrieves the streaming state of a pin from the underlying clock.
 </td>
 <td align="left" width="63%">
 Retrieves the current presentation time from the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -181,6 +189,7 @@ Retrieves the current presentation time from the underlying clock.
 </td>
 <td align="left" width="63%">
 Sets the physical time with the correlated system time on the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -189,6 +198,7 @@ Sets the physical time with the correlated system time on the underlying clock.
 </td>
 <td align="left" width="63%">
 Sets the correlated system time with the presentation time on the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -197,6 +207,7 @@ Sets the correlated system time with the presentation time on the underlying clo
 </td>
 <td align="left" width="63%">
 Sets the current physical time on the underlying clock.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -205,6 +216,7 @@ Sets the current physical time on the underlying clock.
 </td>
 <td align="left" width="63%">
 Sets the current presentation time on the underlying clock.
+
 </td>
 </tr>
 </table>Retrieves the physical time and the correlated system time from the underlying clock.
@@ -229,14 +241,17 @@ Sets the current presentation time on the underlying clock.
 
  
 
+
 ## -remarks
 The IID for this interface is IID_IKsClockPropertySet.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -247,6 +262,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

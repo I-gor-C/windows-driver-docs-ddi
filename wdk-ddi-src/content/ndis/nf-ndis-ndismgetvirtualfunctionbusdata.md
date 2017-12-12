@@ -7,7 +7,7 @@ old-location: netvista\ndismgetvirtualfunctionbusdata.htm
 old-project: netvista
 ms.assetid: 15e2e1f4-6039-4588-a7ba-bd8aa6b78839
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMGetVirtualFunctionBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 A miniport driver calls the <b>NdisMGetVirtualFunctionBusData</b> function to read data from the PCI  Express (PCIe) configuration space of a specified Virtual Function (VF) on the network adapter. 
 
 
+
 ## -syntax
 
 ````
@@ -62,13 +63,16 @@ The network adapter handle that NDIS passed to the
      <i>MiniportAdapterHandle</i> parameter of 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
 
+
 ### -param VFId [in]
 
 The identifier of the VF from which the data from the PCI configuration space is returned.
 
+
 ### -param Buffer [out]
 
 A pointer to a buffer that receives the data that is read from the VF's PCI configuration space.
+
 
 ### -param Offset [in]
 
@@ -76,14 +80,17 @@ The offset, in units of bytes, in the VF's PCI configuration space from which da
 
 
 
+
 ### -param Length [in]
 
 The length, in units of bytes, of the data to be read.
+
 <div class="alert"><b>Note</b>  The size of the buffer referenced by <i>Buffer</i> must be at least as large as the value of the <i>Length</i> parameter.</div>
 <div> </div>
 
 ## -returns
 <b>NdisMGetVirtualFunctionBusData</b> returns the number of bytes that are read from the PCI configuration space. If the read operation fails, <b>NdisMGetVirtualFunctionBusData</b> returns zero.
+
 
 ## -remarks
 The PF miniport driver typically calls <b>NdisMGetVirtualFunctionBusData</b> when it handles an OID method request of  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451879">OID_SRIOV_READ_VF_CONFIG_SPACE</a>.  
@@ -97,27 +104,33 @@ If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as p
 
 The VBD that runs in the Hyper-V parent partition's management operating system can query the <a href="kernel.guid_pci_virtualization_interface">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface by issuing an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> request to its physical device object (PDO) on the PCI bus. This request must be made from IRQL = PASSIVE_LEVEL. In this request, the driver must  set the <i>InterfaceType</i> parameter to GUID_PCI_VIRTUALIZATION_INTERFACE.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -128,14 +141,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +162,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -156,9 +173,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -183,5 +202,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetVirtualFunctionBusData function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetVirtualFunctionBusData function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

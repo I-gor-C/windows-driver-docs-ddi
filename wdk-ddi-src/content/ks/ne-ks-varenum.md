@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -248,6 +249,7 @@ enum VARENUM {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

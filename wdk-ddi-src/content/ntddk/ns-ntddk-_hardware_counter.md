@@ -7,7 +7,7 @@ old-location: kernel\hardware_counter.htm
 old-project: kernel
 ms.assetid: 15eeeb07-b71f-4868-8854-6a5034d3f8c6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _HARDWARE_COUNTER, HARDWARE_COUNTER, *PHARDWARE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>HARDWARE_COUNTER</b> structure contains information about a hardware counter. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _HARDWARE_COUNTER {
 ### -field Type
 
 Specifies the type of the hardware counter. Set this member to the following <a href="kernel.hardware_counter_type">HARDWARE_COUNTER_TYPE</a> enumeration value:
+
 <ul>
 <li>
 <b>PMCCounter</b>
+
 </li>
 </ul>
 
@@ -67,28 +70,34 @@ Specifies the type of the hardware counter. Set this member to the following <a 
 
 Reserved for use by the operating system. Initialize this member to zero. 
 
+
 ### -field Index
 
 Specifies the hardware counter index. Each hardware counter in a performance monitoring unit (PMU) for a processor is identified by an index.
+
 
 ## -remarks
 This structure is used by the <a href="kernel.kequeryhardwarecounterconfiguration">KeQueryHardwareCounterConfiguration</a> and <a href="kernel.kesethardwarecounterconfiguration">KeSetHardwareCounterConfiguration</a> routines. 
 
 The <b>Type</b> member specifies the type of hardware counter that is described by the structure. In Windows 7, the only defined hardware counter type is <b>PMCCounter</b>, which is a performance monitor counter. This type of counter is used by thread-profiling applications. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in Windows 7 and later versions of Windows. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,5 +120,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20HARDWARE_COUNTER structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20HARDWARE_COUNTER structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>IKsDataTypeHandler</b> interface provides methods that perform optional preprocessing and postprocessing of media samples. This interface also can return the size of extra stream header information that is required for processing and can determine if a particular media type is within a given set of kernel streaming data ranges. 
+
 The IID for this interface is IID_IKsDataTypeHandler.
+
 
 
 ## -inheritance
@@ -91,6 +93,7 @@ Sets the media type for a data handler.
 
  
 
+
 ## -members
 The <b>IKsDataTypeHandler</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -104,6 +107,7 @@ The <b>IKsDataTypeHandler</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Cleans up the extended header and completes the I/O operation.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -112,6 +116,7 @@ Cleans up the extended header and completes the I/O operation.
 </td>
 <td align="left" width="63%">
 Validates that a media type is within specific data ranges.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -120,6 +125,7 @@ Validates that a media type is within specific data ranges.
 </td>
 <td align="left" width="63%">
 Initializes the extended header and prepares the media sample for an I/O operation.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -128,6 +134,7 @@ Initializes the extended header and prepares the media sample for an I/O operati
 </td>
 <td align="left" width="63%">
 Retrieves extended header information required for I/O operations.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -136,6 +143,7 @@ Retrieves extended header information required for I/O operations.
 </td>
 <td align="left" width="63%">
 Sets the media type for a data handler.
+
 </td>
 </tr>
 </table>Cleans up the extended header and completes the I/O operation.
@@ -150,6 +158,7 @@ Sets the media type for a data handler.
 
  
 
+
 ## -remarks
 In order to keep the proxy data type neutral, optional data type handlers can be loaded to massage the data stream as it passes to or from kernel-mode filters. You should implement a data type handler as a COM server that, at least, supports the <b>IKsDataTypeHandler</b> interface. Your data type handler can optionally support the <a href="..\ksproxy\nn-ksproxy-iksdatatypecompletion.md">IKsDataTypeCompletion</a> interface. 
 
@@ -161,11 +170,13 @@ On a data type handler create request through <b>CoCreateInstance</b>, the serve
 
 For more information about <b>IAMStreamConfig::SetFormat</b> and <b>CoCreateInstance</b>, see the Microsoft Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,5 +193,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsDataTypeHandler interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

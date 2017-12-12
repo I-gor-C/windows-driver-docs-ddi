@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistgetdevice.htm
 old-project: wdf
 ms.assetid: 5d51ec82-4891-47f1-8fc1-b20cb611d7fe
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfChildListGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
+
 The <b>WdfChildListGetDevice</b> method returns a handle to the framework device object that represents the parent device of a specified child list.
+
 
 
 ## -syntax
@@ -58,10 +60,12 @@ WDFDEVICE WdfChildListGetDevice(
 
 A handle to a framework child-list object.
 
+
 ## -returns
 <b>WdfChildListGetDevice</b> returns a handle to a framework device object.
 
 A system bug check occurs if the driver supplies an invalid object handle.
+
 
 
 ## -remarks
@@ -69,11 +73,13 @@ For more information about child lists, see <a href="wdf.dynamic_enumeration">Dy
 
 The following code example obtains a handle to the device object that represents the parent device of a child list.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,14 +90,17 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +111,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -112,14 +122,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>

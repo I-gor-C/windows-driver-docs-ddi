@@ -7,7 +7,7 @@ old-location: netvista\wdi_operation_mode.htm
 old-project: netvista
 ms.assetid: 9838eeb9-6bd6-46a5-9361-6af3aa2d3014
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_OPERATION_MODE, WDI_OPERATION_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The WDI_OPERATION_MODE enumeration defines operation modes.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _WDI_OPERATION_MODE {
 
 Infrastructure client.
 
+
 ### -field WDI_OPERATION_MODE_P2P_DEVICE
 
 Wi-Fi Direct Device.
+
 
 ### -field WDI_OPERATION_MODE_P2P_CLIENT
 
 Wi-Fi Direct Client.
 
+
 ### -field WDI_OPERATION_MODE_P2P_GO
 
 Wi-Fi Direct Group Owner.
+
 
 ## -remarks
 
@@ -79,22 +84,27 @@ Wi-Fi Direct Group Owner.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_cipher_algorithm.htm
 old-project: netvista
 ms.assetid: 5fc1af01-7dd5-43dd-aefe-99dec0b5aa6a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGORITHM, *PDOT11_CIPHER_ALGORITHM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,11 +65,13 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 
 Specifies that no cipher algorithm is enabled or supported.
 
+
 ### -field DOT11_CIPHER_ALGO_WEP40
 
 Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is
      specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a
      40-bit cipher key.
+
 
 ### -field DOT11_CIPHER_ALGO_TKIP
 
@@ -78,38 +80,48 @@ Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-b
      standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery
      protection.
 
+
 ### -field DOT11_CIPHER_ALGO_CCMP
 
 Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610.
      Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.
 
+
 ### -field DOT11_CIPHER_ALGO_WEP104
 
 Specifies a WEP cipher algorithm with a 104-bit cipher key.
+
 
 ### -field DOT11_CIPHER_ALGO_BIP
 
 Specifies a BIP cipher algorithm.
 
+
 ### -field DOT11_CIPHER_ALGO_WPA_USE_GROUP
 
 Specifies a Wifi Protected Access (WPA) Use Group Key cipher suite.
+
 For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE
       802.11i-2004 standard.
+
 
 ### -field DOT11_CIPHER_ALGO_RSN_USE_GROUP
 
 Specifies a Robust Security Network (RSN) Use Group Key cipher suite.
+
 For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE
       802.11i-2004 standard.
+
 
 ### -field DOT11_CIPHER_ALGO_WEP
 
 Specifies a WEP cipher algorithm with a cipher key of any length.
      
+
 A miniport driver that operates in Extensible Station (ExtSTA) mode specifies the maximum WEP cipher
      key length through a query of 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569366">OID_DOT11_EXTSTA_CAPABILITY</a>.
+
 <div class="alert"><b>Note</b>  The operating system will only enable this cipher algorithm if authentication
      algorithms of 
      <b>DOT11_AUTH_ALGO_80211_OPEN</b> or 
@@ -123,18 +135,22 @@ A miniport driver that operates in Extensible Station (ExtSTA) mode specifies th
 Specifies the start of the range that is used to define proprietary cipher algorithms that are
      developed by an independent hardware vendor (IHV).
      
+
 The 
      <b>DOT11_CIPHER_ALGO_IHV_START</b> enumerator is valid only when the miniport driver is operating in
      ExtSTA mode.
+
 
 ### -field DOT11_CIPHER_ALGO_IHV_END
 
 Specifies the end of the range that is used to define proprietary authentication algorithms that
      are developed by an IHV.
      
+
 The 
      <b>DOT11_CIPHER_ALGO_IHV_END</b> enumerator is valid only when the miniport driver is operating in ExtSTA
      mode.
+
 
 ## -remarks
 An IHV can assign a value for its proprietary cipher algorithms from 
@@ -182,20 +198,24 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
     the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -229,5 +249,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_ALGORITHM enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_ALGORITHM enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

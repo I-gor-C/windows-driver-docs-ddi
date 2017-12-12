@@ -7,7 +7,7 @@ old-location: display\dxgk_physicaladapterflags.htm
 old-project: display
 ms.assetid: AACF0C99-D6E2-4C7C-BAE6-BF558FDAFDE0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PHYSICALADAPTERFLAGS, DXGK_PHYSICALADAPTERFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 <b>DXGK_PHYSICALADAPTERFLAGS</b> defines a set of flags that used to indicate the type of memory management model that is supported by a device.
 
 
+
 ## -syntax
 
 ````
@@ -65,25 +66,31 @@ typedef struct _DXGK_PHYSICALADAPTERFLAGS {
 
 Indicates that the CPU and GPU share a common address space and common page tables.
 
+
 ### -field GpuMmuSupported
 
 Indicates that the video memory manager manages the GPU memory management unit and underlying page tables to expose services to the user mode driver.
+
 
 ### -field MovingPagingSupported
 
 Indicates that the device driver is capable of moving content to a new destination on the same memory segment.
 
+
 ### -field VPRPagingContextRequired
 
 Indicates that the device driver requires that move paging operations done within a Video Protected Region occur on a different paging context than standard paging operations.
+
 
 ### -field Reserved
 
 This member is reserved and should be set to zero.
 
+
 ### -field Value
 
 The consolidated  value of the bitfield members in this structure.
+
 
 ## -remarks
 
@@ -93,22 +100,27 @@ The consolidated  value of the bitfield members in this structure.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

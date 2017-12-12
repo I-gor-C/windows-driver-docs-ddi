@@ -7,7 +7,7 @@ old-location: storage\storportrequesttimer.htm
 old-project: storage
 ms.assetid: EE5A6D39-EC76-4D97-B2EC-4A43225C2FB5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortRequestTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Schedules a callback event for a Storport timer context object.
 
 
+
 ## -syntax
 
 ````
@@ -62,13 +63,16 @@ ULONG StorPortRequestTimer(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param TimerHandle [in]
 
 A pointer to an opaque buffer for the timer context returned by <a href="storage.storportinitializetimer">StorPortInitializeTimer</a>.
 
+
 ### -param TimerCallback [in]
 
 A pointer to a timer callback routine supplied by the miniport. The following is the prototype defined for <b>PHW_TIMER_EX</b>:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -89,13 +93,16 @@ VOID
 
 A pointer to a miniport provided context for the timer callback.
 
+
 ### -param TimerValue [in]
 
 The timeout value for the timer, in microseconds. Setting <i>TimerValue</i> to 0 will cancel the timer.
 
+
 ### -param TolerableDelay [in]
 
 The allowable delay for the timer in microseconds. Values less than 32 microseconds are ignored and <i>TolerableDelay</i> defaults to 0.
+
 
 ## -returns
 The <b>StorPortRequestTimer</b> routine returns one of these status codes:
@@ -116,14 +123,17 @@ The timer context object, <i>TimerHandle</i>, is invalid.
 
  
 
+
 ## -remarks
 The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the routine is called when IRQL &gt; DISPATCH_LEVEL, the timer's scheduling is deferred until IRQL &lt;= DISPATCH_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -134,14 +144,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -152,9 +165,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any
+
 </td>
 </tr>
 </table>
@@ -175,5 +190,8 @@ Any
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortRequestTimer routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortRequestTimer routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

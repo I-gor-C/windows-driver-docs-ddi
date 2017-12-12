@@ -41,6 +41,7 @@ req.irql: See Remarks section.
 A minifilter driver that initiates an asynchronous I/O operation can specify a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK routine to be called when the operation is completed. 
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ typedef VOID ( *PFLT_COMPLETED_ASYNC_IO_CALLBACK)(
 
 Pointer to the callback data structure for the I/O operation. 
 
+
 ### -param Context [in]
 
 Context pointer that the minifilter driver passed as a parameter to <a href="ifsk.fltperformasynchronousio">FltPerformAsynchronousIo</a>, <a href="ifsk.fltreadfile">FltReadFile</a>, or <a href="ifsk.fltwritefile">FltWriteFile</a>. 
 
+
 ## -returns
 None 
+
 
 ## -remarks
 When a minifilter driver calls <a href="ifsk.fltperformasynchronousio">FltPerformAsynchronousIo</a>, <a href="ifsk.fltreadfile">FltReadFile</a> or <a href="ifsk.fltwritefile">FltWriteFile</a> to initiate an asynchronous I/O operation, the minifilter driver can optionally specify a callback routine to be called when the I/O operation is completed. This is done by specifying a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK for the <i>CallbackRoutine</i> parameter. 
@@ -79,11 +83,13 @@ It cannot be made pageable.
 
 It cannot acquire resources, mutexes, or fast mutexes. However, it can acquire spin locks. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +100,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,9 +111,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 </table>
@@ -127,5 +136,8 @@ See Remarks section.
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_COMPLETED_ASYNC_IO_CALLBACK function pointer%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

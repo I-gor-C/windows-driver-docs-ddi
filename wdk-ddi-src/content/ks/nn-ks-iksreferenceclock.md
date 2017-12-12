@@ -41,6 +41,7 @@ req.irql:
 The <b>IKsReferenceClock</b> interface is a COM-style interface that is provided by AVStream on all pins. The pin passes the request onto the master clock.
 
 
+
 ## -syntax
 
 ````
@@ -76,6 +77,7 @@ Queries the associated reference clock for the current time.
 
  
 
+
 ## -members
 The <b>IKsReferenceClock</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -89,6 +91,7 @@ The <b>IKsReferenceClock</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Queries the associated reference clock for the current correlated physical time and system time.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -97,6 +100,7 @@ Queries the associated reference clock for the current correlated physical time 
 </td>
 <td align="left" width="63%">
 Concurrently queries the associated reference clock for current stream time and acquires the system time. Use if obtaining a time stamp for the <b>PresentationTime</b> member of <a href="stream.ksstream_header">KSSTREAM_HEADER</a>.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -105,6 +109,7 @@ Concurrently queries the associated reference clock for current stream time and 
 </td>
 <td align="left" width="63%">
 Queries the associated reference clock for the current physical time.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -113,6 +118,7 @@ Queries the associated reference clock for the current physical time.
 </td>
 <td align="left" width="63%">
 Queries the associated reference clock for its resolution.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -121,6 +127,7 @@ Queries the associated reference clock for its resolution.
 </td>
 <td align="left" width="63%">
 Queries the associated reference clock for its current state.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -129,6 +136,7 @@ Queries the associated reference clock for its current state.
 </td>
 <td align="left" width="63%">
 Queries the associated reference clock for the current time.
+
 </td>
 </tr>
 </table>Queries the associated reference clock for the current correlated physical time and system time.
@@ -145,6 +153,7 @@ Queries the associated reference clock for the current time.
 
  
 
+
 ## -remarks
 The minidriver can acquire an <b>IKsReferenceClock</b> interface by calling <a href="stream.kspingetreferenceclockinterface">KsPinGetReferenceClockInterface</a>. Because this is a COM-style interface, <b>KsPinGetReferenceClockInterface</b> calls <b>QueryInterface</b>, which in turn invokes <b>AddRef</b> to increment the interface pointer. This means that when the minidriver is finished with the <b>IKsReferenceClock</b> interface, the minidriver must release it by calling <b>Release</b>.
 
@@ -154,11 +163,13 @@ However, a client that is written in C would do the following instead :
 
 For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -181,5 +192,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsReferenceClock interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

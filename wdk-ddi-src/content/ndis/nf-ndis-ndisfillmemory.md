@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisFillMemory
-title: NdisFillMemory
+title: NdisFillMemory macro
 author: windows-driver-content
 description: The NdisFillMemory function fills a caller-supplied buffer with the given character.
 old-location: netvista\ndisfillmemory.htm
 old-project: netvista
 ms.assetid: 6d974c56-5925-4ad5-a3c0-0c17e8488431
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisFillMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
@@ -31,65 +31,59 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.iface: 
 ---
 
-# NdisFillMemory function
+# NdisFillMemory macro
 
 
 
 ## -description
-<p>The 
-  <b>NdisFillMemory</b> function fills a caller-supplied buffer with the given character.</p>
+The 
+  <b>NdisFillMemory</b> function fills a caller-supplied buffer with the given character.
+
 
 
 ## -syntax
 
 ````
 VOID NdisFillMemory(
-  _In_ PVOID Destination,
-  _In_ ULONG Length,
-  _In_ UCHAR Fill
+  [in] PVOID Destination,
+  [in] ULONG Length,
+  [in] UCHAR Fill
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param Destination [in]
 
-<dd>
-<p>A pointer to the buffer to be filled.</p>
-</dd>
+A pointer to the buffer to be filled.
+
 
 ### -param Length [in]
 
-<dd>
-<p>The number of bytes to be filled.</p>
-</dd>
+The number of bytes to be filled.
+
 
 ### -param Fill [in]
 
-<dd>
-<p>The value to fill the buffer.</p>
-</dd>
-</dl>
+The value to fill the buffer.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>Callers of 
+Callers of 
     <b>NdisFillMemory</b> can be running at any IRQL, provided that the 
     <i>Destination</i> buffer is resident. If the buffer is pageable, a caller must be running at IRQL &lt;
-    DISPATCH_LEVEL.</p>
+    DISPATCH_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -99,15 +93,18 @@ VOID NdisFillMemory(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a> instead.</p>
+Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="kernel.rtlfillmemory">RtlFillMemory</a> instead.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,10 +114,12 @@ VOID NdisFillMemory(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>See Remarks section</p>
+See Remarks section
+
 </td>
 </tr>
 </table>
@@ -128,12 +127,15 @@ VOID NdisFillMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="..\wdm\nf-wdm-rtlequalmemory.md">RtlEqualMemory</a>
+<a href="kernel.rtlequalmemory">RtlEqualMemory</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
+<a href="kernel.rtlzeromemory">RtlZeroMemory</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFillMemory function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFillMemory macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

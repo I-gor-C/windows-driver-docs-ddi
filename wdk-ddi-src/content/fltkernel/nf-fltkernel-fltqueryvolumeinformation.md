@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FltQueryVolumeInformation</b> routine retrieves information about the volume that the given instance is attached to. 
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ NTSTATUS FltQueryVolumeInformation(
 
 An opaque instance pointer for a minifilter driver instance that is attached to the volume. 
 
+
 ### -param Iosb [out]
 
 A pointer to caller-allocated IO_STATUS_BLOCK structure that receives the final completion status and information about the query operation. For successful calls that return data, the number of bytes written to the <i>FsInformation</i> buffer is returned in the structure's <b>Information</b> member. 
+
 
 ### -param FsInformation [out]
 
 A pointer to a caller-allocated buffer that receives the desired information about the volume. The structure of the information returned in the buffer is defined by the <i>FsInformationClass</i> parameter. 
 
+
 ### -param Length [in]
 
 The size in bytes of the buffer that <i>FsInformation</i> points to. The caller should set this parameter according to the given <i>FsInformationClass</i>. For example, if the value of <i>FsInformationClass</i> is FileFsControlInformation, <i>Length</i> must be at least <b>sizeof</b>(FILE_FS_CONTROL_INFORMATION). 
 
+
 ### -param FsInformationClass [in]
 
 The type of information requested. One of the following value. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -87,6 +93,7 @@ The type of information requested. One of the following value.
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMATION</a> structure containing attribute information about the file system responsible for the volume. 
+
 </td>
 </tr>
 <tr>
@@ -96,6 +103,7 @@ Return a <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMAT
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION</a> structure containing file system control information about the volume. 
+
 </td>
 </tr>
 <tr>
@@ -105,6 +113,7 @@ Return a <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION<
 </td>
 <td width="60%">
 Return a <a href="kernel.file_fs_device_information">FILE_FS_DEVICE_INFORMATION</a> structure containing device information for the volume. 
+
 </td>
 </tr>
 <tr>
@@ -114,6 +123,7 @@ Return a <a href="kernel.file_fs_device_information">FILE_FS_DEVICE_INFORMATION<
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_driver_path_information">FILE_FS_DRIVER_PATH_INFORMATION</a> structure containing information about whether a specified driver is in the I/O path for the volume. The caller must store the name of the driver into the <b>FILE_FS_DRIVER_PATH_INFORMATION</b> structure before calling <b>FltQueryVolumeInformation</b>. 
+
 </td>
 </tr>
 <tr>
@@ -123,6 +133,7 @@ Return a <a href="ifsk.file_fs_driver_path_information">FILE_FS_DRIVER_PATH_INFO
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMATION</a> structure containing information about the total amount of space available on the volume. 
+
 </td>
 </tr>
 <tr>
@@ -134,6 +145,7 @@ Return a <a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMAT
 Return a <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATION</a> structure containing file system-specific object ID information for the volume. Be aware that this is not the same as the (GUID-based) unique volume name assigned by the operating system. <div class="alert"><b>Note</b>  This value is not valid for snapshot volumes.</div>
 <div> </div>
 
+
 </td>
 </tr>
 <tr>
@@ -143,6 +155,7 @@ Return a <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATIO
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user associated with the calling thread. 
+
 </td>
 </tr>
 <tr>
@@ -152,6 +165,7 @@ Return a <a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a> st
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_volume_information">FILE_FS_VOLUME_INFORMATION</a> containing information about the volume such as the volume label, serial number, and creation time. 
+
 </td>
 </tr>
 <tr>
@@ -161,10 +175,12 @@ Return a <a href="ifsk.file_fs_volume_information">FILE_FS_VOLUME_INFORMATION</a
 </td>
 <td width="60%">
 Return a <a href="ifsk.file_fs_sector_size_information">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 The <b>FltQueryVolumeInformation</b> routine returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value such as one of the following: 
@@ -181,6 +197,7 @@ The <b>FltQueryVolumeInformation</b> routine returns <b>STATUS_SUCCESS</b> or an
 
  
 
+
 ## -remarks
 Fields in the FILE_<i>XXX</i>_INFORMATION structure that are not supported by the underlying file system are set to zero. 
 
@@ -192,11 +209,13 @@ To get the volume name for a given volume, call <a href="ifsk.fltgetvolumename">
 
 To get the volume GUID name for a given volume, call <a href="ifsk.fltgetvolumeguidname">FltGetVolumeGuidName</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -207,14 +226,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP with Service Pack 2 (SP2), Windows Server 2003 SP1 and later  Windows operating systems. Not available or supported in Windows 2000 SP4 and earlier Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -225,6 +247,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -235,6 +258,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -245,9 +269,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -293,5 +319,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

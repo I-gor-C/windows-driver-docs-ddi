@@ -7,8 +7,8 @@ old-location: netvista\rilconfparticipantstatus.htm
 old-project: netvista
 ms.assetid: 7eb0e06b-85f0-4b61-9ed0-2f35156fbb8c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS
+ms.date: 12/8/2017
+ms.keywords: RILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -91,6 +92,7 @@ typedef struct _RILCONFPARTICIPANTSTATUS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

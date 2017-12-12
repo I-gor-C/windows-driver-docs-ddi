@@ -7,7 +7,7 @@ old-location: netvista\ndismqueuedpcex.htm
 old-project: netvista
 ms.assetid: 22074e51-9032-4ef9-94b9-217daefcab03
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMQueueDpcEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ NDIS miniport drivers call the
   <b>NdisMQueueDpcEx</b> function to schedule DPC calls on CPUs.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ An interrupt handle that the miniport driver obtained in a previous call to the
      <a href="netvista.ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
+
 ### -param MessageId [in]
 
 An MSI message ID for the DPC. If the DPC is for a line-based interrupt, this parameter is not
@@ -75,12 +77,14 @@ An MSI message ID for the DPC. If the DPC is for a line-based interrupt, this pa
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
      <b>NdisMRegisterInterruptEx</b> function.
 
+
 ### -param TargetProcessors [in]
 
 A bitmap that indicates target processors. NDIS should schedule a DPC for each target processor
      that is indicated in the bitmap. Each bit in 
      <i>TargetProcessors</i> identifies a CPU. If the caller sets bit 0, NDIS schedules a DPC for CPU 0. If the caller sets bit 1, NDIS
      schedules a DPC for CPU 1, and so on.
+
 
 ### -param MiniportDpcContext [in]
 
@@ -89,6 +93,7 @@ A pointer to a caller-specified context area. NDIS passes this pointer to the
      <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a> and 
      <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">
      MiniportMessageInterruptDPC</a> functions.
+
 
 ## -returns
 <b>NdisMQueueDpcEx</b> returns a bitmap that indicates target processors. Each bit in the return value
@@ -100,6 +105,7 @@ NDIS successfully scheduled a DPC for each target processor that is set in the b
 
 If the driver requested a DPC for a CPU, and NDIS indicates that it did not schedule that DPC, the
       DPC was not scheduled because a DPC was already scheduled for that CPU.
+
 
 ## -remarks
 NDIS 6.20 and later miniport drivers call 
@@ -115,11 +121,13 @@ NDIS 6.20 and later miniport drivers call
     than one processor group, you can use multiple calls to 
     <b>NdisMQueueDpcEx</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -130,14 +138,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -148,6 +159,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -158,9 +170,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -187,5 +201,8 @@ Any level
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueueDpcEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueueDpcEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

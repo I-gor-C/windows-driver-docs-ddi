@@ -7,7 +7,7 @@ old-location: storage\storage_device_power_cap_units.htm
 old-project: storage
 ms.assetid: 199900F4-90A7-4F2E-B85E-25BF3593D50B
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_DEVICE_POWER_CAP_UNITS, *PSTORAGE_DEVICE_POWER_CAP_UNITS, STORAGE_DEVICE_POWER_CAP_UNITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The units of the maximum power threshold.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _STORAGE_DEVICE_POWER_CAP_UNITS {
 
 Units in percent.
 
+
 ### -field StorageDevicePowerCapUnitsMilliwatts
 
 Units in milliwatts.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Units in milliwatts.
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

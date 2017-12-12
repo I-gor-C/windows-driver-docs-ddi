@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 6B890F85-0E77-41D2-B3B9-004F1882B6B5
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_NMEA_DATA, *PGNSS_NMEA_DATA, GNSS_NMEA_DATA
+ms.keywords: PGNSS_NMEA_DATA, GNSS_NMEA_DATA, *PGNSS_NMEA_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains generic (non-parsed) NMEA data.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field NmeaSentences[256]
 
 Generic (non-parsed) NMEA data 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Generic (non-parsed) NMEA data
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

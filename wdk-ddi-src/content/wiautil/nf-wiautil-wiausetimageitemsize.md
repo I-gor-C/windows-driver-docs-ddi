@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiauSetImageItemSize</b> function calculates the size and width, in bytes, for an image, based on the current WIA_IPA_FORMAT setting (described in the Microsoft Windows SDK documentation), and writes the new values to the appropriate properties.
 
 
+
 ## -syntax
 
 ````
@@ -62,37 +63,46 @@ HRESULT _stdcall wiauSetImageItemSize(
 
 Pointer to a WIA item context.
 
+
 ### -param lWidth 
 
 Specifies the width of the image, in pixels.
+
 
 ### -param lHeight 
 
 Specifies the height of the image, in pixels.
 
+
 ### -param lDepth 
 
 Specifies the depth of the image, in bits.
+
 
 ### -param lSize 
 
 Specifies the size of the image as stored on the device.
 
+
 ### -param pwszExt [in, optional]
 
 <i>Optional</i>. Pointer to a memory location containing a three-character file name extension for the item's native format. If this parameter is <b>NULL</b>, the item's extension property, WIA_IPA_FILENAME_EXTENSION (described in the Windows SDK documentation), is not updated.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error.
 
+
 ## -remarks
 If the format is not BMP, this function assumes that the value passed in the <i>lSize</i> parameter is correct for the current format.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,14 +113,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows XP and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

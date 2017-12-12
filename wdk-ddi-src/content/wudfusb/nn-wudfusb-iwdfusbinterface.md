@@ -7,8 +7,8 @@ old-location: wdf\iwdfusbinterface.htm
 old-project: wdf
 ms.assetid: 90770016-1267-437e-af70-99741231dc29
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _WDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+ms.date: 12/7/2017
+ms.keywords: _WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -41,9 +41,13 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-The <b>IWDFUsbInterface</b> interface exposes a USB interface that a USB device exposes.
 
 The <b>IWDFUsbInterface</b> interface exposes a USB interface that a USB device exposes.
+
+
+
+The <b>IWDFUsbInterface</b> interface exposes a USB interface that a USB device exposes.
+
 
 
 ## -inheritance
@@ -67,6 +71,7 @@ The <a href="wdf.iwdfusbinterface_selectsetting">SelectSetting</a> method select
 
  
 
+
 ## -members
 The <b>IWDFUsbInterface</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -80,6 +85,7 @@ The <b>IWDFUsbInterface</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbinterface_getconfiguredsettingindex">GetConfiguredSettingIndex</a> method retrieves the current setting index for a USB interface.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -88,6 +94,7 @@ The <a href="wdf.iwdfusbinterface_getconfiguredsettingindex">GetConfiguredSettin
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbinterface_getinterfacedescriptor">GetInterfaceDescriptor</a> method retrieves a descriptor for a USB interface.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -96,6 +103,7 @@ The <a href="wdf.iwdfusbinterface_getinterfacedescriptor">GetInterfaceDescriptor
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbinterface_getinterfacenumber">GetInterfaceNumber</a> method retrieves the index of a USB interface.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -104,6 +112,7 @@ The <a href="wdf.iwdfusbinterface_getinterfacenumber">GetInterfaceNumber</a> met
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbinterface_getnumendpoints">GetNumEndPoints</a> method retrieves the number of endpoints (pipes) on a USB interface.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -112,6 +121,7 @@ The <a href="wdf.iwdfusbinterface_getnumendpoints">GetNumEndPoints</a> method re
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbinterface_getwinusbhandle">GetWinUsbHandle</a> method retrieves the WinUsb interface handle that is associated with a USB interface.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -120,6 +130,7 @@ The <a href="wdf.iwdfusbinterface_getwinusbhandle">GetWinUsbHandle</a> method re
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbinterface_retrieveusbpipeobject">RetrieveUsbPipeObject</a> method retrieves a USB pipe object for the specified pipe index.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -128,6 +139,7 @@ The <a href="wdf.iwdfusbinterface_retrieveusbpipeobject">RetrieveUsbPipeObject</
 </td>
 <td align="left" width="63%">
 The <a href="wdf.iwdfusbinterface_selectsetting">SelectSetting</a> method selects the specified alternate setting on a USB interface.
+
 </td>
 </tr>
 </table>The <a href="wdf.iwdfusbinterface_getconfiguredsettingindex">GetConfiguredSettingIndex</a> method retrieves the current setting index for a USB interface.
@@ -146,6 +158,7 @@ The <a href="wdf.iwdfusbinterface_selectsetting">SelectSetting</a> method select
 
  
 
+
 ## -remarks
 
 
@@ -154,6 +167,7 @@ The <a href="wdf.iwdfusbinterface_selectsetting">SelectSetting</a> method select
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -164,22 +178,27 @@ Target platform
 <tr>
 <th width="30%">
 End of support
+
 </th>
 <td width="70%">
 Unavailable in UMDF 2.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 1.5
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -190,6 +209,7 @@ Header
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

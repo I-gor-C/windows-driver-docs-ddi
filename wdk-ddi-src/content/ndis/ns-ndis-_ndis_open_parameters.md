@@ -7,7 +7,7 @@ old-location: netvista\ndis_open_parameters.htm
 old-project: netvista
 ms.assetid: bb61026c-311b-41d1-9fcb-3ac44df2025e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_OPEN_PARAMETERS, NDIS_OPEN_PARAMETERS, *PNDIS_OPEN_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_OPEN_PARAMETERS structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The NDIS_OPEN_PARAMETERS structure defines the open parameters when a protocol driver calls the 
   <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+
 
 
 ## -syntax
@@ -69,6 +70,7 @@ The
      <b>Revision</b> member to NDIS_OPEN_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to the NDIS_SIZEOF_OPEN_PARAMETERS_REVISION_1.
 
+
 ### -field AdapterName
 
 A Unicode string that contains the name of the miniport adapter that NDIS passed to 
@@ -77,22 +79,26 @@ A Unicode string that contains the name of the miniport adapter that NDIS passed
      <i>BindParameters</i> parameter. This name can identify a physical adapter (that is, a NIC) or a virtual
      adapter that is associated with an intermediate driver.
 
+
 ### -field MediumArray
 
 A pointer to an array of 
      <b>NdisMedium<i>Xxx</i></b> values that lists the types of media the caller can support. This list is a subset of the 
      <a href="netvista.ndis_medium">NDIS_MEDIUM</a> types.
 
+
 ### -field MediumArraySize
 
 The number of elements in the 
      <b>MediumArray</b> member.
+
 
 ### -field SelectedMediumIndex
 
 A pointer to an driver-provided UINT variable that contains an index into the 
      <b>MediumArray</b> array. NDIS writes this index which identifies the media type that the underlying
      driver uses.
+
 
 ### -field FrameTypeArray
 
@@ -101,6 +107,7 @@ A pointer to an array of NET_FRAME_TYPE values, specifying the frame types that 
      address in Ethernet frames. In the presence of VLAN tags, this value follows the destination, source MAC
      address, and VLAN tag. NET_FRAME_TYPE is defined as follows:
      
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -124,24 +131,29 @@ The number of elements in the
      <b>FrameTypeArray</b> member. This number must be equal to or less than
      NDIS_MAX_FRAME_TYPES_PER_OPEN.
 
+
 ## -remarks
 A protocol driver passes an NDIS_OPEN_PARAMETERS structure when it calls the 
     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function to open a
     miniport adapter.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,5 +179,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPEN_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPEN_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\ndis_filter_interface.htm
 old-project: netvista
 ms.assetid: 0a765829-3558-48ea-b788-7cce6c4b64c6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_FILTER_INTERFACE, NDIS_FILTER_INTERFACE, *PNDIS_FILTER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_FILTER_INTERFACE structure
@@ -39,6 +39,7 @@ req.irql: Any level
 
 ## -description
 The NDIS_FILTER_INTERFACE structure defines the attributes for an NDIS filter.
+
 
 
 ## -syntax
@@ -64,11 +65,15 @@ typedef struct _NDIS_FILTER_INTERFACE {
 The 
      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      filter interface structure. 
+
 NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
+
 If the handle passed to <a href="netvista.ndisenumeratefiltermodules">NdisEnumerateFilterModules</a> belongs to an NDIS 6.30 or later object, then NDIS sets <b>Revision</b> to NDIS_FILTER_INTERFACE_REVISION_2 and <b>Size</b> to NDIS_SIZEOF_FILTER_INTERFACE_REVISION_2.
+
 If the handle passed to <a href="netvista.ndisenumeratefiltermodules">NdisEnumerateFilterModules</a> belongs to an NDIS 6.20 or earlier object, then NDIS sets <b>Revision</b> to NDIS_FILTER_INTERFACE_REVISION_1 and <b>Size</b> to NDIS_SIZEOF_FILTER_INTERFACE_REVISION_1.
+
 
 ### -field Flags
 
@@ -77,21 +82,27 @@ A bit field that defines the type of NDIS driver that implements the filter. Thi
      
 
 
+
+
 ### -field NDIS_FILTER_INTERFACE_IM_FILTER
 
 The filter is implemented in an NDIS 5.1 or earlier filter intermediate driver.
+
 
 ### -field NDIS_FILTER_INTERFACE_LW_FILTER
 
 The filter is implemented in an NDIS 6.0 or later filter driver.
 
+
 ### -field NDIS_FILTER_INTERFACE_SEND_BYPASS
 
 The filter is currently not attached to the send path.  This flag is only set if <b>Header.Revision</b> is greater than or equal to NDIS_FILTER_INTERFACE_REVISION_2.
 
+
 ### -field NDIS_FILTER_INTERFACE_RECEIVE_BYPASS
 
 The filter is currently not attached to the receive path.  This flag is only set if <b>Header.Revision</b> is greater than or equal to NDIS_FILTER_INTERFACE_REVISION_2.
+
 
 </dd>
 </dl>
@@ -102,13 +113,17 @@ The behavior type for the filter. This type must be one of the following values:
      
 
 
+
+
 ### -field NdisFilterTypeMonitoring = 1
 
 A monitoring filter.
 
+
 ### -field NdisFilterTypeModifying = 2
 
 A modifying filter.
+
 </dd>
 </dl>
 
@@ -119,21 +134,26 @@ The runtime attachment priority type for the filter. This type must be one of th
      
 
 
+
+
 ### -field NdisFilterRunTypeMandatory = 1
 
 A mandatory filter. If the filter does not attach to the driver stack, NDIS will tear down the
        rest of the stack.
 
+
 ### -field NdisFilterRunTypeOptional = 2
 
 An optional filter. If the filter does not attach to the driver stack, NDIS will not tear down the
        rest of the stack.
+
 </dd>
 </dl>
 
 ### -field IfIndex
 
 The NDIS interface index of the filter module.
+
 
 ### -field NetLuid
 
@@ -142,14 +162,17 @@ The
      module. The NET_LUID is equivalent to the interface name (ifName in 
      RFC 2863).
 
+
 ### -field FilterClass
 
 A UNICODE string that specifies the filter class. This string is the same as the 
      <b>FilterClass</b> INF file entry.
 
+
 ### -field FilterInstanceName
 
 The filter instance name.
+
 
 ## -remarks
 The 
@@ -161,19 +184,23 @@ The
 
 A light-weight filter may dynamically insert or remove itself from the send or receive path by calling <a href="netvista.ndisfrestartfilter">NdisFRestartFilter</a> and providing a <a href="netvista.ndis_filter_partial_characteristics">NDIS_FILTER_PARTIAL_CHARACTERISTICS</a> structure to <a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -196,5 +223,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_INTERFACE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_INTERFACE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

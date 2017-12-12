@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpn_interface.htm
 old-project: display
 ms.assetid: 7ddd110c-2521-4df6-a936-e702a0f15312
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_VIDPN_INTERFACE, DXGK_VIDPN_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The DXGK_VIDPN_INTERFACE structure contains pointers to functions that belong to the <a href="display.vidpn_interface">VidPn interface</a>, which is implemented by the video present network (VidPN) manager.
 
 
+
 ## -syntax
 
 ````
@@ -66,64 +67,79 @@ typedef struct _DXGK_VIDPN_INTERFACE {
 
 A <a href="display.dxgk_vidpn_interface_version">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the interface.
 
+
 ### -field pfnGetTopology
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function.
+
 
 ### -field pfnAcquireSourceModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset.md">pfnAcquireSourceModeSet</a> function.
 
+
 ### -field pfnReleaseSourceModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_releasesourcemodeset.md">pfnReleaseSourceModeSet</a> function.
+
 
 ### -field pfnCreateNewSourceModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_createnewsourcemodeset.md">pfnCreateNewSourceModeSet</a> function.
 
+
 ### -field pfnAssignSourceModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_assignsourcemodeset.md">pfnAssignSourceModeSet</a> function.
+
 
 ### -field pfnAssignMultisamplingMethodSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_assignmultisamplingmethodset.md">pfnAssignMultisamplingMethodSet</a> function.
 
+
 ### -field pfnAcquireTargetModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiretargetmodeset.md">pfnAcquireTargetModeSet</a> function.
+
 
 ### -field pfnReleaseTargetModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_releasetargetmodeset.md">pfnReleaseTargetModeSet</a> function.
 
+
 ### -field pfnCreateNewTargetModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_createnewtargetmodeset.md">pfnCreateNewTargetModeSet</a> function.
 
+
 ### -field pfnAssignTargetModeSet
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_assigntargetmodeset.md">pfnAssignTargetModeSet</a> function.
+
 
 ## -remarks
 The display miniport driver calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_queryvidpninterface.md">DxgkCbQueryVidPnInterface</a> to obtain a pointer to a DXGK_VIDPN_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.
 
 For more information about the VidPN interface, see <a href="https://msdn.microsoft.com/5dedac8c-9a99-4b3a-81be-39819135cd97">VidPN Objects and Interfaces</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

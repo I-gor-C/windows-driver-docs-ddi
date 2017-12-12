@@ -7,8 +7,8 @@ old-location: netvista\rilphonebookemailaddress.htm
 old-project: netvista
 ms.assetid: 89dc64a4-dce9-4ed2-a657-d216d502cded
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS
+ms.date: 12/8/2017
+ms.keywords: RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef struct _RILPHONEBOOKEMAILADDRESS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

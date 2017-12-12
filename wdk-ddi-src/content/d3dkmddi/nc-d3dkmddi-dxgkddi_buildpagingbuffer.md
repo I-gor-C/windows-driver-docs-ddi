@@ -7,13 +7,13 @@ old-location: display\dxgkddibuildpagingbuffer.htm
 old-project: display
 ms.assetid: d315ff53-4a9f-46a3-ad74-d65a5eb72de1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
 req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
+req.include-header: 
 req.target-type: Desktop
 req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
 req.target-min-winversvr: 
@@ -41,10 +41,11 @@ req.irql: PASSIVE_LEVEL
 The <i>DxgkDdiBuildPagingBuffer</i> function builds paging buffers for memory operations.
 
 
+
 ## -prototype
 
 ````
-PDXGKDDI_BUILDPAGINGBUFFER DxgkDdiBuildPagingBuffer;
+DXGKDDI_BUILDPAGINGBUFFER DxgkDdiBuildPagingBuffer;
 
 NTSTATUS APIENTRY DxgkDdiBuildPagingBuffer(
   _In_ const HANDLE                    hAdapter,
@@ -60,9 +61,11 @@ NTSTATUS APIENTRY DxgkDdiBuildPagingBuffer(
 
 [in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
+
 ### -param pBuildPagingBuffer [in]
 
 [in/out] A pointer to a <a href="display.dxgkarg_buildpagingbuffer">DXGKARG_BUILDPAGINGBUFFER</a> structure that contains information for building a paging buffer.
+
 
 ## -returns
 <i>DxgkDdiBuildPagingBuffer</i> returns one of the following values:
@@ -78,6 +81,7 @@ NTSTATUS APIENTRY DxgkDdiBuildPagingBuffer(
 
  
 
+
 ## -remarks
 The <i>DxgkDdiBuildPagingBuffer</i> function is called to build special purpose direct memory access (DMA) buffers that are known as <i>paging buffers</i>. A paging buffer contains an operation that moves the content of portions of allocations:
 
@@ -89,9 +93,9 @@ From a segment of an allocation to system memory.
 
 From system memory to a segment of an allocation.
 
-The display miniport driver must write the appropriate graphics processing unit (GPU) instruction in the provided paging buffer (in the <b>pDmaBuffer</b> member of <a href="display.dxgkarg_buildpagingbuffer">DXGKARG_BUILDPAGINGBUFFER</a>) according to the requested paging operation; and then the driver must return the paging buffer back to the video memory manager (which is part of <i>Dxgkrnl.sys</i>). The GPU scheduler (which is also part of <i>Dxgkrnl.sys</i>) subsequently calls the driver's <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a> function to request that the driver submit the paging buffer as a regular DMA buffer to the GPU. 
+The display miniport driver must write the appropriate graphics processing unit (GPU) instruction in the provided paging buffer (in the <b>pDmaBuffer</b> member of <a href="display.dxgkarg_buildpagingbuffer">DXGKARG_BUILDPAGINGBUFFER</a>) according to the requested paging operation; and then the driver must return the paging buffer back to the video memory manager (which is part of <i>Dxgkrnl.sys</i>). The GPU scheduler (which is also part of <i>Dxgkrnl.sys</i>) subsequently calls the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a> function to request that the driver submit the paging buffer as a regular DMA buffer to the GPU. 
 
-When the driver successfully builds the paging buffer, the driver's <i>DxgkDdiBuildPagingBuffer</i> should update <b>pDmaBuffer</b> to point past the last byte that is written to the paging buffer and then return STATUS_SUCCESS. Because <i>DxgkDdiBuildPagingBuffer</i> can fail only if it runs out of space in the paging buffer, the driver should always verify that the paging buffer has enough space remaining before it writes to the buffer. If not enough space remains in the paging buffer, the driver should return STATUS_GRAPHICS_INSUFFICIENT_DMA_BUFFER. The video memory manager would then acquire a new paging buffer and call the driver's <i>DxgkDdiBuildPagingBuffer</i> function again to fill the new paging buffer according to the requested paging operation. Note that for a given requested paging operation that fills multiple paging buffers, the scheduler calls the driver's <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a> function multiple times for each partial paging buffer to submit each buffer independently. 
+When the driver successfully builds the paging buffer, the driver's <i>DxgkDdiBuildPagingBuffer</i> should update <b>pDmaBuffer</b> to point past the last byte that is written to the paging buffer and then return STATUS_SUCCESS. Because <i>DxgkDdiBuildPagingBuffer</i> can fail only if it runs out of space in the paging buffer, the driver should always verify that the paging buffer has enough space remaining before it writes to the buffer. If not enough space remains in the paging buffer, the driver should return STATUS_GRAPHICS_INSUFFICIENT_DMA_BUFFER. The video memory manager would then acquire a new paging buffer and call the driver's <i>DxgkDdiBuildPagingBuffer</i> function again to fill the new paging buffer according to the requested paging operation. Note that for a given requested paging operation that fills multiple paging buffers, the scheduler calls the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a> function multiple times for each partial paging buffer to submit each buffer independently. 
 
 If <i>DxgkDdiBuildPagingBuffer</i> determines that a paging operation requires more than one paging buffer, the driver can specify information in the <b>MultipassOffset</b> member of <a href="display.dxgkarg_buildpagingbuffer">DXGKARG_BUILDPAGINGBUFFER</a> and can use this information across multiple iterations of the paging operation. The video memory manager initializes the information in <b>MultipassOffset</b> to zero before the first paging operation request and does not modify the information in <b>MultipassOffset</b> between iterations. Therefore, the driver can use <b>MultipassOffset</b> to save the progress between iterations. For example, the driver can store the page number that was last transferred for a paged-based transfer. 
 
@@ -165,11 +169,13 @@ The system's memory manager ensures that the transfer is invisible to the applic
 
 The following code example shows how to use <i>DxgkDdiBuildPagingBuffer</i>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -180,27 +186,32 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
+<dt>D3dkmddi.h</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -217,12 +228,15 @@ PASSIVE_LEVEL
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_patch.md">DxgkDdiPatch</a>
 </dt>
 <dt>
-<a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDXGKDDI_BUILDPAGINGBUFFER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_BUILDPAGINGBUFFER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

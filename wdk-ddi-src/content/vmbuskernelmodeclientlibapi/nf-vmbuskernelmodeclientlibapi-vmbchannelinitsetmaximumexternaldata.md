@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetmaximumexternaldata.htm
 old-project: netvista
 ms.assetid: 558E8162-7B1F-41AB-A04C-113E94C97DB6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbChannelInitSetMaximumExternalData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,9 +40,11 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbChannelInitSetMaximumExternalData</b> function sets the maximum size and chain length of data that is described by a
 packet, but not directly sent in the packet. That is, the maximum size of the
 buffer described by an <b>ExternalDataMdl</b>.  
+
 
 
 ## -syntax
@@ -63,14 +65,17 @@ NTSTATUS VmbChannelInitSetMaximumExternalData(
 A pointer to a Kernel Mode Client Library (KMCL) channel.
 
 
+
 ### -param DataSize [in]
 
 The maximum size of external data.
 
 
+
 ### -param ChainLength [in]
 
 The maximum number of Memory Descriptor Lists (MDLs) in an incoming MDL chain.
+
 
 ## -returns
 <b>VmbChannelInitSetMaximumExternalData</b> can return one of the following status values: 
@@ -93,6 +98,7 @@ The maximum number of Memory Descriptor Lists (MDLs) in an incoming MDL chain.
 that your ring buffers are large enough to send packets that contain
 buffers in the specified limits.
 
+
 ## -remarks
 
 
@@ -101,38 +107,47 @@ buffers in the specified limits.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,6 +158,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

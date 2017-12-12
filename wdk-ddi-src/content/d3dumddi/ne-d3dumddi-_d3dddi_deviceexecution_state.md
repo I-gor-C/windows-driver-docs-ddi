@@ -7,7 +7,7 @@ old-location: display\d3dddi_deviceexecution_state.htm
 old-project: display
 ms.assetid: E81A31B5-E06F-4848-9AC6-8A18E8E97E15
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_DEVICEEXECUTION_STATE, D3DDDI_DEVICEEXECUTION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Indicates the state of the device.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef enum _D3DDDI_DEVICEEXECUTION_STATE {
 
 The device is active.
 
+
 ### -field D3DDDI_DEVICEEXECUTION_RESET
 
 The device has been reset.
+
 
 ### -field D3DDDI_DEVICEEXECUTION_HUNG
 
 The device is still running but has stopped responding (it is "hung").
 
+
 ### -field D3DDDI_DEVICEEXECUTION_STOPPED
 
 The device has stopped.
+
 
 ### -field D3DDDI_DEVICEEXECUTION_ERROR_OUTOFMEMORY
 
 The device has run out of memory.
 
+
 ### -field D3DDDI_DEVICEEXECUTION_ERROR_DMAFAULT
 
 The device has a DMA fault error.
+
 
 ## -remarks
 
@@ -89,22 +96,27 @@ The device has a DMA fault error.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

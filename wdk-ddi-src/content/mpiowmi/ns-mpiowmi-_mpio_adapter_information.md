@@ -7,8 +7,8 @@ old-location: storage\mpio_adapter_information.htm
 old-project: storage
 ms.assetid: bcf159a7-75a5-46aa-897a-2c5eb00f51d8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION
+ms.date: 12/8/2017
+ms.keywords: _MPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The MPIO_ADAPTER_INFORMATION structure contains information that pertains to MPIO's view of a path.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _MPIO_ADAPTER_INFORMATION {
 
 An unsigned 64-bitfield that represents an identifier that is assigned to a particular path. This field will match the PathIdentifier field in the instance(s) of the PDO_INFORMATION class that represent device(s) exposed via this path.
 
+
 ### -field BusNumber
 
 An unsigned 8-bitfield that corresponds to the bus number that is assigned by PCI to the host bus adapter through which this path is exposed.
+
 
 ### -field DeviceNumber
 
 An unsigned 8-bitfield that corresponds to the device number that is assigned by PCI to the host bus adapter through which this path is exposed.
 
+
 ### -field FunctionNumber
 
 An unsigned 8-bitfield that corresponds to the function number that is assigned by PCI to the host bus adapter through which this path is exposed.
+
 
 ### -field Pad
 
 Should be zero.
 
+
 ### -field AdapterName
 
 A string field that returns the friendly name of the host bus adapter through which this path is exposed.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ A string field that returns the friendly name of the host bus adapter through wh
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

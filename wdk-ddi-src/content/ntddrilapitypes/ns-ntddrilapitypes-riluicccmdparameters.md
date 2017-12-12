@@ -7,8 +7,8 @@ old-location: netvista\riluicccmdparameters.htm
 old-project: netvista
 ms.assetid: 02c37c3d-fa5b-4d26-a092-09f6f3dbd46c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILUICCCMDPARAMETERS, *LPRILUICCCMDPARAMETERS, RILUICCCMDPARAMETERS
+ms.date: 12/8/2017
+ms.keywords: RILUICCCMDPARAMETERS, RILUICCCMDPARAMETERS, *LPRILUICCCMDPARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILUICCCMDPARAMETERS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

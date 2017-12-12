@@ -7,13 +7,13 @@ old-location: display\pfnd3d12ddi_calcprivatevideoprocessorsize.htm
 old-project: display
 ms.assetid: F1ED5176-4F50-44DA-96B3-5E133A236461
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
 req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
+req.include-header: 
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -41,10 +41,11 @@ req.irql:
 The <i>pfnCalcPrivateVideoProcessorSize</i> callback function calculates the size of the private video processor.
 
 
+
 ## -prototype
 
 ````
-PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE pfnCalcPrivateVideoProcessorSize;
+PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE_0021 pfnCalcPrivateVideoProcessorSize;
 
 SIZE_T  APIENTRY* pfnCalcPrivateVideoProcessorSize(
              D3D12DDI_HDEVICE                   hDrvDevice,
@@ -60,22 +61,26 @@ SIZE_T  APIENTRY* pfnCalcPrivateVideoProcessorSize(
 
 The handler of a device.
 
+
 ### -param pArgs [in]
 
 The arguments used to create a video processor.
 
+
 ## -remarks
 The  runtime allocates memory for storing the driver CPU object that represents the video processor.  This method is used to calculate the driver object size.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
+<dt>D3d12umddi.h</dt>
 </dl>
 </td>
 </tr>

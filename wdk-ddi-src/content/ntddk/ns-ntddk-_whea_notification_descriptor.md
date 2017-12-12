@@ -7,7 +7,7 @@ old-location: whea\whea_notification_descriptor.htm
 old-project: whea
 ms.assetid: 5b228bb8-dd31-484d-b87a-ec7fed433a4a
 ms.author: windowsdriverdev
-ms.date: 12/5/2017
+ms.date: 12/8/2017
 ms.keywords: _WHEA_NOTIFICATION_DESCRIPTOR, *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure describes the notification mechanism that is used by an error source.
+
 
 
 ## -syntax
@@ -94,6 +95,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 ### -field Type
 
 The type of notification mechanism that is used by the error source. This can be one of the following possible values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -106,6 +108,7 @@ The type of notification mechanism that is used by the error source. This can be
 </td>
 <td width="60%">
 The error source notifies the LLHEH for the error source by means of an external interrupt.
+
 </td>
 </tr>
 <tr>
@@ -115,6 +118,7 @@ The error source notifies the LLHEH for the error source by means of an external
 </td>
 <td width="60%">
 The error source notifies the LLHEH for the error source by means of a local interrupt.
+
 </td>
 </tr>
 <tr>
@@ -124,6 +128,7 @@ The error source notifies the LLHEH for the error source by means of a local int
 </td>
 <td width="60%">
 The error source notifies the LLHEH for the error source by means of a nonmaskable interrupt (NMI).
+
 </td>
 </tr>
 <tr>
@@ -133,6 +138,7 @@ The error source notifies the LLHEH for the error source by means of a nonmaskab
 </td>
 <td width="60%">
 The low-level hardware error handler (LLHEH)for the error source must periodically poll the error status registers to check for an error condition.
+
 </td>
 </tr>
 <tr>
@@ -142,18 +148,22 @@ The low-level hardware error handler (LLHEH)for the error source must periodical
 </td>
 <td width="60%">
 The error source notifies the LLHEH for the error source by means of a service control interrupt (SCI).
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Length
 
 The size, in bytes, of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure.
 
+
 ### -field Flags
 
 A WHEA_NOTIFICATION_FLAGS union that indicates which of the members of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure can be written to by the operating system. The WHEA_NOTIFICATION_FLAGS union is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -186,6 +196,7 @@ A WHEA_NOTIFICATION_FLAGS union that indicates which of the members of the <b>WH
 </td>
 <td width="60%">
 A USHORT representation of the contents of the WHEA_NOTIFICATION_FLAGS union.
+
 </td>
 </tr>
 <tr>
@@ -195,6 +206,7 @@ A USHORT representation of the contents of the WHEA_NOTIFICATION_FLAGS union.
 </td>
 <td width="60%">
 A single bit that indicates that the operating system can write to the <b>u.</b><i>xxx</i><b>.ErrorThreshold</b> members of the WHEA_NOTIFICATION_DESCRIPTOR structure.
+
 </td>
 </tr>
 <tr>
@@ -204,6 +216,7 @@ A single bit that indicates that the operating system can write to the <b>u.</b>
 </td>
 <td width="60%">
 A single bit that indicates that the operating system can write to the <b>u.</b><i>xxx</i><b>.ErrorThresholdWindow</b> members of the WHEA_NOTIFICATION_DESCRIPTOR structure.
+
 </td>
 </tr>
 <tr>
@@ -213,6 +226,7 @@ A single bit that indicates that the operating system can write to the <b>u.</b>
 </td>
 <td width="60%">
 A single bit that indicates that the operating system can write to the <b>u.</b><i>xxx</i><b>.PollInterval</b> members of the WHEA_NOTIFICATION_DESCRIPTOR structure.
+
 </td>
 </tr>
 <tr>
@@ -222,6 +236,7 @@ A single bit that indicates that the operating system can write to the <b>u.</b>
 </td>
 <td width="60%">
 Reserved for system use.
+
 </td>
 </tr>
 <tr>
@@ -231,6 +246,7 @@ Reserved for system use.
 </td>
 <td width="60%">
 A single bit that indicates that the operating system can write to the <b>u.</b><i>xxx</i><b>.SwitchToPollingThreshold</b> members of the WHEA_NOTIFICATION_DESCRIPTOR structure.
+
 </td>
 </tr>
 <tr>
@@ -240,22 +256,27 @@ A single bit that indicates that the operating system can write to the <b>u.</b>
 </td>
 <td width="60%">
 A single bit that indicates that the operating system can write to the <b>u.</b><i>xxx</i><b>.SwitchToPollingWindow</b> members of the WHEA_NOTIFICATION_DESCRIPTOR structure.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field u
 
 A union of structures that are specific to each different type of notification mechanism. 
+
 
 ### -field Polled
 
 A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_POLLED.
 
+
 ### -field PollInterval
 
 The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition.
+
 </dd>
 </dl>
 
@@ -263,29 +284,36 @@ The interval, in milliseconds, that the LLHEH for the error source should poll t
 
 A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT.
 
+
 ### -field PollInterval
 
 The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.
+
 
 ### -field Vector
 
 The interrupt vector for the error source.
 
+
 ### -field SwitchToPollingThreshold
 
 The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.
+
 
 ### -field SwitchToPollingWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.
 
+
 ### -field ErrorThreshold
 
 The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.
 
+
 ### -field ErrorThresholdWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.
+
 </dd>
 </dl>
 
@@ -293,29 +321,36 @@ The window of time, in seconds, in which the number of errors specified by the <
 
 A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT.
 
+
 ### -field PollInterval
 
 The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.
+
 
 ### -field Vector
 
 The interrupt vector for the error source.
 
+
 ### -field SwitchToPollingThreshold
 
 The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.
+
 
 ### -field SwitchToPollingWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.
 
+
 ### -field ErrorThreshold
 
 The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.
 
+
 ### -field ErrorThresholdWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.
+
 </dd>
 </dl>
 
@@ -323,29 +358,36 @@ The window of time, in seconds, in which the number of errors specified by the <
 
  A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_SCI.
 
+
 ### -field PollInterval
 
 The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.
+
 
 ### -field Vector
 
 The interrupt vector for the error source.
 
+
 ### -field SwitchToPollingThreshold
 
 The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.
+
 
 ### -field SwitchToPollingWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.
 
+
 ### -field ErrorThreshold
 
 The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.
 
+
 ### -field ErrorThresholdWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.
+
 </dd>
 </dl>
 
@@ -353,29 +395,36 @@ The window of time, in seconds, in which the number of errors specified by the <
 
 A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_NMI.
 
+
 ### -field PollInterval
 
 The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.
+
 
 ### -field Vector
 
 The interrupt vector for the error source.
 
+
 ### -field SwitchToPollingThreshold
 
 The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.
+
 
 ### -field SwitchToPollingWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.
 
+
 ### -field ErrorThreshold
 
 The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.
 
+
 ### -field ErrorThresholdWindow
 
 The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.
+
 </dd>
 </dl>
 </dd>
@@ -384,20 +433,24 @@ The window of time, in seconds, in which the number of errors specified by the <
 ## -remarks
 A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="whea.whea_generic_error_descriptor">WHEA_GENERIC_ERROR_DESCRIPTOR</a> and <a href="whea.whea_xpf_cmc_descriptor">WHEA_XPF_CMC_DESCRIPTOR</a> structures.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+
 
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -417,5 +470,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_NOTIFICATION_DESCRIPTOR structure%20 RELEASE:%20(12/5/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_NOTIFICATION_DESCRIPTOR structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

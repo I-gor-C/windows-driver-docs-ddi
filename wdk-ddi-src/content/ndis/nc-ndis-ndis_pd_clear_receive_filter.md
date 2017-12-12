@@ -7,7 +7,7 @@ old-location: netvista\ndispdclearreceivefilter.htm
 old-project: netvista
 ms.assetid: C91F2E5D-C37F-48A9-9AE0-F5A8C5D8F54D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 
 
+
 ## -prototype
 
 ````
@@ -63,8 +64,10 @@ void NdisPDClearReceiveFilter(
 
 A handle to a PD platform filter.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 After this function returns, it's guaranteed that no more newly arriving packet will match this filter. However, there may still be in-flight packets that have already matched this filter and they are on their way to being placed into the target receive queue.
@@ -79,27 +82,33 @@ The <b>NDIS_PD_CLEAR_RECEIVE_FILTER</b> function type is defined in the Ntddndis
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -110,9 +119,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

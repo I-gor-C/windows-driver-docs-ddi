@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetcompanioneventcallbacks.htm
 old-project: wdf
 ms.assetid: 7320238d-0c7f-423c-8de7-2b22d02d77bd
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDeviceInitSetCompanionEventCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.product: Windows 10 or later.
 			For internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ VOID WdfDeviceInitSetCompanionEventCallbacks(
 ## -returns
 This method does not return a value.
 
+
 ## -remarks
 
 
@@ -72,14 +74,17 @@ This method does not return a value.
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -90,9 +95,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

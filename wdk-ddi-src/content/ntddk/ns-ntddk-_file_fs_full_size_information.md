@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 4a37bfed-cf8e-4c97-a9fe-a44d910bed92
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FILE_FS_FULL_SIZE_INFORMATION, *PFILE_FS_FULL_SIZE_INFORMATION, FILE_FS_FULL_SIZE_INFORMATION
+ms.keywords: _FILE_FS_FULL_SIZE_INFORMATION, FILE_FS_FULL_SIZE_INFORMATION, *PFILE_FS_FULL_SIZE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FILE_FS_FULL_SIZE_INFORMATION structure is used to query sector size information for a file system volume. 
 
 
+
 ## -syntax
 
 ````
@@ -59,24 +60,31 @@ typedef struct _FILE_FS_FULL_SIZE_INFORMATION {
 ### -field TotalAllocationUnits
 
 Total number of allocation units on the volume that are available to the user associated with the calling thread. 
+
 <b>Microsoft Windows 2000 and later:</b> If per-user quotas are in use, this value may be less than the total number of allocation units on the disk. 
+
 
 ### -field CallerAvailableAllocationUnits
 
 Total number of free allocation units on the volume that are available to the user associated with the calling thread. 
+
 <b>Windows 2000 and later:</b> If per-user quotas are in use, this value may be less than the total number of free allocation units on the disk. 
+
 
 ### -field ActualAvailableAllocationUnits
 
 Total number of free allocation units on the volume. 
 
+
 ### -field SectorsPerAllocationUnit
 
 Number of sectors in each allocation unit. 
 
+
 ### -field BytesPerSector
 
 Number of bytes in each sector. 
+
 
 ## -remarks
 This information can be queried in either of the following ways: 
@@ -91,11 +99,13 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to <a href
 
 This structure must be aligned on a LONGLONG (8-byte) boundary. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +128,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_FULL_SIZE_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

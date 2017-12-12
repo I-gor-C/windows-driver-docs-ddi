@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_orientation.htm
 old-project: display
 ms.assetid: 16e7d91c-04de-4a8c-97c2-c500d0d3697d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_MONITOR_ORIENTATION, D3DKMDT_MONITOR_ORIENTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The D3DKMDT_MONITOR_ORIENTATION enumeration is used to describe the orientation (rotation angle) of a connected external display device.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum _D3DKMDT_MONITOR_ORIENTATION {
 
 Indicates that a variable of type D3DKMDT_MONITOR_ORIENTATION has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_MO_0DEG
 
 Indicates that the display device has not been rotated from its default orientation.
+
 
 ### -field D3DKMDT_MO_90DEG
 
 Indicates that the display device has been rotated 90 degrees clockwise from its default orientation.
 
+
 ### -field D3DKMDT_MO_180DEG
 
 Indicates that the display device has been rotated 180 degrees clockwise from its default orientation.
 
+
 ### -field D3DKMDT_MO_270DEG
 
 Indicates that the display device has been rotated 270 degrees clockwise from its default orientation.
+
 
 ## -remarks
 
@@ -84,14 +90,17 @@ Indicates that the display device has been rotated 270 degrees clockwise from it
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

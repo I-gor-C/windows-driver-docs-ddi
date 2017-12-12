@@ -7,7 +7,7 @@ old-location: storage\storage_device_io_capability_descriptor.htm
 old-project: storage
 ms.assetid: 98377F8F-62C8-4E8F-838B-A63DC63E4A0C
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, *PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The output buffer for the StorageDeviceIoCapabilityProperty as defined in <a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR {
 
 The version of this structure. The Size serves as the version.
 
+
 ### -field Size
 
 The size of this structure.
+
 
 ### -field LunMaxIoCount
 
 The logical unit number (LUN) max outstanding I/O count.
 
+
 ### -field AdapterMaxIoCount
 
 The adapter max outstanding I/O count.
+
 
 ## -remarks
 
@@ -79,22 +84,27 @@ The adapter max outstanding I/O count.
 <tr>
 <th width="30%">
 Client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

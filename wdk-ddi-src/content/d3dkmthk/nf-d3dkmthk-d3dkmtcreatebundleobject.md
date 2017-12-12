@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreatebundleobject.htm
 old-project: display
 ms.assetid: c4d62ccf-606b-457e-a239-1b5189e42657
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTCreateBundleObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
             Used to create a bundle object.
 
 
+
 ## -syntax
 
 ````
@@ -58,8 +59,10 @@ NTSTATUS  D3DKMTCreateBundleObject(
 
 Holds information to create a bundle object.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the call has been successfully completed.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ Returns STATUS_SUCCESS if the call has been successfully completed.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,8 +103,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

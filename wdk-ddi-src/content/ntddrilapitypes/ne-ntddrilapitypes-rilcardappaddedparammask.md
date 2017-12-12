@@ -7,7 +7,7 @@ old-location: netvista\rilcardappaddedparammask.htm
 old-project: netvista
 ms.assetid: 6097b40d-2f86-4f87-bf57-191371ec943d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILCARDAPPADDEDPARAMMASK, RILCARDAPPADDEDPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef enum _RILCARDAPPADDEDPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

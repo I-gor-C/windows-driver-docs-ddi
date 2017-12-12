@@ -7,7 +7,7 @@ old-location: print\ipartfont2.htm
 old-project: print
 ms.assetid: AB1EFF6E-4FF5-413E-A4E4-3EEC47CDEBD4
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: DrvPopulateFilterServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,12 +41,14 @@ req.irql:
 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPartFont2</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IPartFont2</b> also has these types of members:
 
 The <b>IPartFont2</b> interface has these methods.
 
  
+
 
 ## -members
 The <b>IPartFont2</b> interface has these methods.
@@ -61,6 +63,7 @@ The <b>IPartFont2</b> interface has these methods.
 </tr>
 </table> 
 
+
 ## -remarks
 
 
@@ -69,6 +72,7 @@ The <b>IPartFont2</b> interface has these methods.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

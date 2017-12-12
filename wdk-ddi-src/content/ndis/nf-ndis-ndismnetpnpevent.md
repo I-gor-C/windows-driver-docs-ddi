@@ -7,7 +7,7 @@ old-location: netvista\ndismnetpnpevent.htm
 old-project: netvista
 ms.assetid: cbb097c1-dd20-4c6d-b23a-1e7683ac3e94
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMNetPnPEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ NDIS miniport drivers (and intermediate drivers that are registered as miniport 
   or Power Management event or propagate it to overlying drivers.
 
 
+
 ## -syntax
 
 ````
@@ -63,12 +64,14 @@ An NDIS handle which NDIS provided at the
      This handle identifies the miniport adapter that is affected by the event. If the caller is an
      intermediate driver, this is the handle of the virtual miniport.
 
+
 ### -param NetPnPEvent [in]
 
 A pointer to a 
      <a href="netvista.net_pnp_event_notification">
      NET_PNP_EVENT_NOTIFICATION</a> structure, which describes the network Plug and Play event, NDIS PnP
      event, or Power Management event.
+
 
 ## -returns
 <b>NdisMNetPnPEvent</b> can return the following:
@@ -113,6 +116,7 @@ The return value is significant only when the propagated event is a
 If the event is 
       <b>NetEventPortActivation</b> and the call fails, the caller should not use the associated ports in
       receive indications or status indications.
+
 
 ## -remarks
 Any miniport driver can call 
@@ -178,11 +182,13 @@ For all other propagated events, the intermediate driver's
     <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function should propagate the status value that is returned by 
     <b>NdisMNetPnPEvent</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -193,14 +199,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -211,6 +220,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -221,14 +231,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>, <a href="devtest.ndis_ndismnetpnpeventinoidrequest">NdisMNetPnPEventInOIDRequest</a>
@@ -252,5 +265,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMNetPnPEvent function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMNetPnPEvent function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

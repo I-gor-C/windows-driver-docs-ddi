@@ -7,7 +7,7 @@ old-location: display\d3dkmt-extractbundleobject.htm
 old-project: display
 ms.assetid: 85112ddb-47e6-4874-bd64-a7e4d7ca0fd3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_EXTRACTBUNDLEOBJECT, D3DKMT_EXTRACTBUNDLEOBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to extract the bundle object.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _D3DKMT_EXTRACTBUNDLEOBJECT {
 
 The NT bundle handle.
 
+
 ### -field cObjects
 
 The number of the DXGK object to be unbundled.
+
 
 ### -field pdwDesiredAccess
 
 The desired access for each NT handle for DXGK objects.
 
+
 ### -field phNtHandles
 
 The pointer to an array of NT handles for each DXGK object.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ The pointer to an array of NT handles for each DXGK object.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipv4_address.htm
 old-project: netvista
 ms.assetid: D75EAC9E-8E65-437E-83AA-59B422527C6C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_IPV4_ADDRESS structure represents an IPV4 address of a PDP context.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WWAN_IPV4_ADDRESS {
 
 The length of the prefix or network part of the IP address of the PDP context.
 
+
 ### -field IPV4Address[4]
 
 The IPV4 address of the PDP context.
+
 
 ## -remarks
 
@@ -70,14 +73,17 @@ The IPV4 address of the PDP context.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 8.1 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

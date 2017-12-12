@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 70591143-f429-4a6e-8f2a-cc1082f40f6e
 ms.author: windowsdriverdev
 ms.date: 11/13/2017
-ms.keywords: _WINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT, *PWINBIO_REGISTERED_FORMAT
+ms.keywords: _WINBIO_REGISTERED_FORMAT, *PWINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WINBIO_REGISTERED_FORMAT structure specifies a biometric data format.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WINBIO_REGISTERED_FORMAT {
 
 Specifies format owner.
 
+
 ### -field Type
 
 Specifies format type.
+
 
 ## -remarks
 For Windows, the format owner is defined as follows:
@@ -71,19 +74,23 @@ WBDI drivers for fingerprint sensors must support the Owner and Type for the Win
 
 No format owner or type are defined as follows:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

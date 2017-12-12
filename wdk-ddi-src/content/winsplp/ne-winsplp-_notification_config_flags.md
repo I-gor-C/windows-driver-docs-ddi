@@ -7,7 +7,7 @@ old-location: print\notification_config_flags.htm
 old-project: print
 ms.assetid: B53AB706-D780-4E29-A531-51D3A9041D24
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _NOTIFICATION_CONFIG_FLAGS, NOTIFICATION_CONFIG_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -76,6 +77,7 @@ typedef enum _NOTIFICATION_CONFIG_FLAGS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

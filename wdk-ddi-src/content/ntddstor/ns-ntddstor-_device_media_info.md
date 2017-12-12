@@ -7,8 +7,8 @@ old-location: storage\device_media_info.htm
 old-project: storage
 ms.assetid: 87906511-7bcb-4f4d-9383-44b0501536e3
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO
+ms.date: 12/8/2017
+ms.keywords: _DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 A storage class driver returns an array of <b>DEVICE_MEDIA_INFO</b> structures, embedded in a <a href="storage.get_media_types">GET_MEDIA_TYPES</a> structure, in response to an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> device-control request.
+
 
 
 ## -syntax
@@ -90,29 +91,36 @@ typedef struct _DEVICE_MEDIA_INFO {
 
 Describes a nonremovable (fixed) disk.
 
+
 ### -field Cylinders
 
 Specifies the number of cylinders on this disk. 
+
 
 ### -field MediaType
 
 Specifies a <a href="storage.media_type">MEDIA_TYPE</a> of <b>FixedMedia</b>. 
 
+
 ### -field TracksPerCylinder
 
 Specifies the number of tracks per cylinder.
+
 
 ### -field SectorsPerTrack
 
 Specifies the number of sectors per track.
 
+
 ### -field BytesPerSector
 
 Specifies the number of bytes per sector.
 
+
 ### -field NumberMediaSides
 
 Specifies the number of sides of the disk that can contain data: either 1 for one-sided media or 2 for two-sided media.
+
 
 ### -field MediaCharacteristics
 
@@ -132,33 +140,41 @@ Specifies the number of sides of the disk that can contain data: either 1 for on
 
 Describes a removable (nonfixed) disk.
 
+
 ### -field Cylinders
 
 Specifies the number of cylinders on this disk. 
+
 
 ### -field MediaType
 
 Specifies a <a href="storage.media_type">MEDIA_TYPE</a> or <a href="storage.storage_media_type">STORAGE_MEDIA_TYPE</a> value that indicates the type of removable disk. 
 
+
 ### -field TracksPerCylinder
 
 Specifies the number of tracks per cylinder.
+
 
 ### -field SectorsPerTrack
 
 Specifies the number of sectors per track.
 
+
 ### -field BytesPerSector
 
 Specifies the number of bytes per sector.
+
 
 ### -field NumberMediaSides
 
 Specifies the number of sides of the disk that can contain data: 1 for one-sided media or 2 for two-sided media.
 
+
 ### -field MediaCharacteristics
 
 Specifies characteristics of the disk, indicated by MEDIA_<i>XXX</i> flags ORed together. For a list of these flags, see the <b>DeviceSpecific.DiskInfo.MediaCharacteristics</b> member of the <b>DeviceSpecific.DiskInfo</b> structure.
+
 </dd>
 </dl>
 
@@ -166,21 +182,26 @@ Specifies characteristics of the disk, indicated by MEDIA_<i>XXX</i> flags ORed 
 
 Describes a tape.
 
+
 ### -field MediaType
 
 Specifies a <a href="storage.storage_media_type">STORAGE_MEDIA_TYPE</a> value that indicates the type of tape described in this structure. 
+
 
 ### -field MediaCharacteristics
 
 Specifies characteristics of the tape, indicated by MEDIA_<i>XXX</i> flags ORed together. For a list of these flags, see the <b>DeviceSpecific.DiskInfo.MediaCharacteristics</b> member of the <b>DeviceSpecific.DiskInfo</b> structure.
 
+
 ### -field CurrentBlockSize
 
 Specifies the current block size, in bytes.
 
+
 ### -field BusType
 
 Specifies a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that indicates the bus type.
+
 
 ### -field BusSpecificData
 
@@ -189,13 +210,16 @@ Specifies a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a
 
 Specifies bus-specific information from mode page data that describes the medium supported by the tape drive. Values for other bus types will be supplied in a later release.
 
+
 ### -field MediumType
 
 Specifies the SCSI-specific medium type.
 
+
 ### -field DensityCode
 
 Specifies the SCSI-specific current operating density for read/write operations.
+
 </dd>
 </dl>
 </dd>
@@ -210,11 +234,13 @@ This structure is used by a storage driver to indicate the types of media suppor
 
 The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for each medium type supported by the device, embedded in a <a href="storage.get_media_types">GET_MEDIA_TYPES</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -234,5 +260,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_MEDIA_INFO structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_MEDIA_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

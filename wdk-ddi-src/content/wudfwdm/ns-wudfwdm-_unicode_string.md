@@ -7,7 +7,7 @@ old-location: kernel\unicode_string.htm
 old-project: kernel
 ms.assetid: b02f29a9-1049-4e29-aac3-72bf0c70a21e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _UNICODE_STRING, UNICODE_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UNICODE_STRING</b> structure is used to define Unicode strings.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _UNICODE_STRING {
 
 The length, in bytes, of the string stored in <b>Buffer</b>.
 
+
 ### -field MaximumLength
 
 The length, in bytes, of <b>Buffer</b>.
 
+
 ### -field Buffer
 
 Pointer to a buffer used to contain a string of wide characters.
+
 
 ## -remarks
 The <b>UNICODE_STRING</b> structure is used to pass Unicode strings. Use <a href="kernel.rtlunicodestringinit">RtlUnicodeStringInit</a> or   <a href="kernel.rtlunicodestringinitex">RtlUnicodeStringInitEx</a> to initialize a <b>UNICODE_STRING</b> structure.
@@ -74,11 +78,13 @@ If the string is null-terminated, <b>Length</b> does not include the trailing nu
 
 The <b>MaximumLength</b> is used to indicate the length of <b>Buffer</b> so that if the string is passed to a conversion routine such as <a href="kernel.rtlansistringtounicodestring">RtlAnsiStringToUnicodeString</a> the returned string does not exceed the buffer size.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +122,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20UNICODE_STRING structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20UNICODE_STRING structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

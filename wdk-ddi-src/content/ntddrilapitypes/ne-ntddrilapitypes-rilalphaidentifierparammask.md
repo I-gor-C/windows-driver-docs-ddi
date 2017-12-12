@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifierparammask.htm
 old-project: netvista
 ms.assetid: 33f51fb2-3308-4e24-925a-b17e117b18b6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILALPHAIDENTIFIERPARAMMASK, RILALPHAIDENTIFIERPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef enum _RILALPHAIDENTIFIERPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <b>RxDriverEntry</b> is called by a monolithic network mini-redirector driver from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine to initialize the RDBSS static library.
+
 For non-monolithic drivers, this initialization routine is equivalent to the <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine of the RDBSS.SYS device driver.
+
 
 
 ## -syntax
@@ -59,10 +61,13 @@ NTSTATUS RxDriverEntry(
 
 A pointer to the driver object of the network mini-redirector driver. Each driver receives a pointer to its driver object in a parameter to its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. This driver object will be used to create the device object for the network mini-redirector driver. 
 
+
 ### -param RegistryPath [in]
 
 A pointer to a Unicode string containing the registry path to where driver parameters and other configuration data are stored. This registry path is normally located under a services entry for the specific network mini-redirector located under the following key:
+
 HKLM\System\CurrentControlSet\Services
+
 
 ## -returns
 <b>RxDriverEntry</b> returns STATUS_SUCCESS on success or one of the following error values on failure: 
@@ -71,6 +76,7 @@ HKLM\System\CurrentControlSet\Services
 </dl>The initialization of RDBSS was started, but an error occurred. This error code is an internal RDBSS enum with a value of 5.
 
  
+
 
 ## -remarks
 A monolithic network mini-redirector driver which is linked statically with RDBSSLIB.LIB must call <b>RxDriverEntry</b> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine to initialize the copy of the RDBSSLIB library linked with the driver. <b>RxDriverEntry</b> must be called by a monolithic network mini-redirector driver before any other RDBSS routines are called. 
@@ -142,11 +148,13 @@ On Windows Server 2003, a registry value to set ReadAheadGranularity is not expo
 
 For a non-monolithic network mini-redirector driver (the Microsoft SMB redirector), the RDBSS.SYS device driver is initialized in its own <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine when loaded which internally calls <b>RxDriverEntry</b>. On a monolithic driver, the <b>RxDriverEntry</b> routine is exported from the RDBSSLIB.LIB static library and must be called explicitly by the network mini-redirector. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -157,6 +165,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -167,9 +176,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -205,5 +216,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDriverEntry routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

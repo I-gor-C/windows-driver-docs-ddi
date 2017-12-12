@@ -7,8 +7,8 @@ old-location: netvista\ndis_request_type.htm
 old-project: netvista
 ms.assetid: c4352eab-8bbd-429e-93ad-190372d29f2c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_REQUEST_TYPE, *PNDIS_REQUEST_TYPE, NDIS_REQUEST_TYPE
+ms.date: 12/8/2017
+ms.keywords: _NDIS_REQUEST_TYPE, NDIS_REQUEST_TYPE, *PNDIS_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NDIS_REQUEST_TYPE enumeration identifies the request type in an OID request.
 
 
+
 ## -syntax
 
 ````
@@ -69,6 +70,7 @@ typedef enum _NDIS_REQUEST_TYPE {
 A query-information request. For certain requests, NDIS satisfies the request. Otherwise,
      NDIS forwards such requests to the underlying driver's 
      <i>MiniportOidRequest</i> function. This type of request can originate in a user-mode application, filter module, or protocol driver.
+
 <div class="alert"><b>Note</b>  Drivers should treat <b>NdisRequestQueryInformation</b> and <b>NdisRequestQueryStatistics</b> queries identically.</div>
 <div> </div>
 
@@ -77,11 +79,13 @@ A query-information request. For certain requests, NDIS satisfies the request. O
 A set-information request. NDIS forwards such a request to the underlying driver's 
      <i>MiniportOidRequest</i> function.
 
+
 ### -field NdisRequestQueryStatistics
 
 A query-statistics request. For certain requests, NDIS satisfies the request. Otherwise,
      NDIS forwards such requests to the underlying driver's 
      <i>MiniportOidRequest</i> function. This type of request can originate in a user-mode application, filter module, or protocol driver.
+
 <div class="alert"><b>Note</b>  Drivers should treat <b>NdisRequestQueryInformation</b> and <b>NdisRequestQueryStatistics</b> queries identically.</div>
 <div> </div>
 
@@ -89,60 +93,74 @@ A query-statistics request. For certain requests, NDIS satisfies the request. Ot
 
 This type is obsolete.
 
+
 ### -field NdisRequestClose
 
 This type is obsolete.
+
 
 ### -field NdisRequestSend
 
 This type is obsolete.
 
+
 ### -field NdisRequestTransferData
 
 This type is obsolete.
+
 
 ### -field NdisRequestReset
 
 This type is obsolete.
 
+
 ### -field NdisRequestGeneric1
 
 A request that is specific to the type of the miniport driver.
+
 
 ### -field NdisRequestGeneric2
 
 A request that is specific to the type of the miniport driver.
 
+
 ### -field NdisRequestGeneric3
 
 A request that is specific to the type of the miniport driver.
 
+
 ### -field NdisRequestGeneric4
 
 A request that is specific to the type of the miniport driver.
+
 
 ### -field NdisRequestMethod
 
 A method request. NDIS forwards such a request to the underlying driver's 
      <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a> function.
 
+
 ## -remarks
 The NDIS_REQUEST_TYPE enumeration is used in the 
     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,5 +180,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_REQUEST_TYPE enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_REQUEST_TYPE enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

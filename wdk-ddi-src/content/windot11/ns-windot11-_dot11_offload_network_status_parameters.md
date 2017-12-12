@@ -7,8 +7,8 @@ old-location: netvista\dot11_offload_network_status_parameters.htm
 old-project: netvista
 ms.assetid: 4A911BFF-5515-4E51-953D-86CECA123DA0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, *PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS
+ms.date: 12/8/2017
+ms.keywords: _DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, *PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -55,6 +55,7 @@ typedef struct _DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS {
 ### -field Header
 
 The type, revision, and size of the DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -75,9 +76,11 @@ The type, revision, and size of the DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS stru
 </table>
  
 
+
 ### -field Status
 
 This must be STATUS_SUCCESS.
+
 
 ## -remarks
 
@@ -87,14 +90,17 @@ This must be STATUS_SUCCESS.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

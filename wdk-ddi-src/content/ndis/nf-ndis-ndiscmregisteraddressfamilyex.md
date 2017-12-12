@@ -7,7 +7,7 @@ old-location: netvista\ndiscmregisteraddressfamilyex.htm
 old-project: netvista
 ms.assetid: 8890bf31-f2c7-48b0-926d-8931893ede86
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisCmRegisterAddressFamilyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   CoNDIS drivers.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ A handle that NDIS provided at the
      <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function. This handle
      identifies the binding to associate with the AF.
 
+
 ### -param AddressFamily [in]
 
 A pointer to a 
@@ -69,11 +71,13 @@ A pointer to a
      the call manager and the AF that it supports for the binding that 
      <i>NdisBindingHandle</i> specifies.
      
+
 The pointer for 
      <i>AddressFamily</i> becomes an input parameter to the 
      <a href="..\ndis\nc-ndis-protocol_co_af_register_notify.md">
      ProtocolCoAfRegisterNotify</a> functions of all of the clients that are bound to the same CoNDIS
      miniport adapter.
+
 
 ## -returns
 <b>NdisCmRegisterAddressFamilyEx</b> can return any of the following:
@@ -104,6 +108,7 @@ Another call manager has already registered the specified AF.
 The caller's binding is being closed.
 
  
+
 
 ## -remarks
 NDIS stand-alone call managers, which register as NDIS protocol drivers by calling the 
@@ -141,11 +146,13 @@ When a call manager's
     ProtocolCoAfRegisterNotify</a> functions of all of the clients that are bound to the same miniport
     adapter.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -156,14 +163,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -174,6 +184,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -184,14 +195,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
@@ -222,5 +236,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterAddressFamilyEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterAddressFamilyEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

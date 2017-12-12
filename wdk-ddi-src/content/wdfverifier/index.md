@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfverifier.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)

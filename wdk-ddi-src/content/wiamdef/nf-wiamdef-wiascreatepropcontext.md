@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasCreatePropContext </b>function allocates a property context to indicate which of an item's properties are being changed by the application.
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,30 @@ HRESULT _stdcall wiasCreatePropContext(
 
 Specifies the total number of PROPSPEC structures in the <i>pPropSpec</i> array.
 
+
 ### -param pPropSpec [in]
 
 Pointer to the first element of an array of PROPSPEC structures identifying which properties are changing.
+
 
 ### -param cProps 
 
 Specifies the number of property identifiers stored in this context.
 
+
 ### -param pProps [in, optional]
 
 Pointer to the first element of an array of property identifiers that indicate the properties to put into this property context.
+
 
 ### -param pContext [in]
 
 Pointer to a <a href="image.wia_property_context">WIA_PROPERTY_CONTEXT</a> structure that contains a property context.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).
+
 
 ## -remarks
 This function allocates a property context and fills in its values. This function is generally used in <a href="image.wiasvalidateitemproperties">wiasValidateItemProperties</a> where the properties written by the application are validated.
@@ -113,11 +120,13 @@ WIA_IPA_TYMED
 
 WIA_IPA_FORMAT
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -128,14 +137,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +158,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +169,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -178,5 +192,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasCreatePropContext function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_protocol_offload.htm
 old-project: netvista
 ms.assetid: 1ae68e5c-f9ea-4454-b015-82e3af0f7ccd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD, NDIS_PM_PROTOCOL_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure specifies parameters for a low power protocol offload to a
   network adapter.
+
 
 
 ## -syntax
@@ -90,9 +91,11 @@ The
      <b>Revision</b> member to NDIS_PM_PROTOCOL_OFFLOAD_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_PROTOCOL_OFFLOAD_REVISION_1.
 
+
 ### -field Flags
 
 A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
+
 
 ### -field Priority
 
@@ -104,17 +107,22 @@ A ULONG value that contains the priority of the protocol offload. If an overlyin
      
 
 
+
+
 ### -field NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_LOWEST
 
 Specifies the lowest priority protocol offload.
+
 
 ### -field NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_NORMAL
 
 Specifies a normal priority protocol offload.
 
+
 ### -field NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_HIGHEST
 
 Specifies the highest priority protocol offload.
+
 </dd>
 </dl>
 
@@ -124,11 +132,13 @@ An
      <a href="netvista.ndis_pm_protocol_offload_type">
      NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a> value that contains the type of protocol offload.
 
+
 ### -field FriendlyName
 
 An 
      <a href="netvista.ndis_pm_counted_string">NDIS_PM_COUNTED_STRING</a> structure
      that contains the user-readable description of the low power protocol offload.
+
 
 ### -field ProtocolOffloadId
 
@@ -138,6 +148,7 @@ A ULONG value that contains an NDIS-provided value that identifies the offloaded
      request down to the underlying NDIS drivers or completes the request to the overlying driver, NDIS sets 
      <b>ProtocolOffloadId</b> to a value that is unique among the protocol offloads on a network adapter.
 
+
 ### -field NextProtocolOffloadOffset
 
 A ULONG value that contains an offset, in bytes. The 
@@ -146,38 +157,47 @@ A ULONG value that contains an offset, in bytes. The
      InformationBuffer) of the next <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure in the list. If 
      <b>NextProtocolOffloadOffset</b> is zero, the current structure is the last structure in the list.
 
+
 ### -field ProtocolOffloadParameters
 
 A union that contains the following member structures:
+
 
 ### -field IPv4ARPParameters
 
 A structure that contains IPv4 ARP parameters. This structure contains the following
       members:
 
+
 ### -field Flags
 
 A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
+
 
 ### -field RemoteIPv4Address
 
 A <b>UCHAR</b> array that contains an optional IPv4 address. This address represents the Source Protocol
         Address (SPA) field of the ARP request.
+
 If the incoming ARP request has an SPA value that matches this IPv4 address, the network adapter sends an ARP
         response when it is in a low power state. If this member is zero, the network adapter should respond to ARP
         requests from any remote IPv4 address.
+
 For more information about the ARP protocol, see RFC 826.
+
 
 ### -field HostIPv4Address
 
 A <b>UCHAR</b> array that contains the IPv4 address. When it sends the ARP response, the network adapter uses this
        member for the SPA field of the response.
 
+
 ### -field MacAddress
 
 A <b>UCHAR</b> array that contains a media access control (MAC) address. The network adapter uses this MAC address
        for the Source Hardware Address (SHA) field of the ARP response packet that it generates.
        
+
 <div class="alert"><b>Note</b>  When it sends an ARP response, the network adapter must always use this MAC address in the
        ARP payload. However, it should use the current MAC address of the network adapter as the source address in the
        MAC header.</div>
@@ -190,28 +210,35 @@ A <b>UCHAR</b> array that contains a media access control (MAC) address. The net
 A structure that contains IPv6 Neighbor Solicitation (NS) parameters. This structure contains the
       following members:
 
+
 ### -field Flags
 
 A <b>ULONG</b> value that contains a bitwise OR of flags. This member is reserved for NDIS.
+
 
 ### -field RemoteIPv6Address
 
 A <b>UCHAR</b> array that contains an optional IPv6 address. This address represents the Source Address
         field in the IPv6 header of the NS message.
+
 If the incoming NS message has a Source Address value that matches this IPv6 address, the network adapter
         sends a neighbor advertisement (NA) message when it is in a low power state. If this member is zero,
         the network adapter should respond to NS messages from any remote IPv6 address.
+
 For more information about IPv6 NS and NA messages, see <a href="http://go.microsoft.com/fwlink/p/?linkid=268370">RFC 4861</a>.
+
 
 ### -field SolicitedNodeIPv6Address
 
 A <b>UCHAR</b> array that contains the solicited node IPv6 address. For more information about this
        type of IPv6 address, see Multicast IPv6 Addresses.
 
+
 ### -field MacAddress
 
 A <b>UCHAR</b> array that contains the MAC address. When it sends the NA message, the network adapter uses this array
         for the target link-layer address (TLLA) field of the NA message.
+
 <div class="alert"><b>Note</b>  When it sends an NA message, the network adapter must always use this MAC address in the
         TLLA field of the NA message. However, it should use the current MAC address of the network adapter as the source
         address in the MAC header.</div>
@@ -220,10 +247,13 @@ A <b>UCHAR</b> array that contains the MAC address. When it sends the NA message
 ### -field TargetIPv6Addresses
 
 A <b>UCHAR</b> array that contains one or two IPv6 addresses. If it contains only one address, that address is stored in the first element in the array, and the second element is filled with zeros.
+
 Miniport drivers must consume all addresses in the array.
+
 These addresses represent the Target Address field of an NS message. If one of these addresses
        matches the Target Address field of an incoming NS message, the network adapter sends an NA message in
        response.
+
 </dd>
 </dl>
 
@@ -232,21 +262,26 @@ These addresses represent the Target Address field of an NS message. If one of t
 A structure that contains IEEE 802.11i Robust Security Network (RSN) handshake parameters. This
       structure contains the following members:
 
+
 ### -field Flags
 
 A <b>ULONG</b> value that contains a bitwise OR of flags. This member is reserved for NDIS.
+
 
 ### -field KCK
 
 A <b>UCHAR</b> array that contains an IEEE 802.11 key confirmation key (KCK).
 
+
 ### -field KEK
 
 A <b>UCHAR</b> array that contains an IEEE 802.11 key encryption key (KEK).
 
+
 ### -field KeyReplayCounter
 
 A <b>ULONGLONG</b> value that contains a replay counter.
+
 </dd>
 </dl>
 </dd>
@@ -258,19 +293,23 @@ The <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure is used in the
     <a href="netvista.oid_pm_protocol_offload_list">
     OID_PM_PROTOCOL_OFFLOAD_LIST</a> OIDs.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -299,5 +338,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

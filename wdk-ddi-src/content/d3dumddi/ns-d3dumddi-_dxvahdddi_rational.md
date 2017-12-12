@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_rational.htm
 old-project: display
 ms.assetid: 4560fb48-24c3-4beb-acc3-b8d2ed3a81d3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVAHDDDI_RATIONAL, DXVAHDDDI_RATIONAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXVAHDDDI_RATIONAL structure describes a fractional value that represents the vertical and horizontal frequencies of a video mode (that is, vertical sync and horizontal sync). 
 
 
+
 ## -syntax
 
 ````
@@ -57,28 +58,34 @@ typedef struct _DXVAHDDDI_RATIONAL {
 
 [in] The numerator of the frequency fraction. 
 
+
 ### -field Denominator
 
 [in] The denominator of the frequency fraction. 
+
 
 ## -remarks
 An output rate of 0/0 is valid. The driver interprets 0/0 as 0/1. The driver interprets 0/any value as zero. 
 
 The NTSC frame rate is 30000/1001, and the PAL frame rate is 25/1. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 DXVAHDDDI_RATIONAL is supported beginning with the Windows 7 operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

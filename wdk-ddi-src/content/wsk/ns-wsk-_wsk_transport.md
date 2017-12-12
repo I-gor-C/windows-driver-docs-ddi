@@ -7,8 +7,8 @@ old-location: netvista\wsk_transport.htm
 old-project: netvista
 ms.assetid: aaf7b5ac-0401-4b6a-a478-3d50559817db
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WSK_TRANSPORT, WSK_TRANSPORT, *PWSK_TRANSPORT
+ms.date: 12/8/2017
+ms.keywords: _WSK_TRANSPORT, *PWSK_TRANSPORT, WSK_TRANSPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -43,6 +43,7 @@ The WSK_TRANSPORT structure specifies an available transport that is supported b
   subsystem.
 
 
+
 ## -syntax
 
 ````
@@ -62,28 +63,35 @@ typedef struct _WSK_TRANSPORT {
 
 The version of the transport. The format of the version number is transport-specific.
 
+
 ### -field SocketType
 
 The type of socket that is supported by the transport. This member can be one of the following:
      
 
 
+
+
 ### -field SOCK_STREAM
 
 Supports reliable connection-oriented byte stream communication.
+
 
 ### -field SOCK_DGRAM
 
 Supports unreliable connectionless datagram communication.
 
+
 ### -field SOCK_RAW
 
 Supports raw access to the transport protocol.
+
 </dd>
 </dl>
 For more information about the socket types that are supported for each supported address family, see
      
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
+
 
 ### -field Protocol
 
@@ -91,15 +99,18 @@ The protocol that is supported by the transport. For more information about the 
      supported for each supported address family, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
 
+
 ### -field AddressFamily
 
 The address family that is supported by the transport. For more information about supported
      address families, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
 
+
 ### -field ProviderId
 
 The identifier of the transport provider that implements the transport.
+
 
 ## -remarks
 A WSK application passes a pointer to an array of WSK_TRANSPORT structures to the 
@@ -123,20 +134,24 @@ A single transport provider can support multiple combinations of values for the
     <b>SocketType</b>, and 
     <b>Protocol</b> members.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,5 +174,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_TRANSPORT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_TRANSPORT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: print\colorprofilesubtype.htm
 old-project: print
 ms.assetid: 7ec0dd2d-7be5-4c85-8096-64a45aee01a5
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: COLORPROFILESUBTYPE, COLORPROFILESUBTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The COLORPROFILESUBTYPE enumeration is used to specify the subtype of color profile.
 
 
+
 ## -syntax
 
 ````
@@ -62,48 +63,59 @@ typedef enum  {
 
 Specifies a perceptual rendering intent for WCS gamut map model profiles (GMMPs).
 
+
 ### -field CPST_RELATIVE_COLORIMETRIC
 
 Specifies a relative colorimetric rendering intent for WCS GMMPs.
+
 
 ### -field CPST_SATURATION
 
 Specifies a saturation rendering intent for WCS GMMPs.
 
+
 ### -field CPST_ABSOLUTE_COLORIMETRIC
 
 Specifies an absolute colorimetric rendering intent for WCS GMMPs.
+
 
 ### -field CPST_NONE
 
 Specifies that the color profile subtype is not applicable to the selected color profile type.
 
+
 ### -field CPST_RGB_WORKING_SPACE
 
 Specifies the RGB color working space for ICC profiles or WCS device model profiles (DMPs).
 
+
 ### -field CPST_CUSTOM_WORKING_SPACE
 
 Specifies a custom color working space.
+
 
 ## -remarks
 For a description of rendering intents, see <a href="http://go.microsoft.com/fwlink/p/?linkid=52269">Rendering Intents</a> in the Windows SDK documentation.
 
 The PCOLORPROFILESUBTYPE and LPCOLORPROFILESUBTYPE data types are defined as pointers to this enumeration:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Included in Windows Vista and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +135,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20COLORPROFILESUBTYPE enumeration%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20COLORPROFILESUBTYPE enumeration%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

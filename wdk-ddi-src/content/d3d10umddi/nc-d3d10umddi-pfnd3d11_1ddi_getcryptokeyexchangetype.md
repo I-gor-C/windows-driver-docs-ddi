@@ -7,7 +7,7 @@ old-location: display\getcryptokeyexchangetype.htm
 old-project: display
 ms.assetid: 64870c9f-facf-4344-93d0-12cbcec86e11
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Queries the type of key exchange that is supported by the cryptographic engine of the display adapter for a specified encryption algorithm and video decoder profile.  
 
 
+
 ## -prototype
 
 ````
@@ -65,21 +66,26 @@ A handle to the display device (graphics context).
 
 
 
+
 ### -param pCryptoType [in]
 
 A pointer to a GUID that specifies the type of encryption algorithm to query.
+
 
 ### -param pDecodeProfile [in]
 
 A pointer to a GUID that specifies the decoder profile to query.
 
+
 ### -param Index [in]
 
 The zero-based index of the key exchange type.
 
+
 ### -param pKeyExchangeType [out]
 
 A pointer to a GUID that specifies the supported key exchange type for the specified index.
+
 
 ## -returns
 <b>GetCryptoKeyExchangeType</b> returns one of the following values:
@@ -91,6 +97,7 @@ A pointer to a GUID that specifies the supported key exchange type for the speci
 </dl>The encryption algorithm specified by the <i>pCryptoType</i> parameter is not supported.
 
  
+
 
 ## -remarks
 The <b>GetCryptoKeyExchangeType</b> function can be called to query the key exchange types for any index from 0 to (<b>D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS.KeyExchangeTypeCount</b>– 1). 
@@ -105,27 +112,33 @@ The <i>pCryptoType</i> parameter can contain one of the following values:
 
 <b>NULL_GUID</b> if the driver is not configured to use any encryption algorithm.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -136,6 +149,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -155,5 +169,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

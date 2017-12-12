@@ -7,7 +7,7 @@ old-location: netvista\dot11extallocatebuffer.htm
 old-project: netvista
 ms.assetid: 22c61f1d-027c-4e3e-af34-c513d4e1d0cc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,10 +56,12 @@ DWORD WINAPI * Dot11ExtAllocateBuffer(
 
 Size, in bytes, of the buffer to allocate.
 
+
 ### -param ppvBuffer [out]
 
 A pointer to a caller-supplied variable that stores the address of the allocated buffer. The 
      <i>ppvBuffer</i> parameter has a valid non-null value if the return value is ERROR_SUCCESS.
+
 
 ## -returns
 The call returns an ERROR_xxxx code defined in 
@@ -73,6 +75,7 @@ The call returns an ERROR_xxxx code defined in
 </dl>The operating system was unable to allocate the memory due to a lack of resources.
 
  
+
 
 ## -remarks
 The IHV Extensions DLL must follow these guidelines when calling the 
@@ -92,11 +95,13 @@ The IHV Extensions DLL might call this function to allocate memory referenced by
 In this situation, the DLL must free the memory buffer by calling 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,15 +112,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,5 +148,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_ALLOCATE_BUFFER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_ALLOCATE_BUFFER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

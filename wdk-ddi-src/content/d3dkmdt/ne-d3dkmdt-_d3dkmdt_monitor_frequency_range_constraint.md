@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_frequency_range_constraint.htm
 old-project: display
 ms.assetid: 12bf26fc-86c2-4b9b-82d4-1e8b2e38fa79
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT, D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration is used to indicate the type of constraint under which a monitor frequency range is supported.
 
 
+
 ## -syntax
 
 ````
@@ -58,30 +59,37 @@ typedef enum _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT {
 
 Indicates that a variable of type D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT has not yet been assigned a meaningful value.
 
+
 ### -field D3DKMDT_MFRC_ACTIVESIZE
 
 Indicates that the constraint is an active region size.
+
 
 ### -field D3DKMDT_MFRC_MAXPIXELRATE
 
 Indicates that the constraint is a pixel rate.
 
+
 ## -remarks
 The <b>ConstraintType</b> member of a <a href="display.d3dkmdt_monitor_frequency_range">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

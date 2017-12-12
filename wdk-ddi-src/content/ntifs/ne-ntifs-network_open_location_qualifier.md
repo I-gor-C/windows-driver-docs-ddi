@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NETWORK_OPEN_LOCATION_QUALIFIER enumeration type contains values that identify the kind of location restriction to attach to a file.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 Indicates that the file has no location restrictions. That is, a caller can open the file whether it resides remotely or locally. 
 
+
 ### -field NetworkOpenLocationRemote
 
 Indicates that the file is restricted to only opening remotely. That is, a caller can only open the file if it resides on a different computer from the computer that the caller resides on. 
 
+
 ### -field NetworkOpenLocationLoopback
 
 Indicates that the file is restricted to only opening locally. That is, a caller can only open the file if it resides on the same computer as the caller. 
+
 
 ## -remarks
 
@@ -74,14 +78,17 @@ Indicates that the file is restricted to only opening locally. That is, a caller
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This enumeration type is available starting with Windows Vista. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The KSSTATE enumeration lists possible states of a kernel streaming object.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 Indicates that the object is in minimum resource consumption mode.
 
+
 ### -field KSSTATE_ACQUIRE
 
 Indicates that the object is acquiring resources.
+
 
 ### -field KSSTATE_PAUSE
 
 Indicates that the object is preparing to make instant transition to Run state.
 
+
 ### -field KSSTATE_RUN
 
 Indicates that the object is actively streaming.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Indicates that the object is actively streaming.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

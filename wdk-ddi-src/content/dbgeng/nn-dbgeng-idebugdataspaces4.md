@@ -7,7 +7,7 @@ old-location: debugger\idebugdataspaces4.htm
 old-project: debugger
 ms.assetid: e03202a5-2e4a-43f8-8183-fdd26df6ff8f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,6 +66,7 @@ Writes data to the specified physical address in the target's memory.
 
  
 
+
 ## -members
 The <b>IDebugDataSpaces4</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -79,6 +80,7 @@ The <b>IDebugDataSpaces4</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Returns the offset of the next address whose validity might be different from the validity of the specified address.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -87,6 +89,7 @@ Returns the offset of the next address whose validity might be different from th
 </td>
 <td align="left" width="63%">
 Provides general information about an address in a process's data space.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -95,6 +98,7 @@ Provides general information about an address in a process's data space.
 </td>
 <td align="left" width="63%">
 Locates the first valid region of memory in a specified memory range.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -103,6 +107,7 @@ Locates the first valid region of memory in a specified memory range.
 </td>
 <td align="left" width="63%">
 Reads a null-terminated, multibyte string from the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -111,6 +116,7 @@ Reads a null-terminated, multibyte string from the target.
 </td>
 <td align="left" width="63%">
 Reads a null-terminated, multibyte string from the target and converts it to Unicode.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -119,6 +125,7 @@ Reads a null-terminated, multibyte string from the target and converts it to Uni
 </td>
 <td align="left" width="63%">
 Reads the target's memory from the specified physical address.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -127,6 +134,7 @@ Reads the target's memory from the specified physical address.
 </td>
 <td align="left" width="63%">
 Reads a null-terminated, Unicode string from the target and converts it to a multibyte string.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -135,6 +143,7 @@ Reads a null-terminated, Unicode string from the target and converts it to a mul
 </td>
 <td align="left" width="63%">
 Reads a null-terminated, Unicode string from the target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -143,6 +152,7 @@ Reads a null-terminated, Unicode string from the target.
 </td>
 <td align="left" width="63%">
 Searches the process's virtual memory for a specified pattern of bytes.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -151,6 +161,7 @@ Searches the process's virtual memory for a specified pattern of bytes.
 </td>
 <td align="left" width="63%">
 Writes data to the specified physical address in the target's memory.
+
 </td>
 </tr>
 </table>Returns the offset of the next address whose validity might be different from the validity of the specified address.
@@ -175,6 +186,7 @@ Writes data to the specified physical address in the target's memory.
 
  
 
+
 ## -remarks
 
 
@@ -183,6 +195,7 @@ Writes data to the specified physical address in the target's memory.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -205,5 +218,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

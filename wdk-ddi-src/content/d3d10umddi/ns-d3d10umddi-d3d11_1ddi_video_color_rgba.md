@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_color_rgba.htm
 old-project: display
 ms.assetid: 0d97d6ef-87e6-4ba3-ab4b-aa5b22cb126b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_COLOR_RGBA, D3D11_1DDI_VIDEO_COLOR_RGBA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies an RGB color value.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct D3D11_1DDI_VIDEO_COLOR_RGBA {
 
 The red value.
 
+
 ### -field G
 
 The green value.
+
 
 ### -field B
 
 The blue value.
 
+
 ### -field A
 
 The alpha value. Values range from 0 (transparent) to 1 (opaque).
+
 
 
 ## -remarks
@@ -80,22 +85,27 @@ The alpha value. Values range from 0 (transparent) to 1 (opaque).
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

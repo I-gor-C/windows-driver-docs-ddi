@@ -7,7 +7,7 @@ old-location: netvista\fwps_transport_send_params1.htm
 old-project: netvista
 ms.assetid: 8d5653e4-a755-4066-b25a-f8f589821412
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_TRANSPORT_SEND_PARAMS1_, FWPS_TRANSPORT_SEND_PARAMS1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The <b>FWPS_TRANSPORT_SEND_PARAMS1</b> structure defines properties of an outbou
   packet.
 
 
+
 ## -syntax
 
 ````
@@ -65,12 +66,15 @@ A pointer to a buffer that specifies the remote IP address to which the socket n
      data values to the callout driver's 
      <a href="netvista.classifyfn">classifyFn</a> callout function.
      
+
 The buffer can contain an IPv4 address (4 bytes) or an IPv6 address (16 bytes), and the address must
      be specified in network byte order. The IP version must match the 
      <i>AddressFamily</i> parameter specified in the 
      <a href="netvista.fwpsinjecttransportsendasync1">
      FwpsInjectTransportSendAsync1</a> function.
+
 The buffer must remain valid until the injection completion function is called.
+
 
 ### -field remoteScopeId
 
@@ -82,6 +86,7 @@ A <b>SCOPE_ID</b> structure that contains the scope identifier for the remote IP
      <a href="netvista.classifyfn">classifyFn</a> callout function. The <b>SCOPE_ID</b>
      structure is defined in 
      Ws2ipdef.h as follows.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -106,30 +111,36 @@ A <b>SCOPE_ID</b> structure that contains the scope identifier for the remote IP
 An optional pointer to a buffer that contains socket control data specified by the 
       <a href="winsock.wsasendmsg">WSASendMsg</a> function. For information about the <b>WSACMSGHDR</b> type, see 
       <a href="netvista.cmsghdr">CMSGHDR</a>.
+
 If present, socket control data is provided to a callout with the 
       <b>controlData</b> member of the 
       <a href="netvista.fwps_incoming_metadata_values0">
       FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
       <a href="netvista.classifyfn">classifyFn</a> callout function.
+
 If socket control data is not <b>NULL</b>, it must be deep-copied in the callout driver's implementation
       of the 
       <a href="netvista.classifyfn">classifyFn</a> function, and the 
       <b>controlData</b> buffer must be kept valid until the injection completion
       function is called.
 
+
 ### -field controlDataLength
 
 The length, in bytes, of the 
      <b>controlData</b> member.
 
+
 ### -field headerIncludeHeader
 
 The transport header to include.
+
 
 ### -field headerIncludeHeaderLength
 
 The length, in bytes, of the 
      <b>headerIncludeHeader</b> member.
+
 
 ## -remarks
 
@@ -139,14 +150,17 @@ The length, in bytes, of the
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -177,5 +191,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_TRANSPORT_SEND_PARAMS1 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_TRANSPORT_SEND_PARAMS1 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

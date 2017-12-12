@@ -7,7 +7,7 @@ old-location: kernel\pofxsettargetdripsdevicepowerstate.htm
 old-project: kernel
 ms.assetid: 435c0731-101c-498b-9041-904001be3f2c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: PoFxSetTargetDripsDevicePowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ req.product: Windows 10 or later.
     DRIPS constraint provided by the PEP.  
 
 
+
 ## -syntax
 
 ````
@@ -60,14 +61,17 @@ NTSTATUS  PoFxSetTargetDripsDevicePowerState(
 
 A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="kernel.pofxregisterdevice">PoFxRegisterDevice</a> routine.
 
+
 ### -param TargetState [in]
 
 Specifies the target DRIPS device power state. Possible values are defined in the <a href="kernel.device_power_state">DEVICE_POWER_STATE</a> enumeration. This value must
     be lower than the existing device constraint.  A device power state
     of <b>PowerDeviceUnspecified</b> resets to the PEP provided constraint.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the target state was accepted.
+
 
 ## -remarks
 
@@ -77,22 +81,27 @@ Returns STATUS_SUCCESS if the target state was accepted.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +123,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -123,9 +134,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

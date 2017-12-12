@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfpdo.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,7 +16,7 @@ Wdfpdo.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_PDO_EVENT_CALLBACKS_INIT function](nf-wdfpdo-wdf-pdo-event-callbacks-init.md) | The WDF_PDO_EVENT_CALLBACKS_INIT function initializes a WDF_PDO_EVENT_CALLBACKS structure. |
+| [WDF_PDO_EVENT_CALLBACKS_INIT function](nf-wdfpdo-wdf_pdo_event_callbacks_init.md) | The WDF_PDO_EVENT_CALLBACKS_INIT function initializes a WDF_PDO_EVENT_CALLBACKS structure. |
 | [WdfPdoAddEjectionRelationsPhysicalDevice function](nf-wdfpdo-wdfpdoaddejectionrelationsphysicaldevice.md) | The WdfPdoAddEjectionRelationsPhysicalDevice method indicates that a specified device is ejected when another specified device is ejected. |
 | [WdfPdoClearEjectionRelationsDevices function](nf-wdfpdo-wdfpdoclearejectionrelationsdevices.md) | The WdfPdoClearEjectionRelationsDevices method removes all devices from the list of devices that must be ejected when a specified device is ejected. |
 | [WdfPdoGetParent function](nf-wdfpdo-wdfpdogetparent.md) | The WdfPdoGetParent method returns a handle to the framework device object that represents the parent device of a specified device. |
@@ -37,15 +42,15 @@ Wdfpdo.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS callback](nc-wdfpdo-evt-wdf-device-disable-wake-at-bus.md) | A bus driver's EvtDeviceDisableWakeAtBus event callback function performs bus-level operations that disable the ability of one of the bus's devices to trigger a wake-up signal on the bus. |
-| [EVT_WDF_DEVICE_EJECT callback](nc-wdfpdo-evt-wdf-device-eject.md) | A driver's EvtDeviceEject event callback function handles operations that are necessary to eject a device from its docking station. |
-| [EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS callback](nc-wdfpdo-evt-wdf-device-enable-wake-at-bus.md) | A bus driver's EvtDeviceEnableWakeAtBus event callback function performs bus-level operations that enable one of the bus's devices to trigger a wake-up signal on the bus. |
-| [EVT_WDF_DEVICE_REPORTED_MISSING callback](nc-wdfpdo-evt-wdf-device-reported-missing.md) | A bus driver's EvtDeviceReportedMissing event callback function informs the driver that the framework has reported the physical device object (PDO) missing to the Plug and Play manager. |
-| [EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY callback](nc-wdfpdo-evt-wdf-device-resource-requirements-query.md) | A bus driver's EvtDeviceResourceRequirementsQuery event callback function creates a resource requirements list that represents the device's required hardware resources. |
-| [EVT_WDF_DEVICE_SET_LOCK callback](nc-wdfpdo-evt-wdf-device-set-lock.md) | A driver's EvtDeviceSetLock event callback function locks the specified device so that it cannot be ejected, or unlocks the device so that it can be ejected. |
+| [EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS callback](nc-wdfpdo-evt_wdf_device_disable_wake_at_bus.md) | A bus driver's EvtDeviceDisableWakeAtBus event callback function performs bus-level operations that disable the ability of one of the bus's devices to trigger a wake-up signal on the bus. |
+| [EVT_WDF_DEVICE_EJECT callback](nc-wdfpdo-evt_wdf_device_eject.md) | A driver's EvtDeviceEject event callback function handles operations that are necessary to eject a device from its docking station. |
+| [EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS callback](nc-wdfpdo-evt_wdf_device_enable_wake_at_bus.md) | A bus driver's EvtDeviceEnableWakeAtBus event callback function performs bus-level operations that enable one of the bus's devices to trigger a wake-up signal on the bus. |
+| [EVT_WDF_DEVICE_REPORTED_MISSING callback](nc-wdfpdo-evt_wdf_device_reported_missing.md) | A bus driver's EvtDeviceReportedMissing event callback function informs the driver that the framework has reported the physical device object (PDO) missing to the Plug and Play manager. |
+| [EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY callback](nc-wdfpdo-evt_wdf_device_resource_requirements_query.md) | A bus driver's EvtDeviceResourceRequirementsQuery event callback function creates a resource requirements list that represents the device's required hardware resources. |
+| [EVT_WDF_DEVICE_SET_LOCK callback](nc-wdfpdo-evt_wdf_device_set_lock.md) | A driver's EvtDeviceSetLock event callback function locks the specified device so that it cannot be ejected, or unlocks the device so that it can be ejected. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_PDO_EVENT_CALLBACKS structure](ns-wdfpdo--wdf-pdo-event-callbacks.md) | The WDF_PDO_EVENT_CALLBACKS structure is the dispatch table for a bus driver's event callback functions. |
+| [_WDF_PDO_EVENT_CALLBACKS structure](ns-wdfpdo-_wdf_pdo_event_callbacks.md) | The WDF_PDO_EVENT_CALLBACKS structure is the dispatch table for a bus driver's event callback functions. |

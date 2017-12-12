@@ -41,6 +41,7 @@ req.irql:
 The KS_COMPRESSION structure defines the compression of frames on an output pin.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct {
 
 Specifies the numerator of the compression/expansion ratio.
 
+
 ### -field RatioDenominator
 
 Specifies the denominator of the compression/expansion ratio.
+
 
 ### -field RatioConstantMargin
 
 Specifies a scalar constant to apply to the compression ratio. Set this to zero for no compression.
 
+
 ## -remarks
 For compression, specify a fraction less than 1. For decompression, specify a fraction greater than 1. For example, a compressor might specify 1:3. A decompressor could specify 3:1.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

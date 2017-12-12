@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>IOCTL_GNSS_LISTEN_NI</b> control code is used to start listening for a SUPL NI request.
+
 This IOCTL effectively provides the GNSS driver with a pending I/O request that it can use to, through the overlapped structures GnssEvent member, convey the NI request to the adapter. The GnssEvent member is a <a href="sensors.gnss_event">GNSS_EVENT</a> structure. The adapter ensures that this request is always pending and will issue a new request as soon as the pending one is resolved. When the I/O request is resolved the adapter will issue a corresponding <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_respond_ni.md">IOCTL_GNSS_RESPOND_NI</a>.
+
 
 
 ## -ioctlparameters
@@ -49,8 +51,10 @@ Set to NULL.
 
 
 
+
 ### -input-buffer-length
 Set to 0.
+
 
 
 
@@ -59,8 +63,10 @@ Set to NULL.
 
 
 
+
 ### -output-buffer-length
 Set to 0.
+
 
 
 
@@ -76,6 +82,7 @@ Set to 0.
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
 
+
 ## -remarks
 The <b>EventType</b> must be set to <b>GNSS_Event_NI</b> and the <b>NiRequest</b> member filled in.
 
@@ -87,11 +94,13 @@ Whenever the GNSS driver gets a NI request from the SUPL/CP, it completes the I/
 
 These certificates, which are specified by the mobile operator and configured via the SUPL configuration service provider, are needed for establishing connection with the H-SLP or E-SLP. The GNSS adapter only pushes the SUPL configuration, including the certificated, to the GNSS driver. It does not install the certificates in the Windows file system. This is because different IHVs may have different implementations of the SUPL client, and some may include implementation of their own TLS stack. The GNSS adapter is agnostic to any implementation details of the SUPL client. The GNSS driver can store the certificates in registry or disk or push them directly to the SUPL client based on their usage. The SUPL client will need to take care of installing/using the certificates as needed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,5 +126,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_LISTEN_NI control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

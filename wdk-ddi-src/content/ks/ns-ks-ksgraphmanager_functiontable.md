@@ -41,6 +41,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ typedef struct _KSGRAPHMANAGER_FUNCTIONTABLE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

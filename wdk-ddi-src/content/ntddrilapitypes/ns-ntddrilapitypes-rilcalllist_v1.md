@@ -7,8 +7,8 @@ old-location: netvista\rilcalllist_v1.htm
 old-project: netvista
 ms.assetid: 09b4f4e7-2688-4d6e-8512-a94c5ce25a79
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILCALLLIST_V1, *LPRILCALLLIST_V1, RILCALLLIST_V1
+ms.date: 12/8/2017
+ms.keywords: RILCALLLIST_V1, RILCALLLIST_V1, *LPRILCALLLIST_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _RILCALLLIST_V1 {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

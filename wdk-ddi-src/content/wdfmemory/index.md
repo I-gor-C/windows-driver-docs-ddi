@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wdfmemory.h header
 
+## -description
 
 This header is used by Windows Driver Framework. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
@@ -11,9 +16,9 @@ Wdfmemory.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function](nf-wdfmemory-wdf-memory-descriptor-init-buffer.md) | The WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified buffer. |
-| [WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function](nf-wdfmemory-wdf-memory-descriptor-init-handle.md) | The WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified framework memory object. |
-| [WDF_MEMORY_DESCRIPTOR_INIT_MDL function](nf-wdfmemory-wdf-memory-descriptor-init-mdl.md) | The WDF_MEMORY_DESCRIPTOR_INIT_MDL function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified memory descriptor list (MDL). |
+| [WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function](nf-wdfmemory-wdf_memory_descriptor_init_buffer.md) | The WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified buffer. |
+| [WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function](nf-wdfmemory-wdf_memory_descriptor_init_handle.md) | The WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified framework memory object. |
+| [WDF_MEMORY_DESCRIPTOR_INIT_MDL function](nf-wdfmemory-wdf_memory_descriptor_init_mdl.md) | The WDF_MEMORY_DESCRIPTOR_INIT_MDL function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified memory descriptor list (MDL). |
 | [WdfLookasideListCreate function](nf-wdfmemory-wdflookasidelistcreate.md) | The WdfLookasideListCreate method creates a lookaside-list object, from which the driver can obtain memory objects. |
 | [WdfMemoryAssignBuffer function](nf-wdfmemory-wdfmemoryassignbuffer.md) | The WdfMemoryAssignBuffer method assigns a specified buffer to a memory object that a driver created by calling WdfMemoryCreatePreallocated. |
 | [WdfMemoryCopyFromBuffer function](nf-wdfmemory-wdfmemorycopyfrombuffer.md) | The WdfMemoryCopyFromBuffer method copies the contents of a specified source buffer into a specified memory object's buffer. |
@@ -27,11 +32,11 @@ Wdfmemory.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDFMEMORY_OFFSET structure](ns-wdfmemory--wdfmemory-offset.md) | The WDFMEMORY_OFFSET structure identifies a subsection of a memory object's buffer. |
-| [WDF_MEMORY_DESCRIPTOR structure](ns-wdfmemory--wdf-memory-descriptor.md) | The WDF_MEMORY_DESCRIPTOR structure describes a memory buffer. |
+| [_WDFMEMORY_OFFSET structure](ns-wdfmemory-_wdfmemory_offset.md) | The WDFMEMORY_OFFSET structure identifies a subsection of a memory object's buffer. |
+| [_WDF_MEMORY_DESCRIPTOR structure](ns-wdfmemory-_wdf_memory_descriptor.md) | The WDF_MEMORY_DESCRIPTOR structure describes a memory buffer. |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [WDF_MEMORY_DESCRIPTOR_TYPE enumeration](ne-wdfmemory--wdf-memory-descriptor-type.md) | The WDF_MEMORY_DESCRIPTOR_TYPE enumeration identifies the types of memory descriptions that a WDF_MEMORY_DESCRIPTOR structure can specify. |
+| [_WDF_MEMORY_DESCRIPTOR_TYPE enumeration](ne-wdfmemory-_wdf_memory_descriptor_type.md) | The WDF_MEMORY_DESCRIPTOR_TYPE enumeration identifies the types of memory descriptions that a WDF_MEMORY_DESCRIPTOR structure can specify. |

@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_set_extended_feature_callbacks_0021.htm
 old-project: display
 ms.assetid: 8380C972-D5A0-46D5-B32B-C31D5113BB95
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <i>pfnSetExtendedFeatureCallbacks</i> callback function sets extended feature callbacks.
 
 
+
 ## -prototype
 
 ````
@@ -62,20 +63,25 @@ VOID APIENTRY* pfnSetExtendedFeatureCallbacks(
 
 The handle of a device.
 
+
 ### -param Table 
 
 A value for an implementation of video.
+
 
 ### -param pTable [in]
 
 A pointer to a table value.
 
+
 ### -param TableSize 
 
 The size of the table. 
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -85,6 +91,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\iogetactivityidthread.htm
 old-project: kernel
 ms.assetid: 445A9EBA-EF15-4FE4-9747-3E1E138E13E7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoGetActivityIdThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: Any level
 The IoGetActivityIdThread routine returns the activity ID associated with the current thread.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ LPCGUID IoGetActivityIdThread(
 ## -returns
 The activity ID associated with the current thread.
 
+
 ## -remarks
 
 
@@ -66,6 +68,7 @@ The activity ID associated with the current thread.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -76,14 +79,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +100,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +111,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -114,9 +122,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>

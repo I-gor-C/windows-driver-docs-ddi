@@ -41,6 +41,7 @@ req.irql: DIRQL
 The <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i>-typed (ISR) callback routine attempts to allocate a parallel port at IRQL = DIRQL. The system-supplied function driver for parallel ports supplies this routine.
 
 
+
 ## -prototype
 
 ````
@@ -56,6 +57,7 @@ typedef BOOLEAN ParallelTryAllocateRoutine(
 
 Pointer to the device extension of a functional device object that represents a parallel port.
 
+
 ## -returns
 <dl>
 <dt><b>TRUE</b></dt>
@@ -66,6 +68,7 @@ Pointer to the device extension of a functional device object that represents a 
 
  
 
+
 ## -remarks
 A kernel-mode driver connects an interrupt service routine by using an <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>, which returns a <a href="parports.parallel_interrupt_information">PARALLEL_INTERRUPT_INFORMATION</a> structure. This structure includes the <b>TryAllocatePortAtInterruptLevel</b> member, which is a pointer to the system-supplied <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback.
 
@@ -75,11 +78,13 @@ A driver uses the <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback in conjun
 
 For more information about allocating a parallel port in an ISR, see <a href="https://msdn.microsoft.com/62d3a388-6de6-4019-ab95-56b5e96d0891">Connecting an Interrupt Service Routine to a ParallelPort</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -90,6 +95,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,9 +106,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DIRQL
+
 </td>
 </tr>
 </table>
@@ -132,5 +140,8 @@ DIRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PPARALLEL_TRY_ALLOCATE_ROUTINE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

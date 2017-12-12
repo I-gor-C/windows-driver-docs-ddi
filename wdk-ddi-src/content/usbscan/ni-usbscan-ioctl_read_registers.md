@@ -42,19 +42,24 @@ req.product: Windows 10 or later.
 Reads from USB device registers, using the control pipe.
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 Pointer to an <a href="image.io_block">IO_BLOCK</a> structure.
 
+
 ### -input-buffer-length
 Size of the input buffer.
+
 
 ### -output-buffer
 Pointer to a buffer to receive register contents.
 
+
 ### -output-buffer-length
 Size of the output buffer. The value must match the contents of the <b>uLength</b> member of the IO_BLOCK structure.
+
 
 ### -in-out-buffer
 
@@ -67,6 +72,7 @@ Size of the output buffer. The value must match the contents of the <b>uLength</
 ### -status-block
 I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+
 
 ## -remarks
 
@@ -128,11 +134,13 @@ The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLAS
 
 For more information, see <a href="https://msdn.microsoft.com/f9216d3c-4930-4c26-8eac-6ee500b038e0">Accessing Kernel-Mode Drivers for Still Image Devices</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

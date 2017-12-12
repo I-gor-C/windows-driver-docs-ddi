@@ -41,6 +41,7 @@ req.irql:
 This structure is used to communicate the platform/HLOS capabilities to the underlying GNSS driver.
 
 
+
 ## -syntax
 
 ````
@@ -61,34 +62,42 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field SupportAgnssInjection
 
 Indicates that the platform supports AGNSS injection via the location platform.
 
+
 ### -field AgnssFormatSupported
 
 Specifies a bitmask containing the different AGNSS formats (GNSS_AGNSSFORMAT_*) that the GNSS driver or device supports.
+
 
 ### -field Reserved
 
 Reserved for future use.
 
+
 ### -field Unused[512]
 
 Padding buffer.
 
+
 ## -remarks
  This is a list of individual capability support of the GNSS adapter. The platform capability is represented in the same way as the device capabilities are represented.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

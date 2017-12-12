@@ -7,7 +7,7 @@ old-location: debugger\idebugfailureanalysis2.htm
 old-project: debugger
 ms.assetid: 0B44FCB9-D23F-4630-9F9A-FBAD46712B14
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _FA_EXTENSION_PLUGIN_PHASE, FA_EXTENSION_PLUGIN_PHASE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">!analyze</a> debugger command runs, the analysis engine can load and run extension analysis plug-ins. The analysis engine creates a <i>DebugFailureAnalysis object</i> to organize data that is related to a particular analysis session.
+
  An extension analysis plug-in can access a DebugFailureAnalysis object through an <b>IDebugFailureAnalysis2</b> interface. The plug-in can inspect, alter, and enhance the information created by the default analysis. For more information, see <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>.
+
 
 
 ## -inheritance
@@ -91,6 +93,7 @@ The <a href="debugger.idebugfailureanalysis2_setulong64">SetUlong64</a> method s
 
  
 
+
 ## -members
 The <b>IDebugFailureAnalysis2</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -104,6 +107,7 @@ The <b>IDebugFailureAnalysis2</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_addbuffer">AddBuffer</a> method adds a new <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> to a <b>DebugFailureAnalysis</b> object, and writes the bytes from a specified buffer to the data block of the new FA entry.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -112,6 +116,7 @@ The <a href="debugger.idebugfailureanalysis2_addbuffer">AddBuffer</a> method add
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_addextensioncommand">AddExtensionCommand</a> method adds a new <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> to a <b>DebugFailureAnalysis</b> object and sets the data block of the FA entry to a specified debugger command.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -120,6 +125,7 @@ The <a href="debugger.idebugfailureanalysis2_addextensioncommand">AddExtensionCo
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_addstring">AddString</a> method adds a new <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> to a <b>DebugFailureAnalysis</b> object and sets the data block of the FA entry to a specified string.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -128,6 +134,7 @@ The <a href="debugger.idebugfailureanalysis2_addstring">AddString</a> method add
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_addulong">AddUlong</a> method adds a new <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a>  to a <b>DebugFailureAnalysis</b> object and sets the data block of the FA entry to a specified <b>ULONG</b> value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -136,6 +143,7 @@ The <a href="debugger.idebugfailureanalysis2_addulong">AddUlong</a> method adds 
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_addulong64">AddUlong64</a> method adds a new <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a>  to a <b>DebugFailureAnalysis</b> object and sets the data block of the FA entry to a specified 64-bit value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -144,6 +152,7 @@ The <a href="debugger.idebugfailureanalysis2_addulong64">AddUlong64</a> method a
 </td>
 <td align="left" width="63%">
    The <a href="debugger.idebugfailureanalysis2_get">Get</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -152,6 +161,7 @@ The <a href="debugger.idebugfailureanalysis2_addulong64">AddUlong64</a> method a
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getbuffer">GetBuffer</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it gets the entry's data block.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -160,6 +170,7 @@ The <a href="debugger.idebugfailureanalysis2_getbuffer">GetBuffer</a> method sea
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getdebugfatagcontrol">GetDebugFATagControl</a> method gets a pointer to an <a href="debugger.idebugfaentrytags">IDebugFAEntryTags</a> interface, which provides access to the tags in a DebugFailureAnalysisTags object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -168,6 +179,7 @@ The <a href="debugger.idebugfailureanalysis2_getdebugfatagcontrol">GetDebugFATag
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getfailureclass">GetFailureClass</a> method gets the failure class of a <b>DebugFailureAnalysis</b> object. The failure class indicates whether the debugging session  that created the <b>DebugFailureAnalysis</b> object is a kernel mode session or a user mode session.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -176,6 +188,7 @@ The <a href="debugger.idebugfailureanalysis2_getfailureclass">GetFailureClass</a
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getfailurecode">GetFailureCode</a> method gets the bug check code or exception code of a <b>DebugFailureAnalysis</b> object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -184,6 +197,7 @@ The <a href="debugger.idebugfailureanalysis2_getfailurecode">GetFailureCode</a> 
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getfailuretype">GetFailureType</a> method gets the failure type of a <b>DebugFailureAnalysis</b> object. The failure type indicates whether the code being analyzed was running in kernel mode or user mode.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -192,6 +206,7 @@ The <a href="debugger.idebugfailureanalysis2_getfailuretype">GetFailureType</a> 
 </td>
 <td align="left" width="63%">
    The <a href="debugger.idebugfailureanalysis2_getnext">GetNext</a> method searches a <b>DebugFailureAnalysis</b> object for the next <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a>, after a given FA entry, that satisfies conditions specified by the <i>Tag</i> and <i>TagMask</i> parameters.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -200,6 +215,7 @@ The <a href="debugger.idebugfailureanalysis2_getfailuretype">GetFailureType</a> 
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getstring">GetString</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it gets the ANSI string value from the entry's data block.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -208,6 +224,7 @@ The <a href="debugger.idebugfailureanalysis2_getstring">GetString</a> method sea
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getulong">GetUlong</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it gets the <b>ULONG</b> value from the entry's data block.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -216,6 +233,7 @@ The <a href="debugger.idebugfailureanalysis2_getulong">GetUlong</a> method searc
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_getulong64">GetUlong64</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it gets the <b>ULONG64</b> value from the entry's data block.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -224,6 +242,7 @@ The <a href="debugger.idebugfailureanalysis2_getulong64">GetUlong64</a> method s
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_nextentry">NextEntry</a> method gets the next <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a>, after a given FA entry, in a <b>DebugFailureAnalysis</b> object.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -232,6 +251,7 @@ The <a href="debugger.idebugfailureanalysis2_nextentry">NextEntry</a> method get
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_setbuffer">SetBuffer</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it overwrites the data block of the FA entry with the bytes in a specified buffer.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -240,6 +260,7 @@ The <a href="debugger.idebugfailureanalysis2_setbuffer">SetBuffer</a> method sea
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_setextensioncommand">SetExtensionCommand</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified extension command string.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -248,6 +269,7 @@ The <a href="debugger.idebugfailureanalysis2_setextensioncommand">SetExtensionCo
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_setstring">SetString</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified string value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -256,6 +278,7 @@ The <a href="debugger.idebugfailureanalysis2_setstring">SetString</a> method sea
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_setulong">SetUlong</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified <b>ULONG</b> value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -264,6 +287,7 @@ The <a href="debugger.idebugfailureanalysis2_setulong">SetUlong</a> method searc
 </td>
 <td align="left" width="63%">
 The <a href="debugger.idebugfailureanalysis2_setulong64">SetUlong64</a> method searches a <b>DebugFailureAnalysis</b> object for the first <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified <b>ULONG64</b> value.
+
 </td>
 </tr>
 </table>The <a href="debugger.idebugfailureanalysis2_addbuffer">AddBuffer</a> method adds a new <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> to a <b>DebugFailureAnalysis</b> object, and writes the bytes from a specified buffer to the data block of the new FA entry.
@@ -310,6 +334,7 @@ The <a href="debugger.idebugfailureanalysis2_setulong64">SetUlong64</a> method s
 
  
 
+
 ## -remarks
 
 
@@ -318,6 +343,7 @@ The <a href="debugger.idebugfailureanalysis2_setulong64">SetUlong64</a> method s
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -340,5 +366,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\wdi_data_rate_entry.htm
 old-project: netvista
 ms.assetid: 16A4B49B-9912-40BE-80E8-68416B966B71
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_DATA_RATE_ENTRY, *PWDI_DATA_RATE_ENTRY, WDI_DATA_RATE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   WDI_DATA_RATE_ENTRY structure defines a data rate entry.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ typedef struct _WDI_DATA_RATE_ENTRY {
 
 Specifies data rate flags as defined in WDI_DATA_RATE_FLAGS.
 
+
 ### -field DataRateValue
 
 Specifies the data rate in units of 500 kilobits per second. The value is in the range from 0x0002 through 0xffff.
+
 
 
 ## -remarks
@@ -72,22 +75,27 @@ Specifies the data rate in units of 500 kilobits per second. The value is in the
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

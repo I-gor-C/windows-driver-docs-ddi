@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This enumeration represents the accuracy states of the magnetometer.
 
 
+
 ## -syntax
 
 ````
@@ -60,17 +61,21 @@ typedef enum _MAGNETOMETER_ACCURACY {
 
 Indicates that the magnetometer's accuracy cannot be determined.
 
+
 ### -field MagnetometerAccuracy_Unreliable
 
 Indicates that the magnetometer readings are unreliable. The application can choose to prompt the user to calibrate the compass, to improve accuracy.
+
 
 ### -field MagnetometerAccuracy_Approximate
 
 Indicates that the magnetometer readings are approximate values.
 
+
 ### -field MagnetometerAccuracy_High
 
 Indicates that the magnetometer accuracy is set to high.
+
 
 ## -remarks
 
@@ -80,22 +85,27 @@ Indicates that the magnetometer accuracy is set to high.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

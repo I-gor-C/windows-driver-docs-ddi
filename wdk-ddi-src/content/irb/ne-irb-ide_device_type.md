@@ -7,7 +7,7 @@ old-location: storage\ide_device_type.htm
 old-project: storage
 ms.assetid: 6d94189f-d6ab-40ad-85e5-f4efe8c30ed8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: IDE_DEVICE_TYPE, IDE_DEVICE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The IDE_DEVICE_TYPE enumeration type indicates the device type.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 Indicates that the device does not communicate by means of a known protocol.
 
+
 ### -field DeviceIsAta
 
 Indicates an ATA device.
+
 
 ### -field DeviceIsAtapi
 
 Indicates an ATAPI device.
 
+
 ### -field DeviceNotExist
 
 Indicates that the device does not exist.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Indicates that the device does not exist.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

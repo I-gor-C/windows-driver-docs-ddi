@@ -7,7 +7,7 @@ old-location: debugger\idebugcontrol.htm
 old-project: debugger
 ms.assetid: 6ff5b9ff-d2b8-4ade-8b8b-20284efdf266
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -295,6 +295,7 @@ Waits for an event that breaks into the debugger engine application.
 
  
 
+
 ## -members
 The <b>IDebugControl</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -309,6 +310,7 @@ The <b>IDebugControl</b> interface has these methods.
 <td align="left" width="63%">
 Creates a new breakpoint for the current target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -317,6 +319,7 @@ Creates a new breakpoint for the current target.
 </td>
 <td align="left" width="63%">
  Turns on some of the debugger engine's options.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -326,6 +329,7 @@ Creates a new breakpoint for the current target.
 <td align="left" width="63%">
 Loads an extension library into the debugger engine.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -334,6 +338,7 @@ Loads an extension library into the debugger engine.
 </td>
 <td align="left" width="63%">
 Assembles a single processor instruction. The assembled instruction is placed in the target's memory.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -342,6 +347,7 @@ Assembles a single processor instruction. The assembled instruction is placed in
 </td>
 <td align="left" width="63%">
 Calls a debugger extension.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -350,6 +356,7 @@ Calls a debugger extension.
 </td>
 <td align="left" width="63%">
 Closes the currently-open log file.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -359,6 +366,7 @@ Closes the currently-open log file.
 <td align="left" width="63%">
 Converts a value of one type into a value of another type.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -367,6 +375,7 @@ Converts a value of one type into a value of another type.
 </td>
 <td align="left" width="63%">
 Converts an array of values into an array of values of different types.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -375,6 +384,7 @@ Converts an array of values into an array of values of different types.
 </td>
 <td align="left" width="63%">
 Formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+
 
 </td>
 </tr>
@@ -385,6 +395,7 @@ Formats a string and sends the result to output callbacks that were registered w
 <td align="left" width="63%">
 Formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -394,6 +405,7 @@ Formats a string and sends the result to output callbacks that were registered w
 <td align="left" width="63%">
 Disassembles a processor instruction in the target's memory.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -402,6 +414,7 @@ Disassembles a processor instruction in the target's memory.
 </td>
 <td align="left" width="63%">
 Evaluates an expression, returning the result.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -410,6 +423,7 @@ Evaluates an expression, returning the result.
 </td>
 <td align="left" width="63%">
 Executes the specified debugger commands.
+
 
 </td>
 </tr>
@@ -420,6 +434,7 @@ Executes the specified debugger commands.
 <td align="left" width="63%">
 Opens the specified file and executes the debugger commands that are contained within.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -428,6 +443,7 @@ Opens the specified file and executes the debugger commands that are contained w
 </td>
 <td align="left" width="63%">
 Returns the processor type of the physical processor of the computer that is running the target.
+
 
 </td>
 </tr>
@@ -438,6 +454,7 @@ Returns the processor type of the physical processor of the computer that is run
 <td align="left" width="63%">
 Returns the breakpoint with the specified breakpoint ID.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -446,6 +463,7 @@ Returns the breakpoint with the specified breakpoint ID.
 </td>
 <td align="left" width="63%">
 Returns the breakpoint located at the specified index.
+
 
 </td>
 </tr>
@@ -456,6 +474,7 @@ Returns the breakpoint located at the specified index.
 <td align="left" width="63%">
 Returns the parameters of one or more breakpoints.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -464,6 +483,7 @@ Returns the parameters of one or more breakpoints.
 </td>
 <td align="left" width="63%">
 Returns the current code level and is mainly used when stepping through code.
+
 
 </td>
 </tr>
@@ -474,6 +494,7 @@ Returns the current code level and is mainly used when stepping through code.
 <td align="left" width="63%">
 Describes the nature of the current target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -482,6 +503,7 @@ Describes the nature of the current target.
 </td>
 <td align="left" width="63%">
 Returns the address of the last instruction disassembled using Disassemble.
+
 
 </td>
 </tr>
@@ -492,6 +514,7 @@ Returns the address of the last instruction disassembled using Disassemble.
 <td align="left" width="63%">
 Returns the effective processor type of the processor of the computer that is running the target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -500,6 +523,7 @@ Returns the effective processor type of the processor of the computer that is ru
 </td>
 <td align="left" width="63%">
 Returns the engine's options.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -508,6 +532,7 @@ Returns the engine's options.
 </td>
 <td align="left" width="63%">
 Returns the debugger command that the engine will execute when a specified event occurs.
+
 
 </td>
 </tr>
@@ -518,6 +543,7 @@ Returns the debugger command that the engine will execute when a specified event
 <td align="left" width="63%">
 Returns a short description of an event for a specific filter.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -526,6 +552,7 @@ Returns a short description of an event for a specific filter.
 </td>
 <td align="left" width="63%">
 Returns the parameters for exception filters specified by exception codes or by index.
+
 
 </td>
 </tr>
@@ -536,6 +563,7 @@ Returns the parameters for exception filters specified by exception codes or by 
 <td align="left" width="63%">
 Returns the command that will be executed by the debugger engine upon the second chance of a specified exception.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -544,6 +572,7 @@ Returns the command that will be executed by the debugger engine upon the second
 </td>
 <td align="left" width="63%">
 Returns the executing processor type for the processor for which the last event occurred.
+
 
 </td>
 </tr>
@@ -554,6 +583,7 @@ Returns the executing processor type for the processor for which the last event 
 <td align="left" width="63%">
 Returns information about the execution status of the debugger engine.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -562,6 +592,7 @@ Returns information about the execution status of the debugger engine.
 </td>
 <td align="left" width="63%">
 Returns the handle for an already loaded extension library.
+
 
 </td>
 </tr>
@@ -572,6 +603,7 @@ Returns the handle for an already loaded extension library.
 <td align="left" width="63%">
 Returns a pointer to an extension function from an extension library.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -580,6 +612,7 @@ Returns a pointer to an extension function from an extension library.
 </td>
 <td align="left" width="63%">
 Checks whether a user interrupt was issued.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -588,6 +621,7 @@ Checks whether a user interrupt was issued.
 </td>
 <td align="left" width="63%">
 Returns the number of seconds that the engine will wait when requesting a break into the debugger.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -597,6 +631,7 @@ Returns the number of seconds that the engine will wait when requesting a break 
 <td align="left" width="63%">
 Returns information about the last event that occurred in a target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -605,6 +640,7 @@ Returns information about the last event that occurred in a target.
 </td>
 <td align="left" width="63%">
 Returns the name of the currently open log file.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -617,6 +653,7 @@ Returns the output mask for the currently open log file.
 HRESULT
 
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -625,6 +662,7 @@ HRESULT
 </td>
 <td align="left" width="63%">
 Returns the location of a processor instruction relative to a given location.
+
 
 </td>
 </tr>
@@ -635,6 +673,7 @@ Returns the location of a processor instruction relative to a given location.
 <td align="left" width="63%">
 Receives the handle of the event that will be signaled after the next exception in a target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -643,6 +682,7 @@ Receives the handle of the event that will be signaled after the next exception 
 </td>
 <td align="left" width="63%">
 Returns the number of breakpoints for the current process.
+
 
 </td>
 </tr>
@@ -653,6 +693,7 @@ Returns the number of breakpoints for the current process.
 <td align="left" width="63%">
 Returns the number of event filters currently used by the engine.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -661,6 +702,7 @@ Returns the number of event filters currently used by the engine.
 </td>
 <td align="left" width="63%">
 Returns the number of processor types that are supported by the computer running the current target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -669,6 +711,7 @@ Returns the number of processor types that are supported by the computer running
 </td>
 <td align="left" width="63%">
 Returns the number of processors on the computer running the current target.
+
 
 </td>
 </tr>
@@ -679,6 +722,7 @@ Returns the number of processors on the computer running the current target.
 <td align="left" width="63%">
 Returns the number of processor types supported by the engine.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -687,6 +731,7 @@ Returns the number of processor types supported by the engine.
 </td>
 <td align="left" width="63%">
 Returns the page size for the effective processor mode.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -695,6 +740,7 @@ Returns the page size for the effective processor mode.
 </td>
 <td align="left" width="63%">
 Returns the processor types that are supported by the computer running the current target.
+
 
 </td>
 </tr>
@@ -705,6 +751,7 @@ Returns the processor types that are supported by the computer running the curre
 <td align="left" width="63%">
 Returns the full name and abbreviated name of the specified processor type.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -713,6 +760,7 @@ Returns the full name and abbreviated name of the specified processor type.
 </td>
 <td align="left" width="63%">
 Returns the standard prompt text that will be prepended to the formatted output specified in the <b>OutputPrompt</b> and <b>OutputPromptVaList</b> methods.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -721,6 +769,7 @@ Returns the standard prompt text that will be prepended to the formatted output 
 </td>
 <td align="left" width="63%">
 Returns the default radix (number base) used by the debugger engine when it evaluates and displays MASM expressions, and when it displays symbol information.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -729,6 +778,7 @@ Returns the default radix (number base) used by the debugger engine when it eval
 </td>
 <td align="left" width="63%">
  Returns the return address for the current function.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -737,6 +787,7 @@ Returns the default radix (number base) used by the debugger engine when it eval
 </td>
 <td align="left" width="63%">
 Returns the value of filter argument for thespecific filters that have an argument.
+
 
 </td>
 </tr>
@@ -747,6 +798,7 @@ Returns the value of filter argument for thespecific filters that have an argume
 <td align="left" width="63%">
 Returns the parameters for specific event filters.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -755,6 +807,7 @@ Returns the parameters for specific event filters.
 </td>
 <td align="left" width="63%">
 Returns the frames at the top of the specified call stack.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -763,6 +816,7 @@ Returns the frames at the top of the specified call stack.
 </td>
 <td align="left" width="63%">
 Returns the processor types supported by the debugger engine. 
+
 
 </td>
 </tr>
@@ -773,6 +827,7 @@ Returns the processor types supported by the debugger engine.
 <td align="left" width="63%">
 Returns the control values for handling system errors.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -781,6 +836,7 @@ Returns the control values for handling system errors.
 </td>
 <td align="left" width="63%">
 Returns information that identifies the operating system on the computer that is running the current target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -789,11 +845,13 @@ Returns information that identifies the operating system on the computer that is
 </td>
 <td align="left" width="63%">
 Returns the value of a fixed-name alias.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetWindbgExtensionApis32</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -804,6 +862,7 @@ Returns the value of a fixed-name alias.
 <td align="left" width="63%">
 returns a structure that facilitates using the WdbgExts API.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -813,6 +872,7 @@ returns a structure that facilitates using the WdbgExts API.
 <td align="left" width="63%">
 Requests an input string from the debugger engine.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -821,6 +881,7 @@ Requests an input string from the debugger engine.
 </td>
 <td align="left" width="63%">
 Determines if the effective processor uses 64-bit pointers.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -829,6 +890,7 @@ Determines if the effective processor uses 64-bit pointers.
 </td>
 <td align="left" width="63%">
 Opens a log file that will receive output from the client objects.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -837,6 +899,7 @@ Opens a log file that will receive output from the client objects.
 </td>
 <td align="left" width="63%">
 Formats a string and sends the result to output callbacks that have been registered with the engine's clients.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -845,6 +908,7 @@ Formats a string and sends the result to output callbacks that have been registe
 </td>
 <td align="left" width="63%">
 Prints the current state of the current target to the debugger console.
+
 
 </td>
 </tr>
@@ -855,6 +919,7 @@ Prints the current state of the current target to the debugger console.
 <td align="left" width="63%">
 Disassembles a processor instruction and sends the disassembly to the output callbacks.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -863,6 +928,7 @@ Disassembles a processor instruction and sends the disassembly to the output cal
 </td>
 <td align="left" width="63%">
 Disassembles several processor instructions and sends the resulting assembly instructions to the output callbacks.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -871,6 +937,7 @@ Disassembles several processor instructions and sends the resulting assembly ins
 </td>
 <td align="left" width="63%">
  Formats and sends a user prompt to the output callback objects.
+
 
 </td>
 </tr>
@@ -881,6 +948,7 @@ Disassembles several processor instructions and sends the resulting assembly ins
 <td align="left" width="63%">
 Formats and sends a user prompt to the output callback objects.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -889,6 +957,7 @@ Formats and sends a user prompt to the output callback objects.
 </td>
 <td align="left" width="63%">
 Outputs either the supplied stack frame or the current stack frames.
+
 
 </td>
 </tr>
@@ -899,6 +968,7 @@ Outputs either the supplied stack frame or the current stack frames.
 <td align="left" width="63%">
  Formats a string and sends the result to the output callbacks that are registered with the engine's clients.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -907,6 +977,7 @@ Outputs either the supplied stack frame or the current stack frames.
 </td>
 <td align="left" width="63%">
 Prints version information about the debugger engine to the debugger console.
+
 
 </td>
 </tr>
@@ -917,6 +988,7 @@ Prints version information about the debugger engine to the debugger console.
 <td align="left" width="63%">
 Reads the kernel bug check code and related parameters.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -925,6 +997,7 @@ Reads the kernel bug check code and related parameters.
 </td>
 <td align="left" width="63%">
 Removes a breakpoint.
+
 
 </td>
 </tr>
@@ -935,6 +1008,7 @@ Removes a breakpoint.
 <td align="left" width="63%">
 Turns off some of the engine's options.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -943,6 +1017,7 @@ Turns off some of the engine's options.
 </td>
 <td align="left" width="63%">
 Unloads an extension library.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -951,6 +1026,7 @@ Unloads an extension library.
 </td>
 <td align="left" width="63%">
 This method is used by <a href="..\dbgeng\nn-dbgeng-idebuginputcallbacks.md">IDebugInputCallbacks</a> objects to send an input string to the engine following a request for input.
+
 
 </td>
 </tr>
@@ -961,6 +1037,7 @@ This method is used by <a href="..\dbgeng\nn-dbgeng-idebuginputcallbacks.md">IDe
 <td align="left" width="63%">
 Sets the current code level and is mainly used when stepping through code.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -969,6 +1046,7 @@ Sets the current code level and is mainly used when stepping through code.
 </td>
 <td align="left" width="63%">
 Sets the effective processor type of the processor of the computer that is running the target.
+
 
 </td>
 </tr>
@@ -979,6 +1057,7 @@ Sets the effective processor type of the processor of the computer that is runni
 <td align="left" width="63%">
 Changes the engine's options.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -987,6 +1066,7 @@ Changes the engine's options.
 </td>
 <td align="left" width="63%">
 Sets a debugger command for the engine to execute when a specified event occurs.
+
 
 </td>
 </tr>
@@ -997,6 +1077,7 @@ Sets a debugger command for the engine to execute when a specified event occurs.
 <td align="left" width="63%">
 Changes the break status and handling status for some exception filters.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1005,6 +1086,7 @@ Changes the break status and handling status for some exception filters.
 </td>
 <td align="left" width="63%">
 Sets the command that will be executed by the debugger engine on the second chance of a specified exception.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1014,6 +1096,7 @@ Sets the command that will be executed by the debugger engine on the second chan
 <td align="left" width="63%">
 Requests that the debugger engine enter an executable state. Actual execution will not occur until the next time <b>WaitForEvent</b> is called.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1022,6 +1105,7 @@ Requests that the debugger engine enter an executable state. Actual execution wi
 </td>
 <td align="left" width="63%">
 Registers a user interrupt or breaks into the debugger.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1030,6 +1114,7 @@ Registers a user interrupt or breaks into the debugger.
 </td>
 <td align="left" width="63%">
 Sets the number of seconds that the debugger engine should wait when requesting a break into the debugger.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1038,6 +1123,7 @@ Sets the number of seconds that the debugger engine should wait when requesting 
 </td>
 <td align="left" width="63%">
 Sets the output mask for the currently open log file.
+
 
 </td>
 </tr>
@@ -1048,6 +1134,7 @@ Sets the output mask for the currently open log file.
 <td align="left" width="63%">
 Sets the event that will be signaled after the next exception in a target.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1056,6 +1143,7 @@ Sets the event that will be signaled after the next exception in a target.
 </td>
 <td align="left" width="63%">
 Sets the default radix (number base) used by the debugger engine when it evaluates and displays MASM expressions, and when it displays symbol information.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1064,6 +1152,7 @@ Sets the default radix (number base) used by the debugger engine when it evaluat
 </td>
 <td align="left" width="63%">
 Sets the value of filter argument for the specific filters that can have an argument.
+
 
 </td>
 </tr>
@@ -1074,6 +1163,7 @@ Sets the value of filter argument for the specific filters that can have an argu
 <td align="left" width="63%">
 Changes the break status and handling status for some specific event filters.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1082,6 +1172,7 @@ Changes the break status and handling status for some specific event filters.
 </td>
 <td align="left" width="63%">
 Sets the control values for handling system errors.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1090,6 +1181,7 @@ Sets the control values for handling system errors.
 </td>
 <td align="left" width="63%">
 Sets the value of a fixed-name alias.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -1098,6 +1190,7 @@ Sets the value of a fixed-name alias.
 </td>
 <td align="left" width="63%">
 Waits for an event that breaks into the debugger engine application.
+
 
 </td>
 </tr>
@@ -1352,6 +1445,7 @@ Waits for an event that breaks into the debugger engine application.
 
  
 
+
 ## -remarks
 
 
@@ -1360,6 +1454,7 @@ Waits for an event that breaks into the debugger engine application.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -1382,5 +1477,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

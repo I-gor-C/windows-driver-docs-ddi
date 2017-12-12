@@ -7,7 +7,7 @@ old-location: display\dxgk_surprise_removal_type.htm
 old-project: display
 ms.assetid: 3045f46d-d78a-4f07-9838-f3afd97d9244
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_SURPRISE_REMOVAL_TYPE, DXGK_SURPRISE_REMOVAL_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Indicates the type of surprise removal event when an external display device is disconnected  from the system.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef enum _DXGK_SURPRISE_REMOVAL_TYPE {
 
 The disconnected external display device was in hibernation mode.
 
+
 ## -remarks
 
 
@@ -64,22 +66,27 @@ The disconnected external display device was in hibernation mode.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

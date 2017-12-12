@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 This structure is used to send a command to the GNSS driver.
+
 The command may involve configuring certain parameters and state variables of the underlying GNSS driver or device, or executing certain defined actions through the driver.
+
 
 
 ## -syntax
@@ -63,32 +65,42 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field CommandType
 
 Identifies the specific command that the driver is required to execute.
+
 This is a well-defined list of GNSS driver commands, as defined by the <a href="..\gnssdriver\ne-gnssdriver-gnss_drivercommand_type.md">GNSS_DRIVERCOMMAND_TYPE</a> enumeration.
+
 
 ### -field CommandFlag
 
 Bitmask indicating certain aspects of the command.
+
 The flags are defined by the GNSS_DRIVERCOMMAND_FLAG_* macro.
+
 
 ### -field CommandDataSize
 
 Size of the configuration data being sent to the driver.
 
+
 ### -field Unused[512]
 
 Padding buffer.
 
+
 ### -field CommandData[ANYSIZE_ARRAY]
 
 Data associated with the specific command type.
+
 The driver must cast this buffer to the appropriate data type depending on the specific command.
+
 
 ## -remarks
 
@@ -98,6 +110,7 @@ The driver must cast this buffer to the appropriate data type depending on the s
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

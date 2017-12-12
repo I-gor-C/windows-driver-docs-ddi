@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: DE45805C-09E6-44B8-A4DA-BF73EC444AA9
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: PGNSS_CHIPSETINFO, GNSS_CHIPSETINFO, *PGNSS_CHIPSETINFO
+ms.keywords: PGNSS_CHIPSETINFO, *PGNSS_CHIPSETINFO, GNSS_CHIPSETINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure defines the specific data elements associated with the GNSS hardware.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
+
 
 ### -field ManufacturerID[25]
 
 String containing an identifier for the manufacturer.
 
+
 ### -field HardwareID[25]
 
 String containing an identifier for the specific GNSS chipset or combo chipset.
+
 
 ### -field FirmwareVersion[20]
 
 Version for the firmware for the. This would be a string, typically of the format NNNN.NNNN.NNNN.NNNN.
 
+
 ### -field Unused[512]
 
 Padding buffer.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Padding buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

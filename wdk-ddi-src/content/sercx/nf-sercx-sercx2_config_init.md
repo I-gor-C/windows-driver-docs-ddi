@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SERCX2_CONFIG_INIT</b> function initializes a <a href="serports.sercx2_config">SERCX2_CONFIG</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -60,31 +61,38 @@ VOID SERCX2_CONFIG_INIT(
 
 A pointer to the <a href="serports.sercx2_config">SERCX2_CONFIG</a> structure that is to be initialized.
 
+
 ### -param EvtSerCx2ApplyConfig [in]
 
 The value to load into the <b>EvtSerCx2ApplyConfig</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="serports.sercx2_config">SERCX2_CONFIG</a>.
+
 
 ### -param EvtSerCx2Control [in]
 
 The value to load into the <b>EvtSerCx2Control</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="serports.sercx2_config">SERCX2_CONFIG</a>.
 
+
 ### -param EvtSerCx2PurgeFifos [in]
 
 The value to load into the <b>EvtSerCx2PurgeFifos</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="serports.sercx2_config">SERCX2_CONFIG</a>.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 Your serial controller driver must use this function to initialize a <a href="serports.sercx2_config">SERCX2_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a> method.
 
 <b>SERCX2_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_CONFIG</b>), and sets three additional members of the structure to the values supplied as input parameters to the function. The function sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_CONFIG_INIT</b> call.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -95,14 +103,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.1.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,9 +124,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level.
+
 </td>
 </tr>
 </table>
@@ -130,5 +143,8 @@ Any level.
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERCX2_CONFIG_INIT function%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

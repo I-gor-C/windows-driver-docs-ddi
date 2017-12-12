@@ -7,7 +7,7 @@ old-location: netvista\wdi_encapsulation_type.htm
 old-project: netvista
 ms.assetid: 6EDCC69B-F156-416B-9824-5E26F9834D14
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WDI_ENCAPSULATION_TYPE enumeration defines the Wi-Fi encapsulation types.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef enum _WDI_ENCAPSULATION_TYPE {
 
 The encapsulation that is defined in IETF RFC 1042.
 
+
 ### -field WDI_ENCAPSULATION_802_1H
 
 The encapsulation that is defined in the IEEE 802.1h-1997 standard.
+
 
 ## -remarks
 
@@ -70,22 +73,27 @@ The encapsulation that is defined in the IEEE 802.1h-1997 standard.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

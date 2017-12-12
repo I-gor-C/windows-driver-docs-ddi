@@ -7,8 +7,8 @@ old-location: netvista\ndis_miniport_interrupt_characteristics.htm
 old-project: netvista
 ms.assetid: f4176e2d-d8d2-4e75-bccb-0c452da4d703
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+ms.date: 12/8/2017
+ms.keywords: _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure
@@ -42,6 +42,7 @@ An NDIS miniport driver defines its interrupt characteristics in an
   NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure and passes the structure to the 
   <a href="netvista.ndismregisterinterruptex">
   NdisMRegisterInterruptEx</a> function.
+
 
 
 ## -syntax
@@ -77,11 +78,13 @@ The
      <b>Revision</b> member to NDIS_MINIPORT_INTERRUPT_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_INTERRUPT_CHARACTERISTICS_REVISION_1.
 
+
 ### -field InterruptHandler
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function that is
      associated with this interrupt.
+
 
 ### -field InterruptDpcHandler
 
@@ -89,11 +92,13 @@ The entry point for the
      <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a> function
      that is associated with this interrupt.
 
+
 ### -field DisableInterruptHandler
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">
      MiniportDisableInterruptEx</a> function.
+
 
 ### -field EnableInterruptHandler
 
@@ -101,20 +106,25 @@ The entry point for the
      <a href="..\ndis\nc-ndis-miniport_enable_interrupt.md">
      MiniportEnableInterruptEx</a> function.
 
+
 ### -field MsiSupported
 
 Set this member to <b>TRUE</b> if the miniport driver supports message-signaled interrupt (MSI) service
      functions. The miniport driver must provide entry points for the MSI service functions.
      
+
 Setting this value to <b>FALSE</b> indicates that MSI is not supported. The MSI service function entry
      points should be set to <b>NULL</b>.
+
 
 ### -field MsiSyncWithAllMessages
 
 Set this member to <b>TRUE</b> if the miniport driver must serialize all MSI service functions. 
      
+
 Setting this value to <b>TRUE</b> can degrade interrupt performance. It is more efficient for multiple
      interrupt service functions that handle different messages to run concurrently.
+
 
 ### -field MessageInterruptHandler
 
@@ -123,12 +133,14 @@ The entry point for the
      MiniportMessageInterrupt</a> function, if it exists, that is associated with this interrupt. If the
      driver does not support message interrupts, set this member to <b>NULL</b>.
 
+
 ### -field MessageInterruptDpcHandler
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">
      MiniportMessageInterruptDPC</a> function, if any, that is associated with this interrupt. If the
      driver does not support message-signaled interrupts, set this member to <b>NULL</b>.
+
 
 ### -field DisableMessageInterruptHandler
 
@@ -137,12 +149,14 @@ The entry point for the
      MiniportDisableMessageInterrupt</a> function, if any. If the driver does not support message signaled
      interrupts, set this member to <b>NULL</b>.
 
+
 ### -field EnableMessageInterruptHandler
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-miniport_enable_message_interrupt.md">
      MiniportEnableMessageInterrupt</a> function, if any. If the driver does not support message-signaled
      interrupts, set this member to <b>NULL</b>.
+
 
 ### -field InterruptType
 
@@ -155,11 +169,13 @@ A variable of type <b>NDIS_INTERRUPT_TYPE</b>. NDIS sets this variable to indica
      message-signaled interrupt. In this case, the driver can access 
      <b>MessageInfoTable</b> to obtain the interrupt information.
 
+
 ### -field MessageInfoTable
 
 An NDIS-supplied pointer to an 
      <a href="kernel.io_interrupt_message_info">
      IO_INTERRUPT_MESSAGE_INFO</a> structure. 
+
 <ul>
 <li>
 If 
@@ -167,9 +183,11 @@ If
      structure with information about the interrupt and sets 
      <b>MessageInfoTable</b> to a pointer to the structure. Miniport drivers must not modify the
      structure.
+
 </li>
 <li>
 If <b>InterruptType</b> is <b>NDIS_CONNECT_LINE_BASED</b>, <b>MessageInfoTable</b> must be NULL.
+
 </li>
 </ul>
 
@@ -180,19 +198,23 @@ A miniport driver calls the
     structure to specify the interrupt characteristics and handler entry points and passes the structure to 
     <b>NdisMRegisterInterruptEx</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -241,5 +263,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

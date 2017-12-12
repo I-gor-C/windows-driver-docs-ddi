@@ -7,7 +7,7 @@ old-location: display\idarg_out_releaseandacquirebuffer.htm
 old-project: display
 ms.assetid: d6092c73-b8fb-4f05-97ce-8a6fe67a2b18
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_RELEASEANDACQUIREBUFFER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Gives information about the
              acquired swap chain buffer.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct IDARG_OUT_RELEASEANDACQUIREBUFFER {
                      [out] Per-frame metadata and frame information.
                  
 
+
 ## -remarks
 
 
@@ -67,6 +69,7 @@ typedef struct IDARG_OUT_RELEASEANDACQUIREBUFFER {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

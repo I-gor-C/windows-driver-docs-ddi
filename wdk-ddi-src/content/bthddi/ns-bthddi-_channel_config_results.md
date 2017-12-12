@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: cda3bfc6-7bdb-4b5a-8845-9a2ca1cc8014
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _CHANNEL_CONFIG_RESULTS, *PCHANNEL_CONFIG_RESULTS, CHANNEL_CONFIG_RESULTS
+ms.keywords: _CHANNEL_CONFIG_RESULTS, CHANNEL_CONFIG_RESULTS, *PCHANNEL_CONFIG_RESULTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The CHANNEL_CONFIG_RESULTS structure contains configuration parameters and the b
   extra options for the inbound and outbound directions of a L2CAP channel.
 
 
+
 ## -syntax
 
 ````
@@ -61,10 +62,12 @@ A
      CHANNEL_CONFIG_PARAMETERS</a> structure that contains the parameters for the specified direction of
      the channel.
 
+
 ### -field ExtraOptionsBufferSize
 
 The size, in bytes, required in the buffer to retrieve the current extra options for the specified
      direction.
+
 
 ## -remarks
 The CHANNEL_CONFIG_RESULTS structure is passed in the 
@@ -72,19 +75,23 @@ The CHANNEL_CONFIG_RESULTS structure is passed in the
     <b>OutResults</b> members of the 
     <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20CHANNEL_CONFIG_RESULTS structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

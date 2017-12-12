@@ -7,8 +7,8 @@ old-location: storage\hba_portstatistics.htm
 old-project: storage
 ms.assetid: 3a0d6633-b4a6-4864-96ae-4f91de11daa1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: HBA_PortStatistics, *PHBA_PORTSTATISTICS, HBA_PORTSTATISTICS
+ms.date: 12/8/2017
+ms.keywords: HBA_PortStatistics, HBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The HBA_PortStatistics structure contains statistical information about a port. 
 
 
+
 ## -syntax
 
 ````
@@ -70,61 +71,76 @@ typedef struct HBA_PortStatistics {
 
 Reports the number of seconds since the statistics were last reset.
 
+
 ### -field TxFrames
 
 Reports the number of fibre channel frames transmitted for all protocols and classes.
+
 
 ### -field TxWords
 
 Reports the number of fibre channel words transmitted for all protocols and classes. 
 
+
 ### -field RxFrames
 
 Reports the number of fibre channel frames received for all protocols and classes. 
+
 
 ### -field RxWords
 
 Reports the number of fibre channel words received for all protocols and classes. 
 
+
 ### -field LIPCount
 
 Reports the number of LIP events that have occurred on a arbitrated loop.
+
 
 ### -field NOSCount
 
 Reports the number of NOS events that have occurred on the switched fabric.
 
+
 ### -field ErrorFrames
 
 Reports the number of frames that have been received in error.
+
 
 ### -field DumpedFrames
 
 Reports the number of frames that were lost due to a lack of host buffers available. 
 
+
 ### -field LinkFailureCount
 
 Reports the link failure count field of the error status block for the port. 
+
 
 ### -field LossOfSyncCount
 
 Reports the value of the loss of synchronization count field of the link error status block for the port.  
 
+
 ### -field LossOfSignalCount
 
 Reports the value of the loss of signal count field of the link error status block for the specified port. 
+
 
 ### -field PrimitiveSeqProtocolErrCount
 
 Reports the value of the primitive sequence protocol error field of the link error status block for the port. 
 
+
 ### -field InvalidTxWordCount
 
 Reports the value of the invalid transmission word field of the link error status block for the specified port. 
 
+
 ### -field InvalidCRCCount
 
 Reports the value of the invalid CRC count field of the link error status block for the specified port. 
+
 
 ## -remarks
 
@@ -134,6 +150,7 @@ Reports the value of the invalid CRC count field of the link error status block 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -150,5 +167,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_PortStatistics structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_PortStatistics structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

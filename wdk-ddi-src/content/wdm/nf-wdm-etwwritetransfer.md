@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>EtwWriteTransfer</b> function marks an event that links two activities together; this type of event is referred to as a <i>transfer event</i>. A transfer event can contain the same user-defined data, the same fields, and is subject to the same rules as other events. 
 
 
+
 ## -syntax
 
 ````
@@ -62,37 +63,46 @@ NTSTATUS EtwWriteTransfer(
 
 A pointer to the event provider registration handle, which is returned by the <b>EtwRegister</b> function if the event provider registration is successful.
 
+
 ### -param EventDescriptor [in]
 
 A pointer to the EVENT_DESCRIPTOR structure. 
+
 
 ### -param ActivityId [in, optional]
 
 The identifier that indicates the activity associated with the event. The <i>ActivityId</i> provides a way to group related events and is used in end-to-end tracing. This identifier is optional and can be <b>NULL</b>.
 
+
 ### -param RelatedActivityId [in, optional]
 
 The identifier that indicates related activity associated with the event. The <i>RelatedActivityID</i> provides a way to group related events and is used in end-to-end tracing. 
+
 
 ### -param UserDataCount [in]
 
 The number of elements in an array of EVENT_DATA_DESCRIPTOR structures. 
 
+
 ### -param UserData [in, optional]
 
 The pointer to the first element in an array of EVENT_DATA_DESCRIPTOR structures. 
 
+
 ## -returns
 <b>EtwWriteTransfer</b> returns STATUS_SUCCESS if the event was successfully published.
 
+
 ## -remarks
 You can call <b>EtwWriteTransfer</b> at any IRQL. However, when IRQL is greater than APC_LEVEL, any data passed to the <b>EtwWrite</b>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must not be pageable. That is, any kernel-mode routine that is running at IRQL greater than APC_LEVEL cannot access pageable memory. Data passed to the <b>EtwWrite</b>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must reside in system-space memory, regardless of what the IRQL is.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,14 +113,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +134,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -131,6 +145,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -141,9 +156,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level (See Comments section.)
+
 </td>
 </tr>
 </table>
@@ -158,5 +175,8 @@ Any level (See Comments section.)
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwWriteTransfer function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

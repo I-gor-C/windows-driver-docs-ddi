@@ -7,7 +7,7 @@ old-location: netvista\fwps_callout1.htm
 old-project: netvista
 ms.assetid: d15c4cd4-b4f0-4363-988a-2bbb235b7b37
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_CALLOUT1_, FWPS_CALLOUT1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The <b>FWPS_CALLOUT1</b> structure defines the data that is required for a callo
   callout with the filter engine.
 
 
+
 ## -syntax
 
 ````
@@ -61,9 +62,11 @@ typedef struct FWPS_CALLOUT1_ {
 
 A callout driver-defined <b>GUID</b> that uniquely identifies the callout.
 
+
 ### -field flags
 
 Flags that specify callout-specific parameters. Possible flags are:
+
 <table>
 <tr>
 <th>Value</th>
@@ -82,6 +85,7 @@ A callout driver can specify this flag when registering a callout that will be a
        is a context associated with the data flow. A callout driver associates a context with a data flow by
        calling the 
        <a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function.
+
 </td>
 </tr>
 <tr>
@@ -96,6 +100,7 @@ A callout driver specifies this flag to indicate that the callout driver's
        by offloading network data processing to offload-capable network interface cards (NICs). If this flag
        is not specified, then offloading of network data processing is disabled for all traffic that is
        processed by any filters that specify the callout for the filter's action.
+
 </td>
 </tr>
 <tr>
@@ -106,6 +111,7 @@ A callout driver specifies this flag to indicate that the callout driver's
 </td>
 <td width="60%">
 A callout driver specifies this flag to indicate that it can receive notifications about objects and filters that are added inside a transaction. The filter engine sends the notification after the transaction is committed.
+
 </td>
 </tr>
 <tr>
@@ -116,6 +122,7 @@ A callout driver specifies this flag to indicate that it can receive notificatio
 </td>
 <td width="60%">
 A callout driver specifies this flag to indicate that it can perform  dynamic stream inspection of data flows at stream level. See <a href="netvista.stream_inspection">Stream Inspection</a>.
+
 </td>
 </tr>
 <tr>
@@ -126,10 +133,12 @@ A callout driver specifies this flag to indicate that it can perform  dynamic st
 </td>
 <td width="60%">
 A callout driver specifies this flag to register itself to be called when an existing socket operation is reclassified.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -field classifyFn
 
@@ -137,11 +146,13 @@ A pointer to the callout driver's
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn1.md">classifyFn1</a> callout function. The filter
      engine calls this function whenever there is network data to be processed by the callout.
 
+
 ### -field notifyFn
 
 A pointer to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn1.md">notifyFn1</a> function. The filter engine calls
      this function to notify the callout driver about events that are associated with the callout.
+
 
 ### -field flowDeleteFn
 
@@ -149,8 +160,10 @@ A pointer to the callout driver's
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a> callout function. The filter
      engine calls this function whenever a data flow that is being processed by the callout is terminated.
      
+
 If a callout driver does not associate a context with the data flows that the callout processes, then
      this member should be set to <b>NULL</b>.
+
 
 ## -remarks
 A callout driver passes a pointer to an initialized <b>FWPS_CALLOUT1</b> structure to the 
@@ -166,19 +179,23 @@ This structure is essentially identical to the previous version,
     <a href="netvista.fwps_callout0">FWPS_CALLOUT0</a>. The only differences are that
     the members of this version store the updated versions of the callout function pointers, and additional flags are available for callout drivers to set.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -210,5 +227,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT1 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT1 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

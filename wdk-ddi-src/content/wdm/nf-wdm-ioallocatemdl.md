@@ -7,7 +7,7 @@ old-location: kernel\ioallocatemdl.htm
 old-project: kernel
 ms.assetid: c06cb000-837d-4ee9-baa1-0217ad8b14cb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: IoAllocateMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>IoAllocateMdl</b> routine allocates a memory descriptor list (MDL) large enough to map a buffer, given the buffer's starting address and length. Optionally, this routine associates the MDL with an IRP. 
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,30 @@ PMDL IoAllocateMdl(
 
 Pointer to the base virtual address of the buffer the MDL is to describe.
 
+
 ### -param Length [in]
 
 Specifies the length, in bytes, of the buffer that the MDL is to describe. For more information, see the following Remarks section.
+
 
 ### -param SecondaryBuffer [in]
 
 Indicates whether the buffer is a primary or secondary buffer. This parameter determines how the MDL is to be linked to the IRP. All buffers except the first buffer described by an MDL in an IRP are considered secondary buffers. This field must be <b>FALSE</b> if no IRP is associated with the MDL. For more information, see the following Remarks section.
 
+
 ### -param ChargeQuota [in]
 
 Reserved for system use. Drivers must set this parameter to <b>FALSE</b>.
+
 
 ### -param Irp [in, out, optional]
 
 Pointer to an IRP to be associated with the MDL. If the <i>Irp</i> pointer is non-<b>NULL</b>, the allocated MDL is associated with the specified IRP's MDL list, according to the value of <i>SecondaryBuffer</i>. 
 
+
 ## -returns
 <b>IoAllocateMdl</b> returns a pointer to an MDL, or, if the MDL cannot be allocated, it returns <b>NULL</b>. 
+
 
 ## -remarks
 <b>IoAllocateMdl</b> can be used by a driver that needs to break a buffer into pieces, each mapped by a separate MDL, or to map a driver-allocated buffer. The driver should call <a href="kernel.mmbuildmdlfornonpagedpool">MmBuildMdlForNonPagedPool</a> with the MDL allocated by this call to set up an MDL describing a driver-allocated buffer in nonpaged pool.
@@ -89,11 +96,13 @@ If the <i>SecondaryBuffer</i> parameter is <b>FALSE</b>, the routine updates <i>
 
 For more information about MDLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -104,14 +113,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,6 +134,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -132,6 +145,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -142,9 +156,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -162,5 +178,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoAllocateMdl routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoAllocateMdl routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

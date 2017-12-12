@@ -7,8 +7,8 @@ old-location: kernel\file_basic_information.htm
 old-project: kernel
 ms.assetid: 8f79a3cf-9bc7-4135-a90e-d9dce86cf5f6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _FILE_BASIC_INFORMATION, *PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION
+ms.date: 12/7/2017
+ms.keywords: _FILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION, *PFILE_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>FILE_BASIC_INFORMATION</b> structure is used as an argument to routines that query or set file information.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _FILE_BASIC_INFORMATION {
 
 Specifies the time that the file was created. 
 
+
 ### -field LastAccessTime
 
 Specifies the time that the file was last accessed. 
+
 
 ### -field LastWriteTime
 
 Specifies the time that the file was last written to. 
 
+
 ### -field ChangeTime
 
 Specifies the last time the file was changed. 
 
+
 ### -field FileAttributes
 
 Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags. For descriptions of these flags, see the documentation for the <b>GetFileAttributes</b> function in the Microsoft Windows SDK.
+
 
 ## -remarks
 The FILE_ATTRIBUTE_NORMAL flag cannot be set or returned in combination with any other attributes. All other <b>FileAttributes</b> values override this attribute.
@@ -88,11 +94,13 @@ The file system updates the values of the <b>LastAccessTime</b>, <b>LastWriteTim
 
 To set the members of this structure, the caller must have FILE_WRITE_ATTRIBUTES access to the file.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,5 +126,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_BASIC_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_BASIC_INFORMATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

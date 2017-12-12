@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields required to carry out a IsochFreeChannel request.
 
 
+
 ## -syntax
 
 ````
@@ -56,14 +57,17 @@ typedef struct _IRB_REQ_ISOCH_FREE_CHANNEL {
 
 Specifies which allocated channel to release.
 
+
 ## -remarks
 If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous channel is returned to the pool of available channels.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

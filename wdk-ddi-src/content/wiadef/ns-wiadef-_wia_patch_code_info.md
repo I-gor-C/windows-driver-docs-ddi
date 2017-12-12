@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>WIA_PATCH_CODE_INFO</b> structure stores information for one decoded patch code.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _WIA_PATCH_CODE_INFO {
 
 The patch code type. One of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706269">WIA_IPS_SUPPORTED_PATCH_CODE_TYPES</a> values.
 
+
 ### -field Page
 
 The page number where the patch code was detected. A zero-based index referring to the current scan job.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ The page number where the patch code was detected. A zero-based index referring 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

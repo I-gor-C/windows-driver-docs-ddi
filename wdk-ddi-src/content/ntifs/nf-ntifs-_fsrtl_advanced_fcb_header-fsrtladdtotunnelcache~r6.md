@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlAddToTunnelCache</b> routine caches a file name that is removed from a directory when a file is renamed or deleted.
 
 
+
 ## -syntax
 
 ````
@@ -62,32 +63,40 @@ VOID FsRtlAddToTunnelCache(
 
 Pointer to a tunnel cache initialized by <a href="ifsk.fsrtlinitializetunnelcache">FsRtlInitializeTunnelCache</a>.
 
+
 ### -param DirectoryKey [in]
 
 Key value of the directory containing the file that is being deleted or renamed. The directory key is a unique unsigned 64-bit identifier that is generated and assigned to the directory by the file system.
+
 
 ### -param ShortName [in]
 
 Unicode string containing the short (8.3) name for the file. If <i>KeyByShortName</i> is <b>FALSE</b>, <i>ShortName</i> is optional.
 
+
 ### -param LongName [in]
 
 Unicode string containing the long name for the file. A long file name is a name for a file or directory that exceeds the standard 8.3 file name format. If <i>KeyByShortName</i> is <b>TRUE</b>, <i>LongName</i> is optional.
+
 
 ### -param KeyByShortName [in]
 
 Set to <b>TRUE</b> if the file name to be deleted from the directory is the short name for the file, <b>FALSE</b> if it is the long name. 
 
+
 ### -param DataLength [in]
 
 Length in bytes of the information to be stored in the tunnel cache entry for this file. The value of this parameter is file-system-specific, but it must be the same for all entries in the tunnel cache.
+
 
 ### -param Data [in]
 
 Pointer to a buffer that contains file-system-specific information to be stored in the tunnel cache entry for this file.
 
+
 ## -returns
 None
+
 
 ## -remarks
 When a file name is removed from a directory (for a file that is being renamed or deleted), the file system can cache the file name by calling <b>FsRtlAddToTunnelCache</b>. The purpose of the tunnel cache is to propagate file properties if a new file is created that has the same long or short name as the file just deleted or renamed.
@@ -98,11 +107,13 @@ The caller is required to synchronize this call against <a href="ifsk.fsrtldelet
 
 For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +124,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,6 +146,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -143,9 +157,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -166,5 +182,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAddToTunnelCache routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

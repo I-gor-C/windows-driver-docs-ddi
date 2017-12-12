@@ -41,6 +41,7 @@ req.irql:
 The KS_AMPixAspectRatio enumeration defines the pixel aspect ratio that corresponds to a 720  480 NTSC video signal or a 720 × 576 PAL video signal.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum  {
 
 Specifies a 4 × 3 NTSC pixel aspect ratio.
 
+
 ### -field KS_PixAspectRatio_NTSC16x9
 
 Specifies a 16 × 9 NTSC pixel aspect ratio.
+
 
 ### -field KS_PixAspectRatio_PAL4x3
 
 Specifies a 4 × 3 PAL pixel aspect ratio.
 
+
 ### -field KS_PixAspectRatio_PAL16x9
 
 Specifies a 16 × 9 PAL pixel aspect ratio.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Specifies a 16 × 9 PAL pixel aspect ratio.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

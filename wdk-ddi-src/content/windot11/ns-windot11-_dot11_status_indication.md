@@ -7,7 +7,7 @@ old-location: netvista\dot11_status_indication.htm
 old-project: netvista
 ms.assetid: 77b2eae8-1fa5-4f87-97e4-713bfca627b2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_STATUS_INDICATION, *PDOT11_STATUS_INDICATION, DOT11_STATUS_INDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,37 +56,45 @@ typedef struct _DOT11_STATUS_INDICATION {
 
 The type of status indication that is made by the miniport driver.
      
+
 For more information about the value that is used for the 
      <b>uStatusType</b> member, see the topic for the OID that requires a completion indication that uses the
      DOT11_STATUS_INDICATION structure.
+
 
 ### -field ndisStatus
 
 An NDIS_STATUS value that indicates the result of the operation.
      
+
 If the operation completed without a failure, the miniport driver must set the 
      <b>ndisStatus</b> member to NDIS_STATUS_SUCCESS. Otherwise, the driver must set 
      <b>ndisStatus</b> to the appropriate NDIS_STATUS_xxx value for the failure.
+
 
 ## -remarks
 For the Windows Vista operating system, only 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569409">OID_DOT11_RESET_REQUEST</a> requires the
     use of the DOT11_STATUS_INDICATION structure for completion indications.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,5 +111,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_STATUS_INDICATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_STATUS_INDICATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

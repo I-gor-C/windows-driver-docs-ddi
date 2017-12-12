@@ -7,7 +7,7 @@ old-location: print\printnamedproperty.htm
 old-project: print
 ms.assetid: F7692594-DE13-4242-926C-F2706FF95E77
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: PrintNamedProperty, PrintNamedProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef struct {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

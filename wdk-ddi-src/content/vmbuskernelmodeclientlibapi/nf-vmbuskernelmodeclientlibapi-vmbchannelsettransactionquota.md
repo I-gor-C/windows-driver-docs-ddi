@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsettransactionquota.htm
 old-project: netvista
 ms.assetid: C88F03BE-96D3-46A7-8269-1ECBFA539111
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: VmbChannelSetTransactionQuota
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The <b>VmbChannelSetTransactionQuota</b> function sets the incoming packet quota. 
+
 
 
 ## -syntax
@@ -59,12 +61,15 @@ VOID VmbChannelSetTransactionQuota(
 
 A handle for a channel.  
 
+
 ### -param Quota [in]
 
  The maximum outstanding packet quota. This value must be greater than 0.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 The incoming packet quota can be set to be lower than the current
@@ -74,43 +79,53 @@ the queue until sufficient packets have been completed.
 
  If the queue is currently blocked due to quota, this operation does not restart it. The queue only restarts once a packet is completed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.13
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -121,6 +136,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

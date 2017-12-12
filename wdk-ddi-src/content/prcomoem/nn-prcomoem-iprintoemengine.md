@@ -7,8 +7,8 @@ old-location: print\iprintoemengine.htm
 old-project: print
 ms.assetid: DE86FA8C-2E27-4B39-B52D-6227AF56F399
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: tagOEMPTOPTS, OEMPTOPTS, *POEMPTOPTS
+ms.date: 12/9/2017
+ms.keywords: tagOEMPTOPTS, *POEMPTOPTS, OEMPTOPTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -42,12 +42,14 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintOemEngine</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IPrintOemEngine</b> also has these types of members:
 
 The <b>IPrintOemEngine</b> interface has these methods.
 
  
+
 
 ## -members
 The <b>IPrintOemEngine</b> interface has these methods.
@@ -78,6 +80,7 @@ The <b>IPrintOemEngine</b> interface has these methods.
 </tr>
 </table> 
 
+
 ## -remarks
 
 
@@ -86,6 +89,7 @@ The <b>IPrintOemEngine</b> interface has these methods.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

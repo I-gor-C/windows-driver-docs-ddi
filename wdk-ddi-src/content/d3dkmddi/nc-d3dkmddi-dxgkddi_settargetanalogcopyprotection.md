@@ -7,7 +7,7 @@ old-location: display\dxgkddi_settargetanalogcopyprotection.htm
 old-project: display
 ms.assetid: D41A1867-C654-4747-B804-CAE047025458
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Sets the analog copy protection on the specified target id.  This is functionally equivalent to the DxgkDdiUpdateActiveVidPnPresentPath in previous WDDM versions if only the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION is changed.
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ NTSTATUS APIENTRY DXGKDDI_SETTARGETANALOGCOPYPROTECTION(
 
 Identifies the adapter.
 
+
 ### -param pSetTargetAnalogCopyProtectionArg [in]
 
 A pointer to a DXGKARG_SETTARGETANALOGCOPYPROTECTION structure that provides the target id and the analog content protection parameters being requested.
 
+
 ## -returns
 If this routine succeeds, it returns STATUS_SUCCESS. 
+
 
 ## -remarks
 This is an optional DDI so the function pointer in the DRIVER_INITIALIZATION_DATA should be set to null if the DDI is not implemented for every adapter supported by the driver.  Since analog content protection is only supported on analog targets and may not be supported through dongles it is increasingly likely over time that drivers will have no need to support this DDI.
@@ -74,11 +78,13 @@ The OEMCopyProtection byte array which is part of the D3DKMDT_VIDPN_PRESENT_PATH
 
 This function is always called at PASSIVE level so the supporting code should be made pageable.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

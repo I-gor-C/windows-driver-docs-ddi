@@ -7,7 +7,7 @@ old-location: display\dxgk_display_usage.htm
 old-project: display
 ms.assetid: 07B51679-4E9B-4360-AA4A-D5BD9BADB4FC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE, *PDXGK_DISPLAY_USAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Enum used to specify the display type being used.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef enum _DXGK_DISPLAY_USAGE {
 
 Invalid type.
 
+
 ### -field DXGK_DU_GENERIC
 
 Generic display type.
+
 
 ### -field DXGK_DU_AR
 
 A head mounted augmented reality display.  
 
+
 ### -field DXGK_DU_VR
 
 A head mounted virtual reality display.  
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ A head mounted virtual reality display.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

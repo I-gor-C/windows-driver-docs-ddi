@@ -7,7 +7,7 @@ old-location: kernel\exinitializenpagedlookasidelist.htm
 old-project: kernel
 ms.assetid: d783feff-d187-4a2f-8d3d-b5221b03459a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: ExInitializeNPagedLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ExInitializeNPagedLookasideList</b> routine initializes a lookaside list for nonpaged entries of the specified size.
 
 
+
 ## -syntax
 
 ````
@@ -63,9 +64,11 @@ VOID ExInitializeNPagedLookasideList(
 
 A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a> structure to initialize. The caller must use nonpaged system space for the structure. On 64-bit platforms, this structure must be 16-byte aligned.
 
+
 ### -param Allocate [in, optional]
 
 A pointer to either a caller-supplied function for allocating an entry when the lookaside list is empty, or to <b>NULL</b>. If non-<b>NULL</b>, the pointer is to a function with the prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -82,9 +85,11 @@ A pointer to either a caller-supplied function for allocating an entry when the 
 </table></span></div>
 If the <i>Allocate</i> parameter is <b>NULL</b>, subsequent calls to <a href="kernel.exallocatefromnpagedlookasidelist">ExAllocateFromNPagedLookasideList</a> automatically allocate entries whenever the lookaside list is empty.
 
+
 ### -param Free [in, optional]
 
 A pointer to either a caller-supplied function for freeing an entry whenever the lookaside list is full, or to <b>NULL</b>. If non-<b>NULL</b>, the pointer is to a function with the prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -99,9 +104,11 @@ A pointer to either a caller-supplied function for freeing an entry whenever the
 </table></span></div>
 If the <i>Free</i> parameter is <b>NULL</b>, subsequent calls to <a href="kernel.exfreetonpagedlookasidelist">ExFreeToNPagedLookasideList</a> automatically release the given entry back to nonpaged pool whenever the list is full, that is, currently holding the system-determined maximum number of entries.
 
+
 ### -param Flags [in]
 
 Starting in Windows 8, this parameter specifies an optional flag value to modify the default behavior of the <b>ExInitializeNPagedLookasideList</b> routine. Compatible flag bits include the following.
+
 <table>
 <tr>
 <th>Flag bit</th>
@@ -110,37 +117,47 @@ Starting in Windows 8, this parameter specifies an optional flag value to modif
 <tr>
 <td>
 POOL_NX_ALLOCATION
+
 </td>
 <td>
 Allocate non-executable memory.
+
 </td>
 </tr>
 <tr>
 <td>
 POOL_RAISE_IF_ALLOCATION_FAILURE
+
 </td>
 <td>
 If the allocation fails, raise an exception.
+
 </td>
 </tr>
 </table>
  
+
 Before Windows 8, this parameter is not used and must be zero.
+
 
 ### -param Size [in]
 
 Specifies the size, in bytes, for each nonpaged entry to be allocated subsequently. This parameter must not be less than the required minimum size, LOOKASIDE_MINIMUM_BLOCK_SIZE, which is defined in the Wdm.h header file.
 
+
 ### -param Tag [in]
 
 Specifies the pool tag to use when allocating lookaside list entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>.
+
 
 ### -param Depth [in]
 
 Reserved. Must be zero.
 
+
 ## -returns
 None
+
 
 ## -remarks
 After calling <b>ExInitializeNPagedLookasideList</b>, memory blocks of the caller-specified <i>Size</i> can be allocated from and freed to the lookaside list with calls to <a href="kernel.exallocatefromnpagedlookasidelist">ExAllocateFromNPagedLookasideList</a> and <a href="kernel.exfreetonpagedlookasidelist">ExFreeToNPagedLookasideList</a>, respectively. Such dynamically allocated and freed entries can be any data structure or fixed-size buffer that the caller uses while the system is running, particularly if the caller cannot predetermine how many such entries will be in use at any given moment. The layout and contents of each fixed-size entry are caller-determined. 
@@ -173,11 +190,13 @@ Starting with Windows Vista, a similar routine, <a href="kernel.exinitializeloo
 
 Callers of <b>ExInitializeNPagedLookasideList</b> can be running at IRQL &lt;= DISPATCH_LEVEL, but are typically running at IRQL = PASSIVE_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -188,14 +207,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -206,6 +228,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -216,6 +239,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -226,9 +250,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -264,5 +290,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInitializeNPagedLookasideList routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInitializeNPagedLookasideList routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

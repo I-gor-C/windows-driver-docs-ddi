@@ -41,6 +41,7 @@ req.irql:
 The FILE_QUOTA_INFORMATION structure is used to query or set per-user quota information for each of the files in a directory. 
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _FILE_QUOTA_INFORMATION {
 
 Offset, in bytes, of the next quota entry in the list. If there are no more entries after the current one, this member is zero. 
 
+
 ### -field SidLength
 
 Length, in bytes, of the <b>Sid</b> member. 
+
 
 ### -field ChangeTime
 
 Time when this quota entry was last changed. 
 
+
 ### -field QuotaUsed
 
 Amount of disk space on this volume that is currently being used by the user. 
+
 
 ### -field QuotaThreshold
 
 Maximum mount of disk space on this volume that can be used by the user without triggering an event. For more information, see <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION</a>. 
 
+
 ### -field QuotaLimit
 
 Maximum amount of disk space on this volume that can be used by the user. 
 
+
 ### -field Sid
 
 Security identifier (SID) of the user. 
+
 
 ## -remarks
 No specific access rights are required to query this information. To perform this query, create an IRP with major function code IRP_MJ_QUERY_QUOTA. 
@@ -97,11 +105,13 @@ On 32-bit platforms, this structure must be aligned on a LONG (4-byte) boundary.
 
 On 64-bit platforms, this structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,5 +137,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_QUOTA_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_destroyprotectedresourcesession_0030.htm
 old-project: display
 ms.assetid: B247AB7B-D133-43FE-A208-CF5E3C7F7DBE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to destroy a protected resource session.
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ VOID APIENTRY* PFND3D12DDI_DESTROYPROTECTEDRESOURCESESSION_0030(
 
 The hardware device being processed.
 
+
 ### -param hDrvProtectedResourceSession 
 
 The protected resource session.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -72,22 +76,27 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

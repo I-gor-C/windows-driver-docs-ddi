@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 The <b>IOCTL_INTERNAL_PARALLEL_PORT_FREE</b> request frees a parallel port. After using a parallel port, a client must free it. Microsoft recommends using the system-supplied <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a> callback to free a parallel port because there is no functional advantage to using an <b>IOCTL_INTERNAL_PARALLEL_PORT_FREE</b> request to free the port.
+
 For more information, see <a href="https://msdn.microsoft.com/ea3a1998-9e31-4047-9193-6b402db222c9">Synchronizing the Use of a ParallelPort</a>.
+
 
 
 ## -ioctlparameters
@@ -47,14 +49,18 @@ For more information, see <a href="https://msdn.microsoft.com/ea3a1998-9e31-4047
 ### -input-buffer
 None.
 
+
 ### -input-buffer-length
 None.
+
 
 ### -output-buffer
 None.
 
+
 ### -output-buffer-length
 None.
+
 
 ### -in-out-buffer
 
@@ -70,6 +76,7 @@ The <b>Information</b> member is set to zero.
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports.
 
+
 ## -remarks
 
 
@@ -78,6 +85,7 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,5 +105,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20IOCTL_INTERNAL_PARALLEL_PORT_FREE control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

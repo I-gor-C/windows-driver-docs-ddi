@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The NETWORK_OPEN_INTEGRITY_QUALIFIER enumeration type contains values that identify the kind of integrity restriction to attach to a file.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum  {
 
 Indicates that the file has no integrity restrictions. That is, the file has no restrictions about how to sign, encrypt, and so on. 
 
+
 ### -field NetworkOpenIntegrityNone
 
 Indicates that the file is not signed or encrypted. 
+
 
 ### -field NetworkOpenIntegritySigned
 
 Indicates that the file is signed end-to-end. 
 
+
 ### -field NetworkOpenIntegrityEncrypted
 
 Indicates that the file is encrypted end-to-end. 
 
+
 ### -field NetworkOpenIntegrityMaximum
 
 Indicates that the file has the best integrity that is available. 
+
 
 ## -remarks
 
@@ -84,14 +90,17 @@ Indicates that the file has the best integrity that is available.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This enumeration type is available starting with Windows Vista. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

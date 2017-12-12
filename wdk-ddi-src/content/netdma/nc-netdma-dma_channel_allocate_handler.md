@@ -7,7 +7,7 @@ old-location: netvista\providerallocatedmachannel.htm
 old-project: netvista
 ms.assetid: 42bc0e08-3d85-424f-aaa4-4df788d3706a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _MIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,6 +63,7 @@ A pointer that identifies a DMA provider's context area. The DMA provider driver
      <a href="netvista.netdmaregisterprovider">
      NetDmaRegisterProvider</a> function.
 
+
 ### -param ChannelParameters [in]
 
 A pointer to a 
@@ -70,10 +71,12 @@ A pointer to a
      NET_DMA_CHANNEL_PARAMETERS</a> structure that defines the configuration parameters for the DMA
      channel.
 
+
 ### -param NetDmaChannelHandle [in]
 
 A handle that identifies the DMA channel. Provider drivers pass this handle to 
      <b>NetDma<i>Xxx</i></b> functions to identify the DMA channel.
+
 
 ### -param pProviderChannelContext [out]
 
@@ -81,6 +84,7 @@ A pointer to a value that is a pointer to a DMA provider's context area for the 
      DMA provider driver allocates this context area before returning from 
      <i>ProviderAllocateDmaChannel</i>. NetDMA passes the context area pointer to 
      <i>ProviderXxx</i> functions that require a provider channel context.
+
 
 ## -returns
 <i>ProviderAllocateDmaChannel</i> returns one of the following status values:
@@ -95,6 +99,7 @@ A pointer to a value that is a pointer to a DMA provider's context area for the 
 </dl>The operation failed for unspecified reasons.
 
  
+
 
 ## -remarks
 The NetDMA interface calls a DMA provider driver's 
@@ -134,19 +139,23 @@ The NetDMA interface calls the
 NetDMA calls 
     <i>ProviderAllocateDmaChannel</i> at IRQL &lt;= DISPATCH_LEVEL.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NetDMA 1.0 drivers in Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,9 +166,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -180,5 +191,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_CHANNEL_ALLOCATE_HANDLER callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_CHANNEL_ALLOCATE_HANDLER callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

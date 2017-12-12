@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <code>AllocateRenderDmaEngine</code> routine allocates a DMA engine for a render stream.
+
 The function pointer type for an <code>AllocateRenderDmaEngine</code> routine is defined as:
+
 
 
 ## -prototype
@@ -64,21 +66,26 @@ NTSTATUS AllocateRenderDmaEngine(
 
 Specifies the context value from the <b>Context</b> members of the <a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a><u>,</u><a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structures.
 
+
 ### -param streamFormat [in]
 
 Specifies the requested stream format. This parameter points to a caller-allocated structure of type <a href="audio.hdaudio_stream_format">HDAUDIO_STREAM_FORMAT</a> that specifies a data format for the stream.
+
 
 ### -param stripe [in]
 
 Specifies whether to enable striping. If <b>TRUE</b>, the routine enables striping in the DMA transfers. If <b>FALSE</b>, striping is disabled.
 
+
 ### -param handle [out]
 
 Retrieves the handle to the DMA engine. This parameter points to a caller-allocated HANDLE variable into which the routine writes a handle that identifies the DMA engine.
 
+
 ### -param converterFormat [out]
 
 Retrieves the converter format. This parameter points to a caller-allocated structure of type <a href="audio.hdaudio_converter_format">HDAUDIO_CONVERTER_FORMAT</a> into which the routine writes the encoded format.
+
 
 ## -returns
 <code>AllocateRenderDmaEngine</code> returns STATUS_SUCCESS if the call succeeds in reserving a DMA engine. Otherwise, the routine returns an appropriate error code. The following table shows some of the possible return error codes.
@@ -93,6 +100,7 @@ Retrieves the converter format. This parameter points to a caller-allocated stru
 </dl>Indicates that one of the parameter values is incorrect (invalid parameter value or bad pointer).
 
  
+
 
 ## -remarks
 This routine allocates a render DMA engine and specifies the data format for the stream. If successful, the routine outputs a handle that the caller subsequently uses to identify the DMA engine.
@@ -115,11 +123,13 @@ Immediately following a successful call to <code>AllocateRenderDmaEngine</code>,
 
 A WDM audio driver calls <code>AllocateRenderDmaEngine</code> at pin-creation time during execution of its <b>NewStream</b> method (for example, see <a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a>).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -130,6 +140,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,9 +151,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -178,5 +191,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PALLOCATE_RENDER_DMA_ENGINE callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

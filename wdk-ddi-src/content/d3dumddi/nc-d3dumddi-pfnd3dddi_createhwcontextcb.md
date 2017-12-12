@@ -7,7 +7,7 @@ old-location: display\pfnd3dddi_createhwcontextcb.htm
 old-project: display
 ms.assetid: 989682F3-340E-4F64-BF2D-771D58066EB2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A callback to create a new hardware context.
 
 
+
 ## -prototype
 
 ````
@@ -57,9 +58,11 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_CREATEHWCONTEXTCB(
 
 A handle to the device.
 
+
 ### -param createHwContext [in, out]
 
 A pointer to the structure holding information on creating the hardware context.
+
 
 ## -returns
 <dl>
@@ -70,6 +73,7 @@ A pointer to the structure holding information on creating the hardware context.
 
 This function might also return other HRESULT values.
 
+
 ## -remarks
 
 
@@ -78,6 +82,7 @@ This function might also return other HRESULT values.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

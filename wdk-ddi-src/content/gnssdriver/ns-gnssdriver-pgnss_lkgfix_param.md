@@ -41,6 +41,7 @@ req.irql:
 This structure is not used currently by the system and is not required to be implemented.
 
 
+
 ## -syntax
 
 ````
@@ -57,18 +58,22 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ## -remarks
 No additional parameter is needed for an LKG fix. The GNSS adapter implements any aging heuristics for rejecting an LKG fix received from the GNSS driver based on the difference between the fix time and current time.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

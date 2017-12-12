@@ -7,7 +7,7 @@ old-location: kernel\rtlsizetsub.htm
 old-project: kernel
 ms.assetid: B7508B3B-DCE7-42F4-9257-E1E140625DA9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlSIZETSub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Subtracts one value of type <b>SIZE_T</b> from another.
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ NTSTATUS RtlSizeTSub(
 
 The value from which <i>Subtrahend</i> is subtracted.
 
+
 ### -param Subtrahend [in]
 
 The value to subtract from <i>Minuend</i>.
+
 
 ### -param pResult [out]
 
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
+
 ## -remarks
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

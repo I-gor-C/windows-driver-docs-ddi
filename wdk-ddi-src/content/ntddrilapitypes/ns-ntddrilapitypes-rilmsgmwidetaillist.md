@@ -7,8 +7,8 @@ old-location: netvista\rilmsgmwidetaillist.htm
 old-project: netvista
 ms.assetid: 026cf4d6-2f34-4911-8ec6-0b4170463e4d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST, RILMSGMWIDETAILLIST
+ms.date: 12/8/2017
+ms.keywords: RILMSGMWIDETAILLIST, RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -83,6 +84,7 @@ typedef struct _RILMSGMWIDETAILLIST {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

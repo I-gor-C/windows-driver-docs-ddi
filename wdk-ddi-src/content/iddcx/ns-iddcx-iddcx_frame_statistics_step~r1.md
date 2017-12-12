@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_statistics_step.htm
 old-project: display
 ms.assetid: a0d1f5b3-d527-417e-8d93-26d8277b7f12
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_FRAME_STATISTICS_STEP,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the frame processing step being used by the driver.
 
 
+
 ## -syntax
 
 ````
@@ -62,11 +63,13 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
                      Total size of the structure
                  
 
+
 ### -field Type
 
 
                      The type of frame processing step
                  
+
 
 ### -field QpcTime
 
@@ -74,11 +77,13 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
                      Provides the system QPC time of the step
                  
 
+
 ### -field Data
 
 
                      When driver defined processing part is used, then the driver can store additional data here
                  
+
 
 ## -remarks
 
@@ -88,6 +93,7 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

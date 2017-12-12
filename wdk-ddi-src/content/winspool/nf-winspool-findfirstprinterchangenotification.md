@@ -7,7 +7,7 @@ old-location: print\findfirstprinterchangenotification.htm
 old-project: print
 ms.assetid: f6d2034a-0906-42ea-a4bd-9cdb1b36c5cf
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: FindFirstPrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,42 +61,55 @@ BOOL FindFirstPrinterChangeNotification(
 
 Caller-supplied printer handle, identifying the printer for which event notification is being requested. This handle must have been previously obtained from OpenPrinter (described in the Microsoft Windows SDK documentation).
 
+
 ### -param fdwFlags 
 
 One or more caller-supplied PRINTER_CHANGE-prefixed flags. For more information, see the description of <b>FindFirstPrinterChangeNotification</b> in the Windows SDK documentation.
+
 
 ### -param fdwOptions 
 
 Not used.
 
+
 ### -param hNotify 
 
 Caller-supplied notification handle. This handle must be saved and used as input to <a href="print.replyprinterchangenotification">ReplyPrinterChangeNotification</a> and <a href="print.partialreplyprinterchangenotification">PartialReplyPrinterChangeNotification</a>.
+
 
 ### -param pfdwStatus 
 
 Caller-supplied pointer to a location to receive provider-specified flags. The following flags are defined.
 
 
+
+
 ### -param PRINTER_NOTIFY_STATUS_ENDPOINT 
 
 If set, the print provider supplies print change notifications, by either the polling or the change notification method. (The notification method is identified by the PRINTER_NOTIFY_STATUS_POLL flag.)
+
 </dd>
 </dl>
+
 
 
 ### -param PRINTER_NOTIFY_STATUS_POLL 
 
 If set, the print application must poll to detect printer changes.
+
 If clear, the print provider notifies the spooler of changes by calling <a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a>.
+
 (See the following Remarks section.)
+
 </dd>
 </dl>
+
 
 
 ### -param PRINTER_NOTIFY_STATUS_INFO 
 
 Not used.
+
 </dd>
 </dl>
 
@@ -104,12 +117,15 @@ Not used.
 
 Caller-supplied pointer to a PRINTER_NOTIFY_OPTIONS structure (described in the Windows SDK documentation).
 
+
 ### -param pPrinterNotifyInit 
 
 Not used.
 
+
 ## -returns
 If the operation succeeds, the function should return <b>TRUE</b>. Otherwise the function should return <b>FALSE</b>.
+
 
 ## -remarks
 When the spooler calls a print provider's <b>FindFirstPrinterChangeNotification</b> function, <i>fdwFlags</i> identifies the printer events for which notification is being requested. Additionally, <i>pPrinterNotifyOptions</i> identifies the types of information that the print provider should send to the spooler when one of the specified events occurs.
@@ -124,11 +140,13 @@ Both polled and nonpolled print provider must return the current state of all re
 
 For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -139,6 +157,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -149,6 +168,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -159,6 +179,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -181,5 +202,8 @@ DLL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20FindFirstPrinterChangeNotification function%20 RELEASE:%20(11/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20FindFirstPrinterChangeNotification function%20 RELEASE:%20(12/9/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

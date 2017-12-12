@@ -7,7 +7,7 @@ old-location: netvista\ndismallocatesharedmemoryasyncex.htm
 old-project: netvista
 ms.assetid: ccbe98ca-7da9-4159-ac1a-c25ec6745ff4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMAllocateSharedMemoryAsyncEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ Miniport drivers call the
   buffers.
 
 
+
 ## -syntax
 
 ````
@@ -65,18 +66,22 @@ A handle to a context area that NDIS uses to manage a DMA resource. The caller o
      <a href="netvista.ndismregisterscattergatherdma">
      NdisMRegisterScatterGatherDma</a> function.
 
+
 ### -param Length [in]
 
 The number of bytes to allocate.
+
 
 ### -param Cached [in]
 
 This parameter is ignored (cached memory is always used on x86 and x64 systems).
 
+
 ### -param Context [in]
 
 A pointer to driver-determined context to be passed to the 
      <a href="..\ndis\nc-ndis-miniport_allocate_shared_mem_complete.md">MiniportSharedMemoryAllocateComplete</a> function when it is called.
+
 
 ## -returns
 <b>NdisMAllocateSharedMemoryAsyncEx</b> can return one of the following:
@@ -93,6 +98,7 @@ A pointer to driver-determined context to be passed to the
        might succeed, depending on whether system resources have become available.
 
  
+
 
 ## -remarks
 Drivers of bus-master DMA NICs call 
@@ -127,11 +133,13 @@ Any miniport driver that calls
     <a href="netvista.ndismallocatesharedmemory">NdisMAllocateSharedMemory</a> must release all outstanding allocations with one or more calls to 
     <a href="netvista.ndismfreesharedmemory">NdisMFreeSharedMemory</a> when its NIC is removed.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,14 +150,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,14 +171,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
@@ -202,5 +216,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemoryAsyncEx function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemoryAsyncEx function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\fwps_bind_request0.htm
 old-project: netvista
 ms.assetid: 1a311470-b443-41d8-866f-10bf3120c13c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _FWPS_BIND_REQUEST0, FWPS_BIND_REQUEST0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The <b>FWPS_BIND_REQUEST0</b> structure defines modifiable data for the FWPM_LAY
   connection information.
 
 
+
 ## -syntax
 
 ````
@@ -63,6 +64,7 @@ The local transport address of the bind request. This is an IPV4 or IPV6 address
      formatted as a 
      <a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a> structure.
 
+
 ### -field portReservationToken
 
 A token used to reserve the appropriate port. The token is obtained when a port is reserved by
@@ -70,9 +72,11 @@ A token used to reserve the appropriate port. The token is obtained when a port 
      <a href="iphlp.createpersistenttcpportreservation">CreatePersistentTcpPortReservation</a> or 
      <a href="iphlp.createpersistentudpportreservation">CreatePersistentUdpPortReservation</a>. Both reservation functions can be found in iphlpapi.h.
 
+
 ### -field previousVersion
 
 The previous version of the bind request data. This read-only field records the modification history of the bind request. This member is preinitialized with a pointer to a singly linked list with the index set to the record for the current FWPS_BIND_REQUEST0 data.
+
 
 
 ### -field modifierFilterId
@@ -83,6 +87,7 @@ The value of the
      <i>filter</i> parameter. For more information about the 
      <b>FilterId</b> member, see 
      <a href="netvista.fwps_filter1">FWPS_FILTER1</a>.
+
 
 ## -remarks
 The callout driver obtains this structure by calling the 
@@ -117,19 +122,23 @@ This structure acts as a linked list that contains a record of all changes made 
     must continue to examine the 
     <b>previousVersion</b> member of each structure in the list until it is finds a node that has this member set to a value of <b>NULL</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -159,5 +168,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_BIND_REQUEST0 structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_BIND_REQUEST0 structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

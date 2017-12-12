@@ -7,8 +7,8 @@ old-location: kernel\image_info_ex.htm
 old-project: kernel
 ms.assetid: 97F3D9BE-9069-4A4A-B114-FC9331510512
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _IMAGE_INFO_EX, IMAGE_INFO_EX, *PIMAGE_INFO_EX
+ms.date: 12/7/2017
+ms.keywords: _IMAGE_INFO_EX, *PIMAGE_INFO_EX, IMAGE_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Extended version of the image information structure (see <a href="kernel.image_info">IMAGE_INFO</a>).
 
 
+
 ## -syntax
 
 ````
@@ -58,22 +59,27 @@ typedef struct _IMAGE_INFO_EX {
 
 Specifies the size, in bytes, of the <b>IMAGE_INFO_EX</b> structure. 
 
+
 ### -field ImageInfo
 
 An <a href="kernel.image_info">IMAGE_INFO</a> structure that specifies image information.
+
 
 ### -field FileObject
 
 Contains a pointer to the file object of the backing file for the image. The driver can take a reference to this object or use it for other operations.
 
+
 ## -remarks
 If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure. In this case, the load-image notify routine can use the <b>CONTAINING_RECORD</b> macro in the Winnt.h header file to obtain the base address of the <b>IMAGE_INFO_EX</b> structure. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,5 +102,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IMAGE_INFO_EX structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IMAGE_INFO_EX structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

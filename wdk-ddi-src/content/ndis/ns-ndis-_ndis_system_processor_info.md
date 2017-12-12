@@ -7,8 +7,8 @@ old-location: netvista\ndis_system_processor_info.htm
 old-project: netvista
 ms.assetid: f59b9394-7742-423d-9a6e-3a429ccb0740
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_SYSTEM_PROCESSOR_INFO, *PNDIS_SYSTEM_PROCESSOR_INFO, NDIS_SYSTEM_PROCESSOR_INFO
+ms.date: 12/8/2017
+ms.keywords: _NDIS_SYSTEM_PROCESSOR_INFO, NDIS_SYSTEM_PROCESSOR_INFO, *PNDIS_SYSTEM_PROCESSOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_SYSTEM_PROCESSOR_INFO structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The <b>NDIS_SYSTEM_PROCESSOR_INFO</b> structure specifies information about the CPU topology of the local
   computer and the receive side scaling (RSS) processor set.
+
 
 
 ## -syntax
@@ -73,9 +74,11 @@ The
      <b>Revision</b> member to NDIS_SYSTEM_PROCESSOR_INFO_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_SYSTEM_PROCESSOR_INFO_REVISION_1.
 
+
 ### -field Flags
 
 Reserved. Set this member to zero.
+
 
 ### -field ProcessorVendor
 
@@ -83,19 +86,23 @@ The processor vendor specified as one of the values from the
      <a href="netvista.ndis_processor_vendor">
      NDIS_PROCESSOR_VENDOR</a> enumeration.
 
+
 ### -field NumPhysicalPackages
 
 The total number of processor physical packages that are in the local computer.
+
 
 ### -field NumCores
 
 The total number of core processors that are in the local computer. For example, set this member
      to four if there are two dual core physical packages.
 
+
 ### -field NumCoresPerPhysicalPackage
 
 The number of core processors that are in each physical package. For example, set this member to
      two for a dual core physical package.
+
 
 ### -field MaxHyperThreadingCpusPerCore
 
@@ -103,13 +110,16 @@ The maximum number of logical processors that are in each hyper-threaded core pr
      example, set this member to two if each hyper-threaded core processor supports two logical
      processors.
 
+
 ### -field RssBaseCpu
 
 The starting CPU number that is used for RSS.
 
+
 ### -field RssCpuCount
 
 The number of processors that are used for RSS.
+
 
 ### -field RssProcessors
 
@@ -122,6 +132,7 @@ A pointer to an optional caller-provided buffer that will contain the CPU number
      NdisGetProcessorInformation</a> function returns successfully, the buffer contains CPU numbers
      followed by undefined data.
 
+
 ### -field CpuInfo
 
 An array of 
@@ -133,6 +144,7 @@ An array of
      <a href="netvista.ndissystemactiveprocessorcount">
      NdisSystemActiveProcessorCount</a> function reports.
 
+
 ## -remarks
 NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO structure in calls to the 
     <a href="netvista.ndisgetprocessorinformation">
@@ -140,19 +152,23 @@ NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO structure in calls to th
     <b>NdisGetProcessorInformation</b> returns, this structure contains information about the CPU topology of
     the system and the set of processors that will be used for receive side scaling (RSS).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="netvista.ndis_system_processor_info_ex">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -185,5 +201,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

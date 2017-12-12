@@ -7,7 +7,7 @@ old-location: debugger\idebugplmclient3.htm
 old-project: debugger
 ms.assetid: 5B0580FF-0829-406A-B511-C0CD91A08D5F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This interface supports Process Lifecycle Management (PLM) for the debug client.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugPlmClient3</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IDebugPlmClient3</b> also has these types of members:
 
@@ -66,6 +67,7 @@ Ends a Process Lifecycle Management (PLM) package.
 
  
 
+
 ## -members
 The <b>IDebugPlmClient3</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -79,6 +81,7 @@ The <b>IDebugPlmClient3</b> interface has these methods.
 </td>
 <td align="left" width="63%">
     Launches and attaches to a Process Lifecycle Management (PLM) background task.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -87,6 +90,7 @@ The <b>IDebugPlmClient3</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Disables a Process Lifecycle Management (PLM) package debug.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -95,6 +99,7 @@ Disables a Process Lifecycle Management (PLM) package debug.
 </td>
 <td align="left" width="63%">
 Enables a Process Lifecycle Management (PLM) package debug.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -103,6 +108,7 @@ Enables a Process Lifecycle Management (PLM) package debug.
 </td>
 <td align="left" width="63%">
     Launches and attaches to a Process Lifecycle Management (PLM) application. 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -111,6 +117,7 @@ Enables a Process Lifecycle Management (PLM) package debug.
 </td>
 <td align="left" width="63%">
 Query a Process Lifecycle Management (PLM) package list.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -119,6 +126,7 @@ Query a Process Lifecycle Management (PLM) package list.
 </td>
 <td align="left" width="63%">
 Query a Process Lifecycle Management (PLM) package.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -127,6 +135,7 @@ Query a Process Lifecycle Management (PLM) package.
 </td>
 <td align="left" width="63%">
 Resumes a Process Lifecycle Management (PLM) package.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -135,6 +144,7 @@ Resumes a Process Lifecycle Management (PLM) package.
 </td>
 <td align="left" width="63%">
 Suspends a Process Lifecycle Management (PLM) package.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -143,6 +153,7 @@ Suspends a Process Lifecycle Management (PLM) package.
 </td>
 <td align="left" width="63%">
 Ends a Process Lifecycle Management (PLM) package.
+
 </td>
 </tr>
 </table>    Launches and attaches to a Process Lifecycle Management (PLM) background task.
@@ -165,6 +176,7 @@ Ends a Process Lifecycle Management (PLM) package.
 
  
 
+
 ## -remarks
 
 
@@ -173,6 +185,7 @@ Ends a Process Lifecycle Management (PLM) package.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

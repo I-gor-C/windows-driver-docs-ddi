@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Wlanihvtypes.h header
 
+## -description
 
 This header is used by Networking drivers for Windows Vista and later. For more information, see
 - [Networking drivers for Windows Vista and later](../_netvista/index.md)
@@ -11,7 +16,7 @@ Wlanihvtypes.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [DOT11EXT_IHV_PARAMS structure](ns-wlanihvtypes--dot11ext-ihv-params.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [DOT11EXT_IHV_PROFILE_PARAMS structure](ns-wlanihvtypes--dot11ext-ihv-profile-params.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [DOT11EXT_IHV_SSID_LIST structure](ns-wlanihvtypes--dot11ext-ihv-ssid-list.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [DOT11_MSSECURITY_SETTINGS structure](ns-wlanihvtypes--dot11-mssecurity-settings.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
+| [_DOT11EXT_IHV_PARAMS structure](ns-wlanihvtypes-_dot11ext_ihv_params.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
+| [_DOT11EXT_IHV_PROFILE_PARAMS structure](ns-wlanihvtypes-_dot11ext_ihv_profile_params.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
+| [_DOT11EXT_IHV_SSID_LIST structure](ns-wlanihvtypes-_dot11ext_ihv_ssid_list.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
+| [_DOT11_MSSECURITY_SETTINGS structure](ns-wlanihvtypes-_dot11_mssecurity_settings.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |

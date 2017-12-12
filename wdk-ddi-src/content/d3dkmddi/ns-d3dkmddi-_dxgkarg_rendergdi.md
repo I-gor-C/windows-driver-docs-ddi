@@ -7,7 +7,7 @@ old-location: display\dxgkarg_rendergdi.htm
 old-project: display
 ms.assetid: E1DC536B-581E-43F8-99B2-776DC30EEBB7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>DXGKARG_RENDERGDI</b> structure is used when submitting Windows Graphics Device Interface (GDI) commands for contexts that support virtual addressing.
 
 
+
 ## -syntax
 
 ````
@@ -65,41 +66,51 @@ typedef struct _DXGKARG_RENDERGDI {
 
 A pointer to the start of the command buffer.
 
+
 ### -field CommandLength
 
 The size, in bytes, of the command buffer that <b>pCommand</b> points to.
+
 
 ### -field pDmaBuffer
 
 A pointer to the start of the DMA buffer, which is aligned on 4 KB. 
 
+
 ### -field DmaBufferGpuVirtualAddress
 
 A <b>D3DGPU_VIRTUAL_ADDRESS</b> data type that indicates the virtual address where the DMA buffer was paged in. If the physical address is zero, the DMA buffer is not correctly paged in.
+
 
 ### -field DmaSize
 
 The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.
 
+
 ### -field pDmaBufferPrivateData
 
 A pointer to a driver-resident private data structure that is used for generating the DMA buffer that <b>pDmaBuffer</b> points to.
+
 
 ### -field DmaBufferPrivateDataSize
 
 The number of bytes that remain in the private data structure that <b>pDmaBufferPrivateData</b> points to for the current operation.
 
+
 ### -field pAllocationList
 
 An array of <a href="display.dxgk_allocationlist">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.
+
 
 ### -field AllocationListSize
 
 The available number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocation specifications to send through DMA to the graphics hardware.
 
+
 ### -field MultipassOffset
 
 A value that specifies the progress of the rendering operation.
+
 
 ## -remarks
 
@@ -109,22 +120,27 @@ A value that specifies the progress of the rendering operation.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

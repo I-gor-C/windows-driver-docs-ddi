@@ -41,6 +41,7 @@ req.irql:
 Gets the PCI Express SR-IOV Virtual Function (VF) given a unique identifier.
 
 
+
 ## -prototype
 
 ````
@@ -65,45 +66,55 @@ A pointer to a driver-defined context.
                     
                 
 
+
 ### -param Luid [in]
 
 The local unique
 identifier of the VF whose index is being retrieved.
 
+
 ### -param VfIndex [out]
 
 A zero-based index of the VF that is being queried.
 
+
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
+
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to get the identifier of a specific virtual function. 
 
 The PF driver registers its implementation by setting the <b>QueryLuidVf</b> member of the <a href="buses._sriov_device_interface_standard_2">SRIOV_DEVICE_INTERFACE_STANDARD_2</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -114,8 +125,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

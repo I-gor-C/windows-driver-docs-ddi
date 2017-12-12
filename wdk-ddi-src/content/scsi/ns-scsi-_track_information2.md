@@ -7,7 +7,7 @@ old-location: storage\track_information2.htm
 old-project: storage
 ms.assetid: 2fea2f8a-eb55-409c-80d2-c3f49ab6bfdf
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _TRACK_INFORMATION2, *PTRACK_INFORMATION2, TRACK_INFORMATION2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <= APC_LEVEL
+req.irql: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The TRACK_INFORMATION2 structure is used to report track information.
+
 
 
 ## -syntax
@@ -81,120 +82,150 @@ typedef struct _TRACK_INFORMATION2 {
 
 The length, in bytes, of this structure.
 
+
 ### -field TrackNumberLsb
 
 The least significant byte of the track number.
+
 
 ### -field SessionNumberLsb
 
 The least significant byte of the session number.
 
+
 ### -field Reserved4
 
 Reserved.
+
 
 ### -field TrackMode
 
 The track mode. See the <i>SCSI-3 Multi-Media </i>specification for an explanation of meaning of this member.
 
+
 ### -field Copy
 
 The copy bit indicates whether the track is a copy or not. If this bit is 1, the track is a copy. If it is 0, the track is not a copy.
+
 
 ### -field Damage
 
 The damage bit indicates, together with the NWA_V bit, whether a write to the media is complete or not, and what sort of methods the CD-ROM class driver can use to complete the write. See the <i>SCSI-3 Multi-Media </i>specification for an explanation of how to interpret the values in the <b>Damage</b> and <b>NWA_V</b> members.
 
+
 ### -field Reserved5
 
 Reserved.
 
+
 ### -field DataMode
 
 The data mode. This member can have any of the following values:
+
 <table>
 <tr>
 <td>
 <b>Value</b>
+
 </td>
 <td>
 <b>Meaning</b>
+
 </td>
 </tr>
 <tr>
 <td>
 0x1
+
 </td>
 <td>
 The track uses data mode 1 (ISO/IEC 10149)
+
 </td>
 </tr>
 <tr>
 <td>
 0x2
+
 </td>
 <td>
 The track uses data mode 2 (ISO/IEC 10149 or CD-ROM XA)
+
 </td>
 </tr>
 <tr>
 <td>
 0xf
+
 </td>
 <td>
 There is no track descriptor block, and therefore the data block type of the track is unknown.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field FixedPacket
 
 The fixed packet bit indicates, under some circumstances, when set to 1, that write operations to the track must must use fixed packets. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.
+
 
 ### -field Packet
 
 The fixed packet bit indicates, under some circumstances, when set to 1, that write operations to the track must must use fixed packets. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.
 
+
 ### -field Blank
 
 The blank bit, when set to 1, indicates that the track contains no written data and last recorded address field is invalid. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.
+
 
 ### -field ReservedTrack
 
 The reserved track bit, when 1, indicates that the track is reserved.
 
+
 ### -field NWA_V
 
 A boolean value that indicates, when 1, that the value in <b>NextWritableAddress</b> is valid. If 0, the value in <b>NextWritableAddress</b> is invalid.
+
 
 ### -field LRA_V
 
 A boolean value that indicates whether the <b>LastRecordedAddress</b> member is valid or not. If <b>LRA_V</b> is 1, the <b>LastRecordedAddress</b> member is valid. If 0, the <b>LastRecordedAddress</b> member is not valid.
 
+
 ### -field Reserved6
 
 Reserved.
+
 
 ### -field TrackStartAddress
 
 The starting address of the specified track.
 
+
 ### -field NextWritableAddress
 
 The logical block address of the next writable user block in the track specified by the track number (<b>TrackNumberLsb</b> and <b>TrackNumberMsb</b>).
+
 
 ### -field FreeBlocks
 
 The maximum number of user data blocks that are available for recording in the track.
 
+
 ### -field FixedPacketSize
 
 The blocking factor. This value The fixed packet size is valid only when the Packet and the FP bits are both set to one.
 
+
 ### -field TrackSize
 
 Track Size is the number of user data blocks in the track.
+
 
 ### -field LastRecordedAddress
 
@@ -203,13 +234,16 @@ Track Size is the number of user data blocks in the track.
 
 The most significant byte of the track number.
 
+
 ### -field SessionNumberMsb
 
 The most significant byte of the session number.
 
+
 ### -field Reserved7
 
 Reserved7
+
 
 ## -remarks
 
@@ -219,6 +253,7 @@ Reserved7
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

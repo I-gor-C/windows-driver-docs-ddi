@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_heap_flags.htm
 old-project: display
 ms.assetid: 8224E497-7F52-469B-98C9-ECC5F1970894
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_HEAP_FLAGS, D3D12DDI_HEAP_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains Direct3D 12 heap flags. 
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef enum D3D12DDI_HEAP_FLAGS {
 
 No flags.
 
+
 ### -field D3D12DDI_HEAP_FLAG_NON_RT_DS_TEXTURES
 
 The heap supports resources allocated for other than Render Target (RT) and Depth-Stencil (DS) textures. 
+
 
 ### -field D3D12DDI_HEAP_FLAG_BUFFERS
 
 The heap supports resources allocated for buffers.
 
+
 ### -field D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE
 
 The heap supports resources allocated for coherent systemwide. 
+
 
 ### -field D3D12DDI_HEAP_FLAG_PRIMARY
 
 The heap supports resources allocated for primary.
 
+
 ### -field D3D12DDI_HEAP_FLAG_RT_DS_TEXTURES
 
 The heap supports resources allocated for RT and DS textures.
 
+
 ### -field D3D12DDI_HEAP_FLAG_CONTENT_PROTECTION 
 
 The heap supports resources allocated for content protection.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ The heap supports resources allocated for content protection.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

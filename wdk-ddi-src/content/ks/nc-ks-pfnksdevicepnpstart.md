@@ -41,6 +41,7 @@ req.irql:
 An AVStream minidriver's <i>AVStrMiniDeviceStart</i> routine is called when an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request is sent for a specified device.
 
 
+
 ## -prototype
 
 ````
@@ -62,20 +63,25 @@ NTSTATUS AVStrMiniDeviceStart(
 
 Pointer to a <a href="stream.ksdevice">KSDEVICE</a> structure describing the device to be started.
 
+
 ### -param Irp [in]
 
 Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> that was received.
+
 
 ### -param TranslatedResourceList [in, optional]
 
 Pointer to a <a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a> structure that contains the translated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if <i>Device</i> has no assigned resources. Optional.
 
+
 ### -param UntranslatedResourceList [in, optional]
 
 Pointer to a <a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a> structure that contains the untranslated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if the <a href="stream.ksdevice">KSDEVICE</a> member of this parameter list has no assigned resources. Optional.
 
+
 ## -returns
 Should return STATUS_SUCCESS or the error code that was returned from the attempt to perform the operation. The start is guaranteed to succeed if the routine returns a successful status code. Do NOT return STATUS_PENDING.
+
 
 ## -remarks
 Specify this routine's address in the <b>Start</b> member of its <a href="stream.ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
@@ -88,11 +94,13 @@ Note that STATUS_PENDING is not a legal return code from this function.  To perf
 
 This routine is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,14 +111,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniDeviceStart routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

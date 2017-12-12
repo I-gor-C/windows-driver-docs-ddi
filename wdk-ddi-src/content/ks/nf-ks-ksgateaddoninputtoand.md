@@ -41,6 +41,7 @@ req.irql: Any level
 The<b> KsGateAddOnInputToAnd</b> function adds a new input in the ON state to a given AND gate.
 
 
+
 ## -syntax
 
 ````
@@ -56,19 +57,23 @@ void __inline KsGateAddOnInputToAnd(
 
 A pointer to a <a href="stream.ksgate">KSGATE</a> structure representing the AND gate to which to add a new ON input.
 
+
 ## -returns
 None
+
 
 ## -remarks
 This function should only be used on gates that were specifically created as AND gates; AVStream does not verify that the given gate is an AND gate.
 
 This call is an empty function. It should be used for code readability and clarity. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -79,14 +84,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,9 +105,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>
@@ -123,5 +133,8 @@ Any level
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateAddOnInputToAnd function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

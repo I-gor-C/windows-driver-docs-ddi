@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The <b>IKsPropertySet</b> interface provides methods that access properties of KS objects that are implemented in a KS minidriver.
+
 The IID for this interface is IID_IKsPropertySet.
+
 
 
 ## -inheritance
@@ -79,6 +81,7 @@ Sets a property.
 
  
 
+
 ## -members
 The <b>IKsPropertySet</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -92,6 +95,7 @@ The <b>IKsPropertySet</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Retrieves a property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -100,6 +104,7 @@ Retrieves a property.
 </td>
 <td align="left" width="63%">
 Determines the support of a property.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -108,6 +113,7 @@ Determines the support of a property.
 </td>
 <td align="left" width="63%">
 Sets a property.
+
 </td>
 </tr>
 </table>Retrieves a property.
@@ -118,16 +124,19 @@ Sets a property.
 
  
 
+
 ## -remarks
 The <b>IKsPropertySet</b> interface methods translate user-mode property requests into kernel-mode property sets that are used by KS minidrivers. 
 
 KS objects include, for example, KS filters, KS pins, and KS clocks. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

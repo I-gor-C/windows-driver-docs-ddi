@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL (see Remarks section)
 <b>FltAllocatePoolAlignedWithTag</b> allocates a device-aligned buffer for use in a noncached I/O operation. 
 
 
+
 ## -syntax
 
 ````
@@ -59,25 +60,35 @@ PVOID FltAllocatePoolAlignedWithTag(
 
 Opaque instance pointer for a caller-owned minifilter driver instance that is attached to the volume. This parameter is required and cannot be <b>NULL</b>. 
 
+
 ### -param PoolType [in]
 
 Type of pool to allocate. One of the following: 
+
 <b>NonPagedPool</b>
+
 <b>PagedPool</b>
+
 <b>NonPagedPoolCacheAligned</b>
+
 <b>PagedPoolCacheAligned</b>
+
 See <a href="kernel.pool_type">POOL_TYPE</a> for a description of the available pool memory types. 
+
 
 ### -param NumberOfBytes [in]
 
 Number of bytes to allocate. This parameter is required and can be zero. 
 
+
 ### -param Tag [in]
 
 Specifies the pool tag for the allocated memory. Drivers normally specify the pool tag as a string of one to four 7-bit ASCII characters, delimited by single quotation marks (for example, 'abcd'). This parameter is required and cannot be zero. 
 
+
 ## -returns
 If not enough free pool is available to satisfy the request, <b>FltAllocatePoolAlignedWithTag</b> returns a <b>NULL</b> pointer. Otherwise, <b>FltAllocatePoolAlignedWithTag</b> returns a pointer to the newly allocated buffer. 
+
 
 ## -remarks
 <b>FltAllocatePoolAlignedWithTag</b> allocates a buffer that is aligned in accordance with the underlying device for the given volume. Such device-aligned buffers are required for noncached I/O. (They can also be used for cached I/O.) Thus when calling routines that perform noncached I/O, such as <a href="ifsk.fltreadfile">FltReadFile</a> and <a href="ifsk.fltwritefile">FltWriteFile</a>, minifilter drivers should call <b>FltAllocatePoolAlignedWithTag</b> instead of <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>. 
@@ -92,11 +103,13 @@ When the buffer that <b>FltAllocatePoolAlignedWithTag</b> allocates is no longer
 
 Callers of <b>FltAllocatePoolAlignedWithTag</b> can be running at IRQL DISPATCH_LEVEL only if a NonPaged<i>XxxPoolType</i> is specified. Otherwise, callers must be running at IRQL &lt;= APC_LEVEL. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +120,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -117,6 +131,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -127,9 +142,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL (see Remarks section)
+
 </td>
 </tr>
 </table>
@@ -150,5 +167,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocatePoolAlignedWithTag function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

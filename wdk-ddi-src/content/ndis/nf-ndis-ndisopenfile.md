@@ -7,7 +7,7 @@ old-location: netvista\ndisopenfile.htm
 old-project: netvista
 ms.assetid: 48d54092-d055-449c-a409-829213db2989
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisOpenFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The
   <b>NdisOpenFile</b> function returns a handle for an opened file.
 
 
+
 ## -syntax
 
 ````
@@ -64,26 +65,32 @@ A pointer to a caller-supplied variable in which this function returns the statu
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The handle at 
        <i>FileHandle</i> is valid for a subsequent call to 
        <b>NdisMapFile</b>.
 
+
 ### -param NDIS_STATUS_FILE_NOT_FOUND
 
 The given string at 
        <i>FileName</i> did not specify a name found in the system object namespace.
+
 
 ### -param NDIS_STATUS_RESOURCES
 
 NDIS could not allocate the resources it needed to open the file and allocate a buffer for the
        file contents.
 
+
 ### -param NDIS_STATUS_ERROR_READING_FILE
 
 The specified file's data could not be read into system memory for subsequent access by the
        caller.
+
 </dd>
 </dl>
 
@@ -92,10 +99,12 @@ The specified file's data could not be read into system memory for subsequent ac
 A pointer to a caller-supplied variable in which this function returns the handle of the opened
      file if the call succeeds.
 
+
 ### -param FileLength [out]
 
 A pointer to a caller-supplied variable in which this function writes the number of bytes of data
      in the opened file if the call succeeds.
+
 
 ### -param FileName [in]
 
@@ -104,13 +113,16 @@ A pointer to an NDIS_STRING type containing an initialized counted string, in th
      Unicode characters. That is, for Windows 2000 and later, NDIS defines the NDIS_STRING type as a 
      <a href="kernel.unicode_string">UNICODE_STRING</a> type.
 
+
 ### -param HighestAcceptableAddress [in]
 
 The highest physical address in which the file data can be stored, or specifies -1 if the driver
      places no restrictions.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>NdisOpenFile</b> opens a disk file, typically a file the driver will later download to program an
@@ -132,11 +144,13 @@ When
     
     <a href="netvista.ndisclosefile">NdisCloseFile</a> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -147,6 +161,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -154,11 +169,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisOpenFile (NDIS 5.1)</b>) in Windows
    XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -169,6 +186,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -179,14 +197,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -213,5 +234,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenFile function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenFile function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: print\logjobinfoforbranchoffice.htm
 old-project: print
 ms.assetid: 6D1AB299-2E26-42AF-9613-CA321173080D
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: LogJobInfoForBranchOffice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Allows Branch Office clients to send job events to the host print server.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ HRESULT WINAPI LogJobInfoForBranchOffice(
 
 Specifies a handle to the CSR printer.
 
+
 ### -param pJobDataContainer [in]
 
 Specifies a pointer to an array of <a href="RID">BranchOfficeJobData</a> structures, containing the events to be logged.
 
+
 ## -returns
 Indicates success or failure.
+
 
 ## -remarks
 
@@ -73,6 +77,7 @@ Indicates success or failure.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferandnetbufferlist.htm
 old-project: netvista
 ms.assetid: b872eff3-2d0a-4f01-874d-e00e09195801
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisAllocateNetBufferAndNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ Call the
   <a href="netvista.net_buffer">NET_BUFFER</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ A NET_BUFFER_LIST structure pool handle that was previously returned from the
      <b>NdisAllocateNetBufferListPool</b> must have been set to <b>TRUE</b> and the 
      <b>DataSize</b> member set to zero.
 
+
 ### -param ContextSize [in]
 
 The amount of 
@@ -79,6 +81,7 @@ The amount of
      to reserve for the caller. The 
      <i>ContextSize</i> must be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.
 
+
 ### -param ContextBackFill [in]
 
 The amount of 
@@ -86,10 +89,12 @@ The amount of
      <i>ContextSize</i> and allocates additional space. The 
      <i>ContextBackFill</i> must be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.
 
+
 ### -param MdlChain [in, optional]
 
 A pointer to an MDL chain that NDIS uses to initialize the preallocated NET_BUFFER structure. 
      <i>MdlChain</i> can be <b>NULL</b>.
+
 
 ### -param DataOffset [in]
 
@@ -100,6 +105,7 @@ The initial offset, in bytes, from the start of the buffer to the start of the
      <i>MdlChain</i> is <b>NULL</b>, 
      <i>DataOffset</i> must be 0.
 
+
 ### -param DataLength [in]
 
 The length, in bytes, of the 
@@ -107,10 +113,12 @@ The length, in bytes, of the
      <i>MdlChain</i> is <b>NULL</b>, 
      <i>DataLength</i> must be 0.
 
+
 ## -returns
 <b>NdisAllocateNetBufferAndNetBufferList</b> returns a pointer to the allocated NET_BUFFER_LIST
      structure. The NET_BUFFER_LIST structure includes a NET_BUFFER structure. If the allocation was
      unsuccessful, this pointer is <b>NULL</b>.
+
 
 ## -remarks
 The structures that the 
@@ -147,11 +155,13 @@ For example, if the original MDL chain contains <i>X</i>
     <i>CurrentMdl</i> starts with the third MDL (<i>M'</i>) in the new MDL chain, 
     <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="netvista.net_buffer">NET_BUFFER</a>:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -162,14 +172,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -180,6 +193,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -190,14 +204,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -228,5 +245,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferAndNetBufferList function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferAndNetBufferList function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

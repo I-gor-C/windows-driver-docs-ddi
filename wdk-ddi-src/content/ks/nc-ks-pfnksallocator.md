@@ -41,6 +41,7 @@ req.irql:
 Minidrivers can optionally supply a callback function of type <b>PFNKSALLOCATOR</b> as a parameter in calls to <a href="stream.ksenableeventwithallocator">KsEnableEventWithAllocator</a>, <a href="stream.kspropertyhandlerwithallocator">KsPropertyHandlerWithAllocator</a>, and <a href="stream.ksmethodhandlerwithallocator">KsMethodHandlerWithAllocator</a>.
 
 
+
 ## -prototype
 
 ````
@@ -61,27 +62,33 @@ NTSTATUS KStrAllocator(
 
 Specifies the IRP for which the buffer allocation request is being made.
 
+
 ### -param BufferSize [in]
 
 Specifies the size of buffer needed. This size covers all parameters in the request.
+
 
 ### -param InputOperation [in]
 
 Set to <b>TRUE</b> if this is an input operation, meaning that on successful return, the Irp-&gt;IoStatus.Information field will contain the number of bytes to copy back to the original input buffer.
 
+
 ## -returns
 Returns STATUS_SUCCESS if the request is handled.  Otherwise returns an appropriate error code.
+
 
 ## -remarks
 Typically, pool memory is used for buffer allocations. This enables filters that pass event, property, and method queries directly to hardware to avoid extra data copies by allowing them to provide the buffer into which such data is placed by the standard handling functions. So, a filter may have memory blocks that have already been mapped to an adapter from which buffer allocations can occur.
 
 Since this memory presumably is not typical pool-allocated memory, the filter must perform buffer cleanup on completion of the Irp. This means that for input operations from usermode that are not synchronous, the allocator must allocate an MDL for the destination buffer, probe and lock it, and retrieve a system address. This must be done in order to enable copying of the return data to the original buffer.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: debugger\idebugclient5.htm
 old-project: debugger
 ms.assetid: 4230fbc2-524a-44b1-a090-011e334629a7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -104,6 +104,7 @@ Starts a debugging server.
 
  
 
+
 ## -members
 The <b>IDebugClient5</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -117,6 +118,7 @@ The <b>IDebugClient5</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Connects the debugger engine to a kernel target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -125,6 +127,7 @@ Connects the debugger engine to a kernel target.
 </td>
 <td align="left" width="63%">
 Connects to a process server.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -133,6 +136,7 @@ Connects to a process server.
 </td>
 <td align="left" width="63%">
 Executes the given command to create a new process. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -141,6 +145,7 @@ Executes the given command to create a new process. (ANSI version)
 </td>
 <td align="left" width="63%">
 Executes the given command to create a new process. (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -149,6 +154,7 @@ Executes the given command to create a new process. (Unicode version)
 </td>
 <td align="left" width="63%">
 Creates a process from a specified command line, then attach to that process or another user-mode process. (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -157,6 +163,7 @@ Creates a process from a specified command line, then attach to that process or 
 </td>
 <td align="left" width="63%">
 Creates a process from a specified command line, then attach to that process or another user-mode process. (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -165,6 +172,7 @@ Creates a process from a specified command line, then attach to that process or 
 </td>
 <td align="left" width="63%">
 Returns the event callbacks object registered with this client.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -173,6 +181,7 @@ Returns the event callbacks object registered with this client.
 </td>
 <td align="left" width="63%">
 Returns a string describing the computer and user this client represents.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -181,6 +190,7 @@ Returns a string describing the computer and user this client represents.
 </td>
 <td align="left" width="63%">
 Returns the connection options for the current kernel target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -189,6 +199,7 @@ Returns the connection options for the current kernel target.
 </td>
 <td align="left" width="63%">
 Returns the  number of event callbacks that are interested in the given events.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -197,6 +208,7 @@ Returns the  number of event callbacks that are interested in the given events.
 </td>
 <td align="left" width="63%">
 Returns the number of input callbacks registered over all clients.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -205,6 +217,7 @@ Returns the number of input callbacks registered over all clients.
 </td>
 <td align="left" width="63%">
 Returns the number of output callbacks registered over all clients.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -213,11 +226,13 @@ Returns the number of output callbacks registered over all clients.
 </td>
 <td align="left" width="63%">
 Returns the output callbacks object registered with the client.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetOutputLinePrefixWide</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -225,11 +240,13 @@ Returns the output callbacks object registered with the client.
 <td align="left" width="37%"><b>GetQuitLockString</b></td>
 <td align="left" width="63%">
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>GetQuitLockStringWide</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -239,6 +256,7 @@ Returns the output callbacks object registered with the client.
 </td>
 <td align="left" width="63%">
 Formats and outputs a string describing the computer and user this client represents.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -247,11 +265,13 @@ Formats and outputs a string describing the computer and user this client repres
 </td>
 <td align="left" width="63%">
 Lists the servers running on a given computer.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>PopOutputLinePrefix</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -259,11 +279,13 @@ Lists the servers running on a given computer.
 <td align="left" width="37%"><b>PushOutputLinePrefix</b></td>
 <td align="left" width="63%">
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>PushOutputLinePrefixWide</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -273,6 +295,7 @@ Lists the servers running on a given computer.
 </td>
 <td align="left" width="63%">
 Registers an event callbacks object with this client.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -281,6 +304,7 @@ Registers an event callbacks object with this client.
 </td>
 <td align="left" width="63%">
 Updates some of the connection options for a live kernel target.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -289,11 +313,13 @@ Updates some of the connection options for a live kernel target.
 </td>
 <td align="left" width="63%">
 Registers an output callbacks object with this client.
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>SetOutputLinePrefixWide</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -301,11 +327,13 @@ Registers an output callbacks object with this client.
 <td align="left" width="37%"><b>SetQuitLockString</b></td>
 <td align="left" width="63%">
 
+
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%"><b>SetQuitLockStringWide</b></td>
 <td align="left" width="63%">
+
 
 </td>
 </tr>
@@ -315,6 +343,7 @@ Registers an output callbacks object with this client.
 </td>
 <td align="left" width="63%">
 Starts a process server.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -323,6 +352,7 @@ Starts a process server.
 </td>
 <td align="left" width="63%">
 Starts a debugging server.
+
 </td>
 </tr>
 </table>Connects the debugger engine to a kernel target.
@@ -385,6 +415,7 @@ Starts a debugging server.
 
  
 
+
 ## -remarks
 
 
@@ -393,6 +424,7 @@ Starts a debugging server.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -409,5 +441,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: cad48019-3777-4f1c-9872-c837604f47bc
 ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.keywords: _FILE_FS_LABEL_INFORMATION, *PFILE_FS_LABEL_INFORMATION, FILE_FS_LABEL_INFORMATION
+ms.keywords: _FILE_FS_LABEL_INFORMATION, FILE_FS_LABEL_INFORMATION, *PFILE_FS_LABEL_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The FILE_FS_LABEL_INFORMATION structure is used to set the label for a file system volume. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _FILE_FS_LABEL_INFORMATION {
 
 Length, in bytes, of the name for the volume. 
 
+
 ### -field VolumeLabel
 
 Name for the volume. 
+
 
 ## -remarks
 This information can be set in either of the following ways: 
@@ -74,11 +77,13 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to <a href
 
 This structure must be aligned on a LONG (4-byte) boundary. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +106,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_LABEL_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

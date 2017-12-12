@@ -7,7 +7,7 @@ old-location: display\d3dkmt_createcontextvirtual.htm
 old-project: display
 ms.assetid: C9707F47-75DF-4CDE-B88B-24323FC8C94B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_CREATECONTEXTVIRTUAL, D3DKMT_CREATECONTEXTVIRTUAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -65,33 +66,41 @@ typedef struct _D3DKMT_CREATECONTEXTVIRTUAL {
 
 [in] A handle to the device.
 
+
 ### -field NodeOrdinal
 
 [in] The zero-based index for the node that the context is scheduled on.
+
 
 ### -field EngineAffinity
 
 [in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
 
+
 ### -field Flags
 
 [in] A <a href="display.d3dddi_createcontextflags">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context. 
+
 
 ### -field pPrivateDriverData
 
 [in] A pointer to private data that is passed to a display miniport driver.
 
+
 ### -field PrivateDriverDataSize
 
 [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+
 
 ### -field ClientHint
 
 [in] A hint describing which graphics subsystem is creating the context.
 
+
 ### -field hContext
 
 [out] A handle to the context that the <a href="display.d3dkmtcreatecontextvirtual">D3DKMTCreateContextVirtual</a> function creates. 
+
 
 ## -remarks
 
@@ -101,22 +110,27 @@ typedef struct _D3DKMT_CREATECONTEXTVIRTUAL {
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -136,5 +150,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_CREATECONTEXTVIRTUAL structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_CREATECONTEXTVIRTUAL structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

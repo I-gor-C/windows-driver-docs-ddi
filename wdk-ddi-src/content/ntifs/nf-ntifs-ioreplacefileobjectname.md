@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>IoReplaceFileObjectName</b> routine replaces the name of a file object.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS IoReplaceFileObjectName(
 
 Pointer to the file object whose file name is being replaced. 
 
+
 ### -param NewFileName [in]
 
 Pointer to the string buffer for the new name for the file object.
 
+
 ### -param FileNameLength [in]
 
 Length, in bytes, of the new name for the file object. 
+
 
 ## -returns
 Returns STATUS_SUCCESS or one of the following NTSTATUS values otherwise:
@@ -77,16 +81,19 @@ Returns STATUS_SUCCESS or one of the following NTSTATUS values otherwise:
 
  
 
+
 ## -remarks
 Drivers should use <b>IoReplaceFileObjectName</b> to safely replace the name in a file object. This allows the I/O manager to control the lifetime of the buffer associated with the file object. Replacing a file object name directly without using <b>IoReplaceFileObjectName</b> may conflict with other uses of the name and should be avoided when possible.
 
 This routine should be used to replace the file object name instead of doing so manually to allow the kernel to manage the lifetime of the name correctly.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -97,14 +104,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +136,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -135,9 +147,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

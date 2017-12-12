@@ -7,7 +7,7 @@ old-location: kernel\getidlewakeinfo.htm
 old-project: kernel
 ms.assetid: 51DE471E-5409-4ED9-BC50-29D18E8F5A16
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <i>GetIdleWakeInfo</i> routine enables the driver for a device to discover the device power states from which the device can signal a wake event.
 
 
+
 ## -prototype
 
 ````
@@ -62,9 +63,11 @@ NTSTATUS GetIdleWakeInfo(
 
 A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="kernel.d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
+
 ### -param SystemPowerState [in]
 
 System power state. Set this parameter to one of the following <a href="kernel.system_power_state">SYSTEM_POWER_STATE</a> enumeration values:
+
 <ul>
 <li><b>PowerSystemWorking</b></li>
 <li><b>PowerSystemSleeping1</b></li>
@@ -74,9 +77,11 @@ System power state. Set this parameter to one of the following <a href="kernel.s
 </ul>
 These values represent system power states S0 (system working state) through S4. For the <i>SystemPowerState</i> value supplied by the caller, the routine determines the deepest device power state from which the device can issue a wake signal.
 
+
 ### -param DeepestWakeableDstate [out]
 
 Deepest wakeable Dx state. This parameter is a pointer to a <a href="kernel.device_wake_depth">DEVICE_WAKE_DEPTH</a> variable. If the call is successful, the routine writes one of the following enumeration values to this variable:
+
 <ul>
 <li><b>DeviceWakeDepthNotWakeable</b></li>
 <li><b>DeviceWakeDepthD0</b></li>
@@ -86,10 +91,13 @@ Deepest wakeable Dx state. This parameter is a pointer to a <a href="kernel.devi
 <li><b>DeviceWakeDepthD3cold</b></li>
 </ul>
 A value in the range <b>DeviceWakeDepthD0</b> to <b>DeviceWakeDepthD3cold</b> indicates the lowest-powered Dx state from which the device can send a wake signal when the computer is in the system power state specified by the <i>SystemPowerState</i> parameter. <b>DeviceWakeDepthNotWakeable</b> indicates that there is no device power state from which the device can send a wake signal when the computer is in the system power state specified by <i>SystemPowerState</i>.
+
 If the routine cannot determine the deepest wakeable device state (perhaps because the platform firmware does not contain this information), the call fails and the routine returns an error status code. If a <i>GetIdleWakeInfo</i> call fails for any <i>SystemPowerState</i> parameter value in the range <b>PowerSystemWorking</b> to <b>PowerSystemHibernate</b>, it will fail for all such values.
+
 
 ## -returns
 The <i>GetIdleWakeInfo</i> routine returns STATUS_SUCCESS if it successfully retrieves the deepest wakeable device state. Otherwise, it returns an appropriate error status code.
+
 
 ## -remarks
 For the system power state specified by the caller, this routine tries to determine the lowest-powered device power state from which the device can signal a wake event to the processor. If successful, the routine writes the device power state to the location pointed to by the <i>DeepestWakeableDstate</i> parameter, and returns STATUS_SUCCESS. Or, if the routine determines that the device cannot signal a wake event from any device power state, the routine writes the value <b>DeviceWakeDepthNotWakeable</b> to this location, and returns STATUS_SUCCESS.
@@ -113,11 +121,13 @@ The <a href="kernel.device_capabilities">DEVICE_CAPABILITIES</a> structure inclu
 
 An inline helper function, <b>MapWakeDepthToDstate</b>, is provided to convert the <a href="kernel.device_wake_depth">DEVICE_WAKE_DEPTH</a> output value from the <i>GetIdleWakeInfo</i> routine to a <a href="kernel.device_power_state">DEVICE_POWER_STATE</a> value that can be used as an input parameter by the <a href="kernel.porequestpowerirp">PoRequestPowerIrp</a> routine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -128,14 +138,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,9 +159,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -175,5 +190,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_IDLE_WAKE_INFO routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_IDLE_WAKE_INFO routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: kernel\interface.htm
 old-project: kernel
 ms.assetid: d853643d-d3e8-40cc-a8a8-848f36f3bdae
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _INTERFACE, *PINTERFACE, INTERFACE
+ms.date: 12/7/2017
+ms.keywords: _INTERFACE, INTERFACE, *PINTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>INTERFACE</b> structure describes an interface that is exported by a driver for use by other drivers.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef struct _INTERFACE {
 
 Size, in bytes, of a structure defining a driver interface, including this structure and interface-specific members.
 
+
 ### -field Version
 
 Driver-defined interface version.
+
 
 ### -field Context
 
 Pointer to interface-specific context information.
 
+
 ### -field InterfaceReference
 
 Pointer to a driver-supplied <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.
 
+
 ### -field InterfaceDereference
 
 Pointer to a driver-supplied <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.
+
 
 ## -remarks
 The <b>INTERFACE</b> structure must be included as the first member of all structures that describe interfaces returned by drivers in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> request.
@@ -84,11 +90,13 @@ The <i>InterfaceReference</i> routine must be called by the driver that exports 
 
 Each driver that imports the interface (whether by sending <b>IRP_MN_QUERY_INTERFACE</b> or by receiving the interface from another driver) must call the <i>InterfaceDereference</i> routine after it has finished using the interface. After calling the <i>InterfaceDereference</i> routine, a driver cannot use the interface again without first reobtaining it.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -111,5 +119,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20INTERFACE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20INTERFACE structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

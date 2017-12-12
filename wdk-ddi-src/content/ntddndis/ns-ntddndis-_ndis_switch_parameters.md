@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_parameters.htm
 old-project: netvista
 ms.assetid: 766e042a-3f21-4f57-a780-83f92bef0a6c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_SWITCH_PARAMETERS, *PNDIS_SWITCH_PARAMETERS, NDIS_SWITCH_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>NDIS_SWITCH_PARAMETERS</b> structure contains the configuration data for a Hyper-V extensible switch.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,18 @@ typedef struct _NDIS_SWITCH_PARAMETERS {
 ### -field Header
 
 The type, revision, and size of the <b>NDIS_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
+
+
 
 
 ### -field NDIS_SWITCH_PARAMETERS_REVISION_1
 
 Original version for NDIS 6.30 and later.
+
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PARAMETERS_REVISION_1.
+
 </dd>
 </dl>
 
@@ -76,22 +82,28 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 
 
 
+
 ### -field SwitchName
 
  An <b>NDIS_SWITCH_NAME</b> value that specifies the unique internal name of the extensible switch.
+
 The internal switch name is used by WMI-based policy management applications. For more information, see <a href="netvista.managing_hyper_v_extensible_switch_extensibility_policies">Managing Hyper-V Extensible Switch Policies</a>.
+
 
 ### -field SwitchFriendlyName
 
  An <b>NDIS_SWITCH_FRIENDLYNAME</b> value that specifies the user-friendly description of the extensible switch.
 
+
 ### -field NumSwitchPorts
 
 A UINT32 value that specifies the number of ports configured on the extensible switch.
 
+
 ### -field IsActive
 
 A BOOLEAN that if TRUE indicates that the Hyper-V extensible switch activation has finished and it is safe to query for other switch configuration such as enumerating ports, NICs, and properties. If FALSE, the extension must wait for the <a href="netvista.net_pnp_event">NetEventSwitchActivate</a> PNP event to be issued before querying for switch configuration. 
+
 
 ## -remarks
 The <b>NDIS_SWITCH_PARAMETERS</b> structure is used in the 
@@ -119,19 +131,23 @@ This structure is also passed in the <i>vSwitch</i> parameter of the following c
 </ul>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -176,5 +192,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

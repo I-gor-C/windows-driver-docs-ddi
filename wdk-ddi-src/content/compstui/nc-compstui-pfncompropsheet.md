@@ -7,8 +7,8 @@ old-location: print\compropsheet.htm
 old-project: print
 ms.assetid: d9654346-1f28-4e02-8f6c-17e37ed09b92
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX
+ms.date: 12/9/2017
+ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql:
 The <i>ComPropSheet</i> function is supplied by <a href="https://msdn.microsoft.com/7af3435a-19e0-40a1-9f94-319d9d323856">CPSUI</a> and can be called by CPSUI applications (including printer interface DLLs) to build property sheet pages.
 
 
+
 ## -prototype
 
 ````
@@ -62,20 +63,25 @@ LONG_PTR CALLBACK ComPropSheet(
 
 Caller-supplied handle to a property sheet <a href="https://msdn.microsoft.com/b4c40c15-df16-4af0-81c8-9e70d26ba598">group parent</a>. For more information, see the following Remarks section.
 
+
 ### -param Function [in]
 
 Caller-supplied, CPSFUNC_-prefixed <a href="print.compropsheet_function_codes">ComPropSheet function codes</a> specifying the operation to be performed by the <i>ComPropSheet</i> function.
+
 
 ### -param lParam1 [in]
 
 Caller-supplied value that depends on the <i>ComPropSheet</i> function code supplied for <i>Function</i>.
 
+
 ### -param lParam2 [in]
 
 Caller-supplied value that depends on the <i>ComPropSheet</i> function code supplied for <i>Function</i>.
 
+
 ## -returns
 The return value depends on the <a href="print.compropsheet_function_codes">ComPropSheet function code</a> supplied for <i>Function</i>.
+
 
 ## -remarks
 When CPSUI calls one of an application's <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed functions, it passes a pointer to the <i>ComPropSheet</i> function in a <a href="print.propsheetui_info">PROPSHEETUI_INFO</a> structure. A <b>PFNPROPSHEETUI</b>-typed function can call the <i>ComPropSheet</i> function to describe property sheet pages to CPSUI.
@@ -91,11 +97,13 @@ The handle received in the <i>hComPropSheet</i> member of a <a href="print.props
 
 The handle received as a result of previously calling <i>ComPropSheet</i> with a <a href="print.cpsfunc_insert_psuipage">CPSFUNC_INSERT_PSUIPAGE</a> function code, and specifying PSUIPAGEINSERT_GROUP_PARENT as the <b>Type</b> member for an <a href="print.insertpsuipage_info">INSERTPSUIPAGE_INFO</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +114,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

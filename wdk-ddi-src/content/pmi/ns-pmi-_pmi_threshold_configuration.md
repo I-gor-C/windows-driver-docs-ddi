@@ -41,6 +41,7 @@ req.irql:
 The PMI_THRESHOLD_CONFIGURATION structure contains information about the threshold configuration of the power meter.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _PMI_THRESHOLD_CONFIGURATION {
 
 The lower threshold of the power meter, in units of milliwatts (mW).
 
+
 ### -field UpperThreshold
 
 The upper threshold of the power meter, in units of milliwatts (mW).
+
 
 ## -remarks
 The PMI_THRESHOLD_CONFIGURATION structure specifies the current configuration of the power meter's thresholds.  The <b>LowerThreshold</b> and <b>UpperThreshold</b> members specify the lower and upper range of the threshold respectively.  
@@ -70,19 +73,23 @@ Power levels that are monitored by the power meter drop below the <b>LowerThresh
 
 Power levels that are monitored by the power meter drop below the <b>UpperThreshold</b> value.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -99,5 +106,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20PMI_THRESHOLD_CONFIGURATION structure%20 RELEASE:%20(11/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_mpo3ddi_support.htm
 old-project: display
 ms.assetid: 993E0BC3-DE46-48B9-A346-386E49CE28CE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_MPO3DDI_SUPPORT, D3DKMT_MPO3DDI_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure that holds the support status.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DKMT_MPO3DDI_SUPPORT {
 
 Indicates whether support exists.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ Indicates whether support exists.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

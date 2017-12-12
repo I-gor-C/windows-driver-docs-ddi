@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FltGetSectionContext</b> routine retrieves a section context that was created for a file stream by a specified minifilter driver instance. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS FltGetSectionContext(
 
 An opaque instance pointer for the minifilter driver instance whose context is to be retrieved. 
 
+
 ### -param FileObject [in]
 
 A pointer to a file object for the stream. 
 
+
 ### -param Context [out]
 
 A pointer to a caller-allocated variable that receives the address of the context. 
+
 
 ## -returns
 <b>FltGetSectionContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following. 
@@ -77,6 +81,7 @@ A pointer to a caller-allocated variable that receives the address of the contex
 
  
 
+
 ## -remarks
 <b>FltGetSectionContext</b> retrieves a section context that was created for a file stream by a specified minifilter driver instance. A section context is created by calling <a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDataScan</a>.
 
@@ -85,11 +90,13 @@ A pointer to a caller-allocated variable that receives the address of the contex
 To allocate a new context, call <a href="ifsk.fltallocatecontext">FltAllocateContext</a>. 
 <p class="note">Minifilters must not explicitly delete a section context passed to <a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDataScan</a>. A section context is deallocated and removed from a stream  by calling <a href="ifsk.fltclosesectionfordatascan">FltCloseSectionForDataScan</a> in this case.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -100,14 +107,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 The <b>FltGetSectionContext</b> routine is available starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -118,6 +128,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -128,6 +139,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -138,9 +150,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -161,5 +175,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetSectionContext routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

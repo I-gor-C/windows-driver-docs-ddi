@@ -7,7 +7,7 @@ old-location: debugger\readcontrolspace.htm
 old-project: debugger
 ms.assetid: 4b6955a5-ca03-418d-9eba-fdbe48599922
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: ReadControlSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ReadControlSpace</b> function reads the processor-specific control space into the array pointed to by <i>buf</i>.
 
 
+
 ## -syntax
 
 ````
@@ -60,20 +61,25 @@ __inline VOID ReadControlSpace(
 
 Specifies the number of the processor whose control space is to be read.
 
+
 ### -param address 
 
 Specifies the address of the control space.
+
 
 ### -param buf 
 
 Specifies the address of an array of bytes to hold the control space data.
 
+
 ### -param size 
 
 Specifies the number of bytes in the array pointed to by <i>buf</i>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 If you are writing 64-bit code, you should use <a href="debugger.readcontrolspace64">ReadControlSpace64</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
@@ -81,11 +87,13 @@ If you are writing 64-bit code, you should use <a href="debugger.readcontrolspac
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +104,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

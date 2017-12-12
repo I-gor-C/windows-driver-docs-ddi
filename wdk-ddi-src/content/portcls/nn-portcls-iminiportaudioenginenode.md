@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This interface allows a miniport driver to use KS properties that access the audio engine via a KS filter handle.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportAudioEngineNode</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IMiniportAudioEngineNode</b> also has these types of members:
 
@@ -80,6 +81,7 @@ Sets the state of the global effects (GFX) node in the audio engine.
 
  
 
+
 ## -members
 The <b>IMiniportAudioEngineNode</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -93,6 +95,7 @@ The <b>IMiniportAudioEngineNode</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 Gets the descriptor for the audio engine node.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -101,6 +104,7 @@ Gets the descriptor for the audio engine node.
 </td>
 <td align="left" width="63%">
 Gets the minimum and maximum buffer size that the hardware audio engine can support.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -109,6 +113,7 @@ Gets the minimum and maximum buffer size that the hardware audio engine can supp
 </td>
 <td align="left" width="63%">
 Gets the allowed stepping value for the audio device attribute.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -117,6 +122,7 @@ Gets the allowed stepping value for the audio device attribute.
 </td>
 <td align="left" width="63%">
 Gets a count of the number of channels supported by the audio device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -125,6 +131,7 @@ Gets a count of the number of channels supported by the audio device.
 </td>
 <td align="left" width="63%">
 Gets the state of the Mute node for the audio device channel.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -133,6 +140,7 @@ Gets the state of the Mute node for the audio device channel.
 </td>
 <td align="left" width="63%">
 Gets the PeakMeter value  for the audio device channel.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -141,6 +149,7 @@ Gets the PeakMeter value  for the audio device channel.
 </td>
 <td align="left" width="63%">
 Gets the volume level for a given channel of the audio device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -149,6 +158,7 @@ Gets the volume level for a given channel of the audio device.
 </td>
 <td align="left" width="63%">
 Gets the audio data format for an audio device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -157,6 +167,7 @@ Gets the audio data format for an audio device.
 </td>
 <td align="left" width="63%">
 Gets the format type and the buffer size for the audio engine's audio data format.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -165,6 +176,7 @@ Gets the format type and the buffer size for the audio engine's audio data forma
 </td>
 <td align="left" width="63%">
 Gets the state of the global effects (GFX) node in the audio engine.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -173,6 +185,7 @@ Gets the state of the global effects (GFX) node in the audio engine.
 </td>
 <td align="left" width="63%">
 Gets the audio data format for the audio engine mixer.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -181,6 +194,7 @@ Gets the audio data format for the audio engine mixer.
 </td>
 <td align="left" width="63%">
 Gets the supported audio data formats for the audio device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -189,6 +203,7 @@ Gets the supported audio data formats for the audio device.
 </td>
 <td align="left" width="63%">
 Sets the state of the Mute node for the audio device channel.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -197,6 +212,7 @@ Sets the state of the Mute node for the audio device channel.
 </td>
 <td align="left" width="63%">
 Sets the volume level for a given channel of the audio device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -205,6 +221,7 @@ Sets the volume level for a given channel of the audio device.
 </td>
 <td align="left" width="63%">
 Sets the audio data format for an audio device.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -213,6 +230,7 @@ Sets the audio data format for an audio device.
 </td>
 <td align="left" width="63%">
 Sets the state of the global effects (GFX) node in the audio engine.
+
 </td>
 </tr>
 </table>Gets the descriptor for the audio engine node.
@@ -249,6 +267,7 @@ Sets the state of the global effects (GFX) node in the audio engine.
 
  
 
+
 ## -remarks
 
 
@@ -257,22 +276,27 @@ Sets the state of the global effects (GFX) node in the audio engine.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

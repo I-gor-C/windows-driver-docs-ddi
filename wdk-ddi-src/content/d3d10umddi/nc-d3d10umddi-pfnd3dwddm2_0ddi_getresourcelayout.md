@@ -7,7 +7,7 @@ old-location: display\pfnd3dwddm2_0ddi_getresourcelayout.htm
 old-project: display
 ms.assetid: 0158F1B4-AA6E-41F9-BAEF-A3C688758205
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <i>pfnGetResourceLayout</i> callback function supports getting resource layout information. 
 
 
+
 ## -prototype
 
 ````
@@ -65,32 +66,40 @@ VOID APIENTRY* pfnGetResourceLayout(
 
 A device handle.
 
+
 ### -param hResource 
 
 A resource handle. 
+
 
 ### -param SubresourceCount 
 
 The subresource count.
 
+
 ### -param Handle [out]
 
 A kernel handle.
+
 
 ### -param TextureLayout [out]
 
 A pointer to a texture layout.
 
+
 ### -param pMipLevelSwizzleTransition [out]
 
 A pointer to a MIP level swizzle transition. 
+
 
 ### -param SubresourceLayout [out, optional]
 
 A pointer to the subresource layout.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -100,6 +109,7 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

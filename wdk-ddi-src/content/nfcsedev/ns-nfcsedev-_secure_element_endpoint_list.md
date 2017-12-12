@@ -41,6 +41,7 @@ req.irql:
 The output parameter for <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_enum_endpoints.md">IOCTL_NFCSE_ENUM_ENDPOINTS</a>.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _SECURE_ELEMENT_ENDPOINT_LIST {
 
 The number of enumerated endpoints on the NFC controller.
 
+
 ### -field EndpointList[ANYSIZE_ARRAY]
 
 An array of <a href="nfpdrivers._secure_element_endpoint_info">SECURE_ELEMENT_ENDPOINT_INFO</a> structures.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ An array of <a href="nfpdrivers._secure_element_endpoint_info">SECURE_ELEMENT_EN
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

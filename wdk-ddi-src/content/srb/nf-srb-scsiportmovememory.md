@@ -7,7 +7,7 @@ old-location: storage\scsiportmovememory.htm
 old-project: storage
 ms.assetid: c4ed9551-3dc8-4f76-9bcb-26030f76c244
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: ScsiPortMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ScsiPortMoveMemory</b> routine copies data from one location to another.
 
 
+
 ## -syntax
 
 ````
@@ -59,16 +60,20 @@ VOID ScsiPortMoveMemory(
 
 Pointer to the destination buffer.
 
+
 ### -param ReadBuffer [in]
 
 Pointer to the source buffer.
+
 
 ### -param Length [in]
 
 Specifies how many bytes to transfer from <i>ReadBuffer</i> to <i>WriteBuffer</i>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>ScsiPortMoveMemory</b> can be called if a miniport driver needs to copy data from one system-allocated area to another. For example, a miniport driver might call <b>ScsiPortMoveMemory</b> to copy pertinent SRB values into the driver's SRB extension.
@@ -77,11 +82,13 @@ The (<i>ReadBuffer</i> + <i>Length</i>) can overlap the area pointed to by <i>Wr
 
 Each of the given buffer areas must be at least <b>sizeof</b>(<i>Length</i>).
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

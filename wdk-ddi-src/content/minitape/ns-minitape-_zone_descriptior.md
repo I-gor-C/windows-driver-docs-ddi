@@ -7,7 +7,7 @@ old-location: storage\zone_descriptior.htm
 old-project: storage
 ms.assetid: 8326f683-3952-486e-b322-80ce96759366
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -69,45 +70,56 @@ typedef struct _ZONE_DESCRIPTIOR {
 
 N/A
 
+
 ### -field Reserved1
 
 N/A
+
 
 ### -field Reset
 
 N/A
 
+
 ### -field Non_Seq
 
 N/A
+
 
 ### -field Reserved2
 
 N/A
 
+
 ### -field ZoneCondition
 
 N/A
+
 
 ### -field Reserved3
 
 N/A
 
+
 ### -field ZoneLength
 
 N/A
+
 
 ### -field ZoneStartLBA
 
 N/A
 
+
 ### -field WritePointerLBA
 
 N/A
 
+
 ### -field Reserved4
 
 N/A
+
 
 ## -remarks
 
@@ -117,6 +129,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

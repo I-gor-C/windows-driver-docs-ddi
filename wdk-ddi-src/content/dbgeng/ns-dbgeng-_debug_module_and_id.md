@@ -7,8 +7,8 @@ old-location: debugger\debug_module_and_id.htm
 old-project: debugger
 ms.assetid: d65ad0fa-1dd8-42b4-866b-cb2522080cde
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The DEBUG_MODULE_AND_ID structure describes a symbol within a module.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DEBUG_MODULE_AND_ID {
 
 The location in the target's virtual address space of the module's base address.
 
+
 ### -field Id
 
 The symbol ID of the symbol within the module.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The symbol ID of the symbol within the module.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 The <b>KsGetMediaType</b> function retrieves information about a media type on a pin factory identifier. 
 
 
+
 ## -syntax
 
 ````
@@ -59,31 +60,38 @@ HRESULT KsGetMediaType(
 
 Offset into the data range item that <b>KsGetMediaType</b> fills. Note that the data type of <i>Position</i> is <b>int</b> to conform to underlying calls.
 
+
 ### -param AmMediaType [out]
 
 Pointer to a variable that receives information in a AM_MEDIA_TYPE structure.
+
 
 ### -param FilterHandle [in]
 
 Handle to the filter that contains the pin factory to query.
 
+
 ### -param PinFactoryId [in]
 
 Identifier of the pin factory against which the information for a media type is being returned.
 
+
 ## -returns
 Returns NOERROR if successful; otherwise, returns an error code.
+
 
 ## -remarks
 The <b>KsGetMediaType</b> function queries the list of data ranges and performs a data intersection on the specified data range, thus producing a data format. It then converts that data format to a media type.
 
 For more information about AM_MEDIA_TYPE, see the Microsoft Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +102,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -104,6 +113,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -120,5 +130,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetMediaType function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

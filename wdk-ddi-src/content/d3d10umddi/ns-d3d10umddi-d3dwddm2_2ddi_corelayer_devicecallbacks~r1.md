@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_2ddi_corelayer_devicecallbacks.htm
 old-project: display
 ms.assetid: B42DA194-690F-41A6-AC11-71224887A2E4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS, D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Specifies core layer device callback functions. 
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS {
 
 A callback function that gets the shader cache value.
 
+
 ### -field pfnShaderCacheStoreValue
 
 A callback function that stores the shader cache value. 
+
 
 ### -field pfnShaderCacheAddRefCb
 
 A callback function that adds a reference to the shader cache. 
 
+
 ### -field pfnShaderCacheReleaseCb
 
 A callback function that releases a reference to a cache. 
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ A callback function that releases a reference to a cache.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

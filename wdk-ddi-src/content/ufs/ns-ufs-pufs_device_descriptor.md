@@ -7,8 +7,8 @@ old-location: storage\ufs_device_descriptor.htm
 old-project: storage
 ms.assetid: CD1F59DA-3D84-422B-A862-8F4C5E1AA515
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: PUFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR, *PUFS_DEVICE_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: PUFS_DEVICE_DESCRIPTOR, *PUFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.product: Windows 10 or later.
 ## -description
 <b>UFS_DEVICE_DESCRIPTOR</b> is the main descriptor for Universal Flash Storage (UFS) devices and should be the first descriptor retrieved as it specifies the device class and sub-class and the protocol (command set) to use to access this device and the maximum number of logical
 units contained within the device.
+
 
 
 ## -syntax
@@ -94,13 +95,16 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 
 Specifies the length, in bytes, of this descriptor.
 
+
 ### -field bDescriptorIDN
 
 Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_DEVICE_IDN</b>.
 
+
 ### -field bDevice
 
 Specifies the device type.
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,9 +121,11 @@ Specifies the device type.
 </table>
  
 
+
 ### -field bDeviceClass
 
 Specifies the device class.
+
 <table>
 <tr>
 <th>Value</th>
@@ -136,9 +142,11 @@ Specifies the device class.
 </table>
  
 
+
 ### -field bDeviceSubClass
 
 Specifies the UFS mass storage subclasses in a bit map as follows:
+
 <table>
 <tr>
 <th>Bit</th>
@@ -163,9 +171,11 @@ Specifies the UFS mass storage subclasses in a bit map as follows:
 </table>
  
 
+
 ### -field bProtocol
 
 Specifies the protocol support by the UFS device.
+
 <table>
 <tr>
 <th>Value</th>
@@ -182,17 +192,21 @@ Specifies the protocol support by the UFS device.
 </table>
  
 
+
 ### -field  bNumberLU
 
 Specifies the number of Logical Units. This does not include the number of well known logical units.
+
 
 ### -field bNumberWLU
 
 Specifies the number of well known logical units.
 
+
 ### -field bBootEnable
 
 Specifies if a device's boot feature is enabled.
+
 <table>
 <tr>
 <th>Value</th>
@@ -213,11 +227,13 @@ Specifies if a device's boot feature is enabled.
 </table>
  
 
+
 ### -field bDescrAccessEn
 
 Indicates whether the Device Descriptor can be
 read after the partial initialization phase of the
 boot sequence.
+
 <table>
 <tr>
 <th>Value</th>
@@ -238,10 +254,12 @@ boot sequence.
 </table>
  
 
+
 ### -field bInitPowerMode
 
 <b>bInitPowerMode</b> defines the Power Mode
 after device initialization or hardware reset.
+
 <table>
 <tr>
 <th>Value</th>
@@ -262,14 +280,17 @@ after device initialization or hardware reset.
 </table>
  
 
+
 ### -field bHighPriorityLUN
 
 <b>bHighPriorityLUN</b> defines the high priority
 logical unit.
 
+
 ### -field bSecureRemovalType
 
 Specifies the secure removal type.
+
 <table>
 <tr>
 <th>Value</th>
@@ -304,9 +325,11 @@ define mechanism.</td>
 </table>
  
 
+
 ### -field bSecurityLU
 
 Specifies if there is support for security LU's
+
 <table>
 <tr>
 <th>Value</th>
@@ -327,10 +350,12 @@ Specifies if there is support for security LU's
 </table>
  
 
+
 ### -field bBackgroundOpsTermLat
 
 <b>bBackgroundOpsTermLat</b> defines the maximum latency for starting data transmission when background
 operations are ongoing. The termination latency limit applies to two cases:
+
 <ul>
 <li>When the device receives a COMMAND UFS Protocol Information Units (UPIU) with a transfer request. The device shall start the data
 transfer and send a DATA IN UPIU or a RTT UPIU within the latency limit.</li>
@@ -343,33 +368,41 @@ expected to terminate background operations within the latency limit.</li>
 <b>bInitActiveICCLevel</b> defines the <b>bActiveICCLevel</b>
 value after power on or reset. The range of the value is from 0x00 to 0x0F. 
 
+
 ### -field wSpecVersion
 
 Indicates the specification version in Binary Coded Decimal (BCD) format.
+
 
 ### -field wManufactureDate
 
 Specifies the manufacturing date  in BCD format as 0xMMYY.
 
+
 ### -field iManufacturerName
 
 Contains an index value to the string which contains the manufacturer's name.
+
 
 ### -field iProductName
 
 Contains an index value to the string which contains the product's name.
 
+
 ### -field iSerialNumberID
 
 Contains an index value to the string which contains the serial's number.
+
 
 ### -field iOemID
 
 Contains an index value to the string which contains the OEM ID.
 
+
 ### -field wManufacturerID
 
 Specifies the Manufacturer ID of the device.
+
 
 ### -field bUD0BaseOffset
 
@@ -377,23 +410,28 @@ Specifies the Offset of Unit Descriptor 0's configurable
 parameters within the Configuration
 Descriptor, <a href="storage.ufs_config_descriptor">UFS_CONFIG_DESCRIPTOR</a>.
 
+
 ### -field bUDConfigPLength
 
 Total size of a <b>UFS_UNIT_CONFIG_DESCRIPTOR</b>'s
 parameters.
+
 
 ### -field bDeviceRTTCap
 
 Specifies the maximum number of outstanding READY TO TRANSFER UPIU'S
 supported by device. The minimum value is 2.
 
+
 ### -field wPeriodicRTCUpdate
 
 Specifies the frequency and method of real-time clock updates. Bits 10 to 15 are reserved.
 
+
 ### -field bUFSFeaturesSupport
 
 Specifies which features are supported on this device. A feature is supported if its related bit is set to 1.
+
 <table>
 <tr>
 <th>Bit</th>
@@ -418,6 +456,7 @@ Specifies which features are supported on this device. A feature is supported if
 </table>
  
 
+
 ### -field bFFUTimeout
 
 The maximum time, in seconds, that access
@@ -425,14 +464,17 @@ to the device is limited or not possible through
 any ports associated due to execution of a
 WRITE BUFFER command.
 
+
 ### -field bQueueDepth
 
 Specifies the queue depth. If this member is equal to 0, the device implements the per-LU
 queuing architecture.
 
+
 ### -field wDeviceVersion
 
 Specifies the device version.
+
 
 ### -field bNumSecureWPArea
 
@@ -440,57 +482,70 @@ Specifies the total number of
 Secure Write Protect Areas supported by the
 device. The value of this member is between <b>bNumberLU</b> and 32
 
+
 ### -field dPSAMaxDataSize
 
 Specifies the maximum
 amount of data that may be written during the
 pre-soldering phase of the PSA flow.
 
+
 ### -field bPSAStateTimeout
 
 Specifies the command
 maximum timeout for a change in <b>bPSAState</b>. The timeout value is calculated as follows (in microseconds):
+
 100 x 2 ^ <b>bPSAStateTimeout</b>
+
 
 ### -field  iProductRevisionLevel
 
 Specifies the index to the string which contains the Product
 Revision Level.
 
+
 ### -field Reserved
 
 Reserved for future use.
 
+
 ### -field Reserved2
 
 Reserved for future use.
+
 
 ## -remarks
 If <b>bBootEnable</b> in the <b>UFS_DEVICE_DESCRIPTOR</b> is set to zero or if the Boot well known logical unit is not mapped to an enabled logical unit, then the Boot well known logical unit shall terminate.
 
 <b>UFS_DEVICE_DESCRIPTOR</b> is read only, some of its parameters may be changed by changing the corresponding parameter in <a href="storage.ufs_unit_config_descriptor">UFS_UNIT_CONFIG_DESCRIPTOR</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -531,5 +586,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_DEVICE_DESCRIPTOR structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_DEVICE_DESCRIPTOR structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

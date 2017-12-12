@@ -7,7 +7,7 @@ old-location: kernel\io_stack_location.htm
 old-project: kernel
 ms.assetid: b339d6aa-71e1-4835-8ef2-a84594166bb1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _IO_STACK_LOCATION, *PIO_STACK_LOCATION, IO_STACK_LOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>IO_STACK_LOCATION</b> structure defines an <a href="https://msdn.microsoft.com/62c8ee00-c7cb-4aa1-90ab-b8bedbd818ee">I/O stack location</a>, which is an entry in the I/O stack that is associated with each IRP. Each I/O stack location in an IRP has some common members and some request-type-specific members.
+
 
 
 ## -syntax
@@ -263,14 +264,18 @@ typedef struct _IO_STACK_LOCATION {
 
 The <a href="https://msdn.microsoft.com/11c5b1a9-74c0-47fb-8cce-a008ece9efae">IRP major function code</a> indicating the type of I/O operation to be performed.
 
+
 ### -field MinorFunction
 
 A subfunction code for <b>MajorFunction</b>. The PnP manager, the power manager, file system drivers, and SCSI class drivers set this member for some requests.
 
+
 ### -field Flags
 
 Request-type-specific values used almost exclusively by file system drivers. Removable-media device drivers check whether this member is set with SL_OVERRIDE_VERIFY_VOLUME for read requests to determine whether to continue the read operation even if the device object's <b>Flags</b> is set with DO_VERIFY_VOLUME. Intermediate drivers layered over a removable-media device driver must copy this member into the I/O stack location of the next-lower driver in all incoming <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> requests.
+
 Possible flag values include:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -307,8 +312,10 @@ use only with IRP_MJ_READ operations.</td>
 This flag lets kernel-mode drivers write to volume areas that they normally cannot write to because of blocking direct write in the file system and storage driver stack. <b>This flag was introduced in Windows Vista.
 </b>
 
+
 <div class="alert"><b>Note</b>  Direct write blocking, introduced in Windows Vista helps improve security. This flag is checked both at the file system layer and storage stack layer. For more information about direct write blocking, see <a href="storage.blocking_direct_write_operations_to_volumes_and_disks">Blocking Direct Write Operations to Volumes and Disks</a>.</div>
 <div> </div>
+
 
 </td>
 </tr>
@@ -327,6 +334,7 @@ This hints the driver to perform READ/WRITE operations at a guaranteed speed for
 </table>
  
 
+
 <div class="alert"><b>Note</b>  (For persistent memory devices) One of the reasons for remapping (modifying the physical address of a given LBA) on persistent memory
 devices is to provide efficient sector level atomicity.
 If the flag is not set, remapping is allowed especially if it results in the driver providing sector atomicity.  File systems (or the requester) prefer that a persistent memory device driver provides
@@ -337,13 +345,16 @@ than welcome to provide sector atomicity as long as there is no remapping.</div>
 <div> </div>
 
 
+
 ### -field Control
 
 Drivers can check this member to determine whether it is set with SL_PENDING_RETURNED. Drivers have read-only access to this member.
 
+
 ### -field Parameters
 
 A union that depends on the major and minor IRP function code values contained in <b>MajorFunction</b> and <b>MinorFunction</b>. The following table shows which IRPs use the individual members of the <b>Parameters</b> union.
+
 <table>
 <tr>
 <th>Member name</th>
@@ -494,7 +505,9 @@ A union that depends on the major and minor IRP function code values contained i
 </tr>
 </table>
  
+
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550710">IRP Major Function Codes</a>.
+
 
 ### -field Create
 
@@ -639,9 +652,11 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 A pointer to the driver-created <a href="kernel.device_object">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.
 
+
 ### -field FileObject
 
 A pointer to a <a href="kernel.file_object">FILE_OBJECT</a> structure that represents the file object, if any, that is associated with <b>DeviceObject</b> pointer. 
+
 
 ### -field CompletionRoutine
 
@@ -662,11 +677,13 @@ If a higher-level driver allocates IRPs to make requests of its own, its <i>IoCo
 
 In some cases, a higher-level driver layered over a mass-storage device driver is responsible for splitting up large transfer requests for the underlying device driver. In particular, SCSI class drivers must check the <b>Parameters.Read.Length</b> and <b>Parameters.Write.Length</b>, determine whether the size of the requested transfer exceeds the underlying HBA's transfer capabilities, and, if so, split the <b>Length</b> of the original request into a sequence of partial transfers to satisfy the original IRP.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -707,5 +724,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_STACK_LOCATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_STACK_LOCATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

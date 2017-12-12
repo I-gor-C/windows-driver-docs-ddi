@@ -42,6 +42,7 @@ This structures is the output buffer received by the <a href="buses.ioctl_sriov_
  was mitigated.
 
 
+
 ## -syntax
 
 ````
@@ -57,6 +58,7 @@ typedef struct _SRIOV_MITIGATED_RANGE_UPDATE_OUTPUT {
 
 Zero-based index of the virtual function from the first virtual function exposed by this physical function.
 
+
 ## -remarks
 
 
@@ -65,6 +67,7 @@ Zero-based index of the virtual function from the first virtual function exposed
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

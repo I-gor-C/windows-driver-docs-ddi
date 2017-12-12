@@ -7,7 +7,7 @@ old-location: kernel\key_cached_information.htm
 old-project: kernel
 ms.assetid: 5ee72ae9-0548-480f-84de-4c09ae4be507
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: _KEY_CACHED_INFORMATION, *PKEY_CACHED_INFORMATION, KEY_CACHED_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>KEY_CACHED_INFORMATION</b> structure holds the cached information available for a registry key or subkey.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _KEY_CACHED_INFORMATION {
 
 The last time the key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.
 
+
 ### -field TitleIndex
 
 Device and intermediate drivers should ignore this member.
+
 
 ### -field SubKeys
 
 The number of subkeys for a key.
 
+
 ### -field MaxNameLen
 
 The maximum number of bytes for a subkey name.
+
 
 ### -field Values
 
 The number of value entries.
 
+
 ### -field MaxValueNameLen
 
 The maximum length, in bytes, of any value entry name.
+
 
 ### -field MaxValueDataLen
 
 The maximum length, in bytes, of a value entry data field.
 
+
 ### -field NameLength
 
 The size, in bytes, of the key name.
+
 
 ## -remarks
 
@@ -99,14 +108,17 @@ The size, in bytes, of the key name.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating system.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -144,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_CACHED_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_CACHED_INFORMATION structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

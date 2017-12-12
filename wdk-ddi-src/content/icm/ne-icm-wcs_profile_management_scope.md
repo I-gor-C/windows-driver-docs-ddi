@@ -7,7 +7,7 @@ old-location: print\wcs_profile_management_scope.htm
 old-project: print
 ms.assetid: 85909f39-7923-4e2a-ad37-66b071775b5f
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: WCS_PROFILE_MANAGEMENT_SCOPE, WCS_PROFILE_MANAGEMENT_SCOPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The WCS_PROFILE_MANAGEMENT_SCOPE enumeration is used to specify the scope of a profile management operation, such as associating a profile with a device.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum  {
 
 Indicates that the profile management operation affects all users.
 
+
 ### -field WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER
 
 Indicates that profile management operation affects only the current user.
+
 
 ## -remarks
 
@@ -69,14 +72,17 @@ Indicates that profile management operation affects only the current user.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Included in Windows Vista and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

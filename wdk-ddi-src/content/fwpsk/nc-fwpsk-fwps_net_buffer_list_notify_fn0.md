@@ -7,7 +7,7 @@ old-location: netvista\fwps_net_buffer_list_notify_fn0.htm
 old-project: netvista
 ms.assetid: ad603c9c-aa11-4c8b-9d19-be2938608f3d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The filter engine calls the
   associated with packets tagged by the callout.
 
 
+
 ## -prototype
 
 ````
@@ -69,10 +70,12 @@ A value that indicates the type of notification that the filter engine is sendin
      <a href="netvista.fwps_net_buffer_list_event_type0">
      FWPS_NET_BUFFER_LIST_EVENT_TYPE0</a> enumeration.
 
+
 ### -param netBufferList [in, out, optional]
 
 A pointer to the buffer list that contains packets that were previously tagged as interesting by
      the callout driver.
+
 
 ### -param newNetBufferList [in, out, optional]
 
@@ -80,22 +83,27 @@ A pointer to an updated buffer list that contains packets that are interesting t
      driver. The use of this parameter differs depending on the type of event. For events where a change is
      made to the indicated packet, the changed version is passed as this parameter.
 
+
 ### -param layerId [in]
 
 The layer from which the notification function was called.
+
 
 ### -param context [in]
 
 The context used to tag the packets of interest. This value is the value assigned to the packet by
      the callout driver and is used to identify the packet.
 
+
 ### -param contextTag [in]
 
 The context tag used to associate the packets of interest with the context of the callout
      driver.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 This function is associated with a callout driver by a call to 
@@ -104,19 +112,23 @@ This function is associated with a callout driver by a call to
     handle messages for multiple associated buffer lists by using the context and context tag to
     differentiate between instances.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 7.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -127,9 +139,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -160,5 +174,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_NOTIFY_FN0 callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_NOTIFY_FN0 callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

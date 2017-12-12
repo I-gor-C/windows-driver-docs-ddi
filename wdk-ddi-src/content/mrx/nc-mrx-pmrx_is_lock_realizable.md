@@ -41,6 +41,7 @@ req.irql:
 The<i> MRxIsLockRealizable</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request that a network mini-redirector indicate whether a specific byte-range lock is supported on this NET_ROOT structure.
 
 
+
 ## -prototype
 
 ````
@@ -62,17 +63,21 @@ NTSTATUS MRxIsLockRealizable(
 
 A pointer to the FCB structure. 
 
+
 ### -param ByteOffset [in]
 
 A value indicating the byte offset for the byte range lock. 
+
 
 ### -param Length [in]
 
 A value indicating the length for the byte range lock. 
 
+
 ### -param LowIoLockFlags [in]
 
 A value indicating the I/O lock flags. This parameter is a bitmask that contains any combination of the following values: 
+
 
 ## -returns
 <i>MRxIsLockRealizable</i> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as the following: 
@@ -82,16 +87,19 @@ A value indicating the I/O lock flags. This parameter is a bitmask that contains
 
  
 
+
 ## -remarks
 <i>MRxIsLockRealizable</i> determines whether the specific byte-range lock requested is supported on this NET_ROOT structure. A network mini-redirector might support certain byte range locks and not support others. For example, a network mini-redirector might only support 32-bit byte range locks or exclusive locks.
 
 <i>MRxIsLockRealizable</i> is called in response to receiving an IRP with the IRP_MN_LOCK minor function.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,5 +166,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxIsLockRealizable routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Strmini.h header
 
+## -description
 
 This header is used by Streaming media devices. For more information, see
 - [Streaming media devices](../_stream/index.md)
@@ -31,41 +36,41 @@ Strmini.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PHW_CANCEL_SRB callback](nc-strmini-phw-cancel-srb.md) | The class driver calls the minidriver's StrMiniCancelPacket routine to signal that a stream request has been canceled. |
-| [PHW_EVENT_ROUTINE callback](nc-strmini-phw-event-routine.md) | The class driver calls the stream minidriver's StrMiniEvent routine to signal to a minidriver an event should be enabled or disabled. |
-| [PHW_PRIORITY_ROUTINE callback](nc-strmini-phw-priority-routine.md) | StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level. |
-| [PHW_QUERY_CLOCK_ROUTINE callback](nc-strmini-phw-query-clock-routine.md) | Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied StrMiniClock function, provided in each stream's HW_STREAM_OBJECT. |
-| [PHW_RECEIVE_DEVICE_SRB callback](nc-strmini-phw-receive-device-srb.md) | The minidriver-supplied StrMiniReceiveDevicePacket routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device. |
-| [PHW_REQUEST_TIMEOUT_HANDLER callback](nc-strmini-phw-request-timeout-handler.md) | The stream class driver calls the minidriver's StrMiniRequestTimeout routine to signal to the minidriver that a request has timed out. |
+| [PHW_CANCEL_SRB callback](nc-strmini-phw_cancel_srb.md) | The class driver calls the minidriver's StrMiniCancelPacket routine to signal that a stream request has been canceled. |
+| [PHW_EVENT_ROUTINE callback](nc-strmini-phw_event_routine.md) | The class driver calls the stream minidriver's StrMiniEvent routine to signal to a minidriver an event should be enabled or disabled. |
+| [PHW_PRIORITY_ROUTINE callback](nc-strmini-phw_priority_routine.md) | StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level. |
+| [PHW_QUERY_CLOCK_ROUTINE callback](nc-strmini-phw_query_clock_routine.md) | Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied StrMiniClock function, provided in each stream's HW_STREAM_OBJECT. |
+| [PHW_RECEIVE_DEVICE_SRB callback](nc-strmini-phw_receive_device_srb.md) | The minidriver-supplied StrMiniReceiveDevicePacket routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device. |
+| [PHW_REQUEST_TIMEOUT_HANDLER callback](nc-strmini-phw_request_timeout_handler.md) | The stream class driver calls the minidriver's StrMiniRequestTimeout routine to signal to the minidriver that a request has timed out. |
 
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
-| [HW_CLOCK_OBJECT structure](ns-strmini--hw-clock-object.md) | The HW_CLOCK_OBJECT structure describes the clock associated with a stream. |
-| [HW_EVENT_DESCRIPTOR structure](ns-strmini--hw-event-descriptor.md) | When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. |
-| [HW_INITIALIZATION_DATA structure](ns-strmini--hw-initialization-data.md) | The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. |
-| [HW_STREAM_DESCRIPTOR structure](ns-strmini--hw-stream-descriptor.md) | The minidriver uses the HW_STREAM_DESCRIPTOR structure to return stream information to the stream class driver. |
-| [HW_STREAM_HEADER structure](ns-strmini--hw-stream-header.md) | The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure. |
-| [HW_STREAM_INFORMATION structure](ns-strmini--hw-stream-information.md) | The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an HW_STREAM_DESCRIPTOR structure. |
-| [HW_STREAM_OBJECT structure](ns-strmini--hw-stream-object~r1.md) | HW_STREAM_OBJECT describes an instance of a minidriver stream. |
-| [HW_STREAM_REQUEST_BLOCK structure](ns-strmini--hw-stream-request-block.md) | The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks. |
-| [HW_TIME_CONTEXT structure](ns-strmini--hw-time-context.md) | The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request. |
-| [PKSSCATTER_GATHER structure](ns-strmini-pksscatter-gather.md) | . |
-| [PORT_CONFIGURATION_INFORMATION structure](ns-strmini--port-configuration-information~r1.md) | PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system. |
-| [STREAM_DATA_INTERSECT_INFO structure](ns-strmini--stream-data-intersect-info.md) | STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation. |
-| [STREAM_METHOD_DESCRIPTOR structure](ns-strmini--stream-method-descriptor.md) | . |
-| [STREAM_PROPERTY_DESCRIPTOR structure](ns-strmini--stream-property-descriptor.md) | STREAM_PROPERTY_DESCRIPTOR specifies the parameters of property get/set requests that the class driver passes to the minidriver. |
-| [STREAM_TIME_REFERENCE structure](ns-strmini--stream-time-reference.md) | . |
+| [PKSSCATTER_GATHER structure](ns-strmini-pksscatter_gather.md) | . |
+| [_HW_CLOCK_OBJECT structure](ns-strmini-_hw_clock_object.md) | The HW_CLOCK_OBJECT structure describes the clock associated with a stream. |
+| [_HW_EVENT_DESCRIPTOR structure](ns-strmini-_hw_event_descriptor.md) | When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. |
+| [_HW_INITIALIZATION_DATA structure](ns-strmini-_hw_initialization_data.md) | The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. |
+| [_HW_STREAM_DESCRIPTOR structure](ns-strmini-_hw_stream_descriptor.md) | The minidriver uses the HW_STREAM_DESCRIPTOR structure to return stream information to the stream class driver. |
+| [_HW_STREAM_HEADER structure](ns-strmini-_hw_stream_header.md) | The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure. |
+| [_HW_STREAM_INFORMATION structure](ns-strmini-_hw_stream_information.md) | The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an HW_STREAM_DESCRIPTOR structure. |
+| [_HW_STREAM_OBJECT structure](ns-strmini-_hw_stream_object~r1.md) | HW_STREAM_OBJECT describes an instance of a minidriver stream. |
+| [_HW_STREAM_REQUEST_BLOCK structure](ns-strmini-_hw_stream_request_block.md) | The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks. |
+| [_HW_TIME_CONTEXT structure](ns-strmini-_hw_time_context.md) | The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request. |
+| [_PORT_CONFIGURATION_INFORMATION structure](ns-strmini-_port_configuration_information~r1.md) | PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system. |
+| [_STREAM_DATA_INTERSECT_INFO structure](ns-strmini-_stream_data_intersect_info.md) | STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation. |
+| [_STREAM_METHOD_DESCRIPTOR structure](ns-strmini-_stream_method_descriptor.md) | . |
+| [_STREAM_PROPERTY_DESCRIPTOR structure](ns-strmini-_stream_property_descriptor.md) | STREAM_PROPERTY_DESCRIPTOR specifies the parameters of property get/set requests that the class driver passes to the minidriver. |
+| [_STREAM_TIME_REFERENCE structure](ns-strmini-_stream_time_reference.md) | . |
 
 ## Enumerations
 
 | Title   | Description   |
 | ---- |:---- |
-| [SRB_COMMAND enumeration](ne-strmini--srb-command.md) | . |
-| [STREAM_BUFFER_TYPE enumeration](ne-strmini-stream-buffer-type.md) | This enumeration defines the buffer types for StreamClassGetPhysicalAddress. |
-| [STREAM_DEBUG_LEVEL enumeration](ne-strmini-stream-debug-level.md) | The STREAM_DEBUG_LEVEL enumeration lists incrementally increasing levels of debugger output. |
-| [STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE enumeration](ne-strmini--stream-minidriver-device-notification-type.md) | . |
-| [STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration](ne-strmini--stream-minidriver-stream-notification-type.md) | . |
-| [STREAM_PRIORITY enumeration](ne-strmini--stream-priority.md) | TD. |
-| [TIME_FUNCTION enumeration](ne-strmini-time-function.md) | . |
+| [STREAM_BUFFER_TYPE enumeration](ne-strmini-stream_buffer_type.md) | This enumeration defines the buffer types for StreamClassGetPhysicalAddress. |
+| [STREAM_DEBUG_LEVEL enumeration](ne-strmini-stream_debug_level.md) | The STREAM_DEBUG_LEVEL enumeration lists incrementally increasing levels of debugger output. |
+| [TIME_FUNCTION enumeration](ne-strmini-time_function.md) | . |
+| [_SRB_COMMAND enumeration](ne-strmini-_srb_command.md) | . |
+| [_STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE enumeration](ne-strmini-_stream_minidriver_device_notification_type.md) | . |
+| [_STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration](ne-strmini-_stream_minidriver_stream_notification_type.md) | . |
+| [_STREAM_PRIORITY enumeration](ne-strmini-_stream_priority.md) | TD. |

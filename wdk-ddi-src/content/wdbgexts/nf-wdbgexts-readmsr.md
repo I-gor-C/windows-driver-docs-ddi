@@ -7,7 +7,7 @@ old-location: debugger\readmsr.htm
 old-project: debugger
 ms.assetid: 1cb51f88-a943-43e6-af18-0e9e301d8382
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: ReadMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>ReadMsr</b> function reads the contents of a Model-Specific Register (MSR). 
 
 
+
 ## -syntax
 
 ````
@@ -58,15 +59,19 @@ __inline VOID ReadMsr(
 
 Specifies the ID number of the MSR.
 
+
 ### -param MsrValue 
 
 Receives the value of the MSR.
 
+
 ## -returns
 None
 
+
 ## -remarks
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
+
 
 
 ## -requirements
@@ -74,6 +79,7 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -84,6 +90,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

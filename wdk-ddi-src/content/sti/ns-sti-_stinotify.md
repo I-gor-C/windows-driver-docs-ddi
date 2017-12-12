@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The STINOTIFY structure is used as a parameter to the <a href="image.istillimage_launchapplicationfordevice">IStillImage::LaunchApplicationForDevice</a>, <a href="image.istidevice_getlastnotificationdata">IStiDevice::GetLastNotificationData</a>, and <a href="image.istiusd_getnotificationdata">IStiUSD::GetNotificationData</a> methods.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef struct _STINOTIFY {
 
 Caller-supplied size, in bytes, of the STINOTIFY structure.
 
+
 ### -field guidNotificationCode
 
 GUID of the event. For more information, see <a href="https://msdn.microsoft.com/5f9be89c-8442-4894-b2f6-a4d3558464bf">Still Image Device Events</a>.
 
+
 ### -field abNotificationData
 
 Byte array containing optional, vendor-defined information.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ Byte array containing optional, vendor-defined information.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

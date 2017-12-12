@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StreamClassRegisterFilterWithNoKSPins</b> routine is used to register filter drivers with Microsoft DirectShow that have no kernel streaming pins and, therefore, do not stream in kernel mode. 
 
 
+
 ## -syntax
 
 ````
@@ -62,28 +63,35 @@ NTSTATUS StreamClassRegisterFilterWithNoKSPins(
 
 Points to the driver's device object.
 
+
 ### -param InterfaceClassGUID [in]
 
 Specifies the interface class GUID to register.
+
 
 ### -param PinCount [in]
 
 Specifies the number of pins on the filter.
 
+
 ### -param PinDirection [in]
 
 Specifies a <i>PinCount</i>-sized array of Boolean values, one for each pin on the filter. The values indicate the pin direction for each pin. If <b>TRUE</b>, this pin is an output pin. If <b>FALSE</b>, the pin is an input pin.
+
 
 ### -param MediumList [in]
 
 Specifies a <i>PinCount</i>-sized array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures, one for each pin on the filter.
 
+
 ### -param CategoryList [in, optional]
 
 If non-NULL, specifies an array of pin category GUIDs, one for each pin on the filter.
 
+
 ## -returns
 Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
+
 
 ## -remarks
 
@@ -93,6 +101,7 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +112,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,6 +123,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +140,8 @@ Library
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20StreamClassRegisterFilterWithNoKSPins routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

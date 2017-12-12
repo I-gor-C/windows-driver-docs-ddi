@@ -7,7 +7,7 @@ old-location: display\d3dkmt-protected-session-status.htm
 old-project: display
 ms.assetid: 87a7de73-5e94-4016-b760-f3501ead08ac
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_PROTECTED_SESSION_STATUS, D3DKMT_PROTECTED_SESSION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Indicates the status of the protected session.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum _D3DKMT_PROTECTED_SESSION_STATUS {
 
 Indicates that the status is okay.
 
+
 ### -field D3DKMT_PROTECTED_SESSION_STATUS_INVALID
 
 Indicates that the status is invalid.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates that the status is invalid.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

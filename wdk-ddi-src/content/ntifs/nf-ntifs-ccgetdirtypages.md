@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 The <b>CcGetDirtyPages</b> routine searches for dirty pages in all files that match a given log handle. 
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ LARGE_INTEGER CcGetDirtyPages(
 
 Log handle stored by a previous call to <b>CcSetLogHandleForFile</b>. 
 
+
 ### -param DirtyPageRoutine [in]
 
 Pointer to a callback routine that builds up a dirty page table from the pages found. This routine, which is called for each dirty page found, is declared as follows: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -83,33 +86,41 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 </table></span></div>
 
 
+
 ### -param FileObject
 
 Pointer to the file object for the file containing the dirty page. 
+
 
 ### -param FileOffset
 
 Pointer to a variable that specifies the starting byte offset of the dirty page within the cached file. 
 
+
 ### -param Length
 
 Length, in bytes, of the dirty page. 
+
 
 ### -param OldestLsn
 
 Oldest logical sequence number (LSN) found in the dirty page. 
 
+
 ### -param NewestLsn
 
 Newest LSN found in the dirty page. 
+
 
 ### -param Context1
 
 First context parameter. 
 
+
 ### -param Context2
 
 Second context parameter. 
+
 </dd>
 </dl>
 
@@ -117,23 +128,28 @@ Second context parameter.
 
 First context parameter to be passed to the <i>DirtyPageRoutine</i>. 
 
+
 ### -param Context2 [in]
 
 Second context parameter to be passed to the <i>DirtyPageRoutine</i>. 
 
+
 ## -returns
 <b>CcGetDirtyPages</b> returns the oldest LSN found in the set of dirty pages. If there are no dirty pages, <b>CcGetDirtyPages</b> returns zero. 
+
 
 ## -remarks
 File systems call <b>CcGetDirtyPages</b> to return dirty pages in all files that match a given log handle. <b>CcGetDirtyPages</b> searches for dirty pages in all files that match the given <i>LogHandle</i> and calls the <i>DirtyPageRoutine</i> for each page. 
 
 To set a log handle for a file, use <a href="ifsk.ccsetloghandleforfile">CcSetLogHandleForFile</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -144,14 +160,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available on Microsoft Windows XP and later. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -162,6 +181,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -172,6 +192,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -182,9 +203,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -199,5 +222,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcGetDirtyPages routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

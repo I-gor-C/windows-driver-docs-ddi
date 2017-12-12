@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 An AVStream minidriver's <i>AVStrMiniPinSetDataFormat</i> routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this <a href="stream.kspin">KSPIN</a> structure and a match for this <a href="stream.ksdatarange">KSDATARANGE</a> structure. This routine is also called due to certain types of dynamic format changes, for example the acceptance of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565107">KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT</a> property request.
 
 
+
 ## -prototype
 
 ````
@@ -63,24 +64,30 @@ NTSTATUS AVStrMiniPinSetDataFormat(
 
 Pointer to the <a href="stream.kspin">KSPIN</a> structure for which the data format is changing.
 
+
 ### -param OldFormat [in, optional]
 
 Optional. Pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure. Minidrivers can use this field to determine the data format that the pin was using before this call. If <b>NULL</b>, indicates that no data format has been set for the pin and that <i>Pin's</i> create dispatch has not yet been made. A <b>NULL</b> value here indicates that this routine was called at initialization time for format verification.
+
 
 ### -param OldAttributeList [in, optional]
 
 Optional. Pointer to a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure that stores attributes for the previous format.
 
+
 ### -param DataRange [in]
 
 Pointer to a <a href="stream.ksdatarange">KSDATARANGE</a> structure. The data range for the new format.
+
 
 ### -param AttributeRange [in, optional]
 
 Optional. The attribute range for the new format.
 
+
 ## -returns
 Return STATUS_SUCCESS if <i>Pin</i>'s <b>ConnectionFormat</b> member matches the range that was passed to this routine. Return STATUS_NO_MATCH if <b>ConnectionFormat</b> does not match the passed range and the minidriver would like to continue to attempt to find a match with another range. Return an error code of choice if <b>ConnectionFormat</b> does not match the passed range and the minidriver does not want to continue to try to find a match with another range. Do not return STATUS_PENDING.
+
 
 ## -remarks
 In a ring 3 graph, the Kernel Streaming Proxy module (KsProxy) sets the data format based on the agreed upon connection format or a dynamic format change. KsProxy issues a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565103">KSPROPERTY_CONNECTION_DATAFORMAT</a> request which, after some initial validation, is translated into this dispatch call to the minidriver. See <a href="stream.kernel_streaming_proxy_reference">Kernel Streaming Proxy</a>. For more information, see <a href="https://msdn.microsoft.com/44b55a5a-ec58-4c1e-b780-e20829fe3edf">KS Data Formats and Data Ranges</a> and <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>.
@@ -93,11 +100,13 @@ This routine can be called before the pin receives an <a href="https://msdn.micr
 
 This routine is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -108,14 +117,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -126,9 +138,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -155,5 +169,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinSetDataFormat routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

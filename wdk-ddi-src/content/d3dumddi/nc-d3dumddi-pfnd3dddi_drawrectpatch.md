@@ -7,7 +7,7 @@ old-location: display\drawrectpatch.htm
 old-project: display
 ms.assetid: c0e3046c-f2af-4406-ac5a-c3e44f40b1fd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>DrawRectPatch</b> function draws a new or cached rectangular patch or updates the specification of a previously defined patch.
 
 
+
 ## -prototype
 
 ````
@@ -62,20 +63,25 @@ __checkReturn HRESULT APIENTRY DrawRectPatch(
 
  A handle to the display device (graphics context).
 
+
 ### -param pData [in]
 
  A pointer to a <a href="display.d3dddiarg_drawrectpatch">D3DDDIARG_DRAWRECTPATCH</a> structure that describes the rectangular patch to draw.
+
 
 ### -param pInfo [in]
 
  Optional. A pointer to a D3DDDIRECTPATCH_INFO structure that describes information about the rectangular patch.
 
+
 ### -param pPatch [in]
 
  Optional. A pointer to a buffer that contains four floating-point values (D3DFLOAT[4]) that provide the segment counts for each of the four edges of the rectangular patch.
 
+
 ## -returns
 <b>DrawRectPatch</b> returns S_OK or an appropriate error result if the rectangular patch is not successfully drawn.
+
 
 ## -remarks
 When the Microsoft Direct3D runtime calls<i>pPatch</i> the user-mode display driver's <b>DrawRectPatch</b> function, it can optionally supply information in the <i>pInfo</i> and  parameters. The runtime sets flags in the <b>Flags</b> member of the <a href="display.d3dddiarg_drawrectpatch">D3DDDIARG_DRAWRECTPATCH</a> structure that is specified by <i>pData</i> to indicate if it supplies this optional information. 
@@ -98,11 +104,13 @@ If a nonzero <b>Handle</b> value has been previously specified in an earlier cal
 
 The driver receives notification to release cached patch information through the D3DRS_DELETERTPATCH render state. The value of this render state is the patch to delete.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -113,14 +121,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -140,5 +151,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_DRAWRECTPATCH callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_DRAWRECTPATCH callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

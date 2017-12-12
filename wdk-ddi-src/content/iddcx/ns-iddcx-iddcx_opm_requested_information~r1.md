@@ -7,7 +7,7 @@ old-location: display\iddcx_opm_requested_information.htm
 old-project: display
 ms.assetid: 0e8c49b2-1c36-432b-aba9-bc6a739ee04d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_OPM_REQUESTED_INFORMATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -60,10 +61,12 @@ typedef struct IDDCX_OPM_REQUESTED_INFORMATION {
 Total size of the structure.
                  
 
+
 ### -field RequestedInformation
 
 The information that was requested.
                  
+
 
 ## -remarks
 
@@ -73,6 +76,7 @@ The information that was requested.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

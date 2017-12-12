@@ -7,7 +7,7 @@ old-location: storage\ms_sm_adapterinformationquery.htm
 old-project: storage
 ms.assetid: 81c05f47-e75a-4d67-8e77-33ebe1750c67
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The MS_SM_AdapterInformationQuery structure is used by a WMI provider to expose attributes that are associated with a SAS adapter.
 
 
+
 ## -syntax
 
 ````
@@ -72,69 +73,86 @@ typedef struct _MS_SM_AdapterInformationQuery {
 
 The unique adapter ID.
 
+
 ### -field HBAStatus
 
 The status of the operation.
+
 
 ### -field NumberOfPorts
 
 The number of ports on the HBA.
 
+
 ### -field VendorSpecificID
 
 A vendor-specific ID.
+
 
 ### -field Manufacturer
 
 An ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
 
+
 ### -field SerialNumber
 
 An ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
+
 
 ### -field Model
 
 An ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.
 
+
 ### -field ModelDescription
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the model description.
+
 
 ### -field HardwareVersion
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
 
+
 ### -field DriverVersion
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
+
 
 ### -field OptionROMVersion
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
 
+
 ### -field FirmwareVersion
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
+
 
 ### -field DriverName
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
 
+
 ### -field HBASymbolicName
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
+
 
 ### -field RedundantOptionROMVersion
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
 
+
 ### -field RedundantFirmwareVersion
 
 An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
 
+
 ### -field MfgDomain
 
 The name of the HBA manufacturer.
+
 
 ## -remarks
 
@@ -144,6 +162,7 @@ The name of the HBA manufacturer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

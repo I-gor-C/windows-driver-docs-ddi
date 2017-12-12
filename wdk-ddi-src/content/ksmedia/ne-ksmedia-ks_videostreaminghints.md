@@ -41,6 +41,7 @@ req.irql:
 The KS_VideoStreamingHints enumeration defines video compression hints.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum  {
 
 Specifies compression that is based on the interval between video frames.
 
+
 ### -field KS_StreamingHint_KeyFrameRate
 
 Specifies compression that is based on key frames.
+
 
 ### -field KS_StreamingHint_PFrameRate
 
 Specifies compression that is based on predicted frames.
 
+
 ### -field KS_StreamingHint_CompQuality
 
 Specifies compression that is based on compression quality.
 
+
 ### -field KS_StreamingHint_CompWindowSize
 
 Specifies compression that is based on compression window size.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Specifies compression that is based on compression window size.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

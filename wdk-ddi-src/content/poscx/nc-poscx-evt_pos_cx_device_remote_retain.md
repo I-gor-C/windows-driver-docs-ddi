@@ -8,7 +8,7 @@ old-project: pos
 ms.assetid: 9B23DB23-D995-4737-9302-872F2144823D
 ms.author: windowsdriverdev
 ms.date: 11/15/2017
-ms.keywords: *PPCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
+ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -44,6 +44,7 @@ The
 on a network device and allows the driver to do additional work. This callback is typically only used with network connected devices that require additional logic for handling ownership transitions.
 
 
+
 ## -prototype
 
 ````
@@ -63,9 +64,11 @@ NTSTATUS EvtPosCxDeviceRemoteRetain(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param deviceInterfaceTag [in]
 
 An identifier used to specify which interface is being retained in a multi-function device.  For a single-interface device, this value should be 0.
+
 
 ## -returns
 If the operation is successful, the callback function must return STATUS_SUCCESS or another status value for which NT_SUCCESS(status) equals TRUE.
@@ -82,6 +85,7 @@ The <b>EVT_POS_CX_DEVICE_REMOTE_RETAIN</b> function type is defined in the poscx
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+
 ## -remarks
 
 
@@ -90,14 +94,17 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

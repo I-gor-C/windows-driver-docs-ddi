@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_post_composition.htm
 old-project: display
 ms.assetid: 71D57E42-C1E7-4A0E-80B3-DD39388552C5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Specifies information about any additional transforms that should occur after the planes are composed.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION {
 
 A DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS structure indicating additional transform information.
 
+
 ### -field SrcRect
 
 Contains the source rect of the virtual mode.
+
 
 ### -field DstRect
 
 Contains the destination rect of the virtual mode.
 
+
 ### -field Rotation
 
 Indicates additional rotation that should occur on the final image.
+
 
 ## -remarks
 The source mode contains the virtual mode size and the destination rectangle indicates how the virtual mode maps to the physical mode.
@@ -78,11 +83,13 @@ For example, if a 1024x768 virtual mode is used with 1920x1080 physical mode, th
 
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -40,8 +40,10 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>UFX_ENDPOINT_CALLBACKS_INIT</b> macro initializes the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure.<div class="alert"><b>Note</b>  <p class="note">Note that there are currently no endpoint callback functions defined in the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure. 
+
 </div>
 <div> </div>
+
 
 
 
@@ -60,17 +62,21 @@ FORCEINLINE void UFX_ENDPOINT_CALLBACKS_INIT(
 
 A pointer to the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure.
 
+
 ## -returns
 This function does not return a value.
 
+
 ## -remarks
 The <b>UFX_ENDPOINT_CALLBACKS_INIT</b> macro will set all fields of the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure to zero and set the size field appropriately.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

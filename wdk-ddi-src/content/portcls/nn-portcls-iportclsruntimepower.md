@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 IPortClsRuntimePower is the interface that the port class driver (PortCls)  uses for accessing the runtime power management capabilities of the audio adapter.
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsRuntimePower</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IPortClsRuntimePower</b> also has these types of members:
 
@@ -53,6 +54,7 @@ The port class driver (PortCls) uses the <code>SendPowerControl</code>  method t
 The port class driver (PortCls) uses the <code>UnregisterPowerControlCallback</code>  method to unregister a power control callback.
 
  
+
 
 ## -members
 The <b>IPortClsRuntimePower</b> interface has these methods.
@@ -67,6 +69,7 @@ The <b>IPortClsRuntimePower</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The port class driver (PortCls) uses the <code>RegisterPowerControlCallback</code>  method to register a power control callback.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -75,6 +78,7 @@ The port class driver (PortCls) uses the <code>RegisterPowerControlCallback</cod
 </td>
 <td align="left" width="63%">
 The port class driver (PortCls) uses the <code>SendPowerControl</code>  method to send power control codes to the audio adapter.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -83,6 +87,7 @@ The port class driver (PortCls) uses the <code>SendPowerControl</code>  method t
 </td>
 <td align="left" width="63%">
 The port class driver (PortCls) uses the <code>UnregisterPowerControlCallback</code>  method to unregister a power control callback.
+
 </td>
 </tr>
 </table>The port class driver (PortCls) uses the <code>RegisterPowerControlCallback</code>  method to register a power control callback.
@@ -93,6 +98,7 @@ The port class driver (PortCls) uses the <code>UnregisterPowerControlCallback</c
 
  
 
+
 ## -remarks
 
 
@@ -101,6 +107,7 @@ The port class driver (PortCls) uses the <code>UnregisterPowerControlCallback</c
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

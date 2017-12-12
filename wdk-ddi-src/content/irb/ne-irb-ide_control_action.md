@@ -7,7 +7,7 @@ old-location: storage\ide_control_action.htm
 old-project: storage
 ms.assetid: a63d1a2f-d560-492f-9b73-198e42cb4300
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: IDE_CONTROL_ACTION, IDE_CONTROL_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The IDE_CONTROL_ACTION enumeration type indicates the control action to be performed by a <a href="storage.idehwcontrol">IdeHwControl</a> routine.
 
 
+
 ## -syntax
 
 ````
@@ -60,13 +61,16 @@ typedef enum  {
 
 Indicates that the miniport driver should start the channel.
 
+
 ### -field IdeStop
 
 Indicates that the miniport driver should stop the channel.
 
+
 ### -field IdePowerUp
 
 Indicates that the miniport driver should power up the channel.
+
 
 ### -field IdePowerDown
 
@@ -74,9 +78,11 @@ Indicates that the miniport driver should power up the channel.
       Indicates that the miniport driver should power down the channel.
      
 
+
 ### -field IdeVendorDefined
 
 Indicates that the miniport driver should perform a vendor-defined control action.
+
 
 ## -remarks
 
@@ -86,6 +92,7 @@ Indicates that the miniport driver should perform a vendor-defined control actio
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -102,5 +109,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_CONTROL_ACTION enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_CONTROL_ACTION enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

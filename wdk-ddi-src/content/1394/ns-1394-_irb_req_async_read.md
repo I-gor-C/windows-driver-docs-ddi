@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary for the 1394 stack to carry out an asynchronous read request.
 
 
+
 ## -syntax
 
 ````
@@ -66,16 +67,20 @@ typedef struct _IRB_REQ_ASYNC_READ {
 
 Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
 
+
 ### -field nNumberOfBytesToRead
 
 Specifies the number of bytes to be read from the 1394 node.
+
 
 ### -field nBlockSize
 
 Specifies the size of each individual block within the data stream that is read as a whole from the 1394 node. If this parameter is zero, the maximum packet size for the device and speed selected is used to issue these read requests, unless raw-mode addressing is used.
 
 
+
 If raw-mode addressing is used, the client driver should set the <b>nBlockSize</b> member to the maximum asynchronous payload size that is supported by the device at the connected speed.
+
 
 
 For more information on raw-mode addressing, see <a href="https://msdn.microsoft.com/93ad0cdf-5ac2-4916-b90e-1e64ca4494b6">Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus.</a>
@@ -83,9 +88,11 @@ For more information on raw-mode addressing, see <a href="https://msdn.microsoft
 <div> </div>
 
 
+
 ### -field fulFlags
 
 Specifies any nondefault settings for this operation. The following flags are provided.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -94,49 +101,61 @@ Specifies any nondefault settings for this operation. The following flags are pr
 <tr>
 <td>
  ASYNC_FLAGS_NONINCREMENTING
+
 </td>
 <td>
 When the bus driver splits the request into blocks, begin the operation for each block at the same address, rather than treating each block as consecutive sections of the device's address space. Used only in asynchronous requests larger than <b>u.AsyncRead.nBlockSize</b> or the maximum packet size for the current speed.
+
 </td>
 </tr>
 <tr>
 <td>
 ASYNC_FLAGS_PING
+
 </td>
 <td>
 The bus driver returns the elapsed time of the operation in <b>u.AsyncRead.ElapsedTime</b>.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Mdl
 
 Points to an MDL that describes the device driver's buffer, which receives data from the 1394 node.
+
 
 ### -field ulGeneration
 
 Specifies the bus reset generation as known by the device driver that submits this asynchronous request. If the generation count specified does not match the actual generation of the bus, this request is returned with an error of STATUS_INVALID_GENERATION. 
 
+
 ### -field chPriority
 
 Reserved. Drivers must set this to zero.
+
 
 ### -field nSpeed
 
 Reserved. Drivers must set this to zero.
 
+
 ### -field tCode
 
 Reserved. Drivers must set this to zero.
+
 
 ### -field Reserved
 
 Reserved. Drivers must set this to zero.
 
+
 ### -field ElapsedTime
 
 Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
+
 
 ## -remarks
 
@@ -146,6 +165,7 @@ Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

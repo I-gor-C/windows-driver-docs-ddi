@@ -7,7 +7,7 @@ old-location: print\cpsuidatablock.htm
 old-project: print
 ms.assetid: c5b488ac-dd8d-4484-81ca-b64fdf517100
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _CPSUIDATABLOCK, *PCPSUIDATABLOCK, CPSUIDATABLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The CPSUIDATABLOCK structure is used as a parameter for the <a href="print.compropsheet">ComPropSheet</a> function, if the function code is <a href="print.cpsfunc_set_datablock">CPSFUNC_SET_DATABLOCK</a> or <a href="print.cpsfunc_query_datablock">CPSFUNC_QUERY_DATABLOCK</a>.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _CPSUIDATABLOCK {
 
 Size, in bytes of the buffer pointed to by <b>pbData</b>.
 
+
 ### -field pbData
 
 Pointer to a caller-allocated buffer.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Pointer to a caller-allocated buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: AD5E6434-BBBF-44CB-8153-B8F4D4F75E94
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_ROUTING_TABLE, SECURE_ELEMENT_ROUTING_TABLE, *PSECURE_ELEMENT_ROUTING_TABLE
+ms.keywords: _SECURE_ELEMENT_ROUTING_TABLE, *PSECURE_ELEMENT_ROUTING_TABLE, SECURE_ELEMENT_ROUTING_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 SECURE_ELEMENT_ROUTING_TABLE is an input parameter for <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_set_routing_table.md">IOCTL_NFCSE_SET_ROUTING_TABLE</a>.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ typedef struct _SECURE_ELEMENT_ROUTING_TABLE {
 
 Number of routing table entries.
 
+
 ### -field TableEntries[ANYSIZE_ARRAY]
 
 Listen mode routing table.
+
 
 ## -remarks
 
@@ -70,6 +73,7 @@ Listen mode routing table.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

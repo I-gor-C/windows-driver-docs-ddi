@@ -1,17 +1,17 @@
 ---
 UID: NF.ndis.NdisReleaseSpinLock
-title: NdisReleaseSpinLock
+title: NdisReleaseSpinLock macro
 author: windows-driver-content
 description: The NdisReleaseSpinLock function releases a spin lock that was acquired in a preceding call to the NdisAcquireSpinLock function.
 old-location: netvista\ndisreleasespinlock.htm
 old-project: netvista
 ms.assetid: dd833373-2879-49f0-9b16-fddb2f7495c1
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/8/2017
 ms.keywords: NdisReleaseSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -31,73 +31,69 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: DISPATCH_LEVEL
-req.iface: 
 ---
 
-# NdisReleaseSpinLock function
+# NdisReleaseSpinLock macro
 
 
 
 ## -description
-<p>The 
+The 
   <b>NdisReleaseSpinLock</b> function releases a spin lock that was acquired in a preceding call to the 
-  <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a> function.</p>
+  <a href="netvista.ndisacquirespinlock">NdisAcquireSpinLock</a> function.
+
 
 
 ## -syntax
 
 ````
 VOID NdisReleaseSpinLock(
-  _In_ PNDIS_SPIN_LOCK SpinLock
+  [in] PNDIS_SPIN_LOCK SpinLock
 );
 ````
 
 
 ## -parameters
-<dl>
 
 ### -param SpinLock [in]
 
-<dd>
-<p>Pointer to the acquired spin lock to be released.</p>
-</dd>
-</dl>
+Pointer to the acquired spin lock to be released.
 
-## -returns
-<p>None</p>
 
 ## -remarks
-<p>A driver must initialize its spin lock with 
-    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> before it calls
+A driver must initialize its spin lock with 
+    <a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a> before it calls
     any other 
-    <b>Ndis..SpinLock</b> function to access the resources protected by that spin lock.</p>
+    <b>Ndis..SpinLock</b> function to access the resources protected by that spin lock.
 
-<p>A driver must call 
-    <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a> to acquire the
+A driver must call 
+    <a href="netvista.ndisacquirespinlock">NdisAcquireSpinLock</a> to acquire the
     spin lock before it can call 
     <b>NdisReleaseSpinLock</b>. Each call to 
     <b>NdisAcquireSpinLock</b> requires a reciprocal call to 
     <b>NdisReleaseSpinLock</b> before the driver can call 
-    <b>NdisAcquireSpinLock</b> again.</p>
+    <b>NdisAcquireSpinLock</b> again.
 
-<p><b>NdisReleaseSpinLock</b> restores the original IRQL at which its caller was running before the call to 
-    <b>NdisAcquireSpinLock</b>.</p>
+<b>NdisReleaseSpinLock</b> restores the original IRQL at which its caller was running before the call to 
+    <b>NdisAcquireSpinLock</b>.
 
-<p>Any spin lock acquired with 
+Any spin lock acquired with 
     <b>NdisAcquireSpinLock</b> must be released with 
     <b>NdisReleaseSpinLock</b>. Any spin lock acquired with 
     <b>NdisDprAcquireSpinLock</b> must be released with 
-    <b>NdisDprReleaseSpinLock</b>.</p>
+    <b>NdisDprReleaseSpinLock</b>.
 
-<p>For more information about acquiring and releasing NDIS spin locks, see 
+For more information about acquiring and releasing NDIS spin locks, see 
     <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
-    and Notification in Network Drivers</a>.</p>
+    and Notification in Network Drivers</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
-<p>Target platform</p>
+Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,19 +103,22 @@ VOID NdisReleaseSpinLock(
 </tr>
 <tr>
 <th width="30%">
-<p>Version</p>
+Version
+
 </th>
 <td width="70%">
-<p>Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
+Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
    <a href="https://msdn.microsoft.com/fe764786-7ab5-4b56-8f86-19010d0535af">NdisReleaseSpinLock (NDIS
    5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisReleaseSpinLock (NDIS
-   5.1)</b>) in Windows XP.</p>
+   5.1)</b>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>Header</p>
+Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,7 +128,8 @@ VOID NdisReleaseSpinLock(
 </tr>
 <tr>
 <th width="30%">
-<p>Library</p>
+Library
+
 </th>
 <td width="70%">
 <dl>
@@ -139,15 +139,18 @@ VOID NdisReleaseSpinLock(
 </tr>
 <tr>
 <th width="30%">
-<p>IRQL</p>
+IRQL
+
 </th>
 <td width="70%">
-<p>DISPATCH_LEVEL</p>
+DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
-<p>DDI compliance rules</p>
+DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_synch_function">Irql_Synch_Function</a>, <a href="devtest.ndis_spinlock">SpinLock</a>, <a href="devtest.ndis_spinlockbalanced">SpinLockBalanced</a>, <a href="devtest.ndis_spinlockdpr">SpinLockDpr</a>, <a href="devtest.ndis_spinlockdprrelease">SpinLockDprRelease</a>, <a href="devtest.ndis_spinlockrelease">SpinlockRelease</a>
@@ -158,15 +161,18 @@ VOID NdisReleaseSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
+<a href="netvista.ndisacquirespinlock">NdisAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a>
 </dt>
 <dt>
-<a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
+<a href="netvista.ndisdpracquirespinlock">NdisDprAcquireSpinLock</a>
 </dt>
 </dl>
-<p> </p>
-<p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReleaseSpinLock function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReleaseSpinLock macro%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,8 +7,8 @@ old-location: print\splclient_info_1.htm
 old-project: print
 ms.assetid: a9659f77-e84b-471a-a778-a4628d89ce19
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _SPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1
+ms.date: 12/9/2017
+ms.keywords: _SPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The SPLCLIENT_INFO_1 structure is used as input to the <a href="print.generatecopyfilepaths">GenerateCopyFilePaths</a> function that is exported by <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a>.
 
 
+
 ## -syntax
 
 ````
@@ -63,38 +64,47 @@ typedef struct _SPLCLIENT_INFO_1 {
 
 Size of the SPLCLIENT_INFO_1 structure.
 
+
 ### -field pMachineName
 
 Not used.
+
 
 ### -field pUserName
 
 Not used.
 
+
 ### -field dwBuildNum
 
 The build number of the version of the NT-based operating system running on the client, as returned by the Microsoft Window SDK <b>GetVersionEx</b> function.
+
 
 ### -field dwMajorVersion
 
 The major version number of the NT-based operating system print spooler running on the client.
 
+
 ### -field dwMinorVersion
 
 The minor version number of the NT-based operating system print spooler running on the client.
+
 
 ### -field wProcessorArchitecture
 
 The client's processor architecture, as returned by the Window SDK <b>GetSystemInfo</b> function.
 
+
 ## -remarks
 Values for all structure members are supplied by the print spooler before the spooler calls <a href="print.generatecopyfilepaths">GenerateCopyFilePaths</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

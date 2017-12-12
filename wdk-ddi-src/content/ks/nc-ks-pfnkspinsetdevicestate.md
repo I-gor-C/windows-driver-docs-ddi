@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 An AVStream minidriver's <i>AVStrMiniPinSetDeviceState</i> routine is called when the state of a <a href="stream.kspin">KSPIN</a> structure is changed due to the arrival of a connection state property 'set' IOCTL.  Typically, this will be provided by minidrivers that need to change the state of hardware.
 
 
+
 ## -prototype
 
 ````
@@ -61,16 +62,20 @@ NTSTATUS AVStrMiniPinSetDeviceState(
 
 Pointer to the <a href="stream.kspin">KSPIN</a> structure for which state is changing.
 
+
 ### -param ToState [in]
 
 The target <a href="stream.ksstate">KSSTATE</a> after receipt of the IOCTL.
+
 
 ### -param FromState [in]
 
 The previous <a href="stream.ksstate">KSSTATE</a>.
 
+
 ## -returns
 Return STATUS_SUCCESS or the error code that was returned from the attempt to set the state. Do not return STATUS_PENDING. The filter control mutex is held during this function. See <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">Filter Control Mutex in AVStream</a>.
+
 
 ## -remarks
 The minidriver specifies this routine's address in the <b>SetDeviceState</b> member of its <a href="stream.kspin_dispatch">KSPIN_DISPATCH</a> structure.
@@ -83,11 +88,13 @@ Pins that do not use the standard transport mechanism (nonstandard interface, no
 
 This routine is optional.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -98,14 +105,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +126,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -130,5 +142,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinSetDeviceState routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

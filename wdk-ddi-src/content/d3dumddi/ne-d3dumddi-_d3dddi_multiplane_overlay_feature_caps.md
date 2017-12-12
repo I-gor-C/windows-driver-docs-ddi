@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_feature_caps.htm
 old-project: display
 ms.assetid: 51e44c1c-ca56-4fe3-a27b-d0957df203cf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS, D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies overlay capabilities.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
 
 The overlay plane can rotate the data 90, 180, and 270 degrees.
 
+
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP
 
 The overlay plane can flip the data vertically, making it appear upside-down.
+
 
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP
 
 The overlay plane can flip the data horizontally, making it appear as a right-to-left mirror image.
 
+
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE
 
 Reserved for system use. The user-mode display driver should not use this value.
+
 
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB
 
 The overlay plane supports RGB format.
 
+
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_YUV
 
 The overlay plane supports YUV format.
+
 
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER
 
 The overlay plane supports stretching and shrinking using bilinear filtering.
 
+
 ### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HIGH_FILTER
 
 The overlay plane supports stretching and shrinking using filtering that is better than bilinear filtering.
+
 
 ## -remarks
 
@@ -99,22 +108,27 @@ The overlay plane supports stretching and shrinking using filtering that is bett
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

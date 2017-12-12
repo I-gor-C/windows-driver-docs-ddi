@@ -7,7 +7,7 @@ old-location: display\dxgkarg_checkmultiplaneoverlaysupport3.htm
 old-project: display
 ms.assetid: 21FE4E54-5B7D-4068-AC83-A7AFFA739169
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Used in a call to the DxgkDdiCheckMultiPlaneOverlaySupport3 function to check details on hardware support for multi-plane overlays.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 {
 
 The number of input planes to be enabled.
 
+
 ### -field ppPlanes
 
 An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE3 structure that specifies support attributes that the hardware provides for multi-plane overlays.
+
 
 ### -field PostCompositionCount
 
 The number of VidPnSources for which we want to apply post composition transforms.
 
+
 ### -field ppPostComposition
 
 An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_POST_COMPSOTION_WITH_SOURCE structure that specifies transforms that should be applied after the planes are composed.
+
 
 ### -field Supported
 
 TRUE if the multi-plane overlay configuration can be supported, otherwise FALSE.
 
+
 ### -field ReturnInfo
 
 Specifies additional information
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Specifies additional information
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

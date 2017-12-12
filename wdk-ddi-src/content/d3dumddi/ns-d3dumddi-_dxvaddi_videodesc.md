@@ -7,7 +7,7 @@ old-location: display\dxvaddi_videodesc.htm
 old-project: display
 ms.assetid: 19121888-ad5c-4596-a7ec-a95fbffda685
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXVADDI_VIDEODESC, DXVADDI_VIDEODESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The DXVADDI_VIDEODESC structure describes a video stream.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _DXVADDI_VIDEODESC {
 
 [in] The width of the video sample, in pixels.
 
+
 ### -field SampleHeight
 
 [in] The height of the video sample, in pixels.
+
 
 ### -field SampleFormat
 
 [in] A <a href="display.dxvaddi_extendedformat">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.
 
+
 ### -field Format
 
 [in] A <a href="display.d3dddiformat">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.
+
 
 ### -field InputSampleFreq
 
 [in] A <a href="display.dxvaddi_frequency">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.
 
+
 ### -field OutputFrameFreq
 
 [in] A DXVADDI_FREQUENCY structure that defines the frame rate of output video.
+
 
 ### -field UABProtectionLevel
 
 [in] A UINT value that specifies the level of data protection that is required when the user accessible bus is present.
 
+
 ### -field Reserved
 
 [in] Reserved. Do not use this member.
+
 
 ## -remarks
 
@@ -99,14 +108,17 @@ typedef struct _DXVADDI_VIDEODESC {
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -129,5 +141,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEODESC structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEODESC structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: display\dxgk_protected_session_status.htm
 old-project: display
 ms.assetid: B6FCA052-FFAE-4F7D-8BDE-CDB84772B5E5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PROTECTED_SESSION_STATUS, DXGK_PROTECTED_SESSION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 Used to indicate the status of the current session.
+
 
 
 ## -syntax
@@ -58,9 +60,11 @@ typedef enum _DXGK_PROTECTED_SESSION_STATUS {
 
 Indicates that the status is okay.
 
+
 ### -field DXGK_PROTECTED_SESSION_STATUS_INVALID
 
 Indicates that the status is invalid.
+
 
 ## -remarks
 
@@ -70,6 +74,7 @@ Indicates that the status is invalid.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

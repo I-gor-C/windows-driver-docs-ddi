@@ -41,6 +41,7 @@ req.irql:
 Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set.
 
 
+
 ## -syntax
 
 ````
@@ -71,49 +72,61 @@ typedef struct {
 
 Specifies the ID of the property being described.
 
+
 ### -field GetPropertyHandler
 
 Pointer to a minidriver-supplied <a href="stream.kstrgetpropertyhandler">KStrGetPropertyHandler</a>. If <b>NULL</b>, the property cannot be read. This member is used only by drivers that use the AVStream or Stream class interfaces.
+
 
 ### -field GetSupported
 
 Set to <b>TRUE</b> if this property supports get requests, <b>FALSE</b> if it does not. (The class driver fulfills the request through the SRB_GET_DEVICE_PROPERTY or SRB_GET_STREAM_PROPERTY requests.) This member is used only by minidrivers running under stream class. 
 
+
 ### -field MinProperty
 
 Specifies the minimum buffer length to hold the property identifier. This must be at least <b>sizeof</b>(<a href="stream.ksproperty">KSPROPERTY</a>).
+
 
 ### -field MinData
 
 Specifies the minimum buffer length to hold the data read from or written to this property.
 
+
 ### -field SetPropertyHandler
 
 Pointer to a minidriver-supplied <a href="stream.kstrsetpropertyhandler">KStrSetPropertyHandler</a>. If <b>NULL</b>, the property cannot be set. This member is used only by drivers that use the AVStream or Stream class interfaces.
+
 
 ### -field SetSupported
 
 Set to <b>TRUE</b> if this property supports set requests, <b>FALSE</b> if it does not. (The class driver fulfills the request through the SRB_SET_DEVICE_PROPERTY or SRB_SET_STREAM_PROPERTY requests.)
 
+
 ### -field Values
 
 Pointer to a structure of type <a href="stream.ksproperty_values">KSPROPERTY_VALUES</a>. Specifies the acceptable and/or default values for the property. These are the same as the values reported by a driver in response to an IOCTL_KS_PROPERTY request with the KSPROPERTY_TYPE_BASICSUPPORT and KSPROPERTY_TYPE_DEFAULTVALUES flags set.
+
 
 ### -field RelationsCount
 
 Specifies the number of entries in the array pointed to by the <b>Relations</b> member.
 
+
 ### -field Relations
 
 Points to an array of <a href="stream.ksproperty">KSPROPERTY</a> structures representing properties related to this one. Two properties are considered related if changing one property may affect the value of the other property. The <b>Flags</b> member of each entry is unused.
+
 
 ### -field SupportHandler
 
 Provide this member only if implementing your own format for raw serialization or raw unserialization. Basic support queries, range queries, and relations queries are automatically handled by AVStream, which returns the relevant values from other members of this KSPROPERTY_ITEM structure.
 
+
 ### -field SerializedSize
 
 Specifies the size of the property when serialized in a KSPROPERTY_TYPE_SERIALIZESET request. This should be zero if the property cannot be serialized. See <a href="stream.ksproperty">KSPROPERTY</a> for more information.
+
 
 ## -remarks
 Stream class minidrivers use KSPROPERTY_ITEM to describe to the client how to fulfill property requests on each property within a set. Handling for the property set as a whole is specified in the <a href="stream.ksproperty_set">KSPROPERTY_SET</a> structure, which contains pointers to arrays of KSPROPERTY_ITEM structures.
@@ -148,11 +161,13 @@ If the client specifies KSPROPERTY_TYPE_DEFAULTVALUES, the driver uses the data 
 
 For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -187,5 +202,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_ITEM structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

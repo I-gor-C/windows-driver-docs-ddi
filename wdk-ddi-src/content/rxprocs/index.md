@@ -1,5 +1,10 @@
+---
+UID: NA:
+---
+
 # Rxprocs.h header
 
+## -description
 
 This header is used by Installable file system. For more information, see
 - [Installable file system](../_ifsk/index.md)
@@ -11,12 +16,9 @@ Rxprocs.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [FsRtlCheckOplock function](nf-rxprocs-fsrtlcheckoplock.md) | The FsRtlCheckOplock routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state. |
-| [FsRtlNotifyFullChangeDirectory function](nf-rxprocs-fsrtlnotifyfullchangedirectory.md) | The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list. |
-| [FsRtlOplockIsFastIoPossible function](nf-rxprocs-fsrtloplockisfastiopossible.md) | FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file. |
 | [RxChangeBufferingState function](nf-rxprocs-rxchangebufferingstate.md) | RxChangeBufferingState is called to process a buffering state change request. |
 | [RxCompleteRequest function](nf-rxprocs-rxcompleterequest.md) | RxCompleteRequest completes the IRP request associated with an RX_CONTEXT structure. |
-| [RxCompleteRequest_Real function](nf-rxprocs-rxcompleterequest-real.md) | RxCompleteRequest_Real completes the IRP request associated with an RX_CONTEXT structure. |
+| [RxCompleteRequest_Real function](nf-rxprocs-rxcompleterequest_real.md) | RxCompleteRequest_Real completes the IRP request associated with an RX_CONTEXT structure. |
 | [RxDereference function](nf-rxprocs-rxdereference.md) | RxDereference decrements the NodeReferenceCount member of a structure by one for several reference counted data structures used by RDBSS. |
 | [RxDriverEntry function](nf-rxprocs-rxdriverentry.md) | RxDriverEntry is called by a monolithic network mini-redirector driver from its DriverEntry routine to initialize the RDBSS static library. |
 | [RxFinalizeConnection function](nf-rxprocs-rxfinalizeconnection.md) | RxFinalizeConnection deletes a connection to a share. |

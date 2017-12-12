@@ -7,7 +7,7 @@ old-location: storage\device_data_set_lb_provisioning_state.htm
 old-project: storage
 ms.assetid: 99FBD363-0999-4AEE-A222-69C0FB71D248
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _DEVICE_DATA_SET_LB_PROVISIONING_STATE, DEVICE_DATA_SET_LB_PROVISIONING_STATE, *PDEVICE_DATA_SET_LB_PROVISIONING_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>DEVICE_DATA_SET_LB_PROVISIONING_STATE</b> structure is returned by an  <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> request when requesting logical block  provisioning information for a data set range.
 
 
+
 ## -syntax
 
 ````
@@ -62,29 +63,36 @@ typedef struct _DEVICE_DATA_SET_LB_PROVISIONING_STATE {
 
 The size of this structure, including the slab allocation bitmap, in bytes.
 
+
 ### -field Version
 
 The version of this structure.
+
 
 ### -field SlabSizeInBytes
 
 The size, in bytes, of a slab.
 
+
 ### -field SlabOffsetDeltaInBytes
 
 The difference, in bytes, from the offset specified in the data set range to the starting slab position.
+
 
 ### -field SlabAllocationBitMapBitCount
 
 The number of bits  in the allocation bitmap mapping  slabs for the data set range.
 
+
 ### -field SlabAllocationBitMapLength
 
 The number of <b>ULONG</b> array values containing the slab allocation bitmap.
 
+
 ### -field SlabAllocationBitMap
 
 A bitmap of slab allocations.
+
 
 ## -remarks
 Provisioning state information is returned when the <b>Action</b> member of <a href="storage.device_manage_data_set_attributes">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> is set to <b>DeviceDsmAction_Allocation</b>. The caller should include only one data set range in the system buffer at <b>DataSetRangesOffset</b>.
@@ -101,19 +109,23 @@ If the starting offset in the data set range is not aligned on a slab boundary, 
 
 If the slab allocation total returned in <b>SlabAllocationBitMapBitCount</b> is not as expected because of data set range alignment or length adjustments, an additional request may be submitted with a data set range modified according to the values in both <b>SlabAllocationBitMapBitCount</b> and <b>SlabOffsetDeltaInBytes</b>. The new range will properly select the slabs left out of the bitmap returned by the previous request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -139,5 +151,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_DATA_SET_LB_PROVISIONING_STATE structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_DATA_SET_LB_PROVISIONING_STATE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

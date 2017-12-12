@@ -7,7 +7,7 @@ old-location: netvista\wdi_exemption_action_type.htm
 old-project: netvista
 ms.assetid: 46640961-828c-411b-b1b9-bcceb04bdf17
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPTION_ACTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The WDI_EXEMPTION_ACTION_TYPE enumeration defines the exemption types.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum _WDI_EXEMPTION_ACTION_TYPE {
 
 Packets are not exempt from any cipher operations performed by the port.
 
+
 ### -field WDI_EXEMPT_ALWAYS
 
 On send, packets are exempt from cipher operations and are transmitted unencrypted. On receive, the received packet is discarded if the Protected Frame subfield of the Frame Control field in the 802.11 MAC header is set to 1.
 
+
 ### -field WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
 
 On send, packets are exempt from cipher operations if there is no key-mapping key for the packet's destination MAC address. On receive, the received packet is discarded if a key-mapping key for the source MAC address is available and the Protected Frame subfield of the Frame Control field in the 802.11 MAC header is set to 0.
+
 
 ## -remarks
 
@@ -74,22 +78,27 @@ On send, packets are exempt from cipher operations if there is no key-mapping ke
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

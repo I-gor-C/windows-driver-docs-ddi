@@ -7,7 +7,7 @@ old-location: netvista\ndismindicatereceivenetbufferlists.htm
 old-project: netvista
 ms.assetid: b87dba3e-c18f-4ea2-8bd5-ec3cdafc534b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMIndicateReceiveNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ Miniport drivers call the
   <b>NdisMIndicateReceiveNetBufferLists</b> function to indicate the receipt of data from the network.
 
 
+
 ## -syntax
 
 ````
@@ -63,11 +64,13 @@ The miniport handle that NDIS passed to the
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
+
 ### -param NetBufferLists [in]
 
 A linked list of 
      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that the
      miniport driver allocated.
+
 
 ### -param PortNumber [in]
 
@@ -77,10 +80,12 @@ A port number that identifies a miniport adapter port. To assign a miniport adap
      value identifies the default port of a miniport adapter. Use the default port if the miniport driver has
      not allocated ports for the specified adapter.
 
+
 ### -param NumberOfNetBufferLists [in]
 
 The number of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that are in the linked list of structures at 
      <i>NetBufferLists</i> .
+
 
 ### -param ReceiveFlags [in]
 
@@ -89,10 +94,13 @@ Flags that define attributes for the send operation. The flags can be combined w
      
 
 
+
+
 ### -param NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL
 
 Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
        <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.
+
 
 ### -param NDIS_RECEIVE_FLAGS_RESOURCES
 
@@ -100,21 +108,25 @@ Specifies that the miniport driver reclaims ownership of the <a href="netvista.n
        attached <a href="netvista.net_buffer">NET_BUFFER</a> structures immediately after the call to 
        <b>NdisMIndicateReceiveNetBufferLists</b> returns.
 
+
 ### -param NDIS_RECEIVE_FLAGS_SINGLE_ETHER_TYPE
 
 Specifies that all of the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> have the same protocol type (EtherType).
+
 
 ### -param NDIS_RECEIVE_FLAGS_SINGLE_VLAN
 
 Specifies that all of the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> belong to the same VLAN.
 
+
 ### -param NDIS_RECEIVE_FLAGS_PERFECT_FILTERED
 
 Specifies that all of the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> include only data that matches the packet filter and multicast address list that are
        assigned to the miniport adapter.
+
 
 ### -param NDIS_RECEIVE_FLAGS_SINGLE_QUEUE
 
@@ -126,6 +138,7 @@ Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> st
        <a href="netvista.ndis_receive_queue_parameters">
        NDIS_RECEIVE_QUEUE_PARAMETERS</a> structure when that queue was allocated.
 
+
 ### -param NDIS_RECEIVE_FLAGS_SHARED_MEMORY_INFO_VALID
 
 Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in the list at 
@@ -136,14 +149,17 @@ Specifies that all the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> st
        the flag to determine how to free the memory that is associated with a VM queue when a queue is
        deleted.
 
+
 ### -param NDIS_RECEIVE_FLAGS_MORE_NBLS
 
 Reserved.
+
 </dd>
 </dl>
 
 ## -returns
 None
+
 
 ## -remarks
 A miniport driver typically calls the 
@@ -192,11 +208,13 @@ The caller of
     attached 
     <a href="netvista.net_buffer">NET_BUFFER</a> structures, and any attached MDLs.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -207,14 +225,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -225,6 +246,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -235,14 +257,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_sendrcv_function">Irql_SendRcv_Function</a>
@@ -280,5 +305,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateReceiveNetBufferLists function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateReceiveNetBufferLists function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

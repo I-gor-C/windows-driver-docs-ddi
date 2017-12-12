@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 883c561c-0d1b-4a6c-946e-8ca567b12c9a
 ms.author: windowsdriverdev
 ms.date: 11/29/2017
-ms.keywords: _TEXTUAL_LEAF, TEXTUAL_LEAF, *PTEXTUAL_LEAF
+ms.keywords: _TEXTUAL_LEAF, *PTEXTUAL_LEAF, TEXTUAL_LEAF
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The TEXTUAL_LEAF structure describes the device description that can be stored in the Configuration ROM of devices that satisfy the PC 98 or PC 99 specifications.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _TEXTUAL_LEAF {
 
 Specifies the CRC of the text string.
 
+
 ### -field TL_Length
 
 Specifies the length of the text string, in bytes.
+
 
 ### -field TL_Spec_Id
 
 Specifies which specification describes the meaning of the <b>TL_Language_ID</b> member.
 
+
 ### -field TL_Language_Id
 
 Specifies the language of the <b>TL_Data</b> member.
 
+
 ### -field TL_Data
 
 Specifies a vendor-specified textual description of the device.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Specifies a vendor-specified textual description of the device.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -100,5 +107,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20TEXTUAL_LEAF structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

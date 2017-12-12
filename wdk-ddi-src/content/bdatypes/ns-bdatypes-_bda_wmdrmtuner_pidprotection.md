@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: EA2590B0-7EF0-4E5E-A270-A13047BE0F2C
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _BDA_WMDRMTUNER_PIDPROTECTION, *PBDA_WMDRMTUNER_PIDPROTECTION, BDA_WMDRMTUNER_PIDPROTECTION
+ms.keywords: _BDA_WMDRMTUNER_PIDPROTECTION, BDA_WMDRMTUNER_PIDPROTECTION, *PBDA_WMDRMTUNER_PIDPROTECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 
 
 
+
 ## -syntax
 
 ````
@@ -67,6 +68,7 @@ typedef struct _BDA_WMDRMTUNER_PIDPROTECTION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>KdRefreshDebuggerNotPresent</b> macro refreshes the value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548125">KD_DEBUGGER_NOT_PRESENT</a> global kernel variable.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ NTKERNELAPI BOOLEAN KdRefreshDebuggerNotPresent(void);
 
 <b>KdRefreshDebuggerNotPresent</b> returns the value of KD_DEBUGGER_NOT_PRESENT.
 
+
 ## -remarks
 When <b>KdRefreshDebuggerNotPresent</b> is called, it forces the value of KD_DEBUGGER_NOT_PRESENT to be updated to reflect whether a kernel debugger is currently attached. This updated value is also used as the return value of this routine.
 
@@ -68,11 +70,13 @@ KD_DEBUGGER_NOT_PRESENT can be modified by Windows or any other kernel-mode bina
 
 The following sample shows how to use <b>KdRefreshDebuggerNotPresent</b>:
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -83,14 +87,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Server 2003 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +108,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -111,6 +119,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -133,5 +142,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20KdRefreshDebuggerNotPresent function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

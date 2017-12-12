@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferlistcontext.htm
 old-project: netvista
 ms.assetid: 3bbad723-86bf-4206-9e51-52a66efaec20
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisAllocateNetBufferListContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ Call the
   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -63,10 +64,12 @@ NDIS_STATUS NdisAllocateNetBufferListContext(
 
 A pointer to a previously allocated NET_BUFFER_LIST structure.
 
+
 ### -param ContextSize [in]
 
 The amount of context space to allocate in the NET_BUFFER_LIST_CONTEXT structure. This amount must
      be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.
+
 
 ### -param ContextBackFill [in]
 
@@ -74,12 +77,14 @@ The amount of memory, in addition to the value of
      <i>ContextSize</i>, to allocate if NDIS must allocate memory to satisfy the request. This amount must be
      a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.
 
+
 ### -param PoolTag [in]
 
 A kernel pool tag that NDIS uses to allocate the memory for the NET_BUFFER_LIST_CONTEXT structure,
      if allocation is required. The tag is a string, delimited by single quotation marks, with up to four
      characters, usually specified in reversed order. The kernel pool tag helps NDIS to identify the owner of
      the memory.
+
 
 ## -returns
 <b>NdisAllocateNetBufferListContext</b> returns one of the following:
@@ -97,6 +102,7 @@ A kernel pool tag that NDIS uses to allocate the memory for the NET_BUFFER_LIST_
 
  
 
+
 ## -remarks
 If there is enough unused context space available in the 
     <a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a> structure to
@@ -113,11 +119,13 @@ Call the
     structure that was allocated with 
     <b>NdisAllocateNetBufferListContext</b>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -128,14 +136,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,6 +157,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -156,14 +168,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
@@ -184,5 +199,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferListContext function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferListContext function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

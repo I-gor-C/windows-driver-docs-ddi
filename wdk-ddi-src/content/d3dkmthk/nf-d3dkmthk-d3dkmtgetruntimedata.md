@@ -7,7 +7,7 @@ old-location: display\d3dkmtgetruntimedata.htm
 old-project: display
 ms.assetid: a73ebde8-a1d5-4f97-8457-1f01244bb266
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTGetRuntimeData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3DKMTGetRuntimeData</b> function is for system use only.
 
 
+
 ## -syntax
 
 ````
@@ -56,14 +57,17 @@ NTSTATUS APIENTRY D3DKMTGetRuntimeData(
 
 Reserved for system use.
 
+
 ## -remarks
 This function is reserved for system use.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -74,14 +78,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,6 +99,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -102,6 +110,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

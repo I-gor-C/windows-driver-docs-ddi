@@ -7,7 +7,7 @@ old-location: netvista\miniport_synchronous_oid_request.htm
 old-project: netvista
 ms.assetid: 0DDF9CF8-91F6-4D7C-A8E8-FC425BF155CB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: MINIPORT_SYNCHRONOUS_OID_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 NDIS calls a miniport driver's <i>MiniportSynchronousOidRequest</i> callback function to issue a Synchronous OID request.
 
 
+
 ## -syntax
 
 ````
@@ -59,12 +60,14 @@ A handle to a context area that the miniport driver allocated in its
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
+
 ### -param OidRequest [in]
 
 A pointer to an 
      <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the miniport driver to handle. Depending on the request, the
      driver returns requested information in the structure that is provided.
+
 
 ## -returns
 <i>MiniportSynchronousOidRequest</i> can return one of the following status values:
@@ -114,6 +117,7 @@ Miniport drivers are not always required to return NDIS_STATUS_NOT_ACCEPTED for 
 
  
 
+
 ## -remarks
 <i>MiniportSynchronousOidRequest</i> is an optional function. A miniport driver registers this function if it handles Synchronous OID requests. The driver specifies the <i>MiniportSynchronousOidRequest</i> entry point when it calls the <a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a> function, using the <b>SynchronousOidRequestHandler</b> member of the <a href="netvista.ndis_miniport_driver_characteristics">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure.
 
@@ -133,19 +137,23 @@ NDIS does serialize Synchronous OID requests against <a href="..\ndis\nc-ndis-mi
 Miniport drivers that implement NDIS Selective Suspend are incompatible with Synchronous OIDs and must not register a <i>MiniportSynchronousOidRequest</i> handler.
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,9 +164,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -201,5 +211,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_SYNCHRONOUS_OID_REQUEST function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_SYNCHRONOUS_OID_REQUEST function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

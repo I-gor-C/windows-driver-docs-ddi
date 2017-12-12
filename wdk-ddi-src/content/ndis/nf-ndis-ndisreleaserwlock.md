@@ -7,7 +7,7 @@ old-location: netvista\ndisreleaserwlock.htm
 old-project: netvista
 ms.assetid: e0859f3f-0acc-45b7-99b2-ef420cd06565
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisReleaseRWLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   resources that are shared between driver threads.
 
 
+
 ## -syntax
 
 ````
@@ -62,6 +63,7 @@ A pointer to an opaque
      lock. The caller can use this lock to gain write or read access to resources that are shared between
      non-ISR driver threads.
 
+
 ### -param LockState [in]
 
 A pointer to an opaque 
@@ -70,8 +72,10 @@ A pointer to an opaque
      the lock. The caller must use a different variable of type LOCK_STATE_EX for each attempt that it makes
      to obtain the lock from the same non-ISR driver thread.
 
+
 ## -returns
 None
+
 
 ## -remarks
 NDIS drivers call the 
@@ -90,11 +94,13 @@ The acquisition of an <a href="netvista.ndis_rw_lock_ex">NDIS_RW_LOCK_EX</a> is 
 <b>NdisReleaseRWLock</b> restores the original IRQL that was used by its caller before the lock was
     obtained.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,14 +111,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,6 +132,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -133,9 +143,11 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -156,5 +168,8 @@ DISPATCH_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReleaseRWLock function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReleaseRWLock function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

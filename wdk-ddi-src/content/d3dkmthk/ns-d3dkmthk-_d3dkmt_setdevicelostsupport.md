@@ -7,7 +7,7 @@ old-location: display\d3dkmt-setdevicelostsupport.htm
 old-project: display
 ms.assetid: 191ea8ac-6646-44db-88eb-54dc51afef17
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_SETDEVICELOSTSUPPORT, D3DKMT_SETDEVICELOSTSUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to indicate whether a device can recover from losing a graphics device.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_SETDEVICELOSTSUPPORT {
 
 A handle to the device.
 
+
 ### -field Support
 
 Indicates whether or not the device can recover from losing the graphics device.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates whether or not the device can recover from losing the graphics device.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

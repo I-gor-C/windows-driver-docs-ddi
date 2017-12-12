@@ -7,8 +7,8 @@ old-location: netvista\wsk_provider_characteristics.htm
 old-project: netvista
 ms.assetid: 25371620-23bb-4a98-9554-14057742b0ca
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS
+ms.date: 12/8/2017
+ms.keywords: _WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WSK_PROVIDER_CHARACTERISTICS structure specifies the characteristics of the WSK subsystem.
 
 
+
 ## -syntax
 
 ````
@@ -60,9 +61,11 @@ The highest version of the WSK
      <a href="netvista.network_programming_interface">Network Programming Interface
      (NPI)</a> that is supported by the WSK subsystem.
 
+
 ### -field LowestVersion
 
 The lowest version of the WSK NPI that is supported by the WSK subsystem.
+
 
 ## -remarks
 When a 
@@ -100,20 +103,24 @@ For more information about attaching a WSK application to the WSK subsystem, see
     <a href="netvista.registering_a_winsock_kernel_application">Registering a Winsock Kernel
     Application</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +150,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

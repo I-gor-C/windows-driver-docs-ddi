@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_swizzle_pattern_flags.htm
 old-project: display
 ms.assetid: 4C3E818B-E265-4AB8-BAAF-D3155578E558
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS, D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Contains swizzle pattern flag values.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS {
 
 No flags.
 
+
 ### -field D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES
 
 Stack depth slices. 
 
+
 ### -field D3DWDDM2_2DDI_SWIZZLE_PATTERN_FLAGS_CONDITIONAL_POSTAMBLE_XORS
 
 Conditional post-amble Xors. 
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Conditional post-amble Xors.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

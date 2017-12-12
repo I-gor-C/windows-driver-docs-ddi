@@ -7,7 +7,7 @@ old-location: debugger\idebuginputcallbacks.htm
 old-project: debugger
 ms.assetid: 2122d970-1d1c-4ef0-b8f7-92ef6e4f0731
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,6 +52,7 @@ This method is called by the engine to indicate that it is waiting for a line of
 
  
 
+
 ## -members
 The <b>IDebugInputCallbacks</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -66,6 +67,7 @@ The <b>IDebugInputCallbacks</b> interface has these methods.
 <td align="left" width="63%">
 This method is called by the engine to indicate that it is no longer waiting for input.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -74,6 +76,7 @@ This method is called by the engine to indicate that it is no longer waiting for
 </td>
 <td align="left" width="63%">
 This method is called by the engine to indicate that it is waiting for a line of input.
+
 
 </td>
 </tr>
@@ -85,6 +88,7 @@ This method is called by the engine to indicate that it is waiting for a line of
 
  
 
+
 ## -remarks
 
 
@@ -93,6 +97,7 @@ This method is called by the engine to indicate that it is waiting for a line of
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -40,20 +40,25 @@ req.irql:
 ## -description
 <b>IKeywordDetectorOemAdapter</b> is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The <b>IKeywordDetectorOemAdapter</b> interface is supported 
 in Windows 10 and later versions of Windows.
+
  The OEM supplies a COM object implementation that acts as an intermediary between the operating system  and the driver, helping to
  compute or parse the opaque data that is written and read to the audio driver through <a href="https://msdn.microsoft.com/library/windows/hardware/dn932151">KSPROPERTY_SOUNDDETECTOR_PATTERNS</a> and
   <a href="https://msdn.microsoft.com/library/windows/hardware/dn932150">KSPROPERTY_SOUNDDETECTOR_MATCHRESULT</a>.
 
+
 The class identifier (CLSID) of the COM object is a detector pattern type GUID 
 returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn932152">KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS</a>. The operating system calls <a href="com.cocreateinstance">CoCreateInstance</a> passing the pattern type GUID to instantiate the appropriate COM object that is compatible with keyword pattern type and calls methods on the object’s <b>IKeywordDetectorOemAdapter</b> interface.
 The operating supplies a proxy-stub for <b>IKeywordDetectorOemAdapter</b>. The OEM’s implementation may choose any of the COM threading models. 
+
 The interface design attempts to keep the object implementation stateless. In other words, the implementation should require no state to be stored between method calls. 
 In fact, internal C++ classes likely do not need any member variables beyond those required to implement a COM object in general.
 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKeywordDetectorOemAdapter</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
+
 
 ## -remarks
 
@@ -63,6 +68,7 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKeywordDetectorOemAdapter</b
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

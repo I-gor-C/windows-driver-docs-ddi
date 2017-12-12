@@ -7,7 +7,7 @@ old-location: display\idarg_in_i2c_transmit.htm
 old-project: display
 ms.assetid: 1422f1fc-9653-4e6b-a7dd-c224ce7b9ca0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_IN_I2C_TRANSMIT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              
 
 
+
 ## -syntax
 
 ````
@@ -62,17 +63,20 @@ typedef struct IDARG_IN_I2C_TRANSMIT {
                      [in] The address of the I2C device to which data will be transmitted
                  
 
+
 ### -field DataSizeInBytes
 
 
                      [in] The size, in bytes, of the buffer pointed to by <b>pData</b>. This parameter must be between 1 and 64, inclusively.
                  
 
+
 ### -field pData
 
 
                      [in] A pointer to a buffer that holds the data to be transmitted.
                  
+
 
 ## -remarks
 
@@ -82,6 +86,7 @@ typedef struct IDARG_IN_I2C_TRANSMIT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

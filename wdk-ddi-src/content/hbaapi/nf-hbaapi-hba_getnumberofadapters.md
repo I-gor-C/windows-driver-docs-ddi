@@ -7,7 +7,7 @@ old-location: storage\hba_getnumberofadapters.htm
 old-project: storage
 ms.assetid: 5864a535-4ff8-4c9a-abf9-f835c7fde305
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: HBA_GetNumberOfAdapters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>HBA_GetNumberOfAdapters</b> routine returns the number of HBAs supported by the library. 
 
 
+
 ## -syntax
 
 ````
@@ -58,14 +59,17 @@ The <b>HBA_GetNumberOfAdapters</b> routine returns the number of adapters suppor
 
 The <b>HBA_GetNumberOfAdapters</b> routine returns the number of adapters supported by this library. If no adapters are supported, <b>HBA_GetNumberOfAdapters</b> returns 0.
 
+
 ## -remarks
 The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically determine the size of the HBA inventory without having to restart the system, the HBA drivers, or the library. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -76,6 +80,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -86,6 +91,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +102,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

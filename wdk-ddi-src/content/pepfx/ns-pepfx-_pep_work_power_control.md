@@ -7,8 +7,8 @@ old-location: kernel\pep_work_power_control.htm
 old-project: kernel
 ms.assetid: 84258422-A2AE-449F-97C8-41336FEA5D8B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL
+ms.date: 12/7/2017
+ms.keywords: _PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>PEP_WORK_POWER_CONTROL</b> structure contains the parameters for a <a href="kernel.ppm_power_control_codes">power control request</a> that the platform extension plug-in (PEP) sends directly to a processor driver.
 
 
+
 ## -syntax
 
 ````
@@ -62,48 +63,59 @@ typedef struct _PEP_WORK_POWER_CONTROL {
 
 A POHANDLE value that identifies the processor. The PEP received this handle in a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.
 
+
 ### -field PowerControlCode
 
 [in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation to perform.
+
 
 ### -field RequestContext
 
 A pointer to a PEP-defined context value. The PEP might use this value to uniquely identify a power control request message (in case the PEP issues multiple requests with the same control code to the same device).
 
+
 ### -field InBuffer
 
 [in] A pointer to a driver-allocated input buffer that contains the input parameters for this power control operation.
+
 
 ### -field InBufferSize
 
 [in] The size in bytes of the buffer pointed to by <b>InBuffer</b>.
 
+
 ### -field OutBuffer
 
 [in] A pointer to a driver-allocated output buffer to which the PEP writes the results of this power control operation.
 
+
 ### -field OutBufferSize
 
 [in] The size in bytes of the buffer pointed to by <b>OutBuffer</b>.
+
 
 ## -remarks
 The <b>PowerControl</b> member of the <a href="kernel.pep_work_information">PEP_WORK_INFORMATION</a> structure is a pointer to a <b>PEP_WORK_POWER_CONTROL</b> structure.
 
 The PEP issues a power control request from a worker thread. The Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) forwards this request by calling the processor driver's <a href="kernel.powercontrolcallback">PowerControlCallback</a> routine, if the driver implements this routine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with Windows 10.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -130,5 +142,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_WORK_POWER_CONTROL structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_WORK_POWER_CONTROL structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

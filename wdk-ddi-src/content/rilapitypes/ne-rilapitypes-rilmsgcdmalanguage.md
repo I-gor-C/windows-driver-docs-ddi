@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmalanguage_2.htm
 old-project: netvista
 ms.assetid: d1ad512e-10ba-4266-9688-2fc8e63bb4c4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILMSGCDMALANGUAGE, RILMSGCDMALANGUAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -92,6 +93,7 @@ typedef enum _RILMSGCDMALANGUAGE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

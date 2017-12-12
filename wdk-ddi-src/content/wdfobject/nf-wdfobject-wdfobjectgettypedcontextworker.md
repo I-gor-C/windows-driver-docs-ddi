@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectgettypedcontextworker.htm
 old-project: wdf
 ms.assetid: 1d95084b-16c4-468e-84af-47650292c5a1
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfObjectGetTypedContextWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WdfObjectGetTypedContextWorker</b> method is reserved for internal use only. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548749">WdfObjectGetTypedContext</a> macro instead.
+
 
 
 ## -syntax
@@ -69,6 +71,7 @@ PVOID WdfObjectGetTypedContextWorker(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -79,6 +82,7 @@ Header
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtlconvertlongtolargeinteger.htm
 old-project: kernel
 ms.assetid: 8c1f6cd3-f54b-4104-bd14-63d2c284946c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlConvertLongToLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RtlConvertLongToLargeInteger</b> routine converts the input signed integer to a signed large integer.
 
 
+
 ## -syntax
 
 ````
@@ -57,17 +58,21 @@ LARGE_INTEGER RtlConvertLongToLargeInteger(
 
 Specifies an integer of type LONG.
 
+
 ## -returns
 <b>RtlConvertLongToLargeInteger</b> returns the large integer result.
 
+
 ## -remarks
 This routine is not supported in Windows XP. Use native support for <b>__int64</b> instead. 
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -78,14 +83,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +104,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +115,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -116,9 +126,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 Any level
+
 </td>
 </tr>
 </table>

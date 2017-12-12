@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_volumeblt.htm
 old-project: display
 ms.assetid: 564afe6c-7a2e-4657-a481-24015c0be637
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DDDIARG_VOLUMEBLT, D3DDDIARG_VOLUMEBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DDDIARG_VOLUMEBLT structure describes parameters for a volume bit-block transfer (bitblt) operation. 
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _D3DDDIARG_VOLUMEBLT {
 
 [in] A handle to the destination surface.
 
+
 ### -field hSrcResource
 
 [in] A handle to the source surface.
+
 
 ### -field DstX
 
 [in] The width, in screen coordinates, of the destination volume in which the source volume is copied.
 
+
 ### -field DstY
 
 [in] The height, in screen coordinates, of the destination volume in which the source volume is copied.
+
 
 ### -field DstZ
 
 [in] The depth, in screen coordinates, of the destination volume in which the source volume is copied.
 
+
 ### -field SrcBox
 
 [in] A D3DDDIBOX structure that describes the source volume texture to copy to the destination.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ typedef struct _D3DDDIARG_VOLUMEBLT {
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,5 +123,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_VOLUMEBLT structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_VOLUMEBLT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

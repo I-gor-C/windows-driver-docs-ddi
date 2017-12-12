@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>RtlConvertSidToUnicodeString</b> routine generates a printable Unicode string representation of a security identifier (<a href="ifsk.sid">SID</a>). 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ NTSTATUS RtlConvertSidToUnicodeString(
 
 A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure to contain the generated Unicode string.  The <i>UnicodeString-&gt;MaximumLength</i> member is set only if <i>AllocateDestinationString</i> is <b>TRUE</b>.
 
+
 ### -param Sid [in]
 
 A pointer to the SID structure that is to be converted to Unicode (the SID structure is unaffected).
 
+
 ### -param AllocateDestinationString [in]
 
 A Boolean flag that indicates whether this routine will allocate the UnicodeString buffer. If <b>TRUE</b>, only the <i>UnicodeString-&gt;Buffer</i> member is allocated and the rest of the <i>UnicodeString</i> structure must be allocated by the caller.
+
 
 ## -returns
 The <b>RtlConvertSidToUnicodeString</b> routine can return one of the following values:
@@ -83,6 +87,7 @@ The <b>RtlConvertSidToUnicodeString</b> routine can return one of the following 
 
  
 
+
 ## -remarks
 The generated Unicode string will take one of two forms.  If the value of the IdentifierAuthority member of the <i>SID</i> is less than or equal to 2^32, the IdentifierAuthority member will be generated as decimal. For example, a <i>SID</i> with an IdentifierAuthority of 281,736 generates:
 
@@ -92,11 +97,13 @@ All other members in the <i>SID</i> will be generated as decimal.
 
 If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be deallocated by using <a href="kernel.rtlfreeunicodestring">RtlFreeUnicodeString</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -107,14 +114,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 2000 and later Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +135,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +146,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -145,9 +157,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -165,5 +179,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlConvertSidToUnicodeString routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

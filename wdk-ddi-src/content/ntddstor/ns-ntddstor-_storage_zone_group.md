@@ -7,7 +7,7 @@ old-location: storage\storage_zone_group.htm
 old-project: storage
 ms.assetid: 71CEEE58-22CC-4FB4-83E1-5FCC6563D1D2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ req.irql:
 
 
 
+
 ## -syntax
 
 ````
@@ -61,13 +62,16 @@ typedef struct _STORAGE_ZONE_GROUP {
 
 N/A
 
+
 ### -field ZoneType
 
 N/A
 
+
 ### -field ZoneSize
 
 N/A
+
 
 ## -remarks
 
@@ -77,6 +81,7 @@ N/A
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

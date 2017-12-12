@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Callback to enable wake for the sensor. 
 
 
+
 ## -prototype
 
 ````
@@ -57,17 +58,21 @@ NTSTATUS CALLBACK EVT_SENSOR_DRIVER_ENABLE_WAKE(
 
 A reference to the sensor object
 
+
 ## -returns
 This function returns STATUS_SUCCESS when completed successfully.
 
+
 ## -remarks
 This DDSI function does not compulsorily have to be implemented by the driver because it is expected that some sensor drivers do not care about enabling wake on the sensor. If it not implemented the enable call is ignored and a STATUS_SUCCESS is returned. This is primarily because PKEY_Sensor_WakeCapable is implemented today and used by some sensors such as the accelerometer and the proximity sensor, and for backward compatibility, implementing this DDSI is optional.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -78,9 +83,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 _requires_same_
+
 </td>
 </tr>
 </table>

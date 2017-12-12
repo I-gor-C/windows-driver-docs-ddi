@@ -7,7 +7,7 @@ old-location: storage\storportreadregisterbufferulong.htm
 old-project: storage
 ms.assetid: 069defee-6295-4492-b0bb-135c476c79aa
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortReadRegisterBufferUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortReadRegisterBufferUlong</b> routine reads a value from a specified register address. 
 
 
+
 ## -syntax
 
 ````
@@ -60,29 +61,36 @@ STORPORT_API VOID StorPortReadRegisterBufferUlong(
 
 Pointer to the hardware device extension.
 
+
 ### -param Register [in]
 
 Pointer to the register where the data is to be read. 
+
 
 ### -param Buffer [in]
 
 Pointer to the buffer that receives the data that is read.
 
+
 ### -param Count [in]
 
 Specifies the number of data items to be read. Each data item has a size of <b>sizeof</b>(ULONG). 
 
+
 ## -returns
 None 
 
+
 ## -remarks
 For more information, see <a href="storage.scsiportreadregisterbufferulong">ScsiPortReadRegisterBufferUlong</a>. For a nonbuffered version of this routine, see <a href="storage.storportreadregisterulong">StorPortReadRegisterUlong</a>.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -93,6 +101,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +112,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +132,8 @@ Library
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortReadRegisterBufferUlong routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortReadRegisterBufferUlong routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

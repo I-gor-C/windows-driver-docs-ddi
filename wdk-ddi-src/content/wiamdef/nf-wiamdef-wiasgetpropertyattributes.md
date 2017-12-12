@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>wiasGetPropertyAttributes </b>function retrieves the access flags and valid values for a set of properties.
 
 
+
 ## -syntax
 
 ````
@@ -61,24 +62,30 @@ HRESULT _stdcall wiasGetPropertyAttributes(
 
 Pointer to a WIA item context.
 
+
 ### -param cPropSpec 
 
 Specifies the number of properties.
+
 
 ### -param pPropSpec [in]
 
 Pointer to a PROPSPEC structure (defined in the Microsoft Windows SDK documentation) indicating the properties for which to get valid values and access flags.
 
+
 ### -param pulAccessFlags 
 
 Pointer to an array that contains the access flags for the properties.
+
 
 ### -param pPropVar [out]
 
 Pointer to an array of PROPVARIANT structures (defined in the Microsoft Windows SDK documentation) that contains the valid values for the properties.
 
+
 ## -returns
 On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Windows SDK documentation).
+
 
 ## -remarks
 This function fills each element of the <i>pPropVar </i>array with a PROPVARIANT structure that specifies the valid values for the corresponding property. Properties with the access rights flag WIA_PROP_NONE have no valid values for that property. The data type for the valid values of these properties is VT_EMPTY.
@@ -127,11 +134,13 @@ All valid flags are joined together by an OR operator
 
 The PROPSPEC and PROPVARIANT structures are defined in the Microsoft Windows SDK documentation.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,14 +151,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -160,6 +172,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -170,6 +183,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

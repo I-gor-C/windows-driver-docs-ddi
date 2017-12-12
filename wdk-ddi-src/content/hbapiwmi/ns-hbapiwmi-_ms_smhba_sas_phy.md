@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_sas_phy.htm
 old-project: storage
 ms.assetid: 9bbf2f63-4479-47ee-a014-78b13deccb4c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _MS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY
+ms.date: 12/8/2017
+ms.keywords: _MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The MS_SMHBA_SAS_PHY structure is used to report the SAS physical port information.
 
 
+
 ## -syntax
 
 ````
@@ -62,38 +63,47 @@ typedef struct _MS_SMHBA_SAS_PHY {
 
 The port whose physical configuration and link information is being returned. It is unique within the context of the SAS device that contains the physical port.
 
+
 ### -field NegotiatedLinkRate
 
 The state or the transmission speed that is negotiated by the physical port for the physical link.
+
 
 ### -field ProgrammedMinLinkRate
 
 The minimum physical link rate that is set by the physical port control mechanism.
 
+
 ### -field HardwareMinLinkRate
 
 The minimum physical link rate that is supported by the physical port.
+
 
 ### -field ProgrammedMaxLinkRate
 
 The maximum physical link rate that is set by the physical port control mechanism.
 
+
 ### -field HardwareMaxLinkRate
 
 The maximum physical link rate that is supported by the physical port.
+
 
 ### -field domainPortWWN
 
 The Port_Identifier that has the smallest value of any Port_Identifier of an expander SMP.
 
+
 ## -remarks
 Link rates are defined in hpaapi.h as HBA_SASSPEED_1_5GBIT and HBA_SASSPEED_3GBIT.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

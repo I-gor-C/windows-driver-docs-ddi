@@ -7,7 +7,7 @@ old-location: netvista\ndis_ipsec_offload_v1_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 990b3df6-5ef7-4201-a09d-d94822d0a8bb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, *PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 The <b>NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO</b> structure specifies information that is used in
   offloading Internet protocol security (IPsec) tasks from the TCP/IP transport to a miniport driver.
+
 
 
 ## -syntax
@@ -68,17 +69,20 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 
 A structure that contains the following members:
 
+
 ### -field OffloadHandle
 
 A handle to the outbound security association (SA) for a packet that has just one IPsec payload,
        regardless of whether that payload is for a transport (end-to-end) connection or a tunnel
        connection.
+
 </dd>
 </dl>
 
 ### -field Receive
 
 A structure that contains the following members:
+
 
 ### -field SaDeleteReq
 
@@ -89,11 +93,13 @@ A USHORT value that, when set, indicates that the TCP/IP transport should issue 
        interface card (NIC) must not remove either of these SAs before it receives the corresponding
        OID_TCP_TASK_IPSEC_DELETE_SA request.
 
+
 ### -field CryptoDone
 
 A USHORT value that, when set, indicates that a NIC performed IPsec checking on at least one
        IPsec payload in the receive packet. When this value is cleared, it indicates that the NIC did not
        perform IPsec checking on the packet.
+
 
 ### -field NextCryptoDone
 
@@ -103,15 +109,18 @@ A USHORT value that, when set, indicates that a NIC performed IPsec checking on 
        <b>NextCryptoDone</b> is set only if a packet has both tunnel and transport IPsec payloads; otherwise, 
        <b>NextCryptoDone</b> is set to zero.
 
+
 ### -field Pad
 
 Reserved for NDIS.
+
 
 ### -field CryptoStatus
 
 The result of IPsec checking that a NIC performed on a receive packet. This result can be
        described as one of the following values:
        
+
 <table>
 <tr>
 <th>Value</th>
@@ -127,6 +136,7 @@ The result of IPsec checking that a NIC performed on a receive packet. This resu
 The packet was successfully decrypted, if necessary, and the authentication header (AH)
          checksums, encapsulating security payload (ESP) checksums, or both checksums in the packet were
          validated.
+
 </td>
 </tr>
 <tr>
@@ -137,6 +147,7 @@ The packet was successfully decrypted, if necessary, and the authentication head
 </td>
 <td width="60%">
 The packet failed the IPsec check for an unspecified reason.
+
 </td>
 </tr>
 <tr>
@@ -147,6 +158,7 @@ The packet failed the IPsec check for an unspecified reason.
 </td>
 <td width="60%">
 The AH checksum for the transport portion of the packet was invalid.
+
 </td>
 </tr>
 <tr>
@@ -157,6 +169,7 @@ The AH checksum for the transport portion of the packet was invalid.
 </td>
 <td width="60%">
 The ESP checksum for the transport portion of the packet was invalid.
+
 </td>
 </tr>
 <tr>
@@ -167,6 +180,7 @@ The ESP checksum for the transport portion of the packet was invalid.
 </td>
 <td width="60%">
 The AH checksum for the tunnel portion of the packet was invalid.
+
 </td>
 </tr>
 <tr>
@@ -177,6 +191,7 @@ The AH checksum for the tunnel portion of the packet was invalid.
 </td>
 <td width="60%">
 The ESP checksum for the tunnel portion of the packet was invalid.
+
 </td>
 </tr>
 <tr>
@@ -187,6 +202,7 @@ The ESP checksum for the tunnel portion of the packet was invalid.
 </td>
 <td width="60%">
 The receive packet's length is invalid.
+
 </td>
 </tr>
 <tr>
@@ -199,10 +215,12 @@ The receive packet's length is invalid.
 The IPsec protocols that were specified in the SA that the packet was received on do not match
          the IPsec protocols that were found in the packet. For example, this error occurs if the SA that the
          packet was received on specifies the AH protocol but the packet contained only an ESP header.
+
 </td>
 </tr>
 </table>
  
+
 </dd>
 </dl>
 
@@ -259,19 +277,23 @@ To set and get the IPsec information, use the
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro.
     <b>NET_BUFFER_LIST_INFO</b> returns the <b>NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO</b> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0. For NDIS 6.1 and later, use <a href="netvista.ndis_ipsec_offload_v2_net_buffer_list_info">NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -300,5 +322,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

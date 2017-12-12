@@ -7,7 +7,7 @@ old-location: storage\stor_power_action.htm
 old-project: storage
 ms.assetid: ffc7c1ec-faec-4383-ab69-844cf68d054f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: PSTOR_POWER_ACTION, STOR_POWER_ACTION, *PSTOR_POWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. 
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ typedef enum  {
 
 No system shutdown is about to occur.
 
+
 ### -field StorPowerActionReserved
 
 Reserved.
+
 
 ### -field StorPowerActionSleep
 
 The system is entering standby.
 
+
 ### -field StorPowerActionHibernate
 
 The system is entering hibernation.
+
 
 ### -field StorPowerActionShutdown
 
 The system is shutting down, but the type of shutdown is not known.
 
+
 ### -field StorPowerActionShutdownReset
 
 The system is shutting down and resetting.
+
 
 ### -field StorPowerActionShutdownOff
 
 The system is shutting down and powering off.
 
+
 ### -field StorPowerActionWarmEject
 
 The system is preparing for ejection.
+
 
 ## -remarks
 
@@ -100,6 +109,7 @@ The system is preparing for ejection.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -116,5 +126,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POWER_ACTION enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POWER_ACTION enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: BAC5B134-22F5-4BC9-BBD6-6AF3C934510B
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 This structure contains the capabilities for an ROI control.
 
 
+
 ## -syntax
 
 ````
@@ -57,15 +58,19 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS {
 ### -field ControlId
 
 The ISP control ID. The following are valid values for this field. These values are defined in ksmedia.h.
+
 <ul>
 <li>
 KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE
+
 </li>
 <li>
 KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE
+
 </li>
 <li>
 KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
+
 </li>
 </ul>
 
@@ -73,9 +78,11 @@ KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
 
 The maximum ROIs supported for this ISO control.
 
+
 ### -field Capability
 
 The capabilities for this ISP control.
+
 
 ## -remarks
 
@@ -85,6 +92,7 @@ The capabilities for this ISP control.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilsetsystemselectionprefsflag.htm
 old-project: netvista
 ms.assetid: 081f4a23-43d8-4ad4-806c-1b6322e057d5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSETSYSTEMSELECTIONPREFSFLAG, RILSETSYSTEMSELECTIONPREFSFLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef enum _RILSETSYSTEMSELECTIONPREFSFLAG {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,8 +7,8 @@ old-location: print\shimopts.htm
 old-project: print
 ms.assetid: 7A00F51A-E8EB-4D8F-B130-08834BF741C6
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: tagSHIMOPTS, SHIMOPTS, *PSHIMOPTS
+ms.date: 12/9/2017
+ms.keywords: tagSHIMOPTS, *PSHIMOPTS, SHIMOPTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef enum tagSHIMOPTS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

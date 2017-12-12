@@ -7,7 +7,7 @@ old-location: netvista\wskdisconnect.htm
 old-project: netvista
 ms.assetid: 499ff5d0-2030-472c-8de2-44dcd253d7b9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   address.
 
 
+
 ## -prototype
 
 ````
@@ -64,6 +65,7 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being disconnected.
 
+
 ### -param Buffer [in, optional]
 
 A pointer to a 
@@ -74,16 +76,20 @@ A pointer to a
      <i>Flags</i> parameter, the 
      <i>Buffer</i> parameter must be <b>NULL</b>.
 
+
 ### -param Flags [in]
 
 A ULONG value that contains the following flag, or zero:
      
 
 
+
+
 ### -param WSK_FLAG_ABORTIVE
 
 Directs the WSK subsystem to perform an abortive disconnect of the socket. If a WSK application
        does not specify this flag, the WSK subsystem will perform a graceful disconnect of the socket.
+
 </dd>
 </dl>
 
@@ -93,6 +99,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      operation asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskDisconnect</b> returns one of the following NTSTATUS codes:
@@ -117,6 +124,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 </dl>An error occurred. The IRP will be completed with failure status.
 
  
+
 
 ## -remarks
 A WSK application can call the 
@@ -155,11 +163,13 @@ If an abortive disconnect is performed, the WSK subsystem cancels all in-progres
 A WSK application can completely close the connection by calling the 
     <b>WskCloseSocket</b> function.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -170,15 +180,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -189,9 +202,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -225,5 +240,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_DISCONNECT callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_DISCONNECT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -7,7 +7,7 @@ old-location: netvista\dot11_wps_device_name.htm
 old-project: netvista
 ms.assetid: 6C2B8E87-A88F-4244-81B2-0241E2DAE756
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,9 +58,11 @@ uDeviceNameLength</b>
 <dd>
 The length, in bytes, of the device name.
 
+
 ### -field ucDeviceName[DOT11_WPS_DEVICE_NAME_MAX_LENGTH]
 
 A UTF-8–encoded descriptive name of the device.
+
 
 ## -remarks
 
@@ -70,14 +72,17 @@ A UTF-8–encoded descriptive name of the device.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with   Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

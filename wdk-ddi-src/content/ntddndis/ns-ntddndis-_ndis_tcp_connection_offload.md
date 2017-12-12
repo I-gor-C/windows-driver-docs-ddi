@@ -7,8 +7,8 @@ old-location: netvista\ndis_tcp_connection_offload.htm
 old-project: netvista
 ms.assetid: d37a773d-0a83-4592-9c21-3ceaa6454549
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_TCP_CONNECTION_OFFLOAD, *PNDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD
+ms.date: 12/8/2017
+ms.keywords: _NDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD, *PNDIS_TCP_CONNECTION_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The NDIS_TCP_CONNECTION_OFFLOAD structure provides connection offload information for current
   settings and for supported capabilities.
+
 
 
 ## -syntax
@@ -76,14 +77,17 @@ The
      <b>Size</b> member to 
      <b>NDIS_SIZEOF_TCP_CONNECTION_OFFLOAD_REVISION_1</b>.
 
+
 ### -field Encapsulation
 
 Encapsulation settings for TCP chimney offload. For more information about this member, see the following Remarks section.
+
 
 ### -field SupportIPv4
 
 A ULONG value that an offload target sets to indicate that it supports IPv4. The TCP/IP driver
      stack sets this member to enable IPv4.
+
 
 ### -field SupportIPv6
 
@@ -91,11 +95,13 @@ A ULONG value that an offload target sets to indicate that it supports IPv6. The
      stack sets this member to enable IPv6. Note that an offload target can support both IPv4 and
      IPv6.
 
+
 ### -field SupportIPv6ExtensionHeaders
 
 A ULONG value that an offload target sets to indicate that it supports IPv6 extension headers
      (that is, routing, fragmentation/reassembly, authentication, encapsulation, hop-by-hop processing, and
      destination options). The TCP/IP driver stack sets this member to enable IPv6 extension headers.
+
 
 ### -field SupportSack
 
@@ -103,27 +109,33 @@ A ULONG value that an offload target sets to indicate that it supports TCP selec
      acknowledgments (SACKs) for both transmit and receive operations. The TCP/IP driver stack sets this
      member to enable SACKs for both transmit and receive operations.
      
+
 If an offload target sets the 
      <b>SupportSack</b> member, the target must be able to generate and consume SACK
      segments. If an offload target does not support the SACK option, the target must be able to ignore the
      SACK option and process the rest of the TCP segment normally.
 
+
 ### -field CongestionAlgorithm
 
 Reserved for future use.
      
+
 If you are an independent hardware vendor (IHV) and you want to implement nondefault congestion
      control algorithms, for example Compound TCP, contact Microsoft at 
      <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.
+
 
 ### -field TcpConnectionOffloadCapacity
 
 A ULONG value that an offload target sets to indicate the maximum number of offloaded TCP
      connections that it supports. This number includes both IPv4 and IPv6 connections.
 
+
 ### -field Flags
 
 Reserved.
+
 
 ## -remarks
 The NDIS_TCP_CONNECTION_OFFLOAD structure specifies the current or supported services that a miniport
@@ -245,19 +257,23 @@ Note that an offload target cannot directly indicate new offload capabilities. I
        <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
        documentation</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -300,5 +316,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

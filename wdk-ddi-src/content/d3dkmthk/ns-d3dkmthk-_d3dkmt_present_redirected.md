@@ -7,7 +7,7 @@ old-location: display\d3dkmt-present-redirected.htm
 old-project: display
 ms.assetid: a883d80a-0240-4a2a-b3d8-ca87080717ee
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_PRESENT_REDIRECTED, D3DKMT_PRESENT_REDIRECTED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to give information on the status of the present history token.
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct _D3DKMT_PRESENT_REDIRECTED {
 
 The sync object that the PHT waits on.
 
+
 ### -field WaitedFenceValue
 
 The fence value of hSyncObj that PHT waits on
+
 
 ### -field PresentHistoryToken
 
 The present history token.
 
+
 ### -field Flags
 
 The flags needed to give the status of the present history token.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ The flags needed to give the status of the present history token.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

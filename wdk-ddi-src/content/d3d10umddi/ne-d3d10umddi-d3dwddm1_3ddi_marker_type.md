@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_marker_type.htm
 old-project: display
 ms.assetid: E57CA17F-FB96-4E9B-A38D-67A4F925D3B4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DWDDM1_3DDI_MARKER_TYPE, D3DWDDM1_3DDI_MARKER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Indicates the type of marker that the user-mode display driver supports.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef enum D3DWDDM1_3DDI_MARKER_TYPE {
 
 No marker type is supported.
 
+
 ### -field D3DWDDM1_3DDI_MARKER_TYPE_PROFILE
 
 The context submits GPU work for single-threaded user-mode DDIs. In this case, each time stamp denotes the end of GPU work.
+
 
 ## -remarks
 
@@ -69,22 +72,27 @@ The context submits GPU work for single-threaded user-mode DDIs. In this case, e
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

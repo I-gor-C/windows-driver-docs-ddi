@@ -7,8 +7,8 @@ old-location: storage\ufs_rpmb_unit_descriptor.htm
 old-project: storage
 ms.assetid: 19A066BD-1099-475C-BF81-F1BE7C7778E5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: PUFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR, *PUFS_RPMB_UNIT_DESCRIPTOR
+ms.date: 12/8/2017
+ms.keywords: PUFS_RPMB_UNIT_DESCRIPTOR, *PUFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>UFS_RPMB_UNIT_DESCRIPTOR</b> structure describes the contents of a Replay Protected Memory Block (RBMB) Unit.
 
 
+
 ## -syntax
 
 ````
@@ -72,25 +73,31 @@ typedef struct _UFS_RPMB_UNIT_DESCRIPTOR {
 
 Specifies the length, in bytes, of this descriptor.
 
+
 ### -field bDescriptorIDN
 
 Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_UNIT_IDN</b>.
+
 
 ### -field bUnitIndex
 
 Specifies unit index
 
+
 ### -field bLUEnable
 
 Specifies if the logic unit number (LUN) is enabled. If <b>bLUEnable</b> is equal to 0x00, the logical unit is disabled.
+
 
 ### -field bBootLUNID
 
 Specifies the boot LUN id.
 
+
 ### -field bLUWriteProtect
 
 Specifies if the logical unit is write-protected. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -111,13 +118,16 @@ Specifies if the logical unit is write-protected. Contains one of the following 
 </table>
  
 
+
 ### -field bLUQueueDepth
 
 Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.
 
+
 ### -field bPSASensitive
 
 Specifies if the logical unit is sensitive to soldering. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -134,37 +144,46 @@ Specifies if the logical unit is sensitive to soldering. Contains one of the fol
 </table>
  
 
+
 ### -field bMemoryType
 
 Specifies the desired memory type. Equal to 0x0F.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ### -field  bLogicalBlockSize
 
 Specifies the logical block size of the descriptor.
 
+
 ### -field qLogicalBlockCount
 
 Specifies the total number of addressable logical blocks in the logical unit.
+
 
 ### -field dEraseBlockSize
 
 Specifies the erase block size.
 
+
 ### -field bProvisioningType
 
 Specifies the provisioning type.
+
 
 ### -field qPhyMemResourceCount
 
 Specifies the total physical memory resources available in the logical unit.
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -174,22 +193,27 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10, version 1709
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

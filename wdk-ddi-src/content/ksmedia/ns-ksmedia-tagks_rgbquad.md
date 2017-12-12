@@ -41,6 +41,7 @@ req.irql:
 The KS_RGBQUAD structure describes a color consisting of relative intensities of red, green, and blue, ranging from 0 to 255 (0x0 to 0xff).
 
 
+
 ## -syntax
 
 ````
@@ -59,17 +60,21 @@ typedef struct tagKS_RGBQUAD {
 
 Specifies the intensity of blue in the color.
 
+
 ### -field rgbGreen
 
 Specifies the intensity of green in the color.
+
 
 ### -field rgbRed
 
 Specifies the intensity of red in the color.
 
+
 ### -field rgbReserved
 
 Reserved. This member must be zero.
+
 
 ## -remarks
 
@@ -79,6 +84,7 @@ Reserved. This member must be zero.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

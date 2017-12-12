@@ -7,7 +7,7 @@ old-location: netvista\path_offload_state_const.htm
 old-project: netvista
 ms.assetid: a71f70f6-7731-457b-bd6d-b4a649f76f8b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _PATH_OFFLOAD_STATE_CONST, *PPATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
+
 The PATH_OFFLOAD_STATE_CONST structure contains the constant variables of a path state object.
+
 
 
 ## -syntax
@@ -65,17 +67,20 @@ An
      <b>RecognizedOptions</b> member of 
      <b>Header</b> is reserved.
 
+
 ### -field SourceAddress
 
 A pointer to the source IP address of a TCP connection. If the TCP connection is over IPv4, the
      address is a 4-byte IPv4 address. If the TCP connection is over IPv6, the address is a 16-byte IPv6
      address. The source address bytes are always in network byte order.
 
+
 ### -field DestinationAddress
 
 A pointer to the destination IP address of a TCP connection. If the TCP connection is over IPv4,
      the address is a 4-byte IPv4 address. If the TCP connection is over IPv6, the address is a 16-byte IPv6
      address. The destination address bytes are always in network byte order.
+
 
 ## -remarks
 The value of each path constant variable does not change during the life of a TCP connection. Neither
@@ -92,11 +97,13 @@ When passed to an offload target, a PATH_OFFLOAD_STATE_CONST structure is associ
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the PATH_OFFLOAD_STATE_CONST structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -125,5 +132,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PATH_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PATH_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

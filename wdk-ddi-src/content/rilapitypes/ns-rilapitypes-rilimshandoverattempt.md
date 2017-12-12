@@ -7,8 +7,8 @@ old-location: netvista\rilimshandoverattempt_2.htm
 old-project: netvista
 ms.assetid: de56a241-10a3-4f9c-970c-433ab997612d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT
+ms.date: 12/8/2017
+ms.keywords: RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -76,6 +77,7 @@ typedef struct _RILIMSHANDOVERATTEMPT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

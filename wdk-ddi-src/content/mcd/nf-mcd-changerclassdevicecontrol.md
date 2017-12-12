@@ -7,7 +7,7 @@ old-location: storage\changerclassdevicecontrol.htm
 old-project: storage
 ms.assetid: 9107fa7b-b061-4505-aef7-be04587a4199
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: ChangerClassDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <b>ChangerClassDeviceControl</b> routine is called by a changer minidriver to allow the class driver perform device-independent aspects of a device control operation. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ NTSTATUS ChangerClassDeviceControl(
 
 Pointer to the device object of the device. 
 
+
 ### -param Irp [in]
 
 Pointer to the I/O request packet (IRP) that initiated the device control operation. 
+
 
 ## -returns
 If the operation succeeds, the <b>ChangerClassDeviceControl</b> routine returns STATUS_SUCCESS. Otherwise the routine returns one of the following status values.
@@ -78,6 +81,7 @@ If the operation succeeds, the <b>ChangerClassDeviceControl</b> routine returns 
 
  
 
+
 ## -remarks
 
 
@@ -86,6 +90,7 @@ If the operation succeeds, the <b>ChangerClassDeviceControl</b> routine returns 
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -96,6 +101,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

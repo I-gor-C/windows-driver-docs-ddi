@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_displaymode_flags.htm
 old-project: display
 ms.assetid: 0b45cd69-5c9e-4772-a68f-d604806e7789
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMDT_DISPLAYMODE_FLAGS, D3DKMDT_DISPLAYMODE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The D3DKMDT_DISPLAYMODE_FLAGS structure identifies attributes of a display mode.
 
 
+
 ## -syntax
 
 ````
@@ -68,59 +69,86 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 ### -field ValidatedAgainstMonitorCaps
 
 A Boolean value that specifies whether the display mode is supported by the monitor that the display mode will be displayed on.
+
 Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).
+
 
 ### -field RoundedFakeMode
 
 A Boolean value that specifies whether the display mode is rounded.
+
 Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).
+
 
 ### -field ModePruningReason
 
 [in] A value of type <a href="display.d3dkmdt_mode_pruning_reason">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.
+
 Setting this member is equivalent to setting bits 4 through 7 of a 32-bit value (0x0000003C).
+
 
 ### -field Reserved
 
 This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 28 bits (0xFFFFFFF0) of a 32-bit value to zeros.
 
+
 ### -field ValidatedAgainstMonitorCaps
 
 A UINT value that specifies whether the display mode is supported by the monitor that the display mode will be displayed on.
+
 Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).
+
 Supported starting with Windows 8.
+
 
 ### -field RoundedFakeMode
 
 A UINT value that specifies whether the display mode is rounded.
+
 Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).
+
 Supported starting with Windows 8.
+
 
 ### -field ModePruningReason
 
 [in] A value of type <a href="display.d3dkmdt_mode_pruning_reason">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.
+
 This member is equivalent to bits 4 through 7 of a 32-bit value (0x0000003C). 
+
 Supported starting with Windows 8.
+
 
 ### -field Stereo
 
 [in] 
+
 A UINT value that specifies whether stereo is supported by the monitor that the display mode will be displayed on.
+
 Setting this member is equivalent to setting the eighth bit of a 32-bit value (0x00000080).
+
 Supported starting with Windows 8.
+
 
 ### -field AdvancedScanCapable
 
 [in] A UINT value that specifies whether the driver supports the advanced scan capability.
+
 The driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="display.d3dkmdt_vidpn_source_mode">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to <b>D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN</b>.
+
 Setting this member is equivalent to setting the ninth bit of a 32-bit value (0x00000100).
+
 Supported starting with Windows 8.
+
 
 ### -field Reserved
 
 This member is reserved and should be set to zero.
+
 Setting this member is equivalent to setting the remaining 26 bits (0xFFFFFFC0) of a 32-bit value to zeros.
+
 Supported starting with Windows 8.
+
 
 ## -remarks
 
@@ -130,14 +158,17 @@ Supported starting with Windows 8.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -157,5 +188,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_DISPLAYMODE_FLAGS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_DISPLAYMODE_FLAGS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

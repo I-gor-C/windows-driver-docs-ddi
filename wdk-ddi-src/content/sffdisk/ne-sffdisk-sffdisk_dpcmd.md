@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The SFFDISK_DPCMD enumeration lists the operations performed by an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537273">IOCTL_SFFDISK_DEVICE_PASSWORD</a> request.
 
 
+
 ## -syntax
 
 ````
@@ -61,21 +62,26 @@ typedef enum  {
 
 The operation requests verification from the card that it supports command class 7.
 
+
 ### -field SFFDISK_DP_SET_PASSWORD
 
 The operation sets the password.
+
 
 ### -field SFFDISK_DP_LOCK_DEVICE
 
 The operation locks the device.
 
+
 ### -field SFFDISK_DP_UNLOCK_DEVICE
 
 The operation unlocks the device.
 
+
 ### -field SFFDISK_DP_RESET_DEVICE_ALL_DATA
 
 The operation resets the device.
+
 
 ## -remarks
 
@@ -85,6 +91,7 @@ The operation resets the device.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -101,5 +108,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SFFDISK_DPCMD enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

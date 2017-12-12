@@ -7,7 +7,7 @@ old-location: display\d3dkmt_waitforverticalblankevent2.htm
 old-project: display
 ms.assetid: b83e1d1c-e940-4e7b-8a74-82aee2c54391
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_WAITFORVERTICALBLANKEVENT2, D3DKMT_WAITFORVERTICALBLANKEVENT2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes parameters for multiple wait objects, including a vertical blank event. Supported starting with Windows 8.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _D3DKMT_WAITFORVERTICALBLANKEVENT2 {
 
 [in] A handle to the adapter.
 
+
 ### -field hDevice
 
 [in] A handle to the display device. This member is optionally specified. However, if the OpenGL ICD specifies the display device, the kernel is given more optimization opportunities with regard to power usage.
+
 
 ### -field VidPnSourceId
 
 [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source.
 
+
 ### -field NumObjects
 
 The number of wait objects to wait on, which equals the size of the array specified by the <b>ObjectHandleArray</b> member.
 
+
 ### -field ObjectHandleArray
 
 [in] A handle to an array of wait objects to wait on.
+
 
 ## -remarks
 
@@ -84,22 +90,27 @@ The number of wait objects to wait on, which equals the size of the array specif
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

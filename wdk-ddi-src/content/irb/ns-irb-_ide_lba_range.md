@@ -7,7 +7,7 @@ old-location: storage\ide_lba_range.htm
 old-project: storage
 ms.assetid: 2d823d9c-7328-44e2-9ba2-22967471ef68
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _IDE_LBA_RANGE, IDE_LBA_RANGE, *PIDE_LBA_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The IDE_LBA_RANGE structure is used by the port driver to provide the miniport driver with a range of logical blocks.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _IDE_LBA_RANGE {
 
 Contains the starting sector of the LBA range.
 
+
 ### -field SectorCount
 
 Contains the sector count of the LBA range.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Contains the sector count of the LBA range.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

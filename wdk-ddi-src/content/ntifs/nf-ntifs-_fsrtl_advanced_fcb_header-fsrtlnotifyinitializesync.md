@@ -41,6 +41,7 @@ req.irql: <= APC_LEVEL
 The <b>FsRtlNotifyInitializeSync</b> routine allocates and initializes a synchronization object for a notify list.
 
 
+
 ## -syntax
 
 ````
@@ -56,19 +57,23 @@ VOID FsRtlNotifyInitializeSync(
 
 A pointer to a location in which to return a pointer to the opaque synchronization object.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The system allocates the synchronization object from nonpaged pool. If a pool allocation failure occurs, <b>FsRtlNotifyInitializeSync</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. To gain control if this pool allocation failure occurs, the driver should wrap the call to <b>FsRtlNotifyInitializeSync</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
 Every successful call to <b>FsRtlNotifyInitializeSync</b> must be matched by a subsequent call to <a href="ifsk.fsrtlnotifyuninitializesync">FsRtlNotifyUninitializeSync</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -79,14 +84,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems. 
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -97,6 +105,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -107,6 +116,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -117,9 +127,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -131,5 +143,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlNotifyInitializeSync routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

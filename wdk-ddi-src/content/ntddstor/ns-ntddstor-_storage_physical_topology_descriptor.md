@@ -7,7 +7,7 @@ old-location: storage\storage_physical_topology_descriptor.htm
 old-project: storage
 ms.assetid: FD5714DF-9D34-4396-86BC-40054C199A0E
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, *PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes the physical topology of storage in a system.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef struct _STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR {
 
 The version of the physical topology.
 
+
 ### -field Size
 
 The total size of data in the system.
+
 
 ### -field NodeCount
 
 The total number of storage nodes in the system.
 
+
 ### -field Reserved
 
 Indicates if storage in the system is reserved.
 
+
 ### -field Node[ANYSIZE_ARRAY]
 
 Describes the storage nodes in the system.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ Describes the storage nodes in the system.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

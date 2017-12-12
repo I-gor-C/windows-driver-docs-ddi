@@ -7,7 +7,7 @@ old-location: storage\ses_download_microcode_control_diagnostic_page.htm
 old-project: storage
 ms.assetid: 09c2746f-cfe4-41dc-82ce-0b7e0c348897
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ The <b>SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</b> structure contains a v
 for use by the enclosure services process. 
 
 
+
 ## -syntax
 
 ````
@@ -67,24 +68,29 @@ typedef struct _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE {
 
 Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x0E.
 
+
 ### -field SubEnclosureId
 
 Specifies the sub enclosure to which the application client is
 sending the microcode image. If the value does not match a valid SUBENCLOSURE_IDENTIFIER field value found in the <a href="storage.ses_configuration_diagnostic_page">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a>, then the enclosure services
 process shall abort the download microcode operation with a status of 0x80.
 
+
 ### -field PageLength
 
 Specifies the number of bytes that follow in the diagnostic page.
+
 
 ### -field ExpectedGenerationCode
 
 Specifies the expected value of the generation code. If this parameter is not set to the current generation code, then the enclosure services
 process shall abort the download microcode operation with a status of 0x80. 
 
+
 ### -field Mode
 
 Specifies which mode to download the microcode with. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -106,6 +112,7 @@ After the last SEND DIAGNOSTIC command delivers a Download Microcode
 Control diagnostic page to the subenclosure completes, the enclosure services
 process shall verify the complete microcode image (e.g., perform a vendor
 specific checksum) and save the new microcode image into nonvolatile storage.
+
  If there are no errors in the microcode image or in the save operation, then the
 enclosure services process shall perform one of the following actions:<ul>
 <li>Set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x10, if
@@ -116,6 +123,7 @@ activate the new microcode image after either power on or hard reset.</li>
 <li>Set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x12, if
 requested,  and activate the new microcode image after power on.</li>
 </ul>
+
 
 </td>
 </tr>
@@ -137,9 +145,11 @@ process shall verify the complete microcode image (e.g., perform a vendor
 specific checksum), save the new microcode image into nonvolatile storage
 (e.g., flash ROM), and defer activation of the new microcode.
 
+
 If there are no errors in the microcode image or in the save operation, then the
 enclosure services process shall set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x13 in the <a href="storage._ses_download_microcode_status_diagnostic_page">SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE</a>, if
 requested, and activate the new microcode after either:
+
 <ul>
 <li>Processing this structure with the
 <i>Mode</i> field set to 0x0F (i.e., Activate deferred
@@ -161,6 +171,7 @@ deferred
 After the SEND DIAGNOSTIC command specifying this mode completes, the
 enclosure services process shall activate the deferred microcode image, if any.
 
+
 </td>
 </tr>
 <tr>
@@ -171,14 +182,17 @@ enclosure services process shall activate the deferred microcode image, if any.
 </td>
 <td width="60%">
 Reserved for future use.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Reserved
 
 Reserved for future use.
+
 
 ### -field BufferID
 
@@ -190,22 +204,27 @@ the enclosure services process shall assign additional buffer ID codes contiguou
 enclosure services process receives an unsupported buffer ID code, then it shall abort the download
 microcode operation and set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x80 in the <a href="storage._ses_download_microcode_status_diagnostic_page">SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE</a> structure.
 
+
 ### -field BufferOffset
 
 Specifies the offset in bytes within the buffer to which the microcode data is written in multiples of four. The enclosure services process may require that this  field be contiguously increasing in consecutive SEND DIAGNOSTIC commands. 
+
 
 ### -field ImageLength
 
 specifies the total number of bytes in the microcode image the application
 intends to send to the specified <i>BufferID</i>.
 
+
 ### -field DataLength
 
 Specifies the length of <i>Data</i>, in bytes.
 
+
 ### -field Data
 
 Contains part of the vendor specific microcode image.
+
 
 ## -remarks
 
@@ -215,14 +234,17 @@ Contains part of the vendor specific microcode image.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 10, version 1709 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

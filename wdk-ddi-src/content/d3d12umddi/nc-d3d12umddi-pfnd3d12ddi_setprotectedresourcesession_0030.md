@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_setprotectedresourcesession_0030_.htm
 old-project: display
 ms.assetid: 1AF1FA8A-3A7E-4277-B6BE-C41A5C4416B6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to set a protected resource session.
 
 
+
 ## -prototype
 
 ````
@@ -57,12 +58,15 @@ VOID APIENTRY* PFND3D12DDI_SETPROTECTEDRESOURCESESSION_0030(
 
 The command list.
 
+
 ### -param hProtectedResourceSession 
 
 The protected resource session.
 
+
 ## -returns
 This callback function does not return a value.
+
 
 ## -remarks
 
@@ -72,22 +76,27 @@ This callback function does not return a value.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

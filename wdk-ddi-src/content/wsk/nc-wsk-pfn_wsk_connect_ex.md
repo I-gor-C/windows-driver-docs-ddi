@@ -7,7 +7,7 @@ old-location: netvista\wskconnectex.htm
 old-project: netvista
 ms.assetid: 1BC518E9-747C-4406-8A2A-40A3BCB0A3AA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,8 +41,10 @@ req.product: Windows 10 or later.
 ## -description
 The 
   <b>WskConnectEx</b> function connects a connection-oriented or stream socket to a remote transport address.
+
 <b>WskConnectEx</b> is similar to <a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
   except that it can also optionally send a buffer of data during or after connection synchronization.
+
 
 
 ## -prototype
@@ -66,20 +68,24 @@ A pointer to a
      <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being connected to a remote transport address.
 
+
 ### -param RemoteAddress [in]
 
 A pointer to a structure that specifies the remote transport address to which to connect the
      socket. This pointer must be a pointer to the specific <a href="netvista.sockaddr">SOCKADDR</a> structure type that corresponds to the
      address family that the WSK application specified when it created the socket.
 
+
 ### -param Buffer [in, optional]
 
 A pointer to a <a href="netvista.wsk_buf">WSK_BUF</a> structure, which contains the data to send during or after connection synchronization. The maximum allowed size in bytes is 65,535.
+
 
 ### -param Flags 
 
 This parameter is reserved for system use. A WSK application must set this parameter to
      zero. 
+
 
 ### -param Irp [in, out]
 
@@ -87,6 +93,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
      Kernel Functions</a>.
+
 
 ## -returns
 <b>WskConnectEx</b> returns one of the following NTSTATUS codes:
@@ -118,6 +125,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 
  
 
+
 ## -remarks
 A WSK application can create, bind, and connect a connection-oriented socket in a single function call
     by calling the 
@@ -140,11 +148,13 @@ If the <i>Buffer</i> parameter is used, the caller can free the MDL in its <a hr
 
 Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK application sets the <b>TCP_FASTOPEN</b> option on a WSK socket via the <a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a> function the system will optionally send some or all of the data in a SYN packet. For more information, see the <b>TCP Fastopen</b> option in <a href="winsock.ipproto_tcp_socket_options">IPPROTO_TCP Socket Options</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -155,14 +165,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1703
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -173,9 +186,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -219,5 +234,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT_EX callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT_EX callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

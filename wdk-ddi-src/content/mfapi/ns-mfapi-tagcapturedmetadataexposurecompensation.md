@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 This structure contains blob information for the EV compensation feedback for the photo captured.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct tagCapturedMetadataExposureCompensation {
 
 A KSCAMERA_EXTENDEDPROP_EVCOMP_XXX step flag.
 
+
 ### -field Value
 
 The EV compensation value in units of the step specified.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ The EV compensation value in units of the step specified.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql:
 This structure defines the parameters for a distance-based tracking fix session.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field MovementThreshold
 
 If the device moves beyond this threshold, a fix will be generated/recorded. A value of zero indicates that a fix should be reported whenever the device moves. This value is specified in meters.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ If the device moves beyond this threshold, a fix will be generated/recorded. A v
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

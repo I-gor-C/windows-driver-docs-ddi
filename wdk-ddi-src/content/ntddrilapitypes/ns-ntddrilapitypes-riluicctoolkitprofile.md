@@ -7,7 +7,7 @@ old-location: netvista\riluicctoolkitprofile.htm
 old-project: netvista
 ms.assetid: ff1f5839-78be-48ab-9c26-f8fee6788d51
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 
+
 ## -syntax
 
 ````
@@ -71,6 +72,7 @@ typedef struct _RILUICCTOOLKITPROFILE {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

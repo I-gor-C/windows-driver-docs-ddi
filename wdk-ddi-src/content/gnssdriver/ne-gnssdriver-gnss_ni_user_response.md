@@ -41,6 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 This enumeration indicates the user’s response to a network initiated (NI) request, which is represented by the <a href="sensors.gnss_ni_response">GNSS_NI_RESPONSE</a> structure.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef enum  {
 
 Indicates that the user accepted the NI request.
 
+
 ### -field GNSS_Ni_UserResponseDeny
 
 Indicates that the user denied the NI request.
 
+
 ### -field GNSS_Ni_UserResponseTimeout
 
 Indicates that the request timed out without a user response.
+
 
 ## -remarks
 
@@ -74,6 +78,7 @@ Indicates that the request timed out without a user response.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

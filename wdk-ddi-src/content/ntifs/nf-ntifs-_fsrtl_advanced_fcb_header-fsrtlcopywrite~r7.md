@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <b>FsRtlCopyWrite</b> routine copies data from a user buffer to a cached file.
 
 
+
 ## -syntax
 
 ````
@@ -63,39 +64,48 @@ BOOLEAN FsRtlCopyWrite(
 
 A pointer to a file object for the cached file to which the data is to be written.
 
+
 ### -param FileOffset [in]
 
 A pointer to a variable that specifies the starting byte offset within the cached file.
+
 
 ### -param Length [in]
 
 The length in bytes of the data to be written.
 
+
 ### -param Wait [in]
 
 Set to <b>TRUE</b> if the caller can be put into a wait state until all the data has been copied, <b>FALSE</b> otherwise.
+
 
 ### -param LockKey [in]
 
 A value that is associated with the byte range to lock. If the range to lock overlaps another range that is already locked with a nonexclusive lock, or if the range to read is a subrange of another range that is already locked nonexclusively, the value in this parameter must be the key for that nonexclusive lock The lock must be held by the parent process of the calling thread. Otherwise, this parameter has no effect.
 
+
 ### -param Buffer [in]
 
 A pointer to the buffer from which the data is to be copied.
+
 
 ### -param IoStatus [out]
 
 A pointer to a caller-allocated structure that receives the final completion status and information about the operation. If the data is copied successfully, <i>IoStatus.Status</i> contains STATUS_SUCCESS. If not all of the data is copied successfully, <i>IoStatus.Information</i> contains the actual number of bytes that were copied.
 
+
 ### -param DeviceObject [in]
 
 A pointer to the device object for the mounted volume that holds the file data.
+
 
 ## -returns
 <b>FsRtlCopyWrite</b>
       returns <b>TRUE</b> if the copy request was completed, <b>FALSE</b> otherwise. Note that a return value of <b>TRUE</b> does not necessarily mean that the copy operation was successful. 
 
 If <b>FsRtlCopyWrite</b> returns <b>FALSE</b>, or if the contents of <i>IoStatus</i> indicate that the copy operation failed, the caller must allocate a write IRP instead of calling <b>FsRtlCopyWrite</b>.
+
 
 ## -remarks
 Rather than implementing a file-system-specific fast I/O write routine, developers of file systems that support file caching should consider using <b>FsRtlCopyWrite</b> as the file system's entry point for processing fast I/O write requests. This requires that the file system's <b>DriverEntry</b> routine set the FastIoWrite entry point to <b>FsRtlCopyWrite</b> in the FAST_IO_DISPATCH structure of the file system driver object. In addition, the file system must do the following:
@@ -120,11 +130,13 @@ The file system's <b>FastIoCheckIfPossible</b> routine is responsible for ensuri
 
 To cache a file, use the <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a> routine.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +147,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +158,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -155,6 +169,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -165,9 +180,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -185,5 +202,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCopyWrite routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

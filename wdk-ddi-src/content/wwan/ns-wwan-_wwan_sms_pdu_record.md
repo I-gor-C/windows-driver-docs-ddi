@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_pdu_record.htm
 old-project: netvista
 ms.assetid: 20200222-8539-497e-891e-2d29c3207c56
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _WWAN_SMS_PDU_RECORD, *PWWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The WWAN_SMS_PDU_RECORD structure represents a PDU-style SMS message record.
 
 
+
 ## -syntax
 
 ````
@@ -64,19 +65,24 @@ An index into the virtual message store that is maintained by the miniport drive
      not differentiate between physically available data stores. If the message is a Class 0 (flash/alert)
      message, this must be set to WWAN_MESSAGE_INDEX_NONE.
 
+
 ### -field MsgStatus
 
 The status of the record that represents whether the SMS message is new (unread), old (read), a
      draft, or sent.
 
+
 ### -field Size
 
 The size, in bytes, of the record.
      
+
 For GSM-based devices, this represents the size of the message before conversion to a hexadecimal
      string.
+
 For CDMA-based devices, this represents the number of bytes in the 
      <b>PduData</b> .
+
 
 ### -field PduData
 
@@ -84,12 +90,14 @@ For GSM-based devices, a NULL-terminated string that contains the content of the
      hexadecimal string format (according to the 3GPP TS 27.005 and 3GPP TS 23.040 standards) that represents
      the SMS message. 
      
+
 For CDMA-based devices that support reading SMS messages in binary format (as returned in
      WWAN_SMS_CAPS as WWAN_SMS_CAPS_PDU_RECEIVE) this member contains the SMS message as a byte array, as
      defined in section 3.4.2.1 SMS Point-to-Point Message in 3GPP2 specification C.S0015-A "Short Message
      Service (SMS) for Wideband Spread Spectrum Systems". SMS will only support Wireless Messaging
      Teleservice (WMT) format. Miniport drivers should typecast this information to BYTE[] for CDMA-based
      devices. It is not coded in hexadecimal string format. The message is not NULL-terminated.
+
 
 ## -remarks
 
@@ -99,14 +107,17 @@ For CDMA-based devices that support reading SMS messages in binary format (as re
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -123,5 +134,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_PDU_RECORD structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_PDU_RECORD structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

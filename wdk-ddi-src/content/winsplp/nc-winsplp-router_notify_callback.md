@@ -7,8 +7,8 @@ old-location: print\router_notify_callback.htm
 old-project: print
 ms.assetid: 97D8FEEA-B6D7-4AD7-A067-B503AF8F23FF
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
-ms.keywords: _SCARD_IO_REQUEST, *PSCARD_IO_REQUEST, SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST
+ms.date: 12/9/2017
+ms.keywords: _SCARD_IO_REQUEST, SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, *PSCARD_IO_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -39,6 +39,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
+
 
 
 
@@ -87,6 +88,7 @@ ROUTER_NOTIFY_CALLBACK ROUTER_NOTIFY_CALLBACK;
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

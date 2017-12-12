@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_bind.htm
 old-project: netvista
 ms.assetid: F363C538-A5D7-4A08-B7CD-CA7D7346AC10
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: <=DISPATCH_LEVEL
 The <i>NdkBind</i> (<i>NDK_FN_BIND</i>) function binds a memory window to a specific sub-region of a memory region (MR).
 
 
+
 ## -prototype
 
 ````
@@ -65,30 +66,38 @@ NTSTATUS NdkBind(
 
 A pointer to an NDK queue pair (QP) object (<a href="netvista.ndk_qp">NDK_QP</a>).
 
+
 ### -param RequestContext [in, optional]
 
 A context value to return in the <b>RequestContext</b> member of the <a href="netvista.ndk_result">NDK_RESULT</a> structure for this request.
+
 
 ### -param pMr [in]
 
 A pointer to an NDK memory region (MR) object (<a href="netvista.ndk_mr">NDK_MR</a>).
 
+
 ### -param pMw [in]
 
 A pointer to an NDK memory window (MW) object (<a href="netvista.ndk_mw">NDK_MW</a>).
 
+
 ### -param VirtualAddress [in]
 
 A virtual address that must be greater than or equal to the virtual address of the MDL for the MR and less than the virtual address of the MDL for the MR plus the value in the <i>Length</i> parameter.
+
 Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a> macro to obtain the virtual address of the MDL for the MR.
+
 
 ### -param Length [in]
 
 The length of the MR to bind to the MW. 
 
+
 ### -param Flags [in]
 
 A bitwise OR of flags which specifies the operations that are allowed. The following flags are supported:
+
 <table>
 <tr>
 <th>Value</th>
@@ -102,6 +111,7 @@ A bitwise OR of flags which specifies the operations that are allowed. The follo
 </td>
 <td width="60%">
 Indicates the successful completion of this request does not generate a completion event in the outbound completion queue. However, requests that fail do generate a completion in the completion queue.
+
 </td>
 </tr>
 <tr>
@@ -112,6 +122,7 @@ Indicates the successful completion of this request does not generate a completi
 </td>
 <td width="60%">
 Indicates that all prior read requests must be complete before the hardware begins processing this request.
+
 </td>
 </tr>
 <tr>
@@ -122,6 +133,7 @@ Indicates that all prior read requests must be complete before the hardware begi
 </td>
 <td width="60%">
 Enable read access to the memory window for any connected peer. To access the memory window,  the connected peers must have a valid token.
+
 </td>
 </tr>
 <tr>
@@ -132,6 +144,7 @@ Enable read access to the memory window for any connected peer. To access the me
 </td>
 <td width="60%">
 Enable write access to the memory window for any connected peer. To access the memory window,  the connected peers must have a valid token.
+
 </td>
 </tr>
 <tr>
@@ -142,11 +155,14 @@ Enable write access to the memory window for any connected peer. To access the m
 </td>
 <td width="60%">
 Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>.
+
 <b>Note</b>  This flag is supported only in NDKPI 1.2 (Windows Server 2012 R2) and later.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 The 
@@ -167,6 +183,7 @@ The
 
  
 
+
 ## -remarks
 <i>NdkBind</i> binds a memory window (MW) to a specific sub-region of a memory region (MR).
 
@@ -176,35 +193,43 @@ After this call returns, the remote token will be available with the <i>NdkGetRe
 
 This function does not support a zero-based virtual address.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 None supported
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.30 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -215,9 +240,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -250,5 +277,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_BIND callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_BIND callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

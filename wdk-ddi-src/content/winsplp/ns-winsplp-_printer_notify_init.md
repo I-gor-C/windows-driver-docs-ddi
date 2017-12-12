@@ -7,7 +7,7 @@ old-location: print\printer_notify_init.htm
 old-project: print
 ms.assetid: 45DFA669-8520-4EA5-8B36-822BDC8C958D
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: _PRINTER_NOTIFY_INIT, *PPRINTER_NOTIFY_INIT, PRINTER_NOTIFY_INIT, *LPPRINTER_NOTIFY_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 
 
 
+
 ## -syntax
 
 ````
@@ -72,6 +73,7 @@ typedef struct _PRINTER_NOTIFY_INIT {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

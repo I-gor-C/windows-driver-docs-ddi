@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxForceFinalizeAllVNetRoots</b> force finalizes all the V_NET_ROOT structures associated with a given NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object. 
 
 
+
 ## -syntax
 
 ````
@@ -57,8 +58,10 @@ VOID RxForceFinalizeAllVNetRoots(
 
 A pointer to the NET_ROOT structure.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The <b>RxForceFinalizeAllVNetRoots</b> routine is not called internally by RDBSS. <b>RxForceFinalizeAllVNetRoots</b> is normally called by network mini-redirector drivers directly. If a network mini-redirector implements client-side caching, the <b>RxForceFinalizeAllVNetRoots</b> routine could be used to close all open files for client-side caching. Forcing a close on all the V_NET_ROOT structures is equivalent to a <a href="wnet.wnetcancelconnection">WNetCancelConnection</a> call from user mode on a share with forced close of all files.
@@ -67,11 +70,13 @@ Before calling <b>RxForceFinalizeAllVNetRoots</b>, a lock on the netname table a
 
 <b>RxForceFinalizeAllVNetRoots</b> calls <a href="ifsk.rxfinalizevnetroot">RxFinalizeVNetRoot</a> to finalize each V_NET_ROOT associated with the NET_ROOT.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -82,6 +87,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -92,9 +98,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -163,5 +171,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxForceFinalizeAllVNetRoots function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

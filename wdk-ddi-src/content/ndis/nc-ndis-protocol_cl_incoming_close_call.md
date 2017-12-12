@@ -7,7 +7,7 @@ old-location: netvista\protocolclincomingclosecall.htm
 old-project: netvista
 ms.assetid: 01c7d887-eb54-47c3-98f0-bc567b60fb4b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,7 @@ The
   <i>ProtocolClIncomingCloseCall</i> functions.
 
 
+
 ## -prototype
 
 ````
@@ -68,6 +69,7 @@ Specifies the status that indicates the cause of the connection teardown, which 
      closed. Any other value indicates that problems on the network caused the call manager to terminate the
      connection.
 
+
 ### -param ProtocolVcContext [in]
 
 Specifies the handle to the client's per-VC context area for the VC on which the connection is
@@ -75,16 +77,19 @@ Specifies the handle to the client's per-VC context area for the VC on which the
      <i>CloseStatus</i>, the client can neither send nor receive data on the VC designated by the 
      <i>NdisVcHandle</i> that it stored in this context area.
 
+
 ### -param CloseData [in]
 
 Pointer to a buffer containing a protocol-specific close message, possibly one supplied by the
      remote client that the call manager received over the network, or this parameter can be <b>NULL</b>. 
      
+
 When 
      <i>CloseStatus</i> is NDIS_STATUS_SUCCESS, this parameter is <b>NULL</b> if the underlying network medium does
      not support transfers of data when closing a connection. However, any particular call manager might
      define a structure to pass additional diagnostic information to its clients on call teardowns caused by
      problems on the network.
+
 
 ### -param Size [in]
 
@@ -92,8 +97,10 @@ Specifies the size in bytes of the buffer at
      <i>CloseData</i>, zero if 
      <i>CloseData</i> is <b>NULL</b>.
 
+
 ## -returns
 None
+
 
 ## -remarks
 A call to 
@@ -154,11 +161,13 @@ The <b>PROTOCOL_CL_INCOMING_CLOSE_CALL</b> function type is defined in the Ndis.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -166,11 +175,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    ProtocolClIncomingCloseCall (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
    <i>
    ProtocolClIncomingCloseCall (NDIS 5.1)</i>) in Windows XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -181,9 +192,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -228,5 +241,8 @@ IRQL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_INCOMING_CLOSE_CALL callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_INCOMING_CLOSE_CALL callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

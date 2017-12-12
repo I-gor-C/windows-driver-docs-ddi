@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceretrievecompaniontarget.htm
 old-project: wdf
 ms.assetid: 2ca34fb7-72c1-4253-ad5b-bc829a1ba540
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfDeviceRetrieveCompanionTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 For internal use only.
 
 
+
 ## -syntax
 
 ````
@@ -68,14 +69,17 @@ NTSTATUS WdfDeviceRetrieveCompanionTarget(
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.23
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -86,9 +90,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

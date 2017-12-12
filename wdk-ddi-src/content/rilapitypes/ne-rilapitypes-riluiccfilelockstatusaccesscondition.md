@@ -7,7 +7,7 @@ old-location: netvista\riluiccfilelockstatusaccesscondition_2.htm
 old-project: netvista
 ms.assetid: f8bc0e66-1868-4e96-80d4-e541f6959eac
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILUICCFILELOCKSTATUSACCESSCONDITION, RILUICCFILELOCKSTATUSACCESSCONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -92,6 +93,7 @@ typedef enum _RILUICCFILELOCKSTATUSACCESSCONDITION {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

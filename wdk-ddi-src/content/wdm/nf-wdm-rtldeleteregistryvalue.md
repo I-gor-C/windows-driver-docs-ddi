@@ -7,7 +7,7 @@ old-location: kernel\rtldeleteregistryvalue.htm
 old-project: kernel
 ms.assetid: 4bbedc96-a7e2-40bd-98f3-c1136f70564d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlDeleteRegistryValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RtlDeleteRegistryValue</b> routine removes the specified entry name and the associated values from the registry along the given relative path.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ NTSTATUS RtlDeleteRegistryValue(
 ### -param RelativeTo [in]
 
 Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined key path as one of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -66,69 +68,86 @@ Specifies whether <i>Path</i> is an absolute registry path or is relative to a p
 <tr>
 <td>
 RTL_REGISTRY_ABSOLUTE
+
 </td>
 <td>
 Path is an absolute registry path.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_SERVICES
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\System\CurrentControlSet\Services</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_CONTROL
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\System\CurrentControlSet\Control</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_WINDOWS_NT
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_DEVICEMAP
+
 </td>
 <td>
 Path is relative to <b>\Registry\Machine\Hardware\DeviceMap</b>.
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_USER
+
 </td>
 <td>
 Path is relative to <b>\Registry\User\CurrentUser</b>. (For a system process, this is <b>\Users\.Default</b>.)
+
 </td>
 </tr>
 <tr>
 <td>
 RTL_REGISTRY_HANDLE
+
 </td>
 <td>
 Specifies that the <i>Path</i> parameter is actually a registry handle to use. This value is optional.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param Path [in]
 
 Specifies the registry path according to the <i>RelativeTo</i> value. If RTL_REGISTRY_HANDLE is set, <i>Path</i> is a handle to be used directly.
 
+
 ### -param ValueName [in]
 
 Pointer to the value name to be removed from the registry.
+
 
 ## -returns
 <b>RtlDeleteRegistryValue</b> returns STATUS_SUCCESS if the value entry was deleted.
@@ -139,6 +158,7 @@ On Windows 98/Me and Windows NT 4.0, the routine closes the specified handle bef
 
 On Windows 2000 and later versions of Windows, the routine leaves the handle open.
 
+
 ## -remarks
 
 
@@ -147,6 +167,7 @@ On Windows 2000 and later versions of Windows, the routine leaves the handle ope
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -157,14 +178,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -175,6 +199,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -185,6 +210,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -195,14 +221,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqlrtlpassive">IrqlRtlPassive</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
@@ -229,5 +258,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlDeleteRegistryValue routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlDeleteRegistryValue routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

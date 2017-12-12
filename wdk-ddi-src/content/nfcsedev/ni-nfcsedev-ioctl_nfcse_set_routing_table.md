@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 54B37EC0-C38A-479C-A45F-424963C4D89A
 ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
+ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -43,11 +43,13 @@ Configures NFC controller listen mode routing table. Note that caller has to sen
 
 
 
+
 ## -ioctlparameters
 
 ### -input-buffer
 
 <a href="nfpdrivers._secure_element_routing_table"> SECURE_ELEMENT_ROUTING_TABLE</a> containing all currently configured routing entries.
+
 
 
 ### -input-buffer-length
@@ -56,6 +58,7 @@ Configures NFC controller listen mode routing table. Note that caller has to sen
 
 ### -output-buffer
 None
+
 
 ### -output-buffer-length
 
@@ -75,6 +78,7 @@ I/O Status block
 
  
 
+
 ## -remarks
 The following are requirements that the driver must adhere to.
 
@@ -92,11 +96,13 @@ The following are requirements that the driver must adhere to.
 </ul>
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

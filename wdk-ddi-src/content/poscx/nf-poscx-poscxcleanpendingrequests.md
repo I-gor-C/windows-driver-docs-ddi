@@ -44,6 +44,7 @@ req.product: Windows 10 or later.
       caller, identified by the open instance.
 
 
+
 ## -syntax
 
 ````
@@ -61,18 +62,22 @@ VOID PosCxCleanPendingRequests(
 
 A handle to a framework device object that represents the device.
 
+
 ### -param callerFileObj [in, optional]
 
       A handle to a framework file object for which all pending requests should be 
 
           cancelled, or NULL to cancel all pending requests.
 
+
 ### -param completionStatus [in]
 
 An appropriate NTSTATUS error code that indicates success or failure.
 
+
 ## -returns
 This function does not return a value.
+
 
 ## -remarks
 
@@ -82,14 +87,17 @@ This function does not return a value.
 <tr>
 <th width="30%">
 Product
+
 </th>
 <td width="70%">
 Windows 10 or later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

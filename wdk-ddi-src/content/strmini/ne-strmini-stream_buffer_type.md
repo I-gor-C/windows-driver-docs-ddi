@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This enumeration defines the buffer types for <a href="https://msdn.microsoft.com/library/windows/hardware/ff568247">StreamClassGetPhysicalAddress</a>.
 
 
+
 ## -syntax
 
 ````
@@ -59,13 +60,16 @@ typedef enum  {
 
 Indicates the physical address of the SRB extension.
 
+
 ### -field DmaBuffer
 
 Indicates the physical address of the DMA buffer.
 
+
 ### -field SRBDataBuffer
 
 Indicates the physical address of a data buffer.
+
 
 ## -remarks
 
@@ -75,6 +79,7 @@ Indicates the physical address of a data buffer.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

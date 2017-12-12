@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbolgroup2.htm
 old-project: debugger
 ms.assetid: d702fe69-966c-4b9a-aa0e-b8376288cb79
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: DebugCreateEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,6 +80,7 @@ Sets the value of the specified symbol.
 
  
 
+
 ## -members
 The <b>IDebugSymbolGroup2</b> interface has these methods.
 <table class="members" id="memberListMethods">
@@ -94,6 +95,7 @@ The <b>IDebugSymbolGroup2</b> interface has these methods.
 <td align="left" width="63%">
 Adds a symbol to a symbol group.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -102,6 +104,7 @@ Adds a symbol to a symbol group.
 </td>
 <td align="left" width="63%">
 Returns information about a symbol in a symbol group.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -111,6 +114,7 @@ Returns information about a symbol in a symbol group.
 <td align="left" width="63%">
 Returns the name of a symbol in a symbol group.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -119,6 +123,7 @@ Returns the name of a symbol in a symbol group.
 </td>
 <td align="left" width="63%">
 Retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -128,6 +133,7 @@ Retrieves the location in the process's virtual address space of a symbol in a s
 <td align="left" width="63%">
 Returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -136,6 +142,7 @@ Returns the register that contains the value or a pointer to the value of a symb
 </td>
 <td align="left" width="63%">
 Returns the size of a symbol's value.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -145,6 +152,7 @@ Returns the size of a symbol's value.
 <td align="left" width="63%">
 Returns the name of the specified symbol's type.
 (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -154,6 +162,7 @@ Returns the name of the specified symbol's type.
 <td align="left" width="63%">
 Returns the name of the specified symbol's type.
 (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -163,6 +172,7 @@ Returns the name of the specified symbol's type.
 <td align="left" width="63%">
 Returns a string that represents the value of a symbol.
 (ANSI version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -172,6 +182,7 @@ Returns a string that represents the value of a symbol.
 <td align="left" width="63%">
 Returns a string that represents the value of a symbol.
 (Unicode version)
+
 </td>
 </tr>
 <tr data="declared;">
@@ -180,6 +191,7 @@ Returns a string that represents the value of a symbol.
 </td>
 <td align="left" width="63%">
 Changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
+
 </td>
 </tr>
 <tr data="declared;">
@@ -189,6 +201,7 @@ Changes the type of a symbol in a symbol group. The symbol's entry is updated to
 <td align="left" width="63%">
 Removes the specified symbol from a symbol group.
 
+
 </td>
 </tr>
 <tr data="declared;">
@@ -197,6 +210,7 @@ Removes the specified symbol from a symbol group.
 </td>
 <td align="left" width="63%">
 Sets the value of the specified symbol.
+
 </td>
 </tr>
 </table>Adds a symbol to a symbol group.
@@ -235,6 +249,7 @@ Sets the value of the specified symbol.
 
  
 
+
 ## -remarks
 
 
@@ -243,6 +258,7 @@ Sets the value of the specified symbol.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -259,5 +275,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2 interface%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2 interface%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

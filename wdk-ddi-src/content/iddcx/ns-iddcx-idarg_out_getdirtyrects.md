@@ -7,7 +7,7 @@ old-location: display\idarg_out_getdirtyrects.htm
 old-project: display
 ms.assetid: 4116be18-e98e-4778-b0aa-753c1ca79d32
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_GETDIRTYRECTS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql:
              that have changed on the surface since the last load.
 
 
+
 ## -syntax
 
 ````
@@ -59,6 +60,7 @@ typedef struct IDARG_OUT_GETDIRTYRECTS {
 
                      [out] Number of dirty rects the OS copied into the <b>pDirtyRects</b> array.
 
+
 ## -remarks
 
 
@@ -67,6 +69,7 @@ typedef struct IDARG_OUT_GETDIRTYRECTS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 The <code>IMasterClock</code> interface provides Microsoft DirectMusic streams with access to the current reference time from the <a href="https://msdn.microsoft.com/bdd228c1-a15f-4c08-8991-299a3f2e1ee8">master clock</a>. The DMus port driver implements this interface to support accurate timing in the <a href="..\dmusicks\nn-dmusicks-imxf~r1.md">IMXF</a> and <a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a> interfaces that make up the MIDI-transport part of the filter graph. When calling a DMus miniport driver's <a href="audio.iminiportdmus_newstream">IMiniportDMus::NewStream</a> method, the DMus port driver passes an <code>IMasterClock</code> reference as a call parameter. The <code>IMasterClock</code> interface wraps the master clock, as described in <a href="https://msdn.microsoft.com/3cdd4c69-d99d-48bc-a1d9-9da2a2511e94">Latency Clocks</a>. 
 
 
+
 ## -inheritance
 The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMasterClock</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IMasterClock</b> also has these types of members:
 
@@ -49,6 +50,7 @@ The <b>IMasterClock</b> interface has these methods.
 The <code>GetTime</code> method retrieves the current reference time read from the master clock.
 
  
+
 
 ## -members
 The <b>IMasterClock</b> interface has these methods.
@@ -63,11 +65,13 @@ The <b>IMasterClock</b> interface has these methods.
 </td>
 <td align="left" width="63%">
 The <code>GetTime</code> method retrieves the current reference time read from the master clock.
+
 </td>
 </tr>
 </table>The <code>GetTime</code> method retrieves the current reference time read from the master clock.
 
  
+
 
 ## -remarks
 
@@ -77,6 +81,7 @@ The <code>GetTime</code> method retrieves the current reference time read from t
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: display\d3dkmt-set-colorspace-transform.htm
 old-project: display
 ms.assetid: 253c689d-ce30-4065-920a-030e3e9f3b8e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_SET_COLORSPACE_TRANSFORM, D3DKMT_SET_COLORSPACE_TRANSFORM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 TBD
 
 
+
 ## -struct-fields
 
 
@@ -52,6 +53,7 @@ TBD
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

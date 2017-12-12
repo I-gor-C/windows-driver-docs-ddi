@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_ipforward_v6.htm
 old-project: netvista
 ms.assetid: 6c3d1da8-0498-4d0f-a4d1-89763a8420f6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: FWPS_FIELDS_IPFORWARD_V6_, FWPS_FIELDS_IPFORWARD_V6
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The FWPS_FIELDS_IPFORWARD_V6 enumeration type specifies the data field identifie
   <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layers</a>.
 
 
+
 ## -syntax
 
 ````
@@ -74,39 +75,48 @@ typedef enum FWPS_FIELDS_IPFORWARD_V6_ {
 
 The source IP address.
 
+
 ### -field FWPS_FIELD_IPFORWARD_V6_IP_DESTINATION_ADDRESS
 
 The destination IP address.
+
 
 ### -field FWPS_FIELD_IPFORWARD_V6_IP_DESTINATION_ADDRESS_TYPE
 
 The destination IP address type. The possible values are defined by the 
      <a href="netvista.nl_address_type">NL_ADDRESS_TYPE</a> enumeration.
 
+
 ### -field FWPS_FIELD_IPFORWARD_V6_IP_LOCAL_INTERFACE
 
 The locally unique identifier (<a href="netvista.luid">LUID</a>) for the network interface associated with the
      local IP address.
 
+
 ### -field FWPS_FIELD_IPFORWARD_V6_IP_FORWARD_INTERFACE
 
 The LUID for the network interface on which the packet being forwarded is to be sent out.
+
 
 ### -field FWPS_FIELD_IPFORWARD_V6_SOURCE_INTERFACE_INDEX
 
 The index of the source network interface, as enumerated by the network stack.
 
+
 ### -field FWPS_FIELD_IPFORWARD_V6_SOURCE_SUB_INTERFACE_INDEX
 
 The index of the source logical network interface, as enumerated by the network stack.
+
 
 ### -field FWPS_FIELD_IPFORWARD_V6_DESTINATION_INTERFACE_INDEX
 
 The index of the destination network interface, as enumerated by the network stack.
 
+
 ### -field FWPS_FIELD_IPFORWARD_V6_DESTINATION_SUB_INTERFACE_INDEX
 
 The index of the destination logical network interface, as enumerated by the network stack.
+
 
 ### -field FWPS_FIELD_IPFORWARD_V6_FLAGS
 
@@ -114,12 +124,14 @@ A bitwise OR of a combination of filtering condition flags. For information abou
      flags, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.
 
+
 ### -field FWPS_FIELD_IPFORWARD_V6_IP_PHYSICAL_ARRIVAL_INTERFACE
 
 The 
      <a href="netvista.luid">LUID</a> for the physical network interface that the
      packet first arrived on.
      
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
 
@@ -128,6 +140,7 @@ The
 The profile identifier (network category) of the arrival interface. The possible network category
      values are: public (1), private (2), or domain (3).
      
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
 
@@ -137,6 +150,7 @@ The
      <a href="netvista.luid">LUID</a> for the physical network interface that will be
      used to continue forwarding of the outbound packet.
      
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
 
@@ -145,6 +159,7 @@ The
 The profile identifier (network category) of the next-hop interface. The possible network category
      values are: public (1), private (2), or domain (3).
      
+
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
 
@@ -152,6 +167,7 @@ The profile identifier (network category) of the next-hop interface. The possibl
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
+
 
 ## -remarks
 
@@ -161,14 +177,17 @@ The maximum value for this enumeration. This value might change in future versio
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Unless otherwise noted, supported starting with Windows Vista.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -188,5 +207,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_IPFORWARD_V6 enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_IPFORWARD_V6 enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

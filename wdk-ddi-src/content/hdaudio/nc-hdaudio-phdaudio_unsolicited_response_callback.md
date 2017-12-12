@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 HDAudio codec unsolicited response callback function. <b>PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK</b> is used by the <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">PREGISTER_EVENT_CALLBACK</a> callback function. 
 
 
+
 ## -prototype
 
 ````
@@ -62,21 +63,26 @@ typedef PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK HDAudioUnsolicitedResponseCallbac
 
 This is a structure of type <a href="audio.hdaudio_codec_response">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value.  
 
+
 ### -param Context 
 
 This is the callbackContext value that was passed previously to <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">PREGISTER_EVENT_CALLBACK</a>.
 
+
 ## -returns
 Void
 
+
 ## -remarks
 The HD Audio bus driver calls the callback routine at PASSIVE_LEVEL.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,9 +93,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

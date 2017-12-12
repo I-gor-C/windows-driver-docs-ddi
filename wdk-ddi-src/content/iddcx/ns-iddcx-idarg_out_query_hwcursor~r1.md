@@ -7,7 +7,7 @@ old-location: display\idarg_out_query_hwcursor.htm
 old-project: display
 ms.assetid: 813d6aa6-0442-4f30-9fd6-b3aec2e0e11d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDARG_OUT_QUERY_HWCURSOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.irql:
                  Gives information about the coordinates and shape of the current cursor.
 
 
+
 ## -syntax
 
 ````
@@ -63,10 +64,12 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
                       [out] Indicates if the cursor is visible or not.
                  
 
+
 ### -field X
 
 
                      [out] If the cursor is viable, this is the screen coordinate of the top-left hand pixel in the cursor image.
+
 <div class="alert"><b>Note</b>  NOTE : This can be negative. For example, when there is a hot-spot in the center of cursor it is placed in the top-left of the screen</div>
 <div> </div>
 
@@ -74,6 +77,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
 
 
                      [out] If the cursor is viable, this is the screen coordinate of the top-left hand pixel in the cursor image.
+
 <div class="alert"><b>Note</b>  NOTE : This can be negative. For example, when there is a hot-spot in the center of cursor it is placed in the top-left of the screen</div>
 <div> </div>
 
@@ -83,11 +87,13 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
                      [out] Indicates if the cursor shape has been updated since the last time the driver was called. If it has been updated, the OS updates the <b>CursorShapeInfo</b> structure and copies the new cursor image data into the <a href="..\iddcx\ns-iddcx-idarg_in_query_hwcursor.md">IDARG_IN_QUERY_HWCURSOR</a> buffer <b>pShapeBuffer</b>.
                  
 
+
 ### -field CursorShapeInfo
 
 
                      [out] If the cursor is visible, then the OS copies the current cursor info into this buffer. If the cursor is not visible, the OS zeros this structure.
                  
+
 
 ## -remarks
 
@@ -97,6 +103,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

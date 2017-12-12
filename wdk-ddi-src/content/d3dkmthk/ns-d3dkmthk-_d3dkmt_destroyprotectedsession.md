@@ -7,7 +7,7 @@ old-location: display\d3dkmt-destroyprotectedsession.htm
 old-project: display
 ms.assetid: 371e0353-3e4d-4688-95cf-d5f24b2ed7b3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_DESTROYPROTECTEDSESSION, D3DKMT_DESTROYPROTECTEDSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Holds information to destroy a protected session.
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _D3DKMT_DESTROYPROTECTEDSESSION {
 
 The protected session handle.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The protected session handle.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

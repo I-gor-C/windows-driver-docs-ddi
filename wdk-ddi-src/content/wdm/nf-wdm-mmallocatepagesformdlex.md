@@ -7,7 +7,7 @@ old-location: kernel\mmallocatepagesformdlex.htm
 old-project: kernel
 ms.assetid: f860c230-01ca-4c7f-8b67-5d92a80ff906
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: MmAllocatePagesForMdlEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>MmAllocatePagesForMdlEx</b> routine allocates nonpaged, physical memory pages to an MDL.
 
 
+
 ## -syntax
 
 ````
@@ -62,26 +63,33 @@ PMDL MmAllocatePagesForMdlEx(
 
 Specifies the physical address of the start of the first address range from which the allocated pages can come. If <b>MmAllocatePagesForMdlEx</b> cannot allocate the requested number of bytes in the first address range, it iterates through additional address ranges to get more pages. At each iteration, <b>MmAllocatePagesForMdlEx</b> adds the value of <i>SkipBytes</i> to the previous start address to obtain the start of the next address range.
 
+
 ### -param HighAddress [in]
 
 Specifies the physical address of the end of the first address range that the allocated pages can come from.
+
 
 ### -param SkipBytes [in]
 
 Specifies the number of bytes to skip from the start of the previous address range that the allocated pages can come from. <i>SkipBytes</i> must be an integer multiple of the virtual memory page size, in bytes.
 
+
 ### -param TotalBytes [in]
 
 Specifies the total number of bytes to allocate for the MDL.
+
 
 ### -param CacheType [in]
 
 Specifies a <a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a> value, which indicates the type of caching that is allowed for the requested memory.
 
+
 ### -param Flags [in]
 
 Specifies flags for this operation. Set this parameter to zero or to the bitwise OR of one or more of the following <b>MM_ALLOCATE_<i>XXX</i></b> flag bits:
+
 The last four items in the preceding list are supported only in Windows 7 and later versions of Windows.
+
 <table>
 <tr>
 <th>Value</th>
@@ -95,6 +103,7 @@ The last four items in the preceding list are supported only in Windows 7 and la
 </td>
 <td width="60%">
 Do not fill the allocated pages with zeros. By default, <b>MmAllocatePagesForMdlEx</b> zeros the pages that it allocates. By skipping this operation, you can potentially improve the performance of the <b>MmAllocatePagesForMdlEx</b> call. However, you must not use this flag unless either you never expose the allocated pages to user-mode programs, or you always overwrite the original contents of the pages before you expose the allocated pages to user-mode programs.
+
 </td>
 </tr>
 <tr>
@@ -105,6 +114,7 @@ Do not fill the allocated pages with zeros. By default, <b>MmAllocatePagesForMdl
 </td>
 <td width="60%">
 Allocate pages only from the ideal node. This flag applies only to multiprocessor systems that have non-uniform memory access (NUMA) architectures. Starting with Windows Vista, this flag indicates that all pages must be allocated from the ideal node of the current thread. No pages are to be allocated from other nodes. In versions of Windows earlier than Windows Vista, this flag indicates that all pages must be allocated from the local node; that is, from the node that the current processor belongs to. For more information about NUMA multiprocessor systems, see <a href="http://go.microsoft.com/fwlink/p/?linkid=155041">NUMA Support</a>.
+
 </td>
 </tr>
 <tr>
@@ -115,6 +125,7 @@ Allocate pages only from the ideal node. This flag applies only to multiprocesso
 </td>
 <td width="60%">
 A full allocation is required. Starting with Windows 7, this flag requires <b>MmAllocatePagesForMdlEx</b> to return <b>NULL</b> if it cannot allocate all the requested pages. The routine returns a non-<b>NULL</b> value only if it successfully obtains the entire requested allocation. This flag enables the memory manager to perform the allocation more efficiently in cases in which the caller requires a full allocation.
+
 </td>
 </tr>
 <tr>
@@ -125,6 +136,7 @@ A full allocation is required. Starting with Windows 7, this flag requires <b>M
 </td>
 <td width="60%">
 Do not wait. Starting with Windows 7, this flag indicates that the <b>MmAllocatePagesForMdlEx</b> call must not block the calling thread. Typically, the caller is a kernel-mode driver that is running at IRQL &lt; DISPATCH_LEVEL but cannot allow its execution to be blocked. For example, the driver might be assisting with paging or power-management operations. Regardless of whether this flag is set, <b>MmAllocatePagesForMdlEx</b> never blocks callers that are running at IRQL = DISPATCH_LEVEL.
+
 </td>
 </tr>
 <tr>
@@ -135,6 +147,7 @@ Do not wait. Starting with Windows 7, this flag indicates that the <b>MmAllocat
 </td>
 <td width="60%">
 Allocation is performed in a way that minimizes system memory fragmentation. Starting with Windows 7, this flag indicates that the caller wants to avoid fragmenting physical memory to make more contiguous memory available to other callers. The allocated pages are not guaranteed to be (and usually are not) physically contiguous, even if plenty of contiguous memory is available. Callers that require contiguous memory should specify MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS instead of MM_ALLOCATE_PREFER_CONTIGUOUS.
+
 </td>
 </tr>
 <tr>
@@ -145,10 +158,12 @@ Allocation is performed in a way that minimizes system memory fragmentation. Sta
 </td>
 <td width="60%">
 Contiguous memory is required. Starting with Windows 7, this flag indicates that the requested pages must be allocated as contiguous blocks of physical memory. If the <i>SkipBytes</i> parameter is zero, <b>MmAllocatePagesForMdlEx</b> either succeeds and returns a single, contiguous block, or it fails and returns <b>NULL</b>. It never returns a partial allocation. For <i>SkipBytes</i> = 0, the allocated pages satisfy the address range requirements that are specified by the <i>LowAddress</i> and <i>HighAddress</i> parameters, but the pages are subject to no special alignment restrictions. If <i>SkipBytes</i> is nonzero, <i>SkipBytes</i> must be a power of two and must be greater than or equal to PAGE_SIZE, and the <i>TotalBytes</i> parameter value must be a multiple of <i>SkipBytes</i>. In this case, the returned MDL can contain multiple blocks of contiguous pages. That is, each block is internally contiguous but the blocks are not necessarily contiguous with each other. Each block of contiguous pages is guaranteed to be exactly <i>SkipBytes</i> long and to be aligned on a <i>SkipBytes</i> boundary. Partial allocations can occur if <i>SkipBytes</i> is nonzero, but each contiguous block in a partial allocation is guaranteed to be <i>SkipBytes</i> long.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -returns
 <b>MmAllocatePagesForMdlEx</b> returns one of the following:
@@ -160,6 +175,7 @@ Contiguous memory is required. Starting with Windows 7, this flag indicates tha
 </dl>Indicates that no physical memory pages are available in the specified address ranges, or that there is not enough memory pool for the MDL itself.
 
  
+
 
 ## -remarks
 By default, the physical memory pages that <b>MmAllocatePagesForMdlEx</b> returns are not contiguous pages. Starting with Windows 7, callers can override the default behavior of this routine by setting the MM_ALLOCATE_PREFER_CONTIGUOUS or MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS flag bit in the <i>Flags</i> parameter.
@@ -176,11 +192,13 @@ The maximum amount of memory that <b>MmAllocatePagesForMdlEx</b> can allocate in
 
 <b>MmAllocatePagesForMdlEx</b> runs at IRQL &lt;= APC_LEVEL. In Windows Server 2008 and later versions of Windows, callers of <b>MmAllocatePagesForMdlEx </b>are allowed to be at DISPATCH_LEVEL. However, you can improve driver performance by calling at APC_LEVEL or below.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -191,14 +209,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. You should use this routine instead of <a href="kernel.mmallocatepagesformdl">MmAllocatePagesForMdl</a> on these operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -209,6 +230,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -219,6 +241,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -229,14 +252,17 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 See Remarks section.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.wdm_irqlmmapclte">IrqlMmApcLte</a>
@@ -263,5 +289,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocatePagesForMdlEx routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocatePagesForMdlEx routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

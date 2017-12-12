@@ -7,7 +7,7 @@ old-location: storage\storportgetactivegroupcount.htm
 old-project: storage
 ms.assetid: 640dd836-a5f9-4a88-b2a3-038a66a50868
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: StorPortGetActiveGroupCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>StorPortGetActiveGroupCount</b> routine returns the number of processor groups that are present in the system.
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ ULONG StorPortGetActiveGroupCount(
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
+
 ### -param NumberGroups [out]
 
 A pointer to a variable that holds the number of groups.
+
 
 ## -returns
 The <b>StorPortGetActiveGroupCount</b> routine returns one of the following status codes:
@@ -73,6 +76,7 @@ The <b>StorPortGetActiveGroupCount</b> routine returns one of the following stat
 
  
 
+
 ## -remarks
 
 
@@ -81,6 +85,7 @@ The <b>StorPortGetActiveGroupCount</b> routine returns one of the following stat
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -91,14 +96,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows 7 and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -109,14 +117,17 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.storport_storportirql">StorPortIrql</a>

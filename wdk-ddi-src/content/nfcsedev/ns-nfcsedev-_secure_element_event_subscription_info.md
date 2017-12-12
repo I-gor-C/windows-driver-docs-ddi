@@ -41,6 +41,7 @@ req.irql:
 The SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO structure is an input parameter to <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_subscribe_for_event.md">IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT</a>.
 
 
+
 ## -syntax
 
 ````
@@ -60,6 +61,7 @@ typedef struct _SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO {
 
 Secure element event type. A service can subscribe and receive notification when an external reader arrival, external reader departure, transaction, HCE activated, or HCE deactivated event is triggered.
 
+
 ## -remarks
 
 
@@ -68,6 +70,7 @@ Secure element event type. A service can subscribe and receive notification when
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

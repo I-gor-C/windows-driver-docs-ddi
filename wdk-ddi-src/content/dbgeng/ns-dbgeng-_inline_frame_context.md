@@ -7,7 +7,7 @@ old-location: debugger\inline_frame_context.htm
 old-project: debugger
 ms.assetid: 6EB52227-8685-4096-882F-64550A84DE4F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _INLINE_FRAME_CONTEXT, INLINE_FRAME_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Describes inline frame context. 
 
 
+
 ## -syntax
 
 ````
@@ -61,6 +62,7 @@ typedef union _INLINE_FRAME_CONTEXT {
 
 A context value. 
 
+
 ### -field {
         BYTE FrameId;
         WORD FrameSignature;
@@ -68,6 +70,7 @@ A context value.
 
 <dd>
 A structure that contains frame context information.  
+
 
 ## -remarks
 
@@ -77,6 +80,7 @@ A structure that contains frame context information.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

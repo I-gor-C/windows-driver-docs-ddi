@@ -7,7 +7,7 @@ old-location: print\iprintschemapageimageablesize_interface.htm
 old-project: print
 ms.assetid: C8E9278D-D24A-4EEC-8F68-D77C76ECCC40
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 Exposes the PageImageableSize property of PrintCapabilities. The properties of this interface map directly to those in the PageImageableSize property of PrintCapabilities.
+
 
 
 ## -inheritance
@@ -97,6 +98,7 @@ Gets the horizontal origin of the imageable area relative to the application med
 
  
 
+
 ## -remarks
 
 
@@ -105,22 +107,27 @@ Gets the horizontal origin of the imageable area relative to the application med
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

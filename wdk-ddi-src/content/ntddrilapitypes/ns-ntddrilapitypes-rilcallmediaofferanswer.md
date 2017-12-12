@@ -7,8 +7,8 @@ old-location: netvista\rilcallmediaofferanswer.htm
 old-project: netvista
 ms.assetid: 6d8ad287-a4bf-4db8-9fff-a4cb1df42dda
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER
+ms.date: 12/8/2017
+ms.keywords: RILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -87,6 +88,7 @@ typedef struct _RILCALLMEDIAOFFERANSWER {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

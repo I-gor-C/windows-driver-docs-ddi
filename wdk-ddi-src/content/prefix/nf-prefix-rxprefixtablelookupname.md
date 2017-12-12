@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 <b>RxPrefixTableLookupName</b> looks up a name in a prefix table used to catalog SRV_CALL, NET_ROOT, and V_NET_ROOT names and converts the underlying pointer to a structure that contains the name.
 
 
+
 ## -syntax
 
 ````
@@ -60,20 +61,25 @@ PVOID RxPrefixTableLookupName(
 
 A pointer to the RX_PREFIX_TABLE structure in which to look.
 
+
 ### -param CanonicalName [in]
 
 A pointer to the Unicode string name to look up.
+
 
 ### -param RemainingName [out]
 
 A pointer to the Unicode string name of the portion of the name that was unmatched.
 
+
 ### -param RxConnectionId [in]
 
 An optional parameter that represents a pointer to the RX_CONNECTION_ID to be used.
 
+
 ## -returns
 <b>RxPrefixTableLookupName</b> returns a pointer to the node that was found if a match is found. If no match is found, <b>RxPrefixTableLookupName</b> returns a <b>NULL</b> pointer. 
+
 
 ## -remarks
 This routine is used internally by RDBSS in response to a call from MUP to claim a name or form the create path for a NET_ROOT or V_NET_ROOT structure. The <b>RxPrefixTableLookupName</b> routine can also be used by network mini-redirectors as long as the appropriate lock is acquired before accessing the table, and the lock is released when work is completed. The normal use by a driver would be as follows:
@@ -88,11 +94,13 @@ Note that if a match is found, the reference count on the found node will be inc
 
 On checked builds, <b>RxPrefixTableLookupName</b> causes the system to ASSERT if the length of the <i>CanonicalName</i> string is not greater than zero.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -103,6 +111,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -113,9 +122,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= APC_LEVEL
+
 </td>
 </tr>
 </table>
@@ -133,5 +144,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPrefixTableLookupName function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

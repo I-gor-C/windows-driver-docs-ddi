@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-crypto-session-support-flags-0030.htm
 old-project: display
 ms.assetid: ffa81a22-3de2-48f8-b753-c296401e0da3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAGS_0030, D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAGS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The crypto session support flags.
 
 
+
 ## -syntax
 
 ````
@@ -60,21 +61,26 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAGS_0030 {
 
 No flag is defined.
 
+
 ### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_SUPPORTED
 
 The crypto session support flag is supported.
+
 
 ### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_HEADER_DECRYPTION_REQUIRED
 
 The crypto session support flag requires a header decryption.
 
+
 ### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_INDEPENDENT_DECRYPTION_REQUIRED
 
 The crypto session support flag requires an independent decyption.
 
+
 ### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_TRANSCRYPTION_REQUIRED
 
 The crypto session support flag requires transcryption.
+
 
 ## -remarks
 
@@ -84,6 +90,7 @@ The crypto session support flag requires transcryption.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

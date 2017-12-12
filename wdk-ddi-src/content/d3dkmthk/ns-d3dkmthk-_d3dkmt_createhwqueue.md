@@ -7,7 +7,7 @@ old-location: display\d3dkmt_createhwqueue.htm
 old-project: display
 ms.assetid: DBD99353-4798-4540-89DB-EA08521B276E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_CREATEHWQUEUE, D3DKMT_CREATEHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 A structure holding information to create a hardware queue.
 
 
+
 ## -syntax
 
 ````
@@ -64,34 +65,42 @@ typedef struct _D3DKMT_CREATEHWQUEUE {
 Handle to the hardware context the queue is associated with.
 
 
+
 ### -field Flags
 
 Hardware queue creation flags.
+
 
 
 ### -field PrivateDriverDataSize
 
 Size of private driver data.
 
+
 ### -field pPrivateDriverData
 
 Private driver data.
+
 
 ### -field hHwQueue
 
 Handle to the hardware queue object to submit work to.
 
+
 ### -field hHwQueueProgressFence
 
 Handle to the monitored fence object used to monitor the queue progress.
+
 
 ### -field HwQueueProgressFenceCPUVirtualAddress
 
 Read-only mapping of the queue progress fence value for the CPU.
 
+
 ### -field HwQueueProgressFenceGPUVirtualAddress
 
 Read/write mapping of the queue progress fence value for the GPU.
+
 
 ## -remarks
 
@@ -101,6 +110,7 @@ Read/write mapping of the queue progress fence value for the GPU.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

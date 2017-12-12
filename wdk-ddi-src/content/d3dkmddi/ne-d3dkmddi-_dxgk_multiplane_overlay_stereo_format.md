@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_stereo_format.htm
 old-project: display
 ms.assetid: ce9ad02d-645a-4333-9208-27f0805508a5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT, DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql: PASSIVE_LEVEL
 Identifies the overlay plane's stereo presentation format. Only the <b>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</b> value is supported.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT {
 
 The overplay plane data is presented in mono (non-stereo) format.
 
+
 ### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_HORIZONTAL
 
 Reserved for system use. Do not use in your driver.
+
 
 ### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL
 
 Reserved for system use. Do not use in your driver.
 
+
 ### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE
 
 Reserved for system use. Do not use in your driver.
+
 
 ### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO_OFFSET
 
 Reserved for system use. Do not use in your driver.
 
+
 ### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_ROW_INTERLEAVED
 
 Reserved for system use. Do not use in your driver.
+
 
 ### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED
 
 Reserved for system use. Do not use in your driver.
 
+
 ### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD
 
 Reserved for system use. Do not use in your driver.
+
 
 ## -remarks
 
@@ -99,22 +108,27 @@ Reserved for system use. Do not use in your driver.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

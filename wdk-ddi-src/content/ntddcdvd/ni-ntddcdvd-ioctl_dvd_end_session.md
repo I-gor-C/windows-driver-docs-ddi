@@ -7,8 +7,8 @@ old-location: storage\ioctl_dvd_end_session.htm
 old-project: storage
 ms.assetid: 70908275-211b-4112-bad3-35584ec1ef10
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 12/8/2017
+ms.keywords: DVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -41,28 +41,29 @@ req.irql:
 
 Ends a DVD session by invalidating its authentication grant ID (AGID).
 
+
+
 Ends a DVD session by invalidating its authentication grant ID (AGID).
+
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the session ID. The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer contains the session ID. 
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the session ID. 
 
 
 ### -input-buffer-length
+Length of a session ID.
 
-<text></text>
 
 ### -output-buffer
-<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
-NoneNone
+None.
 
 
 ### -output-buffer-length
+None.
 
-<text></text>
 
 ### -in-out-buffer
 
@@ -73,8 +74,8 @@ NoneNone
 <text></text>
 
 ### -status-block
-<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
-The <b>Information</b> field is set to zero. The <b>Status</b> field is set to STATUS_SUCCESS.The <b>Information</b>Information field is set to zero. The <b>Status</b>Status field is set to STATUS_SUCCESS.
+I/O Status block
+The <b>Information</b> field is set to zero. The <b>Status</b> field is set to STATUS_SUCCESS.
 
 
 ## -remarks
@@ -85,6 +86,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

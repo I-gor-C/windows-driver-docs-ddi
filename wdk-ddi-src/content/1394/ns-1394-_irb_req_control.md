@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary for the 1394 bus driver to carry out a control request.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _IRB_REQ_CONTROL {
 
 Specifies the control code used in this request. Vendors should make these control codes unique, so that they do not overlap.
 
+
 ### -field pInBuffer
 
 Points to an MDL that describes the input buffer. The input buffer contains user-defined information.
+
 
 ### -field ulInBufferLength
 
 Specifies the length of the input buffer.
 
+
 ### -field pOutBuffer
 
 Points to an MDL that describes the output buffer. The output buffer contains user-defined information.
+
 
 ### -field ulOutBufferLength
 
 Specifies the length of the output buffer.
 
+
 ### -field BytesReturned
 
 Specifies the number of bytes returned.
+
 
 ## -remarks
 
@@ -89,6 +96,7 @@ Specifies the number of bytes returned.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

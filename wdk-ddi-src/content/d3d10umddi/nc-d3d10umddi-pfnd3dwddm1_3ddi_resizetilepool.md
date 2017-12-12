@@ -7,7 +7,7 @@ old-location: display\resizetilepool.htm
 old-project: display
 ms.assetid: 184EF418-1B1E-4A10-8F10-1331DF99DCBD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Resizes a tile pool.
 
 
 
+
 ## -prototype
 
 ````
@@ -63,13 +64,16 @@ VOID APIENTRY* ResizeTilePool(
 
 A handle to the display device (graphics context).
 
+
 ### -param hTilePool 
 
 A handle to the tile pool to resize.
 
+
 ### -param NewSizeInBytes 
 
 The new size, in bytes, of the tile pool. The size must be a multiple of 64 KB or zero.
+
 
 ## -returns
 None
@@ -86,6 +90,7 @@ The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror
 
 The Direct3D runtime performs minimal validation of parameters, but it will fail the call if the new tile pool size isn't a multiple of the tile size, or zero.
 
+
 ## -remarks
 
 
@@ -94,22 +99,27 @@ The Direct3D runtime performs minimal validation of parameters, but it will fail
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8.1
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -120,14 +130,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 WDDM 1.3
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

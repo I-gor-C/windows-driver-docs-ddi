@@ -41,6 +41,7 @@ req.irql:
 The ACPI_ENUM_CHILD structure is a member of the <a href="acpi.acpi_enum_children_output_buffer">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure and contains the full path and name of an object in an ACPI namespace.
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _ACPI_ENUM_CHILD {
 
 A flag value that the ACPI driver sets to ACPI_OBJECT_HAS_CHILDREN if the enumerated child object has child objects; otherwise, the ACPI driver does not set this value.
 
+
 ### -field NameLength
 
 The number of characters, including a NULL-terminated character, in the ASCII string that the <b>Name</b> array contains.
 
+
 ### -field Name
 
 A NULL-terminated ASCII string that contains the path and name of an object in an ACPI namespace. For more information about the format of the path and name, see the Remarks section later in this topic.
+
 
 ## -remarks
 A driver for a device uses an <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_enum_children.md">IOCTL_ACPI_ENUM_CHILDREN</a> request to enumerate the child objects of the device. The enumerated child objects can be devices or any object of a supplied name. This request returns an ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure, which includes the <b>Children</b> member that contains an array of ACPI_ENUM_CHILD structures. 
@@ -73,19 +77,23 @@ The path and name that are contained in a <b>Name</b> member are in the standard
 
 For information about how to enumerate child objects of a device, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/enumerating-child-devices-and-control-methods">Enumerating Child Devices and Control Methods</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows Vista and later versions of Windows.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -105,5 +113,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_ENUM_CHILD structure%20 RELEASE:%20(12/2/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

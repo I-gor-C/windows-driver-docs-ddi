@@ -41,6 +41,7 @@ req.irql:
 The <b>SERIAL_HANDFLOW</b> structure specifies the handshake and flow control settings for a serial port.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct _SERIAL_HANDFLOW {
 ### -field ControlHandShake
 
 A bitmask that specifies the control lines that the serial port uses for flow control. This member is set to zero or to the bitwise-OR or one or more of the following flags.
+
 <table>
 <tr>
 <th>Value</th>
@@ -93,11 +95,14 @@ A bitmask that specifies the control lines that the serial port uses for flow co
 </tr>
 </table>
  
+
 SerCx2 supports the SERIAL_CTS_HANDSHAKE flag, and may or may not support the other six flags defined for this member, depending on the serial controller driver and the capabilities of the serial controller hardware. SerCx supports only the first four flags in the preceding table. Serial.sys supports all of the flags in the preceding table.
+
 
 ### -field FlowReplace
 
 A bitmask that specifies flow control behavior. This member is set to zero or to the bitwise-OR or one or more of the following flags.
+
 <table>
 <tr>
 <th>Value</th>
@@ -141,15 +146,19 @@ A bitmask that specifies flow control behavior. This member is set to zero or to
 </tr>
 </table>
  
+
 SerCx2 supports the SERIAL_RTS_CONTROL and SERIAL_RTS_HANDSHAKE flags, but typically does not support the other six flags defined for this member, depending on the serial controller driver and the capabilities of the serial controller hardware. SerCx supports only the SERIAL_RTS_CONTROL and SERIAL_RTS_HANDSHAKE flags. Serial.sys supports all of the flags in the preceding table.
+
 
 ### -field XonLimit
 
 XON limit. When the number of characters in the internal receive buffer falls below the XON limit, the serial controller driver uses the flow control signals to tell the sender to resume sending characters.
 
+
 ### -field XoffLimit
 
 XOFF limit. When the number of characters in the internal receive buffer reaches the XOFF limit, the serial controller driver uses the flow control signals to tell the sender to stop sending characters.
+
 
 ## -remarks
 This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_handflow.md">IOCTL_SERIAL_GET_HANDFLOW</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_set_handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a> requests.
@@ -158,11 +167,13 @@ After sending an XOFF (transmit off) character, the serial port stops transmitti
 
 SerCx2 and SerCx support only subsets of the flags that are defined for the <b>ControlHandShake</b> and <b>FlowControl</b> members. An <b>IOCTL_SERIAL_SET_HANDFLOW</b> request that specifies an unsupported flag is completed with STATUS_NOT_IMPLEMENTED.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -182,5 +193,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERIAL_HANDFLOW structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

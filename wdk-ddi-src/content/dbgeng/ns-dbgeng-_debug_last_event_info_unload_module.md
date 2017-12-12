@@ -7,8 +7,8 @@ old-location: debugger\debug_last_event_info_unload_module.htm
 old-project: debugger
 ms.assetid: D569C1DD-0ACB-41AA-8589-BD4332006CA2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
+ms.date: 12/8/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 Describes the unload module of the last event. 
 
 
+
 ## -syntax
 
 ````
@@ -56,6 +57,7 @@ typedef struct _DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE {
 
 The base of the unload module.
 
+
 ## -remarks
 
 
@@ -64,6 +66,7 @@ The base of the unload module.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

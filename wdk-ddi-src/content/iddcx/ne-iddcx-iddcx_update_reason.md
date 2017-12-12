@@ -7,7 +7,7 @@ old-location: display\iddcx_update_reason.htm
 old-project: display
 ms.assetid: e451e4e3-0b8a-4a17-8e4e-2da99d336a39
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_UPDATE_REASON,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _requires_same_
                 
 
 
+
 ## -syntax
 
 ````
@@ -65,11 +66,13 @@ typedef enum _IDDCX_UPDATE_REASON {
                         
                     Indicates that an <b>IDDCX_UPDATE_REASON</b> variable has not yet been assigned a meaningful value.
 
+
 ### -field IDDCX_UPDATE_REASON_POWER_CONSTRAINTS
 
 
                         The mode list is changing due to changed power constraints on the host system
                     
+
 
 ### -field IDDCX_UPDATE_REASON_HOST_LINK_BANDWIDTH
 
@@ -77,11 +80,13 @@ typedef enum _IDDCX_UPDATE_REASON {
                         The mode list is changing due to changes in bandwidth between the system and the indirect display device
                     
 
+
 ### -field IDDCX_UPDATE_REASON_DISPLAY_LINK_BANDWIDTH
 
 
                         The mode list is changing due to changes in bandwidth between the indirect display device and the monitor
                     
+
 
 ### -field IDDCX_UPDATE_REASON_CONFIGURATION_CONSTRAINTS
 
@@ -89,11 +94,13 @@ typedef enum _IDDCX_UPDATE_REASON {
                         The mode list is changing due to constraints of the product when in a new configuration
                     
 
+
 ### -field IDDCX_UPDATE_REASON_OTHER
 
 
                         The mode list is changing due to another reason not listed above
                     
+
 
 ## -remarks
 
@@ -103,6 +110,7 @@ typedef enum _IDDCX_UPDATE_REASON {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

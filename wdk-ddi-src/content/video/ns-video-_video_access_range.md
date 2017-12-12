@@ -7,8 +7,8 @@ old-location: display\video_access_range.htm
 old-project: display
 ms.assetid: 200c957d-2ba4-488b-afd7-609c13543a7a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _VIDEO_ACCESS_RANGE, *PVIDEO_ACCESS_RANGE, VIDEO_ACCESS_RANGE
+ms.date: 12/8/2017
+ms.keywords: _VIDEO_ACCESS_RANGE, VIDEO_ACCESS_RANGE, *PVIDEO_ACCESS_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 The VIDEO_ACCESS_RANGE structure defines a device I/O port or memory range for the video adapter. Every miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function must set up an array of VIDEO_ACCESS_RANGE-type elements, called the <i>access ranges array</i>, for each video adapter the miniport driver supports.
+
 For VGA-compatible miniport drivers, VIDEO_ACCESS_RANGE also defines an element in an array passed to <a href="display.videoportsettrappedemulatorports">VideoPortSetTrappedEmulatorPorts</a> to enable or disable direct access to I/O ports by full-screen MS-DOS applications.
+
 
 
 ## -syntax
@@ -62,29 +64,38 @@ typedef struct _VIDEO_ACCESS_RANGE {
 ### -field RangeStart
 
 Specifies the bus-relative base address of a memory or I/O port range for an element in the access ranges array passed to <a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a> or returned by <a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a>.
+
 Specifies the bus-relative base address of an I/O port range for an array to be passed to <a href="display.videoportsettrappedemulatorports">VideoPortSetTrappedEmulatorPorts</a>.
+
 
 ### -field RangeLength
 
 Specifies the number of I/O ports or size in bytes for the range.
 
+
 ### -field RangeInIoSpace
 
 Specifies whether the range is in I/O space or in memory space. A value of <b>TRUE</b> (1) indicates that the range is in I/O space; a value of <b>FALSE</b> (0) indicates the range is in memory space.
 
+
 ### -field RangeVisible
 
 Is ignored if the miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function is setting up the access ranges array.
+
 Is set to <b>TRUE</b> by VGA-compatible miniport drivers and passed to <b>VideoPortSetTrappedEmulatorPorts</b> to enable direct access to the I/O port range by a full-screen MS-DOS application. If set to <b>FALSE</b>, application-issued instructions continue to be trapped and forwarded to the miniport driver's <i>SvgaHwIoXxx</i> function for validation.
+
 
 ### -field RangeShareable
 
 Is set to <b>TRUE</b> if the access range described by this element can be shared with another driver and/or device or to <b>FALSE</b> if the range cannot be shared.
+
 Is ignored by VideoPortSetTrappedEmulatorPorts.
+
 
 ### -field RangePassive
 
 Indicates whether the device actually uses the port. Values for this member are shown in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -93,21 +104,26 @@ Indicates whether the device actually uses the port. Values for this member are 
 <tr>
 <td>
 VIDEO_RANGE_PASSIVE_DECODE
+
 </td>
 <td>
 The device decodes the port but the driver does not use it.
+
 </td>
 </tr>
 <tr>
 <td>
 VIDEO_RANGE_10_BIT_DECODE
+
 </td>
 <td>
 The device decodes ten bits of the port address.
+
 </td>
 </tr>
 </table>
  
+
 
 ## -remarks
 The miniport driver must claim legacy resources in its <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a> or <a href="..\video\nc-video-pvideo_hw_legacyresources.md">HwVidLegacyResources</a> function.
@@ -138,11 +154,13 @@ All VIDEO_ACCESS_RANGE-type array elements describing I/O port ranges are assume
 
 In an array of VIDEO_ACCESS_RANGE-type elements passed to <b>VideoPortSetTrappedEmulatorPorts</b>, the value of each element's <b>RangeVisible</b> member determines whether the given I/O port(s) can be accessed directly by the VDM (MS-DOS application running in full-screen on an x86-based machine) or whether such an application-issued I/O stream is trapped and forwarded to a miniport driver-supplied <i>SvgaHwIoPortXxx</i> function for validation first.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -195,5 +213,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_ACCESS_RANGE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_ACCESS_RANGE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

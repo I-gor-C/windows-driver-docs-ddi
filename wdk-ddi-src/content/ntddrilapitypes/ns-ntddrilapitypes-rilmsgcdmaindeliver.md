@@ -7,8 +7,8 @@ old-location: netvista\rilmsgcdmaindeliver.htm
 old-project: netvista
 ms.assetid: fdff17ac-2ffd-45b0-8f01-a21af1ffa9d0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER
+ms.date: 12/8/2017
+ms.keywords: RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -39,6 +39,7 @@ req.irql:
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+
 
 
 ## -syntax
@@ -151,6 +152,7 @@ typedef struct _RILMSGCDMAINDELIVER {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

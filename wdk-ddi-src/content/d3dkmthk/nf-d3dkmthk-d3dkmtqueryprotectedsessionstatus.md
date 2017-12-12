@@ -7,7 +7,7 @@ old-location: display\d3dkmtqueryprotectedsessionstatus.htm
 old-project: display
 ms.assetid: 787f20a4-51b6-44e3-aefb-2dc529359545
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3DKMTQueryProtectedSessionStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Used to query the status of the protected session.
             
 
 
+
 ## -syntax
 
 ````
@@ -58,9 +59,11 @@ NTSTATUS  D3DKMTQueryProtectedSessionStatus(
 
 Holds the information for the status of the protected session.
 
+
 ## -returns
 
 Returns STATUS_SUCCESS if completed successfully.
+
 
 ## -remarks
 
@@ -70,22 +73,27 @@ Returns STATUS_SUCCESS if completed successfully.
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -96,8 +104,10 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
+
 
 </td>
 </tr>

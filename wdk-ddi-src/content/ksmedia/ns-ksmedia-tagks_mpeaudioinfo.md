@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: df8a1e95-211a-47df-a904-4578cd0a7dc9
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: tagKS_MPEAUDIOINFO, *PKS_MPEGAUDIOINFO, KS_MPEGAUDIOINFO
+ms.keywords: tagKS_MPEAUDIOINFO, KS_MPEGAUDIOINFO, *PKS_MPEGAUDIOINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The KS_MPEGAUDIOINFO structure describes an MPEG audio stream.
 
 
+
 ## -syntax
 
 ````
@@ -58,6 +59,7 @@ typedef struct tagKS_MPEAUDIOINFO {
 ### -field dwFlags
 
 Specifies the time base for audio timestamps. Reject the connection if undefined bits are not 0. The following flag is defined.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -66,25 +68,31 @@ Specifies the time base for audio timestamps. Reject the connection if undefined
 <tr>
 <td>
 KS_MPEGAUDIOINFO_27MhzTimebase
+
 </td>
 <td>
 Specifies that PTS and DTS timestamps advance at 27 MHz rather than 90 kHz.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field dwReserved1
 
 Must be 0; otherwise, reject the connection.
+
 
 ### -field dwReserved2
 
 Must be 0; otherwise, reject the connection.
 
+
 ### -field dwReserved3
 
 Must be 0; otherwise, reject the connection.
+
 
 ## -remarks
 
@@ -94,6 +102,7 @@ Must be 0; otherwise, reject the connection.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

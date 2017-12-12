@@ -41,6 +41,7 @@ req.irql:
 This structure contains the fields necessary for the 1394 bus driver to carry out an asynchronous write request.
 
 
+
 ## -syntax
 
 ````
@@ -63,33 +64,41 @@ typedef struct _IRB_REQ_ASYNC_STREAM {
 
 Specifies the number of bytes to write.
 
+
 ### -field fulFlags
 
 Reserved. Drivers must set this to zero.
+
 
 ### -field Mdl
 
 Specifies the source buffer.
 
+
 ### -field ulTag
 
 Specifies the Tag field for any packets generated from this request.
+
 
 ### -field nChannel
 
 Specifies the channel to which the data will be written.
 
+
 ### -field ulSynch
 
 Specifies the Sy field for any packets generated from this request.
+
 
 ### -field Reserved
 
 Reserved. Drivers must set this to zero.
 
+
 ### -field nSpeed
 
 Specifies the transfer rate. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware currently supports transfer rates of 100, 200, and 400 Mb/sec.
+
 <table>
 <tr>
 <th>Transfer Rate</th>
@@ -98,29 +107,36 @@ Specifies the transfer rate. The possible speed values are SPEED_FLAGS_xxx, wher
 <tr>
 <td>
 SPEED_FLAGS_100
+
 </td>
 <td>
 100 Mb/s
+
 </td>
 </tr>
 <tr>
 <td>
 SPEED_FLAGS_200
+
 </td>
 <td>
 200 Mb/s
+
 </td>
 </tr>
 <tr>
 <td>
 SPEED_FLAGS_400
+
 </td>
 <td>
 400 Mb/s
+
 </td>
 </tr>
 </table>
  
+
 <div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
 <div> </div>
 
@@ -132,6 +148,7 @@ SPEED_FLAGS_400
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

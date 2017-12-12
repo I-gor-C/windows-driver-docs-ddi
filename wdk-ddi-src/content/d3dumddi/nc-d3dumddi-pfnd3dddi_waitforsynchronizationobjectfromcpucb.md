@@ -7,7 +7,7 @@ old-location: display\pfnwaitforsynchronizationobjectfromcpucb.htm
 old-project: display
 ms.assetid: 304A5BCE-19E6-4F92-B840-FD3BE1CFB856
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 <b>pfnWaitForSynchronizationObjectFromCpuCb</b> waits for a monitored fence to reach a certain value before processing subsequent context commands.
 
 
+
 ## -prototype
 
 ````
@@ -60,12 +61,15 @@ HRESULT APIENTRY CALLBACK* pfnWaitForSynchronizationObjectFromCpuCb(
 
 A handle to the display device.
 
+
 ### -param pData 
 
 A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb_signalsynchronizationobjectfromcpu.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU</a> structure that provides the details of the requested operation.
 
+
 ## -returns
 If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+
 
 ## -remarks
 
@@ -75,22 +79,27 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -101,6 +110,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

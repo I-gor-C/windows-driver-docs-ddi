@@ -7,7 +7,7 @@ old-location: display\d3dkmt-setvidpnsourceowner2.htm
 old-project: display
 ms.assetid: 6a6477db-23ad-42ad-b1cb-d81c7be4cf38
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_SETVIDPNSOURCEOWNER2, D3DKMT_SETVIDPNSOURCEOWNER2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Used to set the VidPN source owner.
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER2 {
 
 The previous method used to set the VidPN source owner.
 
+
 ### -field pVidPnSourceNtHandles
 
 A handle to the VidPN source owner handles.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ A handle to the VidPN source owner handles.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

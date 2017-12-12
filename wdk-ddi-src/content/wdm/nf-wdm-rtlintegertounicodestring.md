@@ -7,7 +7,7 @@ old-location: kernel\rtlintegertounicodestring.htm
 old-project: kernel
 ms.assetid: d9c82a97-a8fb-4c23-aa9c-23711d98fd8b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: RtlIntegerToUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>RtlIntegerToUnicodeString</b> routine converts an unsigned integer value to a null-terminated string of one or more Unicode characters in the specified base.
 
 
+
 ## -syntax
 
 ````
@@ -59,9 +60,11 @@ NTSTATUS RtlIntegerToUnicodeString(
 
 Specifies the ULONG value to convert. 
 
+
 ### -param Base [in, optional]
 
 Specifies the base to use when converting <i>Value</i> to a string. The possible values are:
+
 <table>
 <tr>
 <th>Value</th>
@@ -70,41 +73,51 @@ Specifies the base to use when converting <i>Value</i> to a string. The possible
 <tr>
 <td>
 16
+
 </td>
 <td>
 Hexadecimal
+
 </td>
 </tr>
 <tr>
 <td>
 8
+
 </td>
 <td>
 Octal
+
 </td>
 </tr>
 <tr>
 <td>
 2
+
 </td>
 <td>
 Binary
+
 </td>
 </tr>
 <tr>
 <td>
 0 or 10
+
 </td>
 <td>
 Decimal
+
 </td>
 </tr>
 </table>
  
 
+
 ### -param String [in, out]
 
 Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that receives the string representation of <i>Value</i>. The buffer specified by the <i>Buffer</i>  of <i>String</i> must be large enough to hold the result. 
+
 
 ## -returns
 <b>RtlIntegerToUnicodeString</b> returns an NTSTATUS value. Possible return values include:
@@ -120,6 +133,7 @@ Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that r
 
  
 
+
 ## -remarks
 
 
@@ -128,6 +142,7 @@ Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that r
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -138,14 +153,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 2000.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -156,6 +174,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -166,6 +185,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -177,9 +197,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>
@@ -197,5 +219,8 @@ PASSIVE_LEVEL
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIntegerToUnicodeString routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIntegerToUnicodeString routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

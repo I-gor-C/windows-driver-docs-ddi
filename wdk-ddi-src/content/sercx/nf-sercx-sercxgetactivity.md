@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>SerCxGetActivity</b> method retrieves the status of pending work for the serial controller driver.
 
 
+
 ## -syntax
 
 ````
@@ -58,12 +59,15 @@ VOID SerCxGetActivity(
 
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
+
 ### -param Activity [in, out]
 
 A pointer to a caller-allocated <a href="serports.sercx_activity">SERCX_ACTIVITY</a> structure. The caller must have previously called the <a href="serports.sercx_activity_init">SERCX_ACTIVITY_INIT</a> function to initialize this structure before its initial use. Thereafter, each <b>SerCxGetActivity</b> call updates the contents of this structure to track the work items that are ready to be processed by the controller driver.
 
+
 ## -returns
 None.
+
 
 ## -remarks
 The serial controller driver calls this method to receive a summary of processing work that it needs to perform on behalf of the serial framework extension (SerCx). Typically, <b>SerCxGetActivity</b> is called by the transmit/receive DPC routine in the controller driver.
@@ -74,11 +78,13 @@ To cycle through pending work items, the transmit/receive DPC routine calls <b>S
 
 A lock protects the <b>SERCX_ACTIVITY</b> structure that is updated by the <b>SerCxGetActivity</b> call. During the call, this lock is acquired by event handlers in SerCx to update the summary of work that is currently pending for the controller driver.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -89,14 +95,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -107,9 +116,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -133,5 +144,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SerCxGetActivity method%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

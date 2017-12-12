@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_filter_clear_parameters.htm
 old-project: netvista
 ms.assetid: 101f9fea-cfc2-4ea5-82ee-a260d10b5a96
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, *PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,15 +42,22 @@ req.irql: PASSIVE_LEVEL
 The <b>NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS</b> structure specifies the parameters to clear a
   receive filter on a network adapter. 
 
+
+
 The <b>NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS</b> structure specifies the parameters to clear a
   receive filter on a network adapter. 
+
 NDIS receive filters are used in the following NDIS interfaces:
+
 
 <a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="netvista.managing_packet_coalescing_receive_filters">Managing Packet Coalescing Receive Filters</a>.
 
+
 <a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.
 
+
 <a href="netvista.virtual_machine_queue__vmq__in_ndis_6_20">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.
+
 
 
 ## -syntax
@@ -74,15 +81,20 @@ The
      <b>NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS</b> structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
+
 To indicate the version of the <b>NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS</b> structure, the driver sets the 
      <b>Revision</b> member to one of the following values:
+
+
 
 
 ### -field NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS_REVISION_1
 
 Original version for NDIS 6.20.
+
 The driver sets the 
         <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_CLEAR_PARAMETERS_REVISION_1.
+
 </dd>
 </dl>
 
@@ -90,11 +102,13 @@ The driver sets the
 
 A bitwise OR of flags. This member is reserved for NDIS.
 
+
 ### -field QueueId
 
 A receive queue identifier. This identifier is an
      integer between zero and the number of queues that the network adapter supports. A value of NDIS_DEFAULT_RECEIVE_QUEUE_ID specifies
      the default receive queue.
+
 <div class="alert"><b>Note</b>  Miniport drivers that support <a href="netvista.ndis_packet_coalescing">NDIS packet coalescing</a> or the SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
 <div> </div>
 
@@ -104,6 +118,7 @@ A receive filter identifier. The filter identifier
      is an integer from one to the number of receive filters that the network adapter supports. A value of zero is
      not valid.
 
+
 ## -remarks
 The <b>NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS</b> structure is used with OID requests of   
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a> to specify a filter to clear on a VMQ or SR-IOV VPort receive queue. The filter was
@@ -111,19 +126,23 @@ The <b>NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS</b> structure is used with OID reque
     <a href="netvista.oid_receive_filter_set_filter">
     OID_RECEIVE_FILTER_SET_FILTER</a> OID.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.20 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +165,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

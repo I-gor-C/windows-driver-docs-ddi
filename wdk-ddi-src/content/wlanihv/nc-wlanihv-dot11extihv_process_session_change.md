@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvprocesssessionchange.htm
 old-project: netvista
 ms.assetid: 17d5ab30-141a-4b7b-93f1-113fb1a39ba6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _BINARY_CONTAINER, BINARY_CONTAINER, *PBINARY_CONTAINER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,6 +59,7 @@ DWORD APIENTRY Dot11ExtIhvProcessSessionChange(
 
 The type of event. This parameter can have one of the following values.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -67,79 +68,98 @@ The type of event. This parameter can have one of the following values.
 <tr>
 <td>
 WTS_CONSOLE_CONNECT
+
 </td>
 <td>
 A session was connected to the console session.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_CONSOLE_DISCONNECT
+
 </td>
 <td>
 A session was disconnected from the console session.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_REMOTE_CONNECT
+
 </td>
 <td>
 A session was connected to the remote session.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_REMOTE_DISCONNECT
+
 </td>
 <td>
 A session was disconnected from the remote session.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_SESSION_LOGON
+
 </td>
 <td>
 A user has logged on to the session.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_SESSION_LOGOFF
+
 </td>
 <td>
 A user has logged off of the session.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_SESSION_LOCK
+
 </td>
 <td>
 A session has been locked.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_SESSION_UNLOCK
+
 </td>
 <td>
 A session has been unlocked.
+
 </td>
 </tr>
 <tr>
 <td>
 WTS_SESSION_REMOTE_CONTROL
+
 </td>
 <td>
 A session has changed its remote controlled status. To determine the status, call the 
         <b>GetSystemMetrics</b> function and check the SM_REMOTECONTROL metric. For more information about
         this function, refer to the Microsoft Windows SDK documentation.
+
 </td>
 </tr>
 </table>
  
+
 
 ### -param pSessionNotification [in]
 
@@ -147,10 +167,12 @@ A pointer to a WTSSESSION_NOTIFICATION structure, which provides information abo
      change notification. For more information about this structure, refer to the Windows SDK
      documentation.
 
+
 ## -returns
 If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
      defined in 
      Winerror.h.
+
 
 ## -remarks
 The operating system calls the function to notify the IHV Extensions DLL whenever a switch in a user
@@ -161,11 +183,13 @@ If the
     user interface requests internally and must release any allocated resources for the user interface
     requests.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -176,15 +200,18 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating
    systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestrequeue.htm
 old-project: wdf
 ms.assetid: 955859d2-7c4f-454c-8621-84bacf0b9770
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WdfRequestRequeue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WdfRequestRequeue</b> method returns an I/O request to the head of the I/O queue from which it was delivered to the driver.
+
 
 
 ## -syntax
@@ -57,6 +59,7 @@ NTSTATUS WdfRequestRequeue(
 ### -param Request [in]
 
 A handle to a framework request object. 
+
 
 ## -returns
 <b>WdfRequestRequeue</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
@@ -84,6 +87,7 @@ This method might also return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+
 ## -remarks
 A driver can call <b>WdfRequestRequeue</b> only if it using the manual dispatching method for the I/O queue.
 
@@ -94,11 +98,13 @@ For more information about <b>WdfRequestRequeue</b>, see <a href="wdf.requeuing_
 
 The following code example returns a specified I/O request to the queue from which the driver received the request.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -109,22 +115,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +146,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -146,14 +158,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_invalidreqaccess">InvalidReqAccess</a>, <a href="devtest.kmdf_invalidreqaccesslocal">InvalidReqAccessLocal</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>

@@ -41,6 +41,7 @@ req.irql:
 The <b>ECP_OPEN_PARAMETERS</b> structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file. 
 
 
+
 ## -syntax
 
 ````
@@ -58,13 +59,16 @@ typedef struct _ECP_OPEN_PARAMETERS {
 
 Specifies the size of this context structure, in bytes.
 
+
 ### -field Reserved
 
 Reserved for future use. This must be initialized to 0.
 
+
 ### -field Flags
 
 Flags that Specify the parameters or purpose for opening a file. Contains one of the following values:
+
 <table>
 <tr>
 <th>Name</th>
@@ -89,6 +93,7 @@ Flags that Specify the parameters or purpose for opening a file. Contains one of
 </table>
  
 
+
 ## -remarks
 
 
@@ -97,14 +102,17 @@ Flags that Specify the parameters or purpose for opening a file. Contains one of
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 10, version 1709.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

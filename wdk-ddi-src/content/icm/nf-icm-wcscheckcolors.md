@@ -7,7 +7,7 @@ old-location: print\wcscheckcolors.htm
 old-project: print
 ms.assetid: 1254b0d4-cb72-4171-b09d-f0bca58a137a
 ms.author: windowsdriverdev
-ms.date: 11/24/2017
+ms.date: 12/9/2017
 ms.keywords: WcsCheckColors
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 The <code>WcsCheckColors</code> function determines whether the colors in an array lie within the output gamut of a specified WCS color transform.
 
 
+
 ## -syntax
 
 ````
@@ -62,40 +63,49 @@ BOOL WcsCheckColors(
 
 A handle to the WCS color transform to use.
 
+
 ### -param nColors [in]
 
 The number of elements in the array pointed to by <i>pInputData</i> and <i>paResult</i>.
+
 
 ### -param nInputChannels [in]
 
 The number of channels per element in the array pointed to by <i>pInputData</i>.
 
+
 ### -param cdtInput [in]
 
 The input COLORDATATYPE color data type.
+
 
 ### -param cbInput [in]
 
 The buffer size of <i>pInputData</i>.
 
+
 ### -param pInputData [in]
 
 A pointer to an array of input colors. Colors in this array correspond to the color space of the source profile.
 
+
 ### -param paResult [out]
 
 A pointer to an array of <i>nColors</i> bytes that receives the results of the test.
+
 
 ## -remarks
 If the input and the output color data types are not compatible with the color transform, this function will convert the input color data as required.
 
 This function will fail if an ICC transform is used.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,14 +116,17 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Included in Windows Vista and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -124,6 +137,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -134,6 +148,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>

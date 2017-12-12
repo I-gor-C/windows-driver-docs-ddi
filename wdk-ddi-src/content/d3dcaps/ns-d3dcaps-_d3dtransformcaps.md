@@ -7,8 +7,8 @@ old-location: display\d3dtransformcaps.htm
 old-project: display
 ms.assetid: 4eb6c31d-97b2-4d51-ae49-ed2ab395188a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS
+ms.date: 12/8/2017
+ms.keywords: _D3DTRANSFORMCAPS, D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,7 +41,9 @@ req.irql:
 
    Obsolete in DirectX 8.0 and later versions.
    
+
 D3DTRANSFORMCAPS structure describes the transform capabilities of a device.
+
 
 
 ## -syntax
@@ -60,13 +62,16 @@ typedef struct _D3DTRANSFORMCAPS {
 
 Specifies the size, in bytes, of the D3DTRANSFORMCAPS structure. 
 
+
 ### -field dwCaps
 
 Specifies flags describing the capabilities of the lighting module. The following flag is defined:
+
 D3DTRANSFORMCAPS_CLIP 
 <dl>
 <dd>The device can do clipping operations while transforming.</dd>
 </dl>
+
 
 
 ## -remarks
@@ -74,11 +79,13 @@ This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentat
 
 This structure is a member of the <a href="display.d3ddevicedesc_v1">D3DDEVICEDESC_V1</a> structure.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -95,5 +102,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DTRANSFORMCAPS structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DTRANSFORMCAPS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

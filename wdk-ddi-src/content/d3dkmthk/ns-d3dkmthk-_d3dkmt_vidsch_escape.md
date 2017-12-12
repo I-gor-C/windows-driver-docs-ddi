@@ -7,7 +7,7 @@ old-location: display\d3dkmt_vidsch_escape.htm
 old-project: display
 ms.assetid: 8e19e8a1-0cb6-4d57-862c-2e3a785b949b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _D3DKMT_VIDSCH_ESCAPE, D3DKMT_VIDSCH_ESCAPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,9 @@ req.irql:
 
 ## -description
 <b>Do not use the D3DKMT_VIDSCH_ESCAPE structure; it is for testing purposes only.</b>
+
 The D3DKMT_VIDSCH_ESCAPE structure describes how to control the graphics processing unit (GPU) scheduler (which is part of Dxgkrnl.sys) in a call to the <a href="display.d3dkmtescape">D3DKMTEscape</a> function.
+
 
 
 ## -syntax
@@ -72,13 +74,16 @@ typedef struct _D3DKMT_VIDSCH_ESCAPE {
 
 The escape type, of type <a href="display.d3dkmt_vidschescapetype">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.
 
+
 ### -field PreemptionControl
 
 Enable or disable preemption.
 
+
 ### -field EnableContextDelay
 
 Enable or disable context delay.
+
 
 ### -field TdrControl2
 
@@ -87,9 +92,11 @@ Enable or disable context delay.
 
 Control TDR.
 
+
 ### -field NodeOrdinal
 
 Valid if <b>TdrControl</b> is set to a value of <b>D3DKMT_TDRDBGCTRLTYPE_ENGINETDR</b>.
+
 </dd>
 </dl>
 
@@ -97,13 +104,16 @@ Valid if <b>TdrControl</b> is set to a value of <b>D3DKMT_TDRDBGCTRLTYPE_ENGINET
 
 Suspend or resume scheduler (obsolete).
 
+
 ### -field TdrControl
 
 Control TDR.
 
+
 ### -field SuspendTime
 
 Time period to suspend.
+
 
 ## -remarks
 
@@ -113,14 +123,17 @@ Time period to suspend.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available in Windows Vista and later versions of the Windows operating systems.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -143,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_VIDSCH_ESCAPE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_VIDSCH_ESCAPE structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: C6E1FA5A-993C-4212-9428-0B759C09F5DE
 ms.author: windowsdriverdev
 ms.date: 12/6/2017
-ms.keywords: _USBFN_DIRECTION, *PUSBFN_DIRECTION, USBFN_DIRECTION
+ms.keywords: _USBFN_DIRECTION, USBFN_DIRECTION, *PUSBFN_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 Defines the USB data transfer direction types.
 
 
+
 ## -syntax
 
 ````
@@ -62,25 +63,31 @@ typedef enum _USBFN_DIRECTION {
 
 The minimum value in this enumeration.
 
+
 ### -field UsbfnDirectionIn
 
 The transfer is to the host from an endpoint.
+
 
 ### -field UsbfnDirectionOut
 
 The transfer is from the host to the endpoint.
 
+
 ### -field UsbfnDirectionTx
 
 The bus transfer to the host from the device. 
+
 
 ### -field UsbfnDirectionRx
 
 The bus transfer is from the host to the device.
 
+
 ### -field UsbfnDirectionMaximum
 
 The maximum value in this enumeration.
+
 
 ## -remarks
 
@@ -90,6 +97,7 @@ The maximum value in this enumeration.
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

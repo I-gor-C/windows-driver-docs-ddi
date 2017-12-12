@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_statistics_flags.htm
 old-project: display
 ms.assetid: 85ae47d8-228c-4fff-9be0-bf56868b9319
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: IDDCX_FRAME_STATISTICS_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ req.irql: _requires_same_
                 Indicates whether a frame was altered by the driver.
 
 
+
 ## -syntax
 
 ````
@@ -61,10 +62,12 @@ typedef enum _IDDCX_FRAME_STATISTICS_FLAGS {
                         
                     Indicates that there are no alterations to the frame.
 
+
 ### -field IDDCX_FRAME_STATISTICS_FLAGS_REDUCED_COLOR_FIDELITY
 
 
                         If set indicates that the driver reduced the color fidelity of the desktop image while processing and transmitting this frame.
+
 
 ## -remarks
 
@@ -74,6 +77,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_FLAGS {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

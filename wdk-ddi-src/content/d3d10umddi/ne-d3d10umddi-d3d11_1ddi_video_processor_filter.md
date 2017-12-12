@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_filter.htm
 old-project: display
 ms.assetid: 189ad1c2-3828-468a-a99d-12d85da6bf63
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FILTER, D3D11_1DDI_VIDEO_PROCESSOR_FILTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,6 +41,7 @@ req.irql:
 Identifies a video processor filter.
 
 
+
 ## -syntax
 
 ````
@@ -63,34 +64,43 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FILTER {
 
 Brightness filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CONTRAST
 
 Contrast filter.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_HUE
 
 Hue filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_SATURATION
 
 Saturation filter.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_NOISE_REDUCTION
 
 Noise reduction filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_EDGE_ENHANCEMENT
 
 Edge enhancement filter.
+
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_ANAMORPHIC_SCALING
 
 Anamorphic scaling filter.
 
+
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_STEREO_ADJUSTMENT
 
 Stereo adjustment filter. When stereo 3-D video is enabled, this filter adjusts the offset between the left and right views, allowing the user to reduce potential eye strain.
+
 The filter value indicates the amount by which the left and right views are adjusted. A positive value shifts the images away from each other: the left image toward the left, and the right image toward the right. A negative value shifts the images in the opposite directions, closer to each other.
+
 
 ## -remarks
 
@@ -100,22 +110,27 @@ The filter value indicates the amount by which the left and right views are adju
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 8
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2012
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -7,7 +7,7 @@ old-location: kernel\ntsetinformationtransactionmanager.htm
 old-project: kernel
 ms.assetid: a1e2f40f-5aea-4c8b-8692-95721ad4bc9d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/7/2017
 ms.keywords: NtSetInformationTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 Do not call this routine from kernel-mode code.
+
 
 
 ## -syntax
@@ -76,6 +77,7 @@ NTSTATUS NtSetInformationTransactionManager(
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -86,9 +88,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;=APC_LEVEL
+
 </td>
 </tr>
 </table>

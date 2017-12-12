@@ -7,8 +7,8 @@ old-location: storage\disk_grow_partition.htm
 old-project: storage
 ms.assetid: cab9877c-3b7b-4644-83eb-0aa1e9fc77b9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _DISK_GROW_PARTITION, *PDISK_GROW_PARTITION, DISK_GROW_PARTITION
+ms.date: 12/8/2017
+ms.keywords: _DISK_GROW_PARTITION, DISK_GROW_PARTITION, *PDISK_GROW_PARTITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -41,6 +41,7 @@ req.irql:
 The DISK_GROW_PARTITION structure is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_grow_partition.md">IOCTL_DISK_GROW_PARTITION</a> request to enlarge a partition. 
 
 
+
 ## -syntax
 
 ````
@@ -57,9 +58,11 @@ typedef struct _DISK_GROW_PARTITION {
 
 Specifies a number identifying the partition to be enlarged.
 
+
 ### -field BytesToGrow
 
 Indicates the number of bytes that the partition should be extended by. Note that this value is not the new size of the partition.
+
 
 ## -remarks
 
@@ -69,6 +72,7 @@ Indicates the number of bytes that the partition should be extended by. Note tha
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -85,5 +89,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DISK_GROW_PARTITION structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DISK_GROW_PARTITION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

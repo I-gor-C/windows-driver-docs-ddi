@@ -7,8 +7,8 @@ old-location: storage\tapeminiextensioninit.htm
 old-project: storage
 ms.assetid: 4837b9c2-a3c1-4574-8f5b-4bf7c7d037a0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
-ms.keywords: _PROCESSOR_NUMBER, PROCESSOR_NUMBER, *PPROCESSOR_NUMBER
+ms.date: 12/8/2017
+ms.keywords: _PROCESSOR_NUMBER, *PPROCESSOR_NUMBER, PROCESSOR_NUMBER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql:
 <i>TapeMiniExtensionInit</i> initializes an optional, driver-specific context area. This routine is called by <a href="storage.tapeclassinitialize">TapeClassInitialize</a> when the tape miniclass driver is loaded. This routine is optional.
 
 
+
 ## -prototype
 
 ````
@@ -61,16 +62,20 @@ VOID TapeMiniExtensionInit(
 
 Pointer to a buffer of the size requested by the tape miniclass driver when it initialized.
 
+
 ### -param InquiryData [in]
 
 Pointer to the SCSI inquiry data for the tape device.
+
 
 ### -param ModeCapabilitiesPage [in]
 
 Pointer to a buffer that contains low-level information for the tape device. The format of this page is defined by the QIC 157 standard and is subject to change. This is <b>NULL</b> if the device does not support a mode capabilities page. 
 
+
 ## -returns
 None
+
 
 ## -remarks
 A tape miniclass driver requests a minitape extension by specifying a nonzero value for <b>MinitapeExtensionSize</b> in the <a href="storage.tape_init_data_ex">TAPE_INIT_DATA_EX</a> structure it passes to <a href="storage.tapeclassinitialize">TapeClassInitialize</a> from its <b>DriverEntry</b> routine. A miniclass driver defines the structure and contents of the minitape extension and typically uses it to store inquiry data for the devices it supports.
@@ -79,11 +84,13 @@ The tape class driver allocates the minitape extension and supplies it subsequen
 
 <i>TapeMiniExtensionInit</i> initializes the minitape extension, and the miniclass driver uses this area to maintain run-time state for its device. The tape class driver passes <i>InquiryData</i> and a <i>ModeCapabilitiesPage</i> to this routine because those structures contain information that a tape miniclass driver might want to store in the minitape extension.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -94,6 +101,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +130,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TapeMiniExtensionInit routine%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TapeMiniExtensionInit routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

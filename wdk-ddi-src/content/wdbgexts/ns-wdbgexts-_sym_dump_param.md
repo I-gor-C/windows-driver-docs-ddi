@@ -7,7 +7,7 @@ old-location: debugger\ig_dump_symbol_info.htm
 old-project: debugger
 ms.assetid: 5a00f401-89e5-4863-ab14-a8ab7eec1869
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _SYM_DUMP_PARAM, *PSYM_DUMP_PARAM, SYM_DUMP_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The IG_DUMP_SYMBOL_INFO <a href="debugger.ioctl">Ioctl</a> operation provides information about the type of a symbol.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_DUMP_SYMBOL_INFO, <i>IpvData</i> should contain an instance of the SYM_DUMP_PARAM structure.
+
 
 
 ## -syntax
@@ -77,75 +78,95 @@ typedef struct _SYM_DUMP_PARAM {
 
 Specifies the size, in bytes, of this structure.  It should be set to <code>sizeof(SYM_DUMP_PARAM)</code>.
 
+
 ### -field sName
 
 Specifies the name of the symbol to lookup.
+
 
 ### -field Options
 
 Specifies the flags that determine the behavior of this <b>Ioctl</b> operation.  For a description of these flags, see Remarks.
 
+
 ### -field addr
 
 Specifies the address of the symbol.
 
+
 ### -field listLink
 
 Specifies the field that contains the next item in a linked list.  If the symbol is an entry in a linked list, this <b>Ioctl</b> operation can iterate over the items in the list using the field specified here as the pointer to the next item in the list.  The type of this structure is <a href="debugger.field_info">FIELD_INFO</a>.
+
 The callback function specified in the <b>fieldCallBack</b> member of this structure is called, during this <b>Ioctl</b> operation, for each item in the list.  When it is called, it is passed this <b>linkList</b> structure with the members filled in for the list entry along with the contents of the <b>Context</b> member.
+
 DBG_DUMP_LIST should be set in <b>Options</b> to tell this <b>Ioctl</b> to iterate over the list.
+
 
 ### -field Context
 
 Specifies a pointer that is passed to the callback function in the <b>CallbackRoutine</b> member and to the callback functions in the <b>fieldCallBack</b> member of the <b>linkList</b> and <b>Fields</b> members.
 
+
 ### -field pBuffer
 
 Specifies a buffer that receives information about the symbol.  This buffer is only used if the DBG_DUMP_COPY_TYPE_DATA flag is set in <b>Options</b>.  The size of this buffer is specified in <b>BufferSize</b>.
+
 
 ### -field CallbackRoutine
 
 Specifies a callback function that is called by the engine.  The engine provides the callback function with information about the symbol and its members.
 
+
 ### -field nFields
 
 Specifies the number of entries in the <b>Fields</b> array.
+
 
 ### -field Fields
 
 Specifies an array of <a href="debugger.field_info">FIELD_INFO</a> structures that control the behavior of this operation for individual members of the specified symbol. See FIELD_INFO for details.
 
+
 ### -field ModBase
 
 Receives the location in the target's memory of the start of the module that contains the symbol.
+
 
 ### -field TypeId
 
 Receives the type ID of the symbol.
 
+
 ### -field TypeSize
 
 Receives the size, in bytes, of the symbol in the target's memory.
+
 
 ### -field BufferSize
 
 Specifies the size, in bytes, of the <b>pBuffer</b> buffer.
 
+
 ### -field fPointer
 
 Receives a Boolean value that indicates whether the symbol is a pointer.  <b>fPointer</b> is <b>FALSE</b> if the symbol is not a pointer.  It is 1 if the symbol is a 32-bit pointer and 3 if the symbol is a 64-bit pointer.
+
 
 ### -field fArray
 
 Receives a Boolean value that indicates whether the symbol is an array.  <b>fArray</b> is <b>FALSE</b> if the symbol is not an array and <b>TRUE</b> if it is.
 
+
 ### -field fStruct
 
 Receives a Boolean value that indicates whether the symbol is a structure.  <b>fStruct</b> is <b>FALSE</b> if the symbol is not a structure and <b>TRUE</b> if it is.
 
+
 ### -field fConstant
 
 Receives a Boolean value that indicates whether the symbol is a constant.  <b>fConstant</b> is <b>FALSE</b> if the symbol is not a constant and <b>TRUE</b> if it is.
+
 
 ### -field Reserved
 
@@ -269,11 +290,13 @@ DBG_DUMP_FIELD_DEFAULT_STRING DBG_DUMP_FIELD_WCHAR_STRING DBG_DUMP_FIELD_MULTI_S
 
 If the member is a pointer, it is printed as a string, ANSI string , WCHAR string, MULTI string, or GUID.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -299,5 +322,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20SYM_DUMP_PARAM structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20SYM_DUMP_PARAM structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

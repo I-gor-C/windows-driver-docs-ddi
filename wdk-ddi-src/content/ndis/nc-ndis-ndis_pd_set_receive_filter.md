@@ -7,7 +7,7 @@ old-location: netvista\ndispdsetreceivefilter.htm
 old-project: netvista
 ms.assetid: 49587142-9C84-4F73-BE0C-D256A8E6BF4B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,6 +45,7 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 
 
+
 ## -prototype
 
 ````
@@ -65,16 +66,20 @@ NTSTATUS NdisPDSetReceiveFilter(
 
 A provider handle that identifies the PD-capable miniport driver's provider object.
 
+
 ### -param FilterParameters [in]
 
 Parameters that identify any necessary information for the filter. For more information, see the <a href="netvista.ndis_pd_filter_parameters">NDIS_PD_FILTER_PARAMETERS</a> structure.
+
 
 ### -param FilterHandle [out]
 
 A handle to the filter.
 
+
 ## -returns
 This function returns STATUS_SUCCESS when it completes successful, otherwise it returns the appropriate error code.
+
 
 ## -remarks
 PD filters are applied before any spreading takes place this is why packet matching a PD filter can be placed into their dedicated PD queue, and the rest of the packets can be spread by RSS as usual. The PD client is responsible for plumbing non-overlapping ambiguous filters. However, some PD provides may allow overlapping ambiguous filters as long as the PD client can pass a priority value that indicates which filter must be applied first. The PD provider may fail filter set requests with STATUS_NOT_SUPPORTED if the client attempts to set filters with conflicting profiles or overlapping match conditions. The <a href="netvista.ndis_pd_capabilities">NDIS_PD_CAPABILITIES</a> structure does not allow the provider to advertise all valid combinations of profiles that the PD client can use simultaneously, this is why some of the capabilities are discovered by the PD client at runtime when and if the PD provider fails the filter set request with STATUS_NOT_SUPPORTED
@@ -89,27 +94,33 @@ The <b>NDIS_PD_SET_RECEIVE_FILTER</b> function type is defined in the Ntddndis.h
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 10
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2016
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -120,9 +131,11 @@ Header
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 PASSIVE_LEVEL
+
 </td>
 </tr>
 </table>

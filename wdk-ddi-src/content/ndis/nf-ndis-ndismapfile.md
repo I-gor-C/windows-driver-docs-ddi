@@ -7,7 +7,7 @@ old-location: netvista\ndismapfile.htm
 old-project: netvista
 ms.assetid: 965bb4c7-826d-425b-b10d-2d5a29ca0f91
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: NdisMapFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ The
   currently unmapped.
 
 
+
 ## -syntax
 
 ````
@@ -63,14 +64,18 @@ A pointer to a caller-supplied variable in which this function returns the statu
      
 
 
+
+
 ### -param NDIS_STATUS_SUCCESS
 
 The caller has exclusive access to the file contents until the 
        <a href="netvista.ndisunmapfile">NdisUnmapFile</a> function is called.
 
+
 ### -param NDIS_STATUS_ALREADY_MAPPED
 
 The caller cannot access the file contents at this time.
+
 </dd>
 </dl>
 
@@ -79,13 +84,16 @@ The caller cannot access the file contents at this time.
 A pointer to a caller-supplied variable in which this function returns the base virtual address of
      the mapped file contents or <b>NULL</b>.
 
+
 ### -param FileHandle [in]
 
 The handle that was returned by a preceding call to the 
      <a href="netvista.ndisopenfile">NdisOpenFile</a> function.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>NdisMapFile</b> associates (maps) a virtual address range with an opened file so the driver can access
@@ -104,11 +112,13 @@ A miniport driver can map and unmap such an open file as necessary, using altern
 A miniport driver can call 
     <b>NdisMapFile</b> only during initialization.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -119,6 +129,7 @@ Target platform
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
@@ -126,11 +137,13 @@ Supported for NDIS 6.0 and NDIS 5.1 drivers (see
    Vista. Supported for NDIS 5.1 drivers (see 
    <b>NdisMapFile (NDIS 5.1)</b>) in Windows
    XP.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -141,6 +154,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -151,14 +165,17 @@ Library
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt;= DISPATCH_LEVEL
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 DDI compliance rules
+
 </th>
 <td width="70%">
 <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
@@ -182,5 +199,8 @@ DDI compliance rules
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMapFile function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMapFile function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

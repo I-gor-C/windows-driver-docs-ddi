@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddressparammask_2.htm
 old-project: netvista
 ms.assetid: ef802d35-2ca6-4fe2-9f3b-e2d1e91b8500
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: RILSUBADDRESSPARAMMASK, RILSUBADDRESSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -68,6 +69,7 @@ typedef enum _RILSUBADDRESSPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

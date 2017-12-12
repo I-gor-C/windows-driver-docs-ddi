@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_pnp_capabilities_init.htm
 old-project: wdf
 ms.assetid: 5ae60715-ba51-4814-ae34-34967cdbab78
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/7/2017
 ms.keywords: WDF_DEVICE_PNP_CAPABILITIES_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,9 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
+
 The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function initializes a <a href="wdf.wdf_device_pnp_capabilities">WDF_DEVICE_PNP_CAPABILITIES</a> structure.
+
 
 
 ## -syntax
@@ -58,19 +60,23 @@ VOID WDF_DEVICE_PNP_CAPABILITIES_INIT(
 
 A pointer to a driver-supplied <a href="wdf.wdf_device_pnp_capabilities">WDF_DEVICE_PNP_CAPABILITIES</a> structure.
 
+
 ## -returns
 None
+
 
 ## -remarks
 The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function zeros the specified <a href="wdf.wdf_device_pnp_capabilities">WDF_DEVICE_PNP_CAPABILITIES</a> structure, sets the structure's <b>Size</b> member, and sets other members to default values.
 
 For a code example that uses <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b>, see <a href="wdf.wdfdevicesetpnpcapabilities">WdfDeviceSetPnpCapabilities</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -81,22 +87,27 @@ Target platform
 <tr>
 <th width="30%">
 Minimum KMDF version
+
 </th>
 <td width="70%">
 1.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum UMDF version
+
 </th>
 <td width="70%">
 2.0
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

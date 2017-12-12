@@ -41,6 +41,7 @@ req.irql:
 This structure is used by the GNSS engine to notify of any changes in the tracking status while tracking a set of previously created geofences.
 
 
+
 ## -syntax
 
 ````
@@ -60,31 +61,39 @@ typedef struct _GNSS_GEOFENCES_TRACKINGSTATUS_DATA {
 
 Structure size.
 
+
 ### -field Version
 
 Version number.
 
+
 ### -field Status
 
 A failure code indicates that the GNSS engine is unable to track the geofences (due to bad signal conditions or other transient errors).
+
 A success code indicates that the GNSS engine was previously unable to track geofences, and is now able to track them.
+
 
 ### -field StatusTimeStamp
 
 The UTC time of this status.
 
+
 ### -field Unused[512]
 
 Padding buffer.
 
+
 ## -remarks
 The GNSS engine must not raise  events when it is not tracking any mobile-originated geofences (but tracking network-initiated Geofences), or when the geofence tracking has been reset by the GNSS_ResetGeofenceTracking command.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

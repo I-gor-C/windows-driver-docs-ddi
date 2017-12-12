@@ -41,6 +41,7 @@ req.irql:
 Given a validated IRP_MJ_CREATE request, the <b>KsCreateDefaultAllocator</b> function creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(Irp)-&gt;FileObject with the allocator using an internal dispatch table (KSDISPATCH_TABLE).
 
 
+
 ## -syntax
 
 ````
@@ -56,8 +57,10 @@ NTSTATUS KsCreateDefaultAllocator(
 
 Specifies the IRP with the IRP_MJ_CREATE request being handled.
 
+
 ## -returns
 The <b>KsCreateDefaultAllocator</b> function returns STATUS_SUCCESS if successful, or it returns an error if unsuccessful.
+
 
 ## -remarks
 
@@ -67,6 +70,7 @@ The <b>KsCreateDefaultAllocator</b> function returns STATUS_SUCCESS if successfu
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -77,6 +81,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -87,6 +92,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>

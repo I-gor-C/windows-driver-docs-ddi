@@ -41,6 +41,7 @@ req.irql: < DISPATCH_LEVEL
 The <b>CcPrepareMdlWrite</b> routine provides direct access to cached file memory so that the caller can write data to the file.
 
 
+
 ## -syntax
 
 ````
@@ -60,24 +61,30 @@ VOID CcPrepareMdlWrite(
 
 Pointer to a file object for the cached file. 
 
+
 ### -param FileOffset [in]
 
 Pointer to a variable that specifies the starting byte offset within the cached file where the data is to be written.
+
 
 ### -param Length [in]
 
 Length in bytes of the data to be written to the system cache.
 
+
 ### -param MdlChain [out]
 
 A chain of one or more memory descriptor lists (MDL) describing the pages to which the data is to be written.
+
 
 ### -param IoStatus [out]
 
 Pointer to an IO_STATUS_BLOCK structure. If the call to <b>CcPrepareMdlWrite</b> succeeds, <i>IoStatus.Status</i> is set to STATUS_SUCCESS. Otherwise, it is set to an appropriate NTSTATUS error code. <i>IoStatus.Information</i> is set to the actual number of bytes that were successfully locked down in the MDL chain.
 
+
 ## -returns
 None
+
 
 ## -remarks
 <b>CcPrepareMdlWrite</b> is similar to <a href="ifsk.cccopywrite">CcCopyWrite</a>, except that the data is not copied to the cached file. Instead, the physical pages to be overwritten in the system cache are locked in memory, and <b>CcPrepareMdlWrite</b> returns one or more memory descriptor lists (MDL) describing the specified byte range. These pages remain locked in memory until <a href="ifsk.ccmdlwritecomplete">CcMdlWriteComplete</a> or <a href="ifsk.ccmdlwriteabort">CcMdlWriteAbort</a> is called. Thus each call to <b>CcPrepareMdlWrite</b> must be followed by a call to <b>CcMdlWriteComplete</b> or <b>CcMdlWriteAbort</b>.
@@ -90,11 +97,13 @@ If any failure occurs, <b>CcPrepareMdlWrite</b> raises a status exception for th
 
 To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -105,6 +114,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -115,6 +125,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -125,6 +136,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -135,9 +147,11 @@ DLL
 <tr>
 <th width="30%">
 IRQL
+
 </th>
 <td width="70%">
 &lt; DISPATCH_LEVEL
+
 </td>
 </tr>
 </table>
@@ -200,5 +214,8 @@ IRQL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPrepareMdlWrite routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

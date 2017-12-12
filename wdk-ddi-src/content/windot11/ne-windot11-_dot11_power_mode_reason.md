@@ -7,7 +7,7 @@ old-location: netvista\dot11_power_mode_reason.htm
 old-project: netvista
 ms.assetid: 0B8402B5-CFDA-402F-BA7A-A44478333C04
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DOT11_POWER_MODE_REASON, DOT11_POWER_MODE_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,25 +60,31 @@ typedef enum _DOT11_POWER_MODE_REASON {
 
 Device is initially in this state and has not changed since.
 
+
 ### -field dot11_power_mode_reason_noncompliant_AP
 
 AP is not compliant. As to be in CAM.
+
 
 ### -field dot11_power_mode_reason_legacy_WFD_device
 
 WFD device is legacy.
 
+
 ### -field dot11_power_mode_reason_compliant_AP
 
 AP is compliant.
+
 
 ### -field dot11_power_mode_reason_compliant_WFD_device
 
 All connected WFD device can do PSM.
 
+
 ### -field dot11_power_mode_reason_others
 
 Other reason.
+
 
 ## -remarks
 
@@ -88,14 +94,17 @@ Other reason.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported starting with  Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

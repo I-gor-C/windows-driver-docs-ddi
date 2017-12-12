@@ -41,6 +41,7 @@ req.irql:
 This topic describes the <b>GIC_ITS</b> structure.
 
 
+
 ## -syntax
 
 ````
@@ -61,25 +62,31 @@ typedef struct _GIC_ITS {
 
 Defines the <b>UCHAR</b> member <b>Type</b>.
 
+
 ### -field Length
 
 Defines the <b>UCHAR</b> member <b>Length</b>.
+
 
 ### -field Reserved1
 
 Reserved for future use.
 
+
 ### -field Identifier
 
 Defines the <b>ULONG</b> member <b>Identifier</b>.
+
 
 ### -field PhysicalAddress
 
 Defines the <b>ULONGLONG</b> member <b>PhysicalAddress</b>.
 
+
 ### -field Reserved2
 
 Reserved for future use.
+
 
 ## -remarks
 
@@ -89,14 +96,17 @@ Reserved for future use.
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Windows 10, version 1709 and later versions.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

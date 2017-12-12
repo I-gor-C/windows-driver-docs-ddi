@@ -7,7 +7,7 @@ old-location: display\dxgkddi_settargetgamma.htm
 old-project: display
 ms.assetid: 658EA0AA-80FC-4A45-B2EF-DFE928917E7B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,6 +43,7 @@ Allows the gamma LUT to be set on a path which is identified by the target id.<d
 
 
 
+
 ## -prototype
 
 ````
@@ -59,21 +60,26 @@ NTSTATUS NTSTATUS DXGKDDI_SETTARGETGAMMA(
 
 A handle that identifies the adapter.
 
+
 ### -param pSetTargetGammaArg [in]
 
 A pointer to a <a href="display.dxgkarg_settargetgamma">DXGKARG_SETTARGETGAMMA</a> structure that provides the target id to be modified and provides the gamma ramp to be set.
 
+
 ## -returns
 If this routine succeeds, it returns STATUS_SUCCESS. 
 
+
 ## -remarks
 This function is always called at PASSIVE level so the supporting code should be made pageable.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

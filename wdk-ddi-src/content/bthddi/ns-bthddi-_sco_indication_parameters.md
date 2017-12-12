@@ -42,6 +42,7 @@ The SCO_INDICATION_PARAMETERS structure describes indication parameters about a 
   disconnect notification.
 
 
+
 ## -syntax
 
 ````
@@ -70,9 +71,11 @@ typedef struct _SCO_INDICATION_PARAMETERS {
 A connection handle to the remote device. This handle is only valid for notifications that arrive
      over an established SCO connection.
 
+
 ### -field BtAddress
 
 The Bluetooth address of the remote device.
+
 
 ### -field Parameters
 
@@ -86,15 +89,18 @@ The Bluetooth address of the remote device.
 The structure that contains parameters for the 
       <b>ScoIndicationRemoteConnectSCO_INDICATION_CODE</b> event.
 
+
 ### -field Request
 
 The structure that contains the parameters for the SCO connection request.
+
 
 ### -field LinkType
 
 A value from the 
         <a href="bltooth.sco_link_type">SCO_LINK_TYPE</a> enumeration that indicates the
         type of incoming connection.
+
 </dd>
 </dl>
 </dd>
@@ -105,17 +111,20 @@ A value from the
 The structure that contains parameters for the 
       <b>ScoIndicationRemoteDisconnectSCO_INDICATION_CODE</b> event.
 
+
 ### -field Reason
 
 A 
        <a href="bltooth.sco_disconnect_reason">SCO_DISCONNECT_REASON</a> value that
        indicates why the SCO connection was terminated.
 
+
 ### -field CloseNow
 
 A Boolean value that a profile driver can set to indicate whether the SCO connection to the
        remote device will be closed. If the connection is to be closed, the value is <b>TRUE</b>. Otherwise, the
        value is <b>FALSE</b>.
+
 </dd>
 </dl>
 </dd>
@@ -132,19 +141,23 @@ When the Bluetooth driver stack passes
     <b>Connect</b> member of the 
     <b>Parameters</b> union.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Versions: Supported in Windows Vista, and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -164,5 +177,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SCO_INDICATION_PARAMETERS structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

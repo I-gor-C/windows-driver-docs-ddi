@@ -7,8 +7,8 @@ old-location: netvista\ndis_port_array.htm
 old-project: netvista
 ms.assetid: f77469d3-ce48-4e17-9fff-1af56296f61f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _NDIS_PORT_ARRAY, *PNDIS_PORT_ARRAY, NDIS_PORT_ARRAY
+ms.date: 12/8/2017
+ms.keywords: _NDIS_PORT_ARRAY, NDIS_PORT_ARRAY, *PNDIS_PORT_ARRAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -42,6 +42,7 @@ The NDIS_PORT_ARRAY structure specifies a list of NDIS ports and their associate
   characteristics.
 
 
+
 ## -syntax
 
 ````
@@ -67,20 +68,24 @@ The
      <b>Revision</b> member to NDIS_PORT_ARRAY_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_PORT_ARRAY_REVISION_1.
 
+
 ### -field NumberOfPorts
 
 The number of NDIS ports that have characteristics that are listed in the 
      <b>Ports</b> member.
+
 
 ### -field OffsetFirstPort
 
 The offset, in bytes, from the beginning of the NDIS_PORT_ARRAY structure to the start of the
      first port characteristics data.
 
+
 ### -field ElementSize
 
 The size, in bytes, of each element in the array that the 
      <b>Ports</b> member specifies.
+
 
 ### -field Ports
 
@@ -92,24 +97,29 @@ An array that contains the port characteristics for each active NDIS port on a m
      <a href="netvista.ndis_port_characteristics">
      NDIS_PORT_CHARACTERISTICS</a> structure.
 
+
 ## -remarks
 The NDIS_PORT_ARRAY structure specifies characteristics, of all of the active NDIS ports on the
     miniport adapter, for the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569583">OID_GEN_ENUMERATE_PORTS</a> OID.
+
 
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -132,5 +142,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_ARRAY structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_ARRAY structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

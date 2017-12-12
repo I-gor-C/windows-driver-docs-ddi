@@ -41,6 +41,7 @@ req.irql:
 A streaming minidriver's <i>KStrIntersectHandler</i> routine is called to compare a data range to determine if there is an intersection, and if so, the data format of the intersection.
 
 
+
 ## -prototype
 
 ````
@@ -62,17 +63,21 @@ NTSTATUS KStrIntersectHandler(
 
 Specifies the IRP that handles the property request.
 
+
 ### -param Pin [in]
 
 Specifies the specific property being queried and the pin factory identifier that was validated.
+
 
 ### -param DataRange [in]
 
 Specifies the current data range to compare. The data range has been validated as either matching a particular range on the pin or as a wildcard match.
 
+
 ### -param Data [out, optional]
 
 Specifies the data format returned, or the size, in bytes, of the data format.
+
 
 ## -returns
 Returns STATUS_SUCCESS if there is a data intersection that fits in the supplied buffer. Otherwise, one of the following values is returned. 
@@ -88,6 +93,7 @@ Returns STATUS_SUCCESS if there is a data intersection that fits in the supplied
 
  
 
+
 ## -remarks
 
 
@@ -96,6 +102,7 @@ Returns STATUS_SUCCESS if there is a data intersection that fits in the supplied
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -106,6 +113,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -122,5 +130,8 @@ Header
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrIntersectHandler routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

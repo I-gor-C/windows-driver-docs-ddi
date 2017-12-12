@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The SCSISCAN_INFO structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a> (described in the Microsoft Windows SDK documentation), when the specified I/O control code is <a href="..\scsiscan\ni-scsiscan-ioctl_scsiscan_get_info.md">IOCTL_SCSISCAN_GET_INFO</a>.
 
 
+
 ## -syntax
 
 ````
@@ -64,33 +65,41 @@ typedef struct _SCSISCAN_INFO {
 
 Size, in bytes, of the SCSISCAN_INFO structure.
 
+
 ### -field Flags
 
 Not used, must be zero.
+
 
 ### -field PortNumber
 
 SCSI adapter number.
 
+
 ### -field PathId
 
 Host SCSI ID.
+
 
 ### -field TargetId
 
 Target SCSI ID.
 
+
 ### -field Lun
 
 Target logical unit number (LUN).
+
 
 ### -field AdapterName
 
 <i>For internal use only.</i>
 
+
 ### -field Reserved
 
 <i>For internal use only.</i>
+
 
 ## -remarks
 
@@ -100,6 +109,7 @@ Target logical unit number (LUN).
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 The <b>EtwWriteEx</b> function is a tracing function for publishing events that support filtering in your kernel-mode driver code. 
 
 
+
 ## -syntax
 
 ````
@@ -64,36 +65,45 @@ NTSTATUS EtwWriteEx(
 
 A pointer to the event provider registration handle, which is returned by the <a href="devtest.etwregister">EtwRegister</a> function if the event provider registration is successful.
 
+
 ### -param EventDescriptor [in]
 
 A pointer to the <a href="https://msdn.microsoft.com/cfe84b3d-fed2-4624-9899-8451e5b39de0">EVENT_DESCRIPTOR</a> structure. 
+
 
 ### -param Filter [in]
 
 The instance identifiers that identify the session to which the event will not written. That is, the value is a mask of sessions which should be excluded from logging (filtered out). Use a bitwise OR to specify multiple identifiers. Set to zero if you do not support filters or if the event is being written to all sessions (no filters failed). For information on getting the identifier for a session, see the <i>FilterData</i> parameter of your <a href="devtest.etwenablecallback">EtwEnableCallback</a> callback.  
 
+
 ### -param Flags [in]
 
 Reserved.  Must be  zero (0). 
+
 
 ### -param ActivityId [in, optional]
 
 The identifier that indicates the activity associated with the event. The <i>ActivityID</i> provides a way to group related events and is used in end-to-end tracing.  If NULL, ETW gets the identifier from the thread local storage. For details on getting this identifier, see <a href="devtest.etwactivityidcontrol">EtwActivityIdControl</a>.
 
+
 ### -param RelatedActivityId [in, optional]
 
 Activity identifier from the previous component. Use this parameter to link your component's events to the previous component's events. To get the activity identifier that was set for the previous component, see the descriptions for the <i>ControlCode</i> parameter of the <a href="devtest.etwactivityidcontrol">EtwActivityIdControl</a> function.
+
 
 ### -param UserDataCount [in]
 
 Number of EVENT_DATA_DESCRIPTOR structures in <i>UserData</i>. The maximum number is 128.
 
+
 ### -param UserData [in, optional]
 
 A pointer to the array of EVENT_DATA_DESCRIPTOR structures. Set this parameter to NULL if <i>UserDataCount</i> is zero. The data must be in the order specified in the manifest.
 
+
 ## -returns
 Returns ERROR_SUCCESS if successful or one of the following values on error.
+
 
 ## -remarks
 The <b>EtwWriteEx</b> function is the kernel-mode equivalent of the user-mode <a href="etw.eventwriteex">EventWriteEx</a> function. Event data written with this function requires a manifest. The manifest is embedded in the provider, so the provider must be available for a consumer to consume the data. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="devtest.etweventenabled">EtwEventEnabled</a> or <a href="devtest.etwproviderenabled">EtwProviderEnabled</a>. 
@@ -104,27 +114,33 @@ You can call <b>EtwWriteEx</b> at any IRQL. However, when IRQL is greater than A
 
 
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Minimum supported client
+
 </th>
 <td width="70%">
 Windows 7
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Minimum supported server
+
 </th>
 <td width="70%">
 Windows Server 2008 R2
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -135,6 +151,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -145,6 +162,7 @@ Header
 <tr>
 <th width="30%">
 Library
+
 </th>
 <td width="70%">
 <dl>
@@ -155,6 +173,7 @@ Library
 <tr>
 <th width="30%">
 DLL
+
 </th>
 <td width="70%">
 <dl>
@@ -177,5 +196,8 @@ DLL
 </dt>
 </dl>
  
+
  
+
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwWriteEx function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

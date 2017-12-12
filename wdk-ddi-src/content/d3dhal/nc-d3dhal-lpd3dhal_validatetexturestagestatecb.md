@@ -7,8 +7,8 @@ old-location: display\d3dvalidatetexturestagestate.htm
 old-project: display
 ms.assetid: 6376842f-ebf5-43b0-81d8-fc5b15f595ab
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS
+ms.date: 12/8/2017
+ms.keywords: _D3DTRANSFORMCAPS, D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -41,6 +41,7 @@ req.irql:
 The <b>D3dValidateTextureStageState</b> function returns the number of passes where the hardware can perform the blending operations specified in the current state.
 
 
+
 ## -prototype
 
 ````
@@ -58,6 +59,7 @@ DWORD APIENTRY D3dValidateTextureStageState(
 ### -param pvtssd [in]
 
 Points to a <a href="display.d3dhal_validatetexturestagestatedata">D3DHAL_VALIDATETEXTURESTAGESTATEDATA</a> structure that contains the information required for the driver to determine and return the number of passes required to perform the blending operations.
+
 
 ## -returns
 <b>D3dValidateTextureStageState</b> returns one of the following callback codes:
@@ -127,11 +129,13 @@ Attempting to use D3DTA_TFACTOR and D3DTA_DIFFUSE simultaneously. Some hardware 
 
 Attempting the simultaneous use of multiple textures and MIP mapped trilinear filtering. Many cards do not support these operations at the same time. If trilinear filtering has been requested for a texture involved in multitexture operations and it fails validation, turn off trilinear and try again. In this case, it may be best to do multipass rendering instead.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Target platform
+
 </th>
 <td width="70%">
 <dl>
@@ -142,6 +146,7 @@ Target platform
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -161,5 +166,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3dValidateTextureStageState callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3dValidateTextureStageState callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

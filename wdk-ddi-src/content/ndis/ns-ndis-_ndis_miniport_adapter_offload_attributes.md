@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_offload_attributes.htm
 old-project: netvista
 ms.assetid: 9ce875fc-ed3f-43e9-bfbc-081f02cb1999
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/8/2017
 ms.keywords: _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level
+req.irql: See Remarks section
 ---
 
 # _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure
@@ -40,6 +40,7 @@ req.irql: Any level
 ## -description
 An NDIS miniport driver sets up an NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure to define task
   offload and connection offload attributes, if any, that are associated with a miniport adapter.
+
 
 
 ## -syntax
@@ -67,17 +68,20 @@ The
      <b>Revision</b> member to NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES_REVISION_1.
 
+
 ### -field DefaultOffloadConfiguration
 
 A pointer to an 
      <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure that indicates the
      current offload capabilities that are provided by the miniport adapter.
 
+
 ### -field HardwareOffloadCapabilities
 
 A pointer to an NDIS_OFFLOAD structure that indicates all the task offload capabilites that are
      supported by the miniport adapter. These capabilities include capabilities that are currently disabled
      by standardized keywords in the registry.
+
 
 ### -field DefaultTcpConnectionOffloadConfiguration
 
@@ -86,11 +90,13 @@ A pointer to an
      NDIS_TCP_CONNECTION_OFFLOAD</a> structure that indicates the current connection offload capabilities
      that are provided by the miniport adapter.
 
+
 ### -field TcpConnectionOffloadHardwareCapabilities
 
 A pointer to an NDIS_TCP_CONNECTION_OFFLOAD structure that indicates all the connection offload
      capabilites that are supported by the miniport adapter. These capabilities include capabilities that are
      currently disabled by standardized keywords in the registry.
+
 
 ## -remarks
 A miniport driver that supports task offload or connection offload passes a pointer to an
@@ -102,19 +108,23 @@ A miniport driver that supports task offload or connection offload passes a poin
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
     during initialization.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and later.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -146,5 +156,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

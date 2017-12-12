@@ -7,7 +7,7 @@ old-location: storage\receive_token_information_header.htm
 old-project: storage
 ms.assetid: 3D8BF059-2063-499E-B287-41EE184A2264
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/8/2017
 ms.keywords: PRECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER, *PRECEIVE_TOKEN_INFORMATION_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <= APC_LEVEL
+req.irql: 
 req.product: Windows 10 or later.
 ---
 
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 The <b>RECEIVE_TOKEN_INFORMATION_HEADER</b> structure contains information returned as status from an offload data transfer operation.
+
 
 
 ## -syntax
@@ -71,9 +72,11 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 
 The amount of data available in the <b>SenseData</b> array and any additional result information.
 
+
 ### -field ResponseToServiceAction
 
 A response code indicating which command action the response is for. The service action codes are the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -86,6 +89,7 @@ A response code indicating which command action the response is for. The service
 </td>
 <td width="60%">
 The response information is for a POPULATE TOKEN command.
+
 </td>
 </tr>
 <tr>
@@ -95,18 +99,22 @@ The response information is for a POPULATE TOKEN command.
 </td>
 <td width="60%">
 The response information is for a WRITE USING TOKEN command.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Reserved1
 
 Reserved.
 
+
 ### -field OperationStatus
 
 The current status of the copy operation. The status can be one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -120,6 +128,7 @@ The current status of the copy operation. The status can be one of the following
 </td>
 <td width="60%">
 The operation completed successfully.
+
 </td>
 </tr>
 <tr>
@@ -130,6 +139,7 @@ The operation completed successfully.
 </td>
 <td width="60%">
 The operation completed unsuccessfully.
+
 </td>
 </tr>
 <tr>
@@ -140,6 +150,7 @@ The operation completed unsuccessfully.
 </td>
 <td width="60%">
 The operation completed successfully but the copy initiator should verify that all data was transferred.
+
 </td>
 </tr>
 <tr>
@@ -150,6 +161,7 @@ The operation completed successfully but the copy initiator should verify that a
 </td>
 <td width="60%">
 The operation is in progress. Foreground or background operation state is unknown.
+
 </td>
 </tr>
 <tr>
@@ -160,6 +172,7 @@ The operation is in progress. Foreground or background operation state is unknow
 </td>
 <td width="60%">
 The operation is in progress in the foreground.
+
 </td>
 </tr>
 <tr>
@@ -170,6 +183,7 @@ The operation is in progress in the foreground.
 </td>
 <td width="60%">
 The operation is in progress in the background.
+
 </td>
 </tr>
 <tr>
@@ -180,38 +194,47 @@ The operation is in progress in the background.
 </td>
 <td width="60%">
 The operation was terminated. Possibly by an existing resource reservation.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field Reserved2 
 
 Reserved.
+
 
 ### -field OperationCounter
 
 The number of commands processed for the current copy operation.
 
+
 ### -field EstimatedStatusUpdateDelay
 
 The recommended time, in milliseconds, to wait before sending the next RECEIVE COPY STATUS command for updated information about the current copy operation.
+
 
 ### -field CompletionStatus
 
 SCSI status code for the copy command operation.
 
+
 ### -field SenseDataFieldLength
 
 The length, in bytes, of the entire data area available for sense data. This value is always &gt;=  <b>SenseDataLength</b>.
+
 
 ### -field SenseDataLength
 
 The length, in bytes, of the data in <b>SenseData</b>.
 
+
 ### -field TransferCountUnits
 
 The byte units applied to <i>TransferCount</i>. Each unit expansion is a exponent in base 2. The multiplier value of <b>TRANSFER_COUNT_UNITS_KIBIBYTES</b>, for example, is 1024 and not 1000. The defined units are the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -224,6 +247,7 @@ The byte units applied to <i>TransferCount</i>. Each unit expansion is a exponen
 </td>
 <td width="60%">
 Transfer count is in bytes.
+
 </td>
 </tr>
 <tr>
@@ -233,6 +257,7 @@ Transfer count is in bytes.
 </td>
 <td width="60%">
 Transfer count is in kilobytes.
+
 </td>
 </tr>
 <tr>
@@ -242,6 +267,7 @@ Transfer count is in kilobytes.
 </td>
 <td width="60%">
 Transfer count is in megabytes.
+
 </td>
 </tr>
 <tr>
@@ -251,6 +277,7 @@ Transfer count is in megabytes.
 </td>
 <td width="60%">
 Transfer count is in gigabytes.
+
 </td>
 </tr>
 <tr>
@@ -260,6 +287,7 @@ Transfer count is in gigabytes.
 </td>
 <td width="60%">
 Transfer count is in terabytes.
+
 </td>
 </tr>
 <tr>
@@ -269,6 +297,7 @@ Transfer count is in terabytes.
 </td>
 <td width="60%">
 Transfer count is in petabytes.
+
 </td>
 </tr>
 <tr>
@@ -278,6 +307,7 @@ Transfer count is in petabytes.
 </td>
 <td width="60%">
 Transfer count is in exabytes.
+
 </td>
 </tr>
 <tr>
@@ -287,45 +317,55 @@ Transfer count is in exabytes.
 </td>
 <td width="60%">
 Transfer count is not an exponent, but in units of logical block length.
+
 </td>
 </tr>
 </table>
  
 
+
 ### -field TransferCount
 
 The length of data transferred in the operation. The unit type in <b>TransferCountUnits</b> is applied to this value to give the total byte count.
+
 
 ### -field SegmentsProcessed
 
 The number of segments processed for the data transfer operation. Segments are copy length units used internally by a storage device's copy provider. On Windowssystems, this value is reserved and applications must ignore this member.
 
+
 ### -field Reserved3
 
 Reserved.
 
+
 ### -field SenseData
 
 Sense data returned for the copy operation.
+
 
 ## -remarks
 If <b>RECEIVE_TOKEN_INFORMATION_HEADER</b> is for a POPULATE TOKEN command operation, and the command completed successfully, a <a href="storage.receive_token_information_response_header">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure will also be present after <b>SenseData</b> at an offset of <b>SenseDataFieldLength</b> from the beginning of the <b>SenseData</b> array. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure will contain the token created as a representation of data (ROD) for the range parameters sent with the command.
 
 All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
 
+
 ## -requirements
 <table>
 <tr>
 <th width="30%">
 Version
+
 </th>
 <td width="70%">
 Available starting with Windows 8.
+
 </td>
 </tr>
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>
@@ -342,5 +382,8 @@ Header
 </dt>
 </dl>
  
+
  
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RECEIVE_TOKEN_INFORMATION_HEADER structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RECEIVE_TOKEN_INFORMATION_HEADER structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
