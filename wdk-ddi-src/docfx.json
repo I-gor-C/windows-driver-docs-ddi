@@ -31,11 +31,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/wdk-ref/breadcrumb/toc.json",
+      "breadcrumb_path": "/windows-hardware/drivers/ddi/breadcrumb/toc.json",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "wdk-ref"
+    "dest": "windows-hardware/drivers/ddi"
   }
 }
