@@ -4,11 +4,11 @@ title: RILHIDECONNECTEDIDSETTINGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilhideconnectedidsettings_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ee5111c6-3353-40a9-9b2b-c3d2a595a528
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS, *LPRILHIDECONNECTEDIDSETTINGS
+ms.date: 12/14/2017
+ms.keywords: RILHIDECONNECTEDIDSETTINGS, *LPRILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

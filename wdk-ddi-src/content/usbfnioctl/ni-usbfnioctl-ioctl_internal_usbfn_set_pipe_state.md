@@ -4,11 +4,11 @@ title: IOCTL_INTERNAL_USBFN_SET_PIPE_STATE
 author: windows-driver-content
 description: The class driver sends this request to set the stall state of the specified USB pipe.
 old-location: buses\ioctl_internal_usbfn_set_pipe_state.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: EB44DE6F-6B88-4F6D-B9AC-3FF7A519C047
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.date: 12/14/2017
+ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

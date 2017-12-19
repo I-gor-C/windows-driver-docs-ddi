@@ -7,7 +7,7 @@ old-location: stream\kssetinformationfile.htm
 old-project: stream
 ms.assetid: 878c6565-99f9-4f45-abba-ba4ece5b5743
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsSetInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices

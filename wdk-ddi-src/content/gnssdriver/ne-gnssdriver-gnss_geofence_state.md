@@ -7,7 +7,7 @@ old-location: sensors\gnss_geofence_state.htm
 old-project: sensors
 ms.assetid: 881363B2-CF4C-4D18-9F45-829771A2D325
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_GEOFENCE_STATE, GNSS_GEOFENCE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

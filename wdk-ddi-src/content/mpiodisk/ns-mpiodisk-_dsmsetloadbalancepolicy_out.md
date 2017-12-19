@@ -7,8 +7,8 @@ old-location: storage\dsmsetloadbalancepolicy_out.htm
 old-project: storage
 ms.assetid: d3479656-310f-4e2d-a671-296bc3e2f1ab
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DsmSetLoadBalancePolicy_OUT, *PDsmSetLoadBalancePolicy_OUT, DsmSetLoadBalancePolicy_OUT
+ms.date: 12/15/2017
+ms.keywords: _DsmSetLoadBalancePolicy_OUT, *PDsmSetLoadBalancePolicy_OUT, DsmSetLoadBalancePolicy_OUT, PDsmSetLoadBalancePolicy_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

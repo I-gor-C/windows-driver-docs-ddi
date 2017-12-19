@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_gamma_ramp.htm
 old-project: display
 ms.assetid: 3a875a1e-ef4f-4851-9329-f1fd2aca261f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_GAMMA_RAMP, D3DKMDT_GAMMA_RAMP
 ms.prod: windows-hardware
 ms.technology: windows-devices

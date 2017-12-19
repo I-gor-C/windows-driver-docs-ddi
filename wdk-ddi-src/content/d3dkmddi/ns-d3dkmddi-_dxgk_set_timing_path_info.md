@@ -7,7 +7,7 @@ old-location: display\dxgk_set_timing_path_info.htm
 old-project: display
 ms.assetid: 23B42F75-6313-430F-8CD3-EBAAE87C7815
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_SET_TIMING_PATH_INFO, DXGK_SET_TIMING_PATH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

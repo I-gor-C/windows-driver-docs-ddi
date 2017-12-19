@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_policy_idle_timeout_constants.htm
 old-project: wdf
 ms.assetid: a707c7b9-2fc9-48c8-9492-b911c126668b
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\scsi_addr.htm
 old-project: storage
 ms.assetid: d53e0b05-8761-4b88-a7d5-081244b3dc93
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SCSI_ADDR, *PSCSI_ADDR, SCSI_ADDR
+ms.date: 12/15/2017
+ms.keywords: _SCSI_ADDR, PSCSI_ADDR, SCSI_ADDR, *PSCSI_ADDR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

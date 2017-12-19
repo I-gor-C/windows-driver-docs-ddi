@@ -7,8 +7,8 @@ old-location: smartcrd\vendor_attr.htm
 old-project: smartcrd
 ms.assetid: f166ced5-2d63-4e35-af77-78ca80c888d7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VENDOR_ATTR, *PVENDOR_ATTR, VENDOR_ATTR
+ms.date: 12/14/2017
+ms.keywords: _VENDOR_ATTR, *PVENDOR_ATTR, VENDOR_ATTR, PVENDOR_ATTR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

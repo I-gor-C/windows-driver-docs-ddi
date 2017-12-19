@@ -4,10 +4,10 @@ title: wiauGetDrvItemContext function
 author: windows-driver-content
 description: The wiauGetDrvItemContext function gets the driver item context, and optionally, the driver item.
 old-location: image\wiaugetdrvitemcontext.htm
-old-project: image
+old-project: Image
 ms.assetid: 6d4b7a25-436f-4547-8969-66dd45fa46fd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiauGetDrvItemContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

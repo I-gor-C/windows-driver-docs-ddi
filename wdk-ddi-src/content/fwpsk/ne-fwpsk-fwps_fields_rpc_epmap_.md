@@ -4,10 +4,10 @@ title: FWPS_FIELDS_RPC_EPMAP_
 author: windows-driver-content
 description: The FWPS_FIELDS_RPC_EPMAP enumeration type specifies the data field identifiers for the FWPS_LAYER_RPC_EPMAP run-time filtering layer.
 old-location: netvista\fwps_fields_rpc_epmap.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 78960e0c-6b27-4331-a0e0-3f7ba13a54cf
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_RPC_EPMAP_, FWPS_FIELDS_RPC_EPMAP
 ms.prod: windows-hardware
 ms.technology: windows-devices

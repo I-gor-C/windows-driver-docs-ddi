@@ -7,8 +7,8 @@ old-location: bltooth\sco_disconnect_reason.htm
 old-project: bltooth
 ms.assetid: bca4bfc6-d44f-4b10-a30a-ba2acefad7a9
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SCO_DISCONNECT_REASON, *PSCO_DISCONNECT_REASON, SCO_DISCONNECT_REASON
+ms.date: 12/14/2017
+ms.keywords: _SCO_DISCONNECT_REASON, *PSCO_DISCONNECT_REASON, PSCO_DISCONNECT_REASON, SCO_DISCONNECT_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -133,5 +133,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SCO_DISCONNECT_REASON enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SCO_DISCONNECT_REASON enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

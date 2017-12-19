@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_states.htm
 old-project: display
 ms.assetid: E5DB8AF3-A6ED-4CD7-9723-78ACD57F1723
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_RESOURCE_STATES, D3D12DDI_RESOURCE_STATES
 ms.prod: windows-hardware
 ms.technology: windows-devices

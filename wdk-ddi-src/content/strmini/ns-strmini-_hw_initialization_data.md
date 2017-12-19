@@ -7,8 +7,8 @@ old-location: stream\hw_initialization_data.htm
 old-project: stream
 ms.assetid: 5be9ba51-bd6c-4650-9c48-f89267a2ac16
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA, *PHW_INITIALIZATION_DATA
+ms.date: 12/14/2017
+ms.keywords: _HW_INITIALIZATION_DATA, *PHW_INITIALIZATION_DATA, PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

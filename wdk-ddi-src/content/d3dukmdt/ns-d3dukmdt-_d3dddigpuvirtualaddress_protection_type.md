@@ -7,7 +7,7 @@ old-location: display\d3dddigpuvirtualaddress_protection_type.htm
 old-project: display
 ms.assetid: CA46EEC4-5F3D-4E4C-8C83-6D91BE301C68
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE, D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

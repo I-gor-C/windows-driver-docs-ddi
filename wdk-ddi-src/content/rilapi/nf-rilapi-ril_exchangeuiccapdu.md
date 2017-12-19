@@ -4,10 +4,10 @@ title: RIL_ExchangeUiccAPDU function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_exchangeuiccapdu.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e0d0eaa5-8f3a-4522-b99b-76f42402dae9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_ExchangeUiccAPDU
 ms.prod: windows-hardware
 ms.technology: windows-devices

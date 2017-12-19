@@ -7,7 +7,7 @@ old-location: display\iddcx_feature_implementation.htm
 old-project: display
 ms.assetid: 7bed6940-3f69-4cc0-b746-98cd7441f4b8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_FEATURE_IMPLEMENTATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices

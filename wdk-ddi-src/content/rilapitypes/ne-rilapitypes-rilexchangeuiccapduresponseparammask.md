@@ -4,10 +4,10 @@ title: RILEXCHANGEUICCAPDURESPONSEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexchangeuiccapduresponseparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6192920a-138b-49d9-ba78-84e3e70cb8df
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILEXCHANGEUICCAPDURESPONSEPARAMMASK, RILEXCHANGEUICCAPDURESPONSEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

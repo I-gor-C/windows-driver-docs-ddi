@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_stretch_quality.htm
 old-project: display
 ms.assetid: 531F541F-4F53-4FAC-A1B7-B51467F34833
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY, D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

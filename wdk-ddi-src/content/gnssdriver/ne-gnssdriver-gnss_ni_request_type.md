@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_request_type.htm
 old-project: sensors
 ms.assetid: 79AFC7D8-5A51-49CC-8ADA-7D21C6859254
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_NI_REQUEST_TYPE, GNSS_NI_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql: <= DISPATCH_LEVEL
 
 
 ## -description
-This enumeration indicates the network initiated (NI) request type represented by the <a href="sensors.gnss_ni_request_param">GNSS_NI_REQUEST_PARAM</a> structure.
+This enumeration indicates the network initiated (NI) request type represented by the <a href="..\gnssdriver\ns-gnssdriver-gnss_ni_request_param.md">GNSS_NI_REQUEST_PARAM</a> structure.
 
 
 

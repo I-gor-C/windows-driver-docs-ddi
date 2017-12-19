@@ -7,7 +7,7 @@ old-location: stream\ksmethodhandlerwithallocator.htm
 old-project: stream
 ms.assetid: 3a4c2eaa-167a-406a-a792-612c3e624f89
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsMethodHandlerWithAllocator
 ms.prod: windows-hardware
 ms.technology: windows-devices

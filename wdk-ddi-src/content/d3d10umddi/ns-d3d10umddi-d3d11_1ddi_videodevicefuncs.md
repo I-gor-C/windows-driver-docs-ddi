@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_videodevicefuncs.htm
 old-project: display
 ms.assetid: c843fe5c-19bc-479c-8d8d-a3a6146dfb1c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_VIDEODEVICEFUNCS, D3D11_1DDI_VIDEODEVICEFUNCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -145,7 +145,7 @@ The entry point for the driver's <a href="display.getvideodecoderprofile">VideoD
 
 ### -field pfnCheckVideoDecoderFormat
 
-The entry point for the driver's <a href="display.checkvideodecoderformat">CheckVideoDecoderFormat</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_checkvideodecoderformat.md">CheckVideoDecoderFormat</a> function.
 
 
 ### -field pfnGetVideoDecoderConfigCount
@@ -170,7 +170,7 @@ The entry point for the driver's <a href="display.getvideodecoderbufferinfo">Get
 
 ### -field pfnCalcPrivateVideoDecoderSize
 
-The entry point for the driver's <a href="display.calcprivatevideodecodersize">CalcPrivateVideoDecoderSize</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideodecodersize.md">CalcPrivateVideoDecoderSize</a> function.
 
 
 ### -field pfnCreateVideoDecoder
@@ -205,7 +205,7 @@ The entry point for the driver's <a href="display.videodecodersubmitbuffers">Vid
 
 ### -field pfnCalcPrivateVideoProcessorEnumSize
 
-The entry point for the driver's <a href="display.calcprivatevideoprocessorenumsize">CalcPrivateVideoProcessorEnumSize</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessorenumsize.md">CalcPrivateVideoProcessorEnumSize</a> function.
 
 
 ### -field pfnCreateVideoProcessorEnum
@@ -220,7 +220,7 @@ The entry point for the driver's <a href="display.destroyvideoprocessorenum">Des
 
 ### -field pfnCheckVideoProcessorFormat
 
-The entry point for the driver's <a href="display.checkvideoprocessorformat">CheckVideoProcessorFormat</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_checkvideoprocessorformat.md">CheckVideoProcessorFormat</a> function.
 
 
 ### -field pfnGetVideoProcessorCaps
@@ -245,7 +245,7 @@ The entry point for the driver's <a href="display.getvideoprocessorfilterrange">
 
 ### -field pfnCalcPrivateVideoProcessorSize
 
-The entry point for the driver's <a href="display.calcprivatevideoprocessorsize">CalcPrivateVideoProcessorSize</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessorsize.md">CalcPrivateVideoProcessorSize</a> function.
 
 
 ### -field pfnCreateVideoProcessor
@@ -375,7 +375,7 @@ The entry point for the driver's <a href="display.videoprocessorblt">VideoProces
 
 ### -field pfnCalcPrivateVideoDecoderOutputViewSize
 
-The entry point for the driver's <a href="display.calcprivatevideodecoderoutputviewsize">CalcPrivateVideoDecoderOutputViewSize</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideodecoderoutputviewsize.md">CalcPrivateVideoDecoderOutputViewSize</a> function.
 
 
 ### -field pfnCreateVideoDecoderOutputView
@@ -440,7 +440,7 @@ The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1
 
 ### -field pfnCreateCryptoSession
 
-The entry point for the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a> function.
 
 
 ### -field pfnDestroyCryptoSession
@@ -490,7 +490,7 @@ The entry point for the driver's <a href="display.getencryptionbltkey1">GetEncry
 
 ### -field pfnCalcPrivateAuthenticatedChannelSize
 
-The entry point for the driver's <a href="display.calcprivateauthenticatedchannelsize">CalcPrivateAuthenticatedChannelSize</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivateauthenticatedchannelsize.md">CalcPrivateAuthenticatedChannelSize</a> function.
 
 
 ### -field pfnCreateAuthenticatedChannel
@@ -525,7 +525,7 @@ The entry point for the driver's <a href="display.videodecodergethandle">VideoDe
 
 ### -field pfnCryptoSessionGetHandle
 
-The entry point for the driver's <a href="display.cryptosessiongethandle">CryptoSessionGetHandle</a> function.
+The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_cryptosessiongethandle.md">CryptoSessionGetHandle</a> function.
 
 
 ### -field pfnVideoProcessorSetStreamRotation

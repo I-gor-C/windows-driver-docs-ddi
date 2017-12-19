@@ -4,10 +4,10 @@ title: RILGEOLOCATIONREQUESTACCURACY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgeolocationrequestaccuracy.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e1e6ca44-a027-4800-9932-617f3bb4679d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILGEOLOCATIONREQUESTACCURACY, RILGEOLOCATIONREQUESTACCURACY
 ms.prod: windows-hardware
 ms.technology: windows-devices

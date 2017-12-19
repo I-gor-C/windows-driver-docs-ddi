@@ -7,7 +7,7 @@ old-location: print\logjobinfoforbranchoffice.htm
 old-project: print
 ms.assetid: 6D1AB299-2E26-42AF-9613-CA321173080D
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: LogJobInfoForBranchOffice
 ms.prod: windows-hardware
 ms.technology: windows-devices

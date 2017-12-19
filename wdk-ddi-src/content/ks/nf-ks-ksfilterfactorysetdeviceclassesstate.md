@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactorysetdeviceclassesstate.htm
 old-project: stream
 ms.assetid: 66515f08-b652-4aa0-8f22-b5ff0a407d6a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsFilterFactorySetDeviceClassesState
 ms.prod: windows-hardware
 ms.technology: windows-devices

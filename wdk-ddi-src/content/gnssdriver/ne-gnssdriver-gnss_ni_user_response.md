@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_user_response.htm
 old-project: sensors
 ms.assetid: FD4A244D-641C-46A7-8777-8F64A5400D23
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_NI_USER_RESPONSE, GNSS_NI_USER_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql: <= DISPATCH_LEVEL
 
 
 ## -description
-This enumeration indicates the user’s response to a network initiated (NI) request, which is represented by the <a href="sensors.gnss_ni_response">GNSS_NI_RESPONSE</a> structure.
+This enumeration indicates the user’s response to a network initiated (NI) request, which is represented by the <a href="..\gnssdriver\ns-gnssdriver-gnss_ni_response.md">GNSS_NI_RESPONSE</a> structure.
 
 
 

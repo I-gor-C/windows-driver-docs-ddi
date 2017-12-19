@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_dispatch_type.htm
 old-project: wdf
 ms.assetid: 90f2f490-ee29-4e20-94b2-65a9bba3e831
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _WDF_IO_QUEUE_DISPATCH_TYPE, WDF_IO_QUEUE_DISPATCH_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

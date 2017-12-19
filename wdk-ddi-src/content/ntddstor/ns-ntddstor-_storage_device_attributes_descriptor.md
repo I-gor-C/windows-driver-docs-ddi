@@ -7,8 +7,8 @@ old-location: storage\storage_device_attributes_descriptor.htm
 old-project: storage
 ms.assetid: DA8434EF-6163-4D07-A81D-D1AC2D55BFB4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, *PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

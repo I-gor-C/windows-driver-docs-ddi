@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_power_state.htm
 old-project: wdf
 ms.assetid: 06bb6465-afc6-4b92-b3d7-1c66f6c6c33d
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_DEVICE_POWER_STATE, WDF_DEVICE_POWER_STATE, *PWDF_DEVICE_POWER_STATE
+ms.date: 12/15/2017
+ms.keywords: _WDF_DEVICE_POWER_STATE, *PWDF_DEVICE_POWER_STATE, PWDF_DEVICE_POWER_STATE, WDF_DEVICE_POWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

@@ -4,10 +4,10 @@ title: RILEXECUTORFOCUSSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexecutorfocusstateparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3c5d14cf-bfbc-439c-9ade-1a672f0b3fca
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILEXECUTORFOCUSSTATEPARAMMASK, RILEXECUTORFOCUSSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

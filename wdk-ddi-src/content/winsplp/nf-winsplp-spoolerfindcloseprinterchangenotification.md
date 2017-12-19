@@ -7,7 +7,7 @@ old-location: print\spoolerfindcloseprinterchangenotification.htm
 old-project: print
 ms.assetid: 13C65DAB-04BA-4B19-B810-B484F7C1C4DA
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: SpoolerFindClosePrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices

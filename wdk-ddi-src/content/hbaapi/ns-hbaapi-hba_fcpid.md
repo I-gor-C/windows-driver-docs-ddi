@@ -7,8 +7,8 @@ old-location: storage\hba_fcpid.htm
 old-project: storage
 ms.assetid: fed2c733-5011-4dba-a8ec-3a0742574949
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: HBA_FcpId, *PHBA_FCPID, HBA_FCPID
+ms.date: 12/15/2017
+ms.keywords: HBA_FcpId, *PHBA_FCPID, PHBA_FCPID, HBA_FCPID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

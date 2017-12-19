@@ -7,7 +7,7 @@ old-location: stream\ksfreedefaultclock.htm
 old-project: stream
 ms.assetid: e2fc87c9-e48f-4e18-ae1b-52a7cc701e91
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsFreeDefaultClock
 ms.prod: windows-hardware
 ms.technology: windows-devices

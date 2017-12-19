@@ -7,7 +7,7 @@ old-location: print\notification_callback_commands.htm
 old-project: print
 ms.assetid: D93D09AE-B0B8-4682-BBBA-1EEC952A733D
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: _NOTIFICATION_CALLBACK_COMMANDS, NOTIFICATION_CALLBACK_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: battery\ioctl_cad_get_charging_status_complete.htm
 old-project: battery
 ms.assetid: 715F1DF3-C3CF-4662-8095-22ECA0E45796
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
+ms.date: 12/14/2017
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

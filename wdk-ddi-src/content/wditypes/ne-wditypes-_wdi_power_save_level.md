@@ -4,10 +4,10 @@ title: _WDI_POWER_SAVE_LEVEL
 author: windows-driver-content
 description: The WDI_POWER_SAVE_LEVEL enumeration defines the power save levels.
 old-location: netvista\wdi_power_save_level.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3CB311C1-8FAE-44D5-896D-972F5DF1E88A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_POWER_SAVE_LEVEL, WDI_POWER_SAVE_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices

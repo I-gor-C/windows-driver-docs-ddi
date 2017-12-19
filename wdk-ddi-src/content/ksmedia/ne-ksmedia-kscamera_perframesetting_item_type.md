@@ -7,7 +7,7 @@ old-location: stream\kscamera_perframesetting_item_type.htm
 old-project: stream
 ms.assetid: B4312084-E545-45FD-BA93-3BE551CE52DF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSCAMERA_PERFRAMESETTING_ITEM_TYPE, KSCAMERA_PERFRAMESETTING_ITEM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

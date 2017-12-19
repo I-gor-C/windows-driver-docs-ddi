@@ -4,10 +4,10 @@ title: VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT function
 author: windows-driver-content
 description: The VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT function saves callback functions to be used for state changes for a channel.
 old-location: netvista\vmb_channel_state_change_callbacks_init.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2255C8A2-85FB-4B96-8AE9-66FAFD73EE73
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: kernel\rtlshortadd.htm
 old-project: kernel
 ms.assetid: 6CCBDECB-D52A-409D-91CA-6635E6D02545
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlShortAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

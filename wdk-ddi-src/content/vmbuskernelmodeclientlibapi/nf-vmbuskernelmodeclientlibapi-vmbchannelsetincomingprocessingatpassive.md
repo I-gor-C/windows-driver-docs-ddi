@@ -4,10 +4,10 @@ title: VmbChannelSetIncomingProcessingAtPassive function
 author: windows-driver-content
 description: The VmbChannelSetIncomingProcessingAtPassive function sets the required IRQL for incoming parsing routines for a channel to PASSIVE_LEVEL.
 old-location: netvista\vmbchannelsetincomingprocessingatpassive.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: D8677CD9-46CB-41AB-8F05-418A31468C07
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelSetIncomingProcessingAtPassive
 ms.prod: windows-hardware
 ms.technology: windows-devices

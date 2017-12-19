@@ -4,11 +4,11 @@ title: RILADDCALLFORWARDINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riladdcallforwardingparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8918552d-6a7b-414a-ab0c-a5690f109db4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS, LPRILADDCALLFORWARDINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

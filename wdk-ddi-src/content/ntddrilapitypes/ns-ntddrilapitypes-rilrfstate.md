@@ -4,11 +4,11 @@ title: RILRFSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrfstate.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7eb78864-d20c-4993-8b33-63096bf971fa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILRFSTATE, RILRFSTATE, *LPRILRFSTATE
+ms.date: 12/14/2017
+ms.keywords: RILRFSTATE, LPRILRFSTATE, RILRFSTATE, *LPRILRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

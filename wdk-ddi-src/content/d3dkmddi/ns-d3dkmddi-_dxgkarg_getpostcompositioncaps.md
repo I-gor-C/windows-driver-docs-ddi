@@ -7,7 +7,7 @@ old-location: display\dxgkarg_getpostcompositioncaps.htm
 old-project: display
 ms.assetid: 0C8A0F83-9D12-46F1-A8B1-3BCF219A3BF7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_GETPOSTCOMPOSITIONCAPS, DXGKARG_GETPOSTCOMPOSITIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

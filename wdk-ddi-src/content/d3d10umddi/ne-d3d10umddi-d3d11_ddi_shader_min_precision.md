@@ -7,7 +7,7 @@ old-location: display\d3d11_ddi_shader_min_precision.htm
 old-project: display
 ms.assetid: cf77d6c7-8f42-470a-9e3a-85d95398470b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_DDI_SHADER_MIN_PRECISION, D3D11_DDI_SHADER_MIN_PRECISION
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: pci\sriov_query_probed_bars_2.htm
 old-project: PCI
 ms.assetid: e0c079aa-8adf-42c9-a4ac-bfc623471964
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

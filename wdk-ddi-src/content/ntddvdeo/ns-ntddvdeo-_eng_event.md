@@ -7,8 +7,8 @@ old-location: display\eng_event.htm
 old-project: display
 ms.assetid: 8c785e23-5b80-4518-8a90-3f46e8ad9b1d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _ENG_EVENT, *PEVENT, ENG_EVENT, *PENG_EVENT
+ms.date: 12/15/2017
+ms.keywords: _ENG_EVENT, *PEVENT, *PENG_EVENT, ENG_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

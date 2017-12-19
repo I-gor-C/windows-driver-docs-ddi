@@ -7,8 +7,8 @@ old-location: print\oemuiprocs.htm
 old-project: print
 ms.assetid: 67dfb4bd-c43c-4da3-833d-34050d49dea3
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OEMUIPROCS, OEMUIPROCS, *POEMUIPROCS
+ms.date: 12/14/2017
+ms.keywords: _OEMUIPROCS, POEMUIPROCS, *POEMUIPROCS, OEMUIPROCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

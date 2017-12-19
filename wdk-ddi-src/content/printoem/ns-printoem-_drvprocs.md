@@ -7,8 +7,8 @@ old-location: print\drvprocs.htm
 old-project: print
 ms.assetid: fcdfb7ba-cbb4-454b-b366-82d0c95b4afd
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _DRVPROCS, *PDRVPROCS, DRVPROCS
+ms.date: 12/14/2017
+ms.keywords: _DRVPROCS, DRVPROCS, PDRVPROCS, *PDRVPROCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\d3dkmt-extractbundleobject.htm
 old-project: display
 ms.assetid: 85112ddb-47e6-4874-bd64-a7e4d7ca0fd3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_EXTRACTBUNDLEOBJECT, D3DKMT_EXTRACTBUNDLEOBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices

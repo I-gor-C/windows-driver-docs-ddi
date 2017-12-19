@@ -7,8 +7,8 @@ old-location: storage\mpio_dsm_path_v2.htm
 old-project: storage
 ms.assetid: 8ebbb4c0-c761-42a5-a41a-9d661a6126d9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_DSM_Path_V2, MPIO_DSM_Path_V2, *PMPIO_DSM_Path_V2
+ms.date: 12/15/2017
+ms.keywords: _MPIO_DSM_Path_V2, MPIO_DSM_Path_V2, PMPIO_DSM_Path_V2, *PMPIO_DSM_Path_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

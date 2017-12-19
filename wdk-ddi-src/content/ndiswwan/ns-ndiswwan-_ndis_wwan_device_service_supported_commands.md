@@ -4,11 +4,11 @@ title: _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 author: windows-driver-content
 description: The NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure represents a list of commands supported by a device service.
 old-location: netvista\ndis_wwan_device_service_supported_commands.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5F619FBF-4152-447E-B228-D4147687E929
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
+ms.date: 12/14/2017
+ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

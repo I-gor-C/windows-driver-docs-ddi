@@ -4,10 +4,10 @@ title: RILHIDEIDSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilhideidsettingsparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5c951b21-1fa9-4b76-8631-3ab4148176ef
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILHIDEIDSETTINGSPARAMMASK, RILHIDEIDSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

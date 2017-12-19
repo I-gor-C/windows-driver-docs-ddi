@@ -7,8 +7,8 @@ old-location: audio\hdaudio_stream_state.htm
 old-project: audio
 ms.assetid: A1029A2D-980F-44F5-B7D6-1C37F97D0368
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE, *PHDAUDIO_STREAM_STATE
+ms.date: 12/14/2017
+ms.keywords: _HDAUDIO_STREAM_STATE, PHDAUDIO_STREAM_STATE, *PHDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

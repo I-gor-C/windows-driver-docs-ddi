@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_allocate_resources_wxp.htm
 old-project: IEEE
 ms.assetid: 8DE03C05-48A4-4699-8513-F2B596EED37F
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
 ms.prod: windows-hardware
 ms.technology: windows-devices

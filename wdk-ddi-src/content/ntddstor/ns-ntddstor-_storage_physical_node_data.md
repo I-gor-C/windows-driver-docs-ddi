@@ -7,8 +7,8 @@ old-location: storage\storage_physical_node_data.htm
 old-project: storage
 ms.assetid: F6C1EE86-FB1C-467D-9E03-B238CB132D1A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_PHYSICAL_NODE_DATA, *PSTORAGE_PHYSICAL_NODE_DATA, STORAGE_PHYSICAL_NODE_DATA
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_PHYSICAL_NODE_DATA, *PSTORAGE_PHYSICAL_NODE_DATA, PSTORAGE_PHYSICAL_NODE_DATA, STORAGE_PHYSICAL_NODE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

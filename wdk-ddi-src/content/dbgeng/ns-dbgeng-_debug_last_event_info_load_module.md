@@ -4,11 +4,11 @@ title: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE
 author: windows-driver-content
 description: Describes the load module of the last event.
 old-location: debugger\debug_last_event_info_load_module.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 0C2371FE-935A-499B-8E7C-09AA6C03FC90
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_LOAD_MODULE, DEBUG_LAST_EVENT_INFO_LOAD_MODULE
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE, PDEBUG_LAST_EVENT_INFO_LOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_LOAD_MODULE, DEBUG_LAST_EVENT_INFO_LOAD_MODULE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

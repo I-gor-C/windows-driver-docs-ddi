@@ -7,7 +7,7 @@ old-location: display\iddcx_opm_get_info_parameters.htm
 old-project: display
 ms.assetid: d36a0545-22cf-4980-aa1a-d3b9dd7f9871
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_OPM_GET_INFO_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

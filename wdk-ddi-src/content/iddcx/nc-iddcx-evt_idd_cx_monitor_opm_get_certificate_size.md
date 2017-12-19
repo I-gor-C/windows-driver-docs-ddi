@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_opm_get_certificate_size.htm
 old-project: display
 ms.assetid: f5293625-19eb-4df9-9934-1e1990b7d608
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

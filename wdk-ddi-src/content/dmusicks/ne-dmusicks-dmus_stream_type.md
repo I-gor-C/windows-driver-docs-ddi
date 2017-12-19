@@ -7,7 +7,7 @@ old-location: audio\dmus_stream_type.htm
 old-project: audio
 ms.assetid: C4218B83-6D6D-4F3B-A90F-B92D08D80E24
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: DMUS_STREAM_TYPE, DMUS_STREAM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

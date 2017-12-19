@@ -7,7 +7,7 @@ old-location: stream\avcsubunittype.htm
 old-project: stream
 ms.assetid: c99db45c-2d99-4bf7-98f8-4d9501ac81c0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _tagAvcSubunitType, AvcSubunitType
 ms.prod: windows-hardware
 ms.technology: windows-devices

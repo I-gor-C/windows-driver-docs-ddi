@@ -7,7 +7,7 @@ old-location: kernel\iogetinitiatorprocess.htm
 old-project: kernel
 ms.assetid: 653B4FD5-4C07-420A-BE8A-CC8C46BC6F0F
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: IoGetInitiatorProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices

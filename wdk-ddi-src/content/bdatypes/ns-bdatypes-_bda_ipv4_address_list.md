@@ -7,8 +7,8 @@ old-location: stream\bda_ipv4_address_list.htm
 old-project: stream
 ms.assetid: 92E90C2A-D59C-4A38-A444-978B16170B89
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_IPv4_ADDRESS_LIST, *PBDA_IPv4_ADDRESS_LIST, BDA_IPv4_ADDRESS_LIST
+ms.date: 12/14/2017
+ms.keywords: _BDA_IPv4_ADDRESS_LIST, PBDA_IPv4_ADDRESS_LIST, BDA_IPv4_ADDRESS_LIST, *PBDA_IPv4_ADDRESS_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

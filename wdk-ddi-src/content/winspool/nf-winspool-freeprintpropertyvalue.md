@@ -7,7 +7,7 @@ old-location: print\freeprintpropertyvalue.htm
 old-project: print
 ms.assetid: 38B760D9-CB6E-45AD-A83F-3C26D1B31A30
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: FreePrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices

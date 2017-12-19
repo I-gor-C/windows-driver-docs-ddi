@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_policy_wake_settings_init.htm
 old-project: wdf
 ms.assetid: bb712c92-c926-4a7a-a126-db4db3bc728f
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

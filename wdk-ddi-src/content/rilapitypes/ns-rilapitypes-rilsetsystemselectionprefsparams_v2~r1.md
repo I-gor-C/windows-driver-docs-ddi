@@ -4,11 +4,11 @@ title: RILSETSYSTEMSELECTIONPREFSPARAMS_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetsystemselectionprefsparams_v2_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d6284633-1f56-412c-a97a-b6c740129cce
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS, RILSETSYSTEMSELECTIONPREFSPARAMS, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2
+ms.date: 12/14/2017
+ms.keywords: RILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS, RILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

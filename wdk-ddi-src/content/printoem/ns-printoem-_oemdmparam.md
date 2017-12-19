@@ -7,8 +7,8 @@ old-location: print\oemdmparam.htm
 old-project: print
 ms.assetid: 625980d1-47eb-4427-a9e8-967b1873bbd6
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OEMDMPARAM, *POEMDMPARAM, OEMDMPARAM
+ms.date: 12/14/2017
+ms.keywords: _OEMDMPARAM, OEMDMPARAM, POEMDMPARAM, *POEMDMPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

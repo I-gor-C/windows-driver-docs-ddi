@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_command_queue_flags.htm
 old-project: display
 ms.assetid: A5EFE133-6F63-4EA4-8F7F-B2B6A4E1838C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_COMMAND_QUEUE_FLAGS, D3D12DDI_COMMAND_QUEUE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: _WDI_DATA_RATE_ENTRY
 author: windows-driver-content
 description: The WDI_DATA_RATE_ENTRY structure defines a data rate entry.
 old-location: netvista\wdi_data_rate_entry.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 16A4B49B-9912-40BE-80E8-68416B966B71
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_DATA_RATE_ENTRY, *PWDI_DATA_RATE_ENTRY, WDI_DATA_RATE_ENTRY
+ms.date: 12/14/2017
+ms.keywords: _WDI_DATA_RATE_ENTRY, WDI_DATA_RATE_ENTRY, *PWDI_DATA_RATE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

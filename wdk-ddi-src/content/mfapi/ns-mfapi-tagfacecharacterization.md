@@ -7,7 +7,7 @@ old-location: stream\facecharacterization.htm
 old-project: stream
 ms.assetid: 8A8F6E06-DA09-4595-BF42-8B905453CCCA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: tagFaceCharacterization, FaceCharacterization
 ms.prod: windows-hardware
 ms.technology: windows-devices

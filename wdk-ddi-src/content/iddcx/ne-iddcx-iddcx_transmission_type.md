@@ -7,7 +7,7 @@ old-location: display\iddcx_transmission_type.htm
 old-project: display
 ms.assetid: fc0a6c04-a348-470d-b8eb-9564f2ff7ef9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_TRANSMISSION_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: kernel\ioclearactivityidthread.htm
 old-project: kernel
 ms.assetid: 2F69FC2F-C336-4B51-8EFC-0A9AA22121B9
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: IoClearActivityIdThread
 ms.prod: windows-hardware
 ms.technology: windows-devices

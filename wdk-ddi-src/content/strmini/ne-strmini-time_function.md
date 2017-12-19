@@ -7,7 +7,7 @@ old-location: stream\time_function.htm
 old-project: stream
 ms.assetid: 9335B3FB-B46B-404C-BCF9-F4E2F7A4C216
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: TIME_FUNCTION, TIME_FUNCTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: _RANGEVALUE
 author: windows-driver-content
 description: The RANGEVALUE structure is used by a microdriver to communicate to the WIA Flatbed driver the legal values for a microdriver function parameter.
 old-location: image\rangevalue.htm
-old-project: image
+old-project: Image
 ms.assetid: 18322d1f-9fc9-43f0-925e-616731845792
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _RANGEVALUE, *PRANGEVALUE, RANGEVALUE
+ms.date: 12/14/2017
+ms.keywords: _RANGEVALUE, PRANGEVALUE, RANGEVALUE, *PRANGEVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

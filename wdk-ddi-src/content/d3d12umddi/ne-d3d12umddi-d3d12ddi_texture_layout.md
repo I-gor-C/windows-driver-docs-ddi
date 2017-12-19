@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_texture_layout.htm
 old-project: display
 ms.assetid: F039A0D9-D1AE-4940-B67D-30CC6344EC7D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_TEXTURE_LAYOUT, D3D12DDI_TEXTURE_LAYOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILMSGCDMAOUTSUBMIT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmaoutsubmit.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3ed93cff-7974-4cf9-9b89-f4a8e52c4c3d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT
+ms.date: 12/14/2017
+ms.keywords: RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT, LPRILMSGCDMAOUTSUBMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

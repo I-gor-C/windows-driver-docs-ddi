@@ -7,7 +7,7 @@ old-location: print\bmformat.htm
 old-project: print
 ms.assetid: 1c29bf1e-e785-48ab-aa2c-3665fd5c0ab0
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: BMFORMAT, BMFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices

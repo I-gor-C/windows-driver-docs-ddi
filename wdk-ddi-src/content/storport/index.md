@@ -181,12 +181,12 @@ Storport.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PPRI_REGISTRATION_LIST structure](ns-storport-ppri_registration_list.md) | The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS. |
-| [PPRI_RESERVATION_DESCRIPTOR structure](ns-storport-ppri_reservation_descriptor.md) | The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
-| [PPRI_RESERVATION_LIST structure](ns-storport-ppri_reservation_list.md) | The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
-| [PPRO_PARAMETER_LIST structure](ns-storport-ppro_parameter_list.md) | The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server. |
-| [PRT_PARAMETER_DATA structure](ns-storport-prt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
-| [PST_PARAMETER_DATA structure](ns-storport-pst_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
+| [PRI_REGISTRATION_LIST structure](ns-storport-pri_registration_list.md) | The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS. |
+| [PRI_RESERVATION_DESCRIPTOR structure](ns-storport-pri_reservation_descriptor.md) | The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
+| [PRI_RESERVATION_LIST structure](ns-storport-pri_reservation_list.md) | The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
+| [PRO_PARAMETER_LIST structure](ns-storport-pro_parameter_list.md) | The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server. |
+| [RT_PARAMETER_DATA structure](ns-storport-rt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
+| [ST_PARAMETER_DATA structure](ns-storport-st_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
 | [_MEMORY_REGION structure](ns-storport-_memory_region.md) | The MEMORY_REGION structure describes a region of physically contiguous memory. |
 | [_MESSAGE_INTERRUPT_INFORMATION structure](ns-storport-_message_interrupt_information.md) | The MESSAGE_INTERRUPT_INFORMATION structure describes a message signaled interrupt (MSI). |
 | [_MINIPORT_DUMP_POINTERS structure](ns-storport-_miniport_dump_pointers.md) | A Storport miniport driver uses this structure to support the SCSI_REQUEST_BLOCK (SRB) function code SRB_FUNCTION_DUMP_POINTERS. |
@@ -244,6 +244,42 @@ Storport.h contain these programming interfaces:
 | [PSTOR_POWER_ACTION enumeration](ne-storport-pstor_power_action.md) | The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. |
 | [_INTERRUPT_SYNCHRONIZATION_MODE enumeration](ne-storport-_interrupt_synchronization_mode.md) | The INTERRUPT_SYNCHRONIZATION_MODE enumerator specifies the interrupt synchronization mode. |
 | [_SES_DOWNLOAD_MICROCODE_STATE enumeration](ne-storport-_ses_download_microcode_state.md) | TBD. |
+| [_STOR_CRYPTO_ALGORITHM_ID enumeration](ne-storport-_stor_crypto_algorithm_id.md) | Reserved for system use. |
+| [_STOR_CRYPTO_KEY_SIZE enumeration](ne-storport-_stor_crypto_key_size.md) | Reserved for system use. |
+| [_STOR_CRYPTO_OPERATION_TYPE enumeration](ne-storport-_stor_crypto_operation_type.md) | Reserved for system use. |
 | [_STOR_DEVICE_POWER_STATE enumeration](ne-storport-_stor_device_power_state.md) | The STOR_DEVICE_POWER_STATE enumerator specifies a device power state. |
 | [_STOR_EVENT_ASSOCIATION_ENUM enumeration](ne-storport-_stor_event_association_enum.md) | The STOR_EVENT_ASSOCIATION_ENUM enumerator specifies the type of device that is associated with an event. |
 | [_STOR_SPINLOCK enumeration](ne-storport-_stor_spinlock.md) | The STOR_SPINLOCK enumeration is used to specify the type of a spinlock. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [StorPortReadPortBufferUchar macro](nf-storport-storportreadportbufferuchar~r1.md) | The StorPortReadPortBufferUchar routine reads a value from a specified port address |
+| [StorPortReadPortBufferUlong macro](nf-storport-storportreadportbufferulong~r1.md) | The StorPortReadPortBufferUlong routine reads a value from a specified port address. |
+| [StorPortReadPortBufferUshort macro](nf-storport-storportreadportbufferushort~r1.md) | The StorPortReadPortBufferUshort routine reads a value from a specified port address. |
+| [StorPortReadPortUchar macro](nf-storport-storportreadportuchar~r1.md) | The StorPortReadPortUchar routine reads a value from a specified port address |
+| [StorPortReadPortUlong macro](nf-storport-storportreadportulong~r1.md) | The StorPortReadPortUlong routine reads a value from a specified port address. |
+| [StorPortReadPortUshort macro](nf-storport-storportreadportushort~r1.md) | The StorPortReadPortUshort routine reads a value from a specified port address. |
+| [StorPortReadRegisterBufferUchar macro](nf-storport-storportreadregisterbufferuchar~r1.md) | The StorPortReadRegisterBufferUchar routine reads a value from a specified register address. |
+| [StorPortReadRegisterBufferUlong macro](nf-storport-storportreadregisterbufferulong~r1.md) | The StorPortReadRegisterBufferUlong routine reads a value from a specified register address. |
+| [StorPortReadRegisterBufferUlong64 macro](nf-storport-storportreadregisterbufferulong64.md) | This StorPortReadRegisterBufferUlong64 routine reads a number of ULONG64 values from the specified 64-bit register address into a buffer. |
+| [StorPortReadRegisterBufferUshort macro](nf-storport-storportreadregisterbufferushort~r1.md) | The StorPortReadRegisterBufferUshort routine reads a value from a specified register address. |
+| [StorPortReadRegisterUchar macro](nf-storport-storportreadregisteruchar~r1.md) | The StorPortReadRegisterUchar routine reads a value from a specified register address. |
+| [StorPortReadRegisterUlong macro](nf-storport-storportreadregisterulong~r1.md) | The StorPortReadRegisterUlong routine reads a value from a specified register address. |
+| [StorPortReadRegisterUlong64 macro](nf-storport-storportreadregisterulong64.md) | The StorPortReadRegisterUlong64 routine reads a 64-bit value from a specified 64-bit register address. |
+| [StorPortReadRegisterUshort macro](nf-storport-storportreadregisterushort~r1.md) | The StorPortReadRegisterUshort routine reads a value from a specified register address. |
+| [StorPortWritePortBufferUchar macro](nf-storport-storportwriteportbufferuchar~r1.md) | The StorPortWritePortBufferUchar routine writes a value to a specified register address. |
+| [StorPortWritePortBufferUlong macro](nf-storport-storportwriteportbufferulong~r1.md) | The StorPortWritePortBufferUlong routine writes a value to a specified register address. |
+| [StorPortWritePortBufferUshort macro](nf-storport-storportwriteportbufferushort~r1.md) | The StorPortWritePortBufferUshort routine writes a value to a specified register address. |
+| [StorPortWritePortUchar macro](nf-storport-storportwriteportuchar~r1.md) | The StorPortWritePortUchar routine writes a value to a specified register address. |
+| [StorPortWritePortUlong macro](nf-storport-storportwriteportulong~r1.md) | The StorPortWritePortUlong routine writes a value to a specified register address. |
+| [StorPortWritePortUshort macro](nf-storport-storportwriteportushort~r1.md) | The StorPortWritePortUshort routine writes a value to a specified register address. |
+| [StorPortWriteRegisterBufferUchar macro](nf-storport-storportwriteregisterbufferuchar~r1.md) | The StorPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA. |
+| [StorPortWriteRegisterBufferUlong macro](nf-storport-storportwriteregisterbufferulong~r1.md) | The StorPortWriteRegisterBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA. |
+| [StorPortWriteRegisterBufferUlong64 macro](nf-storport-storportwriteregisterbufferulong64.md) | This StorPortWriteRegisterBufferUlong64 routine writes a number of ULONG64 values from a the specified 64-bit register address. |
+| [StorPortWriteRegisterBufferUshort macro](nf-storport-storportwriteregisterbufferushort~r1.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA. |
+| [StorPortWriteRegisterUchar macro](nf-storport-storportwriteregisteruchar~r1.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of character values from a buffer to the indicated HBA register address. |
+| [StorPortWriteRegisterUlong macro](nf-storport-storportwriteregisterulong~r1.md) | The StorPortWriteRegisterUlong routine transfers a ULONG value to the indicated HBA register address. |
+| [StorPortWriteRegisterUlong64 macro](nf-storport-storportwriteregisterulong64.md) | This StorPortWriteRegisterUlong64 routine writes a ULONG64 value to the specified register address. |
+| [StorPortWriteRegisterUshort macro](nf-storport-storportwriteregisterushort~r1.md) | The StorPortWriteRegisterUshort routine transfers a ULONG value to the indicated HBA register address. |

@@ -7,7 +7,7 @@ old-location: stream\ioctl_ks_read_stream.htm
 old-project: stream
 ms.assetid: 92110e27-5f1a-4c4d-b999-d9deb546e6a6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _KsEdit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ An application can use IOCTL_KS_READ_STREAM to read data from a pin. The applica
 ## -ioctlparameters
 
 ### -input-buffer
-The application places a pointer to an array of <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structures in the <b>InBuffer</b> parameter. Each describes a packet of data to be read. The headers can also contain the presentation time and duration.
+The application places a pointer to an array of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structures in the <b>InBuffer</b> parameter. Each describes a packet of data to be read. The headers can also contain the presentation time and duration.
 
 
 ### -input-buffer-length
@@ -104,5 +104,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_READ_STREAM control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_READ_STREAM control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

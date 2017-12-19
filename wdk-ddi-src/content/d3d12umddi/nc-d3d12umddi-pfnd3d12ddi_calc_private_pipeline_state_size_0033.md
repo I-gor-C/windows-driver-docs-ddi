@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calc_private_pipeline_state_size_0033_.htm
 old-project: display
 ms.assetid: C119B295-CBCF-46B3-BC8D-3C8AC058F6D8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

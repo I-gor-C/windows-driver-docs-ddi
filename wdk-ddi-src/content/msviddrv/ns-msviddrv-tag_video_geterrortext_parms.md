@@ -7,8 +7,8 @@ old-location: stream\video_geterrortext_parms.htm
 old-project: stream
 ms.assetid: 6CF06E9A-D6A1-42A7-9C34-44BC52713621
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tag_video_geterrortext_parms, VIDEO_GETERRORTEXT_PARMS, *LPVIDEO_GETERRORTEXT_PARMS
+ms.date: 12/14/2017
+ms.keywords: tag_video_geterrortext_parms, VIDEO_GETERRORTEXT_PARMS, *LPVIDEO_GETERRORTEXT_PARMS, LPVIDEO_GETERRORTEXT_PARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: audio\keywordselector.htm
 old-project: audio
 ms.assetid: 762A7E36-E0F8-475C-B201-217D8FD8EBD6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: __MIDL_IKeywordDetectorOemAdapter_0003, KEYWORDSELECTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

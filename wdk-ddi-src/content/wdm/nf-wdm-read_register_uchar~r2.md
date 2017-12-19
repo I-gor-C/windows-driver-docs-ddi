@@ -7,7 +7,7 @@ old-location: kernel\read_register_uchar.htm
 old-project: kernel
 ms.assetid: 49f9d7d7-c774-4ba5-a9f3-6d605a3de674
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

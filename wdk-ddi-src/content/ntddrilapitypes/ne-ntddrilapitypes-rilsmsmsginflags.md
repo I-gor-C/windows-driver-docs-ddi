@@ -4,10 +4,10 @@ title: RILSMSMSGINFLAGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsmsmsginflags.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: aaa7967a-dfbc-4c4c-a309-095628fae6c0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSMSMSGINFLAGS, RILSMSMSGINFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

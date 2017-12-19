@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_create_pipeline_state_0033.htm
 old-project: display
 ms.assetid: F8255544-D5B6-4692-BDC0-EF5A2B856153
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

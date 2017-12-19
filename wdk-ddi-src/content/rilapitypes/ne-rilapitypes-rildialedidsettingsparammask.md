@@ -4,10 +4,10 @@ title: RILDIALEDIDSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialedidsettingsparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c69d03b7-ef07-41b3-9659-79ab05ecd4e9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILDIALEDIDSETTINGSPARAMMASK, RILDIALEDIDSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

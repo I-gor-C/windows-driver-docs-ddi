@@ -28,8 +28,8 @@ Scsiwmi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PSCSIWMIGUIDREGINFO structure](ns-scsiwmi-pscsiwmiguidreginfo.md) | The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver. |
-| [PSCSIWMI_REQUEST_CONTEXT structure](ns-scsiwmi-pscsiwmi_request_context.md) | A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB. |
+| [SCSIWMIGUIDREGINFO structure](ns-scsiwmi-scsiwmiguidreginfo.md) | The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver. |
+| [SCSIWMI_REQUEST_CONTEXT structure](ns-scsiwmi-scsiwmi_request_context.md) | A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB. |
 | [_SCSIWMILIB_CONTEXT structure](ns-scsiwmi-_scsiwmilib_context.md) | A SCSI_WMILIB_CONTEXT structure provides registration information for a miniport driver's data and event blocks and defines entry points for the miniport driver's HwScsiWmiXxx callback routines. |
 
 ## Enumerations

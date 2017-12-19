@@ -7,8 +7,8 @@ old-location: storage\ide_access_range.htm
 old-project: storage
 ms.assetid: e81441a2-0659-4d32-97f4-415abef6c87a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _IDE_ACCESS_RANGE, IDE_ACCESS_RANGE, *PIDE_ACCESS_RANGE
+ms.date: 12/15/2017
+ms.keywords: _IDE_ACCESS_RANGE, *PIDE_ACCESS_RANGE, PIDE_ACCESS_RANGE, IDE_ACCESS_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

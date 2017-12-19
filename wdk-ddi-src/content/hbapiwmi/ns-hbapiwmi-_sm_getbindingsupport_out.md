@@ -7,8 +7,8 @@ old-location: storage\sm_getbindingsupport_out.htm
 old-project: storage
 ms.assetid: 4f45e2ad-19f9-4308-8d63-edf066545e07
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT, PSM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

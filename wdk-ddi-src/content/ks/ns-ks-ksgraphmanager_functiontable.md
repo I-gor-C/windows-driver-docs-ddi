@@ -7,8 +7,8 @@ old-location: stream\ksgraphmanager_functiontable.htm
 old-project: stream
 ms.assetid: F077B970-F146-43BC-BB92-A836C8843890
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: KSGRAPHMANAGER_FUNCTIONTABLE, PKSGRAPHMANAGER_FUNCTIONTABLE, KSGRAPHMANAGER_FUNCTIONTABLE
+ms.date: 12/14/2017
+ms.keywords: KSGRAPHMANAGER_FUNCTIONTABLE, KSGRAPHMANAGER_FUNCTIONTABLE, PKSGRAPHMANAGER_FUNCTIONTABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

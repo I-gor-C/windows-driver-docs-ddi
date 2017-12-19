@@ -4,11 +4,11 @@ title: MINIPORT_WDI_TX_PEER_BACKLOG
 author: windows-driver-content
 description: The MiniportWdiTxPeerBacklog handler function is issued when a paused peer has a change in backlog state.
 old-location: netvista\miniportwditxpeerbacklog.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 49DC9034-9A50-4B0F-B7F7-A06147D1046F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
+ms.date: 12/14/2017
+ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS, PSYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -155,5 +155,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_WDI_TX_PEER_BACKLOG callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_WDI_TX_PEER_BACKLOG callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

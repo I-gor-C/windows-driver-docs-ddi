@@ -7,8 +7,8 @@ old-location: storage\zone_descriptior.htm
 old-project: storage
 ms.assetid: 8326f683-3952-486e-b322-80ce96759366
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.date: 12/15/2017
+ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

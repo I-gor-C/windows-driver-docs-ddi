@@ -7,7 +7,7 @@ old-location: ieee\irb_req_bus_reset.htm
 old-project: IEEE
 ms.assetid: 56B7D001-2EC3-4397-B520-193CCF52A9EE
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_BUS_RESET, IRB_REQ_BUS_RESET
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: NdisGetSharedDataAlignment function
 author: windows-driver-content
 description: NdisGetSharedDataAlignment returns the preferred alignment for memory structures that can be shared by more than one processor.
 old-location: netvista\ndisgetshareddataalignment.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 561315b4-8866-4f48-8138-12b1a38f743e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: NdisGetSharedDataAlignment
 ms.prod: windows-hardware
 ms.technology: windows-devices

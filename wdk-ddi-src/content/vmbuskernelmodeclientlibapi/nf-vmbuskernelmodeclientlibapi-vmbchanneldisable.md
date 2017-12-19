@@ -4,10 +4,10 @@ title: VmbChannelDisable function
 author: windows-driver-content
 description: The VmbChannelDisable function disables a channel, which closes it for client channels and revokes the channel offer for server channels. This function waits until the channel is completely torn down before it returns.
 old-location: netvista\vmbchanneldisable.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 688A1DF3-F801-47C3-8403-9FA5D96BD428
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelDisable
 ms.prod: windows-hardware
 ms.technology: windows-devices

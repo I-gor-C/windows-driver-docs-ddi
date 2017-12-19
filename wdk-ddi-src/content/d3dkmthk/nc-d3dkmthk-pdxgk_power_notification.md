@@ -7,7 +7,7 @@ old-location: display\pdxgk_power_notification.htm
 old-project: display
 ms.assetid: 11549B4E-7929-4957-9775-BF8AAF501D45
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_updategpuvirtualaddress.htm
 old-project: display
 ms.assetid: B6586406-6CAD-479F-AE41-93EFBA195B99
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_UPDATEGPUVIRTUALADDRESS, D3DKMT_UPDATEGPUVIRTUALADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices

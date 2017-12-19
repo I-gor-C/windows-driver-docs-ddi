@@ -4,10 +4,10 @@ title: ReadIoSpaceEx function
 author: windows-driver-content
 description: The ReadIoSpaceEx function is an extended version of ReadIoSpace.
 old-location: debugger\readiospaceex.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: de0681e6-c716-4879-8e07-daacc092d18f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: ReadIoSpaceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices

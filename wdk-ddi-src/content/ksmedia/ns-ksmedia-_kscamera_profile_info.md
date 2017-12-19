@@ -7,8 +7,8 @@ old-location: stream\kscamera_profile_info.htm
 old-project: stream
 ms.assetid: 566052ED-2FD8-46A9-8C4E-9FED660D93BF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _KSCAMERA_PROFILE_INFO, *PKSCAMERA_PROFILE_INFO, KSCAMERA_PROFILE_INFO
+ms.date: 12/14/2017
+ms.keywords: _KSCAMERA_PROFILE_INFO, *PKSCAMERA_PROFILE_INFO, KSCAMERA_PROFILE_INFO, PKSCAMERA_PROFILE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

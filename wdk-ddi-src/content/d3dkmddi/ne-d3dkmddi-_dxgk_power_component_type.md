@@ -7,7 +7,7 @@ old-location: display\dxgk_power_component_type.htm
 old-project: display
 ms.assetid: fe732082-5aa1-4265-a76a-bd2e5b733557
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_POWER_COMPONENT_TYPE, DXGK_POWER_COMPONENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

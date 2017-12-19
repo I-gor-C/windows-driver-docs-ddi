@@ -7,7 +7,7 @@ old-location: bltooth\_brb_l2ca_open_enhanced_channel.htm
 old-project: bltooth
 ms.assetid: 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 12/14/2017
 ms.keywords: _BRB_L2CA_OPEN_ENHANCED_CHANNEL,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: stream\caminitialize.htm
 old-project: stream
 ms.assetid: a39f78b7-f749-40b8-952a-5442608b0f1f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
+ms.date: 12/14/2017
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

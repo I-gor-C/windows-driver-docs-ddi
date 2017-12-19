@@ -16,8 +16,8 @@ Ksi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PKSCLOCKINSTANCE structure](ns-ksi-pksclockinstance.md) | . |
-| [PKSIDEFAULTCLOCK structure](ns-ksi-pksidefaultclock.md) | . |
+| [KSCLOCKINSTANCE structure](ns-ksi-ksclockinstance.md) | . |
+| [KSIDEFAULTCLOCK structure](ns-ksi-ksidefaultclock.md) | . |
 
 ## Enumerations
 

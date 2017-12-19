@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_talk.htm
 old-project: IEEE
 ms.assetid: B42852F3-BF64-44F8-8D9C-361D623CE35A
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_TALK, IRB_REQ_ISOCH_TALK
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILEXCHANGEUICCAPDUPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexchangeuiccapduparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: be77f9e2-acf7-4b59-9a46-abda7c43817b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS, LPRILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

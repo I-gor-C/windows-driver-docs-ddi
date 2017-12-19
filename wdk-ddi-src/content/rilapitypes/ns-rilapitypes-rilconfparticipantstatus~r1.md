@@ -4,11 +4,11 @@ title: RILCONFPARTICIPANTSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilconfparticipantstatus_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3beafad2-7157-434a-a073-2b47026c8fc5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS
+ms.date: 12/14/2017
+ms.keywords: RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

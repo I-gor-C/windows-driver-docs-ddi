@@ -4,10 +4,10 @@ title: RILPHONEBOOKEMAILADDRESS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookemailaddress_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 322939c8-c7c9-405b-9f78-08ae9c642b42
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices

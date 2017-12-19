@@ -7,7 +7,7 @@ old-location: display\d3dddicb_destroyhwqueue.htm
 old-project: display
 ms.assetid: 80735E36-C483-4CD8-AB53-873BA5E997D0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDICB_DESTROYHWQUEUE, D3DDDICB_DESTROYHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices

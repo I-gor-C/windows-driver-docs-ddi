@@ -4,11 +4,11 @@ title: RILDIALEDIDSETTINGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialedidsettings_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6c65644b-f3a4-4c7d-91ce-c4b2b1e611e7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS
+ms.date: 12/14/2017
+ms.keywords: RILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

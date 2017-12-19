@@ -4,11 +4,11 @@ title: _STI_DIAG
 author: windows-driver-content
 description: The STI_DIAG structure is used as a parameter to the IStiDevice::Diagnostic and IStiUSD::Diagnostic methods.
 old-location: image\sti_diag.htm
-old-project: image
+old-project: Image
 ms.assetid: 07caa8b0-849c-4ad9-9adb-b1726edc9234
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STI_DIAG, *LPSTI_DIAG, STI_DIAG
+ms.date: 12/14/2017
+ms.keywords: _STI_DIAG, *LPSTI_DIAG, STI_DIAG, LPSTI_DIAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

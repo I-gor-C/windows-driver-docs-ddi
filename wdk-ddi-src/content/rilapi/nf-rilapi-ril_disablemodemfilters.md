@@ -4,10 +4,10 @@ title: RIL_DisableModemFilters function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_disablemodemfilters.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: eb1ac5cc-f757-4aee-9a21-ed4b03d4b6a8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_DisableModemFilters
 ms.prod: windows-hardware
 ms.technology: windows-devices

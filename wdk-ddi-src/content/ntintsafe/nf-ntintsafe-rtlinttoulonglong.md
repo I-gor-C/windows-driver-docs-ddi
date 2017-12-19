@@ -7,7 +7,7 @@ old-location: kernel\rtlinttoulonglong.htm
 old-project: kernel
 ms.assetid: AED881EC-D417-49F5-B0B7-497FDF450968
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlIntToULongLong
 ms.prod: windows-hardware
 ms.technology: windows-devices

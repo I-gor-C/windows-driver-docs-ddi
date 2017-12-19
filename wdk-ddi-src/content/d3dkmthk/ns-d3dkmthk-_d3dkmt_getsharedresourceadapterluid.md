@@ -7,7 +7,7 @@ old-location: display\d3dkmt_getsharedresourceadapterluid.htm
 old-project: display
 ms.assetid: b7f9413b-3d57-47c4-a8a4-3288cb03af21
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_GETSHAREDRESOURCEADAPTERLUID, D3DKMT_GETSHAREDRESOURCEADAPTERLUID
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILCBMSGCONFIGPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcbmsgconfigparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 86bbc3ef-c76c-4abd-bfcb-56c804c12b1f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCBMSGCONFIGPARAMMASK, RILCBMSGCONFIGPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

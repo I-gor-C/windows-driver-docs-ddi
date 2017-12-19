@@ -7,8 +7,8 @@ old-location: stream\strminireceivedevicepacket.htm
 old-project: stream
 ms.assetid: 51d8a18d-cd90-4fac-a991-6c0de505576e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.date: 12/14/2017
+ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

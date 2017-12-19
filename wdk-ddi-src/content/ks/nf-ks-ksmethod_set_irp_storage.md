@@ -7,7 +7,7 @@ old-location: stream\ksmethod_set_irp_storage.htm
 old-project: stream
 ms.assetid: bc0a309d-305e-400a-b571-7958926dd1dc
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSMETHOD_SET_IRP_STORAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-This macro returns a pointer to the <a href="stream.ksmethod_set">KSMETHOD_SET</a> in which the method is located.
+This macro returns a pointer to the <a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a> in which the method is located.
 
 
 
@@ -93,10 +93,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksmethod_item">KSMETHOD_ITEM</a>
+<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksmethod_set">KSMETHOD_SET</a>
+<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 </dt>
 <dt>
 <a href="stream.ksmethod">KSMETHOD</a>
@@ -115,5 +115,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSMETHOD_SET_IRP_STORAGE macro%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSMETHOD_SET_IRP_STORAGE macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

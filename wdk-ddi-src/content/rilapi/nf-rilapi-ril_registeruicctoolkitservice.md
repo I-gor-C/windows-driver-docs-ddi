@@ -4,10 +4,10 @@ title: RIL_RegisterUiccToolkitService function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_registeruicctoolkitservice.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 1f406818-b81c-4dc8-bfc7-0c977495b285
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_RegisterUiccToolkitService
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3dkmtopennthandlefromname.htm
 old-project: display
 ms.assetid: bcd33f64-7ad0-4e26-af73-e4f2b1b6e5fb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTOpenNtHandleFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices

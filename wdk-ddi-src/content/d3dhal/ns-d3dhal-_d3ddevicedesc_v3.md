@@ -7,8 +7,8 @@ old-location: display\d3ddevicedesc_v3.htm
 old-project: display
 ms.assetid: 36a7b29a-f744-42c8-9e60-9b5dbba3a32f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _D3DDeviceDesc_V3, D3DDEVICEDESC_V3, *LPD3DDEVICEDESC_V3
+ms.date: 12/15/2017
+ms.keywords: _D3DDeviceDesc_V3, LPD3DDEVICEDESC_V3, D3DDEVICEDESC_V3, *LPD3DDEVICEDESC_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

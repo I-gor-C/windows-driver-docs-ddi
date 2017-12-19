@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputduplcontextscount.htm
 old-project: display
 ms.assetid: db63b984-73da-4b66-8a5e-06704dd7c031
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: wdf\wdfdriverregistertraceinfo.htm
 old-project: wdf
 ms.assetid: f2d332cd-d744-444c-b616-d8400ad30d43
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDriverRegisterTraceInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices

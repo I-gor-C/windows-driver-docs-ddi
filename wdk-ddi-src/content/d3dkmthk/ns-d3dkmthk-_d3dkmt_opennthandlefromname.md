@@ -7,7 +7,7 @@ old-location: display\d3dkmt_opennthandlefromname.htm
 old-project: display
 ms.assetid: 34f70519-7905-4a16-bd07-db3592b05890
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_OPENNTHANDLEFROMNAME, D3DKMT_OPENNTHANDLEFROMNAME
 ms.prod: windows-hardware
 ms.technology: windows-devices

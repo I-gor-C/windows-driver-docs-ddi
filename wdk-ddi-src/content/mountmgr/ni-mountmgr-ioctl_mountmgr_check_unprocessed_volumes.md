@@ -7,8 +7,8 @@ old-location: storage\ioctl_mountmgr_check_unprocessed_volumes.htm
 old-project: storage
 ms.assetid: 39f486b4-a22e-473b-9a0d-ba2c1046995a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.date: 12/15/2017
+ms.keywords: _MOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

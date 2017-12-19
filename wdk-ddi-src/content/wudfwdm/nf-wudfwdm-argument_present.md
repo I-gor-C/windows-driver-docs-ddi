@@ -7,7 +7,7 @@ old-location: kernel\argument_present.htm
 old-project: kernel
 ms.assetid: 00b9c218-8ae7-4624-be6b-6b6b2f83764a
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: ARGUMENT_PRESENT
 ms.prod: windows-hardware
 ms.technology: windows-devices

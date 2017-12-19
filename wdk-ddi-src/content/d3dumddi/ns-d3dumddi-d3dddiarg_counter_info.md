@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_counter_info.htm
 old-project: display
 ms.assetid: FB2B8FBF-908D-4668-8C5B-263903BA1EF5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDIARG_COUNTER_INFO, D3DDDIARG_COUNTER_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

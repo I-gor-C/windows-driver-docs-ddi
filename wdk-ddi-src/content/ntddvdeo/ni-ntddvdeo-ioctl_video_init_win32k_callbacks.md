@@ -7,8 +7,8 @@ old-location: display\ioctl_video_init_win32k_callbacks.htm
 old-project: display
 ms.assetid: 1b003614-e80c-459d-a315-0dfdabcec5cc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.date: 12/15/2017
+ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

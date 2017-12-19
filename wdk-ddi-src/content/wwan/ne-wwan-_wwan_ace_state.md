@@ -4,11 +4,11 @@ title: _WWAN_ACE_STATE
 author: windows-driver-content
 description: The WWAN_ACE_STATE enumeration lists the different kinds of auto-connect states.
 old-location: netvista\wwan_ace_state.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6BF63894-58D6-4C7C-B3D9-D4D9D19A686B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WWAN_ACE_STATE, *PWWAN_ACE_STATE, WWAN_ACE_STATE
+ms.date: 12/14/2017
+ms.keywords: _WWAN_ACE_STATE, *PWWAN_ACE_STATE, WWAN_ACE_STATE, PWWAN_ACE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

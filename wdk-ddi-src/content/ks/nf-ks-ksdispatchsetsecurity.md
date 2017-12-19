@@ -7,7 +7,7 @@ old-location: stream\ksdispatchsetsecurity.htm
 old-project: stream
 ms.assetid: c1af342a-438d-4c83-be2d-a4c4c9f204b5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsDispatchSetSecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILPOSITIONINFOTDSCDMA
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpositioninfotdscdma_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9b0ba2fc-bf8f-40c0-83a2-a791413e4783
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILPOSITIONINFOTDSCDMA, *LPRILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA
+ms.date: 12/14/2017
+ms.keywords: RILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA, *LPRILPOSITIONINFOTDSCDMA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -100,6 +101,7 @@ typedef struct _RILPOSITIONINFOTDSCDMA {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

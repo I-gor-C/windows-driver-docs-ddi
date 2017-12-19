@@ -4,10 +4,10 @@ title: RILCALLHANDOVERSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallhandoverstateparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: a9a5c8dc-8ffa-4142-879c-3a782b45dbff
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLHANDOVERSTATEPARAMMASK, RILCALLHANDOVERSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

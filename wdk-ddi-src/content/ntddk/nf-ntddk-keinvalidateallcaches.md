@@ -7,7 +7,7 @@ old-location: kernel\keinvalidateallcaches.htm
 old-project: kernel
 ms.assetid: a7971cd1-1e9b-4d81-8422-1ee36651973a
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: KeInvalidateAllCaches
 ms.prod: windows-hardware
 ms.technology: windows-devices

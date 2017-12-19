@@ -7,7 +7,7 @@ old-location: sensors\sensorscxsensorinitialize.htm
 old-project: sensors
 ms.assetid: D6C0B66A-58ED-4E1D-89E2-4A1AF77281C1
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: SensorsCxSensorInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

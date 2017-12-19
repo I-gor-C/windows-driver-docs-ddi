@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdeviceclass.htm
 old-project: wdf
 ms.assetid: c87a8368-3804-4a07-92c8-65a453d0808f
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceInitSetDeviceClass
 ms.prod: windows-hardware
 ms.technology: windows-devices

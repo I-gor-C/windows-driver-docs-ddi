@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicesetfailed.htm
 old-project: wdf
 ms.assetid: 87fbceab-d08c-4da7-a257-1454f84c04b7
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceSetFailed
 ms.prod: windows-hardware
 ms.technology: windows-devices

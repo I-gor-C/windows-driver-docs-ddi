@@ -7,8 +7,8 @@ old-location: print\compropsheet.htm
 old-project: print
 ms.assetid: d9654346-1f28-4e02-8f6c-17e37ed09b92
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
+ms.date: 12/14/2017
+ms.keywords: _POWERSOURCEUPDATEEX, PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

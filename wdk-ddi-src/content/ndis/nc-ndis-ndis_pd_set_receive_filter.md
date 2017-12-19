@@ -4,10 +4,10 @@ title: NDIS_PD_SET_RECEIVE_FILTER
 author: windows-driver-content
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDSetReceiveFilter function to direct specific flows of packets to a specific PD receive queue.
 old-location: netvista\ndispdsetreceivefilter.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 49587142-9C84-4F73-BE0C-D256A8E6BF4B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

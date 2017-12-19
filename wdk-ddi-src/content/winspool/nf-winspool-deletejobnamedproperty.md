@@ -7,7 +7,7 @@ old-location: print\deletejobnamedproperty.htm
 old-project: print
 ms.assetid: 14F8C0A2-0D19-446E-8C2B-530A3AEDA879
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: DeleteJobNamedProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices

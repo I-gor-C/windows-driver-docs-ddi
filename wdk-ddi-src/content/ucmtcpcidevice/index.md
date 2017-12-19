@@ -6,8 +6,8 @@ UID: NA:
 
 ## -description
 
-This header is used by Universal Serial Bus(USB). For more information, see
-- [Universal Serial Bus(USB)](../_usbref/index.md)
+This header is used by UsbRef. For more information, see
+- [UsbRef](../_UsbRef/index.md)
 
 Ucmtcpcidevice.h contain these programming interfaces:
 

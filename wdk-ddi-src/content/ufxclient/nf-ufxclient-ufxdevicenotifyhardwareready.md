@@ -4,10 +4,10 @@ title: UfxDeviceNotifyHardwareReady function
 author: windows-driver-content
 description: Notifies UFX that the hardware is ready.
 old-location: buses\ufxdevicenotifyhardwareready.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: B4BE0BDC-C1A3-4230-8F4B-78DE34F5554D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UfxDeviceNotifyHardwareReady
 ms.prod: windows-hardware
 ms.technology: windows-devices

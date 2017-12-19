@@ -4,11 +4,11 @@ title: RILCALLMODIFICATIONCAUSECODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationcausecode.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d2785ee2-6e5d-474e-9d0f-57da956b6ec7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE
+ms.date: 12/14/2017
+ms.keywords: RILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE, LPRILCALLMODIFICATIONCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

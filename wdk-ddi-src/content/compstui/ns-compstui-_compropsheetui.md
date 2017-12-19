@@ -7,8 +7,8 @@ old-location: print\compropsheetui.htm
 old-project: print
 ms.assetid: 7ebf46b7-5c31-482e-8644-a3d81f7dc5cc
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _COMPROPSHEETUI, *PCOMPROPSHEETUI, COMPROPSHEETUI
+ms.date: 12/14/2017
+ms.keywords: _COMPROPSHEETUI, *PCOMPROPSHEETUI, COMPROPSHEETUI, PCOMPROPSHEETUI
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: stream\ksdereferencebusobject.htm
 old-project: stream
 ms.assetid: 5520685c-c438-460b-aac5-791098e14044
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsDereferenceBusObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: _NDIS_PD_TRANSMIT_QUEUE_COUNTER
 author: windows-driver-content
 description: This structure is used to hold counter information for a transmit queue.
 old-location: netvista\ndis_pd_transmit_queue_counter.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 944E824D-8092-4165-97A6-A35858EA0CEB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _NDIS_PD_TRANSMIT_QUEUE_COUNTER, NDIS_PD_TRANSMIT_QUEUE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices

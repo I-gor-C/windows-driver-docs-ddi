@@ -4,10 +4,10 @@ title: RILCALLHANDOVERPHASE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallhandoverphase.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c97fcbba-a127-4974-bda7-47456c05558f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLHANDOVERPHASE, RILCALLHANDOVERPHASE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: wdf\read_register_buffer_uchar.htm
 old-project: wdf
 ms.assetid: E0358D5E-4C5A-408F-9548-98A006939F22
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\iddcxmonitordeparture.htm
 old-project: display
 ms.assetid: d23f70ee-a58d-4db1-8f21-b27887d661b9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IddCxMonitorDeparture
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_pnp_state.htm
 old-project: wdf
 ms.assetid: b907a1ca-d9ef-45e9-9e1b-26e58e3e1e07
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE
+ms.date: 12/15/2017
+ms.keywords: _WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE, PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

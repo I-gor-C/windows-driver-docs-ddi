@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_send_options_init.htm
 old-project: wdf
 ms.assetid: ba10c012-f64c-42cd-bedc-72f620818aa5
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_TASK_SEND_OPTIONS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

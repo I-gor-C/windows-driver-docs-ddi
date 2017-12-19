@@ -7,7 +7,7 @@ old-location: battery\upsgetstate.htm
 old-project: battery
 ms.assetid: c60284ff-ebbd-455d-949c-e6d31ce65d5d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UPSGetState
 ms.prod: windows-hardware
 ms.technology: windows-devices

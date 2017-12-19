@@ -7,8 +7,8 @@ old-location: biometric\winbio_version.htm
 old-project: biometric
 ms.assetid: 6a89a581-0af4-4a42-be81-fb7cb1f33bdd
 ms.author: windowsdriverdev
-ms.date: 11/13/2017
-ms.keywords: _WINBIO_VERSION, *PWINBIO_VERSION, WINBIO_VERSION
+ms.date: 12/14/2017
+ms.keywords: _WINBIO_VERSION, WINBIO_VERSION, *PWINBIO_VERSION, PWINBIO_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

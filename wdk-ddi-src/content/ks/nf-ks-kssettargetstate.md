@@ -7,7 +7,7 @@ old-location: stream\kssettargetstate.htm
 old-project: stream
 ms.assetid: 36f14936-8cc6-4488-aa0f-343e4fbb84e3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsSetTargetState
 ms.prod: windows-hardware
 ms.technology: windows-devices

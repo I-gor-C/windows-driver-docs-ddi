@@ -7,7 +7,7 @@ old-location: display\dxgkarg_destroyperiodicframenotification.htm
 old-project: display
 ms.assetid: 94797515-3440-46A9-ACBD-09D005A33CE3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION, DXGKARG_DESTROYPERIODICFRAMENOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

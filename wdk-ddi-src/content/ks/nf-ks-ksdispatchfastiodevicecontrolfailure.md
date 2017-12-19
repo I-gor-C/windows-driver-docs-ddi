@@ -7,7 +7,7 @@ old-location: stream\ksdispatchfastiodevicecontrolfailure.htm
 old-project: stream
 ms.assetid: 7fb83c8d-e815-46c6-8011-75b25a4c0dd7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsDispatchFastIoDeviceControlFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices

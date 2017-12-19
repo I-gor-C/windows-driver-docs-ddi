@@ -7,7 +7,7 @@ old-location: display\d3dddi_color_space_type.htm
 old-project: display
 ms.assetid: 0A26F0AC-2D00-4847-96ED-3232A067F7CC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDI_COLOR_SPACE_TYPE, D3DDDI_COLOR_SPACE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

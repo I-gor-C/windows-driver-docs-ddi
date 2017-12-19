@@ -4,10 +4,10 @@ title: FWPS_PACKET_INJECTION_STATE_
 author: windows-driver-content
 description: The FWPS_PACKET_INJECTION_STATE enumeration type specifies the injection state of a network buffer list.
 old-location: netvista\fwps_packet_injection_state.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0fc60bae-2191-4e19-85c5-ed06f09225f0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_PACKET_INJECTION_STATE_, FWPS_PACKET_INJECTION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

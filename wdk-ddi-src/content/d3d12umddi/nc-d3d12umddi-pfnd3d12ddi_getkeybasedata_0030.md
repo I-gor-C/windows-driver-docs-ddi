@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_getkeybasedata_0030.htm
 old-project: display
 ms.assetid: D4F893E9-6B7B-4E35-A92F-B31FFD55A2C0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_policy_event_callbacks_init.htm
 old-project: wdf
 ms.assetid: 09ab4995-58be-4d87-adf7-e843e637ac09
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_POWER_POLICY_EVENT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

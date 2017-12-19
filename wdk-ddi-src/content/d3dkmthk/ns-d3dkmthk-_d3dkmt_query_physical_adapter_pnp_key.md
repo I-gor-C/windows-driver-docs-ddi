@@ -7,7 +7,7 @@ old-location: display\d3dkmt_query_physical_adapter_pnp_key.htm
 old-project: display
 ms.assetid: 58E5D200-56C3-48BA-A7C9-C9DC01592554
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_QUERY_PHYSICAL_ADAPTER_PNP_KEY, D3DKMT_QUERY_PHYSICAL_ADAPTER_PNP_KEY
 ms.prod: windows-hardware
 ms.technology: windows-devices

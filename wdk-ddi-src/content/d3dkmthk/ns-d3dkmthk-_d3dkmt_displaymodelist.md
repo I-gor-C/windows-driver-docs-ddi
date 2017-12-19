@@ -7,7 +7,7 @@ old-location: display\d3dkmt_displaymodelist.htm
 old-project: display
 ms.assetid: 2eb99f42-3639-4327-a880-47e18d1da71d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_DISPLAYMODELIST, D3DKMT_DISPLAYMODELIST
 ms.prod: windows-hardware
 ms.technology: windows-devices

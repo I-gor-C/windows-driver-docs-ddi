@@ -7,7 +7,7 @@ old-location: wdf\read_register_buffer_ushort.htm
 old-project: wdf
 ms.assetid: 0CA07C11-7E46-4225-AC61-5183C322604E
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

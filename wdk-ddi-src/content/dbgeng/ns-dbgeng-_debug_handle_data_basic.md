@@ -4,11 +4,11 @@ title: _DEBUG_HANDLE_DATA_BASIC
 author: windows-driver-content
 description: The DEBUG_HANDLE_DATA_BASIC structure contains handle-related information about a system object.
 old-location: debugger\debug_handle_data_basic.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: c1ad22b9-9733-417a-96ae-bc5920462f4f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_HANDLE_DATA_BASIC, *PDEBUG_HANDLE_DATA_BASIC, DEBUG_HANDLE_DATA_BASIC
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_HANDLE_DATA_BASIC, *PDEBUG_HANDLE_DATA_BASIC, PDEBUG_HANDLE_DATA_BASIC, DEBUG_HANDLE_DATA_BASIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

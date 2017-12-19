@@ -4,10 +4,10 @@ title: FWPS_FIELDS_RPC_PROXY_CONN_
 author: windows-driver-content
 description: The FWPS_FIELDS_RPC_PROXY_CONN enumeration type specifies the data field identifiers for the FWPS_LAYER_RPC_PROXY_CONN run-time filtering layer.
 old-location: netvista\fwps_fields_rpc_proxy_conn.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 22d60d8c-dad0-4b2c-9ae7-0e30552f5a81
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_RPC_PROXY_CONN_, FWPS_FIELDS_RPC_PROXY_CONN
 ms.prod: windows-hardware
 ms.technology: windows-devices

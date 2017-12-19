@@ -7,7 +7,7 @@ old-location: stream\ksforwardandcatchirp.htm
 old-project: stream
 ms.assetid: 87a873c2-07d3-4f76-bc26-5fcae4b960e7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsForwardAndCatchIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices

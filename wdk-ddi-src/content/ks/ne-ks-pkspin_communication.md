@@ -7,8 +7,8 @@ old-location: stream\kspin_communication.htm
 old-project: stream
 ms.assetid: DBBEEE9D-82C1-4387-AA6D-C5D86EDB138C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: PKSPIN_COMMUNICATION, *PKSPIN_COMMUNICATION, KSPIN_COMMUNICATION
+ms.date: 12/14/2017
+ms.keywords: PKSPIN_COMMUNICATION, PKSPIN_COMMUNICATION, KSPIN_COMMUNICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

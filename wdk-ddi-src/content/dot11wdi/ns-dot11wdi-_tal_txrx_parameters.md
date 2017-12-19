@@ -4,11 +4,11 @@ title: _TAL_TXRX_PARAMETERS
 author: windows-driver-content
 description: The TAL_TXRX_PARAMETERS structure defines the TAL TXRX parameters.
 old-location: netvista\tal_txrx_parameters.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 44f5c907-7368-43ea-b581-3b9ecf25c611
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS
+ms.date: 12/14/2017
+ms.keywords: _TAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS, PTAL_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

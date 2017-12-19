@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_opm_set_signing_key_and_sequence_number
 old-project: display
 ms.assetid: 98a874e7-4eea-4b35-833f-60f49ea5f599
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

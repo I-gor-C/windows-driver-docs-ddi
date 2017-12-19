@@ -7,7 +7,7 @@ old-location: display\dxgk_render_pipeline_stage.htm
 old-project: display
 ms.assetid: A6E6439A-8151-4953-B78A-3141A9EA59F2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_RENDER_PIPELINE_STAGE, DXGK_RENDER_PIPELINE_STAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

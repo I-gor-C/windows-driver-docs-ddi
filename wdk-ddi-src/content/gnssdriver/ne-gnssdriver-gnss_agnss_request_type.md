@@ -7,7 +7,7 @@ old-location: sensors\gnss_agnss_request_type.htm
 old-project: sensors
 ms.assetid: 31293354-D68B-475F-91BD-0504129207A5
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_AGNSS_REQUEST_TYPE, GNSS_AGNSS_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql: <= DISPATCH_LEVEL
 
 
 ## -description
-This enumeration indicates the type of AGNSS injection request represented by the <a href="sensors.gnss_agnss_request_param">GNSS_AGNSS_REQUEST_PARAM</a> structure.
+This enumeration indicates the type of AGNSS injection request represented by the <a href="..\gnssdriver\ns-gnssdriver-gnss_agnss_request_param.md">GNSS_AGNSS_REQUEST_PARAM</a> structure.
 
 
 

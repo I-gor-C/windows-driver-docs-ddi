@@ -4,10 +4,10 @@ title: RILEQUIPMENTSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilequipmentstate.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: aa00ebc4-c8de-4a73-ad43-77f4e173e617
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILEQUIPMENTSTATE, RILEQUIPMENTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

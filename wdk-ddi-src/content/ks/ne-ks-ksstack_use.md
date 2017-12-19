@@ -7,7 +7,7 @@ old-location: stream\ksstack_use.htm
 old-project: stream
 ms.assetid: 76B45154-5E81-4515-ADEE-11401FDF4681
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSSTACK_USE, KSSTACK_USE
 ms.prod: windows-hardware
 ms.technology: windows-devices

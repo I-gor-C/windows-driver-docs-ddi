@@ -4,10 +4,10 @@ title: RILUICCCMDPARAMETERS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicccmdparameters_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8ebffcdc-672b-4cfd-9ff2-a911b7c4dde5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCCMDPARAMETERS, RILUICCCMDPARAMETERS, *LPRILUICCCMDPARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

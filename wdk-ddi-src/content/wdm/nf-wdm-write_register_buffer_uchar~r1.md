@@ -7,7 +7,7 @@ old-location: kernel\write_register_buffer_uchar.htm
 old-project: kernel
 ms.assetid: 4cb90f37-c7ce-4f78-9e68-cbe4aaf6ea72
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_REGISTER_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

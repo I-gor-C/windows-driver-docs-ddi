@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_content.htm
 old-project: display
 ms.assetid: 29423933-c3cf-4fe4-b79c-f82718163a23
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT, D3DKMDT_VIDPN_PRESENT_PATH_CONTENT
 ms.prod: windows-hardware
 ms.technology: windows-devices

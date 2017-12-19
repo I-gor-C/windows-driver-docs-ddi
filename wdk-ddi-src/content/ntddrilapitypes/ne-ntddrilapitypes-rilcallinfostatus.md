@@ -4,10 +4,10 @@ title: RILCALLINFOSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallinfostatus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0f5806e8-a7be-4703-8847-abea2d0cb2e8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLINFOSTATUS, RILCALLINFOSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

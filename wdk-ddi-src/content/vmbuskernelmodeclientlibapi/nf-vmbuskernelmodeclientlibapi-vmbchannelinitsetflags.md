@@ -4,10 +4,10 @@ title: VmbChannelInitSetFlags function
 author: windows-driver-content
 description: The VmbChannelInitSetFlags function sets flags common to server or client channel endpoints.
 old-location: netvista\vmbchannelinitsetflags.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 12525F3C-12D6-477E-8C7D-3DE9AAA044AE
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelInitSetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices

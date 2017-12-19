@@ -7,8 +7,8 @@ old-location: display\dxva_configalphaload.htm
 old-project: display
 ms.assetid: 0754c362-57b8-40e8-a050-c9dded5180c1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad
+ms.date: 12/15/2017
+ms.keywords: _DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad, LPDXVA_ConfigAlphaLoad
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

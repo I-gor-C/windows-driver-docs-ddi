@@ -7,8 +7,8 @@ old-location: pci\mitigable_device_interface.htm
 old-project: PCI
 ms.assetid: 1fac7c03-2a48-4b29-951d-c777fbec7dd3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE
+ms.date: 12/14/2017
+ms.keywords: _MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE, PMITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorqueryhardwarecursor.htm
 old-project: display
 ms.assetid: e954b7e7-9e4a-47ae-9b0f-8c7e051cc00e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IddCxMonitorQueryHardwareCursor
 ms.prod: windows-hardware
 ms.technology: windows-devices

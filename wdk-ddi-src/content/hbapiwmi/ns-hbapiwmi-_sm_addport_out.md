@@ -7,8 +7,8 @@ old-location: storage\sm_addport_out.htm
 old-project: storage
 ms.assetid: e8892d6f-eb82-4262-9105-3c77d8295a3a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_AddPort_OUT, *PSM_AddPort_OUT, SM_AddPort_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_AddPort_OUT, PSM_AddPort_OUT, SM_AddPort_OUT, *PSM_AddPort_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

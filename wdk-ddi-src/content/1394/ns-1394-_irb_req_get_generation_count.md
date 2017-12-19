@@ -7,7 +7,7 @@ old-location: ieee\irb_req_get_generation_count.htm
 old-project: IEEE
 ms.assetid: C744C48E-476A-46F8-97BE-B3484E6FEF27
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_GET_GENERATION_COUNT, IRB_REQ_GET_GENERATION_COUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices

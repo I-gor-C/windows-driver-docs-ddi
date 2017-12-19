@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_set_mode.htm
 old-project: stream
 ms.assetid: 188F8AC8-BB1A-43C1-9933-5E03F954C2C0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

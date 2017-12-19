@@ -7,8 +7,8 @@ old-location: print\oemfontinstparam.htm
 old-project: print
 ms.assetid: cdd3ed28-a077-4b89-9222-ba282b9c7205
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OEMFONTINSTPARAM, *POEMFONTINSTPARAM, OEMFONTINSTPARAM
+ms.date: 12/14/2017
+ms.keywords: _OEMFONTINSTPARAM, OEMFONTINSTPARAM, POEMFONTINSTPARAM, *POEMFONTINSTPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

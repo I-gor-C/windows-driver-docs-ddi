@@ -4,10 +4,10 @@ title: VmbChannelEnable function
 author: windows-driver-content
 description: The VmbChannelEnable function enables a channel that is in the disabled state by connecting to VMBus and offering or opening a channel, as appropriate for the endpoint type.
 old-location: netvista\vmbchannelenable.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: A0256B3F-C35C-45AB-A825-0A82189F08DC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices

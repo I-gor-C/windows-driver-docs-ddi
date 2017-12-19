@@ -7,7 +7,7 @@ old-location: display\d3dddicaps_shader_min_precision.htm
 old-project: display
 ms.assetid: 98856726-b426-42e4-9560-f6b56164824a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDICAPS_SHADER_MIN_PRECISION, D3DDDICAPS_SHADER_MIN_PRECISION
 ms.prod: windows-hardware
 ms.technology: windows-devices

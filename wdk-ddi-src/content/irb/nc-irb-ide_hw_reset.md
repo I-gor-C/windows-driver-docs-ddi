@@ -7,7 +7,7 @@ old-location: storage\idehwreset.htm
 old-project: storage
 ms.assetid: 722810c8-ddf2-4910-8cf3-af3511d8c167
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WdmlibIoGetAffinityInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: battery\ioctl_cad_power_source_update_ex.htm
 old-project: battery
 ms.assetid: 8D582EF9-B9D1-498B-AE20-337F3A33250C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
+ms.date: 12/14/2017
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

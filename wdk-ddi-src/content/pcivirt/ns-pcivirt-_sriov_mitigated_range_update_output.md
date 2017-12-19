@@ -7,8 +7,8 @@ old-location: pci\sriov_mitigated_range_update_output.htm
 old-project: PCI
 ms.assetid: bd72ac9a-2985-4f2d-8b72-4039c9d3f896
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SRIOV_MITIGATED_RANGE_UPDATE_OUTPUT, *PSRIOV_MITIGATED_RANGE_UPDATE_OUTPUT, SRIOV_MITIGATED_RANGE_UPDATE_OUTPUT
+ms.date: 12/14/2017
+ms.keywords: _SRIOV_MITIGATED_RANGE_UPDATE_OUTPUT, PSRIOV_MITIGATED_RANGE_UPDATE_OUTPUT, *PSRIOV_MITIGATED_RANGE_UPDATE_OUTPUT, SRIOV_MITIGATED_RANGE_UPDATE_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

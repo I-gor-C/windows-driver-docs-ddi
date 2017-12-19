@@ -7,7 +7,7 @@ old-location: kernel\write_register_buffer_ulong.htm
 old-project: kernel
 ms.assetid: dae9cc3d-b793-4f2a-99a6-1f77af396110
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_REGISTER_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

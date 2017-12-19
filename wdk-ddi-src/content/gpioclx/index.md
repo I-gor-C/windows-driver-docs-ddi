@@ -27,7 +27,6 @@ Gpioclx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS callback](nc-gpioclx-gpio_client_clear_active_interrupts.md) | The CLIENT_ClearActiveInterrupts event callback function clears active interrupts on a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs. |
 | [GPIO_CLIENT_CONNECT_IO_PINS callback](nc-gpioclx-gpio_client_connect_io_pins.md) | The CLIENT_ConnectIoPins event callback function opens a logical connection to a set of general-purpose I/O (GPIO) pins and configures these pins for data read or write operations. |
 | [GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION callback](nc-gpioclx-gpio_client_controller_specific_function.md) | The CLIENT_ControllerSpecificFunction event callback function performs an operation that is specific to a particular general-purpose I/O (GPIO) controller. |
 | [GPIO_CLIENT_DISABLE_INTERRUPT callback](nc-gpioclx-gpio_client_disable_interrupt.md) | The CLIENT_DisableInterrupt event callback function disables interrupts on a general-purpose I/O (GPIO) pin that is configured as an interrupt input. |

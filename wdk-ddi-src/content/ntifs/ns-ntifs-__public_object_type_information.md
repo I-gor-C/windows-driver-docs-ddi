@@ -7,8 +7,8 @@ old-location: ifsk\public_object_type_information.htm
 old-project: ifsk
 ms.assetid: 7b80c3df-befe-4648-ab61-78cfb8d4b7ef
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION, PUBLIC_OBJECT_TYPE_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: __PUBLIC_OBJECT_TYPE_INFORMATION, PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION, PPUBLIC_OBJECT_TYPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

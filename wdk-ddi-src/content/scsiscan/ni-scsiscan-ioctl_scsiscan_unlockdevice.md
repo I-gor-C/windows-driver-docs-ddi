@@ -4,11 +4,11 @@ title: IOCTL_SCSISCAN_UNLOCKDEVICE
 author: windows-driver-content
 description: Reserved for use by Microsoft.
 old-location: image\ioctl_scsiscan_unlockdevice.htm
-old-project: image
+old-project: Image
 ms.assetid: 6dc380a9-b983-453e-949d-f49f85df4c7b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.date: 12/14/2017
+ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -7,7 +7,7 @@ old-location: stream\ksevent_clock_position.htm
 old-project: stream
 ms.assetid: 9F5268BF-293F-4736-974D-25914B67ED4B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSEVENT_CLOCK_POSITION, KSEVENT_CLOCK_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices

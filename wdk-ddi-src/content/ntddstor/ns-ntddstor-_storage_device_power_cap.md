@@ -7,8 +7,8 @@ old-location: storage\storage_device_power_cap.htm
 old-project: storage
 ms.assetid: B13D311F-FFC4-4A40-AF0C-6E7115174FD1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_DEVICE_POWER_CAP, *PSTORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_DEVICE_POWER_CAP, PSTORAGE_DEVICE_POWER_CAP, *PSTORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

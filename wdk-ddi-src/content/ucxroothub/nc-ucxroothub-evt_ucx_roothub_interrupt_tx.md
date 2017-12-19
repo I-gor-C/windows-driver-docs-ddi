@@ -4,11 +4,11 @@ title: EVT_UCX_ROOTHUB_INTERRUPT_TX
 author: windows-driver-content
 description: The client driver's implementation that UCX calls when it receives a request for information about changed ports.
 old-location: buses\evt_ucx_roothub_interrupt_tx.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: e2371b90-2274-459b-9e4a-5c9936d21b9c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
+ms.date: 12/14/2017
+ms.keywords: _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

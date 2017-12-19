@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_destroyvideoprocessor.htm
 old-project: display
 ms.assetid: 93C1FA5F-064F-41AC-B854-FF59A5CC172C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

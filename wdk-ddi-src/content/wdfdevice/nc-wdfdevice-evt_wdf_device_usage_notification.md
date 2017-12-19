@@ -7,7 +7,7 @@ old-location: wdf\evtdeviceusagenotification.htm
 old-project: wdf
 ms.assetid: b6b7dd80-fd91-4194-8288-4d703983a798
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices

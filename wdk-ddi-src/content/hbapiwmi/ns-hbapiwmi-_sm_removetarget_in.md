@@ -7,8 +7,8 @@ old-location: storage\sm_removetarget_in.htm
 old-project: storage
 ms.assetid: a32e2442-a6a8-4c1a-ab70-40fdb525bafb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_RemoveTarget_IN, *PSM_RemoveTarget_IN, SM_RemoveTarget_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_RemoveTarget_IN, *PSM_RemoveTarget_IN, SM_RemoveTarget_IN, PSM_RemoveTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,10 +4,10 @@ title: RILDISPLAYINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildisplayinfoparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d8bd093d-ad95-488e-a057-b96fecf58bbb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILDISPLAYINFOPARAMMASK, RILDISPLAYINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

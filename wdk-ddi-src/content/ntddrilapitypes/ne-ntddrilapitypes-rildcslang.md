@@ -4,10 +4,10 @@ title: RILDCSLANG
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildcslang.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: bc39cb1a-d08a-40d7-a7c6-0342a90654dc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILDCSLANG, RILDCSLANG
 ms.prod: windows-hardware
 ms.technology: windows-devices

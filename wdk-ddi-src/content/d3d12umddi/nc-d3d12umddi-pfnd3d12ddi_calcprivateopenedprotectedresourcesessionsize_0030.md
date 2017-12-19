@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calcprivateopenedprotectedresourcesessionsize_
 old-project: display
 ms.assetid: B4F8FDC2-BF32-42D2-848B-E3B2335C0131
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgk_displaypanelorientation.htm
 old-project: display
 ms.assetid: 49758A57-EFCE-4E9C-9BF6-74F6EFD356D9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_DISPLAYPANELORIENTATION, DXGK_DISPLAYPANELORIENTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

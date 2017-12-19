@@ -7,7 +7,7 @@ old-location: display\d3dkmt-protected-session-status.htm
 old-project: display
 ms.assetid: 87a7de73-5e94-4016-b760-f3501ead08ac
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_PROTECTED_SESSION_STATUS, D3DKMT_PROTECTED_SESSION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

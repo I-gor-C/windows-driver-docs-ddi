@@ -7,8 +7,8 @@ old-location: display\vp_device_description.htm
 old-project: display
 ms.assetid: a605e37d-56cd-4d72-a713-314e20c2f630
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION
+ms.date: 12/15/2017
+ms.keywords: _VP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION, PVP_DEVICE_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

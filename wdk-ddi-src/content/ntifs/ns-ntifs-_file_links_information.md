@@ -7,8 +7,8 @@ old-location: ifsk\file_links_information.htm
 old-project: ifsk
 ms.assetid: adf1d2f3-4395-43d9-8157-e9f246e2bba8
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _FILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION, PFILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

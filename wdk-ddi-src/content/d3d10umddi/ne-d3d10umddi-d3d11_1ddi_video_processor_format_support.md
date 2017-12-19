@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_format_support.htm
 old-project: display
 ms.assetid: 3fef0cb0-6584-487d-9660-1c748509a6a9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

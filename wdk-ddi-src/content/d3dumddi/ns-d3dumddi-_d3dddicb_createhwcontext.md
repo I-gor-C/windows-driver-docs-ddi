@@ -7,7 +7,7 @@ old-location: display\d3dddicb_createhwcontext.htm
 old-project: display
 ms.assetid: DA1C3976-0261-4FF1-8E49-EDF93D7BED22
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDICB_CREATEHWCONTEXT, D3DDDICB_CREATEHWCONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices

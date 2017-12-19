@@ -7,8 +7,8 @@ old-location: stream\camnewvideoframeex.htm
 old-project: stream
 ms.assetid: 739e434e-9621-4927-bf1d-2e7c3b2828d7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
+ms.date: 12/14/2017
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

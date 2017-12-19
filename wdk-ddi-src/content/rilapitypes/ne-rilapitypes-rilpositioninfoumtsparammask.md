@@ -4,10 +4,10 @@ title: RILPOSITIONINFOUMTSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpositioninfoumtsparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c2e1bf17-130a-4e09-81e3-30100217e1b9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPOSITIONINFOUMTSPARAMMASK, RILPOSITIONINFOUMTSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

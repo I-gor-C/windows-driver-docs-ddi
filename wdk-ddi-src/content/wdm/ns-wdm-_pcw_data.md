@@ -7,8 +7,8 @@ old-location: devtest\pcw_data.htm
 old-project: devtest
 ms.assetid: c2da567a-cea6-497a-b50f-848ecac20b30
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
-ms.keywords: _PCW_DATA, *PPCW_DATA, PCW_DATA
+ms.date: 12/14/2017
+ms.keywords: _PCW_DATA, PCW_DATA, *PPCW_DATA, PPCW_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

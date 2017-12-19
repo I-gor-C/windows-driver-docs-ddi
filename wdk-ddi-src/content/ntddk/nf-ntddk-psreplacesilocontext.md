@@ -7,7 +7,7 @@ old-location: kernel\psreplacesilocontext.htm
 old-project: kernel
 ms.assetid: C2A8F7FF-7DBA-4725-A64C-7F694C8001C0
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsReplaceSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

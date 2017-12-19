@@ -7,7 +7,7 @@ old-location: display\d3dkmt-removesurfacefromswapchain.htm
 old-project: display
 ms.assetid: 249a2bfc-7326-480f-bcc0-8d5104a9c890
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_REMOVESURFACEFROMSWAPCHAIN, D3DKMT_REMOVESURFACEFROMSWAPCHAIN
 ms.prod: windows-hardware
 ms.technology: windows-devices

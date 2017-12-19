@@ -7,7 +7,7 @@ old-location: kernel\ntrenametransactionmanager.htm
 old-project: kernel
 ms.assetid: 53baa93a-bd71-4975-86cc-51eb31c2f430
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: NtRenameTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: wdf\evtinterruptworkitem.htm
 old-project: wdf
 ms.assetid: 1A473A08-EA23-4DFE-8B58-EBB4AC977891
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS
+ms.date: 12/15/2017
+ms.keywords: _WDF_COINSTALLER_INSTALL_OPTIONS, PWDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

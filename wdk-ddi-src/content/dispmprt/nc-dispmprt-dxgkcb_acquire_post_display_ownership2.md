@@ -7,8 +7,8 @@ old-location: display\dxgkcb_acquire_post_display_ownership2.htm
 old-project: display
 ms.assetid: 923A2107-8F5E-4EF7-8C3C-4EFDE26A50F5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.date: 12/15/2017
+ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

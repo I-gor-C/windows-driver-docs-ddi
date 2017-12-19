@@ -7,8 +7,8 @@ old-location: pci\sriov_read_config.htm
 old-project: PCI
 ms.assetid: 0fef9d53-b8af-4c9b-9914-982bcfc26517
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

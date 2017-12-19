@@ -7,7 +7,7 @@ old-location: pos\pos_cx_event_priority.htm
 old-project: pos
 ms.assetid: 835DC1E4-2D49-4D43-A545-5D4288412EC6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: _POS_CX_EVENT_PRIORITY, POS_CX_EVENT_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

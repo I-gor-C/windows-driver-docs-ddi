@@ -7,7 +7,7 @@ old-location: kernel\read_register_ushort.htm
 old-project: kernel
 ms.assetid: d1160b0a-9969-44ba-82e7-14048e1554c2
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\pdxgk_graphicspower_unregister.htm
 old-project: display
 ms.assetid: A925D5D3-EF79-4C14-BE1C-188C255DDF8E
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING
 ms.prod: windows-hardware
 ms.technology: windows-devices

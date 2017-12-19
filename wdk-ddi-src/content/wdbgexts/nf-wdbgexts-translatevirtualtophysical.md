@@ -4,10 +4,10 @@ title: TranslateVirtualToPhysical function
 author: windows-driver-content
 description: The TranslateVirtualToPhysical function translates a virtual memory address into a physical memory address.
 old-location: debugger\translatevirtualtophysical.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 803f766a-e02f-4b9c-bfe0-6197e0f2855c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: TranslateVirtualToPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices

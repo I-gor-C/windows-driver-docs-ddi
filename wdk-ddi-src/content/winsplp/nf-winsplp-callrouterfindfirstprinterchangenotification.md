@@ -7,7 +7,7 @@ old-location: print\callrouterfindfirstprinterchangenotification.htm
 old-project: print
 ms.assetid: 7B974255-2FCB-4EFE-B33F-9856E0A09FC4
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: CallRouterFindFirstPrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: kernel\mmgetmdlbytecount.htm
 old-project: Benchmark
 ms.assetid: a0493418-2ce2-4917-bf9f-e4dc726a3847
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 12/14/2017
 ms.keywords: MmGetMdlByteCount
 ms.prod: windows-hardware
 ms.technology: windows-devices

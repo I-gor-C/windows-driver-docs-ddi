@@ -7,7 +7,7 @@ old-location: kernel\psregistersilomonitor.htm
 old-project: kernel
 ms.assetid: C04F29FF-972C-44CC-8557-28C23827ADF0
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsRegisterSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices

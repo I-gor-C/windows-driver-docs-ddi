@@ -7,8 +7,8 @@ old-location: stream\bda_wmdrmtuner_purchaseentitlement.htm
 old-project: stream
 ms.assetid: 348E7C25-4998-490E-A732-5780B0A21DE0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_WMDRMTUNER_PURCHASEENTITLEMENT, BDA_WMDRMTUNER_PURCHASEENTITLEMENT, *PBDA_WMDRMTUNER_PURCHASEENTITLEMENT
+ms.date: 12/14/2017
+ms.keywords: _BDA_WMDRMTUNER_PURCHASEENTITLEMENT, *PBDA_WMDRMTUNER_PURCHASEENTITLEMENT, PBDA_WMDRMTUNER_PURCHASEENTITLEMENT, BDA_WMDRMTUNER_PURCHASEENTITLEMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

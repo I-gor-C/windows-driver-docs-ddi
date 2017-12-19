@@ -7,7 +7,7 @@ old-location: display\d3dddi_scanlineordering.htm
 old-project: display
 ms.assetid: 6b7b0bbf-79f2-4b0c-a7e6-75dc92bf8a63
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDI_SCANLINEORDERING, D3DDDI_SCANLINEORDERING
 ms.prod: windows-hardware
 ms.technology: windows-devices

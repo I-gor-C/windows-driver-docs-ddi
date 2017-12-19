@@ -7,7 +7,7 @@ old-location: wdf\read_port_buffer_ushort.htm
 old-project: wdf
 ms.assetid: 1707617F-3EFC-41AA-BE06-72CA254EEBDA
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_PORT_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

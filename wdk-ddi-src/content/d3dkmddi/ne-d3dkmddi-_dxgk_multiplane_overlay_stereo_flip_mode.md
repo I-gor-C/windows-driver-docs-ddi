@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_stereo_flip_mode.htm
 old-project: display
 ms.assetid: f226f276-c5d3-460d-9f52-c66ccfd3393f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE, DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

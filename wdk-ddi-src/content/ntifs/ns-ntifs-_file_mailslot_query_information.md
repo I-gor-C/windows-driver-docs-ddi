@@ -7,8 +7,8 @@ old-location: ifsk\file_mailslot_query_information.htm
 old-project: ifsk
 ms.assetid: 8e3b782a-fe8c-42e1-9786-5f89831b4c10
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FILE_MAILSLOT_QUERY_INFORMATION, FILE_MAILSLOT_QUERY_INFORMATION, *PFILE_MAILSLOT_QUERY_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _FILE_MAILSLOT_QUERY_INFORMATION, *PFILE_MAILSLOT_QUERY_INFORMATION, PFILE_MAILSLOT_QUERY_INFORMATION, FILE_MAILSLOT_QUERY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

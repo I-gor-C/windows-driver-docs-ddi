@@ -7,7 +7,7 @@ old-location: storage\scsiportwmisetinstancename.htm
 old-project: storage
 ms.assetid: f624959f-e232-4918-8f0b-f232471c2c67
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: ScsiPortWmiSetInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ PWCHAR ScsiPortWmiSetInstanceName(
 
 ### -param RequestContext [in]
 
-Pointer to a structure of type <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. 
+Pointer to a structure of type <a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. 
 
 
 ### -param InstanceIndex [in]
@@ -106,7 +106,7 @@ The <b>ScsiPortWmiSetInstanceCount</b> routine returns a pointer to the buffer w
 ## -remarks
 The minidriver must call <a href="storage.scsiportwmisetinstancecount">ScsiPortWmiSetInstanceCount</a> before calling  <b>ScsiPortWmiSetInstanceName</b>.
 
-The parameter <b>RequestContext</b> points to a request context structure, <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. 
+The parameter <b>RequestContext</b> points to a request context structure, <a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. 
 
 The <b>ScsiPortWmiSetInstanceName</b> routine requires the WNODE structure that is defined within the request context to be of type <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>. This is because <b>ScsiPortWmiSetInstanceName</b> can set aside an instance name area for any of the instances associated with a WMI data block. Unlike the <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure which contains information about a single instance, the WNODE_ALL_DATA structure contains an array of pointers to buffer areas for different instances, and <b>ScsiPortWmiSetInstanceCount</b> initializes this array, so that each buffer of instance data can be accessed individually.
 
@@ -142,7 +142,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a>
+<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
 </dt>
 <dt>
 <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a>
@@ -155,5 +155,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortWmiSetInstanceName routine%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortWmiSetInstanceName routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

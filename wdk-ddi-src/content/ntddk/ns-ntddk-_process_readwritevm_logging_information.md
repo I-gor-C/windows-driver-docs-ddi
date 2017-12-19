@@ -7,8 +7,8 @@ old-location: kernel\process_readwritevm_logging_information.htm
 old-project: kernel
 ms.assetid: F1C769FD-D05F-4C23-A91E-FAEE8EA029EC
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _PROCESS_READWRITEVM_LOGGING_INFORMATION, PROCESS_READWRITEVM_LOGGING_INFORMATION, *PPROCESS_READWRITEVM_LOGGING_INFORMATION
+ms.date: 12/15/2017
+ms.keywords: _PROCESS_READWRITEVM_LOGGING_INFORMATION, PPROCESS_READWRITEVM_LOGGING_INFORMATION, PROCESS_READWRITEVM_LOGGING_INFORMATION, *PPROCESS_READWRITEVM_LOGGING_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

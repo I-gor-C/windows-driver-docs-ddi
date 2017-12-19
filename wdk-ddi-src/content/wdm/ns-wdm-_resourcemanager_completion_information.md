@@ -7,8 +7,8 @@ old-location: kernel\resourcemanager_completion_information.htm
 old-project: kernel
 ms.assetid: c3b866c2-5908-418e-8744-9f8f22cdc88a
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _RESOURCEMANAGER_COMPLETION_INFORMATION, RESOURCEMANAGER_COMPLETION_INFORMATION, *PRESOURCEMANAGER_COMPLETION_INFORMATION
+ms.date: 12/15/2017
+ms.keywords: _RESOURCEMANAGER_COMPLETION_INFORMATION, PRESOURCEMANAGER_COMPLETION_INFORMATION, RESOURCEMANAGER_COMPLETION_INFORMATION, *PRESOURCEMANAGER_COMPLETION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

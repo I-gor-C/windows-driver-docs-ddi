@@ -4,10 +4,10 @@ title: RIL_SendSupServiceDataResponse function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_sendsupservicedataresponse.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 28e8093e-6fcc-4abd-999a-5948e7062c43
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SendSupServiceDataResponse
 ms.prod: windows-hardware
 ms.technology: windows-devices

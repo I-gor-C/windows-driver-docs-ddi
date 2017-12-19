@@ -4,11 +4,11 @@ title: RILOPENUICCLOGICALCHANNELINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilopenuicclogicalchannelinfo_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f731c790-4348-4c18-aef1-184c3d4bf258
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO
+ms.date: 12/14/2017
+ms.keywords: RILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,11 +4,11 @@ title: _WWAN_GSM_SERVING_CELL_INFO
 author: windows-driver-content
 description: The WWAN_GSM_SERVING_CELL_INFO structure represents information about the GSM serving cell.
 old-location: netvista\wwan_gsm_serving_cell_info.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 37F6BD26-55F3-4E46-9C39-97A95B6FF5B1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WWAN_GSM_SERVING_CELL_INFO, *PWWAN_GSM_SERVING_CELL_INFO, WWAN_GSM_SERVING_CELL_INFO
+ms.date: 12/14/2017
+ms.keywords: _WWAN_GSM_SERVING_CELL_INFO, WWAN_GSM_SERVING_CELL_INFO, *PWWAN_GSM_SERVING_CELL_INFO, PWWAN_GSM_SERVING_CELL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -159,5 +159,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_GSM_SERVING_CELL_INFO structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_GSM_SERVING_CELL_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

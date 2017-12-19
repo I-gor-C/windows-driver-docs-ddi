@@ -7,7 +7,7 @@ old-location: kernel\scatter_gather_list.htm
 old-project: kernel
 ms.assetid: 3cc6da15-8367-4430-afe8-956376eef1c7
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _SCATTER_GATHER_LIST, *PSCATTER_GATHER_LIST, SCATTER_GATHER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ The <b>SCATTER_GATHER_ELEMENT</b> structure specifies the length, in bytes, of a
 
 
 ## -remarks
-For a driver that performs scatter/gather DMA, the <a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a> or <a href="kernel.buildscattergatherlist">BuildScatterGatherList</a> routine creates a scatter/gather list and passes this list to the driver's <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a> routine. This scatter/gather list consists of a <b>SCATTER_GATHER_LIST</b> structure that is immediately followed in memory by a <b>SCATTER_GATHER_ELEMENT</b> array. The number of elements in this array is specified by the <b>NumberOfElements</b> member of the <b>SCATTER_GATHER_LIST</b> structure.
+For a driver that performs scatter/gather DMA, the <a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a> or <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a> routine creates a scatter/gather list and passes this list to the driver's <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a> routine. This scatter/gather list consists of a <b>SCATTER_GATHER_LIST</b> structure that is immediately followed in memory by a <b>SCATTER_GATHER_ELEMENT</b> array. The number of elements in this array is specified by the <b>NumberOfElements</b> member of the <b>SCATTER_GATHER_LIST</b> structure.
 
 For more information about scatter/gather lists, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565510">Using Scatter/Gather DMA</a>.
 
@@ -105,7 +105,7 @@ Header
 <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>
 </dt>
 <dt>
-<a href="kernel.buildscattergatherlist">BuildScatterGatherList</a>
+<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a>
@@ -115,5 +115,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SCATTER_GATHER_LIST structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SCATTER_GATHER_LIST structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

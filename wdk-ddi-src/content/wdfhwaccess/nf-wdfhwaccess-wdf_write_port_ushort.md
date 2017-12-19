@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_ushort.htm
 old-project: wdf
 ms.assetid: 310C55F8-E62C-4ABE-997E-E551CA6C4BB2
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_WRITE_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

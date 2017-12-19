@@ -7,7 +7,7 @@ old-location: display\dxgkddi_settargetgamma.htm
 old-project: display
 ms.assetid: 658EA0AA-80FC-4A45-B2EF-DFE928917E7B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

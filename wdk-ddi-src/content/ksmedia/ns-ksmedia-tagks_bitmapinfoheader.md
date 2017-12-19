@@ -7,8 +7,8 @@ old-location: stream\ks_bitmapinfoheader.htm
 old-project: stream
 ms.assetid: 77101494-97bb-4049-8c6c-cdb4ee82f312
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER
+ms.date: 12/14/2017
+ms.keywords: tagKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER, PKS_BITMAPINFOHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

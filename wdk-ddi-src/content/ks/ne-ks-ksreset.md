@@ -7,7 +7,7 @@ old-location: stream\ksreset.htm
 old-project: stream
 ms.assetid: 7622A66F-EB4A-460B-B01F-6E48EC70C07D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSRESET, KSRESET
 ms.prod: windows-hardware
 ms.technology: windows-devices

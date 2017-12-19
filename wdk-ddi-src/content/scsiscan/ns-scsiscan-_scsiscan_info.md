@@ -4,11 +4,11 @@ title: _SCSISCAN_INFO
 author: windows-driver-content
 description: The SCSISCAN_INFO structure is used as a parameter to DeviceIoControl (described in the Microsoft Windows SDK documentation), when the specified I/O control code is IOCTL_SCSISCAN_GET_INFO.
 old-location: image\scsiscan_info.htm
-old-project: image
+old-project: Image
 ms.assetid: 5fd9b381-c0e3-45bf-9061-da816da5e29f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SCSISCAN_INFO, SCSISCAN_INFO, *PSCSISCAN_INFO
+ms.date: 12/14/2017
+ms.keywords: _SCSISCAN_INFO, *PSCSISCAN_INFO, SCSISCAN_INFO, PSCSISCAN_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

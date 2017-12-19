@@ -7,7 +7,7 @@ old-location: wdf\evtdevicerelationsquery.htm
 old-project: wdf
 ms.assetid: 3a156696-1dd5-4383-a0cc-8d07ec92bdbf
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices

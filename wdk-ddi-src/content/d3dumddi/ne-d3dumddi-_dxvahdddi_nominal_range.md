@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_nominal_range.htm
 old-project: display
 ms.assetid: 952BE36C-0F53-47C3-9C95-E6ECAB9D36D1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXVAHDDDI_NOMINAL_RANGE, DXVAHDDDI_NOMINAL_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

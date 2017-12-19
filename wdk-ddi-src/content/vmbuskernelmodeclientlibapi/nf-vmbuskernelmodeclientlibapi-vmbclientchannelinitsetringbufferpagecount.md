@@ -4,10 +4,10 @@ title: VmbClientChannelInitSetRingBufferPageCount function
 author: windows-driver-content
 description: The VmbClientChannelInitSetRingBufferPageCount function sets the number of pages of memory the client allocates for incoming and outgoing ring buffers.
 old-location: netvista\vmbclientchannelinitsetringbufferpagecount.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 560A7CD9-5D9D-434B-ACEE-5852CC9A2CC3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbClientChannelInitSetRingBufferPageCount
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: _USBFN_CLASS_INTERFACE_EX
 author: windows-driver-content
 description: Describes an interface and its endpoints.
 old-location: buses\usbfn_class_interface_ex.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: DEA417E7-FA4B-4F72-A03A-ECE921FC725C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_CLASS_INTERFACE_EX, USBFN_CLASS_INTERFACE_EX, *PUSBFN_CLASS_INTERFACE_EX
+ms.date: 12/14/2017
+ms.keywords: _USBFN_CLASS_INTERFACE_EX, USBFN_CLASS_INTERFACE_EX, PUSBFN_CLASS_INTERFACE_EX, *PUSBFN_CLASS_INTERFACE_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

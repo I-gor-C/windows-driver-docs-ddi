@@ -7,7 +7,7 @@ old-location: stream\ksgetbusenumidentifier.htm
 old-project: stream
 ms.assetid: 50e14e01-5879-4a84-a8c2-f03c953dbeec
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsGetBusEnumIdentifier
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_tile_range_flag.htm
 old-project: display
 ms.assetid: 7D8B55F1-00BD-414B-9E78-DABCEBEF949F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DWDDM1_3DDI_TILE_RANGE_FLAG, D3DWDDM1_3DDI_TILE_RANGE_FLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settargetcontenttype.htm
 old-project: display
 ms.assetid: BD849954-97CC-4314-B375-22829B0CEE86
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_SETTARGETCONTENTTYPE, DXGKARG_SETTARGETCONTENTTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_vsync_info.htm
 old-project: display
 ms.assetid: b3e93b4d-7d0a-4862-a405-2bf7f78244ef
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO, DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

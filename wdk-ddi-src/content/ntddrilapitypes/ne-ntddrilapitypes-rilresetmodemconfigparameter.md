@@ -4,10 +4,10 @@ title: RILRESETMODEMCONFIGPARAMETER
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilresetmodemconfigparameter.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8cf95185-3935-4434-b9d5-c2a63a9f3eba
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILRESETMODEMCONFIGPARAMETER, RILRESETMODEMCONFIGPARAMETER
 ms.prod: windows-hardware
 ms.technology: windows-devices

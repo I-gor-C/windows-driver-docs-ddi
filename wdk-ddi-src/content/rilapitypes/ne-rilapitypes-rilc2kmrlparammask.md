@@ -4,10 +4,10 @@ title: RILC2KMRLPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilc2kmrlparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 267cd226-c1a9-4636-9709-01e3cc947349
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILC2KMRLPARAMMASK, RILC2KMRLPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,6 +40,7 @@ req.product: Windows 10 or later.
 
 ## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
+
 
 
 ## -syntax
@@ -96,6 +97,7 @@ typedef enum _RILC2KMRLPARAMMASK {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

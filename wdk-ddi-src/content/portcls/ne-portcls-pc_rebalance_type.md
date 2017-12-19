@@ -7,7 +7,7 @@ old-location: audio\pc_rebalance_type.htm
 old-project: audio
 ms.assetid: CE700126-8C29-4218-9248-F722523A4DA3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: PC_REBALANCE_TYPE, PC_REBALANCE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

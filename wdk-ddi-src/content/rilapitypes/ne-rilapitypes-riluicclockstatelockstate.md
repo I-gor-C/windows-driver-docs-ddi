@@ -4,10 +4,10 @@ title: RILUICCLOCKSTATELOCKSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicclockstatelockstate_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e97ef5bc-e3da-46ca-b593-59dc93e9cb8e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCLOCKSTATELOCKSTATE, RILUICCLOCKSTATELOCKSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

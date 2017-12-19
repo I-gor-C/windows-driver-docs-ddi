@@ -7,7 +7,7 @@ old-location: ifsk\rtlcapturestackbacktrace.htm
 old-project: ifsk
 ms.assetid: e4ad1eac-1788-4dfe-9444-f40e0de156c4
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: RtlCaptureStackBackTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices

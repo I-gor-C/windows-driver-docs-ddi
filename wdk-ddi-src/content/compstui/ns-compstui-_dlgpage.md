@@ -7,8 +7,8 @@ old-location: print\dlgpage.htm
 old-project: print
 ms.assetid: 61fb66b9-afd7-4ec4-bbbb-66a287398484
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _DLGPAGE, DLGPAGE, *PDLGPAGE
+ms.date: 12/14/2017
+ms.keywords: _DLGPAGE, DLGPAGE, *PDLGPAGE, PDLGPAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

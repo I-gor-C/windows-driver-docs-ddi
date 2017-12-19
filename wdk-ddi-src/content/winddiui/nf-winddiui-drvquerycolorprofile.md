@@ -7,7 +7,7 @@ old-location: print\drvquerycolorprofile.htm
 old-project: print
 ms.assetid: f6eec5a1-7d73-415f-84d9-1ec3f512abaf
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: DrvQueryColorProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices

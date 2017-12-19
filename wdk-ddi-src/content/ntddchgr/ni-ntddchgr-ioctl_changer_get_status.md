@@ -7,8 +7,8 @@ old-location: storage\ioctl_changer_get_status.htm
 old-project: storage
 ms.assetid: 88f1a248-0beb-4c7c-b68d-6ce145bf5ca7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _ELEMENT_TYPE, ELEMENT_TYPE, *PELEMENT_TYPE
+ms.date: 12/15/2017
+ms.keywords: _ELEMENT_TYPE, PELEMENT_TYPE, ELEMENT_TYPE, *PELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

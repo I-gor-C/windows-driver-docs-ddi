@@ -7,7 +7,7 @@ old-location: display\d3d12ddicaps_type.htm
 old-project: display
 ms.assetid: C74697BF-A191-4371-9F23-7F655EBC53B3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDICAPS_TYPE, D3D12DDICAPS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_swizzle_bit_entry.htm
 old-project: display
 ms.assetid: B7FF7AA2-39B2-4D9E-8DDC-0A39FFF49F37
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_SWIZZLE_BIT_ENTRY, D3D12DDI_SWIZZLE_BIT_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices

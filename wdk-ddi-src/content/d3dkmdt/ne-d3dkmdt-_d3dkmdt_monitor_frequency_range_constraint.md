@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_frequency_range_constraint.htm
 old-project: display
 ms.assetid: 12bf26fc-86c2-4b9b-82d4-1e8b2e38fa79
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT, D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: stream\strminicancelpacket.htm
 old-project: stream
 ms.assetid: e64c00dd-4eef-4e1e-abb0-8263088f6dc6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.date: 12/14/2017
+ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

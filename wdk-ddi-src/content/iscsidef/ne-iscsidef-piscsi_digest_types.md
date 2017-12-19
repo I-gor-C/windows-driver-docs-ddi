@@ -7,8 +7,8 @@ old-location: storage\iscsi_digest_types.htm
 old-project: storage
 ms.assetid: 0515dd76-ef1f-4f0f-a7d7-1b3b07e0523d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: PISCSI_DIGEST_TYPES, *PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES
+ms.date: 12/15/2017
+ms.keywords: PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES, PISCSI_DIGEST_TYPES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

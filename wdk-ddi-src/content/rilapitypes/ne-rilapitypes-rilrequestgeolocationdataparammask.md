@@ -4,10 +4,10 @@ title: RILREQUESTGEOLOCATIONDATAPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrequestgeolocationdataparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b81cbf26-7164-4082-a505-2a849ec3d1ea
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILREQUESTGEOLOCATIONDATAPARAMMASK, RILREQUESTGEOLOCATIONDATAPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

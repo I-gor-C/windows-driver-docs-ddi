@@ -7,8 +7,8 @@ old-location: stream\ksdevice_thermal_dispatch.htm
 old-project: stream
 ms.assetid: 6E4ADD86-EFC4-4369-83A1-1D2824235310
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH
+ms.date: 12/14/2017
+ms.keywords: _KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH, PKSDEVICE_THERMAL_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

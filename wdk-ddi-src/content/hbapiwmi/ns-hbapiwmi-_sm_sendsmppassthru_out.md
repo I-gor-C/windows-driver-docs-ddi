@@ -7,8 +7,8 @@ old-location: storage\sm_sendsmppassthru_out.htm
 old-project: storage
 ms.assetid: eb173171-3990-405e-b740-8c1a0c915165
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendSMPPassThru_OUT, *PSM_SendSMPPassThru_OUT, SM_SendSMPPassThru_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_SendSMPPassThru_OUT, PSM_SendSMPPassThru_OUT, *PSM_SendSMPPassThru_OUT, SM_SendSMPPassThru_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

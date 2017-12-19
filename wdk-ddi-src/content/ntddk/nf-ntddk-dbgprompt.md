@@ -7,7 +7,7 @@ old-location: devtest\dbgprompt.htm
 old-project: devtest
 ms.assetid: 4bb44aab-7032-4cc7-89e3-6ac3bee233d3
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 12/14/2017
 ms.keywords: DbgPrompt
 ms.prod: windows-hardware
 ms.technology: windows-devices

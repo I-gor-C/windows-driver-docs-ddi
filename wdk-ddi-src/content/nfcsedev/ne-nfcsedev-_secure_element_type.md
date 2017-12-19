@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_type.htm
 old-project: nfpdrivers
 ms.assetid: 118B63D1-713A-4F8C-B97A-53BB6D0B819E
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

@@ -4,11 +4,11 @@ title: RILCAPSLOCKINGPWDLENGTH
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcapslockingpwdlength.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 99f21862-5cd6-4bf9-abde-d5d24332a147
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH
+ms.date: 12/14/2017
+ms.keywords: RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH, LPRILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

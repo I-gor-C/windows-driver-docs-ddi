@@ -7,7 +7,7 @@ old-location: sensors\sensorscxdevicegetsensorlist.htm
 old-project: sensors
 ms.assetid: C1CA7DE4-A54A-478F-9F83-585B528EF345
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: SensorsCxDeviceGetSensorList
 ms.prod: windows-hardware
 ms.technology: windows-devices

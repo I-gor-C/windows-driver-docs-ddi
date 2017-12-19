@@ -4,10 +4,10 @@ title: FWPS_FIELDS_RPC_UM_
 author: windows-driver-content
 description: The FWPS_FIELDS_RPC_UM enumeration type specifies the data field identifiers for the FWPS_LAYER_RPC_UM run-time filtering layer.
 old-location: netvista\fwps_fields_rpc_um.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7f493a14-174f-4101-8c08-069dbe9ec3e7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_RPC_UM_, FWPS_FIELDS_RPC_UM
 ms.prod: windows-hardware
 ms.technology: windows-devices

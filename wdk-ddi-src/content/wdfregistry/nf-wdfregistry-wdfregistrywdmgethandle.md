@@ -7,7 +7,7 @@ old-location: wdf\wdfregistrywdmgethandle.htm
 old-project: wdf
 ms.assetid: 60638048-9009-4943-ba61-b724612852df
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices

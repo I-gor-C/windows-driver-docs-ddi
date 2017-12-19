@@ -7,8 +7,8 @@ old-location: storage\ide_controller_configuration.htm
 old-project: storage
 ms.assetid: 89b7f66e-3a3a-4723-a409-3b3030c1a45b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _IDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION
+ms.date: 12/15/2017
+ms.keywords: _IDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION, PIDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

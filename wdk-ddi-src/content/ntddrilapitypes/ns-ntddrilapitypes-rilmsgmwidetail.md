@@ -4,11 +4,11 @@ title: RILMSGMWIDETAIL
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwidetail.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 69371414-9f4a-46a6-8622-5750db7a0c5b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMSGMWIDETAIL, RILMSGMWIDETAIL, *LPRILMSGMWIDETAIL
+ms.date: 12/14/2017
+ms.keywords: RILMSGMWIDETAIL, LPRILMSGMWIDETAIL, RILMSGMWIDETAIL, *LPRILMSGMWIDETAIL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

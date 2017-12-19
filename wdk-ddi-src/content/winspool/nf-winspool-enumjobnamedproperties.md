@@ -7,7 +7,7 @@ old-location: print\enumjobnamedproperties.htm
 old-project: print
 ms.assetid: 0C5E2279-79D0-40A2-BA5B-66994A22E963
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: EnumJobNamedProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices

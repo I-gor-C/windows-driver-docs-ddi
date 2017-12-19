@@ -7,7 +7,7 @@ old-location: kernel\read_port_ulong.htm
 old-project: kernel
 ms.assetid: 8a2f4429-b805-4a36-afdf-8b9c9a886951
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

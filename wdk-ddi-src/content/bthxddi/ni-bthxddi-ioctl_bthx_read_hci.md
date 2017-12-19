@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bthx_hci_read.htm
 old-project: bltooth
 ms.assetid: 02CC3534-D319-40C1-A73C-DEFC1F5709F7
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
+ms.date: 12/14/2017
+ms.keywords: _BTHX_SCO_SUPPORT, PBTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

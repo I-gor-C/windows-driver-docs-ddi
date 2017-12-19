@@ -7,7 +7,7 @@ old-location: kernel\write_register_ulong.htm
 old-project: kernel
 ms.assetid: d1f3d510-5b2c-4956-b9e0-cd26b2d818a9
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

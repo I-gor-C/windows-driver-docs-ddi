@@ -38,8 +38,8 @@ Minitape.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PRT_PARAMETER_DATA structure](ns-minitape-prt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
-| [PST_PARAMETER_DATA structure](ns-minitape-pst_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
+| [RT_PARAMETER_DATA structure](ns-minitape-rt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
+| [ST_PARAMETER_DATA structure](ns-minitape-st_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
 | [_REPORT_ZONES_DATA structure](ns-minitape-_report_zones_data.md) | Note  This structure is for internal use only and should not be called from your code. . |
 | [_SES_CONFIGURATION_DIAGNOSTIC_PAGE structure](ns-minitape-_ses_configuration_diagnostic_page.md) | TBD. |
 | [_SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure](ns-minitape-_ses_download_microcode_control_diagnostic_page.md) | The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process. |

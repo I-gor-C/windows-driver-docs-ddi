@@ -4,11 +4,11 @@ title: _DEBUG_LAST_EVENT_INFO_EXCEPTION
 author: windows-driver-content
 description: Describes the exception of the last event.
 old-location: debugger\debug_last_event_info_exception.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: FB4EBA71-5144-440A-AFD1-7460903C9189
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_EXCEPTION, DEBUG_LAST_EVENT_INFO_EXCEPTION, *PDEBUG_LAST_EVENT_INFO_EXCEPTION
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_EXCEPTION, DEBUG_LAST_EVENT_INFO_EXCEPTION, PDEBUG_LAST_EVENT_INFO_EXCEPTION, *PDEBUG_LAST_EVENT_INFO_EXCEPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

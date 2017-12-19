@@ -7,7 +7,7 @@ old-location: wdf\read_register_ushort.htm
 old-project: wdf
 ms.assetid: 75DDFC2A-EF7F-4652-B0D0-8BF1583B3679
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

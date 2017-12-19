@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_read_media_key_block.htm
 old-project: storage
 ms.assetid: 08852f41-1836-4c55-bf6f-0246caa2c8bd
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+ms.date: 12/15/2017
+ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

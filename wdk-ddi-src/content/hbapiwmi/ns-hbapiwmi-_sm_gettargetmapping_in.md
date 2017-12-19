@@ -7,8 +7,8 @@ old-location: storage\sm_gettargetmapping_in.htm
 old-project: storage
 ms.assetid: d6f73582-5eaf-452f-ad5a-cdf5ab99d809
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN, SM_GetTargetMapping_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_GetTargetMapping_IN, PSM_GetTargetMapping_IN, SM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

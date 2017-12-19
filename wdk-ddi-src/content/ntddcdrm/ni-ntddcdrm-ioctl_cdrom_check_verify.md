@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_check_verify.htm
 old-project: storage
 ms.assetid: ad2a5f3d-a796-4579-aa23-91b99baa1186
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.date: 12/15/2017
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -7,7 +7,7 @@ old-location: pos\barcodesymbologydecodelengthtype.htm
 old-project: pos
 ms.assetid: 155D1C71-7935-4512-8AA2-0EB167FCBF5E
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: _BarcodeSymbologyDecodeLengthType, BarcodeSymbologyDecodeLengthType
 ms.prod: windows-hardware
 ms.technology: windows-devices

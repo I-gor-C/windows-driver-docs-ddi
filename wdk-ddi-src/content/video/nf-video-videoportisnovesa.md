@@ -7,7 +7,7 @@ old-location: display\videoportisnovesa.htm
 old-project: display
 ms.assetid: e3de4e58-c3e7-426f-bc96-b45cad6b5807
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortIsNoVesa
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgk_glitch_effect.htm
 old-project: display
 ms.assetid: EACD5B8D-B579-4EB0-93C7-0B356A67CA8F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_GLITCH_EFFECT, DXGK_GLITCH_EFFECT
 ms.prod: windows-hardware
 ms.technology: windows-devices

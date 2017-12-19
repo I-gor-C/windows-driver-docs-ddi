@@ -7,7 +7,7 @@ old-location: storage\storportinitializecryptoengine.htm
 old-project: storage
 ms.assetid: 49F4EEA1-BFA6-4A91-8306-E25569C679A6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortInitializeCryptoEngine
 ms.prod: windows-hardware
 ms.technology: windows-devices

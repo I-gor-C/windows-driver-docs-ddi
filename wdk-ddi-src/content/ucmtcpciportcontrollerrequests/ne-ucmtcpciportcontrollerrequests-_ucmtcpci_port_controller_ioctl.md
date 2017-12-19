@@ -4,10 +4,10 @@ title: _UCMTCPCI_PORT_CONTROLLER_IOCTL
 author: windows-driver-content
 description: Defines the various device I/O control requests that are sent to the client driver for the port controller. This indicates the type of IOCTL in WPP.
 old-location: buses\ucmtcpci_port_controller_ioctl.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 61dcd4d9-cfd9-4878-96f5-c95465e0949e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _UCMTCPCI_PORT_CONTROLLER_IOCTL, UCMTCPCI_PORT_CONTROLLER_IOCTL
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILUICCSUBSCRIBERNUMBERS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccsubscribernumbers_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e1a097b5-ce13-4070-a6f6-4b461ac086de
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCSUBSCRIBERNUMBERS, *LPRILUICCSUBSCRIBERNUMBERS, RILUICCSUBSCRIBERNUMBERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

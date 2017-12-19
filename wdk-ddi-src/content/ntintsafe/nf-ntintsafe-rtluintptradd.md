@@ -7,7 +7,7 @@ old-location: kernel\rtluintptradd.htm
 old-project: kernel
 ms.assetid: 9106CE96-A26F-4358-9668-2C0E331BB793
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlUIntPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

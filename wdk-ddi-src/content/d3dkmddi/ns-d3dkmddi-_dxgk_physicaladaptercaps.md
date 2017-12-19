@@ -7,7 +7,7 @@ old-location: display\dxgk_physicaladaptercaps.htm
 old-project: display
 ms.assetid: 8D075473-605F-4B75-BB02-5B182EEB3B5F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PHYSICALADAPTERCAPS, DXGK_PHYSICALADAPTERCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: ReadControlSpace64 function
 author: windows-driver-content
 description: The ReadControlSpace64 function reads the processor-specific control space into the array pointed to by buf.
 old-location: debugger\readcontrolspace64.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 4fa3d51a-d2f5-4b5f-abc0-515bf7211b87
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: ReadControlSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices

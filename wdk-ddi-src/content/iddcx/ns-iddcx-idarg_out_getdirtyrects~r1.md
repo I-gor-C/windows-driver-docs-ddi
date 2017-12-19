@@ -7,7 +7,7 @@ old-location: display\idarg_out_getdirtyrects.htm
 old-project: display
 ms.assetid: 4116be18-e98e-4778-b0aa-753c1ca79d32
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDARG_OUT_GETDIRTYRECTS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

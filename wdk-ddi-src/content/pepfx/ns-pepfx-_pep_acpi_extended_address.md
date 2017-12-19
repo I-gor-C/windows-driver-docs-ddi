@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_extended_address.htm
 old-project: kernel
 ms.assetid: E784765E-E346-4D57-B334-D0A0A823DAA8
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _PEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS, *PPEP_ACPI_EXTENDED_ADDRESS
+ms.date: 12/15/2017
+ms.keywords: _PEP_ACPI_EXTENDED_ADDRESS, *PPEP_ACPI_EXTENDED_ADDRESS, PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

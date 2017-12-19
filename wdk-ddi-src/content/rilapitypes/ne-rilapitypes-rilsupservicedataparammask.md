@@ -4,10 +4,10 @@ title: RILSUPSERVICEDATAPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsupservicedataparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 65901068-d45e-4c3a-b1ee-340427506c7f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSUPSERVICEDATAPARAMMASK, RILSUPSERVICEDATAPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

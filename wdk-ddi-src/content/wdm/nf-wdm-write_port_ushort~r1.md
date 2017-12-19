@@ -7,7 +7,7 @@ old-location: kernel\write_port_ushort.htm
 old-project: kernel
 ms.assetid: 60145cf3-62cb-4165-8536-f1546b9623dd
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgkarg_postmultiplaneoverlaypresent.htm
 old-project: display
 ms.assetid: E257606A-66EE-4F53-B661-F5FFC63E1F54
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 ms.prod: windows-hardware
 ms.technology: windows-devices

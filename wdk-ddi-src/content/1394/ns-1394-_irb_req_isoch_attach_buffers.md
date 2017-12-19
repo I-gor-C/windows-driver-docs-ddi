@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_attach_buffers.htm
 old-project: IEEE
 ms.assetid: 7EA6E82C-D803-48CD-9955-CF576BF978CA
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_ATTACH_BUFFERS, IRB_REQ_ISOCH_ATTACH_BUFFERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

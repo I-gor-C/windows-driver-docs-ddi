@@ -4,11 +4,11 @@ title: _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST
 author: windows-driver-content
 description: the DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST structure is included with a OID_DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST request. The structure contains the list of secondary device types advertised by a Wi-Fi Direct device.
 old-location: netvista\_dot11_wfd_secondary_device_type_list.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ABD61A6C-EE0A-49AF-AE8C-75014C2A09D4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, *PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST
+ms.date: 12/14/2017
+ms.keywords: _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, *PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

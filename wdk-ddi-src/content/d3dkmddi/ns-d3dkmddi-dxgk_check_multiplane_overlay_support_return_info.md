@@ -7,7 +7,7 @@ old-location: display\dxgk_check_multiplane_overlay_support_return_info.htm
 old-project: display
 ms.assetid: EA440D77-18E6-4EB4-8621-50C3233DFEA6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_RETURN_INFO, DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_RETURN_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

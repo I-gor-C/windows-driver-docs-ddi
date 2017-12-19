@@ -7,8 +7,8 @@ old-location: smartcrd\scard_card_capabilities.htm
 old-project: smartcrd
 ms.assetid: 8cc223be-a692-4141-81f6-4cca9e2fccf1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES
+ms.date: 12/14/2017
+ms.keywords: _SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

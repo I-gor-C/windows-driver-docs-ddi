@@ -7,7 +7,7 @@ old-location: kernel\pofxsetcomponentresidency.htm
 old-project: kernel
 ms.assetid: B4216BA1-FC5C-4A3B-BB74-E071BD2048F8
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PoFxSetComponentResidency
 ms.prod: windows-hardware
 ms.technology: windows-devices

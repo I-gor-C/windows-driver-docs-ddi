@@ -7,7 +7,7 @@ old-location: sensors\ioctl_gnss_inject_agnss.htm
 old-project: sensors
 ms.assetid: 68EC4397-1983-4D02-BF6E-599DC987E7E9
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ The <b>IOCTL_GNSS_INJECT_AGNSS</b> control code is used by the GNSS adapter to i
 ## -ioctlparameters
 
 ### -input-buffer
-A pointer to a <a href="sensors.gnss_agnss_inject">GNSS_AGNSS_INJECT</a> structure.
+A pointer to a <a href="..\gnssdriver\ns-gnssdriver-gnss_agnss_inject.md">GNSS_AGNSS_INJECT</a> structure.
 
 
 ### -input-buffer-length
@@ -75,7 +75,7 @@ I/O Status block
 
 ## -remarks
 
-<a href="sensors.gnss_agnss_inject">GNSS_AGNSS_INJECT</a>
+<a href="..\gnssdriver\ns-gnssdriver-gnss_agnss_inject.md">GNSS_AGNSS_INJECT</a>
 
 
 Depending on the InjectionType element, the appropriate data element is filled.
@@ -129,5 +129,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_INJECT_AGNSS control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_INJECT_AGNSS control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

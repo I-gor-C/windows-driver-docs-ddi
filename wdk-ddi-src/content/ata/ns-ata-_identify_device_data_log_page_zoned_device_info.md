@@ -7,8 +7,8 @@ old-location: storage\identify_device_data_log_page_zoned_device_info.htm
 old-project: storage
 ms.assetid: 2F0B6C1F-54CC-47CF-B0D0-A53FAB80AF91
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
+ms.date: 12/15/2017
+ms.keywords: _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

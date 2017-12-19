@@ -7,7 +7,7 @@ old-location: display\dxgk_colortransformcaps_.htm
 old-project: display
 ms.assetid: 83113D6C-44A1-4022-8101-061DEA9868E1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_COLORTRANSFORMCAPS, DXGK_COLORTRANSFORMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

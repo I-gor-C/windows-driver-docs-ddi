@@ -7,7 +7,7 @@ old-location: kernel\rtllongtoint.htm
 old-project: kernel
 ms.assetid: 9C35B77E-FFEC-42A0-9D2C-9E52E210C941
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlLongToInt
 ms.prod: windows-hardware
 ms.technology: windows-devices

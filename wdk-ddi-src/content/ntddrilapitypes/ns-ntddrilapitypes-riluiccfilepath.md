@@ -4,11 +4,11 @@ title: RILUICCFILEPATH
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccfilepath.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 65c46391-f0ef-4618-ac26-86f41e04e688
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILUICCFILEPATH, *LPRILUICCFILEPATH, RILUICCFILEPATH
+ms.date: 12/14/2017
+ms.keywords: RILUICCFILEPATH, LPRILUICCFILEPATH, RILUICCFILEPATH, *LPRILUICCFILEPATH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

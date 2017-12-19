@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_opm_get_random_number.htm
 old-project: display
 ms.assetid: 330dc0a1-d9a9-44c1-9d29-752c2567e745
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

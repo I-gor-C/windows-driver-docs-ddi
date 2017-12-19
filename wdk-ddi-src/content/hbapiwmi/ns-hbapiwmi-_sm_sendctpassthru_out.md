@@ -7,8 +7,8 @@ old-location: storage\sm_sendctpassthru_out.htm
 old-project: storage
 ms.assetid: df1869d1-83ed-4574-85c2-89fb2b78d177
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendCTPassThru_OUT, *PSM_SendCTPassThru_OUT, SM_SendCTPassThru_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_SendCTPassThru_OUT, SM_SendCTPassThru_OUT, *PSM_SendCTPassThru_OUT, PSM_SendCTPassThru_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

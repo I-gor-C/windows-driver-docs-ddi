@@ -4,11 +4,11 @@ title: _DOT11_WFD_CONFIGURATION_TIMEOUT
 author: windows-driver-content
 description: The DOT11_WFD_CONFIGURATION_TIMEOUT structure contains configuration time-out parameters.
 old-location: netvista\dot11_wfd_configuration_timeout.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5432EB69-933A-4080-919F-4131DC4044D0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT
+ms.date: 12/14/2017
+ms.keywords: _DOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

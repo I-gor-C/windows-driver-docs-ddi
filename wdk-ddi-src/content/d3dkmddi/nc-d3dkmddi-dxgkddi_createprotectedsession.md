@@ -7,7 +7,7 @@ old-location: display\dxgkddi_createprotectedsession.htm
 old-project: display
 ms.assetid: 0FAE7AA0-839D-4D21-BC10-46B2B651979F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

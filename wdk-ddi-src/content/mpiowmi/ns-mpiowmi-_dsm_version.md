@@ -7,8 +7,8 @@ old-location: storage\dsm_version.htm
 old-project: storage
 ms.assetid: 1aa264fa-b552-41a0-bd43-a62f8f2b533b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DSM_VERSION, *PDSM_VERSION, DSM_VERSION
+ms.date: 12/15/2017
+ms.keywords: _DSM_VERSION, PDSM_VERSION, DSM_VERSION, *PDSM_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

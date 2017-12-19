@@ -4,10 +4,10 @@ title: _WDI_CONNECTION_QUALITY_HINT
 author: windows-driver-content
 description: The WDI_CONNECTION_QUALITY_HINT enumeration defines the Wi-Fi connection quality hints.
 old-location: netvista\wdi_connection_quality_hint.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: D83AE2BE-1273-48A1-A42C-C2EADA07D9C0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HINT
 ms.prod: windows-hardware
 ms.technology: windows-devices

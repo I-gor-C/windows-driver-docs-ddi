@@ -7,7 +7,7 @@ old-location: print\freeprintnamedpropertyarray.htm
 old-project: print
 ms.assetid: 18E24562-F57A-492F-9254-722ABA0B2BC4
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: FreePrintNamedPropertyArray
 ms.prod: windows-hardware
 ms.technology: windows-devices

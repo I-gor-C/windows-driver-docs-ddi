@@ -7,7 +7,7 @@ old-location: stream\kscreatedefaultsecurity.htm
 old-project: stream
 ms.assetid: 2992a62b-7c3c-4bf5-ba3a-26c26c419f98
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsCreateDefaultSecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices

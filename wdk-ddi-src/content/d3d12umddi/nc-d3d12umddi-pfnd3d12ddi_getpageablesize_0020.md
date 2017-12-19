@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_getpageablesize.htm
 old-project: display
 ms.assetid: DC215186-A216-4C34-AE9A-A487178B34C0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

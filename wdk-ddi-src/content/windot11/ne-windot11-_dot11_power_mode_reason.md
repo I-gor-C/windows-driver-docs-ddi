@@ -4,10 +4,10 @@ title: _DOT11_POWER_MODE_REASON
 author: windows-driver-content
 description: The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode state.
 old-location: netvista\dot11_power_mode_reason.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0B8402B5-CFDA-402F-BA7A-A44478333C04
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _DOT11_POWER_MODE_REASON, DOT11_POWER_MODE_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices

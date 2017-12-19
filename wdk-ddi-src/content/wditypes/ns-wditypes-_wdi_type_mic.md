@@ -4,11 +4,11 @@ title: _WDI_TYPE_MIC
 author: windows-driver-content
 description: The WDI_TYPE_MIC structure defines the MIC (802.11r).
 old-location: netvista\wdi_type_mic.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: A21EEC35-98F2-4B68-A851-1C45D7F55194
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_TYPE_MIC, WDI_TYPE_MIC, *PWDI_TYPE_MIC
+ms.date: 12/14/2017
+ms.keywords: _WDI_TYPE_MIC, WDI_TYPE_MIC, *PWDI_TYPE_MIC, PWDI_TYPE_MIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-crypto-session-transform-decrypt-header-input-arg
 old-project: display
 ms.assetid: 49367166-11bd-4a4e-aa47-e91dbe9a3df8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_HEADER_INPUT_ARGUMENTS_0030, D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_HEADER_INPUT_ARGUMENTS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices

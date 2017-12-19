@@ -7,8 +7,8 @@ old-location: audio\usbsidebandaudio_device_descriptor.htm
 old-project: audio
 ms.assetid: 66EDD6E5-F6EB-42C9-8B68-3A19DED7DCB8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

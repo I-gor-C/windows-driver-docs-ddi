@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createvideodecoderheap_0032.htm
 old-project: display
 ms.assetid: EC383086-CE8F-4387-8F92-BEC8215A97DA
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

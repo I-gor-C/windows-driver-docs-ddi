@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpn_interface.htm
 old-project: display
 ms.assetid: 7ddd110c-2521-4df6-a936-e702a0f15312
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_VIDPN_INTERFACE, DXGK_VIDPN_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_stereo_format.htm
 old-project: display
 ms.assetid: ce9ad02d-645a-4333-9208-27f0805508a5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT, DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices

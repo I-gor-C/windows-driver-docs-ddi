@@ -7,8 +7,8 @@ old-location: kernel\iotimer.htm
 old-project: kernel
 ms.assetid: c41b7489-afd2-4ddf-b296-6d42e3ff6cbf
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 12/15/2017
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

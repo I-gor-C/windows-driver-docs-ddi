@@ -4,10 +4,10 @@ title: VmbChannelRestoreFromBuffer function
 author: windows-driver-content
 description: The VmbChannelRestoreFromBuffer function restores the client state from previously saved state. The driver must check the return value of the function.
 old-location: netvista\vmbchannelrestorefrombuffer.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5A063585-AC45-44DF-BE21-FA1BB6283E6F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelRestoreFromBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices

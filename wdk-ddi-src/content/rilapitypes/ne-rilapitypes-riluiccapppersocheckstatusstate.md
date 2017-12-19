@@ -4,10 +4,10 @@ title: RILUICCAPPPERSOCHECKSTATUSSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccapppersocheckstatusstate_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 389c20de-7ff2-47c6-8393-529e401e56e0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCAPPPERSOCHECKSTATUSSTATE, RILUICCAPPPERSOCHECKSTATUSSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

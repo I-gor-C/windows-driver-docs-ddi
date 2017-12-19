@@ -7,8 +7,8 @@ old-location: kernel\io_allocation_action.htm
 old-project: kernel
 ms.assetid: 245d35a1-e877-4446-a0da-e50ece3656b1
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION
+ms.date: 12/15/2017
+ms.keywords: _IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION, PIO_ALLOCATION_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

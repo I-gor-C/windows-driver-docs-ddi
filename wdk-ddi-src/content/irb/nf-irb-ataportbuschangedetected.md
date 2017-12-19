@@ -7,7 +7,7 @@ old-location: storage\ataportbuschangedetected.htm
 old-project: storage
 ms.assetid: e5a3d4dc-7446-49c1-985a-9d3a9d43dc15
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: AtaPortBusChangeDetected
 ms.prod: windows-hardware
 ms.technology: windows-devices

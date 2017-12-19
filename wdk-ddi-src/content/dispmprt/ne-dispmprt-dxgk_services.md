@@ -7,7 +7,7 @@ old-location: display\dxgk_services.htm
 old-project: display
 ms.assetid: 8853e0f8-1dd0-4cb5-8dbf-c1d4e62bb0ec
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DXGK_SERVICES, DXGK_SERVICES
 ms.prod: windows-hardware
 ms.technology: windows-devices

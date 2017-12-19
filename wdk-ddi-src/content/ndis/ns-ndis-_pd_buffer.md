@@ -4,10 +4,10 @@ title: _PD_BUFFER
 author: windows-driver-content
 description: This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
 old-location: netvista\pd_buffer.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _PD_BUFFER, PD_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices

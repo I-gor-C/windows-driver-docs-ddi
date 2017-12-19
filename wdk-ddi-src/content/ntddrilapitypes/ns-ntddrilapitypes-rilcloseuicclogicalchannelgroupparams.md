@@ -4,11 +4,11 @@ title: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcloseuicclogicalchannelgroupparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9442df60-7280-4c09-bea0-45ed2ac70694
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_brightness_possible_levels.htm
 old-project: display
 ms.assetid: d7402839-2afe-43d3-9747-7b2e98d1c238
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS, D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS
 ms.prod: windows-hardware
 ms.technology: windows-devices

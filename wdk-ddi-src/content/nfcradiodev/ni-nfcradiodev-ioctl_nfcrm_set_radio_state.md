@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcrm_set_radio_state.htm
 old-project: nfpdrivers
 ms.assetid: C54C774A-3FBB-4850-BBB2-2B330CC64A8D
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG
+ms.date: 12/14/2017
+ms.keywords: _NFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG, PNFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -7,8 +7,8 @@ old-location: audio\usbsidebandaudio_volume_params.htm
 old-project: audio
 ms.assetid: 253CD4CB-AC8D-4CA0-B620-EB1CC4DFD925
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS
+ms.date: 12/14/2017
+ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, PUSBSIDEBANDAUDIO_VOLUME_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

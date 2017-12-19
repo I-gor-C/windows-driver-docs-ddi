@@ -4,10 +4,10 @@ title: RILPOSITIONINFOLTEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpositioninfolteparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9c71420f-8b85-4f31-9a08-7f363be75cc0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPOSITIONINFOLTEPARAMMASK, RILPOSITIONINFOLTEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

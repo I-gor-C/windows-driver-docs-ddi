@@ -7,8 +7,8 @@ old-location: storage\hwstorresetbus.htm
 old-project: storage
 ms.assetid: fda5291c-dd4e-4aa1-8dac-65cf4c4306ab
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

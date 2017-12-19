@@ -4,10 +4,10 @@ title: RILCALLAUDIOSOURCE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallaudiosource_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9da5508a-7397-4260-b5d8-16b0d624b98b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLAUDIOSOURCE, RILCALLAUDIOSOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

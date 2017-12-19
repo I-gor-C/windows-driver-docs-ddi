@@ -7,8 +7,8 @@ old-location: print\userdata.htm
 old-project: print
 ms.assetid: 5d4e5454-f44f-483a-a389-c8973263fbaa
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _USERDATA, *PUSERDATA, USERDATA
+ms.date: 12/14/2017
+ms.keywords: _USERDATA, USERDATA, *PUSERDATA, PUSERDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,10 +4,10 @@ title: wiasGetPropertyAttributes function
 author: windows-driver-content
 description: The wiasGetPropertyAttributes function retrieves the access flags and valid values for a set of properties.
 old-location: image\wiasgetpropertyattributes.htm
-old-project: image
+old-project: Image
 ms.assetid: b12ff158-73e7-4fdf-b7b1-2969d161ed93
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiasGetPropertyAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices

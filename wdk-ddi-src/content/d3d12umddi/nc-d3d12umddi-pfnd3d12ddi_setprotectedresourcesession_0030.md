@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_setprotectedresourcesession_0030_.htm
 old-project: display
 ms.assetid: 1AF1FA8A-3A7E-4277-B6BE-C41A5C4416B6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

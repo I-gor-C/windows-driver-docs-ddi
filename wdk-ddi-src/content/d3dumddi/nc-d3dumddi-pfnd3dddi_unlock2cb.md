@@ -7,7 +7,7 @@ old-location: display\pfnunlock2cb.htm
 old-project: display
 ms.assetid: 642C6A05-DA8C-453A-B1AA-030C59F32DA5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

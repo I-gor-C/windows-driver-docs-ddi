@@ -4,10 +4,10 @@ title: RILUICCCOMMAND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicccommand.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 1c2ded31-9d2d-46e4-a23f-a48528fd448f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCCOMMAND, RILUICCCOMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices

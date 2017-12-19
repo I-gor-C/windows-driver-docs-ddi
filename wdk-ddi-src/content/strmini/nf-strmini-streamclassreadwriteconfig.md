@@ -7,7 +7,7 @@ old-location: stream\streamclassreadwriteconfig.htm
 old-project: stream
 ms.assetid: ae8c1478-b429-4af1-a36d-96145696a990
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: StreamClassReadWriteConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices

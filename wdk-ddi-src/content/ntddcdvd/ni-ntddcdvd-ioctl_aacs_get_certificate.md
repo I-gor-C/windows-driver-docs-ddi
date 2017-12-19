@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_get_certificate.htm
 old-project: storage
 ms.assetid: 1245f9c3-702c-48d8-8ecd-c0ce40d520b3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+ms.date: 12/15/2017
+ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

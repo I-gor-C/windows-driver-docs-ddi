@@ -7,8 +7,8 @@ old-location: storage\sm_sendrls_out.htm
 old-project: storage
 ms.assetid: 28c08a30-b6c6-4f1b-a3a9-0581da0159b9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendRLS_OUT, SM_SendRLS_OUT, *PSM_SendRLS_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_SendRLS_OUT, *PSM_SendRLS_OUT, SM_SendRLS_OUT, PSM_SendRLS_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

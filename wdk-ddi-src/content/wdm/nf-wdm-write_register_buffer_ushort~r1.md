@@ -7,7 +7,7 @@ old-location: kernel\write_register_buffer_ushort.htm
 old-project: kernel
 ms.assetid: 070fc2b0-045e-4778-82d4-0850cd2064a5
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

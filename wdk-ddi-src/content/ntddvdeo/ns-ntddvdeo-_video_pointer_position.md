@@ -7,8 +7,8 @@ old-location: display\video_pointer_position.htm
 old-project: display
 ms.assetid: 07586be9-a8bc-4149-8037-7b649a75a818
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION
+ms.date: 12/15/2017
+ms.keywords: _VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION, PVIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

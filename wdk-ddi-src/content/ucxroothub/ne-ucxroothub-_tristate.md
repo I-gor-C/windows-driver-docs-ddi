@@ -4,10 +4,10 @@ title: _TRISTATE
 author: windows-driver-content
 description: The TRISTATE enumeration indicates generic state values for true or false.
 old-location: buses\tristate.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 16D8981B-53D3-4886-A85F-B487701ED172
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _TRISTATE, TRISTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

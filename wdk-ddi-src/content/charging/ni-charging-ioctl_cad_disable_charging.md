@@ -7,8 +7,8 @@ old-location: battery\ioctl_cad_disable_charging.htm
 old-project: battery
 ms.assetid: 51E91097-7315-489A-8C07-0946481BF573
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
+ms.date: 12/14/2017
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

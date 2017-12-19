@@ -7,8 +7,8 @@ old-location: storage\setdsmcounters_in.htm
 old-project: storage
 ms.assetid: fb8cebec-0cf8-4649-8b91-cd4f9935fac9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN
+ms.date: 12/15/2017
+ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN, PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

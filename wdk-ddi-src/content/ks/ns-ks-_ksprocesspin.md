@@ -7,8 +7,8 @@ old-location: stream\ksprocesspin.htm
 old-project: stream
 ms.assetid: a1625eb2-a38b-4517-b873-f33b5ced8705
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _KSPROCESSPIN, KSPROCESSPIN, *PKSPROCESSPIN
+ms.date: 12/14/2017
+ms.keywords: _KSPROCESSPIN, *PKSPROCESSPIN, KSPROCESSPIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -69,7 +69,7 @@ A pointer to a <a href="stream.kspin">KSPIN</a> structure that the KSPROCESSPIN 
 
 ### -field StreamPointer
 
-A pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure that points into the input stream at the current input location or into the output stream at the current output location. This can be used, for example, by output pins to stamp information onto the associated <a href="stream.ksstream_header">KSSTREAM_HEADER</a> (ProcessPin-&gt;StreamPointer-&gt;StreamHeader-&gt;Flags=...).
+A pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure that points into the input stream at the current input location or into the output stream at the current output location. This can be used, for example, by output pins to stamp information onto the associated <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> (ProcessPin-&gt;StreamPointer-&gt;StreamHeader-&gt;Flags=...).
 
 
 ### -field InPlaceCounterpart
@@ -104,7 +104,7 @@ This member specifies how many bytes of this data frame have been used by the pr
 
 ### -field Flags
 
-This member contains a copy of the flags from the relevant <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structure, if this KSPROCESSPIN is an input pin.
+This member contains a copy of the flags from the relevant <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structure, if this KSPROCESSPIN is an input pin.
 
 
 ### -field Terminate
@@ -157,12 +157,12 @@ Header
 <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a>
 </dt>
 <dt>
-<a href="stream.ksstream_header">KSSTREAM_HEADER</a>
+<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROCESSPIN structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROCESSPIN structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

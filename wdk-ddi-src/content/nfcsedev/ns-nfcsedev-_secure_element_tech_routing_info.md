@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_tech_routing_info.htm
 old-project: nfpdrivers
 ms.assetid: 62622A56-D84A-40E4-9CFA-4B0938B8FD85
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO, PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

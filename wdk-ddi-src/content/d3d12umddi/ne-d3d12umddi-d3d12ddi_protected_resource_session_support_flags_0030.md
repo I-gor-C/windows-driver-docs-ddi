@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-protected-resource-session-support-flags-0030.htm
 old-project: display
 ms.assetid: f313ee29-9ff4-415b-9a0e-900bf751bb88
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS_0030, D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices

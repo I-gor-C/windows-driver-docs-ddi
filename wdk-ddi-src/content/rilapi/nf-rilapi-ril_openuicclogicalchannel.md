@@ -4,10 +4,10 @@ title: RIL_OpenUiccLogicalChannel function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_openuicclogicalchannel.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8e77d55d-62f5-450c-9d9a-41acfece84c0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_OpenUiccLogicalChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices

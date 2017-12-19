@@ -7,7 +7,7 @@ old-location: display\dxgkarg_getmultiplaneoverlaycaps.htm
 old-project: display
 ms.assetid: 4792107C-BAAA-48B5-AC9A-829C05795303
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_GETMULTIPLANEOVERLAYCAPS, DXGKARG_GETMULTIPLANEOVERLAYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

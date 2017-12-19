@@ -4,10 +4,10 @@ title: RILMSGMWITYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwitype.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e5faa899-194a-412c-9308-a84227a31a6a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGMWITYPE, RILMSGMWITYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

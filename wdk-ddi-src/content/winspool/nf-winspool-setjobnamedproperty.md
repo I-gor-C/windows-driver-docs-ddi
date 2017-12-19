@@ -7,7 +7,7 @@ old-location: print\setjobnamedproperty.htm
 old-project: print
 ms.assetid: 6A03B009-21D4-4CD2-9BB5-36F402118270
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: SetJobNamedProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices

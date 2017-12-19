@@ -4,11 +4,11 @@ title: _BMP_IMAGE_INFO
 author: windows-driver-content
 description: The BMP_IMAGE_INFO structure contains information about a BMP image.
 old-location: image\bmp_image_info.htm
-old-project: image
+old-project: Image
 ms.assetid: 953e2f00-2275-49a2-b1e5-def7763a8ab7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BMP_IMAGE_INFO, BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+ms.date: 12/14/2017
+ms.keywords: _BMP_IMAGE_INFO, *PBMP_IMAGE_INFO, PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

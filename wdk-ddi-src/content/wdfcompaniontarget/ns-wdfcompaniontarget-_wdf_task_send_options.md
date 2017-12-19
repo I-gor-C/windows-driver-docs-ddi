@@ -7,8 +7,8 @@ old-location: wdf\wdf_task_send_options.htm
 old-project: wdf
 ms.assetid: cb2fd11c-c6a5-4499-a340-f96ffcfbbe0f
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_TASK_SEND_OPTIONS, *PWDF_TASK_SEND_OPTIONS, WDF_TASK_SEND_OPTIONS
+ms.date: 12/15/2017
+ms.keywords: _WDF_TASK_SEND_OPTIONS, WDF_TASK_SEND_OPTIONS, PWDF_TASK_SEND_OPTIONS, *PWDF_TASK_SEND_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

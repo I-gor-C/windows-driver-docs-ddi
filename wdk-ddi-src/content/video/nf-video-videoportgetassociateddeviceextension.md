@@ -7,7 +7,7 @@ old-location: display\videoportgetassociateddeviceextension.htm
 old-project: display
 ms.assetid: 825e2b61-6b51-4553-88e1-0aff2e9e3cce
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortGetAssociatedDeviceExtension
 ms.prod: windows-hardware
 ms.technology: windows-devices

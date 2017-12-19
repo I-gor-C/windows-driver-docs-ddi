@@ -4,10 +4,10 @@ title: RILPARTICIPANTOPERATION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilparticipantoperation.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0f59d104-ef86-4fed-9728-1a01ccb6f879
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPARTICIPANTOPERATION, RILPARTICIPANTOPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

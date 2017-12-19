@@ -7,7 +7,7 @@ old-location: wdf\wdfcmresourcelistgetcount.htm
 old-project: wdf
 ms.assetid: f1a38276-4964-422d-9b3c-8450b1028f27
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfCmResourceListGetCount
 ms.prod: windows-hardware
 ms.technology: windows-devices

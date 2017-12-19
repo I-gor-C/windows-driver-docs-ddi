@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_plane3.htm
 old-project: display
 ms.assetid: 2C524702-A819-4B91-B236-E00B2820813C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_PLANE3, DXGK_MULTIPLANE_OVERLAY_PLANE3
 ms.prod: windows-hardware
 ms.technology: windows-devices

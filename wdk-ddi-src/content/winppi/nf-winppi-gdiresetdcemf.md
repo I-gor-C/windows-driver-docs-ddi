@@ -7,7 +7,7 @@ old-location: print\gdiresetdcemf.htm
 old-project: print
 ms.assetid: ea97cc22-6057-427d-90c1-4f23ced932aa
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: GdiResetDCEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices

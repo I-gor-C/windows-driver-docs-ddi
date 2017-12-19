@@ -7,7 +7,7 @@ old-location: wdf\read_register_ulong64.htm
 old-project: wdf
 ms.assetid: D8AB8735-8909-463E-B10E-1FE5FD557FBB
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices

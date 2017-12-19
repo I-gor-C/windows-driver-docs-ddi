@@ -7,7 +7,7 @@ old-location: display\dxgk_glitch_cause.htm
 old-project: display
 ms.assetid: A0356AE8-3A82-4722-9F46-8FE05646BF10
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_GLITCH_CAUSE, DXGK_GLITCH_CAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

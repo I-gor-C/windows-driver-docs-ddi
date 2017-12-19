@@ -7,7 +7,7 @@ old-location: stream\kssetmajorfunctionhandler.htm
 old-project: stream
 ms.assetid: 22c1957d-089a-4504-b92c-9268a37ac265
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsSetMajorFunctionHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILINFOCLASS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilinfoclass.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2e4bd8bd-ce7e-4eb4-ac0d-68fb8890eb26
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILINFOCLASS, RILINFOCLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices

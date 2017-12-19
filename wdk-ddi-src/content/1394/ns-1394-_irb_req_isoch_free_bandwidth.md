@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_free_bandwidth.htm
 old-project: IEEE
 ms.assetid: 1401F3B5-4F3F-47C1-88F9-96AFCCF2AA7E
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_FREE_BANDWIDTH, IRB_REQ_ISOCH_FREE_BANDWIDTH
 ms.prod: windows-hardware
 ms.technology: windows-devices

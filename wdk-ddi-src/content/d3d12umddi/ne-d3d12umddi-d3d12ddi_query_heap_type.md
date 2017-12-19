@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_query_heap_type.htm
 old-project: display
 ms.assetid: 8A1A42B5-D978-4019-825B-94DB81C44FEA
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_QUERY_HEAP_TYPE, D3D12DDI_QUERY_HEAP_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILEXECUTORFOCUSSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexecutorfocusstate.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 74fc88c0-3edf-4831-a03b-4ace6ca2ec04
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILEXECUTORFOCUSSTATE, RILEXECUTORFOCUSSTATE, *LPRILEXECUTORFOCUSSTATE
+ms.date: 12/14/2017
+ms.keywords: RILEXECUTORFOCUSSTATE, *LPRILEXECUTORFOCUSSTATE, LPRILEXECUTORFOCUSSTATE, RILEXECUTORFOCUSSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

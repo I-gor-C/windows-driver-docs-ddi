@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_tiled_resource_coordinate.htm
 old-project: display
 ms.assetid: A927CAF9-EF7F-47CC-9BDE-B6E13597368E
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

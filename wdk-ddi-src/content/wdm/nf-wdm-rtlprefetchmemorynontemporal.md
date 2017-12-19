@@ -7,7 +7,7 @@ old-location: kernel\rtlprefetchmemorynontemporal.htm
 old-project: kernel
 ms.assetid: d11c3414-86c8-4b68-829e-4523519c5299
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlPrefetchMemoryNonTemporal
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP
 author: windows-driver-content
 description: The class driver sends this request to get remote wake-up notifications from endpoints.
 old-location: buses\ioctl_usbfn_internal_signal_remote_wakeup.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 052D16D1-E7E9-4237-B9F5-1D52D28444F0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.date: 12/14/2017
+ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

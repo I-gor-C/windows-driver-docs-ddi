@@ -4,10 +4,10 @@ title: RILRADIOSTATEITEMATTRIBUTES
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostateitemattributes_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d13c1946-1283-4ed6-953e-626fda91a782
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILRADIOSTATEITEMATTRIBUTES, RILRADIOSTATEITEMATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices

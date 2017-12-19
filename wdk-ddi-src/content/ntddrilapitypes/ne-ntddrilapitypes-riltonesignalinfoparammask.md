@@ -4,10 +4,10 @@ title: RILTONESIGNALINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riltonesignalinfoparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5ebacb12-4ccd-4e92-ba73-b79c1969eb4f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILTONESIGNALINFOPARAMMASK, RILTONESIGNALINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\kshandlesizedlistquery.htm
 old-project: stream
 ms.assetid: 014ca1bd-6e18-4110-aefb-ec36e816f013
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsHandleSizedListQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices

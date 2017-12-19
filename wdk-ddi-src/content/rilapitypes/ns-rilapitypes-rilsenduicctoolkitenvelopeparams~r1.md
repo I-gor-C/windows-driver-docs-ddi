@@ -4,10 +4,10 @@ title: RILSENDUICCTOOLKITENVELOPEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsenduicctoolkitenvelopeparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 17bf24fe-bee5-4e08-8e3f-b9d4a03e147e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

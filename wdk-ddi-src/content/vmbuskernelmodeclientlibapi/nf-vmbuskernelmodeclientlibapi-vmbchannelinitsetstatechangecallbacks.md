@@ -4,10 +4,10 @@ title: VmbChannelInitSetStateChangeCallbacks function
 author: windows-driver-content
 description: The VmbChannelInitSetStateChangeCallbacks function sets optional callback functions for state changes.
 old-location: netvista\vmbchannelinitsetstatechangecallbacks.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4E6088EA-7081-4B80-8F83-15B39A0F30AB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelInitSetStateChangeCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices

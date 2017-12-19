@@ -7,7 +7,7 @@ old-location: kernel\psgetpermanentsilocontext.htm
 old-project: kernel
 ms.assetid: C1AEFC8F-6488-4582-9835-DAD07D4ACB17
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetPermanentSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

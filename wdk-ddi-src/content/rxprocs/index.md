@@ -38,3 +38,11 @@ Rxprocs.h contain these programming interfaces:
 | [RxReference function](nf-rxprocs-rxreference.md) | RxReference increments the NodeReferenceCount member of a structure by one for several of the reference counted data structures used by RDBSS. |
 | [RxScavengeAllFobxs function](nf-rxprocs-rxscavengeallfobxs.md) | RxScavengeAllFobxs scavenges all of the FOBX structures associated with a network mini-redirector device object. |
 | [RxSetSrvCallDomainName function](nf-rxprocs-rxsetsrvcalldomainname.md) | RxSetSrvCallDomainName is called by a network mini-redirector driver to set the domain name associated with any given server (SRV_CALL structure). |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [FsRtlCheckOplock macro](nf-rxprocs-fsrtlcheckoplock.md) | The FsRtlCheckOplock routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state. |
+| [FsRtlNotifyFullChangeDirectory macro](nf-rxprocs-fsrtlnotifyfullchangedirectory.md) | The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list. |
+| [FsRtlOplockIsFastIoPossible macro](nf-rxprocs-fsrtloplockisfastiopossible.md) | FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file. |

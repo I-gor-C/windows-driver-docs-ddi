@@ -4,11 +4,11 @@ title: _DEBUG_VALUE
 author: windows-driver-content
 description: The DEBUG_VALUE structure holds register and expression values.
 old-location: debugger\debug_value.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 568469ad-79c4-4437-aefe-a29e77e5143a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_VALUE, DEBUG_VALUE, *PDEBUG_VALUE
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_VALUE, PDEBUG_VALUE, *PDEBUG_VALUE, DEBUG_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

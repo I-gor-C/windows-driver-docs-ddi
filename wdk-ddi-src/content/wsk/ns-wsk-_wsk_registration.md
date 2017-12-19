@@ -4,11 +4,11 @@ title: _WSK_REGISTRATION
 author: windows-driver-content
 description: The WSK_REGISTRATION structure is used by the WSK subsystem to register or unregister a WSK application as a WSK client.
 old-location: netvista\wsk_registration.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 770c53bb-5e11-4bd4-a175-6ea6ae0bb782
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WSK_REGISTRATION, WSK_REGISTRATION, *PWSK_REGISTRATION
+ms.date: 12/14/2017
+ms.keywords: _WSK_REGISTRATION, WSK_REGISTRATION, PWSK_REGISTRATION, *PWSK_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

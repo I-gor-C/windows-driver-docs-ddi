@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_destroyvideodecoder_.htm
 old-project: display
 ms.assetid: 97028FEB-A3C2-4C2F-B64E-07024BC3C382
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

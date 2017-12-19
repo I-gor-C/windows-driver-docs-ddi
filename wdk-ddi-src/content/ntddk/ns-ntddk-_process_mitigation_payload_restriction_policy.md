@@ -7,8 +7,8 @@ old-location: kernel\process_mitigation_payload_restriction_policy.htm
 old-project: kernel
 ms.assetid: f55a47b2-c95c-4b6c-aeff-aed99dd9e43b
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
+ms.date: 12/15/2017
+ms.keywords: _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

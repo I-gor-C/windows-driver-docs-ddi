@@ -4,10 +4,10 @@ title: RILPHONEENTRYSTORELOCATION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphoneentrystorelocation.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2a20e9c8-a8f2-4519-a22b-2444c46ba13a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPHONEENTRYSTORELOCATION, RILPHONEENTRYSTORELOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

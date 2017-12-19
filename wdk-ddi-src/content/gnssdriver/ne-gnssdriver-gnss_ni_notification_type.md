@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_notification_type.htm
 old-project: sensors
 ms.assetid: EC5FB722-F182-44A5-944C-ED81E43492AE
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_NI_NOTIFICATION_TYPE, GNSS_NI_NOTIFICATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

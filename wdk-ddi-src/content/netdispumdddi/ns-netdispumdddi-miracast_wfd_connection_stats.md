@@ -7,7 +7,7 @@ old-location: display\miracast_wfd_connection_stats.htm
 old-project: display
 ms.assetid: 3d5dd27f-8d0e-46e8-adbd-139db322cf6e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices

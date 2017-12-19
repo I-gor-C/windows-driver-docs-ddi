@@ -7,7 +7,7 @@ old-location: display\d3dkmt_umd_driver_version.htm
 old-project: display
 ms.assetid: 0661a65d-5129-49f6-9400-70b8c8e8245f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_UMD_DRIVER_VERSION, D3DKMT_UMD_DRIVER_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices

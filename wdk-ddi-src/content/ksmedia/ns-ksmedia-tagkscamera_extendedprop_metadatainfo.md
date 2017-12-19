@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_metadatainfo.htm
 old-project: stream
 ms.assetid: 6AE59150-8A10-43B6-B910-AEBEDC2FD272
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_METADATAINFO, *PKSCAMERA_EXTENDEDPROP_METADATAINFO, KSCAMERA_EXTENDEDPROP_METADATAINFO
+ms.date: 12/14/2017
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_METADATAINFO, KSCAMERA_EXTENDEDPROP_METADATAINFO, PKSCAMERA_EXTENDEDPROP_METADATAINFO, *PKSCAMERA_EXTENDEDPROP_METADATAINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

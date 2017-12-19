@@ -4,10 +4,10 @@ title: _WIA_PATCH_CODE_INFO
 author: windows-driver-content
 description: The WIA_PATCH_CODE_INFO structure stores information for one decoded patch code.
 old-location: image\wia_patch_code_info.htm
-old-project: image
+old-project: Image
 ms.assetid: 476C9269-7A88-4D06-80E8-C80E5F29B6CF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _WIA_PATCH_CODE_INFO, WIA_PATCH_CODE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

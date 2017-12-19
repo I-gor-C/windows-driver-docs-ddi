@@ -7,7 +7,7 @@ old-location: display\dxgk_physicaladapterflags.htm
 old-project: display
 ms.assetid: AACF0C99-D6E2-4C7C-BAE6-BF558FDAFDE0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PHYSICALADAPTERFLAGS, DXGK_PHYSICALADAPTERFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

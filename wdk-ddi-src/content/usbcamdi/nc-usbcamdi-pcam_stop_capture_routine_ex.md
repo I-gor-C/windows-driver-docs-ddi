@@ -7,8 +7,8 @@ old-location: stream\camstopcaptureex.htm
 old-project: stream
 ms.assetid: b8b6e3f0-f5c8-449f-9001-3182b3547d8d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
+ms.date: 12/14/2017
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

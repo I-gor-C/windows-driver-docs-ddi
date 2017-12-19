@@ -7,7 +7,7 @@ old-location: storage\ufs_flags_descriptor.htm
 old-project: storage
 ms.assetid: D530355F-5824-4F7C-84C4-57D3D03A7116
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: UFS_FLAGS_DESCRIPTOR, UFS_FLAGS_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

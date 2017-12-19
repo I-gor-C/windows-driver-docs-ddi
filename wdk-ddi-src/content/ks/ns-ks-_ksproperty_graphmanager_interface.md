@@ -7,8 +7,8 @@ old-location: stream\ksproperty_graphmanager_interface.htm
 old-project: stream
 ms.assetid: CC2A3E78-0A28-4760-A4E1-A2C600CE03CB
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _KSPROPERTY_GRAPHMANAGER_INTERFACE, *PKSPROPERTY_GRAPHMANAGER_INTERFACE, KSPROPERTY_GRAPHMANAGER_INTERFACE
+ms.date: 12/14/2017
+ms.keywords: _KSPROPERTY_GRAPHMANAGER_INTERFACE, PKSPROPERTY_GRAPHMANAGER_INTERFACE, KSPROPERTY_GRAPHMANAGER_INTERFACE, *PKSPROPERTY_GRAPHMANAGER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

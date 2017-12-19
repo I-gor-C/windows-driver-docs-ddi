@@ -4,11 +4,11 @@ title: RILSENDMSGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendmsgparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: de1049a8-e089-4d15-baca-2c760f895894
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSENDMSGPARAMS, RILSENDMSGPARAMS, *LPRILSENDMSGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSENDMSGPARAMS, RILSENDMSGPARAMS, LPRILSENDMSGPARAMS, *LPRILSENDMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_video_process_filter_0020.htm
 old-project: display
 ms.assetid: A69E2A06-EA08-465C-A1E9-2D7FAB4E2F81
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_VIDEO_PROCESS_FILTER_0020, D3D12DDI_VIDEO_PROCESS_FILTER_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices

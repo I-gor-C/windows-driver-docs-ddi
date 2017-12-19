@@ -7,7 +7,7 @@ old-location: stream\framing_cache_ops.htm
 old-project: stream
 ms.assetid: EA496897-7D5A-43A8-A61E-34E986288E8B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: FRAMING_CACHE_OPS, FRAMING_CACHE_OPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: display\dxgkddi_settargetadjustedcolorimetry.htm
 old-project: display
 ms.assetid: C37E0DE1-E849-440F-A11A-BB0E3F50BDFA
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.date: 12/15/2017
+ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

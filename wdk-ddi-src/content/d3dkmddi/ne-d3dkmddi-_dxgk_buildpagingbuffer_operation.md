@@ -7,7 +7,7 @@ old-location: display\dxgk_buildpagingbuffer_operation.htm
 old-project: display
 ms.assetid: D170D828-A0BC-4CBC-9F3F-E384AAD11FCC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_BUILDPAGINGBUFFER_OPERATION, DXGK_BUILDPAGINGBUFFER_OPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

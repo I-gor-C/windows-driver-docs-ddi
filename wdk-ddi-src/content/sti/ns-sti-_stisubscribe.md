@@ -4,11 +4,11 @@ title: _STISUBSCRIBE
 author: windows-driver-content
 description: The STISUBSCRIBE structure is used as a parameter for the IStiDevice::Subscribe method.
 old-location: image\stisubscribe.htm
-old-project: image
+old-project: Image
 ms.assetid: 68859180-274d-44f8-9ccf-1cae0348f902
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STISUBSCRIBE, STISUBSCRIBE, *LPSTISUBSCRIBE
+ms.date: 12/14/2017
+ms.keywords: _STISUBSCRIBE, LPSTISUBSCRIBE, STISUBSCRIBE, *LPSTISUBSCRIBE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

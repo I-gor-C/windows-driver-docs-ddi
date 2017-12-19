@@ -7,7 +7,7 @@ old-location: storage\storportdebugprint.htm
 old-project: storage
 ms.assetid: 46845a10-c44b-4d11-b82e-986bfc066b97
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices

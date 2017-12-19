@@ -7,8 +7,8 @@ old-location: display\dxgk_pre_start_info.htm
 old-project: display
 ms.assetid: 4CCDA951-A583-48C4-98D7-D278183D8893
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_PRE_START_INFO, DXGK_PRE_START_INFO, *PDXGK_PRE_START_INFO
+ms.date: 12/15/2017
+ms.keywords: _DXGK_PRE_START_INFO, DXGK_PRE_START_INFO, *PDXGK_PRE_START_INFO, PDXGK_PRE_START_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

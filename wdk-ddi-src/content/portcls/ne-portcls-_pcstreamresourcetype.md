@@ -7,8 +7,8 @@ old-location: audio\pcstreamresourcetype.htm
 old-project: audio
 ms.assetid: C9563635-66F3-4835-8153-DECB04580544
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PcStreamResourceType, PcStreamResourceType, *PPcStreamResourceType
+ms.date: 12/14/2017
+ms.keywords: _PcStreamResourceType, *PPcStreamResourceType, PPcStreamResourceType, PcStreamResourceType
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

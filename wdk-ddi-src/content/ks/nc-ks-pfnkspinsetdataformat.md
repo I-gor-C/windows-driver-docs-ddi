@@ -7,7 +7,7 @@ old-location: stream\avstrminipinsetdataformat.htm
 old-project: stream
 ms.assetid: f38222e8-f432-4a28-ba2f-2e4f60edd762
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,12 +67,12 @@ Pointer to the <a href="stream.kspin">KSPIN</a> structure for which the data for
 
 ### -param OldFormat [in, optional]
 
-Optional. Pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure. Minidrivers can use this field to determine the data format that the pin was using before this call. If <b>NULL</b>, indicates that no data format has been set for the pin and that <i>Pin's</i> create dispatch has not yet been made. A <b>NULL</b> value here indicates that this routine was called at initialization time for format verification.
+Optional. Pointer to a <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure. Minidrivers can use this field to determine the data format that the pin was using before this call. If <b>NULL</b>, indicates that no data format has been set for the pin and that <i>Pin's</i> create dispatch has not yet been made. A <b>NULL</b> value here indicates that this routine was called at initialization time for format verification.
 
 
 ### -param OldAttributeList [in, optional]
 
-Optional. Pointer to a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure that stores attributes for the previous format.
+Optional. Pointer to a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> structure that stores attributes for the previous format.
 
 
 ### -param DataRange [in]
@@ -159,10 +159,10 @@ PASSIVE_LEVEL
 <a href="stream.ksdatarange">KSDATARANGE</a>
 </dt>
 <dt>
-<a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a>
+<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksdataformat">KSDATAFORMAT</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 </dt>
 <dt>
 <a href="stream.kspin">KSPIN</a>
@@ -172,5 +172,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinSetDataFormat routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinSetDataFormat routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

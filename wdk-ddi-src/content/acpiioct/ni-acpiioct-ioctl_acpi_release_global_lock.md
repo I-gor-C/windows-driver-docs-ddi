@@ -7,8 +7,8 @@ old-location: acpi\ioctl_acpi_release_global_lock.htm
 old-project: acpi
 ms.assetid: dcc74af4-500b-4fea-ba2b-9d1ea3a05ef6
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS
+ms.date: 12/14/2017
+ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, PUNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

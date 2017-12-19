@@ -19,3 +19,10 @@ Wdfsync.h contain these programming interfaces:
 | [WdfSpinLockCreate function](nf-wdfsync-wdfspinlockcreate.md) | The WdfSpinLockCreate method creates a framework spin-lock object. |
 | [WdfWaitLockAcquire function](nf-wdfsync-wdfwaitlockacquire.md) | The WdfWaitLockAcquire method acquires a specified wait lock. |
 | [WdfWaitLockCreate function](nf-wdfsync-wdfwaitlockcreate.md) | The WdfWaitLockCreate method creates a framework wait-lock object. |
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [PFN_WDFOBJECTACQUIRELOCK callback](nc-wdfsync-pfn_wdfobjectacquirelock.md) | The WdfObjectAcquireLock method acquires an object's synchronization lock. |
+| [PFN_WDFOBJECTRELEASELOCK callback](nc-wdfsync-pfn_wdfobjectreleaselock.md) | The WdfObjectReleaseLock method releases an object's synchronization lock. |

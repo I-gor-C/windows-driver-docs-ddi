@@ -7,7 +7,7 @@ old-location: display\dxgk_path_update.htm
 old-project: display
 ms.assetid: DCBBFBF7-73B2-4298-BB87-83E1C6D76BD0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PATH_UPDATE, DXGK_PATH_UPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

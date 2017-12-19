@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-video-process-output-stream-arguments-0032.htm
 old-project: display
 ms.assetid: 3a77f454-3214-42bb-9322-c881ba567317
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0032, D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices

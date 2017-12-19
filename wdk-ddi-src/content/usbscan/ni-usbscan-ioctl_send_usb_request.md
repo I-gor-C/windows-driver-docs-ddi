@@ -4,10 +4,10 @@ title: IOCTL_SEND_USB_REQUEST
 author: windows-driver-content
 description: Sends a vendor-defined request to a USB device, using the control pipe, and optionally sends or receives additional data.
 old-location: image\ioctl_send_usb_request.htm
-old-project: image
+old-project: Image
 ms.assetid: 27e22a21-cd89-43e8-8ce1-448c0f4c4d78
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

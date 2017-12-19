@@ -7,7 +7,7 @@ old-location: stream\ksmethod_streamio.htm
 old-project: stream
 ms.assetid: BFA53A37-A1EB-4F06-9903-967A94029BC8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSMETHOD_STREAMIO, KSMETHOD_STREAMIO
 ms.prod: windows-hardware
 ms.technology: windows-devices

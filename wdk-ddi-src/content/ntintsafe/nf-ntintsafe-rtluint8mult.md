@@ -7,7 +7,7 @@ old-location: kernel\rtluint8mult.htm
 old-project: kernel
 ms.assetid: 3F9E47F5-1DE3-4949-BE92-8C8F571BFD3D
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlUInt8Mult
 ms.prod: windows-hardware
 ms.technology: windows-devices

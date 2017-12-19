@@ -7,8 +7,8 @@ old-location: wdf\wdf_fileobject_config.htm
 old-project: wdf
 ms.assetid: 6fefc35f-fbbd-4c5e-bb8f-25ad3b6cdb67
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
+ms.date: 12/15/2017
+ms.keywords: _WDF_FILEOBJECT_CONFIG, PWDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

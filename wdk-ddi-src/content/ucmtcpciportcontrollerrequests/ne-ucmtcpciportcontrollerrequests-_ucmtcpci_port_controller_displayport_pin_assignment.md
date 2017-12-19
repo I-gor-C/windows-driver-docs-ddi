@@ -4,10 +4,10 @@ title: _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT
 author: windows-driver-content
 description: TBD.
 old-location: buses\ucmtcpci_port_controller_displayport_pin_assignment.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: D5FC1963-4D68-4138-957B-3F39207C6D57
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices

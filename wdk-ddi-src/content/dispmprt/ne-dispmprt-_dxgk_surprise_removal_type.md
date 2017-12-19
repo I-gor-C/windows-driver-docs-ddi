@@ -7,7 +7,7 @@ old-location: display\dxgk_surprise_removal_type.htm
 old-project: display
 ms.assetid: 3045f46d-d78a-4f07-9838-f3afd97d9244
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_SURPRISE_REMOVAL_TYPE, DXGK_SURPRISE_REMOVAL_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

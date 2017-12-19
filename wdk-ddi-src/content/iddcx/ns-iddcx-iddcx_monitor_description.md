@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_description.htm
 old-project: display
 ms.assetid: 3ef7ffca-9192-4578-8397-c7fbb2ea2239
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_MONITOR_DESCRIPTION,
 ms.prod: windows-hardware
 ms.technology: windows-devices

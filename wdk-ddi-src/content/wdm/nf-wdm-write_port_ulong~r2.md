@@ -7,7 +7,7 @@ old-location: kernel\write_port_ulong.htm
 old-project: kernel
 ms.assetid: fe7c8a20-dadb-4c8d-b208-8fbbf8c719a6
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

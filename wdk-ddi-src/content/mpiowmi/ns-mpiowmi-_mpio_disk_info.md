@@ -7,8 +7,8 @@ old-location: storage\mpio_disk_info.htm
 old-project: storage
 ms.assetid: edefb7f5-f423-48cc-81c9-16153c228d45
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_DISK_INFO, *PMPIO_DISK_INFO, MPIO_DISK_INFO
+ms.date: 12/15/2017
+ms.keywords: _MPIO_DISK_INFO, PMPIO_DISK_INFO, MPIO_DISK_INFO, *PMPIO_DISK_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

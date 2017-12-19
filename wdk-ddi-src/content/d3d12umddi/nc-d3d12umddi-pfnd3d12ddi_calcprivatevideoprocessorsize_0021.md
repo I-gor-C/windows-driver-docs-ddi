@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calcprivatevideoprocessorsize.htm
 old-project: display
 ms.assetid: F1ED5176-4F50-44DA-96B3-5E133A236461
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: _DOT11_WFD_GO_INTENT
 author: windows-driver-content
 description: The DOT11_WFD_GO_INTENT structure represents the Group Intent value used during Group Owner Negotiation
 old-location: netvista\_dot11_wfd_go_intent.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8E4F88EF-04A9-4313-AE6A-2467DA08044A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_WFD_GO_INTENT, DOT11_WFD_GO_INTENT, *PDOT11_WFD_GO_INTENT
+ms.date: 12/14/2017
+ms.keywords: _DOT11_WFD_GO_INTENT, *PDOT11_WFD_GO_INTENT, DOT11_WFD_GO_INTENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

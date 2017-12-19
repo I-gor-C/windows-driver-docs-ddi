@@ -7,7 +7,7 @@ old-location: ieee\irb_req_get_local_host_information.htm
 old-project: IEEE
 ms.assetid: 172579A1-9B81-42C7-BAC9-C977C69E7E45
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_GET_LOCAL_HOST_INFORMATION, IRB_REQ_GET_LOCAL_HOST_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

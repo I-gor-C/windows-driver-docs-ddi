@@ -7,7 +7,7 @@ old-location: stream\capturedmetadataisogains.htm
 old-project: stream
 ms.assetid: 6B87BDFB-EAD5-496D-BE6A-9AE709119515
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: tagCapturedMetadataISOGains, CapturedMetadataISOGains
 ms.prod: windows-hardware
 ms.technology: windows-devices

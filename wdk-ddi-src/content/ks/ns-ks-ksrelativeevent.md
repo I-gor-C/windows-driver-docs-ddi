@@ -7,7 +7,7 @@ old-location: stream\ksrelativeevent.htm
 old-project: stream
 ms.assetid: 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSRELATIVEEVENT, KSRELATIVEEVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -93,7 +93,7 @@ A <a href="stream.ksevent">KSEVENT</a> structure that contains the event to be u
 
 ### -field EventData
 
-A <a href="stream.kseventdata">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
+A <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
 
 
 ## -remarks

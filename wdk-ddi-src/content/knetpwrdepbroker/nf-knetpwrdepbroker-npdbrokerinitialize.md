@@ -4,10 +4,10 @@ title: NpdBrokerInitialize function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\npdbrokerinitialize.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7B23A6DF-2B78-48DF-BDD4-451A19521CAC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

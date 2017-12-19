@@ -7,7 +7,7 @@ old-location: ifsk\fltgetrequestorsessionid.htm
 old-project: ifsk
 ms.assetid: 6a0eb588-fe64-4f36-8648-8e006e16704e
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: FltGetRequestorSessionId
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILSUPSVCACTION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsupsvcaction.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 14c9b97d-7f3f-45ef-9be2-c36495c69081
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSUPSVCACTION, RILSUPSVCACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

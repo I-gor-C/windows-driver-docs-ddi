@@ -4,10 +4,10 @@ title: FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4_
 author: windows-driver-content
 description: The FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_NAME_RESOLUTION_CACHE_V4 run-time filtering layer.
 old-location: netvista\fwps_fields_name_resolution_cache_v4.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9e999c4d-381d-4106-8eeb-e6974e2f8a22
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4_, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices

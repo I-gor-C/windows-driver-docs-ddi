@@ -7,7 +7,7 @@ old-location: display\idarg_in_set_gammaramp.htm
 old-project: display
 ms.assetid: 1e14bcaf-1454-4930-a3b8-afc044c4be3f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDARG_IN_SET_GAMMARAMP,
 ms.prod: windows-hardware
 ms.technology: windows-devices

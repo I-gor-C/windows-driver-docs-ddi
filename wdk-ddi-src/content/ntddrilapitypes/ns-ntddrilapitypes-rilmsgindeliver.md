@@ -4,11 +4,11 @@ title: RILMSGINDELIVER
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgindeliver.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: a4bfdc26-46a9-404e-9cd0-10dabba01dc2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMSGINDELIVER, RILMSGINDELIVER, *LPRILMSGINDELIVER
+ms.date: 12/14/2017
+ms.keywords: RILMSGINDELIVER, *LPRILMSGINDELIVER, RILMSGINDELIVER, LPRILMSGINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

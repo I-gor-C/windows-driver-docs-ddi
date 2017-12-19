@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitregisterpowerpolicystatechangecallback.htm
 old-project: wdf
 ms.assetid: 61ddfdf9-65cf-482b-80fe-bc5a71f905cd
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceInitRegisterPowerPolicyStateChangeCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices

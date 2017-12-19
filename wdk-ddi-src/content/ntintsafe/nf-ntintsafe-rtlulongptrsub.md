@@ -7,7 +7,7 @@ old-location: kernel\rtlulongptrsub.htm
 old-project: kernel
 ms.assetid: E8F9A1B0-5E87-4CB0-8C9E-5C2494F07C39
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlULongPtrSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

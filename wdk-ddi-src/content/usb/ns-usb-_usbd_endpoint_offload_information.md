@@ -4,11 +4,11 @@ title: _USBD_ENDPOINT_OFFLOAD_INFORMATION
 author: windows-driver-content
 description: Stores xHCI-specific information that is used by client drivers to transfer data to and from the offloaded endpoints.
 old-location: buses\usbd_endpoint_offload_information.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: F2A8E966-269E-447F-9467-EB2E877FFAA2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBD_ENDPOINT_OFFLOAD_INFORMATION, *PUSBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _USBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION, *PUSBD_ENDPOINT_OFFLOAD_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

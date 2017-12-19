@@ -4,10 +4,10 @@ title: _DOT11_VWIFI_COMBINATION_V3
 author: windows-driver-content
 description: The DOT11_VWIFI_COMBINATION_V3 structure contains the combination of MAC entities that an 802.11 wireless miniport driver simultaneously supports when virtualized.
 old-location: netvista\dot11_vwifi_combination_v3.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 65A397AE-B835-4043-9A81-24055901310B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _DOT11_VWIFI_COMBINATION_V3, *PDOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices

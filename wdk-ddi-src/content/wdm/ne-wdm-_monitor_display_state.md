@@ -7,8 +7,8 @@ old-location: kernel\monitor_display_state.htm
 old-project: kernel
 ms.assetid: 50F5C1AD-BA51-4376-8093-E8596265FDAF
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE
+ms.date: 12/15/2017
+ms.keywords: _MONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE, PMONITOR_DISPLAY_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

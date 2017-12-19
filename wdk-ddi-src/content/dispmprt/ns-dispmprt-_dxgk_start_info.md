@@ -7,8 +7,8 @@ old-location: display\dxgk_start_info.htm
 old-project: display
 ms.assetid: 4d28bc79-5145-48a0-99e8-3f81b2ec4a05
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_START_INFO, DXGK_START_INFO, *PDXGK_START_INFO
+ms.date: 12/15/2017
+ms.keywords: _DXGK_START_INFO, *PDXGK_START_INFO, DXGK_START_INFO, PDXGK_START_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

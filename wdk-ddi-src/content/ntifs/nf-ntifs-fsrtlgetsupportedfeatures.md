@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlgetsupportedfeatures.htm
 old-project: ifsk
 ms.assetid: 24852B9A-5156-41BB-87F9-81B147A85AC2
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: FsRtlGetSupportedFeatures
 ms.prod: windows-hardware
 ms.technology: windows-devices

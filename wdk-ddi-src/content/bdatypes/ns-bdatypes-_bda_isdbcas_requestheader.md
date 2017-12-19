@@ -7,8 +7,8 @@ old-location: stream\bda_isdbcas_requestheader.htm
 old-project: stream
 ms.assetid: E83111C1-5A46-4AB4-B54C-F8330943070D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_ISDBCAS_REQUESTHEADER, *PBDA_ISDBCAS_REQUESTHEADER, BDA_ISDBCAS_REQUESTHEADER
+ms.date: 12/14/2017
+ms.keywords: _BDA_ISDBCAS_REQUESTHEADER, PBDA_ISDBCAS_REQUESTHEADER, *PBDA_ISDBCAS_REQUESTHEADER, BDA_ISDBCAS_REQUESTHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

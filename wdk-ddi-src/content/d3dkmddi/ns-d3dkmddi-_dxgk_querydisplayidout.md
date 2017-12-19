@@ -7,7 +7,7 @@ old-location: display\dxgk_querydisplayidout.htm
 old-project: display
 ms.assetid: BF528089-0194-4A3F-B8BA-85F80974C4C2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_QUERYDISPLAYIDOUT, DXGK_QUERYDISPLAYIDOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices

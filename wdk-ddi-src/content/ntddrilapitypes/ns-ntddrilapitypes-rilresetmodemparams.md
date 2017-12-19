@@ -4,11 +4,11 @@ title: RILRESETMODEMPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilresetmodemparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6fde91f1-375e-4eaa-af48-67099b3e3227
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILRESETMODEMPARAMS, RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILRESETMODEMPARAMS, LPRILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS, RILRESETMODEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

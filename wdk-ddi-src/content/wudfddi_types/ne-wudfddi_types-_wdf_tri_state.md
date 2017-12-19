@@ -7,8 +7,8 @@ old-location: wdf\wdf_tri_state.htm
 old-project: wdf
 ms.assetid: 8ea6e373-225d-4fcd-abcf-c19b07f9f5d8
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_TRI_STATE, *PWDF_TRI_STATE, WDF_TRI_STATE
+ms.date: 12/15/2017
+ms.keywords: _WDF_TRI_STATE, PWDF_TRI_STATE, WDF_TRI_STATE, *PWDF_TRI_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

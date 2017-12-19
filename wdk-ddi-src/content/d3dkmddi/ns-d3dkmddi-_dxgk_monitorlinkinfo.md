@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorlinkinfo.htm
 old-project: display
 ms.assetid: 4A22CC69-F529-4D0B-BF00-877468E29429
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MONITORLINKINFO, DXGK_MONITORLINKINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: bltooth\bthx_capabilities.htm
 old-project: bltooth
 ms.assetid: BEC06C82-E103-4255-ACDD-9FB28E8E2DE5
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _BTHX_CAPABILITIES, BTHX_CAPABILITIES, *PBTHX_CAPABILITIES
+ms.date: 12/14/2017
+ms.keywords: _BTHX_CAPABILITIES, PBTHX_CAPABILITIES, BTHX_CAPABILITIES, *PBTHX_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,10 +4,10 @@ title: UfxDeviceCreate function
 author: windows-driver-content
 description: Creates a UFX device object, registers event callback routines, and specifies capabilities specific to the controller.
 old-location: buses\ufxdevicecreate.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: BA86280E-8324-4D98-B16C-504D427A6A4B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UfxDeviceCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_routing_type.htm
 old-project: nfpdrivers
 ms.assetid: 1420D957-546E-4795-A545-B098C411CCA5
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_ROUTING_TYPE, SECURE_ELEMENT_ROUTING_TYPE, *PSECURE_ELEMENT_ROUTING_TYPE
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_ROUTING_TYPE, PSECURE_ELEMENT_ROUTING_TYPE, SECURE_ELEMENT_ROUTING_TYPE, *PSECURE_ELEMENT_ROUTING_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

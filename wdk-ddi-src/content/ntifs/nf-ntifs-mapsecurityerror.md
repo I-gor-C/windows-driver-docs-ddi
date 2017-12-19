@@ -7,7 +7,7 @@ old-location: ifsk\mapsecurityerror.htm
 old-project: ifsk
 ms.assetid: 899b7d6e-a17b-4030-9512-591b003ca6b2
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: MapSecurityError
 ms.prod: windows-hardware
 ms.technology: windows-devices

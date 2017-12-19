@@ -4,10 +4,10 @@ title: IOCTL_READ_REGISTERS
 author: windows-driver-content
 description: Reads from USB device registers, using the control pipe.
 old-location: image\ioctl_read_registers.htm
-old-project: image
+old-project: Image
 ms.assetid: b54c9a15-0d48-4aff-98e5-1f0dfc070ed6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

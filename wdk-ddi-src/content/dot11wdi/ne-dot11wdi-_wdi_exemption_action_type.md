@@ -4,10 +4,10 @@ title: _WDI_EXEMPTION_ACTION_TYPE
 author: windows-driver-content
 description: The WDI_EXEMPTION_ACTION_TYPE enumeration defines the exemption types.
 old-location: netvista\wdi_exemption_action_type.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 46640961-828c-411b-b1b9-bcceb04bdf17
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPTION_ACTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

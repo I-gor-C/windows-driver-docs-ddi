@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_fc_port.htm
 old-project: storage
 ms.assetid: e5d0d58c-f2dd-4c8a-9b15-967d0be89788
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MS_SMHBA_FC_Port, *PMS_SMHBA_FC_Port, MS_SMHBA_FC_Port
+ms.date: 12/15/2017
+ms.keywords: _MS_SMHBA_FC_Port, MS_SMHBA_FC_Port, PMS_SMHBA_FC_Port, *PMS_SMHBA_FC_Port
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\docking_state.htm
 old-project: display
 ms.assetid: 4e051d49-57ae-43c8-a894-a6c2c277dce9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DOCKING_STATE, DOCKING_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

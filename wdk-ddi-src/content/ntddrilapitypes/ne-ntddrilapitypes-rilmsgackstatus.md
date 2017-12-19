@@ -4,10 +4,10 @@ title: RILMSGACKSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgackstatus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 551193d0-596c-40bf-9a31-f8b6eb330e25
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGACKSTATUS, RILMSGACKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

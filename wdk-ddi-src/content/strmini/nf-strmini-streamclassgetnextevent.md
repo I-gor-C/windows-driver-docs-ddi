@@ -7,7 +7,7 @@ old-location: stream\streamclassgetnextevent.htm
 old-project: stream
 ms.assetid: a2f83163-4529-4627-8959-2b4cd6b88828
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: StreamClassGetNextEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices

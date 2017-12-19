@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_nominal_range.htm
 old-project: display
 ms.assetid: E8D77D49-9E7C-45B3-850C-1E814B44464B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

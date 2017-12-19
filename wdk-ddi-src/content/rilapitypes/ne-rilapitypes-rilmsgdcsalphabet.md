@@ -4,10 +4,10 @@ title: RILMSGDCSALPHABET
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgdcsalphabet_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 62cd5dd1-8775-4b60-9aa2-3f8e0a3a4b26
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGDCSALPHABET, RILMSGDCSALPHABET
 ms.prod: windows-hardware
 ms.technology: windows-devices

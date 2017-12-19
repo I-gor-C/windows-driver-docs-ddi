@@ -7,8 +7,8 @@ old-location: storage\dsmsetloadbalancepolicyalua_out.htm
 old-project: storage
 ms.assetid: 00c5f766-299e-4c07-a3e0-61077518a37a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DsmSetLoadBalancePolicyALUA_OUT, *PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT
+ms.date: 12/15/2017
+ms.keywords: _DsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT, *PDsmSetLoadBalancePolicyALUA_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: storage\storportbuildmdlfornonpagedpool.htm
 old-project: storage
 ms.assetid: f22dbf1e-4b40-4294-bca5-3011f0a97644
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortBuildMdlForNonPagedPool
 ms.prod: windows-hardware
 ms.technology: windows-devices

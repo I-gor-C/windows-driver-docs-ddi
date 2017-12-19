@@ -7,8 +7,8 @@ old-location: storage\sm_sendrpl_out.htm
 old-project: storage
 ms.assetid: c8dfc30a-81ac-4342-9996-0c04db80e5e7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendRPL_OUT, SM_SendRPL_OUT, *PSM_SendRPL_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_SendRPL_OUT, SM_SendRPL_OUT, PSM_SendRPL_OUT, *PSM_SendRPL_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

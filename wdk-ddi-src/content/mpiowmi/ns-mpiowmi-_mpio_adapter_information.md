@@ -7,8 +7,8 @@ old-location: storage\mpio_adapter_information.htm
 old-project: storage
 ms.assetid: bcf159a7-75a5-46aa-897a-2c5eb00f51d8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION
+ms.date: 12/15/2017
+ms.keywords: _MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION, PMPIO_ADAPTER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

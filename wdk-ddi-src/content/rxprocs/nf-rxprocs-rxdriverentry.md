@@ -7,7 +7,7 @@ old-location: ifsk\rxdriverentry.htm
 old-project: ifsk
 ms.assetid: f100f872-6db2-4b6d-a9c0-abbbfee0a621
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: RxDriverEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -142,7 +142,7 @@ On X86 systems, 64K is the largest write that will be issued by the Memory Manag
 
 On Windows Server 2003, a registry value to set ReadAheadGranularity is not exposed and RDBSS defaults to 32K (8 4K PAGE_SIZE pages). This is the same default value adopted for local files systems.
 
-<b>RxDriverEntry</b> retrieves a pointer to the kernel process that is running by calling <a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a> and stores this value in an internal RDBSS data structure. This kernel process is sometimes called the file system process.
+<b>RxDriverEntry</b> retrieves a pointer to the kernel process that is running by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a> and stores this value in an internal RDBSS data structure. This kernel process is sometimes called the file system process.
 
 <b>RxDriverEntry</b> then copies a pointer to the <a href="ifsk.rxfsddispatch">RxFsdDispatch</a> routine over all of the entries in the driver dispatch table. So if a monolithic network mini-redirector driver needs to receive specific IRPs for special processing before the RDBSS library, then a copy of its original driver dispatch table should be saved before calling <b>RxDriverEntry</b> and any routine pointers restored after the call to <b>RxDriverEntry</b> has returned. Note that RDBSS will also copy <b>RxFsdDispatch</b> to all the driver dispatch table entries when <a href="ifsk.rxregisterminirdr">RxRegisterMiniRdr</a> is called unless an option is set to prevent this behavior..
 
@@ -191,7 +191,7 @@ IRQL
 <a href="ifsk.ccsetreadaheadgranularity">CcSetReadAheadGranularity</a>
 </dt>
 <dt>
-<a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
 </dt>
 <dt>
 <a href="ifsk.rxregisterminirdr">RxRegisterMinirdr</a>
@@ -219,5 +219,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDriverEntry routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDriverEntry routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calcprivateopenedcryptosessionpolicysize_0030_
 old-project: display
 ms.assetid: 8D88C470-5C1F-4A72-BFB6-B09C038A07F9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

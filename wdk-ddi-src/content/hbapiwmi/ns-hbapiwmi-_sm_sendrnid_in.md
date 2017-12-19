@@ -7,8 +7,8 @@ old-location: storage\sm_sendrnid_in.htm
 old-project: storage
 ms.assetid: 7d94fc94-bfc6-4666-a321-71a0643f3140
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendRNID_IN, *PSM_SendRNID_IN, SM_SendRNID_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_SendRNID_IN, *PSM_SendRNID_IN, SM_SendRNID_IN, PSM_SendRNID_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

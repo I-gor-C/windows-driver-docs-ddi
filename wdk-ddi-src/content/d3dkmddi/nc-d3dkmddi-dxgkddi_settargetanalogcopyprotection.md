@@ -7,7 +7,7 @@ old-location: display\dxgkddi_settargetanalogcopyprotection.htm
 old-project: display
 ms.assetid: D41A1867-C654-4747-B804-CAE047025458
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: wiasCreateLogInstance function
 author: windows-driver-content
 description: The wiasCreateLogInstance function creates an instance of a logging object.
 old-location: image\wiascreateloginstance.htm
-old-project: image
+old-project: Image
 ms.assetid: 7a340187-51c5-4997-b4d0-5b89ea8e16c0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiasCreateLogInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices

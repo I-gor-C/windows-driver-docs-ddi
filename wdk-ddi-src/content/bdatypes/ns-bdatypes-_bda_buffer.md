@@ -7,8 +7,8 @@ old-location: stream\bda_buffer.htm
 old-project: stream
 ms.assetid: DCC7087B-0A1B-4E96-A82F-BDEF09D8CEE2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_BUFFER, BDA_BUFFER, *PBDA_BUFFER
+ms.date: 12/14/2017
+ms.keywords: _BDA_BUFFER, PBDA_BUFFER, BDA_BUFFER, *PBDA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

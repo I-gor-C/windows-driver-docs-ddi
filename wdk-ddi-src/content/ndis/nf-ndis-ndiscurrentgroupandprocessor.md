@@ -4,10 +4,10 @@ title: NdisCurrentGroupAndProcessor function
 author: windows-driver-content
 description: The NdisCurrentGroupAndProcessor function returns the group-relative processor number and group number of the current processor.
 old-location: netvista\ndiscurrentgroupandprocessor.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 056f7f4b-152b-426a-b59e-0f6663b386a8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: NdisCurrentGroupAndProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices

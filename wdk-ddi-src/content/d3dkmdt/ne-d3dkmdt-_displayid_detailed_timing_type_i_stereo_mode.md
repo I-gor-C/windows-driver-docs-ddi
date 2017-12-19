@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_stereo_mode.htm
 old-project: display
 ms.assetid: 7e40ddf4-0098-4ea6-ab93-17515849b6cd
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

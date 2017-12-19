@@ -7,8 +7,8 @@ old-location: bltooth\isbluetoothversionavailable.htm
 old-project: bltooth
 ms.assetid: 10662237-18b4-4f37-a704-985b2db0d689
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
+ms.date: 12/14/2017
+ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

@@ -7,7 +7,7 @@ old-location: stream\capturedmetadataexposurecompensation.htm
 old-project: stream
 ms.assetid: B7C32495-F9A1-4206-81D2-DCA247F83901
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: tagCapturedMetadataExposureCompensation, CapturedMetadataExposureCompensation
 ms.prod: windows-hardware
 ms.technology: windows-devices

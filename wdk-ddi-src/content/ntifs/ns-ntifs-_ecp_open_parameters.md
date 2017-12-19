@@ -7,8 +7,8 @@ old-location: ifsk\ecp_open_parameters.htm
 old-project: ifsk
 ms.assetid: 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
+ms.date: 12/14/2017
+ms.keywords: _ECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

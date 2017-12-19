@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlquerycachedvdl.htm
 old-project: ifsk
 ms.assetid: 5D4F3D70-6E2B-4B2E-91A4-6852AF8FEAD0
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: FsRtlQueryCachedVdl
 ms.prod: windows-hardware
 ms.technology: windows-devices

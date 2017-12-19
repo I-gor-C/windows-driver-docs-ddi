@@ -7,7 +7,7 @@ old-location: serports\ioctl_serenum_port_desc.htm
 old-project: serports
 ms.assetid: 9ecaa3fa-137d-4f79-9316-727ecab35da8
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 12/14/2017
 ms.keywords: SdBusSubmitRequestAsync
 ms.prod: windows-hardware
 ms.technology: windows-devices

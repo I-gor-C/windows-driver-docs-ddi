@@ -4,10 +4,10 @@ title: RILCALLMODIFICATIONINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationinfoparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 78726ec3-f777-4165-baec-c2c013e4c86a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLMODIFICATIONINFOPARAMMASK, RILCALLMODIFICATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

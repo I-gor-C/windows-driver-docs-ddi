@@ -7,7 +7,7 @@ old-location: stream\ioctl_ks_method.htm
 old-project: stream
 ms.assetid: a1b8c406-0d83-4145-b2cc-24e1f00ab80b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _KsEdit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,13 +94,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksmethod_item">KSMETHOD_ITEM</a>
+<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksfastmethod_item">KSFASTMETHOD_ITEM</a>
+<a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksmethod_set">KSMETHOD_SET</a>
+<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 </dt>
 <dt>
 <a href="stream.ksmethod">KSMETHOD</a>
@@ -113,5 +113,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_METHOD control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_METHOD control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

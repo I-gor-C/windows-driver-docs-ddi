@@ -7,8 +7,8 @@ old-location: storage\storage_physical_adapter_data.htm
 old-project: storage
 ms.assetid: 404A7AFC-291E-4056-9076-F9E62A07C9FB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA, *PSTORAGE_PHYSICAL_ADAPTER_DATA
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA, PSTORAGE_PHYSICAL_ADAPTER_DATA, *PSTORAGE_PHYSICAL_ADAPTER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: stream\ks_videostreaminghints.htm
 old-project: stream
 ms.assetid: 06f26404-c955-4034-8dd3-ad641c7b8010
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KS_VideoStreamingHints, KS_VideoStreamingHints
 ms.prod: windows-hardware
 ms.technology: windows-devices

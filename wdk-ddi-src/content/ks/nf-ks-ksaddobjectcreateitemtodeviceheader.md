@@ -7,7 +7,7 @@ old-location: stream\ksaddobjectcreateitemtodeviceheader.htm
 old-project: stream
 ms.assetid: cf508b5c-4af8-4371-b833-eaa71535afc5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsAddObjectCreateItemToDeviceHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices

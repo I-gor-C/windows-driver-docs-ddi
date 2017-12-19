@@ -4,10 +4,10 @@ title: _WDI_DS_INFO
 author: windows-driver-content
 description: The WDI_DS_INFO enumeration defines values that specify whether the port is connected to the same DS that it was previously associated to.
 old-location: netvista\wdi_ds_info.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4375FF5C-8772-43AB-844B-4AD5E044AF55
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_DS_INFO, WDI_DS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

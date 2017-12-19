@@ -7,7 +7,7 @@ old-location: pos\evt_pos_cx_device_ownership_change.htm
 old-project: pos
 ms.assetid: 9587928C-6C40-4550-820A-B77968E3E16A
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

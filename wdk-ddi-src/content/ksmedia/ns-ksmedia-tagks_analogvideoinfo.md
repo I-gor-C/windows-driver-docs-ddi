@@ -7,8 +7,8 @@ old-location: stream\ks_analogvideoinfo.htm
 old-project: stream
 ms.assetid: a3562a08-c567-4bb5-9de2-aaa561687b88
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKS_AnalogVideoInfo, KS_ANALOGVIDEOINFO, *PKS_ANALOGVIDEOINFO
+ms.date: 12/14/2017
+ms.keywords: tagKS_AnalogVideoInfo, *PKS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO, PKS_ANALOGVIDEOINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

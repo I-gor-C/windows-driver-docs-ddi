@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_roi_info.htm
 old-project: stream
 ms.assetid: DAE013B7-7715-4B03-99F7-807306736C14
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO, *PKSCAMERA_EXTENDEDPROP_ROI_INFO
+ms.date: 12/14/2017
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_INFO, *PKSCAMERA_EXTENDEDPROP_ROI_INFO, PKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: devtest\pcw_mask_information.htm
 old-project: devtest
 ms.assetid: 5519aec9-9a02-4571-8809-fa8273269ea5
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
-ms.keywords: _PCW_MASK_INFORMATION, PCW_MASK_INFORMATION, *PPCW_MASK_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _PCW_MASK_INFORMATION, PPCW_MASK_INFORMATION, PCW_MASK_INFORMATION, *PPCW_MASK_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

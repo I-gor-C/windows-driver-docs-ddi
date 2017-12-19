@@ -4,10 +4,10 @@ title: RILCALLMEDIAOFFERANSWERTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediaofferanswertype_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 098392dc-f966-44f8-9202-9663b8cabc7e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLMEDIAOFFERANSWERTYPE, RILCALLMEDIAOFFERANSWERTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

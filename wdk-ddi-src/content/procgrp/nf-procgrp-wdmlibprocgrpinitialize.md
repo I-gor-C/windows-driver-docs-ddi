@@ -7,7 +7,7 @@ old-location: kernel\wdmlibprocgrpinitialize.htm
 old-project: kernel
 ms.assetid: 760f7bd8-0957-4dd0-b201-64173961cbb2
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdmlibProcgrpInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

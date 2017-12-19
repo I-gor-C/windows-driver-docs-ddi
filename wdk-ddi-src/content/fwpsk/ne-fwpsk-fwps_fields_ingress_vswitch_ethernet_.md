@@ -4,10 +4,10 @@ title: FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_
 author: windows-driver-content
 description: The FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET (formerly WPS_FIELDS_INGRESS_VSWITCH_802_3) enumeration type specifies the data field identifiers for the FWPS_LAYER_INGRESS_VSWITCH_ETHERNET run-time filtering layer.
 old-location: netvista\fwps_fields_ingress_vswitch_802_3.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ec206a59-33a1-4812-8290-4a2d417e4747
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_, FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET
 ms.prod: windows-hardware
 ms.technology: windows-devices

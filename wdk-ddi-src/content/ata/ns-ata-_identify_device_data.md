@@ -7,8 +7,8 @@ old-location: storage\identify_device_data.htm
 old-project: storage
 ms.assetid: 7f2edd6f-16bf-47a6-8546-7871435a56ac
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _IDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA
+ms.date: 12/15/2017
+ms.keywords: _IDENTIFY_DEVICE_DATA, PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

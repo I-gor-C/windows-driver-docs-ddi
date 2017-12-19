@@ -7,7 +7,7 @@ old-location: kernel\rtlptrdifftadd.htm
 old-project: kernel
 ms.assetid: 3B4C0CF0-8153-446E-A834-C1FE28651718
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlPtrdiffTAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: _NDIS_PM_PARAMETERS
 author: windows-driver-content
 description: The NDIS_PM_PARAMETERS structure specifies the current or new power management hardware capabilities that are enabled for a network adapter.
 old-location: netvista\ndis_pm_parameters.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7747645c-398f-434e-9f0c-21b6d3c7d963
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_PM_PARAMETERS, NDIS_PM_PARAMETERS, *PNDIS_PM_PARAMETERS
+ms.date: 12/14/2017
+ms.keywords: _NDIS_PM_PARAMETERS, PNDIS_PM_PARAMETERS, NDIS_PM_PARAMETERS, *PNDIS_PM_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -414,5 +414,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_PM_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

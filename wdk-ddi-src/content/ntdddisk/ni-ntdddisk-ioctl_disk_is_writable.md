@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_is_writable.htm
 old-project: storage
 ms.assetid: 073dd5d4-d6b9-42c8-adb2-1d6c53f2a352
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

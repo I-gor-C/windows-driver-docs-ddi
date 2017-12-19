@@ -7,7 +7,7 @@ old-location: display\dxgiddicb_present_multiplane_overlay1.htm
 old-project: display
 ms.assetid: AA716307-C235-47B2-BEB6-586FD6013280
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1, DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1
 ms.prod: windows-hardware
 ms.technology: windows-devices

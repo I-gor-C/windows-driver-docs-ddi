@@ -4,10 +4,10 @@ title: _PD_BUFFER_8021Q_INFO
 author: windows-driver-content
 description: This structure contains the IEEE 802.1Q information.
 old-location: netvista\pd_buffer_8021q_info.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: B5B2051E-C62F-4E3D-9C52-DE46145A2C24
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

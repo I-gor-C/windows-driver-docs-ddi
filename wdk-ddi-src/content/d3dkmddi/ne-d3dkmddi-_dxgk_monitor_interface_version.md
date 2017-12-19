@@ -7,7 +7,7 @@ old-location: display\dxgk_monitor_interface_version.htm
 old-project: display
 ms.assetid: 76af0d70-f9bb-4768-9bfd-f2aaeb212db0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MONITOR_INTERFACE_VERSION, DXGK_MONITOR_INTERFACE_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices

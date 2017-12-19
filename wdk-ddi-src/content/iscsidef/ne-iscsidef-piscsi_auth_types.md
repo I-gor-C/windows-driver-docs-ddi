@@ -7,8 +7,8 @@ old-location: storage\iscsi_auth_types.htm
 old-project: storage
 ms.assetid: b1d38829-53bc-42a5-acaf-c1ad89b8b563
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: PISCSI_AUTH_TYPES, ISCSI_AUTH_TYPES, *PISCSI_AUTH_TYPES
+ms.date: 12/15/2017
+ms.keywords: PISCSI_AUTH_TYPES, PISCSI_AUTH_TYPES, ISCSI_AUTH_TYPES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

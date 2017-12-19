@@ -4,10 +4,10 @@ title: RIL_GetRadioStateGroups function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getradiostategroups.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7143e3a1-f383-4ea8-8e97-d9d7a9089db4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetRadioStateGroups
 ms.prod: windows-hardware
 ms.technology: windows-devices

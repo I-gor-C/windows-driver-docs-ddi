@@ -4,11 +4,11 @@ title: _DOT11_WPS_CONFIG_METHOD
 author: windows-driver-content
 description: The DOT11_WPS_CONFIG_METHOD enumeration specifies the Wi-Fi Protected Setup methods.
 old-location: netvista\dot11_wps_config_method.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: FFA5B3FF-57AF-4701-97FB-E1182CDE8F7A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD, *PDOT11_WPS_CONFIG_METHOD
+ms.date: 12/14/2017
+ms.keywords: _DOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD, PDOT11_WPS_CONFIG_METHOD, *PDOT11_WPS_CONFIG_METHOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

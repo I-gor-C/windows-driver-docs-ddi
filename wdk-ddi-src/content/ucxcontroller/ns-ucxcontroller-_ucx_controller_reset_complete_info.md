@@ -4,11 +4,11 @@ title: _UCX_CONTROLLER_RESET_COMPLETE_INFO
 author: windows-driver-content
 description: Contains information about the operation to reset the controller. This is used by the client driver in its EVT_UCX_CONTROLLER_RESET callback function.
 old-location: buses\_ucx_controller_reset_complete_info.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 72935645-0567-4FC9-962C-3E823C08D001
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
+ms.date: 12/14/2017
+ms.keywords: _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, PUCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: display\ddpixelformat.htm
 old-project: display
 ms.assetid: bbc26c03-c154-4b1e-883e-2942b59ded02
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DDPIXELFORMAT, *LPDDPIXELFORMAT, DDPIXELFORMAT
+ms.date: 12/15/2017
+ms.keywords: _DDPIXELFORMAT, LPDDPIXELFORMAT, DDPIXELFORMAT, *LPDDPIXELFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_vidmmescapetype.htm
 old-project: display
 ms.assetid: 83C903F9-0E5F-454D-B6E9-FCC7C3A9B46C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_VIDMMESCAPETYPE, D3DKMT_VIDMMESCAPETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

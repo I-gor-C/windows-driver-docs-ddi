@@ -4,11 +4,11 @@ title: _DEBUG_BREAKPOINT_PARAMETERS
 author: windows-driver-content
 description: The DEBUG_BREAKPOINT_PARAMETERS structure contains most of the parameters for describing a breakpoint.
 old-location: debugger\debug_breakpoint_parameters.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: e5c87c1c-8195-4476-84bc-5f18ad83d149
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_BREAKPOINT_PARAMETERS, *PDEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_BREAKPOINT_PARAMETERS, PDEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS, *PDEBUG_BREAKPOINT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\d3dkmtgetprocessdevicelostsupport.htm
 old-project: display
 ms.assetid: 7127b6ff-164b-4645-a602-3969f87a47d0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTGetProcessDeviceLostSupport
 ms.prod: windows-hardware
 ms.technology: windows-devices

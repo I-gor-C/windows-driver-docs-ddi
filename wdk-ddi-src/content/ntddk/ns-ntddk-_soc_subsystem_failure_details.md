@@ -7,8 +7,8 @@ old-location: whea\soc_subsystem_failure_details.htm
 old-project: whea
 ms.assetid: 416F9A0C-0A86-4FAA-9052-5D37D29C464D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SOC_SUBSYSTEM_FAILURE_DETAILS, *PSOC_SUBSYSTEM_FAILURE_DETAILS, SOC_SUBSYSTEM_FAILURE_DETAILS
+ms.date: 12/14/2017
+ms.keywords: _SOC_SUBSYSTEM_FAILURE_DETAILS, *PSOC_SUBSYSTEM_FAILURE_DETAILS, SOC_SUBSYSTEM_FAILURE_DETAILS, PSOC_SUBSYSTEM_FAILURE_DETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

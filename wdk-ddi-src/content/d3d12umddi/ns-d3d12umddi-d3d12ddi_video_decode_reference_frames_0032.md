@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-reference-frames-0032.htm
 old-project: display
 ms.assetid: 58a814ab-629e-4528-a349-c469defc0a5a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES_0032, D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices

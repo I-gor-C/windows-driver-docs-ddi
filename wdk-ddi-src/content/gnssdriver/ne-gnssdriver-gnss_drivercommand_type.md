@@ -7,7 +7,7 @@ old-location: sensors\gnss_drivercommand_type.htm
 old-project: sensors
 ms.assetid: 61D7C52C-D8C9-4BBE-9DCA-B5E934A02FAE
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_DRIVERCOMMAND_TYPE, GNSS_DRIVERCOMMAND_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql: <= DISPATCH_LEVEL
 
 
 ## -description
-This enumeration indicates the type of driver command or configuration for the GNSS driver provided in the <a href="sensors.gnss_drivercommand_param">GNSS_DRIVERCOMMAND_PARAM</a> structure.
+This enumeration indicates the type of driver command or configuration for the GNSS driver provided in the <a href="..\gnssdriver\ns-gnssdriver-gnss_drivercommand_param.md">GNSS_DRIVERCOMMAND_PARAM</a> structure.
 
 
 
@@ -222,7 +222,7 @@ It is highly recommended that this command is supported for test purposes even i
 
 ### -field GNSS_SetSuplVersion 
 
-This command sets the SUPL version that the mobile operator wants supported. The command data contains a value of <a href="sensors.gnss_supl_version">GNSS_SUPL_VERSION</a> structure which includes both the major and the minor SUPL versions indicated by the mobile operator. The SUPL client should use the SUPL version as specifies in the OMA SUPL standards, summarizing:
+This command sets the SUPL version that the mobile operator wants supported. The command data contains a value of <a href="..\gnssdriver\ns-gnssdriver-gnss_supl_version.md">GNSS_SUPL_VERSION</a> structure which includes both the major and the minor SUPL versions indicated by the mobile operator. The SUPL client should use the SUPL version as specifies in the OMA SUPL standards, summarizing:
 
 <ul>
 <li>
@@ -239,7 +239,7 @@ For SET initiated SUPL sessions, the initial SUPL message from the SET carries t
 
 This command sets the status for NMEA logging.
 
-This command causes the GNSS driver to start/stop providing the data fix information via NMEA strings. The GNSS driver must continue providing fixes in the <a href="sensors.gnss_fixdata">GNSS_FIXDATA</a> structure. The parameter is a <b>DWORD</b> with the following values:
+This command causes the GNSS driver to start/stop providing the data fix information via NMEA strings. The GNSS driver must continue providing fixes in the <a href="..\gnssdriver\ns-gnssdriver-gnss_fixdata.md">GNSS_FIXDATA</a> structure. The parameter is a <b>DWORD</b> with the following values:
 
 <pre class="syntax" xml:space="preserve"><code>#define GNSS_NMEALOGGING_NONE         0x00
 #define GNSS_NMEALOGGING_ALL          0xFF

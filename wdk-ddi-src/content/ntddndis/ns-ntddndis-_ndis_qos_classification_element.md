@@ -4,11 +4,11 @@ title: _NDIS_QOS_CLASSIFICATION_ELEMENT
 author: windows-driver-content
 description: The NDIS_QOS_CLASSIFICATION_ELEMENT structure specifies an NDIS Quality of Service (QoS) traffic classification for a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.Each traffic classification specifies the following:A classification condition that is based on a data pattern within the egress packet data.Starting with NDIS 6.30, classification conditions are based on a 16-bit value, such as a UDP or TCP destination port or a media access control (MAC) EtherType.A classification action that defines the traffic class to be used to handle the egress packet.Starting with NDIS 6.30, classification actions specify an 802.1p priority level.For example, a traffic classification could specify that all egress packets for destination TCP port number 3260 (condition) are assigned an 802.1p priority level 3 (action).
 old-location: netvista\ndis_qos_classification_element.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2677dc3a-7685-40bf-94c3-2efecf21e9a8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_QOS_CLASSIFICATION_ELEMENT, *PNDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT
+ms.date: 12/14/2017
+ms.keywords: _NDIS_QOS_CLASSIFICATION_ELEMENT, PNDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -262,5 +262,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_CLASSIFICATION_ELEMENT structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_QOS_CLASSIFICATION_ELEMENT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,7 +7,7 @@ old-location: storage\scsiportquerysystemtime.htm
 old-project: storage
 ms.assetid: 6f6afe6d-8f57-4c08-97ea-b327622a4e39
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: ScsiPortQuerySystemTime
 ms.prod: windows-hardware
 ms.technology: windows-devices

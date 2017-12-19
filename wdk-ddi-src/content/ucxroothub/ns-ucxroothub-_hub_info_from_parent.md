@@ -4,11 +4,11 @@ title: _HUB_INFO_FROM_PARENT
 author: windows-driver-content
 description: Describes information about a hub from its parent device.
 old-location: buses\_hub_info_from_parent.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 6259CC70-A54B-4A44-B38B-D24C296C8EA0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
+ms.date: 12/14/2017
+ms.keywords: _HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, PHUB_INFO_FROM_PARENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

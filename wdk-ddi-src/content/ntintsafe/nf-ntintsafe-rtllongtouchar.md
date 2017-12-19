@@ -7,7 +7,7 @@ old-location: kernel\rtllongtouchar.htm
 old-project: kernel
 ms.assetid: 22440E1D-8DF5-4391-90F4-6080AAAC65D1
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlLongToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

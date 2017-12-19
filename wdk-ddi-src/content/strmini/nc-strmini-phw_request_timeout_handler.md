@@ -7,8 +7,8 @@ old-location: stream\strminirequesttimeout.htm
 old-project: stream
 ms.assetid: be3972af-1c62-4d4d-95f7-00f894ae7f21
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.date: 12/14/2017
+ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

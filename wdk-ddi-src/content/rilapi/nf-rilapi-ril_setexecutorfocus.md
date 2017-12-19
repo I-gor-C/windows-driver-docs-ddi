@@ -4,10 +4,10 @@ title: RIL_SetExecutorFocus function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_setexecutorfocus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c8deb6ef-e75b-4c90-a7ca-d685fdcc43bc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SetExecutorFocus
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: _DOT11_WFD_DEVICE_CAPABILITY_CONFIG
 author: windows-driver-content
 description: The device capability configuration structure sent with an OID_DOT11_WFD_DEVICE_CAPABILITY request.
 old-location: netvista\_dot11_wfd_device_capability_config.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 918307D4-0952-4FF0-8591-522C7E92194A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _DOT11_WFD_DEVICE_CAPABILITY_CONFIG, DOT11_WFD_DEVICE_CAPABILITY_CONFIG, *PDOT11_WFD_DEVICE_CAPABILITY_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

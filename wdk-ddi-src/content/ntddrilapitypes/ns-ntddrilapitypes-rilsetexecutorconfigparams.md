@@ -4,11 +4,11 @@ title: RILSETEXECUTORCONFIGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetexecutorconfigparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: de392c8c-3153-48e8-85ad-dc1a5ed2812c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETEXECUTORCONFIGPARAMS, *LPRILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS, LPRILSETEXECUTORCONFIGPARAMS, *LPRILSETEXECUTORCONFIGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

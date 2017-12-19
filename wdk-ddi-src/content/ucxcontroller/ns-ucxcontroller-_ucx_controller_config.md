@@ -4,11 +4,11 @@ title: _UCX_CONTROLLER_CONFIG
 author: windows-driver-content
 description: This structure configuration data for a USB controller.
 old-location: buses\_ucx_controller_config.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 9A4249B6-BFC2-42B4-BBA6-094BD78C98DE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG
+ms.date: 12/14/2017
+ms.keywords: _UCX_CONTROLLER_CONFIG, PUCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

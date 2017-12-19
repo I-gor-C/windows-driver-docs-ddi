@@ -4,10 +4,10 @@ title: wiauGetResourceString function
 author: windows-driver-content
 description: The wiauGetResourceString function gets a resource string, storing it as a BSTR.
 old-location: image\wiaugetresourcestring.htm
-old-project: image
+old-project: Image
 ms.assetid: b042702a-46ff-4ec9-8a92-af8516802e64
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiauGetResourceString
 ms.prod: windows-hardware
 ms.technology: windows-devices

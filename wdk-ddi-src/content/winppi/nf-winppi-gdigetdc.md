@@ -7,7 +7,7 @@ old-location: print\gdigetdc.htm
 old-project: print
 ms.assetid: f8aacb6d-4e8a-4fdb-902c-3d0efbc40f08
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: GdiGetDC
 ms.prod: windows-hardware
 ms.technology: windows-devices

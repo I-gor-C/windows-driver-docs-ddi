@@ -7,8 +7,8 @@ old-location: ifsk\fs_filter_section_sync_output_.htm
 old-project: ifsk
 ms.assetid: 3378D971-B5D8-485B-8C58-BE5874445407
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT, *PFS_FILTER_SECTION_SYNC_OUTPUT
+ms.date: 12/14/2017
+ms.keywords: _FS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT, *PFS_FILTER_SECTION_SYNC_OUTPUT, PFS_FILTER_SECTION_SYNC_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

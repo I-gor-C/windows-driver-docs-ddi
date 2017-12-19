@@ -7,7 +7,7 @@ old-location: display\videoportcheckfordeviceexistence.htm
 old-project: display
 ms.assetid: 2e0480a5-39d3-4977-9c0f-508bcf6c29a8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortCheckForDeviceExistence
 ms.prod: windows-hardware
 ms.technology: windows-devices

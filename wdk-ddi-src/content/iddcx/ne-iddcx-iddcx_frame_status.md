@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_status.htm
 old-project: display
 ms.assetid: 437050ae-d1b7-48ce-9955-98f1d1b2e15a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_FRAME_STATUS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

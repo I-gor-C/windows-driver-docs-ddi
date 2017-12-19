@@ -7,8 +7,8 @@ old-location: storage\mpiomovedevice_in.htm
 old-project: storage
 ms.assetid: 2652874f-70d0-4eff-a46d-778a68d55cab
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIOMoveDevice_IN, *PMPIOMoveDevice_IN, MPIOMoveDevice_IN
+ms.date: 12/15/2017
+ms.keywords: _MPIOMoveDevice_IN, PMPIOMoveDevice_IN, MPIOMoveDevice_IN, *PMPIOMoveDevice_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

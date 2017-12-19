@@ -4,10 +4,10 @@ title: _WDI_RADIO_MEASUREMENT_ACTION
 author: windows-driver-content
 description: The WDI_RADIO_MEASUREMENT_ACTION enumeration defines the radio measurement actions.
 old-location: netvista\wdi_radio_measurement_action.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: AA17E666-5934-453D-B55D-98F8616F6369
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_RADIO_MEASUREMENT_ACTION, WDI_RADIO_MEASUREMENT_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

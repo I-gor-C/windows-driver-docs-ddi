@@ -4,10 +4,10 @@ title: RIL_GetAllAdditionalNumberStrings function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getalladditionalnumberstrings.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: fc0f5a3b-3ab0-4103-85a2-f7b5ce64ec79
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetAllAdditionalNumberStrings
 ms.prod: windows-hardware
 ms.technology: windows-devices

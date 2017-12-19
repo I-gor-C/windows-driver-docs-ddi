@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_request_type_umdf.htm
 old-project: wdf
 ms.assetid: fb952527-a8df-41e7-8194-b4a82b7f550f
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

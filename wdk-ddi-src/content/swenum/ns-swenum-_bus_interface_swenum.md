@@ -7,8 +7,8 @@ old-location: stream\bus_interface_swenum.htm
 old-project: stream
 ms.assetid: 7e667dd9-8ed1-49ef-a6ef-0d079d41db86
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM
+ms.date: 12/14/2017
+ms.keywords: _BUS_INTERFACE_SWENUM, PBUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

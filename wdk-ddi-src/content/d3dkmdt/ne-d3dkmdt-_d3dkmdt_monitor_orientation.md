@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_orientation.htm
 old-project: display
 ms.assetid: 16e7d91c-04de-4a8c-97c2-c500d0d3697d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_MONITOR_ORIENTATION, D3DKMDT_MONITOR_ORIENTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

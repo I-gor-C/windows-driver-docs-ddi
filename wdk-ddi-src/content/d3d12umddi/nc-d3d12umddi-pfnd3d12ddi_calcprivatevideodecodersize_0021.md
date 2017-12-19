@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calcprivatevideodecodersize.htm
 old-project: display
 ms.assetid: 29A0CB0F-3469-4EF5-8C5B-132321F6C8E8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorsetuphardwarecursor.htm
 old-project: display
 ms.assetid: 6182898d-d7c0-4ff2-b222-d83bd00cd1ec
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IddCxMonitorSetupHardwareCursor
 ms.prod: windows-hardware
 ms.technology: windows-devices

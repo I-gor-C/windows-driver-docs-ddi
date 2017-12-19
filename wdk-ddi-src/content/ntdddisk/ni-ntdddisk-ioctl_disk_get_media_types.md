@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_get_media_types.htm
 old-project: storage
 ms.assetid: d6e6cd4c-680d-4885-b910-3de8de143e2b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

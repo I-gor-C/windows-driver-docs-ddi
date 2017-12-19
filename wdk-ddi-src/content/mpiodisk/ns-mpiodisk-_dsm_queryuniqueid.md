@@ -7,8 +7,8 @@ old-location: storage\dsm_queryuniqueid.htm
 old-project: storage
 ms.assetid: 023390a1-e878-4f1f-a5c2-1545a6786aaa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DSM_QueryUniqueId, *PDSM_QueryUniqueId, DSM_QueryUniqueId
+ms.date: 12/15/2017
+ms.keywords: _DSM_QueryUniqueId, DSM_QueryUniqueId, PDSM_QueryUniqueId, *PDSM_QueryUniqueId
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: print\colortype.htm
 old-project: print
 ms.assetid: aa7d8d32-7bbe-4091-82a2-32ade463dd9e
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: COLORTYPE, COLORTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

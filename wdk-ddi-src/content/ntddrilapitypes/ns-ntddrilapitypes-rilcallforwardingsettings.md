@@ -4,11 +4,11 @@ title: RILCALLFORWARDINGSETTINGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallforwardingsettings.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3603bc82-0058-43bd-9d45-90c198a20040
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCALLFORWARDINGSETTINGS, *LPRILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS
+ms.date: 12/14/2017
+ms.keywords: RILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS, LPRILCALLFORWARDINGSETTINGS, *LPRILCALLFORWARDINGSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

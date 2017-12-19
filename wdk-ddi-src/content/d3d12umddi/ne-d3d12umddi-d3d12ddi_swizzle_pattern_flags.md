@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_swizzle_pattern_flags.htm
 old-project: display
 ms.assetid: 613FE631-8381-4EDD-85C9-7B91F9F8B92F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_SWIZZLE_PATTERN_FLAGS, D3D12DDI_SWIZZLE_PATTERN_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

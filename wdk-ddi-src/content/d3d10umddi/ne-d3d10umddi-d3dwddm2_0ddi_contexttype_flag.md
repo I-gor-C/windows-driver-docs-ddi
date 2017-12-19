@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_contexttype_flag.htm
 old-project: display
 ms.assetid: F767C051-637A-4912-80B0-36C4DF7E46DD
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DWDDM2_0DDI_CONTEXTTYPE_FLAG, D3DWDDM2_0DDI_CONTEXTTYPE_FLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices

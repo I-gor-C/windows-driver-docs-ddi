@@ -7,7 +7,7 @@ old-location: display\dxgkcb_notify_mpo_vsync_flags.htm
 old-project: display
 ms.assetid: 5583297C-D927-4D9A-8F77-D9871B2CA736
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKCB_NOTIFY_MPO_VSYNC_FLAGS, DXGKCB_NOTIFY_MPO_VSYNC_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

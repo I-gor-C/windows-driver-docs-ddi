@@ -4,10 +4,10 @@ title: _WDI_P2P_ACTION_FRAME_TYPE
 author: windows-driver-content
 description: The WDI_P2P_ACTION_FRAME_TYPE enumeration defines the Wi-Fi Direct action frame types.
 old-location: netvista\wdi_p2p_action_frame_type.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3E1C92D2-FFE0-402F-BE14-18AFB03F3FE4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_P2P_ACTION_FRAME_TYPE, WDI_P2P_ACTION_FRAME_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

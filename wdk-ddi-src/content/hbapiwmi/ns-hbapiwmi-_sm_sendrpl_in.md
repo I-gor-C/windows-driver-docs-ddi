@@ -7,8 +7,8 @@ old-location: storage\sm_sendrpl_in.htm
 old-project: storage
 ms.assetid: 5d97b852-57ba-4696-879b-d93a8f539304
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendRPL_IN, *PSM_SendRPL_IN, SM_SendRPL_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_SendRPL_IN, PSM_SendRPL_IN, *PSM_SendRPL_IN, SM_SendRPL_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

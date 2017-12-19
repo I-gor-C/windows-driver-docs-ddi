@@ -4,11 +4,11 @@ title: _DOT11_ASSOCIATION_STATE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_association_state.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 90d2457f-4246-464b-8de6-f8fda056eb7b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_ASSOCIATION_STATE, *PDOT11_ASSOCIATION_STATE, DOT11_ASSOCIATION_STATE
+ms.date: 12/14/2017
+ms.keywords: _DOT11_ASSOCIATION_STATE, *PDOT11_ASSOCIATION_STATE, DOT11_ASSOCIATION_STATE, PDOT11_ASSOCIATION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

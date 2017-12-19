@@ -4,10 +4,10 @@ title: RILIMSNWENABLEDFLAGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimsnwenabledflags.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ae13790a-2442-4a8e-88cb-2cb6c8e02da6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILIMSNWENABLEDFLAGS, RILIMSNWENABLEDFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

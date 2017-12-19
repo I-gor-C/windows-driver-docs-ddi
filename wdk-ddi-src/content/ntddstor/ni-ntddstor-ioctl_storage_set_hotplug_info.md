@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_set_hotplug_info.htm
 old-project: storage
 ms.assetid: 5badc919-8663-4905-aaec-70f6b51ab2f1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -50,23 +50,20 @@ Sets the hotplug configuration of the specified device. This request takes a <a 
 ## -ioctlparameters
 
 ### -input-buffer
-<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
-<b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be greater than or equal to <b>sizeof</b>(STORAGE_HOTPLUG_INFO). 
-<b>Parameters.DeviceIoControl.InputBufferLength</b>Parameters.DeviceIoControl.InputBufferLength in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be greater than or equal to <b>sizeof</b>sizeof(STORAGE_HOTPLUG_INFO). 
+The input buffer.
 
 
 ### -input-buffer-length
+<b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be greater than or equal to <b>sizeof</b>(STORAGE_HOTPLUG_INFO). 
 
-<text></text>
 
 ### -output-buffer
-<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
-The driver returns the hotplug configuration data in a STORAGE_HOTPLUG_INFO structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. </p>The driver returns the hotplug configuration data in a STORAGE_HOTPLUG_INFO structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer. 
+The driver returns the hotplug configuration data in a STORAGE_HOTPLUG_INFO structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
 
 
 ### -output-buffer-length
+The length of a <a href="storage.storage_hotplug_info">STORAGE_HOTPLUG_INFO</a> structure.
 
-<text></text>
 
 ### -in-out-buffer
 
@@ -77,8 +74,8 @@ The driver returns the hotplug configuration data in a STORAGE_HOTPLUG_INFO stru
 <text></text>
 
 ### -status-block
-<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
-The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH if the input buffer is too small. It is set to STATUS_INVALID_PARAMETER_1 if the <b>Size</b> member of STORAGE_HOTPLUG_INFO is not the size expected by the class driver for this device. It is set to STATUS_INVALID_PARAMETER_2 if the <b>MediaRemoveable</b> member has a value different from that held by the class driver. It is set to STATUS_INVALID_PARAMETER_3 if the <b>MediaHotplug</b> member has a value different from that held by the class driver, and it is set to STATUS_INVALID_PARAMETER_5 if the <b>WriteCacheEnableOverride</b> member has a value different from that held by the class driver.</p>The <b>Status</b>Status field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH if the input buffer is too small. It is set to STATUS_INVALID_PARAMETER_1 if the <b>Size</b>Size member of STORAGE_HOTPLUG_INFO is not the size expected by the class driver for this device. It is set to STATUS_INVALID_PARAMETER_2 if the <b>MediaRemoveable</b>MediaRemoveable member has a value different from that held by the class driver. It is set to STATUS_INVALID_PARAMETER_3 if the <b>MediaHotplug</b>MediaHotplug member has a value different from that held by the class driver, and it is set to STATUS_INVALID_PARAMETER_5 if the <b>WriteCacheEnableOverride</b>WriteCacheEnableOverride member has a value different from that held by the class driver.
+I/O Status block
+The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH if the input buffer is too small. It is set to STATUS_INVALID_PARAMETER_1 if the <b>Size</b> member of STORAGE_HOTPLUG_INFO is not the size expected by the class driver for this device. It is set to STATUS_INVALID_PARAMETER_2 if the <b>MediaRemoveable</b> member has a value different from that held by the class driver. It is set to STATUS_INVALID_PARAMETER_3 if the <b>MediaHotplug</b> member has a value different from that held by the class driver, and it is set to STATUS_INVALID_PARAMETER_5 if the <b>WriteCacheEnableOverride</b> member has a value different from that held by the class driver.
 
 
 ## -remarks
@@ -112,5 +109,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_SET_HOTPLUG_INFO control code%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_SET_HOTPLUG_INFO control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

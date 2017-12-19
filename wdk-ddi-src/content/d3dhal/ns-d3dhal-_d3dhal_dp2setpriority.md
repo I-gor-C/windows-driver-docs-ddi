@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2setpriority.htm
 old-project: display
 ms.assetid: 5101c150-b294-4bf4-b33c-f0fe0f54d727
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DHAL_DP2SETPRIORITY, D3DHAL_DP2SETPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

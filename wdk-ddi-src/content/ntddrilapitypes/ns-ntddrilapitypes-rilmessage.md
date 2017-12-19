@@ -4,11 +4,11 @@ title: RILMESSAGE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessage.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b776b060-79bf-4848-807d-1999d38075ad
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMESSAGE, *LPRILMESSAGE, RILMESSAGE
+ms.date: 12/14/2017
+ms.keywords: RILMESSAGE, *LPRILMESSAGE, LPRILMESSAGE, RILMESSAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

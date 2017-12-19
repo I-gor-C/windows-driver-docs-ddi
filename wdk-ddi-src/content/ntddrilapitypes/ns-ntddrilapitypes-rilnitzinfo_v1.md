@@ -4,11 +4,11 @@ title: RILNITZINFO_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnitzinfo_v1.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 88664809-b5ce-466a-894b-529443cb1b0e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILNITZINFO_V1, RILNITZINFO_V1, *LPRILNITZINFO_V1
+ms.date: 12/14/2017
+ms.keywords: RILNITZINFO_V1, LPRILNITZINFO_V1, RILNITZINFO_V1, *LPRILNITZINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

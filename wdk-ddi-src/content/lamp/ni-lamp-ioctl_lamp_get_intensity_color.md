@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_get_intensity_color.htm
 old-project: stream
 ms.assetid: 8BAAB861-677D-4945-92B7-BDBE7A29695E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

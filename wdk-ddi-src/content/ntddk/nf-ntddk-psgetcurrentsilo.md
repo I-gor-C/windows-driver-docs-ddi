@@ -7,7 +7,7 @@ old-location: kernel\psgetcurrentsilo.htm
 old-project: kernel
 ms.assetid: 535D7611-8C86-44CF-964C-731882A3AF69
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetCurrentSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices

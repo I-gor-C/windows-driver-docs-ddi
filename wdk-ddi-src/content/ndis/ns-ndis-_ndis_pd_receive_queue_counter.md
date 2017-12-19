@@ -4,10 +4,10 @@ title: _NDIS_PD_RECEIVE_QUEUE_COUNTER
 author: windows-driver-content
 description: This structure is used to hold counter information for a receive queue.
 old-location: netvista\ndis_pd_receive_queue_counter.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: E42705A4-D018-435E-BA98-3EE5BA5EDE66
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _NDIS_PD_RECEIVE_QUEUE_COUNTER, NDIS_PD_RECEIVE_QUEUE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices

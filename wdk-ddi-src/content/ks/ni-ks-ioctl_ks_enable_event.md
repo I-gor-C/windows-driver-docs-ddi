@@ -7,7 +7,7 @@ old-location: stream\ioctl_ks_enable_event.htm
 old-project: stream
 ms.assetid: 194a99f4-900f-44d1-bbc3-64953e4dce21
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _KsEdit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,11 +58,11 @@ Length of <a href="stream.ksevent">KSEVENT</a>.
 
 
 ### -output-buffer
-The application places a pointer to a structure of type <a href="stream.kseventdata">KSEVENTDATA</a> in the <b>OutBuffer</b> parameter and the size of this structure at <b>OutLength</b>. 
+The application places a pointer to a structure of type <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> in the <b>OutBuffer</b> parameter and the size of this structure at <b>OutLength</b>. 
 
 
 ### -output-buffer-length
-Length of <a href="stream.kseventdata">KSEVENTDATA</a>.
+Length of <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>.
 
 
 ### -in-out-buffer
@@ -103,19 +103,19 @@ Header
 <a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
 </dt>
 <dt>
-<a href="stream.ksevent_item">KSEVENT_ITEM</a>
+<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksevent_set">KSEVENT_SET</a>
+<a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
 </dt>
 <dt>
 <a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
 </dt>
 <dt>
-<a href="stream.ksdpc_item">KSDPC_ITEM</a>
+<a href="..\ks\ns-ks-ksdpc_item.md">KSDPC_ITEM</a>
 </dt>
 <dt>
-<a href="stream.kseventdata">KSEVENTDATA</a>
+<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
 </dt>
 <dt>
 <a href="stream.ksevent">KSEVENT</a>
@@ -128,5 +128,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_ENABLE_EVENT control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_ENABLE_EVENT control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

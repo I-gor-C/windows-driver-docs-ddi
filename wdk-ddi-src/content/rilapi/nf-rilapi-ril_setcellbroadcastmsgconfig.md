@@ -4,10 +4,10 @@ title: RIL_SetCellBroadcastMsgConfig function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_setcellbroadcastmsgconfig.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c2b7b9b7-a76f-4bd9-bf25-edb5c103a578
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SetCellBroadcastMsgConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices

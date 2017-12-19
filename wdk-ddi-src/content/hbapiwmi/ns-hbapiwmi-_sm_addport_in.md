@@ -7,8 +7,8 @@ old-location: storage\sm_addport_in.htm
 old-project: storage
 ms.assetid: 29b05fa7-0393-47df-a77e-63745c0cd1e1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_AddPort_IN, SM_AddPort_IN, *PSM_AddPort_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_AddPort_IN, SM_AddPort_IN, *PSM_AddPort_IN, PSM_AddPort_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_resume_audio.htm
 old-project: storage
 ms.assetid: 50bf3cf3-5225-45c9-9f14-bfcd84574a83
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.date: 12/15/2017
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

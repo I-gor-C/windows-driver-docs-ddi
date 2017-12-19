@@ -7,7 +7,7 @@ old-location: ifsk\mmprefetchpages.htm
 old-project: ifsk
 ms.assetid: fd76dfed-2c47-4289-a672-1db8129f5a9e
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: MmPrefetchPages
 ms.prod: windows-hardware
 ms.technology: windows-devices

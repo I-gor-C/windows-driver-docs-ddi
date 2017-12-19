@@ -4,11 +4,11 @@ title: IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT
 author: windows-driver-content
 description: The class driver sends this request to send a zero-length control status handshake on endpoint 0 in the OUT direction.
 old-location: buses\ioctl_internal_usbfn_control_status_handshake_out.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: C2CF94F3-E12D-4D31-975B-720FA5AB5ABA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.date: 12/14/2017
+ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

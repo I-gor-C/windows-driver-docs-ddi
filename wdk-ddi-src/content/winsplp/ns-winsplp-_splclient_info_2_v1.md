@@ -7,7 +7,7 @@ old-location: print\splclient_info_2_w2k.htm
 old-project: print
 ms.assetid: 713246FE-355B-4C01-A8DF-535BDBA0FCB8
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K
 ms.prod: windows-hardware
 ms.technology: windows-devices

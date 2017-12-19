@@ -7,7 +7,7 @@ old-location: display\pfnd3dddi_createhwcontextcb.htm
 old-project: display
 ms.assetid: 989682F3-340E-4F64-BF2D-771D58066EB2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_scanning_mode.htm
 old-project: display
 ms.assetid: 8a5d3fba-ffd5-4fbc-973a-d5bfec6bb6e3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

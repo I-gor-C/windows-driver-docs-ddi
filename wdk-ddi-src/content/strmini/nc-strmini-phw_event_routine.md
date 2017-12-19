@@ -7,8 +7,8 @@ old-location: stream\strminievent.htm
 old-project: stream
 ms.assetid: 17f96498-3973-41f8-926d-85aa5f72de47
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.date: 12/14/2017
+ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -69,7 +69,7 @@ For event enable events, <i>StrMiniEvent</i> returns STATUS_SUCCESS if the event
 ## -remarks
 The class driver queues the <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure it passes in <i>EventDescriptor</i>-&gt;<b>EventEntry</b>. Every other member of <i>EventDescriptor</i> is deallocated once <i>StrMiniEvent</i> exits, so any event-specific data contained in the <b>EventData</b> member of <i>EventDescriptor</i> that the minidriver needs to keep should be stored by the minidriver.
 
-For that purpose, the minidriver can allocate space directly after the KSEVENT_ENTRY structure by providing a nonzero value in the <b>ExtraEntryData</b> member of the <a href="stream.ksevent_item">KSEVENT_ITEM</a> structure it used to declare the event.
+For that purpose, the minidriver can allocate space directly after the KSEVENT_ENTRY structure by providing a nonzero value in the <b>ExtraEntryData</b> member of the <a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a> structure it used to declare the event.
 
 
 ## -requirements

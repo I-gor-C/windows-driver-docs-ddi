@@ -7,8 +7,8 @@ old-location: display\video_win32k_callbacks.htm
 old-project: display
 ms.assetid: dec6c610-811c-40cb-a099-1a35b91d2ee8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VIDEO_WIN32K_CALLBACKS, VIDEO_WIN32K_CALLBACKS, *PVIDEO_WIN32K_CALLBACKS
+ms.date: 12/15/2017
+ms.keywords: _VIDEO_WIN32K_CALLBACKS, VIDEO_WIN32K_CALLBACKS, PVIDEO_WIN32K_CALLBACKS, *PVIDEO_WIN32K_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

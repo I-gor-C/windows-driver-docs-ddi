@@ -7,7 +7,7 @@ old-location: stream\kstrallocator.htm
 old-project: stream
 ms.assetid: 4af5ac92-824c-42bf-8fb7-5418ae5d793c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

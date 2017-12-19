@@ -4,11 +4,11 @@ title: RILCALLMEDIAID
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediaid.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: de55805d-d5fe-47ea-832d-536d8a7ee257
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCALLMEDIAID, *LPRILCALLMEDIAID, RILCALLMEDIAID
+ms.date: 12/14/2017
+ms.keywords: RILCALLMEDIAID, LPRILCALLMEDIAID, *LPRILCALLMEDIAID, RILCALLMEDIAID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

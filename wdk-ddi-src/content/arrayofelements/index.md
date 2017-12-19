@@ -7,7 +7,7 @@ UID: NA:
 ## -description
 
 This header is used by Debugger. For more information, see
-- [Debugger](../_debugger/index.md)
+- [Debugger](../_Debugger/index.md)
 
 Arrayofelements.h contain these programming interfaces:
 

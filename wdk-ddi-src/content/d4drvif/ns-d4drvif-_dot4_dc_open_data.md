@@ -7,8 +7,8 @@ old-location: print\dot4_dc_open_data.htm
 old-project: print
 ms.assetid: 72AE7A78-C02D-4C14-B017-9CEECF34FEDF
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
+ms.date: 12/14/2017
+ms.keywords: _DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA, PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

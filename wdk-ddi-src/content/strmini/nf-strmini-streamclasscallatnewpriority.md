@@ -7,7 +7,7 @@ old-location: stream\streamclasscallatnewpriority.htm
 old-project: stream
 ms.assetid: 86c4e9da-7c71-4d79-b8e2-f602489da647
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: StreamClassCallAtNewPriority
 ms.prod: windows-hardware
 ms.technology: windows-devices

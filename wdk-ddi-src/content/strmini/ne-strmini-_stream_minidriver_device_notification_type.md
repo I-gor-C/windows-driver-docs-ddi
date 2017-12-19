@@ -7,8 +7,8 @@ old-location: stream\stream_minidriver_device_notification_type.htm
 old-project: stream
 ms.assetid: 34DAA236-ACD0-4C25-BB45-00A81D2F131D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
+ms.date: 12/14/2017
+ms.keywords: _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlchecklockforoplockrequest.htm
 old-project: ifsk
 ms.assetid: 67056CD0-EBFB-4E34-9613-98ECBB858810
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: FsRtlCheckLockForOplockRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILRFSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrfstateparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 53cd2444-fda7-4e1f-b2d3-23ab20955a0e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILRFSTATEPARAMMASK, RILRFSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

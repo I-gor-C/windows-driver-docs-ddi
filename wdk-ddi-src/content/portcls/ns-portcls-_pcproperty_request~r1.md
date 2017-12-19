@@ -7,7 +7,7 @@ old-location: audio\pcproperty_request.htm
 old-project: audio
 ms.assetid: 3683735d-ce00-4615-9782-dee9f4753cc7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _PCPROPERTY_REQUEST, PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,7 +81,7 @@ Specifies a node ID. This member identifies the target node for the request. If 
 
 ### -field PropertyItem
 
-Pointer to the property item, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>.
+Pointer to the property item, which is a structure of type <a href="audio.pcproperty_item">PCPROPERTY_ITEM</a>.
 
 
 ### -field Verb
@@ -167,11 +167,11 @@ Pointer to the <a href="kernel.irp">IRP</a> containing the client's original pro
 
 
 ## -remarks
-This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
+This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="audio.pcproperty_item">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
 In WDM audio, the target of a property request can be either a filter instance or a pin instance. The target can also include a node ID.
 
-In the client's original property request, the property-instance data always begins with a <a href="stream.ksproperty">KSPROPERTY</a> or <a href="audio.ksnodeproperty">KSNODEPROPERTY</a> structure, but can include additional information. The port driver adjusts the <b>PCPROPERTY_REQUEST</b> structure's <b>Instance</b> member to point to this additional information, if it exists. For details, see <a href="https://msdn.microsoft.com/4bf176ae-b3fd-47e6-9802-a92ef5e9904f">Audio Property Handlers</a>.
+In the client's original property request, the property-instance data always begins with a <a href="stream.ksproperty">KSPROPERTY</a> or <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a> structure, but can include additional information. The port driver adjusts the <b>PCPROPERTY_REQUEST</b> structure's <b>Instance</b> member to point to this additional information, if it exists. For details, see <a href="https://msdn.microsoft.com/4bf176ae-b3fd-47e6-9802-a92ef5e9904f">Audio Property Handlers</a>.
 
 The <b>MajorTarget</b> and <b>MinorTarget</b> members are <a href="com.iunknown">IUnknown</a> pointers to the main miniport object and an associated stream object, respectively. The property handler can query these objects for their miniport and stream interfaces. If the target for the property request is a filter instance, <b>MajorTarget</b> points to the miniport object for that filter instance, and <b>MinorTarget</b> is <b>NULL</b>. If the target is a pin instance, <b>MinorTarget</b> points to the stream object for that pin, and <b>MajorTarget</b> points to the miniport object for the filter that the pin is attached to.
 
@@ -202,21 +202,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>
+<a href="audio.pcproperty_item">PCPROPERTY_ITEM</a>
 </dt>
 <dt>
 <a href="stream.ksproperty">KSPROPERTY</a>
 </dt>
 <dt>
-<a href="audio.ksnodeproperty">KSNODEPROPERTY</a>
+<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
 </dt>
 <dt>
-<a href="audio.ksnodeproperty_audio_channel">KSNODEPROPERTY_AUDIO_CHANNEL</a>
+<a href="..\ksmedia\ns-ksmedia-ksnodeproperty_audio_channel.md">KSNODEPROPERTY_AUDIO_CHANNEL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCPROPERTY_REQUEST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCPROPERTY_REQUEST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

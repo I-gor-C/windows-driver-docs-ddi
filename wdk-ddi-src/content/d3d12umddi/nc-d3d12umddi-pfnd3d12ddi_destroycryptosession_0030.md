@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_destroycryptosession_0030_.htm
 old-project: display
 ms.assetid: 1A16AE54-8A39-419E-B664-366287CF396D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

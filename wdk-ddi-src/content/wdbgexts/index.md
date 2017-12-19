@@ -7,7 +7,7 @@ UID: NA:
 ## -description
 
 This header is used by Debugger. For more information, see
-- [Debugger](../_debugger/index.md)
+- [Debugger](../_Debugger/index.md)
 
 Wdbgexts.h contain these programming interfaces:
 
@@ -72,6 +72,7 @@ Wdbgexts.h contain these programming interfaces:
 | [_DEBUG_TYPED_DATA structure](ns-wdbgexts-_debug_typed_data.md) | The DEBUG_TYPED_DATA structure describes typed data in the memory of the target. |
 | [_EXT_TYPED_DATA structure](ns-wdbgexts-_ext_typed_data.md) | The EXT_TYPED_DATA structure is passed to and returned from the DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Request operation. It contains the input and output parameters for the operation as well as specifying which particular suboperation to perform. |
 | [_FIELD_INFO structure](ns-wdbgexts-_field_info.md) | The FIELD_INFO structure is used by the IG_DUMP_SYMBOL_INFOIoctl operation to provide information about a member in a structure. |
+| [_GETSETBUSDATA structure](ns-wdbgexts-_getsetbusdata.md) | The IG_GET_BUS_DATA Ioctl operation reads data from a system bus and the IG_SET_BUS_DATA Ioctl operation writes data to a system bus. |
 | [_POINTER_SEARCH_PHYSICAL structure](ns-wdbgexts-_pointer_search_physical.md) | The IG_POINTER_SEARCH_PHYSICAL Ioctl operation searches the target's physical memory for pointers lying within a specified range. |
 | [_SYM_DUMP_PARAM structure](ns-wdbgexts-_sym_dump_param.md) | The IG_DUMP_SYMBOL_INFO Ioctl operation provides information about the type of a symbol. |
 | [_WDBGEXTS_THREAD_OS_INFO structure](ns-wdbgexts-_wdbgexts_thread_os_info.md) | The IG_GET_THREAD_OS_INFO Ioctl operation returns information about an operating system thread in the target. When calling Ioctl with IoctlType set to IG_GET_THREAD_OS_INFO, IpvData should contain an instance of the WDBGEXTS_THREAD_OS_INFO structure. |
@@ -81,3 +82,11 @@ Wdbgexts.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [_EXT_TDOP enumeration](ne-wdbgexts-_ext_tdop.md) | The EXT_TDOP enumeration is used in the Operation member of the EXT_TYPED_DATA structure to specify which suboperation the DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Request operation will perform. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [GetDebuggerData macro](nf-wdbgexts-getdebuggerdata.md) | The GetDebuggerData function retrieves information stored in a data block. |
+| [GetFieldValue macro](nf-wdbgexts-getfieldvalue.md) | The GetFieldValue macro is a thin wrapper around the GetFieldData function. It is provided as a convenience for reading the value of a member in a structure. |
+| [GetKdContext macro](nf-wdbgexts-getkdcontext.md) | The GetKdContext function returns the total number of processors and the number of the current processor in the structure ppi points to. |

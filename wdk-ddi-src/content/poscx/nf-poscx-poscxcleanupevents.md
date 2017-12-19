@@ -7,7 +7,7 @@ old-location: pos\poscxcleanupevents.htm
 old-project: pos
 ms.assetid: AD97BA14-8786-47A2-B551-2DB6FC7F83A8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: PosCxCleanupEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices

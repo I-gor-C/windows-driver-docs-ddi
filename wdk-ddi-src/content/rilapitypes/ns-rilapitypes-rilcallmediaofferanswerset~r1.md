@@ -4,10 +4,10 @@ title: RILCALLMEDIAOFFERANSWERSET
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediaofferanswerset_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 272e2bf5-9d84-407d-9126-41bcb4f43d91
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLMEDIAOFFERANSWERSET, *LPRILCALLMEDIAOFFERANSWERSET, RILCALLMEDIAOFFERANSWERSET
 ms.prod: windows-hardware
 ms.technology: windows-devices

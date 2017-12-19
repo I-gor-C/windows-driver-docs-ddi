@@ -7,8 +7,8 @@ old-location: ifsk\file_id_global_tx_dir_information.htm
 old-project: ifsk
 ms.assetid: 4c4a0458-8ab3-4ef0-b455-c7a70737f322
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION, PFILE_ID_GLOBAL_TX_DIR_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: audio\kstelephony_callinfo.htm
 old-project: audio
 ms.assetid: B5B89AAC-169B-42B0-8FC8-AB436EFC3579
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _tagKSTELEPHONY_CALLINFO, KSTELEPHONY_CALLINFO, *PKSTELEPHONY_CALLINFO
+ms.date: 12/14/2017
+ms.keywords: _tagKSTELEPHONY_CALLINFO, KSTELEPHONY_CALLINFO, *PKSTELEPHONY_CALLINFO, PKSTELEPHONY_CALLINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

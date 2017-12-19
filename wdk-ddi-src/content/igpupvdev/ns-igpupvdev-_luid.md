@@ -4,10 +4,10 @@ title: _LUID
 author: windows-driver-content
 description: The locally unique identifier (LUID) is a 64-bit value guaranteed to be unique only on the system on which it was generated.
 old-location: netvista\luid.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9547d3e1-a811-4b89-be71-f7cf81e92b93
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _LUID, LUID
 ms.prod: windows-hardware
 ms.technology: windows-devices

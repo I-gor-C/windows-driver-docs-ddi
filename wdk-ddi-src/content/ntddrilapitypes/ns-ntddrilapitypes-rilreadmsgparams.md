@@ -4,11 +4,11 @@ title: RILREADMSGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilreadmsgparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: feeabcd2-659f-4a87-abdd-cfbf89589c48
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILREADMSGPARAMS, RILREADMSGPARAMS, *LPRILREADMSGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILREADMSGPARAMS, *LPRILREADMSGPARAMS, RILREADMSGPARAMS, LPRILREADMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

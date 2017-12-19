@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg_createcommandqueue_0023.htm
 old-project: display
 ms.assetid: F8194BA0-325F-48B8-994F-FA2EA80C70D9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDIARG_CREATECOMMANDQUEUE_0023, D3D12DDIARG_CREATECOMMANDQUEUE_0023
 ms.prod: windows-hardware
 ms.technology: windows-devices

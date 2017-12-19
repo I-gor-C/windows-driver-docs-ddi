@@ -4,10 +4,10 @@ title: FWPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V4_
 author: windows-driver-content
 description: The FWPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_EGRESS_VSWITCH_TRANSPORT_V4 run-time filtering layer.
 old-location: netvista\fwps_fields_egress_vswitch_transport_v4.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6b0a2993-edc6-48bc-828e-4f74d889e79f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V4_, FWPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_get_drive_geometry_ex.htm
 old-project: storage
 ms.assetid: c0cf6b73-3283-4a58-845a-79f3b078db46
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

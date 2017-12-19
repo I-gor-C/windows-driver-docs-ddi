@@ -4,11 +4,11 @@ title: _ADDRESS0_OWNERSHIP_ACQUIRE
 author: windows-driver-content
 description: Contains parameters for configuring the device.
 old-location: buses\_address0_ownership_acquire.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: D2FECBA5-21DF-411C-BBDB-968328E18C12
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _ADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE
+ms.date: 12/14/2017
+ms.keywords: _ADDRESS0_OWNERSHIP_ACQUIRE, PADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

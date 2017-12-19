@@ -7,7 +7,7 @@ old-location: ieee\irb_req_free_address_range.htm
 old-project: IEEE
 ms.assetid: 18C1A210-6C6D-4BA7-AE62-81774DD62C58
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_FREE_ADDRESS_RANGE, IRB_REQ_FREE_ADDRESS_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

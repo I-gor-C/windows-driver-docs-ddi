@@ -7,7 +7,7 @@ old-location: kernel\file_object.htm
 old-project: kernel
 ms.assetid: fa87a3e8-97d2-48c0-9722-2be011d145dd
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _FILE_OBJECT, *PFILE_OBJECT, FILE_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ typedef struct _FILE_OBJECT {
   KSPIN_LOCK                        IrpListLock;
   LIST_ENTRY                        IrpList;
   __volatile PVOID                  FileObjectExtension;
-} FILE_OBJECT, *PFILE_OBJECT;
+} FILE_OBJECT, *PFILE_OBJECT, LOG_FILE_OBJECT;
 ````
 
 
@@ -556,6 +556,10 @@ Drivers can use read-only members to acquire relevant information but must not m
 
 During the processing of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request, a file system driver calls the <a href="kernel.iosetshareaccess">IoSetShareAccess</a> routine (if the client is the first to open the file) or the <a href="kernel.iocheckshareaccess">IoCheckShareAccess</a> routine (for subsequent clients that want to share the file). <b>IoSetShareAccess</b> and <b>IoCheckShareAccess</b> update the <b>ReadAccess</b>, <b>WriteAccess</b>, and <b>DeleteAccess</b> members to indicate the access rights that are granted to the client if the client has exclusive access to the file. Additionally, <b>IoCheckShareAccess</b> updates the <b>SharedRead</b>, <b>SharedWrite</b>, and <b>SharedDelete</b> members to indicate the access rights that are simultaneously granted to two or more clients that share the file. If the driver for a device other than a file system has to monitor the access rights of clients, this driver typically stores access rights information in context buffers that are pointed to by the <b>FsContext</b> and <b>FsContext2</b> members.
 
+The Common Log File System (CLFS) uses the <b>LOG_FILE_OBJECT</b> structure to represent logs. The <a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a> function returns a pointer to a <b>LOG_FILE_OBJECT</b> structure, which clients then pass to other CLFS functions. 
+
+CLFS clients do not directly access the members of a <b>LOG_FILE_OBJECT</b> structure.
+
 
 ## -requirements
 <table>
@@ -606,5 +610,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_OBJECT structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_OBJECT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,7 +7,7 @@ old-location: wdf\wdf_fileobject_config_init.htm
 old-project: wdf
 ms.assetid: 87ad817a-4a62-4061-949c-fe45bdfb44d5
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_FILEOBJECT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

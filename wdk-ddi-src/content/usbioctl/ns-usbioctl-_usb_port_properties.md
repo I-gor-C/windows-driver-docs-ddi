@@ -4,11 +4,11 @@ title: _USB_PORT_PROPERTIES
 author: windows-driver-content
 description: The USB_PORT_PROPERTIES union is used to report the capabilities of a Universal Serial Bus (USB) port.The port capabilities are retrieved in the USB_PORT_CONNECTOR_PROPERTIES structure by the IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES I/O control request.
 old-location: buses\usb_port_properties.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: BCADC907-3770-4FBE-AEB3-96F93502E899
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USB_PORT_PROPERTIES, USB_PORT_PROPERTIES, *PUSB_PORT_PROPERTIES
+ms.date: 12/14/2017
+ms.keywords: _USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES, *PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -132,5 +132,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_PORT_PROPERTIES union%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USB_PORT_PROPERTIES union%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

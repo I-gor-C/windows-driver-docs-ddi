@@ -4,11 +4,11 @@ title: _UCMTCPCI_DRIVER_GLOBALS
 author: windows-driver-content
 description: The global structure for the USB Type-C Port Controller Interface framework extension (UcmTcpciCx).
 old-location: buses\ucmtcpci_driver_globals.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 75a0e9ef-0791-4465-b671-36c86dc9116a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
+ms.date: 12/14/2017
+ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, PUCMTCPCI_DRIVER_GLOBALS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

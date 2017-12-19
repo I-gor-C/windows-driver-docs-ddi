@@ -4,10 +4,10 @@ title: _WIA_MICR_INFO
 author: windows-driver-content
 description: The WIA_MICR_INFO structure stores information for one decoded MICR code.
 old-location: image\wia_micr_info.htm
-old-project: image
+old-project: Image
 ms.assetid: E91F5D6F-40F9-4CE2-8C51-4CA7FB27F2C3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _WIA_MICR_INFO, WIA_MICR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

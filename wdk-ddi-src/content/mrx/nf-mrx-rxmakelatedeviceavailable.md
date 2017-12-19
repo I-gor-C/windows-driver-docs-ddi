@@ -7,7 +7,7 @@ old-location: ifsk\rxmakelatedeviceavailable.htm
 old-project: ifsk
 ms.assetid: 0818907f-3346-42a2-b123-3298ea8f9a1d
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: RxMakeLateDeviceAvailable
 ms.prod: windows-hardware
 ms.technology: windows-devices

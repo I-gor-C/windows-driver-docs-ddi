@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_copyprotection_support.htm
 old-project: display
 ms.assetid: 2b0c7428-bc88-461c-ab72-daccf02606da
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

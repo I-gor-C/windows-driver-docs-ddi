@@ -7,7 +7,7 @@ old-location: stream\ks_seeking_flags.htm
 old-project: stream
 ms.assetid: 8e27872e-4f38-4d0e-92bc-5e759a9db195
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KS_SEEKING_FLAGS, KS_SEEKING_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the <a href="stream.ksproperty_positions">KSPROPERTY_POSITIONS</a> structure.
+The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure.
 
 
 
@@ -81,7 +81,7 @@ typedef enum  {
 
 
 ## -remarks
-The minidriver sets these flag values in a <a href="stream.ksproperty_positions">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
+The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
 
 
 ## -requirements
@@ -102,7 +102,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty_positions">KSPROPERTY_POSITIONS</a>
+<a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a>
@@ -112,5 +112,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_SEEKING_FLAGS enumeration%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_SEEKING_FLAGS enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

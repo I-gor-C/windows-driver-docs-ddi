@@ -4,10 +4,10 @@ title: _WDI_ROAM_TRIGGER
 author: windows-driver-content
 description: The WDI_ROAM_TRIGGER enumeration defines roam triggers.
 old-location: netvista\wdi_roam_trigger.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7AFA084B-5EFC-429B-B6D1-F4E484B16921
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_ROAM_TRIGGER, WDI_ROAM_TRIGGER
 ms.prod: windows-hardware
 ms.technology: windows-devices

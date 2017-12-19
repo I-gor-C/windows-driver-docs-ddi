@@ -7,8 +7,8 @@ old-location: print\dot4_dc_create_data.htm
 old-project: print
 ms.assetid: 9C21732B-0AB1-4F3E-8F3D-F0B12007920A
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _DOT4_DC_CREATE_DATA, DOT4_DC_CREATE_DATA, *PDOT4_DC_CREATE_DATA
+ms.date: 12/14/2017
+ms.keywords: _DOT4_DC_CREATE_DATA, *PDOT4_DC_CREATE_DATA, DOT4_DC_CREATE_DATA, PDOT4_DC_CREATE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

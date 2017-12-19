@@ -4,10 +4,10 @@ title: RIL_GetCardInfo function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getcardinfo.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d865993b-10cc-4fa2-a00f-34eb1d4e299b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetCardInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices

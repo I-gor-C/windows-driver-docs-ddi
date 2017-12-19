@@ -7,7 +7,7 @@ old-location: kernel\psgetsilocontext.htm
 old-project: kernel
 ms.assetid: 08C795F2-64F9-4EFE-AA25-3B2FCB31D062
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

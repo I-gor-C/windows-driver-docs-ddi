@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_forward_progress_reserved_policy_settings.htm
 old-project: wdf
 ms.assetid: 28ffe82f-79b6-4a00-b4fa-36df5df303a6
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

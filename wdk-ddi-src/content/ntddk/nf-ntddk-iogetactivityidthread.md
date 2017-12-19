@@ -7,7 +7,7 @@ old-location: kernel\iogetactivityidthread.htm
 old-project: kernel
 ms.assetid: 445A9EBA-EF15-4FE4-9747-3E1E138E13E7
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: IoGetActivityIdThread
 ms.prod: windows-hardware
 ms.technology: windows-devices

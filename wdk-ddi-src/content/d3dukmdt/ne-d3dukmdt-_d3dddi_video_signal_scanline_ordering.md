@@ -7,7 +7,7 @@ old-location: display\d3dddi_video_signal_scanline_ordering.htm
 old-project: display
 ms.assetid: f0dcfd93-1706-41f7-aab5-f9e9dd58e9b3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING, D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING
 ms.prod: windows-hardware
 ms.technology: windows-devices

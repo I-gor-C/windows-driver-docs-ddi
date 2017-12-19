@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceassignmofresourcename.htm
 old-project: wdf
 ms.assetid: b4ab0a7b-9c5a-4295-94fc-35310ca8e05b
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceAssignMofResourceName
 ms.prod: windows-hardware
 ms.technology: windows-devices

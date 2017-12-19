@@ -7,8 +7,8 @@ old-location: storage\sm_sendecho_out.htm
 old-project: storage
 ms.assetid: b3f948e0-4066-487c-aaa9-de29c0023f10
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendECHO_OUT, *PSM_SendECHO_OUT, SM_SendECHO_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_SendECHO_OUT, *PSM_SendECHO_OUT, SM_SendECHO_OUT, PSM_SendECHO_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

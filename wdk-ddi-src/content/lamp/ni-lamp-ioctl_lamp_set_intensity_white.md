@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_set_intensity_white.htm
 old-project: stream
 ms.assetid: 78541C4C-AA0E-4C1F-A7B5-E2A39DF5E2CE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

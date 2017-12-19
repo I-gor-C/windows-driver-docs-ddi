@@ -7,7 +7,7 @@ old-location: stream\kswritefile.htm
 old-project: stream
 ms.assetid: ed66db40-d159-4660-96c0-da52f752a409
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsWriteFile
 ms.prod: windows-hardware
 ms.technology: windows-devices

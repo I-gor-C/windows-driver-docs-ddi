@@ -6,8 +6,8 @@ UID: NA:
 
 ## -description
 
-This header is used by Imaging devices. For more information, see
-- [Imaging devices](../_image/index.md)
+This header is used by Image. For more information, see
+- [Image](../_Image/index.md)
 
 Wiautil.h contain these programming interfaces:
 
@@ -64,3 +64,32 @@ Wiautil.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [SKIP_AMOUNT enumeration](ne-wiautil-skip_amount.md) | The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [wiauDbgHelper macro](nf-wiautil-wiaudbghelper~r1.md) | The wiauDbgHelper function formats a message and writes it to a log file, or debugger, or both. |
+| [wiauDbgInit macro](nf-wiautil-wiaudbginit~r1.md) | The wiauDbgInit function initializes WIA debugging. |
+| [wiauDbgSetFlags macro](nf-wiautil-wiaudbgsetflags~r1.md) | The wiauDbgSetFlags function sets debugging flags. |
+
+## Methods
+
+| Title   | Description   |
+| ---- |:---- |
+| [CWiauDbgFn::CWiauDbgFn method](nf-wiautil-cwiaudbgfn-cwiaudbgfn.md) | The CWiauDbgFn |
+| [CWiauDbgFn::~CWiauDbgFn method](nf-wiautil-cwiaudbgfn-~cwiaudbgfn.md) | The CWiauDbgFn |
+| [CWiauFormatConverter::CWiauFormatConverter method](nf-wiautil-cwiauformatconverter-cwiauformatconverter.md) | The CWiauFormatConverter |
+| [CWiauFormatConverter::ConvertToBmp method](nf-wiautil-cwiauformatconverter-converttobmp.md) | The CWiauFormatConverter |
+| [CWiauFormatConverter::Init method](nf-wiautil-cwiauformatconverter-init.md) | The CWiauFormatConverter |
+| [CWiauFormatConverter::IsFormatSupported method](nf-wiautil-cwiauformatconverter-isformatsupported.md) | The CWiauFormatConverter |
+| [CWiauFormatConverter::~CWiauFormatConverter method](nf-wiautil-cwiauformatconverter-~cwiauformatconverter.md) | The CWiauFormatConverter |
+| [CWiauPropertyList::CWiauPropertyList method](nf-wiautil-cwiaupropertylist-cwiaupropertylist.md) | The CWiauPropertyList |
+| [CWiauPropertyList::DefineProperty method](nf-wiautil-cwiaupropertylist-defineproperty.md) | The CWiauPropertyList |
+| [CWiauPropertyList::GetPropId method](nf-wiautil-cwiaupropertylist-getpropid.md) | The CWiauPropertyList |
+| [CWiauPropertyList::Init method](nf-wiautil-cwiaupropertylist-init.md) | The CWiauPropertyList |
+| [CWiauPropertyList::LookupPropId method](nf-wiautil-cwiaupropertylist-lookuppropid.md) | The CWiauPropertyList |
+| [CWiauPropertyList::SendToWia method](nf-wiautil-cwiaupropertylist-sendtowia.md) | The CWiauPropertyList |
+| [CWiauPropertyList::SetAccessSubType method](nf-wiautil-cwiaupropertylist-setaccesssubtype.md) | The CWiauPropertyList |
+| [CWiauPropertyList::SetAccessSubType method](nf-wiautil-cwiaupropertylist-setaccesssubtype~r1.md) | The CWiauPropertyList |
+| [CWiauPropertyList::~CWiauPropertyList method](nf-wiautil-cwiaupropertylist-~cwiaupropertylist.md) | The CWiauPropertyList |

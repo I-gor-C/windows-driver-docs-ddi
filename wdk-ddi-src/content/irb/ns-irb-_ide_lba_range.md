@@ -7,8 +7,8 @@ old-location: storage\ide_lba_range.htm
 old-project: storage
 ms.assetid: 2d823d9c-7328-44e2-9ba2-22967471ef68
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _IDE_LBA_RANGE, IDE_LBA_RANGE, *PIDE_LBA_RANGE
+ms.date: 12/15/2017
+ms.keywords: _IDE_LBA_RANGE, *PIDE_LBA_RANGE, PIDE_LBA_RANGE, IDE_LBA_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

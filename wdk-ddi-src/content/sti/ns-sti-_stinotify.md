@@ -4,11 +4,11 @@ title: _STINOTIFY
 author: windows-driver-content
 description: The STINOTIFY structure is used as a parameter to the IStillImage::LaunchApplicationForDevice, IStiDevice::GetLastNotificationData, and IStiUSD::GetNotificationData methods.
 old-location: image\stinotify.htm
-old-project: image
+old-project: Image
 ms.assetid: 7dc42f9a-2e55-4ae5-a951-7d1d3b14564b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STINOTIFY, STINOTIFY, *LPSTINOTIFY
+ms.date: 12/14/2017
+ms.keywords: _STINOTIFY, LPSTINOTIFY, STINOTIFY, *LPSTINOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

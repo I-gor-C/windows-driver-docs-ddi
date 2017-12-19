@@ -4,11 +4,11 @@ title: EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY
 author: windows-driver-content
 description: The UDE client driver's implementation to determine the capabilities that are supported by the emulated USB host controller.
 old-location: buses\evt_udecx_wdf_device_query_usb_capability.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 96F3128C-C334-4531-9C86-3FA918A902AC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS
+ms.date: 12/14/2017
+ms.keywords: _UDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS, PUDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -180,5 +180,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

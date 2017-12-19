@@ -7,7 +7,7 @@ old-location: kernel\pofxsettargetdripsdevicepowerstate.htm
 old-project: kernel
 ms.assetid: 435c0731-101c-498b-9041-904001be3f2c
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PoFxSetTargetDripsDevicePowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices

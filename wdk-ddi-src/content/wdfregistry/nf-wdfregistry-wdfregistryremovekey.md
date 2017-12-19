@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryremovekey.htm
 old-project: wdf
 ms.assetid: b23d1c2f-15f0-4b9e-8a10-9b81056fa509
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfRegistryRemoveKey
 ms.prod: windows-hardware
 ms.technology: windows-devices

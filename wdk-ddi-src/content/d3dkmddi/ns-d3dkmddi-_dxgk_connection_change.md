@@ -7,8 +7,8 @@ old-location: display\dxgk_connection_change.htm
 old-project: display
 ms.assetid: 0B0D640C-3E4B-4DE0-AA11-C751F210C77A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_CONNECTION_CHANGE, DXGK_CONNECTION_CHANGE, *PDXGK_CONNECTION_CHANGE
+ms.date: 12/15/2017
+ms.keywords: _DXGK_CONNECTION_CHANGE, DXGK_CONNECTION_CHANGE, *PDXGK_CONNECTION_CHANGE, PDXGK_CONNECTION_CHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

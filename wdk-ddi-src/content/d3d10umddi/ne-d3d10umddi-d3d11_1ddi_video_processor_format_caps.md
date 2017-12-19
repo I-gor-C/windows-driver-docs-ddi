@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_format_caps.htm
 old-project: display
 ms.assetid: b0f36d4c-cf95-4d85-a2c8-267df618e0aa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

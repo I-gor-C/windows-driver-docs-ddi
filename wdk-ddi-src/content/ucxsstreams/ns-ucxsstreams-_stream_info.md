@@ -4,11 +4,11 @@ title: _STREAM_INFO
 author: windows-driver-content
 description: This structure stores information about a stream associated with a bulk endpoint.
 old-location: buses\_stream_info.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: B8AE8866-AC13-4E7B-8815-70846DEECA12
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STREAM_INFO, *PSTREAM_INFO, STREAM_INFO
+ms.date: 12/14/2017
+ms.keywords: _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO, PSTREAM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

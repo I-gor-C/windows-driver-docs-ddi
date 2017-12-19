@@ -7,8 +7,8 @@ old-location: print\optparam.htm
 old-project: print
 ms.assetid: d0cd2867-783c-4a41-a819-e919d4ffc1e3
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OPTPARAM, OPTPARAM, *POPTPARAM
+ms.date: 12/14/2017
+ms.keywords: _OPTPARAM, *POPTPARAM, POPTPARAM, OPTPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

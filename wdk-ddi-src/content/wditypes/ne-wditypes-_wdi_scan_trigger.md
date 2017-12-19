@@ -4,10 +4,10 @@ title: _WDI_SCAN_TRIGGER
 author: windows-driver-content
 description: The WDI_SCAN_TRIGGER enumeration defines the scan trigger values.
 old-location: netvista\wdi_scan_trigger.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3E201A6D-3A5B-4A6B-8AED-258A96BBF869
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER
 ms.prod: windows-hardware
 ms.technology: windows-devices

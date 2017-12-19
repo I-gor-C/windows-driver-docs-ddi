@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settargetgamma.htm
 old-project: display
 ms.assetid: 94BA40BD-3B56-44EF-BAD4-49556E68C550
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_SETTARGETGAMMA, DXGKARG_SETTARGETGAMMA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
 author: windows-driver-content
 description: The NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is the basic building block of a TCP chimney offload state tree. An offload state tree can contain one or more NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structures.
 old-location: netvista\ndis_miniport_offload_block_list.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ebc98e65-5d11-4c3d-aea1-dfad1434c093
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, *PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST, NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+ms.date: 12/14/2017
+ms.keywords: _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST, NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, *PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -698,5 +698,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

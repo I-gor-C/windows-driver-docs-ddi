@@ -7,7 +7,7 @@ old-location: display\dxgk_setvidpnsourceaddress_output_flags.htm
 old-project: display
 ms.assetid: CFEEB41D-050F-4372-AB54-39ABC696C89D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

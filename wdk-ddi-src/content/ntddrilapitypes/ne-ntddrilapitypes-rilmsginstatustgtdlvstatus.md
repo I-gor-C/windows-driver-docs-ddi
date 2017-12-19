@@ -4,10 +4,10 @@ title: RILMSGINSTATUSTGTDLVSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsginstatustgtdlvstatus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6e22ae6d-55a2-4aa7-993b-67474acc6f7b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGINSTATUSTGTDLVSTATUS, RILMSGINSTATUSTGTDLVSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

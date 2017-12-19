@@ -7,7 +7,7 @@ old-location: stream\optimal_weight_totals.htm
 old-project: stream
 ms.assetid: 56D97D0F-1934-4834-99A7-8A745A3E6757
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: OPTIMAL_WEIGHT_TOTALS, OPTIMAL_WEIGHT_TOTALS
 ms.prod: windows-hardware
 ms.technology: windows-devices

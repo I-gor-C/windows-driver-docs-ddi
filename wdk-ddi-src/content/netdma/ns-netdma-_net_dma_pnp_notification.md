@@ -4,11 +4,11 @@ title: _NET_DMA_PNP_NOTIFICATION
 author: windows-driver-content
 description: The NET_DMA_PNP_NOTIFICATION structure specifies a power management notification in the NetDMA interface.
 old-location: netvista\net_dma_pnp_notification.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8a505077-dec6-47cc-8730-d68e19309d3b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NET_DMA_PNP_NOTIFICATION, NET_DMA_PNP_NOTIFICATION, *PNET_DMA_PNP_NOTIFICATION
+ms.date: 12/14/2017
+ms.keywords: _NET_DMA_PNP_NOTIFICATION, *PNET_DMA_PNP_NOTIFICATION, PNET_DMA_PNP_NOTIFICATION, NET_DMA_PNP_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -136,5 +136,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PNP_NOTIFICATION structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_DMA_PNP_NOTIFICATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

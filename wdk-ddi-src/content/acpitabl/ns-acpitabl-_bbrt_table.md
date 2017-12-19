@@ -7,8 +7,8 @@ old-location: acpi\bbrt_table.htm
 old-project: acpi
 ms.assetid: 0FC4D7BA-4292-4D87-8982-D20D267D6FA5
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _BBRT_TABLE, *PBBRT_TABLE, BBRT_TABLE
+ms.date: 12/14/2017
+ms.keywords: _BBRT_TABLE, *PBBRT_TABLE, BBRT_TABLE, PBBRT_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

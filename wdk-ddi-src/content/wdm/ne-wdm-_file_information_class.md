@@ -7,8 +7,8 @@ old-location: ifsk\file_information_class.htm
 old-project: ifsk
 ms.assetid: aec0655b-7cc0-48b6-828c-b9d39c71e5b6
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FILE_INFORMATION_CLASS, FILE_INFORMATION_CLASS, *PFILE_INFORMATION_CLASS
+ms.date: 12/14/2017
+ms.keywords: _FILE_INFORMATION_CLASS, FILE_INFORMATION_CLASS, *PFILE_INFORMATION_CLASS, PFILE_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

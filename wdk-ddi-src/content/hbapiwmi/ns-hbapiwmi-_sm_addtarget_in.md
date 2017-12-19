@@ -7,8 +7,8 @@ old-location: storage\sm_addtarget_in.htm
 old-project: storage
 ms.assetid: 02bf5e91-bce0-4b8d-aec6-659ed1efd2b5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_AddTarget_IN, *PSM_AddTarget_IN, SM_AddTarget_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_AddTarget_IN, PSM_AddTarget_IN, *PSM_AddTarget_IN, SM_AddTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

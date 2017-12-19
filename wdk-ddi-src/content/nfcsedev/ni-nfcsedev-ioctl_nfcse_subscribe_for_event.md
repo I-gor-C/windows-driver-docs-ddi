@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_subscribe_for_event.htm
 old-project: nfpdrivers
 ms.assetid: 3A184392-A68C-4AFC-AE9F-36247153ADD2
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

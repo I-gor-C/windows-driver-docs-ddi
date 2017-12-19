@@ -7,8 +7,8 @@ old-location: hid\ioctl_internal_i8042_mouse_write_buffer.htm
 old-project: hid
 ms.assetid: 40f6fd0b-8c18-408b-b1f7-5b280b9aa67d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _MOUSE_STATE, *PMOUSE_STATE, MOUSE_STATE
+ms.date: 12/14/2017
+ms.keywords: _MOUSE_STATE, MOUSE_STATE, PMOUSE_STATE, *PMOUSE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

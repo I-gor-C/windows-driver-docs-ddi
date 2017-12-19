@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settimingsfromvidpn.htm
 old-project: display
 ms.assetid: 14D652C4-9812-481E-8E69-A6D7923F01A3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_SETTIMINGSFROMVIDPN, DXGKARG_SETTIMINGSFROMVIDPN
 ms.prod: windows-hardware
 ms.technology: windows-devices

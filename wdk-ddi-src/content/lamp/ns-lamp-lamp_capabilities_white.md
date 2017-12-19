@@ -7,7 +7,7 @@ old-location: stream\lamp_capabilities_white.htm
 old-project: stream
 ms.assetid: F407B953-8B03-4053-A5F4-3E96E9F9645E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_CAPABILITIES_WHITE, LAMP_CAPABILITIES_WHITE
 ms.prod: windows-hardware
 ms.technology: windows-devices

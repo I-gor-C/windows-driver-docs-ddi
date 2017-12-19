@@ -7,7 +7,7 @@ old-location: kernel\tminitializetransactionmanager_.htm
 old-project: kernel
 ms.assetid: A44B4B93-4EC7-4FC3-B64F-BF1FF19D067E
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: TmInitializeTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices

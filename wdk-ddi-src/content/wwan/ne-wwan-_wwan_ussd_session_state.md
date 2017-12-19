@@ -4,11 +4,11 @@ title: _WWAN_USSD_SESSION_STATE
 author: windows-driver-content
 description: The WWAN_USSD_SESSION_STATE enumeration lists the different types of USSD session states.
 old-location: netvista\wwan_ussd_session_state.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5111A10F-F66F-4667-A77E-63691CCD282D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WWAN_USSD_SESSION_STATE, *PWWAN_USSD_SESSION_STATE, WWAN_USSD_SESSION_STATE
+ms.date: 12/14/2017
+ms.keywords: _WWAN_USSD_SESSION_STATE, *PWWAN_USSD_SESSION_STATE, WWAN_USSD_SESSION_STATE, PWWAN_USSD_SESSION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

@@ -7,7 +7,7 @@ old-location: sensors\gnss_driver_request.htm
 old-project: sensors
 ms.assetid: 923774E0-4F4E-470A-9793-8AD4261AEB64
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_DRIVER_REQUEST, GNSS_DRIVER_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

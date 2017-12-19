@@ -4,10 +4,10 @@ title: EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE
 author: windows-driver-content
 description: The client driver's implementation that UCX calls to enable the static streams.
 old-location: buses\evt_ucx_endpoint_static_streams_enable.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: eb40623f-b13f-4c3f-b3ac-687cba323ce2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\ksdefaultaddeventhandler.htm
 old-project: stream
 ms.assetid: 8e429a48-4e86-4673-aa32-85b640e2f64f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsDefaultAddEventHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ The event <a href="kernel.irp">IRP</a>. This contains the object into which the 
 
 ### -param EventData [in]
 
-A pointer to a <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes an event notification method.
+A pointer to a <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that describes an event notification method.
 
 
 ### -param EventEntry [in, out]
@@ -159,5 +159,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDefaultAddEventHandler function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDefaultAddEventHandler function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

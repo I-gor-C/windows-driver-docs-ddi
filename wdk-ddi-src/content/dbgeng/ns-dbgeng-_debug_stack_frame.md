@@ -4,11 +4,11 @@ title: _DEBUG_STACK_FRAME
 author: windows-driver-content
 description: The DEBUG_STACK_FRAME structure describes a stack frame and the address of the current instruction for the stack frame.
 old-location: debugger\debug_stack_frame.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: e3ab83cf-96ed-468d-895f-23b90951cfb5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_STACK_FRAME, DEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_STACK_FRAME, DEBUG_STACK_FRAME, PDEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

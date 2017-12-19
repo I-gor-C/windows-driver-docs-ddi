@@ -4,10 +4,10 @@ title: RILMSGCDMAMSGSTATUSTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmamsgstatustype.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 60365fd7-3897-4948-a251-098e5a91c959
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGCDMAMSGSTATUSTYPE, RILMSGCDMAMSGSTATUSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

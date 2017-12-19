@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_gdisurfaceflags.htm
 old-project: display
 ms.assetid: ce6e1ca4-7a44-46ee-a5ac-33e143ce6377
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_GDISURFACEFLAGS, D3DKMDT_GDISURFACEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

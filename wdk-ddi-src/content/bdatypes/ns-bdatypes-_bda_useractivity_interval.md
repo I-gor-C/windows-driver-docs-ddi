@@ -7,8 +7,8 @@ old-location: stream\bda_useractivity_interval.htm
 old-project: stream
 ms.assetid: 52530081-1518-4A80-A341-DEF71DAA8AC7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_USERACTIVITY_INTERVAL, BDA_USERACTIVITY_INTERVAL, *P_BDA_USERACTIVITY_INTERVAL
+ms.date: 12/14/2017
+ms.keywords: _BDA_USERACTIVITY_INTERVAL, BDA_USERACTIVITY_INTERVAL, *P_BDA_USERACTIVITY_INTERVAL, P_BDA_USERACTIVITY_INTERVAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

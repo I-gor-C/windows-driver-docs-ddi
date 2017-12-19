@@ -7,8 +7,8 @@ old-location: bltooth\sco_retransmission_effort.htm
 old-project: bltooth
 ms.assetid: bf466384-bf13-42cc-a02d-ef880cac4c02
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT
+ms.date: 12/14/2017
+ms.keywords: _SCO_RETRANSMISSION_EFFORT, PSCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

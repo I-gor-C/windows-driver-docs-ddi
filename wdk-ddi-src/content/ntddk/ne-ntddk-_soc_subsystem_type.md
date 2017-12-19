@@ -7,8 +7,8 @@ old-location: whea\soc_sybsystem_type.htm
 old-project: whea
 ms.assetid: 179D61E3-C2EE-4821-93F8-DB763892DD3D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE, *PSOC_SUBSYSTEM_TYPE
+ms.date: 12/14/2017
+ms.keywords: _SOC_SUBSYSTEM_TYPE, PSOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE, *PSOC_SUBSYSTEM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

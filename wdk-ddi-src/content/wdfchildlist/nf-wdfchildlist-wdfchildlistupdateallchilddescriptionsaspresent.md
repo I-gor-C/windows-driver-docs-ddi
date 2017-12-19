@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistupdateallchilddescriptionsaspresent.htm
 old-project: wdf
 ms.assetid: 598d2b4f-9b49-480a-9cf8-25661c24483f
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfChildListUpdateAllChildDescriptionsAsPresent
 ms.prod: windows-hardware
 ms.technology: windows-devices

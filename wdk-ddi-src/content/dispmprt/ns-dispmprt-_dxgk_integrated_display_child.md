@@ -7,8 +7,8 @@ old-location: display\dxgk_integrated_display_child.htm
 old-project: display
 ms.assetid: A3E28664-B286-4E4A-85DD-4EAAC7D257F0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD
+ms.date: 12/15/2017
+ms.keywords: _DXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD, PDXGK_INTEGRATED_DISPLAY_CHILD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: audio\pfndrmaddcontenthandlers.htm
 old-project: audio
 ms.assetid: 762604FC-34EA-41A1-9F2B-B3852AA4D167
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WDI_TX_METADATA, *PWDI_TX_METADATA, WDI_TX_METADATA
+ms.date: 12/14/2017
+ms.keywords: _WDI_TX_METADATA, WDI_TX_METADATA, PWDI_TX_METADATA, *PWDI_TX_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

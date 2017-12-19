@@ -7,7 +7,7 @@ old-location: ieee\irb_req_set_local_host_properties.htm
 old-project: IEEE
 ms.assetid: 59C1BBEF-ECC8-4852-B2E2-75751B5B25B2
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IRB_REQ_SET_LOCAL_HOST_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices

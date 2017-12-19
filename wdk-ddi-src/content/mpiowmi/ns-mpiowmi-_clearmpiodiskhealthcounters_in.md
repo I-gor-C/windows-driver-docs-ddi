@@ -7,8 +7,8 @@ old-location: storage\clearmpiodiskhealthcounters_in.htm
 old-project: storage
 ms.assetid: 1af28545-f43f-47a2-b6a2-64fd7a408687
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _ClearMpioDiskHealthCounters_IN, ClearMpioDiskHealthCounters_IN, *PClearMpioDiskHealthCounters_IN
+ms.date: 12/15/2017
+ms.keywords: _ClearMpioDiskHealthCounters_IN, ClearMpioDiskHealthCounters_IN, *PClearMpioDiskHealthCounters_IN, PClearMpioDiskHealthCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

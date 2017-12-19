@@ -7,7 +7,7 @@ old-location: storage\ataportrequestworkerroutine.htm
 old-project: storage
 ms.assetid: 2d9a6886-aeec-4d61-8c9d-056d1409b905
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: AtaPortRequestWorkerRoutine
 ms.prod: windows-hardware
 ms.technology: windows-devices

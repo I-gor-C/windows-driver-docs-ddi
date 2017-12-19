@@ -7,7 +7,7 @@ old-location: kernel\psgetserversiloactiveconsoleid.htm
 old-project: kernel
 ms.assetid: 66b3c35d-681c-464a-86fa-972825bf3e97
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetServerSiloActiveConsoleId
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: wdf\evt_wdf_companion_pre_d0_entry.htm
 old-project: wdf
 ms.assetid: 18d55cf3-62c3-42e8-8c33-f61ea80ff680
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG
+ms.date: 12/15/2017
+ms.keywords: _WDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, PWDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

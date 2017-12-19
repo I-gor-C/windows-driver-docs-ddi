@@ -4,10 +4,10 @@ title: RILEMERGENCYMODECONTROLPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencymodecontrolparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 240414c7-c035-462c-8319-d7ac192c712a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILEMERGENCYMODECONTROLPARAMS, *LPRILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

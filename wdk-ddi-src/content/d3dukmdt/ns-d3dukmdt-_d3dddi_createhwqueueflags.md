@@ -7,7 +7,7 @@ old-location: display\d3dddi_createhwqueueflags_.htm
 old-project: display
 ms.assetid: 50318DEC-8EE4-4208-8E7D-E8BFEA4BA06B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDI_CREATEHWQUEUEFLAGS, D3DDDI_CREATEHWQUEUEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

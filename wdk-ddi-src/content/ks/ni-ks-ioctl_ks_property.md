@@ -7,7 +7,7 @@ old-location: stream\ioctl_ks_property.htm
 old-project: stream
 ms.assetid: 66f29543-9677-4bae-baa4-6be8ebc52b66
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _KsEdit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ An application can use IOCTL_KS_PROPERTY to get or set properties, or to determi
 ## -ioctlparameters
 
 ### -input-buffer
-The contents of the client-specified <b>InBuffer</b> parameter depend on the property request, and are documented for each property set. For instance, clients requesting properties in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a> property set specify a pointer to a <a href="stream.ksp_pin">KSP_PIN</a> structure. 
+The contents of the client-specified <b>InBuffer</b> parameter depend on the property request, and are documented for each property set. For instance, clients requesting properties in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a> property set specify a pointer to a <a href="..\ks\ns-ks-ksp_pin.md">KSP_PIN</a> structure. 
 
 
 ### -input-buffer-length
@@ -104,19 +104,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty_description">KSPROPERTY_DESCRIPTION</a>
+<a href="..\ks\ns-ks-ksproperty_description.md">KSPROPERTY_DESCRIPTION</a>
 </dt>
 <dt>
-<a href="stream.ksproperty_item">KSPROPERTY_ITEM</a>
+<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksproperty_set">KSPROPERTY_SET</a>
+<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
 </dt>
 <dt>
-<a href="stream.ksproperty_membersheader">KSPROPERTY_MEMBERSHEADER</a>
+<a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a>
 </dt>
 <dt>
-<a href="stream.ksproperty_values">KSPROPERTY_VALUES</a>
+<a href="..\ks\ns-ks-ksproperty_values.md">KSPROPERTY_VALUES</a>
 </dt>
 <dt>
 <a href="stream.ksproperty">KSPROPERTY</a>
@@ -126,5 +126,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_PROPERTY control code%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_PROPERTY control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

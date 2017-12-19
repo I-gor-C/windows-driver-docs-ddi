@@ -7,7 +7,7 @@ old-location: stream\kspproperty_allocator_mdlcaching.htm
 old-project: stream
 ms.assetid: 91BB915F-E964-41D9-8D2A-3D5EF6F5B398
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSPPROPERTY_ALLOCATOR_MDLCACHING, KSPPROPERTY_ALLOCATOR_MDLCACHING
 ms.prod: windows-hardware
 ms.technology: windows-devices

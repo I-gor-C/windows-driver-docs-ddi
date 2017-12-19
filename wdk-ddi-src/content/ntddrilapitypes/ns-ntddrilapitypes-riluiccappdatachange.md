@@ -4,11 +4,11 @@ title: RILUICCAPPDATACHANGE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccappdatachange.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: a551f469-96f4-42cf-826d-3557cc13ce29
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE
+ms.date: 12/14/2017
+ms.keywords: RILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE, LPRILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

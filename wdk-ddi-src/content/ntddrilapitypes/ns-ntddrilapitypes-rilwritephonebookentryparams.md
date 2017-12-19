@@ -4,11 +4,11 @@ title: RILWRITEPHONEBOOKENTRYPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilwritephonebookentryparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 56d13074-4d7e-474e-8c4a-d319f38ecc97
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS, LPRILWRITEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

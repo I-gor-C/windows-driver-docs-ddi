@@ -4,10 +4,10 @@ title: RILMSGDCSMSGCLASS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgdcsmsgclass.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3190aa21-201a-40d1-b894-dd393e413826
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGDCSMSGCLASS, RILMSGDCSMSGCLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices

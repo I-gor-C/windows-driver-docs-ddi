@@ -7,8 +7,8 @@ old-location: storage\mp_storage_diagnostic_level.htm
 old-project: storage
 ms.assetid: BB05D543-7B99-481E-8CDB-AE350CBCCA2A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL
+ms.date: 12/15/2017
+ms.keywords: _MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL, PMP_STORAGE_DIAGNOSTIC_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

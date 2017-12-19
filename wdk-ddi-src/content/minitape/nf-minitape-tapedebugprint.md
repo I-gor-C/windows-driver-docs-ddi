@@ -7,7 +7,7 @@ old-location: storage\tapedebugprint.htm
 old-project: storage
 ms.assetid: d06e4308-f1a9-4acd-bc25-b3fd53129064
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: TapeDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices

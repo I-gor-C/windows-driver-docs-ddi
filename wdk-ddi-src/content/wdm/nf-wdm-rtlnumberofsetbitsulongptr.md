@@ -7,7 +7,7 @@ old-location: kernel\rtlnumberofsetbitsulongptr.htm
 old-project: kernel
 ms.assetid: CD619018-7E6D-4B45-93C3-AD89FDFEB1E9
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlNumberOfSetBitsUlongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices

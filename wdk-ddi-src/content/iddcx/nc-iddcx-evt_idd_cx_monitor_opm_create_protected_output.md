@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_opm_create_protected_output.htm
 old-project: display
 ms.assetid: 16c6fda5-c2e1-4ee4-80f7-e970b1da0e01
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

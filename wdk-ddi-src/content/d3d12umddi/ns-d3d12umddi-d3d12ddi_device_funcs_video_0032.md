@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-device-funcs-video-0032.htm
 old-project: display
 ms.assetid: 2b71c48a-a028-4bfa-a8bd-ad612aa800ff
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_DEVICE_FUNCS_VIDEO_0032, D3D12DDI_DEVICE_FUNCS_VIDEO_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices

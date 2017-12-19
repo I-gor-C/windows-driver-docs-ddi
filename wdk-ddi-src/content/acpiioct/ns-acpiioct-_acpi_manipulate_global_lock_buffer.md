@@ -7,8 +7,8 @@ old-location: acpi\acpi_manipulate_global_lock_buffer.htm
 old-project: acpi
 ms.assetid: 841CC16D-BDFC-4A3F-9DDD-940A591EBEF2
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, *PACPI_MANIPULATE_GLOBAL_LOCK_BUFFER
+ms.date: 12/14/2017
+ms.keywords: _ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, *PACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, PACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -16,13 +16,16 @@ Winsplp.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [AddPortUI function](nf-winsplp-addportui.md) | A port monitor UI DLL's AddPortUI function adds a printer port, then obtains port configuration information from the user and sends it to the port monitor server DLL. |
 | [AddPrintDeviceObject function](nf-winsplp-addprintdeviceobject.md) | The AddPrintDeviceObject print provider function creates a device object for a print provider queue. |
 | [AppendPrinterNotifyInfoData function](nf-winsplp-appendprinternotifyinfodata.md) | The print spooler's AppendPrinterNotifyInfoData function adds the contents of a specified PRINTER_NOTIFY_INFO_DATA structure to a specified PRINTER_NOTIFY_INFO structure. |
 | [CallRouterFindFirstPrinterChangeNotification function](nf-winsplp-callrouterfindfirstprinterchangenotification.md) | . |
 | [ClosePort function](nf-winsplp-closeport.md) | A language or port monitor's ClosePort function closes a printer port. |
 | [ClosePrintProcessor function](nf-winsplp-closeprintprocessor.md) | A print processor's ClosePrintProcessor function completes the printing of a print job and makes the associated handle invalid. |
+| [ConfigurePortUI function](nf-winsplp-configureportui.md) | A port monitor UI DLL's ConfigurePortUI function obtains port configuration information from the user and sends it to the port monitor server DLL. |
 | [ControlPrintProcessor function](nf-winsplp-controlprintprocessor.md) | A print processor's ControlPrintProcessor function allows the spooler to control a print job. |
 | [CreatePrinterIC function](nf-winsplp-createprinteric.md) | . |
+| [DeletePortUI function](nf-winsplp-deleteportui.md) | A port monitor UI DLL's DeletePortUI function deletes a printer port. |
 | [DeletePrinterIC function](nf-winsplp-deleteprinteric.md) | . |
 | [DevQueryPrint function](nf-winsplp-devqueryprint.md) | . |
 | [GenerateCopyFilePaths function](nf-winsplp-generatecopyfilepaths.md) | A Point and Print DLL's GenerateCopyFilePaths function is used for modifying the source and destination paths used by print spoolers when they copy print queue-associated files to a print client. |
@@ -35,6 +38,7 @@ Winsplp.h contain these programming interfaces:
 | [InitializePrintMonitorUI function](nf-winsplp-initializeprintmonitorui.md) | A port monitor UI DLL's InitializePrintMonitorUI function supplies the print spooler with addresses of DLL functions. |
 | [InitializePrintProvidor function](nf-winsplp-initializeprintprovidor.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
 | [LogJobInfoForBranchOffice function](nf-winsplp-logjobinfoforbranchoffice.md) | Allows Branch Office clients to send job events to the host print server. |
+| [OpenPort function](nf-winsplp-openport.md) | A port monitor's OpenPort function opens a printer port. |
 | [OpenPrintProcessor function](nf-winsplp-openprintprocessor.md) | A print processor's OpenPrintProcessor function prepares the print processor for printing a job and returns a handle. |
 | [PartialReplyPrinterChangeNotification function](nf-winsplp-partialreplyprinterchangenotification.md) | The print spooler's PartialReplyPrinterChangeNotification function allows a print provider to update the spooler's database of printer changes associated with a notification handle. |
 | [PlayGdiScriptOnPrinterIC function](nf-winsplp-playgdiscriptonprinteric.md) | . |
@@ -78,15 +82,15 @@ Winsplp.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [LPBranchOfficeJobDataContainer structure](ns-winsplp-lpbranchofficejobdatacontainer.md) | This structure defines a container for one or more BranchOfficeJobData structures to sent to a server. |
-| [PBranchOfficeJobData structure](ns-winsplp-pbranchofficejobdata.md) | This structure contains the type of event to log (eEventType), the job ID, and the data required by the event. |
-| [PBranchOfficeJobDataError structure](ns-winsplp-pbranchofficejobdataerror.md) | This structure contains the necessary data for logging a branch office job failure event on a remote server. This is based on standard job-related data available to the spooler. |
-| [PBranchOfficeJobDataPipelineFailed structure](ns-winsplp-pbranchofficejobdatapipelinefailed.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Failed event on a remote server. This is based on standard job-related data available to the spooler. |
-| [PBranchOfficeJobDataPrinted structure](ns-winsplp-pbranchofficejobdataprinted.md) | Contains the necessary data for logging a branch office job completed event on a remote server. This is based on standard job-related data available to the spooler. |
-| [PBranchOfficeJobDataRendered structure](ns-winsplp-pbranchofficejobdatarendered.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Event on a remote server. This is based on job-related data available to the spooler. |
-| [PBranchOfficeLogOfflineFileFull structure](ns-winsplp-pbranchofficelogofflinefilefull.md) | Contains the necessary data for logging that the offline log archive on the current client overflowed at some point. |
-| [PMESSAGEBOX_PARAMS structure](ns-winsplp-pmessagebox_params.md) | The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box. |
-| [PSHOWUIPARAMS structure](ns-winsplp-pshowuiparams.md) | The SplPromptUIInUsersSession function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box. |
+| [BranchOfficeJobData structure](ns-winsplp-branchofficejobdata.md) | This structure contains the type of event to log (eEventType), the job ID, and the data required by the event. |
+| [BranchOfficeJobDataContainer structure](ns-winsplp-branchofficejobdatacontainer.md) | This structure defines a container for one or more BranchOfficeJobData structures to sent to a server. |
+| [BranchOfficeJobDataError structure](ns-winsplp-branchofficejobdataerror.md) | This structure contains the necessary data for logging a branch office job failure event on a remote server. This is based on standard job-related data available to the spooler. |
+| [BranchOfficeJobDataPipelineFailed structure](ns-winsplp-branchofficejobdatapipelinefailed.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Failed event on a remote server. This is based on standard job-related data available to the spooler. |
+| [BranchOfficeJobDataPrinted structure](ns-winsplp-branchofficejobdataprinted.md) | Contains the necessary data for logging a branch office job completed event on a remote server. This is based on standard job-related data available to the spooler. |
+| [BranchOfficeJobDataRendered structure](ns-winsplp-branchofficejobdatarendered.md) | Contains the necessary data for logging a branch office job Pipeline Rendering Event on a remote server. This is based on job-related data available to the spooler. |
+| [BranchOfficeLogOfflineFileFull structure](ns-winsplp-branchofficelogofflinefilefull.md) | Contains the necessary data for logging that the offline log archive on the current client overflowed at some point. |
+| [MESSAGEBOX_PARAMS structure](ns-winsplp-messagebox_params.md) | The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box. |
+| [SHOWUIPARAMS structure](ns-winsplp-showuiparams.md) | The SplPromptUIInUsersSession function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box. |
 | [_MONITOR structure](ns-winsplp-_monitor.md) | The MONITOR structure is obsolete and is supported only for compatibility reasons. |
 | [_MONITOR2 structure](ns-winsplp-_monitor2.md) | The MONITOR2 structure contains pointers to the functions defined by print monitors. |
 | [_MONITOREX structure](ns-winsplp-_monitorex.md) | The MONITOREX structure is obsolete and supported for compatibility purposes only. |

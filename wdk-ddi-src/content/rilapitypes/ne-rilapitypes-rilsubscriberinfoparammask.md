@@ -4,10 +4,10 @@ title: RILSUBSCRIBERINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsubscriberinfoparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: fe8b08d4-4cc1-49cd-b0f8-29e8b198b0d1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSUBSCRIBERINFOPARAMMASK, RILSUBSCRIBERINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

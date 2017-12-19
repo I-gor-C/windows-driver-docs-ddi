@@ -7,7 +7,7 @@ old-location: display\d3dddicaps_architecture_info.htm
 old-project: display
 ms.assetid: ad35cd3f-87bd-4d57-ab13-4cb2b268ad35
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDICAPS_ARCHITECTURE_INFO, D3DDDICAPS_ARCHITECTURE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

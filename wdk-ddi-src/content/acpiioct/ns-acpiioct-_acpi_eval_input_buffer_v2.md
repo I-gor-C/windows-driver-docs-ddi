@@ -7,8 +7,8 @@ old-location: acpi\acpi_eval_input_buffer_v2.htm
 old-project: acpi
 ms.assetid: EDB4862E-FAD4-4AB2-BF0C-CF4C6342F0E4
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2
+ms.date: 12/14/2017
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2, PACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

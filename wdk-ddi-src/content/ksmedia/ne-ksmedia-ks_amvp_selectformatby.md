@@ -7,7 +7,7 @@ old-location: stream\ks_amvp_selectformatby.htm
 old-project: stream
 ms.assetid: b7fb6752-9711-4922-a806-915c362bcffe
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KS_AMVP_SELECTFORMATBY, KS_AMVP_SELECTFORMATBY
 ms.prod: windows-hardware
 ms.technology: windows-devices

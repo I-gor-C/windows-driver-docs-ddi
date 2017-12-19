@@ -7,8 +7,8 @@ old-location: print\setresult_info.htm
 old-project: print
 ms.assetid: 54701f88-1145-4a50-bf5a-36be1d88355d
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
+ms.date: 12/14/2017
+ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, PSETRESULT_INFO, SETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

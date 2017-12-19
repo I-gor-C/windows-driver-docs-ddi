@@ -7,7 +7,7 @@ old-location: display\dxgk_transfervirtualflags.htm
 old-project: display
 ms.assetid: E5323A30-5BBE-4084-9F99-91FBDD680C12
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

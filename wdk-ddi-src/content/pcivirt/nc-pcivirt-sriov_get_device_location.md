@@ -7,8 +7,8 @@ old-location: pci\sriov_get_device_location.htm
 old-project: PCI
 ms.assetid: 705b52e3-f695-4c58-9ae2-5a806f1e2140
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

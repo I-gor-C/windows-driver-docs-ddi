@@ -4,10 +4,10 @@ title: _WDI_RX_THROTTLE_LEVEL
 author: windows-driver-content
 description: The WDI_RX_THROTTLE_LEVEL enumeration defines the RX throttle level. The interpretation and implementation mechanisms of these throttle levels are defined by the independent hardware vendor (IHV).
 old-location: netvista\wdi_rx_throttle_level.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 637c0892-8d73-45b7-b679-ff3a0ba78a9c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_RX_THROTTLE_LEVEL, WDI_RX_THROTTLE_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices

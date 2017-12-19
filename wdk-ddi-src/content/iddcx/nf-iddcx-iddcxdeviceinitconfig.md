@@ -7,7 +7,7 @@ old-location: display\iddcxdeviceinitconfig.htm
 old-project: display
 ms.assetid: 4789e848-bb95-43e1-9768-8f94a475f9c8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IddCxDeviceInitConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices

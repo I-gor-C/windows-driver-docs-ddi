@@ -7,8 +7,8 @@ old-location: kernel\power_platform_information.htm
 old-project: kernel
 ms.assetid: 0E62B57D-F9B1-4B01-A19E-9E2DBC387578
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _POWER_PLATFORM_INFORMATION, POWER_PLATFORM_INFORMATION, *PPOWER_PLATFORM_INFORMATION
+ms.date: 12/15/2017
+ms.keywords: _POWER_PLATFORM_INFORMATION, PPOWER_PLATFORM_INFORMATION, *PPOWER_PLATFORM_INFORMATION, POWER_PLATFORM_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

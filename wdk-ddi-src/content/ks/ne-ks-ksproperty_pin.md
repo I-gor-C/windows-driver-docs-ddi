@@ -7,7 +7,7 @@ old-location: stream\ksproperty_pin.htm
 old-project: stream
 ms.assetid: C73B306C-A6DA-469A-984C-3FC605CC5E19
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSPROPERTY_PIN, KSPROPERTY_PIN
 ms.prod: windows-hardware
 ms.technology: windows-devices

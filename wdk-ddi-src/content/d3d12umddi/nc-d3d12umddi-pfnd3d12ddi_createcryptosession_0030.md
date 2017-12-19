@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createcryptosession_0030.htm
 old-project: display
 ms.assetid: 3AA323B1-C4A3-4630-A664-69FB3E5C6456
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

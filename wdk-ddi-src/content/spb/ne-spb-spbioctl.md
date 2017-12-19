@@ -7,8 +7,8 @@ old-location: spb\spbioctl.htm
 old-project: SPB
 ms.assetid: 83260550-B364-4790-BDB5-5C6E5AD76A72
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: SpbIoctl, *PSpbIoctl, SpbIoctl
+ms.date: 12/14/2017
+ms.keywords: SpbIoctl, SpbIoctl, *PSpbIoctl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

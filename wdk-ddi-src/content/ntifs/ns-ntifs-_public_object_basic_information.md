@@ -7,8 +7,8 @@ old-location: ifsk\public_object_basic_information.htm
 old-project: ifsk
 ms.assetid: 2190f88e-6905-4e58-9523-2b6d4864c776
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _PUBLIC_OBJECT_BASIC_INFORMATION, PUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _PUBLIC_OBJECT_BASIC_INFORMATION, PPUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION, PUBLIC_OBJECT_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

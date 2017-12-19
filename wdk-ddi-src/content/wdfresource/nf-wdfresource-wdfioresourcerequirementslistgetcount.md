@@ -7,7 +7,7 @@ old-location: wdf\wdfioresourcerequirementslistgetcount.htm
 old-project: wdf
 ms.assetid: 00a79e57-5915-49a3-b11f-223cc93c2e99
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfIoResourceRequirementsListGetCount
 ms.prod: windows-hardware
 ms.technology: windows-devices

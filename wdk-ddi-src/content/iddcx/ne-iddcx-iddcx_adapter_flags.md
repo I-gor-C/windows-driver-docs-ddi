@@ -7,7 +7,7 @@ old-location: display\iddcx_adapter_flags.htm
 old-project: display
 ms.assetid: 832ca4fe-1040-4f07-8c84-f576e5ce6423
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_ADAPTER_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

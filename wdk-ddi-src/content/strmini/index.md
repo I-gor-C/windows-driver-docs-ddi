@@ -47,7 +47,7 @@ Strmini.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PKSSCATTER_GATHER structure](ns-strmini-pksscatter_gather.md) | . |
+| [KSSCATTER_GATHER structure](ns-strmini-ksscatter_gather.md) | . |
 | [_HW_CLOCK_OBJECT structure](ns-strmini-_hw_clock_object.md) | The HW_CLOCK_OBJECT structure describes the clock associated with a stream. |
 | [_HW_EVENT_DESCRIPTOR structure](ns-strmini-_hw_event_descriptor.md) | When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. |
 | [_HW_INITIALIZATION_DATA structure](ns-strmini-_hw_initialization_data.md) | The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. |

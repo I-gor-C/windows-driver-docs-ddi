@@ -7,7 +7,7 @@ old-location: kernel\read_port_uchar.htm
 old-project: kernel
 ms.assetid: a58e55f5-d657-43bf-afef-05af7c6c02cc
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

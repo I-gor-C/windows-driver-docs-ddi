@@ -6,10 +6,10 @@ UID: NA:
 
 ## -description
 
-This header is used by Installable file system, Windows kernel, Networking drivers for Windows Vista and later. For more information, see
+This header is used by Installable file system, Windows kernel, NetVista. For more information, see
 - [Installable file system](../_ifsk/index.md)
 - [Windows kernel](../_kernel/index.md)
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+- [NetVista](../_NetVista/index.md)
 
 Ntifs.h contain these programming interfaces:
 
@@ -269,6 +269,33 @@ Ntifs.h contain these programming interfaces:
 | [MmIsRecursiveIoFault function](nf-ntifs-mmisrecursiveiofault.md) | The MmIsRecursiveIoFault routine determines whether the current page fault is occurring during an I/O operation. |
 | [MmPrefetchPages function](nf-ntifs-mmprefetchpages.md) | The MmPrefetchPages routine reads groups of pages from secondary storage in the optimal fashion. |
 | [MmSetAddressRangeModified function](nf-ntifs-mmsetaddressrangemodified.md) | The MmSetAddressRangeModified routine marks currently valid pages in the specified range of the system cache as modified. |
+| [NtAllocateVirtualMemory function](nf-ntifs-ntallocatevirtualmemory.md) | The ZwAllocateVirtualMemory routine reserves, commits, or both, a region of pages within the user-mode virtual address space of a specified process. |
+| [NtClose function](nf-ntifs-ntclose.md) | The ZwClose routine closes an object handle. |
+| [NtCreateFile function](nf-ntifs-ntcreatefile.md) | The ZwCreateFile routine creates a new file or opens an existing file. |
+| [NtDeviceIoControlFile function](nf-ntifs-ntdeviceiocontrolfile.md) | The ZwDeviceIoControlFile routine sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified operation. |
+| [NtDuplicateToken function](nf-ntifs-ntduplicatetoken.md) | The ZwDuplicateToken function creates a handle to a new access token that duplicates an existing token. This function can create either a primary token or an impersonation token. |
+| [NtFlushBuffersFileEx function](nf-ntifs-ntflushbuffersfileex.md) | The ZwFlushBuffersFileEx routine is called by a file system filter driver to send a flush request for a given file to the file system. An optional flush operation flag can be set to control how file data is written to storage. |
+| [NtFreeVirtualMemory function](nf-ntifs-ntfreevirtualmemory.md) | The ZwFreeVirtualMemory routine releases, decommits, or both, a region of pages within the virtual address space of a specified process. |
+| [NtFsControlFile function](nf-ntifs-ntfscontrolfile.md) | The ZwFsControlFile routine sends a control code directly to a specified file system or file system filter driver, causing the corresponding driver to perform the specified action. |
+| [NtLockFile function](nf-ntifs-ntlockfile.md) | The ZwLockFile routine requests a byte-range lock for the specified file. |
+| [NtOpenFile function](nf-ntifs-ntopenfile.md) | The ZwOpenFile routine opens an existing file, directory, device, or volume. |
+| [NtOpenProcessTokenEx function](nf-ntifs-ntopenprocesstokenex.md) | The ZwOpenProcessTokenEx routine opens the access token associated with a process. |
+| [NtOpenThreadTokenEx function](nf-ntifs-ntopenthreadtokenex.md) | The ZwOpenThreadTokenEx routine opens the access token associated with a thread. |
+| [NtQueryDirectoryFile function](nf-ntifs-ntquerydirectoryfile.md) | The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle. |
+| [NtQueryInformationFile function](nf-ntifs-ntqueryinformationfile.md) | The ZwQueryInformationFile routine returns various kinds of information about a file object. |
+| [NtQueryInformationToken function](nf-ntifs-ntqueryinformationtoken.md) | The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. |
+| [NtQueryObject function](nf-ntifs-ntqueryobject.md) | The ZwQueryObject routine provides information about a supplied object. |
+| [NtQueryQuotaInformationFile function](nf-ntifs-ntqueryquotainformationfile.md) | The ZwQueryQuotaInformationFile routine retrieves quota entries associated with the volume specified by the FileHandle parameter. |
+| [NtQuerySecurityObject function](nf-ntifs-ntquerysecurityobject.md) | The ZwQuerySecurityObject routine retrieves a copy of an object's security descriptor. |
+| [NtQueryVirtualMemory function](nf-ntifs-ntqueryvirtualmemory.md) | The ZwQueryVirtualMemory routine determines the state, protection, and type of a region of pages within the virtual address space of the subject process. |
+| [NtQueryVolumeInformationFile function](nf-ntifs-ntqueryvolumeinformationfile.md) | The ZwQueryVolumeInformationFile routine retrieves information about the volume associated with a given file, directory, storage device, or volume. |
+| [NtReadFile function](nf-ntifs-ntreadfile.md) | The ZwReadFile routine reads data from an open file. |
+| [NtSetInformationFile function](nf-ntifs-ntsetinformationfile.md) | The ZwSetInformationFile routine changes various kinds of information about a file object. |
+| [NtSetInformationToken function](nf-ntifs-ntsetinformationtoken.md) | The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information. |
+| [NtSetQuotaInformationFile function](nf-ntifs-ntsetquotainformationfile.md) | The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume. |
+| [NtSetSecurityObject function](nf-ntifs-ntsetsecurityobject.md) | The ZwSetSecurityObject routine sets an object's security state. |
+| [NtUnlockFile function](nf-ntifs-ntunlockfile.md) | The ZwUnlockFile routine unlocks a byte-range lock in a file. |
+| [NtWriteFile function](nf-ntifs-ntwritefile.md) | The ZwWriteFile routine writes data to an open file. |
 | [ObIsKernelHandle function](nf-ntifs-obiskernelhandle.md) | The ObIsKernelHandle routine determines whether the specified handle is a kernel handle. |
 | [ObOpenObjectByPointer function](nf-ntifs-obopenobjectbypointer.md) | The ObOpenObjectByPointer function opens an object referenced by a pointer and returns a handle to the object. |
 | [ObQueryNameString function](nf-ntifs-obquerynamestring.md) | The ObQueryNameString routine supplies the name, if there is one, of a given object to which the caller has a pointer. |
@@ -446,7 +473,6 @@ Ntifs.h contain these programming interfaces:
 | [ZwOpenProcessTokenEx function](nf-ntifs-zwopenprocesstokenex.md) | The ZwOpenProcessTokenEx routine opens the access token associated with a process. |
 | [ZwOpenThreadTokenEx function](nf-ntifs-zwopenthreadtokenex.md) | The ZwOpenThreadTokenEx routine opens the access token associated with a thread. |
 | [ZwQueryDirectoryFile function](nf-ntifs-zwquerydirectoryfile.md) | The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle. |
-| [ZwQueryDirectoryFileEx function](nf-ntifs-zwquerydirectoryfileex.md) | The ZwQueryDirectoryFileEx routine returns information about files in the directory specified by the FileHandle parameter. |
 | [ZwQueryEaFile function](nf-ntifs-zwqueryeafile.md) | The ZwQueryEaFile routine returns information about extended-attribute (EA) values for a file. |
 | [ZwQueryInformationToken function](nf-ntifs-zwqueryinformationtoken.md) | The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. |
 | [ZwQueryObject function](nf-ntifs-zwqueryobject.md) | The ZwQueryObject routine provides information about a supplied object. |
@@ -475,7 +501,7 @@ Ntifs.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PMARK_HANDLE_INFO32 structure](ns-ntifs-pmark_handle_info32.md) | Contains information that is used to mark a specified file or directory, and its update sequence number (USN) change journal record with data about changes. |
+| [MARK_HANDLE_INFO32 structure](ns-ntifs-mark_handle_info32.md) | Contains information that is used to mark a specified file or directory, and its update sequence number (USN) change journal record with data about changes. |
 | [_ACCESS_ALLOWED_ACE structure](ns-ntifs-_access_allowed_ace.md) | The ACCESS_ALLOWED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) that controls access to an object. |
 | [_ACCESS_DENIED_ACE structure](ns-ntifs-_access_denied_ace.md) | The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object. |
 | [_ACE_HEADER structure](ns-ntifs-_ace_header.md) | The ACE_HEADER structure describes the type and size of an access-control entry (ACE). |
@@ -556,6 +582,7 @@ Ntifs.h contain these programming interfaces:
 | [_REPARSE_GUID_DATA_BUFFER structure](ns-ntifs-_reparse_guid_data_buffer.md) | The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point. |
 | [_SECURITY_DESCRIPTOR structure](ns-ntifs-_security_descriptor.md) | The SECURITY_DESCRIPTOR structure specifies the security information that is associated with an object. For more information, see the reference page for SECURITY_DESCRIPTOR in the Installable File System documentation. |
 | [_SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT structure](ns-ntifs-_set_dax_alloc_alignment_hint_input.md) | This structure is for internal use only and should not be called from your code. |
+| [_SE_EXPORTS structure](ns-ntifs-_se_exports.md) | The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers. |
 | [_SE_SID structure](ns-ntifs-_se_sid.md) | The SE_SID union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation. |
 | [_SE_TOKEN_USER structure](ns-ntifs-_se_token_user.md) | The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation. |
 | [_SID_AND_ATTRIBUTES structure](ns-ntifs-_sid_and_attributes.md) | The SID_AND_ATTRIBUTES structure represents a security identifier (SID) and its attributes. SIDs are used to uniquely identify users or groups. |
@@ -611,3 +638,37 @@ Ntifs.h contain these programming interfaces:
 | [_SID_NAME_USE enumeration](ne-ntifs-_sid_name_use.md) | The SID_NAME_USE enumeration type contains values that specify the type of a security identifier (SID). |
 | [_TOKEN_INFORMATION_CLASS enumeration](ne-ntifs-_token_information_class.md) | The TOKEN_INFORMATION_CLASS enumeration type contains values that specify the type of information being assigned to or retrieved from an access token. |
 | [_TOKEN_TYPE enumeration](ne-ntifs-_token_type.md) | The TOKEN_TYPE enumeration type contains values that differentiate between a primary token and an impersonation token. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [CcCopyWriteWontFlush macro](nf-ntifs-cccopywritewontflush~r1.md) | The CcCopyWriteWontFlush macro determines whether the amount of data to be copied in a call to CcCopyWrite is small enough not to require immediate flushing to disk if CcCopyWrite is called with Wait set to FALSE. |
+| [FsRtlAllocatePoolWithQuotaTag macro](nf-ntifs-fsrtlallocatepoolwithquotatag.md) | The FsRtlAllocatePoolWithQuotaTag routine allocates pool memory, charging quota against the current process. |
+| [FsRtlAllocatePoolWithTag macro](nf-ntifs-fsrtlallocatepoolwithtag.md) | The FsRtlAllocatePoolWithTag routine allocates pool memory. |
+| [FsRtlAreThereCurrentFileLocks macro](nf-ntifs-fsrtlaretherecurrentfilelocks.md) | The FsRtlAreThereCurrentFileLocks macro checks whether any byte range locks exist for the specified file. |
+| [FsRtlCompleteRequest macro](nf-ntifs-fsrtlcompleterequest.md) | The FsRtlCompleteRequest macro completes an IRP with the specified status. |
+| [FsRtlFastLock macro](nf-ntifs-fsrtlfastlock.md) | The FsRtlFastLock macro is used by file systems and filter drivers to request a byte-range lock for a file stream. |
+| [FsRtlGetPerStreamContextPointer macro](nf-ntifs-fsrtlgetperstreamcontextpointer.md) | The FsRtlGetPerStreamContextPointer macro returns the file system's stream context for a file stream. |
+| [FsRtlInitPerStreamContext macro](nf-ntifs-fsrtlinitperstreamcontext.md) | The FsRtlInitPerStreamContext macro initializes a filter driver context structure. |
+| [FsRtlIsAnsiCharacterLegal macro](nf-ntifs-fsrtlisansicharacterlegal.md) | The FsRtlIsAnsiCharacterLegal macro determines whether a character is a legal ANSI character. |
+| [FsRtlIsAnsiCharacterLegalFat macro](nf-ntifs-fsrtlisansicharacterlegalfat.md) | The FsRtlIsAnsiCharacterLegalFat macro determines whether an ANSI character is legal for FAT file names. |
+| [FsRtlIsAnsiCharacterLegalHpfs macro](nf-ntifs-fsrtlisansicharacterlegalhpfs.md) | The FsRtlIsAnsiCharacterLegalHpfs macro determines whether an ANSI character is legal for HPFS file names. |
+| [FsRtlIsAnsiCharacterLegalNtfs macro](nf-ntifs-fsrtlisansicharacterlegalntfs.md) | The FsRtlIsAnsiCharacterLegalNtfs macro determines whether an ANSI character is legal for NTFS file names. |
+| [FsRtlIsAnsiCharacterLegalNtfsStream macro](nf-ntifs-fsrtlisansicharacterlegalntfsstream.md) | The FsRtlIsAnsiCharacterLegalNtfsStream macro determines whether an ANSI character is legal for NTFS stream names. |
+| [FsRtlIsAnsiCharacterWild macro](nf-ntifs-fsrtlisansicharacterwild.md) | The FsRtlIsAnsiCharacterWild macro determines whether an ANSI character is a wildcard character. |
+| [FsRtlIsLeadDbcsCharacter macro](nf-ntifs-fsrtlisleaddbcscharacter.md) | The FsRtlIsLeadDbcsCharacter macro determines whether a character is a lead byte (the first byte of a character) in a double-byte character set (DBCS). |
+| [FsRtlIsUnicodeCharacterWild macro](nf-ntifs-fsrtlisunicodecharacterwild.md) | The FsRtlIsUnicodeCharacterWild macro determines whether a Unicode character is a wildcard character. |
+| [FsRtlLookupPerStreamContext macro](nf-ntifs-fsrtllookupperstreamcontext.md) | The FsRtlLookupPerStreamContext macro retrieves a per-stream context structure for a file stream. |
+| [FsRtlSetupAdvancedHeaderEx macro](nf-ntifs-fsrtlsetupadvancedheaderex.md) | The FsRtlSetupAdvancedHeaderEx macro is used by file systems to initialize an FSRTL_ADVANCED_FCB_HEADER structure for use with both stream and file contexts. |
+| [FsRtlSupportsPerFileContexts macro](nf-ntifs-fsrtlsupportsperfilecontexts.md) | The FsRtlSupportsPerFileContexts macro checks if per file context information is supported by the file system that is associated with a specified FILE_OBJECT. |
+| [FsRtlTestAnsiCharacter macro](nf-ntifs-fsrtltestansicharacter.md) | The FsRtlTestAnsiCharacter macro determines whether an ANSI or double-byte character set (DBCS) character meets the specified criteria. |
+| [IoSizeOfIrp macro](nf-ntifs-iosizeofirp.md) | The IoSizeOfIrp routine determines the size in bytes for an IRP, given the number of stack locations in the IRP. |
+| [IsReparseTagMicrosoft macro](nf-ntifs-isreparsetagmicrosoft.md) | The IsReparseTagMicrosoft macro determines whether a reparse point tag indicates a Microsoft reparse point. |
+| [IsReparseTagNameSurrogate macro](nf-ntifs-isreparsetagnamesurrogate.md) | The IsReparseTagNameSurrogate macro determines whether a tag's associated reparse point is a surrogate for another named entity, such as a volume mount point. |
+| [RtlFillMemoryUlonglong macro](nf-ntifs-rtlfillmemoryulonglong~r1.md) | The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value. |
+| [RtlOemStringToCountedUnicodeSize macro](nf-ntifs-rtloemstringtocountedunicodesize.md) | The RtlOemStringToCountedUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a counted Unicode string. |
+| [RtlOemStringToUnicodeSize macro](nf-ntifs-rtloemstringtounicodesize.md) | The RtlOemStringToUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a null-terminated Unicode string. |
+| [RtlUnicodeStringToOemSize macro](nf-ntifs-rtlunicodestringtooemsize.md) | The RtlUnicodeStringToOemSize routine determines the size, in bytes, that a given Unicode string will be after it is translated into an OEM string. |
+| [SeDeleteClientSecurity macro](nf-ntifs-sedeleteclientsecurity.md) | The SeDeleteClientSecurity routine deletes a client security context. |
+| [SeQuerySubjectContextToken macro](nf-ntifs-sequerysubjectcontexttoken.md) | The SeQuerySubjectContextToken macro retrieves the access token for a security subject context. |

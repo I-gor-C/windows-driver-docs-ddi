@@ -7,7 +7,7 @@ old-location: display\d3dddicb_createhwqueue.htm
 old-project: display
 ms.assetid: 085CEF61-2C2E-4F9C-B143-2E2D58C51643
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDICB_CREATEHWQUEUE, D3DDDICB_CREATEHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices

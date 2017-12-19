@@ -4,10 +4,10 @@ title: UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT function
 author: windows-driver-content
 description: Initializes the UCMTCPCI_PORT_CONTROLLER_ALERT_DATA structure.
 old-location: buses\ucmtcpci_port_controller_alert_data_init.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 7c3276cc-9194-4c18-b1d8-2795efbeb357
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_portattributes.htm
 old-project: storage
 ms.assetid: ce967b15-723f-4ab7-8a79-8234291d1950
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES
+ms.date: 12/15/2017
+ms.keywords: _MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES, PMS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

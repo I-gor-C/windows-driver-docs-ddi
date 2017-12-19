@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_allocation_info.htm
 old-project: display
 ms.assetid: ce3610ab-a927-45e7-8ceb-3f38b5f50f00
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO, D3DDDI_MULTIPLANE_ALLOCATION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

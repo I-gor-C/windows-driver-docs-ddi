@@ -7,7 +7,7 @@ old-location: print\drvdriverevent.htm
 old-project: print
 ms.assetid: 84d1f438-b6ee-4199-89ae-9384601203b3
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: DrvDriverEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices

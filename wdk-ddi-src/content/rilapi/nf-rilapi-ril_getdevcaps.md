@@ -4,10 +4,10 @@ title: RIL_GetDevCaps function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getdevcaps.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: eb239b03-7e46-4091-adff-86ed95a06704
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetDevCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: print\drvdevicecapabilities.htm
 old-project: print
 ms.assetid: a8ea236d-42f9-45c5-b2f6-035e0ba28f75
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: DrvDeviceCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices

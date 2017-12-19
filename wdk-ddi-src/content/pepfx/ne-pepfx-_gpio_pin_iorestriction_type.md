@@ -7,7 +7,7 @@ old-location: kernel\gpio_pin_iorestriction_type.htm
 old-project: kernel
 ms.assetid: 381A59EE-BA1C-4810-842B-1D3E4D964486
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _GPIO_PIN_IORESTRICTION_TYPE, GPIO_PIN_IORESTRICTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

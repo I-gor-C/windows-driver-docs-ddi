@@ -4,11 +4,11 @@ title: RILMSGMWISUMMARYLIST
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwisummarylist.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b698f9df-5a67-4ddf-9956-21fbd4f6f385
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST
+ms.date: 12/14/2017
+ms.keywords: RILMSGMWISUMMARYLIST, LPRILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_state.htm
 old-project: wdf
 ms.assetid: 5d0a2303-df2b-45fe-9c88-df4bb19a2a9f
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_DEVICE_STATE, WDF_DEVICE_STATE, *PWDF_DEVICE_STATE
+ms.date: 12/15/2017
+ms.keywords: _WDF_DEVICE_STATE, WDF_DEVICE_STATE, *PWDF_DEVICE_STATE, PWDF_DEVICE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

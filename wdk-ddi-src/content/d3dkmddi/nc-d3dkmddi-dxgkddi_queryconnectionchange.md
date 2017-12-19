@@ -7,7 +7,7 @@ old-location: display\dxgkddi_queryconnectionchange.htm
 old-project: display
 ms.assetid: 8C09B692-3439-4ACD-942D-F7A107E2B4DA
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

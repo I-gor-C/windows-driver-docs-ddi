@@ -4,11 +4,11 @@ title: RILPOSITIONINFOLTE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpositioninfolte_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4910571e-af1d-4bcf-a2d9-0d5383530171
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILPOSITIONINFOLTE, RILPOSITIONINFOLTE, *LPRILPOSITIONINFOLTE
+ms.date: 12/14/2017
+ms.keywords: RILPOSITIONINFOLTE, *LPRILPOSITIONINFOLTE, RILPOSITIONINFOLTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

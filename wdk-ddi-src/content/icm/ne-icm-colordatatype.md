@@ -7,7 +7,7 @@ old-location: print\colordatatype.htm
 old-project: print
 ms.assetid: ff7c9a81-3445-4a9e-aee3-2c63aafb0c82
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: COLORDATATYPE, COLORDATATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

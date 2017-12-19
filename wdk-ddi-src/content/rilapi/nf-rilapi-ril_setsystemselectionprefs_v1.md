@@ -4,10 +4,10 @@ title: RIL_SetSystemSelectionPrefs_V1 function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_setsystemselectionprefs_v1.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 736ba738-eb28-471c-bf65-236217f5aa11
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SetSystemSelectionPrefs_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices

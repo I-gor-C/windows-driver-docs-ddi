@@ -4,10 +4,10 @@ title: RILRMCVTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrmcvtype_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7517d3fd-723d-4fd7-b5ce-3d08443b8f59
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILRMCVTYPE, RILRMCVTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

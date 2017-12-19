@@ -4,11 +4,11 @@ title: _NDIS_OBJECT_HEADER
 author: windows-driver-content
 description: The NDIS_OBJECT_HEADER structure packages the object type, version, and size information that is required in many NDIS 6.0 structures.
 old-location: netvista\ndis_object_header.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 59d1a9b0-a4d0-4a24-aa2f-2167b0f53caa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER
+ms.date: 12/14/2017
+ms.keywords: _NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER, PNDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

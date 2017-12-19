@@ -7,7 +7,7 @@ old-location: stream\ksunserializeobjectpropertiesfromregistry.htm
 old-project: stream
 ms.assetid: e08ddef7-5942-4943-9dbe-9658279892f0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsUnserializeObjectPropertiesFromRegistry
 ms.prod: windows-hardware
 ms.technology: windows-devices

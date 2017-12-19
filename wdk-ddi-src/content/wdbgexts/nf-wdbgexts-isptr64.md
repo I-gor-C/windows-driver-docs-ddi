@@ -4,10 +4,10 @@ title: IsPtr64 function
 author: windows-driver-content
 description: The IsPtr64 function determines if the target uses 64-bit pointers.
 old-location: debugger\isptr64.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 0474a8dc-e2e3-4c84-8058-6229bf0e9d62
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: IsPtr64
 ms.prod: windows-hardware
 ms.technology: windows-devices

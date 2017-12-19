@@ -6,8 +6,8 @@ UID: NA:
 
 ## -description
 
-This header is used by Imaging devices. For more information, see
-- [Imaging devices](../_image/index.md)
+This header is used by Image. For more information, see
+- [Image](../_Image/index.md)
 
 Wiamdef.h contain these programming interfaces:
 
@@ -83,3 +83,12 @@ Wiamdef.h contain these programming interfaces:
 | [WIAS_LTRACE macro](nf-wiamdef-wias_ltrace.md) | The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the WIAS_TRACE macro be used instead.The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file. |
 | [WIAS_LWARNING macro](nf-wiamdef-wias_lwarning.md) | The WIAS_LWARNING macro is obsolete for Windows Vista and later.The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file. |
 | [WIAS_TRACE macro](nf-wiamdef-wias_trace.md) | The WIAS_TRACE macro writes a diagnostic message to the Wiatrace.log file. |
+
+## Methods
+
+| Title   | Description   |
+| ---- |:---- |
+| [CWiaLogProc::CWiaLogProc method](nf-wiamdef-cwialogproc-cwialogproc.md) | The CWiaLogProc constructor is called when the function or method being logged is entered. |
+| [CWiaLogProc::~CWiaLogProc method](nf-wiamdef-cwialogproc-~cwialogproc.md) | The ~CWiaLogProc destructor is called when the function or method being logged is exited. |
+| [CWiaLogProcEx::CWiaLogProcEx method](nf-wiamdef-cwialogprocex-cwialogprocex.md) | The CWiaLogProcEx constructor is called when the function or method being logged is entered. |
+| [CWiaLogProcEx::~CWiaLogProcEx method](nf-wiamdef-cwialogprocex-~cwialogprocex.md) | The~CWiaLogProcEx destructor is called when the function or method being logged is exited. |

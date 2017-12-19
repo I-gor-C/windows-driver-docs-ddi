@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpntopology_interface_pfnupdatepathsupportinfo.htm
 old-project: display
 ms.assetid: affe9ab2-49ef-4284-b441-49c311158827
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

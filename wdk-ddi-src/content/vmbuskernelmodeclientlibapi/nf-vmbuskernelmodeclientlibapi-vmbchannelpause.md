@@ -4,10 +4,10 @@ title: VmbChannelPause function
 author: windows-driver-content
 description: The VmbChannelPause function moves a channel into the paused state, which prevents new I/O.
 old-location: netvista\vmbchannelpause.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 434CA5F7-24D4-40E7-AE77-C0732D3FBBFF
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelPause
 ms.prod: windows-hardware
 ms.technology: windows-devices

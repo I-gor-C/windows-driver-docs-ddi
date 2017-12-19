@@ -4,10 +4,10 @@ title: wiauGetValidFormats function
 author: windows-driver-content
 description: The wiauGetValidFormats function calls the IWiaMiniDrv::drvGetWiaFormatInfo method and makes a list of valid formats, using a specified tymed value.
 old-location: image\wiaugetvalidformats.htm
-old-project: image
+old-project: Image
 ms.assetid: 8bf1d76a-2e5b-4e9a-85fc-187fea72d38c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiauGetValidFormats
 ms.prod: windows-hardware
 ms.technology: windows-devices

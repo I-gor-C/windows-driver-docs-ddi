@@ -7,8 +7,8 @@ old-location: acpi\lpi_state_descriptor.htm
 old-project: acpi
 ms.assetid: B52012DB-922A-43A2-A175-7F7887C290F1
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _LPI_STATE_DESCRIPTOR, *PLPI_STATE_DESCRIPTOR, LPI_STATE_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: _LPI_STATE_DESCRIPTOR, *PLPI_STATE_DESCRIPTOR, LPI_STATE_DESCRIPTOR, PLPI_STATE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

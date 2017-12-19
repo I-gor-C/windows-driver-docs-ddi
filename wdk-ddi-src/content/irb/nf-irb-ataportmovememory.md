@@ -7,7 +7,7 @@ old-location: storage\ataportmovememory.htm
 old-project: storage
 ms.assetid: c9d724bb-cc65-428c-ad48-21b227f3c8b1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: AtaPortMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices

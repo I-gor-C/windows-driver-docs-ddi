@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreateallocation2.htm
 old-project: display
 ms.assetid: 416DE730-44A6-4BA3-BFC2-C11A179AD422
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTCreateAllocation2
 ms.prod: windows-hardware
 ms.technology: windows-devices

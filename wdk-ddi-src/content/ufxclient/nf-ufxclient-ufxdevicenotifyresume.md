@@ -4,10 +4,10 @@ title: UfxDeviceNotifyResume function
 author: windows-driver-content
 description: Notifies UFX about a USB bus resume event.
 old-location: buses\ufxdevicenotifyresume.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: A89E9E65-937D-455F-A718-A6BC7611BB8F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UfxDeviceNotifyResume
 ms.prod: windows-hardware
 ms.technology: windows-devices

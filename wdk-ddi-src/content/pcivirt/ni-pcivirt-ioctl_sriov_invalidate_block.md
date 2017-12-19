@@ -7,8 +7,8 @@ old-location: pci\ioctl-sriov-invalidate-block.htm
 old-project: PCI
 ms.assetid: b6f0e65f-c8e4-418f-a4b2-a7037368d5a3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.date: 12/14/2017
+ms.keywords: _SRIOV_PF_EVENT, PSRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -4,10 +4,10 @@ title: RILGSMKIND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgsmkind.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ad88382b-bfb0-46c4-9db7-9adb1ee074a4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILGSMKIND, RILGSMKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices

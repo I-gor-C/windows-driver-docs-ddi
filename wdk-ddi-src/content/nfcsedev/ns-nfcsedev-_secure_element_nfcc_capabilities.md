@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_nfcc_capabilities.htm
 old-project: nfpdrivers
 ms.assetid: D1F9588B-02D9-49B0-B45F-AF5C140D74E4
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_NFCC_CAPABILITIES, *PSECURE_ELEMENT_NFCC_CAPABILITIES, SECURE_ELEMENT_NFCC_CAPABILITIES
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_NFCC_CAPABILITIES, PSECURE_ELEMENT_NFCC_CAPABILITIES, *PSECURE_ELEMENT_NFCC_CAPABILITIES, SECURE_ELEMENT_NFCC_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

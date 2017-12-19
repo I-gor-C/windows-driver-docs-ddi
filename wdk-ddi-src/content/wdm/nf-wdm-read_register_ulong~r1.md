@@ -7,7 +7,7 @@ old-location: kernel\read_register_ulong.htm
 old-project: kernel
 ms.assetid: a462734c-cac6-4de0-95c1-810766ef1644
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

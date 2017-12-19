@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_reset_snapshot_info.htm
 old-project: storage
 ms.assetid: b22b00de-4711-4896-a21c-33fbc7b1d64e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

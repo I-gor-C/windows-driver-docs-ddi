@@ -7,8 +7,8 @@ old-location: storage\sm_setrnidmgmtinfo_out.htm
 old-project: storage
 ms.assetid: 30bb4e82-3a51-4d58-87aa-2e1545a9244f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

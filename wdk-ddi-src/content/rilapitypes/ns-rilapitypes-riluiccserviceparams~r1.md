@@ -4,11 +4,11 @@ title: RILUICCSERVICEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccserviceparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 56fba38d-6c5f-4b75-98b6-213a42f47bbb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

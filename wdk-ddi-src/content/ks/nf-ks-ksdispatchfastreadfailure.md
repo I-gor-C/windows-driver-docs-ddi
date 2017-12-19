@@ -7,7 +7,7 @@ old-location: stream\ksdispatchfastreadfailure.htm
 old-project: stream
 ms.assetid: 7e0c72ce-0959-4835-ac1a-3f37869cc81f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsDispatchFastReadFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: biometric\winbio_blank_payload.htm
 old-project: biometric
 ms.assetid: 0bc28853-1c00-42d3-a269-198093d64dd7
 ms.author: windowsdriverdev
-ms.date: 11/13/2017
-ms.keywords: _WINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD, *PWINBIO_BLANK_PAYLOAD
+ms.date: 12/14/2017
+ms.keywords: _WINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD, *PWINBIO_BLANK_PAYLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

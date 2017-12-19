@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-open-protected-resource-session-0030.htm
 old-project: display
 ms.assetid: d5f0a089-c6cb-444d-a959-ee8a5a024ea7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDIARG_OPEN_PROTECTED_RESOURCE_SESSION_0030, D3D12DDIARG_OPEN_PROTECTED_RESOURCE_SESSION_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices

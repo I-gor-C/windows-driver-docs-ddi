@@ -4,11 +4,11 @@ title: _WDI_TXRX_TARGET_CONFIGURATION
 author: windows-driver-content
 description: The WDI_TXRX_TARGET_CONFIGURATION structure defines the target configuration.
 old-location: netvista\wdi_txrx_target_configuration.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5a2d8bdf-cfc2-4724-aab3-0277edb477e7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION
+ms.date: 12/14/2017
+ms.keywords: _WDI_TXRX_TARGET_CONFIGURATION, PWDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

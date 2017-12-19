@@ -7,8 +7,8 @@ old-location: ifsk\fs_information_class.htm
 old-project: ifsk
 ms.assetid: 8A8F938D-8F6B-47E0-963F-8E8B14033802
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FSINFOCLASS, *PFS_INFORMATION_CLASS, FS_INFORMATION_CLASS
+ms.date: 12/14/2017
+ms.keywords: _FSINFOCLASS, *PFS_INFORMATION_CLASS, FS_INFORMATION_CLASS, PFS_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

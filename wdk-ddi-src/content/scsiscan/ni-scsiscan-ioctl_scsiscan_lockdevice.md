@@ -4,11 +4,11 @@ title: IOCTL_SCSISCAN_LOCKDEVICE
 author: windows-driver-content
 description: Reserved for use by Microsoft.
 old-location: image\ioctl_scsiscan_lockdevice.htm
-old-project: image
+old-project: Image
 ms.assetid: 93e5d446-4f18-4468-9591-8951d3c85dd3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.date: 12/14/2017
+ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

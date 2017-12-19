@@ -7,7 +7,7 @@ old-location: display\dxgiddi_multiplane_overlay_allocation_info.htm
 old-project: display
 ms.assetid: 2736b955-1b25-4ded-a75a-19a1c47f61ee
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DXGIDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO, DXGIDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

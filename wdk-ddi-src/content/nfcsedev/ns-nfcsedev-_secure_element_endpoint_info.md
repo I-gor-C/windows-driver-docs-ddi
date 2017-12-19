@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_endpoint_info.htm
 old-project: nfpdrivers
 ms.assetid: C1D812BD-55F0-44F7-BCC8-81CC758EDEF3
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO, *PSECURE_ELEMENT_ENDPOINT_INFO
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO, PSECURE_ELEMENT_ENDPOINT_INFO, *PSECURE_ELEMENT_ENDPOINT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

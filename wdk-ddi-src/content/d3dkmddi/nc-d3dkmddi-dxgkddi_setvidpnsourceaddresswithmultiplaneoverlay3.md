@@ -7,7 +7,7 @@ old-location: display\dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay3.htm
 old-project: display
 ms.assetid: B4B6C5F0-AB67-4D30-B6A5-76B7596D22B6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

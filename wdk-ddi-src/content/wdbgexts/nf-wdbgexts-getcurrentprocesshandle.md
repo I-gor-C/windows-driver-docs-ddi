@@ -4,10 +4,10 @@ title: GetCurrentProcessHandle function
 author: windows-driver-content
 description: The GetCurrentProcessHandle function returns the system handle for the current process.
 old-location: debugger\getcurrentprocesshandle.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: b6780f1c-e093-4d91-8909-dabb1ecaefaa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: GetCurrentProcessHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices

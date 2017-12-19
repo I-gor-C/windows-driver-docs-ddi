@@ -7,7 +7,7 @@ old-location: display\iddcx_endpoint_diagnostic_info.htm
 old-project: display
 ms.assetid: 70be09ed-5633-464b-b311-f671efe83a54
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_ENDPOINT_DIAGNOSTIC_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

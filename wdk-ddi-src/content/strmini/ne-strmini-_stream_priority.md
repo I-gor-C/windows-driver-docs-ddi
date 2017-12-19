@@ -7,8 +7,8 @@ old-location: stream\stream_priority.htm
 old-project: stream
 ms.assetid: 790A00A5-1107-4686-B690-80D07B69AF62
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STREAM_PRIORITY, STREAM_PRIORITY, *PSTREAM_PRIORITY
+ms.date: 12/14/2017
+ms.keywords: _STREAM_PRIORITY, STREAM_PRIORITY, PSTREAM_PRIORITY, *PSTREAM_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

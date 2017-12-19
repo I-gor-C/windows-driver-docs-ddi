@@ -4,11 +4,11 @@ title: RILPHONEBOOKREADYSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookreadystate.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: cd71234b-4b46-4b7b-953b-32e6f014af03
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE
+ms.date: 12/14/2017
+ms.keywords: RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE, LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

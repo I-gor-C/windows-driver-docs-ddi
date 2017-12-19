@@ -7,8 +7,8 @@ old-location: print\oem_dmextraheader.htm
 old-project: print
 ms.assetid: fecefdbc-3036-4991-900c-203ae8be254b
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER
+ms.date: 12/14/2017
+ms.keywords: _OEM_DMEXTRAHEADER, POEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

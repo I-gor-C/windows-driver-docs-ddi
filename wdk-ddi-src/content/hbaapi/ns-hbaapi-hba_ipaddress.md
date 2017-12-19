@@ -7,8 +7,8 @@ old-location: storage\hba_ipaddress.htm
 old-project: storage
 ms.assetid: c3f79350-29e8-4e31-a31d-359c9781777d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: HBA_ipaddress, HBA_IPADDRESS, *PHBA_IPADDRESS
+ms.date: 12/15/2017
+ms.keywords: HBA_ipaddress, HBA_IPADDRESS, *PHBA_IPADDRESS, PHBA_IPADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

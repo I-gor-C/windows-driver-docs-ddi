@@ -7,7 +7,7 @@ old-location: display\d3dddi_updategpuvirtualaddress_operation_type.htm
 old-project: display
 ms.assetid: 47B53DDA-E04B-4DA5-BEAB-8515B6683AE4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

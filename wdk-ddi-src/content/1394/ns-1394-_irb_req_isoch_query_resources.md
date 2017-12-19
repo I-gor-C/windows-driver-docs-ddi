@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_query_resources.htm
 old-project: IEEE
 ms.assetid: B9CDFB62-32CF-497A-BF0F-1E4FBCA36E82
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_QUERY_RESOURCES, IRB_REQ_ISOCH_QUERY_RESOURCES
 ms.prod: windows-hardware
 ms.technology: windows-devices

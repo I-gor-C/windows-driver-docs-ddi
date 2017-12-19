@@ -7,7 +7,7 @@ old-location: display\d3dkmt_pnp_key_type.htm
 old-project: display
 ms.assetid: 48B173D5-56C3-4611-BC55-CB7A25D05352
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_PNP_KEY_TYPE, D3DKMT_PNP_KEY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

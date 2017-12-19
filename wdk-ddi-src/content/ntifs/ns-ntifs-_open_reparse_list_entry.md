@@ -7,8 +7,8 @@ old-location: ifsk\open_reparse_list_entry_.htm
 old-project: ifsk
 ms.assetid: A6D28F60-FA38-45EA-9E3C-D2E6F899333E
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY, *POPEN_REPARSE_LIST_ENTRY
+ms.date: 12/14/2017
+ms.keywords: _OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY, *POPEN_REPARSE_LIST_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

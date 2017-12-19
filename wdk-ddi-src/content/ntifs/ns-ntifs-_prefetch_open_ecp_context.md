@@ -7,8 +7,8 @@ old-location: ifsk\prefetch_open_ecp_context.htm
 old-project: ifsk
 ms.assetid: 199a3003-a7dd-48a3-aa76-550332be26f3
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _PREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT, PREFETCH_OPEN_ECP_CONTEXT
+ms.date: 12/14/2017
+ms.keywords: _PREFETCH_OPEN_ECP_CONTEXT, PPREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT, PREFETCH_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

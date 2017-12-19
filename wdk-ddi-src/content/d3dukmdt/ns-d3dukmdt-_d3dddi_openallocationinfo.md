@@ -7,7 +7,7 @@ old-location: display\d3dddi_openallocationinfo.htm
 old-project: display
 ms.assetid: cd50602a-c4aa-410b-9ed6-56d7237571cd
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDI_OPENALLOCATIONINFO, D3DDDI_OPENALLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

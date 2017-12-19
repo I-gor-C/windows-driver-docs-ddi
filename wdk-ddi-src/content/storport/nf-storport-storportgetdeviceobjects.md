@@ -7,7 +7,7 @@ old-location: storage\storportgetdeviceobjects.htm
 old-project: storage
 ms.assetid: e48b5048-5f5f-4efb-b7bf-2dd183074516
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortGetDeviceObjects
 ms.prod: windows-hardware
 ms.technology: windows-devices

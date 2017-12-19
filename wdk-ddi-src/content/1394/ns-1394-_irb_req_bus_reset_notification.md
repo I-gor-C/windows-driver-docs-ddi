@@ -7,7 +7,7 @@ old-location: ieee\irb_req_bus_reset_notification.htm
 old-project: IEEE
 ms.assetid: 3EF9BB26-81B2-4ED7-A934-AF3E73B650A0
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_BUS_RESET_NOTIFICATION, IRB_REQ_BUS_RESET_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

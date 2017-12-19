@@ -4,11 +4,11 @@ title: RILIMSSTATUS_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimsstatus_v1_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e2abab6d-d9c5-4342-8436-fd05a2a298ef
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILIMSSTATUS_V1, RILIMSSTATUS_V1, *LPRILIMSSTATUS_V1
+ms.date: 12/14/2017
+ms.keywords: RILIMSSTATUS_V1, *LPRILIMSSTATUS_V1, RILIMSSTATUS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

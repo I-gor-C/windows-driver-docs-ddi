@@ -4,10 +4,10 @@ title: _WDI_FIPS_MODE
 author: windows-driver-content
 description: The WDI_FIPS_MODE enumeration defines values that specify if FIPS mode is enabled or not.
 old-location: netvista\wdi_fips_mode.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 88EE4C63-C9D8-41D2-800E-9FFD5EF4962A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_FIPS_MODE, WDI_FIPS_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

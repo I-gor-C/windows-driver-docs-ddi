@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_post_composition_with_source.htm
 old-project: display
 ms.assetid: F997E3DB-630D-41C8-B659-36376E05A6B7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_WITH_SOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

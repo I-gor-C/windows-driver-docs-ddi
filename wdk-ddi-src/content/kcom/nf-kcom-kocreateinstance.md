@@ -7,7 +7,7 @@ old-location: stream\kocreateinstance.htm
 old-project: stream
 ms.assetid: ee719cbe-0933-4adc-b5c7-62b66f2bf4e1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KoCreateInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices

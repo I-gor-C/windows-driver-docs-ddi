@@ -7,8 +7,8 @@ old-location: storage\storage_device_form_factor.htm
 old-project: storage
 ms.assetid: EE59767B-2504-4E5F-A442-60EEBEE70B59
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_DEVICE_FORM_FACTOR, *PSTORAGE_DEVICE_FORM_FACTOR, STORAGE_DEVICE_FORM_FACTOR
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_DEVICE_FORM_FACTOR, PSTORAGE_DEVICE_FORM_FACTOR, *PSTORAGE_DEVICE_FORM_FACTOR, STORAGE_DEVICE_FORM_FACTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

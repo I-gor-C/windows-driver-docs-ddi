@@ -7,8 +7,8 @@ old-location: display\dxgk_opm_interface_3.htm
 old-project: display
 ms.assetid: 0BD6BA91-7F46-482B-B808-DEB8A23A0B84
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3
+ms.date: 12/15/2017
+ms.keywords: _DXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3, PDXGK_OPM_INTERFACE_3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

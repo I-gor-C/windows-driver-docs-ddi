@@ -7,8 +7,8 @@ old-location: storage\storage_spec_version.htm
 old-project: storage
 ms.assetid: E7E80C4E-C002-4F00-AF7E-6B8DDA337323
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_SPEC_VERSION, *PSTORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_SPEC_VERSION, PSTORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION, *PSTORAGE_SPEC_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,11 +4,11 @@ title: _DEBUG_CACHED_SYMBOL_INFO
 author: windows-driver-content
 description: Defines information about cached symbols.
 old-location: debugger\debug_cached_symbol_info.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: CC7914B6-DCE1-45D1-84D3-5FF1449AD565
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO, PDEBUG_CACHED_SYMBOL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

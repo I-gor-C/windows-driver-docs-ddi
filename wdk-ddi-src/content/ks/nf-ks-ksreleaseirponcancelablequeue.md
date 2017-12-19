@@ -7,7 +7,7 @@ old-location: stream\ksreleaseirponcancelablequeue.htm
 old-project: stream
 ms.assetid: 797e0821-2354-4dd5-b2ee-428d654feb40
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsReleaseIrpOnCancelableQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices

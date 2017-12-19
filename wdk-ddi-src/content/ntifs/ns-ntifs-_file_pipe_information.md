@@ -7,8 +7,8 @@ old-location: ifsk\file_pipe_information.htm
 old-project: ifsk
 ms.assetid: d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION, PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

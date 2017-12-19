@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_roitype.htm
 old-project: stream
 ms.assetid: 29458793-35DA-4CE4-AAD9-E1DD90C28E5C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSCAMERA_EXTENDEDPROP_ROITYPE, KSCAMERA_EXTENDEDPROP_ROITYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

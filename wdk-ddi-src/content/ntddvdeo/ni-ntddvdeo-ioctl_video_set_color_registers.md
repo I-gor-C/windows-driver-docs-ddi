@@ -7,8 +7,8 @@ old-location: display\ioctl_video_set_color_registers.htm
 old-project: display
 ms.assetid: efaea94e-0cfd-49a7-b8dc-452aa006b024
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.date: 12/15/2017
+ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

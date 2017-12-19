@@ -4,10 +4,10 @@ title: RILGEOLOCATIONTYPEMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgeolocationtypemask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ffbd2c6d-537a-44f7-a071-21c073d96264
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILGEOLOCATIONTYPEMASK, RILGEOLOCATIONTYPEMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

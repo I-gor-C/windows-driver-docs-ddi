@@ -7,7 +7,7 @@ old-location: print\wcscreateiccprofile.htm
 old-project: print
 ms.assetid: fbe37d6c-9b91-46d8-9d29-1de3ef542c19
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: WcsCreateIccProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices

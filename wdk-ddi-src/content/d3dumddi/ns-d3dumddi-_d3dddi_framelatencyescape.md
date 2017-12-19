@@ -7,7 +7,7 @@ old-location: display\d3dddi_framelatencyescape.htm
 old-project: display
 ms.assetid: 19395349-375E-46AF-BCCF-FF5C92B374C4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDI_FRAMELATENCYESCAPE, D3DDDI_FRAMELATENCYESCAPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: ifsk\atomic_create_ecp_context.htm
 old-project: ifsk
 ms.assetid: CFA879CC-6124-4E1C-B440-358455A5E6EF
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _ATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT, *PATOMIC_CREATE_ECP_CONTEXT
+ms.date: 12/14/2017
+ms.keywords: _ATOMIC_CREATE_ECP_CONTEXT, PATOMIC_CREATE_ECP_CONTEXT, *PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

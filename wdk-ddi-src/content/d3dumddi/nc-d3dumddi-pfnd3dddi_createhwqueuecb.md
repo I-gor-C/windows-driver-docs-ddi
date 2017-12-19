@@ -7,7 +7,7 @@ old-location: display\pfnd3dddi_createhwqueuecb.htm
 old-project: display
 ms.assetid: 1BA2E4DD-3E91-4D2E-AA90-9C85D53EE9E3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

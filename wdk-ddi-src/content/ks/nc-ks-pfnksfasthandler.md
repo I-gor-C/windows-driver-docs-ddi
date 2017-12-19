@@ -7,7 +7,7 @@ old-location: stream\kstrfasthandler.htm
 old-project: stream
 ms.assetid: 9a72cdb5-2b57-4331-9836-82653732decf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,7 +96,7 @@ Specifies an aligned structure that is used to return error status and informati
 
 
 ## -remarks
-The minidriver provides an entry point for this routine in <a href="stream.ksfastproperty_item">KSFASTPROPERTY_ITEM</a> or <a href="stream.ksfastmethod_item">KSFASTMETHOD_ITEM</a>.
+The minidriver provides an entry point for this routine in <a href="..\ks\ns-ks-ksfastproperty_item.md">KSFASTPROPERTY_ITEM</a> or <a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>.
 
 
 ## -requirements

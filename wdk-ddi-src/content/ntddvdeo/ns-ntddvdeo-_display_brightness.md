@@ -7,8 +7,8 @@ old-location: display\display_brightness.htm
 old-project: display
 ms.assetid: 0e72c1a7-5712-46fc-a65f-20183830cb72
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS, *PDISPLAY_BRIGHTNESS
+ms.date: 12/15/2017
+ms.keywords: _DISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS, *PDISPLAY_BRIGHTNESS, PDISPLAY_BRIGHTNESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

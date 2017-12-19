@@ -4,10 +4,10 @@ title: _DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS
 author: windows-driver-content
 description: The completion parameters for a Group Owner (GO) negotiation confirmation are specified in a DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS structure.
 old-location: netvista\dot11_go_negotiation_confirmation_send_complete_parameters.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: CD8427DB-256C-4C34-8D14-2C1AD4C297ED
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, *PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: kernel\wnode_too_small.htm
 old-project: kernel
 ms.assetid: eb3d8e2a-20f6-41fc-a220-de93eb83f359
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: tagWNODE_TOO_SMALL, *PWNODE_TOO_SMALL, WNODE_TOO_SMALL
+ms.date: 12/15/2017
+ms.keywords: tagWNODE_TOO_SMALL, WNODE_TOO_SMALL, *PWNODE_TOO_SMALL, PWNODE_TOO_SMALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -94,5 +94,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_TOO_SMALL structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_TOO_SMALL structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

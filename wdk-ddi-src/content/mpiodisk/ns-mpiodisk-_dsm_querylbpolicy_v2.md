@@ -7,8 +7,8 @@ old-location: storage\dsm_querylbpolicy_v2.htm
 old-project: storage
 ms.assetid: f02f3442-e9c2-4f60-833d-e470de62118e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DSM_QueryLBPolicy_V2, DSM_QueryLBPolicy_V2, *PDSM_QueryLBPolicy_V2
+ms.date: 12/15/2017
+ms.keywords: _DSM_QueryLBPolicy_V2, *PDSM_QueryLBPolicy_V2, DSM_QueryLBPolicy_V2, PDSM_QueryLBPolicy_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

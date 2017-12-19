@@ -7,7 +7,7 @@ old-location: display\d3dkmt_destroyhwcontext.htm
 old-project: display
 ms.assetid: DFFFE90A-C505-466A-B415-AA6C6352421B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_DESTROYHWCONTEXT, D3DKMT_DESTROYHWCONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices

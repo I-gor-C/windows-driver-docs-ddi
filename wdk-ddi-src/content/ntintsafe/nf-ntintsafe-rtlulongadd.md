@@ -7,7 +7,7 @@ old-location: kernel\rtlulongadd.htm
 old-project: kernel
 ms.assetid: 03E5C0DB-E245-43E2-80C0-0C1D67673038
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlULongAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

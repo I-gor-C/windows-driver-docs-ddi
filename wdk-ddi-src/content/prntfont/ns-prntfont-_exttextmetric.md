@@ -7,8 +7,8 @@ old-location: print\exttextmetric.htm
 old-project: print
 ms.assetid: d3d2397c-71c3-4904-a1ad-96a94698e50c
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _EXTTEXTMETRIC, *PEXTTEXTMETRIC, EXTTEXTMETRIC
+ms.date: 12/14/2017
+ms.keywords: _EXTTEXTMETRIC, PEXTTEXTMETRIC, EXTTEXTMETRIC, *PEXTTEXTMETRIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

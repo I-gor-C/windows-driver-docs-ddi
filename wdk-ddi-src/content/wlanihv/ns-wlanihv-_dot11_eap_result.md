@@ -4,11 +4,11 @@ title: _DOT11_EAP_RESULT
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_eap_result.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 90898f5c-ffc1-4e6c-a8f8-ba839f449082
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_EAP_RESULT, *PDOT11_EAP_RESULT, DOT11_EAP_RESULT
+ms.date: 12/14/2017
+ms.keywords: _DOT11_EAP_RESULT, PDOT11_EAP_RESULT, DOT11_EAP_RESULT, *PDOT11_EAP_RESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

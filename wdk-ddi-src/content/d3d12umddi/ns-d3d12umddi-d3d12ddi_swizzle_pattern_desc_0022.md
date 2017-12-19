@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_swizzle_pattern_desc_0022.htm
 old-project: display
 ms.assetid: A52C8293-C037-4062-9A63-AD69237F7B3D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_SWIZZLE_PATTERN_DESC_0022, D3D12DDI_SWIZZLE_PATTERN_DESC_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices

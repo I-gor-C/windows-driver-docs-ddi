@@ -4,10 +4,10 @@ title: RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationinfomodificationtype.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 37b18047-7818-4e57-b25a-3c958106e215
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLMODIFICATIONINFOMODIFICATIONTYPE, RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

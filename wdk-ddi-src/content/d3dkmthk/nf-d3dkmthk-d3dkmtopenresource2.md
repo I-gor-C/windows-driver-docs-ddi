@@ -7,7 +7,7 @@ old-location: display\d3dkmtopenresource2.htm
 old-project: display
 ms.assetid: 7D496443-F68D-41E6-B377-BC9E6F6ABB83
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTOpenResource2
 ms.prod: windows-hardware
 ms.technology: windows-devices

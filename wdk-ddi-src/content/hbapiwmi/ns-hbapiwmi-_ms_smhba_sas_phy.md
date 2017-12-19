@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_sas_phy.htm
 old-project: storage
 ms.assetid: 9bbf2f63-4479-47ee-a014-78b13deccb4c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY
+ms.date: 12/15/2017
+ms.keywords: _MS_SMHBA_SAS_PHY, PMS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

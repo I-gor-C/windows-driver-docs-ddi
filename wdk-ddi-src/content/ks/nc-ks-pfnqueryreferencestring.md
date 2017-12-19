@@ -7,7 +7,7 @@ old-location: stream\kstrqueryreferencestring.htm
 old-project: stream
 ms.assetid: 08fd750f-19cc-4d78-a26b-9f790c5c3acf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ None.
 
 
 ## -remarks
-The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="stream.bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.
+The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="..\ks\ns-ks-bus_interface_reference.md">BUS_INTERFACE_REFERENCE</a> structure.
 
 
 ## -requirements

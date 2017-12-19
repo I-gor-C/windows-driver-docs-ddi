@@ -7,7 +7,7 @@ old-location: stream\varenum.htm
 old-project: stream
 ms.assetid: 00F015F4-708F-4272-A903-56C44DC6646E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: VARENUM,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: GetFieldOffset function
 author: windows-driver-content
 description: The GetFieldOffset function returns the offset of a member from the beginning of a structure.
 old-location: debugger\getfieldoffset.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 3e5e782b-1a72-446d-9d15-c0f513f3440c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: GetFieldOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices

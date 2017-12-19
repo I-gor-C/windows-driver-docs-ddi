@@ -7,7 +7,7 @@ old-location: print\extdevicemode.htm
 old-project: print
 ms.assetid: dade9d25-7143-4566-adc1-0c97cb508c07
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: ExtDeviceMode
 ms.prod: windows-hardware
 ms.technology: windows-devices

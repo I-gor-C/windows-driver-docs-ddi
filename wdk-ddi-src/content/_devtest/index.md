@@ -75,3 +75,19 @@ For the programming guide, see [Driver test tools](https://docs.microsoft.com/en
 | Title   | Description   |
 | ---- |:---- |
 | [_PCW_CALLBACK_TYPE enumeration](..\wdm\ne-wdm-_pcw_callback_type.md) | The PCW_CALLBACK_TYPE enumeration defines the notification type to send to the registered provider of the counter set. A provider passes a pointer to this enumeration as a parameter to the PcwCallback function. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [ASSERTMSG macro](..\wdm\nf-wdm-assertmsg.md) | ASSERTMSG tests an expression. If the expression is false, it breaks into the kernel debugger and sends it the specified message. |
+| [KdBreakPointWithStatus macro](..\wdm\nf-wdm-kdbreakpointwithstatus.md) | The KdBreakPointWithStatus macro breaks into the kernel debugger and sends the value of Status to the debugger. |
+| [KdPrint macro](..\wdm\nf-wdm-kdprint.md) | The KdPrint macro sends a message to the kernel debugger. |
+| [KdPrintEx macro](..\wdm\nf-wdm-kdprintex.md) | The KdPrintEx macro sends a string to the kernel debugger if the conditions you specify are met.A call to KdPrintEx requires double parentheses. |
+| [WppRecorderConfigure macro](..\wpprecorder\nf-wpprecorder-wpprecorderconfigure.md) | The WppRecorderConfigure method enables or disables the default log to which WPP prints. |
+| [WppRecorderDumpLiveDriverData macro](..\wpprecorder\nf-wpprecorder-wpprecorderdumplivedriverdata.md) | The WppRecorderDumpLiveDriverData method gets the buffer associated with the specified Inflight Trace Recorder log. |
+| [WppRecorderGetTriageInfo macro](..\wpprecorder\nf-wpprecorder-wpprecordergettriageinfo.md) | The WppRecorderGetTriageInfo. |
+| [WppRecorderLinkCounters macro](..\wpprecorder\nf-wpprecorder-wpprecorderlinkcounters.md) | The WppRecorderLinkCounters. |
+| [WppRecorderLogCreate macro](..\wpprecorder\nf-wpprecorder-wpprecorderlogcreate.md) | The WppRecorderLogCreate method creates a buffer to contain the recorder log. |
+| [WppRecorderLogDelete macro](..\wpprecorder\nf-wpprecorder-wpprecorderlogdelete.md) | The WppRecorderLogDelete method deletes the specified recorder log. |
+| [WppRecorderLogSetIdentifier macro](..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.md) | The WppRecorderLogSetIdentifier method sets a string identifier for the recorder log. |

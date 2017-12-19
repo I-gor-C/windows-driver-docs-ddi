@@ -7,7 +7,7 @@ old-location: stream\ksforwardirp.htm
 old-project: stream
 ms.assetid: 6db0c232-d90b-4187-94c0-a840f87cf999
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsForwardIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices

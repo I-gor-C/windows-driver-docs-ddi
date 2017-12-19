@@ -7,7 +7,7 @@ old-location: storage\ioctl_ehstor_device_enumerate_pdos.htm
 old-project: storage
 ms.assetid: 900A8CAB-287D-4D92-B4CB-2959E87C8E67
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _PDO_TYPE, PDO_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtouint.htm
 old-project: kernel
 ms.assetid: 81B87CA6-01D8-4D54-87A6-6311260C06CB
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlLongLongToUInt
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: acpi\acpi_eval_output_buffer_v2.htm
 old-project: acpi
 ms.assetid: 355A600E-F207-4A3F-80AE-EA2DAE810DA3
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
+ms.date: 12/14/2017
 ms.keywords: _ACPI_EVAL_OUTPUT_BUFFER_V2, ACPI_EVAL_OUTPUT_BUFFER_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices

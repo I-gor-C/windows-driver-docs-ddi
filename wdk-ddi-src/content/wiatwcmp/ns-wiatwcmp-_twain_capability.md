@@ -4,11 +4,11 @@ title: _TWAIN_CAPABILITY
 author: windows-driver-content
 description: The TWAIN_CAPABILITY structure holds information used when a TWAIN-compatible application communicates with a WIA driver.
 old-location: image\twain_capability.htm
-old-project: image
+old-project: Image
 ms.assetid: 79a2155d-eb06-4095-9fe6-b95d93e46211
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _TWAIN_CAPABILITY, TWAIN_CAPABILITY, *PTWAIN_CAPABILITY
+ms.date: 12/14/2017
+ms.keywords: _TWAIN_CAPABILITY, TWAIN_CAPABILITY, PTWAIN_CAPABILITY, *PTWAIN_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

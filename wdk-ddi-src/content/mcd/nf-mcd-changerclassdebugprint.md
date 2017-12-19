@@ -7,7 +7,7 @@ old-location: storage\changerclassdebugprint.htm
 old-project: storage
 ms.assetid: 452377f1-a926-4f43-8168-bea11622902e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: ChangerClassDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\pfnwaitforsynchronizationobjectfromcpucb.htm
 old-project: display
 ms.assetid: 304A5BCE-19E6-4F92-B840-FD3BE1CFB856
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

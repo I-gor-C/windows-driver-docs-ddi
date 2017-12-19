@@ -4,11 +4,11 @@ title: _DEBUG_SYMBOL_SOURCE_ENTRY
 author: windows-driver-content
 description: The DEBUG_SYMBOL_SOURCE_ENTRY structure describes a section of the source code and a corresponding region of the target's memory.
 old-location: debugger\debug_symbol_source_entry.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 595d5a90-6ec8-4841-a38b-c0cbf26ed082
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_SYMBOL_SOURCE_ENTRY, *PDEBUG_SYMBOL_SOURCE_ENTRY, DEBUG_SYMBOL_SOURCE_ENTRY
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_SYMBOL_SOURCE_ENTRY, *PDEBUG_SYMBOL_SOURCE_ENTRY, DEBUG_SYMBOL_SOURCE_ENTRY, PDEBUG_SYMBOL_SOURCE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

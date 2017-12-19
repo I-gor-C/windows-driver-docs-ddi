@@ -7,7 +7,7 @@ old-location: stream\kscreatedefaultallocatorex.htm
 old-project: stream
 ms.assetid: 63b2d9a3-7f8e-4c03-8c0c-a4555c27e39c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsCreateDefaultAllocatorEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -93,7 +93,7 @@ Returns STATUS_SUCCESS, else an error on default allocator creation failure. Doe
 
 
 ## -remarks
-Before calling this routine, the <b>KSCREATE_ITEM_IRP_STORAGE(Irp)</b> macro should return a pointer to the <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> structure that is the create item for this allocator. <b>KsCreateDefaultAllocatorEx</b> sets <b>FsContext</b> to point to the return value of this macro. As such, <b>FsContext</b> can later be used for security descriptor queries or changes.
+Before calling this routine, the <b>KSCREATE_ITEM_IRP_STORAGE(Irp)</b> macro should return a pointer to the <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a> structure that is the create item for this allocator. <b>KsCreateDefaultAllocatorEx</b> sets <b>FsContext</b> to point to the return value of this macro. As such, <b>FsContext</b> can later be used for security descriptor queries or changes.
 
 You can find <b>KSCREATE_ITEM_IRP_STORAGE(Irp)</b> and related macros in <i>ks.h</i>.
 

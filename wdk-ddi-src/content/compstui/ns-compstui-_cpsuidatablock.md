@@ -7,8 +7,8 @@ old-location: print\cpsuidatablock.htm
 old-project: print
 ms.assetid: c5b488ac-dd8d-4484-81ca-b64fdf517100
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _CPSUIDATABLOCK, *PCPSUIDATABLOCK, CPSUIDATABLOCK
+ms.date: 12/14/2017
+ms.keywords: _CPSUIDATABLOCK, CPSUIDATABLOCK, PCPSUIDATABLOCK, *PCPSUIDATABLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

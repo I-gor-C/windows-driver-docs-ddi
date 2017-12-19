@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_mode.htm
 old-project: display
 ms.assetid: 95e1778a-4f65-40ee-8ad2-f797ce9e95b0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_MONITOR_MODE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

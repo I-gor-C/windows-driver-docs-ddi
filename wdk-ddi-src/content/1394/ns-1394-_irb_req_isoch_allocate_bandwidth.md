@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_allocate_bandwidth.htm
 old-project: IEEE
 ms.assetid: 68118E69-5644-4FE4-A75B-CE0FC427BA06
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH, IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
 ms.prod: windows-hardware
 ms.technology: windows-devices

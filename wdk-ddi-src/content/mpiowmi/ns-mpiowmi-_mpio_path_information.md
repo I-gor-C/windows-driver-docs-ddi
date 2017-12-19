@@ -7,8 +7,8 @@ old-location: storage\mpio_path_information.htm
 old-project: storage
 ms.assetid: 12383ae0-69c8-4546-9560-08aa4a50de8e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_PATH_INFORMATION, *PMPIO_PATH_INFORMATION, MPIO_PATH_INFORMATION
+ms.date: 12/15/2017
+ms.keywords: _MPIO_PATH_INFORMATION, PMPIO_PATH_INFORMATION, *PMPIO_PATH_INFORMATION, MPIO_PATH_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

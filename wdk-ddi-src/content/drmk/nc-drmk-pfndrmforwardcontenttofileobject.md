@@ -7,8 +7,8 @@ old-location: audio\pfndrmforwardcontenttofileobject.htm
 old-project: audio
 ms.assetid: 00ACCBFF-FEDE-4223-8503-4D75426E2BD6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WDI_TX_METADATA, *PWDI_TX_METADATA, WDI_TX_METADATA
+ms.date: 12/14/2017
+ms.keywords: _WDI_TX_METADATA, WDI_TX_METADATA, PWDI_TX_METADATA, *PWDI_TX_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

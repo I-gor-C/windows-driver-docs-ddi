@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceindicatewakestatus.htm
 old-project: wdf
 ms.assetid: 6581a309-1a6d-4795-a55c-327215ea18ee
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceIndicateWakeStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices

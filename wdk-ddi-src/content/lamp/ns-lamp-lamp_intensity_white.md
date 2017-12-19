@@ -7,7 +7,7 @@ old-location: stream\lamp_intensity_white.htm
 old-project: stream
 ms.assetid: BDE53311-589F-4458-9510-1B02F1BD0289
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_INTENSITY_WHITE, LAMP_INTENSITY_WHITE
 ms.prod: windows-hardware
 ms.technology: windows-devices

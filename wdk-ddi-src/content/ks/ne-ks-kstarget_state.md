@@ -7,7 +7,7 @@ old-location: stream\kstarget_state.htm
 old-project: stream
 ms.assetid: 4D18A0F0-51E9-4871-B8C1-32FAA518FAEC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSTARGET_STATE, KSTARGET_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

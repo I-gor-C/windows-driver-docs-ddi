@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongtochar.htm
 old-project: kernel
 ms.assetid: 8C6356A2-9E4A-4654-9FB3-EC11894A24AB
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlULongLongToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

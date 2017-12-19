@@ -4,10 +4,10 @@ title: VmbPacketRestore function
 author: windows-driver-content
 description: The VmbPacketRestore function restores packet from a buffer that contains saved packet context.
 old-location: netvista\vmbpacketrestore.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: CE8BBFB7-FC6C-458B-89EC-355A6DD18399
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbPacketRestore
 ms.prod: windows-hardware
 ms.technology: windows-devices

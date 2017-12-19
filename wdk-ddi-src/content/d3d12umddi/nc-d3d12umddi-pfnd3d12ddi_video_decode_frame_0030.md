@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_video_decode_frame_0030.htm
 old-project: display
 ms.assetid: 6BC35C7C-8E27-45FF-B406-BCE6E486E115
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

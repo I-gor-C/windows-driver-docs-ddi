@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createvideodecoder.htm
 old-project: display
 ms.assetid: 5E0B6A5A-FA6E-4722-B442-FE74437224B3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

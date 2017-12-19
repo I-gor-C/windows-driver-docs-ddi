@@ -7,7 +7,7 @@ old-location: ifsk\ioreplacefileobjectname.htm
 old-project: ifsk
 ms.assetid: 1550a35f-2733-4ee8-9715-d82f96eb5da7
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: IoReplaceFileObjectName
 ms.prod: windows-hardware
 ms.technology: windows-devices

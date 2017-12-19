@@ -4,11 +4,11 @@ title: _NDIS_MEDIUM
 author: windows-driver-content
 description: The NDIS_MEDIUM enumeration type identifies the medium types that NDIS drivers support.
 old-location: netvista\ndis_medium.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3e4aa7fb-0dd4-4c45-ab5e-21342e9fb4d8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_MEDIUM, *PNDIS_MEDIUM, NDIS_MEDIUM
+ms.date: 12/14/2017
+ms.keywords: _NDIS_MEDIUM, PNDIS_MEDIUM, NDIS_MEDIUM, *PNDIS_MEDIUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

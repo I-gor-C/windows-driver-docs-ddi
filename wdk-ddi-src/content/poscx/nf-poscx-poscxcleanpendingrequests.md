@@ -7,7 +7,7 @@ old-location: pos\poscxcleanpendingrequests.htm
 old-project: pos
 ms.assetid: FD6036D5-C316-43E6-8C37-067F5705BCB6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: PosCxCleanPendingRequests
 ms.prod: windows-hardware
 ms.technology: windows-devices

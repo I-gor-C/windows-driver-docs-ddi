@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_caps.htm
 old-project: display
 ms.assetid: 269d9a51-bc01-4de4-b160-35c725c174f7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_CAPS, DXGI_DDI_MULTIPLANE_OVERLAY_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

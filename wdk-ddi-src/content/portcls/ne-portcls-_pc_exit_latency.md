@@ -7,8 +7,8 @@ old-location: audio\pc_exit_latency.htm
 old-project: audio
 ms.assetid: 9D1DA7D6-4200-4B5A-9EA5-0455DF56D6D8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PC_EXIT_LATENCY, PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+ms.date: 12/14/2017
+ms.keywords: _PC_EXIT_LATENCY, *PPC_EXIT_LATENCY, PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

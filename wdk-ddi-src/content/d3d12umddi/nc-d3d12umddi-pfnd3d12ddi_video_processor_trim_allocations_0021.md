@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_video_processor_trim_allocations.htm
 old-project: display
 ms.assetid: 505B3502-FC2D-47FB-B8CD-3D7DE9ED4770
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

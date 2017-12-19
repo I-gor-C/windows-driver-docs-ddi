@@ -4,10 +4,10 @@ title: RILUICCCMDPARAMETERSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicccmdparametersparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 56b6b8e6-529d-4480-bce8-ae94d09d1643
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCCMDPARAMETERSPARAMMASK, RILUICCCMDPARAMETERSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

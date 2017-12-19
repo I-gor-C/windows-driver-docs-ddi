@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixsessiontype.htm
 old-project: sensors
 ms.assetid: CE611168-76B3-496F-91C7-932E1F259529
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_FIXSESSIONTYPE, GNSS_FIXSESSIONTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql: <= DISPATCH_LEVEL
 
 
 ## -description
-This enumeration indicates the type of location fix needed by the GNSS adapter when it issues an <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_start_fixsession.md">IOCTL_GNSS_START_FIXSESSION</a> control code. This enumeration is set within the <a href="sensors.gnss_fixsession_param">GNSS_FIXSESSION_PARAM</a> structure.
+This enumeration indicates the type of location fix needed by the GNSS adapter when it issues an <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_start_fixsession.md">IOCTL_GNSS_START_FIXSESSION</a> control code. This enumeration is set within the <a href="..\gnssdriver\ns-gnssdriver-gnss_fixsession_param.md">GNSS_FIXSESSION_PARAM</a> structure.
 
 
 

@@ -4,10 +4,10 @@ title: _DOT11_WFD_CHANNEL
 author: windows-driver-content
 description: The DOT11_WFD_CHANNEL structure contains the channel information for a Peer-to-Pear (P2P) group.
 old-location: netvista\dot11_wfd_channel.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: FE05F3D9-B1F0-4DC3-9265-22A76209A3E1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _DOT11_WFD_CHANNEL, DOT11_WFD_CHANNEL, *PDOT11_WFD_CHANNEL
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgkddigetrootpagetablesize.htm
 old-project: display
 ms.assetid: 474F1772-0DF9-487B-AEB9-302392AE0B98
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

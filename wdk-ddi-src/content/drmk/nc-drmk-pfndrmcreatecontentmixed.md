@@ -7,8 +7,8 @@ old-location: audio\pfndrmcreatecontentmixed.htm
 old-project: audio
 ms.assetid: A4BA818F-126F-4134-AEDA-F983ADFC4A07
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _WDI_TX_METADATA, *PWDI_TX_METADATA, WDI_TX_METADATA
+ms.date: 12/14/2017
+ms.keywords: _WDI_TX_METADATA, WDI_TX_METADATA, PWDI_TX_METADATA, *PWDI_TX_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

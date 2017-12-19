@@ -4,11 +4,11 @@ title: RILDEVSPECIFICGETTOKEN
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildevspecificgettoken.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b0a534e0-1527-4ef3-a53f-c18cacbb5445
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILDEVSPECIFICGETTOKEN, *LPRILDEVSPECIFICGETTOKEN, RILDEVSPECIFICGETTOKEN
+ms.date: 12/14/2017
+ms.keywords: RILDEVSPECIFICGETTOKEN, RILDEVSPECIFICGETTOKEN, LPRILDEVSPECIFICGETTOKEN, *LPRILDEVSPECIFICGETTOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

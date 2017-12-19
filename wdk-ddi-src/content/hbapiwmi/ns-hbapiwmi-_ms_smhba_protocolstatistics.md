@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_protocolstatistics.htm
 old-project: storage
 ms.assetid: eb992a5e-41fe-4bb3-9f53-785135af8a32
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MS_SMHBA_PROTOCOLSTATISTICS, MS_SMHBA_PROTOCOLSTATISTICS, *PMS_SMHBA_PROTOCOLSTATISTICS
+ms.date: 12/15/2017
+ms.keywords: _MS_SMHBA_PROTOCOLSTATISTICS, MS_SMHBA_PROTOCOLSTATISTICS, *PMS_SMHBA_PROTOCOLSTATISTICS, PMS_SMHBA_PROTOCOLSTATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -27,3 +27,15 @@ Wpprecorder.h contain these programming interfaces:
 | [_RECORDER_CONFIGURE_PARAMS structure](ns-wpprecorder-_recorder_configure_params.md) | The RECORDER_CONFIGURE_PARAMS structure is an input parameter to the WppRecorderConfigure method to enable or disable the default log to which WPP prints. |
 | [_RECORDER_LOG_CREATE_PARAMS structure](ns-wpprecorder-_recorder_log_create_params.md) | The RECORDER_LOG_CREATE_PARAMS structure is an input parameter to the WppRecorderLogCreate method. |
 | [_WPP_TRIAGE_INFO structure](ns-wpprecorder-_wpp_triage_info.md) | Used to locate the WPP log for WER reporting. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [WppRecorderConfigure macro](nf-wpprecorder-wpprecorderconfigure.md) | The WppRecorderConfigure method enables or disables the default log to which WPP prints. |
+| [WppRecorderDumpLiveDriverData macro](nf-wpprecorder-wpprecorderdumplivedriverdata.md) | The WppRecorderDumpLiveDriverData method gets the buffer associated with the specified Inflight Trace Recorder log. |
+| [WppRecorderGetTriageInfo macro](nf-wpprecorder-wpprecordergettriageinfo.md) | The WppRecorderGetTriageInfo. |
+| [WppRecorderLinkCounters macro](nf-wpprecorder-wpprecorderlinkcounters.md) | The WppRecorderLinkCounters. |
+| [WppRecorderLogCreate macro](nf-wpprecorder-wpprecorderlogcreate.md) | The WppRecorderLogCreate method creates a buffer to contain the recorder log. |
+| [WppRecorderLogDelete macro](nf-wpprecorder-wpprecorderlogdelete.md) | The WppRecorderLogDelete method deletes the specified recorder log. |
+| [WppRecorderLogSetIdentifier macro](nf-wpprecorder-wpprecorderlogsetidentifier.md) | The WppRecorderLogSetIdentifier method sets a string identifier for the recorder log. |

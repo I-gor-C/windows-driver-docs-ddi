@@ -4,10 +4,10 @@ title: RILCALLERIDSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalleridsettingsparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3a8b4be6-91b5-4368-8f54-efa73deb41c0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLERIDSETTINGSPARAMMASK, RILCALLERIDSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

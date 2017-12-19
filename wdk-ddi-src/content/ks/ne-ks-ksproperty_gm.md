@@ -7,7 +7,7 @@ old-location: stream\ksproperty_gm.htm
 old-project: stream
 ms.assetid: 723A64D3-30E0-4B8C-8CAB-3D7B685860F3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSPROPERTY_GM, KSPROPERTY_GM
 ms.prod: windows-hardware
 ms.technology: windows-devices

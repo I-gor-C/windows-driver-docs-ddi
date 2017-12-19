@@ -7,7 +7,7 @@ old-location: audio\ksaudio_packetsize_constraints2.htm
 old-project: audio
 ms.assetid: E87C7AA7-A48A-4569-ADD5-9DC143F919B6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _KSAUDIO_PACKETSIZE_CONSTRAINTS2, KSAUDIO_PACKETSIZE_CONSTRAINTS2
 ms.prod: windows-hardware
 ms.technology: windows-devices

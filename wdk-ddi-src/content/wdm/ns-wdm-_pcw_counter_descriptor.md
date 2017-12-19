@@ -7,8 +7,8 @@ old-location: devtest\pcw_counter_descriptor.htm
 old-project: devtest
 ms.assetid: 0b099aec-f254-4cfb-87cb-2f8965d5faae
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
-ms.keywords: _PCW_COUNTER_DESCRIPTOR, PCW_COUNTER_DESCRIPTOR, *PPCW_COUNTER_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: _PCW_COUNTER_DESCRIPTOR, PPCW_COUNTER_DESCRIPTOR, *PPCW_COUNTER_DESCRIPTOR, PCW_COUNTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: display\video_mode.htm
 old-project: display
 ms.assetid: 01fad141-d023-4a3a-80ae-cb07985db8d1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VIDEO_MODE, VIDEO_MODE, *PVIDEO_MODE
+ms.date: 12/15/2017
+ms.keywords: _VIDEO_MODE, PVIDEO_MODE, VIDEO_MODE, *PVIDEO_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

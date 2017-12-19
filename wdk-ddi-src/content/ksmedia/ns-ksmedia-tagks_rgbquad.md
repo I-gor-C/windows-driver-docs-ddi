@@ -7,8 +7,8 @@ old-location: stream\ks_rgbquad.htm
 old-project: stream
 ms.assetid: 49231293-286b-486d-b8f9-b44bdb845e7b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKS_RGBQUAD, KS_RGBQUAD, *PKS_RGBQUAD
+ms.date: 12/14/2017
+ms.keywords: tagKS_RGBQUAD, PKS_RGBQUAD, *PKS_RGBQUAD, KS_RGBQUAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

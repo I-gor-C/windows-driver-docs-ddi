@@ -4,10 +4,10 @@ title: RILUICCRESPONSEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccresponseparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2a87655f-8c8c-48c7-982e-dcb70ca600fb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCRESPONSEPARAMMASK, RILUICCRESPONSEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

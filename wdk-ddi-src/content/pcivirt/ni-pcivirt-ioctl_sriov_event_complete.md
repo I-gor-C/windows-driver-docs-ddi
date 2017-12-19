@@ -7,8 +7,8 @@ old-location: pci\ioctl-sriov-event-complete.htm
 old-project: PCI
 ms.assetid: 5299ec17-1fcb-4449-9ec4-73a4d818df0d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.date: 12/14/2017
+ms.keywords: _SRIOV_PF_EVENT, PSRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

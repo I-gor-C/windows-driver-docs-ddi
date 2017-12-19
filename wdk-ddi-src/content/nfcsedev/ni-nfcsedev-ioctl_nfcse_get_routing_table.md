@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_get_routing_table.htm
 old-project: nfpdrivers
 ms.assetid: 838D31E8-1835-47C7-8201-93910610F5EC
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

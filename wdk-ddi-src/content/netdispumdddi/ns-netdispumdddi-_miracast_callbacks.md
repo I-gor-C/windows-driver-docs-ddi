@@ -7,8 +7,8 @@ old-location: display\miracast_callbacks.htm
 old-project: display
 ms.assetid: 2168a4d8-a33d-4534-b4e8-126a41e528f5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MIRACAST_CALLBACKS, MIRACAST_CALLBACKS, *PMIRACAST_CALLBACKS
+ms.date: 12/15/2017
+ms.keywords: _MIRACAST_CALLBACKS, PMIRACAST_CALLBACKS, *PMIRACAST_CALLBACKS, MIRACAST_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

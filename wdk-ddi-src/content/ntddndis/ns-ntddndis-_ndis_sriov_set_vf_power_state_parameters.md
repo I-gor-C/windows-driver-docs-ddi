@@ -4,11 +4,11 @@ title: _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
 author: windows-driver-content
 description: The NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure specifies the parameters for changing the power state of a network adapter's PCI Express (PCIe) Virtual Function (VF).
 old-location: netvista\ndis_sriov_set_vf_power_state_parameters.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f2914619-1721-42ef-a20f-5774b906a35e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, *PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
+ms.date: 12/14/2017
+ms.keywords: _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, *PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -138,5 +138,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

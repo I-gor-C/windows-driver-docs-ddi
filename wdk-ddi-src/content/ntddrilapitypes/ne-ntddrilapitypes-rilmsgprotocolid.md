@@ -4,10 +4,10 @@ title: RILMSGPROTOCOLID
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgprotocolid.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 96406971-02df-4534-888d-70014f782c60
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGPROTOCOLID, RILMSGPROTOCOLID
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: print\replyprinterchangenotificationex.htm
 old-project: print
 ms.assetid: A3A906C0-FA96-4008-B904-1DA333B59833
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: ReplyPrinterChangeNotificationEx
 ms.prod: windows-hardware
 ms.technology: windows-devices

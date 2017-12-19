@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddiarg_createcryptosession.htm
 old-project: display
 ms.assetid: 9e63a4eb-050b-4f12-ad43-00e62021abd3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-Specifies the attributes of the cryptographic session to be created by the user-mode driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function.
+Specifies the attributes of the cryptographic session to be created by the user-mode driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a> function.
 
 
 
@@ -57,7 +57,7 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 
 ### -field CryptoType
 
-a GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. The GUID can be one of the following:
+a GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a> function creates. The GUID can be one of the following:
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ A proprietary encryption algorithm.
 
 ### -field DecodeProfile
 
-A GUID that specifies the DirectX Video Acceleration (DXVA) decode profile that the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. For a list of possible values, see <b>CreateCryptoSession</b>. If DXVA decoding will not be used, set this parameter to <b>NULL_GUID</b>.
+A GUID that specifies the DirectX Video Acceleration (DXVA) decode profile that the driver uses for the encryption session that the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a> function creates. For a list of possible values, see <b>CreateCryptoSession</b>. If DXVA decoding will not be used, set this parameter to <b>NULL_GUID</b>.
 
 
 ### -field KeyExchangeType

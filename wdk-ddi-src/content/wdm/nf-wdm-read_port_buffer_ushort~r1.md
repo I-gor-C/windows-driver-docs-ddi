@@ -7,7 +7,7 @@ old-location: kernel\read_port_buffer_ushort.htm
 old-project: kernel
 ms.assetid: 27c2f249-bfd2-497d-aa34-f5d1e1a1fac7
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_PORT_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

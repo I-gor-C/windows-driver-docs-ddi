@@ -7,7 +7,7 @@ old-location: display\dxgk_enum_pivot.htm
 old-project: display
 ms.assetid: f2a234f3-aec9-4fe5-b720-bed9747d5a7f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_ENUM_PIVOT, DXGK_ENUM_PIVOT
 ms.prod: windows-hardware
 ms.technology: windows-devices

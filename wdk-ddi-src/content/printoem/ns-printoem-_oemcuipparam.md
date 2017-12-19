@@ -7,8 +7,8 @@ old-location: print\oemcuipparam.htm
 old-project: print
 ms.assetid: 178b635c-0916-44f5-87a3-a2766601dcab
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OEMCUIPPARAM, *POEMCUIPPARAM, OEMCUIPPARAM
+ms.date: 12/14/2017
+ms.keywords: _OEMCUIPPARAM, OEMCUIPPARAM, *POEMCUIPPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

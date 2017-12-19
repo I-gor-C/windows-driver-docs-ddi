@@ -4,11 +4,11 @@ title: _STI_DEV_CAPS
 author: windows-driver-content
 description: The STI_DEV_CAPS structure is used as a parameter to the IStiDevice::GetCapabilities method. It is also a member of the STI_DEVICE_INFORMATION and STI_WIA_DEVICE_INFORMATION structures.
 old-location: image\sti_dev_caps.htm
-old-project: image
+old-project: Image
 ms.assetid: 99e0f896-19d2-4895-8b01-deaf30ec5fe9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STI_DEV_CAPS, *PSTI_DEV_CAPS, STI_DEV_CAPS
+ms.date: 12/14/2017
+ms.keywords: _STI_DEV_CAPS, PSTI_DEV_CAPS, *PSTI_DEV_CAPS, STI_DEV_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

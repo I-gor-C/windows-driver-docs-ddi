@@ -4,10 +4,10 @@ title: RILCALLAUDIOMEDIASTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallaudiomediastateparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: cc13d98b-0516-49bf-b92c-5ed6b1c6b5b2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLAUDIOMEDIASTATEPARAMMASK, RILCALLAUDIOMEDIASTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

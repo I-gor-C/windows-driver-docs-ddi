@@ -7,7 +7,7 @@ old-location: display\d3dkmt-createstandardallocation.htm
 old-project: display
 ms.assetid: 7698ab93-68af-479d-97a4-c45ac84b0710
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_CREATESTANDARDALLOCATION, D3DKMT_CREATESTANDARDALLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

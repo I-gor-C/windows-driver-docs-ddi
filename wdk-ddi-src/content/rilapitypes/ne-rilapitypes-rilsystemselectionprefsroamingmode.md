@@ -4,10 +4,10 @@ title: RILSYSTEMSELECTIONPREFSROAMINGMODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefsroamingmode_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7dbb25a5-7bcc-453d-854e-7796acbfd079
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSYSTEMSELECTIONPREFSROAMINGMODE, RILSYSTEMSELECTIONPREFSROAMINGMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

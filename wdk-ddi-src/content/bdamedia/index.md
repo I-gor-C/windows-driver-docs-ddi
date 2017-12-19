@@ -16,7 +16,7 @@ Bdamedia.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PKSP_NODE_ESPID structure](ns-bdamedia-pksp_node_espid.md) | The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes. |
+| [KSP_NODE_ESPID structure](ns-bdamedia-ksp_node_espid.md) | The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes. |
 | [_KSM_BDA_PIN structure](ns-bdamedia-_ksm_bda_pin.md) | The KSM_BDA_PIN structure describes a method request to create or delete a pin factory for a filter. |
 | [_KSM_BDA_PIN_PAIR structure](ns-bdamedia-_ksm_bda_pin_pair.md) | The KSM_BDA_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
 | [_KSP_BDA_NODE_PIN structure](ns-bdamedia-_ksp_bda_node_pin.md) | The KSP_BDA_NODE_PIN structure describes a property request to retrieve the controlling pin for a node. |

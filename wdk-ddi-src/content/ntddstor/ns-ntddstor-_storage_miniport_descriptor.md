@@ -7,8 +7,8 @@ old-location: storage\storage_miniport_descriptor.htm
 old-project: storage
 ms.assetid: 30497CA8-70B6-48F9-B5D5-45E606A3226E
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

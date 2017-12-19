@@ -7,7 +7,7 @@ old-location: kernel\read_port_buffer_ulong.htm
 old-project: kernel
 ms.assetid: a63028d8-f90e-4f86-81f5-27bc727ecad7
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_PORT_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

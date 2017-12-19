@@ -7,7 +7,7 @@ old-location: display\miracast_datarate_stats.htm
 old-project: display
 ms.assetid: d4249b81-0ee7-49dd-9886-cdc5842f02d8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: MIRACAST_DATARATE_STATS, MIRACAST_DATARATE_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices

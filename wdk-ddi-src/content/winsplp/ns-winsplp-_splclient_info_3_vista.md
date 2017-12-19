@@ -7,7 +7,7 @@ old-location: print\splclient_info_3_vista.htm
 old-project: print
 ms.assetid: 076ECB20-CFAD-4A16-9B01-6936E0DD7E50
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: _SPLCLIENT_INFO_3_VISTA, SPLCLIENT_INFO_3_VISTA
 ms.prod: windows-hardware
 ms.technology: windows-devices

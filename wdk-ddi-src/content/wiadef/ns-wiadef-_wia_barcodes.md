@@ -4,10 +4,10 @@ title: _WIA_BARCODES
 author: windows-driver-content
 description: The WIA_BARCODES structure stores header information for the barcode metadata report of one scan job (one call to IWiaMiniDrv::drvAcquireItemData).
 old-location: image\wia_barcodes.htm
-old-project: image
+old-project: Image
 ms.assetid: 2B89FF49-4376-49A7-B7CC-1C67D89C7E7A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _WIA_BARCODES, WIA_BARCODES
 ms.prod: windows-hardware
 ms.technology: windows-devices

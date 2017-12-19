@@ -7,7 +7,7 @@ old-location: stream\mf_mediasource_status_info.htm
 old-project: stream
 ms.assetid: 44A1911A-0C36-4A35-84D3-FE4934EF9CBD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: MF_MEDIASOURCE_STATUS_INFO, MF_MEDIASOURCE_STATUS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

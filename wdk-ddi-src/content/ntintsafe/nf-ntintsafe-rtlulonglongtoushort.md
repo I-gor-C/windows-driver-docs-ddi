@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongtoushort.htm
 old-project: kernel
 ms.assetid: 209EDB33-34DB-429F-BDEB-B84960E6F20F
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlULongLongToUShort
 ms.prod: windows-hardware
 ms.technology: windows-devices

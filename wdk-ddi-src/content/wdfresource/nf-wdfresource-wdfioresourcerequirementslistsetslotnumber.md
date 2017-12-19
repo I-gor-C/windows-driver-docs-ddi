@@ -7,7 +7,7 @@ old-location: wdf\wdfioresourcerequirementslistsetslotnumber.htm
 old-project: wdf
 ms.assetid: 1dc18c48-2331-4980-b741-59a73d3edaa6
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfIoResourceRequirementsListSetSlotNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices

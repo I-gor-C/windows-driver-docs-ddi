@@ -4,11 +4,11 @@ title: RILSENDFLASHPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendflashparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2279c1f2-382f-4cae-a881-997f0bed7b6d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSENDFLASHPARAMS, RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS, RILSENDFLASHPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

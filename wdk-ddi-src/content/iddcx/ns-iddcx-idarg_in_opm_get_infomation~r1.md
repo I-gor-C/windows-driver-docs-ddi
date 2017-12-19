@@ -7,7 +7,7 @@ old-location: display\idarg_in_opm_get_infomation.htm
 old-project: display
 ms.assetid: 14d0585d-6fa1-4934-a4f2-fe5e20d4a324
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDARG_IN_OPM_GET_INFOMATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices

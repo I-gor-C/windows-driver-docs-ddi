@@ -7,7 +7,7 @@ old-location: kernel\psgetsilomonitorcontextslot.htm
 old-project: kernel
 ms.assetid: 0871EA8C-4F59-451E-89FB-8A0D44219456
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetSiloMonitorContextSlot
 ms.prod: windows-hardware
 ms.technology: windows-devices

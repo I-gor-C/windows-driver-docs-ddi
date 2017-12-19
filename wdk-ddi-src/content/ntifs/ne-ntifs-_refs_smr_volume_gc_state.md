@@ -7,8 +7,8 @@ old-location: ifsk\refs_smr_volume_gc_state.htm
 old-project: ifsk
 ms.assetid: 9E75F65A-6E9C-485F-9437-30CB01A5F317
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _REFS_SMR_VOLUME_GC_STATE, REFS_SMR_VOLUME_GC_STATE, *PREFS_SMR_VOLUME_GC_STATE
+ms.date: 12/14/2017
+ms.keywords: _REFS_SMR_VOLUME_GC_STATE, REFS_SMR_VOLUME_GC_STATE, PREFS_SMR_VOLUME_GC_STATE, *PREFS_SMR_VOLUME_GC_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

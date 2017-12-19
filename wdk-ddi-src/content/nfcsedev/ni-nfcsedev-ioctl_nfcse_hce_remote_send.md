@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_hce_remote_send.htm
 old-project: nfpdrivers
 ms.assetid: 5BA627C9-747D-493A-B568-B2912BBB622F
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

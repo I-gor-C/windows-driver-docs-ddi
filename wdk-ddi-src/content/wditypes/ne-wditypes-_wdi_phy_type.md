@@ -4,10 +4,10 @@ title: _WDI_PHY_TYPE
 author: windows-driver-content
 description: The WDI_PHY_TYPE enumeration defines the PHY types.
 old-location: netvista\wdi_phy_type.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: BDA90056-6DAA-4FC8-82EC-3062087E02C4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_PHY_TYPE, WDI_PHY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

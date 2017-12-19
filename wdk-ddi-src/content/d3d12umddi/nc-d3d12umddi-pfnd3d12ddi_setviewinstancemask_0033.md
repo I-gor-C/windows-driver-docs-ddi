@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_setviewinstancemask_0033.htm
 old-project: display
 ms.assetid: 0A41AC01-9F45-4026-9451-AEF2732C9084
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

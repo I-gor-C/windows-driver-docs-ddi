@@ -7,8 +7,8 @@ old-location: storage\dsm_querysupportedlbpolicies.htm
 old-project: storage
 ms.assetid: c9c04601-783a-454d-a80e-be8aa5df519a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
+ms.date: 12/15/2017
+ms.keywords: _DSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies, PDSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

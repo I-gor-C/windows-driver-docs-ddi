@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorsourcemodeset_interface_pfnacquirepreferredmod
 old-project: display
 ms.assetid: 80d3d199-42ad-4f21-8122-05dfad37016d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

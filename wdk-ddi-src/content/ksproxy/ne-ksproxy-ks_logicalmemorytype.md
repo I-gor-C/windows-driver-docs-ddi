@@ -7,7 +7,7 @@ old-location: stream\ks_logicalmemorytype.htm
 old-project: stream
 ms.assetid: B02E5131-6407-4481-BABD-9F5BDA979D85
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KS_LogicalMemoryType, KS_LogicalMemoryType
 ms.prod: windows-hardware
 ms.technology: windows-devices

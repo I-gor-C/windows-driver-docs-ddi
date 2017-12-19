@@ -4,10 +4,10 @@ title: RILUICCSERVICESERVICE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccserviceservice.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 1aeb4642-d718-4e39-a6c7-dc33146c9687
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCSERVICESERVICE, RILUICCSERVICESERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices

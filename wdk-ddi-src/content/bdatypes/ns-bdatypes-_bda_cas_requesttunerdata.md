@@ -7,8 +7,8 @@ old-location: stream\bda_cas_requesttunerdata.htm
 old-project: stream
 ms.assetid: 09347A56-C3F8-4E0D-A557-CECB7BBC7DB8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_CAS_REQUESTTUNERDATA, BDA_CAS_REQUESTTUNERDATA, *PBDA_CAS_REQUESTTUNERDATA
+ms.date: 12/14/2017
+ms.keywords: _BDA_CAS_REQUESTTUNERDATA, BDA_CAS_REQUESTTUNERDATA, PBDA_CAS_REQUESTTUNERDATA, *PBDA_CAS_REQUESTTUNERDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

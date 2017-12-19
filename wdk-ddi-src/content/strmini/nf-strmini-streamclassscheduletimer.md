@@ -7,7 +7,7 @@ old-location: stream\streamclassscheduletimer.htm
 old-project: stream
 ms.assetid: 83271c19-911b-481a-bc25-c0b3816cf800
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: StreamClassScheduleTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices

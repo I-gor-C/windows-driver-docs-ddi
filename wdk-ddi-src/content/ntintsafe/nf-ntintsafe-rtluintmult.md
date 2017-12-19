@@ -7,7 +7,7 @@ old-location: kernel\rtluintmult.htm
 old-project: kernel
 ms.assetid: 9972BC53-3CFB-4649-9C54-B194039D804F
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlUIntMult
 ms.prod: windows-hardware
 ms.technology: windows-devices

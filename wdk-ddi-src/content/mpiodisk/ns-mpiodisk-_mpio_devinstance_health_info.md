@@ -7,8 +7,8 @@ old-location: storage\mpio_devinstance_health_info.htm
 old-project: storage
 ms.assetid: 7f254389-58cf-43da-8611-a1598cc2eb66
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_DEVINSTANCE_HEALTH_INFO, *PMPIO_DEVINSTANCE_HEALTH_INFO, MPIO_DEVINSTANCE_HEALTH_INFO
+ms.date: 12/15/2017
+ms.keywords: _MPIO_DEVINSTANCE_HEALTH_INFO, MPIO_DEVINSTANCE_HEALTH_INFO, *PMPIO_DEVINSTANCE_HEALTH_INFO, PMPIO_DEVINSTANCE_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

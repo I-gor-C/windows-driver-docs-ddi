@@ -7,7 +7,7 @@ old-location: stream\ksstreamio.htm
 old-project: stream
 ms.assetid: 74c62a30-42b9-4ea7-b52a-014e263d886e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsStreamIo
 ms.prod: windows-hardware
 ms.technology: windows-devices

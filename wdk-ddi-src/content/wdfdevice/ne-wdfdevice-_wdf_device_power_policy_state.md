@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_power_policy_state.htm
 old-project: wdf
 ms.assetid: 87fa78f7-417a-4720-9520-0eb90486630a
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE, *PWDF_DEVICE_POWER_POLICY_STATE
+ms.date: 12/15/2017
+ms.keywords: _WDF_DEVICE_POWER_POLICY_STATE, PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE, *PWDF_DEVICE_POWER_POLICY_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

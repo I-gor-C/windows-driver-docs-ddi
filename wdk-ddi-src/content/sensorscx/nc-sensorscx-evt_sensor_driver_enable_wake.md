@@ -7,8 +7,8 @@ old-location: sensors\evt_sensor_driver_enable_wake.htm
 old-project: sensors
 ms.assetid: 969E08D1-0D4A-4FED-9722-4EDA067C522C
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002, SensorConnectionType
+ms.date: 12/14/2017
+ms.keywords: ISensorDriver, ISensorDriver::OnSetProperties, OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

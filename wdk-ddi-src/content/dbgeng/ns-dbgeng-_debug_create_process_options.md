@@ -4,11 +4,11 @@ title: _DEBUG_CREATE_PROCESS_OPTIONS
 author: windows-driver-content
 description: The DEBUG_CREATE_PROCESS_OPTIONS structure specifies the process creation options to use when creating a new process.
 old-location: debugger\debug_create_process_options.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_CREATE_PROCESS_OPTIONS, PDEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

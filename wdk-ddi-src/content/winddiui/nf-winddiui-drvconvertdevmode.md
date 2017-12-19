@@ -7,7 +7,7 @@ old-location: print\drvconvertdevmode.htm
 old-project: print
 ms.assetid: eb0402a8-22ce-417f-9b19-25b357451307
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: DrvConvertDevMode
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\sm_sendtest_out.htm
 old-project: storage
 ms.assetid: e24a2498-7f33-435c-97ad-e4ae283580c2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendTEST_OUT, *PSM_SendTEST_OUT, SM_SendTEST_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_SendTEST_OUT, *PSM_SendTEST_OUT, SM_SendTEST_OUT, PSM_SendTEST_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

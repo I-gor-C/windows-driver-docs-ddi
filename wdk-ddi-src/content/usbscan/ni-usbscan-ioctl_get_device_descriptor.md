@@ -4,10 +4,10 @@ title: IOCTL_GET_DEVICE_DESCRIPTOR
 author: windows-driver-content
 description: Returns vendor and device identifiers.
 old-location: image\ioctl_get_device_descriptor.htm
-old-project: image
+old-project: Image
 ms.assetid: a6946dd4-db72-477f-bf2c-958c363340a0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

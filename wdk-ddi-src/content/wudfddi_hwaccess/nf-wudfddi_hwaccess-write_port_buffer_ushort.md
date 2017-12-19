@@ -7,7 +7,7 @@ old-location: wdf\write_port_buffer_ushort.htm
 old-project: wdf
 ms.assetid: 04F51A7D-70D8-4844-973D-70B7A7797221
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_PORT_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

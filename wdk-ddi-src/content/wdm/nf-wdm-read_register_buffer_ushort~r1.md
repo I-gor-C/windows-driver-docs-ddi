@@ -7,7 +7,7 @@ old-location: kernel\read_register_buffer_ushort.htm
 old-project: kernel
 ms.assetid: 30c3fc44-e94a-47ca-a25b-33857b485817
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

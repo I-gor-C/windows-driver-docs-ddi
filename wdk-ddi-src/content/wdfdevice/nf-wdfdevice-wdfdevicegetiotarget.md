@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicegetiotarget.htm
 old-project: wdf
 ms.assetid: a0749324-8b4e-4b82-8c51-b1b8883d521e
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceGetIoTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILLTEKIND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilltekind_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ab80e0a2-d404-4333-8a3e-f8e74d8c7f20
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILLTEKIND, RILLTEKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices

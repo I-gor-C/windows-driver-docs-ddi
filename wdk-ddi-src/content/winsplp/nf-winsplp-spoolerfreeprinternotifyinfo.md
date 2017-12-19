@@ -7,7 +7,7 @@ old-location: print\spoolerfreeprinternotifyinfo.htm
 old-project: print
 ms.assetid: 5EA31AC4-FFAF-4AB8-B471-32B823F35D2F
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: SpoolerFreePrinterNotifyInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_submitwaitforsyncobjectstohwqueue_.htm
 old-project: display
 ms.assetid: 365253FC-9FC0-4FFF-9D84-503754095327
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices

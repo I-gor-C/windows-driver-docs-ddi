@@ -7,8 +7,8 @@ old-location: ieee\config_rom.htm
 old-project: IEEE
 ms.assetid: 0ab96bc2-a89f-42cf-9ee2-020b47dff4cf
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
-ms.keywords: _CONFIG_ROM, *PCONFIG_ROM, CONFIG_ROM
+ms.date: 12/14/2017
+ms.keywords: _CONFIG_ROM, CONFIG_ROM, PCONFIG_ROM, *PCONFIG_ROM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

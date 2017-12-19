@@ -7,7 +7,7 @@ old-location: storage\storportconvertulongtophysicaladdress.htm
 old-project: storage
 ms.assetid: 772ca60b-a957-47de-b95d-486497b295ce
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortConvertUlongToPhysicalAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices

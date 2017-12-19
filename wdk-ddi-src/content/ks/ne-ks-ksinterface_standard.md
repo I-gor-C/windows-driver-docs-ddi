@@ -7,7 +7,7 @@ old-location: stream\ksinterface_standard.htm
 old-project: stream
 ms.assetid: B000E3BD-28FA-454E-A598-3670B5FCD3DD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSINTERFACE_STANDARD, KSINTERFACE_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices

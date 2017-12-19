@@ -4,11 +4,11 @@ title: RILREQUESTGEOLOCATIONDATA
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrequestgeolocationdata.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 814e00c5-7248-4853-a61b-e70be86bca0e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA
+ms.date: 12/14/2017
+ms.keywords: RILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA, LPRILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

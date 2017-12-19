@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_get_last_session.htm
 old-project: storage
 ms.assetid: a05da124-f486-4658-87d8-6c1b423694b3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.date: 12/15/2017
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

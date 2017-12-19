@@ -7,8 +7,8 @@ old-location: storage\ses_configuration_diagnostic_page.htm
 old-project: storage
 ms.assetid: 0FD748D6-F598-44D1-A8D3-E63764CB90C6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
+ms.date: 12/15/2017
+ms.keywords: _SES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

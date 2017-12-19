@@ -4,10 +4,10 @@ title: _WDI_IHV_TASK_PRIORITY
 author: windows-driver-content
 description: The WDI_IHV_TASK_PRIORITY enumeration defines IHV task priorities.
 old-location: netvista\wdi_ihv_task_priority.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 606CF45C-5398-4157-92A7-382B6162D806
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_IHV_TASK_PRIORITY, WDI_IHV_TASK_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS
 author: windows-driver-content
 description: The USB class driver sends this request to activate the bus so that the driver can prepare to process bus events and handle traffic.
 old-location: buses\ioctl_internal_usbfn_activate_usb_bus.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: A9CBD73D-2A51-4925-9B88-7D2ED97A59DA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.date: 12/14/2017
+ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

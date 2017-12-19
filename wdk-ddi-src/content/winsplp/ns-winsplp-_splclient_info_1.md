@@ -7,8 +7,8 @@ old-location: print\splclient_info_1.htm
 old-project: print
 ms.assetid: a9659f77-e84b-471a-a778-a4628d89ce19
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _SPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1
+ms.date: 12/14/2017
+ms.keywords: _SPLCLIENT_INFO_1, LPSPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, PSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

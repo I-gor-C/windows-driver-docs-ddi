@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestrequeue.htm
 old-project: wdf
 ms.assetid: 955859d2-7c4f-454c-8621-84bacf0b9770
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfRequestRequeue
 ms.prod: windows-hardware
 ms.technology: windows-devices

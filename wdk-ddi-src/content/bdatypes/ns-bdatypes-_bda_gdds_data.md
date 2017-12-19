@@ -7,8 +7,8 @@ old-location: stream\bda_gdds_data.htm
 old-project: stream
 ms.assetid: 2BBF14E3-8E1A-42AF-9C26-7F886FD2B945
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_GDDS_DATA, *P_BDA_GDDS_DATA, BDA_GDDS_DATA
+ms.date: 12/14/2017
+ms.keywords: _BDA_GDDS_DATA, BDA_GDDS_DATA, P_BDA_GDDS_DATA, *P_BDA_GDDS_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

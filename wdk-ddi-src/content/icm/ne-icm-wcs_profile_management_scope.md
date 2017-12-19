@@ -7,7 +7,7 @@ old-location: print\wcs_profile_management_scope.htm
 old-project: print
 ms.assetid: 85909f39-7923-4e2a-ad37-66b071775b5f
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: WCS_PROFILE_MANAGEMENT_SCOPE, WCS_PROFILE_MANAGEMENT_SCOPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILMSGCDMAINDELIVER
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmaindeliver.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: fdff17ac-2ffd-45b0-8f01-a21af1ffa9d0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER
+ms.date: 12/14/2017
+ms.keywords: RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER, LPRILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

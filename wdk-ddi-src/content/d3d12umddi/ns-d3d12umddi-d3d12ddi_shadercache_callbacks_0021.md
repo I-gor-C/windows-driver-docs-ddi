@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_shadercache_callbacks_0021.htm
 old-project: display
 ms.assetid: EBA976B0-3B44-4482-B1B0-31A84150C056
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_SHADERCACHE_CALLBACKS_0021, D3D12DDI_SHADERCACHE_CALLBACKS_0021
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: storage\hba_getnumberofadapters.htm
 old-project: storage
 ms.assetid: 5864a535-4ff8-4c9a-abf9-f835c7fde305
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: HBA_GetNumberOfAdapters
 ms.prod: windows-hardware
 ms.technology: windows-devices

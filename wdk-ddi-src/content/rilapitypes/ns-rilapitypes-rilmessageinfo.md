@@ -4,10 +4,10 @@ title: RILMESSAGEINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessageinfo_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: db7b8526-e70a-4589-a128-58641c865d58
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMESSAGEINFO, RILMESSAGEINFO, *LPRILMESSAGEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

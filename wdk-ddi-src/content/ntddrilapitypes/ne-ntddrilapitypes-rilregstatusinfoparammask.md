@@ -4,10 +4,10 @@ title: RILREGSTATUSINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilregstatusinfoparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7857f845-d695-4b0f-9e52-8871c0140a74
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILREGSTATUSINFOPARAMMASK, RILREGSTATUSINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

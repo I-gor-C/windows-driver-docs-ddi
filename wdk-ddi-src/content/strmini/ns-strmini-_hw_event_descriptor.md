@@ -7,8 +7,8 @@ old-location: stream\hw_event_descriptor.htm
 old-project: stream
 ms.assetid: c0efec37-4897-4ece-9f53-4a62204e5af3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: _HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -79,7 +79,7 @@ Points to the <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure that de
 
 ### -field EventData
 
-Points to the <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes this instance of the event.
+Points to the <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that describes this instance of the event.
 
 
 ### -field StreamObject

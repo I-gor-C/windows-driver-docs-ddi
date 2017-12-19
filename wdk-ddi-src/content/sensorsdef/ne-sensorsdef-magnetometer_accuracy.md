@@ -7,7 +7,7 @@ old-location: sensors\magnetometer_accuracy.htm
 old-project: sensors
 ms.assetid: BC8D4FB1-69F4-4FAE-BA90-7CCB57D4A6C4
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: MAGNETOMETER_ACCURACY, MAGNETOMETER_ACCURACY
 ms.prod: windows-hardware
 ms.technology: windows-devices

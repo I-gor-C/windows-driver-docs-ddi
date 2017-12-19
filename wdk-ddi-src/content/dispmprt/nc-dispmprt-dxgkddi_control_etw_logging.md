@@ -7,8 +7,8 @@ old-location: display\dxgkddicontroletwlogging.htm
 old-project: display
 ms.assetid: c94a43bb-19d0-4894-80b0-885562fefea5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.date: 12/15/2017
+ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

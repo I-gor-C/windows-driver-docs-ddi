@@ -7,7 +7,7 @@ old-location: kernel\psunregistersilomonitor.htm
 old-project: kernel
 ms.assetid: B1B85AD5-F626-4177-8218-428B617A97F6
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsUnregisterSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: stream\dvinfo.htm
 old-project: stream
 ms.assetid: 3afd372f-556f-4c3a-804b-9bf7a8c9a438
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DVINFO, DVINFO, *PDVINFO
+ms.date: 12/14/2017
+ms.keywords: _DVINFO, *PDVINFO, PDVINFO, DVINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

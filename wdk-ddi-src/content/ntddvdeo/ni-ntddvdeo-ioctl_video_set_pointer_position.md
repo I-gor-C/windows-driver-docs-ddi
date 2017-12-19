@@ -7,8 +7,8 @@ old-location: display\ioctl_video_set_pointer_position.htm
 old-project: display
 ms.assetid: de581a49-da6d-410b-82be-28cc1eccfde4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.date: 12/15/2017
+ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -7,8 +7,8 @@ old-location: display\dxgk_colorimetry.htm
 old-project: display
 ms.assetid: F3F9B6EC-B978-4C87-8AE0-8F6BC73099D2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_COLORIMETRY, DXGK_COLORIMETRY, *PDXGK_COLORIMETRY
+ms.date: 12/15/2017
+ms.keywords: _DXGK_COLORIMETRY, DXGK_COLORIMETRY, PDXGK_COLORIMETRY, *PDXGK_COLORIMETRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

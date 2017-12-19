@@ -7,7 +7,7 @@ old-location: stream\kstritemfreecallback.htm
 old-project: stream
 ms.assetid: c97bb216-a53b-47c7-9be2-2364604b4cf8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ Returns STATUS_SUCCESS if the passed in create item was successfully freed, or t
 
 
 ## -remarks
-The <i>Context</i> parameter of the <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> structure must contain sufficient information to perform cleanup for the create item.
+The <i>Context</i> parameter of the <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a> structure must contain sufficient information to perform cleanup for the create item.
 
 The <i>Flags</i> member of the KSOBJECT_CREATE_ITEM structure indicates if it is necessary to flush security descriptor changes.
 
@@ -103,12 +103,12 @@ Header
 <a href="stream.ksallocateobjectcreateitem">KsAllocateObjectCreateItem</a>
 </dt>
 <dt>
-<a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a>
+<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrItemFreeCallback routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrItemFreeCallback routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

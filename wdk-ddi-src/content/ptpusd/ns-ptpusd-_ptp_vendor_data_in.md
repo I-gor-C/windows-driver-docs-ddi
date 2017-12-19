@@ -4,11 +4,11 @@ title: _PTP_VENDOR_DATA_IN
 author: windows-driver-content
 description: The PTP_VENDOR_DATA_IN structure contains information about an arbitrary command that an application issues to the device.
 old-location: image\ptp_vendor_data_in.htm
-old-project: image
+old-project: Image
 ms.assetid: 896209d0-d545-495b-b743-98c0b9d976ff
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN
+ms.date: 12/14/2017
+ms.keywords: _PTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -174,5 +174,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20PTP_VENDOR_DATA_IN structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20PTP_VENDOR_DATA_IN structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

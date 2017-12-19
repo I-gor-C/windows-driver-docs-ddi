@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_sync_polarity.htm
 old-project: display
 ms.assetid: 6563d4f7-3750-49c1-80f5-14a839e70cb7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY,
 ms.prod: windows-hardware
 ms.technology: windows-devices

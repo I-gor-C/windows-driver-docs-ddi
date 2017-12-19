@@ -7,8 +7,8 @@ old-location: storage\storage_diagnostic_level.htm
 old-project: storage
 ms.assetid: 6D705DA8-7F45-4C7A-813F-5AE4F5A1D8ED
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_DIAGNOSTIC_LEVEL, STORAGE_DIAGNOSTIC_LEVEL, *PSTORAGE_DIAGNOSTIC_LEVEL
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_DIAGNOSTIC_LEVEL, PSTORAGE_DIAGNOSTIC_LEVEL, STORAGE_DIAGNOSTIC_LEVEL, *PSTORAGE_DIAGNOSTIC_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

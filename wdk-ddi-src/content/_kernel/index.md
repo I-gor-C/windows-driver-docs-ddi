@@ -15,7 +15,6 @@ To develop Windows kernel, you need these headers:
  * [iointex.h](..\iointex\index.md)
  * [miniport.h](..\miniport\index.md)
  * [ntddk.h](..\ntddk\index.md)
- * [ntddsfio.h](..\ntddsfio\index.md)
  * [ntddsysenv.h](..\ntddsysenv\index.md)
  * [ntifs.h](..\ntifs\index.md)
  * [ntintsafe.h](..\ntintsafe\index.md)
@@ -464,10 +463,10 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [KePulseEvent function](..\ntddk\nf-ntddk-kepulseevent.md) | The KePulseEvent routine atomically sets an event object to a signaled state, attempts to satisfy as many waits as possible, and then resets the event object to a not-signaled state. |
 | [KeQueryActiveGroupCount function](..\ntddk\nf-ntddk-kequeryactivegroupcount.md) | The KeQueryActiveGroupCount routine returns the number of active processor groups in a multiprocessor system. |
 | [KeQueryActiveGroupCount function](..\wdm\nf-wdm-kequeryactivegroupcount.md) | The KeQueryActiveGroupCount routine returns the number of active processor groups in a multiprocessor system. |
-| [KeQueryActiveProcessorCount function](..\ntddk\nf-ntddk-kequeryactiveprocessorcount.md) | The KeQueryActiveProcessorCount routine returns the number of currently active processors. |
+| [KeQueryActiveProcessorCount function](..\wdm\nf-wdm-kequeryactiveprocessorcount.md) | The KeQueryActiveProcessorCount routine returns the number of currently active processors. |
 | [KeQueryActiveProcessorCountEx function](..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md) | The KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system. |
 | [KeQueryActiveProcessorCountEx function](..\wdm\nf-wdm-kequeryactiveprocessorcountex.md) | The KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system. |
-| [KeQueryActiveProcessors function](..\ntddk\nf-ntddk-kequeryactiveprocessors.md) | The KeQueryActiveProcessors routine returns a bitmask of the currently active processors. |
+| [KeQueryActiveProcessors function](..\wdm\nf-wdm-kequeryactiveprocessors.md) | The KeQueryActiveProcessors routine returns a bitmask of the currently active processors. |
 | [KeQueryAuxiliaryCounterFrequency function](..\wdm\nf-wdm-kequeryauxiliarycounterfrequency.md) | The KeQueryAuxiliaryCounterFrequency routine returns frequency of the auxiliary counter in units of Hz. |
 | [KeQueryDpcWatchdogInformation function](..\wdm\nf-wdm-kequerydpcwatchdoginformation.md) | The KeQueryDpcWatchdogInformation routine returns the deferred procedure call (DPC) watchdog timer values for the current processor. |
 | [KeQueryGroupAffinity function](..\ntddk\nf-ntddk-kequerygroupaffinity.md) | The KeQueryGroupAffinity routine returns an affinity mask that identifies the active logical processors in a specified group in a multiprocessor system. |
@@ -481,7 +480,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [KeQueryLogicalProcessorRelationship function](..\wdm\nf-wdm-kequerylogicalprocessorrelationship.md) | The KeQueryLogicalProcessorRelationship routine gets information about the relationships of one or more processors to the other processors in a multiprocessor system. |
 | [KeQueryMaximumGroupCount function](..\ntddk\nf-ntddk-kequerymaximumgroupcount.md) | The KeQueryMaximumGroupCount routine returns the maximum number of groups in a multiprocessor system. |
 | [KeQueryMaximumGroupCount function](..\wdm\nf-wdm-kequerymaximumgroupcount.md) | The KeQueryMaximumGroupCount routine returns the maximum number of groups in a multiprocessor system. |
-| [KeQueryMaximumProcessorCount function](..\ntddk\nf-ntddk-kequerymaximumprocessorcount.md) | The KeQueryMaximumProcessorCount routine returns the maximum number of processors. |
+| [KeQueryMaximumProcessorCount function](..\wdm\nf-wdm-kequerymaximumprocessorcount.md) | The KeQueryMaximumProcessorCount routine returns the maximum number of processors. |
 | [KeQueryMaximumProcessorCountEx function](..\ntddk\nf-ntddk-kequerymaximumprocessorcountex.md) | The KeQueryMaximumProcessorCountEx routine returns the maximum number of logical processors in a specified group in a multiprocessor system. |
 | [KeQueryMaximumProcessorCountEx function](..\wdm\nf-wdm-kequerymaximumprocessorcountex.md) | The KeQueryMaximumProcessorCountEx routine returns the maximum number of logical processors in a specified group in a multiprocessor system. |
 | [KeQueryNodeActiveAffinity function](..\ntddk\nf-ntddk-kequerynodeactiveaffinity.md) | The KeQueryNodeActiveAffinity routine gets the current processor affinity of a specified node in a multiprocessor system that has a non-uniform memory access (NUMA) architecture. |
@@ -499,10 +498,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [KeQueryTimeIncrement function](..\wdm\nf-wdm-kequerytimeincrement.md) | The KeQueryTimeIncrement routine returns the number of 100-nanosecond units that are added to the system time each time the interval clock interrupts. |
 | [KeQueryTotalCycleTimeThread function](..\wdm\nf-wdm-kequerytotalcycletimethread.md) | The KeQueryTotalCycleTimeThread routine returns the accumulated cycle time for the specified thread. |
 | [KeQueryUnbiasedInterruptTime function](..\wdm\nf-wdm-kequeryunbiasedinterrupttime.md) | The KeQueryUnbiasedInterruptTime routine returns the current value of the system interrupt time count. |
-| [KeRaiseIrqlToDpcLevel function](..\ntddk\nf-ntddk-keraiseirqltodpclevel.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
-| [KeRaiseIrqlToDpcLevel function](..\ntddk\nf-ntddk-keraiseirqltodpclevel~r1.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
-| [KeRaiseIrqlToDpcLevel function](..\ntddk\nf-ntddk-keraiseirqltodpclevel~r2.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
-| [KeRaiseIrqlToDpcLevel function](..\ntddk\nf-ntddk-keraiseirqltodpclevel~r3.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
+| [KeRaiseIrqlToDpcLevel function](..\wdm\nf-wdm-keraiseirqltodpclevel.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
 | [KeReadStateEvent function](..\wdm\nf-wdm-kereadstateevent.md) | The KeReadStateEvent routine returns the current state, signaled or not-signaled, of an event object. |
 | [KeReadStateMutex function](..\wdm\nf-wdm-kereadstatemutex.md) | The KeReadStateMutex routine returns the current state, signaled or not-signaled, of the specified mutex object. |
 | [KeReadStateSemaphore function](..\wdm\nf-wdm-kereadstatesemaphore.md) | The KeReadStateSemaphore routine returns the current state, signaled or not-signaled, of the specified semaphore object. |
@@ -556,9 +552,9 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [KeWaitForMultipleObjects function](..\wdm\nf-wdm-kewaitformultipleobjects.md) | The KeWaitForMultipleObjects routine puts the current thread into an alertable or nonalertable wait state until any or all of a number of dispatcher objects are set to a signaled state or (optionally) until the wait times out. |
 | [KeWaitForSingleObject function](..\wdm\nf-wdm-kewaitforsingleobject.md) | The KeWaitForSingleObject routine puts the current thread into a wait state until the given dispatcher object is set to a signaled state or (optionally) until the wait times out. |
 | [MmAdvanceMdl function](..\wdm\nf-wdm-mmadvancemdl.md) | The MmAdvanceMdl routine advances the beginning of an MDL's virtual memory range by the specified number of bytes. |
-| [MmAllocateContiguousMemory function](..\ntddk\nf-ntddk-mmallocatecontiguousmemory.md) | The MmAllocateContiguousMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
-| [MmAllocateContiguousMemorySpecifyCache function](..\ntddk\nf-ntddk-mmallocatecontiguousmemoryspecifycache.md) | The MmAllocateContiguousMemorySpecifyCache routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
-| [MmAllocateContiguousMemorySpecifyCacheNode function](..\ntddk\nf-ntddk-mmallocatecontiguousmemoryspecifycachenode.md) | The MmAllocateContiguousMemorySpecifyCacheNode routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
+| [MmAllocateContiguousMemory function](..\wdm\nf-wdm-mmallocatecontiguousmemory.md) | The MmAllocateContiguousMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
+| [MmAllocateContiguousMemorySpecifyCache function](..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md) | The MmAllocateContiguousMemorySpecifyCache routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
+| [MmAllocateContiguousMemorySpecifyCacheNode function](..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md) | The MmAllocateContiguousMemorySpecifyCacheNode routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
 | [MmAllocateContiguousNodeMemory function](..\wdm\nf-wdm-mmallocatecontiguousnodememory.md) | The MmAllocateContiguousNodeMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
 | [MmAllocateMappingAddress function](..\wdm\nf-wdm-mmallocatemappingaddress.md) | The MmAllocateMappingAddress routine reserves a range of system virtual address space of the specified size. |
 | [MmAllocateMdlForIoSpace function](..\wdm\nf-wdm-mmallocatemdlforiospace.md) | The MmAllocateMdlForIoSpace routine allocates an MDL and initializes this MDL to describe a set of physical address ranges in I/O address space. |
@@ -568,8 +564,8 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [MmAllocatePagesForMdlEx function](..\wdm\nf-wdm-mmallocatepagesformdlex.md) | The MmAllocatePagesForMdlEx routine allocates nonpaged, physical memory pages to an MDL. |
 | [MmBuildMdlForNonPagedPool function](..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md) | The MmBuildMdlForNonPagedPool routine receives an MDL that specifies a nonpaged virtual memory buffer, and updates it to describe the underlying physical pages. |
 | [MmCopyMemory function](..\ntddk\nf-ntddk-mmcopymemory.md) | The MmCopyMemory routine copies the specified range of virtual or physical memory into the caller-supplied buffer. |
-| [MmFreeContiguousMemory function](..\ntddk\nf-ntddk-mmfreecontiguousmemory.md) | The MmFreeContiguousMemory routine releases a range of physically contiguous memory that was allocated by an MmAllocateContiguousMemoryXxx routine. |
-| [MmFreeContiguousMemorySpecifyCache function](..\ntddk\nf-ntddk-mmfreecontiguousmemoryspecifycache.md) | The MmFreeContiguousMemorySpecifyCache routine frees a buffer that was allocated by an MmAllocateContiguousMemorySpecifyCacheXxx routine. |
+| [MmFreeContiguousMemory function](..\wdm\nf-wdm-mmfreecontiguousmemory.md) | The MmFreeContiguousMemory routine releases a range of physically contiguous memory that was allocated by an MmAllocateContiguousMemoryXxx routine. |
+| [MmFreeContiguousMemorySpecifyCache function](..\wdm\nf-wdm-mmfreecontiguousmemoryspecifycache.md) | The MmFreeContiguousMemorySpecifyCache routine frees a buffer that was allocated by an MmAllocateContiguousMemorySpecifyCacheXxx routine. |
 | [MmFreeMappingAddress function](..\wdm\nf-wdm-mmfreemappingaddress.md) | The MmFreeMappingAddress routine frees a range of virtual memory reserved by the MmAllocateMappingAddress routine. |
 | [MmFreeNonCachedMemory function](..\ntddk\nf-ntddk-mmfreenoncachedmemory.md) | The MmFreeNonCachedMemory routine releases a range of noncached memory that was allocated by the MmAllocateNonCachedMemory routine. |
 | [MmFreePagesFromMdl function](..\wdm\nf-wdm-mmfreepagesfrommdl.md) | The MmFreePagesFromMdl routine frees all the physical pages that are described by an MDL that was created by the MmAllocatePagesForMdl routine. |
@@ -603,8 +599,70 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [MmUnmapLockedPages function](..\wdm\nf-wdm-mmunmaplockedpages.md) | The MmUnmapLockedPages routine releases a mapping that was set up by a preceding call to the MmMapLockedPages or MmMapLockedPagesSpecifyCache routine. |
 | [MmUnmapReservedMapping function](..\wdm\nf-wdm-mmunmapreservedmapping.md) | The MmUnmapReservedMapping routine unmaps a memory buffer that was mapped by the MmMapLockedPagesWithReservedMapping routine. |
 | [MmUnsecureVirtualMemory function](..\ntddk\nf-ntddk-mmunsecurevirtualmemory.md) | The MmUnsecureVirtualMemory routine unsecures a memory address range secured by the MmSecureVirtualMemory routine. |
+| [NtAllocateVirtualMemory function](..\ntifs\nf-ntifs-ntallocatevirtualmemory.md) | The ZwAllocateVirtualMemory routine reserves, commits, or both, a region of pages within the user-mode virtual address space of a specified process. |
+| [NtClose function](..\ntifs\nf-ntifs-ntclose.md) | The ZwClose routine closes an object handle. |
+| [NtCommitComplete function](..\wdm\nf-wdm-ntcommitcomplete.md) | The ZwCommitComplete routine notifies KTM that the calling resource manager has finished committing a transaction's data. |
+| [NtCommitEnlistment function](..\wdm\nf-wdm-ntcommitenlistment.md) | The ZwCommitEnlistment routine initiates the commit operation for a specified enlistment's transaction. |
+| [NtCommitTransaction function](..\wdm\nf-wdm-ntcommittransaction.md) | The ZwCommitTransaction routine initiates a commit operation for a specified transaction. |
+| [NtCreateEnlistment function](..\wdm\nf-wdm-ntcreateenlistment.md) | The ZwCreateEnlistment routine creates a new enlistment object for a transaction. |
+| [NtCreateFile function](..\ntifs\nf-ntifs-ntcreatefile.md) | The ZwCreateFile routine creates a new file or opens an existing file. |
+| [NtCreateResourceManager function](..\wdm\nf-wdm-ntcreateresourcemanager.md) | The ZwCreateResourceManager routine creates a resource manager object. |
+| [NtCreateTransaction function](..\wdm\nf-wdm-ntcreatetransaction.md) | The ZwCreateTransaction routine creates a transaction object. |
+| [NtCreateTransactionManager function](..\wdm\nf-wdm-ntcreatetransactionmanager.md) | The ZwCreateTransactionManager routine creates a new transaction manager object. |
+| [NtDeviceIoControlFile function](..\ntifs\nf-ntifs-ntdeviceiocontrolfile.md) | The ZwDeviceIoControlFile routine sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified operation. |
+| [NtDuplicateToken function](..\ntifs\nf-ntifs-ntduplicatetoken.md) | The ZwDuplicateToken function creates a handle to a new access token that duplicates an existing token. This function can create either a primary token or an impersonation token. |
+| [NtEnumerateTransactionObject function](..\wdm\nf-wdm-ntenumeratetransactionobject.md) | The ZwEnumerateTransactionObject routine enumerates the KTM objects on a computer. |
+| [NtFlushBuffersFileEx function](..\ntifs\nf-ntifs-ntflushbuffersfileex.md) | The ZwFlushBuffersFileEx routine is called by a file system filter driver to send a flush request for a given file to the file system. An optional flush operation flag can be set to control how file data is written to storage. |
+| [NtFreeVirtualMemory function](..\ntifs\nf-ntifs-ntfreevirtualmemory.md) | The ZwFreeVirtualMemory routine releases, decommits, or both, a region of pages within the virtual address space of a specified process. |
+| [NtFsControlFile function](..\ntifs\nf-ntifs-ntfscontrolfile.md) | The ZwFsControlFile routine sends a control code directly to a specified file system or file system filter driver, causing the corresponding driver to perform the specified action. |
+| [NtGetNotificationResourceManager function](..\wdm\nf-wdm-ntgetnotificationresourcemanager.md) | The ZwGetNotificationResourceManager routine retrieves the next transaction notification from a specified resource manager's notification queue. |
+| [NtLockFile function](..\ntifs\nf-ntifs-ntlockfile.md) | The ZwLockFile routine requests a byte-range lock for the specified file. |
+| [NtOpenEnlistment function](..\wdm\nf-wdm-ntopenenlistment.md) | The ZwOpenEnlistment routine obtains a handle to an existing enlistment object. |
+| [NtOpenFile function](..\ntifs\nf-ntifs-ntopenfile.md) | The ZwOpenFile routine opens an existing file, directory, device, or volume. |
+| [NtOpenProcess function](..\ntddk\nf-ntddk-ntopenprocess.md) | The ZwOpenProcess routine opens a handle to a process object and sets the access rights to this object. |
+| [NtOpenProcessTokenEx function](..\ntifs\nf-ntifs-ntopenprocesstokenex.md) | The ZwOpenProcessTokenEx routine opens the access token associated with a process. |
+| [NtOpenResourceManager function](..\wdm\nf-wdm-ntopenresourcemanager.md) | The ZwOpenResourceManager routine returns a handle to an existing resource manager object. |
+| [NtOpenThreadTokenEx function](..\ntifs\nf-ntifs-ntopenthreadtokenex.md) | The ZwOpenThreadTokenEx routine opens the access token associated with a thread. |
+| [NtOpenTransaction function](..\wdm\nf-wdm-ntopentransaction.md) | The ZwOpenTransaction routine obtains a handle to an existing transaction object. |
+| [NtOpenTransactionManager function](..\wdm\nf-wdm-ntopentransactionmanager.md) | The ZwOpenTransactionManager routine obtains a handle to an existing transaction manager object. |
+| [NtPowerInformation function](..\wdm\nf-wdm-ntpowerinformation.md) | The ZwPowerInformation routine sets or retrieves system power information. |
+| [NtPrePrepareComplete function](..\wdm\nf-wdm-ntprepreparecomplete.md) | The ZwPrePrepareComplete routine notifies KTM that the calling resource manager has finished preliminary preparation of a transaction's data. |
+| [NtPrePrepareEnlistment function](..\wdm\nf-wdm-ntpreprepareenlistment.md) | The ZwPrePrepareEnlistment routine initiates the pre-prepare operation for a specified enlistment's transaction. |
+| [NtPrepareComplete function](..\wdm\nf-wdm-ntpreparecomplete.md) | The ZwPrepareComplete routine notifies KTM that the calling resource manager has finished preparing a transaction's data. |
+| [NtPrepareEnlistment function](..\wdm\nf-wdm-ntprepareenlistment.md) | The ZwPrepareEnlistment routine initiates the prepare operation for a specified enlistment's transaction. |
+| [NtQueryDirectoryFile function](..\ntifs\nf-ntifs-ntquerydirectoryfile.md) | The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle. |
+| [NtQueryInformationEnlistment function](..\wdm\nf-wdm-ntqueryinformationenlistment.md) | The ZwQueryInformationEnlistment routine retrieves information about a specified enlistment object. |
+| [NtQueryInformationFile function](..\ntifs\nf-ntifs-ntqueryinformationfile.md) | The ZwQueryInformationFile routine returns various kinds of information about a file object. |
+| [NtQueryInformationResourceManager function](..\wdm\nf-wdm-ntqueryinformationresourcemanager.md) | The ZwQueryInformationResourceManager routine retrieves information about a specified resource manager object. |
+| [NtQueryInformationToken function](..\ntifs\nf-ntifs-ntqueryinformationtoken.md) | The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. |
+| [NtQueryInformationTransaction function](..\wdm\nf-wdm-ntqueryinformationtransaction.md) | The ZwQueryInformationTransaction routine retrieves information about a specified transaction. |
+| [NtQueryInformationTransactionManager function](..\wdm\nf-wdm-ntqueryinformationtransactionmanager.md) | The ZwQueryInformationTransactionManager routine retrieves information about a specified transaction manager object. |
+| [NtQueryObject function](..\ntifs\nf-ntifs-ntqueryobject.md) | The ZwQueryObject routine provides information about a supplied object. |
+| [NtQueryQuotaInformationFile function](..\ntifs\nf-ntifs-ntqueryquotainformationfile.md) | The ZwQueryQuotaInformationFile routine retrieves quota entries associated with the volume specified by the FileHandle parameter. |
+| [NtQuerySecurityObject function](..\ntifs\nf-ntifs-ntquerysecurityobject.md) | The ZwQuerySecurityObject routine retrieves a copy of an object's security descriptor. |
+| [NtQueryVirtualMemory function](..\ntifs\nf-ntifs-ntqueryvirtualmemory.md) | The ZwQueryVirtualMemory routine determines the state, protection, and type of a region of pages within the virtual address space of the subject process. |
+| [NtQueryVolumeInformationFile function](..\ntifs\nf-ntifs-ntqueryvolumeinformationfile.md) | The ZwQueryVolumeInformationFile routine retrieves information about the volume associated with a given file, directory, storage device, or volume. |
+| [NtReadFile function](..\ntifs\nf-ntifs-ntreadfile.md) | The ZwReadFile routine reads data from an open file. |
+| [NtReadOnlyEnlistment function](..\wdm\nf-wdm-ntreadonlyenlistment.md) | The ZwReadOnlyEnlistment routine sets a specified enlistment to be read-only. |
+| [NtRecoverEnlistment function](..\wdm\nf-wdm-ntrecoverenlistment.md) | The ZwRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment. |
+| [NtRecoverResourceManager function](..\wdm\nf-wdm-ntrecoverresourcemanager.md) | The ZwRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object. |
+| [NtRecoverTransactionManager function](..\wdm\nf-wdm-ntrecovertransactionmanager.md) | The ZwRecoverTransactionManager routine reconstructs the state of the transaction manager object (including all transactions, enlistments, and resource managers) from the recovery information that is in the log stream. |
 | [NtRenameTransactionManager function](..\wdm\nf-wdm-ntrenametransactionmanager.md) | The NtRenameTransactionManager routine changes the identity of the transaction manager object that is stored in the CLFS log file stream contained in the log file name. |
+| [NtRollbackComplete function](..\wdm\nf-wdm-ntrollbackcomplete.md) | The ZwRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data. |
+| [NtRollbackEnlistment function](..\wdm\nf-wdm-ntrollbackenlistment.md) | The ZwRollbackEnlistment routine rolls back the transaction that is associated with a specified enlistment. |
+| [NtRollbackTransaction function](..\wdm\nf-wdm-ntrollbacktransaction.md) | The ZwRollbackTransaction routine initiates a rollback operation for a specified transaction. |
+| [NtRollforwardTransactionManager function](..\wdm\nf-wdm-ntrollforwardtransactionmanager.md) | The ZwRollforwardTransactionManager routine initiates recovery operations for all of the in-progress transactions that are assigned to a specified transaction manager. |
+| [NtSetInformationEnlistment function](..\wdm\nf-wdm-ntsetinformationenlistment.md) | The ZwSetInformationEnlistment routine sets information for a specified enlistment object. |
+| [NtSetInformationFile function](..\ntifs\nf-ntifs-ntsetinformationfile.md) | The ZwSetInformationFile routine changes various kinds of information about a file object. |
+| [NtSetInformationResourceManager function](..\wdm\nf-wdm-ntsetinformationresourcemanager.md) | The ZwSetInformationResourceManager routine is not used. |
+| [NtSetInformationToken function](..\ntifs\nf-ntifs-ntsetinformationtoken.md) | The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information. |
+| [NtSetInformationTransaction function](..\wdm\nf-wdm-ntsetinformationtransaction.md) | The ZwSetInformationTransaction routine sets information for a specified transaction. |
 | [NtSetInformationTransactionManager function](..\wdm\nf-wdm-ntsetinformationtransactionmanager.md) | Do not call this routine from kernel-mode code. |
+| [NtSetQuotaInformationFile function](..\ntifs\nf-ntifs-ntsetquotainformationfile.md) | The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume. |
+| [NtSetSecurityObject function](..\ntifs\nf-ntifs-ntsetsecurityobject.md) | The ZwSetSecurityObject routine sets an object's security state. |
+| [NtSinglePhaseReject function](..\wdm\nf-wdm-ntsinglephasereject.md) | The ZwSinglePhaseReject routine informs KTM that the calling resource manager will not support single-phase commit operations for a specified enlistment. |
+| [NtUnlockFile function](..\ntifs\nf-ntifs-ntunlockfile.md) | The ZwUnlockFile routine unlocks a byte-range lock in a file. |
+| [NtWriteFile function](..\ntifs\nf-ntifs-ntwritefile.md) | The ZwWriteFile routine writes data to an open file. |
 | [ObCloseHandle function](..\wdm\nf-wdm-obclosehandle.md) | The ObCloseHandle routine closes an object handle. |
 | [ObDereferenceObjectDeferDelete function](..\wdm\nf-wdm-obdereferenceobjectdeferdelete.md) | The ObDereferenceObjectDeferDelete routine decrements the reference count for the given object, checks for object retention, and avoids deadlocks. |
 | [ObDereferenceObjectDeferDeleteWithTag function](..\wdm\nf-wdm-obdereferenceobjectdeferdeletewithtag.md) | The ObDereferenceObjectDeferDeleteWithTag routine decrements the reference count for the specified object, defers deletion of the object to avoid deadlocks, and writes a four-byte tag value to the object to support object reference tracing. |
@@ -616,6 +674,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [ObRegisterCallbacks function](..\wdm\nf-wdm-obregistercallbacks.md) | The ObRegisterCallbacks routine registers a list of callback routines for thread, process, and desktop handle operations. |
 | [ObReleaseObjectSecurity function](..\wdm\nf-wdm-obreleaseobjectsecurity.md) | The ObReleaseObjectSecurity routine is the reciprocal to ObGetObjectSecurity. |
 | [ObUnRegisterCallbacks function](..\wdm\nf-wdm-obunregistercallbacks.md) | The ObUnRegisterCallbacks routine unregisters a set of callback routines that were registered with the ObRegisterCallbacks routine. |
+| [ObfReferenceObject function](..\wdm\nf-wdm-obfreferenceobject.md) | The ObReferenceObject routine increments the reference count to the given object. |
 | [PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function](..\pepfx\nf-pepfx-pep_acpi_initialize_extended_io_resource.md) | The PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_EXTENDED_ADDRESS structure. |
 | [PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE function](..\pepfx\nf-pepfx-pep_acpi_initialize_extended_memory_resource.md) | The PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_EXTENDED_ADDRESS structure. |
 | [PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE function](..\pepfx\nf-pepfx-pep_acpi_initialize_gpio_int_resource.md) | The PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_GPIO_RESOURCE structure. |
@@ -995,10 +1054,62 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [RtlSizeTAdd function](..\ntintsafe\nf-ntintsafe-rtlsizetadd.md) | Adds two values of type SIZE_T. |
 | [RtlSizeTMult function](..\ntintsafe\nf-ntintsafe-rtlsizetmult.md) | Multiplies one value of type SIZE_T by another. |
 | [RtlSizeTSub function](..\ntintsafe\nf-ntintsafe-rtlsizetsub.md) | Subtracts one value of type SIZE_T from another. |
+| [RtlStringCbCatA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcata.md) | The RtlStringCbCatW and RtlStringCbCatA functions concatenate two byte-counted strings. |
+| [RtlStringCbCatExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexa.md) | The RtlStringCbCatExW and RtlStringCbCatExA functions concatenate two byte-counted strings. |
+| [RtlStringCbCatExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexw.md) | The RtlStringCbCatExW and RtlStringCbCatExA functions concatenate two byte-counted strings. |
+| [RtlStringCbCatNA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatna.md) | The RtlStringCbCatNW and RtlStringCbCatNA functions concatenate two byte-counted strings while limiting the size of the appended string. |
+| [RtlStringCbCatNExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexa.md) | The RtlStringCbCatNExW and RtlStringCbCatNExA functions concatenate two byte-counted strings while limiting the size of the appended string. |
+| [RtlStringCbCatNExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md) | The RtlStringCbCatNExW and RtlStringCbCatNExA functions concatenate two byte-counted strings while limiting the size of the appended string. |
+| [RtlStringCbCatNW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnw.md) | The RtlStringCbCatNW and RtlStringCbCatNA functions concatenate two byte-counted strings while limiting the size of the appended string. |
+| [RtlStringCbCatW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatw.md) | The RtlStringCbCatW and RtlStringCbCatA functions concatenate two byte-counted strings. |
+| [RtlStringCbCopyA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopya.md) | The RtlStringCbCopyW and RtlStringCbCopyA functions copy a byte-counted string into a buffer. |
+| [RtlStringCbCopyExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyexa.md) | The RtlStringCbCopyExW and RtlStringCbCopyExA functions copy a byte-counted string into a buffer. |
+| [RtlStringCbCopyExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyexw.md) | The RtlStringCbCopyExW and RtlStringCbCopyExA functions copy a byte-counted string into a buffer. |
+| [RtlStringCbCopyNA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyna.md) | The RtlStringCbCopyNW and RtlStringCbCopyNA functions copy a byte-counted string to a buffer while limiting the size of the copied string. |
+| [RtlStringCbCopyNExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynexa.md) | The RtlStringCbCopyNExW and RtlStringCbCopyNExA functions copy a byte-counted string to a buffer while limiting the size of the copied string. |
+| [RtlStringCbCopyNExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynexw.md) | The RtlStringCbCopyNExW and RtlStringCbCopyNExA functions copy a byte-counted string to a buffer while limiting the size of the copied string. |
+| [RtlStringCbCopyNW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md) | The RtlStringCbCopyNW and RtlStringCbCopyNA functions copy a byte-counted string to a buffer while limiting the size of the copied string. |
 | [RtlStringCbCopyUnicodeString function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyunicodestring.md) | The RtlStringCbCopyUnicodeString function copies the contents of a UNICODE_STRING structure to a specified destination. |
 | [RtlStringCbCopyUnicodeStringEx function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyunicodestringex.md) | The RtlStringCbCopyUnicodeStringEx function copies the contents of a UNICODE_STRING structure to a specified destination. |
+| [RtlStringCbCopyW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyw.md) | The RtlStringCbCopyW and RtlStringCbCopyA functions copy a byte-counted string into a buffer. |
+| [RtlStringCbLengthA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcblengtha.md) | The RtlStringCbLengthW and RtlStringCbLengthA functions determine the length, in bytes, of a supplied string. |
+| [RtlStringCbLengthW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcblengthw.md) | The RtlStringCbLengthW and RtlStringCbLengthA functions determine the length, in bytes, of a supplied string. |
+| [RtlStringCbPrintfA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfa.md) | The RtlStringCbPrintfW and RtlStringCbPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCbPrintfExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfexa.md) | The RtlStringCbPrintfExW and RtlStringCbPrintfExA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCbPrintfExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfexw.md) | The RtlStringCbPrintfExW and RtlStringCbPrintfExA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCbPrintfW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfw.md) | The RtlStringCbPrintfW and RtlStringCbPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCbVPrintfA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfa.md) | The RtlStringCbVPrintfW and RtlStringCbVPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCbVPrintfExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfexa.md) | The RtlStringCbVPrintfExW and RtlStringCbVPrintfExA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCbVPrintfExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfexw.md) | The RtlStringCbVPrintfExW and RtlStringCbVPrintfExA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCbVPrintfW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfw.md) | The RtlStringCbVPrintfW and RtlStringCbVPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchCatA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcata.md) | The RtlStringCchCatW and RtlStringCchCatA functions concatenate two character-counted strings. |
+| [RtlStringCchCatExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexa.md) | The RtlStringCchCatExW and RtlStringCchCatExA functions concatenate two character-counted strings. |
+| [RtlStringCchCatExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md) | The RtlStringCchCatExW and RtlStringCchCatExA functions concatenate two character-counted strings. |
+| [RtlStringCchCatNA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatna.md) | The RtlStringCchCatNW and RtlStringCchCatNA functions concatenate two character-counted strings while limiting the size of the appended string. |
+| [RtlStringCchCatNExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexa.md) | The RtlStringCchCatNExW and RtlStringCchCatNExA functions concatenate two character-counted strings while limiting the size of the appended string. |
+| [RtlStringCchCatNExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md) | The RtlStringCchCatNExW and RtlStringCchCatNExA functions concatenate two character-counted strings while limiting the size of the appended string. |
+| [RtlStringCchCatNW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnw.md) | The RtlStringCchCatNW and RtlStringCchCatNA functions concatenate two character-counted strings while limiting the size of the appended string. |
+| [RtlStringCchCatW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatw.md) | The RtlStringCchCatW and RtlStringCchCatA functions concatenate two character-counted strings. |
+| [RtlStringCchCopyA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopya.md) | The RtlStringCchCopyW and RtlStringCchCopyA functions copy a null-terminated source string into a destination buffer of specified length. |
+| [RtlStringCchCopyExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyexa.md) | The RtlStringCchCopyExW and RtlStringCchCopyExA functions copy a character-counted string into a buffer. |
+| [RtlStringCchCopyExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyexw.md) | The RtlStringCchCopyExW and RtlStringCchCopyExA functions copy a character-counted string into a buffer. |
+| [RtlStringCchCopyNA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyna.md) | The RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string. |
+| [RtlStringCchCopyNExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynexa.md) | The RtlStringCchCopyNExW and RtlStringCchCopyNExA functions copy a character-counted string to a buffer while limiting the size of the copied string. |
+| [RtlStringCchCopyNExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynexw.md) | The RtlStringCchCopyNExW and RtlStringCchCopyNExA functions copy a character-counted string to a buffer while limiting the size of the copied string. |
+| [RtlStringCchCopyNW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md) | The RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string. |
 | [RtlStringCchCopyUnicodeString function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyunicodestring.md) | The RtlStringCchCopyUnicodeString function copies the contents of a UNICODE_STRING structure to a specified destination. |
 | [RtlStringCchCopyUnicodeStringEx function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyunicodestringex.md) | The RtlStringCchCopyUnicodeStringEx function copies the contents of a UNICODE_STRING structure to a specified destination. |
+| [RtlStringCchCopyW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyw.md) | The RtlStringCchCopyW and RtlStringCchCopyA functions copy a null-terminated source string into a destination buffer of specified length. |
+| [RtlStringCchLengthA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchlengtha.md) | The RtlStringCchLengthW and RtlStringCchLengthA functions determine the length, in characters, of a supplied string. |
+| [RtlStringCchLengthW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchlengthw.md) | The RtlStringCchLengthW and RtlStringCchLengthA functions determine the length, in characters, of a supplied string. |
+| [RtlStringCchPrintfA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfa.md) | The RtlStringCchPrintfW and RtlStringCchPrintfA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchPrintfExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfexa.md) | The RtlStringCchPrintfExW and RtlStringCchPrintfExA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchPrintfExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfexw.md) | The RtlStringCchPrintfExW and RtlStringCchPrintfExA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchPrintfW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md) | The RtlStringCchPrintfW and RtlStringCchPrintfA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchVPrintfA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfa.md) | The RtlStringCchVPrintfW and RtlStringCchVPrintfA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchVPrintfExA function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfexa.md) | The RtlStringCchVPrintfExW and RtlStringCchVPrintfExA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchVPrintfExW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfexw.md) | The RtlStringCchVPrintfExW and RtlStringCchVPrintfExA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
+| [RtlStringCchVPrintfW function](..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfw.md) | The RtlStringCchVPrintfW and RtlStringCchVPrintfA functions create a character-counted text string, with formatting that is based on supplied formatting information. |
 | [RtlStringFromGUID function](..\wdm\nf-wdm-rtlstringfromguid.md) | The RtlStringFromGUID routine converts a given GUID from binary format into a Unicode string. |
 | [RtlTestBit function](..\wdm\nf-wdm-rtltestbit.md) | The RtlTestBit routine returns the value of a bit in a bitmap. |
 | [RtlTimeFieldsToTime function](..\wdm\nf-wdm-rtltimefieldstotime.md) | The RtlTimeFieldsToTime routine converts TIME_FIELDS information to a system time value. |
@@ -1100,6 +1211,8 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [RtlUTF8ToUnicodeN function](..\wdm\nf-wdm-rtlutf8tounicoden.md) | The RtlUTF8ToUnicodeN routine converts a UTF-8 string to a Unicode string. |
 | [RtlUlongByteSwap function](..\wdm\nf-wdm-rtlulongbyteswap.md) | The RtlUlongByteSwap routine reverses the ordering of the four bytes in a 32-bit unsigned integer value. |
 | [RtlUlonglongByteSwap function](..\wdm\nf-wdm-rtlulonglongbyteswap.md) | The RtlUlonglongByteSwap routine reverses the ordering of the eight bytes in a 64-bit unsigned integer value. |
+| [RtlUnalignedStringCbLengthW function](..\ntstrsafe\nf-ntstrsafe-rtlunalignedstringcblengthw.md) | The RtlUnalignedStringCbLengthW function is a version of the RtlStringCbLength function that accepts an unaligned pointer to a string of Unicode characters. |
+| [RtlUnalignedStringCchLengthW function](..\ntstrsafe\nf-ntstrsafe-rtlunalignedstringcchlengthw.md) | The RtlUnalignedStringCchLengthW function is a version of the RtlStringCchLength function that accepts an unaligned pointer to a string of Unicode characters. |
 | [RtlUnicodeStringCat function](..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcat.md) | The RtlUnicodeStringCat function concatenates two strings that are contained in UNICODE_STRING structures. |
 | [RtlUnicodeStringCatEx function](..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatex.md) | The RtlUnicodeStringCatEx function concatenates two strings that are contained in UNICODE_STRING structures. |
 | [RtlUnicodeStringCatString function](..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatstring.md) | The RtlUnicodeStringCatString function concatenates two strings when the destination string is contained in a UNICODE_STRING structure. |
@@ -1294,13 +1407,11 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [ZwOpenThreadTokenEx function](..\ntifs\nf-ntifs-zwopenthreadtokenex.md) | The ZwOpenThreadTokenEx routine opens the access token associated with a thread. |
 | [ZwOpenTransaction function](..\wdm\nf-wdm-zwopentransaction.md) | The ZwOpenTransaction routine obtains a handle to an existing transaction object. |
 | [ZwOpenTransactionManager function](..\wdm\nf-wdm-zwopentransactionmanager.md) | The ZwOpenTransactionManager routine obtains a handle to an existing transaction manager object. |
-| [ZwPowerInformation function](..\ntddk\nf-ntddk-zwpowerinformation.md) | The ZwPowerInformation routine sets or retrieves system power information. |
 | [ZwPrePrepareComplete function](..\wdm\nf-wdm-zwprepreparecomplete.md) | The ZwPrePrepareComplete routine notifies KTM that the calling resource manager has finished preliminary preparation of a transaction's data. |
 | [ZwPrePrepareEnlistment function](..\wdm\nf-wdm-zwpreprepareenlistment.md) | The ZwPrePrepareEnlistment routine initiates the pre-prepare operation for a specified enlistment's transaction. |
 | [ZwPrepareComplete function](..\wdm\nf-wdm-zwpreparecomplete.md) | The ZwPrepareComplete routine notifies KTM that the calling resource manager has finished preparing a transaction's data. |
 | [ZwPrepareEnlistment function](..\wdm\nf-wdm-zwprepareenlistment.md) | The ZwPrepareEnlistment routine initiates the prepare operation for a specified enlistment's transaction. |
 | [ZwQueryDirectoryFile function](..\ntifs\nf-ntifs-zwquerydirectoryfile.md) | The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle. |
-| [ZwQueryDirectoryFileEx function](..\ntifs\nf-ntifs-zwquerydirectoryfileex.md) | The ZwQueryDirectoryFileEx routine returns information about files in the directory specified by the FileHandle parameter. |
 | [ZwQueryEaFile function](..\ntifs\nf-ntifs-zwqueryeafile.md) | The ZwQueryEaFile routine returns information about extended-attribute (EA) values for a file. |
 | [ZwQueryFullAttributesFile function](..\wdm\nf-wdm-zwqueryfullattributesfile.md) | The ZwQueryFullAttributesFile routine supplies network open information for the specified file. |
 | [ZwQueryInformationEnlistment function](..\wdm\nf-wdm-zwqueryinformationenlistment.md) | The ZwQueryInformationEnlistment routine retrieves information about a specified enlistment object. |
@@ -1352,6 +1463,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | Title   | Description   |
 | ---- |:---- |
 | [ALLOCATE_FUNCTION_EX callback](..\wdm\nc-wdm-allocate_function_ex.md) | The LookasideListAllocateEx routine allocates the storage for a new lookaside-list entry when a client requests an entry from a lookaside list that is empty. |
+| [BOUND_CALLBACK callback](..\wdm\nc-wdm-bound_callback.md) | The BoundCallback routine is executed whenever the system issues a bounds exception for a user-mode thread. |
 | [DEVICE_ACTIVE_COOLING callback](..\poclass\nc-poclass-device_active_cooling.md) | The ActiveCooling callback routine engages or disengages a device's active-cooling function. |
 | [DEVICE_PASSIVE_COOLING callback](..\poclass\nc-poclass-device_passive_cooling.md) | The PassiveCooling callback routine controls the degree to which the device must throttle its performance to meet cooling requirements. |
 | [DRIVER_CONTROL callback](..\wdm\nc-wdm-driver_control.md) | This routine starts a DMA data-transfer or a data transfer operation. |
@@ -1378,6 +1490,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [IO_CSQ_PEEK_NEXT_IRP callback](..\wdm\nc-wdm-io_csq_peek_next_irp.md) | The CsqPeekNextIrp routine is used by the system to find the next matching IRP in a driver-implemented, cancel-safe IRP queue. |
 | [IO_CSQ_RELEASE_LOCK callback](..\wdm\nc-wdm-io_csq_release_lock.md) | The CsqReleaseLock routine is used by the system to release the lock that was acquired using CsqAcquireLock. |
 | [IO_CSQ_REMOVE_IRP callback](..\wdm\nc-wdm-io_csq_remove_irp.md) | The CsqRemoveIrp routine is used by the system to remove the specified IRP from a driver-implemented, cancel-safe IRP queue. |
+| [IO_SESSION_NOTIFICATION_FUNCTION callback](..\wdm\nc-wdm-io_session_notification_function.md) | The IO_SESSION_NOTIFICATION_FUNCTION function type defines a callback routine through which a driver receives notifications of changes in the state of user sessions that the driver is interested in. |
 | [IO_TIMER_ROUTINE callback](..\wdm\nc-wdm-io_timer_routine.md) | The IoTimer routine is a DPC that, if registered, is called once per second. |
 | [KBUGCHECK_CALLBACK_ROUTINE callback](..\wdm\nc-wdm-kbugcheck_callback_routine.md) | The BugCheckCallback routine is executed whenever the system issues a bug check. |
 | [KBUGCHECK_REASON_CALLBACK_ROUTINE callback](..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md) | Driver-implemented callback functions that the system executes when it issues a bug check. |
@@ -1389,13 +1502,19 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [MM_MDL_ROUTINE callback](..\wdm\nc-wdm-mm_mdl_routine.md) | A driver-supplied callback routine that is invoked after a memory descriptor list (MDL) is mapped by calling the MmMapMdl function. |
 | [PALLOCATE_ADAPTER_CHANNEL callback](..\wdm\nc-wdm-pallocate_adapter_channel.md) | The AllocateAdapterChannel routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied AdapterControl routine to carry out the DMA operation. |
 | [PALLOCATE_ADAPTER_CHANNEL_EX callback](..\wdm\nc-wdm-pallocate_adapter_channel_ex.md) | The AllocateAdapterChannelEx routine allocates the resources that are needed to perform a DMA transfer, and then calls the driver-supplied AdapterControl routine to initiate the DMA transfer. |
+| [PALLOCATE_COMMON_BUFFER callback](..\wdm\nc-wdm-pallocate_common_buffer.md) | The AllocateCommonBuffer routine allocates memory and maps it so that it is simultaneously accessible from both the processor and a device for DMA operations. |
+| [PALLOCATE_COMMON_BUFFER_EX callback](..\wdm\nc-wdm-pallocate_common_buffer_ex.md) | The AllocateCommonBufferEx routine allocates memory for a common buffer and maps this memory so that it can be accessed both by the processor and by a device that performs DMA operations. |
+| [PBUILD_MDL_FROM_SCATTER_GATHER_LIST callback](..\wdm\nc-wdm-pbuild_mdl_from_scatter_gather_list.md) | The BuildMdlFromScatterGatherList routine builds an MDL from a scatter/gather list allocated by the system.Note  This routine is reserved for system use. |
+| [PBUILD_SCATTER_GATHER_LIST callback](..\wdm\nc-wdm-pbuild_scatter_gather_list.md) | The BuildScatterGatherList routine prepares the system for a DMA operation, using a driver-supplied buffer to build the scatter/gather list. |
 | [PBUILD_SCATTER_GATHER_LIST_EX callback](..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md) | The BuildScatterGatherListEx routine allocates the resources that are required for a DMA transfer, builds a scatter/gather list, and calls the driver-supplied AdapterListControl routine to initiate the DMA transfer. |
+| [PCALCULATE_SCATTER_GATHER_LIST_SIZE callback](..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md) | The CalculateScatterGatherList routine calculates the size, in bytes, of scatter/gather list necessary to hold a given buffer. |
 | [PCANCEL_ADAPTER_CHANNEL callback](..\wdm\nc-wdm-pcancel_adapter_channel.md) | The CancelAdapterChannel routine tries to cancel a pending request to allocate a DMA channel. |
 | [PCANCEL_MAPPED_TRANSFER callback](..\wdm\nc-wdm-pcancel_mapped_transfer.md) | The CancelMappedTransfer routine cancels a system DMA transfer that is currently mapped to an adapter. |
 | [PCI_MSIX_MASKUNMASK_ENTRY callback](..\wdm\nc-wdm-pci_msix_maskunmask_entry.md) | The MaskTableEntry routine masks an interrupt in the MSI-X hardware interrupt table. |
 | [PCI_MSIX_SET_ENTRY callback](..\wdm\nc-wdm-pci_msix_set_entry.md) | The SetTableEntry routine sets the message ID for a table entry in the MSI-X hardware interrupt table. |
 | [PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK callback](..\wdm\nc-wdm-pclfs_client_advance_tail_callback.md) | The ClfsAdvanceTailCallback function advances the base log sequence number (LSN) of the client's log. |
 | [PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK callback](..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md) | The ClfsLogGrowthCompleteCallback function implements the actions that the client will take when space is freed in a log that had previously been full. |
+| [PCLFS_CLIENT_LOG_UNPINNED_CALLBACK callback](..\wdm\nc-wdm-pclfs_client_log_unpinned_callback.md) | The ClfsLogUnpinnedCallback function implements any actions that the client will take when a log that had previously been pinned becomes unpinned. |
 | [PCONFIGURE_ADAPTER_CHANNEL callback](..\wdm\nc-wdm-pconfigure_adapter_channel.md) | The ConfigureAdapterChannel routine invokes a custom function that is implemented by the DMA controller represented by an adapter object. |
 | [PCREATE_PROCESS_NOTIFY_ROUTINE callback](..\ntddk\nc-ntddk-pcreate_process_notify_routine.md) | Process-creation callback implemented by a driver to track the system-wide creation and deletion of processes against the driver's internal state. |
 | [PCREATE_PROCESS_NOTIFY_ROUTINE_EX callback](..\ntddk\nc-ntddk-pcreate_process_notify_routine_ex.md) | A callback routine implemented by a driver to notify the caller when a process is created or exits. |
@@ -1423,6 +1542,8 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [PLOAD_IMAGE_NOTIFY_ROUTINE callback](..\ntddk\nc-ntddk-pload_image_notify_routine.md) | Called by the operating system to notify the driver when a driver image or a user image (for example, a DLL or EXE) is mapped into virtual memory. |
 | [PMAP_TRANSFER callback](..\wdm\nc-wdm-pmap_transfer.md) | The MapTransfer routine sets up map registers for an adapter object to map a DMA transfer from a locked-down buffer. |
 | [PMAP_TRANSFER_EX callback](..\wdm\nc-wdm-pmap_transfer_ex.md) | The MapTransferEx routine sets up map registers to map the physical addresses in a scatter/gather list to the logical addresses that are required to do a DMA transfer. |
+| [POB_POST_OPERATION_CALLBACK callback](..\wdm\nc-wdm-pob_post_operation_callback.md) | The ObjectPostCallback routine is called by the operating system after a process or thread handle operation occurs. |
+| [POB_PRE_OPERATION_CALLBACK callback](..\wdm\nc-wdm-pob_pre_operation_callback.md) | The ObjectPreCallback routine is called by the operating system when a process or thread handle operation occurs. |
 | [POFXCALLBACKCRITICALRESOURCE callback](..\pepfx\nc-pepfx-pofxcallbackcriticalresource.md) | The TransitionCriticalResource routine changes the active/inactive state of a core system component. |
 | [POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS callback](..\pepfx\nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md) | The EnumerateUnmaskedInterrupts routine enumerates interrupt sources whose interrupts are unmasked and enabled. |
 | [POFXCALLBACKPLATFORMIDLEVETO callback](..\pepfx\nc-pepfx-pofxcallbackplatformidleveto.md) | The PlatformIdleVeto routine increments or decrements the veto count for a veto code for a platform idle state. |
@@ -1447,6 +1568,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [PREAD_DMA_COUNTER callback](..\wdm\nc-wdm-pread_dma_counter.md) | The ReadDmaCounter routine returns the number of bytes remaining to be transferred during the current subordinate DMA operation. |
 | [PREENUMERATE_SELF callback](..\wdm\nc-wdm-preenumerate_self.md) | A ReenumerateSelf routine requests that a bus driver reenumerate a child device. |
 | [PROCESSOR_HALT_ROUTINE callback](..\wdm\nc-wdm-processor_halt_routine.md) | A Halt callback routine transitions the processor to an idle state. |
+| [PTM_RM_NOTIFICATION callback](..\wdm\nc-wdm-ptm_rm_notification.md) | A resource manager's ResourceManagerNotification callback routine receives and handles transaction notifications. |
 | [REQUEST_POWER_COMPLETE callback](..\wdm\nc-wdm-request_power_complete.md) | The PowerCompletion callback routine completes the processing of a power IRP. |
 | [RTL_QUERY_REGISTRY_ROUTINE callback](..\wdm\nc-wdm-rtl_query_registry_routine.md) | The QueryRoutine routine provides information about a registry value that was requested in a preceding call to the RtlQueryRegistryValues routine. |
 | [RTL_RUN_ONCE_INIT_FN callback](..\ntddk\nc-ntddk-rtl_run_once_init_fn.md) | The RunOnceInitialization routine performs a one-time initialization operation. |
@@ -1471,6 +1593,8 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | ---- |:---- |
 | [CM_Power_Data_s structure](..\wdm\ns-wdm-cm_power_data_s.md) | The CM_POWER_DATA structure contains information about a device's power management state and capabilities. |
 | [CORRELATION_VECTOR structure](..\ntddk\ns-ntddk-correlation_vector.md) | Store the correlation vector that is used to reference events and the generated logs for diagnostic purposes. |
+| [WMIREGGUIDW structure](..\wmistr\ns-wmistr-wmiregguidw.md) | The WMIREGGUID structure contains new or updated registration information for a data block or event block. |
+| [WMIREGINFOW structure](..\wmistr\ns-wmistr-wmireginfow.md) | The WMIREGINFO structure contains information provided by a driver to register or update its data blocks and event blocks. |
 | [_AUX_MODULE_BASIC_INFO structure](..\aux_klib\ns-aux_klib-_aux_module_basic_info.md) | The AUX_MODULE_BASIC_INFO structure contains basic information about a loaded image module. |
 | [_AUX_MODULE_EXTENDED_INFO structure](..\aux_klib\ns-aux_klib-_aux_module_extended_info.md) | The AUX_MODULE_EXTENDED_INFO structure contains extended information about a loaded image module. |
 | [_BDCB_IMAGE_INFORMATION structure](..\ntddk\ns-ntddk-_bdcb_image_information.md) | The BDCB_IMAGE_INFORMATION structure describes information about a boot-start driver that is about to be initialized, provided by Windows to a boot-start driver's BOOT_DRIVER_CALLBACK_FUNCTION routine. |
@@ -1482,6 +1606,13 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [_CLFS_MGMT_CLIENT_REGISTRATION structure](..\wdm\ns-wdm-_clfs_mgmt_client_registration.md) | The CLFS_MGMT_CLIENT_REGISTRATION structure is given to CLFS management by clients who manage their own logs. |
 | [_CLFS_MGMT_POLICY structure](..\wdm\ns-wdm-_clfs_mgmt_policy.md) | The CLFS_MGMT_POLICY structure holds a description of a policy for managing a CLFS log. |
 | [_CLFS_STREAM_ID_INFORMATION structure](..\wdm\ns-wdm-_clfs_stream_id_information.md) | The CLFS_STREAM_ID_INFORMATION structure holds a value that identifies a stream in a Common Log File System (CLFS) log. |
+| [_CLS_CONTAINER_INFORMATION structure](..\wdm\ns-wdm-_cls_container_information.md) | The CLFS_CONTAINER_INFORMATION structure holds descriptive information for an individual container in a Common Log File System (CLFS) log. |
+| [_CLS_INFORMATION structure](..\wdm\ns-wdm-_cls_information.md) | The CLFS_INFORMATION structure holds metadata and state information for a Common Log File System (CLFS) stream and/or its underlying physical log. |
+| [_CLS_IO_STATISTICS structure](..\wdm\ns-wdm-_cls_io_statistics.md) | The CLFS_IO_STATISTICS structure holds I/O statistics data for a Common Log File System (CLFS) log. |
+| [_CLS_IO_STATISTICS_HEADER structure](..\wdm\ns-wdm-_cls_io_statistics_header.md) | The CLFS_IO_STATISTICS_HEADER structure holds the header portion of a CLFS_IO_STATISTICS structure. |
+| [_CLS_LSN structure](..\wdm\ns-wdm-_cls_lsn.md) | The CLFS_LSN structure identifies an individual record in a Common Log File System (CLFS) stream. |
+| [_CLS_SCAN_CONTEXT structure](..\wdm\ns-wdm-_cls_scan_context.md) | The CLFS_SCAN_CONTEXT structure holds context information to support a scan of the containers in a Common Log File System (CLFS) log. |
+| [_CLS_WRITE_ENTRY structure](..\wdm\ns-wdm-_cls_write_entry.md) | The CLFS_WRITE_ENTRY structure holds the address and size of a buffer that contains one unit of data to be written to a Common Log File System (CLFS) stream. |
 | [_CM_EISA_FUNCTION_INFORMATION structure](..\wdm\ns-wdm-_cm_eisa_function_information.md) | The CM_EISA_FUNCTION_INFORMATION structure defines detailed EISA configuration information returned by HalGetBusData for the input BusDataType EisaConfiguration, or by HalGetBusDataByOffset for the input BusDataType EisaConfiguration and the Offset zero, assuming the caller-allocated Buffer is of sufficient Length. |
 | [_CM_EISA_SLOT_INFORMATION structure](..\wdm\ns-wdm-_cm_eisa_slot_information.md) | The CM_EISA_SLOT_INFORMATION structure defines EISA configuration header information returned by HalGetBusData for the input BusDataType = EisaConfiguration, or by HalGetBusDataByOffset for the inputs BusDataType = EisaConfiguration and Offset = 0, assuming the caller-allocated Buffer is of sufficient Length. |
 | [_CM_FLOPPY_DEVICE_DATA structure](..\wdm\ns-wdm-_cm_floppy_device_data.md) | The CM_FLOPPY_DEVICE_DATA structure defines a device-type-specific data record that is stored in the \\Registry\Machine\Hardware\Description tree for a floppy controller if the system can collect this information during the boot process. |
@@ -1750,7 +1881,9 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [_PO_FX_COMPONENT_IDLE_STATE structure](..\wdm\ns-wdm-_po_fx_component_idle_state.md) | The PO_FX_COMPONENT_IDLE_STATE structure specifies the attributes of an Fx power state of a component in a device. |
 | [_PO_FX_COMPONENT_PERF_INFO structure](..\wdm\ns-wdm-_po_fx_component_perf_info.md) | The PO_FX_COMPONENT_PERF_INFO structure describes all the sets of performance states for a single component within a device. |
 | [_PO_FX_COMPONENT_PERF_SET structure](..\wdm\ns-wdm-_po_fx_component_perf_set.md) | The PO_FX_COMPONENT_PERF_SET structure represents a set of performance states for a single component within a device. |
+| [_PO_FX_COMPONENT_V2 structure](..\wdm\ns-wdm-_po_fx_component_v2.md) | The PO_FX_COMPONENT structure describes the power state attributes of a component in a device. |
 | [_PO_FX_CORE_DEVICE structure](..\pepfx\ns-pepfx-_po_fx_core_device.md) | The PO_FX_CORE_DEVICE structure contains information about the power-state attributes of the components in a core system resource, and provides a software interface for power-managing these components. |
+| [_PO_FX_DEVICE_V1 structure](..\wdm\ns-wdm-_po_fx_device_v1.md) | The PO_FX_DEVICE structure describes the power attributes of a device to the power management framework (PoFx). |
 | [_PO_FX_PERF_STATE structure](..\wdm\ns-wdm-_po_fx_perf_state.md) | The PO_FX_PERF_STATE structure represents a performance state for a single component within a device. |
 | [_PO_FX_PERF_STATE_CHANGE structure](..\wdm\ns-wdm-_po_fx_perf_state_change.md) | The PO_FX_PERF_STATE_CHANGE structure contains information about a change to a performance state that is being requested by calling the PoFxIssueComponentPerfStateChange or PoFxIssueComponentPerfStateChangeMultiple routine. |
 | [_PRIVILEGE_SET structure](..\wdm\ns-wdm-_privilege_set.md) | The PRIVILEGE_SET structure specifies a set of security privileges. For more information, see the reference page for PRIVILEGE_SET in the Microsoft Windows SDK documentation. |
@@ -1771,7 +1904,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [_REG_LOAD_KEY_INFORMATION structure](..\wdm\ns-wdm-_reg_load_key_information.md) | The REG_LOAD_KEY_INFORMATION structure contains information about a registry hive that is being loaded. |
 | [_REG_POST_CREATE_KEY_INFORMATION structure](..\wdm\ns-wdm-_reg_post_create_key_information.md) | The REG_POST_CREATE_KEY_INFORMATION structure contains the result of an attempt to create a registry key. |
 | [_REG_POST_OPERATION_INFORMATION structure](..\wdm\ns-wdm-_reg_post_operation_information.md) | The REG_POST_OPERATION_INFORMATION structure contains information about a completed registry operation that a RegistryCallback routine can use. |
-| [_REG_PRE_CREATE_KEY_INFORMATION structure](..\wdm\ns-wdm-_reg_pre_create_key_information.md) | The REG_PRE_CREATE_KEY_INFORMATION structure contains the name of a registry key that is about to be created. |
+| [_REG_PRE_CREATE_KEY_INFORMATION structure](..\wdm\ns-wdm-_reg_pre_create_key_information.md) | The REG_PRE_OPEN_KEY_INFORMATION structure contains the name of a registry key that is about to be opened. |
 | [_REG_QUERY_KEY_INFORMATION structure](..\wdm\ns-wdm-_reg_query_key_information.md) | The REG_QUERY_KEY_INFORMATION structure describes the metadata that is about to be queried for a key. |
 | [_REG_QUERY_KEY_NAME structure](..\wdm\ns-wdm-_reg_query_key_name.md) | The REG_QUERY_KEY_NAME structure describes the full registry key name of an object being queried. |
 | [_REG_QUERY_KEY_SECURITY_INFORMATION structure](..\wdm\ns-wdm-_reg_query_key_security_information.md) | The REG_QUERY_KEY_SECURITY_INFORMATION structure receives security information for a registry key object. |
@@ -1845,6 +1978,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [_BUS_DATA_TYPE enumeration](..\ntddk\ne-ntddk-_bus_data_type.md) | The BUS_DATA_TYPE enumeration indicates the type of bus configuration space. |
 | [_CLFS_CONTEXT_MODE enumeration](..\wdm\ne-wdm-_clfs_context_mode.md) | The CLFS_CONTEXT_MODE enumeration indicates the type of sequence that the Common Log File System (CLFS) driver follows when it reads a set of records from a stream. |
 | [_CLFS_MGMT_POLICY_TYPE enumeration](..\wdm\ne-wdm-_clfs_mgmt_policy_type.md) | The CLFS_MGMT_POLICY_TYPE enumeration type identifies the type of a CLFS management policy. |
+| [_CLS_LOG_INFORMATION_CLASS enumeration](..\wdm\ne-wdm-_cls_log_information_class.md) | The CLFS_LOG_INFORMATION_CLASS enumeration indicates the type of information that is requested by a call to ClfsQueryLogFileInformation. |
 | [_D3COLD_LAST_TRANSITION_STATUS enumeration](..\wdm\ne-wdm-_d3cold_last_transition_status.md) | The D3COLD_LAST_TRANSITION_STATUS enumeration indicates whether the most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state. |
 | [_DEVICE_INSTALL_STATE enumeration](..\wdm\ne-wdm-_device_install_state.md) | The DEVICE_INSTALL_STATE enumeration describes a device's installation state. |
 | [_DEVICE_POWER_STATE enumeration](..\wdm\ne-wdm-_device_power_state.md) | The DEVICE_POWER_STATE enumeration type indicates a device power state. |
@@ -1856,8 +1990,8 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [_GPIO_PIN_IORESTRICTION_TYPE enumeration](..\pepfx\ne-pepfx-_gpio_pin_iorestriction_type.md) | The GPIO_PIN_IORESTRICTION_TYPE enumeration describes the functions that a GPIO pin is limited to performing. |
 | [_HARDWARE_COUNTER_TYPE enumeration](..\ntddk\ne-ntddk-_hardware_counter_type.md) | The HARDWARE_COUNTER_TYPE enumeration specifies the type of a hardware counter. |
 | [_INTERFACE_TYPE enumeration](..\wdm\ne-wdm-_interface_type.md) | The INTERFACE_TYPE enumeration indicates the bus type. |
-| [_IO_ACCESS_MODE enumeration](..\ntddsfio\ne-ntddsfio-_io_access_mode.md) | Defines the types of access mode for Scheduled File I/O (SFIO). |
-| [_IO_ACCESS_TYPE enumeration](..\ntddsfio\ne-ntddsfio-_io_access_type.md) | Defines the access rights for Scheduled File I/O (SFIO). |
+| [_IO_ACCESS_MODE enumeration](..\wdm\ne-wdm-_io_access_mode.md) | Defines the types of access mode for Scheduled File I/O (SFIO). |
+| [_IO_ACCESS_TYPE enumeration](..\wdm\ne-wdm-_io_access_type.md) | Defines the access rights for Scheduled File I/O (SFIO). |
 | [_IO_ALLOCATION_ACTION enumeration](..\wdm\ne-wdm-_io_allocation_action.md) | The IO_ALLOCATION_ACTION enumerated type is used to specify return values for AdapterControl and ControllerControl routines. |
 | [_IO_CONTAINER_INFORMATION_CLASS enumeration](..\wdm\ne-wdm-_io_container_information_class.md) | The IO_CONTAINER_INFORMATION_CLASS enumeration contains constants that indicate the classes of system information that a kernel-mode driver can request. |
 | [_IO_CONTAINER_NOTIFICATION_CLASS enumeration](..\wdm\ne-wdm-_io_container_notification_class.md) | The IO_CONTAINER_NOTIFICATION_CLASS enumeration contains constants that indicate the classes of events for which a kernel-mode driver can register to receive notifications. |
@@ -1892,6 +2026,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [_PO_FX_PERF_STATE_UNIT enumeration](..\wdm\ne-wdm-_po_fx_perf_state_unit.md) | The PO_FX_PERF_STATE_UNIT enumeration contains values that describe the type of unit that is controlled by the performance states in a PO_FX_COMPONENT_PERF_SET. |
 | [_PSCREATEPROCESSNOTIFYTYPE enumeration](..\ntddk\ne-ntddk-_pscreateprocessnotifytype.md) | Indicates the type of process notification. This enumeration is used in PsSetCreateProcessNotifyRoutineEx2 to register callback notifications. |
 | [_PSCREATETHREADNOTIFYTYPE enumeration](..\ntddk\ne-ntddk-_pscreatethreadnotifytype.md) | Indicates the type of thread notification. This enumeration is used in PsSetCreateThreadNotifyRoutineEx to register callback notifications associated with thread creation or deletion. |
+| [_REG_NOTIFY_CLASS enumeration](..\wdm\ne-wdm-_reg_notify_class.md) | The REG_NOTIFY_CLASS enumeration type specifies the type of registry operation that the configuration manager is passing to a RegistryCallback routine. |
 | [_RESOURCEMANAGER_INFORMATION_CLASS enumeration](..\wdm\ne-wdm-_resourcemanager_information_class.md) | The RESOURCEMANAGER_INFORMATION_CLASS enumeration identifies the type of information that the ZwQueryInformationResourceManager routine can retrieve for a resource manager object. |
 | [_SUBSYSTEM_INFORMATION_TYPE enumeration](..\ntddk\ne-ntddk-_subsystem_information_type.md) | Indicates the type of subsystem for a process or thread. This enumeration is used in NtQueryInformationProcess and NtQueryInformationThread calls. |
 | [_SYSTEM_POWER_STATE enumeration](..\wdm\ne-wdm-_system_power_state.md) | The SYSTEM_POWER_STATE enumeration type is used to indicate a system power state. |
@@ -1919,4 +2054,59 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | Title   | Description   |
 | ---- |:---- |
 | [ARGUMENT_PRESENT macro](..\wudfwdm\nf-wudfwdm-argument_present.md) | The ARGUMENT_PRESENT macro takes an argument pointer and returns FALSE if the pointer is NULL. Otherwise, it returns TRUE. |
+| [ExAllocatePoolWithQuotaTag macro](..\wdm\nf-wdm-exallocatepoolwithquotatag~r1.md) | The ExAllocatePoolWithQuotaTag routine allocates pool memory, charging the quota against the current process. |
+| [ExAllocatePoolWithTag macro](..\wdm\nf-wdm-exallocatepoolwithtag~r1.md) | The ExAllocatePoolWithTag routine allocates pool memory of the specified type and returns a pointer to the allocated block. |
+| [ExFreePool macro](..\ntddk\nf-ntddk-exfreepool.md) | The ExFreePool routine deallocates a block of pool memory. |
+| [ExInterlockedAddLargeStatistic macro](..\wdm\nf-wdm-exinterlockedaddlargestatistic.md) | The ExInterlockedAddLargeStatistic routine performs an interlocked addition of a ULONG increment value to a LARGE_INTEGER variable. |
+| [ExInterlockedCompareExchange64 macro](..\wdm\nf-wdm-exinterlockedcompareexchange64.md) | The ExInterlockedCompareExchange64 routine compares one integer variable to another and, if they are equal, sets the first variable to a caller-supplied value. |
+| [ExInterlockedFlushSList macro](..\wdm\nf-wdm-exinterlockedflushslist~r1.md) | The ExInterlockedFlushSList routine atomically removes all entries from a sequenced singly linked list. |
+| [ExInterlockedPopEntrySList macro](..\wdm\nf-wdm-exinterlockedpopentryslist~r1.md) | The ExInterlockedPopEntrySList routine atomically removes the first entry from a sequenced singly linked list. |
+| [ExInterlockedPopEntrySList macro](..\wdm\nf-wdm-exinterlockedpopentryslist~r2.md) | The ExInterlockedPopEntrySList routine atomically removes the first entry from a sequenced singly linked list. |
+| [ExInterlockedPushEntrySList macro](..\wdm\nf-wdm-exinterlockedpushentryslist~r1.md) | The ExInterlockedPushEntrySList routine atomically inserts an entry at the beginning of a sequenced singly linked list. |
+| [ExInterlockedPushEntrySList macro](..\wdm\nf-wdm-exinterlockedpushentryslist~r2.md) | The ExInterlockedPushEntrySList routine atomically inserts an entry at the beginning of a sequenced singly linked list. |
+| [ExQueryDepthSList macro](..\wdm\nf-wdm-exquerydepthslist~r2.md) | The ExQueryDepthSList routine returns the number of entries currently in a given sequenced singly linked list. |
+| [FIELD_OFFSET macro](..\wdm\nf-wdm-field_offset.md) | The FIELD_OFFSET macro returns the byte offset of a named field in a known structure type. |
 | [InitializeObjectAttributes macro](..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md) | The InitializeObjectAttributes macro initializes the opaque OBJECT_ATTRIBUTES structure, which specifies the properties of an object handle to routines that open handles. |
+| [IoAcquireRemoveLock macro](..\wdm\nf-wdm-ioacquireremovelock.md) | The IoAcquireRemoveLock routine increments the count for a remove lock, indicating that the associated device object should not be detached from the device stack or deleted. |
+| [IoAdjustPagingPathCount macro](..\wdm\nf-wdm-ioadjustpagingpathcount.md) | The IoAdjustPagingPathCount routine increments or decrements a caller-supplied page-file counter as an atomic operation. |
+| [IoAssignArcName macro](..\ntddk\nf-ntddk-ioassignarcname.md) | The IoAssignArcName routine creates a symbolic link between the ARC name of a physical device and the name of the corresponding device object when it has been created. |
+| [IoCallDriver macro](..\wdm\nf-wdm-iocalldriver.md) | The IoCallDriver routine sends an IRP to the driver associated with a specified device object. |
+| [IoCompleteRequest macro](..\wdm\nf-wdm-iocompleterequest.md) | The IoCompleteRequest routine indicates that the caller has completed all processing for a given I/O request and is returning the given IRP to the I/O manager. |
+| [IoDeassignArcName macro](..\ntddk\nf-ntddk-iodeassignarcname.md) | The IoDeassignArcName routine removes a symbolic link between the ARC name for a device and the named device object. |
+| [IoGetFunctionCodeFromCtlCode macro](..\wdm\nf-wdm-iogetfunctioncodefromctlcode.md) | The IoGetFunctionCodeFromCtlCode macro returns the value of the function code contained in an I/O control code. |
+| [IoInitializeRemoveLock macro](..\wdm\nf-wdm-ioinitializeremovelock.md) | The IoInitializeRemoveLock routine initializes a remove lock for a device object. |
+| [IoIsErrorUserInduced macro](..\wdm\nf-wdm-ioiserroruserinduced.md) | The IoIsErrorUserInduced routine determines whether an I/O error encountered while processing a request to a removable-media device was caused by the user. |
+| [IoReleaseRemoveLock macro](..\wdm\nf-wdm-ioreleaseremovelock.md) | The IoReleaseRemoveLock routine releases a remove lock acquired with a previous call to IoAcquireRemoveLock. |
+| [IoReleaseRemoveLockAndWait macro](..\wdm\nf-wdm-ioreleaseremovelockandwait.md) | The IoReleaseRemoveLockAndWait routine releases a remove lock that the driver acquired in a previous call to IoAcquireRemoveLock, and waits until all acquisitions of the lock have been released. |
+| [IoSizeOfIrp macro](..\ntifs\nf-ntifs-iosizeofirp.md) | The IoSizeOfIrp routine determines the size in bytes for an IRP, given the number of stack locations in the IRP. |
+| [IoSizeOfIrp macro](..\wdm\nf-wdm-iosizeofirp.md) | The IoSizeOfIrp routine determines the size in bytes for an IRP, given the number of stack locations in the IRP. |
+| [IoWMIDeviceObjectToProviderId macro](..\wdm\nf-wdm-iowmideviceobjecttoproviderid~r1.md) | The IoWMIDeviceObjectToProviderId routine translates the specified device object into the corresponding WMI Provider ID. |
+| [KeAcquireSpinLock macro](..\wdm\nf-wdm-keacquirespinlock.md) | The KeAcquireSpinLock routine acquires a spin lock so the caller can synchronize access to shared data in a multiprocessor-safe way by raising IRQL. |
+| [KeAcquireSpinLock macro](..\wdm\nf-wdm-keacquirespinlock~r1.md) | The KeAcquireSpinLock routine acquires a spin lock so the caller can synchronize access to shared data in a multiprocessor-safe way by raising IRQL. |
+| [KeAcquireSpinLockAtDpcLevel macro](..\wdm\nf-wdm-keacquirespinlockatdpclevel.md) | The KeAcquireSpinLockAtDpcLevel routine acquires a spin lock when the caller is already running at IRQL &gt;= DISPATCH_LEVEL. |
+| [KeFlushIoBuffers macro](..\wdm\nf-wdm-keflushiobuffers~r4.md) | The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors. |
+| [KeLowerIrql macro](..\wdm\nf-wdm-kelowerirql~r1.md) | The KeLowerIrql routine restores the IRQL on the current processor to its original value. |
+| [KeQuerySystemTime macro](..\wdm\nf-wdm-kequerysystemtime~r1.md) | The KeQuerySystemTime routine obtains the current system time. |
+| [KeQueryTickCount macro](..\ntddk\nf-ntddk-kequerytickcount~r2.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
+| [KeQueryTickCount macro](..\wdm\nf-wdm-kequerytickcount.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
+| [KeRaiseIrql macro](..\wdm\nf-wdm-keraiseirql.md) | The KeRaiseIrql routine raises the hardware priority to the specified IRQL value, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
+| [KeReleaseSpinLock macro](..\wdm\nf-wdm-kereleasespinlock.md) | The KeReleaseSpinLock routine releases a spin lock and restores the original IRQL at which the caller was running. |
+| [KeReleaseSpinLockFromDpcLevel macro](..\wdm\nf-wdm-kereleasespinlockfromdpclevel.md) | The KeReleaseSpinLockFromDpcLevel routine releases an executive spin lock without changing the IRQL. |
+| [MmGetSystemAddressForMdl macro](..\wdm\nf-wdm-mmgetsystemaddressformdl.md) | The MmGetSystemAddressForMdl routine is obsolete for Windows 2000 and later versions of Windows, and for Windows Me. |
+| [MmLockPagableCodeSection macro](..\wdm\nf-wdm-mmlockpagablecodesection.md) | The MmLockPagableCodeSection routine locks a section of driver code, containing a set of driver routines marked with a special compiler directive, into system space. |
+| [ObDereferenceObject macro](..\wdm\nf-wdm-obdereferenceobject.md) | The ObDereferenceObject routine decrements the given object's reference count and performs retention checks. |
+| [ObDereferenceObjectWithTag macro](..\wdm\nf-wdm-obdereferenceobjectwithtag.md) | The ObDereferenceObjectWithTag routine decrements the reference count of the specified object, and writes a four-byte tag value to the object to support object reference tracing. |
+| [ObReferenceObject macro](..\wdm\nf-wdm-obreferenceobject.md) | The ObReferenceObject routine increments the reference count to the given object. |
+| [ObReferenceObjectWithTag macro](..\wdm\nf-wdm-obreferenceobjectwithtag.md) | The ObReferenceObjectWithTag routine increments the reference count of the specified object, and writes a four-byte tag value to the object to support object reference tracing. |
+| [RtlAnsiStringToUnicodeSize macro](..\wdm\nf-wdm-rtlansistringtounicodesize.md) | The RtlAnsiStringToUnicodeSize routine returns the number of bytes required to hold an ANSI string converted into a Unicode string. |
+| [RtlCheckBit macro](..\wdm\nf-wdm-rtlcheckbit~r1.md) | The RtlCheckBit routine determines whether a particular bit in a given bitmap variable is clear or set. |
+| [RtlCopyMemory macro](..\wdm\nf-wdm-rtlcopymemory.md) | The RtlCopyMemory routine copies the contents of a source memory block to a destination memory block. |
+| [RtlEqualMemory macro](..\wdm\nf-wdm-rtlequalmemory.md) | The RtlEqualMemory routine compares two blocks of memory to determine whether the specified number of bytes are identical. |
+| [RtlFillMemory macro](..\wdm\nf-wdm-rtlfillmemory.md) | The RtlFillMemory routine fills a block of memory with the specified fill value. |
+| [RtlIntPtrToUnicodeString macro](..\wdm\nf-wdm-rtlintptrtounicodestring.md) | The RtlIntPtrToUnicodeString routine converts a specified ULONG_PTR value to a Unicode string that represents the value in a specified base. |
+| [RtlMoveMemory macro](..\wdm\nf-wdm-rtlmovememory.md) | The RtlMoveMemory routine copies the contents of a source memory block to a destination memory block, and supports overlapping source and destination memory blocks. |
+| [RtlUlongByteSwap macro](..\wdm\nf-wdm-rtlulongbyteswap~r1.md) | The RtlUlongByteSwap routine reverses the ordering of the four bytes in a 32-bit unsigned integer value. |
+| [RtlUlonglongByteSwap macro](..\wdm\nf-wdm-rtlulonglongbyteswap~r1.md) | The RtlUlonglongByteSwap routine reverses the ordering of the eight bytes in a 64-bit unsigned integer value. |
+| [RtlUnicodeStringToAnsiSize macro](..\wdm\nf-wdm-rtlunicodestringtoansisize.md) | The RtlUnicodeStringToAnsiSize routine returns the number of bytes required for a null-terminated ANSI string that is equivalent to a specified Unicode string. |
+| [RtlUshortByteSwap macro](..\wdm\nf-wdm-rtlushortbyteswap~r1.md) | The RtlUshortByteSwap routine reverses the ordering of the two bytes in a 16-bit unsigned integer value. |
+| [RtlZeroMemory macro](..\wdm\nf-wdm-rtlzeromemory.md) | The RtlZeroMemory routine fills a block of memory with zeros, given a pointer to the block and the length, in bytes, to be filled. |

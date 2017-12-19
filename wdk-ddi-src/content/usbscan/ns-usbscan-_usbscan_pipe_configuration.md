@@ -4,11 +4,11 @@ title: _USBSCAN_PIPE_CONFIGURATION
 author: windows-driver-content
 description: The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_PIPE_CONFIGURATION.
 old-location: image\usbscan_pipe_configuration.htm
-old-project: image
+old-project: Image
 ms.assetid: c9b0247b-1444-46c9-a430-897594f8d223
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION
+ms.date: 12/14/2017
+ms.keywords: _USBSCAN_PIPE_CONFIGURATION, PUSBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

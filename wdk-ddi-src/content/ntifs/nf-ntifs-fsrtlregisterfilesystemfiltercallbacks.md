@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlregisterfilesystemfiltercallbacks.htm
 old-project: ifsk
 ms.assetid: cd6d2ab6-ce17-47db-b5d0-4f9543e15487
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: FsRtlRegisterFileSystemFilterCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices

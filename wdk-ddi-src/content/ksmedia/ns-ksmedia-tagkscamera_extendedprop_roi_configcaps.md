@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_roi_configcaps.htm
 old-project: stream
 ms.assetid: BAC5B134-22F5-4BC9-BBD6-6AF3C934510B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
+ms.date: 12/14/2017
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

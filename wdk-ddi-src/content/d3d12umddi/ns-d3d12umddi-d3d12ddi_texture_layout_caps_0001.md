@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_texture_layout_caps_0001.htm
 old-project: display
 ms.assetid: CFA0C474-129A-4A05-B426-520B96C318D8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_TEXTURE_LAYOUT_CAPS_0001, D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
 ms.prod: windows-hardware
 ms.technology: windows-devices

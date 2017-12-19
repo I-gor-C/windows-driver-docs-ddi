@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_resource_flags.htm
 old-project: kernel
 ms.assetid: 1BB4933B-2707-4350-8D9C-E0E25A85F5CB
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
+ms.date: 12/15/2017
+ms.keywords: _PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS, PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

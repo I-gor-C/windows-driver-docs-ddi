@@ -7,7 +7,7 @@ old-location: ifsk\rtlntstatustodoserrornoteb.htm
 old-project: ifsk
 ms.assetid: be22fb7f-408a-44ee-ae83-0f1dadcec87f
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: RtlNtStatusToDosErrorNoTeb
 ms.prod: windows-hardware
 ms.technology: windows-devices

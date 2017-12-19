@@ -4,10 +4,10 @@ title: RILCALLINFOMULTIPARTY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallinfomultiparty.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4a343e55-9150-4411-bf37-f410b94ca0aa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLINFOMULTIPARTY, RILCALLINFOMULTIPARTY
 ms.prod: windows-hardware
 ms.technology: windows-devices

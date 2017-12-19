@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_type.htm
 old-project: display
 ms.assetid: F7081B59-DB24-4BFE-B1BD-3BE228804AB2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKVGPU_ESCAPE_TYPE, DXGKVGPU_ESCAPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

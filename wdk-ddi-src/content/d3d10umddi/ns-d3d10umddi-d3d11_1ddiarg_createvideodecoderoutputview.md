@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddiarg_createvideodecoderoutputview.htm
 old-project: display
 ms.assetid: 6DD555B1-01E8-48DE-B957-2752671B7EBB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW, D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW
 ms.prod: windows-hardware
 ms.technology: windows-devices

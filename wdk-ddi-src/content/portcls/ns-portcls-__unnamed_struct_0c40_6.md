@@ -1,14 +1,14 @@
 ---
 UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_6
-title: *PPCAUTOMATION_TABLE
+title: PCAUTOMATION_TABLE
 author: windows-driver-content
 description: The PCAUTOMATION_TABLE structure contains a miniport driver's master table of properties, methods, and events.
 old-location: audio\pcautomation_table.htm
 old-project: audio
 ms.assetid: 9761a967-063d-4194-8b67-eec476d3372e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: *PPCAUTOMATION_TABLE, *PPCAUTOMATION_TABLE, PCAUTOMATION_TABLE
+ms.date: 12/14/2017
+ms.keywords: PCAUTOMATION_TABLE, PCAUTOMATION_TABLE, *PPCAUTOMATION_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -33,7 +33,7 @@ req.dll:
 req.irql: PASSIVE_LEVEL
 ---
 
-# *PPCAUTOMATION_TABLE structure
+# PCAUTOMATION_TABLE structure
 
 
 
@@ -74,7 +74,7 @@ Specifies the number of property items in the <i>Properties</i> array.
 
 ### -field Properties
 
-Pointer to the filter's array of properties. This is an array of <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a> structures.
+Pointer to the filter's array of properties. This is an array of <a href="audio.pcproperty_item">PCPROPERTY_ITEM</a> structures.
 
 
 ### -field MethodItemSize
@@ -104,7 +104,7 @@ Specifies the number of event items in the <b>Events</b> array.
 
 ### -field Events
 
-Pointer to the filter's array of events. This is an array of <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a> structures.
+Pointer to the filter's array of events. This is an array of <a href="audio.pcevent_item">PCEVENT_ITEM</a> structures.
 
 
 ### -field Reserved
@@ -136,10 +136,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>
+<a href="audio.pcproperty_item">PCPROPERTY_ITEM</a>
 </dt>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a>
+<a href="audio.pcevent_item">PCEVENT_ITEM</a>
 </dt>
 <dt>
 <a href="audio.pcmethod_item">PCMETHOD_ITEM</a>
@@ -155,5 +155,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCAUTOMATION_TABLE structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCAUTOMATION_TABLE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

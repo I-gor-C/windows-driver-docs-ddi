@@ -7,7 +7,7 @@ old-location: display\dxgk_plane_specific_input_flags.htm
 old-project: display
 ms.assetid: 39BE1343-D965-4750-9B94-B54127D873A5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PLANE_SPECIFIC_INPUT_FLAGS, DXGK_PLANE_SPECIFIC_INPUT_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

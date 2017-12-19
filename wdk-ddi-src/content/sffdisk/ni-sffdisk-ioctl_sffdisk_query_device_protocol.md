@@ -7,7 +7,7 @@ old-location: sd\ioctl_sffdisk_query_device_protocol.htm
 old-project: SD
 ms.assetid: 47eeb4a9-dece-4500-bbe7-891f64437eef
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: SFFDISK_DPCMD, SFFDISK_DPCMD
 ms.prod: windows-hardware
 ms.technology: windows-devices

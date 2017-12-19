@@ -4,11 +4,11 @@ title: RILDELETEADDITIONALNUMBERSTRINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildeleteadditionalnumberstringparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3acfa3ec-5cee-46f2-9473-bca1bc093555
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

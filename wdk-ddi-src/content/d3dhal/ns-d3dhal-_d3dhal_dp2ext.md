@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2ext.htm
 old-project: display
 ms.assetid: d7cec277-d1d3-4c0f-91ec-fd5e962b6e1c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DHAL_DP2EXT, D3DHAL_DP2EXT
 ms.prod: windows-hardware
 ms.technology: windows-devices

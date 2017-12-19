@@ -4,10 +4,10 @@ title: UCM_CONNECTOR_TYPEC_CONFIG_INIT function
 author: windows-driver-content
 description: Initializes the UCM_CONNECTOR_TYPEC_CONFIG structure.
 old-location: buses\ucm_connector_type_c_config_init.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 10E155C2-907D-4D0E-87E9-A6B32E99D133
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UCM_CONNECTOR_TYPEC_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

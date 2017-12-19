@@ -7,7 +7,7 @@ old-location: kernel\write_port_buffer_ushort.htm
 old-project: kernel
 ms.assetid: e715c0b5-8f72-4642-9a48-2066df0a2650
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_PORT_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

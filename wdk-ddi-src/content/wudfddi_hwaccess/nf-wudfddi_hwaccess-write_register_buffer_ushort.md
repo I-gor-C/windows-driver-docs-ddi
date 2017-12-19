@@ -7,7 +7,7 @@ old-location: wdf\write_register_buffer_ushort.htm
 old-project: wdf
 ms.assetid: 45E51355-9570-4548-B056-D1655BED5462
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

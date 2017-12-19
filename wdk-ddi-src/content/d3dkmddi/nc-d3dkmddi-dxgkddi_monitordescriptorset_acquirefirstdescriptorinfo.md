@@ -7,7 +7,7 @@ old-location: display\dxgk_monitordescriptorset_interface_pfnacquirefirstdescrip
 old-project: display
 ms.assetid: 228f6947-a7e5-4b76-8224-fac6889fc77a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

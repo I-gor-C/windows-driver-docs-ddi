@@ -4,10 +4,10 @@ title: _WDI_TXRX_PEER_QOS_CAPS
 author: windows-driver-content
 description: The WDI_TXRX_PEER_QOS_CAPS enumeration defines the Quality of Service (QoS) capabilities.
 old-location: netvista\wdi_txrx_peer_qos_caps.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 34d53daa-3501-4532-82e3-e5b0ed452b66
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PEER_QOS_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

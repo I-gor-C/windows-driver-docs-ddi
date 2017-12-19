@@ -4,11 +4,11 @@ title: RILRADIOSTATEITEM
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostateitem.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 152e3b52-44e4-4ed7-bfc3-38d0c65725fd
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM, RILRADIOSTATEITEM
+ms.date: 12/14/2017
+ms.keywords: RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM, LPRILRADIOSTATEITEM, RILRADIOSTATEITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

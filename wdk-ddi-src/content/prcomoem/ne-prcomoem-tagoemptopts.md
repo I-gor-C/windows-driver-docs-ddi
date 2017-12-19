@@ -7,8 +7,8 @@ old-location: print\oemptopts.htm
 old-project: print
 ms.assetid: A63C115D-7215-422A-B4F9-C88820FC8168
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: tagOEMPTOPTS, *POEMPTOPTS, OEMPTOPTS
+ms.date: 12/14/2017
+ms.keywords: tagOEMPTOPTS, *POEMPTOPTS, OEMPTOPTS, POEMPTOPTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

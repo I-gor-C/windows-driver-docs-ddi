@@ -4,11 +4,11 @@ title: RILSENDSUPSERVICEDATARESPONSEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendsupservicedataresponseparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2b5ac749-9097-43bf-a0e6-a18374f15a86
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSENDSUPSERVICEDATARESPONSEPARAMS, *LPRILSENDSUPSERVICEDATARESPONSEPARAMS, RILSENDSUPSERVICEDATARESPONSEPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSENDSUPSERVICEDATARESPONSEPARAMS, RILSENDSUPSERVICEDATARESPONSEPARAMS, *LPRILSENDSUPSERVICEDATARESPONSEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

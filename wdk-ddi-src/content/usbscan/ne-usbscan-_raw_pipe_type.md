@@ -4,10 +4,10 @@ title: _RAW_PIPE_TYPE
 author: windows-driver-content
 description: The RAW_PIPE_TYPE data type is used to specify the type of a USB pipe.
 old-location: image\raw_pipe_type.htm
-old-project: image
+old-project: Image
 ms.assetid: 6af4161c-7caa-4d80-8938-303380ee3058
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

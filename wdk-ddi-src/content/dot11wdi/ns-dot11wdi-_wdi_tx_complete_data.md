@@ -4,11 +4,11 @@ title: _WDI_TX_COMPLETE_DATA
 author: windows-driver-content
 description: The WDI_TX_COMPLETE_DATA structure defines TX completion data.
 old-location: netvista\wdi_tx_complete_data.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: bf7951de-3368-4faf-9bae-272c6d76d1a0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA
+ms.date: 12/14/2017
+ms.keywords: _WDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA, PWDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_pnp_capabilities_init.htm
 old-project: wdf
 ms.assetid: 5ae60715-ba51-4814-ae34-34967cdbab78
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_DEVICE_PNP_CAPABILITIES_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

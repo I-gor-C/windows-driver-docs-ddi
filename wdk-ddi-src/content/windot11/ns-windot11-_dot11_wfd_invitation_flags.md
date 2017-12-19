@@ -4,10 +4,10 @@ title: _DOT11_WFD_INVITATION_FLAGS
 author: windows-driver-content
 description: The DOT11_WFD_INVITATION_FLAGS structure represents the Invitation Attributes used during the Invitation procedure.
 old-location: netvista\dot11_wfd_invitation_flags.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9743FF37-0E8A-499F-AADB-9CD7BDC381E0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _DOT11_WFD_INVITATION_FLAGS, DOT11_WFD_INVITATION_FLAGS, *PDOT11_WFD_INVITATION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

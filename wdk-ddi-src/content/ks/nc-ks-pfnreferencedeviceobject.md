@@ -7,7 +7,7 @@ old-location: stream\kstrreferencedeviceobject.htm
 old-project: stream
 ms.assetid: f4bf38eb-5028-4fcb-9752-8dab88db5904
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ None.
 
 
 ## -remarks
-The driver can access this method through the <b>ReferenceDeviceObject</b> member of the <a href="stream.bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.
+The driver can access this method through the <b>ReferenceDeviceObject</b> member of the <a href="..\ks\ns-ks-bus_interface_reference.md">BUS_INTERFACE_REFERENCE</a> structure.
 
 The device object remains active and enumerated until the reference count returns to 0.
 

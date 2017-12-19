@@ -32,6 +32,7 @@ Video.h contain these programming interfaces:
 | [VideoPortCreateSecondaryDisplay function](nf-video-videoportcreatesecondarydisplay.md) | The VideoPortCreateSecondaryDisplay function enables dual-view support by creating a secondary device object for the given device. |
 | [VideoPortCreateSpinLock function](nf-video-videoportcreatespinlock.md) | The VideoPortCreateSpinLock function creates a spin lock. |
 | [VideoPortDDCMonitorHelper function](nf-video-videoportddcmonitorhelper.md) | Queries a monitor for EDID information using the DDC protocol. |
+| [VideoPortDebugPrint function](nf-video-videoportdebugprint.md) | Video miniport drivers should not call the VideoPortDebugPrint function. Instead, they should call the VideoDebugPrint macro. |
 | [VideoPortDeleteEvent function](nf-video-videoportdeleteevent.md) | The VideoPortDeleteEvent function deletes the specified event object. |
 | [VideoPortDeleteSpinLock function](nf-video-videoportdeletespinlock.md) | The VideoPortDeleteSpinLock function deletes a given spin lock. |
 | [VideoPortDisableInterrupt function](nf-video-videoportdisableinterrupt.md) | The VideoPortDisableInterrupt function is obsolete and should not be called.The VideoPortDisableInterrupt function disables interrupts from a video adapter. |

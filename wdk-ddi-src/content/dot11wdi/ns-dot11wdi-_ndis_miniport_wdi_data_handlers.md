@@ -4,11 +4,11 @@ title: _NDIS_MINIPORT_WDI_DATA_HANDLERS
 author: windows-driver-content
 description: The NDIS_MINIPORT_WDI_DATA_HANDLERS structure specifies the entry points for the IHV miniport datapath handlers.
 old-location: netvista\ndis_miniport_wdi_data_handlers.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: DBDB5F08-9988-4D9B-A731-DA65BBA67813
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS
+ms.date: 12/14/2017
+ms.keywords: _NDIS_MINIPORT_WDI_DATA_HANDLERS, PNDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

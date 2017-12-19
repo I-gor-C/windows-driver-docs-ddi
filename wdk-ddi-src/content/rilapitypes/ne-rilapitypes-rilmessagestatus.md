@@ -4,10 +4,10 @@ title: RILMESSAGESTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessagestatus_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 30ae1eff-447c-4f6f-8f6c-cd8bc657d32d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMESSAGESTATUS, RILMESSAGESTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: VmbPacketSetPointer function
 author: windows-driver-content
 description: The VmbPacketSetPointer function saves an arbitrary pointer in the packet context.
 old-location: netvista\vmbpacketsetpointer.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: FFEBEBD0-1FF2-4F27-B028-051B117CA325
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbPacketSetPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices

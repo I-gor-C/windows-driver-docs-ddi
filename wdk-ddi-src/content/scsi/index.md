@@ -16,14 +16,14 @@ Scsi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PBLOCK_DEVICE_RANGE_DESCRIPTOR structure](ns-scsi-pblock_device_range_descriptor.md) | The BLOCK_DEVICE_RANGE_DESCRIPTOR structure describes a range of logical blocks associated with various fragments of a file for an offload copy operation. |
-| [PBLOCK_DEVICE_TOKEN_DESCRIPTOR structure](ns-scsi-pblock_device_token_descriptor.md) | BLOCK_DEVICE_TOKEN_DESCRIPTOR contains the token returned from a the POPULATE TOKEN command for an offload read data operation. |
-| [PPOPULATE_TOKEN_HEADER structure](ns-scsi-ppopulate_token_header.md) | A populate token parameter list starts with a POPULATE_TOKEN_HEADER structure. This is the header for the parameters in a command data block (CDB) of the POPULATE TOKEN command. |
-| [PRECEIVE_TOKEN_INFORMATION_HEADER structure](ns-scsi-preceive_token_information_header.md) | The RECEIVE_TOKEN_INFORMATION_HEADER structure contains information returned as status from an offload data transfer operation. |
-| [PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure](ns-scsi-preceive_token_information_response_header.md) | A token, created as a representation of data (ROD), for an offload read data operation is returned in a RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure. |
-| [PRT_PARAMETER_DATA structure](ns-scsi-prt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
-| [PST_PARAMETER_DATA structure](ns-scsi-pst_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
-| [PWRITE_USING_TOKEN_HEADER structure](ns-scsi-pwrite_using_token_header.md) | The WRITE_USING_TOKEN_HEADER structure describes the destination data locations for an offload write data operation. |
+| [BLOCK_DEVICE_RANGE_DESCRIPTOR structure](ns-scsi-block_device_range_descriptor.md) | The BLOCK_DEVICE_RANGE_DESCRIPTOR structure describes a range of logical blocks associated with various fragments of a file for an offload copy operation. |
+| [BLOCK_DEVICE_TOKEN_DESCRIPTOR structure](ns-scsi-block_device_token_descriptor.md) | BLOCK_DEVICE_TOKEN_DESCRIPTOR contains the token returned from a the POPULATE TOKEN command for an offload read data operation. |
+| [POPULATE_TOKEN_HEADER structure](ns-scsi-populate_token_header.md) | A populate token parameter list starts with a POPULATE_TOKEN_HEADER structure. This is the header for the parameters in a command data block (CDB) of the POPULATE TOKEN command. |
+| [RECEIVE_TOKEN_INFORMATION_HEADER structure](ns-scsi-receive_token_information_header.md) | The RECEIVE_TOKEN_INFORMATION_HEADER structure contains information returned as status from an offload data transfer operation. |
+| [RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure](ns-scsi-receive_token_information_response_header.md) | A token, created as a representation of data (ROD), for an offload read data operation is returned in a RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure. |
+| [RT_PARAMETER_DATA structure](ns-scsi-rt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
+| [ST_PARAMETER_DATA structure](ns-scsi-st_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
+| [WRITE_USING_TOKEN_HEADER structure](ns-scsi-write_using_token_header.md) | The WRITE_USING_TOKEN_HEADER structure describes the destination data locations for an offload write data operation. |
 | [_INQUIRYDATA structure](ns-scsi-_inquirydata.md) | The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device. |
 | [_INQUIRYDATA structure](ns-scsi-_inquirydata~r1.md) | The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device. |
 | [_REPORT_ZONES_DATA structure](ns-scsi-_report_zones_data.md) | Note  This structure is for internal use only and should not be called from your code. . |

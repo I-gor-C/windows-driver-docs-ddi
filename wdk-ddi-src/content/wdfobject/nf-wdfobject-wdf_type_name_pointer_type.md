@@ -7,7 +7,7 @@ old-location: wdf\wdf_type_name_pointer_type.htm
 old-project: wdf
 ms.assetid: 71e219ff-3ed7-4eb1-bcd7-749b947a9aef
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_TYPE_NAME_POINTER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

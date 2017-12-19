@@ -4,10 +4,10 @@ title: RIL_SendDTMF function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_senddtmf.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4091a37e-5115-4213-9242-76b119ad28fc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SendDTMF
 ms.prod: windows-hardware
 ms.technology: windows-devices

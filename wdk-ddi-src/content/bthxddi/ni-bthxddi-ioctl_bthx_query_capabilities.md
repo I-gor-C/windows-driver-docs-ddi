@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bthx_query_capabilities.htm
 old-project: bltooth
 ms.assetid: 199C93EC-AB91-47F1-914A-F44BFF1796A6
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
+ms.date: 12/14/2017
+ms.keywords: _BTHX_SCO_SUPPORT, PBTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

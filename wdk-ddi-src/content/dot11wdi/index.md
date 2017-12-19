@@ -6,8 +6,8 @@ UID: NA:
 
 ## -description
 
-This header is used by Networking drivers for Windows Vista and later. For more information, see
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+This header is used by NetVista. For more information, see
+- [NetVista](../_NetVista/index.md)
 
 Dot11Wdi.h contain these programming interfaces:
 
@@ -40,6 +40,8 @@ Dot11Wdi.h contain these programming interfaces:
 | [MINIPORT_WDI_RX_RETURN_FRAMES callback](nc-dot11wdi-miniport_wdi_rx_return_frames.md) | The MiniportWdiRxReturnFrames handler function returns a NET_BUFFER_LIST structure (and associated data buffers) to the TAL. |
 | [MINIPORT_WDI_RX_STOP callback](nc-dot11wdi-miniport_wdi_rx_stop.md) | The MiniportWdiRxStop handler function stops RX on a given port and accepts the wildcard port ID to stop RX across the adapter. |
 | [MINIPORT_WDI_RX_THROTTLE callback](nc-dot11wdi-miniport_wdi_rx_throttle.md) | The MiniportWdiRxThrottle handler function tells the TAL/target to enable mechanisms to reduce the rate of RX MSDUs. |
+| [MINIPORT_WDI_START_ADAPTER_OPERATION callback](nc-dot11wdi-miniport_wdi_start_adapter_operation.md) | The MiniportWdiStartAdapterOperation handler function can be used by the IHV driver to perform any additional MiniportInitializeEx tasks. |
+| [MINIPORT_WDI_STOP_ADAPTER_OPERATION callback](nc-dot11wdi-miniport_wdi_stop_adapter_operation.md) | The MiniportWdiStopAdapterOperation handler function can be used by the IHV driver to undo the operations performed in MiniportWdiStartAdapterOperation. |
 | [MINIPORT_WDI_TAL_TXRX_ADD_PORT callback](nc-dot11wdi-miniport_wdi_tal_txrx_add_port.md) | The MiniportWdiTalTxRxAddPort handler function notifies the datapath components of the creation of a new virtual port. |
 | [MINIPORT_WDI_TAL_TXRX_DEINITIALIZE callback](nc-dot11wdi-miniport_wdi_tal_txrx_deinitialize.md) | The MiniportWdiTalTxRxDeinitialize handler function is invoked in the context of miniport halt. The functional components RXEngine and TxEngine have already been stopped and any pending data frames completed/returned. |
 | [MINIPORT_WDI_TAL_TXRX_DELETE_PORT callback](nc-dot11wdi-miniport_wdi_tal_txrx_delete_port.md) | The MiniportWdiTalTxRxDeletePort handler function notifies the datapath components of the deletion of a virtual port. |

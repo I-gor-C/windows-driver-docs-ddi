@@ -7,7 +7,7 @@ old-location: stream\kspin_descriptor_ex.htm
 old-project: stream
 ms.assetid: 05c82973-86f9-44f9-8df2-1fc84c8be975
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _KSPIN_DESCRIPTOR_EX, KSPIN_DESCRIPTOR_EX, *PKSPIN_DESCRIPTOR_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ A pointer to the <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> stru
 
 ### -field PinDescriptor
 
-This member specifies a structure of type <a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>.
+This member specifies a structure of type <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>.
 
 
 ### -field Flags
@@ -131,7 +131,7 @@ Specifying this flag causes the queue to force IRPs to be handled in a first-in-
 ### -field KSPIN_FLAG_GENERATE_MAPPINGS
 
 <dd>
-Specifying this flag causes AVStream to automatically generate scatter/gather mappings for a queued frame when the minidriver locks a stream pointer referencing that frame. Clients that intend to use this feature need to register their DMA adapter object with AVStream via the <a href="stream.ksdeviceregisteradapterobject">KsDeviceRegisterAdapterObject</a> function. See the <b>DataUsed</b> member of <a href="stream.ksstream_header">KSSTREAM_HEADER</a> for the effect of this flag on the KSSTREAM_HEADER structure. Also see <a href="stream.ksstream_pointer_offset">KSSTREAM_POINTER_OFFSET</a>.
+Specifying this flag causes AVStream to automatically generate scatter/gather mappings for a queued frame when the minidriver locks a stream pointer referencing that frame. Clients that intend to use this feature need to register their DMA adapter object with AVStream via the <a href="stream.ksdeviceregisteradapterobject">KsDeviceRegisterAdapterObject</a> function. See the <b>DataUsed</b> member of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> for the effect of this flag on the KSSTREAM_HEADER structure. Also see <a href="stream.ksstream_pointer_offset">KSSTREAM_POINTER_OFFSET</a>.
 
 
 ### -field KSPIN_FLAG_DISTINCT_TRAILING_EDGE
@@ -224,7 +224,7 @@ Specifies a value of type ULONG that contains the minimum number of pins of a gi
 
 ### -field AllocatorFraming
 
-A pointer to a <a href="stream.ksallocator_framing_ex">KSALLOCATOR_FRAMING_EX</a> structure containing the allocator framing requirements for this pin type. Allocator framing specifies items such as memory alignment requirements, maximum frame size, and minimum frame size. This member can be <b>NULL</b>, which indicates that this pin does not support the allocator framing property.
+A pointer to a <a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a> structure containing the allocator framing requirements for this pin type. Allocator framing specifies items such as memory alignment requirements, maximum frame size, and minimum frame size. This member can be <b>NULL</b>, which indicates that this pin does not support the allocator framing property.
 
 
 ### -field IntersectHandler
@@ -272,10 +272,10 @@ Header
 <a href="stream.kspin_dispatch">KSPIN_DISPATCH</a>
 </dt>
 <dt>
-<a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>
+<a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="stream.ksallocator_framing_ex">KSALLOCATOR_FRAMING_EX</a>
+<a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a>
 </dt>
 <dt>
 <a href="stream.ksdeviceregisteradapterobject">KsDeviceRegisterAdapterObject</a>
@@ -285,5 +285,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR_EX structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR_EX structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

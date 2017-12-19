@@ -7,8 +7,8 @@ old-location: print\devicepropertyheader.htm
 old-project: print
 ms.assetid: f1b9cd2f-fa5b-4f34-a237-06d00badf1d1
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _DEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER, *PDEVICEPROPERTYHEADER
+ms.date: 12/14/2017
+ms.keywords: _DEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER, PDEVICEPROPERTYHEADER, *PDEVICEPROPERTYHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

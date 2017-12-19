@@ -7,8 +7,8 @@ old-location: display\video_pointer_capabilities.htm
 old-project: display
 ms.assetid: bc5f98da-1e2e-421b-9c76-97359e51b526
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VIDEO_POINTER_CAPABILITIES, *PVIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES
+ms.date: 12/15/2017
+ms.keywords: _VIDEO_POINTER_CAPABILITIES, *PVIDEO_POINTER_CAPABILITIES, PVIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

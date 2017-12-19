@@ -7,7 +7,7 @@ old-location: wdf\wdfdevstatenormalize.htm
 old-project: wdf
 ms.assetid: 0243de8b-0f47-4f0a-af25-beb6365386dd
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDevStateNormalize
 ms.prod: windows-hardware
 ms.technology: windows-devices

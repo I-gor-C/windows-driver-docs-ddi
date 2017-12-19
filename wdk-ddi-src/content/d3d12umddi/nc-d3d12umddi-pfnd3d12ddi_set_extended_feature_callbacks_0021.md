@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_set_extended_feature_callbacks_0021.htm
 old-project: display
 ms.assetid: 8380C972-D5A0-46D5-B32B-C31D5113BB95
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

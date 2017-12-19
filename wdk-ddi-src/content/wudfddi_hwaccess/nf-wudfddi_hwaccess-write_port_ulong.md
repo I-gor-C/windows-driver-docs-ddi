@@ -7,7 +7,7 @@ old-location: wdf\write_port_ulong.htm
 old-project: wdf
 ms.assetid: 400823C4-5F71-4334-9160-FAC0690F209F
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

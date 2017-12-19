@@ -7,8 +7,8 @@ old-location: battery\cad_power_source_info_usb.htm
 old-project: battery
 ms.assetid: 578D33E5-685A-48E9-BFE2-CE4C3FD18056
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _CAD_POWER_SOURCE_INFO_USB, CAD_POWER_SOURCE_INFO_USB, *PCAD_POWER_SOURCE_INFO_USB
+ms.date: 12/14/2017
+ms.keywords: _CAD_POWER_SOURCE_INFO_USB, CAD_POWER_SOURCE_INFO_USB, PCAD_POWER_SOURCE_INFO_USB, *PCAD_POWER_SOURCE_INFO_USB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

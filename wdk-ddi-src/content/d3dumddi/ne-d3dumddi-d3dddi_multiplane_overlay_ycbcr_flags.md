@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_ycbcr_flags.htm
 old-project: display
 ms.assetid: d28170a4-2cf3-4e42-bc76-afdb8c3bce70
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

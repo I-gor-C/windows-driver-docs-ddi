@@ -7,7 +7,7 @@ old-location: display\dxgkddi_settargetcontenttype.htm
 old-project: display
 ms.assetid: 7639BF7B-6219-4490-953F-80E76CDFBAAA
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

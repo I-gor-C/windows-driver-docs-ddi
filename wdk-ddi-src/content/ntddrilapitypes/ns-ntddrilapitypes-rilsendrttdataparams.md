@@ -4,11 +4,11 @@ title: RILSENDRTTDATAPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendrttdataparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 733b8ccc-5335-4c7e-bfc0-4618b0b3a4d8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS, *LPRILSENDRTTDATAPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS, LPRILSENDRTTDATAPARAMS, *LPRILSENDRTTDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

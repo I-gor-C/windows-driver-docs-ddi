@@ -7,8 +7,8 @@ old-location: stream\ksdevice_profile_info.htm
 old-project: stream
 ms.assetid: 32C894CA-B644-4221-97B6-A21F2A459DE6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _KSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO
+ms.date: 12/14/2017
+ms.keywords: _KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO, PKSDEVICE_PROFILE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

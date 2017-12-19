@@ -7,7 +7,7 @@ old-location: storage\ide_device_type.htm
 old-project: storage
 ms.assetid: 6d94189f-d6ab-40ad-85e5-f4efe8c30ed8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDE_DEVICE_TYPE, IDE_DEVICE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

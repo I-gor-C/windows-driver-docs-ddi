@@ -7,8 +7,8 @@ old-location: display\ioctl_video_enable_cursor.htm
 old-project: display
 ms.assetid: 727add49-3224-4bc0-8d98-971e282c575a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.date: 12/15/2017
+ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -7,7 +7,7 @@ old-location: storage\storportisdeviceoperationallowed.htm
 old-project: storage
 ms.assetid: 2FA71DC1-8068-42E3-A5C0-903858E496FA
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortIsDeviceOperationAllowed
 ms.prod: windows-hardware
 ms.technology: windows-devices

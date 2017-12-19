@@ -44,6 +44,8 @@ Wdfinterrupt.h contain these programming interfaces:
 | [EVT_WDF_INTERRUPT_ISR callback](nc-wdfinterrupt-evt_wdf_interrupt_isr.md) | A driver's EvtInterruptIsr event callback function services a hardware interrupt. |
 | [EVT_WDF_INTERRUPT_SYNCHRONIZE callback](nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md) | A driver's EvtInterruptSynchronize event callback function performs operations that must be synchronized with an EvtInterruptIsr callback function. |
 | [EVT_WDF_INTERRUPT_WORKITEM callback](nc-wdfinterrupt-evt_wdf_interrupt_workitem.md) | A driver's EvtInterruptWorkItem event callback function processes interrupt information that the driver's EvtInterruptIsr callback function has stored. |
+| [PFN_WDFINTERRUPTACQUIRELOCK callback](nc-wdfinterrupt-pfn_wdfinterruptacquirelock.md) | The WdfInterruptAcquireLock method begins a code sequence that executes at the device's device interrupt request level (DIRQL) while holding an interrupt object's spin lock. |
+| [PFN_WDFINTERRUPTRELEASELOCK callback](nc-wdfinterrupt-pfn_wdfinterruptreleaselock.md) | The WdfInterruptReleaseLock method ends a code sequence that executes at the device's DIRQL while holding an interrupt object's spin lock. |
 
 ## Structures
 

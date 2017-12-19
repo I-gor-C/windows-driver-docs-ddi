@@ -7,8 +7,8 @@ old-location: storage\storage_component_health_status.htm
 old-project: storage
 ms.assetid: 6768C1D7-A964-44A7-A340-98060130FF24
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_COMPONENT_HEALTH_STATUS, *PSTORAGE_COMPONENT_HEALTH_STATUS, STORAGE_COMPONENT_HEALTH_STATUS
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_COMPONENT_HEALTH_STATUS, *PSTORAGE_COMPONENT_HEALTH_STATUS, STORAGE_COMPONENT_HEALTH_STATUS, PSTORAGE_COMPONENT_HEALTH_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

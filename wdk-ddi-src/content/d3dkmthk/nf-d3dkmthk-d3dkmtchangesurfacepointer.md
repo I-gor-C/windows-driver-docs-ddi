@@ -7,7 +7,7 @@ old-location: display\d3dkmtchangesurfacepointer.htm
 old-project: display
 ms.assetid: 3db4e04b-2707-4eb1-a249-2714304246a8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTChangeSurfacePointer
 ms.prod: windows-hardware
 ms.technology: windows-devices

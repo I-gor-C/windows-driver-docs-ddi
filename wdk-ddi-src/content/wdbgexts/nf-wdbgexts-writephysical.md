@@ -4,10 +4,10 @@ title: WritePhysical function
 author: windows-driver-content
 description: The WritePhysical function writes to physical memory.
 old-location: debugger\writephysical.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: faafaf0a-29ef-43ef-9f9a-f3b545e83f65
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: WritePhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices

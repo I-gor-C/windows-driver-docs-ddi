@@ -7,7 +7,7 @@ old-location: wdf\wdfcompanioncreatetaskqueue.htm
 old-project: wdf
 ms.assetid: 05298ffe-75e5-444e-9843-54dd063f59f5
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfCompanionCreateTaskQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices

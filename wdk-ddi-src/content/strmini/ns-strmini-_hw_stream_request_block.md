@@ -7,8 +7,8 @@ old-location: stream\hw_stream_request_block.htm
 old-project: stream
 ms.assetid: e2a19bb1-631d-4160-9980-f3cbeb0b085a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK
+ms.date: 12/14/2017
+ms.keywords: _HW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -129,7 +129,7 @@ Points to an uninitialized buffer the class driver allocates for the minidriver 
 
 ### -field DataBufferArray
 
-Pointer to an array of <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structures. The number of entries in this array is specified in <b>NumberOfBuffers</b>. Each KSSTREAM_HEADER describes one block of data.
+Pointer to an array of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structures. The number of entries in this array is specified in <b>NumberOfBuffers</b>. Each KSSTREAM_HEADER describes one block of data.
 
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a>
 
@@ -177,7 +177,7 @@ This member is used when the command code is <a href="https://msdn.microsoft.com
 
 ### -field OpenFormat
 
-Pointer to the <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that specifies the format.
+Pointer to the <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure that specifies the format.
 
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568191">SRB_OPEN_STREAM</a>
 
@@ -241,7 +241,7 @@ This member is used when the command code is <a href="https://msdn.microsoft.com
 
 ### -field NumberOfBuffers
 
-If Command is either <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568220">SRB_WRITE_DATA</a>, then this specifies the number of entries in the array of <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structures that begins at the address pointed to by <b>CommandData.DataBufferArray</b>. Otherwise this parameter is unused.
+If Command is either <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568220">SRB_WRITE_DATA</a>, then this specifies the number of entries in the array of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structures that begins at the address pointed to by <b>CommandData.DataBufferArray</b>. Otherwise this parameter is unused.
 
 
 ### -field TimeoutCounter

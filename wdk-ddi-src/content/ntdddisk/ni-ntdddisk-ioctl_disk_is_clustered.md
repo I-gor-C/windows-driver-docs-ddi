@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_is_clustered.htm
 old-project: storage
 ms.assetid: 46b72c16-2656-4ceb-a786-5fb24818b2a7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

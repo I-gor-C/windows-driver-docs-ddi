@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_stretch_quality.htm
 old-project: display
 ms.assetid: 550C09F4-8684-4B6F-BB62-8514721A9B32
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY, DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

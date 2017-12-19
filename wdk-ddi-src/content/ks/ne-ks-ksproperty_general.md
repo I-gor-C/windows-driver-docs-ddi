@@ -7,7 +7,7 @@ old-location: stream\ksproperty_general.htm
 old-project: stream
 ms.assetid: 45D94211-4756-4D3C-8512-2AF7953CFADC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSPROPERTY_GENERAL, KSPROPERTY_GENERAL
 ms.prod: windows-hardware
 ms.technology: windows-devices

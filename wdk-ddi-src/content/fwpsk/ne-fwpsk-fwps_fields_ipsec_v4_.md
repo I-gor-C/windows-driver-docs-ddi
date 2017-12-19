@@ -4,10 +4,10 @@ title: FWPS_FIELDS_IPSEC_V4_
 author: windows-driver-content
 description: The FWPS_FIELDS_IPSEC_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_IPSEC_V4 run-time filtering layer.
 old-location: netvista\fwps_fields_ipsec_v4.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6477bc7f-60b0-4d3c-b8a2-f7d950f60fd2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_IPSEC_V4_, FWPS_FIELDS_IPSEC_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices

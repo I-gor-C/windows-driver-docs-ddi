@@ -7,7 +7,7 @@ old-location: kernel\kequeryhighestnodenumber.htm
 old-project: kernel
 ms.assetid: e92387db-0c35-40c8-8342-4b1bf498aa1a
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: KeQueryHighestNodeNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices

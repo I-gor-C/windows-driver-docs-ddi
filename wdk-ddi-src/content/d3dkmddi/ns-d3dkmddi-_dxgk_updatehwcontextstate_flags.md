@@ -7,7 +7,7 @@ old-location: display\dxgk_updatehwcontextstate_flags.htm
 old-project: display
 ms.assetid: 23F0679A-05BB-4988-AF83-B6CC91C4CB79
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_UPDATEHWCONTEXTSTATE_FLAGS, DXGK_UPDATEHWCONTEXTSTATE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

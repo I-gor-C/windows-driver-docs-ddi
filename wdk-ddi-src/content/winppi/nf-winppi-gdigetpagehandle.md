@@ -7,7 +7,7 @@ old-location: print\gdigetpagehandle.htm
 old-project: print
 ms.assetid: 7eaed9d2-20fa-4cf1-b924-fbe1443535e9
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: GdiGetPageHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices

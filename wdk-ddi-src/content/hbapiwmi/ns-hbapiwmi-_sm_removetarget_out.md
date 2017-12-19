@@ -7,8 +7,8 @@ old-location: storage\sm_removetarget_out.htm
 old-project: storage
 ms.assetid: b93f999e-471a-4f02-a6f2-e21386b9e289
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_RemoveTarget_OUT, SM_RemoveTarget_OUT, *PSM_RemoveTarget_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_RemoveTarget_OUT, SM_RemoveTarget_OUT, *PSM_RemoveTarget_OUT, PSM_RemoveTarget_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

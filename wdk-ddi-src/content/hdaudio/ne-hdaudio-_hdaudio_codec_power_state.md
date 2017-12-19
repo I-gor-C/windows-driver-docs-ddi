@@ -7,8 +7,8 @@ old-location: audio\hdaudio_codec_power_state.htm
 old-project: audio
 ms.assetid: 4C002B40-AD27-4FE2-B07F-5E9715E6CF1F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HDAUDIO_CODEC_POWER_STATE, HDAUDIO_CODEC_POWER_STATE, *PHDAUDIO_CODEC_POWER_STATE
+ms.date: 12/14/2017
+ms.keywords: _HDAUDIO_CODEC_POWER_STATE, *PHDAUDIO_CODEC_POWER_STATE, HDAUDIO_CODEC_POWER_STATE, PHDAUDIO_CODEC_POWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

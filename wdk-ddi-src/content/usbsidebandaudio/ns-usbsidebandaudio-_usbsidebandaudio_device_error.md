@@ -7,8 +7,8 @@ old-location: audio\usbsidebandaudio_device_error.htm
 old-project: audio
 ms.assetid: EB5AFAF3-D75C-4B91-823C-E1C6784CB13B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR
+ms.date: 12/14/2017
+ms.keywords: _USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, PUSBSIDEBANDAUDIO_DEVICE_ERROR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

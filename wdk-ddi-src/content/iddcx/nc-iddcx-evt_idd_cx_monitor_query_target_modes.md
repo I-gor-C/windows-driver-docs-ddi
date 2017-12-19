@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_query_target_modes.htm
 old-project: display
 ms.assetid: a83ed1a3-e279-45be-b229-137fa61d9b38
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

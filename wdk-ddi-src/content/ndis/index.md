@@ -6,8 +6,8 @@ UID: NA:
 
 ## -description
 
-This header is used by Networking drivers for Windows Vista and later. For more information, see
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+This header is used by NetVista. For more information, see
+- [NetVista](../_NetVista/index.md)
 
 Ndis.h contain these programming interfaces:
 
@@ -300,6 +300,7 @@ Ndis.h contain these programming interfaces:
 | [FILTER_ATTACH callback](nc-ndis-filter_attach.md) | NDIS calls a filter driver's FilterAttach function to allocate and initialize a filter module's data structures.Note  You must declare the function by using the FILTER_ATTACH type. |
 | [FILTER_CANCEL_DIRECT_OID_REQUEST callback](nc-ndis-filter_cancel_direct_oid_request.md) | NDIS calls a filter driver's FilterCancelDirectOidRequest function to cancel a direct OID request.Note  You must declare the function by using the FILTER_CANCEL_DIRECT_OID_REQUEST type. |
 | [FILTER_CANCEL_OID_REQUEST callback](nc-ndis-filter_cancel_oid_request.md) | NDIS calls a filter driver's FilterCancelOidRequest function to cancel an OID request.Note  You must declare the function by using the FILTER_CANCEL_OID_REQUEST type. |
+| [FILTER_CANCEL_SEND_NET_BUFFER_LISTS callback](nc-ndis-filter_cancel_send_net_buffer_lists.md) | NDIS calls a filter driver's FilterCancelSendNetBufferLists function to cancel the transmission of all NET_BUFFER_LIST structures that are marked with a specified cancellation identifier.Note  You must declare the function by using the FILTER_CANCEL_SEND_NET_BUFFER_LISTS type. For more information, see the following Examples section. |
 | [FILTER_DETACH callback](nc-ndis-filter_detach.md) | NDIS calls a filter driver's FilterDetach function to release all the resources that are associated with a filter module.Note  You must declare the function by using the FILTER_DETACH type. |
 | [FILTER_DEVICE_PNP_EVENT_NOTIFY callback](nc-ndis-filter_device_pnp_event_notify.md) | NDIS calls a filter driver's FilterDevicePnPEventNotify function to notify the driver of device Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_DEVICE_PNP_EVENT_NOTIFY type. |
 | [FILTER_DIRECT_OID_REQUEST callback](nc-ndis-filter_direct_oid_request.md) | NDIS calls a filter driver's FilterDirectOidRequest function to process a direct OID request that is associated with the specified filter module.Note  You must declare the function by using the FILTER_DIRECT_OID_REQUEST type. |
@@ -619,6 +620,7 @@ Ndis.h contain these programming interfaces:
 | [NdisMCmOpenAddressFamilyComplete macro](nf-ndis-ndismcmopenaddressfamilycomplete.md) | NdisMCmOpenAddressFamilyComplete returns the final status of a client's request, for which the MCM driver's ProtocolCmOpenAf function returned NDIS_STATUS_PENDING, to open the MCM driver's address family. |
 | [NdisMCmRegisterSapComplete macro](nf-ndis-ndismcmregistersapcomplete.md) | NdisMCmRegisterSapComplete returns the final status of a client's request, for which the MCM driver's ProtocolCmRegisterSap function previously returned NDIS_STATUS_PENDING, to register a SAP. |
 | [NdisMCompleteDmaTransfer macro](nf-ndis-ndismcompletedmatransfer.md) | The NdisMCompleteDmaTransfer function indicates that a system DMA transfer operation has completed. It resets the system DMA controller in preparation for further DMA transfers. |
+| [NdisMResetComplete macro](nf-ndis-ndismresetcomplete~r1.md) | The NdisMResetComplete function returns the final status of a reset request for which the miniport driver previously returned NDIS_STATUS_PENDING. |
 | [NdisMSetupDmaTransfer macro](nf-ndis-ndismsetupdmatransfer.md) | The NdisMSetupDmaTransfer function sets up the host DMA controller for a DMA transfer. |
 | [NdisMoveMemory macro](nf-ndis-ndismovememory.md) | The NdisMoveMemory function copies a specified number of bytes from one caller-supplied location to another. |
 | [NdisQueryDepthSList macro](nf-ndis-ndisquerydepthslist.md) | The NdisQueryDepthSList function returns the current number of entries in a given sequenced, singly linked list. |
@@ -648,4 +650,5 @@ Ndis.h contain these programming interfaces:
 | [NdisWriteRegisterUchar macro](nf-ndis-ndiswriteregisteruchar.md) | NdisWriteRegisterUchar is called by the miniport driver to write a UCHAR to a memory-mapped device register. |
 | [NdisWriteRegisterUlong macro](nf-ndis-ndiswriteregisterulong.md) | NdisWriteRegisterUlong is called by the miniport driver to write a ULONG to a memory-mapped device register. |
 | [NdisWriteRegisterUshort macro](nf-ndis-ndiswriteregisterushort.md) | NdisWriteRegisterUshort is called by the miniport driver to write a USHORT to a memory-mapped device register. |
+| [NdisZeroMappedMemory macro](nf-ndis-ndiszeromappedmemory~r1.md) | NdisZeroMappedMemory fills a block of memory that was mapped with a preceding call to NdisMMapIoSpace with zeros. |
 | [NdisZeroMemory macro](nf-ndis-ndiszeromemory.md) | The NdisZeroMemory function fills a block of memory with zeros. |

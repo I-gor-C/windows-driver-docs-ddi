@@ -7,7 +7,7 @@ old-location: kernel\rtlushorttoint8.htm
 old-project: kernel
 ms.assetid: 789AC84A-E271-4048-86F7-32EA5A966D71
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlUShortToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices

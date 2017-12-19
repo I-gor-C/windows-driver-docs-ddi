@@ -4,10 +4,10 @@ title: FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_
 author: windows-driver-content
 description: The FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE enumeration type specifies the data field identifiers for the FWPS_LAYER_OUTBOUND_MAC_FRAME_NATIVE run-time filtering layer.
 old-location: netvista\fwps_fields_outbound_mac_frame_native.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 71244290-3DCD-45AF-9EF0-AD1C9103A69C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_, FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices

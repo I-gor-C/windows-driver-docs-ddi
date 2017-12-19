@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_set_emitting_light.htm
 old-project: stream
 ms.assetid: E3B85C82-EC55-4A88-BFCA-91123F8311D1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

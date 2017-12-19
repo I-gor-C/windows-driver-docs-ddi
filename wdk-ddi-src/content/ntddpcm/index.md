@@ -16,7 +16,6 @@ Ntddpcm.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PCMCIA_IS_WRITE_PROTECTED callback](nc-ntddpcm-pcmcia_is_write_protected.md) | The PCMCIA_IS_WRITE_PROTECTED interface routine returns the write-protect condition of a PCMCIA memory card. |
 | [PCMCIA_MODIFY_MEMORY_WINDOW callback](nc-ntddpcm-pcmcia_modify_memory_window.md) | The PCMCIA_MODIFY_MEMORY_WINDOW interface routine sets the attributes of a memory window for a PCMCIA memory card. The memory window is mapped by the PCMCIA bus driver. |
 | [PCMCIA_SET_VPP callback](nc-ntddpcm-pcmcia_set_vpp.md) | The PCMCIA_SET_VPP interface routine sets the power level of the Vpp PCMCIA pin (secondary power source). |
 

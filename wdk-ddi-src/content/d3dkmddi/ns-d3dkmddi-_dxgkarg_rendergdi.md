@@ -7,7 +7,7 @@ old-location: display\dxgkarg_rendergdi.htm
 old-project: display
 ms.assetid: E1DC536B-581E-43F8-99B2-776DC30EEBB7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI
 ms.prod: windows-hardware
 ms.technology: windows-devices

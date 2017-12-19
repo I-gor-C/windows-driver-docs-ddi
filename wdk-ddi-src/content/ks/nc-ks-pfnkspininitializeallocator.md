@@ -7,7 +7,7 @@ old-location: stream\avstrminiinitializeallocator.htm
 old-project: stream
 ms.assetid: 9c6d3856-702c-416b-a5d2-b3578a55bbcd
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ Pointer to a <a href="stream.kspin">KSPIN</a> structure describing the pin with 
 
 ### -param AllocatorFraming [in]
 
-Pointer to a <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure describing the framing requirements that the allocator should use.
+Pointer to a <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure describing the framing requirements that the allocator should use.
 
 
 ### -param Context [out]
@@ -132,7 +132,7 @@ Header
 <a href="stream.ksallocator_dispatch">KSALLOCATOR_DISPATCH</a>
 </dt>
 <dt>
-<a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a>
+<a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
 </dt>
 <dt>
 <a href="stream.kspin">KSPIN</a>
@@ -145,5 +145,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniInitializeAllocator routine%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniInitializeAllocator routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

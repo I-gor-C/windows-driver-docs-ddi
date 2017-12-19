@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-crypto-session-transform-support-data-0030.
 old-project: display
 ms.assetid: fb83a03e-56d9-4daf-93c1-407744ad134a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices

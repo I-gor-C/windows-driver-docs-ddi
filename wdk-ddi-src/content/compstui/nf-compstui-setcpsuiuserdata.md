@@ -7,7 +7,7 @@ old-location: print\setcpsuiuserdata.htm
 old-project: print
 ms.assetid: 35119100-adf9-4376-bb1a-7317733fbcc5
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: SetCPSUIUserData
 ms.prod: windows-hardware
 ms.technology: windows-devices

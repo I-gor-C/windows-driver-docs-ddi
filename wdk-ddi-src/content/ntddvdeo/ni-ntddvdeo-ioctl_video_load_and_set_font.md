@@ -7,8 +7,8 @@ old-location: display\ioctl_video_load_and_set_font.htm
 old-project: display
 ms.assetid: 13771df5-f66c-4dd9-b2d3-4477fda82f8f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.date: 12/15/2017
+ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

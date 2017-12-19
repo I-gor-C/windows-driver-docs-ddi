@@ -4,11 +4,11 @@ title: RILMESSAGESTORAGEFULL
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessagestoragefull.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3369feeb-cbb9-4938-8dfd-0160ba4fefdf
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL
+ms.date: 12/14/2017
+ms.keywords: RILMESSAGESTORAGEFULL, LPRILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

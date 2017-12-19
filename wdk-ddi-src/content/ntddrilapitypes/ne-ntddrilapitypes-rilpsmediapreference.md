@@ -4,10 +4,10 @@ title: RILPSMEDIAPREFERENCE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpsmediapreference.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: a7fbef54-78c1-4696-8b0a-8c98d250f899
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPSMEDIAPREFERENCE, RILPSMEDIAPREFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

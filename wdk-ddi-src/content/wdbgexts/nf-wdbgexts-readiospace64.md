@@ -4,10 +4,10 @@ title: ReadIoSpace64 function
 author: windows-driver-content
 description: The ReadIoSpace64 function reads from the system I/O locations.
 old-location: debugger\readiospace64.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 7578df0d-67ea-4a8c-a89c-6a9d95bff33a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: ReadIoSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices

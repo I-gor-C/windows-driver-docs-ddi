@@ -7,7 +7,7 @@ old-location: sensors\ioctl_gnss_send_drivercommand.htm
 old-project: sensors
 ms.assetid: CC991E95-D7E2-4B40-9D51-EA38C6732C7B
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,14 +38,14 @@ req.irql:
 
 
 ## -description
-The <b>IOCTL_GNSS_SEND_DRIVERCOMMAND</b> control code is used by the GNSS adapter to execute well-defined commands on the driver and also to set driver configuration parameters. Each call specifies a certain command type, and the associated data for the command (if one is applicable) through the <a href="sensors.gnss_drivercommand_param">GNSS_DRIVERCOMMAND_PARAM</a> structure.
+The <b>IOCTL_GNSS_SEND_DRIVERCOMMAND</b> control code is used by the GNSS adapter to execute well-defined commands on the driver and also to set driver configuration parameters. Each call specifies a certain command type, and the associated data for the command (if one is applicable) through the <a href="..\gnssdriver\ns-gnssdriver-gnss_drivercommand_param.md">GNSS_DRIVERCOMMAND_PARAM</a> structure.
 
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-A pointer to a <a href="sensors.gnss_drivercommand_param">GNSS_DRIVERCOMMAND_PARAM</a> structure.
+A pointer to a <a href="..\gnssdriver\ns-gnssdriver-gnss_drivercommand_param.md">GNSS_DRIVERCOMMAND_PARAM</a> structure.
 
 
 ### -input-buffer-length
@@ -127,5 +127,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_SEND_DRIVERCOMMAND control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_SEND_DRIVERCOMMAND control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

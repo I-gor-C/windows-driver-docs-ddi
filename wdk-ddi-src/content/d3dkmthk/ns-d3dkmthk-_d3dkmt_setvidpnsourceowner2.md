@@ -7,7 +7,7 @@ old-location: display\d3dkmt-setvidpnsourceowner2.htm
 old-project: display
 ms.assetid: 6a6477db-23ad-42ad-b1cb-d81c7be4cf38
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_SETVIDPNSOURCEOWNER2, D3DKMT_SETVIDPNSOURCEOWNER2
 ms.prod: windows-hardware
 ms.technology: windows-devices

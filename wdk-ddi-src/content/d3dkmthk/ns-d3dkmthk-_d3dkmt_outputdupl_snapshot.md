@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputdupl_snapshot.htm
 old-project: display
 ms.assetid: bec6a398-34e8-4c03-ac15-c3f00645eac7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_OUTPUTDUPL_SNAPSHOT, D3DKMT_OUTPUTDUPL_SNAPSHOT
 ms.prod: windows-hardware
 ms.technology: windows-devices

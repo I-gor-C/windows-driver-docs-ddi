@@ -4,10 +4,10 @@ title: RILGETPREFERENCEDOPERATORLISTFORMAT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetpreferencedoperatorlistformat_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 1193174e-9247-4854-94d8-7404b2b15e5c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILGETPREFERENCEDOPERATORLISTFORMAT, RILGETPREFERENCEDOPERATORLISTFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices

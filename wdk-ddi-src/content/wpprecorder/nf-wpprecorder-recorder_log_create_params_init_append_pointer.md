@@ -7,7 +7,7 @@ old-location: devtest\recorder_log_create_params_init_append_pointer.htm
 old-project: devtest
 ms.assetid: EC94E27C-C863-49F0-B13C-B661E96991B7
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 12/14/2017
 ms.keywords: RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER
 ms.prod: windows-hardware
 ms.technology: windows-devices

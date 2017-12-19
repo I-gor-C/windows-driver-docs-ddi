@@ -7,7 +7,7 @@ old-location: display\d3d11ddiarg_stream_output_declaration_entry.htm
 old-project: display
 ms.assetid: 336bfc9d-325b-4ff1-8d6b-ec2ef4158cb9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices

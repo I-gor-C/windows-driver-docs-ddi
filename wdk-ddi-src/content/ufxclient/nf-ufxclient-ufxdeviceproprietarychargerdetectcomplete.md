@@ -4,10 +4,10 @@ title: UfxDeviceProprietaryChargerDetectComplete function
 author: windows-driver-content
 description: Notifies UFX about a detected proprietary port/charger type.
 old-location: buses\ufxdeviceproprietarychargerdetectcomplete.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 5E85D80B-4C0F-4C91-A1B5-565E09FD3743
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UfxDeviceProprietaryChargerDetectComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices

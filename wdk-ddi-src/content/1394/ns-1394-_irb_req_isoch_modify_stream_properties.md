@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_modify_stream_properties.htm
 old-project: IEEE
 ms.assetid: 06CA5F26-8042-4EAC-A381-A0C6E7023BFD
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices

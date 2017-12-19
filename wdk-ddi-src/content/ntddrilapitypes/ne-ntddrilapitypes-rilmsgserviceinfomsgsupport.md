@@ -4,10 +4,10 @@ title: RILMSGSERVICEINFOMSGSUPPORT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgserviceinfomsgsupport.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b09a5b1d-b8da-4a75-b2d5-ee07072d45aa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGSERVICEINFOMSGSUPPORT, RILMSGSERVICEINFOMSGSUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: audio\kstelephony_callcontrol.htm
 old-project: audio
 ms.assetid: 44CA5D9D-EF6E-4681-93EB-B803638896F9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _tagKSTELEPHONY_CALLCONTROL, *PKSTELEPHONY_CALLCONTROL, KSTELEPHONY_CALLCONTROL
+ms.date: 12/14/2017
+ms.keywords: _tagKSTELEPHONY_CALLCONTROL, *PKSTELEPHONY_CALLCONTROL, KSTELEPHONY_CALLCONTROL, PKSTELEPHONY_CALLCONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

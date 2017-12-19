@@ -7,8 +7,8 @@ old-location: stream\port_configuration_information.htm
 old-project: stream
 ms.assetid: fa990867-4e2f-4940-b6fc-310ec7fc2b68
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, *PPORT_CONFIGURATION_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _PORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, *PPORT_CONFIGURATION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

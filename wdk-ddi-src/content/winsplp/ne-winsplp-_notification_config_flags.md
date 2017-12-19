@@ -7,7 +7,7 @@ old-location: print\notification_config_flags.htm
 old-project: print
 ms.assetid: B53AB706-D780-4E29-A531-51D3A9041D24
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: _NOTIFICATION_CONFIG_FLAGS, NOTIFICATION_CONFIG_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

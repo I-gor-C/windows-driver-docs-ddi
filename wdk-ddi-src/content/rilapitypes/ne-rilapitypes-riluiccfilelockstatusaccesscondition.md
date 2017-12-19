@@ -4,10 +4,10 @@ title: RILUICCFILELOCKSTATUSACCESSCONDITION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccfilelockstatusaccesscondition_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f8bc0e66-1868-4e96-80d4-e541f6959eac
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCFILELOCKSTATUSACCESSCONDITION, RILUICCFILELOCKSTATUSACCESSCONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices

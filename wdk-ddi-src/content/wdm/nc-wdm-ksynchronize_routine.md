@@ -7,8 +7,8 @@ old-location: kernel\synchcritsection.htm
 old-project: kernel
 ms.assetid: 2db9b1b4-0149-4477-9f68-588c55fcbdca
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 12/15/2017
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

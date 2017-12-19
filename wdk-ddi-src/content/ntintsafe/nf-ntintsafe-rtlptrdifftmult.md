@@ -7,7 +7,7 @@ old-location: kernel\rtlptrdifftmult.htm
 old-project: kernel
 ms.assetid: 71F6D886-D32E-4C90-B5BA-A4A1BBCD0B8F
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlPtrdiffTMult
 ms.prod: windows-hardware
 ms.technology: windows-devices

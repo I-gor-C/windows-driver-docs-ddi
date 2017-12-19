@@ -7,7 +7,7 @@ old-location: print\getprintprocessorcapabilities.htm
 old-project: print
 ms.assetid: 81aacb41-cba7-4bd0-aded-919a4df0b934
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: GetPrintProcessorCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices

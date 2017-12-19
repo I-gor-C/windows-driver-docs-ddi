@@ -7,7 +7,7 @@ old-location: display\dxgk_engine_type.htm
 old-project: display
 ms.assetid: D94EF91A-784D-4AA2-A43D-6A4AE88CF0A3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: DXGK_ENGINE_TYPE, DXGK_ENGINE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

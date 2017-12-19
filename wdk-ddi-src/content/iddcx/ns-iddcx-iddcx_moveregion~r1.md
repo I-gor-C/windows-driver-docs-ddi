@@ -7,7 +7,7 @@ old-location: display\iddcx_moveregion.htm
 old-project: display
 ms.assetid: 28974c00-9225-4458-a198-beb4538e3a45
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_MOVEREGION,
 ms.prod: windows-hardware
 ms.technology: windows-devices

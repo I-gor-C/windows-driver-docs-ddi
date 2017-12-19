@@ -7,8 +7,8 @@ old-location: stream\transportbasicparms.htm
 old-project: stream
 ms.assetid: 40e305b3-e91c-4227-99e7-dbb939082f54
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagTRANSPORTBASICPARMS, TRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS
+ms.date: 12/14/2017
+ms.keywords: tagTRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS, PTRANSPORTBASICPARMS, TRANSPORTBASICPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

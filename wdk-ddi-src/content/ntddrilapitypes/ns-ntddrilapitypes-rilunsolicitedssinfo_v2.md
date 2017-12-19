@@ -4,11 +4,11 @@ title: RILUNSOLICITEDSSINFO_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilunsolicitedssinfo_v2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f4b93f1e-8559-4145-a122-74d62b146afa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, RILUNSOLICITEDSSINFO_V2
+ms.date: 12/14/2017
+ms.keywords: RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, LPRILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO, RILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, LPRILUNSOLICITEDSSINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

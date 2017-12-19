@@ -4,10 +4,10 @@ title: _PD_BUFFER_VIRTUAL_SUBNET_INFO
 author: windows-driver-content
 description: This structure contains the virtual subnet information.
 old-location: netvista\pd_buffer_virtual_subnet_info.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 569424A2-4279-4758-A6F1-402D25F9B04F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

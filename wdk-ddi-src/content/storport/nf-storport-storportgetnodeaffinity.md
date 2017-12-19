@@ -7,7 +7,7 @@ old-location: storage\storportgetnodeaffinity.htm
 old-project: storage
 ms.assetid: 183940c9-f8d9-411f-a593-e283f72e05f8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortGetNodeAffinity
 ms.prod: windows-hardware
 ms.technology: windows-devices

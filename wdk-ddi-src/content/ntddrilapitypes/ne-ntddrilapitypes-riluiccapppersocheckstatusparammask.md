@@ -4,10 +4,10 @@ title: RILUICCAPPPERSOCHECKSTATUSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccapppersocheckstatusparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 552c6ee9-47e7-4863-95bb-256057a99649
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCAPPPERSOCHECKSTATUSPARAMMASK, RILUICCAPPPERSOCHECKSTATUSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

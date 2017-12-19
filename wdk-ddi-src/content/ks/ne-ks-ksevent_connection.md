@@ -7,7 +7,7 @@ old-location: stream\ksevent_connection.htm
 old-project: stream
 ms.assetid: E85946B3-90B6-41CA-9F69-47B33AE8D851
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSEVENT_CONNECTION, KSEVENT_CONNECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

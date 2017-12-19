@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_unassign_swapchain.htm
 old-project: display
 ms.assetid: 7e845805-0121-49b0-9c0c-0f63bed6a50c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

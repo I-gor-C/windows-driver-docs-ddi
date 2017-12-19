@@ -4,10 +4,10 @@ title: FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET_
 author: windows-driver-content
 description: The FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET (formerly FWPS_FIELDS_EGRESS_VSWITCH_802_3) enumeration type specifies the data field identifiers for the FWPS_LAYER_EGRESS_VSWITCH_ETHERNET run-time filtering layer.
 old-location: netvista\fwps_fields_egress_vswitch_802_3.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: de899526-ea77-4f0c-a05a-b28bb422a9b4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET_, FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -31,7 +31,7 @@ For the programming guide, see [Battery](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
-| [PBATTERY_REPORTING_SCALE structure](..\ntpoapi\ns-ntpoapi-pbattery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
+| [BATTERY_REPORTING_SCALE structure](..\ntpoapi\ns-ntpoapi-battery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
 | [_BATTERYPROVISIONINGSTATUS structure](..\charging\ns-charging-_batteryprovisioningstatus.md) | This structure is for internal use only. |
 | [_BATTERY_INFORMATION structure](..\poclass\ns-poclass-_battery_information.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
 | [_BATTERY_MANUFACTURE_DATE structure](..\poclass\ns-poclass-_battery_manufacture_date.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |

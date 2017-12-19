@@ -7,7 +7,7 @@ old-location: kernel\psishostsilo.htm
 old-project: kernel
 ms.assetid: 4C6D85F2-C9B8-425D-A307-5609E1C1465B
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsIsHostSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices

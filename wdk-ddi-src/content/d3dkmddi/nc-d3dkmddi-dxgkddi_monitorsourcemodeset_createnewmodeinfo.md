@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorsourcemodeset_interface_pfncreatenewmodeinfo.h
 old-project: display
 ms.assetid: 314b345c-a40b-418d-a2d8-c7b42e5fd27d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: ieee\irb_req_control.htm
 old-project: IEEE
 ms.assetid: F0ABD318-AC63-40D5-B94E-BD6FEA1A57AC
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_CONTROL, IRB_REQ_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\ata_zone_descriptor.htm
 old-project: storage
 ms.assetid: 2e027ac5-7b5d-43cc-8d37-c0a3e77e68c9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR
+ms.date: 12/15/2017
+ms.keywords: _ATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR, PATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

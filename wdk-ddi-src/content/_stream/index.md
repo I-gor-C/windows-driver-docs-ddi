@@ -428,175 +428,175 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 
 | Title   | Description   |
 | ---- |:---- |
+| [BUS_INTERFACE_MEDIUMS structure](..\ks\ns-ks-bus_interface_mediums.md) | . |
+| [BUS_INTERFACE_REFERENCE structure](..\ks\ns-ks-bus_interface_reference.md) | A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use. |
+| [KSALLOCATOR_FRAMING structure](..\ks\ns-ks-ksallocator_framing.md) | The KSALLOCATOR_FRAMING structure is used to query framing requirements and submit allocator creation requests. |
+| [KSALLOCATOR_FRAMING_EX structure](..\ks\ns-ks-ksallocator_framing_ex.md) | The KSALLOCATOR_FRAMING_EX structure is the AVStream replacement for KSALLOCATOR_FRAMING. KSALLOCATOR_FRAMING_EX defines allocator requirements on a pin in a kernel level filter. |
+| [KSATTRIBUTE structure](..\ks\ns-ks-ksattribute.md) | The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers. |
+| [KSATTRIBUTE_LIST structure](..\ks\ns-ks-ksattribute_list.md) | The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure. |
 | [KSAUTOMATION_TABLE_ structure](..\ks\ns-ks-ksautomation_table_.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
 | [KSAUTOMATION_TABLE_ structure](..\ks\ns-ks-ksautomation_table_~r1.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
+| [KSBUFFER_ITEM structure](..\ks\ns-ks-ksbuffer_item.md) | The KSBUFFER_ITEM structure is used to store a list of data buffers copied from the event source, which can be retrieved by the event sink through KSEVENT_TYPE_QUERYBUFFER. |
+| [KSCAMERA_PERFRAMESETTING_CAP_HEADER structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_cap_header.md) | This structure contains the header information for the per frame settings capabilities. |
+| [KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_cap_item_header.md) | This structure contains the header information for a per-frame settings item. |
+| [KSCAMERA_PERFRAMESETTING_CUSTOM_ITEM structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_custom_item.md) | This structure contains a custom item. |
+| [KSCAMERA_PERFRAMESETTING_FRAME_HEADER structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_frame_header.md) | This structure contains the header information for a frame in a per-frame settings payload. |
+| [KSCAMERA_PERFRAMESETTING_HEADER structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_header.md) | This structure contains header information for the per-frame settings payload. |
+| [KSCAMERA_PERFRAMESETTING_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_item_header.md) | This structure contains the header information for a per-frame settings item. |
+| [KSCLOCKINSTANCE structure](..\ksi\ns-ksi-ksclockinstance.md) | . |
+| [KSCLOCK_CREATE structure](..\ks\ns-ks-ksclock_create.md) | The KSCLOCK_CREATE structure is used in clock create parameters for the KsCreateClock function. |
+| [KSCLOCK_FUNCTIONTABLE structure](..\ks\ns-ks-ksclock_functiontable.md) | The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock. |
+| [KSCOMPONENTID structure](..\ks\ns-ks-kscomponentid.md) | The KSCOMPONENTID structure contains unique identifiers that describe an individual kernel streaming object. |
+| [KSCORRELATED_TIME structure](..\ks\ns-ks-kscorrelated_time.md) | The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot. |
+| [KSDATAFORMAT structure](..\ks\ns-ks-ksdataformat.md) | The KSDATAFORMAT structure is a variable-length structure that describes a data format. |
+| [KSDATAFORMAT structure](..\ks\ns-ks-ksdataformat~r1.md) | The KSDATAFORMAT structure is a variable-length structure that describes a data format. |
+| [KSDISPATCH_TABLE structure](..\ks\ns-ks-ksdispatch_table.md) | The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines. |
+| [KSDPC_ITEM structure](..\ks\ns-ks-ksdpc_item.md) | The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL. |
+| [KSERROR structure](..\ks\ns-ks-kserror.md) | The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers. |
+| [KSEVENTDATA structure](..\ks\ns-ks-kseventdata.md) | Kernel streaming clients send the KSEVENTDATA structure to the class driver to specify a notification method. |
+| [KSEVENT_ITEM structure](..\ks\ns-ks-ksevent_item.md) | The KSEVENT_ITEM structure describe a minidriver's support for a specific event within an event set. |
+| [KSEVENT_SET structure](..\ks\ns-ks-ksevent_set.md) | The KSEVENT_SET structure describes the events that comprise a kernel streaming event set. |
+| [KSEVENT_TIME_INTERVAL structure](..\ks\ns-ks-ksevent_time_interval.md) | The KSEVENT_TIME_INTERVAL structure is used in various events within the KSEVENTSETID_Clock event set. |
+| [KSEVENT_TIME_MARK structure](..\ks\ns-ks-ksevent_time_mark.md) | The KSEVENT_TIME_MARK structure is used in various events within the KSEVENTSETID_Clock event set. |
+| [KSEVENT_TUNER_INITIATE_SCAN_S structure](..\ksmedia\ns-ksmedia-ksevent_tuner_initiate_scan_s.md) | The KSEVENT_TUNER_INITIATE_SCAN_S structure is used in the KSEVENT_TUNER_INITIATE_SCAN event within the EVENTSETID_TUNER event set. |
+| [KSE_NODE structure](..\ks\ns-ks-kse_node.md) | The KSE_NODE structure specifies an event request on a specific node. |
+| [KSE_PIN structure](..\ks\ns-ks-kse_pin.md) | . |
+| [KSFASTMETHOD_ITEM structure](..\ks\ns-ks-ksfastmethod_item.md) | Drivers provide a structure of type KSFASTMETHOD_ITEM to support fast I/O dispatching. |
+| [KSFASTPROPERTY_ITEM structure](..\ks\ns-ks-ksfastproperty_item.md) | The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching. |
+| [KSFRAMETIME structure](..\ks\ns-ks-ksframetime.md) | The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next &#0034;frame&#0034; of data, and flags associated with that frame. |
 | [KSGRAPHMANAGER_FUNCTIONTABLE structure](..\ks\ns-ks-ksgraphmanager_functiontable.md) | . |
+| [KSHANDSHAKE structure](..\ks\ns-ks-kshandshake.md) | The KSHANDSHAKE structure is used to pass information back and forth while pins are handshaking in an attempt to negotiate a private interface. |
+| [KSIDEFAULTCLOCK structure](..\ksi\ns-ksi-ksidefaultclock.md) | . |
+| [KSIDENTIFIER structure](..\ks\ns-ks-ksidentifier.md) | The KSIDENTIFIER structure specifies a GUID that uniquely identifies a related set of GUIDs, and an index value to refer to a specific member within that set. |
+| [KSINTERVAL structure](..\ks\ns-ks-ksinterval.md) | The KSINTERVAL structure specifies a base time and time interval for recurring events. |
+| [KSMETHOD_ITEM structure](..\ks\ns-ks-ksmethod_item.md) | The KSMETHOD_ITEM structure describes a single method within a method set. |
+| [KSMETHOD_SET structure](..\ks\ns-ks-ksmethod_set.md) | The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set. |
+| [KSMULTIPLE_ITEM structure](..\ks\ns-ks-ksmultiple_item.md) | The KSMULTIPLE_ITEM structure is a generic header for property data that can contain multiple entries. |
+| [KSM_NODE structure](..\ks\ns-ks-ksm_node.md) | Just as KSP_NODE is used for properties on a node, the KSM_NODE structure is used for methods on a node. |
+| [KSNODE_CREATE structure](..\ks\ns-ks-ksnode_create.md) | The KSNODE_CREATE structure describes the set of information used to create the node handle. |
+| [KSOBJECT_CREATE structure](..\ks\ns-ks-ksobject_create.md) | The KSOBJECT_CREATE structure contains an array of create handlers for base object classes supported by this device object. |
+| [KSOBJECT_CREATE_ITEM structure](..\ks\ns-ks-ksobject_create_item.md) | The KSOBJECT_CREATE_ITEM structure is used to look up the string passed to a create request. |
+| [KSPIN_CINSTANCES structure](..\ks\ns-ks-kspin_cinstances.md) | . |
+| [KSPIN_CONNECT structure](..\ks\ns-ks-kspin_connect.md) | Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call. |
+| [KSPIN_DESCRIPTOR structure](..\ks\ns-ks-kspin_descriptor.md) | The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type. |
+| [KSPIN_MDL_CACHING_NOTIFICATION structure](..\ks\ns-ks-kspin_mdl_caching_notification.md) | This structure is used internally by the operating system. |
+| [KSPIN_MDL_CACHING_NOTIFICATION32 structure](..\ks\ns-ks-kspin_mdl_caching_notification32.md) | This structure is used internally by the operating system. |
+| [KSPIN_PHYSICALCONNECTION structure](..\ks\ns-ks-kspin_physicalconnection.md) | A structure of type KSPIN_PHYSICALCONNECTION is returned in response to a KSPROPERTY_PIN_PHYSICALCONNECTION request. |
+| [KSPRIORITY structure](..\ks\ns-ks-kspriority.md) | The KSPRIORITY structure is used to specify priority and is used with the KSPROPERTY_CONNECTION_PRIORITY property. |
+| [KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_allocator_control_capture_caps_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure specifies if interleaved capture is supported. |
+| [KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure](..\ksmedia\ns-ksmedia-ksproperty_allocator_control_capture_interleave_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure specifies if interleaved capture is possible. |
+| [KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure](..\ksmedia\ns-ksmedia-ksproperty_allocator_control_surface_size_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure specifies the width and height of an overlay surface. |
+| [KSPROPERTY_BOUNDS_LONG structure](..\ks\ns-ks-ksproperty_bounds_long.md) | The KSPROPERTY_BOUNDS_LONG structure defines the bounds for a 32-bit property. |
+| [KSPROPERTY_BOUNDS_LONGLONG structure](..\ks\ns-ks-ksproperty_bounds_longlong.md) | The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit property. |
+| [KSPROPERTY_CAMERACONTROL_FLASH_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_flash_s.md) | Describes flash control properties in the PROPSETID_VIDCAP_CAMERACONTROL_FLASH camera control property set. This structure specifies property values that are used by applications to configure the camera's flash. |
+| [KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_focal_length_s.md) | The KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure returns filter-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
+| [KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_image_pin_capability_s.md) | Describes image pin control properties in the PROPSETID_VIDCAP_CAMERACONTROL_IMAGE_PIN_CAPABILITY camera control property set. |
+| [KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_node_focal_length_s.md) | The KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure returns node-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
+| [KSPROPERTY_CAMERACONTROL_NODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_node_s.md) | The KSPROPERTY_CAMERACONTROL_NODE_S structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. This structure specifies property values in requests to the USB Video Class driver. |
+| [KSPROPERTY_CAMERACONTROL_NODE_S2 structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_node_s2.md) | The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver. |
+| [KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_region_of_interest_s.md) | Describes region of interest (ROI) control properties in the PROPSETID_VIDCAP_CAMERACONTROL_REGION_OF_INTEREST camera control property set. |
+| [KSPROPERTY_CAMERACONTROL_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s.md) | The KSPROPERTY_CAMERACONTROL_S structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. |
+| [KSPROPERTY_CAMERACONTROL_S2 structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s2.md) | The KSPROPERTY_CAMERACONTROL_S2 structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. |
+| [KSPROPERTY_CAMERACONTROL_S_EX structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md) | Specifies a camera control operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization. |
+| [KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s.md) | Describes video stabilization control properties in the PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION camera control property set. This structure specifies property values that are used in requests to the camera driver. |
+| [KSPROPERTY_CROSSBAR_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_crossbar_caps_s.md) | The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device. |
+| [KSPROPERTY_CROSSBAR_PININFO_S structure](..\ksmedia\ns-ksmedia-ksproperty_crossbar_pininfo_s.md) | The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device. |
+| [KSPROPERTY_CROSSBAR_ROUTE_S structure](..\ksmedia\ns-ksmedia-ksproperty_crossbar_route_s.md) | The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin. |
+| [KSPROPERTY_DESCRIPTION structure](..\ks\ns-ks-ksproperty_description.md) | The KSPROPERTY_DESCRIPTION structure specifies the size and type of values contained in a specific property. |
+| [KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure](..\ksmedia\ns-ksmedia-ksproperty_droppedframes_current_s.md) | The KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure describes the dropped frame information from the minidriver. |
+| [KSPROPERTY_EXTDEVICE_S structure](..\ksmedia\ns-ksmedia-ksproperty_extdevice_s.md) | The KSPROPERTY_EXTDEVICE_S structure describes an external device and its capabilities. |
+| [KSPROPERTY_EXTXPORT_NODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_extxport_node_s.md) | The KSPROPERTY_EXTXPORT_NODE_S structure describes an external transport and its capabilities. |
+| [KSPROPERTY_EXTXPORT_S structure](..\ksmedia\ns-ksmedia-ksproperty_extxport_s.md) | The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities. |
+| [KSPROPERTY_ITEM structure](..\ks\ns-ks-ksproperty_item.md) | Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set. |
+| [KSPROPERTY_MEDIAAVAILABLE structure](..\ks\ns-ks-ksproperty_mediaavailable.md) | The KSPROPERTY_MEDIAAVAILABLE structure specifies the media time span (the time span that a client can seek within) that is currently available on a filter. |
+| [KSPROPERTY_MEMBERSHEADER structure](..\ks\ns-ks-ksproperty_membersheader.md) | A driver provides a structure of type KSPROPERTY_MEMBERSHEADER to describe the size and type of each element in an array containing property values or ranges. |
+| [KSPROPERTY_MEMBERSLIST structure](..\ks\ns-ks-ksproperty_memberslist.md) | The KSPROPERTY_MEMBERSLIST structure contains a list of legal values or ranges for a property. |
+| [KSPROPERTY_POSITIONS structure](..\ks\ns-ks-ksproperty_positions.md) | The KSPROPERTY_POSITIONS structure specifies the current position and stop position, relative to the total duration of the stream. |
+| [KSPROPERTY_SELECTOR_NODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_selector_node_s.md) | The KSPROPERTY_SELECTOR_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
+| [KSPROPERTY_SELECTOR_S structure](..\ksmedia\ns-ksmedia-ksproperty_selector_s.md) | The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
+| [KSPROPERTY_SERIAL structure](..\ks\ns-ks-ksproperty_serial.md) | The KSPROPERTY_SERIAL structure is a header that is included for each property that follows a KSPROPERTY_SERIALHDR structure. |
+| [KSPROPERTY_SERIALHDR structure](..\ks\ns-ks-ksproperty_serialhdr.md) | The format of the serialization buffer is a KSPROPERTY_SERIALHDR structure, followed by serialized properties. |
+| [KSPROPERTY_SET structure](..\ks\ns-ks-ksproperty_set.md) | A kernel streaming driver or pin may use the KSPROPERTY_SET structure to describe how it supports a property set. |
+| [KSPROPERTY_STEPPING_LONG structure](..\ks\ns-ks-ksproperty_stepping_long.md) | The KSPROPERTY_STEPPING_LONG structure defines the valid range of values for a 32-bit property. |
+| [KSPROPERTY_STEPPING_LONGLONG structure](..\ks\ns-ks-ksproperty_stepping_longlong.md) | The KSPROPERTY_STEPPING_LONGLONG structure defines the valid range of values for a 64-bit property. |
+| [KSPROPERTY_TIMECODE_NODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_timecode_node_s.md) | The KSPROPERTY_TIMECODE_NODE_S structure describes a timecode. |
+| [KSPROPERTY_TIMECODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_timecode_s.md) | The KSPROPERTY_TIMECODE_S structure describes a timecode. |
+| [KSPROPERTY_TUNER_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_caps_s.md) | The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices. |
+| [KSPROPERTY_TUNER_FREQUENCY_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_frequency_s.md) | The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device. |
+| [KSPROPERTY_TUNER_IF_MEDIUM_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_if_medium_s.md) | The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency. |
+| [KSPROPERTY_TUNER_INPUT_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_input_s.md) | The KSPROPERTY_TUNER_INPUT_S structure describes the input connection index of a tuner device for devices that support multiple inputs. |
+| [KSPROPERTY_TUNER_MODE_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_caps_s.md) | The KS_PROPERTY_TUNER_MODE_CAPS_S structure describes the capabilities of TV and radio tuner devices. |
+| [KSPROPERTY_TUNER_MODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_s.md) | The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device. |
+| [KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_networktype_scan_caps_s.md) | The KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure describes the scanning capabilities of a broadcast network type that a tuning device supports. |
+| [KSPROPERTY_TUNER_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_scan_caps_s.md) | The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capabilities of a tuning device. |
+| [KSPROPERTY_TUNER_SCAN_STATUS_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_scan_status_s.md) | The KSPROPERTY_TUNER_SCAN_STATUS_S structure describes status for a scanning operation. |
+| [KSPROPERTY_TUNER_STANDARD_MODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_standard_mode_s.md) | The KSPROPERTY_TUNER_STANDARD_MODE_S structure describes whether the tuning device can identify the tuner standard from the signal itself. |
+| [KSPROPERTY_TUNER_STANDARD_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_standard_s.md) | The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner device, such as PAL, NTSC or SECAM. |
+| [KSPROPERTY_TUNER_STATUS_S structure](..\ksmedia\ns-ksmedia-ksproperty_tuner_status_s.md) | The KSPROPERTY_TUNER_STATUS_S structure describes the progress of a tuning operation for TV and radio tuner devices, including present tuning frequency. |
+| [KSPROPERTY_TVAUDIO_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_tvaudio_caps_s.md) | The KSPROPERTY_TVAUDIO_CAPS_S structure describes the capability of a TV audio device, such as stereo versus mono audio support and language capabilities. |
+| [KSPROPERTY_TVAUDIO_S structure](..\ksmedia\ns-ksmedia-ksproperty_tvaudio_s.md) | The KSPROPERTY_TVAUDIO_S structure describes the current TV audio mode, such as stereo or mono audio and language settings. |
+| [KSPROPERTY_VALUES structure](..\ks\ns-ks-ksproperty_values.md) | The KSPROPERTY_VALUES structure describes the type and acceptable default values of a property. |
+| [KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure](..\ksmedia\ns-ksmedia-ksproperty_videocompression_getinfo_s.md) | The KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure describes information about the video compression capabilities supported by a device. |
+| [KSPROPERTY_VIDEOCOMPRESSION_S structure](..\ksmedia\ns-ksmedia-ksproperty_videocompression_s.md) | The KSPROPERTY_VIDEOCOMPRESSION_S structure describes a single KSPROPERTY_VIDEOCOMPRESSION_Xxx property of a specified stream. |
+| [KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure](..\ksmedia\ns-ksmedia-ksproperty_videocontrol_actual_frame_rate_s.md) | The KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure describes actual frame rate information in response to KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE property requests. |
+| [KSPROPERTY_VIDEOCONTROL_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_videocontrol_caps_s.md) | The KSPROPERTY_VIDEOCONTROL_CAPS_S structure describes the video-control capabilities of a minidriver, such as image flipping or event triggering abilities. |
+| [KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure](..\ksmedia\ns-ksmedia-ksproperty_videocontrol_frame_rates_s.md) | The KSPROPERTY_VIDEOCONTROL_FRAME_RATES structure describes available frame rates in 100-nanosecond units. |
+| [KSPROPERTY_VIDEOCONTROL_MODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_videocontrol_mode_s.md) | The KSPROPERTY_VIDEOCONTROL_MODE_S structure describes video-control modes for a stream, such as image flipping or event triggering abilities. |
+| [KSPROPERTY_VIDEODECODER_CAPS_S structure](..\ksmedia\ns-ksmedia-ksproperty_videodecoder_caps_s.md) | The KSPROPERTY_VIDEODECODER_CAPS_S structure describes the hardware capabilities of the video decoder device. |
+| [KSPROPERTY_VIDEODECODER_S structure](..\ksmedia\ns-ksmedia-ksproperty_videodecoder_s.md) | The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set. |
+| [KSPROPERTY_VIDEODECODER_STATUS_S structure](..\ksmedia\ns-ksmedia-ksproperty_videodecoder_status_s.md) | The KSPROPERTY_VIDEODECODER_STATUS_S structure describes the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in. |
+| [KSPROPERTY_VIDEOPROCAMP_NODE_S structure](..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_node_s.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
+| [KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure](..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_node_s2.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set that use two values at the same time. |
+| [KSPROPERTY_VIDEOPROCAMP_S structure](..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md) | The KSPROPERTY_VIDEOPROCAMP_S structure describes filter-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
+| [KSP_NODE structure](..\ks\ns-ks-ksp_node.md) | Kernel streaming clients use the KSP_NODE structure to specify the property and node type within a KSPROPERTY_TOPOLOGY_NAME property request. |
+| [KSP_NODE_ESPID structure](..\bdamedia\ns-bdamedia-ksp_node_espid.md) | The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes. |
+| [KSP_PIN structure](..\ks\ns-ks-ksp_pin.md) | Kernel streaming clients use the KSP_PIN structure to specify the property and pin type within a KSPROPSETID_Pin property request. |
+| [KSP_TIMEFORMAT structure](..\ks\ns-ks-ksp_timeformat.md) | The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT. |
+| [KSQUALITY structure](..\ks\ns-ks-ksquality.md) | The KSQUALITY structure is used to report QM problems in both kernel and user mode to their respective quality managers. |
+| [KSQUALITY_MANAGER structure](..\ks\ns-ks-ksquality_manager.md) | The KSQUALITY_MANAGER structure is used with the KSPROPERTY_STREAM_QUALITY property and contains the handle of the quality manager sink and a context to pass in the quality complaints. |
+| [KSQUERYBUFFER structure](..\ks\ns-ks-ksquerybuffer.md) | The KSQUERYBUFFER structure is used when querying for outstanding buffers available on an event with KSEVENT_TYPE_QUERYBUFFER. |
+| [KSRATE structure](..\ks\ns-ks-ksrate.md) | The query is passed a KSRATE structure appended to the property containing the rate request (known as a KSRATE_CAPABILITY structure), and is returned a KSRATE structure filled in with the capability given the rate request. |
+| [KSRATE_CAPABILITY structure](..\ks\ns-ks-ksrate_capability.md) | The client uses the KSRATE_CAPABILITY structure in a KSPROPERTY_STREAM_RATECAPABILITY property request. |
 | [KSRELATIVEEVENT structure](..\ks\ns-ks-ksrelativeevent.md) | The KSPROPERTY_CONNECTION_STARTAT property is passed a KSRELATIVEEVENT structure. |
+| [KSRESOLUTION structure](..\ks\ns-ks-ksresolution.md) | The KSRESOLUTION structure specifies granularity and error of a kernel streaming clock. |
+| [KSSCATTER_GATHER structure](..\strmini\ns-strmini-ksscatter_gather.md) | . |
+| [KSSTREAMALLOCATOR_FUNCTIONTABLE structure](..\ks\ns-ks-ksstreamallocator_functiontable.md) | Clients can request the function table of a given allocator by sending a KSSTREAMALLOCATOR_FUNCTIONTABLE structure in a KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE property request. |
+| [KSSTREAMALLOCATOR_STATUS structure](..\ks\ns-ks-ksstreamallocator_status.md) | The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator. |
+| [KSSTREAMALLOCATOR_STATUS_EX structure](..\ks\ns-ks-ksstreamallocator_status_ex.md) | Client use KSSTREAMALLOCATOR_STATUS_EX to query the status for allocators supporting the extended allocator framing. |
+| [KSSTREAM_HEADER structure](..\ks\ns-ks-ksstream_header.md) | The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin. |
+| [KSSTREAM_METADATA_INFO structure](..\ks\ns-ks-ksstream_metadata_info.md) | This structure contains the metadata information that is passed down to the driver. |
+| [KSSTREAM_UVC_METADATA structure](..\ks\ns-ks-ksstream_uvc_metadata.md) | The KSSTREAM_UVC_METADATA structure contains start and end of frame timestamp information. |
+| [KSSTREAM_UVC_METADATATYPE_TIMESTAMP structure](..\ks\ns-ks-ksstream_uvc_metadatatype_timestamp.md) | The KSSTREAM_UVC_METADATATYPE_TIMESTAMP structure contains USB video class (UVC) clock and timestamp information. |
+| [KSTIME structure](..\ks\ns-ks-kstime.md) | The KSTIME structure specifies a time stamp that can be used to indicate stream position. |
+| [KSTOPOLOGY structure](..\ks\ns-ks-kstopology.md) | The KSTOPOLOGY structure describes the topology of pins and nodes. |
+| [KSTOPOLOGY_CONNECTION structure](..\ks\ns-ks-kstopology_connection.md) | The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter. |
+| [KSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-ksvpmaxpixelrate.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
+| [KSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-ksvpmaxpixelrate~r1.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
+| [KSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-ksvpsurfaceparams.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
+| [KSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-ksvpsurfaceparams~r1.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
+| [KSWAVE_BUFFER structure](..\ksmedia\ns-ksmedia-kswave_buffer.md) | The KSWAVE_BUFFER structure is used to describe a sample buffer. |
+| [KSWAVE_COMPATCAPS structure](..\ksmedia\ns-ksmedia-kswave_compatcaps.md) | The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device. |
+| [KSWAVE_INPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-kswave_input_capabilities.md) | The KSWAVE_INPUT_CAPABILITIES structure is used to describe the input capabilities of a device. |
+| [KSWAVE_OUTPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-kswave_output_capabilities.md) | The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device. |
+| [KSWAVE_VOLUME structure](..\ksmedia\ns-ksmedia-kswave_volume.md) | The KSWAVE_VOLUME structure is used to describe sample volume. |
+| [KS_AM_ExactRateChange structure](..\ksmedia\ns-ksmedia-ks_am_exactratechange.md) | The KS_AM_ExactRateChange structure is not yet implemented. |
+| [KS_AM_SimpleRateChange structure](..\ksmedia\ns-ksmedia-ks_am_simpleratechange.md) | The KS_AM_SimpleRateChange structure is used to describe a simple rate change (fast-forward or rewind) for an MPEG2 stream. |
+| [KS_COMPRESSION structure](..\ks\ns-ks-ks_compression.md) | The KS_COMPRESSION structure defines the compression of frames on an output pin. |
+| [KS_FRAMING_ITEM structure](..\ks\ns-ks-ks_framing_item.md) | The KS_FRAMING_ITEM structure is used to declare allocator requirements on a kernel-mode pin. |
+| [KS_FRAMING_RANGE structure](..\ks\ns-ks-ks_framing_range.md) | The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item. |
+| [KS_FRAMING_RANGE_WEIGHTED structure](..\ks\ns-ks-ks_framing_range_weighted.md) | Drivers can use the KS_FRAMING_RANGE_WEIGHTED structure to specify a range of weighted frame sizes. |
 | [LAMP_CAPABILITIES_COLOR structure](..\lamp\ns-lamp-lamp_capabilities_color.md) | This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_COLOR. |
 | [LAMP_CAPABILITIES_WHITE structure](..\lamp\ns-lamp-lamp_capabilities_white.md) | This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_WHITE. |
 | [LAMP_INTENSITY_COLOR structure](..\lamp\ns-lamp-lamp_intensity_color.md) | This structure is the I/O parameter type of IOCTL_LAMP_GET_INTENSITY_COLOR and IOCTL_LAMP_SET_INTENSITY_COLOR. |
 | [LAMP_INTENSITY_WHITE structure](..\lamp\ns-lamp-lamp_intensity_white.md) | This structure is the I/O parameter type of IOCTL_LAMP_GET_INTENSITY_WHITE and IOCTL_LAMP_SET_INTENSITY_WHITE. |
+| [MEDIUM_INFO structure](..\ksmedia\ns-ksmedia-medium_info.md) | The MEDIUM_INFO structure describes the media loaded into an external device. |
 | [OPTIMAL_WEIGHT_TOTALS structure](..\ksproxy\ns-ksproxy-optimal_weight_totals.md) | . |
-| [PBUS_INTERFACE_MEDIUMS structure](..\ks\ns-ks-pbus_interface_mediums.md) | . |
-| [PBUS_INTERFACE_REFERENCE structure](..\ks\ns-ks-pbus_interface_reference.md) | A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use. |
 | [PID_MAP structure](..\bdatypes\ns-bdatypes-pid_map.md) | The PID_MAP structure describes a group of packets in the output stream of a packet identifier (PID) filter. This group consists of packets that are identified with an identical PID and contain particular media content. |
-| [PKSALLOCATOR_FRAMING structure](..\ks\ns-ks-pksallocator_framing.md) | The KSALLOCATOR_FRAMING structure is used to query framing requirements and submit allocator creation requests. |
-| [PKSALLOCATOR_FRAMING_EX structure](..\ks\ns-ks-pksallocator_framing_ex.md) | The KSALLOCATOR_FRAMING_EX structure is the AVStream replacement for KSALLOCATOR_FRAMING. KSALLOCATOR_FRAMING_EX defines allocator requirements on a pin in a kernel level filter. |
-| [PKSATTRIBUTE structure](..\ks\ns-ks-pksattribute.md) | The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers. |
-| [PKSATTRIBUTE_LIST structure](..\ks\ns-ks-pksattribute_list.md) | The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure. |
-| [PKSBUFFER_ITEM structure](..\ks\ns-ks-pksbuffer_item.md) | The KSBUFFER_ITEM structure is used to store a list of data buffers copied from the event source, which can be retrieved by the event sink through KSEVENT_TYPE_QUERYBUFFER. |
-| [PKSCAMERA_PERFRAMESETTING_CAP_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_cap_header.md) | This structure contains the header information for the per frame settings capabilities. |
-| [PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_cap_item_header.md) | This structure contains the header information for a per-frame settings item. |
-| [PKSCAMERA_PERFRAMESETTING_CUSTOM_ITEM structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_custom_item.md) | This structure contains a custom item. |
-| [PKSCAMERA_PERFRAMESETTING_FRAME_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_frame_header.md) | This structure contains the header information for a frame in a per-frame settings payload. |
-| [PKSCAMERA_PERFRAMESETTING_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_header.md) | This structure contains header information for the per-frame settings payload. |
-| [PKSCAMERA_PERFRAMESETTING_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-pkscamera_perframesetting_item_header.md) | This structure contains the header information for a per-frame settings item. |
-| [PKSCLOCKINSTANCE structure](..\ksi\ns-ksi-pksclockinstance.md) | . |
-| [PKSCLOCK_CREATE structure](..\ks\ns-ks-pksclock_create.md) | The KSCLOCK_CREATE structure is used in clock create parameters for the KsCreateClock function. |
-| [PKSCLOCK_FUNCTIONTABLE structure](..\ks\ns-ks-pksclock_functiontable.md) | The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock. |
-| [PKSCOMPONENTID structure](..\ks\ns-ks-pkscomponentid.md) | The KSCOMPONENTID structure contains unique identifiers that describe an individual kernel streaming object. |
-| [PKSCORRELATED_TIME structure](..\ks\ns-ks-pkscorrelated_time.md) | The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot. |
-| [PKSDATARANGE structure](..\ks\ns-ks-pksdatarange.md) | The KSDATARANGE structure is a variable-length structure that describes a range of data formats. |
-| [PKSDATARANGE structure](..\ks\ns-ks-pksdatarange~r1.md) | The KSDATARANGE structure is a variable-length structure that describes a range of data formats. |
-| [PKSDISPATCH_TABLE structure](..\ks\ns-ks-pksdispatch_table.md) | The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines. |
-| [PKSDPC_ITEM structure](..\ks\ns-ks-pksdpc_item.md) | The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL. |
-| [PKSERROR structure](..\ks\ns-ks-pkserror.md) | The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers. |
-| [PKSEVENTDATA structure](..\ks\ns-ks-pkseventdata.md) | Kernel streaming clients send the KSEVENTDATA structure to the class driver to specify a notification method. |
-| [PKSEVENT_ITEM structure](..\ks\ns-ks-pksevent_item.md) | The KSEVENT_ITEM structure describe a minidriver's support for a specific event within an event set. |
-| [PKSEVENT_SET structure](..\ks\ns-ks-pksevent_set.md) | The KSEVENT_SET structure describes the events that comprise a kernel streaming event set. |
-| [PKSEVENT_TIME_INTERVAL structure](..\ks\ns-ks-pksevent_time_interval.md) | The KSEVENT_TIME_INTERVAL structure is used in various events within the KSEVENTSETID_Clock event set. |
-| [PKSEVENT_TIME_MARK structure](..\ks\ns-ks-pksevent_time_mark.md) | The KSEVENT_TIME_MARK structure is used in various events within the KSEVENTSETID_Clock event set. |
-| [PKSEVENT_TUNER_INITIATE_SCAN_S structure](..\ksmedia\ns-ksmedia-pksevent_tuner_initiate_scan_s.md) | The KSEVENT_TUNER_INITIATE_SCAN_S structure is used in the KSEVENT_TUNER_INITIATE_SCAN event within the EVENTSETID_TUNER event set. |
-| [PKSE_NODE structure](..\ks\ns-ks-pkse_node.md) | The KSE_NODE structure specifies an event request on a specific node. |
-| [PKSE_PIN structure](..\ks\ns-ks-pkse_pin.md) | . |
-| [PKSFASTMETHOD_ITEM structure](..\ks\ns-ks-pksfastmethod_item.md) | Drivers provide a structure of type KSFASTMETHOD_ITEM to support fast I/O dispatching. |
-| [PKSFASTPROPERTY_ITEM structure](..\ks\ns-ks-pksfastproperty_item.md) | The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching. |
-| [PKSFRAMETIME structure](..\ks\ns-ks-pksframetime.md) | The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next &#0034;frame&#0034; of data, and flags associated with that frame. |
-| [PKSHANDSHAKE structure](..\ks\ns-ks-pkshandshake.md) | The KSHANDSHAKE structure is used to pass information back and forth while pins are handshaking in an attempt to negotiate a private interface. |
-| [PKSIDEFAULTCLOCK structure](..\ksi\ns-ksi-pksidefaultclock.md) | . |
-| [PKSIDENTIFIER structure](..\ks\ns-ks-pksidentifier.md) | The KSIDENTIFIER structure specifies a GUID that uniquely identifies a related set of GUIDs, and an index value to refer to a specific member within that set. |
-| [PKSINTERVAL structure](..\ks\ns-ks-pksinterval.md) | The KSINTERVAL structure specifies a base time and time interval for recurring events. |
-| [PKSMETHOD_ITEM structure](..\ks\ns-ks-pksmethod_item.md) | The KSMETHOD_ITEM structure describes a single method within a method set. |
-| [PKSMETHOD_SET structure](..\ks\ns-ks-pksmethod_set.md) | The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set. |
-| [PKSMULTIPLE_ITEM structure](..\ks\ns-ks-pksmultiple_item.md) | The KSMULTIPLE_ITEM structure is a generic header for property data that can contain multiple entries. |
-| [PKSM_NODE structure](..\ks\ns-ks-pksm_node.md) | Just as KSP_NODE is used for properties on a node, the KSM_NODE structure is used for methods on a node. |
-| [PKSNODE_CREATE structure](..\ks\ns-ks-pksnode_create.md) | The KSNODE_CREATE structure describes the set of information used to create the node handle. |
-| [PKSOBJECT_CREATE structure](..\ks\ns-ks-pksobject_create.md) | The KSOBJECT_CREATE structure contains an array of create handlers for base object classes supported by this device object. |
-| [PKSOBJECT_CREATE_ITEM structure](..\ks\ns-ks-pksobject_create_item.md) | The KSOBJECT_CREATE_ITEM structure is used to look up the string passed to a create request. |
-| [PKSPIN_CINSTANCES structure](..\ks\ns-ks-pkspin_cinstances.md) | . |
-| [PKSPIN_CONNECT structure](..\ks\ns-ks-pkspin_connect.md) | Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call. |
-| [PKSPIN_DESCRIPTOR structure](..\ks\ns-ks-pkspin_descriptor.md) | The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type. |
-| [PKSPIN_MDL_CACHING_NOTIFICATION structure](..\ks\ns-ks-pkspin_mdl_caching_notification.md) | This structure is used internally by the operating system. |
-| [PKSPIN_MDL_CACHING_NOTIFICATION32 structure](..\ks\ns-ks-pkspin_mdl_caching_notification32.md) | This structure is used internally by the operating system. |
-| [PKSPIN_PHYSICALCONNECTION structure](..\ks\ns-ks-pkspin_physicalconnection.md) | A structure of type KSPIN_PHYSICALCONNECTION is returned in response to a KSPROPERTY_PIN_PHYSICALCONNECTION request. |
-| [PKSPRIORITY structure](..\ks\ns-ks-pkspriority.md) | The KSPRIORITY structure is used to specify priority and is used with the KSPROPERTY_CONNECTION_PRIORITY property. |
-| [PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_allocator_control_capture_caps_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S structure specifies if interleaved capture is supported. |
-| [PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure](..\ksmedia\ns-ksmedia-pksproperty_allocator_control_capture_interleave_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure specifies if interleaved capture is possible. |
-| [PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure](..\ksmedia\ns-ksmedia-pksproperty_allocator_control_surface_size_s.md) | The KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure specifies the width and height of an overlay surface. |
-| [PKSPROPERTY_BOUNDS_LONG structure](..\ks\ns-ks-pksproperty_bounds_long.md) | The KSPROPERTY_BOUNDS_LONG structure defines the bounds for a 32-bit property. |
-| [PKSPROPERTY_BOUNDS_LONGLONG structure](..\ks\ns-ks-pksproperty_bounds_longlong.md) | The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit property. |
-| [PKSPROPERTY_CAMERACONTROL_FLASH_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_flash_s.md) | Describes flash control properties in the PROPSETID_VIDCAP_CAMERACONTROL_FLASH camera control property set. This structure specifies property values that are used by applications to configure the camera's flash. |
-| [PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_focal_length_s.md) | The KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure returns filter-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
-| [PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_image_pin_capability_s.md) | Describes image pin control properties in the PROPSETID_VIDCAP_CAMERACONTROL_IMAGE_PIN_CAPABILITY camera control property set. |
-| [PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_node_focal_length_s.md) | The KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure returns node-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property. |
-| [PKSPROPERTY_CAMERACONTROL_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_node_s.md) | The KSPROPERTY_CAMERACONTROL_NODE_S structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. This structure specifies property values in requests to the USB Video Class driver. |
-| [PKSPROPERTY_CAMERACONTROL_NODE_S2 structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_node_s2.md) | The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver. |
-| [PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_region_of_interest_s.md) | Describes region of interest (ROI) control properties in the PROPSETID_VIDCAP_CAMERACONTROL_REGION_OF_INTEREST camera control property set. |
-| [PKSPROPERTY_CAMERACONTROL_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_s.md) | The KSPROPERTY_CAMERACONTROL_S structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set. |
-| [PKSPROPERTY_CAMERACONTROL_S2 structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_s2.md) | The KSPROPERTY_CAMERACONTROL_S2 structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. |
-| [PKSPROPERTY_CAMERACONTROL_S_EX structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_s_ex.md) | Specifies a camera control operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization. |
-| [PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_cameracontrol_videostabilization_mode_s.md) | Describes video stabilization control properties in the PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION camera control property set. This structure specifies property values that are used in requests to the camera driver. |
-| [PKSPROPERTY_CROSSBAR_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_crossbar_caps_s.md) | The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device. |
-| [PKSPROPERTY_CROSSBAR_PININFO_S structure](..\ksmedia\ns-ksmedia-pksproperty_crossbar_pininfo_s.md) | The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device. |
-| [PKSPROPERTY_CROSSBAR_ROUTE_S structure](..\ksmedia\ns-ksmedia-pksproperty_crossbar_route_s.md) | The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin. |
-| [PKSPROPERTY_DESCRIPTION structure](..\ks\ns-ks-pksproperty_description.md) | The KSPROPERTY_DESCRIPTION structure specifies the size and type of values contained in a specific property. |
-| [PKSPROPERTY_DROPPEDFRAMES_CURRENT_S structure](..\ksmedia\ns-ksmedia-pksproperty_droppedframes_current_s.md) | The KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure describes the dropped frame information from the minidriver. |
-| [PKSPROPERTY_EXTDEVICE_S structure](..\ksmedia\ns-ksmedia-pksproperty_extdevice_s.md) | The KSPROPERTY_EXTDEVICE_S structure describes an external device and its capabilities. |
-| [PKSPROPERTY_EXTXPORT_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_extxport_node_s.md) | The KSPROPERTY_EXTXPORT_NODE_S structure describes an external transport and its capabilities. |
-| [PKSPROPERTY_EXTXPORT_S structure](..\ksmedia\ns-ksmedia-pksproperty_extxport_s.md) | The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities. |
-| [PKSPROPERTY_ITEM structure](..\ks\ns-ks-pksproperty_item.md) | Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set. |
-| [PKSPROPERTY_MEDIAAVAILABLE structure](..\ks\ns-ks-pksproperty_mediaavailable.md) | The KSPROPERTY_MEDIAAVAILABLE structure specifies the media time span (the time span that a client can seek within) that is currently available on a filter. |
-| [PKSPROPERTY_MEMBERSHEADER structure](..\ks\ns-ks-pksproperty_membersheader.md) | A driver provides a structure of type KSPROPERTY_MEMBERSHEADER to describe the size and type of each element in an array containing property values or ranges. |
-| [PKSPROPERTY_MEMBERSLIST structure](..\ks\ns-ks-pksproperty_memberslist.md) | The KSPROPERTY_MEMBERSLIST structure contains a list of legal values or ranges for a property. |
-| [PKSPROPERTY_POSITIONS structure](..\ks\ns-ks-pksproperty_positions.md) | The KSPROPERTY_POSITIONS structure specifies the current position and stop position, relative to the total duration of the stream. |
-| [PKSPROPERTY_SELECTOR_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_selector_node_s.md) | The KSPROPERTY_SELECTOR_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
-| [PKSPROPERTY_SELECTOR_S structure](..\ksmedia\ns-ksmedia-pksproperty_selector_s.md) | The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the PROPSETID_VIDCAP_SELECTOR property set. |
-| [PKSPROPERTY_SERIAL structure](..\ks\ns-ks-pksproperty_serial.md) | The KSPROPERTY_SERIAL structure is a header that is included for each property that follows a KSPROPERTY_SERIALHDR structure. |
-| [PKSPROPERTY_SERIALHDR structure](..\ks\ns-ks-pksproperty_serialhdr.md) | The format of the serialization buffer is a KSPROPERTY_SERIALHDR structure, followed by serialized properties. |
-| [PKSPROPERTY_SET structure](..\ks\ns-ks-pksproperty_set.md) | A kernel streaming driver or pin may use the KSPROPERTY_SET structure to describe how it supports a property set. |
-| [PKSPROPERTY_STEPPING_LONG structure](..\ks\ns-ks-pksproperty_stepping_long.md) | The KSPROPERTY_STEPPING_LONG structure defines the valid range of values for a 32-bit property. |
-| [PKSPROPERTY_STEPPING_LONGLONG structure](..\ks\ns-ks-pksproperty_stepping_longlong.md) | The KSPROPERTY_STEPPING_LONGLONG structure defines the valid range of values for a 64-bit property. |
-| [PKSPROPERTY_TIMECODE_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_timecode_node_s.md) | The KSPROPERTY_TIMECODE_NODE_S structure describes a timecode. |
-| [PKSPROPERTY_TIMECODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_timecode_s.md) | The KSPROPERTY_TIMECODE_S structure describes a timecode. |
-| [PKSPROPERTY_TUNER_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_caps_s.md) | The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices. |
-| [PKSPROPERTY_TUNER_FREQUENCY_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_frequency_s.md) | The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device. |
-| [PKSPROPERTY_TUNER_IF_MEDIUM_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_if_medium_s.md) | The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency. |
-| [PKSPROPERTY_TUNER_INPUT_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_input_s.md) | The KSPROPERTY_TUNER_INPUT_S structure describes the input connection index of a tuner device for devices that support multiple inputs. |
-| [PKSPROPERTY_TUNER_MODE_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_mode_caps_s.md) | The KS_PROPERTY_TUNER_MODE_CAPS_S structure describes the capabilities of TV and radio tuner devices. |
-| [PKSPROPERTY_TUNER_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_mode_s.md) | The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device. |
-| [PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_networktype_scan_caps_s.md) | The KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure describes the scanning capabilities of a broadcast network type that a tuning device supports. |
-| [PKSPROPERTY_TUNER_SCAN_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_scan_caps_s.md) | The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capabilities of a tuning device. |
-| [PKSPROPERTY_TUNER_SCAN_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_scan_status_s.md) | The KSPROPERTY_TUNER_SCAN_STATUS_S structure describes status for a scanning operation. |
-| [PKSPROPERTY_TUNER_STANDARD_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_standard_mode_s.md) | The KSPROPERTY_TUNER_STANDARD_MODE_S structure describes whether the tuning device can identify the tuner standard from the signal itself. |
-| [PKSPROPERTY_TUNER_STANDARD_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_standard_s.md) | The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner device, such as PAL, NTSC or SECAM. |
-| [PKSPROPERTY_TUNER_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tuner_status_s.md) | The KSPROPERTY_TUNER_STATUS_S structure describes the progress of a tuning operation for TV and radio tuner devices, including present tuning frequency. |
-| [PKSPROPERTY_TVAUDIO_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_tvaudio_caps_s.md) | The KSPROPERTY_TVAUDIO_CAPS_S structure describes the capability of a TV audio device, such as stereo versus mono audio support and language capabilities. |
-| [PKSPROPERTY_TVAUDIO_S structure](..\ksmedia\ns-ksmedia-pksproperty_tvaudio_s.md) | The KSPROPERTY_TVAUDIO_S structure describes the current TV audio mode, such as stereo or mono audio and language settings. |
-| [PKSPROPERTY_VALUES structure](..\ks\ns-ks-pksproperty_values.md) | The KSPROPERTY_VALUES structure describes the type and acceptable default values of a property. |
-| [PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocompression_getinfo_s.md) | The KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure describes information about the video compression capabilities supported by a device. |
-| [PKSPROPERTY_VIDEOCOMPRESSION_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocompression_s.md) | The KSPROPERTY_VIDEOCOMPRESSION_S structure describes a single KSPROPERTY_VIDEOCOMPRESSION_Xxx property of a specified stream. |
-| [PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_actual_frame_rate_s.md) | The KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure describes actual frame rate information in response to KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE property requests. |
-| [PKSPROPERTY_VIDEOCONTROL_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_caps_s.md) | The KSPROPERTY_VIDEOCONTROL_CAPS_S structure describes the video-control capabilities of a minidriver, such as image flipping or event triggering abilities. |
-| [PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_frame_rates_s.md) | The KSPROPERTY_VIDEOCONTROL_FRAME_RATES structure describes available frame rates in 100-nanosecond units. |
-| [PKSPROPERTY_VIDEOCONTROL_MODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_videocontrol_mode_s.md) | The KSPROPERTY_VIDEOCONTROL_MODE_S structure describes video-control modes for a stream, such as image flipping or event triggering abilities. |
-| [PKSPROPERTY_VIDEODECODER_CAPS_S structure](..\ksmedia\ns-ksmedia-pksproperty_videodecoder_caps_s.md) | The KSPROPERTY_VIDEODECODER_CAPS_S structure describes the hardware capabilities of the video decoder device. |
-| [PKSPROPERTY_VIDEODECODER_S structure](..\ksmedia\ns-ksmedia-pksproperty_videodecoder_s.md) | The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set. |
-| [PKSPROPERTY_VIDEODECODER_STATUS_S structure](..\ksmedia\ns-ksmedia-pksproperty_videodecoder_status_s.md) | The KSPROPERTY_VIDEODECODER_STATUS_S structure describes the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in. |
-| [PKSPROPERTY_VIDEOPROCAMP_NODE_S structure](..\ksmedia\ns-ksmedia-pksproperty_videoprocamp_node_s.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
-| [PKSPROPERTY_VIDEOPROCAMP_NODE_S2 structure](..\ksmedia\ns-ksmedia-pksproperty_videoprocamp_node_s2.md) | The KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set that use two values at the same time. |
-| [PKSPROPERTY_VIDEOPROCAMP_S structure](..\ksmedia\ns-ksmedia-pksproperty_videoprocamp_s.md) | The KSPROPERTY_VIDEOPROCAMP_S structure describes filter-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set. |
-| [PKSP_NODE structure](..\ks\ns-ks-pksp_node.md) | Kernel streaming clients use the KSP_NODE structure to specify the property and node type within a KSPROPERTY_TOPOLOGY_NAME property request. |
-| [PKSP_NODE_ESPID structure](..\bdamedia\ns-bdamedia-pksp_node_espid.md) | The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes. |
-| [PKSP_PIN structure](..\ks\ns-ks-pksp_pin.md) | Kernel streaming clients use the KSP_PIN structure to specify the property and pin type within a KSPROPSETID_Pin property request. |
-| [PKSP_TIMEFORMAT structure](..\ks\ns-ks-pksp_timeformat.md) | The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT. |
-| [PKSQUALITY structure](..\ks\ns-ks-pksquality.md) | The KSQUALITY structure is used to report QM problems in both kernel and user mode to their respective quality managers. |
-| [PKSQUALITY_MANAGER structure](..\ks\ns-ks-pksquality_manager.md) | The KSQUALITY_MANAGER structure is used with the KSPROPERTY_STREAM_QUALITY property and contains the handle of the quality manager sink and a context to pass in the quality complaints. |
-| [PKSQUERYBUFFER structure](..\ks\ns-ks-pksquerybuffer.md) | The KSQUERYBUFFER structure is used when querying for outstanding buffers available on an event with KSEVENT_TYPE_QUERYBUFFER. |
-| [PKSRATE structure](..\ks\ns-ks-pksrate.md) | The query is passed a KSRATE structure appended to the property containing the rate request (known as a KSRATE_CAPABILITY structure), and is returned a KSRATE structure filled in with the capability given the rate request. |
-| [PKSRATE_CAPABILITY structure](..\ks\ns-ks-pksrate_capability.md) | The client uses the KSRATE_CAPABILITY structure in a KSPROPERTY_STREAM_RATECAPABILITY property request. |
-| [PKSRESOLUTION structure](..\ks\ns-ks-pksresolution.md) | The KSRESOLUTION structure specifies granularity and error of a kernel streaming clock. |
-| [PKSSCATTER_GATHER structure](..\strmini\ns-strmini-pksscatter_gather.md) | . |
-| [PKSSTREAMALLOCATOR_FUNCTIONTABLE structure](..\ks\ns-ks-pksstreamallocator_functiontable.md) | Clients can request the function table of a given allocator by sending a KSSTREAMALLOCATOR_FUNCTIONTABLE structure in a KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE property request. |
-| [PKSSTREAMALLOCATOR_STATUS structure](..\ks\ns-ks-pksstreamallocator_status.md) | The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator. |
-| [PKSSTREAMALLOCATOR_STATUS_EX structure](..\ks\ns-ks-pksstreamallocator_status_ex.md) | Client use KSSTREAMALLOCATOR_STATUS_EX to query the status for allocators supporting the extended allocator framing. |
-| [PKSSTREAM_HEADER structure](..\ks\ns-ks-pksstream_header.md) | The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin. |
-| [PKSSTREAM_METADATA_INFO structure](..\ks\ns-ks-pksstream_metadata_info.md) | This structure contains the metadata information that is passed down to the driver. |
-| [PKSSTREAM_UVC_METADATA structure](..\ks\ns-ks-pksstream_uvc_metadata.md) | The KSSTREAM_UVC_METADATA structure contains start and end of frame timestamp information. |
-| [PKSSTREAM_UVC_METADATATYPE_TIMESTAMP structure](..\ks\ns-ks-pksstream_uvc_metadatatype_timestamp.md) | The KSSTREAM_UVC_METADATATYPE_TIMESTAMP structure contains USB video class (UVC) clock and timestamp information. |
-| [PKSTIME structure](..\ks\ns-ks-pkstime.md) | The KSTIME structure specifies a time stamp that can be used to indicate stream position. |
-| [PKSTOPOLOGY structure](..\ks\ns-ks-pkstopology.md) | The KSTOPOLOGY structure describes the topology of pins and nodes. |
-| [PKSTOPOLOGY_CONNECTION structure](..\ks\ns-ks-pkstopology_connection.md) | The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter. |
-| [PKSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-pksvpmaxpixelrate.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
-| [PKSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-pksvpmaxpixelrate~r1.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
-| [PKSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-pksvpsurfaceparams.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
-| [PKSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-pksvpsurfaceparams~r1.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
-| [PKSWAVE_BUFFER structure](..\ksmedia\ns-ksmedia-pkswave_buffer.md) | The KSWAVE_BUFFER structure is used to describe a sample buffer. |
-| [PKSWAVE_COMPATCAPS structure](..\ksmedia\ns-ksmedia-pkswave_compatcaps.md) | The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device. |
-| [PKSWAVE_INPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-pkswave_input_capabilities.md) | The KSWAVE_INPUT_CAPABILITIES structure is used to describe the input capabilities of a device. |
-| [PKSWAVE_OUTPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-pkswave_output_capabilities.md) | The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device. |
-| [PKSWAVE_VOLUME structure](..\ksmedia\ns-ksmedia-pkswave_volume.md) | The KSWAVE_VOLUME structure is used to describe sample volume. |
-| [PKS_AM_ExactRateChange structure](..\ksmedia\ns-ksmedia-pks_am_exactratechange.md) | The KS_AM_ExactRateChange structure is not yet implemented. |
-| [PKS_AM_SimpleRateChange structure](..\ksmedia\ns-ksmedia-pks_am_simpleratechange.md) | The KS_AM_SimpleRateChange structure is used to describe a simple rate change (fast-forward or rewind) for an MPEG2 stream. |
-| [PKS_COMPRESSION structure](..\ks\ns-ks-pks_compression.md) | The KS_COMPRESSION structure defines the compression of frames on an output pin. |
-| [PKS_FRAMING_ITEM structure](..\ks\ns-ks-pks_framing_item.md) | The KS_FRAMING_ITEM structure is used to declare allocator requirements on a kernel-mode pin. |
-| [PKS_FRAMING_RANGE structure](..\ks\ns-ks-pks_framing_range.md) | The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item. |
-| [PKS_FRAMING_RANGE_WEIGHTED structure](..\ks\ns-ks-pks_framing_range_weighted.md) | Drivers can use the KS_FRAMING_RANGE_WEIGHTED structure to specify a range of weighted frame sizes. |
-| [PMEDIUM_INFO structure](..\ksmedia\ns-ksmedia-pmedium_info.md) | The MEDIUM_INFO structure describes the media loaded into an external device. |
-| [PTRANSPORT_STATE structure](..\ksmedia\ns-ksmedia-ptransport_state.md) | The TRANSPORT_STATE structure |
-| [PTUNER_ANALOG_CAPS_S structure](..\ksmedia\ns-ksmedia-ptuner_analog_caps_s.md) | The TUNER_ANALOG_CAPS_S structure describes the hardware scanning capabilities of a tuning device that supports an analog broadcast network. |
-| [PUSBCAMD_INTERFACE structure](..\usbcamdi\ns-usbcamdi-pusbcamd_interface.md) | The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces. |
-| [PVRAM_SURFACE_INFO structure](..\ksmedia\ns-ksmedia-pvram_surface_info.md) | The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data. |
-| [PVRAM_SURFACE_INFO_PROPERTY_S structure](..\ksmedia\ns-ksmedia-pvram_surface_info_property_s.md) | The VRAM_SURFACE_INFO_PROPERTY_S structure describes property items in the KSPROPSETID_VramCapture property set. |
+| [TRANSPORT_STATE structure](..\ksmedia\ns-ksmedia-transport_state.md) | The TRANSPORT_STATE structure |
+| [TUNER_ANALOG_CAPS_S structure](..\ksmedia\ns-ksmedia-tuner_analog_caps_s.md) | The TUNER_ANALOG_CAPS_S structure describes the hardware scanning capabilities of a tuning device that supports an analog broadcast network. |
+| [USBCAMD_INTERFACE structure](..\usbcamdi\ns-usbcamdi-usbcamd_interface.md) | The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces. |
+| [VRAM_SURFACE_INFO structure](..\ksmedia\ns-ksmedia-vram_surface_info.md) | The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data. |
+| [VRAM_SURFACE_INFO_PROPERTY_S structure](..\ksmedia\ns-ksmedia-vram_surface_info_property_s.md) | The VRAM_SURFACE_INFO_PROPERTY_S structure describes property items in the KSPROPSETID_VramCapture property set. |
 | [_AVCCONNECTINFO structure](..\avc\ns-avc-_avcconnectinfo.md) | The AVCCONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
 | [_AVCPRECONNECTINFO structure](..\avc\ns-avc-_avcpreconnectinfo.md) | The AVCPRECONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
 | [_AVCSTRM_BUFFER_STRUCT structure](..\avcstrm\ns-avcstrm-_avcstrm_buffer_struct.md) | The AVCSTRM_BUFFER_STRUCT structure describes a buffer to be submitted to avcstrm.sys for read or write operations. |
@@ -972,28 +972,6 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [IOCTL_SWENUM_INSTALL_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl_swenum_install_interface.md) | TBD |
 | [IOCTL_SWENUM_REMOVE_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl_swenum_remove_interface.md) | TBD |
 
-## Interfaces
-
-| Title   | Description   |
-| ---- |:---- |
-| [IKsAggregateControl interface](..\ksproxy\nn-ksproxy-iksaggregatecontrol.md) | The IKsAggregateControl interface provides methods that add and remove COM servers as aggregate providers on KS objects that support the interface. |
-| [IKsClockPropertySet interface](..\ksproxy\nn-ksproxy-iksclockpropertyset.md) | The IKsClockPropertySet interface provides methods that let the proxy accurately reflect time. |
-| [IKsControl interface](..\ks\nn-ks-ikscontrol~r1.md) | The IKsControl interface is a COM-style interface implemented on AVStream filters and pins. |
-| [IKsControl interface](..\ksproxy\nn-ksproxy-ikscontrol.md) | The IKsControl interface provides user-mode methods that control a KS filter or KS pin. See the IKsControl AVStream COM interface for information about the user-mode equivalent of this interface. |
-| [IKsDataTypeCompletion interface](..\ksproxy\nn-ksproxy-iksdatatypecompletion.md) | The IKsDataTypeCompletion interface provides a method to complete partially specified media types that are passed to the IAMStreamConfig |
-| [IKsDataTypeHandler interface](..\ksproxy\nn-ksproxy-iksdatatypehandler.md) | The IKsDataTypeHandler interface provides methods that perform optional preprocessing and postprocessing of media samples. |
-| [IKsDeviceFunctions interface](..\ks\nn-ks-iksdevicefunctions~r1.md) | The IKsDeviceFunctions interface is a COM-style interface implemented on AVStream devices. This interface is available in Windows Server 2003 SP1 and later versions of Windows. |
-| [IKsInterfaceHandler interface](..\ksproxy\nn-ksproxy-iksinterfacehandler.md) | The IKsInterfaceHandler interface provides methods that marshal samples into the kernel based on the KSPIN_INTERFACE structure specified for the established connection. The IID for this interface is IID_IKsInterfaceHandler. |
-| [IKsNotifyEvent interface](..\ksproxy\nn-ksproxy-iksnotifyevent.md) | The IKsNotifyEvent interface provides a method to cause the KS object that owns a DirectShow event to issue the event with the given parameters. |
-| [IKsObject interface](..\ksproxy\nn-ksproxy-iksobject.md) | The IKsObject interface provides a method to retrieve the file handle of a KS object. |
-| [IKsPin interface](..\ksproxy\nn-ksproxy-ikspin~r1.md) | The IKsPin interface provides methods that control and retrieve information about a pin. |
-| [IKsPinEx interface](..\ksproxy\nn-ksproxy-ikspinex.md) | The IKsPinEx interface inherits all the methods of the IKsPin interface and extends IKsPin to provide a method that notifies the filter graph of an error to give the filter graph an opportunity to halt. |
-| [IKsPinFactory interface](..\ksproxy\nn-ksproxy-ikspinfactory.md) | The IKsPinFactory interface provides a method that retrieves the identifier of a pin factory. |
-| [IKsPropertySet interface](..\dsound\nn-dsound-ikspropertyset~r2.md) | The IKsPropertySet interface provides methods that access properties of KS objects that are implemented in a KS minidriver. |
-| [IKsQualityForwarder interface](..\ksproxy\nn-ksproxy-iksqualityforwarder.md) | The IKsQualityForwarder interface inherits the method of the IKsObject interface and extends IKsObject to provide a method that flushes information from a pin. |
-| [IKsReferenceClock interface](..\ks\nn-ks-iksreferenceclock.md) | The IKsReferenceClock interface is a COM-style interface that is provided by AVStream on all pins. The pin passes the request onto the master clock. |
-| [IKsTopology interface](..\ksproxy\nn-ksproxy-ikstopology.md) | The IKsTopology interface provides a method that opens topology node objects contained within a filter. |
-
 ## Macros
 
 | Title   | Description   |
@@ -1002,3 +980,64 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KSMETHOD_ITEM_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_item_irp_storage.md) | This macro accesses a pointer to the relevant KSMETHOD_ITEM. Note that this pointer is only set when using KsMethodHandlerWithAllocator. |
 | [KSMETHOD_SET_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_set_irp_storage.md) | This macro returns a pointer to the KSMETHOD_SET in which the method is located. |
 | [KSMETHOD_TYPE_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_type_irp_storage.md) | This macro accesses the type of method as described in the KSMETHOD_ITEM. If the method will be processed asynchronously using KsDispatchSpecificMethod, this storage must be maintained intact. |
+| [KsDeleteFilterFactory macro](..\ks\nf-ks-ksdeletefilterfactory.md) | KsDeleteFilterFactory deletes a given filter factory. |
+| [KsDiscard macro](..\ks\nf-ks-ksdiscard.md) | The KsDiscard macro removes a given item from an object bag. |
+
+## Methods
+
+| Title   | Description   |
+| ---- |:---- |
+| [IKsAggregateControl::KsAddAggregate method](..\ksproxy\nf-ksproxy-iksaggregatecontrol-ksaddaggregate.md) | The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
+| [IKsAggregateControl::KsRemoveAggregate method](..\ksproxy\nf-ksproxy-iksaggregatecontrol-ksremoveaggregate.md) | The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
+| [IKsClockPropertySet::KsGetCorrelatedPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetcorrelatedphysicaltime.md) | The KsGetCorrelatedPhysicalTime method retrieves the physical time and the correlated system time from the underlying clock. |
+| [IKsClockPropertySet::KsGetCorrelatedTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetcorrelatedtime.md) | The KsGetCorrelatedTime method retrieves the current time and the correlated system time from the underlying clock. |
+| [IKsClockPropertySet::KsGetPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetphysicaltime.md) | The KsGetPhysicalTime method retrieves the physical time from the underlying clock. |
+| [IKsClockPropertySet::KsGetResolution method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetresolution.md) | The KsGetResolution method retrieves the clock resolution from the underlying clock. |
+| [IKsClockPropertySet::KsGetState method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetstate.md) | The KsGetState method retrieves the streaming state of a pin from the underlying clock. |
+| [IKsClockPropertySet::KsGetTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgettime.md) | The KsGetTime method retrieves the time of the underlying clock. |
+| [IKsClockPropertySet::KsSetCorrelatedPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssetcorrelatedphysicaltime.md) | The KsSetCorrelatedPhysicalTime method sets the physical time with the correlated system time on the underlying clock. |
+| [IKsClockPropertySet::KsSetCorrelatedTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssetcorrelatedtime.md) | The KsSetCorrelatedTime method sets the current time with the correlated system time on the underlying clock. |
+| [IKsClockPropertySet::KsSetPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssetphysicaltime.md) | The KsSetPhysicalTime method sets the physical time on the underlying clock. |
+| [IKsClockPropertySet::KsSetTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-kssettime.md) | The KsSetTime method sets the current time on the underlying clock. |
+| [IKsControl::KsEvent method](..\ks\nf-ks-ikscontrol-ksevent.md) | The IKsControl |
+| [IKsControl::KsEvent method](..\ksproxy\nf-ksproxy-ikscontrol-ksevent.md) | The KsEvent method enables or disables an event, along with any other defined support operations available on an event set. |
+| [IKsControl::KsMethod method](..\ks\nf-ks-ikscontrol-ksmethod.md) | The IKsControl |
+| [IKsControl::KsMethod method](..\ksproxy\nf-ksproxy-ikscontrol-ksmethod.md) | The KsMethod method sends a method to a KS object, along with any other defined support operations available on a method set. |
+| [IKsControl::KsProperty method](..\ks\nf-ks-ikscontrol-ksproperty.md) | The IKsControl |
+| [IKsControl::KsProperty method](..\ksproxy\nf-ksproxy-ikscontrol-ksproperty.md) | The KsProperty method sets a property or retrieves property information, along with any other defined support operations available on a property set. |
+| [IKsDataTypeCompletion::KsCompleteMediaType method](..\ksproxy\nf-ksproxy-iksdatatypecompletion-kscompletemediatype.md) | The KsCompleteMediaType method completes a partially-specified media type that was first presented to the IAMStreamConfig |
+| [IKsDataTypeHandler::KsCompleteIoOperation method](..\ksproxy\nf-ksproxy-iksdatatypehandler-kscompleteiooperation.md) | The KsCompleteIoOperation method cleans up the extended header and completes the input and output (I/O) operation. |
+| [IKsDataTypeHandler::KsIsMediaTypeInRanges method](..\ksproxy\nf-ksproxy-iksdatatypehandler-ksismediatypeinranges.md) | The KsIsMediaTypeInRanges method validates that a media type is within the provided data ranges. |
+| [IKsDataTypeHandler::KsPrepareIoOperation method](..\ksproxy\nf-ksproxy-iksdatatypehandler-ksprepareiooperation.md) | The KsPrepareIoOperation method initializes the extended header and prepares the media sample for an I/O operation. |
+| [IKsDataTypeHandler::KsQueryExtendedSize method](..\ksproxy\nf-ksproxy-iksdatatypehandler-ksqueryextendedsize.md) | The KsQueryExtendedSize method retrieves extended header information required for input and output (I/O) operations. |
+| [IKsDataTypeHandler::KsSetMediaType method](..\ksproxy\nf-ksproxy-iksdatatypehandler-kssetmediatype.md) | The KsSetMediaType method sets the media type for a data type handler. |
+| [IKsDeviceFunctions::RegisterAdapterObjectEx method](..\ks\nf-ks-iksdevicefunctions-registeradapterobjectex.md) | The IKsDeviceFunctions |
+| [IKsInterfaceHandler::KsCompleteIo method](..\ksproxy\nf-ksproxy-iksinterfacehandler-kscompleteio.md) | The KsCompleteIo method cleans up extended headers and releases media samples after input and output (I/O) complete. |
+| [IKsInterfaceHandler::KsProcessMediaSamples method](..\ksproxy\nf-ksproxy-iksinterfacehandler-ksprocessmediasamples.md) | The KsProcessMediaSamples method processes media samples. |
+| [IKsInterfaceHandler::KsSetPin method](..\ksproxy\nf-ksproxy-iksinterfacehandler-kssetpin.md) | The KsSetPin method informs the streaming interface handler about the pin with which to communicate when passing data. |
+| [IKsNotifyEvent::KsNotifyEvent method](..\ksproxy\nf-ksproxy-iksnotifyevent-ksnotifyevent.md) | The KsNotifyEvent method requests that the KS object that owns the given DirectShow event notify the calling application with the given parameters whenever action related to the event occurs. |
+| [IKsObject::KsGetObjectHandle method](..\ksproxy\nf-ksproxy-iksobject-ksgetobjecthandle.md) | The KsGetObjectHandle method retrieves a file handle to a KS object. |
+| [IKsPin::KsCreateSinkPinHandle method](..\ksproxy\nf-ksproxy-ikspin-kscreatesinkpinhandle.md) | The KsCreateSinkPinHandle method creates a pin handle and stores it in the KS pin object. |
+| [IKsPin::KsDecrementPendingIoCount method](..\ksproxy\nf-ksproxy-ikspin-ksdecrementpendingiocount.md) | The KsDecrementPendingIoCount method decrements the number of input/output (I/O) operations that are in progress on a pin. |
+| [IKsPin::KsDeliver method](..\ksproxy\nf-ksproxy-ikspin-ksdeliver.md) | The KsDeliver method delivers a media sample from an output pin to an input pin, continues an I/O operation by retrieving the next buffer from an allocator, and submits the buffer to the associated device. |
+| [IKsPin::KsGetCurrentCommunication method](..\ksproxy\nf-ksproxy-ikspin-ksgetcurrentcommunication.md) | The KsGetCurrentCommunication method retrieves the current communication direction, interface, and medium of a pin. |
+| [IKsPin::KsIncrementPendingIoCount method](..\ksproxy\nf-ksproxy-ikspin-ksincrementpendingiocount.md) | The KsIncrementPendingIoCount method increments the number of input/output (I/O) operations that are in progress on a pin. |
+| [IKsPin::KsMediaSamplesCompleted method](..\ksproxy\nf-ksproxy-ikspin-ksmediasamplescompleted.md) | The KsMediaSamplesCompleted method informs a pin that a stream segment completed. |
+| [IKsPin::KsPeekAllocator method](..\ksproxy\nf-ksproxy-ikspin-kspeekallocator.md) | The KsPeekAllocator method returns a pointer to an IMemAllocator interface for a pin's assigned allocator. |
+| [IKsPin::KsPropagateAcquire method](..\ksproxy\nf-ksproxy-ikspin-kspropagateacquire.md) | The KsPropagateAcquire method directs all the pins on the filter to attain the Acquire state. |
+| [IKsPin::KsQueryInterfaces method](..\ksproxy\nf-ksproxy-ikspin-ksqueryinterfaces.md) | The KsQueryInterfaces method retrieves interfaces that a pin supports. |
+| [IKsPin::KsQueryMediums method](..\ksproxy\nf-ksproxy-ikspin-ksquerymediums.md) | The KsQueryMediums method retrieves mediums that a pin supports. |
+| [IKsPinEx::KsNotifyError method](..\ksproxy\nf-ksproxy-ikspinex-ksnotifyerror.md) | The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt. |
+| [IKsPinFactory::KsPinFactory method](..\ksproxy\nf-ksproxy-ikspinfactory-kspinfactory.md) | The KsPinFactory method retrieves the identifier of a pin factory. |
+| [IKsPropertySet::Get method](..\ksproxy\nf-ksproxy-ikspropertyset-get.md) | The Get method retrieves a property identified by a property-set GUID and a property identifier. |
+| [IKsPropertySet::QuerySupported method](..\ksproxy\nf-ksproxy-ikspropertyset-querysupported.md) | The QuerySupported method determines whether a KS object supports a property set and the type of that support. |
+| [IKsPropertySet::Set method](..\dsound\nf-dsound-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
+| [IKsPropertySet::Set method](..\ksproxy\nf-ksproxy-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
+| [IKsQualityForwarder::KsFlushClient method](..\ksproxy\nf-ksproxy-iksqualityforwarder-ksflushclient.md) | The KsFlushClient method flushes information from a pin. |
+| [IKsReferenceClock::GetCorrelatedPhysicalTime method](..\ks\nf-ks-iksreferenceclock-getcorrelatedphysicaltime.md) | The IKsReferenceClock |
+| [IKsReferenceClock::GetCorrelatedTime method](..\ks\nf-ks-iksreferenceclock-getcorrelatedtime.md) | The IKsReferenceClock |
+| [IKsReferenceClock::GetPhysicalTime method](..\ks\nf-ks-iksreferenceclock-getphysicaltime.md) | The IKsReferenceClock |
+| [IKsReferenceClock::GetResolution method](..\ks\nf-ks-iksreferenceclock-getresolution.md) | The IKsReferenceClock |
+| [IKsReferenceClock::GetState method](..\ks\nf-ks-iksreferenceclock-getstate.md) | The IKsReferenceClock |
+| [IKsReferenceClock::GetTime method](..\ks\nf-ks-iksreferenceclock-gettime.md) | The IKsReferenceClock |
+| [IKsTopology::CreateNodeInstance method](..\ksproxy\nf-ksproxy-ikstopology-createnodeinstance.md) | The CreateNodeInstance method requests a KS filter object to open a topology node object. |

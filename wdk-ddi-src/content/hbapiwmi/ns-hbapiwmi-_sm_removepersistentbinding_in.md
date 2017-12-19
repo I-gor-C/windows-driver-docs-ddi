@@ -7,8 +7,8 @@ old-location: storage\sm_removepersistentbinding_in.htm
 old-project: storage
 ms.assetid: 47e6a189-4b16-411a-8552-3e6f998516ba
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN, *PSM_RemovePersistentBinding_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_RemovePersistentBinding_IN, *PSM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN, PSM_RemovePersistentBinding_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

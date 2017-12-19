@@ -4,10 +4,10 @@ title: RIL_SendFlash function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_sendflash.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9a23fae8-7142-48a1-871e-1fa3a6d8e112
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SendFlash
 ms.prod: windows-hardware
 ms.technology: windows-devices

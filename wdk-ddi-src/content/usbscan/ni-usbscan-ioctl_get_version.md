@@ -4,10 +4,10 @@ title: IOCTL_GET_VERSION
 author: windows-driver-content
 description: Returns the version number of the driver.
 old-location: image\ioctl_get_version.htm
-old-project: image
+old-project: Image
 ms.assetid: 0521cd73-a3ae-4c7e-b244-4477b69ffc6f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

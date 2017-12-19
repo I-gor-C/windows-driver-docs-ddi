@@ -4,10 +4,10 @@ title: RILIMSFAILUREMESSAGETYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimsfailuremessagetype_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9a29cc8c-7e46-4b7f-a428-d2f174945654
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILIMSFAILUREMESSAGETYPE, RILIMSFAILUREMESSAGETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

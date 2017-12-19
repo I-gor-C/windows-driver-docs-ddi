@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_slot_info.htm
 old-project: storage
 ms.assetid: D5DF9785-83E0-4137-8E5F-357F94721CAD
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO, *PSTORAGE_HW_FIRMWARE_SLOT_INFO
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_HW_FIRMWARE_SLOT_INFO, PSTORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

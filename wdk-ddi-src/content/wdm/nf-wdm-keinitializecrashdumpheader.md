@@ -7,7 +7,7 @@ old-location: kernel\keinitializecrashdumpheader.htm
 old-project: kernel
 ms.assetid: 6fa0cf86-35f4-4e5d-bced-ebd2ec499b64
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: KeInitializeCrashDumpHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices

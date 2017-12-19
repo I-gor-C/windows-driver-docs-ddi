@@ -7,8 +7,8 @@ old-location: storage\sm_removeport_in.htm
 old-project: storage
 ms.assetid: b8eb6321-928f-4366-9553-c75900fa1ac6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_RemovePort_IN, SM_RemovePort_IN, *PSM_RemovePort_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_RemovePort_IN, PSM_RemovePort_IN, *PSM_RemovePort_IN, SM_RemovePort_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

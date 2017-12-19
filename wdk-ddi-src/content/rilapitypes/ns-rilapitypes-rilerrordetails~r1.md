@@ -4,10 +4,10 @@ title: RILERRORDETAILS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilerrordetails_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: decfcafa-fe8b-44f6-913b-c04cf3b320a3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILERRORDETAILS, *LPRILERRORDETAILS, RILERRORDETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices

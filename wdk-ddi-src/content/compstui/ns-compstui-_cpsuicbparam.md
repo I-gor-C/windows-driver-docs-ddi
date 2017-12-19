@@ -7,8 +7,8 @@ old-location: print\cpsuicbparam.htm
 old-project: print
 ms.assetid: b5545efa-6cb4-41d0-9338-be9a269fa193
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _CPSUICBPARAM, *PCPSUICBPARAM, CPSUICBPARAM
+ms.date: 12/14/2017
+ms.keywords: _CPSUICBPARAM, CPSUICBPARAM, PCPSUICBPARAM, *PCPSUICBPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

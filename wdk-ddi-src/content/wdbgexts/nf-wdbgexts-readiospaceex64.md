@@ -4,10 +4,10 @@ title: ReadIoSpaceEx64 function
 author: windows-driver-content
 description: The ReadIoSpaceEx64 function is an extended version of ReadIoSpace64.
 old-location: debugger\readiospaceex64.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 6903a684-e9da-4ff0-b5ea-330b070849c6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: ReadIoSpaceEx64
 ms.prod: windows-hardware
 ms.technology: windows-devices

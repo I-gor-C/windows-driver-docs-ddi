@@ -7,7 +7,7 @@ old-location: stream\metadatatimestamps.htm
 old-project: stream
 ms.assetid: F7E5349B-37F0-4B94-B42B-EAEB04DC1AB5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: tagMetadataTimeStamps, MetadataTimeStamps
 ms.prod: windows-hardware
 ms.technology: windows-devices

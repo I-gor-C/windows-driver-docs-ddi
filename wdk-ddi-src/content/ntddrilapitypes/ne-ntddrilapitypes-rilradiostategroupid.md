@@ -4,10 +4,10 @@ title: RILRADIOSTATEGROUPID
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostategroupid.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 147eb9f7-da0c-41c2-83b3-766164dbc905
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILRADIOSTATEGROUPID, RILRADIOSTATEGROUPID
 ms.prod: windows-hardware
 ms.technology: windows-devices

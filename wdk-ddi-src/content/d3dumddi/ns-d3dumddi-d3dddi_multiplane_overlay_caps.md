@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_caps.htm
 old-project: display
 ms.assetid: 66365126-d7c3-4886-b14f-a94dc12c1626
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_CAPS, D3DDDI_MULTIPLANE_OVERLAY_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILSYSTEMTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemtype_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5342333e-6119-4800-896e-4c388706d97e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSYSTEMTYPE, RILSYSTEMTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

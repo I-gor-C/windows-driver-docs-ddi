@@ -7,8 +7,8 @@ old-location: storage\silo_command.htm
 old-project: storage
 ms.assetid: 4d40ac4b-9aca-4be6-8d4f-db94c3daf4e8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: tagSILO_COMMAND, *PSILO_COMMAND, SILO_COMMAND
+ms.date: 12/15/2017
+ms.keywords: tagSILO_COMMAND, PSILO_COMMAND, SILO_COMMAND, *PSILO_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,11 +4,11 @@ title: USBC_START_DEVICE_CALLBACK
 author: windows-driver-content
 description: The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device.
 old-location: buses\usbc_start_device_callback.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: f9a9510a-b55c-4566-83ce-4ed7ccafb543
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBD_VERSION_INFORMATION, USBD_VERSION_INFORMATION, *PUSBD_VERSION_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _USBD_VERSION_INFORMATION, *PUSBD_VERSION_INFORMATION, PUSBD_VERSION_INFORMATION, USBD_VERSION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -136,5 +136,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBC_START_DEVICE_CALLBACK callback function%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USBC_START_DEVICE_CALLBACK callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

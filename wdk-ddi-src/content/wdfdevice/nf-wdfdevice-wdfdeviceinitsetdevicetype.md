@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdevicetype.htm
 old-project: wdf
 ms.assetid: 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceInitSetDeviceType
 ms.prod: windows-hardware
 ms.technology: windows-devices

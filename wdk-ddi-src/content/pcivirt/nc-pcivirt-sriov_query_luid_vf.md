@@ -7,8 +7,8 @@ old-location: pci\sriov_query_luid_vf.htm
 old-project: PCI
 ms.assetid: 00dddc92-08d1-4eaa-b3de-5e96c7a6d3e0
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

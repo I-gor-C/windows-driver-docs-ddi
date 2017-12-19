@@ -7,7 +7,7 @@ old-location: stream\ksnulldriverunload.htm
 old-project: stream
 ms.assetid: 1fe4c3b7-4627-4a59-9779-fa2be29f387a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsNullDriverUnload
 ms.prod: windows-hardware
 ms.technology: windows-devices

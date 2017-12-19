@@ -4,10 +4,10 @@ title: NdisFSynchronousOidRequest function
 author: windows-driver-content
 description: This function is reserved.
 old-location: netvista\ndisfsynchronousoidrequest.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 01B625EB-AB6D-496F-95F2-22845460324A
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: NdisFSynchronousOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices

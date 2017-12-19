@@ -7,8 +7,8 @@ old-location: audio\ksaudiomodule_notification.htm
 old-project: audio
 ms.assetid: 92A9462C-0E8C-4012-9374-3437BB220502
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _KSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION
+ms.date: 12/14/2017
+ms.keywords: _KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

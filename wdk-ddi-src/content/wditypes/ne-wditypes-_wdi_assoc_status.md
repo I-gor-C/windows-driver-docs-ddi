@@ -4,10 +4,10 @@ title: _WDI_ASSOC_STATUS
 author: windows-driver-content
 description: The WDI_ASSOC_STATUS enumeration defines the association status values.
 old-location: netvista\wdi_assoc_status.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8268031A-7493-4A42-9211-D02B8AA50F34
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_ASSOC_STATUS, WDI_ASSOC_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

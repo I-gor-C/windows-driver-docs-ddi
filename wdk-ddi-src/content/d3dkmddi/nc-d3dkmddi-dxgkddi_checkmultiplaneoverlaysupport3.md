@@ -7,7 +7,7 @@ old-location: display\dxgkddi_checkmultiplaneoverlaysupport3.htm
 old-project: display
 ms.assetid: 2EA7E8C4-51E0-4BDE-B69B-1A40FEB82952
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

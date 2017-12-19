@@ -7,8 +7,8 @@ old-location: kernel\silo_context_cleanup_callback.htm
 old-project: kernel
 ms.assetid: 452E63E8-DFBB-43AF-81F4-0405C3EF74CE
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.date: 12/15/2017
+ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

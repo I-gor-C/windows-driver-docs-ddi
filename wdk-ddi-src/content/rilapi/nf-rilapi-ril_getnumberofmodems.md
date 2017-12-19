@@ -4,10 +4,10 @@ title: RIL_GetNumberOfModems function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getnumberofmodems.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 81747f24-d1ed-412a-b0ae-95b737059b0d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetNumberOfModems
 ms.prod: windows-hardware
 ms.technology: windows-devices

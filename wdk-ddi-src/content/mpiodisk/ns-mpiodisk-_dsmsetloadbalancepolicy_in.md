@@ -7,8 +7,8 @@ old-location: storage\dsmsetloadbalancepolicy_in.htm
 old-project: storage
 ms.assetid: 1a249c0e-1b8d-4c50-9b01-03bfe84e0937
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DsmSetLoadBalancePolicy_IN, *PDsmSetLoadBalancePolicy_IN, DsmSetLoadBalancePolicy_IN
+ms.date: 12/15/2017
+ms.keywords: _DsmSetLoadBalancePolicy_IN, *PDsmSetLoadBalancePolicy_IN, DsmSetLoadBalancePolicy_IN, PDsmSetLoadBalancePolicy_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

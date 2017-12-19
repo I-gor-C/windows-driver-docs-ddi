@@ -7,7 +7,7 @@ old-location: stream\ksregistercountedworker.htm
 old-project: stream
 ms.assetid: acec8050-44bd-4082-9875-d504135e1b9f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsRegisterCountedWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices

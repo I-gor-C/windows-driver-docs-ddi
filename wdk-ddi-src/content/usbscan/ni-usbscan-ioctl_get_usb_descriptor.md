@@ -4,10 +4,10 @@ title: IOCTL_GET_USB_DESCRIPTOR
 author: windows-driver-content
 description: Returns a specified USB Descriptor.
 old-location: image\ioctl_get_usb_descriptor.htm
-old-project: image
+old-project: Image
 ms.assetid: a5490a2a-d406-4029-b8be-446236a936bb
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

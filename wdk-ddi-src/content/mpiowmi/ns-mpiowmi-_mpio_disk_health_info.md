@@ -7,8 +7,8 @@ old-location: storage\mpio_disk_health_info.htm
 old-project: storage
 ms.assetid: 20813e29-907f-42b0-9229-a9ef78f46e1d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_DISK_HEALTH_INFO, MPIO_DISK_HEALTH_INFO, *PMPIO_DISK_HEALTH_INFO
+ms.date: 12/15/2017
+ms.keywords: _MPIO_DISK_HEALTH_INFO, PMPIO_DISK_HEALTH_INFO, *PMPIO_DISK_HEALTH_INFO, MPIO_DISK_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: ieee\irb_req_async_read.htm
 old-project: IEEE
 ms.assetid: C88A1F30-FC6B-4EC4-8F10-F507E17CF01D
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ASYNC_READ, IRB_REQ_ASYNC_READ
 ms.prod: windows-hardware
 ms.technology: windows-devices

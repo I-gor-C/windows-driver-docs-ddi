@@ -4,10 +4,10 @@ title: MINIPORT_SYNCHRONIZE_INTERRUPT
 author: windows-driver-content
 description: A miniport driver must provide a MiniportSynchronizeInterrupt handler if any driver function that runs at less than DIRQL shares resources with the MiniportInterrupt function.
 old-location: netvista\miniportsynchronizeinterrupt.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: aac1ff91-76aa-46a0-8e8a-85b9f8c3323c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,7 @@ req.target-min-winverclnt: Supported in NDIS 6.0 and later.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: MiniportSynchronizeInterrupt
+req.alt-api: (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER)
 req.alt-loc: Ndis.h
 req.ddi-compliance: 
 req.unicode-ansi: 
@@ -43,6 +43,8 @@ A miniport driver must provide a
    resources with the 
    <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function.
 
+For message signaled interrupts, the miniport driver provides a <i>MiniportSynchronizeMessageInterrupt</i> handler if any driver function that runs at less than DIRQL shares resources for a message signaled interrupt with the <a href="..\ndis\nc-ndis-miniport_message_interrupt.md">MiniportMessageInterrupt</a> function.
+
 
 
 ## -prototype
@@ -54,6 +56,8 @@ BOOLEAN MiniportSynchronizeInterrupt(
   _In_ NDIS_HANDLE SynchronizeContext
 )
 { ... }
+
+typedef MINIPORT_SYNCHRONIZE_INTERRUPT (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER);
 ````
 
 
@@ -79,8 +83,7 @@ If any miniport driver function that runs at less than DIRQL shares resources, s
     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function, that
     driver cannot access those resources directly. If such a lower priority function attempts to access the
     shared resources directly, it might be preempted by 
-    <i>MiniportInterrupt</i>. 
-    <i>MiniportInterrupt</i> could override the state changes of the lower priority driver function.
+    <i>MiniportInterrupt</i>, which could override the state changes of the lower priority driver function.
 
 To synchronize access to shared resources with 
     <i>MiniportInterrupt</i>, lower priority driver functions must call the 
@@ -108,7 +111,9 @@ For example, to define a <i>MiniportSynchronizeInterrupt</i> function that is na
 
 Then, implement your function as follows:
 
-The <b>MINIPORT_SYNCHRONIZE_INTERRUPT</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_SYNCHRONIZE_INTERRUPT</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
+To define a <i>MiniportSynchronizeMessageInterrupt</i> function for message signaled interrupts, use the <b>MINIPORT_SYNCHRONIZE_MESSAGE_INTERRUPT</b> type as shown in this code example:
+
+The <b>MINIPORT_SYNCHRONIZE_INTERRUPT</b> and <b>MINIPORT_SYNCHRONIZE_MESSAGE_INTERRUPT</b> function types are defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definitions.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
@@ -171,5 +176,5 @@ See Remarks section
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_SYNCHRONIZE_INTERRUPT callback function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_SYNCHRONIZE_INTERRUPT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

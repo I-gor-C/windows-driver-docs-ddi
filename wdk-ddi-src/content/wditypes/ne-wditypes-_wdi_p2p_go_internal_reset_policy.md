@@ -4,10 +4,10 @@ title: _WDI_P2P_GO_INTERNAL_RESET_POLICY
 author: windows-driver-content
 description: The WDI_P2P_GO_INTERNAL_RESET_POLICY enumeration defines the Wi-Fi Direct Group Owner internal reset policies.
 old-location: netvista\wdi_p2p_go_internal_reset_policy.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7932A2BB-DD6D-4DF7-BDF9-4E476B06B0B5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_P2P_GO_INTERNAL_RESET_POLICY, WDI_P2P_GO_INTERNAL_RESET_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices

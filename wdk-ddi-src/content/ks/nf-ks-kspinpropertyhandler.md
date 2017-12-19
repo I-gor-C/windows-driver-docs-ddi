@@ -7,7 +7,7 @@ old-location: stream\kspinpropertyhandler.htm
 old-project: stream
 ms.assetid: b721b79b-93f3-4dc8-853d-543222464341
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsPinPropertyHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices

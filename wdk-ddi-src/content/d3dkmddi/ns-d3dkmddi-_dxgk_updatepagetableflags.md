@@ -7,7 +7,7 @@ old-location: display\dxgk_updatepagetableflags.htm
 old-project: display
 ms.assetid: E0E1CDE7-F1BF-44C8-A320-9BD90788679F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_UPDATEPAGETABLEFLAGS, DXGK_UPDATEPAGETABLEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

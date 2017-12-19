@@ -4,10 +4,10 @@ title: RIL3GPPCALLCONTROLCAUSECODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril3gppcallcontrolcausecode.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: a469e292-a57d-4876-a050-266f57985a50
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL3GPPCALLCONTROLCAUSECODE, RIL3GPPCALLCONTROLCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

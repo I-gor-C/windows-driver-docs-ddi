@@ -7,7 +7,7 @@ old-location: display\d3dkmt-createbundleobject.htm
 old-project: display
 ms.assetid: dbb01112-9d28-4dbf-88c7-3304d9d6a661
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices

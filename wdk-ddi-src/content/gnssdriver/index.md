@@ -16,53 +16,53 @@ Gnssdriver.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [GNSS_AGNSS_INJECT structure](ns-gnssdriver-gnss_agnss_inject.md) | This structure defines the parameters for AGNSS injection. |
+| [GNSS_AGNSS_INJECTBLOB structure](ns-gnssdriver-gnss_agnss_injectblob.md) | This structure defines the format for AGNSS extended ephemeris injection. |
+| [GNSS_AGNSS_INJECTPOSITION structure](ns-gnssdriver-gnss_agnss_injectposition.md) | This structure defines the format for AGNSS position injection. |
+| [GNSS_AGNSS_INJECTTIME structure](ns-gnssdriver-gnss_agnss_injecttime.md) | This structure defines the format for AGNSS time injection. |
+| [GNSS_AGNSS_REQUEST_PARAM structure](ns-gnssdriver-gnss_agnss_request_param.md) | This structure defines AGNSS request parameters. |
+| [GNSS_BREADCRUMBING_ALERT_DATA structure](ns-gnssdriver-gnss_breadcrumbing_alert_data.md) | This structure contains alert information for when the breadcrumb buffer has reached a level where OS read operations should be performed. |
+| [GNSS_BREADCRUMBING_PARAM structure](ns-gnssdriver-gnss_breadcrumbing_param.md) | This structure contains the configuration passed into the start of breadcrumbing via IOCTL_GNSS_START_BREADCRUMBING. |
+| [GNSS_BREADCRUMB_LIST structure](ns-gnssdriver-gnss_breadcrumb_list.md) | This structure contains the response to an IOCTL_GNSS_POP_BREADCRUMBS. |
+| [GNSS_BREADCRUMB_V1 structure](ns-gnssdriver-gnss_breadcrumb_v1.md) | This structure contains an individual breadcrumb. The order and types of the fields are designed to pack densely. |
+| [GNSS_CHIPSETINFO structure](ns-gnssdriver-gnss_chipsetinfo.md) | This structure defines the specific data elements associated with the GNSS hardware. |
+| [GNSS_CONTINUOUSTRACKING_PARAM structure](ns-gnssdriver-gnss_continuoustracking_param.md) | This structure defines the parameters for a continuous tracking fix session. |
+| [GNSS_CP_NI_INFO structure](ns-gnssdriver-gnss_cp_ni_info.md) | This structure contains CP NI information. |
+| [GNSS_CWTESTDATA structure](ns-gnssdriver-gnss_cwtestdata.md) | This structure defines specific data elements associated with carrier wave test results returned from the driver. |
+| [GNSS_DEVICE_CAPABILITY structure](ns-gnssdriver-gnss_device_capability.md) | This structure is used to determine the device capabilities of the underlying GNSS engine. |
+| [GNSS_DISTANCETRACKING_PARAM structure](ns-gnssdriver-gnss_distancetracking_param.md) | This structure defines the parameters for a distance-based tracking fix session. |
+| [GNSS_DRIVERCOMMAND_PARAM structure](ns-gnssdriver-gnss_drivercommand_param.md) | This structure is used to send a command to the GNSS driver. |
 | [GNSS_DRIVER_REQUEST_DATA structure](ns-gnssdriver-gnss_driver_request_data.md) | This structure contains driver data request information. |
-| [PGNSS_AGNSS_INJECT structure](ns-gnssdriver-pgnss_agnss_inject.md) | This structure defines the parameters for AGNSS injection. |
-| [PGNSS_AGNSS_INJECTBLOB structure](ns-gnssdriver-pgnss_agnss_injectblob.md) | This structure defines the format for AGNSS extended ephemeris injection. |
-| [PGNSS_AGNSS_INJECTPOSITION structure](ns-gnssdriver-pgnss_agnss_injectposition.md) | This structure defines the format for AGNSS position injection. |
-| [PGNSS_AGNSS_INJECTTIME structure](ns-gnssdriver-pgnss_agnss_injecttime.md) | This structure defines the format for AGNSS time injection. |
-| [PGNSS_AGNSS_REQUEST_PARAM structure](ns-gnssdriver-pgnss_agnss_request_param.md) | This structure defines AGNSS request parameters. |
-| [PGNSS_BREADCRUMBING_ALERT_DATA structure](ns-gnssdriver-pgnss_breadcrumbing_alert_data.md) | This structure contains alert information for when the breadcrumb buffer has reached a level where OS read operations should be performed. |
-| [PGNSS_BREADCRUMBING_PARAM structure](ns-gnssdriver-pgnss_breadcrumbing_param.md) | This structure contains the configuration passed into the start of breadcrumbing via IOCTL_GNSS_START_BREADCRUMBING. |
-| [PGNSS_BREADCRUMB_LIST structure](ns-gnssdriver-pgnss_breadcrumb_list.md) | This structure contains the response to an IOCTL_GNSS_POP_BREADCRUMBS. |
-| [PGNSS_BREADCRUMB_V1 structure](ns-gnssdriver-pgnss_breadcrumb_v1.md) | This structure contains an individual breadcrumb. The order and types of the fields are designed to pack densely. |
-| [PGNSS_CHIPSETINFO structure](ns-gnssdriver-pgnss_chipsetinfo.md) | This structure defines the specific data elements associated with the GNSS hardware. |
-| [PGNSS_CONTINUOUSTRACKING_PARAM structure](ns-gnssdriver-pgnss_continuoustracking_param.md) | This structure defines the parameters for a continuous tracking fix session. |
-| [PGNSS_CP_NI_INFO structure](ns-gnssdriver-pgnss_cp_ni_info.md) | This structure contains CP NI information. |
-| [PGNSS_CWTESTDATA structure](ns-gnssdriver-pgnss_cwtestdata.md) | This structure defines specific data elements associated with carrier wave test results returned from the driver. |
-| [PGNSS_DEVICE_CAPABILITY structure](ns-gnssdriver-pgnss_device_capability.md) | This structure is used to determine the device capabilities of the underlying GNSS engine. |
-| [PGNSS_DISTANCETRACKING_PARAM structure](ns-gnssdriver-pgnss_distancetracking_param.md) | This structure defines the parameters for a distance-based tracking fix session. |
-| [PGNSS_DRIVERCOMMAND_PARAM structure](ns-gnssdriver-pgnss_drivercommand_param.md) | This structure is used to send a command to the GNSS driver. |
-| [PGNSS_ERRORINFO structure](ns-gnssdriver-pgnss_errorinfo.md) | This structure contains error information. |
-| [PGNSS_EVENT structure](ns-gnssdriver-pgnss_event.md) | This structure defines the information required for a GNSS event. |
-| [PGNSS_FIXDATA structure](ns-gnssdriver-pgnss_fixdata.md) | This structure defines the specific data elements associated with a GNSS fix returned from the driver. |
-| [PGNSS_FIXDATA_ACCURACY structure](ns-gnssdriver-pgnss_fixdata_accuracy.md) | This structure defines the accuracy details of a fix. |
-| [PGNSS_FIXDATA_BASIC structure](ns-gnssdriver-pgnss_fixdata_basic.md) | This structure defines basic position information. |
-| [PGNSS_FIXDATA_SATELLITE structure](ns-gnssdriver-pgnss_fixdata_satellite.md) | This structure defines satellite-related information of a fix. |
-| [PGNSS_FIXSESSION_PARAM structure](ns-gnssdriver-pgnss_fixsession_param.md) | This structure defines the parameters used by the GNSS adapter to start a fix session. |
-| [PGNSS_GEOFENCES_TRACKINGSTATUS_DATA structure](ns-gnssdriver-pgnss_geofences_trackingstatus_data.md) | This structure is used by the GNSS engine to notify of any changes in the tracking status while tracking a set of previously created geofences. |
-| [PGNSS_GEOFENCE_ALERT_DATA structure](ns-gnssdriver-pgnss_geofence_alert_data.md) | This structure is used by the GNSS engine to notify a geofence breach alert. |
-| [PGNSS_GEOFENCE_CREATE_PARAM structure](ns-gnssdriver-pgnss_geofence_create_param.md) | This structure defines the parameters for creating a geofence in the GNSS engine. |
-| [PGNSS_GEOFENCE_CREATE_RESPONSE structure](ns-gnssdriver-pgnss_geofence_create_response.md) | This structure defines the response expected from the GNSS engine when a new geofence is created. |
-| [PGNSS_GEOFENCE_DELETE_PARAM structure](ns-gnssdriver-pgnss_geofence_delete_param.md) | This structure is used for deleting a geofence. |
-| [PGNSS_GEOREGION structure](ns-gnssdriver-pgnss_georegion.md) | This structure defines the geographical shape of a geofence. |
-| [PGNSS_GEOREGION_CIRCLE structure](ns-gnssdriver-pgnss_georegion_circle.md) | This structure is used for defining a circular geofence. |
-| [PGNSS_LKGFIX_PARAM structure](ns-gnssdriver-pgnss_lkgfix_param.md) | This structure is not used currently by the system and is not required to be implemented. |
-| [PGNSS_NI_REQUEST_PARAM structure](ns-gnssdriver-pgnss_ni_request_param.md) | This structure contains the NI request parameters. |
-| [PGNSS_NI_RESPONSE structure](ns-gnssdriver-pgnss_ni_response.md) | This structure contains NI request response information. |
-| [PGNSS_NMEA_DATA structure](ns-gnssdriver-pgnss_nmea_data.md) | This structure contains generic (non-parsed) NMEA data. |
-| [PGNSS_PLATFORM_CAPABILITY structure](ns-gnssdriver-pgnss_platform_capability.md) | This structure is used to communicate the platform/HLOS capabilities to the underlying GNSS driver. |
-| [PGNSS_SATELLITEINFO structure](ns-gnssdriver-pgnss_satelliteinfo.md) | This structure defines satellite-related information of a fix. |
-| [PGNSS_SELFTESTCONFIG structure](ns-gnssdriver-pgnss_selftestconfig.md) | This structure defines the specific data elements associated with a carrier wave test results returned from the driver. |
-| [PGNSS_SELFTESTRESULT structure](ns-gnssdriver-pgnss_selftestresult.md) | This structure defines the specific data elements associated with a carrier wave test results returned from the driver. |
-| [PGNSS_SINGLESHOT_PARAM structure](ns-gnssdriver-pgnss_singleshot_param.md) | This structure defines the parameters for a single-shot fix session. |
-| [PGNSS_STOPFIXSESSION_PARAM structure](ns-gnssdriver-pgnss_stopfixsession_param.md) | This structure is used to stop an active fix session. |
-| [PGNSS_SUPL_CERT_CONFIG structure](ns-gnssdriver-pgnss_supl_cert_config.md) | This structure contains SUPL certificate information. |
-| [PGNSS_SUPL_HSLP_CONFIG structure](ns-gnssdriver-pgnss_supl_hslp_config.md) | This structure contains SUPL H-SLP configuration information. |
-| [PGNSS_SUPL_NI_INFO structure](ns-gnssdriver-pgnss_supl_ni_info.md) | This structure contains the requested SUPL NI information. |
-| [PGNSS_SUPL_VERSION structure](ns-gnssdriver-pgnss_supl_version.md) | This structure contains SUPL version information. |
-| [PGNSS_V2UPL_CONFIG structure](ns-gnssdriver-pgnss_v2upl_config.md) | This structure contains V2UPL configuration information. |
-| [PGNSS_V2UPL_NI_INFO structure](ns-gnssdriver-pgnss_v2upl_ni_info.md) | This structure contains V2UPL NI information. |
+| [GNSS_ERRORINFO structure](ns-gnssdriver-gnss_errorinfo.md) | This structure contains error information. |
+| [GNSS_EVENT structure](ns-gnssdriver-gnss_event.md) | This structure defines the information required for a GNSS event. |
+| [GNSS_FIXDATA structure](ns-gnssdriver-gnss_fixdata.md) | This structure defines the specific data elements associated with a GNSS fix returned from the driver. |
+| [GNSS_FIXDATA_ACCURACY structure](ns-gnssdriver-gnss_fixdata_accuracy.md) | This structure defines the accuracy details of a fix. |
+| [GNSS_FIXDATA_BASIC structure](ns-gnssdriver-gnss_fixdata_basic.md) | This structure defines basic position information. |
+| [GNSS_FIXDATA_SATELLITE structure](ns-gnssdriver-gnss_fixdata_satellite.md) | This structure defines satellite-related information of a fix. |
+| [GNSS_FIXSESSION_PARAM structure](ns-gnssdriver-gnss_fixsession_param.md) | This structure defines the parameters used by the GNSS adapter to start a fix session. |
+| [GNSS_GEOFENCES_TRACKINGSTATUS_DATA structure](ns-gnssdriver-gnss_geofences_trackingstatus_data.md) | This structure is used by the GNSS engine to notify of any changes in the tracking status while tracking a set of previously created geofences. |
+| [GNSS_GEOFENCE_ALERT_DATA structure](ns-gnssdriver-gnss_geofence_alert_data.md) | This structure is used by the GNSS engine to notify a geofence breach alert. |
+| [GNSS_GEOFENCE_CREATE_PARAM structure](ns-gnssdriver-gnss_geofence_create_param.md) | This structure defines the parameters for creating a geofence in the GNSS engine. |
+| [GNSS_GEOFENCE_CREATE_RESPONSE structure](ns-gnssdriver-gnss_geofence_create_response.md) | This structure defines the response expected from the GNSS engine when a new geofence is created. |
+| [GNSS_GEOFENCE_DELETE_PARAM structure](ns-gnssdriver-gnss_geofence_delete_param.md) | This structure is used for deleting a geofence. |
+| [GNSS_GEOREGION structure](ns-gnssdriver-gnss_georegion.md) | This structure defines the geographical shape of a geofence. |
+| [GNSS_GEOREGION_CIRCLE structure](ns-gnssdriver-gnss_georegion_circle.md) | This structure is used for defining a circular geofence. |
+| [GNSS_LKGFIX_PARAM structure](ns-gnssdriver-gnss_lkgfix_param.md) | This structure is not used currently by the system and is not required to be implemented. |
+| [GNSS_NI_REQUEST_PARAM structure](ns-gnssdriver-gnss_ni_request_param.md) | This structure contains the NI request parameters. |
+| [GNSS_NI_RESPONSE structure](ns-gnssdriver-gnss_ni_response.md) | This structure contains NI request response information. |
+| [GNSS_NMEA_DATA structure](ns-gnssdriver-gnss_nmea_data.md) | This structure contains generic (non-parsed) NMEA data. |
+| [GNSS_PLATFORM_CAPABILITY structure](ns-gnssdriver-gnss_platform_capability.md) | This structure is used to communicate the platform/HLOS capabilities to the underlying GNSS driver. |
+| [GNSS_SATELLITEINFO structure](ns-gnssdriver-gnss_satelliteinfo.md) | This structure defines satellite-related information of a fix. |
+| [GNSS_SELFTESTCONFIG structure](ns-gnssdriver-gnss_selftestconfig.md) | This structure defines the specific data elements associated with a carrier wave test results returned from the driver. |
+| [GNSS_SELFTESTRESULT structure](ns-gnssdriver-gnss_selftestresult.md) | This structure defines the specific data elements associated with a carrier wave test results returned from the driver. |
+| [GNSS_SINGLESHOT_PARAM structure](ns-gnssdriver-gnss_singleshot_param.md) | This structure defines the parameters for a single-shot fix session. |
+| [GNSS_STOPFIXSESSION_PARAM structure](ns-gnssdriver-gnss_stopfixsession_param.md) | This structure is used to stop an active fix session. |
+| [GNSS_SUPL_CERT_CONFIG structure](ns-gnssdriver-gnss_supl_cert_config.md) | This structure contains SUPL certificate information. |
+| [GNSS_SUPL_HSLP_CONFIG structure](ns-gnssdriver-gnss_supl_hslp_config.md) | This structure contains SUPL H-SLP configuration information. |
+| [GNSS_SUPL_NI_INFO structure](ns-gnssdriver-gnss_supl_ni_info.md) | This structure contains the requested SUPL NI information. |
+| [GNSS_SUPL_VERSION structure](ns-gnssdriver-gnss_supl_version.md) | This structure contains SUPL version information. |
+| [GNSS_V2UPL_CONFIG structure](ns-gnssdriver-gnss_v2upl_config.md) | This structure contains V2UPL configuration information. |
+| [GNSS_V2UPL_NI_INFO structure](ns-gnssdriver-gnss_v2upl_ni_info.md) | This structure contains V2UPL NI information. |
 
 ## I/O control codes
 

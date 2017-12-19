@@ -4,11 +4,11 @@ title: RILIMSHANDOVERATTEMPT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimshandoverattempt.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 22491e3c-fa23-473d-b3e6-92c776b81204
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
+ms.date: 12/14/2017
+ms.keywords: RILIMSHANDOVERATTEMPT, LPRILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

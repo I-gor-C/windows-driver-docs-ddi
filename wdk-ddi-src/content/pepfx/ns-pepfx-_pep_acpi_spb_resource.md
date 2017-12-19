@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_spb_resource.htm
 old-project: kernel
 ms.assetid: D4C0009D-A9D0-4870-86C5-60DC9B5892BC
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _PEP_ACPI_SPB_RESOURCE, *PPEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE
+ms.date: 12/15/2017
+ms.keywords: _PEP_ACPI_SPB_RESOURCE, PPEP_ACPI_SPB_RESOURCE, *PPEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

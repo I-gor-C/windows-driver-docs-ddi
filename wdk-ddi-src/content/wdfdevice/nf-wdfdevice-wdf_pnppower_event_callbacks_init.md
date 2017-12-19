@@ -7,7 +7,7 @@ old-location: wdf\wdf_pnppower_event_callbacks_init.htm
 old-project: wdf
 ms.assetid: f84e200b-542d-4885-a091-9e311b4ab697
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_PNPPOWER_EVENT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

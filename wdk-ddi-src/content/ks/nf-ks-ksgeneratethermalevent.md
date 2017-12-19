@@ -7,7 +7,7 @@ old-location: stream\ksgeneratethermalevent.htm
 old-project: stream
 ms.assetid: CE450017-1792-4B69-8289-902396D0D7B1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsGenerateThermalEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices

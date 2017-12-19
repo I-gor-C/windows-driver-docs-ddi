@@ -4,10 +4,10 @@ title: ReadIoSpace function
 author: windows-driver-content
 description: The ReadIoSpace function reads from the system I/O locations.
 old-location: debugger\readiospace.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 31118f7f-fcc4-45f9-a248-a1d6f929f3a2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: ReadIoSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices

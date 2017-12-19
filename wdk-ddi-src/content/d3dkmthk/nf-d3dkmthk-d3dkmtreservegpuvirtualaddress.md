@@ -7,7 +7,7 @@ old-location: display\d3dkmtreservegpuvirtualaddress.htm
 old-project: display
 ms.assetid: 2F8B689C-162C-4C1B-BD45-A154079334D0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTReserveGpuVirtualAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices

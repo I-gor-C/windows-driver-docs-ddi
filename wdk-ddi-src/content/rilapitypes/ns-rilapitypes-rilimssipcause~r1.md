@@ -4,11 +4,11 @@ title: RILIMSSIPCAUSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimssipcause_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ae98e9e7-7001-43dd-9735-e90bb998694c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE, RILIMSSIPCAUSE
+ms.date: 12/14/2017
+ms.keywords: RILIMSSIPCAUSE, RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

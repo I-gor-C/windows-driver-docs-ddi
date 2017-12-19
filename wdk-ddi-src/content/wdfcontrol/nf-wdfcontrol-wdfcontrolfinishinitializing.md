@@ -7,7 +7,7 @@ old-location: wdf\wdfcontrolfinishinitializing.htm
 old-project: wdf
 ms.assetid: 13375ae1-6908-44d8-b775-4375f4fdde4d
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfControlFinishInitializing
 ms.prod: windows-hardware
 ms.technology: windows-devices

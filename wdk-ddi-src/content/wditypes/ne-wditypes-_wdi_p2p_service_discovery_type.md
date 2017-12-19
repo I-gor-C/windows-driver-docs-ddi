@@ -4,10 +4,10 @@ title: _WDI_P2P_SERVICE_DISCOVERY_TYPE
 author: windows-driver-content
 description: The WDI_P2P_SERVICE_DISCOVERY_TYPE enumeration defines the types of service discovery.
 old-location: netvista\wdi_p2p_service_discovery_type.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5CA8F330-7AFE-44C9-BCCA-CA93479B9754
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_P2P_SERVICE_DISCOVERY_TYPE, WDI_P2P_SERVICE_DISCOVERY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

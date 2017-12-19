@@ -7,8 +7,8 @@ old-location: display\dxva_connectmode.htm
 old-project: display
 ms.assetid: 84520745-c99d-4495-a7c4-514d5e6cd27e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXVA_ConnectMode, DXVA_ConnectMode, *LPDXVA_ConnectMode
+ms.date: 12/15/2017
+ms.keywords: _DXVA_ConnectMode, *LPDXVA_ConnectMode, DXVA_ConnectMode, LPDXVA_ConnectMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

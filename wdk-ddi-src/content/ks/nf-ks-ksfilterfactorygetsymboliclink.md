@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactorygetsymboliclink.htm
 old-project: stream
 ms.assetid: db657820-75b7-49fe-904d-05f8bc45b8c5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsFilterFactoryGetSymbolicLink
 ms.prod: windows-hardware
 ms.technology: windows-devices

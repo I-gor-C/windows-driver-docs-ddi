@@ -4,10 +4,10 @@ title: RILRADIOCONFIGURATIONS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradioconfigurations_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: fdd53162-b884-4360-b80a-14225abc1185
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILRADIOCONFIGURATIONS, RILRADIOCONFIGURATIONS, *LPRILRADIOCONFIGURATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILPERSODEACTIVATIONSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpersodeactivationstateparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e7c74c78-80e8-485b-bee6-18175e73ab9a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPERSODEACTIVATIONSTATEPARAMMASK, RILPERSODEACTIVATIONSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

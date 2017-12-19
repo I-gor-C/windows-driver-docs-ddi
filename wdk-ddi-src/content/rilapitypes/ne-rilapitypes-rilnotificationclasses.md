@@ -4,10 +4,10 @@ title: RILNOTIFICATIONCLASSES
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnotificationclasses_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 04681c2b-aadb-466e-bd14-f6a08c99a8e2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILNOTIFICATIONCLASSES, RILNOTIFICATIONCLASSES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,7 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
 
 
+
 ## -syntax
 
 ````
@@ -64,6 +65,7 @@ typedef enum _RILNOTIFICATIONCLASSES {
 <tr>
 <th width="30%">
 Header
+
 </th>
 <td width="70%">
 <dl>

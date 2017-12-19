@@ -7,7 +7,7 @@ old-location: storage\storportallocatemdl.htm
 old-project: storage
 ms.assetid: 45450486-3264-4fc8-8051-f7c48997e3dd
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortAllocateMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices

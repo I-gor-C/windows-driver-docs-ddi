@@ -4,11 +4,11 @@ title: _NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO
 author: windows-driver-content
 description: The NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO structure specifies media-specific information that is reserved for system use with native 802.11 drivers. Do not use this structure.
 old-location: netvista\ndis_net_buffer_list_media_specific_info.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: cae95c4f-0af3-49de-a312-83958896006a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, *PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO
+ms.date: 12/14/2017
+ms.keywords: _NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, *PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

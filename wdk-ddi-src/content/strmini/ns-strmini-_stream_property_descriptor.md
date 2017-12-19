@@ -7,8 +7,8 @@ old-location: stream\stream_property_descriptor.htm
 old-project: stream
 ms.assetid: b72265b7-dce3-4688-bee7-2a6f7d7731f9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: _STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR, PSTREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

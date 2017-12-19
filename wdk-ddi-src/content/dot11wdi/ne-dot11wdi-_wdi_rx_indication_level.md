@@ -4,10 +4,10 @@ title: _WDI_RX_INDICATION_LEVEL
 author: windows-driver-content
 description: The WDI_RX_INDICATION_LEVEL enumeration defines the RX indication levels.
 old-location: netvista\wdi_rx_indication_level.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 73ad8d04-c245-4a3c-92ff-4729737ede92
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_RX_INDICATION_LEVEL, WDI_RX_INDICATION_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices

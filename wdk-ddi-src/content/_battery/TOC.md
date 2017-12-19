@@ -16,7 +16,7 @@
 ### [_POWERSOURCEUPDATE structure](../charging/ns-charging-_powersourceupdate.md)
 ### [_POWERSOURCEUPDATEEX structure](../charging/ns-charging-_powersourceupdateex.md)
 ## [Ntpoapi.h](../ntpoapi/index.md)
-### [PBATTERY_REPORTING_SCALE structure](../ntpoapi/ns-ntpoapi-pbattery_reporting_scale.md)
+### [BATTERY_REPORTING_SCALE structure](../ntpoapi/ns-ntpoapi-battery_reporting_scale.md)
 ## [Poclass.h](../poclass/index.md)
 ### [_BATTERY_INFORMATION structure](../poclass/ns-poclass-_battery_information.md)
 ### [_BATTERY_MANUFACTURE_DATE structure](../poclass/ns-poclass-_battery_manufacture_date.md)

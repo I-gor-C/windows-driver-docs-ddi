@@ -4,10 +4,10 @@ title: RILCALLAUDIOQUALITY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallaudioquality.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: bdd9879a-ec9b-431a-be95-4a1844e6238f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLAUDIOQUALITY, RILCALLAUDIOQUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

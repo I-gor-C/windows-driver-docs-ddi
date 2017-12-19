@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bth_hci_vendor_command.htm
 old-project: bltooth
 ms.assetid: 3b182835-ca62-482c-b82a-28c59f23fb55
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.date: 12/14/2017
+ms.keywords: _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -42,14 +42,6 @@ req.irql: <= PASSIVE_LEVEL
      The IOCTL_BTH_HCI_VENDOR_COMMAND request allows Bluetooth applications to send vendor-specific
      commands to radios.
 
-The 
-      <b>AssociatedIrp.SystemBuffer</b> member points to a 
-      <a href="bltooth.bth_vendor_specific_command">BTH_VENDOR_SPECIFIC_COMMAND</a> structure. The structure contains a manufacturer identifier, a link
-      management protocol (LMP) version, an HCI command header, and the associated vendor command data that
-      includes optional pattern data to match an event to the command.
-
-The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that contains the event data returned from the radio. The data is available in the <b>EventInfo</b> member of the <a href="bltooth.bth_vendor_event_info">BTH_VENDOR_EVENT_INFO</a> structure.
-
 
 
 ## -syntax
@@ -66,104 +58,27 @@ typedef struct _BTH_VENDOR_EVENT_INFO {
 ## -ioctlparameters
 
 ### -input-buffer
-<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member points to a 
       <a href="bltooth.bth_vendor_specific_command">BTH_VENDOR_SPECIFIC_COMMAND</a> structure. The structure contains a manufacturer identifier, a link
-      management protocol (LMP) version, an HCI command header, and the associated vendor command data that
-      includes optional pattern data to match an event to the command.</p>The 
-      <b>AssociatedIrp.SystemBuffer</b>AssociatedIrp.SystemBuffer member points to a 
-      <a href="bltooth.bth_vendor_specific_command">BTH_VENDOR_SPECIFIC_COMMAND</a><b>BTH_VENDOR_SPECIFIC_COMMAND</b>BTH_VENDOR_SPECIFIC_COMMAND structure. The structure contains a manufacturer identifier, a link
       management protocol (LMP) version, an HCI command header, and the associated vendor command data that
       includes optional pattern data to match an event to the command.
 
 
 ### -input-buffer-length
+The length of a 
+      <a href="bltooth.bth_vendor_specific_command">BTH_VENDOR_SPECIFIC_COMMAND</a> structure. 
 
-<text></text>
 
 ### -output-buffer
-<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that contains the event data returned from the radio. The data is available in the <b>EventInfo</b> member of the <a href="bltooth.bth_vendor_event_info">BTH_VENDOR_EVENT_INFO</a> structure.</p>The <b>AssociatedIrp.SystemBuffer</b>AssociatedIrp.SystemBuffer member points to a buffer that contains the event data returned from the radio. The data is available in the <b>EventInfo</b>EventInfo member of the <a href="bltooth.bth_vendor_event_info">BTH_VENDOR_EVENT_INFO</a><b>BTH_VENDOR_EVENT_INFO</b>BTH_VENDOR_EVENT_INFO structure.
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _BTH_VENDOR_EVENT_INFO {
-  BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
-} BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;</pre>
-</td>
-</tr>
-</table></span></div><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _BTH_VENDOR_EVENT_INFO {
-  BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
-} BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;</pre>
-</td>
-</tr>
-</table></span><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _BTH_VENDOR_EVENT_INFO {
-  BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
-} BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;</pre>
-</td>
-</tr>
-</table>
-<tr>
-<th></th>
-</tr>
-<th></th>
+The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that contains the event data returned from the radio. The data is available in the <b>EventInfo</b> member of the <a href="bltooth.bth_vendor_event_info">BTH_VENDOR_EVENT_INFO</a> structure.
 
-<tr>
-<td>
-<pre>typedef struct _BTH_VENDOR_EVENT_INFO {
-  BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
-} BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;</pre>
-</td>
-</tr>
-<td>
-<pre>typedef struct _BTH_VENDOR_EVENT_INFO {
-  BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
-} BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;</pre>
-</td>
-<pre>typedef struct _BTH_VENDOR_EVENT_INFO {
-  BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
-} BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;</pre>typedef struct _BTH_VENDOR_EVENT_INFO {
-  BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
-} BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;
-
-
-
-The <b>EventSize</b> member provides the size of the vendor-specific event data returned from the radio.</p>The <b>EventSize</b>EventSize member provides the size of the vendor-specific event data returned from the radio.
+The <b>EventSize</b> member provides the size of the vendor-specific event data returned from the radio.
 
 
 ### -output-buffer-length
+The length of a <a href="bltooth.bth_vendor_event_info">BTH_VENDOR_EVENT_INFO</a> structure.
 
-<text></text>
 
 ### -in-out-buffer
 
@@ -174,195 +89,35 @@ The <b>EventSize</b> member provides the size of the vendor-specific event data 
 <text></text>
 
 ### -status-block
-<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
+I/O Status block
 If the request is successful, the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the buffer that
-      holds the command response.</p>If the request is successful, the 
-      <b>Information</b>Information member of the STATUS_BLOCK structure is set to the size, in bytes, of the buffer that
       holds the command response.
+
 The 
-      <b>Status</b> member is set to one of the values in the following table.</p>The 
-      <b>Status</b>Status member is set to one of the values in the following table.
-<table>
-<tr>
-<th>Status value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
+      <b>Status</b> member is set to one of the values in the following table.
+
 STATUS_SUCCESS
 
-</td>
-<td>
 The IOCTL completed successfully.
 
-</td>
-</tr>
-<tr>
-<td>
 STATUS_BUFFER_TOO_SMALL
 
-</td>
-<td>
 The input buffer that was passed was too small.
 
-</td>
-</tr>
-<tr>
-<td>
 STATUS_INVALID_PARAMETER
 
-</td>
-<td>
 The input buffer that was passed was invalid.
 
-</td>
-</tr>
-<tr>
-<td>
 STATUS_PRIVILEGE_NOT_HELD
 
-</td>
-<td>
 The caller does not have the required privileges.
 
-</td>
-</tr>
-<tr>
-<td>
 STATUS_INSUFFICIENT_RESOURCES
 
-</td>
-<td>
 There was insufficient memory available to process the request.
 
-</td>
-</tr>
-</table>
-<tr>
-<th>Status value</th>
-<th>Description</th>
-</tr>
-<th>Status value</th>Status value
-<th>Description</th>Description
-
-<tr>
-<td>
-STATUS_SUCCESS
-
-</td>
-<td>
-The IOCTL completed successfully.
-
-</td>
-</tr>
-<td>
-STATUS_SUCCESS
-
-</td>
-STATUS_SUCCESS</p>STATUS_SUCCESS
-
-<td>
-The IOCTL completed successfully.
-
-</td>
-The IOCTL completed successfully.</p>The IOCTL completed successfully.
-
-
-<tr>
-<td>
-STATUS_BUFFER_TOO_SMALL
-
-</td>
-<td>
-The input buffer that was passed was too small.
-
-</td>
-</tr>
-<td>
-STATUS_BUFFER_TOO_SMALL
-
-</td>
-STATUS_BUFFER_TOO_SMALL</p>STATUS_BUFFER_TOO_SMALL
-
-<td>
-The input buffer that was passed was too small.
-
-</td>
-The input buffer that was passed was too small.</p>The input buffer that was passed was too small.
-
-
-<tr>
-<td>
-STATUS_INVALID_PARAMETER
-
-</td>
-<td>
-The input buffer that was passed was invalid.
-
-</td>
-</tr>
-<td>
-STATUS_INVALID_PARAMETER
-
-</td>
-STATUS_INVALID_PARAMETER</p>STATUS_INVALID_PARAMETER
-
-<td>
-The input buffer that was passed was invalid.
-
-</td>
-The input buffer that was passed was invalid.</p>The input buffer that was passed was invalid.
-
-
-<tr>
-<td>
-STATUS_PRIVILEGE_NOT_HELD
-
-</td>
-<td>
-The caller does not have the required privileges.
-
-</td>
-</tr>
-<td>
-STATUS_PRIVILEGE_NOT_HELD
-
-</td>
-STATUS_PRIVILEGE_NOT_HELD</p>STATUS_PRIVILEGE_NOT_HELD
-
-<td>
-The caller does not have the required privileges.
-
-</td>
-The caller does not have the required privileges.</p>The caller does not have the required privileges.
-
-
-<tr>
-<td>
-STATUS_INSUFFICIENT_RESOURCES
-
-</td>
-<td>
-There was insufficient memory available to process the request.
-
-</td>
-</tr>
-<td>
-STATUS_INSUFFICIENT_RESOURCES
-
-</td>
-STATUS_INSUFFICIENT_RESOURCES</p>STATUS_INSUFFICIENT_RESOURCES
-
-<td>
-There was insufficient memory available to process the request.
-
-</td>
-There was insufficient memory available to process the request.</p>There was insufficient memory available to process the request.
-
-
-
- </p> 
+ 
 
 
 ## -remarks
@@ -445,5 +200,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_HCI_VENDOR_COMMAND control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_HCI_VENDOR_COMMAND control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,8 +7,8 @@ old-location: kernel\iocompletion.htm
 old-project: kernel
 ms.assetid: 53fc5265-5d8e-4794-942b-de81b93e81da
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 12/15/2017
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

@@ -7,7 +7,7 @@ old-location: pos\evt_pos_cx_device_remote_retain.htm
 old-project: pos
 ms.assetid: 9B23DB23-D995-4737-9302-872F2144823D
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

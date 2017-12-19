@@ -7,7 +7,7 @@ old-location: hid\hidp_getcollectiondescription.htm
 old-project: hid
 ms.assetid: F8FD0C10-115D-4ACF-8C7F-127D342EA9CD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: HidP_GetCollectionDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: GetInputLine function
 author: windows-driver-content
 description: The GetInputLine function requests an input string from the debugger.
 old-location: debugger\getinputline.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 18d4aae5-dd11-4c3a-8088-52121f46d208
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: GetInputLine
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILCALLERIDSETTINGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalleridsettings_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 129fcbf9-8162-494a-a571-5c604849d387
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLERIDSETTINGS, RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_rotation.htm
 old-project: display
 ms.assetid: 667f1c5e-c342-40b2-b215-2538669288cc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXVAHDDDI_ROTATION, DXVAHDDDI_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

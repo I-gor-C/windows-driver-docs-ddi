@@ -4,11 +4,11 @@ title: _DEBUG_READ_USER_MINIDUMP_STREAM
 author: windows-driver-content
 description: Describes a user minidump to read.
 old-location: debugger\debug_read_user_minidump_stream.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 07005D52-E851-4AE8-95D8-ED8E26C43DC6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM, PDEBUG_READ_USER_MINIDUMP_STREAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: display\dxgk_debug_report_interface.htm
 old-project: display
 ms.assetid: fb1bd1dd-feab-4aa4-8b4f-932f0d5ec4ab
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE
+ms.date: 12/15/2017
+ms.keywords: _DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE, PDXGK_DEBUG_REPORT_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

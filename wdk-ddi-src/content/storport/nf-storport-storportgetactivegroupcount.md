@@ -7,7 +7,7 @@ old-location: storage\storportgetactivegroupcount.htm
 old-project: storage
 ms.assetid: 640dd836-a5f9-4a88-b2a3-038a66a50868
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortGetActiveGroupCount
 ms.prod: windows-hardware
 ms.technology: windows-devices

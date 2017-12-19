@@ -7,7 +7,7 @@ old-location: display\dxgkcb_indicate_connector_change.htm
 old-project: display
 ms.assetid: D3C76DC0-7A6B-4E1E-8277-F6410D4B474B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

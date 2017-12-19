@@ -7,7 +7,7 @@ old-location: kernel\correlation_vector.htm
 old-project: kernel
 ms.assetid: 35c1799f-2012-42b0-95e6-6902c818a094
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: CORRELATION_VECTOR, CORRELATION_VECTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

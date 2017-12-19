@@ -7,7 +7,7 @@ old-location: print\drvprinterevent.htm
 old-project: print
 ms.assetid: 7566f92d-0e25-44bf-a2b3-587bb11a7d03
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: DrvPrinterEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices

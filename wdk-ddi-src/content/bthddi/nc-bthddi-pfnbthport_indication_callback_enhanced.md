@@ -7,8 +7,8 @@ old-location: bltooth\enhanced_l2cap_callback_function.htm
 old-project: bltooth
 ms.assetid: 1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
+ms.date: 12/14/2017
+ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

@@ -7,7 +7,7 @@ old-location: stream\ksevents_locktype.htm
 old-project: stream
 ms.assetid: 775d08ad-40c2-44b7-af02-6c182301e46f
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSEVENTS_LOCKTYPE, KSEVENTS_LOCKTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\sm_getpersistentbinding_out.htm
 old-project: storage
 ms.assetid: aa80e05c-e322-4350-80e7-28d53821c510
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT, PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -40,13 +40,13 @@ Drmk.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PKSDRMAUDIOSTREAM_CONTENTID structure](ns-drmk-pksdrmaudiostream_contentid.md) | The KSDRMAUDIOSTREAM_CONTENTID structure specifies the DRM content ID and DRM content rights for a KSPROPERTY_DRMAUDIOSTREAM_CONTENTIDset-property request. |
-| [PKSP_DRMAUDIOSTREAM_CONTENTID structure](ns-drmk-pksp_drmaudiostream_contentid.md) | The KSP_DRMAUDIOSTREAM_CONTENTID structure specifies the property, request type, and context for a KSPROPERTY_DRMAUDIOSTREAM_CONTENTIDset-property request. It also specifies a list of function pointers to the DRM functions. |
+| [KSDRMAUDIOSTREAM_CONTENTID structure](ns-drmk-ksdrmaudiostream_contentid.md) | The KSDRMAUDIOSTREAM_CONTENTID structure specifies the DRM content ID and DRM content rights for a KSPROPERTY_DRMAUDIOSTREAM_CONTENTIDset-property request. |
+| [KSP_DRMAUDIOSTREAM_CONTENTID structure](ns-drmk-ksp_drmaudiostream_contentid.md) | The KSP_DRMAUDIOSTREAM_CONTENTID structure specifies the property, request type, and context for a KSPROPERTY_DRMAUDIOSTREAM_CONTENTIDset-property request. It also specifies a list of function pointers to the DRM functions. |
 | [tagDRMFORWARD structure](ns-drmk-tagdrmforward.md) | The DRMFORWARD structure contains the information that the DRMK system driver needs in order to forward a DRM content ID to a device that handles protected content. |
 | [tagDRMRIGHTS structure](ns-drmk-tagdrmrights.md) | The DRMRIGHTS structure specifies the DRM content rights assigned to a KS audio pin or to a port-class driver's stream object. |
 
-## Interfaces
+## Methods
 
 | Title   | Description   |
 | ---- |:---- |
-| [IDrmAudioStream interface](nn-drmk-idrmaudiostream.md) | The IDrmAudioStream interface assigns DRM protection to the digital content in an audio stream. |
+| [IDrmAudioStream::SetContentId method](nf-drmk-idrmaudiostream-setcontentid.md) | The SetContentId method sets the DRM content ID and its assigned DRM content rights on a KS audio stream. |

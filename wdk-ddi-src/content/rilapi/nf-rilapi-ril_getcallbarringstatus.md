@@ -4,10 +4,10 @@ title: RIL_GetCallBarringStatus function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getcallbarringstatus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 403e17c1-1353-42dd-aedc-8aec1fd72e0f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetCallBarringStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices

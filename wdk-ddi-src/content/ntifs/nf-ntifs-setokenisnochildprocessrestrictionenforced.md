@@ -7,7 +7,7 @@ old-location: ifsk\setokenisnochildprocessrestrictionenforced.htm
 old-project: ifsk
 ms.assetid: 6D214346-8CE6-4E9C-B054-1C72B928ED2B
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: SeTokenIsNoChildProcessRestrictionEnforced
 ms.prod: windows-hardware
 ms.technology: windows-devices

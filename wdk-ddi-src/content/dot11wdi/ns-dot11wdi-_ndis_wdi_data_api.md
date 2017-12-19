@@ -4,11 +4,11 @@ title: _NDIS_WDI_DATA_API
 author: windows-driver-content
 description: The NDIS_WDI_DATA_API structure specifies the entry points for WDI data indications.
 old-location: netvista\ndis_wdi_data_api.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_WDI_DATA_API, NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
+ms.date: 12/14/2017
+ms.keywords: _NDIS_WDI_DATA_API, NDIS_WDI_DATA_API, PNDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

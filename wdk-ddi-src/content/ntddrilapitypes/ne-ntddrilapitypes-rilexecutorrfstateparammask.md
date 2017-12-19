@@ -4,10 +4,10 @@ title: RILEXECUTORRFSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexecutorrfstateparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 58dae7ff-5e88-4ccd-85d9-8b0022e85d30
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILEXECUTORRFSTATEPARAMMASK, RILEXECUTORRFSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

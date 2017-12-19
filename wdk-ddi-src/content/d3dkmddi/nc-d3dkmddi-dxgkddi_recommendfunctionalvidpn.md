@@ -7,7 +7,7 @@ old-location: display\dxgkddirecommendfunctionalvidpn.htm
 old-project: display
 ms.assetid: 320a77a7-d7d4-47b9-8a40-2b6e12819e4b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

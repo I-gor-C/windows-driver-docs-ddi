@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_predication_op.htm
 old-project: display
 ms.assetid: 70676251-BCD7-4996-B5B7-96A8D9B107DB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_PREDICATION_OP, D3D12DDI_PREDICATION_OP
 ms.prod: windows-hardware
 ms.technology: windows-devices

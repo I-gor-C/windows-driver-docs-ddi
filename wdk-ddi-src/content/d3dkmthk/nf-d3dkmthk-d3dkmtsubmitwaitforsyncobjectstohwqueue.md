@@ -7,7 +7,7 @@ old-location: display\d3dkmtsubmitwaitforsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: E068ECD0-059A-46E1-9D9E-64EA81B73BD6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTSubmitWaitForSyncObjectsToHwQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices

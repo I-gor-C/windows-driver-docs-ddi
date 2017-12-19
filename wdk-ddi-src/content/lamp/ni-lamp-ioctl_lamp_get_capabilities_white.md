@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_get_capabilities_white.htm
 old-project: stream
 ms.assetid: F4A7CF9A-023F-42FC-A40C-E95964EC5392
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

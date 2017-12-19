@@ -4,10 +4,10 @@ title: VmbChannelSaveEnd function
 author: windows-driver-content
 description: The VmbChannelSaveEnd function cleans up any resources that were allocated for saving state of a channel.
 old-location: netvista\vmbchannelsaveend.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0E61AF98-DC71-4234-B337-71B2AF65D858
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelSaveEnd
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: print\wcscheckcolors.htm
 old-project: print
 ms.assetid: 1254b0d4-cb72-4171-b09d-f0bca58a137a
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: WcsCheckColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

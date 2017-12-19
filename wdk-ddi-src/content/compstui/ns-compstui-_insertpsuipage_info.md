@@ -7,8 +7,8 @@ old-location: print\insertpsuipage_info.htm
 old-project: print
 ms.assetid: 99ec8cfa-3ec7-4080-b22a-dba0a86b7e4a
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _INSERTPSUIPAGE_INFO, *PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO
+ms.date: 12/14/2017
+ms.keywords: _INSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO, *PINSERTPSUIPAGE_INFO, PINSERTPSUIPAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

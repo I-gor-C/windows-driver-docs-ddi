@@ -4,11 +4,11 @@ title: RILSETDMPROFILECONFIGINFOPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetdmprofileconfiginfoparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d485f00e-5fa6-4a01-83fe-78e59a8d8fcb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETDMPROFILECONFIGINFOPARAMS, *LPRILSETDMPROFILECONFIGINFOPARAMS, RILSETDMPROFILECONFIGINFOPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSETDMPROFILECONFIGINFOPARAMS, RILSETDMPROFILECONFIGINFOPARAMS, LPRILSETDMPROFILECONFIGINFOPARAMS, *LPRILSETDMPROFILECONFIGINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

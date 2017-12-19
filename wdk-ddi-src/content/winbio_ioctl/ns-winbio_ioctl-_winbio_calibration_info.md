@@ -7,8 +7,8 @@ old-location: biometric\winbio_calibration_info.htm
 old-project: biometric
 ms.assetid: 12ea0460-30c1-4ce0-9a3b-c59a71493fe7
 ms.author: windowsdriverdev
-ms.date: 11/13/2017
-ms.keywords: _WINBIO_CALIBRATION_INFO, WINBIO_CALIBRATION_INFO, *PWINBIO_CALIBRATION_INFO
+ms.date: 12/14/2017
+ms.keywords: _WINBIO_CALIBRATION_INFO, PWINBIO_CALIBRATION_INFO, WINBIO_CALIBRATION_INFO, *PWINBIO_CALIBRATION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

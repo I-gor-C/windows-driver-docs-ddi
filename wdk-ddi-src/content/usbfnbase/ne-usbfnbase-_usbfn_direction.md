@@ -4,11 +4,11 @@ title: _USBFN_DIRECTION
 author: windows-driver-content
 description: Defines the USB data transfer direction types.
 old-location: buses\usbfn_direction.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: C6E1FA5A-993C-4212-9428-0B759C09F5DE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_DIRECTION, USBFN_DIRECTION, *PUSBFN_DIRECTION
+ms.date: 12/14/2017
+ms.keywords: _USBFN_DIRECTION, USBFN_DIRECTION, PUSBFN_DIRECTION, *PUSBFN_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

@@ -7,7 +7,7 @@ old-location: print\gdigetpagecount.htm
 old-project: print
 ms.assetid: 0a101b59-c610-4158-97a8-002222a94309
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: GdiGetPageCount
 ms.prod: windows-hardware
 ms.technology: windows-devices

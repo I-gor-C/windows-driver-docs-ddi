@@ -7,8 +7,8 @@ old-location: stream\ksstate.htm
 old-project: stream
 ms.assetid: 6f5a3c65-9d6c-4d5f-af99-71aba16eb254
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: PKSSTATE, KSSTATE, *PKSSTATE
+ms.date: 12/14/2017
+ms.keywords: PKSSTATE, KSSTATE, PKSSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

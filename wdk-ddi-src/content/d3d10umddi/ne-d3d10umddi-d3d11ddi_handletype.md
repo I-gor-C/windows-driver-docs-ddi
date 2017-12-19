@@ -7,7 +7,7 @@ old-location: display\d3d11ddi_handletype.htm
 old-project: display
 ms.assetid: 9ac032fe-b870-49aa-8602-3c7aa997ef9a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11DDI_HANDLETYPE, D3D11DDI_HANDLETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

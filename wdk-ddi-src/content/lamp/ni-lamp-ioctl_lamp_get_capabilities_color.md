@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_get_capabilities_color.htm
 old-project: stream
 ms.assetid: CC7B1824-E397-414A-8EB6-130AEC031304
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

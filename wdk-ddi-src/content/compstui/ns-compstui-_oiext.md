@@ -7,8 +7,8 @@ old-location: print\oiext.htm
 old-project: print
 ms.assetid: 932e5520-0ebf-4cfa-893a-a7eb969cb697
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OIEXT, *POIEXT, OIEXT
+ms.date: 12/14/2017
+ms.keywords: _OIEXT, *POIEXT, POIEXT, OIEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

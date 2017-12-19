@@ -7,8 +7,8 @@ old-location: storage\dsm_load_balance_policy_v2.htm
 old-project: storage
 ms.assetid: b1522320-110c-46dc-be50-df7c05d61351
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DSM_Load_Balance_Policy_V2, *PDSM_Load_Balance_Policy_V2, DSM_Load_Balance_Policy_V2
+ms.date: 12/15/2017
+ms.keywords: _DSM_Load_Balance_Policy_V2, *PDSM_Load_Balance_Policy_V2, PDSM_Load_Balance_Policy_V2, DSM_Load_Balance_Policy_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

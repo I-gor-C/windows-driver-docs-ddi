@@ -7,8 +7,8 @@ old-location: sensors\sensor_controller_config.htm
 old-project: sensors
 ms.assetid: EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG
+ms.date: 12/14/2017
+ms.keywords: _SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

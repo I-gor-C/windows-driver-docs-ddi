@@ -7,7 +7,7 @@ old-location: ifsk\rtlntstatustodoserror.htm
 old-project: ifsk
 ms.assetid: 9ba6f693-b0b7-4176-b951-7bb259bec391
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: RtlNtStatusToDosError
 ms.prod: windows-hardware
 ms.technology: windows-devices

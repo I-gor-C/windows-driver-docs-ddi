@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settargetanalogcopyprotection.htm
 old-project: display
 ms.assetid: F5A853B2-4A8C-4929-AAEC-28844DEF0B29
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: display\dxgkddiresetdevice.htm
 old-project: display
 ms.assetid: e757e63d-6d78-4b20-9471-290f56c1bcde
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.date: 12/15/2017
+ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

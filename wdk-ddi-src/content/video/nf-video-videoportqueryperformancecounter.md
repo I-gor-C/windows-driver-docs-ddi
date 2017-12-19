@@ -7,7 +7,7 @@ old-location: display\videoportqueryperformancecounter.htm
 old-project: display
 ms.assetid: 44e9fca2-54b1-427c-864d-f170a8a26f5e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortQueryPerformanceCounter
 ms.prod: windows-hardware
 ms.technology: windows-devices

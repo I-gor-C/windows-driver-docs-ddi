@@ -7,7 +7,7 @@ old-location: print\routergetprintclassobject.htm
 old-project: print
 ms.assetid: e2df591d-59bd-4aae-ac1b-8fdf01da3ea7
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: RouterGetPrintClassObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

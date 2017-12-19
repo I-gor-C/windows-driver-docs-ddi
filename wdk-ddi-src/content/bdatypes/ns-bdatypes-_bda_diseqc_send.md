@@ -7,8 +7,8 @@ old-location: stream\bda_diseqc_send.htm
 old-project: stream
 ms.assetid: C40EAB5C-61AA-45FB-856E-07AB4D0228A6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_DISEQC_SEND, BDA_DISEQC_SEND, *PBDA_DISEQC_SEND
+ms.date: 12/14/2017
+ms.keywords: _BDA_DISEQC_SEND, BDA_DISEQC_SEND, *PBDA_DISEQC_SEND, PBDA_DISEQC_SEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

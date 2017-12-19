@@ -4,11 +4,11 @@ title: _CHANNEL_INFO
 author: windows-driver-content
 description: The CHANNEL_INFO structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_CHANNEL_ALIGN_RQST.
 old-location: image\channel_info.htm
-old-project: image
+old-project: Image
 ms.assetid: 1f1cb952-9a63-461f-b70f-4cc41b8d88f8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _CHANNEL_INFO, *PCHANNEL_INFO, CHANNEL_INFO
+ms.date: 12/14/2017
+ms.keywords: _CHANNEL_INFO, *PCHANNEL_INFO, CHANNEL_INFO, PCHANNEL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

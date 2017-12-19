@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputduplpresentflags.htm
 old-project: display
 ms.assetid: d80bcf24-4d53-4ec9-897d-d3243c7fda25
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_OUTPUTDUPLPRESENTFLAGS, D3DKMT_OUTPUTDUPLPRESENTFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

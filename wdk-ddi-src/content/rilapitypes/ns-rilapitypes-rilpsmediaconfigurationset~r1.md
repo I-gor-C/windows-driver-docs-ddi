@@ -4,10 +4,10 @@ title: RILPSMEDIACONFIGURATIONSET
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpsmediaconfigurationset_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: cdaa161e-2481-497c-8a9b-4c07a3d99d1f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\iddcx_update_reason.htm
 old-project: display
 ms.assetid: e451e4e3-0b8a-4a17-8e4e-2da99d336a39
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_UPDATE_REASON,
 ms.prod: windows-hardware
 ms.technology: windows-devices

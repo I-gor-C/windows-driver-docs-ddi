@@ -7,7 +7,7 @@ old-location: sensors\ioctl_gnss_get_fixdata.htm
 old-project: sensors
 ms.assetid: 037B5AD9-39C2-4F50-8E63-0736EA37FEF9
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,12 +85,12 @@ I/O Status block
 <b>FixSessionID</b>: Session ID for an active fix.
 
 
-<a href="sensors.gnss_event">GNSS_EVENT</a>
+<a href="..\gnssdriver\ns-gnssdriver-gnss_event.md">GNSS_EVENT</a>
 
 
 The <b>EventType</b> element must be set to <b>GNSS_Event_FixAvailable</b>.
 
-The data associated with this event is of type <a href="sensors.gnss_fixdata">GNSS_FIXDATA</a>.
+The data associated with this event is of type <a href="..\gnssdriver\ns-gnssdriver-gnss_fixdata.md">GNSS_FIXDATA</a>.
 
 The GNSS adapter issues one or more get fix request after starting a fix session. This call creates a pending I/O against which the GNSS driver can return fix data when it is available from the underlying GNSS engine or cache value.
 
@@ -133,5 +133,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_GET_FIXDATA control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_GET_FIXDATA control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

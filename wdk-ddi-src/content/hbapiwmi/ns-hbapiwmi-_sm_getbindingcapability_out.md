@@ -7,8 +7,8 @@ old-location: storage\sm_getbindingcapability_out.htm
 old-project: storage
 ms.assetid: 7dfa36be-ab05-478d-b47a-783e599545bf
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_GetBindingCapability_OUT, *PSM_GetBindingCapability_OUT, SM_GetBindingCapability_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_GetBindingCapability_OUT, PSM_GetBindingCapability_OUT, SM_GetBindingCapability_OUT, *PSM_GetBindingCapability_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

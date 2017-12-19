@@ -7,8 +7,8 @@ old-location: devtest\wpp_triage_info.htm
 old-project: devtest
 ms.assetid: BC2722A8-C09A-4C46-9EC3-45DCF4A6FD64
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.date: 12/14/2017
+ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

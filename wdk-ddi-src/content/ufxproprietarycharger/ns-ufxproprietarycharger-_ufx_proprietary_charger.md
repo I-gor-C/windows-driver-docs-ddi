@@ -4,11 +4,11 @@ title: _UFX_PROPRIETARY_CHARGER
 author: windows-driver-content
 description: Describes the proprietary charger's device power requirements.
 old-location: buses\ufx_proprietary_charger.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: FAAEDAFE-69A8-4092-8301-DB159FD3583D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UFX_PROPRIETARY_CHARGER, UFX_PROPRIETARY_CHARGER, *PUFX_PROPRIETARY_CHARGER
+ms.date: 12/14/2017
+ms.keywords: _UFX_PROPRIETARY_CHARGER, UFX_PROPRIETARY_CHARGER, PUFX_PROPRIETARY_CHARGER, *PUFX_PROPRIETARY_CHARGER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

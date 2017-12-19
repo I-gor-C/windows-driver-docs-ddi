@@ -4,11 +4,11 @@ title: _DEBUG_LAST_EVENT_INFO_BREAKPOINT
 author: windows-driver-content
 description: Describes the breakpoint of the last event.
 old-location: debugger\debug_last_event_info_breakpoint.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: DAE22E2C-E8A9-4FF0-B9E9-D652C4E7B0B8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_BREAKPOINT, *PDEBUG_LAST_EVENT_INFO_BREAKPOINT, DEBUG_LAST_EVENT_INFO_BREAKPOINT
+ms.date: 12/14/2017
+ms.keywords: _DEBUG_LAST_EVENT_INFO_BREAKPOINT, PDEBUG_LAST_EVENT_INFO_BREAKPOINT, DEBUG_LAST_EVENT_INFO_BREAKPOINT, *PDEBUG_LAST_EVENT_INFO_BREAKPOINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

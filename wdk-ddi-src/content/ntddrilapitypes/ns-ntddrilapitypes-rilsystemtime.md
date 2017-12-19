@@ -4,11 +4,11 @@ title: RILSYSTEMTIME
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemtime.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: da01963f-a0eb-4222-b0c7-20b924f65f66
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSYSTEMTIME, *LPRILSYSTEMTIME, RILSYSTEMTIME
+ms.date: 12/14/2017
+ms.keywords: RILSYSTEMTIME, LPRILSYSTEMTIME, *LPRILSYSTEMTIME, RILSYSTEMTIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

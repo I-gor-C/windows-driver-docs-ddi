@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectgettypedcontextworker.htm
 old-project: wdf
 ms.assetid: 1d95084b-16c4-468e-84af-47650292c5a1
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfObjectGetTypedContextWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices

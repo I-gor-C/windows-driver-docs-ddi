@@ -7,7 +7,7 @@ old-location: sensors\sensor_state.htm
 old-project: sensors
 ms.assetid: F1E869AE-2FAF-402F-9C50-58D81E0EFF69
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: SENSOR_STATE, SENSOR_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

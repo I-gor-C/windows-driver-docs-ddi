@@ -7,7 +7,7 @@ old-location: kernel\rtluintptrtoint.htm
 old-project: kernel
 ms.assetid: C33B717D-0874-47AB-8503-D6F82F713CBF
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlUIntPtrToInt
 ms.prod: windows-hardware
 ms.technology: windows-devices

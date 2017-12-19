@@ -4,10 +4,10 @@ title: VmbServerChannelInitSetTargetInterfaceId function
 author: windows-driver-content
 description: The VmbServerChannelInitSetTargetInterfaceId function sets the target interface type GUID and instance GUID of the channel offer.
 old-location: netvista\vmbserverchannelinitsettargetinterfaceid.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 09123845-F734-48B6-A593-0368CD195379
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbServerChannelInitSetTargetInterfaceId
 ms.prod: windows-hardware
 ms.technology: windows-devices

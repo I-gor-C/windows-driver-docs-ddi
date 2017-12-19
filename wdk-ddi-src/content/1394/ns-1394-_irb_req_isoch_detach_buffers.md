@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_detach_buffers.htm
 old-project: IEEE
 ms.assetid: 60ED83BD-4AFA-432F-B918-9006815C8D47
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_DETACH_BUFFERS, IRB_REQ_ISOCH_DETACH_BUFFERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

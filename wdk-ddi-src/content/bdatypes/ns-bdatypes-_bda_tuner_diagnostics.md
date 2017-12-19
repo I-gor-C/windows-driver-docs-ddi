@@ -7,8 +7,8 @@ old-location: stream\bda_tuner_diagnostics.htm
 old-project: stream
 ms.assetid: 19AE53CF-7C09-4858-9D33-CF4B885111D3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_TUNER_DIAGNOSTICS, BDA_TUNER_DIAGNOSTICS, *PBDA_TUNER_DIAGNOSTICS
+ms.date: 12/14/2017
+ms.keywords: _BDA_TUNER_DIAGNOSTICS, PBDA_TUNER_DIAGNOSTICS, BDA_TUNER_DIAGNOSTICS, *PBDA_TUNER_DIAGNOSTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

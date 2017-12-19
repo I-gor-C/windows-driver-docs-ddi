@@ -7,7 +7,7 @@ old-location: kernel\rtlinttoushort.htm
 old-project: kernel
 ms.assetid: 52571477-80F5-4848-8BCC-AFA70140FABE
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlIntToUShort
 ms.prod: windows-hardware
 ms.technology: windows-devices

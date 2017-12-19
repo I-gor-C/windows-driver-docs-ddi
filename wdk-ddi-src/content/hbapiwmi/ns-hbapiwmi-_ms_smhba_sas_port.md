@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_sas_port.htm
 old-project: storage
 ms.assetid: d294d97a-e6b2-4ab3-bebf-e545aa2f862d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port
+ms.date: 12/15/2017
+ms.keywords: _MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

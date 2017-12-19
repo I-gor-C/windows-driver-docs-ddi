@@ -7,7 +7,7 @@ old-location: display\iddcx_gammaramp_type.htm
 old-project: display
 ms.assetid: 40fa5169-e295-429c-a63d-3e4ab9c14672
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_GAMMARAMP_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: wdf\wdfpdogetparent.htm
 old-project: wdf
 ms.assetid: 62a2a316-afb4-4133-b256-933ea04c0994
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfPdoGetParent
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgk_buildpagingbuffer_flushtlb.htm
 old-project: display
 ms.assetid: 9FDE47A4-1784-41EB-9F60-76368D6DFEED
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_BUILDPAGINGBUFFER_FLUSHTLB, DXGK_BUILDPAGINGBUFFER_FLUSHTLB
 ms.prod: windows-hardware
 ms.technology: windows-devices

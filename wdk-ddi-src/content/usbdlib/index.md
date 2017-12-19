@@ -6,8 +6,8 @@ UID: NA:
 
 ## -description
 
-This header is used by Universal Serial Bus(USB). For more information, see
-- [Universal Serial Bus(USB)](../_usbref/index.md)
+This header is used by UsbRef. For more information, see
+- [UsbRef](../_UsbRef/index.md)
 
 Usbdlib.h contain these programming interfaces:
 
@@ -55,3 +55,5 @@ Usbdlib.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [GET_ISO_URB_SIZE macro](nf-usbdlib-get_iso_urb_size.md) | The GET_ISO_URB_SIZE macro returns the number of bytes required to hold an isochronous transfer request. |
+| [UsbBuildGetStatusRequest macro](nf-usbdlib-usbbuildgetstatusrequest.md) | The UsbBuildGetStatusRequest macro formats an URB to obtain status from a device, interface, endpoint, or other device-defined target on a USB device. |
+| [UsbBuildInterruptOrBulkTransferRequest macro](nf-usbdlib-usbbuildinterruptorbulktransferrequest.md) | The UsbBuildInterruptOrBulkTransferRequest macro formats an URB to send or receive data on a bulk pipe, or to receive data from an interrupt pipe. |

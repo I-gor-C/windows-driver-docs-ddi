@@ -7,7 +7,7 @@ old-location: stream\ksgategetstateunsafe.htm
 old-project: stream
 ms.assetid: f5976125-4ff4-48c2-a5c7-8e9fb2f8a0c9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsGateGetStateUnsafe
 ms.prod: windows-hardware
 ms.technology: windows-devices

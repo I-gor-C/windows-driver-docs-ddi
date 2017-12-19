@@ -7,7 +7,7 @@ old-location: kernel\write_register_ushort.htm
 old-project: kernel
 ms.assetid: ebcbec0c-c5ee-4af1-be3c-36c730f82f4e
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

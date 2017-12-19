@@ -7,8 +7,8 @@ old-location: storage\msiscsi_eventlog.htm
 old-project: storage
 ms.assetid: a31a8688-6002-4ad7-b135-0a8111e2c849
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MSiSCSI_Eventlog, MSiSCSI_Eventlog, *PMSiSCSI_Eventlog
+ms.date: 12/15/2017
+ms.keywords: _MSiSCSI_Eventlog, *PMSiSCSI_Eventlog, MSiSCSI_Eventlog, PMSiSCSI_Eventlog
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

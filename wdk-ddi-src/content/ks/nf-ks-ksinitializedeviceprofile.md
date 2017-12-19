@@ -7,7 +7,7 @@ old-location: stream\ksinitializedeviceprofile.htm
 old-project: stream
 ms.assetid: E6AD21CE-C218-439F-A8F7-8E1AAF307A57
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsInitializeDeviceProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices

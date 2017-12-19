@@ -7,8 +7,8 @@ old-location: audio\pcevent_request.htm
 old-project: audio
 ms.assetid: b28bd1c2-9fbe-4427-a4ba-5b79a338e913
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _PCEVENT_REQUEST, PCEVENT_REQUEST, *PPCEVENT_REQUEST
+ms.date: 12/14/2017
+ms.keywords: _PCEVENT_REQUEST, *PPCEVENT_REQUEST, PCEVENT_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -78,7 +78,7 @@ Specifies a node ID. This member identifies the target node for the request. If 
 
 ### -field EventItem
 
-Pointer to the <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a> structure for this request
+Pointer to the <a href="audio.pcevent_item">PCEVENT_ITEM</a> structure for this request
 
 
 ### -field EventEntry
@@ -145,7 +145,7 @@ Pointer to the <a href="kernel.irp">IRP</a> containing the event request
 
 
 ## -remarks
-This is the structure that the port driver passes to the miniport driver's <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a> structure contains a function pointer to an event handler that takes a <b>PCEVENT_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCEVENT_REQUEST</b> structure, extracts the relevant information from the original event request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
+This is the structure that the port driver passes to the miniport driver's <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine. The <a href="audio.pcevent_item">PCEVENT_ITEM</a> structure contains a function pointer to an event handler that takes a <b>PCEVENT_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCEVENT_REQUEST</b> structure, extracts the relevant information from the original event request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
 In WDM audio, the target of an event request can be a pin instance but not a filter instance. The target can also include a node ID.
 
@@ -179,7 +179,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
 </dt>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a>
+<a href="audio.pcevent_item">PCEVENT_ITEM</a>
 </dt>
 <dt>
 <a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
@@ -195,5 +195,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCEVENT_REQUEST structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCEVENT_REQUEST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,7 +7,7 @@ old-location: kernel\rtluinttouchar.htm
 old-project: kernel
 ms.assetid: E47C3DA7-C9DD-47C6-A652-05D85989C85F
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlUIntToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

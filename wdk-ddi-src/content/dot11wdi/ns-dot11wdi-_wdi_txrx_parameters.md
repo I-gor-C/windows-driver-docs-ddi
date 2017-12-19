@@ -4,11 +4,11 @@ title: _WDI_TXRX_PARAMETERS
 author: windows-driver-content
 description: The WDI_TXRX_PARAMETERS structure defines the parameters that are passed down to the TXRX component.
 old-location: netvista\wdi_txrx_parameters.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 839a1c3d-ac9f-4723-a0f1-6610b763c32a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_TXRX_PARAMETERS, WDI_TXRX_PARAMETERS, *PWDI_TXRX_PARAMETERS
+ms.date: 12/14/2017
+ms.keywords: _WDI_TXRX_PARAMETERS, PWDI_TXRX_PARAMETERS, *PWDI_TXRX_PARAMETERS, WDI_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

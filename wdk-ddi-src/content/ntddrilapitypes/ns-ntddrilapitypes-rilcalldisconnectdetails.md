@@ -4,11 +4,11 @@ title: RILCALLDISCONNECTDETAILS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalldisconnectdetails.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c933e219-47bb-4896-b5ee-bd2fd59f4e8c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
+ms.date: 12/14/2017
+ms.keywords: RILCALLDISCONNECTDETAILS, LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

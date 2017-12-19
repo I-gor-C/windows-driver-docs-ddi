@@ -4,10 +4,10 @@ title: IOCTL_GET_PIPE_CONFIGURATION
 author: windows-driver-content
 description: Returns a description of every transfer pipe supported for a device.
 old-location: image\ioctl_get_pipe_configuration.htm
-old-project: image
+old-project: Image
 ms.assetid: 60d320d2-24ca-4c7a-bdcf-ed3322a02f00
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

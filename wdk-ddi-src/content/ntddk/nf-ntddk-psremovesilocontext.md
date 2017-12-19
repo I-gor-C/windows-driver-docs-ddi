@@ -7,7 +7,7 @@ old-location: kernel\psremovesilocontext.htm
 old-project: kernel
 ms.assetid: 3323EF1B-9EB3-4D56-A9A5-0A8397F8A235
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsRemoveSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

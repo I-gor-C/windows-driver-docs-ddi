@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_adapter_init_finished.htm
 old-project: display
 ms.assetid: cbce9e1b-2f84-4653-8d3d-e5243a1f0eee
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

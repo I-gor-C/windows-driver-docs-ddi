@@ -7,8 +7,8 @@ old-location: bltooth\channel_config_parameters_enhanced.htm
 old-project: bltooth
 ms.assetid: 4C28FD6E-A1DD-4887-95B0-6028ECA18204
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _CHANNEL_CONFIG_PARAMETERS_ENHANCED, CHANNEL_CONFIG_PARAMETERS_ENHANCED, *PCHANNEL_CONFIG_PARAMETERS_ENHANCED
+ms.date: 12/14/2017
+ms.keywords: _CHANNEL_CONFIG_PARAMETERS_ENHANCED, CHANNEL_CONFIG_PARAMETERS_ENHANCED, PCHANNEL_CONFIG_PARAMETERS_ENHANCED, *PCHANNEL_CONFIG_PARAMETERS_ENHANCED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

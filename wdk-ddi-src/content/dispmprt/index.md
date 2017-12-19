@@ -96,8 +96,8 @@ Dispmprt.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PDXGK_BRIGHTNESS_INTERFACE structure](ns-dispmprt-pdxgk_brightness_interface.md) | The DXGK_BRIGHTNESS_INTERFACE structure contains pointers to functions in the Panel Brightness Control Interface, which is implemented by the display miniport driver. |
-| [PDXGK_BRIGHTNESS_INTERFACE_2 structure](ns-dispmprt-pdxgk_brightness_interface_2.md) | Contains pointers to functions in the Panel Brightness Control Interface Version 2. Used by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers that support adaptive and smooth brightness control. |
+| [DXGK_BRIGHTNESS_INTERFACE structure](ns-dispmprt-dxgk_brightness_interface.md) | The DXGK_BRIGHTNESS_INTERFACE structure contains pointers to functions in the Panel Brightness Control Interface, which is implemented by the display miniport driver. |
+| [DXGK_BRIGHTNESS_INTERFACE_2 structure](ns-dispmprt-dxgk_brightness_interface_2.md) | Contains pointers to functions in the Panel Brightness Control Interface Version 2. Used by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers that support adaptive and smooth brightness control. |
 | [_DRIVER_INITIALIZATION_DATA structure](ns-dispmprt-_driver_initialization_data.md) | The DRIVER_INITIALIZATION_DATA structure contains pointers to functions implemented by the display miniport driver. |
 | [_DXGKRNL_INTERFACE structure](ns-dispmprt-_dxgkrnl_interface.md) | The DXGKRNL_INTERFACE structure contains a handle to a display adapter and a set of function pointers. |
 | [_DXGK_AGP_INTERFACE structure](ns-dispmprt-_dxgk_agp_interface.md) | The DXGK_AGP_INTERFACE structure contains pointers to functions in the AGP interface, which is implemented by the display port driver. |

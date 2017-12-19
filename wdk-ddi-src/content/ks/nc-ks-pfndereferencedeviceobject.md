@@ -7,7 +7,7 @@ old-location: stream\kstrdereferencedeviceobject.htm
 old-project: stream
 ms.assetid: 8d220b69-122c-4019-9c70-4c744503481d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ Returns STATUS_SUCCESS if the request is handled. Otherwise returns an appropria
 
 
 ## -remarks
-Minidrivers access this method through the <b>DereferenceDeviceObject</b> member of the <a href="stream.bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.
+Minidrivers access this method through the <b>DereferenceDeviceObject</b> member of the <a href="..\ks\ns-ks-bus_interface_reference.md">BUS_INTERFACE_REFERENCE</a> structure.
 
 When the PDO's reference count is 0, it becomes eligible for removal. Note that this condition does not guarantee removal.
 

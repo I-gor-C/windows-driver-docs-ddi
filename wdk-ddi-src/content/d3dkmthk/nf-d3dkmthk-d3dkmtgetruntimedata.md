@@ -7,7 +7,7 @@ old-location: display\d3dkmtgetruntimedata.htm
 old-project: display
 ms.assetid: a73ebde8-a1d5-4f97-8457-1f01244bb266
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTGetRuntimeData
 ms.prod: windows-hardware
 ms.technology: windows-devices

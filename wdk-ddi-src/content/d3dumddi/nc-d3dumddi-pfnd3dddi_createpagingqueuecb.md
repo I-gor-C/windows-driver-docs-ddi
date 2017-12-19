@@ -7,7 +7,7 @@ old-location: display\pfncreatepagingqueuecb.htm
 old-project: display
 ms.assetid: 99E4CFCF-7A0A-43A9-9E23-B7A9F9375690
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

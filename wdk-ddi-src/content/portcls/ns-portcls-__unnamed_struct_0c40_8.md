@@ -1,14 +1,14 @@
 ---
 UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_8
-title: PCNODE_DESCRIPTOR
+title: *PPCNODE_DESCRIPTOR
 author: windows-driver-content
 description: The PCNODE_DESCRIPTOR structure describes a node in the filter that a topology miniport driver implements.
 old-location: audio\pcnode_descriptor.htm
 old-project: audio
 ms.assetid: e83051ca-07fa-439d-8b0f-cbe6d84679a7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: PCNODE_DESCRIPTOR, PCNODE_DESCRIPTOR, *PPCNODE_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: *PPCNODE_DESCRIPTOR, *PPCNODE_DESCRIPTOR, PCNODE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -33,7 +33,7 @@ req.dll:
 req.irql: PASSIVE_LEVEL
 ---
 
-# PCNODE_DESCRIPTOR structure
+# *PPCNODE_DESCRIPTOR structure
 
 
 
@@ -63,7 +63,7 @@ Set to zero. No flag bits are currently defined.
 
 ### -field AutomationTable
 
-Pointer to the automation table, which is a structure of type <a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a>. This member can be set to <b>NULL</b> to indicate no automation support. The automation table specifies the handlers for the properties and events belonging to the node instance.
+Pointer to the automation table, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>. This member can be set to <b>NULL</b> to indicate no automation support. The automation table specifies the handlers for the properties and events belonging to the node instance.
 
 
 ### -field Type
@@ -107,7 +107,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565809">KSPROPERTY_TOPOLOGY_NAME</a>
 </dt>
 <dt>
-<a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>
 </dt>
 <dt>
 <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_9.md">PCFILTER_DESCRIPTOR</a>
@@ -117,5 +117,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCNODE_DESCRIPTOR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCNODE_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

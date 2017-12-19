@@ -7,7 +7,7 @@ old-location: storage\tapeclasslidiv.htm
 old-project: storage
 ms.assetid: 13c449c6-6e2b-434e-8948-62c8af237173
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: TapeClassLiDiv
 ms.prod: windows-hardware
 ms.technology: windows-devices

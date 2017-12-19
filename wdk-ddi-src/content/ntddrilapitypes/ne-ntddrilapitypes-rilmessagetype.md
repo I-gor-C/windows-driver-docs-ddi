@@ -4,10 +4,10 @@ title: RILMESSAGETYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessagetype.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 02960e7c-f1b2-4c28-9f9b-f180df3d9563
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMESSAGETYPE, RILMESSAGETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

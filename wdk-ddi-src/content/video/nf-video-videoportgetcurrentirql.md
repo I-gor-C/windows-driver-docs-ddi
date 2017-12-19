@@ -7,7 +7,7 @@ old-location: display\videoportgetcurrentirql.htm
 old-project: display
 ms.assetid: 04cbc86b-a977-43bd-a736-3a7258c671fd
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortGetCurrentIrql
 ms.prod: windows-hardware
 ms.technology: windows-devices

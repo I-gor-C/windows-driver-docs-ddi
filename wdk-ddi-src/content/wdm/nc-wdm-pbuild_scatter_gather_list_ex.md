@@ -7,8 +7,8 @@ old-location: kernel\buildscattergatherlistex.htm
 old-project: kernel
 ms.assetid: A1A89D52-5F39-45E4-AFBE-20DAD0E49442
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 12/15/2017
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -150,7 +150,7 @@ A pointer to a caller-allocated buffer into which the routine writes the scatter
 
 ### -param ScatterGatherBufferLength [in]
 
-The size, in bytes, of the buffer passed in the <i>ScatterGatherBuffer</i> parameter. The allocated buffer size must be large enough to contain the scatter/gather list, plus internal data that the operating system stores in this buffer. To calculate the required buffer size, call the <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a> or <a href="kernel.calculatescattergatherlist">CalculateScatterGatherList</a> routine.
+The size, in bytes, of the buffer passed in the <i>ScatterGatherBuffer</i> parameter. The allocated buffer size must be large enough to contain the scatter/gather list, plus internal data that the operating system stores in this buffer. To calculate the required buffer size, call the <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a> or <a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a> routine.
 
 
 ### -param DmaCompletionRoutine [in, optional]
@@ -206,7 +206,7 @@ If the driver supplies an <i>AdapterListControl</i> routine, the <b>DMA_SYNCHRON
 
 If the driver does not supply an <i>AdapterListControl</i> routine, the driver can use the allocated resources and scatter/gather list after <b>BuildScatterGatherListEx</b> returns. In this case, the driver must supply a valid, non-<b>NULL</b> <i>ScatterGatherList</i> pointer. In addition, after the driver-initiated DMA transfer completes, the driver must call the <a href="..\wdm\nc-wdm-pfree_adapter_object.md">FreeAdapterObject</a> routine to free the resources that <b>BuildScatterGatherListEx</b> allocated for the adapter object.
 
-<b>BuildScatterGatherListEx</b> is an extended version of the <a href="kernel.buildscattergatherlist">BuildScatterGatherList</a> routine. The following list summarizes the features that are available only in the extended version:
+<b>BuildScatterGatherListEx</b> is an extended version of the <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a> routine. The following list summarizes the features that are available only in the extended version:
 
 
 
@@ -272,7 +272,7 @@ DISPATCH_LEVEL
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
 </dt>
 <dt>
-<a href="kernel.calculatescattergatherlist">CalculateScatterGatherList</a>
+<a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a>
 </dt>
 <dt>
 <a href="kernel.dmacompletionroutine">DmaCompletionRoutine</a>
@@ -297,5 +297,5 @@ DISPATCH_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PBUILD_SCATTER_GATHER_LIST_EX callback function%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PBUILD_SCATTER_GATHER_LIST_EX callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

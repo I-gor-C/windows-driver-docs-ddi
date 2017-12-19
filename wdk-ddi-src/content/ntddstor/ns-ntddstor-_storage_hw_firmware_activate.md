@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_activate.htm
 old-project: storage
 ms.assetid: FCE1DE7B-CDFE-4533-90E7-A400EC236007
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_HW_FIRMWARE_ACTIVATE, PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,10 +4,10 @@ title: RIL_GetUiccLockState function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getuicclockstate.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: a831f49b-203e-4672-aced-679f0835dabb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetUiccLockState
 ms.prod: windows-hardware
 ms.technology: windows-devices

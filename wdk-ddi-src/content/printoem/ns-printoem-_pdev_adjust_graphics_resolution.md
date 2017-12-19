@@ -7,8 +7,8 @@ old-location: print\pdev_adjust_graphics_resolution.htm
 old-project: print
 ms.assetid: d6cebb0d-87ca-4e40-8a87-9579a1026567
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _PDEV_ADJUST_GRAPHICS_RESOLUTION, *PPDEV_ADJUST_GRAPHICS_RESOLUTION, PDEV_ADJUST_GRAPHICS_RESOLUTION
+ms.date: 12/14/2017
+ms.keywords: _PDEV_ADJUST_GRAPHICS_RESOLUTION, *PPDEV_ADJUST_GRAPHICS_RESOLUTION, PDEV_ADJUST_GRAPHICS_RESOLUTION, PPDEV_ADJUST_GRAPHICS_RESOLUTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

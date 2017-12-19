@@ -4,10 +4,10 @@ title: VmbChannelInitSetMaximumExternalData function
 author: windows-driver-content
 description: The VmbChannelInitSetMaximumExternalData function sets the maximum size and chain length of data that is described by a packet, but not directly sent in the packet. That is, the maximum size of the buffer described by an ExternalDataMdl.
 old-location: netvista\vmbchannelinitsetmaximumexternaldata.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 558E8162-7B1F-41AB-A04C-113E94C97DB6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelInitSetMaximumExternalData
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: acpi\acpi_eval_input_buffer_complex_v2.htm
 old-project: acpi
 ms.assetid: EAF78C14-7BE1-4441-B372-5AB0711E1F19
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2
+ms.date: 12/14/2017
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: kernel\tmrenametransactionmanager_.htm
 old-project: kernel
 ms.assetid: B4124FF4-50CC-474A-B42F-17BCF698AB59
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: TmRenameTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILUICCRESPONSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccresponse.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c584e508-b0f1-4809-808e-089e9a7fbcf9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE
+ms.date: 12/14/2017
+ms.keywords: RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE, LPRILUICCRESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicegetsystempoweraction.htm
 old-project: wdf
 ms.assetid: 5c4e44cd-94a3-4265-b195-7a5711d8035d
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceGetSystemPowerAction
 ms.prod: windows-hardware
 ms.technology: windows-devices

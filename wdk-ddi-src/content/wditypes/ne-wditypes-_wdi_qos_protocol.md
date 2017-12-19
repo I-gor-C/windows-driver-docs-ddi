@@ -4,10 +4,10 @@ title: _WDI_QOS_PROTOCOL
 author: windows-driver-content
 description: The WDI_QOS_PROTOCOL enumeration defines Wi-Fi QOS protocols.
 old-location: netvista\wdi_qos_protocol.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 39466BF7-0517-4113-9C94-26D8691CCCC1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_QOS_PROTOCOL, WDI_QOS_PROTOCOL
 ms.prod: windows-hardware
 ms.technology: windows-devices

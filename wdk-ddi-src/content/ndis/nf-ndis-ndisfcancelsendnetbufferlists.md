@@ -4,10 +4,10 @@ title: NdisFCancelSendNetBufferLists function
 author: windows-driver-content
 description: Filter drivers call the NdisFCancelSendNetBufferLists function to cancel the transmission of network data.
 old-location: netvista\ndisfcancelsendnetbufferlists.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 358b1aa9-4bfd-4bed-94f7-1b021c732a02
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: NdisFCancelSendNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,7 +75,7 @@ None
 ## -remarks
 A filter driver can cancel the send requests that it originates or pass on the cancellation requests
     from overlying drivers. To cancel a send request from an overlying driver, NDIS calls the filter drivers 
-    <a href="netvista.filtercancelsendnetbufferlists">
+    <a href="..\ndis\nc-ndis-filter_cancel_send_net_buffer_lists.md">
     FilterCancelSendNetBufferLists</a> function.
 
 A filter driver can call the 
@@ -165,7 +165,7 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 </dt>
 <dt>
-<a href="netvista.filtercancelsendnetbufferlists">
+<a href="..\ndis\nc-ndis-filter_cancel_send_net_buffer_lists.md">
    FilterCancelSendNetBufferLists</a>
 </dt>
 <dt>
@@ -184,5 +184,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFCancelSendNetBufferLists function%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFCancelSendNetBufferLists function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

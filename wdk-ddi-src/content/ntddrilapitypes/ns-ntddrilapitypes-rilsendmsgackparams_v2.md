@@ -4,11 +4,11 @@ title: RILSENDMSGACKPARAMS_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendmsgackparams_v2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 3c05c1a0-339e-447f-b0df-18303ee63f98
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS, LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

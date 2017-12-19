@@ -37,9 +37,16 @@ Fltkernel.h contain these programming interfaces:
 | [FltCancelIo function](nf-fltkernel-fltcancelio.md) | The FltCancelIo routine cancels an I/O operation. |
 | [FltCancellableWaitForMultipleObjects function](nf-fltkernel-fltcancellablewaitformultipleobjects.md) | The FltCancellableWaitForMultipleObjects executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects. |
 | [FltCancellableWaitForSingleObject function](nf-fltkernel-fltcancellablewaitforsingleobject.md) | The FltCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object. |
+| [FltCbdqDisable function](nf-fltkernel-fltcbdqdisable.md) | FltCbdqDisable disables a minifilter driver's callback data queue. |
+| [FltCbdqEnable function](nf-fltkernel-fltcbdqenable.md) | FltCbdqEnable enables a callback data queue that was disabled by a previous call to FltCbdqDisable. |
+| [FltCbdqInitialize function](nf-fltkernel-fltcbdqinitialize.md) | FltCbdqInitialize initializes a minifilter driver's callback data queue dispatch table. |
+| [FltCbdqInsertIo function](nf-fltkernel-fltcbdqinsertio.md) | FltCbdqInsertIo inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue. |
+| [FltCbdqRemoveIo function](nf-fltkernel-fltcbdqremoveio.md) | FltCbdqRemoveIo removes a particular item from a minifilter driver's callback data queue. |
+| [FltCbdqRemoveNextIo function](nf-fltkernel-fltcbdqremovenextio.md) | FltCbdqRemoveNextIo removes the next matching item in a minifilter driver's callback data queue. |
 | [FltCheckAndGrowNameControl function](nf-fltkernel-fltcheckandgrownamecontrol.md) | The FltCheckAndGrowNameControl routine checks whether the buffer in a FLT_NAME_CONTROL structure is large enough to hold the specified number of bytes. If not, FltCheckAndGrowNameControl replaces it with a larger system-allocated buffer. |
 | [FltCheckLockForReadAccess function](nf-fltkernel-fltchecklockforreadaccess.md) | The FltCheckLockForReadAccess routine determines whether the caller has read access to a locked byte range of a file. |
 | [FltCheckLockForWriteAccess function](nf-fltkernel-fltchecklockforwriteaccess.md) | The FltCheckLockForWriteAccess routine determines whether the caller has write access to a locked byte range of a file. |
+| [FltCheckOplock function](nf-fltkernel-fltcheckoplock.md) | A minifilter driver calls FltCheckOplock to synchronize the callback data structure for an IRP-based file I/O operation with the file's current opportunistic lock (oplock) state. |
 | [FltCheckOplockEx function](nf-fltkernel-fltcheckoplockex.md) | A minifilter driver calls the FltCheckOplockEx routine to synchronize the callback data structure for an IRP-based file I/O operation that has the current opportunistic lock (oplock) state of the file. |
 | [FltClearCallbackDataDirty function](nf-fltkernel-fltclearcallbackdatadirty.md) | The FltClearCallbackDataDirty routine clears the callback dirty flag in a callback data structure. |
 | [FltClearCancelCompletion function](nf-fltkernel-fltclearcancelcompletion.md) | FltClearCancelCompletion clears a cancel routine that was specified for an I/O operation. |
@@ -295,3 +302,11 @@ Fltkernel.h contain these programming interfaces:
 | [_FLT_RELATED_OBJECTS structure](ns-fltkernel-_flt_related_objects~r1.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
 | [_FLT_TAG_DATA_BUFFER structure](ns-fltkernel-_flt_tag_data_buffer.md) | The FLT_TAG_DATA_BUFFER structure contains information about a reparse point tag. |
 | [_FLT_VOLUME_PROPERTIES structure](ns-fltkernel-_flt_volume_properties.md) | The FLT_VOLUME_PROPERTIES structure is passed as a parameter to FltGetVolumeProperties. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [FltAcquirePushLockExclusive macro](nf-fltkernel-fltacquirepushlockexclusive.md) | The FltAcquirePushLockExclusive routine acquires the given push lock for exclusive access by the calling thread. |
+| [FltAcquirePushLockShared macro](nf-fltkernel-fltacquirepushlockshared.md) | The FltAcquirePushLockShared routine acquires the given push lock for shared access by the calling thread. |
+| [FltReleasePushLock macro](nf-fltkernel-fltreleasepushlock.md) | The FltReleasePushLock routine releases a specified push lock owned by the current thread. |

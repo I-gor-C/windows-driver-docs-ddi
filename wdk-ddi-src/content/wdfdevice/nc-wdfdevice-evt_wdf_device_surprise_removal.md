@@ -7,7 +7,7 @@ old-location: wdf\evtdevicesurpriseremoval.htm
 old-project: wdf
 ms.assetid: 0fa0eb7e-7fbb-4838-b1d7-ef5a9d5024d4
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices

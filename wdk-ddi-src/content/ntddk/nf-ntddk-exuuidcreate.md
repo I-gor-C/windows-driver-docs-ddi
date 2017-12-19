@@ -7,7 +7,7 @@ old-location: kernel\exuuidcreate.htm
 old-project: kernel
 ms.assetid: e85fe5fa-b11e-41ff-a355-4da0394377d1
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: ExUuidCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices

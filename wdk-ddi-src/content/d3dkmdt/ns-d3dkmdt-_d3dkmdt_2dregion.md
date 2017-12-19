@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_2dregion.htm
 old-project: display
 ms.assetid: 24f703c5-d025-4233-a32d-7cb8bcb5c6b7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_2DREGION, D3DKMDT_2DREGION
 ms.prod: windows-hardware
 ms.technology: windows-devices

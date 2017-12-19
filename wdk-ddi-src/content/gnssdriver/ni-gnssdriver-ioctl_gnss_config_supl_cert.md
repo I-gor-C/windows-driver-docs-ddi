@@ -7,7 +7,7 @@ old-location: sensors\ioctl_gnss_config_supl_cert.htm
 old-project: sensors
 ms.assetid: 34095934-26C1-4855-9ED9-71627E88A903
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ The <b>IOCTL_GNSS_CONFIG_SUPL_CERT</b> control code is used by the GNSS adapter 
 ## -ioctlparameters
 
 ### -input-buffer
-Pointer to a <a href="sensors.gnss_supl_cert_config">GNSS_SUPL_CERT_CONFIG</a> structure.
+Pointer to a <a href="..\gnssdriver\ns-gnssdriver-gnss_supl_cert_config.md">GNSS_SUPL_CERT_CONFIG</a> structure.
 
 
 ### -input-buffer-length
@@ -137,5 +137,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_CONFIG_SUPL_CERT control code%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_CONFIG_SUPL_CERT control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

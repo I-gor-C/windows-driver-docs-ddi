@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bthx_hci_write.htm
 old-project: bltooth
 ms.assetid: 77BBF6AC-F5FA-4795-8898-6DC02983F573
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
+ms.date: 12/14/2017
+ms.keywords: _BTHX_SCO_SUPPORT, PBTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

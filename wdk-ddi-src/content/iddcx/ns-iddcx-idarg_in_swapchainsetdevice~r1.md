@@ -7,7 +7,7 @@ old-location: display\idarg_in_swapchainsetdevice.htm
 old-project: display
 ms.assetid: afd52391-5b18-4b86-9d35-2d9ed3e20256
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDARG_IN_SWAPCHAINSETDEVICE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

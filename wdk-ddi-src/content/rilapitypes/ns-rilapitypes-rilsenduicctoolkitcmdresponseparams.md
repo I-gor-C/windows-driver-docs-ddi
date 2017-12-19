@@ -4,10 +4,10 @@ title: RILSENDUICCTOOLKITCMDRESPONSEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsenduicctoolkitcmdresponseparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ae203f95-3568-4c78-b799-e1eef6218c7f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

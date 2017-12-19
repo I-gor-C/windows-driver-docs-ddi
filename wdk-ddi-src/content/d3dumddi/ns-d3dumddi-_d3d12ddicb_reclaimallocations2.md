@@ -7,7 +7,7 @@ old-location: display\d3d12ddicb_reclaimallocations2.htm
 old-project: display
 ms.assetid: B5ADCD5D-301C-4B02-A4B2-90A81A5FBBC9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D12DDICB_RECLAIMALLOCATIONS2, D3D12DDICB_RECLAIMALLOCATIONS2
 ms.prod: windows-hardware
 ms.technology: windows-devices

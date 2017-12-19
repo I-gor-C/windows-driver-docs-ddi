@@ -7,7 +7,7 @@ old-location: display\d3dkmt_umdfilenameinfo.htm
 old-project: display
 ms.assetid: 456aef5a-f297-4670-8a83-b468569d23ad
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_UMDFILENAMEINFO, D3DKMT_UMDFILENAMEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

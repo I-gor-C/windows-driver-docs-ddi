@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongmult.htm
 old-project: kernel
 ms.assetid: E5FE5EDB-D11D-4EF7-9CEA-CF059398A063
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlLongLongMult
 ms.prod: windows-hardware
 ms.technology: windows-devices

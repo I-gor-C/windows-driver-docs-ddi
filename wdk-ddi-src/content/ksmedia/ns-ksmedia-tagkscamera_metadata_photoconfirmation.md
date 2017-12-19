@@ -7,8 +7,8 @@ old-location: stream\kscamera_metadata_photoconfirmation.htm
 old-project: stream
 ms.assetid: FA3365DC-B604-468E-AACD-AC006D2B4EAF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION
+ms.date: 12/14/2017
+ms.keywords: tagKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, PKSCAMERA_METADATA_PHOTOCONFIRMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

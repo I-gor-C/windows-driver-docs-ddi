@@ -7,7 +7,7 @@ old-location: print\gdigetdevmodeforpage.htm
 old-project: print
 ms.assetid: 3410e8b1-820f-4892-8d26-d803e3f943da
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: GdiGetDevmodeForPage
 ms.prod: windows-hardware
 ms.technology: windows-devices

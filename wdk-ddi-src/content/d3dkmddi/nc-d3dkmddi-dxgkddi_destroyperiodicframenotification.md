@@ -7,7 +7,7 @@ old-location: display\dxgkddi_destroyperiodicframenotification.htm
 old-project: display
 ms.assetid: 4C6B6FB2-A699-40F5-ACA3-62E8620E99AB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

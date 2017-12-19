@@ -7,7 +7,7 @@ old-location: display\iddcx_endpoint_version.htm
 old-project: display
 ms.assetid: ad6220e3-9b6a-4a46-978b-31edfb2c8b9b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_ENDPOINT_VERSION,
 ms.prod: windows-hardware
 ms.technology: windows-devices

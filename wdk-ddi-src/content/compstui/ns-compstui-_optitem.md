@@ -7,8 +7,8 @@ old-location: print\optitem.htm
 old-project: print
 ms.assetid: 983f9774-d498-473a-bdfb-ec55cc4298cf
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OPTITEM, *POPTITEM, OPTITEM
+ms.date: 12/14/2017
+ms.keywords: _OPTITEM, POPTITEM, OPTITEM, *POPTITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

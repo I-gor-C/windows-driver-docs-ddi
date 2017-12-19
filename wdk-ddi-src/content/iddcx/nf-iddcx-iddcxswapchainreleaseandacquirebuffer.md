@@ -7,7 +7,7 @@ old-location: display\iddcxswapchainreleaseandacquirebuffer.htm
 old-project: display
 ms.assetid: f9b0cf3f-cbb6-4b44-81c1-b60ae525ec17
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IddCxSwapChainReleaseAndAcquireBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\ksqueryinformationfile.htm
 old-project: stream
 ms.assetid: db1cce43-1eae-4af0-bb61-a5c295e3d325
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsQueryInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices

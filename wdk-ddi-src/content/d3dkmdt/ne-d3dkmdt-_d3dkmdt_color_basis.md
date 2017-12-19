@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_color_basis.htm
 old-project: display
 ms.assetid: c2a8973d-bdab-44a6-b88b-482355ada1e5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_COLOR_BASIS, D3DKMDT_COLOR_BASIS
 ms.prod: windows-hardware
 ms.technology: windows-devices

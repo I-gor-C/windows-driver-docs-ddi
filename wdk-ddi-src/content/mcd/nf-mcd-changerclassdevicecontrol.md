@@ -7,7 +7,7 @@ old-location: storage\changerclassdevicecontrol.htm
 old-project: storage
 ms.assetid: 9107fa7b-b061-4505-aef7-be04587a4199
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: ChangerClassDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices

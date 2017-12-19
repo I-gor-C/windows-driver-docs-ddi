@@ -7,8 +7,8 @@ old-location: storage\mpio_timers_counters.htm
 old-project: storage
 ms.assetid: edbca8b0-53c1-4538-ac96-52238d75168d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_TIMERS_COUNTERS, *PMPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS
+ms.date: 12/15/2017
+ms.keywords: _MPIO_TIMERS_COUNTERS, PMPIO_TIMERS_COUNTERS, *PMPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

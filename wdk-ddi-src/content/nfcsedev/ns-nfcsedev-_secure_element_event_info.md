@@ -7,8 +7,8 @@ old-location: nfpdrivers\secure_element_event_info.htm
 old-project: nfpdrivers
 ms.assetid: 72B31C26-89D3-49B2-A404-E6F096D0A334
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_EVENT_INFO, SECURE_ELEMENT_EVENT_INFO, *PSECURE_ELEMENT_EVENT_INFO
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_EVENT_INFO, SECURE_ELEMENT_EVENT_INFO, *PSECURE_ELEMENT_EVENT_INFO, PSECURE_ELEMENT_EVENT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

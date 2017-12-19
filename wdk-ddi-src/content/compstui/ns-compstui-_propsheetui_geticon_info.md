@@ -7,8 +7,8 @@ old-location: print\propsheetui_geticon_info.htm
 old-project: print
 ms.assetid: 23c06f1c-0c8f-4055-a997-1ff94c4a541e
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _PROPSHEETUI_GETICON_INFO, PROPSHEETUI_GETICON_INFO, *PPROPSHEETUI_GETICON_INFO
+ms.date: 12/14/2017
+ms.keywords: _PROPSHEETUI_GETICON_INFO, PROPSHEETUI_GETICON_INFO, PPROPSHEETUI_GETICON_INFO, *PPROPSHEETUI_GETICON_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

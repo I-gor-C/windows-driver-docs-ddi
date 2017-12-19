@@ -7,8 +7,8 @@ old-location: stream\stream_data_intersect_info.htm
 old-project: stream
 ms.assetid: 92a37945-4b7c-4d10-a071-ae1584590692
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO, *PSTREAM_DATA_INTERSECT_INFO
+ms.date: 12/14/2017
+ms.keywords: _STREAM_DATA_INTERSECT_INFO, *PSTREAM_DATA_INTERSECT_INFO, PSTREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

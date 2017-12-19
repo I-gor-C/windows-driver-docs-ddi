@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_range.htm
 old-project: display
 ms.assetid: B3A8F252-D56D-4F20-A0DE-2A29904BC907
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_RANGE, D3D12DDI_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

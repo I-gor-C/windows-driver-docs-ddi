@@ -7,8 +7,8 @@ old-location: kernel\silo_monitor_terminate_callback.htm
 old-project: kernel
 ms.assetid: 1F87D6AC-3603-4A34-BAAB-8B43ADF9E595
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.date: 12/15/2017
+ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

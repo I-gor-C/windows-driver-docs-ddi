@@ -7,7 +7,7 @@ old-location: kernel\rtllongptrtoint8.htm
 old-project: kernel
 ms.assetid: 1C8FA483-3713-464E-91B7-0A8D754F5D16
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlLongPtrToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices

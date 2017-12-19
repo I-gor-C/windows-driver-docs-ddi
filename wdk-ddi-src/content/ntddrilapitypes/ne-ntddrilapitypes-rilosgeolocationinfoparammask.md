@@ -4,10 +4,10 @@ title: RILOSGEOLOCATIONINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilosgeolocationinfoparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9a155a35-d0fc-45bd-94fb-16200bcab1a6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILOSGEOLOCATIONINFOPARAMMASK, RILOSGEOLOCATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

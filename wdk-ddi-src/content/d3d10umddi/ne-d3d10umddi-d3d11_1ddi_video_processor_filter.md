@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_filter.htm
 old-project: display
 ms.assetid: 189ad1c2-3828-468a-a99d-12d85da6bf63
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FILTER, D3D11_1DDI_VIDEO_PROCESSOR_FILTER
 ms.prod: windows-hardware
 ms.technology: windows-devices

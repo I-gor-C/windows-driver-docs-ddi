@@ -7,7 +7,7 @@ old-location: kernel\auxklibinitialize.htm
 old-project: kernel
 ms.assetid: 7e15cbe1-17f7-4df7-9273-9a365d309d03
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: AuxKlibInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

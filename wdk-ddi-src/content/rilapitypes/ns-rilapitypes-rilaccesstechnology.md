@@ -4,10 +4,10 @@ title: RILACCESSTECHNOLOGY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilaccesstechnology_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e0bcbc0c-8783-43b2-a4af-3dad4aaff142
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY, *LPRILACCESSTECHNOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices

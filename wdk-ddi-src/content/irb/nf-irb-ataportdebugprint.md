@@ -7,7 +7,7 @@ old-location: storage\ataportdebugprint.htm
 old-project: storage
 ms.assetid: 2a93d30f-4aa0-46b9-b9c7-cc15c62f3053
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: AtaPortDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices

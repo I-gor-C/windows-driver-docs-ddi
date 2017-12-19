@@ -4,11 +4,11 @@ title: RILIMSFAILURE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimsfailure.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8be10470-3761-4120-8987-00d6fcc9a989
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILIMSFAILURE, *LPRILIMSFAILURE, RILIMSFAILURE
+ms.date: 12/14/2017
+ms.keywords: RILIMSFAILURE, RILIMSFAILURE, LPRILIMSFAILURE, *LPRILIMSFAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,11 +4,11 @@ title: RILNOTIFICATIONPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnotificationparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c89c7df3-7ccb-46db-adcc-22c49cae5108
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS, LPRILNOTIFICATIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

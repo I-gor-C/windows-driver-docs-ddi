@@ -7,7 +7,7 @@ old-location: storage\ataportcopymemory.htm
 old-project: storage
 ms.assetid: f5e449f8-9ff9-4d3d-9a62-3e985b57bd50
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: AtaPortCopyMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices

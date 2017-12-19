@@ -4,11 +4,11 @@ title: _UFX_HARDWARE_FAILURE_CONTEXT
 author: windows-driver-content
 description: The UFX_HARDWARE_FAILURE_CONTEXT structure is used to define controller-specific hardware failure properties.
 old-location: buses\ufx_hardware_failure_context.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: CA0268F3-44F0-4F64-A88D-9A2BBDE768EA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+ms.date: 12/14/2017
+ms.keywords: _UFX_HARDWARE_FAILURE_CONTEXT, PUFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

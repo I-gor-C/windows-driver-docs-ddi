@@ -4,10 +4,10 @@ title: RILCALLRTTACTION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallrttaction.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c080c4da-097d-4ae3-b1ca-96d9b5b6e8c9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLRTTACTION, RILCALLRTTACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\sm_addlink_out.htm
 old-project: storage
 ms.assetid: 1c69b8b0-fe73-4e13-be09-70b99e0e3f32
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_AddLink_OUT, *PSM_AddLink_OUT, SM_AddLink_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_AddLink_OUT, SM_AddLink_OUT, *PSM_AddLink_OUT, PSM_AddLink_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

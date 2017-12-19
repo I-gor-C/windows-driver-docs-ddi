@@ -7,8 +7,8 @@ old-location: print\pspinfo.htm
 old-project: print
 ms.assetid: 80a15ee4-e160-49fc-9c61-a14b14d19751
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _PSPINFO, PSPINFO, *PPSPINFO
+ms.date: 12/14/2017
+ms.keywords: _PSPINFO, *PPSPINFO, PPSPINFO, PSPINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

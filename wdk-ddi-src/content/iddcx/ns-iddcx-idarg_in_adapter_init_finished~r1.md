@@ -7,7 +7,7 @@ old-location: display\idarg_in_adapter_init_finished.htm
 old-project: display
 ms.assetid: 7ff07613-7c40-4310-856a-a44dc97c7f20
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDARG_IN_ADAPTER_INIT_FINISHED,
 ms.prod: windows-hardware
 ms.technology: windows-devices

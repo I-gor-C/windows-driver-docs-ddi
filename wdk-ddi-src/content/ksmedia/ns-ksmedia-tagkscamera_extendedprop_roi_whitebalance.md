@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_roi_whitebalance.htm
 old-project: stream
 ms.assetid: 16BDC61E-390C-4D79-A8D0-049404974733
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
+ms.date: 12/14/2017
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

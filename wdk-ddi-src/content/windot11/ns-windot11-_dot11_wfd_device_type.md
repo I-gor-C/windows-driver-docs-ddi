@@ -4,11 +4,11 @@ title: _DOT11_WFD_DEVICE_TYPE
 author: windows-driver-content
 description: The DOT11_WFD_DEVICE_TYPE structure is used to specify primary and secondary device types.
 old-location: netvista\dot11_wfd_device_type.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4AE7C35B-D2EA-4987-8195-EDD472C39681
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE
+ms.date: 12/14/2017
+ms.keywords: _DOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE, PDOT11_WFD_DEVICE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

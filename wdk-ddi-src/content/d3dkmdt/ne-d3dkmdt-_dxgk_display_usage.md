@@ -7,8 +7,8 @@ old-location: display\dxgk_display_usage.htm
 old-project: display
 ms.assetid: 07B51679-4E9B-4360-AA4A-D5BD9BADB4FC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE, *PDXGK_DISPLAY_USAGE
+ms.date: 12/15/2017
+ms.keywords: _DXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE, PDXGK_DISPLAY_USAGE, *PDXGK_DISPLAY_USAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

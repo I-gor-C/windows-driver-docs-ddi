@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_find_new_devices.htm
 old-project: storage
 ms.assetid: 359169a3-602d-4910-badf-c777c1a804e7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

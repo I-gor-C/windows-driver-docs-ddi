@@ -4,10 +4,10 @@ title: WriteIoSpace function
 author: windows-driver-content
 description: The WriteIoSpace function writes to the system I/O locations.
 old-location: debugger\writeiospace.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 4d1a3df6-2440-46b7-8e73-f017f5fcfa51
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: WriteIoSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices

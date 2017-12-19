@@ -7,7 +7,7 @@ old-location: display\videoportgetdmacontext.htm
 old-project: display
 ms.assetid: 1bd9a156-a366-4f35-956f-d195c41ae722
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortGetDmaContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\dxgk_queryphysicaladaptercapsin.htm
 old-project: display
 ms.assetid: 4B01E62F-5E5B-4316-B237-EADAA3C72242
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_QUERYPHYSICALADAPTERCAPSIN, DXGK_QUERYPHYSICALADAPTERCAPSIN
 ms.prod: windows-hardware
 ms.technology: windows-devices

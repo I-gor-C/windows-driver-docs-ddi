@@ -7,8 +7,8 @@ old-location: print\optcombo.htm
 old-project: print
 ms.assetid: B1F5A79A-8F64-4B7B-ADB4-BDD8EC17F22E
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OPTCOMBO, *POPTCOMBO, OPTCOMBO
+ms.date: 12/14/2017
+ms.keywords: _OPTCOMBO, POPTCOMBO, OPTCOMBO, *POPTCOMBO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

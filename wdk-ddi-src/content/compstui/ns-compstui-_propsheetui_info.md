@@ -7,8 +7,8 @@ old-location: print\propsheetui_info.htm
 old-project: print
 ms.assetid: b21c3ee1-13e8-4796-af45-6ba60e84df4e
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _PROPSHEETUI_INFO, *PPROPSHEETUI_INFO, PROPSHEETUI_INFO
+ms.date: 12/14/2017
+ms.keywords: _PROPSHEETUI_INFO, PPROPSHEETUI_INFO, PROPSHEETUI_INFO, *PPROPSHEETUI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

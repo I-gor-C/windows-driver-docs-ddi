@@ -4,10 +4,10 @@ title: RILEVDOKIND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilevdokind.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9887342b-85bd-4161-b9de-06ceb56014e5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILEVDOKIND, RILEVDOKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices

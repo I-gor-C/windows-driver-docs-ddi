@@ -7,7 +7,7 @@ old-location: display\dxgkddi_settimingsfromvidpn.htm
 old-project: display
 ms.assetid: 7E991251-1738-41AD-83D6-60DD7E183D68
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

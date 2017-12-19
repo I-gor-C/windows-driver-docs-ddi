@@ -7,7 +7,7 @@ old-location: display\videoportgetmdl.htm
 old-project: display
 ms.assetid: 03ec6323-a3f9-485d-80c8-92ac99d8e73a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortGetMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices

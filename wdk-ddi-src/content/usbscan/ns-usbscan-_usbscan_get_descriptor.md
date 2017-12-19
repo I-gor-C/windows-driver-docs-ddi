@@ -4,11 +4,11 @@ title: _USBSCAN_GET_DESCRIPTOR
 author: windows-driver-content
 description: The USBSCAN_GET_DESCRIPTOR structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_USB_DESCRIPTOR.
 old-location: image\usbscan_get_descriptor.htm
-old-project: image
+old-project: Image
 ms.assetid: 250c0022-ceaa-40c6-8431-9ec53438fdb9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBSCAN_GET_DESCRIPTOR, *PUSBSCAN_GET_DESCRIPTOR, USBSCAN_GET_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: _USBSCAN_GET_DESCRIPTOR, *PUSBSCAN_GET_DESCRIPTOR, PUSBSCAN_GET_DESCRIPTOR, USBSCAN_GET_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

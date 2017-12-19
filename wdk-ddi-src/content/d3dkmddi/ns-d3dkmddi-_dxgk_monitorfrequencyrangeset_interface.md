@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorfrequencyrangeset_interface.htm
 old-project: display
 ms.assetid: 4a973ecd-341f-4766-9fed-f56e55f8deae
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DXGK_MONITORFREQUENCYRANGESET_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices

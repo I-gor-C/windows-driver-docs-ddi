@@ -4,11 +4,11 @@ title: RILEMERGENCYNUMBER
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencynumber.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 1725c893-1c36-40d2-99d7-e163020fc4fc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILEMERGENCYNUMBER, *LPRILEMERGENCYNUMBER, RILEMERGENCYNUMBER
+ms.date: 12/14/2017
+ms.keywords: RILEMERGENCYNUMBER, *LPRILEMERGENCYNUMBER, LPRILEMERGENCYNUMBER, RILEMERGENCYNUMBER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

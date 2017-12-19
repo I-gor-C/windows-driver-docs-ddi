@@ -7,7 +7,7 @@ old-location: display\dxgkddi_updatehwcontextstate.htm
 old-project: display
 ms.assetid: 1187A302-CD7D-418E-B48F-74D1FF29C991
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

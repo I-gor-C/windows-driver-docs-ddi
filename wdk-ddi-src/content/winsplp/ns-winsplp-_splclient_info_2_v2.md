@@ -7,7 +7,7 @@ old-location: print\splclient_info_2_winxp.htm
 old-project: print
 ms.assetid: 48BD760E-6017-49B2-854F-7F48671974F3
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: _SPLCLIENT_INFO_2_V2, SPLCLIENT_INFO_2_WINXP
 ms.prod: windows-hardware
 ms.technology: windows-devices

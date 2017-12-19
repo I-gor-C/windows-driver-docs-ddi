@@ -4,11 +4,11 @@ title: RILGBATOKEN
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgbatoken.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f842d945-1d1e-4f0b-9cc9-82a8401c170a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILGBATOKEN, RILGBATOKEN, *LPRILGBATOKEN
+ms.date: 12/14/2017
+ms.keywords: RILGBATOKEN, LPRILGBATOKEN, *LPRILGBATOKEN, RILGBATOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

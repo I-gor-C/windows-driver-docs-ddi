@@ -7,8 +7,8 @@ old-location: storage\mpio_get_descriptor.htm
 old-project: storage
 ms.assetid: cabd2a6d-20d0-4499-8494-7ad746f2d915
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_GET_DESCRIPTOR, *PMPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR
+ms.date: 12/15/2017
+ms.keywords: _MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR, *PMPIO_GET_DESCRIPTOR, PMPIO_GET_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

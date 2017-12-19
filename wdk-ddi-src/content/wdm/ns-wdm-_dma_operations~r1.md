@@ -7,7 +7,7 @@ old-location: kernel\dma_operations.htm
 old-project: kernel
 ms.assetid: b4a5d830-252b-410e-be2c-390371af971c
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _DMA_OPERATIONS, DMA_OPERATIONS, *PDMA_OPERATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -149,17 +149,17 @@ A pointer to a system-defined routine that frees map registers and a scatter/gat
 
 ### -field CalculateScatterGatherList
 
-A pointer to a system-defined routine that determines the buffer size needed to hold the scatter/gather list that describes an I/O data  buffer. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.calculatescattergatherlist">CalculateScatterGatherList</a>.
+A pointer to a system-defined routine that determines the buffer size needed to hold the scatter/gather list that describes an I/O data  buffer. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a>.
 
 
 ### -field BuildScatterGatherList
 
-A pointer to a system-defined routine that allocates map registers and creates a scatter/gather list for DMA in a driver-supplied buffer. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.buildscattergatherlist">BuildScatterGatherList</a>.
+A pointer to a system-defined routine that allocates map registers and creates a scatter/gather list for DMA in a driver-supplied buffer. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a>.
 
 
 ### -field BuildMdlFromScatterGatherList
 
-A pointer to a system-defined routine that builds an MDL corresponding to a scatter/gather list. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.buildmdlfromscattergatherlist">BuildMdlFromScatterGatherList</a>.
+A pointer to a system-defined routine that builds an MDL corresponding to a scatter/gather list. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="..\wdm\nc-wdm-pbuild_mdl_from_scatter_gather_list.md">BuildMdlFromScatterGatherList</a>.
 
 
 ### -field GetDmaAdapterInfo
@@ -169,7 +169,7 @@ A pointer to a system-defined routine that describes the capabilities of a bus-m
 
 ### -field GetDmaTransferInfo
 
-A pointer to a system-defined routine that describes the allocation requirements for a scatter/gather list. This routine replaces <a href="kernel.calculatescattergatherlist">CalculateScatterGatherList</a>. <b>GetDmaTransferInfo</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>.
+A pointer to a system-defined routine that describes the allocation requirements for a scatter/gather list. This routine replaces <a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a>. <b>GetDmaTransferInfo</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>.
 
 
 ### -field InitializeDmaTransferContext
@@ -271,16 +271,16 @@ Header
 <a href="..\wdm\nc-wdm-pallocate_common_buffer_ex.md">AllocateCommonBufferEx</a>
 </dt>
 <dt>
-<a href="kernel.buildmdlfromscattergatherlist">BuildMdlFromScatterGatherList</a>
+<a href="..\wdm\nc-wdm-pbuild_mdl_from_scatter_gather_list.md">BuildMdlFromScatterGatherList</a>
 </dt>
 <dt>
-<a href="kernel.buildscattergatherlist">BuildScatterGatherList</a>
+<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
 </dt>
 <dt>
-<a href="kernel.calculatescattergatherlist">CalculateScatterGatherList</a>
+<a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAdapterChannel</a>
@@ -353,5 +353,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DMA_OPERATIONS structure%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DMA_OPERATIONS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

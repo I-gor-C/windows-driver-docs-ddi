@@ -7,8 +7,8 @@ old-location: kernel\pep_ppm_park_selection_v2.htm
 old-project: kernel
 ms.assetid: D1EFB30D-E8E2-4585-AB0E-B7903F4D6656
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _PEP_PPM_PARK_SELECTION_V2, PEP_PPM_PARK_SELECTION_V2, *PPEP_PPM_PARK_SELECTION_V2
+ms.date: 12/15/2017
+ms.keywords: _PEP_PPM_PARK_SELECTION_V2, PEP_PPM_PARK_SELECTION_V2, *PPEP_PPM_PARK_SELECTION_V2, PPEP_PPM_PARK_SELECTION_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

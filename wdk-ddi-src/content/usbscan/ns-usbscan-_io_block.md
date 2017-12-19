@@ -4,11 +4,11 @@ title: _IO_BLOCK
 author: windows-driver-content
 description: The IO_BLOCK structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_READ_REGISTERS or IOCTL_WRITE_REGISTERS.
 old-location: image\io_block.htm
-old-project: image
+old-project: Image
 ms.assetid: aa1ccffc-c742-415d-8b72-fef247dff03c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _IO_BLOCK, *PIO_BLOCK, IO_BLOCK
+ms.date: 12/14/2017
+ms.keywords: _IO_BLOCK, PIO_BLOCK, IO_BLOCK, *PIO_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

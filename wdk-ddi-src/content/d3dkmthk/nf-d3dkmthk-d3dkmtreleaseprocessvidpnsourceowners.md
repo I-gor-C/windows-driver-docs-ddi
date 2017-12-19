@@ -7,7 +7,7 @@ old-location: display\d3dkmtreleaseprocessvidpnsourceowners.htm
 old-project: display
 ms.assetid: 65fa0654-25b5-4ead-ac9e-0eb0f404259a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTReleaseProcessVidPnSourceOwners
 ms.prod: windows-hardware
 ms.technology: windows-devices

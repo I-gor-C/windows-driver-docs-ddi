@@ -7,7 +7,7 @@ old-location: display\dxgk_displaydetectcontroltype.htm
 old-project: display
 ms.assetid: D777342E-439E-4BEF-9DCC-7962B1AF8EAB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_DISPLAYDETECTCONTROLTYPE, DXGK_DISPLAYDETECTCONTROLTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

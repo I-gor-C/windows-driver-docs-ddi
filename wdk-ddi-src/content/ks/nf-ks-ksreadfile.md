@@ -7,7 +7,7 @@ old-location: stream\ksreadfile.htm
 old-project: stream
 ms.assetid: e3bb6ead-8129-4605-8755-3a56d4b3d8f6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsReadFile
 ms.prod: windows-hardware
 ms.technology: windows-devices

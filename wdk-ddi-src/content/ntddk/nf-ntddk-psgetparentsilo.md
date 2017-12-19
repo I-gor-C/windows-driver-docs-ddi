@@ -7,7 +7,7 @@ old-location: kernel\psgetparentsilo.htm
 old-project: kernel
 ms.assetid: 57fa5563-3a02-449a-a934-85c75f450500
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetParentSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices

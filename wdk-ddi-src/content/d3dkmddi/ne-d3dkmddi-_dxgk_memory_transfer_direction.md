@@ -7,7 +7,7 @@ old-location: display\dxgk_memory_transfer_direction.htm
 old-project: display
 ms.assetid: A45411DF-AD08-4349-A134-091343E7989E
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MEMORY_TRANSFER_DIRECTION, DXGK_MEMORY_TRANSFER_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

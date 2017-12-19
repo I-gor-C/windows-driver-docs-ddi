@@ -7,8 +7,8 @@ old-location: wdf\wdf_io_queue_forward_progress_policy.htm
 old-project: wdf
 ms.assetid: cee3de1f-eaee-40e9-97a9-979e75e22c0a
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
+ms.date: 12/15/2017
+ms.keywords: _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

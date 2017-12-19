@@ -1,0 +1,93 @@
+---
+UID: NF.dbgeng.IDebugSystemObjects3.GetCurrentProcessHandle
+title: IDebugSystemObjects3::GetCurrentProcessHandle method
+author: windows-driver-content
+description: The GetCurrentProcessHandle function returns the system handle for the current process.
+old-location: debugger\getcurrentprocesshandle.htm
+old-project: Debugger
+ms.assetid: b6780f1c-e093-4d91-8909-dabb1ecaefaa
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IDebugSystemObjects3, IDebugSystemObjects3::GetCurrentProcessHandle, GetCurrentProcessHandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: GetCurrentProcessHandle
+req.alt-loc: wdbgexts.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+---
+
+# IDebugSystemObjects3::GetCurrentProcessHandle method
+
+
+
+## -description
+The <b>GetCurrentProcessHandle</b> function returns the system handle for the current process.
+
+
+
+## -syntax
+
+````
+__inline VOID GetCurrentProcessHandle(
+   PHANDLE hp
+);
+````
+
+
+## -parameters
+
+### -param hp 
+
+Receives the system handle for the current process.
+
+
+## -returns
+None
+
+
+## -remarks
+In kernel-mode debugging, the only process in the target is the virtual process created for the kernel. In this case, an artificial handle is created. The artificial handle can only be used with the debugger.
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+Target platform
+
+</th>
+<td width="70%">
+<dl>
+<dt>Desktop</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+Header
+
+</th>
+<td width="70%">
+<dl>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
+</dl>
+</td>
+</tr>
+</table>

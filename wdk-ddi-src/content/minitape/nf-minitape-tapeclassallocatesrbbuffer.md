@@ -7,7 +7,7 @@ old-location: storage\tapeclassallocatesrbbuffer.htm
 old-project: storage
 ms.assetid: f6762d9b-5a3d-49a3-b954-48e4e4a9eacb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: TapeClassAllocateSrbBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices

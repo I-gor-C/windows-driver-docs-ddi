@@ -4,10 +4,10 @@ title: RIL_GetSignalQuality function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getsignalquality.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2a708c1a-c4a5-4ccc-b762-3e0310d2a148
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetSignalQuality
 ms.prod: windows-hardware
 ms.technology: windows-devices

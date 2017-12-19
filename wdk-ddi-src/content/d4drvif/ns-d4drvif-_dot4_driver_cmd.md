@@ -7,8 +7,8 @@ old-location: print\dot4_driver_cmd.htm
 old-project: print
 ms.assetid: 7F099F7E-6E1F-499A-AF09-80B20429B892
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _DOT4_DRIVER_CMD, *PDOT4_DRIVER_CMD, DOT4_DRIVER_CMD
+ms.date: 12/14/2017
+ms.keywords: _DOT4_DRIVER_CMD, PDOT4_DRIVER_CMD, DOT4_DRIVER_CMD, *PDOT4_DRIVER_CMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

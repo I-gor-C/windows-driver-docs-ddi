@@ -4,11 +4,11 @@ title: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 author: windows-driver-content
 description: The NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure defines the set of handlers that a WDI miniport driver must implement.
 old-location: netvista\ndis_miniport_driver_wdi_characteristics.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2F69C228-FF2D-4277-A4C9-14FBADA1CD31
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
+ms.date: 12/14/2017
+ms.keywords: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -136,12 +136,12 @@ The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_close_adapt
 
 ### -field StartOperationHandler
 
-The entry point of the <a href="netvista.miniportwdistartoperation">MiniportWdiStartOperation</a> handler function.
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_start_adapter_operation.md">MiniportWdiStartOperation</a> handler function.
 
 
 ### -field StopOperationHandler
 
-The entry point of the <a href="netvista.miniportwdistopoperation">MiniportWdiStopOperation</a> handler function.
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_stop_adapter_operation.md">MiniportWdiStopOperation</a> handler function.
 
 
 ### -field PostPauseHandler

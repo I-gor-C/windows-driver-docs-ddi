@@ -4,11 +4,11 @@ title: EVT_UCX_USBDEVICE_RESUME
 author: windows-driver-content
 description: UCX invokes this callback function to resume a device from suspend state.
 old-location: buses\evt_ucx_usbdevice_resume.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 876D9754-B3AA-42C5-8BDD-60CFD4F78951
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STREAM_INFO, *PSTREAM_INFO, STREAM_INFO
+ms.date: 12/14/2017
+ms.keywords: _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO, PSTREAM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

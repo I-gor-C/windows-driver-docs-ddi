@@ -7,7 +7,7 @@ old-location: ieee\irb_req_async_lock.htm
 old-project: IEEE
 ms.assetid: 735C613E-BEAA-4E95-AF9D-A94A4BD940DE
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ASYNC_LOCK, IRB_REQ_ASYNC_LOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_scsientry.htm
 old-project: storage
 ms.assetid: 38779458-a561-4048-86d8-905e4e50095f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MS_SMHBA_SCSIENTRY, *PMS_SMHBA_SCSIENTRY, MS_SMHBA_SCSIENTRY
+ms.date: 12/15/2017
+ms.keywords: _MS_SMHBA_SCSIENTRY, PMS_SMHBA_SCSIENTRY, MS_SMHBA_SCSIENTRY, *PMS_SMHBA_SCSIENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

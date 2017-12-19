@@ -7,7 +7,7 @@ old-location: kernel\exisprocessorfeaturepresent.htm
 old-project: kernel
 ms.assetid: d8c4d1d7-3510-48c4-b1a6-062157f4632e
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: ExIsProcessorFeaturePresent
 ms.prod: windows-hardware
 ms.technology: windows-devices

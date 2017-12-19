@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_register_uchar.htm
 old-project: wdf
 ms.assetid: C8633689-0900-42BB-9D0D-6F95CBA13A37
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_READ_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

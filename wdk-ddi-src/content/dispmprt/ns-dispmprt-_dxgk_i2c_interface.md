@@ -7,8 +7,8 @@ old-location: display\dxgk_i2c_interface.htm
 old-project: display
 ms.assetid: aba0ebc8-2c92-4d27-a35b-9ac25ac6e5ab
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
+ms.date: 12/15/2017
+ms.keywords: _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

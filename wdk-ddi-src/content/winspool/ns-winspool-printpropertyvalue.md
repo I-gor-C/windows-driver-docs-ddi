@@ -7,7 +7,7 @@ old-location: print\printpropertyvalue.htm
 old-project: print
 ms.assetid: B442AE8E-A4CE-481A-A69C-496CBF3E4722
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices

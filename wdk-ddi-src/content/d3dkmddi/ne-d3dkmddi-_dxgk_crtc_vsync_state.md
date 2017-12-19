@@ -7,7 +7,7 @@ old-location: display\dxgk_crtc_vsync_state.htm
 old-project: display
 ms.assetid: 1A7632BB-1DA6-4D03-8A3A-6468A2E4DF71
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_CRTC_VSYNC_STATE, DXGK_CRTC_VSYNC_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

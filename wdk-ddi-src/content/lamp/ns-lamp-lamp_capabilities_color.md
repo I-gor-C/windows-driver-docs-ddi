@@ -7,7 +7,7 @@ old-location: stream\lamp_capabilities_color.htm
 old-project: stream
 ms.assetid: BCF2171C-93CB-4DAC-AA78-C272D5445F99
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_CAPABILITIES_COLOR, LAMP_CAPABILITIES_COLOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

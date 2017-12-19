@@ -7,7 +7,7 @@ old-location: display\idarg_out_releaseandacquirebuffer.htm
 old-project: display
 ms.assetid: d6092c73-b8fb-4f05-97ce-8a6fe67a2b18
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDARG_OUT_RELEASEANDACQUIREBUFFER,
 ms.prod: windows-hardware
 ms.technology: windows-devices

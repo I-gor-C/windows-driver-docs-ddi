@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_info.htm
 old-project: storage
 ms.assetid: 5A85A7EC-2333-4161-A1E7-55D3420E730C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_INFO, STORAGE_HW_FIRMWARE_INFO, *PSTORAGE_HW_FIRMWARE_INFO
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_HW_FIRMWARE_INFO, PSTORAGE_HW_FIRMWARE_INFO, STORAGE_HW_FIRMWARE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

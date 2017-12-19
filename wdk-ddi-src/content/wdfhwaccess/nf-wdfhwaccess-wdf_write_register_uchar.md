@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_uchar.htm
 old-project: wdf
 ms.assetid: 5738654A-83B1-44B4-BA45-52E2B60C852D
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_WRITE_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

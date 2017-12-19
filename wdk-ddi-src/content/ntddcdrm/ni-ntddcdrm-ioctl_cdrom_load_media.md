@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_load_media.htm
 old-project: storage
 ms.assetid: 2add532c-fd98-41f9-93a4-d7d238bc88d0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.date: 12/15/2017
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

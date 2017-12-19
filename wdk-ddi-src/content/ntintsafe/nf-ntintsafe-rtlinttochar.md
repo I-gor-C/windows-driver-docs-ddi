@@ -7,7 +7,7 @@ old-location: kernel\rtlinttochar.htm
 old-project: kernel
 ms.assetid: 407237E2-2CDB-40D5-867C-1EA8E1D80065
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlIntToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

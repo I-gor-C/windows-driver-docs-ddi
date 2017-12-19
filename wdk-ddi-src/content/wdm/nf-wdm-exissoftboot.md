@@ -7,7 +7,7 @@ old-location: kernel\exissoftboot.htm
 old-project: kernel
 ms.assetid: ff67bc75-b424-4278-b979-f67d118232aa
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: ExIsSoftBoot
 ms.prod: windows-hardware
 ms.technology: windows-devices

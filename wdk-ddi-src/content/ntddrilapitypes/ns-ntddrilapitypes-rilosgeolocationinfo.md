@@ -4,11 +4,11 @@ title: RILOSGEOLOCATIONINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilosgeolocationinfo.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9a56152e-fb38-4470-8834-a0cbdd7b70ec
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO
+ms.date: 12/14/2017
+ms.keywords: RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO, LPRILOSGEOLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

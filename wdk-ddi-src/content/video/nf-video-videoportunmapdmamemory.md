@@ -7,7 +7,7 @@ old-location: display\videoportunmapdmamemory.htm
 old-project: display
 ms.assetid: f3d05263-5e6b-4875-afff-1166928778db
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortUnmapDmaMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices

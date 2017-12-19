@@ -4,10 +4,10 @@ title: IOCTL_WAIT_ON_DEVICE_EVENT
 author: windows-driver-content
 description: Returns information about an event occurring on a USB interrupt pipe.
 old-location: image\ioctl_wait_on_device_event.htm
-old-project: image
+old-project: Image
 ms.assetid: 0895a19b-bb28-405a-98df-28522a18ec2b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

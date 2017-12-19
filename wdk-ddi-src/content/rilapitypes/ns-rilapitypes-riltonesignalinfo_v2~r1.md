@@ -4,11 +4,11 @@ title: RILTONESIGNALINFO_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riltonesignalinfo_v2_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 44508316-ff5c-48b0-9cdf-2d1aefa382c5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILTONESIGNALINFO_V2, RILTONESIGNALINFO, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, *LPRILTONESIGNALINFO_V2
+ms.date: 12/14/2017
+ms.keywords: RILTONESIGNALINFO_V2, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, RILTONESIGNALINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,10 +4,10 @@ title: UfxDeviceNotifyReset function
 author: windows-driver-content
 description: Notifies UFX about a USB bus reset event.
 old-location: buses\ufxdevicenotifyreset.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: FD88E645-7CBB-4998-BEBA-5BBE2FF167FC
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UfxDeviceNotifyReset
 ms.prod: windows-hardware
 ms.technology: windows-devices

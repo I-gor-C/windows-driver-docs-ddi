@@ -7,7 +7,7 @@ old-location: stream\ksevent_streamallocator.htm
 old-project: stream
 ms.assetid: DD614794-5E54-4538-91C5-8777B244143C
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSEVENT_STREAMALLOCATOR, KSEVENT_STREAMALLOCATOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

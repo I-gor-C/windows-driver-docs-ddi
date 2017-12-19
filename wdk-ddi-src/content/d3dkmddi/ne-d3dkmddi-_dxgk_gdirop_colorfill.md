@@ -7,7 +7,7 @@ old-location: display\dxgk_gdirop_colorfill.htm
 old-project: display
 ms.assetid: 1ef99bb0-855a-46d1-9702-5fc3eba5e68e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_GDIROP_COLORFILL, DXGK_GDIROP_COLORFILL
 ms.prod: windows-hardware
 ms.technology: windows-devices

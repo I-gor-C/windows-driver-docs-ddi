@@ -7,7 +7,7 @@ old-location: wdf\write_register_ulong.htm
 old-project: wdf
 ms.assetid: E5C5DAEA-9F4E-4202-90BE-A8D41EE03BDA
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

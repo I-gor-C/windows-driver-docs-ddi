@@ -7,8 +7,8 @@ old-location: storage\dsm_parameters.htm
 old-project: storage
 ms.assetid: 948331f1-1398-4e6e-85cb-27bbbd79630e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DSM_PARAMETERS, *PDSM_PARAMETERS, DSM_PARAMETERS
+ms.date: 12/15/2017
+ms.keywords: _DSM_PARAMETERS, DSM_PARAMETERS, *PDSM_PARAMETERS, PDSM_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

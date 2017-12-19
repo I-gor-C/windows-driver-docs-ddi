@@ -7,8 +7,8 @@ old-location: audio\phdaudio_transfer_complete_callback.htm
 old-project: audio
 ms.assetid: 6B3DA3B1-33E9-4BE4-A3EE-146080C483A6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.date: 12/14/2017
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

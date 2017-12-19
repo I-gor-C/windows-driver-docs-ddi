@@ -4,10 +4,10 @@ title: RILREMOVECALLFORWARDINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilremovecallforwardingparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5bdd8542-e1ef-42ac-99d7-c004039d2f33
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS, *LPRILREMOVECALLFORWARDINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

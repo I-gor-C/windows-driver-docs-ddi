@@ -4,11 +4,11 @@ title: RILGPP2CAUSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgpp2cause.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 40981ad1-9a3e-47c5-a3d2-e980659b8ca4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILGPP2CAUSE, *LPRILGPP2CAUSE, RILGPP2CAUSE
+ms.date: 12/14/2017
+ms.keywords: RILGPP2CAUSE, LPRILGPP2CAUSE, *LPRILGPP2CAUSE, RILGPP2CAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

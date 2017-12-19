@@ -7,7 +7,7 @@ old-location: kernel\rtlintptrtouint8.htm
 old-project: kernel
 ms.assetid: E51696DD-17CE-41F1-AD30-30AB93C81D05
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlIntPtrToUInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices

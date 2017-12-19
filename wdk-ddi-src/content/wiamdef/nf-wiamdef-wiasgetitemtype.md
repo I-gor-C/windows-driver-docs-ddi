@@ -4,10 +4,10 @@ title: wiasGetItemType function
 author: windows-driver-content
 description: The wiasGetItemType function indicates the item type.
 old-location: image\wiasgetitemtype.htm
-old-project: image
+old-project: Image
 ms.assetid: 9659d669-ccf3-423a-9c81-12232a978d07
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiasGetItemType
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: print\dot4_activity.htm
 old-project: print
 ms.assetid: CD3DBBA5-AE5C-4DC1-BE52-696138494701
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _DOT4_ACTIVITY, DOT4_ACTIVITY, *PDOT4_ACTIVITY
+ms.date: 12/14/2017
+ms.keywords: _DOT4_ACTIVITY, *PDOT4_ACTIVITY, PDOT4_ACTIVITY, DOT4_ACTIVITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_find_new_devices.htm
 old-project: storage
 ms.assetid: d8a603a3-fa3c-4524-89f8-eed43d0db316
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

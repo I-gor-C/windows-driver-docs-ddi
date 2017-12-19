@@ -7,7 +7,7 @@ old-location: display\dxgk_contextinfo_caps.htm
 old-project: display
 ms.assetid: AC65F790-981F-4B50-BB9E-84F79D8F6C4F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_CONTEXTINFO_CAPS, DXGK_CONTEXTINFO_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3dddi_copy_flags.htm
 old-project: display
 ms.assetid: 6186dac4-4797-48f2-bb32-40a0d501bac7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DDDI_COPY_FLAGS, D3DDDI_COPY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

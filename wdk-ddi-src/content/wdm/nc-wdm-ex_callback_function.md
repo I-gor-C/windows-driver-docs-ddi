@@ -7,8 +7,8 @@ old-location: kernel\registrycallback.htm
 old-project: kernel
 ms.assetid: 220ce3b8-2820-4753-9659-5ce7b4f4f32d
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 12/15/2017
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -261,7 +261,7 @@ A pointer to a structure that contains information that is specific to the type 
 <tr>
 <td><b>RegNtPreCreateKey</b></td>
 <td>
-<a href="kernel.reg_pre_create_key_information">REG_PRE_CREATE_KEY_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560973">REG_PRE_CREATE_KEY_INFORMATION</a>
 </td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ A pointer to a structure that contains information that is specific to the type 
 <tr>
 <td><b>RegNtPreOpenKeyEx</b></td>
 <td>
-<a href="kernel.reg_open_key_information">REG_OPEN_KEY_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560957">REG_OPEN_KEY_INFORMATION</a>
 </td>
 </tr>
 <tr>
@@ -327,7 +327,7 @@ A pointer to a structure that contains information that is specific to the type 
 <tr>
 <td><b>RegNtPreFlushKey</b></td>
 <td>
-<a href="kernel.reg_flush_key_information">REG_FLUSH_KEY_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560938">REG_FLUSH_KEY_INFORMATION</a>
 </td>
 </tr>
 <tr>
@@ -441,7 +441,7 @@ A pointer to a structure that contains information that is specific to the type 
 </table>
  
 
-** Starting with Windows 7, the actual data structure passed in when the notify class is <b>RegNtPreCreateKeyEx</b> or <b>RegNtPreOpenKeyEx</b> is the V1 version of this structure, <a href="kernel.reg_create_key_information_v1">REG_CREATE_KEY_INFORMATION_V1</a> or <a href="kernel.reg_open_key_information_v1">REG_OPEN_KEY_INFORMATION_V1</a>, respectively. Check the <b>Reserved</b> member to determine the version of the structure.
+** Starting with Windows 7, the actual data structure passed in when the notify class is <b>RegNtPreCreateKeyEx</b> or <b>RegNtPreOpenKeyEx</b> is the V1 version of this structure, <a href="kernel.reg_create_key_information_v1">REG_CREATE_KEY_INFORMATION_V1</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff560959">REG_OPEN_KEY_INFORMATION_V1</a>, respectively. Check the <b>Reserved</b> member to determine the version of the structure.
 
 <table>
 <tr>
@@ -584,5 +584,5 @@ Called at PASSIVE_LEVEL (see Remarks section).
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RegistryCallback routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RegistryCallback routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

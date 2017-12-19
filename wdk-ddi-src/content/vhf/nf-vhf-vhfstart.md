@@ -7,7 +7,7 @@ old-location: hid\vhfstart.htm
 old-project: hid
 ms.assetid: F3DA4CBB-5749-4E7D-828F-398714575173
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: VhfStart
 ms.prod: windows-hardware
 ms.technology: windows-devices

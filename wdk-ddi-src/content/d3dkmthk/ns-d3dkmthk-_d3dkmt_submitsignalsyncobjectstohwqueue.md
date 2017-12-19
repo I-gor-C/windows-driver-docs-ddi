@@ -7,7 +7,7 @@ old-location: display\d3dkmt_submitsignalsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: BD192367-4960-4FD9-867F-02263AC93A61
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE, D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices

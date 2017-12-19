@@ -4,10 +4,10 @@ title: RIL3GPP2ISDNALERTING
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril3gpp2isdnalerting_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9fff629b-ad85-4158-b8c4-f5f6abe8e3f5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL3GPP2ISDNALERTING, RIL3GPP2ISDNALERTING
 ms.prod: windows-hardware
 ms.technology: windows-devices

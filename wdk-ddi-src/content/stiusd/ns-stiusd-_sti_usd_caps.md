@@ -4,11 +4,11 @@ title: _STI_USD_CAPS
 author: windows-driver-content
 description: The STI_USD_CAPS structure is used as a parameter for the IStiUSD::GetCapabilities method.
 old-location: image\sti_usd_caps.htm
-old-project: image
+old-project: Image
 ms.assetid: 24dda069-5f93-469d-8ce3-87b488019b88
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STI_USD_CAPS, STI_USD_CAPS, *PSTI_USD_CAPS
+ms.date: 12/14/2017
+ms.keywords: _STI_USD_CAPS, STI_USD_CAPS, *PSTI_USD_CAPS, PSTI_USD_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

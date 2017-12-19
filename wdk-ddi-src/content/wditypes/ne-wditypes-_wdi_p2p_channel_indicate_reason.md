@@ -4,10 +4,10 @@ title: _WDI_P2P_CHANNEL_INDICATE_REASON
 author: windows-driver-content
 description: The WDI_P2P_CHANNEL_INDICATE_REASON enumeration defines Wi-Fi Direct channel indication reason values.
 old-location: netvista\wdi_p2p_channel_indicate_reason.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: F6C2D044-E64B-4DA5-A168-20C99F325451
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_P2P_CHANNEL_INDICATE_REASON, WDI_P2P_CHANNEL_INDICATE_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices

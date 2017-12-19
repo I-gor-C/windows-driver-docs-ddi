@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_delete_drive_layout.htm
 old-project: storage
 ms.assetid: 787fa1ce-5305-4159-8710-3c6971133c4c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

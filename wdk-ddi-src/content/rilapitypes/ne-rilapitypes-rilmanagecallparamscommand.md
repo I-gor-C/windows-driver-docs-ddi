@@ -4,10 +4,10 @@ title: RILMANAGECALLPARAMSCOMMAND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmanagecallparamscommand_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0749f3fb-261c-4b98-961f-f2720100b8e6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMANAGECALLPARAMSCOMMAND, RILMANAGECALLPARAMSCOMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices

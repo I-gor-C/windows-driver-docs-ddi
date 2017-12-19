@@ -4,11 +4,11 @@ title: _NDIS_BIND_FAILED_NOTIFICATION
 author: windows-driver-content
 description: The NDIS_BIND_FAILED_NOTIFICATION structure describes a binding event failure.
 old-location: netvista\ndis_bind_failed_notification.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5420839B-EB81-43CC-B7BD-9D1FA2560A3D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_BIND_FAILED_NOTIFICATION, *PNDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION
+ms.date: 12/14/2017
+ms.keywords: _NDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION, *PNDIS_BIND_FAILED_NOTIFICATION, PNDIS_BIND_FAILED_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

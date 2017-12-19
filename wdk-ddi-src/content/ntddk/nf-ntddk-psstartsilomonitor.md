@@ -7,7 +7,7 @@ old-location: kernel\psstartsilomonitor.htm
 old-project: kernel
 ms.assetid: 65828926-FDA7-4F65-AD55-B7E03639FA27
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsStartSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices

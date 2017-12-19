@@ -7,8 +7,8 @@ old-location: storage\dsmsetloadbalancepolicyalua_in.htm
 old-project: storage
 ms.assetid: d46cfba0-a749-436a-99ad-d3606aea9a4d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DsmSetLoadBalancePolicyALUA_IN, DsmSetLoadBalancePolicyALUA_IN, *PDsmSetLoadBalancePolicyALUA_IN
+ms.date: 12/15/2017
+ms.keywords: _DsmSetLoadBalancePolicyALUA_IN, PDsmSetLoadBalancePolicyALUA_IN, *PDsmSetLoadBalancePolicyALUA_IN, DsmSetLoadBalancePolicyALUA_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

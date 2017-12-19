@@ -4,10 +4,10 @@ title: NdisGetVersion function
 author: windows-driver-content
 description: The NdisGetVersion function returns the version number of NDIS.
 old-location: netvista\ndisgetversion.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d3e2c799-f789-499f-9948-f41d7576296e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: NdisGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices

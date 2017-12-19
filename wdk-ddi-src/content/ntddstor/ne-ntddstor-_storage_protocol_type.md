@@ -7,8 +7,8 @@ old-location: storage\storage_protocol_type.htm
 old-project: storage
 ms.assetid: 3CC4DF0A-26F1-4825-AD89-D56B0D5F4AC6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_PROTOCOL_TYPE, STORAGE_PROTOCOL_TYPE, *PSTORAGE_PROTOCOL_TYPE
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_PROTOCOL_TYPE, STORAGE_PROTOCOL_TYPE, PSTORAGE_PROTOCOL_TYPE, *PSTORAGE_PROTOCOL_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

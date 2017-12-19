@@ -7,7 +7,7 @@ old-location: display\d3drenderstatetype.htm
 old-project: display
 ms.assetid: 82978b22-1538-4da0-bcf2-c4c52d2e3429
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DRENDERSTATETYPE, D3DRENDERSTATETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

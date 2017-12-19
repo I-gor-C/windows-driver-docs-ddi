@@ -7,8 +7,8 @@ old-location: pci\ioctl-sriov-query-mitigated-ranges.htm
 old-project: PCI
 ms.assetid: 58b6e53d-be7a-4563-a27d-db216a12d60d
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.date: 12/14/2017
+ms.keywords: _SRIOV_PF_EVENT, PSRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

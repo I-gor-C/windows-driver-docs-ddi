@@ -7,7 +7,7 @@ old-location: display\d3dddimultisample_type.htm
 old-project: display
 ms.assetid: aba3b4fd-92e4-4551-9396-ee34e38ecfd6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDIMULTISAMPLE_TYPE, D3DDDIMULTISAMPLE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

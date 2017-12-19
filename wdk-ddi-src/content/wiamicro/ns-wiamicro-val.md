@@ -4,11 +4,11 @@ title: VAL
 author: windows-driver-content
 description: The VAL structure is used by the microdriver and WIA Flatbed driver to pass information between each other.
 old-location: image\val.htm
-old-project: image
+old-project: Image
 ms.assetid: 9c9cf520-3249-4c1e-9d0d-e07f7127117e
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: VAL, *PVAL, VAL
+ms.date: 12/14/2017
+ms.keywords: VAL, VAL, *PVAL, PVAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

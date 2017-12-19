@@ -4,11 +4,11 @@ title: _WDI_MESSAGE_HEADER
 author: windows-driver-content
 description: The WDI_MESSAGE_HEADER structure defines the WDI message header. All WDI command messages must start with this header.
 old-location: netvista\wdi_message_header.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 69c3ebf5-8805-47d0-a507-d2e3e1d1b0df
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER
+ms.date: 12/14/2017
+ms.keywords: _WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER, PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

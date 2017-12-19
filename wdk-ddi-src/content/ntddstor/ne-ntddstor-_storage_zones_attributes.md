@@ -7,8 +7,8 @@ old-location: storage\storage_zones_attributes.htm
 old-project: storage
 ms.assetid: 6C86A931-C87C-4273-9409-A45A3FDB8B4C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_ZONES_ATTRIBUTES, PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

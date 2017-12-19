@@ -7,8 +7,8 @@ old-location: stream\video_stream_init_parms.htm
 old-project: stream
 ms.assetid: 0FEC5054-8045-4CE5-AA59-AE3D23568308
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tag_video_stream_init_parms, VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+ms.date: 12/14/2017
+ms.keywords: tag_video_stream_init_parms, LPVIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS, VIDEO_STREAM_INIT_PARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: storage\mpio_path_health_info.htm
 old-project: storage
 ms.assetid: efb49852-3c0a-4dab-9d50-c103ba4a136b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO
+ms.date: 12/15/2017
+ms.keywords: _MPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO, PMPIO_PATH_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

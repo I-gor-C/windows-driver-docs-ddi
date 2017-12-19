@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_i2c_receive.htm
 old-project: display
 ms.assetid: f4d55fb9-57da-4f75-a0ab-89cc9516ac49
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

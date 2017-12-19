@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitregisterpowerstatechangecallback.htm
 old-project: wdf
 ms.assetid: f3c09dfb-d327-488b-8e5d-77a579d1e1f0
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceInitRegisterPowerStateChangeCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices

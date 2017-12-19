@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createvideoprocessor.htm
 old-project: display
 ms.assetid: 4F1AA75F-DDC7-490B-8CE2-590691991234
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

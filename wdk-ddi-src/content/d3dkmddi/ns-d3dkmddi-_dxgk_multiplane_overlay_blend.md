@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_blend.htm
 old-project: display
 ms.assetid: e489919c-c0a7-4792-9758-ce7b587b13cc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_BLEND, DXGK_MULTIPLANE_OVERLAY_BLEND
 ms.prod: windows-hardware
 ms.technology: windows-devices

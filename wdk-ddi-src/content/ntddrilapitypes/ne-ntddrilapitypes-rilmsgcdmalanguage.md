@@ -4,10 +4,10 @@ title: RILMSGCDMALANGUAGE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmalanguage.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b774fed4-533e-47ec-9e0a-da0e8fe2cfb0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGCDMALANGUAGE, RILMSGCDMALANGUAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

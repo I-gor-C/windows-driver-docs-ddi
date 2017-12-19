@@ -7,7 +7,7 @@ old-location: wdf\read_port_buffer_uchar.htm
 old-project: wdf
 ms.assetid: CDA0A86B-94E7-4825-9826-0E12ECF42B57
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

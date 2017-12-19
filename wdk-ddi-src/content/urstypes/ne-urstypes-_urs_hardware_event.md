@@ -4,11 +4,11 @@ title: _URS_HARDWARE_EVENT
 author: windows-driver-content
 description: Defines values for the hardware events that a client driver for a USB dual-role controller can report.
 old-location: buses\urs_hardware_event.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 985A7725-1EE1-4419-B8BE-FEE2306E93A7
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _URS_HARDWARE_EVENT, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT
+ms.date: 12/14/2017
+ms.keywords: _URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT, URS_HARDWARE_EVENT, PURS_HARDWARE_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

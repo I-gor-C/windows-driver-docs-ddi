@@ -4,11 +4,11 @@ title: RILUICCSERVICEINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccserviceinfo.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 80abf9a7-0a34-4fc2-ab5a-afcb678b7003
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILUICCSERVICEINFO, RILUICCSERVICEINFO, *LPRILUICCSERVICEINFO
+ms.date: 12/14/2017
+ms.keywords: RILUICCSERVICEINFO, *LPRILUICCSERVICEINFO, LPRILUICCSERVICEINFO, RILUICCSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

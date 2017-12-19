@@ -7,7 +7,7 @@ old-location: audio\bthhfp_audio_device_capabilties_init.htm
 old-project: audio
 ms.assetid: c00b8f19-6708-4ec2-928b-610158850247
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

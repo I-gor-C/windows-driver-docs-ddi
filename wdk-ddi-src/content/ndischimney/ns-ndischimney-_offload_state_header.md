@@ -4,11 +4,11 @@ title: _OFFLOAD_STATE_HEADER
 author: windows-driver-content
 description: The OFFLOAD_STATE_HEADER structure serves as a header in an offload state structure.
 old-location: netvista\offload_state_header.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9becc611-ede9-4285-b2d7-c53747d098a9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _OFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER
+ms.date: 12/14/2017
+ms.keywords: _OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER, POFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

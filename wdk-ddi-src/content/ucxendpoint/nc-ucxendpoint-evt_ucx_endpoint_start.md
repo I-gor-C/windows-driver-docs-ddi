@@ -4,10 +4,10 @@ title: EVT_UCX_ENDPOINT_START
 author: windows-driver-content
 description: The client driver's implementation that UCX calls to start the queue associated with the endpoint.
 old-location: buses\evt_ucx_endpoint_start.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 8b801255-ee6a-413f-8ce3-3a3696283e6b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

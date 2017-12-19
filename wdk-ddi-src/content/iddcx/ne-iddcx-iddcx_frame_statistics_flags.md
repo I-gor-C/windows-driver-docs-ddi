@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_statistics_flags.htm
 old-project: display
 ms.assetid: 85ae47d8-228c-4fff-9be0-bf56868b9319
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_FRAME_STATISTICS_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

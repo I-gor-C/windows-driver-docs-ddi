@@ -7,8 +7,8 @@ old-location: display\dxgk_integrateddisplayflags.htm
 old-project: display
 ms.assetid: 4671B6C1-358A-4CC2-A6FC-0FBA0F26DB07
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS
+ms.date: 12/15/2017
+ms.keywords: _DXGK_INTEGRATEDDISPLAYFLAGS, PDXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

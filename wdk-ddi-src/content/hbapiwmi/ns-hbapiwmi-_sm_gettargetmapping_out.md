@@ -7,8 +7,8 @@ old-location: storage\sm_gettargetmapping_out.htm
 old-project: storage
 ms.assetid: 164379fa-15fb-4ab7-9cf8-8403f92d7a42
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_GetTargetMapping_OUT, *PSM_GetTargetMapping_OUT, SM_GetTargetMapping_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_GetTargetMapping_OUT, SM_GetTargetMapping_OUT, *PSM_GetTargetMapping_OUT, PSM_GetTargetMapping_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

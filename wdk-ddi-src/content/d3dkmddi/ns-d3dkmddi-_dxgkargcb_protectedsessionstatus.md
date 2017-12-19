@@ -7,7 +7,7 @@ old-location: display\dxgkargcb_protectedsessionstatus.htm
 old-project: display
 ms.assetid: 417480C5-8B24-4504-8B2D-DB9D38E4C11B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKARGCB_PROTECTEDSESSIONSTATUS, DXGKARGCB_PROTECTEDSESSIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

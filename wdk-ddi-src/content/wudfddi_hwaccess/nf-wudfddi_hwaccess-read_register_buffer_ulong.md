@@ -7,7 +7,7 @@ old-location: wdf\read_register_buffer_ulong.htm
 old-project: wdf
 ms.assetid: 615A19E7-ED3B-4C41-9B3B-F4FB77811BC2
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_REGISTER_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RIL_GetDialedIdSettings function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getdialedidsettings.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 088fd502-a209-4fec-bec0-9f47f61022ee
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetDialedIdSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices

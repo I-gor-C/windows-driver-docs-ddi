@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_parse_monitor_description.htm
 old-project: display
 ms.assetid: b195cd68-fedc-436d-8afd-5e33ccb96344
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

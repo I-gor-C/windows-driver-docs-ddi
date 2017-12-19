@@ -4,11 +4,11 @@ title: IOCTL_INTERNAL_USBFN_DESCRIPTOR_UPDATE
 author: windows-driver-content
 description: The USB function class extension sends this request to the client driver to update to the endpoint descriptor for the specified endpoint.
 old-location: buses\ioctl_internal_usbfn_descriptor_update.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 9BA9BC9E-C04C-48F8-B76A-2D6F779BBE05
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_ACTION, USBFN_ACTION, *PUSBFN_ACTION
+ms.date: 12/14/2017
+ms.keywords: _USBFN_ACTION, PUSBFN_ACTION, *PUSBFN_ACTION, USBFN_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -4,10 +4,10 @@ title: RILUICCAPPINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccappinfoparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 17ca9b1c-aaf9-434e-be60-5698aa159b48
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCAPPINFOPARAMMASK, RILUICCAPPINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

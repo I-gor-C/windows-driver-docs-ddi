@@ -7,8 +7,8 @@ old-location: storage\act_authz_state.htm
 old-project: storage
 ms.assetid: 32bb774f-b1eb-4198-8e4c-febcac83153d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: tagACT_AUTHZ_STATE, ACT_AUTHZ_STATE, *PACT_AUTHZ_STATE
+ms.date: 12/15/2017
+ms.keywords: tagACT_AUTHZ_STATE, ACT_AUTHZ_STATE, *PACT_AUTHZ_STATE, PACT_AUTHZ_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

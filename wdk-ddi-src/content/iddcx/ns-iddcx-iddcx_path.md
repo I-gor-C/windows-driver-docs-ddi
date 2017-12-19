@@ -7,7 +7,7 @@ old-location: display\iddcx_path.htm
 old-project: display
 ms.assetid: c0126718-6bb0-493c-9fdd-78ae372f8fd4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_PATH,
 ms.prod: windows-hardware
 ms.technology: windows-devices

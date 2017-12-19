@@ -4,10 +4,10 @@ title: RILMSGCDMAMSGPRIORITY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmamsgpriority.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: aec67cd5-9ac9-41da-b5e6-a4e416923afb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGCDMAMSGPRIORITY, RILMSGCDMAMSGPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

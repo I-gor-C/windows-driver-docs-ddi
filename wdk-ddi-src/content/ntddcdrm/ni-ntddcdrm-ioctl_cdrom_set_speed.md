@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_set_speed.htm
 old-project: storage
 ms.assetid: 14acc5f4-1346-4da4-b692-01396cff776e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.date: 12/15/2017
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

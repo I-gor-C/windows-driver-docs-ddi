@@ -7,8 +7,8 @@ old-location: storage\sm_removelink_out.htm
 old-project: storage
 ms.assetid: f3b82d62-8596-4bb9-b20b-39f232527d7a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_RemoveLink_OUT, SM_RemoveLink_OUT, *PSM_RemoveLink_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_RemoveLink_OUT, SM_RemoveLink_OUT, PSM_RemoveLink_OUT, *PSM_RemoveLink_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

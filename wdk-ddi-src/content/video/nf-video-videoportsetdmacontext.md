@@ -7,7 +7,7 @@ old-location: display\videoportsetdmacontext.htm
 old-project: display
 ms.assetid: 4f357612-c07d-42fe-a49f-59acec80a8bc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortSetDmaContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

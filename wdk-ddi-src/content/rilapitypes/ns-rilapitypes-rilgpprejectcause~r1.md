@@ -4,10 +4,10 @@ title: RILGPPREJECTCAUSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgpprejectcause_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b182f937-3d0d-4558-967a-da2be3c73843
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

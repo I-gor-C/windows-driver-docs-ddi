@@ -4,10 +4,10 @@ title: RILCAPSLOCKINGPWDLENGTHPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcapslockingpwdlengthparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: c6e89030-835e-4f7f-8bec-6cd19f598f9d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCAPSLOCKINGPWDLENGTHPARAMMASK, RILCAPSLOCKINGPWDLENGTHPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

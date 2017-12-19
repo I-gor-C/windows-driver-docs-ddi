@@ -7,8 +7,8 @@ old-location: hid\ioctl_hid_get_ms_genre_descriptor.htm
 old-project: hid
 ms.assetid: C83C6086-369D-41DB-BEB5-33B3A0C1C0AE
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+ms.date: 12/14/2017
+ms.keywords: _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -7,7 +7,7 @@ old-location: stream\korelease.htm
 old-project: stream
 ms.assetid: 59be582c-0f56-45d8-b407-e588ee0f7f8b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KoRelease
 ms.prod: windows-hardware
 ms.technology: windows-devices

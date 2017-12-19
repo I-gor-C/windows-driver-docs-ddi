@@ -7,8 +7,8 @@ old-location: wdf\evt_wdf_task_queue_task_execute_sync.htm
 old-project: wdf
 ms.assetid: c45d1873-fb29-49ee-b99b-09861478ac89
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG
+ms.date: 12/15/2017
+ms.keywords: _WDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, PWDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

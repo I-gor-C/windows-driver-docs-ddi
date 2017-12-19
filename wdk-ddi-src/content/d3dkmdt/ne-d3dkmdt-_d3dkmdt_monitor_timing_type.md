@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_timing_type.htm
 old-project: display
 ms.assetid: fb8a2c29-f41b-4701-bbc2-f0a8e6dadc11
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_MONITOR_TIMING_TYPE, D3DKMDT_MONITOR_TIMING_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

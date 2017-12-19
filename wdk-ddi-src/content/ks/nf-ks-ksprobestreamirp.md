@@ -7,7 +7,7 @@ old-location: stream\ksprobestreamirp.htm
 old-project: stream
 ms.assetid: 25b49781-2676-4b5e-b17b-dcb1bf98b297
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsProbeStreamIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices

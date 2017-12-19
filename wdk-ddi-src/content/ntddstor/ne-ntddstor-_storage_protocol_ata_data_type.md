@@ -7,8 +7,8 @@ old-location: storage\storage_protocol_ata_data_type.htm
 old-project: storage
 ms.assetid: 4B42E143-17F5-4841-A9EA-C225B167E242
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_PROTOCOL_ATA_DATA_TYPE, STORAGE_PROTOCOL_ATA_DATA_TYPE, *PSTORAGE_PROTOCOL_ATA_DATA_TYPE
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_PROTOCOL_ATA_DATA_TYPE, STORAGE_PROTOCOL_ATA_DATA_TYPE, *PSTORAGE_PROTOCOL_ATA_DATA_TYPE, PSTORAGE_PROTOCOL_ATA_DATA_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

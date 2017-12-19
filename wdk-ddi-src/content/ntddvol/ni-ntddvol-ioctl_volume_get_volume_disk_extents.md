@@ -7,8 +7,8 @@ old-location: storage\ioctl_volume_get_volume_disk_extents.htm
 old-project: storage
 ms.assetid: d831ea36-16ee-4723-95b1-f9903106b7c0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS
+ms.date: 12/15/2017
+ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -50,22 +50,20 @@ Returns the physical location(s) of a volume on one or more disks. Extents are i
 ## -ioctlparameters
 
 ### -input-buffer
-<a id="Input_Buffer"></a><a id="input_buffer"></a><a id="INPUT_BUFFER"></a>Input Buffer
-None</p>None
+None.
 
 
 ### -input-buffer-length
+None.
 
-<text></text>
 
 ### -output-buffer
-<a id="Output_Buffer"></a><a id="output_buffer"></a><a id="OUTPUT_BUFFER"></a>Output Buffer
-The driver returns a VOLUME_DISK_EXTENTS structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be at least <b>sizeof</b>(VOLUME_DISK_EXTENTS). </p>The driver returns a VOLUME_DISK_EXTENTS structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer, which must be at least <b>sizeof</b>sizeof(VOLUME_DISK_EXTENTS). 
+The driver returns a VOLUME_DISK_EXTENTS structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be at least <b>sizeof</b>(VOLUME_DISK_EXTENTS). 
 
 
 ### -output-buffer-length
+The length of a VOLUME_DISK_EXTENTS structure.
 
-<text></text>
 
 ### -in-out-buffer
 
@@ -76,39 +74,14 @@ The driver returns a VOLUME_DISK_EXTENTS structure in the buffer at <b>Irp-&gt;A
 <text></text>
 
 ### -status-block
-<a id="I_O_Status_Block"></a><a id="i_o_status_block"></a><a id="I_O_STATUS_BLOCK"></a>I/O Status Block
-The driver sets <b>Irp-&gt;IoStatus.Information</b> and the <b>Status</b> field as follows:</p>The driver sets <b>Irp-&gt;IoStatus.Information</b>Irp->IoStatus.Information and the <b>Status</b>Status field as follows:
-<ul>
-<li>
+I/O Status block
+The driver sets <b>Irp-&gt;IoStatus.Information</b> and the <b>Status</b> field as follows:
+
 If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is &lt; <b>sizeof</b>(VOLUME_DISK_EXTENTS), the driver sets <b>Irp-&gt;IoStatus.Information</b> to zero and returns STATUS_INVALID_PARAMETER.
 
-</li>
-<li>
 If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is at least <b>sizeof</b>(VOLUME_DISK_EXTENTS) but too small for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) and sets <b>Status</b> to STATUS_BUFFER_OVERFLOW.
 
-</li>
-<li>
 If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) + ((NumberOfDiskExtents - 1) * <b>sizeof</b>(DISK_EXTENT)) and sets <b>Status</b> to STATUS_SUCCESS. 
-
-</li>
-</ul>
-<li>
-If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is &lt; <b>sizeof</b>(VOLUME_DISK_EXTENTS), the driver sets <b>Irp-&gt;IoStatus.Information</b> to zero and returns STATUS_INVALID_PARAMETER.
-
-</li>
-If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is &lt; <b>sizeof</b>(VOLUME_DISK_EXTENTS), the driver sets <b>Irp-&gt;IoStatus.Information</b> to zero and returns STATUS_INVALID_PARAMETER.</p>If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer is < <b>sizeof</b>sizeof(VOLUME_DISK_EXTENTS), the driver sets <b>Irp-&gt;IoStatus.Information</b>Irp->IoStatus.Information to zero and returns STATUS_INVALID_PARAMETER.
-
-<li>
-If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is at least <b>sizeof</b>(VOLUME_DISK_EXTENTS) but too small for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) and sets <b>Status</b> to STATUS_BUFFER_OVERFLOW.
-
-</li>
-If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is at least <b>sizeof</b>(VOLUME_DISK_EXTENTS) but too small for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) and sets <b>Status</b> to STATUS_BUFFER_OVERFLOW.</p>If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer is at least <b>sizeof</b>sizeof(VOLUME_DISK_EXTENTS) but too small for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b>Irp->IoStatus.Information to <b>sizeof</b>sizeof(VOLUME_DISK_EXTENTS) and sets <b>Status</b>Status to STATUS_BUFFER_OVERFLOW.
-
-<li>
-If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) + ((NumberOfDiskExtents - 1) * <b>sizeof</b>(DISK_EXTENT)) and sets <b>Status</b> to STATUS_SUCCESS. 
-
-</li>
-If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) + ((NumberOfDiskExtents - 1) * <b>sizeof</b>(DISK_EXTENT)) and sets <b>Status</b> to STATUS_SUCCESS. </p>If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>Irp->AssociatedIrp.SystemBuffer is large enough for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b>Irp->IoStatus.Information to <b>sizeof</b>sizeof(VOLUME_DISK_EXTENTS) + ((NumberOfDiskExtents - 1) * <b>sizeof</b>sizeof(DISK_EXTENT)) and sets <b>Status</b>Status to STATUS_SUCCESS. 
 
 
 ## -remarks
@@ -152,5 +125,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS control code%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

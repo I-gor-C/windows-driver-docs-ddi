@@ -7,8 +7,8 @@ old-location: audio\phdaudio_unsolicited_response_callback.htm
 old-project: audio
 ms.assetid: B98F669D-D0DE-4FF2-903C-D51E0FEEE840
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.date: 12/14/2017
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

@@ -7,8 +7,8 @@ old-location: ifsk\file_mailslot_set_information.htm
 old-project: ifsk
 ms.assetid: 65104303-5041-45e7-bd59-bb78dde1dffd
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _FILE_MAILSLOT_SET_INFORMATION, *PFILE_MAILSLOT_SET_INFORMATION, FILE_MAILSLOT_SET_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _FILE_MAILSLOT_SET_INFORMATION, PFILE_MAILSLOT_SET_INFORMATION, FILE_MAILSLOT_SET_INFORMATION, *PFILE_MAILSLOT_SET_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

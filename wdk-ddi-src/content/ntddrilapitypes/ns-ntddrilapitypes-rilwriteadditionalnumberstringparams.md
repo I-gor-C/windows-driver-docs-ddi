@@ -4,11 +4,11 @@ title: RILWRITEADDITIONALNUMBERSTRINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilwriteadditionalnumberstringparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2adcf421-c651-46a5-b82a-db62591e69f0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILWRITEADDITIONALNUMBERSTRINGPARAMS, RILWRITEADDITIONALNUMBERSTRINGPARAMS, *LPRILWRITEADDITIONALNUMBERSTRINGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILWRITEADDITIONALNUMBERSTRINGPARAMS, LPRILWRITEADDITIONALNUMBERSTRINGPARAMS, *LPRILWRITEADDITIONALNUMBERSTRINGPARAMS, RILWRITEADDITIONALNUMBERSTRINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

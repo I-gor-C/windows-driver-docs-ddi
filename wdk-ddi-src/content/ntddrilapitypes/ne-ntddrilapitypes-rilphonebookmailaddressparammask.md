@@ -4,10 +4,10 @@ title: RILPHONEBOOKMAILADDRESSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookmailaddressparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: db3b9173-f0fe-4d51-a17e-a7b55839cbb6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPHONEBOOKMAILADDRESSPARAMMASK, RILPHONEBOOKMAILADDRESSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

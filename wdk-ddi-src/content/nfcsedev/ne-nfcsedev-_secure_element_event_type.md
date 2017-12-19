@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_event_type.htm
 old-project: nfpdrivers
 ms.assetid: 45DCE635-6F28-4BE1-8362-568409FA8B1B
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_EVENT_TYPE, *PSECURE_ELEMENT_EVENT_TYPE, SECURE_ELEMENT_EVENT_TYPE
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_EVENT_TYPE, PSECURE_ELEMENT_EVENT_TYPE, SECURE_ELEMENT_EVENT_TYPE, *PSECURE_ELEMENT_EVENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

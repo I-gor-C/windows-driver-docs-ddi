@@ -4,11 +4,11 @@ title: RILPHONEBOOKEMAILADDRESS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookemailaddress.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 89dc64a4-dce9-4ed2-a657-d216d502cded
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS
+ms.date: 12/14/2017
+ms.keywords: RILPHONEBOOKEMAILADDRESS, LPRILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

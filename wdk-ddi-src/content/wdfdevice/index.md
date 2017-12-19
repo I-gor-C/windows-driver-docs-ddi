@@ -205,3 +205,10 @@ Wdfdevice.h contain these programming interfaces:
 | [_WDF_REMOVE_LOCK_OPTIONS_FLAGS enumeration](ne-wdfdevice-_wdf_remove_lock_options_flags.md) | The WDF_REMOVE_LOCK_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REMOVE_LOCK_OPTIONS structure. |
 | [_WDF_SPECIAL_FILE_TYPE enumeration](ne-wdfdevice-_wdf_special_file_type.md) | The WDF_SPECIAL_FILE_TYPE enumeration identifies special file types that a device can support. |
 | [_WDF_STATE_NOTIFICATION_TYPE enumeration](ne-wdfdevice-_wdf_state_notification_type.md) | The WDF_STATE_NOTIFICATION_TYPE enumeration identifies the type of Plug and Play, power, or power policy notification that a framework-based driver will receive. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [WdfDeviceResumeIdle macro](nf-wdfdevice-wdfdeviceresumeidle.md) | The WdfDeviceResumeIdle method informs the framework that the specified device is not in use and can be placed in a device low-power state if it remains idle. |
+| [WdfDeviceStopIdle macro](nf-wdfdevice-wdfdevicestopidle.md) | The WdfDeviceStopIdle method informs the framework that the specified device must be placed in its working (D0) power state. |

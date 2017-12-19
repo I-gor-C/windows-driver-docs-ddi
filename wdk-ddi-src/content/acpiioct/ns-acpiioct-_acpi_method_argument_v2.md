@@ -7,7 +7,7 @@ old-location: acpi\acpi_method_argument_v2.htm
 old-project: acpi
 ms.assetid: 10DD32ED-96F2-43BF-BBF4-85851BC9A377
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
+ms.date: 12/14/2017
 ms.keywords: _ACPI_METHOD_ARGUMENT_V2, ACPI_METHOD_ARGUMENT_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILSETEXECUTORRFSTATEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetexecutorrfstateparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d7f36cbd-56bb-470e-b965-369b9e49f5e2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS, LPRILSETEXECUTORRFSTATEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: storage\ufs_attributes_descriptor.htm
 old-project: storage
 ms.assetid: 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: UFS_ATTRIBUTES_DESCRIPTOR, UFS_ATTRIBUTES_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -440,39 +440,39 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.ufs_config_descriptor">UFS_CONFIG_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_config_descriptor.md">UFS_CONFIG_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_device_health_descriptor">UFS_DEVICE_HEALTH_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_device_health_descriptor.md">UFS_DEVICE_HEALTH_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_device_descriptor">UFS_DEVICE_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_device_descriptor.md">UFS_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_geometry_descriptor">UFS_GEOMETRY_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_interconnect_descriptor">UFS_INTERCONNECT_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_interconnect_descriptor.md">UFS_INTERCONNECT_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_power_descriptor">UFS_POWER_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_power_descriptor.md">UFS_POWER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_rpmb_unit_descriptor">UFS_RPMB_UNIT_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="storage.ufs_string_descriptor">UFS_STRING_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_unit_config_descriptor">UFS_UNIT_CONFIG_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_unit_config_descriptor.md">UFS_UNIT_CONFIG_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.ufs_unit_descriptor">UFS_UNIT_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_unit_descriptor.md">UFS_UNIT_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_ATTRIBUTES_DESCRIPTOR enumeration%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_ATTRIBUTES_DESCRIPTOR enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,7 +7,7 @@ old-location: stream\ks_ampixaspectratio.htm
 old-project: stream
 ms.assetid: 29c84529-11f6-429b-81c6-96d6a1773b3b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KS_AMPixAspectRatio, KS_AMPixAspectRatio
 ms.prod: windows-hardware
 ms.technology: windows-devices

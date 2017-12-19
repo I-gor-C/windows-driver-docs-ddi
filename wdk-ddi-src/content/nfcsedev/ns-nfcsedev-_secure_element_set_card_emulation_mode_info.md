@@ -7,8 +7,8 @@ old-location: nfpdrivers\secure_element_set_card_emulation_mode_info.htm
 old-project: nfpdrivers
 ms.assetid: 64EE1896-DD19-42AD-92D7-3B3498A83E75
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, *PSECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, PSECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, *PSECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

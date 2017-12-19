@@ -7,8 +7,8 @@ old-location: stream\bda_wmdrm_status.htm
 old-project: stream
 ms.assetid: FEE7B3B2-2433-4772-8E79-C325ECC343FF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_WMDRM_STATUS, BDA_WMDRM_STATUS, *PBDA_WMDRM_STATUS
+ms.date: 12/14/2017
+ms.keywords: _BDA_WMDRM_STATUS, PBDA_WMDRM_STATUS, *PBDA_WMDRM_STATUS, BDA_WMDRM_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

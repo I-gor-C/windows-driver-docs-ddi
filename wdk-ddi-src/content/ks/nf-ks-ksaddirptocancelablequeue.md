@@ -7,7 +7,7 @@ old-location: stream\ksaddirptocancelablequeue.htm
 old-project: stream
 ms.assetid: 399ca0d6-6355-40f8-ac2c-c69d7ae699e1
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsAddIrpToCancelableQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices

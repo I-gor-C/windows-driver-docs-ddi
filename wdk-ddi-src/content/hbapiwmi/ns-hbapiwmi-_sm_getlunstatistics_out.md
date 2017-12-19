@@ -7,8 +7,8 @@ old-location: storage\sm_getlunstatistics_out.htm
 old-project: storage
 ms.assetid: 5b7e4eb2-d6e9-49c9-b84f-72dd4198c0ce
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_GetLUNStatistics_OUT, *PSM_GetLUNStatistics_OUT, SM_GetLUNStatistics_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_GetLUNStatistics_OUT, *PSM_GetLUNStatistics_OUT, PSM_GetLUNStatistics_OUT, SM_GetLUNStatistics_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,11 +4,11 @@ title: _USBFN_NOTIFICATION
 author: windows-driver-content
 description: Describes information about a Universal Serial Bus (USB) event notification that was received by using IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION.
 old-location: buses\usbfn_notification.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 84B66823-F357-44DD-A401-79E27FA6B324
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_NOTIFICATION, *PUSBFN_NOTIFICATION, USBFN_NOTIFICATION
+ms.date: 12/14/2017
+ms.keywords: _USBFN_NOTIFICATION, *PUSBFN_NOTIFICATION, PUSBFN_NOTIFICATION, USBFN_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

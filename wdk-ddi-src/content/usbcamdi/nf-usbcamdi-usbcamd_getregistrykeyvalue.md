@@ -7,7 +7,7 @@ old-location: stream\usbcamd_getregistrykeyvalue.htm
 old-project: stream
 ms.assetid: c3512a79-884f-4f38-9942-63a4a464585c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: USBCAMD_GetRegistryKeyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_get_mode.htm
 old-project: stream
 ms.assetid: 741FFB14-B6F1-452B-AD8A-E82C0E34CB6A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

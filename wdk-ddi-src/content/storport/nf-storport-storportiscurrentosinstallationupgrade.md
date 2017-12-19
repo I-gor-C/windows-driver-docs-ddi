@@ -7,7 +7,7 @@ old-location: storage\storportiscurrentosinstallationupgrade.htm
 old-project: storage
 ms.assetid: 68D944D9-1A52-4FB0-B2D7-9680AB1EDABB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortIsCurrentOsInstallationUpgrade
 ms.prod: windows-hardware
 ms.technology: windows-devices

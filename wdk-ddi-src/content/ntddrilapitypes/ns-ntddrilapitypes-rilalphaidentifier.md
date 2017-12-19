@@ -4,11 +4,11 @@ title: RILALPHAIDENTIFIER
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilalphaidentifier.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2f7e8df5-31ae-4e1a-8dbb-89bfe8fc422d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER, RILALPHAIDENTIFIER
+ms.date: 12/14/2017
+ms.keywords: RILALPHAIDENTIFIER, RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER, LPRILALPHAIDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

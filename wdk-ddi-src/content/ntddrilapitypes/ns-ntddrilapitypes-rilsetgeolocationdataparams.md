@@ -4,11 +4,11 @@ title: RILSETGEOLOCATIONDATAPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetgeolocationdataparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7736c8d6-731e-4322-aade-ecd23a4fedde
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETGEOLOCATIONDATAPARAMS, *LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSETGEOLOCATIONDATAPARAMS, LPRILSETGEOLOCATIONDATAPARAMS, *LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

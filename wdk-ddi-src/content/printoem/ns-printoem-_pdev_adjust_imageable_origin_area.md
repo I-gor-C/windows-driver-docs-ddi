@@ -7,8 +7,8 @@ old-location: print\pdev_adjust_imageable_origin_area.htm
 old-project: print
 ms.assetid: 7b66ed24-64c2-49bc-a417-05fe11178b9f
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
+ms.date: 12/14/2017
+ms.keywords: _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

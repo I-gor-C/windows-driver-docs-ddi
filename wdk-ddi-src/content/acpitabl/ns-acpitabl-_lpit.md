@@ -7,8 +7,8 @@ old-location: acpi\lpit.htm
 old-project: acpi
 ms.assetid: 351BC859-E703-4F75-B691-A503C08560CF
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _LPIT, LPIT, *PLPIT
+ms.date: 12/14/2017
+ms.keywords: _LPIT, LPIT, *PLPIT, PLPIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

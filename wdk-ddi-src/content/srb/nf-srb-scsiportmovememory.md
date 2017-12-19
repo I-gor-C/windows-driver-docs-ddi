@@ -7,7 +7,7 @@ old-location: storage\scsiportmovememory.htm
 old-project: storage
 ms.assetid: c4ed9551-3dc8-4f76-9bcb-26030f76c244
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: ScsiPortMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices

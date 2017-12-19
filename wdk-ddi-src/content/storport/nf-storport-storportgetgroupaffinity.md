@@ -7,7 +7,7 @@ old-location: storage\storportgetgroupaffinity.htm
 old-project: storage
 ms.assetid: eec0c985-fb59-4190-afb8-5eb62ac1edea
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortGetGroupAffinity
 ms.prod: windows-hardware
 ms.technology: windows-devices

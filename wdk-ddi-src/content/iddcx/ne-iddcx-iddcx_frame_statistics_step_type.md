@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_statistics_step_type.htm
 old-project: display
 ms.assetid: 1c58841b-fff9-4419-b001-bce150b0f7a0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDDCX_FRAME_STATISTICS_STEP_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

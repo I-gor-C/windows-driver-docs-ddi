@@ -7,8 +7,8 @@ old-location: battery\powersourceupdate.htm
 old-project: battery
 ms.assetid: A1BFCCE4-14F0-4F41-A062-71B001CE14AA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _POWERSOURCEUPDATE, *PPOWERSOURCEUPDATE, POWERSOURCEUPDATE
+ms.date: 12/14/2017
+ms.keywords: _POWERSOURCEUPDATE, POWERSOURCEUPDATE, *PPOWERSOURCEUPDATE, PPOWERSOURCEUPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

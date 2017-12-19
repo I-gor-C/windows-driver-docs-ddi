@@ -7,7 +7,7 @@ old-location: display\d3d12ddicaps_type_video_0020.htm
 old-project: display
 ms.assetid: 3B95996D-EB7C-4DCF-B00C-BA5AFEFD4110
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDICAPS_TYPE_VIDEO_0020, D3D12DDICAPS_TYPE_VIDEO_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices

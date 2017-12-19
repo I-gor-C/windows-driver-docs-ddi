@@ -7,7 +7,7 @@ old-location: display\dxgk_glitch_duration.htm
 old-project: display
 ms.assetid: 8B6597A7-D652-4143-9320-7FB8E98FE8EC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_GLITCH_DURATION, DXGK_GLITCH_DURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

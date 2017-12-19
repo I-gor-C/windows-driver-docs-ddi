@@ -7,7 +7,7 @@ old-location: kernel\rtlintptrsub.htm
 old-project: kernel
 ms.assetid: 72352FD3-4855-4630-AF42-368FF3A6B2BB
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlIntPtrSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

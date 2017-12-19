@@ -80,3 +80,9 @@ Srb.h contain these programming interfaces:
 | [_SRBEX_DATA_SCSI_CDB_VAR structure](ns-srb-_srbex_data_scsi_cdb_var.md) | The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB). |
 | [_SRBEX_DATA_WMI structure](ns-srb-_srbex_data_wmi.md) | The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB. |
 | [_STORAGE_REQUEST_BLOCK structure](ns-srb-_storage_request_block.md) | The STORAGE_REQUEST_BLOCK is the extended format SCSI Request Block (SRB) structure. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [ScsiPortConvertPhysicalAddressToUlong macro](nf-srb-scsiportconvertphysicaladdresstoulong~r1.md) | The ScsiPortConvertPhysicalAddressToUlong routine truncates a SCSI_PHYSICAL_ADDRESS to a ULONG.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |

@@ -7,8 +7,8 @@ old-location: devtest\recorder_configure_params.htm
 old-project: devtest
 ms.assetid: 9D2AB7D0-CD75-4539-9CB8-8CBA33EFE299
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
-ms.keywords: _RECORDER_CONFIGURE_PARAMS, *PRECORDER_CONFIGURE_PARAMS, RECORDER_CONFIGURE_PARAMS
+ms.date: 12/14/2017
+ms.keywords: _RECORDER_CONFIGURE_PARAMS, *PRECORDER_CONFIGURE_PARAMS, RECORDER_CONFIGURE_PARAMS, PRECORDER_CONFIGURE_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

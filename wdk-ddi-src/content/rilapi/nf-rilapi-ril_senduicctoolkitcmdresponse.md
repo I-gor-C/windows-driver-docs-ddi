@@ -4,10 +4,10 @@ title: RIL_SendUiccToolkitCmdResponse function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_senduicctoolkitcmdresponse.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 400e2172-803c-4b6c-a41e-3c322077ffa4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SendUiccToolkitCmdResponse
 ms.prod: windows-hardware
 ms.technology: windows-devices

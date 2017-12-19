@@ -7,7 +7,7 @@ old-location: storage\ioctl_ehstor_device_set_authz_state.htm
 old-project: storage
 ms.assetid: 8C71F597-2141-4DA6-8A14-8B10CB69E5CC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _PDO_TYPE, PDO_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

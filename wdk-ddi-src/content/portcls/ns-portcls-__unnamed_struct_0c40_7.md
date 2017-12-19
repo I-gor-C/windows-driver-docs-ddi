@@ -7,7 +7,7 @@ old-location: audio\pcpin_descriptor.htm
 old-project: audio
 ms.assetid: 1eeee706-b7f4-4b4d-93c8-969eac7c56d9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: *PPCPIN_DESCRIPTOR, *PPCPIN_DESCRIPTOR, PCPIN_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,12 +74,12 @@ Specifies the minimum number of times that the pin needs to be instantiated on a
 
 ### -field AutomationTable
 
-Pointer to the automation table. This member is a pointer to a structure of type <a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a>. The pointer can be <b>NULL</b> to indicate that no automation is supported. The automation table specifies the handlers for the properties and events belonging to the pin instance.
+Pointer to the automation table. This member is a pointer to a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>. The pointer can be <b>NULL</b> to indicate that no automation is supported. The automation table specifies the handlers for the properties and events belonging to the pin instance.
 
 
 ### -field KsPinDescriptor
 
-Describes the pin factory. This member is a structure of type <a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>. A pin factory can have zero interfaces and zero mediums. The list of interfaces is ignored in all cases. The standard-medium list will default to a list containing only device I/O (KSMEDIUM_STANDARD_DEVIO).
+Describes the pin factory. This member is a structure of type <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>. A pin factory can have zero interfaces and zero mediums. The list of interfaces is ignored in all cases. The standard-medium list will default to a list containing only device I/O (KSMEDIUM_STANDARD_DEVIO).
 
 
 ## -remarks
@@ -130,10 +130,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>
 </dt>
 <dt>
-<a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>
+<a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="audio.ipincount_pincount">IPinCount::PinCount</a>
@@ -152,5 +152,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCPIN_DESCRIPTOR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCPIN_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,7 +7,7 @@ old-location: kernel\rtlconvertlongtolargeinteger.htm
 old-project: kernel
 ms.assetid: 8c1f6cd3-f54b-4104-bd14-63d2c284946c
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlConvertLongToLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices

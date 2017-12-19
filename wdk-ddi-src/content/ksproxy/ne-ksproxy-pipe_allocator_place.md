@@ -7,7 +7,7 @@ old-location: stream\pipe_allocator_place.htm
 old-project: stream
 ms.assetid: 86B1D8BB-7213-403C-8EAB-D681A5DBF49E
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: PIPE_ALLOCATOR_PLACE, PIPE_ALLOCATOR_PLACE
 ms.prod: windows-hardware
 ms.technology: windows-devices

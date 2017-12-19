@@ -7,7 +7,7 @@ old-location: devtest\kdchangeoption.htm
 old-project: devtest
 ms.assetid: 6f93b62b-6dc2-417b-9e1c-44be628c489c
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 12/14/2017
 ms.keywords: KdChangeOption
 ms.prod: windows-hardware
 ms.technology: windows-devices

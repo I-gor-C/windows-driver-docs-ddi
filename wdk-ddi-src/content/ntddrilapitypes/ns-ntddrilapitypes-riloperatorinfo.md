@@ -4,11 +4,11 @@ title: RILOPERATORINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riloperatorinfo.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 213a4d4e-d19a-40c4-9bc4-8cf6f8aa2d07
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILOPERATORINFO, *LPRILOPERATORINFO, RILOPERATORINFO
+ms.date: 12/14/2017
+ms.keywords: RILOPERATORINFO, LPRILOPERATORINFO, RILOPERATORINFO, *LPRILOPERATORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

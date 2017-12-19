@@ -7,7 +7,7 @@ old-location: stream\streamclassabortoutstandingrequests.htm
 old-project: stream
 ms.assetid: d60ef96b-d145-48e5-be56-7f0bc4d1d0f3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: StreamClassAbortOutstandingRequests
 ms.prod: windows-hardware
 ms.technology: windows-devices

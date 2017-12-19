@@ -7,8 +7,8 @@ old-location: print\opttype.htm
 old-project: print
 ms.assetid: 041dd438-e837-4912-bda7-de654204198b
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OPTTYPE, *POPTTYPE, OPTTYPE
+ms.date: 12/14/2017
+ms.keywords: _OPTTYPE, OPTTYPE, POPTTYPE, *POPTTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

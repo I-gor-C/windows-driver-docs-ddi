@@ -4,11 +4,11 @@ title: RILCALLINFO_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallinfo_v1.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: eae7108f-94d5-4147-b554-189c1a356641
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCALLINFO_V1, RILCALLINFO_V1, *LPRILCALLINFO_V1
+ms.date: 12/14/2017
+ms.keywords: RILCALLINFO_V1, RILCALLINFO_V1, LPRILCALLINFO_V1, *LPRILCALLINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

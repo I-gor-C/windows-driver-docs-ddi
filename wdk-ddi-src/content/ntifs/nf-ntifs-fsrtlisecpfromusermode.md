@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlisecpfromusermode.htm
 old-project: ifsk
 ms.assetid: cdc5d6a3-637e-4f0e-bc94-25bfe5763695
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: FsRtlIsEcpFromUserMode
 ms.prod: windows-hardware
 ms.technology: windows-devices

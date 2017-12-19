@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_destroyvideodecoderheap_0032.htm
 old-project: display
 ms.assetid: EFB7D67D-1900-4182-B604-8C0A183B118D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

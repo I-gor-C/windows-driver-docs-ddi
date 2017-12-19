@@ -7,7 +7,7 @@ old-location: display\videoportwaitforsingleobject.htm
 old-project: display
 ms.assetid: 574aa79e-c8ef-44de-8d0b-a550698a32e0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortWaitForSingleObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

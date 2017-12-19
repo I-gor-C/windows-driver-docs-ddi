@@ -7,8 +7,8 @@ old-location: stream\transportaudioparms.htm
 old-project: stream
 ms.assetid: 591ef01a-1a89-454a-ab58-a76813a9d4c2
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagTRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS
+ms.date: 12/14/2017
+ms.keywords: tagTRANSPORTAUDIOPARMS, PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

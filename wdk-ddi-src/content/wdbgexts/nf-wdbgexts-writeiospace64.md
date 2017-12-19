@@ -4,10 +4,10 @@ title: WriteIoSpace64 function
 author: windows-driver-content
 description: The WriteIoSpace64 function writes to the system I/O locations.
 old-location: debugger\writeiospace64.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: c750d3de-8481-42d5-a290-00e49d5fe82b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: WriteIoSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices

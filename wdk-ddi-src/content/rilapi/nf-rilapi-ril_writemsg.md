@@ -4,10 +4,10 @@ title: RIL_WriteMsg function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_writemsg.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6d8e934a-9f1e-4b65-9491-02cf7f5f9255
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_WriteMsg
 ms.prod: windows-hardware
 ms.technology: windows-devices

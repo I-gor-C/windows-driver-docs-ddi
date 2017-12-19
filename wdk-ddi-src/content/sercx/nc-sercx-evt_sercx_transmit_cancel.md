@@ -7,8 +7,8 @@ old-location: serports\evtsercxtransmitcancel.htm
 old-project: serports
 ms.assetid: 7922A3BD-8829-42A3-9F94-3C26F1262626
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
-ms.keywords: SENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+ms.date: 12/14/2017
+ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

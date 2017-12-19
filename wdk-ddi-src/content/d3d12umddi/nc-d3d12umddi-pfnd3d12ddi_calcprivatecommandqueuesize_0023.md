@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calcprivatecommandqueuesize_0023.htm
 old-project: display
 ms.assetid: 70A81285-97CD-4526-8EB0-F00908B2D331
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

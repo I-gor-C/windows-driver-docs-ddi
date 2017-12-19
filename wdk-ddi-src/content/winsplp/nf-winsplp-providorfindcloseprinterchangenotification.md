@@ -7,7 +7,7 @@ old-location: print\providorfindcloseprinterchangenotification.htm
 old-project: print
 ms.assetid: D7360F7B-394D-480A-B2AB-B4461B057E43
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: ProvidorFindClosePrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices

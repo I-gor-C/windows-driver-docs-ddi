@@ -7,7 +7,7 @@ old-location: stream\kspeekoperation.htm
 old-project: stream
 ms.assetid: 057E822B-0C55-4E4A-9207-48FB583E8EAF
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSPEEKOPERATION, KSPEEKOPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

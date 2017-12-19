@@ -4,11 +4,11 @@ title: RILDELETEPHONEBOOKENTRYPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildeletephonebookentryparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 1a372468-2bad-44d4-a19a-d3b517b7ed7b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILDELETEPHONEBOOKENTRYPARAMS, LPRILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

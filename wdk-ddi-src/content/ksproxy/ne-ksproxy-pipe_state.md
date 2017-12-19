@@ -7,7 +7,7 @@ old-location: stream\pipe_state.htm
 old-project: stream
 ms.assetid: A3053A39-5DB6-4DB8-89ED-63ABDB1CD16F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: PIPE_STATE, PIPE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

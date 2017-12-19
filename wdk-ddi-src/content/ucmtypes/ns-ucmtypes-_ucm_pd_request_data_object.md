@@ -4,11 +4,11 @@ title: _UCM_PD_REQUEST_DATA_OBJECT
 author: windows-driver-content
 description: Describes a Request Data Object (RDO). For information about these members, see the Power Delivery specification.
 old-location: buses\ucm_pd_request_data_object.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 2F5CC46B-3BFC-4C69-A9C8-C4BC4864E84B
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT
+ms.date: 12/14/2017
+ms.keywords: _UCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT, PUCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: stream\ksproperty_streaminterface.htm
 old-project: stream
 ms.assetid: E771F59E-7F85-40B9-BBA9-D1CC398B12CA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSPROPERTY_STREAMINTERFACE, KSPROPERTY_STREAMINTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices

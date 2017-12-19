@@ -4,10 +4,10 @@ title: FWPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V6_
 author: windows-driver-content
 description: The WPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_EGRESS_VSWITCH_TRANSPORT_V6 run-time filtering layer.
 old-location: netvista\fwps_fields_egress_vswitch_transport_v6.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4c78a684-85e4-4062-8d52-eaf3b04733bc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: FWPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V6_, FWPS_FIELDS_EGRESS_VSWITCH_TRANSPORT_V6
 ms.prod: windows-hardware
 ms.technology: windows-devices

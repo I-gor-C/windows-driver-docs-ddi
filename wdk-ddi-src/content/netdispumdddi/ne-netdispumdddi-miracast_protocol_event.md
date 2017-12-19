@@ -7,7 +7,7 @@ old-location: display\miracast_protocol_event.htm
 old-project: display
 ms.assetid: 7a47acf7-93a9-4bb2-a120-17c32c852ea9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: MIRACAST_PROTOCOL_EVENT, MIRACAST_PROTOCOL_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices

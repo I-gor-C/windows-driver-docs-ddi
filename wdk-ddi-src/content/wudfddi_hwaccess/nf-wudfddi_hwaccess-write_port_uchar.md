@@ -7,7 +7,7 @@ old-location: wdf\write_port_uchar.htm
 old-project: wdf
 ms.assetid: 5AA3DD53-26A0-460F-9F6D-3515F9C334FA
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

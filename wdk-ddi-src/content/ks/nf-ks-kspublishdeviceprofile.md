@@ -7,7 +7,7 @@ old-location: stream\kspublishdeviceprofile.htm
 old-project: stream
 ms.assetid: 944A593D-D623-400C-80F9-6DCD973681C9
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsPublishDeviceProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices

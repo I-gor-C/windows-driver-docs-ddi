@@ -7,7 +7,7 @@ old-location: display\d3dddi_waitforsynchronizationobjectfromcpu_flags.htm
 old-project: display
 ms.assetid: 2283D20F-D256-48E5-BFD2-D3ACACD7BF1C
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS, D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

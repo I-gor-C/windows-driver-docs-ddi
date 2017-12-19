@@ -7,8 +7,8 @@ old-location: nfpdrivers\_nfcrm_set_radio_state_.htm
 old-project: nfpdrivers
 ms.assetid: 22FE29AC-790D-40D2-949F-9C132F67AEAB
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE
+ms.date: 12/14/2017
+ms.keywords: _NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE, PNFCRM_SET_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

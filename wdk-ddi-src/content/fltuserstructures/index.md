@@ -24,6 +24,7 @@ Fltuserstructures.h contain these programming interfaces:
 | [_FILTER_VOLUME_BASIC_INFORMATION structure](ns-fltuserstructures-_filter_volume_basic_information.md) | The caller-allocated FILTER_VOLUME_BASIC_INFORMATION structure contains basic information for a volume. |
 | [_FILTER_VOLUME_STANDARD_INFORMATION structure](ns-fltuserstructures-_filter_volume_standard_information.md) | The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume. |
 | [_INSTANCE_AGGREGATE_STANDARD_INFORMATION structure](ns-fltuserstructures-_instance_aggregate_standard_information.md) | The caller-allocated INSTANCE_AGGREGATE_STANDARD_INFORMATION structure contains information for either a minifilter driver instance or a legacy filter driver. |
+| [_INSTANCE_BASIC_INFORMATION structure](ns-fltuserstructures-_instance_basic_information.md) | The INSTANCE_BASIC_INFORMATION structure contains basic information for a minifilter instance. |
 | [_INSTANCE_FULL_INFORMATION structure](ns-fltuserstructures-_instance_full_information.md) | The INSTANCE_FULL_INFORMATION structure contains full information for a minifilter instance. |
 | [_INSTANCE_PARTIAL_INFORMATION structure](ns-fltuserstructures-_instance_partial_information.md) | The INSTANCE_PARTIAL_INFORMATION structure contains partial information for a minifilter instance. |
 

@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicesetstaticstopremove.htm
 old-project: wdf
 ms.assetid: b2776618-2585-4a7a-9f8f-536f1d28745b
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceSetStaticStopRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices

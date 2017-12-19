@@ -4,10 +4,10 @@ title: RILUICCRECORDTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccrecordtype_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2eb26355-25e9-4edf-9695-08b172593712
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILUICCRECORDTYPE, RILUICCRECORDTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: pos\pos_cx_event_dest.htm
 old-project: pos
 ms.assetid: 63D16B9E-82CC-4171-B80A-D0FA6F2066E2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: _POS_CX_EVENT_DEST, POS_CX_EVENT_DEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: wdf\wdf_interrupt_polarity_umdf.htm
 old-project: wdf
 ms.assetid: 30E61DCE-D88C-47B5-B5CD-3C43C6157FBA
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _WDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY, *PWDF_INTERRUPT_POLARITY
+ms.date: 12/15/2017
+ms.keywords: _WDF_INTERRUPT_POLARITY, *PWDF_INTERRUPT_POLARITY, PWDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

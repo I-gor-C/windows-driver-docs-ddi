@@ -7,8 +7,8 @@ old-location: stream\bda_cas_check_entitlementtoken.htm
 old-project: stream
 ms.assetid: B6B645DF-AB4C-42FE-A664-AF9C9DD4F9E6
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_CAS_CHECK_ENTITLEMENTTOKEN, BDA_CAS_CHECK_ENTITLEMENTTOKEN, *PBDA_CAS_CHECK_ENTITLEMENTTOKEN
+ms.date: 12/14/2017
+ms.keywords: _BDA_CAS_CHECK_ENTITLEMENTTOKEN, BDA_CAS_CHECK_ENTITLEMENTTOKEN, *PBDA_CAS_CHECK_ENTITLEMENTTOKEN, PBDA_CAS_CHECK_ENTITLEMENTTOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_waitforverticalblankevent2.htm
 old-project: display
 ms.assetid: b83e1d1c-e940-4e7b-8a74-82aee2c54391
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_WAITFORVERTICALBLANKEVENT2, D3DKMT_WAITFORVERTICALBLANKEVENT2
 ms.prod: windows-hardware
 ms.technology: windows-devices

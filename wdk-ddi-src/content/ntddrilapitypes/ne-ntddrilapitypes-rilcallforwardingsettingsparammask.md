@@ -4,10 +4,10 @@ title: RILCALLFORWARDINGSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallforwardingsettingsparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0da4e19f-9e7b-4986-bdb1-fc59e177f3fa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLFORWARDINGSETTINGSPARAMMASK, RILCALLFORWARDINGSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

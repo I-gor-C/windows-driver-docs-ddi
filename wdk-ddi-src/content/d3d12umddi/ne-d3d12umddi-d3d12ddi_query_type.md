@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_query_type.htm
 old-project: display
 ms.assetid: C411997A-0F01-4D88-816A-BD375D0744C7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_QUERY_TYPE, D3D12DDI_QUERY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

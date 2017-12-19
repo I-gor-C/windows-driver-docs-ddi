@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_hce_data_packet.htm
 old-project: nfpdrivers
 ms.assetid: A287CBC7-BB22-487E-8E06-47702DF29DCE
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_HCE_DATA_PACKET, SECURE_ELEMENT_HCE_DATA_PACKET, *PSECURE_ELEMENT_HCE_DATA_PACKET
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_HCE_DATA_PACKET, PSECURE_ELEMENT_HCE_DATA_PACKET, *PSECURE_ELEMENT_HCE_DATA_PACKET, SECURE_ELEMENT_HCE_DATA_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: stream\bda_string.htm
 old-project: stream
 ms.assetid: 69E2090F-02A6-43FB-85CB-E482B9142645
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_STRING, BDA_STRING, *PBDA_STRING
+ms.date: 12/14/2017
+ms.keywords: _BDA_STRING, *PBDA_STRING, PBDA_STRING, BDA_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

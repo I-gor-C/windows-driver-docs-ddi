@@ -7,7 +7,7 @@ old-location: storage\stor_event_association_enum.htm
 old-project: storage
 ms.assetid: 2e0672b6-e692-43c8-8a20-7947c854c4c9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _STOR_EVENT_ASSOCIATION_ENUM, STOR_EVENT_ASSOCIATION_ENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices

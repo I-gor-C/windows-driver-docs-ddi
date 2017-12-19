@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createcommandqueue_0023.htm
 old-project: display
 ms.assetid: 1DA52354-2338-4214-8489-B6BFCD6060FB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

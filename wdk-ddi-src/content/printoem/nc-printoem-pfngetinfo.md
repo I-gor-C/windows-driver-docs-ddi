@@ -7,8 +7,8 @@ old-location: print\unifontobj_getinfo.htm
 old-project: print
 ms.assetid: 2c0d350d-dcdf-4da7-8cca-7f36d4ca622e
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
+ms.date: 12/14/2017
+ms.keywords: IPrintSchemaTicket2, IPrintSchemaTicket2::GetParameterInitializer, GetParameterInitializer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

@@ -4,10 +4,10 @@ title: VmbChannelInitSetClientContextSize function
 author: windows-driver-content
 description: The VmbChannelInitSetClientContextSize function sets the size of the optional context area allocated for the client driver on each incoming packet.
 old-location: netvista\vmbchannelinitsetclientcontextsize.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 6AABB3EB-F61A-40DA-BA9F-2AB91FC4B89E
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: VmbChannelInitSetClientContextSize
 ms.prod: windows-hardware
 ms.technology: windows-devices

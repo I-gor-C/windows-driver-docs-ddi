@@ -7,7 +7,7 @@ old-location: stream\capturedmetadatawhitebalancegains.htm
 old-project: stream
 ms.assetid: 1F844204-0709-4203-80C5-C90949F96159
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: tagCapturedMetadataWhiteBalanceGains, CapturedMetadataWhiteBalanceGains
 ms.prod: windows-hardware
 ms.technology: windows-devices

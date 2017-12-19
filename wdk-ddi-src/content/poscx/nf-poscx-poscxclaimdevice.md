@@ -7,7 +7,7 @@ old-location: pos\poscxclaimdevice.htm
 old-project: pos
 ms.assetid: 16EB583C-FB61-4811-A691-3FBD159F8FD0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: PosCxClaimDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices

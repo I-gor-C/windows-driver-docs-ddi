@@ -7,8 +7,8 @@ old-location: bltooth\l2cap_retransmission_and_flow_control.htm
 old-project: bltooth
 ms.assetid: 0D4528C0-AEE6-4AD2-A3E6-524A6EB8A0D9
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, *PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, L2CAP_RETRANSMISSION_AND_FLOW_CONTROL
+ms.date: 12/14/2017
+ms.keywords: _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, *PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, L2CAP_RETRANSMISSION_AND_FLOW_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

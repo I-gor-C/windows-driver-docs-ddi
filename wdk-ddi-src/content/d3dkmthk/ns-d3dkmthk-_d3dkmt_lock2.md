@@ -7,7 +7,7 @@ old-location: display\d3dkmt_lock2.htm
 old-project: display
 ms.assetid: AFDA9D5F-2590-4034-B2CF-07990F4553C8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_LOCK2, D3DKMT_LOCK2
 ms.prod: windows-hardware
 ms.technology: windows-devices

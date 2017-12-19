@@ -7,8 +7,8 @@ old-location: storage\ses_download_microcode_status_diagnostic_page.htm
 old-project: storage
 ms.assetid: 4572040b-c234-4281-b9d7-14d7f2bb7506
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE, SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE
+ms.date: 12/15/2017
+ms.keywords: _SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE, PSES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE, SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

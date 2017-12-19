@@ -416,6 +416,8 @@
 ### [USBD_UrbAllocate function](../usbdlib/nf-usbdlib-usbd_urballocate.md)
 ### [USBD_UrbFree function](../usbdlib/nf-usbdlib-usbd_urbfree.md)
 ### [USBD_ValidateConfigurationDescriptor function](../usbdlib/nf-usbdlib-usbd_validateconfigurationdescriptor.md)
+### [UsbBuildGetStatusRequest macro](../usbdlib/nf-usbdlib-usbbuildgetstatusrequest.md)
+### [UsbBuildInterruptOrBulkTransferRequest macro](../usbdlib/nf-usbdlib-usbbuildinterruptorbulktransferrequest.md)
 ### [UsbBuildOpenStaticStreamsRequest function](../usbdlib/nf-usbdlib-usbbuildopenstaticstreamsrequest.md)
 ### [_COMPOSITE_DEVICE_CAPABILITIES structure](../usbdlib/ns-usbdlib-_composite_device_capabilities.md)
 ### [_REGISTER_COMPOSITE_DEVICE structure](../usbdlib/ns-usbdlib-_register_composite_device.md)

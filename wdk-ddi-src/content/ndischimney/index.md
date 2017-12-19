@@ -6,8 +6,8 @@ UID: NA:
 
 ## -description
 
-This header is used by Networking drivers for Windows Vista and later. For more information, see
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+This header is used by NetVista. For more information, see
+- [NetVista](../_NetVista/index.md)
 
 Ndischimney.h contain these programming interfaces:
 
@@ -30,6 +30,7 @@ Ndischimney.h contain these programming interfaces:
 | [NdisOffloadTcpReceive function](nf-ndischimney-ndisoffloadtcpreceive.md) | A protocol driver or an intermediate driver calls the NdisOffloadTcpReceive function to post receive requests (receive buffers) on an offloaded TCP connection. |
 | [NdisOffloadTcpReceiveReturn function](nf-ndischimney-ndisoffloadtcpreceivereturn.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an underlying offload target. |
 | [NdisOffloadTcpSend function](nf-ndischimney-ndisoffloadtcpsend.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpSend function to transmit data on an offloaded TCP connection. |
+| [NdisQueryOffloadState function](nf-ndischimney-ndisqueryoffloadstate.md) | A protocol or intermediate driver calls the NdisQueryOffloadState function to query previously offloaded TCP chimney state objects. |
 | [NdisTerminateOffload function](nf-ndischimney-ndisterminateoffload.md) | A protocol driver or intermediate driver calls the NdisTerminateOffload function to terminate the offload of one or more state objects |
 | [NdisUpdateOffload function](nf-ndischimney-ndisupdateoffload.md) | A protocol or intermediate driver calls the NdisUpdateOffload function to update previously offloaded TCP chimney state objects. |
 

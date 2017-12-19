@@ -4,11 +4,11 @@ title: RILCALLMODIFICATIONINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationinfo_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2e17e480-325a-4a7c-84b8-07775ddd52bc
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO
+ms.date: 12/14/2017
+ms.keywords: RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

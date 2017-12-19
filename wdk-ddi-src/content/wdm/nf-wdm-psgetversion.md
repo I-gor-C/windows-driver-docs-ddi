@@ -7,7 +7,7 @@ old-location: kernel\psgetversion.htm
 old-project: kernel
 ms.assetid: db3d2e34-3d83-423d-b446-2800d53a8220
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices

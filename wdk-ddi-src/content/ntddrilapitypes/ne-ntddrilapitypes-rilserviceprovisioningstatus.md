@@ -4,10 +4,10 @@ title: RILSERVICEPROVISIONINGSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilserviceprovisioningstatus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 2f611dff-56b5-406f-8f67-cd3744caa1b5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSERVICEPROVISIONINGSTATUS, RILSERVICEPROVISIONINGSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

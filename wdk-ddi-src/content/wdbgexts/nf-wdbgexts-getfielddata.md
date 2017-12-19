@@ -4,10 +4,10 @@ title: GetFieldData function
 author: windows-driver-content
 description: The GetFieldData function returns the value of a member in a structure.
 old-location: debugger\getfielddata.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: e60c2288-fe25-4da5-9b17-6e95a30e7c1c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: GetFieldData
 ms.prod: windows-hardware
 ms.technology: windows-devices

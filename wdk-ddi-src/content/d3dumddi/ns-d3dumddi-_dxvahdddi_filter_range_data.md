@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_filter_range_data.htm
 old-project: display
 ms.assetid: 46f5ee68-ed1a-4da4-b761-60157efb3252
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXVAHDDDI_FILTER_RANGE_DATA, DXVAHDDDI_FILTER_RANGE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

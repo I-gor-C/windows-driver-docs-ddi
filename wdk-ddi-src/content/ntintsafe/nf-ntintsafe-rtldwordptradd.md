@@ -7,7 +7,7 @@ old-location: kernel\rtldwordptradd.htm
 old-project: kernel
 ms.assetid: 8364FC5F-1FF4-415F-B83C-4A866C860522
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlDWordPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RILMSGMWISUMMARYLISTPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwisummarylistparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f7b9d558-7c95-40d5-9740-ae1b9f7595c1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGMWISUMMARYLISTPARAMMASK, RILMSGMWISUMMARYLISTPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

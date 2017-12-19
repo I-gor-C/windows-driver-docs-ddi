@@ -4,10 +4,10 @@ title: RILSYSTEMSELECTIONPREFSMODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefsmode.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f2d9bb70-cb0c-4e4b-be7a-11a89df739be
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSYSTEMSELECTIONPREFSMODE, RILSYSTEMSELECTIONPREFSMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices

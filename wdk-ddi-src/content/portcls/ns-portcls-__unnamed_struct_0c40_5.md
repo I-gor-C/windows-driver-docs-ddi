@@ -1,14 +1,14 @@
 ---
 UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_5
-title: PCEVENT_ITEM
+title: *PPCEVENT_ITEM
 author: windows-driver-content
 description: The PCEVENT_ITEM structure is used to describe an event that is supported by a particular filter, pin, or node.
 old-location: audio\pcevent_item.htm
 old-project: audio
 ms.assetid: b91a7582-e146-4ded-a6b7-cb77850bfd2c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: PCEVENT_ITEM, PCEVENT_ITEM, *PPCEVENT_ITEM
+ms.date: 12/14/2017
+ms.keywords: *PPCEVENT_ITEM, *PPCEVENT_ITEM, PCEVENT_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -33,7 +33,7 @@ req.dll:
 req.irql: PASSIVE_LEVEL
 ---
 
-# PCEVENT_ITEM structure
+# *PPCEVENT_ITEM structure
 
 
 
@@ -111,7 +111,7 @@ When calling the <b>Handler</b> routine, the caller passes in a single call para
 
 
 ## -remarks
-The <b>PCEVENT_ITEM</b> structure specifies a particular event item in an automation table. The <a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a> structure points to an array of <b>PCEVENT_ITEM</b> structures.
+The <b>PCEVENT_ITEM</b> structure specifies a particular event item in an automation table. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a> structure points to an array of <b>PCEVENT_ITEM</b> structures.
 
 In WDM audio, the target for an event request is either a pin instance or a node on a pin. A filter instance cannot be the target of an event request.
 
@@ -137,12 +137,12 @@ Header
 <a href="audio.pcevent_request">PCEVENT_REQUEST</a>
 </dt>
 <dt>
-<a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCEVENT_ITEM structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCEVENT_ITEM structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

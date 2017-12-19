@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-crypto-session-flags-0030.htm
 old-project: display
 ms.assetid: 0a799227-9b37-45f6-bded-e56c439e465f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_CRYPTO_SESSION_FLAGS_0030, D3D12DDI_CRYPTO_SESSION_FLAGS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices

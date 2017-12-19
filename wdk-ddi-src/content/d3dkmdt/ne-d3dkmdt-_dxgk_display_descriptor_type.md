@@ -7,8 +7,8 @@ old-location: display\dxgk_display_descriptor_type.htm
 old-project: display
 ms.assetid: 2AC0B5CF-67FB-462F-9118-E30FEDE9A019
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_DISPLAY_DESCRIPTOR_TYPE, *PDXGK_DISPLAY_DESCRIPTOR_TYPE, DXGK_DISPLAY_DESCRIPTOR_TYPE
+ms.date: 12/15/2017
+ms.keywords: _DXGK_DISPLAY_DESCRIPTOR_TYPE, *PDXGK_DISPLAY_DESCRIPTOR_TYPE, PDXGK_DISPLAY_DESCRIPTOR_TYPE, DXGK_DISPLAY_DESCRIPTOR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_adapter_commit_modes.htm
 old-project: display
 ms.assetid: 30e1d240-8a1e-4bcd-8c04-76894ac61624
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

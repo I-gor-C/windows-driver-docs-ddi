@@ -7,7 +7,7 @@ old-location: kernel\rtlcomparememory.htm
 old-project: kernel
 ms.assetid: 1801fc27-53bf-4ac5-be41-072dfd8b0696
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlCompareMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices

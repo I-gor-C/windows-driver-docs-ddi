@@ -4,10 +4,10 @@ title: RILMSGCDMAMSGENCODING
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmamsgencoding.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d0bc5fa4-d08d-484c-b6e0-35c7f1d144c3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILMSGCDMAMSGENCODING, RILMSGCDMAMSGENCODING
 ms.prod: windows-hardware
 ms.technology: windows-devices

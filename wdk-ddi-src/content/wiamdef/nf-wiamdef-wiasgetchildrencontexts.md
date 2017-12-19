@@ -4,10 +4,10 @@ title: wiasGetChildrenContexts function
 author: windows-driver-content
 description: The wiasGetChildrenContexts function retrieves an array of item contexts belonging to the current item's children.
 old-location: image\wiasgetchildrencontexts.htm
-old-project: image
+old-project: Image
 ms.assetid: a69216f4-1272-488f-8d06-8dc3b6a88452
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiasGetChildrenContexts
 ms.prod: windows-hardware
 ms.technology: windows-devices

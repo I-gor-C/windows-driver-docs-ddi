@@ -7,7 +7,7 @@ old-location: storage\hba_openadapter.htm
 old-project: storage
 ms.assetid: 78c37e2c-171b-483c-967d-1b80bde24338
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: HBA_OpenAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILMSGDCS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgdcs.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: b9d37683-fd3d-42fd-9ec2-128b76325868
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILMSGDCS, *LPRILMSGDCS, RILMSGDCS
+ms.date: 12/14/2017
+ms.keywords: RILMSGDCS, LPRILMSGDCS, *LPRILMSGDCS, RILMSGDCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: stream\facecharacterizationblobheader.htm
 old-project: stream
 ms.assetid: F3BDB935-A8CB-41BA-B912-0B9264FE0B09
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: tagFaceCharacterizationBlobHeader, FaceCharacterizationBlobHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices

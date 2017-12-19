@@ -7,8 +7,8 @@ old-location: bltooth\indication_parameters_enhanced.htm
 old-project: bltooth
 ms.assetid: D0FBA555-B61F-4D6F-B93F-C77D395F2BCD
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED
+ms.date: 12/14/2017
+ms.keywords: _INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED, PINDICATION_PARAMETERS_ENHANCED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

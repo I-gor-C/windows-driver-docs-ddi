@@ -4,10 +4,10 @@ title: RIL_GetUiccRecordStatus function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getuiccrecordstatus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f4834b37-7269-47e3-9af4-81d17fa79179
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_GetUiccRecordStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices

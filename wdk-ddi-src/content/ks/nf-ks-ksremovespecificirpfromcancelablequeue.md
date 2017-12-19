@@ -7,7 +7,7 @@ old-location: stream\ksremovespecificirpfromcancelablequeue.htm
 old-project: stream
 ms.assetid: 2d3550c3-4a06-410e-9ec9-fed8b2786092
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsRemoveSpecificIrpFromCancelableQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices

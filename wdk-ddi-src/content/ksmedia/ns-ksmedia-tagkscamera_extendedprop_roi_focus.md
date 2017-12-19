@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_roi_focus.htm
 old-project: stream
 ms.assetid: 448A62D1-34D6-46EC-ADA4-9C9F832E2BDD
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_FOCUS, KSCAMERA_EXTENDEDPROP_ROI_FOCUS, *PKSCAMERA_EXTENDEDPROP_ROI_FOCUS
+ms.date: 12/14/2017
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_FOCUS, *PKSCAMERA_EXTENDEDPROP_ROI_FOCUS, PKSCAMERA_EXTENDEDPROP_ROI_FOCUS, KSCAMERA_EXTENDEDPROP_ROI_FOCUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

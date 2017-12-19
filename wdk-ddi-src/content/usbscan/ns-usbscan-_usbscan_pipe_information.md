@@ -4,11 +4,11 @@ title: _USBSCAN_PIPE_INFORMATION
 author: windows-driver-content
 description: The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a USBSCAN_PIPE_CONFIGURATION structure.
 old-location: image\usbscan_pipe_information.htm
-old-project: image
+old-project: Image
 ms.assetid: a13bec15-67e1-45f9-be90-dee5c555ad64
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBSCAN_PIPE_INFORMATION, *PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION
+ms.date: 12/14/2017
+ms.keywords: _USBSCAN_PIPE_INFORMATION, PUSBSCAN_PIPE_INFORMATION, *PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -152,5 +152,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20USBSCAN_PIPE_INFORMATION structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20USBSCAN_PIPE_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

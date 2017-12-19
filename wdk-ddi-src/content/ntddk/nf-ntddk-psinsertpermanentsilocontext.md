@@ -7,7 +7,7 @@ old-location: kernel\psinsertpermanentsilocontext.htm
 old-project: kernel
 ms.assetid: ADBAB25B-7646-4E0E-AFD8-18B87A293674
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsInsertPermanentSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

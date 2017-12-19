@@ -4,11 +4,11 @@ title: _WDI_TXRX_PEER_CFG
 author: windows-driver-content
 description: The WDI_TXRX_PEER_CFG structure defines peer configuration.
 old-location: netvista\wdi_txrx_peer_cfg.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5d2a97a3-3214-4f23-bf9d-d0ed292a46f0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG
+ms.date: 12/14/2017
+ms.keywords: _WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG, PWDI_TXRX_PEER_CFG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

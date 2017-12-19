@@ -7,7 +7,7 @@ old-location: audio\pcfilter_descriptor.htm
 old-project: audio
 ms.assetid: 11fd8fc0-98aa-4b06-973c-2b175144da42
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ Reserved. Initialize to zero.
 
 ### -field AutomationTable
 
-Pointer to the automation table. This is a structure of type <a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a>. The automation table specifies the handlers for the properties of the filter instance.
+Pointer to the automation table. This is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>. The automation table specifies the handlers for the properties of the filter instance.
 
 
 ### -field PinSize
@@ -91,7 +91,7 @@ Pointer to the array of pin descriptors. Each array element is a <a href="audio.
 
 ### -field NodeSize
 
-Specifies the size in bytes of each element in the <b>Nodes</b> array. This value should be a multiple of eight and should be at least <b>sizeof</b>(<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_8.md">PCNODE_DESCRIPTOR</a>). Larger values allow client-specific descriptor information to be appended to node descriptors.
+Specifies the size in bytes of each element in the <b>Nodes</b> array. This value should be a multiple of eight and should be at least <b>sizeof</b>(<a href="audio.pcnode_descriptor">PCNODE_DESCRIPTOR</a>). Larger values allow client-specific descriptor information to be appended to node descriptors.
 
 
 ### -field NodeCount
@@ -101,7 +101,7 @@ Specifies the number of node descriptors in the <b>Nodes</b> array.
 
 ### -field Nodes
 
-Pointer to the array of node descriptors. Each array element is a <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_8.md">PCNODE_DESCRIPTOR</a> structure.
+Pointer to the array of node descriptors. Each array element is a <a href="audio.pcnode_descriptor">PCNODE_DESCRIPTOR</a> structure.
 
 
 ### -field ConnectionCount
@@ -146,13 +146,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcautomation_table">PCAUTOMATION_TABLE</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>
 </dt>
 <dt>
 <a href="audio.pcpin_descriptor">PCPIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_8.md">PCNODE_DESCRIPTOR</a>
+<a href="audio.pcnode_descriptor">PCNODE_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="audio.pcconnection_descriptor">PCCONNECTION_DESCRIPTOR</a>
@@ -165,5 +165,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCFILTER_DESCRIPTOR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCFILTER_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

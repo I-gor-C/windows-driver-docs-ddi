@@ -7,7 +7,7 @@ old-location: wdf\wdf_get_context_type_info.htm
 old-project: wdf
 ms.assetid: 3273a4b6-9c5e-4671-be9e-45cdd010558a
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WDF_GET_CONTEXT_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

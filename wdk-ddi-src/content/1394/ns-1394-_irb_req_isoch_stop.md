@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_stop.htm
 old-project: IEEE
 ms.assetid: 1400FAC6-DD4E-4E8E-A0ED-C59B700F0672
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_STOP, IRB_REQ_ISOCH_STOP
 ms.prod: windows-hardware
 ms.technology: windows-devices

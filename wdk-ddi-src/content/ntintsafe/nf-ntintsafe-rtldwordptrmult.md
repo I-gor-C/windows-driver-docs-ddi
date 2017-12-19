@@ -7,7 +7,7 @@ old-location: kernel\rtldwordptrmult.htm
 old-project: kernel
 ms.assetid: E7EEE6D7-19C8-481F-BAEF-15998819D2D0
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlDWordPtrMult
 ms.prod: windows-hardware
 ms.technology: windows-devices

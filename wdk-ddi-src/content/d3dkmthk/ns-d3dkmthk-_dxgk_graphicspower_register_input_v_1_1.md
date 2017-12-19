@@ -7,8 +7,8 @@ old-location: display\dxgk-graphicspower-register-input-v-1-1.htm
 old-project: display
 ms.assetid: 5b120f3c-43d2-447a-9959-0788d7decf50
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1, *PDXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1, DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1
+ms.date: 12/15/2017
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1, DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1, *PDXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1, PDXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

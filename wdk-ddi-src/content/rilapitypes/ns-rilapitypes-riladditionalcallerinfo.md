@@ -4,11 +4,11 @@ title: RILADDITIONALCALLERINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riladditionalcallerinfo_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e29f6710-0ca1-4420-b0e7-957ba020254b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO, *LPRILADDITIONALCALLERINFO
+ms.date: 12/14/2017
+ms.keywords: RILADDITIONALCALLERINFO, *LPRILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

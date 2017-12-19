@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_color_rgba.htm
 old-project: display
 ms.assetid: 0d97d6ef-87e6-4ba3-ab4b-aa5b22cb126b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_VIDEO_COLOR_RGBA, D3D11_1DDI_VIDEO_COLOR_RGBA
 ms.prod: windows-hardware
 ms.technology: windows-devices

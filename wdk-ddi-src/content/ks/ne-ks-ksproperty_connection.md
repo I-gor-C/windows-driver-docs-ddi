@@ -7,7 +7,7 @@ old-location: stream\ksproperty_connection.htm
 old-project: stream
 ms.assetid: 5129FB6F-528B-4795-9798-9707DCD57A7D
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSPROPERTY_CONNECTION, KSPROPERTY_CONNECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

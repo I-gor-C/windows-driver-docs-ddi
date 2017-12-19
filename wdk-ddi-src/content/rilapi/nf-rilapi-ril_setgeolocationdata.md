@@ -4,10 +4,10 @@ title: RIL_SetGeolocationData function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_setgeolocationdata.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: d037ff74-a0fb-49a6-8e42-ceac1be61464
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_SetGeolocationData
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_input.htm
 old-project: display
 ms.assetid: 371f494c-abd2-43c8-ab06-749144762b01
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_VIDEO_INPUT, D3D11_1DDI_VIDEO_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices

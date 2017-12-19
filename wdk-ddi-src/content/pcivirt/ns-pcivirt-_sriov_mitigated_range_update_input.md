@@ -7,8 +7,8 @@ old-location: pci\sriov_mitigated_range_update_input.htm
 old-project: PCI
 ms.assetid: ae4936ac-9794-4854-81ec-2139b3ce4c3c
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _SRIOV_MITIGATED_RANGE_UPDATE_INPUT, *PSRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT
+ms.date: 12/14/2017
+ms.keywords: _SRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT, *PSRIOV_MITIGATED_RANGE_UPDATE_INPUT, PSRIOV_MITIGATED_RANGE_UPDATE_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

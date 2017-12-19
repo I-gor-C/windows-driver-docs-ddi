@@ -7,7 +7,7 @@ old-location: display\pfngetresourcepresentprivatedriverdatacb.htm
 old-project: display
 ms.assetid: D4F0F272-60DC-4060-9762-3DB49236CE62
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

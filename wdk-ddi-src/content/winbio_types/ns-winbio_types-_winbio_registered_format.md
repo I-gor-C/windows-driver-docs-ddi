@@ -7,8 +7,8 @@ old-location: biometric\winbio_registered_format.htm
 old-project: biometric
 ms.assetid: 70591143-f429-4a6e-8f2a-cc1082f40f6e
 ms.author: windowsdriverdev
-ms.date: 11/13/2017
-ms.keywords: _WINBIO_REGISTERED_FORMAT, *PWINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT
+ms.date: 12/14/2017
+ms.keywords: _WINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT, PWINBIO_REGISTERED_FORMAT, *PWINBIO_REGISTERED_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

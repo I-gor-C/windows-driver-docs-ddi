@@ -7,8 +7,8 @@ old-location: storage\ms_sm_adapterinformationquery.htm
 old-project: storage
 ms.assetid: 81c05f47-e75a-4d67-8e77-33ebe1750c67
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
+ms.date: 12/15/2017
+ms.keywords: _MS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery, PMS_SM_AdapterInformationQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

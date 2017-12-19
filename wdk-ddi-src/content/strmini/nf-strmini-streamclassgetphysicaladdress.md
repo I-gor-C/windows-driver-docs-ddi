@@ -7,7 +7,7 @@ old-location: stream\streamclassgetphysicaladdress.htm
 old-project: stream
 ms.assetid: 5a8e7130-00e7-4bff-8939-7cfcc1a2b9aa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: StreamClassGetPhysicalAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices

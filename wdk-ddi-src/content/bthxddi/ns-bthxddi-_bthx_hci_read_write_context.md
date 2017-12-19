@@ -7,8 +7,8 @@ old-location: bltooth\bthx_hci_read_write_context.htm
 old-project: bltooth
 ms.assetid: EC31A704-A264-4A77-B979-BFA59B42BA94
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT
+ms.date: 12/14/2017
+ms.keywords: _BTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT, PBTHX_HCI_READ_WRITE_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

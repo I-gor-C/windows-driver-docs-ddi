@@ -4,11 +4,11 @@ title: _DOT11_WFD_ATTRIBUTES
 author: windows-driver-content
 description: The DOT11_WFD_ATTRIBUTES structure is returned in an NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES indication. The structure defines the attributes related to Wi-Fi Direct (WFD) operation modes.
 old-location: netvista\dot11_wfd_attributes.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7B221221-5C91-45DA-85C5-5E7CF71E6689
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DOT11_WFD_ATTRIBUTES, *PDOT11_WFD_ATTRIBUTES, DOT11_WFD_ATTRIBUTES
+ms.date: 12/14/2017
+ms.keywords: _DOT11_WFD_ATTRIBUTES, DOT11_WFD_ATTRIBUTES, *PDOT11_WFD_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -206,5 +206,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_WFD_ATTRIBUTES structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_WFD_ATTRIBUTES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

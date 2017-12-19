@@ -4,11 +4,11 @@ title: RILPROVISIONSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilprovisionstatus.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5295f07d-9800-47f0-a827-515fcdad04eb
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILPROVISIONSTATUS, *LPRILPROVISIONSTATUS, RILPROVISIONSTATUS
+ms.date: 12/14/2017
+ms.keywords: RILPROVISIONSTATUS, RILPROVISIONSTATUS, LPRILPROVISIONSTATUS, *LPRILPROVISIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

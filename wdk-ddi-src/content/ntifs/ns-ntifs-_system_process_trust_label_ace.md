@@ -7,8 +7,8 @@ old-location: ifsk\system_process_trust_label_ace.htm
 old-project: ifsk
 ms.assetid: DF334754-8027-418D-B329-877492896B82
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE
+ms.date: 12/14/2017
+ms.keywords: _SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE, PSYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

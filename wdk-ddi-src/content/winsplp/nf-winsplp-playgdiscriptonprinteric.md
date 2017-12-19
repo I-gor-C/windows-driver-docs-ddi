@@ -7,7 +7,7 @@ old-location: print\playgdiscriptonprinteric.htm
 old-project: print
 ms.assetid: DB5FCF40-77C2-4741-9E6B-77A9CD98E29A
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: PlayGdiScriptOnPrinterIC
 ms.prod: windows-hardware
 ms.technology: windows-devices

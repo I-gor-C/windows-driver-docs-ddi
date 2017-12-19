@@ -7,8 +7,8 @@ old-location: stream\transportvideoparms.htm
 old-project: stream
 ms.assetid: 14bc6133-78f1-4f25-8638-9348245180fa
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: tagTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS
+ms.date: 12/14/2017
+ms.keywords: tagTRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS, PTRANSPORTVIDEOPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

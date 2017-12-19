@@ -7,8 +7,8 @@ old-location: stream\kspin.htm
 old-project: stream
 ms.assetid: 0d290872-0944-4599-9deb-9a4f7b2df0e5
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _KSPIN, KSPIN, *PKSPIN
+ms.date: 12/14/2017
+ms.keywords: _KSPIN, *PKSPIN, KSPIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -110,27 +110,27 @@ This member contains a <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structure 
 
 ### -field ConnectionPriority
 
-This member contains a <a href="stream.kspriority">KSPRIORITY</a> structure that specifies the priority of the connection. This information is supplied by the graph builder when the pin is created.
+This member contains a <a href="..\ks\ns-ks-kspriority.md">KSPRIORITY</a> structure that specifies the priority of the connection. This information is supplied by the graph builder when the pin is created.
 
 
 ### -field ConnectionFormat
 
-A pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that specifies the data format of the connection. This information is initially supplied by the graph builder when the pin is created and may be changed through property access or by format change messages inserted into the stream. Access to this member is synchronized by the filter control mutex. This member should not be changed by the client.
+A pointer to a <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure that specifies the data format of the connection. This information is initially supplied by the graph builder when the pin is created and may be changed through property access or by format change messages inserted into the stream. Access to this member is synchronized by the filter control mutex. This member should not be changed by the client.
 
 
 ### -field AttributeList
 
-A pointer to a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure that specifies the list of attributes, supplied during pin creation, to describe the connection. Specifies the direction of data flow for this pin (KSPIN_DATAFLOW_IN or KSPIN_DATAFLOW_OUT). This information is a static attribute of the pin and appears in the pin descriptor. It is cached here for access at IRQL above PASSIVE_LEVEL.
+A pointer to a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> structure that specifies the list of attributes, supplied during pin creation, to describe the connection. Specifies the direction of data flow for this pin (KSPIN_DATAFLOW_IN or KSPIN_DATAFLOW_OUT). This information is a static attribute of the pin and appears in the pin descriptor. It is cached here for access at IRQL above PASSIVE_LEVEL.
 
 
 ### -field StreamHeaderSize
 
-This member indicates the size in bytes of each <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structure for this pin. Typically used for output pins, a client can set this to any value greater than <b>sizeof</b><i> (KSSTREAM_HEADER)</i> and have extended stream headers allocated (each stream header will be <b>StreamHeaderSize</b> bytes long). If a client does not set this member, this indicates that no extended information follows stream headers. In such a situation, each stream header is precisely <b>sizeof</b><i> (KSSTREAM_HEADER)</i>. Clients can set this in the pin creation dispatch.
+This member indicates the size in bytes of each <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structure for this pin. Typically used for output pins, a client can set this to any value greater than <b>sizeof</b><i> (KSSTREAM_HEADER)</i> and have extended stream headers allocated (each stream header will be <b>StreamHeaderSize</b> bytes long). If a client does not set this member, this indicates that no extended information follows stream headers. In such a situation, each stream header is precisely <b>sizeof</b><i> (KSSTREAM_HEADER)</i>. Clients can set this in the pin creation dispatch.
 
 
 ### -field DataFlow
 
-This member specifies the direction of data flow for the pin.  Possible settings are <b>KSPIN_DATAFLOW_IN</b>  and KSPIN_DATAFLOW_OUT.  This information is a static attribute of the pin and appears in relevant <a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a> structure. It is cached here for access at IRQL above PASSIVE_LEVEL.
+This member specifies the direction of data flow for the pin.  Possible settings are <b>KSPIN_DATAFLOW_IN</b>  and KSPIN_DATAFLOW_OUT.  This information is a static attribute of the pin and appears in relevant <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a> structure. It is cached here for access at IRQL above PASSIVE_LEVEL.
 
 
 ### -field DeviceState
@@ -198,12 +198,12 @@ Header
 <a href="stream.kspin_dispatch">KSPIN_DISPATCH</a>
 </dt>
 <dt>
-<a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>
+<a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

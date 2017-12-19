@@ -7,8 +7,8 @@ old-location: hid\ioctl_hid_enable_wake_on_sx.htm
 old-project: hid
 ms.assetid: E06B1444-F270-48A0-A096-E0289DD4DBBA
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+ms.date: 12/14/2017
+ms.keywords: _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

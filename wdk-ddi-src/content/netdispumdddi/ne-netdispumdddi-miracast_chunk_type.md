@@ -7,7 +7,7 @@ old-location: display\miracast_chunk_type.htm
 old-project: display
 ms.assetid: 39911172-f916-4ca2-8d98-9d53fbc30807
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: MIRACAST_CHUNK_TYPE, MIRACAST_CHUNK_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

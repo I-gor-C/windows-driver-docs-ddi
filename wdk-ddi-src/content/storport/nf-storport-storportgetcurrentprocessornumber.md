@@ -7,7 +7,7 @@ old-location: storage\storportgetcurrentprocessornumber.htm
 old-project: storage
 ms.assetid: 10d77823-fcaa-43c3-b55e-74f2da97ecf0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortGetCurrentProcessorNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices

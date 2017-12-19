@@ -107,9 +107,16 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FltCancelIo function](..\fltkernel\nf-fltkernel-fltcancelio.md) | The FltCancelIo routine cancels an I/O operation. |
 | [FltCancellableWaitForMultipleObjects function](..\fltkernel\nf-fltkernel-fltcancellablewaitformultipleobjects.md) | The FltCancellableWaitForMultipleObjects executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects. |
 | [FltCancellableWaitForSingleObject function](..\fltkernel\nf-fltkernel-fltcancellablewaitforsingleobject.md) | The FltCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object. |
+| [FltCbdqDisable function](..\fltkernel\nf-fltkernel-fltcbdqdisable.md) | FltCbdqDisable disables a minifilter driver's callback data queue. |
+| [FltCbdqEnable function](..\fltkernel\nf-fltkernel-fltcbdqenable.md) | FltCbdqEnable enables a callback data queue that was disabled by a previous call to FltCbdqDisable. |
+| [FltCbdqInitialize function](..\fltkernel\nf-fltkernel-fltcbdqinitialize.md) | FltCbdqInitialize initializes a minifilter driver's callback data queue dispatch table. |
+| [FltCbdqInsertIo function](..\fltkernel\nf-fltkernel-fltcbdqinsertio.md) | FltCbdqInsertIo inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue. |
+| [FltCbdqRemoveIo function](..\fltkernel\nf-fltkernel-fltcbdqremoveio.md) | FltCbdqRemoveIo removes a particular item from a minifilter driver's callback data queue. |
+| [FltCbdqRemoveNextIo function](..\fltkernel\nf-fltkernel-fltcbdqremovenextio.md) | FltCbdqRemoveNextIo removes the next matching item in a minifilter driver's callback data queue. |
 | [FltCheckAndGrowNameControl function](..\fltkernel\nf-fltkernel-fltcheckandgrownamecontrol.md) | The FltCheckAndGrowNameControl routine checks whether the buffer in a FLT_NAME_CONTROL structure is large enough to hold the specified number of bytes. If not, FltCheckAndGrowNameControl replaces it with a larger system-allocated buffer. |
 | [FltCheckLockForReadAccess function](..\fltkernel\nf-fltkernel-fltchecklockforreadaccess.md) | The FltCheckLockForReadAccess routine determines whether the caller has read access to a locked byte range of a file. |
 | [FltCheckLockForWriteAccess function](..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md) | The FltCheckLockForWriteAccess routine determines whether the caller has write access to a locked byte range of a file. |
+| [FltCheckOplock function](..\fltkernel\nf-fltkernel-fltcheckoplock.md) | A minifilter driver calls FltCheckOplock to synchronize the callback data structure for an IRP-based file I/O operation with the file's current opportunistic lock (oplock) state. |
 | [FltCheckOplockEx function](..\fltkernel\nf-fltkernel-fltcheckoplockex.md) | A minifilter driver calls the FltCheckOplockEx routine to synchronize the callback data structure for an IRP-based file I/O operation that has the current opportunistic lock (oplock) state of the file. |
 | [FltClearCallbackDataDirty function](..\fltkernel\nf-fltkernel-fltclearcallbackdatadirty.md) | The FltClearCallbackDataDirty routine clears the callback dirty flag in a callback data structure. |
 | [FltClearCancelCompletion function](..\fltkernel\nf-fltkernel-fltclearcancelcompletion.md) | FltClearCancelCompletion clears a cancel routine that was specified for an I/O operation. |
@@ -864,7 +871,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 
 | Title   | Description   |
 | ---- |:---- |
-| [PMARK_HANDLE_INFO32 structure](..\ntifs\ns-ntifs-pmark_handle_info32.md) | Contains information that is used to mark a specified file or directory, and its update sequence number (USN) change journal record with data about changes. |
+| [MARK_HANDLE_INFO32 structure](..\ntifs\ns-ntifs-mark_handle_info32.md) | Contains information that is used to mark a specified file or directory, and its update sequence number (USN) change journal record with data about changes. |
 | [_ACCESS_ALLOWED_ACE structure](..\ntifs\ns-ntifs-_access_allowed_ace.md) | The ACCESS_ALLOWED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) that controls access to an object. |
 | [_ACCESS_DENIED_ACE structure](..\ntifs\ns-ntifs-_access_denied_ace.md) | The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object. |
 | [_ACCESS_STATE structure](..\wdm\ns-wdm-_access_state.md) | The ACCESS_STATE structure describes the state of an access in progress. |
@@ -955,6 +962,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_FSRTL_PER_STREAM_CONTEXT structure](..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md) | The FSRTL_PER_STREAM_CONTEXT structure contains context information that a file system filter driver maintains about a file stream. |
 | [_FS_FILTER_SECTION_SYNC_OUTPUT structure](..\ntifs\ns-ntifs-_fs_filter_section_sync_output.md) | The FS_FILTER_SECTION_SYNC_OUTPUT structure contains information describing the attributes of the section that is being created. |
 | [_INSTANCE_AGGREGATE_STANDARD_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md) | The caller-allocated INSTANCE_AGGREGATE_STANDARD_INFORMATION structure contains information for either a minifilter driver instance or a legacy filter driver. |
+| [_INSTANCE_BASIC_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_basic_information.md) | The INSTANCE_BASIC_INFORMATION structure contains basic information for a minifilter instance. |
 | [_INSTANCE_FULL_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_full_information.md) | The INSTANCE_FULL_INFORMATION structure contains full information for a minifilter instance. |
 | [_INSTANCE_PARTIAL_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_partial_information.md) | The INSTANCE_PARTIAL_INFORMATION structure contains partial information for a minifilter instance. |
 | [_IO_DRIVER_CREATE_CONTEXT structure](..\ntddk\ns-ntddk-_io_driver_create_context.md) | The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the IoCreateFileEx and FltCreateFileEx2 routines. |
@@ -984,6 +992,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_RTL_SPLAY_LINKS structure](..\ntddk\ns-ntddk-_rtl_splay_links.md) | The RTL_SPLAY_LINKS structure is an opaque structure and is used by the system to represent a splay link tree node. |
 | [_RX_CONTEXT structure](..\rxcontx\ns-rxcontx-_rx_context.md) | The RX_CONTEXT structure encapsulates an IRP for use by RDBSS, network mini-redirectors, and the file system. |
 | [_SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT structure](..\ntifs\ns-ntifs-_set_dax_alloc_alignment_hint_input.md) | This structure is for internal use only and should not be called from your code. |
+| [_SE_EXPORTS structure](..\ntifs\ns-ntifs-_se_exports.md) | The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers. |
 | [_SE_SID structure](..\ntifs\ns-ntifs-_se_sid.md) | The SE_SID union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation. |
 | [_SE_TOKEN_USER structure](..\ntifs\ns-ntifs-_se_token_user.md) | The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation. |
 | [_SID_AND_ATTRIBUTES structure](..\ntifs\ns-ntifs-_sid_and_attributes.md) | The SID_AND_ATTRIBUTES structure represents a security identifier (SID) and its attributes. SIDs are used to uniquely identify users or groups. |
@@ -1046,3 +1055,48 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [IOCTL_REDIR_QUERY_PATH IOCTL](..\ntifs\ni-ntifs-ioctl_redir_query_path.md) | The IOCTL_REDIR_QUERY_PATH control code is sent by the multiple UNC provider (MUP) to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request. |
 | [IOCTL_REDIR_QUERY_PATH_EX IOCTL](..\ntifs\ni-ntifs-ioctl_redir_query_path_ex.md) | The IOCTL_REDIR_QUERY_PATH_EX control code is sent by the multiple UNC provider (MUP) on Windows Vista or later to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request. |
 | [IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES IOCTL](..\ntifs\ni-ntifs-ioctl_volsnap_flush_and_hold_writes.md) | The IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code is sent to force a flush of a file system before a volume shadow copy occurs. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [CcCopyWriteWontFlush macro](..\ntifs\nf-ntifs-cccopywritewontflush~r1.md) | The CcCopyWriteWontFlush macro determines whether the amount of data to be copied in a call to CcCopyWrite is small enough not to require immediate flushing to disk if CcCopyWrite is called with Wait set to FALSE. |
+| [FltAcquirePushLockExclusive macro](..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md) | The FltAcquirePushLockExclusive routine acquires the given push lock for exclusive access by the calling thread. |
+| [FltAcquirePushLockShared macro](..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md) | The FltAcquirePushLockShared routine acquires the given push lock for shared access by the calling thread. |
+| [FltReleasePushLock macro](..\fltkernel\nf-fltkernel-fltreleasepushlock.md) | The FltReleasePushLock routine releases a specified push lock owned by the current thread. |
+| [FsRtlAllocatePoolWithQuotaTag macro](..\ntifs\nf-ntifs-fsrtlallocatepoolwithquotatag.md) | The FsRtlAllocatePoolWithQuotaTag routine allocates pool memory, charging quota against the current process. |
+| [FsRtlAllocatePoolWithTag macro](..\ntifs\nf-ntifs-fsrtlallocatepoolwithtag.md) | The FsRtlAllocatePoolWithTag routine allocates pool memory. |
+| [FsRtlAreThereCurrentFileLocks macro](..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md) | The FsRtlAreThereCurrentFileLocks macro checks whether any byte range locks exist for the specified file. |
+| [FsRtlCheckOplock macro](..\rxprocs\nf-rxprocs-fsrtlcheckoplock.md) | The FsRtlCheckOplock routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state. |
+| [FsRtlCompleteRequest macro](..\ntifs\nf-ntifs-fsrtlcompleterequest.md) | The FsRtlCompleteRequest macro completes an IRP with the specified status. |
+| [FsRtlFastLock macro](..\ntifs\nf-ntifs-fsrtlfastlock.md) | The FsRtlFastLock macro is used by file systems and filter drivers to request a byte-range lock for a file stream. |
+| [FsRtlGetPerStreamContextPointer macro](..\ntifs\nf-ntifs-fsrtlgetperstreamcontextpointer.md) | The FsRtlGetPerStreamContextPointer macro returns the file system's stream context for a file stream. |
+| [FsRtlInitPerStreamContext macro](..\ntifs\nf-ntifs-fsrtlinitperstreamcontext.md) | The FsRtlInitPerStreamContext macro initializes a filter driver context structure. |
+| [FsRtlIsAnsiCharacterLegal macro](..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md) | The FsRtlIsAnsiCharacterLegal macro determines whether a character is a legal ANSI character. |
+| [FsRtlIsAnsiCharacterLegalFat macro](..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md) | The FsRtlIsAnsiCharacterLegalFat macro determines whether an ANSI character is legal for FAT file names. |
+| [FsRtlIsAnsiCharacterLegalHpfs macro](..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md) | The FsRtlIsAnsiCharacterLegalHpfs macro determines whether an ANSI character is legal for HPFS file names. |
+| [FsRtlIsAnsiCharacterLegalNtfs macro](..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md) | The FsRtlIsAnsiCharacterLegalNtfs macro determines whether an ANSI character is legal for NTFS file names. |
+| [FsRtlIsAnsiCharacterLegalNtfsStream macro](..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfsstream.md) | The FsRtlIsAnsiCharacterLegalNtfsStream macro determines whether an ANSI character is legal for NTFS stream names. |
+| [FsRtlIsAnsiCharacterWild macro](..\ntifs\nf-ntifs-fsrtlisansicharacterwild.md) | The FsRtlIsAnsiCharacterWild macro determines whether an ANSI character is a wildcard character. |
+| [FsRtlIsLeadDbcsCharacter macro](..\ntifs\nf-ntifs-fsrtlisleaddbcscharacter.md) | The FsRtlIsLeadDbcsCharacter macro determines whether a character is a lead byte (the first byte of a character) in a double-byte character set (DBCS). |
+| [FsRtlIsUnicodeCharacterWild macro](..\ntifs\nf-ntifs-fsrtlisunicodecharacterwild.md) | The FsRtlIsUnicodeCharacterWild macro determines whether a Unicode character is a wildcard character. |
+| [FsRtlLookupPerStreamContext macro](..\ntifs\nf-ntifs-fsrtllookupperstreamcontext.md) | The FsRtlLookupPerStreamContext macro retrieves a per-stream context structure for a file stream. |
+| [FsRtlNotifyFullChangeDirectory macro](..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md) | The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list. |
+| [FsRtlOplockIsFastIoPossible macro](..\rxprocs\nf-rxprocs-fsrtloplockisfastiopossible.md) | FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file. |
+| [FsRtlSetupAdvancedHeaderEx macro](..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md) | The FsRtlSetupAdvancedHeaderEx macro is used by file systems to initialize an FSRTL_ADVANCED_FCB_HEADER structure for use with both stream and file contexts. |
+| [FsRtlSupportsPerFileContexts macro](..\ntifs\nf-ntifs-fsrtlsupportsperfilecontexts.md) | The FsRtlSupportsPerFileContexts macro checks if per file context information is supported by the file system that is associated with a specified FILE_OBJECT. |
+| [FsRtlTestAnsiCharacter macro](..\ntifs\nf-ntifs-fsrtltestansicharacter.md) | The FsRtlTestAnsiCharacter macro determines whether an ANSI or double-byte character set (DBCS) character meets the specified criteria. |
+| [IsReparseTagMicrosoft macro](..\ntifs\nf-ntifs-isreparsetagmicrosoft.md) | The IsReparseTagMicrosoft macro determines whether a reparse point tag indicates a Microsoft reparse point. |
+| [IsReparseTagNameSurrogate macro](..\ntifs\nf-ntifs-isreparsetagnamesurrogate.md) | The IsReparseTagNameSurrogate macro determines whether a tag's associated reparse point is a surrogate for another named entity, such as a volume mount point. |
+| [RtlFillMemoryUlonglong macro](..\ntifs\nf-ntifs-rtlfillmemoryulonglong~r1.md) | The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value. |
+| [RtlIsLeftChild macro](..\ntddk\nf-ntddk-rtlisleftchild.md) | The RtlIsLeftChild routine determines whether a given splay link is the left child of a node in a splay link tree. |
+| [RtlIsRightChild macro](..\ntddk\nf-ntddk-rtlisrightchild.md) | The RtlIsRightChild routine determines whether a given splay link is the right child of a node in a splay link tree. |
+| [RtlIsRoot macro](..\ntddk\nf-ntddk-rtlisroot.md) | The RtlIsRoot routine determines whether the specified node is the root node of a splay link tree. |
+| [RtlLeftChild macro](..\ntddk\nf-ntddk-rtlleftchild.md) | The RtlLeftChild routine returns a pointer to the left child of the specified splay link node. |
+| [RtlOemStringToCountedUnicodeSize macro](..\ntifs\nf-ntifs-rtloemstringtocountedunicodesize.md) | The RtlOemStringToCountedUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a counted Unicode string. |
+| [RtlOemStringToUnicodeSize macro](..\ntifs\nf-ntifs-rtloemstringtounicodesize.md) | The RtlOemStringToUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a null-terminated Unicode string. |
+| [RtlParent macro](..\ntddk\nf-ntddk-rtlparent.md) | The RtlParent routine returns a pointer to the parent of the specified node in a splay link tree. |
+| [RtlRightChild macro](..\ntddk\nf-ntddk-rtlrightchild.md) | The RtlRightChild routine returns a pointer to the right child of the specified splay link node. |
+| [RtlUnicodeStringToOemSize macro](..\ntifs\nf-ntifs-rtlunicodestringtooemsize.md) | The RtlUnicodeStringToOemSize routine determines the size, in bytes, that a given Unicode string will be after it is translated into an OEM string. |
+| [SeDeleteClientSecurity macro](..\ntifs\nf-ntifs-sedeleteclientsecurity.md) | The SeDeleteClientSecurity routine deletes a client security context. |
+| [SeQuerySubjectContextToken macro](..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md) | The SeQuerySubjectContextToken macro retrieves the access token for a security subject context. |

@@ -7,7 +7,7 @@ old-location: print\devqueryprintex.htm
 old-project: print
 ms.assetid: f4cd0fe6-acdc-43e6-8dd7-7b547b1ec7cc
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: DevQueryPrintEx
 ms.prod: windows-hardware
 ms.technology: windows-devices

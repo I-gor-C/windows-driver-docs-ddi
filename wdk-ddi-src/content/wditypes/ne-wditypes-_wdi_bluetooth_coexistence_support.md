@@ -4,10 +4,10 @@ title: _WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 author: windows-driver-content
 description: The WDI_BLUETOOTH_COEXISTENCE_SUPPORT enumeration defines Bluetooth coexistence support values.
 old-location: netvista\wdi_bluetooth_coexistence_support.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 88642615-D5DD-4C0E-BAAA-308EB6050E77
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_BLUETOOTH_COEXISTENCE_SUPPORT, WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: kernel\iopropagateactivityidtothread.htm
 old-project: kernel
 ms.assetid: 8E824793-53DF-4573-81B0-6FE925CCB4C4
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: IoPropagateActivityIdToThread
 ms.prod: windows-hardware
 ms.technology: windows-devices

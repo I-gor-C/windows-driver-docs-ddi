@@ -4,10 +4,10 @@ title: _URS_HOST_INTERFACE_TYPE
 author: windows-driver-content
 description: Defines values for the various types of USB host controllers.
 old-location: buses\urs_host_interface_type.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: E019CCED-3511-4B7B-B6C9-09FF31B0547A
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _URS_HOST_INTERFACE_TYPE, URS_HOST_INTERFACE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\pingipaddress_out.htm
 old-project: storage
 ms.assetid: 26512dc5-9d3d-4dd5-bce3-37feb64dded8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _PingIPAddress_OUT, *PPingIPAddress_OUT, PingIPAddress_OUT
+ms.date: 12/15/2017
+ms.keywords: _PingIPAddress_OUT, PPingIPAddress_OUT, PingIPAddress_OUT, *PPingIPAddress_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

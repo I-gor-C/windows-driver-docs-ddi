@@ -4,10 +4,10 @@ title: RILDISPLAYINFOTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildisplayinfotype_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0a1afab7-66e3-4880-9124-abf411682eaa
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILDISPLAYINFOTYPE, RILDISPLAYINFOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

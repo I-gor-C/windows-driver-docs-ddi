@@ -7,8 +7,8 @@ old-location: acpi\acpi_eval_input_buffer_simple_string_v2_ex.htm
 old-project: acpi
 ms.assetid: 627DA82C-CD51-4FA0-80C2-03F7FA26C0CF
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX
+ms.date: 12/14/2017
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

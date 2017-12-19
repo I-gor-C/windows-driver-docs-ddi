@@ -7,7 +7,7 @@ old-location: kernel\rtlssizetmult.htm
 old-project: kernel
 ms.assetid: 43FFE47F-C8A3-49B4-B61A-3EAF3841037D
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlSSIZETMult
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILGETMSGINUICCSTATUSPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetmsginuiccstatusparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 8f8ccc6e-ceb5-49df-bf1f-7a804850728a
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS, LPRILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

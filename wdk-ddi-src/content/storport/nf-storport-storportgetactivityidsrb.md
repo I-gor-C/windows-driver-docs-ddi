@@ -7,7 +7,7 @@ old-location: storage\storportgetactivityidsrb.htm
 old-project: storage
 ms.assetid: 63E956F5-C87C-45AA-BE16-2AD07F3BA050
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortGetActivityIdSrb
 ms.prod: windows-hardware
 ms.technology: windows-devices

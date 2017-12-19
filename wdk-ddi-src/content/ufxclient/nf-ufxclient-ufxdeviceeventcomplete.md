@@ -4,10 +4,10 @@ title: UfxDeviceEventComplete function
 author: windows-driver-content
 description: Informs UFX that the client driver has completed processing a UFX callback function.
 old-location: buses\ufxdeviceeventcomplete.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: DAC18721-5747-4D5E-8A25-24B80DE77C99
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: UfxDeviceEventComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices

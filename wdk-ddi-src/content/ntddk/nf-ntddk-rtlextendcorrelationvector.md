@@ -7,7 +7,7 @@ old-location: kernel\rtlextendcorrelationvector.htm
 old-project: kernel
 ms.assetid: 26de5890-edef-4e38-834a-9823327a74c2
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlExtendCorrelationVector
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,11 +4,11 @@ title: RILSETSMSCPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetsmscparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: ebfb768a-fa6b-4781-96e1-787278237d5f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS, RILSETSMSCPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS, RILSETSMSCPARAMS, LPRILSETSMSCPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

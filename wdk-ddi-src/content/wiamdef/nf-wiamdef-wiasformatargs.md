@@ -4,10 +4,10 @@ title: wiasFormatArgs function
 author: windows-driver-content
 description: The wiasFormatArgs function formats an argument list into a packaged string for logging.
 old-location: image\wiasformatargs.htm
-old-project: image
+old-project: Image
 ms.assetid: 409c4ff6-3a0e-408a-879d-2875ac245fb8
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiasFormatArgs
 ms.prod: windows-hardware
 ms.technology: windows-devices

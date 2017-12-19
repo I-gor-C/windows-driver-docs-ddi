@@ -7,7 +7,7 @@ old-location: display\dxgk_plane_specific_output_flags.htm
 old-project: display
 ms.assetid: 95D9C564-92F3-4165-8063-49D928F30475
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\hwstorfreeadapterresources.htm
 old-project: storage
 ms.assetid: 2f12aab4-ca6e-473b-a342-2881c4a7b133
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

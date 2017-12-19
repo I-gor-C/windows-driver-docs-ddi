@@ -7,8 +7,8 @@ old-location: stream\bda_ts_selectorinfo.htm
 old-project: stream
 ms.assetid: 34F10EDD-C196-4022-8D03-45A005F17F5F
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_TS_SELECTORINFO, *PBDA_TS_SELECTORINFO, BDA_TS_SELECTORINFO
+ms.date: 12/14/2017
+ms.keywords: _BDA_TS_SELECTORINFO, BDA_TS_SELECTORINFO, *PBDA_TS_SELECTORINFO, PBDA_TS_SELECTORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

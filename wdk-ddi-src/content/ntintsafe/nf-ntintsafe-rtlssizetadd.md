@@ -7,7 +7,7 @@ old-location: kernel\rtlssizetadd.htm
 old-project: kernel
 ms.assetid: 1CBB3CDF-E7DD-4686-8EF6-FBCADE978A16
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlSSIZETAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

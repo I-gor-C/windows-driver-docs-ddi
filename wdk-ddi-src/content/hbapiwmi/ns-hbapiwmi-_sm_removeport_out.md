@@ -7,8 +7,8 @@ old-location: storage\sm_removeport_out.htm
 old-project: storage
 ms.assetid: 7ca1bd9f-8fd4-4d9d-8571-4d6e4b721f3b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_RemovePort_OUT, *PSM_RemovePort_OUT, SM_RemovePort_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_RemovePort_OUT, *PSM_RemovePort_OUT, PSM_RemovePort_OUT, SM_RemovePort_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

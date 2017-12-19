@@ -4,10 +4,10 @@ title: _DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS
 author: windows-driver-content
 description: The DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS structure indicates the success of the discovery of networks in the offload list.
 old-location: netvista\dot11_offload_network_status_parameters.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 4A911BFF-5515-4E51-953D-86CECA123DA0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, *PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

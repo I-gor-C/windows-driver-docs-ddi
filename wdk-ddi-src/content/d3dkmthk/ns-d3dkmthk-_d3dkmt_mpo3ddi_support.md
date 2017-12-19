@@ -7,7 +7,7 @@ old-location: display\d3dkmt_mpo3ddi_support.htm
 old-project: display
 ms.assetid: 993E0BC3-DE46-48B9-A346-386E49CE28CE
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMT_MPO3DDI_SUPPORT, D3DKMT_MPO3DDI_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

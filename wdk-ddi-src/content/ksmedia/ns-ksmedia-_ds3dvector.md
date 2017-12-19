@@ -7,8 +7,8 @@ old-location: audio\ds3dvector.htm
 old-project: audio
 ms.assetid: 828bb255-4640-4508-866e-e3641ca05773
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DS3DVECTOR, *PDS3DVECTOR, DS3DVECTOR
+ms.date: 12/14/2017
+ms.keywords: _DS3DVECTOR, *PDS3DVECTOR, DS3DVECTOR, PDS3DVECTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -115,18 +115,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.ksds3d_buffer_all">KSDS3D_BUFFER_ALL</a>
+<a href="..\ksmedia\ns-ksmedia-ksds3d_buffer_all.md">KSDS3D_BUFFER_ALL</a>
 </dt>
 <dt>
-<a href="audio.ksds3d_listener_all">KSDS3D_LISTENER_ALL</a>
+<a href="..\ksmedia\ns-ksmedia-ksds3d_listener_all.md">KSDS3D_LISTENER_ALL</a>
 </dt>
 <dt>
-<a href="audio.ksds3d_listener_orientation">KSDS3D_LISTENER_ORIENTATION</a>
+<a href="..\ksmedia\ns-ksmedia-ksds3d_listener_orientation.md">KSDS3D_LISTENER_ORIENTATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20DS3DVECTOR structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20DS3DVECTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

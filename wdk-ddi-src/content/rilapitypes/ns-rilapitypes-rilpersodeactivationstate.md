@@ -4,10 +4,10 @@ title: RILPERSODEACTIVATIONSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpersodeactivationstate_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: fb8950ef-7e46-45eb-b23f-5431488e1954
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE, *LPRILPERSODEACTIVATIONSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

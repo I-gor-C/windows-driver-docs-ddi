@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2stateset.htm
 old-project: display
 ms.assetid: 3405cca6-8d65-4879-98e8-3cd8f66003a5
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DHAL_DP2STATESET, D3DHAL_DP2STATESET
 ms.prod: windows-hardware
 ms.technology: windows-devices

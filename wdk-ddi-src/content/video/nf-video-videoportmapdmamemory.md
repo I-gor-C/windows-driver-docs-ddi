@@ -7,7 +7,7 @@ old-location: display\videoportmapdmamemory.htm
 old-project: display
 ms.assetid: 51148c26-c10d-4c57-9e3e-c7d82d6a1c79
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortMapDmaMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices

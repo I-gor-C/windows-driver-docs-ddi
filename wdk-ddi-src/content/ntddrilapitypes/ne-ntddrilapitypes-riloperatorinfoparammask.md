@@ -4,10 +4,10 @@ title: RILOPERATORINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riloperatorinfoparammask.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5ea7bf77-2069-4335-862e-7f805f3a7491
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILOPERATORINFOPARAMMASK, RILOPERATORINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

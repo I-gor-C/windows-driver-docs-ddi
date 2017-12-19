@@ -7,7 +7,7 @@ old-location: stream\_ksedit.htm
 old-project: stream
 ms.assetid: 9368846a-b985-40f4-8b02-1bb48431141a
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: _KsEdit
 ms.prod: windows-hardware
 ms.technology: windows-devices

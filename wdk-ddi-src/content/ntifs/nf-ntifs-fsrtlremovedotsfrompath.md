@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlremovedotsfrompath.htm
 old-project: ifsk
 ms.assetid: af6ecdb7-8713-460d-8fd9-ef027ac15b39
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
+ms.date: 12/14/2017
 ms.keywords: FsRtlRemoveDotsFromPath
 ms.prod: windows-hardware
 ms.technology: windows-devices

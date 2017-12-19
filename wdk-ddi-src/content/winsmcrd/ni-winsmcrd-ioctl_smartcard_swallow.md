@@ -7,7 +7,7 @@ old-location: smartcrd\ioctl_smartcard_swallow.htm
 old-project: smartcrd
 ms.assetid: c229769d-8798-436e-bd26-9dfd507fba9c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: GdiStartPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices

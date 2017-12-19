@@ -7,7 +7,7 @@ old-location: display\dxgk_recommendvidpntopology_reason.htm
 old-project: display
 ms.assetid: 2a67a119-863b-4cde-9308-e4862823bad1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices

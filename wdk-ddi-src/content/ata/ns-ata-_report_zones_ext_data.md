@@ -7,8 +7,8 @@ old-location: storage\report_zones_ext_data.htm
 old-project: storage
 ms.assetid: 0c6b4b7c-548d-42c0-af9b-cf0d65bf2e45
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA, REPORT_ZONES_EXT_DATA
+ms.date: 12/15/2017
+ms.keywords: _REPORT_ZONES_EXT_DATA, REPORT_ZONES_EXT_DATA, PREPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: kernel\kesetevent.htm
 old-project: kernel
 ms.assetid: a2017660-f001-449c-9c33-e26c2897ead1
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: KeSetEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ Specifies the priority increment to be applied if setting the event causes a wai
 
 ### -param Wait [in]
 
-Specifies whether the call to <b>KeSetEvent</b> is to be followed immediately by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeSetEvent</b> call must be followed by a call to <a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>, <a href="kernel.kewaitformutexobject">KeWaitForMutexObject</a>, or <a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>. For more information, see the following Remarks section.
+Specifies whether the call to <b>KeSetEvent</b> is to be followed immediately by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeSetEvent</b> call must be followed by a call to <a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>, or <a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>. For more information, see the following Remarks section.
 
 
 ## -returns
@@ -184,7 +184,7 @@ DDI compliance rules
 <a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>
 </dt>
 <dt>
-<a href="kernel.kewaitformutexobject">KeWaitForMutexObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
 </dt>
 <dt>
 <a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
@@ -195,5 +195,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetEvent routine%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetEvent routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

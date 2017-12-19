@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_rational.htm
 old-project: display
 ms.assetid: 4560fb48-24c3-4beb-acc3-b8d2ed3a81d3
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXVAHDDDI_RATIONAL, DXVAHDDDI_RATIONAL
 ms.prod: windows-hardware
 ms.technology: windows-devices

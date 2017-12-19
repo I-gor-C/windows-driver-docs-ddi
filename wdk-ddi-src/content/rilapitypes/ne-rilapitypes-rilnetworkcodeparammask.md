@@ -4,10 +4,10 @@ title: RILNETWORKCODEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnetworkcodeparammask_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 944a4974-cb1d-4c0c-bca6-2741f16d2b3e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILNETWORKCODEPARAMMASK, RILNETWORKCODEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices

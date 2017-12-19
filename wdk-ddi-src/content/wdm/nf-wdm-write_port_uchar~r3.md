@@ -7,7 +7,7 @@ old-location: kernel\write_port_uchar.htm
 old-project: kernel
 ms.assetid: 951b688f-21fa-4555-b877-e140e46a1700
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WRITE_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

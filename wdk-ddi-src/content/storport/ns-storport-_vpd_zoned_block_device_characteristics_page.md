@@ -7,8 +7,8 @@ old-location: storage\vpd_zoned_block_device_characteristics_page.htm
 old-project: storage
 ms.assetid: 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+ms.date: 12/15/2017
+ms.keywords: _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

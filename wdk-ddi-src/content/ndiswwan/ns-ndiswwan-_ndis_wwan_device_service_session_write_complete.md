@@ -4,11 +4,11 @@ title: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 author: windows-driver-content
 description: The NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure represents the status of a device service session write operation.
 old-location: netvista\ndis_wwan_device_service_session_write_complete.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 16A48882-BEA6-4F95-8E9F-572BFD102031
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+ms.date: 12/14/2017
+ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

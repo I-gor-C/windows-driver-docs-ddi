@@ -4,11 +4,11 @@ title: RILWRITEMSGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilwritemsgparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 7221efdc-1751-4539-9dc1-5ba3cd40c5ce
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILWRITEMSGPARAMS, *LPRILWRITEMSGPARAMS, RILWRITEMSGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILWRITEMSGPARAMS, RILWRITEMSGPARAMS, *LPRILWRITEMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

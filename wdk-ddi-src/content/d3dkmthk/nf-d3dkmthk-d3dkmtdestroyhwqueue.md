@@ -7,7 +7,7 @@ old-location: display\d3dkmtdestroyhwqueue.htm
 old-project: display
 ms.assetid: 30687710-A813-4D3C-8612-9236D34EB9EB
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTDestroyHwQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices

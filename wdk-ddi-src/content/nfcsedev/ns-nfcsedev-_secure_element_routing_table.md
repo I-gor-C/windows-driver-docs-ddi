@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_routing_table.htm
 old-project: nfpdrivers
 ms.assetid: AD5E6434-BBBF-44CB-8153-B8F4D4F75E94
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
-ms.keywords: _SECURE_ELEMENT_ROUTING_TABLE, *PSECURE_ELEMENT_ROUTING_TABLE, SECURE_ELEMENT_ROUTING_TABLE
+ms.date: 12/14/2017
+ms.keywords: _SECURE_ELEMENT_ROUTING_TABLE, SECURE_ELEMENT_ROUTING_TABLE, *PSECURE_ELEMENT_ROUTING_TABLE, PSECURE_ELEMENT_ROUTING_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

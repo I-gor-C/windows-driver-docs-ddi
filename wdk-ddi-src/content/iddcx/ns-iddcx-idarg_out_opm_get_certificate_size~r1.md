@@ -7,7 +7,7 @@ old-location: display\idarg_out_opm_get_certificate_size.htm
 old-project: display
 ms.assetid: 983e4bda-160d-4a3d-9a50-0ceabc70114f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: IDARG_OUT_OPM_GET_CERTIFICATE_SIZE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

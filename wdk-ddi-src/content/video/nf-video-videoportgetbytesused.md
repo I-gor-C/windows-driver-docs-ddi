@@ -7,7 +7,7 @@ old-location: display\videoportgetbytesused.htm
 old-project: display
 ms.assetid: 67fe089d-4cde-4caa-a4ad-8e879a30b516
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: VideoPortGetBytesUsed
 ms.prod: windows-hardware
 ms.technology: windows-devices

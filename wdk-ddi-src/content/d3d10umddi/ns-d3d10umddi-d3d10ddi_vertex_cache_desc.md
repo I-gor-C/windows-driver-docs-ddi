@@ -7,7 +7,7 @@ old-location: display\d3d10ddi_vertex_cache_desc.htm
 old-project: display
 ms.assetid: c6cff037-436c-4c7e-85b8-02c9d7827f95
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D10DDI_VERTEX_CACHE_DESC, D3D10DDI_VERTEX_CACHE_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -4,10 +4,10 @@ title: RIL_CloseUiccLogicalChannelGroup function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_closeuicclogicalchannelgroup.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: de761fd9-5637-40be-a4bb-9e29ed19a434
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_CloseUiccLogicalChannelGroup
 ms.prod: windows-hardware
 ms.technology: windows-devices

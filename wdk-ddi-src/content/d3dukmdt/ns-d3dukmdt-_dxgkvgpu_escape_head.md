@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_head_.htm
 old-project: display
 ms.assetid: BB9D12EB-A1B1-4D7B-A1E4-40A932F62C88
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKVGPU_ESCAPE_HEAD, DXGKVGPU_ESCAPE_HEAD
 ms.prod: windows-hardware
 ms.technology: windows-devices

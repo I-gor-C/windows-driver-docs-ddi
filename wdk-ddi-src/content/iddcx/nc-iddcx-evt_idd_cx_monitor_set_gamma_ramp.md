@@ -7,7 +7,7 @@ old-location: display\evt_idd_cx_monitor_set_gamma_ramp.htm
 old-project: display
 ms.assetid: 3e0828ee-307a-48fd-a8ea-b469ac6214d0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: WcsTranslateColors
 ms.prod: windows-hardware
 ms.technology: windows-devices

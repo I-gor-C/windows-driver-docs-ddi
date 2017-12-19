@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_metadataalignment.htm
 old-project: stream
 ms.assetid: A122F923-D98E-4D73-896A-551A233E7491
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KSCAMERA_EXTENDEDPROP_MetadataAlignment, KSCAMERA_EXTENDEDPROP_MetadataAlignment
 ms.prod: windows-hardware
 ms.technology: windows-devices

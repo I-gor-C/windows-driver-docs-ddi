@@ -7,7 +7,7 @@ old-location: display\dxgk_hdr_metadata.htm
 old-project: display
 ms.assetid: 15AE3B05-1FD4-4ADB-B92F-9098225A920B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_HDR_METADATA, DXGK_HDR_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

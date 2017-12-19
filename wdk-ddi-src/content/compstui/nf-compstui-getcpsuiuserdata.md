@@ -7,7 +7,7 @@ old-location: print\getcpsuiuserdata.htm
 old-project: print
 ms.assetid: 2a0a74cd-2dcf-4485-8941-7f205dcecede
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: GetCPSUIUserData
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\sm_setbindingsupport_in.htm
 old-project: storage
 ms.assetid: 7bcee845-9b3f-4ad7-843f-1f4cd74ee1be
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SetBindingSupport_IN, *PSM_SetBindingSupport_IN, SM_SetBindingSupport_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_SetBindingSupport_IN, *PSM_SetBindingSupport_IN, PSM_SetBindingSupport_IN, SM_SetBindingSupport_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

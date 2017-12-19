@@ -7,8 +7,8 @@ old-location: print\oemuiobj.htm
 old-project: print
 ms.assetid: ba9252ec-3aef-4e8c-a335-bde33686beae
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
-ms.keywords: _OEMUIOBJ, OEMUIOBJ, *POEMUIOBJ
+ms.date: 12/14/2017
+ms.keywords: _OEMUIOBJ, OEMUIOBJ, POEMUIOBJ, *POEMUIOBJ
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

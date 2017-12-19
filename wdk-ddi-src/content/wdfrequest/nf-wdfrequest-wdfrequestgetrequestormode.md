@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestgetrequestormode.htm
 old-project: wdf
 ms.assetid: 63fc77c8-756c-4872-b608-539d8419154b
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfRequestGetRequestorMode
 ms.prod: windows-hardware
 ms.technology: windows-devices

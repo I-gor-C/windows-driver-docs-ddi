@@ -7,7 +7,7 @@ old-location: stream\ksdispatchquerysecurity.htm
 old-project: stream
 ms.assetid: 0aed2613-b40f-4328-91c4-c8e945c6ef17
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsDispatchQuerySecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices

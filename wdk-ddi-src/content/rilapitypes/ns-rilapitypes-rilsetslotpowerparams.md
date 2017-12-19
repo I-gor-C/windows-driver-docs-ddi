@@ -4,11 +4,11 @@ title: RILSETSLOTPOWERPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetslotpowerparams_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 1f62344f-9e54-4a17-9c0c-ef46614508f2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETSLOTPOWERPARAMS, *LPRILSETSLOTPOWERPARAMS, RILSETSLOTPOWERPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSETSLOTPOWERPARAMS, RILSETSLOTPOWERPARAMS, *LPRILSETSLOTPOWERPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

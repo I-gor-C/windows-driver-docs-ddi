@@ -4,11 +4,11 @@ title: _DRV_VERSION
 author: windows-driver-content
 description: The DRV_VERSION structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_VERSION.
 old-location: image\drv_version.htm
-old-project: image
+old-project: Image
 ms.assetid: 61b6dbd3-7565-4d63-bcc0-007df9793398
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _DRV_VERSION, *PDRV_VERSION, DRV_VERSION
+ms.date: 12/14/2017
+ms.keywords: _DRV_VERSION, DRV_VERSION, *PDRV_VERSION, PDRV_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

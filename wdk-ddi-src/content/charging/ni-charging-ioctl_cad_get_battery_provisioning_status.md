@@ -7,8 +7,8 @@ old-location: battery\ioctl_cad_get_battery_provisioning_status.htm
 old-project: battery
 ms.assetid: 4E92A629-C080-4C32-8768-D0615F35B161
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
+ms.date: 12/14/2017
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

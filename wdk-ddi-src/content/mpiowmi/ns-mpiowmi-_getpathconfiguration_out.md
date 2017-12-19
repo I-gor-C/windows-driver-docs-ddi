@@ -7,8 +7,8 @@ old-location: storage\getpathconfiguration_out.htm
 old-project: storage
 ms.assetid: 055db46e-59fc-4eb9-93d7-16d680495220
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _GetPathConfiguration_OUT, *PGetPathConfiguration_OUT, GetPathConfiguration_OUT
+ms.date: 12/15/2017
+ms.keywords: _GetPathConfiguration_OUT, PGetPathConfiguration_OUT, *PGetPathConfiguration_OUT, GetPathConfiguration_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

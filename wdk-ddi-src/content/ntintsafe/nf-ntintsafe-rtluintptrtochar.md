@@ -7,7 +7,7 @@ old-location: kernel\rtluintptrtochar.htm
 old-project: kernel
 ms.assetid: 531A8110-FF91-4DE7-8FC5-305A2525DD40
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: RtlUIntPtrToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

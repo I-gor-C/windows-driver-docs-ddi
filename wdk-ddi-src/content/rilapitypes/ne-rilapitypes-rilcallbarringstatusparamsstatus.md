@@ -4,10 +4,10 @@ title: RILCALLBARRINGSTATUSPARAMSSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallbarringstatusparamsstatus_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 0d7eff2c-7179-4517-a678-deb62315e53b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLBARRINGSTATUSPARAMSSTATUS, RILCALLBARRINGSTATUSPARAMSSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

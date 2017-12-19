@@ -4,11 +4,11 @@ title: RILUICCATRINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccatrinfo.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 84ced2d3-43a9-42ef-b8fb-592dc960b01b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILUICCATRINFO, *LPRILUICCATRINFO, RILUICCATRINFO
+ms.date: 12/14/2017
+ms.keywords: RILUICCATRINFO, *LPRILUICCATRINFO, RILUICCATRINFO, LPRILUICCATRINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

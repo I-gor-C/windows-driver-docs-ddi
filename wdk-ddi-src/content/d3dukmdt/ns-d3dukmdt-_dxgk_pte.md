@@ -7,7 +7,7 @@ old-location: display\dxgk_pte.htm
 old-project: display
 ms.assetid: 2d5c1f3e-69a6-4f7f-9c99-bbaf94e6401b
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

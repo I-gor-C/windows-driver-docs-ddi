@@ -7,8 +7,8 @@ old-location: storage\storage_crypto_key_size.htm
 old-project: storage
 ms.assetid: C3E5CEC6-34A2-48DF-B963-677C69A97E0B
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _STORAGE_CRYPTO_KEY_SIZE, STORAGE_CRYPTO_KEY_SIZE, *PSTORAGE_CRYPTO_KEY_SIZE
+ms.date: 12/15/2017
+ms.keywords: _STORAGE_CRYPTO_KEY_SIZE, STORAGE_CRYPTO_KEY_SIZE, PSTORAGE_CRYPTO_KEY_SIZE, *PSTORAGE_CRYPTO_KEY_SIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

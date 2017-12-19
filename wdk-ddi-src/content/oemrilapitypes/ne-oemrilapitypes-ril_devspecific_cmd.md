@@ -4,10 +4,10 @@ title: RIL_DEVSPECIFIC_CMD
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_devspecific_cmd.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5c6ac937-c5ff-4788-9c54-375f364bd823
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_DEVSPECIFIC_CMD, RIL_DEVSPECIFIC_CMD
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -110,6 +110,7 @@ Ntddstor.h contain these programming interfaces:
 | [IOCTL_STORAGE_PERSISTENT_RESERVE_OUT IOCTL](ni-ntddstor-ioctl_storage_persistent_reserve_out.md) | The generic storage class driver (classpnp.sys) exposes an I/O control (IOCTL) interface for issuing Persistent Reserve Out commands. |
 | [IOCTL_STORAGE_PREDICT_FAILURE IOCTL](ni-ntddstor-ioctl_storage_predict_failure.md) | Polls for a prediction of device failure. |
 | [IOCTL_STORAGE_PROTOCOL_COMMAND IOCTL](ni-ntddstor-ioctl_storage_protocol_command.md) | A driver can use IOCTL_STORAGE_PROTOCOL_COMMAND to pass vendor-specific commands to a storage device. |
+| [IOCTL_STORAGE_QUERY_PROPERTY IOCTL](ni-ntddstor-ioctl_storage_query_property.md) | A driver can use IOCTL_STORAGE_QUERY_PROPERTY to return properties of a storage device or adapter. |
 | [IOCTL_STORAGE_READ_CAPACITY IOCTL](ni-ntddstor-ioctl_storage_read_capacity.md) | The IOCTL_STORAGE_READ_CAPACITY request returns the read capacity information for the target storage device. |
 | [IOCTL_STORAGE_REINITIALIZE_MEDIA IOCTL](ni-ntddstor-ioctl_storage_reinitialize_media.md) | A driver can use the IOCTL_STORAGE_REINITIALIZE_MEDIA control code to reinitialize/erase a device. |
 | [IOCTL_STORAGE_RELEASE IOCTL](ni-ntddstor-ioctl_storage_release.md) | Releases a device previously reserved for the exclusive use of the caller on a bus that supports multiple initiators and the concept of reserving a device, such as a SCSI bus. |

@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreatehwcontext.htm
 old-project: display
 ms.assetid: 147F46A9-1182-4480-8886-7C39F940EA7D
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3DKMTCreateHwContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

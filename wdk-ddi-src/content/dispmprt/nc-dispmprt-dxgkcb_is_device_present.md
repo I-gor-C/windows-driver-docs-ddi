@@ -7,8 +7,8 @@ old-location: display\dxgkcbisdevicepresent.htm
 old-project: display
 ms.assetid: 82716a1a-e361-40ad-b3cd-bdcd3abc75f8
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.date: 12/15/2017
+ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

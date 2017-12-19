@@ -7,7 +7,7 @@ old-location: kernel\power_information_level.htm
 old-project: kernel
 ms.assetid: DCAB0482-C0E3-4F75-B5A7-FB8DFFA89D6F
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: POWER_INFORMATION_LEVEL, POWER_INFORMATION_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices

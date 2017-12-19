@@ -4,11 +4,11 @@ title: EVT_UCX_USBDEVICE_GET_CHARACTERISTIC
 author: windows-driver-content
 description: UCX invokes this callback to retrieve the device characteristics.
 old-location: buses\evt_ucx_usbdevice_get_characteristic.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: EE8568F6-3D88-477E-9F0D-044D014EBCF3
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _STREAM_INFO, *PSTREAM_INFO, STREAM_INFO
+ms.date: 12/14/2017
+ms.keywords: _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO, PSTREAM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

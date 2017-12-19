@@ -7,7 +7,7 @@ old-location: kernel\pwmparsepinpath.htm
 old-project: kernel
 ms.assetid: 854A2B6F-A841-4AE4-9E54-68EF048C9504
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PwmParsePinPath
 ms.prod: windows-hardware
 ms.technology: windows-devices

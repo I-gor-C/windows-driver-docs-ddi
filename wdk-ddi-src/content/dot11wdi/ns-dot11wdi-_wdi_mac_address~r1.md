@@ -4,11 +4,11 @@ title: _WDI_MAC_ADDRESS
 author: windows-driver-content
 description: The WDI_MAC_ADDRESS structure defines an IEEE media access control (MAC) address.
 old-location: netvista\wdi_mac_address.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: e170b797-f8bb-4d3c-a3ee-5fd1a817a500
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WDI_MAC_ADDRESS, WDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS
+ms.date: 12/14/2017
+ms.keywords: _WDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS, WDI_MAC_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,10 +4,10 @@ title: _WDI_DATA_RATE_FLAGS
 author: windows-driver-content
 description: The WDI_DATA_RATE_FLAGS enumeration defines the data rate flags.
 old-location: netvista\wdi_data_rate_flags.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 937D1C48-AC5A-4D55-8722-BDC1192613A9
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_DATA_RATE_FLAGS, WDI_DATA_RATE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

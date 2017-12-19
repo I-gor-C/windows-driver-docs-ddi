@@ -7,8 +7,8 @@ old-location: acpi\sdev_secure_acpi_info_entry.htm
 old-project: acpi
 ms.assetid: A3FDE9B0-DD6E-4FF5-AD9A-7DF7BF276EFA
 ms.author: windowsdriverdev
-ms.date: 12/2/2017
-ms.keywords: _SDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY
+ms.date: 12/14/2017
+ms.keywords: _SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY, PSDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

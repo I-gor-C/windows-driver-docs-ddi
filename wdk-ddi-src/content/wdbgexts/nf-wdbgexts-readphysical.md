@@ -4,10 +4,10 @@ title: ReadPhysical function
 author: windows-driver-content
 description: The ReadPhysical function reads from physical memory.
 old-location: debugger\readphysical.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: 02ca3358-7740-4eda-ab7c-f4b8a88389c2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: ReadPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices

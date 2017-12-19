@@ -7,8 +7,8 @@ old-location: stream\bda_signal_timeouts.htm
 old-project: stream
 ms.assetid: CFEF848D-8268-4FFC-A629-D122021D8411
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS, *PBDA_SIGNAL_TIMEOUTS
+ms.date: 12/14/2017
+ms.keywords: _BDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS, PBDA_SIGNAL_TIMEOUTS, *PBDA_SIGNAL_TIMEOUTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

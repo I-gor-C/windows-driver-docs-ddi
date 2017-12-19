@@ -7,7 +7,7 @@ old-location: print\waitforprinterchange.htm
 old-project: print
 ms.assetid: BD9DD9C4-D736-42DC-A55F-7F299351FA65
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: WaitForPrinterChange
 ms.prod: windows-hardware
 ms.technology: windows-devices

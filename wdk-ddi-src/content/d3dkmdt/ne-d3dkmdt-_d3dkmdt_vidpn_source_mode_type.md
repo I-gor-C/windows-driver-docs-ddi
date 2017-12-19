@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_source_mode_type.htm
 old-project: display
 ms.assetid: c2a48cf2-f595-4f78-b779-416d324e90d7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_VIDPN_SOURCE_MODE_TYPE, D3DKMDT_VIDPN_SOURCE_MODE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

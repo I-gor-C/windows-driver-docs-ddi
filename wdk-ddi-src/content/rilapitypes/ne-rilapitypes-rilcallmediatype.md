@@ -4,10 +4,10 @@ title: RILCALLMEDIATYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediatype_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f4ecaf9a-1d8d-4a56-afa0-b893eb0c4c62
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILCALLMEDIATYPE, RILCALLMEDIATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

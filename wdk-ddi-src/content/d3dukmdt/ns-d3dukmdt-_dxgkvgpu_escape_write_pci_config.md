@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_write_pci_config.htm
 old-project: display
 ms.assetid: 2B0902DB-B59C-4DC5-A944-02ACE9DA16DC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGKVGPU_ESCAPE_WRITE_PCI_CONFIG, DXGKVGPU_ESCAPE_WRITE_PCI_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

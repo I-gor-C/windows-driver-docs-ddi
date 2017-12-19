@@ -4,11 +4,11 @@ title: RILSETCELLBROADCASTMSGCONFIGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetcellbroadcastmsgconfigparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: bfaad47a-44eb-471d-9ed9-e1adf845ab9c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILSETCELLBROADCASTMSGCONFIGPARAMS, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS, LPRILSETCELLBROADCASTMSGCONFIGPARAMS, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

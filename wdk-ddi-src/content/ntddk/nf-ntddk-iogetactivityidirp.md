@@ -7,7 +7,7 @@ old-location: kernel\iogetactivityidirp.htm
 old-project: kernel
 ms.assetid: FAFF65EF-F1D8-4B54-B281-D5C4AC124E32
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: IoGetActivityIdIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices

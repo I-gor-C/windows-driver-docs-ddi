@@ -7,7 +7,7 @@ old-location: pos\poscxisdeviceowner.htm
 old-project: pos
 ms.assetid: 48D30A9D-3BA2-4929-865A-D9A34DC6E497
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 12/14/2017
 ms.keywords: PosCxIsDeviceOwner
 ms.prod: windows-hardware
 ms.technology: windows-devices

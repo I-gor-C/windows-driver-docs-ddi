@@ -4,11 +4,11 @@ title: IOCTL_INTERNAL_USBFN_TRANSFER_IN
 author: windows-driver-content
 description: The class driver sends this request to initiate a data transfer to the host on the specified pipe.
 old-location: buses\_ioctl_internal_usbfn_transfer_in.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: 53F895F8-596D-464C-866E-67028CF644E4
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.date: 12/14/2017
+ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

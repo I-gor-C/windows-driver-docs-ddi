@@ -7,7 +7,7 @@ old-location: print\expsfontrestriction.htm
 old-project: print
 ms.assetid: 079BEF8A-514E-42C3-8916-95655C605098
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: __MIDL___MIDL_itf_filterpipeline_0000_0000_0004, EXpsFontRestriction
 ms.prod: windows-hardware
 ms.technology: windows-devices

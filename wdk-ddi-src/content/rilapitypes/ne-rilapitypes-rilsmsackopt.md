@@ -4,10 +4,10 @@ title: RILSMSACKOPT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsmsackopt_2.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: a8430f5f-000f-4dea-acd9-2f0df2c6e67d
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSMSACKOPT, RILSMSACKOPT
 ms.prod: windows-hardware
 ms.technology: windows-devices

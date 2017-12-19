@@ -4,10 +4,10 @@ title: RIL_ChangeCallBarringPassword function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_changecallbarringpassword.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: f312e955-c8a5-4642-ac8a-a0173f034a63
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RIL_ChangeCallBarringPassword
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,8 +7,8 @@ old-location: storage\hba_fcpbindingentry.htm
 old-project: storage
 ms.assetid: c9c46133-a660-46c6-911b-77c2dd2ed2e0
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: HBA_FCPBindingEntry, *PHBA_FCPBINDINGENTRY, HBA_FCPBINDINGENTRY
+ms.date: 12/15/2017
+ms.keywords: HBA_FCPBindingEntry, PHBA_FCPBINDINGENTRY, *PHBA_FCPBINDINGENTRY, HBA_FCPBINDINGENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

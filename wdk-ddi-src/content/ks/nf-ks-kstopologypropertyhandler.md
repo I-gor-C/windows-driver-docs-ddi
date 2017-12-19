@@ -7,7 +7,7 @@ old-location: stream\kstopologypropertyhandler.htm
 old-project: stream
 ms.assetid: fe033614-b1a0-490b-b45b-a8d8de650dbf
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: KsTopologyPropertyHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-The <b>KsTopologyPropertyHandler</b> function performs standard handling of the static members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> Property Set. The function uses the <a href="stream.kstopology">KSTOPOLOGY</a> structure, which describes the set of information that is returned by this property set.
+The <b>KsTopologyPropertyHandler</b> function performs standard handling of the static members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> Property Set. The function uses the <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure, which describes the set of information that is returned by this property set.
 
 
 
@@ -73,7 +73,7 @@ Specifies the topology property-specific data.
 
 ### -param Topology [in]
 
-Points to a <a href="stream.kstopology">KSTOPOLOGY</a> structure containing the topology information.
+Points to a <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure containing the topology information.
 
 
 ## -returns

@@ -4,11 +4,11 @@ title: RILRESETMODEMCONFIGVALUE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilresetmodemconfigvalue.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 48068d1d-3fe7-4bd6-8c91-094e4187ca1f
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE
+ms.date: 12/14/2017
+ms.keywords: RILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE, LPRILRESETMODEMCONFIGVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

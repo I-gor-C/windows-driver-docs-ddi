@@ -7,8 +7,8 @@ old-location: display\dxgk_monitorlinkinfo_capabilities.htm
 old-project: display
 ms.assetid: 9838DF74-6561-40DB-A745-A15005B97AAC
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES, *PDXGK_MONITORLINKINFO_CAPABILITIES
+ms.date: 12/15/2017
+ms.keywords: _DXGK_MONITORLINKINFO_CAPABILITIES, *PDXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES, PDXGK_MONITORLINKINFO_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

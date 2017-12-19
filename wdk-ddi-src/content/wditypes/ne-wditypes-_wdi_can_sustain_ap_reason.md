@@ -4,10 +4,10 @@ title: _WDI_CAN_SUSTAIN_AP_REASON
 author: windows-driver-content
 description: The WDI_CAN_SUSTAIN_AP_REASON enumeration defines the reasons the port is ready to receive a OID_WDI_TASK_START_AP request.
 old-location: netvista\wdi_can_sustain_ap_reason.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9AAE4B3F-7C5C-457D-9388-63E6E6AB8A2E
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: _WDI_CAN_SUSTAIN_AP_REASON, WDI_CAN_SUSTAIN_AP_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices

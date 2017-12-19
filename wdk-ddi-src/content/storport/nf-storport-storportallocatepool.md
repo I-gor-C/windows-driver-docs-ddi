@@ -7,7 +7,7 @@ old-location: storage\storportallocatepool.htm
 old-project: storage
 ms.assetid: e6823b9c-9717-49ab-8e67-c1d522774826
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: StorPortAllocatePool
 ms.prod: windows-hardware
 ms.technology: windows-devices

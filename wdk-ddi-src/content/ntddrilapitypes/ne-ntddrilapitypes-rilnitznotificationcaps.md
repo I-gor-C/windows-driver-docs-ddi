@@ -4,10 +4,10 @@ title: RILNITZNOTIFICATIONCAPS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnitznotificationcaps.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: fa678bfa-ebcc-4950-951a-47f9bba98131
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILNITZNOTIFICATIONCAPS, RILNITZNOTIFICATIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

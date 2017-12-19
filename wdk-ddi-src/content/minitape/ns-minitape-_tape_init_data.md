@@ -7,8 +7,8 @@ old-location: storage\tape_init_data.htm
 old-project: storage
 ms.assetid: 11f5201b-ddd3-43ad-9746-a1a9885c99b1
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _TAPE_INIT_DATA, TAPE_INIT_DATA, *PTAPE_INIT_DATA
+ms.date: 12/15/2017
+ms.keywords: _TAPE_INIT_DATA, *PTAPE_INIT_DATA, PTAPE_INIT_DATA, TAPE_INIT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,7 +7,7 @@ old-location: wdf\wdffileobjectgetflags.htm
 old-project: wdf
 ms.assetid: f2f30acb-cab7-444a-8b86-6001a8a325b9
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfFileObjectGetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices

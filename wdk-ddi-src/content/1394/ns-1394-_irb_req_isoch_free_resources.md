@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_free_resources.htm
 old-project: IEEE
 ms.assetid: 28699952-FC15-46A2-96EC-F5F8BD2391D7
 ms.author: windowsdriverdev
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.keywords: _IRB_REQ_ISOCH_FREE_RESOURCES, IRB_REQ_ISOCH_FREE_RESOURCES
 ms.prod: windows-hardware
 ms.technology: windows-devices

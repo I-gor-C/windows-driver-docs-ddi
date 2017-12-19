@@ -4,10 +4,10 @@ title: RILSIGNALQUALITYCAPS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsignalqualitycaps.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 5d42e083-d1a9-455a-8511-9aef37908ab7
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSIGNALQUALITYCAPS, RILSIGNALQUALITYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

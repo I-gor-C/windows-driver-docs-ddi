@@ -7,8 +7,8 @@ old-location: storage\sm_addtarget_out.htm
 old-project: storage
 ms.assetid: ed4e58cb-6b32-454b-9538-f9f8aa68df4c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_AddTarget_OUT, SM_AddTarget_OUT, *PSM_AddTarget_OUT
+ms.date: 12/15/2017
+ms.keywords: _SM_AddTarget_OUT, SM_AddTarget_OUT, PSM_AddTarget_OUT, *PSM_AddTarget_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -4,11 +4,11 @@ title: _WWAN_USSD_REQUEST_TYPE
 author: windows-driver-content
 description: The WWAN_USSD_REQUEST_TYPE enumeration lists the different types of Unstructured Supplementary Service Data (USSD) session requests.
 old-location: netvista\wwan_ussd_request_type.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 773490EE-ECFC-4089-869D-19683A76E4FA
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WWAN_USSD_REQUEST_TYPE, WWAN_USSD_REQUEST_TYPE, *PWWAN_USSD_REQUEST_TYPE
+ms.date: 12/14/2017
+ms.keywords: _WWAN_USSD_REQUEST_TYPE, PWWAN_USSD_REQUEST_TYPE, WWAN_USSD_REQUEST_TYPE, *PWWAN_USSD_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

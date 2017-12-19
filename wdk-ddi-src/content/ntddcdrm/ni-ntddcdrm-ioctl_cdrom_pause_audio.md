@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_pause_audio.htm
 old-project: storage
 ms.assetid: 62ece91f-0c74-4bc1-b05c-446492e993e6
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.date: 12/15/2017
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl

@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_bus_type.htm
 old-project: display
 ms.assetid: 07cf1893-1ced-4bfa-a6f7-ec71345b9f18
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D11_1DDI_BUS_TYPE, D3D11_1DDI_BUS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

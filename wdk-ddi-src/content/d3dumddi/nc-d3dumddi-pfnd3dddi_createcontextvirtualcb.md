@@ -7,7 +7,7 @@ old-location: display\pfncreatecontextvirtualcb.htm
 old-project: display
 ms.assetid: 7787FEDF-E18C-4120-A073-A13933856F57
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices

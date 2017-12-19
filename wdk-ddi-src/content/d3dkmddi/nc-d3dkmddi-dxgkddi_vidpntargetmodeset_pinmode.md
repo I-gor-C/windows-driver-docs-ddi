@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpntargetmodeset_interface_pfnpinmode.htm
 old-project: display
 ms.assetid: 91ea3105-2fdf-4533-a2d4-d27f1e660056
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

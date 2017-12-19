@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_descriptor_type.htm
 old-project: display
 ms.assetid: f5ec761f-fc20-4baf-a012-c32356644a6c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DKMDT_MONITOR_DESCRIPTOR_TYPE, D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

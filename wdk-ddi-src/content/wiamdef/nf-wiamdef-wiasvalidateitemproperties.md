@@ -4,10 +4,10 @@ title: wiasValidateItemProperties function
 author: windows-driver-content
 description: The wiasValidateItemProperties function validates a list of simple item properties against their current valid values.
 old-location: image\wiasvalidateitemproperties.htm
-old-project: image
+old-project: Image
 ms.assetid: d7858b1b-88cf-4e75-a466-40afdcb01d9b
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: wiasValidateItemProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices

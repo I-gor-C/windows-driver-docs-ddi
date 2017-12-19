@@ -7,8 +7,8 @@ old-location: display\dxgk_monitorlinkinfo_usagehints.htm
 old-project: display
 ms.assetid: 4FC2509A-9983-41F8-901F-60DCEDBC163F
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS, *PDXGK_MONITORLINKINFO_USAGEHINTS
+ms.date: 12/15/2017
+ms.keywords: _DXGK_MONITORLINKINFO_USAGEHINTS, PDXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS, *PDXGK_MONITORLINKINFO_USAGEHINTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

@@ -7,8 +7,8 @@ old-location: storage\sm_sendecho_in.htm
 old-project: storage
 ms.assetid: 0fce2e27-8705-4916-8c75-ecc2845c255c
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SM_SendECHO_IN, SM_SendECHO_IN, *PSM_SendECHO_IN
+ms.date: 12/15/2017
+ms.keywords: _SM_SendECHO_IN, *PSM_SendECHO_IN, PSM_SendECHO_IN, SM_SendECHO_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

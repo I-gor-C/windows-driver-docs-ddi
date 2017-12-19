@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_command_queue_creation_flags.htm
 old-project: display
 ms.assetid: 6BA4B1B4-07D6-4498-BDA4-C559FB3E8843
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: D3D12DDI_COMMAND_QUEUE_CREATION_FLAGS, D3D12DDI_COMMAND_QUEUE_CREATION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

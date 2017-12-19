@@ -7,8 +7,8 @@ old-location: display\pfnd3dwddm2_2ddi_shadercache_store_value.htm
 old-project: display
 ms.assetid: 715D4C28-029F-463E-9A6D-D8155B570538
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _SETRESULT_INFO, SETRESULT_INFO, *PSETRESULT_INFO
+ms.date: 12/15/2017
+ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, PSETRESULT_INFO, SETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

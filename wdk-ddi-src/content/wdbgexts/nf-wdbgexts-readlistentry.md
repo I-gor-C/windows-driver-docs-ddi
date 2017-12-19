@@ -4,10 +4,10 @@ title: ReadListEntry function
 author: windows-driver-content
 description: The ReadListEntry function reads a doubly-linked list entry from the target's memory.
 old-location: debugger\readlistentry.htm
-old-project: debugger
+old-project: Debugger
 ms.assetid: b5bfbb6d-4797-4e5f-bc66-398527b13d85
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: ReadListEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

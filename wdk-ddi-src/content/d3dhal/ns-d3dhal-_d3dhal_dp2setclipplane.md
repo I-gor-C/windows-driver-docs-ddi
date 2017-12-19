@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2setclipplane.htm
 old-project: display
 ms.assetid: 84459f39-42cb-4877-b569-17c51ee2d6e4
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _D3DHAL_DP2SETCLIPPLANE, D3DHAL_DP2SETCLIPPLANE
 ms.prod: windows-hardware
 ms.technology: windows-devices

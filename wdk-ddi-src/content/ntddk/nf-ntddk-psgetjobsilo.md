@@ -7,7 +7,7 @@ old-location: kernel\psgetjobsilo.htm
 old-project: kernel
 ms.assetid: 1032282B-7CA3-4162-8FC2-1A4A683E9DEF
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: PsGetJobSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices

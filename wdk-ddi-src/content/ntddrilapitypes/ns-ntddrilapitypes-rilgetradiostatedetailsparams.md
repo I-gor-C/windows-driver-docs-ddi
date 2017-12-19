@@ -4,11 +4,11 @@ title: RILGETRADIOSTATEDETAILSPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetradiostatedetailsparams.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: faee1991-a183-4285-af14-402094dc6694
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: RILGETRADIOSTATEDETAILSPARAMS, *LPRILGETRADIOSTATEDETAILSPARAMS, RILGETRADIOSTATEDETAILSPARAMS
+ms.date: 12/14/2017
+ms.keywords: RILGETRADIOSTATEDETAILSPARAMS, LPRILGETRADIOSTATEDETAILSPARAMS, RILGETRADIOSTATEDETAILSPARAMS, *LPRILGETRADIOSTATEDETAILSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

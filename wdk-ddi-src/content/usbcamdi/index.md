@@ -48,7 +48,7 @@ Usbcamdi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PUSBCAMD_INTERFACE structure](ns-usbcamdi-pusbcamd_interface.md) | The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces. |
+| [USBCAMD_INTERFACE structure](ns-usbcamdi-usbcamd_interface.md) | The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces. |
 | [_USBCAMD_DEVICE_DATA structure](ns-usbcamdi-_usbcamd_device_data.md) | This structure is obsolete and is provided to maintain backward compatibility with the original USBCAMD. |
 | [_USBCAMD_DEVICE_DATA2 structure](ns-usbcamdi-_usbcamd_device_data2.md) | The USBCAMD_DEVICE_DATA2 structure specifies the entry points for a camera minidriver's functions that USBCAMD calls. |
 | [_pipe_config_descriptor structure](ns-usbcamdi-_pipe_config_descriptor.md) | The USBCAMD_Pipe_Config_Descriptor structure describes the association between pipes and streams. |

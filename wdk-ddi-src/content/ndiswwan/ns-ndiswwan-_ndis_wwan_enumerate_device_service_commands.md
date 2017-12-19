@@ -4,11 +4,11 @@ title: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 author: windows-driver-content
 description: The NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure represents the commands supported by a device service.
 old-location: netvista\ndis_wwan_enumerate_device_service_commands.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 9D30F8BE-C376-48FD-A76C-6069F332BC11
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
+ms.date: 12/14/2017
+ms.keywords: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

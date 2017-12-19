@@ -7,8 +7,8 @@ old-location: spb\pnp_serial_bus_descriptor.htm
 old-project: SPB
 ms.assetid: 7516B493-F86E-44C5-ABCD-450B6F66AA15
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _PNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR, *PPNP_SERIAL_BUS_DESCRIPTOR
+ms.date: 12/14/2017
+ms.keywords: _PNP_SERIAL_BUS_DESCRIPTOR, PPNP_SERIAL_BUS_DESCRIPTOR, *PPNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

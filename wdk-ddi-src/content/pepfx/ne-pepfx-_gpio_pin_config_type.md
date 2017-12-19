@@ -7,7 +7,7 @@ old-location: kernel\gpio_pin_config_type.htm
 old-project: kernel
 ms.assetid: 76509992-E5A7-4C2F-84D3-B3FD06ACEFE1
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _GPIO_PIN_CONFIG_TYPE, GPIO_PIN_CONFIG_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -6,9 +6,9 @@ UID: NA:
 
 ## -description
 
-This header is used by Battery, Windows Driver Framework. For more information, see
-- [Battery](../_battery/index.md)
+This header is used by Windows Driver Framework, Battery. For more information, see
 - [Windows Driver Framework](../_wdf/index.md)
+- [Battery](../_battery/index.md)
 
 Ntpoapi.h contain these programming interfaces:
 
@@ -17,7 +17,7 @@ Ntpoapi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PBATTERY_REPORTING_SCALE structure](ns-ntpoapi-pbattery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
+| [BATTERY_REPORTING_SCALE structure](ns-ntpoapi-battery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
 
 ## Enumerations
 

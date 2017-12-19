@@ -7,8 +7,8 @@ old-location: kernel\reinitialize.htm
 old-project: kernel
 ms.assetid: 5e883b80-a6e6-44b4-9e1c-78402b91edb9
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.date: 12/15/2017
+ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback

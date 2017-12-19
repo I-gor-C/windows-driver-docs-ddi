@@ -7,7 +7,7 @@ old-location: print\printschemaselectiontype.htm
 old-project: print
 ms.assetid: 30BB7A95-512C-418B-B496-47832DD4C0BC
 ms.author: windowsdriverdev
-ms.date: 12/9/2017
+ms.date: 12/14/2017
 ms.keywords: tagPrintSchemaSelectionType, PrintSchemaSelectionType
 ms.prod: windows-hardware
 ms.technology: windows-devices

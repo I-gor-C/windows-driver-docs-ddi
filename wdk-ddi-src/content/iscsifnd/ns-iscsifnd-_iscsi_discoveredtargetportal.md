@@ -7,8 +7,8 @@ old-location: storage\iscsi_discoveredtargetportal.htm
 old-project: storage
 ms.assetid: af5d0ad6-a035-4291-9390-889fdc3429ee
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _ISCSI_DiscoveredTargetPortal, ISCSI_DiscoveredTargetPortal, *PISCSI_DiscoveredTargetPortal
+ms.date: 12/15/2017
+ms.keywords: _ISCSI_DiscoveredTargetPortal, PISCSI_DiscoveredTargetPortal, *PISCSI_DiscoveredTargetPortal, ISCSI_DiscoveredTargetPortal
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -105,5 +105,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_DiscoveredTargetPortal structure%20 RELEASE:%20(12/8/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_DiscoveredTargetPortal structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

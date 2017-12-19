@@ -7,7 +7,7 @@ old-location: stream\facerectinfo.htm
 old-project: stream
 ms.assetid: 63F31CDC-CB44-4ED8-BDA0-89F7DCF77965
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
+ms.date: 12/14/2017
 ms.keywords: tagFaceRectInfo, FaceRectInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices

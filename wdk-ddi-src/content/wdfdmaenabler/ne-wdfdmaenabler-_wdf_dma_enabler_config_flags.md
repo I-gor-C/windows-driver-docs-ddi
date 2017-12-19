@@ -7,7 +7,7 @@ old-location: wdf\wdf_dma_enabler_config_flags.htm
 old-project: wdf
 ms.assetid: 8F8C97B2-5C77-4AD0-9434-22108111F5A8
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: _WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ typedef enum _WDF_DMA_ENABLER_CONFIG_FLAGS {
       By default, when <b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b> is not set and the <a href="wdf.wdf_dma_profile">WDF_DMA_PROFILE</a> is one of those in the previous list, WDF  
       creates a lookaside list of scatter/gather lists that is  used by this DMA adapter's transaction 
       objects. The list entries are initialized to allow the maximum specified  
-      transfer length. When the transaction is executed, WDF calls the <a href="kernel.buildscattergatherlist">BuildScatterGatherList</a> entry function. Forward progress drivers 
+      transfer length. When the transaction is executed, WDF calls the <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a> entry function. Forward progress drivers 
       must not set this flag and must use one of the four profiles shown previously.
 
  When <b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b> is set and the <a href="wdf.wdf_dma_profile">WDF_DMA_PROFILE</a> is one of those in the previous list, WDF does not create a lookaside list. When the transaction is executed, WDF calls  <a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a>.
@@ -137,5 +137,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_ENABLER_CONFIG_FLAGS enumeration%20 RELEASE:%20(12/7/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_ENABLER_CONFIG_FLAGS enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -7,7 +7,7 @@ old-location: storage\pdo_state.htm
 old-project: storage
 ms.assetid: 006e2cef-4e49-4819-bfce-d9bf5983643e
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/15/2017
 ms.keywords: _PDO_STATE, PDO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

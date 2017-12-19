@@ -7,8 +7,8 @@ old-location: smartcrd\os_dep_data__wdm_.htm
 old-project: smartcrd
 ms.assetid: 76f6f0d1-cb2f-4cda-aeb0-7421e18e3c27
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _OS_DEP_DATA, *POS_DEP_DATA, OS_DEP_DATA
+ms.date: 12/14/2017
+ms.keywords: _OS_DEP_DATA, POS_DEP_DATA, *POS_DEP_DATA, OS_DEP_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

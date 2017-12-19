@@ -6,11 +6,11 @@ UID: NA:
 
 ## -description
 
-This header is used by Windows kernel, Installable file system, PCI, Windows Hardware Error Architecture (WHEA), Storage, Driver test tools. For more information, see
-- [Windows kernel](../_kernel/index.md)
+This header is used by Installable file system, Windows kernel, Windows Hardware Error Architecture (WHEA), PCI, Storage, Driver test tools. For more information, see
 - [Installable file system](../_ifsk/index.md)
-- [PCI](../_PCI/index.md)
+- [Windows kernel](../_kernel/index.md)
 - [Windows Hardware Error Architecture (WHEA)](../_whea/index.md)
+- [PCI](../_PCI/index.md)
 - [Storage](../_storage/index.md)
 - [Driver test tools](../_devtest/index.md)
 
@@ -101,35 +101,23 @@ Ntddk.h contain these programming interfaces:
 | [KeLeaveGuardedRegion function](nf-ntddk-keleaveguardedregion.md) | The KeLeaveGuardedRegion routine exits a guarded region entered by KeEnterGuardedRegion. |
 | [KePulseEvent function](nf-ntddk-kepulseevent.md) | The KePulseEvent routine atomically sets an event object to a signaled state, attempts to satisfy as many waits as possible, and then resets the event object to a not-signaled state. |
 | [KeQueryActiveGroupCount function](nf-ntddk-kequeryactivegroupcount.md) | The KeQueryActiveGroupCount routine returns the number of active processor groups in a multiprocessor system. |
-| [KeQueryActiveProcessorCount function](nf-ntddk-kequeryactiveprocessorcount.md) | The KeQueryActiveProcessorCount routine returns the number of currently active processors. |
 | [KeQueryActiveProcessorCountEx function](nf-ntddk-kequeryactiveprocessorcountex.md) | The KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system. |
-| [KeQueryActiveProcessors function](nf-ntddk-kequeryactiveprocessors.md) | The KeQueryActiveProcessors routine returns a bitmask of the currently active processors. |
 | [KeQueryGroupAffinity function](nf-ntddk-kequerygroupaffinity.md) | The KeQueryGroupAffinity routine returns an affinity mask that identifies the active logical processors in a specified group in a multiprocessor system. |
 | [KeQueryHardwareCounterConfiguration function](nf-ntddk-kequeryhardwarecounterconfiguration.md) | The KeQueryHardwareCounterConfiguration routine queries the operating system for the list of hardware counters to use for thread profiling. |
 | [KeQueryHighestNodeNumber function](nf-ntddk-kequeryhighestnodenumber.md) | The KeQueryHighestNodeNumber routine returns the highest node number in a multiprocessor system that has a non-uniform memory access (NUMA) architecture. |
 | [KeQueryLogicalProcessorRelationship function](nf-ntddk-kequerylogicalprocessorrelationship.md) | The KeQueryLogicalProcessorRelationship routine gets information about the relationships of one or more processors to the other processors in a multiprocessor system. |
 | [KeQueryMaximumGroupCount function](nf-ntddk-kequerymaximumgroupcount.md) | The KeQueryMaximumGroupCount routine returns the maximum number of groups in a multiprocessor system. |
-| [KeQueryMaximumProcessorCount function](nf-ntddk-kequerymaximumprocessorcount.md) | The KeQueryMaximumProcessorCount routine returns the maximum number of processors. |
 | [KeQueryMaximumProcessorCountEx function](nf-ntddk-kequerymaximumprocessorcountex.md) | The KeQueryMaximumProcessorCountEx routine returns the maximum number of logical processors in a specified group in a multiprocessor system. |
 | [KeQueryNodeActiveAffinity function](nf-ntddk-kequerynodeactiveaffinity.md) | The KeQueryNodeActiveAffinity routine gets the current processor affinity of a specified node in a multiprocessor system that has a non-uniform memory access (NUMA) architecture. |
 | [KeQueryNodeMaximumProcessorCount function](nf-ntddk-kequerynodemaximumprocessorcount.md) | The KeQueryNodeMaximumProcessorCount routine returns the maximum number of logical processors that a specified node in a non-uniform memory access (NUMA) multiprocessor system can contain. |
 | [KeQueryTickCount function](nf-ntddk-kequerytickcount.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
 | [KeQueryTickCount function](nf-ntddk-kequerytickcount~r1.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
-| [KeRaiseIrqlToDpcLevel function](nf-ntddk-keraiseirqltodpclevel.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
-| [KeRaiseIrqlToDpcLevel function](nf-ntddk-keraiseirqltodpclevel~r1.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
-| [KeRaiseIrqlToDpcLevel function](nf-ntddk-keraiseirqltodpclevel~r2.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
-| [KeRaiseIrqlToDpcLevel function](nf-ntddk-keraiseirqltodpclevel~r3.md) | The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
 | [KeSetBasePriorityThread function](nf-ntddk-kesetbaseprioritythread.md) | The KeSetBasePriorityThread routine sets the run-time priority, relative to the current process, for a given thread. |
 | [KeSetHardwareCounterConfiguration function](nf-ntddk-kesethardwarecounterconfiguration.md) | The KeSetHardwareCounterConfiguration routine specifies a list of hardware counters to use for thread profiling. |
 | [KeSetImportanceDpc function](nf-ntddk-kesetimportancedpc.md) | The KeSetImportanceDpc routine specifies how soon the DPC routine is run. |
 | [KeSetTargetProcessorDpc function](nf-ntddk-kesettargetprocessordpc.md) | The KeSetTargetProcessorDpc routine specifies the processor that a DPC routine will be run on. |
-| [MmAllocateContiguousMemory function](nf-ntddk-mmallocatecontiguousmemory.md) | The MmAllocateContiguousMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
-| [MmAllocateContiguousMemorySpecifyCache function](nf-ntddk-mmallocatecontiguousmemoryspecifycache.md) | The MmAllocateContiguousMemorySpecifyCache routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
-| [MmAllocateContiguousMemorySpecifyCacheNode function](nf-ntddk-mmallocatecontiguousmemoryspecifycachenode.md) | The MmAllocateContiguousMemorySpecifyCacheNode routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space. |
 | [MmAllocateNonCachedMemory function](nf-ntddk-mmallocatenoncachedmemory.md) | The MmAllocateNonCachedMemory routine allocates a virtual address range of noncached and cache-aligned memory. |
 | [MmCopyMemory function](nf-ntddk-mmcopymemory.md) | The MmCopyMemory routine copies the specified range of virtual or physical memory into the caller-supplied buffer. |
-| [MmFreeContiguousMemory function](nf-ntddk-mmfreecontiguousmemory.md) | The MmFreeContiguousMemory routine releases a range of physically contiguous memory that was allocated by an MmAllocateContiguousMemoryXxx routine. |
-| [MmFreeContiguousMemorySpecifyCache function](nf-ntddk-mmfreecontiguousmemoryspecifycache.md) | The MmFreeContiguousMemorySpecifyCache routine frees a buffer that was allocated by an MmAllocateContiguousMemorySpecifyCacheXxx routine. |
 | [MmFreeNonCachedMemory function](nf-ntddk-mmfreenoncachedmemory.md) | The MmFreeNonCachedMemory routine releases a range of noncached memory that was allocated by the MmAllocateNonCachedMemory routine. |
 | [MmGetPhysicalAddress function](nf-ntddk-mmgetphysicaladdress.md) | The MmGetPhysicalAddress routine returns the physical address corresponding to a valid nonpaged virtual address. |
 | [MmIsAddressValid function](nf-ntddk-mmisaddressvalid.md) | The MmIsAddressValid routine checks whether a page fault will occur for a read or write operation at a given virtual address.Warning  We do not recommend using this function. |
@@ -137,6 +125,7 @@ Ntddk.h contain these programming interfaces:
 | [MmLockPagableSectionByHandle function](nf-ntddk-mmlockpagablesectionbyhandle.md) | The MmLockPagableSectionByHandle routine locks a pageable code or data section into system memory by incrementing the reference count on the handle to the section. |
 | [MmSecureVirtualMemory function](nf-ntddk-mmsecurevirtualmemory.md) | The MmSecureVirtualMemory routine secures a user-space memory address range so that it cannot be freed and its protection type cannot be made more restrictive. |
 | [MmUnsecureVirtualMemory function](nf-ntddk-mmunsecurevirtualmemory.md) | The MmUnsecureVirtualMemory routine unsecures a memory address range secured by the MmSecureVirtualMemory routine. |
+| [NtOpenProcess function](nf-ntddk-ntopenprocess.md) | The ZwOpenProcess routine opens a handle to a process object and sets the access rights to this object. |
 | [PsAllocSiloContextSlot function](nf-ntddk-psallocsilocontextslot.md) | This routine allocates a slot that can be used to insert, retrieve, and delete an object in all silos. . |
 | [PsAttachSiloToCurrentThread function](nf-ntddk-psattachsilotocurrentthread.md) | This routine places a thread temporarily into the specified Silo. |
 | [PsCreateSiloContext function](nf-ntddk-pscreatesilocontext.md) | This routine creates an object that will be inserted in a Silo. |
@@ -252,7 +241,6 @@ Ntddk.h contain these programming interfaces:
 | [WheaIsValidErrorRecordSignature function](nf-ntddk-wheaisvaliderrorrecordsignature.md) | The WheaIsValidErrorRecordSignature function verifies whether a WHEA error record is valid. |
 | [ZwAllocateLocallyUniqueId function](nf-ntddk-zwallocatelocallyuniqueid.md) | The ZwAllocateLocallyUniqueId routine allocates a locally unique identifier (LUID). |
 | [ZwOpenProcess function](nf-ntddk-zwopenprocess.md) | The ZwOpenProcess routine opens a handle to a process object and sets the access rights to this object. |
-| [ZwPowerInformation function](nf-ntddk-zwpowerinformation.md) | The ZwPowerInformation routine sets or retrieves system power information. |
 | [ZwSetInformationThread function](nf-ntddk-zwsetinformationthread.md) | The ZwSetInformationThread routine sets the priority of a thread. |
 | [ZwTerminateProcess function](nf-ntddk-zwterminateprocess.md) | The ZwTerminateProcess routine terminates a process and all of its threads. |
 
@@ -365,6 +353,7 @@ Ntddk.h contain these programming interfaces:
 | [_WHEA_ERROR_RECORD_HEADER structure](ns-ntddk-_whea_error_record_header.md) | The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition. |
 | [_WHEA_ERROR_RECORD_HEADER_VALIDBITS structure](ns-ntddk-_whea_error_record_header_validbits.md) | The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_HEADER structure contain valid data. |
 | [_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure](ns-ntddk-_whea_error_record_section_descriptor.md) | The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure describes a section of error information that is part of an error record. |
+| [_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS structure](ns-ntddk-_whea_error_record_section_descriptor_validbits.md) | The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure contain valid data. |
 | [_WHEA_ERROR_SOURCE_DESCRIPTOR structure](ns-ntddk-_whea_error_source_descriptor.md) | The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source. |
 | [_WHEA_ERROR_SOURCE_DESCRIPTOR structure](ns-ntddk-_whea_error_source_descriptor~r1.md) | The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source. |
 | [_WHEA_ERROR_STATUS structure](ns-ntddk-_whea_error_status.md) | The WHEA_ERROR_STATUS union describes generic error codes that are abstracted from the data contained in implementation-specific error registers. |
@@ -378,16 +367,20 @@ Ntddk.h contain these programming interfaces:
 | [_WHEA_IPF_CPE_DESCRIPTOR structure](ns-ntddk-_whea_ipf_cpe_descriptor.md) | The WHEA_IPF_CPE_DESCRIPTOR structure describes a corrected platform error (CPE) error source for an Itanium processor. |
 | [_WHEA_IPF_MCA_DESCRIPTOR structure](ns-ntddk-_whea_ipf_mca_descriptor.md) | The WHEA_IPF_MCA_DESCRIPTOR structure describes a machine check abort (MCA) error source for an Itanium processor. |
 | [_WHEA_MEMORY_ERROR_SECTION structure](ns-ntddk-_whea_memory_error_section.md) | The WHEA_MEMORY_ERROR_SECTION structure describes platform memory error data. |
+| [_WHEA_MEMORY_ERROR_SECTION_VALIDBITS structure](ns-ntddk-_whea_memory_error_section_validbits.md) | The WHEA_MEMORY_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_MEMORY_ERROR_SECTION structure contain valid data. |
 | [_WHEA_NMI_ERROR_SECTION structure](ns-ntddk-_whea_nmi_error_section.md) | The WHEA_NMI_ERROR_SECTION structure describes nonmaskable interrupt (NMI) error data. |
 | [_WHEA_NOTIFICATION_DESCRIPTOR structure](ns-ntddk-_whea_notification_descriptor.md) | The WHEA_NOTIFICATION_DESCRIPTOR structure describes the notification mechanism that is used by an error source. |
 | [_WHEA_PCIEXPRESS_ERROR_SECTION structure](ns-ntddk-_whea_pciexpress_error_section.md) | The WHEA_PCIEXPRESS_ERROR_SECTION structure describes PCI Express (PCIe) error data. |
+| [_WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS structure](ns-ntddk-_whea_pciexpress_error_section_validbits.md) | The WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIEXPRESS_ERROR_SECTION structure contain valid data. |
 | [_WHEA_PCIXBUS_ERROR_SECTION structure](ns-ntddk-_whea_pcixbus_error_section.md) | The WHEA_PCIXBUS_ERROR_SECTION structure describes PCI or PCI-X bus error data. |
 | [_WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS structure](ns-ntddk-_whea_pcixbus_error_section_validbits.md) | The WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIXBUS_ERROR_SECTION structure contain valid data. |
 | [_WHEA_PCIXDEVICE_ERROR_SECTION structure](ns-ntddk-_whea_pcixdevice_error_section.md) | The WHEA_PCIXDEVICE_ERROR_SECTION structure describes PCI or PCI-X device error data. |
+| [_WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS structure](ns-ntddk-_whea_pcixdevice_error_section_validbits.md) | The WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIXDEVICE_ERROR_SECTION structure contain valid data. |
 | [_WHEA_PCI_SLOT_NUMBER structure](ns-ntddk-_whea_pci_slot_number.md) | The WHEA_PCI_SLOT_NUMBER structure describes a logical PCI slot. |
 | [_WHEA_PERSISTENCE_INFO structure](ns-ntddk-_whea_persistence_info.md) | The WHEA_PERSISTENCE_INFO union describes data that is used by the error record persistence interface for storing an error record. |
 | [_WHEA_PROCESSOR_FAMILY_INFO structure](ns-ntddk-_whea_processor_family_info.md) | The WHEA_PROCESSOR_FAMILY_INFO union describes the processor family information for an x86 or x64 processor. |
 | [_WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure](ns-ntddk-_whea_processor_generic_error_section.md) | Describes processor error data that is not specific to a particular processor architecture. |
+| [_WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS structure](ns-ntddk-_whea_processor_generic_error_section_validbits.md) | The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contain valid data. |
 | [_WHEA_PSHED_PLUGIN_CALLBACKS structure](ns-ntddk-_whea_pshed_plugin_callbacks.md) | The WHEA_PSHED_PLUGIN_CALLBACKS structure describes the callback functions for a PSHED plug-in. |
 | [_WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure](ns-ntddk-_whea_pshed_plugin_registration_packet.md) | The WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure describes the data required for registering a PSHED plug-in with the PSHED. |
 | [_WHEA_REVISION structure](ns-ntddk-_whea_revision.md) | The WHEA_REVISION union describes the revision of the error record data structures. |
@@ -403,6 +396,7 @@ Ntddk.h contain these programming interfaces:
 | [_WHEA_XPF_MS_CHECK structure](ns-ntddk-_whea_xpf_ms_check.md) | The WHEA_XPF_MS_CHECK union describes microarchitecture-specific error information for an x86 or x64 processor. |
 | [_WHEA_XPF_NMI_DESCRIPTOR structure](ns-ntddk-_whea_xpf_nmi_descriptor.md) | The WHEA_XPF_NMI_DESCRIPTOR structure describes a nonmaskable interrupt (NMI) error source for an x86 or x64 processor. |
 | [_WHEA_XPF_PROCESSOR_ERROR_SECTION structure](ns-ntddk-_whea_xpf_processor_error_section.md) | The WHEA_XPF_PROCESSOR_ERROR_SECTION structure describes processor error data that is specific to the x86/x64 processor architecture. |
+| [_WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS structure](ns-ntddk-_whea_xpf_processor_error_section_validbits.md) | The WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_XPF_PROCESSOR_ERROR_SECTION structure contain valid data and the number of structures that are contained in the WHEA_XPF_PROCESSOR_ERROR_SECTION structure's VariableInfo member. |
 | [_WHEA_XPF_PROCINFO structure](ns-ntddk-_whea_xpf_procinfo.md) | The WHEA_XPF_PROCINFO structure describes processor error information that is specific to the x86 and x64 processor architectures. |
 | [_WHEA_XPF_PROCINFO_VALIDBITS structure](ns-ntddk-_whea_xpf_procinfo_validbits.md) | The WHEA_XPF_PROCINFO_VALIDBITS union describes which members of a WHEA_XPF_PROCINFO structure contain valid data. |
 | [_WHEA_XPF_TLB_CHECK structure](ns-ntddk-_whea_xpf_tlb_check.md) | The WHEA_XPF_TLB_CHECK union describes translation lookaside buffer (TLB) error information for an x86 or x64 processor. |
@@ -427,3 +421,18 @@ Ntddk.h contain these programming interfaces:
 | [_WHEA_ERROR_SOURCE_TYPE enumeration](ne-ntddk-_whea_error_source_type.md) | The WHEA_ERROR_SOURCE_TYPE enumeration defines the different types of error sources that can report hardware errors. |
 | [_WHEA_ERROR_TYPE enumeration](ne-ntddk-_whea_error_type.md) | The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error. |
 | [_WHEA_RAW_DATA_FORMAT enumeration](ne-ntddk-_whea_raw_data_format.md) | The WHEA_RAW_DATA_FORMAT enumeration defines the possible formats that raw hardware error data can be encoded in a hardware error packet. |
+
+## Macros
+
+| Title   | Description   |
+| ---- |:---- |
+| [ExFreePool macro](nf-ntddk-exfreepool.md) | The ExFreePool routine deallocates a block of pool memory. |
+| [IoAssignArcName macro](nf-ntddk-ioassignarcname.md) | The IoAssignArcName routine creates a symbolic link between the ARC name of a physical device and the name of the corresponding device object when it has been created. |
+| [IoDeassignArcName macro](nf-ntddk-iodeassignarcname.md) | The IoDeassignArcName routine removes a symbolic link between the ARC name for a device and the named device object. |
+| [KeQueryTickCount macro](nf-ntddk-kequerytickcount~r2.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
+| [RtlIsLeftChild macro](nf-ntddk-rtlisleftchild.md) | The RtlIsLeftChild routine determines whether a given splay link is the left child of a node in a splay link tree. |
+| [RtlIsRightChild macro](nf-ntddk-rtlisrightchild.md) | The RtlIsRightChild routine determines whether a given splay link is the right child of a node in a splay link tree. |
+| [RtlIsRoot macro](nf-ntddk-rtlisroot.md) | The RtlIsRoot routine determines whether the specified node is the root node of a splay link tree. |
+| [RtlLeftChild macro](nf-ntddk-rtlleftchild.md) | The RtlLeftChild routine returns a pointer to the left child of the specified splay link node. |
+| [RtlParent macro](nf-ntddk-rtlparent.md) | The RtlParent routine returns a pointer to the parent of the specified node in a splay link tree. |
+| [RtlRightChild macro](nf-ntddk-rtlrightchild.md) | The RtlRightChild routine returns a pointer to the right child of the specified splay link node. |

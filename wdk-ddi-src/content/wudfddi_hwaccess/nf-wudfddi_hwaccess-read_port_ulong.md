@@ -7,7 +7,7 @@ old-location: wdf\read_port_ulong.htm
 old-project: wdf
 ms.assetid: 2B507B58-8CD0-4D66-93E9-FF67D7246F3C
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices

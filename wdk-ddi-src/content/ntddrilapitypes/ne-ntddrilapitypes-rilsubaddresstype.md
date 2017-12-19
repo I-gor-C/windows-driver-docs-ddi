@@ -4,10 +4,10 @@ title: RILSUBADDRESSTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsubaddresstype.htm
-old-project: netvista
+old-project: NetVista
 ms.assetid: 18c4f26a-6463-4157-bd81-6bbb2100eff2
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
+ms.date: 12/14/2017
 ms.keywords: RILSUBADDRESSTYPE, RILSUBADDRESSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

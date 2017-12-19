@@ -7,8 +7,8 @@ old-location: stream\bda_pin_pairing.htm
 old-project: stream
 ms.assetid: 0d05455d-32ea-4f88-8752-7f5fe40b8b29
 ms.author: windowsdriverdev
-ms.date: 12/6/2017
-ms.keywords: _BDA_PIN_PAIRING, BDA_PIN_PAIRING, *PBDA_PIN_PAIRING
+ms.date: 12/14/2017
+ms.keywords: _BDA_PIN_PAIRING, *PBDA_PIN_PAIRING, BDA_PIN_PAIRING, PBDA_PIN_PAIRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -130,12 +130,12 @@ Header
 <a href="stream.kspin_descriptor_ex">KSPIN_DESCRIPTOR_EX</a>
 </dt>
 <dt>
-<a href="stream.kstopology_connection">KSTOPOLOGY_CONNECTION</a>
+<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_PIN_PAIRING structure%20 RELEASE:%20(12/6/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_PIN_PAIRING structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

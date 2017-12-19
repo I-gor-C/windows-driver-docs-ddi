@@ -7,8 +7,8 @@ old-location: ifsk\_directory_notify_information_class.htm
 old-project: ifsk
 ms.assetid: 77c2515b-f20a-47ac-9564-9eab009cf625
 ms.author: windowsdriverdev
-ms.date: 11/30/2017
-ms.keywords: _DIRECTORY_NOTIFY_INFORMATION_CLASS, DIRECTORY_NOTIFY_INFORMATION_CLASS, *PDIRECTORY_NOTIFY_INFORMATION_CLASS
+ms.date: 12/14/2017
+ms.keywords: _DIRECTORY_NOTIFY_INFORMATION_CLASS, PDIRECTORY_NOTIFY_INFORMATION_CLASS, *PDIRECTORY_NOTIFY_INFORMATION_CLASS, DIRECTORY_NOTIFY_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

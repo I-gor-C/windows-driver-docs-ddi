@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicewdmgetphysicaldevice.htm
 old-project: wdf
 ms.assetid: 88bd9cc7-6769-4fdf-b149-2193d765fc6c
 ms.author: windowsdriverdev
-ms.date: 12/7/2017
+ms.date: 12/15/2017
 ms.keywords: WdfDeviceWdmGetPhysicalDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices

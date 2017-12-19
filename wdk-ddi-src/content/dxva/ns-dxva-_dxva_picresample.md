@@ -7,8 +7,8 @@ old-location: display\dxva_picresample.htm
 old-project: display
 ms.assetid: 29b26400-9b27-4bff-9c7e-d612d250da30
 ms.author: windowsdriverdev
-ms.date: 12/8/2017
-ms.keywords: _DXVA_PicResample, DXVA_PicResample, *LPDXVA_PicResample
+ms.date: 12/15/2017
+ms.keywords: _DXVA_PicResample, *LPDXVA_PicResample, DXVA_PicResample, LPDXVA_PicResample
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
